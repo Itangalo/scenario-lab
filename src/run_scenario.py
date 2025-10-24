@@ -15,6 +15,7 @@ from metrics_tracker import MetricsTracker
 from scenario_state_manager import ScenarioStateManager
 from communication_manager import CommunicationManager, ChannelType
 from context_manager import ContextManager
+from qa_validator import QAValidator
 
 
 def load_scenario(scenario_path: str):
@@ -171,6 +172,11 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         print(f"  Restored metrics tracker ({len(metrics_tracker.metrics_by_turn)} turns)")
     else:
         metrics_tracker = MetricsTracker(metrics_config_path if os.path.exists(metrics_config_path) else None)
+
+    # QA Validator - always create new (validation doesn't need to be restored)
+    qa_validator = QAValidator(scenario_path, os.getenv('OPENROUTER_API_KEY'))
+    if not resume_mode and qa_validator.is_enabled():
+        print(f"  QA validation enabled")
 
     # World state updater
     world_state_model = scenario.get('world_state_model', 'alibaba/tongyi-deepresearch-30b-a3b:free')
@@ -584,6 +590,19 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
 
                 print(f"    ✓ Decision recorded (tokens: {decision.get('tokens_used', 0):,})")
 
+                # Validate actor decision consistency (if enabled)
+                if qa_validator.is_enabled() and qa_validator.should_run_after_turn():
+                    validation_result = qa_validator.validate_actor_decision(
+                        actor_profile=actor.to_dict(),
+                        world_state=current_state,
+                        actor_reasoning=decision['reasoning'],
+                        actor_action=decision['action'],
+                        turn=turn
+                    )
+                    if validation_result and not validation_result.passed:
+                        severity_emoji = "⚠️" if validation_result.severity != "High" else "❌"
+                        print(f"      {severity_emoji} Validation warning: {validation_result.issues[0] if validation_result.issues else 'Inconsistency detected'}")
+
             # Update world state using LLM synthesis
             print(f"\n  Synthesizing world state update...")
             world_update_result = world_state_updater.update_world_state(
@@ -616,6 +635,24 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                 f.write(world_state_md)
 
             print(f"    ✓ World state updated (tokens: {world_update_result['metadata'].get('tokens_used', 0):,})\n")
+
+            # Validate world state update (if enabled)
+            if qa_validator.is_enabled() and qa_validator.should_run_after_turn():
+                # Extract just the action text for each actor
+                actor_actions_text = {name: data['action'] for name, data in actor_decisions_for_world_update.items()}
+
+                validation_result = qa_validator.validate_world_state_update(
+                    previous_world_state=current_state,
+                    actor_actions=actor_actions_text,
+                    new_world_state=new_state,
+                    turn=turn
+                )
+                if validation_result and not validation_result.passed:
+                    severity_emoji = "⚠️" if validation_result.severity != "High" else "❌"
+                    print(f"    {severity_emoji} World state validation warning: {validation_result.issues[0] if validation_result.issues else 'Inconsistency detected'}")
+
+                # Generate turn validation report
+                qa_validator.generate_turn_report(turn, output_path)
 
             # Save state after successful turn completion
             state_manager.save_state(
@@ -674,6 +711,15 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
     # Set final metrics
     metrics_tracker.set_final_metrics()
 
+    # Generate validation summary report (if enabled)
+    if qa_validator.is_enabled():
+        qa_validator.generate_summary_report(output_path)
+        print("\nValidation Summary:")
+        print(f"  Total validation checks: {len(qa_validator.validation_results)}")
+        passed = sum(1 for r in qa_validator.validation_results if r.passed)
+        print(f"  Passed: {passed}/{len(qa_validator.validation_results)}")
+        print(f"  Validation tokens: {qa_validator.total_tokens:,}")
+
     # Mark scenario as completed
     state_manager.mark_completed()
 
@@ -681,8 +727,15 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
     cost_tracker.print_summary()
     metrics_tracker.print_summary()
 
-    # Save cost and metrics data
-    cost_tracker.save_to_file(os.path.join(output_path, 'costs.json'))
+    # Save cost and metrics data (including validation costs)
+    cost_data = cost_tracker.get_summary()
+    if qa_validator.is_enabled():
+        cost_data['validation'] = qa_validator.get_validation_costs()
+
+    with open(os.path.join(output_path, 'costs.json'), 'w') as f:
+        import json
+        json.dump(cost_data, f, indent=2)
+
     metrics_tracker.save_to_file(os.path.join(output_path, 'metrics.json'))
 
     print(f"{'='*60}")
@@ -692,6 +745,9 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
     print(f"  - costs.json: Cost breakdown")
     print(f"  - metrics.json: Metrics data")
     print(f"  - scenario-state.json: Execution state")
+    if qa_validator.is_enabled():
+        print(f"  - validation-*.md: Validation reports")
+        print(f"  - validation-summary.md: Overall validation results")
     print(f"{'='*60}\n")
 
 

@@ -32,6 +32,8 @@ Scenario Lab is being developed in phases, with each phase building on previous 
 
 **Goal:** Build production-ready core system with essential features
 
+**Status:** COMPLETE
+
 **What We Built:**
 
 1. **Multi-Model Support**
@@ -70,15 +72,23 @@ Scenario Lab is being developed in phases, with each phase building on previous 
    - State truncation and recalculation
    - "What-if" exploration and comparative analysis
 
-7. **Improved Documentation**
+7. **Quality Assurance Validator**
+   - QAValidator class with three check types:
+     - Actor decision consistency (goals/constraints/expertise alignment)
+     - World state coherence (logical consequences of actions)
+     - Information access consistency (actors use only available info)
+   - Configurable via `validation-rules.yaml`
+   - Lightweight LLM validation (default: gpt-4o-mini)
+   - Per-turn validation reports (`validation-NNN.md`)
+   - Summary validation report (`validation-summary.md`)
+   - Validation costs tracked separately in `costs.json`
+   - 13 comprehensive unit tests
+
+8. **Improved Documentation**
    - Clean markdown formatting with timestamps
    - Reasoning/Action separation in actor files
    - World state files with actions summary
    - Auto-incrementing run numbers preserve history
-
-**Not Yet Implemented from Phase 1:**
-- Quality Assurance Validator (consistency checking)
-- Enhanced scenario specification (validation rules, background data)
 
 ---
 
@@ -218,8 +228,8 @@ In cooperation scenarios, an actor's goal can evolve from "defeat competitor X" 
 ### Testing Infrastructure ✅ (October 2025)
 
 **Implemented:**
-- Comprehensive unit test suite (29 tests, all passing)
-- Tests for: WorldState, CommunicationManager, ContextManager, CostTracker
+- Comprehensive unit test suite (95 tests, all passing)
+- Tests for: WorldState, CommunicationManager, ContextManager, CostTracker, QAValidator, ResponseParser, MarkdownUtils, ApiUtils
 - Test runner with summary output (`run_tests.py`)
 - Test documentation in `tests/README.md`
 - CI-ready infrastructure
@@ -383,8 +393,9 @@ Interested in contributing? Here are ways to help:
 
 ## Version History
 
+- **v0.4** (October 2025): Phase 1 complete - QA Validator with automated consistency checking, 95 tests passing
 - **v0.3** (October 2025): Phase 2 complete - Communication types, coalitions, context management, evolving goals, test suite
-- **v0.2** (October 2025): Phase 1 - Core framework with multi-model support, resumability, branching
+- **v0.2** (October 2025): Phase 1 partial - Core framework with multi-model support, resumability, branching
 - **v0.1** (October 2025): Phase 0 - Proof of concept
 
 ---

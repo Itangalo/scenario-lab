@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Scenario Lab** is an experimental framework for AI-automated scenario exercises focused on exploring complex policy and strategic questions, particularly around AI governance and policy. The system enables multi-actor simulations where AI agents interact in dynamic environments, providing both statistical insights from batch runs and deep qualitative analysis.
 
-**Current Status:** Phase 1 core features implemented and working. The framework includes:
+**Current Status:** Phase 1 COMPLETE. The framework includes:
 
 - ✅ Multi-actor AI-controlled scenarios with simultaneous turn execution
 - ✅ LLM-powered world state synthesis (not simple concatenation)
@@ -14,8 +14,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - ✅ Structured metrics extraction and export (JSON)
 - ✅ **Resumable scenarios** - graceful handling of rate limits and budget constraints
 - ✅ **Scenario branching** - create alternative paths from any completed turn
+- ✅ **Quality assurance validator** - automated consistency checking with validation reports
 - ✅ Auto-incrementing run numbers to preserve history
-- ⏳ Quality assurance validator (planned)
 
 ## Core Architecture Concepts
 
@@ -182,6 +182,63 @@ The framework supports creating alternative scenario paths by branching from any
 2. Resume the branch to continue from next turn
 3. Modify scenario/actors if exploring alternatives
 4. Compare outputs between original and branch runs
+
+### Quality Assurance Validator
+
+The framework includes automated consistency checking using lightweight LLM models to validate expensive model outputs:
+
+**Key Components:**
+- `src/qa_validator.py` - QAValidator class with validation logic
+- `validation-rules.yaml` - Configuration file in each scenario directory
+- Validation reports generated per turn and as summary
+
+**Validation Checks:**
+1. **Actor Decision Consistency** - Validates that actor decisions align with:
+   - Stated goals and objectives
+   - Declared constraints
+   - Expertise levels
+   - Decision-making style
+
+2. **World State Coherence** - Validates that world state updates:
+   - Logically follow from actor actions
+   - Show appropriate consequences
+   - Maintain internal consistency
+   - Are realistic and proportionate
+
+3. **Information Access Consistency** - Validates that actors:
+   - Only reference information they have access to
+   - Don't use knowledge from private communications they weren't part of
+   - Respect information asymmetry rules
+
+**Configuration:**
+```yaml
+validation_model: "openai/gpt-4o-mini"  # Lightweight model for cost efficiency
+checks:
+  actor_decision_consistency:
+    enabled: true
+  world_state_coherence:
+    enabled: true
+  information_access_consistency:
+    enabled: true
+run_after_each_turn: true
+generate_turn_reports: true
+```
+
+**Outputs:**
+- `validation-001.md`, `validation-002.md`, etc. - Per-turn validation reports
+- `validation-summary.md` - Overall summary with statistics
+- Validation costs tracked in `costs.json` under `validation` key
+
+**Usage:**
+- Validation runs automatically if `validation-rules.yaml` exists
+- Can be disabled by removing the file or setting `enabled: false`
+- Warnings displayed during execution if issues found
+- Severity levels: Low (logged), Medium (warned), High (warned/halt)
+
+**Testing:**
+- 13 comprehensive unit tests in `tests/test_qa_validator.py`
+- Tests cover initialization, parsing, report generation, cost tracking
+- All tests pass as part of the 95-test suite
 
 ## Working with the Repository
 

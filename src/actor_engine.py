@@ -435,6 +435,24 @@ What do you want to communicate to your coalition members? Coordinate strategy, 
             'tokens_used': response.get('tokens_used', 0)
         }
 
+    def to_dict(self) -> Dict[str, Any]:
+        """
+        Convert actor profile to dictionary for validation
+
+        Returns:
+            Dict with actor profile information
+        """
+        return {
+            'name': self.name,
+            'short_name': self.short_name,
+            'llm_model': self.llm_model,
+            'description': self.description,
+            'goals': self.goals,
+            'constraints': self.constraints,
+            'expertise': self.expertise,
+            'decision_style': self.decision_style
+        }
+
     def _build_prompts(self, world_state: str, turn: int, total_turns: int, other_actors_decisions: Dict[str, str] = None, communications_context: str = "", recent_goals: str = "") -> tuple:
         """
         Build system and user prompts for the LLM

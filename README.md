@@ -269,6 +269,32 @@ Running hundreds or thousands of AI-powered scenarios can incur significant LLM 
 - **Model optimization**: Use lightweight models for quality assurance checks and exploration, reserve stronger models for detailed analysis
 - **Efficient caching**: Avoid re-executing identical scenario segments across multiple runs
 
+### Quality Assurance Validation
+
+The QA Validator automatically checks simulation consistency using lightweight LLM models to validate outputs from more expensive models:
+
+**What it validates:**
+- **Actor decision consistency**: Checks that actor decisions align with their stated goals, constraints, and expertise levels
+- **World state coherence**: Validates that world state updates logically follow from actor actions
+- **Information access**: Ensures actors only reference information they should have access to
+
+**Configuration:**
+- Define validation rules in `validation-rules.yaml` within each scenario
+- Specify which checks to enable/disable
+- Set severity thresholds (low/medium/high)
+- Choose validation model (default: `openai/gpt-4o-mini` for cost efficiency)
+
+**Outputs:**
+- `validation-NNN.md`: Per-turn validation reports
+- `validation-summary.md`: Overall validation results across the scenario
+- Validation costs tracked separately in `costs.json`
+
+**Benefits:**
+- **Quality assurance**: Catch inconsistencies and logic errors automatically
+- **Cost-effective**: Lightweight models validate expensive model outputs
+- **Transparent**: Detailed reports explain what was checked and any issues found
+- **Configurable**: Enable only the checks you need
+
 ### Data Structure
 
 ```
@@ -307,7 +333,7 @@ scenario-name/
 - [x] Simple world state tracking
 - [x] Markdown output
 
-### Phase 1: Core Framework (In Progress)
+### Phase 1: Core Framework ✅
 - [x] Define scenario specification format (including LLM model specs, metrics definitions)
 - [x] Implement world state manager
 - [x] Create basic actor engine with multi-model support
@@ -316,8 +342,7 @@ scenario-name/
 - [x] Implement structured metrics data export (JSON)
 - [x] Implement cost tracking and estimation
 - [x] Auto-incrementing run numbers
-- [ ] Develop simple action resolver
-- [ ] Create basic quality assurance validator
+- [x] Create quality assurance validator
 
 ### Phase 2: AI Integration
 - [ ] Integrate LLM for actor decision-making (support multiple models via OpenRouter or similar)
