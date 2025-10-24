@@ -28,6 +28,7 @@ class ScenarioStateManager:
         actors: Dict[str, Any],
         cost_tracker: CostTracker,
         metrics_tracker: MetricsTracker,
+        communication_manager: Any = None,
         halt_reason: Optional[str] = None,
         started_at: Optional[str] = None
     ):
@@ -44,6 +45,7 @@ class ScenarioStateManager:
             actors: Dictionary of Actor objects by short_name
             cost_tracker: CostTracker object
             metrics_tracker: MetricsTracker object
+            communication_manager: CommunicationManager object (optional)
             halt_reason: Optional reason for halt (rate_limit, credit_limit, max_turns, etc.)
             started_at: ISO timestamp when run started (preserved on resume)
         """
@@ -85,6 +87,7 @@ class ScenarioStateManager:
                 'metrics_by_turn': metrics_tracker.metrics_by_turn,
                 'final_metrics': metrics_tracker.final_metrics
             },
+            'communication_manager_state': communication_manager.to_dict() if communication_manager else None,
             'execution_metadata': {
                 'started_at': started_at or datetime.now().isoformat(),
                 'last_updated': datetime.now().isoformat(),

@@ -13,6 +13,7 @@ from world_state_updater import WorldStateUpdater
 from cost_tracker import CostTracker
 from metrics_tracker import MetricsTracker
 from scenario_state_manager import ScenarioStateManager
+from communication_manager import CommunicationManager, ChannelType
 
 
 def load_scenario(scenario_path: str):
@@ -131,7 +132,21 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
 
     # Initialize Phase 1 components
     if not resume_mode:
-        print("\nInitializing Phase 1 components...")
+        print("\nInitializing components...")
+
+    # Communication manager - restore or create new
+    if resume_mode and saved_state and 'communication_manager_state' in saved_state:
+        communication_manager = CommunicationManager.from_dict(saved_state['communication_manager_state'])
+        print(f"  Restored communication manager")
+    else:
+        # Get actor names for communication manager
+        actor_full_names = []
+        if resume_mode and saved_state:
+            actor_full_names = [actor_data['name'] for actor_data in saved_state['actors'].values()]
+        else:
+            # Will be populated after loading actors
+            pass
+        communication_manager = None  # Will be created after loading actors
 
     # Cost tracker - restore or create new
     if resume_mode and saved_state:
@@ -203,6 +218,13 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             actor_models[actor.name] = actor.llm_model
             print(f"Loaded actor: {actor.name} ({actor_short_name}) - {actor.llm_model}")
 
+    # Create communication manager now that we have actors
+    if communication_manager is None:
+        actor_full_names = [actor.name for actor in actors.values()]
+        communication_manager = CommunicationManager(actor_full_names)
+        if not resume_mode:
+            print(f"  Communication manager initialized")
+
     # Estimate costs (only for new runs)
     num_turns = scenario['turns']
     if not resume_mode:
@@ -258,6 +280,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                     actors=actors,
                     cost_tracker=cost_tracker,
                     metrics_tracker=metrics_tracker,
+                    communication_manager=communication_manager,
                     halt_reason='credit_limit',
                     started_at=started_at
                 )
@@ -267,14 +290,76 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
 
             current_state = world_state.get_current_state()
 
-            # Each actor makes a decision simultaneously
+            # PHASE 1: Private Communications (optional)
+            print(f"\n  Phase 1: Private Communications")
+
+            for actor_short_name, actor in actors.items():
+                # Get list of other actors
+                other_actor_names = [a.name for a in actors.values() if a.name != actor.name]
+
+                # Ask if actor wants to communicate privately
+                if len(other_actor_names) > 0:
+                    print(f"    {actor.name} considering private communication...")
+                    comm_decision = actor.decide_communication(current_state, turn, num_turns, other_actor_names)
+
+                    # Track communication decision cost
+                    cost_tracker.record_actor_decision(
+                        actor_name=actor.name,
+                        turn=turn,
+                        model=actor.llm_model,
+                        tokens_used=comm_decision.get('tokens_used', 0)
+                    )
+
+                    if comm_decision['initiate_bilateral']:
+                        target = comm_decision['target_actor']
+                        message = comm_decision['message']
+
+                        print(f"      → Initiating bilateral with {target}")
+
+                        # Get or create bilateral channel
+                        channel = communication_manager.get_or_create_bilateral(actor.name, target, turn)
+
+                        # Send initiator's message
+                        communication_manager.send_message(channel.channel_id, actor.name, message)
+
+                        # Get target actor
+                        target_actor = next(a for a in actors.values() if a.name == target)
+
+                        # Target responds
+                        print(f"      → {target} responding...")
+                        response = target_actor.respond_to_bilateral(current_state, turn, num_turns, actor.name, message)
+
+                        # Track response cost
+                        cost_tracker.record_actor_decision(
+                            actor_name=target,
+                            turn=turn,
+                            model=target_actor.llm_model,
+                            tokens_used=response.get('tokens_used', 0)
+                        )
+
+                        # Send response
+                        communication_manager.send_message(channel.channel_id, target, response['response'])
+
+                        print(f"      ✓ Bilateral negotiation completed")
+                    else:
+                        print(f"      → No private communication")
+
+            # Export bilateral communications to files
+            communication_manager.export_channels_to_files(output_path, scenario_name, turn)
+
+            # PHASE 2: Public Actions
+            print(f"\n  Phase 2: Public Actions")
+
             turn_decisions = {}
             actor_decisions_for_world_update = {}
 
             for actor_short_name, actor in actors.items():
-                print(f"  {actor.name} is deciding...")
+                print(f"    {actor.name} is deciding public action...")
 
-                decision = actor.make_decision(current_state, turn, num_turns)
+                # Get communications context for this actor
+                comm_context = communication_manager.format_messages_for_context(actor.name, turn)
+
+                decision = actor.make_decision(current_state, turn, num_turns, communications_context=comm_context)
                 turn_decisions[actor_short_name] = decision
 
                 # Record decision in world state
@@ -353,6 +438,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                 actors=actors,
                 cost_tracker=cost_tracker,
                 metrics_tracker=metrics_tracker,
+                communication_manager=communication_manager,
                 halt_reason=None,
                 started_at=started_at
             )
@@ -379,6 +465,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                     actors=actors,
                     cost_tracker=cost_tracker,
                     metrics_tracker=metrics_tracker,
+                    communication_manager=communication_manager,
                     halt_reason='rate_limit',
                     started_at=started_at
                 )
