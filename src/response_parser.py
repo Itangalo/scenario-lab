@@ -19,13 +19,14 @@ def extract_section(content: str, section_name: str, next_section: Optional[str]
     """
     # Build flexible pattern that matches variations
     # Matches: **SECTION_NAME:** or **Section Name:** or ## Section Name, etc.
+    # Stop at: next bold header, heading, or separator (---)
     patterns = [
         # Bold with colon: **SECTION NAME:**
-        rf'\*\*\s*{re.escape(section_name)}\s*:\*\*\s*(.+?)(?=\*\*\s*[\w\s]+\s*:\*\*|\Z)',
+        rf'\*\*\s*{re.escape(section_name)}\s*:\*\*\s*(.+?)(?=\*\*\s*[\w\s]+\s*:\*\*|^#{2,}\s+[\w\s]+|^---+\s*$|\Z)',
         # Bold without colon: **SECTION NAME**
-        rf'\*\*\s*{re.escape(section_name)}\s*\*\*\s*(.+?)(?=\*\*\s*[\w\s]+\s*\*\*|\Z)',
-        # Heading: ## SECTION NAME
-        rf'^##\s*{re.escape(section_name)}\s*$\s*(.+?)(?=^##\s*[\w\s]+\s*$|\Z)',
+        rf'\*\*\s*{re.escape(section_name)}\s*\*\*\s*(.+?)(?=\*\*\s*[\w\s]+\s*\*\*|^#{2,}\s+[\w\s]+|^---+\s*$|\Z)',
+        # Heading 2 or 3: ## SECTION NAME or ### SECTION NAME (with optional colon)
+        rf'^#{2,}\s*{re.escape(section_name)}\s*:?\s*$\s*(.+?)(?=^#{2,}\s+[\w\s]+|^---+\s*$|\Z)',
     ]
 
     for pattern in patterns:
@@ -38,7 +39,8 @@ def extract_section(content: str, section_name: str, next_section: Optional[str]
                 next_patterns = [
                     rf'\*\*\s*{re.escape(next_section)}\s*:\*\*',
                     rf'\*\*\s*{re.escape(next_section)}\s*\*\*',
-                    rf'^##\s*{re.escape(next_section)}\s*$',
+                    rf'^#{2,}\s*{re.escape(next_section)}\s*:?\s*$',  # Heading 2 or 3
+                    rf'^---+\s*$',  # Also stop at separator
                 ]
                 for next_pattern in next_patterns:
                     next_match = re.search(next_pattern, extracted, re.MULTILINE | re.IGNORECASE)
@@ -83,20 +85,28 @@ def parse_actor_decision(content: str) -> Dict[str, str]:
     if long_term:
         goals_text.append(f"**LONG-TERM GOALS:**\n{long_term}")
 
-    # Look for short-term priorities
-    short_term = extract_section(content, "SHORT-TERM PRIORITIES", "REASONING")
-    if not short_term:
-        short_term = extract_section(content, "SHORT-TERM", "REASONING")
-    if not short_term:
-        short_term = extract_section(content, "SHORT TERM", "REASONING")
+    # Look for short-term priorities (try multiple stop points for next section)
+    short_term = None
+    for stop_section in ["REASONING", "CURRENT REASONING", "ACTION"]:
+        if not short_term:
+            short_term = extract_section(content, "SHORT-TERM PRIORITIES", stop_section)
+        if not short_term:
+            short_term = extract_section(content, "SHORT-TERM", stop_section)
+        if not short_term:
+            short_term = extract_section(content, "SHORT TERM", stop_section)
+        if short_term:
+            break
+
     if short_term:
         goals_text.append(f"**SHORT-TERM PRIORITIES:**\n{short_term}")
 
     if goals_text:
         result['goals'] = "\n\n".join(goals_text)
 
-    # Strategy 2: Extract reasoning
+    # Strategy 2: Extract reasoning (try multiple variations)
     reasoning = extract_section(content, "REASONING", "ACTION")
+    if not reasoning:
+        reasoning = extract_section(content, "CURRENT REASONING", "ACTION")
     if not reasoning:
         reasoning = extract_section(content, "RATIONALE", "ACTION")
     if reasoning:
