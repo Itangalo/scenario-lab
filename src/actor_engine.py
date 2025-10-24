@@ -37,7 +37,8 @@ class Actor:
         return {
             'reasoning': response.get('reasoning', ''),
             'action': response.get('action', ''),
-            'raw_response': response.get('raw', '')
+            'raw_response': response.get('raw', ''),
+            'tokens_used': response.get('tokens_used', 0)
         }
 
     def _build_prompts(self, world_state: str, turn: int, total_turns: int, other_actors_decisions: Dict[str, str] = None) -> tuple:
@@ -125,10 +126,16 @@ Remember: This is turn {turn} of {total_turns}. Consider how your action moves t
             reasoning = "No structured reasoning provided"
             action = content
 
+        # Get token usage if available
+        tokens_used = 0
+        if 'usage' in result:
+            tokens_used = result['usage'].get('total_tokens', 0)
+
         return {
             'reasoning': reasoning,
             'action': action,
-            'raw': content
+            'raw': content,
+            'tokens_used': tokens_used
         }
 
 

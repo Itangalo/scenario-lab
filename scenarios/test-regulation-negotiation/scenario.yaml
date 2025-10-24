@@ -30,6 +30,9 @@ initial_world_state: |
 turns: 3
 turn_duration: "1 month"
 
+# LLM model to use for world state synthesis
+world_state_model: "alibaba/tongyi-deepresearch-30b-a3b:free"
+
 actors:
   - regulator
   - tech-company
