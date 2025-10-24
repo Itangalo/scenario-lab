@@ -13,9 +13,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - ✅ Cost estimation and tracking for all LLM API calls
 - ✅ Structured metrics extraction and export (JSON)
 - ✅ **Resumable scenarios** - graceful handling of rate limits and budget constraints
+- ✅ **Scenario branching** - create alternative paths from any completed turn
 - ✅ Auto-incrementing run numbers to preserve history
 - ⏳ Quality assurance validator (planned)
-- ⏳ Scenario branching (planned)
 
 ## Core Architecture Concepts
 
@@ -154,6 +154,34 @@ The framework supports stopping and resuming scenario runs, crucial for handling
 - WorldState, CostTracker, MetricsTracker all fully serializable
 
 See `notes/resumable-scenarios-plan.md` for full implementation details.
+
+### Scenario Branching
+
+The framework supports creating alternative scenario paths by branching from any completed turn:
+
+**Command-line arguments:**
+- `--branch-from <path>` - Source run directory to branch from
+- `--branch-at-turn N` - Turn number to branch from (0 to current_turn)
+
+**Implementation details:**
+- `branch_scenario()` function in run_scenario.py
+- Creates new run directory with auto-incremented number
+- Copies all markdown files (world states, actor decisions) up to branch point
+- Truncates state data (world state, costs, metrics) to branch point
+- Recalculates totals for cost tracking and metrics
+- Adds branch metadata to execution_metadata (branched_from, branch_point)
+
+**Use cases:**
+- Explore "what-if" scenarios from critical decision points
+- Test different actor strategies from same starting conditions
+- Compare outcomes with different prompts or models
+- Sensitivity analysis by varying parameters from branch point
+
+**Workflow:**
+1. Branch creates new run with copied history
+2. Resume the branch to continue from next turn
+3. Modify scenario/actors if exploring alternatives
+4. Compare outputs between original and branch runs
 
 ## Working with the Repository
 

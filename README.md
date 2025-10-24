@@ -329,6 +329,40 @@ python src/run_scenario.py --resume output/test-regulation-negotiation/run-003
 
 Each run directory contains `scenario-state.json` with execution status and full state for resumption.
 
+### Scenario Branching
+
+Create alternative scenario paths by branching from any completed turn. This enables exploring "what-if" scenarios and testing different strategies from the same starting point.
+
+**Branch from an existing run:**
+```bash
+python src/run_scenario.py --branch-from output/test-regulation-negotiation/run-001 --branch-at-turn 2
+```
+
+**How it works:**
+- Creates a new run directory (e.g., run-008) with auto-incremented number
+- Copies all state and output files up to the branch point
+- Truncates cost tracking and metrics to the branch point
+- Sets status to 'running' so you can resume from the next turn
+- Preserves branch metadata (source run, branch point) in state file
+
+**Use cases:**
+- Test different actor strategies from the same starting conditions
+- Explore alternative policy approaches after a critical decision point
+- Compare outcomes with different actor models or prompts
+- Run sensitivity analysis by branching and varying parameters
+
+**Example workflow:**
+```bash
+# Run initial scenario
+python src/run_scenario.py scenarios/test-regulation-negotiation
+
+# Branch from turn 2 of run-001
+python src/run_scenario.py --branch-from output/test-regulation-negotiation/run-001 --branch-at-turn 2
+
+# Continue the branch with modified scenario or actors
+python src/run_scenario.py --resume output/test-regulation-negotiation/run-002
+```
+
 ### Available Scenarios
 
 - **test-regulation-negotiation**: AI safety regulation negotiation between regulator and tech company ([docs](scenarios/test-regulation-negotiation/README.md))

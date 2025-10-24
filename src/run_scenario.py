@@ -5,6 +5,7 @@ import os
 import yaml
 import argparse
 import requests
+import shutil
 from pathlib import Path
 from actor_engine import load_actor, Actor
 from world_state import WorldState
@@ -417,15 +418,194 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
     print(f"{'='*60}\n")
 
 
+def branch_scenario(source_run_path: str, branch_at_turn: int) -> str:
+    """
+    Create a new run branching from an existing run at a specific turn
+
+    Args:
+        source_run_path: Path to the source run directory
+        branch_at_turn: Turn number to branch from
+
+    Returns:
+        Path to the new branch run directory
+    """
+    print(f"Branching from: {source_run_path}")
+    print(f"Branch point: Turn {branch_at_turn}")
+
+    # Load source state
+    source_state_manager = ScenarioStateManager(source_run_path)
+
+    if not source_state_manager.state_exists():
+        raise ValueError(f"No scenario state found in {source_run_path}")
+
+    source_state = source_state_manager.load_state()
+
+    # Validate branch point
+    if branch_at_turn > source_state['current_turn']:
+        raise ValueError(
+            f"Cannot branch at turn {branch_at_turn}: "
+            f"source run only completed {source_state['current_turn']} turn(s)"
+        )
+
+    if branch_at_turn < 0:
+        raise ValueError(f"Branch turn must be >= 0 (got {branch_at_turn})")
+
+    # Find next run number in the scenario output directory
+    scenario_output_dir = os.path.dirname(source_run_path)
+    new_run_number = find_next_run_number(scenario_output_dir)
+    new_run_path = os.path.join(scenario_output_dir, f'run-{new_run_number:03d}')
+
+    os.makedirs(new_run_path, exist_ok=True)
+    print(f"Creating branch: {new_run_path}")
+
+    # Copy initial world state (turn 0)
+    shutil.copy(
+        os.path.join(source_run_path, 'world-state-000.md'),
+        os.path.join(new_run_path, 'world-state-000.md')
+    )
+
+    # Copy outputs up to and including branch point
+    for turn in range(1, branch_at_turn + 1):
+        # Copy world state file
+        world_state_file = f'world-state-{turn:03d}.md'
+        if os.path.exists(os.path.join(source_run_path, world_state_file)):
+            shutil.copy(
+                os.path.join(source_run_path, world_state_file),
+                os.path.join(new_run_path, world_state_file)
+            )
+
+        # Copy actor decision files
+        for actor_data in source_state['actors'].values():
+            actor_file = f"{actor_data['short_name']}-{turn:03d}.md"
+            if os.path.exists(os.path.join(source_run_path, actor_file)):
+                shutil.copy(
+                    os.path.join(source_run_path, actor_file),
+                    os.path.join(new_run_path, actor_file)
+                )
+
+    # Create truncated state for the branch
+    # Truncate world state to branch point
+    truncated_world_state = {
+        'current_state': source_state['world_state']['states'][str(branch_at_turn)],
+        'current_turn': branch_at_turn,
+        'turn_duration': source_state['world_state']['turn_duration'],
+        'scenario_name': source_state['world_state']['scenario_name'],
+        'states': {k: v for k, v in source_state['world_state']['states'].items() if int(k) <= branch_at_turn},
+        'actor_decisions': {k: v for k, v in source_state['world_state']['actor_decisions'].items() if int(k) <= branch_at_turn}
+    }
+
+    # Truncate cost tracker to branch point
+    truncated_costs_by_turn = {k: v for k, v in source_state['cost_tracker_state']['costs_by_turn'].items() if int(k) <= branch_at_turn}
+
+    # Recalculate totals
+    total_cost = 0.0
+    total_tokens = 0
+    for turn_data in truncated_costs_by_turn.values():
+        total_cost += turn_data['total']
+        # Sum actor tokens
+        for actor_costs in turn_data.get('actor_costs', {}).values():
+            # Note: individual token counts not stored per actor in turn data, so we can't recalculate perfectly
+            pass
+
+    # Truncate costs by actor
+    truncated_costs_by_actor = {}
+    for actor_name, actor_costs in source_state['cost_tracker_state']['costs_by_actor'].items():
+        actor_turns = [t for t in actor_costs['turns'] if t['turn'] <= branch_at_turn]
+        if actor_turns:
+            truncated_costs_by_actor[actor_name] = {
+                'turns': actor_turns,
+                'total_cost': sum(t['cost'] for t in actor_turns),
+                'total_tokens': sum(t['tokens'] for t in actor_turns)
+            }
+
+    # Truncate world state costs
+    truncated_world_state_costs = [
+        wsc for wsc in source_state['cost_tracker_state']['world_state_costs']
+        if wsc['turn'] <= branch_at_turn
+    ]
+
+    # Recalculate total tokens from actors + world state
+    total_tokens = sum(a['total_tokens'] for a in truncated_costs_by_actor.values())
+    total_tokens += sum(wsc['tokens'] for wsc in truncated_world_state_costs)
+    total_cost = sum(a['total_cost'] for a in truncated_costs_by_actor.values())
+    total_cost += sum(wsc['cost'] for wsc in truncated_world_state_costs)
+
+    truncated_cost_tracker = {
+        'total_cost': total_cost,
+        'total_tokens': total_tokens,
+        'costs_by_actor': truncated_costs_by_actor,
+        'costs_by_turn': truncated_costs_by_turn,
+        'world_state_costs': truncated_world_state_costs
+    }
+
+    # Truncate metrics to branch point
+    truncated_metrics_by_turn = {
+        k: v for k, v in source_state['metrics_tracker_state']['metrics_by_turn'].items()
+        if int(k) <= branch_at_turn
+    }
+
+    # Create new state file for branch
+    branch_state = {
+        'scenario_name': source_state['scenario_name'],
+        'scenario_path': source_state['scenario_path'],
+        'status': 'running',
+        'halt_reason': None,
+        'current_turn': branch_at_turn,
+        'total_turns': source_state['total_turns'],
+        'completed_turns': list(range(1, branch_at_turn + 1)) if branch_at_turn > 0 else [],
+        'world_state': truncated_world_state,
+        'actors': source_state['actors'],
+        'cost_tracker_state': truncated_cost_tracker,
+        'metrics_tracker_state': {
+            'metrics_by_turn': truncated_metrics_by_turn,
+            'final_metrics': {}
+        },
+        'execution_metadata': {
+            'started_at': source_state['execution_metadata']['started_at'],
+            'last_updated': source_state['execution_metadata']['last_updated'],
+            'output_path': new_run_path,
+            'branched_from': source_run_path,
+            'branch_point': branch_at_turn
+        }
+    }
+
+    # Write branch state
+    branch_state_manager = ScenarioStateManager(new_run_path)
+    with open(branch_state_manager.state_file, 'w') as f:
+        import json
+        json.dump(branch_state, f, indent=2)
+
+    print(f"\n✓ Branch created successfully")
+    print(f"  Source: {source_run_path}")
+    print(f"  Branch: {new_run_path}")
+    print(f"  Branched at turn: {branch_at_turn}")
+    print(f"  Copied {branch_at_turn} turn(s) of history")
+    print(f"  Cost so far: ${total_cost:.4f} ({total_tokens:,} tokens)")
+    print(f"\nContinue from turn {branch_at_turn + 1} with:")
+    print(f"  python src/run_scenario.py --resume {new_run_path}\n")
+
+    return new_run_path
+
+
 def main():
     parser = argparse.ArgumentParser(description='Run a Scenario Lab simulation')
     parser.add_argument('scenario', nargs='?', help='Path to scenario directory')
     parser.add_argument('--output', '-o', help='Output directory path', default=None)
     parser.add_argument('--resume', help='Resume from run directory path')
+    parser.add_argument('--branch-from', help='Branch from existing run directory')
+    parser.add_argument('--branch-at-turn', type=int, help='Turn to branch from (requires --branch-from)')
     parser.add_argument('--max-turns', type=int, help='Stop after this many turns')
     parser.add_argument('--credit-limit', type=float, help='Halt if cost exceeds this amount')
 
     args = parser.parse_args()
+
+    # Handle branching mode
+    if args.branch_from:
+        if args.branch_at_turn is None:
+            parser.error("--branch-at-turn is required when using --branch-from")
+
+        branch_scenario(args.branch_from, args.branch_at_turn)
+        return
 
     # Handle resume mode
     if args.resume:
@@ -438,7 +618,7 @@ def main():
         )
     else:
         if not args.scenario:
-            parser.error("scenario path is required unless using --resume")
+            parser.error("scenario path is required unless using --resume or --branch-from")
 
         run_scenario(
             scenario_path=args.scenario,
