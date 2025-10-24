@@ -378,7 +378,15 @@ cd scenario-lab
 pip install -r requirements.txt
 ```
 
-3. **Set up your API key:**
+3. **Run tests (optional but recommended):**
+
+```bash
+python run_tests.py
+```
+
+All tests should pass. See `tests/README.md` for details.
+
+4. **Set up your API key:**
 
 ```bash
 cp .env.example .env
