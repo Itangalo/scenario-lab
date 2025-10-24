@@ -6,6 +6,8 @@ import yaml
 import requests
 from typing import Dict, Any, List
 from dotenv import load_dotenv
+from api_utils import make_openrouter_call
+from response_parser import parse_actor_decision, parse_bilateral_decision, parse_coalition_decision, parse_coalition_response
 
 load_dotenv()
 
@@ -525,42 +527,12 @@ Remember: This is turn {turn} of {total_turns}. Your goals can evolve based on e
             "messages": messages
         }
 
-        response = requests.post(url, headers=headers, json=data)
-        response.raise_for_status()
-
+        response = make_openrouter_call(url, headers, data, max_retries=3)
         result = response.json()
         content = result['choices'][0]['message']['content']
 
-        # Parse the response
-        goals = ""
-        reasoning = ""
-        action = ""
-
-        # Extract goals if present
-        if "**LONG-TERM GOALS:**" in content:
-            try:
-                # Extract everything from LONG-TERM GOALS to REASONING
-                goals_section = content.split("**LONG-TERM GOALS:**")[1].split("**REASONING:**")[0]
-                goals = "**LONG-TERM GOALS:**" + goals_section.strip()
-            except (IndexError, AttributeError):
-                pass
-
-        # Extract reasoning and action
-        if "**REASONING:**" in content and "**ACTION:**" in content:
-            try:
-                parts = content.split("**ACTION:**")
-                reasoning_part = parts[0].split("**REASONING:**")[1].strip()
-                action_part = parts[1].strip()
-                reasoning = reasoning_part
-                action = action_part
-            except (IndexError, AttributeError):
-                # Fallback if format not followed
-                reasoning = "No structured reasoning provided"
-                action = content
-        else:
-            # Fallback if format not followed
-            reasoning = "No structured reasoning provided"
-            action = content
+        # Parse the response using robust parser
+        parsed = parse_actor_decision(content)
 
         # Get token usage if available
         tokens_used = 0
@@ -568,9 +540,9 @@ Remember: This is turn {turn} of {total_turns}. Your goals can evolve based on e
             tokens_used = result['usage'].get('total_tokens', 0)
 
         return {
-            'goals': goals,
-            'reasoning': reasoning,
-            'action': action,
+            'goals': parsed['goals'],
+            'reasoning': parsed['reasoning'],
+            'action': parsed['action'],
             'raw': content,
             'tokens_used': tokens_used
         }

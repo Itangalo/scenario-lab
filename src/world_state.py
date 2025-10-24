@@ -3,6 +3,7 @@ World State Manager - Tracks and updates the state of the scenario world
 """
 from typing import Dict, List, Any
 from datetime import datetime
+from markdown_utils import clean_markdown_formatting
 
 
 class WorldState:
@@ -75,5 +76,8 @@ class WorldState:
         md += "---\n\n"
         md += "## Action\n\n"
         md += f"{decision['action']}\n\n"
+
+        # Clean markdown to remove duplicates and normalize formatting
+        md = clean_markdown_formatting(md)
 
         return md

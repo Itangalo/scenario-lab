@@ -115,15 +115,69 @@ Scenario Lab is being developed in phases, with each phase building on previous 
 - Duplicate coalition prevention within same turn
 - Markdown export: `coalition-Members-NNN.md`
 
-#### 2.3: Advanced Prompting ⏳
+#### 2.3: Advanced Prompting ⏸️
 
-**Status:** Deferred (lower priority)
+**Status:** On Hold (under investigation before implementation)
 
-**Planned:**
-- Few-shot examples in system prompts
-- Chain-of-thought reasoning prompts
-- Self-critique mechanisms
-- Dynamic prompt adaptation based on scenario progress
+**Motivation:**
+While basic prompting produces reasonable results, advanced techniques could significantly improve:
+- Decision quality and consistency
+- Adherence to actor personalities and constraints
+- Strategic thinking depth
+- Response format reliability
+
+**Planned Components:**
+
+1. **Few-Shot Examples**
+   - Include 2-3 example decision scenarios in system prompts
+   - Show high-quality reasoning patterns
+   - Demonstrate proper format adherence
+   - Actor-type specific examples (e.g., regulator vs. company vs. NGO)
+   - **Benefit:** Dramatically improves format compliance and decision quality
+
+2. **Chain-of-Thought Prompting**
+   - Explicit reasoning steps before decisions
+   - "Think step by step" style prompts
+   - Structured reasoning templates (assess situation → evaluate options → choose action)
+   - **Benefit:** More thorough analysis, fewer impulsive decisions
+
+3. **Self-Critique Mechanisms**
+   - Prompt actors to validate their own decisions
+   - Check alignment with goals and constraints
+   - "Before finalizing, review whether this action serves your goals..."
+   - Identify potential unintended consequences
+   - **Benefit:** Reduces obviously bad decisions, improves consistency
+
+4. **Dynamic Prompt Adaptation**
+   - Adjust prompts based on scenario phase (early negotiation vs. final decision)
+   - Add emphasis when actors are off-track (e.g., violating stated goals)
+   - Scenario-specific guidance (e.g., "Remember: this is a cooperation scenario")
+   - Context-aware prompting based on recent history
+   - **Benefit:** More contextually appropriate behavior throughout scenario
+
+5. **Role-Playing Enhancement**
+   - Stronger personality anchoring
+   - "You are known for [trait]. How does this inform your decision?"
+   - Periodic reminders of actor identity and institutional constraints
+   - **Benefit:** More authentic and differentiated actor behavior
+
+6. **Format Enforcement**
+   - Stricter instructions for output structure
+   - Multiple examples of correct formatting
+   - Fallback parsing strategies for common deviations
+   - **Benefit:** Reduces parsing errors and improves reliability
+
+**Implementation Considerations:**
+- Start with few-shot examples (highest impact, easiest to implement)
+- Test incrementally to measure quality improvements vs. cost increases
+- Different actors may benefit from different techniques
+- Balance prompt complexity with token costs
+
+**Success Metrics:**
+- Reduced format parsing errors
+- Improved expert evaluation of decision quality
+- Better goal-action alignment
+- More consistent actor personalities across turns
 
 #### 2.4: Context Management ✅
 

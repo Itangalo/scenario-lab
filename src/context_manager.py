@@ -7,6 +7,7 @@ from typing import Dict, Any, List, Optional
 from dotenv import load_dotenv
 from world_state import WorldState
 from communication_manager import CommunicationManager
+from api_utils import make_openrouter_call
 
 load_dotenv()
 
@@ -240,9 +241,7 @@ Provide a concise summary that captures the key events, decisions, and state cha
             "messages": messages
         }
 
-        response = requests.post(url, headers=headers, json=data)
-        response.raise_for_status()
-
+        response = make_openrouter_call(url, headers, data, max_retries=3)
         result = response.json()
         return result['choices'][0]['message']['content']
 

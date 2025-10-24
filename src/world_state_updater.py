@@ -5,6 +5,7 @@ import os
 import requests
 from typing import Dict, Any
 from dotenv import load_dotenv
+from api_utils import make_openrouter_call
 
 load_dotenv()
 
@@ -157,9 +158,7 @@ Remember: Be specific, realistic, and show how actions create ripple effects."""
             "messages": messages
         }
 
-        response = requests.post(url, headers=headers, json=data)
-        response.raise_for_status()
-
+        response = make_openrouter_call(url, headers, data, max_retries=3)
         result = response.json()
         content = result['choices'][0]['message']['content']
 
