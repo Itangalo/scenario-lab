@@ -24,7 +24,7 @@ class Actor:
         self.expertise = actor_data.get('expertise', {})
         self.decision_style = actor_data.get('decision_style', '')
 
-    def make_decision(self, world_state: str, turn: int, total_turns: int, other_actors_decisions: Dict[str, str] = None, communications_context: str = "") -> Dict[str, Any]:
+    def make_decision(self, world_state: str, turn: int, total_turns: int, other_actors_decisions: Dict[str, str] = None, communications_context: str = "", recent_goals: str = "") -> Dict[str, Any]:
         """
         Have the actor make a decision based on current world state
 
@@ -34,14 +34,16 @@ class Actor:
             total_turns: Total turns in scenario
             other_actors_decisions: Optional other actors' decisions
             communications_context: Optional context from private communications
+            recent_goals: Optional recent goal statements from previous turns
 
         Returns:
-            Dict with 'reasoning' and 'action' keys
+            Dict with 'reasoning', 'action', and 'goals' keys
         """
-        system_prompt, user_prompt = self._build_prompts(world_state, turn, total_turns, other_actors_decisions, communications_context)
+        system_prompt, user_prompt = self._build_prompts(world_state, turn, total_turns, other_actors_decisions, communications_context, recent_goals)
         response = self._call_llm(system_prompt, user_prompt)
 
         return {
+            'goals': response.get('goals', ''),
             'reasoning': response.get('reasoning', ''),
             'action': response.get('action', ''),
             'raw_response': response.get('raw', ''),
@@ -431,7 +433,7 @@ What do you want to communicate to your coalition members? Coordinate strategy, 
             'tokens_used': response.get('tokens_used', 0)
         }
 
-    def _build_prompts(self, world_state: str, turn: int, total_turns: int, other_actors_decisions: Dict[str, str] = None, communications_context: str = "") -> tuple:
+    def _build_prompts(self, world_state: str, turn: int, total_turns: int, other_actors_decisions: Dict[str, str] = None, communications_context: str = "", recent_goals: str = "") -> tuple:
         """
         Build system and user prompts for the LLM
 
@@ -441,6 +443,7 @@ What do you want to communicate to your coalition members? Coordinate strategy, 
             total_turns: Total turns in scenario
             other_actors_decisions: Optional other actors' decisions
             communications_context: Optional context from private communications
+            recent_goals: Optional recent goal statements from previous turns
 
         Returns:
             tuple: (system_prompt, user_prompt)
@@ -462,24 +465,38 @@ What do you want to communicate to your coalition members? Coordinate strategy, 
         if communications_context:
             communications_text = "\n\n" + communications_context
 
+        # Add recent goals if provided
+        recent_goals_text = ""
+        if recent_goals:
+            recent_goals_text = f"\n\n## Your Recent Goals\n\n{recent_goals}\n"
+
         # Build user prompt with current situation and task
         user_prompt = f"""## Current Situation (Turn {turn} of {total_turns})
 
 {world_state}
 {communications_text}
 {other_decisions_text}
+{recent_goals_text}
 
 ## Your Task
 
-Decide what action to take this turn. Provide your response in the following format:
+First, state your current goals given recent developments:
+
+**LONG-TERM GOALS:**
+[List 2-4 enduring objectives you're pursuing. These may evolve based on events, but changes should be justified.]
+
+**SHORT-TERM PRIORITIES:**
+[List 1-3 immediate objectives for the next few turns.]
+
+Then decide your action:
 
 **REASONING:**
-[Explain your thinking, considering your goals, constraints, and the current situation]
+[Explain your thinking, how this action serves your goals, and why your goals may have evolved or remained stable]
 
 **ACTION:**
 [Describe the specific action you will take this turn - be concrete and specific]
 
-Remember: This is turn {turn} of {total_turns}. Consider how your action moves toward your goals while addressing the current situation.
+Remember: This is turn {turn} of {total_turns}. Your goals can evolve based on experience, but maintain some continuity unless events strongly justify change.
 """
 
         return combined_system_prompt, user_prompt
@@ -515,15 +532,31 @@ Remember: This is turn {turn} of {total_turns}. Consider how your action moves t
         content = result['choices'][0]['message']['content']
 
         # Parse the response
+        goals = ""
         reasoning = ""
         action = ""
 
+        # Extract goals if present
+        if "**LONG-TERM GOALS:**" in content:
+            try:
+                # Extract everything from LONG-TERM GOALS to REASONING
+                goals_section = content.split("**LONG-TERM GOALS:**")[1].split("**REASONING:**")[0]
+                goals = "**LONG-TERM GOALS:**" + goals_section.strip()
+            except (IndexError, AttributeError):
+                pass
+
+        # Extract reasoning and action
         if "**REASONING:**" in content and "**ACTION:**" in content:
-            parts = content.split("**ACTION:**")
-            reasoning_part = parts[0].split("**REASONING:**")[1].strip()
-            action_part = parts[1].strip()
-            reasoning = reasoning_part
-            action = action_part
+            try:
+                parts = content.split("**ACTION:**")
+                reasoning_part = parts[0].split("**REASONING:**")[1].strip()
+                action_part = parts[1].strip()
+                reasoning = reasoning_part
+                action = action_part
+            except (IndexError, AttributeError):
+                # Fallback if format not followed
+                reasoning = "No structured reasoning provided"
+                action = content
         else:
             # Fallback if format not followed
             reasoning = "No structured reasoning provided"
@@ -535,6 +568,7 @@ Remember: This is turn {turn} of {total_turns}. Consider how your action moves t
             tokens_used = result['usage'].get('total_tokens', 0)
 
         return {
+            'goals': goals,
             'reasoning': reasoning,
             'action': action,
             'raw': content,

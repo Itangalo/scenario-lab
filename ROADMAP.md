@@ -86,7 +86,7 @@ Scenario Lab is being developed in phases, with each phase building on previous 
 
 **Goal:** Advanced AI capabilities and communication
 
-**Status:** 75% complete (3 of 4 sub-phases done, 1 deferred)
+**Status:** ✅ Complete (4 of 5 sub-phases done, 1 deferred)
 
 #### 2.1: Communication Types ✅
 
@@ -139,6 +139,25 @@ Scenario Lab is being developed in phases, with each phase building on previous 
 - Enables scenarios with 10-20+ turns without context overflow
 - Dramatically reduces token usage in long scenarios
 - Maintains decision quality with recent full-detail context
+
+#### 2.5: Evolving Actor Goals ✅
+
+**Implemented:**
+- Goals as part of turn-by-turn actor decisions
+- Actors explicitly state LONG-TERM GOALS (2-4 objectives) and SHORT-TERM PRIORITIES (1-3 objectives)
+- Recent goals (last 2 turns) passed to actors for continuity
+- Natural goal evolution through LLM reasoning
+- Goals exported in markdown decision files
+
+**Features:**
+- Simple and elegant - no complex subsystems
+- Self-documenting - goals visible in every decision
+- Persuadable - actors can be convinced to change goals through negotiation
+- Coherent - recent goals maintain consistency across turns
+- Realistic - goals evolve based on world events and actor interactions
+
+**Example Use Case:**
+In cooperation scenarios, an actor's goal can evolve from "defeat competitor X" to "establish international standards" based on negotiations and world developments, making genuine collaboration realistic.
 
 ---
 
@@ -310,7 +329,7 @@ Interested in contributing? Here are ways to help:
 
 ## Version History
 
-- **v0.3** (October 2025): Phase 2 - Communication types, coalitions, context management, test suite
+- **v0.3** (October 2025): Phase 2 complete - Communication types, coalitions, context management, evolving goals, test suite
 - **v0.2** (October 2025): Phase 1 - Core framework with multi-model support, resumability, branching
 - **v0.1** (October 2025): Phase 0 - Proof of concept
 

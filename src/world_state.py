@@ -63,6 +63,13 @@ class WorldState:
         md += f"**Turn Duration:** {self.turn_duration}\n\n"
         md += f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n"
         md += "---\n\n"
+
+        # Include goals if present
+        if decision.get('goals'):
+            md += "## Current Goals\n\n"
+            md += f"{decision['goals']}\n\n"
+            md += "---\n\n"
+
         md += "## Reasoning\n\n"
         md += f"{decision['reasoning']}\n\n"
         md += "---\n\n"

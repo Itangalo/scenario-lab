@@ -537,8 +537,19 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                     communication_manager
                 )
 
+                # Extract recent goals from previous turns
+                recent_goals = ""
+                if turn > 1:
+                    goals_list = []
+                    for t in range(max(1, turn - 2), turn):  # Last 2 turns
+                        past_decision = world_state.get_actor_decisions_for_turn(t).get(actor.name, {})
+                        if past_decision.get('goals'):
+                            goals_list.append(f"**Turn {t}:**\n{past_decision['goals']}\n")
+                    if goals_list:
+                        recent_goals = "\n".join(goals_list)
+
                 # Note: communications are already included in actor_context from context_manager
-                decision = actor.make_decision(actor_context, turn, num_turns)
+                decision = actor.make_decision(actor_context, turn, num_turns, recent_goals=recent_goals)
                 turn_decisions[actor_short_name] = decision
 
                 # Record decision in world state

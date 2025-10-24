@@ -12,6 +12,14 @@ The primary focus is exploring AI-related policy questions and strategic challen
 
 All actors in the scenario can be controlled by AI agents, each with their own goals, information, and decision-making capabilities. Different actors may use different LLM models to leverage specific capabilities (e.g., technical reasoning, negotiation, domain expertise).
 
+**Evolving Goals**: Actor goals are not fixed but evolve naturally throughout scenarios. Each turn, actors explicitly state their LONG-TERM GOALS (2-4 enduring objectives) and SHORT-TERM PRIORITIES (1-3 immediate objectives). Recent goals from previous turns inform future decisions, allowing actors to adapt based on:
+- Negotiations and agreements with other actors
+- World events and their consequences
+- Successes and failures of previous actions
+- New information and changing circumstances
+
+This enables realistic scenarios where, for example, an actor's goal can evolve from "defeat competitor X" to "establish collaborative international standards" through natural diplomatic progression.
+
 ### 2. Dynamic World State
 The world state evolves based on actor decisions, with AI managing the consequences and cascading effects of actions taken. Scenarios can include black swan events—low-probability, high-impact occurrences that test actors' ability to respond to unexpected disruptions.
 
