@@ -14,6 +14,7 @@ from cost_tracker import CostTracker
 from metrics_tracker import MetricsTracker
 from scenario_state_manager import ScenarioStateManager
 from communication_manager import CommunicationManager, ChannelType
+from context_manager import ContextManager
 
 
 def load_scenario(scenario_path: str):
@@ -225,6 +226,12 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         if not resume_mode:
             print(f"  Communication manager initialized")
 
+    # Create context manager
+    context_window_size = scenario.get('context_window_size', 3)  # Default to 3 turns
+    context_manager = ContextManager(window_size=context_window_size)
+    if not resume_mode:
+        print(f"  Context manager initialized (window size: {context_window_size})")
+
     # Estimate costs (only for new runs)
     num_turns = scenario['turns']
     if not resume_mode:
@@ -294,13 +301,21 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             print(f"\n  Phase 1: Private Communications")
 
             for actor_short_name, actor in actors.items():
+                # Get contextualized world state for this actor
+                actor_context = context_manager.get_context_for_actor(
+                    actor.name,
+                    world_state,
+                    turn,
+                    communication_manager
+                )
+
                 # Get list of other actors
                 other_actor_names = [a.name for a in actors.values() if a.name != actor.name]
 
                 # Ask if actor wants to communicate privately
                 if len(other_actor_names) > 0:
                     print(f"    {actor.name} considering private communication...")
-                    comm_decision = actor.decide_communication(current_state, turn, num_turns, other_actor_names)
+                    comm_decision = actor.decide_communication(actor_context, turn, num_turns, other_actor_names)
 
                     # Track communication decision cost
                     cost_tracker.record_actor_decision(
@@ -325,9 +340,17 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                         # Get target actor
                         target_actor = next(a for a in actors.values() if a.name == target)
 
+                        # Get contextualized state for target actor
+                        target_context = context_manager.get_context_for_actor(
+                            target,
+                            world_state,
+                            turn,
+                            communication_manager
+                        )
+
                         # Target responds
                         print(f"      → {target} responding...")
-                        response = target_actor.respond_to_bilateral(current_state, turn, num_turns, actor.name, message)
+                        response = target_actor.respond_to_bilateral(target_context, turn, num_turns, actor.name, message)
 
                         # Track response cost
                         cost_tracker.record_actor_decision(
@@ -354,13 +377,21 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             formed_coalitions = []
 
             for actor_short_name, actor in actors.items():
+                # Get contextualized world state for this actor
+                actor_context = context_manager.get_context_for_actor(
+                    actor.name,
+                    world_state,
+                    turn,
+                    communication_manager
+                )
+
                 # Get list of other actors
                 other_actor_names = [a.name for a in actors.values() if a.name != actor.name]
 
                 # Only consider coalition formation if there are at least 2 other actors
                 if len(other_actor_names) >= 2:
                     print(f"    {actor.name} considering coalition formation...")
-                    coalition_decision = actor.decide_coalition(current_state, turn, num_turns, other_actor_names)
+                    coalition_decision = actor.decide_coalition(actor_context, turn, num_turns, other_actor_names)
 
                     # Track coalition decision cost
                     cost_tracker.record_actor_decision(
@@ -389,9 +420,17 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                         for member_name in coalition_decision['members']:
                             member_actor = next(a for a in actors.values() if a.name == member_name)
 
+                            # Get contextualized state for member
+                            member_context = context_manager.get_context_for_actor(
+                                member_name,
+                                world_state,
+                                turn,
+                                communication_manager
+                            )
+
                             print(f"      → {member_name} considering coalition...")
                             response = member_actor.respond_to_coalition(
-                                current_state,
+                                member_context,
                                 turn,
                                 num_turns,
                                 actor.name,
@@ -436,11 +475,19 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                             for member_name in proposed_members:
                                 member_actor = next(a for a in actors.values() if a.name == member_name)
 
+                                # Get contextualized state for member
+                                member_context = context_manager.get_context_for_actor(
+                                    member_name,
+                                    world_state,
+                                    turn,
+                                    communication_manager
+                                )
+
                                 # Get previous messages in this coalition
                                 previous_messages = channel.get_messages()
 
                                 message_result = member_actor.communicate_in_coalition(
-                                    current_state,
+                                    member_context,
                                     turn,
                                     num_turns,
                                     proposed_members,
@@ -482,10 +529,16 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             for actor_short_name, actor in actors.items():
                 print(f"    {actor.name} is deciding public action...")
 
-                # Get communications context for this actor
-                comm_context = communication_manager.format_messages_for_context(actor.name, turn)
+                # Get contextualized world state for this actor (includes communications)
+                actor_context = context_manager.get_context_for_actor(
+                    actor.name,
+                    world_state,
+                    turn,
+                    communication_manager
+                )
 
-                decision = actor.make_decision(current_state, turn, num_turns, communications_context=comm_context)
+                # Note: communications are already included in actor_context from context_manager
+                decision = actor.make_decision(actor_context, turn, num_turns)
                 turn_decisions[actor_short_name] = decision
 
                 # Record decision in world state

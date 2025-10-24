@@ -144,6 +144,53 @@ This multi-phase structure enables realistic strategic interaction, including:
 - Testing whether actors honor private commitments
 - Emergent alliance patterns over multiple turns
 
+### 12. Context Management for Long Scenarios
+
+For scenarios lasting many turns, the framework implements intelligent context management to prevent token overflow while maintaining decision quality:
+
+**Sliding Window Approach**
+- Recent turns (default: last 3) are provided in full detail
+- Older turns are automatically summarized using a lightweight LLM
+- Actors always receive complete communication history they participated in
+
+**Benefits:**
+- **Cost reduction**: Summaries use far fewer tokens than full history
+- **Scalability**: Enables scenarios with 10+ turns without context overflow
+- **Quality preservation**: Recent context in full detail maintains decision quality
+- **Automatic operation**: No manual intervention required
+
+**Configuration:**
+Scenarios can configure window size in `scenario.yaml`:
+```yaml
+context_window_size: 3  # Number of recent turns in full detail (default: 3)
+```
+
+**Example context structure for turn 8 with window size 3:**
+```
+## Earlier Events (Summary)
+[AI-generated summary of turns 0-5]
+
+---
+
+## Recent History (Last 3 Turns)
+
+### Turn 6
+**World State:** [Full detail]
+**Actions Taken:** [All actor actions]
+**Communications:** [Any bilateral/coalition messages]
+
+### Turn 7
+[Full detail...]
+
+### Turn 8
+[Full detail...]
+```
+
+**Cost efficiency:**
+- Summaries generated once and cached
+- Uses gpt-4o-mini (~$0.0001 per summary)
+- Dramatically reduces per-decision token counts in long scenarios
+
 ## Primary Research Focus: AI Policy and Strategy
 
 This framework is designed to explore critical questions about AI governance, policy, and strategic decision-making through simulation:
