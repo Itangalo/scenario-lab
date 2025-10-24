@@ -57,3 +57,7 @@ config.local.yaml
 tmp/
 temp/
 *.tmp
+
+# Personal and temporary notes
+notes/*
+!notes/.gitkeep

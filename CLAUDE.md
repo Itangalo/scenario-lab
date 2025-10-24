@@ -117,6 +117,18 @@ See README.md section "Example Scenarios" for concrete examples, including:
 
 These examples should guide the design of flexible, reusable scenario components.
 
+## Working with the Repository
+
+### Notes Directory
+
+The `notes/` directory is for personal and temporary notes during development. All contents (except `.gitkeep`) are ignored by git. Use this for:
+
+- Development scratch notes
+- Personal TODO lists
+- Temporary analysis or calculations
+- Draft ideas and planning
+- Any local notes that shouldn't be committed
+
 ## Important Notes
 
 - Markdown files should be preceded by blank lines before lists (per user's global CLAUDE.md)
