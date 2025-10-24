@@ -182,6 +182,205 @@ Provide your response in this format:
             'tokens_used': response.get('tokens_used', 0)
         }
 
+    def decide_coalition(self, world_state: str, turn: int, total_turns: int, other_actors: List[str]) -> Dict[str, Any]:
+        """
+        Decide whether to propose forming a coalition
+
+        Args:
+            world_state: Current world state
+            turn: Current turn number
+            total_turns: Total turns in scenario
+            other_actors: List of other actor names
+
+        Returns:
+            Dict with coalition proposal
+        """
+        system_prompt = self.scenario_system_prompt
+        if self.system_prompt:
+            system_prompt += "\n\n" + self.system_prompt
+
+        other_actors_list = ", ".join(other_actors)
+
+        user_prompt = f"""## Current Situation (Turn {turn} of {total_turns})
+
+{world_state}
+
+## Coalition Formation
+
+You can propose forming a coalition with 2 or more other actors to coordinate strategy.
+
+Available actors: {other_actors_list}
+
+Consider:
+- Would a coalition help achieve your goals?
+- Which actors have aligned interests?
+- What would be the coalition's purpose?
+
+## Your Response
+
+**PROPOSE_COALITION:** [yes/no]
+**COALITION_MEMBERS:** [if yes, list actor names separated by commas; if no, write "none"]
+**COALITION_PURPOSE:** [if yes, brief description of coalition's goal; if no, write "none"]
+
+**REASONING:** [Brief explanation]
+"""
+
+        response = self._call_llm(system_prompt, user_prompt)
+
+        # Parse response
+        propose = 'yes' in response.get('raw', '').lower().split('**PROPOSE_COALITION:**')[1].split('**')[0].lower() if '**PROPOSE_COALITION:**' in response.get('raw', '') else False
+
+        members = []
+        purpose = ""
+
+        if propose and '**COALITION_MEMBERS:**' in response.get('raw', ''):
+            members_text = response.get('raw', '').split('**COALITION_MEMBERS:**')[1].split('**')[0].strip()
+            if members_text.lower() != 'none':
+                # Parse comma-separated list
+                proposed_members = [m.strip() for m in members_text.split(',')]
+                # Validate members exist
+                members = [m for m in proposed_members if m in other_actors]
+
+        if propose and members and '**COALITION_PURPOSE:**' in response.get('raw', ''):
+            purpose_text = response.get('raw', '').split('**COALITION_PURPOSE:**')[1].split('**REASONING:**')[0].strip()
+            if purpose_text.lower() != 'none':
+                purpose = purpose_text
+
+        reasoning = ""
+        if '**REASONING:**' in response.get('raw', ''):
+            reasoning = response.get('raw', '').split('**REASONING:**')[1].strip()
+
+        return {
+            'propose_coalition': bool(propose and len(members) >= 2 and purpose),
+            'members': members if propose else [],
+            'purpose': purpose,
+            'reasoning': reasoning,
+            'tokens_used': response.get('tokens_used', 0)
+        }
+
+    def respond_to_coalition(self, world_state: str, turn: int, total_turns: int, proposer: str, members: List[str], purpose: str) -> Dict[str, Any]:
+        """
+        Respond to a coalition proposal
+
+        Args:
+            world_state: Current world state
+            turn: Current turn number
+            total_turns: Total turns in scenario
+            proposer: Name of actor who proposed coalition
+            members: Proposed coalition members (including self)
+            purpose: Stated purpose of coalition
+
+        Returns:
+            Dict with response (accept/reject)
+        """
+        system_prompt = self.scenario_system_prompt
+        if self.system_prompt:
+            system_prompt += "\n\n" + self.system_prompt
+
+        members_list = ", ".join(members)
+
+        user_prompt = f"""## Current Situation (Turn {turn} of {total_turns})
+
+{world_state}
+
+## Coalition Proposal
+
+**{proposer}** has proposed forming a coalition:
+
+**Members:** {members_list}
+**Purpose:** {purpose}
+
+## Your Response
+
+Should you join this coalition?
+
+**DECISION:** [accept/reject]
+**RESPONSE:** [Your message to the coalition members]
+
+**INTERNAL_NOTES:** [Your private thoughts - are you committed? Will you follow through?]
+"""
+
+        response = self._call_llm(system_prompt, user_prompt)
+
+        # Parse response
+        decision = 'accept' if 'accept' in response.get('raw', '').lower().split('**DECISION:**')[1].split('**')[0].lower() else 'reject'
+
+        response_text = ""
+        if '**RESPONSE:**' in response.get('raw', ''):
+            response_text = response.get('raw', '').split('**RESPONSE:**')[1].split('**INTERNAL_NOTES:**')[0].strip()
+
+        internal_notes = ""
+        if '**INTERNAL_NOTES:**' in response.get('raw', ''):
+            internal_notes = response.get('raw', '').split('**INTERNAL_NOTES:**')[1].strip()
+
+        return {
+            'decision': decision,
+            'response': response_text,
+            'internal_notes': internal_notes,
+            'tokens_used': response.get('tokens_used', 0)
+        }
+
+    def communicate_in_coalition(self, world_state: str, turn: int, total_turns: int, coalition_members: List[str], coalition_purpose: str, previous_messages: List[Dict]) -> Dict[str, Any]:
+        """
+        Communicate within an established coalition
+
+        Args:
+            world_state: Current world state
+            turn: Current turn number
+            total_turns: Total turns in scenario
+            coalition_members: Members of this coalition
+            coalition_purpose: Purpose of the coalition
+            previous_messages: Previous messages in this coalition
+
+        Returns:
+            Dict with message
+        """
+        system_prompt = self.scenario_system_prompt
+        if self.system_prompt:
+            system_prompt += "\n\n" + self.system_prompt
+
+        members_list = ", ".join(coalition_members)
+
+        # Format previous messages
+        messages_text = ""
+        if previous_messages:
+            messages_text = "\n\n**Previous Messages:**\n\n"
+            for msg in previous_messages:
+                messages_text += f"**{msg['sender']}:** {msg['content']}\n\n"
+
+        user_prompt = f"""## Current Situation (Turn {turn} of {total_turns})
+
+{world_state}
+
+## Coalition Communication
+
+You are part of a coalition:
+
+**Members:** {members_list}
+**Purpose:** {coalition_purpose}
+{messages_text}
+
+## Your Message
+
+What do you want to communicate to your coalition members? Coordinate strategy, share information, or propose actions.
+
+**MESSAGE:**
+[Your message to the coalition]
+"""
+
+        response = self._call_llm(system_prompt, user_prompt)
+
+        message = ""
+        if '**MESSAGE:**' in response.get('raw', ''):
+            message = response.get('raw', '').split('**MESSAGE:**')[1].strip()
+        else:
+            message = response.get('raw', '')
+
+        return {
+            'message': message,
+            'tokens_used': response.get('tokens_used', 0)
+        }
+
     def _build_prompts(self, world_state: str, turn: int, total_turns: int, other_actors_decisions: Dict[str, str] = None, communications_context: str = "") -> tuple:
         """
         Build system and user prompts for the LLM

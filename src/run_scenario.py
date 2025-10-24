@@ -347,6 +347,132 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             # Export bilateral communications to files
             communication_manager.export_channels_to_files(output_path, scenario_name, turn)
 
+            # Coalition Formation (after bilateral negotiations)
+            print(f"\n  Coalition Formation")
+
+            # Track proposed coalitions to avoid duplicates
+            formed_coalitions = []
+
+            for actor_short_name, actor in actors.items():
+                # Get list of other actors
+                other_actor_names = [a.name for a in actors.values() if a.name != actor.name]
+
+                # Only consider coalition formation if there are at least 2 other actors
+                if len(other_actor_names) >= 2:
+                    print(f"    {actor.name} considering coalition formation...")
+                    coalition_decision = actor.decide_coalition(current_state, turn, num_turns, other_actor_names)
+
+                    # Track coalition decision cost
+                    cost_tracker.record_actor_decision(
+                        actor_name=actor.name,
+                        turn=turn,
+                        model=actor.llm_model,
+                        tokens_used=coalition_decision.get('tokens_used', 0)
+                    )
+
+                    if coalition_decision['propose_coalition']:
+                        proposed_members = [actor.name] + coalition_decision['members']
+                        proposed_members_sorted = sorted(proposed_members)
+
+                        # Check if this coalition already exists for this turn
+                        if proposed_members_sorted in [sorted(c['members']) for c in formed_coalitions]:
+                            print(f"      → Coalition already formed with these members")
+                            continue
+
+                        print(f"      → Proposing coalition with {', '.join(coalition_decision['members'])}")
+                        print(f"      → Purpose: {coalition_decision['purpose']}")
+
+                        # Ask each proposed member to accept or reject
+                        responses = {}
+                        all_accepted = True
+
+                        for member_name in coalition_decision['members']:
+                            member_actor = next(a for a in actors.values() if a.name == member_name)
+
+                            print(f"      → {member_name} considering coalition...")
+                            response = member_actor.respond_to_coalition(
+                                current_state,
+                                turn,
+                                num_turns,
+                                actor.name,
+                                proposed_members,
+                                coalition_decision['purpose']
+                            )
+
+                            # Track response cost
+                            cost_tracker.record_actor_decision(
+                                actor_name=member_name,
+                                turn=turn,
+                                model=member_actor.llm_model,
+                                tokens_used=response.get('tokens_used', 0)
+                            )
+
+                            responses[member_name] = response
+
+                            if response['decision'] != 'accept':
+                                all_accepted = False
+                                print(f"      → {member_name} rejected coalition")
+
+                        # If all members accepted, create coalition channel
+                        if all_accepted:
+                            print(f"      ✓ Coalition formed!")
+
+                            # Create coalition channel
+                            channel = communication_manager.create_channel(
+                                ChannelType.COALITION,
+                                proposed_members,
+                                turn
+                            )
+
+                            # Record this coalition as formed
+                            formed_coalitions.append({
+                                'members': proposed_members,
+                                'purpose': coalition_decision['purpose'],
+                                'channel_id': channel.channel_id
+                            })
+
+                            # Coalition members communicate
+                            print(f"      → Coalition members coordinating...")
+                            for member_name in proposed_members:
+                                member_actor = next(a for a in actors.values() if a.name == member_name)
+
+                                # Get previous messages in this coalition
+                                previous_messages = channel.get_messages()
+
+                                message_result = member_actor.communicate_in_coalition(
+                                    current_state,
+                                    turn,
+                                    num_turns,
+                                    proposed_members,
+                                    coalition_decision['purpose'],
+                                    previous_messages
+                                )
+
+                                # Track communication cost
+                                cost_tracker.record_actor_decision(
+                                    actor_name=member_name,
+                                    turn=turn,
+                                    model=member_actor.llm_model,
+                                    tokens_used=message_result.get('tokens_used', 0)
+                                )
+
+                                # Send message to coalition
+                                communication_manager.send_message(
+                                    channel.channel_id,
+                                    member_name,
+                                    message_result['message']
+                                )
+
+                            print(f"      ✓ Coalition coordination completed")
+                        else:
+                            print(f"      ✗ Coalition rejected by one or more members")
+                    else:
+                        print(f"      → No coalition proposed")
+
+            # Export coalition communications to files (if any formed)
+            if formed_coalitions:
+                communication_manager.export_channels_to_files(output_path, scenario_name, turn)
+
             # PHASE 2: Public Actions
             print(f"\n  Phase 2: Public Actions")
 

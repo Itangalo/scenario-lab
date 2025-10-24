@@ -78,6 +78,72 @@ The framework operates on a simultaneous turn-based model where all actors make 
 - **Communication types**: Actors can engage in different forms of communication including public statements, bilateral negotiations, coalition formation, and information sharing
 - **Communication visibility**: Different communication types have different visibility rules (e.g., public statements visible to all, bilateral negotiations visible only to participants)
 
+### 11. Communication System
+
+Each turn consists of three phases that enable different types of actor interaction:
+
+#### Phase 1: Private Communications
+
+**Bilateral Negotiations**
+- Any actor can initiate private communication with one other actor
+- Both actors exchange messages in a private channel
+- Only the two participants can see these messages
+- Useful for: Deal-making, information sharing, coordination, trust-building
+
+**Example workflow:**
+1. Actor A decides whether to initiate bilateral communication
+2. If yes, Actor A chooses target (Actor B) and sends initial message
+3. Actor B receives message and responds
+4. Both messages are saved to a bilateral channel for this turn
+
+**Coalition Formation**
+- Any actor can propose forming a coalition with 2+ other actors
+- Proposed members are asked to accept or reject the invitation
+- If all members accept, a coalition channel is created
+- All coalition members can communicate within the coalition
+- Only coalition members can see these messages
+- Useful for: Strategic alliances, coordinated action, power consolidation
+
+**Example workflow:**
+1. Actor A proposes coalition with Actors B and C
+2. Actor A specifies the coalition's purpose
+3. Actors B and C independently decide to accept or reject
+4. If both accept, coalition channel is created
+5. All three actors (A, B, C) coordinate strategy within the coalition
+
+**Key features:**
+- Coalitions require at least 3 members (2+ in addition to proposer)
+- Duplicate coalitions within a turn are automatically prevented
+- Coalition members see all previous messages in the channel when deciding what to say
+- Coalitions are formed per turn (actors can reform with different members each turn)
+
+#### Phase 2: Public Actions
+
+After private communications conclude:
+- All actors see a summary of communications they participated in
+- Actors make public decisions informed by private negotiations and coalition coordination
+- Public decisions are visible to all actors and recorded in world state
+- Actors may honor or betray private agreements made in Phase 1
+
+**Information flow:**
+- Bilateral messages: Visible only to the two participants
+- Coalition messages: Visible only to coalition members
+- Public actions: Visible to all actors
+
+#### Documentation
+
+Private communications are exported to markdown files:
+- `bilateral-ActorA-ActorB-001.md` - Bilateral negotiations between two actors in turn 1
+- `coalition-ActorA-ActorB-ActorC-001.md` - Coalition communication in turn 1
+- Actor decision files include internal notes about negotiations and commitments
+
+This multi-phase structure enables realistic strategic interaction, including:
+- Private deal-making before public action
+- Coalition building among multiple actors
+- Strategic information asymmetry
+- Testing whether actors honor private commitments
+- Emergent alliance patterns over multiple turns
+
 ## Primary Research Focus: AI Policy and Strategy
 
 This framework is designed to explore critical questions about AI governance, policy, and strategic decision-making through simulation:
