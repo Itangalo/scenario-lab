@@ -50,10 +50,13 @@ def run_scenario(scenario_path: str, output_path: str = None):
         turn_duration=scenario['turn_duration']
     )
 
+    # Get scenario system prompt
+    scenario_system_prompt = scenario.get('system_prompt', '')
+
     # Load actors
     actors = {}
     for actor_short_name in scenario['actors']:
-        actor = load_actor(scenario_path, actor_short_name)
+        actor = load_actor(scenario_path, actor_short_name, scenario_system_prompt)
         actors[actor_short_name] = actor
         print(f"Loaded actor: {actor.name} ({actor_short_name})")
 
@@ -80,7 +83,7 @@ def run_scenario(scenario_path: str, output_path: str = None):
         for actor_short_name, actor in actors.items():
             print(f"  {actor.name} is deciding...")
 
-            decision = actor.make_decision(current_state, turn)
+            decision = actor.make_decision(current_state, turn, num_turns)
             turn_decisions[actor_short_name] = decision
 
             # Record decision

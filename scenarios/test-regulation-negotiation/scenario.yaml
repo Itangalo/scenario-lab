@@ -1,6 +1,15 @@
 name: "Test AI Regulation Negotiation"
 description: "A simple two-actor scenario where a regulator and a tech company negotiate AI safety requirements"
 
+system_prompt: |
+  You are participating in a multi-turn scenario simulation focused on AI policy and governance.
+  Your goal is to act realistically as your assigned role, making strategic decisions that align
+  with your character's goals, constraints, and decision-making style.
+
+  Be specific and concrete in your actions. Consider both short-term tactics and long-term strategy.
+  Your decisions should reflect realistic policy negotiation dynamics, including compromise,
+  strategic positioning, and consideration of stakeholder interests.
+
 initial_world_state: |
   The year is 2025. A national AI regulator is proposing new safety requirements for
   advanced AI systems. A major tech company developing frontier AI models must respond
