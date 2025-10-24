@@ -236,7 +236,46 @@ scenario-name/
 
 ## Getting Started
 
-_Documentation to be added as development progresses_
+### Prerequisites
+
+- Python 3.11+
+- OpenRouter API key (get a free one at [OpenRouter](https://openrouter.ai/))
+
+### Installation
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/Itangalo/scenario-lab.git
+cd scenario-lab
+```
+
+2. **Install dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+
+3. **Set up your API key:**
+
+```bash
+cp .env.example .env
+# Edit .env and add your OPENROUTER_API_KEY
+```
+
+### Running a Scenario
+
+Run the test scenario:
+
+```bash
+python src/run_scenario.py scenarios/test-regulation-negotiation
+```
+
+Output will be saved to `output/test-regulation-negotiation/run-001/`
+
+### Available Scenarios
+
+- **test-regulation-negotiation**: AI safety regulation negotiation between regulator and tech company ([docs](scenarios/test-regulation-negotiation/README.md))
 
 ## License and Usage
 
