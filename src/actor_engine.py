@@ -245,28 +245,46 @@ Consider:
 
         response = self._call_llm(system_prompt, user_prompt)
 
-        # Parse response
-        propose = 'yes' in response.get('raw', '').lower().split('**PROPOSE_COALITION:**')[1].split('**')[0].lower() if '**PROPOSE_COALITION:**' in response.get('raw', '') else False
+        # Parse response with robust error handling
+        raw_response = response.get('raw', '')
+
+        propose = False
+        if '**PROPOSE_COALITION:**' in raw_response:
+            try:
+                parts = raw_response.split('**PROPOSE_COALITION:**')[1].split('**')
+                if len(parts) > 0:
+                    propose = 'yes' in parts[0].lower()
+            except (IndexError, AttributeError):
+                propose = False
 
         members = []
         purpose = ""
 
-        if propose and '**COALITION_MEMBERS:**' in response.get('raw', ''):
-            members_text = response.get('raw', '').split('**COALITION_MEMBERS:**')[1].split('**')[0].strip()
-            if members_text.lower() != 'none':
-                # Parse comma-separated list
-                proposed_members = [m.strip() for m in members_text.split(',')]
-                # Validate members exist
-                members = [m for m in proposed_members if m in other_actors]
+        if propose and '**COALITION_MEMBERS:**' in raw_response:
+            try:
+                members_text = raw_response.split('**COALITION_MEMBERS:**')[1].split('**')[0].strip()
+                if members_text.lower() != 'none':
+                    # Parse comma-separated list
+                    proposed_members = [m.strip() for m in members_text.split(',')]
+                    # Validate members exist
+                    members = [m for m in proposed_members if m in other_actors]
+            except (IndexError, AttributeError):
+                pass
 
-        if propose and members and '**COALITION_PURPOSE:**' in response.get('raw', ''):
-            purpose_text = response.get('raw', '').split('**COALITION_PURPOSE:**')[1].split('**REASONING:**')[0].strip()
-            if purpose_text.lower() != 'none':
-                purpose = purpose_text
+        if propose and members and '**COALITION_PURPOSE:**' in raw_response:
+            try:
+                purpose_text = raw_response.split('**COALITION_PURPOSE:**')[1].split('**REASONING:**')[0].strip()
+                if purpose_text.lower() != 'none':
+                    purpose = purpose_text
+            except (IndexError, AttributeError):
+                pass
 
         reasoning = ""
-        if '**REASONING:**' in response.get('raw', ''):
-            reasoning = response.get('raw', '').split('**REASONING:**')[1].strip()
+        if '**REASONING:**' in raw_response:
+            try:
+                reasoning = raw_response.split('**REASONING:**')[1].strip()
+            except (IndexError, AttributeError):
+                pass
 
         return {
             'propose_coalition': bool(propose and len(members) >= 2 and purpose),
@@ -320,16 +338,30 @@ Should you join this coalition?
 
         response = self._call_llm(system_prompt, user_prompt)
 
-        # Parse response
-        decision = 'accept' if 'accept' in response.get('raw', '').lower().split('**DECISION:**')[1].split('**')[0].lower() else 'reject'
+        # Parse response with robust error handling
+        raw_response = response.get('raw', '')
+
+        decision = 'reject'  # Default to reject
+        if '**DECISION:**' in raw_response:
+            try:
+                decision_text = raw_response.split('**DECISION:**')[1].split('**')[0].lower()
+                decision = 'accept' if 'accept' in decision_text else 'reject'
+            except (IndexError, AttributeError):
+                decision = 'reject'
 
         response_text = ""
-        if '**RESPONSE:**' in response.get('raw', ''):
-            response_text = response.get('raw', '').split('**RESPONSE:**')[1].split('**INTERNAL_NOTES:**')[0].strip()
+        if '**RESPONSE:**' in raw_response:
+            try:
+                response_text = raw_response.split('**RESPONSE:**')[1].split('**INTERNAL_NOTES:**')[0].strip()
+            except (IndexError, AttributeError):
+                pass
 
         internal_notes = ""
-        if '**INTERNAL_NOTES:**' in response.get('raw', ''):
-            internal_notes = response.get('raw', '').split('**INTERNAL_NOTES:**')[1].strip()
+        if '**INTERNAL_NOTES:**' in raw_response:
+            try:
+                internal_notes = raw_response.split('**INTERNAL_NOTES:**')[1].strip()
+            except (IndexError, AttributeError):
+                pass
 
         return {
             'decision': decision,
