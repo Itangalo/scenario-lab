@@ -291,8 +291,43 @@ Each run produces:
 - **JSON files**: Structured data for analysis
   - `costs.json` - Complete cost breakdown (by actor, turn, and world state updates)
   - `metrics.json` - Quantitative metrics tracked throughout the scenario
+  - `scenario-state.json` - Complete execution state for resumption
 
 The system estimates costs before execution and tracks actual API usage throughout the run
+
+### Resumable Scenarios
+
+Scenario runs can be stopped and resumed, enabling graceful handling of API rate limits, budget constraints, and incremental execution.
+
+**Stop after a fixed number of turns:**
+```bash
+python src/run_scenario.py scenarios/test-regulation-negotiation --max-turns 2
+```
+
+**Set a budget limit:**
+```bash
+python src/run_scenario.py scenarios/test-regulation-negotiation --credit-limit 0.50
+```
+The scenario will halt if total cost exceeds $0.50.
+
+**Resume a halted scenario:**
+```bash
+python src/run_scenario.py --resume output/test-regulation-negotiation/run-003
+```
+
+**How it works:**
+- After each turn, the complete scenario state is saved to `scenario-state.json`
+- If a run is halted (rate limit, credit limit, max turns, or error), the state is preserved
+- Resume restores all components: world state, actor states, cost tracking, and metrics
+- The run continues from the next incomplete turn
+
+**Halt reasons:**
+- `rate_limit` - API rate limit exceeded (429 error)
+- `credit_limit` - Cost threshold exceeded
+- `max_turns` - Reached specified turn limit
+- `manual` - User interruption (Ctrl+C)
+
+Each run directory contains `scenario-state.json` with execution status and full state for resumption.
 
 ### Available Scenarios
 

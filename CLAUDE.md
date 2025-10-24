@@ -6,7 +6,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Scenario Lab** is an experimental framework for AI-automated scenario exercises focused on exploring complex policy and strategic questions, particularly around AI governance and policy. The system enables multi-actor simulations where AI agents interact in dynamic environments, providing both statistical insights from batch runs and deep qualitative analysis.
 
-**Current Status:** Planning/design phase. The README.md contains the complete architectural vision, but implementation has not yet begun.
+**Current Status:** Phase 1 core features implemented and working. The framework includes:
+
+- ✅ Multi-actor AI-controlled scenarios with simultaneous turn execution
+- ✅ LLM-powered world state synthesis (not simple concatenation)
+- ✅ Cost estimation and tracking for all LLM API calls
+- ✅ Structured metrics extraction and export (JSON)
+- ✅ **Resumable scenarios** - graceful handling of rate limits and budget constraints
+- ✅ Auto-incrementing run numbers to preserve history
+- ⏳ Quality assurance validator (planned)
+- ⏳ Scenario branching (planned)
 
 ## Core Architecture Concepts
 
@@ -116,6 +125,35 @@ See README.md section "Example Scenarios" for concrete examples, including:
 - Automated Decision System Deployment
 
 These examples should guide the design of flexible, reusable scenario components.
+
+## Implemented Features
+
+### Resumable Scenarios
+
+The framework supports stopping and resuming scenario runs, crucial for handling API rate limits and budget constraints:
+
+**Key Components:**
+- `src/scenario_state_manager.py` - Saves/loads complete scenario state
+- `scenario-state.json` - Auto-generated state file in each run directory
+- State includes: world state, actor states, costs, metrics, execution metadata
+
+**Command-line arguments:**
+- `--max-turns N` - Stop after N turns
+- `--credit-limit X` - Halt if cost exceeds $X
+- `--resume <path>` - Resume from halted run
+
+**Error handling:**
+- Rate limit errors (429) are caught gracefully
+- State is saved before exit
+- Clear resume instructions displayed
+- All tracking (costs, metrics) preserved across resume
+
+**State persistence:**
+- State saved after each successful turn
+- JSON keys properly converted (string → int) on load
+- WorldState, CostTracker, MetricsTracker all fully serializable
+
+See `notes/resumable-scenarios-plan.md` for full implementation details.
 
 ## Working with the Repository
 
