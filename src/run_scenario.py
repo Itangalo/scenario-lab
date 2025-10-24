@@ -34,8 +34,11 @@ def run_scenario(scenario_path: str, output_path: str = None):
 
     # Set up output directory
     if output_path is None:
+        # Find project root (where this script's parent directory is)
+        script_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(script_dir)
         scenario_dir_name = os.path.basename(scenario_path)
-        output_path = f"output/{scenario_dir_name}/run-001"
+        output_path = os.path.join(project_root, 'output', scenario_dir_name, 'run-001')
 
     os.makedirs(output_path, exist_ok=True)
     print(f"Output directory: {output_path}")
