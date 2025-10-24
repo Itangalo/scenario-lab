@@ -1,0 +1,130 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
+## Project Overview
+
+**Scenario Lab** is an experimental framework for AI-automated scenario exercises focused on exploring complex policy and strategic questions, particularly around AI governance and policy. The system enables multi-actor simulations where AI agents interact in dynamic environments, providing both statistical insights from batch runs and deep qualitative analysis.
+
+**Current Status:** Planning/design phase. The README.md contains the complete architectural vision, but implementation has not yet begun.
+
+## Core Architecture Concepts
+
+The system is designed around these key components (see README.md for full details):
+
+1. **Scenario Definition Parser** - Loads and validates scenario specifications from YAML
+2. **World State Manager** - Maintains and updates global state across simulation steps
+3. **Actor Engine** - Manages AI-controlled and human-controlled actors, supports multiple LLM models per scenario
+4. **Action Resolver** - Processes actor decisions and updates world state
+5. **Metrics Tracker** - Records and analyzes key performance indicators, exports structured data (JSON)
+6. **Documentation Generator** - Creates markdown records of each simulation step
+7. **Batch Runner** - Executes multiple scenarios for statistical analysis with cost management
+8. **Analysis Engine** - Identifies patterns and critical factors across runs
+9. **Quality Assurance Validator** - Uses lightweight models to check consistency of actions and world states
+10. **Cost Management System** - Estimates, tracks, and controls LLM API costs across batch runs
+
+## Expected Directory Structure
+
+When implementation begins, the structure should follow this pattern:
+
+```
+scenario-name/
+├── definition/
+│   ├── scenario.yaml          # Initial world state and rules
+│   ├── actors/
+│   │   ├── actor1.yaml        # Actor profiles (including LLM model specification)
+│   │   └── actor2.yaml
+│   ├── metrics.yaml           # Defined metrics and thresholds
+│   ├── validation-rules.yaml  # Instructions for quality assurance checks
+│   ├── black-swans.yaml       # Optional: black swan event definitions
+│   └── background/            # Optional: background data and information
+│       ├── historical-data.md
+│       └── reference-docs.md
+├── runs/
+│   ├── run-001/
+│   │   ├── world-state-001.md
+│   │   ├── world-state-002.md
+│   │   ├── actor-name-001.md
+│   │   ├── metrics.json       # Structured metrics data for analysis
+│   │   └── ...
+│   └── run-002/
+│       └── ...
+└── analysis/
+    ├── statistics.md
+    ├── critical-factors.md
+    └── metrics-summary.json   # Aggregated structured data across runs
+```
+
+## Key Design Principles
+
+1. **AI-Controlled Actors**: All actors can be AI agents with goals, information, and decision-making capabilities. Different actors may use different LLM models. Actor behavior (including bounded rationality, biases, expertise) is specified in open actor descriptions.
+2. **Dynamic World State**: World evolves based on actor decisions, including potential black swan events
+3. **Human-in-the-Loop**: Any AI actor can be replaced by a human expert at any time
+4. **Information Asymmetry**: Actors maintain both public and private information. Actors evaluate information quality themselves.
+5. **Step-by-Step Documentation**: Each simulation step documented in markdown files, with structured metrics data (JSON) for analysis
+6. **Batch Simulation**: Support for running hundreds/thousands of scenarios with systematic variations. Actors have no memory between runs - each run is independent.
+7. **Temporal Model**: Simultaneous turn-based execution. Turn duration defined by scenario and may vary during execution.
+8. **Communication**: Multiple communication types (public statements, bilateral negotiations, coalition formation) with different visibility rules
+9. **Validation**: Use calibration scenarios (e.g., "AI 2027"), expert evaluation of documentation, and automated consistency checking
+10. **Cost Management**: Comprehensive cost estimation, tracking, and controls for LLM API usage
+
+## Primary Research Focus
+
+The framework is specifically designed to explore AI policy and governance questions:
+
+- Regulatory effectiveness under various conditions
+- Governance structures for AI deployment
+- International coordination mechanisms
+- Corporate strategy in AI disruption
+- AI safety interventions and their impact
+- Risk assessment and critical decision factors
+
+## Development Phases
+
+The README.md outlines a 5-phase development roadmap:
+
+- **Phase 1**: Core Framework (scenario format, world state, basic actor engine)
+- **Phase 2**: AI Integration (LLM integration, prompt templates)
+- **Phase 3**: Human Interaction (human actor control, visualization)
+- **Phase 4**: Batch Processing (parallel execution, statistical analysis)
+- **Phase 5**: Advanced Features (branching, replay, editor)
+
+## Implementation Guidance
+
+When beginning implementation:
+
+1. Start with defining the YAML schema for scenario definitions (including validation-rules.yaml for QA checks)
+2. Build the world state manager as the foundational component
+3. Create simple markdown generation AND structured JSON metrics export early
+4. Design actor prompting strategy carefully - this is critical for simulation quality
+5. Plan for multi-model support from the start (consider OpenRouter or similar for unified API access)
+6. Implement cost estimation and tracking BEFORE running large batches
+7. Build quality assurance validation early - use lightweight models to check consistency
+8. Plan for context management as scenarios may be long-running
+9. Design communication types and visibility rules into the core architecture
+10. Create "AI 2027" calibration scenario for validation testing
+
+## Example Use Cases
+
+See README.md section "Example Scenarios" for concrete examples, including:
+
+- AI 2027 (calibration scenario for validation)
+- AI Regulatory Negotiation
+- AI Safety Incident Response
+- Corporate AI Governance
+- AI Arms Race Dynamics
+- Automated Decision System Deployment
+
+These examples should guide the design of flexible, reusable scenario components.
+
+## Important Notes
+
+- Markdown files should be preceded by blank lines before lists (per user's global CLAUDE.md)
+- Focus is on AI policy research through simulation, not general-purpose gaming or simulation
+- Statistical rigor is important - design for hypothesis testing and pattern discovery
+- Documentation is a first-class concern - every simulation step should be reviewable by experts
+- Cost management is critical - batch runs can easily cost thousands of dollars without proper controls
+- Quality assurance must be built in - use lightweight models to validate consistency
+- Multi-model support is essential - different actors may need different LLM capabilities
+- Validation through calibration scenarios and expert review ensures simulation realism
+- Actor behavior should remain flexible and described openly, not locked to specific parameters
