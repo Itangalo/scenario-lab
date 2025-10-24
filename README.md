@@ -180,12 +180,21 @@ scenario-name/
 
 ## Development Roadmap
 
-### Phase 1: Core Framework
-- [ ] Define scenario specification format (including validation rules, background data, LLM model specs)
-- [ ] Implement world state manager
-- [ ] Create basic actor engine with multi-model support
-- [ ] Build markdown documentation generator
-- [ ] Implement structured metrics data export (JSON)
+### Phase 0: Proof of Concept ✅
+- [x] Basic scenario execution
+- [x] Actor decision-making via LLM
+- [x] Simple world state tracking
+- [x] Markdown output
+
+### Phase 1: Core Framework (In Progress)
+- [x] Define scenario specification format (including LLM model specs, metrics definitions)
+- [x] Implement world state manager
+- [x] Create basic actor engine with multi-model support
+- [x] Build markdown documentation generator
+- [x] Implement LLM-powered world state synthesis
+- [x] Implement structured metrics data export (JSON)
+- [x] Implement cost tracking and estimation
+- [x] Auto-incrementing run numbers
 - [ ] Develop simple action resolver
 - [ ] Create basic quality assurance validator
 
@@ -271,7 +280,19 @@ Run the test scenario:
 python src/run_scenario.py scenarios/test-regulation-negotiation
 ```
 
-Output will be saved to `output/test-regulation-negotiation/run-001/`
+Output will be saved to `output/test-regulation-negotiation/run-001/` (subsequent runs auto-increment to run-002, run-003, etc.)
+
+Each run produces:
+
+- **Markdown files**: Human-readable documentation
+  - `world-state-000.md` through `world-state-00N.md` - Evolution of world state
+  - `actor-name-001.md` through `actor-name-00N.md` - Actor decisions and reasoning
+
+- **JSON files**: Structured data for analysis
+  - `costs.json` - Complete cost breakdown (by actor, turn, and world state updates)
+  - `metrics.json` - Quantitative metrics tracked throughout the scenario
+
+The system estimates costs before execution and tracks actual API usage throughout the run
 
 ### Available Scenarios
 
