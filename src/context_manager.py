@@ -76,24 +76,30 @@ class ContextManager:
         # Initial state
         context += f"### Turn 0 (Initial State)\n\n{world_state.states[0]}\n\n"
 
-        # All turns so far
-        for t in range(1, turn + 1):
-            context += f"### Turn {t}\n\n"
-            context += f"**World State:**\n{world_state.states[t]}\n\n"
+        # Completed turns (turn - 1 because we're being called during turn execution)
+        # Only include turns that have been completed (world state updated)
+        for t in range(1, turn):
+            if t in world_state.states:
+                context += f"### Turn {t}\n\n"
+                context += f"**World State:**\n{world_state.states[t]}\n\n"
 
-            # Actor decisions
-            decisions = world_state.get_actor_decisions_for_turn(t)
-            if decisions:
-                context += "**Actions Taken:**\n\n"
-                for actor, decision in decisions.items():
-                    context += f"- **{actor}:** {decision['action']}\n"
-                context += "\n"
+                # Actor decisions
+                decisions = world_state.get_actor_decisions_for_turn(t)
+                if decisions:
+                    context += "**Actions Taken:**\n\n"
+                    for actor, decision in decisions.items():
+                        context += f"- **{actor}:** {decision['action']}\n"
+                    context += "\n"
 
-            # Private communications (if any)
-            if communication_manager:
-                comm_context = communication_manager.format_messages_for_context(actor_name, t)
-                if comm_context:
-                    context += comm_context
+                # Private communications (if any)
+                if communication_manager:
+                    comm_context = communication_manager.format_messages_for_context(actor_name, t)
+                    if comm_context:
+                        context += comm_context
+
+        # Current turn - just show current state (no decisions yet)
+        context += f"### Turn {turn} (Current)\n\n"
+        context += f"**Current World State:**\n{world_state.get_current_state()}\n\n"
 
         return context
 
@@ -127,23 +133,29 @@ class ContextManager:
         # Add recent turns in full detail
         context += f"## Recent History (Last {self.window_size} Turns)\n\n"
 
-        for t in range(window_start, turn + 1):
-            context += f"### Turn {t}\n\n"
-            context += f"**World State:**\n{world_state.states[t]}\n\n"
+        # Only include completed turns
+        for t in range(window_start, turn):
+            if t in world_state.states:
+                context += f"### Turn {t}\n\n"
+                context += f"**World State:**\n{world_state.states[t]}\n\n"
 
-            # Actor decisions
-            decisions = world_state.get_actor_decisions_for_turn(t)
-            if decisions:
-                context += "**Actions Taken:**\n\n"
-                for actor, decision in decisions.items():
-                    context += f"- **{actor}:** {decision['action']}\n"
-                context += "\n"
+                # Actor decisions
+                decisions = world_state.get_actor_decisions_for_turn(t)
+                if decisions:
+                    context += "**Actions Taken:**\n\n"
+                    for actor, decision in decisions.items():
+                        context += f"- **{actor}:** {decision['action']}\n"
+                    context += "\n"
 
-            # Private communications (if any)
-            if communication_manager:
-                comm_context = communication_manager.format_messages_for_context(actor_name, t)
-                if comm_context:
-                    context += comm_context
+                # Private communications (if any)
+                if communication_manager:
+                    comm_context = communication_manager.format_messages_for_context(actor_name, t)
+                    if comm_context:
+                        context += comm_context
+
+        # Current turn - just show current state (no decisions yet)
+        context += f"### Turn {turn} (Current)\n\n"
+        context += f"**Current World State:**\n{world_state.get_current_state()}\n\n"
 
         return context
 

@@ -95,25 +95,43 @@ Respond in this format:
 
         response = self._call_llm(system_prompt, user_prompt)
 
-        # Parse response
-        initiate = 'yes' in response.get('raw', '').lower().split('**INITIATE_BILATERAL:**')[1].split('**')[0].lower() if '**INITIATE_BILATERAL:**' in response.get('raw', '') else False
+        # Parse response with robust error handling
+        raw_response = response.get('raw', '')
+
+        initiate = False
+        if '**INITIATE_BILATERAL:**' in raw_response:
+            try:
+                parts = raw_response.split('**INITIATE_BILATERAL:**')[1].split('**')
+                if len(parts) > 0:
+                    initiate = 'yes' in parts[0].lower()
+            except (IndexError, AttributeError):
+                initiate = False
 
         target_actor = None
         message = None
 
-        if initiate and '**TARGET_ACTOR:**' in response.get('raw', ''):
-            target_text = response.get('raw', '').split('**TARGET_ACTOR:**')[1].split('**')[0].strip()
-            if target_text.lower() != 'none' and target_text in other_actors:
-                target_actor = target_text
+        if initiate and '**TARGET_ACTOR:**' in raw_response:
+            try:
+                target_text = raw_response.split('**TARGET_ACTOR:**')[1].split('**')[0].strip()
+                if target_text.lower() != 'none' and target_text in other_actors:
+                    target_actor = target_text
+            except (IndexError, AttributeError):
+                pass
 
-        if initiate and target_actor and '**PROPOSED_MESSAGE:**' in response.get('raw', ''):
-            message_text = response.get('raw', '').split('**PROPOSED_MESSAGE:**')[1].split('**REASONING:**')[0].strip()
-            if message_text.lower() != 'none':
-                message = message_text
+        if initiate and target_actor and '**PROPOSED_MESSAGE:**' in raw_response:
+            try:
+                message_text = raw_response.split('**PROPOSED_MESSAGE:**')[1].split('**REASONING:**')[0].strip()
+                if message_text.lower() != 'none':
+                    message = message_text
+            except (IndexError, AttributeError):
+                pass
 
         reasoning = ""
-        if '**REASONING:**' in response.get('raw', ''):
-            reasoning = response.get('raw', '').split('**REASONING:**')[1].strip()
+        if '**REASONING:**' in raw_response:
+            try:
+                reasoning = raw_response.split('**REASONING:**')[1].strip()
+            except (IndexError, AttributeError):
+                pass
 
         return {
             'initiate_bilateral': bool(target_actor and message),
