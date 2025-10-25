@@ -228,11 +228,13 @@ In cooperation scenarios, an actor's goal can evolve from "defeat competitor X" 
 ### Testing Infrastructure ✅ (October 2025)
 
 **Implemented:**
-- Comprehensive unit test suite (95 tests, all passing)
-- Tests for: WorldState, CommunicationManager, ContextManager, CostTracker, QAValidator, ResponseParser, MarkdownUtils, ApiUtils
+- Comprehensive unit test suite (126 tests, all passing)
+- Tests for: WorldState, WorldStateUpdater, CommunicationManager, ContextManager, CostTracker, QAValidator, ResponseParser, MarkdownUtils, ApiUtils
 - Test runner with summary output (`run_tests.py`)
 - Test documentation in `tests/README.md`
 - CI-ready infrastructure
+- Regression tests for bug fixes
+- Local LLM integration tests
 
 ---
 
@@ -278,9 +280,22 @@ In cooperation scenarios, an actor's goal can evolve from "defeat competitor X" 
 
 ## Future Phases
 
-### Phase 4: Batch Processing
+### Phase 4: Batch Processing (In Progress)
 
 **Goal:** Run and analyze multiple scenarios systematically
+
+**Status:** 1 of 7 components complete
+
+**Completed Components:**
+
+1. **Local LLM Support** ✅
+   - Ollama integration for cost-free batch runs
+   - Unified `make_llm_call()` routing (ollama/ and local/ prefixes)
+   - Cost tracker correctly identifies local models as $0
+   - Two test scenarios (local-llm-test, local-minimal-test)
+   - 12 comprehensive tests for local LLM features
+   - DeepSeek R1:8b and Qwen 2.5:14b models tested
+   - **Benefit:** Enables unlimited scenario runs at zero API cost
 
 **Planned Components:**
 
@@ -290,24 +305,36 @@ In cooperation scenarios, an actor's goal can evolve from "defeat competitor X" 
    - Run same scenario N times for stochastic analysis
    - Parallel execution support
 
-2. **Cost Management for Batches**
+2. **Hardware Temperature Monitoring**
+   - Monitor Mac CPU/GPU temperature during local LLM runs
+   - Automatic throttling to prevent thermal damage
+   - Warnings when temperature exceeds safe thresholds
+   - Configurable temperature limits
+
+3. **Progress Meter**
+   - Real-time turn progress display
+   - Actor status indicators (thinking/deciding/complete)
+   - Estimated time to completion
+   - Token usage and cost tracking live updates
+
+4. **Cost Management for Batches**
    - Early stopping when patterns converge
    - Adaptive sampling strategies
    - Tiered execution (cheap models for exploration, expensive for detail)
 
-3. **Statistical Analysis Tools**
+5. **Statistical Analysis Tools**
    - Aggregate metrics across runs
    - Outcome distribution analysis
    - Identify critical decision points
    - Sensitivity analysis
 
-4. **Pattern Recognition**
+6. **Pattern Recognition**
    - Cluster similar outcomes
    - Identify common decision patterns
    - Find divergence points
    - Anomaly detection
 
-5. **Comparison Tools**
+7. **Comparison Tools**
    - Side-by-side run comparison
    - Diff view for decisions
    - Metric comparisons
@@ -320,7 +347,7 @@ In cooperation scenarios, an actor's goal can evolve from "defeat competitor X" 
 - Easy comparison of different configurations
 - Patterns identified across runs
 
-**Note:** We already have foundations for Phase 4 (branching, cost management, resumability)
+**Note:** We already have foundations for Phase 4 (branching, cost management, resumability, local LLM support)
 
 ---
 
@@ -393,6 +420,7 @@ Interested in contributing? Here are ways to help:
 
 ## Version History
 
+- **v0.5** (October 2025): Phase 4 begins - Local LLM support (Ollama integration), 126 tests passing, comprehensive test coverage for local models
 - **v0.4** (October 2025): Phase 1 complete - QA Validator with automated consistency checking, 95 tests passing
 - **v0.3** (October 2025): Phase 2 complete - Communication types, coalitions, context management, evolving goals, test suite
 - **v0.2** (October 2025): Phase 1 partial - Core framework with multi-model support, resumability, branching
