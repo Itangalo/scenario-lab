@@ -11,7 +11,7 @@ import yaml
 import json
 from typing import Dict, List, Any, Optional
 from datetime import datetime
-from api_utils import make_openrouter_call
+from api_utils import make_llm_call
 
 
 class ValidationResult:
@@ -265,27 +265,17 @@ class QAValidator:
         """
         model = self.validation_rules.get('validation_model', 'openai/gpt-4o-mini')
 
-        payload = {
-            "model": model,
-            "messages": [
-                {"role": "user", "content": prompt}
-            ]
-        }
+        messages = [
+            {"role": "user", "content": prompt}
+        ]
 
-        headers = {
-            "Authorization": f"Bearer {self.api_key}",
-            "Content-Type": "application/json"
-        }
-
-        response = make_openrouter_call(
-            url="https://openrouter.ai/api/v1/chat/completions",
-            headers=headers,
-            payload=payload
+        # Use unified LLM call (routes to Ollama or OpenRouter automatically)
+        result_text, tokens_used = make_llm_call(
+            model=model,
+            messages=messages,
+            api_key=self.api_key,
+            max_retries=3
         )
-
-        data = response.json()
-        result_text = data['choices'][0]['message']['content']
-        tokens_used = data.get('usage', {}).get('total_tokens', 0)
 
         return result_text, tokens_used
 

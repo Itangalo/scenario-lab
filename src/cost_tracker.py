@@ -220,6 +220,10 @@ class CostTracker:
 
     def _get_model_cost(self, model: str) -> Dict[str, float]:
         """Get cost per 1M tokens for a model"""
+        # Local models are free (Ollama, llama.cpp, etc.)
+        if model.startswith("ollama/") or model.startswith("local/"):
+            return {"input": 0.0, "output": 0.0}
+
         if model in self.MODEL_COSTS:
             return self.MODEL_COSTS[model]
         return self.MODEL_COSTS["default"]

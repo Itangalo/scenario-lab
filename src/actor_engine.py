@@ -6,7 +6,7 @@ import yaml
 import requests
 from typing import Dict, Any, List
 from dotenv import load_dotenv
-from api_utils import make_openrouter_call
+from api_utils import make_llm_call
 from response_parser import parse_actor_decision, parse_bilateral_decision, parse_coalition_decision, parse_coalition_response
 
 load_dotenv()
@@ -540,22 +540,16 @@ Remember: This is turn {turn} of {total_turns}. Your goals can evolve based on e
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": user_prompt})
 
-        data = {
-            "model": self.llm_model,
-            "messages": messages
-        }
-
-        response = make_openrouter_call(url, headers, data, max_retries=3)
-        result = response.json()
-        content = result['choices'][0]['message']['content']
+        # Use unified LLM call (routes to Ollama or OpenRouter automatically)
+        content, tokens_used = make_llm_call(
+            model=self.llm_model,
+            messages=messages,
+            api_key=api_key,
+            max_retries=3
+        )
 
         # Parse the response using robust parser
         parsed = parse_actor_decision(content)
-
-        # Get token usage if available
-        tokens_used = 0
-        if 'usage' in result:
-            tokens_used = result['usage'].get('total_tokens', 0)
 
         return {
             'goals': parsed['goals'],

@@ -7,7 +7,7 @@ from typing import Dict, Any, List, Optional
 from dotenv import load_dotenv
 from world_state import WorldState
 from communication_manager import CommunicationManager
-from api_utils import make_openrouter_call
+from api_utils import make_llm_call
 
 load_dotenv()
 
@@ -236,14 +236,14 @@ Provide a concise summary that captures the key events, decisions, and state cha
             {"role": "user", "content": user_prompt}
         ]
 
-        data = {
-            "model": self.summarization_model,
-            "messages": messages
-        }
-
-        response = make_openrouter_call(url, headers, data, max_retries=3)
-        result = response.json()
-        return result['choices'][0]['message']['content']
+        # Use unified LLM call (routes to Ollama or OpenRouter automatically)
+        content, tokens_used = make_llm_call(
+            model=self.summarization_model,
+            messages=messages,
+            api_key=api_key,
+            max_retries=3
+        )
+        return content
 
     def get_summary_cost(self, world_state: WorldState, start_turn: int, end_turn: int) -> Dict[str, Any]:
         """

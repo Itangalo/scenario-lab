@@ -5,7 +5,7 @@ import os
 import requests
 from typing import Dict, Any
 from dotenv import load_dotenv
-from api_utils import make_openrouter_call
+from api_utils import make_llm_call
 
 load_dotenv()
 
@@ -153,14 +153,13 @@ Remember: Be specific, realistic, and show how actions create ripple effects."""
             messages.append({"role": "system", "content": system_prompt})
         messages.append({"role": "user", "content": user_prompt})
 
-        data = {
-            "model": self.model,
-            "messages": messages
-        }
-
-        response = make_openrouter_call(url, headers, data, max_retries=3)
-        result = response.json()
-        content = result['choices'][0]['message']['content']
+        # Use unified LLM call (routes to Ollama or OpenRouter automatically)
+        content, tokens_used = make_llm_call(
+            model=self.model,
+            messages=messages,
+            api_key=self.api_key,
+            max_retries=3
+        )
 
         # Parse the response
         updated_state = ""
@@ -198,10 +197,7 @@ Remember: Be specific, realistic, and show how actions create ripple effects."""
             # Fallback if format not followed
             updated_state = content
 
-        # Get token usage if available
-        tokens_used = 0
-        if 'usage' in result:
-            tokens_used = result['usage'].get('total_tokens', 0)
+        # tokens_used is already returned from make_llm_call()
 
         return {
             'updated_state': updated_state,

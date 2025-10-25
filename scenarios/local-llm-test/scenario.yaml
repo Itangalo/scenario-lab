@@ -1,0 +1,33 @@
+name: "Local LLM Test - AI Policy Negotiation"
+description: "Simple 2-actor test scenario using local Ollama models for cost-free execution"
+
+system_prompt: |
+  You are participating in an AI safety negotiation between major powers.
+  This is a test scenario to verify local LLM functionality.
+
+  Be specific and concrete in your proposals. Focus on finding common ground
+  while protecting your core interests.
+
+initial_world_state: |
+  ## Setting: Virtual Summit, March 2025
+
+  Two major powers are negotiating AI safety standards following recent
+  advances in AI capabilities and growing public concern.
+
+  **Key Issues:**
+  1. **Compute Thresholds:** What level of compute should trigger safety requirements?
+  2. **International Cooperation:** How can nations coordinate on AI safety without undermining sovereignty?
+
+  **Initial Positions:**
+  - **United States:** Flexible, innovation-friendly approaches
+  - **European Union:** Strong regulatory frameworks based on AI Act
+
+turns: 3
+turn_duration: "2 hours"
+
+world_state_model: "ollama/deepseek-r1:8b"
+context_window_size: 3
+
+actors:
+  - united-states
+  - european-union
