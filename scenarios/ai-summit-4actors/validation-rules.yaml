@@ -42,17 +42,20 @@ checks:
 
       4. Decision style: Does the approach match their characteristic style?
 
-      Provide your assessment:
+      Provide your assessment in this EXACT format:
 
       CONSISTENT: [Yes/No]
+      - Answer "Yes" if the decision aligns with the actor's profile (even if you provide detailed analysis)
+      - Answer "No" ONLY if you identify actual contradictions or violations
 
       ISSUES FOUND:
-      - [List any inconsistencies, or "None" if consistent]
+      - [List specific inconsistencies you found, or "None" if the decision is consistent]
+      - If you answer "CONSISTENT: Yes" above, this MUST be "None"
 
-      SEVERITY: [Low/Medium/High - only if issues found]
+      SEVERITY: [Low/Medium/High - only if you listed actual issues above]
 
       EXPLANATION:
-      [Brief explanation focusing on geopolitical realism and negotiation dynamics]
+      [Provide detailed analysis of how the decision aligns (or doesn't) with the profile. Detailed explanation does NOT mean the decision is inconsistent - you can explain WHY something is consistent.]
 
   world_state_coherence:
     enabled: true
