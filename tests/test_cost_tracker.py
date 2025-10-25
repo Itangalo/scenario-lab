@@ -110,6 +110,120 @@ class TestCostTracker(unittest.TestCase):
         self.assertIn('total_tokens_estimated', estimate)
         self.assertGreater(estimate['total'], 0)
 
+    def test_local_model_ollama_prefix_zero_cost(self):
+        """Test that ollama/ prefixed models have zero cost"""
+        self.tracker.record_actor_decision(
+            actor_name="Local Actor",
+            turn=1,
+            model="ollama/deepseek-r1:8b",
+            tokens_used=5000
+        )
+
+        # Cost should be exactly $0.00 for local models
+        self.assertEqual(self.tracker.total_cost, 0.0)
+        self.assertEqual(self.tracker.total_tokens, 5000)
+        self.assertEqual(self.tracker.costs_by_actor["Local Actor"]["total_cost"], 0.0)
+
+    def test_local_model_local_prefix_zero_cost(self):
+        """Test that local/ prefixed models have zero cost"""
+        self.tracker.record_actor_decision(
+            actor_name="Custom Local",
+            turn=1,
+            model="local/my-custom-model",
+            tokens_used=3000
+        )
+
+        self.assertEqual(self.tracker.total_cost, 0.0)
+        self.assertEqual(self.tracker.total_tokens, 3000)
+
+    def test_local_world_state_zero_cost(self):
+        """Test that local models for world state have zero cost"""
+        self.tracker.record_world_state_update(
+            turn=1,
+            model="ollama/qwen2.5:14b",
+            tokens_used=4000
+        )
+
+        self.assertEqual(self.tracker.total_cost, 0.0)
+        self.assertEqual(self.tracker.total_tokens, 4000)
+        self.assertEqual(len(self.tracker.world_state_costs), 1)
+        self.assertEqual(self.tracker.world_state_costs[0]['cost'], 0.0)
+
+    def test_mixed_local_and_cloud_costs(self):
+        """Test mixed local and cloud models have correct costs"""
+        # Add local model (should be $0)
+        self.tracker.record_actor_decision(
+            actor_name="Local Actor",
+            turn=1,
+            model="ollama/llama3.1:70b",
+            tokens_used=2000
+        )
+
+        # Add cloud model (should have cost)
+        self.tracker.record_actor_decision(
+            actor_name="Cloud Actor",
+            turn=1,
+            model="openai/gpt-4o-mini",
+            tokens_used=2000
+        )
+
+        # Total cost should only include cloud model
+        self.assertGreater(self.tracker.total_cost, 0.0)
+        self.assertEqual(self.tracker.total_tokens, 4000)
+
+        # Local actor should have $0 cost
+        self.assertEqual(self.tracker.costs_by_actor["Local Actor"]["total_cost"], 0.0)
+
+        # Cloud actor should have cost > $0
+        self.assertGreater(self.tracker.costs_by_actor["Cloud Actor"]["total_cost"], 0.0)
+
+    def test_estimate_scenario_cost_all_local(self):
+        """Test cost estimation for all-local scenario"""
+        actor_models = {
+            "Actor A": "ollama/deepseek-r1:8b",
+            "Actor B": "ollama/qwen2.5:14b"
+        }
+
+        estimate = self.tracker.estimate_scenario_cost(
+            num_actors=2,
+            num_turns=3,
+            actor_models=actor_models,
+            world_state_model="ollama/deepseek-r1:8b"
+        )
+
+        # All local models should result in $0 total cost
+        self.assertEqual(estimate['total'], 0.0)
+        self.assertEqual(estimate['world_state'], 0.0)
+
+        # But token estimate should still be present
+        self.assertGreater(estimate['total_tokens_estimated'], 0)
+
+    def test_estimate_scenario_cost_mixed_models(self):
+        """Test cost estimation for mixed local/cloud scenario"""
+        actor_models = {
+            "Local Actor": "ollama/llama3.1:70b",
+            "Cloud Actor": "openai/gpt-4o-mini"
+        }
+
+        estimate = self.tracker.estimate_scenario_cost(
+            num_actors=2,
+            num_turns=2,
+            actor_models=actor_models,
+            world_state_model="ollama/qwen2.5:14b"
+        )
+
+        # Should have some cost from cloud actor, but not double
+        self.assertGreater(estimate['total'], 0.0)
+
+        # World state should be $0 (local model)
+        self.assertEqual(estimate['world_state'], 0.0)
+
+        # Local actor should be $0 (actors dict contains model info and estimated_cost_usd)
+        self.assertEqual(estimate['actors']['Local Actor']['estimated_cost_usd'], 0.0)
+
+        # Cloud actor should have cost
+        self.assertGreater(estimate['actors']['Cloud Actor']['estimated_cost_usd'], 0.0)
+
 
 if __name__ == '__main__':
     unittest.main()
