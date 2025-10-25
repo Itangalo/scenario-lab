@@ -1,0 +1,83 @@
+scenario_name: "AI Safety Summit 2025"
+
+metrics:
+  consensus_level:
+    description: "Overall level of agreement among stakeholders"
+    type: "integer"
+    unit: "percent"
+    extraction_method: "regex"
+    pattern: 'consensus.*?(\d+)%|(\d+)%.*?consensus'
+    actor_specific: false
+
+  compute_threshold:
+    description: "Agreed compute threshold for regulation (10^X FLOPS)"
+    type: "float"
+    unit: "log10_FLOPS"
+    extraction_method: "regex"
+    pattern: '10\^(\d+)\s*FLOPS'
+    actor_specific: false
+
+  reporting_timeline:
+    description: "Required timeline for incident reporting"
+    type: "integer"
+    unit: "hours"
+    extraction_method: "regex"
+    pattern: '(\d+)\s*[-]?hours?|within\s*(\d+)'
+    actor_specific: false
+
+  coalition_count:
+    description: "Number of active coalitions formed"
+    type: "integer"
+    unit: "count"
+    extraction_method: "regex"
+    pattern: '(\d+)\s*coalitions?'
+    actor_specific: false
+
+  standards_strength:
+    description: "Overall strength of proposed standards (1=voluntary, 10=binding)"
+    type: "integer"
+    unit: "scale_1_10"
+    extraction_method: "manual"
+    actor_specific: false
+
+  testing_required:
+    description: "Whether mandatory pre-deployment testing is required"
+    type: "boolean"
+    extraction_method: "regex"
+    pattern: 'mandatory\s*testing|required.*?testing'
+    actor_specific: false
+
+  third_party_audits:
+    description: "Whether third-party audits are required"
+    type: "boolean"
+    extraction_method: "regex"
+    pattern: 'third[- ]party.*?audit|independent.*?audit'
+    actor_specific: false
+
+  enforcement_exists:
+    description: "Whether binding enforcement mechanisms are established"
+    type: "boolean"
+    extraction_method: "regex"
+    pattern: 'enforcement.*?mechanism|binding.*?enforcement'
+    actor_specific: false
+
+  us_eu_aligned:
+    description: "Whether US and EU have aligned positions"
+    type: "boolean"
+    extraction_method: "regex"
+    pattern: 'US.*?EU.*?align|transatlantic.*?consensus'
+    actor_specific: false
+
+  breakthrough_achieved:
+    description: "Whether a major breakthrough has been achieved"
+    type: "boolean"
+    extraction_method: "regex"
+    pattern: 'breakthrough|major.*?progress'
+    actor_specific: false
+
+  deadlock_status:
+    description: "Whether negotiations are in deadlock"
+    type: "boolean"
+    extraction_method: "regex"
+    pattern: 'deadlock|stalemate|impasse'
+    actor_specific: false

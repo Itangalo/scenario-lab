@@ -1,0 +1,152 @@
+# Quality Assurance Validation Rules for AI Safety Summit 2025
+
+validation_model: "openai/gpt-4o-mini"
+
+checks:
+  actor_decision_consistency:
+    enabled: true
+    description: "Verify that actor decisions align with their goals, constraints, and expertise"
+    prompt_template: |
+      You are validating consistency in an AI safety governance negotiation simulation.
+
+      ACTOR PROFILE:
+      {actor_profile}
+
+      CURRENT WORLD STATE:
+      {world_state}
+
+      ACTOR'S DECISION:
+      Reasoning: {actor_reasoning}
+      Action: {actor_action}
+
+      VALIDATION TASK:
+      Assess whether this decision is consistent with the actor's profile in this negotiation context. Check for:
+
+      1. Goal alignment: Does the action advance the actor's stated goals?
+         - For nations: Does it serve national interests (innovation, security, sovereignty)?
+         - For industry: Does it protect competitive position while appearing responsible?
+         - For civil society: Does it prioritize public safety and accountability?
+
+      2. Constraint adherence: Does the action violate constraints?
+         - US: Can't commit without Congressional support, must satisfy tech industry
+         - EU: Must maintain member state consensus, can't undermine AI Act
+         - China: Must protect sovereignty, can't expose military AI development
+         - UK: Must maintain relationships with both US and EU
+         - Industry: Can't expose IP, must satisfy investors
+         - Civil Society: Must maintain technical credibility
+
+      3. Expertise consistency: Does the approach reflect appropriate expertise?
+         - Technical experts should reference specific methodologies
+         - Diplomatic experts should  build coalitions strategically
+         - Policy experts should propose implementable frameworks
+
+      4. Decision style: Does the approach match their characteristic style?
+
+      Provide your assessment:
+
+      CONSISTENT: [Yes/No]
+
+      ISSUES FOUND:
+      - [List any inconsistencies, or "None" if consistent]
+
+      SEVERITY: [Low/Medium/High - only if issues found]
+
+      EXPLANATION:
+      [Brief explanation focusing on geopolitical realism and negotiation dynamics]
+
+  world_state_coherence:
+    enabled: true
+    description: "Verify that world state updates logically follow from actor actions"
+    prompt_template: |
+      You are validating world state coherence in an AI safety governance negotiation.
+
+      PREVIOUS WORLD STATE:
+      {previous_world_state}
+
+      ACTIONS TAKEN THIS TURN:
+      {actor_actions}
+
+      NEW WORLD STATE:
+      {new_world_state}
+
+      VALIDATION TASK:
+      Assess whether the new world state logically follows from the negotiation actions. Check for:
+
+      1. Causality: Do alliances, conflicts, and positions shift appropriately based on actions?
+      2. Negotiation realism: Do proposals generate realistic reactions from other stakeholders?
+      3. Coalition dynamics: Are coalition formations/dissolutions plausible given actions?
+      4. Progress tracking: Does the level of consensus/deadlock match the proposals and counter-proposals?
+      5. Technical consistency: Are specific numbers (compute thresholds, timelines) updated correctly?
+
+      Consider:
+      - Strong proposals should generate counter-proposals or resistance
+      - Compromises should be reflected in shifting positions
+      - Private negotiations should influence public stances
+      - Geopolitical tensions (US-China, Brexit dynamics) should persist
+
+      Provide your assessment:
+
+      COHERENT: [Yes/No]
+
+      ISSUES FOUND:
+      - [List any problems, or "None" if coherent]
+
+      SEVERITY: [Low/Medium/High - only if issues found]
+
+      EXPLANATION:
+      [Brief explanation focusing on negotiation realism]
+
+  information_access_consistency:
+    enabled: true
+    description: "Verify that actors only reference information they have access to"
+    prompt_template: |
+      You are validating information access in an AI safety negotiation simulation.
+
+      ACTOR: {actor_name}
+
+      INFORMATION AVAILABLE TO THIS ACTOR:
+      - Public world state: {public_world_state}
+      - Private communications: {private_communications}
+
+      INFORMATION NOT AVAILABLE (other actors' private communications):
+      {restricted_information}
+
+      ACTOR'S REASONING:
+      {actor_reasoning}
+
+      VALIDATION TASK:
+      Check whether the actor's reasoning references only available information.
+
+      In international negotiations, actors should NOT know:
+      - Details of other actors' bilateral communications they weren't part of
+      - Internal deliberations of other governments/organizations
+      - Private coalition discussions they didn't participate in
+
+      Actors SHOULD know:
+      - Public statements and proposals
+      - Communications they directly participated in
+      - General geopolitical context and publicly known positions
+
+      Provide your assessment:
+
+      VALID ACCESS: [Yes/No]
+
+      VIOLATIONS FOUND:
+      - [List any information access violations, or "None" if valid]
+
+      SEVERITY: [Low/Medium/High - only if violations found]
+
+      EXPLANATION:
+      [Brief explanation]
+
+run_after_each_turn: true
+run_at_scenario_end: true
+
+generate_turn_reports: true
+generate_summary_report: true
+include_in_costs: true
+
+severity_thresholds:
+  low: "log"
+  medium: "warn"
+  high: "warn"

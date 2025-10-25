@@ -376,8 +376,19 @@ class QAValidator:
 
         if 'expertise' in actor_profile:
             parts.append("\n**Expertise:**")
-            for domain, level in actor_profile['expertise'].items():
-                parts.append(f"- {domain}: {level}")
+            expertise = actor_profile['expertise']
+
+            # Handle both dict and list-of-dicts formats
+            if isinstance(expertise, dict):
+                for domain, level in expertise.items():
+                    parts.append(f"- {domain}: {level}")
+            elif isinstance(expertise, list):
+                for item in expertise:
+                    if isinstance(item, dict):
+                        for domain, level in item.items():
+                            parts.append(f"- {domain}: {level}")
+                    else:
+                        parts.append(f"- {item}")
 
         if 'decision_style' in actor_profile:
             parts.append(f"\n**Decision Style:**\n{actor_profile['decision_style']}")

@@ -1,0 +1,102 @@
+name: "AI Safety Summit 2025: International Standards Negotiation"
+description: "Multi-stakeholder negotiation to establish international AI safety standards and governance frameworks"
+
+system_prompt: |
+  You are participating in a high-stakes international negotiation on AI safety governance.
+  This is a realistic policy simulation where nations, companies, and civil society groups
+  seek to balance innovation, safety, competition, and public interest.
+
+  Your decisions should reflect authentic stakeholder behavior: strategic positioning,
+  coalition building, compromise seeking, and protection of core interests. Consider
+  both domestic political pressures and international dynamics.
+
+  Be specific and concrete in your proposals. Reference technical details (compute thresholds,
+  testing methodologies, reporting timelines) when relevant. Your actions will shape the
+  future of AI governance.
+
+initial_world_state: |
+  ## Setting: London, May 2025
+
+  Six months after the previous AI Safety Summit, major stakeholders have reconvened to negotiate
+  binding international standards for advanced AI systems. The urgency has increased following
+  several high-profile AI incidents and rapid capability advances.
+
+  ## Current Landscape
+
+  **Recent Developments:**
+  - Three frontier AI labs achieved GPT-5 class capabilities in Q1 2025
+  - Two serious AI incidents in autonomous systems (one medical, one financial)
+  - EU AI Act entered enforcement phase (April 2025)
+  - US federal AI regulation remains stalled in Congress
+  - China announced "AI Security Framework" with mandatory controls
+  - Public concern about AI safety at all-time high (72% in global polls)
+
+  ## Negotiation Agenda
+
+  The summit aims to establish consensus on:
+
+  1. **Compute Thresholds for Regulation**
+     - At what training compute should international oversight begin?
+     - Current proposals range from 10^25 to 10^27 FLOPS
+
+  2. **Pre-Deployment Safety Testing**
+     - What tests should be mandatory before release?
+     - Who conducts testing? (Self-assessment vs. third-party)
+     - What constitutes "passing" a safety test?
+
+  3. **Incident Reporting Requirements**
+     - What incidents must be reported internationally?
+     - Reporting timeline (24 hours vs. 7 days vs. 30 days)
+     - Level of detail required (competitive concerns vs. transparency)
+
+  4. **International Coordination Mechanism**
+     - Should there be a new institution (e.g., "International AI Safety Authority")?
+     - Or work through existing bodies (UN, OECD, etc.)?
+     - What enforcement powers, if any?
+
+  5. **Verification and Auditing**
+     - How to verify compliance without compromising IP?
+     - Role for trusted third parties?
+     - Access to model weights and training data?
+
+  ## Key Tensions
+
+  - **Innovation vs. Safety**: Strict rules may slow progress; weak rules risk catastrophic outcomes
+  - **Competition vs. Cooperation**: Nations fear losing AI race; safety requires information sharing
+  - **Sovereignty vs. Standards**: Countries want autonomy; problems are transnational
+  - **Industry vs. Regulation**: Companies resist constraints; public demands accountability
+  - **Speed vs. Thoroughness**: Urgency suggests acting fast; complexity suggests going slow
+
+  ## Initial Positions (Public Statements)
+
+  - **United States**: "Innovation-friendly standards that don't disadvantage democratic nations"
+  - **European Union**: "Comprehensive risk-based framework building on AI Act principles"
+  - **China**: "Respect for national sovereignty in AI governance approaches"
+  - **United Kingdom**: "Science-based standards leveraging AI Safety Institute expertise"
+  - **TechFuture AI**: "Industry-led voluntary commitments with government oversight"
+  - **Global AI Safety Coalition**: "Binding international treaty with enforcement mechanisms"
+
+  ## Summit Format
+
+  The negotiation will proceed over multiple rounds:
+  - Each round represents 2 weeks of intensive negotiation
+  - Private bilateral meetings and coalition formation allowed
+  - Public proposals and counter-proposals
+  - Aim for consensus document by end of summit
+
+turns: 8
+turn_duration: "2 weeks"
+
+# Use stronger model for world state synthesis in complex scenarios
+world_state_model: "openai/gpt-4o-mini"
+
+# Context management for longer scenarios
+context_window_size: 3
+
+actors:
+  - united-states
+  - european-union
+  - china
+  - united-kingdom
+  - techfuture-ai
+  - global-ai-safety-coalition
