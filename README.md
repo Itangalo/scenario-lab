@@ -344,12 +344,12 @@ scenario-name/
 - [x] Auto-incrementing run numbers
 - [x] Create quality assurance validator
 
-### Phase 2: AI Integration
-- [ ] Integrate LLM for actor decision-making (support multiple models via OpenRouter or similar)
-- [ ] Implement AI world state updates
-- [ ] Create prompt templates for different actor types
-- [ ] Add context management for long-running scenarios
-- [ ] Implement different communication types (public statements, bilateral negotiations, coalition formation)
+### Phase 2: AI Integration ✅
+- [x] Integrate LLM for actor decision-making (support multiple models via OpenRouter)
+- [x] Implement AI world state updates
+- [x] Create prompt templates for different actor types
+- [x] Add context management for long-running scenarios
+- [x] Implement different communication types (public statements, bilateral negotiations, coalition formation)
 
 ### Phase 3: Human Interaction
 - [ ] Build interface for human actor control
@@ -361,6 +361,7 @@ scenario-name/
 - [ ] Develop batch runner for multiple scenarios with systematic variations
 - [ ] Implement cost estimation and tracking for batch runs
 - [ ] Implement cost controls (limits, early stopping, adaptive sampling)
+- [ ] **Add local LLM support (Ollama, llama.cpp) for cost-free batch runs**
 - [ ] Implement parallel execution
 - [ ] Create statistical analysis tools for structured metrics data
 - [ ] Build pattern recognition system
