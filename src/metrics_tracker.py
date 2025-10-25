@@ -83,6 +83,10 @@ class MetricsTracker:
                         # Take the last match (most recent mention)
                         value = matches[-1]
 
+                        # If value is a tuple (from multiple regex groups), extract the non-empty value
+                        if isinstance(value, tuple):
+                            value = next((v for v in value if v), '')
+
                         # Convert to appropriate type
                         value_type = metric_def.get('type', 'string')
                         value = self._convert_value(value, value_type)
@@ -126,6 +130,10 @@ class MetricsTracker:
                     return float(base) ** float(exp)
                 return float(value)
             elif value_type == 'boolean':
+                # For boolean metrics, any non-empty match indicates True
+                # (the pattern itself defines what constitutes a "true" condition)
+                if value:
+                    return True
                 return value.lower() in ['true', 'yes', '1', 'enabled']
             else:  # string or unknown
                 return value
