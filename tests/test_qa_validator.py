@@ -130,6 +130,31 @@ class TestQAValidator(unittest.TestCase):
         self.assertIn('ai_safety: expert', formatted)
         self.assertIn('Pragmatic and careful', formatted)
 
+    def test_format_actor_profile_list_expertise(self):
+        """Test _format_actor_profile handles list-of-dicts expertise format"""
+        validator = QAValidator(self.scenario_path, "test-api-key")
+
+        # This format was causing AttributeError before the fix
+        actor_profile = {
+            'name': 'Test Actor',
+            'goals': ['Goal 1', 'Goal 2'],
+            'constraints': ['Constraint 1'],
+            'expertise': [
+                {'ai_safety': 'expert'},
+                {'policy': 'intermediate'},
+                {'technology': 'expert'}
+            ],
+            'decision_style': 'Pragmatic and careful'
+        }
+
+        # Should not raise AttributeError
+        formatted = validator._format_actor_profile(actor_profile)
+
+        self.assertIn('Test Actor', formatted)
+        self.assertIn('ai_safety: expert', formatted)
+        self.assertIn('policy: intermediate', formatted)
+        self.assertIn('technology: expert', formatted)
+
     def test_parse_validation_result_passed(self):
         """Test parsing a passed validation result"""
         validator = QAValidator(self.scenario_path, "test-api-key")

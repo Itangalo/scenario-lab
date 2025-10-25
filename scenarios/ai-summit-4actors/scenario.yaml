@@ -1,0 +1,53 @@
+name: "AI Safety Summit 2025: Four-Party Negotiation"
+description: "Streamlined multi-stakeholder negotiation between major powers on AI safety standards"
+
+system_prompt: |
+  You are participating in a high-stakes international negotiation on AI safety governance.
+  This is a realistic policy simulation where major powers seek to balance innovation,
+  safety, competition, and sovereignty in establishing international AI standards.
+
+  Your decisions should reflect authentic stakeholder behavior: strategic positioning,
+  coalition building, compromise seeking, and protection of core interests.
+
+  Be specific and concrete in your proposals. Reference technical details when relevant.
+
+initial_world_state: |
+  ## Setting: London, May 2025
+
+  Four major stakeholders reconvene for intensive AI safety negotiations following
+  recent high-profile AI incidents and rapid capability advances.
+
+  **Recent Developments:**
+  - Multiple frontier labs achieved GPT-5 class capabilities
+  - Two serious AI incidents (medical, financial)
+  - EU AI Act enforcement began April 2025
+  - US federal regulation stalled in Congress
+  - China announced "AI Security Framework"
+  - Global public concern at all-time high (72%)
+
+  ## Key Negotiation Issues
+
+  1. **Compute Thresholds** - What training FLOPS trigger oversight? (10^25-10^27 range)
+  2. **Pre-Deployment Testing** - Mandatory requirements and who conducts them
+  3. **Incident Reporting** - Requirements, timeline (24h-30 days), detail level
+  4. **International Coordination** - New institution vs existing bodies, enforcement
+  5. **Verification** - Compliance checking without IP exposure
+
+  ## Initial Positions
+
+  - **United States**: Innovation-friendly standards, avoid Chinese advantage
+  - **European Union**: Comprehensive risk framework based on AI Act
+  - **China**: Respect national sovereignty in AI governance
+  - **United Kingdom**: Science-based standards, honest broker role
+
+turns: 5
+turn_duration: "2 weeks"
+
+world_state_model: "openai/gpt-4o-mini"
+context_window_size: 3
+
+actors:
+  - united-states
+  - european-union
+  - china
+  - united-kingdom
