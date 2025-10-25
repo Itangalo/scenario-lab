@@ -10,7 +10,7 @@ import time
 # Add src directory to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from api_utils import api_call_with_retry, make_openrouter_call, is_local_model, make_llm_call
+from api_utils import api_call_with_retry, make_openrouter_call, is_local_model, make_llm_call, make_ollama_call
 import requests
 
 
@@ -329,6 +329,144 @@ class TestLocalLLMSupport(unittest.TestCase):
         # Check prefix was stripped
         call_args = mock_ollama.call_args
         self.assertEqual(call_args[0][0], 'custom-model')
+
+    @patch('api_utils.requests.post')
+    def test_make_ollama_call_success(self, mock_post):
+        """Test successful Ollama API call"""
+        mock_response = Mock()
+        mock_response.status_code = 200
+        mock_response.raise_for_status.return_value = None
+        mock_response.json.return_value = {
+            'choices': [{'message': {'content': 'Ollama response'}}],
+            'usage': {'total_tokens': 75}
+        }
+        mock_post.return_value = mock_response
+
+        result = make_ollama_call(
+            model='llama3.1:70b',
+            messages=[{'role': 'user', 'content': 'Hello'}]
+        )
+
+        self.assertEqual(result['choices'][0]['message']['content'], 'Ollama response')
+        self.assertEqual(result['usage']['total_tokens'], 75)
+
+        # Verify correct endpoint was called
+        call_args = mock_post.call_args
+        self.assertIn('/v1/chat/completions', call_args[0][0])
+
+        # Verify payload
+        payload = call_args[1]['json']
+        self.assertEqual(payload['model'], 'llama3.1:70b')
+        self.assertEqual(len(payload['messages']), 1)
+
+    @patch('api_utils.requests.post')
+    def test_make_ollama_call_custom_base_url(self, mock_post):
+        """Test Ollama call with custom base URL"""
+        mock_response = Mock()
+        mock_response.status_code = 200
+        mock_response.raise_for_status.return_value = None
+        mock_response.json.return_value = {
+            'choices': [{'message': {'content': 'response'}}],
+            'usage': {'total_tokens': 10}
+        }
+        mock_post.return_value = mock_response
+
+        
+        make_ollama_call(
+            model='test-model',
+            messages=[],
+            base_url='http://custom-server:8080'
+        )
+
+        # Verify custom URL was used
+        call_args = mock_post.call_args
+        self.assertEqual(call_args[0][0], 'http://custom-server:8080/v1/chat/completions')
+
+    @patch.dict('os.environ', {'OLLAMA_BASE_URL': 'http://env-server:9090'})
+    @patch('api_utils.requests.post')
+    def test_make_ollama_call_env_base_url(self, mock_post):
+        """Test that OLLAMA_BASE_URL environment variable is respected"""
+        mock_response = Mock()
+        mock_response.status_code = 200
+        mock_response.raise_for_status.return_value = None
+        mock_response.json.return_value = {
+            'choices': [{'message': {'content': 'response'}}],
+            'usage': {'total_tokens': 10}
+        }
+        mock_post.return_value = mock_response
+
+        
+        make_ollama_call(model='test', messages=[])
+
+        # Verify env var URL was used
+        call_args = mock_post.call_args
+        self.assertEqual(call_args[0][0], 'http://env-server:9090/v1/chat/completions')
+
+    @patch('api_utils.requests.post')
+    def test_make_ollama_call_retry_on_error(self, mock_post):
+        """Test that Ollama calls retry on transient errors"""
+        fail_response = Mock(spec=requests.Response)
+        fail_response.status_code = 503
+        http_error = requests.exceptions.HTTPError()
+        http_error.response = fail_response
+        fail_response.raise_for_status.side_effect = http_error
+
+        success_response = Mock(spec=requests.Response)
+        success_response.status_code = 200
+        success_response.raise_for_status.return_value = None
+        success_response.json.return_value = {
+            'choices': [{'message': {'content': 'success after retry'}}],
+            'usage': {'total_tokens': 20}
+        }
+
+        mock_post.side_effect = [fail_response, success_response]
+
+        with patch('api_utils.time.sleep'):
+            result = make_ollama_call(model='test', messages=[], max_retries=3)
+
+        self.assertEqual(result['choices'][0]['message']['content'], 'success after retry')
+        self.assertEqual(mock_post.call_count, 2)
+
+    def test_make_llm_call_missing_tokens(self):
+        """Test that make_llm_call handles missing token count gracefully"""
+        with patch('api_utils.make_ollama_call') as mock_ollama:
+            # Response without usage field
+            mock_ollama.return_value = {
+                'choices': [{'message': {'content': 'response'}}]
+                # No 'usage' field
+            }
+
+            response, tokens = make_llm_call(
+                model='ollama/test',
+                messages=[{'role': 'user', 'content': 'test'}]
+            )
+
+            self.assertEqual(response, 'response')
+            self.assertEqual(tokens, 0)  # Should default to 0
+
+    def test_make_llm_call_multiple_messages(self):
+        """Test that message arrays are passed through correctly"""
+        with patch('api_utils.make_ollama_call') as mock_ollama:
+            mock_ollama.return_value = {
+                'choices': [{'message': {'content': 'response'}}],
+                'usage': {'total_tokens': 100}
+            }
+
+            messages = [
+                {'role': 'system', 'content': 'You are helpful'},
+                {'role': 'user', 'content': 'Hello'},
+                {'role': 'assistant', 'content': 'Hi there'},
+                {'role': 'user', 'content': 'How are you?'}
+            ]
+
+            make_llm_call(model='ollama/test', messages=messages)
+
+            # Verify all messages were passed through
+            call_args = mock_ollama.call_args
+            passed_messages = call_args[0][1]
+            self.assertEqual(len(passed_messages), 4)
+            self.assertEqual(passed_messages[0]['role'], 'system')
+            self.assertEqual(passed_messages[3]['content'], 'How are you?')
 
 
 if __name__ == '__main__':
