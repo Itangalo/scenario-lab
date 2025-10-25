@@ -361,7 +361,7 @@ scenario-name/
 - [ ] Develop batch runner for multiple scenarios with systematic variations
 - [ ] Implement cost estimation and tracking for batch runs
 - [ ] Implement cost controls (limits, early stopping, adaptive sampling)
-- [ ] **Add local LLM support (Ollama, llama.cpp) for cost-free batch runs**
+- [x] **Add local LLM support (Ollama, llama.cpp) for cost-free batch runs**
 - [ ] **Add hardware temperature monitoring for local LLM usage (prevent thermal throttling)**
 - [ ] **Add progress meter for scenario execution (show turn progress, actor status, estimated time)**
 - [ ] Implement parallel execution
