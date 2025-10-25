@@ -1,8 +1,14 @@
 """
 API Utilities - Robust API call handling with retry logic
+
+Supports multiple LLM backends:
+- OpenRouter (cloud API)
+- Ollama (local models)
+- llama.cpp (local models)
 """
 import time
 import requests
+import os
 from typing import Callable, Any, Optional
 
 
@@ -108,3 +114,113 @@ def make_openrouter_call(
         return requests.post(url, headers=headers, json=payload, timeout=120)
 
     return api_call_with_retry(api_call, max_retries=max_retries)
+
+
+def is_local_model(model: str) -> bool:
+    """
+    Check if a model string indicates a local model
+
+    Args:
+        model: Model identifier (e.g., "ollama/llama3.1:70b", "openai/gpt-4o-mini")
+
+    Returns:
+        True if model is local, False otherwise
+    """
+    return model.startswith('ollama/') or model.startswith('local/')
+
+
+def make_ollama_call(
+    model: str,
+    messages: list,
+    max_retries: int = 3,
+    base_url: Optional[str] = None
+) -> dict:
+    """
+    Make a call to local Ollama instance
+
+    Args:
+        model: Ollama model name (e.g., "llama3.1:70b", "qwen2.5:72b")
+        messages: List of message dicts with 'role' and 'content'
+        max_retries: Maximum number of retry attempts
+        base_url: Ollama API URL (default: http://localhost:11434)
+
+    Returns:
+        Response dict with 'message' and 'usage' keys
+
+    Raises:
+        requests.exceptions.HTTPError: If all retries fail
+    """
+    if base_url is None:
+        base_url = os.environ.get('OLLAMA_BASE_URL', 'http://localhost:11434')
+
+    url = f"{base_url}/v1/chat/completions"
+
+    payload = {
+        "model": model,
+        "messages": messages
+    }
+
+    def api_call():
+        return requests.post(url, json=payload, timeout=300)
+
+    response = api_call_with_retry(api_call, max_retries=max_retries)
+    return response.json()
+
+
+def make_llm_call(
+    model: str,
+    messages: list,
+    api_key: Optional[str] = None,
+    max_retries: int = 3
+) -> tuple[str, int]:
+    """
+    Make an LLM API call using the appropriate backend
+
+    Automatically routes to:
+    - Ollama for models starting with "ollama/" or "local/"
+    - OpenRouter for all other models
+
+    Args:
+        model: Model identifier (e.g., "openai/gpt-4o-mini", "ollama/llama3.1:70b")
+        messages: List of message dicts with 'role' and 'content'
+        api_key: API key for cloud providers (not needed for local)
+        max_retries: Maximum number of retry attempts
+
+    Returns:
+        Tuple of (response_text, tokens_used)
+
+    Raises:
+        requests.exceptions.HTTPError: If all retries fail
+    """
+    if is_local_model(model):
+        # Strip the "ollama/" or "local/" prefix
+        local_model = model.split('/', 1)[1]
+
+        result = make_ollama_call(local_model, messages, max_retries)
+
+        response_text = result['choices'][0]['message']['content']
+        tokens_used = result.get('usage', {}).get('total_tokens', 0)
+
+        return response_text, tokens_used
+
+    else:
+        # Use OpenRouter for cloud models
+        url = "https://openrouter.ai/api/v1/chat/completions"
+
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json"
+        }
+
+        payload = {
+            "model": model,
+            "messages": messages
+        }
+
+        response = make_openrouter_call(url, headers, payload, max_retries)
+        data = response.json()
+
+        response_text = data['choices'][0]['message']['content']
+        tokens_used = data.get('usage', {}).get('total_tokens', 0)
+
+        return response_text, tokens_used

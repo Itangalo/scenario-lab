@@ -10,7 +10,7 @@ import time
 # Add src directory to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from api_utils import api_call_with_retry, make_openrouter_call
+from api_utils import api_call_with_retry, make_openrouter_call, is_local_model, make_llm_call
 import requests
 
 
@@ -249,6 +249,86 @@ class TestMakeOpenRouterCall(unittest.TestCase):
 
         self.assertEqual(result, success_response)
         self.assertEqual(mock_post.call_count, 2)
+
+
+class TestLocalLLMSupport(unittest.TestCase):
+    """Test local LLM support functions"""
+
+    def test_is_local_model_ollama(self):
+        """Test detection of Ollama models"""
+        self.assertTrue(is_local_model('ollama/llama3.1:70b'))
+        self.assertTrue(is_local_model('ollama/qwen2.5:72b'))
+        self.assertTrue(is_local_model('ollama/mistral'))
+
+    def test_is_local_model_local_prefix(self):
+        """Test detection of local/ prefixed models"""
+        self.assertTrue(is_local_model('local/my-model'))
+        self.assertTrue(is_local_model('local/custom-llm:latest'))
+
+    def test_is_local_model_cloud(self):
+        """Test that cloud models are not detected as local"""
+        self.assertFalse(is_local_model('openai/gpt-4o-mini'))
+        self.assertFalse(is_local_model('anthropic/claude-3-5-sonnet'))
+        self.assertFalse(is_local_model('meta-llama/llama-3.1-70b-instruct'))
+
+    @patch('api_utils.make_ollama_call')
+    def test_make_llm_call_routes_to_ollama(self, mock_ollama):
+        """Test that ollama/ models route to make_ollama_call"""
+        mock_ollama.return_value = {
+            'choices': [{'message': {'content': 'test response'}}],
+            'usage': {'total_tokens': 100}
+        }
+
+        response, tokens = make_llm_call(
+            model='ollama/llama3.1:70b',
+            messages=[{'role': 'user', 'content': 'test'}]
+        )
+
+        self.assertEqual(response, 'test response')
+        self.assertEqual(tokens, 100)
+        mock_ollama.assert_called_once()
+        # Check that the ollama/ prefix was stripped
+        call_args = mock_ollama.call_args
+        self.assertEqual(call_args[0][0], 'llama3.1:70b')
+
+    @patch('api_utils.make_openrouter_call')
+    def test_make_llm_call_routes_to_openrouter(self, mock_openrouter):
+        """Test that cloud models route to OpenRouter"""
+        mock_response = Mock()
+        mock_response.json.return_value = {
+            'choices': [{'message': {'content': 'test response'}}],
+            'usage': {'total_tokens': 150}
+        }
+        mock_openrouter.return_value = mock_response
+
+        response, tokens = make_llm_call(
+            model='openai/gpt-4o-mini',
+            messages=[{'role': 'user', 'content': 'test'}],
+            api_key='test-key'
+        )
+
+        self.assertEqual(response, 'test response')
+        self.assertEqual(tokens, 150)
+        mock_openrouter.assert_called_once()
+
+    @patch('api_utils.make_ollama_call')
+    def test_make_llm_call_local_prefix(self, mock_ollama):
+        """Test that local/ prefix also routes to Ollama"""
+        mock_ollama.return_value = {
+            'choices': [{'message': {'content': 'local response'}}],
+            'usage': {'total_tokens': 50}
+        }
+
+        response, tokens = make_llm_call(
+            model='local/custom-model',
+            messages=[{'role': 'user', 'content': 'test'}]
+        )
+
+        self.assertEqual(response, 'local response')
+        self.assertEqual(tokens, 50)
+        # Check prefix was stripped
+        call_args = mock_ollama.call_args
+        self.assertEqual(call_args[0][0], 'custom-model')
 
 
 if __name__ == '__main__':
