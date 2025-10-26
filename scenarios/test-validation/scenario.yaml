@@ -1,0 +1,13 @@
+# Test scenario with validation errors
+name: Test Validation
+description: Testing Pydantic schema validation
+
+# Missing required field: initial_world_state
+# Missing required field: turn_duration
+
+scenario_length:
+  type: fixed
+  # Missing required 'turns' field for fixed type
+
+communication_types:
+  - invalid_type  # Should be: public, bilateral, or coalition
