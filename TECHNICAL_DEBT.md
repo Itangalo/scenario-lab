@@ -4,23 +4,30 @@ Items that need attention for improved robustness, quality, and maintainability.
 
 ## High Priority
 
-### 1. Markdown Formatting Issues
+### 1. Markdown Formatting Issues ✅ COMPLETED
 
-**Problem:** LLM responses sometimes result in duplicated content in markdown files.
+**Status:** Implemented content-aware deduplication and validation
 
-**Example:** In `tech-company-002.md`, goals/reasoning/action sections appeared twice.
+**Implementation:**
+- ✅ Content similarity detection using SequenceMatcher
+- ✅ Section content extraction for analysis
+- ✅ Duplicate content detection (ACTION containing GOALS/REASONING)
+- ✅ Embedded duplicate removal (extracting clean ACTION from full response)
+- ✅ Duplicate section header removal
+- ✅ Header normalization (CAPS → Proper Case)
+- ✅ Excessive blank line removal
+- ✅ 10 comprehensive tests for deduplication logic
 
-**Root Cause:** LLM doesn't always follow the exact format we request. Our parsing extracts sections, but if the LLM structures the response differently (e.g., puts everything in ACTION section), we get duplication.
+**Files Modified:**
+- `src/markdown_utils.py`: Added 5 new functions for content deduplication
+  - `text_similarity()` - Calculate text similarity (0.0-1.0)
+  - `extract_section_content()` - Extract content from specific sections
+  - `detect_content_duplication()` - Detect if ACTION contains GOALS/REASONING
+  - `remove_embedded_duplicates()` - Clean ACTION section of embedded content
+  - `clean_markdown_formatting()` - Enhanced with content deduplication
+- `tests/test_markdown_utils.py`: 10 new tests for deduplication features
 
-**Impact:** Confusing output files, harder to read for experts.
-
-**Solution Options:**
-- Improve prompt to be more explicit about format
-- Add post-processing to detect and remove duplicates
-- Use structured output (JSON) instead of markdown parsing
-- Add format validation before saving markdown
-
-**Estimated Effort:** Medium (2-4 hours)
+**Result:** 150/150 tests passing. Markdown output now automatically cleaned of duplicates.
 
 ---
 
@@ -229,23 +236,23 @@ Items that need attention for improved robustness, quality, and maintainability.
 **Completed Items:** ✅
 1. ✅ API Error Handling - Comprehensive retry logic with exponential backoff
 2. ✅ Logging and Debugging - Structured logging throughout codebase
-3. ✅ Integration Tests (Partial) - Core workflows tested (execution, resume, branch)
-4. ✅ Response Parsing Robustness (Partial) - Enhanced with 4 pattern formats and diagnostics
+3. ✅ Markdown Formatting Issues - Content-aware deduplication and validation
+4. ✅ Integration Tests (Partial) - Core workflows tested (execution, resume, branch)
+5. ✅ Response Parsing Robustness (Partial) - Enhanced with 4 pattern formats and diagnostics
 
 **Remaining High Priority:**
-1. Markdown Formatting Issues (visible quality issue)
-2. Enhanced Scenario Specification (Phase 1 completion)
+1. Enhanced Scenario Specification (Phase 1 completion)
 
 **Remaining Medium Priority:**
-3. Duplicate Content Detection (token efficiency)
-4. Integration Tests (complete remaining: coalitions, communications, credit limits)
+2. Duplicate Content Detection (token efficiency) - Mostly addressed by markdown deduplication
+3. Integration Tests (complete remaining: coalitions, communications, credit limits)
 
 **Remaining Low Priority:**
-5. Metrics Extraction Improvements
-6. Cost Estimation Accuracy
+4. Metrics Extraction Improvements
+5. Cost Estimation Accuracy
 
-**Progress:** ~15-20 hours completed, ~25-30 hours remaining
+**Progress:** ~18-24 hours completed, ~20-25 hours remaining
 
 **Next Recommended Steps:**
-1. Markdown Formatting Issues - Prevent duplication, improve output quality
-2. Enhanced Scenario Specification - JSON Schema validation for YAML files
+1. Enhanced Scenario Specification - JSON Schema validation for YAML files
+2. Integration Tests (remaining) - Coalitions, communications, credit limits
