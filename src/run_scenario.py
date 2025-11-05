@@ -60,6 +60,468 @@ def find_next_run_number(scenario_output_dir: str) -> int:
     return max(existing_runs) + 1
 
 
+def execute_bilateral_communications(
+    actors: dict,
+    communication_manager: CommunicationManager,
+    context_manager: ContextManager,
+    world_state: WorldState,
+    cost_tracker: CostTracker,
+    turn: int,
+    num_turns: int,
+    logger: logging.Logger
+):
+    """
+    Execute Phase 1: Bilateral communications between actors
+
+    Args:
+        actors: Dictionary of actor short names to Actor objects
+        communication_manager: Manager for all communications
+        context_manager: Manager for context windowing
+        world_state: Current world state
+        cost_tracker: Cost tracking object
+        turn: Current turn number
+        num_turns: Total number of turns in scenario
+        logger: Logger instance
+    """
+    for actor_short_name, actor in actors.items():
+        # Get contextualized world state for this actor
+        actor_context = context_manager.get_context_for_actor(
+            actor.name,
+            world_state,
+            turn,
+            communication_manager
+        )
+
+        # Get list of other actors
+        other_actor_names = [a.name for a in actors.values() if a.name != actor.name]
+
+        # Ask if actor wants to communicate privately
+        if len(other_actor_names) > 0:
+            logger.debug(f"{actor.name} considering private communication...")
+            comm_decision = actor.decide_communication(actor_context, turn, num_turns, other_actor_names)
+
+            # Track communication decision cost
+            cost_tracker.record_actor_decision(
+                actor_name=actor.name,
+                turn=turn,
+                model=actor.llm_model,
+                tokens_used=comm_decision.get('tokens_used', 0)
+            )
+
+            if comm_decision['initiate_bilateral']:
+                target = comm_decision['target_actor']
+                message = comm_decision['message']
+
+                logger.info(f"  → Initiating bilateral: {actor.name} ↔ {target}")
+
+                # Get or create bilateral channel
+                channel = communication_manager.get_or_create_bilateral(actor.name, target, turn)
+
+                # Send initiator's message
+                communication_manager.send_message(channel.channel_id, actor.name, message)
+
+                # Get target actor
+                target_actor = next(a for a in actors.values() if a.name == target)
+
+                # Get contextualized state for target actor
+                target_context = context_manager.get_context_for_actor(
+                    target,
+                    world_state,
+                    turn,
+                    communication_manager
+                )
+
+                # Target responds
+                logger.debug(f"{target} responding...")
+                response = target_actor.respond_to_bilateral(target_context, turn, num_turns, actor.name, message)
+
+                # Track response cost
+                cost_tracker.record_actor_decision(
+                    actor_name=target,
+                    turn=turn,
+                    model=target_actor.llm_model,
+                    tokens_used=response.get('tokens_used', 0)
+                )
+
+                # Send response
+                communication_manager.send_message(channel.channel_id, target, response['response'])
+
+                logger.info(f"  ✓ Bilateral negotiation completed")
+            else:
+                logger.debug(f"  → No private communication from {actor.name}")
+
+
+def execute_coalition_formation(
+    actors: dict,
+    communication_manager: CommunicationManager,
+    context_manager: ContextManager,
+    world_state: WorldState,
+    cost_tracker: CostTracker,
+    turn: int,
+    num_turns: int,
+    logger: logging.Logger
+) -> list:
+    """
+    Execute Phase 1: Coalition formation among actors
+
+    Args:
+        actors: Dictionary of actor short names to Actor objects
+        communication_manager: Manager for all communications
+        context_manager: Manager for context windowing
+        world_state: Current world state
+        cost_tracker: Cost tracking object
+        turn: Current turn number
+        num_turns: Total number of turns in scenario
+        logger: Logger instance
+
+    Returns:
+        List of formed coalitions
+    """
+    formed_coalitions = []
+
+    for actor_short_name, actor in actors.items():
+        # Get contextualized world state for this actor
+        actor_context = context_manager.get_context_for_actor(
+            actor.name,
+            world_state,
+            turn,
+            communication_manager
+        )
+
+        # Get list of other actors
+        other_actor_names = [a.name for a in actors.values() if a.name != actor.name]
+
+        # Only consider coalition formation if there are at least 2 other actors
+        if len(other_actor_names) >= 2:
+            logger.debug(f"{actor.name} considering coalition formation...")
+            coalition_decision = actor.decide_coalition(actor_context, turn, num_turns, other_actor_names)
+
+            # Track coalition decision cost
+            cost_tracker.record_actor_decision(
+                actor_name=actor.name,
+                turn=turn,
+                model=actor.llm_model,
+                tokens_used=coalition_decision.get('tokens_used', 0)
+            )
+
+            if coalition_decision['propose_coalition']:
+                proposed_members = [actor.name] + coalition_decision['members']
+                proposed_members_sorted = sorted(proposed_members)
+
+                # Check if this coalition already exists for this turn
+                if proposed_members_sorted in [sorted(c['members']) for c in formed_coalitions]:
+                    logger.debug(f"  → Coalition already formed with these members")
+                    continue
+
+                logger.info(f"  → Proposing coalition with {', '.join(coalition_decision['members'])}")
+                logger.info(f"  → Purpose: {coalition_decision['purpose']}")
+
+                # Ask each proposed member to accept or reject
+                responses = {}
+                all_accepted = True
+
+                for member_name in coalition_decision['members']:
+                    member_actor = next(a for a in actors.values() if a.name == member_name)
+
+                    # Get contextualized state for member
+                    member_context = context_manager.get_context_for_actor(
+                        member_name,
+                        world_state,
+                        turn,
+                        communication_manager
+                    )
+
+                    logger.debug(f"{member_name} considering coalition...")
+                    response = member_actor.respond_to_coalition(
+                        member_context,
+                        turn,
+                        num_turns,
+                        actor.name,
+                        proposed_members,
+                        coalition_decision['purpose']
+                    )
+
+                    # Track response cost
+                    cost_tracker.record_actor_decision(
+                        actor_name=member_name,
+                        turn=turn,
+                        model=member_actor.llm_model,
+                        tokens_used=response.get('tokens_used', 0)
+                    )
+
+                    responses[member_name] = response
+
+                    if response['decision'] != 'accept':
+                        all_accepted = False
+                        logger.info(f"  → {member_name} rejected coalition")
+
+                # If all members accepted, create coalition channel
+                if all_accepted:
+                    logger.info(f"  ✓ Coalition formed!")
+
+                    # Create coalition channel
+                    channel = communication_manager.create_channel(
+                        ChannelType.COALITION,
+                        proposed_members,
+                        turn
+                    )
+
+                    # Record this coalition as formed
+                    formed_coalitions.append({
+                        'members': proposed_members,
+                        'purpose': coalition_decision['purpose'],
+                        'channel_id': channel.channel_id
+                    })
+
+                    # Coalition members communicate
+                    logger.debug("Coalition members coordinating...")
+                    for member_name in proposed_members:
+                        member_actor = next(a for a in actors.values() if a.name == member_name)
+
+                        # Get contextualized state for member
+                        member_context = context_manager.get_context_for_actor(
+                            member_name,
+                            world_state,
+                            turn,
+                            communication_manager
+                        )
+
+                        # Get previous messages in this coalition
+                        previous_messages = channel.get_messages()
+
+                        message_result = member_actor.communicate_in_coalition(
+                            member_context,
+                            turn,
+                            num_turns,
+                            proposed_members,
+                            coalition_decision['purpose'],
+                            previous_messages
+                        )
+
+                        # Track communication cost
+                        cost_tracker.record_actor_decision(
+                            actor_name=member_name,
+                            turn=turn,
+                            model=member_actor.llm_model,
+                            tokens_used=message_result.get('tokens_used', 0)
+                        )
+
+                        # Send message to coalition
+                        communication_manager.send_message(
+                            channel.channel_id,
+                            member_name,
+                            message_result['message']
+                        )
+
+                    logger.info(f"  ✓ Coalition coordination completed")
+                else:
+                    logger.info(f"  ✗ Coalition rejected by one or more members")
+            else:
+                logger.debug(f"  → No coalition proposed by {actor.name}")
+
+    return formed_coalitions
+
+
+def execute_actor_decisions(
+    actors: dict,
+    context_manager: ContextManager,
+    world_state: WorldState,
+    communication_manager: CommunicationManager,
+    cost_tracker: CostTracker,
+    metrics_tracker: MetricsTracker,
+    qa_validator: QAValidator,
+    turn: int,
+    num_turns: int,
+    output_path: str,
+    current_state: str,
+    logger: logging.Logger
+) -> dict:
+    """
+    Execute Phase 2: Public actor decisions
+
+    Args:
+        actors: Dictionary of actor short names to Actor objects
+        context_manager: Manager for context windowing
+        world_state: Current world state
+        communication_manager: Manager for all communications
+        cost_tracker: Cost tracking object
+        metrics_tracker: Metrics tracking object
+        qa_validator: Quality assurance validator
+        turn: Current turn number
+        num_turns: Total number of turns in scenario
+        output_path: Path to output directory
+        current_state: Current world state string
+        logger: Logger instance
+
+    Returns:
+        Dictionary of actor decisions for world state update
+    """
+    turn_decisions = {}
+    actor_decisions_for_world_update = {}
+
+    for actor_short_name, actor in actors.items():
+        log_actor_decision(logger, actor.name, turn)
+
+        # Get contextualized world state for this actor (includes communications)
+        actor_context = context_manager.get_context_for_actor(
+            actor.name,
+            world_state,
+            turn,
+            communication_manager
+        )
+
+        # Extract recent goals from previous turns
+        recent_goals = ""
+        if turn > 1:
+            goals_list = []
+            for t in range(max(1, turn - 2), turn):  # Last 2 turns
+                past_decision = world_state.get_actor_decisions_for_turn(t).get(actor.name, {})
+                if past_decision.get('goals'):
+                    goals_list.append(f"**Turn {t}:**\n{past_decision['goals']}\n")
+            if goals_list:
+                recent_goals = "\n".join(goals_list)
+
+        # Note: communications are already included in actor_context from context_manager
+        decision = actor.make_decision(actor_context, turn, num_turns, recent_goals=recent_goals)
+        turn_decisions[actor_short_name] = decision
+
+        # Record decision in world state
+        world_state.record_actor_decision(turn, actor.name, decision)
+
+        # Track costs
+        cost_tracker.record_actor_decision(
+            actor_name=actor.name,
+            turn=turn,
+            model=actor.llm_model,
+            tokens_used=decision.get('tokens_used', 0)
+        )
+
+        # Extract metrics from actor decision
+        metrics_tracker.extract_metrics_from_text(
+            turn=turn,
+            text=decision['action'],
+            actor_name=actor.name
+        )
+
+        # Prepare for world state update
+        actor_decisions_for_world_update[actor.name] = {
+            'reasoning': decision['reasoning'],
+            'action': decision['action']
+        }
+
+        # Write actor decision to file
+        actor_md = world_state.actor_decision_to_markdown(turn, actor.name, decision)
+        filename = f"{actor_short_name}-{turn:03d}.md"
+        with open(os.path.join(output_path, filename), 'w') as f:
+            f.write(actor_md)
+
+        logger.info(f"  ✓ Decision recorded: {decision.get('tokens_used', 0):,} tokens")
+
+        # Validate actor decision consistency (if enabled)
+        if qa_validator.is_enabled() and qa_validator.should_run_after_turn():
+            validation_result = qa_validator.validate_actor_decision(
+                actor_profile=actor.to_dict(),
+                world_state=current_state,
+                actor_reasoning=decision['reasoning'],
+                actor_action=decision['action'],
+                turn=turn
+            )
+            if validation_result and not validation_result.passed:
+                severity_emoji = "⚠️" if validation_result.severity != "High" else "❌"
+                logger.warning(f"    {severity_emoji} Validation: {validation_result.issues[0] if validation_result.issues else 'Inconsistency detected'}")
+
+    return actor_decisions_for_world_update
+
+
+def synthesize_and_validate_world_state(
+    world_state: WorldState,
+    world_state_updater: WorldStateUpdater,
+    current_state: str,
+    actor_decisions: dict,
+    scenario_name: str,
+    turn: int,
+    num_turns: int,
+    output_path: str,
+    cost_tracker: CostTracker,
+    metrics_tracker: MetricsTracker,
+    qa_validator: QAValidator,
+    world_state_model: str,
+    logger: logging.Logger
+) -> dict:
+    """
+    Synthesize world state update using LLM and validate
+
+    Args:
+        world_state: WorldState object
+        world_state_updater: World state updater object
+        current_state: Current world state string
+        actor_decisions: Dictionary of actor decisions
+        scenario_name: Name of the scenario
+        turn: Current turn number
+        num_turns: Total number of turns
+        output_path: Path to output directory
+        cost_tracker: Cost tracking object
+        metrics_tracker: Metrics tracking object
+        qa_validator: Quality assurance validator
+        world_state_model: LLM model for world state updates
+        logger: Logger instance
+
+    Returns:
+        World update result dictionary
+    """
+    log_world_update(logger, turn)
+    world_update_result = world_state_updater.update_world_state(
+        current_state=current_state,
+        turn=turn,
+        total_turns=num_turns,
+        actor_decisions=actor_decisions,
+        scenario_name=scenario_name
+    )
+
+    new_state = world_update_result['updated_state']
+    world_state.update_state(new_state)
+
+    # Track world state update costs
+    cost_tracker.record_world_state_update(
+        turn=turn,
+        model=world_state_model,
+        tokens_used=world_update_result['metadata'].get('tokens_used', 0)
+    )
+
+    # Extract metrics from world state
+    metrics_tracker.extract_metrics_from_text(
+        turn=turn,
+        text=new_state
+    )
+
+    # Write updated world state
+    world_state_md = world_state.to_markdown(turn)
+    with open(os.path.join(output_path, f'world-state-{turn:03d}.md'), 'w') as f:
+        f.write(world_state_md)
+
+    logger.info(f"  ✓ World state updated: {world_update_result['metadata'].get('tokens_used', 0):,} tokens")
+
+    # Validate world state update (if enabled)
+    if qa_validator.is_enabled() and qa_validator.should_run_after_turn():
+        # Extract just the action text for each actor
+        actor_actions_text = {name: data['action'] for name, data in actor_decisions.items()}
+
+        validation_result = qa_validator.validate_world_state_update(
+            previous_world_state=current_state,
+            actor_actions=actor_actions_text,
+            new_world_state=new_state,
+            turn=turn
+        )
+        if validation_result and not validation_result.passed:
+            severity_emoji = "⚠️" if validation_result.severity != "High" else "❌"
+            logger.warning(f"    {severity_emoji} World state validation: {validation_result.issues[0] if validation_result.issues else 'Inconsistency detected'}")
+
+        # Generate turn validation report
+        qa_validator.generate_turn_report(turn, output_path)
+
+    return world_update_result
+
+
 def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = None, credit_limit: float = None, resume_mode: bool = False, verbose: bool = False):
     """
     Run a complete scenario simulation
@@ -318,72 +780,17 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             # PHASE 1: Private Communications (optional)
             log_subsection(logger, "Phase 1: Private Communications")
 
-            for actor_short_name, actor in actors.items():
-                # Get contextualized world state for this actor
-                actor_context = context_manager.get_context_for_actor(
-                    actor.name,
-                    world_state,
-                    turn,
-                    communication_manager
-                )
-
-                # Get list of other actors
-                other_actor_names = [a.name for a in actors.values() if a.name != actor.name]
-
-                # Ask if actor wants to communicate privately
-                if len(other_actor_names) > 0:
-                    logger.debug(f"{actor.name} considering private communication...")
-                    comm_decision = actor.decide_communication(actor_context, turn, num_turns, other_actor_names)
-
-                    # Track communication decision cost
-                    cost_tracker.record_actor_decision(
-                        actor_name=actor.name,
-                        turn=turn,
-                        model=actor.llm_model,
-                        tokens_used=comm_decision.get('tokens_used', 0)
-                    )
-
-                    if comm_decision['initiate_bilateral']:
-                        target = comm_decision['target_actor']
-                        message = comm_decision['message']
-
-                        logger.info(f"  → Initiating bilateral: {actor.name} ↔ {target}")
-
-                        # Get or create bilateral channel
-                        channel = communication_manager.get_or_create_bilateral(actor.name, target, turn)
-
-                        # Send initiator's message
-                        communication_manager.send_message(channel.channel_id, actor.name, message)
-
-                        # Get target actor
-                        target_actor = next(a for a in actors.values() if a.name == target)
-
-                        # Get contextualized state for target actor
-                        target_context = context_manager.get_context_for_actor(
-                            target,
-                            world_state,
-                            turn,
-                            communication_manager
-                        )
-
-                        # Target responds
-                        logger.debug(f"{target} responding...")
-                        response = target_actor.respond_to_bilateral(target_context, turn, num_turns, actor.name, message)
-
-                        # Track response cost
-                        cost_tracker.record_actor_decision(
-                            actor_name=target,
-                            turn=turn,
-                            model=target_actor.llm_model,
-                            tokens_used=response.get('tokens_used', 0)
-                        )
-
-                        # Send response
-                        communication_manager.send_message(channel.channel_id, target, response['response'])
-
-                        logger.info(f"  ✓ Bilateral negotiation completed")
-                    else:
-                        logger.debug(f"  → No private communication from {actor.name}")
+            # Execute bilateral communications
+            execute_bilateral_communications(
+                actors=actors,
+                communication_manager=communication_manager,
+                context_manager=context_manager,
+                world_state=world_state,
+                cost_tracker=cost_tracker,
+                turn=turn,
+                num_turns=num_turns,
+                logger=logger
+            )
 
             # Export bilateral communications to files
             communication_manager.export_channels_to_files(output_path, scenario_name, turn)
@@ -391,148 +798,17 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             # Coalition Formation (after bilateral negotiations)
             log_subsection(logger, "Coalition Formation")
 
-            # Track proposed coalitions to avoid duplicates
-            formed_coalitions = []
-
-            for actor_short_name, actor in actors.items():
-                # Get contextualized world state for this actor
-                actor_context = context_manager.get_context_for_actor(
-                    actor.name,
-                    world_state,
-                    turn,
-                    communication_manager
-                )
-
-                # Get list of other actors
-                other_actor_names = [a.name for a in actors.values() if a.name != actor.name]
-
-                # Only consider coalition formation if there are at least 2 other actors
-                if len(other_actor_names) >= 2:
-                    logger.debug(f"{actor.name} considering coalition formation...")
-                    coalition_decision = actor.decide_coalition(actor_context, turn, num_turns, other_actor_names)
-
-                    # Track coalition decision cost
-                    cost_tracker.record_actor_decision(
-                        actor_name=actor.name,
-                        turn=turn,
-                        model=actor.llm_model,
-                        tokens_used=coalition_decision.get('tokens_used', 0)
-                    )
-
-                    if coalition_decision['propose_coalition']:
-                        proposed_members = [actor.name] + coalition_decision['members']
-                        proposed_members_sorted = sorted(proposed_members)
-
-                        # Check if this coalition already exists for this turn
-                        if proposed_members_sorted in [sorted(c['members']) for c in formed_coalitions]:
-                            logger.debug(f"  → Coalition already formed with these members")
-                            continue
-
-                        logger.info(f"  → Proposing coalition with {', '.join(coalition_decision['members'])}")
-                        logger.info(f"  → Purpose: {coalition_decision['purpose']}")
-
-                        # Ask each proposed member to accept or reject
-                        responses = {}
-                        all_accepted = True
-
-                        for member_name in coalition_decision['members']:
-                            member_actor = next(a for a in actors.values() if a.name == member_name)
-
-                            # Get contextualized state for member
-                            member_context = context_manager.get_context_for_actor(
-                                member_name,
-                                world_state,
-                                turn,
-                                communication_manager
-                            )
-
-                            logger.debug(f"{member_name} considering coalition...")
-                            response = member_actor.respond_to_coalition(
-                                member_context,
-                                turn,
-                                num_turns,
-                                actor.name,
-                                proposed_members,
-                                coalition_decision['purpose']
-                            )
-
-                            # Track response cost
-                            cost_tracker.record_actor_decision(
-                                actor_name=member_name,
-                                turn=turn,
-                                model=member_actor.llm_model,
-                                tokens_used=response.get('tokens_used', 0)
-                            )
-
-                            responses[member_name] = response
-
-                            if response['decision'] != 'accept':
-                                all_accepted = False
-                                logger.info(f"  → {member_name} rejected coalition")
-
-                        # If all members accepted, create coalition channel
-                        if all_accepted:
-                            logger.info(f"  ✓ Coalition formed!")
-
-                            # Create coalition channel
-                            channel = communication_manager.create_channel(
-                                ChannelType.COALITION,
-                                proposed_members,
-                                turn
-                            )
-
-                            # Record this coalition as formed
-                            formed_coalitions.append({
-                                'members': proposed_members,
-                                'purpose': coalition_decision['purpose'],
-                                'channel_id': channel.channel_id
-                            })
-
-                            # Coalition members communicate
-                            logger.debug("Coalition members coordinating...")
-                            for member_name in proposed_members:
-                                member_actor = next(a for a in actors.values() if a.name == member_name)
-
-                                # Get contextualized state for member
-                                member_context = context_manager.get_context_for_actor(
-                                    member_name,
-                                    world_state,
-                                    turn,
-                                    communication_manager
-                                )
-
-                                # Get previous messages in this coalition
-                                previous_messages = channel.get_messages()
-
-                                message_result = member_actor.communicate_in_coalition(
-                                    member_context,
-                                    turn,
-                                    num_turns,
-                                    proposed_members,
-                                    coalition_decision['purpose'],
-                                    previous_messages
-                                )
-
-                                # Track communication cost
-                                cost_tracker.record_actor_decision(
-                                    actor_name=member_name,
-                                    turn=turn,
-                                    model=member_actor.llm_model,
-                                    tokens_used=message_result.get('tokens_used', 0)
-                                )
-
-                                # Send message to coalition
-                                communication_manager.send_message(
-                                    channel.channel_id,
-                                    member_name,
-                                    message_result['message']
-                                )
-
-                            logger.info(f"  ✓ Coalition coordination completed")
-                        else:
-                            logger.info(f"  ✗ Coalition rejected by one or more members")
-                    else:
-                        logger.debug(f"  → No coalition proposed by {actor.name}")
+            # Execute coalition formation
+            formed_coalitions = execute_coalition_formation(
+                actors=actors,
+                communication_manager=communication_manager,
+                context_manager=context_manager,
+                world_state=world_state,
+                cost_tracker=cost_tracker,
+                turn=turn,
+                num_turns=num_turns,
+                logger=logger
+            )
 
             # Export coalition communications to files (if any formed)
             if formed_coalitions:
@@ -541,130 +817,38 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             # PHASE 2: Public Actions
             log_subsection(logger, "Phase 2: Public Actions")
 
-            turn_decisions = {}
-            actor_decisions_for_world_update = {}
-
-            for actor_short_name, actor in actors.items():
-                log_actor_decision(logger, actor.name, turn)
-
-                # Get contextualized world state for this actor (includes communications)
-                actor_context = context_manager.get_context_for_actor(
-                    actor.name,
-                    world_state,
-                    turn,
-                    communication_manager
-                )
-
-                # Extract recent goals from previous turns
-                recent_goals = ""
-                if turn > 1:
-                    goals_list = []
-                    for t in range(max(1, turn - 2), turn):  # Last 2 turns
-                        past_decision = world_state.get_actor_decisions_for_turn(t).get(actor.name, {})
-                        if past_decision.get('goals'):
-                            goals_list.append(f"**Turn {t}:**\n{past_decision['goals']}\n")
-                    if goals_list:
-                        recent_goals = "\n".join(goals_list)
-
-                # Note: communications are already included in actor_context from context_manager
-                decision = actor.make_decision(actor_context, turn, num_turns, recent_goals=recent_goals)
-                turn_decisions[actor_short_name] = decision
-
-                # Record decision in world state
-                world_state.record_actor_decision(turn, actor.name, decision)
-
-                # Track costs
-                cost_tracker.record_actor_decision(
-                    actor_name=actor.name,
-                    turn=turn,
-                    model=actor.llm_model,
-                    tokens_used=decision.get('tokens_used', 0)
-                )
-
-                # Extract metrics from actor decision
-                metrics_tracker.extract_metrics_from_text(
-                    turn=turn,
-                    text=decision['action'],
-                    actor_name=actor.name
-                )
-
-                # Prepare for world state update
-                actor_decisions_for_world_update[actor.name] = {
-                    'reasoning': decision['reasoning'],
-                    'action': decision['action']
-                }
-
-                # Write actor decision to file
-                actor_md = world_state.actor_decision_to_markdown(turn, actor.name, decision)
-                filename = f"{actor_short_name}-{turn:03d}.md"
-                with open(os.path.join(output_path, filename), 'w') as f:
-                    f.write(actor_md)
-
-                logger.info(f"  ✓ Decision recorded: {decision.get('tokens_used', 0):,} tokens")
-
-                # Validate actor decision consistency (if enabled)
-                if qa_validator.is_enabled() and qa_validator.should_run_after_turn():
-                    validation_result = qa_validator.validate_actor_decision(
-                        actor_profile=actor.to_dict(),
-                        world_state=current_state,
-                        actor_reasoning=decision['reasoning'],
-                        actor_action=decision['action'],
-                        turn=turn
-                    )
-                    if validation_result and not validation_result.passed:
-                        severity_emoji = "⚠️" if validation_result.severity != "High" else "❌"
-                        logger.warning(f"    {severity_emoji} Validation: {validation_result.issues[0] if validation_result.issues else 'Inconsistency detected'}")
-
-            # Update world state using LLM synthesis
-            log_world_update(logger, turn)
-            world_update_result = world_state_updater.update_world_state(
+            # Execute actor decisions
+            actor_decisions_for_world_update = execute_actor_decisions(
+                actors=actors,
+                context_manager=context_manager,
+                world_state=world_state,
+                communication_manager=communication_manager,
+                cost_tracker=cost_tracker,
+                metrics_tracker=metrics_tracker,
+                qa_validator=qa_validator,
+                turn=turn,
+                num_turns=num_turns,
+                output_path=output_path,
                 current_state=current_state,
-                turn=turn,
-                total_turns=num_turns,
+                logger=logger
+            )
+
+            # Update world state using LLM synthesis and validate
+            world_update_result = synthesize_and_validate_world_state(
+                world_state=world_state,
+                world_state_updater=world_state_updater,
+                current_state=current_state,
                 actor_decisions=actor_decisions_for_world_update,
-                scenario_name=scenario_name
-            )
-
-            new_state = world_update_result['updated_state']
-            world_state.update_state(new_state)
-
-            # Track world state update costs
-            cost_tracker.record_world_state_update(
+                scenario_name=scenario_name,
                 turn=turn,
-                model=world_state_model,
-                tokens_used=world_update_result['metadata'].get('tokens_used', 0)
+                num_turns=num_turns,
+                output_path=output_path,
+                cost_tracker=cost_tracker,
+                metrics_tracker=metrics_tracker,
+                qa_validator=qa_validator,
+                world_state_model=world_state_model,
+                logger=logger
             )
-
-            # Extract metrics from world state
-            metrics_tracker.extract_metrics_from_text(
-                turn=turn,
-                text=new_state
-            )
-
-            # Write updated world state
-            world_state_md = world_state.to_markdown(turn)
-            with open(os.path.join(output_path, f'world-state-{turn:03d}.md'), 'w') as f:
-                f.write(world_state_md)
-
-            logger.info(f"  ✓ World state updated: {world_update_result['metadata'].get('tokens_used', 0):,} tokens")
-
-            # Validate world state update (if enabled)
-            if qa_validator.is_enabled() and qa_validator.should_run_after_turn():
-                # Extract just the action text for each actor
-                actor_actions_text = {name: data['action'] for name, data in actor_decisions_for_world_update.items()}
-
-                validation_result = qa_validator.validate_world_state_update(
-                    previous_world_state=current_state,
-                    actor_actions=actor_actions_text,
-                    new_world_state=new_state,
-                    turn=turn
-                )
-                if validation_result and not validation_result.passed:
-                    severity_emoji = "⚠️" if validation_result.severity != "High" else "❌"
-                    logger.warning(f"    {severity_emoji} World state validation: {validation_result.issues[0] if validation_result.issues else 'Inconsistency detected'}")
-
-                # Generate turn validation report
-                qa_validator.generate_turn_report(turn, output_path)
 
             # Save state after successful turn completion
             state_manager.save_state(
