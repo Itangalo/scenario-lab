@@ -1,0 +1,70 @@
+validation_model: "openai/gpt-4o-mini"
+
+checks:
+  actor_decision_consistency:
+    enabled: true
+    severity: "medium"
+
+  world_state_coherence:
+    enabled: true
+    severity: "high"
+
+  information_access_consistency:
+    enabled: true
+    severity: "medium"
+
+run_after_each_turn: true
+generate_turn_reports: true
+halt_on_critical: false
+
+scenario_specific_rules: |
+  When validating this AI 2027 scenario, pay special attention to:
+
+  1. **Technical Realism:**
+     - AI capability progressions should follow plausible timelines
+     - Compute scaling should be realistic (don't jump multiple orders of magnitude in one month)
+     - Technical breakthroughs should have reasonable prerequisites
+     - Alignment research progress should be appropriately slow/difficult
+
+  2. **Actor Consistency:**
+     - OpenBrain CEO should balance commercial pressure with safety concerns
+     - Alignment researchers should be more cautious than capabilities researchers
+     - Government actors should show realistic bureaucratic delays
+     - Chinese actors should reflect different governance model and values
+     - Competitive pressures should influence risk-taking behavior
+
+  3. **Geopolitical Realism:**
+     - US-China dynamics should reflect real strategic considerations
+     - International cooperation should be difficult and take time
+     - Intelligence/espionage should play a role but not be omniscient
+     - Treaty negotiations should involve realistic bargaining and verification challenges
+
+  4. **Information Asymmetry:**
+     - Government actors shouldn't immediately know proprietary lab details
+     - Independent researchers have limited access to frontier model internals
+     - Different actors have different information about AI capabilities
+     - Intelligence provides partial/delayed information, not perfect knowledge
+
+  5. **Economic and Social Context:**
+     - Public awareness should grow gradually as AI becomes more visible
+     - Economic disruption should scale with AI capabilities
+     - Regulatory responses should lag behind technological developments
+     - Media and public opinion should influence political feasibility
+
+  6. **Alignment Challenges:**
+     - Problems like neuralese recurrence shouldn't be easily solved
+     - Interpretability should remain difficult even with research progress
+     - Scaling to more capable systems should introduce new challenges
+     - Control mechanisms should have realistic limitations
+
+  7. **Timeline Consistency:**
+     - Each turn represents 1 month - changes should be appropriately scoped
+     - Major policy changes take multiple turns to implement
+     - Research breakthroughs don't happen instantly
+     - International agreements require extended negotiations
+
+  8. **Failure Mode Realism:**
+     - If misalignment occurs, it should follow plausible mechanisms
+     - Deceptive alignment should be subtle, not cartoonishly obvious
+     - Loss of control should be gradual, not instant
+     - Warning signs should be ambiguous and debatable

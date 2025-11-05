@@ -1,11 +1,16 @@
-name: "AI 2027: Race to Superintelligence"
+name: "AI 2027: Race to Superintelligence (Budget Version)"
 
 description: |
-  A detailed scenario exploring the development of advanced AI from mid-2025 through 2030,
-  based on the "AI 2027" scenario by Kokotajlo et al. This scenario models the rapid progression
-  from early "stumbling" AI agents to potentially superintelligent systems, examining decisions
-  made by AI companies, governments, and alignment researchers during a critical period of
-  technological acceleration.
+  A cost-optimized version of the AI 2027 scenario exploring the development of advanced AI
+  from mid-2025 through 2030, based on the "AI 2027" scenario by Kokotajlo et al. This scenario
+  models the rapid progression from early "stumbling" AI agents to potentially superintelligent
+  systems, examining decisions made by AI companies, governments, and alignment researchers
+  during a critical period of technological acceleration.
+
+  This budget version uses gpt-4o-mini for 4 of 7 actors (57%), reducing costs by approximately
+  40% while maintaining gpt-4o for the most critical decision-makers (OpenBrain CEO, DeepCent CEO,
+  US President). Ideal for exploratory runs, testing, and batch analysis where cost efficiency
+  is important.
 
   NOTE: This is a counterfactual scenario starting from mid-2025, designed to maintain consistency
   with the original "AI 2027" document. It explores plausible futures for AI development regardless
