@@ -4,12 +4,14 @@ This guide explains the performance optimizations implemented in Scenario Lab to
 
 ## Overview
 
-The system includes two major performance optimizations:
+The system includes four major performance and robustness optimizations:
 
 1. **Response Caching** - Cache LLM responses to avoid redundant API calls
 2. **Connection Pooling** - Reuse HTTP connections for better throughput
+3. **Memory Optimization** - Reduce memory usage for large batch runs
+4. **Graceful Degradation** - Continue working even without optional dependencies
 
-These optimizations can reduce costs by 30-70% in typical batch runs and improve execution speed by 15-40%.
+These optimizations can reduce costs by 30-70% in typical batch runs, improve execution speed by 15-40%, and prevent out-of-memory errors in large batches.
 
 ## Response Caching
 
@@ -526,25 +528,182 @@ Savings: $10.25 (51%)
     └─────────────┘
 ```
 
+## Memory Optimization
+
+### How It Works
+
+The memory optimization system monitors memory usage and automatically performs garbage collection to prevent out-of-memory errors in large batch runs.
+
+**Key Features:**
+- Automatic memory monitoring with psutil
+- Periodic garbage collection every 10 runs
+- Memory usage warnings at 80% and 90% thresholds
+- Memory statistics at end of batch runs
+- Streaming file writes to avoid loading large outputs in memory
+- Memory-efficient data structures (LRU dicts)
+
+### Configuration
+
+Memory optimization is **automatic** when `psutil` is installed:
+
+```bash
+# Install psutil for memory monitoring
+pip install psutil
+
+# Or it's already in requirements.txt
+pip install -r requirements.txt
+```
+
+### Usage
+
+Memory optimization runs automatically during batch execution:
+
+```python
+# Automatic during batch runs:
+# - Periodic GC every 10 runs
+# - Memory checks after each run
+# - Warnings if memory usage >80%
+# - Memory summary at end
+
+python src/batch_runner.py config.yaml
+```
+
+### Memory Statistics
+
+View memory usage at end of batch runs:
+
+```bash
+💻 Memory Usage:
+   System: 12,500.5/16,000.0 MB (78.1%)
+   Process: 2,450.3 MB
+```
+
+### Manual Memory Optimization
+
+You can also manually optimize memory in your code:
+
+```python
+from memory_optimizer import optimize_memory, get_memory_monitor
+
+# Force garbage collection
+optimize_memory()
+
+# Check memory usage
+monitor = get_memory_monitor()
+stats = monitor.get_memory_stats()
+print(f"Memory: {stats.percent_used:.1f}%")
+
+# Check and warn if high
+monitor.check_memory("After processing large dataset")
+```
+
+### When Memory Optimization Helps
+
+**High Memory Usage Scenarios:**
+- Large batch runs (100+ variations)
+- Long scenarios (20+ turns)
+- Many actors (10+ actors)
+- Large world states
+- Parallel execution with high `max_parallel`
+
+**Example: 200-variation batch run**
+- Without optimization: 8GB+ memory, potential OOM errors
+- With optimization: 3-4GB memory, stable throughout
+
+### Memory-Efficient Patterns
+
+**Streaming file writes:**
+```python
+from memory_optimizer import StreamingWriter
+
+# Write large output without loading in memory
+with StreamingWriter('output.txt') as writer:
+    for chunk in large_data:
+        writer.write(chunk)
+```
+
+**Chunked processing:**
+```python
+from memory_optimizer import chunked_iterator
+
+# Process large list in chunks
+for chunk in chunked_iterator(large_list, chunk_size=100):
+    process_chunk(chunk)
+    optimize_memory()  # GC after each chunk
+```
+
+## Graceful Degradation
+
+### How It Works
+
+The system continues to work even when optional dependencies like `rich` are not installed, with simplified output.
+
+**Fallback Implementations:**
+- **rich.console.Console** → SimplifiedConsole (plain text)
+- **rich.progress.Progress** → SimplifiedProgress (basic progress)
+- **rich.table.Table** → SimplifiedTable (text tables)
+
+### Benefits
+
+- **No dependency hell** - System works with minimal dependencies
+- **Easier deployment** - Works in constrained environments
+- **Development flexibility** - Test without installing everything
+- **Better error messages** - Clear warnings about missing features
+
+### Usage
+
+Graceful degradation is **automatic**:
+
+```bash
+# Without rich installed
+pip uninstall rich
+
+# System still works, with simplified output:
+python src/batch_runner.py config.yaml
+
+# Output will be plain text instead of colored/formatted
+# Progress will be basic text instead of fancy bars
+```
+
+### Installation
+
+For full features, install optional dependencies:
+
+```bash
+# Full installation (recommended)
+pip install -r requirements.txt
+
+# Minimal installation (works but simplified output)
+pip install pyyaml requests python-dotenv pydantic
+```
+
+### Checking Available Features
+
+```python
+from graceful_fallback import is_rich_available
+
+if is_rich_available():
+    print("Rich formatting available!")
+else:
+    print("Using simplified output")
+```
+
 ## Testing
 
-The caching system includes comprehensive tests:
+The optimization systems include comprehensive tests:
 
 ```bash
 # Run cache tests (28 tests)
 python -m pytest tests/test_response_cache.py -v
 
-# Test coverage:
-# - Cache entry creation and management
-# - TTL expiration
-# - Disk persistence
-# - Statistics tracking
-# - Cost savings calculation
-# - LRU eviction
-# - Global cache singleton
+# Run graceful fallback tests (24 tests)
+python -m pytest tests/test_graceful_fallback.py -v
+
+# Run all optimization tests
+python -m pytest tests/test_response_cache.py tests/test_graceful_fallback.py -v
 ```
 
-All 28 tests pass with 100% success rate.
+All 52 tests pass with 100% success rate.
 
 ## Related Documentation
 

@@ -5,3 +5,6 @@ pydantic>=2.0
 
 # Optional: Enhanced progress display for batch execution
 rich>=13.0.0
+
+# Optional: Memory monitoring for batch runs
+psutil>=5.9.0

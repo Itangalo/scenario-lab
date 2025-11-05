@@ -20,6 +20,7 @@ from batch_parallel_executor import BatchParallelExecutor, RateLimitManager
 from run_scenario import run_scenario
 from error_handler import ErrorHandler, classify_error, ErrorSeverity
 from response_cache import get_global_cache
+from memory_optimizer import get_memory_monitor, optimize_memory
 
 
 class BatchRunner:
@@ -305,6 +306,12 @@ class BatchRunner:
 
             # Cleanup temp directory
             shutil.rmtree(temp_dir, ignore_errors=True)
+
+            # Memory optimization: periodic garbage collection every 10 runs
+            if run_number % 10 == 0:
+                optimize_memory()
+                memory_monitor = get_memory_monitor()
+                memory_monitor.check_memory(f"After run {run_number}")
 
         except Exception as e:
             result['error'] = str(e)
@@ -681,6 +688,14 @@ class BatchRunner:
             self.logger.info(f"   Hit rate: {cache_stats.hit_rate:.1f}%")
             self.logger.info(f"   Tokens saved: {cache_stats.tokens_saved:,}")
             self.logger.info(f"   Cost saved: ${cache_stats.estimated_cost_saved:.4f}")
+
+        # Show memory usage summary
+        memory_monitor = get_memory_monitor()
+        mem_stats = memory_monitor.get_memory_stats()
+        if mem_stats:
+            self.logger.info(f"\n💻 Memory Usage:")
+            self.logger.info(f"   System: {mem_stats.used_mb:,.1f}/{mem_stats.total_mb:,.1f} MB ({mem_stats.percent_used:.1f}%)")
+            self.logger.info(f"   Process: {mem_stats.process_mb:,.1f} MB")
 
         self.logger.info(f"\n📁 Results saved to: {self.output_dir}")
         self.logger.info(f"📄 Summary: {summary_file}")
