@@ -7,6 +7,7 @@ import argparse
 import requests
 import shutil
 import logging
+from datetime import datetime
 from pathlib import Path
 from actor_engine import load_actor, Actor
 from world_state import WorldState
@@ -634,7 +635,16 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         cost_tracker.costs_by_actor = saved_state['cost_tracker_state']['costs_by_actor']
         cost_tracker.costs_by_turn = saved_state['cost_tracker_state']['costs_by_turn']
         cost_tracker.world_state_costs = saved_state['cost_tracker_state']['world_state_costs']
-        cost_tracker.start_time = saved_state['execution_metadata']['started_at']
+
+        # Convert ISO string timestamps back to datetime objects
+        start_time_str = saved_state['cost_tracker_state'].get('start_time')
+        if start_time_str:
+            cost_tracker.start_time = datetime.fromisoformat(start_time_str)
+
+        end_time_str = saved_state['cost_tracker_state'].get('end_time')
+        if end_time_str:
+            cost_tracker.end_time = datetime.fromisoformat(end_time_str)
+
         logger.info(f"Restored cost tracker: ${cost_tracker.total_cost:.4f}, {cost_tracker.total_tokens:,} tokens")
     else:
         cost_tracker = CostTracker()
@@ -1072,7 +1082,9 @@ def branch_scenario(source_run_path: str, branch_at_turn: int, verbose: bool = F
         'total_tokens': total_tokens,
         'costs_by_actor': truncated_costs_by_actor,
         'costs_by_turn': truncated_costs_by_turn,
-        'world_state_costs': truncated_world_state_costs
+        'world_state_costs': truncated_world_state_costs,
+        'start_time': source_state['cost_tracker_state'].get('start_time'),
+        'end_time': None  # Branch hasn't completed yet
     }
 
     # Truncate metrics to branch point
@@ -1082,11 +1094,12 @@ def branch_scenario(source_run_path: str, branch_at_turn: int, verbose: bool = F
     }
 
     # Create new state file for branch
+    # Branch is halted at branch point so it can be resumed
     branch_state = {
         'scenario_name': source_state['scenario_name'],
         'scenario_path': source_state['scenario_path'],
-        'status': 'running',
-        'halt_reason': None,
+        'status': 'halted',
+        'halt_reason': 'branched',
         'current_turn': branch_at_turn,
         'total_turns': source_state['total_turns'],
         'completed_turns': list(range(1, branch_at_turn + 1)) if branch_at_turn > 0 else [],
