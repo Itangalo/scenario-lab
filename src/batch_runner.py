@@ -7,6 +7,7 @@ import json
 import shutil
 import logging
 import tempfile
+import asyncio
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Any, Optional
@@ -15,6 +16,7 @@ import argparse
 from parameter_variator import ParameterVariator
 from batch_cost_manager import BatchCostManager
 from batch_progress_tracker import BatchProgressTracker
+from batch_parallel_executor import BatchParallelExecutor, RateLimitManager
 from run_scenario import run_scenario
 
 
@@ -275,6 +277,16 @@ class BatchRunner:
 
     def run(self):
         """Execute the batch experiment"""
+        # Choose execution mode based on max_parallel
+        if self.max_parallel > 1:
+            # Use parallel execution
+            asyncio.run(self.run_parallel())
+        else:
+            # Use sequential execution
+            self.run_sequential()
+
+    def run_sequential(self):
+        """Execute the batch experiment sequentially"""
         # Setup
         self._setup_output_directory()
 
@@ -449,6 +461,153 @@ class BatchRunner:
 
         self.logger.info(f"\n📁 Results saved to: {self.output_dir}")
         self.logger.info(f"📄 Summary: {summary_file}")
+
+    async def run_parallel(self):
+        """Execute the batch experiment in parallel"""
+        # Setup
+        self._setup_output_directory()
+
+        # Resume or start fresh
+        if self.resume_mode:
+            loaded = self._load_batch_state()
+            if not loaded:
+                self.logger.warning("No previous state found, starting fresh")
+                self.resume_mode = False
+
+        # Generate variations if not resuming
+        if not self.resume_mode:
+            self.variations = self.variator.generate_variations()
+
+        # Calculate total runs
+        total_runs = len(self.variations) * self.runs_per_variation
+
+        # Initialize progress tracker
+        progress_tracker = None
+        if self.progress_display:
+            progress_tracker = BatchProgressTracker(
+                total_runs=total_runs,
+                experiment_name=self.experiment_name,
+                budget_limit=self.cost_manager.budget_limit
+            )
+            progress_tracker.start()
+        else:
+            # Traditional logging output
+            self.logger.info("=" * 60)
+            self.logger.info(f"🔬 Batch Experiment: {self.experiment_name} (Parallel)")
+            self.logger.info("=" * 60)
+            self.logger.info(f"📊 Variations: {len(self.variations)}")
+            self.logger.info(f"📊 Runs per variation: {self.runs_per_variation}")
+            self.logger.info(f"📊 Total runs: {total_runs}")
+            self.logger.info(f"🔀 Max parallel: {self.max_parallel}")
+
+            if self.cost_manager.budget_limit:
+                self.logger.info(f"💰 Budget limit: ${self.cost_manager.budget_limit:.2f}")
+            if self.cost_manager.cost_per_run_limit:
+                self.logger.info(f"💰 Cost per run limit: ${self.cost_manager.cost_per_run_limit:.2f}")
+
+            self.logger.info("")
+
+        # Start tracking
+        if not self.start_time:
+            self.start_time = datetime.now()
+            self.cost_manager.start_batch()
+
+        # Create parallel executor
+        rate_limit_manager = RateLimitManager()
+        executor = BatchParallelExecutor(
+            max_parallel=self.max_parallel,
+            rate_limit_manager=rate_limit_manager
+        )
+
+        # Collect all tasks to run
+        tasks = []
+        for variation in self.variations:
+            for run_num in range(1, self.runs_per_variation + 1):
+                run_id = self._generate_run_id(variation['variation_id'], run_num)
+
+                # Skip if already completed
+                if run_id in self.completed_runs:
+                    continue
+
+                tasks.append({
+                    'run_id': run_id,
+                    'variation': variation,
+                    'run_num': run_num
+                })
+
+        try:
+            # Process tasks with asyncio.gather
+            async def run_task(task):
+                run_id = task['run_id']
+                variation = task['variation']
+                run_num = task['run_num']
+
+                # Check budget before each run
+                can_continue, reason = self.cost_manager.can_start_run()
+                if not can_continue:
+                    return {'status': 'budget_exceeded', 'run_id': run_id}
+
+                # Notify progress tracker
+                if progress_tracker:
+                    progress_tracker.update_run_started(run_id, variation['description'])
+
+                # Execute run (using executor's rate-limited execution)
+                async def execute_scenario_wrapper():
+                    return self._run_single_scenario(run_id, variation, run_num)
+
+                try:
+                    result = await executor.execute_scenario(execute_scenario_wrapper)
+                except Exception as e:
+                    result = {
+                        'run_id': run_id,
+                        'status': 'failed',
+                        'error': str(e),
+                        'cost': 0.0
+                    }
+
+                # Track result
+                success = (result.get('status') == 'success')
+                if success:
+                    self.completed_runs.add(run_id)
+                else:
+                    self.failed_runs.append({
+                        'run_id': run_id,
+                        'error': result.get('error'),
+                        'status': result.get('status')
+                    })
+
+                # Update progress tracker
+                if progress_tracker:
+                    progress_tracker.update_run_completed(
+                        run_id,
+                        result.get('cost', 0.0),
+                        success=success
+                    )
+
+                return result
+
+            # Run all tasks in parallel (limited by semaphore)
+            results = await asyncio.gather(*[run_task(task) for task in tasks])
+
+            # Save state after all runs complete
+            self._save_batch_state()
+
+        finally:
+            # Stop progress tracker
+            if progress_tracker:
+                progress_tracker.stop()
+
+        # Complete
+        self.end_time = datetime.now()
+        self.cost_manager.end_batch()
+        self._save_batch_state()
+
+        # Generate summary
+        if not self.progress_display:
+            self.logger.info("\n" + "=" * 60)
+            self.logger.info("✅ Batch execution completed")
+            self.logger.info("=" * 60)
+        self._generate_summary()
 
 
 def main():
