@@ -357,16 +357,17 @@ scenario-name/
 - [ ] Create real-time scenario visualization
 - [ ] Add decision explanation system
 
-### Phase 4: Batch Processing
-- [ ] Develop batch runner for multiple scenarios with systematic variations
-- [ ] Implement cost estimation and tracking for batch runs
-- [ ] Implement cost controls (limits, early stopping, adaptive sampling)
+### Phase 4: Batch Processing ✅ COMPLETE
+- [x] **Develop batch runner for multiple scenarios with systematic variations**
+- [x] **Implement cost estimation and tracking for batch runs**
+- [x] **Implement cost controls (limits, early stopping)**
 - [x] **Add local LLM support (Ollama, llama.cpp) for cost-free batch runs**
+- [x] **Create statistical analysis tools for structured metrics data**
+- [x] **Build pattern recognition system**
+- [x] **Implement parallel execution with rate limiting**
+- [x] **Add real-time progress tracking with rich progress bars**
 - [ ] **Add hardware temperature monitoring for local LLM usage (prevent thermal throttling)**
-- [ ] **Add progress meter for scenario execution (show turn progress, actor status, estimated time)**
-- [ ] Implement parallel execution
-- [ ] Create statistical analysis tools for structured metrics data
-- [ ] Build pattern recognition system
+- [ ] Implement adaptive sampling (early stopping when pattern clear)
 
 ### Phase 5: Advanced Features
 - [ ] Add scenario branching and variants
@@ -519,6 +520,74 @@ python src/run_scenario.py --branch-from output/test-regulation-negotiation/run-
 # Continue the branch with modified scenario or actors
 python src/run_scenario.py --resume output/test-regulation-negotiation/run-002
 ```
+
+### Batch Execution
+
+Run multiple scenario variations for statistical analysis. The batch system enables systematic exploration of parameter spaces, model comparisons, and robustness testing.
+
+**Create a batch configuration:**
+
+```yaml
+# experiments/model-comparison/batch-config.yaml
+experiment_name: "Model Comparison Study"
+base_scenario: "scenarios/test-regulation-negotiation"
+
+runs_per_variation: 10
+budget_limit: 20.00
+
+variations:
+  - type: "actor_model"
+    actor: "regulator"
+    values: ["openai/gpt-4o-mini", "anthropic/claude-3-haiku"]
+  - type: "actor_model"
+    actor: "tech-company"
+    values: ["openai/gpt-4o-mini", "anthropic/claude-3-haiku"]
+
+# Creates 2×2 = 4 variations × 10 runs = 40 total runs
+
+output_dir: "experiments/model-comparison"
+```
+
+**Run the batch:**
+
+```bash
+python src/batch_runner.py experiments/model-comparison/batch-config.yaml
+```
+
+**Analyze results:**
+
+```bash
+# Generate analysis report
+python src/batch_analyzer.py experiments/model-comparison/ --report
+
+# View results
+cat experiments/model-comparison/analysis/analysis-report.md
+```
+
+**Output includes:**
+
+- Individual run outputs in `runs/var-XXX-run-YYY/`
+- Statistical analysis: means, standard deviations, ranges
+- Variation comparison: which parameter combinations performed best
+- Cost efficiency analysis: runs per dollar spent
+- Pattern identification: success factors and failure modes
+
+**Resume interrupted batches:**
+
+```bash
+python src/batch_runner.py experiments/model-comparison/batch-config.yaml --resume
+```
+
+**Features:**
+
+- Systematic parameter variation (actor models, more to come)
+- Configurable parallelism (respects API rate limits)
+- Budget controls (per-run and total batch limits)
+- Automatic cost tracking and analysis
+- Resumable execution
+- Statistical analysis and reporting
+
+See [Batch Execution Guide](docs/batch-execution-guide.md) for detailed documentation.
 
 ### Available Scenarios
 

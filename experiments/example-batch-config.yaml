@@ -1,0 +1,47 @@
+# Batch Configuration Example
+# This file defines a batch experiment that runs multiple scenario variations
+
+experiment_name: "Model Comparison - Regulation Negotiation"
+description: |
+  Compare how different LLM models behave in AI regulation negotiation scenario.
+  Tests whether more capable models lead to better negotiation outcomes.
+
+# Base scenario to run (all variations will start from this)
+base_scenario: "scenarios/test-regulation-negotiation"
+
+# Run configuration
+runs_per_variation: 5        # Number of times to run each variation (for statistical significance)
+max_parallel: 2              # Maximum concurrent runs (consider API rate limits)
+timeout_per_run: 1800        # Maximum seconds per run (30 minutes)
+
+# Cost controls
+budget_limit: 10.00          # Maximum spend for entire batch (USD)
+cost_per_run_limit: 0.50     # Maximum cost per individual run (USD)
+
+# Variations to test
+# Each variation type creates a new dimension in the parameter space
+variations:
+  # Vary which LLM model the regulator uses
+  - type: "actor_model"
+    actor: "regulator"
+    values:
+      - "openai/gpt-4o-mini"
+      - "anthropic/claude-3-haiku"
+
+  # Vary which LLM model the tech company uses
+  - type: "actor_model"
+    actor: "tech-company"
+    values:
+      - "openai/gpt-4o-mini"
+      - "anthropic/claude-3-haiku"
+
+# This creates a 2x2 grid = 4 variations
+# With runs_per_variation=5, this is 4 × 5 = 20 total runs
+
+# Output configuration
+output_dir: "experiments/model-comparison"
+save_individual_runs: true   # Save full output for each run
+aggregate_metrics: true      # Generate aggregated analysis
+
+# Optional: Resume configuration
+# resume_from: "experiments/model-comparison"  # Resume incomplete batch
