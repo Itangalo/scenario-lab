@@ -6,6 +6,7 @@ import yaml
 import argparse
 import requests
 import shutil
+import logging
 from pathlib import Path
 from actor_engine import load_actor, Actor
 from world_state import WorldState
@@ -16,6 +17,7 @@ from scenario_state_manager import ScenarioStateManager
 from communication_manager import CommunicationManager, ChannelType
 from context_manager import ContextManager
 from qa_validator import QAValidator
+from logging_config import setup_run_logging, log_section, log_subsection, log_cost, log_actor_decision, log_world_update, log_validation, log_error_with_context
 
 
 def load_scenario(scenario_path: str):
@@ -58,7 +60,7 @@ def find_next_run_number(scenario_output_dir: str) -> int:
     return max(existing_runs) + 1
 
 
-def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = None, credit_limit: float = None, resume_mode: bool = False):
+def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = None, credit_limit: float = None, resume_mode: bool = False, verbose: bool = False):
     """
     Run a complete scenario simulation
 
@@ -68,11 +70,20 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         max_turns: Optional maximum number of turns to execute before halting
         credit_limit: Optional cost limit - halt if exceeded
         resume_mode: If True, resume from existing state in output_path
+        verbose: If True, enable DEBUG logging
     """
+    # Set up temporary logger for initialization
+    logger = logging.getLogger("scenario_lab")
+    logger.setLevel(logging.DEBUG if verbose else logging.INFO)
+    if not logger.handlers:
+        handler = logging.StreamHandler()
+        handler.setFormatter(logging.Formatter('%(levelname)s - %(message)s'))
+        logger.addHandler(handler)
+
     if not resume_mode:
-        print(f"Loading scenario from: {scenario_path}")
+        logger.info(f"Loading scenario from: {scenario_path}")
     else:
-        print(f"Resuming scenario from: {output_path}")
+        logger.info(f"Resuming scenario from: {output_path}")
 
     # Initialize state manager first (needed for resume check)
     state_manager = None
@@ -93,7 +104,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         saved_state = state_manager.load_state()
 
         if saved_state['status'] == 'completed':
-            print("This scenario run is already completed.")
+            logger.info("This scenario run is already completed.")
             return
 
         # Override scenario_path and other params from saved state
@@ -101,17 +112,17 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         start_turn = saved_state['current_turn'] + 1
         started_at = saved_state['execution_metadata']['started_at']
 
-        print(f"  Status: {saved_state['status']}")
+        logger.info(f"  Status: {saved_state['status']}")
         if saved_state['halt_reason']:
-            print(f"  Previous halt reason: {saved_state['halt_reason']}")
-        print(f"  Resuming from turn {start_turn} of {saved_state['total_turns']}")
+            logger.info(f"  Previous halt reason: {saved_state['halt_reason']}")
+        logger.info(f"  Resuming from turn {start_turn} of {saved_state['total_turns']}")
 
     # Load scenario definition
     scenario = load_scenario(scenario_path)
     scenario_name = scenario['name']
 
     if not resume_mode:
-        print(f"Scenario: {scenario_name}")
+        logger.info(f"Scenario: {scenario_name}")
 
     # Set up output directory
     if not resume_mode:
@@ -127,19 +138,22 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             output_path = os.path.join(scenario_output_dir, f'run-{run_number:03d}')
 
         os.makedirs(output_path, exist_ok=True)
-        print(f"Output directory: {output_path}")
+        logger.info(f"Output directory: {output_path}")
 
         # Create state manager for new run
         state_manager = ScenarioStateManager(output_path)
 
+    # Now set up proper logging with file output
+    logger = setup_run_logging(Path(output_path), verbose=verbose)
+
     # Initialize Phase 1 components
     if not resume_mode:
-        print("\nInitializing components...")
+        log_section(logger, "Initializing components")
 
     # Communication manager - restore or create new
     if resume_mode and saved_state and 'communication_manager_state' in saved_state:
         communication_manager = CommunicationManager.from_dict(saved_state['communication_manager_state'])
-        print(f"  Restored communication manager")
+        logger.debug("Restored communication manager")
     else:
         # Get actor names for communication manager
         actor_full_names = []
@@ -159,7 +173,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         cost_tracker.costs_by_turn = saved_state['cost_tracker_state']['costs_by_turn']
         cost_tracker.world_state_costs = saved_state['cost_tracker_state']['world_state_costs']
         cost_tracker.start_time = saved_state['execution_metadata']['started_at']
-        print(f"  Restored cost tracker (${cost_tracker.total_cost:.4f}, {cost_tracker.total_tokens:,} tokens)")
+        logger.info(f"Restored cost tracker: ${cost_tracker.total_cost:.4f}, {cost_tracker.total_tokens:,} tokens")
     else:
         cost_tracker = CostTracker()
 
@@ -169,20 +183,20 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         metrics_tracker = MetricsTracker(metrics_config_path if os.path.exists(metrics_config_path) else None)
         metrics_tracker.metrics_by_turn = saved_state['metrics_tracker_state']['metrics_by_turn']
         metrics_tracker.final_metrics = saved_state['metrics_tracker_state']['final_metrics']
-        print(f"  Restored metrics tracker ({len(metrics_tracker.metrics_by_turn)} turns)")
+        logger.info(f"Restored metrics tracker: {len(metrics_tracker.metrics_by_turn)} turns")
     else:
         metrics_tracker = MetricsTracker(metrics_config_path if os.path.exists(metrics_config_path) else None)
 
     # QA Validator - always create new (validation doesn't need to be restored)
     qa_validator = QAValidator(scenario_path, os.getenv('OPENROUTER_API_KEY'))
     if not resume_mode and qa_validator.is_enabled():
-        print(f"  QA validation enabled")
+        logger.info("QA validation enabled")
 
     # World state updater
     world_state_model = scenario.get('world_state_model', 'alibaba/tongyi-deepresearch-30b-a3b:free')
     world_state_updater = WorldStateUpdater(world_state_model)
     if not resume_mode:
-        print(f"  World state model: {world_state_model}")
+        logger.info(f"World state model: {world_state_model}")
 
     # World state - restore or create new
     if resume_mode and saved_state:
@@ -196,7 +210,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         world_state.current_turn = saved_state['world_state']['current_turn']
         world_state.states = {int(k): v for k, v in saved_state['world_state']['states'].items()}  # Convert string keys to int
         world_state.actor_decisions = {int(k): v for k, v in saved_state['world_state']['actor_decisions'].items()}  # Convert string keys to int
-        print(f"  Restored world state (turn {world_state.current_turn})")
+        logger.info(f"Restored world state: turn {world_state.current_turn}")
     else:
         world_state = WorldState(
             initial_state=scenario['initial_world_state'],
@@ -216,32 +230,32 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             actor = load_actor(scenario_path, short_name, scenario_system_prompt)
             actors[short_name] = actor
             actor_models[actor.name] = actor.llm_model
-        print(f"  Restored {len(actors)} actors")
+        logger.info(f"Restored {len(actors)} actors")
     else:
         # Load actors from scenario definition
         for actor_short_name in scenario['actors']:
             actor = load_actor(scenario_path, actor_short_name, scenario_system_prompt)
             actors[actor_short_name] = actor
             actor_models[actor.name] = actor.llm_model
-            print(f"Loaded actor: {actor.name} ({actor_short_name}) - {actor.llm_model}")
+            logger.info(f"Loaded actor: {actor.name} ({actor_short_name}) - {actor.llm_model}")
 
     # Create communication manager now that we have actors
     if communication_manager is None:
         actor_full_names = [actor.name for actor in actors.values()]
         communication_manager = CommunicationManager(actor_full_names)
         if not resume_mode:
-            print(f"  Communication manager initialized")
+            logger.debug("Communication manager initialized")
 
     # Create context manager
     context_window_size = scenario.get('context_window_size', 3)  # Default to 3 turns
     context_manager = ContextManager(window_size=context_window_size)
     if not resume_mode:
-        print(f"  Context manager initialized (window size: {context_window_size})")
+        logger.info(f"Context manager initialized: window size {context_window_size}")
 
     # Estimate costs (only for new runs)
     num_turns = scenario['turns']
     if not resume_mode:
-        print("\nEstimating costs...")
+        log_section(logger, "Cost Estimation")
         cost_estimate = cost_tracker.estimate_scenario_cost(
             num_actors=len(actors),
             num_turns=num_turns,
@@ -249,40 +263,38 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             world_state_model=world_state_model
         )
 
-        print(f"\nCost Estimate:")
-        print(f"  Actors: ${cost_estimate['total'] - cost_estimate['world_state']:.4f}")
-        print(f"  World State: ${cost_estimate['world_state']:.4f}")
-        print(f"  Total Estimated: ${cost_estimate['total']:.4f}")
-        print(f"  Total Tokens (est): {cost_estimate['total_tokens_estimated']:,}\n")
+        logger.info("Cost Estimate:")
+        logger.info(f"  Actors: ${cost_estimate['total'] - cost_estimate['world_state']:.4f}")
+        logger.info(f"  World State: ${cost_estimate['world_state']:.4f}")
+        logger.info(f"  Total Estimated: ${cost_estimate['total']:.4f}")
+        logger.info(f"  Total Tokens (est): {cost_estimate['total_tokens_estimated']:,}")
 
     # Write initial world state (only for new runs)
     if not resume_mode:
         initial_state_md = world_state.to_markdown(0)
         with open(os.path.join(output_path, 'world-state-000.md'), 'w') as f:
             f.write(initial_state_md)
-        print("Wrote initial world state")
+        logger.debug("Wrote initial world state")
 
         # Start cost tracking for new runs
         cost_tracker.start_tracking()
     else:
-        print(f"\nResuming execution...")
+        log_section(logger, "Resuming execution")
 
     # Run simulation for specified number of turns
     if not resume_mode:
-        print(f"\nRunning {num_turns} turns...\n")
+        log_section(logger, f"Running {num_turns} turns")
     else:
         remaining_turns = num_turns - start_turn + 1
-        print(f"Continuing for {remaining_turns} more turn(s)...\n")
+        logger.info(f"Continuing for {remaining_turns} more turn(s)...")
 
     for turn in range(start_turn, num_turns + 1):
         try:
-            print(f"{'='*60}")
-            print(f"TURN {turn}")
-            print(f"{'='*60}\n")
+            log_section(logger, f"TURN {turn}")
 
             # Check credit limit before processing turn
             if credit_limit and cost_tracker.total_cost >= credit_limit:
-                print(f"\n⚠️  Credit limit reached: ${cost_tracker.total_cost:.4f} >= ${credit_limit:.4f}")
+                logger.warning(f"⚠️  Credit limit reached: ${cost_tracker.total_cost:.4f} >= ${credit_limit:.4f}")
                 state_manager.save_state(
                     scenario_name=scenario_name,
                     scenario_path=scenario_path,
@@ -297,14 +309,14 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                     halt_reason='credit_limit',
                     started_at=started_at
                 )
-                print(f"\nScenario halted. Resume with:")
-                print(f"  python src/run_scenario.py --resume {output_path}\n")
+                logger.info("Scenario halted. Resume with:")
+                logger.info(f"  python src/run_scenario.py --resume {output_path}")
                 return
 
             current_state = world_state.get_current_state()
 
             # PHASE 1: Private Communications (optional)
-            print(f"\n  Phase 1: Private Communications")
+            log_subsection(logger, "Phase 1: Private Communications")
 
             for actor_short_name, actor in actors.items():
                 # Get contextualized world state for this actor
@@ -320,7 +332,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
 
                 # Ask if actor wants to communicate privately
                 if len(other_actor_names) > 0:
-                    print(f"    {actor.name} considering private communication...")
+                    logger.debug(f"{actor.name} considering private communication...")
                     comm_decision = actor.decide_communication(actor_context, turn, num_turns, other_actor_names)
 
                     # Track communication decision cost
@@ -335,7 +347,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                         target = comm_decision['target_actor']
                         message = comm_decision['message']
 
-                        print(f"      → Initiating bilateral with {target}")
+                        logger.info(f"  → Initiating bilateral: {actor.name} ↔ {target}")
 
                         # Get or create bilateral channel
                         channel = communication_manager.get_or_create_bilateral(actor.name, target, turn)
@@ -355,7 +367,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                         )
 
                         # Target responds
-                        print(f"      → {target} responding...")
+                        logger.debug(f"{target} responding...")
                         response = target_actor.respond_to_bilateral(target_context, turn, num_turns, actor.name, message)
 
                         # Track response cost
@@ -369,15 +381,15 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                         # Send response
                         communication_manager.send_message(channel.channel_id, target, response['response'])
 
-                        print(f"      ✓ Bilateral negotiation completed")
+                        logger.info(f"  ✓ Bilateral negotiation completed")
                     else:
-                        print(f"      → No private communication")
+                        logger.debug(f"  → No private communication from {actor.name}")
 
             # Export bilateral communications to files
             communication_manager.export_channels_to_files(output_path, scenario_name, turn)
 
             # Coalition Formation (after bilateral negotiations)
-            print(f"\n  Coalition Formation")
+            log_subsection(logger, "Coalition Formation")
 
             # Track proposed coalitions to avoid duplicates
             formed_coalitions = []
@@ -396,7 +408,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
 
                 # Only consider coalition formation if there are at least 2 other actors
                 if len(other_actor_names) >= 2:
-                    print(f"    {actor.name} considering coalition formation...")
+                    logger.debug(f"{actor.name} considering coalition formation...")
                     coalition_decision = actor.decide_coalition(actor_context, turn, num_turns, other_actor_names)
 
                     # Track coalition decision cost
@@ -413,11 +425,11 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
 
                         # Check if this coalition already exists for this turn
                         if proposed_members_sorted in [sorted(c['members']) for c in formed_coalitions]:
-                            print(f"      → Coalition already formed with these members")
+                            logger.debug(f"  → Coalition already formed with these members")
                             continue
 
-                        print(f"      → Proposing coalition with {', '.join(coalition_decision['members'])}")
-                        print(f"      → Purpose: {coalition_decision['purpose']}")
+                        logger.info(f"  → Proposing coalition with {', '.join(coalition_decision['members'])}")
+                        logger.info(f"  → Purpose: {coalition_decision['purpose']}")
 
                         # Ask each proposed member to accept or reject
                         responses = {}
@@ -434,7 +446,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                                 communication_manager
                             )
 
-                            print(f"      → {member_name} considering coalition...")
+                            logger.debug(f"{member_name} considering coalition...")
                             response = member_actor.respond_to_coalition(
                                 member_context,
                                 turn,
@@ -456,11 +468,11 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
 
                             if response['decision'] != 'accept':
                                 all_accepted = False
-                                print(f"      → {member_name} rejected coalition")
+                                logger.info(f"  → {member_name} rejected coalition")
 
                         # If all members accepted, create coalition channel
                         if all_accepted:
-                            print(f"      ✓ Coalition formed!")
+                            logger.info(f"  ✓ Coalition formed!")
 
                             # Create coalition channel
                             channel = communication_manager.create_channel(
@@ -477,7 +489,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                             })
 
                             # Coalition members communicate
-                            print(f"      → Coalition members coordinating...")
+                            logger.debug("Coalition members coordinating...")
                             for member_name in proposed_members:
                                 member_actor = next(a for a in actors.values() if a.name == member_name)
 
@@ -516,24 +528,24 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                                     message_result['message']
                                 )
 
-                            print(f"      ✓ Coalition coordination completed")
+                            logger.info(f"  ✓ Coalition coordination completed")
                         else:
-                            print(f"      ✗ Coalition rejected by one or more members")
+                            logger.info(f"  ✗ Coalition rejected by one or more members")
                     else:
-                        print(f"      → No coalition proposed")
+                        logger.debug(f"  → No coalition proposed by {actor.name}")
 
             # Export coalition communications to files (if any formed)
             if formed_coalitions:
                 communication_manager.export_channels_to_files(output_path, scenario_name, turn)
 
             # PHASE 2: Public Actions
-            print(f"\n  Phase 2: Public Actions")
+            log_subsection(logger, "Phase 2: Public Actions")
 
             turn_decisions = {}
             actor_decisions_for_world_update = {}
 
             for actor_short_name, actor in actors.items():
-                print(f"    {actor.name} is deciding public action...")
+                log_actor_decision(logger, actor.name, turn)
 
                 # Get contextualized world state for this actor (includes communications)
                 actor_context = context_manager.get_context_for_actor(
@@ -588,7 +600,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                 with open(os.path.join(output_path, filename), 'w') as f:
                     f.write(actor_md)
 
-                print(f"    ✓ Decision recorded (tokens: {decision.get('tokens_used', 0):,})")
+                logger.info(f"  ✓ Decision recorded: {decision.get('tokens_used', 0):,} tokens")
 
                 # Validate actor decision consistency (if enabled)
                 if qa_validator.is_enabled() and qa_validator.should_run_after_turn():
@@ -601,10 +613,10 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                     )
                     if validation_result and not validation_result.passed:
                         severity_emoji = "⚠️" if validation_result.severity != "High" else "❌"
-                        print(f"      {severity_emoji} Validation warning: {validation_result.issues[0] if validation_result.issues else 'Inconsistency detected'}")
+                        logger.warning(f"    {severity_emoji} Validation: {validation_result.issues[0] if validation_result.issues else 'Inconsistency detected'}")
 
             # Update world state using LLM synthesis
-            print(f"\n  Synthesizing world state update...")
+            log_world_update(logger, turn)
             world_update_result = world_state_updater.update_world_state(
                 current_state=current_state,
                 turn=turn,
@@ -634,7 +646,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             with open(os.path.join(output_path, f'world-state-{turn:03d}.md'), 'w') as f:
                 f.write(world_state_md)
 
-            print(f"    ✓ World state updated (tokens: {world_update_result['metadata'].get('tokens_used', 0):,})\n")
+            logger.info(f"  ✓ World state updated: {world_update_result['metadata'].get('tokens_used', 0):,} tokens")
 
             # Validate world state update (if enabled)
             if qa_validator.is_enabled() and qa_validator.should_run_after_turn():
@@ -649,7 +661,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                 )
                 if validation_result and not validation_result.passed:
                     severity_emoji = "⚠️" if validation_result.severity != "High" else "❌"
-                    print(f"    {severity_emoji} World state validation warning: {validation_result.issues[0] if validation_result.issues else 'Inconsistency detected'}")
+                    logger.warning(f"    {severity_emoji} World state validation: {validation_result.issues[0] if validation_result.issues else 'Inconsistency detected'}")
 
                 # Generate turn validation report
                 qa_validator.generate_turn_report(turn, output_path)
@@ -672,16 +684,16 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
 
             # Check if max_turns reached
             if max_turns and turn >= max_turns:
-                print(f"\n⚠️  Reached maximum turns limit: {max_turns}")
+                logger.warning(f"⚠️  Reached maximum turns limit: {max_turns}")
                 state_manager.mark_halted('max_turns')
-                print(f"\nScenario halted after {max_turns} turn(s). Resume with:")
-                print(f"  python src/run_scenario.py --resume {output_path}\n")
+                logger.info(f"Scenario halted after {max_turns} turn(s). Resume with:")
+                logger.info(f"  python src/run_scenario.py --resume {output_path}")
                 return
 
         except requests.exceptions.HTTPError as e:
             if e.response.status_code == 429:
                 # Rate limit error - save state and exit gracefully
-                print(f"\n⚠️  Rate limit error encountered")
+                logger.warning("⚠️  Rate limit error encountered")
                 state_manager.save_state(
                     scenario_name=scenario_name,
                     scenario_path=scenario_path,
@@ -696,10 +708,10 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                     halt_reason='rate_limit',
                     started_at=started_at
                 )
-                print(f"\nScenario halted due to API rate limit.")
-                print(f"Last completed turn: {turn - 1}")
-                print(f"\nWait a few minutes, then resume with:")
-                print(f"  python src/run_scenario.py --resume {output_path}\n")
+                logger.info("Scenario halted due to API rate limit.")
+                logger.info(f"Last completed turn: {turn - 1}")
+                logger.info("Wait a few minutes, then resume with:")
+                logger.info(f"  python src/run_scenario.py --resume {output_path}")
                 return
             else:
                 # Re-raise other HTTP errors
@@ -714,11 +726,11 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
     # Generate validation summary report (if enabled)
     if qa_validator.is_enabled():
         qa_validator.generate_summary_report(output_path)
-        print("\nValidation Summary:")
-        print(f"  Total validation checks: {len(qa_validator.validation_results)}")
+        log_section(logger, "Validation Summary")
+        logger.info(f"Total validation checks: {len(qa_validator.validation_results)}")
         passed = sum(1 for r in qa_validator.validation_results if r.passed)
-        print(f"  Passed: {passed}/{len(qa_validator.validation_results)}")
-        print(f"  Validation tokens: {qa_validator.total_tokens:,}")
+        logger.info(f"Passed: {passed}/{len(qa_validator.validation_results)}")
+        logger.info(f"Validation tokens: {qa_validator.total_tokens:,}")
 
     # Mark scenario as completed
     state_manager.mark_completed()
@@ -738,32 +750,40 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
 
     metrics_tracker.save_to_file(os.path.join(output_path, 'metrics.json'))
 
-    print(f"{'='*60}")
-    print(f"Scenario complete!")
-    print(f"Output saved to: {output_path}")
-    print(f"  - Markdown files: world-state and actor decisions")
-    print(f"  - costs.json: Cost breakdown")
-    print(f"  - metrics.json: Metrics data")
-    print(f"  - scenario-state.json: Execution state")
+    log_section(logger, "Scenario Complete!")
+    logger.info(f"Output saved to: {output_path}")
+    logger.info("  - Markdown files: world-state and actor decisions")
+    logger.info("  - costs.json: Cost breakdown")
+    logger.info("  - metrics.json: Metrics data")
+    logger.info("  - scenario-state.json: Execution state")
+    logger.info("  - scenario.log: Detailed execution log")
     if qa_validator.is_enabled():
-        print(f"  - validation-*.md: Validation reports")
-        print(f"  - validation-summary.md: Overall validation results")
-    print(f"{'='*60}\n")
+        logger.info("  - validation-*.md: Validation reports")
+        logger.info("  - validation-summary.md: Overall validation results")
 
 
-def branch_scenario(source_run_path: str, branch_at_turn: int) -> str:
+def branch_scenario(source_run_path: str, branch_at_turn: int, verbose: bool = False) -> str:
     """
     Create a new run branching from an existing run at a specific turn
 
     Args:
         source_run_path: Path to the source run directory
         branch_at_turn: Turn number to branch from
+        verbose: If True, enable DEBUG logging
 
     Returns:
         Path to the new branch run directory
     """
-    print(f"Branching from: {source_run_path}")
-    print(f"Branch point: Turn {branch_at_turn}")
+    # Set up simple logger for branching
+    logger = logging.getLogger("scenario_lab.branch")
+    logger.setLevel(logging.DEBUG if verbose else logging.INFO)
+    if not logger.handlers:
+        handler = logging.StreamHandler()
+        handler.setFormatter(logging.Formatter('%(levelname)s - %(message)s'))
+        logger.addHandler(handler)
+
+    logger.info(f"Branching from: {source_run_path}")
+    logger.info(f"Branch point: Turn {branch_at_turn}")
 
     # Load source state
     source_state_manager = ScenarioStateManager(source_run_path)
@@ -789,7 +809,7 @@ def branch_scenario(source_run_path: str, branch_at_turn: int) -> str:
     new_run_path = os.path.join(scenario_output_dir, f'run-{new_run_number:03d}')
 
     os.makedirs(new_run_path, exist_ok=True)
-    print(f"Creating branch: {new_run_path}")
+    logger.info(f"Creating branch: {new_run_path}")
 
     # Copy initial world state (turn 0)
     shutil.copy(
@@ -908,14 +928,14 @@ def branch_scenario(source_run_path: str, branch_at_turn: int) -> str:
         import json
         json.dump(branch_state, f, indent=2)
 
-    print(f"\n✓ Branch created successfully")
-    print(f"  Source: {source_run_path}")
-    print(f"  Branch: {new_run_path}")
-    print(f"  Branched at turn: {branch_at_turn}")
-    print(f"  Copied {branch_at_turn} turn(s) of history")
-    print(f"  Cost so far: ${total_cost:.4f} ({total_tokens:,} tokens)")
-    print(f"\nContinue from turn {branch_at_turn + 1} with:")
-    print(f"  python src/run_scenario.py --resume {new_run_path}\n")
+    logger.info("✓ Branch created successfully")
+    logger.info(f"  Source: {source_run_path}")
+    logger.info(f"  Branch: {new_run_path}")
+    logger.info(f"  Branched at turn: {branch_at_turn}")
+    logger.info(f"  Copied {branch_at_turn} turn(s) of history")
+    logger.info(f"  Cost so far: ${total_cost:.4f} ({total_tokens:,} tokens)")
+    logger.info(f"\nContinue from turn {branch_at_turn + 1} with:")
+    logger.info(f"  python src/run_scenario.py --resume {new_run_path}")
 
     return new_run_path
 
@@ -929,6 +949,7 @@ def main():
     parser.add_argument('--branch-at-turn', type=int, help='Turn to branch from (requires --branch-from)')
     parser.add_argument('--max-turns', type=int, help='Stop after this many turns')
     parser.add_argument('--credit-limit', type=float, help='Halt if cost exceeds this amount')
+    parser.add_argument('--verbose', '-v', action='store_true', help='Enable verbose (DEBUG) logging')
 
     args = parser.parse_args()
 
@@ -937,7 +958,7 @@ def main():
         if args.branch_at_turn is None:
             parser.error("--branch-at-turn is required when using --branch-from")
 
-        branch_scenario(args.branch_from, args.branch_at_turn)
+        branch_scenario(args.branch_from, args.branch_at_turn, verbose=args.verbose)
         return
 
     # Handle resume mode
@@ -947,7 +968,8 @@ def main():
             output_path=args.resume,
             max_turns=args.max_turns,
             credit_limit=args.credit_limit,
-            resume_mode=True
+            resume_mode=True,
+            verbose=args.verbose
         )
     else:
         if not args.scenario:
@@ -958,7 +980,8 @@ def main():
             output_path=args.output,
             max_turns=args.max_turns,
             credit_limit=args.credit_limit,
-            resume_mode=False
+            resume_mode=False,
+            verbose=args.verbose
         )
 
 
