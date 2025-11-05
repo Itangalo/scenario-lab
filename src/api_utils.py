@@ -9,7 +9,10 @@ Supports multiple LLM backends:
 import time
 import requests
 import os
+import logging
 from typing import Callable, Any, Optional
+
+logger = logging.getLogger(__name__)
 
 
 def api_call_with_retry(
@@ -18,7 +21,8 @@ def api_call_with_retry(
     initial_delay: float = 1.0,
     max_delay: float = 60.0,
     backoff_factor: float = 2.0,
-    retryable_status_codes: tuple = (502, 503, 504, 429)
+    retryable_status_codes: tuple = (502, 503, 504, 429),
+    context: Optional[dict] = None
 ) -> Any:
     """
     Execute an API call with exponential backoff retry logic
@@ -30,6 +34,7 @@ def api_call_with_retry(
         max_delay: Maximum delay in seconds between retries
         backoff_factor: Multiplier for delay after each retry
         retryable_status_codes: HTTP status codes that should trigger retries
+        context: Optional dict with context info (e.g., {'actor': 'name', 'turn': 1})
 
     Returns:
         The result from api_func
@@ -39,6 +44,11 @@ def api_call_with_retry(
     """
     delay = initial_delay
     last_exception = None
+    context_str = ""
+
+    if context:
+        context_parts = [f"{k}={v}" for k, v in context.items()]
+        context_str = f" [{', '.join(context_parts)}]"
 
     for attempt in range(max_retries + 1):
         try:
@@ -48,26 +58,74 @@ def api_call_with_retry(
             if isinstance(result, requests.Response):
                 result.raise_for_status()
 
+            # Log successful retry if this wasn't the first attempt
+            if attempt > 0:
+                logger.info(f"API call succeeded after {attempt} retries{context_str}")
+
             return result
 
         except requests.exceptions.HTTPError as e:
             last_exception = e
+            status_code = e.response.status_code if e.response is not None else None
+
+            # Log error details
+            error_details = {
+                'status_code': status_code,
+                'attempt': attempt + 1,
+                'max_retries': max_retries
+            }
+            if context:
+                error_details.update(context)
+
+            # Try to get response body for more context
+            response_body = ""
+            if e.response is not None:
+                try:
+                    response_body = e.response.text[:500]  # First 500 chars
+                except:
+                    pass
 
             # Check if this is a retryable error
-            if e.response is not None and e.response.status_code in retryable_status_codes:
+            if status_code in retryable_status_codes:
                 if attempt < max_retries:
+                    # Check for Retry-After header (rate limiting)
+                    retry_after = None
+                    if e.response is not None and hasattr(e.response, 'headers'):
+                        try:
+                            if 'Retry-After' in e.response.headers:
+                                retry_after = float(e.response.headers['Retry-After'])
+                                delay = min(retry_after, max_delay)
+                        except (ValueError, KeyError, TypeError):
+                            pass
+
                     # Retryable error - wait and retry
-                    print(f"⚠️  API error {e.response.status_code}: {str(e)}")
-                    print(f"   Retrying in {delay:.1f}s... (attempt {attempt + 1}/{max_retries})")
+                    logger.warning(
+                        f"API error {status_code}{context_str}: {str(e)[:200]}. "
+                        f"Retrying in {delay:.1f}s (attempt {attempt + 1}/{max_retries})"
+                    )
+                    logger.debug(f"Response body: {response_body}")
+
                     time.sleep(delay)
-                    delay = min(delay * backoff_factor, max_delay)
+
+                    # Only increase delay if we didn't get Retry-After header
+                    if retry_after is None:
+                        delay = min(delay * backoff_factor, max_delay)
+
                     continue
                 else:
                     # Out of retries
-                    print(f"❌ API error {e.response.status_code} after {max_retries} retries")
+                    logger.error(
+                        f"API error {status_code}{context_str} after {max_retries} retries. "
+                        f"Error: {str(e)[:200]}"
+                    )
+                    logger.debug(f"Final response body: {response_body}")
                     raise
             else:
                 # Non-retryable error - fail immediately
+                logger.error(
+                    f"Non-retryable API error {status_code}{context_str}: {str(e)[:200]}"
+                )
+                logger.debug(f"Response body: {response_body}")
                 raise
 
         except requests.exceptions.RequestException as e:
@@ -75,13 +133,17 @@ def api_call_with_retry(
             last_exception = e
 
             if attempt < max_retries:
-                print(f"⚠️  Network error: {str(e)}")
-                print(f"   Retrying in {delay:.1f}s... (attempt {attempt + 1}/{max_retries})")
+                logger.warning(
+                    f"Network error{context_str}: {str(e)[:200]}. "
+                    f"Retrying in {delay:.1f}s (attempt {attempt + 1}/{max_retries})"
+                )
                 time.sleep(delay)
                 delay = min(delay * backoff_factor, max_delay)
                 continue
             else:
-                print(f"❌ Network error after {max_retries} retries")
+                logger.error(
+                    f"Network error{context_str} after {max_retries} retries: {str(e)[:200]}"
+                )
                 raise
 
     # Should never reach here, but just in case
@@ -93,7 +155,8 @@ def make_openrouter_call(
     url: str,
     headers: dict,
     payload: dict,
-    max_retries: int = 3
+    max_retries: int = 3,
+    context: Optional[dict] = None
 ) -> requests.Response:
     """
     Make an OpenRouter API call with automatic retry logic
@@ -103,6 +166,7 @@ def make_openrouter_call(
         headers: Request headers
         payload: Request payload
         max_retries: Maximum number of retry attempts
+        context: Optional dict with context info for error logging
 
     Returns:
         requests.Response object with successful response
@@ -113,7 +177,7 @@ def make_openrouter_call(
     def api_call():
         return requests.post(url, headers=headers, json=payload, timeout=120)
 
-    return api_call_with_retry(api_call, max_retries=max_retries)
+    return api_call_with_retry(api_call, max_retries=max_retries, context=context)
 
 
 def is_local_model(model: str) -> bool:
@@ -133,7 +197,8 @@ def make_ollama_call(
     model: str,
     messages: list,
     max_retries: int = 3,
-    base_url: Optional[str] = None
+    base_url: Optional[str] = None,
+    context: Optional[dict] = None
 ) -> dict:
     """
     Make a call to local Ollama instance
@@ -143,6 +208,7 @@ def make_ollama_call(
         messages: List of message dicts with 'role' and 'content'
         max_retries: Maximum number of retry attempts
         base_url: Ollama API URL (default: http://localhost:11434)
+        context: Optional dict with context info for error logging
 
     Returns:
         Response dict with 'message' and 'usage' keys
@@ -163,7 +229,7 @@ def make_ollama_call(
     def api_call():
         return requests.post(url, json=payload, timeout=300)
 
-    response = api_call_with_retry(api_call, max_retries=max_retries)
+    response = api_call_with_retry(api_call, max_retries=max_retries, context=context)
     return response.json()
 
 
@@ -171,7 +237,8 @@ def make_llm_call(
     model: str,
     messages: list,
     api_key: Optional[str] = None,
-    max_retries: int = 3
+    max_retries: int = 3,
+    context: Optional[dict] = None
 ) -> tuple[str, int]:
     """
     Make an LLM API call using the appropriate backend
@@ -185,6 +252,7 @@ def make_llm_call(
         messages: List of message dicts with 'role' and 'content'
         api_key: API key for cloud providers (not needed for local)
         max_retries: Maximum number of retry attempts
+        context: Optional dict with context info (e.g., {'actor': 'name', 'turn': 1, 'operation': 'decision'})
 
     Returns:
         Tuple of (response_text, tokens_used)
@@ -192,11 +260,16 @@ def make_llm_call(
     Raises:
         requests.exceptions.HTTPError: If all retries fail
     """
+    # Add model to context for better error tracking
+    call_context = {'model': model}
+    if context:
+        call_context.update(context)
+
     if is_local_model(model):
         # Strip the "ollama/" or "local/" prefix
         local_model = model.split('/', 1)[1]
 
-        result = make_ollama_call(local_model, messages, max_retries)
+        result = make_ollama_call(local_model, messages, max_retries, context=call_context)
 
         response_text = result['choices'][0]['message']['content']
         tokens_used = result.get('usage', {}).get('total_tokens', 0)
@@ -217,7 +290,7 @@ def make_llm_call(
             "messages": messages
         }
 
-        response = make_openrouter_call(url, headers, payload, max_retries)
+        response = make_openrouter_call(url, headers, payload, max_retries, context=call_context)
         data = response.json()
 
         response_text = data['choices'][0]['message']['content']
