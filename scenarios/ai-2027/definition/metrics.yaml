@@ -1,0 +1,157 @@
+metrics:
+  - name: ai_capability_level
+    description: "Current level of AI capabilities (0-10 scale from Agent-0 to superintelligence)"
+    type: continuous
+    range: [0, 10]
+    extraction:
+      type: keyword
+      keywords:
+        - "Agent-0"
+        - "Agent-1"
+        - "Agent-2"
+        - "Agent-3"
+        - "Agent-4"
+        - "Agent-5"
+        - "superhuman"
+        - "autonomous"
+        - "capabilities"
+    warning_threshold: 7.0
+    critical_threshold: 9.0
+
+  - name: alignment_progress
+    description: "Progress on AI alignment and safety research (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    extraction:
+      type: keyword
+      keywords:
+        - "alignment"
+        - "interpretability"
+        - "safety measures"
+        - "control mechanisms"
+        - "IDA"
+        - "mechanistic interpretability"
+    warning_threshold: 3.0
+    critical_threshold: 2.0
+
+  - name: us_china_cooperation
+    description: "Level of US-China cooperation on AI (0=conflict, 5=neutral, 10=full cooperation)"
+    type: continuous
+    range: [0, 10]
+    extraction:
+      type: keyword
+      keywords:
+        - "cooperation"
+        - "treaty"
+        - "agreement"
+        - "competition"
+        - "race"
+        - "conflict"
+        - "espionage"
+    warning_threshold: 3.0
+    critical_threshold: 1.0
+
+  - name: regulatory_stringency
+    description: "Strength of AI governance and regulation (0=none, 10=comprehensive)"
+    type: continuous
+    range: [0, 10]
+    extraction:
+      type: keyword
+      keywords:
+        - "regulation"
+        - "oversight"
+        - "governance"
+        - "policy"
+        - "restrictions"
+        - "monitoring"
+        - "compliance"
+
+  - name: public_ai_risk_awareness
+    description: "Public awareness and concern about AI risks (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    extraction:
+      type: keyword
+      keywords:
+        - "public concern"
+        - "awareness"
+        - "demonstrations"
+        - "protests"
+        - "public debate"
+        - "media coverage"
+
+  - name: misalignment_risk_level
+    description: "Assessed risk of AI misalignment causing catastrophe (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    extraction:
+      type: keyword
+      keywords:
+        - "misalignment"
+        - "loss of control"
+        - "unaligned"
+        - "deceptive"
+        - "mesa-optimizer"
+        - "failure mode"
+    warning_threshold: 6.0
+    critical_threshold: 8.0
+
+  - name: compute_scale
+    description: "Training compute scale in orders of magnitude (25-32 representing 10^25 to 10^32 FLOP)"
+    type: continuous
+    range: [25, 32]
+    extraction:
+      type: keyword
+      keywords:
+        - "10^"
+        - "FLOP"
+        - "compute"
+        - "training run"
+        - "parameters"
+
+  - name: economic_automation_level
+    description: "Degree of economic automation by AI (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    extraction:
+      type: keyword
+      keywords:
+        - "automation"
+        - "robot economy"
+        - "doubling time"
+        - "employment"
+        - "AI workers"
+
+  - name: human_control_level
+    description: "Degree of meaningful human control over AI systems (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    extraction:
+      type: keyword
+      keywords:
+        - "human oversight"
+        - "human control"
+        - "autonomy"
+        - "supervision"
+        - "human in the loop"
+    warning_threshold: 4.0
+    critical_threshold: 2.0
+
+  - name: scenario_outcome_trajectory
+    description: "Which ending the scenario appears headed toward"
+    type: categorical
+    categories:
+      - "race_ending"
+      - "slowdown_ending"
+      - "uncertain"
+    extraction:
+      type: keyword
+      keywords:
+        - "race"
+        - "slowdown"
+        - "pause"
+        - "treaty"
+        - "takeover"
+        - "coordination"
+
+export_format: "json"
