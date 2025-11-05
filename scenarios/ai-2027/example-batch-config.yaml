@@ -1,0 +1,43 @@
+# Example Batch Configuration for AI 2027 Scenario
+# This configuration runs multiple variations to explore different outcomes
+
+experiment_name: "AI 2027 Model Comparison Study"
+description: |
+  Compare how different LLM models affect scenario outcomes in the AI 2027 scenario.
+  Tests whether model choice significantly impacts decisions and final trajectories.
+
+base_scenario: "scenarios/ai-2027/definition"
+
+# Number of runs per variation (each run is 66 turns = expensive!)
+runs_per_variation: 3
+
+# Parallel execution (2-3 recommended for API rate limits)
+max_parallel: 2
+
+# Budget controls (IMPORTANT: This scenario is expensive!)
+budget_limit: 100.00        # Total budget for entire batch
+cost_per_run_limit: 10.00   # Halt individual runs exceeding this
+
+# Variations to test
+variations:
+  # Compare models for OpenBrain CEO (most influential actor)
+  - type: "actor_model"
+    actor: "openbrain-ceo"
+    values:
+      - "openai/gpt-4o"        # High-quality, expensive
+      - "openai/gpt-4o-mini"   # Good quality, cost-efficient
+
+  # Compare models for US President
+  - type: "actor_model"
+    actor: "us-president"
+    values:
+      - "openai/gpt-4o"
+      - "openai/gpt-4o-mini"
+
+# This creates 2×2 = 4 variations × 3 runs = 12 total runs
+# Estimated cost: ~$60-120 depending on model performance
+
+output_dir: "scenarios/ai-2027/experiments/model-comparison"
+
+# Recommended: Start with dry-run to see cost estimates
+# python src/batch_runner.py scenarios/ai-2027/example-batch-config.yaml --dry-run

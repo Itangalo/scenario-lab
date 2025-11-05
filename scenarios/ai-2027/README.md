@@ -12,6 +12,22 @@ This scenario is based on "AI 2027" by Daniel Kokotajlo, Scott Alexander, Thomas
 - Economic and social impacts of increasing automation
 - Critical decision points that determine whether humanity maintains control
 
+## Scenario Versions
+
+Two versions are available:
+
+### Premium Version (`definition/`)
+- Uses `gpt-4o` for most actors
+- Highest quality outputs
+- **Cost:** ~$8-12 per full run (66 turns)
+- **Best for:** Final research, publications, demonstrations
+
+### Budget Version (`definition-budget/`)
+- Uses `gpt-4o-mini` for 4 of 7 actors (57%)
+- **Cost:** ~$5-7 per full run (40% savings)
+- **Best for:** Exploratory runs, batch analysis, testing
+- See `definition-budget/README.md` for details
+
 ## Running the Scenario
 
 ### Basic Run
@@ -19,7 +35,11 @@ This scenario is based on "AI 2027" by Daniel Kokotajlo, Scott Alexander, Thomas
 From the repository root:
 
 ```bash
+# Premium version
 python src/run_scenario.py scenarios/ai-2027/definition/scenario.yaml
+
+# Budget version (recommended for initial exploration)
+python src/run_scenario.py scenarios/ai-2027/definition-budget/scenario.yaml
 ```
 
 This will:
@@ -172,10 +192,60 @@ When analyzing runs, consider:
 
 ## Batch Analysis
 
-For statistical analysis across multiple runs:
+For statistical analysis across multiple runs, use the batch execution system.
+
+### Create Batch Configuration (Interactive Wizard)
+
+The easiest way to create a batch configuration:
 
 ```bash
-python src/batch_runner.py scenarios/ai-2027/definition/scenario.yaml --runs 100
+python src/create_batch_config.py --interactive
+```
+
+This wizard will guide you through:
+- Selecting the AI 2027 scenario
+- Choosing which actors/models to vary
+- Setting budget limits
+- Configuring parallel execution
+
+### Using Example Batch Config
+
+A pre-configured example is provided:
+
+```bash
+# Preview costs and setup (highly recommended!)
+python src/batch_runner.py scenarios/ai-2027/example-batch-config.yaml --dry-run
+
+# Run the batch (WARNING: This scenario is expensive - 66 turns × 7 actors)
+python src/batch_runner.py scenarios/ai-2027/example-batch-config.yaml
+```
+
+The example config runs 12 variations (4 model combinations × 3 runs) comparing:
+- `gpt-4o` vs `gpt-4o-mini` for OpenBrain CEO
+- `gpt-4o` vs `gpt-4o-mini` for US President
+
+**Estimated cost:** $60-120 per batch, depending on model performance.
+
+### Cost Management
+
+This scenario is particularly expensive due to:
+- 66 turns (5.5 years of monthly progression)
+- 7 actors per turn
+- Long context as scenario progresses
+
+**Recommendations:**
+- Always use `--dry-run` first to preview costs
+- Set conservative budget limits (e.g., `budget_limit: 50.00`)
+- Consider using `gpt-4o-mini` for most actors
+- Test with `--max-turns 12` before full runs
+- Use response caching (30-70% savings on repeated runs)
+
+### Analyze Results
+
+After batch completion:
+
+```bash
+python src/batch_analyzer.py scenarios/ai-2027/experiments/model-comparison/ --report
 ```
 
 This enables:
@@ -183,6 +253,7 @@ This enables:
 - Finding critical factors that determine outcomes
 - Testing robustness of different policies
 - Sensitivity analysis on actor behaviors
+- Model comparison (do cheaper models produce similar results?)
 
 ## Credits
 
