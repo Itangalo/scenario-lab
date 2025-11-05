@@ -19,6 +19,7 @@ from batch_progress_tracker import BatchProgressTracker
 from batch_parallel_executor import BatchParallelExecutor, RateLimitManager
 from run_scenario import run_scenario
 from error_handler import ErrorHandler, classify_error, ErrorSeverity
+from response_cache import get_global_cache
 
 
 class BatchRunner:
@@ -670,6 +671,16 @@ class BatchRunner:
         if summary['runs_completed'] > 0:
             avg = self.cost_manager.get_average_cost_per_run()
             self.logger.info(f"💰 Average per run: ${avg:.3f}")
+
+        # Show cache statistics if caching was used
+        cache = get_global_cache()
+        cache_stats = cache.get_stats()
+        if cache_stats.total_requests > 0:
+            self.logger.info(f"\n💾 Cache Performance:")
+            self.logger.info(f"   Requests: {cache_stats.total_requests}")
+            self.logger.info(f"   Hit rate: {cache_stats.hit_rate:.1f}%")
+            self.logger.info(f"   Tokens saved: {cache_stats.tokens_saved:,}")
+            self.logger.info(f"   Cost saved: ${cache_stats.estimated_cost_saved:.4f}")
 
         self.logger.info(f"\n📁 Results saved to: {self.output_dir}")
         self.logger.info(f"📄 Summary: {summary_file}")

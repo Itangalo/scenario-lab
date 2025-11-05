@@ -5,14 +5,48 @@ Supports multiple LLM backends:
 - OpenRouter (cloud API)
 - Ollama (local models)
 - llama.cpp (local models)
+
+Features:
+- Automatic retry with exponential backoff
+- Response caching to reduce costs
+- Connection pooling for better performance
 """
 import time
 import requests
 import os
 import logging
 from typing import Callable, Any, Optional
+from response_cache import get_global_cache, cached_llm_call
 
 logger = logging.getLogger(__name__)
+
+# Global session for connection pooling
+_http_session: Optional[requests.Session] = None
+
+
+def get_http_session() -> requests.Session:
+    """
+    Get or create global HTTP session with connection pooling
+
+    Connection pooling improves performance by reusing TCP connections
+    """
+    global _http_session
+
+    if _http_session is None:
+        _http_session = requests.Session()
+
+        # Configure connection pooling
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=10,  # Number of connection pools
+            pool_maxsize=20,      # Connections per pool
+            max_retries=0         # We handle retries manually
+        )
+        _http_session.mount('http://', adapter)
+        _http_session.mount('https://', adapter)
+
+        logger.info("HTTP session with connection pooling initialized")
+
+    return _http_session
 
 
 def api_call_with_retry(
@@ -159,7 +193,7 @@ def make_openrouter_call(
     context: Optional[dict] = None
 ) -> requests.Response:
     """
-    Make an OpenRouter API call with automatic retry logic
+    Make an OpenRouter API call with automatic retry logic and connection pooling
 
     Args:
         url: API endpoint URL
@@ -174,8 +208,10 @@ def make_openrouter_call(
     Raises:
         requests.exceptions.HTTPError: If all retries fail
     """
+    session = get_http_session()
+
     def api_call():
-        return requests.post(url, headers=headers, json=payload, timeout=120)
+        return session.post(url, headers=headers, json=payload, timeout=120)
 
     return api_call_with_retry(api_call, max_retries=max_retries, context=context)
 
@@ -201,7 +237,7 @@ def make_ollama_call(
     context: Optional[dict] = None
 ) -> dict:
     """
-    Make a call to local Ollama instance
+    Make a call to local Ollama instance with connection pooling
 
     Args:
         model: Ollama model name (e.g., "llama3.1:70b", "qwen2.5:72b")
@@ -220,6 +256,7 @@ def make_ollama_call(
         base_url = os.environ.get('OLLAMA_BASE_URL', 'http://localhost:11434')
 
     url = f"{base_url}/v1/chat/completions"
+    session = get_http_session()
 
     payload = {
         "model": model,
@@ -227,7 +264,7 @@ def make_ollama_call(
     }
 
     def api_call():
-        return requests.post(url, json=payload, timeout=300)
+        return session.post(url, json=payload, timeout=300)
 
     response = api_call_with_retry(api_call, max_retries=max_retries, context=context)
     return response.json()
@@ -238,14 +275,20 @@ def make_llm_call(
     messages: list,
     api_key: Optional[str] = None,
     max_retries: int = 3,
-    context: Optional[dict] = None
+    context: Optional[dict] = None,
+    use_cache: bool = True
 ) -> tuple[str, int]:
     """
-    Make an LLM API call using the appropriate backend
+    Make an LLM API call using the appropriate backend with optional caching
 
     Automatically routes to:
     - Ollama for models starting with "ollama/" or "local/"
     - OpenRouter for all other models
+
+    Features:
+    - Response caching to reduce costs
+    - Connection pooling for better performance
+    - Automatic retry with exponential backoff
 
     Args:
         model: Model identifier (e.g., "openai/gpt-4o-mini", "ollama/llama3.1:70b")
@@ -253,6 +296,7 @@ def make_llm_call(
         api_key: API key for cloud providers (not needed for local)
         max_retries: Maximum number of retry attempts
         context: Optional dict with context info (e.g., {'actor': 'name', 'turn': 1, 'operation': 'decision'})
+        use_cache: Whether to use response caching (default: True)
 
     Returns:
         Tuple of (response_text, tokens_used)
@@ -260,40 +304,66 @@ def make_llm_call(
     Raises:
         requests.exceptions.HTTPError: If all retries fail
     """
+    import json
+
     # Add model to context for better error tracking
     call_context = {'model': model}
     if context:
         call_context.update(context)
 
-    if is_local_model(model):
-        # Strip the "ollama/" or "local/" prefix
-        local_model = model.split('/', 1)[1]
+    # Create cache key from messages (stable JSON representation)
+    messages_str = json.dumps(messages, sort_keys=True)
 
-        result = make_ollama_call(local_model, messages, max_retries, context=call_context)
+    # Try cache first if enabled
+    if use_cache:
+        cache = get_global_cache()
+        cached_result = cache.get(model, messages_str)
+        if cached_result is not None:
+            logger.debug(f"Cache hit for {model}: {len(messages)} messages")
+            return cached_result
 
-        response_text = result['choices'][0]['message']['content']
-        tokens_used = result.get('usage', {}).get('total_tokens', 0)
+    # Cache miss or caching disabled - make actual API call
+    def make_actual_call():
+        if is_local_model(model):
+            # Strip the "ollama/" or "local/" prefix
+            local_model = model.split('/', 1)[1]
 
-        return response_text, tokens_used
+            result = make_ollama_call(local_model, messages, max_retries, context=call_context)
 
-    else:
-        # Use OpenRouter for cloud models
-        url = "https://openrouter.ai/api/v1/chat/completions"
+            response_text = result['choices'][0]['message']['content']
+            tokens_used = result.get('usage', {}).get('total_tokens', 0)
 
-        headers = {
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json"
-        }
+            return response_text, tokens_used
 
-        payload = {
-            "model": model,
-            "messages": messages
-        }
+        else:
+            # Use OpenRouter for cloud models
+            url = "https://openrouter.ai/api/v1/chat/completions"
 
-        response = make_openrouter_call(url, headers, payload, max_retries, context=call_context)
-        data = response.json()
+            headers = {
+                "Authorization": f"Bearer {api_key}",
+                "Content-Type": "application/json"
+            }
 
-        response_text = data['choices'][0]['message']['content']
-        tokens_used = data.get('usage', {}).get('total_tokens', 0)
+            payload = {
+                "model": model,
+                "messages": messages
+            }
 
-        return response_text, tokens_used
+            response = make_openrouter_call(url, headers, payload, max_retries, context=call_context)
+            data = response.json()
+
+            response_text = data['choices'][0]['message']['content']
+            tokens_used = data.get('usage', {}).get('total_tokens', 0)
+
+            return response_text, tokens_used
+
+    # Make call
+    response_text, tokens_used = make_actual_call()
+
+    # Store in cache if enabled
+    if use_cache:
+        cache = get_global_cache()
+        cache.put(model, messages_str, response_text, tokens_used)
+        logger.debug(f"Cached response for {model}: {len(messages)} messages")
+
+    return response_text, tokens_used

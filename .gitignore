@@ -60,6 +60,10 @@ tmp/
 temp/
 *.tmp
 
+# Cache directories
+.cache/
+*.cache
+
 # Personal and temporary notes
 notes/*
 !notes/.gitkeep
