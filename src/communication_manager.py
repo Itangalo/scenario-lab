@@ -260,11 +260,12 @@ class CommunicationManager:
             # Generate markdown
             md = self.channel_to_markdown(channel, scenario_name)
 
-            # Determine filename
+            # Determine filename (sanitize participant names for filesystem)
+            safe_participants = [p.replace('/', '-').replace('\\', '-') for p in channel.participants]
             if channel.channel_type == ChannelType.BILATERAL:
-                filename = f"bilateral-{'-'.join(channel.participants)}-{turn:03d}.md"
+                filename = f"bilateral-{'-'.join(safe_participants)}-{turn:03d}.md"
             else:  # COALITION
-                filename = f"coalition-{'-'.join(channel.participants)}-{turn:03d}.md"
+                filename = f"coalition-{'-'.join(safe_participants)}-{turn:03d}.md"
 
             # Write file
             filepath = os.path.join(output_path, filename)
