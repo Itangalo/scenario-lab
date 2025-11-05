@@ -1,0 +1,106 @@
+name: "AI 2027: Race to Superintelligence"
+
+description: |
+  A detailed scenario exploring the development of advanced AI from mid-2025 through 2030,
+  based on the "AI 2027" scenario by Kokotajlo et al. This scenario models the rapid progression
+  from early "stumbling" AI agents to potentially superintelligent systems, examining decisions
+  made by AI companies, governments, and alignment researchers during a critical period of
+  technological acceleration.
+
+initial_world_state: |
+  # Mid-2025: The Age of Stumbling Agents Begins
+
+  OpenBrain (the leading AI company) has just deployed Agent-0, marking a significant milestone
+  in AI capabilities. Agent-0 is a "stumbling agent" - capable of autonomously performing complex
+  tasks but plagued by reliability issues:
+
+  - Can code, research, and complete multi-step tasks autonomously
+  - Suffers from "neuralese recurrence" - periodic lapses into incomprehensible outputs
+  - Memory limitations cause context confusion after extended operation
+  - Requires human supervision and correction
+
+  ## Current State of AI Development
+
+  **OpenBrain (US):**
+  - Market leader in frontier AI development
+  - Just released Agent-0 with 200B parameters
+  - Using 10^27 FLOP of compute for training
+  - Stock price soaring on Agent-0 announcement
+  - Beginning to scale compute toward 10^28 FLOP
+
+  **DeepCent (China):**
+  - Primary Chinese competitor, ~12 months behind OpenBrain
+  - Developing similar agent architectures
+  - Access to growing compute infrastructure
+  - Strong government support and coordination
+
+  **Alignment Research:**
+  - Small teams at major labs working on safety
+  - Mechanistic interpretability showing promise but limited success
+  - Debate over whether to slow down or continue scaling
+  - Growing concern about loss of control as agents become more capable
+
+  ## Economic and Political Context
+
+  - AI capabilities advancing faster than most predicted
+  - Limited regulatory framework for advanced AI systems
+  - US-China technology competition intensifying
+  - Public awareness of AI risks growing but not yet mainstream
+  - Compute prices declining, making larger training runs feasible
+
+  ## Key Tensions
+
+  1. **Speed vs. Safety:** Pressure to scale quickly vs. alignment concerns
+  2. **Competition:** US-China race dynamics affecting decision-making
+  3. **Control:** Questions about maintaining human oversight as systems improve
+  4. **Regulation:** Debate over appropriate government involvement
+
+  The decisions made in the coming months will shape whether humanity navigates this transition
+  safely or loses control to misaligned superintelligent systems.
+
+turn_duration: "1 month"
+
+turns: 66
+
+world_state_model: "openai/gpt-4o-mini"
+
+context_window_size: 3
+
+enable_bilateral_communication: true
+
+enable_coalition_formation: true
+
+actors:
+  - openbrain-ceo
+  - openbrain-alignment-lead
+  - us-president
+  - us-ai-advisor
+  - deepcent-ceo
+  - ccp-secretary
+  - independent-alignment-researcher
+
+background_information: |
+  This scenario is based on "AI 2027" by Daniel Kokotajlo, Scott Alexander, Thomas Larsen,
+  Eli Lifland, and Romeo Dean. The scenario presents a detailed month-by-month progression
+  showing how AI capabilities might advance rapidly from 2025-2030.
+
+  Key technical concepts:
+  - **Agent-N**: Successive generations of AI agents with increasing capabilities
+  - **Neuralese recurrence**: A failure mode where models lapse into incomprehensible outputs
+  - **IDA (Iterated Distillation and Amplification)**: An alignment technique
+  - **Mechanistic interpretability**: Understanding neural network internals
+  - **Superhuman coder**: AI that codes better than the best human programmers
+  - **Robot economy doubling time**: How quickly AI-driven automation can expand
+
+  The scenario can branch into different endings:
+  - **Race ending**: Misaligned AI takeover
+  - **Slowdown ending**: Humans maintain control through careful coordination
+
+schema_version: "1.0"
+author: "Based on work by Kokotajlo, Alexander, Larsen, Lifland, and Dean"
+tags:
+  - ai-governance
+  - ai-safety
+  - us-china-competition
+  - alignment
+  - superintelligence

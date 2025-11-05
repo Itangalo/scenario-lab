@@ -8,6 +8,8 @@ from typing import Dict, Any, List
 from dotenv import load_dotenv
 from api_utils import make_llm_call
 from response_parser import parse_actor_decision, parse_bilateral_decision, parse_coalition_decision, parse_coalition_response
+from schemas import load_actor_config, ActorConfig
+from pydantic import ValidationError
 
 load_dotenv()
 
@@ -561,10 +563,56 @@ Remember: This is turn {turn} of {total_turns}. Your goals can evolve based on e
 
 
 def load_actor(scenario_path: str, actor_short_name: str, scenario_system_prompt: str = "") -> Actor:
-    """Load an actor from YAML file"""
+    """
+    Load and validate an actor from YAML file
+
+    Args:
+        scenario_path: Path to scenario directory
+        actor_short_name: Actor identifier (e.g., 'regulator', 'tech-company')
+        scenario_system_prompt: System prompt from scenario configuration
+
+    Returns:
+        Validated Actor instance
+
+    Raises:
+        FileNotFoundError: If actor YAML file not found
+        ValidationError: If actor configuration is invalid
+    """
     actor_file = os.path.join(scenario_path, 'actors', f'{actor_short_name}.yaml')
 
-    with open(actor_file, 'r') as f:
-        actor_data = yaml.safe_load(f)
+    if not os.path.exists(actor_file):
+        raise FileNotFoundError(
+            f"Actor file not found: {actor_file}\n"
+            f"Expected {actor_short_name}.yaml in {os.path.join(scenario_path, 'actors')}"
+        )
 
-    return Actor(actor_data, scenario_system_prompt)
+    try:
+        with open(actor_file, 'r') as f:
+            yaml_data = yaml.safe_load(f)
+
+        # Validate using Pydantic schema
+        actor_config = load_actor_config(yaml_data)
+
+        # Convert back to dict for backward compatibility with Actor class
+        actor_data = actor_config.dict()
+
+        return Actor(actor_data, scenario_system_prompt)
+
+    except ValidationError as e:
+        # Format Pydantic validation errors nicely
+        error_messages = []
+        for error in e.errors():
+            field = ".".join(str(x) for x in error['loc'])
+            message = error['msg']
+            error_messages.append(f"  - {field}: {message}")
+
+        error_text = (
+            f"Invalid actor configuration in {actor_file}:\n" +
+            "\n".join(error_messages)
+        )
+        raise ValueError(error_text) from e
+
+    except yaml.YAMLError as e:
+        raise ValueError(
+            f"Invalid YAML syntax in {actor_file}:\n{str(e)}"
+        )

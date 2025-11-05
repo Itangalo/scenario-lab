@@ -8,7 +8,156 @@ import os
 # Add src directory to path
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
 
-from markdown_utils import remove_duplicate_sections, clean_markdown_formatting, validate_markdown_structure
+from markdown_utils import (
+    remove_duplicate_sections,
+    clean_markdown_formatting,
+    validate_markdown_structure,
+    text_similarity,
+    extract_section_content,
+    detect_content_duplication,
+    remove_embedded_duplicates
+)
+
+
+class TestTextSimilarity(unittest.TestCase):
+    """Test text similarity calculation"""
+
+    def test_identical_text(self):
+        """Test that identical texts have similarity of 1.0"""
+        text = "This is a test string"
+        self.assertEqual(text_similarity(text, text), 1.0)
+
+    def test_different_text(self):
+        """Test that different texts have low similarity"""
+        text1 = "This is a test"
+        text2 = "Completely different content"
+        similarity = text_similarity(text1, text2)
+        self.assertLess(similarity, 0.3)
+
+    def test_whitespace_normalization(self):
+        """Test that whitespace differences don't affect similarity"""
+        text1 = "This is    a\n\ntest"
+        text2 = "This is a test"
+        self.assertEqual(text_similarity(text1, text2), 1.0)
+
+
+class TestExtractSectionContent(unittest.TestCase):
+    """Test section content extraction"""
+
+    def test_extract_reasoning_section(self):
+        """Test extracting reasoning section"""
+        markdown = """# Actor - Turn 1
+
+## Reasoning
+
+This is my reasoning for the action.
+It spans multiple lines.
+
+## Action
+
+This is the action.
+"""
+        content = extract_section_content(markdown, "Reasoning")
+        self.assertIn("This is my reasoning", content)
+        self.assertNotIn("## Action", content)
+
+    def test_extract_action_section(self):
+        """Test extracting action section"""
+        markdown = """## Reasoning
+
+Some reasoning.
+
+## Action
+
+I will propose new regulations.
+"""
+        content = extract_section_content(markdown, "Action")
+        self.assertIn("propose new regulations", content)
+        self.assertNotIn("reasoning", content.lower())
+
+    def test_extract_nonexistent_section(self):
+        """Test extracting section that doesn't exist"""
+        markdown = """## Reasoning
+
+Some content.
+"""
+        content = extract_section_content(markdown, "Action")
+        self.assertEqual(content, "")
+
+
+class TestDetectContentDuplication(unittest.TestCase):
+    """Test content duplication detection"""
+
+    def test_no_duplication(self):
+        """Test detecting no duplication when sections are different"""
+        markdown = """## Current Goals
+
+Long-term: Achieve regulatory compliance
+
+## Reasoning
+
+Based on the current situation, I believe we should act quickly.
+
+## Action
+
+I will submit the draft policy to the committee.
+"""
+        result = detect_content_duplication(markdown)
+        self.assertFalse(result['has_duplication'])
+
+    def test_action_contains_reasoning(self):
+        """Test detecting when ACTION contains REASONING content"""
+        reasoning = "Based on the current situation, I believe we should act quickly to address the regulatory gap."
+        markdown = f"""## Reasoning
+
+{reasoning}
+
+## Action
+
+{reasoning}
+
+I will submit the draft policy.
+"""
+        result = detect_content_duplication(markdown)
+        self.assertTrue(result['has_duplication'])
+        self.assertTrue(result['action_contains_reasoning'])
+
+
+class TestRemoveEmbeddedDuplicates(unittest.TestCase):
+    """Test removing embedded content duplication"""
+
+    def test_extract_action_from_full_response(self):
+        """Test extracting just the action when ACTION contains everything"""
+        markdown = """## Reasoning
+
+I believe we should act quickly to address the gap.
+
+## Action
+
+**REASONING:**
+I believe we should act quickly to address the gap.
+
+**ACTION:**
+I will submit the draft policy to the committee for review.
+"""
+        cleaned = remove_embedded_duplicates(markdown)
+
+        # ACTION section should be cleaned to contain only the action
+        action_content = extract_section_content(cleaned, "Action")
+        self.assertIn("submit the draft policy", action_content)
+
+    def test_no_change_when_no_duplication(self):
+        """Test that content without duplication is unchanged"""
+        markdown = """## Reasoning
+
+Reasoning here.
+
+## Action
+
+Action here.
+"""
+        cleaned = remove_embedded_duplicates(markdown)
+        self.assertEqual(markdown, cleaned)
 
 
 class TestRemoveDuplicateSections(unittest.TestCase):

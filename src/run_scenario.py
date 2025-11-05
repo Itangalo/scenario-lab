@@ -19,14 +19,60 @@ from communication_manager import CommunicationManager, ChannelType
 from context_manager import ContextManager
 from qa_validator import QAValidator
 from logging_config import setup_run_logging, log_section, log_subsection, log_cost, log_actor_decision, log_world_update, log_validation, log_error_with_context
+from schemas import load_scenario_config, load_actor_config, ScenarioConfig, ActorConfig
+from pydantic import ValidationError
 
 
-def load_scenario(scenario_path: str):
-    """Load scenario definition from YAML"""
+def load_scenario(scenario_path: str) -> dict:
+    """
+    Load and validate scenario definition from YAML
+
+    Args:
+        scenario_path: Path to scenario directory
+
+    Returns:
+        Validated scenario configuration as dict
+
+    Raises:
+        FileNotFoundError: If scenario.yaml not found
+        ValidationError: If scenario configuration is invalid
+    """
     scenario_file = os.path.join(scenario_path, 'scenario.yaml')
 
-    with open(scenario_file, 'r') as f:
-        return yaml.safe_load(f)
+    if not os.path.exists(scenario_file):
+        raise FileNotFoundError(
+            f"Scenario file not found: {scenario_file}\n"
+            f"Expected scenario.yaml in {scenario_path}"
+        )
+
+    try:
+        with open(scenario_file, 'r') as f:
+            yaml_data = yaml.safe_load(f)
+
+        # Validate using Pydantic schema
+        scenario_config = load_scenario_config(yaml_data)
+
+        # Return as dict for backward compatibility
+        return scenario_config.dict()
+
+    except ValidationError as e:
+        # Format Pydantic validation errors nicely
+        error_messages = []
+        for error in e.errors():
+            field = ".".join(str(x) for x in error['loc'])
+            message = error['msg']
+            error_messages.append(f"  - {field}: {message}")
+
+        error_text = (
+            f"Invalid scenario configuration in {scenario_file}:\n" +
+            "\n".join(error_messages)
+        )
+        raise ValueError(error_text) from e
+
+    except yaml.YAMLError as e:
+        raise ValueError(
+            f"Invalid YAML syntax in {scenario_file}:\n{str(e)}"
+        )
 
 
 def find_next_run_number(scenario_output_dir: str) -> int:

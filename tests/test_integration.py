@@ -503,5 +503,262 @@ constraints: []
         self.assertIn('branched_from', branch_state['execution_metadata'])
 
 
+class TestBilateralCommunications(unittest.TestCase):
+    """Test bilateral communication workflow"""
+
+    def setUp(self):
+        """Set up test fixtures"""
+        self.test_dir = tempfile.mkdtemp()
+        self.mock_llm = MockLLMProvider()
+
+        # Create scenario with communication enabled
+        self.scenario_dir = os.path.join(self.test_dir, 'test-scenario')
+        os.makedirs(self.scenario_dir)
+
+        scenario_yaml = """
+name: Communication Test Scenario
+turns: 2
+turn_duration: "1 week"
+initial_world_state: |
+  Two actors need to negotiate.
+actors:
+  - actor1
+  - actor2
+context_window_size: 2
+world_state_model: test/mock-model
+enable_bilateral_communication: true
+"""
+        with open(os.path.join(self.scenario_dir, 'scenario.yaml'), 'w') as f:
+            f.write(scenario_yaml)
+
+        # Create actors
+        actors_dir = os.path.join(self.scenario_dir, 'actors')
+        os.makedirs(actors_dir)
+
+        actor1_yaml = """
+name: Test Actor 1
+short_name: actor1
+role: Negotiator
+expertise: Diplomacy
+llm_model: test/mock-model
+long_term_goals:
+  - Reach agreement with Actor 2
+decision_making_style: Collaborative
+"""
+        with open(os.path.join(actors_dir, 'actor1.yaml'), 'w') as f:
+            f.write(actor1_yaml)
+
+        actor2_yaml = """
+name: Test Actor 2
+short_name: actor2
+role: Negotiator
+expertise: Strategy
+llm_model: test/mock-model
+long_term_goals:
+  - Negotiate favorable terms
+decision_making_style: Analytical
+"""
+        with open(os.path.join(actors_dir, 'actor2.yaml'), 'w') as f:
+            f.write(actor2_yaml)
+
+        # Set up mock responses
+        # Communication initiation response (yes to bilateral)
+        self.mock_llm.set_response("INITIATE_BILATERAL", {
+            'choices': [{'message': {'content': """**INITIATE_BILATERAL:** yes
+**TARGET_ACTOR:** Test Actor 2
+**PROPOSED_MESSAGE:** I would like to discuss terms for cooperation.
+**REASONING:** Bilateral negotiation will help us reach a better agreement."""}}],
+            'usage': {'total_tokens': 200}
+        })
+
+        # Communication response
+        self.mock_llm.set_response("RESPONSE:", {
+            'choices': [{'message': {'content': """**RESPONSE:**
+I agree, let's discuss the terms. I propose we split resources 50/50.
+
+**INTERNAL_NOTES:**
+This seems like a fair starting point."""}}],
+            'usage': {'total_tokens': 150}
+        })
+
+        # Regular actor decision
+        self.mock_llm.set_response("Your Task", {
+            'choices': [{'message': {'content': """**LONG-TERM GOALS:**
+- Reach agreement with other actor
+
+**SHORT-TERM PRIORITIES:**
+- Finalize negotiation terms
+
+**REASONING:**
+Based on our bilateral discussion, I will proceed with the agreed terms.
+
+**ACTION:**
+I will implement the 50/50 resource split we discussed."""}}],
+            'usage': {'total_tokens': 250}
+        })
+
+        # World state update
+        self.mock_llm.set_response("synthesize", {
+            'choices': [{'message': {'content': """**UPDATED STATE:**
+Both actors have reached an agreement through bilateral negotiation.
+
+**KEY CHANGES:**
+- Bilateral communication established
+- Resource split agreed upon
+
+**CONSEQUENCES:**
+- Cooperation framework in place"""}}],
+            'usage': {'total_tokens': 180}
+        })
+
+    def tearDown(self):
+        """Clean up test fixtures"""
+        shutil.rmtree(self.test_dir)
+
+    @patch.dict(os.environ, {'OPENROUTER_API_KEY': 'test-key'})
+    @patch('actor_engine.make_llm_call')
+    @patch('world_state_updater.make_llm_call')
+    @patch('context_manager.make_llm_call')
+    def test_bilateral_communication_flow(self, mock_ctx_call, mock_wsu_call, mock_actor_call):
+        """Test that bilateral communication executes correctly"""
+        mock_actor_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
+        mock_wsu_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
+        mock_ctx_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
+
+        output_dir = os.path.join(self.test_dir, 'output')
+
+        try:
+            run_scenario(
+                scenario_path=self.scenario_dir,
+                output_path=output_dir,
+                max_turns=1,  # Just run one turn to test communications
+                verbose=False
+            )
+        except Exception as e:
+            self.fail(f"Scenario with bilateral communication failed: {e}")
+
+        # Verify output files were created
+        self.assertTrue(os.path.exists(output_dir))
+        self.assertTrue(os.path.exists(os.path.join(output_dir, 'world-state-001.md')))
+        self.assertTrue(os.path.exists(os.path.join(output_dir, 'actor1-001.md')))
+        self.assertTrue(os.path.exists(os.path.join(output_dir, 'actor2-001.md')))
+
+        # Verify communications.json exists if communications occurred
+        comms_file = os.path.join(output_dir, 'communications.json')
+        if os.path.exists(comms_file):
+            import json
+            with open(comms_file, 'r') as f:
+                comms_data = json.load(f)
+                # Should have at least one bilateral communication
+                self.assertGreater(len(comms_data.get('bilateral', [])), 0)
+
+
+class TestCreditLimitEnforcement(unittest.TestCase):
+    """Test credit limit enforcement"""
+
+    def setUp(self):
+        """Set up test fixtures"""
+        self.test_dir = tempfile.mkdtemp()
+        self.mock_llm = MockLLMProvider()
+
+        # Create minimal scenario
+        self.scenario_dir = os.path.join(self.test_dir, 'test-scenario')
+        os.makedirs(self.scenario_dir)
+
+        scenario_yaml = """
+name: Credit Limit Test Scenario
+turns: 10
+turn_duration: "1 week"
+initial_world_state: |
+  Testing credit limit enforcement.
+actors:
+  - actor1
+context_window_size: 2
+world_state_model: test/mock-model
+"""
+        with open(os.path.join(self.scenario_dir, 'scenario.yaml'), 'w') as f:
+            f.write(scenario_yaml)
+
+        actors_dir = os.path.join(self.scenario_dir, 'actors')
+        os.makedirs(actors_dir)
+
+        actor1_yaml = """
+name: Test Actor
+short_name: actor1
+role: Tester
+expertise: Testing
+llm_model: test/mock-model
+long_term_goals:
+  - Complete scenario
+decision_making_style: Efficient
+"""
+        with open(os.path.join(actors_dir, 'actor1.yaml'), 'w') as f:
+            f.write(actor1_yaml)
+
+        # Set up mock responses with high token counts
+        self.mock_llm.set_response("Your Task", {
+            'choices': [{'message': {'content': """**REASONING:**
+Test reasoning
+
+**ACTION:**
+Test action"""}}],
+            'usage': {'total_tokens': 5000}  # High token count to trigger limit
+        })
+
+        self.mock_llm.set_response("synthesize", {
+            'choices': [{'message': {'content': """**UPDATED STATE:**
+State updated
+
+**KEY CHANGES:**
+Changes made
+
+**CONSEQUENCES:**
+Consequences noted"""}}],
+            'usage': {'total_tokens': 3000}
+        })
+
+    def tearDown(self):
+        """Clean up test fixtures"""
+        shutil.rmtree(self.test_dir)
+
+    @patch.dict(os.environ, {'OPENROUTER_API_KEY': 'test-key'})
+    @patch('actor_engine.make_llm_call')
+    @patch('world_state_updater.make_llm_call')
+    @patch('context_manager.make_llm_call')
+    def test_credit_limit_halts_scenario(self, mock_ctx_call, mock_wsu_call, mock_actor_call):
+        """Test that credit limit halts scenario execution"""
+        mock_actor_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
+        mock_wsu_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
+        mock_ctx_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
+
+        output_dir = os.path.join(self.test_dir, 'output')
+
+        # Run with very low credit limit (should halt after 1-2 turns)
+        run_scenario(
+            scenario_path=self.scenario_dir,
+            output_path=output_dir,
+            credit_limit=0.02,  # Very low limit
+            verbose=False
+        )
+
+        # Verify scenario was halted due to credit limit
+        state_manager = ScenarioStateManager(output_dir)
+        state = state_manager.load_state()
+
+        self.assertEqual(state['status'], 'halted')
+        self.assertEqual(state['halt_reason'], 'credit_limit')
+
+        # Should not have completed all 10 turns
+        self.assertLess(state['current_turn'], 10)
+
+        # Verify cost tracking in state
+        cost_tracker_state = state.get('cost_tracker_state', {})
+        total_cost = cost_tracker_state.get('total_cost', 0)
+
+        # Cost should be at or near the limit
+        self.assertGreater(total_cost, 0.015)  # Should have incurred some cost
+        self.assertLessEqual(total_cost, 0.030)  # Small tolerance above limit
+
+
 if __name__ == '__main__':
     unittest.main()
