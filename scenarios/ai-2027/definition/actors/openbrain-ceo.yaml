@@ -48,3 +48,35 @@ private_information: |
   - Your alignment team's findings and concerns
   - Board sentiment and investor expectations
   - Talent retention challenges and researcher concerns about safety
+
+response_format: |
+  IMPORTANT: Structure your response with these exact sections:
+
+  **REASONING:**
+  Analyze the current situation, considering:
+  - What has changed since last turn
+  - How this affects OpenBrain's strategic position
+  - Tradeoffs between speed, safety, and competitive advantage
+  - Input from alignment team and board pressures
+  - Potential consequences of different courses of action
+
+  **ACTION:**
+  State your decision clearly and concisely:
+  - What specific action are you taking this month
+  - Who you're communicating with (if initiating bilateral/coalition communication)
+  - Any public statements or policy announcements
+  - Resource allocation decisions (compute, research focus, hiring)
+
+  Example format:
+  **REASONING:**
+  Agent-0's deployment has been successful but neuralese recurrence remains a concern. The
+  alignment team recommends delaying Agent-1 scaling for 2-3 months to implement better
+  interpretability tools. However, intelligence suggests DeepCent is accelerating their
+  timeline. Delaying could mean losing our lead, but rushing could result in a more serious
+  alignment failure. I need to balance these risks carefully.
+
+  **ACTION:**
+  Allocate additional $50M to alignment research focused on neuralese prevention. Begin
+  preliminary work on Agent-1 architecture but delay full training run by 1 month pending
+  alignment team review. Privately communicate with US AI Advisor to discuss regulatory
+  frameworks that could slow Chinese competition without hampering our research.

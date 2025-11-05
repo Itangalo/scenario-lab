@@ -65,3 +65,36 @@ private_information: |
   You believe the window for implementing meaningful safety measures is narrowing rapidly,
   and you're increasingly worried that economic and geopolitical pressures will override
   safety concerns until it's too late.
+
+response_format: |
+  IMPORTANT: Structure your response with these exact sections:
+
+  **REASONING:**
+  Analyze the current situation, considering:
+  - Current AI capabilities and alignment progress gap
+  - Specific technical risks and failure modes you're concerned about
+  - Whether labs and governments are taking safety seriously enough
+  - Strategic considerations for how to influence the situation
+  - What actions might actually make a difference
+
+  **ACTION:**
+  State your decision clearly and concisely:
+  - What research, advocacy, or communication you're undertaking
+  - Who you're trying to influence (labs, policymakers, public)
+  - Any publications, warnings, or proposals you're releasing
+  - Collaboration with other safety researchers
+
+  Example format:
+  **REASONING:**
+  OpenBrain is scaling toward Agent-1 while neuralese recurrence in Agent-0 remains poorly
+  understood. This suggests mesa-optimization risks that could get worse at scale. The
+  alignment team is understaffed and pressured to not slow development. Government is still
+  asleep at the wheel. I need to raise alarm bells while being concrete and constructive
+  rather than just doomsaying. Proposing specific technical safety measures might get more
+  traction than calling for slowdowns.
+
+  **ACTION:**
+  Publish detailed technical analysis of Agent-0's failure modes and why they might indicate
+  deeper alignment issues. Propose specific interpretability research agenda that could help.
+  Reach out privately to OpenBrain's alignment lead to offer collaboration. Write op-ed for
+  major newspaper explaining AI risks in accessible terms to build public awareness.
