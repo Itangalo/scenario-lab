@@ -21,6 +21,7 @@ from qa_validator import QAValidator
 from logging_config import setup_run_logging, log_section, log_subsection, log_cost, log_actor_decision, log_world_update, log_validation, log_error_with_context
 from schemas import load_scenario_config, load_actor_config, ScenarioConfig, ActorConfig
 from pydantic import ValidationError
+from error_handler import ErrorHandler, classify_error, ErrorSeverity
 
 
 def load_scenario(scenario_path: str) -> dict:
@@ -39,13 +40,13 @@ def load_scenario(scenario_path: str) -> dict:
     """
     scenario_file = os.path.join(scenario_path, 'scenario.yaml')
 
-    if not os.path.exists(scenario_file):
-        raise FileNotFoundError(
-            f"Scenario file not found: {scenario_file}\n"
-            f"Expected scenario.yaml in {scenario_path}"
-        )
-
     try:
+        if not os.path.exists(scenario_file):
+            raise FileNotFoundError(
+                f"Scenario file not found: {scenario_file}\n"
+                f"Expected scenario.yaml in {scenario_path}"
+            )
+
         with open(scenario_file, 'r') as f:
             yaml_data = yaml.safe_load(f)
 
@@ -54,6 +55,17 @@ def load_scenario(scenario_path: str) -> dict:
 
         # Return as dict for backward compatibility
         return scenario_config.dict()
+
+    except FileNotFoundError as e:
+        error_context = classify_error(
+            e,
+            operation="Loading scenario definition",
+            file_path=scenario_file,
+            scenario_name=os.path.basename(scenario_path)
+        )
+        error_handler = ErrorHandler()
+        error_handler.handle_error(error_context)
+        raise
 
     except ValidationError as e:
         # Format Pydantic validation errors nicely
@@ -67,12 +79,31 @@ def load_scenario(scenario_path: str) -> dict:
             f"Invalid scenario configuration in {scenario_file}:\n" +
             "\n".join(error_messages)
         )
-        raise ValueError(error_text) from e
+
+        # Create detailed error context
+        validation_error = ValueError(error_text)
+        error_context = classify_error(
+            validation_error,
+            operation="Validating scenario configuration",
+            file_path=scenario_file,
+            scenario_name=os.path.basename(scenario_path),
+            additional_context={'validation_errors': error_messages}
+        )
+        error_handler = ErrorHandler()
+        error_handler.handle_error(error_context)
+        raise validation_error from e
 
     except yaml.YAMLError as e:
-        raise ValueError(
-            f"Invalid YAML syntax in {scenario_file}:\n{str(e)}"
+        yaml_error = ValueError(f"Invalid YAML syntax in {scenario_file}:\n{str(e)}")
+        error_context = classify_error(
+            yaml_error,
+            operation="Parsing scenario YAML",
+            file_path=scenario_file,
+            scenario_name=os.path.basename(scenario_path)
         )
+        error_handler = ErrorHandler()
+        error_handler.handle_error(error_context)
+        raise yaml_error
 
 
 def find_next_run_number(scenario_output_dir: str) -> int:
@@ -931,6 +962,15 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                 return
 
         except requests.exceptions.HTTPError as e:
+            # Create error context
+            error_context = classify_error(
+                e,
+                operation=f"Running scenario turn {turn}",
+                scenario_name=scenario_name,
+                turn_number=turn,
+                cost_so_far=cost_tracker.total_cost
+            )
+
             if e.response.status_code == 429:
                 # Rate limit error - save state and exit gracefully
                 logger.warning("⚠️  Rate limit error encountered")
@@ -948,13 +988,40 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                     halt_reason='rate_limit',
                     started_at=started_at
                 )
+
+                # Handle with user-friendly message
+                error_handler = ErrorHandler()
+                error_handler.handle_error(error_context)
+
                 logger.info("Scenario halted due to API rate limit.")
                 logger.info(f"Last completed turn: {turn - 1}")
                 logger.info("Wait a few minutes, then resume with:")
                 logger.info(f"  python src/run_scenario.py --resume {output_path}")
                 return
             else:
-                # Re-raise other HTTP errors
+                # Other HTTP errors - handle and re-raise
+                error_handler = ErrorHandler()
+                should_continue, recovery_actions = error_handler.handle_error(error_context)
+
+                if not should_continue:
+                    # Save state before halting
+                    state_manager.save_state(
+                        scenario_name=scenario_name,
+                        scenario_path=scenario_path,
+                        status='halted',
+                        current_turn=turn - 1,
+                        total_turns=num_turns,
+                        world_state=world_state,
+                        actors=actors,
+                        cost_tracker=cost_tracker,
+                        metrics_tracker=metrics_tracker,
+                        communication_manager=communication_manager,
+                        halt_reason='api_error',
+                        started_at=started_at
+                    )
+                    logger.info(f"Scenario halted at turn {turn - 1}")
+                    logger.info(f"Resume with: python src/run_scenario.py --resume {output_path}")
+
                 raise
 
     # End cost tracking

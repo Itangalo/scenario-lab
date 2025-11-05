@@ -103,17 +103,48 @@ if __name__ == '__main__':
     unittest.main()
 ```
 
+**test_batch_runner.py** (18 tests)
+- ParameterVariator: variation generation, Cartesian products
+- BatchCostManager: budget limits, cost tracking
+- Variation statistics and cost management
+
+### Integration Tests
+
+**test_batch_integration.py** (9 tests)
+- Complete batch execution workflows (sequential & parallel)
+- Resume functionality
+- Cost tracking and budget enforcement
+- Batch analysis pipeline integration
+- Output directory structure validation
+
+**⚠️  Note:** Integration tests make real LLM API calls and require:
+- Valid OpenRouter API key in `.env`
+- Network connection
+- Runtime: 2-5 minutes
+- Cost: ~$0.10-0.50
+
+See [INTEGRATION_TESTS.md](INTEGRATION_TESTS.md) for detailed documentation.
+
+### Fast vs. Slow Tests
+
+**Fast Tests (Unit Tests):** No API calls, < 1 second
+```bash
+python run_tests.py
+```
+
+**Slow Tests (Integration):** Real API calls, 2-5 minutes
+```bash
+python -m unittest tests.test_batch_integration -v
+```
+
 ## What's Not Tested (Requires API Keys)
 
-The following components require actual API calls and are tested manually:
+The following components require actual API calls in production:
 - LLM integration (actor_engine.py _call_llm)
 - World state synthesis (world_state_updater.py)
 - Context summarization (context_manager.py _generate_summary)
 
-These could be tested with:
-- Mock objects for LLM responses
-- Integration tests with test API keys
-- Recorded response fixtures
+**Integration tests now cover these** with real API calls for end-to-end validation.
 
 ## Continuous Integration
 
@@ -146,18 +177,21 @@ jobs:
 
 ## Future Test Additions
 
-**Integration Tests:**
-- End-to-end scenario execution with mock LLMs
-- State persistence and resumption
-- Branching scenarios
-- Coalition formation workflows
+**Integration Tests:** ✅ IMPLEMENTED
+- ✅ End-to-end batch execution
+- ✅ State persistence and resumption
+- ✅ Parallel execution workflows
+- ⏸️  Branching scenarios (single runs)
+- ⏸️  Coalition formation workflows (needs real API testing)
+- ⏸️  Mock LLM provider for faster testing
 
 **Performance Tests:**
-- Large scenario handling
+- Large scenario handling (100+ runs)
 - Memory usage with many turns
-- Token counting accuracy
+- Parallel execution scaling
+- Rate limit handling under load
 
 **Validation Tests:**
-- YAML scenario file validation
-- Actor configuration validation
+- YAML scenario file validation (partially in schemas.py)
+- Actor configuration validation (partially in schemas.py)
 - Metric extraction accuracy

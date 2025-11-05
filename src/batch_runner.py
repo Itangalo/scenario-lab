@@ -18,6 +18,7 @@ from batch_cost_manager import BatchCostManager
 from batch_progress_tracker import BatchProgressTracker
 from batch_parallel_executor import BatchParallelExecutor, RateLimitManager
 from run_scenario import run_scenario
+from error_handler import ErrorHandler, classify_error, ErrorSeverity
 
 
 class BatchRunner:
@@ -25,7 +26,7 @@ class BatchRunner:
     Orchestrates execution of multiple scenario variations with cost controls
     """
 
-    def __init__(self, config_path: str, resume: bool = False, progress_display: bool = True):
+    def __init__(self, config_path: str, resume: bool = False, progress_display: bool = True, dry_run: bool = False):
         """
         Initialize batch runner
 
@@ -33,11 +34,13 @@ class BatchRunner:
             config_path: Path to batch configuration YAML file
             resume: If True, attempt to resume from previous batch execution
             progress_display: If True, show rich progress display (default: True)
+            dry_run: If True, show preview without actually running
         """
         self.config_path = config_path
         self.config = self._load_config()
         self.resume_mode = resume
         self.progress_display = progress_display
+        self.dry_run = dry_run
 
         # Extract configuration
         self.experiment_name = self.config['experiment_name']
@@ -61,6 +64,9 @@ class BatchRunner:
             cost_per_run_limit=self.config.get('cost_per_run_limit')
         )
 
+        # Error handling
+        self.error_handler = ErrorHandler(verbose=False)
+
         # State tracking
         self.variations = []
         self.completed_runs = set()  # Set of run_ids that completed
@@ -79,19 +85,50 @@ class BatchRunner:
 
     def _load_config(self) -> Dict[str, Any]:
         """Load and validate batch configuration"""
-        if not os.path.exists(self.config_path):
-            raise FileNotFoundError(f"Batch config not found: {self.config_path}")
+        try:
+            if not os.path.exists(self.config_path):
+                raise FileNotFoundError(f"Batch config not found: {self.config_path}")
 
-        with open(self.config_path, 'r') as f:
-            config = yaml.safe_load(f)
+            with open(self.config_path, 'r') as f:
+                config = yaml.safe_load(f)
 
-        # Validate required fields
-        required = ['experiment_name', 'base_scenario']
-        for field in required:
-            if field not in config:
-                raise ValueError(f"Missing required field in batch config: {field}")
+            # Validate required fields
+            required = ['experiment_name', 'base_scenario']
+            for field in required:
+                if field not in config:
+                    raise ValueError(f"Missing required field in batch config: {field}")
 
-        return config
+            return config
+
+        except FileNotFoundError as e:
+            error_context = classify_error(
+                e,
+                operation="Loading batch configuration",
+                file_path=self.config_path
+            )
+            error_handler = ErrorHandler()
+            error_handler.handle_error(error_context)
+            raise
+
+        except yaml.YAMLError as e:
+            error_context = classify_error(
+                e,
+                operation="Parsing batch configuration YAML",
+                file_path=self.config_path
+            )
+            error_handler = ErrorHandler()
+            error_handler.handle_error(error_context)
+            raise
+
+        except ValueError as e:
+            error_context = classify_error(
+                e,
+                operation="Validating batch configuration",
+                file_path=self.config_path
+            )
+            error_handler = ErrorHandler()
+            error_handler.handle_error(error_context)
+            raise
 
     def _setup_output_directory(self):
         """Create output directory structure"""
@@ -271,12 +308,187 @@ class BatchRunner:
         except Exception as e:
             result['error'] = str(e)
             result['status'] = 'failed'
-            self.logger.error(f"❌ {run_id}: Failed - {str(e)}")
+
+            # Create error context with full details
+            error_context = classify_error(
+                e,
+                operation=f"Running scenario variation {variation['variation_id']}",
+                scenario_name=self.base_scenario,
+                run_number=run_number,
+                cost_so_far=self.cost_manager.total_cost,
+                additional_context={
+                    'run_id': run_id,
+                    'variation_description': variation.get('description', 'N/A'),
+                    'completed_runs': len(self.completed_runs),
+                    'total_runs': len(self.variations) * self.runs_per_variation
+                }
+            )
+
+            # Handle error with user-friendly message (only for HIGH/FATAL severity)
+            if error_context.severity in [ErrorSeverity.HIGH, ErrorSeverity.FATAL]:
+                should_continue, recovery_actions = self.error_handler.handle_error(error_context)
+
+                # For batch runs, we typically continue even on high severity
+                # (single run failure shouldn't stop entire batch)
+                if not should_continue and error_context.severity == ErrorSeverity.FATAL:
+                    # FATAL errors should halt the entire batch
+                    self.logger.error(f"❌ {run_id}: FATAL error - halting batch")
+                    raise
+            else:
+                # Low/medium severity - just log
+                self.logger.error(f"❌ {run_id}: Failed - {str(e)[:200]}")
 
         return result
 
+    def show_batch_preview(self):
+        """Show detailed preview of batch execution without running"""
+        print("=" * 70)
+        print(f"{'BATCH PREVIEW':^70}")
+        print("=" * 70)
+        print()
+
+        # Experiment info
+        print(f"📊 Experiment: {self.experiment_name}")
+        if self.config.get('description'):
+            print(f"   {self.config['description']}")
+        print(f"📁 Base scenario: {self.base_scenario}")
+        print()
+
+        # Generate variations
+        self.variations = self.variator.generate_variations()
+
+        # Calculate total runs
+        total_runs = len(self.variations) * self.runs_per_variation
+
+        print(f"🔢 Variations: {len(self.variations)}")
+        print(f"🔢 Runs per variation: {self.runs_per_variation}")
+        print(f"🔢 Total runs: {total_runs}")
+        print()
+
+        # Execution mode
+        if self.max_parallel > 1:
+            print(f"⚡ Execution mode: Parallel ({self.max_parallel} concurrent runs)")
+        else:
+            print(f"⚡ Execution mode: Sequential")
+        print()
+
+        # Budget and limits
+        if self.cost_manager.budget_limit:
+            print(f"💰 Budget limit: ${self.cost_manager.budget_limit:.2f}")
+        else:
+            print(f"💰 Budget limit: None (unlimited)")
+
+        if self.cost_manager.cost_per_run_limit:
+            print(f"💰 Per-run cost limit: ${self.cost_manager.cost_per_run_limit:.2f}")
+        print()
+
+        # Cost estimation
+        print("💵 Cost Estimation:")
+        try:
+            # Load scenario to get actor models
+            from cost_tracker import CostTracker
+            import yaml as yaml_lib
+            scenario_file = os.path.join(self.base_scenario, 'scenario.yaml')
+            with open(scenario_file, 'r') as f:
+                scenario_config = yaml_lib.safe_load(f)
+
+            # Get actor models (will be overridden by variations)
+            actor_models = {}
+            actors_dir = os.path.join(self.base_scenario, 'actors')
+            if os.path.exists(actors_dir):
+                for actor_file in os.listdir(actors_dir):
+                    if actor_file.endswith('.yaml'):
+                        actor_path = os.path.join(actors_dir, actor_file)
+                        with open(actor_path, 'r') as f:
+                            actor_config = yaml_lib.safe_load(f)
+                            short_name = actor_config.get('short_name', actor_config.get('name', ''))
+                            model = actor_config.get('llm_model', 'openai/gpt-4o-mini')
+                            actor_models[short_name] = model
+
+            num_actors = len(actor_models)
+            num_turns = scenario_config.get('turns', 3)
+            world_model = scenario_config.get('world_state_model', 'openai/gpt-4o-mini')
+
+            # Estimate cost for one run using CostTracker
+            cost_tracker = CostTracker()
+            estimate = cost_tracker.estimate_scenario_cost(
+                num_actors=num_actors,
+                num_turns=num_turns,
+                actor_models=actor_models,
+                world_state_model=world_model
+            )
+
+            cost_per_run = estimate['total']
+            total_estimated_cost = cost_per_run * total_runs
+
+            print(f"   Per run (estimated): ${cost_per_run:.2f}")
+            print(f"   Total (estimated): ${total_estimated_cost:.2f}")
+
+            if self.cost_manager.budget_limit:
+                if total_estimated_cost > self.cost_manager.budget_limit:
+                    affordable_runs = int(self.cost_manager.budget_limit / cost_per_run)
+                    print(f"   ⚠️  Estimated cost exceeds budget!")
+                    print(f"   ⚠️  Budget allows ~{affordable_runs} runs (not {total_runs})")
+                else:
+                    budget_pct = (total_estimated_cost / self.cost_manager.budget_limit) * 100
+                    print(f"   ✓ Within budget ({budget_pct:.1f}% of limit)")
+
+        except Exception as e:
+            print(f"   (Unable to estimate: {str(e)})")
+
+        print()
+
+        # Time estimation
+        print("⏱️  Time Estimation:")
+        avg_time_per_run = 3 * 60  # 3 minutes default
+        if self.max_parallel > 1:
+            # Parallel execution is faster
+            total_time = (total_runs / self.max_parallel) * avg_time_per_run
+        else:
+            total_time = total_runs * avg_time_per_run
+
+        hours = int(total_time // 3600)
+        minutes = int((total_time % 3600) // 60)
+
+        print(f"   Estimated time: ", end="")
+        if hours > 0:
+            print(f"{hours}h {minutes}m")
+        else:
+            print(f"{minutes}m")
+
+        print()
+
+        # List all variations
+        print("📋 Variations to be executed:")
+        print()
+        for i, variation in enumerate(self.variations, 1):
+            print(f"   {i}. {variation['description']}")
+            print(f"      Runs: {self.runs_per_variation}")
+
+            # Show modifications
+            mods = variation.get('modifications', {})
+            if 'actor_models' in mods:
+                for actor, model in mods['actor_models'].items():
+                    print(f"      • {actor}: {model}")
+            print()
+
+        # Output location
+        print(f"📁 Output directory: {self.output_dir}")
+        print()
+
+        # Summary
+        print("=" * 70)
+        print("To execute this batch, run without --dry-run flag:")
+        print(f"  python src/batch_runner.py {self.config_path}")
+        print("=" * 70)
+
     def run(self):
         """Execute the batch experiment"""
+        # If dry-run mode, show preview and exit
+        if self.dry_run:
+            self.show_batch_preview()
+            return
+
         # Choose execution mode based on max_parallel
         if self.max_parallel > 1:
             # Use parallel execution
@@ -629,6 +841,11 @@ def main():
         action='store_true',
         help='Disable rich progress display (use simple logging instead)'
     )
+    parser.add_argument(
+        '--dry-run',
+        action='store_true',
+        help='Show preview of what will be executed without running'
+    )
 
     args = parser.parse_args()
 
@@ -636,7 +853,8 @@ def main():
     batch_runner = BatchRunner(
         args.config,
         resume=args.resume,
-        progress_display=not args.no_progress
+        progress_display=not args.no_progress,
+        dry_run=args.dry_run
     )
     batch_runner.run()
 
