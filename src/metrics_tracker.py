@@ -164,6 +164,20 @@ class MetricsTracker:
 
         return stats
 
+    def get_current_metrics(self) -> Optional[Dict[str, float]]:
+        """
+        Get the most recent metrics values for conditional event evaluation
+
+        Returns:
+            Dict mapping metric names to their latest values, or None if no metrics yet
+        """
+        if not self.metrics_by_turn:
+            return None
+
+        # Get metrics from the most recent turn
+        last_turn = max(self.metrics_by_turn.keys())
+        return self.metrics_by_turn[last_turn].copy()
+
     def print_summary(self):
         """Print a formatted metrics summary"""
         print("\n" + "="*60)

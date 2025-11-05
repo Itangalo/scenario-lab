@@ -34,10 +34,11 @@ class WorldStateUpdater:
         turn: int,
         total_turns: int,
         actor_decisions: Dict[str, Dict[str, Any]],
-        scenario_name: str
+        scenario_name: str,
+        exogenous_events: list = None
     ) -> Dict[str, Any]:
         """
-        Generate updated world state based on actor decisions
+        Generate updated world state based on actor decisions and exogenous events
 
         Args:
             current_state: Current world state description
@@ -45,12 +46,15 @@ class WorldStateUpdater:
             total_turns: Total number of turns in scenario
             actor_decisions: Dict of {actor_name: {reasoning, action}} for this turn
             scenario_name: Name of the scenario
+            exogenous_events: List of events occurring independently of actors (optional)
 
         Returns:
             Dict with 'updated_state' (str) and 'metadata' (dict) keys
         """
         system_prompt = self._build_system_prompt(scenario_name)
-        user_prompt = self._build_user_prompt(current_state, turn, total_turns, actor_decisions)
+        user_prompt = self._build_user_prompt(
+            current_state, turn, total_turns, actor_decisions, exogenous_events
+        )
 
         response = self._call_llm(system_prompt, user_prompt)
 
@@ -59,6 +63,7 @@ class WorldStateUpdater:
             'metadata': {
                 'consequences_identified': response.get('consequences', []),
                 'key_changes': response.get('key_changes', []),
+                'exogenous_events_count': len(exogenous_events) if exogenous_events else 0,
                 'tokens_used': response.get('tokens_used', 0)
             }
         }
@@ -67,15 +72,16 @@ class WorldStateUpdater:
         """Build system prompt for world state synthesis"""
         return f"""You are a scenario simulation narrator for "{scenario_name}".
 
-Your task is to synthesize multiple actors' decisions into a coherent, realistic world state update.
+Your task is to synthesize multiple actors' decisions AND background events into a coherent, realistic world state update.
 
 Your responsibilities:
 1. Integrate all actors' actions into a unified narrative
-2. Generate realistic consequences (both intended and unintended)
-3. Show second-order effects and emergent dynamics
-4. Maintain logical consistency with previous state
-5. Be specific and concrete about what changed
-6. Show how actors' actions interact and affect each other
+2. Integrate any exogenous events (background trends, random events) that occur
+3. Generate realistic consequences (both intended and unintended)
+4. Show second-order effects and emergent dynamics
+5. Maintain logical consistency with previous state
+6. Be specific and concrete about what changed
+7. Show how actors' actions and background events interact
 
 Guidelines:
 - Write in third-person, present tense
@@ -83,22 +89,33 @@ Guidelines:
 - Include both immediate and longer-term consequences
 - Show realistic friction, delays, and complications
 - Avoid editorializing - describe objectively what occurred
-- Keep the narrative focused and relevant to the scenario"""
+- Keep the narrative focused and relevant to the scenario
+- Weave background events naturally into the narrative (don't just list them)"""
 
     def _build_user_prompt(
         self,
         current_state: str,
         turn: int,
         total_turns: int,
-        actor_decisions: Dict[str, Dict[str, Any]]
+        actor_decisions: Dict[str, Dict[str, Any]],
+        exogenous_events: list = None
     ) -> str:
-        """Build user prompt with current state and decisions"""
+        """Build user prompt with current state, decisions, and exogenous events"""
 
         # Format actor decisions
         actions_text = ""
         for actor_name, decision in actor_decisions.items():
             actions_text += f"\n### {actor_name}\n\n"
             actions_text += f"**Action taken:**\n{decision['action']}\n"
+
+        # Format exogenous events if present
+        events_text = ""
+        if exogenous_events and len(exogenous_events) > 0:
+            events_text = "\n## Background Events This Turn\n\n"
+            events_text += "Independent of actor decisions, the following also occurred:\n\n"
+            for event in exogenous_events:
+                events_text += f"**{event['name']}:** {event['description']}\n\n"
+            events_text += "---\n\n"
 
         prompt = f"""## Current World State (Turn {turn} of {total_turns})
 
@@ -110,21 +127,22 @@ Guidelines:
 {actions_text}
 
 ---
-
+{events_text}
 ## Your Task
 
-Synthesize these actions into an updated world state. Describe:
+Synthesize these actions{' and background events' if exogenous_events else ''} into an updated world state. Describe:
 
 1. **What happened**: How did each actor's action play out?
-2. **Interactions**: How did different actors' actions affect each other?
-3. **Consequences**: What are the immediate and near-term effects?
-4. **New dynamics**: What new situations or tensions emerged?
-5. **Current status**: What is the state of negotiations/situation now?
+2. **Background developments**: How did any background events affect the situation?
+3. **Interactions**: How did actors' actions, and background events, affect each other?
+4. **Consequences**: What are the immediate and near-term effects?
+5. **New dynamics**: What new situations or tensions emerged?
+6. **Current status**: What is the state of the situation now?
 
 Provide your response in this format:
 
 **UPDATED STATE:**
-[Write a cohesive narrative (2-4 paragraphs) describing the new world state after this turn's actions]
+[Write a cohesive narrative (2-4 paragraphs) describing the new world state after this turn's actions and events]
 
 **KEY CHANGES:**
 - [Change 1]
@@ -135,7 +153,7 @@ Provide your response in this format:
 - [Consequence 1]
 - [Consequence 2]
 
-Remember: Be specific, realistic, and show how actions create ripple effects."""
+Remember: Be specific, realistic, and show how actions and events create ripple effects. Weave background events naturally into the narrative."""
 
         return prompt
 

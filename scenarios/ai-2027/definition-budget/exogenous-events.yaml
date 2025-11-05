@@ -1,0 +1,135 @@
+# Exogenous Events for AI 2027 Scenario
+# Events that occur independently of actor decisions
+
+exogenous_events:
+  # ====================
+  # TRENDS - Regular background developments
+  # ====================
+
+  - type: trend
+    name: "Compute Cost Decline"
+    description: "Hardware improvements and economies of scale continue driving down training costs by approximately 8-12% this month, making larger model runs increasingly economically feasible."
+    turn_range: [1, 66]
+    frequency: 3  # Every 3 months
+
+  - type: trend
+    name: "Academic Research Progress"
+    description: "Academic institutions publish 40-60 new papers on AI capabilities and safety this month, with incremental advances in interpretability methods, though no major breakthroughs."
+    turn_range: [1, 66]
+    frequency: 2  # Every 2 months
+
+  - type: trend
+    name: "Chip Supply Dynamics"
+    description: "Global semiconductor supply continues to tighten, with lead times for advanced AI chips extending and some rationing among customers."
+    turn_range: [6, 36]
+    frequency: 4  # Every 4 months
+
+  # ====================
+  # SCHEDULED - Events at specific times
+  # ====================
+
+  - type: scheduled
+    turn: 12
+    name: "Major AI Conference"
+    description: "The annual AI research conference brings together researchers worldwide. Several labs present new capability results that shift perceptions of near-term AI potential."
+    once: true
+
+  - type: scheduled
+    turn: 24
+    name: "OECD AI Risk Report"
+    description: "The OECD releases a comprehensive report on AI risks, raising concerns among policymakers about current governance gaps and potential catastrophic scenarios."
+    once: true
+
+  - type: scheduled
+    turn: 36
+    name: "G7 Summit AI Discussion"
+    description: "G7 leaders discuss AI policy coordination at their annual summit. Statements emphasize both economic opportunity and need for safety measures, though commitments remain vague."
+    once: true
+
+  # ====================
+  # RANDOM - Probabilistic events
+  # ====================
+
+  - type: random
+    name: "Minor AI Incident"
+    description: "A deployed AI system at a mid-sized company exhibits unexpected behavior causing operational disruptions and minor financial losses. The incident receives moderate media coverage and increases safety concerns."
+    probability: 0.08  # 8% chance per turn
+    turn_range: [6, 50]
+    once: true
+
+  - type: random
+    name: "Interpretability Breakthrough"
+    description: "Researchers announce a meaningful advance in mechanistic interpretability, allowing better understanding of neural network decision-making for certain model architectures."
+    probability: 0.06  # 6% chance per turn
+    turn_range: [12, 54]
+    once: true
+
+  - type: random
+    name: "Top Researcher Recruitment"
+    description: "A leading AI safety researcher joins a major lab's alignment team, attracted by increased resources and commitment to safety research. This shifts perceptions of industry seriousness about alignment."
+    probability: 0.05  # 5% chance per turn
+    turn_range: [8, 40]
+    once: false  # Can happen multiple times
+
+  - type: random
+    name: "Export Control Expansion"
+    description: "The US government announces expanded export controls on AI chips and algorithms, citing national security concerns. This affects China's ability to procure cutting-edge hardware."
+    probability: 0.07  # 7% chance per turn
+    turn_range: [10, 45]
+    once: true
+
+  - type: random
+    name: "Economic Downturn"
+    description: "A moderate economic downturn reduces investment enthusiasm for AI. Some startups struggle with funding, though major labs remain well-capitalized. This slightly relieves competitive pressure."
+    probability: 0.04  # 4% chance per turn
+    turn_range: [12, 48]
+    once: true
+
+  # ====================
+  # CONDITIONAL - Triggered by metrics
+  # ====================
+
+  - type: conditional
+    name: "Major AI Safety Incident"
+    description: "A high-capability AI system deployed by a major lab exhibits significant misaligned behavior, causing substantial harm before being shut down. This incident receives global media attention and triggers regulatory discussions."
+    conditions:
+      ai_capability_level: ">= 7"
+      alignment_progress: "< 5"
+    turn_range: [18, 54]
+    once: true
+
+  - type: conditional
+    name: "Public Safety Movement"
+    description: "Growing public awareness of AI risks catalyzes a grassroots safety movement. Demonstrations, petitions, and advocacy campaigns pressure policymakers and companies to prioritize safety over speed."
+    conditions:
+      public_ai_risk_awareness: ">= 6"
+      misalignment_risk_level: ">= 7"
+    turn_range: [20, 60]
+    once: true
+
+  - type: conditional
+    name: "Alignment Research Crisis"
+    description: "The gap between AI capabilities and alignment research has grown so severe that prominent researchers publish an open letter warning of catastrophic risks. This triggers internal debates at major labs."
+    conditions:
+      ai_capability_level: ">= 6"
+      alignment_progress: "< 4"
+    turn_range: [15, 50]
+    once: true
+
+  - type: conditional
+    name: "International Cooperation Proposal"
+    description: "Recognizing mutual risks, backchannel diplomatic discussions produce a serious proposal for US-China AI safety cooperation, including information sharing and joint research initiatives."
+    conditions:
+      misalignment_risk_level: ">= 8"
+      us_china_cooperation: ">= 3"
+    turn_range: [25, 60]
+    once: true
+
+  - type: conditional
+    name: "Emergency Regulatory Response"
+    description: "Multiple governments simultaneously announce emergency AI regulations in response to escalating risks, including mandatory safety testing and deployment restrictions for advanced systems."
+    conditions:
+      misalignment_risk_level: ">= 8"
+      regulatory_stringency: "< 6"
+    turn_range: [20, 60]
+    once: true

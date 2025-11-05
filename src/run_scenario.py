@@ -22,6 +22,39 @@ from logging_config import setup_run_logging, log_section, log_subsection, log_c
 from schemas import load_scenario_config, load_actor_config, ScenarioConfig, ActorConfig
 from pydantic import ValidationError
 from error_handler import ErrorHandler, classify_error, ErrorSeverity
+from exogenous_events import ExogenousEventManager
+
+
+def load_exogenous_events(scenario_path: str) -> ExogenousEventManager:
+    """
+    Load exogenous events configuration if available
+
+    Args:
+        scenario_path: Path to scenario directory
+
+    Returns:
+        ExogenousEventManager (possibly empty if no config file)
+    """
+    events_file = os.path.join(scenario_path, 'exogenous-events.yaml')
+
+    if not os.path.exists(events_file):
+        # No events file - return empty manager
+        return ExogenousEventManager([])
+
+    try:
+        with open(events_file, 'r') as f:
+            events_data = yaml.safe_load(f)
+
+        events_config = events_data.get('exogenous_events', [])
+        return ExogenousEventManager(events_config)
+
+    except Exception as e:
+        # If there's an error loading events, log it but continue without them
+        logging.getLogger("scenario_lab").warning(
+            f"Could not load exogenous events from {events_file}: {e}\n"
+            f"Continuing without exogenous events."
+        )
+        return ExogenousEventManager([])
 
 
 def load_scenario(scenario_path: str) -> dict:
@@ -524,7 +557,8 @@ def synthesize_and_validate_world_state(
     metrics_tracker: MetricsTracker,
     qa_validator: QAValidator,
     world_state_model: str,
-    logger: logging.Logger
+    logger: logging.Logger,
+    exogenous_event_manager: ExogenousEventManager = None
 ) -> dict:
     """
     Synthesize world state update using LLM and validate
@@ -543,17 +577,32 @@ def synthesize_and_validate_world_state(
         qa_validator: Quality assurance validator
         world_state_model: LLM model for world state updates
         logger: Logger instance
+        exogenous_event_manager: Optional manager for background events
 
     Returns:
         World update result dictionary
     """
     log_world_update(logger, turn)
+
+    # Get exogenous events for this turn
+    exogenous_events = []
+    if exogenous_event_manager:
+        # Get current metrics for conditional events
+        current_metrics = metrics_tracker.get_current_metrics() if hasattr(metrics_tracker, 'get_current_metrics') else None
+        exogenous_events = exogenous_event_manager.get_events_for_turn(turn, current_metrics)
+
+        if exogenous_events:
+            logger.info(f"  📋 {len(exogenous_events)} background event(s) occurring this turn")
+            for event in exogenous_events:
+                logger.debug(f"     - {event['name']}")
+
     world_update_result = world_state_updater.update_world_state(
         current_state=current_state,
         turn=turn,
         total_turns=num_turns,
         actor_decisions=actor_decisions,
-        scenario_name=scenario_name
+        scenario_name=scenario_name,
+        exogenous_events=exogenous_events
     )
 
     new_state = world_update_result['updated_state']
@@ -661,8 +710,13 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
     scenario = load_scenario(scenario_path)
     scenario_name = scenario['name']
 
+    # Load exogenous events (background events independent of actors)
+    exogenous_event_manager = load_exogenous_events(scenario_path)
+
     if not resume_mode:
         logger.info(f"Scenario: {scenario_name}")
+        if exogenous_event_manager and exogenous_event_manager.events:
+            logger.info(f"  Exogenous events: {len(exogenous_event_manager.events)} configured")
 
     # Set up output directory
     if not resume_mode:
@@ -934,7 +988,8 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                 metrics_tracker=metrics_tracker,
                 qa_validator=qa_validator,
                 world_state_model=world_state_model,
-                logger=logger
+                logger=logger,
+                exogenous_event_manager=exogenous_event_manager
             )
 
             # Save state after successful turn completion
