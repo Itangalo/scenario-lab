@@ -18,6 +18,7 @@ from batch_cost_manager import BatchCostManager
 from batch_progress_tracker import BatchProgressTracker
 from batch_parallel_executor import BatchParallelExecutor, RateLimitManager
 from run_scenario import run_scenario
+from error_handler import ErrorHandler, classify_error, ErrorSeverity
 
 
 class BatchRunner:
@@ -63,6 +64,9 @@ class BatchRunner:
             cost_per_run_limit=self.config.get('cost_per_run_limit')
         )
 
+        # Error handling
+        self.error_handler = ErrorHandler(verbose=False)
+
         # State tracking
         self.variations = []
         self.completed_runs = set()  # Set of run_ids that completed
@@ -81,19 +85,50 @@ class BatchRunner:
 
     def _load_config(self) -> Dict[str, Any]:
         """Load and validate batch configuration"""
-        if not os.path.exists(self.config_path):
-            raise FileNotFoundError(f"Batch config not found: {self.config_path}")
+        try:
+            if not os.path.exists(self.config_path):
+                raise FileNotFoundError(f"Batch config not found: {self.config_path}")
 
-        with open(self.config_path, 'r') as f:
-            config = yaml.safe_load(f)
+            with open(self.config_path, 'r') as f:
+                config = yaml.safe_load(f)
 
-        # Validate required fields
-        required = ['experiment_name', 'base_scenario']
-        for field in required:
-            if field not in config:
-                raise ValueError(f"Missing required field in batch config: {field}")
+            # Validate required fields
+            required = ['experiment_name', 'base_scenario']
+            for field in required:
+                if field not in config:
+                    raise ValueError(f"Missing required field in batch config: {field}")
 
-        return config
+            return config
+
+        except FileNotFoundError as e:
+            error_context = classify_error(
+                e,
+                operation="Loading batch configuration",
+                file_path=self.config_path
+            )
+            error_handler = ErrorHandler()
+            error_handler.handle_error(error_context)
+            raise
+
+        except yaml.YAMLError as e:
+            error_context = classify_error(
+                e,
+                operation="Parsing batch configuration YAML",
+                file_path=self.config_path
+            )
+            error_handler = ErrorHandler()
+            error_handler.handle_error(error_context)
+            raise
+
+        except ValueError as e:
+            error_context = classify_error(
+                e,
+                operation="Validating batch configuration",
+                file_path=self.config_path
+            )
+            error_handler = ErrorHandler()
+            error_handler.handle_error(error_context)
+            raise
 
     def _setup_output_directory(self):
         """Create output directory structure"""
@@ -273,7 +308,35 @@ class BatchRunner:
         except Exception as e:
             result['error'] = str(e)
             result['status'] = 'failed'
-            self.logger.error(f"❌ {run_id}: Failed - {str(e)}")
+
+            # Create error context with full details
+            error_context = classify_error(
+                e,
+                operation=f"Running scenario variation {variation['variation_id']}",
+                scenario_name=self.base_scenario,
+                run_number=run_number,
+                cost_so_far=self.cost_manager.total_cost,
+                additional_context={
+                    'run_id': run_id,
+                    'variation_description': variation.get('description', 'N/A'),
+                    'completed_runs': len(self.completed_runs),
+                    'total_runs': len(self.variations) * self.runs_per_variation
+                }
+            )
+
+            # Handle error with user-friendly message (only for HIGH/FATAL severity)
+            if error_context.severity in [ErrorSeverity.HIGH, ErrorSeverity.FATAL]:
+                should_continue, recovery_actions = self.error_handler.handle_error(error_context)
+
+                # For batch runs, we typically continue even on high severity
+                # (single run failure shouldn't stop entire batch)
+                if not should_continue and error_context.severity == ErrorSeverity.FATAL:
+                    # FATAL errors should halt the entire batch
+                    self.logger.error(f"❌ {run_id}: FATAL error - halting batch")
+                    raise
+            else:
+                # Low/medium severity - just log
+                self.logger.error(f"❌ {run_id}: Failed - {str(e)[:200]}")
 
         return result
 
