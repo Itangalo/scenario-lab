@@ -205,11 +205,13 @@ The test scenario continues to progress normally."""
     @patch.dict(os.environ, {'OPENROUTER_API_KEY': 'test-key'})
     @patch('actor_engine.make_llm_call')
     @patch('world_state_updater.make_llm_call')
-    def test_basic_scenario_execution(self, mock_wsu_call, mock_actor_call):
+    @patch('context_manager.make_llm_call')
+    def test_basic_scenario_execution(self, mock_ctx_call, mock_wsu_call, mock_actor_call):
         """Test that a basic scenario executes successfully"""
         # Set up mocks to use our MockLLMProvider
         mock_actor_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
         mock_wsu_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
+        mock_ctx_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
 
         # Run the scenario
         output_dir = os.path.join(self.test_dir, 'output')
@@ -341,10 +343,12 @@ Test action"""
     @patch.dict(os.environ, {'OPENROUTER_API_KEY': 'test-key'})
     @patch('actor_engine.make_llm_call')
     @patch('world_state_updater.make_llm_call')
-    def test_resume_after_max_turns(self, mock_wsu_call, mock_actor_call):
+    @patch('context_manager.make_llm_call')
+    def test_resume_after_max_turns(self, mock_ctx_call, mock_wsu_call, mock_actor_call):
         """Test resuming a scenario after hitting max_turns"""
         mock_actor_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
         mock_wsu_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
+        mock_ctx_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
 
         output_dir = os.path.join(self.test_dir, 'output')
 
@@ -453,10 +457,12 @@ constraints: []
     @patch.dict(os.environ, {'OPENROUTER_API_KEY': 'test-key'})
     @patch('actor_engine.make_llm_call')
     @patch('world_state_updater.make_llm_call')
-    def test_branch_from_turn(self, mock_wsu_call, mock_actor_call):
+    @patch('context_manager.make_llm_call')
+    def test_branch_from_turn(self, mock_ctx_call, mock_wsu_call, mock_actor_call):
         """Test branching a scenario from a specific turn"""
         mock_actor_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
         mock_wsu_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
+        mock_ctx_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
 
         output_dir = os.path.join(self.test_dir, 'output', 'branch-test', 'run-001')
         os.makedirs(output_dir)

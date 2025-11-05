@@ -81,7 +81,9 @@ class ScenarioStateManager:
                 'total_tokens': cost_tracker.total_tokens,
                 'costs_by_actor': cost_tracker.costs_by_actor,
                 'costs_by_turn': cost_tracker.costs_by_turn,
-                'world_state_costs': cost_tracker.world_state_costs
+                'world_state_costs': cost_tracker.world_state_costs,
+                'start_time': cost_tracker.start_time.isoformat() if cost_tracker.start_time else None,
+                'end_time': cost_tracker.end_time.isoformat() if cost_tracker.end_time else None
             },
             'metrics_tracker_state': {
                 'metrics_by_turn': metrics_tracker.metrics_by_turn,
