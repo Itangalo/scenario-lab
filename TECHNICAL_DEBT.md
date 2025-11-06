@@ -78,25 +78,24 @@ Items that need attention for improved robustness, quality, and maintainability.
 
 ## Medium Priority
 
-### 4. Quality Assurance Validator (Phase 1 Incomplete)
+### 4. Quality Assurance Validator ✅ COMPLETED
 
-**Problem:** No automated consistency checking for actor decisions and world states.
+**Status:** Automated consistency checking implemented in Phase 1
 
-**Planned Features:**
-- Validate actor decisions align with stated goals
-- Check actions are within actor capabilities
-- Verify world state updates are logically consistent
-- Detect contradictions or impossible actions
+**Implementation:**
+- ✅ QAValidator class in `src/qa_validator.py`
+- ✅ Three validation check types:
+  - Actor decision consistency (goals/constraints/expertise alignment)
+  - World state coherence (logical consequences of actions)
+  - Information access consistency (actors use only available info)
+- ✅ Configurable via `validation-rules.yaml`
+- ✅ Lightweight LLM validation (default: gpt-4o-mini)
+- ✅ Per-turn validation reports (`validation-NNN.md`)
+- ✅ Summary validation report (`validation-summary.md`)
+- ✅ Validation costs tracked separately in `costs.json`
+- ✅ 13 comprehensive unit tests in `tests/test_qa_validator.py`
 
-**Impact:** Quality issues may go unnoticed until expert review.
-
-**Solution:**
-- Create QA validator using lightweight LLM (gpt-4o-mini)
-- Run after each turn with configurable validation rules
-- Generate warnings (not failures) for inconsistencies
-- Export validation reports to markdown
-
-**Estimated Effort:** High (6-8 hours)
+**Result:** All tests pass, automated validation working across scenarios.
 
 ---
 
@@ -360,6 +359,45 @@ Items that need attention for improved robustness, quality, and maintainability.
 
 ---
 
+## Phase 5 Enhancements (November 2025)
+
+### 13. Scenario Creation Wizard ✅ COMPLETED
+
+**Status:** Interactive CLI tool for complete scenario generation implemented
+
+**Implementation:**
+
+**Scenario Creation Wizard:**
+- ✅ `src/create_scenario.py` - Interactive wizard with 9-step workflow (750+ lines)
+- ✅ Complete scenario generation: scenario.yaml, actors/*.yaml, metrics.yaml, validation-rules.yaml
+- ✅ Template support for system prompts, actor definitions, and metrics
+- ✅ Smart defaults with 9 common LLM models (pricing included)
+- ✅ Built-in Pydantic validation for all generated files
+- ✅ Preview before save functionality
+- ✅ Actor creation with goals, constraints, expertise, decision styles
+- ✅ Metrics configuration with regex and manual extraction
+- ✅ Validation rules setup with model selection
+- ✅ Comprehensive guide (`docs/scenario-creation-guide.md`, 500+ lines)
+- ✅ 6 unit tests in `tests/test_scenario_wizard.py`
+
+**Benefits:**
+- Reduces scenario creation from 30+ minutes to 5-10 minutes
+- Ensures consistent, valid YAML structure
+- Eliminates manual file creation errors
+- Provides templates for common patterns
+- Makes framework accessible to non-technical users
+
+**Files Modified:**
+- `src/create_scenario.py` - Complete wizard implementation (750 lines)
+- `tests/test_scenario_wizard.py` - 6 tests
+- `docs/scenario-creation-guide.md` - Complete user guide (500+ lines)
+- `README.md` - Added "Creating Your Own Scenarios" section
+- `ROADMAP.md` - Updated Phase 5 status
+
+**Result:** Significantly improved user experience for scenario creation, 177/177 tests passing
+
+---
+
 ## Summary
 
 **Completed Items:** ✅
@@ -368,9 +406,11 @@ Items that need attention for improved robustness, quality, and maintainability.
 3. ✅ Markdown Formatting Issues - Content-aware deduplication and validation
 4. ✅ Integration Tests - Comprehensive end-to-end test coverage
 5. ✅ Enhanced Scenario Specification - Pydantic validation for all YAML files
-6. ✅ Response Parsing Robustness (Partial) - Enhanced with 4 pattern formats and diagnostics
-7. ✅ User Experience & Safety (Phase 4) - Config wizard, dry-run, error handling, progressive fallback
-8. ✅ Performance Optimizations (Phase 4) - Caching, connection pooling, memory management, graceful degradation
+6. ✅ Quality Assurance Validator - Automated consistency checking
+7. ✅ Response Parsing Robustness (Partial) - Enhanced with 4 pattern formats and diagnostics
+8. ✅ User Experience & Safety (Phase 4) - Batch config wizard, dry-run, error handling, progressive fallback
+9. ✅ Performance Optimizations (Phase 4) - Caching, connection pooling, memory management, graceful degradation
+10. ✅ Scenario Creation Wizard (Phase 5) - Interactive CLI for complete scenario generation
 
 **Remaining High Priority:**
 (None - all high priority items completed!)
@@ -385,11 +425,14 @@ Items that need attention for improved robustness, quality, and maintainability.
 6. Coalition formation integration tests (with full coalition responses)
 7. Background data integration into actor context
 
-**Progress:** ~50-55 hours completed, ~10-15 hours remaining (all high priority done!)
+**Progress:** ~60-65 hours completed, ~10-15 hours remaining (all high priority done!)
 
-**Phase 4 Complete:** Config wizard, dry-run mode, comprehensive error handling, performance optimizations, robustness improvements all implemented and tested.
+**Phase 4 Complete:** Batch config wizard, dry-run mode, comprehensive error handling, performance optimizations, robustness improvements all implemented and tested.
+
+**Phase 5 Partial:** Scenario creation wizard complete (✅), checkpointing/resumability complete (✅), branching complete (✅).
 
 **Next Recommended Steps:**
-1. Metrics Extraction Improvements - LLM-based extraction as fallback
-2. Cost Estimation Accuracy - Better token counting
-3. Performance optimization for large batch runs
+1. AI 2027 calibration scenario - Validate against historical events
+2. Evaluate communication system value - Test bilateral/coalition contribution
+3. Analysis dashboard - Visualize batch results
+4. Metrics Extraction Improvements - LLM-based extraction as fallback

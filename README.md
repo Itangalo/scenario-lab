@@ -449,6 +449,44 @@ cp .env.example .env
 # Edit .env and add your OPENROUTER_API_KEY
 ```
 
+### Creating Your Own Scenarios
+
+Use the interactive scenario creation wizard to build custom scenarios:
+
+```bash
+python src/create_scenario.py
+```
+
+The wizard guides you through creating:
+
+- **Scenario definition**: Name, description, initial world state, turn parameters
+- **Actor profiles**: Multiple actors with goals, constraints, expertise, and decision styles
+- **Metrics**: Quantitative and qualitative measurements (optional)
+- **Validation rules**: Automated consistency checking (optional)
+
+**Example workflow:**
+```bash
+# Create a new scenario interactively
+python src/create_scenario.py
+
+# Answer the wizard's questions to define:
+#   - Scenario name and context
+#   - Number of turns and duration
+#   - 2+ actors with distinct roles
+#   - Metrics to track (optional)
+#   - Validation rules (optional)
+
+# Outputs complete scenario to scenarios/your-scenario-name/
+```
+
+**What gets created:**
+- `scenario.yaml` - Main scenario configuration
+- `actors/*.yaml` - Actor definitions with goals and constraints
+- `metrics.yaml` - Metric definitions (if specified)
+- `validation-rules.yaml` - QA validation config (if enabled)
+
+See [Scenario Creation Guide](docs/scenario-creation-guide.md) for detailed instructions, templates, and best practices.
+
 ### Running a Scenario
 
 Run the test scenario:
@@ -646,6 +684,7 @@ Comprehensive guides are available in the `docs/` directory:
 
 ### Core Documentation
 
+- **[Scenario Creation Guide](docs/scenario-creation-guide.md)** - Interactive wizard for creating complete scenarios with actors, metrics, and validation
 - **[Batch Execution Guide](docs/batch-execution-guide.md)** - Complete guide to running batch experiments with parameter variations
 - **[Batch Config Wizard Guide](docs/batch-config-wizard-guide.md)** - Interactive wizard for creating batch configurations, including dry-run mode
 - **[Error Handling Guide](docs/error-handling-guide.md)** - User-friendly error messages, recovery strategies, and troubleshooting
