@@ -398,6 +398,59 @@ Items that need attention for improved robustness, quality, and maintainability.
 
 ---
 
+### 14. Calibration Methodology ✅ COMPLETED
+
+**Status:** Comprehensive calibration system for AI 2027 scenario implemented
+
+**Implementation:**
+
+**Calibration Documentation:**
+- ✅ `scenarios/ai-2027/CALIBRATION.md` - Detailed calibration methodology
+- ✅ `scenarios/ai-2027/calibration-results-template.md` - Comprehensive results template
+- ✅ `docs/calibration-guide.md` - Complete calibration guide (500+ lines)
+- ✅ AI 2027 README updated with calibration instructions
+
+**Calibration Framework:**
+- Four validation metrics with 0-10 scoring:
+  - Decision Realism: Actor behavior vs. real counterparts
+  - Timeline Plausibility: Progression pace realism
+  - Causality Coherence: Realistic downstream effects
+  - Actor Interaction Realism: Relationship dynamics
+- Historical baseline: Real AI events 2024-2025
+- Event comparison system with prediction accuracy scoring
+- Target: ≥7.5/10 average for research suitability
+- Confidence bounds: Excellent (≥8/10), Good (6-7.9/10), Fair (4-5.9/10), Poor (<4/10)
+
+**Calibration Process:**
+- Run 12-turn simulation covering 2024-2025 period
+- Compare against major AI events (model releases, regulations, research)
+- Score each event prediction (timing, magnitude, actor response)
+- Identify systematic biases and blind spots
+- Refine prompts based on findings
+- Document results using standardized template
+
+**Benefits:**
+- Validates framework produces realistic simulations
+- Identifies prompt improvements systematically
+- Establishes confidence bounds for research use
+- Guides framework development priorities
+- Enables evidence-based prompt tuning
+
+**Files Created:**
+- `scenarios/ai-2027/CALIBRATION.md` - Methodology (200+ lines)
+- `scenarios/ai-2027/calibration-results-template.md` - Results template (500+ lines)
+- `docs/calibration-guide.md` - User guide (500+ lines)
+
+**Documentation Updated:**
+- `scenarios/ai-2027/README.md` - Added calibration section
+- `README.md` - Added calibration guide link
+- `CLAUDE.md` - Added calibration methodology section
+- `ROADMAP.md` - Updated Phase 5 validation status
+
+**Result:** Complete calibration system enabling systematic validation of simulation realism
+
+---
+
 ## Summary
 
 **Completed Items:** ✅
@@ -411,6 +464,7 @@ Items that need attention for improved robustness, quality, and maintainability.
 8. ✅ User Experience & Safety (Phase 4) - Batch config wizard, dry-run, error handling, progressive fallback
 9. ✅ Performance Optimizations (Phase 4) - Caching, connection pooling, memory management, graceful degradation
 10. ✅ Scenario Creation Wizard (Phase 5) - Interactive CLI for complete scenario generation
+11. ✅ Calibration Methodology (Phase 5) - AI 2027 calibration system with comprehensive validation
 
 **Remaining High Priority:**
 (None - all high priority items completed!)
@@ -425,14 +479,14 @@ Items that need attention for improved robustness, quality, and maintainability.
 6. Coalition formation integration tests (with full coalition responses)
 7. Background data integration into actor context
 
-**Progress:** ~60-65 hours completed, ~10-15 hours remaining (all high priority done!)
+**Progress:** ~65-70 hours completed, ~8-12 hours remaining (all high priority done!)
 
 **Phase 4 Complete:** Batch config wizard, dry-run mode, comprehensive error handling, performance optimizations, robustness improvements all implemented and tested.
 
-**Phase 5 Partial:** Scenario creation wizard complete (✅), checkpointing/resumability complete (✅), branching complete (✅).
+**Phase 5 Partial:** Scenario creation wizard complete (✅), calibration methodology complete (✅), checkpointing/resumability complete (✅), branching complete (✅).
 
 **Next Recommended Steps:**
-1. AI 2027 calibration scenario - Validate against historical events
+1. Run initial AI 2027 calibration - Execute baseline calibration and document results
 2. Evaluate communication system value - Test bilateral/coalition contribution
 3. Analysis dashboard - Visualize batch results
 4. Metrics Extraction Improvements - LLM-based extraction as fallback

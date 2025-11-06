@@ -685,6 +685,7 @@ Comprehensive guides are available in the `docs/` directory:
 ### Core Documentation
 
 - **[Scenario Creation Guide](docs/scenario-creation-guide.md)** - Interactive wizard for creating complete scenarios with actors, metrics, and validation
+- **[Calibration Guide](docs/calibration-guide.md)** - Validating framework realism against real-world events
 - **[Batch Execution Guide](docs/batch-execution-guide.md)** - Complete guide to running batch experiments with parameter variations
 - **[Batch Config Wizard Guide](docs/batch-config-wizard-guide.md)** - Interactive wizard for creating batch configurations, including dry-run mode
 - **[Error Handling Guide](docs/error-handling-guide.md)** - User-friendly error messages, recovery strategies, and troubleshooting

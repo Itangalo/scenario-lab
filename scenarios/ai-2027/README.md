@@ -255,6 +255,54 @@ This enables:
 - Sensitivity analysis on actor behaviors
 - Model comparison (do cheaper models produce similar results?)
 
+## Calibration and Validation
+
+This scenario serves as Scenario Lab's primary **calibration scenario** - a tool for validating framework realism by comparing simulations against real-world AI developments.
+
+### Using for Calibration
+
+**Quick Start:**
+```bash
+# Run 12-month calibration (Jan 2024 - Jan 2025)
+python src/run_scenario.py scenarios/ai-2027 --max-turns 12 --credit-limit 5.00
+
+# Document results
+cp scenarios/ai-2027/calibration-results-template.md \
+   scenarios/ai-2027/calibration-results-$(date +%Y-%m).md
+
+# Compare simulation vs. reality, calculate scores
+```
+
+**Calibration Benefits:**
+- Validate that framework produces realistic simulations
+- Identify prompt improvements needed
+- Establish confidence bounds for research use
+- Guide framework development priorities
+
+See:
+- `CALIBRATION.md` - Detailed methodology
+- `calibration-results-template.md` - Results documentation template
+- `docs/calibration-guide.md` - Complete calibration guide
+
+### Calibration Metrics
+
+For January 2024 - January 2025 period, compare simulations against:
+
+**Real AI Events:**
+- Model releases (GPT-4o, Claude 3.5, o1, Gemini 2.0, DeepSeek R1)
+- Capability benchmarks achieved
+- Regulatory developments (EU AI Act, US AI Safety Institute)
+- Alignment research advances
+- Economic impacts (automation adoption, job market)
+
+**Scoring Dimensions:**
+- Decision Realism: Do actors behave like real counterparts?
+- Timeline Plausibility: Is progression pace realistic?
+- Causality Coherence: Do events cause realistic downstream effects?
+- Actor Interaction Realism: Are dynamics between actors realistic?
+
+**Target:** ≥7.5/10 average for research suitability
+
 ## Credits
 
 This scenario is based on "AI 2027" by:

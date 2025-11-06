@@ -486,11 +486,17 @@ See detailed breakdown in "Future Phases" section below for full component list.
    - Metric templates
    - Composition system for building scenarios
 
-6. **Advanced Validation** ⏸️
-   - Calibration scenarios (e.g., "AI 2027")
-   - Expert review workflows
-   - Historical scenario comparison
-   - Realism scoring
+6. **Advanced Validation** 🔄 IN PROGRESS (1 of 4 complete)
+   - ✅ Calibration methodology ("AI 2027" calibration)
+     - `scenarios/ai-2027/CALIBRATION.md` - Detailed methodology
+     - `scenarios/ai-2027/calibration-results-template.md` - Results template
+     - `docs/calibration-guide.md` - Complete calibration guide (500+ lines)
+     - Validation metrics: Decision Realism, Timeline Plausibility, Causality Coherence, Actor Interaction
+     - Historical baseline: Real AI events from 2024-2025
+     - Target: ≥7.5/10 for research suitability
+   - ⏸️ Expert review workflows (systematic expert consultation process)
+   - ⏸️ Cross-scenario validation (test generalization)
+   - ⏸️ Automated realism scoring (ML-based evaluation)
    - Note: Basic QA validation already implemented in Phase 1
 
 **Success Criteria:**
@@ -498,9 +504,9 @@ See detailed breakdown in "Future Phases" section below for full component list.
 - ✅ Scenario branching for what-if analysis (complete)
 - ✅ Easy scenario creation (CLI wizard complete, GUI enhancement pending)
 - ⏸️ Reusable components reduce duplication
-- ⏸️ Calibration against historical events
+- ✅ Calibration methodology established (AI 2027 calibration system complete)
 - ⏸️ Professional analysis and reporting (advanced tools pending)
-- ✅ Full scenario lifecycle support (creation, branching, resuming complete)
+- ✅ Full scenario lifecycle support (creation, branching, resuming, validation complete)
 
 ---
 

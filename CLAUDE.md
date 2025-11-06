@@ -138,6 +138,38 @@ The README.md outlines a 5-phase development roadmap:
 - **Phase 4**: ✅ COMPLETE - Batch Processing (parallel execution, statistical analysis, cost management, error handling, performance optimization)
 - **Phase 5**: 🔄 PARTIAL - Advanced Features (✅ branching, ✅ resumable scenarios, ✅ scenario creation wizard, ⏳ dashboard)
 
+## Calibration and Validation
+
+The framework includes comprehensive calibration capabilities using the **AI 2027** scenario as a validation tool.
+
+**Purpose:**
+- Validate framework realism by comparing simulations against real AI developments (2024-2025)
+- Identify systematic biases and blind spots
+- Tune actor and scenario prompts based on evidence
+- Establish confidence bounds for research use
+
+**Calibration Methodology:**
+- Compare simulated events against real-world timeline
+- Score decision realism, timeline plausibility, causality coherence, actor interactions
+- Target ≥7.5/10 average for research suitability
+- Document findings and refine prompts iteratively
+
+**Key Documents:**
+- `scenarios/ai-2027/CALIBRATION.md` - Detailed methodology
+- `scenarios/ai-2027/calibration-results-template.md` - Results documentation template
+- `docs/calibration-guide.md` - Complete calibration guide
+
+**Calibration Metrics:**
+- Decision Realism (0-10): Do actors behave like real counterparts?
+- Timeline Plausibility (0-10): Is progression pace realistic?
+- Causality Coherence (0-10): Do events cause realistic downstream effects?
+- Actor Interaction Realism (0-10): Are dynamics between actors realistic?
+
+**Historical Baseline:**
+- Real AI events from 2024-2025 (model releases, regulations, research advances)
+- Comparison scoring system for event prediction accuracy
+- Systematic prompt refinement based on findings
+
 ## Implementation Guidance
 
 When beginning implementation:
@@ -151,7 +183,7 @@ When beginning implementation:
 7. Build quality assurance validation early - use lightweight models to check consistency
 8. Plan for context management as scenarios may be long-running
 9. Design communication types and visibility rules into the core architecture
-10. Create "AI 2027" calibration scenario for validation testing
+10. Use "AI 2027" calibration scenario for validation testing - compare against real 2024-2025 events
 
 ## Example Use Cases
 
