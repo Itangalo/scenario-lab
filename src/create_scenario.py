@@ -369,11 +369,74 @@ def create_metric_interactive() -> Dict[str, Any]:
     return metric
 
 
+def load_example_scenario() -> Dict[str, Any]:
+    """
+    Load the example scenario configuration
+
+    Returns:
+        Dict with 'scenario', 'actors', 'metrics', 'validation' keys
+    """
+    example_path = "scenarios/example-policy-negotiation"
+
+    if not os.path.exists(example_path):
+        print_warning("Example scenario not found - will start from scratch")
+        return {}
+
+    result = {}
+
+    # Load scenario.yaml
+    scenario_file = os.path.join(example_path, "scenario.yaml")
+    if os.path.exists(scenario_file):
+        with open(scenario_file, 'r') as f:
+            result['scenario'] = yaml.safe_load(f)
+
+    # Load actors
+    actors_dir = os.path.join(example_path, "actors")
+    if os.path.exists(actors_dir):
+        result['actors'] = []
+        for actor_file in os.listdir(actors_dir):
+            if actor_file.endswith('.yaml'):
+                actor_path = os.path.join(actors_dir, actor_file)
+                with open(actor_path, 'r') as f:
+                    result['actors'].append(yaml.safe_load(f))
+
+    # Load metrics
+    metrics_file = os.path.join(example_path, "metrics.yaml")
+    if os.path.exists(metrics_file):
+        with open(metrics_file, 'r') as f:
+            result['metrics'] = yaml.safe_load(f)
+
+    # Load validation rules
+    validation_file = os.path.join(example_path, "validation-rules.yaml")
+    if os.path.exists(validation_file):
+        with open(validation_file, 'r') as f:
+            result['validation'] = yaml.safe_load(f)
+
+    return result
+
+
 def create_scenario_interactive():
     """Main interactive wizard for creating scenario configuration"""
     print_header("Scenario Creation Wizard")
     print("This wizard will help you create a complete scenario configuration.")
     print("Press Ctrl+C at any time to cancel.\n")
+
+    # Ask if user wants to start from example
+    print_info("You can start from scratch or use the example scenario as a template.")
+    print_info("The example demonstrates all features with detailed comments.")
+    print()
+    use_example = ask_yes_no("Start from example scenario? (Recommended for first-time users)", True)
+
+    # Load example if requested
+    example_data = {}
+    if use_example:
+        example_data = load_example_scenario()
+        if example_data:
+            print_success("Loaded example scenario - you can modify any values as we go")
+        else:
+            print_warning("Could not load example - starting from scratch")
+            use_example = False
+    print()
 
     scenario = {}
     actors_list = []
@@ -385,14 +448,25 @@ def create_scenario_interactive():
         # ============================================================
         print_header("Step 1: Basic Information")
 
+        # Use example values as defaults if available
+        example_scenario = example_data.get('scenario', {})
+
+        default_name = example_scenario.get('name', "New Policy Scenario")
+        default_desc = example_scenario.get('description', "A scenario exploring policy decisions")
+
+        if use_example:
+            print_info(f"Example name: {default_name}")
+            print_info(f"Example description: {default_desc}")
+            print()
+
         scenario['name'] = ask_question(
             "Scenario name",
-            "New Policy Scenario"
+            default_name
         )
 
         scenario['description'] = ask_question(
             "Brief description",
-            "A scenario exploring policy decisions"
+            default_desc
         )
 
         # ============================================================
@@ -401,15 +475,21 @@ def create_scenario_interactive():
         print_header("Step 2: System Prompt")
         print_info("The system prompt sets the context for all actors")
 
-        default_system_prompt = """You are participating in a multi-turn scenario simulation focused on AI policy and governance.
+        # Use example or fallback to default
+        default_system_prompt = example_scenario.get('system_prompt', """You are participating in a multi-turn scenario simulation focused on AI policy and governance.
 Your goal is to act realistically as your assigned role, making strategic decisions that align
 with your character's goals, constraints, and decision-making style.
 
 Be specific and concrete in your actions. Consider both short-term tactics and long-term strategy.
 Your decisions should reflect realistic policy negotiation dynamics, including compromise,
-strategic positioning, and consideration of stakeholder interests."""
+strategic positioning, and consideration of stakeholder interests.""")
 
-        if ask_yes_no("Use default system prompt?", True):
+        if use_example and example_scenario.get('system_prompt'):
+            print_info("Example system prompt:")
+            print(f"{Colors.BLUE}{default_system_prompt[:200]}...{Colors.END}")
+            print()
+
+        if ask_yes_no("Use default/example system prompt?", True):
             scenario['system_prompt'] = default_system_prompt
         else:
             scenario['system_prompt'] = ask_multiline(
@@ -423,9 +503,17 @@ strategic positioning, and consideration of stakeholder interests."""
         print_header("Step 3: Initial World State")
         print_info("Describe the starting situation for the scenario")
 
+        default_world_state = example_scenario.get('initial_world_state',
+            "The year is [YEAR]. [DESCRIBE INITIAL SITUATION]\n\nKey issues:\n- [ISSUE 1]\n- [ISSUE 2]")
+
+        if use_example and example_scenario.get('initial_world_state'):
+            print_info("Example world state (first 300 chars):")
+            print(f"{Colors.BLUE}{default_world_state[:300]}...{Colors.END}")
+            print()
+
         scenario['initial_world_state'] = ask_multiline(
             "Enter initial world state",
-            "The year is [YEAR]. [DESCRIBE INITIAL SITUATION]\n\nKey issues:\n- [ISSUE 1]\n- [ISSUE 2]"
+            default_world_state
         )
 
         # ============================================================
@@ -433,8 +521,15 @@ strategic positioning, and consideration of stakeholder interests."""
         # ============================================================
         print_header("Step 4: Scenario Parameters")
 
+        default_turns = str(example_scenario.get('turns', 3))
+        default_duration = example_scenario.get('turn_duration', "1 month")
+
+        if use_example:
+            print_info(f"Example: {default_turns} turns, {default_duration} each")
+            print()
+
         while True:
-            turns_str = ask_question("Number of turns", "3")
+            turns_str = ask_question("Number of turns", default_turns)
             try:
                 turns = int(turns_str)
                 if turns > 0:
@@ -447,7 +542,7 @@ strategic positioning, and consideration of stakeholder interests."""
 
         scenario['turn_duration'] = ask_question(
             "Duration of each turn",
-            "1 month"
+            default_duration
         )
 
         # ============================================================
@@ -455,6 +550,10 @@ strategic positioning, and consideration of stakeholder interests."""
         # ============================================================
         print_header("Step 5: World State Model")
         print_info("This model synthesizes world state updates from actor actions")
+
+        if use_example and example_scenario.get('world_state_model'):
+            print_info(f"Example uses: {example_scenario['world_state_model']}")
+            print()
 
         scenario['world_state_model'] = select_model("world_state")
 
@@ -464,6 +563,22 @@ strategic positioning, and consideration of stakeholder interests."""
         print_header("Step 6: Create Actors")
         print_info("Add at least 2 actors for an interesting scenario")
 
+        # If using example, offer to load example actors
+        example_actors = example_data.get('actors', [])
+        if use_example and example_actors:
+            print()
+            print_info(f"Example has {len(example_actors)} actors:")
+            for ex_actor in example_actors:
+                print(f"  - {ex_actor.get('name', 'Unknown')} ({ex_actor.get('short_name', 'unknown')})")
+            print()
+
+            if ask_yes_no("Use example actors as starting point?", True):
+                actors_list = example_actors.copy()
+                print_success(f"Loaded {len(actors_list)} actors from example")
+                print_info("You can modify them or add more actors below")
+                print()
+
+        # Add or create actors
         while len(actors_list) < 2 or ask_yes_no(f"Add another actor? (currently {len(actors_list)})", len(actors_list) < 3):
             actor = create_actor_interactive()
             actors_list.append(actor)
@@ -477,28 +592,62 @@ strategic positioning, and consideration of stakeholder interests."""
         # ============================================================
         print_header("Step 7: Metrics (Optional)")
 
-        if ask_yes_no("Define metrics to track?", True):
-            metrics_dict['scenario_name'] = scenario['name']
-            metrics_dict['metrics'] = {}
+        # Check if example has metrics
+        example_metrics = example_data.get('metrics', {})
+        if use_example and example_metrics.get('metrics'):
+            print_info(f"Example has {len(example_metrics['metrics'])} metrics defined")
+            print_info("You can use these as a starting point or create your own")
+            print()
 
-            while True:
-                metric_name = ask_question("Metric name (snake_case, empty to finish)", "")
-                if not metric_name:
-                    break
+            if ask_yes_no("Use example metrics?", True):
+                metrics_dict = example_metrics.copy()
+                metrics_dict['scenario_name'] = scenario['name']  # Update scenario name
+                print_success(f"Loaded {len(metrics_dict.get('metrics', {}))} metrics from example")
+            else:
+                if ask_yes_no("Define metrics to track?", True):
+                    metrics_dict['scenario_name'] = scenario['name']
+                    metrics_dict['metrics'] = {}
 
-                metric_config = create_metric_interactive()
-                metrics_dict['metrics'][metric_name] = metric_config
-                print_success(f"Added metric: {metric_name}")
+                    while True:
+                        metric_name = ask_question("Metric name (snake_case, empty to finish)", "")
+                        if not metric_name:
+                            break
+
+                        metric_config = create_metric_interactive()
+                        metrics_dict['metrics'][metric_name] = metric_config
+                        print_success(f"Added metric: {metric_name}")
+        else:
+            if ask_yes_no("Define metrics to track?", True):
+                metrics_dict['scenario_name'] = scenario['name']
+                metrics_dict['metrics'] = {}
+
+                while True:
+                    metric_name = ask_question("Metric name (snake_case, empty to finish)", "")
+                    if not metric_name:
+                        break
+
+                    metric_config = create_metric_interactive()
+                    metrics_dict['metrics'][metric_name] = metric_config
+                    print_success(f"Added metric: {metric_name}")
 
         # ============================================================
         # VALIDATION RULES
         # ============================================================
         print_header("Step 8: Validation Rules (Optional)")
 
+        example_validation = example_data.get('validation', {})
+        if use_example and example_validation:
+            print_info("Example has validation configured")
+            print_info(f"Model: {example_validation.get('validation_model', 'not specified')}")
+            print()
+
         use_validation = ask_yes_no("Enable automated validation?", True)
         validation_config = None
 
         if use_validation:
+            # If example exists, use its model as default
+            default_val_model = example_validation.get('validation_model') if example_validation else None
+
             validation_config = {
                 'validation_model': select_model("validation"),
                 'checks': {

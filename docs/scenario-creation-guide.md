@@ -19,6 +19,34 @@ python src/create_scenario.py
 
 The wizard will guide you through 9 steps to create a complete scenario.
 
+**First-time users**: The wizard will offer to start from the example scenario (`scenarios/example-policy-negotiation/`), which demonstrates all features with detailed comments. This is **highly recommended** for learning the configuration format.
+
+## Learning by Example
+
+Before or during scenario creation, we recommend reviewing the **example scenario**:
+
+**Location**: `scenarios/example-policy-negotiation/`
+
+**What it demonstrates**:
+
+- Complete scenario configuration with detailed inline comments
+- Two-party negotiation structure (regulator vs. tech company)
+- 10 different types of metrics (regex and manual extraction)
+- Full validation configuration
+- Best practices for actor design (goals, constraints, expertise, decision style)
+
+**How to use it**:
+
+1. **Read the files** to understand the configuration format
+2. **Run the wizard** and choose "Start from example" when prompted
+3. **Modify values** step-by-step to create your own scenario
+4. **Run the example** directly to see how it works:
+   ```bash
+   python src/run_scenario.py scenarios/example-policy-negotiation --max-turns 2
+   ```
+
+See the example's [README](../scenarios/example-policy-negotiation/README.md) for detailed explanations of each design choice.
+
 ## Step-by-Step Guide
 
 ### Step 1: Basic Information
@@ -64,24 +92,21 @@ Describe the starting situation for the scenario:
 - Issues on the table
 - Relevant constraints or conditions
 
-**Example:**
-```
-The year is 2025. An international climate summit is convening to negotiate
-binding emissions commitments. Three major economies must agree on:
+**Example from template scenario:**
 
-- Emission reduction targets for 2030
-- Financial support for developing nations
-- Technology transfer mechanisms
-- Verification and enforcement procedures
+See `scenarios/example-policy-negotiation/scenario.yaml` lines 24-48 for a detailed example of how to structure initial world state, including:
 
-Current positions are far apart, with each nation prioritizing different concerns.
-```
+- Clear timeframe and context
+- Specific issues under negotiation
+- Starting positions for each party
+- External pressures and stakes
 
 **Tips:**
 - Be specific about the situation
 - Define clear issues to be resolved
 - Set realistic constraints
 - Include relevant background information
+- Show starting positions to create tension (see example scenario)
 
 ### Step 4: Scenario Parameters
 
@@ -118,6 +143,8 @@ Select the LLM model that will synthesize world state updates from actor actions
 ### Step 6: Create Actors
 
 Create at least 2 actors for your scenario. For each actor, you'll define:
+
+**See the example scenario actors** in `scenarios/example-policy-negotiation/actors/` for complete, annotated examples of well-designed actors.
 
 #### 6.1 Basic Information
 
@@ -237,6 +264,8 @@ proposals based on legitimate concerns.
 
 Define quantitative and qualitative metrics to track throughout the scenario.
 
+**See comprehensive examples** in `scenarios/example-policy-negotiation/metrics.yaml`, which demonstrates 10 different metric types with detailed comments explaining each pattern.
+
 For each metric, specify:
 
 - **Description**: What this metric measures
@@ -289,6 +318,8 @@ compromise_level:
 ### Step 8: Validation Rules (Optional)
 
 Enable automated consistency checking with lightweight LLM models.
+
+**See the example configuration** in `scenarios/example-policy-negotiation/validation-rules.yaml` for a fully annotated validation setup with explanations of each check type.
 
 **Available checks:**
 
@@ -375,19 +406,71 @@ This lets you:
 
 See [Batch Execution Guide](batch-execution-guide.md) for details.
 
+## Using the Example Scenario
+
+The example scenario (`scenarios/example-policy-negotiation/`) is designed specifically to help you learn. Here are three ways to use it:
+
+### Approach 1: Read Before Creating
+
+1. Open `scenarios/example-policy-negotiation/scenario.yaml` and read the comments
+2. Review the actor files in `actors/` to see well-designed actor configurations
+3. Check `metrics.yaml` to understand different metric types
+4. Look at `validation-rules.yaml` to see validation setup
+5. Then run the wizard and create your own scenario with this knowledge
+
+### Approach 2: Start from Example in Wizard
+
+1. Run: `python src/create_scenario.py`
+2. When prompted, choose "Start from example scenario" (Y)
+3. The wizard loads all example values and shows them step-by-step
+4. Modify each value to fit your use case
+5. Save with a new name
+
+### Approach 3: Copy and Modify
+
+```bash
+# Copy the example
+cp -r scenarios/example-policy-negotiation scenarios/my-scenario
+
+# Edit the files directly
+# Update scenario.yaml, actors/*.yaml, metrics.yaml as needed
+
+# Run your modified scenario
+python src/run_scenario.py scenarios/my-scenario --max-turns 2
+```
+
+### Running the Example
+
+You can run the example scenario directly to see how it behaves:
+
+```bash
+# Test run (2 turns only)
+python src/run_scenario.py scenarios/example-policy-negotiation --max-turns 2
+
+# Full 5-turn run
+python src/run_scenario.py scenarios/example-policy-negotiation
+```
+
+**Expected cost**: ~$0.10-0.30 for full 5-turn run.
+
+See the [example README](../scenarios/example-policy-negotiation/README.md) for more details.
+
 ## Example Scenarios
 
-### Example 1: Policy Negotiation
+### Example 1: Policy Negotiation (Template)
 
+**Location:** `scenarios/example-policy-negotiation/`
 **Scenario type:** Two-party negotiation
 **Actors:** 2 (regulator + company)
-**Turns:** 3-5
-**Best for:** Testing regulatory dynamics, compliance strategies
+**Turns:** 5
+**Best for:** Learning the framework, testing regulatory dynamics
 
 **Key features:**
-- Clear opposing interests
-- Defined negotiation space
-- Measurable outcomes (regulatory parameters)
+- Complete configuration with detailed comments
+- Clear opposing interests creating negotiation dynamics
+- 10 example metrics showing different extraction methods
+- Full validation configuration
+- Best practices for actor design
 
 ### Example 2: Multi-Stakeholder Summit
 

@@ -9,6 +9,7 @@ import shutil
 import logging
 from datetime import datetime
 from pathlib import Path
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from actor_engine import load_actor, Actor
 from world_state import WorldState
 from world_state_updater import WorldStateUpdater
@@ -182,7 +183,7 @@ def execute_bilateral_communications(
     logger: logging.Logger
 ):
     """
-    Execute Phase 1: Bilateral communications between actors
+    Execute Phase 1: Bilateral communications between actors (parallelized for performance)
 
     Args:
         actors: Dictionary of actor short names to Actor objects
@@ -194,7 +195,14 @@ def execute_bilateral_communications(
         num_turns: Total number of turns in scenario
         logger: Logger instance
     """
-    for actor_short_name, actor in actors.items():
+
+    def _decide_communication(actor_short_name: str, actor: Actor):
+        """
+        Helper function for a single actor to decide on bilateral communication (runs in parallel)
+
+        Returns:
+            Tuple of (actor_short_name, actor, comm_decision, actor_context, other_actor_names)
+        """
         # Get contextualized world state for this actor
         actor_context = context_manager.get_context_for_actor(
             actor.name,
@@ -206,11 +214,49 @@ def execute_bilateral_communications(
         # Get list of other actors
         other_actor_names = [a.name for a in actors.values() if a.name != actor.name]
 
-        # Ask if actor wants to communicate privately
+        # Ask if actor wants to communicate privately (LLM call - runs in parallel)
+        comm_decision = None
         if len(other_actor_names) > 0:
-            logger.debug(f"{actor.name} considering private communication...")
             comm_decision = actor.decide_communication(actor_context, turn, num_turns, other_actor_names)
 
+        return (actor_short_name, actor, comm_decision, actor_context, other_actor_names)
+
+    def _respond_to_bilateral(target_actor: Actor, target_context: str, initiator_name: str, message: str):
+        """
+        Helper function for target actor to respond to bilateral (runs in parallel)
+
+        Returns:
+            Tuple of (target_actor, response)
+        """
+        response = target_actor.respond_to_bilateral(target_context, turn, num_turns, initiator_name, message)
+        return (target_actor, response)
+
+    # PHASE 1: Parallel communication decisions
+    logger.info(f"  🚀 Evaluating bilateral communication opportunities in parallel...")
+    comm_decisions_results = []
+
+    with ThreadPoolExecutor(max_workers=len(actors)) as executor:
+        # Submit all communication decision tasks
+        future_to_actor = {
+            executor.submit(_decide_communication, short_name, actor): (short_name, actor)
+            for short_name, actor in actors.items()
+        }
+
+        # Collect results as they complete
+        for future in as_completed(future_to_actor):
+            short_name, actor = future_to_actor[future]
+            try:
+                result = future.result()
+                comm_decisions_results.append(result)
+            except Exception as e:
+                logger.error(f"  ✗ {actor.name} communication decision failed: {e}")
+                raise
+
+    # PHASE 2: Process decisions and track costs (sequential to avoid race conditions)
+    bilateral_tasks = []  # List of (initiator, target_actor, target_context, message, channel)
+
+    for actor_short_name, actor, comm_decision, actor_context, other_actor_names in comm_decisions_results:
+        if comm_decision:
             # Track communication decision cost
             cost_tracker.record_actor_decision(
                 actor_name=actor.name,
@@ -242,24 +288,44 @@ def execute_bilateral_communications(
                     communication_manager
                 )
 
-                # Target responds
-                logger.debug(f"{target} responding...")
-                response = target_actor.respond_to_bilateral(target_context, turn, num_turns, actor.name, message)
-
-                # Track response cost
-                cost_tracker.record_actor_decision(
-                    actor_name=target,
-                    turn=turn,
-                    model=target_actor.llm_model,
-                    tokens_used=response.get('tokens_used', 0)
-                )
-
-                # Send response
-                communication_manager.send_message(channel.channel_id, target, response['response'])
-
-                logger.info(f"  ✓ Bilateral negotiation completed")
+                # Queue bilateral response for parallel execution
+                bilateral_tasks.append((actor.name, target_actor, target_context, message, channel))
             else:
                 logger.debug(f"  → No private communication from {actor.name}")
+
+    # PHASE 3: Execute bilateral responses in parallel
+    if bilateral_tasks:
+        logger.info(f"  🚀 Processing {len(bilateral_tasks)} bilateral responses in parallel...")
+
+        with ThreadPoolExecutor(max_workers=len(bilateral_tasks)) as executor:
+            # Submit all bilateral response tasks
+            future_to_bilateral = {
+                executor.submit(_respond_to_bilateral, target_actor, target_context, initiator_name, message):
+                    (initiator_name, target_actor, channel)
+                for initiator_name, target_actor, target_context, message, channel in bilateral_tasks
+            }
+
+            # Collect and process responses
+            for future in as_completed(future_to_bilateral):
+                initiator_name, target_actor, channel = future_to_bilateral[future]
+                try:
+                    target_actor_result, response = future.result()
+
+                    # Track response cost
+                    cost_tracker.record_actor_decision(
+                        actor_name=target_actor.name,
+                        turn=turn,
+                        model=target_actor.llm_model,
+                        tokens_used=response.get('tokens_used', 0)
+                    )
+
+                    # Send response
+                    communication_manager.send_message(channel.channel_id, target_actor.name, response['response'])
+
+                    logger.info(f"  ✓ Bilateral negotiation completed: {initiator_name} ↔ {target_actor.name}")
+                except Exception as e:
+                    logger.error(f"  ✗ Bilateral response failed: {e}")
+                    raise
 
 
 def execute_coalition_formation(
@@ -448,7 +514,7 @@ def execute_actor_decisions(
     logger: logging.Logger
 ) -> dict:
     """
-    Execute Phase 2: Public actor decisions
+    Execute Phase 2: Public actor decisions (parallelized for performance)
 
     Args:
         actors: Dictionary of actor short names to Actor objects
@@ -467,12 +533,14 @@ def execute_actor_decisions(
     Returns:
         Dictionary of actor decisions for world state update
     """
-    turn_decisions = {}
-    actor_decisions_for_world_update = {}
 
-    for actor_short_name, actor in actors.items():
-        log_actor_decision(logger, actor.name, turn)
+    def _make_single_actor_decision(actor_short_name: str, actor: Actor):
+        """
+        Helper function to make a single actor's decision (runs in parallel)
 
+        Returns:
+            Tuple of (actor_short_name, actor, decision, actor_context, recent_goals)
+        """
         # Get contextualized world state for this actor (includes communications)
         actor_context = context_manager.get_context_for_actor(
             actor.name,
@@ -492,8 +560,42 @@ def execute_actor_decisions(
             if goals_list:
                 recent_goals = "\n".join(goals_list)
 
-        # Note: communications are already included in actor_context from context_manager
+        # Make decision (this is the slow LLM API call - runs in parallel)
         decision = actor.make_decision(actor_context, turn, num_turns, recent_goals=recent_goals)
+
+        return (actor_short_name, actor, decision, actor_context, recent_goals)
+
+    # PARALLEL PHASE: Execute all actor decisions concurrently
+    logger.info(f"  🚀 Making decisions for {len(actors)} actors in parallel...")
+    actor_results = []
+
+    with ThreadPoolExecutor(max_workers=len(actors)) as executor:
+        # Submit all actor decision tasks
+        future_to_actor = {
+            executor.submit(_make_single_actor_decision, short_name, actor): (short_name, actor)
+            for short_name, actor in actors.items()
+        }
+
+        # Collect results as they complete
+        for future in as_completed(future_to_actor):
+            short_name, actor = future_to_actor[future]
+            try:
+                result = future.result()
+                actor_results.append(result)
+                logger.info(f"  ✓ {actor.name} decision completed")
+            except Exception as e:
+                logger.error(f"  ✗ {actor.name} decision failed: {e}")
+                raise
+
+    # SEQUENTIAL PHASE: Process results and update shared state
+    # This must be sequential to avoid race conditions in world_state, cost_tracker, etc.
+    logger.info(f"  📝 Recording decisions and tracking metrics...")
+    turn_decisions = {}
+    actor_decisions_for_world_update = {}
+
+    for actor_short_name, actor, decision, actor_context, recent_goals in actor_results:
+        log_actor_decision(logger, actor.name, turn)
+
         turn_decisions[actor_short_name] = decision
 
         # Record decision in world state

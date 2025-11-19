@@ -1,0 +1,104 @@
+# METRICS CONFIGURATION
+# Metrics allow you to track quantitative and qualitative outcomes across scenario runs.
+# This is especially useful for batch experiments where you compare variations.
+
+scenario_name: "Example: AI Safety Policy Negotiation"
+
+metrics:
+  # EXAMPLE 1: Numeric metric with regex extraction
+  # This automatically extracts FLOPS values from generated text.
+  # Pattern explanation: matches formats like "10^25 FLOPS" or "1.5 × 10^26 FLOPS"
+  compute_threshold_flops:
+    description: "FLOPS threshold that triggers regulation (key negotiation parameter)"
+    type: "float"
+    unit: "FLOPS"
+    extraction_method: "regex"
+    # This regex matches scientific notation: captures base number and exponent
+    pattern: '(\d+(?:\.\d+)?)\s*[×x]\s*10\^(\d+)\s*FLOPS?'
+    actor_specific: false
+
+  # EXAMPLE 2: Simple integer metric with regex
+  # Extracts timeline values from text like "24 hours" or "72-hour reporting"
+  incident_reporting_hours:
+    description: "Required timeline for incident reporting (hours)"
+    type: "integer"
+    unit: "hours"
+    extraction_method: "regex"
+    # Matches patterns like "24 hours", "72-hour", "48 hour reporting"
+    pattern: '(\d+)\s*[-]?hours?'
+    actor_specific: false
+
+  # EXAMPLE 3: Boolean metric with regex
+  # Checks if specific concepts appear in the negotiation
+  third_party_audits_required:
+    description: "Whether mandatory third-party audits were agreed"
+    type: "boolean"
+    extraction_method: "regex"
+    # Matches various phrasings of third-party audit requirements
+    pattern: 'third[-\s]party\s+audit'
+    actor_specific: false
+
+  # EXAMPLE 4: String metric with manual extraction
+  # For complex or subjective values that need human judgment
+  audit_disclosure_level:
+    description: "Level of audit disclosure (public/confidential/summary-only/mixed)"
+    type: "string"
+    extraction_method: "manual"  # Analyst reviews outputs and sets this value
+    actor_specific: false
+
+  # EXAMPLE 5: Manual assessment metric
+  # Subjective evaluation on a scale
+  compromise_level:
+    description: "Degree of compromise reached (1-10 scale, 10 = full agreement)"
+    type: "integer"
+    extraction_method: "manual"
+    actor_specific: false
+
+  # EXAMPLE 6: Actor-specific metric (regulator)
+  # Tracks individual actor priorities/emphasis
+  regulator_safety_priority:
+    description: "Regulator's emphasis on safety vs. flexibility (1-10, 10 = maximum safety focus)"
+    type: "integer"
+    extraction_method: "manual"
+    actor_specific: true
+    actor: "National AI Safety Regulator"
+
+  # EXAMPLE 7: Actor-specific metric (company)
+  company_innovation_priority:
+    description: "Company's emphasis on innovation freedom vs. compliance (1-10, 10 = maximum freedom)"
+    type: "integer"
+    extraction_method: "manual"
+    actor_specific: true
+    actor: "FrontierAI Technologies"
+
+  # EXAMPLE 8: Process metric - tracks whether specific mechanisms are proposed
+  working_group_proposed:
+    description: "Whether a joint working group was proposed"
+    type: "boolean"
+    extraction_method: "regex"
+    pattern: 'working\s+group|joint\s+committee|collaborative\s+body'
+    actor_specific: false
+
+  # EXAMPLE 9: Standards reference - tracks mention of specific frameworks
+  iso_certification_mentioned:
+    description: "Whether ISO 42001 AI management standard was mentioned"
+    type: "boolean"
+    extraction_method: "regex"
+    pattern: 'ISO\s*(?:\/IEC)?\s*42001'
+    actor_specific: false
+
+  # EXAMPLE 10: Outcome metric
+  regulatory_framework_finalized:
+    description: "Whether parties reached a finalized regulatory framework"
+    type: "boolean"
+    extraction_method: "manual"
+    actor_specific: false
+
+# TIPS FOR CREATING METRICS:
+# 1. Start with 3-5 key metrics that capture core negotiation outcomes
+# 2. Use regex for objective, pattern-based values (numbers, specific terms)
+# 3. Use manual extraction for subjective assessments or complex judgments
+# 4. Balance automatic and manual metrics (too much manual is time-consuming)
+# 5. Test regex patterns on sample text before running full scenarios
+# 6. Actor-specific metrics help track individual behavior patterns
+# 7. Include both process metrics (what was proposed) and outcome metrics (what was agreed)

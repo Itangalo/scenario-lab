@@ -1,0 +1,158 @@
+# QUALITY ASSURANCE VALIDATION RULES
+# This file configures automated consistency checking for your scenario.
+# The QA system uses a lightweight LLM to validate outputs from your main simulation models.
+# This catches logical inconsistencies, unrealistic decisions, and information access violations.
+
+# VALIDATION MODEL
+# Use a cheap, lightweight model since validation runs after every turn.
+# Recommendations:
+#   - openai/gpt-4o-mini: $0.15/M in, $0.60/M out (excellent choice)
+#   - anthropic/claude-3-haiku: $0.25/M in, $1.25/M out (also good)
+# Validation typically costs $0.005-0.02 per turn, making it very affordable.
+validation_model: "openai/gpt-4o-mini"
+
+# VALIDATION CHECKS
+# Each check validates a different aspect of the simulation.
+# You can enable/disable individual checks based on your needs.
+checks:
+  # CHECK 1: Actor Decision Consistency
+  # Validates that actor decisions align with their goals, constraints, and expertise.
+  # This catches cases where actors act out of character or ignore their limitations.
+  actor_decision_consistency:
+    enabled: true
+    description: "Verify that each actor's decisions align with their stated goals, constraints, and expertise levels"
+    prompt_template: |
+      You are validating the consistency of an actor's decision in a policy simulation.
+
+      ACTOR PROFILE:
+      {actor_profile}
+
+      CURRENT WORLD STATE:
+      {world_state}
+
+      ACTOR'S DECISION:
+      Reasoning: {actor_reasoning}
+      Action: {actor_action}
+
+      VALIDATION TASK:
+      Assess whether this decision is consistent with the actor's profile. Check for:
+      1. Goal alignment: Does the action reasonably pursue the actor's stated goals?
+      2. Constraint adherence: Does the action violate any of the actor's constraints?
+      3. Expertise consistency: Does the decision reflect the actor's expertise levels?
+      4. Decision style: Does the approach match the actor's decision-making style?
+
+      Provide your assessment in this format:
+
+      CONSISTENT: [Yes/No]
+
+      ISSUES FOUND:
+      - [List any inconsistencies, or "None" if consistent]
+
+      SEVERITY: [Low/Medium/High - only if issues found]
+
+      EXPLANATION:
+      [Brief explanation of your assessment]
+
+  # CHECK 2: World State Coherence
+  # Validates that world state updates logically follow from actor actions.
+  # This catches unrealistic consequences or missing causal connections.
+  world_state_coherence:
+    enabled: true
+    description: "Verify that world state updates logically follow from actor actions"
+    prompt_template: |
+      You are validating the coherence of a world state update in a policy simulation.
+
+      PREVIOUS WORLD STATE:
+      {previous_world_state}
+
+      ACTIONS TAKEN THIS TURN:
+      {actor_actions}
+
+      NEW WORLD STATE:
+      {new_world_state}
+
+      VALIDATION TASK:
+      Assess whether the new world state logically follows from the actions taken. Check for:
+      1. Causality: Do the state changes make sense given the actions?
+      2. Completeness: Are major consequences of the actions reflected?
+      3. Plausibility: Are the outcomes realistic and proportionate?
+      4. Consistency: Are there any contradictions or logical gaps?
+
+      Provide your assessment in this format:
+
+      COHERENT: [Yes/No]
+
+      ISSUES FOUND:
+      - [List any problems, or "None" if coherent]
+
+      SEVERITY: [Low/Medium/High - only if issues found]
+
+      EXPLANATION:
+      [Brief explanation of your assessment]
+
+  # CHECK 3: Information Access Consistency
+  # Validates that actors only use information they should have access to.
+  # This enforces information asymmetry and prevents unrealistic omniscience.
+  information_access_consistency:
+    enabled: true
+    description: "Verify that actors only reference information they have access to"
+    prompt_template: |
+      You are validating information access in a policy simulation.
+
+      ACTOR: {actor_name}
+
+      INFORMATION AVAILABLE TO THIS ACTOR:
+      - Public world state: {public_world_state}
+      - Private communications: {private_communications}
+
+      INFORMATION NOT AVAILABLE (other actors' private info):
+      {restricted_information}
+
+      ACTOR'S REASONING:
+      {actor_reasoning}
+
+      VALIDATION TASK:
+      Check whether the actor's reasoning references any information they shouldn't have access to.
+      Look for:
+      1. References to other actors' private communications
+      2. Knowledge of information not in public world state
+      3. Awareness of details only known to other actors
+
+      Provide your assessment in this format:
+
+      VALID ACCESS: [Yes/No]
+
+      VIOLATIONS FOUND:
+      - [List any information access violations, or "None" if valid]
+
+      SEVERITY: [Low/Medium/High - only if violations found]
+
+      EXPLANATION:
+      [Brief explanation of your assessment]
+
+# VALIDATION TIMING
+# When to run validation checks
+run_after_each_turn: true  # Validate after every turn (recommended)
+run_at_scenario_end: true  # Generate final summary report
+
+# REPORTING
+# What validation outputs to generate
+generate_turn_reports: true  # Create validation-NNN.md for each turn (recommended for review)
+generate_summary_report: true  # Create validation-summary.md with overall statistics
+include_in_costs: true  # Track validation costs separately in costs.json
+
+# SEVERITY THRESHOLDS
+# How to handle issues of different severity levels
+# Options: "log" (just record), "warn" (display warning), "halt" (stop execution)
+severity_thresholds:
+  low: "log"  # Minor issues - just log them
+  medium: "warn"  # Moderate issues - warn but continue
+  high: "warn"  # Serious issues - warn but continue (change to "halt" to stop on serious issues)
+
+# TIPS FOR VALIDATION:
+# 1. Keep validation enabled for all production runs - it catches subtle issues
+# 2. Use a cheap model - validation runs frequently but doesn't need high capability
+# 3. Review validation reports when results seem off - they often identify the problem
+# 4. Adjust prompt templates if you get false positives for your specific scenario type
+# 5. Set high severity to "halt" if you want to stop immediately on serious consistency issues
+# 6. Validation costs are typically <2% of total scenario cost, making it very cost-effective
