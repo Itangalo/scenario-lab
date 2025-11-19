@@ -21,6 +21,7 @@ from metrics_tracker import MetricsTracker
 from qa_validator import QAValidator
 
 from scenario_lab.models.state import ScenarioState, Decision, CostRecord
+from scenario_lab.utils.logging_config import set_context, log_cost
 
 logger = logging.getLogger(__name__)
 
@@ -91,6 +92,9 @@ class DecisionPhase:
 
         # For each actor, get context and make decision
         for actor_short_name, actor in self.actors.items():
+            # Set actor context for logging
+            set_context(actor=actor.name)
+
             logger.debug(f"Getting decision from {actor.name}")
 
             # Get contextualized world state for this actor
@@ -131,16 +135,29 @@ class DecisionPhase:
             # Track costs
             tokens_used = decision_result.get("tokens_used", 0)
             cost = self._calculate_cost(actor.llm_model, tokens_used)
+            input_tokens = int(tokens_used * 0.7)  # Approximate split
+            output_tokens = int(tokens_used * 0.3)
+
             cost_record = CostRecord(
                 timestamp=datetime.now(),
                 actor=actor.name,
                 phase="decision",
                 model=actor.llm_model,
-                input_tokens=int(tokens_used * 0.7),  # Approximate split
-                output_tokens=int(tokens_used * 0.3),
+                input_tokens=input_tokens,
+                output_tokens=output_tokens,
                 cost=cost,
             )
             state = state.with_cost(cost_record)
+
+            # Log cost with structured data
+            log_cost(
+                logger=logger,
+                model=actor.llm_model,
+                input_tokens=input_tokens,
+                output_tokens=output_tokens,
+                cost=cost,
+                phase="decision",
+            )
 
             # Extract metrics from action
             if self.metrics_tracker:

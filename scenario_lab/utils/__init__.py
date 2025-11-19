@@ -18,6 +18,12 @@ from scenario_lab.utils.model_pricing import (
     is_expensive_model,
     is_free_model,
 )
+from scenario_lab.utils.logging_config import (
+    setup_logging,
+    set_context,
+    clear_context,
+    log_cost,
+)
 
 __all__ = [
     "print_header",
@@ -35,4 +41,8 @@ __all__ = [
     "estimate_cost",
     "is_expensive_model",
     "is_free_model",
+    "setup_logging",
+    "set_context",
+    "clear_context",
+    "log_cost",
 ]

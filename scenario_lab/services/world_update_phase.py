@@ -20,6 +20,7 @@ from qa_validator import QAValidator
 from exogenous_events import ExogenousEventManager
 
 from scenario_lab.models.state import ScenarioState, WorldState, CostRecord
+from scenario_lab.utils.logging_config import log_cost
 
 logger = logging.getLogger(__name__)
 
@@ -139,16 +140,29 @@ class WorldUpdatePhase:
         # Track world state update costs
         tokens_used = world_update_result["metadata"].get("tokens_used", 0)
         cost = self._calculate_cost(self.world_state_model, tokens_used)
+        input_tokens = int(tokens_used * 0.7)
+        output_tokens = int(tokens_used * 0.3)
+
         cost_record = CostRecord(
             timestamp=datetime.now(),
             actor="world_state_updater",
             phase="world_update",
             model=self.world_state_model,
-            input_tokens=int(tokens_used * 0.7),
-            output_tokens=int(tokens_used * 0.3),
+            input_tokens=input_tokens,
+            output_tokens=output_tokens,
             cost=cost,
         )
         state = state.with_cost(cost_record)
+
+        # Log cost with structured data
+        log_cost(
+            logger=logger,
+            model=self.world_state_model,
+            input_tokens=input_tokens,
+            output_tokens=output_tokens,
+            cost=cost,
+            phase="world_update",
+        )
 
         # Extract metrics from world state
         if self.metrics_tracker:

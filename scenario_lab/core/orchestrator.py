@@ -21,6 +21,7 @@ from scenario_lab.models.state import (
 )
 from scenario_lab.core.events import EventBus, EventType, get_event_bus
 from scenario_lab.utils.state_persistence import StatePersistence
+from scenario_lab.utils.logging_config import set_context, clear_context
 
 
 logger = logging.getLogger(__name__)
@@ -117,8 +118,19 @@ class ScenarioOrchestrator:
         Returns:
             Final scenario state
         """
+        # Set logging context for entire scenario
+        set_context(scenario=state.scenario_id, run_id=state.run_id)
+
         # Mark as started
         state = state.with_started()
+
+        logger.info(
+            "Scenario execution started",
+            extra={
+                "max_turns": self.max_turns,
+                "credit_limit": self.credit_limit,
+            }
+        )
 
         # Emit scenario started event
         await self.event_bus.emit(
@@ -154,6 +166,15 @@ class ScenarioOrchestrator:
             if state.status == ScenarioStatus.RUNNING:
                 state = state.with_completed()
 
+            logger.info(
+                "Scenario execution completed",
+                extra={
+                    "turns": state.turn,
+                    "total_cost": state.total_cost(),
+                    "status": state.status.value,
+                }
+            )
+
             # Emit completion event
             await self.event_bus.emit(
                 EventType.SCENARIO_COMPLETED,
@@ -182,6 +203,10 @@ class ScenarioOrchestrator:
                 source="orchestrator",
             )
 
+        finally:
+            # Clear logging context
+            clear_context()
+
         return state
 
     async def execute_turn(self, state: ScenarioState) -> ScenarioState:
@@ -206,6 +231,11 @@ class ScenarioOrchestrator:
         turn = state.turn + 1
         state = state.with_turn(turn)
 
+        # Set turn context for logging
+        set_context(turn=turn)
+
+        logger.info(f"Starting turn {turn}", extra={"total_cost": state.total_cost()})
+
         # Emit turn started event
         await self.event_bus.emit(
             EventType.TURN_STARTED,
@@ -228,6 +258,14 @@ class ScenarioOrchestrator:
                 if await self._check_credit_limit(state):
                     self.paused = True
                     break
+
+            logger.info(
+                f"Turn {turn} completed",
+                extra={
+                    "total_cost": state.total_cost(),
+                    "decisions": len(state.decisions),
+                }
+            )
 
             # Emit turn completed event
             await self.event_bus.emit(
@@ -273,6 +311,11 @@ class ScenarioOrchestrator:
         # Update phase
         state = state.with_phase(phase_type)
 
+        # Set phase context for logging
+        set_context(phase=phase_type.value)
+
+        logger.debug(f"Starting phase: {phase_type.value}")
+
         # Emit phase started event
         await self.event_bus.emit(
             EventType.PHASE_STARTED,
@@ -284,6 +327,8 @@ class ScenarioOrchestrator:
             # Execute the phase service
             service = self.phases[phase_type]
             state = await service.execute(state)
+
+            logger.debug(f"Phase completed: {phase_type.value}")
 
             # Emit phase completed event
             await self.event_bus.emit(
