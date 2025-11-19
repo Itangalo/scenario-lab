@@ -116,7 +116,7 @@ def api_call_with_retry(
             if e.response is not None:
                 try:
                     response_body = e.response.text[:500]  # First 500 chars
-                except:
+                except (AttributeError, Exception):
                     pass
 
             # Check if this is a retryable error
