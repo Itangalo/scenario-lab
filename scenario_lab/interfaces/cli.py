@@ -1,0 +1,202 @@
+"""
+CLI interface for Scenario Lab V2
+
+Provides backward-compatible CLI commands plus new V2 features.
+"""
+import click
+import asyncio
+import logging
+import sys
+from pathlib import Path
+from typing import Optional
+
+from scenario_lab import __version__
+from scenario_lab.core.events import EventBus, Event, EventType
+
+
+@click.group()
+@click.version_option(version=__version__)
+@click.option("-v", "--verbose", is_flag=True, help="Enable verbose logging")
+def cli(verbose: bool) -> None:
+    """
+    Scenario Lab V2 - AI-powered multi-actor scenario simulation
+
+    Examples:
+
+        # Run a scenario
+        scenario-lab run scenarios/ai-summit
+
+        # Run with limits
+        scenario-lab run scenarios/ai-summit --max-turns 10 --credit-limit 5.0
+
+        # Validate a scenario
+        scenario-lab validate scenarios/ai-summit
+
+        # Get cost estimate
+        scenario-lab estimate scenarios/ai-summit
+    """
+    # Configure logging
+    level = logging.DEBUG if verbose else logging.INFO
+    logging.basicConfig(
+        level=level,
+        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    )
+
+
+@cli.command()
+@click.argument("scenario_path", type=click.Path(exists=True, file_okay=False))
+@click.option("--max-turns", type=int, help="Maximum number of turns")
+@click.option("--credit-limit", type=float, help="Maximum cost in USD")
+@click.option("--resume", type=click.Path(exists=True, file_okay=False), help="Resume from run directory")
+@click.option("--branch-from", type=click.Path(exists=True, file_okay=False), help="Branch from run directory")
+@click.option("--branch-at-turn", type=int, help="Turn number to branch from")
+def run(
+    scenario_path: str,
+    max_turns: Optional[int],
+    credit_limit: Optional[float],
+    resume: Optional[str],
+    branch_from: Optional[str],
+    branch_at_turn: Optional[int],
+) -> None:
+    """
+    Run a scenario simulation
+
+    SCENARIO_PATH: Path to scenario directory
+    """
+    click.echo(f"Scenario Lab V2 ({__version__})")
+    click.echo(f"Scenario: {scenario_path}")
+
+    if max_turns:
+        click.echo(f"Max turns: {max_turns}")
+    if credit_limit:
+        click.echo(f"Credit limit: ${credit_limit:.2f}")
+
+    # For now, delegate to V1
+    click.echo("\n[V2 Alpha] Delegating to V1 runner...")
+    click.echo("Full V2 execution engine coming in next phase.\n")
+
+    # Import V1 runner
+    import sys
+    import os
+    sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../../src"))
+
+    try:
+        from run_scenario import main as v1_main
+        # Build V1 arguments
+        v1_args = [scenario_path]
+        if max_turns:
+            v1_args.extend(["--max-turns", str(max_turns)])
+        if credit_limit:
+            v1_args.extend(["--credit-limit", str(credit_limit)])
+        if resume:
+            v1_args.extend(["--resume", resume])
+        if branch_from:
+            v1_args.extend(["--branch-from", branch_from])
+            if branch_at_turn is not None:
+                v1_args.extend(["--branch-at-turn", str(branch_at_turn)])
+
+        # Call V1
+        sys.argv = ["run_scenario.py"] + v1_args
+        v1_main()
+
+    except ImportError as e:
+        click.echo(f"Error: Could not load V1 runner: {e}", err=True)
+        sys.exit(1)
+
+
+@cli.command()
+@click.argument("scenario_path", type=click.Path(exists=True, file_okay=False))
+def validate(scenario_path: str) -> None:
+    """
+    Validate scenario configuration
+
+    Checks:
+    - YAML syntax
+    - Pydantic schema validation
+    - Actor definitions
+    - Metrics configuration
+    """
+    click.echo(f"Validating scenario: {scenario_path}")
+    click.echo("[V2 Alpha] Schema validation coming soon...")
+
+    # TODO: Implement Pydantic schema validation
+    click.echo("✓ Scenario structure looks good (placeholder)")
+
+
+@cli.command()
+@click.argument("scenario_path", type=click.Path(exists=True, file_okay=False))
+@click.option("--max-turns", type=int, default=10, help="Number of turns to estimate")
+def estimate(scenario_path: str, max_turns: int) -> None:
+    """
+    Estimate scenario cost without running
+
+    Provides:
+    - Estimated total cost
+    - Per-actor cost breakdown
+    - Per-turn cost estimate
+    """
+    click.echo(f"Estimating cost for: {scenario_path}")
+    click.echo(f"Turns to estimate: {max_turns}")
+    click.echo("[V2 Alpha] Cost estimation coming soon...")
+
+    # TODO: Implement cost estimation
+    click.echo("\nEstimated cost: $X.XX (placeholder)")
+
+
+@cli.command()
+@click.argument("run_ids", nargs=-1, required=True)
+def compare(run_ids: tuple[str, ...]) -> None:
+    """
+    Compare multiple scenario runs
+
+    Displays:
+    - Side-by-side world state comparison
+    - Actor decision differences
+    - Metrics comparison
+    - Cost analysis
+    """
+    click.echo(f"Comparing {len(run_ids)} runs:")
+    for run_id in run_ids:
+        click.echo(f"  - {run_id}")
+
+    click.echo("\n[V2 Alpha] Run comparison coming in Phase 2.2...")
+
+
+@cli.command()
+@click.argument("scenario_path", type=click.Path(exists=True, file_okay=False))
+def benchmark(scenario_path: str) -> None:
+    """
+    Run performance benchmark on scenario
+
+    Measures:
+    - Turn execution time
+    - Memory usage
+    - Cost per turn
+    - Startup time
+    """
+    click.echo(f"Benchmarking: {scenario_path}")
+    click.echo("[V2 Alpha] Benchmark tool coming soon...")
+
+    # TODO: Implement benchmark tool
+    click.echo("\nResults:")
+    click.echo("  Average turn time: X.XX seconds (placeholder)")
+    click.echo("  P95 turn time: X.XX seconds (placeholder)")
+    click.echo("  Memory usage peak: XXX MB (placeholder)")
+    click.echo("  Cost per turn: $X.XX (placeholder)")
+
+
+@cli.command()
+def version() -> None:
+    """Show version information"""
+    click.echo(f"Scenario Lab V2: {__version__}")
+    click.echo("Architecture: Event-driven modular")
+    click.echo("Status: Alpha - Phase 2.0 Foundation")
+
+
+def main() -> None:
+    """Entry point for CLI"""
+    cli()
+
+
+if __name__ == "__main__":
+    main()
