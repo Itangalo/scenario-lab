@@ -120,10 +120,14 @@ def print_checklist_item(label: str, status: str = "✓") -> None:
 
     Args:
         label: Item label
-        status: Status symbol (✓, ⏳, etc.)
+        status: Status symbol (✓, ✗, ⚠, ⏳, etc.)
     """
     if status == "✓":
         color = "green"
+    elif status == "✗":
+        color = "red"
+    elif status == "⚠" or status == "⚠️":
+        color = "yellow"
     elif status == "⏳":
         color = "yellow"
     else:

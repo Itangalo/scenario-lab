@@ -173,19 +173,60 @@ def validate(scenario_path: str) -> None:
     - YAML syntax
     - Pydantic schema validation
     - Actor definitions
-    - Metrics configuration
+    - Metrics configuration (optional)
+    - Validation rules (optional)
     """
+    from pathlib import Path
+    from scenario_lab.schemas import validate_scenario_directory
+
     print_header("Validating Scenario")
     print_info("Path", scenario_path)
-
-    print_warning("V2 Alpha: Schema validation coming in Phase 2.0")
     click.echo()
 
-    # TODO: Implement Pydantic schema validation
-    print_checklist_item("YAML syntax (placeholder)")
-    print_checklist_item("Scenario structure (placeholder)")
-    print_checklist_item("Actor definitions (placeholder)")
-    print_success("Validation passed")
+    # Validate all configuration files
+    scenario_path_obj = Path(scenario_path)
+    results = validate_scenario_directory(scenario_path_obj)
+
+    # Track overall success
+    all_success = True
+    total_errors = 0
+    total_warnings = 0
+
+    # Display results for each file type
+    for file_type, result in results.items():
+        if result.success:
+            if result.warnings:
+                print_checklist_item(f"{file_type.capitalize()}", status="⚠")
+                for warning in result.warnings:
+                    click.echo(f"    {click.style('⚠', fg='yellow')} {warning}")
+                total_warnings += len(result.warnings)
+            else:
+                print_checklist_item(f"{file_type.capitalize()}", status="✓")
+        else:
+            print_checklist_item(f"{file_type.capitalize()}", status="✗")
+            for error in result.errors:
+                click.echo(f"    {click.style('✗', fg='red')} {error}")
+            total_errors += len(result.errors)
+            all_success = False
+
+    # Summary
+    click.echo()
+    if all_success:
+        if total_warnings > 0:
+            print_warning(f"Validation passed with {total_warnings} warning(s)")
+            click.echo()
+            click.echo("Consider addressing warnings for best practices.")
+        else:
+            print_success("Validation passed")
+            click.echo()
+            click.echo("Scenario is ready to run!")
+    else:
+        print_error(
+            "Validation failed",
+            f"Found {total_errors} error(s) and {total_warnings} warning(s)",
+            "Fix the errors above and run validation again"
+        )
+        sys.exit(1)
 
 
 @cli.command()
