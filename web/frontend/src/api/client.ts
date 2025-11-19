@@ -180,6 +180,75 @@ class ScenarioLabAPI {
   }
 
   /**
+   * Pause a running scenario
+   */
+  async pauseScenario(scenarioId?: string): Promise<void> {
+    const id = scenarioId || this.activeScenarioId
+    if (!id) {
+      throw new Error('No active scenario to pause')
+    }
+
+    const response = await fetch(`${this.baseUrl}/api/scenarios/${id}/pause`, {
+      method: 'POST',
+    })
+
+    if (!response.ok) {
+      throw new Error('Failed to pause scenario')
+    }
+  }
+
+  /**
+   * Resume a paused scenario
+   */
+  async resumeScenario(scenarioId?: string): Promise<void> {
+    const id = scenarioId || this.activeScenarioId
+    if (!id) {
+      throw new Error('No active scenario to resume')
+    }
+
+    const response = await fetch(`${this.baseUrl}/api/scenarios/${id}/resume`, {
+      method: 'POST',
+    })
+
+    if (!response.ok) {
+      throw new Error('Failed to resume scenario')
+    }
+  }
+
+  /**
+   * Submit human actor decision
+   */
+  async submitHumanDecision(
+    actor: string,
+    decision: {
+      long_term_goals: string[]
+      short_term_priorities: string[]
+      reasoning: string
+      action: string
+    },
+    scenarioId?: string
+  ): Promise<void> {
+    const id = scenarioId || this.activeScenarioId
+    if (!id) {
+      throw new Error('No active scenario for decision submission')
+    }
+
+    const response = await fetch(`${this.baseUrl}/api/scenarios/${id}/human-decision`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        actor,
+        ...decision,
+      }),
+    })
+
+    if (!response.ok) {
+      const error = await response.json()
+      throw new Error(error.detail || 'Failed to submit decision')
+    }
+  }
+
+  /**
    * Create WebSocket connection for real-time scenario updates
    */
   connectWebSocket(scenarioId?: string, onEvent?: (event: V2Event) => void): WebSocket {

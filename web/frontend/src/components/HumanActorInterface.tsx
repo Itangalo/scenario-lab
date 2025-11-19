@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { HumanDecisionRequest } from '../types'
+import { apiClient } from '../api/client'
 
 interface Props {
   actorName: string
@@ -84,18 +85,16 @@ export default function HumanActorInterface({ actorName, currentTurn, onDecision
     }
 
     try {
-      const response = await fetch('/api/human/decision', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(decision),
-      })
-
-      if (!response.ok) {
-        const errorData = await response.json()
-        throw new Error(errorData.detail || 'Failed to submit decision')
-      }
+      // Submit via V2 API client
+      await apiClient.submitHumanDecision(
+        actorName,
+        {
+          long_term_goals: filteredGoals,
+          short_term_priorities: filteredPriorities,
+          reasoning: reasoning.trim(),
+          action: action.trim(),
+        }
+      )
 
       // Clear form
       setGoals([''])

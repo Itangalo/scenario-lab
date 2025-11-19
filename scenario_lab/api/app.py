@@ -66,6 +66,17 @@ class ScenarioStatus(BaseModel):
     started_at: datetime
     completed_at: Optional[datetime] = None
     error: Optional[str] = None
+    waiting_for_human: Optional[str] = None  # Actor name waiting for input
+
+
+class HumanDecisionRequest(BaseModel):
+    """Human actor decision submission"""
+
+    actor: str
+    long_term_goals: list[str]
+    short_term_priorities: list[str]
+    reasoning: str
+    action: str
 
 
 class RunSummary(BaseModel):
@@ -235,6 +246,7 @@ async def get_scenario_status(scenario_id: str):
         started_at=info["started_at"],
         completed_at=info["completed_at"],
         error=info["error"],
+        waiting_for_human=info.get("waiting_for_human"),
     )
 
 
@@ -306,6 +318,74 @@ async def aggregate_metric(metric_name: str, scenario: Optional[str] = None):
 
     aggregation = database.aggregate_metrics(metric_name, scenario=scenario)
     return aggregation
+
+
+@app.post("/api/scenarios/{scenario_id}/pause")
+async def pause_scenario(scenario_id: str):
+    """Pause a running scenario"""
+    if scenario_id not in running_scenarios:
+        raise HTTPException(status_code=404, detail=f"Scenario not found: {scenario_id}")
+
+    runner = running_scenarios[scenario_id].get("runner")
+    if not runner:
+        raise HTTPException(status_code=400, detail="Scenario not yet initialized")
+
+    # Note: Pause functionality would need to be added to SyncRunner
+    # For now, just update status
+    running_scenarios[scenario_id]["paused"] = True
+
+    return {"message": "Scenario paused", "scenario_id": scenario_id}
+
+
+@app.post("/api/scenarios/{scenario_id}/resume")
+async def resume_scenario(scenario_id: str):
+    """Resume a paused scenario"""
+    if scenario_id not in running_scenarios:
+        raise HTTPException(status_code=404, detail=f"Scenario not found: {scenario_id}")
+
+    runner = running_scenarios[scenario_id].get("runner")
+    if not runner:
+        raise HTTPException(status_code=400, detail="Scenario not yet initialized")
+
+    # Resume
+    running_scenarios[scenario_id]["paused"] = False
+
+    return {"message": "Scenario resumed", "scenario_id": scenario_id}
+
+
+@app.post("/api/scenarios/{scenario_id}/human-decision")
+async def submit_human_decision(scenario_id: str, decision: HumanDecisionRequest):
+    """Submit a human actor's decision"""
+    if scenario_id not in running_scenarios:
+        raise HTTPException(status_code=404, detail=f"Scenario not found: {scenario_id}")
+
+    runner = running_scenarios[scenario_id].get("runner")
+    if not runner:
+        raise HTTPException(status_code=400, detail="Scenario not yet initialized")
+
+    # Store the decision in the scenario's state
+    # Note: This is a simplified implementation
+    # Full implementation would need proper integration with the orchestrator
+    if "human_decisions" not in running_scenarios[scenario_id]:
+        running_scenarios[scenario_id]["human_decisions"] = {}
+
+    running_scenarios[scenario_id]["human_decisions"][decision.actor] = {
+        "long_term_goals": decision.long_term_goals,
+        "short_term_priorities": decision.short_term_priorities,
+        "reasoning": decision.reasoning,
+        "action": decision.action,
+    }
+
+    # Clear waiting status
+    running_scenarios[scenario_id]["waiting_for_human"] = None
+
+    logger.info(f"Human decision received for {decision.actor} in scenario {scenario_id}")
+
+    return {
+        "message": "Decision received",
+        "actor": decision.actor,
+        "scenario_id": scenario_id,
+    }
 
 
 @app.websocket("/api/scenarios/{scenario_id}/stream")
