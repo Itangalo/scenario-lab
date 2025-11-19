@@ -7,11 +7,22 @@ import click
 import asyncio
 import logging
 import sys
+import os
 from pathlib import Path
 from typing import Optional
 
 from scenario_lab import __version__
 from scenario_lab.core.events import EventBus, Event, EventType
+from scenario_lab.utils.cli_helpers import (
+    print_header,
+    print_info,
+    print_success,
+    print_error,
+    print_warning,
+    print_alpha_notice,
+    print_section,
+    print_checklist_item,
+)
 
 
 @click.group()
@@ -63,37 +74,31 @@ def run(
 
     SCENARIO_PATH: Path to scenario directory
     """
-    # Header with colors
-    click.echo(click.style(f"\n✨ Scenario Lab V2", fg="bright_cyan", bold=True) + f" ({__version__})")
-    click.echo(click.style("───────────────────────────────────────", fg="cyan"))
+    # Print header
+    print_header(f"Scenario Lab V2 ({__version__})")
 
-    # Scenario info
-    click.echo(f"📂 Scenario: " + click.style(scenario_path, fg="green"))
-
+    # Print scenario info
+    print_info("Scenario", scenario_path)
     if max_turns:
-        click.echo(f"🔢 Max turns: " + click.style(str(max_turns), fg="yellow"))
+        print_info("Max turns", str(max_turns), "yellow")
     if credit_limit:
-        click.echo(f"💰 Credit limit: " + click.style(f"${credit_limit:.2f}", fg="yellow"))
+        print_info("Credit limit", f"${credit_limit:.2f}", "yellow")
     if resume:
-        click.echo(f"▶️  Resuming: " + click.style(resume, fg="blue"))
+        print_info("Resuming", resume, "blue")
     if branch_from:
-        click.echo(f"🌿 Branching from: " + click.style(branch_from, fg="blue"))
+        print_info("Branching from", branch_from, "blue")
         if branch_at_turn is not None:
-            click.echo(f"   At turn: " + click.style(str(branch_at_turn), fg="blue"))
+            click.echo(f"   At turn: {click.style(str(branch_at_turn), fg='blue')}")
 
     # Alpha notice
-    click.echo()
-    click.echo(click.style("⚠️  V2 Alpha:", fg="yellow", bold=True) + " Delegating to V1 runner...")
-    click.echo(click.style("   Full V2 execution engine coming in Phase 2.1", fg="yellow", dim=True))
-    click.echo()
+    print_alpha_notice()
 
-    # Import V1 runner
-    import sys
-    import os
+    # Import and run V1
     sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../../src"))
 
     try:
         from run_scenario import main as v1_main
+
         # Build V1 arguments
         v1_args = [scenario_path]
         if max_turns:
@@ -111,21 +116,17 @@ def run(
         sys.argv = ["run_scenario.py"] + v1_args
         v1_main()
 
-        # Success message
-        click.echo()
-        click.echo(click.style("✓ Scenario completed", fg="bright_green", bold=True))
+        print_success("Scenario completed")
 
     except ImportError as e:
-        click.echo()
-        click.echo(click.style("✗ Error:", fg="bright_red", bold=True) + f" Could not load V1 runner", err=True)
-        click.echo(click.style(f"  {e}", fg="red", dim=True), err=True)
-        click.echo()
-        click.echo(click.style("💡 Tip:", fg="bright_blue") + " Make sure you're running from the project root", err=True)
+        print_error(
+            "Could not load V1 runner",
+            str(e),
+            "Make sure you're running from the project root"
+        )
         sys.exit(1)
     except Exception as e:
-        click.echo()
-        click.echo(click.style("✗ Error:", fg="bright_red", bold=True) + f" Scenario execution failed", err=True)
-        click.echo(click.style(f"  {e}", fg="red", dim=True), err=True)
+        print_error("Scenario execution failed", str(e))
         sys.exit(1)
 
 
@@ -141,20 +142,17 @@ def validate(scenario_path: str) -> None:
     - Actor definitions
     - Metrics configuration
     """
-    click.echo(click.style(f"\n🔍 Validating Scenario", fg="bright_cyan", bold=True))
-    click.echo(click.style("───────────────────────────────────────", fg="cyan"))
-    click.echo(f"📂 Path: " + click.style(scenario_path, fg="green"))
-    click.echo()
+    print_header("Validating Scenario")
+    print_info("Path", scenario_path)
 
-    click.echo(click.style("⚠️  V2 Alpha:", fg="yellow", bold=True) + " Schema validation coming in Phase 2.0")
+    print_warning("V2 Alpha: Schema validation coming in Phase 2.0")
     click.echo()
 
     # TODO: Implement Pydantic schema validation
-    click.echo(click.style("✓", fg="green") + " YAML syntax (placeholder)")
-    click.echo(click.style("✓", fg="green") + " Scenario structure (placeholder)")
-    click.echo(click.style("✓", fg="green") + " Actor definitions (placeholder)")
-    click.echo()
-    click.echo(click.style("✓ Validation passed", fg="bright_green", bold=True))
+    print_checklist_item("YAML syntax (placeholder)")
+    print_checklist_item("Scenario structure (placeholder)")
+    print_checklist_item("Actor definitions (placeholder)")
+    print_success("Validation passed")
 
 
 @cli.command()
@@ -169,20 +167,18 @@ def estimate(scenario_path: str, max_turns: int) -> None:
     - Per-actor cost breakdown
     - Per-turn cost estimate
     """
-    click.echo(click.style(f"\n💰 Cost Estimation", fg="bright_cyan", bold=True))
-    click.echo(click.style("───────────────────────────────────────", fg="cyan"))
-    click.echo(f"📂 Scenario: " + click.style(scenario_path, fg="green"))
-    click.echo(f"🔢 Turns: " + click.style(str(max_turns), fg="yellow"))
-    click.echo()
+    print_header("Cost Estimation")
+    print_info("Scenario", scenario_path)
+    print_info("Turns", str(max_turns), "yellow")
 
-    click.echo(click.style("⚠️  V2 Alpha:", fg="yellow", bold=True) + " Cost estimation coming in Phase 2.0")
+    print_warning("V2 Alpha: Cost estimation coming in Phase 2.0")
     click.echo()
 
     # TODO: Implement cost estimation
-    click.echo(click.style("Estimated costs:", fg="bright_white", bold=True))
-    click.echo(f"  Total: " + click.style("$X.XX", fg="yellow") + " (placeholder)")
-    click.echo(f"  Per turn: " + click.style("$X.XX", fg="yellow") + " (placeholder)")
-    click.echo(f"  Per actor: " + click.style("$X.XX", fg="yellow") + " (placeholder)")
+    print_section("Estimated costs:")
+    click.echo(f"  Total: {click.style('$X.XX', fg='yellow')} (placeholder)")
+    click.echo(f"  Per turn: {click.style('$X.XX', fg='yellow')} (placeholder)")
+    click.echo(f"  Per actor: {click.style('$X.XX', fg='yellow')} (placeholder)")
 
 
 @cli.command()
@@ -230,19 +226,17 @@ def benchmark(scenario_path: str) -> None:
 @cli.command()
 def version() -> None:
     """Show version information"""
-    click.echo()
-    click.echo(click.style("✨ Scenario Lab V2", fg="bright_cyan", bold=True))
-    click.echo(click.style("───────────────────────────────────────", fg="cyan"))
-    click.echo(f"📦 Version: " + click.style(__version__, fg="green"))
-    click.echo(f"🏗️  Architecture: " + click.style("Event-driven modular", fg="blue"))
-    click.echo(f"🚀 Status: " + click.style("Alpha - Phase 2.0 Foundation", fg="yellow"))
-    click.echo()
-    click.echo(click.style("Features:", fg="bright_white", bold=True))
-    click.echo("  ✓ Event-driven execution engine")
-    click.echo("  ✓ Immutable state management")
-    click.echo("  ✓ Backward compatible with V1")
-    click.echo("  ⏳ Full execution (Phase 2.1)")
-    click.echo("  ⏳ Web dashboard (Phase 2.3)")
+    print_header("Scenario Lab V2")
+    print_info("Version", __version__)
+    print_info("Architecture", "Event-driven modular", "blue")
+    print_info("Status", "Alpha - Phase 2.0 Foundation", "yellow")
+
+    print_section("Features:")
+    print_checklist_item("Event-driven execution engine")
+    print_checklist_item("Immutable state management")
+    print_checklist_item("Backward compatible with V1")
+    print_checklist_item("Full execution (Phase 2.1)", "⏳")
+    print_checklist_item("Web dashboard (Phase 2.3)", "⏳")
     click.echo()
 
 

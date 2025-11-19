@@ -305,18 +305,11 @@ class ScenarioOrchestrator:
             List of phase types in execution order
         """
         # Standard sequence
-        sequence = [
-            PhaseType.COMMUNICATION,
-            PhaseType.DECISION,
-            PhaseType.WORLD_UPDATE,
-        ]
+        sequence = [PhaseType.COMMUNICATION, PhaseType.DECISION, PhaseType.WORLD_UPDATE]
 
         # Add optional phases if registered
-        if PhaseType.VALIDATION in self.phases:
-            sequence.append(PhaseType.VALIDATION)
-
-        if PhaseType.PERSISTENCE in self.phases:
-            sequence.append(PhaseType.PERSISTENCE)
+        optional_phases = [PhaseType.VALIDATION, PhaseType.PERSISTENCE]
+        sequence.extend(phase for phase in optional_phases if phase in self.phases)
 
         return sequence
 
@@ -330,15 +323,13 @@ class ScenarioOrchestrator:
         Returns:
             True if execution should stop
         """
-        # Check max turns
+        # Stop if max turns reached
         if self.max_turns is not None and state.turn >= self.max_turns:
             return True
 
-        # Check status
-        if state.status in [ScenarioStatus.COMPLETED, ScenarioStatus.FAILED, ScenarioStatus.PAUSED]:
-            return True
-
-        return False
+        # Stop if scenario has ended
+        terminal_statuses = {ScenarioStatus.COMPLETED, ScenarioStatus.FAILED, ScenarioStatus.PAUSED}
+        return state.status in terminal_statuses
 
     async def _check_credit_limit(self, state: ScenarioState) -> bool:
         """

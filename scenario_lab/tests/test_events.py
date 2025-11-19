@@ -31,10 +31,10 @@ class TestEventBus:
         bus = EventBus()
         received_events = []
 
-        bus.on("test_event", handler)
         async def handler(event: Event):
             received_events.append(event)
 
+        bus.on("test_event", handler)
         await bus.emit("test_event", data={"test": "data"})
 
         assert len(received_events) == 1
@@ -47,14 +47,14 @@ class TestEventBus:
         bus = EventBus()
         calls = []
 
-        bus.on("test", handler)
         async def handler1(event: Event):
             calls.append("handler1")
 
-        bus.on("test", handler)
         async def handler2(event: Event):
             calls.append("handler2")
 
+        bus.on("test", handler1)
+        bus.on("test", handler2)
         await bus.emit("test")
 
         assert len(calls) == 2
@@ -67,10 +67,10 @@ class TestEventBus:
         bus = EventBus()
         received = []
 
-        bus.on("*", handler)
         async def handler(event: Event):
             received.append(event.type)
 
+        bus.on("*", handler)
         await bus.emit("event1")
         await bus.emit("event2")
         await bus.emit("event3")
@@ -114,14 +114,14 @@ class TestEventBus:
         bus = EventBus()
         successful_calls = []
 
-        bus.on("test", handler)
         async def failing_handler(event: Event):
             raise ValueError("Intentional error")
 
-        bus.on("test", handler)
         async def successful_handler(event: Event):
             successful_calls.append(event)
 
+        bus.on("test", failing_handler)
+        bus.on("test", successful_handler)
         await bus.emit("test")
 
         # Successful handler should have run despite failing handler
@@ -150,13 +150,14 @@ class TestEventBus:
         """Test clearing all handlers"""
         bus = EventBus()
 
-        bus.on("event1", handler)
         async def handler1(event: Event):
             pass
 
-        bus.on("event2", handler)
         async def handler2(event: Event):
             pass
+
+        bus.on("event1", handler1)
+        bus.on("event2", handler2)
 
         assert len(bus.handlers) == 2
 

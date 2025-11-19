@@ -149,7 +149,7 @@ class TestScenarioOrchestrator:
         bus = EventBus(keep_history=True)
         orchestrator = ScenarioOrchestrator(
             event_bus=bus,
-            credit_limit=2.0,
+            credit_limit=2.5,  # $2.50 limit
         )
 
         # Phase that costs $0.50 per turn
@@ -161,10 +161,11 @@ class TestScenarioOrchestrator:
             run_id="run-001",
         )
 
-        # Execute 4 turns (should hit warning at turn 4: 4 * $0.50 = $2.00 >= 80% of $2.00)
+        # Execute turns: $0.50, $1.00, $1.50, $2.00, $2.50
+        # Warning should trigger at turn 4 when cost is $2.00 (80% of $2.50)
         final_state = await orchestrator.execute(state)
 
-        # Should have emitted warning
+        # Should have emitted warning before hitting limit
         warnings = bus.get_history(EventType.CREDIT_LIMIT_WARNING)
         assert len(warnings) > 0
 
