@@ -58,8 +58,8 @@ class StatePersistence:
                     "name": actor.name,
                     "short_name": actor.short_name,
                     "model": actor.model,
-                    "goals": actor.goals,
-                    "constraints": actor.constraints,
+                    "current_goals": actor.current_goals,
+                    "private_information": actor.private_information,
                 }
                 for name, actor in state.actors.items()
             },
@@ -107,8 +107,7 @@ class StatePersistence:
                 }
                 for metric in state.metrics
             ],
-            "scenario_config": state.scenario_config,
-            "execution_metadata": state.execution_metadata,
+            "metadata": state.metadata,
         }
 
         # Write to file
@@ -151,8 +150,8 @@ class StatePersistence:
                 name=actor["name"],
                 short_name=actor["short_name"],
                 model=actor["model"],
-                goals=actor["goals"],
-                constraints=actor["constraints"],
+                current_goals=actor.get("current_goals", []),
+                private_information=actor.get("private_information", ""),
             )
             for name, actor in state_dict["actors"].items()
         }
@@ -218,8 +217,7 @@ class StatePersistence:
             communications=communications,
             costs=costs,
             metrics=metrics,
-            scenario_config=state_dict.get("scenario_config"),
-            execution_metadata=state_dict.get("execution_metadata", {}),
+            metadata=state_dict.get("metadata", {}),
         )
 
         logger.info(f"Loaded scenario state from {state_file} (turn {state.turn})")
@@ -267,9 +265,8 @@ class StatePersistence:
             communications=[],  # Clear communications after branch point
             costs=source_state.costs[:],  # Keep costs up to branch point
             metrics=source_state.metrics[:],  # Keep metrics up to branch point
-            scenario_config=source_state.scenario_config,
-            execution_metadata={
-                **source_state.execution_metadata,
+            metadata={
+                **source_state.metadata,
                 "branched_from": source_state.run_id,
                 "branch_point": branch_at_turn,
                 "branch_created": datetime.now().isoformat(),
