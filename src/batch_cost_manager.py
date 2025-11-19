@@ -147,6 +147,7 @@ class BatchCostManager:
 
         if self.runs_completed > 0:
             # Use average cost of completed runs
+            # Safe division: runs_completed > 0 is checked above
             avg_cost = self.total_spent / self.runs_completed
             if avg_cost > 0:
                 return int(remaining / avg_cost)
