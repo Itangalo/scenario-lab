@@ -83,8 +83,13 @@ class RunSummary(BaseModel):
 async def startup_event():
     """Initialize database on startup"""
     global database
-    database = Database("sqlite:///scenario-lab.db")
-    logger.info("Scenario Lab API started")
+    try:
+        database = Database("sqlite:///scenario-lab.db")
+        logger.info("Scenario Lab API started with database")
+    except Exception as e:
+        logger.error(f"Failed to initialize database: {e}")
+        logger.warning("API will run without database support")
+        database = None
 
 
 @app.get("/")
@@ -313,18 +318,33 @@ async def websocket_stream(websocket: WebSocket, scenario_id: str):
     await websocket.accept()
 
     try:
-        # Wait for scenario to exist
+        # Wait for scenario to exist (with timeout)
+        timeout = 30  # 30 seconds
+        elapsed = 0
         while scenario_id not in running_scenarios:
+            if elapsed >= timeout:
+                await websocket.send_json({"error": "Scenario not found or timeout"})
+                await websocket.close()
+                return
             await asyncio.sleep(0.1)
+            elapsed += 0.1
 
-        runner = running_scenarios[scenario_id].get("runner")
-        if not runner:
-            await websocket.send_json({"error": "Runner not initialized"})
-            await websocket.close()
-            return
+        # Wait for runner to be initialized (with timeout)
+        runner = None
+        elapsed = 0
+        while not runner:
+            runner = running_scenarios[scenario_id].get("runner")
+            if elapsed >= timeout:
+                await websocket.send_json({"error": "Runner initialization timeout"})
+                await websocket.close()
+                return
+            if not runner:
+                await asyncio.sleep(0.1)
+                elapsed += 0.1
 
         # Setup event handlers to forward to WebSocket
-        @runner.event_bus.on("*")
+        handlers = []
+
         async def forward_event(event: Event):
             try:
                 await websocket.send_json(
@@ -336,6 +356,10 @@ async def websocket_stream(websocket: WebSocket, scenario_id: str):
                 )
             except Exception as e:
                 logger.error(f"Failed to send WebSocket message: {e}")
+
+        # Register handler and keep reference for cleanup
+        runner.event_bus.on("*", forward_event)
+        handlers.append(forward_event)
 
         # Keep connection alive
         while True:

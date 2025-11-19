@@ -42,6 +42,7 @@ class DatabasePersistencePhase:
             database: Database instance
         """
         self.database = database
+        self._persisted_costs = set()  # Track persisted cost timestamps to avoid duplicates
 
     async def execute(self, state: ScenarioState) -> ScenarioState:
         """
@@ -132,21 +133,16 @@ class DatabasePersistencePhase:
                 session.add(db_metric)
             logger.debug(f"Persisted {len(turn_metrics)} metrics")
 
-            # Persist costs for this turn
-            turn_costs = [c for c in state.costs if c.actor]  # All costs for this run
-            for cost in turn_costs:
-                # Check if cost already persisted
-                existing = (
-                    session.query(DBCost)
-                    .filter(
-                        DBCost.run_id == state.run_id,
-                        DBCost.timestamp == cost.timestamp,
-                        DBCost.actor == cost.actor,
-                        DBCost.phase == cost.phase,
-                    )
-                    .first()
-                )
-                if not existing:
+            # Persist costs - only new ones not yet persisted
+            for cost in state.costs:
+                if not cost.actor:
+                    continue
+
+                # Create unique key for this cost record
+                cost_key = (cost.timestamp, cost.actor, cost.phase)
+
+                # Only persist if not already persisted
+                if cost_key not in self._persisted_costs:
                     db_cost = DBCost(
                         run_id=state.run_id,
                         timestamp=cost.timestamp,
@@ -158,6 +154,7 @@ class DatabasePersistencePhase:
                         cost=cost.cost,
                     )
                     session.add(db_cost)
+                    self._persisted_costs.add(cost_key)
 
             # Commit transaction
             session.commit()
