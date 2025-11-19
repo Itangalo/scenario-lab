@@ -554,7 +554,7 @@ class BatchRunner:
             self.start_time = datetime.now()
             self.cost_manager.start_batch()
 
-        # Execute runs sequentially (TODO: add parallelization)
+        # Execute runs sequentially (use run_parallel() for parallel execution)
         runs_executed = 0
         runs_skipped = 0
 
