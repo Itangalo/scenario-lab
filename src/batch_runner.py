@@ -323,7 +323,7 @@ class BatchRunner:
                 operation=f"Running scenario variation {variation['variation_id']}",
                 scenario_name=self.base_scenario,
                 run_number=run_number,
-                cost_so_far=self.cost_manager.total_cost,
+                cost_so_far=self.cost_manager.total_spent,
                 additional_context={
                     'run_id': run_id,
                     'variation_description': variation.get('description', 'N/A'),
@@ -790,7 +790,7 @@ class BatchRunner:
                     progress_tracker.update_run_started(run_id, variation['description'])
 
                 # Execute run (using executor's rate-limited execution)
-                async def execute_scenario_wrapper():
+                def execute_scenario_wrapper():
                     return self._run_single_scenario(run_id, variation, run_num)
 
                 try:

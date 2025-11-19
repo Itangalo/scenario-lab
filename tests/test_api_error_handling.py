@@ -237,7 +237,8 @@ class TestMakeLLMCallErrorHandling(unittest.TestCase):
             model='openai/gpt-4o-mini',
             messages=[{'role': 'user', 'content': 'test'}],
             api_key='test-key',
-            context=context
+            context=context,
+            use_cache=False  # Disable cache for testing
         )
 
         # Verify context was passed to make_openrouter_call

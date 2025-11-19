@@ -281,7 +281,8 @@ class TestLocalLLMSupport(unittest.TestCase):
 
         response, tokens = make_llm_call(
             model='ollama/llama3.1:70b',
-            messages=[{'role': 'user', 'content': 'test'}]
+            messages=[{'role': 'user', 'content': 'test'}],
+            use_cache=False  # Disable cache for testing
         )
 
         self.assertEqual(response, 'test response')
@@ -304,7 +305,8 @@ class TestLocalLLMSupport(unittest.TestCase):
         response, tokens = make_llm_call(
             model='openai/gpt-4o-mini',
             messages=[{'role': 'user', 'content': 'test'}],
-            api_key='test-key'
+            api_key='test-key',
+            use_cache=False  # Disable cache for testing
         )
 
         self.assertEqual(response, 'test response')
@@ -321,7 +323,8 @@ class TestLocalLLMSupport(unittest.TestCase):
 
         response, tokens = make_llm_call(
             model='local/custom-model',
-            messages=[{'role': 'user', 'content': 'test'}]
+            messages=[{'role': 'user', 'content': 'test'}],
+            use_cache=False  # Disable cache for testing
         )
 
         self.assertEqual(response, 'local response')

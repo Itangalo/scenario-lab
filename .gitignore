@@ -67,3 +67,9 @@ temp/
 # Personal and temporary notes
 notes/*
 !notes/.gitkeep
+
+# Personal scenarios - only include example scenarios in repo
+scenarios/*
+!scenarios/test-regulation-negotiation/
+!scenarios/ai-2027/
+!scenarios/ai-safety-summit-2025/
