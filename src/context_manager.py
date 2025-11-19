@@ -25,7 +25,8 @@ class ContextManager:
     def __init__(
         self,
         window_size: int = 3,
-        summarization_model: str = "openai/gpt-4o-mini"
+        summarization_model: str = "openai/gpt-4o-mini",
+        max_cache_size: int = 1000
     ):
         """
         Initialize context manager
@@ -33,10 +34,36 @@ class ContextManager:
         Args:
             window_size: Number of recent turns to keep in full detail
             summarization_model: LLM model to use for summarization (should be cheap)
+            max_cache_size: Maximum number of summaries to cache (default 1000)
         """
         self.window_size = window_size
         self.summarization_model = summarization_model
         self.summaries_cache: Dict[str, str] = {}  # Cache summaries to avoid re-generating
+        self.max_cache_size = max_cache_size
+        self.cache_access_order: List[str] = []  # Track access order for LRU eviction
+
+    def _get_cached_summary(self, key: str) -> Optional[str]:
+        """Get summary from cache and update LRU order"""
+        if key in self.summaries_cache:
+            # Move to end (most recently used)
+            if key in self.cache_access_order:
+                self.cache_access_order.remove(key)
+            self.cache_access_order.append(key)
+            return self.summaries_cache[key]
+        return None
+
+    def _cache_summary(self, key: str, value: str) -> None:
+        """Cache summary with LRU eviction if needed"""
+        # Evict oldest if cache is full
+        if len(self.summaries_cache) >= self.max_cache_size and key not in self.summaries_cache:
+            oldest_key = self.cache_access_order.pop(0)
+            del self.summaries_cache[oldest_key]
+
+        # Add to cache
+        self.summaries_cache[key] = value
+        if key in self.cache_access_order:
+            self.cache_access_order.remove(key)
+        self.cache_access_order.append(key)
 
     def get_context_for_actor(
         self,
@@ -121,11 +148,10 @@ class ContextManager:
         # Generate or retrieve summary for old turns
         summary_key = f"{world_state.scenario_name}-0-{summary_end}"
 
-        if summary_key not in self.summaries_cache:
+        summary = self._get_cached_summary(summary_key)
+        if summary is None:
             summary = self._generate_summary(world_state, 0, summary_end)
-            self.summaries_cache[summary_key] = summary
-        else:
-            summary = self.summaries_cache[summary_key]
+            self._cache_summary(summary_key, summary)
 
         context += "## Earlier Events (Summary)\n\n"
         context += summary + "\n\n"
