@@ -20,6 +20,8 @@ from scenario_lab.models.state import (
     ActorState,
 )
 from scenario_lab.core.events import EventBus, EventType, get_event_bus
+from scenario_lab.utils.state_persistence import StatePersistence
+from scenario_lab.utils.logging_config import set_context, clear_context
 
 
 logger = logging.getLogger(__name__)
@@ -69,6 +71,8 @@ class ScenarioOrchestrator:
         event_bus: Optional[EventBus] = None,
         max_turns: Optional[int] = None,
         credit_limit: Optional[float] = None,
+        output_dir: Optional[str] = None,
+        save_state_every_turn: bool = True,
     ):
         """
         Initialize orchestrator
@@ -77,10 +81,14 @@ class ScenarioOrchestrator:
             event_bus: Event bus for emitting events (creates one if not provided)
             max_turns: Maximum number of turns to execute
             credit_limit: Maximum cost in USD
+            output_dir: Output directory for state saving
+            save_state_every_turn: Whether to save state after each turn
         """
         self.event_bus = event_bus or get_event_bus()
         self.max_turns = max_turns
         self.credit_limit = credit_limit
+        self.output_dir = output_dir
+        self.save_state_every_turn = save_state_every_turn
 
         # Phase services (to be injected)
         self.phases: Dict[PhaseType, PhaseService] = {}
@@ -110,8 +118,19 @@ class ScenarioOrchestrator:
         Returns:
             Final scenario state
         """
+        # Set logging context for entire scenario
+        set_context(scenario=state.scenario_id, run_id=state.run_id)
+
         # Mark as started
         state = state.with_started()
+
+        logger.info(
+            "Scenario execution started",
+            extra={
+                "max_turns": self.max_turns,
+                "credit_limit": self.credit_limit,
+            }
+        )
 
         # Emit scenario started event
         await self.event_bus.emit(
@@ -126,11 +145,14 @@ class ScenarioOrchestrator:
         )
 
         try:
+            # Track halt reason
+            halt_reason = None
+
             # Execute turns until completion
             while not self._should_stop_execution(state):
                 state = await self.execute_turn(state)
 
-                # Check pause/stop flags
+                # Check pause flag
                 if self.paused:
                     state = state.with_paused()
                     await self.event_bus.emit(
@@ -140,25 +162,53 @@ class ScenarioOrchestrator:
                     )
                     break
 
+                # Check stop flag
                 if self.should_stop:
+                    halt_reason = "Manual stop requested"
                     break
 
-            # Mark as completed if not paused or failed
-            if state.status == ScenarioStatus.RUNNING:
+            # Check if we halted due to credit limit or manual stop
+            if halt_reason or (self.paused and state.total_cost() >= self.credit_limit):
+                reason = halt_reason or f"Credit limit exceeded: ${state.total_cost():.2f} >= ${self.credit_limit:.2f}"
+                state = state.with_halted(reason)
+
+                logger.warning(f"Scenario halted: {reason}")
+
+                await self.event_bus.emit(
+                    EventType.SCENARIO_HALTED,
+                    data={
+                        "scenario_id": state.scenario_id,
+                        "run_id": state.run_id,
+                        "turn": state.turn,
+                        "total_cost": state.total_cost(),
+                        "reason": reason,
+                    },
+                    source="orchestrator",
+                )
+
+            # Mark as completed if still running (normal completion)
+            elif state.status == ScenarioStatus.RUNNING:
                 state = state.with_completed()
 
-            # Emit completion event
-            await self.event_bus.emit(
-                EventType.SCENARIO_COMPLETED,
-                data={
-                    "scenario_id": state.scenario_id,
-                    "run_id": state.run_id,
-                    "turns": state.turn,
-                    "total_cost": state.total_cost(),
-                    "status": state.status.value,
-                },
-                source="orchestrator",
-            )
+                logger.info(
+                    "Scenario execution completed",
+                    extra={
+                        "turns": state.turn,
+                        "total_cost": state.total_cost(),
+                    }
+                )
+
+                await self.event_bus.emit(
+                    EventType.SCENARIO_COMPLETED,
+                    data={
+                        "scenario_id": state.scenario_id,
+                        "run_id": state.run_id,
+                        "turns": state.turn,
+                        "total_cost": state.total_cost(),
+                        "status": state.status.value,
+                    },
+                    source="orchestrator",
+                )
 
         except Exception as e:
             logger.error(f"Scenario execution failed: {e}", exc_info=True)
@@ -174,6 +224,10 @@ class ScenarioOrchestrator:
                 },
                 source="orchestrator",
             )
+
+        finally:
+            # Clear logging context
+            clear_context()
 
         return state
 
@@ -199,6 +253,11 @@ class ScenarioOrchestrator:
         turn = state.turn + 1
         state = state.with_turn(turn)
 
+        # Set turn context for logging
+        set_context(turn=turn)
+
+        logger.info(f"Starting turn {turn}", extra={"total_cost": state.total_cost()})
+
         # Emit turn started event
         await self.event_bus.emit(
             EventType.TURN_STARTED,
@@ -218,9 +277,17 @@ class ScenarioOrchestrator:
                 state = await self._execute_phase(phase_type, state)
 
                 # Check credit limit after each phase
-                if self._check_credit_limit(state):
+                if await self._check_credit_limit(state):
                     self.paused = True
                     break
+
+            logger.info(
+                f"Turn {turn} completed",
+                extra={
+                    "total_cost": state.total_cost(),
+                    "decisions": len(state.decisions),
+                }
+            )
 
             # Emit turn completed event
             await self.event_bus.emit(
@@ -229,9 +296,14 @@ class ScenarioOrchestrator:
                     "turn": turn,
                     "total_cost": state.total_cost(),
                     "decisions": len(state.decisions),
+                    "state": state,  # Include state for event handlers
                 },
                 source="orchestrator",
             )
+
+            # Save state if enabled
+            if self.save_state_every_turn and self.output_dir:
+                self._save_state(state)
 
         except Exception as e:
             logger.error(f"Turn {turn} failed: {e}", exc_info=True)
@@ -261,6 +333,11 @@ class ScenarioOrchestrator:
         # Update phase
         state = state.with_phase(phase_type)
 
+        # Set phase context for logging
+        set_context(phase=phase_type.value)
+
+        logger.debug(f"Starting phase: {phase_type.value}")
+
         # Emit phase started event
         await self.event_bus.emit(
             EventType.PHASE_STARTED,
@@ -272,6 +349,8 @@ class ScenarioOrchestrator:
             # Execute the phase service
             service = self.phases[phase_type]
             state = await service.execute(state)
+
+            logger.debug(f"Phase completed: {phase_type.value}")
 
             # Emit phase completed event
             await self.event_bus.emit(
@@ -305,18 +384,11 @@ class ScenarioOrchestrator:
             List of phase types in execution order
         """
         # Standard sequence
-        sequence = [
-            PhaseType.COMMUNICATION,
-            PhaseType.DECISION,
-            PhaseType.WORLD_UPDATE,
-        ]
+        sequence = [PhaseType.COMMUNICATION, PhaseType.DECISION, PhaseType.WORLD_UPDATE]
 
         # Add optional phases if registered
-        if PhaseType.VALIDATION in self.phases:
-            sequence.append(PhaseType.VALIDATION)
-
-        if PhaseType.PERSISTENCE in self.phases:
-            sequence.append(PhaseType.PERSISTENCE)
+        optional_phases = [PhaseType.VALIDATION, PhaseType.PERSISTENCE]
+        sequence.extend(phase for phase in optional_phases if phase in self.phases)
 
         return sequence
 
@@ -330,17 +402,15 @@ class ScenarioOrchestrator:
         Returns:
             True if execution should stop
         """
-        # Check max turns
+        # Stop if max turns reached
         if self.max_turns is not None and state.turn >= self.max_turns:
             return True
 
-        # Check status
-        if state.status in [ScenarioStatus.COMPLETED, ScenarioStatus.FAILED, ScenarioStatus.PAUSED]:
-            return True
+        # Stop if scenario has ended
+        terminal_statuses = {ScenarioStatus.COMPLETED, ScenarioStatus.FAILED, ScenarioStatus.PAUSED}
+        return state.status in terminal_statuses
 
-        return False
-
-    def _check_credit_limit(self, state: ScenarioState) -> bool:
+    async def _check_credit_limit(self, state: ScenarioState) -> bool:
         """
         Check if credit limit has been exceeded
 
@@ -358,7 +428,7 @@ class ScenarioOrchestrator:
         # Warning at 80%
         if total_cost >= self.credit_limit * 0.8 and total_cost < self.credit_limit:
             remaining = self.credit_limit - total_cost
-            self.event_bus.emit(
+            await self.event_bus.emit(
                 EventType.CREDIT_LIMIT_WARNING,
                 data={
                     "total_cost": total_cost,
@@ -370,7 +440,7 @@ class ScenarioOrchestrator:
 
         # Stop at 100%
         if total_cost >= self.credit_limit:
-            self.event_bus.emit(
+            await self.event_bus.emit(
                 EventType.CREDIT_LIMIT_EXCEEDED,
                 data={
                     "total_cost": total_cost,
@@ -397,3 +467,19 @@ class ScenarioOrchestrator:
         """Request orchestrator to stop execution"""
         self.should_stop = True
         logger.info("Stop requested")
+
+    def _save_state(self, state: ScenarioState) -> None:
+        """
+        Save current state to disk
+
+        Args:
+            state: Current scenario state
+        """
+        if not self.output_dir:
+            return
+
+        try:
+            StatePersistence.save_state(state, self.output_dir)
+        except Exception as e:
+            logger.error(f"Failed to save state: {e}", exc_info=True)
+            # Don't fail execution on save errors

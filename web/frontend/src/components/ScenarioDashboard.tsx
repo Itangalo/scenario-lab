@@ -112,11 +112,11 @@ export default function ScenarioDashboard({ status, wsMessage }: Props) {
                     <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                       <div>
                         <p className="text-sm text-gray-500">
-                          {wsMessage.message || getEventDescription(wsMessage)}
+                          {getEventDescription(wsMessage)}
                         </p>
-                        {wsMessage.actor && (
+                        {wsMessage.data?.actor && (
                           <p className="mt-1 text-sm text-gray-900">
-                            Actor: <span className="font-medium">{wsMessage.actor}</span>
+                            Actor: <span className="font-medium">{wsMessage.data.actor}</span>
                           </p>
                         )}
                       </div>
@@ -136,30 +136,50 @@ export default function ScenarioDashboard({ status, wsMessage }: Props) {
 }
 
 function getEventDescription(message: WebSocketMessage): string {
-  switch (message.type) {
-    case 'turn_start':
-      return `Turn ${message.turn} started`
-    case 'turn_complete':
-      return `Turn ${message.turn} completed`
-    case 'waiting_for_human':
-      return `Waiting for ${message.actor} to make a decision`
-    case 'human_decision_processed':
-      return `Decision from ${message.actor} processed`
-    case 'actor_thinking':
-      return `${message.actor} is thinking...`
-    case 'actor_complete':
-      return `${message.actor} completed their decision`
-    case 'scenario_complete':
+  const { type, data } = message
+
+  // Handle V2 event types
+  switch (type) {
+    case 'turn_started':
+      return `Turn ${data.turn} started`
+    case 'turn_completed':
+      return `Turn ${data.turn} completed`
+    case 'phase_started':
+      return `Phase ${data.phase} started`
+    case 'phase_completed':
+      return `Phase ${data.phase} completed`
+    case 'decision_made':
+      return `${data.actor} made a decision`
+    case 'scenario_completed':
       return 'Scenario completed'
     case 'scenario_halted':
-      return `Scenario halted: ${message.reason}`
+      return `Scenario halted: ${data.reason || 'unknown reason'}`
+    case 'scenario_failed':
+      return `Scenario failed: ${data.error || 'unknown error'}`
+    case 'scenario_finished':
+      return `Scenario finished with status: ${data.status}`
+
+    // Legacy V1.5 event types (for compatibility)
+    case 'turn_start':
+      return `Turn ${data.turn} started`
+    case 'turn_complete':
+      return `Turn ${data.turn} completed`
+    case 'waiting_for_human':
+      return `Waiting for ${data.actor} to make a decision`
+    case 'human_decision_processed':
+      return `Decision from ${data.actor} processed`
+    case 'actor_thinking':
+      return `${data.actor} is thinking...`
+    case 'actor_complete':
+      return `${data.actor} completed their decision`
     case 'scenario_stopped':
       return 'Scenario stopped by user'
     case 'timeout':
       return 'Decision timeout'
     case 'error':
-      return `Error: ${message.error}`
+      return `Error: ${data.error || 'unknown error'}`
+
     default:
-      return 'Unknown event'
+      return `Event: ${type}`
   }
 }

@@ -12,7 +12,7 @@ Based on ROADMAP_V2.md Phase 2.1 architecture design.
 """
 from __future__ import annotations
 from dataclasses import dataclass, field, replace
-from typing import Any, Dict, List, Optional, Set
+from typing import Any, Dict, List, Optional
 from datetime import datetime
 from enum import Enum
 
@@ -24,6 +24,7 @@ class ScenarioStatus(str, Enum):
     RUNNING = "running"
     PAUSED = "paused"
     COMPLETED = "completed"
+    HALTED = "halted"  # Stopped early (credit limit, manual stop, max turns)
     FAILED = "failed"
 
 
@@ -36,6 +37,11 @@ class PhaseType(str, Enum):
     WORLD_UPDATE = "world_update"
     VALIDATION = "validation"
     PERSISTENCE = "persistence"
+
+
+def _make_timestamp() -> datetime:
+    """Factory function for creating timestamps"""
+    return datetime.now()
 
 
 @dataclass(frozen=True)
@@ -52,7 +58,7 @@ class Communication:
     sender: str
     recipients: List[str]
     content: str
-    timestamp: datetime = field(default_factory=datetime.now)
+    timestamp: datetime = field(default_factory=_make_timestamp)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
 
@@ -69,7 +75,7 @@ class Decision:
     goals: List[str]
     reasoning: str
     action: str
-    timestamp: datetime = field(default_factory=datetime.now)
+    timestamp: datetime = field(default_factory=_make_timestamp)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
 
@@ -83,12 +89,17 @@ class WorldState:
 
     turn: int
     content: str  # Markdown content describing the world
-    timestamp: datetime = field(default_factory=datetime.now)
+    timestamp: datetime = field(default_factory=_make_timestamp)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
     def with_content(self, content: str) -> WorldState:
         """Create new WorldState with updated content"""
         return replace(self, content=content, timestamp=datetime.now())
+
+
+def _make_empty_world_state() -> WorldState:
+    """Factory function for creating empty world state"""
+    return WorldState(turn=0, content="")
 
 
 @dataclass(frozen=True)
@@ -146,7 +157,7 @@ class MetricRecord:
     name: str
     value: float
     turn: int
-    timestamp: datetime = field(default_factory=datetime.now)
+    timestamp: datetime = field(default_factory=_make_timestamp)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
 
@@ -176,7 +187,7 @@ class ScenarioState:
     current_phase: Optional[PhaseType] = None
 
     # World and actors
-    world_state: WorldState = field(default_factory=lambda: WorldState(turn=0, content=""))
+    world_state: WorldState = field(default_factory=_make_empty_world_state)
     actors: Dict[str, ActorState] = field(default_factory=dict)
 
     # Communications and decisions
@@ -274,6 +285,15 @@ class ScenarioState:
     def with_paused(self) -> ScenarioState:
         """Mark as paused"""
         return replace(self, status=ScenarioStatus.PAUSED)
+
+    def with_halted(self, reason: str = "") -> ScenarioState:
+        """Mark as halted (stopped early)"""
+        return replace(
+            self,
+            status=ScenarioStatus.HALTED,
+            completed_at=datetime.now(),
+            error=reason if reason else "Scenario halted",
+        )
 
     def get_communications_for_turn(self, turn: int) -> List[Communication]:
         """Get all communications for a specific turn"""
