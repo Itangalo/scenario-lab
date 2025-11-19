@@ -878,11 +878,17 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         # Convert ISO string timestamps back to datetime objects
         start_time_str = saved_state['cost_tracker_state'].get('start_time')
         if start_time_str:
-            cost_tracker.start_time = datetime.fromisoformat(start_time_str)
+            try:
+                cost_tracker.start_time = datetime.fromisoformat(start_time_str)
+            except (ValueError, TypeError) as e:
+                logger.warning(f"Could not parse start_time '{start_time_str}': {e}")
 
         end_time_str = saved_state['cost_tracker_state'].get('end_time')
         if end_time_str:
-            cost_tracker.end_time = datetime.fromisoformat(end_time_str)
+            try:
+                cost_tracker.end_time = datetime.fromisoformat(end_time_str)
+            except (ValueError, TypeError) as e:
+                logger.warning(f"Could not parse end_time '{end_time_str}': {e}")
 
         logger.info(f"Restored cost tracker: ${cost_tracker.total_cost:.4f}, {cost_tracker.total_tokens:,} tokens")
     else:
