@@ -595,6 +595,8 @@ def execute_actor_decisions(
 
     # SEQUENTIAL PHASE: Process results and update shared state
     # This must be sequential to avoid race conditions in world_state, cost_tracker, etc.
+    # WARNING: Do NOT modify parallel execution above to update these shared objects directly.
+    # All state mutations MUST happen in this sequential section.
     logger.info(f"  📝 Recording decisions and tracking metrics...")
     turn_decisions = {}
     actor_decisions_for_world_update = {}
