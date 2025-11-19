@@ -193,8 +193,7 @@ class ScenarioLoader:
                 name=actor.name,
                 short_name=actor.short_name,
                 model=actor.llm_model,
-                goals=actor.goals,
-                constraints=actor.constraints,
+                current_goals=actor.goals,
             )
             actor_states[actor.name] = actor_state
 
@@ -208,8 +207,7 @@ class ScenarioLoader:
             run_id=run_id,
             world_state=initial_world_state,
             actors=actor_states,
-            scenario_config=self.scenario_config,
-            status=ScenarioStatus.INITIALIZED,
+            status=ScenarioStatus.CREATED,
         )
 
         return initial_state

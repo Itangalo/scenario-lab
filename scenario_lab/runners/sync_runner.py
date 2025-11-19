@@ -146,7 +146,9 @@ class SyncRunner:
 
         # World state
         self.v1_world_state = V1WorldState(
-            initial_state=self.scenario_config["initial_world_state"]
+            initial_state=self.scenario_config["initial_world_state"],
+            scenario_name=self.scenario_config["name"],
+            turn_duration=self.scenario_config.get("turn_duration", "1 day")
         )
 
         # Communication manager
@@ -155,7 +157,7 @@ class SyncRunner:
 
         # Context manager
         self.context_manager = ContextManager(
-            context_window_turns=self.scenario_config.get("context_window", 3)
+            window_size=self.scenario_config.get("context_window", 3)
         )
 
         # World state updater
