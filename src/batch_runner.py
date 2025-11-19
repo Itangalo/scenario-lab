@@ -679,6 +679,15 @@ class BatchRunner:
             avg = self.cost_manager.get_average_cost_per_run()
             self.logger.info(f"💰 Average per run: ${avg:.3f}")
 
+        # Show failed runs details if any
+        if summary['runs_failed'] > 0:
+            self.logger.info(f"\n❌ Failed Runs Details:")
+            for failed in self.failed_runs[:10]:  # Show first 10 failures
+                error_preview = str(failed.get('error', 'Unknown error'))[:100]
+                self.logger.info(f"   • {failed['run_id']}: {error_preview}")
+            if len(self.failed_runs) > 10:
+                self.logger.info(f"   ... and {len(self.failed_runs) - 10} more (see batch-summary.json)")
+
         # Show cache statistics if caching was used
         cache = get_global_cache()
         cache_stats = cache.get_stats()
