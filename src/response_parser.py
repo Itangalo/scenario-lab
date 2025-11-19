@@ -9,7 +9,7 @@ Provides comprehensive parsing capabilities with:
 """
 import re
 import logging
-from typing import Dict, Optional, List, Tuple
+from typing import Dict, Optional, List, Tuple, Any
 from collections import defaultdict
 
 
@@ -292,7 +292,7 @@ def diagnose_parsing_failure(content: str, expected_sections: List[str]) -> str:
     return "; ".join(diagnostics)
 
 
-def parse_bilateral_decision(content: str, logger: Optional[logging.Logger] = None) -> Dict[str, any]:
+def parse_bilateral_decision(content: str, logger: Optional[logging.Logger] = None) -> Dict[str, Any]:
     """
     Parse bilateral communication decision
 
