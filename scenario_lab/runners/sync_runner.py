@@ -172,18 +172,21 @@ class SyncRunner:
         # Metrics tracker (if metrics.yaml exists)
         metrics_file = Path(self.scenario_path) / "metrics.yaml"
         if metrics_file.exists():
-            with open(metrics_file, "r") as f:
-                metrics_config = yaml.safe_load(f)
-            self.metrics_tracker = MetricsTracker(metrics_config)
+            self.metrics_tracker = MetricsTracker(str(metrics_file))
         else:
-            self.metrics_tracker = MetricsTracker({"metrics": []})
+            self.metrics_tracker = MetricsTracker(None)
 
         # QA validator (if validation-rules.yaml exists)
         validation_file = Path(self.scenario_path) / "validation-rules.yaml"
         if validation_file.exists():
-            self.qa_validator = QAValidator(validation_file_path=str(validation_file))
+            import os
+            api_key = os.getenv("OPENROUTER_API_KEY", "")
+            self.qa_validator = QAValidator(
+                scenario_path=str(self.scenario_path),
+                api_key=api_key
+            )
         else:
-            self.qa_validator = QAValidator()
+            self.qa_validator = None
 
         # Exogenous events manager (if exogenous-events.yaml exists)
         events_file = Path(self.scenario_path) / "exogenous-events.yaml"

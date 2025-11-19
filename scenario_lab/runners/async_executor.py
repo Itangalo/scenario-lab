@@ -105,28 +105,28 @@ class AsyncExecutor:
     async def _setup_event_handlers(self) -> None:
         """Setup internal event handlers"""
         # Log all events
-        await self.event_bus.subscribe(
-            EventType.TURN_STARTED,
+        self.event_bus.on(
+            EventType.TURN_STARTED.value,
             self._on_turn_started
         )
-        await self.event_bus.subscribe(
-            EventType.TURN_COMPLETED,
+        self.event_bus.on(
+            EventType.TURN_COMPLETED.value,
             self._on_turn_completed
         )
-        await self.event_bus.subscribe(
-            EventType.PHASE_STARTED,
+        self.event_bus.on(
+            EventType.PHASE_STARTED.value,
             self._on_phase_started
         )
-        await self.event_bus.subscribe(
-            EventType.PHASE_COMPLETED,
+        self.event_bus.on(
+            EventType.PHASE_COMPLETED.value,
             self._on_phase_completed
         )
-        await self.event_bus.subscribe(
-            EventType.SCENARIO_COMPLETED,
+        self.event_bus.on(
+            EventType.SCENARIO_COMPLETED.value,
             self._on_scenario_completed
         )
-        await self.event_bus.subscribe(
-            EventType.SCENARIO_FAILED,
+        self.event_bus.on(
+            EventType.SCENARIO_FAILED.value,
             self._on_scenario_failed
         )
 
@@ -209,7 +209,7 @@ class AsyncExecutor:
 
         # Subscribe to all event types
         for event_type in EventType:
-            await self.event_bus.subscribe(event_type, stream_handler)
+            self.event_bus.on(event_type.value, stream_handler)
 
         # Start execution in background
         execution_task = asyncio.create_task(self.execute())
@@ -253,7 +253,7 @@ class AsyncExecutor:
         finally:
             # Cleanup: unsubscribe handler
             for event_type in EventType:
-                await self.event_bus.unsubscribe(event_type, stream_handler)
+                self.event_bus.off(event_type.value, stream_handler)
 
     async def pause(self) -> None:
         """Pause execution (for human-in-the-loop)"""
