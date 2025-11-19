@@ -1386,15 +1386,10 @@ def branch_scenario(source_run_path: str, branch_at_turn: int, verbose: bool = F
     # Truncate cost tracker to branch point
     truncated_costs_by_turn = {k: v for k, v in source_state['cost_tracker_state']['costs_by_turn'].items() if int(k) <= branch_at_turn}
 
-    # Recalculate totals
+    # Recalculate total cost from truncated turns
     total_cost = 0.0
-    total_tokens = 0
     for turn_data in truncated_costs_by_turn.values():
         total_cost += turn_data['total']
-        # Sum actor tokens
-        for actor_costs in turn_data.get('actor_costs', {}).values():
-            # Note: individual token counts not stored per actor in turn data, so we can't recalculate perfectly
-            pass
 
     # Truncate costs by actor
     truncated_costs_by_actor = {}
