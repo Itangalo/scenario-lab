@@ -122,7 +122,12 @@ class ScenarioStateManager:
         return os.path.exists(self.state_file)
 
     def mark_completed(self):
-        """Mark scenario as completed in state file"""
+        """
+        Mark scenario as completed in state file
+
+        WARNING: Not thread-safe or process-safe. Concurrent access to the same
+        state file may cause corruption. Use file locking if needed for concurrent access.
+        """
         if self.state_exists():
             state = self.load_state()
             state['status'] = 'completed'
@@ -138,6 +143,9 @@ class ScenarioStateManager:
 
         Args:
             reason: Reason for halt (rate_limit, credit_limit, max_turns, manual, etc.)
+
+        WARNING: Not thread-safe or process-safe. Concurrent access to the same
+        state file may cause corruption. Use file locking if needed for concurrent access.
         """
         if self.state_exists():
             state = self.load_state()
