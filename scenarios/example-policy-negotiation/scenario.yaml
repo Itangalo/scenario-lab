@@ -1,0 +1,69 @@
+# Example Scenario: AI Safety Policy Negotiation
+# This is a template scenario designed to help you understand scenario configuration.
+# You can use this as a starting point for creating your own scenarios.
+
+name: "Example: AI Safety Policy Negotiation"
+description: "A two-party negotiation between a regulator and tech company on AI safety standards. This example demonstrates all core features of Scenario Lab."
+
+# SYSTEM PROMPT
+# This sets the overall context for all actors in the scenario.
+# It should describe the simulation purpose and general behavioral expectations.
+system_prompt: |
+  You are participating in a multi-turn scenario simulation focused on AI policy and governance.
+  Your goal is to act realistically as your assigned role, making strategic decisions that align
+  with your character's goals, constraints, and decision-making style.
+
+  Be specific and concrete in your actions. Consider both short-term tactics and long-term strategy.
+  Your decisions should reflect realistic policy negotiation dynamics, including compromise,
+  strategic positioning, and consideration of stakeholder interests.
+
+# INITIAL WORLD STATE
+# Describe the starting situation: context, issues, constraints, and stakes.
+# Be specific about what needs to be decided and what the current positions are.
+initial_world_state: |
+  The year is 2025. A national AI safety regulator has proposed new requirements for
+  advanced AI systems. A major tech company developing frontier models must respond
+  to these proposals. Both parties have agreed to a structured negotiation process.
+
+  Key issues under negotiation:
+  - Safety testing requirements before deployment
+  - Incident reporting timelines and procedures
+  - Third-party auditing of AI systems
+  - Compute thresholds that trigger regulatory oversight
+
+  Current regulatory proposal (starting position):
+  - Systems trained with >10^25 FLOPS must undergo pre-deployment safety testing
+  - Incidents must be reported within 24 hours
+  - Annual third-party audits required for covered systems
+  - Public disclosure of audit summaries (not full reports)
+
+  Company position (starting):
+  - Supports voluntary safety testing but opposes mandatory requirements
+  - Accepts incident reporting but wants 72-hour timeline
+  - Willing to accept audits if results remain confidential
+  - Argues threshold should be higher (>10^26 FLOPS)
+
+  Both parties face external pressures: the regulator must show action after a recent
+  AI safety incident, while the company faces shareholder pressure to avoid delays
+  and maintain competitive advantage.
+
+# SCENARIO PARAMETERS
+# Number of turns: How many rounds of interaction (3-10 typical)
+# Turn duration: Timeframe each turn represents (e.g., "1 week", "1 month", "1 quarter")
+turns: 5
+turn_duration: "2 weeks"
+
+# WORLD STATE MODEL
+# This LLM model synthesizes world state updates from actor actions.
+# Recommendations:
+#   - gpt-4o-mini: Fast, cheap, good quality ($0.15/M in, $0.60/M out)
+#   - gpt-4o: Better quality, moderate cost ($2.50/M in, $10/M out)
+#   - claude-3.5-sonnet: Best narrative quality ($3/M in, $15/M out)
+# World state synthesis happens once per turn, so even premium models are affordable.
+world_state_model: "openai/gpt-4o-mini"
+
+# ACTORS
+# List of actor short names (must match YAML files in actors/ directory)
+actors:
+  - regulator
+  - tech-company
