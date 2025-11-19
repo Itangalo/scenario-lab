@@ -1367,8 +1367,15 @@ def branch_scenario(source_run_path: str, branch_at_turn: int, verbose: bool = F
 
     # Create truncated state for the branch
     # Truncate world state to branch point
+    turn_key = str(branch_at_turn)
+    if turn_key not in source_state['world_state']['states']:
+        raise ValueError(
+            f"Cannot branch at turn {branch_at_turn}: turn not found in source state. "
+            f"Available turns: {sorted([int(k) for k in source_state['world_state']['states'].keys()])}"
+        )
+
     truncated_world_state = {
-        'current_state': source_state['world_state']['states'][str(branch_at_turn)],
+        'current_state': source_state['world_state']['states'][turn_key],
         'current_turn': branch_at_turn,
         'turn_duration': source_state['world_state']['turn_duration'],
         'scenario_name': source_state['world_state']['scenario_name'],
