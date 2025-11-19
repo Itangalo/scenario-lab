@@ -20,6 +20,7 @@ from scenario_lab.models.state import (
     ActorState,
 )
 from scenario_lab.core.events import EventBus, EventType, get_event_bus
+from scenario_lab.utils.state_persistence import StatePersistence
 
 
 logger = logging.getLogger(__name__)
@@ -69,6 +70,8 @@ class ScenarioOrchestrator:
         event_bus: Optional[EventBus] = None,
         max_turns: Optional[int] = None,
         credit_limit: Optional[float] = None,
+        output_dir: Optional[str] = None,
+        save_state_every_turn: bool = True,
     ):
         """
         Initialize orchestrator
@@ -77,10 +80,14 @@ class ScenarioOrchestrator:
             event_bus: Event bus for emitting events (creates one if not provided)
             max_turns: Maximum number of turns to execute
             credit_limit: Maximum cost in USD
+            output_dir: Output directory for state saving
+            save_state_every_turn: Whether to save state after each turn
         """
         self.event_bus = event_bus or get_event_bus()
         self.max_turns = max_turns
         self.credit_limit = credit_limit
+        self.output_dir = output_dir
+        self.save_state_every_turn = save_state_every_turn
 
         # Phase services (to be injected)
         self.phases: Dict[PhaseType, PhaseService] = {}
@@ -229,9 +236,14 @@ class ScenarioOrchestrator:
                     "turn": turn,
                     "total_cost": state.total_cost(),
                     "decisions": len(state.decisions),
+                    "state": state,  # Include state for event handlers
                 },
                 source="orchestrator",
             )
+
+            # Save state if enabled
+            if self.save_state_every_turn and self.output_dir:
+                self._save_state(state)
 
         except Exception as e:
             logger.error(f"Turn {turn} failed: {e}", exc_info=True)
@@ -388,3 +400,19 @@ class ScenarioOrchestrator:
         """Request orchestrator to stop execution"""
         self.should_stop = True
         logger.info("Stop requested")
+
+    def _save_state(self, state: ScenarioState) -> None:
+        """
+        Save current state to disk
+
+        Args:
+            state: Current scenario state
+        """
+        if not self.output_dir:
+            return
+
+        try:
+            StatePersistence.save_state(state, self.output_dir)
+        except Exception as e:
+            logger.error(f"Failed to save state: {e}", exc_info=True)
+            # Don't fail execution on save errors

@@ -10,6 +10,7 @@ from scenario_lab.utils.cli_helpers import (
     print_section,
     print_checklist_item,
 )
+from scenario_lab.utils.state_persistence import StatePersistence
 
 __all__ = [
     "print_header",
@@ -20,4 +21,5 @@ __all__ = [
     "print_alpha_notice",
     "print_section",
     "print_checklist_item",
+    "StatePersistence",
 ]

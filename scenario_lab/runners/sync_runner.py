@@ -33,6 +33,7 @@ from scenario_lab.services.persistence_phase import PersistencePhase
 from scenario_lab.services.database_persistence_phase import DatabasePersistencePhase
 from scenario_lab.models.state import ScenarioState
 from scenario_lab.database import Database
+from scenario_lab.utils.state_persistence import StatePersistence
 
 logger = logging.getLogger(__name__)
 
@@ -56,6 +57,9 @@ class SyncRunner:
         max_turns: Optional[int] = None,
         credit_limit: Optional[float] = None,
         database: Optional[Database] = None,
+        resume_from: Optional[str] = None,
+        branch_from: Optional[str] = None,
+        branch_at_turn: Optional[int] = None,
     ):
         """
         Initialize sync runner
@@ -66,12 +70,18 @@ class SyncRunner:
             max_turns: Maximum number of turns to execute
             credit_limit: Maximum cost in USD
             database: Optional Database instance for persistence
+            resume_from: Path to run directory to resume from
+            branch_from: Path to run directory to branch from
+            branch_at_turn: Turn number to branch at (required with branch_from)
         """
         self.scenario_path = scenario_path
         self.output_path = output_path or self._default_output_path()
         self.max_turns = max_turns
         self.credit_limit = credit_limit
         self.database = database
+        self.resume_from = resume_from
+        self.branch_from = branch_from
+        self.branch_at_turn = branch_at_turn
 
         # Will be initialized in setup()
         self.loader: Optional[ScenarioLoader] = None
@@ -108,6 +118,14 @@ class SyncRunner:
         # Load scenario configuration
         self.loader = ScenarioLoader(self.scenario_path)
         self.initial_state, self.actors, self.scenario_config = self.loader.load()
+
+        # Handle resume/branch modes
+        if self.resume_from:
+            logger.info(f"Resuming from {self.resume_from}")
+            self._load_resume_state()
+        elif self.branch_from:
+            logger.info(f"Branching from {self.branch_from} at turn {self.branch_at_turn}")
+            self._load_branch_state()
 
         # Initialize V1 components
         self._init_v1_components()
@@ -183,6 +201,8 @@ class SyncRunner:
             event_bus=self.event_bus,
             max_turns=self.max_turns or self.scenario_config.get("num_turns", 10),
             credit_limit=self.credit_limit,
+            output_dir=self.output_path,
+            save_state_every_turn=True,
         )
 
     def _wire_phases(self) -> None:
@@ -258,3 +278,44 @@ class SyncRunner:
         )
 
         return final_state
+
+    def _load_resume_state(self) -> None:
+        """Load state for resuming from a previous run"""
+        state_file = Path(self.resume_from) / "scenario-state-v2.json"
+        if not state_file.exists():
+            raise FileNotFoundError(
+                f"State file not found: {state_file}\n"
+                f"Cannot resume from {self.resume_from}"
+            )
+
+        # Load the state
+        loaded_state = StatePersistence.load_state(str(state_file))
+
+        # Override initial state
+        self.initial_state = loaded_state
+        logger.info(f"Loaded resume state from turn {loaded_state.turn}")
+
+    def _load_branch_state(self) -> None:
+        """Load state for branching from a previous run"""
+        if self.branch_at_turn is None:
+            raise ValueError("branch_at_turn must be specified when branching")
+
+        state_file = Path(self.branch_from) / "scenario-state-v2.json"
+        if not state_file.exists():
+            raise FileNotFoundError(
+                f"State file not found: {state_file}\n"
+                f"Cannot branch from {self.branch_from}"
+            )
+
+        # Create branched state
+        branched_state = StatePersistence.create_branch(
+            source_state_file=str(state_file),
+            branch_at_turn=self.branch_at_turn,
+            new_output_dir=self.output_path,
+        )
+
+        # Override initial state
+        self.initial_state = branched_state
+        logger.info(
+            f"Created branch from {self.branch_from} at turn {self.branch_at_turn}"
+        )

@@ -93,13 +93,7 @@ def run(
     # Alpha notice
     print_alpha_notice()
 
-    # Handle resume and branch via V1 for now (Phase 2.3 will migrate these)
-    if resume or branch_from:
-        print_warning("Resume and branch features currently using V1 engine")
-        _run_v1(scenario_path, max_turns, credit_limit, resume, branch_from, branch_at_turn)
-        return
-
-    # Use V2 SyncRunner for standard execution
+    # Use V2 SyncRunner for all operations (including resume/branch)
     try:
         from scenario_lab.runners import SyncRunner
         from scenario_lab.core.events import EventBus
@@ -109,6 +103,9 @@ def run(
             scenario_path=scenario_path,
             max_turns=max_turns,
             credit_limit=credit_limit,
+            resume_from=resume,
+            branch_from=branch_from,
+            branch_at_turn=branch_at_turn,
         )
 
         print_section("Initializing scenario...")
@@ -163,51 +160,6 @@ def run(
         print_error("Scenario execution failed", str(e))
         if logging.getLogger().level == logging.DEBUG:
             traceback.print_exc()
-        sys.exit(1)
-
-
-def _run_v1(
-    scenario_path: str,
-    max_turns: Optional[int],
-    credit_limit: Optional[float],
-    resume: Optional[str],
-    branch_from: Optional[str],
-    branch_at_turn: Optional[int],
-) -> None:
-    """Run scenario using V1 engine (for resume/branch compatibility)"""
-    sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../../src"))
-
-    try:
-        from run_scenario import main as v1_main
-
-        # Build V1 arguments
-        v1_args = [scenario_path]
-        if max_turns:
-            v1_args.extend(["--max-turns", str(max_turns)])
-        if credit_limit:
-            v1_args.extend(["--credit-limit", str(credit_limit)])
-        if resume:
-            v1_args.extend(["--resume", resume])
-        if branch_from:
-            v1_args.extend(["--branch-from", branch_from])
-            if branch_at_turn is not None:
-                v1_args.extend(["--branch-at-turn", str(branch_at_turn)])
-
-        # Call V1
-        sys.argv = ["run_scenario.py"] + v1_args
-        v1_main()
-
-        print_success("Scenario completed")
-
-    except ImportError as e:
-        print_error(
-            "Could not load V1 runner",
-            str(e),
-            "Make sure you're running from the project root"
-        )
-        sys.exit(1)
-    except Exception as e:
-        print_error("Scenario execution failed", str(e))
         sys.exit(1)
 
 
