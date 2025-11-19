@@ -770,7 +770,21 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         credit_limit: Optional cost limit - halt if exceeded
         resume_mode: If True, resume from existing state in output_path
         verbose: If True, enable DEBUG logging
+
+    NOTE: This is a large function (500+ lines) organized into these major sections:
+    1. Initialization & logging setup (lines 774-790)
+    2. Resume mode handling (lines 793-840)
+    3. Scenario & actor loading (lines 842-920)
+    4. Output directory setup (lines 922-970)
+    5. QA validator & context manager setup (lines 972-1020)
+    6. Main execution loop (lines 1022-1200)
+    7. Cleanup & state persistence (lines 1202-1284)
+
+    Consider refactoring into smaller functions for improved maintainability.
     """
+    # ============================================================================
+    # SECTION 1: INITIALIZATION & LOGGING SETUP
+    # ============================================================================
     # Set up temporary logger for initialization
     logger = logging.getLogger("scenario_lab")
     logger.setLevel(logging.DEBUG if verbose else logging.INFO)
@@ -790,6 +804,9 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
     start_turn = 1
     started_at = None
 
+    # ============================================================================
+    # SECTION 2: RESUME MODE HANDLING
+    # ============================================================================
     # Handle resume mode
     if resume_mode:
         if output_path is None:
@@ -816,6 +833,9 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             logger.info(f"  Previous halt reason: {saved_state['halt_reason']}")
         logger.info(f"  Resuming from turn {start_turn} of {saved_state['total_turns']}")
 
+    # ============================================================================
+    # SECTION 3: SCENARIO & ACTOR LOADING
+    # ============================================================================
     # Load scenario definition
     scenario = load_scenario(scenario_path)
     scenario_name = scenario['name']
@@ -1007,6 +1027,9 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         remaining_turns = num_turns - start_turn + 1
         logger.info(f"Continuing for {remaining_turns} more turn(s)...")
 
+    # ============================================================================
+    # SECTION 4: MAIN EXECUTION LOOP
+    # ============================================================================
     for turn in range(start_turn, num_turns + 1):
         try:
             log_section(logger, f"TURN {turn}")
