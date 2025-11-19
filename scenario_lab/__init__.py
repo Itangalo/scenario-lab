@@ -14,7 +14,7 @@ While maintaining:
 - Cost management and controls
 """
 
-__version__ = "2.0.0-alpha.3"
+__version__ = "2.0.0-alpha.4"
 
 # Core exports
 from scenario_lab.core.events import EventBus, Event, EventType, get_event_bus, set_event_bus

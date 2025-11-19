@@ -321,6 +321,54 @@ def version() -> None:
     click.echo()
 
 
+@cli.command()
+@click.option("--host", default="0.0.0.0", help="Host to bind to")
+@click.option("--port", default=8000, help="Port to bind to")
+@click.option("--reload", is_flag=True, help="Enable auto-reload for development")
+def serve(host: str, port: int, reload: bool) -> None:
+    """
+    Start the Scenario Lab API server
+
+    Provides REST API and WebSocket endpoints for:
+    - Programmatic scenario execution
+    - Real-time monitoring
+    - Run analytics and comparison
+    - WebSocket streaming
+    """
+    print_header("Scenario Lab API Server")
+    print_info("Host", host)
+    print_info("Port", str(port), "green")
+    print_info("Reload", "enabled" if reload else "disabled", "yellow" if reload else "blue")
+
+    print_section("Starting server...")
+    click.echo()
+    click.echo(f"🌐 API Documentation: {click.style(f'http://{host}:{port}/docs', fg='blue', underline=True)}")
+    click.echo(f"📊 OpenAPI Schema: {click.style(f'http://{host}:{port}/openapi.json', fg='blue')}")
+    click.echo()
+
+    try:
+        import uvicorn
+        from scenario_lab.api import app
+
+        uvicorn.run(
+            "scenario_lab.api:app",
+            host=host,
+            port=port,
+            reload=reload,
+            log_level="info",
+        )
+    except ImportError as e:
+        print_error(
+            "FastAPI not installed",
+            str(e),
+            "Install with: pip install fastapi uvicorn"
+        )
+        sys.exit(1)
+    except Exception as e:
+        print_error("Failed to start server", str(e))
+        sys.exit(1)
+
+
 def main() -> None:
     """Entry point for CLI"""
     cli()
