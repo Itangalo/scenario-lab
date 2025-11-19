@@ -145,11 +145,14 @@ class ScenarioOrchestrator:
         )
 
         try:
+            # Track halt reason
+            halt_reason = None
+
             # Execute turns until completion
             while not self._should_stop_execution(state):
                 state = await self.execute_turn(state)
 
-                # Check pause/stop flags
+                # Check pause flag
                 if self.paused:
                     state = state.with_paused()
                     await self.event_bus.emit(
@@ -159,34 +162,53 @@ class ScenarioOrchestrator:
                     )
                     break
 
+                # Check stop flag
                 if self.should_stop:
+                    halt_reason = "Manual stop requested"
                     break
 
-            # Mark as completed if not paused or failed
-            if state.status == ScenarioStatus.RUNNING:
+            # Check if we halted due to credit limit or manual stop
+            if halt_reason or (self.paused and state.total_cost() >= self.credit_limit):
+                reason = halt_reason or f"Credit limit exceeded: ${state.total_cost():.2f} >= ${self.credit_limit:.2f}"
+                state = state.with_halted(reason)
+
+                logger.warning(f"Scenario halted: {reason}")
+
+                await self.event_bus.emit(
+                    EventType.SCENARIO_HALTED,
+                    data={
+                        "scenario_id": state.scenario_id,
+                        "run_id": state.run_id,
+                        "turn": state.turn,
+                        "total_cost": state.total_cost(),
+                        "reason": reason,
+                    },
+                    source="orchestrator",
+                )
+
+            # Mark as completed if still running (normal completion)
+            elif state.status == ScenarioStatus.RUNNING:
                 state = state.with_completed()
 
-            logger.info(
-                "Scenario execution completed",
-                extra={
-                    "turns": state.turn,
-                    "total_cost": state.total_cost(),
-                    "status": state.status.value,
-                }
-            )
+                logger.info(
+                    "Scenario execution completed",
+                    extra={
+                        "turns": state.turn,
+                        "total_cost": state.total_cost(),
+                    }
+                )
 
-            # Emit completion event
-            await self.event_bus.emit(
-                EventType.SCENARIO_COMPLETED,
-                data={
-                    "scenario_id": state.scenario_id,
-                    "run_id": state.run_id,
-                    "turns": state.turn,
-                    "total_cost": state.total_cost(),
-                    "status": state.status.value,
-                },
-                source="orchestrator",
-            )
+                await self.event_bus.emit(
+                    EventType.SCENARIO_COMPLETED,
+                    data={
+                        "scenario_id": state.scenario_id,
+                        "run_id": state.run_id,
+                        "turns": state.turn,
+                        "total_cost": state.total_cost(),
+                        "status": state.status.value,
+                    },
+                    source="orchestrator",
+                )
 
         except Exception as e:
             logger.error(f"Scenario execution failed: {e}", exc_info=True)

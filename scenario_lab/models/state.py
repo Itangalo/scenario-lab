@@ -24,6 +24,7 @@ class ScenarioStatus(str, Enum):
     RUNNING = "running"
     PAUSED = "paused"
     COMPLETED = "completed"
+    HALTED = "halted"  # Stopped early (credit limit, manual stop, max turns)
     FAILED = "failed"
 
 
@@ -284,6 +285,15 @@ class ScenarioState:
     def with_paused(self) -> ScenarioState:
         """Mark as paused"""
         return replace(self, status=ScenarioStatus.PAUSED)
+
+    def with_halted(self, reason: str = "") -> ScenarioState:
+        """Mark as halted (stopped early)"""
+        return replace(
+            self,
+            status=ScenarioStatus.HALTED,
+            completed_at=datetime.now(),
+            error=reason if reason else "Scenario halted",
+        )
 
     def get_communications_for_turn(self, turn: int) -> List[Communication]:
         """Get all communications for a specific turn"""

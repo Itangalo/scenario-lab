@@ -26,6 +26,7 @@ class EventType(str, Enum):
     # Scenario lifecycle
     SCENARIO_STARTED = "scenario_started"
     SCENARIO_COMPLETED = "scenario_completed"
+    SCENARIO_HALTED = "scenario_halted"  # Stopped early (credit limit, manual stop)
     SCENARIO_FAILED = "scenario_failed"
     SCENARIO_PAUSED = "scenario_paused"
     SCENARIO_RESUMED = "scenario_resumed"

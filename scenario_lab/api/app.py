@@ -215,14 +215,16 @@ async def _run_scenario_background(scenario_id: str, request: ScenarioExecuteReq
         # Execute scenario
         final_state = await runner.run()
 
-        # Update status
-        running_scenarios[scenario_id]["status"] = "completed"
+        # Update status based on final state (if not already set by event handler)
+        if running_scenarios[scenario_id]["status"] not in ["halted", "failed"]:
+            running_scenarios[scenario_id]["status"] = final_state.status.value
+
         running_scenarios[scenario_id]["current_turn"] = final_state.turn
         running_scenarios[scenario_id]["total_cost"] = final_state.total_cost()
         running_scenarios[scenario_id]["completed_at"] = datetime.now()
         running_scenarios[scenario_id]["run_id"] = final_state.run_id
 
-        logger.info(f"Scenario {scenario_id} completed successfully")
+        logger.info(f"Scenario {scenario_id} completed with status: {final_state.status.value}")
 
     except Exception as e:
         logger.error(f"Scenario {scenario_id} failed: {e}")
@@ -427,11 +429,14 @@ async def websocket_stream(websocket: WebSocket, scenario_id: str):
 
         async def forward_event(event: Event):
             try:
+                # Convert float timestamp to ISO format datetime
+                timestamp_dt = datetime.fromtimestamp(event.timestamp)
+
                 await websocket.send_json(
                     {
                         "type": event.type,
                         "data": event.data,
-                        "timestamp": event.timestamp.isoformat(),
+                        "timestamp": timestamp_dt.isoformat(),
                     }
                 )
             except Exception as e:
