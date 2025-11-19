@@ -231,8 +231,8 @@ def validate(scenario_path: str) -> None:
 
 @cli.command()
 @click.argument("scenario_path", type=click.Path(exists=True, file_okay=False))
-@click.option("--max-turns", type=int, default=10, help="Number of turns to estimate")
-def estimate(scenario_path: str, max_turns: int) -> None:
+@click.option("--max-turns", type=int, help="Number of turns to estimate (uses scenario default if not specified)")
+def estimate(scenario_path: str, max_turns: Optional[int]) -> None:
     """
     Estimate scenario cost without running
 
@@ -240,19 +240,108 @@ def estimate(scenario_path: str, max_turns: int) -> None:
     - Estimated total cost
     - Per-actor cost breakdown
     - Per-turn cost estimate
+    - Warnings for expensive configurations
     """
+    from pathlib import Path
+    from scenario_lab.utils.cost_estimator import CostEstimator
+
     print_header("Cost Estimation")
     print_info("Scenario", scenario_path)
-    print_info("Turns", str(max_turns), "yellow")
-
-    print_warning("V2 Alpha: Cost estimation coming in Phase 2.0")
+    if max_turns:
+        print_info("Turns", str(max_turns), "yellow")
     click.echo()
 
-    # TODO: Implement cost estimation
-    print_section("Estimated costs:")
-    click.echo(f"  Total: {click.style('$X.XX', fg='yellow')} (placeholder)")
-    click.echo(f"  Per turn: {click.style('$X.XX', fg='yellow')} (placeholder)")
-    click.echo(f"  Per actor: {click.style('$X.XX', fg='yellow')} (placeholder)")
+    # Create estimator and load configs
+    estimator = CostEstimator(Path(scenario_path))
+    if not estimator.load_configs():
+        print_error(
+            "Failed to load scenario configuration",
+            "Cannot estimate costs without valid scenario.yaml and actor files",
+            "Run 'scenario-lab validate' to check configuration"
+        )
+        sys.exit(1)
+
+    # Get estimate
+    estimate_result = estimator.estimate(max_turns)
+
+    # Display number of turns
+    actual_turns = max_turns or estimator.scenario_config.turns or 10
+    click.echo(f"📊 Estimating costs for {click.style(str(actual_turns), fg='cyan', bold=True)} turns")
+    click.echo()
+
+    # Display per-actor breakdown
+    if estimate_result.actor_costs:
+        print_section("Per-Actor Estimates:")
+        for actor_name, cost in estimate_result.actor_costs.items():
+            actor_config = estimator.actor_configs.get(actor_name)
+            model = actor_config.llm_model if actor_config else "unknown"
+            cost_per_turn = cost / actual_turns if actual_turns > 0 else 0
+
+            # Color code based on cost
+            if cost > 5.0:
+                color = "red"
+            elif cost > 1.0:
+                color = "yellow"
+            else:
+                color = "green"
+
+            click.echo(
+                f"  {actor_name} ({model}): "
+                f"{click.style(f'${cost:.2f}', fg=color)} total "
+                f"({click.style(f'${cost_per_turn:.3f}', fg=color)} per turn)"
+            )
+        click.echo()
+
+    # Display other cost components
+    if estimate_result.world_state_cost > 0:
+        ws_model = estimator.scenario_config.world_state_model or "openai/gpt-4o-mini"
+        click.echo(f"  World State Updates ({ws_model}): ${estimate_result.world_state_cost:.2f}")
+
+    if estimate_result.communication_cost > 0:
+        click.echo(f"  Communications: ${estimate_result.communication_cost:.2f}")
+
+    if estimate_result.metrics_cost > 0:
+        click.echo(f"  Metrics Extraction: ${estimate_result.metrics_cost:.2f}")
+
+    if estimate_result.validation_cost > 0:
+        click.echo(f"  QA Validation: ${estimate_result.validation_cost:.2f}")
+
+    if any([
+        estimate_result.world_state_cost,
+        estimate_result.communication_cost,
+        estimate_result.metrics_cost,
+        estimate_result.validation_cost
+    ]):
+        click.echo()
+
+    # Display total
+    print_section("Total Estimate:")
+    total_color = "red" if estimate_result.total_cost > 10.0 else "green" if estimate_result.total_cost < 1.0 else "yellow"
+
+    click.echo(
+        f"  Total: {click.style(f'${estimate_result.total_cost:.2f}', fg=total_color, bold=True)} "
+        f"for {actual_turns} turns"
+    )
+    click.echo(
+        f"  Per turn: {click.style(f'${estimate_result.per_turn_cost:.3f}', fg=total_color)}"
+    )
+    click.echo()
+
+    # Display warnings
+    if estimate_result.warnings:
+        print_section("Warnings:")
+        for warning in estimate_result.warnings:
+            click.echo(f"  {click.style('⚠', fg='yellow')} {warning}")
+        click.echo()
+
+    # Summary message
+    if estimate_result.total_cost > 50.0:
+        print_warning("This scenario is expensive - consider reducing turns or using cheaper models")
+    elif estimate_result.total_cost == 0.0:
+        print_success("This scenario uses free/local models - zero estimated cost!")
+    else:
+        click.echo(click.style("💡 Tip:", fg="bright_blue") + " Use --credit-limit to cap spending during execution")
+        click.echo()
 
 
 @cli.command()
