@@ -14,7 +14,19 @@ from pydantic import ValidationError
 load_dotenv()
 
 class Actor:
-    """Represents a single actor in the scenario"""
+    """
+    Represents a single actor in the scenario
+
+    DESIGN NOTE: All decision methods (make_decision, decide_communication, respond_to_bilateral,
+    decide_coalition, respond_to_coalition) follow a common pattern:
+    1. Build system + user prompts specific to the decision type
+    2. Call make_llm_call() to get LLM response
+    3. Parse response using appropriate parser from response_parser module
+    4. Return structured dict with decision data and token usage
+
+    This pattern could be extracted into a helper method in future refactoring to reduce
+    code duplication, but current implementation prioritizes clarity over DRY principle.
+    """
 
     def __init__(self, actor_data: Dict[str, Any], scenario_system_prompt: str = "", json_mode: bool = False):
         self.name = actor_data['name']
