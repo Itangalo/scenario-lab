@@ -24,6 +24,9 @@ from scenario_lab.models.state import (
     CostRecord,
 )
 from scenario_lab.services.persistence_phase import PersistencePhase
+from scenario_lab.services.decision_phase import DecisionPhase
+from scenario_lab.services.world_update_phase import WorldUpdatePhase
+from scenario_lab.services.communication_phase import CommunicationPhase
 from scenario_lab.utils.state_persistence import StatePersistence
 
 
@@ -405,6 +408,268 @@ class TestScenarioState:
 
         # Original state unchanged
         assert len(sample_state.costs) == 2
+
+
+class TestDecisionPhase:
+    """Test the decision phase service"""
+
+    @pytest.mark.asyncio
+    async def test_decision_phase_processes_all_actors(self, sample_state):
+        """Test that decision phase gets decisions from all actors"""
+        # Create mock actors
+        mock_actor1 = MagicMock()
+        mock_actor1.name = "Test Actor 1"
+        mock_actor1.llm_model = "test/model"
+        mock_actor1.make_decision = MagicMock(return_value={
+            'goals': 'Test goals 1',
+            'reasoning': 'Test reasoning 1',
+            'action': 'Test action 1',
+            'tokens_used': 100
+        })
+
+        mock_actor2 = MagicMock()
+        mock_actor2.name = "Test Actor 2"
+        mock_actor2.llm_model = "test/model"
+        mock_actor2.make_decision = MagicMock(return_value={
+            'goals': 'Test goals 2',
+            'reasoning': 'Test reasoning 2',
+            'action': 'Test action 2',
+            'tokens_used': 120
+        })
+
+        actors = {
+            'actor1': mock_actor1,
+            'actor2': mock_actor2
+        }
+
+        # Create mock dependencies
+        mock_context_manager = MagicMock()
+        mock_context_manager.get_context_for_actor = MagicMock(
+            return_value="Mocked context for actor"
+        )
+
+        mock_v1_world_state = MagicMock()
+        mock_communication_manager = MagicMock()
+
+        # Create decision phase
+        phase = DecisionPhase(
+            actors=actors,
+            context_manager=mock_context_manager,
+            v1_world_state=mock_v1_world_state,
+            communication_manager=mock_communication_manager,
+            output_dir=None  # Skip file writing for unit test
+        )
+
+        # Execute phase
+        result_state = await phase.execute(sample_state)
+
+        # Verify both actors made decisions
+        assert mock_actor1.make_decision.called
+        assert mock_actor2.make_decision.called
+
+        # Verify state has decisions
+        assert 'Test Actor 1' in result_state.decisions
+        assert 'Test Actor 2' in result_state.decisions
+
+        # Verify costs were tracked
+        initial_cost_count = len(sample_state.costs)
+        assert len(result_state.costs) == initial_cost_count + 2
+
+    @pytest.mark.asyncio
+    async def test_decision_phase_tracks_costs(self, sample_state):
+        """Test that decision phase tracks LLM costs correctly"""
+        mock_actor = MagicMock()
+        mock_actor.name = "Test Actor"
+        mock_actor.llm_model = "test/model"
+        mock_actor.make_decision = MagicMock(return_value={
+            'goals': 'Test goals',
+            'reasoning': 'Test reasoning',
+            'action': 'Test action',
+            'tokens_used': 500
+        })
+
+        actors = {'actor1': mock_actor}
+
+        mock_context_manager = MagicMock()
+        mock_context_manager.get_context_for_actor = MagicMock(return_value="Context")
+        mock_v1_world_state = MagicMock()
+        mock_communication_manager = MagicMock()
+
+        phase = DecisionPhase(
+            actors=actors,
+            context_manager=mock_context_manager,
+            v1_world_state=mock_v1_world_state,
+            communication_manager=mock_communication_manager
+        )
+
+        result_state = await phase.execute(sample_state)
+
+        # Find the cost record for this phase
+        new_costs = [c for c in result_state.costs if c not in sample_state.costs]
+        assert len(new_costs) == 1
+
+        cost_record = new_costs[0]
+        assert cost_record.actor == "Test Actor"
+        assert cost_record.phase == "decision"
+        assert cost_record.model == "test/model"
+        assert cost_record.input_tokens + cost_record.output_tokens == 500
+
+
+class TestWorldUpdatePhase:
+    """Test the world update phase service"""
+
+    @pytest.mark.asyncio
+    async def test_world_update_phase_synthesizes_new_state(self, sample_state):
+        """Test that world update phase creates new world state"""
+        # Create mock world state updater
+        mock_updater = MagicMock()
+        mock_updater.update_world_state = MagicMock(return_value={
+            'updated_state': 'This is the new world state for turn 1. Things have changed.',
+            'metadata': {'tokens_used': 300}
+        })
+
+        mock_v1_world_state = MagicMock()
+        mock_v1_world_state.to_markdown = MagicMock(
+            return_value="# Turn 1\n\nThis is the new world state for turn 1. Things have changed."
+        )
+
+        # Create phase
+        phase = WorldUpdatePhase(
+            world_state_updater=mock_updater,
+            v1_world_state=mock_v1_world_state,
+            scenario_name="Test Scenario",
+            world_state_model="test/model",
+            output_dir=None  # Skip file writing
+        )
+
+        # Execute phase
+        result_state = await phase.execute(sample_state)
+
+        # Verify world state was updated
+        assert mock_updater.update_world_state.called
+        assert result_state.world_state.content == 'This is the new world state for turn 1. Things have changed.'
+        assert result_state.world_state.turn == sample_state.turn
+
+        # Verify cost was tracked
+        new_costs = [c for c in result_state.costs if c not in sample_state.costs]
+        assert len(new_costs) == 1
+        assert new_costs[0].phase == "world_update"
+        assert new_costs[0].model == "test/model"
+
+    @pytest.mark.asyncio
+    async def test_world_update_phase_includes_actor_decisions(self, sample_state):
+        """Test that world update receives actor decisions"""
+        mock_updater = MagicMock()
+        mock_updater.update_world_state = MagicMock(return_value={
+            'updated_state': 'New world state',
+            'metadata': {'tokens_used': 200}
+        })
+
+        mock_v1_world_state = MagicMock()
+
+        phase = WorldUpdatePhase(
+            world_state_updater=mock_updater,
+            v1_world_state=mock_v1_world_state,
+            scenario_name="Test",
+            world_state_model="test/model"
+        )
+
+        await phase.execute(sample_state)
+
+        # Verify update_world_state was called with actor decisions
+        call_args = mock_updater.update_world_state.call_args
+        assert 'actor_decisions' in call_args.kwargs
+
+        # Should have decisions from both actors in sample_state
+        actor_decisions = call_args.kwargs['actor_decisions']
+        assert len(actor_decisions) == 2
+
+
+class TestCommunicationPhase:
+    """Test the communication phase service"""
+
+    @pytest.mark.asyncio
+    async def test_communication_phase_handles_no_communications(self, sample_state):
+        """Test that communication phase handles case with no communications"""
+        # Create mock dependencies
+        mock_comm_manager = MagicMock()
+        mock_comm_manager.has_pending_communications = MagicMock(return_value=False)
+
+        mock_v1_world_state = MagicMock()
+
+        # Create mock actors that don't want to communicate
+        mock_actor = MagicMock()
+        mock_actor.name = "Test Actor"
+        mock_actor.decide_communication = MagicMock(return_value={
+            'initiate_bilateral': False,
+            'target_actor': None,
+            'message': ''
+        })
+
+        actors = {'actor1': mock_actor}
+
+        phase = CommunicationPhase(
+            actors=actors,
+            v1_world_state=mock_v1_world_state,
+            communication_manager=mock_comm_manager
+        )
+
+        # Execute phase
+        result_state = await phase.execute(sample_state)
+
+        # State should be unchanged (no new communications)
+        assert len(result_state.communications) == len(sample_state.communications)
+
+    @pytest.mark.asyncio
+    async def test_communication_phase_processes_bilateral_communications(self, sample_state):
+        """Test that communication phase handles bilateral communications"""
+        mock_comm_manager = MagicMock()
+        mock_comm_manager.has_pending_communications = MagicMock(return_value=False)
+        mock_comm_manager.get_bilateral_communications_for_turn = MagicMock(return_value=[])
+
+        mock_v1_world_state = MagicMock()
+
+        # Actor 1 wants to communicate with Actor 2
+        mock_actor1 = MagicMock()
+        mock_actor1.name = "Actor 1"
+        mock_actor1.decide_communication = MagicMock(return_value={
+            'initiate_bilateral': True,
+            'target_actor': 'Actor 2',
+            'message': 'Let us cooperate',
+            'tokens_used': 50
+        })
+
+        # Actor 2 doesn't want to initiate
+        mock_actor2 = MagicMock()
+        mock_actor2.name = "Actor 2"
+        mock_actor2.decide_communication = MagicMock(return_value={
+            'initiate_bilateral': False,
+            'target_actor': None,
+            'message': ''
+        })
+        mock_actor2.respond_to_bilateral = MagicMock(return_value={
+            'response': 'accept',
+            'message': 'I agree',
+            'internal_notes': 'This seems good',
+            'tokens_used': 40
+        })
+
+        actors = {
+            'actor1': mock_actor1,
+            'actor2': mock_actor2
+        }
+
+        phase = CommunicationPhase(
+            actors=actors,
+            v1_world_state=mock_v1_world_state,
+            communication_manager=mock_comm_manager
+        )
+
+        result_state = await phase.execute(sample_state)
+
+        # Verify actors were asked about communication
+        assert mock_actor1.decide_communication.called
+        assert mock_actor2.decide_communication.called
 
 
 if __name__ == '__main__':
