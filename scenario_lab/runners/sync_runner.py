@@ -60,6 +60,7 @@ class SyncRunner:
         resume_from: Optional[str] = None,
         branch_from: Optional[str] = None,
         branch_at_turn: Optional[int] = None,
+        json_mode: bool = False,
     ):
         """
         Initialize sync runner
@@ -73,6 +74,7 @@ class SyncRunner:
             resume_from: Path to run directory to resume from
             branch_from: Path to run directory to branch from
             branch_at_turn: Turn number to branch at (required with branch_from)
+            json_mode: Whether to use JSON response format for actors (default: False)
         """
         self.scenario_path = scenario_path
         self.output_path = output_path or self._default_output_path()
@@ -82,6 +84,7 @@ class SyncRunner:
         self.resume_from = resume_from
         self.branch_from = branch_from
         self.branch_at_turn = branch_at_turn
+        self.json_mode = json_mode
 
         # Will be initialized in setup()
         self.loader: Optional[ScenarioLoader] = None
@@ -116,7 +119,7 @@ class SyncRunner:
         os.makedirs(self.output_path, exist_ok=True)
 
         # Load scenario configuration
-        self.loader = ScenarioLoader(self.scenario_path)
+        self.loader = ScenarioLoader(self.scenario_path, json_mode=self.json_mode)
         self.initial_state, self.actors, self.scenario_config = self.loader.load()
 
         # Handle resume/branch modes

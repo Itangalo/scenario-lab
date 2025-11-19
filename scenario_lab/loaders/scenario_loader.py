@@ -35,16 +35,18 @@ class ScenarioLoader:
     4. Creates initial V2 ScenarioState
     """
 
-    def __init__(self, scenario_path: str):
+    def __init__(self, scenario_path: str, json_mode: bool = False):
         """
         Initialize scenario loader
 
         Args:
             scenario_path: Path to scenario directory
+            json_mode: Whether to use JSON response format for actors (default: False for V1 compatibility)
         """
         self.scenario_path = Path(scenario_path)
         self.scenario_config: Dict[str, Any] = {}
         self.actors: Dict[str, Actor] = {}
+        self.json_mode = json_mode
 
     def load(self) -> tuple[ScenarioState, Dict[str, Actor], Dict[str, Any]]:
         """
@@ -133,8 +135,16 @@ class ScenarioLoader:
             try:
                 logger.debug(f"Loading actor from: {actor_file}")
 
-                # Use V1's load_actor function
-                actor = load_actor(str(actor_file), scenario_system_prompt)
+                # Extract actor short name from filename (remove .yaml extension)
+                actor_short_name = actor_file.stem
+
+                # Use V1's load_actor function with correct arguments
+                actor = load_actor(
+                    str(self.scenario_path),
+                    actor_short_name,
+                    scenario_system_prompt,
+                    json_mode=self.json_mode
+                )
 
                 # Store by short name for easy lookup
                 actors[actor.short_name] = actor

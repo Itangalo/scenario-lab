@@ -16,7 +16,7 @@ load_dotenv()
 class Actor:
     """Represents a single actor in the scenario"""
 
-    def __init__(self, actor_data: Dict[str, Any], scenario_system_prompt: str = ""):
+    def __init__(self, actor_data: Dict[str, Any], scenario_system_prompt: str = "", json_mode: bool = False):
         self.name = actor_data['name']
         self.short_name = actor_data['short_name']
         self.llm_model = actor_data['llm_model']
@@ -27,6 +27,7 @@ class Actor:
         self.constraints = actor_data.get('constraints', [])
         self.expertise = actor_data.get('expertise', {})
         self.decision_style = actor_data.get('decision_style', '')
+        self.json_mode = json_mode  # Whether to use JSON response format
 
     def make_decision(self, world_state: str, turn: int, total_turns: int, other_actors_decisions: Dict[str, str] = None, communications_context: str = "", recent_goals: str = "") -> Dict[str, Any]:
         """
@@ -492,14 +493,32 @@ What do you want to communicate to your coalition members? Coordinate strategy, 
         if recent_goals:
             recent_goals_text = f"\n\n## Your Recent Goals\n\n{recent_goals}\n"
 
-        # Build user prompt with current situation and task
-        user_prompt = f"""## Current Situation (Turn {turn} of {total_turns})
+        # Build format instructions based on mode
+        if self.json_mode:
+            # JSON format instructions
+            format_instructions = """
+## Your Task
 
-{world_state}
-{communications_text}
-{other_decisions_text}
-{recent_goals_text}
+Analyze the situation and respond with a valid JSON object:
 
+```json
+{
+  "goals": {
+    "long_term": "List 2-4 enduring objectives you're pursuing. These may evolve based on events, but changes should be justified.",
+    "short_term": "List 1-3 immediate objectives for the next few turns."
+  },
+  "reasoning": "Explain your thinking, how this action serves your goals, and why your goals may have evolved or remained stable.",
+  "action": "Describe the specific action you will take this turn - be concrete and specific."
+}
+```
+
+**Important:** Provide only the JSON object. You may use markdown formatting within the string values.
+
+Remember: This is turn """ + f"{turn} of {total_turns}" + """. Your goals can evolve based on experience, but maintain some continuity unless events strongly justify change.
+"""
+        else:
+            # Markdown format instructions (V1 compatibility)
+            format_instructions = """
 ## Your Task
 
 First, state your current goals given recent developments:
@@ -518,8 +537,17 @@ Then decide your action:
 **ACTION:**
 [Describe the specific action you will take this turn - be concrete and specific]
 
-Remember: This is turn {turn} of {total_turns}. Your goals can evolve based on experience, but maintain some continuity unless events strongly justify change.
+Remember: This is turn """ + f"{turn} of {total_turns}" + """. Your goals can evolve based on experience, but maintain some continuity unless events strongly justify change.
 """
+
+        # Build user prompt
+        user_prompt = f"""## Current Situation (Turn {turn} of {total_turns})
+
+{world_state}
+{communications_text}
+{other_decisions_text}
+{recent_goals_text}
+{format_instructions}"""
 
         return combined_system_prompt, user_prompt
 
@@ -550,8 +578,17 @@ Remember: This is turn {turn} of {total_turns}. Your goals can evolve based on e
             max_retries=3
         )
 
-        # Parse the response using robust parser
-        parsed = parse_actor_decision(content)
+        # Parse the response based on mode
+        if self.json_mode:
+            # Use JSON parser with markdown fallback
+            import sys
+            from pathlib import Path
+            sys.path.insert(0, str(Path(__file__).parent.parent / "scenario_lab" / "utils"))
+            from json_response_parser import parse_decision_with_fallback
+            parsed = parse_decision_with_fallback(content)
+        else:
+            # Use V1 markdown parser
+            parsed = parse_actor_decision(content)
 
         return {
             'goals': parsed['goals'],
@@ -562,7 +599,7 @@ Remember: This is turn {turn} of {total_turns}. Your goals can evolve based on e
         }
 
 
-def load_actor(scenario_path: str, actor_short_name: str, scenario_system_prompt: str = "") -> Actor:
+def load_actor(scenario_path: str, actor_short_name: str, scenario_system_prompt: str = "", json_mode: bool = False) -> Actor:
     """
     Load and validate an actor from YAML file
 
@@ -570,6 +607,7 @@ def load_actor(scenario_path: str, actor_short_name: str, scenario_system_prompt
         scenario_path: Path to scenario directory
         actor_short_name: Actor identifier (e.g., 'regulator', 'tech-company')
         scenario_system_prompt: System prompt from scenario configuration
+        json_mode: Whether to use JSON response format (default: False for V1 compatibility)
 
     Returns:
         Validated Actor instance
@@ -596,7 +634,7 @@ def load_actor(scenario_path: str, actor_short_name: str, scenario_system_prompt
         # Convert back to dict for backward compatibility with Actor class
         actor_data = actor_config.dict()
 
-        return Actor(actor_data, scenario_system_prompt)
+        return Actor(actor_data, scenario_system_prompt, json_mode=json_mode)
 
     except ValidationError as e:
         # Format Pydantic validation errors nicely
