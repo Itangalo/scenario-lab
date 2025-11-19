@@ -218,7 +218,7 @@ class ScenarioOrchestrator:
                 state = await self._execute_phase(phase_type, state)
 
                 # Check credit limit after each phase
-                if self._check_credit_limit(state):
+                if await self._check_credit_limit(state):
                     self.paused = True
                     break
 
@@ -340,7 +340,7 @@ class ScenarioOrchestrator:
 
         return False
 
-    def _check_credit_limit(self, state: ScenarioState) -> bool:
+    async def _check_credit_limit(self, state: ScenarioState) -> bool:
         """
         Check if credit limit has been exceeded
 
@@ -358,7 +358,7 @@ class ScenarioOrchestrator:
         # Warning at 80%
         if total_cost >= self.credit_limit * 0.8 and total_cost < self.credit_limit:
             remaining = self.credit_limit - total_cost
-            self.event_bus.emit(
+            await self.event_bus.emit(
                 EventType.CREDIT_LIMIT_WARNING,
                 data={
                     "total_cost": total_cost,
@@ -370,7 +370,7 @@ class ScenarioOrchestrator:
 
         # Stop at 100%
         if total_cost >= self.credit_limit:
-            self.event_bus.emit(
+            await self.event_bus.emit(
                 EventType.CREDIT_LIMIT_EXCEEDED,
                 data={
                     "total_cost": total_cost,

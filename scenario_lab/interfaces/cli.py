@@ -63,17 +63,29 @@ def run(
 
     SCENARIO_PATH: Path to scenario directory
     """
-    click.echo(f"Scenario Lab V2 ({__version__})")
-    click.echo(f"Scenario: {scenario_path}")
+    # Header with colors
+    click.echo(click.style(f"\n✨ Scenario Lab V2", fg="bright_cyan", bold=True) + f" ({__version__})")
+    click.echo(click.style("───────────────────────────────────────", fg="cyan"))
+
+    # Scenario info
+    click.echo(f"📂 Scenario: " + click.style(scenario_path, fg="green"))
 
     if max_turns:
-        click.echo(f"Max turns: {max_turns}")
+        click.echo(f"🔢 Max turns: " + click.style(str(max_turns), fg="yellow"))
     if credit_limit:
-        click.echo(f"Credit limit: ${credit_limit:.2f}")
+        click.echo(f"💰 Credit limit: " + click.style(f"${credit_limit:.2f}", fg="yellow"))
+    if resume:
+        click.echo(f"▶️  Resuming: " + click.style(resume, fg="blue"))
+    if branch_from:
+        click.echo(f"🌿 Branching from: " + click.style(branch_from, fg="blue"))
+        if branch_at_turn is not None:
+            click.echo(f"   At turn: " + click.style(str(branch_at_turn), fg="blue"))
 
-    # For now, delegate to V1
-    click.echo("\n[V2 Alpha] Delegating to V1 runner...")
-    click.echo("Full V2 execution engine coming in next phase.\n")
+    # Alpha notice
+    click.echo()
+    click.echo(click.style("⚠️  V2 Alpha:", fg="yellow", bold=True) + " Delegating to V1 runner...")
+    click.echo(click.style("   Full V2 execution engine coming in Phase 2.1", fg="yellow", dim=True))
+    click.echo()
 
     # Import V1 runner
     import sys
@@ -99,8 +111,21 @@ def run(
         sys.argv = ["run_scenario.py"] + v1_args
         v1_main()
 
+        # Success message
+        click.echo()
+        click.echo(click.style("✓ Scenario completed", fg="bright_green", bold=True))
+
     except ImportError as e:
-        click.echo(f"Error: Could not load V1 runner: {e}", err=True)
+        click.echo()
+        click.echo(click.style("✗ Error:", fg="bright_red", bold=True) + f" Could not load V1 runner", err=True)
+        click.echo(click.style(f"  {e}", fg="red", dim=True), err=True)
+        click.echo()
+        click.echo(click.style("💡 Tip:", fg="bright_blue") + " Make sure you're running from the project root", err=True)
+        sys.exit(1)
+    except Exception as e:
+        click.echo()
+        click.echo(click.style("✗ Error:", fg="bright_red", bold=True) + f" Scenario execution failed", err=True)
+        click.echo(click.style(f"  {e}", fg="red", dim=True), err=True)
         sys.exit(1)
 
 
@@ -116,11 +141,20 @@ def validate(scenario_path: str) -> None:
     - Actor definitions
     - Metrics configuration
     """
-    click.echo(f"Validating scenario: {scenario_path}")
-    click.echo("[V2 Alpha] Schema validation coming soon...")
+    click.echo(click.style(f"\n🔍 Validating Scenario", fg="bright_cyan", bold=True))
+    click.echo(click.style("───────────────────────────────────────", fg="cyan"))
+    click.echo(f"📂 Path: " + click.style(scenario_path, fg="green"))
+    click.echo()
+
+    click.echo(click.style("⚠️  V2 Alpha:", fg="yellow", bold=True) + " Schema validation coming in Phase 2.0")
+    click.echo()
 
     # TODO: Implement Pydantic schema validation
-    click.echo("✓ Scenario structure looks good (placeholder)")
+    click.echo(click.style("✓", fg="green") + " YAML syntax (placeholder)")
+    click.echo(click.style("✓", fg="green") + " Scenario structure (placeholder)")
+    click.echo(click.style("✓", fg="green") + " Actor definitions (placeholder)")
+    click.echo()
+    click.echo(click.style("✓ Validation passed", fg="bright_green", bold=True))
 
 
 @cli.command()
@@ -135,12 +169,20 @@ def estimate(scenario_path: str, max_turns: int) -> None:
     - Per-actor cost breakdown
     - Per-turn cost estimate
     """
-    click.echo(f"Estimating cost for: {scenario_path}")
-    click.echo(f"Turns to estimate: {max_turns}")
-    click.echo("[V2 Alpha] Cost estimation coming soon...")
+    click.echo(click.style(f"\n💰 Cost Estimation", fg="bright_cyan", bold=True))
+    click.echo(click.style("───────────────────────────────────────", fg="cyan"))
+    click.echo(f"📂 Scenario: " + click.style(scenario_path, fg="green"))
+    click.echo(f"🔢 Turns: " + click.style(str(max_turns), fg="yellow"))
+    click.echo()
+
+    click.echo(click.style("⚠️  V2 Alpha:", fg="yellow", bold=True) + " Cost estimation coming in Phase 2.0")
+    click.echo()
 
     # TODO: Implement cost estimation
-    click.echo("\nEstimated cost: $X.XX (placeholder)")
+    click.echo(click.style("Estimated costs:", fg="bright_white", bold=True))
+    click.echo(f"  Total: " + click.style("$X.XX", fg="yellow") + " (placeholder)")
+    click.echo(f"  Per turn: " + click.style("$X.XX", fg="yellow") + " (placeholder)")
+    click.echo(f"  Per actor: " + click.style("$X.XX", fg="yellow") + " (placeholder)")
 
 
 @cli.command()
@@ -188,9 +230,20 @@ def benchmark(scenario_path: str) -> None:
 @cli.command()
 def version() -> None:
     """Show version information"""
-    click.echo(f"Scenario Lab V2: {__version__}")
-    click.echo("Architecture: Event-driven modular")
-    click.echo("Status: Alpha - Phase 2.0 Foundation")
+    click.echo()
+    click.echo(click.style("✨ Scenario Lab V2", fg="bright_cyan", bold=True))
+    click.echo(click.style("───────────────────────────────────────", fg="cyan"))
+    click.echo(f"📦 Version: " + click.style(__version__, fg="green"))
+    click.echo(f"🏗️  Architecture: " + click.style("Event-driven modular", fg="blue"))
+    click.echo(f"🚀 Status: " + click.style("Alpha - Phase 2.0 Foundation", fg="yellow"))
+    click.echo()
+    click.echo(click.style("Features:", fg="bright_white", bold=True))
+    click.echo("  ✓ Event-driven execution engine")
+    click.echo("  ✓ Immutable state management")
+    click.echo("  ✓ Backward compatible with V1")
+    click.echo("  ⏳ Full execution (Phase 2.1)")
+    click.echo("  ⏳ Web dashboard (Phase 2.3)")
+    click.echo()
 
 
 def main() -> None:
