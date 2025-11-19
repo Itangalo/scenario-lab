@@ -31,14 +31,11 @@ function App() {
       return
     }
 
-    // Close existing connection
-    if (ws) {
-      ws.close()
-    }
+    let websocket: WebSocket | null = null
 
     // Connect to scenario's WebSocket stream
     try {
-      const websocket = apiClient.connectWebSocket(status.scenario_id, (event) => {
+      websocket = apiClient.connectWebSocket(status.scenario_id, (event) => {
         console.log('V2 Event:', event)
         setWsMessage(event)
 
@@ -61,9 +58,10 @@ function App() {
       console.error('Failed to connect WebSocket:', err)
     }
 
+    // Cleanup: close WebSocket when component unmounts or scenario_id changes
     return () => {
-      if (ws) {
-        ws.close()
+      if (websocket) {
+        websocket.close()
       }
     }
   }, [status?.scenario_id])

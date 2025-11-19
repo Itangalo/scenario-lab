@@ -7,12 +7,16 @@ import pytest
 import asyncio
 import tempfile
 import shutil
+import os
 from pathlib import Path
 from unittest.mock import MagicMock, AsyncMock, patch
 
 from scenario_lab.runners.async_executor import AsyncExecutor, run_scenario_async
 from scenario_lab.models.state import ScenarioState, ScenarioStatus
 from scenario_lab.core.events import EventType
+
+# Set fake API key for tests
+os.environ['OPENROUTER_API_KEY'] = 'test-key-for-testing'
 
 
 @pytest.fixture
@@ -125,7 +129,7 @@ class TestAsyncExecutor:
     @pytest.mark.asyncio
     async def test_run_scenario_async_convenience_function(self, temp_scenario_dir):
         """Test convenience function for running scenarios"""
-        # Mock the execute method to avoid actual LLM calls
+        # Mock orchestrator execution to avoid actual LLM calls
         with patch('scenario_lab.core.orchestrator.ScenarioOrchestrator.execute') as mock_execute:
             # Create mock return state
             mock_state = MagicMock(spec=ScenarioState)
@@ -232,17 +236,6 @@ class TestAsyncExecutor:
         )
 
         await executor.setup()
-
-        # Mock execute to check context
-        original_execute = executor.orchestrator.execute
-
-        async def mock_execute_check_context(state):
-            # Context should be set during execution
-            # Note: This test may be fragile depending on async timing
-            result = await original_execute(state)
-            return result
-
-        executor.orchestrator.execute = mock_execute_check_context
 
         # Mock the execute to avoid actual LLM calls
         with patch('scenario_lab.core.orchestrator.ScenarioOrchestrator.execute') as mock_execute:

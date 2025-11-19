@@ -137,11 +137,14 @@ class TestScenarioOrchestrator:
         # Should stop at turn 2 (2 * $0.50 = $1.00)
         assert final_state.turn == 2
         assert final_state.total_cost() == 1.0
-        assert final_state.status == ScenarioStatus.PAUSED
+        assert final_state.status == ScenarioStatus.HALTED  # Credit limit exceeded = halted
 
-        # Should have emitted credit limit event
-        events = bus.get_history(EventType.CREDIT_LIMIT_EXCEEDED)
-        assert len(events) > 0
+        # Should have emitted credit limit and halted events
+        exceeded_events = bus.get_history(EventType.CREDIT_LIMIT_EXCEEDED)
+        assert len(exceeded_events) > 0
+
+        halted_events = bus.get_history(EventType.SCENARIO_HALTED)
+        assert len(halted_events) > 0
 
     @pytest.mark.asyncio
     async def test_credit_limit_warning(self):
