@@ -367,9 +367,9 @@ def create_batch_config_interactive():
 
             print_success(f"Configuration saved to {config_file}")
             print_info(f"\nTo run this batch:")
-            print(f"  python src/batch_runner.py {config_file}")
+            print(f"  python3 src/batch_runner.py {config_file}")
             print_info(f"\nTo preview without running:")
-            print(f"  python src/batch_runner.py {config_file} --dry-run")
+            print(f"  python3 src/batch_runner.py {config_file} --dry-run")
 
             return config_file
         else:

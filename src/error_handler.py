@@ -439,7 +439,7 @@ class ErrorHandler:
             actions.append(
                 RecoveryAction(
                     "Resume with increased budget limit",
-                    command=f"python src/run_scenario.py --resume {run_dir}",
+                    command=f"python3 src/run_scenario.py --resume {run_dir}",
                     priority=1
                 )
             )
@@ -528,7 +528,7 @@ class ErrorHandler:
         actions = [
             RecoveryAction(
                 "Use the interactive config wizard to create a valid configuration",
-                command="python src/create_batch_config.py --interactive",
+                command="python3 src/create_batch_config.py --interactive",
                 priority=1
             ),
             RecoveryAction(
@@ -538,7 +538,7 @@ class ErrorHandler:
             ),
             RecoveryAction(
                 "Validate your config with dry-run mode",
-                command="python src/batch_runner.py your_config.yaml --dry-run",
+                command="python3 src/batch_runner.py your_config.yaml --dry-run",
                 priority=3
             )
         ]

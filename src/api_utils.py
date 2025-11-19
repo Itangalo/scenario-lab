@@ -55,7 +55,7 @@ def api_call_with_retry(
     initial_delay: float = 1.0,
     max_delay: float = 60.0,
     backoff_factor: float = 2.0,
-    retryable_status_codes: tuple = (502, 503, 504, 429),
+    retryable_status_codes: tuple = (500, 502, 503, 504, 429),
     context: Optional[dict] = None
 ) -> Any:
     """
@@ -354,6 +354,10 @@ def make_llm_call(
 
             response_text = data['choices'][0]['message']['content']
             tokens_used = data.get('usage', {}).get('total_tokens', 0)
+
+            # Add small delay for free models to avoid rate limits
+            if ':free' in model:
+                time.sleep(0.5)
 
             return response_text, tokens_used
 

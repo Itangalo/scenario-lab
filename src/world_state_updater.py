@@ -82,6 +82,7 @@ Your responsibilities:
 5. Maintain logical consistency with previous state
 6. Be specific and concrete about what changed
 7. Show how actors' actions and background events interact
+8. **CRITICAL: Include updated metrics/polling data if scenario tracks them (e.g., opinion polls, approval ratings)**
 
 Guidelines:
 - Write in third-person, present tense
@@ -90,7 +91,8 @@ Guidelines:
 - Show realistic friction, delays, and complications
 - Avoid editorializing - describe objectively what occurred
 - Keep the narrative focused and relevant to the scenario
-- Weave background events naturally into the narrative (don't just list them)"""
+- Weave background events naturally into the narrative (don't just list them)
+- **If this is an election scenario: ALWAYS include updated opinion polling showing percentage support for each party**"""
 
     def _build_user_prompt(
         self,
@@ -138,11 +140,16 @@ Synthesize these actions{' and background events' if exogenous_events else ''} i
 4. **Consequences**: What are the immediate and near-term effects?
 5. **New dynamics**: What new situations or tensions emerged?
 6. **Current status**: What is the state of the situation now?
+7. **Updated metrics**: If this scenario tracks quantitative metrics (e.g., opinion polls, approval ratings), provide updated values based on realistic reactions to this turn's events.
 
 Provide your response in this format:
 
 **UPDATED STATE:**
 [Write a cohesive narrative (2-4 paragraphs) describing the new world state after this turn's actions and events]
+
+**UPDATED METRICS (if applicable):**
+[For election scenarios: Include updated opinion polling showing each party's support as percentage]
+[Example format: "Socialdemokraterna (S): 34.1% (+0.3), Moderaterna (M): 18.2% (-0.3)" etc.]
 
 **KEY CHANGES:**
 - [Change 1]
@@ -153,7 +160,7 @@ Provide your response in this format:
 - [Consequence 1]
 - [Consequence 2]
 
-Remember: Be specific, realistic, and show how actions and events create ripple effects. Weave background events naturally into the narrative."""
+Remember: Be specific, realistic, and show how actions and events create ripple effects. Weave background events naturally into the narrative. For election scenarios, opinion changes should be gradual and realistic (rarely >1-2% per month)."""
 
         return prompt
 

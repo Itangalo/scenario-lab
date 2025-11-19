@@ -235,7 +235,9 @@ def execute_bilateral_communications(
     logger.info(f"  🚀 Evaluating bilateral communication opportunities in parallel...")
     comm_decisions_results = []
 
-    with ThreadPoolExecutor(max_workers=len(actors)) as executor:
+    # Limit parallelism to avoid rate limits on free models (max 3 concurrent requests)
+    max_parallel = min(3, len(actors))
+    with ThreadPoolExecutor(max_workers=max_parallel) as executor:
         # Submit all communication decision tasks
         future_to_actor = {
             executor.submit(_decide_communication, short_name, actor): (short_name, actor)
@@ -297,7 +299,9 @@ def execute_bilateral_communications(
     if bilateral_tasks:
         logger.info(f"  🚀 Processing {len(bilateral_tasks)} bilateral responses in parallel...")
 
-        with ThreadPoolExecutor(max_workers=len(bilateral_tasks)) as executor:
+        # Limit parallelism to avoid rate limits on free models
+        max_parallel = min(3, len(bilateral_tasks))
+        with ThreadPoolExecutor(max_workers=max_parallel) as executor:
             # Submit all bilateral response tasks
             future_to_bilateral = {
                 executor.submit(_respond_to_bilateral, target_actor, target_context, initiator_name, message):
@@ -569,7 +573,9 @@ def execute_actor_decisions(
     logger.info(f"  🚀 Making decisions for {len(actors)} actors in parallel...")
     actor_results = []
 
-    with ThreadPoolExecutor(max_workers=len(actors)) as executor:
+    # Limit parallelism to avoid rate limits on free models (max 3 concurrent requests)
+    max_parallel = min(3, len(actors))
+    with ThreadPoolExecutor(max_workers=max_parallel) as executor:
         # Submit all actor decision tasks
         future_to_actor = {
             executor.submit(_make_single_actor_decision, short_name, actor): (short_name, actor)
@@ -1015,7 +1021,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                     started_at=started_at
                 )
                 logger.info("Scenario halted. Resume with:")
-                logger.info(f"  python src/run_scenario.py --resume {output_path}")
+                logger.info(f"  python3 src/run_scenario.py --resume {output_path}")
                 return
 
             current_state = world_state.get_current_state()
@@ -1115,7 +1121,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                 logger.warning(f"⚠️  Reached maximum turns limit: {max_turns}")
                 state_manager.mark_halted('max_turns')
                 logger.info(f"Scenario halted after {max_turns} turn(s). Resume with:")
-                logger.info(f"  python src/run_scenario.py --resume {output_path}")
+                logger.info(f"  python3 src/run_scenario.py --resume {output_path}")
                 return
 
         except requests.exceptions.HTTPError as e:
@@ -1153,7 +1159,7 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                 logger.info("Scenario halted due to API rate limit.")
                 logger.info(f"Last completed turn: {turn - 1}")
                 logger.info("Wait a few minutes, then resume with:")
-                logger.info(f"  python src/run_scenario.py --resume {output_path}")
+                logger.info(f"  python3 src/run_scenario.py --resume {output_path}")
                 return
             else:
                 # Other HTTP errors - handle and re-raise
@@ -1177,9 +1183,60 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                         started_at=started_at
                     )
                     logger.info(f"Scenario halted at turn {turn - 1}")
-                    logger.info(f"Resume with: python src/run_scenario.py --resume {output_path}")
+                    logger.info(f"Resume with: python3 src/run_scenario.py --resume {output_path}")
 
                 raise
+
+        except KeyboardInterrupt:
+            # User interrupted (Ctrl+C)
+            logger.warning("\n⚠️  Scenario interrupted by user")
+            state_manager.save_state(
+                scenario_name=scenario_name,
+                scenario_path=scenario_path,
+                status='halted',
+                current_turn=turn - 1 if turn > start_turn else start_turn - 1,
+                total_turns=num_turns,
+                world_state=world_state,
+                actors=actors,
+                cost_tracker=cost_tracker,
+                metrics_tracker=metrics_tracker,
+                communication_manager=communication_manager,
+                halt_reason='manual',
+                started_at=started_at
+            )
+            logger.info(f"\nScenario halted at turn {turn - 1 if turn > start_turn else start_turn - 1}")
+            logger.info("Resume with:")
+            logger.info(f"  python3 src/run_scenario.py --resume {output_path}")
+            return
+
+        except Exception as e:
+            # Unexpected error - save state and provide helpful message
+            logger.error(f"\n⚠️  Unexpected error: {str(e)}")
+            logger.debug(f"Error type: {type(e).__name__}", exc_info=True)
+
+            state_manager.save_state(
+                scenario_name=scenario_name,
+                scenario_path=scenario_path,
+                status='halted',
+                current_turn=turn - 1 if turn > start_turn else start_turn - 1,
+                total_turns=num_turns,
+                world_state=world_state,
+                actors=actors,
+                cost_tracker=cost_tracker,
+                metrics_tracker=metrics_tracker,
+                communication_manager=communication_manager,
+                halt_reason='error',
+                started_at=started_at
+            )
+
+            logger.info(f"\nScenario halted at turn {turn - 1 if turn > start_turn else start_turn - 1} due to error")
+            logger.info(f"Cost so far: ${cost_tracker.total_cost:.4f}")
+            logger.info("\nState has been saved. You can:")
+            logger.info(f"  1. Resume: python3 src/run_scenario.py --resume {output_path}")
+            logger.info(f"  2. Check logs: {output_path}/scenario.log")
+            logger.info(f"  3. Report issue: https://github.com/anthropics/claude-code/issues")
+
+            raise
 
     # End cost tracking
     cost_tracker.end_tracking()
@@ -1402,7 +1459,7 @@ def branch_scenario(source_run_path: str, branch_at_turn: int, verbose: bool = F
     logger.info(f"  Copied {branch_at_turn} turn(s) of history")
     logger.info(f"  Cost so far: ${total_cost:.4f} ({total_tokens:,} tokens)")
     logger.info(f"\nContinue from turn {branch_at_turn + 1} with:")
-    logger.info(f"  python src/run_scenario.py --resume {new_run_path}")
+    logger.info(f"  python3 src/run_scenario.py --resume {new_run_path}")
 
     return new_run_path
 

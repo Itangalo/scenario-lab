@@ -487,7 +487,7 @@ class BatchRunner:
         # Summary
         print("=" * 70)
         print("To execute this batch, run without --dry-run flag:")
-        print(f"  python src/batch_runner.py {self.config_path}")
+        print(f"  python3 src/batch_runner.py {self.config_path}")
         print("=" * 70)
 
     def run(self):

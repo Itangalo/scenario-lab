@@ -2,9 +2,9 @@
 Cache CLI - Command-line tool for managing response cache
 
 Usage:
-    python src/cache_cli.py stats   # Show cache statistics
-    python src/cache_cli.py clear   # Clear cache
-    python src/cache_cli.py info    # Show cache configuration
+    python3 src/cache_cli.py stats   # Show cache statistics
+    python3 src/cache_cli.py clear   # Clear cache
+    python3 src/cache_cli.py info    # Show cache configuration
 """
 import argparse
 import sys
