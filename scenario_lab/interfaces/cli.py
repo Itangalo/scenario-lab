@@ -93,7 +93,88 @@ def run(
     # Alpha notice
     print_alpha_notice()
 
-    # Import and run V1
+    # Handle resume and branch via V1 for now (Phase 2.3 will migrate these)
+    if resume or branch_from:
+        print_warning("Resume and branch features currently using V1 engine")
+        _run_v1(scenario_path, max_turns, credit_limit, resume, branch_from, branch_at_turn)
+        return
+
+    # Use V2 SyncRunner for standard execution
+    try:
+        from scenario_lab.runners import SyncRunner
+        from scenario_lab.core.events import EventBus
+
+        # Create runner
+        runner = SyncRunner(
+            scenario_path=scenario_path,
+            max_turns=max_turns,
+            credit_limit=credit_limit,
+        )
+
+        print_section("Initializing scenario...")
+        runner.setup()
+
+        # Setup event handlers for progress display
+        event_bus = runner.event_bus
+
+        @event_bus.on(EventType.TURN_STARTED)
+        async def on_turn_start(event: Event):
+            turn = event.data.get("turn", 0)
+            click.echo()
+            click.echo(click.style(f"━━━ Turn {turn} ━━━", fg="bright_cyan", bold=True))
+
+        @event_bus.on(EventType.PHASE_COMPLETED)
+        async def on_phase_complete(event: Event):
+            phase = event.data.get("phase", "unknown")
+            click.echo(f"  ✓ {phase.replace('_', ' ').title()} phase complete")
+
+        @event_bus.on(EventType.CREDIT_LIMIT_WARNING)
+        async def on_credit_warning(event: Event):
+            remaining = event.data.get("remaining", 0)
+            print_warning(f"Credit limit warning: ${remaining:.2f} remaining")
+
+        @event_bus.on(EventType.SCENARIO_HALTED)
+        async def on_halted(event: Event):
+            reason = event.data.get("reason", "unknown")
+            print_warning(f"Scenario halted: {reason}")
+
+        # Run scenario
+        print_section("Running scenario...")
+        final_state = asyncio.run(runner.run())
+
+        # Print summary
+        click.echo()
+        print_section("Scenario complete!")
+        click.echo(f"  Turns: {click.style(str(final_state.turn), fg='green')}")
+        click.echo(f"  Total cost: {click.style(f'${final_state.total_cost():.2f}', fg='green')}")
+        click.echo(f"  Output: {click.style(runner.output_path, fg='blue')}")
+
+        print_success("Scenario completed successfully")
+
+    except ImportError as e:
+        print_error(
+            "Could not load V2 runner",
+            str(e),
+            "Make sure the scenario_lab package is installed"
+        )
+        sys.exit(1)
+    except Exception as e:
+        import traceback
+        print_error("Scenario execution failed", str(e))
+        if logging.getLogger().level == logging.DEBUG:
+            traceback.print_exc()
+        sys.exit(1)
+
+
+def _run_v1(
+    scenario_path: str,
+    max_turns: Optional[int],
+    credit_limit: Optional[float],
+    resume: Optional[str],
+    branch_from: Optional[str],
+    branch_at_turn: Optional[int],
+) -> None:
+    """Run scenario using V1 engine (for resume/branch compatibility)"""
     sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../../src"))
 
     try:

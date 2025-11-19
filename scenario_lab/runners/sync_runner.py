@@ -30,7 +30,9 @@ from scenario_lab.services.communication_phase import CommunicationPhase
 from scenario_lab.services.decision_phase import DecisionPhase
 from scenario_lab.services.world_update_phase import WorldUpdatePhase
 from scenario_lab.services.persistence_phase import PersistencePhase
+from scenario_lab.services.database_persistence_phase import DatabasePersistencePhase
 from scenario_lab.models.state import ScenarioState
+from scenario_lab.database import Database
 
 logger = logging.getLogger(__name__)
 
@@ -53,6 +55,7 @@ class SyncRunner:
         output_path: Optional[str] = None,
         max_turns: Optional[int] = None,
         credit_limit: Optional[float] = None,
+        database: Optional[Database] = None,
     ):
         """
         Initialize sync runner
@@ -62,11 +65,13 @@ class SyncRunner:
             output_path: Path to output directory
             max_turns: Maximum number of turns to execute
             credit_limit: Maximum cost in USD
+            database: Optional Database instance for persistence
         """
         self.scenario_path = scenario_path
         self.output_path = output_path or self._default_output_path()
         self.max_turns = max_turns
         self.credit_limit = credit_limit
+        self.database = database
 
         # Will be initialized in setup()
         self.loader: Optional[ScenarioLoader] = None
@@ -220,9 +225,16 @@ class SyncRunner:
         )
         self.orchestrator.register_phase(PhaseType.WORLD_UPDATE, world_update_phase)
 
-        # Persistence phase
+        # File persistence phase (always enabled)
         persistence_phase = PersistencePhase(output_dir=self.output_path)
         self.orchestrator.register_phase(PhaseType.PERSISTENCE, persistence_phase)
+
+        # Database persistence phase (optional)
+        if self.database:
+            logger.info("Database persistence enabled")
+            db_persistence_phase = DatabasePersistencePhase(database=self.database)
+            # Use a custom phase type for database persistence
+            self.orchestrator.register_phase("database_persistence", db_persistence_phase)
 
     async def run(self) -> ScenarioState:
         """

@@ -14,7 +14,7 @@ While maintaining:
 - Cost management and controls
 """
 
-__version__ = "2.0.0-alpha.2"
+__version__ = "2.0.0-alpha.3"
 
 # Core exports
 from scenario_lab.core.events import EventBus, Event, EventType, get_event_bus, set_event_bus
@@ -38,6 +38,9 @@ from scenario_lab.loaders import ScenarioLoader
 
 # Runner exports
 from scenario_lab.runners import SyncRunner
+
+# Database exports
+from scenario_lab.database import Database
 
 __all__ = [
     "__version__",
@@ -64,4 +67,6 @@ __all__ = [
     "ScenarioLoader",
     # Runners
     "SyncRunner",
+    # Database
+    "Database",
 ]
