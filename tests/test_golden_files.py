@@ -221,7 +221,7 @@ class TestGoldenFiles:
             runner1 = SyncRunner(
                 scenario_path=golden_scenario_dir,
                 output_path=str(output_dir1),
-                max_turns=2
+                end_turn=2
             )
             runner1.setup()
             state1 = await runner1.run()
@@ -231,7 +231,7 @@ class TestGoldenFiles:
             runner2 = SyncRunner(
                 scenario_path=golden_scenario_dir,
                 output_path=str(output_dir2),
-                max_turns=2
+                end_turn=2
             )
             runner2.setup()
             state2 = await runner2.run()
@@ -277,7 +277,7 @@ class TestGoldenFiles:
             runner = SyncRunner(
                 scenario_path=golden_scenario_dir,
                 output_path=str(output_dir),
-                max_turns=2
+                end_turn=2
             )
             runner.setup()
             await runner.run()
@@ -342,7 +342,7 @@ class TestGoldenFiles:
             runner = SyncRunner(
                 scenario_path=golden_scenario_dir,
                 output_path=str(output_dir),
-                max_turns=2
+                end_turn=2
             )
             runner.setup()
             await runner.run()
