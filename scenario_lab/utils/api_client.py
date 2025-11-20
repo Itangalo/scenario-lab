@@ -296,6 +296,7 @@ def make_llm_call(
     api_key: Optional[str] = None,
     max_retries: int = 3,
     context: Optional[Dict[str, Any]] = None,
+    use_cache: bool = True,
 ) -> LLMResponse:
     """
     Make an LLM API call using the appropriate backend
@@ -308,6 +309,7 @@ def make_llm_call(
     - Connection pooling for better performance
     - Automatic retry with exponential backoff
     - Detailed token usage tracking
+    - Response caching (optional)
 
     Args:
         model: Model identifier (e.g., "openai/gpt-4o-mini", "ollama/llama3.1:70b")
@@ -315,6 +317,7 @@ def make_llm_call(
         api_key: API key for cloud providers (not needed for local)
         max_retries: Maximum number of retry attempts
         context: Optional dict with context info (e.g., {'actor': 'name', 'turn': 1, 'operation': 'decision'})
+        use_cache: Whether to use response caching (default: True)
 
     Returns:
         LLMResponse object with content and token usage
@@ -323,6 +326,23 @@ def make_llm_call(
         requests.exceptions.HTTPError: If all retries fail
         ValueError: If API key is missing for cloud models
     """
+    # Check cache first (if enabled)
+    if use_cache:
+        from scenario_lab.utils.response_cache import get_global_cache
+        cache = get_global_cache()
+        cached_entry = cache.get(model, messages)
+
+        if cached_entry is not None:
+            # Cache hit!
+            return LLMResponse(
+                content=cached_entry.response,
+                tokens_used=cached_entry.tokens_used,
+                input_tokens=cached_entry.input_tokens,
+                output_tokens=cached_entry.output_tokens,
+                model=cached_entry.model,
+                cached=True
+            )
+
     # Add model to context for better error tracking
     call_context = {'model': model}
     if context:
@@ -340,12 +360,13 @@ def make_llm_call(
         input_tokens = usage.get('prompt_tokens', int(total_tokens * 0.7))
         output_tokens = usage.get('completion_tokens', int(total_tokens * 0.3))
 
-        return LLMResponse(
+        llm_response = LLMResponse(
             content=response_text,
             tokens_used=total_tokens,
             input_tokens=input_tokens,
             output_tokens=output_tokens,
-            model=model
+            model=model,
+            cached=False
         )
 
     else:
@@ -371,13 +392,29 @@ def make_llm_call(
         if ':free' in model:
             time.sleep(0.5)
 
-        return LLMResponse(
+        llm_response = LLMResponse(
             content=response_text,
             tokens_used=total_tokens,
             input_tokens=input_tokens,
             output_tokens=output_tokens,
-            model=model
+            model=model,
+            cached=False
         )
+
+    # Store in cache (if enabled)
+    if use_cache:
+        from scenario_lab.utils.response_cache import get_global_cache
+        cache = get_global_cache()
+        cache.put(
+            model=model,
+            messages=messages,
+            response=llm_response.content,
+            tokens_used=llm_response.tokens_used,
+            input_tokens=llm_response.input_tokens,
+            output_tokens=llm_response.output_tokens
+        )
+
+    return llm_response
 
 
 async def make_llm_call_async(
@@ -386,6 +423,7 @@ async def make_llm_call_async(
     api_key: Optional[str] = None,
     max_retries: int = 3,
     context: Optional[Dict[str, Any]] = None,
+    use_cache: bool = True,
 ) -> LLMResponse:
     """
     Async version of make_llm_call
@@ -399,10 +437,11 @@ async def make_llm_call_async(
         api_key: API key for cloud providers
         max_retries: Maximum retry attempts
         context: Optional context info
+        use_cache: Whether to use response caching (default: True)
 
     Returns:
         LLMResponse object
     """
     # For now, just call the sync version
     # In the future, we can implement true async with aiohttp
-    return make_llm_call(model, messages, api_key, max_retries, context)
+    return make_llm_call(model, messages, api_key, max_retries, context, use_cache)
