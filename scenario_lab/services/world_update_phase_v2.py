@@ -3,13 +3,13 @@ World Update Phase Service for Scenario Lab V2
 
 Synthesizes new world state from actor decisions using V2 components (no V1 dependencies).
 
-Phase 1.3 Implementation + Phase 3.3 Enhancement:
+Phase 1.3 Implementation + Phase 3.3-3.4 Enhancements:
 - Uses V2 WorldSynthesizer for prompt building
 - Uses V2 API client for LLM calls
 - Updates ScenarioState.world_state immutably
 - Tracks costs via ScenarioState
 - ✅ Phase 3.3: Metrics extraction from world state
-- Defers QA validation to Phase 3.4 (stub)
+- ✅ Phase 3.4: QA validation of world state coherence
 - Defers exogenous events to Phase 3 (stub)
 """
 from __future__ import annotations
@@ -49,6 +49,7 @@ class WorldUpdatePhaseV2:
         world_state_model: str = "openai/gpt-4o-mini",
         output_dir: Optional[str] = None,
         metrics_tracker: Optional[Any] = None,  # MetricsTracker from Phase 3.3
+        qa_validator: Optional[Any] = None,  # QAValidator from Phase 3.4
     ):
         """
         Initialize world update phase
@@ -58,12 +59,14 @@ class WorldUpdatePhaseV2:
             world_state_model: LLM model for world state synthesis
             output_dir: Optional directory to save world state markdown files
             metrics_tracker: Optional MetricsTracker for metrics extraction
+            qa_validator: Optional QAValidator for validation
         """
         self.scenario_name = scenario_name
         self.world_state_model = world_state_model
         self.output_dir = Path(output_dir) if output_dir else None
         self.api_key = os.environ.get('OPENROUTER_API_KEY')
         self.metrics_tracker = metrics_tracker  # Phase 3.3
+        self.qa_validator = qa_validator  # Phase 3.4
 
         # Create synthesizer
         self.synthesizer = WorldSynthesizer(
@@ -182,6 +185,36 @@ class WorldUpdatePhaseV2:
                 for metric in metrics:
                     state = state.with_metric(metric)
                 logger.info(f"  ✓ Extracted {len(metrics)} metrics from world state")
+
+        # Phase 3.4: Validate world state coherence
+        if self.qa_validator and self.qa_validator.is_enabled():
+            # Get previous world state (before this update)
+            # Note: We've already incremented the turn, so state.turn is now turn+1
+            previous_ws_content = current_state  # We saved this at the start
+
+            # Validate world state coherence
+            validation_result = await self.qa_validator.validate_world_state_update(
+                previous_world_state=previous_ws_content,
+                actor_actions={name: d.action for name, d in state.decisions.items()},
+                new_world_state=parsed['updated_state'],
+                turn=state.turn - 1  # Previous turn
+            )
+
+            if validation_result:
+                # Log validation result
+                if validation_result.passed:
+                    logger.info(f"  ✓ QA validation passed: {validation_result.check_name}")
+                else:
+                    logger.warning(
+                        f"  ⚠️  QA validation failed: {validation_result.check_name} "
+                        f"(severity: {validation_result.severity})"
+                    )
+                    for issue in validation_result.issues:
+                        logger.warning(f"    - {issue}")
+
+                # Track validation cost
+                cost_record = self.qa_validator.create_cost_record(validation_result, state.turn - 1)
+                state = state.with_cost(cost_record)
 
         # Write world state to markdown file
         if self.output_dir:
