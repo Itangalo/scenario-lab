@@ -54,7 +54,7 @@ class SyncRunner:
         self,
         scenario_path: str,
         output_path: Optional[str] = None,
-        max_turns: Optional[int] = None,
+        end_turn: Optional[int] = None,
         credit_limit: Optional[float] = None,
         database: Optional[Database] = None,
         resume_from: Optional[str] = None,
@@ -68,7 +68,7 @@ class SyncRunner:
         Args:
             scenario_path: Path to scenario directory
             output_path: Path to output directory
-            max_turns: Maximum number of turns to execute
+            end_turn: Turn number to stop at (e.g., end_turn=5 stops after turn 5)
             credit_limit: Maximum cost in USD
             database: Optional Database instance for persistence
             resume_from: Path to run directory to resume from
@@ -78,7 +78,7 @@ class SyncRunner:
         """
         self.scenario_path = scenario_path
         self.output_path = output_path or self._default_output_path()
-        self.max_turns = max_turns
+        self.end_turn = end_turn
         self.credit_limit = credit_limit
         self.database = database
         self.resume_from = resume_from
@@ -207,7 +207,7 @@ class SyncRunner:
         # Orchestrator
         self.orchestrator = ScenarioOrchestrator(
             event_bus=self.event_bus,
-            max_turns=self.max_turns or self.scenario_config.get("num_turns", 10),
+            end_turn=self.end_turn or self.scenario_config.get("num_turns", 10),
             credit_limit=self.credit_limit,
             output_dir=self.output_path,
             save_state_every_turn=True,

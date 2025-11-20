@@ -69,7 +69,7 @@ class ScenarioOrchestrator:
     def __init__(
         self,
         event_bus: Optional[EventBus] = None,
-        max_turns: Optional[int] = None,
+        end_turn: Optional[int] = None,
         credit_limit: Optional[float] = None,
         output_dir: Optional[str] = None,
         save_state_every_turn: bool = True,
@@ -79,13 +79,13 @@ class ScenarioOrchestrator:
 
         Args:
             event_bus: Event bus for emitting events (creates one if not provided)
-            max_turns: Maximum number of turns to execute
+            end_turn: Turn number to stop at (e.g., end_turn=5 stops after turn 5)
             credit_limit: Maximum cost in USD
             output_dir: Output directory for state saving
             save_state_every_turn: Whether to save state after each turn
         """
         self.event_bus = event_bus or get_event_bus()
-        self.max_turns = max_turns
+        self.end_turn = end_turn
         self.credit_limit = credit_limit
         self.output_dir = output_dir
         self.save_state_every_turn = save_state_every_turn
@@ -138,7 +138,7 @@ class ScenarioOrchestrator:
             data={
                 "scenario_id": state.scenario_id,
                 "run_id": state.run_id,
-                "max_turns": self.max_turns,
+                "end_turn": self.end_turn,
                 "credit_limit": self.credit_limit,
             },
             source="orchestrator",
@@ -402,8 +402,8 @@ class ScenarioOrchestrator:
         Returns:
             True if execution should stop
         """
-        # Stop if max turns reached
-        if self.max_turns is not None and state.turn >= self.max_turns:
+        # Stop if end turn reached
+        if self.end_turn is not None and state.turn >= self.end_turn:
             return True
 
         # Stop if scenario has ended

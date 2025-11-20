@@ -763,14 +763,14 @@ def synthesize_and_validate_world_state(
     return world_update_result
 
 
-def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = None, credit_limit: float = None, resume_mode: bool = False, verbose: bool = False):
+def run_scenario(scenario_path: str, output_path: str = None, end_turn: int = None, credit_limit: float = None, resume_mode: bool = False, verbose: bool = False):
     """
     Run a complete scenario simulation
 
     Args:
         scenario_path: Path to the scenario directory
         output_path: Path to output directory (default: output/<scenario-name>/run-001)
-        max_turns: Optional maximum number of turns to execute before halting
+        end_turn: Optional turn number to stop at (e.g., end_turn=5 stops after turn 5)
         credit_limit: Optional cost limit - halt if exceeded
         resume_mode: If True, resume from existing state in output_path
         verbose: If True, enable DEBUG logging
@@ -1151,11 +1151,11 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
                 started_at=started_at
             )
 
-            # Check if max_turns reached
-            if max_turns and turn >= max_turns:
-                logger.warning(f"⚠️  Reached maximum turns limit: {max_turns}")
-                state_manager.mark_halted('max_turns')
-                logger.info(f"Scenario halted after {max_turns} turn(s). Resume with:")
+            # Check if end_turn reached
+            if end_turn and turn >= end_turn:
+                logger.warning(f"⚠️  Reached end turn: {end_turn}")
+                state_manager.mark_halted('end_turn')
+                logger.info(f"Scenario halted at turn {end_turn}. Resume with:")
                 logger.info(f"  python3 src/run_scenario.py --resume {output_path}")
                 return
 
@@ -1508,7 +1508,7 @@ def main():
     parser.add_argument('--resume', help='Resume from run directory path')
     parser.add_argument('--branch-from', help='Branch from existing run directory')
     parser.add_argument('--branch-at-turn', type=int, help='Turn to branch from (requires --branch-from)')
-    parser.add_argument('--max-turns', type=int, help='Stop after this many turns')
+    parser.add_argument('--end-turn', type=int, help='Stop execution at this turn number (e.g., --end-turn 5 stops after turn 5)')
     parser.add_argument('--credit-limit', type=float, help='Halt if cost exceeds this amount')
     parser.add_argument('--verbose', '-v', action='store_true', help='Enable verbose (DEBUG) logging')
 
@@ -1527,7 +1527,7 @@ def main():
         run_scenario(
             scenario_path=None,  # Will be loaded from state
             output_path=args.resume,
-            max_turns=args.max_turns,
+            end_turn=args.end_turn,
             credit_limit=args.credit_limit,
             resume_mode=True,
             verbose=args.verbose
@@ -1539,7 +1539,7 @@ def main():
         run_scenario(
             scenario_path=args.scenario,
             output_path=args.output,
-            max_turns=args.max_turns,
+            end_turn=args.end_turn,
             credit_limit=args.credit_limit,
             resume_mode=False,
             verbose=args.verbose

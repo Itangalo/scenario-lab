@@ -155,7 +155,7 @@ from scenario_lab import Scenario, Runner, Database, Event
 
 # Simple usage
 scenario = Scenario.load('scenarios/ai-summit')
-result = Runner().run(scenario, max_turns=10, credit_limit=5.0)
+result = Runner().run(scenario, end_turn=10, credit_limit=5.0)
 print(f"Completed in {result.turns} turns, cost ${result.total_cost:.2f}")
 
 # Advanced usage with event handlers
@@ -190,7 +190,7 @@ metrics_df = db.query_metrics(scenario='ai-summit', actor='eu_commission')
 python src/run_scenario.py scenarios/ai-summit
 
 # V2 enhanced CLI
-scenario-lab run scenarios/ai-summit --max-turns 10 --credit-limit 5.0
+scenario-lab run scenarios/ai-summit --end-turn 10 --credit-limit 5.0
 scenario-lab run scenarios/ai-summit --resume output/ai-summit/run-003
 scenario-lab run scenarios/ai-summit --branch-from run-003 --branch-at-turn 5
 
@@ -839,7 +839,7 @@ scenario-lab run scenarios/my-scenario
 # Or use Python SDK
 from scenario_lab import Scenario
 scenario = Scenario.load('scenarios/my-scenario')
-result = scenario.run(max_turns=10)
+result = scenario.run(end_turn=10)
 ```
 
 **Phase 2.2** (Database):

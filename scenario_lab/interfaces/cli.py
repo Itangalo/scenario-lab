@@ -38,7 +38,7 @@ def cli(verbose: bool) -> None:
         scenario-lab run scenarios/ai-summit
 
         # Run with limits
-        scenario-lab run scenarios/ai-summit --max-turns 10 --credit-limit 5.0
+        scenario-lab run scenarios/ai-summit --end-turn 10 --credit-limit 5.0
 
         # Validate a scenario
         scenario-lab validate scenarios/ai-summit
@@ -56,14 +56,14 @@ def cli(verbose: bool) -> None:
 
 @cli.command()
 @click.argument("scenario_path", type=click.Path(exists=True, file_okay=False))
-@click.option("--max-turns", type=int, help="Maximum number of turns")
+@click.option("--end-turn", type=int, help="Turn number to stop at (e.g., --end-turn 5 stops after turn 5)")
 @click.option("--credit-limit", type=float, help="Maximum cost in USD")
 @click.option("--resume", type=click.Path(exists=True, file_okay=False), help="Resume from run directory")
 @click.option("--branch-from", type=click.Path(exists=True, file_okay=False), help="Branch from run directory")
 @click.option("--branch-at-turn", type=int, help="Turn number to branch from")
 def run(
     scenario_path: str,
-    max_turns: Optional[int],
+    end_turn: Optional[int],
     credit_limit: Optional[float],
     resume: Optional[str],
     branch_from: Optional[str],
@@ -79,8 +79,8 @@ def run(
 
     # Print scenario info
     print_info("Scenario", scenario_path)
-    if max_turns:
-        print_info("Max turns", str(max_turns), "yellow")
+    if end_turn:
+        print_info("End turn", str(end_turn), "yellow")
     if credit_limit:
         print_info("Credit limit", f"${credit_limit:.2f}", "yellow")
     if resume:
@@ -101,7 +101,7 @@ def run(
         # Create runner
         runner = SyncRunner(
             scenario_path=scenario_path,
-            max_turns=max_turns,
+            end_turn=end_turn,
             credit_limit=credit_limit,
             resume_from=resume,
             branch_from=branch_from,
@@ -231,8 +231,8 @@ def validate(scenario_path: str) -> None:
 
 @cli.command()
 @click.argument("scenario_path", type=click.Path(exists=True, file_okay=False))
-@click.option("--max-turns", type=int, help="Number of turns to estimate (uses scenario default if not specified)")
-def estimate(scenario_path: str, max_turns: Optional[int]) -> None:
+@click.option("--end-turn", type=int, help="Turn number to estimate up to (uses scenario default if not specified)")
+def estimate(scenario_path: str, end_turn: Optional[int]) -> None:
     """
     Estimate scenario cost without running
 
@@ -247,8 +247,8 @@ def estimate(scenario_path: str, max_turns: Optional[int]) -> None:
 
     print_header("Cost Estimation")
     print_info("Scenario", scenario_path)
-    if max_turns:
-        print_info("Turns", str(max_turns), "yellow")
+    if end_turn:
+        print_info("Turns", str(end_turn), "yellow")
     click.echo()
 
     # Create estimator and load configs
@@ -262,10 +262,10 @@ def estimate(scenario_path: str, max_turns: Optional[int]) -> None:
         sys.exit(1)
 
     # Get estimate
-    estimate_result = estimator.estimate(max_turns)
+    estimate_result = estimator.estimate(end_turn)
 
     # Display number of turns
-    actual_turns = max_turns or estimator.scenario_config.turns or 10
+    actual_turns = end_turn or estimator.scenario_config.turns or 10
     click.echo(f"📊 Estimating costs for {click.style(str(actual_turns), fg='cyan', bold=True)} turns")
     click.echo()
 
