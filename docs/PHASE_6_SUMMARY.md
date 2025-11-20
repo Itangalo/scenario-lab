@@ -1,7 +1,7 @@
 # Phase 6: Cleanup and Finalization - Summary
 
 **Date**: 2025-11-20
-**Status**: PHASES 6.1-6.2 COMPLETE
+**Status**: PHASES 6.1-6.3 COMPLETE
 
 ---
 
@@ -86,22 +86,40 @@ Pragmatic approach: Document test status, update critical imports, defer compreh
 
 ---
 
-## Phase 6.3: Documentation Update ⏳ IN PROGRESS
+## Phase 6.3: Documentation Update ✅ COMPLETE
 
 **Goal:** Update README.md and CLAUDE.md to reflect V2
 
-**Tasks:**
-- [ ] Update README.md usage examples (python src/ → scenario-lab commands)
-- [ ] Update CLAUDE.md with V2 architecture
-- [ ] Remove V1 references from documentation
-- [ ] Add V2 migration completion notice
-- [ ] Update quick start guide
+**Completed**: 2025-11-20
 
-**Files to update:**
-- README.md: ~20 references to `python src/` commands
-- CLAUDE.md: Architecture description
-- docs/API.md: Already V2-compliant
-- docs/v2_migration_plan.md: Mark as complete
+### Changes
+
+**README.md** - Comprehensive V2 update:
+- Added Version 2.0 header with migration notice
+- Updated 15+ command examples:
+  - `python src/create_scenario.py` → `scenario-lab create`
+  - `python src/run_scenario.py` → `scenario-lab run`
+  - `python src/create_batch_config.py` → `scenario-lab create-batch`
+  - Batch runner/analyzer → `python -m scenario_lab.batch.*`
+- All usage examples now use V2 CLI
+
+**CLAUDE.md** - V2 architecture guide:
+- Updated status to "V2 Migration COMPLETE"
+- Documented complete V2 package structure
+- Added V2 Migration Status section with docs links
+- Updated Development Phases (Phases 1-6 complete)
+- Replaced implementation guidance with V2 architecture principles
+- Added V2 patterns: immutable state, async, event-driven
+
+### Results
+
+- ✅ All commands updated to V2 CLI
+- ✅ V2 architecture fully documented
+- ✅ Migration completion notice added
+- ✅ V1 marked as legacy/deprecated
+
+**Commit:**
+- `03cb9e9` - Phase 6.3 complete: Documentation update for V2
 
 ---
 
@@ -189,13 +207,18 @@ Pragmatic approach: Document test status, update critical imports, defer compreh
 
 - **Phase 6.1:** 2025-11-20 (Complete)
 - **Phase 6.2:** 2025-11-20 (Complete)
-- **Phase 6.3:** 2025-11-20 (In Progress)
+- **Phase 6.3:** 2025-11-20 (Complete)
 - **Phase 6.4:** 2025-11-20 (Pending)
 
 ---
 
 ## Conclusion
 
-**Phases 6.1-6.2 are complete.** The V2 codebase is now pure V2 with zero V1 dependencies (except the intentional CLI wizard bridge). Test suite status is documented, and focus shifts to documentation updates (Phase 6.3) and manual QA (Phase 6.4).
+**Phases 6.1-6.3 are complete.** The V2 migration is **functionally complete**:
 
-The V2 migration is **functionally complete** and ready for documentation and final validation.
+- ✅ V2 codebase is pure V2 with zero V1 dependencies
+- ✅ Test suite status documented
+- ✅ Documentation fully updated for V2
+- ✅ All CLI commands use V2 architecture
+
+Only Phase 6.4 (Manual QA) remains to verify the migration through end-to-end testing.
