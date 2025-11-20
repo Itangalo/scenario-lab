@@ -12,6 +12,7 @@ from scenario_lab.batch.batch_parallel_executor import (
     run_scenarios_parallel
 )
 from scenario_lab.batch.batch_runner import BatchRunner
+from scenario_lab.batch.batch_analyzer import BatchAnalyzer
 
 __all__ = [
     'ParameterVariator',
@@ -21,5 +22,6 @@ __all__ = [
     'BatchParallelExecutor',
     'RateLimitManager',
     'run_scenarios_parallel',
-    'BatchRunner'
+    'BatchRunner',
+    'BatchAnalyzer'
 ]
