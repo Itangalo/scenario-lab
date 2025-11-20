@@ -595,6 +595,8 @@ def execute_actor_decisions(
 
     # SEQUENTIAL PHASE: Process results and update shared state
     # This must be sequential to avoid race conditions in world_state, cost_tracker, etc.
+    # WARNING: Do NOT modify parallel execution above to update these shared objects directly.
+    # All state mutations MUST happen in this sequential section.
     logger.info(f"  📝 Recording decisions and tracking metrics...")
     turn_decisions = {}
     actor_decisions_for_world_update = {}
@@ -768,7 +770,21 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         credit_limit: Optional cost limit - halt if exceeded
         resume_mode: If True, resume from existing state in output_path
         verbose: If True, enable DEBUG logging
+
+    NOTE: This is a large function (500+ lines) organized into these major sections:
+    1. Initialization & logging setup (lines 774-790)
+    2. Resume mode handling (lines 793-840)
+    3. Scenario & actor loading (lines 842-920)
+    4. Output directory setup (lines 922-970)
+    5. QA validator & context manager setup (lines 972-1020)
+    6. Main execution loop (lines 1022-1200)
+    7. Cleanup & state persistence (lines 1202-1284)
+
+    Consider refactoring into smaller functions for improved maintainability.
     """
+    # ============================================================================
+    # SECTION 1: INITIALIZATION & LOGGING SETUP
+    # ============================================================================
     # Set up temporary logger for initialization
     logger = logging.getLogger("scenario_lab")
     logger.setLevel(logging.DEBUG if verbose else logging.INFO)
@@ -788,6 +804,9 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
     start_turn = 1
     started_at = None
 
+    # ============================================================================
+    # SECTION 2: RESUME MODE HANDLING
+    # ============================================================================
     # Handle resume mode
     if resume_mode:
         if output_path is None:
@@ -814,6 +833,9 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
             logger.info(f"  Previous halt reason: {saved_state['halt_reason']}")
         logger.info(f"  Resuming from turn {start_turn} of {saved_state['total_turns']}")
 
+    # ============================================================================
+    # SECTION 3: SCENARIO & ACTOR LOADING
+    # ============================================================================
     # Load scenario definition
     scenario = load_scenario(scenario_path)
     scenario_name = scenario['name']
@@ -878,11 +900,17 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         # Convert ISO string timestamps back to datetime objects
         start_time_str = saved_state['cost_tracker_state'].get('start_time')
         if start_time_str:
-            cost_tracker.start_time = datetime.fromisoformat(start_time_str)
+            try:
+                cost_tracker.start_time = datetime.fromisoformat(start_time_str)
+            except (ValueError, TypeError) as e:
+                logger.warning(f"Could not parse start_time '{start_time_str}': {e}")
 
         end_time_str = saved_state['cost_tracker_state'].get('end_time')
         if end_time_str:
-            cost_tracker.end_time = datetime.fromisoformat(end_time_str)
+            try:
+                cost_tracker.end_time = datetime.fromisoformat(end_time_str)
+            except (ValueError, TypeError) as e:
+                logger.warning(f"Could not parse end_time '{end_time_str}': {e}")
 
         logger.info(f"Restored cost tracker: ${cost_tracker.total_cost:.4f}, {cost_tracker.total_tokens:,} tokens")
     else:
@@ -999,6 +1027,9 @@ def run_scenario(scenario_path: str, output_path: str = None, max_turns: int = N
         remaining_turns = num_turns - start_turn + 1
         logger.info(f"Continuing for {remaining_turns} more turn(s)...")
 
+    # ============================================================================
+    # SECTION 4: MAIN EXECUTION LOOP
+    # ============================================================================
     for turn in range(start_turn, num_turns + 1):
         try:
             log_section(logger, f"TURN {turn}")
@@ -1359,8 +1390,15 @@ def branch_scenario(source_run_path: str, branch_at_turn: int, verbose: bool = F
 
     # Create truncated state for the branch
     # Truncate world state to branch point
+    turn_key = str(branch_at_turn)
+    if turn_key not in source_state['world_state']['states']:
+        raise ValueError(
+            f"Cannot branch at turn {branch_at_turn}: turn not found in source state. "
+            f"Available turns: {sorted([int(k) for k in source_state['world_state']['states'].keys()])}"
+        )
+
     truncated_world_state = {
-        'current_state': source_state['world_state']['states'][str(branch_at_turn)],
+        'current_state': source_state['world_state']['states'][turn_key],
         'current_turn': branch_at_turn,
         'turn_duration': source_state['world_state']['turn_duration'],
         'scenario_name': source_state['world_state']['scenario_name'],
@@ -1371,15 +1409,10 @@ def branch_scenario(source_run_path: str, branch_at_turn: int, verbose: bool = F
     # Truncate cost tracker to branch point
     truncated_costs_by_turn = {k: v for k, v in source_state['cost_tracker_state']['costs_by_turn'].items() if int(k) <= branch_at_turn}
 
-    # Recalculate totals
+    # Recalculate total cost from truncated turns
     total_cost = 0.0
-    total_tokens = 0
     for turn_data in truncated_costs_by_turn.values():
         total_cost += turn_data['total']
-        # Sum actor tokens
-        for actor_costs in turn_data.get('actor_costs', {}).values():
-            # Note: individual token counts not stored per actor in turn data, so we can't recalculate perfectly
-            pass
 
     # Truncate costs by actor
     truncated_costs_by_actor = {}

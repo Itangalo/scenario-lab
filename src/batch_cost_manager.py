@@ -147,6 +147,7 @@ class BatchCostManager:
 
         if self.runs_completed > 0:
             # Use average cost of completed runs
+            # Safe division: runs_completed > 0 is checked above
             avg_cost = self.total_spent / self.runs_completed
             if avg_cost > 0:
                 return int(remaining / avg_cost)
@@ -175,10 +176,14 @@ class BatchCostManager:
         stats = {}
 
         for variation_id, total_cost in self.variation_costs.items():
-            # Count runs for this variation
-            variation_runs = [r for r in self.run_costs if r['variation_id'] == variation_id]
-            num_runs = len(variation_runs)
-            successful_runs = len([r for r in variation_runs if r['success']])
+            # Count runs for this variation (single pass optimization)
+            num_runs = 0
+            successful_runs = 0
+            for r in self.run_costs:
+                if r['variation_id'] == variation_id:
+                    num_runs += 1
+                    if r['success']:
+                        successful_runs += 1
 
             stats[variation_id] = {
                 'total_cost': total_cost,

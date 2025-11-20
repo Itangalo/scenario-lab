@@ -153,6 +153,10 @@ class ParameterVariator:
         temp_actors_dir = os.path.join(temp_scenario_path, 'actors')
         os.makedirs(temp_actors_dir, exist_ok=True)
 
+        # Track which actor modifications were applied
+        applied_modifications = set()
+        requested_modifications = set(variation['modifications'].get('actor_models', {}).keys())
+
         if os.path.exists(actors_dir):
             for actor_file in os.listdir(actors_dir):
                 if actor_file.endswith('.yaml'):
@@ -166,11 +170,22 @@ class ParameterVariator:
                     if actor_name in variation['modifications'].get('actor_models', {}):
                         new_model = variation['modifications']['actor_models'][actor_name]
                         actor_config['llm_model'] = new_model
+                        applied_modifications.add(actor_name)
 
                     # Write modified actor file
                     dest_path = os.path.join(temp_actors_dir, actor_file)
                     with open(dest_path, 'w') as f:
                         yaml.safe_dump(actor_config, f, default_flow_style=False, sort_keys=False)
+
+        # Warn about modifications that didn't match any actors
+        unapplied_modifications = requested_modifications - applied_modifications
+        if unapplied_modifications:
+            import logging
+            logger = logging.getLogger(__name__)
+            logger.warning(
+                f"Variation {variation['variation_id']}: Actor model modifications for "
+                f"{unapplied_modifications} did not match any actors in scenario"
+            )
 
         # Copy other scenario files (metrics.yaml, validation-rules.yaml, etc.)
         for filename in ['metrics.yaml', 'validation-rules.yaml']:

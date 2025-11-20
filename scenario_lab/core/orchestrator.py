@@ -168,7 +168,7 @@ class ScenarioOrchestrator:
                     break
 
             # Check if we halted due to credit limit or manual stop
-            if halt_reason or (self.paused and state.total_cost() >= self.credit_limit):
+            if halt_reason or (self.paused and self.credit_limit is not None and state.total_cost() >= self.credit_limit):
                 reason = halt_reason or f"Credit limit exceeded: ${state.total_cost():.2f} >= ${self.credit_limit:.2f}"
                 state = state.with_halted(reason)
 

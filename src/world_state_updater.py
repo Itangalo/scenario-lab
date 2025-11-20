@@ -3,9 +3,11 @@ World State Updater - Uses LLM to synthesize actor decisions into coherent world
 """
 import os
 import requests
+import re
 from typing import Dict, Any
 from dotenv import load_dotenv
 from api_utils import make_llm_call
+from response_parser import extract_section
 
 load_dotenv()
 
@@ -187,40 +189,40 @@ Remember: Be specific, realistic, and show how actions and events create ripple 
         )
 
         # Parse the response
-        updated_state = ""
-        key_changes = []
-        consequences = []
-
-        # Extract UPDATED STATE
-        if "**UPDATED STATE:**" in content:
-            parts = content.split("**KEY CHANGES:**")
-            state_part = parts[0].split("**UPDATED STATE:**")[1].strip()
-            updated_state = state_part
-
-            # Extract KEY CHANGES if present
-            if len(parts) > 1:
-                changes_part = parts[1]
-                if "**CONSEQUENCES:**" in changes_part:
-                    changes_section, consequences_section = changes_part.split("**CONSEQUENCES:**")
-                    # Parse key changes
-                    for line in changes_section.strip().split('\n'):
-                        line = line.strip()
-                        if line.startswith('-') or line.startswith('•'):
-                            key_changes.append(line[1:].strip())
-                    # Parse consequences
-                    for line in consequences_section.strip().split('\n'):
-                        line = line.strip()
-                        if line.startswith('-') or line.startswith('•'):
-                            consequences.append(line[1:].strip())
-                else:
-                    # No consequences section, just parse changes
-                    for line in changes_part.strip().split('\n'):
-                        line = line.strip()
-                        if line.startswith('-') or line.startswith('•'):
-                            key_changes.append(line[1:].strip())
-        else:
-            # Fallback if format not followed
+        # Use robust section extraction (handles variations in formatting)
+        updated_state = extract_section(content, "UPDATED STATE", "KEY CHANGES")
+        if not updated_state:
+            # Fallback: try without markdown bold
+            updated_state = extract_section(content, "Updated State", "Key Changes")
+        if not updated_state:
+            # Fallback if format not followed - use entire content
             updated_state = content
+
+        # Extract KEY CHANGES section
+        key_changes_text = extract_section(content, "KEY CHANGES", "CONSEQUENCES")
+        if not key_changes_text:
+            key_changes_text = extract_section(content, "Key Changes", "Consequences")
+
+        # Parse bulleted list from key changes
+        key_changes = []
+        if key_changes_text:
+            for line in key_changes_text.strip().split('\n'):
+                line = line.strip()
+                if line.startswith('-') or line.startswith('•') or line.startswith('*'):
+                    key_changes.append(line[1:].strip())
+
+        # Extract CONSEQUENCES section
+        consequences_text = extract_section(content, "CONSEQUENCES", None)
+        if not consequences_text:
+            consequences_text = extract_section(content, "Consequences", None)
+
+        # Parse bulleted list from consequences
+        consequences = []
+        if consequences_text:
+            for line in consequences_text.strip().split('\n'):
+                line = line.strip()
+                if line.startswith('-') or line.startswith('•') or line.startswith('*'):
+                    consequences.append(line[1:].strip())
 
         # tokens_used is already returned from make_llm_call()
 

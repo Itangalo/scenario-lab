@@ -6,6 +6,21 @@ Provides:
 - User-friendly error messages with suggested fixes
 - Progressive fallback strategies
 - Structured error reporting
+
+ERROR LOGGING STANDARDS:
+To maintain consistency across the codebase, follow these logging practices:
+
+1. Always use logger.error() before raising exceptions
+2. Use logger.warning() for recoverable errors
+3. Use logger.info() for normal operational messages
+4. Use logger.debug() for detailed diagnostic information
+5. Include context in log messages (file names, turn numbers, actor names, etc.)
+6. Avoid using print() for error reporting - use logger instead
+7. Use classify_error() and ErrorHandler.handle_error() for structured error handling
+
+Example:
+    logger.error(f"Failed to load actor {actor_name} from {file_path}: {e}")
+    raise FileNotFoundError(f"Actor file not found: {file_path}")
 """
 import sys
 import traceback

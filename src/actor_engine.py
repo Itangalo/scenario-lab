@@ -14,7 +14,19 @@ from pydantic import ValidationError
 load_dotenv()
 
 class Actor:
-    """Represents a single actor in the scenario"""
+    """
+    Represents a single actor in the scenario
+
+    DESIGN NOTE: All decision methods (make_decision, decide_communication, respond_to_bilateral,
+    decide_coalition, respond_to_coalition) follow a common pattern:
+    1. Build system + user prompts specific to the decision type
+    2. Call make_llm_call() to get LLM response
+    3. Parse response using appropriate parser from response_parser module
+    4. Return structured dict with decision data and token usage
+
+    This pattern could be extracted into a helper method in future refactoring to reduce
+    code duplication, but current implementation prioritizes clarity over DRY principle.
+    """
 
     def __init__(self, actor_data: Dict[str, Any], scenario_system_prompt: str = "", json_mode: bool = False):
         self.name = actor_data['name']
@@ -581,11 +593,18 @@ Remember: This is turn """ + f"{turn} of {total_turns}" + """. Your goals can ev
         # Parse the response based on mode
         if self.json_mode:
             # Use JSON parser with markdown fallback
-            import sys
-            from pathlib import Path
-            sys.path.insert(0, str(Path(__file__).parent.parent / "scenario_lab" / "utils"))
-            from json_response_parser import parse_decision_with_fallback
-            parsed = parse_decision_with_fallback(content)
+            try:
+                import sys
+                from pathlib import Path
+                sys.path.insert(0, str(Path(__file__).parent.parent / "scenario_lab" / "utils"))
+                from json_response_parser import parse_decision_with_fallback
+                parsed = parse_decision_with_fallback(content)
+            except (ImportError, AttributeError, Exception) as e:
+                # Fall back to V1 markdown parser if JSON parsing fails
+                logging.getLogger(__name__).warning(
+                    f"JSON parser failed ({e}), falling back to markdown parser"
+                )
+                parsed = parse_actor_decision(content)
         else:
             # Use V1 markdown parser
             parsed = parse_actor_decision(content)
