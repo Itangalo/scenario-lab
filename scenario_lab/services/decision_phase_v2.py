@@ -3,15 +3,15 @@ Decision Phase Service for Scenario Lab V2
 
 Handles actor decision-making using V2 components (no V1 dependencies).
 
-Phase 1.2 Implementation:
-- Uses V2 API client for LLM calls
-- Uses V2 prompt builder for prompt construction
-- Uses V2 response parser for parsing
-- Tracks costs via ScenarioState
-- Defers context management to Phase 2.1 (uses full world state)
-- Defers communication to Phase 2.2 (no communication context)
-- Defers metrics extraction to Phase 3.3 (stub)
-- Defers QA validation to Phase 3.4 (stub)
+Phase 2.1 Updates:
+- ✅ Uses V2 API client for LLM calls
+- ✅ Uses V2 prompt builder for prompt construction
+- ✅ Uses V2 response parser for parsing
+- ✅ Tracks costs via ScenarioState
+- ✅ Uses V2 ContextManager for context windowing (Phase 2.1)
+- ⏳ Defers communication to Phase 2.2 (no communication context yet)
+- ⏳ Defers metrics extraction to Phase 3.3 (stub)
+- ⏳ Defers QA validation to Phase 3.4 (stub)
 """
 from __future__ import annotations
 import os
@@ -25,6 +25,7 @@ from scenario_lab.utils.api_client import make_llm_call_async, LLMResponse
 from scenario_lab.core.prompt_builder import build_decision_prompt, build_messages_for_llm
 from scenario_lab.utils.response_parser import parse_decision
 from scenario_lab.utils.model_pricing import calculate_cost
+from scenario_lab.core.context_manager import ContextManagerV2
 
 logger = logging.getLogger(__name__)
 
@@ -34,12 +35,13 @@ class DecisionPhaseV2:
     Phase service for actor decision-making (V2 - Pure implementation)
 
     This phase:
-    1. Builds decision prompts for each actor
-    2. Makes LLM API calls
-    3. Parses responses
-    4. Records decisions in state
-    5. Tracks costs
-    6. Writes decisions to markdown files
+    1. Gets contextualized world state for each actor (via ContextManager)
+    2. Builds decision prompts for each actor
+    3. Makes LLM API calls
+    4. Parses responses
+    5. Records decisions in state
+    6. Tracks costs
+    7. Writes decisions to markdown files
     """
 
     def __init__(
@@ -48,6 +50,7 @@ class DecisionPhaseV2:
         scenario_system_prompt: str = "",
         output_dir: Optional[str] = None,
         json_mode: bool = False,
+        context_window_size: int = 3,
     ):
         """
         Initialize decision phase
@@ -57,12 +60,20 @@ class DecisionPhaseV2:
             scenario_system_prompt: System prompt from scenario configuration
             output_dir: Optional directory to save decision markdown files
             json_mode: Whether to use JSON response format (default: False)
+            context_window_size: Number of recent turns to keep in full detail (default: 3)
         """
         self.actor_configs = actor_configs
         self.scenario_system_prompt = scenario_system_prompt
         self.output_dir = Path(output_dir) if output_dir else None
         self.json_mode = json_mode
         self.api_key = os.environ.get('OPENROUTER_API_KEY')
+
+        # Create context manager for windowing
+        self.context_manager = ContextManagerV2(
+            window_size=context_window_size,
+            summarization_model="openai/gpt-4o-mini",
+            api_key=self.api_key
+        )
 
     async def execute(self, state: ScenarioState) -> ScenarioState:
         """
@@ -76,9 +87,6 @@ class DecisionPhaseV2:
         """
         logger.info(f"Executing decision phase for turn {state.turn}")
 
-        # Get current world state content
-        current_world_state = state.world_state.content
-
         # Determine total turns from scenario config
         total_turns = state.scenario_config.get("num_turns") or state.scenario_config.get("turns", 10)
 
@@ -87,7 +95,13 @@ class DecisionPhaseV2:
             actor_name = actor_config['name']
             logger.debug(f"Getting decision from {actor_name}")
 
-            # Extract recent goals from previous decisions (Phase 1.2: simplified)
+            # Phase 2.1: Get contextualized world state for this actor
+            current_world_state = await self.context_manager.get_context_for_actor(
+                actor_name=actor_name,
+                state=state
+            )
+
+            # Extract recent goals from previous decisions
             recent_goals = self._extract_recent_goals(state, actor_name)
 
             # Build prompts
@@ -100,9 +114,9 @@ class DecisionPhaseV2:
                 actor_system_prompt=actor_config.get('system_prompt'),
                 recent_goals=recent_goals,
                 json_mode=self.json_mode,
-                # Phase 1.2: Deferred to later phases
+                # Phase 2.1: Deferred to later phases
                 other_actors_decisions=None,  # Phase 2: Actor interactions
-                communications_context=None,   # Phase 2: Communication system
+                communications_context=None,   # Phase 2.2: Communication system
             )
 
             # Build messages for LLM
