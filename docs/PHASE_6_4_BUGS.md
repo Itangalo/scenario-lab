@@ -277,6 +277,67 @@ if config.llm_model and 'gpt-4' in config.llm_model.lower() and 'mini' not in co
 
 ---
 
+### BUG-011: MetricsTracker incompatible with V2 metrics schema
+
+**Status**: 🔴 CRITICAL - Blocks scenario execution when metrics.yaml present
+
+**Issue:**
+MetricsTracker (V1 code) expects metrics to be a dict, but V2 schema uses a list.
+
+**Error:**
+```
+AttributeError: 'list' object has no attribute 'items'
+  File "scenario_lab/core/metrics_tracker.py", line 86
+    for metric_name, metric_def in self.metrics_definitions.items():
+```
+
+**Root cause:**
+V1 metrics format (dict-based):
+```yaml
+metrics:
+  willingness_to_negotiate:
+    description: ...
+    type: integer
+```
+
+V2 metrics format (list-based):
+```yaml
+metrics:
+  - name: willingness_to_negotiate
+    description: ...
+    type: continuous
+    range: [-10, 10]
+```
+
+MetricsTracker loads YAML and expects `config.get('metrics', {})` to be a dict, but V2 schema makes it a list.
+
+**Location:**
+- `scenario_lab/core/metrics_tracker.py:86` - Iterates with `.items()`
+- `scenario_lab/core/metrics_tracker.py:58` - Loads as dict: `self.metrics_definitions = config.get('metrics', {})`
+
+**Impact:**
+- Scenarios with metrics.yaml fail after Decision phase completes
+- Decisions are successfully recorded before crash
+- Cost tracking works ($0.0008 for 2 actors, ~2,500 tokens)
+
+**Workaround:**
+Remove or rename metrics.yaml to skip metrics tracking
+
+**Fix required:**
+Update MetricsTracker to handle V2 list-based format:
+```python
+# Convert list to dict for compatibility
+metrics_list = config.get('metrics', [])
+self.metrics_definitions = {m['name']: m for m in metrics_list}
+```
+
+Or: Rewrite MetricsTracker as V2-native component
+
+**Files:**
+- `scenario_lab/core/metrics_tracker.py:58, 86`
+
+---
+
 ## Additional Findings
 
 ### Finding-001: setup.py installation incomplete
@@ -316,8 +377,87 @@ Check `setup.py` entry_points configuration.
 
 ## Summary
 
-**Critical blockers:** 1 (BUG-001)
+**Critical blockers:** 2 (BUG-001, BUG-011)
+**Fixed in session:** 5 (BUG-006 through BUG-010)
 **Medium issues:** 3 (BUG-002, BUG-003, BUG-004)
+**Low priority:** 1 (BUG-005)
 **Findings:** 1 (Finding-001)
 
-V2 migration is functionally complete, but CLI wizard functionality is broken. Manual scenario creation works as workaround.
+**Total bugs found:** 11 (5 fixed, 6 remaining)
+
+V2 migration is functionally incomplete due to V1/V2 incompatibilities (metrics schema, wizard missing). Core execution works but hits schema mismatches.
+
+---
+
+## Test Coverage Analysis
+
+### Problem: Integration Test Gap
+
+The project has **310 passing unit tests** but **lacks integration tests** that would have caught these bugs:
+
+**What unit tests cover:**
+- ✅ Individual component logic (decision parsing, cost calculation, etc.)
+- ✅ V1 component behavior
+- ✅ Schema validation with valid inputs
+
+**What unit tests miss:**
+- ❌ V2 end-to-end execution flow
+- ❌ Component integration (how phases wire together)
+- ❌ Schema compatibility between loader and consumers
+- ❌ Default value handling (Pydantic model_dump() behavior)
+- ❌ Parameter passing between CLI → Runner → Phases
+
+### Root Cause: V1/V2 Hybrid
+
+The bugs stem from **V1 code consuming V2 schemas**:
+
+1. **BUG-006-010**: Parameter mismatches - V2 CLI calling V1-style components
+2. **BUG-011**: Schema incompatibility - MetricsTracker (V1) vs metrics.yaml (V2)
+3. **BUG-001**: Wizard missing - Removed src/ but CLI still references it
+
+### What's Missing: Integration Tests
+
+**Needed tests:**
+```python
+def test_scenario_execution_end_to_end():
+    """Test full scenario from CLI to output files"""
+    # Would have caught BUG-006 through BUG-011
+    runner = SyncRunner("scenarios/test")
+    runner.setup()
+    result = asyncio.run(runner.run())
+    assert result.turn > 0
+    assert len(result.decisions) > 0
+```
+
+```python
+def test_v2_schema_compatibility():
+    """Test V2 schemas work with all consumers"""
+    # Would have caught BUG-011
+    loader = ScenarioLoader("scenarios/test")
+    state, actors, config = loader.load()
+
+    # Test MetricsTracker can load V2 metrics
+    metrics_tracker = MetricsTracker(Path("scenarios/test/metrics.yaml"))
+    metrics = metrics_tracker.extract_metrics_from_decisions(state)
+```
+
+**Current test suite status:**
+- 20 V1 component tests (obsolete after src/ removal)
+- 2 V2 integration tests (broken, need V2 API mocking)
+- 5 V2-native tests (pass but don't cover integration)
+
+### Recommendation
+
+**Short-term (Phase 6.4):**
+1. Add smoke test: `test_simple_scenario_runs_without_error()`
+2. Test each CLI command with real scenario
+3. Manual QA checklist (what we did today)
+
+**Long-term (Post-Phase 6):**
+1. Rewrite V2 integration tests with proper mocking
+2. Add end-to-end tests for each major workflow
+3. Add schema compatibility tests
+4. Consider contract tests between V2 components
+5. Remove obsolete V1 tests when src/ is deleted
+
+**The core issue:** Migration changed schemas (V1 → V2) but didn't update all consumers (MetricsTracker, wizards, etc.). Integration tests would catch this immediately.
