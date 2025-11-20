@@ -323,6 +323,7 @@ class ScenarioState:
             "scenario_name": self.scenario_name,
             "run_id": self.run_id,
             "status": self.status.value,
+            "scenario_config": self.scenario_config,  # Include scenario configuration
             "turn": self.turn,
             "current_phase": self.current_phase.value if self.current_phase else None,
             "world_state": {
