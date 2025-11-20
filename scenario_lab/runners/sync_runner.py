@@ -10,10 +10,10 @@ import yaml
 from pathlib import Path
 from typing import Optional
 
-from scenario_lab.loaders import ScenarioLoader
+from scenario_lab.loaders import ScenarioLoader, load_metrics_config
 from scenario_lab.core.orchestrator import ScenarioOrchestrator, PhaseType
 from scenario_lab.core.events import EventBus
-from scenario_lab.core.metrics_tracker import MetricsTracker
+from scenario_lab.core.metrics_tracker_v2 import MetricsTrackerV2
 from scenario_lab.core.qa_validator import QAValidator
 from scenario_lab.services.communication_phase import CommunicationPhase
 from scenario_lab.services.decision_phase_v2 import DecisionPhaseV2
@@ -89,7 +89,7 @@ class SyncRunner:
         # V2 components
         self.event_bus: Optional[EventBus] = None
         self.orchestrator: Optional[ScenarioOrchestrator] = None
-        self.metrics_tracker: Optional[MetricsTracker] = None
+        self.metrics_tracker: Optional[MetricsTrackerV2] = None
         self.qa_validator: Optional[QAValidator] = None
 
     def _default_output_path(self) -> str:
@@ -139,10 +139,15 @@ class SyncRunner:
             save_state_every_turn=True,
         )
 
-        # Metrics tracker (if metrics.yaml exists)
+        # Metrics tracker V2 (if metrics.yaml exists)
         metrics_file = Path(self.scenario_path) / "metrics.yaml"
-        if metrics_file.exists():
-            self.metrics_tracker = MetricsTracker(metrics_file)
+        metrics_config = load_metrics_config(metrics_file)
+        if metrics_config:
+            api_key = os.getenv("OPENROUTER_API_KEY", "")
+            self.metrics_tracker = MetricsTrackerV2(
+                metrics_config=metrics_config,
+                api_key=api_key
+            )
         else:
             self.metrics_tracker = None
 
