@@ -142,7 +142,7 @@ class SyncRunner:
         # Metrics tracker (if metrics.yaml exists)
         metrics_file = Path(self.scenario_path) / "metrics.yaml"
         if metrics_file.exists():
-            self.metrics_tracker = MetricsTracker(str(metrics_file))
+            self.metrics_tracker = MetricsTracker(metrics_file)
         else:
             self.metrics_tracker = None
 
@@ -151,7 +151,7 @@ class SyncRunner:
         if validation_file.exists():
             api_key = os.getenv("OPENROUTER_API_KEY", "")
             self.qa_validator = QAValidator(
-                scenario_path=str(self.scenario_path),
+                validation_rules_path=validation_file,
                 api_key=api_key
             )
         else:

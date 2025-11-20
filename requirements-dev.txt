@@ -1,0 +1,15 @@
+# Development and Testing Dependencies for Scenario Lab V2
+
+# Testing framework
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+pytest-cov>=4.0.0
+
+# Code quality
+black>=23.0.0
+ruff>=0.1.0
+mypy>=1.0.0
+
+# Type stubs
+types-pyyaml>=6.0
+types-requests>=2.31.0

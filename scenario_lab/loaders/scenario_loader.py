@@ -85,8 +85,8 @@ class ScenarioLoader:
         for warning in validation_result.warnings:
             logger.warning(f"Scenario config: {warning}")
 
-        # Return as dict for compatibility
-        return scenario_config.model_dump()
+        # Return as dict for compatibility (exclude None values so dict.get() defaults work)
+        return scenario_config.model_dump(exclude_none=True)
 
     def _load_actors(self) -> Dict[str, Any]:
         """

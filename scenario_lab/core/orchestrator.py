@@ -127,7 +127,7 @@ class ScenarioOrchestrator:
         logger.info(
             "Scenario execution started",
             extra={
-                "max_turns": self.max_turns,
+                "end_turn": self.end_turn,
                 "credit_limit": self.credit_limit,
             }
         )

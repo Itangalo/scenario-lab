@@ -123,18 +123,34 @@ Pragmatic approach: Document test status, update critical imports, defer compreh
 
 ---
 
-## Phase 6.4: Final Integration Tests ⏳ PENDING
+## Phase 6.4: Final Integration Tests ⏳ IN PROGRESS
 
 **Goal:** Manual QA to verify V2 functionality
 
+**Started:** 2025-11-20
+
 **Tasks:**
-- [ ] Test CLI commands (run, validate, estimate, create, create-batch)
+- [x] Test validation command ✅ (Works, found BUG-002, BUG-003)
+- [ ] Test CLI create command ❌ (BLOCKED - BUG-001: src/ directory missing)
 - [ ] Test scenario execution end-to-end
 - [ ] Test batch execution
 - [ ] Test API endpoints
 - [ ] Test resume and branch functionality
 - [ ] Verify metrics and validation
 - [ ] Performance validation
+
+**Bugs found:** See `docs/PHASE_6_4_BUGS.md`
+
+### Critical Issues Discovered
+
+**BUG-001:** CLI wizard commands fail (src/ missing)
+- Commands `create` and `create-batch` broken
+- V1 wizard code removed in Phase 6.1 but CLI still references it
+- Workaround: Manual scenario creation via copying existing scenarios
+
+**BUG-004:** pytest-asyncio missing from requirements
+- 26 async tests fail without the package
+- Fix: Create requirements-dev.txt
 
 ---
 

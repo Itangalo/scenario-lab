@@ -114,26 +114,28 @@ def run(
         # Setup event handlers for progress display
         event_bus = runner.event_bus
 
-        @event_bus.on(EventType.TURN_STARTED)
         async def on_turn_start(event: Event):
             turn = event.data.get("turn", 0)
             click.echo()
             click.echo(click.style(f"━━━ Turn {turn} ━━━", fg="bright_cyan", bold=True))
 
-        @event_bus.on(EventType.PHASE_COMPLETED)
         async def on_phase_complete(event: Event):
             phase = event.data.get("phase", "unknown")
             click.echo(f"  ✓ {phase.replace('_', ' ').title()} phase complete")
 
-        @event_bus.on(EventType.CREDIT_LIMIT_WARNING)
         async def on_credit_warning(event: Event):
             remaining = event.data.get("remaining", 0)
             print_warning(f"Credit limit warning: ${remaining:.2f} remaining")
 
-        @event_bus.on(EventType.SCENARIO_HALTED)
         async def on_halted(event: Event):
             reason = event.data.get("reason", "unknown")
             print_warning(f"Scenario halted: {reason}")
+
+        # Register handlers
+        event_bus.on(EventType.TURN_STARTED, on_turn_start)
+        event_bus.on(EventType.PHASE_COMPLETED, on_phase_complete)
+        event_bus.on(EventType.CREDIT_LIMIT_WARNING, on_credit_warning)
+        event_bus.on(EventType.SCENARIO_HALTED, on_halted)
 
         # Run scenario
         print_section("Running scenario...")
