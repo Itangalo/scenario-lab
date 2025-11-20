@@ -12,7 +12,7 @@ from typing import Dict, Any
 from datetime import datetime
 
 from scenario_lab.schemas.loader import load_and_validate_scenario
-from scenario_lab.loaders.actor_loader import load_all_actors, create_v1_actor_for_migration
+from scenario_lab.loaders.actor_loader import load_all_actors, create_actor_from_config
 from scenario_lab.models.state import ScenarioState, ActorState, WorldState, ScenarioStatus
 
 logger = logging.getLogger(__name__)
@@ -25,7 +25,7 @@ class ScenarioLoader:
     This loader:
     1. Loads and validates scenario.yaml
     2. Loads and validates actor YAML files
-    3. Creates V1 Actor objects for phase services
+    3. Creates V2 Actor objects for phase services
     4. Creates initial V2 ScenarioState
     """
 
@@ -39,7 +39,7 @@ class ScenarioLoader:
         """
         self.scenario_path = Path(scenario_path)
         self.scenario_config: Dict[str, Any] = {}
-        self.actors: Dict[str, Any] = {}  # V1 Actor objects temporarily during migration
+        self.actors: Dict[str, Any] = {}  # V2 Actor objects
         self.json_mode = json_mode
 
     def load(self) -> tuple[ScenarioState, Dict[str, Any], Dict[str, Any]]:
@@ -47,7 +47,7 @@ class ScenarioLoader:
         Load complete scenario configuration
 
         Returns:
-            Tuple of (initial_state, v1_actors, scenario_config)
+            Tuple of (initial_state, v2_actors, scenario_config)
         """
         logger.info(f"Loading scenario from: {self.scenario_path}")
 
@@ -92,8 +92,7 @@ class ScenarioLoader:
         """
         Load all actor YAML files and create Actor objects using V2 schemas
 
-        Note: Currently creates V1 Actor objects for compatibility with existing phases.
-        Will be updated to V2 Actor in Phase 2.
+        Creates V2 Actor objects from validated configuration.
         """
         actors_dir = self.scenario_path / "actors"
         scenario_system_prompt = self.scenario_config.get("system_prompt", "")
@@ -101,10 +100,10 @@ class ScenarioLoader:
         # Load all actor configs using V2 schemas
         actor_configs = load_all_actors(actors_dir, scenario_system_prompt)
 
-        # Create V1 Actor objects for compatibility (temporary during migration)
+        # Create V2 Actor objects
         actors = {}
         for short_name, actor_config in actor_configs.items():
-            actor = create_v1_actor_for_migration(
+            actor = create_actor_from_config(
                 actor_config,
                 scenario_system_prompt,
                 json_mode=self.json_mode

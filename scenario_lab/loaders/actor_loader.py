@@ -104,12 +104,9 @@ def load_all_actors(actors_dir: Path, scenario_system_prompt: str = "") -> Dict[
     return actors
 
 
-def create_v1_actor_for_migration(actor_config: Dict[str, Any], scenario_system_prompt: str = "", json_mode: bool = False):
+def create_actor_from_config(actor_config: Dict[str, Any], scenario_system_prompt: str = "", json_mode: bool = False):
     """
-    TEMPORARY: Create V1 Actor object from V2-validated config
-
-    This function bridges V2 schema validation with V1 Actor objects during the migration period.
-    It will be removed in Phase 2 when Actor is fully migrated to V2.
+    Create V2 Actor object from validated config
 
     Args:
         actor_config: Actor configuration dict (V2-validated)
@@ -117,17 +114,30 @@ def create_v1_actor_for_migration(actor_config: Dict[str, Any], scenario_system_
         json_mode: Whether to use JSON response format
 
     Returns:
-        V1 Actor object
-
-    Note:
-        This imports from V1 temporarily. Will be replaced in Phase 2 with V2 Actor.
+        V2 Actor object
     """
-    import sys
-    from pathlib import Path
+    from scenario_lab.core.actor import Actor
 
-    # Temporary V1 import (will be removed in Phase 2)
-    sys.path.insert(0, str(Path(__file__).parent.parent.parent / "src"))
-    from actor_engine import Actor
+    # Create V2 Actor from config dict
+    return Actor.from_dict(actor_config, scenario_system_prompt, json_mode)
 
-    # Create V1 Actor with V2-validated config
-    return Actor(actor_config, scenario_system_prompt, json_mode)
+
+def create_v1_actor_for_migration(actor_config: Dict[str, Any], scenario_system_prompt: str = "", json_mode: bool = False):
+    """
+    DEPRECATED: Use create_actor_from_config() instead
+
+    This function is kept for backward compatibility during migration.
+    It now creates V2 Actor objects instead of V1.
+
+    Args:
+        actor_config: Actor configuration dict (V2-validated)
+        scenario_system_prompt: System prompt from scenario
+        json_mode: Whether to use JSON response format
+
+    Returns:
+        V2 Actor object
+    """
+    logger.warning(
+        "create_v1_actor_for_migration() is deprecated. Use create_actor_from_config() instead."
+    )
+    return create_actor_from_config(actor_config, scenario_system_prompt, json_mode)
