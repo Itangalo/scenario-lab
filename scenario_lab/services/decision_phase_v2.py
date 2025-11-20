@@ -3,13 +3,13 @@ Decision Phase Service for Scenario Lab V2
 
 Handles actor decision-making using V2 components (no V1 dependencies).
 
-Phase 2.1 Updates:
+Phase 2.2 Updates:
 - ✅ Uses V2 API client for LLM calls
 - ✅ Uses V2 prompt builder for prompt construction
 - ✅ Uses V2 response parser for parsing
 - ✅ Tracks costs via ScenarioState
 - ✅ Uses V2 ContextManager for context windowing (Phase 2.1)
-- ⏳ Defers communication to Phase 2.2 (no communication context yet)
+- ✅ Uses V2 CommunicationManager for communication context (Phase 2.2)
 - ⏳ Defers metrics extraction to Phase 3.3 (stub)
 - ⏳ Defers QA validation to Phase 3.4 (stub)
 """
@@ -26,6 +26,7 @@ from scenario_lab.core.prompt_builder import build_decision_prompt, build_messag
 from scenario_lab.utils.response_parser import parse_decision
 from scenario_lab.utils.model_pricing import calculate_cost
 from scenario_lab.core.context_manager import ContextManagerV2
+from scenario_lab.core.communication_manager import format_communications_for_context
 
 logger = logging.getLogger(__name__)
 
@@ -104,6 +105,13 @@ class DecisionPhaseV2:
             # Extract recent goals from previous decisions
             recent_goals = self._extract_recent_goals(state, actor_name)
 
+            # Phase 2.2: Get communication context for this actor
+            communications_context = format_communications_for_context(
+                state=state,
+                actor_name=actor_name,
+                turn=state.turn
+            )
+
             # Build prompts
             system_prompt, user_prompt = build_decision_prompt(
                 world_state=current_world_state,
@@ -114,9 +122,9 @@ class DecisionPhaseV2:
                 actor_system_prompt=actor_config.get('system_prompt'),
                 recent_goals=recent_goals,
                 json_mode=self.json_mode,
-                # Phase 2.1: Deferred to later phases
-                other_actors_decisions=None,  # Phase 2: Actor interactions
-                communications_context=None,   # Phase 2.2: Communication system
+                communications_context=communications_context,  # Phase 2.2: Now included
+                # Phase 2+: Deferred to later phases
+                other_actors_decisions=None,  # Future: Actor interactions/simultaneous reveal
             )
 
             # Build messages for LLM
