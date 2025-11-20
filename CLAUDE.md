@@ -53,10 +53,10 @@ The system uses a modern Python package architecture with clean separation of co
 - `orchestrator.py` - Phase orchestration and execution flow
 - `prompt_builder.py` - LLM prompt construction
 - `world_synthesizer.py` - World state synthesis from decisions
-- `context_manager.py` - Context windowing and summarization
+- `context_manager.py` - Context windowing and summarization (V2 with validation)
 - `communication_manager.py` - Actor communication handling
-- `metrics_tracker.py` - Metrics extraction and tracking
-- `qa_validator.py` - Quality assurance validation
+- `metrics_tracker_v2.py` - **Pure V2 metrics extraction** (Pydantic schemas, async)
+- `qa_validator_v2.py` - **Pure V2 quality assurance** (Pydantic schemas)
 
 **Phase Services (`scenario_lab/services/`):**
 - `decision_phase_v2.py` - Actor decision-making (pure V2)
@@ -68,6 +68,8 @@ The system uses a modern Python package architecture with clean separation of co
 **Loaders (`scenario_lab/loaders/`):**
 - `scenario_loader.py` - Loads scenarios from YAML
 - `actor_loader.py` - Creates V2 Actor instances
+- `metrics_loader.py` - **V2 Pydantic-based metrics config loader**
+- `validation_loader.py` - **V2 Pydantic-based validation config loader**
 
 **Batch Processing (`scenario_lab/batch/`):**
 - `parameter_variator.py` - Generate scenario variations
@@ -97,6 +99,15 @@ The system uses a modern Python package architecture with clean separation of co
 ## V2 Migration Status
 
 **Status: COMPLETE** (Phase 6.1-6.2 complete, 2025-11-20)
+
+**V2 Rewrite Completion** (2025-11-20):
+- ✅ MetricsTrackerV2: Pure V2 with Pydantic schemas, async extraction (pattern, keyword, LLM)
+- ✅ ContextManagerV2: Enhanced with parameter validation (prevents BUG-010)
+- ✅ QAValidatorV2: Pydantic-based configuration with wrapper pattern
+- ✅ Integration smoke tests: 26 tests verifying V2 components work correctly
+- ✅ All V2 components use Pydantic schemas (no raw YAML dicts)
+- ✅ Pure async patterns for all LLM calls
+- ✅ Immutable state management throughout
 
 The V2 migration is functionally complete:
 - ✅ All V2 code uses pure V2 architecture (zero V1 dependencies)
