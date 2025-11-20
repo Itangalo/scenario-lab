@@ -9,10 +9,6 @@ import shutil
 from pathlib import Path
 from datetime import datetime
 from unittest.mock import MagicMock, AsyncMock, patch
-import sys
-
-# Add src to path
-sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
 
 from scenario_lab.models.state import (
     ScenarioState,
@@ -24,8 +20,8 @@ from scenario_lab.models.state import (
     CostRecord,
 )
 from scenario_lab.services.persistence_phase import PersistencePhase
-from scenario_lab.services.decision_phase import DecisionPhase
-from scenario_lab.services.world_update_phase import WorldUpdatePhase
+from scenario_lab.services.decision_phase_v2 import DecisionPhaseV2
+from scenario_lab.services.world_update_phase_v2 import WorldUpdatePhaseV2
 from scenario_lab.services.communication_phase import CommunicationPhase
 from scenario_lab.utils.state_persistence import StatePersistence
 

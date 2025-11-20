@@ -36,11 +36,18 @@ from scenario_lab.models.state import (
 # Loader exports
 from scenario_lab.loaders import ScenarioLoader
 
-# Runner exports
-from scenario_lab.runners import SyncRunner
+# Runner exports (lazy import to avoid heavy dependencies for basic usage)
+try:
+    from scenario_lab.runners import SyncRunner
+except ImportError as e:
+    # If any dependencies are missing, set to None
+    SyncRunner = None
 
-# Database exports
-from scenario_lab.database import Database
+# Database exports (lazy import to avoid requiring sqlalchemy for basic usage)
+try:
+    from scenario_lab.database import Database
+except ImportError:
+    Database = None  # Database features not available without sqlalchemy
 
 __all__ = [
     "__version__",

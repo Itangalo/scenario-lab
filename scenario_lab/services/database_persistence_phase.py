@@ -10,15 +10,20 @@ from datetime import datetime
 from typing import Optional
 
 from scenario_lab.models.state import ScenarioState
-from scenario_lab.database.models import (
-    Database,
-    Run,
-    Turn,
-    Decision as DBDecision,
-    Communication as DBCommunication,
-    Metric as DBMetric,
-    Cost as DBCost,
-)
+
+try:
+    from scenario_lab.database.models import (
+        Database,
+        Run,
+        Turn,
+        Decision as DBDecision,
+        Communication as DBCommunication,
+        Metric as DBMetric,
+        Cost as DBCost,
+    )
+    DATABASE_AVAILABLE = True
+except ImportError:
+    DATABASE_AVAILABLE = False
 
 logger = logging.getLogger(__name__)
 
@@ -34,14 +39,18 @@ class DatabasePersistencePhase:
     4. Complements (not replaces) markdown file persistence
     """
 
-    def __init__(self, database: Database):
+    def __init__(self, database=None):
         """
         Initialize database persistence phase
 
         Args:
-            database: Database instance
+            database: Database instance (optional if DATABASE_AVAILABLE is False)
         """
-        self.database = database
+        if not DATABASE_AVAILABLE:
+            logger.warning("Database persistence not available (SQLAlchemy not installed)")
+            self.database = None
+        else:
+            self.database = database
         self._persisted_costs = set()  # Track persisted cost timestamps to avoid duplicates
 
     async def execute(self, state: ScenarioState) -> ScenarioState:
@@ -54,6 +63,10 @@ class DatabasePersistencePhase:
         Returns:
             Same scenario state (persistence doesn't modify state)
         """
+        if not DATABASE_AVAILABLE or self.database is None:
+            logger.debug("Database persistence skipped (not available)")
+            return state
+
         logger.info(f"Executing database persistence for turn {state.turn}")
 
         session = self.database.get_session()

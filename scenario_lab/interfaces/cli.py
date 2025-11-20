@@ -451,6 +451,126 @@ def serve(host: str, port: int, reload: bool) -> None:
         sys.exit(1)
 
 
+@cli.command()
+@click.argument("output_dir", type=click.Path(), required=False)
+def create(output_dir: Optional[str]) -> None:
+    """
+    Create a new scenario using interactive wizard
+
+    OUTPUT_DIR: Optional directory to create scenario in (defaults to ./scenarios/<name>)
+
+    The wizard will guide you through:
+    - Scenario name and description
+    - System prompt configuration
+    - Initial world state
+    - Turn settings (count and duration)
+    - World state model selection
+    - Actor creation (unlimited actors)
+    - Metrics configuration (optional)
+    - Validation rules setup (optional)
+
+    This typically takes 5-10 minutes to complete.
+    """
+    print_header("Scenario Creation Wizard")
+    click.echo()
+    click.echo("This wizard will help you create a complete scenario configuration.")
+    click.echo("You'll be guided through all required and optional components.")
+    click.echo()
+
+    # Check if V1 wizard is available (temporary bridge to V1)
+    try:
+        sys.path.insert(0, str(Path(__file__).parent.parent.parent / "src"))
+        from create_scenario import create_scenario_interactive
+
+        # Run V1 wizard
+        print_section("Starting scenario creation...")
+        result = create_scenario_interactive(output_dir)
+
+        if result:
+            print_success("Scenario created successfully!")
+            click.echo()
+            click.echo(f"📁 Location: {click.style(result, fg='blue')}")
+            click.echo()
+            click.echo("Next steps:")
+            click.echo(f"  1. Review the generated files in {result}")
+            click.echo(f"  2. Customize actor prompts and scenario details as needed")
+            click.echo(f"  3. Validate: {click.style(f'scenario-lab validate {result}', fg='cyan')}")
+            click.echo(f"  4. Run: {click.style(f'scenario-lab run {result}', fg='cyan')}")
+        else:
+            print_error("Scenario creation cancelled or failed")
+            sys.exit(1)
+
+    except ImportError as e:
+        print_error(
+            "Scenario wizard not available",
+            str(e),
+            "The V1 wizard module could not be loaded"
+        )
+        sys.exit(1)
+    except Exception as e:
+        print_error("Scenario creation failed", str(e))
+        sys.exit(1)
+
+
+@cli.command()
+@click.argument("output_path", type=click.Path(), required=False)
+def create_batch(output_path: Optional[str]) -> None:
+    """
+    Create a batch configuration using interactive wizard
+
+    OUTPUT_PATH: Optional path to save config (defaults to ./batch-configs/<name>.yaml)
+
+    The wizard will guide you through:
+    - Experiment name and description
+    - Base scenario selection
+    - Parameter variations (actor models, scenario parameters)
+    - Execution settings (parallel workers, runs per variation)
+    - Budget limits (total and per-run)
+    - Output directory configuration
+
+    This typically takes 3-5 minutes to complete.
+    """
+    print_header("Batch Configuration Wizard")
+    click.echo()
+    click.echo("This wizard will help you create a batch experiment configuration.")
+    click.echo("You'll define variations to test and execution parameters.")
+    click.echo()
+
+    # Check if V1 wizard is available (temporary bridge to V1)
+    try:
+        sys.path.insert(0, str(Path(__file__).parent.parent.parent / "src"))
+        from create_batch_config import create_batch_config_interactive
+
+        # Run V1 wizard
+        print_section("Starting batch config creation...")
+        result = create_batch_config_interactive(output_path)
+
+        if result:
+            print_success("Batch configuration created successfully!")
+            click.echo()
+            click.echo(f"📁 Location: {click.style(result, fg='blue')}")
+            click.echo()
+            click.echo("Next steps:")
+            click.echo(f"  1. Review the generated configuration: {result}")
+            click.echo(f"  2. Adjust variations or limits as needed")
+            click.echo(f"  3. Preview: {click.style(f'python -m scenario_lab.batch.batch_runner {result} --dry-run', fg='cyan')}")
+            click.echo(f"  4. Execute: {click.style(f'python -m scenario_lab.batch.batch_runner {result}', fg='cyan')}")
+        else:
+            print_error("Batch config creation cancelled or failed")
+            sys.exit(1)
+
+    except ImportError as e:
+        print_error(
+            "Batch config wizard not available",
+            str(e),
+            "The V1 wizard module could not be loaded"
+        )
+        sys.exit(1)
+    except Exception as e:
+        print_error("Batch config creation failed", str(e))
+        sys.exit(1)
+
+
 def main() -> None:
     """Entry point for CLI"""
     cli()

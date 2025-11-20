@@ -1,10 +1,14 @@
 # Scenario Lab
 
+**Version 2.0** - Modern architecture with pure Python package, CLI tools, and REST API
+
 ## Overview
 
 An experimental framework for exploring complex policy and strategic questions through AI-automated scenario exercises. The system enables multi-actor simulations where AI agents interact in dynamic environments, providing both statistical insights from batch runs and deep qualitative analysis of decision-making patterns.
 
 The primary focus is exploring AI-related policy questions and strategic challenges through simulation, testing how different actors, policies, and interventions perform across diverse scenarios—including unexpected black swan events.
+
+> **Note:** Version 2.0 represents a complete architectural modernization. The codebase now uses a clean Python package structure (`scenario_lab/`) with CLI commands, REST API, and improved maintainability. Legacy V1 code remains in `src/` for reference but is no longer actively used.
 
 ## Core Principles
 
@@ -454,7 +458,7 @@ cp .env.example .env
 Use the interactive scenario creation wizard to build custom scenarios:
 
 ```bash
-python src/create_scenario.py
+scenario-lab create
 ```
 
 The wizard guides you through creating:
@@ -467,7 +471,7 @@ The wizard guides you through creating:
 **Example workflow:**
 ```bash
 # Create a new scenario interactively
-python src/create_scenario.py
+scenario-lab create
 
 # Answer the wizard's questions to define:
 #   - Scenario name and context
@@ -492,7 +496,7 @@ See [Scenario Creation Guide](docs/scenario-creation-guide.md) for detailed inst
 Run the test scenario:
 
 ```bash
-python src/run_scenario.py scenarios/test-regulation-negotiation
+scenario-lab run scenarios/test-regulation-negotiation
 ```
 
 Output will be saved to `output/test-regulation-negotiation/run-001/` (subsequent runs auto-increment to run-002, run-003, etc.)
@@ -516,18 +520,18 @@ Scenario runs can be stopped and resumed, enabling graceful handling of API rate
 
 **Stop at a specific turn:**
 ```bash
-python src/run_scenario.py scenarios/test-regulation-negotiation --end-turn 2
+scenario-lab run scenarios/test-regulation-negotiation --end-turn 2
 ```
 
 **Set a budget limit:**
 ```bash
-python src/run_scenario.py scenarios/test-regulation-negotiation --credit-limit 0.50
+scenario-lab run scenarios/test-regulation-negotiation --credit-limit 0.50
 ```
 The scenario will halt if total cost exceeds $0.50.
 
 **Resume a halted scenario:**
 ```bash
-python src/run_scenario.py --resume output/test-regulation-negotiation/run-003
+scenario-lab run --resume output/test-regulation-negotiation/run-003
 ```
 
 **How it works:**
@@ -550,7 +554,7 @@ Create alternative scenario paths by branching from any completed turn. This ena
 
 **Branch from an existing run:**
 ```bash
-python src/run_scenario.py --branch-from output/test-regulation-negotiation/run-001 --branch-at-turn 2
+scenario-lab run --branch-from output/test-regulation-negotiation/run-001 --branch-at-turn 2
 ```
 
 **How it works:**
@@ -569,13 +573,13 @@ python src/run_scenario.py --branch-from output/test-regulation-negotiation/run-
 **Example workflow:**
 ```bash
 # Run initial scenario
-python src/run_scenario.py scenarios/test-regulation-negotiation
+scenario-lab run scenarios/test-regulation-negotiation
 
 # Branch from turn 2 of run-001
-python src/run_scenario.py --branch-from output/test-regulation-negotiation/run-001 --branch-at-turn 2
+scenario-lab run --branch-from output/test-regulation-negotiation/run-001 --branch-at-turn 2
 
 # Continue the branch with modified scenario or actors
-python src/run_scenario.py --resume output/test-regulation-negotiation/run-002
+scenario-lab run --resume output/test-regulation-negotiation/run-002
 ```
 
 ### Batch Execution
@@ -586,7 +590,7 @@ Run multiple scenario variations for statistical analysis. The batch system enab
 
 ```bash
 # Interactive wizard with validation and model suggestions
-python src/create_batch_config.py --interactive
+scenario-lab create-batch
 
 # Follow the prompts to:
 # - Select scenario
@@ -624,7 +628,7 @@ output_dir: "experiments/model-comparison"
 
 ```bash
 # See what will execute without actually running
-python src/batch_runner.py experiments/model-comparison/batch-config.yaml --dry-run
+python -m scenario_lab.batch.batch_runner experiments/model-comparison/batch-config.yaml --dry-run
 
 # Shows:
 # - Variation count and total runs
@@ -636,14 +640,14 @@ python src/batch_runner.py experiments/model-comparison/batch-config.yaml --dry-
 **Run the batch:**
 
 ```bash
-python src/batch_runner.py experiments/model-comparison/batch-config.yaml
+python -m scenario_lab.batch.batch_runner experiments/model-comparison/batch-config.yaml
 ```
 
 **Analyze results:**
 
 ```bash
 # Generate analysis report
-python src/batch_analyzer.py experiments/model-comparison/ --report
+python -m scenario_lab.batch.batch_analyzer experiments/model-comparison/ --report
 
 # View results
 cat experiments/model-comparison/analysis/analysis-report.md
@@ -660,7 +664,7 @@ cat experiments/model-comparison/analysis/analysis-report.md
 **Resume interrupted batches:**
 
 ```bash
-python src/batch_runner.py experiments/model-comparison/batch-config.yaml --resume
+python -m scenario_lab.batch.batch_runner experiments/model-comparison/batch-config.yaml --resume
 ```
 
 **Features:**

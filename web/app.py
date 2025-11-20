@@ -2,7 +2,22 @@
 """
 Scenario Lab Web Server - FastAPI backend for human interaction
 
-Provides:
+⚠️ DEPRECATED: This V1 web backend is deprecated in favor of the V2 API.
+
+Please use the V2 API instead:
+  - Start server: scenario-lab serve
+  - Location: scenario_lab/api/app.py
+  - Docs: http://localhost:8000/docs
+
+This file will be removed in a future version. It uses legacy V1 components
+from src/ and is no longer maintained. The React frontend has been updated
+to use the V2 API exclusively.
+
+See docs/PHASE_5_WEB_INTEGRATION.md for migration details.
+
+---
+
+Legacy functionality (V1):
 - REST API for scenario control
 - WebSocket for real-time updates
 - Static file serving for markdown files

@@ -204,17 +204,12 @@ def parse_decision_with_fallback(content: str) -> Dict[str, str]:
 
         return result
 
-    # Fallback to V1 markdown parsing
-    logger.debug("JSON parsing failed, falling back to markdown parser")
+    # Fallback to V2 markdown parsing
+    logger.debug("JSON parsing failed, falling back to V2 markdown parser")
 
-    # Import V1 parser
-    import sys
-    from pathlib import Path
+    from scenario_lab.utils.response_parser import parse_decision_markdown
 
-    sys.path.insert(0, str(Path(__file__).parent.parent.parent / "src"))
-    from response_parser import parse_actor_decision
-
-    return parse_actor_decision(content)
+    return parse_decision_markdown(content)
 
 
 def format_json_prompt_instructions() -> str:

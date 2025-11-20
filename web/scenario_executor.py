@@ -1,15 +1,23 @@
 """
 Scenario Executor for Web Interface
 
-Wraps scenario execution with web API integration:
+⚠️ DEPRECATED: This V1 scenario executor is deprecated.
+
+Please use the V2 components instead:
+  - V2 Runner: scenario_lab.runners.SyncRunner
+  - V2 API: scenario_lab/api/app.py
+
+This file will be removed in a future version. It uses legacy V1 components
+from src/ and is no longer maintained.
+
+See docs/PHASE_5_WEB_INTEGRATION.md for migration details.
+
+---
+
+Legacy functionality (V1):
 - Pauses for human actor decisions
 - Sends WebSocket updates
 - Handles async execution
-
-NOTE: This is a Phase 3 implementation that simulates execution flow.
-Phase 2.1 will integrate with the actual run_scenario.py components.
-
-Phase 2.0 Update: Now uses Pydantic schemas for validation.
 """
 import asyncio
 import yaml
