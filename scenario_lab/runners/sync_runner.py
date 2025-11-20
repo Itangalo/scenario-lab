@@ -1,34 +1,23 @@
 """
 Synchronous Runner for Scenario Lab V2
 
-Wires together all V1 components with V2 architecture to execute scenarios.
+Pure V2 implementation using V2 phases and components.
 """
 from __future__ import annotations
-import sys
 import os
 import logging
+import yaml
 from pathlib import Path
 from typing import Optional
-
-# Add V1 src directory to path for imports
-sys.path.insert(0, str(Path(__file__).parent.parent.parent / "src"))
-
-from world_state import WorldState as V1WorldState
-from world_state_updater import WorldStateUpdater
-from context_manager import ContextManager
-from communication_manager import CommunicationManager
-from cost_tracker import CostTracker
-from metrics_tracker import MetricsTracker
-from qa_validator import QAValidator
-from exogenous_events import ExogenousEventManager
-import yaml
 
 from scenario_lab.loaders import ScenarioLoader
 from scenario_lab.core.orchestrator import ScenarioOrchestrator, PhaseType
 from scenario_lab.core.events import EventBus
+from scenario_lab.core.metrics_tracker import MetricsTracker
+from scenario_lab.core.qa_validator import QAValidator
 from scenario_lab.services.communication_phase import CommunicationPhase
-from scenario_lab.services.decision_phase import DecisionPhase
-from scenario_lab.services.world_update_phase import WorldUpdatePhase
+from scenario_lab.services.decision_phase_v2 import DecisionPhaseV2
+from scenario_lab.services.world_update_phase_v2 import WorldUpdatePhaseV2
 from scenario_lab.services.persistence_phase import PersistencePhase
 from scenario_lab.services.database_persistence_phase import DatabasePersistencePhase
 from scenario_lab.models.state import ScenarioState
@@ -46,14 +35,13 @@ logger = logging.getLogger(__name__)
 
 class SyncRunner:
     """
-    Synchronous runner that wires V1 and V2 components together
+    Synchronous runner using pure V2 components
 
     This runner:
     1. Loads scenario configuration
-    2. Initializes V1 components (for backwards compatibility)
-    3. Initializes V2 phase services
-    4. Wires phases to orchestrator
-    5. Executes scenario
+    2. Initializes V2 components and phases
+    3. Wires phases to orchestrator
+    4. Executes scenario using V2 pipeline
     """
 
     def __init__(
@@ -98,19 +86,11 @@ class SyncRunner:
         self.scenario_config: Optional[dict] = None
         self.actors: Optional[dict] = None
 
-        # V1 components
-        self.v1_world_state: Optional[V1WorldState] = None
-        self.context_manager: Optional[ContextManager] = None
-        self.communication_manager: Optional[CommunicationManager] = None
-        self.world_state_updater: Optional[WorldStateUpdater] = None
-        self.cost_tracker: Optional[CostTracker] = None
-        self.metrics_tracker: Optional[MetricsTracker] = None
-        self.qa_validator: Optional[QAValidator] = None
-        self.exogenous_event_manager: Optional[ExogenousEventManager] = None
-
         # V2 components
         self.event_bus: Optional[EventBus] = None
         self.orchestrator: Optional[ScenarioOrchestrator] = None
+        self.metrics_tracker: Optional[MetricsTracker] = None
+        self.qa_validator: Optional[QAValidator] = None
 
     def _default_output_path(self) -> str:
         """Generate default output path"""
@@ -136,9 +116,6 @@ class SyncRunner:
             logger.info(f"Branching from {self.branch_from} at turn {self.branch_at_turn}")
             self._load_branch_state()
 
-        # Initialize V1 components
-        self._init_v1_components()
-
         # Initialize V2 components
         self._init_v2_components()
 
@@ -146,63 +123,6 @@ class SyncRunner:
         self._wire_phases()
 
         logger.info("Setup complete")
-
-    def _init_v1_components(self) -> None:
-        """Initialize V1 components for backwards compatibility"""
-
-        # World state
-        self.v1_world_state = V1WorldState(
-            initial_state=self.scenario_config["initial_world_state"],
-            scenario_name=self.scenario_config["name"],
-            turn_duration=self.scenario_config.get("turn_duration", "1 day")
-        )
-
-        # Communication manager
-        actor_names = [actor.name for actor in self.actors.values()]
-        self.communication_manager = CommunicationManager(actor_names)
-
-        # Context manager
-        self.context_manager = ContextManager(
-            window_size=self.scenario_config.get("context_window", 3)
-        )
-
-        # World state updater
-        world_state_model = self.scenario_config.get(
-            "world_state_model", "alibaba/tongyi-deepresearch-30b-a3b:free"
-        )
-        self.world_state_updater = WorldStateUpdater(model=world_state_model)
-
-        # Cost tracker
-        self.cost_tracker = CostTracker()
-
-        # Metrics tracker (if metrics.yaml exists)
-        metrics_file = Path(self.scenario_path) / "metrics.yaml"
-        if metrics_file.exists():
-            self.metrics_tracker = MetricsTracker(str(metrics_file))
-        else:
-            self.metrics_tracker = MetricsTracker(None)
-
-        # QA validator (if validation-rules.yaml exists)
-        validation_file = Path(self.scenario_path) / "validation-rules.yaml"
-        if validation_file.exists():
-            import os
-            api_key = os.getenv("OPENROUTER_API_KEY", "")
-            self.qa_validator = QAValidator(
-                scenario_path=str(self.scenario_path),
-                api_key=api_key
-            )
-        else:
-            self.qa_validator = None
-
-        # Exogenous events manager (if exogenous-events.yaml exists)
-        events_file = Path(self.scenario_path) / "exogenous-events.yaml"
-        if events_file.exists():
-            with open(events_file, "r") as f:
-                events_data = yaml.safe_load(f)
-            events_config = events_data.get("exogenous_events", [])
-            self.exogenous_event_manager = ExogenousEventManager(events_config)
-        else:
-            self.exogenous_event_manager = None
 
     def _init_v2_components(self) -> None:
         """Initialize V2 components"""
@@ -219,43 +139,70 @@ class SyncRunner:
             save_state_every_turn=True,
         )
 
+        # Metrics tracker (if metrics.yaml exists)
+        metrics_file = Path(self.scenario_path) / "metrics.yaml"
+        if metrics_file.exists():
+            self.metrics_tracker = MetricsTracker(str(metrics_file))
+        else:
+            self.metrics_tracker = None
+
+        # QA validator (if validation-rules.yaml exists)
+        validation_file = Path(self.scenario_path) / "validation-rules.yaml"
+        if validation_file.exists():
+            api_key = os.getenv("OPENROUTER_API_KEY", "")
+            self.qa_validator = QAValidator(
+                scenario_path=str(self.scenario_path),
+                api_key=api_key
+            )
+        else:
+            self.qa_validator = None
+
     def _wire_phases(self) -> None:
         """Wire phase services to orchestrator"""
 
-        # Communication phase
+        # Communication phase (V2)
         communication_phase = CommunicationPhase(
-            actors=self.actors,
-            context_manager=self.context_manager,
-            v1_world_state=self.v1_world_state,
-            communication_manager=self.communication_manager,
-            cost_tracker=self.cost_tracker,
+            output_dir=self.output_path,
         )
         self.orchestrator.register_phase(PhaseType.COMMUNICATION, communication_phase)
 
-        # Decision phase
-        decision_phase = DecisionPhase(
-            actors=self.actors,
-            context_manager=self.context_manager,
-            v1_world_state=self.v1_world_state,
-            communication_manager=self.communication_manager,
-            metrics_tracker=self.metrics_tracker,
-            qa_validator=self.qa_validator,
+        # Decision phase (V2)
+        # Convert actors dict to actor_configs dict (V2 Actor → dict)
+        actor_configs = {}
+        for short_name, actor in self.actors.items():
+            # Actor is a V2 Actor dataclass, convert to dict for DecisionPhaseV2
+            actor_configs[short_name] = {
+                "name": actor.name,
+                "short_name": actor.short_name,
+                "llm_model": actor.llm_model,
+                "system_prompt": actor.system_prompt,
+                "description": actor.description,
+                "goals": actor.goals,
+                "constraints": actor.constraints,
+                "expertise": actor.expertise,
+                "decision_style": actor.decision_style,
+            }
+
+        decision_phase = DecisionPhaseV2(
+            actor_configs=actor_configs,
+            scenario_system_prompt=self.scenario_config.get("system_prompt", ""),
             output_dir=self.output_path,
+            json_mode=self.json_mode,
+            context_window_size=self.scenario_config.get("context_window", 3),
+            metrics_tracker=self.metrics_tracker,
         )
         self.orchestrator.register_phase(PhaseType.DECISION, decision_phase)
 
-        # World update phase
-        world_update_phase = WorldUpdatePhase(
-            world_state_updater=self.world_state_updater,
-            v1_world_state=self.v1_world_state,
+        # World update phase (V2)
+        world_state_model = self.scenario_config.get(
+            "world_state_model", "openai/gpt-4o-mini"
+        )
+        world_update_phase = WorldUpdatePhaseV2(
             scenario_name=self.scenario_config["name"],
-            world_state_model=self.scenario_config.get(
-                "world_state_model", "alibaba/tongyi-deepresearch-30b-a3b:free"
-            ),
+            world_state_model=world_state_model,
+            output_dir=self.output_path,
             metrics_tracker=self.metrics_tracker,
             qa_validator=self.qa_validator,
-            exogenous_event_manager=self.exogenous_event_manager,
-            output_dir=self.output_path,
         )
         self.orchestrator.register_phase(PhaseType.WORLD_UPDATE, world_update_phase)
 
