@@ -3,12 +3,12 @@ World Update Phase Service for Scenario Lab V2
 
 Synthesizes new world state from actor decisions using V2 components (no V1 dependencies).
 
-Phase 1.3 Implementation:
+Phase 1.3 Implementation + Phase 3.3 Enhancement:
 - Uses V2 WorldSynthesizer for prompt building
 - Uses V2 API client for LLM calls
 - Updates ScenarioState.world_state immutably
 - Tracks costs via ScenarioState
-- Defers metrics extraction to Phase 3.3 (stub)
+- ✅ Phase 3.3: Metrics extraction from world state
 - Defers QA validation to Phase 3.4 (stub)
 - Defers exogenous events to Phase 3 (stub)
 """
@@ -48,6 +48,7 @@ class WorldUpdatePhaseV2:
         scenario_name: str,
         world_state_model: str = "openai/gpt-4o-mini",
         output_dir: Optional[str] = None,
+        metrics_tracker: Optional[Any] = None,  # MetricsTracker from Phase 3.3
     ):
         """
         Initialize world update phase
@@ -56,11 +57,13 @@ class WorldUpdatePhaseV2:
             scenario_name: Name of the scenario
             world_state_model: LLM model for world state synthesis
             output_dir: Optional directory to save world state markdown files
+            metrics_tracker: Optional MetricsTracker for metrics extraction
         """
         self.scenario_name = scenario_name
         self.world_state_model = world_state_model
         self.output_dir = Path(output_dir) if output_dir else None
         self.api_key = os.environ.get('OPENROUTER_API_KEY')
+        self.metrics_tracker = metrics_tracker  # Phase 3.3
 
         # Create synthesizer
         self.synthesizer = WorldSynthesizer(
@@ -166,12 +169,19 @@ class WorldUpdatePhaseV2:
         )
         state = state.with_cost(cost_record)
 
-        logger.info(
-            f"  ✓ World state updated: {llm_response.tokens_used:,} tokens "
+        logger.info(f"  ✓ World state updated: {llm_response.tokens_used:,} tokens "
             f"(${cost_amount:.4f})"
         )
         logger.info(f"  ✓ {len(parsed['key_changes'])} key changes identified")
         logger.info(f"  ✓ {len(parsed['consequences'])} consequences noted")
+
+        # Phase 3.3: Extract metrics from world state
+        if self.metrics_tracker:
+            metrics = self.metrics_tracker.extract_metrics_from_world_state(state)
+            if metrics:
+                for metric in metrics:
+                    state = state.with_metric(metric)
+                logger.info(f"  ✓ Extracted {len(metrics)} metrics from world state")
 
         # Write world state to markdown file
         if self.output_dir:

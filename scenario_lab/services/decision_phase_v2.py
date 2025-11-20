@@ -52,6 +52,7 @@ class DecisionPhaseV2:
         output_dir: Optional[str] = None,
         json_mode: bool = False,
         context_window_size: int = 3,
+        metrics_tracker: Optional[Any] = None,  # MetricsTracker from Phase 3.3
     ):
         """
         Initialize decision phase
@@ -61,6 +62,7 @@ class DecisionPhaseV2:
             scenario_system_prompt: System prompt from scenario configuration
             output_dir: Optional directory to save decision markdown files
             json_mode: Whether to use JSON response format (default: False)
+            metrics_tracker: Optional MetricsTracker for metrics extraction
             context_window_size: Number of recent turns to keep in full detail (default: 3)
         """
         self.actor_configs = actor_configs
@@ -68,6 +70,7 @@ class DecisionPhaseV2:
         self.output_dir = Path(output_dir) if output_dir else None
         self.json_mode = json_mode
         self.api_key = os.environ.get('OPENROUTER_API_KEY')
+        self.metrics_tracker = metrics_tracker  # Phase 3.3
 
         # Create context manager for windowing
         self.context_manager = ContextManagerV2(
@@ -189,6 +192,14 @@ class DecisionPhaseV2:
             # Write decision to markdown file
             if self.output_dir:
                 self._write_decision_file(actor_short_name, actor_name, state.turn, parsed)
+
+        # Phase 3.3: Extract metrics from all decisions after all actors have decided
+        if self.metrics_tracker:
+            metrics = self.metrics_tracker.extract_metrics_from_decisions(state)
+            if metrics:
+                for metric in metrics:
+                    state = state.with_metric(metric)
+                logger.info(f"  ✓ Extracted {len(metrics)} metrics from actor decisions")
 
         return state
 
