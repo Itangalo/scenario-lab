@@ -10,11 +10,11 @@ import yaml
 from pathlib import Path
 from typing import Optional
 
-from scenario_lab.loaders import ScenarioLoader, load_metrics_config
+from scenario_lab.loaders import ScenarioLoader, load_metrics_config, load_validation_config
 from scenario_lab.core.orchestrator import ScenarioOrchestrator, PhaseType
 from scenario_lab.core.events import EventBus
 from scenario_lab.core.metrics_tracker_v2 import MetricsTrackerV2
-from scenario_lab.core.qa_validator import QAValidator
+from scenario_lab.core.qa_validator_v2 import QAValidatorV2
 from scenario_lab.services.communication_phase import CommunicationPhase
 from scenario_lab.services.decision_phase_v2 import DecisionPhaseV2
 from scenario_lab.services.world_update_phase_v2 import WorldUpdatePhaseV2
@@ -90,7 +90,7 @@ class SyncRunner:
         self.event_bus: Optional[EventBus] = None
         self.orchestrator: Optional[ScenarioOrchestrator] = None
         self.metrics_tracker: Optional[MetricsTrackerV2] = None
-        self.qa_validator: Optional[QAValidator] = None
+        self.qa_validator: Optional[QAValidatorV2] = None
 
     def _default_output_path(self) -> str:
         """Generate default output path"""
@@ -151,12 +151,13 @@ class SyncRunner:
         else:
             self.metrics_tracker = None
 
-        # QA validator (if validation-rules.yaml exists)
+        # QA validator V2 (if validation-rules.yaml exists)
         validation_file = Path(self.scenario_path) / "validation-rules.yaml"
-        if validation_file.exists():
+        validation_config = load_validation_config(validation_file)
+        if validation_config:
             api_key = os.getenv("OPENROUTER_API_KEY", "")
-            self.qa_validator = QAValidator(
-                validation_rules_path=validation_file,
+            self.qa_validator = QAValidatorV2(
+                validation_config=validation_config,
                 api_key=api_key
             )
         else:
