@@ -49,6 +49,7 @@ class StatePersistence:
             "run_id": state.run_id,
             "turn": state.turn,
             "status": state.status.value,
+            "scenario_config": state.scenario_config,  # Save scenario configuration
             "world_state": {
                 "turn": state.world_state.turn,
                 "content": state.world_state.content,
@@ -211,6 +212,7 @@ class StatePersistence:
             run_id=state_dict["run_id"],
             turn=state_dict["turn"],
             status=ScenarioStatus(state_dict["status"]),
+            scenario_config=state_dict.get("scenario_config", {}),  # Load scenario configuration
             world_state=world_state,
             actors=actors,
             decisions=decisions,

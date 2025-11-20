@@ -181,6 +181,7 @@ class ScenarioState:
     scenario_name: str
     run_id: str
     status: ScenarioStatus = ScenarioStatus.CREATED
+    scenario_config: Dict[str, Any] = field(default_factory=dict)  # Scenario configuration (loaded from YAML)
 
     # Execution state
     turn: int = 0

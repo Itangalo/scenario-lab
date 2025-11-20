@@ -139,6 +139,7 @@ class ScenarioLoader:
             scenario_id=self.scenario_config["name"],
             scenario_name=self.scenario_config["name"],
             run_id=run_id,
+            scenario_config=self.scenario_config,  # Store scenario configuration
             world_state=initial_world_state,
             actors=actor_states,
             status=ScenarioStatus.CREATED,

@@ -1,140 +1,113 @@
 """
-Model pricing database for Scenario Lab
+Model Pricing for Scenario Lab V2
 
-Provides pricing information for LLM models to enable cost estimation.
-Prices are in USD per million tokens.
+Calculates costs for LLM API calls based on model and token usage.
+Pricing data based on OpenRouter pricing as of early 2025.
 """
-from typing import Dict, Tuple, Optional
+from typing import Dict, Tuple
 
 
-# Model pricing: (input_price_per_million, output_price_per_million)
+# Pricing per 1M tokens (input, output) for common models
+# Format: "model_identifier": (input_cost_per_1m, output_cost_per_1m)
 MODEL_PRICING: Dict[str, Tuple[float, float]] = {
     # OpenAI models
     "openai/gpt-4o": (2.50, 10.00),
-    "openai/gpt-4o-mini": (0.150, 0.600),
+    "openai/gpt-4o-mini": (0.15, 0.60),
     "openai/gpt-4-turbo": (10.00, 30.00),
-    "openai/gpt-4": (30.00, 60.00),
     "openai/gpt-3.5-turbo": (0.50, 1.50),
 
     # Anthropic models
-    "anthropic/claude-3-5-sonnet": (3.00, 15.00),
+    "anthropic/claude-3.5-sonnet": (3.00, 15.00),
     "anthropic/claude-3-opus": (15.00, 75.00),
     "anthropic/claude-3-sonnet": (3.00, 15.00),
     "anthropic/claude-3-haiku": (0.25, 1.25),
 
     # Google models
     "google/gemini-pro": (0.50, 1.50),
-    "google/gemini-1.5-pro": (1.25, 5.00),
-    "google/gemini-1.5-flash": (0.075, 0.30),
+    "google/gemini-pro-1.5": (3.50, 10.50),
+    "google/gemini-flash": (0.075, 0.30),
 
-    # Meta models (via providers)
-    "meta-llama/llama-3.1-70b": (0.35, 0.40),
-    "meta-llama/llama-3.1-8b": (0.055, 0.08),
-    "meta-llama/llama-3-70b": (0.59, 0.79),
+    # Meta Llama
+    "meta-llama/llama-3.1-405b-instruct": (2.70, 2.70),
+    "meta-llama/llama-3.1-70b-instruct": (0.52, 0.75),
+    "meta-llama/llama-3.1-8b-instruct": (0.06, 0.06),
 
-    # Mistral models
-    "mistralai/mistral-large": (2.00, 6.00),
+    # Mistral
+    "mistralai/mistral-large": (4.00, 12.00),
     "mistralai/mistral-medium": (2.70, 8.10),
-    "mistralai/mistral-small": (0.20, 0.60),
+    "mistralai/mixtral-8x7b": (0.54, 0.54),
 
-    # DeepSeek models
-    "deepseek/deepseek-chat": (0.14, 0.28),
-    "deepseek/deepseek-coder": (0.14, 0.28),
+    # Alibaba (free models on OpenRouter)
+    "alibaba/tongyi-deepresearch-30b-a3b:free": (0.00, 0.00),
+    "alibaba/qwen-2.5-72b-instruct:free": (0.00, 0.00),
 
-    # Alibaba models (OpenRouter)
-    "alibaba/tongyi-deepresearch-30b-a3b": (0.00, 0.00),  # Free tier
-
-    # Local models (Ollama) - zero cost
-    "ollama/llama3": (0.00, 0.00),
-    "ollama/llama3.1": (0.00, 0.00),
-    "ollama/deepseek-r1:8b": (0.00, 0.00),
-    "ollama/mistral": (0.00, 0.00),
-    "ollama/qwen2.5": (0.00, 0.00),
+    # Local models (no cost)
+    "ollama": (0.00, 0.00),
+    "local": (0.00, 0.00),
 }
 
 
-def get_model_pricing(model: str) -> Optional[Tuple[float, float]]:
+def calculate_cost(model: str, input_tokens: int, output_tokens: int) -> float:
     """
-    Get pricing for a model
+    Calculate cost for an LLM API call
 
     Args:
         model: Model identifier (e.g., "openai/gpt-4o-mini")
-
-    Returns:
-        Tuple of (input_price_per_million, output_price_per_million) or None if unknown
-    """
-    # Direct lookup
-    if model in MODEL_PRICING:
-        return MODEL_PRICING[model]
-
-    # Try without provider prefix
-    model_lower = model.lower()
-    for known_model in MODEL_PRICING:
-        if known_model.lower().endswith(model_lower.split('/')[-1]):
-            return MODEL_PRICING[known_model]
-
-    # Unknown model
-    return None
-
-
-def estimate_cost(input_tokens: int, output_tokens: int, model: str) -> float:
-    """
-    Estimate cost for a model call
-
-    Args:
         input_tokens: Number of input tokens
         output_tokens: Number of output tokens
-        model: Model identifier
 
     Returns:
-        Estimated cost in USD
+        Cost in USD
     """
-    pricing = get_model_pricing(model)
-    if pricing is None:
-        # Unknown model - use gpt-4o-mini pricing as conservative estimate
-        pricing = MODEL_PRICING["openai/gpt-4o-mini"]
+    # Handle local models
+    if model.startswith("ollama/") or model.startswith("local/"):
+        return 0.0
 
-    input_price, output_price = pricing
+    # Look up pricing
+    if model in MODEL_PRICING:
+        input_cost_per_1m, output_cost_per_1m = MODEL_PRICING[model]
+    else:
+        # Default pricing if model not found (assume gpt-4o-mini pricing)
+        input_cost_per_1m, output_cost_per_1m = 0.15, 0.60
 
     # Calculate cost
-    input_cost = (input_tokens / 1_000_000) * input_price
-    output_cost = (output_tokens / 1_000_000) * output_price
+    input_cost = (input_tokens / 1_000_000) * input_cost_per_1m
+    output_cost = (output_tokens / 1_000_000) * output_cost_per_1m
 
     return input_cost + output_cost
 
 
-def is_expensive_model(model: str, threshold: float = 5.0) -> bool:
+def get_model_pricing(model: str) -> Tuple[float, float]:
     """
-    Check if a model is considered expensive
-
-    Args:
-        model: Model identifier
-        threshold: Price threshold in USD per million output tokens
-
-    Returns:
-        True if model output pricing exceeds threshold
-    """
-    pricing = get_model_pricing(model)
-    if pricing is None:
-        return False
-
-    _, output_price = pricing
-    return output_price >= threshold
-
-
-def is_free_model(model: str) -> bool:
-    """
-    Check if a model is free (local or free tier)
+    Get pricing information for a model
 
     Args:
         model: Model identifier
 
     Returns:
-        True if model has zero cost
+        Tuple of (input_cost_per_1m, output_cost_per_1m)
     """
-    pricing = get_model_pricing(model)
-    if pricing is None:
-        return False
+    # Handle local models
+    if model.startswith("ollama/") or model.startswith("local/"):
+        return (0.0, 0.0)
 
-    input_price, output_price = pricing
-    return input_price == 0.0 and output_price == 0.0
+    return MODEL_PRICING.get(model, (0.15, 0.60))
+
+
+def estimate_cost(
+    model: str,
+    estimated_input_tokens: int,
+    estimated_output_tokens: int
+) -> float:
+    """
+    Estimate cost for a planned LLM call
+
+    Args:
+        model: Model identifier
+        estimated_input_tokens: Estimated number of input tokens
+        estimated_output_tokens: Estimated number of output tokens
+
+    Returns:
+        Estimated cost in USD
+    """
+    return calculate_cost(model, estimated_input_tokens, estimated_output_tokens)
