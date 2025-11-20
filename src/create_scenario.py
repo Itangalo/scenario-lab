@@ -24,6 +24,34 @@ class Colors:
     END = '\033[0m'
 
 
+# Metrics instructions template (auto-injected when metrics.yaml is created)
+METRICS_INSTRUCTIONS = """
+**CRITICAL: Metrics Tracking**
+
+This scenario tracks quantitative metrics that must be updated every turn.
+
+REQUIREMENTS:
+1. You MUST include an **UPDATED METRICS:** section in every world state update
+2. List ALL metrics defined in metrics.yaml with current values
+3. Show realistic changes based on this turn's events and actions
+4. Use this format:
+   - Metric Name: XX.X% (+/-X.X)
+   - Another Metric: YY.Y units (+/-Y.Y)
+
+For election scenarios with opinion polls:
+- List ALL parties with updated support percentages
+- Changes should be gradual and realistic (rarely >1-2% per month)
+- Show direction of change from previous turn
+
+Example for election scenario:
+**UPDATED METRICS:**
+- Socialdemokraterna (S): 34.1% (+0.3)
+- Moderaterna (M): 18.2% (-0.3)
+- Sverigedemokraterna (SD): 20.5% (+0.1)
+[Continue for all tracked parties/metrics]
+""".strip()
+
+
 def print_header(text: str):
     """Print a header with formatting"""
     print(f"\n{Colors.BOLD}{Colors.BLUE}{'='*70}{Colors.END}")
@@ -629,6 +657,19 @@ strategic positioning, and consideration of stakeholder interests.""")
                     metric_config = create_metric_interactive()
                     metrics_dict['metrics'][metric_name] = metric_config
                     print_success(f"Added metric: {metric_name}")
+
+        # Auto-inject metrics instructions into system prompt if metrics were configured
+        if metrics_dict.get('metrics'):
+            print()
+            print_info(f"📊 {len(metrics_dict['metrics'])} metrics configured")
+
+            # Check if user already has metrics instructions (advanced override)
+            if "UPDATED METRICS" not in scenario['system_prompt']:
+                scenario['system_prompt'] += "\n\n" + METRICS_INSTRUCTIONS
+                print_success("Auto-injected metrics tracking instructions into scenario system prompt")
+                print_info("   (Advanced users can edit scenario.yaml to customize these instructions)")
+            else:
+                print_info("Detected custom metrics instructions in system prompt - keeping those")
 
         # ============================================================
         # VALIDATION RULES

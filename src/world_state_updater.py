@@ -37,7 +37,8 @@ class WorldStateUpdater:
         total_turns: int,
         actor_decisions: Dict[str, Dict[str, Any]],
         scenario_name: str,
-        exogenous_events: list = None
+        exogenous_events: list = None,
+        has_metrics: bool = False
     ) -> Dict[str, Any]:
         """
         Generate updated world state based on actor decisions and exogenous events
@@ -49,6 +50,7 @@ class WorldStateUpdater:
             actor_decisions: Dict of {actor_name: {reasoning, action}} for this turn
             scenario_name: Name of the scenario
             exogenous_events: List of events occurring independently of actors (optional)
+            has_metrics: If True, will ensure UPDATED METRICS section is present (optional)
 
         Returns:
             Dict with 'updated_state' (str) and 'metadata' (dict) keys
@@ -58,7 +60,7 @@ class WorldStateUpdater:
             current_state, turn, total_turns, actor_decisions, exogenous_events
         )
 
-        response = self._call_llm(system_prompt, user_prompt)
+        response = self._call_llm(system_prompt, user_prompt, metrics_required=has_metrics)
 
         return {
             'updated_state': response['updated_state'],
@@ -84,7 +86,7 @@ Your responsibilities:
 5. Maintain logical consistency with previous state
 6. Be specific and concrete about what changed
 7. Show how actors' actions and background events interact
-8. **CRITICAL: Include updated metrics/polling data if scenario tracks them (e.g., opinion polls, approval ratings)**
+8. **CRITICAL: Include updated metrics/polling data in a separate UPDATED METRICS section**
 
 Guidelines:
 - Write in third-person, present tense
@@ -94,7 +96,15 @@ Guidelines:
 - Avoid editorializing - describe objectively what occurred
 - Keep the narrative focused and relevant to the scenario
 - Weave background events naturally into the narrative (don't just list them)
-- **If this is an election scenario: ALWAYS include updated opinion polling showing percentage support for each party**"""
+
+**CRITICAL OUTPUT FORMAT:**
+You MUST follow the exact format specified in the user prompt. This includes:
+1. **UPDATED STATE:** section with narrative (2-4 paragraphs)
+2. **UPDATED METRICS:** section with ALL tracked metrics (if applicable)
+3. **KEY CHANGES:** bulleted list
+4. **CONSEQUENCES:** bulleted list
+
+Do NOT skip any sections. Do NOT merge sections together."""
 
     def _build_user_prompt(
         self,
@@ -149,9 +159,14 @@ Provide your response in this format:
 **UPDATED STATE:**
 [Write a cohesive narrative (2-4 paragraphs) describing the new world state after this turn's actions and events]
 
-**UPDATED METRICS (if applicable):**
-[For election scenarios: Include updated opinion polling showing each party's support as percentage]
-[Example format: "Socialdemokraterna (S): 34.1% (+0.3), Moderaterna (M): 18.2% (-0.3)" etc.]
+**UPDATED METRICS:**
+CRITICAL: You MUST include this section if the scenario tracks metrics (opinion polls, approval ratings, etc.)
+For election scenarios, list ALL parties with their updated support percentages and changes from previous turn.
+Format: "- Party Name: XX.X% (+/-X.X)"
+Example:
+- Socialdemokraterna (S): 34.1% (+0.3)
+- Moderaterna (M): 18.2% (-0.3)
+[Continue for ALL tracked parties]
 
 **KEY CHANGES:**
 - [Change 1]
@@ -162,12 +177,25 @@ Provide your response in this format:
 - [Consequence 1]
 - [Consequence 2]
 
-Remember: Be specific, realistic, and show how actions and events create ripple effects. Weave background events naturally into the narrative. For election scenarios, opinion changes should be gradual and realistic (rarely >1-2% per month)."""
+CRITICAL REQUIREMENTS:
+1. ALWAYS include UPDATED METRICS section for election/polling scenarios
+2. List ALL parties/metrics being tracked (check previous world states for which ones)
+3. Changes should be gradual and realistic (rarely >1-2% per month for opinion polls)
+4. Be specific, realistic, and show how actions create ripple effects"""
 
         return prompt
 
-    def _call_llm(self, system_prompt: str, user_prompt: str) -> Dict[str, Any]:
-        """Call OpenRouter API for world state synthesis"""
+    def _call_llm(self, system_prompt: str, user_prompt: str, metrics_required: bool = False) -> Dict[str, Any]:
+        """Call OpenRouter API for world state synthesis
+
+        Args:
+            system_prompt: System-level instructions
+            user_prompt: User prompt with current state and actions
+            metrics_required: If True, will retry if UPDATED METRICS section is missing
+        """
+        import logging
+        logger = logging.getLogger("scenario_lab")
+
         url = "https://openrouter.ai/api/v1/chat/completions"
 
         headers = {
@@ -175,60 +203,87 @@ Remember: Be specific, realistic, and show how actions and events create ripple 
             "Content-Type": "application/json"
         }
 
-        messages = []
-        if system_prompt:
-            messages.append({"role": "system", "content": system_prompt})
-        messages.append({"role": "user", "content": user_prompt})
+        # Try up to 2 times if metrics are required and missing
+        max_attempts = 2 if metrics_required else 1
 
-        # Use unified LLM call (routes to Ollama or OpenRouter automatically)
-        content, tokens_used = make_llm_call(
-            model=self.model,
-            messages=messages,
-            api_key=self.api_key,
-            max_retries=3
-        )
+        for attempt in range(max_attempts):
+            messages = []
+            if system_prompt:
+                messages.append({"role": "system", "content": system_prompt})
+            messages.append({"role": "user", "content": user_prompt})
 
-        # Parse the response
-        # Use robust section extraction (handles variations in formatting)
-        updated_state = extract_section(content, "UPDATED STATE", "KEY CHANGES")
-        if not updated_state:
-            # Fallback: try without markdown bold
-            updated_state = extract_section(content, "Updated State", "Key Changes")
-        if not updated_state:
-            # Fallback if format not followed - use entire content
-            updated_state = content
+            # Use unified LLM call (routes to Ollama or OpenRouter automatically)
+            content, tokens_used = make_llm_call(
+                model=self.model,
+                messages=messages,
+                api_key=self.api_key,
+                max_retries=3
+            )
 
-        # Extract KEY CHANGES section
-        key_changes_text = extract_section(content, "KEY CHANGES", "CONSEQUENCES")
-        if not key_changes_text:
-            key_changes_text = extract_section(content, "Key Changes", "Consequences")
+            # Check if UPDATED METRICS section exists when required
+            has_metrics = "UPDATED METRICS" in content or "Updated Metrics" in content
 
-        # Parse bulleted list from key changes
-        key_changes = []
-        if key_changes_text:
-            for line in key_changes_text.strip().split('\n'):
-                line = line.strip()
-                if line.startswith('-') or line.startswith('•') or line.startswith('*'):
-                    key_changes.append(line[1:].strip())
+            if metrics_required and not has_metrics and attempt < max_attempts - 1:
+                logger.warning(f"⚠️  UPDATED METRICS section missing in world state synthesis (attempt {attempt + 1}/{max_attempts})")
+                logger.warning("   Retrying with explicit reminder...")
+                # Add explicit reminder to the prompt for retry
+                user_prompt += "\n\n🚨 CRITICAL REMINDER: You MUST include the **UPDATED METRICS:** section with updated values for ALL tracked metrics! This is mandatory, not optional."
+                continue  # Retry with enhanced prompt
 
-        # Extract CONSEQUENCES section
-        consequences_text = extract_section(content, "CONSEQUENCES", None)
-        if not consequences_text:
-            consequences_text = extract_section(content, "Consequences", None)
+            if metrics_required and not has_metrics:
+                logger.error("❌ UPDATED METRICS section still missing after retry")
+                logger.error("   Metrics will not be tracked for this turn!")
 
-        # Parse bulleted list from consequences
-        consequences = []
-        if consequences_text:
-            for line in consequences_text.strip().split('\n'):
-                line = line.strip()
-                if line.startswith('-') or line.startswith('•') or line.startswith('*'):
-                    consequences.append(line[1:].strip())
+            # Parse the response
+            # Use robust section extraction (handles variations in formatting)
+            # IMPORTANT: Try UPDATED METRICS first to exclude it from the narrative
+            updated_state = extract_section(content, "UPDATED STATE", "UPDATED METRICS")
+            if not updated_state:
+                # Fallback: try without markdown bold
+                updated_state = extract_section(content, "Updated State", "Updated Metrics")
+            if not updated_state:
+                # Fallback: extract up to KEY CHANGES (if no UPDATED METRICS section exists)
+                updated_state = extract_section(content, "UPDATED STATE", "KEY CHANGES")
+            if not updated_state:
+                updated_state = extract_section(content, "Updated State", "Key Changes")
+            if not updated_state:
+                # Final fallback if format not followed - use entire content
+                updated_state = content
 
-        # tokens_used is already returned from make_llm_call()
+            # Extract KEY CHANGES section
+            key_changes_text = extract_section(content, "KEY CHANGES", "CONSEQUENCES")
+            if not key_changes_text:
+                key_changes_text = extract_section(content, "Key Changes", "Consequences")
 
-        return {
-            'updated_state': updated_state,
-            'key_changes': key_changes,
-            'consequences': consequences,
-            'tokens_used': tokens_used
-        }
+            # Parse bulleted list from key changes
+            key_changes = []
+            if key_changes_text:
+                for line in key_changes_text.strip().split('\n'):
+                    line = line.strip()
+                    if line.startswith('-') or line.startswith('•') or line.startswith('*'):
+                        key_changes.append(line[1:].strip())
+
+            # Extract CONSEQUENCES section
+            consequences_text = extract_section(content, "CONSEQUENCES", None)
+            if not consequences_text:
+                consequences_text = extract_section(content, "Consequences", None)
+
+            # Parse bulleted list from consequences
+            consequences = []
+            if consequences_text:
+                for line in consequences_text.strip().split('\n'):
+                    line = line.strip()
+                    if line.startswith('-') or line.startswith('•') or line.startswith('*'):
+                        consequences.append(line[1:].strip())
+
+            # Successfully parsed - return results
+            return {
+                'updated_state': updated_state,
+                'key_changes': key_changes,
+                'consequences': consequences,
+                'tokens_used': tokens_used,
+                'full_response': content  # Include full response for metrics extraction
+            }
+
+        # Should never reach here due to loop, but just in case
+        raise Exception("Failed to generate valid world state after maximum attempts")

@@ -706,13 +706,17 @@ def synthesize_and_validate_world_state(
             for event in exogenous_events:
                 logger.debug(f"     - {event['name']}")
 
+    # Check if metrics are configured (will enable retry if UPDATED METRICS section is missing)
+    has_metrics = bool(metrics_tracker.metrics_definitions)
+
     world_update_result = world_state_updater.update_world_state(
         current_state=current_state,
         turn=turn,
         total_turns=num_turns,
         actor_decisions=actor_decisions,
         scenario_name=scenario_name,
-        exogenous_events=exogenous_events
+        exogenous_events=exogenous_events,
+        has_metrics=has_metrics
     )
 
     new_state = world_update_result['updated_state']

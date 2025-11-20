@@ -175,8 +175,12 @@ class MetricsTracker:
             return None
 
         # Get metrics from the most recent turn
-        last_turn = max(self.metrics_by_turn.keys())
-        return self.metrics_by_turn[last_turn].copy()
+        # Convert keys to int (they may be strings after JSON deserialization)
+        turns = [int(t) for t in self.metrics_by_turn.keys()]
+        last_turn = max(turns)
+
+        # Access with either int or str key (dict may have either)
+        return self.metrics_by_turn.get(last_turn, self.metrics_by_turn.get(str(last_turn), {})).copy()
 
     def print_summary(self):
         """Print a formatted metrics summary"""
