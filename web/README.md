@@ -2,6 +2,26 @@
 
 Web-based interface for human interaction with Scenario Lab scenarios.
 
+## ⚠️ IMPORTANT: Use V2 API
+
+The web backend in this directory (`web/app.py`) is **DEPRECATED**.
+
+**Please use the V2 API instead:**
+
+```bash
+# Start the V2 API server
+scenario-lab serve
+
+# Or with options
+scenario-lab serve --host 0.0.0.0 --port 8000 --reload
+```
+
+- **Location**: `scenario_lab/api/app.py`
+- **Documentation**: http://localhost:8000/docs
+- **Guide**: See `docs/API.md` and `docs/PHASE_5_WEB_INTEGRATION.md`
+
+---
+
 ## Features
 
 - **Human Actor Participation**: Control actors in real-time during scenario execution
@@ -11,38 +31,79 @@ Web-based interface for human interaction with Scenario Lab scenarios.
 
 ## Architecture
 
-### Backend (FastAPI)
+### Backend: V2 REST API ✅
 
-- **REST API**: Scenario control, status queries, decision submission
-- **WebSocket**: Real-time updates during scenario execution
-- **Static Files**: Serves markdown files from completed runs
+**Location**: `scenario_lab/api/app.py`
 
-### Frontend (React + TypeScript)
+- **REST API**: Scenario execution, status queries, run analytics
+- **WebSocket**: Real-time event streaming during scenario execution
+- **Database**: Persistent storage for runs and analytics
+- **Full V2 Integration**: Uses V2 SyncRunner, Database, Event system
 
-Coming soon - currently the backend API is complete and can be accessed directly.
+### Frontend: React + TypeScript ✅
 
-## Installation
+**Location**: `web/frontend/`
+
+- Built with React, TypeScript, Vite
+- Uses V2 API client (`src/api/client.ts`)
+- Real-time WebSocket integration
+- Human actor interface for decision submission
+
+## Quick Start (V2 API)
+
+### 1. Start V2 API Server
 
 ```bash
-# Install Python dependencies
-pip install -r requirements.txt
-```
-
-## Running the Server
-
-```bash
-# From the web/ directory
-python app.py
-
-# Or using uvicorn directly
-uvicorn app:app --reload --host 0.0.0.0 --port 8000
+# From project root
+scenario-lab serve
 ```
 
 The server will be available at:
 
 - **API**: http://localhost:8000
-- **Docs**: http://localhost:8000/docs (Swagger UI)
-- **Alternative Docs**: http://localhost:8000/redoc (ReDoc)
+- **Interactive Docs**: http://localhost:8000/docs (Swagger UI)
+- **Health Check**: http://localhost:8000/api/health
+
+### 2. Start Frontend (Development)
+
+```bash
+# From web/frontend directory
+cd web/frontend
+npm install
+npm run dev
+```
+
+Frontend dev server: http://localhost:5173
+
+### 3. Production Build
+
+```bash
+# Build frontend
+cd web/frontend
+npm run build  # Outputs to web/static/
+
+# Serve with V2 API (serves both API and static frontend)
+scenario-lab serve
+```
+
+---
+
+## Legacy V1 Backend (DEPRECATED)
+
+The files `web/app.py` and `web/scenario_executor.py` are deprecated V1 components.
+
+**DO NOT USE** - They will be removed in a future version.
+
+If you need to run the legacy backend (not recommended):
+
+```bash
+# Install dependencies
+pip install -r web/requirements.txt
+
+# Run (DEPRECATED)
+cd web
+python app.py
+```
 
 ## API Endpoints
 
