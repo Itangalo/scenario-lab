@@ -514,9 +514,9 @@ The system estimates costs before execution and tracks actual API usage througho
 
 Scenario runs can be stopped and resumed, enabling graceful handling of API rate limits, budget constraints, and incremental execution.
 
-**Stop after a fixed number of turns:**
+**Stop at a specific turn:**
 ```bash
-python src/run_scenario.py scenarios/test-regulation-negotiation --max-turns 2
+python src/run_scenario.py scenarios/test-regulation-negotiation --end-turn 2
 ```
 
 **Set a budget limit:**
@@ -532,14 +532,14 @@ python src/run_scenario.py --resume output/test-regulation-negotiation/run-003
 
 **How it works:**
 - After each turn, the complete scenario state is saved to `scenario-state.json`
-- If a run is halted (rate limit, credit limit, max turns, or error), the state is preserved
+- If a run is halted (rate limit, credit limit, end turn reached, or error), the state is preserved
 - Resume restores all components: world state, actor states, cost tracking, and metrics
 - The run continues from the next incomplete turn
 
 **Halt reasons:**
 - `rate_limit` - API rate limit exceeded (429 error)
 - `credit_limit` - Cost threshold exceeded
-- `max_turns` - Reached specified turn limit
+- `end_turn` - Reached specified turn number
 - `manual` - User interruption (Ctrl+C)
 
 Each run directory contains `scenario-state.json` with execution status and full state for resumption.

@@ -48,7 +48,7 @@ class ScenarioExecuteRequest(BaseModel):
     """Request to execute a scenario"""
 
     scenario_path: str = Field(..., description="Path to scenario directory")
-    max_turns: Optional[int] = Field(None, description="Maximum number of turns")
+    end_turn: Optional[int] = Field(None, description="Turn number to stop at")
     credit_limit: Optional[float] = Field(None, description="Maximum cost in USD")
     output_path: Optional[str] = Field(None, description="Output directory path")
     enable_database: bool = Field(
@@ -185,7 +185,7 @@ async def _run_scenario_background(scenario_id: str, request: ScenarioExecuteReq
         runner = SyncRunner(
             scenario_path=request.scenario_path,
             output_path=request.output_path,
-            max_turns=request.max_turns,
+            end_turn=request.end_turn,
             credit_limit=request.credit_limit,
             database=database if request.enable_database else None,
         )

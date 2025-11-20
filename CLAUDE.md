@@ -210,7 +210,7 @@ The framework supports stopping and resuming scenario runs, crucial for handling
 - State includes: world state, actor states, costs, metrics, execution metadata
 
 **Command-line arguments:**
-- `--max-turns N` - Stop after N turns
+- `--end-turn N` - Stop at turn N (e.g., --end-turn 5 stops after turn 5)
 - `--credit-limit X` - Halt if cost exceeds $X
 - `--resume <path>` - Resume from halted run
 

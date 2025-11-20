@@ -24,7 +24,7 @@ class ScenarioStatus(str, Enum):
     RUNNING = "running"
     PAUSED = "paused"
     COMPLETED = "completed"
-    HALTED = "halted"  # Stopped early (credit limit, manual stop, max turns)
+    HALTED = "halted"  # Stopped early (credit limit, manual stop, end turn reached)
     FAILED = "failed"
 
 

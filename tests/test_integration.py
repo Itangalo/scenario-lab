@@ -220,7 +220,7 @@ The test scenario continues to progress normally."""
             run_scenario(
                 scenario_path=self.scenario_dir,
                 output_path=output_dir,
-                max_turns=None,  # Let it complete all turns
+                end_turn=None,  # Let it complete all turns
                 verbose=False
             )
         except Exception as e:
@@ -344,19 +344,19 @@ Test action"""
     @patch('actor_engine.make_llm_call')
     @patch('world_state_updater.make_llm_call')
     @patch('context_manager.make_llm_call')
-    def test_resume_after_max_turns(self, mock_ctx_call, mock_wsu_call, mock_actor_call):
-        """Test resuming a scenario after hitting max_turns"""
+    def test_resume_after_end_turn(self, mock_ctx_call, mock_wsu_call, mock_actor_call):
+        """Test resuming a scenario after hitting end_turn"""
         mock_actor_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
         mock_wsu_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
         mock_ctx_call.side_effect = lambda *args, **kwargs: self.mock_llm.make_call(*args, **kwargs)
 
         output_dir = os.path.join(self.test_dir, 'output')
 
-        # Run scenario with max_turns=2 (should halt after 2 turns)
+        # Run scenario with end_turn=2 (should halt after turn 2)
         run_scenario(
             scenario_path=self.scenario_dir,
             output_path=output_dir,
-            max_turns=2,
+            end_turn=2,
             verbose=False
         )
 
@@ -365,13 +365,13 @@ Test action"""
         state = state_manager.load_state()
         self.assertEqual(state['status'], 'halted')
         self.assertEqual(state['current_turn'], 2)
-        self.assertEqual(state['halt_reason'], 'max_turns')
+        self.assertEqual(state['halt_reason'], 'end_turn')
 
         # Resume the scenario
         run_scenario(
             scenario_path=None,
             output_path=output_dir,
-            max_turns=None,
+            end_turn=None,
             resume_mode=True,
             verbose=False
         )
@@ -471,7 +471,7 @@ constraints: []
         run_scenario(
             scenario_path=self.scenario_dir,
             output_path=output_dir,
-            max_turns=2,
+            end_turn=2,
             verbose=False
         )
 
@@ -631,7 +631,7 @@ Both actors have reached an agreement through bilateral negotiation.
             run_scenario(
                 scenario_path=self.scenario_dir,
                 output_path=output_dir,
-                max_turns=1,  # Just run one turn to test communications
+                end_turn=1,  # Just run one turn to test communications
                 verbose=False
             )
         except Exception as e:

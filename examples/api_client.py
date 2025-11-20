@@ -28,7 +28,7 @@ class ScenarioLabClient:
     async def execute_scenario(
         self,
         scenario_path: str,
-        max_turns: Optional[int] = None,
+        end_turn: Optional[int] = None,
         credit_limit: Optional[float] = None,
     ) -> dict:
         """
@@ -36,7 +36,7 @@ class ScenarioLabClient:
 
         Args:
             scenario_path: Path to scenario directory
-            max_turns: Maximum number of turns
+            end_turn: Turn number to stop at
             credit_limit: Maximum cost in USD
 
         Returns:
@@ -46,8 +46,8 @@ class ScenarioLabClient:
             "scenario_path": scenario_path,
             "enable_database": True,
         }
-        if max_turns:
-            payload["max_turns"] = max_turns
+        if end_turn:
+            payload["end_turn"] = end_turn
         if credit_limit:
             payload["credit_limit"] = credit_limit
 

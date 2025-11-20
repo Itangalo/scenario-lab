@@ -7,7 +7,7 @@ All complex logic is in phase services and orchestrator.
 
 Usage:
     python run_scenario_v2.py scenarios/ai-2027
-    python run_scenario_v2.py scenarios/ai-2027 --max-turns 5 --credit-limit 2.0
+    python run_scenario_v2.py scenarios/ai-2027 --end-turn 5 --credit-limit 2.0
     python run_scenario_v2.py scenarios/ai-2027 --resume output/ai-2027/run-001
     python run_scenario_v2.py scenarios/ai-2027 --branch-from output/ai-2027/run-001 --branch-at-turn 3
 """
@@ -41,7 +41,7 @@ Examples:
   python run_scenario_v2.py scenarios/ai-2027
 
   # Run with limits
-  python run_scenario_v2.py scenarios/ai-2027 --max-turns 5 --credit-limit 2.0
+  python run_scenario_v2.py scenarios/ai-2027 --end-turn 5 --credit-limit 2.0
 
   # Resume a previous run
   python run_scenario_v2.py scenarios/ai-2027 --resume output/ai-2027/run-001
@@ -60,9 +60,9 @@ Examples:
     )
 
     parser.add_argument(
-        "--max-turns",
+        "--end-turn",
         type=int,
-        help="Maximum number of turns to execute (default: from scenario.yaml)"
+        help="Turn number to stop at (e.g., --end-turn 5 stops after turn 5; default: from scenario.yaml)"
     )
 
     parser.add_argument(
@@ -141,7 +141,7 @@ async def run_scenario(args) -> int:
         runner = SyncRunner(
             scenario_path=args.scenario_path,
             output_path=args.output_path,
-            max_turns=args.max_turns,
+            end_turn=args.end_turn,
             credit_limit=args.credit_limit,
             resume_from=args.resume,
             branch_from=args.branch_from,
@@ -156,11 +156,11 @@ async def run_scenario(args) -> int:
         # Display scenario info
         scenario_name = runner.scenario_config.get("name", "Unknown")
         num_actors = len(runner.actors)
-        max_turns_display = args.max_turns or runner.scenario_config.get("turns", "unlimited")
+        end_turn_display = args.end_turn or runner.scenario_config.get("turns", "unlimited")
 
         print_success(f"Loaded: {scenario_name}")
         print_info(f"Actors: {num_actors}")
-        print_info(f"Max turns: {max_turns_display}")
+        print_info(f"End turn: {end_turn_display}")
 
         if args.credit_limit:
             print_info(f"Credit limit: ${args.credit_limit:.2f}")
@@ -185,7 +185,7 @@ async def run_scenario(args) -> int:
 
         # Check if paused (hit limits)
         if final_state.status.value == "paused":
-            print_warning("Execution paused (credit limit or max turns reached)")
+            print_warning("Execution paused (credit limit or end turn reached)")
             print_info(f"Resume with: python run_scenario_v2.py {args.scenario_path} --resume {runner.output_path}")
 
         return 0
