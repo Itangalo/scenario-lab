@@ -8,7 +8,7 @@ This document outlines a comprehensive plan to migrate Scenario Lab from its hyb
 
 **Recommended Approach:** Gradual migration with continuous validation
 
-**Estimated Timeline:** 3-4 weeks full-time development
+**Estimated Timeline:** 5 weeks total (25 working days + ~6-day buffer)
 
 **Key Risk:** Scope is larger than initially estimated - includes batch processing, web interface, CLI tools, and utilities in addition to core simulation.
 
@@ -65,7 +65,7 @@ This document outlines a comprehensive plan to migrate Scenario Lab from its hyb
 - `markdown_utils.py` - Markdown formatting utilities
 - `logging_config.py` - Logging configuration
 
-**CLI Tools (3 files):**
+**CLI Tools (4 files):**
 - `run_scenario.py` - Main scenario execution script
 - `create_scenario.py` - Interactive scenario creation wizard
 - `create_batch_config.py` - Interactive batch config wizard
@@ -79,9 +79,9 @@ This document outlines a comprehensive plan to migrate Scenario Lab from its hyb
 
 ---
 
-**V2 Components (scenario_lab/)** - 42 files with varying V1 dependencies:
+**V2 Components (scenario_lab/)** - 42 files with varying V1 dependencies (29 implementation modules detailed below plus 13 package infrastructure files such as `__init__.py` stubs and `py.typed`).
 
-**Core (3 files):**
+**Core (2 files):**
 - ✅ `core/events.py` - Event bus (no V1 dependencies)
 - ✅ `core/orchestrator.py` - Scenario orchestrator (no V1 dependencies)
 
@@ -109,7 +109,7 @@ This document outlines a comprehensive plan to migrate Scenario Lab from its hyb
 - ⚠️ `runners/sync_runner.py` - **DEPENDS ON V1** (orchestrates V1 components)
 - ✅ `runners/async_executor.py` - No V1 dependencies
 
-**Utils (7 files):**
+**Utils (6 files):**
 - ✅ `utils/state_persistence.py` - No V1 dependencies
 - ✅ `utils/model_pricing.py` - No V1 dependencies
 - ⚠️ `utils/json_response_parser.py` - **DEPENDS ON V1** (imports response_parser)
@@ -121,12 +121,12 @@ This document outlines a comprehensive plan to migrate Scenario Lab from its hyb
 - ✅ `cli.py` - Main CLI entry point (no V1 dependencies)
 - ✅ `interfaces/cli.py` - CLI interface (no V1 dependencies)
 
-**API/Web (2 files):**
+**API/Web (1 file):**
 - ✅ `api/app.py` - FastAPI app (no direct V1 dependencies)
-- Status: Likely uses SyncRunner which has V1 dependencies
 
-**Database (2 files):**
-- ✅ `database/__init__.py` - Database setup
+*Note:* The API currently wires up the SyncRunner, so it indirectly inherits remaining V1 dependencies until the runner is migrated.
+
+**Database (1 file):**
 - ✅ `database/models.py` - SQLAlchemy models
 
 **Tests (3 files):**
@@ -134,11 +134,26 @@ This document outlines a comprehensive plan to migrate Scenario Lab from its hyb
 - ✅ `tests/test_orchestrator.py` - No V1 dependencies
 - ✅ `tests/test_state.py` - No V1 dependencies
 
+**Package Infrastructure (13 files):**
+- ✅ `scenario_lab/__init__.py`
+- ✅ `scenario_lab/py.typed`
+- ✅ `core/__init__.py`
+- ✅ `loaders/__init__.py`
+- ✅ `services/__init__.py`
+- ✅ `schemas/__init__.py`
+- ✅ `runners/__init__.py`
+- ✅ `utils/__init__.py`
+- ✅ `models/__init__.py`
+- ✅ `database/__init__.py`
+- ✅ `api/__init__.py`
+- ✅ `interfaces/__init__.py`
+- ✅ `tests/__init__.py`
+
 ---
 
 **Test Suite (tests/):**
-- 24 test files total
-- 38 files use `sys.path.insert` to import V1 components
+- 24 Python test modules (excluding `__init__.py`)
+- 22 of those tests use `sys.path.insert` to import V1 components; another 16 non-test files across the repo still do the same
 - Key V2 tests: `test_v2_integration.py`, `test_v2_phases.py`
 
 ---
@@ -1333,32 +1348,40 @@ async def test_decision_phase():
 
 ### Detailed Timeline
 
-**Week 1: Core Simulation Foundation**
-- Days 1-2: Loader and schema alignment
-- Days 3-5: Decision phase migration
-- Days 6-7: World update phase migration
-- Day 8: Persistence verification
-- Day 9: Phase 1 integration testing
+**Week 1: Core Simulation Foundation (Phase 1)**
+- Day 1: Loader and schema alignment
+- Day 2: Loader regression tests and state validation
+- Day 3: Decision phase migration (actors + context hooks)
+- Day 4: Decision QA plus world update scaffolding
+- Day 5: World update migration, persistence verification, smoke test
 
-**Week 2: Communication and Context**
-- Days 1-2: Context management migration
-- Days 3-5: Communication phase migration
-- Days 6-8: Actor engine migration
-- Day 9: Phase 2 integration testing
+**Week 2: Communication and Context (Phase 2)**
+- Day 6: Context management migration
+- Day 7: Prompt/context integration tests and cleanup
+- Day 8: Communication phase migration
+- Day 9: Actor engine migration kickoff
+- Day 10: Actor engine completion and Phase 2 integration testing
 
-**Week 3: Utilities and Batch Processing**
-- Days 1-2: API client and response parsing
-- Days 3-4: Metrics and QA validation
-- Days 5-6: Error handling and fallback
-- Days 7-8: Parameter variation and batch cost manager
-- Day 9: Batch runner and executor
+**Week 3: Utilities and Support (Phase 3)**
+- Day 11: API client and response parsing migration
+- Day 12: Response caching and model-pricing updates
+- Day 13: Metrics tracker and QA validator port
+- Day 14: Error handling plus fallback strategy consolidation
+- Day 15: Remaining utilities and regression sweep
 
-**Week 4: CLI, Web, and Finalization**
-- Days 1-2: Batch analyzer and testing
-- Days 3-4: CLI and wizards migration
-- Days 5-6: Web interface update
-- Days 7-8: V1 removal and test cleanup
-- Days 9-10: Documentation and final integration testing
+**Week 4: Batch Processing + CLI Kickoff (Phase 4 + Phase 5 overlap)**
+- Day 16: Parameter variation and batch cost manager
+- Day 17: Batch runner and executor
+- Day 18: Parallel executor and analyzer scaffolding
+- Day 19: Batch analyzer and validation tests
+- Day 20: CLI foundation and shared helper alignment
+
+**Week 5: CLI, Web, and Finalization (Phases 5-6)**
+- Day 21: CLI wizards migration completion
+- Day 22: Web interface update and manual QA pass
+- Day 23: V1 removal prep and state migration scripts
+- Day 24: Golden-path integration plus test cleanup
+- Day 25: Documentation updates and release readiness review
 
 ### Dependencies
 
@@ -1383,7 +1406,7 @@ async def test_decision_phase():
 - Performance optimization may be needed
 - Documentation updates may take longer than planned
 
-**Adjusted Timeline:** 4-5 weeks for full completion
+**Adjusted Timeline:** Approximately 5 weeks (31 working days including buffer)
 
 ---
 
