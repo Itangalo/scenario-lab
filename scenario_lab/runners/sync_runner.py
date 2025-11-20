@@ -32,8 +32,14 @@ from scenario_lab.services.world_update_phase import WorldUpdatePhase
 from scenario_lab.services.persistence_phase import PersistencePhase
 from scenario_lab.services.database_persistence_phase import DatabasePersistencePhase
 from scenario_lab.models.state import ScenarioState
-from scenario_lab.database import Database
 from scenario_lab.utils.state_persistence import StatePersistence
+
+try:
+    from scenario_lab.database import Database
+    DATABASE_AVAILABLE = True
+except ImportError:
+    DATABASE_AVAILABLE = False
+    Database = None
 
 logger = logging.getLogger(__name__)
 

@@ -117,3 +117,7 @@ def add_communication_to_state(
     )
 
     return state.with_communication(comm)
+
+
+# Alias for backward compatibility
+CommunicationPhase = CommunicationPhaseV2
