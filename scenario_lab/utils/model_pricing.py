@@ -111,3 +111,57 @@ def estimate_cost(
         Estimated cost in USD
     """
     return calculate_cost(model, estimated_input_tokens, estimated_output_tokens)
+
+
+def is_free_model(model: str) -> bool:
+    """
+    Check if a model is free (no API cost)
+
+    Args:
+        model: Model identifier
+
+    Returns:
+        True if model is free, False otherwise
+    """
+    # Local models
+    if model.startswith("ollama/") or model.startswith("local/"):
+        return True
+
+    # Free models on OpenRouter
+    if ":free" in model:
+        return True
+
+    # Check if pricing is 0
+    if model in MODEL_PRICING:
+        input_cost, output_cost = MODEL_PRICING[model]
+        return input_cost == 0.0 and output_cost == 0.0
+
+    return False
+
+
+def is_expensive_model(model: str, threshold: float = 5.0) -> bool:
+    """
+    Check if a model is expensive (high API cost)
+
+    Args:
+        model: Model identifier
+        threshold: Cost threshold per 1M input tokens (default: $5.00)
+
+    Returns:
+        True if model is expensive, False otherwise
+    """
+    # Local models are not expensive
+    if model.startswith("ollama/") or model.startswith("local/"):
+        return False
+
+    # Free models are not expensive
+    if is_free_model(model):
+        return False
+
+    # Check pricing
+    if model in MODEL_PRICING:
+        input_cost, output_cost = MODEL_PRICING[model]
+        return input_cost >= threshold or output_cost >= threshold
+
+    # Unknown models - assume not expensive (use default pricing)
+    return False

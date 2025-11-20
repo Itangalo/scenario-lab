@@ -18,6 +18,7 @@ import logging
 from datetime import datetime
 from pathlib import Path
 from typing import Optional, Dict, Any
+from dataclasses import replace
 
 from scenario_lab.models.state import ScenarioState, WorldState, CostRecord
 from scenario_lab.utils.api_client import make_llm_call_async, LLMResponse
@@ -142,10 +143,10 @@ class WorldUpdatePhaseV2:
         )
 
         # Update state with new world state
-        state = state.replace(world_state=new_world_state)
+        state = replace(state, world_state=new_world_state)
 
         # Increment turn number (world update completes the turn)
-        state = state.replace(turn=state.turn + 1)
+        state = replace(state, turn=state.turn + 1)
 
         # Track costs
         cost_amount = calculate_cost(
