@@ -56,10 +56,10 @@ class ContextManagerV2:
             ValueError: If window_size < 1 or max_cache_size < 1 or summarization_model is empty
         """
         # V2 Pattern: Validate parameters in __init__
-        if window_size < 1:
+        if window_size is None or not isinstance(window_size, int) or window_size < 1:
             raise ValueError(f"window_size must be >= 1, got {window_size}")
 
-        if max_cache_size < 1:
+        if max_cache_size is None or not isinstance(max_cache_size, int) or max_cache_size < 1:
             raise ValueError(f"max_cache_size must be >= 1, got {max_cache_size}")
 
         if not summarization_model or not summarization_model.strip():

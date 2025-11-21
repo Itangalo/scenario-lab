@@ -1,5 +1,0 @@
-# Actor with validation error - missing required fields
-name: Test Actor
-# Missing required field: role
-# Missing required field: goals (must have at least 1)
-control: invalid_control_type  # Should be 'ai' or 'human'

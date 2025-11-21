@@ -140,8 +140,10 @@ class QAValidator:
         # Format actor profile as text
         profile_text = self._format_actor_profile(actor_profile)
 
-        # Fill in the prompt template
-        prompt = check_config['prompt_template'].format(
+        # Build prompt (use template if provided, otherwise generate dynamically)
+        prompt = self._build_validation_prompt(
+            check_name='actor_decision_consistency',
+            check_config=check_config,
             actor_profile=profile_text,
             world_state=world_state,
             actor_reasoning=actor_reasoning,
@@ -194,8 +196,10 @@ class QAValidator:
             for actor, action in actor_actions.items()
         ])
 
-        # Fill in the prompt template
-        prompt = check_config['prompt_template'].format(
+        # Build prompt (use template if provided, otherwise generate dynamically)
+        prompt = self._build_validation_prompt(
+            check_name='world_state_coherence',
+            check_config=check_config,
             previous_world_state=previous_world_state,
             actor_actions=actions_text,
             new_world_state=new_world_state
@@ -245,8 +249,10 @@ class QAValidator:
         if not check_config.get('enabled', False):
             return None
 
-        # Fill in the prompt template
-        prompt = check_config['prompt_template'].format(
+        # Build prompt (use template if provided, otherwise generate dynamically)
+        prompt = self._build_validation_prompt(
+            check_name='information_access_consistency',
+            check_config=check_config,
             actor_name=actor_name,
             public_world_state=public_world_state,
             private_communications=private_communications,
@@ -265,6 +271,123 @@ class QAValidator:
         )
 
         return validation_result
+
+    def _build_validation_prompt(self, check_name: str, check_config: Dict[str, Any], **kwargs) -> str:
+        """
+        Build validation prompt dynamically or use provided template
+
+        Args:
+            check_name: Name of the validation check
+            check_config: Configuration dict for this check
+            **kwargs: Variables to fill into the prompt
+
+        Returns:
+            Formatted prompt string
+        """
+        # If prompt_template exists in config, use it (V1 compatibility)
+        if 'prompt_template' in check_config:
+            try:
+                return check_config['prompt_template'].format(**kwargs)
+            except KeyError as e:
+                logger.warning(f"Prompt template missing variable {e}, falling back to dynamic prompt")
+
+        # Otherwise, generate prompt dynamically based on check type (V2)
+        if check_name == 'actor_decision_consistency':
+            return f"""You are validating an actor's decision for consistency with their profile.
+
+**Actor Profile:**
+{kwargs.get('actor_profile', 'N/A')}
+
+**Current World State:**
+{kwargs.get('world_state', 'N/A')}
+
+**Actor's Reasoning:**
+{kwargs.get('actor_reasoning', 'N/A')}
+
+**Actor's Action:**
+{kwargs.get('actor_action', 'N/A')}
+
+**Task:**
+Check if the actor's decision is consistent with:
+1. Their stated goals and objectives
+2. Their declared constraints
+3. Their expertise level and decision-making style
+4. The current world state context
+
+**Output Format:**
+PASSED: Yes/No
+ISSUES: (list any inconsistencies found, or "None")
+SEVERITY: Low/Medium/High (if issues found)
+EXPLANATION: (brief explanation of your assessment)
+"""
+
+        elif check_name == 'world_state_coherence':
+            return f"""You are validating that a world state update is coherent with the actions taken.
+
+**Previous World State:**
+{kwargs.get('previous_world_state', 'N/A')}
+
+**Actor Actions This Turn:**
+{kwargs.get('actor_actions', 'N/A')}
+
+**New World State:**
+{kwargs.get('new_world_state', 'N/A')}
+
+**Task:**
+Check if the new world state:
+1. Logically follows from the actor actions
+2. Shows appropriate consequences and reactions
+3. Maintains internal consistency
+4. Is realistic and proportionate to the actions taken
+
+**Output Format:**
+PASSED: Yes/No
+ISSUES: (list any incoherencies found, or "None")
+SEVERITY: Low/Medium/High (if issues found)
+EXPLANATION: (brief explanation of your assessment)
+"""
+
+        elif check_name == 'information_access_consistency':
+            return f"""You are validating that an actor only uses information they have access to.
+
+**Actor:** {kwargs.get('actor_name', 'N/A')}
+
+**Public Information (available to all actors):**
+{kwargs.get('public_world_state', 'N/A')}
+
+**Private Communications (available to this actor):**
+{kwargs.get('private_communications', 'N/A')}
+
+**Restricted Information (NOT available to this actor):**
+{kwargs.get('restricted_information', 'N/A')}
+
+**Actor's Reasoning:**
+{kwargs.get('actor_reasoning', 'N/A')}
+
+**Task:**
+Check if the actor's reasoning only references:
+1. Public information from the world state
+2. Private communications they participated in
+3. Their own internal knowledge and expertise
+
+They should NOT reference or demonstrate knowledge of restricted information.
+
+**Output Format:**
+PASSED: Yes/No
+ISSUES: (list any information leaks found, or "None")
+SEVERITY: Low/Medium/High (if issues found)
+EXPLANATION: (brief explanation of your assessment)
+"""
+
+        else:
+            # Fallback for unknown check types
+            logger.warning(f"Unknown validation check type: {check_name}, using generic prompt")
+            return f"""Validate the following scenario data for check: {check_name}
+
+**Data:**
+{kwargs}
+
+Provide your validation assessment."""
 
     async def _make_validation_call(self, prompt: str) -> LLMResponse:
         """
