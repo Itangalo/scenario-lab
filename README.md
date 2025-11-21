@@ -6,7 +6,7 @@
 
 An experimental framework for exploring complex policy and strategic questions through AI-automated scenario exercises. The system enables multi-actor simulations where AI agents interact in dynamic environments, providing both statistical insights from batch runs and deep qualitative analysis of decision-making patterns.
 
-The primary focus is exploring AI-related policy questions and strategic challenges through simulation, testing how different actors, policies, and interventions perform across diverse scenarios—including unexpected black swan events.
+The primary focus is exploring AI-related policy questions and strategic challenges through simulation, testing how different actors, policies, and interventions perform across diverse scenarios—including exogenous background events that evolve the world independently of actor decisions.
 
 > **Note:** Version 2.0 represents a complete architectural modernization. The codebase now uses a clean Python package structure (`scenario_lab/`) with CLI commands, REST API, and improved maintainability. Legacy V1 code remains in `src/` for reference but is no longer actively used.
 
@@ -25,7 +25,7 @@ All actors in the scenario can be controlled by AI agents, each with their own g
 This enables realistic scenarios where, for example, an actor's goal can evolve from "defeat competitor X" to "establish collaborative international standards" through natural diplomatic progression.
 
 ### 2. Dynamic World State
-The world state evolves based on actor decisions, with AI managing the consequences and cascading effects of actions taken. Scenarios can include black swan events—low-probability, high-impact occurrences that test actors' ability to respond to unexpected disruptions.
+The world state evolves based on actor decisions, with AI managing the consequences and cascading effects of actions taken. Scenarios can include exogenous events (formerly "black swan events")—background developments that occur independently of actor decisions, including trends, random events, conditional triggers, and scheduled occurrences that test actors' ability to respond to unexpected disruptions.
 
 ### 3. Human-in-the-Loop Capability
 Human experts can replace any AI-controlled actor at any time, allowing for:
@@ -228,7 +228,7 @@ Automated scenario exercises enable:
 - **Systematic exploration**: Test hundreds or thousands of policy variations
 - **Pattern discovery**: Identify critical factors and decision points across many runs
 - **Hypothesis testing**: Rigorously test policy theories against diverse conditions
-- **Black swan preparation**: Include low-probability events to test resilience
+- **Exogenous event testing**: Include background trends, random events, and conditional triggers to test resilience
 - **Controlled experimentation**: Isolate variables to understand causal mechanisms
 
 ### Validation and Calibration
@@ -310,7 +310,7 @@ scenario-name/
 │   │   └── actor2.yaml
 │   ├── metrics.yaml           # Defined metrics and thresholds
 │   ├── validation-rules.yaml  # Instructions for quality assurance checks
-│   ├── black-swans.yaml       # Optional: black swan event definitions
+│   ├── exogenous-events.yaml  # Optional: background event definitions (trends, random, conditional, scheduled)
 │   └── background/            # Optional: background data and information
 │       ├── historical-data.md
 │       └── reference-docs.md

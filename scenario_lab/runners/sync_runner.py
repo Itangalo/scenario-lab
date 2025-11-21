@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Optional
 
 from scenario_lab.loaders import ScenarioLoader, load_metrics_config, load_validation_config
+from scenario_lab.loaders.exogenous_events_loader import load_exogenous_events
 from scenario_lab.core.orchestrator import ScenarioOrchestrator, PhaseType
 from scenario_lab.core.events import EventBus
 from scenario_lab.core.metrics_tracker_v2 import MetricsTrackerV2
@@ -20,6 +21,7 @@ from scenario_lab.services.decision_phase_v2 import DecisionPhaseV2
 from scenario_lab.services.world_update_phase_v2 import WorldUpdatePhaseV2
 from scenario_lab.services.persistence_phase import PersistencePhase
 from scenario_lab.services.database_persistence_phase import DatabasePersistencePhase
+from scenario_lab.services.exogenous_events_manager import ExogenousEventManager
 from scenario_lab.models.state import ScenarioState
 from scenario_lab.utils.state_persistence import StatePersistence
 
@@ -91,6 +93,7 @@ class SyncRunner:
         self.orchestrator: Optional[ScenarioOrchestrator] = None
         self.metrics_tracker: Optional[MetricsTrackerV2] = None
         self.qa_validator: Optional[QAValidatorV2] = None
+        self.exogenous_event_manager: Optional[ExogenousEventManager] = None
 
     def _default_output_path(self) -> str:
         """
@@ -167,6 +170,14 @@ class SyncRunner:
         # Event bus
         self.event_bus = EventBus(keep_history=True)
 
+        # Exogenous event manager (if exogenous-events.yaml exists)
+        # Load before orchestrator since orchestrator needs it
+        scenario_path = Path(self.scenario_path)
+        self.exogenous_event_manager = load_exogenous_events(
+            scenario_path=scenario_path,
+            triggered_event_ids=self.initial_state.triggered_event_ids,
+        )
+
         # Orchestrator
         self.orchestrator = ScenarioOrchestrator(
             event_bus=self.event_bus,
@@ -174,6 +185,7 @@ class SyncRunner:
             credit_limit=self.credit_limit,
             output_dir=self.output_path,
             save_state_every_turn=True,
+            exogenous_event_manager=self.exogenous_event_manager,
         )
 
         # Metrics tracker V2 (if metrics.yaml exists)
