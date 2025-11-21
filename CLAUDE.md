@@ -41,6 +41,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - ✅ Memory monitoring and OOM prevention
 - ✅ Graceful degradation (works without optional dependencies)
 
+## AI-Assisted Scenario Creation
+
+For AI assistants helping users create scenarios, see **[AGENTS.md](AGENTS.md)**. This file contains:
+
+- Complete YAML schema documentation for all configuration files
+- Step-by-step workflow for scenario generation
+- Actor design guidelines and archetypes
+- Metrics configuration examples
+- Validation and troubleshooting guidance
+
+When a user requests help creating a scenario (e.g., "simulate US-China dynamics during an AI crisis"), use AGENTS.md as the primary reference for generating valid, well-designed scenario configurations.
+
 ## V2 Architecture (Current)
 
 The system uses a modern Python package architecture with clean separation of concerns:
