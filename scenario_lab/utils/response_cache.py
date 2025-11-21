@@ -347,8 +347,16 @@ def get_global_cache() -> ResponseCache:
     if _global_cache is None:
         # Check environment variables for configuration
         enabled = os.environ.get('SCENARIO_CACHE_ENABLED', 'true').lower() == 'true'
-        cache_dir = os.environ.get('SCENARIO_CACHE_DIR', '.cache/responses')
+        base_cache_dir = os.environ.get('SCENARIO_CACHE_DIR', '.cache/responses')
         ttl = int(os.environ.get('SCENARIO_CACHE_TTL', '3600'))
+
+        # Support run-scoped cache: Each run gets its own cache directory
+        # This prevents different runs from sharing cached responses
+        run_id = os.environ.get('SCENARIO_RUN_ID')
+        if run_id:
+            cache_dir = os.path.join(base_cache_dir, run_id)
+        else:
+            cache_dir = base_cache_dir
 
         _global_cache = ResponseCache(
             cache_dir=cache_dir if enabled else None,

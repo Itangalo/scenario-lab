@@ -130,6 +130,17 @@ class SyncRunner:
         # Create output directory
         os.makedirs(self.output_path, exist_ok=True)
 
+        # Set run-scoped cache: Use output_path as unique run identifier
+        # This ensures each run gets its own cache directory, preventing
+        # different runs from sharing cached responses (which would give identical results)
+        run_id = self.output_path.replace('/', '_').replace('\\', '_')
+        os.environ['SCENARIO_RUN_ID'] = run_id
+        logger.debug(f"Set SCENARIO_RUN_ID={run_id} for run-scoped cache")
+
+        # Reset global cache to pick up new run_id
+        from scenario_lab.utils.response_cache import reset_global_cache
+        reset_global_cache()
+
         # Load scenario configuration
         self.loader = ScenarioLoader(self.scenario_path, json_mode=self.json_mode)
         self.initial_state, self.actors, self.scenario_config = self.loader.load()
