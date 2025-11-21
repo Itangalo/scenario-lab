@@ -59,7 +59,7 @@ def cli(verbose: bool) -> None:
 
 @cli.command()
 @click.argument("scenario_path", type=click.Path(exists=True, file_okay=False))
-@click.option("--end-turn", type=int, help="Turn number to stop at (e.g., --end-turn 5 stops after turn 5)")
+@click.option("--end-turn", type=int, help="Number of turns to execute (e.g., --end-turn 5 runs 5 actor decision rounds)")
 @click.option("--credit-limit", type=float, help="Maximum cost in USD")
 @click.option("--resume", type=click.Path(exists=True, file_okay=False), help="Resume from run directory")
 @click.option("--branch-from", type=click.Path(exists=True, file_okay=False), help="Branch from run directory")

@@ -79,7 +79,7 @@ class ScenarioOrchestrator:
 
         Args:
             event_bus: Event bus for emitting events (creates one if not provided)
-            end_turn: Turn number to stop at (e.g., end_turn=5 stops after turn 5)
+            end_turn: Number of turns to execute (e.g., end_turn=5 executes 5 actor decision rounds)
             credit_limit: Maximum cost in USD
             output_dir: Output directory for state saving
             save_state_every_turn: Whether to save state after each turn
@@ -403,6 +403,10 @@ class ScenarioOrchestrator:
             True if execution should stop
         """
         # Stop if end turn reached
+        # Note: state.turn represents the number of completed turns
+        # (0 = initial state, 1 = after 1st turn, 2 = after 2nd turn, etc.)
+        # So if we want N actor turns, we stop when state.turn >= N
+        # This means --end-turn N results in exactly N actor decision rounds
         if self.end_turn is not None and state.turn >= self.end_turn:
             return True
 
