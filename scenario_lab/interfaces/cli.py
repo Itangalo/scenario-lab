@@ -92,9 +92,6 @@ def run(
         if branch_at_turn is not None:
             click.echo(f"   At turn: {click.style(str(branch_at_turn), fg='blue')}")
 
-    # Alpha notice
-    print_alpha_notice()
-
     # Use V2 SyncRunner for all operations (including resume/branch)
     try:
         from scenario_lab.runners import SyncRunner
