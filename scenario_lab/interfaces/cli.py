@@ -47,12 +47,13 @@ def cli(verbose: bool) -> None:
         scenario-lab estimate scenarios/ai-summit
     """
     # Configure logging
-    # Default to WARNING to show only user-friendly messages (not INFO/DEBUG)
-    # Use --verbose to see full technical logging
-    level = logging.DEBUG if verbose else logging.WARNING
+    # Default: INFO level with clean format (no timestamps/module names)
+    # Verbose: DEBUG level with full technical details
+    level = logging.DEBUG if verbose else logging.INFO
+    format_str = "%(asctime)s - %(name)s - %(levelname)s - %(message)s" if verbose else "%(message)s"
     logging.basicConfig(
         level=level,
-        format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        format=format_str,
     )
 
 
