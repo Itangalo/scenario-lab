@@ -12,6 +12,7 @@ from scenario_lab.schemas.scenario import ScenarioConfig
 from scenario_lab.schemas.actor import ActorConfig
 from scenario_lab.schemas.metrics import MetricsConfig
 from scenario_lab.schemas.validation import ValidationConfig
+from scenario_lab.utils.model_pricing import is_expensive_model
 
 
 class ValidationResult:
@@ -133,8 +134,8 @@ def load_and_validate_actor(yaml_path: Path) -> Tuple[ActorConfig, ValidationRes
         if not config.system_prompt and not config.description:
             warnings.append("No system_prompt or description - actor behavior may be unclear")
 
-        if config.llm_model and 'gpt-4' in config.llm_model.lower():
-            warnings.append(f"Using expensive model ({config.llm_model}) - consider gpt-4o-mini for testing")
+        if config.llm_model and is_expensive_model(config.llm_model):
+            warnings.append(f"Using expensive model ({config.llm_model}) - consider openai/gpt-4o-mini for testing")
 
         return config, ValidationResult(success=True, warnings=warnings)
 
