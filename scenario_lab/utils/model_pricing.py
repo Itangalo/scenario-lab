@@ -2,49 +2,197 @@
 Model Pricing for Scenario Lab V2
 
 Calculates costs for LLM API calls based on model and token usage.
-Pricing data based on OpenRouter pricing as of early 2025.
+Supports both static pricing data and dynamic fetching from OpenRouter API.
+
+Pricing data based on OpenRouter pricing as of November 2025.
 """
-from typing import Dict, Tuple
+import os
+import logging
+from typing import Dict, Tuple, List, Optional
 
+logger = logging.getLogger(__name__)
 
-# Pricing per 1M tokens (input, output) for common models
+# Pricing per 1M tokens (input, output) for popular models
 # Format: "model_identifier": (input_cost_per_1m, output_cost_per_1m)
+# Updated November 2025 - focus on most popular/useful models
 MODEL_PRICING: Dict[str, Tuple[float, float]] = {
     # OpenAI models
     "openai/gpt-4o": (2.50, 10.00),
     "openai/gpt-4o-mini": (0.15, 0.60),
-    "openai/gpt-4-turbo": (10.00, 30.00),
-    "openai/gpt-3.5-turbo": (0.50, 1.50),
 
     # Anthropic models
+    "anthropic/claude-sonnet-4": (3.00, 15.00),
     "anthropic/claude-3.5-sonnet": (3.00, 15.00),
-    "anthropic/claude-3-opus": (15.00, 75.00),
-    "anthropic/claude-3-sonnet": (3.00, 15.00),
+    "anthropic/claude-3.5-haiku": (0.80, 4.00),
     "anthropic/claude-3-haiku": (0.25, 1.25),
+    "anthropic/claude-3-opus": (15.00, 75.00),  # Very expensive
 
     # Google models
-    "google/gemini-pro": (0.50, 1.50),
-    "google/gemini-pro-1.5": (3.50, 10.50),
-    "google/gemini-flash": (0.075, 0.30),
+    "google/gemini-2.0-flash": (0.10, 0.40),
+    "google/gemini-2.5-flash": (0.15, 0.60),
+    "google/gemini-1.5-pro": (1.25, 5.00),
+
+    # DeepSeek models (very cost effective)
+    "deepseek/deepseek-chat": (0.14, 0.28),
+    "deepseek/deepseek-r1": (0.55, 2.19),
 
     # Meta Llama
-    "meta-llama/llama-3.1-405b-instruct": (2.70, 2.70),
-    "meta-llama/llama-3.1-70b-instruct": (0.52, 0.75),
-    "meta-llama/llama-3.1-8b-instruct": (0.06, 0.06),
-
-    # Mistral
-    "mistralai/mistral-large": (4.00, 12.00),
-    "mistralai/mistral-medium": (2.70, 8.10),
-    "mistralai/mixtral-8x7b": (0.54, 0.54),
-
-    # Alibaba (free models on OpenRouter)
-    "alibaba/tongyi-deepresearch-30b-a3b:free": (0.00, 0.00),
-    "alibaba/qwen-2.5-72b-instruct:free": (0.00, 0.00),
+    "meta-llama/llama-3.3-70b-instruct": (0.30, 0.30),
 
     # Local models (no cost)
     "ollama": (0.00, 0.00),
     "local": (0.00, 0.00),
 }
+
+# Cache for dynamically fetched pricing
+_dynamic_pricing_cache: Dict[str, Tuple[float, float]] = {}
+_cache_loaded: bool = False
+
+
+def fetch_openrouter_models(api_key: Optional[str] = None) -> Dict[str, Tuple[float, float]]:
+    """
+    Fetch current model pricing from OpenRouter API.
+
+    Args:
+        api_key: OpenRouter API key (optional, uses env var if not provided)
+
+    Returns:
+        Dict mapping model IDs to (input_cost_per_1m, output_cost_per_1m)
+    """
+    global _dynamic_pricing_cache, _cache_loaded
+
+    if _cache_loaded:
+        return _dynamic_pricing_cache
+
+    if api_key is None:
+        api_key = os.environ.get('OPENROUTER_API_KEY')
+
+    if not api_key:
+        logger.debug("No API key available for dynamic model fetching")
+        return {}
+
+    try:
+        import requests
+
+        response = requests.get(
+            "https://openrouter.ai/api/v1/models",
+            headers={"Authorization": f"Bearer {api_key}"},
+            timeout=10
+        )
+        response.raise_for_status()
+
+        data = response.json()
+        models = data.get("data", [])
+
+        for model in models:
+            model_id = model.get("id", "")
+            pricing = model.get("pricing", {})
+
+            # OpenRouter returns price per token, convert to per 1M
+            prompt_price = float(pricing.get("prompt", 0)) * 1_000_000
+            completion_price = float(pricing.get("completion", 0)) * 1_000_000
+
+            if model_id:
+                _dynamic_pricing_cache[model_id] = (prompt_price, completion_price)
+
+        _cache_loaded = True
+        logger.info(f"Loaded pricing for {len(_dynamic_pricing_cache)} models from OpenRouter")
+        return _dynamic_pricing_cache
+
+    except Exception as e:
+        logger.debug(f"Could not fetch OpenRouter models: {e}")
+        return {}
+
+
+def get_popular_models() -> List[Dict[str, any]]:
+    """
+    Get list of popular models for UI display (wizards, etc).
+
+    Returns:
+        List of dicts with model info: id, name, description, pricing
+    """
+    # Try to get fresh data from OpenRouter
+    dynamic = fetch_openrouter_models()
+
+    # Curated list of popular models for UI
+    popular = [
+        {
+            "id": "openai/gpt-4o-mini",
+            "name": "GPT-4o Mini",
+            "description": "Fast, cheap, good for most tasks",
+            "tier": "budget",
+        },
+        {
+            "id": "openai/gpt-4o",
+            "name": "GPT-4o",
+            "description": "OpenAI flagship model",
+            "tier": "premium",
+        },
+        {
+            "id": "anthropic/claude-sonnet-4",
+            "name": "Claude Sonnet 4",
+            "description": "Anthropic latest balanced model",
+            "tier": "premium",
+        },
+        {
+            "id": "anthropic/claude-3.5-haiku",
+            "name": "Claude 3.5 Haiku",
+            "description": "Fast and affordable Claude",
+            "tier": "budget",
+        },
+        {
+            "id": "google/gemini-2.0-flash",
+            "name": "Gemini 2.0 Flash",
+            "description": "Google fast model, very cheap",
+            "tier": "budget",
+        },
+        {
+            "id": "google/gemini-1.5-pro",
+            "name": "Gemini 1.5 Pro",
+            "description": "Google flagship, huge context",
+            "tier": "premium",
+        },
+        {
+            "id": "deepseek/deepseek-chat",
+            "name": "DeepSeek V3",
+            "description": "Extremely cheap, great quality",
+            "tier": "budget",
+        },
+        {
+            "id": "deepseek/deepseek-r1",
+            "name": "DeepSeek R1",
+            "description": "Reasoning model, very capable",
+            "tier": "mid",
+        },
+        {
+            "id": "meta-llama/llama-3.3-70b-instruct",
+            "name": "Llama 3.3 70B",
+            "description": "Open source, good performance",
+            "tier": "budget",
+        },
+        {
+            "id": "anthropic/claude-3-haiku",
+            "name": "Claude 3 Haiku",
+            "description": "Cheapest Claude, still capable",
+            "tier": "budget",
+        },
+    ]
+
+    # Add pricing info from dynamic or static source
+    for model in popular:
+        model_id = model["id"]
+        if model_id in dynamic:
+            input_cost, output_cost = dynamic[model_id]
+        elif model_id in MODEL_PRICING:
+            input_cost, output_cost = MODEL_PRICING[model_id]
+        else:
+            input_cost, output_cost = 0.15, 0.60  # default
+
+        model["input_cost_per_1m"] = input_cost
+        model["output_cost_per_1m"] = output_cost
+        model["price_display"] = f"${input_cost:.2f}/${output_cost:.2f} per 1M tokens"
+
+    return popular
 
 
 def calculate_cost(model: str, input_tokens: int, output_tokens: int) -> float:
@@ -63,12 +211,8 @@ def calculate_cost(model: str, input_tokens: int, output_tokens: int) -> float:
     if model.startswith("ollama/") or model.startswith("local/"):
         return 0.0
 
-    # Look up pricing
-    if model in MODEL_PRICING:
-        input_cost_per_1m, output_cost_per_1m = MODEL_PRICING[model]
-    else:
-        # Default pricing if model not found (assume gpt-4o-mini pricing)
-        input_cost_per_1m, output_cost_per_1m = 0.15, 0.60
+    # Try dynamic pricing first, then static
+    input_cost_per_1m, output_cost_per_1m = get_model_pricing(model)
 
     # Calculate cost
     input_cost = (input_tokens / 1_000_000) * input_cost_per_1m
@@ -91,7 +235,17 @@ def get_model_pricing(model: str) -> Tuple[float, float]:
     if model.startswith("ollama/") or model.startswith("local/"):
         return (0.0, 0.0)
 
-    return MODEL_PRICING.get(model, (0.15, 0.60))
+    # Check dynamic cache first
+    dynamic = fetch_openrouter_models()
+    if model in dynamic:
+        return dynamic[model]
+
+    # Fall back to static pricing
+    if model in MODEL_PRICING:
+        return MODEL_PRICING[model]
+
+    # Default pricing (gpt-4o-mini level)
+    return (0.15, 0.60)
 
 
 def estimate_cost(
@@ -132,11 +286,8 @@ def is_free_model(model: str) -> bool:
         return True
 
     # Check if pricing is 0
-    if model in MODEL_PRICING:
-        input_cost, output_cost = MODEL_PRICING[model]
-        return input_cost == 0.0 and output_cost == 0.0
-
-    return False
+    input_cost, output_cost = get_model_pricing(model)
+    return input_cost == 0.0 and output_cost == 0.0
 
 
 def is_expensive_model(model: str, threshold: float = 5.0) -> bool:
@@ -159,9 +310,5 @@ def is_expensive_model(model: str, threshold: float = 5.0) -> bool:
         return False
 
     # Check pricing
-    if model in MODEL_PRICING:
-        input_cost, output_cost = MODEL_PRICING[model]
-        return input_cost >= threshold or output_cost >= threshold
-
-    # Unknown models - assume not expensive (use default pricing)
-    return False
+    input_cost, output_cost = get_model_pricing(model)
+    return input_cost >= threshold or output_cost >= threshold
