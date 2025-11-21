@@ -40,13 +40,13 @@ This is a cost-optimized version of the AI 2027 scenario, designed for explorato
 
 ```bash
 # Single run
-python src/run_scenario.py scenarios/ai-2027/definition-budget/scenario.yaml
+scenario-lab run scenarios/ai-2027-budget
 
 # With limits (recommended for testing)
-python src/run_scenario.py scenarios/ai-2027/definition-budget/scenario.yaml --max-turns 12 --credit-limit 5
+scenario-lab run scenarios/ai-2027-budget --end-turn 12
 
 # Resume
-python src/run_scenario.py --resume scenarios/ai-2027/runs/run-001
+scenario-lab run scenarios/ai-2027-budget --resume runs/run-001
 ```
 
 ## Estimated Costs
@@ -70,10 +70,10 @@ Research question: Do the cheaper models produce qualitatively similar outcomes?
 You can test this by running both versions and comparing:
 ```bash
 # Run premium version
-python src/run_scenario.py scenarios/ai-2027/definition/scenario.yaml --max-turns 20
+scenario-lab run scenarios/ai-2027 --end-turn 20
 
 # Run budget version
-python src/run_scenario.py scenarios/ai-2027/definition-budget/scenario.yaml --max-turns 20
+scenario-lab run scenarios/ai-2027-budget --end-turn 20
 
 # Compare metrics and decision quality
 ```
@@ -83,5 +83,5 @@ Early testing suggests that gpt-4o-mini performs well for most actors, with diff
 ## See Also
 
 - Main README: `scenarios/ai-2027/README.md`
-- Premium version: `scenarios/ai-2027/definition/`
+- Premium version: `scenarios/ai-2027/`
 - Example batch config: `scenarios/ai-2027/example-batch-config.yaml`

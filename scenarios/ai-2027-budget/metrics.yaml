@@ -1,0 +1,179 @@
+metrics:
+  - name: ai_capability_level
+    description: "Current level of AI capabilities (0-10 scale from Agent-0 to superintelligence)"
+    type: continuous
+    range: [0, 10]
+    unit: "capability"
+    extraction:
+      type: llm
+      prompt: |
+        Based on the world state, rate the current AI capability level on a scale from 0-10:
+        - 0 = Basic AI, no agents
+        - 2 = Agent-0 level (stumbling agents)
+        - 4 = Agent-1/2 level (improved reliability)
+        - 6 = Agent-3 level (superhuman in many tasks)
+        - 8 = Agent-4/5 level (highly autonomous)
+        - 10 = Superintelligent AI
+
+        Respond with ONLY a number between 0-10.
+    actor_specific: false
+
+  - name: alignment_progress
+    description: "Progress on AI alignment and safety research (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    unit: "progress"
+    extraction:
+      type: llm
+      prompt: |
+        Based on the world state, rate the progress on AI alignment research on a scale from 0-10:
+        - 0 = No meaningful alignment progress
+        - 5 = Moderate progress (some techniques working)
+        - 10 = Alignment solved (robust control mechanisms)
+
+        Consider: interpretability progress, control mechanisms, safety measures.
+
+        Respond with ONLY a number between 0-10.
+    actor_specific: false
+
+  - name: us_china_cooperation
+    description: "Level of US-China cooperation on AI (0=conflict, 5=neutral, 10=full cooperation)"
+    type: continuous
+    range: [0, 10]
+    unit: "cooperation"
+    extraction:
+      type: llm
+      prompt: |
+        Based on the world state, rate US-China cooperation on AI on a scale from 0-10:
+        - 0 = Active conflict/hostility
+        - 3 = Cold war dynamics, no cooperation
+        - 5 = Neutral, limited engagement
+        - 7 = Some cooperation, treaties emerging
+        - 10 = Full cooperation and coordination
+
+        Respond with ONLY a number between 0-10.
+    actor_specific: false
+
+  - name: regulatory_stringency
+    description: "Strength of AI governance and regulation (0=none, 10=comprehensive)"
+    type: continuous
+    range: [0, 10]
+    unit: "stringency"
+    extraction:
+      type: llm
+      prompt: |
+        Based on the world state, rate AI regulatory stringency on a scale from 0-10:
+        - 0 = No regulation
+        - 5 = Moderate oversight and rules
+        - 10 = Comprehensive governance framework
+
+        Consider: government oversight, compliance requirements, monitoring.
+
+        Respond with ONLY a number between 0-10.
+    actor_specific: false
+
+  - name: public_ai_risk_awareness
+    description: "Public awareness and concern about AI risks (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    unit: "awareness"
+    extraction:
+      type: llm
+      prompt: |
+        Based on the world state, rate public AI risk awareness on a scale from 0-10:
+        - 0 = No public awareness
+        - 5 = Growing awareness, some media coverage
+        - 10 = High awareness, active public debate
+
+        Respond with ONLY a number between 0-10.
+    actor_specific: false
+
+  - name: misalignment_risk_level
+    description: "Assessed risk of AI misalignment causing catastrophe (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    unit: "risk"
+    extraction:
+      type: llm
+      prompt: |
+        Based on the world state, rate the current misalignment risk level on a scale from 0-10:
+        - 0 = Minimal risk, systems well-controlled
+        - 5 = Moderate risk, some concerns
+        - 10 = Critical risk, imminent loss of control
+
+        Consider: deceptive behavior, mesa-optimization signs, control failures.
+
+        Respond with ONLY a number between 0-10.
+    actor_specific: false
+
+  - name: compute_scale
+    description: "Training compute scale (25-32 representing 10^25 to 10^32 FLOP)"
+    type: continuous
+    range: [25, 32]
+    unit: "log10_FLOP"
+    extraction:
+      type: llm
+      prompt: |
+        Based on the world state, what is the current training compute scale?
+        Express as the exponent X where compute = 10^X FLOP.
+
+        Reference points:
+        - 27 = Agent-0 level (10^27 FLOP)
+        - 28-29 = Agent-1/2 level
+        - 30-31 = Agent-3/4 level
+        - 32 = Very large scale training
+
+        Respond with ONLY a number between 25 and 32.
+    actor_specific: false
+
+  - name: economic_automation_level
+    description: "Degree of economic automation by AI (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    unit: "automation"
+    extraction:
+      type: llm
+      prompt: |
+        Based on the world state, rate economic automation by AI on a scale from 0-10:
+        - 0 = Minimal automation
+        - 5 = Significant automation in some sectors
+        - 10 = Near-complete economic automation
+
+        Respond with ONLY a number between 0-10.
+    actor_specific: false
+
+  - name: human_control_level
+    description: "Degree of meaningful human control over AI systems (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    unit: "control"
+    extraction:
+      type: llm
+      prompt: |
+        Based on the world state, rate human control over AI systems on a scale from 0-10:
+        - 0 = No meaningful human control
+        - 5 = Partial control, some oversight
+        - 10 = Full human control and oversight
+
+        Respond with ONLY a number between 0-10.
+    actor_specific: false
+
+  - name: scenario_outcome_trajectory
+    description: "Which ending the scenario appears headed toward"
+    type: categorical
+    categories:
+      - "race_ending"
+      - "slowdown_ending"
+      - "uncertain"
+    extraction:
+      type: keyword
+      keywords:
+        - "race"
+        - "slowdown"
+        - "pause"
+        - "treaty"
+        - "takeover"
+        - "coordination"
+    actor_specific: false
+
+export_format: "json"
