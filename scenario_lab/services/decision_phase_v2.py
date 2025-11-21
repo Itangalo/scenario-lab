@@ -184,14 +184,23 @@ class DecisionPhaseV2:
             )
             state = state.with_cost(cost_record)
 
-            logger.info(
-                f"  ✓ Decision recorded: {llm_response.tokens_used:,} tokens "
-                f"(${cost_amount:.4f})"
-            )
+            # Show actor name and preview of decision
+            action_preview = decision.action[:20].replace('\n', ' ') if decision.action else ""
+            if len(decision.action) > 20:
+                action_preview += "..."
 
-            # Write decision to markdown file
+            # Write decision to markdown file and get path for link
             if self.output_dir:
-                self._write_decision_file(actor_short_name, actor_name, state.turn, parsed)
+                filepath = self._write_decision_file(actor_short_name, actor_name, state.turn, parsed)
+                # Create terminal hyperlink on the preview text (OSC 8 format)
+                linked_preview = f"\033]8;;file://{filepath}\033\\\"{action_preview}\"\033]8;;\033\\"
+            else:
+                linked_preview = f"\"{action_preview}\""
+
+            logger.info(
+                f"  ✓ {actor_name}: {linked_preview} "
+                f"({llm_response.tokens_used:,} tokens, ${cost_amount:.4f})"
+            )
 
         # Phase 3.3: Extract metrics from all decisions after all actors have decided
         if self.metrics_tracker:
@@ -230,19 +239,21 @@ class DecisionPhaseV2:
         actor_name: str,
         turn: int,
         decision_data: Dict[str, str]
-    ) -> None:
-        """Write decision to markdown file"""
+    ) -> Optional[Path]:
+        """Write decision to markdown file and return the filepath"""
         if not self.output_dir:
-            return
+            return None
 
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
         # Format decision as markdown
         markdown = self._format_decision_markdown(actor_name, turn, decision_data)
 
-        filename = self.output_dir / f"{actor_short_name}-{turn:03d}.md"
-        with open(filename, "w") as f:
+        filepath = self.output_dir / f"{actor_short_name}-{turn:03d}.md"
+        with open(filepath, "w") as f:
             f.write(markdown)
+
+        return filepath.resolve()
 
     def _format_decision_markdown(
         self,

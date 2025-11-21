@@ -75,6 +75,28 @@ class CommunicationPhaseV2:
         if turn_comms:
             logger.info(f"  Found {len(turn_comms)} communications for turn {state.turn}")
 
+            # Log details about each communication type
+            for comm in turn_comms:
+                if comm.type == "coalition":
+                    all_members = sorted(set([comm.sender] + comm.recipients))
+                    content_preview = comm.content[:30].replace('\n', ' ') if comm.content else ""
+                    if len(comm.content) > 30:
+                        content_preview += "..."
+                    logger.info(f"  ✓ Coalition formed: {', '.join(all_members)}")
+                    logger.info(f"    \"{content_preview}\"")
+                elif comm.type == "bilateral":
+                    participants = sorted([comm.sender] + comm.recipients)
+                    content_preview = comm.content[:30].replace('\n', ' ') if comm.content else ""
+                    if len(comm.content) > 30:
+                        content_preview += "..."
+                    logger.info(f"  ✓ Bilateral: {participants[0]} ↔ {participants[1]}")
+                    logger.info(f"    \"{content_preview}\"")
+                elif comm.type == "public":
+                    content_preview = comm.content[:30].replace('\n', ' ') if comm.content else ""
+                    if len(comm.content) > 30:
+                        content_preview += "..."
+                    logger.info(f"  ✓ Public statement by {comm.sender}: \"{content_preview}\"")
+
             # Export to files if output_dir is set
             if self.output_dir:
                 from scenario_lab.core.communication_manager import export_communications_to_files
