@@ -7,6 +7,8 @@ from typing import Optional, List, Dict, Any, Union
 from pydantic import BaseModel, Field, field_validator, model_validator
 from enum import Enum
 
+from scenario_lab.utils.yaml_helpers import sanitize_yaml_string as _sanitize_yaml_string
+
 
 class ActorControl(str, Enum):
     """How an actor is controlled"""
@@ -134,7 +136,7 @@ class ActorConfig(BaseModel):
     @field_validator('goals')
     @classmethod
     def normalize_goals(cls, v: Optional[Union[str, List[str]]]) -> List[str]:
-        """Convert goals to list format"""
+        """Convert goals to list format and sanitize for YAML"""
         if v is None:
             return []
 
@@ -143,9 +145,36 @@ class ActorConfig(BaseModel):
             lines = [line.strip() for line in v.split('\n') if line.strip()]
             # Remove bullet points if present
             lines = [line.lstrip('- ') for line in lines]
-            return lines if lines else [v]
+            result = lines if lines else [v]
+        else:
+            result = v
 
-        return v
+        # Sanitize each goal for YAML safety
+        return [_sanitize_yaml_string(goal) for goal in result]
+
+    @field_validator('constraints')
+    @classmethod
+    def sanitize_constraints(cls, v: Optional[List[str]]) -> Optional[List[str]]:
+        """Sanitize constraints for YAML safety"""
+        if v is None:
+            return None
+        return [_sanitize_yaml_string(c) for c in v]
+
+    @field_validator('personality_traits')
+    @classmethod
+    def sanitize_personality_traits(cls, v: Optional[List[str]]) -> Optional[List[str]]:
+        """Sanitize personality traits for YAML safety"""
+        if v is None:
+            return None
+        return [_sanitize_yaml_string(t) for t in v]
+
+    @field_validator('preferred_coalitions')
+    @classmethod
+    def sanitize_preferred_coalitions(cls, v: Optional[List[str]]) -> Optional[List[str]]:
+        """Sanitize preferred coalitions for YAML safety"""
+        if v is None:
+            return None
+        return [_sanitize_yaml_string(c) for c in v]
 
     @model_validator(mode='after')
     def validate_model_field(self):

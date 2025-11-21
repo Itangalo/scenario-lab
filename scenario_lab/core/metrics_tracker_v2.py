@@ -78,6 +78,11 @@ class MetricsTrackerV2:
             if metric_config.actor_specific and not actor_name:
                 continue
 
+            # Skip NON-actor-specific metrics when extracting from actor decisions
+            # (they will be extracted once from world state instead)
+            if not metric_config.actor_specific and actor_name:
+                continue
+
             # Extract based on type
             extraction = metric_config.extraction
 
@@ -163,8 +168,10 @@ class MetricsTrackerV2:
                 context={"metric": metric.name, "turn": turn},
             )
 
-            # Parse response
-            value = self._parse_numeric_value(response.content, metric.type)
+            # Parse response (pass categories for categorical metrics)
+            value = self._parse_numeric_value(
+                response.content, metric.type, metric.categories
+            )
 
             # Create MetricRecord
             record = MetricRecord(
@@ -309,8 +316,8 @@ class MetricsTrackerV2:
             if isinstance(raw_value, tuple):
                 raw_value = next((v for v in raw_value if v), '')
 
-            # Convert to numeric value
-            value = self._parse_numeric_value(raw_value, metric.type)
+            # Convert to numeric value (pass categories for categorical metrics)
+            value = self._parse_numeric_value(raw_value, metric.type, metric.categories)
 
             record = MetricRecord(
                 name=metric.name,
@@ -342,16 +349,22 @@ class MetricsTrackerV2:
             logger.error(f"Failed to extract metric '{metric.name}' via pattern: {e}")
             return None
 
-    def _parse_numeric_value(self, raw_value: str, metric_type: str) -> float:
+    def _parse_numeric_value(
+        self,
+        raw_value: str,
+        metric_type: str,
+        categories: Optional[List[str]] = None
+    ) -> float:
         """
         Parse string value to float
 
         Args:
             raw_value: Raw string value
             metric_type: Metric type (continuous, categorical, boolean)
+            categories: List of valid categories (for categorical metrics)
 
         Returns:
-            Parsed float value
+            Parsed float value (for categorical: index in categories list)
         """
         try:
             # Remove whitespace
@@ -363,6 +376,16 @@ class MetricsTrackerV2:
                     return 1.0
                 else:
                     return 0.0
+
+            # Handle categorical - return index in categories list
+            if metric_type == "categorical" and categories:
+                value_lower = value_str.lower()
+                for idx, cat in enumerate(categories):
+                    if cat.lower() == value_lower:
+                        return float(idx)
+                # Category not found - log but don't warn excessively
+                logger.debug(f"Categorical value '{raw_value}' not in categories {categories}")
+                return -1.0  # Indicates unknown category
 
             # Handle scientific notation (e.g., "10^25")
             if '^' in value_str:

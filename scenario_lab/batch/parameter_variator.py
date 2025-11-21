@@ -15,6 +15,8 @@ from pathlib import Path
 import yaml
 import logging
 
+from scenario_lab.utils.yaml_helpers import sanitize_actor_config
+
 logger = logging.getLogger(__name__)
 
 
@@ -213,10 +215,11 @@ class ParameterVariator:
                     actor_config['llm_model'] = new_model
                     applied_modifications.add(actor_name)
 
-                # Write modified actor file
+                # Write modified actor file (sanitize for YAML safety)
                 dest_path = temp_actors_dir / actor_file.name
+                sanitized_config = sanitize_actor_config(actor_config)
                 with open(dest_path, 'w') as f:
-                    yaml.safe_dump(actor_config, f, default_flow_style=False, sort_keys=False)
+                    yaml.safe_dump(sanitized_config, f, default_flow_style=False, sort_keys=False)
 
         # Warn about modifications that didn't match any actors
         unapplied_modifications = requested_modifications - applied_modifications
