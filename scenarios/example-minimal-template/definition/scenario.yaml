@@ -1,0 +1,59 @@
+name: "Community Park Planning"
+description: |
+  A minimal template scenario demonstrating the basic structure.
+  A neighborhood is planning a new community park and stakeholders
+  must decide how to use the space.
+
+system_prompt: |
+  You are simulating a community planning process for a new 2-acre park.
+
+  The neighborhood association has secured funding for the park, but
+  stakeholders have different visions for how the space should be used.
+
+  Key questions:
+  - Active recreation (playground, sports) vs. passive (gardens, nature)?
+  - Community programs vs. open space?
+  - Maintenance responsibilities and costs?
+
+  Make realistic decisions that reflect stakeholder priorities.
+
+initial_world_state: |
+  # Initial Situation
+
+  The Riverside Neighborhood Association has secured $500,000 in funding
+  to develop a vacant 2-acre lot into a community park.
+
+  **Current Status:**
+  - Lot is currently empty (former industrial site, cleaned up)
+  - Funding is available and must be used within 18 months
+  - Basic design must be approved by the end of this process
+
+  **Constraints:**
+  - Budget: $500,000 (construction only)
+  - Ongoing maintenance will come from neighborhood association funds
+  - Must comply with city park regulations
+
+parameters:
+  max_turns: 5
+  turn_duration: "1 meeting"
+  turn_duration_can_vary: false
+
+world_state_model: "anthropic/claude-3-5-sonnet-20241022"
+
+features:
+  communications:
+    enabled: true
+    max_per_turn: 1
+
+  exogenous_events:
+    enabled: false
+
+  metrics_extraction:
+    enabled: false
+
+  quality_assurance:
+    enabled: false
+
+  context_management:
+    enabled: true
+    max_context_tokens: 8000

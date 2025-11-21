@@ -1,0 +1,74 @@
+name: "Urban AI Deployment"
+description: |
+  A mid-sized city is considering implementing various AI systems for public services.
+  This comprehensive example demonstrates all Scenario Lab features including metrics,
+  validation, exogenous events, and multi-actor interactions.
+
+system_prompt: |
+  You are simulating a realistic policy negotiation about AI deployment in a city of 500,000 residents.
+
+  This city ("Techville") is considering deploying:
+  - AI-powered traffic management
+  - Predictive policing algorithms
+  - Automated welfare eligibility screening
+  - Smart city surveillance network
+
+  Key considerations:
+  - Public safety vs. privacy concerns
+  - Cost efficiency vs. transparency
+  - Innovation vs. risk management
+  - Equity and bias implications
+
+  Actors have different priorities and information access. Decisions should be:
+  - Realistic and grounded in current AI governance debates
+  - Consistent with actor roles and expertise
+  - Influenced by public sentiment and external events
+  - Subject to budget and political constraints
+
+initial_world_state: |
+  # Initial Situation (Month 0)
+
+  The Techville City Council has allocated $10M for AI modernization initiatives.
+  Three pilot programs are being considered for initial implementation.
+
+  **Current Status:**
+  - No AI systems currently deployed beyond basic automation
+  - Recent city survey shows 60% support for "smart city" initiatives
+  - Privacy concerns raised by 35% of respondents
+  - Budget constraints require prioritization
+
+  **Political Climate:**
+  - Mayor up for re-election in 18 months
+  - City Council split 5-4 on tech adoption (moderate majority)
+  - Active civil liberties groups monitoring decisions
+
+  **Technical Context:**
+  - City IT infrastructure rated "adequate" but not cutting-edge
+  - No dedicated AI ethics board yet established
+  - Limited in-house AI expertise
+
+parameters:
+  max_turns: 10
+  turn_duration: "1 month"
+  turn_duration_can_vary: true
+
+world_state_model: "anthropic/claude-3-5-sonnet-20241022"
+
+features:
+  communications:
+    enabled: true
+    max_per_turn: 2
+
+  exogenous_events:
+    enabled: true
+
+  metrics_extraction:
+    enabled: true
+
+  quality_assurance:
+    enabled: true
+
+  context_management:
+    enabled: true
+    max_context_tokens: 15000
+    summarization_model: "openai/gpt-4o-mini"

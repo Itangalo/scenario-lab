@@ -1,0 +1,156 @@
+# Exogenous Events - Background events that shape the scenario
+# This file demonstrates all four types of events: trends, random, conditional, and scheduled
+
+trends:
+  - name: "ai_hype_cycle"
+    description: "Media coverage and public interest in AI fluctuates"
+    probability_per_turn: 0.3
+    effects:
+      - turn_range: [1, 3]
+        description: "Media runs positive stories about AI successes in other cities"
+        impact: "Public interest in AI initiatives increases (+5-10% support)"
+
+      - turn_range: [4, 6]
+        description: "News coverage shifts to AI failures and bias incidents elsewhere"
+        impact: "Public skepticism increases, privacy advocates gain platform"
+
+      - turn_range: [7, 10]
+        description: "Balanced coverage emerges, focus on governance frameworks"
+        impact: "Emphasis shifts to oversight and safeguards rather than yes/no decisions"
+
+  - name: "economic_pressures"
+    description: "City budget situation evolves over time"
+    probability_per_turn: 0.4
+    effects:
+      - turn_range: [1, 4]
+        description: "Tax revenues meet projections, budget stable"
+        impact: "Full $10M remains available for AI initiatives"
+
+      - turn_range: [5, 7]
+        description: "Revenue shortfall requires budget review"
+        impact: "Pressure to show ROI on spending, some budget may be redirected"
+
+      - turn_range: [8, 10]
+        description: "Election year budget politics intensify"
+        impact: "Every expenditure scrutinized, both by supporters and opponents"
+
+random_events:
+  - name: "ai_incident_elsewhere"
+    description: "Major AI system failure in another city makes national news"
+    probability: 0.15
+    turn_range: [2, 8]
+    effect: |
+      A facial recognition system in a nearby city falsely identifies dozens of people,
+      leading to wrongful detentions. Story goes viral, intensifying scrutiny of
+      AI deployments nationwide. Privacy advocates leverage this in Techville.
+
+  - name: "tech_company_scandal"
+    description: "AI vendor involved in data breach or ethical controversy"
+    probability: 0.10
+    turn_range: [3, 7]
+    effect: |
+      A competitor to TechSolutions Inc. is revealed to have sold customer data
+      to third parties without adequate consent. Industry reputation takes a hit.
+      Increased due diligence demands on all AI vendors.
+
+  - name: "federal_grant_opportunity"
+    description: "Federal government announces smart city grant program"
+    probability: 0.20
+    turn_range: [2, 6]
+    effect: |
+      Department of Transportation announces $50M in smart city grants, with
+      preference for cities demonstrating responsible AI deployment.
+      Could significantly expand available funding if Techville qualifies.
+
+  - name: "grassroots_momentum"
+    description: "Community organizing creates unexpected political pressure"
+    probability: 0.15
+    turn_range: [3, 8]
+    effect: |
+      Local high school students organize "Tech Futures Forum" that goes viral
+      on social media, bringing youth voice into debate. Could swing either
+      pro-innovation or pro-privacy depending on how city engages.
+
+conditional_events:
+  - name: "surveillance_backlash"
+    description: "Strong opposition emerges if surveillance systems proposed"
+    conditions:
+      - type: "world_state_contains"
+        pattern: "predictive policing|surveillance network"
+        sensitivity: "proposed|approved|deployed"
+    effect: |
+      Digital Rights Coalition launches petition that gathers 10,000 signatures
+      in one week. Local ACLU chapter threatens lawsuit. Media coverage intensifies.
+      Mayor's office flooded with calls. City Council members face pressure from
+      constituents.
+
+  - name: "success_breeds_support"
+    description: "Successful pilot program builds momentum for expansion"
+    conditions:
+      - type: "world_state_contains"
+        pattern: "pilot|trial"
+        sensitivity: "successful|effective|positive results"
+    effect: |
+      Success stories spread through community networks. Local media runs feature
+      on "Techville's Smart Future." Other city departments request similar programs.
+      Budget committee signals willingness to expand funding.
+
+  - name: "implementation_problems"
+    description: "Technical issues damage credibility"
+    conditions:
+      - type: "world_state_contains"
+        pattern: "deployed|implemented"
+        sensitivity: "bugs|errors|failures|problems|issues"
+    effect: |
+      System glitches become public. Social media posts show failures. Tech company
+      scrambles to respond. Opposition groups use as evidence of rushing deployment.
+      Calls for independent audit grow.
+
+  - name: "vendor_lock_in_concerns"
+    description: "Large contract raises procurement questions"
+    conditions:
+      - type: "metrics"
+        metric: "budget_spent"
+        operator: ">"
+        value: 5.0
+    effect: |
+      City Controller raises questions about single-vendor dependence and
+      lack of competitive bidding. Procurement process comes under scrutiny.
+      City Council requests independent cost-benefit analysis.
+
+scheduled_events:
+  - name: "quarterly_budget_review"
+    description: "Regular budget reviews create decision points"
+    schedule:
+      turns: [3, 6, 9]
+    effect: |
+      City Council holds quarterly budget review. All departments must justify
+      spending and show progress. AI initiatives come under standard scrutiny.
+      Any spending must be defended with results.
+
+  - name: "election_season_begins"
+    description: "Political dynamics shift as election approaches"
+    schedule:
+      turns: [7]
+    effect: |
+      Election season officially begins. Mayor's challengers announce campaigns.
+      All major decisions become campaign issues. Opposition research begins.
+      Every vote on City Council is calculated for political impact.
+
+  - name: "annual_community_forum"
+    description: "Required public forum creates accountability moment"
+    schedule:
+      turns: [5]
+    effect: |
+      City charter requires annual community forum on major initiatives.
+      All actors must present progress and answer questions. Media coverage
+      guaranteed. Formal public comment period opens. Can't avoid public engagement.
+
+  - name: "fiscal_year_end"
+    description: "End of fiscal year creates use-it-or-lose-it pressure"
+    schedule:
+      turns: [8]
+    effect: |
+      Fiscal year ends in 2 months. Unspent allocated funds may be reclaimed
+      by City Council for other priorities. Pressure to commit funds or
+      risk losing them. Accelerated decision-making likely.
