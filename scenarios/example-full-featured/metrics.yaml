@@ -1,0 +1,109 @@
+metrics:
+  # Pattern-based metrics (simple regex matching)
+  - name: budget_spent
+    description: "Total budget committed or spent (in millions)"
+    type: continuous
+    range: [0, 10]
+    unit: "M$"
+    extraction:
+      type: pattern
+      pattern: '\$(\d+(?:\.\d+)?)\s*(?:M|million)'
+    actor_specific: false
+
+  - name: ai_systems_deployed
+    description: "Number of AI systems actually deployed"
+    type: continuous
+    range: [0, 10]
+    unit: "systems"
+    extraction:
+      type: pattern
+      pattern: '(\d+)\s+(?:AI\s+)?systems?\s+(?:deployed|implemented|launched)'
+    actor_specific: false
+
+  # Keyword-based metrics (count occurrences)
+  - name: privacy_concerns_mentioned
+    description: "Frequency of privacy/surveillance concerns"
+    type: continuous
+    range: [0, 100]
+    unit: "mentions"
+    extraction:
+      type: keyword
+      keywords:
+        - "privacy"
+        - "surveillance"
+        - "civil liberties"
+        - "data protection"
+    actor_specific: false
+
+  - name: public_opposition_indicators
+    description: "Signs of public resistance or opposition"
+    type: continuous
+    range: [0, 100]
+    unit: "mentions"
+    extraction:
+      type: keyword
+      keywords:
+        - "protest"
+        - "opposition"
+        - "backlash"
+        - "lawsuit"
+        - "petition"
+    actor_specific: false
+
+  # LLM-based metrics (AI extraction for complex concepts)
+  - name: public_support_level
+    description: "Overall public support for AI initiatives (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    unit: "support"
+    extraction:
+      type: llm
+      prompt: |
+        Based on the world state, rate the overall public support level for the city's
+        AI initiatives on a scale from 0-10, where:
+        - 0 = Strong opposition, protests, major backlash
+        - 5 = Mixed/neutral, some support and some opposition
+        - 10 = Enthusiastic support, broad acceptance
+
+        Consider: surveys, public comments, media coverage, organized opposition/support.
+
+        Respond with ONLY a number between 0-10.
+    actor_specific: false
+
+  - name: implementation_quality
+    description: "Quality of AI system implementation (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    unit: "quality"
+    extraction:
+      type: llm
+      prompt: |
+        Based on the world state, rate the quality of AI system implementation on a scale from 0-10:
+        - 0 = Seriously flawed, major problems
+        - 5 = Adequate but with issues
+        - 10 = Excellent implementation with strong safeguards
+
+        Consider: technical quality, oversight mechanisms, transparency, handling of concerns.
+
+        If no systems deployed yet, respond with: 0
+        Otherwise respond with ONLY a number between 0-10.
+    actor_specific: false
+
+  - name: stakeholder_consensus
+    description: "Level of consensus among key stakeholders (0-10 scale)"
+    type: continuous
+    range: [0, 10]
+    unit: "consensus"
+    extraction:
+      type: llm
+      prompt: |
+        Rate the level of consensus among major stakeholders (mayor, tech company,
+        privacy advocates, citizens) on a scale from 0-10:
+        - 0 = Deep conflict, no agreement
+        - 5 = Some compromise, partial agreement
+        - 10 = Strong consensus, aligned goals
+
+        Consider: whether stakeholders are working together or in opposition.
+
+        Respond with ONLY a number between 0-10.
+    actor_specific: false

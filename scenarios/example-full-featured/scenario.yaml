@@ -47,12 +47,14 @@ initial_world_state: |
   - No dedicated AI ethics board yet established
   - Limited in-house AI expertise
 
-parameters:
-  max_turns: 10
-  turn_duration: "1 month"
-  turn_duration_can_vary: true
-
+turns: 10
+turn_duration: "1 month"
 world_state_model: "anthropic/claude-3-5-sonnet-20241022"
+actors:
+  - mayor
+  - tech-company
+  - privacy-advocate
+  - citizen-rep
 
 features:
   communications:

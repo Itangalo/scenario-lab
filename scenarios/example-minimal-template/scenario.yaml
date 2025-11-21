@@ -33,12 +33,12 @@ initial_world_state: |
   - Ongoing maintenance will come from neighborhood association funds
   - Must comply with city park regulations
 
-parameters:
-  max_turns: 5
-  turn_duration: "1 meeting"
-  turn_duration_can_vary: false
-
+turns: 5
+turn_duration: "1 week"
 world_state_model: "anthropic/claude-3-5-sonnet-20241022"
+actors:
+  - parent-representative
+  - gardening-club
 
 features:
   communications:
