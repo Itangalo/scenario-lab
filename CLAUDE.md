@@ -146,17 +146,16 @@ When working with scenarios, the structure follows this pattern:
 
 ```
 scenario-name/
-├── definition/
-│   ├── scenario.yaml          # Initial world state and rules
-│   ├── actors/
-│   │   ├── actor1.yaml        # Actor profiles (including LLM model specification)
-│   │   └── actor2.yaml
-│   ├── metrics.yaml           # Defined metrics and thresholds
-│   ├── validation-rules.yaml  # Instructions for quality assurance checks
-│   ├── exogenous-events.yaml  # Optional: background event definitions (trends, random, conditional, scheduled)
-│   └── background/            # Optional: background data and information
-│       ├── historical-data.md
-│       └── reference-docs.md
+├── scenario.yaml              # Main scenario configuration (name, world state, rules)
+├── actors/
+│   ├── actor1.yaml            # Actor profiles (including LLM model specification)
+│   └── actor2.yaml
+├── metrics.yaml               # Optional: defined metrics and thresholds
+├── validation-rules.yaml      # Optional: instructions for quality assurance checks
+├── exogenous-events.yaml      # Optional: background event definitions
+├── background/                # Optional: background data and information
+│   ├── historical-data.md
+│   └── reference-docs.md
 ├── runs/
 │   ├── run-001/
 │   │   ├── world-state-001.md
@@ -171,6 +170,8 @@ scenario-name/
     ├── critical-factors.md
     └── metrics-summary.json   # Aggregated structured data across runs
 ```
+
+**Note:** Configuration files (`scenario.yaml`, `actors/`, etc.) are placed directly in the scenario root directory, not in a `definition/` subdirectory.
 
 ## Key Design Principles
 
