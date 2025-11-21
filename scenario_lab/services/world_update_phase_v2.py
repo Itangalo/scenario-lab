@@ -187,6 +187,18 @@ class WorldUpdatePhaseV2:
                     state = state.with_metric(metric)
                 logger.info(f"  ✓ Extracted {len(metrics)} metrics from world state")
 
+        # Display current metrics for this turn
+        turn_metrics = [m for m in state.metrics if m.turn == state.turn - 1]
+        if turn_metrics:
+            logger.info("  📊 Metrics:")
+            for m in turn_metrics:
+                # Format value nicely (no decimals for integers)
+                if m.value == int(m.value):
+                    value_str = str(int(m.value))
+                else:
+                    value_str = f"{m.value:.2f}"
+                logger.info(f"     {m.name}: {value_str}")
+
         # Phase 3.4: Validate world state coherence
         if self.qa_validator and self.qa_validator.is_enabled():
             # Get previous world state (before this update)

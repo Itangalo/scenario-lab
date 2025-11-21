@@ -184,9 +184,13 @@ class DecisionPhaseV2:
             )
             state = state.with_cost(cost_record)
 
+            # Show actor name and preview of decision
+            action_preview = decision.action[:20].replace('\n', ' ') if decision.action else ""
+            if len(decision.action) > 20:
+                action_preview += "..."
             logger.info(
-                f"  ✓ Decision recorded: {llm_response.tokens_used:,} tokens "
-                f"(${cost_amount:.4f})"
+                f"  ✓ {actor_name}: \"{action_preview}\" "
+                f"({llm_response.tokens_used:,} tokens, ${cost_amount:.4f})"
             )
 
             # Write decision to markdown file
