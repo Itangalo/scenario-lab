@@ -1,0 +1,59 @@
+validation_model: "openai/gpt-4o-mini"
+
+checks:
+  actor_decision_consistency:
+    enabled: true
+    severity: "medium"
+    description: |
+      Validate that actor decisions align with their stated goals, constraints,
+      expertise levels, and decision-making styles.
+
+      Key checks:
+      - Mayor should prioritize political viability and re-election
+      - Tech company should push products while managing reputation risk
+      - Privacy advocate should oppose surveillance-heavy applications
+      - Citizens should represent diverse community concerns
+
+  world_state_coherence:
+    enabled: true
+    severity: "high"
+    description: |
+      Validate that world state updates logically follow from actor decisions
+      and show realistic consequences.
+
+      Key checks:
+      - Budget changes should match spending decisions
+      - Public opinion should respond to actions (positive or negative)
+      - Political dynamics should evolve realistically
+      - Timeline should be plausible (not too fast or slow)
+
+  information_access_consistency:
+    enabled: true
+    severity: "high"
+    description: |
+      Validate that actors only reference information they have access to.
+
+      Key checks:
+      - Actors shouldn't know private information from others
+      - Public information should be available to all
+      - Communications should respect visibility rules
+      - Background information should be accessible as specified
+
+  goal_progress_tracking:
+    enabled: true
+    severity: "low"
+    description: |
+      Track whether actors are making progress toward their stated goals
+      or if they're acting inconsistently with their objectives.
+
+      This is a softer check - actors may sometimes act suboptimally,
+      but sustained patterns of counterproductive behavior suggest problems.
+
+run_after_each_turn: true
+generate_turn_reports: true
+generate_summary_report: true
+
+reporting:
+  verbosity: "detailed"  # Options: minimal, standard, detailed
+  include_suggestions: true  # Include suggestions for improvement
+  halt_on_critical: false  # Don't stop scenario on critical issues (just warn)
