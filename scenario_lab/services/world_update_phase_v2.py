@@ -173,11 +173,30 @@ class WorldUpdatePhaseV2:
         )
         state = state.with_cost(cost_record)
 
-        logger.info(f"  ✓ World state updated: {llm_response.tokens_used:,} tokens "
-            f"(${cost_amount:.4f})"
+        # Write world state to markdown file first to get filepath for link
+        filepath = None
+        if self.output_dir:
+            filepath = self._write_world_state_file(
+                state.turn - 1,  # Previous turn (since we just incremented)
+                parsed,
+                llm_response.content
+            )
+
+        # Create preview of world state
+        state_preview = parsed['updated_state'][:25].replace('\n', ' ') if parsed.get('updated_state') else ""
+        if len(parsed.get('updated_state', '')) > 25:
+            state_preview += "..."
+
+        if filepath:
+            linked_preview = f"\033]8;;file://{filepath}\033\\\"{state_preview}\"\033]8;;\033\\"
+        else:
+            linked_preview = f"\"{state_preview}\""
+
+        logger.info(
+            f"  ✓ World state: {linked_preview} "
+            f"({llm_response.tokens_used:,} tokens, ${cost_amount:.4f})"
         )
-        logger.info(f"  ✓ {len(parsed['key_changes'])} key changes identified")
-        logger.info(f"  ✓ {len(parsed['consequences'])} consequences noted")
+        logger.info(f"  ✓ {len(parsed['key_changes'])} key changes, {len(parsed['consequences'])} consequences")
 
         # Phase 3.3: Extract metrics from world state
         if self.metrics_tracker:
@@ -229,14 +248,6 @@ class WorldUpdatePhaseV2:
                 cost_record = self.qa_validator.create_cost_record(validation_result, state.turn - 1)
                 state = state.with_cost(cost_record)
 
-        # Write world state to markdown file
-        if self.output_dir:
-            self._write_world_state_file(
-                state.turn - 1,  # Previous turn (since we just incremented)
-                parsed,
-                llm_response.content
-            )
-
         return state
 
     def _write_world_state_file(
@@ -244,19 +255,21 @@ class WorldUpdatePhaseV2:
         turn: int,
         parsed_data: Dict[str, Any],
         full_response: str
-    ) -> None:
-        """Write world state to markdown file"""
+    ) -> Optional[Path]:
+        """Write world state to markdown file and return filepath"""
         if not self.output_dir:
-            return
+            return None
 
         self.output_dir.mkdir(parents=True, exist_ok=True)
 
         # Format world state as markdown
         markdown = self._format_world_state_markdown(turn, parsed_data, full_response)
 
-        filename = self.output_dir / f"world-state-{turn:03d}.md"
-        with open(filename, "w") as f:
+        filepath = self.output_dir / f"world-state-{turn:03d}.md"
+        with open(filepath, "w") as f:
             f.write(markdown)
+
+        return filepath.resolve()
 
     def _format_world_state_markdown(
         self,

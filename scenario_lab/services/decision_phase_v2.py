@@ -190,15 +190,16 @@ class DecisionPhaseV2:
                 action_preview += "..."
 
             # Write decision to markdown file and get path for link
-            file_link = ""
             if self.output_dir:
                 filepath = self._write_decision_file(actor_short_name, actor_name, state.turn, parsed)
-                # Create terminal hyperlink (OSC 8 format, supported by modern terminals)
-                file_link = f" \033]8;;file://{filepath}\033\\[{filepath.name}]\033]8;;\033\\"
+                # Create terminal hyperlink on the preview text (OSC 8 format)
+                linked_preview = f"\033]8;;file://{filepath}\033\\\"{action_preview}\"\033]8;;\033\\"
+            else:
+                linked_preview = f"\"{action_preview}\""
 
             logger.info(
-                f"  ✓ {actor_name}: \"{action_preview}\" "
-                f"({llm_response.tokens_used:,} tokens, ${cost_amount:.4f}){file_link}"
+                f"  ✓ {actor_name}: {linked_preview} "
+                f"({llm_response.tokens_used:,} tokens, ${cost_amount:.4f})"
             )
 
         # Phase 3.3: Extract metrics from all decisions after all actors have decided
