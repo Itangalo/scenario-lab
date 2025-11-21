@@ -195,7 +195,7 @@ class DecisionPhaseV2:
 
         # Phase 3.3: Extract metrics from all decisions after all actors have decided
         if self.metrics_tracker:
-            metrics = self.metrics_tracker.extract_metrics_from_decisions(state)
+            metrics = await self.metrics_tracker.extract_metrics_from_decisions(state)
             if metrics:
                 for metric in metrics:
                     state = state.with_metric(metric)

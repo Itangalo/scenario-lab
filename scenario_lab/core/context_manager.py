@@ -47,11 +47,24 @@ class ContextManagerV2:
         Initialize context manager
 
         Args:
-            window_size: Number of recent turns to keep in full detail
+            window_size: Number of recent turns to keep in full detail (must be >= 1)
             summarization_model: LLM model for summarization (should be cheap)
-            max_cache_size: Maximum number of summaries to cache
+            max_cache_size: Maximum number of summaries to cache (must be >= 1)
             api_key: API key for LLM calls (if None, uses environment variable)
+
+        Raises:
+            ValueError: If window_size < 1 or max_cache_size < 1 or summarization_model is empty
         """
+        # V2 Pattern: Validate parameters in __init__
+        if window_size < 1:
+            raise ValueError(f"window_size must be >= 1, got {window_size}")
+
+        if max_cache_size < 1:
+            raise ValueError(f"max_cache_size must be >= 1, got {max_cache_size}")
+
+        if not summarization_model or not summarization_model.strip():
+            raise ValueError("summarization_model cannot be empty")
+
         self.window_size = window_size
         self.summarization_model = summarization_model
         self.max_cache_size = max_cache_size
@@ -60,6 +73,11 @@ class ContextManagerV2:
         # LRU cache for summaries
         self.summaries_cache: Dict[str, str] = {}
         self.cache_access_order: List[str] = []
+
+        logger.debug(
+            f"ContextManagerV2 initialized: window_size={window_size}, "
+            f"model={summarization_model}, cache_size={max_cache_size}"
+        )
 
     def _get_cached_summary(self, key: str) -> Optional[str]:
         """Get summary from cache and update LRU order"""

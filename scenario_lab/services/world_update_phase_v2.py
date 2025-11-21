@@ -180,7 +180,7 @@ class WorldUpdatePhaseV2:
 
         # Phase 3.3: Extract metrics from world state
         if self.metrics_tracker:
-            metrics = self.metrics_tracker.extract_metrics_from_world_state(state)
+            metrics = await self.metrics_tracker.extract_metrics_from_world_state(state)
             if metrics:
                 for metric in metrics:
                     state = state.with_metric(metric)
