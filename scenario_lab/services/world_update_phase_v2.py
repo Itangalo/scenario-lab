@@ -151,8 +151,9 @@ class WorldUpdatePhaseV2:
         # Update state with new world state
         state = replace(state, world_state=new_world_state)
 
-        # Increment turn number (world update completes the turn)
-        state = replace(state, turn=state.turn + 1)
+        # Note: Turn number is managed by orchestrator, not by individual phases
+        # The orchestrator increments turn at the start of execute_turn()
+        # so we should NOT increment it here
 
         # Track costs
         cost_amount = calculate_cost(

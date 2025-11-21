@@ -62,7 +62,7 @@ class SyncRunner:
         Args:
             scenario_path: Path to scenario directory
             output_path: Path to output directory
-            end_turn: Turn number to stop at (e.g., end_turn=5 stops after turn 5)
+            end_turn: Number of turns to execute (e.g., end_turn=5 executes 5 actor decision rounds)
             credit_limit: Maximum cost in USD
             database: Optional Database instance for persistence
             resume_from: Path to run directory to resume from
