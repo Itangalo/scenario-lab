@@ -199,7 +199,7 @@ class StatePersistence:
                 turn=metric["turn"],
                 name=metric["name"],
                 value=metric["value"],
-                actor=metric["actor"],
+                actor=metric.get("actor"),  # Optional - may be None
                 timestamp=datetime.fromisoformat(metric["timestamp"]),
             )
             for metric in state_dict["metrics"]

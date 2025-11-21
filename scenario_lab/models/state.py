@@ -157,6 +157,7 @@ class MetricRecord:
     name: str
     value: float
     turn: int
+    actor: Optional[str] = None  # For actor-specific metrics
     timestamp: datetime = field(default_factory=_make_timestamp)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
