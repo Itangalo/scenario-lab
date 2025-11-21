@@ -12,7 +12,7 @@ Based on ROADMAP_V2.md Phase 2.1 architecture design.
 """
 from __future__ import annotations
 from dataclasses import dataclass, field, replace
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List, Optional, Set
 from datetime import datetime
 from enum import Enum
 
@@ -199,6 +199,9 @@ class ScenarioState:
     metrics: List[MetricRecord] = field(default_factory=list)
     costs: List[CostRecord] = field(default_factory=list)
 
+    # Exogenous events
+    triggered_event_ids: Set[str] = field(default_factory=set)  # Track one-time events that have triggered
+
     # Execution metadata
     started_at: Optional[datetime] = None
     completed_at: Optional[datetime] = None
@@ -266,6 +269,10 @@ class ScenarioState:
         """Add a metric record"""
         new_metrics = self.metrics + [metric]
         return replace(self, metrics=new_metrics)
+
+    def with_triggered_events(self, event_ids: Set[str]) -> ScenarioState:
+        """Update triggered event IDs"""
+        return replace(self, triggered_event_ids=event_ids)
 
     def with_error(self, error: str) -> ScenarioState:
         """Set error state"""

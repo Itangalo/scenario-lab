@@ -11,6 +11,7 @@ import uuid
 import logging
 from typing import Optional, Dict, Any, Protocol
 from datetime import datetime
+from dataclasses import replace
 
 from scenario_lab.models.state import (
     ScenarioState,
@@ -73,6 +74,7 @@ class ScenarioOrchestrator:
         credit_limit: Optional[float] = None,
         output_dir: Optional[str] = None,
         save_state_every_turn: bool = True,
+        exogenous_event_manager: Optional[Any] = None,  # ExogenousEventManager
     ):
         """
         Initialize orchestrator
@@ -83,12 +85,14 @@ class ScenarioOrchestrator:
             credit_limit: Maximum cost in USD
             output_dir: Output directory for state saving
             save_state_every_turn: Whether to save state after each turn
+            exogenous_event_manager: Optional event manager for background events
         """
         self.event_bus = event_bus or get_event_bus()
         self.end_turn = end_turn
         self.credit_limit = credit_limit
         self.output_dir = output_dir
         self.save_state_every_turn = save_state_every_turn
+        self.exogenous_event_manager = exogenous_event_manager
 
         # Phase services (to be injected)
         self.phases: Dict[PhaseType, PhaseService] = {}
@@ -266,6 +270,32 @@ class ScenarioOrchestrator:
         )
 
         try:
+            # Evaluate exogenous events for this turn (if event manager exists)
+            if self.exogenous_event_manager:
+                # Get current metrics for conditional event evaluation
+                current_metrics = self._get_latest_metrics(state)
+
+                # Evaluate which events should trigger this turn
+                triggered_events = self.exogenous_event_manager.get_events_for_turn(
+                    turn=turn,
+                    metrics=current_metrics
+                )
+
+                # Store triggered events in state metadata for world update phase
+                if triggered_events:
+                    # Convert to dict format for world update phase
+                    events_for_world_update = [
+                        {"name": evt.name, "description": evt.description}
+                        for evt in triggered_events
+                    ]
+                    new_metadata = {**state.metadata, "exogenous_events": events_for_world_update}
+                    state = replace(state, metadata=new_metadata)
+
+                # Update triggered event IDs in state
+                state = state.with_triggered_events(
+                    self.exogenous_event_manager.get_triggered_event_ids()
+                )
+
             # Execute each phase in sequence
             phase_sequence = self._get_phase_sequence(state)
 
@@ -456,6 +486,26 @@ class ScenarioOrchestrator:
             return True
 
         return False
+
+    def _get_latest_metrics(self, state: ScenarioState) -> Dict[str, float]:
+        """
+        Get latest value for each metric from state
+
+        Args:
+            state: Current scenario state
+
+        Returns:
+            Dictionary of metric name -> latest value
+        """
+        metrics_dict = {}
+
+        # Group metrics by name and take the latest value (highest turn)
+        for metric in state.metrics:
+            if metric.name not in metrics_dict or metric.turn > metrics_dict[metric.name][0]:
+                metrics_dict[metric.name] = (metric.turn, metric.value)
+
+        # Return just the values (not the turns)
+        return {name: value for name, (turn, value) in metrics_dict.items()}
 
     def pause(self) -> None:
         """Request orchestrator to pause after current turn"""

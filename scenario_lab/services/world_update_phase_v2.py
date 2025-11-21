@@ -3,14 +3,14 @@ World Update Phase Service for Scenario Lab V2
 
 Synthesizes new world state from actor decisions using V2 components (no V1 dependencies).
 
-Phase 1.3 Implementation + Phase 3.3-3.4 Enhancements:
+Phase 1.3 Implementation + Phase 3.3-3.4 Enhancements + Exogenous Events:
 - Uses V2 WorldSynthesizer for prompt building
 - Uses V2 API client for LLM calls
 - Updates ScenarioState.world_state immutably
 - Tracks costs via ScenarioState
 - ✅ Phase 3.3: Metrics extraction from world state
 - ✅ Phase 3.4: QA validation of world state coherence
-- Defers exogenous events to Phase 3 (stub)
+- ✅ Exogenous events: Background events integrated into world state synthesis
 """
 from __future__ import annotations
 import os
@@ -100,8 +100,8 @@ class WorldUpdatePhaseV2:
                 "reasoning": decision.reasoning
             }
 
-        # Phase 1.3: Stub for exogenous events (to be implemented in Phase 3)
-        exogenous_events = None  # Will be implemented in Phase 3
+        # Get exogenous events from state metadata (set by orchestrator)
+        exogenous_events = state.metadata.get("exogenous_events", None)
 
         # Build prompts using synthesizer
         system_prompt = self.synthesizer.build_system_prompt()

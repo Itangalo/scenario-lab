@@ -141,7 +141,7 @@ scenario-name/
 │   │   └── actor2.yaml
 │   ├── metrics.yaml           # Defined metrics and thresholds
 │   ├── validation-rules.yaml  # Instructions for quality assurance checks
-│   ├── black-swans.yaml       # Optional: black swan event definitions
+│   ├── exogenous-events.yaml  # Optional: background event definitions (trends, random, conditional, scheduled)
 │   └── background/            # Optional: background data and information
 │       ├── historical-data.md
 │       └── reference-docs.md
@@ -163,7 +163,7 @@ scenario-name/
 ## Key Design Principles
 
 1. **AI-Controlled Actors**: All actors can be AI agents with goals, information, and decision-making capabilities. Different actors may use different LLM models. Actor behavior (including bounded rationality, biases, expertise) is specified in open actor descriptions.
-2. **Dynamic World State**: World evolves based on actor decisions, including potential black swan events
+2. **Dynamic World State**: World evolves based on actor decisions, including exogenous background events (trends, random, conditional, scheduled)
 3. **Human-in-the-Loop**: Any AI actor can be replaced by a human expert at any time
 4. **Information Asymmetry**: Actors maintain both public and private information. Actors evaluate information quality themselves.
 5. **Step-by-Step Documentation**: Each simulation step documented in markdown files, with structured metrics data (JSON) for analysis
