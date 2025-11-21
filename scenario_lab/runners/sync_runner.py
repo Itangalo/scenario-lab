@@ -93,9 +93,35 @@ class SyncRunner:
         self.qa_validator: Optional[QAValidatorV2] = None
 
     def _default_output_path(self) -> str:
-        """Generate default output path"""
+        """
+        Generate default output path with auto-incrementing run number
+
+        Finds the next available run-XXX directory number.
+        """
         scenario_name = Path(self.scenario_path).name
-        return f"output/{scenario_name}/run-001"
+        base_dir = Path(f"output/{scenario_name}")
+
+        # If base directory doesn't exist, use run-001
+        if not base_dir.exists():
+            return f"output/{scenario_name}/run-001"
+
+        # Find existing run directories
+        existing_runs = []
+        for path in base_dir.iterdir():
+            if path.is_dir() and path.name.startswith("run-"):
+                try:
+                    run_num = int(path.name.split("-")[1])
+                    existing_runs.append(run_num)
+                except (ValueError, IndexError):
+                    continue
+
+        # Get next run number
+        if not existing_runs:
+            next_run = 1
+        else:
+            next_run = max(existing_runs) + 1
+
+        return f"output/{scenario_name}/run-{next_run:03d}"
 
     def setup(self) -> None:
         """Setup all components"""
