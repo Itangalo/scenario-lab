@@ -48,6 +48,8 @@ class MetricsTracker:
         """
         Load metrics definitions from YAML file
 
+        Supports both V1 format (metrics as dict) and V2 format (metrics as list).
+
         Args:
             config_path: Path to metrics.yaml
         """
@@ -55,7 +57,15 @@ class MetricsTracker:
             with open(config_path, 'r') as f:
                 config = yaml.safe_load(f)
 
-            self.metrics_definitions = config.get('metrics', {})
+            metrics_data = config.get('metrics', {})
+
+            # Handle V2 format where metrics is a list of objects with 'name' property
+            if isinstance(metrics_data, list):
+                self.metrics_definitions = {m['name']: m for m in metrics_data}
+            else:
+                # V1 format: metrics is already a dict
+                self.metrics_definitions = metrics_data
+
             self.scenario_name = config.get('scenario_name', '')
 
             logger.info(f"Loaded {len(self.metrics_definitions)} metric definitions")
