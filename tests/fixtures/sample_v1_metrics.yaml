@@ -1,0 +1,48 @@
+# Sample V1 metrics format for migration testing
+extraction_model: "openai/gpt-4o-mini"
+
+metrics:
+  budget_spent:
+    description: "Total budget spent in millions"
+    extraction_type: "pattern"
+    pattern: '\$(\d+(?:\.\d+)?)\s*(?:M|million)'
+    data_type: "float"
+    aggregation: "max"
+
+  privacy_concerns:
+    description: "Privacy concern mentions"
+    extraction_type: "keyword"
+    keywords:
+      - "privacy"
+      - "surveillance"
+      - "data protection"
+    data_type: "integer"
+    aggregation: "sum"
+
+  support_level:
+    description: "Public support level (0-10)"
+    extraction_type: "llm"
+    extraction_prompt: |
+      Rate the public support level on a scale of 0-10.
+      Consider media coverage, public statements, and stakeholder reactions.
+      Respond with only a number.
+    data_type: "integer"
+    aggregation: "last"
+
+  scenario_outcome:
+    description: "Scenario trajectory"
+    extraction_type: "keyword"
+    keywords:
+      - "cooperation"
+      - "conflict"
+      - "stalemate"
+    data_type: "string"
+    aggregation: "last"
+
+thresholds:
+  budget_spent:
+    warning: 8.0
+    critical: 10.0
+  support_level:
+    warning: 3.0
+    critical: 2.0
