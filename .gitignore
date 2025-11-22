@@ -37,6 +37,10 @@ ENV/
 .DS_Store
 Thumbs.db
 
+# Database files
+*.db
+!Thumbs.db
+
 # Scenario runs (keep definition, ignore runs)
 **/runs/
 **/output/
