@@ -26,8 +26,7 @@ class ActorDecisionJSON(BaseModel):
     reasoning: str = Field(..., min_length=10, description="Actor's reasoning")
     action: str = Field(..., min_length=10, description="Actor's action")
 
-    class Config:
-        extra = "allow"  # Allow extra fields for future extension
+    model_config = {"extra": "allow"}  # Allow extra fields for future extension
 
 
 def extract_json_from_response(content: str) -> Optional[str]:
@@ -109,7 +108,7 @@ def parse_json_decision(
     if validate:
         try:
             validated = ActorDecisionJSON(**data)
-            return validated.dict(), None
+            return validated.model_dump(), None
         except ValidationError as e:
             logger.warning(f"JSON validation failed: {e}")
             # Return raw data anyway, but with warning

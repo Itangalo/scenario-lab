@@ -26,6 +26,7 @@ Environment Variables:
 from __future__ import annotations
 import asyncio
 import logging
+from contextlib import asynccontextmanager
 from typing import Optional, Dict, Any
 from datetime import datetime
 from pathlib import Path
@@ -45,11 +46,55 @@ from scenario_lab.api.rate_limit import check_rate_limit, get_rate_limiter
 
 logger = logging.getLogger(__name__)
 
+# Global state
+running_scenarios: Dict[str, Dict[str, Any]] = {}
+database: Optional[Database] = None
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Lifespan context manager for startup and shutdown events"""
+    global database
+    # Startup
+    try:
+        database = Database("sqlite:///scenario-lab.db")
+        logger.info("Scenario Lab API started with database")
+    except Exception as e:
+        logger.error(f"Failed to initialize database: {e}")
+        logger.warning("API will run without database support")
+        database = None
+
+    # Log authentication and rate limiting configuration
+    settings = get_settings()
+    if settings.dev_mode:
+        logger.warning("API running in DEVELOPMENT MODE - auth and rate limiting disabled")
+    else:
+        if settings.auth_enabled:
+            logger.info(f"API authentication enabled with {len(settings.api_keys)} API key(s)")
+        else:
+            logger.warning("API authentication DISABLED - no API keys configured or auth explicitly disabled")
+
+        if settings.rate_limit_enabled:
+            logger.info(
+                f"Rate limiting enabled: {settings.rate_limit_requests} requests per {settings.rate_limit_window}s"
+            )
+        else:
+            logger.warning("Rate limiting DISABLED")
+
+    # Log CORS configuration
+    logger.info(f"CORS allowed origins: {settings.cors_allowed_origins}")
+
+    yield
+
+    # Shutdown (nothing to clean up currently)
+
+
 # FastAPI app
 app = FastAPI(
     title="Scenario Lab API",
     description="AI-powered multi-actor scenario simulation framework",
     version=__version__,
+    lifespan=lifespan,
 )
 
 
@@ -117,10 +162,6 @@ async def rate_limit_middleware(request: Request, call_next):
 
     return await call_next(request)
 
-# Global state
-running_scenarios: Dict[str, Dict[str, Any]] = {}
-database: Optional[Database] = None
-
 
 # Pydantic models for API
 class ScenarioExecuteRequest(BaseModel):
@@ -167,39 +208,6 @@ class RunSummary(BaseModel):
     turns: int
     total_cost: float
     created: datetime
-
-
-@app.on_event("startup")
-async def startup_event():
-    """Initialize database and log configuration on startup"""
-    global database
-    try:
-        database = Database("sqlite:///scenario-lab.db")
-        logger.info("Scenario Lab API started with database")
-    except Exception as e:
-        logger.error(f"Failed to initialize database: {e}")
-        logger.warning("API will run without database support")
-        database = None
-
-    # Log authentication and rate limiting configuration
-    settings = get_settings()
-    if settings.dev_mode:
-        logger.warning("API running in DEVELOPMENT MODE - auth and rate limiting disabled")
-    else:
-        if settings.auth_enabled:
-            logger.info(f"API authentication enabled with {len(settings.api_keys)} API key(s)")
-        else:
-            logger.warning("API authentication DISABLED - no API keys configured or auth explicitly disabled")
-
-        if settings.rate_limit_enabled:
-            logger.info(
-                f"Rate limiting enabled: {settings.rate_limit_requests} requests per {settings.rate_limit_window}s"
-            )
-        else:
-            logger.warning("Rate limiting DISABLED")
-
-    # Log CORS configuration
-    logger.info(f"CORS allowed origins: {settings.cors_allowed_origins}")
 
 
 @app.get("/")

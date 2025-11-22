@@ -143,5 +143,4 @@ class ExogenousEventsConfig(BaseModel):
 
         return parsed_events
 
-    class Config:
-        arbitrary_types_allowed = True
+    model_config = {"arbitrary_types_allowed": True}
