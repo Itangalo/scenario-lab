@@ -1,116 +1,116 @@
 # Scenario Lab - Architecture Ground Truth
 
-> **Syfte**: Detta dokument är den auktoritativa referensen för AI-agenter som arbetar med kodbasen. Det beskriver arkitektur, datastrukturer, designmönster och konventioner som gäller för projektet. När det finns konflikt mellan tester och kod, använd detta dokument för att avgöra vad som är korrekt.
+> **Purpose**: This document is the authoritative reference for AI agents working with the codebase. It describes architecture, data structures, design patterns, and conventions that apply to the project. When there is conflict between tests and code, use this document to determine what is correct.
 
-> **Status**: V2 Pure Architecture (2025-11-20). All V1-kod har tagits bort. Systemet är 100% V2.
+> **Status**: V2 Pure Architecture (2025-11-20). All V1 code has been removed. The system is 100% V2.
 
 ---
 
-## 1. Arkitekturöversikt
+## 1. Architecture Overview
 
-### 1.1 Kärnprinciper
+### 1.1 Core Principles
 
-Scenario Lab är byggt på fyra grundläggande principer:
+Scenario Lab is built on four fundamental principles:
 
-1. **Immutabilitet**: All state är oföränderlig (frozen dataclasses). Operationer returnerar nya state-objekt.
-2. **Async-first**: Alla LLM-anrop är asynkrona. Phases implementerar `async execute()`.
-3. **Event-driven**: Komponenter kommunicerar via EventBus, inte direkta anrop.
-4. **Komposition**: Tjänster komponeras, inte ärvs. Beroenden injiceras.
+1. **Immutability**: All state is immutable (frozen dataclasses). Operations return new state objects.
+2. **Async-first**: All LLM calls are asynchronous. Phases implement `async execute()`.
+3. **Event-driven**: Components communicate via EventBus, not direct calls.
+4. **Composition**: Services are composed, not inherited. Dependencies are injected.
 
-### 1.2 Paketstruktur
+### 1.2 Package Structure
 
 ```
 scenario_lab/
-├── core/                    # Kärnlogik och domänobjekt
+├── core/                    # Core logic and domain objects
 │   ├── actor.py            # Immutable Actor dataclass
-│   ├── events.py           # EventBus och EventType enum
-│   ├── orchestrator.py     # Faskoordinering
-│   ├── prompt_builder.py   # LLM-promptkonstruktion
-│   ├── world_synthesizer.py # Världssyntes från beslut
-│   ├── context_manager.py  # Kontextfönster och sammanfattning
-│   ├── communication_manager.py # Aktörkommunikation
-│   ├── metrics_tracker_v2.py   # Metrisk extraktion (Pydantic)
-│   └── qa_validator_v2.py      # Kvalitetssäkring (Pydantic)
+│   ├── events.py           # EventBus and EventType enum
+│   ├── orchestrator.py     # Phase coordination
+│   ├── prompt_builder.py   # LLM prompt construction
+│   ├── world_synthesizer.py # World synthesis from decisions
+│   ├── context_manager.py  # Context window and summarization
+│   ├── communication_manager.py # Actor communication
+│   ├── metrics_tracker_v2.py   # Metrics extraction (Pydantic)
+│   └── qa_validator_v2.py      # Quality assurance (Pydantic)
 │
 ├── models/                  # Immutable state dataclasses
 │   └── state.py            # ScenarioState, WorldState, etc.
 │
-├── schemas/                 # Pydantic-valideringsscheman
+├── schemas/                 # Pydantic validation schemas
 │   ├── scenario.py         # ScenarioConfig
 │   ├── actor.py            # ActorConfig
 │   ├── metrics.py          # MetricsConfig
 │   ├── validation.py       # ValidationConfig
 │   └── exogenous_events.py # ExogenousEventsConfig
 │
-├── loaders/                 # YAML-konfigurationsladdare
-│   ├── scenario_loader.py  # Laddar scenario.yaml + aktörer
-│   ├── actor_loader.py     # Laddar actors/*.yaml
-│   ├── metrics_loader.py   # Laddar metrics.yaml
-│   └── validation_loader.py # Laddar validation-rules.yaml
+├── loaders/                 # YAML configuration loaders
+│   ├── scenario_loader.py  # Loads scenario.yaml + actors
+│   ├── actor_loader.py     # Loads actors/*.yaml
+│   ├── metrics_loader.py   # Loads metrics.yaml
+│   └── validation_loader.py # Loads validation-rules.yaml
 │
-├── services/                # Fasimplementationer
-│   ├── decision_phase_v2.py     # Aktörbeslut (pure V2)
-│   ├── world_update_phase_v2.py # Världsuppdatering (pure V2)
-│   ├── communication_phase.py   # Kommunikationsfas
-│   ├── persistence_phase.py     # Filutmatning
-│   └── database_persistence_phase.py # Databaslagring (valfri)
+├── services/                # Phase implementations
+│   ├── decision_phase_v2.py     # Actor decisions (pure V2)
+│   ├── world_update_phase_v2.py # World update (pure V2)
+│   ├── communication_phase.py   # Communication phase
+│   ├── persistence_phase.py     # File output
+│   └── database_persistence_phase.py # Database storage (optional)
 │
-├── runners/                 # Exekveringsrunners
-│   └── sync_runner.py      # Pure V2 synkron runner
+├── runners/                 # Execution runners
+│   └── sync_runner.py      # Pure V2 synchronous runner
 │
-├── batch/                   # Batch-processering
-│   ├── parameter_variator.py    # Variationsgenerering
-│   ├── batch_runner.py          # Batchorkestrering
-│   ├── batch_cost_manager.py    # Budgetspårning
-│   └── batch_analyzer.py        # Statistisk analys
+├── batch/                   # Batch processing
+│   ├── parameter_variator.py    # Variation generation
+│   ├── batch_runner.py          # Batch orchestration
+│   ├── batch_cost_manager.py    # Budget tracking
+│   └── batch_analyzer.py        # Statistical analysis
 │
-├── interfaces/              # Användargränssnitt
-│   └── cli.py              # Click-baserad CLI
+├── interfaces/              # User interfaces
+│   └── cli.py              # Click-based CLI
 │
 ├── api/                     # REST API
-│   └── app.py              # FastAPI-applikation
+│   └── app.py              # FastAPI application
 │
-└── utils/                   # Tvärgående verktyg
-    ├── api_client.py       # LLM API-anrop
-    ├── response_parser.py  # LLM-svarsanalys
-    ├── response_cache.py   # SHA256-caching
-    ├── model_pricing.py    # Kostnadsberäkning
-    ├── state_persistence.py # State-serialisering
-    └── error_handler.py    # Felhantering
+└── utils/                   # Cross-cutting utilities
+    ├── api_client.py       # LLM API calls
+    ├── response_parser.py  # LLM response parsing
+    ├── response_cache.py   # SHA256 caching
+    ├── model_pricing.py    # Cost calculation
+    ├── state_persistence.py # State serialization
+    └── error_handler.py    # Error handling
 ```
 
 ---
 
-## 2. Datamodeller (Ground Truth)
+## 2. Data Models (Ground Truth)
 
 ### 2.1 ScenarioState
 
-**Plats**: `scenario_lab/models/state.py`
+**Location**: `scenario_lab/models/state.py`
 
-ScenarioState är det centrala tillståndsobjektet som flödar genom exekveringen.
+ScenarioState is the central state object that flows through execution.
 
 ```python
 @dataclass(frozen=True)
 class ScenarioState:
-    # Identifierare
+    # Identifiers
     scenario_id: str
     scenario_name: str
     run_id: str
 
     # Status
     status: ScenarioStatus  # created|running|paused|completed|halted|failed
-    turn: int               # Aktuell tur (0-indexerad internt, 1-indexerad i filer)
+    turn: int               # Current turn (0-indexed internally, 1-indexed in files)
     current_phase: Optional[PhaseType]
 
-    # Kärndata
+    # Core data
     world_state: WorldState
     actors: Dict[str, ActorState]
 
-    # Turdata
-    communications: List[Communication]  # Alla kommunikationer
-    decisions: Dict[str, Decision]       # Aktuell turs beslut (per aktör)
+    # Turn data
+    communications: List[Communication]  # All communications
+    decisions: Dict[str, Decision]       # Current turn's decisions (per actor)
 
-    # Spårning
+    # Tracking
     metrics: List[MetricRecord]
     costs: List[CostRecord]
 
@@ -119,7 +119,7 @@ class ScenarioState:
     triggered_events: List[str]
 ```
 
-**Transformationsmetoder** (returnerar alltid nya objekt):
+**Transformation methods** (always return new objects):
 
 - `with_turn(turn: int) -> ScenarioState`
 - `with_status(status: ScenarioStatus) -> ScenarioState`
@@ -132,30 +132,30 @@ class ScenarioState:
 - `with_started() -> ScenarioState`
 - `with_completed() -> ScenarioState`
 
-**Beräknade egenskaper**:
+**Computed properties**:
 
-- `total_cost() -> float`: Summerar alla kostnader
-- `actor_cost(name: str) -> float`: Kostnad för specifik aktör
-- `phase_cost(phase: PhaseType) -> float`: Kostnad per fas
-- `get_metrics_by_name(name: str) -> List[MetricRecord]`: Filtrerar metrics
+- `total_cost() -> float`: Sums all costs
+- `actor_cost(name: str) -> float`: Cost for specific actor
+- `phase_cost(phase: PhaseType) -> float`: Cost per phase
+- `get_metrics_by_name(name: str) -> List[MetricRecord]`: Filters metrics
 
-**Serialisering**:
+**Serialization**:
 
-- `to_dict() -> Dict`: Konverterar till JSON-kompatibel dict
-- `ScenarioState.from_dict(d: Dict) -> ScenarioState`: Rekonstruerar från dict
+- `to_dict() -> Dict`: Converts to JSON-compatible dict
+- `ScenarioState.from_dict(d: Dict) -> ScenarioState`: Reconstructs from dict
 
 ### 2.2 WorldState
 
 ```python
 @dataclass(frozen=True)
 class WorldState:
-    turn: int           # Tur då detta tillstånd skapades
-    content: str        # Markdown-beskrivning av världen
+    turn: int           # Turn when this state was created
+    content: str        # Markdown description of the world
     timestamp: datetime = field(default_factory=datetime.now)
     metadata: Dict[str, Any] = field(default_factory=dict)
 
     def with_content(self, content: str) -> WorldState:
-        """Returnerar ny WorldState med uppdaterat innehåll"""
+        """Returns new WorldState with updated content"""
 ```
 
 ### 2.3 ActorState
@@ -167,12 +167,12 @@ class ActorState:
     short_name: str
     model: str
     current_goals: List[str]
-    recent_decisions: List[Decision]  # Senaste 5 besluten
+    recent_decisions: List[Decision]  # Last 5 decisions
     private_information: str = ""
     metadata: Dict[str, Any] = field(default_factory=dict)
 
     def with_decision(self, decision: Decision) -> ActorState:
-        """Lägger till beslut, uppdaterar mål, trimmar historik till 5"""
+        """Adds decision, updates goals, trims history to 5"""
 ```
 
 ### 2.4 Decision
@@ -182,9 +182,9 @@ class ActorState:
 class Decision:
     actor: str
     turn: int
-    goals: List[str]        # Aktörens mål vid beslutet
-    reasoning: str          # Resonemang/analys
-    action: str             # Konkret handling
+    goals: List[str]        # Actor's goals at decision time
+    reasoning: str          # Reasoning/analysis
+    action: str             # Concrete action
     timestamp: datetime
     metadata: Dict[str, Any] = field(default_factory=dict)
 ```
@@ -196,7 +196,7 @@ class Decision:
 class Communication:
     turn: int
     sender: str
-    recipients: List[str]   # Tom lista = offentligt
+    recipients: List[str]   # Empty list = public
     content: str
     comm_type: str          # 'bilateral' | 'coalition' | 'public'
     timestamp: datetime
@@ -209,12 +209,12 @@ class Communication:
 @dataclass(frozen=True)
 class CostRecord:
     timestamp: datetime
-    actor: Optional[str]    # None för systemkostnader
+    actor: Optional[str]    # None for system costs
     phase: str              # 'decision' | 'world_update' | 'validation' etc.
     model: str              # 'openai/gpt-4o' etc.
     input_tokens: int
     output_tokens: int
-    cost: float             # I USD
+    cost: float             # In USD
 ```
 
 ### 2.7 MetricRecord
@@ -222,10 +222,10 @@ class CostRecord:
 ```python
 @dataclass(frozen=True)
 class MetricRecord:
-    name: str               # Metrisk-ID från metrics.yaml
+    name: str               # Metric ID from metrics.yaml
     turn: int
-    value: Any              # float | str | bool beroende på typ
-    actor: Optional[str]    # None för globala metrics
+    value: Any              # float | str | bool depending on type
+    actor: Optional[str]    # None for global metrics
     timestamp: datetime
     metadata: Dict[str, Any] = field(default_factory=dict)
 ```
@@ -252,116 +252,116 @@ class PhaseType(Enum):
 
 ---
 
-## 3. Fasexekveringsflöde
+## 3. Phase Execution Flow
 
-### 3.1 Sekvens per Tur
+### 3.1 Sequence Per Turn
 
 ```
-TUR START
+TURN START
   │
   ├─→ Emit TURN_STARTED event
   │
   ▼
-KOMMUNIKATIONSFAS (om aktiverad)
-  │ - Bilaterala förhandlingar
-  │ - Koalitionsförslag
-  │ - Offentliga uttalanden
-  │ - → state med Communications
+COMMUNICATION PHASE (if enabled)
+  │ - Bilateral negotiations
+  │ - Coalition proposals
+  │ - Public statements
+  │ - → state with Communications
   │
   ▼
-BESLUTSFAS
+DECISION PHASE
   │ For each actor (concurrent):
-  │   1. ContextManager → kontextualiserad världsstat
-  │   2. CommunicationManager → synliga kommunikationer
-  │   3. PromptBuilder → beslutsprompt
-  │   4. APIClient → LLM-anrop
-  │   5. ResponseParser → Decision-objekt
-  │   6. → state med Decision + CostRecord
+  │   1. ContextManager → contextualized world state
+  │   2. CommunicationManager → visible communications
+  │   3. PromptBuilder → decision prompt
+  │   4. APIClient → LLM call
+  │   5. ResponseParser → Decision object
+  │   6. → state with Decision + CostRecord
   │
-  │ Skriver: actor-name-NNN.md
-  │
-  ▼
-VÄRLDSUPPDATERINGSFAS
-  │ 1. Samla alla beslut från turen
-  │ 2. WorldSynthesizer → syntesprompt
-  │ 3. APIClient → LLM-anrop
-  │ 4. ResponseParser → ny världsstat
-  │ 5. MetricsTracker → extrahera metrics (om metrics.yaml finns)
-  │ 6. → state med WorldState + MetricRecords + CostRecord
-  │
-  │ Skriver: world-state-NNN.md
+  │ Writes: actor-name-NNN.md
   │
   ▼
-VALIDERINGSFAS (om validation-rules.yaml finns)
-  │ 1. Validera beslut mot aktörsmål
-  │ 2. Validera världsstats koherens
-  │ 3. Validera informationsåtkomst
-  │ 4. → state med ValidationRecords + CostRecord
+WORLD UPDATE PHASE
+  │ 1. Collect all decisions from turn
+  │ 2. WorldSynthesizer → synthesis prompt
+  │ 3. APIClient → LLM call
+  │ 4. ResponseParser → new world state
+  │ 5. MetricsTracker → extract metrics (if metrics.yaml exists)
+  │ 6. → state with WorldState + MetricRecords + CostRecord
   │
-  │ Skriver: validation-NNN.md
+  │ Writes: world-state-NNN.md
   │
   ▼
-PERSISTENSFAS
+VALIDATION PHASE (if validation-rules.yaml exists)
+  │ 1. Validate decisions against actor goals
+  │ 2. Validate world state coherence
+  │ 3. Validate information access
+  │ 4. → state with ValidationRecords + CostRecord
+  │
+  │ Writes: validation-NNN.md
+  │
+  ▼
+PERSISTENCE PHASE
   │ 1. StatePersistence.save() → scenario-state.json
-  │ 2. DatabasePersistence (om aktiverad)
-  │ 3. Sammanfattningar
+  │ 2. DatabasePersistence (if enabled)
+  │ 3. Summaries
   │
   ▼
-TUR SLUT
+TURN END
   │
   ├─→ Emit TURN_COMPLETED event
   │
-  ├─→ Kontrollera credit_limit → HALTED om överskriden
-  ├─→ Kontrollera end_turn → COMPLETED om uppnådd
+  ├─→ Check credit_limit → HALTED if exceeded
+  ├─→ Check end_turn → COMPLETED if reached
   │
-  └─→ Fortsätt till nästa tur eller avsluta
+  └─→ Continue to next turn or finish
 ```
 
-### 3.2 Nyckelprinciper
+### 3.2 Key Principles
 
-1. **Samtidig turexekvering**: Alla aktörer fattar beslut parallellt inom en tur
-2. **State immutabilitet**: Varje fas tar emot state, returnerar ny state
-3. **Event-driven övervakning**: Events emitteras vid varje milstolpe
-4. **Felisolering**: En aktörs fel kraschar inte hela fasen
-5. **Kontextfönster**: ContextManager förhindrar tokenöverflöde
+1. **Simultaneous turn execution**: All actors make decisions in parallel within a turn
+2. **State immutability**: Each phase receives state, returns new state
+3. **Event-driven monitoring**: Events emitted at each milestone
+4. **Error isolation**: One actor's failure doesn't crash the entire phase
+5. **Context window**: ContextManager prevents token overflow
 
 ---
 
-## 4. Konfigurationsscheman
+## 4. Configuration Schemas
 
 ### 4.1 scenario.yaml
 
 ```yaml
-# OBLIGATORISKA FÄLT
-name: string                      # Scenariots namn
-initial_world_state: |            # Markdown, kan vara multiline
-  Beskrivning av världens utgångsläge...
-turn_duration: "6 months"         # Mönster: "N unit"
-actors:                           # Lista med aktörs-filnamn (utan .yaml)
+# REQUIRED FIELDS
+name: string                      # Scenario name
+initial_world_state: |            # Markdown, can be multiline
+  Description of the world's initial state...
+turn_duration: "6 months"         # Pattern: "N unit"
+actors:                           # List of actor filenames (without .yaml)
   - actor-one
   - actor-two
 
-# TEMPORAL (en av dessa krävs)
-turns: 10                         # Enkelt: antal turer
-# ELLER
+# TEMPORAL (one of these required)
+turns: 10                         # Simple: number of turns
+# OR
 scenario_length:
-  type: fixed                     # 'fixed' eller 'condition'
-  turns: 10                       # Om type=fixed
-  condition: "..."                # Om type=condition
+  type: fixed                     # 'fixed' or 'condition'
+  turns: 10                       # If type=fixed
+  condition: "..."                # If type=condition
 
-# VALFRIA INSTÄLLNINGAR
-world_state_model: "openai/gpt-4o-mini"    # Standard LLM
-system_prompt: string                       # Scenario-nivå prompt
+# OPTIONAL SETTINGS
+world_state_model: "openai/gpt-4o-mini"    # Default LLM
+system_prompt: string                       # Scenario-level prompt
 description: string
-context_window_size: 3                      # Antal turer i fulldetalj
+context_window_size: 3                      # Number of turns in full detail
 
-# KOMMUNIKATION
+# COMMUNICATION
 enable_bilateral_communication: true
 enable_coalition_formation: false
 enable_public_statements: true
 max_communications_per_turn: 2
 
-# AVANCERAT
+# ADVANCED
 enable_black_swans: false
 allow_actor_reflection: false
 parallel_action_resolution: true
@@ -370,28 +370,28 @@ parallel_action_resolution: true
 ### 4.2 actors/*.yaml
 
 ```yaml
-# OBLIGATORISKA
-name: "Full Actor Name"           # Visningsnamn
-short_name: actor-id              # Identifierare (lowercase, bindestreck)
-llm_model: "openai/gpt-4o"        # Eller "model:"
+# REQUIRED
+name: "Full Actor Name"           # Display name
+short_name: actor-id              # Identifier (lowercase, hyphens)
+llm_model: "openai/gpt-4o"        # Or "model:"
 
-# BETEENDE
-goals:                            # Lista eller multiline string
+# BEHAVIOR
+goals:                            # List or multiline string
   - "Primary goal"
   - "Secondary goal"
 role: "Actor's role description"
 description: |
-  Längre beskrivning av aktören...
+  Longer description of the actor...
 
-# VALFRIA
+# OPTIONAL
 constraints:
   - "Constraint 1"
 expertise:
   domain: "level"
 decision_style: "Analytical and cautious"
 private_information: |
-  Information endast denna aktör har...
-control: ai                       # 'ai' eller 'human'
+  Information only this actor has...
+control: ai                       # 'ai' or 'human'
 ```
 
 ### 4.3 metrics.yaml
@@ -401,7 +401,7 @@ metrics:
   - name: metric_identifier       # lowercase_underscore
     description: "What this measures"
     type: continuous              # continuous | categorical | boolean
-    range: [0, 100]               # För continuous
+    range: [0, 100]               # For continuous
     extraction:
       type: llm                   # llm | keyword | pattern | manual
       prompt: "Evaluate X on scale 0-100"
@@ -432,15 +432,15 @@ halt_on_critical: false
 
 ---
 
-## 5. Designmönster
+## 5. Design Patterns
 
 ### 5.1 Immutable Update Pattern
 
 ```python
-# FEL - mutation
-state.actors[name].goals = new_goals  # Kraschar (frozen)
+# WRONG - mutation
+state.actors[name].goals = new_goals  # Crashes (frozen)
 
-# RÄTT - returnera nytt objekt
+# RIGHT - return new object
 from dataclasses import replace
 new_actor = replace(actor, current_goals=new_goals)
 state = state.with_actor(name, new_actor)
@@ -450,20 +450,20 @@ state = state.with_actor(name, new_actor)
 
 ```python
 class ExamplePhase:
-    """Alla faser följer detta mönster"""
+    """All phases follow this pattern"""
 
     def __init__(self, api_client: APIClient, ...):
-        self.api_client = api_client  # Injicera beroenden
+        self.api_client = api_client  # Inject dependencies
 
     async def execute(self, state: ScenarioState) -> ScenarioState:
         """
-        Tar emot immutable state, returnerar ny immutable state.
-        Får INTE mutera state.
+        Receives immutable state, returns new immutable state.
+        MUST NOT mutate state.
         """
-        # Gör arbete
+        # Do work
         result = await self.api_client.call(...)
 
-        # Returnera ny state
+        # Return new state
         return state.with_something(result)
 ```
 
@@ -474,7 +474,7 @@ from scenario_lab.core.events import get_event_bus, EventType
 
 bus = get_event_bus()
 
-# Emittera event
+# Emit event
 await bus.emit(
     EventType.PHASE_COMPLETED,
     data={
@@ -486,7 +486,7 @@ await bus.emit(
     correlation_id=state.run_id
 )
 
-# Lyssna på event
+# Listen to event
 @bus.on(EventType.TURN_COMPLETED)
 async def handle_turn(event):
     print(f"Turn {event.data['turn']} done")
@@ -495,14 +495,14 @@ async def handle_turn(event):
 ### 5.4 Composition Pattern
 
 ```python
-# FEL - arv
-class DecisionPhase(BasePhase):  # Undvik arv
+# WRONG - inheritance
+class DecisionPhase(BasePhase):  # Avoid inheritance
     pass
 
-# RÄTT - komposition
+# RIGHT - composition
 class DecisionPhaseV2:
     def __init__(self, context_manager, api_client, prompt_builder):
-        self.context_manager = context_manager  # Komponera
+        self.context_manager = context_manager  # Compose
         self.api_client = api_client
         self.prompt_builder = prompt_builder
 ```
@@ -510,7 +510,7 @@ class DecisionPhaseV2:
 ### 5.5 Lazy Import Pattern
 
 ```python
-# För valfria beroenden
+# For optional dependencies
 try:
     from scenario_lab.database import Database
 except ImportError:
@@ -525,67 +525,67 @@ def save_to_database(data):
 
 ---
 
-## 6. Konventioner
+## 6. Conventions
 
-### 6.1 Filnamnskonventioner
+### 6.1 File Naming Conventions
 
 ```
-# Markdown-utdata (NNN = turnummer med nollpadding)
+# Markdown output (NNN = turn number with zero padding)
 world-state-001.md
 world-state-002.md
 actor-name-001.md
 actor-name-002.md
 validation-001.md
 
-# State-filer
-scenario-state.json      # Huvudsaklig state
-costs.json              # Kostnadssammanställning
-metrics.json            # Metrisk data
+# State files
+scenario-state.json      # Main state
+costs.json              # Cost summary
+metrics.json            # Metric data
 ```
 
-### 6.2 Namnkonventioner
+### 6.2 Naming Conventions
 
 ```python
-# Klasser: PascalCase
+# Classes: PascalCase
 class ScenarioState:
 class DecisionPhaseV2:
 
-# Funktioner och metoder: snake_case
+# Functions and methods: snake_case
 def calculate_cost():
 async def execute():
 
-# Konstanter: UPPER_SNAKE_CASE
+# Constants: UPPER_SNAKE_CASE
 DEFAULT_CONTEXT_WINDOW = 3
 MAX_RETRIES = 3
 
-# Filer: lowercase med understreck eller bindestreck
+# Files: lowercase with underscores or hyphens
 scenario_loader.py
 world-state-001.md
 ```
 
-### 6.3 Importkonventioner
+### 6.3 Import Conventions
 
 ```python
-# ALLTID importera från scenario_lab.*
+# ALWAYS import from scenario_lab.*
 from scenario_lab.models.state import ScenarioState
 from scenario_lab.core.events import EventBus
 from scenario_lab.utils.api_client import make_llm_call_async
 
-# ALDRIG importera från src/ (V1 borttagen)
-# ALDRIG sys.path.insert
+# NEVER import from src/ (V1 removed)
+# NEVER sys.path.insert
 ```
 
-### 6.4 Kostnadskonventioner
+### 6.4 Cost Conventions
 
-- Alla LLM-anrop spåras med CostRecord
-- Kostnader i USD (float)
-- Tokens separerade: input_tokens, output_tokens
-- Aggregering via state.total_cost(), state.actor_cost(), state.phase_cost()
+- All LLM calls are tracked with CostRecord
+- Costs in USD (float)
+- Tokens separated: input_tokens, output_tokens
+- Aggregation via state.total_cost(), state.actor_cost(), state.phase_cost()
 
-### 6.5 Felhanteringskonventioner
+### 6.5 Error Handling Conventions
 
 ```python
-# Logga och hantera, kasta inte vidare om möjligt
+# Log and handle, don't re-raise if possible
 try:
     result = await api_call()
 except RateLimitError:
@@ -593,74 +593,74 @@ except RateLimitError:
     result = await api_call()  # Retry
 except Exception as e:
     logger.error(f"API call failed: {e}")
-    # Returnera graceful default eller re-raise med kontext
+    # Return graceful default or re-raise with context
     raise ScenarioExecutionError(f"Decision phase failed: {e}") from e
 ```
 
 ---
 
-## 7. Validering: Test vs Kod
+## 7. Validation: Test vs Code
 
-### 7.1 När koden är fel
+### 7.1 When the Code is Wrong
 
-Koden är troligen fel om:
+The code is likely wrong if:
 
-1. **Den muterar frozen dataclasses**: Alla state-objekt är `frozen=True`
-2. **Den importerar från `src/`**: V1 är borttagen
-3. **Den använder synkrona LLM-anrop**: Alla anrop ska vara `async`
-4. **Den inte returnerar ny state**: Faser måste returnera `ScenarioState`
-5. **Den använder globala variabler för state**: State flödar genom parametrar
+1. **It mutates frozen dataclasses**: All state objects are `frozen=True`
+2. **It imports from `src/`**: V1 is removed
+3. **It uses synchronous LLM calls**: All calls should be `async`
+4. **It doesn't return new state**: Phases must return `ScenarioState`
+5. **It uses global variables for state**: State flows through parameters
 
-### 7.2 När testerna är fel
+### 7.2 When the Tests are Wrong
 
-Testerna är troligen fel om:
+The tests are likely wrong if:
 
-1. **De förväntar sig V1-beteende**: V1 är borttagen
-2. **De testar mutation av state**: Immutabilitet är korrekt
-3. **De mockar fel gränssnitt**: Kontrollera mot faktiska metoder
-4. **De förväntar sig synkrona anrop**: V2 är async
-5. **De importerar från `src/`**: Ska importera från `scenario_lab.*`
+1. **They expect V1 behavior**: V1 is removed
+2. **They test mutation of state**: Immutability is correct
+3. **They mock the wrong interface**: Check against actual methods
+4. **They expect synchronous calls**: V2 is async
+5. **They import from `src/`**: Should import from `scenario_lab.*`
 
-### 7.3 Prioriteringsordning
+### 7.3 Priority Order
 
-Vid konflikt, prioritera:
+In case of conflict, prioritize:
 
-1. **Detta dokument** - Auktoritativ arkitektur
-2. **Pydantic-scheman** - `scenario_lab/schemas/` definierar dataformat
-3. **Datamodeller** - `scenario_lab/models/state.py` definierar state
-4. **Fasimplementationer** - `scenario_lab/services/` är referensimplementationer
-5. **Tester** - Kan vara föråldrade
-6. **Kommentarer i kod** - Kan vara inaktuella
+1. **This document** - Authoritative architecture
+2. **Pydantic schemas** - `scenario_lab/schemas/` defines data formats
+3. **Data models** - `scenario_lab/models/state.py` defines state
+4. **Phase implementations** - `scenario_lab/services/` are reference implementations
+5. **Tests** - May be outdated
+6. **Comments in code** - May be stale
 
 ---
 
-## 8. Exekveringspunkter
+## 8. Execution Entry Points
 
 ### 8.1 CLI
 
 ```bash
-# Kör scenario
+# Run scenario
 scenario-lab run SCENARIO_PATH [OPTIONS]
-  --end-turn N          # Kör N turer
-  --credit-limit X      # Stoppa vid $X kostnad
-  --resume PATH         # Återuppta från tidigare körning
-  --branch-from PATH    # Skapa gren
-  --branch-at-turn N    # Gren vid specifik tur
+  --end-turn N          # Run N turns
+  --credit-limit X      # Stop at $X cost
+  --resume PATH         # Resume from previous run
+  --branch-from PATH    # Create branch
+  --branch-at-turn N    # Branch at specific turn
 
-# Skapa scenario
+# Create scenario
 scenario-lab create
 
-# Validera konfiguration
+# Validate configuration
 scenario-lab validate SCENARIO_PATH
 
-# Batch-körning
+# Batch run
 scenario-lab run-batch CONFIG [--resume]
 
-# Starta API-server
+# Start API server
 scenario-lab serve
 ```
 
-### 8.2 Programmatisk användning
+### 8.2 Programmatic Usage
 
 ```python
 from scenario_lab.runners import SyncRunner
@@ -674,22 +674,22 @@ runner = SyncRunner(
 runner.setup()
 final_state = asyncio.run(runner.run())
 
-print(f"Kostnad: ${final_state.total_cost():.2f}")
-print(f"Turer: {final_state.turn}")
+print(f"Cost: ${final_state.total_cost():.2f}")
+print(f"Turns: {final_state.turn}")
 ```
 
 ---
 
-## 9. Batchprocessering
+## 9. Batch Processing
 
-### 9.1 Komponenter
+### 9.1 Components
 
-- **ParameterVariator**: Genererar kartesisk produkt av variationer
-- **BatchCostManager**: Budgetspårning och gränser
-- **BatchParallelExecutor**: Asynkron exekvering med rate-limiting
-- **BatchAnalyzer**: Statistisk analys av resultat
+- **ParameterVariator**: Generates Cartesian product of variations
+- **BatchCostManager**: Budget tracking and limits
+- **BatchParallelExecutor**: Async execution with rate-limiting
+- **BatchAnalyzer**: Statistical analysis of results
 
-### 9.2 Batch-konfiguration
+### 9.2 Batch Configuration
 
 ```yaml
 base_scenario: "scenarios/my-scenario"
@@ -707,45 +707,45 @@ total_cost_limit: 100.0
 
 ---
 
-## 10. API-struktur
+## 10. API Structure
 
 ### 10.1 REST Endpoints
 
 ```
-POST /api/scenarios/execute     # Starta scenario
-GET  /api/scenarios/{id}        # Hämta status
-WS   /api/scenarios/{id}/stream # WebSocket för events
-GET  /api/runs                  # Lista körningar
-POST /api/runs/{id}/decisions   # Human-in-the-loop beslut
-DELETE /api/scenarios/{id}      # Stoppa scenario
+POST /api/scenarios/execute     # Start scenario
+GET  /api/scenarios/{id}        # Get status
+WS   /api/scenarios/{id}/stream # WebSocket for events
+GET  /api/runs                  # List runs
+POST /api/runs/{id}/decisions   # Human-in-the-loop decisions
+DELETE /api/scenarios/{id}      # Stop scenario
 ```
 
 ---
 
-## 11. Checklista för Nya Funktioner
+## 11. Checklist for New Features
 
-När du lägger till ny funktionalitet:
+When adding new functionality:
 
-- [ ] Placera kod i rätt `scenario_lab/`-subdirectory
-- [ ] Använd immutable dataclasses för state
-- [ ] Implementera async/await för I/O-operationer
-- [ ] Emittera events för observabilitet
-- [ ] Injicera beroenden via konstruktor
-- [ ] Importera endast från `scenario_lab.*`
-- [ ] Skriv tester som verifierar immutabilitet
-- [ ] Dokumentera i detta dokument om det är arkitektoniskt signifikant
-- [ ] Uppdatera CLI om det är användarsynligt
-
----
-
-## 12. Versionshistorik
-
-| Datum | Version | Förändring |
-|-------|---------|------------|
-| 2025-11-20 | V2.0 | V1 fullständigt borttagen, pure V2 |
-| 2025-11-21 | V2.1 | Testrensning, dokumentationsuppdatering |
-| 2025-11-22 | V2.2 | Ground Truth-dokument skapat |
+- [ ] Place code in the correct `scenario_lab/` subdirectory
+- [ ] Use immutable dataclasses for state
+- [ ] Implement async/await for I/O operations
+- [ ] Emit events for observability
+- [ ] Inject dependencies via constructor
+- [ ] Import only from `scenario_lab.*`
+- [ ] Write tests that verify immutability
+- [ ] Document in this document if architecturally significant
+- [ ] Update CLI if user-facing
 
 ---
 
-*Detta dokument är den auktoritativa källan för Scenario Lab-arkitekturen. Vid osäkerhet, konsultera detta dokument först.*
+## 12. Version History
+
+| Date | Version | Change |
+|------|---------|--------|
+| 2025-11-20 | V2.0 | V1 completely removed, pure V2 |
+| 2025-11-21 | V2.1 | Test cleanup, documentation update |
+| 2025-11-22 | V2.2 | Ground Truth document created |
+
+---
+
+*This document is the authoritative source for Scenario Lab architecture. When in doubt, consult this document first.*
