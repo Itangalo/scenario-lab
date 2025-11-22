@@ -442,6 +442,13 @@ pip install -r requirements.txt
 3. **Run tests (optional but recommended):**
 
 ```bash
+# Install development dependencies first
+pip install -r requirements-dev.txt
+
+# Or install as editable package with dev dependencies
+pip install -e ".[dev]"
+
+# Then run tests
 pytest tests/
 ```
 
