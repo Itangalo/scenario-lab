@@ -15,7 +15,7 @@ import argparse
 import sys
 import shutil
 from pathlib import Path
-from typing import Any
+from typing import Any, Optional
 from datetime import datetime
 
 import yaml
@@ -113,8 +113,8 @@ def infer_range_from_prompt(prompt: str) -> tuple[float, float]:
 def migrate_metric(
     name: str,
     v1_metric: dict,
-    extraction_model: str | None = None,
-    thresholds: dict | None = None,
+    extraction_model: Optional[str] = None,
+    thresholds: Optional[dict] = None,
 ) -> dict:
     """Convert a single V1 metric to V2 format"""
     v2_metric: dict[str, Any] = {
@@ -245,7 +245,7 @@ def migrate_v1_to_v2(v1_data: dict) -> dict:
     return v2_data
 
 
-def validate_v2_config(v2_data: dict) -> tuple[bool, str | None]:
+def validate_v2_config(v2_data: dict) -> tuple[bool, Optional[str]]:
     """Validate V2 configuration against Pydantic schema"""
     try:
         MetricsConfig(**v2_data)
