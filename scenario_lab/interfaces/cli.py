@@ -327,6 +327,13 @@ def estimate(scenario_path: str, end_turn: Optional[int]) -> None:
     click.echo(
         f"  Per turn: {click.style(f'${estimate_result.per_turn_cost:.3f}', fg=total_color)}"
     )
+
+    # Show if historical data was used
+    if estimate_result.historical_data_used:
+        click.echo(
+            f"  {click.style('📊', fg='cyan')} Estimate improved using historical run data"
+        )
+
     click.echo()
 
     # Display warnings
