@@ -118,7 +118,7 @@ actors:
 
 **Validation rules:**
 - `turn_duration` must match pattern: `^\d+\s+(second|minute|hour|day|week|month|year)s?$`
-- Actor names must be lowercase with hyphens (e.g., "us-president", not "US President")
+- Actor names are normalized to lowercase with hyphens (e.g., "CCP" → "ccp", "EU" → "eu")
 - At least one actor required
 
 ---
@@ -132,7 +132,7 @@ Each actor needs a separate file in the `actors/` directory. Filename must match
 | Field | Type | Description |
 |-------|------|-------------|
 | `name` | string | Actor display name |
-| `short_name` | string | Identifier (lowercase-with-hyphens) |
+| `short_name` | string | Identifier (auto-normalized to lowercase-with-hyphens) |
 
 **Recommended fields:**
 
@@ -516,8 +516,8 @@ scenario-lab run scenarios/your-scenario --dry-run
 
 Before running, verify:
 
-1. **All actor files exist** - Each name in `actors:` list needs a matching `.yaml` file
-2. **Actor names are lowercase-with-hyphens** - e.g., "us-president" not "US President"
+1. **All actor files exist** - Each name in `actors:` list needs a matching `.yaml` file (lowercase)
+2. **Actor names contain only valid characters** - Letters, numbers, and hyphens (uppercase is auto-normalized)
 3. **Turn duration format is correct** - e.g., "1 week" not "1 wk" or "weekly"
 4. **Metrics reference valid extraction types** - "pattern", "keyword", "llm", or "manual"
 5. **Model names are valid** - Use "provider/model" format
@@ -526,9 +526,9 @@ Before running, verify:
 
 | Error | Cause | Fix |
 |-------|-------|-----|
-| "Actor file not found" | Missing YAML file | Create actors/[name].yaml |
+| "Actor file not found" | Missing YAML file | Create actors/[name].yaml (use lowercase filename) |
 | "Invalid turn_duration" | Wrong format | Use "N unit" format |
-| "Invalid actor name" | Uppercase or spaces | Use lowercase-with-hyphens |
+| "Invalid actor name" | Spaces or special characters | Use only letters, numbers, and hyphens |
 | "'range' required" | Missing for continuous metric | Add range: [min, max] |
 | "'prompt' required" | Missing for LLM extraction | Add prompt field |
 

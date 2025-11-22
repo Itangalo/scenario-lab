@@ -222,9 +222,10 @@ information_access:
 
 ### Actor Naming Convention
 
-- Use lowercase with hyphens: `government-official` (not `Government Official`)
-- Filename must match `short_name`: `actors/government-official.yaml`
-- Reference in scenario.yaml must match: `actors: [government-official]`
+- Actor names are auto-normalized to lowercase: `CCP` → `ccp`, `EU` → `eu`
+- Use letters, numbers, and hyphens only (no spaces or special characters)
+- Filename must match the normalized `short_name`: `actors/ccp.yaml`
+- Reference in scenario.yaml is auto-normalized: `actors: [CCP]` becomes `actors: [ccp]`
 
 ### Model Selection
 
@@ -256,9 +257,9 @@ This checks:
 
 | Error | Cause | Fix |
 |-------|-------|-----|
-| "Actor file not found" | Missing YAML file | Create `actors/[name].yaml` |
+| "Actor file not found" | Missing YAML file | Create `actors/[name].yaml` (use lowercase filename) |
 | "Invalid turn_duration" | Wrong format | Use "N unit" format (e.g., "1 week") |
-| "Invalid actor name" | Uppercase or spaces | Use lowercase-with-hyphens |
+| "Invalid actor name" | Spaces or special characters | Use only letters, numbers, and hyphens |
 
 ---
 

@@ -193,25 +193,37 @@ class ScenarioConfig(BaseModel):
     @field_validator('actors')
     @classmethod
     def validate_actor_names(cls, v: List[str]) -> List[str]:
-        """Validate actor short names"""
+        """Validate and normalize actor short names.
+
+        Actor names are automatically converted to lowercase, allowing
+        users to write 'CCP', 'EU', 'NATO' etc.
+        """
         if not v:
             raise ValueError("At least one actor is required")
 
-        # Check for duplicates
-        if len(v) != len(set(v)):
-            raise ValueError("Duplicate actor names found")
-
-        # Validate format
+        # Normalize all names to lowercase
+        normalized = []
         for actor in v:
             if not actor or not actor.strip():
                 raise ValueError("Actor names cannot be empty")
-            # Should match lowercase-with-hyphens pattern
-            if not all(c.islower() or c.isdigit() or c == '-' for c in actor):
+
+            # Normalize to lowercase
+            actor_lower = actor.lower()
+
+            # Validate format after normalization
+            if not all(c.islower() or c.isdigit() or c == '-' for c in actor_lower):
                 raise ValueError(
-                    f"Actor name '{actor}' should be lowercase with hyphens (e.g., 'united-states')"
+                    f"Actor name '{actor}' contains invalid characters. "
+                    "Only letters, numbers, and hyphens are allowed."
                 )
 
-        return v
+            normalized.append(actor_lower)
+
+        # Check for duplicates (after normalization)
+        if len(normalized) != len(set(normalized)):
+            raise ValueError("Duplicate actor names found (after case normalization)")
+
+        return normalized
 
     @field_validator('turn_duration')
     @classmethod
