@@ -51,6 +51,12 @@ def cli(verbose: bool) -> None:
 
         # Get cost estimate
         scenario-lab estimate scenarios/ai-summit
+
+        # Benchmark performance
+        scenario-lab benchmark scenarios/ai-summit --turns 5
+
+        # Compare runs
+        scenario-lab compare output/run-001 output/run-002
     """
     # Configure logging
     # Default: INFO level with clean format (no timestamps/module names)

@@ -716,6 +716,62 @@ python -m scenario_lab.batch.batch_runner experiments/model-comparison/batch-con
 
 See [AGENTS.md](AGENTS.md) for detailed batch configuration schema documentation.
 
+### Performance Benchmarking
+
+Measure scenario execution performance including timing, memory usage, and costs:
+
+```bash
+# Benchmark a scenario (runs 3 turns by default)
+scenario-lab benchmark scenarios/your-scenario
+
+# Benchmark with custom turn count
+scenario-lab benchmark scenarios/your-scenario --turns 5
+
+# Preview what would be measured without running
+scenario-lab benchmark scenarios/your-scenario --dry-run
+```
+
+**Metrics measured:**
+
+- **Timing**: Startup time, average turn time, P95 turn time, min/max turn times
+- **Memory**: Initial, peak, and final memory usage with delta
+- **Cost**: Total cost, cost per turn, cost by phase
+- **Efficiency**: Cost per second, throughput (turns/second)
+
+**Use cases:**
+
+- Compare performance across different model configurations
+- Identify bottlenecks in scenario execution
+- Validate performance after code changes
+- Establish baselines for optimization work
+
+### Run Comparison
+
+Compare multiple scenario runs side-by-side:
+
+```bash
+# Compare two runs
+scenario-lab compare output/scenario/run-001 output/scenario/run-002
+
+# Compare multiple runs
+scenario-lab compare output/scenario/run-001 output/scenario/run-002 output/scenario/run-003
+```
+
+**Comparison includes:**
+
+- **Run summary**: Turns completed, status, total cost, cost per turn
+- **Actor models**: Which models were used in each run
+- **Cost by actor**: Breakdown of costs per actor
+- **Metrics**: Final values for all tracked metrics
+- **Cost difference**: Percentage difference for two-run comparisons
+
+**Use cases:**
+
+- Compare outcomes across different model configurations
+- Analyze cost efficiency between runs
+- Verify reproducibility of scenario results
+- Evaluate the impact of configuration changes
+
 ### Available Scenarios
 
 - **ai-negotiation-test-scenario**: AI safety regulation negotiation between regulator and tech company
@@ -737,7 +793,9 @@ This section provides a complete walkthrough from scenario creation to analysis,
 | 4. Test | Run limited turns to verify | `scenario-lab run <path> --end-turn 2` |
 | 5. Execute | Run full scenario | `scenario-lab run <path>` |
 | 6. Analyze | Review outputs and metrics | `runs/run-NNN/` directory |
-| 7. Iterate | Branch or modify and re-run | `--branch-from` / `--resume` |
+| 7. Compare | Compare multiple runs | `scenario-lab compare <run1> <run2>` |
+| 8. Benchmark | Measure performance | `scenario-lab benchmark <path>` |
+| 9. Iterate | Branch or modify and re-run | `--branch-from` / `--resume` |
 
 ### Detailed Workflow
 
