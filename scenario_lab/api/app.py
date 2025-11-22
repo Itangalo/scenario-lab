@@ -3,6 +3,19 @@ FastAPI Application for Scenario Lab V2
 
 Provides REST API and WebSocket endpoints for programmatic scenario execution,
 monitoring, and analytics.
+
+Authentication and Rate Limiting:
+    - API key authentication via X-API-Key header (configurable)
+    - Rate limiting with configurable requests/window
+    - Development mode for local testing (bypasses auth and rate limits)
+
+Environment Variables:
+    SCENARIO_LAB_API_KEY: API key(s) for authentication (comma-separated)
+    SCENARIO_LAB_AUTH_ENABLED: Enable/disable authentication
+    SCENARIO_LAB_RATE_LIMIT_ENABLED: Enable/disable rate limiting
+    SCENARIO_LAB_RATE_LIMIT_REQUESTS: Max requests per window (default: 100)
+    SCENARIO_LAB_RATE_LIMIT_WINDOW: Time window in seconds (default: 60)
+    SCENARIO_LAB_DEV_MODE: Development mode (disables auth and rate limiting)
 """
 from __future__ import annotations
 import asyncio
@@ -11,14 +24,18 @@ from typing import Optional, Dict, Any
 from datetime import datetime
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect, BackgroundTasks
+from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect, BackgroundTasks, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import Response
 from pydantic import BaseModel, Field
 
 from scenario_lab import __version__
 from scenario_lab.runners import SyncRunner
 from scenario_lab.database import Database
 from scenario_lab.core.events import Event, EventType
+from scenario_lab.api.settings import get_settings
+from scenario_lab.api.auth import verify_api_key, optional_api_key
+from scenario_lab.api.rate_limit import check_rate_limit, get_rate_limiter
 
 logger = logging.getLogger(__name__)
 
@@ -37,6 +54,47 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
+@app.middleware("http")
+async def rate_limit_middleware(request: Request, call_next):
+    """
+    Middleware to add rate limit headers to responses.
+
+    Also handles rate limit checking for all routes.
+    """
+    settings = get_settings()
+
+    # Skip rate limiting for health and root endpoints
+    if request.url.path in ["/", "/api/health", "/docs", "/openapi.json", "/redoc"]:
+        return await call_next(request)
+
+    # Check rate limit
+    if settings.rate_limit_enabled and not settings.dev_mode:
+        limiter = get_rate_limiter()
+        # Extract API key from header for rate limit tracking
+        api_key = request.headers.get("X-API-Key")
+        allowed, remaining, reset_seconds = limiter.check_rate_limit(request, api_key)
+
+        if not allowed:
+            return Response(
+                content=f"Rate limit exceeded. Try again in {reset_seconds} seconds.",
+                status_code=429,
+                headers={
+                    "Retry-After": str(reset_seconds),
+                    "X-RateLimit-Limit": str(settings.rate_limit_requests),
+                    "X-RateLimit-Remaining": "0",
+                    "X-RateLimit-Reset": str(reset_seconds),
+                },
+            )
+
+        # Process request and add headers to response
+        response = await call_next(request)
+        response.headers["X-RateLimit-Limit"] = str(settings.rate_limit_requests)
+        response.headers["X-RateLimit-Remaining"] = str(remaining)
+        return response
+
+    return await call_next(request)
 
 # Global state
 running_scenarios: Dict[str, Dict[str, Any]] = {}
@@ -92,7 +150,7 @@ class RunSummary(BaseModel):
 
 @app.on_event("startup")
 async def startup_event():
-    """Initialize database on startup"""
+    """Initialize database and log configuration on startup"""
     global database
     try:
         database = Database("sqlite:///scenario-lab.db")
@@ -101,6 +159,23 @@ async def startup_event():
         logger.error(f"Failed to initialize database: {e}")
         logger.warning("API will run without database support")
         database = None
+
+    # Log authentication and rate limiting configuration
+    settings = get_settings()
+    if settings.dev_mode:
+        logger.warning("API running in DEVELOPMENT MODE - auth and rate limiting disabled")
+    else:
+        if settings.auth_enabled:
+            logger.info(f"API authentication enabled with {len(settings.api_keys)} API key(s)")
+        else:
+            logger.warning("API authentication DISABLED - no API keys configured or auth explicitly disabled")
+
+        if settings.rate_limit_enabled:
+            logger.info(
+                f"Rate limiting enabled: {settings.rate_limit_requests} requests per {settings.rate_limit_window}s"
+            )
+        else:
+            logger.warning("Rate limiting DISABLED")
 
 
 @app.get("/")
@@ -121,18 +196,24 @@ async def root():
 
 @app.get("/api/health")
 async def health_check():
-    """Health check endpoint"""
+    """Health check endpoint (no authentication required)"""
+    settings = get_settings()
     return {
         "status": "healthy",
         "version": __version__,
         "database": "connected" if database else "not configured",
         "running_scenarios": len(running_scenarios),
+        "auth_enabled": settings.auth_enabled,
+        "rate_limit_enabled": settings.rate_limit_enabled,
+        "dev_mode": settings.dev_mode,
     }
 
 
 @app.post("/api/scenarios/execute", response_model=ScenarioStatus)
 async def execute_scenario(
-    request: ScenarioExecuteRequest, background_tasks: BackgroundTasks
+    request: ScenarioExecuteRequest,
+    background_tasks: BackgroundTasks,
+    api_key: Optional[str] = Depends(verify_api_key),
 ):
     """
     Execute a scenario in the background
@@ -234,7 +315,10 @@ async def _run_scenario_background(scenario_id: str, request: ScenarioExecuteReq
 
 
 @app.get("/api/scenarios/{scenario_id}/status", response_model=ScenarioStatus)
-async def get_scenario_status(scenario_id: str):
+async def get_scenario_status(
+    scenario_id: str,
+    api_key: Optional[str] = Depends(verify_api_key),
+):
     """Get the current status of a running or completed scenario"""
     if scenario_id not in running_scenarios:
         raise HTTPException(status_code=404, detail=f"Scenario not found: {scenario_id}")
@@ -253,7 +337,10 @@ async def get_scenario_status(scenario_id: str):
 
 
 @app.get("/api/runs", response_model=list[RunSummary])
-async def list_runs(scenario: Optional[str] = None):
+async def list_runs(
+    scenario: Optional[str] = None,
+    api_key: Optional[str] = Depends(verify_api_key),
+):
     """List all runs, optionally filtered by scenario"""
     if not database:
         raise HTTPException(status_code=503, detail="Database not configured")
@@ -274,7 +361,10 @@ async def list_runs(scenario: Optional[str] = None):
 
 
 @app.get("/api/runs/{run_id}")
-async def get_run(run_id: str):
+async def get_run(
+    run_id: str,
+    api_key: Optional[str] = Depends(verify_api_key),
+):
     """Get detailed information about a specific run"""
     if not database:
         raise HTTPException(status_code=503, detail="Database not configured")
@@ -290,7 +380,10 @@ async def get_run(run_id: str):
 
 
 @app.get("/api/runs/{run_id}/statistics")
-async def get_run_statistics(run_id: str):
+async def get_run_statistics(
+    run_id: str,
+    api_key: Optional[str] = Depends(verify_api_key),
+):
     """Get comprehensive statistics for a run"""
     if not database:
         raise HTTPException(status_code=503, detail="Database not configured")
@@ -303,7 +396,10 @@ async def get_run_statistics(run_id: str):
 
 
 @app.post("/api/runs/compare")
-async def compare_runs(run_ids: list[str]):
+async def compare_runs(
+    run_ids: list[str],
+    api_key: Optional[str] = Depends(verify_api_key),
+):
     """Compare multiple runs side by side"""
     if not database:
         raise HTTPException(status_code=503, detail="Database not configured")
@@ -313,7 +409,11 @@ async def compare_runs(run_ids: list[str]):
 
 
 @app.get("/api/metrics/{metric_name}/aggregate")
-async def aggregate_metric(metric_name: str, scenario: Optional[str] = None):
+async def aggregate_metric(
+    metric_name: str,
+    scenario: Optional[str] = None,
+    api_key: Optional[str] = Depends(verify_api_key),
+):
     """Aggregate a metric across runs"""
     if not database:
         raise HTTPException(status_code=503, detail="Database not configured")
@@ -323,7 +423,10 @@ async def aggregate_metric(metric_name: str, scenario: Optional[str] = None):
 
 
 @app.post("/api/scenarios/{scenario_id}/pause")
-async def pause_scenario(scenario_id: str):
+async def pause_scenario(
+    scenario_id: str,
+    api_key: Optional[str] = Depends(verify_api_key),
+):
     """Pause a running scenario"""
     if scenario_id not in running_scenarios:
         raise HTTPException(status_code=404, detail=f"Scenario not found: {scenario_id}")
@@ -340,7 +443,10 @@ async def pause_scenario(scenario_id: str):
 
 
 @app.post("/api/scenarios/{scenario_id}/resume")
-async def resume_scenario(scenario_id: str):
+async def resume_scenario(
+    scenario_id: str,
+    api_key: Optional[str] = Depends(verify_api_key),
+):
     """Resume a paused scenario"""
     if scenario_id not in running_scenarios:
         raise HTTPException(status_code=404, detail=f"Scenario not found: {scenario_id}")
@@ -356,7 +462,11 @@ async def resume_scenario(scenario_id: str):
 
 
 @app.post("/api/scenarios/{scenario_id}/human-decision")
-async def submit_human_decision(scenario_id: str, decision: HumanDecisionRequest):
+async def submit_human_decision(
+    scenario_id: str,
+    decision: HumanDecisionRequest,
+    api_key: Optional[str] = Depends(verify_api_key),
+):
     """Submit a human actor's decision"""
     if scenario_id not in running_scenarios:
         raise HTTPException(status_code=404, detail=f"Scenario not found: {scenario_id}")
