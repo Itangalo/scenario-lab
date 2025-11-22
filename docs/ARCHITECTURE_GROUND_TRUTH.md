@@ -372,7 +372,7 @@ parallel_action_resolution: true
 ```yaml
 # REQUIRED
 name: "Full Actor Name"           # Display name
-short_name: actor-id              # Identifier (lowercase, hyphens)
+short_name: actor-id              # Identifier (auto-normalized to lowercase)
 llm_model: "openai/gpt-4o"        # Or "model:"
 
 # BEHAVIOR

@@ -46,9 +46,35 @@ class ActorConfig(BaseModel):
 
     short_name: str = Field(
         ...,
-        description="Actor identifier used in filenames (lowercase, hyphens)",
-        pattern=r"^[a-z0-9-]+$",
+        description="Actor identifier used in filenames (lowercase, hyphens). "
+                    "Uppercase input is automatically converted to lowercase.",
     )
+
+    @field_validator('short_name', mode='before')
+    @classmethod
+    def normalize_short_name(cls, v: str) -> str:
+        """Normalize short_name to lowercase and validate format.
+
+        Allows users to write 'CCP', 'EU', 'NATO' etc., which are
+        automatically converted to 'ccp', 'eu', 'nato'.
+        """
+        if not isinstance(v, str):
+            raise ValueError("short_name must be a string")
+
+        # Normalize to lowercase
+        normalized = v.lower()
+
+        # Validate format after normalization
+        if not all(c.islower() or c.isdigit() or c == '-' for c in normalized):
+            raise ValueError(
+                f"short_name '{v}' contains invalid characters. "
+                "Only letters, numbers, and hyphens are allowed."
+            )
+
+        if not normalized:
+            raise ValueError("short_name cannot be empty")
+
+        return normalized
 
     # Model configuration (support both field names)
     llm_model: Optional[str] = Field(
