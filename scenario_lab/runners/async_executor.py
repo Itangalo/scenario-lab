@@ -37,7 +37,7 @@ class AsyncExecutor:
         self,
         scenario_path: str,
         output_path: Optional[str] = None,
-        max_turns: Optional[int] = None,
+        end_turn: Optional[int] = None,
         credit_limit: Optional[float] = None,
         json_mode: bool = False,
         log_level: str = "INFO",
@@ -48,14 +48,14 @@ class AsyncExecutor:
         Args:
             scenario_path: Path to scenario directory
             output_path: Path to output directory
-            max_turns: Maximum number of turns to execute
+            end_turn: Number of turns to execute (e.g., end_turn=5 executes 5 actor decision rounds)
             credit_limit: Maximum cost in USD
             json_mode: Whether to use JSON response format for actors
             log_level: Logging level (DEBUG, INFO, WARNING, ERROR)
         """
         self.scenario_path = scenario_path
         self.output_path = output_path
-        self.max_turns = max_turns
+        self.end_turn = end_turn
         self.credit_limit = credit_limit
         self.json_mode = json_mode
 
@@ -84,7 +84,7 @@ class AsyncExecutor:
         self.sync_runner = SyncRunner(
             scenario_path=self.scenario_path,
             output_path=self.output_path,
-            end_turn=self.max_turns,  # SyncRunner uses end_turn, AsyncExecutor uses max_turns
+            end_turn=self.end_turn,
             credit_limit=self.credit_limit,
             json_mode=self.json_mode,
         )
@@ -298,7 +298,7 @@ class AsyncExecutor:
 async def run_scenario_async(
     scenario_path: str,
     output_path: Optional[str] = None,
-    max_turns: Optional[int] = None,
+    end_turn: Optional[int] = None,
     credit_limit: Optional[float] = None,
     json_mode: bool = False,
 ) -> ScenarioState:
@@ -308,7 +308,7 @@ async def run_scenario_async(
     Args:
         scenario_path: Path to scenario directory
         output_path: Path to output directory
-        max_turns: Maximum number of turns
+        end_turn: Number of turns to execute
         credit_limit: Maximum cost in USD
         json_mode: Whether to use JSON response format
 
@@ -318,7 +318,7 @@ async def run_scenario_async(
     executor = AsyncExecutor(
         scenario_path=scenario_path,
         output_path=output_path,
-        max_turns=max_turns,
+        end_turn=end_turn,
         credit_limit=credit_limit,
         json_mode=json_mode,
     )

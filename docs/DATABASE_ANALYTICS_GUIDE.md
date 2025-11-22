@@ -258,7 +258,7 @@ db = Database("scenarios.db")
 
 executor = AsyncExecutor(
     scenario_path="scenarios/ai-2027",
-    max_turns=10,
+    end_turn=10,
 )
 
 # Note: Database needs to be passed to SyncRunner internally

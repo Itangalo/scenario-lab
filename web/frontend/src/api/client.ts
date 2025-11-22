@@ -26,7 +26,7 @@ export interface V2RunSummary {
 
 export interface V2ScenarioExecuteRequest {
   scenario_path: string
-  max_turns?: number
+  end_turn?: number
   credit_limit?: number
   output_path?: string
   enable_database?: boolean

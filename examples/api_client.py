@@ -154,7 +154,7 @@ async def example_execute_and_monitor():
         print("🚀 Starting scenario execution...")
         result = await client.execute_scenario(
             scenario_path="scenarios/test-regulation-negotiation",
-            max_turns=3,
+            end_turn=3,
             credit_limit=1.0,
         )
 
@@ -190,7 +190,7 @@ async def example_with_websocket():
         print("🚀 Starting scenario with WebSocket streaming...")
         result = await client.execute_scenario(
             scenario_path="scenarios/test-regulation-negotiation",
-            max_turns=3,
+            end_turn=3,
         )
 
         scenario_id = result["scenario_id"]

@@ -134,7 +134,7 @@ curl -X POST "http://localhost:8000/api/scenario/start" \
   -H "Content-Type: application/json" \
   -d '{
     "scenario_path": "scenarios/ai-summit-4actors",
-    "max_turns": 5
+    "end_turn": 5
   }'
 ```
 
