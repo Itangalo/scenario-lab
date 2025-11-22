@@ -216,20 +216,24 @@ class DecisionPhaseV2:
         """
         Extract recent goals from previous turns (last 2 turns)
 
-        Phase 1.2: Simplified version. Will be enhanced in Phase 2.
+        Uses persistent actor state (recent_decisions) rather than the per-turn
+        decisions dictionary which gets cleared each turn.
         """
         if state.turn <= 1:
             return ""
 
         goals_list = []
 
-        # Look at decisions from current state
-        if actor_name in state.decisions:
-            decision = state.decisions[actor_name]
-            if decision.goals and decision.turn < state.turn:
-                goals_text = "\n".join(f"- {g}" for g in decision.goals if g.strip())
-                if goals_text:
-                    goals_list.append(f"**Turn {decision.turn}:**\n{goals_text}\n")
+        # Look at decisions from persistent actor state
+        if actor_name in state.actors:
+            actor_state = state.actors[actor_name]
+            # Get up to the last 2 decisions from the actor's history
+            recent = actor_state.recent_decisions[-2:]
+            for decision in recent:
+                if decision.goals and decision.turn < state.turn:
+                    goals_text = "\n".join(f"- {g}" for g in decision.goals if g.strip())
+                    if goals_text:
+                        goals_list.append(f"**Turn {decision.turn}:**\n{goals_text}\n")
 
         return "\n".join(goals_list) if goals_list else ""
 

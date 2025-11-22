@@ -419,6 +419,147 @@ class TestDecisionPhase:
         assert hasattr(DecisionPhaseV2, 'execute')
         assert callable(getattr(DecisionPhaseV2, 'execute'))
 
+    def test_extract_recent_goals_from_persistent_actor_state(self):
+        """Test that _extract_recent_goals uses persistent actor state (issue #34)"""
+        # Create actor with recent_decisions history
+        actor_state = ActorState(
+            name="Test Actor",
+            short_name="actor1",
+            model="test/model",
+            current_goals=["Current goal"],
+            recent_decisions=[
+                Decision(
+                    actor="Test Actor",
+                    turn=1,
+                    goals=["Goal from turn 1", "Secondary goal turn 1"],
+                    reasoning="Reasoning turn 1",
+                    action="Action turn 1"
+                ),
+                Decision(
+                    actor="Test Actor",
+                    turn=2,
+                    goals=["Goal from turn 2"],
+                    reasoning="Reasoning turn 2",
+                    action="Action turn 2"
+                ),
+            ]
+        )
+
+        # Create state at turn 3 with the actor having persistent decisions
+        # but with an empty decisions dict (simulating cleared per-turn decisions)
+        state = ScenarioState(
+            scenario_id="test-scenario",
+            scenario_name="Test Scenario",
+            run_id="test-run",
+            turn=3,
+            status=ScenarioStatus.RUNNING,
+            actors={"Test Actor": actor_state},
+            decisions={},  # Empty - cleared by with_turn()
+        )
+
+        # Create phase and extract goals
+        phase = DecisionPhaseV2(
+            actor_configs={"actor1": {"name": "Test Actor", "llm_model": "test/model"}},
+            scenario_system_prompt=""
+        )
+
+        goals = phase._extract_recent_goals(state, "Test Actor")
+
+        # Should find goals from persistent actor state
+        assert goals != ""
+        assert "Goal from turn 1" in goals
+        assert "Goal from turn 2" in goals
+
+    def test_extract_recent_goals_returns_empty_for_turn_1(self):
+        """Test that _extract_recent_goals returns empty string for turn 1"""
+        state = ScenarioState(
+            scenario_id="test-scenario",
+            scenario_name="Test Scenario",
+            run_id="test-run",
+            turn=1,
+            status=ScenarioStatus.RUNNING,
+            actors={},
+            decisions={},
+        )
+
+        phase = DecisionPhaseV2(
+            actor_configs={},
+            scenario_system_prompt=""
+        )
+
+        goals = phase._extract_recent_goals(state, "Test Actor")
+        assert goals == ""
+
+    def test_extract_recent_goals_limits_to_last_2_decisions(self):
+        """Test that _extract_recent_goals only returns last 2 turns of goals"""
+        actor_state = ActorState(
+            name="Test Actor",
+            short_name="actor1",
+            model="test/model",
+            recent_decisions=[
+                Decision(actor="Test Actor", turn=1, goals=["Old goal 1"], reasoning="", action=""),
+                Decision(actor="Test Actor", turn=2, goals=["Old goal 2"], reasoning="", action=""),
+                Decision(actor="Test Actor", turn=3, goals=["Recent goal 3"], reasoning="", action=""),
+                Decision(actor="Test Actor", turn=4, goals=["Recent goal 4"], reasoning="", action=""),
+            ]
+        )
+
+        state = ScenarioState(
+            scenario_id="test-scenario",
+            scenario_name="Test Scenario",
+            run_id="test-run",
+            turn=5,
+            status=ScenarioStatus.RUNNING,
+            actors={"Test Actor": actor_state},
+            decisions={},
+        )
+
+        phase = DecisionPhaseV2(
+            actor_configs={"actor1": {"name": "Test Actor", "llm_model": "test/model"}},
+            scenario_system_prompt=""
+        )
+
+        goals = phase._extract_recent_goals(state, "Test Actor")
+
+        # Should only have goals from last 2 decisions (turn 3 and 4)
+        assert "Recent goal 3" in goals
+        assert "Recent goal 4" in goals
+        assert "Old goal 1" not in goals
+        assert "Old goal 2" not in goals
+
+    def test_extract_recent_goals_excludes_current_turn(self):
+        """Test that _extract_recent_goals excludes goals from current turn"""
+        actor_state = ActorState(
+            name="Test Actor",
+            short_name="actor1",
+            model="test/model",
+            recent_decisions=[
+                Decision(actor="Test Actor", turn=2, goals=["Previous turn goal"], reasoning="", action=""),
+                Decision(actor="Test Actor", turn=3, goals=["Current turn goal"], reasoning="", action=""),
+            ]
+        )
+
+        state = ScenarioState(
+            scenario_id="test-scenario",
+            scenario_name="Test Scenario",
+            run_id="test-run",
+            turn=3,  # Current turn is 3
+            status=ScenarioStatus.RUNNING,
+            actors={"Test Actor": actor_state},
+            decisions={},
+        )
+
+        phase = DecisionPhaseV2(
+            actor_configs={"actor1": {"name": "Test Actor", "llm_model": "test/model"}},
+            scenario_system_prompt=""
+        )
+
+        goals = phase._extract_recent_goals(state, "Test Actor")
+
+        # Should include turn 2 but exclude turn 3 (current)
+        assert "Previous turn goal" in goals
+        assert "Current turn goal" not in goals
+
 
 class TestWorldUpdatePhase:
     """Test the world update phase service"""
