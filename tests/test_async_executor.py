@@ -69,7 +69,7 @@ class TestAsyncExecutor:
         """Test that executor initializes correctly"""
         executor = AsyncExecutor(
             scenario_path=str(temp_scenario_dir / "definition"),
-            end_turn=2,
+            max_turns=2,
             credit_limit=1.0,
         )
 
@@ -83,6 +83,7 @@ class TestAsyncExecutor:
         assert executor.orchestrator is not None
         assert executor.event_bus is not None
         assert executor.initial_state is not None
+        # sync_runner is used internally but we verify via orchestrator
         assert executor.sync_runner is not None
 
         await executor.cleanup()
@@ -92,7 +93,7 @@ class TestAsyncExecutor:
         """Test pause and resume functionality"""
         executor = AsyncExecutor(
             scenario_path=str(temp_scenario_dir / "definition"),
-            end_turn=2,
+            max_turns=2,
         )
 
         await executor.setup()
@@ -115,7 +116,7 @@ class TestAsyncExecutor:
         """Test stop functionality"""
         executor = AsyncExecutor(
             scenario_path=str(temp_scenario_dir / "definition"),
-            end_turn=2,
+            max_turns=2,
         )
 
         await executor.setup()
@@ -143,7 +144,7 @@ class TestAsyncExecutor:
             # Run scenario
             final_state = await run_scenario_async(
                 scenario_path=str(temp_scenario_dir / "definition"),
-                end_turn=3,
+                max_turns=3,
             )
 
             # Verify execute was called
@@ -155,7 +156,7 @@ class TestAsyncExecutor:
         """Test that event streaming yields events"""
         executor = AsyncExecutor(
             scenario_path=str(temp_scenario_dir / "definition"),
-            end_turn=1,
+            max_turns=1,
         )
 
         await executor.setup()
@@ -196,7 +197,7 @@ class TestAsyncExecutor:
         """Test that executor handles execution failures"""
         executor = AsyncExecutor(
             scenario_path=str(temp_scenario_dir / "definition"),
-            end_turn=1,
+            max_turns=1,
         )
 
         await executor.setup()
@@ -218,7 +219,7 @@ class TestAsyncExecutor:
         """Test that executing without setup raises error"""
         executor = AsyncExecutor(
             scenario_path="/nonexistent/path",
-            end_turn=1,
+            max_turns=1,
         )
 
         # Should raise error if execute called without setup
@@ -232,7 +233,7 @@ class TestAsyncExecutor:
 
         executor = AsyncExecutor(
             scenario_path=str(temp_scenario_dir / "definition"),
-            end_turn=1,
+            max_turns=1,
         )
 
         await executor.setup()

@@ -373,7 +373,7 @@ class TestGlobalCache:
 class TestCacheIntegration:
     """Integration tests for cache with model pricing"""
 
-    @patch('scenario_lab.utils.response_cache.estimate_cost')
+    @patch('scenario_lab.utils.model_pricing.estimate_cost')
     def test_cost_savings_calculated_on_hit(self, mock_estimate):
         """Test that cost savings are calculated on cache hit"""
         mock_estimate.return_value = 0.001  # $0.001

@@ -1,8 +1,9 @@
 """
 Tests for CLI wizard commands (create and create-batch)
+
+Note: V2 wizard commands now show guidance instead of calling V1 wizards.
 """
 import unittest
-from unittest.mock import patch, MagicMock
 from click.testing import CliRunner
 import sys
 import os
@@ -49,83 +50,44 @@ class TestCLIWizardCommands(unittest.TestCase):
         self.assertIn('wizard', result.output.lower())
         self.assertIn('experiment', result.output.lower())
 
-    @patch('create_scenario.create_scenario_interactive')
-    def test_create_command_invokes_v1_wizard(self, mock_wizard):
-        """Test that 'create' command calls V1 wizard"""
-        # Mock successful wizard execution
-        mock_wizard.return_value = '/tmp/test-scenario'
-
+    def test_create_command_shows_guidance(self):
+        """Test that 'create' command shows guidance (V2 behavior)"""
         with self.runner.isolated_filesystem():
             result = self.runner.invoke(cli, ['create'])
 
-            # Should call the V1 wizard
-            mock_wizard.assert_called_once()
+            # V2 shows guidance instead of wizard
+            self.assertEqual(result.exit_code, 0)
+            self.assertIn('wizard not yet available', result.output.lower())
+            # Should show manual creation steps
+            self.assertIn('scenario.yaml', result.output)
+            self.assertIn('mkdir', result.output)
 
-            # Should display success message
-            self.assertIn('successfully', result.output.lower())
-
-    @patch('create_batch_config.create_batch_config_interactive')
-    def test_create_batch_command_invokes_v1_wizard(self, mock_wizard):
-        """Test that 'create-batch' command calls V1 wizard"""
-        # Mock successful wizard execution
-        mock_wizard.return_value = '/tmp/test-batch.yaml'
-
+    def test_create_batch_command_shows_guidance(self):
+        """Test that 'create-batch' command shows guidance (V2 behavior)"""
         with self.runner.isolated_filesystem():
             result = self.runner.invoke(cli, ['create-batch'])
 
-            # Should call the V1 wizard
-            mock_wizard.assert_called_once()
+            # V2 shows guidance instead of wizard
+            self.assertEqual(result.exit_code, 0)
+            self.assertIn('wizard not yet available', result.output.lower())
+            # Should show manual creation steps
+            self.assertIn('YAML', result.output)
 
-            # Should display success message
-            self.assertIn('successfully', result.output.lower())
-
-    @patch('create_scenario.create_scenario_interactive')
-    def test_create_command_handles_cancellation(self, mock_wizard):
-        """Test that 'create' command handles wizard cancellation"""
-        # Mock wizard cancellation (returns None)
-        mock_wizard.return_value = None
-
-        with self.runner.isolated_filesystem():
-            result = self.runner.invoke(cli, ['create'])
-
-            # Should exit with error code
-            self.assertNotEqual(result.exit_code, 0)
-            self.assertIn('cancelled', result.output.lower())
-
-    @patch('create_batch_config.create_batch_config_interactive')
-    def test_create_batch_command_handles_cancellation(self, mock_wizard):
-        """Test that 'create-batch' command handles wizard cancellation"""
-        # Mock wizard cancellation (returns None)
-        mock_wizard.return_value = None
-
-        with self.runner.isolated_filesystem():
-            result = self.runner.invoke(cli, ['create-batch'])
-
-            # Should exit with error code
-            self.assertNotEqual(result.exit_code, 0)
-            self.assertIn('cancelled', result.output.lower())
-
-    @patch('create_scenario.create_scenario_interactive')
-    def test_create_command_with_output_dir(self, mock_wizard):
-        """Test that 'create' command passes output_dir argument"""
-        mock_wizard.return_value = '/custom/path/scenario'
-
+    def test_create_command_with_output_dir(self):
+        """Test that 'create' command accepts output_dir argument"""
         with self.runner.isolated_filesystem():
             result = self.runner.invoke(cli, ['create', '/custom/path'])
 
-            # Should pass output_dir to wizard
-            mock_wizard.assert_called_once_with('/custom/path')
+            # Should still show guidance (exit code 0)
+            self.assertEqual(result.exit_code, 0)
 
-    @patch('create_batch_config.create_batch_config_interactive')
-    def test_create_batch_command_with_output_path(self, mock_wizard):
-        """Test that 'create-batch' command passes output_path argument"""
-        mock_wizard.return_value = '/custom/batch.yaml'
-
+    def test_create_batch_command_with_output_path(self):
+        """Test that 'create-batch' command accepts output_path argument"""
         with self.runner.isolated_filesystem():
             result = self.runner.invoke(cli, ['create-batch', '/custom/batch.yaml'])
 
-            # Should pass output_path to wizard
-            mock_wizard.assert_called_once_with('/custom/batch.yaml')
+            # Should still show guidance (exit code 0)
+            self.assertEqual(result.exit_code, 0)
 
 
 if __name__ == '__main__':

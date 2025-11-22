@@ -33,13 +33,15 @@ class TrendEvent(ExogenousEventBase):
         description="Event occurs every N turns",
         ge=1
     )
+    # Override turn_range to be required for TrendEvent (not Optional)
+    turn_range: List[int] = Field(
+        description="Turn range [min, max] when event can occur (required for trend events)"
+    )
 
     @field_validator('turn_range')
     @classmethod
-    def validate_turn_range(cls, v: Optional[List[int]]) -> List[int]:
-        """Ensure turn_range is provided for trend events"""
-        if v is None:
-            raise ValueError("turn_range is required for trend events")
+    def validate_turn_range(cls, v: List[int]) -> List[int]:
+        """Validate turn_range format for trend events"""
         if len(v) != 2:
             raise ValueError("turn_range must be [min, max]")
         if v[0] > v[1]:

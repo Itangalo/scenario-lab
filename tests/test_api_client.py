@@ -301,7 +301,7 @@ class TestMakeOpenrouterCall:
 class TestMakeLLMCall:
     """Tests for make_llm_call function"""
 
-    @patch('scenario_lab.utils.api_client.get_global_cache')
+    @patch('scenario_lab.utils.response_cache.get_global_cache')
     @patch('scenario_lab.utils.api_client.make_ollama_call')
     def test_routes_to_ollama_for_local_model(self, mock_ollama, mock_cache):
         """Test that local models are routed to Ollama"""
@@ -320,7 +320,7 @@ class TestMakeLLMCall:
         mock_ollama.assert_called_once()
         assert response.content == "Hello"
 
-    @patch('scenario_lab.utils.api_client.get_global_cache')
+    @patch('scenario_lab.utils.response_cache.get_global_cache')
     @patch('scenario_lab.utils.api_client.make_openrouter_call')
     def test_routes_to_openrouter_for_cloud_model(self, mock_openrouter, mock_cache):
         """Test that cloud models are routed to OpenRouter"""
@@ -340,7 +340,7 @@ class TestMakeLLMCall:
         mock_openrouter.assert_called_once()
         assert response.content == "Hello from cloud"
 
-    @patch('scenario_lab.utils.api_client.get_global_cache')
+    @patch('scenario_lab.utils.response_cache.get_global_cache')
     def test_returns_cached_response(self, mock_cache):
         """Test that cached responses are returned"""
         mock_entry = Mock()
@@ -359,7 +359,7 @@ class TestMakeLLMCall:
         assert response.content == "Cached response"
         assert response.cached is True
 
-    @patch('scenario_lab.utils.api_client.get_global_cache')
+    @patch('scenario_lab.utils.response_cache.get_global_cache')
     @patch('scenario_lab.utils.api_client.make_openrouter_call')
     def test_stores_response_in_cache(self, mock_openrouter, mock_cache):
         """Test that responses are stored in cache"""
@@ -380,7 +380,7 @@ class TestMakeLLMCall:
 
         mock_cache_instance.put.assert_called_once()
 
-    @patch('scenario_lab.utils.api_client.get_global_cache')
+    @patch('scenario_lab.utils.response_cache.get_global_cache')
     @patch('scenario_lab.utils.api_client.make_openrouter_call')
     def test_cache_disabled(self, mock_openrouter, mock_cache):
         """Test that cache can be disabled"""
@@ -441,7 +441,7 @@ class TestMakeLLMCallAsync:
 class TestLLMResponseTokenEstimation:
     """Tests for token estimation when not provided by API"""
 
-    @patch('scenario_lab.utils.api_client.get_global_cache')
+    @patch('scenario_lab.utils.response_cache.get_global_cache')
     @patch('scenario_lab.utils.api_client.make_openrouter_call')
     def test_estimates_tokens_when_not_provided(self, mock_openrouter, mock_cache):
         """Test that tokens are estimated when API doesn't provide breakdown"""

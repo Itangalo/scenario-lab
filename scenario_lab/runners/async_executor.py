@@ -84,7 +84,7 @@ class AsyncExecutor:
         self.sync_runner = SyncRunner(
             scenario_path=self.scenario_path,
             output_path=self.output_path,
-            max_turns=self.max_turns,
+            end_turn=self.max_turns,  # SyncRunner uses end_turn, AsyncExecutor uses max_turns
             credit_limit=self.credit_limit,
             json_mode=self.json_mode,
         )

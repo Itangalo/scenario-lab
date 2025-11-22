@@ -30,8 +30,7 @@ def test_db():
 
     yield db
 
-    # Cleanup
-    db.close()
+    # Cleanup - Database class doesn't have close(), just unlink the file
     os.unlink(temp_file.name)
 
 
@@ -217,9 +216,10 @@ class TestDatabaseQueries:
         stats = populated_db.get_run_statistics("query-test-run")
 
         assert stats["run_id"] == "query-test-run"
-        assert stats["scenario_name"] == "Query Test"
-        assert stats["turn_count"] == 2
-        assert stats["decision_count"] == 2
+        # Implementation returns "scenario" key, not "scenario_name"
+        assert stats["scenario"] == "Query Test"
+        assert stats["turns"] == 2
+        assert stats["decisions"] == 2
         assert abs(stats["total_cost"] - 0.5) < 0.01
 
         # Check cost breakdown

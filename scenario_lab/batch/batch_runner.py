@@ -825,7 +825,8 @@ class BatchRunner:
 
         if summary['runs_completed'] > 0:
             avg = self.cost_manager.get_average_cost_per_run()
-            self.logger.info(f"💰 Average per run: ${avg:.3f}")
+            if avg is not None:
+                self.logger.info(f"💰 Average per run: ${avg:.3f}")
 
         # Show failed runs details if any
         if summary['runs_failed'] > 0:

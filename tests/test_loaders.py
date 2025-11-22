@@ -336,13 +336,17 @@ class TestLoaderIntegration:
     def test_full_scenario_load(self):
         """Test loading a complete scenario from files"""
         with tempfile.TemporaryDirectory() as tmpdir:
-            # Create scenario.yaml
+            # Create scenario.yaml with all required fields
             scenario_yaml = """
 name: Integration Test Scenario
 description: A test scenario
 initial_world_state: The world is at peace.
 turns: 5
+turn_duration: "1 month"
 system_prompt: You are in a geopolitical simulation.
+actors:
+  - us
+  - cn
 """
             (Path(tmpdir) / 'scenario.yaml').write_text(scenario_yaml)
 
