@@ -37,7 +37,7 @@ Execute a scenario in the background.
 ```json
 {
   "scenario_path": "scenarios/ai-summit",
-  "max_turns": 10,
+  "end_turn": 10,
   "credit_limit": 5.0,
   "output_path": "output/custom-path",
   "enable_database": true
@@ -213,7 +213,7 @@ client = ScenarioLabClient("http://localhost:8000")
 # Execute scenario
 result = await client.execute_scenario(
     scenario_path="scenarios/ai-summit",
-    max_turns=10,
+    end_turn=10,
     credit_limit=5.0
 )
 

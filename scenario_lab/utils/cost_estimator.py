@@ -113,12 +113,12 @@ class CostEstimator:
 
         return True
 
-    def estimate(self, max_turns: Optional[int] = None) -> CostEstimate:
+    def estimate(self, end_turn: Optional[int] = None) -> CostEstimate:
         """
         Estimate costs for scenario execution
 
         Args:
-            max_turns: Override number of turns (uses scenario default if None)
+            end_turn: Override number of turns to execute (uses scenario default if None)
 
         Returns:
             CostEstimate with detailed breakdown
@@ -137,7 +137,7 @@ class CostEstimator:
                 )
 
         # Determine number of turns
-        turns = max_turns or self.scenario_config.turns or 10
+        turns = end_turn or self.scenario_config.turns or 10
 
         # Estimate per-actor costs
         actor_costs = {}

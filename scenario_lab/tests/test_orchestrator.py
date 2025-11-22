@@ -53,10 +53,10 @@ class TestScenarioOrchestrator:
     def test_creation(self):
         """Test creating an orchestrator"""
         bus = EventBus()
-        orchestrator = ScenarioOrchestrator(event_bus=bus, max_turns=10)
+        orchestrator = ScenarioOrchestrator(event_bus=bus, end_turn=10)
 
         assert orchestrator.event_bus is bus
-        assert orchestrator.max_turns == 10
+        assert orchestrator.end_turn == 10
         assert len(orchestrator.phases) == 0
 
     def test_phase_registration(self):
@@ -97,9 +97,9 @@ class TestScenarioOrchestrator:
         assert EventType.TURN_COMPLETED in event_types
 
     @pytest.mark.asyncio
-    async def test_max_turns_respected(self):
-        """Test that max_turns stops execution"""
-        orchestrator = ScenarioOrchestrator(max_turns=3)
+    async def test_end_turn_respected(self):
+        """Test that end_turn stops execution"""
+        orchestrator = ScenarioOrchestrator(end_turn=3)
         orchestrator.register_phase(PhaseType.DECISION, MockPhase("decision"))
 
         state = ScenarioState(
