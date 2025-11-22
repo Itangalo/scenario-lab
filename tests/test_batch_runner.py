@@ -404,7 +404,7 @@ class TestBatchRunnerExecution:
     """Tests for batch execution"""
 
     @pytest.mark.asyncio
-    @patch('scenario_lab.batch.batch_runner.run_scenario_async')
+    @patch('scenario_lab.batch.batch_executor.run_scenario_async')
     async def test_run_single_scenario_success(self, mock_run_scenario):
         """Test successful single scenario execution"""
         with tempfile.TemporaryDirectory() as tmpdir:
@@ -443,7 +443,7 @@ output_dir: {tmpdir}/output
             assert result['cost'] == 0.05
 
     @pytest.mark.asyncio
-    @patch('scenario_lab.batch.batch_runner.run_scenario_async')
+    @patch('scenario_lab.batch.batch_executor.run_scenario_async')
     async def test_run_single_scenario_failure(self, mock_run_scenario):
         """Test failed single scenario execution"""
         with tempfile.TemporaryDirectory() as tmpdir:
