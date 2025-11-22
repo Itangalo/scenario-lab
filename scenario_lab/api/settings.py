@@ -11,6 +11,17 @@ from dataclasses import dataclass, field
 from typing import Optional
 
 
+# Default CORS origins (localhost only for security)
+DEFAULT_CORS_ORIGINS = [
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "http://localhost:8000",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:5173",
+    "http://127.0.0.1:8000",
+]
+
+
 @dataclass
 class APISettings:
     """
@@ -23,6 +34,8 @@ class APISettings:
         SCENARIO_LAB_RATE_LIMIT_REQUESTS: Max requests per window (default: 100)
         SCENARIO_LAB_RATE_LIMIT_WINDOW: Time window in seconds (default: 60)
         SCENARIO_LAB_DEV_MODE: Enable development mode with relaxed security (default: false)
+        SCENARIO_LAB_CORS_ORIGINS: Comma-separated list of allowed CORS origins
+                                   (default: localhost only for security)
     """
 
     # Authentication settings
@@ -36,6 +49,9 @@ class APISettings:
 
     # Development mode (disables auth and rate limiting)
     dev_mode: bool = False
+
+    # CORS settings
+    cors_allowed_origins: list[str] = field(default_factory=lambda: DEFAULT_CORS_ORIGINS.copy())
 
     @classmethod
     def from_env(cls) -> "APISettings":
@@ -76,6 +92,15 @@ class APISettings:
             os.environ.get("SCENARIO_LAB_RATE_LIMIT_WINDOW", "60")
         )
 
+        # CORS origins (comma-separated, defaults to localhost only)
+        cors_origins_str = os.environ.get("SCENARIO_LAB_CORS_ORIGINS", "")
+        if cors_origins_str.strip():
+            cors_allowed_origins = [
+                origin.strip() for origin in cors_origins_str.split(",") if origin.strip()
+            ]
+        else:
+            cors_allowed_origins = DEFAULT_CORS_ORIGINS.copy()
+
         return cls(
             api_keys=api_keys,
             auth_enabled=auth_enabled,
@@ -83,6 +108,7 @@ class APISettings:
             rate_limit_requests=rate_limit_requests,
             rate_limit_window=rate_limit_window,
             dev_mode=dev_mode,
+            cors_allowed_origins=cors_allowed_origins,
         )
 
     def validate_api_key(self, key: Optional[str]) -> bool:
