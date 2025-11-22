@@ -1,120 +1,71 @@
-# Scenario Lab Test Suite
+# Scenario Lab Test Suite (V2)
 
-Automated tests for core Scenario Lab components.
+Automated tests for Scenario Lab V2 components.
 
 ## Running Tests
 
 ### Run all tests
 
 ```bash
-python run_tests.py
+pytest tests/
 ```
 
-### Run in quiet mode
+Or with unittest:
 
 ```bash
-python run_tests.py --quiet
+python -m pytest tests/ -v
 ```
 
 ### Run specific test file
 
 ```bash
-python -m unittest tests.test_world_state
+pytest tests/test_v2_smoke.py -v
 ```
 
 ### Run specific test case
 
 ```bash
-python -m unittest tests.test_world_state.TestWorldState.test_initialization
+pytest tests/test_v2_phases.py::TestDecisionPhaseV2::test_decision_phase_initialization -v
 ```
 
 ## Test Coverage
 
-### Unit Tests
+### V2 Core Tests
 
-**test_world_state.py** (8 tests)
-- WorldState initialization
-- State updates and retrieval
-- Actor decision recording
-- Markdown generation
+**test_v2_smoke.py** - Quick smoke tests verifying V2 components load correctly
 
-**test_communication_manager.py** (10 tests)
-- Channel creation (bilateral, coalition)
-- Message sending
-- Visibility rules
-- Channel serialization
-- Duplicate prevention
+**test_v2_phases.py** - Phase service tests:
+- Decision phase V2 (actor decision-making)
+- World update phase V2 (state synthesis)
+- Communication phase
+- Phase orchestration
 
-**test_context_manager.py** (5 tests)
-- Context windowing
+**test_context_manager_v2.py** - Context management:
+- Context windowing with validation
 - History formatting
-- Cache management
-- Cost estimation
+- Parameter validation (prevents BUG-010)
 
-**test_cost_tracker.py** (6 tests)
-- Cost recording (actors and world state)
-- Multi-turn and multi-actor tracking
-- JSON export
-- Cost estimation
+**test_metrics_tracker_v2.py** - Metrics tracking V2:
+- Pydantic schema-based configuration
+- Pattern, keyword, and LLM extraction methods
+- Async metrics extraction
 
-**test_qa_validator.py** (13 tests)
-- QA validator initialization
-- Validation check parsing
-- Actor decision consistency checks
-- World state coherence validation
-- Information access validation
-- Report generation
-- Cost tracking for validation
-
-**test_scenario_wizard.py** (6 tests)
-- Helper function validation (colors, models)
-- Scenario file structure creation
-- Actor YAML file generation
-- Metrics configuration
-- Complete scenario structure validation
-
-**test_response_cache.py** (28 tests)
-- Cache key generation
-- In-memory and disk caching
-- TTL and eviction
-- Cache statistics
-- Thread safety
-
-**test_error_handler.py** (28 tests)
-- Error categorization (10 categories)
-- Severity levels
-- Recovery suggestions
-- User-friendly messaging
-
-**test_progressive_fallback.py** (28 tests)
-- Model fallback chains
-- Conditional fallback logic
-- Fallback tracking
-
-**test_graceful_fallback.py** (24 tests)
-- Graceful degradation without optional dependencies
-- Console, progress, table fallbacks
-
-**test_api_utils.py** (27 tests)
-- API retry logic
-- Local LLM support (Ollama)
-- Connection pooling
+**test_async_executor.py** - Async execution:
+- Concurrent actor decisions
+- Rate limiting
 - Error handling
 
-**test_api_error_handling.py** (11 tests)
-- HTTP error retry
-- Rate limiting
-- Network error recovery
-- Context tracking
+**test_exogenous_events.py** - Background events:
+- Event loading and validation
+- Scheduled, conditional, random events
+- Event triggering logic
 
-**test_integration.py** (5 tests)
-- Full scenario execution
-- Resumption workflow
-- Branching workflow
-- Bilateral communications
-- Credit limit enforcement
+**test_database_analytics.py** - Database integration:
+- Scenario persistence
+- Analytics queries
+- Run comparison
 
-**Total:** 177 tests covering all major framework components
+**test_cli_wizards.py** - CLI interface tests
 
 ## Test Organization
 
@@ -122,105 +73,71 @@ python -m unittest tests.test_world_state.TestWorldState.test_initialization
 tests/
 ├── __init__.py
 ├── README.md
-├── test_world_state.py              # World state management
-├── test_communication_manager.py     # Communication channels
-├── test_context_manager.py           # Context windowing
-├── test_cost_tracker.py              # Cost tracking
-├── test_qa_validator.py              # Quality assurance validation
-├── test_scenario_wizard.py           # Scenario creation wizard
-├── test_response_cache.py            # Response caching
-├── test_error_handler.py             # Error handling
-├── test_progressive_fallback.py      # Progressive fallback
-├── test_graceful_fallback.py         # Graceful degradation
-├── test_api_utils.py                 # API utilities
-├── test_api_error_handling.py        # API error handling
-├── test_integration.py               # End-to-end integration tests
-├── test_metrics_tracker.py           # Metrics tracking
-├── test_response_parser.py           # Response parsing
-├── test_world_state_updater.py       # World state updates
-└── test_markdown_utils.py            # Markdown utilities
+├── test_v2_smoke.py              # Quick V2 component verification
+├── test_v2_phases.py             # Phase service tests
+├── test_context_manager_v2.py    # Context management
+├── test_metrics_tracker_v2.py    # Metrics tracking
+├── test_async_executor.py        # Async execution
+├── test_exogenous_events.py      # Background events
+├── test_database_analytics.py    # Database integration
+└── test_cli_wizards.py           # CLI tests
+```
+
+Additional tests are in `scenario_lab/tests/`:
+
+```
+scenario_lab/tests/
+├── test_orchestrator.py          # Orchestration tests
+├── test_state.py                 # State model tests
+└── test_events.py                # Event bus tests
 ```
 
 ## Writing New Tests
 
-Follow the existing test structure:
+Follow the V2 test structure (use scenario_lab imports, not sys.path):
 
 ```python
-import unittest
-import sys
-import os
+import pytest
+from unittest.mock import Mock, patch
 
-# Add src directory to path
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
-
-from your_module import YourClass
+from scenario_lab.core.context_manager import ContextManagerV2
+from scenario_lab.models.state import ScenarioState
 
 
-class TestYourClass(unittest.TestCase):
-    """Test YourClass functionality"""
-
-    def setUp(self):
-        """Set up test fixtures"""
-        self.instance = YourClass()
+class TestYourFeature:
+    """Test your feature"""
 
     def test_feature(self):
         """Test specific feature"""
-        result = self.instance.do_something()
-        self.assertEqual(result, expected_value)
+        # Arrange
+        manager = ContextManagerV2(max_tokens=1000)
+
+        # Act
+        result = manager.do_something()
+
+        # Assert
+        assert result == expected_value
 
 
 if __name__ == '__main__':
-    unittest.main()
+    pytest.main([__file__, '-v'])
 ```
 
-**test_batch_runner.py** (18 tests)
-- ParameterVariator: variation generation, Cartesian products
-- BatchCostManager: budget limits, cost tracking
-- Variation statistics and cost management
+## Integration Tests
 
-### Integration Tests
+Integration tests that require API keys are marked and can be run separately:
 
-**test_batch_integration.py** (9 tests)
-- Complete batch execution workflows (sequential & parallel)
-- Resume functionality
-- Cost tracking and budget enforcement
-- Batch analysis pipeline integration
-- Output directory structure validation
-
-**⚠️  Note:** Integration tests make real LLM API calls and require:
-- Valid OpenRouter API key in `.env`
-- Network connection
-- Runtime: 2-5 minutes
-- Cost: ~$0.10-0.50
-
-See [INTEGRATION_TESTS.md](INTEGRATION_TESTS.md) for detailed documentation.
-
-### Fast vs. Slow Tests
-
-**Fast Tests (Unit Tests):** No API calls, < 1 second
 ```bash
-python run_tests.py
+# Skip integration tests
+pytest tests/ -m "not integration"
+
+# Run only integration tests (requires API key)
+pytest tests/ -m "integration"
 ```
-
-**Slow Tests (Integration):** Real API calls, 2-5 minutes
-```bash
-python -m unittest tests.test_batch_integration -v
-```
-
-## What's Not Tested (Requires API Keys)
-
-The following components require actual API calls in production:
-- LLM integration (actor_engine.py _call_llm)
-- World state synthesis (world_state_updater.py)
-- Context summarization (context_manager.py _generate_summary)
-
-**Integration tests now cover these** with real API calls for end-to-end validation.
 
 ## Continuous Integration
 
-To add CI testing (GitHub Actions, etc.):
-
-1. Create `.github/workflows/tests.yml`:
+For CI testing (GitHub Actions):
 
 ```yaml
 name: Tests
@@ -238,30 +155,8 @@ jobs:
           python-version: '3.11'
       - name: Install dependencies
         run: |
-          pip install -r requirements.txt
+          pip install -e .
+          pip install pytest
       - name: Run tests
-        run: python run_tests.py
+        run: pytest tests/ -v
 ```
-
-2. Commit and push - tests will run automatically
-
-## Future Test Additions
-
-**Integration Tests:** ✅ IMPLEMENTED
-- ✅ End-to-end batch execution
-- ✅ State persistence and resumption
-- ✅ Parallel execution workflows
-- ⏸️  Branching scenarios (single runs)
-- ⏸️  Coalition formation workflows (needs real API testing)
-- ⏸️  Mock LLM provider for faster testing
-
-**Performance Tests:**
-- Large scenario handling (100+ runs)
-- Memory usage with many turns
-- Parallel execution scaling
-- Rate limit handling under load
-
-**Validation Tests:**
-- YAML scenario file validation (partially in schemas.py)
-- Actor configuration validation (partially in schemas.py)
-- Metric extraction accuracy

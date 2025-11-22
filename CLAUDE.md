@@ -27,8 +27,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - ✅ Resumable batch execution
 
 **User Experience & Safety:**
-- ✅ Interactive batch config wizard with validation
-- ✅ Scenario creation wizard - complete scenario generation in 5-10 minutes
+- ✅ CLI commands with helpful guidance for scenario/batch creation
+- ✅ AI-assisted scenario creation via AGENTS.md reference
 - ✅ Dry-run preview mode with cost/time estimation
 - ✅ Comprehensive error handling (10 categories) with user-friendly messages
 - ✅ Progressive fallback strategies for model failures
@@ -128,10 +128,11 @@ The V2 migration is functionally complete:
 - ✅ REST API with WebSocket streaming
 - ✅ React frontend integrated with V2 API
 
-**Legacy V1 Code:**
-- V1 code remains in `src/` directory for reference
-- V1 is no longer actively used by V2 components
-- CLI wizard commands still bridge to V1 wizards (temporary, will be migrated)
+**V1 Code Removal (2025-11-21):**
+- V1 `src/` directory has been completely removed
+- All V1 test files with broken imports have been removed
+- Deprecated web files (`web/app.py`, `web/scenario_executor.py`) removed
+- CLI wizard commands show guidance instead of broken V1 bridges
 
 **Documentation:**
 - Migration plan: `docs/v2_migration_plan.md`
@@ -306,7 +307,7 @@ These examples should guide the design of flexible, reusable scenario components
 The framework supports stopping and resuming scenario runs, crucial for handling API rate limits and budget constraints:
 
 **Key Components:**
-- `src/scenario_state_manager.py` - Saves/loads complete scenario state
+- `scenario_lab/utils/state_persistence.py` - Saves/loads complete scenario state
 - `scenario-state.json` - Auto-generated state file in each run directory
 - State includes: world state, actor states, costs, metrics, execution metadata
 
@@ -337,7 +338,7 @@ The framework supports creating alternative scenario paths by branching from any
 - `--branch-at-turn N` - Turn number to branch from (0 to current_turn)
 
 **Implementation details:**
-- `branch_scenario()` function in run_scenario.py
+- Branching functionality built into `scenario_lab/runners/sync_runner.py`
 - Creates new run directory with auto-incremented number
 - Copies all markdown files (world states, actor decisions) up to branch point
 - Truncates state data (world state, costs, metrics) to branch point
@@ -361,7 +362,8 @@ The framework supports creating alternative scenario paths by branching from any
 The framework includes automated consistency checking using lightweight LLM models to validate expensive model outputs:
 
 **Key Components:**
-- `src/qa_validator.py` - QAValidator class with validation logic
+- `scenario_lab/core/qa_validator.py` - QAValidator class with validation logic
+- `scenario_lab/core/qa_validator_v2.py` - V2 wrapper with Pydantic schemas
 - `validation-rules.yaml` - Configuration file in each scenario directory
 - Validation reports generated per turn and as summary
 
@@ -409,67 +411,46 @@ generate_turn_reports: true
 - Severity levels: Low (logged), Medium (warned), High (warned/halt)
 
 **Testing:**
-- 13 comprehensive unit tests in `tests/test_qa_validator.py`
-- Tests cover initialization, parsing, report generation, cost tracking
-- All tests pass as part of the 95-test suite
+- QA validation is tested as part of V2 integration tests
+- Tests cover initialization, validation flow, and report generation
 
-### Scenario Creation Wizard
+### Scenario Creation
 
-The framework includes an interactive CLI wizard for creating complete scenario configurations from scratch:
+Scenarios can be created manually or with AI assistance. The `scenario-lab create` command provides guidance on manual creation, while AI assistants can use the AGENTS.md reference to generate complete scenarios.
 
-**Key Components:**
-- `src/create_scenario.py` - Interactive wizard with 9-step workflow
-- `docs/scenario-creation-guide.md` - Comprehensive guide (500+ lines)
-- `tests/test_scenario_wizard.py` - 6 unit tests for wizard functions
+**Manual Creation Steps:**
 
-**Features:**
+1. Create a scenario directory with the required structure
+2. Write `scenario.yaml` with name, description, initial_world_state, turns
+3. Create actor files in `actors/` directory
+4. Optionally add `metrics.yaml` and `validation-rules.yaml`
+5. Validate with `scenario-lab validate <path>`
 
-1. **9-Step Guided Workflow**:
-   - Basic scenario information (name, description)
-   - System prompt configuration (with template)
-   - Initial world state definition
-   - Scenario parameters (turns, duration)
-   - World state model selection
-   - Actor creation (unlimited, minimum 2)
-   - Metrics configuration (optional)
-   - Validation rules setup (optional)
-   - Preview and save
+**AI-Assisted Creation:**
 
-2. **Actor Creation**:
-   - Name and short name
-   - LLM model selection with pricing info
-   - System prompt (template provided)
-   - Goals, constraints, expertise, decision style
-   - All fields validated
+For AI assistants, see **[AGENTS.md](AGENTS.md)** which contains:
+- Complete YAML schema documentation
+- Step-by-step workflow for scenario generation
+- Actor design guidelines and archetypes
+- Metrics configuration examples
 
-3. **Smart Defaults**:
-   - 9 common LLM models with descriptions and pricing
-   - Template system prompts for scenarios and actors
-   - Suggested metrics patterns
-   - Validation rule presets
-
-4. **Output Files**:
-   - `scenario.yaml` - Main scenario configuration
-   - `actors/*.yaml` - Actor definitions
-   - `metrics.yaml` - Metric definitions (optional)
-   - `validation-rules.yaml` - QA configuration (optional)
-
-**Benefits:**
-- Reduces scenario creation from 30+ minutes to 5-10 minutes
-- Ensures consistent, valid YAML structure
-- Built-in Pydantic validation
-- Preview before save
-- Template support for common patterns
+**Output Files:**
+- `scenario.yaml` - Main scenario configuration
+- `actors/*.yaml` - Actor definitions
+- `metrics.yaml` - Metric definitions (optional)
+- `validation-rules.yaml` - QA configuration (optional)
 
 **Usage:**
 ```bash
-python src/create_scenario.py
-```
+# Get guidance on manual creation
+scenario-lab create
 
-**Testing:**
-- 6 comprehensive tests covering all major functions
-- Tests for scenario structure, actor creation, metrics, full workflow
-- All tests pass as part of 177-test suite
+# Validate a scenario
+scenario-lab validate scenarios/my-scenario
+
+# Run a scenario
+scenario-lab run scenarios/my-scenario
+```
 
 ## Working with the Repository
 
