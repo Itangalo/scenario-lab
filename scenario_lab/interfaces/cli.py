@@ -2,17 +2,19 @@
 CLI interface for Scenario Lab V2
 
 Provides backward-compatible CLI commands plus new V2 features.
+Uses Rich for enhanced terminal output.
 """
-import click
 import asyncio
 import logging
 import sys
-import os
 from pathlib import Path
 from typing import Optional
 
+import click
+from rich.table import Table
+
 from scenario_lab import __version__
-from scenario_lab.core.events import EventBus, Event, EventType
+from scenario_lab.core.events import Event, EventType
 from scenario_lab.utils.cli_helpers import (
     print_header,
     print_info,
@@ -22,7 +24,11 @@ from scenario_lab.utils.cli_helpers import (
     print_alpha_notice,
     print_section,
     print_checklist_item,
+    print_turn_header,
+    print_phase_complete,
+    print_link,
 )
+from scenario_lab.utils.rich_console import console, get_cost_style
 
 
 @click.group()
@@ -91,7 +97,7 @@ def run(
     if branch_from:
         print_info("Branching from", branch_from, "blue")
         if branch_at_turn is not None:
-            click.echo(f"   At turn: {click.style(str(branch_at_turn), fg='blue')}")
+            console.print(f"   At turn: [blue]{branch_at_turn}[/]")
 
     # Use V2 SyncRunner for all operations (including resume/branch)
     try:
@@ -116,12 +122,11 @@ def run(
 
         async def on_turn_start(event: Event):
             turn = event.data.get("turn", 0)
-            click.echo()
-            click.echo(click.style(f"━━━ Turn {turn} ━━━", fg="bright_cyan", bold=True))
+            print_turn_header(turn)
 
         async def on_phase_complete(event: Event):
             phase = event.data.get("phase", "unknown")
-            click.echo(f"  ✓ {phase.replace('_', ' ').title()} phase complete")
+            print_phase_complete(phase)
 
         async def on_credit_warning(event: Event):
             remaining = event.data.get("remaining", 0)
@@ -142,11 +147,11 @@ def run(
         final_state = asyncio.run(runner.run())
 
         # Print summary
-        click.echo()
+        console.print()
         print_section("Scenario complete!")
-        click.echo(f"  Turns: {click.style(str(final_state.turn), fg='green')}")
-        click.echo(f"  Total cost: {click.style(f'${final_state.total_cost():.2f}', fg='green')}")
-        click.echo(f"  Output: {click.style(runner.output_path, fg='blue')}")
+        console.print(f"  Turns: [green]{final_state.turn}[/]")
+        console.print(f"  Total cost: [green]${final_state.total_cost():.2f}[/]")
+        console.print(f"  Output: [path]{runner.output_path}[/]")
 
         print_success("Scenario completed successfully")
 
@@ -183,7 +188,7 @@ def validate(scenario_path: str) -> None:
 
     print_header("Validating Scenario")
     print_info("Path", scenario_path)
-    click.echo()
+    console.print()
 
     # Validate all configuration files
     scenario_path_obj = Path(scenario_path)
@@ -198,30 +203,30 @@ def validate(scenario_path: str) -> None:
     for file_type, result in results.items():
         if result.success:
             if result.warnings:
-                print_checklist_item(f"{file_type.capitalize()}", status="⚠")
+                print_checklist_item(f"{file_type.capitalize()}", status="\u26a0")
                 for warning in result.warnings:
-                    click.echo(f"    {click.style('⚠', fg='yellow')} {warning}")
+                    console.print(f"    [warning]\u26a0[/] {warning}")
                 total_warnings += len(result.warnings)
             else:
-                print_checklist_item(f"{file_type.capitalize()}", status="✓")
+                print_checklist_item(f"{file_type.capitalize()}", status="\u2713")
         else:
-            print_checklist_item(f"{file_type.capitalize()}", status="✗")
+            print_checklist_item(f"{file_type.capitalize()}", status="\u2717")
             for error in result.errors:
-                click.echo(f"    {click.style('✗', fg='red')} {error}")
+                console.print(f"    [error]\u2717[/] {error}")
             total_errors += len(result.errors)
             all_success = False
 
     # Summary
-    click.echo()
+    console.print()
     if all_success:
         if total_warnings > 0:
             print_warning(f"Validation passed with {total_warnings} warning(s)")
-            click.echo()
-            click.echo("Consider addressing warnings for best practices.")
+            console.print()
+            console.print("Consider addressing warnings for best practices.")
         else:
             print_success("Validation passed")
-            click.echo()
-            click.echo("Scenario is ready to run!")
+            console.print()
+            console.print("Scenario is ready to run!")
     else:
         print_error(
             "Validation failed",
@@ -251,7 +256,7 @@ def estimate(scenario_path: str, end_turn: Optional[int]) -> None:
     print_info("Scenario", scenario_path)
     if end_turn:
         print_info("Turns", str(end_turn), "yellow")
-    click.echo()
+    console.print()
 
     # Create estimator and load configs
     estimator = CostEstimator(Path(scenario_path))
@@ -268,45 +273,47 @@ def estimate(scenario_path: str, end_turn: Optional[int]) -> None:
 
     # Display number of turns
     actual_turns = end_turn or estimator.scenario_config.turns or 10
-    click.echo(f"📊 Estimating costs for {click.style(str(actual_turns), fg='cyan', bold=True)} turns")
-    click.echo()
+    console.print(f"\U0001f4ca Estimating costs for [cyan bold]{actual_turns}[/] turns")
+    console.print()
 
-    # Display per-actor breakdown
+    # Display per-actor breakdown using a table
     if estimate_result.actor_costs:
         print_section("Per-Actor Estimates:")
+        actor_table = Table(show_header=True, header_style="bold cyan")
+        actor_table.add_column("Actor", style="cyan")
+        actor_table.add_column("Model", style="dim")
+        actor_table.add_column("Total", justify="right")
+        actor_table.add_column("Per Turn", justify="right")
+
         for actor_name, cost in estimate_result.actor_costs.items():
             actor_config = estimator.actor_configs.get(actor_name)
             model = actor_config.llm_model if actor_config else "unknown"
             cost_per_turn = cost / actual_turns if actual_turns > 0 else 0
+            style = get_cost_style(cost)
 
-            # Color code based on cost
-            if cost > 5.0:
-                color = "red"
-            elif cost > 1.0:
-                color = "yellow"
-            else:
-                color = "green"
-
-            click.echo(
-                f"  {actor_name} ({model}): "
-                f"{click.style(f'${cost:.2f}', fg=color)} total "
-                f"({click.style(f'${cost_per_turn:.3f}', fg=color)} per turn)"
+            actor_table.add_row(
+                actor_name,
+                model,
+                f"[{style}]${cost:.2f}[/]",
+                f"[{style}]${cost_per_turn:.3f}[/]",
             )
-        click.echo()
+
+        console.print(actor_table)
+        console.print()
 
     # Display other cost components
     if estimate_result.world_state_cost > 0:
         ws_model = estimator.scenario_config.world_state_model or "openai/gpt-4o-mini"
-        click.echo(f"  World State Updates ({ws_model}): ${estimate_result.world_state_cost:.2f}")
+        console.print(f"  World State Updates ({ws_model}): ${estimate_result.world_state_cost:.2f}")
 
     if estimate_result.communication_cost > 0:
-        click.echo(f"  Communications: ${estimate_result.communication_cost:.2f}")
+        console.print(f"  Communications: ${estimate_result.communication_cost:.2f}")
 
     if estimate_result.metrics_cost > 0:
-        click.echo(f"  Metrics Extraction: ${estimate_result.metrics_cost:.2f}")
+        console.print(f"  Metrics Extraction: ${estimate_result.metrics_cost:.2f}")
 
     if estimate_result.validation_cost > 0:
-        click.echo(f"  QA Validation: ${estimate_result.validation_cost:.2f}")
+        console.print(f"  QA Validation: ${estimate_result.validation_cost:.2f}")
 
     if any([
         estimate_result.world_state_cost,
@@ -314,34 +321,34 @@ def estimate(scenario_path: str, end_turn: Optional[int]) -> None:
         estimate_result.metrics_cost,
         estimate_result.validation_cost
     ]):
-        click.echo()
+        console.print()
 
     # Display total
     print_section("Total Estimate:")
-    total_color = "red" if estimate_result.total_cost > 10.0 else "green" if estimate_result.total_cost < 1.0 else "yellow"
+    total_style = get_cost_style(estimate_result.total_cost)
 
-    click.echo(
-        f"  Total: {click.style(f'${estimate_result.total_cost:.2f}', fg=total_color, bold=True)} "
+    console.print(
+        f"  Total: [{total_style} bold]${estimate_result.total_cost:.2f}[/] "
         f"for {actual_turns} turns"
     )
-    click.echo(
-        f"  Per turn: {click.style(f'${estimate_result.per_turn_cost:.3f}', fg=total_color)}"
+    console.print(
+        f"  Per turn: [{total_style}]${estimate_result.per_turn_cost:.3f}[/]"
     )
 
     # Show if historical data was used
     if estimate_result.historical_data_used:
-        click.echo(
-            f"  {click.style('📊', fg='cyan')} Estimate improved using historical run data"
+        console.print(
+            "  [cyan]\U0001f4ca[/] Estimate improved using historical run data"
         )
 
-    click.echo()
+    console.print()
 
     # Display warnings
     if estimate_result.warnings:
         print_section("Warnings:")
         for warning in estimate_result.warnings:
-            click.echo(f"  {click.style('⚠', fg='yellow')} {warning}")
-        click.echo()
+            console.print(f"  [warning]\u26a0[/] {warning}")
+        console.print()
 
     # Summary message
     if estimate_result.total_cost > 50.0:
@@ -349,8 +356,8 @@ def estimate(scenario_path: str, end_turn: Optional[int]) -> None:
     elif estimate_result.total_cost == 0.0:
         print_success("This scenario uses free/local models - zero estimated cost!")
     else:
-        click.echo(click.style("💡 Tip:", fg="bright_blue") + " Use --credit-limit to cap spending during execution")
-        click.echo()
+        console.print("\U0001f4a1 [info.bright]Tip:[/] Use --credit-limit to cap spending during execution")
+        console.print()
 
 
 @cli.command()
@@ -401,40 +408,47 @@ def compare(run_paths: tuple[str, ...]) -> None:
         try:
             state = StatePersistence.load_state(str(state_file))
             states.append((run_path, state))
-            print_checklist_item(f"Loaded: {run_dir.name}", status="✓")
+            print_checklist_item(f"Loaded: {run_dir.name}", status="\u2713")
         except Exception as e:
             print_error(f"Failed to load {run_path}", str(e))
             sys.exit(1)
 
-    click.echo()
+    console.print()
 
-    # Summary section
+    # Summary section using Rich Table
     print_section("Run Summary")
-    headers = ["Property"] + [Path(rp).name for rp in run_paths]
-    click.echo(f"  {'Property':<20}" + "".join(f"{Path(rp).name:<20}" for rp in run_paths))
-    click.echo(f"  {'-'*20}" + "".join(f"{'-'*20}" for _ in run_paths))
+    summary_table = Table(show_header=True, header_style="bold cyan")
+    summary_table.add_column("Property", style="cyan")
+    for rp in run_paths:
+        summary_table.add_column(Path(rp).name)
 
     # Turns completed
-    click.echo(f"  {'Turns':<20}" + "".join(f"{s.turn:<20}" for _, s in states))
+    summary_table.add_row("Turns", *[str(s.turn) for _, s in states])
 
     # Status
-    click.echo(f"  {'Status':<20}" + "".join(f"{s.status.value:<20}" for _, s in states))
+    summary_table.add_row("Status", *[s.status.value for _, s in states])
 
     # Total cost
     costs = [s.total_cost() for _, s in states]
-    click.echo(f"  {'Total Cost':<20}" + "".join(f"${c:<19.2f}" for c in costs))
+    summary_table.add_row("Total Cost", *[f"${c:.2f}" for c in costs])
 
     # Cost per turn
     cost_per_turn = [c / s.turn if s.turn > 0 else 0 for c, (_, s) in zip(costs, states)]
-    click.echo(f"  {'Cost/Turn':<20}" + "".join(f"${c:<19.3f}" for c in cost_per_turn))
+    summary_table.add_row("Cost/Turn", *[f"${c:.3f}" for c in cost_per_turn])
 
-    click.echo()
+    console.print(summary_table)
+    console.print()
 
-    # Actor comparison
+    # Actor comparison using Rich Table
     print_section("Actor Models")
     all_actors = set()
     for _, state in states:
         all_actors.update(state.actors.keys())
+
+    actor_table = Table(show_header=True, header_style="bold cyan")
+    actor_table.add_column("Actor", style="cyan")
+    for rp in run_paths:
+        actor_table.add_column(Path(rp).name)
 
     for actor_name in sorted(all_actors):
         models = []
@@ -442,29 +456,41 @@ def compare(run_paths: tuple[str, ...]) -> None:
             if actor_name in state.actors:
                 models.append(state.actors[actor_name].model)
             else:
-                models.append("N/A")
-        click.echo(f"  {actor_name:<20}" + "".join(f"{m:<20}" for m in models))
+                models.append("[dim]N/A[/]")
+        actor_table.add_row(actor_name, *models)
 
-    click.echo()
+    console.print(actor_table)
+    console.print()
 
-    # Cost by actor
+    # Cost by actor using Rich Table
     print_section("Cost by Actor")
+    cost_table = Table(show_header=True, header_style="bold cyan")
+    cost_table.add_column("Actor", style="cyan")
+    for rp in run_paths:
+        cost_table.add_column(Path(rp).name, justify="right")
+
     for actor_name in sorted(all_actors):
         actor_costs = []
         for _, state in states:
             actor_cost = sum(c.cost for c in state.costs if c.actor == actor_name)
-            actor_costs.append(actor_cost)
-        click.echo(f"  {actor_name:<20}" + "".join(f"${c:<19.2f}" for c in actor_costs))
+            actor_costs.append(f"${actor_cost:.2f}")
+        cost_table.add_row(actor_name, *actor_costs)
 
-    click.echo()
+    console.print(cost_table)
+    console.print()
 
-    # Metrics comparison (if available)
+    # Metrics comparison (if available) using Rich Table
     all_metrics = set()
     for _, state in states:
         all_metrics.update(m.name for m in state.metrics)
 
     if all_metrics:
         print_section("Metrics (Final Turn)")
+        metrics_table = Table(show_header=True, header_style="bold cyan")
+        metrics_table.add_column("Metric", style="cyan")
+        for rp in run_paths:
+            metrics_table.add_column(Path(rp).name)
+
         for metric_name in sorted(all_metrics):
             metric_values = []
             for _, state in states:
@@ -479,10 +505,11 @@ def compare(run_paths: tuple[str, ...]) -> None:
                     else:
                         metric_values.append(str(value)[:17])
                 else:
-                    metric_values.append("N/A")
-            click.echo(f"  {metric_name:<20}" + "".join(f"{v:<20}" for v in metric_values))
+                    metric_values.append("[dim]N/A[/]")
+            metrics_table.add_row(metric_name, *metric_values)
 
-        click.echo()
+        console.print(metrics_table)
+        console.print()
 
     # Cost difference summary
     if len(states) == 2:
@@ -491,17 +518,17 @@ def compare(run_paths: tuple[str, ...]) -> None:
         cost_pct = (cost_diff / costs[0] * 100) if costs[0] > 0 else 0
 
         if cost_diff > 0:
-            click.echo(f"  {Path(run_paths[1]).name} costs ${abs(cost_diff):.2f} more ({cost_pct:+.1f}%)")
+            console.print(f"  {Path(run_paths[1]).name} costs [cost.danger]${abs(cost_diff):.2f}[/] more ({cost_pct:+.1f}%)")
         elif cost_diff < 0:
-            click.echo(f"  {Path(run_paths[1]).name} costs ${abs(cost_diff):.2f} less ({cost_pct:+.1f}%)")
+            console.print(f"  {Path(run_paths[1]).name} costs [cost]${abs(cost_diff):.2f}[/] less ({cost_pct:+.1f}%)")
         else:
-            click.echo("  Both runs have identical costs")
+            console.print("  Both runs have identical costs")
 
         turn_diff = states[1][1].turn - states[0][1].turn
         if turn_diff != 0:
-            click.echo(f"  Turn difference: {turn_diff:+d}")
+            console.print(f"  Turn difference: {turn_diff:+d}")
 
-        click.echo()
+        console.print()
 
     print_success(f"Compared {len(states)} runs")
 
@@ -532,21 +559,21 @@ def benchmark(scenario_path: str, turns: int, dry_run: bool) -> None:
     print_info("Turns", str(turns))
 
     if dry_run:
-        click.echo()
+        console.print()
         print_warning("Dry run mode - no actual execution")
-        click.echo()
-        click.echo("Would benchmark:")
-        click.echo(f"  - Scenario: {scenario_path}")
-        click.echo(f"  - Turns: {turns}")
-        click.echo()
-        click.echo("Metrics that will be measured:")
-        click.echo("  - Startup time (scenario loading)")
-        click.echo("  - Turn execution time (avg, P95)")
-        click.echo("  - Memory usage (initial, peak, final)")
-        click.echo("  - Total and per-turn cost")
+        console.print()
+        console.print("Would benchmark:")
+        console.print(f"  - Scenario: [path]{scenario_path}[/]")
+        console.print(f"  - Turns: [cyan]{turns}[/]")
+        console.print()
+        console.print("Metrics that will be measured:")
+        console.print("  - Startup time (scenario loading)")
+        console.print("  - Turn execution time (avg, P95)")
+        console.print("  - Memory usage (initial, peak, final)")
+        console.print("  - Total and per-turn cost")
         return
 
-    click.echo()
+    console.print()
 
     # Initialize memory monitor
     mem_monitor = get_memory_monitor()
@@ -571,7 +598,7 @@ def benchmark(scenario_path: str, turns: int, dry_run: bool) -> None:
         runner.setup()
 
         startup_time = time.time() - startup_start
-        click.echo(f"  Startup time: {click.style(f'{startup_time:.2f}s', fg='green')}")
+        console.print(f"  Startup time: [green]{startup_time:.2f}s[/]")
 
         # Track turn times via events
         turn_start_time = None
@@ -580,14 +607,14 @@ def benchmark(scenario_path: str, turns: int, dry_run: bool) -> None:
             nonlocal turn_start_time
             turn_start_time = time.time()
             turn = event.data.get("turn", 0)
-            click.echo(f"  Running turn {turn}...", nl=False)
+            console.print(f"  Running turn {turn}...", end="")
 
         async def on_turn_complete(event: Event):
             nonlocal turn_start_time, peak_memory_mb
             if turn_start_time:
                 turn_time = time.time() - turn_start_time
                 turn_times.append(turn_time)
-                click.echo(f" {click.style(f'{turn_time:.2f}s', fg='cyan')}")
+                console.print(f" [cyan]{turn_time:.2f}s[/]")
 
                 # Check memory after each turn
                 current_stats = mem_monitor.get_memory_stats()
@@ -609,53 +636,53 @@ def benchmark(scenario_path: str, turns: int, dry_run: bool) -> None:
         final_stats = mem_monitor.get_memory_stats()
 
         # Calculate statistics
-        click.echo()
+        console.print()
         print_section("Results")
 
         # Timing stats
-        click.echo()
-        click.echo(click.style("  Timing:", bold=True))
-        click.echo(f"    Startup time:     {click.style(f'{startup_time:.2f}s', fg='green')}")
-        click.echo(f"    Total time:       {click.style(f'{total_time:.2f}s', fg='green')}")
+        console.print()
+        console.print("[bold]  Timing:[/]")
+        console.print(f"    Startup time:     [green]{startup_time:.2f}s[/]")
+        console.print(f"    Total time:       [green]{total_time:.2f}s[/]")
 
         if turn_times:
             avg_turn = statistics.mean(turn_times)
-            click.echo(f"    Avg turn time:    {click.style(f'{avg_turn:.2f}s', fg='cyan')}")
+            console.print(f"    Avg turn time:    [cyan]{avg_turn:.2f}s[/]")
 
             if len(turn_times) >= 2:
                 # Calculate P95 (or max if too few samples)
                 sorted_times = sorted(turn_times)
                 p95_index = int(len(sorted_times) * 0.95)
                 p95_time = sorted_times[min(p95_index, len(sorted_times) - 1)]
-                click.echo(f"    P95 turn time:    {click.style(f'{p95_time:.2f}s', fg='cyan')}")
+                console.print(f"    P95 turn time:    [cyan]{p95_time:.2f}s[/]")
 
                 min_time = min(turn_times)
                 max_time = max(turn_times)
-                click.echo(f"    Min/Max turn:     {min_time:.2f}s / {max_time:.2f}s")
+                console.print(f"    Min/Max turn:     {min_time:.2f}s / {max_time:.2f}s")
 
         # Memory stats
-        click.echo()
-        click.echo(click.style("  Memory:", bold=True))
+        console.print()
+        console.print("[bold]  Memory:[/]")
         if initial_stats:
-            click.echo(f"    Initial:          {click.style(f'{initial_stats.process_mb:.1f} MB', fg='blue')}")
+            console.print(f"    Initial:          [blue]{initial_stats.process_mb:.1f} MB[/]")
         if peak_memory_mb > 0:
-            click.echo(f"    Peak:             {click.style(f'{peak_memory_mb:.1f} MB', fg='yellow')}")
+            console.print(f"    Peak:             [yellow]{peak_memory_mb:.1f} MB[/]")
         if final_stats:
-            click.echo(f"    Final:            {click.style(f'{final_stats.process_mb:.1f} MB', fg='blue')}")
+            console.print(f"    Final:            [blue]{final_stats.process_mb:.1f} MB[/]")
             if initial_stats:
                 memory_delta = final_stats.process_mb - initial_stats.process_mb
-                delta_color = "red" if memory_delta > 50 else "green"
-                click.echo(f"    Delta:            {click.style(f'{memory_delta:+.1f} MB', fg=delta_color)}")
+                delta_style = "red" if memory_delta > 50 else "green"
+                console.print(f"    Delta:            [{delta_style}]{memory_delta:+.1f} MB[/]")
 
         # Cost stats
-        click.echo()
-        click.echo(click.style("  Cost:", bold=True))
+        console.print()
+        console.print("[bold]  Cost:[/]")
         total_cost = final_state.total_cost()
-        click.echo(f"    Total cost:       {click.style(f'${total_cost:.4f}', fg='green')}")
+        console.print(f"    Total cost:       [green]${total_cost:.4f}[/]")
 
         if final_state.turn > 0:
             cost_per_turn = total_cost / final_state.turn
-            click.echo(f"    Cost per turn:    {click.style(f'${cost_per_turn:.4f}', fg='green')}")
+            console.print(f"    Cost per turn:    [green]${cost_per_turn:.4f}[/]")
 
         # Cost by phase
         phase_costs: dict[str, float] = {}
@@ -664,28 +691,28 @@ def benchmark(scenario_path: str, turns: int, dry_run: bool) -> None:
             phase_costs[phase] = phase_costs.get(phase, 0) + cost_record.cost
 
         if phase_costs:
-            click.echo(f"    By phase:")
+            console.print("    By phase:")
             for phase, cost in sorted(phase_costs.items()):
-                click.echo(f"      {phase:<16} ${cost:.4f}")
+                console.print(f"      {phase:<16} ${cost:.4f}")
 
         # Summary
-        click.echo()
+        console.print()
         print_section("Summary")
         efficiency = total_cost / total_time if total_time > 0 else 0
-        click.echo(f"  Turns completed: {final_state.turn}")
-        click.echo(f"  Time efficiency: ${efficiency:.4f}/second")
+        console.print(f"  Turns completed: {final_state.turn}")
+        console.print(f"  Time efficiency: ${efficiency:.4f}/second")
 
         if turn_times:
             throughput = len(turn_times) / sum(turn_times) if sum(turn_times) > 0 else 0
-            click.echo(f"  Throughput:      {throughput:.2f} turns/second")
+            console.print(f"  Throughput:      {throughput:.2f} turns/second")
 
-        click.echo()
+        console.print()
         print_success("Benchmark complete")
 
         # Output location
         if hasattr(runner, 'output_path') and runner.output_path:
-            click.echo()
-            click.echo(f"Benchmark run saved to: {click.style(runner.output_path, fg='blue')}")
+            console.print()
+            console.print(f"Benchmark run saved to: [path]{runner.output_path}[/]")
 
     except ImportError as e:
         print_error(
@@ -714,9 +741,9 @@ def version() -> None:
     print_checklist_item("Event-driven execution engine")
     print_checklist_item("Immutable state management")
     print_checklist_item("Backward compatible with V1")
-    print_checklist_item("Full execution (Phase 2.1)", "⏳")
-    print_checklist_item("Web dashboard (Phase 2.3)", "⏳")
-    click.echo()
+    print_checklist_item("Full execution (Phase 2.1)", "\u23f3")
+    print_checklist_item("Web dashboard (Phase 2.3)", "\u23f3")
+    console.print()
 
 
 @cli.command()
@@ -739,10 +766,10 @@ def serve(host: str, port: int, reload: bool) -> None:
     print_info("Reload", "enabled" if reload else "disabled", "yellow" if reload else "blue")
 
     print_section("Starting server...")
-    click.echo()
-    click.echo(f"🌐 API Documentation: {click.style(f'http://{host}:{port}/docs', fg='blue', underline=True)}")
-    click.echo(f"📊 OpenAPI Schema: {click.style(f'http://{host}:{port}/openapi.json', fg='blue')}")
-    click.echo()
+    console.print()
+    print_link("\U0001f310 API Documentation", f"http://{host}:{port}/docs")
+    print_link("\U0001f4ca OpenAPI Schema", f"http://{host}:{port}/openapi.json")
+    console.print()
 
     try:
         import uvicorn
@@ -788,29 +815,29 @@ def create(output_dir: Optional[str]) -> None:
     This typically takes 5-10 minutes to complete.
     """
     print_header("Scenario Creation Wizard")
-    click.echo()
+    console.print()
 
     # V2 wizard not yet implemented - provide guidance
     print_warning("Interactive wizard not yet available in V2")
-    click.echo()
-    click.echo("To create a scenario manually:")
-    click.echo()
-    click.echo("  1. Create a scenario directory:")
-    click.echo(f"     {click.style('mkdir -p scenarios/my-scenario/actors', fg='cyan')}")
-    click.echo()
-    click.echo("  2. Create scenario.yaml with:")
-    click.echo(f"     {click.style('name, description, initial_world_state, turns', fg='yellow')}")
-    click.echo()
-    click.echo("  3. Create actor files in actors/:")
-    click.echo(f"     {click.style('name, llm_model, system_prompt, goals', fg='yellow')}")
-    click.echo()
-    click.echo("  4. Validate your scenario:")
-    click.echo(f"     {click.style('scenario-lab validate scenarios/my-scenario', fg='cyan')}")
-    click.echo()
-    click.echo("For complete documentation, see:")
-    click.echo(f"  {click.style('AGENTS.md', fg='blue')} - Full YAML schema reference")
-    click.echo(f"  {click.style('scenarios/', fg='blue')} - Example scenarios")
-    click.echo()
+    console.print()
+    console.print("To create a scenario manually:")
+    console.print()
+    console.print("  1. Create a scenario directory:")
+    console.print("     [command]mkdir -p scenarios/my-scenario/actors[/]")
+    console.print()
+    console.print("  2. Create scenario.yaml with:")
+    console.print("     [yellow]name, description, initial_world_state, turns[/]")
+    console.print()
+    console.print("  3. Create actor files in actors/:")
+    console.print("     [yellow]name, llm_model, system_prompt, goals[/]")
+    console.print()
+    console.print("  4. Validate your scenario:")
+    console.print("     [command]scenario-lab validate scenarios/my-scenario[/]")
+    console.print()
+    console.print("For complete documentation, see:")
+    console.print("  [path]AGENTS.md[/] - Full YAML schema reference")
+    console.print("  [path]scenarios/[/] - Example scenarios")
+    console.print()
 
 
 @cli.command()
@@ -832,28 +859,28 @@ def create_batch(output_path: Optional[str]) -> None:
     This typically takes 3-5 minutes to complete.
     """
     print_header("Batch Configuration Wizard")
-    click.echo()
+    console.print()
 
     # V2 wizard not yet implemented - provide guidance
     print_warning("Interactive wizard not yet available in V2")
-    click.echo()
-    click.echo("To create a batch configuration manually:")
-    click.echo()
-    click.echo("  1. Create a YAML file with batch configuration:")
-    click.echo(f"     {click.style('experiment_name, base_scenario, variations', fg='yellow')}")
-    click.echo()
-    click.echo("  2. Define parameter variations:")
-    click.echo(f"     {click.style('actor_models, scenario_parameters, runs_per_variation', fg='yellow')}")
-    click.echo()
-    click.echo("  3. Set execution limits:")
-    click.echo(f"     {click.style('max_parallel_workers, total_budget, per_run_budget', fg='yellow')}")
-    click.echo()
-    click.echo("  4. Run with dry-run to preview:")
-    click.echo(f"     {click.style('python -m scenario_lab.batch.batch_runner config.yaml --dry-run', fg='cyan')}")
-    click.echo()
-    click.echo("For examples, see:")
-    click.echo(f"  {click.style('examples/', fg='blue')} - Example batch configurations")
-    click.echo()
+    console.print()
+    console.print("To create a batch configuration manually:")
+    console.print()
+    console.print("  1. Create a YAML file with batch configuration:")
+    console.print("     [yellow]experiment_name, base_scenario, variations[/]")
+    console.print()
+    console.print("  2. Define parameter variations:")
+    console.print("     [yellow]actor_models, scenario_parameters, runs_per_variation[/]")
+    console.print()
+    console.print("  3. Set execution limits:")
+    console.print("     [yellow]max_parallel_workers, total_budget, per_run_budget[/]")
+    console.print()
+    console.print("  4. Run with dry-run to preview:")
+    console.print("     [command]python -m scenario_lab.batch.batch_runner config.yaml --dry-run[/]")
+    console.print()
+    console.print("For examples, see:")
+    console.print("  [path]examples/[/] - Example batch configurations")
+    console.print()
 
 
 def main() -> None:
