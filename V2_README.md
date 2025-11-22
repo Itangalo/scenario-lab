@@ -96,8 +96,7 @@ scenario_lab/
 
 ### ✅ Documentation
 
-- **[V2_ARCHITECTURE.md](docs/V2_ARCHITECTURE.md)** - Complete architecture overview
-- **[V2_MIGRATION.md](docs/V2_MIGRATION.md)** - Migration guide from V1
+- **[ARCHITECTURE_GROUND_TRUTH.md](docs/ARCHITECTURE_GROUND_TRUTH.md)** - Complete architecture overview
 - **[ROADMAP_V2.md](ROADMAP_V2.md)** - Full development roadmap
 
 ### ✅ Packaging
@@ -402,7 +401,7 @@ No. V2 is backward compatible. All V1 scenarios and commands work unchanged.
 
 ### How do I report bugs?
 
-GitHub Issues: https://github.com/yourusername/scenario-lab/issues
+GitHub Issues: https://github.com/Itangalo/scenario-lab/issues
 
 Include:
 - V2 version: `scenario-lab version`
@@ -421,8 +420,7 @@ Yes! See priority areas above. Start with:
 
 ### Documentation
 
-- **[V2_ARCHITECTURE.md](docs/V2_ARCHITECTURE.md)** - Architecture deep-dive
-- **[V2_MIGRATION.md](docs/V2_MIGRATION.md)** - Migration from V1
+- **[ARCHITECTURE_GROUND_TRUTH.md](docs/ARCHITECTURE_GROUND_TRUTH.md)** - Architecture deep-dive
 - **[ROADMAP_V2.md](ROADMAP_V2.md)** - Development roadmap
 - **[README.md](README.md)** - Project overview
 
@@ -435,8 +433,8 @@ Yes! See priority areas above. Start with:
 
 ### Getting Help
 
-- GitHub Discussions: https://github.com/yourusername/scenario-lab/discussions
-- GitHub Issues: https://github.com/yourusername/scenario-lab/issues
+- GitHub Discussions: https://github.com/Itangalo/scenario-lab/discussions
+- GitHub Issues: https://github.com/Itangalo/scenario-lab/issues
 
 ## Summary
 

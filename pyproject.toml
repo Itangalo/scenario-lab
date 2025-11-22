@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "scenario-lab"
-version = "2.0.0-alpha.1"
+version = "2.0.0-alpha.4"
 description = "AI-powered multi-actor scenario simulation framework for policy research"
 readme = "README.md"
 requires-python = ">=3.9"
@@ -65,10 +65,10 @@ all = [
 scenario-lab = "scenario_lab.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/yourusername/scenario-lab"
-Documentation = "https://github.com/yourusername/scenario-lab/blob/main/README.md"
-Repository = "https://github.com/yourusername/scenario-lab"
-Issues = "https://github.com/yourusername/scenario-lab/issues"
+Homepage = "https://github.com/Itangalo/scenario-lab"
+Documentation = "https://github.com/Itangalo/scenario-lab/blob/main/README.md"
+Repository = "https://github.com/Itangalo/scenario-lab"
+Issues = "https://github.com/Itangalo/scenario-lab/issues"
 
 [tool.setuptools]
 packages = ["scenario_lab"]
