@@ -463,41 +463,71 @@ cp .env.example .env
 
 ### Creating Your Own Scenarios
 
-Use the interactive scenario creation wizard to build custom scenarios:
+Scenarios can be created in two ways: **manually** with CLI guidance, or **with AI assistance** using comprehensive schema documentation.
+
+#### Option 1: Manual Creation with CLI Guidance
+
+Use the CLI to get guidance on manual scenario creation:
 
 ```bash
 scenario-lab create
 ```
 
-The wizard guides you through creating:
+This provides step-by-step instructions for creating:
 
 - **Scenario definition**: Name, description, initial world state, turn parameters
 - **Actor profiles**: Multiple actors with goals, constraints, expertise, and decision styles
 - **Metrics**: Quantitative and qualitative measurements (optional)
 - **Validation rules**: Automated consistency checking (optional)
 
-**Example workflow:**
-```bash
-# Create a new scenario interactively
-scenario-lab create
+**What you'll create:**
 
-# Answer the wizard's questions to define:
-#   - Scenario name and context
-#   - Number of turns and duration
-#   - 2+ actors with distinct roles
-#   - Metrics to track (optional)
-#   - Validation rules (optional)
-
-# Outputs complete scenario to scenarios/your-scenario-name/
-```
-
-**What gets created:**
 - `scenario.yaml` - Main scenario configuration
 - `actors/*.yaml` - Actor definitions with goals and constraints
 - `metrics.yaml` - Metric definitions (if specified)
 - `validation-rules.yaml` - QA validation config (if enabled)
 
-For AI assistants helping create scenarios, see [AGENTS.md](AGENTS.md) for complete schema documentation and guidelines.
+#### Option 2: AI-Assisted Creation (Recommended for Complex Scenarios)
+
+For complex scenarios, use an AI coding assistant (Claude Code, Cursor, Copilot, etc.) with the **[AGENTS.md](AGENTS.md)** reference file. This is the authoritative schema documentation that enables AI assistants to generate complete, valid scenario configurations.
+
+**Step-by-step workflow:**
+
+1. **Describe your research question** to the AI assistant:
+   ```
+   "I want to simulate how the US and China would respond to a major AI investment crisis"
+   ```
+
+2. **The AI uses AGENTS.md** to understand:
+   - Complete YAML schema for all configuration files
+   - Actor design guidelines and archetypes
+   - Metrics configuration patterns
+   - Validation rule setup
+
+3. **AI generates all required files**:
+   - `scenario.yaml` with validated structure
+   - `actors/*.yaml` with realistic goals, constraints, expertise
+   - `metrics.yaml` with appropriate extraction methods
+   - `validation-rules.yaml` for quality assurance
+
+4. **Validate the scenario**:
+   ```bash
+   scenario-lab validate scenarios/your-scenario
+   ```
+
+5. **Run the scenario**:
+   ```bash
+   scenario-lab run scenarios/your-scenario
+   ```
+
+**Why use AI-assisted creation?**
+
+- **Faster iteration**: Generate complete scenarios in minutes
+- **Schema compliance**: AI follows documented validation rules
+- **Realistic actors**: AI researches real-world counterparts and decision patterns
+- **Proper metrics**: AI selects appropriate extraction methods (pattern, keyword, LLM)
+
+> **For AI Assistants**: See **[AGENTS.md](AGENTS.md)** for complete YAML schemas, actor design guidelines, validation patterns, and example scenarios. This is the authoritative reference for generating Scenario Lab configurations.
 
 ### Running a Scenario
 
@@ -693,13 +723,119 @@ See [AGENTS.md](AGENTS.md) for detailed batch configuration schema documentation
 - **example-minimal-template**: Minimal template for creating new scenarios
 - **example-full-featured**: Full-featured example demonstrating all configuration options
 
+## End-to-End Workflow
+
+This section provides a complete walkthrough from scenario creation to analysis, linking all the relevant documentation and commands.
+
+### Quick Reference
+
+| Step | Action | Reference |
+|------|--------|-----------|
+| 1. Design | Define research question and actors | [AGENTS.md](AGENTS.md) - Actor Design Guidelines |
+| 2. Create | Generate YAML configuration files | [AGENTS.md](AGENTS.md) - File Schemas |
+| 3. Validate | Check configuration for errors | `scenario-lab validate <path>` |
+| 4. Test | Run limited turns to verify | `scenario-lab run <path> --end-turn 2` |
+| 5. Execute | Run full scenario | `scenario-lab run <path>` |
+| 6. Analyze | Review outputs and metrics | `runs/run-NNN/` directory |
+| 7. Iterate | Branch or modify and re-run | `--branch-from` / `--resume` |
+
+### Detailed Workflow
+
+**Step 1: Design Your Scenario**
+
+Start with a clear research question. Use [AGENTS.md](AGENTS.md) to understand:
+
+- How to structure actors with realistic goals and constraints
+- What metrics will capture your research outcomes
+- How to configure validation for quality assurance
+
+**Step 2: Create Configuration Files**
+
+Choose your creation method:
+
+```bash
+# Option A: Get CLI guidance for manual creation
+scenario-lab create
+
+# Option B: Use AI assistant with AGENTS.md reference
+# Describe your scenario to Claude Code, Cursor, or similar
+# AI generates all YAML files following documented schemas
+```
+
+**Step 3: Validate Configuration**
+
+```bash
+scenario-lab validate scenarios/your-scenario
+```
+
+**Step 4: Test Run**
+
+```bash
+# Run 2-3 turns to verify configuration works
+scenario-lab run scenarios/your-scenario --end-turn 2
+
+# Or estimate costs first
+scenario-lab run scenarios/your-scenario --dry-run
+```
+
+**Step 5: Execute Full Scenario**
+
+```bash
+# Run with optional cost limit
+scenario-lab run scenarios/your-scenario --credit-limit 5.00
+```
+
+**Step 6: Analyze Results**
+
+Outputs are saved to `output/your-scenario/run-NNN/`:
+
+- `world-state-*.md` - World evolution (human-readable)
+- `actor-*-*.md` - Actor decisions and reasoning
+- `metrics.json` - Quantitative measurements
+- `validation-*.md` - Quality assurance reports
+
+**Step 7: Iterate**
+
+```bash
+# Branch from a specific turn to explore alternatives
+scenario-lab run --branch-from output/your-scenario/run-001 --branch-at-turn 3
+
+# Resume an interrupted run
+scenario-lab run --resume output/your-scenario/run-001
+```
+
+### For Batch Analysis
+
+```bash
+# Create batch configuration
+scenario-lab create-batch
+
+# Preview before running
+python -m scenario_lab.batch.batch_runner batch-config.yaml --dry-run
+
+# Execute batch
+python -m scenario_lab.batch.batch_runner batch-config.yaml
+
+# Analyze results
+python -m scenario_lab.batch.batch_analyzer output-dir/ --report
+```
+
 ## Documentation
 
 Comprehensive documentation is available:
 
+### Schema Reference (Start Here for Scenario Creation)
+
+- **[AGENTS.md](AGENTS.md)** - **Authoritative schema reference** for all YAML configuration files. This is the primary reference for both AI assistants and users creating scenarios. Contains:
+  - Complete YAML schemas with required/optional fields
+  - Actor design guidelines and archetypes
+  - Metrics configuration (pattern, keyword, LLM extraction)
+  - Validation rules setup
+  - Step-by-step creation workflow
+  - Example configurations and common patterns
+
 ### Core Documentation
 
-- **[AGENTS.md](AGENTS.md)** - Complete YAML schema documentation for AI assistants creating scenarios
 - **[Architecture Ground Truth](docs/ARCHITECTURE_GROUND_TRUTH.md)** - Authoritative reference for the V2 architecture
 - **[Calibration Guide](docs/calibration-guide.md)** - Validating framework realism against real-world events
 - **[Database Analytics Guide](docs/DATABASE_ANALYTICS_GUIDE.md)** - SQLite analytics and querying across runs
