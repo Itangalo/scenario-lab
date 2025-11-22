@@ -12,6 +12,8 @@ V2 Design:
 - Graceful degradation without rich library
 - Works with V2 batch components
 """
+from __future__ import annotations
+
 import time
 from datetime import datetime, timedelta
 from typing import Optional, Dict, Any
