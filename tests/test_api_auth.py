@@ -36,6 +36,7 @@ class TestAPISettings:
             "SCENARIO_LAB_RATE_LIMIT_REQUESTS",
             "SCENARIO_LAB_RATE_LIMIT_WINDOW",
             "SCENARIO_LAB_DEV_MODE",
+            "SCENARIO_LAB_CORS_ORIGINS",
         ]:
             os.environ.pop(key, None)
 
@@ -152,6 +153,48 @@ class TestAPISettings:
         settings2 = get_settings()
 
         assert settings1 is settings2
+
+    def test_default_cors_origins(self):
+        """Test default CORS origins are localhost only"""
+        settings = APISettings.from_env()
+
+        # Should have localhost origins by default
+        assert len(settings.cors_allowed_origins) > 0
+        for origin in settings.cors_allowed_origins:
+            assert "localhost" in origin or "127.0.0.1" in origin
+
+    def test_custom_cors_origins(self):
+        """Test custom CORS origins from environment"""
+        os.environ["SCENARIO_LAB_CORS_ORIGINS"] = "https://app.example.com,https://admin.example.com"
+
+        settings = APISettings.from_env()
+
+        assert settings.cors_allowed_origins == [
+            "https://app.example.com",
+            "https://admin.example.com"
+        ]
+
+    def test_cors_origins_with_whitespace(self):
+        """Test that CORS origins handle whitespace correctly"""
+        os.environ["SCENARIO_LAB_CORS_ORIGINS"] = "  https://app.example.com , https://admin.example.com  "
+
+        settings = APISettings.from_env()
+
+        assert settings.cors_allowed_origins == [
+            "https://app.example.com",
+            "https://admin.example.com"
+        ]
+
+    def test_empty_cors_origins_uses_default(self):
+        """Test that empty CORS origins env var uses defaults"""
+        os.environ["SCENARIO_LAB_CORS_ORIGINS"] = ""
+
+        settings = APISettings.from_env()
+
+        # Should fall back to default localhost origins
+        assert len(settings.cors_allowed_origins) > 0
+        for origin in settings.cors_allowed_origins:
+            assert "localhost" in origin or "127.0.0.1" in origin
 
 
 class TestRateLimiter:

@@ -9,6 +9,10 @@ Authentication and Rate Limiting:
     - Rate limiting with configurable requests/window
     - Development mode for local testing (bypasses auth and rate limits)
 
+CORS Configuration:
+    - By default, only localhost origins are allowed for security
+    - Configure allowed origins via SCENARIO_LAB_CORS_ORIGINS for production
+
 Environment Variables:
     SCENARIO_LAB_API_KEY: API key(s) for authentication (comma-separated)
     SCENARIO_LAB_AUTH_ENABLED: Enable/disable authentication
@@ -16,6 +20,8 @@ Environment Variables:
     SCENARIO_LAB_RATE_LIMIT_REQUESTS: Max requests per window (default: 100)
     SCENARIO_LAB_RATE_LIMIT_WINDOW: Time window in seconds (default: 60)
     SCENARIO_LAB_DEV_MODE: Development mode (disables auth and rate limiting)
+    SCENARIO_LAB_CORS_ORIGINS: Comma-separated list of allowed CORS origins
+                               (default: localhost only for security)
 """
 from __future__ import annotations
 import asyncio
@@ -46,14 +52,29 @@ app = FastAPI(
     version=__version__,
 )
 
-# CORS middleware for web dashboard
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # Configure appropriately for production
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+
+def configure_cors(app: FastAPI) -> None:
+    """
+    Configure CORS middleware with settings from environment.
+
+    CORS origins are loaded from the SCENARIO_LAB_CORS_ORIGINS environment variable
+    (comma-separated list). If not set, defaults to localhost only for security.
+
+    For production, set SCENARIO_LAB_CORS_ORIGINS to your frontend domain(s):
+        export SCENARIO_LAB_CORS_ORIGINS="https://app.example.com,https://admin.example.com"
+    """
+    settings = get_settings()
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=settings.cors_allowed_origins,
+        allow_credentials=True,
+        allow_methods=["*"],
+        allow_headers=["*"],
+    )
+
+
+# Configure CORS middleware for web dashboard
+configure_cors(app)
 
 
 @app.middleware("http")
@@ -176,6 +197,9 @@ async def startup_event():
             )
         else:
             logger.warning("Rate limiting DISABLED")
+
+    # Log CORS configuration
+    logger.info(f"CORS allowed origins: {settings.cors_allowed_origins}")
 
 
 @app.get("/")
