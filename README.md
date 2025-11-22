@@ -8,7 +8,7 @@ An experimental framework for exploring complex policy and strategic questions t
 
 The primary focus is exploring AI-related policy questions and strategic challenges through simulation, testing how different actors, policies, and interventions perform across diverse scenarios—including exogenous background events that evolve the world independently of actor decisions.
 
-> **Note:** Version 2.0 represents a complete architectural modernization. The codebase now uses a clean Python package structure (`scenario_lab/`) with CLI commands, REST API, and improved maintainability. Legacy V1 code remains in `src/` for reference but is no longer actively used.
+> **Note:** Version 2.0 represents a complete architectural modernization. The codebase uses a clean Python package structure (`scenario_lab/`) with CLI commands, REST API, and improved maintainability. All legacy V1 code has been removed.
 
 ## Core Principles
 
@@ -303,17 +303,16 @@ The QA Validator automatically checks simulation consistency using lightweight L
 
 ```
 scenario-name/
-├── definition/
-│   ├── scenario.yaml          # Initial world state and rules
-│   ├── actors/
-│   │   ├── actor1.yaml        # Actor profiles (including LLM model specification)
-│   │   └── actor2.yaml
-│   ├── metrics.yaml           # Defined metrics and thresholds
-│   ├── validation-rules.yaml  # Instructions for quality assurance checks
-│   ├── exogenous-events.yaml  # Optional: background event definitions (trends, random, conditional, scheduled)
-│   └── background/            # Optional: background data and information
-│       ├── historical-data.md
-│       └── reference-docs.md
+├── scenario.yaml              # Main scenario configuration (name, world state, rules)
+├── actors/
+│   ├── actor1.yaml            # Actor profiles (including LLM model specification)
+│   └── actor2.yaml
+├── metrics.yaml               # Optional: defined metrics and thresholds
+├── validation-rules.yaml      # Optional: instructions for quality assurance checks
+├── exogenous-events.yaml      # Optional: background event definitions
+├── background/                # Optional: background data and information
+│   ├── historical-data.md
+│   └── reference-docs.md
 ├── runs/
 │   ├── run-001/
 │   │   ├── world-state-001.md
@@ -328,6 +327,8 @@ scenario-name/
     ├── critical-factors.md
     └── metrics-summary.json   # Aggregated structured data across runs
 ```
+
+**Note:** Configuration files (`scenario.yaml`, `actors/`, etc.) are placed directly in the scenario root directory, not in a `definition/` subdirectory.
 
 ## Development Roadmap
 
@@ -441,10 +442,10 @@ pip install -r requirements.txt
 3. **Run tests (optional but recommended):**
 
 ```bash
-python run_tests.py
+pytest tests/
 ```
 
-All tests should pass. See `tests/README.md` for details.
+All tests should pass.
 
 4. **Set up your API key:**
 
@@ -489,17 +490,17 @@ scenario-lab create
 - `metrics.yaml` - Metric definitions (if specified)
 - `validation-rules.yaml` - QA validation config (if enabled)
 
-See [Scenario Creation Guide](docs/scenario-creation-guide.md) for detailed instructions, templates, and best practices.
+For AI assistants helping create scenarios, see [AGENTS.md](AGENTS.md) for complete schema documentation and guidelines.
 
 ### Running a Scenario
 
 Run the test scenario:
 
 ```bash
-scenario-lab run scenarios/test-regulation-negotiation
+scenario-lab run scenarios/ai-negotiation-test-scenario
 ```
 
-Output will be saved to `output/test-regulation-negotiation/run-001/` (subsequent runs auto-increment to run-002, run-003, etc.)
+Output will be saved to `output/ai-negotiation-test-scenario/run-001/` (subsequent runs auto-increment to run-002, run-003, etc.)
 
 Each run produces:
 
@@ -520,18 +521,18 @@ Scenario runs can be stopped and resumed, enabling graceful handling of API rate
 
 **Stop at a specific turn:**
 ```bash
-scenario-lab run scenarios/test-regulation-negotiation --end-turn 2
+scenario-lab run scenarios/ai-negotiation-test-scenario --end-turn 2
 ```
 
 **Set a budget limit:**
 ```bash
-scenario-lab run scenarios/test-regulation-negotiation --credit-limit 0.50
+scenario-lab run scenarios/ai-negotiation-test-scenario --credit-limit 0.50
 ```
 The scenario will halt if total cost exceeds $0.50.
 
 **Resume a halted scenario:**
 ```bash
-scenario-lab run --resume output/test-regulation-negotiation/run-003
+scenario-lab run --resume output/ai-negotiation-test-scenario/run-003
 ```
 
 **How it works:**
@@ -554,7 +555,7 @@ Create alternative scenario paths by branching from any completed turn. This ena
 
 **Branch from an existing run:**
 ```bash
-scenario-lab run --branch-from output/test-regulation-negotiation/run-001 --branch-at-turn 2
+scenario-lab run --branch-from output/ai-negotiation-test-scenario/run-001 --branch-at-turn 2
 ```
 
 **How it works:**
@@ -573,13 +574,13 @@ scenario-lab run --branch-from output/test-regulation-negotiation/run-001 --bran
 **Example workflow:**
 ```bash
 # Run initial scenario
-scenario-lab run scenarios/test-regulation-negotiation
+scenario-lab run scenarios/ai-negotiation-test-scenario
 
 # Branch from turn 2 of run-001
-scenario-lab run --branch-from output/test-regulation-negotiation/run-001 --branch-at-turn 2
+scenario-lab run --branch-from output/ai-negotiation-test-scenario/run-001 --branch-at-turn 2
 
 # Continue the branch with modified scenario or actors
-scenario-lab run --resume output/test-regulation-negotiation/run-002
+scenario-lab run --resume output/ai-negotiation-test-scenario/run-002
 ```
 
 ### Batch Execution
@@ -606,7 +607,7 @@ scenario-lab create-batch
 ```yaml
 # experiments/model-comparison/batch-config.yaml
 experiment_name: "Model Comparison Study"
-base_scenario: "scenarios/test-regulation-negotiation"
+base_scenario: "scenarios/ai-negotiation-test-scenario"
 
 runs_per_variation: 10
 budget_limit: 20.00
@@ -676,28 +677,31 @@ python -m scenario_lab.batch.batch_runner experiments/model-comparison/batch-con
 - Resumable execution
 - Statistical analysis and reporting
 
-See [Batch Execution Guide](docs/batch-execution-guide.md) for detailed documentation.
+See [AGENTS.md](AGENTS.md) for detailed batch configuration schema documentation.
 
 ### Available Scenarios
 
-- **test-regulation-negotiation**: AI safety regulation negotiation between regulator and tech company ([docs](scenarios/test-regulation-negotiation/README.md))
+- **ai-negotiation-test-scenario**: AI safety regulation negotiation between regulator and tech company
+- **ai-2027**: Calibration scenario for framework validation against real-world AI developments
+- **example-minimal-template**: Minimal template for creating new scenarios
+- **example-full-featured**: Full-featured example demonstrating all configuration options
 
 ## Documentation
 
-Comprehensive guides are available in the `docs/` directory:
+Comprehensive documentation is available:
 
 ### Core Documentation
 
-- **[Scenario Creation Guide](docs/scenario-creation-guide.md)** - Interactive wizard for creating complete scenarios with actors, metrics, and validation
+- **[AGENTS.md](AGENTS.md)** - Complete YAML schema documentation for AI assistants creating scenarios
+- **[Architecture Ground Truth](docs/ARCHITECTURE_GROUND_TRUTH.md)** - Authoritative reference for the V2 architecture
 - **[Calibration Guide](docs/calibration-guide.md)** - Validating framework realism against real-world events
-- **[Batch Execution Guide](docs/batch-execution-guide.md)** - Complete guide to running batch experiments with parameter variations
-- **[Batch Config Wizard Guide](docs/batch-config-wizard-guide.md)** - Interactive wizard for creating batch configurations, including dry-run mode
-- **[Error Handling Guide](docs/error-handling-guide.md)** - User-friendly error messages, recovery strategies, and troubleshooting
-- **[Performance Optimizations](docs/performance-optimizations.md)** - Caching, connection pooling, memory management, and graceful degradation
+- **[Database Analytics Guide](docs/DATABASE_ANALYTICS_GUIDE.md)** - SQLite analytics and querying across runs
+- **[Exogenous Events Guide](docs/exogenous-events-guide.md)** - Background events that evolve the world independently
 
 ### Specialized Topics
 
-- **[Local LLMs](docs/LOCAL_LLMS.md)** - Running scenarios with local models (Ollama, llama.cpp) for cost-free execution
+- **[Local LLMs](docs/LOCAL_LLMS.md)** - Running scenarios with local models (Ollama) for cost-free execution
+- **[REST API](docs/API.md)** - FastAPI endpoints for web integration
 
 ### Key Features Covered
 

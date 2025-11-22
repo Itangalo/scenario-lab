@@ -135,11 +135,10 @@ The V2 migration is functionally complete:
 - CLI wizard commands show guidance instead of broken V1 bridges
 
 **Documentation:**
-- Migration plan: `docs/v2_migration_plan.md`
-- Phase 6 summary: `docs/PHASE_6_SUMMARY.md`
-- V1 removal plan: `docs/PHASE_6_1_V1_REMOVAL_PLAN.md`
-- Test status: `docs/PHASE_6_2_TEST_STATUS.md`
-- Web integration: `docs/PHASE_5_WEB_INTEGRATION.md`
+- Architecture ground truth: `docs/ARCHITECTURE_GROUND_TRUTH.md`
+- Database analytics: `docs/DATABASE_ANALYTICS_GUIDE.md`
+- Calibration guide: `docs/calibration-guide.md`
+- Local LLMs: `docs/LOCAL_LLMS.md`
 
 ## Scenario Directory Structure
 
@@ -326,8 +325,6 @@ The framework supports stopping and resuming scenario runs, crucial for handling
 - State saved after each successful turn
 - JSON keys properly converted (string → int) on load
 - WorldState, CostTracker, MetricsTracker all fully serializable
-
-See `notes/resumable-scenarios-plan.md` for full implementation details.
 
 ### Scenario Branching
 
