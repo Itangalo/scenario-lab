@@ -2,40 +2,35 @@
 Batch Progress Tracker - Real-time progress display for batch execution (V2)
 
 Features:
-- Rich library integration for beautiful progress bars (optional)
-- Graceful fallback to simple text display
+- Rich library integration for beautiful progress bars
 - Real-time statistics and cost tracking
 - Time remaining estimation
 
 V2 Design:
 - No V1 dependencies
-- Graceful degradation without rich library
+- Uses shared Rich console from scenario_lab.utils
 - Works with V2 batch components
 """
 from __future__ import annotations
 
 import time
-from datetime import datetime, timedelta
-from typing import Optional, Dict, Any
+from datetime import timedelta
+from typing import Optional
 
-# Try to import rich for enhanced display
-try:
-    from rich.console import Console
-    from rich.progress import (
-        Progress,
-        SpinnerColumn,
-        BarColumn,
-        TextColumn,
-        TimeRemainingColumn,
-        TimeElapsedColumn
-    )
-    from rich.table import Table
-    from rich.live import Live
-    from rich.layout import Layout
-    from rich.panel import Panel
-    RICH_AVAILABLE = True
-except ImportError:
-    RICH_AVAILABLE = False
+from rich.progress import (
+    Progress,
+    SpinnerColumn,
+    BarColumn,
+    TextColumn,
+    TimeRemainingColumn,
+    TimeElapsedColumn
+)
+from rich.table import Table
+from rich.live import Live
+from rich.layout import Layout
+from rich.panel import Panel
+
+from scenario_lab.utils.rich_console import console
 
 
 class BatchProgressTracker:
@@ -43,11 +38,10 @@ class BatchProgressTracker:
     Tracks and displays progress for batch scenario execution (V2)
 
     Provides real-time progress updates with:
-    - Progress bars (with rich library)
+    - Progress bars with Rich library
     - Success/failure statistics
     - Cost tracking and budget monitoring
     - Time remaining estimates
-    - Graceful degradation to text output
     """
 
     def __init__(
@@ -64,29 +58,27 @@ class BatchProgressTracker:
             total_runs: Total number of runs in batch
             experiment_name: Name of the experiment
             budget_limit: Optional budget limit in USD
-            use_rich: Use rich library if available (default: True)
+            use_rich: Use rich library for display (default: True)
         """
         self.total_runs = total_runs
         self.experiment_name = experiment_name
         self.budget_limit = budget_limit
-        self.use_rich = use_rich and RICH_AVAILABLE
+        self.use_rich = use_rich
 
         # Progress tracking
         self.completed_runs = 0
         self.failed_runs = 0
         self.total_cost = 0.0
-        self.start_time = None
-        self.current_run_id = None
+        self.start_time: Optional[float] = None
+        self.current_run_id: Optional[str] = None
         self.current_run_status = "Initializing"
 
         # Rich components
-        if self.use_rich:
-            self.console = Console()
-            self.progress = None
-            self.task_id = None
-            self.live = None
+        self.progress: Optional[Progress] = None
+        self.task_id = None
+        self.live: Optional[Live] = None
 
-    def start(self):
+    def start(self) -> None:
         """Start tracking batch progress"""
         self.start_time = time.time()
 
@@ -97,10 +89,10 @@ class BatchProgressTracker:
                 TextColumn("[bold blue]{task.description}"),
                 BarColumn(),
                 TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
-                TextColumn("•"),
+                TextColumn("\u2022"),
                 TextColumn("{task.completed}/{task.total} runs"),
                 TimeElapsedColumn(),
-                TextColumn("•"),
+                TextColumn("\u2022"),
                 TimeRemainingColumn(),
             )
 
@@ -109,21 +101,21 @@ class BatchProgressTracker:
                 total=self.total_runs
             )
 
-            # Start live display
+            # Start live display using shared console
             self.live = Live(
                 self._generate_display(),
                 refresh_per_second=4,
-                console=self.console
+                console=console
             )
             self.live.start()
         else:
             # Simple text output
-            print(f"\n{'='*60}")
-            print(f"Batch Experiment: {self.experiment_name}")
-            print(f"Total runs: {self.total_runs}")
+            console.print(f"\n{'='*60}")
+            console.print(f"Batch Experiment: {self.experiment_name}")
+            console.print(f"Total runs: {self.total_runs}")
             if self.budget_limit:
-                print(f"Budget limit: ${self.budget_limit:.2f}")
-            print(f"{'='*60}\n")
+                console.print(f"Budget limit: ${self.budget_limit:.2f}")
+            console.print(f"{'='*60}\n")
 
     def stop(self):
         """Stop tracking and display final summary"""
@@ -133,7 +125,7 @@ class BatchProgressTracker:
         # Print final summary
         self._print_summary()
 
-    def update_run_started(self, run_id: str, variation_description: str):
+    def update_run_started(self, run_id: str, variation_description: str) -> None:
         """
         Update progress when a run starts
 
@@ -145,9 +137,9 @@ class BatchProgressTracker:
         self.current_run_status = f"Running: {variation_description}"
 
         if not self.use_rich:
-            print(f"▶️  [{self.completed_runs + 1}/{self.total_runs}] {run_id}: {variation_description}")
+            console.print(f"\u25b6\ufe0f  [{self.completed_runs + 1}/{self.total_runs}] {run_id}: {variation_description}")
 
-    def update_run_completed(self, run_id: str, cost: float, success: bool = True):
+    def update_run_completed(self, run_id: str, cost: float, success: bool = True) -> None:
         """
         Update progress when a run completes
 
@@ -171,8 +163,8 @@ class BatchProgressTracker:
             if self.live:
                 self.live.update(self._generate_display())
         else:
-            status_emoji = "✓" if success else "❌"
-            print(f"{status_emoji} {run_id}: Completed (${cost:.3f})")
+            status_emoji = "[green]\u2713[/]" if success else "[red]\u274c[/]"
+            console.print(f"{status_emoji} {run_id}: Completed (${cost:.3f})")
 
     def update_cost(self, cost: float):
         """
@@ -244,7 +236,7 @@ class BatchProgressTracker:
 
         return layout
 
-    def _print_summary(self):
+    def _print_summary(self) -> None:
         """Print final summary"""
         if not self.start_time:
             return
@@ -272,27 +264,27 @@ class BatchProgressTracker:
             duration_str = str(timedelta(seconds=int(duration)))
             summary_table.add_row("Duration:", duration_str)
 
-            self.console.print("\n")
-            self.console.print(summary_table)
-            self.console.print("\n")
+            console.print("\n")
+            console.print(summary_table)
+            console.print("\n")
         else:
             # Simple text summary
-            print(f"\n{'='*60}")
-            print("Batch Execution Summary")
-            print(f"{'='*60}")
-            print(f"Total runs: {self.total_runs}")
-            print(f"Completed: {self.completed_runs}")
-            print(f"Failed: {self.failed_runs}")
-            print(f"Success rate: {success_rate:.1f}%")
-            print(f"Total cost: ${self.total_cost:.2f}")
+            console.print(f"\n{'='*60}")
+            console.print("Batch Execution Summary")
+            console.print(f"{'='*60}")
+            console.print(f"Total runs: {self.total_runs}")
+            console.print(f"Completed: {self.completed_runs}")
+            console.print(f"Failed: {self.failed_runs}")
+            console.print(f"Success rate: {success_rate:.1f}%")
+            console.print(f"Total cost: ${self.total_cost:.2f}")
 
             if self.completed_runs > 0:
                 avg_cost = self.total_cost / self.completed_runs
-                print(f"Avg cost per run: ${avg_cost:.3f}")
+                console.print(f"Avg cost per run: ${avg_cost:.3f}")
 
             duration_str = str(timedelta(seconds=int(duration)))
-            print(f"Duration: {duration_str}")
-            print(f"{'='*60}\n")
+            console.print(f"Duration: {duration_str}")
+            console.print(f"{'='*60}\n")
 
     def get_estimated_time_remaining(self) -> Optional[float]:
         """
