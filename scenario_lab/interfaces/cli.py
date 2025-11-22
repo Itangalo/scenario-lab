@@ -347,10 +347,12 @@ def estimate(scenario_path: str, end_turn: Optional[int]) -> None:
 
 
 @cli.command()
-@click.argument("run_ids", nargs=-1, required=True)
-def compare(run_ids: tuple[str, ...]) -> None:
+@click.argument("run_paths", nargs=-1, required=True, type=click.Path(exists=True))
+def compare(run_paths: tuple[str, ...]) -> None:
     """
     Compare multiple scenario runs
+
+    RUN_PATHS: Paths to run directories (e.g., output/ai-summit/run-001 output/ai-summit/run-002)
 
     Displays:
     - Side-by-side world state comparison
@@ -358,34 +360,339 @@ def compare(run_ids: tuple[str, ...]) -> None:
     - Metrics comparison
     - Cost analysis
     """
-    click.echo(f"Comparing {len(run_ids)} runs:")
-    for run_id in run_ids:
-        click.echo(f"  - {run_id}")
+    from pathlib import Path
+    from scenario_lab.utils.state_persistence import StatePersistence
 
-    click.echo("\n[V2 Alpha] Run comparison coming in Phase 2.2...")
+    print_header("Run Comparison")
+
+    if len(run_paths) < 2:
+        print_error(
+            "Comparison requires at least 2 runs",
+            f"Only {len(run_paths)} run(s) provided",
+            "Provide 2 or more run directory paths"
+        )
+        sys.exit(1)
+
+    # Load states from all runs
+    states = []
+    for run_path in run_paths:
+        run_dir = Path(run_path)
+        state_file = run_dir / "scenario-state-v2.json"
+
+        if not state_file.exists():
+            # Try legacy filename
+            state_file = run_dir / "scenario-state.json"
+
+        if not state_file.exists():
+            print_error(
+                f"State file not found in {run_path}",
+                "No scenario-state-v2.json or scenario-state.json found",
+                "Ensure the path points to a valid run directory"
+            )
+            sys.exit(1)
+
+        try:
+            state = StatePersistence.load_state(str(state_file))
+            states.append((run_path, state))
+            print_checklist_item(f"Loaded: {run_dir.name}", status="✓")
+        except Exception as e:
+            print_error(f"Failed to load {run_path}", str(e))
+            sys.exit(1)
+
+    click.echo()
+
+    # Summary section
+    print_section("Run Summary")
+    headers = ["Property"] + [Path(rp).name for rp in run_paths]
+    click.echo(f"  {'Property':<20}" + "".join(f"{Path(rp).name:<20}" for rp in run_paths))
+    click.echo(f"  {'-'*20}" + "".join(f"{'-'*20}" for _ in run_paths))
+
+    # Turns completed
+    click.echo(f"  {'Turns':<20}" + "".join(f"{s.turn:<20}" for _, s in states))
+
+    # Status
+    click.echo(f"  {'Status':<20}" + "".join(f"{s.status.value:<20}" for _, s in states))
+
+    # Total cost
+    costs = [s.total_cost() for _, s in states]
+    click.echo(f"  {'Total Cost':<20}" + "".join(f"${c:<19.2f}" for c in costs))
+
+    # Cost per turn
+    cost_per_turn = [c / s.turn if s.turn > 0 else 0 for c, (_, s) in zip(costs, states)]
+    click.echo(f"  {'Cost/Turn':<20}" + "".join(f"${c:<19.3f}" for c in cost_per_turn))
+
+    click.echo()
+
+    # Actor comparison
+    print_section("Actor Models")
+    all_actors = set()
+    for _, state in states:
+        all_actors.update(state.actors.keys())
+
+    for actor_name in sorted(all_actors):
+        models = []
+        for _, state in states:
+            if actor_name in state.actors:
+                models.append(state.actors[actor_name].model)
+            else:
+                models.append("N/A")
+        click.echo(f"  {actor_name:<20}" + "".join(f"{m:<20}" for m in models))
+
+    click.echo()
+
+    # Cost by actor
+    print_section("Cost by Actor")
+    for actor_name in sorted(all_actors):
+        actor_costs = []
+        for _, state in states:
+            actor_cost = sum(c.cost for c in state.costs if c.actor == actor_name)
+            actor_costs.append(actor_cost)
+        click.echo(f"  {actor_name:<20}" + "".join(f"${c:<19.2f}" for c in actor_costs))
+
+    click.echo()
+
+    # Metrics comparison (if available)
+    all_metrics = set()
+    for _, state in states:
+        all_metrics.update(m.name for m in state.metrics)
+
+    if all_metrics:
+        print_section("Metrics (Final Turn)")
+        for metric_name in sorted(all_metrics):
+            metric_values = []
+            for _, state in states:
+                # Get the most recent value for this metric
+                matching = [m for m in state.metrics if m.name == metric_name]
+                if matching:
+                    # Get the one from the highest turn
+                    latest = max(matching, key=lambda m: m.turn)
+                    value = latest.value
+                    if isinstance(value, float):
+                        metric_values.append(f"{value:.2f}")
+                    else:
+                        metric_values.append(str(value)[:17])
+                else:
+                    metric_values.append("N/A")
+            click.echo(f"  {metric_name:<20}" + "".join(f"{v:<20}" for v in metric_values))
+
+        click.echo()
+
+    # Cost difference summary
+    if len(states) == 2:
+        print_section("Comparison Summary")
+        cost_diff = costs[1] - costs[0]
+        cost_pct = (cost_diff / costs[0] * 100) if costs[0] > 0 else 0
+
+        if cost_diff > 0:
+            click.echo(f"  {Path(run_paths[1]).name} costs ${abs(cost_diff):.2f} more ({cost_pct:+.1f}%)")
+        elif cost_diff < 0:
+            click.echo(f"  {Path(run_paths[1]).name} costs ${abs(cost_diff):.2f} less ({cost_pct:+.1f}%)")
+        else:
+            click.echo("  Both runs have identical costs")
+
+        turn_diff = states[1][1].turn - states[0][1].turn
+        if turn_diff != 0:
+            click.echo(f"  Turn difference: {turn_diff:+d}")
+
+        click.echo()
+
+    print_success(f"Compared {len(states)} runs")
 
 
 @cli.command()
 @click.argument("scenario_path", type=click.Path(exists=True, file_okay=False))
-def benchmark(scenario_path: str) -> None:
+@click.option("--turns", type=int, default=3, help="Number of turns to benchmark (default: 3)")
+@click.option("--dry-run", is_flag=True, help="Show what would be benchmarked without running")
+def benchmark(scenario_path: str, turns: int, dry_run: bool) -> None:
     """
     Run performance benchmark on scenario
 
-    Measures:
-    - Turn execution time
-    - Memory usage
-    - Cost per turn
-    - Startup time
-    """
-    click.echo(f"Benchmarking: {scenario_path}")
-    click.echo("[V2 Alpha] Benchmark tool coming soon...")
+    SCENARIO_PATH: Path to scenario directory
 
-    # TODO: Implement benchmark tool
-    click.echo("\nResults:")
-    click.echo("  Average turn time: X.XX seconds (placeholder)")
-    click.echo("  P95 turn time: X.XX seconds (placeholder)")
-    click.echo("  Memory usage peak: XXX MB (placeholder)")
-    click.echo("  Cost per turn: $X.XX (placeholder)")
+    Measures:
+    - Startup time (scenario loading and initialization)
+    - Turn execution time (average and P95)
+    - Memory usage (initial, peak, final)
+    - Cost per turn
+    """
+    import time
+    import statistics
+    from pathlib import Path
+    from scenario_lab.utils.memory_optimizer import get_memory_monitor, MemoryStats
+
+    print_header("Performance Benchmark")
+    print_info("Scenario", scenario_path)
+    print_info("Turns", str(turns))
+
+    if dry_run:
+        click.echo()
+        print_warning("Dry run mode - no actual execution")
+        click.echo()
+        click.echo("Would benchmark:")
+        click.echo(f"  - Scenario: {scenario_path}")
+        click.echo(f"  - Turns: {turns}")
+        click.echo()
+        click.echo("Metrics that will be measured:")
+        click.echo("  - Startup time (scenario loading)")
+        click.echo("  - Turn execution time (avg, P95)")
+        click.echo("  - Memory usage (initial, peak, final)")
+        click.echo("  - Total and per-turn cost")
+        return
+
+    click.echo()
+
+    # Initialize memory monitor
+    mem_monitor = get_memory_monitor()
+    initial_stats = mem_monitor.get_memory_stats()
+    peak_memory_mb = initial_stats.process_mb if initial_stats else 0
+
+    # Track timing
+    turn_times: list[float] = []
+
+    try:
+        from scenario_lab.runners import SyncRunner
+        from scenario_lab.core.events import EventType, Event
+
+        # Measure startup time
+        print_section("Initializing...")
+        startup_start = time.time()
+
+        runner = SyncRunner(
+            scenario_path=scenario_path,
+            end_turn=turns,
+        )
+        runner.setup()
+
+        startup_time = time.time() - startup_start
+        click.echo(f"  Startup time: {click.style(f'{startup_time:.2f}s', fg='green')}")
+
+        # Track turn times via events
+        turn_start_time = None
+
+        async def on_turn_start(event: Event):
+            nonlocal turn_start_time
+            turn_start_time = time.time()
+            turn = event.data.get("turn", 0)
+            click.echo(f"  Running turn {turn}...", nl=False)
+
+        async def on_turn_complete(event: Event):
+            nonlocal turn_start_time, peak_memory_mb
+            if turn_start_time:
+                turn_time = time.time() - turn_start_time
+                turn_times.append(turn_time)
+                click.echo(f" {click.style(f'{turn_time:.2f}s', fg='cyan')}")
+
+                # Check memory after each turn
+                current_stats = mem_monitor.get_memory_stats()
+                if current_stats and current_stats.process_mb > peak_memory_mb:
+                    peak_memory_mb = current_stats.process_mb
+
+        # Register handlers
+        event_bus = runner.event_bus
+        event_bus.on(EventType.TURN_STARTED, on_turn_start)
+        event_bus.on(EventType.TURN_COMPLETED, on_turn_complete)
+
+        # Run benchmark
+        print_section("Running benchmark...")
+        total_start = time.time()
+        final_state = asyncio.run(runner.run())
+        total_time = time.time() - total_start
+
+        # Get final memory stats
+        final_stats = mem_monitor.get_memory_stats()
+
+        # Calculate statistics
+        click.echo()
+        print_section("Results")
+
+        # Timing stats
+        click.echo()
+        click.echo(click.style("  Timing:", bold=True))
+        click.echo(f"    Startup time:     {click.style(f'{startup_time:.2f}s', fg='green')}")
+        click.echo(f"    Total time:       {click.style(f'{total_time:.2f}s', fg='green')}")
+
+        if turn_times:
+            avg_turn = statistics.mean(turn_times)
+            click.echo(f"    Avg turn time:    {click.style(f'{avg_turn:.2f}s', fg='cyan')}")
+
+            if len(turn_times) >= 2:
+                # Calculate P95 (or max if too few samples)
+                sorted_times = sorted(turn_times)
+                p95_index = int(len(sorted_times) * 0.95)
+                p95_time = sorted_times[min(p95_index, len(sorted_times) - 1)]
+                click.echo(f"    P95 turn time:    {click.style(f'{p95_time:.2f}s', fg='cyan')}")
+
+                min_time = min(turn_times)
+                max_time = max(turn_times)
+                click.echo(f"    Min/Max turn:     {min_time:.2f}s / {max_time:.2f}s")
+
+        # Memory stats
+        click.echo()
+        click.echo(click.style("  Memory:", bold=True))
+        if initial_stats:
+            click.echo(f"    Initial:          {click.style(f'{initial_stats.process_mb:.1f} MB', fg='blue')}")
+        if peak_memory_mb > 0:
+            click.echo(f"    Peak:             {click.style(f'{peak_memory_mb:.1f} MB', fg='yellow')}")
+        if final_stats:
+            click.echo(f"    Final:            {click.style(f'{final_stats.process_mb:.1f} MB', fg='blue')}")
+            if initial_stats:
+                memory_delta = final_stats.process_mb - initial_stats.process_mb
+                delta_color = "red" if memory_delta > 50 else "green"
+                click.echo(f"    Delta:            {click.style(f'{memory_delta:+.1f} MB', fg=delta_color)}")
+
+        # Cost stats
+        click.echo()
+        click.echo(click.style("  Cost:", bold=True))
+        total_cost = final_state.total_cost()
+        click.echo(f"    Total cost:       {click.style(f'${total_cost:.4f}', fg='green')}")
+
+        if final_state.turn > 0:
+            cost_per_turn = total_cost / final_state.turn
+            click.echo(f"    Cost per turn:    {click.style(f'${cost_per_turn:.4f}', fg='green')}")
+
+        # Cost by phase
+        phase_costs: dict[str, float] = {}
+        for cost_record in final_state.costs:
+            phase = cost_record.phase or "unknown"
+            phase_costs[phase] = phase_costs.get(phase, 0) + cost_record.cost
+
+        if phase_costs:
+            click.echo(f"    By phase:")
+            for phase, cost in sorted(phase_costs.items()):
+                click.echo(f"      {phase:<16} ${cost:.4f}")
+
+        # Summary
+        click.echo()
+        print_section("Summary")
+        efficiency = total_cost / total_time if total_time > 0 else 0
+        click.echo(f"  Turns completed: {final_state.turn}")
+        click.echo(f"  Time efficiency: ${efficiency:.4f}/second")
+
+        if turn_times:
+            throughput = len(turn_times) / sum(turn_times) if sum(turn_times) > 0 else 0
+            click.echo(f"  Throughput:      {throughput:.2f} turns/second")
+
+        click.echo()
+        print_success("Benchmark complete")
+
+        # Output location
+        if hasattr(runner, 'output_path') and runner.output_path:
+            click.echo()
+            click.echo(f"Benchmark run saved to: {click.style(runner.output_path, fg='blue')}")
+
+    except ImportError as e:
+        print_error(
+            "Could not load benchmark dependencies",
+            str(e),
+            "Make sure scenario_lab is installed correctly"
+        )
+        sys.exit(1)
+    except Exception as e:
+        import traceback
+        print_error("Benchmark failed", str(e))
+        if logging.getLogger().level == logging.DEBUG:
+            traceback.print_exc()
+        sys.exit(1)
 
 
 @cli.command()

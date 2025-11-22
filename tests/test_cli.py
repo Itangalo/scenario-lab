@@ -283,15 +283,93 @@ class TestCompareCommand(TestCLIBase):
         self.assertIn('compare', result.output)
 
     def test_compare_requires_arguments(self):
-        """Test that compare requires at least one run ID"""
+        """Test that compare requires at least one run path"""
         result = self.runner.invoke(cli, ['compare'])
         self.assertNotEqual(result.exit_code, 0)
 
-    def test_compare_placeholder_output(self):
-        """Test compare command shows placeholder (not yet implemented)"""
-        result = self.runner.invoke(cli, ['compare', 'run-001', 'run-002'])
-        self.assertEqual(result.exit_code, 0)
-        self.assertIn('Comparing 2 runs', result.output)
+    def test_compare_requires_minimum_two_runs(self):
+        """Test that compare requires at least 2 run paths"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            result = self.runner.invoke(cli, ['compare', tmpdir])
+            self.assertNotEqual(result.exit_code, 0)
+            self.assertIn('at least 2 runs', result.output)
+
+    def test_compare_missing_state_file(self):
+        """Test compare with directories that don't have state files"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            run1 = Path(tmpdir) / 'run-001'
+            run2 = Path(tmpdir) / 'run-002'
+            run1.mkdir()
+            run2.mkdir()
+
+            result = self.runner.invoke(cli, ['compare', str(run1), str(run2)])
+            # Should fail because state files don't exist
+            self.assertNotEqual(result.exit_code, 0)
+            self.assertIn('State file not found', result.output)
+
+    def test_compare_with_valid_runs(self):
+        """Test compare with valid scenario runs"""
+        import json
+        from datetime import datetime
+
+        with tempfile.TemporaryDirectory() as tmpdir:
+            run1 = Path(tmpdir) / 'run-001'
+            run2 = Path(tmpdir) / 'run-002'
+            run1.mkdir()
+            run2.mkdir()
+
+            # Create minimal state files
+            state_data = {
+                "version": "2.0",
+                "scenario_id": "test-1",
+                "scenario_name": "Test Scenario",
+                "run_id": "run-001",
+                "turn": 3,
+                "status": "completed",
+                "scenario_config": {},
+                "world_state": {
+                    "turn": 3,
+                    "content": "Test world state"
+                },
+                "actors": {
+                    "TestActor": {
+                        "name": "Test Actor",
+                        "short_name": "TestActor",
+                        "model": "openai/gpt-4o-mini",
+                        "current_goals": ["Test"],
+                        "private_information": ""
+                    }
+                },
+                "decisions": {},
+                "communications": [],
+                "costs": [
+                    {
+                        "timestamp": datetime.now().isoformat(),
+                        "actor": "TestActor",
+                        "phase": "decision",
+                        "model": "openai/gpt-4o-mini",
+                        "input_tokens": 100,
+                        "output_tokens": 50,
+                        "cost": 0.001
+                    }
+                ],
+                "metrics": [],
+                "metadata": {}
+            }
+
+            # Write state files
+            (run1 / 'scenario-state-v2.json').write_text(json.dumps(state_data))
+            state_data["run_id"] = "run-002"
+            state_data["turn"] = 5
+            state_data["costs"][0]["cost"] = 0.002
+            (run2 / 'scenario-state-v2.json').write_text(json.dumps(state_data))
+
+            result = self.runner.invoke(cli, ['compare', str(run1), str(run2)])
+            self.assertEqual(result.exit_code, 0)
+            self.assertIn('Run Comparison', result.output)
+            self.assertIn('Run Summary', result.output)
+            self.assertIn('Actor Models', result.output)
+            self.assertIn('Compared 2 runs', result.output)
 
 
 class TestBenchmarkCommand(TestCLIBase):
@@ -302,10 +380,69 @@ class TestBenchmarkCommand(TestCLIBase):
         result = self.runner.invoke(cli, ['--help'])
         self.assertIn('benchmark', result.output)
 
+    def test_benchmark_help(self):
+        """Test benchmark help shows all options"""
+        result = self.runner.invoke(cli, ['benchmark', '--help'])
+        self.assertEqual(result.exit_code, 0)
+        self.assertIn('--turns', result.output)
+        self.assertIn('--dry-run', result.output)
+
     def test_benchmark_missing_scenario(self):
         """Test benchmark with non-existent scenario"""
         result = self.runner.invoke(cli, ['benchmark', '/nonexistent/path'])
         self.assertNotEqual(result.exit_code, 0)
+
+    def test_benchmark_dry_run(self):
+        """Test benchmark dry-run mode"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            scenario_dir = self.create_minimal_scenario(tmpdir)
+
+            result = self.runner.invoke(cli, ['benchmark', str(scenario_dir), '--dry-run'])
+            self.assertEqual(result.exit_code, 0)
+            self.assertIn('Performance Benchmark', result.output)
+            self.assertIn('Dry run mode', result.output)
+            self.assertIn('Would benchmark', result.output)
+
+    def test_benchmark_dry_run_with_turns(self):
+        """Test benchmark dry-run with custom turns"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            scenario_dir = self.create_minimal_scenario(tmpdir)
+
+            result = self.runner.invoke(cli, [
+                'benchmark', str(scenario_dir),
+                '--turns', '5',
+                '--dry-run'
+            ])
+            self.assertEqual(result.exit_code, 0)
+            self.assertIn('Turns: 5', result.output)
+
+    @patch('scenario_lab.runners.SyncRunner')
+    def test_benchmark_execution(self, mock_runner_class):
+        """Test benchmark command execution with mocked runner"""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            scenario_dir = self.create_minimal_scenario(tmpdir)
+
+            # Set up mock runner
+            mock_runner = MagicMock()
+            mock_runner.event_bus = MagicMock()
+            mock_runner.event_bus.on = MagicMock()
+            mock_runner.output_path = str(scenario_dir / 'runs' / 'run-001')
+
+            # Mock final state
+            mock_state = MagicMock()
+            mock_state.turn = 3
+            mock_state.total_cost.return_value = 0.05
+            mock_state.costs = []
+
+            mock_runner.run = AsyncMock(return_value=mock_state)
+            mock_runner_class.return_value = mock_runner
+
+            result = self.runner.invoke(cli, ['benchmark', str(scenario_dir)])
+
+            # Verify benchmark ran
+            self.assertEqual(result.exit_code, 0)
+            self.assertIn('Performance Benchmark', result.output)
+            self.assertIn('Results', result.output)
 
 
 class TestCLIVerboseMode(TestCLIBase):
