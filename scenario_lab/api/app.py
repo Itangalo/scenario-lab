@@ -241,6 +241,53 @@ async def health_check():
     }
 
 
+def _validate_scenario_path(requested_path: str) -> Path:
+    """
+    Validate and resolve scenario path to prevent path traversal attacks.
+
+    Args:
+        requested_path: User-provided scenario path
+
+    Returns:
+        Resolved Path object within allowed directory
+
+    Raises:
+        HTTPException: If path is invalid or outside allowed directories
+    """
+    # Define allowed base directories for scenarios
+    allowed_bases = [
+        Path.cwd() / "scenarios",
+        Path.cwd(),
+    ]
+
+    # Resolve the requested path
+    requested = Path(requested_path)
+
+    # If it's a relative path, resolve it relative to cwd
+    if not requested.is_absolute():
+        resolved = (Path.cwd() / requested).resolve()
+    else:
+        resolved = requested.resolve()
+
+    # Check if resolved path is within any allowed base directory
+    for base in allowed_bases:
+        try:
+            base_resolved = base.resolve()
+            resolved.relative_to(base_resolved)
+            # Path is within this base - now check it exists
+            if resolved.exists():
+                return resolved
+        except ValueError:
+            # Not within this base, try next
+            continue
+
+    # Path is not within any allowed directory or doesn't exist
+    raise HTTPException(
+        status_code=400,
+        detail="Invalid scenario path: must be within allowed directories"
+    )
+
+
 @app.post("/api/scenarios/execute", response_model=ScenarioStatus)
 async def execute_scenario(
     request: ScenarioExecuteRequest,
@@ -252,10 +299,8 @@ async def execute_scenario(
 
     Returns immediately with a scenario_id that can be used to monitor progress.
     """
-    # Validate scenario path
-    scenario_path = Path(request.scenario_path)
-    if not scenario_path.exists():
-        raise HTTPException(status_code=404, detail=f"Scenario not found: {request.scenario_path}")
+    # Validate scenario path (prevents path traversal attacks)
+    scenario_path = _validate_scenario_path(request.scenario_path)
 
     # Generate scenario ID
     scenario_id = f"scenario-{datetime.now().strftime('%Y%m%d-%H%M%S')}"
