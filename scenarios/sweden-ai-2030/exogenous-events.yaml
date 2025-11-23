@@ -1,0 +1,202 @@
+# Exogenous Events: Sweden and AI 2030
+# Base scenario with moderate AI development pace
+
+events:
+  # === TRENDS ===
+
+  - type: trend
+    name: "AI Capability Growth"
+    description: |
+      METR benchmark progression (task duration AI can handle).
+      Base scenario: doubling every 6 months.
+      Starting point: ~3 hours (January 2026).
+    initial_value: 3
+    unit: "hours"
+    trend_direction: "doubling"
+    doubling_period: 1  # turns (6 months)
+
+  # === SCHEDULED EVENTS ===
+
+  - type: scheduled
+    name: "Swedish General Election 2026"
+    description: "Swedish parliamentary election in September 2026"
+    turn: 2
+    effect: |
+      The Swedish general election takes place. The outcome determines AI policy direction:
+
+      **Possible outcomes (branch point):**
+      1. **Status quo:** AI policy continues to be mostly inactive and for show
+         (even if the coalition might have changed)
+      2. **Active AI agenda:** The government prioritizes AI in one or several areas:
+         sovereignty in computing power, stimulus for companies building on AI,
+         public education on AI, national/EU efforts to build/fine-tune AI models,
+         building out power production, AI safety, proactive efforts to reduce
+         negative effects of AI-induced unemployment
+
+  - type: scheduled
+    name: "US Presidential Election 2028"
+    description: "US presidential election campaign and result"
+    turn: 5
+    effect: |
+      The US presidential election dominates global attention. The outcome
+      significantly affects global AI development trajectory.
+
+      **Possible outcomes (branch point):**
+      1. **Accelerationist:** Continued aggressive pro-AI, anti-regulation stance
+      2. **Regulatory shift:** More cautious approach, potential international
+         cooperation (even with China)
+
+  # === CONDITIONAL EVENTS ===
+
+  - type: conditional
+    name: "Major AI-Driven Layoffs in Sweden"
+    description: "Large Swedish company announces AI-driven workforce reduction"
+    condition: "AI capability reaches 24+ hours AND business sector aggressively adopts AI"
+    effect: |
+      A large Swedish company announces significant workforce reduction,
+      explicitly citing AI automation as the primary driver.
+
+      Effects:
+      - Intense media coverage of AI and employment
+      - Union pressure for protective measures increases
+      - Government faces calls to act
+      - Public opinion likely shifts more negative
+
+  - type: conditional
+    name: "EU AI Act Enforcement Issues"
+    description: "EU struggles to enforce AI Act as capabilities outpace regulation"
+    condition: "AI capability outpaces regulation AND major compliance failures occur"
+    effect: |
+      The EU faces a choice: strengthen enforcement (and potentially harm
+      competitiveness further) or relax requirements (and face criticism
+      for abandoning precautionary principle).
+
+      Creates uncertainty for Swedish businesses trying to plan AI investments.
+
+  - type: conditional
+    name: "EU AI Act Stops Frontier Models"
+    description: "New frontier AI models prohibited on EU market"
+    condition: "EU AI Act is not scaled back AND US does not adopt significant regulation"
+    effect: |
+      A new generation of frontier AI models are prohibited on the EU market
+      due to compliance issues with the AI Act.
+
+      Effects:
+      - EU faces protests from both EU companies and AI providers
+      - European businesses at competitive disadvantage
+      - Pressure to revise regulations intensifies
+      - Sweden caught between EU loyalty and competitiveness concerns
+
+  # === RANDOM EVENTS ===
+
+  - type: random
+    name: "AI Safety Incident - Global"
+    description: "AI system causes significant harm somewhere in the world"
+    probability: 0.15
+    turn_range: [1, 10]
+    outcomes:
+      - "Minor: AI system causes financial loss or privacy breach affecting thousands"
+      - "Moderate: AI-enabled cyberattack causes significant damage to critical infrastructure"
+      - "Major: AI system contributes to deaths (mental health crisis, autonomous vehicle, medical error, infrastructure failure)"
+      - "Severe: AI system used in military action or terrorist attack"
+    outcome_weights: [0.5, 0.3, 0.15, 0.05]
+    effect: |
+      Shifts public opinion toward caution. Increases regulatory pressure globally.
+      Severity determines magnitude of response.
+
+  - type: random
+    name: "AI Safety Incident - Sweden"
+    description: "AI-related harm occurs in Sweden specifically"
+    probability: 0.05
+    turn_range: [1, 10]
+    outcomes:
+      - "Young person suicide linked to AI companion/chatbot conversations"
+      - "Attack planned or prepared with significant AI assistance"
+    outcome_weights: [0.7, 0.3]
+    effect: |
+      Intense Swedish media coverage. Political pressure for regulation.
+      Public opinion shifts negative. Comparisons to social media harms debate.
+      Government forced to respond publicly.
+
+  - type: random
+    name: "AI Economic Bubble Collapse"
+    description: "Major correction in AI investment market"
+    probability_by_turn:
+      1: 0.20
+      2: 0.20
+      3: 0.20
+      4: 0.10
+      5: 0.10
+      6: 0.10
+      7: 0.05
+      8: 0.05
+      9: 0.05
+      10: 0.05
+    effect: |
+      Major AI investment pullback. Many AI startups fail or are acquired cheaply.
+      Development pace slows temporarily as funding dries up.
+      Established players (Google, Microsoft, etc.) consolidate position.
+      Swedish AI startups particularly vulnerable.
+
+  - type: random
+    name: "Taiwan Crisis"
+    description: "China-Taiwan tensions escalate to crisis level"
+    probability: 0.05
+    turn_range: [1, 10]
+    outcomes:
+      - "Blockade: China restricts Taiwan trade, chip supply significantly disrupted"
+      - "Hot conflict: Military action, severe global disruption"
+    outcome_weights: [0.8, 0.2]
+    effect: |
+      Chip shortage affects all products involving computer chips.
+      AI development slowed globally due to hardware constraints.
+      Geopolitical tensions rise; Sweden's NATO membership becomes more salient.
+      Economic ripple effects across all sectors.
+
+  - type: random
+    name: "AI-Powered Humanoid Robots Become Useful"
+    description: "Physical AI robots reach practical utility threshold"
+    probability: 0.10
+    turn_range: [4, 10]  # Starting H2 2027
+    effect: |
+      Physical labor automation becomes viable for specific tasks.
+      Major implications for:
+      - Manufacturing and logistics
+      - Elderly care (relevant for aging Swedish population)
+      - Service sector
+
+      Accelerates labor market concerns beyond white-collar jobs.
+      Unions expand focus to include physical labor automation.
+
+  - type: random
+    name: "Major AI Capability Breakthrough"
+    description: "Unexpected acceleration in AI capabilities"
+    probability: 0.05
+    turn_range: [1, 10]
+    outcomes:
+      - "New architecture with transformer-level impact discovered"
+      - "Recursive self-improvement capability demonstrated"
+      - "Unexpected emergent capability surprises researchers"
+    outcome_weights: [0.4, 0.3, 0.3]
+    effect: |
+      Either single large jump in METR benchmark (2-3x normal)
+      OR sustained acceleration of development pace for remainder of scenario.
+
+      Global attention on AI safety increases dramatically.
+      Regulatory discussions accelerate worldwide.
+
+  - type: random
+    name: "Major Russian Information Operation"
+    description: "Large-scale AI-enhanced disinformation campaign targeting Sweden"
+    probability: 0.15
+    turn_range: [1, 10]
+    outcomes:
+      - "Campaign targeting Swedish election integrity"
+      - "Campaign targeting NATO membership and defense policy"
+      - "Campaign exploiting social divisions (immigration, climate, etc.)"
+    outcome_weights: [0.3, 0.4, 0.3]
+    effect: |
+      AI-generated disinformation floods Swedish information space.
+      Media and government forced to respond.
+      Public trust in information sources tested.
+      Debate about AI regulation gains new dimension.
