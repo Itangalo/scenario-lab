@@ -6,6 +6,7 @@ Settings are loaded from environment variables with sensible defaults.
 """
 from __future__ import annotations
 
+import hmac
 import os
 from dataclasses import dataclass, field
 from typing import Optional
@@ -113,7 +114,10 @@ class APISettings:
 
     def validate_api_key(self, key: Optional[str]) -> bool:
         """
-        Validate an API key.
+        Validate an API key using constant-time comparison.
+
+        Uses hmac.compare_digest to prevent timing attacks that could
+        leak information about valid API keys.
 
         Args:
             key: The API key to validate
@@ -125,7 +129,13 @@ class APISettings:
             return True
         if not key:
             return False
-        return key in self.api_keys
+        # Use constant-time comparison to prevent timing attacks
+        # This ensures the comparison takes the same amount of time
+        # regardless of how many characters match
+        return any(
+            hmac.compare_digest(key.encode('utf-8'), valid_key.encode('utf-8'))
+            for valid_key in self.api_keys
+        )
 
     def is_auth_required(self) -> bool:
         """Check if authentication is required."""
