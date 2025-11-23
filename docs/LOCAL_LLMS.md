@@ -138,7 +138,7 @@ Ollama handles concurrent requests well. You can run multiple scenarios in paral
 ```bash
 # Run 4 scenarios in parallel
 for i in {1..4}; do
-    python src/run_scenario.py scenarios/my-scenario &
+    scenario-lab run scenarios/my-scenario &
 done
 wait
 ```

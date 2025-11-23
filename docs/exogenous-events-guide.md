@@ -191,7 +191,7 @@ If metrics haven't been extracted yet (turn 1), conditional events won't trigger
 Enable DEBUG logging to see event triggers:
 
 ```bash
-python src/run_scenario.py scenario-path --verbose
+scenario-lab run scenario-path --verbose
 ```
 
 You'll see:

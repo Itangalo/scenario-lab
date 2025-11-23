@@ -33,11 +33,8 @@ scenario-lab version
 ### Run Your First V2 Scenario
 
 ```bash
-# V2 CLI (currently delegates to V1 engine)
-scenario-lab run scenarios/test-regulation-negotiation --max-turns 3
-
-# Compare with V1
-python src/run_scenario.py scenarios/test-regulation-negotiation --max-turns 3
+# Run a scenario with V2 CLI
+scenario-lab run scenarios/test-regulation-negotiation --end-turn 3
 ```
 
 ### Explore V2 Features
@@ -46,8 +43,8 @@ python src/run_scenario.py scenarios/test-regulation-negotiation --max-turns 3
 # Validate scenario configuration
 scenario-lab validate scenarios/ai-summit
 
-# Estimate cost (coming soon)
-scenario-lab estimate scenarios/ai-summit --max-turns 10
+# Estimate cost
+scenario-lab estimate scenarios/ai-summit --end-turn 10
 
 # Show version and status
 scenario-lab version
@@ -96,8 +93,7 @@ scenario_lab/
 
 ### ✅ Documentation
 
-- **[V2_ARCHITECTURE.md](docs/V2_ARCHITECTURE.md)** - Complete architecture overview
-- **[V2_MIGRATION.md](docs/V2_MIGRATION.md)** - Migration guide from V1
+- **[ARCHITECTURE_GROUND_TRUTH.md](docs/ARCHITECTURE_GROUND_TRUTH.md)** - Complete architecture overview
 - **[ROADMAP_V2.md](ROADMAP_V2.md)** - Full development roadmap
 
 ### ✅ Packaging
@@ -334,16 +330,9 @@ V2 is fully backward compatible with V1:
 scenario-lab run scenarios/old-v1-scenario
 ```
 
-### ✅ V1 CLI Still Available
-
-```bash
-# V1 command still works
-python src/run_scenario.py scenarios/ai-summit
-```
-
 ### ✅ V1 Data Accessible
 
-All V1 runs in `output/` remain accessible. In Phase 2.2, they can be imported into the V2 database for analytics.
+All V1 runs in `output/` and scenario `runs/` directories remain accessible. The V2 database can import them for analytics.
 
 ## Performance
 
@@ -357,14 +346,9 @@ All V1 runs in `output/` remain accessible. In Phase 2.2, they can be imported i
 ### Measuring Performance
 
 ```bash
-# Benchmark scenario (coming soon)
+# Benchmark scenario
 scenario-lab benchmark scenarios/test-regulation-negotiation
-
-# Compare with V1
-python src/run_scenario.py scenarios/test-regulation-negotiation
 ```
-
-Baseline measurements will be documented in `docs/performance-baseline.md`.
 
 ## Contributing to V2
 
@@ -402,7 +386,7 @@ No. V2 is backward compatible. All V1 scenarios and commands work unchanged.
 
 ### How do I report bugs?
 
-GitHub Issues: https://github.com/yourusername/scenario-lab/issues
+GitHub Issues: https://github.com/Itangalo/scenario-lab/issues
 
 Include:
 - V2 version: `scenario-lab version`
@@ -421,8 +405,7 @@ Yes! See priority areas above. Start with:
 
 ### Documentation
 
-- **[V2_ARCHITECTURE.md](docs/V2_ARCHITECTURE.md)** - Architecture deep-dive
-- **[V2_MIGRATION.md](docs/V2_MIGRATION.md)** - Migration from V1
+- **[ARCHITECTURE_GROUND_TRUTH.md](docs/ARCHITECTURE_GROUND_TRUTH.md)** - Architecture deep-dive
 - **[ROADMAP_V2.md](ROADMAP_V2.md)** - Development roadmap
 - **[README.md](README.md)** - Project overview
 
@@ -435,8 +418,8 @@ Yes! See priority areas above. Start with:
 
 ### Getting Help
 
-- GitHub Discussions: https://github.com/yourusername/scenario-lab/discussions
-- GitHub Issues: https://github.com/yourusername/scenario-lab/issues
+- GitHub Discussions: https://github.com/Itangalo/scenario-lab/discussions
+- GitHub Issues: https://github.com/Itangalo/scenario-lab/issues
 
 ## Summary
 

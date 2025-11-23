@@ -16,17 +16,16 @@ This scenario is based on "AI 2027" by Daniel Kokotajlo, Scott Alexander, Thomas
 
 Two versions are available:
 
-### Premium Version (`definition/`)
+### Standard Version (`scenarios/ai-2027/`)
 - Uses `gpt-4o` for most actors
 - Highest quality outputs
 - **Cost:** ~$8-12 per full run (66 turns)
 - **Best for:** Final research, publications, demonstrations
 
-### Budget Version (`definition-budget/`)
+### Budget Version (`scenarios/ai-2027-budget/`)
 - Uses `gpt-4o-mini` for 4 of 7 actors (57%)
 - **Cost:** ~$5-7 per full run (40% savings)
 - **Best for:** Exploratory runs, batch analysis, testing
-- See `definition-budget/README.md` for details
 
 ## Running the Scenario
 
@@ -35,11 +34,11 @@ Two versions are available:
 From the repository root:
 
 ```bash
-# Premium version
-python src/run_scenario.py scenarios/ai-2027/definition/scenario.yaml
+# Standard version
+scenario-lab run scenarios/ai-2027
 
 # Budget version (recommended for initial exploration)
-python src/run_scenario.py scenarios/ai-2027/definition-budget/scenario.yaml
+scenario-lab run scenarios/ai-2027-budget
 ```
 
 This will:
@@ -56,12 +55,12 @@ The scenario is long (66 turns) and may hit rate limits or budget constraints. Y
 
 **Set limits:**
 ```bash
-python src/run_scenario.py scenarios/ai-2027/definition/scenario.yaml --max-turns 12 --credit-limit 50
+scenario-lab run scenarios/ai-2027 --end-turn 12 --credit-limit 50
 ```
 
 **Resume from a halted run:**
 ```bash
-python src/run_scenario.py --resume scenarios/ai-2027/runs/run-001
+scenario-lab run --resume scenarios/ai-2027/runs/run-001 scenarios/ai-2027
 ```
 
 ### Scenario Branching
@@ -69,7 +68,7 @@ python src/run_scenario.py --resume scenarios/ai-2027/runs/run-001
 To explore "what-if" alternatives from any point:
 
 ```bash
-python src/run_scenario.py --branch-from scenarios/ai-2027/runs/run-001 --branch-at-turn 24
+scenario-lab run scenarios/ai-2027 --branch-from scenarios/ai-2027/runs/run-001 --branch-at-turn 24
 ```
 
 This creates a new run starting from turn 24 of run-001, allowing you to:
@@ -84,21 +83,21 @@ This creates a new run starting from turn 24 of run-001, allowing you to:
 ai-2027/
 ├── README.md                          # This file
 ├── ai-2027.pdf                        # Original scenario document
-├── definition/
-│   ├── scenario.yaml                  # Scenario configuration
-│   ├── metrics.yaml                   # Tracked metrics definitions
-│   ├── validation-rules.yaml          # QA validation configuration
-│   ├── actors/
-│   │   ├── openbrain-ceo.yaml        # OpenBrain CEO
-│   │   ├── openbrain-alignment-lead.yaml
-│   │   ├── us-president.yaml
-│   │   ├── us-ai-advisor.yaml
-│   │   ├── deepcent-ceo.yaml         # Chinese AI company CEO
-│   │   ├── ccp-secretary.yaml        # Chinese government
-│   │   └── independent-alignment-researcher.yaml
-│   └── background/
-│       ├── scenario-overview.md       # Scenario context and goals
-│       └── technical-concepts.md      # Key concepts explained
+├── scenario.yaml                      # Scenario configuration
+├── metrics.yaml                       # Tracked metrics definitions
+├── validation-rules.yaml              # QA validation configuration
+├── exogenous-events.yaml              # Background events
+├── actors/
+│   ├── openbrain-ceo.yaml            # OpenBrain CEO
+│   ├── openbrain-alignment-lead.yaml
+│   ├── us-president.yaml
+│   ├── us-ai-advisor.yaml
+│   ├── deepcent-ceo.yaml             # Chinese AI company CEO
+│   ├── ccp-secretary.yaml            # Chinese government
+│   └── independent-alignment-researcher.yaml
+├── background/
+│   ├── scenario-overview.md           # Scenario context and goals
+│   └── technical-concepts.md          # Key concepts explained
 ├── runs/                              # Generated during execution
 │   └── run-NNN/                       # Each run in separate directory
 │       ├── world-state-001.md         # World state each turn
@@ -199,7 +198,7 @@ For statistical analysis across multiple runs, use the batch execution system.
 The easiest way to create a batch configuration:
 
 ```bash
-python src/create_batch_config.py --interactive
+scenario-lab create-batch
 ```
 
 This wizard will guide you through:
@@ -214,10 +213,10 @@ A pre-configured example is provided:
 
 ```bash
 # Preview costs and setup (highly recommended!)
-python src/batch_runner.py scenarios/ai-2027/example-batch-config.yaml --dry-run
+python -m scenario_lab.batch.batch_runner scenarios/ai-2027/example-batch-config.yaml --dry-run
 
 # Run the batch (WARNING: This scenario is expensive - 66 turns × 7 actors)
-python src/batch_runner.py scenarios/ai-2027/example-batch-config.yaml
+python -m scenario_lab.batch.batch_runner scenarios/ai-2027/example-batch-config.yaml
 ```
 
 The example config runs 12 variations (4 model combinations × 3 runs) comparing:
@@ -245,7 +244,7 @@ This scenario is particularly expensive due to:
 After batch completion:
 
 ```bash
-python src/batch_analyzer.py scenarios/ai-2027/experiments/model-comparison/ --report
+python -m scenario_lab.batch.batch_analyzer scenarios/ai-2027/experiments/model-comparison/ --report
 ```
 
 This enables:
@@ -264,7 +263,7 @@ This scenario serves as Scenario Lab's primary **calibration scenario** - a tool
 **Quick Start:**
 ```bash
 # Run 12-month calibration (Jan 2024 - Jan 2025)
-python src/run_scenario.py scenarios/ai-2027 --max-turns 12 --credit-limit 5.00
+scenario-lab run scenarios/ai-2027 --end-turn 12 --credit-limit 5.00
 
 # Document results
 cp scenarios/ai-2027/calibration-results-template.md \

@@ -84,7 +84,7 @@ For each major real event, we score:
 Run AI 2027 scenario with default settings for 12-24 months (corresponding to 2024-2025 period).
 
 ```bash
-python src/run_scenario.py scenarios/ai-2027 --max-turns 12
+scenario-lab run scenarios/ai-2027 --end-turn 12
 ```
 
 **Step 2: Historical Comparison**

@@ -41,7 +41,7 @@ The **AI 2027** scenario serves as Scenario Lab's primary calibration tool becau
 
 ```bash
 # Run AI 2027 for 12 turns (1 year from mid-2024)
-python src/run_scenario.py scenarios/ai-2027 --max-turns 12 --credit-limit 5.00
+scenario-lab run scenarios/ai-2027 --end-turn 12 --credit-limit 5.00
 
 # Expected cost: ~$3-5 for 12 turns
 # Expected time: ~15-30 minutes
@@ -98,11 +98,12 @@ Choose a period with:
 Run without modifications to prompts:
 
 ```bash
-python src/run_scenario.py scenarios/ai-2027 \
-  --max-turns 12 \
-  --credit-limit 5.00 \
-  --output-dir scenarios/ai-2027/calibration-runs/baseline-2025-01
+scenario-lab run scenarios/ai-2027 \
+  --end-turn 12 \
+  --credit-limit 5.00
 ```
+
+Note: Output is automatically saved to `scenarios/ai-2027/runs/run-NNN/`.
 
 **Important settings:**
 - Use default prompts (don't tune yet)
@@ -229,9 +230,7 @@ Based on comparison, refine prompts:
 After refinements:
 
 ```bash
-python src/run_scenario.py scenarios/ai-2027 \
-  --max-turns 12 \
-  --output-dir scenarios/ai-2027/calibration-runs/refined-2025-01
+scenario-lab run scenarios/ai-2027 --end-turn 12
 ```
 
 Compare improvement:
@@ -443,7 +442,7 @@ budget_limit: 50.00
 ```
 
 ```bash
-python src/batch_runner.py calibration-batch-config.yaml
+python -m scenario_lab.batch.batch_runner calibration-batch-config.yaml
 ```
 
 **Benefits:**
@@ -457,13 +456,13 @@ Test different time horizons:
 
 ```bash
 # Short-term (3 months)
-python src/run_scenario.py scenarios/ai-2027 --max-turns 3
+scenario-lab run scenarios/ai-2027 --end-turn 3
 
 # Medium-term (6 months)
-python src/run_scenario.py scenarios/ai-2027 --max-turns 6
+scenario-lab run scenarios/ai-2027 --end-turn 6
 
 # Long-term (12 months)
-python src/run_scenario.py scenarios/ai-2027 --max-turns 12
+scenario-lab run scenarios/ai-2027 --end-turn 12
 ```
 
 **Findings:**

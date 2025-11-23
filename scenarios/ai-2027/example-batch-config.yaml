@@ -6,7 +6,7 @@ description: |
   Compare how different LLM models affect scenario outcomes in the AI 2027 scenario.
   Tests whether model choice significantly impacts decisions and final trajectories.
 
-base_scenario: "scenarios/ai-2027/definition"
+base_scenario: "scenarios/ai-2027"
 
 # Number of runs per variation (each run is 66 turns = expensive!)
 runs_per_variation: 3
@@ -40,4 +40,4 @@ variations:
 output_dir: "scenarios/ai-2027/experiments/model-comparison"
 
 # Recommended: Start with dry-run to see cost estimates
-# python src/batch_runner.py scenarios/ai-2027/example-batch-config.yaml --dry-run
+# python -m scenario_lab.batch.batch_runner scenarios/ai-2027/example-batch-config.yaml --dry-run
