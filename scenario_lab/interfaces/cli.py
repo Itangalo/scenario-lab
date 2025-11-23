@@ -741,14 +741,15 @@ def version() -> None:
     print_header("Scenario Lab V2")
     print_info("Version", __version__)
     print_info("Architecture", "Event-driven modular", "blue")
-    print_info("Status", "Alpha - Phase 2.0 Foundation", "yellow")
+    print_info("Status", "V2 Complete", "green")
 
     print_section("Features:")
     print_checklist_item("Event-driven execution engine")
     print_checklist_item("Immutable state management")
-    print_checklist_item("Backward compatible with V1")
-    print_checklist_item("Full execution (Phase 2.1)", "\u23f3")
-    print_checklist_item("Web dashboard (Phase 2.3)", "\u23f3")
+    print_checklist_item("CLI commands (run, validate, estimate, benchmark)")
+    print_checklist_item("REST API with WebSocket streaming")
+    print_checklist_item("Batch processing with parameter variation")
+    print_checklist_item("Response caching and cost management")
     console.print()
 
 

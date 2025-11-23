@@ -33,11 +33,8 @@ scenario-lab version
 ### Run Your First V2 Scenario
 
 ```bash
-# V2 CLI (currently delegates to V1 engine)
-scenario-lab run scenarios/test-regulation-negotiation --max-turns 3
-
-# Compare with V1
-python src/run_scenario.py scenarios/test-regulation-negotiation --max-turns 3
+# Run a scenario with V2 CLI
+scenario-lab run scenarios/test-regulation-negotiation --end-turn 3
 ```
 
 ### Explore V2 Features
@@ -46,8 +43,8 @@ python src/run_scenario.py scenarios/test-regulation-negotiation --max-turns 3
 # Validate scenario configuration
 scenario-lab validate scenarios/ai-summit
 
-# Estimate cost (coming soon)
-scenario-lab estimate scenarios/ai-summit --max-turns 10
+# Estimate cost
+scenario-lab estimate scenarios/ai-summit --end-turn 10
 
 # Show version and status
 scenario-lab version
@@ -333,16 +330,9 @@ V2 is fully backward compatible with V1:
 scenario-lab run scenarios/old-v1-scenario
 ```
 
-### ✅ V1 CLI Still Available
-
-```bash
-# V1 command still works
-python src/run_scenario.py scenarios/ai-summit
-```
-
 ### ✅ V1 Data Accessible
 
-All V1 runs in `output/` remain accessible. In Phase 2.2, they can be imported into the V2 database for analytics.
+All V1 runs in `output/` and scenario `runs/` directories remain accessible. The V2 database can import them for analytics.
 
 ## Performance
 
@@ -356,14 +346,9 @@ All V1 runs in `output/` remain accessible. In Phase 2.2, they can be imported i
 ### Measuring Performance
 
 ```bash
-# Benchmark scenario (coming soon)
+# Benchmark scenario
 scenario-lab benchmark scenarios/test-regulation-negotiation
-
-# Compare with V1
-python src/run_scenario.py scenarios/test-regulation-negotiation
 ```
-
-Baseline measurements will be documented in `docs/performance-baseline.md`.
 
 ## Contributing to V2
 
