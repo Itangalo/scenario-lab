@@ -179,9 +179,11 @@ class SyncRunner:
         )
 
         # Orchestrator
+        # Determine max turns: explicit end_turn takes precedence, then scenario config
+        max_turns = self.end_turn or self.scenario_config.get("turns") or self.scenario_config.get("num_turns", 10)
         self.orchestrator = ScenarioOrchestrator(
             event_bus=self.event_bus,
-            end_turn=self.end_turn or self.scenario_config.get("num_turns", 10),
+            end_turn=max_turns,
             credit_limit=self.credit_limit,
             output_dir=self.output_path,
             save_state_every_turn=True,

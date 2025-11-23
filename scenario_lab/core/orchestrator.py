@@ -432,12 +432,18 @@ class ScenarioOrchestrator:
         Returns:
             True if execution should stop
         """
-        # Stop if end turn reached
+        # Determine max turns: explicit end_turn takes precedence, then scenario config
+        max_turns = self.end_turn
+        if max_turns is None:
+            # Fall back to scenario configuration 'turns' setting
+            max_turns = state.scenario_config.get('turns')
+
+        # Stop if max turn reached
         # Note: state.turn represents the number of completed turns
         # (0 = initial state, 1 = after 1st turn, 2 = after 2nd turn, etc.)
         # So if we want N actor turns, we stop when state.turn >= N
         # This means --end-turn N results in exactly N actor decision rounds
-        if self.end_turn is not None and state.turn >= self.end_turn:
+        if max_turns is not None and state.turn >= max_turns:
             return True
 
         # Stop if scenario has ended
