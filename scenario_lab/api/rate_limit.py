@@ -5,7 +5,9 @@ Provides configurable rate limiting using an in-memory sliding window approach.
 """
 from __future__ import annotations
 
+import ipaddress
 import logging
+import os
 import time
 from collections import defaultdict
 from dataclasses import dataclass, field
@@ -16,6 +18,65 @@ from fastapi import HTTPException, Request, status
 from scenario_lab.api.settings import get_settings
 
 logger = logging.getLogger(__name__)
+
+
+# Trusted proxy IP ranges (private networks by default)
+# Can be configured via SCENARIO_LAB_TRUSTED_PROXIES environment variable
+# Format: comma-separated CIDR notation (e.g., "10.0.0.0/8,172.16.0.0/12")
+DEFAULT_TRUSTED_PROXIES = [
+    "127.0.0.0/8",      # Localhost
+    "10.0.0.0/8",       # Private Class A
+    "172.16.0.0/12",    # Private Class B
+    "192.168.0.0/16",   # Private Class C
+    "::1/128",          # IPv6 localhost
+    "fc00::/7",         # IPv6 private
+]
+
+
+def _get_trusted_proxy_networks() -> list[ipaddress.IPv4Network | ipaddress.IPv6Network]:
+    """
+    Get list of trusted proxy networks from environment or defaults.
+
+    Returns:
+        List of IP network objects representing trusted proxies
+    """
+    env_proxies = os.environ.get("SCENARIO_LAB_TRUSTED_PROXIES", "")
+    if env_proxies.strip():
+        proxy_strs = [p.strip() for p in env_proxies.split(",") if p.strip()]
+    else:
+        proxy_strs = DEFAULT_TRUSTED_PROXIES
+
+    networks = []
+    for proxy_str in proxy_strs:
+        try:
+            networks.append(ipaddress.ip_network(proxy_str, strict=False))
+        except ValueError as e:
+            logger.warning(f"Invalid trusted proxy CIDR '{proxy_str}': {e}")
+
+    return networks
+
+
+def _is_trusted_proxy(client_ip: str) -> bool:
+    """
+    Check if the client IP is from a trusted proxy.
+
+    Args:
+        client_ip: The IP address to check
+
+    Returns:
+        True if the IP is within a trusted proxy network
+    """
+    if not client_ip or client_ip == "unknown":
+        return False
+
+    try:
+        ip = ipaddress.ip_address(client_ip)
+    except ValueError:
+        logger.warning(f"Invalid IP address format: {client_ip}")
+        return False
+
+    trusted_networks = _get_trusted_proxy_networks()
+    return any(ip in network for network in trusted_networks)
 
 
 @dataclass
@@ -42,6 +103,8 @@ class RateLimiter:
         Get a unique identifier for the client.
 
         Uses API key if available, otherwise falls back to IP address.
+        Only trusts X-Forwarded-For header when request comes from a trusted proxy
+        to prevent header spoofing attacks that could bypass rate limiting.
 
         Args:
             request: The FastAPI request
@@ -53,13 +116,21 @@ class RateLimiter:
         if api_key:
             return f"key:{api_key[:16]}"
 
-        # Get client IP (handle proxies via X-Forwarded-For)
+        # Get the direct client IP first
+        direct_client_ip = request.client.host if request.client else "unknown"
+
+        # Only trust X-Forwarded-For if request comes from a trusted proxy
+        # This prevents attackers from spoofing the header to bypass rate limits
         forwarded = request.headers.get("X-Forwarded-For")
-        if forwarded:
-            # Take the first IP in the chain (original client)
+        if forwarded and _is_trusted_proxy(direct_client_ip):
+            # Request is from a trusted proxy, use the original client IP
             client_ip = forwarded.split(",")[0].strip()
+            logger.debug(f"Using X-Forwarded-For IP {client_ip} from trusted proxy {direct_client_ip}")
         else:
-            client_ip = request.client.host if request.client else "unknown"
+            # Either no X-Forwarded-For or untrusted source - use direct IP
+            client_ip = direct_client_ip
+            if forwarded:
+                logger.debug(f"Ignoring X-Forwarded-For from untrusted source {direct_client_ip}")
 
         return f"ip:{client_ip}"
 
