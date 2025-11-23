@@ -21,13 +21,11 @@ The run started and created partial Turn 1 outputs:
 If scenario saved state before interruption:
 
 ```bash
-cd "/Users/johanfalk/Desktop/Dropbox/Johans/Echo/Falk AI/projekt/Scenario Lab"
-
 # Check if state was saved
 ls scenarios/ai-2027/calibration-runs/baseline-2025-01/scenario-state.json
 
 # If exists, resume:
-python src/run_scenario.py \
+scenario-lab run \
   --resume scenarios/ai-2027/calibration-runs/baseline-2025-01 \
   --credit-limit 6.00
 ```
@@ -42,15 +40,13 @@ python src/run_scenario.py \
 If no state file or resume doesn't work:
 
 ```bash
-cd "/Users/johanfalk/Desktop/Dropbox/Johans/Echo/Falk AI/projekt/Scenario Lab"
-
 # Remove partial run
 rm -rf scenarios/ai-2027/calibration-runs/baseline-2025-01
 
 # Start new run with fresh directory name
-python src/run_scenario.py \
-  scenarios/ai-2027/definition \
-  --max-turns 12 \
+scenario-lab run \
+  scenarios/ai-2027 \
+  --end-turn 12 \
   --credit-limit 6.00 \
   --output scenarios/ai-2027/calibration-runs/baseline-2025-01-take2
 ```
@@ -79,9 +75,9 @@ grep OPENROUTER_API_KEY .env
 If cost is a concern, use the budget version instead:
 
 ```bash
-python src/run_scenario.py \
-  scenarios/ai-2027/definition-budget \
-  --max-turns 12 \
+scenario-lab run \
+  scenarios/ai-2027-budget \
+  --end-turn 12 \
   --credit-limit 6.00 \
   --output scenarios/ai-2027/calibration-runs/baseline-budget-2025-01
 ```
@@ -98,17 +94,15 @@ Once you're ready:
 ### Quick Run (Just Get It Done)
 
 ```bash
-cd "/Users/johanfalk/Desktop/Dropbox/Johans/Echo/Falk AI/projekt/Scenario Lab"
-
 # Try resume first
-python src/run_scenario.py \
+scenario-lab run \
   --resume scenarios/ai-2027/calibration-runs/baseline-2025-01 \
   --credit-limit 6.00
 
 # If that fails, start fresh with budget version
-python src/run_scenario.py \
-  scenarios/ai-2027/definition-budget \
-  --max-turns 12 \
+scenario-lab run \
+  scenarios/ai-2027-budget \
+  --end-turn 12 \
   --credit-limit 6.00 \
   --output scenarios/ai-2027/calibration-runs/baseline-budget-2025-01
 ```
@@ -155,7 +149,7 @@ head -50 us-president-001.md
 
 Scenario will auto-save state. Wait a few minutes, then resume:
 ```bash
-python src/run_scenario.py --resume [path-to-run]
+scenario-lab run --resume [path-to-run]
 ```
 
 ### "Credit limit exceeded"
@@ -163,7 +157,7 @@ python src/run_scenario.py --resume [path-to-run]
 If you set credit limit too low:
 ```bash
 # Resume with higher limit
-python src/run_scenario.py \
+scenario-lab run \
   --resume [path-to-run] \
   --credit-limit 10.00
 ```
@@ -175,7 +169,7 @@ Check if state was saved:
 ls [run-directory]/scenario-state.json
 
 # If exists, resume
-python src/run_scenario.py --resume [path-to-run]
+scenario-lab run --resume [path-to-run]
 ```
 
 ## Alternative: Shorter Test Run
@@ -184,9 +178,9 @@ If you want to test without full 12 turns:
 
 ```bash
 # Run just 3 turns (~$0.50-0.75)
-python src/run_scenario.py \
-  scenarios/ai-2027/definition-budget \
-  --max-turns 3 \
+scenario-lab run \
+  scenarios/ai-2027-budget \
+  --end-turn 3 \
   --credit-limit 2.00 \
   --output scenarios/ai-2027/calibration-runs/short-test-2025-01
 ```
@@ -227,13 +221,13 @@ Once you have completed run:
 1. **Check credits** - Ensure you have $3-6 available
 2. **Try resume first:**
    ```bash
-   python src/run_scenario.py --resume scenarios/ai-2027/calibration-runs/baseline-2025-01 --credit-limit 6.00
+   scenario-lab run --resume scenarios/ai-2027/calibration-runs/baseline-2025-01 --credit-limit 6.00
    ```
 3. **Or start fresh with budget version:**
    ```bash
-   python src/run_scenario.py scenarios/ai-2027/definition-budget --max-turns 12 --credit-limit 6.00 --output scenarios/ai-2027/calibration-runs/baseline-budget-2025-01
+   scenario-lab run scenarios/ai-2027-budget --end-turn 12 --credit-limit 6.00 --output scenarios/ai-2027/calibration-runs/baseline-budget-2025-01
    ```
 4. **Wait 15-30 minutes**
 5. **Follow QUICK-START-ANALYSIS.md**
 
-Good luck! The framework is ready and waiting for you. 🚀
+Good luck! The framework is ready and waiting for you.
