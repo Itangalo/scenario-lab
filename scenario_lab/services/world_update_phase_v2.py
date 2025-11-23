@@ -25,6 +25,7 @@ from scenario_lab.utils.api_client import make_llm_call_async, LLMResponse
 from scenario_lab.core.world_synthesizer import WorldSynthesizer, WorldUpdateResult
 from scenario_lab.core.prompt_builder import build_messages_for_llm
 from scenario_lab.utils.model_pricing import calculate_cost
+from scenario_lab.core.events import EventBus, EventType, get_event_bus
 
 logger = logging.getLogger(__name__)
 
@@ -50,6 +51,7 @@ class WorldUpdatePhaseV2:
         output_dir: Optional[str] = None,
         metrics_tracker: Optional[Any] = None,  # MetricsTracker from Phase 3.3
         qa_validator: Optional[Any] = None,  # QAValidator from Phase 3.4
+        event_bus: Optional[EventBus] = None,
     ):
         """
         Initialize world update phase
@@ -60,6 +62,7 @@ class WorldUpdatePhaseV2:
             output_dir: Optional directory to save world state markdown files
             metrics_tracker: Optional MetricsTracker for metrics extraction
             qa_validator: Optional QAValidator for validation
+            event_bus: Optional EventBus for emitting real-time events
         """
         self.scenario_name = scenario_name
         self.world_state_model = world_state_model
@@ -67,6 +70,7 @@ class WorldUpdatePhaseV2:
         self.api_key = os.environ.get('OPENROUTER_API_KEY')
         self.metrics_tracker = metrics_tracker  # Phase 3.3
         self.qa_validator = qa_validator  # Phase 3.4
+        self.event_bus = event_bus or get_event_bus()
 
         # Create synthesizer
         self.synthesizer = WorldSynthesizer(
@@ -197,6 +201,20 @@ class WorldUpdatePhaseV2:
             f"({llm_response.tokens_used:,} tokens, ${cost_amount:.4f})"
         )
         logger.info(f"  ✓ {len(parsed['key_changes'])} key changes, {len(parsed['consequences'])} consequences")
+
+        # Emit world state updated event with full content
+        await self.event_bus.emit(
+            EventType.WORLD_STATE_UPDATED,
+            data={
+                "turn": state.turn,
+                "world_state": parsed.get('updated_state', ''),
+                "key_changes": parsed.get('key_changes', []),
+                "consequences": parsed.get('consequences', []),
+                "tokens_used": llm_response.tokens_used,
+                "cost": cost_amount,
+            },
+            source="world_update_phase",
+        )
 
         # Phase 3.3: Extract metrics from world state
         if self.metrics_tracker:

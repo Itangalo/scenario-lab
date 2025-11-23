@@ -27,6 +27,7 @@ from scenario_lab.utils.response_parser import parse_decision
 from scenario_lab.utils.model_pricing import calculate_cost
 from scenario_lab.core.context_manager import ContextManagerV2
 from scenario_lab.core.communication_manager import format_communications_for_context
+from scenario_lab.core.events import EventBus, EventType, get_event_bus
 
 logger = logging.getLogger(__name__)
 
@@ -53,6 +54,7 @@ class DecisionPhaseV2:
         json_mode: bool = False,
         context_window_size: int = 3,
         metrics_tracker: Optional[Any] = None,  # MetricsTracker from Phase 3.3
+        event_bus: Optional[EventBus] = None,
     ):
         """
         Initialize decision phase
@@ -64,6 +66,7 @@ class DecisionPhaseV2:
             json_mode: Whether to use JSON response format (default: False)
             metrics_tracker: Optional MetricsTracker for metrics extraction
             context_window_size: Number of recent turns to keep in full detail (default: 3)
+            event_bus: Optional EventBus for emitting real-time events
         """
         self.actor_configs = actor_configs
         self.scenario_system_prompt = scenario_system_prompt
@@ -71,6 +74,7 @@ class DecisionPhaseV2:
         self.json_mode = json_mode
         self.api_key = os.environ.get('OPENROUTER_API_KEY')
         self.metrics_tracker = metrics_tracker  # Phase 3.3
+        self.event_bus = event_bus or get_event_bus()
 
         # Create context manager for windowing
         self.context_manager = ContextManagerV2(
@@ -98,6 +102,18 @@ class DecisionPhaseV2:
         for actor_short_name, actor_config in self.actor_configs.items():
             actor_name = actor_config['name']
             logger.debug(f"Getting decision from {actor_name}")
+
+            # Emit actor decision started event
+            await self.event_bus.emit(
+                EventType.ACTOR_DECISION_STARTED,
+                data={
+                    "actor": actor_name,
+                    "actor_short_name": actor_short_name,
+                    "turn": state.turn,
+                    "model": actor_config.get('llm_model', 'unknown'),
+                },
+                source="decision_phase",
+            )
 
             # Phase 2.1: Get contextualized world state for this actor
             current_world_state = await self.context_manager.get_context_for_actor(
@@ -200,6 +216,23 @@ class DecisionPhaseV2:
             logger.info(
                 f"  ✓ {actor_name}: {linked_preview} "
                 f"({llm_response.tokens_used:,} tokens, ${cost_amount:.4f})"
+            )
+
+            # Emit actor decision completed event with full content
+            await self.event_bus.emit(
+                EventType.ACTOR_DECISION_COMPLETED,
+                data={
+                    "actor": actor_name,
+                    "actor_short_name": actor_short_name,
+                    "turn": state.turn,
+                    "model": actor_config.get('llm_model', 'unknown'),
+                    "goals": decision.goals,
+                    "reasoning": decision.reasoning,
+                    "action": decision.action,
+                    "tokens_used": llm_response.tokens_used,
+                    "cost": cost_amount,
+                },
+                source="decision_phase",
             )
 
         # Phase 3.3: Extract metrics from all decisions after all actors have decided

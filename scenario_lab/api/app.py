@@ -605,7 +605,7 @@ async def websocket_stream(websocket: WebSocket, scenario_id: str):
                 )
                 break
 
-            await asyncio.sleep(0.5)
+            await asyncio.sleep(0.1)  # Reduced from 0.5s to 0.1s for faster updates
 
     except WebSocketDisconnect:
         logger.info(f"WebSocket disconnected for scenario {scenario_id}")

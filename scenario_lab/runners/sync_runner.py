@@ -218,6 +218,7 @@ class SyncRunner:
         # Communication phase (V2)
         communication_phase = CommunicationPhase(
             output_dir=self.output_path,
+            event_bus=self.event_bus,
         )
         self.orchestrator.register_phase(PhaseType.COMMUNICATION, communication_phase)
 
@@ -245,6 +246,7 @@ class SyncRunner:
             json_mode=self.json_mode,
             context_window_size=self.scenario_config.get("context_window", 3),
             metrics_tracker=self.metrics_tracker,
+            event_bus=self.event_bus,
         )
         self.orchestrator.register_phase(PhaseType.DECISION, decision_phase)
 
@@ -258,6 +260,7 @@ class SyncRunner:
             output_dir=self.output_path,
             metrics_tracker=self.metrics_tracker,
             qa_validator=self.qa_validator,
+            event_bus=self.event_bus,
         )
         self.orchestrator.register_phase(PhaseType.WORLD_UPDATE, world_update_phase)
 

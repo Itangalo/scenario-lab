@@ -42,13 +42,45 @@ export interface WebSocketMessage {
     turn?: number
     state?: any
     actor?: string
+    actor_short_name?: string
     phase?: string
     reason?: string
     error?: string
+    model?: string
+    goals?: string[]
+    reasoning?: string
+    action?: string
+    world_state?: string
+    key_changes?: string[]
+    consequences?: string[]
+    content?: string
+    sender?: string
+    recipients?: string[]
+    tokens_used?: number
+    cost?: number
     [key: string]: any
   }
   timestamp: string
   source?: string
+}
+
+/**
+ * Activity item for the activity feed
+ */
+export interface ActivityItem {
+  id: string
+  type: string
+  timestamp: string
+  actor?: string
+  content?: string
+  goals?: string[]
+  reasoning?: string
+  action?: string
+  world_state?: string
+  key_changes?: string[]
+  sender?: string
+  recipients?: string[]
+  turn?: number
 }
 
 /**
