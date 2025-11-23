@@ -19,7 +19,7 @@ Items that need attention for improved robustness, quality, and maintainability.
 - ✅ 10 comprehensive tests for deduplication logic
 
 **Files Modified:**
-- `src/markdown_utils.py`: Added 5 new functions for content deduplication
+- `scenario_lab/utils/markdown_utils.py`: Added 5 new functions for content deduplication
   - `text_similarity()` - Calculate text similarity (0.0-1.0)
   - `extract_section_content()` - Extract content from specific sections
   - `detect_content_duplication()` - Detect if ACTION contains GOALS/REASONING
@@ -69,7 +69,7 @@ Items that need attention for improved robustness, quality, and maintainability.
 - ✅ 11 new integration tests verifying retry behavior
 
 **Files Modified:**
-- `src/api_utils.py`: Enhanced retry logic with logging and context
+- `scenario_lab/utils/api_client.py`: Enhanced retry logic with logging and context
 - `tests/test_api_error_handling.py`: 11 comprehensive tests
 
 **Result:** 140/140 tests passing. Scenarios now gracefully handle transient API failures.
@@ -83,7 +83,7 @@ Items that need attention for improved robustness, quality, and maintainability.
 **Status:** Automated consistency checking implemented in Phase 1
 
 **Implementation:**
-- ✅ QAValidator class in `src/qa_validator.py`
+- ✅ QAValidator class in `scenario_lab/core/qa_validator.py`
 - ✅ Three validation check types:
   - Actor decision consistency (goals/constraints/expertise alignment)
   - World state coherence (logical consequences of actions)
@@ -104,7 +104,7 @@ Items that need attention for improved robustness, quality, and maintainability.
 **Status:** Pydantic schema validation implemented for scenarios and actors
 
 **Implementation:**
-- ✅ Pydantic BaseModel schemas in schemas.py for validation
+- ✅ Pydantic BaseModel schemas in scenario_lab/schemas/ for validation
 - ✅ ScenarioConfig validates all scenario.yaml files
 - ✅ ActorConfig validates all actor YAML files
 - ✅ Backward compatible with current YAML format
@@ -122,10 +122,10 @@ Items that need attention for improved robustness, quality, and maintainability.
 - YAML syntax error detection
 
 **Files Modified:**
-- schemas.py: Updated ActorConfig and ScenarioConfig for current format
-- run_scenario.py: Added validation to load_scenario()
-- actor_engine.py: Added validation to load_actor()
-- requirements.txt: Added pydantic>=2.0
+- scenario_lab/schemas/: Updated ActorConfig and ScenarioConfig for current format
+- scenario_lab/loaders/scenario_loader.py: Added validation to load_scenario()
+- scenario_lab/loaders/actor_loader.py: Added validation to load_actor()
+- pyproject.toml: pydantic>=2.0
 
 **Remaining Future Work:**
 - Background data integration (not critical)
@@ -240,10 +240,10 @@ Items that need attention for improved robustness, quality, and maintainability.
 - ✅ File logging (scenario.log in run directories)
 - ✅ Specialized logging functions (log_section, log_actor_decision, etc.)
 
-**Files Modified:**
-- `src/logging_config.py`: Complete logging infrastructure
-- `src/run_scenario.py`: Replaced 76 print statements with logging
-- `src/api_utils.py`: API error logging with context
+**Files:**
+- `scenario_lab/utils/logging_config.py`: Complete logging infrastructure
+- `scenario_lab/runners/sync_runner.py`: Structured logging
+- `scenario_lab/utils/api_client.py`: API error logging with context
 
 **Result:** Comprehensive logging for debugging and monitoring.
 
@@ -258,7 +258,7 @@ Items that need attention for improved robustness, quality, and maintainability.
 **Implementation:**
 
 **Interactive Config Wizard:**
-- ✅ `src/create_batch_config.py` - Interactive wizard for batch configs
+- ✅ `scenario-lab create-batch` - Interactive wizard for batch configs
 - ✅ Scenario validation and actor detection
 - ✅ LLM model suggestions (7 common models)
 - ✅ Budget validation and warnings
@@ -273,7 +273,7 @@ Items that need attention for improved robustness, quality, and maintainability.
 - ✅ Detailed preview without API calls
 
 **Comprehensive Error Handling:**
-- ✅ `src/error_handler.py` - ErrorHandler with 10 error categories
+- ✅ `scenario_lab/utils/error_handler.py` - ErrorHandler with 10 error categories
 - ✅ 4 severity levels (LOW, MEDIUM, HIGH, FATAL)
 - ✅ User-friendly messages explaining what went wrong
 - ✅ Specific recovery actions with exact commands
@@ -281,20 +281,20 @@ Items that need attention for improved robustness, quality, and maintainability.
 - ✅ Complete guide (`docs/error-handling-guide.md`)
 
 **Progressive Fallback System:**
-- ✅ `src/progressive_fallback.py` - Smart model fallback chains
+- ✅ `scenario_lab/utils/progressive_fallback.py` - Smart model fallback chains
 - ✅ Automatic retry with cheaper models on failure
 - ✅ Conditional fallback (enabled for 404/403/timeout, disabled for auth/budget)
 - ✅ 28 unit tests for fallback logic
 
-**Files Modified:**
-- `src/create_batch_config.py` - Interactive wizard (800+ lines)
-- `src/batch_runner.py` - Dry-run mode and error handling integration
-- `src/error_handler.py` - Error classification and user-friendly messages (650 lines)
-- `src/progressive_fallback.py` - Smart fallback logic (400 lines)
+**Files:**
+- `scenario_lab/interfaces/cli.py` - Interactive wizard via CLI commands
+- `scenario_lab/batch/batch_runner.py` - Dry-run mode and error handling integration
+- `scenario_lab/utils/error_handler.py` - Error classification and user-friendly messages
+- `scenario_lab/utils/progressive_fallback.py` - Smart fallback logic
 - `tests/test_error_handler.py` - 28 tests
 - `tests/test_progressive_fallback.py` - 28 tests
 - `docs/batch-config-wizard-guide.md` - Complete wizard guide
-- `docs/error-handling-guide.md` - Complete error handling guide (500+ lines)
+- `docs/error-handling-guide.md` - Complete error handling guide
 
 **Result:** Significantly improved user experience and reduced configuration errors
 
@@ -307,24 +307,24 @@ Items that need attention for improved robustness, quality, and maintainability.
 **Implementation:**
 
 **Response Caching System:**
-- ✅ `src/response_cache.py` - SHA256-based caching (450 lines)
+- ✅ `scenario_lab/utils/response_cache.py` - SHA256-based caching
 - ✅ Content hash cache keys (model + prompt)
 - ✅ In-memory and disk-backed storage
 - ✅ Configurable TTL (time-to-live)
 - ✅ LRU-style eviction when max entries reached
 - ✅ Cache statistics (hit rate, tokens saved, cost savings)
-- ✅ `src/cache_cli.py` - CLI tool (stats/info/clear commands)
+- ✅ CLI tool (stats/info/clear commands)
 - ✅ 28 comprehensive unit tests
 - ✅ **Result:** 30-70% cost savings in typical batch runs
 
 **HTTP Connection Pooling:**
-- ✅ `src/api_utils.py` - Global HTTP session with connection pooling
+- ✅ `scenario_lab/utils/api_client.py` - Global HTTP session with connection pooling
 - ✅ 10 connection pools, 20 connections per pool
 - ✅ Automatic connection reuse
 - ✅ **Result:** 15-40% speed improvement
 
 **Memory Optimization:**
-- ✅ `src/memory_optimizer.py` - Memory monitoring and management (450 lines)
+- ✅ `scenario_lab/utils/memory_optimizer.py` - Memory monitoring and management
 - ✅ Automatic memory monitoring with psutil
 - ✅ Periodic garbage collection (every 10 runs)
 - ✅ Warnings at 80% and 90% memory usage
@@ -333,22 +333,21 @@ Items that need attention for improved robustness, quality, and maintainability.
 - ✅ **Result:** Prevents OOM errors, reduces memory by 40-60%
 
 **Graceful Degradation:**
-- ✅ `src/graceful_fallback.py` - Fallback for missing dependencies (350 lines)
+- ✅ `scenario_lab/utils/graceful_fallback.py` - Fallback for missing dependencies
 - ✅ SimplifiedConsole, SimplifiedProgress, SimplifiedTable
 - ✅ System works with minimal dependencies (pyyaml, requests, pydantic)
 - ✅ Automatic warnings shown once per missing dependency
 - ✅ 24 unit tests
 
-**Files Modified:**
-- `src/response_cache.py` - Complete caching system (450 lines)
-- `src/cache_cli.py` - Cache management CLI (120 lines)
-- `src/api_utils.py` - Caching and connection pooling integration
-- `src/batch_runner.py` - Cache statistics display
-- `src/memory_optimizer.py` - Memory monitoring and optimization (450 lines)
-- `src/graceful_fallback.py` - Graceful degradation (350 lines)
+**Files:**
+- `scenario_lab/utils/response_cache.py` - Complete caching system
+- `scenario_lab/utils/api_client.py` - Caching and connection pooling integration
+- `scenario_lab/batch/batch_runner.py` - Cache statistics display
+- `scenario_lab/utils/memory_optimizer.py` - Memory monitoring and optimization
+- `scenario_lab/utils/graceful_fallback.py` - Graceful degradation
 - `tests/test_response_cache.py` - 28 tests
 - `tests/test_graceful_fallback.py` - 24 tests
-- `docs/performance-optimizations.md` - Complete performance guide (800+ lines)
+- `docs/performance-optimizations.md` - Complete performance guide
 - `.gitignore` - Added .cache/ exclusion
 
 **Result:**
@@ -368,7 +367,7 @@ Items that need attention for improved robustness, quality, and maintainability.
 **Implementation:**
 
 **Scenario Creation Wizard:**
-- ✅ `src/create_scenario.py` - Interactive wizard with 9-step workflow (750+ lines)
+- ✅ `scenario-lab create` - Interactive CLI wizard with guidance
 - ✅ Complete scenario generation: scenario.yaml, actors/*.yaml, metrics.yaml, validation-rules.yaml
 - ✅ Template support for system prompts, actor definitions, and metrics
 - ✅ Smart defaults with 9 common LLM models (pricing included)
@@ -377,7 +376,7 @@ Items that need attention for improved robustness, quality, and maintainability.
 - ✅ Actor creation with goals, constraints, expertise, decision styles
 - ✅ Metrics configuration with regex and manual extraction
 - ✅ Validation rules setup with model selection
-- ✅ Comprehensive guide (`docs/scenario-creation-guide.md`, 500+ lines)
+- ✅ Comprehensive guide (`docs/scenario-creation-guide.md`)
 - ✅ 6 unit tests in `tests/test_scenario_wizard.py`
 
 **Benefits:**
@@ -387,12 +386,11 @@ Items that need attention for improved robustness, quality, and maintainability.
 - Provides templates for common patterns
 - Makes framework accessible to non-technical users
 
-**Files Modified:**
-- `src/create_scenario.py` - Complete wizard implementation (750 lines)
+**Files:**
+- `scenario_lab/interfaces/cli.py` - CLI commands including `create`
 - `tests/test_scenario_wizard.py` - 6 tests
-- `docs/scenario-creation-guide.md` - Complete user guide (500+ lines)
+- `docs/scenario-creation-guide.md` - Complete user guide
 - `README.md` - Added "Creating Your Own Scenarios" section
-- `ROADMAP.md` - Updated Phase 5 status
 
 **Result:** Significantly improved user experience for scenario creation, 177/177 tests passing
 
