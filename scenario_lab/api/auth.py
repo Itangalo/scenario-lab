@@ -100,3 +100,37 @@ async def optional_api_key(
         )
 
     return api_key
+
+
+def verify_websocket_token(token: Optional[str]) -> bool:
+    """
+    Verify a WebSocket authentication token.
+
+    WebSocket connections cannot use headers for authentication in the same way
+    as REST endpoints, so they use a query parameter token instead.
+
+    Args:
+        token: The authentication token from query parameter
+
+    Returns:
+        True if authentication passes (valid token or auth disabled)
+    """
+    settings = get_settings()
+
+    # Skip authentication if not required
+    if not settings.is_auth_required():
+        logger.debug("WebSocket authentication bypassed (dev_mode or auth disabled)")
+        return True
+
+    # Check if token is provided
+    if not token:
+        logger.warning("WebSocket connection without authentication token")
+        return False
+
+    # Validate the token (using same API keys)
+    if not settings.validate_api_key(token):
+        logger.warning(f"Invalid WebSocket token attempt: {token[:8]}...")
+        return False
+
+    logger.debug("WebSocket token validated successfully")
+    return True

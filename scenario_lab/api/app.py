@@ -31,7 +31,7 @@ from typing import Optional, Dict, Any
 from datetime import datetime
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect, BackgroundTasks, Depends, Request
+from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect, BackgroundTasks, Depends, Request, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response
 from pydantic import BaseModel, Field
@@ -41,7 +41,7 @@ from scenario_lab.runners import SyncRunner
 from scenario_lab.database import Database
 from scenario_lab.core.events import Event, EventType
 from scenario_lab.api.settings import get_settings
-from scenario_lab.api.auth import verify_api_key, optional_api_key
+from scenario_lab.api.auth import verify_api_key, optional_api_key, verify_websocket_token
 from scenario_lab.api.rate_limit import check_rate_limit, get_rate_limiter
 
 logger = logging.getLogger(__name__)
@@ -241,6 +241,53 @@ async def health_check():
     }
 
 
+def _validate_scenario_path(requested_path: str) -> Path:
+    """
+    Validate and resolve scenario path to prevent path traversal attacks.
+
+    Args:
+        requested_path: User-provided scenario path
+
+    Returns:
+        Resolved Path object within allowed directory
+
+    Raises:
+        HTTPException: If path is invalid or outside allowed directories
+    """
+    # Define allowed base directories for scenarios
+    allowed_bases = [
+        Path.cwd() / "scenarios",
+        Path.cwd(),
+    ]
+
+    # Resolve the requested path
+    requested = Path(requested_path)
+
+    # If it's a relative path, resolve it relative to cwd
+    if not requested.is_absolute():
+        resolved = (Path.cwd() / requested).resolve()
+    else:
+        resolved = requested.resolve()
+
+    # Check if resolved path is within any allowed base directory
+    for base in allowed_bases:
+        try:
+            base_resolved = base.resolve()
+            resolved.relative_to(base_resolved)
+            # Path is within this base - now check it exists
+            if resolved.exists():
+                return resolved
+        except ValueError:
+            # Not within this base, try next
+            continue
+
+    # Path is not within any allowed directory or doesn't exist
+    raise HTTPException(
+        status_code=400,
+        detail="Invalid scenario path: must be within allowed directories"
+    )
+
+
 @app.post("/api/scenarios/execute", response_model=ScenarioStatus)
 async def execute_scenario(
     request: ScenarioExecuteRequest,
@@ -252,10 +299,8 @@ async def execute_scenario(
 
     Returns immediately with a scenario_id that can be used to monitor progress.
     """
-    # Validate scenario path
-    scenario_path = Path(request.scenario_path)
-    if not scenario_path.exists():
-        raise HTTPException(status_code=404, detail=f"Scenario not found: {request.scenario_path}")
+    # Validate scenario path (prevents path traversal attacks)
+    scenario_path = _validate_scenario_path(request.scenario_path)
 
     # Generate scenario ID
     scenario_id = f"scenario-{datetime.now().strftime('%Y%m%d-%H%M%S')}"
@@ -533,12 +578,25 @@ async def submit_human_decision(
 
 
 @app.websocket("/api/scenarios/{scenario_id}/stream")
-async def websocket_stream(websocket: WebSocket, scenario_id: str):
+async def websocket_stream(
+    websocket: WebSocket,
+    scenario_id: str,
+    token: Optional[str] = Query(default=None, description="Authentication token (same as API key)"),
+):
     """
     WebSocket endpoint for real-time scenario updates
 
     Streams events as they happen during scenario execution.
+
+    Authentication:
+        Requires a valid API key passed as 'token' query parameter.
+        Example: ws://host/api/scenarios/{id}/stream?token=your-api-key
     """
+    # Verify authentication before accepting connection
+    if not verify_websocket_token(token):
+        await websocket.close(code=1008, reason="Authentication required")
+        return
+
     await websocket.accept()
 
     try:
