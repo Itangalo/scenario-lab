@@ -19,6 +19,7 @@ from typing import Optional
 
 from scenario_lab.models.state import ScenarioState
 from scenario_lab.core.communication_manager import create_communication
+from scenario_lab.core.events import EventBus, EventType, get_event_bus
 
 logger = logging.getLogger(__name__)
 
@@ -39,14 +40,16 @@ class CommunicationPhaseV2:
     - Public statement prompts
     """
 
-    def __init__(self, output_dir: Optional[str] = None):
+    def __init__(self, output_dir: Optional[str] = None, event_bus: Optional[EventBus] = None):
         """
         Initialize communication phase
 
         Args:
             output_dir: Optional directory to export communication files
+            event_bus: Optional EventBus for emitting real-time events
         """
         self.output_dir = output_dir
+        self.event_bus = event_bus or get_event_bus()
 
     async def execute(self, state: ScenarioState) -> ScenarioState:
         """
@@ -75,7 +78,7 @@ class CommunicationPhaseV2:
         if turn_comms:
             logger.info(f"  Found {len(turn_comms)} communications for turn {state.turn}")
 
-            # Log details about each communication type
+            # Log details about each communication type and emit events
             for comm in turn_comms:
                 if comm.type == "coalition":
                     all_members = sorted(set([comm.sender] + comm.recipients))
@@ -96,6 +99,20 @@ class CommunicationPhaseV2:
                     if len(comm.content) > 30:
                         content_preview += "..."
                     logger.info(f"  ✓ Public statement by {comm.sender}: \"{content_preview}\"")
+
+                # Emit communication sent event with full content
+                await self.event_bus.emit(
+                    EventType.COMMUNICATION_SENT,
+                    data={
+                        "id": comm.id,
+                        "turn": comm.turn,
+                        "type": comm.type,
+                        "sender": comm.sender,
+                        "recipients": comm.recipients,
+                        "content": comm.content,
+                    },
+                    source="communication_phase",
+                )
 
             # Export to files if output_dir is set
             if self.output_dir:

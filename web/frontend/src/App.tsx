@@ -43,6 +43,16 @@ function App() {
         if (event.type === 'turn_completed' && event.data.state) {
           updateStatusFromState(event.data.state)
         }
+
+        // Update turn number from turn_started/turn_completed events
+        if ((event.type === 'turn_started' || event.type === 'turn_completed') && event.data.turn !== undefined) {
+          setStatus(prev => prev ? { ...prev, current_turn: event.data.turn! } : prev)
+        }
+
+        // Update cost from cost events
+        if (event.data.cost !== undefined && event.data.cost > 0) {
+          setStatus(prev => prev ? { ...prev, total_cost: prev.total_cost + event.data.cost! } : prev)
+        }
       })
 
       websocket.onerror = (event) => {
