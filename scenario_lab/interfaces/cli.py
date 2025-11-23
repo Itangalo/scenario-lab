@@ -142,11 +142,17 @@ def run(
             reason = event.data.get("reason", "unknown")
             print_warning(f"Scenario halted: {reason}")
 
+        async def on_exogenous_event(event: Event):
+            name = event.data.get("name", "unknown")
+            event_type = event.data.get("event_type", "unknown")
+            console.print(f"  [yellow]\u26a1[/] Exogenous event triggered: [cyan]'{name}'[/] ({event_type})")
+
         # Register handlers
         event_bus.on(EventType.TURN_STARTED, on_turn_start)
         event_bus.on(EventType.PHASE_COMPLETED, on_phase_complete)
         event_bus.on(EventType.CREDIT_LIMIT_WARNING, on_credit_warning)
         event_bus.on(EventType.SCENARIO_HALTED, on_halted)
+        event_bus.on(EventType.EXOGENOUS_EVENT_TRIGGERED, on_exogenous_event)
 
         # Run scenario
         print_section("Running scenario...")

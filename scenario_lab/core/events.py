@@ -66,6 +66,9 @@ class EventType(str, Enum):
     VALIDATION_COMPLETED = "validation_completed"
     VALIDATION_FAILED = "validation_failed"
 
+    # Exogenous events
+    EXOGENOUS_EVENT_TRIGGERED = "exogenous_event_triggered"
+
     # Persistence events
     STATE_SAVED = "state_saved"
     STATE_LOADED = "state_loaded"

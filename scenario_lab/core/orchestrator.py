@@ -291,6 +291,19 @@ class ScenarioOrchestrator:
                     new_metadata = {**state.metadata, "exogenous_events": events_for_world_update}
                     state = replace(state, metadata=new_metadata)
 
+                    # Emit event for each triggered exogenous event
+                    for evt in triggered_events:
+                        await self.event_bus.emit(
+                            EventType.EXOGENOUS_EVENT_TRIGGERED,
+                            data={
+                                "turn": turn,
+                                "name": evt.name,
+                                "description": evt.description,
+                                "event_type": getattr(evt, "event_type", "unknown"),
+                            },
+                            source="orchestrator",
+                        )
+
                 # Update triggered event IDs in state
                 state = state.with_triggered_events(
                     self.exogenous_event_manager.get_triggered_event_ids()
