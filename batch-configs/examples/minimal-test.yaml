@@ -1,0 +1,6 @@
+experiment_name: "test-batch"
+base_scenario: "scenarios/example-minimal-template"
+output_dir: "output/test-batch"
+runs_per_variation: 3
+max_parallel: 1
+budget_limit: 1.0

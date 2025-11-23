@@ -72,6 +72,10 @@ temp/
 notes/*
 !notes/.gitkeep
 
+# Batch configs - only include examples in repo
+batch-configs/*
+!batch-configs/examples/
+
 # Personal scenarios - only include example scenarios in repo
 scenarios/*
 !scenarios/example-policy-negotiation/
