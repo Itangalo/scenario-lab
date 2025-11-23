@@ -31,7 +31,7 @@ from typing import Optional, Dict, Any
 from datetime import datetime
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect, BackgroundTasks, Depends, Request
+from fastapi import FastAPI, HTTPException, WebSocket, WebSocketDisconnect, BackgroundTasks, Depends, Request, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import Response
 from pydantic import BaseModel, Field
@@ -41,7 +41,7 @@ from scenario_lab.runners import SyncRunner
 from scenario_lab.database import Database
 from scenario_lab.core.events import Event, EventType
 from scenario_lab.api.settings import get_settings
-from scenario_lab.api.auth import verify_api_key, optional_api_key
+from scenario_lab.api.auth import verify_api_key, optional_api_key, verify_websocket_token
 from scenario_lab.api.rate_limit import check_rate_limit, get_rate_limiter
 
 logger = logging.getLogger(__name__)
@@ -578,12 +578,25 @@ async def submit_human_decision(
 
 
 @app.websocket("/api/scenarios/{scenario_id}/stream")
-async def websocket_stream(websocket: WebSocket, scenario_id: str):
+async def websocket_stream(
+    websocket: WebSocket,
+    scenario_id: str,
+    token: Optional[str] = Query(default=None, description="Authentication token (same as API key)"),
+):
     """
     WebSocket endpoint for real-time scenario updates
 
     Streams events as they happen during scenario execution.
+
+    Authentication:
+        Requires a valid API key passed as 'token' query parameter.
+        Example: ws://host/api/scenarios/{id}/stream?token=your-api-key
     """
+    # Verify authentication before accepting connection
+    if not verify_websocket_token(token):
+        await websocket.close(code=1008, reason="Authentication required")
+        return
+
     await websocket.accept()
 
     try:
