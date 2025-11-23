@@ -107,6 +107,9 @@ class WorldUpdatePhaseV2:
         # Get exogenous events from state metadata (set by orchestrator)
         exogenous_events = state.metadata.get("exogenous_events", None)
 
+        # Get turn_duration from scenario config
+        turn_duration = state.scenario_config.get("turn_duration")
+
         # Build prompts using synthesizer
         system_prompt = self.synthesizer.build_system_prompt()
         user_prompt = self.synthesizer.build_user_prompt(
@@ -114,7 +117,8 @@ class WorldUpdatePhaseV2:
             turn=state.turn,
             total_turns=total_turns,
             actor_decisions=actor_decisions_for_update,
-            exogenous_events=exogenous_events
+            exogenous_events=exogenous_events,
+            turn_duration=turn_duration
         )
 
         # Build messages for LLM

@@ -82,7 +82,8 @@ Do NOT skip any sections. Do NOT merge sections together."""
         turn: int,
         total_turns: int,
         actor_decisions: Dict[str, Dict[str, str]],
-        exogenous_events: Optional[List[Dict[str, str]]] = None
+        exogenous_events: Optional[List[Dict[str, str]]] = None,
+        turn_duration: Optional[str] = None
     ) -> str:
         """
         Build user prompt with current state and actor decisions
@@ -93,6 +94,7 @@ Do NOT skip any sections. Do NOT merge sections together."""
             total_turns: Total number of turns
             actor_decisions: Dict of {actor_name: {action, reasoning}} for this turn
             exogenous_events: Optional list of background events (Phase 1.3: stub)
+            turn_duration: How long each turn represents (e.g., "6 months", "1 week")
 
         Returns:
             User prompt string
@@ -112,8 +114,13 @@ Do NOT skip any sections. Do NOT merge sections together."""
                 events_text += f"**{event.get('name', 'Event')}:** {event.get('description', '')}\n\n"
             events_text += "---\n\n"
 
-        prompt = f"""## Current World State (Turn {turn} of {total_turns})
+        # Build temporal context
+        temporal_context = ""
+        if turn_duration:
+            temporal_context = f"\n**Time Progression:** Each turn represents {turn_duration}. Ensure that time references in the world state reflect this progression (e.g., if Turn 1 starts in January 2026 and each turn is 6 months, Turn 2 should reflect July 2026).\n"
 
+        prompt = f"""## Current World State (Turn {turn} of {total_turns})
+{temporal_context}
 {current_state}
 
 ---
