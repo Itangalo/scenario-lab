@@ -16,7 +16,7 @@
 ## Configuration
 
 **Scenario Configuration:**
-- Base scenario: `scenarios/ai-2027/definition/scenario.yaml`
+- Base scenario: `scenarios/ai-2027/scenario.yaml`
 - Turns simulated: [X turns, covering Y months]
 - Actors: 7 (OpenBrain CEO, Alignment Lead, US President, US Advisor, DeepCent CEO, CCP Secretary, Independent Researcher)
 - Models used: [List actor models]

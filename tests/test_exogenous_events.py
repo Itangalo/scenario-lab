@@ -458,7 +458,6 @@ class TestExogenousEventsLoader:
         # Create scenario directory without exogenous-events.yaml
         scenario_dir = tmp_path / "test-scenario"
         scenario_dir.mkdir()
-        (scenario_dir / "definition").mkdir()
 
         result = load_exogenous_events(scenario_dir)
         assert result is None
@@ -466,11 +465,10 @@ class TestExogenousEventsLoader:
     def test_load_valid_events_file(self, tmp_path):
         """Test loading valid events file"""
         scenario_dir = tmp_path / "test-scenario"
-        definition_dir = scenario_dir / "definition"
-        definition_dir.mkdir(parents=True)
+        scenario_dir.mkdir(parents=True)
 
-        # Create events file
-        events_file = definition_dir / "exogenous-events.yaml"
+        # Create events file in scenario root
+        events_file = scenario_dir / "exogenous-events.yaml"
         events_file.write_text("""
 exogenous_events:
   - type: trend
@@ -491,10 +489,10 @@ exogenous_events:
     def test_load_with_triggered_events(self, tmp_path):
         """Test loading with pre-existing triggered events"""
         scenario_dir = tmp_path / "test-scenario"
-        definition_dir = scenario_dir / "definition"
-        definition_dir.mkdir(parents=True)
+        scenario_dir.mkdir(parents=True)
 
-        events_file = definition_dir / "exogenous-events.yaml"
+        # Create events file in scenario root
+        events_file = scenario_dir / "exogenous-events.yaml"
         events_file.write_text("""
 exogenous_events:
   - type: random
@@ -514,10 +512,10 @@ exogenous_events:
     def test_load_invalid_yaml_raises_error(self, tmp_path):
         """Test that invalid YAML raises error"""
         scenario_dir = tmp_path / "test-scenario"
-        definition_dir = scenario_dir / "definition"
-        definition_dir.mkdir(parents=True)
+        scenario_dir.mkdir(parents=True)
 
-        events_file = definition_dir / "exogenous-events.yaml"
+        # Create events file in scenario root
+        events_file = scenario_dir / "exogenous-events.yaml"
         events_file.write_text("invalid: yaml: content: [")
 
         with pytest.raises(ValueError, match="Invalid YAML"):
@@ -526,10 +524,10 @@ exogenous_events:
     def test_load_invalid_schema_raises_error(self, tmp_path):
         """Test that invalid event schema raises error"""
         scenario_dir = tmp_path / "test-scenario"
-        definition_dir = scenario_dir / "definition"
-        definition_dir.mkdir(parents=True)
+        scenario_dir.mkdir(parents=True)
 
-        events_file = definition_dir / "exogenous-events.yaml"
+        # Create events file in scenario root
+        events_file = scenario_dir / "exogenous-events.yaml"
         events_file.write_text("""
 exogenous_events:
   - type: trend

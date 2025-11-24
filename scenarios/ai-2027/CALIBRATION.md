@@ -307,6 +307,6 @@ All calibration runs should document:
 ## Related Documents
 
 - `scenarios/ai-2027/README.md` - Scenario overview
-- `scenarios/ai-2027/definition/scenario.yaml` - Scenario configuration
-- `scenarios/ai-2027/definition/actors/*.yaml` - Actor definitions
+- `scenarios/ai-2027/scenario.yaml` - Scenario configuration
+- `scenarios/ai-2027/actors/*.yaml` - Actor definitions
 - `docs/scenario-creation-guide.md` - Scenario design guidance

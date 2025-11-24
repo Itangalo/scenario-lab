@@ -207,7 +207,7 @@ PydanticDeprecatedSince20: The `dict` method is deprecated; use `model_dump` ins
 ### High Priority
 
 **1. Add Format Instructions to All Actors**
-Location: `scenarios/ai-2027/definition/actors/*.yaml`
+Location: `scenarios/ai-2027/actors/*.yaml`
 
 Add to system_prompt:
 ```

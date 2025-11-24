@@ -1,7 +1,7 @@
 """
 Loader for exogenous events configuration
 
-Loads exogenous events from YAML files in scenario definition directories.
+Loads exogenous events from YAML files in scenario directories.
 """
 from __future__ import annotations
 import logging
@@ -21,10 +21,10 @@ def load_exogenous_events(
     random_seed: Optional[int] = None,
 ) -> Optional[ExogenousEventManager]:
     """
-    Load exogenous events from scenario definition directory
+    Load exogenous events from scenario directory
 
     Args:
-        scenario_path: Path to scenario directory (containing definition/ folder)
+        scenario_path: Path to scenario directory (containing exogenous-events.yaml)
         triggered_event_ids: Set of event IDs that have already triggered (for resume)
         random_seed: Optional seed for reproducible random events
 
@@ -39,9 +39,8 @@ def load_exogenous_events(
     if not scenario_path.exists():
         raise FileNotFoundError(f"Scenario path not found: {scenario_path}")
 
-    # Look for exogenous-events.yaml in definition directory
-    definition_dir = scenario_path / "definition"
-    events_file = definition_dir / "exogenous-events.yaml"
+    # Look for exogenous-events.yaml in scenario root directory
+    events_file = scenario_path / "exogenous-events.yaml"
 
     if not events_file.exists():
         logger.debug(f"No exogenous events file found at {events_file}")

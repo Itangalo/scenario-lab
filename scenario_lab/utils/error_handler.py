@@ -549,7 +549,7 @@ class ErrorHandler:
         actions = [
             RecoveryAction(
                 "Review example scenario configurations",
-                command="ls scenarios/*/definition/",
+                command="ls scenarios/*/scenario.yaml",
                 priority=1
             ),
             RecoveryAction(

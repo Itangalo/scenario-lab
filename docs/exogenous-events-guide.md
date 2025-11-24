@@ -12,7 +12,7 @@ Exogenous events include:
 
 ## Configuration
 
-Create an `exogenous-events.yaml` file in your scenario's definition directory:
+Create an `exogenous-events.yaml` file in your scenario directory:
 
 ```yaml
 exogenous_events:
@@ -205,6 +205,6 @@ Check the world state markdown files to see how events were integrated into the 
 
 ## See Also
 
-- AI 2027 scenario: `scenarios/ai-2027/definition/exogenous-events.yaml`
-- Event manager code: `src/exogenous_events.py`
-- World state updater: `src/world_state_updater.py`
+- AI 2027 scenario: `scenarios/ai-2027/exogenous-events.yaml`
+- Event manager code: `scenario_lab/services/exogenous_events_manager.py`
+- Exogenous events loader: `scenario_lab/loaders/exogenous_events_loader.py`
