@@ -394,6 +394,9 @@ class Simulation:
         Raises:
             ValueError: If validation fails
         """
+        if self.scenario_methods is None:
+            self.logger.info("No scenario methods configured, skipping")
+            return
         self.logger.info("Validating actions")
 
         for action in turn_actions.actions:
@@ -417,6 +420,9 @@ class Simulation:
             turn: Current turn number
             turn_actions: Actions to execute
         """
+        if self.scenario_methods is None:
+            self.logger.info("No scenario methods configured, skipping")
+            return
         self.logger.info("Executing actions")
 
         for action in turn_actions.actions:
