@@ -48,6 +48,10 @@ def setup_logging(scenario_name: str, run_id: str, log_dir: Optional[Path] = Non
     logger = logging.getLogger(f"scenario_lab.{run_id}")
     logger.setLevel(logging.DEBUG)
 
+    # Remove any existing handlers to prevent duplication
+    for handler in logger.handlers[:]:
+        logger.removeHandler(handler)
+
     # File handler (detailed)
     file_handler = logging.FileHandler(log_file)
     file_handler.setLevel(logging.DEBUG)

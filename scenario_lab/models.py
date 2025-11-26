@@ -216,11 +216,19 @@ class MetricsConfig(BaseModel):
 
 
 class ExogenousEvent(BaseModel):
-    """An exogenous event that occurs at a specific turn."""
+    """
+    An exogenous event that occurs at a specific turn.
+
+    Events can be:
+    - Scheduled: Occur at a specific turn
+    - Conditional: Occur when certain conditions are met
+    """
     turn: int
-    title: str
+    name: str
     description: str
     effects: Dict[str, Any] = Field(default_factory=dict)
+    scheduled: bool = True  # If False, event is conditional
+    conditional: Optional[Dict[str, Any]] = None  # Conditions for conditional events
 
 
 class EventsConfig(BaseModel):

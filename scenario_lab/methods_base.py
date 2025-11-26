@@ -164,18 +164,37 @@ class ScenarioMethods(ABC):
             update_metric(state, "world.global_temperature", 1.3)
             update_metric(state, "actors.USA.private.military_capacity", 90)
         """
+        from .models import ActorMetricsData
+
         parts = path.split(".")
-        current = state.metrics
 
-        # Navigate to the parent of the target
-        for part in parts[:-1]:
-            if part not in current:
-                current[part] = {}
-            current = current[part]
+        if parts[0] == "world":
+            # World metric: world.metric_name
+            metric_name = ".".join(parts[1:])
+            state.metrics.world[metric_name] = value
+            logger.debug(f"Updated metric: {path} = {value}")
 
-        # Set the value
-        current[parts[-1]] = value
-        logger.debug(f"Updated metric: {path} = {value}")
+        elif parts[0] == "actors" and len(parts) >= 4:
+            # Actor metric: actors.ActorName.public/private.metric_name
+            actor_name = parts[1]
+            visibility = parts[2]  # "public" or "private"
+            metric_name = ".".join(parts[3:])  # Handle nested metrics
+
+            # Ensure actor metrics exist
+            if actor_name not in state.metrics.actors:
+                state.metrics.actors[actor_name] = ActorMetricsData()
+
+            if visibility == "private":
+                state.metrics.actors[actor_name].private[metric_name] = value
+            elif visibility == "public":
+                state.metrics.actors[actor_name].public[metric_name] = value
+            else:
+                logger.warning(f"Unknown visibility level: {visibility}")
+                return
+
+            logger.debug(f"Updated metric: {path} = {value}")
+        else:
+            logger.warning(f"Unrecognized metric path: {path}")
 
     def modify_metric(
         self,
@@ -191,22 +210,42 @@ class ScenarioMethods(ABC):
             path: Dot-separated path to metric
             delta: Amount to add (can be negative)
         """
+        from .models import ActorMetricsData
+
         parts = path.split(".")
-        current = state.metrics
 
-        # Navigate to the parent of the target
-        for part in parts[:-1]:
-            if part not in current:
-                current[part] = {}
-            current = current[part]
+        if parts[0] == "world":
+            # World metric: world.metric_name
+            metric_name = ".".join(parts[1:])
+            current_value = state.metrics.world.get(metric_name, 0)
+            new_value = current_value + delta
+            state.metrics.world[metric_name] = new_value
+            logger.debug(f"Modified metric: {path} {current_value} -> {new_value} (delta: {delta})")
 
-        # Get current value and add delta
-        key = parts[-1]
-        current_value = current.get(key, 0)
-        new_value = current_value + delta
-        current[key] = new_value
+        elif parts[0] == "actors" and len(parts) >= 4:
+            # Actor metric: actors.ActorName.public/private.metric_name
+            actor_name = parts[1]
+            visibility = parts[2]  # "public" or "private"
+            metric_name = ".".join(parts[3:])  # Handle nested metrics
 
-        logger.debug(f"Modified metric: {path} {current_value} -> {new_value} (delta: {delta})")
+            # Ensure actor metrics exist
+            if actor_name not in state.metrics.actors:
+                state.metrics.actors[actor_name] = ActorMetricsData()
+
+            if visibility == "private":
+                metrics_dict = state.metrics.actors[actor_name].private
+            elif visibility == "public":
+                metrics_dict = state.metrics.actors[actor_name].public
+            else:
+                logger.warning(f"Unknown visibility level: {visibility}")
+                return
+
+            current_value = metrics_dict.get(metric_name, 0)
+            new_value = current_value + delta
+            metrics_dict[metric_name] = new_value
+            logger.debug(f"Modified metric: {path} {current_value} -> {new_value} (delta: {delta})")
+        else:
+            logger.warning(f"Unrecognized metric path: {path}")
 
     def set_outcome_flag(
         self,

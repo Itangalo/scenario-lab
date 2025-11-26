@@ -5,7 +5,7 @@ A hybrid architecture combining LLM narrative generation with deterministic
 Python logic for complex strategic simulations.
 """
 
-from .engine import Simulation, SimulationEngine
+from .engine import Simulation
 from .models import (
     Actor,
     WorldState,
@@ -27,7 +27,6 @@ __version__ = "3.0.0"
 
 __all__ = [
     "Simulation",
-    "SimulationEngine",
     "Actor",
     "WorldState",
     "ActorView",
