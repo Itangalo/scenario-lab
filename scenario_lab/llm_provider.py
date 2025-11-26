@@ -32,7 +32,7 @@ class LLMRateLimitError(LLMResponseError):
 class LLMProvider(Protocol):
     """Protocol for LLM providers."""
 
-    def complete(
+    async def complete(
         self,
         messages: List[Dict[str, str]],
         model: str,
@@ -57,9 +57,12 @@ class OpenRouterProvider:
     OpenRouter API provider.
     """
 
-    def __init__(self, api_key: str, base_url: str = "https://openrouter.ai/api/v1"):
+    def __init__(self, api_key: str, base_url: str = "https://openrouter.ai/api/v1", 
+                 temperature: float = 0.7, max_tokens: int = 2000):
         self.api_key = api_key
         self.base_url = base_url
+        self.temperature = temperature
+        self.max_tokens = max_tokens
         self.client = httpx.AsyncClient(
             headers={"Authorization": f"Bearer {self.api_key}"},
             timeout=60.0,
@@ -83,6 +86,8 @@ class OpenRouterProvider:
                         "model": model,
                         "messages": messages,
                         "response_format": response_format,
+                        "temperature": self.temperature,
+                        "max_tokens": self.max_tokens,
                     },
                 )
                 response.raise_for_status()
@@ -119,8 +124,11 @@ class LocalProvider:
     Local model provider.
     """
 
-    def __init__(self, base_url: str = "http://localhost:11434/v1"):
+    def __init__(self, base_url: str = "http://localhost:11434/v1", 
+                 temperature: float = 0.7, max_tokens: int = 2000):
         self.base_url = base_url
+        self.temperature = temperature
+        self.max_tokens = max_tokens
         self.client = httpx.AsyncClient(timeout=60.0)
 
     async def complete(
@@ -137,6 +145,8 @@ class LocalProvider:
                     "model": model,
                     "messages": messages,
                     "response_format": response_format,
+                    "temperature": self.temperature,
+                    "max_tokens": self.max_tokens,
                 },
             )
             response.raise_for_status()
@@ -249,9 +259,16 @@ def get_provider(config: LLMConfig, scenario_config: Dict, cli_provider: Optiona
         api_key = os.environ.get(config.api_key_env)
         if not api_key:
             raise ValueError(f"API key env var {config.api_key_env} not set.")
-        return OpenRouterProvider(api_key=api_key)
+        return OpenRouterProvider(
+            api_key=api_key,
+            temperature=config.temperature,
+            max_tokens=config.max_tokens
+        )
     elif provider_type == "local":
-        return LocalProvider()
+        return LocalProvider(
+            temperature=config.temperature,
+            max_tokens=config.max_tokens
+        )
     elif provider_type == "mock":
         return MockProvider(config, scenario_config)
     else:
