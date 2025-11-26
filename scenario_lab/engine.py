@@ -463,15 +463,11 @@ class Simulation:
         self.logger.info("Validating actions")
 
         for action in turn_actions.actions:
-            is_valid, error_msg = self.scenario_methods.validate_actor_actions(
-                action.actor,
-                action.function_calls,
-                self.world_state
-            )
-
-            if not is_valid:
-                self.logger.error(f"Validation failed: {error_msg}")
-                raise ValueError(f"Action validation failed: {error_msg}")
+            for function_call in action.function_calls:
+                if not self.scenario_methods.validate_action(action.actor, function_call.model_dump(), self.world_state):
+                    error_msg = f"Action validation failed for {action.actor}: {function_call.name}"
+                    self.logger.error(error_msg)
+                    raise ValueError(error_msg)
 
         self.logger.info("All actions validated")
 
@@ -495,7 +491,7 @@ class Simulation:
                 try:
                     interpretations = self.scenario_methods.execute_action(
                         action.actor,
-                        function_call,
+                        function_call.model_dump(),
                         self.world_state
                     )
 

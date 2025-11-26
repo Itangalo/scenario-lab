@@ -152,6 +152,35 @@ class WorldState(BaseModel):
             self.relationship_state[key] = RelationshipState()
         return self.relationship_state[key]
 
+    def get_metric(self, actor: Optional[str], key: str) -> float:
+        """Gets a metric from the world state."""
+        if actor is None:
+            return self.metrics.world.get(key, 0.0)
+        
+        # For now, assume public metrics
+        # A more robust implementation would handle public/private
+        return self.metrics.actors.get(actor, ActorMetricsData()).public.get(key, 0.0)
+
+    def set_metric(self, actor: Optional[str], key: str, value: float):
+        """Sets a metric in the world state."""
+        if actor is None:
+            self.metrics.world[key] = value
+        else:
+            if actor not in self.metrics.actors:
+                self.metrics.actors[actor] = ActorMetricsData()
+            # For now, assume public metrics
+            self.metrics.actors[actor].public[key] = value
+            
+    def add_fact(self, fact: str, source: str = "unknown"):
+        """Adds a fact to the fact ledger."""
+        # A real implementation would get the turn from the engine
+        entry = FactLedgerEntry(timestamp="Turn X", fact=fact, source=source)
+        self.fact_ledger.append(entry)
+
+    def set_outcome_flag(self, key: str, value: Any):
+        """Sets an outcome flag."""
+        self.outcome_flags[key] = value
+
 
 class ActorView(BaseModel):
     """

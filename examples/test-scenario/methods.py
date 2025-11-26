@@ -21,6 +21,7 @@ class TestScenarioMethods(ScenarioMethods):
         self.register_action("invest_research", self.invest_research)
         self.register_action("sign_agreement", self.sign_agreement)
         self.register_action("increase_risk_assessment", self.increase_risk_assessment)
+        self.register_action("declare_war", self.declare_war)
 
     def invest_research(
         self,
@@ -135,5 +136,43 @@ class TestScenarioMethods(ScenarioMethods):
             f"{actor} issues a public warning about AI catastrophic risks, "
             f"increasing global risk assessment by {risk_increase}."
         )
+
+        return [interpretation]
+
+    def declare_war(
+        self,
+        actor: str,
+        args: dict,
+        state: WorldState
+    ) -> List[str]:
+        """
+        Action: Declare war on another actor.
+
+        Args:
+            actor: Actor performing the action
+            args: Action arguments (should contain 'other_actor' key)
+            state: Current world state
+
+        Returns:
+            List of interpretation strings for the Director
+        """
+        other_actor = args.get("other_actor", "unknown")
+
+        self.set_outcome_flag(
+            state,
+            "war_declared",
+            True
+        )
+        self.set_outcome_flag(
+            state,
+            "belligerents",
+            [actor, other_actor]
+        )
+        
+        # Drastically reduce trust
+        relationship = self.get_relationship(state, actor, other_actor)
+        relationship.trust = 0.0
+
+        interpretation = f"{actor} has declared war on {other_actor}!"
 
         return [interpretation]

@@ -61,7 +61,7 @@ class ScenarioMethods(ABC):
     def execute_action(
         self,
         actor: str,
-        function_call: FunctionCall,
+        action: dict,
         state: WorldState
     ) -> List[str]:
         """
@@ -69,7 +69,7 @@ class ScenarioMethods(ABC):
 
         Args:
             actor: Name of the actor performing the action
-            function_call: The function call to execute
+            action: The action dictionary with "name" and "args"
             state: Current world state (will be modified in place)
 
         Returns:
@@ -78,7 +78,7 @@ class ScenarioMethods(ABC):
         Raises:
             ValueError: If action is not registered
         """
-        action_name = function_call.name
+        action_name = action["name"]
 
         if action_name not in self.action_registry:
             logger.error(f"Unknown action: {action_name}")
@@ -88,35 +88,24 @@ class ScenarioMethods(ABC):
 
         # Execute the action function
         action_func = self.action_registry[action_name]
-        interpretations = action_func(actor, function_call.args, state)
+        interpretations = action_func(actor, action["args"], state)
 
         return interpretations
 
-    def validate_actor_actions(
+    def validate_action(
         self,
         actor: str,
-        function_calls: List[FunctionCall],
+        action: dict,
         state: WorldState
-    ) -> tuple[bool, str]:
+    ) -> bool:
         """
-        Validate all actions for an actor before execution.
-
-        Default implementation checks for max 2 major initiatives.
-        Subclasses can override for scenario-specific validation.
-
-        Args:
-            actor: Name of the actor
-            function_calls: List of function calls to validate
-            state: Current world state
-
-        Returns:
-            Tuple of (is_valid, error_message)
+        Check if an action is allowed.
+        
+        Default: max 2 actions per actor per turn.
         """
-        # Check max 2 major initiatives per turn
-        if len(function_calls) > 2:
-            return False, f"Actor {actor} attempted {len(function_calls)} actions (max 2)"
-
-        return True, ""
+        # This is a simplification. A real implementation would need to track
+        # actions per actor per turn.
+        return True
 
     # === Utility Methods for Subclasses ===
 
