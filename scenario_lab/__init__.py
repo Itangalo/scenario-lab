@@ -21,7 +21,7 @@ from .models import (
     FactLedgerEntry,
 )
 from .methods_base import ScenarioMethods
-from .llm_provider import create_provider
+from .llm_provider import get_provider
 
 __version__ = "3.0.0"
 
@@ -40,5 +40,5 @@ __all__ = [
     "RelationshipState",
     "FactLedgerEntry",
     "ScenarioMethods",
-    "create_provider",
+    "get_provider",
 ]

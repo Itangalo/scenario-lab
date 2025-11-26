@@ -25,7 +25,6 @@ from .models import (
     EventsConfig,
     FunctionCall,
 )
-from .llm_provider import LLMProvider, create_provider
 from .methods_base import ScenarioMethods
 from .utils import (
     setup_logging,
@@ -90,7 +89,8 @@ class Simulation:
 
         # Initialize LLM provider
         self.logger.info(f"Initializing LLM provider: {self.config.llm.provider}")
-        self.llm_provider = create_provider(self.config.llm)
+        from .llm_provider import get_provider
+        self.llm_provider = get_provider(self.config.llm, self.config.model_dump())
 
         # Initialize world state
         self.world_state = self._initialize_world_state()
@@ -340,22 +340,48 @@ class Simulation:
         previous_messages: List[Message]
     ) -> CommunicationRound:
         """
-        Run a communication phase.
-
-        Args:
-            turn: Current turn number
-            phase: Phase number (1 or 2)
-            actor_views: Actor views for this turn
-            previous_messages: Messages from previous phase (for phase 2)
-
-        Returns:
-            CommunicationRound with all messages
+        Run a communication phase using the LLM provider.
         """
-        # TODO: Implement LLM-based communication
-        # For MVP, return empty communication round
-        self.logger.info(f"Communication phase {phase} (stub)")
+        self.logger.info(f"Running communication phase {phase}")
+        all_new_messages = []
 
-        return CommunicationRound(phase=phase, messages=[])
+        for actor_name, actor_view in actor_views.items():
+            system_prompt = self._construct_prompt(actor_name, f"Phase {phase}")
+            
+            # Simple user prompt for now
+            user_prompt = f"You are {actor_name}. Here is your view of the world:\n{actor_view.model_dump_json(indent=2)}"
+
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ]
+
+            response_str = self.llm_provider.complete(messages, self.config.llm.model)
+            
+            try:
+                import json
+                response_data = json.loads(response_str)
+                
+                for msg_data in response_data.get("messages", []):
+                    new_message = Message(
+                        from_actor=actor_name,
+                        to_actor=msg_data["to"],
+                        content=msg_data["content"],
+                        turn=turn,
+                        phase=phase,
+                    )
+                    all_new_messages.append(new_message)
+                    self.logger.info(f"Message from {actor_name} to {msg_data['to']}: {msg_data['content']}")
+
+            except json.JSONDecodeError:
+                self.logger.error(f"Failed to decode LLM response for {actor_name}: {response_str}")
+
+        return CommunicationRound(phase=phase, messages=all_new_messages)
+
+    def _construct_prompt(self, actor_name: str, phase: str) -> str:
+        """Constructs the system prompt for the LLM."""
+        # This is a simplified prompt for now.
+        return f"You are {actor_name}, an actor in a simulation. It is now {phase}. Your goal is to act in your own best interest."
 
     # === Execution Phase Methods ===
 
@@ -366,21 +392,44 @@ class Simulation:
         all_messages: List[Message]
     ) -> TurnActions:
         """
-        Run the execution phase where actors take actions.
-
-        Args:
-            turn: Current turn number
-            actor_views: Actor views for this turn
-            all_messages: All messages from both communication phases
-
-        Returns:
-            TurnActions with all actor actions
+        Run the execution phase where actors take actions using the LLM provider.
         """
-        # TODO: Implement LLM-based action generation
-        # For MVP, return empty actions
-        self.logger.info("Execution phase (stub)")
+        self.logger.info("Running execution phase")
+        all_actions = []
 
-        return TurnActions(turn=turn, actions=[])
+        for actor_name, actor_view in actor_views.items():
+            system_prompt = self._construct_prompt(actor_name, "Phase 3")
+            
+            # Simple user prompt for now
+            user_prompt = f"You are {actor_name}. Here is your view of the world:\n{actor_view.model_dump_json(indent=2)}\n"
+            user_prompt += f"Here are all messages from the communication phases:\n{all_messages}"
+
+            messages = [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt},
+            ]
+
+            response_str = self.llm_provider.complete(messages, self.config.llm.model, response_format={"type": "json_object"})
+            
+            try:
+                import json
+                response_data = json.loads(response_str)
+                
+                function_calls = [FunctionCall(**call) for call in response_data.get("actions", [])]
+
+                new_action = ActorAction(
+                    actor=actor_name,
+                    narrative=response_data.get("reasoning", ""),
+                    function_calls=function_calls,
+                    updated_goals=response_data.get("next_turn_goals", []),
+                )
+                all_actions.append(new_action)
+                self.logger.info(f"Action for {actor_name}: {new_action.narrative}")
+
+            except json.JSONDecodeError:
+                self.logger.error(f"Failed to decode LLM response for {actor_name}: {response_str}")
+
+        return TurnActions(turn=turn, actions=all_actions)
 
     # === Post-Turn Methods ===
 

@@ -42,7 +42,7 @@ def main():
 
     print(f"\nSimulation complete!")
     print(f"Run ID: {sim.run_id}")
-    print(f"Output: {sim.scenario_path}/runs/{sim.run_id}/")
+    print(f"Output: {sim.scenario_dir}/runs/{sim.run_id}/")
 
 
 if __name__ == "__main__":

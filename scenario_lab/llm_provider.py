@@ -1,281 +1,140 @@
 """
 LLM Provider abstraction for Scenario Lab V3.
-
-Provides a unified interface for multiple LLM backends:
-- OpenRouter (primary): Claude, GPT, Llama, etc.
-- Local: Ollama, llama.cpp, etc.
 """
 
-import os
 import json
 import logging
-from abc import ABC, abstractmethod
-from typing import Dict, Any, List, Optional
-from dataclasses import dataclass
+import random
+from typing import List, Dict, Protocol, Optional
 
 from .models import LLMConfig
 
-
 logger = logging.getLogger(__name__)
 
+class LLMProvider(Protocol):
+    """Protocol for LLM providers."""
 
-@dataclass
-class LLMResponse:
-    """Standardized response from an LLM provider."""
-    content: str
-    model: str
-    usage: Dict[str, int]
-    raw_response: Dict[str, Any]
-    function_calls: List[Dict[str, Any]] = None  # For structured outputs
-
-
-class LLMProvider(ABC):
-    """Abstract base class for LLM providers."""
-
-    def __init__(self, config: LLMConfig):
-        """
-        Initialize the provider with configuration.
-
-        Args:
-            config: LLM configuration from scenario.yaml
-        """
-        self.config = config
-        self.model = config.model
-        self.temperature = config.temperature
-        self.max_tokens = config.max_tokens
-
-    @abstractmethod
-    def generate(
+    def complete(
         self,
-        system_prompt: str,
-        user_prompt: str,
-        temperature: Optional[float] = None,
-        max_tokens: Optional[int] = None,
-    ) -> LLMResponse:
+        messages: List[Dict[str, str]],
+        model: str,
+        response_format: Optional[Dict] = None,
+    ) -> str:
         """
         Generate a response from the LLM.
 
         Args:
-            system_prompt: System/instruction prompt
-            user_prompt: User/task prompt
-            temperature: Optional override for temperature
-            max_tokens: Optional override for max tokens
+            messages: A list of messages in the conversation history.
+            model: The model to use for the completion.
+            response_format: An optional dictionary specifying the response format (e.g., for JSON mode).
 
         Returns:
-            LLMResponse with content and metadata
+            The LLM's response as a string.
         """
-        pass
+        ...
 
-    @abstractmethod
-    def generate_with_functions(
-        self,
-        system_prompt: str,
-        user_prompt: str,
-        functions: List[Dict[str, Any]],
-        temperature: Optional[float] = None,
-        max_tokens: Optional[int] = None,
-    ) -> LLMResponse:
-        """
-        Generate a response with function calling capability.
-
-        Args:
-            system_prompt: System/instruction prompt
-            user_prompt: User/task prompt
-            functions: List of function definitions for structured output
-            temperature: Optional override for temperature
-            max_tokens: Optional override for max tokens
-
-        Returns:
-            LLMResponse with content and function calls
-        """
-        pass
-
-
-class OpenRouterProvider(LLMProvider):
-    """
-    OpenRouter API provider.
-
-    Supports Claude, GPT, Llama, and other models via OpenRouter.
-    """
-
-    def __init__(self, config: LLMConfig):
-        super().__init__(config)
-
-        # Get API key from environment
-        api_key_env = config.api_key_env or "OPENROUTER_API_KEY"
-        self.api_key = os.environ.get(api_key_env)
-
-        if not self.api_key:
-            raise ValueError(
-                f"API key not found in environment variable: {api_key_env}"
-            )
-
-        self.base_url = "https://openrouter.ai/api/v1"
-
-    def generate(
-        self,
-        system_prompt: str,
-        user_prompt: str,
-        temperature: Optional[float] = None,
-        max_tokens: Optional[int] = None,
-    ) -> LLMResponse:
-        """Generate response from OpenRouter API."""
-        # TODO: Implement with httpx or requests
-        # For now, return stub response
-        logger.warning("OpenRouterProvider.generate() is a stub implementation")
-
-        return LLMResponse(
-            content="[STUB] LLM response would go here",
-            model=self.model,
-            usage={"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0},
-            raw_response={}
-        )
-
-    def generate_with_functions(
-        self,
-        system_prompt: str,
-        user_prompt: str,
-        functions: List[Dict[str, Any]],
-        temperature: Optional[float] = None,
-        max_tokens: Optional[int] = None,
-    ) -> LLMResponse:
-        """Generate response with function calling from OpenRouter API."""
-        # TODO: Implement with httpx or requests
-        # For now, return stub response
-        logger.warning(
-            "OpenRouterProvider.generate_with_functions() is a stub implementation"
-        )
-
-        return LLMResponse(
-            content="[STUB] LLM response with functions would go here",
-            model=self.model,
-            usage={"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0},
-            raw_response={},
-            function_calls=[]
-        )
-
-
-class LocalProvider(LLMProvider):
-    """
-    Local model provider.
-
-    Supports Ollama, llama.cpp, and other local inference servers.
-    """
-
-    def __init__(self, config: LLMConfig):
-        super().__init__(config)
-
-        # Get endpoint from config or use default
-        self.endpoint = os.environ.get("LOCAL_LLM_ENDPOINT", "http://localhost:11434")
-
-    def generate(
-        self,
-        system_prompt: str,
-        user_prompt: str,
-        temperature: Optional[float] = None,
-        max_tokens: Optional[int] = None,
-    ) -> LLMResponse:
-        """Generate response from local model."""
-        # TODO: Implement with httpx
-        # For now, return stub response
-        logger.warning("LocalProvider.generate() is a stub implementation")
-
-        return LLMResponse(
-            content="[STUB] Local LLM response would go here",
-            model=self.model,
-            usage={"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0},
-            raw_response={}
-        )
-
-    def generate_with_functions(
-        self,
-        system_prompt: str,
-        user_prompt: str,
-        functions: List[Dict[str, Any]],
-        temperature: Optional[float] = None,
-        max_tokens: Optional[int] = None,
-    ) -> LLMResponse:
-        """Generate response with function calling from local model."""
-        # TODO: Implement with httpx
-        # For now, return stub response
-        logger.warning(
-            "LocalProvider.generate_with_functions() is a stub implementation"
-        )
-
-        return LLMResponse(
-            content="[STUB] Local LLM response with functions would go here",
-            model=self.model,
-            usage={"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0},
-            raw_response={},
-            function_calls=[]
-        )
-
-
-class MockProvider(LLMProvider):
+class MockProvider:
     """
     Mock provider for testing.
-
     Returns deterministic responses for testing the simulation loop.
     """
 
-    def __init__(self, config: LLMConfig):
-        super().__init__(config)
-        self.call_count = 0
+    def __init__(self, config: LLMConfig, scenario_config: Dict):
+        self.config = config
+        self.scenario_config = scenario_config
 
-    def generate(
+    def complete(
         self,
-        system_prompt: str,
-        user_prompt: str,
-        temperature: Optional[float] = None,
-        max_tokens: Optional[int] = None,
-    ) -> LLMResponse:
-        """Generate mock response."""
-        self.call_count += 1
+        messages: List[Dict[str, str]],
+        model: str,
+        response_format: Optional[Dict] = None,
+    ) -> str:
+        """Generate mock response based on the phase detected in the system prompt."""
+        system_prompt = ""
+        for message in messages:
+            if message["role"] == "system":
+                system_prompt = message["content"]
+                break
 
-        logger.info(f"MockProvider.generate() called (call #{self.call_count})")
+        if "Phase 1" in system_prompt:
+            return self._generate_phase1_response()
+        elif "Phase 2" in system_prompt:
+            return self._generate_phase2_response()
+        elif "Phase 3" in system_prompt:
+            return self._generate_phase3_response()
+        else:
+            return self._generate_default_response()
 
-        return LLMResponse(
-            content=f"[MOCK] Response #{self.call_count}",
-            model="mock-model",
-            usage={"prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150},
-            raw_response={"mock": True}
-        )
+    def _get_current_actor(self, system_prompt: str) -> Optional[str]:
+        # A bit brittle, but for a mock it's fine.
+        # "You are ActorName,"
+        try:
+            return system_prompt.split("You are ")[1].split(",")[0]
+        except IndexError:
+            return None
 
-    def generate_with_functions(
-        self,
-        system_prompt: str,
-        user_prompt: str,
-        functions: List[Dict[str, Any]],
-        temperature: Optional[float] = None,
-        max_tokens: Optional[int] = None,
-    ) -> LLMResponse:
-        """Generate mock response with function calls."""
-        self.call_count += 1
-
-        logger.info(
-            f"MockProvider.generate_with_functions() called (call #{self.call_count})"
-        )
-
-        return LLMResponse(
-            content=f"[MOCK] Response with functions #{self.call_count}",
-            model="mock-model",
-            usage={"prompt_tokens": 100, "completion_tokens": 50, "total_tokens": 150},
-            raw_response={"mock": True},
-            function_calls=[
+    def _generate_phase1_response(self) -> str:
+        """Generates a mock response for Phase 1 (communication)."""
+        # In Phase 1, actors can send messages. Let's make a mock message.
+        # This part of the prompt is not yet implemented in the engine,
+        # so this is a placeholder.
+        return json.dumps({
+            "reasoning": "I need to communicate with another actor.",
+            "messages": [
                 {
-                    "name": "mock_action",
-                    "arguments": {"param": "value"}
+                    "to": "China",
+                    "content": "This is a mock message from the USA.",
                 }
             ]
-        )
+        })
 
 
-def create_provider(config: LLMConfig) -> LLMProvider:
+    def _generate_phase2_response(self) -> str:
+        """Generates a mock response for Phase 2 (response)."""
+        # In Phase 2, actors can reply. Let's simulate a 50% chance of replying.
+        if random.random() > 0.5:
+            return json.dumps({
+                "reasoning": "I will reply to this message.",
+                "messages": [
+                    {
+                        "to": "USA",
+                        "content": "This is a mock reply from China.",
+                    }
+                ]
+            })
+        else:
+            return json.dumps({
+                "reasoning": "I will not reply.",
+                "messages": []
+            })
+
+
+    def _generate_phase3_response(self) -> str:
+        """Generates a mock response for Phase 3 (action)."""
+        response = {
+            "reasoning": "Given the current situation, investing in research is prudent.",
+            "actions": [
+                {"name": "invest_research", "arguments": {"amount": 50}}
+            ],
+            "next_turn_goals": [
+                "Continue AI development",
+                "Monitor China's activities"
+            ]
+        }
+        return json.dumps(response)
+
+    def _generate_default_response(self) -> str:
+        """Generates a default mock response."""
+        return json.dumps({"reasoning": "This is a default mock response.", "actions": [], "next_turn_goals": []})
+
+
+def get_provider(config: LLMConfig, scenario_config: Dict) -> LLMProvider:
     """
     Factory function to create the appropriate LLM provider.
 
     Args:
         config: LLM configuration
+        scenario_config: The main scenario configuration.
 
     Returns:
         Instantiated LLM provider
@@ -285,11 +144,9 @@ def create_provider(config: LLMConfig) -> LLMProvider:
     """
     provider_type = config.provider.lower()
 
-    if provider_type == "openrouter":
-        return OpenRouterProvider(config)
-    elif provider_type == "local":
-        return LocalProvider(config)
-    elif provider_type == "mock":
-        return MockProvider(config)
+    if provider_type == "mock":
+        return MockProvider(config, scenario_config)
     else:
+        # For now, we only support mock.
+        # In the future, we would add OpenRouterProvider, LocalProvider, etc.
         raise ValueError(f"Unsupported provider type: {provider_type}")
