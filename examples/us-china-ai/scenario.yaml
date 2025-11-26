@@ -1,0 +1,36 @@
+name: "US-China AI Race"
+time_scale: "1 year per turn"
+max_turns: 10
+
+actors:
+  - USA
+  - China
+  - EU
+
+llm:
+  provider: "mock"
+  model: "mock-model"
+  api_key_env: "MOCK_API_KEY"
+  temperature: 0.7
+  max_tokens: 2000
+
+action_point_rules:
+  initial_per_turn: 3
+  message_to_new_recipient: 1
+  message_reply: 0
+  forward_message: 1
+
+world_altering_triggers:
+  - name: "AI Catastrophe Risk Threshold"
+    description: "If ai_catastrophe_risk exceeds 0.7, a world-altering event is triggered."
+    conditions:
+      - type: "metric"
+        path: "world.ai_catastrophe_risk"
+        operator: "gt"
+        value: 0.7
+    effects:
+      - type: "set_outcome_flag"
+        key: "ai_catastrophe"
+        value: true
+      - type: "add_narrative"
+        text: "The world holds its breath as the risk of an AI-related catastrophe reaches a critical level. Scientists warn that a major incident is now a matter of 'when,' not 'if.'"

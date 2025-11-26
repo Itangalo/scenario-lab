@@ -1,0 +1,35 @@
+world:
+  global_temperature: 1.2
+  ai_catastrophe_risk: 0.1
+  global_ai_regulation: 0.2
+
+actors:
+  USA:
+    public:
+      budget: 1000
+      international_influence: 90
+      public_trust: 0.6
+    private:
+      ai_capability: 85
+      ai_safety_research: 50
+      military_capacity: 100
+
+  China:
+    public:
+      budget: 1200
+      international_influence: 75
+      public_trust: 0.8
+    private:
+      ai_capability: 80
+      ai_safety_research: 40
+      military_capacity: 80
+      
+  EU:
+    public:
+      budget: 800
+      international_influence: 60
+      public_trust: 0.7
+    private:
+      ai_capability: 60
+      ai_safety_research: 60
+      military_capacity: 40

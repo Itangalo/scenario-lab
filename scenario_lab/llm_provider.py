@@ -277,7 +277,7 @@ class MockProvider:
         response = {
             "reasoning": "Given the current situation, investing in research is prudent.",
             "actions": [
-                {"name": "invest_research", "args": {"amount": 50}}
+                {"name": "invest_ai_research", "args": {"amount": 50}}
             ],
             "next_turn_goals": [
                 "Continue AI development",
