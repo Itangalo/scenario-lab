@@ -30,6 +30,18 @@ V3 löser grundläggande problem från tidigare versioner genom en hybridarkitek
 4. **Actors:** Simulationens deltagare (länder, företag, organisationer), kontrollerade av LLM personas med specifika mål
 5. **Action Points (AP):** Valuta som begränsar kommunikation och uppmärksamhet
 
+## Skapa nya scenarion
+
+**Läs `docs/creating-scenarios.md` innan du skapar nya scenarion.**
+
+Dokumentet innehåller:
+- Krav på background-filer (sketch-format)
+- Tekniska filformat (scenario.yaml, metrics.yaml, events.yaml, methods.py)
+- Steg-för-steg-process för att generera filer från sketches
+- Valideringschecklista
+
+Använd `examples/us-china-ai/` som referensexempel.
+
 ## Filstruktur
 
 ```
