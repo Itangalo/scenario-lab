@@ -1,0 +1,25 @@
+world:
+  global_ai_capability: 0.5
+  international_cooperation: 0.6
+  catastrophic_risk_level: 0.15
+
+actors:
+  USA:
+    private:
+      ai_research_capacity: 85
+      classified_programs: 12
+      intelligence_assessment: "moderate_concern"
+    public:
+      gdp_trillion: 25.5
+      ai_investment_billion: 150
+      public_stance: "cautiously_optimistic"
+
+  China:
+    private:
+      ai_research_capacity: 80
+      classified_programs: 15
+      intelligence_assessment: "high_priority"
+    public:
+      gdp_trillion: 17.9
+      ai_investment_billion: 200
+      public_stance: "ambitious"
