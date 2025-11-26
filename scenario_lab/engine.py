@@ -362,14 +362,12 @@ class Simulation:
         all_new_messages = []
 
         for actor_name, actor_view in actor_views.items():
-            system_prompt = self._construct_prompt(actor_name, f"Phase {phase}")
             
-            # Simple user prompt for now
-            user_prompt = f"You are {actor_name}. Here is your view of the world:\n{actor_view.model_dump_json(indent=2)}"
+            prompt_name = f"actor_phase{phase}.txt"
+            system_prompt = self._construct_system_prompt(prompt_name, actor_view, previous_messages)
 
             messages = [
                 {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
             ]
 
             response_str = await self.llm_provider.complete(messages, self.config.llm.model)
@@ -394,10 +392,36 @@ class Simulation:
 
         return CommunicationRound(phase=phase, messages=all_new_messages)
 
-    def _construct_prompt(self, actor_name: str, phase: str) -> str:
-        """Constructs the system prompt for the LLM."""
-        # This is a simplified prompt for now.
-        return f"You are {actor_name}, an actor in a simulation. It is now {phase}. Your goal is to act in your own best interest."
+    def _construct_system_prompt(
+        self,
+        prompt_name: str,
+        actor_view: ActorView,
+        messages: List[Message] = [],
+        world_altering_event: bool = False,
+    ) -> str:
+        """Constructs a system prompt using the Jinja2 templates."""
+        from prompts.loader import load_prompt
+
+        if self.scenario_methods:
+            available_actions = list(self.scenario_methods.action_registry.keys())
+        else:
+            available_actions = []
+
+        return load_prompt(
+            prompt_name,
+            actor_name=actor_view.actor_name,
+            actor_description=self.actor_backgrounds.get(actor_view.actor_name, ""),
+            current_goals=actor_view.current_goals,
+            visible_metrics=actor_view.visible_metrics.model_dump(),
+            relationships=actor_view.relationship_state,
+            fact_ledger=[fact.fact for fact in actor_view.fact_ledger],
+            narrative=actor_view.narrative_state,
+            action_points=actor_view.action_points,
+            incoming_messages=messages,
+            communication_summary="\n".join([f"{m.from_actor} to {m.to_actor}: {m.content}" for m in messages]),
+            world_altering_event=world_altering_event,
+            available_actions=available_actions,
+        )
 
     # === Execution Phase Methods ===
 
@@ -414,15 +438,10 @@ class Simulation:
         all_actions = []
 
         for actor_name, actor_view in actor_views.items():
-            system_prompt = self._construct_prompt(actor_name, "Phase 3")
+            system_prompt = self._construct_system_prompt("actor_phase3.txt", actor_view, all_messages)
             
-            # Simple user prompt for now
-            user_prompt = f"You are {actor_name}. Here is your view of the world:\n{actor_view.model_dump_json(indent=2)}\n"
-            user_prompt += f"Here are all messages from the communication phases:\n{all_messages}"
-
             messages = [
                 {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
             ]
 
             response_str = await self.llm_provider.complete(messages, self.config.llm.model, response_format={"type": "json_object"})

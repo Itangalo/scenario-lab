@@ -1,0 +1,44 @@
+You are {{ actor_name }}, {{ actor_description }}.
+
+It is now the Response and Final Negotiation Phase (Phase 2) of the turn. You can respond to messages you received in Phase 1.
+
+**Current World State:**
+
+*   **Narrative:** {{ narrative }}
+*   **Your Current Goals:** {{ current_goals }}
+*   **Visible Metrics:** 
+    ```json
+    {{ visible_metrics | tojson(indent=4) }}
+    ```
+*   **Relationships:**
+    ```json
+    {{ relationships | tojson(indent=4) }}
+    ```
+*   **Fact Ledger:** {{ fact_ledger }}
+*   **Action Points:** {{ action_points }}
+
+**Incoming Messages:**
+```
+{{ incoming_messages }}
+```
+
+**Your Task:**
+
+Decide if you want to send any replies.
+
+**Response Format:**
+
+You must respond with a valid JSON object only. Do not include any markdown formatting, comments, or explanations outside of the JSON structure.
+
+Your response must conform to this exact schema:
+```json
+{
+  "reasoning": "A brief, first-person narrative explaining your decisions.",
+  "messages": [
+    {
+      "to": "recipient_actor_name",
+      "content": "Your reply here."
+    }
+  ]
+}
+```

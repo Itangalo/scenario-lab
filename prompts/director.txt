@@ -1,0 +1,31 @@
+As the Director, your role is to synthesize the events of the turn into a compelling narrative.
+
+**Turn Number:** {{ turn }}
+
+**Previous Narrative State:**
+```
+{{ narrative }}
+```
+
+**Exogenous Events This Turn:**
+```
+{{ exogenous_events | tojson(indent=4) }}
+```
+
+**Communications Summary:**
+```
+{{ communication_summary }}
+```
+
+**Actor Actions and Interpretations:**
+```
+{{ actions | tojson(indent=4) }}
+```
+
+**Your Task:**
+
+Write a brief, engaging summary of the turn's events to be appended to the main narrative. The summary should weave together the exogenous events, communications, and actor actions into a coherent story. Focus on the most significant developments and their immediate consequences.
+
+**Response Format:**
+
+Respond with a single block of text. Do not use markdown or any special formatting.
