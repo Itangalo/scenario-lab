@@ -186,6 +186,10 @@ class MockProvider:
                 system_prompt = message["content"]
                 break
         
+        # Check for Director prompt
+        if "As the Director" in system_prompt:
+            return self._generate_director_response()
+
         actor_name = self._get_current_actor(system_prompt)
         all_actors = self.scenario_config.get("actors", [])
 
@@ -244,6 +248,9 @@ class MockProvider:
             ]
         }
         return json.dumps(response)
+
+    def _generate_director_response(self) -> str:
+        return "Both nations continued their strategic maneuvering during this period. The United States and China each invested in research initiatives, seeking to maintain technological balance. Diplomatic channels remained open but cautious, with neither side willing to make significant concessions. The situation remains tense but stable as both powers assess their next moves."
 
     def _generate_default_response(self) -> str:
         return json.dumps({"reasoning": "This is a default mock response.", "actions": [], "next_turn_goals": []})
