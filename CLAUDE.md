@@ -1,474 +1,187 @@
-# CLAUDE.md
+# Scenario Lab V3 – Claude Code Instructions
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+## Projektöversikt
 
-## Project Overview
+**Scenario Lab** är ett ramverk för att simulera komplexa strategiska och politiska scenarios med AI-agenter. Systemet fokuserar på AI-policy, geopolitik och organisationsstrategi.
 
-**Scenario Lab** is an experimental framework for AI-automated scenario exercises focused on exploring complex policy and strategic questions, particularly around AI governance and policy. The system enables multi-actor simulations where AI agents interact in dynamic environments, providing both statistical insights from batch runs and deep qualitative analysis.
+**Syfte:**
+- Primärt: Utforska hur LLMs kan användas för scenariosimulering
+- Sekundärt: Identifiera mönster i utfall genom upprepade simuleringar (både kvantitativt och kvalitativt)
 
-**Current Status:** **Version 2.0 - V2 Migration COMPLETE**. The framework now uses a modern Python package architecture with clean separation of concerns. The framework includes:
+**Ignorera:** Filen `Implementation phases.md` ska helt ignoreras vid utveckling.
 
-**Core Simulation (Phase 1-2):**
-- ✅ Multi-actor AI-controlled scenarios with simultaneous turn execution
-- ✅ LLM-powered world state synthesis (not simple concatenation)
-- ✅ Cost estimation and tracking for all LLM API calls
-- ✅ Structured metrics extraction and export (JSON)
-- ✅ Resumable scenarios - graceful handling of rate limits and budget constraints
-- ✅ Scenario branching - create alternative paths from any completed turn
-- ✅ Quality assurance validator - automated consistency checking with validation reports
-- ✅ Auto-incrementing run numbers to preserve history
+## Arkitektur – Hybridmodell
 
-**Batch Processing (Phase 4):**
-- ✅ Parameter variation system with Cartesian products
-- ✅ Sequential and parallel execution with rate limiting
-- ✅ Cost tracking and budget controls (per-run and total)
-- ✅ Real-time progress tracking
-- ✅ Statistical analysis and reporting
-- ✅ Resumable batch execution
+V3 löser grundläggande problem från tidigare versioner genom en hybridarkitektur:
 
-**User Experience & Safety:**
-- ✅ CLI commands with helpful guidance for scenario/batch creation
-- ✅ AI-assisted scenario creation via AGENTS.md reference
-- ✅ Dry-run preview mode with cost/time estimation
-- ✅ Comprehensive error handling (10 categories) with user-friendly messages
-- ✅ Progressive fallback strategies for model failures
-- ✅ Automatic recovery suggestions
+- **Narrativ flexibilitet:** LLMs hanterar diplomati, intentioner och kvalitativa beskrivningar
+- **Deterministisk logik:** Python-kod hanterar kvantitativa konsekvenser, resursflöden och verifierbara fakta
+- **Informationsasymmetri:** Aktörer har privat och publik information, vilket skapar realistisk osäkerhet
 
-**Performance & Optimization:**
-- ✅ Response caching system (30-70% cost savings)
-- ✅ HTTP connection pooling (15-40% speed improvement)
-- ✅ Memory optimization with automatic garbage collection
-- ✅ Memory monitoring and OOM prevention
-- ✅ Graceful degradation (works without optional dependencies)
+### Centrala komponenter
 
-## AI-Assisted Scenario Creation
+1. **Engine (Python):** Orkestrerar spelet, anropar LLM APIs och underhåller World State
+2. **World State:** Sanningen om världen vid en given tidpunkt, består av fyra lager:
+   - **Narrative State:** Löpande textbeskrivning (historia + nuläge)
+   - **Metrics:** Kvantitativ data (global, private, public)
+   - **Fact Ledger:** Verifierade hårda fakta som aldrig sammanfattas bort
+   - **Relationship State:** Strukturerad data per aktörspar (trust, active_agreements)
+3. **The Director:** Specialiserad systemaktor som väver samman handlingar och händelser till sammanhängande narrativ
+4. **Actors:** Simulationens deltagare (länder, företag, organisationer), kontrollerade av LLM personas med specifika mål
+5. **Action Points (AP):** Valuta som begränsar kommunikation och uppmärksamhet
 
-For AI assistants helping users create scenarios, see **[AGENTS.md](AGENTS.md)**. This file contains:
-
-- Complete YAML schema documentation for all configuration files
-- Step-by-step workflow for scenario generation
-- Actor design guidelines and archetypes
-- Metrics configuration examples
-- Validation and troubleshooting guidance
-
-When a user requests help creating a scenario (e.g., "simulate US-China dynamics during an AI crisis"), use AGENTS.md as the primary reference for generating valid, well-designed scenario configurations.
-
-## V2 Architecture (Current)
-
-The system uses a modern Python package architecture with clean separation of concerns:
-
-**Package Structure: `scenario_lab/`**
-
-**Core Components (`scenario_lab/core/`):**
-- `actor.py` - Immutable Actor dataclass for V2
-- `events.py` - Event bus for real-time updates
-- `orchestrator.py` - Phase orchestration and execution flow
-- `prompt_builder.py` - LLM prompt construction
-- `world_synthesizer.py` - World state synthesis from decisions
-- `context_manager.py` - Context windowing and summarization (V2 with validation)
-- `communication_manager.py` - Actor communication handling
-- `metrics_tracker_v2.py` - **Pure V2 metrics extraction** (Pydantic schemas, async)
-- `qa_validator_v2.py` - **Pure V2 quality assurance** (Pydantic schemas)
-
-**Phase Services (`scenario_lab/services/`):**
-- `decision_phase_v2.py` - Actor decision-making (pure V2)
-- `world_update_phase_v2.py` - World state synthesis (pure V2)
-- `communication_phase.py` - Actor communications
-- `persistence_phase.py` - File output generation
-- `database_persistence_phase.py` - Optional database persistence
-
-**Loaders (`scenario_lab/loaders/`):**
-- `scenario_loader.py` - Loads scenarios from YAML
-- `actor_loader.py` - Creates V2 Actor instances
-- `metrics_loader.py` - **V2 Pydantic-based metrics config loader**
-- `validation_loader.py` - **V2 Pydantic-based validation config loader**
-
-**Batch Processing (`scenario_lab/batch/`):**
-- `parameter_variator.py` - Generate scenario variations
-- `batch_runner.py` - Execute batches with parallelism
-- `batch_cost_manager.py` - Budget tracking and limits
-- `batch_progress_tracker.py` - Real-time progress display
-- `batch_parallel_executor.py` - Async execution with rate limiting
-- `batch_analyzer.py` - Statistical analysis
-
-**Utilities (`scenario_lab/utils/`):**
-- `api_client.py` - Async LLM API calls
-- `response_parser.py` - Parse LLM responses (markdown/JSON)
-- `model_pricing.py` - LLM cost calculation
-- `response_cache.py` - SHA256-based response caching
-- `error_handler.py` - User-friendly error messages
-- `progressive_fallback.py` - Model fallback strategies
-- `memory_optimizer.py` - Memory management
-
-**Interfaces:**
-- `scenario_lab/interfaces/cli.py` - CLI commands (`scenario-lab` command)
-- `scenario_lab/api/app.py` - REST API with FastAPI
-- `web/frontend/` - React TypeScript frontend
-
-**Runners:**
-- `scenario_lab/runners/sync_runner.py` - **Pure V2 synchronous runner**
-
-## V2 Migration Status
-
-**Status: COMPLETE** (Phase 6.1-6.2 complete, 2025-11-20)
-
-**V2 Rewrite Completion** (2025-11-20):
-- ✅ MetricsTrackerV2: Pure V2 with Pydantic schemas, async extraction (pattern, keyword, LLM)
-- ✅ ContextManagerV2: Enhanced with parameter validation (prevents BUG-010)
-- ✅ QAValidatorV2: Pydantic-based configuration with wrapper pattern
-- ✅ Integration smoke tests: 26 tests verifying V2 components work correctly
-- ✅ All V2 components use Pydantic schemas (no raw YAML dicts)
-- ✅ Pure async patterns for all LLM calls
-- ✅ Immutable state management throughout
-
-The V2 migration is functionally complete:
-- ✅ All V2 code uses pure V2 architecture (zero V1 dependencies)
-- ✅ `sync_runner.py` is pure V2 (uses DecisionPhaseV2, WorldUpdatePhaseV2)
-- ✅ CLI commands available: `scenario-lab create`, `scenario-lab run`, `scenario-lab create-batch`, `scenario-lab serve`
-- ✅ REST API with WebSocket streaming
-- ✅ React frontend integrated with V2 API
-
-**V1 Code Removal (2025-11-21):**
-- V1 `src/` directory has been completely removed
-- All V1 test files with broken imports have been removed
-- Deprecated web files (`web/app.py`, `web/scenario_executor.py`) removed
-- CLI wizard commands show guidance instead of broken V1 bridges
-
-**Documentation:**
-- Architecture ground truth: `docs/ARCHITECTURE_GROUND_TRUTH.md`
-- Database analytics: `docs/DATABASE_ANALYTICS_GUIDE.md`
-- Calibration guide: `docs/calibration-guide.md`
-- Local LLMs: `docs/LOCAL_LLMS.md`
-
-## Scenario Directory Structure
-
-When working with scenarios, the structure follows this pattern:
+## Filstruktur
 
 ```
 scenario-name/
-├── scenario.yaml              # Main scenario configuration (name, world state, rules)
-├── actors/
-│   ├── actor1.yaml            # Actor profiles (including LLM model specification)
-│   └── actor2.yaml
-├── metrics.yaml               # Optional: defined metrics and thresholds
-├── validation-rules.yaml      # Optional: instructions for quality assurance checks
-├── exogenous-events.yaml      # Optional: background event definitions
-├── background/                # Optional: background data and information
-│   ├── historical-data.md
-│   └── reference-docs.md
-├── runs/
-│   ├── run-001/
-│   │   ├── world-state-001.md
-│   │   ├── world-state-002.md
-│   │   ├── actor-name-001.md
-│   │   ├── metrics.json       # Structured metrics data for analysis
-│   │   └── ...
-│   └── run-002/
-│       └── ...
-└── analysis/
-    ├── statistics.md
-    ├── critical-factors.md
-    └── metrics-summary.json   # Aggregated structured data across runs
+├── background/
+│   ├── context.md
+│   └── actors/
+│       ├── USA.md
+│       └── China.md
+├── scenario.yaml          # Tidsskala, AP-regler, world_altering_triggers
+├── metrics.yaml           # World + actors (private/public)
+├── events.yaml            # Exogena händelser
+├── methods.py             # Logik, validering, tolkningar
+└── runs/
+    └── run-001/
+        ├── turn-01/
+        │   ├── views/
+        │   │   ├── USA.json      # Aktörsspecifik World State
+        │   │   └── China.json
+        │   ├── comms_phase_1.json
+        │   ├── comms_phase_2.json
+        │   ├── actions.json
+        │   ├── world_state.md
+        │   ├── metrics.json
+        │   ├── relationships.json
+        │   └── fact_ledger.json
+        └── summary.json          # Outcome flags för analys
 ```
 
-**Note:** Configuration files (`scenario.yaml`, `actors/`, etc.) are placed directly in the scenario root directory, not in a `definition/` subdirectory.
+## Simuleringsloop
 
-## Key Design Principles
+Varje tur representerar en tidsperiod (t.ex. 6 månader).
 
-1. **AI-Controlled Actors**: All actors can be AI agents with goals, information, and decision-making capabilities. Different actors may use different LLM models. Actor behavior (including bounded rationality, biases, expertise) is specified in open actor descriptions.
-2. **Dynamic World State**: World evolves based on actor decisions, including exogenous background events (trends, random, conditional, scheduled)
-3. **Human-in-the-Loop**: Any AI actor can be replaced by a human expert at any time
-4. **Information Asymmetry**: Actors maintain both public and private information. Actors evaluate information quality themselves.
-5. **Step-by-Step Documentation**: Each simulation step documented in markdown files, with structured metrics data (JSON) for analysis
-6. **Batch Simulation**: Support for running hundreds/thousands of scenarios with systematic variations. Actors have no memory between runs - each run is independent.
-7. **Temporal Model**: Simultaneous turn-based execution. Turn duration defined by scenario and may vary during execution.
-8. **Communication**: Multiple communication types (public statements, bilateral negotiations, coalition formation) with different visibility rules
-9. **Validation**: Use calibration scenarios (e.g., "AI 2027"), expert evaluation of documentation, and automated consistency checking
-10. **Cost Management**: Comprehensive cost estimation, tracking, and controls for LLM API usage
+### Pre-Turn
+1. Event Check
+2. Trigger Check (World Altering Events)
+3. AP Reset
+4. View Generation (aktörsspecifik filtrerad World State)
 
-## Primary Research Focus
+### Fas 1: Initiative & Communication
+- Aktörer får sin filtrerade World State
+- Kan skicka meddelanden (1 AP per mottagare)
 
-The framework is specifically designed to explore AI policy and governance questions:
+### Fas 2: Response & Final Negotiation
+- Aktörer får inkommande meddelanden
+- Svar till avsändare: 0 AP
+- Nytt meddelande/vidarebefordra: 1 AP
 
-- Regulatory effectiveness under various conditions
-- Governance structures for AI deployment
-- International coordination mechanisms
-- Corporate strategy in AI disruption
-- AI safety interventions and their impact
-- Risk assessment and critical decision factors
+### Fas 3: Execution & Goal Adjustment
+- Diplomati avslutad, alla agerar
+- Max 2 stora initiativ per tur (valideras av methods.py)
+- Output: Narrativ text + strukturerade funktionsanrop + uppdaterade mål
 
-## Development Phases
+### Post-Turn Synthesis
+1. Validering via methods.py
+2. Metrics Update
+3. Relationship Update
+4. Fact Ledger Update
+5. Narrative Synthesis (Director genererar world_state.md)
 
-**V2 Migration - All Phases Complete:**
+## Informationsasymmetri
 
-- **Phase 1-4**: ✅ COMPLETE - Core simulation, batch processing, cost management, performance optimization
-- **Phase 5**: ✅ COMPLETE - CLI tools, scenario wizards, web interface integration
-- **Phase 6**: ✅ COMPLETE (6.1-6.2) - V1 dependency removal, test suite cleanup, documentation update
+Metrics delas in i tre kategorier:
 
-**Features Implemented:**
-- ✅ Pure V2 architecture with zero V1 dependencies
-- ✅ CLI commands: `scenario-lab create`, `scenario-lab run`, `scenario-lab create-batch`, `scenario-lab serve`
-- ✅ Resumable scenarios with state persistence
-- ✅ Scenario branching from any turn
-- ✅ Batch execution with parameter variations
-- ✅ Cost tracking and budget controls
-- ✅ Response caching (30-70% cost savings)
-- ✅ Quality assurance validation
-- ✅ REST API with WebSocket streaming
-- ✅ React TypeScript frontend
-
-## Calibration and Validation
-
-The framework includes comprehensive calibration capabilities using the **AI 2027** scenario as a validation tool.
-
-**Purpose:**
-- Validate framework realism by comparing simulations against real AI developments (2024-2025)
-- Identify systematic biases and blind spots
-- Tune actor and scenario prompts based on evidence
-- Establish confidence bounds for research use
-
-**Calibration Methodology:**
-- Compare simulated events against real-world timeline
-- Score decision realism, timeline plausibility, causality coherence, actor interactions
-- Target ≥7.5/10 average for research suitability
-- Document findings and refine prompts iteratively
-
-**Key Documents:**
-- `scenarios/ai-2027/CALIBRATION.md` - Detailed methodology
-- `scenarios/ai-2027/calibration-results-template.md` - Results documentation template
-- `docs/calibration-guide.md` - Complete calibration guide
-
-**Calibration Metrics:**
-- Decision Realism (0-10): Do actors behave like real counterparts?
-- Timeline Plausibility (0-10): Is progression pace realistic?
-- Causality Coherence (0-10): Do events cause realistic downstream effects?
-- Actor Interaction Realism (0-10): Are dynamics between actors realistic?
-
-**Historical Baseline:**
-- Real AI events from 2024-2025 (model releases, regulations, research advances)
-- Comparison scoring system for event prediction accuracy
-- Systematic prompt refinement based on findings
-
-## Working with V2 Architecture
-
-**Key Principles:**
-
-1. **Pure V2 Code**: All code in `scenario_lab/` uses V2 architecture. Do not add V1 dependencies (`sys.path.insert` to `src/`).
-
-2. **Immutable State**: V2 uses immutable state management via dataclasses (frozen=True). Always create new state objects rather than mutating existing ones.
-
-3. **Phase-Based Execution**: The orchestrator runs phases in sequence:
-   - Communication Phase → Decision Phase → World Update Phase → Persistence Phase
-   - Each phase receives immutable state and returns new state
-
-4. **Async by Default**: V2 phases use async/await for LLM API calls to support concurrent operations.
-
-5. **Event-Driven**: Use the EventBus (`scenario_lab.core.events`) for real-time updates and monitoring.
-
-6. **CLI Commands**: Use Click-based CLI in `scenario_lab/interfaces/cli.py` for user-facing commands.
-
-**When Adding New Features:**
-
-1. Place code in appropriate `scenario_lab/` subdirectory (core/, services/, utils/, etc.)
-2. Use V2 patterns: immutable dataclasses, async methods, pure functions
-3. Import from `scenario_lab.*` packages, never from `src/`
-4. Write tests using V2 fixtures and mocks
-5. Update CLI if adding user-facing functionality
-6. Document in README.md and relevant docs/ files
-
-**Cost Management:**
-- Cost tracking is built into the state model (`CostRecord` in `scenario_lab/models/state.py`)
-- Use `scenario_lab.utils.model_pricing` for LLM cost calculation
-- Always estimate costs before execution (use `--dry-run` for batch operations)
-
-**Testing:**
-- V2-native tests go in `tests/` with standard Python imports
-- Use `scenario_lab.*` imports (not `src/`)
-- Mock LLM calls using `unittest.mock` or pytest fixtures
-
-## Example Use Cases
-
-See README.md section "Example Scenarios" for concrete examples, including:
-
-- AI 2027 (calibration scenario for validation)
-- AI Regulatory Negotiation
-- AI Safety Incident Response
-- Corporate AI Governance
-- AI Arms Race Dynamics
-- Automated Decision System Deployment
-
-These examples should guide the design of flexible, reusable scenario components.
-
-## Implemented Features
-
-### Resumable Scenarios
-
-The framework supports stopping and resuming scenario runs, crucial for handling API rate limits and budget constraints:
-
-**Key Components:**
-- `scenario_lab/utils/state_persistence.py` - Saves/loads complete scenario state
-- `scenario-state.json` - Auto-generated state file in each run directory
-- State includes: world state, actor states, costs, metrics, execution metadata
-
-**Command-line arguments:**
-- `--end-turn N` - Execute N turns (e.g., --end-turn 5 runs 5 actor decision rounds)
-- `--credit-limit X` - Halt if cost exceeds $X
-- `--resume <path>` - Resume from halted run
-
-**Error handling:**
-- Rate limit errors (429) are caught gracefully
-- State is saved before exit
-- Clear resume instructions displayed
-- All tracking (costs, metrics) preserved across resume
-
-**State persistence:**
-- State saved after each successful turn
-- JSON keys properly converted (string → int) on load
-- WorldState, CostTracker, MetricsTracker all fully serializable
-
-### Scenario Branching
-
-The framework supports creating alternative scenario paths by branching from any completed turn:
-
-**Command-line arguments:**
-- `--branch-from <path>` - Source run directory to branch from
-- `--branch-at-turn N` - Turn number to branch from (0 to current_turn)
-
-**Implementation details:**
-- Branching functionality built into `scenario_lab/runners/sync_runner.py`
-- Creates new run directory with auto-incremented number
-- Copies all markdown files (world states, actor decisions) up to branch point
-- Truncates state data (world state, costs, metrics) to branch point
-- Recalculates totals for cost tracking and metrics
-- Adds branch metadata to execution_metadata (branched_from, branch_point)
-
-**Use cases:**
-- Explore "what-if" scenarios from critical decision points
-- Test different actor strategies from same starting conditions
-- Compare outcomes with different prompts or models
-- Sensitivity analysis by varying parameters from branch point
-
-**Workflow:**
-1. Branch creates new run with copied history
-2. Resume the branch to continue from next turn
-3. Modify scenario/actors if exploring alternatives
-4. Compare outputs between original and branch runs
-
-### Quality Assurance Validator
-
-The framework includes automated consistency checking using lightweight LLM models to validate expensive model outputs:
-
-**Key Components:**
-- `scenario_lab/core/qa_validator.py` - QAValidator class with validation logic
-- `scenario_lab/core/qa_validator_v2.py` - V2 wrapper with Pydantic schemas
-- `validation-rules.yaml` - Configuration file in each scenario directory
-- Validation reports generated per turn and as summary
-
-**Validation Checks:**
-1. **Actor Decision Consistency** - Validates that actor decisions align with:
-   - Stated goals and objectives
-   - Declared constraints
-   - Expertise levels
-   - Decision-making style
-
-2. **World State Coherence** - Validates that world state updates:
-   - Logically follow from actor actions
-   - Show appropriate consequences
-   - Maintain internal consistency
-   - Are realistic and proportionate
-
-3. **Information Access Consistency** - Validates that actors:
-   - Only reference information they have access to
-   - Don't use knowledge from private communications they weren't part of
-   - Respect information asymmetry rules
-
-**Configuration:**
 ```yaml
-validation_model: "openai/gpt-4o-mini"  # Lightweight model for cost efficiency
-checks:
-  actor_decision_consistency:
-    enabled: true
-  world_state_coherence:
-    enabled: true
-  information_access_consistency:
-    enabled: true
-run_after_each_turn: true
-generate_turn_reports: true
+world:           # Synlig för alla
+  global_temperature: 1.2
+  ai_catastrophe_risk: 0.05
+
+actors:
+  USA:
+    private:     # Synlig endast för ägaren
+      military_capacity: 85
+    public:      # Synlig för alla
+      budget: 500
 ```
 
-**Outputs:**
-- `validation-001.md`, `validation-002.md`, etc. - Per-turn validation reports
-- `validation-summary.md` - Overall summary with statistics
-- Validation costs tracked in `costs.json` under `validation` key
+## methods.py – Scenariospecifik logik
 
-**Usage:**
-- Validation runs automatically if `validation-rules.yaml` exists
-- Can be disabled by removing the file or setting `enabled: false`
-- Warnings displayed during execution if issues found
-- Severity levels: Low (logged), Medium (warned), High (warned/halt)
+Varje scenario definierar sina egna action functions. Engine anropar dem dynamiskt baserat på function_call-namn i LLM output.
 
-**Testing:**
-- QA validation is tested as part of V2 integration tests
-- Tests cover initialization, validation flow, and report generation
-
-### Scenario Creation
-
-Scenarios can be created manually or with AI assistance. The `scenario-lab create` command provides guidance on manual creation, while AI assistants can use the AGENTS.md reference to generate complete scenarios.
-
-**Manual Creation Steps:**
-
-1. Create a scenario directory with the required structure
-2. Write `scenario.yaml` with name, description, initial_world_state, turns
-3. Create actor files in `actors/` directory
-4. Optionally add `metrics.yaml` and `validation-rules.yaml`
-5. Validate with `scenario-lab validate <path>`
-
-**AI-Assisted Creation:**
-
-For AI assistants, see **[AGENTS.md](AGENTS.md)** which contains:
-- Complete YAML schema documentation
-- Step-by-step workflow for scenario generation
-- Actor design guidelines and archetypes
-- Metrics configuration examples
-
-**Output Files:**
-- `scenario.yaml` - Main scenario configuration
-- `actors/*.yaml` - Actor definitions
-- `metrics.yaml` - Metric definitions (optional)
-- `validation-rules.yaml` - QA configuration (optional)
-
-**Usage:**
-```bash
-# Get guidance on manual creation
-scenario-lab create
-
-# Validate a scenario
-scenario-lab validate scenarios/my-scenario
-
-# Run a scenario
-scenario-lab run scenarios/my-scenario
+**Standard signatur:**
+```python
+def action_name(actor: str, args: dict, state: WorldState) -> list[str]:
+    """
+    Modifiera state.metrics och state.outcome_flags vid behov.
+    Returnera lista med tolkningssträngar för Director.
+    """
+    pass
 ```
 
-## Working with the Repository
+**Outcome Flags** sätts av methods.py för kvantitativ analys:
+```python
+state["outcome_flags"]["war_declared"] = True
+state["outcome_flags"]["war_parties"] = [attacker, defender]
+```
 
-### Notes Directory
+## Teknisk Stack
 
-The `notes/` directory is for personal and temporary notes during development. All contents (except `.gitkeep`) are ignored by git. Use this for:
+- **Python:** 3.11+
+- **Dependencies:** pydantic, pyyaml, httpx
+- **Execution model:** Synkron för MVP (async kan läggas till senare)
+- **Type hints:** Krävs genomgående
 
-- Development scratch notes
-- Personal TODO lists
-- Temporary analysis or calculations
-- Draft ideas and planning
-- Any local notes that shouldn't be committed
+### LLM Provider Abstraction
 
-## Important Notes
+Stöd för flera LLM backends via provider abstraction:
+- **OpenRouterProvider:** Primär provider (Claude, GPT, Llama, etc.)
+- **LocalProvider:** För lokala modeller (Ollama, llama.cpp)
 
-- Markdown files should be preceded by blank lines before lists (per user's global CLAUDE.md)
-- Focus is on AI policy research through simulation, not general-purpose gaming or simulation
-- Statistical rigor is important - design for hypothesis testing and pattern discovery
-- Documentation is a first-class concern - every simulation step should be reviewable by experts
-- Cost management is critical - batch runs can easily cost thousands of dollars without proper controls
-- Quality assurance must be built in - use lightweight models to validate consistency
-- Multi-model support is essential - different actors may need different LLM capabilities
-- Validation through calibration scenarios and expert review ensures simulation realism
-- Actor behavior should remain flexible and described openly, not locked to specific parameters
+Konfigureras i scenario.yaml:
+```yaml
+llm:
+  provider: "openrouter"
+  model: "anthropic/claude-sonnet-4"
+  api_key_env: "OPENROUTER_API_KEY"
+```
+
+## Utvecklingsriktlinjer
+
+1. **Versionera prompter separat:** Lagra i `prompts/` directory för iteration utan kodändringar
+2. **Logga allt:** Spara rå LLM input/output för debugging
+3. **Börja smått:** 2 aktörer, 3 turer. Skala upp när det fungerar
+4. **Använd billiga modeller för iteration:** Byt till starkare modeller för produktionskörningar
+5. **Type hints krävs:** Genomgående i all kod
+6. **Validering först:** methods.py validerar och begränsar handlingar
+
+## MVP Implementation Roadmap
+
+1. Core Engine (loop som läser YAML, genererar views, kör turer)
+2. Metrics Filter (implementera `get_visible_metrics()`)
+3. Action Validation (methods.py validerar och begränsar handlingar)
+4. Mock LLM (dummy agent för att testa flödet)
+5. LLM Integration (OpenRouter provider med retry logic)
+6. Prompt Engineering (system prompts för alla faser)
+7. Director (narrativ syntes)
+8. Outcome Flags (strukturerad data för analys)
+9. CLI (realtidsvisning av simulering)
+
+## Minnehantering
+
+För långa simuleringar:
+
+1. **Narrative:** Rolling window – senaste 2 turerna i detalj, sammanfattning av tidigare epoker
+2. **Fact Ledger:** Kritiska punkter som aldrig sammanfattas bort
+3. **Relationship State:** Strukturerad data som ersätter narrativt relationsminne
+4. **Metrics:** Senaste snapshot + datatolkningar
+
+## Viktiga designprinciper
+
+- **Hybrid architecture:** LLM för narrativ, Python för logik
+- **Information asymmetry:** Aktörer har begränsad information
+- **Deterministic validation:** methods.py säkerställer regelefterlevnad
+- **Structured outcomes:** Outcome flags möjliggör kvantitativ analys
+- **Memory efficiency:** Strukturerad data + selektiv narrativ
