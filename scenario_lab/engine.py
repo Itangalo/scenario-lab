@@ -57,7 +57,8 @@ class Simulation:
         self,
         scenario_path: str,
         scenario_methods: Optional[ScenarioMethods] = None,
-        run_id: Optional[str] = None
+        run_id: Optional[str] = None,
+        cli_provider: Optional[str] = None,
     ):
         """
         Initialize the simulation engine.
@@ -66,6 +67,7 @@ class Simulation:
             scenario_path: Path to scenario directory (string or Path)
             scenario_methods: Optional scenario-specific action methods
             run_id: Optional run identifier (auto-generated if not provided)
+            cli_provider: Optional provider override from the CLI
         """
         self.scenario_dir = Path(scenario_path)
         self.scenario_methods = scenario_methods
@@ -104,7 +106,7 @@ class Simulation:
         # Initialize LLM provider
         self.logger.info(f"Initializing LLM provider: {self.config.llm.provider}")
         from .llm_provider import get_provider
-        self.llm_provider = get_provider(self.config.llm, self.config.model_dump())
+        self.llm_provider = get_provider(self.config.llm, self.config.model_dump(), cli_provider)
 
         # Initialize world state
         self.world_state = self._initialize_world_state()
@@ -158,7 +160,7 @@ class Simulation:
 
         self.logger.debug(f"Reset action points: {self.actor_ap}")
 
-    def run(self, num_turns: int) -> None:
+    async def run(self, num_turns: int) -> None:
         """
         Run the simulation for a specified number of turns.
 
@@ -167,9 +169,9 @@ class Simulation:
         Args:
             num_turns: Number of turns to simulate
         """
-        self.run_simulation(num_turns)
+        await self.run_simulation(num_turns)
 
-    def run_simulation(self, max_turns: Optional[int] = None) -> None:
+    async def run_simulation(self, max_turns: Optional[int] = None) -> None:
         """
         Run the complete simulation.
 
@@ -185,7 +187,7 @@ class Simulation:
             self.logger.info(f"TURN {turn}")
             self.logger.info(f"{'='*60}\n")
 
-            self.run_turn(turn)
+            await self.run_turn(turn)
 
             # Check for early termination conditions
             if self._should_terminate():
@@ -195,7 +197,7 @@ class Simulation:
         self.logger.info("Simulation complete")
         self._save_run_summary()
 
-    def run_turn(self, turn: int) -> None:
+    async def run_turn(self, turn: int) -> None:
         """
         Execute a single turn of the simulation.
 
@@ -212,19 +214,19 @@ class Simulation:
 
         # === PHASE 1: Initiative & Communication ===
         self.logger.info("[PHASE 1] Initiative & Communication")
-        comms_phase_1 = self._run_communication_phase(turn, 1, actor_views, [])
+        comms_phase_1 = await self._run_communication_phase(turn, 1, actor_views, [])
         self.logger.info("[PHASE 1] Complete")
 
         # === PHASE 2: Response & Final Negotiation ===
         self.logger.info("[PHASE 2] Response & Final Negotiation")
-        comms_phase_2 = self._run_communication_phase(
+        comms_phase_2 = await self._run_communication_phase(
             turn, 2, actor_views, comms_phase_1.messages
         )
         self.logger.info("[PHASE 2] Complete")
 
         # === PHASE 3: Execution & Goal Adjustment ===
         self.logger.info("[PHASE 3] Execution & Goal Adjustment")
-        turn_actions = self._run_execution_phase(
+        turn_actions = await self._run_execution_phase(
             turn, actor_views, comms_phase_1.messages + comms_phase_2.messages
         )
         self.logger.info("[PHASE 3] Complete")
@@ -346,7 +348,7 @@ class Simulation:
 
     # === Communication Phase Methods ===
 
-    def _run_communication_phase(
+    async def _run_communication_phase(
         self,
         turn: int,
         phase: int,
@@ -370,7 +372,7 @@ class Simulation:
                 {"role": "user", "content": user_prompt},
             ]
 
-            response_str = self.llm_provider.complete(messages, self.config.llm.model)
+            response_str = await self.llm_provider.complete(messages, self.config.llm.model)
             
             try:
                 import json
@@ -399,7 +401,7 @@ class Simulation:
 
     # === Execution Phase Methods ===
 
-    def _run_execution_phase(
+    async def _run_execution_phase(
         self,
         turn: int,
         actor_views: Dict[str, ActorView],
@@ -423,7 +425,7 @@ class Simulation:
                 {"role": "user", "content": user_prompt},
             ]
 
-            response_str = self.llm_provider.complete(messages, self.config.llm.model, response_format={"type": "json_object"})
+            response_str = await self.llm_provider.complete(messages, self.config.llm.model, response_format={"type": "json_object"})
             
             try:
                 import json

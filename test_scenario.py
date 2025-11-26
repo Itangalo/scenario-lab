@@ -7,7 +7,7 @@ This script tests:
 - World state initialization
 - Basic simulation loop with phase logging
 """
-
+import asyncio
 from pathlib import Path
 from scenario_lab import Simulation
 
@@ -65,7 +65,7 @@ def test_scenario_loading():
         return False
 
 
-def test_simulation_run():
+async def test_simulation_run():
     """Test that the simulation runs without errors."""
     print("\nTesting simulation run...")
 
@@ -74,7 +74,7 @@ def test_simulation_run():
 
         # Run for 2 turns
         print(f"Running simulation for 2 turns...\n")
-        sim.run(2)
+        await sim.run(2)
 
         # Verify simulation completed (check that run_id exists)
         assert sim.run_id is not None
@@ -92,7 +92,7 @@ def test_simulation_run():
         return False
 
 
-def main():
+async def main():
     """Run all tests."""
     print("="*60)
     print("Scenario Lab V3 - Test Scenario Verification")
@@ -106,7 +106,7 @@ def main():
         return 1
 
     # Test running
-    running_ok = test_simulation_run()
+    running_ok = await test_simulation_run()
 
     if not running_ok:
         print("\nTests failed at running stage.")
@@ -120,4 +120,4 @@ def main():
 
 if __name__ == "__main__":
     import sys
-    sys.exit(main())
+    sys.exit(asyncio.run(main()))
