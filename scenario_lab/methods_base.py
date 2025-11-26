@@ -88,7 +88,7 @@ class ScenarioMethods(ABC):
 
         # Execute the action function
         action_func = self.action_registry[action_name]
-        interpretations = action_func(actor, function_call.arguments, state)
+        interpretations = action_func(actor, function_call.args, state)
 
         return interpretations
 

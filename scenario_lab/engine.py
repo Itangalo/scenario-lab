@@ -80,6 +80,20 @@ class Simulation:
         self.metrics_config = load_metrics_config(self.scenario_dir)
         self.events_config = load_events_config(self.scenario_dir)
 
+        if self.scenario_methods is None:
+            methods_path = self.scenario_dir / "methods.py"
+            if methods_path.exists():
+                import importlib.util
+                spec = importlib.util.spec_from_file_location("scenario_methods", methods_path)
+                module = importlib.util.module_from_spec(spec)
+                spec.loader.exec_module(module)
+                # Find the ScenarioMethods subclass and instantiate it
+                for name, obj in vars(module).items():
+                    if isinstance(obj, type) and issubclass(obj, ScenarioMethods) and obj is not ScenarioMethods:
+                        self.scenario_methods = obj()
+                        self.logger.info(f"Loaded scenario methods: {name}")
+                        break
+        
         # Load background context
         self.background_context = load_background_context(self.scenario_dir)
         self.actor_backgrounds = {

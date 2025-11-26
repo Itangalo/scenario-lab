@@ -55,11 +55,14 @@ class MockProvider:
             if message["role"] == "system":
                 system_prompt = message["content"]
                 break
+        
+        actor_name = self._get_current_actor(system_prompt)
+        all_actors = self.scenario_config.get("actors", [])
 
         if "Phase 1" in system_prompt:
-            return self._generate_phase1_response()
+            return self._generate_phase1_response(actor_name, all_actors)
         elif "Phase 2" in system_prompt:
-            return self._generate_phase2_response()
+            return self._generate_phase2_response(actor_name, all_actors)
         elif "Phase 3" in system_prompt:
             return self._generate_phase3_response()
         else:
@@ -73,40 +76,35 @@ class MockProvider:
         except IndexError:
             return None
 
-    def _generate_phase1_response(self) -> str:
+    def _generate_phase1_response(self, actor_name: str, all_actors: List[str]) -> str:
         """Generates a mock response for Phase 1 (communication)."""
-        # In Phase 1, actors can send messages. Let's make a mock message.
-        # This part of the prompt is not yet implemented in the engine,
-        # so this is a placeholder.
+        other_actors = [a for a in all_actors if a != actor_name]
+        recipient = other_actors[0] if other_actors else "other"
+        
         return json.dumps({
-            "reasoning": "I need to communicate with another actor.",
+            "reasoning": f"As {actor_name}, I need to communicate with another actor.",
             "messages": [
                 {
-                    "to": "China",
-                    "content": "This is a mock message from the USA.",
+                    "to": recipient,
+                    "content": f"This is a mock message from {actor_name}.",
                 }
             ]
         })
 
-
-    def _generate_phase2_response(self) -> str:
+    def _generate_phase2_response(self, actor_name: str, all_actors: List[str]) -> str:
         """Generates a mock response for Phase 2 (response)."""
-        # In Phase 2, actors can reply. Let's simulate a 50% chance of replying.
-        if random.random() > 0.5:
-            return json.dumps({
-                "reasoning": "I will reply to this message.",
-                "messages": [
-                    {
-                        "to": "USA",
-                        "content": "This is a mock reply from China.",
-                    }
-                ]
-            })
-        else:
-            return json.dumps({
-                "reasoning": "I will not reply.",
-                "messages": []
-            })
+        other_actors = [a for a in all_actors if a != actor_name]
+        recipient = other_actors[0] if other_actors else "other"
+
+        return json.dumps({
+            "reasoning": f"As {actor_name}, I will reply to this message.",
+            "messages": [
+                {
+                    "to": recipient,
+                    "content": f"This is a mock reply from {actor_name}.",
+                }
+            ]
+        })
 
 
     def _generate_phase3_response(self) -> str:
@@ -114,7 +112,7 @@ class MockProvider:
         response = {
             "reasoning": "Given the current situation, investing in research is prudent.",
             "actions": [
-                {"name": "invest_research", "arguments": {"amount": 50}}
+                {"name": "invest_research", "args": {"amount": 50}}
             ],
             "next_turn_goals": [
                 "Continue AI development",

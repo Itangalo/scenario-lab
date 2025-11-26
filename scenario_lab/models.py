@@ -287,7 +287,7 @@ class CommunicationRound(BaseModel):
 class FunctionCall(BaseModel):
     """A function call representing a concrete action."""
     name: str
-    arguments: Dict[str, Any]
+    args: Dict[str, Any]
 
 
 class ActorAction(BaseModel):
