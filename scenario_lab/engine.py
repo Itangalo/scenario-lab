@@ -234,8 +234,8 @@ class Simulation:
         # === POST-TURN SYNTHESIS ===
         self.logger.info("[POST-TURN] Starting synthesis")
         self._validate_actions(turn_actions)
-        self._execute_actions(turn, turn_actions)
-        self._synthesize_narrative(turn, turn_actions)
+        interpretations = self._execute_actions(turn, turn_actions)
+        await self._synthesize_narrative(turn, turn_actions, interpretations)
         self.logger.info("[POST-TURN] Complete")
 
         # Save turn state to disk
@@ -492,18 +492,22 @@ class Simulation:
 
         self.logger.info("All actions validated")
 
-    def _execute_actions(self, turn: int, turn_actions: TurnActions) -> None:
+    def _execute_actions(self, turn: int, turn_actions: TurnActions) -> List[str]:
         """
         Execute all validated actions.
 
         Args:
             turn: Current turn number
             turn_actions: Actions to execute
+            
+        Returns:
+            A list of interpretation strings.
         """
         if self.scenario_methods is None:
             self.logger.info("No scenario methods configured, skipping")
-            return
+            return []
         self.logger.info("Executing actions")
+        all_interpretations = []
 
         for action in turn_actions.actions:
             self.logger.info(f"Executing {len(action.function_calls)} action(s) for {action.actor}")
@@ -515,9 +519,7 @@ class Simulation:
                         function_call.model_dump(),
                         self.world_state
                     )
-
-                    # Store interpretations for Director
-                    # TODO: Pass to Director for narrative synthesis
+                    all_interpretations.extend(interpretations)
 
                 except Exception as e:
                     self.logger.error(f"Action execution failed: {e}")
@@ -528,23 +530,33 @@ class Simulation:
                 self.actor_goals[action.actor] = action.updated_goals
 
         self.logger.info("All actions executed")
+        return all_interpretations
 
-    def _synthesize_narrative(self, turn: int, turn_actions: TurnActions) -> None:
+    async def _synthesize_narrative(self, turn: int, turn_actions: TurnActions, interpretations: List[str]) -> None:
         """
         Use the Director to synthesize turn narrative.
 
         Args:
             turn: Current turn number
             turn_actions: Actions that occurred this turn
+            interpretations: A list of interpretation strings from the action methods.
         """
-        # TODO: Implement Director narrative synthesis
-        # For MVP, add a simple summary
-        self.logger.info("Synthesizing narrative (stub)")
-
-        summary = f"\n## Turn {turn} Summary\n\n"
-        summary += f"Actions taken by {len(turn_actions.actions)} actor(s).\n"
-
-        self.world_state.narrative_state += summary
+        self.logger.info("Synthesizing narrative")
+        from .director import Director
+        
+        director = Director(self.llm_provider, self.config.llm.model)
+        
+        # For now, events_triggered is empty.
+        # A more robust implementation would get this from _check_events
+        summary = await director.synthesize_turn(
+            turn_number=turn,
+            turn_actions=turn_actions,
+            interpretations=interpretations,
+            events_triggered=[],
+            previous_narrative=self.world_state.narrative_state,
+        )
+        
+        self.world_state.narrative_state += f"\n\n## Turn {turn} Summary\n{summary}"
 
     def _should_terminate(self) -> bool:
         """

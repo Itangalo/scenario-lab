@@ -1,8 +1,8 @@
-As the Director, your role is to synthesize the events of the turn into a compelling narrative.
+As the Director, your role is to synthesize the events of the turn into a compelling narrative history.
 
 **Turn Number:** {{ turn }}
 
-**Previous Narrative State:**
+**Previous Narrative State (or Epoch Summary):**
 ```
 {{ narrative }}
 ```
@@ -24,8 +24,14 @@ As the Director, your role is to synthesize the events of the turn into a compel
 
 **Your Task:**
 
-Write a brief, engaging summary of the turn's events to be appended to the main narrative. The summary should weave together the exogenous events, communications, and actor actions into a coherent story. Focus on the most significant developments and their immediate consequences.
+Write a brief, engaging summary of the turn's events to be appended to the main narrative. Your summary must adhere to the following rules:
+
+1.  **Style:** Write in the third person, past tense (e.g., "The United States invested...", not "The US is investing...").
+2.  **Focus:** Report on what *happened* as a result of actor actions, not what they were *thinking*. Use the provided interpretations to understand the outcome of actions.
+3.  **Integration:** Weave the interpretations of metric changes and other outcomes naturally into the narrative. For example, instead of "Metric X increased," write "Tensions in the region escalated."
+4.  **Conciseness:** Keep the summary to 2-4 paragraphs.
+5.  **Conclusion:** End with a brief "current situation" summary that sets the stage for the next turn.
 
 **Response Format:**
 
-Respond with a single block of text. Do not use markdown or any special formatting.
+Respond with a single block of text only. Do not use markdown or any special formatting.
