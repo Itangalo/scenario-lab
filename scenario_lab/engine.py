@@ -59,6 +59,7 @@ class Simulation:
         scenario_methods: Optional[ScenarioMethods] = None,
         run_id: Optional[str] = None,
         cli_provider: Optional[str] = None,
+        cli_model: Optional[str] = None,
     ):
         """
         Initialize the simulation engine.
@@ -68,6 +69,7 @@ class Simulation:
             scenario_methods: Optional scenario-specific action methods
             run_id: Optional run identifier (auto-generated if not provided)
             cli_provider: Optional provider override from the CLI
+            cli_model: Optional model override from the CLI
         """
         self.scenario_dir = Path(scenario_path)
         self.scenario_methods = scenario_methods
@@ -97,13 +99,18 @@ class Simulation:
                         self.scenario_methods = obj()
                         self.logger.info(f"Loaded scenario methods: {name}")
                         break
-        
+
         # Load background context
         self.background_context = load_background_context(self.scenario_dir)
         self.actor_backgrounds = {
             actor: load_actor_background(self.scenario_dir, actor)
             for actor in self.config.actors
         }
+
+        # Determine which model to use (CLI override or config)
+        self.model = cli_model or self.config.llm.model
+        if cli_model:
+            self.logger.info(f"Using CLI model override: {cli_model}")
 
         # Initialize LLM provider
         self.logger.info(f"Initializing LLM provider: {self.config.llm.provider}")
@@ -373,7 +380,7 @@ class Simulation:
                 {"role": "system", "content": system_prompt},
             ]
 
-            response_str = await self.llm_provider.complete(messages, self.config.llm.model)
+            response_str = await self.llm_provider.complete(messages, self.model)
             
             try:
                 import json
@@ -447,7 +454,7 @@ class Simulation:
                 {"role": "system", "content": system_prompt},
             ]
 
-            response_str = await self.llm_provider.complete(messages, self.config.llm.model, response_format={"type": "json_object"})
+            response_str = await self.llm_provider.complete(messages, self.model, response_format={"type": "json_object"})
             
             try:
                 import json
@@ -547,7 +554,7 @@ class Simulation:
         self.logger.info("Synthesizing narrative")
         from .director import Director
         
-        director = Director(self.llm_provider, self.config.llm.model)
+        director = Director(self.llm_provider, self.model)
         
         # For now, events_triggered is empty.
         # A more robust implementation would get this from _check_events

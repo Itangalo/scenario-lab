@@ -7,6 +7,7 @@ import logging
 import os
 import random
 from datetime import datetime
+from pathlib import Path
 from typing import List, Dict, Protocol, Optional
 
 import httpx
@@ -300,10 +301,21 @@ def get_provider(config: LLMConfig, scenario_config: Dict, cli_provider: Optiona
     provider_type = cli_provider or config.provider.lower()
     run_dir = run_dir or "."
 
+    # If provider was overridden via CLI, use appropriate default API key env var
+    if cli_provider and cli_provider.lower() != config.provider.lower():
+        api_key_env_map = {
+            "openrouter": "OPENROUTER_API_KEY",
+            "mock": "MOCK_API_KEY",
+            "local": None,  # Local doesn't need API key
+        }
+        api_key_env = api_key_env_map.get(provider_type)
+    else:
+        api_key_env = config.api_key_env
+
     if provider_type == "openrouter":
-        api_key = os.environ.get(config.api_key_env)
+        api_key = os.environ.get(api_key_env)
         if not api_key:
-            raise ValueError(f"API key env var {config.api_key_env} not set.")
+            raise ValueError(f"API key env var {api_key_env} not set.")
         return OpenRouterProvider(
             api_key=api_key,
             run_dir=run_dir,

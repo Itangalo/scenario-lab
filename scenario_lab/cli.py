@@ -19,6 +19,7 @@ def run_simulation(args):
             args.scenario_path,
             run_id=args.run_id,
             cli_provider="mock" if args.dry_run else args.provider,
+            cli_model=args.model,
         ).run(num_turns=args.turns)
     )
 
@@ -61,6 +62,7 @@ def main():
     run_parser.add_argument("--turns", type=int, help="Number of turns to run.")
     run_parser.add_argument("--run-id", help="Custom run ID.")
     run_parser.add_argument("--provider", help="Override LLM provider.")
+    run_parser.add_argument("--model", help="Override LLM model.")
     run_parser.add_argument("--verbose", action="store_true", help="Print detailed progress.")
     run_parser.add_argument("--dry-run", action="store_true", help="Run with MockProvider.")
     run_parser.set_defaults(func=run_simulation)
