@@ -72,6 +72,8 @@ class Simulation:
         self.scenario_dir = Path(scenario_path)
         self.scenario_methods = scenario_methods
         self.run_id = run_id or generate_run_id()
+        self.run_dir = self.scenario_dir / "runs" / self.run_id
+        self.run_dir.mkdir(parents=True, exist_ok=True)
 
         # Setup logging
         self.logger = setup_logging(self.scenario_dir.name, self.run_id)
@@ -106,7 +108,7 @@ class Simulation:
         # Initialize LLM provider
         self.logger.info(f"Initializing LLM provider: {self.config.llm.provider}")
         from .llm_provider import get_provider
-        self.llm_provider = get_provider(self.config.llm, self.config.model_dump(), cli_provider)
+        self.llm_provider = get_provider(self.config.llm, self.config.model_dump(), cli_provider, str(self.run_dir))
 
         # Initialize world state
         self.world_state = self._initialize_world_state()

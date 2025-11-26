@@ -6,6 +6,7 @@ import json
 import logging
 import os
 import random
+from datetime import datetime
 from typing import List, Dict, Protocol, Optional
 
 import httpx
@@ -57,9 +58,10 @@ class OpenRouterProvider:
     OpenRouter API provider.
     """
 
-    def __init__(self, api_key: str, base_url: str = "https://openrouter.ai/api/v1", 
+    def __init__(self, api_key: str, run_dir: str, base_url: str = "https://openrouter.ai/api/v1",
                  temperature: float = 0.7, max_tokens: int = 2000):
         self.api_key = api_key
+        self.run_dir = run_dir
         self.base_url = base_url
         self.temperature = temperature
         self.max_tokens = max_tokens
@@ -77,33 +79,37 @@ class OpenRouterProvider:
         """Sends a completion request to the OpenRouter API."""
         max_retries = 3
         base_delay = 1.0  # seconds
+        request_body = {
+            "model": model,
+            "messages": messages,
+            "response_format": response_format,
+            "temperature": self.temperature,
+            "max_tokens": self.max_tokens,
+        }
 
         for attempt in range(max_retries):
             try:
                 response = await self.client.post(
                     f"{self.base_url}/chat/completions",
-                    json={
-                        "model": model,
-                        "messages": messages,
-                        "response_format": response_format,
-                        "temperature": self.temperature,
-                        "max_tokens": self.max_tokens,
-                    },
+                    json=request_body,
                 )
                 response.raise_for_status()
+                
+                response_text = response.json()["choices"][0]["message"]["content"]
+                self._log_llm_call(request_body, response_text)
+                return response_text
 
-                try:
-                    data = response.json()
-                    return data["choices"][0]["message"]["content"]
-                except (json.JSONDecodeError, KeyError) as e:
-                    logger.error(f"Malformed JSON response: {response.text}")
-                    if attempt < max_retries - 1:
-                        messages.append({"role": "user", "content": "Please respond with valid JSON only."})
-                        continue
-                    else:
-                        raise LLMResponseError(f"Malformed JSON response after retry: {response.text}") from e
+            except (json.JSONDecodeError, KeyError) as e:
+                logger.error(f"Malformed JSON response: {response.text}")
+                self._log_llm_call(request_body, response.text, is_error=True)
+                if attempt < max_retries - 1:
+                    messages.append({"role": "user", "content": "Please respond with valid JSON only."})
+                    continue
+                else:
+                    raise LLMResponseError(f"Malformed JSON response after retry: {response.text}") from e
 
             except httpx.HTTPStatusError as e:
+                self._log_llm_call(request_body, e.response.text, is_error=True)
                 if e.response.status_code == 429:
                     delay = base_delay * (2 ** attempt)
                     logger.warning(f"Rate limit exceeded. Retrying in {delay:.2f} seconds...")
@@ -112,11 +118,24 @@ class OpenRouterProvider:
                 logger.error(f"HTTP error on attempt {attempt + 1}: {e.response.status_code} {e.response.text}")
                 raise LLMResponseError(f"HTTP error: {e.response.status_code}") from e
             except httpx.RequestError as e:
+                self._log_llm_call(request_body, str(e), is_error=True)
                 logger.error(f"Connection error on attempt {attempt + 1}: {e}")
                 if attempt == max_retries - 1:
                     raise LLMConnectionError("Failed to connect to LLM provider.") from e
 
         raise LLMResponseError("Failed to get a valid response after all retries.")
+
+    def _log_llm_call(self, request_body, response_text, is_error=False):
+        log_path = Path(self.run_dir) / "llm_log.jsonl"
+        with open(log_path, "a") as f:
+            log_entry = {
+                "timestamp": datetime.now().isoformat(),
+                "request": request_body,
+                "response": response_text,
+                "error": is_error,
+            }
+            f.write(json.dumps(log_entry) + "\n")
+
 
 
 class LocalProvider:
@@ -124,8 +143,9 @@ class LocalProvider:
     Local model provider.
     """
 
-    def __init__(self, base_url: str = "http://localhost:11434/v1", 
+    def __init__(self, run_dir: str, base_url: str = "http://localhost:11434/v1", 
                  temperature: float = 0.7, max_tokens: int = 2000):
+        self.run_dir = run_dir
         self.base_url = base_url
         self.temperature = temperature
         self.max_tokens = max_tokens
@@ -138,29 +158,45 @@ class LocalProvider:
         response_format: Optional[Dict] = None,
     ) -> str:
         """Sends a completion request to a local OpenAI-compatible endpoint."""
+        request_body = {
+            "model": model,
+            "messages": messages,
+            "response_format": response_format,
+            "temperature": self.temperature,
+            "max_tokens": self.max_tokens,
+        }
         try:
             response = await self.client.post(
                 f"{self.base_url}/chat/completions",
-                json={
-                    "model": model,
-                    "messages": messages,
-                    "response_format": response_format,
-                    "temperature": self.temperature,
-                    "max_tokens": self.max_tokens,
-                },
+                json=request_body,
             )
             response.raise_for_status()
-            data = response.json()
-            return data["choices"][0]["message"]["content"]
+            response_text = response.json()["choices"][0]["message"]["content"]
+            self._log_llm_call(request_body, response_text)
+            return response_text
         except httpx.HTTPStatusError as e:
+            self._log_llm_call(request_body, e.response.text, is_error=True)
             logger.error(f"HTTP error: {e.response.status_code} {e.response.text}")
             raise LLMResponseError(f"HTTP error: {e.response.status_code}") from e
         except httpx.RequestError as e:
+            self._log_llm_call(request_body, str(e), is_error=True)
             logger.error(f"Connection error: {e}")
             raise LLMConnectionError("Failed to connect to local LLM provider.") from e
         except (json.JSONDecodeError, KeyError) as e:
+            self._log_llm_call(request_body, response.text, is_error=True)
             logger.error(f"Malformed JSON response: {response.text}")
             raise LLMResponseError(f"Malformed JSON response: {response.text}") from e
+            
+    def _log_llm_call(self, request_body, response_text, is_error=False):
+        log_path = Path(self.run_dir) / "llm_log.jsonl"
+        with open(log_path, "a") as f:
+            log_entry = {
+                "timestamp": datetime.now().isoformat(),
+                "request": request_body,
+                "response": response_text,
+                "error": is_error,
+            }
+            f.write(json.dumps(log_entry) + "\n")
 
 
 class MockProvider:
@@ -169,9 +205,10 @@ class MockProvider:
     Returns deterministic responses for testing the simulation loop.
     """
 
-    def __init__(self, config: LLMConfig, scenario_config: Dict):
+    def __init__(self, config: LLMConfig, scenario_config: Dict, run_dir: str):
         self.config = config
         self.scenario_config = scenario_config
+        self.run_dir = run_dir
 
     async def complete(
         self,
@@ -256,11 +293,12 @@ class MockProvider:
         return json.dumps({"reasoning": "This is a default mock response.", "actions": [], "next_turn_goals": []})
 
 
-def get_provider(config: LLMConfig, scenario_config: Dict, cli_provider: Optional[str] = None) -> LLMProvider:
+def get_provider(config: LLMConfig, scenario_config: Dict, cli_provider: Optional[str] = None, run_dir: Optional[str] = None) -> LLMProvider:
     """
     Factory function to create the appropriate LLM provider.
     """
     provider_type = cli_provider or config.provider.lower()
+    run_dir = run_dir or "."
 
     if provider_type == "openrouter":
         api_key = os.environ.get(config.api_key_env)
@@ -268,15 +306,17 @@ def get_provider(config: LLMConfig, scenario_config: Dict, cli_provider: Optiona
             raise ValueError(f"API key env var {config.api_key_env} not set.")
         return OpenRouterProvider(
             api_key=api_key,
+            run_dir=run_dir,
             temperature=config.temperature,
             max_tokens=config.max_tokens
         )
     elif provider_type == "local":
         return LocalProvider(
+            run_dir=run_dir,
             temperature=config.temperature,
             max_tokens=config.max_tokens
         )
     elif provider_type == "mock":
-        return MockProvider(config, scenario_config)
+        return MockProvider(config, scenario_config, run_dir)
     else:
         raise ValueError(f"Unsupported provider type: {provider_type}")
