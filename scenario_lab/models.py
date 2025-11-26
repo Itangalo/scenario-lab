@@ -152,24 +152,38 @@ class WorldState(BaseModel):
             self.relationship_state[key] = RelationshipState()
         return self.relationship_state[key]
 
-    def get_metric(self, actor: Optional[str], key: str) -> float:
+    def get_metric(self, actor: Optional[str], path: str) -> Any:
         """Gets a metric from the world state."""
         if actor is None:
-            return self.metrics.world.get(key, 0.0)
+            return self.metrics.world.get(path, 0.0)
         
-        # For now, assume public metrics
-        # A more robust implementation would handle public/private
-        return self.metrics.actors.get(actor, ActorMetricsData()).public.get(key, 0.0)
+        if "." in path:
+            category, metric_name = path.split(".", 1)
+            if category == "private":
+                return self.metrics.actors.get(actor, ActorMetricsData()).private.get(metric_name, 0.0)
+            elif category == "public":
+                return self.metrics.actors.get(actor, ActorMetricsData()).public.get(metric_name, 0.0)
+        
+        return self.metrics.actors.get(actor, ActorMetricsData()).public.get(path, 0.0)
 
-    def set_metric(self, actor: Optional[str], key: str, value: float):
+    def set_metric(self, actor: Optional[str], path: str, value: Any):
         """Sets a metric in the world state."""
         if actor is None:
-            self.metrics.world[key] = value
+            self.metrics.world[path] = value
         else:
             if actor not in self.metrics.actors:
                 self.metrics.actors[actor] = ActorMetricsData()
-            # For now, assume public metrics
-            self.metrics.actors[actor].public[key] = value
+            
+            if "." in path:
+                category, metric_name = path.split(".", 1)
+                if category == "private":
+                    self.metrics.actors[actor].private[metric_name] = value
+                elif category == "public":
+                    self.metrics.actors[actor].public[metric_name] = value
+                else:
+                    self.metrics.actors[actor].public[path] = value
+            else:
+                self.metrics.actors[actor].public[path] = value
             
     def add_fact(self, fact: str, source: str = "unknown"):
         """Adds a fact to the fact ledger."""

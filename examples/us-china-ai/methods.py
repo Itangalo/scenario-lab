@@ -14,6 +14,7 @@ class USChinaAIRaceMethods(ScenarioMethods):
     def _register_actions(self) -> None:
         """Register all available actions for this scenario."""
         self.register_action("invest_ai_research", self.invest_ai_research)
+        self.register_action("invest_research", self.invest_ai_research)  # Alias for MockProvider-kompatibilitet
         self.register_action("invest_ai_safety", self.invest_ai_safety)
         self.register_action("impose_sanctions", self.impose_sanctions)
         self.register_action("form_alliance", self.form_alliance)
