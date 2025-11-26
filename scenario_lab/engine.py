@@ -76,7 +76,7 @@ class Simulation:
         self.run_dir.mkdir(parents=True, exist_ok=True)
 
         # Setup logging
-        self.logger = setup_logging(self.scenario_dir.name, self.run_id)
+        self.logger = setup_logging(self.scenario_dir.name, self.run_id, log_dir=self.run_dir)
 
         # Load configurations
         self.logger.info(f"Loading scenario from: {self.scenario_dir}")
@@ -122,6 +122,7 @@ class Simulation:
             actor: [] for actor in self.config.actors
         }
 
+        self.total_turns = 0
         self.logger.info(f"Engine initialized for run: {self.run_id}")
 
     def _initialize_world_state(self) -> WorldState:
@@ -180,11 +181,11 @@ class Simulation:
         Args:
             max_turns: Optional override for max turns
         """
-        total_turns = max_turns or self.config.max_turns
+        self.total_turns = max_turns or self.config.max_turns
 
-        self.logger.info(f"Starting simulation: {total_turns} turns")
+        self.logger.info(f"Starting simulation: {self.total_turns} turns")
 
-        for turn in range(1, total_turns + 1):
+        for turn in range(1, self.total_turns + 1):
             self.logger.info(f"\n{'='*60}")
             self.logger.info(f"TURN {turn}")
             self.logger.info(f"{'='*60}\n")
@@ -578,6 +579,7 @@ class Simulation:
         summary = {
             "scenario_name": self.config.name,
             "run_id": self.run_id,
+            "total_turns": self.total_turns,
             "outcome_flags": self.world_state.outcome_flags,
             "final_metrics": self.world_state.metrics.model_dump()
         }

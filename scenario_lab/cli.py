@@ -4,6 +4,7 @@ Command-line interface for Scenario Lab V3.
 import argparse
 import asyncio
 import json
+import os
 from pathlib import Path
 import logging
 
@@ -60,7 +61,6 @@ def main():
     run_parser.add_argument("--turns", type=int, help="Number of turns to run.")
     run_parser.add_argument("--run-id", help="Custom run ID.")
     run_parser.add_argument("--provider", help="Override LLM provider.")
-    run_parser.add_argument("--model", help="Override LLM model.")
     run_parser.add_argument("--verbose", action="store_true", help="Print detailed progress.")
     run_parser.add_argument("--dry-run", action="store_true", help="Run with MockProvider.")
     run_parser.set_defaults(func=run_simulation)
@@ -73,7 +73,7 @@ def main():
 
     args = parser.parse_args()
     
-    if args.verbose:
+    if hasattr(args, 'verbose') and args.verbose:
         logging.basicConfig(level=logging.INFO)
 
     args.func(args)
