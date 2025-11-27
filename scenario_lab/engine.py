@@ -550,8 +550,13 @@ class Simulation:
         """
         self.logger.info("Synthesizing narrative")
         from .director import Director
-        
-        director = Director(self.llm_provider, self.config.llm.model)
+
+        director = Director(
+            self.llm_provider,
+            self.config.llm.model,
+            self.config.time_scale,
+            self.config.start_date
+        )
         
         # For now, events_triggered is empty.
         # A more robust implementation would get this from _check_events

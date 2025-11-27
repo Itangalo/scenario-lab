@@ -119,6 +119,8 @@ state.set_outcome_flag("crisis_occurred", True)
 
 ```yaml
 name: "Scenario Name"
+description: "Brief description of the scenario"
+start_date: "2026-01-01"  # Optional but recommended - enables precise time periods
 time_scale: "6 months per turn"
 max_turns: 10
 
@@ -155,6 +157,28 @@ world_altering_triggers:
         key: "crisis_occurred"
         value: true
 ```
+
+**About `start_date`:**
+
+The `start_date` field (format: `YYYY-MM-DD`) is optional but highly recommended. When provided, the Director agent will generate narratives with specific time periods instead of generic phrases:
+
+**Without `start_date`:**
+- "Over the past six months, tensions increased..."
+- "Recently, the government announced..."
+
+**With `start_date: "2026-01-01"` and `time_scale: "6 months per turn"`:**
+- "During the first half of 2026, tensions increased..." (Turn 1)
+- "In the second half of 2026, the government announced..." (Turn 2)
+- "Throughout the first half of 2027, AI adoption accelerated..." (Turn 3)
+
+The system automatically calculates the correct time period based on:
+- **6 months, Jan-Jun:** "the first half of YEAR"
+- **6 months, Jul-Dec:** "the second half of YEAR"
+- **Other periods:** "March-May YEAR" or "January YEAR-June YEAR"
+
+**Supported time scales:**
+- `"6 months per turn"`, `"3 months per turn"`, `"1 year per turn"`, etc.
+
 
 ### metrics.yaml
 
@@ -477,9 +501,12 @@ state.set_outcome_flag("flag_name", True)
 ```yaml
 # YAML formats:
 
-# scenario.yaml actors - MUST be strings
+# scenario.yaml - key fields
+name: "Scenario Name"
+start_date: "2026-01-01"  # Optional - enables precise time periods
+time_scale: "6 months per turn"
 actors:
-  - actor-name
+  - actor-name  # MUST be strings, not objects
 
 # events.yaml - ONLY scheduled events work
 events:

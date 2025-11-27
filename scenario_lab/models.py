@@ -239,6 +239,7 @@ class ActionPointRules(BaseModel):
 class ScenarioConfig(BaseModel):
     """Main scenario configuration from scenario.yaml."""
     name: str
+    start_date: Optional[str] = None  # e.g., "2026-01-01"
     time_scale: str  # e.g., "6 months per turn"
     max_turns: int = 10
     actors: List[str]
