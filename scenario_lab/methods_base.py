@@ -272,6 +272,195 @@ class ScenarioMethods(ABC):
         """
         return state.get_relationship(actor1, actor2)
 
+    # === Generic Action Primitives for World Interpreter ===
+
+    def adjust_metric(
+        self,
+        state: WorldState,
+        metric_path: str,
+        magnitude: str,
+        direction: str,
+        reason: str = ""
+    ) -> float:
+        """
+        Adjust a metric by a magnitude (small/medium/large) in a direction.
+
+        This is a generic primitive used by the World Interpreter.
+
+        Args:
+            state: World state to modify
+            metric_path: Full path to metric (e.g., "actors.USA.private.budget")
+            magnitude: "small", "medium", or "large"
+            direction: "increase" or "decrease"
+            reason: Explanation for the change (for logging)
+
+        Returns:
+            New metric value after adjustment
+
+        Example:
+            adjust_metric(state, "actors.USA.private.budget", "medium", "decrease",
+                         "Major AI research investment")
+        """
+        import random
+
+        # Get current value
+        current_value = state.metrics.get_value(metric_path) or 0.0
+
+        # Get metadata for magnitude ranges
+        metadata = state.metrics.get_metadata(metric_path)
+
+        # Determine change range
+        if metadata and metadata.change_magnitudes:
+            if magnitude == "small":
+                change_range = metadata.change_magnitudes.small
+            elif magnitude == "medium":
+                change_range = metadata.change_magnitudes.medium
+            elif magnitude == "large":
+                change_range = metadata.change_magnitudes.large
+            else:
+                logger.warning(f"Unknown magnitude: {magnitude}, using default medium")
+                change_range = metadata.change_magnitudes.medium
+        else:
+            # Default ranges
+            default_ranges = {
+                "small": (0.01, 0.05),
+                "medium": (0.05, 0.15),
+                "large": (0.15, 0.5),
+            }
+            change_range = default_ranges.get(magnitude, (0.05, 0.15))
+
+        # Pick random value within range
+        change_fraction = random.uniform(*change_range)
+
+        # Apply randomness if specified in metadata
+        if metadata and metadata.randomness > 0:
+            variance = random.uniform(-metadata.randomness, metadata.randomness)
+            change_fraction *= (1 + variance)
+
+        # Calculate delta based on current value (percentage change)
+        if current_value != 0:
+            delta = abs(current_value) * change_fraction
+        else:
+            # If current value is 0, use absolute change (scaled by 100 as base)
+            delta = 100 * change_fraction
+
+        # Apply direction
+        if direction == "increase":
+            new_value = current_value + delta
+        elif direction == "decrease":
+            new_value = current_value - delta
+        else:
+            logger.warning(f"Unknown direction: {direction}, no change applied")
+            new_value = current_value
+
+        # Validate bounds
+        if metadata:
+            if metadata.min is not None:
+                new_value = max(new_value, metadata.min)
+            if metadata.max is not None:
+                new_value = min(new_value, metadata.max)
+
+        # Update the metric
+        state.metrics.set_value(metric_path, new_value)
+
+        logger.info(
+            f"Adjusted metric: {metric_path} "
+            f"{current_value:.2f} -> {new_value:.2f} "
+            f"({magnitude} {direction}, delta: {delta:.2f}) "
+            f"| {reason}"
+        )
+
+        return new_value
+
+    def set_metric_direct(
+        self,
+        state: WorldState,
+        metric_path: str,
+        value: float,
+        reason: str = ""
+    ) -> float:
+        """
+        Set a metric to an exact value.
+
+        Used for events or direct assignments (not typically by actors).
+
+        Args:
+            state: World state to modify
+            metric_path: Full path to metric
+            value: New value
+            reason: Explanation for the change
+
+        Returns:
+            The value that was set (after bounds validation)
+        """
+        # Get metadata for bounds
+        metadata = state.metrics.get_metadata(metric_path)
+
+        # Validate bounds
+        if metadata:
+            if metadata.min is not None:
+                value = max(value, metadata.min)
+            if metadata.max is not None:
+                value = min(value, metadata.max)
+
+        # Update the metric
+        old_value = state.metrics.get_value(metric_path) or 0.0
+        state.metrics.set_value(metric_path, value)
+
+        logger.info(
+            f"Set metric: {metric_path} "
+            f"{old_value:.2f} -> {value:.2f} "
+            f"| {reason}"
+        )
+
+        return value
+
+    def apply_random_variation(
+        self,
+        state: WorldState,
+        metric_path: str
+    ) -> float:
+        """
+        Apply random variation to a metric based on its randomness setting.
+
+        Used during post-turn processing to add stochastic elements.
+
+        Args:
+            state: World state to modify
+            metric_path: Full path to metric
+
+        Returns:
+            New metric value after variation
+        """
+        import random
+
+        metadata = state.metrics.get_metadata(metric_path)
+        if not metadata or metadata.randomness == 0:
+            # No randomness configured
+            return state.metrics.get_value(metric_path) or 0.0
+
+        current_value = state.metrics.get_value(metric_path) or 0.0
+
+        # Apply randomness as variance
+        variance = random.uniform(-metadata.randomness, metadata.randomness)
+        new_value = current_value * (1 + variance)
+
+        # Validate bounds
+        if metadata.min is not None:
+            new_value = max(new_value, metadata.min)
+        if metadata.max is not None:
+            new_value = min(new_value, metadata.max)
+
+        state.metrics.set_value(metric_path, new_value)
+
+        logger.debug(
+            f"Applied random variation: {metric_path} "
+            f"{current_value:.2f} -> {new_value:.2f} "
+            f"(randomness: {metadata.randomness})"
+        )
+
+        return new_value
+
 
 class EmptyScenarioMethods(ScenarioMethods):
     """

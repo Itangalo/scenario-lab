@@ -117,6 +117,20 @@ class Simulation:
         # Initialize world state
         self.world_state = self._initialize_world_state()
 
+        # Initialize World Interpreter (for narrative-driven mechanics)
+        from .world_interpreter import WorldInterpreter
+        self.world_interpreter = WorldInterpreter(
+            llm_provider=self.llm_provider,
+            model=self.config.llm.model,
+        )
+
+        # Initialize Dependency Engine
+        from .dependency_engine import DependencyEngine
+        self.dependency_engine = DependencyEngine()
+
+        # Track metric changes for dependency resolution
+        self.metric_change_log: List = []
+
         # Track actor action points
         self.actor_ap: Dict[str, int] = {}
         self._reset_action_points()
@@ -125,6 +139,10 @@ class Simulation:
         self.actor_goals: Dict[str, List[str]] = {
             actor: [] for actor in self.config.actors
         }
+
+        # Mode: 'legacy' uses function calls, 'narrative' uses World Interpreter
+        # Can be set in scenario.yaml or defaulted to 'narrative'
+        self.execution_mode = getattr(self.config, 'execution_mode', 'narrative')
 
         self.total_turns = 0
         self.logger.info(f"Engine initialized for run: {self.run_id}")
@@ -140,12 +158,23 @@ class Simulation:
 
         # Import Metrics model
         from .models import Metrics
+        from .utils import parse_enhanced_metrics, load_yaml
 
-        # Initialize metrics from config
+        # Try to parse enhanced metrics if available
+        metrics_path = self.scenario_dir / "metrics.yaml"
+        raw_metrics_data = load_yaml(metrics_path)
+
+        # Parse metrics and extract metadata
+        metrics_dict, metadata_registry = parse_enhanced_metrics(raw_metrics_data)
+
+        # Initialize metrics from parsed data
         metrics = Metrics(
-            world=self.metrics_config.world,
-            actors=self.metrics_config.actors
+            world=metrics_dict.get("world", {}),
+            actors=metrics_dict.get("actors", {}),
+            metadata_registry=metadata_registry
         )
+
+        self.logger.info(f"Loaded {len(metadata_registry)} enhanced metrics with metadata")
 
         # Create initial narrative state from background
         narrative = f"# Background\n\n{self.background_context}\n\n# Turn 0: Initial State\n\n"
@@ -233,15 +262,24 @@ class Simulation:
 
         # === PHASE 3: Execution & Goal Adjustment ===
         self.logger.info("[PHASE 3] Execution & Goal Adjustment")
-        turn_actions = await self._run_execution_phase(
-            turn, actor_views, comms_phase_1.messages + comms_phase_2.messages
-        )
+
+        if self.execution_mode == "narrative":
+            # Narrative-driven execution using World Interpreter
+            turn_actions, interpretations = await self._run_execution_phase_narrative(
+                turn, actor_views, comms_phase_1.messages + comms_phase_2.messages
+            )
+        else:
+            # Legacy function-call based execution
+            turn_actions = await self._run_execution_phase(
+                turn, actor_views, comms_phase_1.messages + comms_phase_2.messages
+            )
+            self._validate_actions(turn_actions)
+            interpretations = self._execute_actions(turn, turn_actions)
+
         self.logger.info("[PHASE 3] Complete")
 
         # === POST-TURN SYNTHESIS ===
         self.logger.info("[POST-TURN] Starting synthesis")
-        self._validate_actions(turn_actions)
-        interpretations = self._execute_actions(turn, turn_actions)
         await self._synthesize_narrative(turn, turn_actions, interpretations)
         self.logger.info("[POST-TURN] Complete")
 
@@ -257,7 +295,42 @@ class Simulation:
             turn_actions
         )
 
+        # Save metric change log if in narrative mode
+        if self.execution_mode == "narrative" and self.metric_change_log:
+            self._save_metric_change_log(turn)
+
         self.logger.info(f"Turn {turn} complete\n")
+
+    def _save_metric_change_log(self, turn: int) -> None:
+        """Save metric change log for debugging."""
+        import json
+        turn_dir = self.run_dir / f"turn-{turn:02d}"
+        turn_dir.mkdir(parents=True, exist_ok=True)
+
+        log_path = turn_dir / "metric_changes.json"
+
+        # Convert to serializable format
+        changes = [
+            {
+                "turn": log.turn,
+                "actor": log.actor,
+                "metric_path": log.metric_path,
+                "old_value": log.old_value,
+                "new_value": log.new_value,
+                "operation": log.change_request.operation,
+                "magnitude": log.change_request.magnitude,
+                "direction": log.change_request.direction,
+                "reasoning": log.change_request.reasoning,
+                "applied_at": log.applied_at.isoformat(),
+            }
+            for log in self.metric_change_log
+            if log.turn == turn
+        ]
+
+        with open(log_path, "w") as f:
+            json.dump(changes, f, indent=2)
+
+        self.logger.info(f"Saved {len(changes)} metric changes to {log_path}")
 
     # === Pre-Turn Methods ===
 
@@ -472,6 +545,199 @@ class Simulation:
                 self.logger.error(f"Failed to decode LLM response for {actor_name}: {response_str}")
 
         return TurnActions(turn=turn, actions=all_actions)
+
+    async def _run_execution_phase_narrative(
+        self,
+        turn: int,
+        actor_views: Dict[str, ActorView],
+        all_messages: List[Message]
+    ) -> tuple[TurnActions, List[str]]:
+        """
+        Run the narrative-driven execution phase using the World Interpreter.
+
+        Instead of expecting function calls, actors provide free-form narratives
+        that are translated into mechanical consequences by the World Interpreter.
+
+        Returns:
+            Tuple of (TurnActions, interpretations)
+        """
+        self.logger.info("Running narrative-driven execution phase")
+        from .models import MetricChangeLog
+        all_actions = []
+        all_interpretations = []
+        all_changed_metrics = []
+
+        for actor_name, actor_view in actor_views.items():
+            self.logger.info(f"Processing narrative for {actor_name}")
+
+            # Get actor narrative
+            system_prompt = self._construct_system_prompt_narrative(actor_view, all_messages)
+
+            messages = [
+                {"role": "system", "content": system_prompt},
+            ]
+
+            response_str = await self.llm_provider.complete(
+                messages,
+                self.config.llm.model,
+                response_format={"type": "json_object"}
+            )
+
+            try:
+                import json
+                response_data = json.loads(response_str)
+
+                narrative = response_data.get("actions_narrative", "")
+                reasoning = response_data.get("reasoning", "")
+                updated_goals = response_data.get("next_turn_goals", [])
+
+                # Create action record (no function calls in narrative mode)
+                new_action = ActorAction(
+                    actor=actor_name,
+                    narrative=f"{reasoning}\n\nActions: {narrative}",
+                    function_calls=[],  # Empty in narrative mode
+                    updated_goals=updated_goals,
+                )
+                all_actions.append(new_action)
+
+                # Interpret narrative into metric changes
+                interpreter_output = await self.world_interpreter.interpret_narrative(
+                    actor=actor_name,
+                    narrative=narrative,
+                    actor_view=actor_view,
+                    full_metrics=self.world_state.metrics,
+                )
+
+                # Log interpreter output
+                self.logger.info(f"Interpreter confidence: {interpreter_output.confidence:.2f}")
+                self.logger.info(f"Proposed {len(interpreter_output.metric_changes)} metric changes")
+
+                # Validate and apply each metric change
+                for change in interpreter_output.metric_changes:
+                    # Validate
+                    is_valid, reason = self.world_interpreter.validate_change(
+                        actor_name, change, self.world_state.metrics
+                    )
+
+                    if not is_valid:
+                        self.logger.warning(
+                            f"Metric change rejected: {change.metric} - {reason}"
+                        )
+                        continue
+
+                    # Get old value
+                    old_value = self.world_state.metrics.get_value(change.metric) or 0.0
+
+                    # Apply change
+                    new_value = self.world_interpreter.apply_change(
+                        change, self.world_state.metrics
+                    )
+
+                    # Log the change
+                    change_log = MetricChangeLog(
+                        turn=turn,
+                        actor=actor_name,
+                        metric_path=change.metric,
+                        old_value=old_value,
+                        new_value=new_value,
+                        change_request=change,
+                    )
+                    self.metric_change_log.append(change_log)
+                    all_changed_metrics.append(change.metric)
+
+                    self.logger.info(
+                        f"Applied: {change.metric} {old_value:.2f} -> {new_value:.2f} "
+                        f"({change.magnitude} {change.direction}) | {change.reasoning}"
+                    )
+
+                # Add interpretation for Director
+                all_interpretations.append(interpreter_output.interpretation)
+
+                # Update actor goals
+                if updated_goals:
+                    self.actor_goals[actor_name] = updated_goals
+
+            except json.JSONDecodeError as e:
+                self.logger.error(f"Failed to decode LLM response for {actor_name}: {e}")
+            except Exception as e:
+                self.logger.error(f"Error processing narrative for {actor_name}: {e}")
+                import traceback
+                self.logger.error(traceback.format_exc())
+
+        # Apply dependencies triggered by metric changes
+        if all_changed_metrics:
+            self.logger.info(f"Applying dependencies for {len(set(all_changed_metrics))} changed metrics")
+            self.dependency_engine.apply_dependencies(self.world_state, list(set(all_changed_metrics)))
+
+        return TurnActions(turn=turn, actions=all_actions), all_interpretations
+
+    def _construct_system_prompt_narrative(
+        self,
+        actor_view: ActorView,
+        all_messages: List[Message]
+    ) -> str:
+        """
+        Construct system prompt for narrative-driven execution phase.
+
+        Different from legacy mode - asks for free-form narrative instead of function calls.
+        """
+        messages_str = "\n".join([
+            f"From {msg.from_actor} to {msg.to_actor}: {msg.content}"
+            for msg in all_messages if msg.is_visible_to(actor_view.actor_name)
+        ])
+
+        # Format metrics
+        metrics_lines = ["WORLD METRICS:"]
+        for key, value in actor_view.visible_metrics.world.items():
+            metrics_lines.append(f"  {key}: {value}")
+
+        metrics_lines.append(f"\nYOUR METRICS ({actor_view.actor_name}):")
+        actor_metrics = actor_view.visible_metrics.actors.get(actor_view.actor_name)
+        if actor_metrics:
+            if actor_metrics.public:
+                metrics_lines.append("  PUBLIC:")
+                for key, value in actor_metrics.public.items():
+                    metrics_lines.append(f"    {key}: {value}")
+            if actor_metrics.private:
+                metrics_lines.append("  PRIVATE:")
+                for key, value in actor_metrics.private.items():
+                    metrics_lines.append(f"    {key}: {value}")
+
+        metrics_str = "\n".join(metrics_lines)
+
+        prompt = f"""You are playing the role of {actor_view.actor_name} in a strategic simulation.
+
+CURRENT SITUATION:
+{actor_view.narrative_state}
+
+{metrics_str}
+
+YOUR CURRENT GOALS:
+{chr(10).join(f"- {goal}" for goal in actor_view.current_goals) if actor_view.current_goals else "No specific goals set"}
+
+RECENT COMMUNICATIONS:
+{messages_str if messages_str else "No recent communications"}
+
+YOUR TASK:
+Describe what actions you will take this turn in free-form narrative. You do NOT need to specify exact function calls or metrics changes. Instead, describe your intentions and strategies naturally.
+
+The World Interpreter will translate your narrative into mechanical consequences.
+
+EXAMPLES OF GOOD NARRATIVES:
+- "We will invest heavily in AI safety research while lobbying international partners to strengthen regulation. We're also prepared to reduce military spending to fund these initiatives."
+- "Our priority is economic growth. We'll push for aggressive AI adoption in industry, even if it means some job displacement. We'll provide minimal support for displaced workers."
+- "We take a balanced approach: moderate AI investment, strong safety measures, and proactive dialogue with labor unions to manage the transition."
+
+OUTPUT FORMAT (JSON):
+{{
+  "reasoning": "Your strategic thinking and analysis of the situation",
+  "actions_narrative": "Free-form description of what you will do this turn",
+  "next_turn_goals": ["Updated list of goals for next turn"]
+}}
+
+Be strategic, consider the consequences of your actions, and stay true to your organization's interests."""
+
+        return prompt
 
     # === Post-Turn Methods ===
 

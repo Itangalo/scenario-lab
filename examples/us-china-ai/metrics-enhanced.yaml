@@ -1,0 +1,287 @@
+# Enhanced Metrics Configuration for US-China-AI Scenario
+# Demonstrates World Interpreter features: bounds, magnitudes, randomness, dependencies
+
+world:
+  global_temperature:
+    value: 1.2
+    min: 0.0
+    max: 3.0
+    unit: "degrees_celsius"
+    description: "Global temperature increase above pre-industrial levels"
+    change_magnitudes:
+      small: [0.01, 0.03]
+      medium: [0.03, 0.08]
+      large: [0.08, 0.2]
+    randomness: 0.05  # 5% variance due to natural variability
+
+  ai_catastrophe_risk:
+    value: 0.1
+    min: 0.0
+    max: 1.0
+    unit: "probability"
+    description: "Probability of catastrophic AI incident"
+    change_magnitudes:
+      small: [0.01, 0.03]
+      medium: [0.03, 0.08]
+      large: [0.08, 0.2]
+    randomness: 0.1  # High uncertainty in AI risk
+    dependencies:
+      # Risk decreases as regulation increases
+      - metric: "world.global_ai_regulation"
+        type: "multiplicative"
+        coefficient: 0.95  # 5% reduction per point of regulation
+        condition: "> 0.3"
+
+  global_ai_regulation:
+    value: 0.2
+    min: 0.0
+    max: 1.0
+    unit: "index_0_to_1"
+    description: "Strength of international AI regulation"
+    change_magnitudes:
+      small: [0.01, 0.05]
+      medium: [0.05, 0.15]
+      large: [0.15, 0.3]
+    randomness: 0.05
+
+actors:
+  USA:
+    public:
+      budget:
+        value: 1000
+        min: 0
+        max: 5000
+        unit: "billion_usd"
+        description: "Available budget for AI initiatives"
+        change_magnitudes:
+          small: [0.02, 0.05]    # 2-5% of budget
+          medium: [0.05, 0.15]   # 5-15% of budget
+          large: [0.15, 0.4]     # 15-40% of budget
+        randomness: 0.03
+
+      international_influence:
+        value: 90
+        min: 0
+        max: 100
+        unit: "index_0_to_100"
+        description: "Global diplomatic influence"
+        change_magnitudes:
+          small: [0.01, 0.03]
+          medium: [0.03, 0.08]
+          large: [0.08, 0.2]
+        randomness: 0.05
+        dependencies:
+          # Influence benefits from high budget
+          - metric: "actors.USA.public.budget"
+            type: "additive"
+            coefficient: 0.005  # +0.5 influence per 100 billion budget
+            condition: "> 1000"
+
+      public_trust:
+        value: 0.6
+        min: 0.0
+        max: 1.0
+        unit: "index_0_to_1"
+        description: "Public trust in government AI policy"
+        change_magnitudes:
+          small: [0.01, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.3]
+        randomness: 0.15  # Public opinion is volatile
+
+    private:
+      ai_capability:
+        value: 85
+        min: 0
+        max: 200
+        unit: "capability_points"
+        description: "Advanced AI research capability"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.3]
+        randomness: 0.1  # Research outcomes uncertain
+
+      ai_safety_research:
+        value: 50
+        min: 0
+        max: 200
+        unit: "safety_points"
+        description: "AI safety and alignment research"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.4]
+        randomness: 0.12
+
+      military_capacity:
+        value: 100
+        min: 0
+        max: 200
+        unit: "military_points"
+        description: "Military AI capabilities"
+        change_magnitudes:
+          small: [0.01, 0.03]
+          medium: [0.03, 0.1]
+          large: [0.1, 0.25]
+        randomness: 0.05
+
+  China:
+    public:
+      budget:
+        value: 1200
+        min: 0
+        max: 5000
+        unit: "billion_usd"
+        description: "Available budget for AI initiatives"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.4]
+        randomness: 0.03
+
+      international_influence:
+        value: 75
+        min: 0
+        max: 100
+        unit: "index_0_to_100"
+        description: "Global diplomatic influence"
+        change_magnitudes:
+          small: [0.01, 0.03]
+          medium: [0.03, 0.08]
+          large: [0.08, 0.2]
+        randomness: 0.05
+        dependencies:
+          - metric: "actors.China.public.budget"
+            type: "additive"
+            coefficient: 0.005
+            condition: "> 1000"
+
+      public_trust:
+        value: 0.8
+        min: 0.0
+        max: 1.0
+        unit: "index_0_to_1"
+        description: "Public trust in government AI policy"
+        change_magnitudes:
+          small: [0.01, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.3]
+        randomness: 0.1
+
+    private:
+      ai_capability:
+        value: 80
+        min: 0
+        max: 200
+        unit: "capability_points"
+        description: "Advanced AI research capability"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.3]
+        randomness: 0.1
+
+      ai_safety_research:
+        value: 40
+        min: 0
+        max: 200
+        unit: "safety_points"
+        description: "AI safety and alignment research"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.4]
+        randomness: 0.12
+
+      military_capacity:
+        value: 80
+        min: 0
+        max: 200
+        unit: "military_points"
+        description: "Military AI capabilities"
+        change_magnitudes:
+          small: [0.01, 0.03]
+          medium: [0.03, 0.1]
+          large: [0.1, 0.25]
+        randomness: 0.05
+
+  EU:
+    public:
+      budget:
+        value: 800
+        min: 0
+        max: 5000
+        unit: "billion_usd"
+        description: "Available budget for AI initiatives"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.4]
+        randomness: 0.04
+
+      international_influence:
+        value: 60
+        min: 0
+        max: 100
+        unit: "index_0_to_100"
+        description: "Global diplomatic influence"
+        change_magnitudes:
+          small: [0.01, 0.03]
+          medium: [0.03, 0.08]
+          large: [0.08, 0.2]
+        randomness: 0.05
+        dependencies:
+          - metric: "actors.EU.public.budget"
+            type: "additive"
+            coefficient: 0.005
+            condition: "> 800"
+
+      public_trust:
+        value: 0.7
+        min: 0.0
+        max: 1.0
+        unit: "index_0_to_1"
+        description: "Public trust in government AI policy"
+        change_magnitudes:
+          small: [0.01, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.3]
+        randomness: 0.12
+
+    private:
+      ai_capability:
+        value: 60
+        min: 0
+        max: 200
+        unit: "capability_points"
+        description: "Advanced AI research capability"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.3]
+        randomness: 0.1
+
+      ai_safety_research:
+        value: 60
+        min: 0
+        max: 200
+        unit: "safety_points"
+        description: "AI safety and alignment research"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.4]
+        randomness: 0.12
+
+      military_capacity:
+        value: 40
+        min: 0
+        max: 200
+        unit: "military_points"
+        description: "Military AI capabilities"
+        change_magnitudes:
+          small: [0.01, 0.03]
+          medium: [0.03, 0.1]
+          large: [0.1, 0.25]
+        randomness: 0.05
