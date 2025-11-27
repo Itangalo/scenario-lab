@@ -59,6 +59,7 @@ class Simulation:
         scenario_methods: Optional[ScenarioMethods] = None,
         run_id: Optional[str] = None,
         cli_provider: Optional[str] = None,
+        cli_model: Optional[str] = None,
     ):
         """
         Initialize the simulation engine.
@@ -68,6 +69,7 @@ class Simulation:
             scenario_methods: Optional scenario-specific action methods
             run_id: Optional run identifier (auto-generated if not provided)
             cli_provider: Optional provider override from the CLI
+            cli_model: Optional model override from the CLI
         """
         self.scenario_dir = Path(scenario_path)
         self.scenario_methods = scenario_methods
@@ -83,6 +85,8 @@ class Simulation:
         self.config = load_scenario_config(self.scenario_dir)
         self.metrics_config = load_metrics_config(self.scenario_dir)
         self.events_config = load_events_config(self.scenario_dir)
+        if cli_model:
+            self.config.llm.model = cli_model
 
         if self.scenario_methods is None:
             methods_path = self.scenario_dir / "methods.py"
