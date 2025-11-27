@@ -49,12 +49,92 @@ class Actor(BaseModel):
 
 # === Metrics Models ===
 
+class ChangeMagnitude(BaseModel):
+    """Range for a magnitude of change (small/medium/large)."""
+    small: tuple[float, float] = (0.01, 0.05)
+    medium: tuple[float, float] = (0.05, 0.15)
+    large: tuple[float, float] = (0.15, 0.5)
+
+
+class MetricDependency(BaseModel):
+    """Dependency relationship between metrics."""
+    metric: str  # Path to dependent metric (e.g., "world.ai_catastrophe_risk")
+    type: Literal["additive", "multiplicative"] = "additive"
+    coefficient: float = 1.0
+    condition: Optional[str] = None  # e.g., "> 50", "< 0.5"
+
+
+class MetricMetadata(BaseModel):
+    """
+    Metadata for a metric in the enhanced schema.
+
+    Defines constraints, change magnitudes, randomness, and dependencies.
+    """
+    min: Optional[float] = None
+    max: Optional[float] = None
+    unit: Optional[str] = None
+    description: Optional[str] = None
+    change_magnitudes: Optional[ChangeMagnitude] = None
+    randomness: float = Field(default=0.0, ge=0.0, le=1.0)
+    dependencies: List[MetricDependency] = Field(default_factory=list)
+
+
+class EnhancedMetric(BaseModel):
+    """
+    A metric with value and metadata.
+
+    Supports both simple (value only) and enhanced (value + metadata) formats.
+    """
+    value: float
+    metadata: Optional[MetricMetadata] = None
+
+    @classmethod
+    def from_simple(cls, value: float) -> "EnhancedMetric":
+        """Create from simple numeric value."""
+        return cls(value=value)
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "EnhancedMetric":
+        """Create from YAML dict with value + metadata fields."""
+        if isinstance(data, (int, float)):
+            return cls.from_simple(float(data))
+
+        value = data.get("value")
+        if value is None:
+            raise ValueError("Enhanced metric must have 'value' field")
+
+        metadata_dict = {k: v for k, v in data.items() if k != "value"}
+        metadata = MetricMetadata(**metadata_dict) if metadata_dict else None
+
+        return cls(value=value, metadata=metadata)
+
+    def get_change_range(self, magnitude: Literal["small", "medium", "large"]) -> tuple[float, float]:
+        """Get the change range for a given magnitude."""
+        if self.metadata and self.metadata.change_magnitudes:
+            return getattr(self.metadata.change_magnitudes, magnitude)
+
+        # Default ranges if not specified
+        defaults = ChangeMagnitude()
+        return getattr(defaults, magnitude)
+
+    def validate_bounds(self, new_value: float) -> float:
+        """Validate and clamp value to bounds if specified."""
+        if self.metadata:
+            if self.metadata.min is not None and new_value < self.metadata.min:
+                return self.metadata.min
+            if self.metadata.max is not None and new_value > self.metadata.max:
+                return self.metadata.max
+        return new_value
+
+
 class ActorMetricsData(BaseModel):
     """
     Metrics for a single actor with private/public split.
 
     Private metrics: Only visible to the actor
     Public metrics: Visible to all actors
+
+    Supports both simple (Dict[str, float]) and enhanced (Dict[str, EnhancedMetric]) formats.
     """
     private: Dict[str, Any] = Field(default_factory=dict)
     public: Dict[str, Any] = Field(default_factory=dict)
@@ -67,9 +147,97 @@ class Metrics(BaseModel):
     Structure:
     - world: Global metrics visible to all (e.g., temperature, risk levels)
     - actors: Per-actor metrics with private/public split
+    - metadata_registry: Maps metric paths to their metadata (for enhanced metrics)
     """
     world: Dict[str, Any] = Field(default_factory=dict)
     actors: Dict[str, ActorMetricsData] = Field(default_factory=dict)
+    metadata_registry: Dict[str, MetricMetadata] = Field(default_factory=dict)
+
+    def get_metadata(self, path: str) -> Optional[MetricMetadata]:
+        """Get metadata for a metric by path (e.g., 'world.temperature' or 'actors.USA.private.budget')."""
+        return self.metadata_registry.get(path)
+
+    def set_metadata(self, path: str, metadata: MetricMetadata) -> None:
+        """Set metadata for a metric path."""
+        self.metadata_registry[path] = metadata
+
+    def get_value(self, path: str) -> Optional[float]:
+        """
+        Get numeric value from a metric path.
+
+        Handles both simple (float) and enhanced (EnhancedMetric) formats.
+        """
+        parts = path.split(".")
+        if parts[0] == "world":
+            metric_name = ".".join(parts[1:])
+            value = self.world.get(metric_name)
+        elif parts[0] == "actors" and len(parts) >= 3:
+            actor = parts[1]
+            visibility = parts[2]  # 'private' or 'public'
+            metric_name = ".".join(parts[3:]) if len(parts) > 3 else parts[2]
+
+            if actor not in self.actors:
+                return None
+
+            actor_data = self.actors[actor]
+            if visibility == "private":
+                value = actor_data.private.get(metric_name)
+            elif visibility == "public":
+                value = actor_data.public.get(metric_name)
+            else:
+                # Assume public if not specified
+                value = actor_data.public.get(visibility)
+        else:
+            return None
+
+        # Handle EnhancedMetric vs simple value
+        if isinstance(value, EnhancedMetric):
+            return value.value
+        elif isinstance(value, (int, float)):
+            return float(value)
+        return value
+
+    def set_value(self, path: str, value: float) -> None:
+        """
+        Set numeric value for a metric path.
+
+        Maintains existing metadata if present.
+        """
+        parts = path.split(".")
+        if parts[0] == "world":
+            metric_name = ".".join(parts[1:])
+            metadata = self.get_metadata(path)
+            if metadata:
+                self.world[metric_name] = EnhancedMetric(value=value, metadata=metadata)
+            else:
+                self.world[metric_name] = value
+        elif parts[0] == "actors" and len(parts) >= 3:
+            actor = parts[1]
+            visibility = parts[2]
+            metric_name = ".".join(parts[3:]) if len(parts) > 3 else parts[2]
+
+            if actor not in self.actors:
+                self.actors[actor] = ActorMetricsData()
+
+            metadata = self.get_metadata(path)
+            actor_data = self.actors[actor]
+
+            if visibility == "private":
+                if metadata:
+                    actor_data.private[metric_name] = EnhancedMetric(value=value, metadata=metadata)
+                else:
+                    actor_data.private[metric_name] = value
+            elif visibility == "public":
+                if metadata:
+                    actor_data.public[metric_name] = EnhancedMetric(value=value, metadata=metadata)
+                else:
+                    actor_data.public[metric_name] = value
+            else:
+                # Assume public if not specified
+                if metadata:
+                    actor_data.public[visibility] = EnhancedMetric(value=value, metadata=metadata)
+                else:
+                    actor_data.public[visibility] = value
 
     def get_actor_metric(self, actor: str, metric: str, private: bool = False) -> Any:
         """
@@ -324,6 +492,48 @@ class CommunicationRound(BaseModel):
     """All communications in a phase."""
     phase: int
     messages: List[Message] = Field(default_factory=list)
+
+
+# === World Interpreter Models ===
+
+class MetricChange(BaseModel):
+    """
+    A single metric change requested by the World Interpreter.
+
+    Represents how an actor's narrative translates to a mechanical change.
+    """
+    metric: str  # Full path (e.g., "world.temperature" or "actors.USA.private.budget")
+    operation: Literal["adjust", "set"] = "adjust"
+    magnitude: Optional[Literal["small", "medium", "large"]] = None  # For adjust operation
+    direction: Optional[Literal["increase", "decrease"]] = None  # For adjust operation
+    value: Optional[float] = None  # For set operation
+    reasoning: str  # Why this change makes sense given the narrative
+
+
+class InterpreterOutput(BaseModel):
+    """
+    Output from the World Interpreter after processing an actor's narrative.
+
+    Contains structured metric changes and an interpretation for the Director.
+    """
+    metric_changes: List[MetricChange] = Field(default_factory=list)
+    interpretation: str  # Narrative summary for Director synthesis
+    confidence: float = Field(default=1.0, ge=0.0, le=1.0)  # How confident the interpretation is
+
+
+class MetricChangeLog(BaseModel):
+    """
+    Log entry tracking a metric change for debugging.
+
+    Records before/after values, the change request, and why it was applied.
+    """
+    turn: int
+    actor: str
+    metric_path: str
+    old_value: float
+    new_value: float
+    change_request: MetricChange
+    applied_at: datetime = Field(default_factory=datetime.now)
 
 
 # === Action Models ===

@@ -106,6 +106,118 @@ def load_metrics_config(scenario_dir: Path) -> MetricsConfig:
     return MetricsConfig(**data)
 
 
+def parse_enhanced_metrics(data: dict):
+    """
+    Parse enhanced metrics format and extract values + metadata.
+
+    Handles both simple (value only) and enhanced (value + metadata) formats.
+
+    Args:
+        data: Raw YAML data from metrics.yaml
+
+    Returns:
+        Tuple of (metrics_dict, metadata_registry)
+        - metrics_dict: Simple {key: value} dict for MetricsConfig
+        - metadata_registry: Dict mapping metric paths to MetricMetadata
+    """
+    from .models import MetricMetadata, ChangeMagnitude, MetricDependency
+
+    metrics_dict = {}
+    metadata_registry = {}
+
+    def parse_metric_value(path: str, value_data):
+        """Parse a single metric, handling both simple and enhanced formats."""
+        if isinstance(value_data, (int, float)):
+            # Simple format: just a number
+            return float(value_data), None
+
+        if isinstance(value_data, dict):
+            # Enhanced format: extract value and metadata
+            if "value" not in value_data:
+                # Not enhanced format, could be nested dict
+                return value_data, None
+
+            metric_value = value_data["value"]
+
+            # Extract metadata fields
+            metadata_fields = {}
+            if "min" in value_data:
+                metadata_fields["min"] = value_data["min"]
+            if "max" in value_data:
+                metadata_fields["max"] = value_data["max"]
+            if "unit" in value_data:
+                metadata_fields["unit"] = value_data["unit"]
+            if "description" in value_data:
+                metadata_fields["description"] = value_data["description"]
+            if "randomness" in value_data:
+                metadata_fields["randomness"] = value_data["randomness"]
+
+            # Parse change_magnitudes
+            if "change_magnitudes" in value_data:
+                cm_data = value_data["change_magnitudes"]
+                metadata_fields["change_magnitudes"] = ChangeMagnitude(
+                    small=tuple(cm_data.get("small", [0.01, 0.05])),
+                    medium=tuple(cm_data.get("medium", [0.05, 0.15])),
+                    large=tuple(cm_data.get("large", [0.15, 0.5])),
+                )
+
+            # Parse dependencies
+            if "dependencies" in value_data:
+                deps = []
+                for dep_data in value_data["dependencies"]:
+                    deps.append(MetricDependency(**dep_data))
+                metadata_fields["dependencies"] = deps
+
+            metadata = MetricMetadata(**metadata_fields) if metadata_fields else None
+            return float(metric_value), metadata
+
+        return value_data, None
+
+    # Parse world metrics
+    world_metrics = {}
+    if "world" in data:
+        for key, value in data["world"].items():
+            metric_path = f"world.{key}"
+            parsed_value, metadata = parse_metric_value(metric_path, value)
+            world_metrics[key] = parsed_value
+            if metadata:
+                metadata_registry[metric_path] = metadata
+
+    metrics_dict["world"] = world_metrics
+
+    # Parse actor metrics
+    from .models import ActorMetricsData
+    actors_dict = {}
+
+    if "actors" in data:
+        for actor_name, actor_data in data["actors"].items():
+            actor_metrics = ActorMetricsData()
+
+            # Parse public metrics
+            if "public" in actor_data:
+                for key, value in actor_data["public"].items():
+                    metric_path = f"actors.{actor_name}.public.{key}"
+                    parsed_value, metadata = parse_metric_value(metric_path, value)
+                    actor_metrics.public[key] = parsed_value
+                    if metadata:
+                        metadata_registry[metric_path] = metadata
+
+            # Parse private metrics
+            if "private" in actor_data:
+                for key, value in actor_data["private"].items():
+                    metric_path = f"actors.{actor_name}.private.{key}"
+                    parsed_value, metadata = parse_metric_value(metric_path, value)
+                    actor_metrics.private[key] = parsed_value
+                    if metadata:
+                        metadata_registry[metric_path] = metadata
+
+            actors_dict[actor_name] = actor_metrics
+
+    metrics_dict["actors"] = actors_dict
+
+    return metrics_dict, metadata_registry
+
+
 def load_events_config(scenario_dir: Path) -> EventsConfig:
     """Load events configuration from events.yaml."""
     config_path = scenario_dir / "events.yaml"
