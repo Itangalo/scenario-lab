@@ -1,0 +1,45 @@
+world:
+  ai_capability_hours: 3
+  unemployment_rate: 7.5
+  public_sentiment: 0
+  eu_regulatory_pressure: 30
+  ai_safety_incident: 0
+  global_ai_regulation: 20
+
+actors:
+  government:
+    public:
+      international_influence: 50
+      public_trust: 55
+      budget_billion_sek: 10
+    private:
+      ai_adoption_commitment: 40
+      eu_coordination: 60
+      political_capital: 50
+
+  labor-unions:
+    public:
+      member_confidence: 60
+      public_support: 50
+    private:
+      negotiating_power: 55
+      strike_readiness: 30
+      internal_unity: 65
+
+  media:
+    public:
+      credibility: 65
+      audience_reach: 70
+    private:
+      advertising_revenue: 60
+      editorial_independence: 75
+      ai_expertise: 35
+
+  business-sector:
+    public:
+      profitability: 65
+      ai_adoption_rate: 40
+    private:
+      ai_investment_commitment: 50
+      labor_satisfaction: 50
+      regulatory_compliance_burden: 40

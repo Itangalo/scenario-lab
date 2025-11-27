@@ -3,6 +3,7 @@ description: "Utforska hur Sverige hanterar AI-utvecklingen från 2026 till 2030
 start_date: "2026-01-01"
 time_scale: "6 months per turn"
 max_turns: 10
+execution_mode: "narrative"  # Use World Interpreter for narrative-driven mechanics
 
 actors:
   - government
