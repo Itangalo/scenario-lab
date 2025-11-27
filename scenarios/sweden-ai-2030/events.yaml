@@ -1,0 +1,50 @@
+events:
+  # === SCHEDULED EVENTS ===
+  # Note: Only scheduled events are currently implemented in the engine.
+  # Conditional events (metric_and, metric_or, random) are NOT processed.
+
+  - turn: 2
+    name: "Riksdagsval 2026"
+    description: "Svenska allmänna val i september 2026. Möjlighet för nya AI-politiska inriktningar."
+    effects:
+      world.public_sentiment: 0
+      actors.government.public.public_trust: 50
+      actors.government.private.political_capital: 60
+
+  - turn: 3
+    name: "EU AI Act skärps"
+    description: "EU börjar tillämpa AI Act med striktare krav. Svenska företag måste anpassa sig."
+    effects:
+      world.eu_regulatory_pressure: 50
+      actors.business-sector.private.regulatory_compliance_burden: 60
+
+  - turn: 5
+    name: "USA:s presidentval 2028"
+    description: "Amerikanskt val påverkar global AI-utveckling och geopolitik."
+    effects:
+      world.global_ai_regulation: 25
+      world.public_sentiment: -5
+
+  - turn: 6
+    name: "AI-kapabilitet dubbleras"
+    description: "AI-system kan nu hantera uppgifter som tar 24 timmar. Automatisering accelererar."
+    effects:
+      world.ai_capability_hours: 24
+      world.public_sentiment: -5
+      actors.labor-unions.private.strike_readiness: 50
+
+  - turn: 7
+    name: "AI-robotar blir praktiska"
+    description: "Humanoidrobotik når framsteget att bli användbara i verklig miljö. Fysisk automatisering blir verklighet."
+    effects:
+      world.unemployment_rate: 8.5
+      world.public_sentiment: -8
+      actors.labor-unions.public.member_confidence: 40
+      actors.labor-unions.private.strike_readiness: 60
+
+  - turn: 9
+    name: "Global AI-säkerhetskonferens"
+    description: "FN håller toppmöte om AI-säkerhet. Sverige deltar aktivt."
+    effects:
+      world.global_ai_regulation: 40
+      actors.government.public.international_influence: 60

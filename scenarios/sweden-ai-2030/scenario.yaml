@@ -1,0 +1,60 @@
+name: "Sverige och AI 2030"
+description: "Utforska hur Sverige hanterar AI-utvecklingen från 2026 till 2030"
+time_scale: "6 months per turn"
+max_turns: 10
+
+actors:
+  - government
+  - labor-unions
+  - media
+  - business-sector
+
+llm:
+  provider: "OpenRouter"
+  model: "openai/gpt-4o-mini"
+  api_key_env: "OPENROUTER_API_KEY"
+  temperature: 0.7
+  max_tokens: 2000
+
+action_point_rules:
+  initial_per_turn: 3
+  message_to_new_recipient: 1
+  message_reply: 0
+  forward_message: 1
+
+world_altering_triggers:
+  - name: "Massarbetslöshet"
+    description: "Om arbetslösheten överstiger 12%, utlöses en världsalterande kris"
+    conditions:
+      - type: "metric"
+        path: "world.unemployment_rate"
+        operator: "gt"
+        value: 12
+    effects:
+      - type: "set_outcome_flag"
+        key: "mass_unemployment_crisis"
+        value: true
+
+  - name: "AI-säkerhetshändelse"
+    description: "Om en större AI-säkerhetshändelse inträffar"
+    conditions:
+      - type: "metric"
+        path: "world.ai_safety_incident"
+        operator: "gt"
+        value: 0
+    effects:
+      - type: "set_outcome_flag"
+        key: "ai_safety_incident_occurred"
+        value: true
+
+  - name: "AGI närmar sig"
+    description: "Om AI-kapabilitet överstiger 1000 timmar per task"
+    conditions:
+      - type: "metric"
+        path: "world.ai_capability_hours"
+        operator: "gt"
+        value: 1000
+    effects:
+      - type: "set_outcome_flag"
+        key: "agi_approaching"
+        value: true
