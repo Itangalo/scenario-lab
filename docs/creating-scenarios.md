@@ -2,13 +2,21 @@
 
 This document provides instructions for creating new scenarios, intended for both human authors and AI coding assistants (Claude Code, Gemini CLI, etc.).
 
-## Overview
+## ⚠️ CRITICAL: Read Before Generating
 
-A scenario consists of background material (human-authored) and technical files (can be AI-generated). The workflow is:
+**Before writing any code, you MUST:**
+1. Read the reference scenario at `examples/us-china-ai/` completely
+2. Follow the EXACT formats shown in this document
+3. Use ONLY the WorldState API methods documented below
+4. Run validation after generating files
 
-1. Human writes background sketches describing the scenario
-2. AI generates technical files based on the sketches and reference examples
-3. Human reviews and iterates
+**DO NOT:**
+- Invent methods that don't exist (e.g., `increment_metric`, `add_outcome_flag` with wrong signature)
+- Use undocumented YAML formats (e.g., `metric_and`, `metric_or`, `random` conditionals)
+- Create actors as objects instead of strings
+- Reference metrics that don't exist in metrics.yaml
+
+---
 
 ## File Structure
 
@@ -21,74 +29,91 @@ scenarios/my-scenario/
 │   ├── actors-sketch.md        # Actor descriptions
 │   ├── world-state-sketch.md   # Initial world state
 │   ├── events-sketch.md        # Events and triggers
-│   └── actors/                 # Optional: detailed actor files
+│   └── actors/                 # Detailed actor files (required)
 │       ├── actor-one.md
 │       └── actor-two.md
 ├── scenario.yaml               # Generated: main config
 ├── metrics.yaml                # Generated: world and actor metrics
-├── events.yaml                 # Generated: scheduled and conditional events
+├── events.yaml                 # Generated: scheduled events ONLY
 ├── methods.py                  # Generated: action implementations
 └── runs/                       # Created at runtime
 ```
 
-## Background Files (Human Input)
+---
 
-These are the files humans should write. They can be in any language and format, but should be clear and detailed enough for an AI to generate the technical files.
+## WorldState API Reference
 
-### scenario-sketch.md
+**This is the ONLY API available in methods.py. Do not invent other methods.**
 
-Describe:
-- **Purpose**: What is this scenario exploring?
-- **Time frame**: Start date, end date, turn duration
-- **Actors**: Who are the main actors? (Just list them here)
-- **Themes**: What dynamics are you interested in?
-- **Metrics**: What should be tracked?
+### Getting Metrics
 
-Example excerpt:
-```markdown
-## Time Frame
-- Start: January 2026
-- End: December 2030
-- Turn duration: 6 months (10 turns total)
+```python
+# Get world metric
+value = state.get_metric(None, "metric_name")
 
-## Actors
-- Government
-- Labor Unions
-- Media
-- Business Sector
+# Get actor's public metric
+value = state.get_metric(actor, "public.metric_name")
+
+# Get actor's private metric  
+value = state.get_metric(actor, "private.metric_name")
+
+# Shorthand (defaults to public)
+value = state.get_metric(actor, "metric_name")
 ```
 
-### actors-sketch.md
+### Setting Metrics
 
-For each actor, describe:
-- **Role**: What is this actor in the scenario?
-- **Goals**: What do they want to achieve?
-- **Constraints**: What limits their actions?
-- **Decision style**: How do they typically behave?
-- **Information access**: What do they know/not know?
-- **Relationships**: How do they relate to other actors?
+```python
+# Set world metric
+state.set_metric(None, "metric_name", new_value)
 
-### world-state-sketch.md
+# Set actor's public metric
+state.set_metric(actor, "public.metric_name", new_value)
 
-Describe the initial state of the world:
-- Global context
-- Local/regional context
-- Key metrics and their starting values
-- Recent events that set the stage
+# Set actor's private metric
+state.set_metric(actor, "private.metric_name", new_value)
+```
 
-### events-sketch.md
+### ⚠️ There is NO `increment_metric` method!
 
-Describe events that should occur:
-- **Scheduled events**: Things that happen at specific turns
-- **Conditional events**: Things that trigger based on metrics
-- **Random events**: Low-probability events (optional)
-- **World-altering triggers**: Conditions that end or transform the scenario
+To increment a metric, you must get then set:
+```python
+# CORRECT way to increment
+current = state.get_metric(actor, "public.budget")
+state.set_metric(actor, "public.budget", current + 10)
+
+# WRONG - this method does not exist!
+# state.increment_metric(actor, "public.budget", 10)  # ❌ ERROR
+```
+
+### Relationships
+
+```python
+# Get relationship between two actors
+rel = state.get_relationship(actor1, actor2)
+
+# Modify trust (float, typically -1.0 to 1.0)
+rel.trust += 0.1
+rel.trust -= 0.2
+```
+
+### Facts
+
+```python
+# Add a fact to the ledger
+state.add_fact("Something happened", source="action:action_name")
+```
+
+### Outcome Flags
+
+```python
+# Set an outcome flag (for scenario analysis)
+state.set_outcome_flag("crisis_occurred", True)
+```
 
 ---
 
-## Technical Files (AI-Generated)
-
-These files must follow exact formats. Use `examples/us-china-ai/` as a reference.
+## Technical File Formats
 
 ### scenario.yaml
 
@@ -97,13 +122,15 @@ name: "Scenario Name"
 time_scale: "6 months per turn"
 max_turns: 10
 
+# ⚠️ CRITICAL: actors must be a list of STRINGS, not objects!
 actors:
-  - actor-one
-  - actor-two
+  - actor-one      # ✅ CORRECT
+  - actor-two      # ✅ CORRECT
+  # - name: "actor-one"  # ❌ WRONG - do not use objects!
 
 llm:
-  provider: "openrouter"
-  model: "anthropic/claude-sonnet-4-20250514"
+  provider: "mock"  # Use "mock" for testing, "openrouter" for real runs
+  model: "mock-model"
   api_key_env: "OPENROUTER_API_KEY"
   temperature: 0.7
   max_tokens: 2000
@@ -114,86 +141,92 @@ action_point_rules:
   message_reply: 0
   forward_message: 1
 
+# World-altering triggers (optional)
 world_altering_triggers:
-  - name: "Trigger Name"
+  - name: "Crisis Threshold"
     description: "What happens when triggered"
     conditions:
       - type: "metric"
-        path: "world.some_metric"
+        path: "world.crisis_level"
         operator: "gt"
         value: 0.8
     effects:
       - type: "set_outcome_flag"
-        key: "scenario_ended"
+        key: "crisis_occurred"
         value: true
 ```
-
-**Key rules:**
-- Actor names in `actors:` must match filenames in `background/actors/` (without extension)
-- Actor names should use lowercase with hyphens (e.g., `labor-unions`)
-- `llm.provider` can be "openrouter", "local", or "mock"
 
 ### metrics.yaml
 
 ```yaml
 world:
-  metric_one: 0.5
-  metric_two: 100
+  # World-level metrics visible to all actors
+  metric_one: 50
+  metric_two: 0.5
 
 actors:
   actor-one:
     public:
-      visible_metric: 50
-      another_public: 0.7
+      # Visible to all actors
+      budget: 100
+      reputation: 70
     private:
-      hidden_metric: 80
-      secret_capability: 100
-      
+      # Visible only to this actor
+      secret_capability: 80
+      internal_morale: 60
+
   actor-two:
     public:
-      visible_metric: 45
+      budget: 80
+      reputation: 65
     private:
-      hidden_metric: 60
+      secret_capability: 70
+      internal_morale: 55
 ```
 
-**Key rules:**
-- `world:` metrics are visible to all actors
-- `public:` metrics for each actor are visible to all actors
-- `private:` metrics are only visible to the actor itself
-- Metrics can be numbers (int or float)
-- Choose metric names that are clear and consistent
+**Rules:**
+- Actor names must match exactly between scenario.yaml and metrics.yaml
+- Use lowercase with hyphens for actor names
+- Every actor in scenario.yaml MUST have an entry in metrics.yaml
 
 ### events.yaml
 
+**⚠️ CURRENT LIMITATION: Only scheduled events are implemented!**
+
+The engine currently only processes events where `turn` matches the current turn number. Conditional events (`scheduled: false`) are defined in the schema but not yet processed by the engine.
+
 ```yaml
 events:
-  # Scheduled events (happen at specific turns)
+  # Scheduled events - these work
   - turn: 2
-    name: "Event Name"
-    description: "What happens"
+    name: "Election"
+    description: "A major election takes place"
     effects:
-      world.some_metric: 0.3
-      actors.actor-one.public.trust: -0.1
+      world.political_uncertainty: 0.7
+      actors.government.public.legitimacy: 50
 
-  # Conditional events (check every turn)
-  - turn: 0
-    scheduled: false
-    name: "Conditional Event"
-    description: "Triggers when condition is met"
-    conditional:
-      type: "metric"
-      path: "actors.*.public.some_metric"
-      operator: "lt"
-      value: 0.3
+  - turn: 5
+    name: "Economic Summit"
+    description: "International economic summit"
     effects:
-      world.instability: 0.1
+      world.cooperation_index: 0.6
 ```
 
-**Key rules:**
-- Scheduled events: set `turn:` to the turn number
-- Conditional events: set `turn: 0` and `scheduled: false`
-- Effect values are absolute (set to), not relative (add to)
-- Paths use dot notation: `world.metric`, `actors.name.public.metric`
+**Effect values are ABSOLUTE, not relative:**
+```yaml
+effects:
+  world.metric: 0.5    # Sets metric TO 0.5, does not add 0.5
+```
+
+**⚠️ DO NOT USE these conditional formats (not implemented):**
+```yaml
+# ❌ These do NOT work in the current engine:
+conditional:
+  type: "metric_and"    # ❌ Not implemented
+  type: "metric_or"     # ❌ Not implemented  
+  type: "random"        # ❌ Not implemented
+  probability: 0.1      # ❌ Not implemented
+```
 
 ### methods.py
 
@@ -211,171 +244,248 @@ class MyScenarioMethods(ScenarioMethods):
 
     def _register_actions(self) -> None:
         """Register all available actions for this scenario."""
-        self.register_action("action_name", self.action_name)
-        self.register_action("another_action", self.another_action)
+        # You MUST register every action you implement
+        self.register_action("invest", self.invest)
+        self.register_action("negotiate", self.negotiate)
+        self.register_action("public_statement", self.public_statement)
 
-    def action_name(self, actor: str, args: dict, state: WorldState) -> List[str]:
+    def invest(self, actor: str, args: dict, state: WorldState) -> List[str]:
         """
-        Description of what this action does.
+        Actor invests resources in something.
         
-        Args:
-            amount: How much to invest (default: 10)
+        Args expected:
+            amount: int - How much to invest (default: 10)
         """
         amount = args.get("amount", 10)
         
-        # Modify metrics
-        current = state.get_metric(actor, "public.budget")
-        state.set_metric(actor, "public.budget", current - amount)
+        # Get current value, then set new value
+        # ⚠️ There is no increment_metric method!
+        current_budget = state.get_metric(actor, "public.budget")
+        if current_budget < amount:
+            return [f"{actor} lacks budget to invest {amount}."]
         
-        # Return narrative description
-        return [f"{actor} did something with {amount}."]
+        state.set_metric(actor, "public.budget", current_budget - amount)
+        
+        # Increase capability
+        current_cap = state.get_metric(actor, "private.capability")
+        state.set_metric(actor, "private.capability", current_cap + amount * 0.5)
+        
+        return [f"{actor} invested {amount} in capability development."]
 
-    def another_action(self, actor: str, args: dict, state: WorldState) -> List[str]:
+    def negotiate(self, actor: str, args: dict, state: WorldState) -> List[str]:
+        """Actor negotiates with another actor."""
         target = args.get("target_actor")
         if not target:
-            return ["No target specified."]
+            return ["No target specified for negotiation."]
         
-        # Modify relationships
-        state.get_relationship(actor, target).trust += 0.1
+        # Modify relationship
+        rel = state.get_relationship(actor, target)
+        rel.trust += 0.1
         
-        # Add facts to world state
-        state.add_fact(f"{actor} interacted with {target}", source="action")
+        # Add fact
+        state.add_fact(
+            f"{actor} and {target} held negotiations",
+            source="action:negotiate"
+        )
         
-        return [f"{actor} did something with {target}."]
+        return [f"{actor} negotiated with {target}, improving relations."]
+
+    def public_statement(self, actor: str, args: dict, state: WorldState) -> List[str]:
+        """Actor makes a public statement."""
+        message = args.get("message", "a general statement")
+        
+        # Affect world metric
+        sentiment = state.get_metric(None, "public_sentiment")
+        state.set_metric(None, "public_sentiment", sentiment + 2)
+        
+        state.add_fact(
+            f"{actor} made public statement: {message}",
+            source="action:public_statement"
+        )
+        
+        return [f"{actor} announced: {message}"]
 ```
 
-**Key rules:**
-- Class must inherit from `ScenarioMethods`
-- All actions must be registered in `_register_actions()`
-- Action methods take `actor`, `args`, `state` and return `List[str]`
-- Use `state.get_metric()` and `state.set_metric()` for metrics
-- Use `state.get_relationship()` for relationships
-- Use `state.add_fact()` to add facts to world state
-- Return a list of narrative strings describing what happened
+**Critical rules for methods.py:**
+1. Class MUST inherit from `ScenarioMethods`
+2. Every action MUST be registered in `_register_actions()`
+3. Use ONLY the documented WorldState API methods
+4. Always get-then-set to modify metrics (no `increment_metric`)
+5. Return `List[str]` with narrative descriptions
 
 ### background/actors/{actor-name}.md
 
-One file per actor with:
-- Description of the actor
-- Initial goals (numbered list)
-- Behavioral traits
-
 ```markdown
-[One paragraph describing the actor and their role.]
+[One paragraph describing the actor and their role in the scenario.]
 
 **Initial Goals:**
-1. First goal
-2. Second goal
-3. Third goal
+1. Primary goal
+2. Secondary goal
+3. Tertiary goal
 
 **Behavioral Traits:**
-- **Trait One:** Description
-- **Trait Two:** Description
+- **Trait One:** How this affects their decisions
+- **Trait Two:** How this affects their decisions
 ```
 
 ### background/context.md
 
-A single prose description (1-3 paragraphs) of the scenario's starting situation. This is included in prompts to the LLM.
+A prose description (1-3 paragraphs) of the scenario's starting situation.
 
 ---
 
-## Generating a Scenario
+## Common Errors to Avoid
 
-When asked to generate a scenario from background sketches, follow this process:
+### Error 1: Actors as objects instead of strings
 
-### Step 1: Read all background files
-Read and understand:
-- The scenario purpose and themes
-- All actors and their relationships
-- The world state and metrics
-- Events and triggers
+```yaml
+# ❌ WRONG
+actors:
+  - name: "government"
+    display_name: "The Government"
 
-### Step 2: Determine metrics
-From the sketches, identify:
-- World-level metrics (global state)
-- Per-actor public metrics (visible to all)
-- Per-actor private metrics (information asymmetry)
-
-Choose clear, quantifiable metrics. Common patterns:
-- Capabilities: 0-100 scale
-- Trust/opinion: -1.0 to 1.0 or 0.0 to 1.0
-- Resources: absolute numbers (budget, population)
-- Rates: percentages (unemployment, adoption rate)
-
-### Step 3: Design actions
-Create actions that:
-- Match what actors would realistically do
-- Modify relevant metrics
-- Have clear costs and benefits
-- Enable interesting trade-offs
-
-Common action patterns:
-- **Invest**: Spend resources to gain capability
-- **Negotiate**: Attempt to change relationships
-- **Announce**: Make public statements (narrative)
-- **Regulate**: Change rules that affect other actors
-- **Sanction**: Impose costs on other actors
-
-### Step 4: Design events
-Create:
-- 2-4 scheduled events per scenario (key milestones)
-- 2-4 conditional events (emergent dynamics)
-- 1-2 world-altering triggers (end conditions)
-
-### Step 5: Generate files
-Create all technical files with consistent:
-- Actor names (matching across all files)
-- Metric names (matching across all files)
-- Action names (registered and implemented)
-
-### Step 6: Validate
-Check that:
-- All actors in `scenario.yaml` have matching `.md` files
-- All actors in `scenario.yaml` have entries in `metrics.yaml`
-- All metrics referenced in `events.yaml` exist in `metrics.yaml`
-- All actions in `methods.py` are registered
-- Class name in `methods.py` matches scenario theme
-
----
-
-## Example: Converting Sweden AI 2030
-
-Given background sketches about Sweden and AI 2026-2030, you would:
-
-1. **Actors**: government, labor-unions, media, business-sector
-2. **World metrics**: 
-   - `ai_capability_metr` (hours of tasks AI can handle)
-   - `global_ai_regulation` (0-1 scale)
-   - `eu_regulatory_pressure` (0-1 scale)
-3. **Actor public metrics**:
-   - `public_trust`, `international_influence`, `budget`
-4. **Actor private metrics**:
-   - `ai_adoption_rate`, `internal_capability`, `lobbying_power`
-5. **Actions**:
-   - `invest_ai_adoption`, `propose_regulation`, `lobby_government`
-   - `public_campaign`, `negotiate_with_unions`, `publish_report`
-6. **Events**:
-   - Turn 1: "Riksdagsval 2026"
-   - Turn 5: "US Presidential Election 2028"
-   - Conditional: "AI Unemployment Crisis" if unemployment > 12%
-
----
-
-## Testing Your Scenario
-
-After generating, test with:
-
-```bash
-# Dry run with mock LLM
-python -m scenario_lab.cli run scenarios/my-scenario --turns 3 --dry-run
-
-# Real run with actual LLM
-export OPENROUTER_API_KEY="your-key"
-python -m scenario_lab.cli run scenarios/my-scenario --turns 3
+# ✅ CORRECT
+actors:
+  - government
 ```
 
-Check that:
-- All turns complete without errors
-- Metrics change as expected
-- Events trigger at correct times
-- Actions produce sensible narratives
+### Error 2: Using non-existent methods
+
+```python
+# ❌ WRONG - increment_metric does not exist
+state.increment_metric(actor, "budget", 10)
+
+# ✅ CORRECT
+current = state.get_metric(actor, "public.budget")
+state.set_metric(actor, "public.budget", current + 10)
+```
+
+### Error 3: Conditional event formats that don't work
+
+```yaml
+# ❌ WRONG - these conditional types are not implemented
+conditional:
+  type: "metric_and"
+  type: "random"
+  probability: 0.15
+
+# ✅ CORRECT - use only scheduled events for now
+- turn: 3
+  name: "Event Name"
+  description: "..."
+  effects:
+    world.metric: 0.5
+```
+
+### Error 4: Mismatched actor names
+
+```yaml
+# scenario.yaml
+actors:
+  - labor-unions    # hyphenated
+
+# metrics.yaml - MUST match exactly
+actors:
+  labor-unions:     # ✅ matches
+    public: ...
+    
+  # laborunions:    # ❌ WRONG - doesn't match
+  # labor_unions:   # ❌ WRONG - doesn't match
+```
+
+### Error 5: Missing metric paths
+
+```python
+# If you reference a metric, it MUST exist in metrics.yaml
+state.get_metric(actor, "private.secret_plan")  
+# ❌ Error if metrics.yaml doesn't have "secret_plan" under private
+```
+
+---
+
+## Validation Checklist
+
+Before considering a scenario complete, verify:
+
+- [ ] `actors` in scenario.yaml is a list of strings (not objects)
+- [ ] Every actor has a matching entry in metrics.yaml
+- [ ] Every actor has a matching .md file in background/actors/
+- [ ] All metrics referenced in methods.py exist in metrics.yaml
+- [ ] All metrics referenced in events.yaml exist in metrics.yaml
+- [ ] methods.py only uses documented WorldState API
+- [ ] All actions in methods.py are registered in `_register_actions()`
+- [ ] events.yaml only uses scheduled events (turn > 0)
+- [ ] No invented methods like `increment_metric`
+
+---
+
+## Testing
+
+After generating, always test:
+
+```bash
+# Must run from scenario_lab_v15 directory
+cd /path/to/scenario_lab_v15
+
+# Test with mock LLM (catches most errors)
+python -m scenario_lab.cli run scenarios/my-scenario --turns 2 --dry-run
+
+# If that passes, test with real LLM
+export OPENROUTER_API_KEY="your-key"
+python -m scenario_lab.cli run scenarios/my-scenario --turns 2
+```
+
+**Expected output for successful run:**
+```
+INFO - Loading scenario from: scenarios/my-scenario
+INFO - Loaded scenario methods: MyScenarioMethods
+INFO - TURN 1
+...
+INFO - Simulation complete. 2 turns processed.
+```
+
+**If you see errors:**
+- `ValidationError` → Check YAML formats match examples exactly
+- `Action not registered` → Add missing action to `_register_actions()`
+- `AttributeError: increment_metric` → Use get/set pattern instead
+- `KeyError` → Check metric exists in metrics.yaml
+
+---
+
+## Quick Reference Card
+
+```python
+# WorldState API - the ONLY methods available:
+
+# Metrics
+state.get_metric(actor, "path")           # Get value
+state.get_metric(None, "world_metric")    # Get world metric
+state.set_metric(actor, "path", value)    # Set value
+state.set_metric(None, "world_metric", v) # Set world metric
+
+# Relationships
+rel = state.get_relationship(actor1, actor2)
+rel.trust += 0.1                          # Modify trust
+
+# Facts
+state.add_fact("text", source="action:name")
+
+# Outcome flags
+state.set_outcome_flag("flag_name", True)
+```
+
+```yaml
+# YAML formats:
+
+# scenario.yaml actors - MUST be strings
+actors:
+  - actor-name
+
+# events.yaml - ONLY scheduled events work
+events:
+  - turn: 2
+    name: "Event"
+    description: "..."
+    effects:
+      world.metric: 0.5
+```
