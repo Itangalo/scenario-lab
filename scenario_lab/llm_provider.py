@@ -39,6 +39,7 @@ class LLMProvider(Protocol):
         messages: List[Dict[str, str]],
         model: str,
         response_format: Optional[Dict] = None,
+        temperature: Optional[float] = None,
     ) -> str:
         """
         Generate a response from the LLM.
@@ -47,6 +48,7 @@ class LLMProvider(Protocol):
             messages: A list of messages in the conversation history.
             model: The model to use for the completion.
             response_format: An optional dictionary specifying the response format (e.g., for JSON mode).
+            temperature: Optional temperature override for this request.
 
         Returns:
             The LLM's response as a string.
@@ -76,6 +78,7 @@ class OpenRouterProvider:
         messages: List[Dict[str, str]],
         model: str,
         response_format: Optional[Dict] = None,
+        temperature: Optional[float] = None,
     ) -> str:
         """Sends a completion request to the OpenRouter API."""
         max_retries = 3
@@ -84,7 +87,7 @@ class OpenRouterProvider:
             "model": model,
             "messages": messages,
             "response_format": response_format,
-            "temperature": self.temperature,
+            "temperature": temperature if temperature is not None else self.temperature,
             "max_tokens": self.max_tokens,
         }
 
@@ -157,13 +160,14 @@ class LocalProvider:
         messages: List[Dict[str, str]],
         model: str,
         response_format: Optional[Dict] = None,
+        temperature: Optional[float] = None,
     ) -> str:
         """Sends a completion request to a local OpenAI-compatible endpoint."""
         request_body = {
             "model": model,
             "messages": messages,
             "response_format": response_format,
-            "temperature": self.temperature,
+            "temperature": temperature if temperature is not None else self.temperature,
             "max_tokens": self.max_tokens,
         }
         try:
@@ -216,6 +220,7 @@ class MockProvider:
         messages: List[Dict[str, str]],
         model: str,
         response_format: Optional[Dict] = None,
+        temperature: Optional[float] = None,
     ) -> str:
         """Generate mock response based on the phase detected in the system prompt."""
         system_prompt = ""

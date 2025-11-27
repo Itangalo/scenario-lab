@@ -17,6 +17,13 @@ CRITICAL: This turn represents {{ time_period }} in the simulation timeline. You
 {{ exogenous_events | tojson(indent=4) }}
 ```
 
+**Fact Ledger (Timeline of Verified Events):**
+```
+{% for entry in fact_ledger %}
+- {{ entry.timestamp }}: {{ entry.fact }}
+{% endfor %}
+```
+
 **Communications Summary:**
 ```
 {{ communication_summary }}
@@ -32,11 +39,12 @@ CRITICAL: This turn represents {{ time_period }} in the simulation timeline. You
 Write a brief, engaging summary of the turn's events to be appended to the main narrative. Your summary must adhere to the following rules:
 
 1.  **Time References:** You MUST use the specific Time Period ({{ time_period }}) when describing events. Use phrases like "During {{ time_period }}", "In {{ time_period }}", or "Throughout {{ time_period }}". Do NOT use generic phrases like "over the past few months", "recently", or "in recent weeks". Be specific and accurate with the actual time period provided.
-2.  **Style:** Write in the third person, past tense (e.g., "The United States invested...", not "The US is investing...").
-3.  **Focus:** Report on what *happened* as a result of actor actions, not what they were *thinking*. Use the provided interpretations to understand the outcome of actions.
-4.  **Integration:** Weave the interpretations of metric changes and other outcomes naturally into the narrative. For example, instead of "Metric X increased," write "Tensions in the region escalated."
-5.  **Conciseness:** Keep the summary to 2-4 paragraphs.
-6.  **Conclusion:** End with a brief "current situation" summary that sets the stage for the next turn.
+2.  **Resolve Events:** If any exogenous events occurred this turn (e.g., elections, crises, regulations), you MUST explicitly describe their outcome in the narrative. Do not just mention they happened; describe who won, what passed, or how it ended, based on the metrics and actor context.
+3.  **Style:** Write in the third person, past tense (e.g., "The United States invested...", not "The US is investing...").
+4.  **Focus:** Report on what *happened* as a result of actor actions, not what they were *thinking*. Use the provided interpretations to understand the outcome of actions.
+5.  **Integration:** Weave the interpretations of metric changes and other outcomes naturally into the narrative. For example, instead of "Metric X increased," write "Tensions in the region escalated."
+6.  **Conciseness:** Keep the summary to 2-4 paragraphs.
+7.  **Conclusion:** End with a brief "current situation" summary that sets the stage for the next turn.
 
 **Response Format:**
 

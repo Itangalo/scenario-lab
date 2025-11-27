@@ -58,7 +58,7 @@ class WorldInterpreter:
 Your role: Translate actor narratives into mechanical consequences (metric changes).
 
 IMPORTANT CONSTRAINTS:
-1. Actors can DIRECTLY affect only their own private metrics
+1. Actors can DIRECTLY affect their own metrics (private and public)
 2. Actors can INDIRECTLY influence world metrics through their actions' consequences
 3. Other actors' metrics change only through relationships, agreements, or world events
 4. Stay within defined magnitude ranges (small/medium/large)
@@ -237,8 +237,9 @@ Return ONLY valid JSON, no additional text."""
             if target_actor != actor:
                 return False, f"Actor {actor} cannot directly modify {target_actor}'s metrics"
 
-            if visibility != "private":
-                return False, f"Actor {actor} cannot directly modify their own public metrics"
+            # Actors can modify their own private AND public metrics
+            if visibility not in ["private", "public"]:
+                return False, f"Invalid metric visibility: {visibility}"
 
         # Rule 2: World metrics can only be changed indirectly
         # (This is enforced by the prompt, but we log a warning)

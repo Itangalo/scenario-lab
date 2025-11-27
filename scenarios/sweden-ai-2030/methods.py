@@ -58,6 +58,34 @@ class SverigeAI2030Methods(ScenarioMethods):
         self.register_action("invest_in_safety", self.invest_in_safety)
         self.register_action("cut_workforce", self.cut_workforce)
 
+    def update_world(self, world_state: WorldState, turn: int) -> List[str]:
+        """
+        Apply automatic world dynamics updates.
+        """
+        updates = []
+
+        # 1. AI Capability Doubling Rule
+        # Moore's Law for AI: Capability grows by ai_growth_rate per turn
+        growth_rate = world_state.metrics.get_value("world.ai_growth_rate") or 1.0
+        current_ai = world_state.metrics.get_value("world.ai_capability_hours") or 0
+        
+        if current_ai > 0 and growth_rate > 0:
+            new_ai = current_ai * growth_rate
+            world_state.metrics.set_value("world.ai_capability_hours", new_ai)
+            updates.append(f"Global AI capability grew by a factor of {growth_rate:.1f} to {new_ai:.1f} hours/task.")
+
+        # 2. Unemployment Drift
+        # If AI capability is high, unemployment tends to drift up slowly
+        # unless countered by other factors
+        if current_ai > 12: # If AI can do >12h tasks
+            current_unemp = world_state.metrics.get_value("world.unemployment_rate") or 6.0
+            drift = 0.2 # +0.2% per turn natural drift
+            new_unemp = current_unemp + drift
+            world_state.metrics.set_value("world.unemployment_rate", new_unemp)
+            updates.append(f"Automation pressure caused unemployment to drift up to {new_unemp:.1f}%.")
+
+        return updates
+
     # =========== LEGACY MODE ACTIONS (NOT USED IN NARRATIVE MODE) ===========
 
     # The functions below are preserved for reference but are not called

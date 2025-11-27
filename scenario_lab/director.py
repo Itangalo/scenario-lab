@@ -93,6 +93,7 @@ class Director:
         interpretations: List[str],
         events_triggered: List[Dict],
         previous_narrative: str,
+        fact_ledger: List[Any],
     ) -> str:
         """
         Synthesizes the events of a turn into a narrative summary.
@@ -103,6 +104,7 @@ class Director:
             interpretations: A list of interpretation strings from the action methods.
             events_triggered: A list of events that triggered this turn.
             previous_narrative: The narrative state from the previous turn.
+            fact_ledger: The structured history of verified facts.
 
         Returns:
             The new narrative summary for the turn.
@@ -126,6 +128,7 @@ class Director:
             communication_summary="",  # This needs to be passed in from the engine
             actions=[action.model_dump() for action in turn_actions.actions],
             interpretations=interpretations,
+            fact_ledger=[f.model_dump() for f in fact_ledger],
         )
 
         messages = [{"role": "system", "content": system_prompt}]

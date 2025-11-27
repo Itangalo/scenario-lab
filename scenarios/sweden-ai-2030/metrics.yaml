@@ -14,6 +14,13 @@ world:
       large: [0.15, 0.4]     # 15-40% change
     randomness: 0.15  # High uncertainty in AI progress
 
+  ai_growth_rate:
+    value: 2.0
+    min: 1.0
+    max: 10.0
+    unit: "multiplier"
+    description: "Multiplier for AI capability growth per turn"
+
   unemployment_rate:
     value: 7.5
     min: 2.0

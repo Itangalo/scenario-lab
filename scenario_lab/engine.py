@@ -242,7 +242,7 @@ class Simulation:
         """
         # === PRE-TURN ===
         self.logger.info("[PRE-TURN] Starting")
-        self._check_events(turn)
+        triggered_events = self._check_events(turn)
         self._check_triggers(turn)
         self._reset_action_points()
         actor_views = self._generate_actor_views(turn)
@@ -276,11 +276,20 @@ class Simulation:
             self._validate_actions(turn_actions)
             interpretations = self._execute_actions(turn, turn_actions)
 
+        # === WORLD DYNAMICS UPDATE ===
+        # Allow scenario-specific code to update world state (e.g. AI doubling)
+        if self.scenario_methods:
+            self.logger.info("Running world dynamics update")
+            world_updates = self.scenario_methods.update_world(self.world_state, turn)
+            if world_updates:
+                interpretations.extend(world_updates)
+                self.logger.info(f"World dynamics produced {len(world_updates)} updates")
+
         self.logger.info("[PHASE 3] Complete")
 
         # === POST-TURN SYNTHESIS ===
         self.logger.info("[POST-TURN] Starting synthesis")
-        await self._synthesize_narrative(turn, turn_actions, interpretations)
+        await self._synthesize_narrative(turn, turn_actions, interpretations, triggered_events)
         self.logger.info("[POST-TURN] Complete")
 
         # Save turn state to disk
@@ -334,14 +343,14 @@ class Simulation:
 
     # === Pre-Turn Methods ===
 
-    def _check_events(self, turn: int) -> None:
+    def _check_events(self, turn: int) -> List['ExogenousEvent']:
         """Check for and apply exogenous events."""
         events_this_turn = [
             event for event in self.events_config.events if event.turn == turn
         ]
 
         if not events_this_turn:
-            return
+            return []
 
         self.logger.info(f"Processing {len(events_this_turn)} event(s)")
 
@@ -386,6 +395,8 @@ class Simulation:
                     source="exogenous_event"
                 )
             )
+            
+        return events_this_turn
 
     def _check_triggers(self, turn: int) -> None:
         """Check for world-altering triggers based on current state."""
@@ -805,7 +816,7 @@ Be strategic, consider the consequences of your actions, and stay true to your o
         self.logger.info("All actions executed")
         return all_interpretations
 
-    async def _synthesize_narrative(self, turn: int, turn_actions: TurnActions, interpretations: List[str]) -> None:
+    async def _synthesize_narrative(self, turn: int, turn_actions: TurnActions, interpretations: List[str], triggered_events: List['ExogenousEvent']) -> None:
         """
         Use the Director to synthesize turn narrative.
 
@@ -813,6 +824,7 @@ Be strategic, consider the consequences of your actions, and stay true to your o
             turn: Current turn number
             turn_actions: Actions that occurred this turn
             interpretations: A list of interpretation strings from the action methods.
+            triggered_events: List of exogenous events that occurred this turn.
         """
         self.logger.info("Synthesizing narrative")
         from .director import Director
@@ -824,14 +836,16 @@ Be strategic, consider the consequences of your actions, and stay true to your o
             self.config.start_date
         )
         
-        # For now, events_triggered is empty.
-        # A more robust implementation would get this from _check_events
+        # Convert events to dicts for the Director
+        events_dicts = [event.model_dump() for event in triggered_events]
+
         summary = await director.synthesize_turn(
             turn_number=turn,
             turn_actions=turn_actions,
             interpretations=interpretations,
-            events_triggered=[],
+            events_triggered=events_dicts,
             previous_narrative=self.world_state.narrative_state,
+            fact_ledger=self.world_state.fact_ledger,
         )
         
         self.world_state.narrative_state += f"\n\n## Turn {turn} Summary\n{summary}"

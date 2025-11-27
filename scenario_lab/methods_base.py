@@ -107,6 +107,23 @@ class ScenarioMethods(ABC):
         # actions per actor per turn.
         return True
 
+    def update_world(self, world_state: WorldState, turn: int) -> List[str]:
+        """
+        Hook for executing scenario-specific world dynamics at the end of a turn.
+
+        This method is called by the Engine after all actor actions are processed
+        but before narrative synthesis. Use it to implement passive rules,
+        exponential growth, decay, or custom logic.
+
+        Args:
+            world_state: Current world state (modified in place)
+            turn: Current turn number
+
+        Returns:
+            List of interpretation strings describing what happened (for the Director)
+        """
+        return []
+
     # === Utility Methods for Subclasses ===
 
     def add_fact(
