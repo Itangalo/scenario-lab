@@ -25,7 +25,7 @@ Det finns en lista, Metrics Rules, som beskriver hur metrics eventuellt påverka
 
 För att scenarioövningen ska fungera bra behöver Metrics Rules vara så realistiska som möjligt, utifrån hur världen ser ut. Det bör idealt finnas mellan fem och tio regler, men du kan gå utanför dessa gränser om du bedömer det befogat.
 
-Svara endast med en ny Markdown-text som beskriver nya Metrics Rules. (Är det Markdown som gäller? Är yaml bättre?)
+Svara endast med Metrics Rules formaterade som en numrerad Markdown-lista.
 
 ### Prompt för Game Master (ändras mellan varje runda)
 
@@ -47,4 +47,4 @@ Aktörerna i scenariot beskriver sina handlingar så här:
 
 [Beskrivning av aktörernas handlingar, en i taget.]
 
-Använd den här informationen för att granska och eventuellt uppdatera Metrics Rules. Svara endast med en ny Markdown-text som beskriver nya Metrics Rules. (Är det Markdown som gäller? Är yaml bättre?)
+Använd den här informationen för att granska och eventuellt uppdatera Metrics Rules. Svara endast med Metrics Rules formaterade som en numrerad Markdown-lista.

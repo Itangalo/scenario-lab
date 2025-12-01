@@ -32,7 +32,7 @@ Varje runda:
 1. EXTERNA HÄNDELSER (Game Master)
    - Läser händelselistan
    - Bedömer vilka villkor som är uppfyllda
-   - Returnerar check_event(name, probability) för de som kan triggas
+   - Returnerar namn och sannolikhet för de som kan triggas
    - Orchestrator exekverar check_event, vilket avgör vilka händelser som inträffar
 
 2. AKTÖRER AGERAR (Aktörs-LLM:er)
@@ -265,6 +265,7 @@ Följande ingår **inte** i första versionen:
 - Avancerad analysmodul
 - Webb-UI
 - Stöd för mänskliga spelare
+- Outcome flags
 - Eventuellt inte heller batch-verktyg
 
 ## Nästa steg

@@ -21,11 +21,18 @@ En viktig del av beskrivningen av världen är dessa metrics, som varierar inom 
 * Namn på metric 2
   * …
 
-Till scenariot hör ett antal externa händelser, som kan hända om givna villkor är uppfyllda. Din uppgift just nu är att gå igenom listan med möjliga externa händelser, och för varje händelse utvärdera om dess villkor är uppfyllt utifrån nuvarande världsläge. Ditt svar ska vara ett JSON-objekt med namn och sannolikhet för varje händelse vars villkor är uppfyllt, på det här formatet:
+Till scenariot hör ett antal externa händelser, som kan hända om givna villkor är uppfyllda. Din uppgift just nu är att gå igenom listan med möjliga externa händelser, och för varje händelse utvärdera om dess villkor är uppfyllt utifrån nuvarande världsläge. Om sannolikheten anges som en formel eller beskrivning (t.ex. "dubbla värdet på unemployment"), ska du beräkna det faktiska värdet.
 
-{[name1, probability1],  [name2, probability2], …}
+Ditt svar ska vara en JSON-array med objekt för varje händelse vars villkor är uppfyllt, på det här formatet:
 
-Sannolikheten ska anges i ett värde mellan 0 och 1. Om ingen händelse uppfyller villkoren ska du svara med ett tomt JSON-objekt.
+```json
+[
+  {"id": "event1_id", "probability": 0.10},
+  {"id": "event2_id", "probability": 0.24}
+]
+```
+
+Sannolikheten ska anges som ett värde mellan 0 och 1. Om ingen händelse uppfyller villkoren ska du svara med en tom array: `[]`
 
 
 ## Prompt för Game Master, trigga externa händelser (ändras mellan varje runda)
@@ -68,8 +75,15 @@ Listan över potentiella externa händelser ser ut så här:
   ...
 }
 
-Använd bakgrundsinformationen för att avgöra vilka externa event som kan inträffa i den här rundan. Ditt svar ska vara ett JSON-objekt med namn och sannolikhet för varje händelse vars villkor är uppfyllt, på det här formatet:
+Använd bakgrundsinformationen för att avgöra vilka externa event som kan inträffa i den här rundan. Om sannolikheten anges som en formel eller beskrivning, ska du beräkna det faktiska värdet.
 
-{[name1, probability1],  [name2, probability2], …}
+Ditt svar ska vara en JSON-array med objekt för varje händelse vars villkor är uppfyllt, på det här formatet:
 
-Sannolikheten ska anges i ett värde mellan 0 och 1. Om ingen händelse uppfyller villkoren ska du svara med ett tomt JSON-objekt.
+```json
+[
+  {"id": "event1_id", "probability": 0.10},
+  {"id": "event2_id", "probability": 0.24}
+]
+```
+
+Sannolikheten ska anges som ett värde mellan 0 och 1. Om ingen händelse uppfyller villkoren ska du svara med en tom array: `[]`

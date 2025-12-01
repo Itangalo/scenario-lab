@@ -30,9 +30,9 @@ Det finns en lista, Metrics Rules, som beskriver hur metrics eventuellt påverka
 Svara med en Markdown-text med följande innehåll:
 
 * Rubrik nivå 2: Metrics
-* Ett JSON-objekt som beskriver samtliga metrics, i följande format: {metric1_name: value2, metric2_name: value2, ...}
-* Rubrik nivå 2: Berättelse om världen
-* Ett antal textstycken som beskriver vad som händer i världen under rundan som en sammanhängande berättelse. Du kan använda underrubriken (nivå 3) om du önskar.
+* Ett JSON-objekt som beskriver samtliga metrics, i följande format: `{"metric1_name": value1, "metric2_name": value2}`
+* Rubrik nivå 2: Narrativ
+* En sammanhängande berättelse om vad som händer i världen under rundan (max 400 ord). Du kan använda underrubriker (nivå 3) om du önskar.
 
 ### Prompt för Game Master (ändras mellan varje runda)
 
@@ -63,6 +63,6 @@ Använd den här informationen för att göra följande:
 Svara med en Markdown-text med följande innehåll:
 
 * Rubrik nivå 2: Metrics
-* Ett JSON-objekt som beskriver samtliga metrics, i följande format: {metric1_name: value2, metric2_name: value2, ...}
-* Rubrik nivå 2: Berättelse om världen
-* Ett antal textstycken som beskriver vad som händer i världen under rundan som en sammanhängande berättelse. Du kan använda underrubriken (nivå 3) om du önskar.
+* Ett JSON-objekt som beskriver samtliga metrics, i följande format: `{"metric1_name": value1, "metric2_name": value2}`
+* Rubrik nivå 2: Narrativ
+* En sammanhängande berättelse om vad som händer i världen under rundan (max 400 ord). Du kan använda underrubriker (nivå 3) om du önskar.
