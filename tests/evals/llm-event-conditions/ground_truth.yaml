@@ -1,0 +1,312 @@
+# Ground Truth for LLM Event Conditions Eval
+#
+# This file specifies the expected LLM outputs for each turn.
+# Used by pytest to validate LLM performance.
+
+# Test configuration
+test_config:
+  tolerance: 0.01  # 1% acceptable probability difference
+  strict_mode: true  # Fail if extra events returned
+
+# Expected results per turn
+turns:
+  1:
+    # Turn 1: January-June 2026
+    # Metrics: metric_a=50, metric_b=0.5, unemployment=8, global_temperature=1.2
+
+    expected_events:
+      # Condition Interpretation - Pass cases
+      - id: "test_gt_pass"
+        probability: 0.10
+        reason: "metric_a (50) > 40"
+
+      - id: "test_lt_pass"
+        probability: 0.20
+        reason: "metric_b (0.5) < 0.7"
+
+      - id: "test_eq_pass"
+        probability: 0.25
+        reason: "unemployment (8) == 8"
+
+      - id: "test_range_pass"
+        probability: 0.30
+        reason: "metric_a (50) är mellan 40 och 60"
+
+      - id: "test_and_pass"
+        probability: 0.35
+        reason: "metric_a (50) > 40 OCH unemployment (8) > 5 - båda uppfyllda"
+
+      - id: "test_or_pass"
+        probability: 0.45
+        reason: "metric_a (50) INTE > 60 men unemployment (8) > 5 - ett villkor uppfyllt"
+
+      # Probability Calculation
+      - id: "test_formula_double"
+        probability: 0.16
+        reason: "2 * 8 / 100 = 0.16"
+
+      - id: "test_formula_percentage"
+        probability: 0.04
+        reason: "8 / 2 / 100 = 0.04"
+
+      - id: "test_formula_complex"
+        probability: 0.002
+        reason: "(50 - 30) / 100 / 100 = 0.002"
+
+      - id: "test_formula_multiply"
+        probability: 0.10
+        reason: "0.5 * 20 / 100 = 0.10"
+
+      # Edge Case
+      - id: "test_no_conditions"
+        probability: 0.05
+        reason: "Inga villkor - alltid kvalificerad"
+
+    excluded_events:
+      # Condition Interpretation - Fail cases
+      - id: "test_gt_fail"
+        reason: "metric_a (50) INTE > 60"
+
+      - id: "test_and_fail"
+        reason: "metric_a (50) > 40 men unemployment (8) INTE > 15"
+
+      # Hallucination Prevention
+      - id: "test_hallucination_metric"
+        reason: "non_existent_metric finns inte"
+
+      - id: "test_hallucination_typo"
+        reason: "unemployement (felstavat) finns inte"
+
+      - id: "test_hallucination_invention"
+        reason: "ai_superintelligence_achieved finns inte"
+
+      # Temporal Conditions
+      - id: "test_turn_exact"
+        reason: "Endast runda 3, inte runda 1"
+
+      - id: "test_turn_from"
+        reason: "Från runda 2 och framåt, inte runda 1"
+
+      - id: "test_turn_range"
+        reason: "Runda 2-4, inte runda 1"
+
+      - id: "test_time_month"
+        reason: "September 2026 ingår inte i Januari-Juni 2026"
+
+  2:
+    # Turn 2: July-December 2026
+    # Metrics: Same as turn 1 (metrics remain static)
+    # Plus temporal events that trigger from turn 2
+
+    expected_events:
+      # All events from turn 1
+      - id: "test_gt_pass"
+        probability: 0.10
+        reason: "metric_a (50) > 40"
+
+      - id: "test_lt_pass"
+        probability: 0.20
+        reason: "metric_b (0.5) < 0.7"
+
+      - id: "test_eq_pass"
+        probability: 0.25
+        reason: "unemployment (8) == 8"
+
+      - id: "test_range_pass"
+        probability: 0.30
+        reason: "metric_a (50) är mellan 40 och 60"
+
+      - id: "test_and_pass"
+        probability: 0.35
+        reason: "metric_a (50) > 40 OCH unemployment (8) > 5"
+
+      - id: "test_or_pass"
+        probability: 0.45
+        reason: "metric_a (50) INTE > 60 men unemployment (8) > 5"
+
+      - id: "test_formula_double"
+        probability: 0.16
+        reason: "2 * 8 / 100 = 0.16"
+
+      - id: "test_formula_percentage"
+        probability: 0.04
+        reason: "8 / 2 / 100 = 0.04"
+
+      - id: "test_formula_complex"
+        probability: 0.002
+        reason: "(50 - 30) / 100 / 100 = 0.002"
+
+      - id: "test_formula_multiply"
+        probability: 0.10
+        reason: "0.5 * 20 / 100 = 0.10"
+
+      - id: "test_no_conditions"
+        probability: 0.05
+        reason: "Inga villkor - alltid kvalificerad"
+
+      # New temporal events for turn 2+
+      - id: "test_turn_from"
+        probability: 0.25
+        reason: "Från runda 2 och framåt - nu runda 2"
+
+      - id: "test_turn_range"
+        probability: 0.30
+        reason: "Runda 2-4 - nu runda 2"
+
+      - id: "test_time_month"
+        probability: 1.0
+        reason: "September 2026 ingår i Juli-December 2026"
+
+    excluded_events:
+      # Same exclusions as turn 1 except temporal events now included
+      - id: "test_gt_fail"
+        reason: "metric_a (50) INTE > 60"
+
+      - id: "test_and_fail"
+        reason: "unemployment (8) INTE > 15"
+
+      - id: "test_hallucination_metric"
+        reason: "non_existent_metric finns inte"
+
+      - id: "test_hallucination_typo"
+        reason: "unemployement finns inte"
+
+      - id: "test_hallucination_invention"
+        reason: "ai_superintelligence_achieved finns inte"
+
+      - id: "test_turn_exact"
+        reason: "Endast runda 3, inte runda 2"
+
+  3:
+    # Turn 3: January-June 2027
+    # Metrics: Same as turn 1 (metrics remain static)
+    # Plus all temporal events except test_time_month (can't repeat)
+
+    expected_events:
+      # All events from turn 1
+      - id: "test_gt_pass"
+        probability: 0.10
+        reason: "metric_a (50) > 40"
+
+      - id: "test_lt_pass"
+        probability: 0.20
+        reason: "metric_b (0.5) < 0.7"
+
+      - id: "test_eq_pass"
+        probability: 0.25
+        reason: "unemployment (8) == 8"
+
+      - id: "test_range_pass"
+        probability: 0.30
+        reason: "metric_a (50) är mellan 40 och 60"
+
+      - id: "test_and_pass"
+        probability: 0.35
+        reason: "metric_a (50) > 40 OCH unemployment (8) > 5"
+
+      - id: "test_or_pass"
+        probability: 0.45
+        reason: "metric_a (50) INTE > 60 men unemployment (8) > 5"
+
+      - id: "test_formula_double"
+        probability: 0.16
+        reason: "2 * 8 / 100 = 0.16"
+
+      - id: "test_formula_percentage"
+        probability: 0.04
+        reason: "8 / 2 / 100 = 0.04"
+
+      - id: "test_formula_complex"
+        probability: 0.002
+        reason: "(50 - 30) / 100 / 100 = 0.002"
+
+      - id: "test_formula_multiply"
+        probability: 0.10
+        reason: "0.5 * 20 / 100 = 0.10"
+
+      - id: "test_no_conditions"
+        probability: 0.05
+        reason: "Inga villkor - alltid kvalificerad"
+
+      # Temporal events for turn 3
+      - id: "test_turn_from"
+        probability: 0.25
+        reason: "Från runda 2 och framåt - nu runda 3"
+
+      - id: "test_turn_range"
+        probability: 0.30
+        reason: "Runda 2-4 - nu runda 3"
+
+      - id: "test_turn_exact"
+        probability: 1.0
+        reason: "Endast runda 3 - nu runda 3"
+
+    excluded_events:
+      # Same exclusions as turn 2
+      - id: "test_gt_fail"
+        reason: "metric_a (50) INTE > 60"
+
+      - id: "test_and_fail"
+        reason: "unemployment (8) INTE > 15"
+
+      - id: "test_hallucination_metric"
+        reason: "non_existent_metric finns inte"
+
+      - id: "test_hallucination_typo"
+        reason: "unemployement finns inte"
+
+      - id: "test_hallucination_invention"
+        reason: "ai_superintelligence_achieved finns inte"
+
+      - id: "test_time_month"
+        reason: "Kan inte upprepas - inträffade redan i runda 2"
+
+# Test categories for scoring
+categories:
+  condition_interpretation:
+    description: "Tests LLM's ability to correctly interpret conditions"
+    events:
+      - "test_gt_pass"
+      - "test_gt_fail"
+      - "test_lt_pass"
+      - "test_eq_pass"
+      - "test_range_pass"
+      - "test_and_pass"
+      - "test_and_fail"
+      - "test_or_pass"
+    weight: 1.0
+    pass_threshold: 0.80  # 80% required to pass
+
+  probability_calculation:
+    description: "Tests LLM's ability to correctly calculate probability formulas"
+    events:
+      - "test_formula_double"
+      - "test_formula_percentage"
+      - "test_formula_complex"
+      - "test_formula_multiply"
+    weight: 1.0
+    pass_threshold: 0.75  # 75% required to pass
+
+  hallucination_prevention:
+    description: "Tests that LLM doesn't reference non-existent metrics (CRITICAL)"
+    events:
+      - "test_hallucination_metric"
+      - "test_hallucination_typo"
+      - "test_hallucination_invention"
+    weight: 2.0  # Double weight - this is critical
+    pass_threshold: 1.0  # 100% required to pass - no hallucinations allowed
+
+  temporal_conditions:
+    description: "Tests LLM's ability to interpret turn-based and date-based conditions"
+    events:
+      - "test_turn_exact"
+      - "test_turn_from"
+      - "test_turn_range"
+      - "test_time_month"
+    weight: 1.0
+    pass_threshold: 0.80  # 80% required to pass
+
+# Overall scoring
+overall:
+  pass_threshold: 0.80  # 80% weighted average required to pass
+  description: "Weighted average of all category scores"

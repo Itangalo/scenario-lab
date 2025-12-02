@@ -1,0 +1,13 @@
+name: "LLM Event Conditions Eval"
+description: "Minimal scenario for testing LLM event condition interpretation"
+start_date: "2026-01"
+time_scale: "6 months per turn"
+max_turns: 3
+
+actors:
+  - government
+
+llm:
+  model: "anthropic/claude-sonnet-4"
+  temperature: 0.7
+  max_tokens: 2000
