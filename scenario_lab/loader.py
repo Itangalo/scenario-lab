@@ -1,0 +1,310 @@
+"""Scenario loading from disk."""
+
+import yaml
+from pathlib import Path
+from typing import Union
+from .models import (
+    Scenario,
+    ScenarioConfig,
+    Metric,
+    Metrics,
+    Event,
+    Actor,
+    WorldState,
+)
+
+
+def load_scenario(path: Union[Path, str]) -> Scenario:
+    """Load a complete scenario from directory."""
+    scenario_dir = Path(path)
+
+    # Load config
+    config = load_config(scenario_dir / "scenario.yaml")
+
+    # Load metrics
+    metrics = load_metrics(scenario_dir / "metrics.md")
+
+    # Load events
+    events = load_events(scenario_dir / "events.md")
+
+    # Load actors
+    actors = {}
+    actors_dir = scenario_dir / "background" / "actors"
+    for actor_id in config.actor_ids:
+        actors[actor_id] = load_actor(actors_dir / f"{actor_id}.md", actor_id)
+
+    # Load context
+    context = (scenario_dir / "background" / "context.md").read_text(encoding="utf-8")
+
+    # Load initial metric rules
+    metric_rules = (scenario_dir / "metric-rules.md").read_text(encoding="utf-8")
+
+    # Create initial world state from context
+    world_state = WorldState(
+        narrative=context,
+        turn=0,
+        time_period=get_time_period(config.start_date, 0, config.time_scale),
+    )
+
+    return Scenario(
+        config=config,
+        metrics=metrics,
+        events=events,
+        actors=actors,
+        metric_rules=metric_rules,
+        world_state=world_state,
+        context=context,
+    )
+
+
+def load_config(path: Path) -> ScenarioConfig:
+    """Load scenario.yaml."""
+    data = yaml.safe_load(path.read_text(encoding="utf-8"))
+    return ScenarioConfig(
+        name=data["name"],
+        description=data["description"],
+        start_date=data["start_date"],
+        time_scale=data["time_scale"],
+        max_turns=data["max_turns"],
+        actor_ids=data["actors"],
+        model=data.get("llm", {}).get("model", "anthropic/claude-sonnet-4"),
+        temperature=data.get("llm", {}).get("temperature", 0.7),
+        max_tokens=data.get("llm", {}).get("max_tokens", 2000),
+    )
+
+
+def load_metrics(path: Path) -> Metrics:
+    """Parse metrics from markdown file.
+
+    Expected format:
+    ## metric_id
+    **Beskrivning:** ...
+    **ID:** metric_id
+    **Min:** 0
+    **Max:** 100
+    **Enhet:** percent
+    **Startvärde:** 50
+    **Referenspunkter:** (optional)
+    - 0: description
+    - 50: description
+    """
+    content = path.read_text(encoding="utf-8")
+    metrics = {}
+
+    current_metric_id = None
+    metric_data = {}
+
+    for line in content.split("\n"):
+        line = line.strip()
+
+        if line.startswith("## "):
+            # Save previous metric
+            if current_metric_id and metric_data:
+                metrics[current_metric_id] = create_metric(current_metric_id, metric_data)
+            current_metric_id = line[3:].strip()
+            metric_data = {}
+
+        elif line.startswith("**") and ":" in line:
+            key, value = parse_key_value(line)
+            metric_data[key.lower()] = value
+
+        elif current_metric_id and line.startswith("- ") and ":" in line:
+            # Reference point: "- 0: description"
+            if "referenspunkter" not in metric_data:
+                metric_data["referenspunkter"] = {}
+            try:
+                ref_value, ref_desc = line[2:].split(":", 1)
+                metric_data["referenspunkter"][float(ref_value.strip())] = ref_desc.strip()
+            except ValueError:
+                pass
+
+    # Don't forget last metric
+    if current_metric_id and metric_data:
+        metrics[current_metric_id] = create_metric(current_metric_id, metric_data)
+
+    return Metrics(metrics=metrics)
+
+
+def create_metric(metric_id: str, data: dict) -> Metric:
+    """Create a Metric from parsed data."""
+    return Metric(
+        id=metric_id,
+        description=data.get("beskrivning", ""),
+        value=float(data.get("startvärde", 0)),
+        min_value=float(data.get("min", 0)),
+        max_value=float(data.get("max", 100)),
+        unit=data.get("enhet", ""),
+        reference_points=data.get("referenspunkter", {}),
+    )
+
+
+def load_events(path: Path) -> list[Event]:
+    """Parse events from markdown file.
+
+    Expected format:
+    ## Event Name
+    **ID:** event_id
+    **Villkor:** condition description
+    **Sannolikhet:** 0.10 or formula
+    **Kan upprepas:** Ja/Nej
+    **Beskrivning:** event description
+    """
+    content = path.read_text(encoding="utf-8")
+    events = []
+    current_event = {}
+
+    for line in content.split("\n"):
+        line = line.strip()
+
+        if line.startswith("## ") and current_event.get("id"):
+            # Save previous event (skip ## headings before first event)
+            events.append(create_event(current_event))
+            current_event = {"name": line[3:].strip()}
+
+        elif line.startswith("## "):
+            current_event = {"name": line[3:].strip()}
+
+        elif line.startswith("**") and ":" in line:
+            key, value = parse_key_value(line)
+            current_event[key.lower()] = value
+
+    # Don't forget last event
+    if current_event.get("id"):
+        events.append(create_event(current_event))
+
+    return events
+
+
+def create_event(data: dict) -> Event:
+    """Create an Event from parsed data."""
+    can_repeat_str = data.get("kan upprepas", "nej").lower()
+    can_repeat = can_repeat_str in ["ja", "yes", "true"]
+
+    # Handle probability - could be number or formula
+    probability = data.get("sannolikhet", "0")
+
+    return Event(
+        id=data["id"],
+        description=data.get("beskrivning", ""),
+        condition=data.get("villkor", ""),
+        probability=probability,
+        can_repeat=can_repeat,
+    )
+
+
+def load_actor(path: Path, actor_id: str) -> Actor:
+    """Parse actor from markdown file.
+
+    Expected format:
+    # Actor Name
+    ## Kort beskrivning
+    short description text
+    ## Längre beskrivning
+    long description text
+    """
+    content = path.read_text(encoding="utf-8")
+    lines = content.split("\n")
+
+    name = ""
+    short_desc = ""
+    long_desc = ""
+    current_section = None
+
+    for line in lines:
+        line_stripped = line.strip()
+
+        if line_stripped.startswith("# "):
+            name = line_stripped[2:].strip()
+        elif line_stripped.startswith("## Kort beskrivning"):
+            current_section = "short"
+        elif line_stripped.startswith("## Längre beskrivning"):
+            current_section = "long"
+        elif line_stripped.startswith("##"):
+            current_section = None
+        elif current_section == "short" and line_stripped:
+            short_desc += line_stripped + " "
+        elif current_section == "long" and line_stripped:
+            long_desc += line_stripped + " "
+
+    # Default goals - can be extracted from description if needed
+    initial_goals = []
+
+    return Actor(
+        id=actor_id,
+        name=name or actor_id,
+        short_description=short_desc.strip(),
+        long_description=long_desc.strip(),
+        initial_goals=initial_goals,
+    )
+
+
+def parse_key_value(line: str) -> tuple[str, str]:
+    """Parse a markdown line like '**Key:** value' -> ('Key', 'value')."""
+    # Remove ** markers
+    line = line.replace("**", "")
+    if ":" not in line:
+        return "", ""
+
+    key, value = line.split(":", 1)
+    return key.strip(), value.strip()
+
+
+def get_time_period(start_date: str, turn: int, time_scale: str) -> str:
+    """Calculate time period string for a given turn.
+
+    Args:
+        start_date: Format "2026-01" (YYYY-MM)
+        turn: Turn number (0 = initial state, 1 = first turn)
+        time_scale: e.g., "6 months per turn"
+
+    Returns:
+        String like "January-June 2026"
+    """
+    if turn == 0:
+        return f"Start: {start_date}"
+
+    # Parse start date
+    year, month = map(int, start_date.split("-"))
+
+    # Parse time scale
+    months_per_turn = 6  # default
+    if "month" in time_scale.lower():
+        parts = time_scale.lower().split()
+        for i, part in enumerate(parts):
+            if part.isdigit():
+                months_per_turn = int(part)
+                break
+
+    # Calculate period
+    start_month = month + (turn - 1) * months_per_turn
+    end_month = start_month + months_per_turn - 1
+
+    # Handle year overflow
+    start_year = year + (start_month - 1) // 12
+    start_month = ((start_month - 1) % 12) + 1
+
+    end_year = year + (end_month - 1) // 12
+    end_month = ((end_month - 1) % 12) + 1
+
+    month_names = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+    ]
+
+    start_name = month_names[start_month - 1]
+    end_name = month_names[end_month - 1]
+
+    if start_year == end_year:
+        return f"{start_name}-{end_name} {start_year}"
+    else:
+        return f"{start_name} {start_year}-{end_name} {end_year}"
