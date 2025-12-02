@@ -1,199 +1,225 @@
-# Scenario Lab V3 – Claude Code Instructions
+# Scenario Lab V4 – Claude Code Instructions
 
 ## Projektöversikt
 
 **Scenario Lab** är ett ramverk för att simulera komplexa strategiska och politiska scenarios med AI-agenter. Systemet fokuserar på AI-policy, geopolitik och organisationsstrategi.
 
 **Syfte:**
+
 - Primärt: Utforska hur LLMs kan användas för scenariosimulering
 - Sekundärt: Identifiera mönster i utfall genom upprepade simuleringar (både kvantitativt och kvalitativt)
 
-**Ignorera:** Filen `Implementation phases.md` ska helt ignoreras vid utveckling.
+**Status:** V4 core implementation är komplett. V3 är arkiverad i `v3-archive` tag.
 
-## Arkitektur – Hybridmodell
+## Arkitektur – Pure LLM Design
 
-V3 löser grundläggande problem från tidigare versioner genom en hybridarkitektur:
+V4 är en radikal förenkling från V3. Istället för komplex Python-logik **lutar vi oss mot LLM:en**:
 
-- **Narrativ flexibilitet:** LLMs hanterar diplomati, intentioner och kvalitativa beskrivningar
-- **Deterministisk logik:** Python-kod hanterar kvantitativa konsekvenser, resursflöden och verifierbara fakta
-- **Informationsasymmetri:** Aktörer har privat och publik information, vilket skapar realistisk osäkerhet
+- **LLMs hanterar ALL komplexitet:** narrativ, metrics, regelstolkning
+- **Python är minimal orkestrering:** ladda prompts, anropa APIs, spara filer
+- **Inga kommunikationsfaser** eller action points
+- **Ingen hybridarkitektur** - ren LLM-resonemang
+- **En enkel turn-loop:** Events → Actors → Metric Rules Update → Metrics Update
 
 ### Centrala komponenter
 
-1. **Engine (Python):** Orkestrerar spelet, anropar LLM APIs och underhåller World State
-2. **World State:** Sanningen om världen vid en given tidpunkt, består av fyra lager:
-   - **Narrative State:** Löpande textbeskrivning (historia + nuläge)
-   - **Metrics:** Kvantitativ data (global, private, public)
-   - **Fact Ledger:** Verifierade hårda fakta som aldrig sammanfattas bort
-   - **Relationship State:** Strukturerad data per aktörspar (trust, active_agreements)
-3. **The Director:** Specialiserad systemaktor som väver samman handlingar och händelser till sammanhängande narrativ
-4. **Actors:** Simulationens deltagare (länder, företag, organisationer), kontrollerade av LLM personas med specifika mål
-5. **Action Points (AP):** Valuta som begränsar kommunikation och uppmärksamhet
+1. **Orchestrator (Python):** Minimal orkestrering som kör turn-loopen
+2. **World State:** Narrativ beskrivning av världens tillstånd
+3. **Metrics:** Kvantitativa värden (t.ex. `ai_capability`, `unemployment`, `public_sentiment`)
+4. **Metric Rules:** LLM-hanterade regler för hur metrics förändras
+5. **Actors:** Simulationens deltagare (länder, företag, organisationer) med mål och handlingar
+6. **Events:** Exogena händelser med sannolikheter och villkor
 
-## Skapa nya scenarion
+## Turn Loop (V4)
 
-**Läs `docs/creating-scenarios.md` innan du skapar nya scenarion.**
+Varje tur representerar en tidsperiod (t.ex. 6 månader):
 
-Dokumentet innehåller:
-- Krav på background-filer (sketch-format)
-- Tekniska filformat (scenario.yaml, metrics.yaml, events.yaml, methods.py)
-- Steg-för-steg-process för att generera filer från sketches
-- Valideringschecklista
+1. **Events:** LLM bestämmer vilka externa händelser som inträffar baserat på villkor och sannolikheter
+2. **Actors:** Varje aktör beslutar mål och handlingar för turen
+3. **Metric Rules Update:** LLM granskar och uppdaterar kvantitativa regler
+4. **Metrics Update:** LLM uppdaterar alla metrics och genererar narrativ baserat på handlingar och regler
 
-Använd `examples/us-china-ai/` som referensexempel.
-
-## Filstruktur
+## Filstruktur (V4)
 
 ```
 scenario-name/
+├── scenario.yaml              # Konfiguration (tidsperiod, aktörer, LLM-inställningar)
+├── metrics.md                 # Metricdefinitioner (markdown format)
+├── events.md                  # Exogena händelser (markdown format)
+├── metric-rules.md            # Initiala kvantitativa regler
 ├── background/
-│   ├── context.md
+│   ├── context.md             # Världsbakgrund och initial state
 │   └── actors/
-│       ├── USA.md
-│       └── China.md
-├── scenario.yaml          # Tidsskala, AP-regler, world_altering_triggers
-├── metrics.yaml           # World + actors (private/public)
-├── events.yaml            # Exogena händelser
-├── methods.py             # Logik, validering, tolkningar
+│       ├── actor1.md          # Aktörsbeskrivningar
+│       └── actor2.md
 └── runs/
-    └── run-001/
-        ├── turn-01/
-        │   ├── views/
-        │   │   ├── USA.json      # Aktörsspecifik World State
-        │   │   └── China.json
-        │   ├── comms_phase_1.json
-        │   ├── comms_phase_2.json
-        │   ├── actions.json
-        │   ├── world_state.md
-        │   ├── metrics.json
-        │   ├── relationships.json
-        │   └── fact_ledger.json
-        └── summary.json          # Outcome flags för analys
+    └── run-YYYYMMDD-HHMMSS/
+        ├── config.json        # Körningskonfiguration
+        ├── summary.json       # Slutresultat
+        └── turn-XX/
+            ├── 1-events.json
+            ├── 2-actors/
+            │   └── actor.md
+            ├── 3-metric-rules.md
+            ├── 4-metrics.json
+            └── 4-world-state.md
 ```
 
-## Simuleringsloop
+## Skapa nya scenarion
 
-Varje tur representerar en tidsperiod (t.ex. 6 månader).
+Ett scenario består av:
 
-### Pre-Turn
-1. Event Check
-2. Trigger Check (World Altering Events)
-3. AP Reset
-4. View Generation (aktörsspecifik filtrerad World State)
+**1. Background (Markdown)**
 
-### Fas 1: Initiative & Communication
-- Aktörer får sin filtrerade World State
-- Kan skicka meddelanden (1 AP per mottagare)
+- `context.md` - Världsbakgrund och initial situation
+- `actors/*.md` - Aktörsbeskrivningar med mål
 
-### Fas 2: Response & Final Negotiation
-- Aktörer får inkommande meddelanden
-- Svar till avsändare: 0 AP
-- Nytt meddelande/vidarebefordra: 1 AP
-
-### Fas 3: Execution & Goal Adjustment
-- Diplomati avslutad, alla agerar
-- Max 2 stora initiativ per tur (valideras av methods.py)
-- Output: Narrativ text + strukturerade funktionsanrop + uppdaterade mål
-
-### Post-Turn Synthesis
-1. Validering via methods.py
-2. Metrics Update
-3. Relationship Update
-4. Fact Ledger Update
-5. Narrative Synthesis (Director genererar world_state.md)
-
-## Informationsasymmetri
-
-Metrics delas in i tre kategorier:
+**2. Configuration (YAML)**
 
 ```yaml
-world:           # Synlig för alla
-  global_temperature: 1.2
-  ai_catastrophe_risk: 0.05
-
+name: "Scenario Name"
+description: "Brief description"
+time_scale: "6 months per turn"
+start_date: "2026-01"
+max_turns: 10
 actors:
-  USA:
-    private:     # Synlig endast för ägaren
-      military_capacity: 85
-    public:      # Synlig för alla
-      budget: 500
+  - actor1
+  - actor2
+llm:
+  model: "anthropic/claude-sonnet-4"
+  temperature: 0.7
+  max_tokens: 2000
 ```
 
-## methods.py – Scenariospecifik logik
+**3. Metrics (Markdown)**
 
-Varje scenario definierar sina egna action functions. Engine anropar dem dynamiskt baserat på function_call-namn i LLM output.
-
-**Standard signatur:**
-```python
-def action_name(actor: str, args: dict, state: WorldState) -> list[str]:
-    """
-    Modifiera state.metrics och state.outcome_flags vid behov.
-    Returnera lista med tolkningssträngar för Director.
-    """
-    pass
+```markdown
+## metric_name
+**Beskrivning:** What this metric represents
+**ID:** metric_name
+**Startvärde:** 50
+**Min:** 0
+**Max:** 100
+**Enhet:** percent
 ```
 
-**Outcome Flags** sätts av methods.py för kvantitativ analys:
-```python
-state["outcome_flags"]["war_declared"] = True
-state["outcome_flags"]["war_parties"] = [attacker, defender]
+**4. Events (Markdown)**
+
+```markdown
+## Event Name
+**ID:** event_id
+**Villkor:** When this can happen
+**Sannolikhet:** 10 procent per runda
+**Kan upprepas:** Ja/Nej
+**Beskrivning:** What happens
 ```
 
 ## Teknisk Stack
 
 - **Python:** 3.11+
-- **Dependencies:** pydantic, pyyaml, httpx
-- **Execution model:** Synkron för MVP (async kan läggas till senare)
+- **Dependencies:** httpx, pyyaml, python-dotenv, pytest
 - **Type hints:** Krävs genomgående
+- **LLM Provider:** OpenRouter API (stöd för Claude, GPT, Llama, etc.)
 
-### LLM Provider Abstraction
+## LLM Evaluation Suite (Issue #120)
 
-Stöd för flera LLM backends via provider abstraction:
-- **OpenRouterProvider:** Primär provider (Claude, GPT, Llama, etc.)
-- **LocalProvider:** För lokala modeller (Ollama, llama.cpp)
+V4 inkluderar ett komplett pytest-baserat evalueringssystem för att testa LLM-prestanda på event condition-tolkning.
 
-Konfigureras i scenario.yaml:
-```yaml
-llm:
-  provider: "openrouter"
-  model: "anthropic/claude-sonnet-4"
-  api_key_env: "OPENROUTER_API_KEY"
+**Plats:** `tests/evals/llm-event-conditions/`
+
+**Syfte:** Testa om LLMs korrekt kan:
+
+1. **Tolka villkor** - Förstå när händelser kan inträffa (t.ex. "metric_a > 40")
+2. **Beräkna sannolikheter** - Evaluera formler korrekt (t.ex. "2 * unemployment / 100")
+3. **Undvika hallucinationer** - Inte referera till metrics som inte finns
+4. **Hantera temporala villkor** - Förstå turn- och datumbaserade triggers
+
+**Funktioner:**
+
+- 20 testhändelser över 4 kapaciteter
+- Ground truth YAML med förväntade resultat
+- Minimal eval-scenario (4 metrics, 1 aktör)
+- Viktad poängsättning med kategori-specifika tröskelvärden
+- Komplett dokumentation i README.md
+
+**Användning:**
+
+```bash
+# Kör alla eval-tester
+export OPENROUTER_API_KEY="your_key"
+pytest tests/evals/llm-event-conditions/ -v
+
+# Testa specifik modell
+export TEST_LLM_MODEL="anthropic/claude-haiku-4"
+pytest tests/evals/llm-event-conditions/ -v
+
+# Testa specifik kategori
+pytest tests/evals/llm-event-conditions/ -k "hallucination" -v
+```
+
+**Output:**
+
+```
+============================================================
+EVALUATION RESULTS
+============================================================
+condition_interpretation      : 87.5% (7/8) [weight: 1.0]
+probability_calculation       : 100.0% (4/4) [weight: 1.0]
+hallucination_prevention      : 100.0% (3/3) [weight: 2.0]
+temporal_conditions           : 83.3% (10/12) [weight: 1.0]
+------------------------------------------------------------
+OVERALL SCORE                 : 91.7%
+============================================================
+```
+
+## Exempel: Sweden AI 2030
+
+Scenario som utforskar AI-utveckling i Sverige 2026-2030.
+
+**Plats:** `scenarios/sweden-ai-2030/`
+
+**Aktörer:**
+
+- Regeringen (innovation vs. reglering)
+- Fackföreningar (arbetarskydd)
+- Näringslivet (AI-adoption)
+- Media (offentlig diskurs)
+
+**Metrics:**
+
+- `ai_capability` - Timmar arbete AI kan hantera
+- `ai_adoption_sweden` - Procent som regelbundet använder AI
+- `unemployment` - Arbetslöshet
+- `public_sentiment` - Allmän opinion
+
+**Variants:**
+
+- `cheap-with-fallback.yaml` - Kostnadseffektiv körning med fallback-modeller
+
+## CLI Användning
+
+```bash
+# Kör simulering
+python -m scenario_lab.cli scenarios/sweden-ai-2030
+
+# Specifikt antal turer
+python -m scenario_lab.cli scenarios/sweden-ai-2030 --turns 5
+
+# Använd specifik modell
+python -m scenario_lab.cli scenarios/sweden-ai-2030 --model anthropic/claude-opus-4
+
+# Dry run (visa prompts utan att köra)
+python -m scenario_lab.cli scenarios/sweden-ai-2030 --dry-run
+
+# Använd variant
+python -m scenario_lab.cli scenarios/sweden-ai-2030/variants/cheap-with-fallback.yaml
 ```
 
 ## Utvecklingsriktlinjer
 
-1. **Versionera prompter separat:** Lagra i `prompts/` directory för iteration utan kodändringar
-2. **Logga allt:** Spara rå LLM input/output för debugging
-3. **Börja smått:** 2 aktörer, 3 turer. Skala upp när det fungerar
-4. **Använd billiga modeller för iteration:** Byt till starkare modeller för produktionskörningar
-5. **Type hints krävs:** Genomgående i all kod
-6. **Validering först:** methods.py validerar och begränsar handlingar
-
-## MVP Implementation Roadmap
-
-1. Core Engine (loop som läser YAML, genererar views, kör turer)
-2. Metrics Filter (implementera `get_visible_metrics()`)
-3. Action Validation (methods.py validerar och begränsar handlingar)
-4. Mock LLM (dummy agent för att testa flödet)
-5. LLM Integration (OpenRouter provider med retry logic)
-6. Prompt Engineering (system prompts för alla faser)
-7. Director (narrativ syntes)
-8. Outcome Flags (strukturerad data för analys)
-9. CLI (realtidsvisning av simulering)
-
-## Minnehantering
-
-För långa simuleringar:
-
-1. **Narrative:** Rolling window – senaste 2 turerna i detalj, sammanfattning av tidigare epoker
-2. **Fact Ledger:** Kritiska punkter som aldrig sammanfattas bort
-3. **Relationship State:** Strukturerad data som ersätter narrativt relationsminne
-4. **Metrics:** Senaste snapshot + datatolkningar
-
-## Viktiga designprinciper
-
-- **Hybrid architecture:** LLM för narrativ, Python för logik
-- **Information asymmetry:** Aktörer har begränsad information
-- **Deterministic validation:** methods.py säkerställer regelefterlevnad
-- **Structured outcomes:** Outcome flags möjliggör kvantitativ analys
-- **Memory efficiency:** Strukturerad data + selektiv narrativ
+1. **LLMs hanterar komplexitet** - Lita på LLM:en istället för att skriva Python-logik
+2. **Prompter är kod** - Versionera och testa system prompts noggrant
+3. **Logga allt** - Spara rå LLM input/output för debugging
+4. **Börja smått** - 2 aktörer, 3 turer. Skala upp när det fungerar
+5. **Använd billiga modeller för iteration** - Haiku/Grok för dev, Sonnet/Opus för produktion
+6. **Type hints krävs** - Genomgående i all kod

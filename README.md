@@ -136,21 +136,40 @@ scenario-lab/
 ├── README.md
 ├── CLAUDE.md                    # Development notes for Claude Code
 ├── .gitignore
+├── pyproject.toml               # Python package configuration
+├── scenario_lab/                # Core Python package
+│   ├── models.py                # Data models
+│   ├── loader.py                # Scenario file parsers
+│   ├── orchestrator.py          # Turn execution engine
+│   ├── prompts.py               # Prompt builder
+│   ├── llm.py                   # LLM client with fallback support
+│   ├── output.py                # Output persistence
+│   └── cli.py                   # Command-line interface
+├── prompts/                     # System prompt templates
+│   └── system/
+│       ├── events.md
+│       ├── actor.md
+│       ├── metric-rules.md
+│       └── metrics-update.md
 ├── docs/
 │   └── V4/
 │       ├── design-spec.md       # V4 architecture documentation
-│       ├── prompts/             # System prompt templates
-│       │   ├── 01 - Exogenous events.md
-│       │   ├── 02 - Actor.md
-│       │   ├── 03 - Metrics Rules Update.md
-│       │   └── 04 - Metrics Update.md
 │       └── early-testing/       # Test runs and frozen prompts
+├── tests/
+│   └── evals/
+│       └── llm-event-conditions/  # LLM evaluation suite (Issue #120)
+│           ├── README.md
+│           ├── test_event_conditions.py
+│           ├── ground_truth.yaml
+│           └── scenario/        # Minimal eval scenario
 └── scenarios/
     └── sweden-ai-2030/          # Example scenario
         ├── background/          # Context and actor descriptions
-        ├── metrics.yaml         # Metric definitions
-        ├── events.yaml          # External events
-        └── scenario.yaml        # Scenario configuration
+        ├── metrics.md           # Metric definitions (markdown)
+        ├── events.md            # External events (markdown)
+        ├── metric-rules.md      # Quantitative rules
+        ├── scenario.yaml        # Scenario configuration
+        └── variants/            # Scenario variants
 ```
 
 ## Creating a Scenario
@@ -219,6 +238,57 @@ Located in `scenarios/sweden-ai-2030/`, this scenario explores AI development in
 - Sweden election, Taiwan blockade
 - AI incidents and labor strikes
 
+## LLM Evaluation Suite
+
+V4 includes an automated pytest-based evaluation system for testing LLM performance on event condition interpretation.
+
+**Location:** `tests/evals/llm-event-conditions/`
+
+**Purpose:** Test whether LLMs can correctly:
+1. Interpret conditions (e.g., "metric_a > 40")
+2. Calculate probabilities from formulas (e.g., "2 * unemployment / 100")
+3. Avoid hallucinations (not reference non-existent metrics)
+4. Handle temporal conditions (turn-based and date-based triggers)
+
+**Features:**
+- 20 test events across 4 capability categories
+- Ground truth YAML with expected outputs
+- Minimal eval scenario (4 metrics, 1 actor)
+- Weighted scoring with category-specific thresholds
+- Comprehensive documentation
+
+**Usage:**
+```bash
+# Set API key
+export OPENROUTER_API_KEY="your_key_here"
+
+# Run all evaluation tests
+pytest tests/evals/llm-event-conditions/ -v
+
+# Test specific model
+export TEST_LLM_MODEL="anthropic/claude-haiku-4"
+pytest tests/evals/llm-event-conditions/ -v
+
+# Test specific category
+pytest tests/evals/llm-event-conditions/ -k "hallucination" -v
+```
+
+**Expected Output:**
+```
+============================================================
+EVALUATION RESULTS
+============================================================
+condition_interpretation      : 87.5% (7/8) [weight: 1.0]
+probability_calculation       : 100.0% (4/4) [weight: 1.0]
+hallucination_prevention      : 100.0% (3/3) [weight: 2.0]
+temporal_conditions           : 83.3% (10/12) [weight: 1.0]
+------------------------------------------------------------
+OVERALL SCORE                 : 91.7%
+============================================================
+```
+
+**See:** `tests/evals/llm-event-conditions/README.md` for detailed documentation.
+
 ## Development Status
 
 ### Completed
@@ -231,8 +301,10 @@ Located in `scenarios/sweden-ai-2030/`, this scenario explores AI development in
 ✅ Turn execution engine (orchestrator.py)
 ✅ CLI interface (cli.py)
 ✅ Output persistence (output.py)
+✅ LLM evaluation suite for event conditions (tests/evals/llm-event-conditions/)
 
 ### Next Steps
+✅ LLM evaluation suite for event conditions (Issue #120)
 ⬜ End-to-end testing with real LLM
 ⬜ Additional example scenarios
 ⬜ Multi-run analysis tools
