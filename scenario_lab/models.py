@@ -1,7 +1,7 @@
 """Data models for Scenario Lab V4."""
 
 from dataclasses import dataclass, field
-from typing import Optional
+from typing import Optional, Union
 import json
 
 
@@ -107,6 +107,27 @@ class TurnResult:
 
 
 @dataclass
+class LLMConfig:
+    """LLM configuration with per-task model selection."""
+
+    # Per-task model selection
+    events: str = "anthropic/claude-sonnet-4"
+    actors: Union[dict[str, str], str] = "anthropic/claude-sonnet-4"  # actor_id -> model, or default string
+    rules: str = "anthropic/claude-sonnet-4"
+    metrics: str = "anthropic/claude-sonnet-4"
+
+    # Global settings
+    temperature: float = 0.7
+    max_tokens: int = 2000
+
+    def get_actor_model(self, actor_id: str) -> str:
+        """Get model for a specific actor."""
+        if isinstance(self.actors, str):
+            return self.actors
+        return self.actors.get(actor_id, self.actors.get("default", "anthropic/claude-sonnet-4"))
+
+
+@dataclass
 class ScenarioConfig:
     """Scenario configuration."""
 
@@ -118,9 +139,12 @@ class ScenarioConfig:
     actor_ids: list[str]
 
     # LLM settings
-    model: str = "anthropic/claude-sonnet-4"
-    temperature: float = 0.7
-    max_tokens: int = 2000
+    llm: LLMConfig = None
+
+    def __post_init__(self):
+        # Ensure llm config exists
+        if self.llm is None:
+            self.llm = LLMConfig()
 
 
 @dataclass

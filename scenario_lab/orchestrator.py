@@ -2,10 +2,10 @@
 
 import random
 import json
-from typing import Protocol
+from typing import Protocol, Optional, Union
 from .models import Scenario, TurnResult, WorldState
 from .prompts import PromptBuilder
-from .llm import LLMResponse
+from .llm import LLMResponse, LLMClient
 
 
 class LLMClientProtocol(Protocol):
@@ -19,12 +19,107 @@ class LLMClientProtocol(Protocol):
 
 
 class Orchestrator:
-    """Executes the simulation turn loop."""
+    """Executes the simulation turn loop with per-task LLM selection."""
 
-    def __init__(self, scenario: Scenario, llm_client: LLMClientProtocol):
+    def __init__(
+        self,
+        scenario: Scenario,
+        llm_client: Optional[Union[LLMClientProtocol, dict[str, LLMClientProtocol]]] = None,
+    ):
+        """Initialize orchestrator.
+
+        Args:
+            scenario: The scenario to run
+            llm_client: Either:
+                - Single LLM client (uses same for all tasks, backward compatible)
+                - Dict of clients {"events": client, "actors": {...}, "rules": client, "metrics": client}
+                - None (creates clients based on scenario.config.llm)
+        """
         self.scenario = scenario
-        self.llm = llm_client
         self.prompt_builder = PromptBuilder(scenario)
+        self._owned_clients = []  # Clients we created and need to close
+
+        # Setup LLM clients
+        if llm_client is None:
+            # Create clients based on config
+            self.llm_clients = self._create_clients_from_config()
+        elif isinstance(llm_client, dict):
+            # Use provided dict of clients
+            self.llm_clients = llm_client
+        else:
+            # Single client for all tasks (backward compatible)
+            self.llm_clients = {
+                "events": llm_client,
+                "actors": {},  # Will use events client as fallback
+                "rules": llm_client,
+                "metrics": llm_client,
+            }
+
+    def _create_clients_from_config(self) -> dict:
+        """Create LLM clients based on scenario configuration."""
+        config = self.scenario.config.llm
+
+        # Create client for events
+        events_client = LLMClient(
+            model=config.events,
+            temperature=config.temperature,
+            max_tokens=config.max_tokens,
+        )
+        self._owned_clients.append(events_client)
+
+        # Create clients for actors
+        actor_clients = {}
+        for actor_id in self.scenario.config.actor_ids:
+            model = config.get_actor_model(actor_id)
+            # Reuse existing client if same model
+            existing = next(
+                (c for c in [events_client] + list(actor_clients.values()) if c.model == model),
+                None,
+            )
+            if existing:
+                actor_clients[actor_id] = existing
+            else:
+                client = LLMClient(
+                    model=model, temperature=config.temperature, max_tokens=config.max_tokens
+                )
+                self._owned_clients.append(client)
+                actor_clients[actor_id] = client
+
+        # Create client for rules
+        if config.rules == config.events:
+            rules_client = events_client
+        elif config.rules in [c.model for c in actor_clients.values()]:
+            rules_client = next(c for c in actor_clients.values() if c.model == config.rules)
+        else:
+            rules_client = LLMClient(
+                model=config.rules, temperature=config.temperature, max_tokens=config.max_tokens
+            )
+            self._owned_clients.append(rules_client)
+
+        # Create client for metrics
+        if config.metrics == config.events:
+            metrics_client = events_client
+        elif config.metrics == config.rules:
+            metrics_client = rules_client
+        elif config.metrics in [c.model for c in actor_clients.values()]:
+            metrics_client = next(c for c in actor_clients.values() if c.model == config.metrics)
+        else:
+            metrics_client = LLMClient(
+                model=config.metrics, temperature=config.temperature, max_tokens=config.max_tokens
+            )
+            self._owned_clients.append(metrics_client)
+
+        return {
+            "events": events_client,
+            "actors": actor_clients,
+            "rules": rules_client,
+            "metrics": metrics_client,
+        }
+
+    def close(self):
+        """Close all owned LLM clients."""
+        for client in self._owned_clients:
+            client.close()
 
     def run_turn(self, turn: int) -> TurnResult:
         """Execute one complete turn.
@@ -87,7 +182,7 @@ class Orchestrator:
             List of triggered events with their probabilities
         """
         system, user = self.prompt_builder.build_events_prompt(turn)
-        response = self.llm.complete(system, user)
+        response = self.llm_clients["events"].complete(system, user)
 
         try:
             # Parse LLM response: list of events with probabilities
@@ -147,8 +242,15 @@ class Orchestrator:
             actor = self.scenario.actors[actor_id]
             print(f"  → {actor.name}...")
 
+            # Get appropriate client for this actor
+            if "actors" in self.llm_clients and actor_id in self.llm_clients["actors"]:
+                client = self.llm_clients["actors"][actor_id]
+            else:
+                # Fallback to events client if no specific actor client
+                client = self.llm_clients["events"]
+
             system, user = self.prompt_builder.build_actor_prompt(actor_id, turn, triggered_events)
-            response = self.llm.complete(system, user)
+            response = client.complete(system, user)
             outputs[actor_id] = response.content
 
             # Update actor's last actions in scenario
@@ -170,7 +272,7 @@ class Orchestrator:
             Updated metric rules as markdown
         """
         system, user = self.prompt_builder.build_rules_prompt(turn, actor_outputs, triggered_events)
-        response = self.llm.complete(system, user)
+        response = self.llm_clients["rules"].complete(system, user)
         return response.content
 
     def _run_metrics_step(
@@ -189,7 +291,7 @@ class Orchestrator:
         system, user = self.prompt_builder.build_metrics_prompt(
             turn, actor_outputs, triggered_events
         )
-        response = self.llm.complete(system, user)
+        response = self.llm_clients["metrics"].complete(system, user)
 
         try:
             metrics, narrative = response.extract_metrics_and_narrative()
@@ -242,13 +344,18 @@ class Orchestrator:
 
 
 def run_simulation(
-    scenario: Scenario, llm_client: LLMClientProtocol, num_turns: int = None
+    scenario: Scenario,
+    llm_client: Optional[Union[LLMClientProtocol, dict[str, LLMClientProtocol]]] = None,
+    num_turns: int = None,
 ) -> list[TurnResult]:
     """Run a complete simulation.
 
     Args:
         scenario: Loaded scenario
-        llm_client: LLM client (real or mock)
+        llm_client: Either:
+            - Single LLM client (backward compatible)
+            - Dict of clients for per-task usage
+            - None (creates clients based on scenario.config.llm)
         num_turns: Number of turns to run (default: from config)
 
     Returns:
@@ -258,9 +365,13 @@ def run_simulation(
     max_turns = num_turns or scenario.config.max_turns
     results = []
 
-    for turn in range(1, max_turns + 1):
-        result = orchestrator.run_turn(turn)
-        results.append(result)
-        scenario.turn_history.append(result)
+    try:
+        for turn in range(1, max_turns + 1):
+            result = orchestrator.run_turn(turn)
+            results.append(result)
+            scenario.turn_history.append(result)
+    finally:
+        # Close orchestrator's owned clients if any
+        orchestrator.close()
 
     return results

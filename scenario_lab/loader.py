@@ -6,6 +6,7 @@ from typing import Union
 from .models import (
     Scenario,
     ScenarioConfig,
+    LLMConfig,
     Metric,
     Metrics,
     Event,
@@ -58,8 +59,34 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
 
 
 def load_config(path: Path) -> ScenarioConfig:
-    """Load scenario.yaml."""
+    """Load scenario.yaml with support for per-task LLM configuration."""
     data = yaml.safe_load(path.read_text(encoding="utf-8"))
+
+    # Parse LLM configuration
+    llm_data = data.get("llm", {})
+
+    # Support both old format (single model) and new format (per-task models)
+    if "model" in llm_data and not any(k in llm_data for k in ["events", "actors", "rules", "metrics"]):
+        # Old format: single model for everything
+        llm_config = LLMConfig(
+            events=llm_data.get("model", "anthropic/claude-sonnet-4"),
+            actors=llm_data.get("model", "anthropic/claude-sonnet-4"),
+            rules=llm_data.get("model", "anthropic/claude-sonnet-4"),
+            metrics=llm_data.get("model", "anthropic/claude-sonnet-4"),
+            temperature=llm_data.get("temperature", 0.7),
+            max_tokens=llm_data.get("max_tokens", 2000),
+        )
+    else:
+        # New format: per-task models
+        llm_config = LLMConfig(
+            events=llm_data.get("events", "anthropic/claude-sonnet-4"),
+            actors=llm_data.get("actors", "anthropic/claude-sonnet-4"),
+            rules=llm_data.get("rules", "anthropic/claude-sonnet-4"),
+            metrics=llm_data.get("metrics", "anthropic/claude-sonnet-4"),
+            temperature=llm_data.get("temperature", 0.7),
+            max_tokens=llm_data.get("max_tokens", 2000),
+        )
+
     return ScenarioConfig(
         name=data["name"],
         description=data["description"],
@@ -67,9 +94,7 @@ def load_config(path: Path) -> ScenarioConfig:
         time_scale=data["time_scale"],
         max_turns=data["max_turns"],
         actor_ids=data["actors"],
-        model=data.get("llm", {}).get("model", "anthropic/claude-sonnet-4"),
-        temperature=data.get("llm", {}).get("temperature", 0.7),
-        max_tokens=data.get("llm", {}).get("max_tokens", 2000),
+        llm=llm_config,
     )
 
 

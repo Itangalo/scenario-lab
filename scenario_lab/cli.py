@@ -42,7 +42,11 @@ def main():
     print(f"  Events: {len(scenario.events)}")
 
     if args.model:
-        scenario.config.model = args.model
+        # Override all task models if --model is specified
+        scenario.config.llm.events = args.model
+        scenario.config.llm.actors = args.model
+        scenario.config.llm.rules = args.model
+        scenario.config.llm.metrics = args.model
 
     if args.dry_run:
         run_dry(scenario)
@@ -50,34 +54,34 @@ def main():
 
     # Run simulation
     print(f"\nRunning simulation: {scenario.config.name}")
-    print(f"Model: {scenario.config.model}")
+    print(f"LLM Configuration:")
+    print(f"  Events: {scenario.config.llm.events}")
+    if isinstance(scenario.config.llm.actors, str):
+        print(f"  Actors: {scenario.config.llm.actors} (all)")
+    else:
+        print(f"  Actors:")
+        for actor_id, model in scenario.config.llm.actors.items():
+            print(f"    {actor_id}: {model}")
+    print(f"  Rules: {scenario.config.llm.rules}")
+    print(f"  Metrics: {scenario.config.llm.metrics}")
     print(f"Turns: {args.turns or scenario.config.max_turns}")
-
-    llm_client = LLMClient(
-        model=scenario.config.model,
-        temperature=scenario.config.temperature,
-        max_tokens=scenario.config.max_tokens,
-    )
 
     output_manager = OutputManager(scenario, args.scenario)
     run_dir = output_manager.start_run()
     print(f"Output directory: {run_dir.name}\n")
 
-    try:
-        results = run_simulation(scenario, llm_client, args.turns)
+    # run_simulation will create LLM clients based on scenario.config.llm
+    results = run_simulation(scenario, llm_client=None, num_turns=args.turns)
 
-        # Save results as we go (already printed in orchestrator)
-        for result in results:
-            output_manager.save_turn(result)
+    # Save results as we go (already printed in orchestrator)
+    for result in results:
+        output_manager.save_turn(result)
 
-        output_manager.save_summary(results)
-        print(f"\n{'='*60}")
-        print(f"SIMULATION COMPLETE")
-        print(f"{'='*60}")
-        print(f"Results saved to: {run_dir}")
-
-    finally:
-        llm_client.close()
+    output_manager.save_summary(results)
+    print(f"\n{'='*60}")
+    print(f"SIMULATION COMPLETE")
+    print(f"{'='*60}")
+    print(f"Results saved to: {run_dir}")
 
 
 def run_dry(scenario):
