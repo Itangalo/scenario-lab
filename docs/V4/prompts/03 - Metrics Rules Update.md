@@ -21,9 +21,15 @@ En viktig del av beskrivningen av världen är dessa metrics, som varierar inom 
 * Namn på metric 2
   * …
 
-Det finns en lista, Metrics Rules, som beskriver hur metrics eventuellt påverkar varandra eller utvecklas över tid. Din uppgift just nu är att, utifrån nuvarande världsläge och de handlingar som aktörer gjort, uppdatera Metrics Rules. Du får ändra i befintliga regler, ta bort sådana som blivit onödiga eller inaktuella, och lägga till nya som du anser behövs.
+Det finns en lista, Metrics Rules, som beskriver hur metrics förändras baserat på tid eller värden på andra metrics. Din uppgift just nu är att, utifrån nuvarande världsläge och de handlingar som aktörer gjort, uppdatera Metrics Rules.
 
-För att scenarioövningen ska fungera bra behöver Metrics Rules vara så realistiska som möjligt, utifrån hur världen ser ut. Det bör idealt finnas mellan fem och tio regler, men du kan gå utanför dessa gränser om du bedömer det befogat.
+**Viktigt:** Varje regel MÅSTE beskriva hur en eller flera metrics förändras baserat på:
+- Tiden/omvärlden (exempelvis "ai_capability dubbleras varje halvår")
+- Värden på andra metrics (exempelvis "När unemployment > 15 minskar public_sentiment_to_ai med 1 per runda")
+
+Regler får INTE koppla metrics till narrativa beskrivningar av världen utan konkret metric-värde. Fokusera på kvantitativa samband mellan metrics.
+
+Du får ändra i befintliga regler, ta bort sådana som blivit onödiga eller inaktuella, och lägga till nya som du anser behövs. För att scenarioövningen ska fungera bra behöver Metrics Rules vara så realistiska som möjligt, utifrån hur världen ser ut. Det bör idealt finnas mellan fem och tio regler, men du kan gå utanför dessa gränser om du bedömer det befogat.
 
 Svara endast med Metrics Rules formaterade som en numrerad Markdown-lista.
 
@@ -47,4 +53,12 @@ Aktörerna i scenariot beskriver sina handlingar så här:
 
 [Beskrivning av aktörernas handlingar, en i taget.]
 
-Använd den här informationen för att granska och eventuellt uppdatera Metrics Rules. Svara endast med Metrics Rules formaterade som en numrerad Markdown-lista.
+Använd den här informationen för att granska och eventuellt uppdatera Metrics Rules.
+
+**Viktigt:** Varje regel MÅSTE beskriva hur en eller flera metrics förändras baserat på:
+- Tiden/omvärlden (exempelvis "ai_capability dubbleras varje halvår")
+- Värden på andra metrics (exempelvis "När unemployment > 15 minskar public_sentiment_to_ai med 1 per runda")
+
+Regler får INTE koppla metrics till narrativa beskrivningar utan konkret metric-värde.
+
+Svara endast med Metrics Rules formaterade som en numrerad Markdown-lista.

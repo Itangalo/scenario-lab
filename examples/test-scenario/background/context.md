@@ -1,3 +1,0 @@
-# Background Context
-
-In the year 2025, the rapid advancement of artificial intelligence capabilities has reached a critical juncture. The United States and China, as the two leading AI superpowers, face mounting pressure to establish international governance frameworks while simultaneously pursuing national competitive advantages. Recent breakthroughs in AI systems have raised both unprecedented opportunities for global cooperation and serious concerns about existential risks, creating a delicate balance between collaboration and competition that will define the next decade of technological development.

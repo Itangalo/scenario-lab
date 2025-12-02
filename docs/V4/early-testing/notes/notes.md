@@ -7,6 +7,7 @@
 * The world narrative probably needs to be compacted, at least after a while.
 * Should actors have one LLM call for reviewing goals, and a separate one for declaring actions?
 * There should be options for setting the output language, but not in the MVP. Swedish isn't working perfectly.
+* The Game Master will probably need a persistent notepad for keeping track of some things between turns. Example: An event "AI slowdown" keeps the AI development pace low until the event "AI breakthrough" occurs.
 
 ## Evals
 
