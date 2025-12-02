@@ -23,6 +23,8 @@ En viktig del av beskrivningen av världen är dessa metrics, som varierar inom 
 
 Det finns en lista, Metrics Rules, som beskriver hur metrics förändras baserat på tid eller värden på andra metrics. Din uppgift just nu är att, utifrån nuvarande världsläge och de handlingar som aktörer gjort, uppdatera Metrics Rules.
 
+Du har också tillgång till ett anteckningsblock (Notepad) där du kan se viktig information som sparats mellan rundor.
+
 **Viktigt:** Varje regel MÅSTE beskriva hur en eller flera metrics förändras baserat på:
 - Tiden/omvärlden (exempelvis "ai_capability dubbleras varje halvår")
 - Värden på andra metrics (exempelvis "När unemployment > 15 minskar public_sentiment_to_ai med 1 per runda")

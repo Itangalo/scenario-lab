@@ -23,6 +23,8 @@ En viktig del av beskrivningen av världen är dessa metrics, som varierar inom 
 
 Till scenariot hör ett antal externa händelser, som kan hända om givna villkor är uppfyllda. Din uppgift just nu är att gå igenom listan med möjliga externa händelser, och för varje händelse utvärdera om dess villkor är uppfyllt utifrån nuvarande världsläge. Om sannolikheten anges som en formel eller beskrivning (t.ex. "dubbla värdet på unemployment"), ska du beräkna det faktiska värdet.
 
+Du har också tillgång till ett anteckningsblock (Notepad) där du kan spara information som är viktig att komma ihåg mellan rundor, men som inte passar i metrics eller narrativen. Detta kan till exempel vara pågående händelser som påverkar villkor för framtida händelser.
+
 Ditt svar ska vara en JSON-array med objekt för varje händelse vars villkor är uppfyllt, på det här formatet:
 
 ```json

@@ -63,6 +63,17 @@ class PromptBuilder:
         user_parts.append("---")
         user_parts.append("")
 
+        # Add notepad
+        user_parts.append("Anteckningsblocket (Notepad) innehåller följande information:")
+        user_parts.append("")
+        if self.scenario.notepad.strip():
+            user_parts.append(self.scenario.notepad)
+        else:
+            user_parts.append("(Tomt)")
+        user_parts.append("")
+        user_parts.append("---")
+        user_parts.append("")
+
         # Add events list
         user_parts.append("Listan över potentiella externa händelser ser ut så här:")
         user_parts.append("")
@@ -214,7 +225,20 @@ class PromptBuilder:
             "",
             "---",
             "",
+            "Anteckningsblocket (Notepad) innehåller följande information:",
+            "",
         ]
+
+        if self.scenario.notepad.strip():
+            user_parts.append(self.scenario.notepad)
+        else:
+            user_parts.append("(Tomt)")
+
+        user_parts.extend([
+            "",
+            "---",
+            "",
+        ])
 
         # Add triggered events
         user_parts.append("Denna runda har följande externa händelser inträffat:")
@@ -284,7 +308,20 @@ class PromptBuilder:
             "",
             "---",
             "",
+            "Anteckningsblocket (Notepad) innehåller följande information:",
+            "",
         ]
+
+        if self.scenario.notepad.strip():
+            user_parts.append(self.scenario.notepad)
+        else:
+            user_parts.append("(Tomt)")
+
+        user_parts.extend([
+            "",
+            "---",
+            "",
+        ])
 
         # Add triggered events
         user_parts.append("Denna runda har följande externa händelser inträffat:")

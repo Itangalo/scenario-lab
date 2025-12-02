@@ -35,7 +35,11 @@ Regeringen lanserar ett omfattande AI-stödprogram för små och medelstora för
 
 ## Narrativ
 
-Sverige genomgår en period av intensiv AI-adoption efter regeringens stödprogram. Små och medelstora företag börjar implementera AI-lösningar, vilket driver upp adoptionsgraden. Samtidigt syns tidiga tecken på oro på arbetsmarknaden när vissa rutinjobb automatiseras.""",
+Sverige genomgår en period av intensiv AI-adoption efter regeringens stödprogram. Små och medelstora företag börjar implementera AI-lösningar, vilket driver upp adoptionsgraden. Samtidigt syns tidiga tecken på oro på arbetsmarknaden när vissa rutinjobb automatiseras.
+
+## Notepad
+
+Regeringens AI-stödprogram lanserades under denna runda. Programmet förväntas pågå i minst 2 rundor.""",
 }
 
 mock_llm = MockLLMClient(mock_responses)
@@ -58,3 +62,5 @@ for metric_id, value in result.metrics.items():
     print(f"  {metric_id}: {value}")
 print(f"\nNarrative preview:")
 print(result.narrative[:200] + "...")
+print(f"\nNotepad:")
+print(result.notepad if result.notepad else "(empty)")

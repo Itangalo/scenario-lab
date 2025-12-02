@@ -101,6 +101,16 @@ class OutputManager:
         )
         (turn_dir / "4-world-state.md").write_text(narrative, encoding="utf-8")
 
+    def save_notepad(self, turn: int, notepad: str):
+        """Save notepad immediately after generation.
+
+        Args:
+            turn: Turn number
+            notepad: Notepad content
+        """
+        turn_dir = self.get_turn_dir(turn)
+        (turn_dir / "5-notepad.md").write_text(notepad, encoding="utf-8")
+
     def save_turn(self, result: TurnResult):
         """Save results from a single turn.
 
@@ -137,6 +147,9 @@ class OutputManager:
 
         # 5. World state narrative
         (turn_dir / "4-world-state.md").write_text(result.narrative, encoding="utf-8")
+
+        # 6. Notepad
+        (turn_dir / "5-notepad.md").write_text(result.notepad, encoding="utf-8")
 
     def update_summary(self, current_turn: int, latest_metrics: dict):
         """Update summary after each turn (incremental).

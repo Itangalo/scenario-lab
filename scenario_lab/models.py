@@ -104,6 +104,7 @@ class TurnResult:
     metric_rules: str  # Markdown numbered list
     metrics: dict[str, float]  # metric_id -> value
     narrative: str  # World state narrative
+    notepad: str  # Game Master notes
 
 
 @dataclass
@@ -178,6 +179,7 @@ class Scenario:
     metric_rules: str  # Current rules as markdown
     world_state: WorldState
     context: str  # Background context
+    notepad: str = ""  # Game Master notes that persist across turns
 
     # History
     turn_history: list[TurnResult] = field(default_factory=list)
