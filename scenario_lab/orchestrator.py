@@ -2,10 +2,13 @@
 
 import random
 import json
-from typing import Protocol, Optional, Union
+from typing import Protocol, Optional, Union, TYPE_CHECKING
 from .models import Scenario, TurnResult, WorldState
 from .prompts import PromptBuilder
 from .llm import LLMResponse, LLMClient
+
+if TYPE_CHECKING:
+    from .output import OutputManager
 
 
 class LLMClientProtocol(Protocol):
@@ -25,6 +28,7 @@ class Orchestrator:
         self,
         scenario: Scenario,
         llm_client: Optional[Union[LLMClientProtocol, dict[str, LLMClientProtocol]]] = None,
+        output_manager: Optional["OutputManager"] = None,
     ):
         """Initialize orchestrator.
 
@@ -34,9 +38,11 @@ class Orchestrator:
                 - Single LLM client (uses same for all tasks, backward compatible)
                 - Dict of clients {"events": client, "actors": {...}, "rules": client, "metrics": client}
                 - None (creates clients based on scenario.config.llm)
+            output_manager: Optional OutputManager for incremental writing
         """
         self.scenario = scenario
         self.prompt_builder = PromptBuilder(scenario)
+        self.output_manager = output_manager
         self._owned_clients = []  # Clients we created and need to close
 
         # Setup LLM clients
@@ -180,6 +186,8 @@ class Orchestrator:
         print("\n[1/4] Determining external events...")
         triggered_events = self._run_events_step(turn)
         print(f"  → {len(triggered_events)} events triggered")
+        if self.output_manager:
+            self.output_manager.save_events(turn, triggered_events)
 
         # Step 2: Get actor actions
         print("\n[2/4] Getting actor actions...")
@@ -191,11 +199,16 @@ class Orchestrator:
         new_rules = self._run_rules_step(turn, actor_outputs, triggered_events)
         self.scenario.metric_rules = new_rules
         print(f"  → Rules updated")
+        if self.output_manager:
+            self.output_manager.save_metric_rules(turn, new_rules)
 
         # Step 4: Update metrics and generate narrative
         print("\n[4/4] Updating metrics and generating narrative...")
         new_metrics, narrative = self._run_metrics_step(turn, actor_outputs, triggered_events)
         print(f"  → Metrics and narrative updated")
+        if self.output_manager:
+            self.output_manager.save_metrics_and_narrative(turn, new_metrics, narrative)
+            self.output_manager.update_summary(turn, new_metrics)
 
         # Update scenario state
         self._update_scenario_state(new_metrics, narrative, turn, time_period)
@@ -292,6 +305,10 @@ class Orchestrator:
             # Update actor's last actions in scenario
             self.scenario.actors[actor_id].last_actions = response.content
 
+            # Write immediately if output manager is present
+            if self.output_manager:
+                self.output_manager.save_actor_output(turn, actor_id, response.content)
+
         return outputs
 
     def _run_rules_step(
@@ -383,6 +400,7 @@ def run_simulation(
     scenario: Scenario,
     llm_client: Optional[Union[LLMClientProtocol, dict[str, LLMClientProtocol]]] = None,
     num_turns: int = None,
+    output_manager: Optional["OutputManager"] = None,
 ) -> list[TurnResult]:
     """Run a complete simulation.
 
@@ -393,11 +411,12 @@ def run_simulation(
             - Dict of clients for per-task usage
             - None (creates clients based on scenario.config.llm)
         num_turns: Number of turns to run (default: from config)
+        output_manager: Optional OutputManager for incremental writing
 
     Returns:
         List of TurnResults
     """
-    orchestrator = Orchestrator(scenario, llm_client)
+    orchestrator = Orchestrator(scenario, llm_client, output_manager)
     max_turns = num_turns or scenario.config.max_turns
     results = []
 

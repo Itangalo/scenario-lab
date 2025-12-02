@@ -82,14 +82,13 @@ def main():
     run_dir = output_manager.start_run()
     print(f"Output directory: {run_dir.name}\n")
 
-    # run_simulation will create LLM clients based on scenario.config.llm
-    results = run_simulation(scenario, llm_client=None, num_turns=args.turns)
+    # run_simulation will create LLM clients and write incrementally
+    results = run_simulation(
+        scenario, llm_client=None, num_turns=args.turns, output_manager=output_manager
+    )
 
-    # Save results as we go (already printed in orchestrator)
-    for result in results:
-        output_manager.save_turn(result)
-
-    output_manager.save_summary(results)
+    # Mark simulation as complete
+    output_manager.finalize_summary(results)
     print(f"\n{'='*60}")
     print(f"SIMULATION COMPLETE")
     print(f"{'='*60}")

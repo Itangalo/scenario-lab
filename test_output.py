@@ -45,18 +45,13 @@ output = OutputManager(scenario, Path("scenarios/sweden-ai-2030"))
 run_dir = output.start_run()
 print(f"\n✓ Created run directory: {run_dir.name}")
 
-# Run 2 turns
-print("\nRunning 2 turns...")
-results = run_simulation(scenario, mock_llm, num_turns=2)
+# Run 2 turns with incremental output
+print("\nRunning 2 turns with incremental writing...")
+results = run_simulation(scenario, mock_llm, num_turns=2, output_manager=output)
 
-# Save each turn
-for result in results:
-    output.save_turn(result)
-    print(f"  ✓ Saved turn {result.turn}")
-
-# Save summary
-output.save_summary(results)
-print("  ✓ Saved summary")
+# Finalize summary
+output.finalize_summary(results)
+print("  ✓ Simulation complete, summary finalized")
 
 # Verify files
 print("\nVerifying output structure...")
@@ -83,11 +78,12 @@ print("✓ All expected files created")
 import json
 config = json.loads(config_file.read_text())
 print(f"\nScenario: {config['name']}")
-print(f"Model: {config['model']}")
+print(f"LLM Events: {config['llm']['events']}")
 print(f"Actors: {', '.join(config['actors'])}")
 
 summary = json.loads(summary_file.read_text())
 print(f"\nCompleted {summary['total_turns']} turns")
+print(f"Status: {summary['status']}")
 print(f"Finished at: {summary['completed_at']}")
 print(f"\nFinal metrics:")
 for metric_id, value in summary['final_metrics'].items():
