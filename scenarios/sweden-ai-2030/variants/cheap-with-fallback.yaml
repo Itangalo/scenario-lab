@@ -7,21 +7,20 @@ base: ../scenario.yaml
 llm:
   # Events: Try grok first, fall back to gemini, then haiku
   events:
-    - "x-ai/grok-2-1212"
-    - "google/gemini-flash-1.5"
-    - "anthropic/claude-3.5-haiku-20241022"
+    - "x-ai/grok-4.1-fast:free"
+    - "x-ai/grok-4-fast"
 
   # All actors use same fallback list
   actors:
-    - "anthropic/claude-3.5-haiku-20241022"
-    - "google/gemini-flash-1.5"
+    - "anthropic/claude-haiku-4.5"
+    - "x-ai/grok-4-fast"
 
   # Rules: Single cheap model with fallback
   rules:
-    - "anthropic/claude-3.5-haiku-20241022"
-    - "google/gemini-flash-1.5"
+    - "x-ai/grok-4.1-fast:free"
+    - "x-ai/grok-4-fast"
 
   # Metrics: Better model for narrative quality
   metrics:
-    - "anthropic/claude-sonnet-4"
-    - "anthropic/claude-3.5-haiku-20241022"
+    - "anthropic/claude-sonnet-4.5"
+    - "anthropic/claude-haiku-4.5"
