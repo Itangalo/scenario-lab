@@ -16,9 +16,62 @@ V4 is a radical simplification from V3. Instead of complex Python game logic, **
 
 ## Status
 
-🚧 **V4 is under active development**
+✅ **V4 core implementation is complete**
 
-V3 is archived in the `v3-archive` tag. The `main` branch will remain on V3 until V4 is stable.
+All 6 implementation phases finished:
+- Phase 1: Foundation (models + loader)
+- Phase 2: Prompt builder
+- Phase 3: LLM client
+- Phase 4: Orchestrator
+- Phase 5: Output manager
+- Phase 6: CLI
+
+V3 is archived in the `v3-archive` tag.
+
+## Quick Start
+
+### Installation
+
+```bash
+# Install dependencies
+pip install -e .
+
+# Set up API key
+cp .env.example .env
+# Edit .env and add your OPENROUTER_API_KEY
+```
+
+### Usage
+
+```bash
+# Run a simulation
+python -m scenario_lab.cli scenarios/sweden-ai-2030
+
+# Run with specific number of turns
+python -m scenario_lab.cli scenarios/sweden-ai-2030 --turns 5
+
+# Override the model
+python -m scenario_lab.cli scenarios/sweden-ai-2030 --model anthropic/claude-opus-4
+
+# Preview prompts without running (dry run)
+python -m scenario_lab.cli scenarios/sweden-ai-2030 --dry-run
+```
+
+### Output
+
+Results are saved in timestamped directories:
+
+```
+scenarios/*/runs/run-YYYYMMDD-HHMMSS/
+├── config.json              # Scenario configuration
+├── summary.json             # Final results
+└── turn-XX/
+    ├── 1-events.json        # Triggered events
+    ├── 2-actors/            # Actor outputs (markdown)
+    ├── 3-metric-rules.md    # Updated rules
+    ├── 4-metrics.json       # Updated metrics
+    └── 4-world-state.md     # Turn narrative
+```
 
 ## V4 Architecture
 
@@ -173,15 +226,16 @@ Located in `scenarios/sweden-ai-2030/`, this scenario explores AI development in
 ✅ System prompt templates
 ✅ Example scenario (Sweden AI 2030)
 ✅ Test data and frozen prompts
+✅ Python orchestrator
+✅ Scenario file parsers (loader.py)
+✅ Turn execution engine (orchestrator.py)
+✅ CLI interface (cli.py)
+✅ Output persistence (output.py)
 
-### In Progress
-🚧 Python orchestrator
-🚧 Scenario file parsers
-🚧 Turn execution engine
-
-### Not Started
-⬜ CLI interface
-⬜ Multi-run analysis
+### Next Steps
+⬜ End-to-end testing with real LLM
+⬜ Additional example scenarios
+⬜ Multi-run analysis tools
 ⬜ Visualization tools
 
 ## Why V4?
