@@ -16,11 +16,41 @@ from .models import (
 
 
 def load_scenario(path: Union[Path, str]) -> Scenario:
-    """Load a complete scenario from directory."""
-    scenario_dir = Path(path)
+    """Load a complete scenario from directory or YAML file.
 
-    # Load config
-    config = load_config(scenario_dir / "scenario.yaml")
+    Args:
+        path: Either a directory containing scenario.yaml, or a direct path to a .yaml file
+
+    Returns:
+        Loaded Scenario
+    """
+    path = Path(path)
+
+    # Determine config file and scenario directory
+    if path.is_file() and path.suffix in [".yaml", ".yml"]:
+        # Direct path to a scenario YAML file (e.g., variant)
+        config_file = path
+        # For variants, we need to find the actual scenario directory
+        # The variant may reference files relative to base scenario
+        # We'll use the base scenario's directory for loading resources
+        config = load_config(config_file)
+        # Find the base scenario directory by looking for metrics.md
+        scenario_dir = path.parent
+        while scenario_dir != scenario_dir.parent:
+            if (scenario_dir / "metrics.md").exists():
+                break
+            scenario_dir = scenario_dir.parent
+        if not (scenario_dir / "metrics.md").exists():
+            raise ValueError(f"Could not find scenario resources (metrics.md) for {path}")
+    elif path.is_dir():
+        # Directory containing scenario.yaml
+        config_file = path / "scenario.yaml"
+        scenario_dir = path
+        config = load_config(config_file)
+    else:
+        raise ValueError(f"Path must be a directory or .yaml file: {path}")
+
+    # Now scenario_dir points to the directory with resources
 
     # Load metrics
     metrics = load_metrics(scenario_dir / "metrics.md")
