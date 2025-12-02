@@ -100,8 +100,14 @@ class OutputManager:
             "time_scale": self.scenario.config.time_scale,
             "max_turns": self.scenario.config.max_turns,
             "actors": self.scenario.config.actor_ids,
-            "model": self.scenario.config.model,
-            "temperature": self.scenario.config.temperature,
+            "llm": {
+                "events": self.scenario.config.llm.events,
+                "actors": self.scenario.config.llm.actors,
+                "rules": self.scenario.config.llm.rules,
+                "metrics": self.scenario.config.llm.metrics,
+                "temperature": self.scenario.config.llm.temperature,
+                "max_tokens": self.scenario.config.llm.max_tokens,
+            },
         }
         (self.run_dir / "config.json").write_text(
             json.dumps(config, indent=2, ensure_ascii=False)

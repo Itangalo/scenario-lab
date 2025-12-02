@@ -6,9 +6,17 @@ base: ../scenario.yaml
 # Override number of turns for quick testing
 max_turns: 2
 
-# Use cheap models for fast testing
+# Use cheap models with fallback for robustness
 llm:
-  events: "anthropic/claude-3.5-haiku-20241022"
-  actors: "anthropic/claude-3.5-haiku-20241022"
-  rules: "anthropic/claude-3.5-haiku-20241022"
-  metrics: "anthropic/claude-3.5-haiku-20241022"
+  events:
+    - "anthropic/claude-3.5-haiku-20241022"
+    - "x-ai/grok-2-1212"
+  actors:
+    - "anthropic/claude-3.5-haiku-20241022"
+    - "x-ai/grok-2-1212"
+  rules:
+    - "anthropic/claude-3.5-haiku-20241022"
+    - "x-ai/grok-2-1212"
+  metrics:
+    - "anthropic/claude-3.5-haiku-20241022"
+    - "x-ai/grok-2-1212"

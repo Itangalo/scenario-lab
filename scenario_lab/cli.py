@@ -58,6 +58,8 @@ def main():
     print(f"  Events: {scenario.config.llm.events}")
     if isinstance(scenario.config.llm.actors, str):
         print(f"  Actors: {scenario.config.llm.actors} (all)")
+    elif isinstance(scenario.config.llm.actors, list):
+        print(f"  Actors: {scenario.config.llm.actors} (all)")
     else:
         print(f"  Actors:")
         for actor_id, model in scenario.config.llm.actors.items():
@@ -66,7 +68,17 @@ def main():
     print(f"  Metrics: {scenario.config.llm.metrics}")
     print(f"Turns: {args.turns or scenario.config.max_turns}")
 
-    output_manager = OutputManager(scenario, args.scenario)
+    # Determine output directory (use parent dir if args.scenario is a .yaml file)
+    output_base = args.scenario
+    if Path(args.scenario).is_file():
+        # For variant files, output to the base scenario directory
+        output_base = Path(args.scenario).parent
+        while output_base != output_base.parent:
+            if (output_base / "metrics.md").exists():
+                break
+            output_base = output_base.parent
+
+    output_manager = OutputManager(scenario, output_base)
     run_dir = output_manager.start_run()
     print(f"Output directory: {run_dir.name}\n")
 
