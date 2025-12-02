@@ -1,5 +1,5 @@
 """
-Scenario-specific methods for Sweden and AI 2030.
+Scenario-specific methods for Sverige och AI 2030.
 
 NOTE: This scenario now uses the World Interpreter (execution_mode: "narrative").
 The action functions below are NO LONGER USED. They are kept for reference and
@@ -22,7 +22,7 @@ from scenario_lab.models import WorldState
 
 class SverigeAI2030Methods(ScenarioMethods):
     """
-    Methods for Sweden and AI 2030 scenario.
+    Methods for Sverige och AI 2030 scenario.
 
     This class is kept for backward compatibility but is not used
     when execution_mode is set to "narrative".

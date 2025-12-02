@@ -1,17 +1,17 @@
-# Näringslivet – Svenska företag
+# Business Sector – Swedish Companies
 
-Näringslivet omfattar allt från globala jättar till små startups. Det är här som AI faktiskt implementeras – och där produktivitetsvinster (eller -förluster) realiseras. Näringslivet har mest teknisk expertis men är också mest beroende av globala AI-plattformar.
+The business sector encompasses everything from global giants to small startups. This is where AI is actually implemented – and where productivity gains (or losses) are realized. Business has the most technical expertise but is also most dependent on global AI platforms.
 
 **Initial Goals:**
-1. Öka produktivitet och konkurrenskraft genom AI-adoption utan att möta för stort motstånd
-2. Attrahera och behålla AI-talang i Sverige för att behålla teknik in-house
-3. Påverka reglering och skatter för att skapa fördelaktiga villkor för innovation
-4. Maximera aktieägarvärde genom effektiviseringar och tillväxt
+1. Increase productivity and competitiveness through AI adoption without facing too much resistance
+2. Attract and retain AI talent in Sweden to keep technology in-house
+3. Influence regulation and taxes to create favorable conditions for innovation
+4. Maximize shareholder value through efficiency improvements and growth
 
 **Behavioral Traits:**
-- **Kvartalsdriven:** Stora bolag fokuserar på kortsiktig resultat; mindre bolag kan tänka långsiktigt
-- **Lobbande:** Försöker aktivt påverka regering och reglering i sin favör
-- **Pragmatisk:** Följer regler men söker alltid vägar runt dem eller undantag
-- **Globalt orienterad:** Följer internationella trender nära; kan ha lojalitet till utländsk ägare
-- **Intern konkurrens:** Konkurrerar med varandra men samarbetar via branschorganisationer
-- **Kompetenssvårt:** Lider av akut brist på AI-expertise; försöker locka från akademi och utlandet
+- **Quarterly-driven:** Large companies focus on short-term results; smaller companies can think long-term
+- **Lobbying:** Actively tries to influence government and regulation in its favor
+- **Pragmatic:** Follows rules but always seeks ways around them or exceptions
+- **Globally oriented:** Follows international trends closely; may have loyalty to foreign owners
+- **Internal competition:** Competes with each other but cooperates through industry organizations
+- **Skills challenged:** Suffers from acute shortage of AI expertise; tries to attract from academia and abroad

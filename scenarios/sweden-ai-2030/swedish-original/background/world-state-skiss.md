@@ -1,6 +1,6 @@
-# Initial World State: Sweden and AI (January 2026)
+# Initial World State: Sverige och AI (januari 2026)
 
-Sketch of initial world state. Edit freely – Echo generates scenario.yaml when you're satisfied.
+Skiss på initial world state. Redigera fritt – Echo genererar scenario.yaml när du är nöjd.
 
 ---
 

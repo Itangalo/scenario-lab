@@ -1,0 +1,406 @@
+# Enhanced Metrics Configuration for Sweden AI 2030 Scenario
+# Uses World Interpreter with bounds, magnitudes, randomness, and dependencies
+
+world:
+  ai_capability_hours:
+    value: 3
+    min: 0
+    max: 2000
+    unit: "hours_per_task"
+    description: "AI capability measured in hours of human work equivalent"
+    change_magnitudes:
+      small: [0.02, 0.05]    # 2-5% change
+      medium: [0.05, 0.15]   # 5-15% change
+      large: [0.15, 0.4]     # 15-40% change
+    randomness: 0.15  # High uncertainty in AI progress
+
+  ai_growth_rate:
+    value: 2.0
+    min: 1.0
+    max: 10.0
+    unit: "multiplier"
+    description: "Multiplier for AI capability growth per turn"
+
+  unemployment_rate:
+    value: 7.5
+    min: 2.0
+    max: 25.0
+    unit: "percentage"
+    description: "National unemployment rate"
+    change_magnitudes:
+      small: [0.01, 0.03]
+      medium: [0.03, 0.08]
+      large: [0.08, 0.2]
+    randomness: 0.08  # Economic volatility
+    dependencies:
+      # Unemployment increases as AI capability grows rapidly
+      - metric: "world.ai_capability_hours"
+        type: "additive"
+        coefficient: 0.05  # +0.05% unemployment per capability point
+        condition: "> 100"
+      # Strong business sector reduces unemployment
+      - metric: "actors.business-sector.public.profitability"
+        type: "multiplicative"
+        coefficient: 0.98  # 2% reduction when profitable
+        condition: "> 70"
+
+  public_sentiment:
+    value: 0
+    min: -100
+    max: 100
+    unit: "sentiment_index"
+    description: "Overall public sentiment towards AI (-100 negative, +100 positive)"
+    change_magnitudes:
+      small: [0.02, 0.05]
+      medium: [0.05, 0.12]
+      large: [0.12, 0.25]
+    randomness: 0.2  # Public opinion is highly volatile
+    dependencies:
+      # Negative sentiment if unemployment is high
+      - metric: "world.unemployment_rate"
+        type: "additive"
+        coefficient: -2.0  # -2 sentiment per % unemployment
+        condition: "> 10"
+
+  eu_regulatory_pressure:
+    value: 30
+    min: 0
+    max: 100
+    unit: "pressure_index"
+    description: "Pressure from EU to regulate AI"
+    change_magnitudes:
+      small: [0.01, 0.03]
+      medium: [0.03, 0.08]
+      large: [0.08, 0.2]
+    randomness: 0.1
+
+  ai_safety_incident:
+    value: 0
+    min: 0
+    max: 10
+    unit: "incident_count"
+    description: "Number of significant AI safety incidents"
+    change_magnitudes:
+      small: [0.0, 0.0]     # Safety incidents are discrete events
+      medium: [0.0, 0.0]
+      large: [1.0, 3.0]     # When they happen, they're significant
+    randomness: 0.05
+
+  global_ai_regulation:
+    value: 20
+    min: 0
+    max: 100
+    unit: "regulation_strength"
+    description: "Strength of international AI regulation"
+    change_magnitudes:
+      small: [0.01, 0.03]
+      medium: [0.03, 0.08]
+      large: [0.08, 0.2]
+    randomness: 0.08
+
+actors:
+  government:
+    public:
+      international_influence:
+        value: 50
+        min: 0
+        max: 100
+        unit: "influence_index"
+        description: "Sweden's international diplomatic influence"
+        change_magnitudes:
+          small: [0.01, 0.03]
+          medium: [0.03, 0.08]
+          large: [0.08, 0.2]
+        randomness: 0.05
+        dependencies:
+          # More EU coordination boosts influence
+          - metric: "actors.government.private.eu_coordination"
+            type: "additive"
+            coefficient: 0.1
+            condition: "> 70"
+
+      public_trust:
+        value: 55
+        min: 0
+        max: 100
+        unit: "trust_index"
+        description: "Public trust in government"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.25]
+        randomness: 0.15  # Trust is volatile
+
+      budget_billion_sek:
+        value: 10
+        min: 0
+        max: 100
+        unit: "billion_sek"
+        description: "Available government budget"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.3]
+        randomness: 0.05
+
+    private:
+      ai_adoption_commitment:
+        value: 40
+        min: 0
+        max: 100
+        unit: "commitment_index"
+        description: "Government commitment to AI adoption"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.3]
+        randomness: 0.08
+
+      eu_coordination:
+        value: 60
+        min: 0
+        max: 100
+        unit: "coordination_index"
+        description: "Level of coordination with EU on AI policy"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.25]
+        randomness: 0.08
+
+      political_capital:
+        value: 50
+        min: 0
+        max: 100
+        unit: "capital_points"
+        description: "Political capital available for controversial decisions"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.3]
+        randomness: 0.12
+
+  labor-unions:
+    public:
+      member_confidence:
+        value: 60
+        min: 0
+        max: 100
+        unit: "confidence_index"
+        description: "Union members' confidence in leadership"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.25]
+        randomness: 0.12
+        dependencies:
+          # Confidence drops if unemployment rises
+          - metric: "world.unemployment_rate"
+            type: "multiplicative"
+            coefficient: 0.95
+            condition: "> 10"
+
+      public_support:
+        value: 50
+        min: 0
+        max: 100
+        unit: "support_index"
+        description: "Public support for union positions"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.25]
+        randomness: 0.15
+
+    private:
+      negotiating_power:
+        value: 55
+        min: 0
+        max: 100
+        unit: "power_index"
+        description: "Union negotiating strength"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.25]
+        randomness: 0.1
+        dependencies:
+          # Unity strengthens negotiating power
+          - metric: "actors.labor-unions.private.internal_unity"
+            type: "additive"
+            coefficient: 0.2
+            condition: "> 75"
+
+      strike_readiness:
+        value: 30
+        min: 0
+        max: 100
+        unit: "readiness_index"
+        description: "Readiness to call strikes"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.4]
+        randomness: 0.15
+
+      internal_unity:
+        value: 65
+        min: 0
+        max: 100
+        unit: "unity_index"
+        description: "Internal cohesion of union movement"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.25]
+        randomness: 0.1
+
+  media:
+    public:
+      credibility:
+        value: 65
+        min: 0
+        max: 100
+        unit: "credibility_index"
+        description: "Public trust in media reporting"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.25]
+        randomness: 0.12
+        dependencies:
+          # Independence boosts credibility
+          - metric: "actors.media.private.editorial_independence"
+            type: "additive"
+            coefficient: 0.15
+            condition: "> 80"
+
+      audience_reach:
+        value: 70
+        min: 0
+        max: 100
+        unit: "reach_index"
+        description: "Media audience size and engagement"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.25]
+        randomness: 0.1
+
+    private:
+      advertising_revenue:
+        value: 60
+        min: 0
+        max: 100
+        unit: "revenue_index"
+        description: "Advertising revenue health"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.3]
+        randomness: 0.15  # Revenue is volatile
+
+      editorial_independence:
+        value: 75
+        min: 0
+        max: 100
+        unit: "independence_index"
+        description: "Editorial independence from commercial pressures"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.25]
+        randomness: 0.08
+
+      ai_expertise:
+        value: 35
+        min: 0
+        max: 100
+        unit: "expertise_index"
+        description: "Journalistic expertise in AI topics"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.3]
+        randomness: 0.1
+
+  business-sector:
+    public:
+      profitability:
+        value: 65
+        min: 0
+        max: 100
+        unit: "profit_index"
+        description: "Overall business sector profitability"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.3]
+        randomness: 0.12
+        dependencies:
+          # AI adoption boosts profitability
+          - metric: "actors.business-sector.public.ai_adoption_rate"
+            type: "additive"
+            coefficient: 0.15
+            condition: "> 60"
+
+      ai_adoption_rate:
+        value: 40
+        min: 0
+        max: 100
+        unit: "adoption_percentage"
+        description: "Rate of AI adoption in businesses"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.3]
+        randomness: 0.1
+
+    private:
+      ai_investment_commitment:
+        value: 50
+        min: 0
+        max: 100
+        unit: "commitment_index"
+        description: "Commitment to AI investment"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.15]
+          large: [0.15, 0.3]
+        randomness: 0.12
+
+      labor_satisfaction:
+        value: 50
+        min: 0
+        max: 100
+        unit: "satisfaction_index"
+        description: "Worker satisfaction in business sector"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.25]
+        randomness: 0.12
+        dependencies:
+          # Satisfaction drops with high unemployment
+          - metric: "world.unemployment_rate"
+            type: "multiplicative"
+            coefficient: 0.96
+            condition: "> 10"
+
+      regulatory_compliance_burden:
+        value: 40
+        min: 0
+        max: 100
+        unit: "burden_index"
+        description: "Perceived regulatory compliance burden"
+        change_magnitudes:
+          small: [0.02, 0.05]
+          medium: [0.05, 0.12]
+          large: [0.12, 0.25]
+        randomness: 0.08
+        dependencies:
+          # Burden increases with global regulation
+          - metric: "world.global_ai_regulation"
+            type: "additive"
+            coefficient: 0.3
+            condition: "> 50"

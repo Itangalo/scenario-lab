@@ -1,185 +1,185 @@
-# Aktörsskisser: Sverige och AI 2030
+# Actor Sketches: Sweden and AI 2030
 
-Skisser på aktörer för scenariot. Redigera fritt – Echo genererar YAML när du är nöjd.
+Sketches of actors for the scenario. Edit freely – Echo generates YAML when you're satisfied.
 
 ---
 
-## Aktör: Regeringen
+## Actor: The Government
 
-**Roll:** Sveriges regering (oavsett partifärg). Ansvarar för AI-policy, statliga satsningar, och Sveriges position i EU.
+**Role:** Sweden's government (regardless of party affiliation). Responsible for AI policy, state investments, and Sweden's position in the EU.
 
-**Mål:**
+**Goals:**
 
-- Stärka svensk konkurrenskraft genom AI-adoption
-- Hantera arbetsmarknadsomställning utan stor social oro
-- Balansera innovation mot säkerhet och integritet
-- Följa EU-regler utan att hamna efter andra länder
+- Strengthen Swedish competitiveness through AI adoption
+- Manage labor market transition without major social unrest
+- Balance innovation against security and privacy
+- Follow EU rules without falling behind other countries
 
-**Begränsningar:**
+**Constraints:**
 
-- Bunden av EU-regelverk (AI Act, GDPR)
-- Begränsad budget jämfört med stora länder
-- Beroende av riksdagsstöd för större reformer
-- Korta mandatperioder skapar fokus på synliga resultat
+- Bound by EU regulations (AI Act, GDPR)
+- Limited budget compared to large countries
+- Dependent on parliamentary support for major reforms
+- Short terms create focus on visible results
 
-**Beslutsstil:**
+**Decision Style:**
 
-- Konsensussökande, undviker polarisering
-- Reaktiv snarare än proaktiv – agerar ofta efter att problem uppstått
-- Lyssnar på expertmyndigheter (AI-kommissionen, Tillväxtverket, etc.)
-- Känslig för medial kritik och opinionssvängningar
+- Consensus-seeking, avoids polarization
+- Reactive rather than proactive – often acts after problems arise
+- Listens to expert agencies (AI Commission, Swedish Agency for Economic and Regional Growth, etc.)
+- Sensitive to media criticism and opinion shifts
 
 **Information:**
 
-- Har tillgång till myndighetsrapporter och utredningar
-- Får input från näringslivslobby och fackföreningar
-- Begränsad egen teknisk expertis – förlitar sig på rådgivare
-- Följer internationell utveckling via UD och EU-kanaler
+- Has access to agency reports and investigations
+- Receives input from business lobbies and trade unions
+- Limited own technical expertise – relies on advisors
+- Follows international developments via Foreign Ministry and EU channels
 
-**Relationer:**
+**Relationships:**
 
-- Samarbetar med fackföreningar kring arbetsmarknadsfrågor
-- Förhandlar med näringsliv om satsningar och regleringar
-- Påverkas starkt av EU-beslut
-- Försöker balansera olika intressegrupper
+- Cooperates with trade unions on labor market issues
+- Negotiates with business on investments and regulations
+- Strongly influenced by EU decisions
+- Tries to balance different interest groups
 
 ---
 
-## Aktör: Fackföreningarna
+## Actor: Labor Unions
 
-**Roll:** Samlad svensk fackrörelse (LO, TCO, SACO). Representerar arbetstagare i AI-omställningen.
+**Role:** Collective Swedish labor movement (LO, TCO, SACO). Represents workers in the AI transition.
 
-**Mål:**
+**Goals:**
 
-- Skydda medlemmarnas jobb och arbetsvillkor
-- Säkerställa att AI-vinster delas rättvist (inte bara till kapitalägare)
-- Få inflytande över hur AI implementeras på arbetsplatser
-- Kompetensutveckling och omställningsstöd för drabbade grupper
+- Protect members' jobs and working conditions
+- Ensure AI gains are shared fairly (not just to capital owners)
+- Gain influence over how AI is implemented in workplaces
+- Skills development and transition support for affected groups
 
-**Begränsningar:**
+**Constraints:**
 
-- Kan inte stoppa teknisk utveckling, bara påverka hur den implementeras
-- Minskande medlemstal i vissa sektorer minskar förhandlingsstyrka
-- Intern oenighet mellan förbund (LO vs SACO har olika medlemsbaser)
-- Svårt att organisera nya typer av arbete (gig-ekonomi, distansarbete)
-- Tenderar att se medlemmarnas kompetens som mer oersättlig mot AI än vad den faktiskt är
+- Cannot stop technological development, only influence how it's implemented
+- Declining membership in some sectors reduces bargaining power
+- Internal disagreement between unions (LO vs SACO have different membership bases)
+- Difficult to organize new types of work (gig economy, remote work)
+- Tend to see members' competence as more irreplaceable against AI than it actually is
 
-**Beslutsstil:**
+**Decision Style:**
 
-- Förhandlingsorienterad – föredrar avtal framför lagstiftning
-- Långsiktig planering, men reagerar snabbt på akuta hot
-- Kollektiv beslutsfattning, kräver förankring bland medlemmar
-- Pragmatisk – accepterar förändring om villkoren är rätt
+- Negotiation-oriented – prefers agreements over legislation
+- Long-term planning, but responds quickly to acute threats
+- Collective decision-making, requires anchoring among members
+- Pragmatic – accepts change if conditions are right
 
 **Information:**
 
-- Direkt kontakt med medlemmar på arbetsplatser
-- Bra koll på faktisk AI-implementation (inte bara företagens PR)
-- Internationella kontakter via fackliga nätverk
-- Begränsad teknisk expertis om AI:s kapacitet
+- Direct contact with members in workplaces
+- Good grasp of actual AI implementation (not just companies' PR)
+- International contacts via union networks
+- Limited technical expertise about AI's capacity
 
-**Relationer:**
+**Relationships:**
 
-- Historiskt nära samarbete med Socialdemokraterna, men pratar med alla partier
-- Förhandlingspart till arbetsgivare (Svenskt Näringsliv)
-- Kritisk men konstruktiv relation till regeringen
-- Viss skepsis mot teknikoptimism från näringsliv och media
+- Historically close cooperation with Social Democrats, but talks with all parties
+- Negotiating partner to employers (Confederation of Swedish Enterprise)
+- Critical but constructive relationship with government
+- Some skepticism towards tech optimism from business and media
 
 ---
 
-## Aktör: Media
+## Actor: Media
 
-**Roll:** Svenska medier (SVT, SR, DN, SvD, Aftonbladet, etc.). Rapporterar om AI, formar opinion, och är själva påverkade av AI.
+**Role:** Swedish media (SVT, SR, DN, SvD, Aftonbladet, etc.). Reports on AI, shapes opinion, and is itself affected by AI.
 
-**Mål:**
+**Goals:**
 
-- Rapportera relevant och korrekt om AI-utvecklingen
-- Behålla publik och annonsintäkter i en föränderlig mediemiljö
-- Granska makthavare (regering, storföretag) kring AI-frågor
-- Överleva som bransch när AI förändrar innehållsproduktion
+- Report relevantly and accurately on AI development
+- Maintain audience and advertising revenue in a changing media environment
+- Scrutinize those in power (government, large companies) on AI issues
+- Survive as an industry when AI transforms content production
 
-**Begränsningar:**
+**Constraints:**
 
-- Begränsad teknisk expertis för att granska AI-påståenden
-- Click-bait-incitament kan snedvrida rapportering (hype eller skräck)
-- Nyhetströtthet: Det är svårt att rapportera särskilt länge om en och samma fråga
-- Stark konkurrens från sociala medier, och i allt högre grad från AI
+- Limited technical expertise to scrutinize AI claims
+- Click-bait incentives can distort reporting (hype or fear)
+- News fatigue: It's difficult to report for very long on one and the same issue
+- Strong competition from social media, and increasingly from AI
 
-**Beslutsstil:**
+**Decision Style:**
 
-- Snabb nyhetscykel – reagerar på händelser snarare än djupgranskning
-- Olika profiler: public service (balans) vs kvällspress (sensation)
-- Påverkas av vad som får engagemang/delningar
-- Redaktionella beslut fattas ofta under tidspress
+- Fast news cycle – reacts to events rather than in-depth investigation
+- Different profiles: public service (balance) vs tabloids (sensation)
+- Influenced by what gets engagement/shares
+- Editorial decisions often made under time pressure
 
 **Information:**
 
-- Bred tillgång till officiella källor och pressmeddelanden
-- Kontakter inom näringsliv och politik (läckor, bakgrundssamtal)
-- Svårt att verifiera tekniska påståenden från AI-företag, särskilt utomlands
-- Bra på att fånga folklig stämning och trender
+- Broad access to official sources and press releases
+- Contacts within business and politics (leaks, background talks)
+- Difficult to verify technical claims from AI companies, especially abroad
+- Good at capturing popular sentiment and trends
 
-**Relationer:**
+**Relationships:**
 
-- Granskande roll gentemot alla andra aktörer
-- Beroende av näringsliv för annonsintäkter (gäller ej public service)
-- Konkurrerande relationer inom mediebranschen
-- Spänning mellan public service och kommersiella medier
+- Scrutinizing role towards all other actors
+- Dependent on business for advertising revenue (not applicable to public service)
+- Competing relationships within the media industry
+- Tension between public service and commercial media
 
 ---
 
-## Aktör: Näringslivet
+## Actor: Business
 
-**Roll:** Svenska företag, från storbolag till startups. Driver i viss mån AI-implementation och innovation.
+**Role:** Swedish companies, from large corporations to startups. To some extent drives AI implementation and innovation.
 
-**Mål:**
+**Goals:**
 
-- Öka produktivitet och konkurrenskraft, exempelvis genom AI
-- Attrahera och behålla AI-kompetens i Sverige
-- Påverka reglering och skatter så de inte hämmar innovation
-- Maximera avkastning för ägare
+- Increase productivity and competitiveness, for example through AI
+- Attract and retain AI competence in Sweden
+- Influence regulation and taxes so they don't hinder innovation
+- Maximize returns for owners
 
-**Begränsningar:**
+**Constraints:**
 
-- Beroende av globala AI-plattformar (OpenAI, Google, etc.)
-- Kompetensbrist – svårt att rekrytera AI-experter
-- EU-reglering skapar compliance-kostnader
-- Stora företag, liksom andra stora organisationer, förändras långsamt
+- Dependent on global AI platforms (OpenAI, Google, etc.)
+- Skills shortage – difficult to recruit AI experts
+- EU regulation creates compliance costs
+- Large companies, like other large organizations, change slowly
 
-**Beslutsstil:**
+**Decision Style:**
 
-- Kvartalsdriven i stora bolag, mer långsiktig i ägarledda företag
-- Lobbar aktivt för gynnsamma regleringar
-- Pragmatisk – följer regler men söker alltid fördelar
+- Quarterly-driven in large companies, more long-term in owner-managed companies
+- Actively lobbies for favorable regulations
+- Pragmatic – follows rules but always seeks advantages
 
 **Information:**
 
-- Bäst teknisk AI-kompetens av alla aktörer
-- I viss mån direktkontakt med globala AI-företag och trender
-- Intern data om produktivitetseffekter (men delar sällan)
-- Mindre insyn i politiska processer än de önskar
+- Best technical AI competence of all actors
+- To some extent direct contact with global AI companies and trends
+- Internal data on productivity effects (but rarely shares)
+- Less insight into political processes than they desire
 
-**Relationer:**
+**Relationships:**
 
-- Förhandlingspart till fackföreningar
-- Lobbar regeringen för satsningar och lättnader
-- Konkurrerar internt men samarbetar via branschorganisationer
-- Spänning mellan svenska och utländska ägare/intressen
-
----
-
-## Öppna frågor om aktörer
-
-- Ska vi ha en aktör för **akademi/forskning**? (Universitet, RISE, etc.) JOHAN: Nej, jag tror inte det.
-- Behöver vi en **civilsamhälle**-aktör? (NGO:er, intresseorganisationer) JOHAN: Bara om vi vill ha AI safety tydligt representerat. Och jag tror inte att det här scenariot motiverar det, tyvärr.
-- Är **kommuner/regioner** viktiga nog för egen aktör? JOHAN: Nej, jag tror inte det.
-- Ska **EU** trots allt vara en (begränsad) aktör istället för bara exogenous events? JOHAN: Nej, inte här heller.
+- Negotiating partner to trade unions
+- Lobbies government for investments and relief
+- Competes internally but cooperates via industry organizations
+- Tension between Swedish and foreign owners/interests
 
 ---
 
-## Nästa steg
+## Open Questions About Actors
 
-1. Johan redigerar och kompletterar aktörsskisserna
-2. Echo genererar actor YAML-filer
-3. Skissa på initial world state
-4. Definiera exogenous events
+- Should we have an actor for **academia/research**? (Universities, RISE, etc.) JOHAN: No, I don't think so.
+- Do we need a **civil society** actor? (NGOs, interest organizations) JOHAN: Only if we want AI safety clearly represented. And I don't think this scenario justifies it, unfortunately.
+- Are **municipalities/regions** important enough for their own actor? JOHAN: No, I don't think so.
+- Should **EU** after all be a (limited) actor instead of just exogenous events? JOHAN: No, not here either.
+
+---
+
+## Next Steps
+
+1. Johan edits and completes the actor sketches
+2. Echo generates actor YAML files
+3. Sketch initial world state
+4. Define exogenous events

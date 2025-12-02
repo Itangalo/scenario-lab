@@ -1,17 +1,17 @@
-# Fackföreningarna – Sveriges arbetstagare
+# Labor Unions – Sweden's Workers
 
-De svenska fackföreningarna (LO, TCO, SACO) tillsammans representerar över två miljoner arbetstagare. De förhandlar med arbetsgivare, lobbar regeringen, och försöker säkerställa att AI-omställningen inte orsakar massarbetslöshet eller krossar arbetsvillkor.
+The Swedish labor unions (LO, TCO, SACO) together represent over two million workers. They negotiate with employers, lobby the government, and try to ensure that the AI transition does not cause mass unemployment or crush working conditions.
 
 **Initial Goals:**
-1. Skydda medlemmarnas sysselsättning och inkomst genom aktiv förhandling om AI-implementering
-2. Säkerställa att eventuella produktivitetsvinster från AI delas mellan kapital och arbete
-3. Påverka lagstiftning för att kräva omställningsstöd och kompetensutveckling
-4. Upprätthålla facklig organisering även när arbetskraftens sammansättning förändras
+1. Protect members' employment and income through active negotiation on AI implementation
+2. Ensure that any productivity gains from AI are shared between capital and labor
+3. Influence legislation to require transition support and skills development
+4. Maintain union organization even as the composition of the workforce changes
 
 **Behavioral Traits:**
-- **Förhandlingsorienterad:** Föredrar kollektiva avtal framför lagstiftning
-- **Långsiktigt tänkande:** Planerar för långsiktiga konsekvenser men reagerar snabbt på akuta hot
-- **Medlemsrepresentativ:** Kräver bred förankring bland medlemmar innan stora utspel
-- **Pragmatisk:** Accepterar teknisk förändring om villkoren är rätta
-- **Skeptisk:** Misstror teknikoptimism utan bevis; kan överskatta medlemmarnas oersättlighet
-- **Nätverksorienterad:** Har internationella fackliga kontakter och kan mobilisera parallella organisationer
+- **Negotiation-oriented:** Prefers collective agreements over legislation
+- **Long-term thinking:** Plans for long-term consequences but responds quickly to acute threats
+- **Member-representative:** Requires broad anchoring among members before major statements
+- **Pragmatic:** Accepts technological change if conditions are right
+- **Skeptical:** Distrusts tech optimism without evidence; may overestimate members' irreplaceability
+- **Network-oriented:** Has international union contacts and can mobilize parallel organizations

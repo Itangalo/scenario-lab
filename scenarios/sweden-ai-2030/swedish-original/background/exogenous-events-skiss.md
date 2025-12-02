@@ -1,10 +1,10 @@
-# Exogenous Events: Sweden and AI 2030
+# Exogenous Events: Sverige och AI 2030
 
-Sketch of external events. Edit freely – Echo generates exogenous-events.yaml when you're satisfied.
+Skiss på externa händelser. Redigera fritt – Echo genererar exogenous-events.yaml när du är nöjd.
 
 ---
 
-## Background Trends (trends)
+## Bakgrundstrender (trends)
 
 ### AI Capability Growth
 
@@ -30,7 +30,7 @@ Gradual implementation of AI Act, with possible relaxation of some requirements.
 
 ---
 
-## Scheduled Events (scheduled)
+## Schemalagda händelser (scheduled)
 
 ### Swedish Election 2026 (Turn 2: H2 2026)
 
@@ -50,7 +50,7 @@ Primary season and election campaign dominate US politics.
 
 ---
 
-## Conditional Events (conditional)
+## Villkorade händelser (conditional)
 
 ### Major AI-Driven Layoffs in Sweden
 
@@ -69,7 +69,7 @@ Primary season and election campaign dominate US politics.
 
 ---
 
-## Random Events (random)
+## Slumphändelser (random)
 
 ### AI Safety Incident - Global
 
@@ -129,7 +129,7 @@ Primary season and election campaign dominate US politics.
 
 ---
 
-## Notes for Implementation
+## Noteringar för implementation
 
 1. **Probability management:** Some events should have cumulative probability (if not triggered, slightly higher chance next turn)
 

@@ -1,16 +1,16 @@
-# Regeringen – Sveriges beslutsfattare
+# The Government – Sweden's Decision Makers
 
-Sveriges regering är det politiska organ som formas av den sittande koalitionen eller majoritetsmaktgruppen i riksdagen. Den är ansvarig för att sätta policy, allokera resurser och representera Sverige på internationell nivå – inklusive inom EU.
+The Swedish government is the political body formed by the sitting coalition or majority power group in parliament. It is responsible for setting policy, allocating resources, and representing Sweden at the international level – including within the EU.
 
 **Initial Goals:**
-1. Stärka svensk konkurrenskraft genom fokuserad AI-adoption i industri och förvaltning
-2. Hantera arbetsmarknadspåverkan och social oro genom aktiv omställningspolitik
-3. Uppnå en balans mellan innovation och säkerhet som inte bromsar den svenska ekonomin
-4. Påverka EU-reglering för att öka framtidsbäring utan att hamna ekonomiskt efter
+1. Strengthen Swedish competitiveness through focused AI adoption in industry and public administration
+2. Manage labor market impact and social unrest through active transition policy
+3. Achieve a balance between innovation and security that does not slow down the Swedish economy
+4. Influence EU regulation to increase future readiness without falling behind economically
 
 **Behavioral Traits:**
-- **Långsamt beslutsfattande:** Kräver bred förankring innan stora initiativ lanseras
-- **Reaktiv policy:** Tenderar att agera efter problem uppstår snarare än innan
-- **EU-fokuserad:** Följer EU:s linje om det inte finns tydligt svenskt intresse att divergera
-- **Konsensussökande:** Undviker polarisering kring AI-frågor; söker bred överenskommelse
-- **Känslig för opinion:** Påverkas av media och opinionsundersökningar
+- **Slow decision-making:** Requires broad anchoring before major initiatives are launched
+- **Reactive policy:** Tends to act after problems arise rather than before
+- **EU-focused:** Follows the EU line unless there is a clear Swedish interest to diverge
+- **Consensus-seeking:** Avoids polarization around AI issues; seeks broad agreement
+- **Sensitive to public opinion:** Influenced by media and opinion polls

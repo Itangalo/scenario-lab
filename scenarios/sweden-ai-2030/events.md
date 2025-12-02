@@ -1,97 +1,97 @@
-# Externa händelser – Sverige och AI 2030
+# External Events – Sweden and AI 2030
 
-## AI-incident i Sverige
+## AI Incident in Sweden
 
 **ID:** ai_incident_sweden
 
-**Villkor:** Kräver ai_adoption_sweden > 30
+**Condition:** Requires ai_adoption_sweden > 30
 
-**Sannolikhet:** 10 procent per runda
+**Probability:** 10 percent per round
 
-**Kan upprepas:** Ja
+**Can repeat:** Yes
 
-**Beskrivning:** En tonåring tar sitt liv efter intensiv kontakt med en AI-kompanjon. Stor medieuppmärksamhet. Jämförelser med debatten om sociala mediers skadeverkningar. Krav på reglering ökar kraftigt. public_sentiment_to_ai minskar markant.
+**Description:** A teenager takes their life after intensive contact with an AI companion. Major media attention. Comparisons with the debate about social media harms. Demands for regulation increase sharply. public_sentiment_to_ai decreases significantly.
 
-## Strejk mot AI-implementering
+## Strike Against AI Implementation
 
 **ID:** strike
 
-**Villkor:** Kräver unemployment > 10
+**Condition:** Requires unemployment > 10
 
-**Sannolikhet:** Dubbla värdet på unemployment, i procent
+**Probability:** Double the value of unemployment, in percent
 
-**Kan upprepas:** Ja
+**Can repeat:** Yes
 
-**Beskrivning:** Fackförbund inleder strejk mot AI-implementering på en eller flera större arbetsplatser. Produktivitet minskar tillfälligt, spänningar mellan fack och näringsliv ökar. Media uppmärksammar konflikten, vilket påverkar public_sentiment_to_ai negativt.
+**Description:** Trade unions initiate strikes against AI implementation at one or more major workplaces. Productivity decreases temporarily, tensions between unions and business increase. Media highlights the conflict, which negatively affects public_sentiment_to_ai.
 
-## AI-genombrott
+## AI Breakthrough
 
 **ID:** ai_breakthrough
 
-**Villkor:** Inga villkor
+**Condition:** No conditions
 
-**Sannolikhet:** 5 procent per runda
+**Probability:** 5 percent per round
 
-**Kan upprepas:** Ja
+**Can repeat:** Yes
 
-**Beskrivning:** En ny arkitektur eller träningsmetod ger dramatiskt förbättrade AI-kapabiliteter. ai_capability tar ett stort steg uppåt (motsvarande 1-2 års normal utveckling) och utvecklas sedan enligt samma exponentiella mönster som innan. Stor medieuppmärksamhet globalt.
+**Description:** A new architecture or training method provides dramatically improved AI capabilities. ai_capability takes a large step upward (equivalent to 1-2 years of normal development) and then develops according to the same exponential pattern as before. Major media attention globally.
 
-## AI-utvecklingen planar ut
+## AI Development Plateaus
 
 **ID:** ai_stall
 
-**Villkor:** Inga villkor
+**Condition:** No conditions
 
-**Sannolikhet:** 3 procent per runda
+**Probability:** 3 percent per round
 
-**Kan upprepas:** Nej
+**Can repeat:** No
 
-**Beskrivning:** Utvecklingen av AI stöter på motstånd som visar sig svårt att övervinna – möjligen relaterat till datatillgång, arkitektoniska begränsningar, eller energikostnader. AI-utvecklingen minskar till en långsam linjär takt och förblir så tills ett nytt AI-genombrott sker. AI-utvecklingens inbromsning skapar oro på finansmarknaden men i övrigt är den stora effekten att förväntade effekter av kraftfullare AI uteblir.
+**Description:** AI development encounters resistance that proves difficult to overcome – possibly related to data access, architectural limitations, or energy costs. AI development decreases to a slow linear pace and remains so until a new AI breakthrough occurs. The slowdown in AI development creates concern in financial markets, but otherwise the major effect is that expected effects of more powerful AI fail to materialize.
 
-## Taiwan-blockad
+## Taiwan Blockade
 
 **ID:** taiwan_blockade
 
-**Villkor:** Kan inträffa från runda 3 och framåt
+**Condition:** Can occur from round 3 onwards
 
-**Sannolikhet:** 5 procent per runda
+**Probability:** 5 percent per round
 
-**Kan upprepas:** Nej
+**Can repeat:** No
 
-**Beskrivning:** Kina inleder blockad av Taiwan. Global chipproduktion störs kraftigt. Så länge blockaden pågår går AI-utvecklingen mycket långsamt framåt (ai_capability ökar minimalt). Priser på elektronik stiger kraftigt. Geopolitisk osäkerhet ökar dramatiskt. Varje efterföljande runda efter att blockaden inletts är det 50 procent chans att blockaden får ett fredligt slut och 10 procent risk att den övergår i en militär konflikt (vilket skulle innebära ännu värre konsekvenser).
+**Description:** China initiates blockade of Taiwan. Global chip production is severely disrupted. As long as the blockade continues, AI development progresses very slowly (ai_capability increases minimally). Electronics prices rise sharply. Geopolitical uncertainty increases dramatically. Each subsequent round after the blockade begins, there is a 50 percent chance that the blockade reaches a peaceful end and a 10 percent risk that it escalates into military conflict (which would mean even worse consequences).
 
-## AI-bubblans kollaps
+## AI Bubble Collapse
 
 **ID:** ai_bubble_collapse
 
-**Villkor:** Inga villkor
+**Condition:** No conditions
 
-**Sannolikhet:** 15 procent runda 1-2, 10 procent runda 3-4, 5 procent runda 5+
+**Probability:** 15 percent rounds 1-2, 10 percent rounds 3-4, 5 percent rounds 5+
 
-**Kan upprepas:** Nej
+**Can repeat:** No
 
-**Beskrivning:** AI-investeringsbubbllan spricker. Massiva nedskrivningar av AI-startup-värderingar. Många företag går i konkurs. Utvecklingstakten i AI-sektorn bromsar in tillfälligt (1-2 rundor). Etablerade aktörer konsoliderar sin makt. Arbetslöshet inom tech-sektorn ökar.
+**Description:** The AI investment bubble bursts. Massive write-downs of AI startup valuations. Many companies go bankrupt. The pace of development in the AI sector slows temporarily (1-2 rounds). Established actors consolidate their power. Unemployment in the tech sector increases.
 
-## Riksdagsval 2026
+## Parliamentary Election 2026
 
 **ID:** general_election_2026
 
-**Villkor:** September 2026 ingår i turen som avhandlas
+**Condition:** September 2026 is included in the turn being covered
 
-**Sannolikhet:** 100 procent
+**Probability:** 100 percent
 
-**Kan upprepas:** Nej
+**Can repeat:** No
 
-**Beskrivning:** Nytt riksdagsval leder till regeringsförhandlingar och eventuellt regeringsskifte. Vid regeringsskifte kan regeringens mål radikalt ändras.
+**Description:** New parliamentary election leads to government negotiations and possible change of government. In case of government change, the government's goals can change radically.
 
-## Presidentval i USA 2028
+## US Presidential Election 2028
 
 **ID:** usa_election_2028
 
-**Villkor:** November 2028 ingår i turen som avhandlas
+**Condition:** November 2028 is included in the turn being covered
 
-**Sannolikhet:** 100 procent
+**Probability:** 100 percent
 
-**Kan upprepas:** Nej
+**Can repeat:** No
 
-**Beskrivning:** När en ny president väljs i USA kan landets policy kring AI ändras drastiskt.
+**Description:** When a new president is elected in the USA, the country's policy on AI can change drastically.

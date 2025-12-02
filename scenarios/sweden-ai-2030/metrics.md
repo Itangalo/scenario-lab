@@ -1,8 +1,8 @@
-# Metrics för Sverige och AI 2030
+# Metrics for Sweden and AI 2030
 
 ## ai_capability
 
-**Beskrivning:** Hur långa uppgifter inom mjukvaruutveckling AI-modeller klarar av i hälften av fallen. Baserat på METR-studien.
+**Description:** How long tasks in software development AI models can handle successfully in half the cases. Based on the METR study.
 
 **ID:** ai_capability
 
@@ -10,20 +10,20 @@
 
 **Max:** 1000
 
-**Enhet:** timmar
+**Unit:** hours
 
-**Startvärde:** 3
+**Starting value:** 3
 
-**Referenspunkter:**
+**Reference points:**
 
-- **8:** AI-agenter kan utföra många datorbaserade uppgifter ungefär på nivå av en junior medarbetare.
-- **24:** AI-agenter kan utföra många datorbaserade uppgifter ungefär på nivå av en medelerfaren medarbetare.
-- **100:** AI-agenter kan utföra många datorbaserade uppgifter ungefär på nivå av en erfaren medarbetare.
-- **200:** AI närmar sig förmågan att självständigt driva komplexa mjukvaruprojekt.
+- **8:** AI agents can perform many computer-based tasks roughly at the level of a junior employee.
+- **24:** AI agents can perform many computer-based tasks roughly at the level of a moderately experienced employee.
+- **100:** AI agents can perform many computer-based tasks roughly at the level of an experienced employee.
+- **200:** AI approaches the ability to independently drive complex software projects.
 
 ## ai_adoption_sweden
 
-**Beskrivning:** Andel av svenska befolkningen (11–80 år) som regelbundet använder frontier AI-teknik, antingen privat eller i arbetet. Notera att detta alltså gäller AI-teknik i framkant, och tekniken ändras med tiden.
+**Description:** Proportion of the Swedish population (11–80 years) who regularly use frontier AI technology, either privately or at work. Note that this refers to cutting-edge AI technology, and the technology changes over time.
 
 **ID:** ai_adoption_sweden
 
@@ -31,21 +31,21 @@
 
 **Max:** 100
 
-**Enhet:** procent
+**Unit:** percent
 
-**Startvärde:** 10
+**Starting value:** 10
 
-**Referenspunkter:**
+**Reference points:**
 
-- **10:** Frontier-AI är endast för early adopters, generell medvetenhet om frontier-tekniken är mycket låg.
-- **30:** Frontier-AI börjar nå mainstream, men många är fortfarande ovana och osäkra.
-- **50:** Ungefär hälften av svenskarna använder frontier-AI regelbundet. Det finns fortfarande tydliga skillnader mellan grupper.
-- **70:** Frontier-AI anses som allmängods av de som använder tekniken, många av de som inte använder den har grundläggande medvetenhet om frontier AI.
-- **85:** Genomslaget i samhället är mycket stort. Vissa utsatta grupper saknar dock fortfarande kompetens om frontier-AI.
+- **10:** Frontier AI is only for early adopters, general awareness of frontier technology is very low.
+- **30:** Frontier AI is beginning to reach mainstream, but many are still unfamiliar and uncertain.
+- **50:** About half of Swedes use frontier AI regularly. There are still clear differences between groups.
+- **70:** Frontier AI is considered a public good by those who use the technology, many of those who don't use it have basic awareness of frontier AI.
+- **85:** Penetration in society is very large. However, some vulnerable groups still lack competence in frontier AI.
 
 ## unemployment
 
-**Beskrivning:** Arbetslöshet enligt Arbetsförmedlingens definition.
+**Description:** Unemployment according to the Swedish Public Employment Service's definition.
 
 **ID:** unemployment
 
@@ -53,21 +53,21 @@
 
 **Max:** 100
 
-**Enhet:** procent
+**Unit:** percent
 
-**Startvärde:** 8
+**Starting value:** 8
 
-**Referenspunkter:**
+**Reference points:**
 
-- **5:** Låg arbetslöshet, arbetsmarknaden fungerar väl.
-- **8:** Normal nivå för Sverige under 2020-talet.
-- **12:** Arbetslöshet börjar tas upp som ett problem i nyheter och debatt.
-- **18:** Hög arbetslöshet leder till oro och protester, särskilt bland grupper där arbetslösheten är särskilt hög.
-- **25:** Samhällskris, omfattande social oro.
+- **5:** Low unemployment, the labor market functions well.
+- **8:** Normal level for Sweden during the 2020s.
+- **12:** Unemployment begins to be raised as an issue in news and debate.
+- **18:** High unemployment leads to concern and protests, especially among groups where unemployment is particularly high.
+- **25:** Social crisis, widespread social unrest.
 
 ## public_sentiment_to_ai
 
-**Beskrivning:** Allmänhetens inställning till AI, där negativa värden indikerar rädsla/motstånd och positiva värden indikerar entusiasm/förtroende.
+**Description:** The public's attitude towards AI, where negative values indicate fear/resistance and positive values indicate enthusiasm/trust.
 
 **ID:** public_sentiment_to_ai
 
@@ -75,15 +75,15 @@
 
 **Max:** 10
 
-**Enhet:** (dimensionslös)
+**Unit:** (dimensionless)
 
-**Startvärde:** 3
+**Starting value:** 3
 
-**Referenspunkter:**
+**Reference points:**
 
-- **-10:** Demonstrationer och protester sker regelbundet. AI ses som en existentiell samhällsfara.
-- **-5:** AI beskrivs i media regelbundet som ett problem eller riskfyllt. Stark opinion för restriktioner.
-- **0:** Neutral inställning, delade meningar.
-- **3:** Försiktigt positiv. Majoriteten ser potential men är medveten om risker.
-- **7:** AI beskrivs i media regelbundet som en källa till möjligheter och en god framtid. Bred entusiasm.
-- **10:** Nästan okritisk teknikoptimism dominerar samhällsdebatten.
+- **-10:** Demonstrations and protests occur regularly. AI is seen as an existential societal danger.
+- **-5:** AI is regularly described in media as a problem or risky. Strong opinion for restrictions.
+- **0:** Neutral attitude, divided opinions.
+- **3:** Cautiously positive. The majority sees potential but is aware of risks.
+- **7:** AI is regularly described in media as a source of opportunities and a good future. Broad enthusiasm.
+- **10:** Almost uncritical tech optimism dominates societal debate.

@@ -1,4 +1,4 @@
-# Sweden and AI 2030 - World Interpreter Migration
+# Sverige och AI 2030 - World Interpreter Migration
 
 This scenario has been updated to use the **World Interpreter** system for narrative-driven mechanics.
 
