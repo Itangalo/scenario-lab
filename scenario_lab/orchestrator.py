@@ -55,13 +55,21 @@ class Orchestrator:
                 "metrics": llm_client,
             }
 
+    def _normalize_model(self, model: Union[str, list]) -> str:
+        """Get primary model string from model or fallback list."""
+        return model[0] if isinstance(model, list) else model
+
+    def _models_match(self, model1: Union[str, list], model2: Union[str, list]) -> bool:
+        """Check if two model specifications match (same primary model)."""
+        return self._normalize_model(model1) == self._normalize_model(model2)
+
     def _create_clients_from_config(self) -> dict:
-        """Create LLM clients based on scenario configuration."""
+        """Create LLM clients based on scenario configuration with fallback support."""
         config = self.scenario.config.llm
 
-        # Create client for events
+        # Create client for events (supports fallback list)
         events_client = LLMClient(
-            model=config.events,
+            model=config.events,  # Can be str or List[str]
             temperature=config.temperature,
             max_tokens=config.max_tokens,
         )
@@ -70,44 +78,72 @@ class Orchestrator:
         # Create clients for actors
         actor_clients = {}
         for actor_id in self.scenario.config.actor_ids:
-            model = config.get_actor_model(actor_id)
-            # Reuse existing client if same model
+            models = config.get_actor_models(actor_id)  # Can be str or List[str]
+
+            # Reuse existing client if same primary model
+            primary_model = self._normalize_model(models)
             existing = next(
-                (c for c in [events_client] + list(actor_clients.values()) if c.model == model),
+                (
+                    c
+                    for c in [events_client] + list(actor_clients.values())
+                    if self._normalize_model(c.models) == primary_model
+                ),
                 None,
             )
             if existing:
                 actor_clients[actor_id] = existing
             else:
                 client = LLMClient(
-                    model=model, temperature=config.temperature, max_tokens=config.max_tokens
+                    model=models, temperature=config.temperature, max_tokens=config.max_tokens
                 )
                 self._owned_clients.append(client)
                 actor_clients[actor_id] = client
 
         # Create client for rules
-        if config.rules == config.events:
+        if self._models_match(config.rules, config.events):
             rules_client = events_client
-        elif config.rules in [c.model for c in actor_clients.values()]:
-            rules_client = next(c for c in actor_clients.values() if c.model == config.rules)
         else:
-            rules_client = LLMClient(
-                model=config.rules, temperature=config.temperature, max_tokens=config.max_tokens
+            # Check if any actor client matches
+            primary_model = self._normalize_model(config.rules)
+            existing = next(
+                (
+                    c
+                    for c in actor_clients.values()
+                    if self._normalize_model(c.models) == primary_model
+                ),
+                None,
             )
-            self._owned_clients.append(rules_client)
+            if existing:
+                rules_client = existing
+            else:
+                rules_client = LLMClient(
+                    model=config.rules, temperature=config.temperature, max_tokens=config.max_tokens
+                )
+                self._owned_clients.append(rules_client)
 
         # Create client for metrics
-        if config.metrics == config.events:
+        primary_model = self._normalize_model(config.metrics)
+        if self._models_match(config.metrics, config.events):
             metrics_client = events_client
-        elif config.metrics == config.rules:
+        elif self._models_match(config.metrics, config.rules):
             metrics_client = rules_client
-        elif config.metrics in [c.model for c in actor_clients.values()]:
-            metrics_client = next(c for c in actor_clients.values() if c.model == config.metrics)
         else:
-            metrics_client = LLMClient(
-                model=config.metrics, temperature=config.temperature, max_tokens=config.max_tokens
+            # Check if any actor client matches
+            existing = next(
+                (
+                    c
+                    for c in actor_clients.values()
+                    if self._normalize_model(c.models) == primary_model
+                ),
+                None,
             )
-            self._owned_clients.append(metrics_client)
+            if existing:
+                metrics_client = existing
+            else:
+                metrics_client = LLMClient(
+                    model=config.metrics, temperature=config.temperature, max_tokens=config.max_tokens
+                )
+                self._owned_clients.append(metrics_client)
 
         return {
             "events": events_client,

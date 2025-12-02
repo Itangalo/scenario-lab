@@ -2,7 +2,7 @@
 
 import yaml
 from pathlib import Path
-from typing import Union
+from typing import Union, Optional, List
 from .models import (
     Scenario,
     ScenarioConfig,
@@ -58,9 +58,86 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
     )
 
 
-def load_config(path: Path) -> ScenarioConfig:
-    """Load scenario.yaml with support for per-task LLM configuration."""
+def deep_merge(base: dict, override: dict) -> dict:
+    """Deep merge two dictionaries, with override taking precedence.
+
+    Args:
+        base: Base dictionary
+        override: Override dictionary
+
+    Returns:
+        Merged dictionary
+    """
+    result = base.copy()
+
+    for key, value in override.items():
+        if key in result and isinstance(result[key], dict) and isinstance(value, dict):
+            # Recursively merge nested dicts
+            result[key] = deep_merge(result[key], value)
+        else:
+            # Override wins for scalars, lists, or new keys
+            result[key] = value
+
+    return result
+
+
+def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> ScenarioConfig:
+    """Load scenario.yaml with support for inheritance and per-task LLM configuration.
+
+    Args:
+        path: Path to scenario.yaml file
+        _loading_stack: Internal parameter to detect circular dependencies
+
+    Returns:
+        ScenarioConfig with merged configuration from base scenarios
+    """
+    if _loading_stack is None:
+        _loading_stack = []
+
+    # Detect circular dependencies
+    path_str = str(path.resolve())
+    if path_str in _loading_stack:
+        raise ValueError(f"Circular dependency detected: {' -> '.join(_loading_stack + [path_str])}")
+
+    _loading_stack.append(path_str)
+
     data = yaml.safe_load(path.read_text(encoding="utf-8"))
+
+    # Check for base scenario
+    if "base" in data:
+        base_path_str = data.pop("base")  # Remove 'base' from data
+        base_path = (path.parent / base_path_str).resolve()
+
+        if not base_path.exists():
+            raise FileNotFoundError(f"Base scenario not found: {base_path}")
+
+        # Load base configuration
+        base_config_dict = yaml.safe_load(base_path.read_text(encoding="utf-8"))
+
+        # Recursively handle base's base (multi-level inheritance)
+        if "base" in base_config_dict:
+            # Load base's config through load_config to handle its inheritance
+            base_config = load_config(base_path, _loading_stack)
+            # Convert back to dict for merging
+            base_config_dict = {
+                "name": base_config.name,
+                "description": base_config.description,
+                "start_date": base_config.start_date,
+                "time_scale": base_config.time_scale,
+                "max_turns": base_config.max_turns,
+                "actors": base_config.actor_ids,
+                "llm": {
+                    "events": base_config.llm.events,
+                    "actors": base_config.llm.actors,
+                    "rules": base_config.llm.rules,
+                    "metrics": base_config.llm.metrics,
+                    "temperature": base_config.llm.temperature,
+                    "max_tokens": base_config.llm.max_tokens,
+                },
+            }
+
+        # Merge configurations (override wins)
+        data = deep_merge(base_config_dict, data)
 
     # Parse LLM configuration
     llm_data = data.get("llm", {})

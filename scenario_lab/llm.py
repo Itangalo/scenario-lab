@@ -6,7 +6,7 @@ import os
 import re
 import time
 from dataclasses import dataclass
-from typing import Optional
+from typing import Optional, Union, List
 
 
 class LLMError(Exception):
@@ -94,30 +94,43 @@ class LLMResponse:
 
 
 class LLMClient:
-    """Client for OpenRouter API."""
+    """Client for OpenRouter API with fallback support."""
 
     API_URL = "https://openrouter.ai/api/v1/chat/completions"
 
     def __init__(
         self,
         api_key: Optional[str] = None,
-        model: str = "anthropic/claude-sonnet-4",
+        model: Union[str, List[str]] = "anthropic/claude-sonnet-4",
         temperature: float = 0.7,
         max_tokens: int = 2000,
     ):
+        """Initialize LLM client with optional fallback models.
+
+        Args:
+            api_key: OpenRouter API key
+            model: Single model string or list of models for fallback
+            temperature: Temperature for generation
+            max_tokens: Max tokens for generation
+        """
         self.api_key = api_key or os.environ.get("OPENROUTER_API_KEY")
         if not self.api_key:
             raise ValueError(
                 "OPENROUTER_API_KEY not set. Set it in environment or pass to constructor."
             )
 
-        self.model = model
+        # Store as list for fallback handling
+        self.models = [model] if isinstance(model, str) else model
+        self.model = self.models[0]  # Primary model for compatibility
         self.temperature = temperature
         self.max_tokens = max_tokens
         self.client = httpx.Client(timeout=120.0)
 
     def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
-        """Send a completion request.
+        """Send a completion request with fallback support.
+
+        Tries each model in self.models list until one succeeds.
+        For each model, retries on rate limits and timeouts.
 
         Args:
             system_prompt: System prompt
@@ -127,57 +140,81 @@ class LLMClient:
             LLMResponse with parsed content
 
         Raises:
-            LLMRateLimitError: If rate limit exceeded after retries
-            LLMError: For other API errors
+            LLMError: If all models fail
         """
+        last_error = None
         max_retries = 3
 
-        for attempt in range(max_retries):
-            try:
-                response = self.client.post(
-                    self.API_URL,
-                    headers={
-                        "Authorization": f"Bearer {self.api_key}",
-                        "Content-Type": "application/json",
-                    },
-                    json={
-                        "model": self.model,
-                        "messages": [
-                            {"role": "system", "content": system_prompt},
-                            {"role": "user", "content": user_prompt},
-                        ],
-                        "temperature": self.temperature,
-                        "max_tokens": self.max_tokens,
-                    },
-                )
-                response.raise_for_status()
+        # Try each model in fallback list
+        for model_index, model in enumerate(self.models):
+            is_fallback = model_index > 0
 
-                data = response.json()
-                content = data["choices"][0]["message"]["content"]
+            if is_fallback:
+                print(f"  → Falling back to: {model}")
 
-                return LLMResponse(content=content, raw_response=data)
+            # Try this model with retries for transient errors
+            for attempt in range(max_retries):
+                try:
+                    response = self.client.post(
+                        self.API_URL,
+                        headers={
+                            "Authorization": f"Bearer {self.api_key}",
+                            "Content-Type": "application/json",
+                        },
+                        json={
+                            "model": model,
+                            "messages": [
+                                {"role": "system", "content": system_prompt},
+                                {"role": "user", "content": user_prompt},
+                            ],
+                            "temperature": self.temperature,
+                            "max_tokens": self.max_tokens,
+                        },
+                    )
+                    response.raise_for_status()
 
-            except httpx.HTTPStatusError as e:
-                if e.response.status_code == 429:  # Rate limit
+                    data = response.json()
+                    content = data["choices"][0]["message"]["content"]
+
+                    if is_fallback:
+                        print(f"  ✓ Fallback successful")
+
+                    return LLMResponse(content=content, raw_response=data)
+
+                except httpx.HTTPStatusError as e:
+                    if e.response.status_code == 429:  # Rate limit
+                        if attempt < max_retries - 1:
+                            wait_time = 2**attempt  # Exponential backoff
+                            print(f"  Rate limit hit, waiting {wait_time}s...")
+                            time.sleep(wait_time)
+                            continue
+                        # Rate limit exhausted for this model, try next model
+                        last_error = LLMError(f"Rate limit exceeded for {model}")
+                        print(f"  ✗ {model} unavailable (rate limit)")
+                        break
+
+                    # Other HTTP errors (e.g., 503 unavailable) - try next model immediately
+                    last_error = LLMError(f"HTTP {e.response.status_code} for {model}")
+                    print(f"  ✗ {model} unavailable (HTTP {e.response.status_code})")
+                    break
+
+                except httpx.TimeoutException:
                     if attempt < max_retries - 1:
-                        wait_time = 2**attempt  # Exponential backoff
-                        print(f"Rate limit hit, waiting {wait_time}s...")
-                        time.sleep(wait_time)
+                        print(f"  Request timed out, retrying ({attempt + 1}/{max_retries})...")
                         continue
-                    raise LLMRateLimitError(f"Rate limit exceeded after {max_retries} retries")
+                    # Timeout exhausted for this model, try next model
+                    last_error = LLMError(f"Timeout for {model}")
+                    print(f"  ✗ {model} timed out")
+                    break
 
-                # Other HTTP errors
-                error_detail = e.response.text if hasattr(e.response, "text") else str(e)
-                raise LLMError(f"HTTP {e.response.status_code}: {error_detail}")
+                except Exception as e:
+                    last_error = LLMError(f"Error with {model}: {e}")
+                    print(f"  ✗ {model} error: {e}")
+                    break
 
-            except httpx.TimeoutException:
-                if attempt < max_retries - 1:
-                    print(f"Request timed out, retrying ({attempt + 1}/{max_retries})...")
-                    continue
-                raise LLMError("Request timed out after retries")
-
-            except Exception as e:
-                raise LLMError(f"Unexpected error: {e}")
+        # All models failed
+        models_tried = ", ".join(self.models)
+        raise LLMError(f"All models failed ({models_tried}). Last error: {last_error}")
 
     def close(self):
         """Close the HTTP client."""

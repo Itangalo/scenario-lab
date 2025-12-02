@@ -1,7 +1,7 @@
 """Data models for Scenario Lab V4."""
 
 from dataclasses import dataclass, field
-from typing import Optional, Union
+from typing import Optional, Union, List
 import json
 
 
@@ -108,28 +108,45 @@ class TurnResult:
 
 @dataclass
 class LLMConfig:
-    """LLM configuration with per-task model selection."""
+    """LLM configuration with per-task model selection and fallback lists.
 
-    # Per-task model selection
-    events: str = "anthropic/claude-sonnet-4"
-    actors: Union[dict[str, str], str] = "anthropic/claude-sonnet-4"  # actor_id -> model, or default string
-    rules: str = "anthropic/claude-sonnet-4"
-    metrics: str = "anthropic/claude-sonnet-4"
+    Each model field supports:
+    - Single string: "anthropic/claude-sonnet-4"
+    - Fallback list: ["x-ai/grok-4-fast", "google/gemini-flash-1.5", "anthropic/claude-haiku-4.5"]
+    - Dict for actors: {"actor1": "model1", "actor2": ["model1", "model2"]}
+    """
+
+    # Per-task model selection (string or list for fallback)
+    events: Union[str, List[str]] = "anthropic/claude-sonnet-4"
+    actors: Union[str, List[str], dict] = "anthropic/claude-sonnet-4"  # actor_id -> model/list, or default
+    rules: Union[str, List[str]] = "anthropic/claude-sonnet-4"
+    metrics: Union[str, List[str]] = "anthropic/claude-sonnet-4"
 
     # Global settings
     temperature: float = 0.7
     max_tokens: int = 2000
 
-    def get_actor_model(self, actor_id: str) -> str:
-        """Get model for a specific actor."""
-        if isinstance(self.actors, str):
+    def get_actor_models(self, actor_id: str) -> Union[str, List[str]]:
+        """Get model(s) for a specific actor.
+
+        Returns:
+            String or list of strings (for fallback)
+        """
+        if isinstance(self.actors, (str, list)):
             return self.actors
-        return self.actors.get(actor_id, self.actors.get("default", "anthropic/claude-sonnet-4"))
+
+        # Dict case
+        result = self.actors.get(actor_id, self.actors.get("default", "anthropic/claude-sonnet-4"))
+        return result
+
+    def normalize_to_list(self, value: Union[str, List[str]]) -> List[str]:
+        """Convert a model value to a list (for fallback processing)."""
+        return [value] if isinstance(value, str) else value
 
 
 @dataclass
 class ScenarioConfig:
-    """Scenario configuration."""
+    """Scenario configuration with optional inheritance."""
 
     name: str
     description: str
@@ -140,6 +157,9 @@ class ScenarioConfig:
 
     # LLM settings
     llm: LLMConfig = None
+
+    # Inheritance (set during loading, not in YAML)
+    base: Optional[str] = None  # Path to base scenario (relative to current)
 
     def __post_init__(self):
         # Ensure llm config exists
