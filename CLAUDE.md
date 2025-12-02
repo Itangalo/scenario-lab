@@ -1,61 +1,61 @@
 # Scenario Lab V4 – Claude Code Instructions
 
-## Projektöversikt
+## Project Overview
 
-**Scenario Lab** är ett ramverk för att simulera komplexa strategiska och politiska scenarios med AI-agenter. Systemet fokuserar på AI-policy, geopolitik och organisationsstrategi.
+**Scenario Lab** is a framework for simulating complex strategic and political scenarios with AI agents. The system focuses on AI policy, geopolitics, and organizational strategy.
 
-**Syfte:**
+**Purpose:**
 
-- Primärt: Utforska hur LLMs kan användas för scenariosimulering
-- Sekundärt: Identifiera mönster i utfall genom upprepade simuleringar (både kvantitativt och kvalitativt)
+- Primary: Explore how LLMs can be used for scenario simulation
+- Secondary: Identify patterns in outcomes through repeated simulations (both quantitative and qualitative)
 
-**Status:** V4 core implementation är komplett. V3 är arkiverad i `v3-archive` tag.
+**Status:** V4 core implementation is complete. V3 is archived in the `v3-archive` tag.
 
-## Arkitektur – Pure LLM Design
+## Architecture – Pure LLM Design
 
-V4 är en radikal förenkling från V3. Istället för komplex Python-logik **lutar vi oss mot LLM:en**:
+V4 is a radical simplification from V3. Instead of complex Python logic, **we lean into the LLM**:
 
-- **LLMs hanterar ALL komplexitet:** narrativ, metrics, regelstolkning
-- **Python är minimal orkestrering:** ladda prompts, anropa APIs, spara filer
-- **Inga kommunikationsfaser** eller action points
-- **Ingen hybridarkitektur** - ren LLM-resonemang
-- **En enkel turn-loop:** Events → Actors → Metric Rules Update → Metrics Update
+- **LLMs handle ALL complexity:** narrative, metrics, rule interpretation
+- **Python is minimal orchestration:** load prompts, call APIs, save files
+- **No communication phases** or action points
+- **No hybrid architecture** - pure LLM reasoning
+- **One simple turn loop:** Events → Actors → Metric Rules Update → Metrics Update
 
-### Centrala komponenter
+### Core Components
 
-1. **Orchestrator (Python):** Minimal orkestrering som kör turn-loopen
-2. **World State:** Narrativ beskrivning av världens tillstånd
-3. **Metrics:** Kvantitativa värden (t.ex. `ai_capability`, `unemployment`, `public_sentiment`)
-4. **Metric Rules:** LLM-hanterade regler för hur metrics förändras
-5. **Actors:** Simulationens deltagare (länder, företag, organisationer) med mål och handlingar
-6. **Events:** Exogena händelser med sannolikheter och villkor
+1. **Orchestrator (Python):** Minimal orchestration that runs the turn loop
+2. **World State:** Narrative description of the world's state
+3. **Metrics:** Quantitative values (e.g., `ai_capability`, `unemployment`, `public_sentiment`)
+4. **Metric Rules:** LLM-managed rules for how metrics change
+5. **Actors:** Simulation participants (countries, companies, organizations) with goals and actions
+6. **Events:** Exogenous events with probabilities and conditions
 
 ## Turn Loop (V4)
 
-Varje tur representerar en tidsperiod (t.ex. 6 månader):
+Each turn represents a time period (e.g., 6 months):
 
-1. **Events:** LLM bestämmer vilka externa händelser som inträffar baserat på villkor och sannolikheter
-2. **Actors:** Varje aktör beslutar mål och handlingar för turen
-3. **Metric Rules Update:** LLM granskar och uppdaterar kvantitativa regler
-4. **Metrics Update:** LLM uppdaterar alla metrics och genererar narrativ baserat på handlingar och regler
+1. **Events:** LLM determines which external events occur based on conditions and probabilities
+2. **Actors:** Each actor decides goals and actions for the turn
+3. **Metric Rules Update:** LLM reviews and updates quantitative rules
+4. **Metrics Update:** LLM updates all metrics and generates narrative based on actions and rules
 
-## Filstruktur (V4)
+## File Structure (V4)
 
 ```
 scenario-name/
-├── scenario.yaml              # Konfiguration (tidsperiod, aktörer, LLM-inställningar)
-├── metrics.md                 # Metricdefinitioner (markdown format)
-├── events.md                  # Exogena händelser (markdown format)
-├── metric-rules.md            # Initiala kvantitativa regler
+├── scenario.yaml              # Configuration (time period, actors, LLM settings)
+├── metrics.md                 # Metric definitions (markdown format)
+├── events.md                  # Exogenous events (markdown format)
+├── metric-rules.md            # Initial quantitative rules
 ├── background/
-│   ├── context.md             # Världsbakgrund och initial state
+│   ├── context.md             # World background and initial state
 │   └── actors/
-│       ├── actor1.md          # Aktörsbeskrivningar
+│       ├── actor1.md          # Actor descriptions
 │       └── actor2.md
 └── runs/
     └── run-YYYYMMDD-HHMMSS/
-        ├── config.json        # Körningskonfiguration
-        ├── summary.json       # Slutresultat
+        ├── config.json        # Run configuration
+        ├── summary.json       # Final results
         └── turn-XX/
             ├── 1-events.json
             ├── 2-actors/
@@ -65,14 +65,14 @@ scenario-name/
             └── 4-world-state.md
 ```
 
-## Skapa nya scenarion
+## Creating New Scenarios
 
-Ett scenario består av:
+A scenario consists of:
 
 **1. Background (Markdown)**
 
-- `context.md` - Världsbakgrund och initial situation
-- `actors/*.md` - Aktörsbeskrivningar med mål
+- `context.md` - World background and initial situation
+- `actors/*.md` - Actor descriptions with goals
 
 **2. Configuration (YAML)**
 
@@ -114,46 +114,46 @@ llm:
 **Beskrivning:** What happens
 ```
 
-## Teknisk Stack
+## Technical Stack
 
 - **Python:** 3.11+
 - **Dependencies:** httpx, pyyaml, python-dotenv, pytest
-- **Type hints:** Krävs genomgående
-- **LLM Provider:** OpenRouter API (stöd för Claude, GPT, Llama, etc.)
+- **Type hints:** Required throughout
+- **LLM Provider:** OpenRouter API (supports Claude, GPT, Llama, etc.)
 
 ## LLM Evaluation Suite (Issue #120)
 
-V4 inkluderar ett komplett pytest-baserat evalueringssystem för att testa LLM-prestanda på event condition-tolkning.
+V4 includes a complete pytest-based evaluation system for testing LLM performance on event condition interpretation.
 
-**Plats:** `tests/evals/llm-event-conditions/`
+**Location:** `tests/evals/llm-event-conditions/`
 
-**Syfte:** Testa om LLMs korrekt kan:
+**Purpose:** Test whether LLMs can correctly:
 
-1. **Tolka villkor** - Förstå när händelser kan inträffa (t.ex. "metric_a > 40")
-2. **Beräkna sannolikheter** - Evaluera formler korrekt (t.ex. "2 * unemployment / 100")
-3. **Undvika hallucinationer** - Inte referera till metrics som inte finns
-4. **Hantera temporala villkor** - Förstå turn- och datumbaserade triggers
+1. **Interpret conditions** - Understand when events can occur (e.g., "metric_a > 40")
+2. **Calculate probabilities** - Evaluate formulas correctly (e.g., "2 * unemployment / 100")
+3. **Avoid hallucinations** - Not reference metrics that don't exist
+4. **Handle temporal conditions** - Understand turn- and date-based triggers
 
-**Funktioner:**
+**Features:**
 
-- 20 testhändelser över 4 kapaciteter
-- Ground truth YAML med förväntade resultat
-- Minimal eval-scenario (4 metrics, 1 aktör)
-- Viktad poängsättning med kategori-specifika tröskelvärden
-- Komplett dokumentation i README.md
+- 20 test events across 4 capabilities
+- Ground truth YAML with expected results
+- Minimal eval scenario (4 metrics, 1 actor)
+- Weighted scoring with category-specific thresholds
+- Complete documentation in README.md
 
-**Användning:**
+**Usage:**
 
 ```bash
-# Kör alla eval-tester
+# Run all eval tests
 export OPENROUTER_API_KEY="your_key"
 pytest tests/evals/llm-event-conditions/ -v
 
-# Testa specifik modell
+# Test specific model
 export TEST_LLM_MODEL="anthropic/claude-haiku-4"
 pytest tests/evals/llm-event-conditions/ -v
 
-# Testa specifik kategori
+# Test specific category
 pytest tests/evals/llm-event-conditions/ -k "hallucination" -v
 ```
 
@@ -172,54 +172,54 @@ OVERALL SCORE                 : 91.7%
 ============================================================
 ```
 
-## Exempel: Sweden AI 2030
+## Example: Sweden AI 2030
 
-Scenario som utforskar AI-utveckling i Sverige 2026-2030.
+Scenario exploring AI development in Sweden 2026-2030.
 
-**Plats:** `scenarios/sweden-ai-2030/`
+**Location:** `scenarios/sweden-ai-2030/`
 
-**Aktörer:**
+**Actors:**
 
-- Regeringen (innovation vs. reglering)
-- Fackföreningar (arbetarskydd)
-- Näringslivet (AI-adoption)
-- Media (offentlig diskurs)
+- Government (innovation vs. regulation)
+- Labor Unions (worker protection)
+- Business Sector (AI adoption)
+- Media (public discourse)
 
 **Metrics:**
 
-- `ai_capability` - Timmar arbete AI kan hantera
-- `ai_adoption_sweden` - Procent som regelbundet använder AI
-- `unemployment` - Arbetslöshet
-- `public_sentiment` - Allmän opinion
+- `ai_capability` - Hours of work AI can handle
+- `ai_adoption_sweden` - Percent regularly using AI
+- `unemployment` - Unemployment rate
+- `public_sentiment` - Public opinion
 
 **Variants:**
 
-- `cheap-with-fallback.yaml` - Kostnadseffektiv körning med fallback-modeller
+- `cheap-with-fallback.yaml` - Cost-effective execution with fallback models
 
-## CLI Användning
+## CLI Usage
 
 ```bash
-# Kör simulering
+# Run simulation
 python -m scenario_lab.cli scenarios/sweden-ai-2030
 
-# Specifikt antal turer
+# Specific number of turns
 python -m scenario_lab.cli scenarios/sweden-ai-2030 --turns 5
 
-# Använd specifik modell
+# Use specific model
 python -m scenario_lab.cli scenarios/sweden-ai-2030 --model anthropic/claude-opus-4
 
-# Dry run (visa prompts utan att köra)
+# Dry run (show prompts without running)
 python -m scenario_lab.cli scenarios/sweden-ai-2030 --dry-run
 
-# Använd variant
+# Use variant
 python -m scenario_lab.cli scenarios/sweden-ai-2030/variants/cheap-with-fallback.yaml
 ```
 
-## Utvecklingsriktlinjer
+## Development Guidelines
 
-1. **LLMs hanterar komplexitet** - Lita på LLM:en istället för att skriva Python-logik
-2. **Prompter är kod** - Versionera och testa system prompts noggrant
-3. **Logga allt** - Spara rå LLM input/output för debugging
-4. **Börja smått** - 2 aktörer, 3 turer. Skala upp när det fungerar
-5. **Använd billiga modeller för iteration** - Haiku/Grok för dev, Sonnet/Opus för produktion
-6. **Type hints krävs** - Genomgående i all kod
+1. **LLMs handle complexity** - Trust the LLM instead of writing Python logic
+2. **Prompts are code** - Version and test system prompts carefully
+3. **Log everything** - Save raw LLM input/output for debugging
+4. **Start small** - 2 actors, 3 turns. Scale up when it works
+5. **Use cheap models for iteration** - Haiku/Grok for dev, Sonnet/Opus for production
+6. **Type hints required** - Throughout all code
