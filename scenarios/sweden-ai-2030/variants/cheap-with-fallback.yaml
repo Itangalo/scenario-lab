@@ -17,10 +17,13 @@ llm:
 
   # Rules: Single cheap model with fallback
   rules:
+    - "anthropic/claude-haiku-4.5"
     - "x-ai/grok-4.1-fast:free"
     - "x-ai/grok-4-fast"
 
   # Metrics: Better model for narrative quality
   metrics:
+    - "x-ai/grok-4.1-fast:free"
+    - "x-ai/grok-4-fast"
     - "anthropic/claude-sonnet-4.5"
     - "anthropic/claude-haiku-4.5"
