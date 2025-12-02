@@ -1,0 +1,140 @@
+"""Data models for Scenario Lab V4."""
+
+from dataclasses import dataclass, field
+from typing import Optional
+import json
+
+
+@dataclass
+class Metric:
+    """A single quantitative metric."""
+
+    id: str
+    description: str
+    value: float
+    min_value: float
+    max_value: float
+    unit: str
+    reference_points: dict[float, str] = field(default_factory=dict)
+
+    def validate(self) -> bool:
+        """Ensure value is within bounds."""
+        return self.min_value <= self.value <= self.max_value
+
+    def clamp(self) -> None:
+        """Clamp value to valid range."""
+        self.value = max(self.min_value, min(self.max_value, self.value))
+
+
+@dataclass
+class Metrics:
+    """Collection of all metrics."""
+
+    metrics: dict[str, Metric]
+
+    def to_json(self) -> str:
+        """Export as simple JSON for prompts."""
+        return json.dumps({m.id: m.value for m in self.metrics.values()}, indent=2)
+
+    def update_from_json(self, json_str: str) -> None:
+        """Update values from LLM response."""
+        data = json.loads(json_str)
+        for metric_id, value in data.items():
+            if metric_id in self.metrics:
+                self.metrics[metric_id].value = value
+                self.metrics[metric_id].clamp()
+
+    def update_from_dict(self, data: dict) -> None:
+        """Update values from dictionary."""
+        for metric_id, value in data.items():
+            if metric_id in self.metrics:
+                self.metrics[metric_id].value = value
+                self.metrics[metric_id].clamp()
+
+
+@dataclass
+class Event:
+    """An external event that can occur."""
+
+    id: str
+    description: str
+    condition: str  # Natural language condition
+    probability: str  # Can be formula like "2 * unemployment / 100"
+    can_repeat: bool = False
+    occurred: bool = False
+
+
+@dataclass
+class Actor:
+    """A stakeholder in the scenario."""
+
+    id: str
+    name: str
+    short_description: str
+    long_description: str
+    initial_goals: list[str]
+    behavioral_traits: list[str] = field(default_factory=list)
+
+    # Updated each turn
+    current_goals: list[str] = field(default_factory=list)
+    last_actions: str = ""
+
+    def __post_init__(self):
+        if not self.current_goals:
+            self.current_goals = self.initial_goals.copy()
+
+
+@dataclass
+class WorldState:
+    """The narrative state of the world."""
+
+    narrative: str
+    turn: int
+    time_period: str  # e.g., "January-June 2026"
+
+
+@dataclass
+class TurnResult:
+    """Results from a single turn."""
+
+    turn: int
+    time_period: str
+    triggered_events: list[dict]  # [{"id": "...", "probability": 0.1}, ...]
+    actor_outputs: dict[str, str]  # actor_id -> markdown output
+    metric_rules: str  # Markdown numbered list
+    metrics: dict[str, float]  # metric_id -> value
+    narrative: str  # World state narrative
+
+
+@dataclass
+class ScenarioConfig:
+    """Scenario configuration."""
+
+    name: str
+    description: str
+    start_date: str
+    time_scale: str  # e.g., "6 months per turn"
+    max_turns: int
+    actor_ids: list[str]
+
+    # LLM settings
+    model: str = "anthropic/claude-sonnet-4"
+    temperature: float = 0.7
+    max_tokens: int = 2000
+
+
+@dataclass
+class Scenario:
+    """Complete scenario state."""
+
+    config: ScenarioConfig
+    metrics: Metrics
+    events: list[Event]
+    actors: dict[str, Actor]
+    metric_rules: str  # Current rules as markdown
+    world_state: WorldState
+    context: str  # Background context
+
+    # History
+    turn_history: list[TurnResult] = field(default_factory=list)
+    occurred_events: set[str] = field(default_factory=set)
