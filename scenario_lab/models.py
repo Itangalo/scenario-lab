@@ -123,7 +123,7 @@ class LLMConfig:
     actors: Union[str, List[str], dict] = "anthropic/claude-sonnet-4"  # actor_id -> model/list, or default
     rules: Union[str, List[str]] = "anthropic/claude-sonnet-4"
     metrics: Union[str, List[str]] = "anthropic/claude-sonnet-4"
-    summary: Union[str, List[str]] = "anthropic/claude-haiku-4"  # Default to cheap model for summarization
+    summary: Union[str, List[str]] = "openai/gpt-4o-mini"  # Default to cheap model for summarization
 
     # Global settings
     temperature: float = 0.7
