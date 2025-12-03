@@ -260,22 +260,35 @@ This allows each actor to have customized instructions, emphasis, or behavioral 
 - Want different tone or style for different actors
 - Actors require special behavioral constraints
 
-**Placeholders available:**
-- `{{scenario_description}}` - Scenario description from config
-- `{{actors_list}}` - Formatted list of all actors
-- `{{metrics_list}}` - Formatted list of all metrics
-- `{{actor_name}}` - Name of current actor (actor prompts only)
-- `{{actor_description}}` - Description of current actor (actor prompts only)
+**Creating scenario-specific prompts:**
+
+When creating scenario-specific system prompts, you should **replace all placeholders** with actual scenario data. The templates in `templates/system-prompts/` contain placeholders, but your scenario-specific prompts should have these filled in:
+
+- `{{scenario_description}}` → Your actual scenario description from scenario.yaml
+- `{{actors_list}}` → Formatted list with actual actor names and descriptions
+- `{{metrics_list}}` → Formatted list with actual metric definitions and reference points
+- `{{actor_name}}` → The specific actor's name (for actor prompts)
+- `{{actor_description}}` → The specific actor's full description (for actor prompts)
 
 **Example** (system-prompts/actor_government.md):
 ```markdown
 # System Prompt: Government Actor
 
-This is part of an AI-driven scenario simulation about {{scenario_description}}.
+This is part of an AI-driven scenario simulation about exploring climate policy and renewable energy transition.
 
-You are {{actor_name}}.
+The simulation includes the following actors:
+* Government: National decision-making body balancing innovation, security, and welfare
+* Industry: Energy companies implementing renewable transition
+* Environmental Groups: Advocacy organizations pushing for faster change
 
-{{actor_description}}
+Key metrics:
+* carbon_emissions: Annual CO2 emissions in millions of tons (0-100)
+* renewable_percentage: Percentage of energy from renewables (0-100%)
+* public_support: Public support for climate action (-10 to 10)
+
+You are the Government.
+
+The government must balance economic growth, climate goals, and political viability. You have tools including regulation, subsidies, and public communication.
 
 Special rules for government actions in this scenario:
 - Your actions should consider long-term consequences (10+ years)
@@ -286,7 +299,9 @@ Special rules for government actions in this scenario:
 [Rest of prompt follows template structure...]
 ```
 
-**Important:** Only create custom system prompts when needed. The default templates work well for most scenarios.
+**Important:**
+- Only create custom system prompts when needed. The default templates work well for most scenarios.
+- Always replace placeholders with actual scenario data - don't leave `{{...}}` in the files.
 
 ## Validation
 
