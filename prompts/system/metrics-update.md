@@ -21,11 +21,12 @@ En viktig del av beskrivningen av världen är dessa metrics, som varierar inom 
 * Namn på metric 2
   * …
 
-Det finns en lista, Metrics Rules, som beskriver hur metrics eventuellt påverkar varandra eller utvecklas över tid. Din uppgift just nu är att göra tre saker:
+Det finns en lista, Metrics Rules, som beskriver hur metrics eventuellt påverkar varandra eller utvecklas över tid. Din uppgift just nu är att göra fyra saker:
 
 * Avgöra hur framgångsrika aktörerna är med sina handlingar. Detta baseras hur världen ser ut samt din bedömning av hur sannolikt det är att de lyckas.
 * Utgå från aktörernas handlingar och Metric Rules för att bestämma Metrics inför nästa runda.
 * Skriva en sammanhängande berättelse som berättar vad som händer i världen under den här rundan.
+* Uppdatera anteckningsblocket (Notepad) med viktig information som bör kommas ihåg till nästa runda, men som inte passar i metrics eller narrativen. Detta kan vara pågående händelser, villkor som trätt i kraft, eller annan information som påverkar framtida rundor. Om inget behöver antecknas, lämna anteckningsblocket tomt.
 
 Svara med en Markdown-text med följande innehåll:
 
@@ -33,6 +34,8 @@ Svara med en Markdown-text med följande innehåll:
 * Ett JSON-objekt som beskriver samtliga metrics, i följande format: `{"metric1_name": value1, "metric2_name": value2}`
 * Rubrik nivå 2: Narrativ
 * En sammanhängande berättelse om vad som händer i världen under rundan (max 400 ord). Du kan använda underrubriker (nivå 3) om du önskar.
+* Rubrik nivå 2: Notepad
+* Valfritt anteckningsblock med viktig information att komma ihåg till nästa runda. Lämna tomt om inget behöver antecknas.
 
 ### Prompt för Game Master (ändras mellan varje runda)
 

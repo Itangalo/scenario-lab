@@ -56,8 +56,8 @@ class LLMResponse:
             return data
         raise ValueError(f"Expected JSON array, got {type(data)}")
 
-    def extract_metrics_and_narrative(self) -> tuple[dict, str]:
-        """Extract metrics JSON and narrative from metrics update response.
+    def extract_metrics_and_narrative(self) -> tuple[dict, str, str]:
+        """Extract metrics JSON, narrative, and notepad from metrics update response.
 
         Expected format:
         ## Metrics
@@ -67,6 +67,9 @@ class LLMResponse:
 
         ## Narrativ
         narrative text...
+
+        ## Notepad
+        notepad text...
         """
         # Find ## Metrics section with JSON
         metrics_match = re.search(
@@ -83,14 +86,21 @@ class LLMResponse:
 
         metrics = json.loads(metrics_match.group(1))
 
-        # Find ## Narrativ section
+        # Find ## Narrativ section (stop at ## Notepad if present)
         narrative_match = re.search(
-            r"##\s*Narrativ\s*\n+(.*)", self.content, re.DOTALL | re.IGNORECASE
+            r"##\s*Narrativ\s*\n+(.*?)(?=##\s*Notepad|\Z)", self.content, re.DOTALL | re.IGNORECASE
         )
 
         narrative = narrative_match.group(1).strip() if narrative_match else ""
 
-        return metrics, narrative
+        # Find ## Notepad section (optional)
+        notepad_match = re.search(
+            r"##\s*Notepad\s*\n+(.*)", self.content, re.DOTALL | re.IGNORECASE
+        )
+
+        notepad = notepad_match.group(1).strip() if notepad_match else ""
+
+        return metrics, narrative, notepad
 
 
 class LLMClient:

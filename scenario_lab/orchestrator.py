@@ -204,14 +204,15 @@ class Orchestrator:
 
         # Step 4: Update metrics and generate narrative
         print("\n[4/4] Updating metrics and generating narrative...")
-        new_metrics, narrative = self._run_metrics_step(turn, actor_outputs, triggered_events)
+        new_metrics, narrative, notepad = self._run_metrics_step(turn, actor_outputs, triggered_events)
         print(f"  → Metrics and narrative updated")
         if self.output_manager:
             self.output_manager.save_metrics_and_narrative(turn, new_metrics, narrative)
+            self.output_manager.save_notepad(turn, notepad)
             self.output_manager.update_summary(turn, new_metrics)
 
         # Update scenario state
-        self._update_scenario_state(new_metrics, narrative, turn, time_period)
+        self._update_scenario_state(new_metrics, narrative, notepad, turn, time_period)
 
         # Build and return result
         return TurnResult(
@@ -222,6 +223,7 @@ class Orchestrator:
             metric_rules=new_rules,
             metrics=new_metrics,
             narrative=narrative,
+            notepad=notepad,
         )
 
     def _run_events_step(self, turn: int) -> list[dict]:
@@ -330,7 +332,7 @@ class Orchestrator:
 
     def _run_metrics_step(
         self, turn: int, actor_outputs: dict[str, str], triggered_events: list[dict]
-    ) -> tuple[dict, str]:
+    ) -> tuple[dict, str, str]:
         """Step 4: Update metrics and generate narrative.
 
         Args:
@@ -339,7 +341,7 @@ class Orchestrator:
             triggered_events: List of events that occurred
 
         Returns:
-            Tuple of (metrics dict, narrative string)
+            Tuple of (metrics dict, narrative string, notepad string)
         """
         system, user = self.prompt_builder.build_metrics_prompt(
             turn, actor_outputs, triggered_events
@@ -347,7 +349,7 @@ class Orchestrator:
         response = self.llm_clients["metrics"].complete(system, user)
 
         try:
-            metrics, narrative = response.extract_metrics_and_narrative()
+            metrics, narrative, notepad = response.extract_metrics_and_narrative()
         except (json.JSONDecodeError, ValueError) as e:
             print(f"  Warning: Could not parse metrics response: {e}")
             print(f"  Response was: {response.content[:200]}...")
@@ -358,7 +360,7 @@ class Orchestrator:
                 "[ERROR: Could not parse metrics response. Keeping previous values.]\n\n"
                 + response.content
             )
-            return current_metrics, error_narrative
+            return current_metrics, error_narrative, self.scenario.notepad
 
         # Validate and clamp metrics
         for metric_id, value in list(metrics.items()):
@@ -377,7 +379,7 @@ class Orchestrator:
                 print(f"  Warning: Unknown metric '{metric_id}' in response, skipping")
                 del metrics[metric_id]
 
-        return metrics, narrative
+        return metrics, narrative, notepad
 
     def _mark_event_occurred(self, event_id: str):
         """Mark event as occurred (for non-repeatable events)."""
@@ -387,11 +389,12 @@ class Orchestrator:
                 self.scenario.occurred_events.add(event_id)
 
     def _update_scenario_state(
-        self, new_metrics: dict, narrative: str, turn: int, time_period: str
+        self, new_metrics: dict, narrative: str, notepad: str, turn: int, time_period: str
     ):
         """Update scenario with turn results."""
         self.scenario.metrics.update_from_dict(new_metrics)
         self.scenario.world_state.narrative = narrative
+        self.scenario.notepad = notepad
         self.scenario.world_state.turn = turn
         self.scenario.world_state.time_period = time_period
 
