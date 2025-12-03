@@ -78,7 +78,7 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
     )
 
     # Load custom system prompts if they exist
-    custom_system_prompts = load_custom_system_prompts(scenario_dir)
+    custom_system_prompts = load_custom_system_prompts(scenario_dir, config.actor_ids)
 
     return Scenario(
         config=config,
@@ -92,14 +92,17 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
     )
 
 
-def load_custom_system_prompts(scenario_dir: Path) -> dict[str, str]:
+def load_custom_system_prompts(scenario_dir: Path, actor_ids: list[str]) -> dict[str, str]:
     """Load scenario-specific system prompts if they exist.
 
     Args:
         scenario_dir: Path to scenario directory
+        actor_ids: List of actor IDs from scenario config
 
     Returns:
-        Dictionary mapping prompt name to content (e.g., {"events": "...", "actor": "..."})
+        Dictionary mapping prompt name to content.
+        For actor prompts, keys are "actor_{actor_id}" (e.g., "actor_government")
+        For other prompts, keys are "events", "metric_rules", "metrics_update"
     """
     custom_prompts = {}
     prompts_dir = scenario_dir / "system-prompts"
@@ -107,14 +110,21 @@ def load_custom_system_prompts(scenario_dir: Path) -> dict[str, str]:
     if not prompts_dir.exists():
         return custom_prompts
 
-    # Load each optional system prompt file
-    prompt_files = ["events.md", "actor.md", "metric-rules.md", "metrics-update.md"]
+    # Load non-actor system prompt files
+    prompt_files = ["events.md", "metric-rules.md", "metrics-update.md"]
     for filename in prompt_files:
         prompt_path = prompts_dir / filename
         if prompt_path.exists():
             # Use base name without extension as key (e.g., "events" for "events.md")
             key = filename.replace(".md", "").replace("-", "_")
             custom_prompts[key] = prompt_path.read_text(encoding="utf-8")
+
+    # Load actor-specific prompts
+    for actor_id in actor_ids:
+        actor_prompt_path = prompts_dir / f"actor_{actor_id}.md"
+        if actor_prompt_path.exists():
+            key = f"actor_{actor_id}"
+            custom_prompts[key] = actor_prompt_path.read_text(encoding="utf-8")
 
     return custom_prompts
 

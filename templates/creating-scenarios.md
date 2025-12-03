@@ -237,29 +237,39 @@ The government faces competing pressures: fostering AI innovation for economic c
 
 You can create scenario-specific system prompts to customize how LLMs interpret the scenario. These override the default templates.
 
+Starting from the prompts in `templates/system-prompts/` is recommended.
+
 **Location:** `system-prompts/` folder in scenario directory
 
 **Files:**
 - `events.md` - Customizes event evaluation
-- `actor.md` - Customizes actor behavior
+- `actor_{actor_id}.md` - Customizes behavior for specific actor (one file per actor)
 - `metric-rules.md` - Customizes metric rules updates
 - `metrics-update.md` - Customizes metrics and narrative generation
 
+**Actor-specific prompts:**
+Each actor should have their own system prompt file named `actor_{actor_id}.md` where `{actor_id}` matches the ID in scenario.yaml. For example, if your scenario has actors `government` and `media`, you would create:
+- `system-prompts/actor_government.md`
+- `system-prompts/actor_media.md`
+
+This allows each actor to have customized instructions, emphasis, or behavioral guidelines.
+
 **When to use:**
 - Scenario has unusual mechanics or rules
-- Need to emphasize specific aspects
-- Want different tone or style
+- Need to emphasize specific aspects for certain actors
+- Want different tone or style for different actors
+- Actors require special behavioral constraints
 
 **Placeholders available:**
 - `{{scenario_description}}` - Scenario description from config
 - `{{actors_list}}` - Formatted list of all actors
 - `{{metrics_list}}` - Formatted list of all metrics
-- `{{actor_name}}` - Name of current actor (actor.md only)
-- `{{actor_description}}` - Description of current actor (actor.md only)
+- `{{actor_name}}` - Name of current actor (actor prompts only)
+- `{{actor_description}}` - Description of current actor (actor prompts only)
 
-**Example** (system-prompts/actor.md):
+**Example** (system-prompts/actor_government.md):
 ```markdown
-# System Prompt: Actor
+# System Prompt: Government Actor
 
 This is part of an AI-driven scenario simulation about {{scenario_description}}.
 
@@ -267,10 +277,11 @@ You are {{actor_name}}.
 
 {{actor_description}}
 
-Special rules for this scenario:
+Special rules for government actions in this scenario:
 - Your actions should consider long-term consequences (10+ years)
-- Focus on strategic moves rather than tactical adjustments
-- Consider how other actors might respond to your actions
+- All major policy changes require 2-3 turns for implementation
+- You must balance competing pressures from other actors
+- Budget constraints limit simultaneous initiatives
 
 [Rest of prompt follows template structure...]
 ```

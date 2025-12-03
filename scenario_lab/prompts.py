@@ -45,7 +45,15 @@ class PromptBuilder:
         }
         template_key = template_key_map.get(prompt_type, f"{prompt_type}_system")
 
-        # Check if scenario has custom prompt for this type
+        # For actor prompts, check for actor-specific custom prompt first
+        if prompt_type == "actor" and actor_id:
+            actor_specific_key = f"actor_{actor_id}"
+            if actor_specific_key in self.scenario.custom_system_prompts:
+                # Use actor-specific custom prompt and replace placeholders
+                prompt = self.scenario.custom_system_prompts[actor_specific_key]
+                return self._replace_placeholders(prompt, actor_id)
+
+        # Check if scenario has generic custom prompt for this type
         custom_key = prompt_type.replace("-", "_")
         if custom_key in self.scenario.custom_system_prompts:
             # Use custom prompt and replace placeholders
