@@ -226,6 +226,8 @@ class Orchestrator:
         print("\n[5/5] Updating historical summary...")
         new_historical_summary = self._run_summarization_step(narrative)
         print(f"  → Summary updated")
+        if self.output_manager:
+            self.output_manager.save_historical_summary(turn, new_historical_summary)
 
         # Update scenario state
         self._update_scenario_state(new_metrics, narrative, new_historical_summary, notepad, turn, time_period)

@@ -111,6 +111,16 @@ class OutputManager:
         turn_dir = self.get_turn_dir(turn)
         (turn_dir / "5-notepad.md").write_text(notepad, encoding="utf-8")
 
+    def save_historical_summary(self, turn: int, summary: str):
+        """Save historical summary immediately after generation.
+
+        Args:
+            turn: Turn number
+            summary: Historical summary content
+        """
+        turn_dir = self.get_turn_dir(turn)
+        (turn_dir / "6-historical-summary.md").write_text(summary, encoding="utf-8")
+
     def save_turn(self, result: TurnResult):
         """Save results from a single turn.
 
@@ -150,6 +160,10 @@ class OutputManager:
 
         # 6. Notepad
         (turn_dir / "5-notepad.md").write_text(result.notepad, encoding="utf-8")
+        
+        # 7. Historical Summary (if available in result, implied from WorldState in incremental)
+        # Note: TurnResult doesn't strictly have historical_summary field yet, but orchestrator manages it.
+        # We won't add it to save_turn strictly unless we update TurnResult, but standard flow is incremental.
 
     def update_summary(self, current_turn: int, latest_metrics: dict):
         """Update summary after each turn (incremental).
