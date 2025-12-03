@@ -181,6 +181,7 @@ class Scenario:
     context: str  # Background context
     notepad: str = ""  # Game Master notes that persist across turns
     custom_system_prompts: dict[str, str] = field(default_factory=dict)  # Optional scenario-specific system prompts
+    custom_user_prompts: dict[str, str] = field(default_factory=dict)  # Optional scenario-specific user prompts
 
     # History
     turn_history: list[TurnResult] = field(default_factory=list)

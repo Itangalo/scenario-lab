@@ -80,6 +80,9 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
     # Load custom system prompts if they exist
     custom_system_prompts = load_custom_system_prompts(scenario_dir, config.actor_ids)
 
+    # Load custom user prompts if they exist
+    custom_user_prompts = load_custom_user_prompts(scenario_dir)
+
     return Scenario(
         config=config,
         metrics=metrics,
@@ -89,7 +92,36 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
         world_state=world_state,
         context=context,
         custom_system_prompts=custom_system_prompts,
+        custom_user_prompts=custom_user_prompts,
     )
+
+
+def load_custom_user_prompts(scenario_dir: Path) -> dict[str, str]:
+    """Load scenario-specific user prompt templates if they exist.
+
+    Args:
+        scenario_dir: Path to scenario directory
+
+    Returns:
+        Dictionary mapping prompt name to content.
+        Keys: "events", "actor", "metric_rules", "metrics_update"
+    """
+    custom_prompts = {}
+    prompts_dir = scenario_dir / "user-prompts"
+
+    if not prompts_dir.exists():
+        return custom_prompts
+
+    prompt_files = ["events.md", "actor.md", "metric-rules.md", "metrics-update.md"]
+    for filename in prompt_files:
+        prompt_path = prompts_dir / filename
+        if prompt_path.exists():
+            # Use base name without extension as key and replace hyphens with underscores
+            # e.g., "metric-rules.md" -> "metric_rules"
+            key = filename.replace(".md", "").replace("-", "_")
+            custom_prompts[key] = prompt_path.read_text(encoding="utf-8")
+
+    return custom_prompts
 
 
 def load_custom_system_prompts(scenario_dir: Path, actor_ids: list[str]) -> dict[str, str]:

@@ -18,8 +18,8 @@ print(f"✓ Loaded: {scenario.config.name}")
 
 # Create mock LLM
 mock_responses = {
-    "events": '[{"id": "ai_breakthrough", "probability": 0.15}]',
-    "government": """## Mål
+    "potential external events": '[{"id": "ai_breakthrough", "probability": 0.15}]',
+    "Your Role": """## Mål
 
 * Öka AI-adoption i Sverige
 * Säkerställa arbetskraftens omställning
@@ -27,10 +27,10 @@ mock_responses = {
 ## Handlingar
 
 Regeringen lanserar ett omfattande AI-stödprogram för små och medelstora företag.""",
-    "metric-rules": """1. AI-capability ökar med 1 poäng per 6 månader
+    "assess whether Metric Rules should be updated": """1. AI-capability ökar med 1 poäng per 6 månader
 2. Om unemployment > 10 minskar public_sentiment_to_ai med 1
 3. Om ai_adoption_sweden ökar med mer än 5 poäng ökar unemployment med 1""",
-    "metrics": """## Metrics
+    "determine Metrics for the next turn": """## Metrics
 
 ```json
 {"ai_capability": 6, "ai_adoption_sweden": 48, "unemployment": 7, "public_sentiment_to_ai": 1}
