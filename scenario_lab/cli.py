@@ -46,6 +46,10 @@ def main():
     validate_parser = subparsers.add_parser("validate", help="Validate a scenario")
     validate_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
 
+    # Visualize command
+    viz_parser = subparsers.add_parser("visualize", help="Generate charts for a run")
+    viz_parser.add_argument("run_dir", type=Path, help="Path to run directory (e.g. scenarios/x/runs/run-123)")
+
     args = parser.parse_args()
 
     # Default to run if no command specified (backward compatibility)
@@ -53,6 +57,19 @@ def main():
         args.command = "run"
     elif args.command is None:
         parser.print_help()
+        return
+
+    if args.command == "visualize":
+        try:
+            # Import here to avoid dependency requirement for basic runs if plotly missing
+            from .visualizer import create_visualization
+            print(f"Generating visualization for: {args.run_dir}")
+            output_path = create_visualization(args.run_dir)
+            print(f"✅ Visualization saved to: {output_path}")
+        except ImportError:
+            print("❌ Error: 'plotly' not installed. Run 'pip install plotly' to use this feature.")
+        except Exception as e:
+            print(f"❌ Error generating visualization: {e}")
         return
 
     if args.command == "validate":

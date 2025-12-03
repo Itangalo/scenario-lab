@@ -161,16 +161,34 @@ class OutputManager:
         if not self.run_dir:
             raise RuntimeError("Must call start_run() first")
 
+        summary_path = self.run_dir / "summary.json"
+        
+        # Read existing summary to preserve history
+        history = []
+        if summary_path.exists():
+            try:
+                existing_summary = json.loads(summary_path.read_text())
+                history = existing_summary.get("history", [])
+            except json.JSONDecodeError:
+                pass
+
+        # Append new turn data
+        history.append({
+            "turn": current_turn,
+            "metrics": latest_metrics
+        })
+
         summary = {
             "scenario": self.scenario.config.name,
             "total_turns": current_turn,
             "final_metrics": latest_metrics,
+            "history": history,
             "occurred_events": list(self.scenario.occurred_events),
             "last_updated": datetime.now().isoformat(),
             "status": "running",
         }
 
-        (self.run_dir / "summary.json").write_text(
+        summary_path.write_text(
             json.dumps(summary, indent=2, ensure_ascii=False)
         )
 
@@ -183,10 +201,17 @@ class OutputManager:
         if not self.run_dir:
             raise RuntimeError("Must call start_run() first")
 
+        # Build complete history from results
+        history = [
+            {"turn": r.turn, "metrics": r.metrics}
+            for r in results
+        ]
+
         summary = {
             "scenario": self.scenario.config.name,
             "total_turns": len(results),
             "final_metrics": results[-1].metrics if results else {},
+            "history": history,
             "occurred_events": list(self.scenario.occurred_events),
             "completed_at": datetime.now().isoformat(),
             "status": "completed",
