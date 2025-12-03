@@ -315,11 +315,20 @@ def load_metrics(path: Path) -> Metrics:
 
         elif current_metric_id and line.startswith("- ") and ":" in line:
             # Reference point: "- 0: description"
-            if "referenspunkter" not in metric_data:
-                metric_data["referenspunkter"] = {}
+            # Check for either Swedish or English key
+            ref_key_swe = "referenspunkter"
+            ref_key_eng = "reference_points"
+            
+            if ref_key_swe not in metric_data and ref_key_eng not in metric_data:
+                # Default to English if neither exists (will be merged in create_metric)
+                metric_data[ref_key_eng] = {}
+            
+            # Use whichever key exists (or English if we just created it)
+            active_ref_key = ref_key_swe if ref_key_swe in metric_data else ref_key_eng
+            
             try:
                 ref_value, ref_desc = line[2:].split(":", 1)
-                metric_data["referenspunkter"][float(ref_value.strip())] = ref_desc.strip()
+                metric_data[active_ref_key][float(ref_value.strip())] = ref_desc.strip()
             except ValueError:
                 pass
 
@@ -332,14 +341,29 @@ def load_metrics(path: Path) -> Metrics:
 
 def create_metric(metric_id: str, data: dict) -> Metric:
     """Create a Metric from parsed data."""
+    # Handle bilingual keys (prefer Swedish for backward compat, fallback to English)
+    description = data.get("beskrivning") or data.get("description", "")
+    
+    # Value can be startvärde or value
+    value_str = data.get("startvärde") or data.get("value", "0")
+    value = float(value_str)
+    
+    min_val = float(data.get("min", 0))
+    max_val = float(data.get("max", 100))
+    
+    unit = data.get("enhet") or data.get("unit", "")
+    
+    # Reference points can be referenspunkter or reference_points
+    ref_points = data.get("referenspunkter") or data.get("reference_points", {})
+    
     return Metric(
         id=metric_id,
-        description=data.get("beskrivning", ""),
-        value=float(data.get("startvärde", 0)),
-        min_value=float(data.get("min", 0)),
-        max_value=float(data.get("max", 100)),
-        unit=data.get("enhet", ""),
-        reference_points=data.get("referenspunkter", {}),
+        description=description,
+        value=value,
+        min_value=min_val,
+        max_value=max_val,
+        unit=unit,
+        reference_points=ref_points,
     )
 
 
@@ -382,16 +406,23 @@ def load_events(path: Path) -> list[Event]:
 
 def create_event(data: dict) -> Event:
     """Create an Event from parsed data."""
-    can_repeat_str = data.get("kan upprepas", "nej").lower()
+    # Handle bilingual keys for can_repeat
+    can_repeat_str_swe = data.get("kan upprepas")
+    can_repeat_str_eng = data.get("can repeat")
+    
+    can_repeat_str = (can_repeat_str_swe or can_repeat_str_eng or "nej").lower()
     can_repeat = can_repeat_str in ["ja", "yes", "true"]
 
     # Handle probability - could be number or formula
-    probability = data.get("sannolikhet", "0")
+    probability = data.get("sannolikhet") or data.get("probability", "0")
+    
+    description = data.get("beskrivning") or data.get("description", "")
+    condition = data.get("villkor") or data.get("condition", "")
 
     return Event(
         id=data["id"],
-        description=data.get("beskrivning", ""),
-        condition=data.get("villkor", ""),
+        description=description,
+        condition=condition,
         probability=probability,
         can_repeat=can_repeat,
     )
@@ -417,12 +448,13 @@ def load_actor(path: Path, actor_id: str) -> Actor:
 
     for line in lines:
         line_stripped = line.strip()
+        line_lower = line_stripped.lower()
 
         if line_stripped.startswith("# "):
             name = line_stripped[2:].strip()
-        elif line_stripped.startswith("## Kort beskrivning"):
+        elif line_lower.startswith("## kort beskrivning") or line_lower.startswith("## short description"):
             current_section = "short"
-        elif line_stripped.startswith("## Längre beskrivning"):
+        elif line_lower.startswith("## längre beskrivning") or line_lower.startswith("## long description"):
             current_section = "long"
         elif line_stripped.startswith("##"):
             current_section = None

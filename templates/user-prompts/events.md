@@ -30,6 +30,10 @@ The list of potential external events looks like this:
 
 Use the background information to determine which external events can occur in this turn. If the probability is specified as a formula or description, you should calculate the actual value.
 
+IMPORTANT: For events with date-specific conditions (e.g., "September 2026 is included"), check if the current time period ({{time_period}}) covers that date.
+- If the current period is "January-June 2026", it does NOT cover September 2026.
+- If the current period is "July-December 2026", it DOES cover September 2026.
+
 Your response should be a JSON array with objects for each event whose conditions are met, in this format:
 
 ```json

@@ -150,6 +150,10 @@ class PromptBuilder:
             "notepad": notepad,
         }
         
+        # Add current month information if possible (simple parsing)
+        # This assumes time_period format like "January-June 2026" or "September 2026"
+        context["time_period_lower"] = time_period.lower()
+        
         # Add individual metrics as {{metric_ID}}
         for m_id, metric in self.scenario.metrics.metrics.items():
             # Sanitize ID for use as variable name
