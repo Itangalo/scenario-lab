@@ -55,6 +55,9 @@ python -m scenario_lab.cli scenarios/sweden-ai-2030 --model anthropic/claude-opu
 
 # Preview prompts without running (dry run)
 python -m scenario_lab.cli scenarios/sweden-ai-2030 --dry-run
+
+# Override configuration settings at runtime
+python -m scenario_lab.cli scenarios/sweden-ai-2030 --override output_language=Swedish --override llm.temperature=0.5
 ```
 
 ### Output
