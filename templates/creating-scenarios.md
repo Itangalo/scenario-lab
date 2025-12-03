@@ -316,6 +316,14 @@ Before running a scenario, validate the structure:
 4. **Metrics:** All referenced metrics are defined
 5. **Start values:** All metrics have valid start values
 
+**Automated Validation:**
+
+You can use the built-in validator to check for common errors:
+
+```bash
+python -m scenario_lab.cli validate scenarios/your-scenario
+```
+
 Manual validation checklist:
 - [ ] scenario.yaml has all required fields
 - [ ] All actor IDs in scenario.yaml have corresponding .md files

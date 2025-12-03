@@ -8,6 +8,7 @@ from .loader import load_scenario
 from .llm import LLMClient
 from .orchestrator import run_simulation
 from .output import OutputManager
+from .validator import validate_scenario
 
 
 def main():
@@ -17,27 +18,61 @@ def main():
     parser = argparse.ArgumentParser(
         description="Scenario Lab V4 - LLM-driven scenario simulation"
     )
-    parser.add_argument("scenario", type=Path, help="Path to scenario directory")
-    parser.add_argument(
+    
+    subparsers = parser.add_subparsers(dest="command", help="Command to run")
+
+    # Run command (default)
+    run_parser = subparsers.add_parser("run", help="Run a simulation")
+    run_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
+    run_parser.add_argument(
         "--turns",
         type=int,
         default=None,
         help="Number of turns to run (default: from config)",
     )
-    parser.add_argument(
+    run_parser.add_argument(
         "--model", type=str, default=None, help="Override LLM model"
     )
-    parser.add_argument(
+    run_parser.add_argument(
         "--dry-run", action="store_true", help="Print prompts without calling LLM"
     )
-    parser.add_argument(
+    run_parser.add_argument(
         "--override",
         action="append",
         help="Override scenario config (e.g. 'output_language=Swedish' or 'llm.temperature=0.5')",
     )
 
+    # Validate command
+    validate_parser = subparsers.add_parser("validate", help="Validate a scenario")
+    validate_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
+
     args = parser.parse_args()
 
+    # Default to run if no command specified (backward compatibility)
+    if args.command is None and hasattr(args, "scenario"):
+        args.command = "run"
+    elif args.command is None:
+        parser.print_help()
+        return
+
+    if args.command == "validate":
+        print(f"Validating scenario: {args.scenario}...")
+        result = validate_scenario(args.scenario)
+        
+        if result.errors:
+            print("\n❌ Validation FAILED with the following errors:")
+            for error in result.errors:
+                print(f"  - {error}")
+        else:
+            print("\n✅ Scenario is valid!")
+            
+        if result.warnings:
+            print("\n⚠️ Warnings:")
+            for warning in result.warnings:
+                print(f"  - {warning}")
+        return
+
+    # Run logic starts here
     # Load scenario
     print(f"Loading scenario from {args.scenario}...")
     scenario = load_scenario(args.scenario)
