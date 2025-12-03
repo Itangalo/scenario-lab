@@ -86,12 +86,12 @@ class LLMResponse:
 
         metrics = json.loads(metrics_match.group(1))
 
-        # Find ## Narrativ section (stop at ## Notepad if present)
+        # Find ## Narrative/Narrativ section (stop at ## Notepad if present)
         narrative_match = re.search(
-            r"##\s*Narrativ\s*\n+(.*?)(?=##\s*Notepad|\Z)", self.content, re.DOTALL | re.IGNORECASE
+            r"##\s*(Narrative|Narrativ)\s*\n+(.*?)(?=##\s*Notepad|\Z)", self.content, re.DOTALL | re.IGNORECASE
         )
 
-        narrative = narrative_match.group(1).strip() if narrative_match else ""
+        narrative = narrative_match.group(2).strip() if narrative_match else ""
 
         # Find ## Notepad section (optional)
         notepad_match = re.search(

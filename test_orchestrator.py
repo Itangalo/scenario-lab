@@ -14,32 +14,33 @@ print(f"  Events: {len(scenario.events)}")
 
 # Create mock LLM with responses for each step
 # Note: Metrics response format must match the regex in extract_metrics_and_narrative()
+# Keys must be unique phrases that only appear in ONE specific prompt type
 mock_responses = {
-    "events": '[{"id": "ai_breakthrough", "probability": 0.15}]',
-    "government": """## Mål
+    "list of potential external events looks like this": '[{"id": "ai_breakthrough", "probability": 0.15}]',
+    "which actions you want to take during the turn": """## Goals
 
-* Öka AI-adoption i Sverige
-* Säkerställa arbetskraftens omställning
+* Increase AI adoption in Sweden
+* Ensure workforce transition
 
-## Handlingar
+## Actions
 
-Regeringen lanserar ett omfattande AI-stödprogram för små och medelstora företag.""",
-    "metric-rules": """1. AI-capability ökar med 1 poäng per 6 månader
-2. Om unemployment > 10 minskar public_sentiment_to_ai med 1
-3. Om ai_adoption_sweden ökar med mer än 5 poäng ökar unemployment med 1""",
-    "metrics": """## Metrics
+The government launches a comprehensive AI support program for small and medium-sized enterprises.""",
+    "Respond with an updated list of Metric Rules": """1. ai_capability increases by 1 point per 6 months
+2. If unemployment > 10, public_sentiment_to_ai decreases by 1
+3. If ai_adoption_sweden increases by more than 5 points, unemployment increases by 1""",
+    "A JSON object describing all metrics": """## Metrics
 
 ```json
 {"ai_capability": 6, "ai_adoption_sweden": 48, "unemployment": 7, "public_sentiment_to_ai": 1}
 ```
 
-## Narrativ
+## Narrative
 
-Sverige genomgår en period av intensiv AI-adoption efter regeringens stödprogram. Små och medelstora företag börjar implementera AI-lösningar, vilket driver upp adoptionsgraden. Samtidigt syns tidiga tecken på oro på arbetsmarknaden när vissa rutinjobb automatiseras.
+Sweden undergoes a period of intense AI adoption following the government's support program. Small and medium-sized enterprises begin implementing AI solutions, driving up adoption rates. At the same time, early signs of concern appear in the labor market as certain routine jobs are automated.
 
 ## Notepad
 
-Regeringens AI-stödprogram lanserades under denna runda. Programmet förväntas pågå i minst 2 rundor.""",
+The government's AI support program was launched during this turn. The program is expected to continue for at least 2 turns.""",
 }
 
 mock_llm = MockLLMClient(mock_responses)
@@ -50,7 +51,16 @@ print("Running test turn...")
 print("="*60)
 
 orchestrator = Orchestrator(scenario, mock_llm)
-result = orchestrator.run_turn(1)
+try:
+    result = orchestrator.run_turn(1)
+except Exception as e:
+    print(f"\nError occurred: {e}")
+    print("\nMock LLM calls made:")
+    for i, (sys_prompt, user_prompt) in enumerate(mock_llm.calls):
+        print(f"\nCall {i+1}:")
+        print(f"System prompt (first 100 chars): {sys_prompt[:100]}")
+        print(f"User prompt (first 200 chars): {user_prompt[:200]}")
+    raise
 
 print("\n" + "="*60)
 print("TURN COMPLETE")

@@ -6,7 +6,7 @@ from .models import Scenario, Actor
 import json
 
 
-PROMPTS_DIR = Path(__file__).parent.parent / "prompts"
+TEMPLATES_DIR = Path(__file__).parent.parent / "templates"
 
 
 class PromptBuilder:
@@ -17,14 +17,84 @@ class PromptBuilder:
         self._load_templates()
 
     def _load_templates(self):
-        """Load all prompt templates."""
-        system_dir = PROMPTS_DIR / "system"
+        """Load all prompt templates from templates directory."""
+        system_dir = TEMPLATES_DIR / "system-prompts"
         self.templates = {
             "events_system": (system_dir / "events.md").read_text(encoding="utf-8"),
             "actor_system": (system_dir / "actor.md").read_text(encoding="utf-8"),
             "rules_system": (system_dir / "metric-rules.md").read_text(encoding="utf-8"),
             "metrics_system": (system_dir / "metrics-update.md").read_text(encoding="utf-8"),
         }
+
+    def _get_system_prompt(self, prompt_type: str, actor_id: Optional[str] = None) -> str:
+        """Get system prompt, preferring custom over template.
+
+        Args:
+            prompt_type: Type of prompt ("events", "actor", "metric_rules", "metrics_update")
+            actor_id: Optional actor ID for actor-specific prompts
+
+        Returns:
+            System prompt with placeholders replaced if custom
+        """
+        # Map prompt type to template key
+        template_key_map = {
+            "events": "events_system",
+            "actor": "actor_system",
+            "metric_rules": "rules_system",
+            "metrics_update": "metrics_system",
+        }
+        template_key = template_key_map.get(prompt_type, f"{prompt_type}_system")
+
+        # Check if scenario has custom prompt for this type
+        custom_key = prompt_type.replace("-", "_")
+        if custom_key in self.scenario.custom_system_prompts:
+            # Use custom prompt and replace placeholders
+            prompt = self.scenario.custom_system_prompts[custom_key]
+            return self._replace_placeholders(prompt, actor_id)
+
+        # Fall back to template (no placeholder replacement for templates)
+        return self.templates[template_key]
+
+    def _replace_placeholders(self, prompt: str, actor_id: Optional[str] = None) -> str:
+        """Replace placeholders in custom system prompts with scenario data.
+
+        Args:
+            prompt: Prompt text with placeholders
+            actor_id: Optional actor ID for actor-specific replacements
+
+        Returns:
+            Prompt with placeholders replaced
+        """
+        # Build actors list
+        actors_list = []
+        for aid, actor in self.scenario.actors.items():
+            actors_list.append(f"* {actor.name}: {actor.short_description}")
+        actors_text = "\n".join(actors_list)
+
+        # Build metrics list
+        metrics_list = []
+        for metric_id, metric in self.scenario.metrics.metrics.items():
+            metrics_list.append(f"* {metric_id}")
+            metrics_list.append(f"  * Description: {metric.description}")
+            metrics_list.append(f"  * Range: {metric.min_value} to {metric.max_value} {metric.unit}")
+            if metric.reference_points:
+                metrics_list.append("  * Reference points:")
+                for value, desc in sorted(metric.reference_points.items()):
+                    metrics_list.append(f"    - {value}: {desc}")
+        metrics_text = "\n".join(metrics_list)
+
+        # Replace placeholders
+        result = prompt.replace("{{scenario_description}}", self.scenario.config.description)
+        result = result.replace("{{actors_list}}", actors_text)
+        result = result.replace("{{metrics_list}}", metrics_text)
+
+        # Actor-specific replacements
+        if actor_id and actor_id in self.scenario.actors:
+            actor = self.scenario.actors[actor_id]
+            result = result.replace("{{actor_name}}", actor.name)
+            result = result.replace("{{actor_description}}", actor.long_description)
+
+        return result
 
     def build_events_prompt(self, turn: int) -> tuple[str, str]:
         """Build system and user prompts for events step.
@@ -34,20 +104,20 @@ class PromptBuilder:
         """
         time_period = self._get_time_period(turn)
 
-        # System prompt uses template as-is for now
-        system = self.templates["events_system"]
+        # Get system prompt (custom or template)
+        system = self._get_system_prompt("events")
 
         # Build user prompt
         user_parts = [
-            f"Det är nu runda {turn} som omfattar {time_period}.",
+            f"It is now turn {turn} which covers {time_period}.",
             "",
         ]
 
         # Add metrics history context
         if turn == 1:
-            user_parts.append("Detta är första rundan, så det finns ingen tidigare historik. Nuvarande metrics ser ut så här:")
+            user_parts.append("This is the first turn, so there is no previous history. Current metrics look like this:")
         else:
-            user_parts.append("Nuvarande metrics ser ut så här:")
+            user_parts.append("Current metrics look like this:")
 
         user_parts.append("")
         user_parts.append("```json")
@@ -56,7 +126,7 @@ class PromptBuilder:
         user_parts.append("")
 
         # Add world state
-        user_parts.append("Världens tillstånd vid start av rundan beskrivs så här:")
+        user_parts.append("The world state at the start of the turn is described as follows:")
         user_parts.append("")
         user_parts.append(self.scenario.world_state.narrative)
         user_parts.append("")
@@ -64,18 +134,18 @@ class PromptBuilder:
         user_parts.append("")
 
         # Add notepad
-        user_parts.append("Anteckningsblocket (Notepad) innehåller följande information:")
+        user_parts.append("The notepad contains the following information:")
         user_parts.append("")
         if self.scenario.notepad.strip():
             user_parts.append(self.scenario.notepad)
         else:
-            user_parts.append("(Tomt)")
+            user_parts.append("(Empty)")
         user_parts.append("")
         user_parts.append("---")
         user_parts.append("")
 
         # Add events list
-        user_parts.append("Listan över potentiella externa händelser ser ut så här:")
+        user_parts.append("The list of potential external events looks like this:")
         user_parts.append("")
         user_parts.append(self._format_events_list())
         user_parts.append("")
@@ -84,13 +154,13 @@ class PromptBuilder:
 
         # Add instruction
         user_parts.append(
-            "Använd bakgrundsinformationen för att avgöra vilka externa event som kan inträffa i den här rundan. "
-            "Om sannolikheten anges som en formel eller beskrivning, ska du beräkna det faktiska värdet."
+            "Use the background information to determine which external events can occur in this turn. "
+            "If the probability is specified as a formula or description, you should calculate the actual value."
         )
         user_parts.append("")
         user_parts.append(
-            "Ditt svar ska vara en JSON-array med objekt för varje händelse vars villkor är uppfyllt, "
-            "på det här formatet:"
+            "Your response should be a JSON array with objects for each event whose conditions are met, "
+            "in this format:"
         )
         user_parts.append("")
         user_parts.append("```json")
@@ -101,11 +171,11 @@ class PromptBuilder:
         user_parts.append("```")
         user_parts.append("")
         user_parts.append(
-            "Sannolikheten ska anges som ett värde mellan 0 och 1. "
-            "Om ingen händelse uppfyller villkoren ska du svara med en tom array: `[]`"
+            "The probability should be specified as a value between 0 and 1. "
+            "If no event meets the conditions, respond with an empty array: `[]`"
         )
         user_parts.append("")
-        user_parts.append("Svara *endast* med denna JSON-array, inget annat.")
+        user_parts.append("Respond *only* with this JSON array, nothing else.")
 
         user = "\n".join(user_parts)
         return system, user
@@ -126,17 +196,17 @@ class PromptBuilder:
         actor = self.scenario.actors[actor_id]
         time_period = self._get_time_period(turn)
 
-        # System prompt uses template as-is for now
-        system = self.templates["actor_system"]
+        # Get system prompt (custom or template)
+        system = self._get_system_prompt("actor", actor_id)
 
         # Build user prompt
         user_parts = [
-            f"Det är nu runda {turn} som omfattar {time_period}.",
+            f"It is now turn {turn} which covers {time_period}.",
             "",
         ]
 
         # Add metrics
-        user_parts.append("Nuvarande metrics ser ut så här:")
+        user_parts.append("Current metrics look like this:")
         user_parts.append("")
         user_parts.append("```json")
         user_parts.append(self.scenario.metrics.to_json())
@@ -144,7 +214,7 @@ class PromptBuilder:
         user_parts.append("")
 
         # Add world state
-        user_parts.append("Världens tillstånd vid start av rundan beskrivs så här:")
+        user_parts.append("The world state at the start of the turn is described as follows:")
         user_parts.append("")
         user_parts.append(self.scenario.world_state.narrative)
         user_parts.append("")
@@ -153,7 +223,7 @@ class PromptBuilder:
 
         # Add triggered events if any
         if triggered_events:
-            user_parts.append("Denna runda har följande externa händelser inträffat:")
+            user_parts.append("This turn, the following external events have occurred:")
             user_parts.append("")
             for event in triggered_events:
                 event_obj = next((e for e in self.scenario.events if e.id == event["id"]), None)
@@ -161,7 +231,7 @@ class PromptBuilder:
                     user_parts.append(f"**{event_obj.id}:** {event_obj.description}")
             user_parts.append("")
         else:
-            user_parts.append("Denna runda inträffar inga speciella händelser.")
+            user_parts.append("No special events occur this turn.")
             user_parts.append("")
 
         user_parts.append("---")
@@ -169,25 +239,25 @@ class PromptBuilder:
 
         # Add instruction
         user_parts.append(
-            "Använd bakgrundsinformationen för att avgöra om (1) dina mål bör justeras och "
-            "(2) vilka handlingar du vill utföra under rundan."
+            "Use the background information to determine (1) whether your goals should be adjusted and "
+            "(2) which actions you want to take during the turn."
         )
         user_parts.append("")
         user_parts.append(
-            "Handlingarna ska ligga i linje med dina mål och vara realistiska utifrån tid och andra resurser. "
-            "Dina handlingar kommer att bedömas av en Game Master, som avgör hur de påverkar världen. "
-            "Djärva åtgärder kan ha större inverkan, men också större risk att misslyckas."
+            "Actions should align with your goals and be realistic given time and other resources. "
+            "Your actions will be evaluated by a Game Master, who determines how they affect the world. "
+            "Bold actions can have greater impact, but also greater risk of failure."
         )
         user_parts.append("")
-        user_parts.append("Svara med en Markdown-text som innehåller följande delar:")
+        user_parts.append("Respond with a Markdown text containing the following sections:")
         user_parts.append("")
-        user_parts.append("* Rubrik nivå 2: Mål")
-        user_parts.append("* Kortfattad beskrivning av dina mål i en punktlista")
-        user_parts.append("* Eventuellt rubrik nivå 3: Anledning till ändringar (endast om målen ändrats)")
-        user_parts.append("* Kortfattad beskrivning av varför målen ändrats (endast om målen ändrats)")
-        user_parts.append("* Rubrik nivå 2: Handlingar")
+        user_parts.append("* Heading level 2: Goals")
+        user_parts.append("* Brief description of your goals in a bullet list")
+        user_parts.append("* Optional heading level 3: Reason for changes (only if goals changed)")
+        user_parts.append("* Brief description of why goals changed (only if goals changed)")
+        user_parts.append("* Heading level 2: Actions")
         user_parts.append(
-            "* Ett stycke för varje handling, som på lagom nivå beskriver varje handlingen du avser att genomföra under rundan."
+            "* One paragraph for each action, describing at an appropriate level each action you intend to carry out during the turn."
         )
 
         user = "\n".join(user_parts)
@@ -208,31 +278,31 @@ class PromptBuilder:
         """
         time_period = self._get_time_period(turn)
 
-        # System prompt uses template as-is
-        system = self.templates["rules_system"]
+        # Get system prompt (custom or template)
+        system = self._get_system_prompt("metric_rules")
 
         # Build user prompt
         user_parts = [
-            f"Det är nu runda {turn} som omfattar {time_period}.",
+            f"It is now turn {turn} which covers {time_period}.",
             "",
-            "Så här såg Metrics Rules ut (eventuellt uppdaterade):",
+            "The Metric Rules looked like this (possibly updated):",
             "",
             self.scenario.metric_rules,
             "",
-            "Världens tillstånd vid start av rundan beskrivs så här:",
+            "The world state at the start of the turn is described as follows:",
             "",
             self.scenario.world_state.narrative,
             "",
             "---",
             "",
-            "Anteckningsblocket (Notepad) innehåller följande information:",
+            "The notepad contains the following information:",
             "",
         ]
 
         if self.scenario.notepad.strip():
             user_parts.append(self.scenario.notepad)
         else:
-            user_parts.append("(Tomt)")
+            user_parts.append("(Empty)")
 
         user_parts.extend([
             "",
@@ -241,7 +311,7 @@ class PromptBuilder:
         ])
 
         # Add triggered events
-        user_parts.append("Denna runda har följande externa händelser inträffat:")
+        user_parts.append("This turn, the following external events have occurred:")
         user_parts.append("")
         if triggered_events:
             for event in triggered_events:
@@ -249,13 +319,13 @@ class PromptBuilder:
                 if event_obj:
                     user_parts.append(f"**{event_obj.id}:** {event_obj.description}")
         else:
-            user_parts.append("Inga")
+            user_parts.append("None")
         user_parts.append("")
         user_parts.append("---")
         user_parts.append("")
 
         # Add actor actions
-        user_parts.append("Aktörerna i scenariot beskriver sina handlingar så här:")
+        user_parts.append("The actors in the scenario describe their actions as follows:")
         user_parts.append("")
         for actor_id, actions in actor_actions.items():
             actor = self.scenario.actors[actor_id]
@@ -267,11 +337,11 @@ class PromptBuilder:
         user_parts.append("---")
         user_parts.append("")
         user_parts.append(
-            "Använd den här informationen för att bedöma om Metric Rules bör uppdateras baserat på "
-            "vad som hänt i världen och vad aktörerna gjort."
+            "Use this information to assess whether Metric Rules should be updated based on "
+            "what has happened in the world and what the actors have done."
         )
         user_parts.append("")
-        user_parts.append("Svara med en uppdaterad lista av Metric Rules i samma format som tidigare.")
+        user_parts.append("Respond with an updated list of Metric Rules in the same format as before.")
 
         user = "\n".join(user_parts)
         return system, user
@@ -291,31 +361,31 @@ class PromptBuilder:
         """
         time_period = self._get_time_period(turn)
 
-        # System prompt uses template as-is
-        system = self.templates["metrics_system"]
+        # Get system prompt (custom or template)
+        system = self._get_system_prompt("metrics_update")
 
         # Build user prompt
         user_parts = [
-            f"Det är nu runda {turn} som omfattar {time_period}.",
+            f"It is now turn {turn} which covers {time_period}.",
             "",
-            "Så här såg Metrics Rules ut (eventuellt uppdaterade):",
+            "The Metric Rules looked like this (possibly updated):",
             "",
             self.scenario.metric_rules,
             "",
-            "Världens tillstånd vid start av rundan beskrivs så här:",
+            "The world state at the start of the turn is described as follows:",
             "",
             self.scenario.world_state.narrative,
             "",
             "---",
             "",
-            "Anteckningsblocket (Notepad) innehåller följande information:",
+            "The notepad contains the following information:",
             "",
         ]
 
         if self.scenario.notepad.strip():
             user_parts.append(self.scenario.notepad)
         else:
-            user_parts.append("(Tomt)")
+            user_parts.append("(Empty)")
 
         user_parts.extend([
             "",
@@ -324,7 +394,7 @@ class PromptBuilder:
         ])
 
         # Add triggered events
-        user_parts.append("Denna runda har följande externa händelser inträffat:")
+        user_parts.append("This turn, the following external events have occurred:")
         user_parts.append("")
         if triggered_events:
             for event in triggered_events:
@@ -332,13 +402,13 @@ class PromptBuilder:
                 if event_obj:
                     user_parts.append(f"**{event_obj.id}:** {event_obj.description}")
         else:
-            user_parts.append("Inga")
+            user_parts.append("None")
         user_parts.append("")
         user_parts.append("---")
         user_parts.append("")
 
         # Add actor actions
-        user_parts.append("Aktörerna i scenariot beskriver sina handlingar så här:")
+        user_parts.append("The actors in the scenario describe their actions as follows:")
         user_parts.append("")
         for actor_id, actions in actor_actions.items():
             actor = self.scenario.actors[actor_id]
@@ -349,21 +419,21 @@ class PromptBuilder:
 
         user_parts.append("---")
         user_parts.append("")
-        user_parts.append("Använd den här informationen för att göra följande:")
+        user_parts.append("Use this information to do the following:")
         user_parts.append("")
         user_parts.append(
-            "* Avgöra hur framgångsrika aktörerna är med sina handlingar. "
-            "Detta baseras hur världen ser ut samt din bedömning av hur sannolikt det är att de lyckas."
+            "* Determine how successful the actors are with their actions. "
+            "This is based on how the world looks and your assessment of how likely they are to succeed."
         )
-        user_parts.append("* Utgå från aktörernas handlingar och Metric Rules för att bestämma Metrics inför nästa runda.")
-        user_parts.append("* Skriva en sammanhängande berättelse som berättar vad som händer i världen under den här rundan.")
+        user_parts.append("* Based on the actors' actions and Metric Rules, determine Metrics for the next turn.")
+        user_parts.append("* Write a coherent narrative that tells what happens in the world during this turn.")
         user_parts.append("")
-        user_parts.append("Svara med en Markdown-text med följande innehåll:")
+        user_parts.append("Respond with a Markdown text with the following content:")
         user_parts.append("")
-        user_parts.append("* Rubrik nivå 2: Metrics")
-        user_parts.append('* Ett JSON-objekt som beskriver samtliga metrics, i följande format: `{"metric1_name": value1, "metric2_name": value2}`')
-        user_parts.append("* Rubrik nivå 2: Narrativ")
-        user_parts.append("* En sammanhängande berättelse om vad som händer i världen under rundan (max 400 ord). Du kan använda underrubriker (nivå 3) om du önskar.")
+        user_parts.append("* Heading level 2: Metrics")
+        user_parts.append('* A JSON object describing all metrics, in the following format: `{"metric1_name": value1, "metric2_name": value2}`')
+        user_parts.append("* Heading level 2: Narrative")
+        user_parts.append("* A coherent story about what happens in the world during the turn (max 400 words). You may use subheadings (level 3) if desired.")
 
         user = "\n".join(user_parts)
         return system, user
@@ -378,10 +448,10 @@ class PromptBuilder:
 
             lines.append(f"**{event.id}**")
             lines.append(f"- ID: {event.id}")
-            lines.append(f"- Villkor: {event.condition}")
-            lines.append(f"- Sannolikhet: {event.probability}")
-            lines.append(f"- Kan upprepas: {'Ja' if event.can_repeat else 'Nej'}")
-            lines.append(f"- Beskrivning: {event.description}")
+            lines.append(f"- Condition: {event.condition}")
+            lines.append(f"- Probability: {event.probability}")
+            lines.append(f"- Can repeat: {'Yes' if event.can_repeat else 'No'}")
+            lines.append(f"- Description: {event.description}")
             lines.append("")
 
         return "\n".join(lines)

@@ -77,6 +77,9 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
         time_period=get_time_period(config.start_date, 0, config.time_scale),
     )
 
+    # Load custom system prompts if they exist
+    custom_system_prompts = load_custom_system_prompts(scenario_dir)
+
     return Scenario(
         config=config,
         metrics=metrics,
@@ -85,7 +88,35 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
         metric_rules=metric_rules,
         world_state=world_state,
         context=context,
+        custom_system_prompts=custom_system_prompts,
     )
+
+
+def load_custom_system_prompts(scenario_dir: Path) -> dict[str, str]:
+    """Load scenario-specific system prompts if they exist.
+
+    Args:
+        scenario_dir: Path to scenario directory
+
+    Returns:
+        Dictionary mapping prompt name to content (e.g., {"events": "...", "actor": "..."})
+    """
+    custom_prompts = {}
+    prompts_dir = scenario_dir / "system-prompts"
+
+    if not prompts_dir.exists():
+        return custom_prompts
+
+    # Load each optional system prompt file
+    prompt_files = ["events.md", "actor.md", "metric-rules.md", "metrics-update.md"]
+    for filename in prompt_files:
+        prompt_path = prompts_dir / filename
+        if prompt_path.exists():
+            # Use base name without extension as key (e.g., "events" for "events.md")
+            key = filename.replace(".md", "").replace("-", "_")
+            custom_prompts[key] = prompt_path.read_text(encoding="utf-8")
+
+    return custom_prompts
 
 
 def deep_merge(base: dict, override: dict) -> dict:
