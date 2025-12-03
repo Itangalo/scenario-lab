@@ -28,6 +28,13 @@ All 6 implementation phases finished:
 
 V3 is archived in the `v3-archive` tag.
 
+## Documentation
+
+The central ground truth for the system architecture and design is located in:
+[**docs/ARCHITECTURE.md**](docs/ARCHITECTURE.md)
+
+Please refer to this document before adding new functionality or modifying core components.
+
 ## Quick Start
 
 ### Installation
