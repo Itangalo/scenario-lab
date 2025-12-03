@@ -155,6 +155,7 @@ class ScenarioConfig:
     time_scale: str  # e.g., "6 months per turn"
     max_turns: int
     actor_ids: list[str]
+    output_language: Optional[str] = None
 
     # LLM settings
     llm: LLMConfig = None

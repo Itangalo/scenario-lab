@@ -148,6 +148,7 @@ class PromptBuilder:
             "metrics_json": metrics_json,
             "world_state": world_state,
             "notepad": notepad,
+            "output_language": self.scenario.config.output_language,
         }
         
         # Add current month information if possible (simple parsing)

@@ -229,6 +229,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                 "time_scale": base_config.time_scale,
                 "max_turns": base_config.max_turns,
                 "actors": base_config.actor_ids,
+                "output_language": base_config.output_language,
                 "llm": {
                     "events": base_config.llm.events,
                     "actors": base_config.llm.actors,
@@ -274,6 +275,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         time_scale=data["time_scale"],
         max_turns=data["max_turns"],
         actor_ids=data["actors"],
+        output_language=data.get("output_language"),
         llm=llm_config,
     )
 

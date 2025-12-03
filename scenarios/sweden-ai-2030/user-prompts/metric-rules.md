@@ -34,4 +34,8 @@ The actors in the scenario describe their actions as follows:
 
 Use this information to assess whether Metric Rules should be updated based on what has happened in the world and what the actors have done.
 
+{% if output_language %}
+Please write your response in {{output_language}}.
+{% endif %}
+
 Respond with an updated list of Metric Rules in the same format as before.

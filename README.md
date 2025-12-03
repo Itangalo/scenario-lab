@@ -192,6 +192,7 @@ max_turns: 10
 actors:
   - ActorName1
   - ActorName2
+output_language: "English" # Optional: Set the language for LLM-generated text
 ```
 
 ### 3. Metrics (YAML)

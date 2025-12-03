@@ -49,6 +49,9 @@ actors:
   - actor1_id
   - actor2_id
 
+output_language: "English" # Optional: The desired language for LLM-generated text responses (e.g., "Swedish", "Spanish").
+                          # If not specified, LLM will respond in the language of the prompt.
+
 llm:
   # Option 1: Single model for all tasks
   model: "anthropic/claude-sonnet-4"

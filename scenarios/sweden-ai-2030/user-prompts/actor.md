@@ -26,6 +26,10 @@ Use the background information to determine (1) whether your goals should be adj
 
 Actions should align with your goals and be realistic given time and other resources. Your actions will be evaluated by a Game Master, who determines how they affect the world. Bold actions can have greater impact, but also greater risk of failure.
 
+{% if output_language %}
+Please write your response in {{output_language}}.
+{% endif %}
+
 Respond with a Markdown text containing the following sections:
 
 * Heading level 2: Goals

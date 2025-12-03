@@ -38,6 +38,10 @@ Use this information to do the following:
 * Based on the actors' actions and Metric Rules, determine Metrics for the next turn.
 * Write a coherent narrative that tells what happens in the world during this turn.
 
+{% if output_language %}
+Please write your response in {{output_language}}.
+{% endif %}
+
 Respond with a Markdown text with the following content:
 
 * Heading level 2: Metrics
