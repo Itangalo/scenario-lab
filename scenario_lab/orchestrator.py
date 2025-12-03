@@ -151,11 +151,22 @@ class Orchestrator:
                 )
                 self._owned_clients.append(metrics_client)
 
+        # Create client for summary
+        # Use a simpler logic for summary: reuse events client if it matches, else create new
+        if self._models_match(config.summary, config.events):
+            summary_client = events_client
+        else:
+            summary_client = LLMClient(
+                model=config.summary, temperature=0.3, max_tokens=config.max_tokens  # Lower temp for summary
+            )
+            self._owned_clients.append(summary_client)
+
         return {
             "events": events_client,
             "actors": actor_clients,
             "rules": rules_client,
             "metrics": metrics_client,
+            "summary": summary_client,
         }
 
     def close(self):
@@ -183,19 +194,19 @@ class Orchestrator:
         print(f"{'='*60}")
 
         # Step 1: Determine events
-        print("\n[1/4] Determining external events...")
+        print("\n[1/5] Determining external events...")
         triggered_events = self._run_events_step(turn)
         print(f"  → {len(triggered_events)} events triggered")
         if self.output_manager:
             self.output_manager.save_events(turn, triggered_events)
 
         # Step 2: Get actor actions
-        print("\n[2/4] Getting actor actions...")
+        print("\n[2/5] Getting actor actions...")
         actor_outputs = self._run_actors_step(turn, triggered_events)
         print(f"  → {len(actor_outputs)} actors responded")
 
         # Step 3: Update metric rules
-        print("\n[3/4] Updating metric rules...")
+        print("\n[3/5] Updating metric rules...")
         new_rules = self._run_rules_step(turn, actor_outputs, triggered_events)
         self.scenario.metric_rules = new_rules
         print(f"  → Rules updated")
@@ -203,7 +214,7 @@ class Orchestrator:
             self.output_manager.save_metric_rules(turn, new_rules)
 
         # Step 4: Update metrics and generate narrative
-        print("\n[4/4] Updating metrics and generating narrative...")
+        print("\n[4/5] Updating metrics and generating narrative...")
         new_metrics, narrative, notepad = self._run_metrics_step(turn, actor_outputs, triggered_events)
         print(f"  → Metrics and narrative updated")
         if self.output_manager:
@@ -211,8 +222,13 @@ class Orchestrator:
             self.output_manager.save_notepad(turn, notepad)
             self.output_manager.update_summary(turn, new_metrics)
 
+        # Step 5: Update historical summary
+        print("\n[5/5] Updating historical summary...")
+        new_historical_summary = self._run_summarization_step(narrative)
+        print(f"  → Summary updated")
+
         # Update scenario state
-        self._update_scenario_state(new_metrics, narrative, notepad, turn, time_period)
+        self._update_scenario_state(new_metrics, narrative, new_historical_summary, notepad, turn, time_period)
 
         # Build and return result
         return TurnResult(
@@ -381,6 +397,24 @@ class Orchestrator:
 
         return metrics, narrative, notepad
 
+    def _run_summarization_step(self, current_narrative: str) -> str:
+        """Step 5: Update historical summary.
+
+        Args:
+            current_narrative: Narrative of the current turn
+
+        Returns:
+            Updated historical summary
+        """
+        current_summary = self.scenario.world_state.historical_summary
+        
+        # If no history yet, the current narrative becomes the start of history (or we summarize it immediately)
+        # For consistency, let's summarize even the first turn if it's long
+        
+        system, user = self.prompt_builder.build_summary_prompt(current_summary, current_narrative)
+        response = self.llm_clients["summary"].complete(system, user)
+        return response.content
+
     def _mark_event_occurred(self, event_id: str):
         """Mark event as occurred (for non-repeatable events)."""
         for event in self.scenario.events:
@@ -389,11 +423,12 @@ class Orchestrator:
                 self.scenario.occurred_events.add(event_id)
 
     def _update_scenario_state(
-        self, new_metrics: dict, narrative: str, notepad: str, turn: int, time_period: str
+        self, new_metrics: dict, narrative: str, historical_summary: str, notepad: str, turn: int, time_period: str
     ):
         """Update scenario with turn results."""
         self.scenario.metrics.update_from_dict(new_metrics)
         self.scenario.world_state.narrative = narrative
+        self.scenario.world_state.historical_summary = historical_summary
         self.scenario.notepad = notepad
         self.scenario.world_state.turn = turn
         self.scenario.world_state.time_period = time_period

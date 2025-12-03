@@ -27,6 +27,7 @@ class PromptBuilder:
             "actor_system": (system_dir / "actor.md").read_text(encoding="utf-8"),
             "rules_system": (system_dir / "metric-rules.md").read_text(encoding="utf-8"),
             "metrics_system": (system_dir / "metrics-update.md").read_text(encoding="utf-8"),
+            "summarize": (system_dir / "summarize.md").read_text(encoding="utf-8"),
         }
         
         self.user_templates = {
@@ -147,6 +148,7 @@ class PromptBuilder:
             "time_period": time_period,
             "metrics_json": metrics_json,
             "world_state": world_state,
+            "historical_summary": self.scenario.world_state.historical_summary,
             "notepad": notepad,
             "output_language": self.scenario.config.output_language,
         }
@@ -323,6 +325,25 @@ class PromptBuilder:
 
         # Render user prompt
         user = template.render(**context)
+        
+        return system, user
+
+    def build_summary_prompt(self, historical_summary: str, current_narrative: str) -> tuple[str, str]:
+        """Build prompts for summarization step.
+
+        Args:
+            historical_summary: Concise summary of previous turns
+            current_narrative: Narrative of the current turn
+
+        Returns:
+            (system_prompt, user_prompt)
+        """
+        system = self.system_templates["summarize"]
+        
+        user = (
+            f"HISTORICAL SUMMARY:\n{historical_summary}\n\n"
+            f"CURRENT NARRATIVE:\n{current_narrative}"
+        )
         
         return system, user
 

@@ -91,6 +91,7 @@ class WorldState:
     narrative: str
     turn: int
     time_period: str  # e.g., "January-June 2026"
+    historical_summary: str = ""  # Concise summary of previous turns
 
 
 @dataclass
@@ -122,6 +123,7 @@ class LLMConfig:
     actors: Union[str, List[str], dict] = "anthropic/claude-sonnet-4"  # actor_id -> model/list, or default
     rules: Union[str, List[str]] = "anthropic/claude-sonnet-4"
     metrics: Union[str, List[str]] = "anthropic/claude-sonnet-4"
+    summary: Union[str, List[str]] = "anthropic/claude-haiku-4"  # Default to cheap model for summarization
 
     # Global settings
     temperature: float = 0.7

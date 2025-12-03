@@ -6,6 +6,12 @@ The Metric Rules looked like this (possibly updated):
 
 The world state at the start of the turn is described as follows:
 
+{% if historical_summary %}
+## Previous History
+{{historical_summary}}
+{% endif %}
+
+## Current Situation ({{time_period_lower}})
 {{world_state}}
 
 ---

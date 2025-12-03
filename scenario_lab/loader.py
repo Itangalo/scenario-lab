@@ -264,6 +264,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             actors=llm_data.get("actors", "anthropic/claude-sonnet-4"),
             rules=llm_data.get("rules", "anthropic/claude-sonnet-4"),
             metrics=llm_data.get("metrics", "anthropic/claude-sonnet-4"),
+            summary=llm_data.get("summary", "anthropic/claude-haiku-4"),
             temperature=llm_data.get("temperature", 0.7),
             max_tokens=llm_data.get("max_tokens", 2000),
         )
