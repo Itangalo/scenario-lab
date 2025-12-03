@@ -76,6 +76,18 @@ scenarios/*/runs/run-YYYYMMDD-HHMMSS/
     └── 4-world-state.md     # Turn narrative
 ```
 
+## LLM Output Parsing Requirements
+
+For certain steps, the system expects specific Markdown headers in the LLM's response to correctly parse and extract information. It is crucial that these headers are used verbatim, even if the content of the response is in a different language.
+
+**Metrics Update Step:**
+The `metrics-update` prompt expects the following exact headers for parsing:
+*   `## Metrics` (followed by a JSON object)
+*   `## Narrative` (followed by the narrative text)
+*   `## Notepad` (optional, for persistent notes)
+
+These headers should not be translated by the LLM, regardless of the `output_language` setting.
+
 ## V4 Architecture
 
 ### Turn Loop

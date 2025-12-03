@@ -42,6 +42,8 @@ Use this information to do the following:
 Please write your response in {{output_language}}.
 {% endif %}
 
+Important: You must use the exact headers '## Metrics', '## Narrative', and '## Notepad' as specified below. Do not translate these headers, even if you are writing the content in another language.
+
 Respond with a Markdown text with the following content:
 
 * Heading level 2: Metrics
