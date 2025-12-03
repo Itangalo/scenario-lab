@@ -30,12 +30,70 @@ def main():
     parser.add_argument(
         "--dry-run", action="store_true", help="Print prompts without calling LLM"
     )
+    parser.add_argument(
+        "--override",
+        action="append",
+        help="Override scenario config (e.g. 'output_language=Swedish' or 'llm.temperature=0.5')",
+    )
 
     args = parser.parse_args()
 
     # Load scenario
     print(f"Loading scenario from {args.scenario}...")
     scenario = load_scenario(args.scenario)
+    
+    # Apply overrides
+    if args.override:
+        for override in args.override:
+            if "=" not in override:
+                print(f"Warning: Invalid override format '{override}', skipping. Use 'key=value'.")
+                continue
+            
+            key_path, value = override.split("=", 1)
+            keys = key_path.split(".")
+            
+            # Try to convert value to int/float/bool
+            if value.lower() == "true":
+                value = True
+            elif value.lower() == "false":
+                value = False
+            else:
+                try:
+                    if "." in value:
+                        value = float(value)
+                    else:
+                        value = int(value)
+                except ValueError:
+                    pass  # Keep as string
+            
+            # Navigate to the correct object
+            target = scenario.config
+            for i, key in enumerate(keys[:-1]):
+                if hasattr(target, key):
+                    target = getattr(target, key)
+                elif isinstance(target, dict) and key in target:
+                    target = target[key]
+                else:
+                    print(f"Warning: Could not find key '{key}' in path '{key_path}', skipping override.")
+                    target = None
+                    break
+            
+            if target is not None:
+                last_key = keys[-1]
+                if hasattr(target, last_key):
+                    setattr(target, last_key, value)
+                    print(f"  → Overrode {key_path} = {value}")
+                elif isinstance(target, dict):
+                    target[last_key] = value
+                    print(f"  → Overrode {key_path} = {value}")
+                else:
+                    # Special case for ScenarioConfig fields that might not be dicts but we want to set attr
+                    try:
+                        setattr(target, last_key, value)
+                        print(f"  → Overrode {key_path} = {value}")
+                    except Exception as e:
+                        print(f"Warning: Could not set '{last_key}' on {type(target)}: {e}")
+
     print(f"✓ Loaded: {scenario.config.name}")
     print(f"  Actors: {len(scenario.actors)}")
     print(f"  Metrics: {len(scenario.metrics.metrics)}")
