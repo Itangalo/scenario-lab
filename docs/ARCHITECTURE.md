@@ -25,7 +25,10 @@ V4 represents a radical simplification from previous versions. Instead of comple
 -   **Evolution:** The LLM reviews and updates these rules *every turn* based on world events. This allows the "physics" of the simulation to evolve.
 
 ### World State
--   **Definition:** A narrative description of what happened during the turn.
+-   **Definition:** A narrative description of what happened during the turn, plus a persistent summary of history.
+-   **Components:**
+    *   `narrative`: Detailed description of the *current* turn.
+    *   `historical_summary`: Concise summary of all *previous* turns.
 -   **Purpose:** It serves as the shared context for all actors in the next turn. There is no information asymmetry; all actors see the same world state.
 
 ### Actors
@@ -40,6 +43,7 @@ V4 represents a radical simplification from previous versions. Instead of comple
 
 ### File Structure & Loading (`loader.py`)
 -   **`scenario.yaml`**: Configuration (time scale, actors, LLM settings, output language).
+    *   **LLM Settings:** Now includes `summary` model configuration alongside `events`, `actors`, `rules`, and `metrics`.
 -   **Markdown Resources**: `metrics.md`, `events.md`, `metric-rules.md`, `background/*.md`.
 -   **Inheritance:** Scenarios can inherit from others via the `base` field in `scenario.yaml`.
 -   **Bilingual Support:** The loader supports both English and Swedish keys for metrics and events to maintain backward compatibility.
@@ -48,12 +52,12 @@ V4 represents a radical simplification from previous versions. Instead of comple
 Each turn executes the following steps in order:
 
 1.  **Events Step**:
-    *   **Input:** World state, current metrics, list of potential events.
+    *   **Input:** World state (history + current), current metrics, list of potential events.
     *   **LLM Task:** Determine which events meet their conditions and calculate their probabilities.
     *   **Python Action:** Parse JSON response, roll dice for probabilities, determine triggered events.
 
 2.  **Actors Step**:
-    *   **Input:** World state, metrics, triggered events.
+    *   **Input:** World state (history + current), metrics, triggered events.
     *   **LLM Task:** For *each* actor, review goals and describe actions for the turn.
     *   **Parallelization:** Actor prompts are independent and can be executed in parallel (though currently sequential in implementation).
 
@@ -69,6 +73,11 @@ Each turn executes the following steps in order:
         *   Write a narrative summary of the turn.
         *   Update the "Notepad" (persistent game master notes).
     *   **Output Parsing:** Requires verbatim headers (`## Metrics`, `## Narrative`, `## Notepad`) for reliable parsing.
+
+5.  **Summarization Step**:
+    *   **Input:** Current `historical_summary` and the new `narrative` from Step 4.
+    *   **LLM Task:** Condense the new narrative and append it to the historical summary, keeping the total length manageable.
+    *   **Purpose:** Prevent context window explosion over long simulations.
 
 ### Prompt Engineering (`prompts.py` & Templates)
 -   **Jinja2 Templates:** All prompts are generated using Jinja2 templates located in `templates/user-prompts/` or scenario-specific overrides in `scenarios/{name}/user-prompts/`.
