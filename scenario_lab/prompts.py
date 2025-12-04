@@ -35,6 +35,7 @@ class PromptBuilder:
             "actor": (user_dir / "actor.md").read_text(encoding="utf-8"),
             "metric_rules": (user_dir / "metric-rules.md").read_text(encoding="utf-8"),
             "metrics_update": (user_dir / "metrics-update.md").read_text(encoding="utf-8"),
+            "summarize": (user_dir / "summarize.md").read_text(encoding="utf-8"),
         }
 
     def _get_system_prompt(self, prompt_type: str, actor_id: Optional[str] = None) -> str:
@@ -340,10 +341,17 @@ class PromptBuilder:
         """
         system = self.system_templates["summarize"]
         
-        user = (
-            f"HISTORICAL SUMMARY:\n{historical_summary}\n\n"
-            f"CURRENT NARRATIVE:\n{current_narrative}"
-        )
+        # Get user template
+        template = self._get_user_template("summarize")
+        
+        # Build context
+        context = {
+            "historical_summary": historical_summary,
+            "current_narrative": current_narrative,
+            "output_language": self.scenario.config.output_language, # Pass output language to summary prompt
+        }
+
+        user = template.render(**context)
         
         return system, user
 
