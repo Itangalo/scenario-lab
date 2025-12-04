@@ -106,3 +106,4 @@ Each turn executes the following steps in order:
 -   **New Features:** Must not break the "Pure LLM" philosophy. Avoid adding game logic to Python.
 -   **Prompts:** Modify templates, not Python code, whenever possible.
 -   **Backwards Compatibility:** Maintain support for existing scenarios (e.g., `sweden-ai-2030`) when changing data models.
+-   **Language:** Both code and scenarios should be written in English. Code comments, documentation, scenario files (YAML, Markdown), and all technical content should use English for consistency and broader accessibility.

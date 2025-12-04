@@ -1,14 +1,14 @@
 # AI 2027: The Recursive Horizon
 
-## Översikt
-En simulering av de kritiska åren 2025–2030 där USA och Kina kapplöper mot artificiell generell intelligens (AGI) och superintelligens (ASI). Kärnan i scenariot är det strategiska dilemmat mellan att vara först (hastighet) och att överleva (säkerhet).
+## Overview
+A simulation of the critical years 2025–2030 where USA and China race toward artificial general intelligence (AGI) and superintelligence (ASI). The core of the scenario is the strategic dilemma between being first (speed) and surviving (safety).
 
-## Utgångsläge (Juli 2025)
-Världen står på tröskeln till en AI-explosion. GPT-5 och dess motsvarigheter har visat att skalningslagarna håller. USA har ett massivt försprång i hårdvara (Compute), men Kina satsar allt på att komma ikapp genom spionage, asymmetriska metoder och statlig centralisering.
+## Starting Point (July 2025)
+The world stands on the threshold of an AI explosion. GPT-5 and its counterparts have shown that scaling laws hold. The USA has a massive lead in hardware (Compute), but China is betting everything on catching up through espionage, asymmetric methods, and state centralization.
 
-AI-modellerna är just nu "Unreliable Agents" (Nivå 1) – imponerande men inte kapabla att ersätta mänsklig arbetskraft på bred front.
+AI models are currently "Unreliable Agents" (Level 1) – impressive but not capable of replacing human labor on a broad scale.
 
-## Nyckelfaktorer
-* **Recursive Self-Improvement (RSI):** Den punkt då AI:n blir bra nog att forska fram bättre AI snabbare än människor. Detta är "händelsehorisonten".
-* **Alignment-problemet:** Kan vi kontrollera något som är smartare än oss? Om säkerhetsarbetet halkar efter kapaciteten, ökar risken för katastrof.
-* **Geopolitik:** Relationen mellan USA och Kina är extremt spänd. Halvledare är den nya oljan.
+## Key Factors
+* **Recursive Self-Improvement (RSI):** The point where AI becomes good enough to research better AI faster than humans. This is the "event horizon".
+* **The alignment problem:** Can we control something smarter than us? If safety work lags behind capability, the risk of catastrophe increases.
+* **Geopolitics:** The relationship between USA and China is extremely tense. Semiconductors are the new oil.

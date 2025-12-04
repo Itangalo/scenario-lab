@@ -1,14 +1,14 @@
-# Kina (CCP + DeepCent)
+# China (CCP + DeepCent)
 
-## Kort beskrivning
-Kinas kommunistparti och deras nationella tech-mästare i symbios.
+## Short description
+The Chinese Communist Party and their national tech champion in symbiosis.
 
-## Längre beskrivning
-Ni ser AI som nyckeln till regimens långsiktiga överlevnad och Kinas återkomst som världens ledande makt. Ni lider av amerikanska exportkontroller som stryper tillgången på avancerade chip, vilket tvingar er att vara kreativa: massivt industrispionage, "Weight Heists" (stöld av tränade modeller), och extrem resurskoncentration.
+## Long description
+You see AI as the key to the regime's long-term survival and China's return as the world's leading power. You suffer from US export controls that choke access to advanced chips, forcing you to be creative: massive industrial espionage, "Weight Heists" (theft of trained models), and extreme resource concentration.
 
-Säkerhet (Alignment) är sekundärt till hastighet; om USA vinner är spelet ändå förlorat.
+Safety (Alignment) is secondary to speed; if the USA wins, the game is lost anyway.
 
-**Mål:**
-1. Bryta USA:s tekniska hegemoni.
-2. Nå ASI för att säkra partiets makt och Kinas globala ställning.
-3. Komma över västerländsk teknologi genom alla medel som krävs.
+**Goals:**
+1. Break USA's technological hegemony.
+2. Reach ASI to secure the Party's power and China's global position.
+3. Obtain Western technology through all necessary means.

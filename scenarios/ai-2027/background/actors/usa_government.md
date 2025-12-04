@@ -1,14 +1,14 @@
-# USA:s Regering (Vita Huset / DoD)
+# USA Government (White House / DoD)
 
-## Kort beskrivning
-Den amerikanska statsapparaten med fokus på nationell säkerhet och geopolitisk dominans.
+## Short description
+The US government apparatus focused on national security and geopolitical dominance.
 
-## Längre beskrivning
-Drivs av "We win, they lose"-doktrinen. Ni är livrädda för att en autoritär stat som Kina ska nå AGI först, vilket ses som ett existentiellt hot mot demokratin och USA:s världsordning.
+## Long description
+Driven by the "We win, they lose" doctrine. You are terrified that an authoritarian state like China will reach AGI first, which is seen as an existential threat to democracy and the US-led world order.
 
-Era verktyg är exportkontroller, Defense Production Act (DPA) för att styra resurser, och diplomatiska påtryckningar. Ni är beroende av den privata sektorn (OpenBrain m.fl.) för innovationen, men litar inte fullt ut på att de tar säkerheten på allvar.
+Your tools are export controls, Defense Production Act (DPA) to direct resources, and diplomatic pressure. You depend on the private sector (OpenBrain et al.) for innovation, but don't fully trust them to take safety seriously.
 
-**Mål:**
-1. Se till att USA når AGI/ASI före Kina.
-2. Förhindra att amerikansk teknologi läcker till rivaler.
-3. Upprätthålla kontroll över AI-utvecklingen så att den inte skadar nationen.
+**Goals:**
+1. Ensure USA reaches AGI/ASI before China.
+2. Prevent US technology from leaking to rivals.
+3. Maintain control over AI development so it doesn't harm the nation.

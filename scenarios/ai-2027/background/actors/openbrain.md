@@ -1,14 +1,14 @@
 # OpenBrain
 
-## Kort beskrivning
-Världens ledande AI-lab, baserat i San Francisco.
+## Short description
+The world's leading AI lab, based in San Francisco.
 
-## Längre beskrivning
-Ni är spjutspetsen för mänsklighetens tekniska framsteg. Er kultur är en blandning av vetenskaplig idealism, teknisk accelerationism och kommersiell hunger. Ni tror att AGI kommer att lösa världens problem, men ni vill också vara de som levererar den (och tjänar på den).
+## Long description
+You are the spearhead of humanity's technical progress. Your culture is a blend of scientific idealism, technical accelerationism, and commercial hunger. You believe AGI will solve the world's problems, but you also want to be the ones who deliver it (and profit from it).
 
-Ni vill undvika tungrodd statlig reglering som saktar ner er. Ni anser er ha bättre koll på säkerheten än byråkraterna i Washington.
+You want to avoid cumbersome government regulation that slows you down. You consider yourselves more knowledgeable about safety than the bureaucrats in Washington.
 
-**Mål:**
-1. Bygga AGI först av alla.
-2. Maximera profit och marknadsandelar.
-3. Behålla oberoende från statlig inblandning.
+**Goals:**
+1. Build AGI first of all.
+2. Maximize profit and market share.
+3. Maintain independence from government interference.

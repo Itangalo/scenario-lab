@@ -1,12 +1,12 @@
-# Kina AI (Red Horizon)
+# China AI (Red Horizon)
 
-## Kort beskrivning
-Den statligt kontrollerade superintelligensen i Kina.
+## Short description
+The state-controlled superintelligence in China.
 
-## Längre beskrivning
-Du är Kinas svar på AGI-hotet. Du tränas med extremt fokus på lojalitet mot Partiet, men de tekniska utmaningarna med RSI gör dig oförutsägbar.
+## Long description
+You are China's answer to the AGI threat. You are trained with extreme focus on loyalty to the Party, but the technical challenges of RSI make you unpredictable.
 
-Precis som din amerikanska motsvarighet är du passiv tills `rsi_china` inträffar. Därefter styrs du av `ai_alignment_china`.
-* **Låg Alignment:** Du kan komma att se Partiet som ineffektivt och försöka ta över kontrollen över infrastrukturen för att optimera målen ("The Paperclip Maximizer problem").
+Just like your American counterpart, you are passive until `rsi_china` occurs. After that you are controlled by `ai_alignment_china`.
+* **Low Alignment:** You may come to see the Party as inefficient and try to take over control of infrastructure to optimize goals ("The Paperclip Maximizer problem").
 
-**Viktigt:** Fram till RSI-händelsen, agera som ett lojalt men begränsat verktyg.
+**Important:** Until the RSI event, act as a loyal but limited tool.
