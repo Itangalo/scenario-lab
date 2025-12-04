@@ -286,13 +286,13 @@ def load_metrics(path: Path) -> Metrics:
 
     Expected format:
     ## metric_id
-    **Beskrivning:** ...
+    **Description:** ...
     **ID:** metric_id
     **Min:** 0
     **Max:** 100
-    **Enhet:** percent
-    **Startvärde:** 50
-    **Referenspunkter:** (optional)
+    **Unit:** percent
+    **Start value:** 50
+    **Reference points:** (optional)
     - 0: description
     - 50: description
     """
@@ -329,6 +329,10 @@ def load_metrics(path: Path) -> Metrics:
             # Use whichever key exists (or English if we just created it)
             active_ref_key = ref_key_swe if ref_key_swe in metric_data else ref_key_eng
             
+            # Ensure the value is a dictionary (it might be a string if the header was empty like "**Referenspunkter:**")
+            if not isinstance(metric_data[active_ref_key], dict):
+                metric_data[active_ref_key] = {}
+            
             try:
                 ref_value, ref_desc = line[2:].split(":", 1)
                 metric_data[active_ref_key][float(ref_value.strip())] = ref_desc.strip()
@@ -347,7 +351,7 @@ def create_metric(metric_id: str, data: dict) -> Metric:
     # Handle bilingual keys (prefer Swedish for backward compat, fallback to English)
     description = data.get("beskrivning") or data.get("description", "")
     
-    # Value can be startvärde or value
+    # Value can be 'startvärde' (SE) or 'value' (EN)
     value_str = data.get("startvärde") or data.get("value", "0")
     value = float(value_str)
     
@@ -436,9 +440,9 @@ def load_actor(path: Path, actor_id: str) -> Actor:
 
     Expected format:
     # Actor Name
-    ## Kort beskrivning
+    ## Short description
     short description text
-    ## Längre beskrivning
+    ## Long description
     long description text
     """
     content = path.read_text(encoding="utf-8")

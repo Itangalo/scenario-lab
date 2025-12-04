@@ -246,7 +246,7 @@ class MockLLMClient:
         """
         Args:
             responses: Dict mapping prompt substrings to response content.
-                      Example: {"events": "[{...}]", "government": "## Mål\\n..."}
+                      Example: {"events": "[{...}]", "government": "## Goals\\n..."}
         """
         self.responses = responses
         self.calls: list[tuple[str, str]] = []
