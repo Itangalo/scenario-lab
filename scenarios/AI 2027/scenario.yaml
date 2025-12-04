@@ -1,0 +1,19 @@
+name: "AI 2027: The Recursive Horizon"
+description: "En simulering av kapplöpningen mot AGI och ASI mellan USA och Kina, med fokus på balansen mellan hastighet och säkerhet."
+start_date: "2025-07"
+time_scale: "6 months per turn"
+max_turns: 11
+output_language: "Swedish"
+
+actors:
+  - usa_government
+  - openbrain
+  - china
+  - ai_usa
+  - ai_china
+
+llm:
+  # Använder Sonnet för resonemang, men kan överridas
+  model: "anthropic/claude-sonnet-4"
+  temperature: 0.7
+  max_tokens: 2000
