@@ -143,7 +143,7 @@ def load_custom_system_prompts(scenario_dir: Path, actor_ids: list[str]) -> dict
         return custom_prompts
 
     # Load non-actor system prompt files
-    prompt_files = ["events.md", "metric-rules.md", "metrics-update.md"]
+    prompt_files = ["events.md", "metric-rules.md", "metrics-update.md", "actor.md"]
     for filename in prompt_files:
         prompt_path = prompts_dir / filename
         if prompt_path.exists():

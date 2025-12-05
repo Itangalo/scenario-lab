@@ -72,8 +72,8 @@ class PromptBuilder:
             prompt = self.scenario.custom_system_prompts[custom_key]
             return self._replace_placeholders(prompt, actor_id)
 
-        # Fall back to template (no placeholder replacement for templates)
-        return self.system_templates[template_key]
+        # Fall back to template
+        return self._replace_placeholders(self.system_templates[template_key], actor_id)
 
     def _get_user_template(self, prompt_type: str) -> Template:
         """Get user prompt template, preferring custom over default.
