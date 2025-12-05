@@ -112,3 +112,45 @@ def test_crash_preservation(test_scenario, mock_llm_client, tmp_path):
     turn1_dir = run_dir / "turn-01"
     assert turn1_dir.exists()
     assert (turn1_dir / "4-metrics.json").exists()
+
+def test_output_content(test_scenario, mock_llm_client, tmp_path):
+    """Test that written files contain correct data."""
+    output = OutputManager(test_scenario, tmp_path)
+    run_dir = output.start_run()
+    
+    results = run_simulation(test_scenario, mock_llm_client, num_turns=1, output_manager=output)
+    output.finalize_summary(results)
+    
+    turn1_dir = run_dir / "turn-01"
+    
+    # Check metrics.json content
+    metrics_file = turn1_dir / "4-metrics.json"
+    data = json.loads(metrics_file.read_text())
+    assert data["ai_capability"] == 6
+    assert data["ai_adoption_sweden"] == 48
+    
+    # Check world-state.md content
+    ws_file = turn1_dir / "4-world-state.md"
+    content = ws_file.read_text()
+    # World state file only saves the narrative part, not the full LLM output
+    assert "Sweden undergoes a period" in content
+
+def test_output_write_error(test_scenario, mock_llm_client, tmp_path):
+    """Test graceful handling of write errors."""
+    output = OutputManager(test_scenario, tmp_path)
+    run_dir = output.start_run()
+    
+    # Make turn directory read-only to force write error
+    turn1_dir = run_dir / "turn-01"
+    turn1_dir.mkdir()
+    turn1_dir.chmod(0o444) # Read-only
+    
+    try:
+        # Should likely raise PermissionError or similar, 
+        # or handle it gracefully depending on implementation.
+        # If implementation raises, we catch it.
+        with pytest.raises(PermissionError):
+            run_simulation(test_scenario, mock_llm_client, num_turns=1, output_manager=output)
+    finally:
+        # Cleanup: restore permissions so pytest can delete tmp_path
+        turn1_dir.chmod(0o777)
