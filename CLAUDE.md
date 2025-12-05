@@ -198,6 +198,8 @@ Scenario exploring AI development in Sweden 2026-2030.
 
 ## CLI Usage
 
+### Running Simulations
+
 ```bash
 # Run simulation
 python -m scenario_lab.cli scenarios/sweden-ai-2030
@@ -214,6 +216,67 @@ python -m scenario_lab.cli scenarios/sweden-ai-2030 --dry-run
 # Use variant
 python -m scenario_lab.cli scenarios/sweden-ai-2030/variants/cheap-with-fallback.yaml
 ```
+
+### Resume and Branch (Issue #129)
+
+**Resume:** Continue interrupted or completed runs from the same directory
+
+```bash
+# Resume from last completed turn
+python -m scenario_lab.cli resume scenarios/sweden-ai-2030/runs/run-20251205-120000
+
+# Resume from specific turn
+python -m scenario_lab.cli resume scenarios/sweden-ai-2030/runs/run-20251205-120000 --from-turn 3
+
+# Resume with different model
+python -m scenario_lab.cli resume scenarios/sweden-ai-2030/runs/run-20251205-120000 --model anthropic/claude-opus-4
+
+# Resume and run to turn 10
+python -m scenario_lab.cli resume scenarios/sweden-ai-2030/runs/run-20251205-120000 --turns 10
+
+# Resume with config overrides
+python -m scenario_lab.cli resume scenarios/sweden-ai-2030/runs/run-20251205-120000 --override llm.temperature=0.3
+```
+
+**Branch:** Create "what-if" scenarios by branching from a specific turn
+
+```bash
+# Branch from turn 3
+python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-20251205-120000 --from-turn 3
+
+# Branch with modified metrics (what-if scenarios)
+python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-20251205-120000 \
+  --from-turn 3 \
+  --modify-metric ai_capability=150 \
+  --modify-metric unemployment=10.0
+
+# Branch with different model
+python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-20251205-120000 \
+  --from-turn 3 \
+  --model anthropic/claude-opus-4
+
+# Branch with modified narrative
+python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-20251205-120000 \
+  --from-turn 3 \
+  --modify-narrative "A major AI breakthrough has occurred..."
+
+# Branch with config overrides
+python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-20251205-120000 \
+  --from-turn 3 \
+  --override llm.temperature=0.9 \
+  --turns 5
+```
+
+**Use Cases:**
+
+- **Resume:** Interrupted simulations, extend completed runs, continue with different/better models
+- **Branch:** Explore alternate scenarios, test sensitivity to initial conditions, compare outcomes with different LLM models
+
+**Metadata Tracking:**
+
+- Resume updates `summary.json` with `resumed_at` and `resumed_from_turn`
+- Branch creates new run directory with `parent_run`, `branch_turn`, and `state_modifications` in metadata
+- Both preserve full lineage for analysis and reproducibility
 
 ## Development Guidelines
 

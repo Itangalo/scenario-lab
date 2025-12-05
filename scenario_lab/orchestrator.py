@@ -442,6 +442,7 @@ def run_simulation(
     llm_client: Optional[Union[LLMClientProtocol, dict[str, LLMClientProtocol]]] = None,
     num_turns: int = None,
     output_manager: Optional["OutputManager"] = None,
+    start_turn: int = 1,
 ) -> list[TurnResult]:
     """Run a complete simulation.
 
@@ -453,6 +454,7 @@ def run_simulation(
             - None (creates clients based on scenario.config.llm)
         num_turns: Number of turns to run (default: from config)
         output_manager: Optional OutputManager for incremental writing
+        start_turn: Turn number to start from (default: 1, for resume: N+1)
 
     Returns:
         List of TurnResults
@@ -462,7 +464,7 @@ def run_simulation(
     results = []
 
     try:
-        for turn in range(1, max_turns + 1):
+        for turn in range(start_turn, max_turns + 1):
             result = orchestrator.run_turn(turn)
             results.append(result)
             scenario.turn_history.append(result)

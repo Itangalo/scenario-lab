@@ -1,0 +1,370 @@
+"""Resume and branch functionality for loading run state from disk."""
+
+import json
+import shutil
+from pathlib import Path
+from typing import Optional, Tuple
+from datetime import datetime
+
+from .models import Scenario
+from .loader import load_scenario, get_time_period
+
+
+def detect_last_turn(run_dir: Path) -> int:
+    """Detect the last completed turn in a run directory.
+
+    Args:
+        run_dir: Path to run directory
+
+    Returns:
+        Turn number (0 if no turns completed, N for highest turn-NN directory with complete files)
+
+    Raises:
+        ValueError: If run directory doesn't exist or is invalid
+    """
+    if not run_dir.exists():
+        raise ValueError(f"Run directory does not exist: {run_dir}")
+
+    if not run_dir.is_dir():
+        raise ValueError(f"Path is not a directory: {run_dir}")
+
+    # Find all turn directories
+    turn_dirs = sorted([d for d in run_dir.iterdir() if d.is_dir() and d.name.startswith("turn-")])
+
+    if not turn_dirs:
+        return 0
+
+    # Check each turn directory in reverse order (highest first)
+    for turn_dir in reversed(turn_dirs):
+        turn_num = int(turn_dir.name.split("-")[1])
+
+        # Required files for a complete turn
+        required_files = [
+            "1-events.json",
+            "3-metric-rules.md",
+            "4-metrics.json",
+            "4-world-state.md",
+            "5-notepad.md",
+        ]
+
+        # Historical summary required for turns > 1
+        if turn_num > 1:
+            required_files.append("6-historical-summary.md")
+
+        # Check if 2-actors directory exists and has at least one file
+        actors_dir = turn_dir / "2-actors"
+        has_actors = actors_dir.exists() and actors_dir.is_dir() and any(actors_dir.iterdir())
+
+        # Check all required files exist
+        all_files_exist = all((turn_dir / f).exists() for f in required_files)
+
+        if all_files_exist and has_actors:
+            return turn_num
+
+    # No complete turns found
+    return 0
+
+
+def validate_run_directory(run_dir: Path) -> Tuple[bool, list[str]]:
+    """Validate run directory structure.
+
+    Args:
+        run_dir: Path to run directory
+
+    Returns:
+        Tuple of (is_valid, list of errors)
+    """
+    errors = []
+
+    if not run_dir.exists():
+        errors.append(f"Run directory does not exist: {run_dir}")
+        return (False, errors)
+
+    if not run_dir.is_dir():
+        errors.append(f"Path is not a directory: {run_dir}")
+        return (False, errors)
+
+    # Check for required files
+    if not (run_dir / "config.json").exists():
+        errors.append("Missing config.json")
+
+    if not (run_dir / "summary.json").exists():
+        errors.append("Missing summary.json")
+
+    # Check for at least one turn directory
+    turn_dirs = [d for d in run_dir.iterdir() if d.is_dir() and d.name.startswith("turn-")]
+    if not turn_dirs:
+        errors.append("No turn directories found")
+
+    return (len(errors) == 0, errors)
+
+
+def get_scenario_path_from_run(run_dir: Path) -> Path:
+    """Determine original scenario path from run directory.
+
+    Args:
+        run_dir: Path to run directory (e.g., scenarios/X/runs/run-YYYYMMDD-HHMMSS)
+
+    Returns:
+        Path to scenario directory
+
+    Raises:
+        ValueError: If scenario directory cannot be found
+    """
+    # Navigate up from run directory
+    # Expected structure: scenarios/X/runs/run-YYYYMMDD-HHMMSS
+    # We need to go up 2 levels to get to scenarios/X
+
+    if not run_dir.exists():
+        raise ValueError(f"Run directory does not exist: {run_dir}")
+
+    # Go up to runs directory
+    runs_dir = run_dir.parent
+    if runs_dir.name != "runs":
+        raise ValueError(f"Expected parent directory to be 'runs', got: {runs_dir.name}")
+
+    # Go up to scenario directory
+    scenario_dir = runs_dir.parent
+
+    # Verify scenario directory has expected files
+    if not (scenario_dir / "metrics.md").exists() and not (scenario_dir / "scenario.yaml").exists():
+        raise ValueError(f"Scenario directory does not contain metrics.md or scenario.yaml: {scenario_dir}")
+
+    return scenario_dir
+
+
+def load_run_state(
+    run_dir: Path,
+    from_turn: Optional[int] = None,
+    state_modifications: Optional[dict] = None
+) -> Tuple[Scenario, int]:
+    """Load scenario state from a run directory.
+
+    Args:
+        run_dir: Path to run directory
+        from_turn: Specific turn to load (default: last completed turn)
+        state_modifications: Optional dict with modifications:
+            {
+                "metrics": {"metric_id": new_value, ...},
+                "narrative": "new narrative text",
+                "notepad": "new notepad text",
+                "rules": "new rules markdown"
+            }
+
+    Returns:
+        Tuple of (loaded Scenario, turn_number)
+
+    Raises:
+        ValueError: If run directory is invalid or turn doesn't exist
+    """
+    # Validate run directory
+    is_valid, errors = validate_run_directory(run_dir)
+    if not is_valid:
+        raise ValueError(f"Invalid run directory: {', '.join(errors)}")
+
+    # Determine which turn to load from
+    if from_turn is None:
+        from_turn = detect_last_turn(run_dir)
+
+    if from_turn == 0:
+        raise ValueError("No completed turns found in run directory")
+
+    # Verify the turn exists
+    turn_dir = run_dir / f"turn-{from_turn:02d}"
+    if not turn_dir.exists():
+        last_turn = detect_last_turn(run_dir)
+        raise ValueError(f"Turn {from_turn} does not exist. Last completed turn: {last_turn}")
+
+    # Get scenario path and load original scenario
+    scenario_path = get_scenario_path_from_run(run_dir)
+    scenario = load_scenario(scenario_path)
+
+    # Load state from turn directory
+
+    # 1. Load metrics
+    metrics_file = turn_dir / "4-metrics.json"
+    metrics = json.loads(metrics_file.read_text(encoding="utf-8"))
+    scenario.metrics.update_from_dict(metrics)
+
+    # 2. Load narrative
+    narrative_file = turn_dir / "4-world-state.md"
+    narrative = narrative_file.read_text(encoding="utf-8")
+    scenario.world_state.narrative = narrative
+
+    # 3. Load metric rules
+    rules_file = turn_dir / "3-metric-rules.md"
+    rules = rules_file.read_text(encoding="utf-8")
+    scenario.metric_rules = rules
+
+    # 4. Load notepad
+    notepad_file = turn_dir / "5-notepad.md"
+    if notepad_file.exists():
+        notepad = notepad_file.read_text(encoding="utf-8")
+        scenario.notepad = notepad
+
+    # 5. Load historical summary (if exists)
+    summary_file = turn_dir / "6-historical-summary.md"
+    if summary_file.exists():
+        historical_summary = summary_file.read_text(encoding="utf-8")
+        scenario.world_state.historical_summary = historical_summary
+
+    # 6. Load occurred events from summary.json
+    summary_json_file = run_dir / "summary.json"
+    summary = json.loads(summary_json_file.read_text(encoding="utf-8"))
+
+    if "occurred_events" in summary:
+        scenario.occurred_events = set(summary["occurred_events"])
+        # Mark events as occurred in the events list
+        for event in scenario.events:
+            if event.id in scenario.occurred_events:
+                event.occurred = True
+
+    # 7. Apply state modifications if provided
+    if state_modifications:
+        if "metrics" in state_modifications:
+            for metric_id, value in state_modifications["metrics"].items():
+                if metric_id in scenario.metrics.metrics:
+                    scenario.metrics.metrics[metric_id].value = float(value)
+                    scenario.metrics.metrics[metric_id].clamp()
+                else:
+                    # Print warning for unknown metrics
+                    print(f"  Warning: Unknown metric '{metric_id}' in modifications, skipping")
+
+        if "narrative" in state_modifications:
+            scenario.world_state.narrative = state_modifications["narrative"]
+
+        if "notepad" in state_modifications:
+            scenario.notepad = state_modifications["notepad"]
+
+        if "rules" in state_modifications:
+            scenario.metric_rules = state_modifications["rules"]
+
+    # 8. Update turn and time_period
+    scenario.world_state.turn = from_turn
+    scenario.world_state.time_period = get_time_period(
+        scenario.config.start_date,
+        from_turn,
+        scenario.config.time_scale
+    )
+
+    return (scenario, from_turn)
+
+
+def create_branch(
+    parent_run_dir: Path,
+    from_turn: int,
+    output_base: Path,
+    state_modifications: Optional[dict] = None,
+    config_overrides: Optional[dict] = None
+) -> Path:
+    """Create a new branched run from an existing run.
+
+    Args:
+        parent_run_dir: Path to parent run
+        from_turn: Turn number to branch from
+        output_base: Base path for new run (scenario directory)
+        state_modifications: State changes to apply (same format as load_run_state)
+        config_overrides: Config changes (e.g., {"llm.events": "model-name"})
+
+    Returns:
+        Path to new run directory
+
+    Raises:
+        ValueError: If parent run is invalid or turn doesn't exist
+    """
+    # Validate parent run and turn
+    is_valid, errors = validate_run_directory(parent_run_dir)
+    if not is_valid:
+        raise ValueError(f"Invalid parent run directory: {', '.join(errors)}")
+
+    last_turn = detect_last_turn(parent_run_dir)
+    if from_turn > last_turn:
+        raise ValueError(f"Turn {from_turn} does not exist. Last completed turn: {last_turn}")
+
+    if from_turn < 1:
+        raise ValueError(f"Cannot branch from turn {from_turn}. Must be at least turn 1.")
+
+    # Create new timestamped run directory
+    timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
+    new_run_dir = output_base / "runs" / f"run-{timestamp}"
+    new_run_dir.mkdir(parents=True, exist_ok=True)
+
+    # Copy turn directories 1 through from_turn
+    for turn_num in range(1, from_turn + 1):
+        turn_dir_name = f"turn-{turn_num:02d}"
+        parent_turn_dir = parent_run_dir / turn_dir_name
+        new_turn_dir = new_run_dir / turn_dir_name
+
+        if parent_turn_dir.exists():
+            shutil.copytree(parent_turn_dir, new_turn_dir)
+
+    # Load and modify config.json
+    parent_config_file = parent_run_dir / "config.json"
+    config = json.loads(parent_config_file.read_text(encoding="utf-8"))
+
+    # Apply config overrides
+    if config_overrides:
+        for key, value in config_overrides.items():
+            # Handle nested keys (e.g., "llm.events")
+            keys = key.split(".")
+            target = config
+            for i, k in enumerate(keys[:-1]):
+                if k not in target:
+                    target[k] = {}
+                target = target[k]
+            target[keys[-1]] = value
+
+    # Add metadata
+    if "metadata" not in config:
+        config["metadata"] = {}
+
+    config["metadata"]["parent_run"] = parent_run_dir.name
+    config["metadata"]["branch_turn"] = from_turn
+    config["metadata"]["branch_created_at"] = datetime.now().isoformat()
+
+    if state_modifications:
+        config["metadata"]["state_modifications"] = state_modifications
+
+    if config_overrides:
+        config["metadata"]["config_overrides"] = config_overrides
+
+    # Save config.json to new run directory
+    new_config_file = new_run_dir / "config.json"
+    new_config_file.write_text(json.dumps(config, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    # Create summary.json for the branch
+    parent_summary_file = parent_run_dir / "summary.json"
+    parent_summary = json.loads(parent_summary_file.read_text(encoding="utf-8"))
+
+    # Copy history up to from_turn
+    new_history = [h for h in parent_summary.get("history", []) if h["turn"] <= from_turn]
+
+    # Get final metrics from the branch point
+    final_metrics = new_history[-1]["metrics"] if new_history else {}
+
+    new_summary = {
+        "scenario": parent_summary["scenario"],
+        "total_turns": from_turn,
+        "final_metrics": final_metrics,
+        "history": new_history,
+        "occurred_events": parent_summary.get("occurred_events", []),
+        "status": "running",
+        "last_updated": datetime.now().isoformat(),
+        "metadata": {
+            "parent_run": parent_run_dir.name,
+            "branch_turn": from_turn,
+            "branch_created_at": datetime.now().isoformat()
+        }
+    }
+
+    if state_modifications:
+        new_summary["metadata"]["state_modifications"] = state_modifications
+
+    if config_overrides:
+        new_summary["metadata"]["config_overrides"] = config_overrides
+
+    # Save summary.json to new run directory
+    new_summary_file = new_run_dir / "summary.json"
+    new_summary_file.write_text(json.dumps(new_summary, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    return new_run_dir

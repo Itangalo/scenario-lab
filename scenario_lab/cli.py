@@ -46,6 +46,24 @@ def main():
     validate_parser = subparsers.add_parser("validate", help="Validate a scenario")
     validate_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
 
+    # Resume command
+    resume_parser = subparsers.add_parser("resume", help="Resume an interrupted or completed run")
+    resume_parser.add_argument("run_dir", type=Path, help="Path to run directory")
+    resume_parser.add_argument("--turns", type=int, default=None, help="Total turns to run")
+    resume_parser.add_argument("--model", type=str, default=None, help="Override all LLM models")
+    resume_parser.add_argument("--override", action="append", help="Override config (e.g., 'llm.temperature=0.5')")
+    resume_parser.add_argument("--from-turn", type=int, default=None, help="Resume from specific turn")
+
+    # Branch command
+    branch_parser = subparsers.add_parser("branch", help="Create a branch from an existing run")
+    branch_parser.add_argument("run_dir", type=Path, help="Path to parent run directory")
+    branch_parser.add_argument("--from-turn", type=int, required=True, help="Turn number to branch from")
+    branch_parser.add_argument("--turns", type=int, default=None, help="Total turns to run from branch point")
+    branch_parser.add_argument("--modify-metric", action="append", help="Modify metric: 'metric_id=value'")
+    branch_parser.add_argument("--modify-narrative", type=str, help="Replace narrative text")
+    branch_parser.add_argument("--model", type=str, help="Override all LLM models")
+    branch_parser.add_argument("--override", action="append", help="Override config values")
+
     # Visualize command
     viz_parser = subparsers.add_parser("visualize", help="Generate charts for a run")
     viz_parser.add_argument("run_dir", type=Path, help="Path to run directory (e.g. scenarios/x/runs/run-123)")
@@ -75,18 +93,315 @@ def main():
     if args.command == "validate":
         print(f"Validating scenario: {args.scenario}...")
         result = validate_scenario(args.scenario)
-        
+
         if result.errors:
             print("\n❌ Validation FAILED with the following errors:")
             for error in result.errors:
                 print(f"  - {error}")
         else:
             print("\n✅ Scenario is valid!")
-            
+
         if result.warnings:
             print("\n⚠️ Warnings:")
             for warning in result.warnings:
                 print(f"  - {warning}")
+        return
+
+    if args.command == "resume":
+        from .resume import load_run_state, detect_last_turn, validate_run_directory
+        from datetime import datetime
+
+        print(f"Resuming run: {args.run_dir}")
+
+        # Validate
+        is_valid, errors = validate_run_directory(args.run_dir)
+        if not is_valid:
+            print(f"❌ Invalid run directory:")
+            for error in errors:
+                print(f"  - {error}")
+            return
+
+        # Determine resume point
+        from_turn = args.from_turn or detect_last_turn(args.run_dir)
+        if from_turn == 0:
+            print("❌ No completed turns found")
+            return
+        print(f"  Resuming from turn {from_turn}")
+
+        # Load state
+        scenario, loaded_turn = load_run_state(args.run_dir, from_turn)
+        print(f"  ✓ Loaded scenario state from turn {loaded_turn}")
+
+        # Apply overrides (reuse existing logic from run command)
+        if args.override:
+            for override in args.override:
+                if "=" not in override:
+                    print(f"Warning: Invalid override format '{override}', skipping. Use 'key=value'.")
+                    continue
+
+                key_path, value = override.split("=", 1)
+                keys = key_path.split(".")
+
+                # Try to convert value to int/float/bool
+                if value.lower() == "true":
+                    value = True
+                elif value.lower() == "false":
+                    value = False
+                else:
+                    try:
+                        if "." in value:
+                            value = float(value)
+                        else:
+                            value = int(value)
+                    except ValueError:
+                        pass  # Keep as string
+
+                # Navigate to the correct object
+                target = scenario.config
+                for i, key in enumerate(keys[:-1]):
+                    if hasattr(target, key):
+                        target = getattr(target, key)
+                    elif isinstance(target, dict) and key in target:
+                        target = target[key]
+                    else:
+                        print(f"Warning: Could not find key '{key}' in path '{key_path}', skipping override.")
+                        target = None
+                        break
+
+                if target is not None:
+                    last_key = keys[-1]
+                    if hasattr(target, last_key):
+                        setattr(target, last_key, value)
+                        print(f"  → Overrode {key_path} = {value}")
+                    elif isinstance(target, dict):
+                        target[last_key] = value
+                        print(f"  → Overrode {key_path} = {value}")
+                    else:
+                        try:
+                            setattr(target, last_key, value)
+                            print(f"  → Overrode {key_path} = {value}")
+                        except Exception as e:
+                            print(f"Warning: Could not set '{last_key}' on {type(target)}: {e}")
+
+        if args.model:
+            scenario.config.llm.events = args.model
+            scenario.config.llm.actors = args.model
+            scenario.config.llm.rules = args.model
+            scenario.config.llm.metrics = args.model
+            print(f"  → Overrode all models to: {args.model}")
+
+        # Setup OutputManager for existing directory
+        scenario_dir = args.run_dir.parent.parent
+        output_manager = OutputManager(scenario, scenario_dir)
+        output_manager.run_dir = args.run_dir  # Use existing directory
+
+        # Update summary.json status
+        summary_path = args.run_dir / "summary.json"
+        summary = json.loads(summary_path.read_text())
+        summary["status"] = "running"
+        summary["resumed_at"] = datetime.now().isoformat()
+        summary["resumed_from_turn"] = loaded_turn
+        summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False))
+
+        # Run simulation
+        print(f"\nContinuing simulation from turn {loaded_turn + 1}")
+        num_turns = args.turns or scenario.config.max_turns
+        print(f"LLM Configuration:")
+        print(f"  Events: {scenario.config.llm.events}")
+        if isinstance(scenario.config.llm.actors, str):
+            print(f"  Actors: {scenario.config.llm.actors} (all)")
+        elif isinstance(scenario.config.llm.actors, list):
+            print(f"  Actors: {scenario.config.llm.actors} (all)")
+        else:
+            print(f"  Actors:")
+            for actor_id, model in scenario.config.llm.actors.items():
+                print(f"    {actor_id}: {model}")
+        print(f"  Rules: {scenario.config.llm.rules}")
+        print(f"  Metrics: {scenario.config.llm.metrics}")
+        print(f"Turns: {loaded_turn + 1} to {num_turns}")
+
+        results = run_simulation(
+            scenario,
+            llm_client=None,
+            num_turns=num_turns,
+            output_manager=output_manager,
+            start_turn=loaded_turn + 1
+        )
+
+        # Finalize
+        output_manager.finalize_summary(results)
+        print(f"\n{'='*60}")
+        print(f"RESUMED SIMULATION COMPLETE")
+        print(f"{'='*60}")
+        print(f"Results saved to: {args.run_dir}")
+        return
+
+    if args.command == "branch":
+        from .resume import load_run_state, create_branch, get_scenario_path_from_run
+        from datetime import datetime
+
+        print(f"Creating branch from: {args.run_dir}")
+        print(f"  Branch point: Turn {args.from_turn}")
+
+        # Parse state modifications
+        state_mods = {}
+        if args.modify_metric:
+            state_mods["metrics"] = {}
+            for mod in args.modify_metric:
+                if "=" not in mod:
+                    print(f"Warning: Invalid metric modification format '{mod}', skipping. Use 'metric_id=value'.")
+                    continue
+                metric_id, value = mod.split("=", 1)
+                try:
+                    state_mods["metrics"][metric_id] = float(value)
+                except ValueError:
+                    print(f"Warning: Invalid metric value '{value}' for metric '{metric_id}', skipping.")
+                    continue
+
+        if args.modify_narrative:
+            state_mods["narrative"] = args.modify_narrative
+
+        # Parse config overrides
+        config_overrides = {}
+        if args.override:
+            for override in args.override:
+                if "=" not in override:
+                    print(f"Warning: Invalid override format '{override}', skipping. Use 'key=value'.")
+                    continue
+                key, value = override.split("=", 1)
+                config_overrides[key] = value
+
+        if args.model:
+            config_overrides["llm.events"] = args.model
+            config_overrides["llm.actors"] = args.model
+            config_overrides["llm.rules"] = args.model
+            config_overrides["llm.metrics"] = args.model
+
+        # Determine output location
+        try:
+            scenario_path = get_scenario_path_from_run(args.run_dir)
+            output_base = scenario_path if scenario_path.is_dir() else scenario_path.parent
+        except Exception as e:
+            print(f"❌ Error determining scenario path: {e}")
+            return
+
+        # Create branch
+        try:
+            new_run_dir = create_branch(
+                args.run_dir,
+                args.from_turn,
+                output_base,
+                state_modifications=state_mods if state_mods else None,
+                config_overrides=config_overrides if config_overrides else None
+            )
+            print(f"  ✓ Created branch: {new_run_dir.name}")
+        except Exception as e:
+            print(f"❌ Error creating branch: {e}")
+            return
+
+        # Load branched state
+        try:
+            scenario, loaded_turn = load_run_state(
+                new_run_dir,
+                from_turn=args.from_turn,
+                state_modifications=state_mods if state_mods else None
+            )
+            print(f"  ✓ Loaded scenario state from turn {loaded_turn}")
+        except Exception as e:
+            print(f"❌ Error loading branched state: {e}")
+            return
+
+        # Apply config overrides to scenario
+        if args.override:
+            for override in args.override:
+                if "=" not in override:
+                    continue
+
+                key_path, value = override.split("=", 1)
+                keys = key_path.split(".")
+
+                # Try to convert value to int/float/bool
+                if value.lower() == "true":
+                    value = True
+                elif value.lower() == "false":
+                    value = False
+                else:
+                    try:
+                        if "." in value:
+                            value = float(value)
+                        else:
+                            value = int(value)
+                    except ValueError:
+                        pass  # Keep as string
+
+                # Navigate to the correct object
+                target = scenario.config
+                for i, key in enumerate(keys[:-1]):
+                    if hasattr(target, key):
+                        target = getattr(target, key)
+                    elif isinstance(target, dict) and key in target:
+                        target = target[key]
+                    else:
+                        print(f"Warning: Could not find key '{key}' in path '{key_path}', skipping override.")
+                        target = None
+                        break
+
+                if target is not None:
+                    last_key = keys[-1]
+                    if hasattr(target, last_key):
+                        setattr(target, last_key, value)
+                        print(f"  → Overrode {key_path} = {value}")
+                    elif isinstance(target, dict):
+                        target[last_key] = value
+                        print(f"  → Overrode {key_path} = {value}")
+                    else:
+                        try:
+                            setattr(target, last_key, value)
+                            print(f"  → Overrode {key_path} = {value}")
+                        except Exception as e:
+                            print(f"Warning: Could not set '{last_key}' on {type(target)}: {e}")
+
+        if args.model:
+            scenario.config.llm.events = args.model
+            scenario.config.llm.actors = args.model
+            scenario.config.llm.rules = args.model
+            scenario.config.llm.metrics = args.model
+            print(f"  → Overrode all models to: {args.model}")
+
+        # Run from branch point
+        output_manager = OutputManager(scenario, output_base)
+        output_manager.run_dir = new_run_dir
+
+        print(f"\nRunning simulation from turn {loaded_turn + 1}")
+        num_turns = args.turns or scenario.config.max_turns
+        print(f"LLM Configuration:")
+        print(f"  Events: {scenario.config.llm.events}")
+        if isinstance(scenario.config.llm.actors, str):
+            print(f"  Actors: {scenario.config.llm.actors} (all)")
+        elif isinstance(scenario.config.llm.actors, list):
+            print(f"  Actors: {scenario.config.llm.actors} (all)")
+        else:
+            print(f"  Actors:")
+            for actor_id, model in scenario.config.llm.actors.items():
+                print(f"    {actor_id}: {model}")
+        print(f"  Rules: {scenario.config.llm.rules}")
+        print(f"  Metrics: {scenario.config.llm.metrics}")
+        print(f"Turns: {loaded_turn + 1} to {num_turns}")
+
+        results = run_simulation(
+            scenario,
+            llm_client=None,
+            num_turns=num_turns,
+            output_manager=output_manager,
+            start_turn=loaded_turn + 1
+        )
+
+        # Finalize
+        output_manager.finalize_summary(results)
+        print(f"\n{'='*60}")
+        print(f"BRANCH SIMULATION COMPLETE")
+        print(f"{'='*60}")
+        print(f"Results saved to: {new_run_dir}")
         return
 
     # Run logic starts here
