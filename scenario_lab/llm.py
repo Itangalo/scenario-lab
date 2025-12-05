@@ -208,13 +208,14 @@ class LLMClient:
                     print(f"  ✗ {model} unavailable (HTTP {e.response.status_code})")
                     break
 
-                except httpx.TimeoutException:
+                except (httpx.TimeoutException, httpx.NetworkError) as e:
                     if attempt < max_retries - 1:
-                        print(f"  Request timed out, retrying ({attempt + 1}/{max_retries})...")
+                        print(f"  Network error ({type(e).__name__}), retrying ({attempt + 1}/{max_retries})...")
+                        time.sleep(1)  # Small delay for network hiccups
                         continue
-                    # Timeout exhausted for this model, try next model
-                    last_error = LLMError(f"Timeout for {model}")
-                    print(f"  ✗ {model} timed out")
+                    # Retries exhausted for this model, try next model
+                    last_error = LLMError(f"Connection/Timeout error for {model}: {e}")
+                    print(f"  ✗ {model} connection failed")
                     break
 
                 except Exception as e:
