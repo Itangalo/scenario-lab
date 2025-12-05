@@ -20,10 +20,17 @@ llm:
     - "x-ai/grok-4.1-fast:free"
     - "x-ai/grok-4-fast"
 
-  # All actors use same fallback list
+  # Most actors use same fallback list
   actors:
-    - "anthropic/claude-haiku-4.5"
-    - "x-ai/grok-4-fast"
+    default:
+      - "anthropic/claude-haiku-4.5"
+      - "x-ai/grok-4-fast"
+    usa_ai:
+      - "deepseek/deepseek-chat-v3-0324"
+      - "x-ai/grok-4-fast"
+    china_ai:
+      - "deepseek/deepseek-chat-v3-0324"
+      - "x-ai/grok-4-fast"
 
   # Rules: Single cheap model with fallback
   rules:
