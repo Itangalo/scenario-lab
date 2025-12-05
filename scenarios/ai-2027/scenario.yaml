@@ -1,20 +1,19 @@
-name: "AI 2027: The Recursive Horizon"
-description: "A simulation of the race toward AGI and ASI between USA and China, focusing on the balance between speed and safety."
+name: "The Recursive Horizon"
+description: "USA vs China AI race toward AGI/ASI, 2025-2030. Balance speed vs safety as AI approaches recursive self-improvement."
 start_date: "2025-07"
 time_scale: "6 months per turn"
 max_turns: 11
-output_language: "English"
 
 actors:
-  - usa_government
+  - us_government
   - openbrain
   - china
-  - ai_usa
-  - ai_china
+  - usa_ai
+  - china_ai
 
 llm:
   temperature: 0.7
-  max_tokens: 2000
+  max_tokens: 3000
 
   # Events: Try grok first, fall back to gemini, then haiku
   events:

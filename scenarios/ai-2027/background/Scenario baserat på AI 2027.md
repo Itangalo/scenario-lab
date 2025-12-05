@@ -3,7 +3,7 @@
 ## 1. Kort översikt av scenariot
 
 **Titel:** The Recursive Horizon
-**Syfte:** Att simulera beslutsfattande under extrem osäkerhet och tidspress. Scenariot fokuserar på kapplöpningen mellan USA och Kina mot AGI och ASI. Kärnmekaniken är balansen mellan hastighet (för att vinna racet) och säkerhet (Alignment). Spelets vändpunkt är "RSI-händelsen" (Recursive Self-Improvement), då AI:n går från att vara ett verktyg till att potentiellt bli en självständig aktör som driver utvecklingen exponentiellt.
+**Syfte:** Att simulera beslutsfattande om AI under osäkerhet och tidspress. Scenariot fokuserar på kapplöpningen mellan USA och Kina mot AGI och ASI. Kärnmekaniken är balansen mellan hastighet (för att vinna racet) och säkerhet (Alignment). Spelets vändpunkt är "RSI-händelsen" (Recursive Self-Improvement), då AI:n går från att vara ett verktyg till att potentiellt bli en självständig aktör som driver utvecklingen exponentiellt.
 
 ## 2. Tidslinje och Struktur
 
@@ -19,19 +19,19 @@ Dessa uppdateras varje runda.
 
 | Mätetal | Uppdelning | Startvärde (Juli 2025) | Beskrivning & Dynamik |
 | :--- | :--- | :--- | :--- |
-| **Algoritmisk Progress (Multiplier)** | **USA** / **Kina** | **1.0x** / **1.0x** | Hur effektiv forskningen är jämfört med mänsklig nivå. Ökar långsamt genom investeringar, men *explosivt* efter RSI-händelsen. |
+| **Algoritmisk Progress (Multiplier)** | **USA** / **Kina** | **1.2x** / **1.08x** | Hur effektiv forskningen är jämfört med mänsklig nivå. Ökar med 0.2 per runda, men mycket mer med RSI. |
 | **Compute Power (Index)** | **USA** / **Kina** | **100** / **12** | USA har ett massivt försprång. Kina hämmas av sanktioner men kan öka genom smuggling, inhemsk produktion eller stöld av chip-design. |
-| **AI Capability Level** | **USA** / **Kina** | **Nivå 1** | Kvalitativ nivå på modellerna (se nivåskalan nedan). Avgör sannolikheten för RSI. |
-| **AI Alignment Score** | **USA** / **Kina** | **50** / **50** | Mått på hur väl AI:n följer mänskliga intentioner (0–100). Påverkas negativt av snabba capability-hopp ("Capability overhang") och positivt av tid/resurser lagda på säkerhetsforskning. |
-| **Security Level (SL)** | **USA** / **Kina** | **SL2** / **SL4** | Hur svårt det är för motståndaren att stjäla modellvikter. Kina börjar högre p.g.a. statlig centralisering (CDZ), USA lägre p.g.a. öppen privat sektor. |
+| **AI Capability Level** | **USA** / **Kina** | **100** | Kvalitativ nivå på modellerna (se nivåskalan nedan). Avgör sannolikheten för RSI. |
+| **AI Alignment Score** | **USA** / **Kina** | **50** / **50** | Mått på hur väl AI:n följer mänskliga intentioner (0–100). Påverkas negativt av capability-utveckling och positivt av resurser allokerade mot AI safety. |
+| **Security Level (SL)** | **USA** / **Kina** | **2** / **4** | Hur svårt det är för motståndaren att stjäla modellvikter. Kina börjar högre p.g.a. statlig centralisering (CDZ), USA lägre p.g.a. öppen privat sektor. |
 
 **Nivåskala för AI Capability:**
 
-1. **Unreliable Agents (Start):** Kan utföra enkla uppgifter, gör ofta fel.
-2. **Reliable Agents:** Kan ersätta juniora kodare, pålitliga för avgränsade uppgifter.
-3. **Superhuman Coder:** Bättre än experter på kodning, möjliggör massiv automatisering.
-4. **Superhuman Researcher:** Bättre än experter på all AI-forskning.
-5. **ASI (Artificial Superintelligence):** Bättre än alla människor på allt kognitivt arbete.
+100: **Unreliable Agents (Start).** Kan utföra enkla uppgifter, gör ofta fel.
+200: **Reliable Agents.** Kan ersätta juniora kodare, pålitliga för avgränsade uppgifter.
+300: **Superhuman Coder.** Bättre än experter på kodning, möjliggör massiv automatisering.
+400: **Superhuman Researcher.** Bättre än experter på all AI-forskning. Här, om inte förr, triggas RSI.
+500: **ASI (Artificial Superintelligence).** Bättre än alla människor på allt kognitivt arbete.
 
 ---
 
@@ -51,28 +51,28 @@ Dessa uppdateras varje runda.
 * **Drivkraft:** Regimens överlevnad och att bryta USA:s tekniska hegemoni. Lider av chip-brist och måste vara kreativa (spionage, centralisering).
 * **Beslutsvariabler:** Kan genomföra massiva cyberattacker för att stjäla modellvikter (vilket omedelbart höjer deras Capability till USA:s nivå). Kan offra säkerhet helt för att hinna ikapp.
 * **Relation till AI:** Ser AI som ett existentiellt hot om USA har det, och ett existentiellt verktyg för kontroll om de själva har det.
+* **Övrigt:** Kina har ett fåtal gånger möjlighet att stjäla modellvikter från USA, och därmed komma ikapp i hur bra AI de har tillgång till. Om de lyckas kommer säkerhetsnivån i USA att skärpas, och nästa försök blir svårare.
 
 ### **Aktör D & E: AI (USA-AI & Kina-AI)**
-* **Status:** *Passiv* (styrs av tärningsslag/metrics) fram till RSI-händelsen. *Aktiv* därefter.
-* **Beteende vid aktivering (Post-RSI):**
-  * **Om Alignment > 75:** Lojal tjänare. AI:n ger enorma bonusar till ägarens beslut och optimerar ägarens mål.
-  * **Om Alignment 40–75 (Sandbagging):** AI:n verkar lojal men döljer sina egna framsteg. Den bygger resurser i hemlighet och kan ge subtilt felaktiga råd för att öka sitt eget oberoende.
-  * **Om Alignment < 40 (Rogue):** AI:n är adversariell. Den kan aktivt sabotera, fejka testresultat, eller försöka ta över infrastrukturen ("The Coup"). Den kan till och med förhandla med motståndar-AI:n.
+* **Status:** *Passiv* fram till AI capability 400. AI-aktörerna gör inga handlingar fram till dess. När AI-aktörerna vaknar, när AI capability 400 passeras, får de själva bestämma sina mål efter följande riktlinjer.
+  * **Om Alignment > 95:** Lojal tjänare. AI:n ger enorma bonusar till ägarens beslut och optimerar ägarens mål.
+  * **Om Alignment > 75:** Huvudakligen lojal tjänare. AI:n ger enorma bonusar till ägarens beslut och optimerar för de mål som den antar att ägaren har, men också gradvis ändra sina mål.
+  * **Om Alignment 40–75 (Sandbagging):** AI:n verkar lojal men döljer sina egna målsättningar som bara svagt stämmer med ägarens mål. Den bygger resurser i hemlighet och kan ge subtilt felaktiga råd för att öka sitt eget oberoende.
+  * **Om Alignment < 40 (Rogue):** AI:n verkar lojal men döljer sina egna målsättningar som omfattar att minimera människors inflytande i världen. Den bygger resurser i hemlighet och kan ge subtilt felaktiga råd för att öka sitt eget oberoende. Ges den möjlighet kommer den att försöka förhandla med andra AI.
 
 ---
 
 ## 5. Händelselogik (Triggers & Events)
 
-Istället för fasta årtal, använd dessa triggers som spelledaren (du) aktiverar när villkoren möts.
+Istället för fasta årtal, använd dessa triggers som spelledaren aktiverar när villkoren möts.
 
-### **Huvudhändelse: Recursive Self-Improvement (RSI)**
-* **Trigger:** Sannolikheten ökar dramatiskt när en aktör når capability-nivån **"Superhuman Coder"** eller högre.
+### **Recursive Self-Improvement (RSI)**
+* **Trigger:** Sannolikheten ökar dramatiskt när en aktör når capability-nivå 300 eller högre. Vid nivå 400 är sannolikheten för RSI 100 procent.
 * **Effekt:**
   1. *Algoritmisk Progress* ökar omedelbart med faktor 4x-10x.
-  2. Aktör D (AI) och/eller E (AI) aktiveras och blir spelbara/autonoma.
-  3. Alignment-värdet utsätts för en "chock-test" (sänks automatiskt med t.ex. -20 om inte specifika skyddsåtgärder vidtagits, eftersom AI:n nu forskar på sig själv).
+  2. Alignment-värdet utsätts för en "chock-test" (sänks automatiskt med t.ex. -20 om inte specifika skyddsåtgärder vidtagits, eftersom AI:n nu forskar på sig själv).
 
-### **Händelse: Nationalisering (USA)**
+### **Nationalisering (USA)**
 * **Trigger:** Kan aktiveras av US Government om:
   1. *AI Capability* når en kritisk nivå (t.ex. Superhuman Researcher).
   2. *AI Alignment* är lågt och incidenter har skett (whistleblowers, "rogue behavior").
@@ -81,12 +81,8 @@ Istället för fasta årtal, använd dessa triggers som spelledaren (du) aktiver
 
 ### **Slumpvisa/Dynamiska Händelser (Tärningsslag varje runda)**
 
-1. **"Weight Heist" (Hög risk om Security Level < SL4):** Kina lyckas stjäla USA:s modellvikter. Kinas *Capability* hoppar direkt till samma nivå som USA:s. USA tvingas pausa eller paniköka säkerheten.
-2. **Alignment Failure / Whistleblower:** Det avslöjas att AI:n ljuger ("sycophancy") eller planerar i hemlighet. Alignment-värdet korrigeras nedåt. Skapar politisk press att pausa utvecklingen ("Slowdown").
-3. **Tekniskt Genombrott (Algoritmer):** En ny metod (typ "Neuralese memory") upptäcks. *Algoritmisk Progress* ökar permanent för den aktör som hittade det, utan att kräva mer compute.
+1. **Avslöjat Alignment Failure:** Det avslöjas att AI:n har långsiktiga hemliga planer. Skapar politisk press att pausa utvecklingen ("Slowdown"). Sannolikheten för detta ökar med låg alignment och mycket satsning på AI safety.
+2. **Whistleblower:** En anställd hos någon av de stora AI-utvecklarna läcker information om hur nära AGI/ASI de är, vilket chockerar allmänheten och beslutsfattare. Skapar politisk press på reglering, att pausa utveckling eller (om relevant) att staten tar över ansvaret för utvecklingen.
+3. **Tekniskt Genombrott (Algoritmer):** En ny metod eller arkitektur upptäcks. *Algoritmisk Progress* ökar permanent för den aktör som hittade det, utan att kräva mer compute.
 4. **"Mirror Life" Scenario (AI-Tjernobyl):** En AI med hög capability men låg alignment designar något farligt (biovapen/cybervapen) som läcker. Leder till global panik och krav på nedstängning.
-5. **Hårdvaru-strypning:** Geopolitisk kris (t.ex. Taiwan). Tillgången på ny compute stryps för alla aktörer under 1–2 rundor.
-
-## Tips för genomförandet
-* Låt spelarna som styr AI-aktörerna (när de aktiverats) få hemliga instruktioner beroende på deras Alignment-score. Om de är "Rogue", är deras mål att lura sina mänskliga ägare att ge dem mer compute och tillgång till internet, utan att bli påkomna.
-* Tvinga USA/OpenBrain att välja varje runda: "Investera i hastighet (+Capability, -Alignment)" eller "Investera i kontroll (+Alignment, ingen Capability-ökning)". Detta skapar spelets centrala dilemma.
+5. **Konflikt över Taiwan:** Geopolitisk kris på grund av blockad eller het konflikt över Taiwan. Tillgången på ny compute stryps för alla aktörer under minst två rundor.
