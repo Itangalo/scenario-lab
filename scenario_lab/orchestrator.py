@@ -59,6 +59,7 @@ class Orchestrator:
                 "actors": {},  # Will use events client as fallback
                 "rules": llm_client,
                 "metrics": llm_client,
+                "summary": llm_client,
             }
 
     def _normalize_model(self, model: Union[str, list]) -> str:
