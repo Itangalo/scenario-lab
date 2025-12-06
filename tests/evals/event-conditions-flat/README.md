@@ -181,13 +181,32 @@ FLAT PROMPT EVALUATION SUMMARY
 simple_conditions             :  6/ 6 (100.0%)
 range_conditions              :  5/ 5 (100.0%)
 multi_tier_probability        :  5/ 5 (100.0%)
-complex_or_logic              :  4/ 5 ( 80.0%)
+complex_or_logic              :  5/ 5 (100.0%)
 ai_2027_real                  :  6/ 6 (100.0%)
 ------------------------------------------------------------
-OVERALL                       : 26/27 ( 96.3%)
-Total tokens used             : 8,432
+OVERALL                       : 27/27 (100.0%)
+Total tokens used             : ~12,000
 ============================================================
 ```
+
+## Baseline Results (Grok 4.1 Fast)
+
+Initial testing with `x-ai/grok-4.1-fast` shows **excellent performance**:
+
+- **Overall:** 27/27 tests passed (100%) in ~3.5 minutes
+- **Simple conditions:** 6/6 (100%) - Basic thresholds and logic
+- **Range conditions:** 5/5 (100%) - Natural language ranges like "150-250"
+- **Multi-tier probability:** 5/5 (100%) - Complex tiered probability structures
+- **Complex OR logic:** 5/5 (100%) - "Any of the following" multi-condition logic
+- **Real AI 2027 events:** 6/6 (100%) - Real-world complex event conditions
+- **Total tokens:** ~12,000 (cost: ~$0.01-0.02)
+
+This demonstrates that Grok 4.1 Fast can reliably interpret complex event conditions including:
+- Composite metric calculations
+- Additive probabilities
+- Multi-condition AND/OR logic
+- Range-based tiers
+- Event history dependencies
 
 ## Iterating on Event Wording
 

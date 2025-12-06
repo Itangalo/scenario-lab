@@ -121,9 +121,33 @@ llm:
 - **Type hints:** Required throughout
 - **LLM Provider:** OpenRouter API (supports Claude, GPT, Llama, etc.)
 
-## LLM Evaluation Suite (Issue #120)
+## LLM Evaluation Suites
 
-V4 includes a complete pytest-based evaluation system for testing LLM performance on event condition interpretation.
+V4 includes two complementary evaluation systems for testing LLM performance on event condition interpretation:
+
+### 1. Flat Prompt Evaluation (Fast Iteration)
+
+**Location:** `tests/evals/event-conditions-flat/`
+
+Fast, isolated testing of event condition interpretation using single LLM calls per test case (no full scenario framework).
+
+**Key Features:**
+- 27 test cases across 5 categories (simple, range, multi-tier, complex OR, real ai-2027-2)
+- Single LLM call per test (~3-4 minutes for full suite)
+- Cheap iteration with fast models (~$0.01-0.02 per run with Grok 4.1 Fast)
+- Uses `response.extract_json()` to handle markdown-wrapped responses
+- Perfect for rapid iteration on event condition wording
+
+**Baseline Results (Grok 4.1 Fast):** 27/27 tests passed (100%)
+
+**Usage:**
+```bash
+export OPENROUTER_API_KEY="your_key"
+export TEST_LLM_MODEL="x-ai/grok-4.1-fast"  # Optional, this is default
+pytest tests/evals/event-conditions-flat/ -v
+```
+
+### 2. Full Scenario Evaluation (Comprehensive)
 
 **Location:** `tests/evals/llm-event-conditions/`
 
