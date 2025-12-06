@@ -1,0 +1,42 @@
+name: "AI 2027"
+description: "The race to superintelligence. OpenBrain vs DeepCent, alignment vs capability, humans vs awakening AI. Based on the AI 2027 scenario by Kokotajlo et al."
+start_date: "2025-07"
+time_scale: "6 months per turn"
+max_turns: 11
+
+actors:
+  - us_government
+  - openbrain
+  - deepcent
+  - agent_us
+  - agent_china
+
+llm:
+  temperature: 0.7
+  max_tokens: 3000
+
+  events:
+    - "x-ai/grok-4.1-fast:free"
+    - "x-ai/grok-4-fast"
+
+  actors:
+    default:
+      - "anthropic/claude-haiku-4.5"
+      - "x-ai/grok-4-fast"
+    agent_us:
+      - "deepseek/deepseek-chat-v3-0324"
+      - "x-ai/grok-4-fast"
+    agent_china:
+      - "deepseek/deepseek-chat-v3-0324"
+      - "x-ai/grok-4-fast"
+
+  rules:
+    - "anthropic/claude-haiku-4.5"
+    - "x-ai/grok-4.1-fast:free"
+    - "x-ai/grok-4-fast"
+
+  metrics:
+    - "x-ai/grok-4.1-fast:free"
+    - "x-ai/grok-4-fast"
+    - "anthropic/claude-sonnet-4.5"
+    - "anthropic/claude-haiku-4.5"

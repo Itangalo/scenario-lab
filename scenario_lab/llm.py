@@ -243,14 +243,17 @@ class LLMClient:
 class MockLLMClient:
     """Mock client for testing without API calls."""
 
-    def __init__(self, responses: dict[str, str]):
+    def __init__(self, responses: dict[str, str], model: Union[str, List[str]] = "mock/model", **kwargs):
         """
         Args:
             responses: Dict mapping prompt substrings to response content.
                       Example: {"events": "[{...}]", "government": "## Goals\\n..."}
+            model: Model name(s) for compatibility with Orchestrator's client reuse logic.
         """
         self.responses = responses
         self.calls: list[tuple[str, str]] = []
+        self.models = [model] if isinstance(model, str) else model
+        # Orchestrator might pass other kwargs like temperature, max_tokens, but MockLLMClient doesn't need them
 
     def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
         """Return pre-configured response based on prompt content."""
