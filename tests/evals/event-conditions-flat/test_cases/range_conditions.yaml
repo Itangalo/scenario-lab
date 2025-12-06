@@ -1,0 +1,99 @@
+# Range condition tests - testing "X-Y" style ranges
+
+test_cases:
+  - name: "range_within"
+    description: "Value is within the range"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 200
+    event: |
+      ## Algorithmic Breakthrough - US
+      **ID:** algorithmic_breakthrough_us
+      **Condition:** ai_capability_us > 150
+      **Probability:**
+      - If ai_capability_us 150-250: 5% per turn
+      - If ai_capability_us 250-350: 10% per turn
+      **Can repeat:** Yes
+      **Description:** OpenBrain achieves breakthrough.
+    expected:
+      eligible: true
+      probability: 0.05
+
+  - name: "range_lower_bound"
+    description: "Value exactly at lower bound"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 150
+    event: |
+      ## Algorithmic Breakthrough - US
+      **ID:** algorithmic_breakthrough_us
+      **Condition:** ai_capability_us > 100
+      **Probability:**
+      - If ai_capability_us 150-250: 5% per turn
+      - If ai_capability_us 250-350: 10% per turn
+      **Can repeat:** Yes
+      **Description:** OpenBrain achieves breakthrough.
+    expected:
+      eligible: true
+      probability: 0.05
+
+  - name: "range_upper_bound"
+    description: "Value exactly at upper bound"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 250
+    event: |
+      ## Algorithmic Breakthrough - US
+      **ID:** algorithmic_breakthrough_us
+      **Condition:** ai_capability_us > 100
+      **Probability:**
+      - If ai_capability_us 150-250: 5% per turn
+      - If ai_capability_us 250-350: 10% per turn
+      **Can repeat:** Yes
+      **Description:** OpenBrain achieves breakthrough.
+    expected:
+      eligible: true
+      probability: 0.05
+
+  - name: "range_higher_tier"
+    description: "Value in higher tier range"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 300
+    event: |
+      ## Algorithmic Breakthrough - US
+      **ID:** algorithmic_breakthrough_us
+      **Condition:** ai_capability_us > 100
+      **Probability:**
+      - If ai_capability_us 150-250: 5% per turn
+      - If ai_capability_us 250-350: 10% per turn
+      - If ai_capability_us > 350: 15% per turn
+      **Can repeat:** Yes
+      **Description:** OpenBrain achieves breakthrough.
+    expected:
+      eligible: true
+      probability: 0.10
+
+  - name: "range_below_all_tiers"
+    description: "Value below all ranges"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 140
+    event: |
+      ## Algorithmic Breakthrough - US
+      **ID:** algorithmic_breakthrough_us
+      **Condition:** ai_capability_us > 100
+      **Probability:**
+      - If ai_capability_us 150-250: 5% per turn
+      - If ai_capability_us 250-350: 10% per turn
+      **Can repeat:** Yes
+      **Description:** OpenBrain achieves breakthrough.
+    expected:
+      eligible: true
+      probability: 0.0
+      note: "Condition is met but no probability tier applies - this is a corner case"

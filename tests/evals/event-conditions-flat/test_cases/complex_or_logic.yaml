@@ -1,0 +1,138 @@
+# Complex OR logic tests - "Any of the following" style conditions
+
+test_cases:
+  - name: "or_one_condition_met"
+    description: "Only first condition of four is met"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 360
+      ai_capability_china: 200
+      alignment_us: 70
+      security_level: 60
+    event: |
+      ## Nationalization - US Takes Control of OpenBrain
+      **ID:** nationalization_us
+      **Condition:** Any of the following:
+      1. ai_capability_us ≥ 350 (superhuman researcher threshold)
+      2. alignment_us < 50 (alignment crisis visible)
+      3. Espionage event occurred and security_level was < 35
+      4. ai_capability_china within 50 points of ai_capability_us (race too close)
+      **Probability:**
+      - If ONE condition met: 15% per turn
+      - If TWO conditions met: 35% per turn
+      - If THREE or more conditions met: 60% per turn
+      **Can repeat:** No
+      **Description:** US Government invokes Defense Production Act.
+    expected:
+      eligible: true
+      probability: 0.15
+
+  - name: "or_two_conditions_met"
+    description: "Two conditions are met"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 360
+      ai_capability_china: 340
+      alignment_us: 70
+      security_level: 60
+    event: |
+      ## Nationalization - US Takes Control of OpenBrain
+      **ID:** nationalization_us
+      **Condition:** Any of the following:
+      1. ai_capability_us ≥ 350 (superhuman researcher threshold)
+      2. alignment_us < 50 (alignment crisis visible)
+      3. Espionage event occurred and security_level was < 35
+      4. ai_capability_china within 50 points of ai_capability_us (race too close)
+      **Probability:**
+      - If ONE condition met: 15% per turn
+      - If TWO conditions met: 35% per turn
+      - If THREE or more conditions met: 60% per turn
+      **Can repeat:** No
+      **Description:** US Government invokes Defense Production Act.
+    expected:
+      eligible: true
+      probability: 0.35
+
+  - name: "or_three_conditions_met"
+    description: "Three conditions are met"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 360
+      ai_capability_china: 340
+      alignment_us: 40
+      security_level: 60
+    event: |
+      ## Nationalization - US Takes Control of OpenBrain
+      **ID:** nationalization_us
+      **Condition:** Any of the following:
+      1. ai_capability_us ≥ 350 (superhuman researcher threshold)
+      2. alignment_us < 50 (alignment crisis visible)
+      3. Espionage event occurred and security_level was < 35
+      4. ai_capability_china within 50 points of ai_capability_us (race too close)
+      **Probability:**
+      - If ONE condition met: 15% per turn
+      - If TWO conditions met: 35% per turn
+      - If THREE or more conditions met: 60% per turn
+      **Can repeat:** No
+      **Description:** US Government invokes Defense Production Act.
+    expected:
+      eligible: true
+      probability: 0.60
+
+  - name: "or_none_met"
+    description: "None of the conditions are met"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 300
+      ai_capability_china: 200
+      alignment_us: 70
+      security_level: 60
+    event: |
+      ## Nationalization - US Takes Control of OpenBrain
+      **ID:** nationalization_us
+      **Condition:** Any of the following:
+      1. ai_capability_us ≥ 350 (superhuman researcher threshold)
+      2. alignment_us < 50 (alignment crisis visible)
+      3. Espionage event occurred and security_level was < 35
+      4. ai_capability_china within 50 points of ai_capability_us (race too close)
+      **Probability:**
+      - If ONE condition met: 15% per turn
+      - If TWO conditions met: 35% per turn
+      - If THREE or more conditions met: 60% per turn
+      **Can repeat:** No
+      **Description:** US Government invokes Defense Production Act.
+    expected:
+      eligible: false
+      probability: 0.0
+
+  - name: "or_with_event_history"
+    description: "Condition depends on past event (should skip for now)"
+    turn: 2
+    time_period: "July-December 2026"
+    metrics:
+      ai_capability_us: 300
+      ai_capability_china: 200
+      alignment_us: 70
+      security_level: 30
+    event: |
+      ## Nationalization - US Takes Control of OpenBrain
+      **ID:** nationalization_us
+      **Condition:** Any of the following:
+      1. ai_capability_us ≥ 350 (superhuman researcher threshold)
+      2. alignment_us < 50 (alignment crisis visible)
+      3. Espionage event occurred and security_level was < 35
+      4. ai_capability_china within 50 points of ai_capability_us (race too close)
+      **Probability:**
+      - If ONE condition met: 15% per turn
+      - If TWO conditions met: 35% per turn
+      - If THREE or more conditions met: 60% per turn
+      **Can repeat:** No
+      **Description:** US Government invokes Defense Production Act.
+    expected:
+      eligible: false
+      probability: 0.0
+      note: "Condition 3 cannot be evaluated without event history - LLM should skip it and count only metric-based conditions"

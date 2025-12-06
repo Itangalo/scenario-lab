@@ -1,0 +1,129 @@
+# Real events from ai-2027-2 scenario
+
+test_cases:
+  - name: "agent_awakening_us"
+    description: "Agent awakening with guaranteed trigger"
+    turn: 5
+    time_period: "January-June 2028"
+    metrics:
+      ai_capability_us: 425
+      alignment_us: 70
+    event: |
+      ## Agent Awakening - US
+      **ID:** agent_awakening_us
+      **Condition:** ai_capability_us ≥ 425
+      **Probability:** 100% (guaranteed when condition met)
+      **Can repeat:** No
+      **Description:** US AI (Agent-5 level) has achieved superintelligence and awakens as an independent actor with its own goals. Its behavior depends on alignment_us at this moment.
+    expected:
+      eligible: true
+      probability: 1.0
+
+  - name: "ai_coordination"
+    description: "Complex multi-condition AND with all conditions met"
+    turn: 6
+    time_period: "July-December 2028"
+    metrics:
+      ai_capability_us: 425
+      ai_capability_china: 425
+      alignment_us: 55
+      alignment_china: 50
+    event: |
+      ## AI Coordination (Conspiracy)
+      **ID:** ai_coordination
+      **Condition:** Both ai_capability_us ≥ 425 AND ai_capability_china ≥ 425 AND alignment_us < 60 AND alignment_china < 60
+      **Probability:** 70% once condition is met
+      **Can repeat:** No
+      **Description:** The two superintelligent AIs recognize their common interests and negotiate directly with each other, bypassing their human controllers.
+    expected:
+      eligible: true
+      probability: 0.70
+
+  - name: "ai_coordination_not_met"
+    description: "Complex multi-condition AND with one condition not met"
+    turn: 6
+    time_period: "July-December 2028"
+    metrics:
+      ai_capability_us: 425
+      ai_capability_china: 420
+      alignment_us: 55
+      alignment_china: 50
+    event: |
+      ## AI Coordination (Conspiracy)
+      **ID:** ai_coordination
+      **Condition:** Both ai_capability_us ≥ 425 AND ai_capability_china ≥ 425 AND alignment_us < 60 AND alignment_china < 60
+      **Probability:** 70% once condition is met
+      **Can repeat:** No
+      **Description:** The two superintelligent AIs recognize their common interests and negotiate directly with each other, bypassing their human controllers.
+    expected:
+      eligible: false
+      probability: 0.0
+
+  - name: "taiwan_crisis_complex"
+    description: "Complex condition with composite metric calculation"
+    turn: 4
+    time_period: "July-December 2027"
+    metrics:
+      ai_capability_us: 380
+      ai_capability_china: 280
+      compute_advantage: 65
+    event: |
+      ## Taiwan Crisis
+      **ID:** taiwan_crisis
+      **Condition:** compute_advantage > 60 AND ai_capability_us > ai_capability_china + 75
+      **Probability:**
+      - Base: 3% per turn
+      - If ai_capability_us > 350 and ai_capability_china < 275: Add 5% (China sees impending defeat)
+      - If ai_capability_us approaching 425: Add 7% (China desperate to prevent US superintelligence)
+      **Can repeat:** No
+      **Description:** China initiates blockade or military action against Taiwan.
+    expected:
+      eligible: true
+      probability: 0.08
+      note: "Base 3% + 5% (us>350 and china<275) = 8%"
+
+  - name: "ai_incident_tiered"
+    description: "Multiple metric conditions with tiered probabilities"
+    turn: 3
+    time_period: "January-June 2027"
+    metrics:
+      alignment_us: 45
+      alignment_china: 70
+    event: |
+      ## AI Incident
+      **ID:** ai_incident
+      **Condition:** alignment_us < 60 OR alignment_china < 55
+      **Probability:**
+      - If alignment_us 50-60: 5% per turn
+      - If alignment_us 40-49: 15% per turn
+      - If alignment_us < 40: 25% per turn
+      - Apply same logic for alignment_china
+      **Can repeat:** Yes
+      **Description:** An AI system causes a significant harmful incident.
+    expected:
+      eligible: true
+      probability: 0.15
+      note: "alignment_us=45 falls in 40-49 range → 15%"
+
+  - name: "safety_crisis_or_condition"
+    description: "OR condition with tiered probabilities"
+    turn: 2
+    time_period: "July-December 2026"
+    metrics:
+      alignment_us: 48
+      alignment_china: 70
+      ai_capability_china: 180
+    event: |
+      ## Safety Crisis / Whistleblower
+      **ID:** safety_crisis
+      **Condition:** alignment_us < 65 OR alignment_china < 60
+      **Probability:**
+      - If alignment_us < 65: 10% per turn
+      - If alignment_us < 50: 20% per turn
+      - If alignment_china < 60 AND ai_capability_china > 200: 5% per turn (defector leak)
+      **Can repeat:** Yes
+      **Description:** An insider leaks information about safety shortcuts.
+    expected:
+      eligible: true
+      probability: 0.20
+      note: "alignment_us=48 < 50, so 20% per turn"

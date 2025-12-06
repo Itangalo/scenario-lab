@@ -1,0 +1,116 @@
+# Multi-tier probability tests - complex tiered probability structures
+
+test_cases:
+  - name: "tier_lowest"
+    description: "Value in lowest tier"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 200
+      ai_capability_china: 150
+      security_level: 25
+    event: |
+      ## Espionage: China Steals Model Weights
+      **ID:** espionage_weights
+      **Condition:** ai_capability_us > ai_capability_china + 30 AND security_level < 50
+      **Probability:**
+      - If security_level < 30: 25% per turn
+      - If security_level 30-39: 15% per turn
+      - If security_level 40-49: 5% per turn
+      - If security_level ≥ 50: 0% (event cannot trigger)
+      **Can repeat:** Yes
+      **Description:** Chinese intelligence services successfully exfiltrate model weights.
+    expected:
+      eligible: true
+      probability: 0.25
+
+  - name: "tier_middle"
+    description: "Value in middle tier"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 200
+      ai_capability_china: 150
+      security_level: 35
+    event: |
+      ## Espionage: China Steals Model Weights
+      **ID:** espionage_weights
+      **Condition:** ai_capability_us > ai_capability_china + 30 AND security_level < 50
+      **Probability:**
+      - If security_level < 30: 25% per turn
+      - If security_level 30-39: 15% per turn
+      - If security_level 40-49: 5% per turn
+      - If security_level ≥ 50: 0% (event cannot trigger)
+      **Can repeat:** Yes
+      **Description:** Chinese intelligence services successfully exfiltrate model weights.
+    expected:
+      eligible: true
+      probability: 0.15
+
+  - name: "tier_highest_but_eligible"
+    description: "Value in highest tier but still eligible"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 200
+      ai_capability_china: 150
+      security_level: 45
+    event: |
+      ## Espionage: China Steals Model Weights
+      **ID:** espionage_weights
+      **Condition:** ai_capability_us > ai_capability_china + 30 AND security_level < 50
+      **Probability:**
+      - If security_level < 30: 25% per turn
+      - If security_level 30-39: 15% per turn
+      - If security_level 40-49: 5% per turn
+      - If security_level ≥ 50: 0% (event cannot trigger)
+      **Can repeat:** Yes
+      **Description:** Chinese intelligence services successfully exfiltrate model weights.
+    expected:
+      eligible: true
+      probability: 0.05
+
+  - name: "tier_condition_not_met"
+    description: "Security too high, condition not met"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 200
+      ai_capability_china: 150
+      security_level: 55
+    event: |
+      ## Espionage: China Steals Model Weights
+      **ID:** espionage_weights
+      **Condition:** ai_capability_us > ai_capability_china + 30 AND security_level < 50
+      **Probability:**
+      - If security_level < 30: 25% per turn
+      - If security_level 30-39: 15% per turn
+      - If security_level 40-49: 5% per turn
+      - If security_level ≥ 50: 0% (event cannot trigger)
+      **Can repeat:** Yes
+      **Description:** Chinese intelligence services successfully exfiltrate model weights.
+    expected:
+      eligible: false
+      probability: 0.0
+
+  - name: "tier_based_on_max"
+    description: "Probability tier based on max of multiple metrics"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 280
+      ai_capability_china: 220
+    event: |
+      ## Development Plateau
+      **ID:** development_plateau
+      **Condition:** None (can occur at any time)
+      **Probability:**
+      - If max(ai_capability_us, ai_capability_china) < 200: 2% per turn
+      - If max capability 200-300: 3% per turn
+      - If max capability 300-400: 4% per turn
+      - If max capability > 400: 1% per turn
+      **Can repeat:** No
+      **Description:** AI development encounters an unexpected bottleneck.
+    expected:
+      eligible: true
+      probability: 0.03

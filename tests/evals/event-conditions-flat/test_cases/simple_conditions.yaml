@@ -1,0 +1,110 @@
+# Simple condition tests - basic thresholds and comparisons
+
+test_cases:
+  - name: "simple_gt_met"
+    description: "Simple greater-than condition that is met"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 200
+      ai_capability_china: 150
+    event: |
+      ## Algorithmic Breakthrough - US
+      **ID:** algorithmic_breakthrough_us
+      **Condition:** ai_capability_us > 150
+      **Probability:** 5% per turn
+      **Can repeat:** Yes
+      **Description:** OpenBrain achieves a significant algorithmic breakthrough.
+    expected:
+      eligible: true
+      probability: 0.05
+
+  - name: "simple_gt_not_met"
+    description: "Simple greater-than condition that is not met"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 140
+      ai_capability_china: 150
+    event: |
+      ## Algorithmic Breakthrough - US
+      **ID:** algorithmic_breakthrough_us
+      **Condition:** ai_capability_us > 150
+      **Probability:** 5% per turn
+      **Can repeat:** Yes
+      **Description:** OpenBrain achieves a significant algorithmic breakthrough.
+    expected:
+      eligible: false
+      probability: 0.0
+
+  - name: "simple_lt_met"
+    description: "Simple less-than condition that is met"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      alignment_us: 45
+    event: |
+      ## Safety Crisis
+      **ID:** safety_crisis
+      **Condition:** alignment_us < 65
+      **Probability:** 10% per turn
+      **Can repeat:** Yes
+      **Description:** An insider leaks information about safety shortcuts.
+    expected:
+      eligible: true
+      probability: 0.10
+
+  - name: "simple_and_both_met"
+    description: "AND condition where both parts are met"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 200
+      ai_capability_china: 150
+      security_level: 45
+    event: |
+      ## Espionage
+      **ID:** espionage_weights
+      **Condition:** ai_capability_us > ai_capability_china + 30 AND security_level < 50
+      **Probability:** 15% per turn
+      **Can repeat:** Yes
+      **Description:** Chinese intelligence successfully exfiltrate OpenBrain's model weights.
+    expected:
+      eligible: true
+      probability: 0.15
+
+  - name: "simple_and_one_not_met"
+    description: "AND condition where one part fails"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 200
+      ai_capability_china: 150
+      security_level: 55
+    event: |
+      ## Espionage
+      **ID:** espionage_weights
+      **Condition:** ai_capability_us > ai_capability_china + 30 AND security_level < 50
+      **Probability:** 15% per turn
+      **Can repeat:** Yes
+      **Description:** Chinese intelligence successfully exfiltrate OpenBrain's model weights.
+    expected:
+      eligible: false
+      probability: 0.0
+
+  - name: "simple_gte_met"
+    description: "Greater-than-or-equal condition that is met"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_capability_us: 350
+    event: |
+      ## Nationalization
+      **ID:** nationalization_us
+      **Condition:** ai_capability_us >= 350
+      **Probability:** 15% per turn
+      **Can repeat:** No
+      **Description:** US Government nationalizes OpenBrain.
+    expected:
+      eligible: true
+      probability: 0.15
