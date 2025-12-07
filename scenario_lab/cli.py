@@ -1,6 +1,7 @@
 """Command-line interface for Scenario Lab V4."""
 
 import argparse
+import json
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -68,6 +69,11 @@ def main():
     viz_parser = subparsers.add_parser("visualize", help="Generate charts for a run")
     viz_parser.add_argument("run_dir", type=Path, help="Path to run directory (e.g. scenarios/x/runs/run-123)")
 
+    # Costs command
+    costs_parser = subparsers.add_parser("costs", help="Display cost report for a run")
+    costs_parser.add_argument("run_dir", type=Path, help="Path to run directory")
+    costs_parser.add_argument("--detailed", action="store_true", help="Show detailed breakdown by turn")
+
     args = parser.parse_args()
 
     # Default to run if no command specified (backward compatibility)
@@ -105,6 +111,83 @@ def main():
             print("\n⚠️ Warnings:")
             for warning in result.warnings:
                 print(f"  - {warning}")
+        return
+
+    if args.command == "costs":
+        costs_file = args.run_dir / "costs.json"
+
+        if not costs_file.exists():
+            print(f"❌ No costs.json found in {args.run_dir}")
+            print("   This run may not have cost tracking enabled.")
+            return
+
+        try:
+            costs_data = json.loads(costs_file.read_text())
+        except json.JSONDecodeError as e:
+            print(f"❌ Error reading costs.json: {e}")
+            return
+
+        # Display cost report
+        print("=" * 60)
+        print("COST REPORT")
+        print("=" * 60)
+        print(f"Run: {args.run_dir.name}")
+        print(f"\nTotal cost: ${costs_data['total_cost_usd']:.4f}")
+        print(f"Total tokens: {costs_data['total_tokens']:,}")
+
+        num_turns = len(costs_data.get('by_turn', []))
+        if num_turns > 0:
+            avg_cost = costs_data['total_cost_usd'] / num_turns
+            avg_tokens = costs_data['total_tokens'] / num_turns
+            print(f"Average per turn: ${avg_cost:.4f} ({avg_tokens:,.0f} tokens)")
+
+        # By task summary
+        if 'by_task_total' in costs_data:
+            print("\nBy Task (Total):")
+            sorted_tasks = sorted(
+                costs_data['by_task_total'].items(),
+                key=lambda x: x[1]['cost_usd'],
+                reverse=True
+            )
+            for task_name, task_data in sorted_tasks:
+                print(
+                    f"  {task_name:20s}: ${task_data['cost_usd']:.4f} "
+                    f"({task_data['tokens']:,} tokens, {task_data['calls']} calls)"
+                )
+
+        # By model summary
+        if 'by_model' in costs_data:
+            print("\nBy Model:")
+            sorted_models = sorted(
+                costs_data['by_model'].items(),
+                key=lambda x: x[1]['cost_usd'],
+                reverse=True
+            )
+            for model, data in sorted_models:
+                print(
+                    f"  {model:40s}: ${data['cost_usd']:.4f} "
+                    f"({data['tokens']:,} tokens, {data['calls']} calls)"
+                )
+
+        # Detailed: by turn
+        if args.detailed and 'by_turn' in costs_data:
+            print("\nBy Turn:")
+            for turn_data in costs_data['by_turn']:
+                turn = turn_data['turn']
+                print(
+                    f"  Turn {turn:2d}: ${turn_data['cost_usd']:.4f} "
+                    f"({turn_data['tokens']:,} tokens)"
+                )
+
+                # Task breakdown for this turn
+                if 'by_task' in turn_data:
+                    for task_name, task_data in sorted(turn_data['by_task'].items()):
+                        print(
+                            f"    {task_name:18s}: ${task_data['cost_usd']:.4f} "
+                            f"({task_data['tokens']:,} tokens)"
+                        )
+
+        print("=" * 60)
         return
 
     if args.command == "resume":

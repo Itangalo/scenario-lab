@@ -102,6 +102,25 @@ class LLMResponse:
 
         return metrics, narrative, notepad
 
+    def get_usage(self) -> Optional["TokenUsage"]:
+        """Extract token usage from OpenRouter raw_response.
+
+        Returns:
+            TokenUsage object or None if usage data not available
+        """
+        from .cost import TokenUsage
+
+        usage_data = self.raw_response.get("usage")
+        if not usage_data:
+            return None
+
+        return TokenUsage(
+            prompt_tokens=usage_data.get("prompt_tokens", 0),
+            completion_tokens=usage_data.get("completion_tokens", 0),
+            total_tokens=usage_data.get("total_tokens", 0),
+            model=self.raw_response.get("model", "unknown")
+        )
+
 
 class LLMClient:
     """Client for OpenRouter API with fallback support."""
@@ -262,7 +281,16 @@ class MockLLMClient:
         # Match based on keywords in prompts
         for key, content in self.responses.items():
             if key.lower() in user_prompt.lower() or key.lower() in system_prompt.lower():
-                return LLMResponse(content=content, raw_response={})
+                # Include mock usage data for cost tracking
+                raw_response = {
+                    "usage": {
+                        "prompt_tokens": 100,
+                        "completion_tokens": 50,
+                        "total_tokens": 150
+                    },
+                    "model": self.models[0] if self.models else "mock/model"
+                }
+                return LLMResponse(content=content, raw_response=raw_response)
 
         raise ValueError(f"No mock response configured for this prompt. Add key to responses dict.")
 

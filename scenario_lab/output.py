@@ -245,6 +245,62 @@ class OutputManager:
         """
         self.finalize_summary(results)
 
+    def save_costs(self, run_costs):
+        """Save cost summary to costs.json.
+
+        Args:
+            run_costs: RunCosts object with complete cost data
+        """
+        if not self.run_dir:
+            raise RuntimeError("Must call start_run() first")
+
+        # Convert RunCosts to JSON-serializable format
+        costs_data = {
+            "total_cost_usd": round(run_costs.total_cost_usd, 4),
+            "total_tokens": run_costs.total_tokens,
+            "by_turn": [
+                {
+                    "turn": turn,
+                    "cost_usd": round(tc.total_cost_usd, 4),
+                    "tokens": tc.total_tokens,
+                    "prompt_tokens": sum(task.prompt_tokens for task in tc.by_task.values()),
+                    "completion_tokens": sum(task.completion_tokens for task in tc.by_task.values()),
+                    "by_task": {
+                        name: {
+                            "cost_usd": round(task.total_cost_usd, 4),
+                            "tokens": task.total_tokens,
+                            "prompt_tokens": task.prompt_tokens,
+                            "completion_tokens": task.completion_tokens,
+                            "calls": task.calls,
+                        }
+                        for name, task in tc.by_task.items()
+                    }
+                }
+                for turn, tc in sorted(run_costs.by_turn.items())
+            ],
+            "by_task_total": {
+                name: {
+                    "cost_usd": round(task.total_cost_usd, 4),
+                    "tokens": task.total_tokens,
+                    "prompt_tokens": task.prompt_tokens,
+                    "completion_tokens": task.completion_tokens,
+                    "calls": task.calls,
+                }
+                for name, task in run_costs.by_task_aggregated.items()
+            },
+            "by_model": {
+                model: {
+                    "cost_usd": round(data["cost_usd"], 4),
+                    "tokens": data["tokens"],
+                    "calls": data["calls"],
+                }
+                for model, data in run_costs.by_model.items()
+            }
+        }
+
+        costs_file = self.run_dir / "costs.json"
+        costs_file.write_text(json.dumps(costs_data, indent=2, ensure_ascii=False))
+
     def _save_config(self):
         """Save scenario configuration snapshot."""
         config = {

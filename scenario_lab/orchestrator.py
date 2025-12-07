@@ -45,6 +45,10 @@ class Orchestrator:
         self.output_manager = output_manager
         self._owned_clients = []  # Clients we created and need to close
 
+        # Initialize cost tracking
+        from .cost import CostTracker
+        self.cost_tracker = CostTracker()
+
         # Setup LLM clients
         if llm_client is None:
             # Create clients based on config
@@ -175,6 +179,29 @@ class Orchestrator:
         for client in self._owned_clients:
             client.close()
 
+    def _record_llm_call(self, turn: int, task_name: str, response: LLMResponse):
+        """Record token usage and cost from an LLM call.
+
+        Args:
+            turn: Turn number
+            task_name: Task identifier (e.g., "events", "actor:government", "rules")
+            response: LLM response with usage data
+        """
+        from .cost import CostCalculator
+
+        usage = response.get_usage()
+        if usage:
+            cost_details = CostCalculator.calculate_cost(usage)
+            self.cost_tracker.record_call(turn, task_name, cost_details)
+
+    def get_run_costs(self):
+        """Get complete cost summary for this run.
+
+        Returns:
+            RunCosts object with all cost aggregations
+        """
+        return self.cost_tracker.get_run_costs()
+
     def run_turn(self, turn: int) -> TurnResult:
         """Execute one complete turn.
 
@@ -225,13 +252,18 @@ class Orchestrator:
 
         # Step 5: Update historical summary
         print("\n[5/5] Updating historical summary...")
-        new_historical_summary = self._run_summarization_step(narrative)
+        new_historical_summary = self._run_summarization_step(turn, narrative)
         print(f"  → Summary updated")
         if self.output_manager:
             self.output_manager.save_historical_summary(turn, new_historical_summary)
 
         # Update scenario state
         self._update_scenario_state(new_metrics, narrative, new_historical_summary, notepad, turn, time_period)
+
+        # Display turn costs
+        turn_costs = self.cost_tracker.get_turn_costs(turn)
+        if turn_costs:
+            print(f"\n💰 Turn {turn} cost: ${turn_costs.total_cost_usd:.4f} ({turn_costs.total_tokens:,} tokens)")
 
         # Build and return result
         return TurnResult(
@@ -253,6 +285,7 @@ class Orchestrator:
         """
         system, user = self.prompt_builder.build_events_prompt(turn)
         response = self.llm_clients["events"].complete(system, user)
+        self._record_llm_call(turn, "events", response)
 
         try:
             # Parse LLM response: list of events with probabilities
@@ -321,6 +354,7 @@ class Orchestrator:
 
             system, user = self.prompt_builder.build_actor_prompt(actor_id, turn, triggered_events)
             response = client.complete(system, user)
+            self._record_llm_call(turn, f"actor:{actor_id}", response)
             outputs[actor_id] = response.content
 
             # Update actor's last actions in scenario
@@ -347,6 +381,7 @@ class Orchestrator:
         """
         system, user = self.prompt_builder.build_rules_prompt(turn, actor_outputs, triggered_events)
         response = self.llm_clients["rules"].complete(system, user)
+        self._record_llm_call(turn, "rules", response)
         return response.content
 
     def _run_metrics_step(
@@ -366,6 +401,7 @@ class Orchestrator:
             turn, actor_outputs, triggered_events
         )
         response = self.llm_clients["metrics"].complete(system, user)
+        self._record_llm_call(turn, "metrics", response)
 
         try:
             metrics, narrative, notepad = response.extract_metrics_and_narrative()
@@ -400,22 +436,24 @@ class Orchestrator:
 
         return metrics, narrative, notepad
 
-    def _run_summarization_step(self, current_narrative: str) -> str:
+    def _run_summarization_step(self, turn: int, current_narrative: str) -> str:
         """Step 5: Update historical summary.
 
         Args:
+            turn: Current turn number
             current_narrative: Narrative of the current turn
 
         Returns:
             Updated historical summary
         """
         current_summary = self.scenario.world_state.historical_summary
-        
+
         # If no history yet, the current narrative becomes the start of history (or we summarize it immediately)
         # For consistency, let's summarize even the first turn if it's long
-        
+
         system, user = self.prompt_builder.build_summary_prompt(current_summary, current_narrative)
         response = self.llm_clients["summary"].complete(system, user)
+        self._record_llm_call(turn, "summary", response)
         return response.content
 
     def _mark_event_occurred(self, event_id: str):
@@ -468,6 +506,25 @@ def run_simulation(
             result = orchestrator.run_turn(turn)
             results.append(result)
             scenario.turn_history.append(result)
+
+        # Display final cost summary
+        run_costs = orchestrator.get_run_costs()
+        if run_costs and run_costs.total_tokens > 0:
+            print(f"\n{'='*60}")
+            print(f"SIMULATION COMPLETE")
+            print(f"{'='*60}")
+            print(f"Total cost: ${run_costs.total_cost_usd:.4f} ({run_costs.total_tokens:,} tokens)")
+            if len(results) > 0:
+                avg_cost = run_costs.total_cost_usd / len(results)
+                avg_tokens = run_costs.total_tokens / len(results)
+                print(f"Average per turn: ${avg_cost:.4f} ({avg_tokens:,.0f} tokens)")
+
+        # Save costs if output manager is available
+        if output_manager and run_costs:
+            output_manager.save_costs(run_costs)
+            if output_manager.run_dir:
+                print(f"\nCost report saved: {output_manager.run_dir / 'costs.json'}")
+
     finally:
         # Close orchestrator's owned clients if any
         orchestrator.close()
