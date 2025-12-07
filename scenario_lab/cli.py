@@ -48,6 +48,9 @@ def main():
     run_parser.add_argument(
         "--quiet", action="store_true", help="Minimal output mode"
     )
+    run_parser.add_argument(
+        "--validate", action="store_true", help="Validate scenario before running"
+    )
 
     # Validate command
     validate_parser = subparsers.add_parser("validate", help="Validate a scenario")
@@ -591,6 +594,25 @@ def main():
     print(f"  Actors: {len(scenario.actors)}")
     print(f"  Metrics: {len(scenario.metrics.metrics)}")
     print(f"  Events: {len(scenario.events)}")
+
+    # Validate scenario if requested
+    if hasattr(args, 'validate') and args.validate:
+        print("\nValidating scenario...")
+        result = validate_scenario(args.scenario)
+
+        if result.warnings:
+            print("⚠️  Warnings:")
+            for warning in result.warnings:
+                print(f"  - {warning}")
+
+        if result.errors:
+            print("\n❌ Validation FAILED with the following errors:")
+            for error in result.errors:
+                print(f"  - {error}")
+            print("\nFix the errors above before running the simulation.")
+            return
+        else:
+            print("✅ Scenario validation passed!\n")
 
     if args.model:
         # Override all task models if --model is specified

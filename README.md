@@ -52,19 +52,37 @@ cp .env.example .env
 
 ```bash
 # Run a simulation
-python -m scenario_lab.cli scenarios/sweden-ai-2030
+python -m scenario_lab.cli run scenarios/sweden-ai-2030
 
 # Run with specific number of turns
-python -m scenario_lab.cli scenarios/sweden-ai-2030 --turns 5
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --turns 5
 
 # Override the model
-python -m scenario_lab.cli scenarios/sweden-ai-2030 --model anthropic/claude-opus-4
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --model anthropic/claude-opus-4
 
 # Preview prompts without running (dry run)
-python -m scenario_lab.cli scenarios/sweden-ai-2030 --dry-run
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --dry-run
 
 # Override configuration settings at runtime
-python -m scenario_lab.cli scenarios/sweden-ai-2030 --override output_language=Swedish --override llm.temperature=0.5
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --override output_language=Swedish --override llm.temperature=0.5
+
+# Validate scenario before running
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --validate
+
+# Validate without running
+python -m scenario_lab.cli validate scenarios/sweden-ai-2030
+
+# Estimate costs before running
+python -m scenario_lab.cli estimate scenarios/sweden-ai-2030 --turns 10
+
+# View cost report for completed run
+python -m scenario_lab.cli costs scenarios/sweden-ai-2030/runs/run-20251205-120000 --detailed
+
+# Disable progress tracking for cleaner logs
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --no-progress
+
+# Minimal output mode
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --quiet
 ```
 
 ### Output
@@ -75,12 +93,123 @@ Results are saved in timestamped directories:
 scenarios/*/runs/run-YYYYMMDD-HHMMSS/
 ├── config.json              # Scenario configuration
 ├── summary.json             # Final results
+├── costs.json               # Token usage and cost tracking
 └── turn-XX/
     ├── 1-events.json        # Triggered events
     ├── 2-actors/            # Actor outputs (markdown)
     ├── 3-metric-rules.md    # Updated rules
     ├── 4-metrics.json       # Updated metrics
     └── 4-world-state.md     # Turn narrative
+```
+
+## Key Features
+
+### Scenario Validation
+
+Comprehensive validation catches errors before expensive LLM calls:
+
+**What it validates:**
+- Metric references in actors, events, and rules
+- Event probability formulas (static values and mathematical expressions)
+- LLM configuration (model strings, temperature, max_tokens)
+- Actor references (ensuring all configured actors have files)
+- Time configuration (start_date format, max_turns limits)
+
+**Smart probability handling:**
+- Static probabilities: "10%", "5 percent per round"
+- Mathematical formulas: `unemployment / 100`, `2 * ai_capability / 100`
+- Natural language: "Double the value of unemployment" (LLM will interpret)
+
+**Usage:**
+```bash
+# Validate before running (blocks execution on errors)
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --validate
+
+# Validate without running
+python -m scenario_lab.cli validate scenarios/sweden-ai-2030
+
+# Example output:
+# ✅ Scenario is valid!
+# ⚠️  Warnings:
+#   - Actor 'government' has no short description
+```
+
+### Cost Tracking and Estimation
+
+Track token usage and estimate costs to budget and optimize LLM spending:
+
+**Features:**
+- Real-time token counting for all LLM API calls
+- Cost estimation using pricing table for common models
+- Breakdown by turn, task (events/actors/rules/metrics), and model
+- Pre-run cost estimation to plan experiments
+
+**Usage:**
+```bash
+# Estimate costs before running
+python -m scenario_lab.cli estimate scenarios/sweden-ai-2030 --turns 10
+
+# Example output:
+# Estimated token usage per turn: ~13,000 tokens
+# Total simulation: ~130,000 tokens
+# Estimated cost: $0.45 - $0.65 USD
+
+# View cost report after run
+python -m scenario_lab.cli costs scenarios/sweden-ai-2030/runs/run-20251205-120000
+
+# Example output:
+# Total cost: $0.52 USD
+# Total tokens: 145,234
+# Average per turn: $0.052 USD (14,523 tokens)
+#
+# By Task:
+#   Actors: $0.23 (65,321 tokens, 40 calls)
+#   Metrics: $0.10 (28,234 tokens, 10 calls)
+#   Events: $0.07 (20,145 tokens, 10 calls)
+
+# Detailed breakdown by turn
+python -m scenario_lab.cli costs run-20251205-120000 --detailed
+```
+
+**Cost data saved to `costs.json`:**
+- Total tokens and cost
+- Breakdown by turn, task, and model
+- Individual call history
+
+### Progress Tracking
+
+Real-time feedback during long-running simulations:
+
+**Features:**
+- Turn-by-turn progress with numbered headers
+- Step status updates (Events, Actors, Rules, Metrics)
+- Estimated time remaining based on average turn duration
+- Cost tracking during execution
+- Configurable verbosity levels
+
+**Display example:**
+```
+============================================================
+TURN 3/10
+Estimated time remaining: 14.5 minutes
+Cost so far: $0.15 | Projected total: $0.50
+============================================================
+  [Events] ✓ Complete
+  [Actors] Processing actor 2/4...
+  [Rules] ✓ Complete
+  [Metrics] Processing...
+```
+
+**Options:**
+```bash
+# Default: progress tracking enabled
+python -m scenario_lab.cli run scenarios/sweden-ai-2030
+
+# Disable for cleaner logs
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --no-progress
+
+# Minimal output
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --quiet
 ```
 
 ## LLM Output Parsing Requirements
@@ -324,10 +453,14 @@ OVERALL SCORE                 : 91.7%
 ✅ Turn execution engine (orchestrator.py)
 ✅ CLI interface (cli.py)
 ✅ Output persistence (output.py)
-✅ LLM evaluation suite for event conditions (tests/evals/llm-event-conditions/)
+✅ LLM evaluation suite for event conditions (Issue #120)
+✅ Flat prompt evaluation suite for event conditions
+✅ Progress tracking and real-time feedback (Issue #133)
+✅ Cost tracking and estimation (Issue #137)
+✅ Comprehensive scenario validation (Issue #134)
+✅ Resume and branch functionality (Issue #129)
 
 ### Next Steps
-✅ LLM evaluation suite for event conditions (Issue #120)
 ⬜ End-to-end testing with real LLM
 ⬜ Additional example scenarios
 ⬜ Multi-run analysis tools
