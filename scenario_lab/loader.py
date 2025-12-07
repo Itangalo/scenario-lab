@@ -209,7 +209,26 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
     # Check for base scenario
     if "base" in data:
         base_path_str = data.pop("base")  # Remove 'base' from data
+
+        # SECURITY: Validate base path doesn't escape scenario directory structure
         base_path = (path.parent / base_path_str).resolve()
+
+        # Get the absolute path of the current scenario's parent (allows sibling scenarios)
+        scenario_root = path.parent.resolve()
+
+        # Ensure base_path is within the scenarios directory structure
+        # Allow base scenarios from parent directory (for shared base scenarios)
+        # but prevent arbitrary filesystem access
+        try:
+            # Try to make base_path relative to scenario_root.parent
+            # This allows ../base-scenario but not ../../etc/passwd
+            base_path.relative_to(scenario_root.parent)
+        except ValueError:
+            raise ValueError(
+                f"Security: Base scenario path '{base_path_str}' attempts to escape "
+                f"allowed directory structure. Base scenarios must be relative paths "
+                f"within the scenarios directory."
+            )
 
         if not base_path.exists():
             raise FileNotFoundError(f"Base scenario not found: {base_path}")
