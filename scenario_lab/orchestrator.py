@@ -29,6 +29,7 @@ class Orchestrator:
         scenario: Scenario,
         llm_client: Optional[Union[LLMClientProtocol, dict[str, LLMClientProtocol]]] = None,
         output_manager: Optional["OutputManager"] = None,
+        progress_tracker: Optional["ProgressTracker"] = None,
     ):
         """Initialize orchestrator.
 
@@ -39,10 +40,12 @@ class Orchestrator:
                 - Dict of clients {"events": client, "actors": {...}, "rules": client, "metrics": client}
                 - None (creates clients based on scenario.config.llm)
             output_manager: Optional OutputManager for incremental writing
+            progress_tracker: Optional ProgressTracker for progress display
         """
         self.scenario = scenario
         self.prompt_builder = PromptBuilder(scenario)
         self.output_manager = output_manager
+        self.progress_tracker = progress_tracker
         self._owned_clients = []  # Clients we created and need to close
 
         # Initialize cost tracking
@@ -217,43 +220,77 @@ class Orchestrator:
             self.scenario.config.start_date, turn, self.scenario.config.time_scale
         )
 
-        print(f"\n{'='*60}")
-        print(f"TURN {turn}: {time_period}")
-        print(f"{'='*60}")
+        # Start turn tracking
+        if self.progress_tracker:
+            self.progress_tracker.start_turn(turn, time_period)
+        else:
+            print(f"\n{'='*60}")
+            print(f"TURN {turn}: {time_period}")
+            print(f"{'='*60}")
 
         # Step 1: Determine events
-        print("\n[1/5] Determining external events...")
-        triggered_events = self._run_events_step(turn)
-        print(f"  → {len(triggered_events)} events triggered")
+        if self.progress_tracker:
+            with self.progress_tracker.start_step(1, "") as step:
+                triggered_events = self._run_events_step(turn)
+                step.update(f"{len(triggered_events)} events triggered")
+        else:
+            print("\n[1/5] Determining external events...")
+            triggered_events = self._run_events_step(turn)
+            print(f"  → {len(triggered_events)} events triggered")
+
         if self.output_manager:
             self.output_manager.save_events(turn, triggered_events)
 
         # Step 2: Get actor actions
-        print("\n[2/5] Getting actor actions...")
-        actor_outputs = self._run_actors_step(turn, triggered_events)
-        print(f"  → {len(actor_outputs)} actors responded")
+        if self.progress_tracker:
+            with self.progress_tracker.start_step(2, "") as step:
+                actor_outputs = self._run_actors_step(turn, triggered_events)
+                step.update(f"{len(actor_outputs)} actors responded")
+        else:
+            print("\n[2/5] Getting actor actions...")
+            actor_outputs = self._run_actors_step(turn, triggered_events)
+            print(f"  → {len(actor_outputs)} actors responded")
 
         # Step 3: Update metric rules
-        print("\n[3/5] Updating metric rules...")
-        new_rules = self._run_rules_step(turn, actor_outputs, triggered_events)
-        self.scenario.metric_rules = new_rules
-        print(f"  → Rules updated")
+        if self.progress_tracker:
+            with self.progress_tracker.start_step(3, "") as step:
+                new_rules = self._run_rules_step(turn, actor_outputs, triggered_events)
+                self.scenario.metric_rules = new_rules
+                step.update("Rules updated")
+        else:
+            print("\n[3/5] Updating metric rules...")
+            new_rules = self._run_rules_step(turn, actor_outputs, triggered_events)
+            self.scenario.metric_rules = new_rules
+            print(f"  → Rules updated")
+
         if self.output_manager:
             self.output_manager.save_metric_rules(turn, new_rules)
 
         # Step 4: Update metrics and generate narrative
-        print("\n[4/5] Updating metrics and generating narrative...")
-        new_metrics, narrative, notepad = self._run_metrics_step(turn, actor_outputs, triggered_events)
-        print(f"  → Metrics and narrative updated")
+        if self.progress_tracker:
+            with self.progress_tracker.start_step(4, "") as step:
+                new_metrics, narrative, notepad = self._run_metrics_step(turn, actor_outputs, triggered_events)
+                step.update("Metrics and narrative updated")
+        else:
+            print("\n[4/5] Updating metrics and generating narrative...")
+            new_metrics, narrative, notepad = self._run_metrics_step(turn, actor_outputs, triggered_events)
+            print(f"  → Metrics and narrative updated")
+
         if self.output_manager:
             self.output_manager.save_metrics_and_narrative(turn, new_metrics, narrative)
             self.output_manager.save_notepad(turn, notepad)
             self.output_manager.update_summary(turn, new_metrics)
 
         # Step 5: Update historical summary
-        print("\n[5/5] Updating historical summary...")
-        new_historical_summary = self._run_summarization_step(turn, narrative)
-        print(f"  → Summary updated")
+        if self.progress_tracker:
+            with self.progress_tracker.start_step(5, "") as step:
+                new_historical_summary = self._run_summarization_step(turn, narrative)
+                step.update("Summary updated")
+        else:
+            print("\n[5/5] Updating historical summary...")
+            new_historical_summary = self._run_summarization_step(turn, narrative)
+            print(f"  → Summary updated")
+
         if self.output_manager:
             self.output_manager.save_historical_summary(turn, new_historical_summary)
 
@@ -263,7 +300,10 @@ class Orchestrator:
         # Display turn costs
         turn_costs = self.cost_tracker.get_turn_costs(turn)
         if turn_costs:
-            print(f"\n💰 Turn {turn} cost: ${turn_costs.total_cost_usd:.4f} ({turn_costs.total_tokens:,} tokens)")
+            if self.progress_tracker:
+                self.progress_tracker.complete_turn(turn, turn_costs.total_cost_usd, turn_costs.total_tokens)
+            else:
+                print(f"\n💰 Turn {turn} cost: ${turn_costs.total_cost_usd:.4f} ({turn_costs.total_tokens:,} tokens)")
 
         # Build and return result
         return TurnResult(
@@ -481,6 +521,7 @@ def run_simulation(
     num_turns: int = None,
     output_manager: Optional["OutputManager"] = None,
     start_turn: int = 1,
+    progress_tracker: Optional["ProgressTracker"] = None,
 ) -> list[TurnResult]:
     """Run a complete simulation.
 
@@ -493,13 +534,18 @@ def run_simulation(
         num_turns: Number of turns to run (default: from config)
         output_manager: Optional OutputManager for incremental writing
         start_turn: Turn number to start from (default: 1, for resume: N+1)
+        progress_tracker: Optional ProgressTracker for progress display
 
     Returns:
         List of TurnResults
     """
-    orchestrator = Orchestrator(scenario, llm_client, output_manager)
+    orchestrator = Orchestrator(scenario, llm_client, output_manager, progress_tracker)
     max_turns = num_turns or scenario.config.max_turns
     results = []
+
+    # Start simulation tracking
+    if progress_tracker:
+        progress_tracker.start_simulation()
 
     try:
         for turn in range(start_turn, max_turns + 1):
@@ -510,14 +556,17 @@ def run_simulation(
         # Display final cost summary
         run_costs = orchestrator.get_run_costs()
         if run_costs and run_costs.total_tokens > 0:
-            print(f"\n{'='*60}")
-            print(f"SIMULATION COMPLETE")
-            print(f"{'='*60}")
-            print(f"Total cost: ${run_costs.total_cost_usd:.4f} ({run_costs.total_tokens:,} tokens)")
-            if len(results) > 0:
-                avg_cost = run_costs.total_cost_usd / len(results)
-                avg_tokens = run_costs.total_tokens / len(results)
-                print(f"Average per turn: ${avg_cost:.4f} ({avg_tokens:,.0f} tokens)")
+            if progress_tracker:
+                progress_tracker.complete_simulation(run_costs.total_cost_usd, run_costs.total_tokens)
+            else:
+                print(f"\n{'='*60}")
+                print(f"SIMULATION COMPLETE")
+                print(f"{'='*60}")
+                print(f"Total cost: ${run_costs.total_cost_usd:.4f} ({run_costs.total_tokens:,} tokens)")
+                if len(results) > 0:
+                    avg_cost = run_costs.total_cost_usd / len(results)
+                    avg_tokens = run_costs.total_tokens / len(results)
+                    print(f"Average per turn: ${avg_cost:.4f} ({avg_tokens:,.0f} tokens)")
 
         # Save costs if output manager is available
         if output_manager and run_costs:

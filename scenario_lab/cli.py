@@ -42,6 +42,12 @@ def main():
         action="append",
         help="Override scenario config (e.g. 'output_language=Swedish' or 'llm.temperature=0.5')",
     )
+    run_parser.add_argument(
+        "--no-progress", action="store_true", help="Disable progress display"
+    )
+    run_parser.add_argument(
+        "--quiet", action="store_true", help="Minimal output mode"
+    )
 
     # Validate command
     validate_parser = subparsers.add_parser("validate", help="Validate a scenario")
@@ -627,9 +633,24 @@ def main():
     run_dir = output_manager.start_run()
     print(f"Output directory: {run_dir.name}\n")
 
+    # Create progress tracker
+    from .progress import ProgressTracker
+
+    num_turns = args.turns or scenario.config.max_turns
+    progress_tracker = ProgressTracker(
+        total_turns=num_turns,
+        actors=scenario.config.actor_ids,
+        enabled=not args.no_progress,
+        quiet=args.quiet
+    )
+
     # run_simulation will create LLM clients and write incrementally
     results = run_simulation(
-        scenario, llm_client=None, num_turns=args.turns, output_manager=output_manager
+        scenario,
+        llm_client=None,
+        num_turns=args.turns,
+        output_manager=output_manager,
+        progress_tracker=progress_tracker
     )
 
     # Mark simulation as complete
