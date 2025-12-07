@@ -74,6 +74,12 @@ def main():
     costs_parser.add_argument("run_dir", type=Path, help="Path to run directory")
     costs_parser.add_argument("--detailed", action="store_true", help="Show detailed breakdown by turn")
 
+    # Estimate command
+    estimate_parser = subparsers.add_parser("estimate", help="Estimate costs before running")
+    estimate_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
+    estimate_parser.add_argument("--turns", type=int, help="Number of turns (default: from config)")
+    estimate_parser.add_argument("--model", type=str, help="Override all LLM models for estimation")
+
     args = parser.parse_args()
 
     # Default to run if no command specified (backward compatibility)
@@ -188,6 +194,37 @@ def main():
                         )
 
         print("=" * 60)
+        return
+
+    if args.command == "estimate":
+        from .estimator import CostEstimator, format_estimate_report
+
+        print(f"Loading scenario: {args.scenario}...")
+        try:
+            scenario = load_scenario(args.scenario)
+        except Exception as e:
+            print(f"❌ Error loading scenario: {e}")
+            return
+
+        # Override model if specified
+        if args.model:
+            scenario.config.llm.events = args.model
+            scenario.config.llm.actors = {}  # Will use events model
+            scenario.config.llm.rules = args.model
+            scenario.config.llm.metrics = args.model
+            scenario.config.llm.summary = args.model
+
+        # Determine number of turns
+        num_turns = args.turns or scenario.config.max_turns
+
+        # Estimate costs
+        print(f"Estimating costs for {num_turns} turns...\n")
+        estimator = CostEstimator(scenario)
+        estimate = estimator.estimate_costs(num_turns)
+
+        # Display report
+        report = format_estimate_report(estimate, scenario.config.name, num_turns)
+        print(report)
         return
 
     if args.command == "resume":
