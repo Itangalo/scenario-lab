@@ -1,8 +1,10 @@
 """Scenario validator."""
 
 from pathlib import Path
-from typing import List, Set
+from typing import List, Set, Any
 import re
+import ast
+import operator
 from datetime import datetime
 from .models import Scenario
 from .loader import load_scenario
@@ -74,8 +76,183 @@ def parse_static_probability(prob_str: str) -> float:
     return value
 
 
+class SafeExpressionEvaluator(ast.NodeVisitor):
+    """AST-based safe expression evaluator for probability formulas.
+
+    Allows only:
+    - Arithmetic operators: +, -, *, /, //, %, **
+    - Comparison operators: <, <=, >, >=, ==, !=
+    - Boolean operators: and, or, not
+    - Functions: min(), max()
+    - Literals: numbers
+    - Variables: metric names from context
+
+    Rejects:
+    - Imports, attribute access, subscripting
+    - Assignments, control flow
+    - Function definitions
+    - Any other potentially dangerous operations
+    """
+
+    # Allowed operators
+    ALLOWED_OPS = {
+        ast.Add: operator.add,
+        ast.Sub: operator.sub,
+        ast.Mult: operator.mul,
+        ast.Div: operator.truediv,
+        ast.FloorDiv: operator.floordiv,
+        ast.Mod: operator.mod,
+        ast.Pow: operator.pow,
+        ast.USub: operator.neg,
+        ast.UAdd: operator.pos,
+    }
+
+    ALLOWED_COMPARISONS = {
+        ast.Lt: operator.lt,
+        ast.LtE: operator.le,
+        ast.Gt: operator.gt,
+        ast.GtE: operator.ge,
+        ast.Eq: operator.eq,
+        ast.NotEq: operator.ne,
+    }
+
+    ALLOWED_BOOL_OPS = {
+        ast.And: lambda x, y: x and y,
+        ast.Or: lambda x, y: x or y,
+    }
+
+    ALLOWED_FUNCTIONS = {
+        'min': min,
+        'max': max,
+    }
+
+    def __init__(self, context: dict):
+        """Initialize evaluator with variable context.
+
+        Args:
+            context: Dict mapping variable names to values
+        """
+        self.context = context
+
+    def eval(self, expression: str) -> Any:
+        """Evaluate an expression safely.
+
+        Args:
+            expression: String expression to evaluate
+
+        Returns:
+            Result of evaluation
+
+        Raises:
+            ValueError: If expression contains unsafe operations
+            SyntaxError: If expression has invalid syntax
+        """
+        try:
+            tree = ast.parse(expression, mode='eval')
+        except SyntaxError as e:
+            raise SyntaxError(f"Invalid syntax in expression: {e}")
+
+        return self.visit(tree.body)
+
+    def visit_BinOp(self, node):
+        """Handle binary operations (+, -, *, /, etc.)."""
+        op_type = type(node.op)
+        if op_type not in self.ALLOWED_OPS:
+            raise ValueError(f"Operation {op_type.__name__} not allowed")
+
+        left = self.visit(node.left)
+        right = self.visit(node.right)
+        op_func = self.ALLOWED_OPS[op_type]
+
+        return op_func(left, right)
+
+    def visit_UnaryOp(self, node):
+        """Handle unary operations (-, +)."""
+        op_type = type(node.op)
+        if op_type not in self.ALLOWED_OPS:
+            raise ValueError(f"Unary operation {op_type.__name__} not allowed")
+
+        operand = self.visit(node.operand)
+        op_func = self.ALLOWED_OPS[op_type]
+
+        return op_func(operand)
+
+    def visit_Compare(self, node):
+        """Handle comparison operations (<, >, ==, etc.)."""
+        left = self.visit(node.left)
+
+        for op, comparator in zip(node.ops, node.comparators):
+            op_type = type(op)
+            if op_type not in self.ALLOWED_COMPARISONS:
+                raise ValueError(f"Comparison {op_type.__name__} not allowed")
+
+            right = self.visit(comparator)
+            op_func = self.ALLOWED_COMPARISONS[op_type]
+
+            if not op_func(left, right):
+                return False
+            left = right
+
+        return True
+
+    def visit_BoolOp(self, node):
+        """Handle boolean operations (and, or)."""
+        op_type = type(node.op)
+        if op_type not in self.ALLOWED_BOOL_OPS:
+            raise ValueError(f"Boolean operation {op_type.__name__} not allowed")
+
+        op_func = self.ALLOWED_BOOL_OPS[op_type]
+        values = [self.visit(value) for value in node.values]
+
+        result = values[0]
+        for value in values[1:]:
+            result = op_func(result, value)
+
+        return result
+
+    def visit_Call(self, node):
+        """Handle function calls (min, max only)."""
+        if not isinstance(node.func, ast.Name):
+            raise ValueError("Only simple function calls are allowed")
+
+        func_name = node.func.id
+        if func_name not in self.ALLOWED_FUNCTIONS:
+            raise ValueError(f"Function '{func_name}' not allowed")
+
+        # Evaluate arguments
+        args = [self.visit(arg) for arg in node.args]
+
+        # Call the function
+        func = self.ALLOWED_FUNCTIONS[func_name]
+        return func(*args)
+
+    def visit_Name(self, node):
+        """Handle variable names (metric IDs from context)."""
+        var_name = node.id
+        if var_name not in self.context:
+            raise NameError(f"Variable '{var_name}' not defined in context")
+
+        return self.context[var_name]
+
+    def visit_Constant(self, node):
+        """Handle numeric constants."""
+        return node.value
+
+    # Python 3.7 compatibility - ast.Num is deprecated in 3.8+
+    def visit_Num(self, node):
+        """Handle numeric constants (Python 3.7 compatibility)."""
+        return node.n
+
+    def generic_visit(self, node):
+        """Reject any node types not explicitly handled."""
+        raise ValueError(
+            f"Expression contains unsupported operation: {type(node).__name__}. "
+            f"Only arithmetic, comparisons, min/max functions, and variable references are allowed."
+        )
+
+
 def eval_probability_formula(formula: str, context: dict) -> float:
-    """Safely evaluate a probability formula.
+    """Safely evaluate a probability formula using AST parsing.
 
     Args:
         formula: Mathematical expression (may reference metrics)
@@ -83,19 +260,22 @@ def eval_probability_formula(formula: str, context: dict) -> float:
 
     Returns:
         Evaluated result as float
+
+    Raises:
+        ValueError: If formula contains unsafe operations
+        SyntaxError: If formula has invalid syntax
+        NameError: If formula references undefined variables
+
+    Examples:
+        >>> eval_probability_formula("10 + 5", {})
+        15.0
+        >>> eval_probability_formula("unemployment / 100", {"unemployment": 8.5})
+        0.085
+        >>> eval_probability_formula("min(unemployment, 50) / 100", {"unemployment": 60})
+        0.5
     """
-    # Create safe evaluation context with only allowed operations
-    safe_context = {
-        '__builtins__': {},
-        'min': min,
-        'max': max,
-    }
-
-    # Add metric values
-    safe_context.update(context)
-
-    # Evaluate
-    result = eval(formula, safe_context, {})
+    evaluator = SafeExpressionEvaluator(context)
+    result = evaluator.eval(formula)
     return float(result)
 
 

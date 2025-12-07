@@ -175,9 +175,125 @@ run-YYYYMMDD-HHMMSS/
 - Batch branch: Create multiple branches from a batch of runs
 - Parallel execution: Run multiple resume/branch operations concurrently
 
+### Validation (`validator.py`)
+
+**Purpose:** Catch errors before expensive LLM calls by validating scenario structure, references, and configuration.
+
+**Key Validation Functions:**
+
+1. **Metric Reference Validation** (`validate_metric_references`):
+   - Checks that all metric references in actor descriptions, event conditions, event probabilities, and metric rules point to existing metrics
+   - Prevents runtime failures from undefined metric references
+
+2. **Event Probability Validation** (`validate_event_probabilities`):
+   - Validates that probability formulas are valid mathematical expressions
+   - Uses a **secure AST-based evaluator** that prevents code injection attacks
+   - Only allows safe operations: arithmetic (+, -, *, /, //, %, **), comparisons (<, >, ==, etc.), min/max functions, and metric variable references
+   - Rejects dangerous operations: imports, attribute access, arbitrary function calls, assignments, control flow
+   - Verifies formulas evaluate to valid range [0, 1] with sample data
+   - Handles both static probabilities (e.g., "10 procent per runda") and dynamic formulas (e.g., "unemployment / 100")
+   - **Security:** Uses `SafeExpressionEvaluator` class that parses expressions into Abstract Syntax Trees (AST) and validates each operation before execution, eliminating the security risks of Python's `eval()` function
+
+3. **LLM Configuration Validation** (`validate_llm_config`):
+   - Validates model strings follow OpenRouter format
+   - Ensures temperature is in valid range [0, 2]
+   - Checks max_tokens is reasonable (> 100, < 100000)
+   - Validates all task-specific model configurations (events, actors, rules, metrics, summary)
+
+4. **Actor Reference Validation** (`validate_actor_references`):
+   - Ensures all actors in scenario.yaml have corresponding files
+   - Detects orphaned actor files
+
+5. **Date and Time Scale Validation** (`validate_time_config`):
+   - Validates start_date is in correct format (YYYY-MM)
+   - Checks time_scale is parseable
+   - Ensures max_turns doesn't exceed reasonable limits
+
+**Integration:**
+- `validate_scenario(scenario_path)`: Runs all validation checks and returns `ValidationResult` with errors and warnings
+- CLI command: `python -m scenario_lab.cli validate scenarios/sweden-ai-2030`
+- Auto-validation: `--validate` flag on run command to validate before executing
+
+**Value:**
+- **Cost Savings:** Catch errors before LLM API calls
+- **Developer Experience:** Fast feedback on scenario design
+- **Reliability:** Fewer runtime failures
+- **Documentation:** Validation errors help users understand requirements
+
+### Cost Tracking (`llm.py`, `output.py`)
+
+**Purpose:** Track token usage and estimate costs to help users budget and optimize LLM API spending.
+
+**Token Usage Tracking:**
+- `TokenUsage` dataclass stores prompt_tokens, completion_tokens, total_tokens, model, and estimated_cost_usd
+- `LLMClient` tracks usage for every API call in `call_history` and maintains `total_usage`
+- Token counts extracted from OpenRouter API responses
+- Cost estimation based on pricing table for common models (per 1M tokens)
+
+**Pricing Table:**
+- Maintains pricing for common models (Claude, GPT, Grok, etc.)
+- Pricing in USD per 1M tokens (separate for prompt and completion)
+- Returns $0.00 for unknown models with warning
+- Can be updated as model pricing changes
+
+**Cost Reporting:**
+- Saved to `costs.json` in run directory with detailed breakdown
+- Tracks costs by turn, by task (events, actors, rules, metrics, summary), and by model
+- Includes total tokens, total cost, and averages
+
+**CLI Commands:**
+- `estimate`: Pre-run cost estimation based on scenario configuration
+- `costs`: Display cost report for completed runs with optional `--detailed` breakdown
+
+**Value:**
+- Budget control and planning
+- Model selection guidance (cost vs. quality trade-offs)
+- Optimization of expensive steps
+- Transparency in API spending
+
+### Progress Tracking (`progress.py`)
+
+**Purpose:** Provide real-time feedback during long-running simulations to improve user experience.
+
+**ProgressTracker Class:**
+- Tracks current turn, step, and timing information
+- Displays turn headers with ETA estimates
+- Updates step status (in_progress, completed)
+- Records turn completion times for ETA calculation
+
+**Features:**
+- Turn-level progress with numbered headers
+- Step-by-step status updates (Events, Actors, Rules, Metrics)
+- Estimated time remaining based on average turn duration
+- Cost information during execution (if tracking enabled)
+
+**CLI Options:**
+- Default: Progress tracking enabled
+- `--no-progress`: Disable for cleaner logs
+- `--quiet`: Minimal output mode
+
+**Display Format:**
+```
+============================================================
+TURN 3/10
+Estimated time remaining: 14.5 minutes
+Cost so far: $0.15 | Projected total: $0.50
+============================================================
+  [Events] ✓ Complete
+  [Actors] Processing...
+```
+
+**Value:**
+- User feedback for long operations (2-5 minutes per turn)
+- Debugging aid to identify slow steps
+- Progress monitoring for batch runs
+
 ### CLI (`cli.py`)
 - **Entry Point:** `python -m scenario_lab.cli`.
+- **Commands:** `run`, `resume`, `branch`, `validate`, `visualize`, `costs`, `estimate`
 - **Overrides:** Supports `--override key=value` to modify configuration at runtime (e.g., `--override output_language=Spanish`).
+- **Validation:** Supports `--validate` flag to validate scenarios before running
+- **Progress:** Supports `--no-progress` and `--quiet` flags for output control
 
 ## 4. Evaluation & Testing
 - **Unit Tests:** Standard pytest suite for Python logic.
