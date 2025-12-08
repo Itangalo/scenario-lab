@@ -8,7 +8,7 @@
 This security audit identified **6 security vulnerabilities** ranging from **High to Low severity**. The most critical issues are:
 
 1. ✅ **Path Traversal in Scenario Loading** (High Severity) - **FIXED 2025-12-07**
-2. 🟠 **Jinja2 Template Injection** (High Severity - Conditional)
+2. ✅ **Jinja2 Template Injection** (High Severity - Conditional) - **FIXED 2025-12-08**
 3. 🟡 **Path Traversal in Actor ID** (Medium Severity)
 4. 🟡 **Arbitrary Attribute Setting via CLI** (Medium Severity)
 5. 🟢 **YAML Bomb/Billion Laughs** (Low Severity)
@@ -128,11 +128,20 @@ def validate_base_path(base_path_str: str, current_path: Path) -> Path:
 
 ## 🟠 High Severity (Conditional)
 
-### 2. Server-Side Template Injection (SSTI) in Custom Templates
+### 2. Server-Side Template Injection (SSTI) in Custom Templates ✅ FIXED
 
+**Status:** ✅ **FIXED on 2025-12-08**
 **File:** `scenario_lab/prompts.py:92`
 **Severity:** High (Conditional - requires malicious scenario author)
 **CVSS Score:** 8.8 (High) if exploited
+
+**Fix Applied:**
+- Implemented `SandboxedEnvironment` from Jinja2 for all template rendering
+- All custom user templates now use sandboxed environment that blocks dangerous attribute access
+- Default templates also use sandboxed environment for consistency
+- SecurityError is raised when attempting to access private attributes (__class__, __mro__, etc.)
+- Comprehensive security tests added covering file access, code execution, and attribute access attacks
+- All 109 existing tests continue to pass
 
 **Vulnerability:**
 ```python

@@ -5,6 +5,7 @@ from typing import Optional, Any
 from .models import Scenario, Actor
 import json
 from jinja2 import Template
+from jinja2.sandbox import SandboxedEnvironment
 
 
 TEMPLATES_DIR = Path(__file__).parent.parent / "templates"
@@ -15,6 +16,14 @@ class PromptBuilder:
 
     def __init__(self, scenario: Scenario):
         self.scenario = scenario
+
+        # SECURITY: Create sandboxed Jinja2 environment for custom templates
+        # This prevents template injection attacks (SSTI) in user-provided templates
+        self.jinja_env = SandboxedEnvironment(
+            trim_blocks=True,
+            lstrip_blocks=True,
+        )
+
         self._load_templates()
 
     def _load_templates(self):
@@ -77,21 +86,23 @@ class PromptBuilder:
 
     def _get_user_template(self, prompt_type: str) -> Template:
         """Get user prompt template, preferring custom over default.
-        
+
         Args:
             prompt_type: Type of prompt ("events", "actor", "metric_rules", "metrics_update")
-            
+
         Returns:
             Jinja2 Template object
         """
         # Normalize prompt type to match dictionary keys (e.g. "metric-rules" -> "metric_rules")
         key = prompt_type.replace("-", "_")
-        
+
         # Check custom scenario prompts first
         if key in self.scenario.custom_user_prompts:
-            return Template(self.scenario.custom_user_prompts[key])
-            
-        return Template(self.user_templates[key])
+            # SECURITY: Use sandboxed environment for custom templates to prevent SSTI
+            return self.jinja_env.from_string(self.scenario.custom_user_prompts[key])
+
+        # Default templates are trusted, but use sandboxed env for consistency
+        return self.jinja_env.from_string(self.user_templates[key])
 
     def _replace_placeholders(self, prompt: str, actor_id: Optional[str] = None) -> str:
         """Replace placeholders in custom system prompts with scenario data.
