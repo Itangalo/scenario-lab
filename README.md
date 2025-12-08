@@ -466,6 +466,28 @@ OVERALL SCORE                 : 91.7%
 ⬜ Multi-run analysis tools
 ⬜ Visualization tools
 
+## Security
+
+Scenario Lab V4 implements security best practices to protect against common vulnerabilities:
+
+**Fixed Vulnerabilities:**
+- ✅ **Path Traversal in Base Scenario Loading** - Base scenarios are validated to prevent directory escaping
+- ✅ **Jinja2 Template Injection (SSTI)** - All templates use sandboxed environment to prevent code execution
+
+**Security Features:**
+- Sandboxed Jinja2 template rendering for custom prompts
+- Path validation for scenario inheritance
+- Safe YAML loading
+- API keys from environment variables only
+- AST-based safe expression evaluator (no eval())
+
+**Security Testing:**
+- Comprehensive security test suite in `tests/test_security.py`
+- 15+ tests covering path traversal, template injection, and code execution attempts
+- All security tests passing ✅
+
+For detailed security information, see [SECURITY_AUDIT.md](SECURITY_AUDIT.md).
+
 ## Why V4?
 
 V3 was powerful but complex:

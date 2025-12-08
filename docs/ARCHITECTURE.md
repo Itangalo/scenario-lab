@@ -298,8 +298,41 @@ Cost so far: $0.15 | Projected total: $0.50
 ## 4. Evaluation & Testing
 - **Unit Tests:** Standard pytest suite for Python logic.
 - **LLM Evals:** Specialized suite in `tests/evals/llm-event-conditions/` to benchmark LLM performance on logic, math, and hallucination prevention.
+- **Security Tests:** Comprehensive security test suite in `tests/test_security.py` covering path traversal, template injection, and code execution prevention.
 
-## 5. Extension Guidelines
+## 5. Security Architecture
+
+Scenario Lab implements defense-in-depth security measures to protect against common vulnerabilities:
+
+### Template Security
+- **Sandboxed Jinja2 Environment:** All user-provided templates (custom system/user prompts) are rendered using Jinja2's `SandboxedEnvironment`.
+- **Protection Against SSTI:** The sandbox prevents Server-Side Template Injection attacks by blocking access to dangerous attributes (`__class__`, `__mro__`, `__bases__`) and preventing code execution.
+- **Implementation:** `prompts.py` creates a sandboxed environment in `__init__` and uses `jinja_env.from_string()` for all template rendering.
+
+### Path Security
+- **Base Scenario Validation:** The `base` field in `scenario.yaml` is validated to prevent path traversal attacks. Base scenarios must be within the scenarios directory structure.
+- **Actor ID Validation:** (Pending - Issue #3) Actor IDs should be validated to prevent path traversal in output file creation.
+- **Implementation:** `loader.py` uses `Path.relative_to()` to ensure base paths don't escape allowed directories.
+
+### Input Security
+- **Safe YAML Loading:** Uses `yaml.safe_load()` instead of `yaml.load()` to prevent arbitrary object deserialization.
+- **AST-Based Expression Evaluation:** Event probability formulas are evaluated using a safe AST-based evaluator, not `eval()`. Only allows basic arithmetic operations and metric variable references.
+- **API Key Handling:** API keys are only loaded from environment variables, never hardcoded or logged.
+
+### Security Testing
+- **15+ Security Tests:** Comprehensive test coverage in `tests/test_security.py`:
+  - Path traversal prevention (3 tests)
+  - Template injection prevention (6 tests)
+  - Code execution prevention
+  - File access prevention
+- **Continuous Validation:** All security tests run as part of the standard test suite.
+
+### Fixed Vulnerabilities
+See [SECURITY_AUDIT.md](../SECURITY_AUDIT.md) for detailed audit results and fixes:
+- ✅ Path Traversal in Base Scenario Loading (Fixed 2025-12-07)
+- ✅ Jinja2 Template Injection (Fixed 2025-12-08)
+
+## 6. Extension Guidelines
 - **Update This Document first:** This document must be the ground truth and reflect how the project should work. Before adding or changing substantial functionality, it should be described here.
 - **New Features:** Must not break the "Pure LLM" philosophy. Avoid adding game logic to Python.
 - **Prompts:** Modify templates, not Python code, whenever possible.
