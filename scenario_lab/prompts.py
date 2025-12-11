@@ -37,6 +37,7 @@ class PromptBuilder:
             "rules_system": (system_dir / "metric-rules.md").read_text(encoding="utf-8"),
             "metrics_system": (system_dir / "metrics-update.md").read_text(encoding="utf-8"),
             "summarize": (system_dir / "summarize.md").read_text(encoding="utf-8"),
+            "format_fix_system": (system_dir / "format-fix.md").read_text(encoding="utf-8"),
         }
         
         self.user_templates = {
@@ -45,6 +46,8 @@ class PromptBuilder:
             "metric_rules": (user_dir / "metric-rules.md").read_text(encoding="utf-8"),
             "metrics_update": (user_dir / "metrics-update.md").read_text(encoding="utf-8"),
             "summarize": (user_dir / "summarize.md").read_text(encoding="utf-8"),
+            "format_fix_events": (user_dir / "format-fix-events.md").read_text(encoding="utf-8"),
+            "format_fix_metrics": (user_dir / "format-fix-metrics.md").read_text(encoding="utf-8"),
         }
 
     def _get_system_prompt(self, prompt_type: str, actor_id: Optional[str] = None) -> str:
@@ -63,6 +66,7 @@ class PromptBuilder:
             "actor": "actor_system",
             "metric_rules": "rules_system",
             "metrics_update": "metrics_system",
+            "format_fix": "format_fix_system",
         }
         template_key = template_key_map.get(prompt_type, f"{prompt_type}_system")
 
@@ -364,6 +368,24 @@ class PromptBuilder:
 
         user = template.render(**context)
         
+        return system, user
+
+    def build_format_fix_events_prompt(self, turn: int, previous_response: str) -> tuple[str, str]:
+        """Build prompts to fix invalid events output formatting."""
+        system = self._get_system_prompt("format_fix")
+        template = self._get_user_template("format_fix_events")
+        context = self._get_common_context(turn)
+        context["previous_response"] = previous_response
+        user = template.render(**context)
+        return system, user
+
+    def build_format_fix_metrics_prompt(self, turn: int, previous_response: str) -> tuple[str, str]:
+        """Build prompts to fix invalid metrics update output formatting."""
+        system = self._get_system_prompt("format_fix")
+        template = self._get_user_template("format_fix_metrics")
+        context = self._get_common_context(turn)
+        context["previous_response"] = previous_response
+        user = template.render(**context)
         return system, user
 
     def _format_events_list(self) -> str:

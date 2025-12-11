@@ -53,7 +53,7 @@ Each turn executes the following steps in order:
 1. **Events Step**:
   * **Input:** World state (history + current), current metrics, list of potential events.
   * **LLM Task:** Determine which events meet their conditions and calculate their probabilities.
-  * **Python Action:** Parse JSON response, roll dice for probabilities, determine triggered events.
+  * **Python Action:** Parse JSON response, roll dice for probabilities, determine triggered events. If parsing fails, the orchestrator retries once with a dedicated “format-fix” prompt to coerce valid JSON before giving up for the turn.
 
 2. **Actors Step**:
   * **Input:** World state (history + current), metrics, triggered events.
@@ -72,6 +72,7 @@ Each turn executes the following steps in order:
     * Write a narrative summary of the turn.
     * Update the "Notepad" (persistent and secret game master notes).
   * **Output Parsing:** Requires verbatim headers (`## Metrics`, `## Narrative`, `## Notepad`) for reliable parsing.
+  * **Failure Handling:** If the metrics response cannot be parsed, the orchestrator retries once with a “format-fix” prompt to enforce the required headers/JSON. If it still fails, previous metric values are kept for that turn.
 
 4. **Summarization Step**:
   * **Input:** Current `historical_summary` and the new `narrative` from Step 4.

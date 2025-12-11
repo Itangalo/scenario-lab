@@ -35,19 +35,37 @@ class LLMResponse:
     raw_response: dict
 
     def extract_json(self) -> dict:
-        """Extract JSON from markdown code block or raw content."""
-        # Try to find ```json ... ``` block
-        match = re.search(r"```json\s*(.*?)\s*```", self.content, re.DOTALL)
+        """Extract JSON from markdown code block or raw content.
+
+        Prefers fenced ```json blocks. If none are present, attempts to locate
+        the first valid JSON object/array within the text using a streaming decoder.
+        """
+        # Prefer fenced ```json ... ``` blocks
+        match = re.search(r"```json\\s*(.*?)\\s*```", self.content, re.DOTALL | re.IGNORECASE)
         if match:
             return json.loads(match.group(1))
 
-        # Try to find {...} or [...] in content
-        match = re.search(r"(\{.*?\}|\[.*?\])", self.content, re.DOTALL)
-        if match:
-            return json.loads(match.group(1))
+        # Fallback: scan for first decodable JSON object/array in content
+        decoder = json.JSONDecoder()
+        text = self.content.strip()
 
-        # Try raw JSON
-        return json.loads(self.content)
+        # Try whole content first
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            pass
+
+        for i, ch in enumerate(text):
+            if ch not in "{[":
+                continue
+            try:
+                obj, _ = decoder.raw_decode(text[i:])
+                if isinstance(obj, (dict, list)):
+                    return obj
+            except json.JSONDecodeError:
+                continue
+
+        raise json.JSONDecodeError("No valid JSON found in response", self.content, 0)
 
     def extract_json_array(self) -> list:
         """Extract JSON array from response."""

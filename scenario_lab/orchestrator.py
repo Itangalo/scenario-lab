@@ -328,12 +328,23 @@ class Orchestrator:
         self._record_llm_call(turn, "events", response)
 
         try:
-            # Parse LLM response: list of events with probabilities
             candidate_events = response.extract_json_array()
         except (json.JSONDecodeError, ValueError) as e:
             print(f"  Warning: Could not parse events response: {e}")
             print(f"  Response was: {response.content[:200]}...")
-            return []
+
+            # Retry once with format-fix prompt
+            try:
+                fix_system, fix_user = self.prompt_builder.build_format_fix_events_prompt(
+                    turn, response.content
+                )
+                fix_response = self.llm_clients["events"].complete(fix_system, fix_user)
+                self._record_llm_call(turn, "events:format_fix", fix_response)
+                candidate_events = fix_response.extract_json_array()
+                print("  ✓ Events format fixed on retry")
+            except Exception as fix_e:
+                print(f"  Warning: Events format-fix retry failed: {fix_e}")
+                return []
 
         # Validate and roll dice for each event
         triggered = []
@@ -449,13 +460,25 @@ class Orchestrator:
             print(f"  Warning: Could not parse metrics response: {e}")
             print(f"  Response was: {response.content[:200]}...")
 
-            # Return previous metrics with error narrative
-            current_metrics = {m.id: m.value for m in self.scenario.metrics.metrics.values()}
-            error_narrative = (
-                "[ERROR: Could not parse metrics response. Keeping previous values.]\n\n"
-                + response.content
-            )
-            return current_metrics, error_narrative, self.scenario.notepad
+            # Retry once with format-fix prompt
+            try:
+                fix_system, fix_user = self.prompt_builder.build_format_fix_metrics_prompt(
+                    turn, response.content
+                )
+                fix_response = self.llm_clients["metrics"].complete(fix_system, fix_user)
+                self._record_llm_call(turn, "metrics:format_fix", fix_response)
+                metrics, narrative, notepad = fix_response.extract_metrics_and_narrative()
+                print("  ✓ Metrics format fixed on retry")
+            except Exception as fix_e:
+                print(f"  Warning: Metrics format-fix retry failed: {fix_e}")
+
+                # Return previous metrics with error narrative
+                current_metrics = {m.id: m.value for m in self.scenario.metrics.metrics.values()}
+                error_narrative = (
+                    "[ERROR: Could not parse metrics response. Keeping previous values.]\n\n"
+                    + response.content
+                )
+                return current_metrics, error_narrative, self.scenario.notepad
 
         # Validate and clamp metrics
         for metric_id, value in list(metrics.items()):

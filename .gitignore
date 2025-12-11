@@ -32,6 +32,21 @@ env/
 *.swo
 *~
 
+# Test/coverage caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Typecheck/lint caches
+.mypy_cache/
+.ruff_cache/
+
+# Local tool config
+.claude/
+
+# Env files
+.env
+
 # Scenario Lab outputs
 **/runs/
 *.log
