@@ -430,9 +430,49 @@ class Orchestrator:
         Returns:
             Updated metric rules as markdown
         """
+        from .metric_rules import parse_versioned_rules, validate_rules_format, get_changelog_summary
+
         system, user = self.prompt_builder.build_rules_prompt(turn, actor_outputs, triggered_events)
         response = self.llm_clients["rules"].complete(system, user)
         self._record_llm_call(turn, "rules", response)
+
+        # Parse and validate versioned rules
+        try:
+            parsed = parse_versioned_rules(response.content, turn)
+
+            # Validate format
+            is_valid, warnings = validate_rules_format(response.content, turn)
+
+            if warnings:
+                for warning in warnings:
+                    print(f"  ⚠️  Rules format: {warning}")
+
+            # Log changelog summary
+            if parsed.has_changelog:
+                summary = get_changelog_summary(parsed)
+                print(f"  📝 Rules changes: {summary}")
+
+            # Store parsed metadata for output manager
+            if self.output_manager:
+                self.output_manager.save_rules_metadata(turn, {
+                    "version": parsed.version,
+                    "has_changelog": parsed.has_changelog,
+                    "changelog_entries": [
+                        {
+                            "type": entry.change_type,
+                            "rule_name": entry.rule_name,
+                            "motivation": entry.motivation,
+                            "expected_impact": entry.expected_impact,
+                        }
+                        for entry in parsed.changelog_entries
+                    ],
+                    "format_warnings": warnings,
+                })
+
+        except ValueError as e:
+            print(f"  ⚠️  Could not parse rules version/changelog: {e}")
+            print(f"  Continuing with raw content...")
+
         return response.content
 
     def _run_metrics_step(

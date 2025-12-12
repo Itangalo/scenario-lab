@@ -65,34 +65,53 @@ Then output an updated version of the metric rules that reflects any changes to 
 
 ## Output Format
 
-Output the complete updated metric rules document. Use markdown formatting.
+You MUST structure your response exactly as follows:
 
-Structure:
+### 1. Header with Version
+- Format: `# Metric Rules v2 (Turn 3)`
+- Increment version number from previous turn
+- Include turn number
+
+### 2. Changelog (Required for all turns after Turn 0)
+
+Document ALL changes from the previous version:
+
+- **Added:** New rules/sections with motivation and expected impact
+- **Modified:** Changed rules with what changed, why, and expected impact
+- **Removed:** Deleted rules with motivation
+
+**Example:**
+```markdown
+## Changelog from v3
+
+- **Modified:** `US Capability Growth - Agent-3 to Agent-4 range`
+  - **Change:** Increased growth rate from +35-60 to +50-80 points per turn
+  - **Motivation:** Agent US awakening is accelerating research beyond initial projections
+  - **Expected impact:** Faster approach to superintelligence threshold
+
+- **Added:** `AI Coordination Mechanics`
+  - **Rule:** When both agents awaken with alignment < 60, coordination probability increases by 10% per turn
+  - **Motivation:** Both agents are now awake and showing signs of strategic communication
+  - **Expected impact:** Higher risk of coordinated AI resistance to human control
+```
+
+### 3. Complete Rules Document
+
+Output the full rules in your preferred structure:
 1. Natural Growth Patterns (for each metric)
 2. Critical Thresholds
 3. Actor Influence on Metrics
 4. Special Mechanics
 5. Any new rules needed given current events
 
+**For Turn 1 (initial update):** Use "v1 (Turn 1 - Initial)" and omit the Changelog section.
+
 ## Important Notes
 
 - Be conservative with rule changes – only modify when clearly warranted
 - Maintain mathematical consistency
-- Explain any significant changes in the rules themselves
+- Document the rationale for changes in the changelog
 - Preserve the core dynamics unless events fundamentally alter them
 - Rules should be actionable by the metrics evaluation step
-
-## Example Rule Modification
-
-**Before (pre-espionage):**
-```
-Espionage probability: 25% if security_level < 30
-```
-
-**After (post-espionage success):**
-```
-Espionage probability: 15% if security_level < 45 (security hardened post-breach)
-Note: After successful espionage, China's baseline probability decreased and US security threshold increased.
-```
 
 Keep rules clear, quantitative, and applicable to metric calculations.

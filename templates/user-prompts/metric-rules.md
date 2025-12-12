@@ -1,6 +1,6 @@
 It is now turn {{turn}} which covers {{time_period}}.
 
-The Metric Rules looked like this (possibly updated):
+The current Metric Rules are:
 
 {{metric_rules}}
 

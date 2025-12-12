@@ -1,4 +1,6 @@
-# Metric Rules – Starting Values (January 2026)
+# Metric Rules v1 (Turn 0 - Initial)
+
+## Rules
 
 1. ai_capability doubles every six months (from 3 at start)
 2. When ai_capability increases rapidly, ai_adoption_sweden is pushed down, since fewer people likely have access to *frontier* AI (which has moved forward)

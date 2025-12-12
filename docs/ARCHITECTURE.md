@@ -23,6 +23,12 @@ V4 represents a radical simplification from previous versions. Instead of comple
 - **Definition:** Quantitative rules describing how metrics change over time or in relation to each other.
 - **Examples:** "ai_capability doubles every 6 months", "high unemployment decreases public_sentiment".
 - **Evolution:** The LLM reviews and updates these rules *every turn* based on world events. This allows the "physics" of the simulation to evolve.
+- **Versioning:** Each rules update increments a version number (v1, v2, v3...) to track rule evolution over time.
+- **Changelog:** All rule modifications require a structured changelog documenting:
+  * **What changed** (Added/Modified/Removed rules)
+  * **Motivation** (why the change is needed based on simulation state)
+  * **Expected impact** (how this will affect future metrics)
+- **Transparency:** Versioning and changelogs make rule evolution visible and debuggable across turns.
 
 ### World State
 - **Definition:** A narrative description of what happened during the turn, plus a persistent summary of history.
@@ -61,8 +67,16 @@ Each turn executes the following steps in order:
   * **Parallelization:** Actor prompts are independent and can be executed in parallel (though currently sequential in implementation).
 
 3. **Rules Step**:
-  * **Input:** World state, triggered events, all actor actions, current rules.
-  * **LLM Task:** Review and update the list of Metric Rules.
+  * **Input:** World state, triggered events, all actor actions, current rules (with version number).
+  * **LLM Task:** Review and update the list of Metric Rules with:
+    - Incremented version number (v1 → v2 → v3...)
+    - Complete changelog documenting all Added/Modified/Removed rules
+    - Motivation for each change (grounded in simulation state)
+    - Expected impact on future metrics
+  * **Sanity Check:** Optional validation step to check for:
+    - Complete and accurate changelog
+    - Internal consistency (no contradictory rules)
+    - Grounding in narrative/metrics/events
 
 4. **Metrics Step**:
   * **Input:** World state, triggered events, actor actions, updated rules.
@@ -164,12 +178,18 @@ run-YYYYMMDD-HHMMSS/
 └── turn-XX/                 # Validated for completeness before loading
     ├── 1-events.json
     ├── 2-actors/*.md
-    ├── 3-metric-rules.md
+    ├── 3-metric-rules.md    # Versioned rules with changelog
     ├── 4-metrics.json       # Source of truth for metric values
     ├── 4-world-state.md     # Source of truth for narrative
     ├── 5-notepad.md         # Source of truth for GM notes
     └── 6-historical-summary.md  # Source of truth for history
 ```
+
+**Metric Rules Format:**
+Each `3-metric-rules.md` file includes:
+- Version number in header (e.g., "# Metric Rules v3 (Turn 4)")
+- Changelog section documenting all changes from previous version
+- Full set of current rules
 
 **Future Extensions:**
 - Batch resume: Resume all incomplete runs in a batch directory

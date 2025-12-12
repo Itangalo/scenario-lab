@@ -87,6 +87,18 @@ class OutputManager:
         turn_dir = self.get_turn_dir(turn)
         (turn_dir / "3-metric-rules.md").write_text(rules, encoding="utf-8")
 
+    def save_rules_metadata(self, turn: int, metadata: dict):
+        """Save metric rules metadata (version, changelog).
+
+        Args:
+            turn: Turn number
+            metadata: Dict with version, changelog_entries, format_warnings
+        """
+        turn_dir = self.get_turn_dir(turn)
+        (turn_dir / "3-metric-rules-metadata.json").write_text(
+            json.dumps(metadata, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
     def save_metrics_and_narrative(self, turn: int, metrics: dict, narrative: str):
         """Save metrics and narrative immediately after generation.
 

@@ -22,4 +22,43 @@ Rules may NOT link metrics to narrative descriptions of the world without concre
 
 You may change existing rules, remove ones that have become unnecessary or outdated, and add new ones you deem necessary. For the simulation to work well, Metric Rules need to be as realistic as possible, based on how the world looks. Ideally there should be between five and ten rules, but you can go outside these limits if you judge it appropriate.
 
-Respond only with Metric Rules formatted as a numbered Markdown list.
+## Response Format
+
+You MUST structure your response exactly as follows:
+
+1. **Header:** Include version number and turn (e.g., "# Metric Rules v2 (Turn 3)")
+2. **Changelog:** Document ALL changes from the previous version:
+   - **Added:** New rules with motivation and expected impact
+   - **Modified:** Changed rules with what changed, why, and expected impact
+   - **Removed:** Deleted rules with motivation
+3. **Rules:** The complete numbered list of current rules
+
+**Example format:**
+
+```markdown
+# Metric Rules v2 (Turn 3)
+
+## Changelog from v1
+
+- **Added:** `unemployment_lag_effect`
+  - **Rule:** Unemployment changes lag 1 turn behind AI adoption shifts
+  - **Motivation:** Realistic time for labor market adjustment to technology changes
+  - **Expected impact:** Smoother unemployment curves, prevents instant job loss spikes
+
+- **Modified:** `ai_capability_growth`
+  - **Change:** Reduced growth rate from doubles every 6 months to +50% every 6 months
+  - **Motivation:** Recent compute constraints noted in world state make exponential growth unrealistic
+  - **Expected impact:** Slower AI progress, more time for societal adaptation
+
+- **Removed:** `public_sentiment_media_boost`
+  - **Motivation:** Media actor has shifted strategy away from direct sentiment campaigns
+  - **Expected impact:** Public sentiment will be more driven by economic factors
+
+## Rules
+
+1. ai_capability increases by 50% every six months
+2. Unemployment changes lag 1 turn behind AI adoption shifts
+3. High unemployment (>10%) decreases public_sentiment_to_ai by 2 points per turn
+```
+
+If this is the first turn (no previous version exists), use "v1 (Turn 1 - Initial)" and omit the Changelog section.

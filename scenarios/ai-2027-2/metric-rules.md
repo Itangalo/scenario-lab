@@ -1,6 +1,8 @@
-# Metric Rules – Starting Values (July 2025)
+# Metric Rules v1 (Turn 0 - Initial)
 
 These rules describe the quantitative relationships governing how metrics change each turn. The LLM should review and update these rules each turn based on world events.
+
+## Rules
 
 ## Capability Growth Dynamics
 
