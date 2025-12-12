@@ -99,6 +99,18 @@ class OutputManager:
             json.dumps(metadata, indent=2, ensure_ascii=False), encoding="utf-8"
         )
 
+    def save_constitutional_metadata(self, turn: int, metadata: dict):
+        """Save constitutional referee metadata.
+
+        Args:
+            turn: Turn number
+            metadata: Dict with status, iterations, violations_found, etc.
+        """
+        turn_dir = self.get_turn_dir(turn)
+        (turn_dir / "5-constitutional-check.json").write_text(
+            json.dumps(metadata, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
     def save_metrics_and_narrative(self, turn: int, metrics: dict, narrative: str):
         """Save metrics and narrative immediately after generation.
 

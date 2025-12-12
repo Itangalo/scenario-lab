@@ -111,9 +111,14 @@ Each turn executes the following steps in order:
     - Organizational changes are feasible (capacity growth, hiring)
     - Physical constraints are honored (compute, infrastructure)
   * **Output:** Either "APPROVED" or "VIOLATIONS: [list of issues]"
-  * **Retry Logic:** If violations found, request corrected metrics (max 2 iterations).
-  * **Model:** Can use cheaper model (e.g., Haiku/Grok) since task is straightforward validation.
-  * **Cost:** Minimal - one lightweight LLM call per turn only when violations detected.
+  * **Retry Logic:** If violations found, logs violations and continues (max 2 iterations).
+  * **Model:** Uses dedicated `referee` model (default: x-ai/grok-4.1-fast) for cost-effective validation.
+  * **Metadata:** Saves detailed validation results to `5-constitutional-check.json` including:
+    - Status (approved, violations_found, max_attempts_reached, parse_error)
+    - Number of iterations
+    - List of violations found per iteration
+    - Final action taken
+  * **Cost:** Minimal - uses fast, cheap model with short max_tokens (1000).
 
 6. **Summarization Step**:
   * **Input:** Current `historical_summary` and the new `narrative` from Metrics Step.
@@ -200,16 +205,18 @@ Each turn executes the following steps in order:
 **File Structure for Resume/Branch:**
 ```
 run-YYYYMMDD-HHMMSS/
-├── config.json              # Contains metadata for branched runs
-├── summary.json             # Contains resume/branch metadata
-└── turn-XX/                 # Validated for completeness before loading
+├── config.json                   # Contains metadata for branched runs
+├── summary.json                  # Contains resume/branch metadata
+└── turn-XX/                      # Validated for completeness before loading
     ├── 1-events.json
     ├── 2-actors/*.md
-    ├── 3-metric-rules.md    # Versioned rules with changelog
-    ├── 4-metrics.json       # Source of truth for metric values
-    ├── 4-world-state.md     # Source of truth for narrative
-    ├── 5-notepad.md         # Source of truth for GM notes
-    └── 6-historical-summary.md  # Source of truth for history
+    ├── 3-metric-rules.md         # Versioned rules with changelog
+    ├── 3-metric-rules-metadata.json  # Rules version and changelog metadata
+    ├── 4-metrics.json            # Source of truth for metric values
+    ├── 4-world-state.md          # Source of truth for narrative
+    ├── 5-constitutional-check.json   # Constitutional validation results (if constitution exists)
+    ├── 5-notepad.md              # Source of truth for GM notes
+    └── 6-historical-summary.md   # Source of truth for history
 ```
 
 **Metric Rules Format:**
@@ -217,6 +224,13 @@ Each `3-metric-rules.md` file includes:
 - Version number in header (e.g., "# Metric Rules v3 (Turn 4)")
 - Changelog section documenting all changes from previous version
 - Full set of current rules
+
+**Constitutional Validation Metadata:**
+The `5-constitutional-check.json` file (when present) includes:
+- Status: approved, violations_found, max_attempts_reached, or parse_error
+- Iterations: Number of validation attempts
+- Violations found: List of violations per iteration with details
+- Final action: Whether metrics were accepted or corrected
 
 **Future Extensions:**
 - Batch resume: Resume all incomplete runs in a batch directory

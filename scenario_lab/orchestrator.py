@@ -169,12 +169,33 @@ class Orchestrator:
             )
             self._owned_clients.append(summary_client)
 
+        # Create client for constitutional referee (cheap, fast model)
+        # Check if any existing client matches
+        primary_model = self._normalize_model(config.referee)
+        existing = next(
+            (
+                c
+                for c in [events_client, rules_client, metrics_client, summary_client]
+                + list(actor_clients.values())
+                if self._normalize_model(c.models) == primary_model
+            ),
+            None,
+        )
+        if existing:
+            referee_client = existing
+        else:
+            referee_client = LLMClient(
+                model=config.referee, temperature=0.3, max_tokens=1000  # Low temp, short output
+            )
+            self._owned_clients.append(referee_client)
+
         return {
             "events": events_client,
             "actors": actor_clients,
             "rules": rules_client,
             "metrics": metrics_client,
             "summary": summary_client,
+            "referee": referee_client,
         }
 
     def close(self):
@@ -575,15 +596,16 @@ class Orchestrator:
         # Get previous metrics for comparison
         previous_metrics = {m.id: m.value for m in self.scenario.metrics.metrics.values()}
 
+        violations_log = []
         max_iterations = 2
+
         for iteration in range(max_iterations):
             # Build referee prompt
             system, user = self.prompt_builder.build_constitutional_referee_prompt(
                 turn, previous_metrics, proposed_metrics, narrative
             )
 
-            # Use cheaper model for validation if available (fallback to metrics client)
-            # Haiku or similar would be good here
+            # Use dedicated referee client (cheaper/faster model)
             client = self.llm_clients.get("referee", self.llm_clients["metrics"])
             response = client.complete(system, user)
             self._record_llm_call(turn, f"constitutional_referee:attempt_{iteration+1}", response)
@@ -594,10 +616,25 @@ class Orchestrator:
             if result.startswith("APPROVED"):
                 if iteration > 0:
                     print(f"  ✓ Constitution validated (after {iteration+1} attempts)")
+
+                # Save metadata about validation
+                if self.output_manager:
+                    metadata = {
+                        "status": "approved",
+                        "iterations": iteration + 1,
+                        "violations_found": violations_log,
+                    }
+                    self.output_manager.save_constitutional_metadata(turn, metadata)
+
                 return proposed_metrics, narrative
 
             elif result.startswith("VIOLATIONS:"):
                 violations = result[len("VIOLATIONS:"):].strip()
+                violations_log.append({
+                    "iteration": iteration + 1,
+                    "violations": violations,
+                })
+
                 print(f"  ⚠️  Constitutional violations found:")
                 for line in violations.split('\n'):
                     if line.strip():
@@ -606,16 +643,49 @@ class Orchestrator:
                 if iteration < max_iterations - 1:
                     print(f"  🔄 Requesting corrected metrics (attempt {iteration+2}/{max_iterations})...")
 
-                    # Request correction (reuse metrics step with additional context about violations)
-                    # For now, we'll just log and continue - full retry logic can be added later
-                    # TODO: Implement metrics correction request
+                    # TODO: Implement full metrics correction request with violations context
+                    # For now, we continue with proposed metrics
                     print(f"  ⚠️  Continuing with proposed metrics (correction not yet implemented)")
+
+                    # Save metadata about violations
+                    if self.output_manager:
+                        metadata = {
+                            "status": "violations_found",
+                            "iterations": iteration + 1,
+                            "violations_found": violations_log,
+                            "final_action": "accepted_with_violations",
+                        }
+                        self.output_manager.save_constitutional_metadata(turn, metadata)
+
                     break
                 else:
                     print(f"  ⚠️  Max correction attempts reached, continuing with proposed metrics")
+
+                    # Save metadata
+                    if self.output_manager:
+                        metadata = {
+                            "status": "max_attempts_reached",
+                            "iterations": iteration + 1,
+                            "violations_found": violations_log,
+                            "final_action": "accepted_with_violations",
+                        }
+                        self.output_manager.save_constitutional_metadata(turn, metadata)
+
                     break
             else:
                 print(f"  ⚠️  Unexpected referee response format: {result[:100]}...")
+
+                # Save metadata
+                if self.output_manager:
+                    metadata = {
+                        "status": "parse_error",
+                        "iterations": iteration + 1,
+                        "violations_found": violations_log,
+                        "error": "Unexpected response format",
+                        "response_preview": result[:200],
+                    }
+                    self.output_manager.save_constitutional_metadata(turn, metadata)
+
                 break
 
         return proposed_metrics, narrative

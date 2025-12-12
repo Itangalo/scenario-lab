@@ -124,6 +124,7 @@ class LLMConfig:
     rules: Union[str, List[str]] = "anthropic/claude-sonnet-4"
     metrics: Union[str, List[str]] = "anthropic/claude-sonnet-4"
     summary: Union[str, List[str]] = "openai/gpt-4o-mini"  # Default to cheap model for summarization
+    referee: Union[str, List[str]] = "x-ai/grok-4.1-fast"  # Default to fast, cheap model for validation
 
     # Global settings
     temperature: float = 0.7
