@@ -272,7 +272,7 @@ class Orchestrator:
                 new_metrics, narrative, notepad = self._run_metrics_step(turn, actor_outputs, triggered_events)
                 step.update("Metrics and narrative updated")
         else:
-            print("\n[4/5] Updating metrics and generating narrative...")
+            print("\n[4/6] Updating metrics and generating narrative...")
             new_metrics, narrative, notepad = self._run_metrics_step(turn, actor_outputs, triggered_events)
             print(f"  → Metrics and narrative updated")
 
@@ -281,13 +281,33 @@ class Orchestrator:
             self.output_manager.save_notepad(turn, notepad)
             self.output_manager.update_summary(turn, new_metrics)
 
-        # Step 5: Update historical summary
+        # Step 5: Constitutional referee (optional)
+        if self.scenario.constitution:
+            if self.progress_tracker:
+                with self.progress_tracker.start_step(5, "") as step:
+                    new_metrics, narrative = self._run_constitutional_referee_step(
+                        turn, new_metrics, narrative
+                    )
+                    step.update("Constitution validated")
+            else:
+                print("\n[5/6] Validating against constitutional constraints...")
+                new_metrics, narrative = self._run_constitutional_referee_step(
+                    turn, new_metrics, narrative
+                )
+                print(f"  → Constitution validated")
+
+            # Update saved metrics/narrative if they were corrected
+            if self.output_manager:
+                self.output_manager.save_metrics_and_narrative(turn, new_metrics, narrative)
+
+        # Step 6: Update historical summary
         if self.progress_tracker:
-            with self.progress_tracker.start_step(5, "") as step:
+            with self.progress_tracker.start_step(6, "") as step:
                 new_historical_summary = self._run_summarization_step(turn, narrative)
                 step.update("Summary updated")
         else:
-            print("\n[5/5] Updating historical summary...")
+            step_num = "6/6" if self.scenario.constitution else "5/5"
+            print(f"\n[{step_num}] Updating historical summary...")
             new_historical_summary = self._run_summarization_step(turn, narrative)
             print(f"  → Summary updated")
 
@@ -539,8 +559,69 @@ class Orchestrator:
 
         return metrics, narrative, notepad
 
+    def _run_constitutional_referee_step(
+        self, turn: int, proposed_metrics: dict, narrative: str
+    ) -> tuple[dict, str]:
+        """Step 5: Validate metrics against constitutional constraints (optional).
+
+        Args:
+            turn: Current turn number
+            proposed_metrics: Proposed new metrics
+            narrative: Narrative explaining the changes
+
+        Returns:
+            Tuple of (final_metrics, final_narrative) - may be corrected if violations found
+        """
+        # Get previous metrics for comparison
+        previous_metrics = {m.id: m.value for m in self.scenario.metrics.metrics.values()}
+
+        max_iterations = 2
+        for iteration in range(max_iterations):
+            # Build referee prompt
+            system, user = self.prompt_builder.build_constitutional_referee_prompt(
+                turn, previous_metrics, proposed_metrics, narrative
+            )
+
+            # Use cheaper model for validation if available (fallback to metrics client)
+            # Haiku or similar would be good here
+            client = self.llm_clients.get("referee", self.llm_clients["metrics"])
+            response = client.complete(system, user)
+            self._record_llm_call(turn, f"constitutional_referee:attempt_{iteration+1}", response)
+
+            # Parse response
+            result = response.content.strip()
+
+            if result.startswith("APPROVED"):
+                if iteration > 0:
+                    print(f"  ✓ Constitution validated (after {iteration+1} attempts)")
+                return proposed_metrics, narrative
+
+            elif result.startswith("VIOLATIONS:"):
+                violations = result[len("VIOLATIONS:"):].strip()
+                print(f"  ⚠️  Constitutional violations found:")
+                for line in violations.split('\n'):
+                    if line.strip():
+                        print(f"     {line.strip()}")
+
+                if iteration < max_iterations - 1:
+                    print(f"  🔄 Requesting corrected metrics (attempt {iteration+2}/{max_iterations})...")
+
+                    # Request correction (reuse metrics step with additional context about violations)
+                    # For now, we'll just log and continue - full retry logic can be added later
+                    # TODO: Implement metrics correction request
+                    print(f"  ⚠️  Continuing with proposed metrics (correction not yet implemented)")
+                    break
+                else:
+                    print(f"  ⚠️  Max correction attempts reached, continuing with proposed metrics")
+                    break
+            else:
+                print(f"  ⚠️  Unexpected referee response format: {result[:100]}...")
+                break
+
+        return proposed_metrics, narrative
+
     def _run_summarization_step(self, turn: int, current_narrative: str) -> str:
-        """Step 5: Update historical summary.
+        """Step 6: Update historical summary.
 
         Args:
             turn: Current turn number

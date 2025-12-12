@@ -183,6 +183,7 @@ class Scenario:
     world_state: WorldState
     context: str  # Background context
     notepad: str = ""  # Game Master notes that persist across turns
+    constitution: Optional[str] = None  # Constitutional constraints (optional)
     custom_system_prompts: dict[str, str] = field(default_factory=dict)  # Optional scenario-specific system prompts
     custom_user_prompts: dict[str, str] = field(default_factory=dict)  # Optional scenario-specific user prompts
 

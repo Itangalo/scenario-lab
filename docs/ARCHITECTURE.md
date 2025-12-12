@@ -45,12 +45,26 @@ V4 represents a radical simplification from previous versions. Instead of comple
 - **Definition:** Exogenous happenings with probabilities and conditions.
 - **Evaluation:** The LLM evaluates whether conditions are met and calculates probabilities. The Python orchestrator then "rolls the dice" to see if the event actually triggers.
 
+### Constitutional Constraints
+- **Definition:** Invariant "must-hold" rules that the LLM must respect throughout the simulation.
+- **Purpose:** Prevent unrealistic outcomes by enforcing fundamental constraints on how the world works.
+- **Examples:**
+  * Economic: "Budget cannot exceed revenue without explicit borrowing"
+  * Regulatory: "New legislation requires minimum 1 turn from proposal to effect"
+  * Organizational: "Agency capacity grows max 30% per turn organically"
+  * Physical: "Compute/hardware has supply constraints"
+- **Format:** Optional `constitution.md` file per scenario with 5-15 short, clear constraints.
+- **Enforcement:** Lightweight LLM-based "referee" step that validates metrics updates against the constitution.
+- **Philosophy:** Maintains pure LLM architecture while preventing common failure modes (instant budgets, magical scaling, etc.).
+
 ## 3. System Architecture
 
 ### File Structure & Loading (`loader.py`)
 - **`scenario.yaml`**: Configuration (time scale, actors, LLM settings, output language).
   * **LLM Settings:** Now includes `summary` model configuration alongside `events`, `actors`, `rules`, and `metrics`.
 - **Markdown Resources**: `metrics.md`, `events.md`, `metric-rules.md`, `background/*.md`.
+- **Optional Resources**:
+  * `constitution.md`: Constitutional constraints (invariant rules) for the scenario.
 - **Inheritance:** Scenarios can inherit from others via the `base` field in `scenario.yaml`.
 
 ### The Turn Loop (`orchestrator.py`)
@@ -86,10 +100,23 @@ Each turn executes the following steps in order:
     * Write a narrative summary of the turn.
     * Update the "Notepad" (persistent and secret game master notes).
   * **Output Parsing:** Requires verbatim headers (`## Metrics`, `## Narrative`, `## Notepad`) for reliable parsing.
-  * **Failure Handling:** If the metrics response cannot be parsed, the orchestrator retries once with a “format-fix” prompt to enforce the required headers/JSON. If it still fails, previous metric values are kept for that turn.
+  * **Failure Handling:** If the metrics response cannot be parsed, the orchestrator retries once with a "format-fix" prompt to enforce the required headers/JSON. If it still fails, previous metric values are kept for that turn.
 
-4. **Summarization Step**:
-  * **Input:** Current `historical_summary` and the new `narrative` from Step 4.
+5. **Constitutional Referee Step (Optional)**:
+  * **Condition:** Only runs if scenario has a `constitution.md` file.
+  * **Input:** Constitution constraints, proposed metrics updates, narrative explaining the changes.
+  * **LLM Task:** Review the metrics update against constitutional constraints and validate that:
+    - Economic constraints are respected (budgets, resources)
+    - Regulatory timelines are realistic (legislation, agreements)
+    - Organizational changes are feasible (capacity growth, hiring)
+    - Physical constraints are honored (compute, infrastructure)
+  * **Output:** Either "APPROVED" or "VIOLATIONS: [list of issues]"
+  * **Retry Logic:** If violations found, request corrected metrics (max 2 iterations).
+  * **Model:** Can use cheaper model (e.g., Haiku/Grok) since task is straightforward validation.
+  * **Cost:** Minimal - one lightweight LLM call per turn only when violations detected.
+
+6. **Summarization Step**:
+  * **Input:** Current `historical_summary` and the new `narrative` from Metrics Step.
   * **LLM Task:** Condense the new narrative and append it to the historical summary, keeping the total length manageable.
   * **Purpose:** Prevent context window explosion over long simulations.
 

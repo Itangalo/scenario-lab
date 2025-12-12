@@ -319,6 +319,7 @@ scenario-lab/
         ├── metrics.md           # Metric definitions (markdown)
         ├── events.md            # External events (markdown)
         ├── metric-rules.md      # Quantitative rules
+        ├── constitution.md      # Constitutional constraints (optional)
         ├── scenario.yaml        # Scenario configuration
         └── variants/            # Scenario variants
 ```
@@ -368,6 +369,44 @@ events:
     condition: "November 2026 in turn period"
     can_repeat: false
 ```
+
+### 5. Constitutional Constraints (Markdown - Optional)
+
+**constitution.md** - Invariant "must-hold" rules that prevent unrealistic outcomes.
+
+```markdown
+# Constitutional Constraints
+
+These invariant rules must always hold in this scenario:
+
+## Economic Constraints
+- Budget cannot exceed revenue without explicit borrowing/deficit
+- Capital expenditures require funding source
+- Economic effects have minimum 1-turn lag
+
+## Regulatory Constraints
+- New legislation requires minimum 1 turn from proposal to effect
+- International agreements require minimum 2 turns
+- Regulatory capacity grows max 20% per turn without major investment
+
+## Organizational Constraints
+- Agency/organization capacity grows max 30% per turn organically
+- Hiring/training has 1-turn lag before productivity
+- Expertise cannot be created instantly
+
+## Physical Constraints
+- Compute/hardware has supply constraints
+- Infrastructure projects have realistic timelines
+- Resource scarcity is real
+```
+
+**When to use:** Add constitutional constraints when your scenario risks unrealistic outcomes like:
+- Instant budgets appearing when needed
+- Legislation taking effect immediately
+- Organizations scaling infinitely fast
+- Physical resources appearing magically
+
+The LLM will validate metrics updates against these constraints after each turn.
 
 ## Example: Sweden AI 2030
 

@@ -38,8 +38,9 @@ class PromptBuilder:
             "metrics_system": (system_dir / "metrics-update.md").read_text(encoding="utf-8"),
             "summarize": (system_dir / "summarize.md").read_text(encoding="utf-8"),
             "format_fix_system": (system_dir / "format-fix.md").read_text(encoding="utf-8"),
+            "constitutional_referee_system": (system_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
         }
-        
+
         self.user_templates = {
             "events": (user_dir / "events.md").read_text(encoding="utf-8"),
             "actor": (user_dir / "actor.md").read_text(encoding="utf-8"),
@@ -48,6 +49,7 @@ class PromptBuilder:
             "summarize": (user_dir / "summarize.md").read_text(encoding="utf-8"),
             "format_fix_events": (user_dir / "format-fix-events.md").read_text(encoding="utf-8"),
             "format_fix_metrics": (user_dir / "format-fix-metrics.md").read_text(encoding="utf-8"),
+            "constitutional_referee": (user_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
         }
 
     def _get_system_prompt(self, prompt_type: str, actor_id: Optional[str] = None) -> str:
@@ -386,6 +388,48 @@ class PromptBuilder:
         context = self._get_common_context(turn)
         context["previous_response"] = previous_response
         user = template.render(**context)
+        return system, user
+
+    def build_constitutional_referee_prompt(
+        self, turn: int, previous_metrics: dict, new_metrics: dict, narrative: str
+    ) -> tuple[str, str]:
+        """Build prompts for constitutional referee step.
+
+        Args:
+            turn: Current turn number
+            previous_metrics: Metrics before the update
+            new_metrics: Proposed new metrics
+            narrative: Narrative explaining the changes
+
+        Returns:
+            (system_prompt, user_prompt)
+        """
+        # Get system prompt with constitution injected
+        system_template = self.jinja_env.from_string(
+            self.system_templates["constitutional_referee_system"]
+        )
+        system = system_template.render(constitution=self.scenario.constitution)
+
+        # Get user template
+        template = self._get_user_template("constitutional_referee")
+
+        # Build context
+        from .loader import get_time_period
+
+        time_period = get_time_period(
+            self.scenario.config.start_date, turn, self.scenario.config.time_scale
+        )
+
+        context = {
+            "turn": turn,
+            "time_period": time_period,
+            "previous_metrics_json": json.dumps(previous_metrics, indent=2, ensure_ascii=False),
+            "new_metrics_json": json.dumps(new_metrics, indent=2, ensure_ascii=False),
+            "narrative": narrative,
+        }
+
+        user = template.render(**context)
+
         return system, user
 
     def _format_events_list(self) -> str:

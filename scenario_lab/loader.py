@@ -70,6 +70,12 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
     # Load initial metric rules
     metric_rules = (scenario_dir / "metric-rules.md").read_text(encoding="utf-8")
 
+    # Load constitutional constraints if present (optional)
+    constitution = None
+    constitution_path = scenario_dir / "constitution.md"
+    if constitution_path.exists():
+        constitution = constitution_path.read_text(encoding="utf-8")
+
     # Create initial world state from context
     world_state = WorldState(
         narrative=context,
@@ -91,6 +97,7 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
         metric_rules=metric_rules,
         world_state=world_state,
         context=context,
+        constitution=constitution,
         custom_system_prompts=custom_system_prompts,
         custom_user_prompts=custom_user_prompts,
     )
