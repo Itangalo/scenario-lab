@@ -4,25 +4,25 @@
 
 **ID:** ai_incident_sweden
 
-**Condition:** Requires ai_adoption_sweden > 30
+**Condition:** Requires ai_adoption_sweden >= 30
 
-**Probability:** 10 percent per round
+**Probability:** 8 percent per round when ai_adoption_sweden is 30-49, 12 percent when 50-69, and 18 percent when 70 or higher.
 
 **Can repeat:** Yes
 
-**Description:** A teenager takes their life after intensive contact with an AI companion. Major media attention. Comparisons with the debate about social media harms. Demands for regulation increase sharply. public_sentiment_to_ai decreases significantly.
+**Description:** A severe harm case linked to intensive use of an AI companion gets national attention. Public debate shifts toward AI safety and youth protection. Political pressure for regulation rises. public_sentiment_to_ai should drop, and short-term adoption growth should slow.
 
 ## Strike Against AI Implementation
 
 **ID:** strike
 
-**Condition:** Requires unemployment > 10
+**Condition:** Requires unemployment >= 9
 
-**Probability:** Double the value of unemployment, in percent
+**Probability:** 8 percent per round when unemployment is 9-9.9, 12 percent when 10-11.9, 20 percent when 12-14.9, 30 percent when 15-19.9, and 45 percent when 20 or higher.
 
 **Can repeat:** Yes
 
-**Description:** Trade unions initiate strikes against AI implementation at one or more major workplaces. Productivity decreases temporarily, tensions between unions and business increase. Media highlights the conflict, which negatively affects public_sentiment_to_ai.
+**Description:** Trade unions initiate strikes against AI implementation at one or more major workplaces. Productivity decreases temporarily, tensions between unions and business increase, and media attention intensifies. public_sentiment_to_ai should typically fall in the short term.
 
 ## AI Breakthrough
 
@@ -30,35 +30,47 @@
 
 **Condition:** No conditions
 
-**Probability:** 5 percent per round
+**Probability:** 4 percent per round when ai_capability is below 50, 7 percent when 50-149, and 10 percent when 150 or higher.
 
 **Can repeat:** Yes
 
-**Description:** A new architecture or training method provides dramatically improved AI capabilities. ai_capability takes a large step upward (equivalent to 1-2 years of normal development) and then develops according to the same exponential pattern as before. Major media attention globally.
+**Description:** A new architecture or training method significantly improves AI performance and efficiency. ai_capability should make a notable jump in the same turn, and expectations in public debate should rise.
 
 ## AI Development Plateaus
 
 **ID:** ai_stall
 
-**Condition:** No conditions
+**Condition:** Requires ai_capability >= 50
 
-**Probability:** 3 percent per round
+**Probability:** 4 percent per round when ai_capability is 50-149, 7 percent when 150-299, and 9 percent when ai_capability is 300 or higher.
 
 **Can repeat:** No
 
-**Description:** AI development encounters resistance that proves difficult to overcome – possibly related to data access, architectural limitations, or energy costs. AI development decreases to a slow linear pace and remains so until a new AI breakthrough occurs. The slowdown in AI development creates concern in financial markets, but otherwise the major effect is that expected effects of more powerful AI fail to materialize.
+**Description:** AI development hits temporary bottlenecks (data, compute, integration, regulation, or energy). ai_capability growth should slow for at least 1 turn unless a later AI breakthrough occurs.
 
 ## Taiwan Blockade
 
 **ID:** taiwan_blockade
 
-**Condition:** Can occur from round 3 onwards
+**Condition:** Turn is 3 or later
 
 **Probability:** 5 percent per round
 
 **Can repeat:** No
 
-**Description:** China initiates blockade of Taiwan. Global chip production is severely disrupted. As long as the blockade continues, AI development progresses very slowly (ai_capability increases minimally). Electronics prices rise sharply. Geopolitical uncertainty increases dramatically. Each subsequent round after the blockade begins, there is a 50 percent chance that the blockade reaches a peaceful end and a 10 percent risk that it escalates into military conflict (which would mean even worse consequences).
+**Description:** China initiates a blockade of Taiwan. Global chip supply is disrupted, creating immediate compute constraints and uncertainty. ai_capability growth should slow sharply for this turn and likely the following turn unless a de-escalation event occurs.
+
+## Taiwan Blockade De-escalation
+
+**ID:** taiwan_blockade_deescalation
+
+**Condition:** Requires that the Taiwan Blockade event has occurred previously
+
+**Probability:** 35 percent per round
+
+**Can repeat:** No
+
+**Description:** Diplomatic pressure and economic costs force a partial de-escalation around Taiwan. Chip supply chains begin recovering and geopolitical pressure eases somewhat. ai_capability growth constraints from the blockade should weaken over the next 1-2 turns.
 
 ## AI Bubble Collapse
 
@@ -66,11 +78,11 @@
 
 **Condition:** No conditions
 
-**Probability:** 15 percent rounds 1-2, 10 percent rounds 3-4, 5 percent rounds 5+
+**Probability:** 15 percent per round in turns 1-2, 12 percent in turns 3-4, and 6 percent in turns 5 and later.
 
 **Can repeat:** No
 
-**Description:** The AI investment bubble bursts. Massive write-downs of AI startup valuations. Many companies go bankrupt. The pace of development in the AI sector slows temporarily (1-2 rounds). Established actors consolidate their power. Unemployment in the tech sector increases.
+**Description:** The AI investment bubble bursts. Startup valuations are written down, weaker firms fail, and hiring freezes spread. Unemployment should rise, and ai_adoption_sweden and ai_capability growth should slow for 1-2 turns.
 
 ## Parliamentary Election 2026
 
