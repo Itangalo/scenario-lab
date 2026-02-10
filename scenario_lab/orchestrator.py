@@ -2,6 +2,7 @@
 
 import random
 import json
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Protocol, Optional, Union, TYPE_CHECKING
 from .models import Scenario, TurnResult, WorldState
 from .prompts import PromptBuilder
@@ -432,17 +433,46 @@ class Orchestrator:
             Dict mapping actor_id to their markdown output
         """
         outputs = {}
+        actor_ids = list(self.scenario.actors.keys())
 
-        for actor_id in self.scenario.actors:
+        def get_client(actor_id: str):
+            """Resolve LLM client for a specific actor."""
+            if "actors" in self.llm_clients and actor_id in self.llm_clients["actors"]:
+                return self.llm_clients["actors"][actor_id]
+            return self.llm_clients["events"]
+
+        def run_actor(actor_id: str) -> tuple[str, LLMResponse]:
+            """Execute one actor prompt and return raw response."""
+            client = get_client(actor_id)
+            system, user = self.prompt_builder.build_actor_prompt(actor_id, turn, triggered_events)
+            response = client.complete(system, user)
+            return actor_id, response
+
+        # Parallelize actor prompts when possible (independent prompts)
+        if len(actor_ids) > 1:
+            max_workers = min(len(actor_ids), 8)
+            with ThreadPoolExecutor(max_workers=max_workers) as executor:
+                futures = {executor.submit(run_actor, actor_id): actor_id for actor_id in actor_ids}
+
+                for future in as_completed(futures):
+                    actor_id, response = future.result()
+                    self._record_llm_call(turn, f"actor:{actor_id}", response)
+                    outputs[actor_id] = response.content
+                    self.scenario.actors[actor_id].last_actions = response.content
+
+                    if self.output_manager:
+                        self.output_manager.save_actor_output(turn, actor_id, response.content)
+
+            # Keep output ordering deterministic for downstream consumers/tests
+            return {actor_id: outputs[actor_id] for actor_id in actor_ids}
+
+        # Fallback to sequential flow for single-actor scenarios
+        for actor_id in actor_ids:
             actor = self.scenario.actors[actor_id]
             print(f"  → {actor.name}...")
 
             # Get appropriate client for this actor
-            if "actors" in self.llm_clients and actor_id in self.llm_clients["actors"]:
-                client = self.llm_clients["actors"][actor_id]
-            else:
-                # Fallback to events client if no specific actor client
-                client = self.llm_clients["events"]
+            client = get_client(actor_id)
 
             system, user = self.prompt_builder.build_actor_prompt(actor_id, turn, triggered_events)
             response = client.complete(system, user)

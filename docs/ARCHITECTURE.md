@@ -78,7 +78,7 @@ Each turn executes the following steps in order:
 2. **Actors Step**:
   * **Input:** World state (history + current), metrics, triggered events.
   * **LLM Task:** For *each* actor, review goals and describe actions for the turn.
-  * **Parallelization:** Actor prompts are independent and can be executed in parallel (though currently sequential in implementation).
+  * **Parallelization:** Actor prompts are independent and are executed in parallel with bounded concurrency.
 
 3. **Rules Step**:
   * **Input:** World state, triggered events, all actor actions, current rules (with version number).
