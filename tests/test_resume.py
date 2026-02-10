@@ -8,6 +8,8 @@ from scenario_lab.resume import (
     validate_run_directory,
     get_scenario_path_from_run,
     load_run_state,
+    persist_scenario_state_at_turn,
+    sync_summary_turn_state,
 )
 
 
@@ -322,3 +324,49 @@ class TestLoadRunState:
 
         assert "event1" in scenario.occurred_events
         assert "event2" in scenario.occurred_events
+
+
+def test_persist_scenario_state_at_turn_writes_modified_state(temp_run_dir, scenario_dir):
+    """Branch-point state persistence should update turn files from in-memory state."""
+    create_complete_turn(temp_run_dir, 1)
+
+    state_mods = {
+        "metrics": {"test_metric": 88},
+        "narrative": "Modified narrative",
+        "rules": "# Modified Rules\n\n1. Updated",
+        "notepad": "Modified notes",
+    }
+    scenario, loaded_turn = load_run_state(
+        temp_run_dir, from_turn=1, state_modifications=state_mods
+    )
+
+    persist_scenario_state_at_turn(temp_run_dir, loaded_turn, scenario)
+
+    turn_dir = temp_run_dir / "turn-01"
+    metrics = json.loads((turn_dir / "4-metrics.json").read_text(encoding="utf-8"))
+    assert metrics["test_metric"] == 88
+    assert (turn_dir / "4-world-state.md").read_text(encoding="utf-8") == "Modified narrative"
+    assert "Modified Rules" in (turn_dir / "3-metric-rules.md").read_text(encoding="utf-8")
+    assert (turn_dir / "5-notepad.md").read_text(encoding="utf-8") == "Modified notes"
+
+
+def test_sync_summary_turn_state_updates_existing_turn_without_duplication(temp_run_dir):
+    """Summary turn upsert should replace an existing turn entry instead of duplicating it."""
+    summary = {
+        "scenario": "Test Scenario",
+        "total_turns": 1,
+        "final_metrics": {"test_metric": 50},
+        "history": [{"turn": 1, "metrics": {"test_metric": 50}}],
+        "occurred_events": [],
+        "status": "running",
+    }
+    (temp_run_dir / "summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+
+    sync_summary_turn_state(temp_run_dir, 1, {"test_metric": 99})
+
+    updated = json.loads((temp_run_dir / "summary.json").read_text(encoding="utf-8"))
+    assert updated["total_turns"] == 1
+    assert updated["final_metrics"] == {"test_metric": 99}
+    assert len(updated["history"]) == 1
+    assert updated["history"][0] == {"turn": 1, "metrics": {"test_metric": 99}}
+    assert "last_updated" in updated

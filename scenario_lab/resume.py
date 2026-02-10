@@ -368,3 +368,61 @@ def create_branch(
     new_summary_file.write_text(json.dumps(new_summary, indent=2, ensure_ascii=False), encoding="utf-8")
 
     return new_run_dir
+
+
+def persist_scenario_state_at_turn(run_dir: Path, turn: int, scenario: Scenario) -> None:
+    """Persist in-memory scenario state to a specific turn directory.
+
+    Useful for branch workflows where state modifications are applied in memory
+    and should be reflected on disk immediately, even before running new turns.
+    """
+    turn_dir = run_dir / f"turn-{turn:02d}"
+    if not turn_dir.exists():
+        raise ValueError(f"Turn directory does not exist: {turn_dir}")
+
+    metrics = {metric_id: metric.value for metric_id, metric in scenario.metrics.metrics.items()}
+    (turn_dir / "4-metrics.json").write_text(
+        json.dumps(metrics, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    (turn_dir / "4-world-state.md").write_text(scenario.world_state.narrative, encoding="utf-8")
+    (turn_dir / "3-metric-rules.md").write_text(scenario.metric_rules, encoding="utf-8")
+    (turn_dir / "5-notepad.md").write_text(scenario.notepad, encoding="utf-8")
+
+    # Keep historical summary aligned with loaded state when present.
+    if scenario.world_state.historical_summary:
+        (turn_dir / "6-historical-summary.md").write_text(
+            scenario.world_state.historical_summary, encoding="utf-8"
+        )
+
+
+def sync_summary_turn_state(run_dir: Path, turn: int, metrics: dict) -> None:
+    """Upsert one turn's metrics in summary.json and keep totals consistent."""
+    summary_path = run_dir / "summary.json"
+    if not summary_path.exists():
+        raise ValueError(f"Missing summary.json in run directory: {run_dir}")
+
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    history = summary.get("history", [])
+
+    replaced = False
+    for entry in history:
+        if isinstance(entry, dict) and entry.get("turn") == turn:
+            entry["metrics"] = metrics
+            replaced = True
+            break
+
+    if not replaced:
+        history.append({"turn": turn, "metrics": metrics})
+
+    history = sorted(
+        [h for h in history if isinstance(h, dict) and "turn" in h and "metrics" in h],
+        key=lambda x: x["turn"],
+    )
+
+    summary["history"] = history
+    if history:
+        summary["total_turns"] = history[-1]["turn"]
+        summary["final_metrics"] = history[-1]["metrics"]
+    summary["last_updated"] = datetime.now().isoformat()
+
+    summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")

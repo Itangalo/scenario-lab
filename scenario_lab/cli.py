@@ -324,17 +324,20 @@ def main():
         output_manager = OutputManager(scenario, scenario_dir)
         output_manager.run_dir = args.run_dir  # Use existing directory
 
-        # Update summary.json status
+        num_turns = args.turns or scenario.config.max_turns
+        start_turn = loaded_turn + 1
+
+        # Update summary.json resume metadata
         summary_path = args.run_dir / "summary.json"
         summary = json.loads(summary_path.read_text())
-        summary["status"] = "running"
         summary["resumed_at"] = datetime.now().isoformat()
         summary["resumed_from_turn"] = loaded_turn
+        if start_turn <= num_turns:
+            summary["status"] = "running"
         summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False))
 
         # Run simulation
-        print(f"\nContinuing simulation from turn {loaded_turn + 1}")
-        num_turns = args.turns or scenario.config.max_turns
+        print(f"\nContinuing simulation from turn {start_turn}")
         print(f"LLM Configuration:")
         print(f"  Events: {scenario.config.llm.events}")
         if isinstance(scenario.config.llm.actors, str):
@@ -347,14 +350,23 @@ def main():
                 print(f"    {actor_id}: {model}")
         print(f"  Rules: {scenario.config.llm.rules}")
         print(f"  Metrics: {scenario.config.llm.metrics}")
-        print(f"Turns: {loaded_turn + 1} to {num_turns}")
+        print(f"Turns: {start_turn} to {num_turns}")
+
+        if start_turn > num_turns:
+            print("No additional turns to run. Finalizing existing run state.")
+            output_manager.finalize_summary([])
+            print(f"\n{'='*60}")
+            print(f"RESUMED SIMULATION COMPLETE")
+            print(f"{'='*60}")
+            print(f"Results saved to: {args.run_dir}")
+            return
 
         results = run_simulation(
             scenario,
             llm_client=None,
             num_turns=num_turns,
             output_manager=output_manager,
-            start_turn=loaded_turn + 1
+            start_turn=start_turn
         )
 
         # Finalize
@@ -366,8 +378,13 @@ def main():
         return
 
     if args.command == "branch":
-        from .resume import load_run_state, create_branch, get_scenario_path_from_run
-        from datetime import datetime
+        from .resume import (
+            load_run_state,
+            create_branch,
+            get_scenario_path_from_run,
+            persist_scenario_state_at_turn,
+            sync_summary_turn_state,
+        )
 
         print(f"Creating branch from: {args.run_dir}")
         print(f"  Branch point: Turn {args.from_turn}")
@@ -501,8 +518,14 @@ def main():
         output_manager = OutputManager(scenario, output_base)
         output_manager.run_dir = new_run_dir
 
-        print(f"\nRunning simulation from turn {loaded_turn + 1}")
+        # Persist branched state at branch point so modifications are durable on disk.
+        persist_scenario_state_at_turn(new_run_dir, loaded_turn, scenario)
+        branch_point_metrics = {m.id: m.value for m in scenario.metrics.metrics.values()}
+        sync_summary_turn_state(new_run_dir, loaded_turn, branch_point_metrics)
+
+        start_turn = loaded_turn + 1
         num_turns = args.turns or scenario.config.max_turns
+        print(f"\nRunning simulation from turn {start_turn}")
         print(f"LLM Configuration:")
         print(f"  Events: {scenario.config.llm.events}")
         if isinstance(scenario.config.llm.actors, str):
@@ -515,14 +538,23 @@ def main():
                 print(f"    {actor_id}: {model}")
         print(f"  Rules: {scenario.config.llm.rules}")
         print(f"  Metrics: {scenario.config.llm.metrics}")
-        print(f"Turns: {loaded_turn + 1} to {num_turns}")
+        print(f"Turns: {start_turn} to {num_turns}")
+
+        if start_turn > num_turns:
+            print("No additional turns to run from branch point. Finalizing branch state.")
+            output_manager.finalize_summary([])
+            print(f"\n{'='*60}")
+            print(f"BRANCH SIMULATION COMPLETE")
+            print(f"{'='*60}")
+            print(f"Results saved to: {new_run_dir}")
+            return
 
         results = run_simulation(
             scenario,
             llm_client=None,
             num_turns=num_turns,
             output_manager=output_manager,
-            start_turn=loaded_turn + 1
+            start_turn=start_turn
         )
 
         # Finalize

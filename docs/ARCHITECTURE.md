@@ -196,6 +196,7 @@ Each turn executes the following steps in order:
   * Narrative: Completely replaces the world state narrative
   * Notepad: Replaces game master notes
   * Rules: Replaces metric rules markdown
+  * Persistence: Modified branch-point state is written back to copied turn files and reflected in `summary.json` immediately
 
 **Orchestrator Integration:**
 - `run_simulation()` now accepts `start_turn` parameter (default: 1)
