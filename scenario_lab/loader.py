@@ -538,8 +538,12 @@ def get_time_period(start_date: str, turn: int, time_scale: str) -> str:
     if turn == 0:
         return f"Start: {start_date}"
 
-    # Parse start date
-    year, month = map(int, start_date.split("-"))
+    # Parse start date (supports YYYY-MM and YYYY)
+    if "-" in start_date:
+        year, month = map(int, start_date.split("-"))
+    else:
+        year = int(start_date)
+        month = 1
 
     # Parse time scale
     months_per_turn = 6  # default

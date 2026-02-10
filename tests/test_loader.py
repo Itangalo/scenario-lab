@@ -2,7 +2,7 @@
 
 import pytest
 from pathlib import Path
-from scenario_lab.loader import load_metrics, load_events, load_actor, create_metric, create_event
+from scenario_lab.loader import load_metrics, load_events, load_actor, create_metric, create_event, get_time_period
 
 def test_load_metrics(tmp_path):
     """Test parsing of metrics markdown file."""
@@ -105,3 +105,15 @@ spanning multiple lines.
     assert actor.short_description == "A short summary."
     assert "spanning multiple lines" in actor.long_description
     assert actor.initial_goals == [] # Defaults
+
+
+def test_get_time_period_accepts_year_month():
+    """Time period calculation works with YYYY-MM start dates."""
+    period = get_time_period("2026-01", turn=1, time_scale="6 months per turn")
+    assert period == "January-June 2026"
+
+
+def test_get_time_period_accepts_year_only():
+    """Time period calculation works with YYYY start dates (defaults to January)."""
+    period = get_time_period("2026", turn=2, time_scale="6 months per turn")
+    assert period == "July-December 2026"
