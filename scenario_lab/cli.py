@@ -12,6 +12,16 @@ from .output import OutputManager
 from .validator import validate_scenario
 
 
+def apply_model_override(llm_config, model: str):
+    """Apply a single model override to all LLM task slots."""
+    llm_config.events = model
+    llm_config.actors = model
+    llm_config.rules = model
+    llm_config.metrics = model
+    llm_config.summary = model
+    llm_config.referee = model
+
+
 def main():
     """CLI entry point."""
     load_dotenv()
@@ -217,11 +227,7 @@ def main():
 
         # Override model if specified
         if args.model:
-            scenario.config.llm.events = args.model
-            scenario.config.llm.actors = {}  # Will use events model
-            scenario.config.llm.rules = args.model
-            scenario.config.llm.metrics = args.model
-            scenario.config.llm.summary = args.model
+            apply_model_override(scenario.config.llm, args.model)
 
         # Determine number of turns
         num_turns = args.turns or scenario.config.max_turns
@@ -313,10 +319,7 @@ def main():
                             print(f"Warning: Could not set '{last_key}' on {type(target)}: {e}")
 
         if args.model:
-            scenario.config.llm.events = args.model
-            scenario.config.llm.actors = args.model
-            scenario.config.llm.rules = args.model
-            scenario.config.llm.metrics = args.model
+            apply_model_override(scenario.config.llm, args.model)
             print(f"  → Overrode all models to: {args.model}")
 
         # Setup OutputManager for existing directory
@@ -422,6 +425,8 @@ def main():
             config_overrides["llm.actors"] = args.model
             config_overrides["llm.rules"] = args.model
             config_overrides["llm.metrics"] = args.model
+            config_overrides["llm.summary"] = args.model
+            config_overrides["llm.referee"] = args.model
 
         # Determine output location
         try:
@@ -508,10 +513,7 @@ def main():
                             print(f"Warning: Could not set '{last_key}' on {type(target)}: {e}")
 
         if args.model:
-            scenario.config.llm.events = args.model
-            scenario.config.llm.actors = args.model
-            scenario.config.llm.rules = args.model
-            scenario.config.llm.metrics = args.model
+            apply_model_override(scenario.config.llm, args.model)
             print(f"  → Overrode all models to: {args.model}")
 
         # Run from branch point
@@ -648,10 +650,7 @@ def main():
 
     if args.model:
         # Override all task models if --model is specified
-        scenario.config.llm.events = args.model
-        scenario.config.llm.actors = args.model
-        scenario.config.llm.rules = args.model
-        scenario.config.llm.metrics = args.model
+        apply_model_override(scenario.config.llm, args.model)
 
     if args.dry_run:
         run_dry(scenario)
