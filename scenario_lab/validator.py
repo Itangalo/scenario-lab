@@ -1,7 +1,7 @@
 """Scenario validator."""
 
 from pathlib import Path
-from typing import List, Set, Any
+from typing import List, Set, Any, Tuple
 import re
 import ast
 import operator
@@ -402,7 +402,7 @@ def is_formula_probability(prob_str: str, valid_metrics: Set[str]) -> bool:
     return True
 
 
-def validate_event_probabilities(scenario: Scenario) -> List[str]:
+def validate_event_probabilities(scenario: Scenario) -> Tuple[List[str], List[str]]:
     """Validate that probability formulas are evaluable.
 
     Checks:
@@ -411,7 +411,7 @@ def validate_event_probabilities(scenario: Scenario) -> List[str]:
     - Natural language descriptions are accepted (LLM will interpret)
 
     Returns:
-        List of validation errors
+        Tuple of (errors, warnings)
     """
     errors = []
     warnings = []
@@ -466,8 +466,7 @@ def validate_event_probabilities(scenario: Scenario) -> List[str]:
         except Exception as e:
             errors.append(f"Event '{event.id}' probability formula error: {e}")
 
-    # Return both as errors for now (warnings will be separate in future)
-    return errors + warnings
+    return errors, warnings
 
 
 def validate_llm_config(scenario: Scenario) -> List[str]:
@@ -649,7 +648,9 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
 
     # 6. Comprehensive Validation (New)
     errors.extend(validate_metric_references(scenario))
-    errors.extend(validate_event_probabilities(scenario))
+    event_probability_errors, event_probability_warnings = validate_event_probabilities(scenario)
+    errors.extend(event_probability_errors)
+    warnings.extend(event_probability_warnings)
     errors.extend(validate_llm_config(scenario))
     errors.extend(validate_actor_references(scenario))
     errors.extend(validate_time_config(scenario))

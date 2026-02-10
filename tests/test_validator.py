@@ -264,8 +264,9 @@ def test_validate_event_probabilities_static():
         context=""
     )
 
-    errors = validate_event_probabilities(scenario)
+    errors, warnings = validate_event_probabilities(scenario)
     assert len(errors) == 0  # Should pass
+    assert len(warnings) == 0
 
 
 def test_validate_event_probabilities_formula():
@@ -308,8 +309,9 @@ def test_validate_event_probabilities_formula():
         context=""
     )
 
-    errors = validate_event_probabilities(scenario)
+    errors, warnings = validate_event_probabilities(scenario)
     assert len(errors) == 0  # Should pass
+    assert len(warnings) == 0
 
 
 def test_validate_event_probabilities_natural_language():
@@ -352,8 +354,9 @@ def test_validate_event_probabilities_natural_language():
         context=""
     )
 
-    errors = validate_event_probabilities(scenario)
+    errors, warnings = validate_event_probabilities(scenario)
     assert len(errors) == 0  # Natural language should be accepted
+    assert len(warnings) == 0
 
 
 def test_validate_event_probabilities_invalid_formula():
@@ -396,8 +399,54 @@ def test_validate_event_probabilities_invalid_formula():
         context=""
     )
 
-    errors = validate_event_probabilities(scenario)
+    errors, warnings = validate_event_probabilities(scenario)
     assert any("syntax" in e.lower() or "error" in e.lower() for e in errors)
+    assert len(warnings) == 0
+
+
+def test_validate_event_probabilities_formula_warning_is_not_error():
+    """Formula values over 1 should produce warnings, not hard errors."""
+    metrics = Metrics(metrics={
+        "unemployment": Metric(
+            id="unemployment",
+            description="Test metric",
+            value=5.0,
+            min_value=0,
+            max_value=100,
+            unit="percent"
+        )
+    })
+
+    events = [
+        Event(
+            id="event1",
+            description="Test",
+            condition="No conditions",
+            probability="unemployment * 2",  # Evaluates to 100 with test context
+            can_repeat=True
+        )
+    ]
+
+    scenario = Scenario(
+        config=ScenarioConfig(
+            name="Test",
+            description="Test",
+            start_date="2026-01",
+            time_scale="6 months",
+            max_turns=5,
+            actor_ids=[]
+        ),
+        metrics=metrics,
+        events=events,
+        actors={},
+        metric_rules="",
+        world_state=WorldState(narrative="", turn=0, time_period=""),
+        context=""
+    )
+
+    errors, warnings = validate_event_probabilities(scenario)
+    assert len(errors) == 0
+    assert any("value > 1" in w for w in warnings)
 
 
 def test_validate_scenario_sweden_ai_2030():
