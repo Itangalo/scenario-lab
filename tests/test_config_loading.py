@@ -44,7 +44,9 @@ def setup_scenarios(tmp_path):
         "llm": {
             "temperature": 0.7,
             "events": "model-base",
-            "actors": "model-base"
+            "actors": "model-base",
+            "summary": "model-summary-base",
+            "referee": "model-referee-base",
         }
     }
     (scenario_dir / "scenario.yaml").write_text(yaml.dump(base_config))
@@ -57,7 +59,8 @@ def setup_scenarios(tmp_path):
         "base": "../scenario.yaml",
         "max_turns": 5, # Override
         "llm": {
-            "events": "model-variant" # Override
+            "events": "model-variant", # Override
+            "referee": "model-referee-variant", # Override
         }
     }
     (variants_dir / "variant.yaml").write_text(yaml.dump(variant_config))
@@ -69,6 +72,8 @@ def setup_scenarios(tmp_path):
             "events": ["model-a", "model-b"], # Fallback list
             "rules": "model-rules",
             "metrics": "model-metrics",
+            "summary": "model-summary-fine",
+            "referee": "model-referee-fine",
             "actors": {
                 "actor1": ["model-actor1-a", "model-actor1-b"],
                 "default": "model-default"
@@ -90,10 +95,12 @@ def test_scenario_inheritance(setup_scenarios):
     assert config.actor_ids == ["actor1"]
     assert config.llm.temperature == 0.7
     assert config.llm.actors == "model-base"
+    assert config.llm.summary == "model-summary-base"
     
     # Check overridden properties
     assert config.max_turns == 5
     assert config.llm.events == "model-variant"
+    assert config.llm.referee == "model-referee-variant"
 
 def test_fine_grained_llm_config(setup_scenarios):
     """Test loading of complex LLM configurations."""
@@ -106,6 +113,8 @@ def test_fine_grained_llm_config(setup_scenarios):
     # Check specific task models
     assert config.llm.rules == "model-rules"
     assert config.llm.metrics == "model-metrics"
+    assert config.llm.summary == "model-summary-fine"
+    assert config.llm.referee == "model-referee-fine"
     
     # Check actor specific models
     assert isinstance(config.llm.actors, dict)
@@ -151,3 +160,31 @@ def test_orchestrator_client_creation(setup_scenarios):
     # Let's test that manually.
     
     orchestrator.close()
+
+
+def test_old_style_model_config_sets_summary_and_referee(tmp_path):
+    """Legacy llm.model configs should still configure summary/referee deterministically."""
+    config_path = tmp_path / "scenario.yaml"
+    config_path.write_text(
+        yaml.dump(
+            {
+                "name": "Legacy Config",
+                "description": "Legacy llm.model style",
+                "start_date": "2025-01",
+                "time_scale": "1 month",
+                "max_turns": 2,
+                "actors": ["actor1"],
+                "llm": {
+                    "model": "legacy-model",
+                },
+            }
+        )
+    )
+
+    config = load_config(config_path)
+    assert config.llm.events == "legacy-model"
+    assert config.llm.actors == "legacy-model"
+    assert config.llm.rules == "legacy-model"
+    assert config.llm.metrics == "legacy-model"
+    assert config.llm.summary == "legacy-model"
+    assert config.llm.referee == "x-ai/grok-4.1-fast"

@@ -369,6 +369,8 @@ class OutputManager:
                 "actors": self.scenario.config.llm.actors,
                 "rules": self.scenario.config.llm.rules,
                 "metrics": self.scenario.config.llm.metrics,
+                "summary": self.scenario.config.llm.summary,
+                "referee": self.scenario.config.llm.referee,
                 "temperature": self.scenario.config.llm.temperature,
                 "max_tokens": self.scenario.config.llm.max_tokens,
             },

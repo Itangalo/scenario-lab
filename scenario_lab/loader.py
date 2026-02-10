@@ -261,6 +261,8 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "actors": base_config.llm.actors,
                     "rules": base_config.llm.rules,
                     "metrics": base_config.llm.metrics,
+                    "summary": base_config.llm.summary,
+                    "referee": base_config.llm.referee,
                     "temperature": base_config.llm.temperature,
                     "max_tokens": base_config.llm.max_tokens,
                 },
@@ -280,6 +282,8 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             actors=llm_data.get("model", "anthropic/claude-sonnet-4"),
             rules=llm_data.get("model", "anthropic/claude-sonnet-4"),
             metrics=llm_data.get("model", "anthropic/claude-sonnet-4"),
+            summary=llm_data.get("summary", llm_data.get("model", "anthropic/claude-sonnet-4")),
+            referee=llm_data.get("referee", "x-ai/grok-4.1-fast"),
             temperature=llm_data.get("temperature", 0.7),
             max_tokens=llm_data.get("max_tokens", 2000),
         )
@@ -291,6 +295,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             rules=llm_data.get("rules", "anthropic/claude-sonnet-4"),
             metrics=llm_data.get("metrics", "anthropic/claude-sonnet-4"),
             summary=llm_data.get("summary", "openai/gpt-4o-mini"),
+            referee=llm_data.get("referee", "x-ai/grok-4.1-fast"),
             temperature=llm_data.get("temperature", 0.7),
             max_tokens=llm_data.get("max_tokens", 2000),
         )

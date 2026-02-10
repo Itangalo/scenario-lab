@@ -83,6 +83,8 @@ def test_output_manager_structure(test_scenario, mock_llm_client, tmp_path):
     # Verify config content
     config = json.loads(config_file.read_text())
     assert config['name'] == test_scenario.config.name
+    assert "summary" in config["llm"]
+    assert "referee" in config["llm"]
     
     # Verify summary content
     summary = json.loads(summary_file.read_text())
