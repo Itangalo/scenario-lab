@@ -4,7 +4,7 @@ Fast, isolated evaluation of LLM event condition interpretation using flat promp
 
 ## Purpose
 
-This eval suite addresses the challenge of complex event conditions in scenarios like `ai-2027-2`. Instead of running full scenario simulations, it tests event condition interpretation in isolation using single LLM calls per test case.
+This eval suite addresses the challenge of complex event conditions in scenarios like `ai-2027-2` and `sweden-ai-2030`. Instead of running full scenario simulations, it tests event condition interpretation in isolation using single LLM calls per test case.
 
 **Advantages:**
 
@@ -79,6 +79,15 @@ Actual complex events from the ai-2027-2 scenario:
 - AI incident (multiple metric conditions)
 - Safety crisis (OR condition with tiers)
 
+### 6. Real sweden-ai-2030 Events (6 tests)
+
+Real event structures from the Sweden scenario:
+
+- Adoption-threshold incident conditions
+- Tiered unemployment-linked strike probabilities
+- Turn-based geopolitical conditions (Taiwan blockade)
+- Date-based election trigger conditions
+
 ## Quick Start
 
 ### Prerequisites
@@ -113,6 +122,9 @@ pytest tests/evals/event-conditions-flat/ -k "range" -v
 # Test only ai-2027 real events
 pytest tests/evals/event-conditions-flat/ -k "ai_2027" -v
 
+# Test only Sweden real events
+pytest tests/evals/event-conditions-flat/ -k "sweden_ai_2030" -v
+
 # Test only multi-tier probability
 pytest tests/evals/event-conditions-flat/ -k "multi_tier" -v
 ```
@@ -137,7 +149,8 @@ tests/evals/event-conditions-flat/
 │   ├── range_conditions.yaml           # Range-based conditions
 │   ├── multi_tier_probability.yaml     # Complex tiered probabilities
 │   ├── complex_or_logic.yaml           # "Any of the following" logic
-│   └── ai_2027_real.yaml               # Real events from ai-2027-2
+│   ├── ai_2027_real.yaml               # Real events from ai-2027-2
+│   └── sweden_ai_2030_real.yaml        # Real events from sweden-ai-2030
 └── ground_truth/                       # (Reserved for future structured ground truth)
 ```
 
@@ -183,9 +196,10 @@ range_conditions              :  5/ 5 (100.0%)
 multi_tier_probability        :  5/ 5 (100.0%)
 complex_or_logic              :  5/ 5 (100.0%)
 ai_2027_real                  :  6/ 6 (100.0%)
+sweden_ai_2030_real           :  6/ 6 (100.0%)
 ------------------------------------------------------------
-OVERALL                       : 27/27 (100.0%)
-Total tokens used             : ~12,000
+OVERALL                       : 33/33 (100.0%)
+Total tokens used             : ~15,000
 ============================================================
 ```
 
@@ -193,13 +207,14 @@ Total tokens used             : ~12,000
 
 Initial testing with `x-ai/grok-4.1-fast` shows **excellent performance**:
 
-- **Overall:** 27/27 tests passed (100%) in ~3.5 minutes
+- **Overall:** 33/33 tests passed (100%) in ~4.0 minutes
 - **Simple conditions:** 6/6 (100%) - Basic thresholds and logic
 - **Range conditions:** 5/5 (100%) - Natural language ranges like "150-250"
 - **Multi-tier probability:** 5/5 (100%) - Complex tiered probability structures
 - **Complex OR logic:** 5/5 (100%) - "Any of the following" multi-condition logic
 - **Real AI 2027 events:** 6/6 (100%) - Real-world complex event conditions
-- **Total tokens:** ~12,000 (cost: ~$0.01-0.02)
+- **Real Sweden 2030 events:** 6/6 (100%) - Real-world Sweden condition patterns
+- **Total tokens:** ~15,000 (cost: ~$0.01-0.03)
 
 This demonstrates that Grok 4.1 Fast can reliably interpret complex event conditions including:
 - Composite metric calculations

@@ -252,6 +252,28 @@ def test_ai_2027_real_events(llm_client, system_prompt, user_prompt_template, te
     assert result["success"], f"Test failed: {test_case['name']}"
 
 
+@pytest.mark.parametrize(
+    "test_case",
+    load_test_cases("sweden_ai_2030_real.yaml"),
+    ids=lambda tc: tc["name"],
+)
+def test_sweden_ai_2030_real_events(llm_client, system_prompt, user_prompt_template, test_case):
+    """Test real events from sweden-ai-2030 scenario."""
+    result = evaluate_test_case(llm_client, system_prompt, user_prompt_template, test_case)
+
+    if not result["success"]:
+        print(f"\n{'='*60}")
+        print(f"Test: {test_case['name']}")
+        print(f"Description: {test_case['description']}")
+        print(f"Expected: {result['expected']}")
+        print(f"Actual: {result['actual']}")
+        if "note" in test_case["expected"]:
+            print(f"Note: {test_case['expected']['note']}")
+        print(f"{'='*60}")
+
+    assert result["success"], f"Test failed: {test_case['name']}"
+
+
 # Summary test to aggregate results
 
 def test_summary(llm_client, system_prompt, user_prompt_template):
@@ -262,6 +284,7 @@ def test_summary(llm_client, system_prompt, user_prompt_template):
         "multi_tier_probability.yaml",
         "complex_or_logic.yaml",
         "ai_2027_real.yaml",
+        "sweden_ai_2030_real.yaml",
     ]
 
     results_by_category = {}

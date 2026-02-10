@@ -1,0 +1,105 @@
+# Real events from sweden-ai-2030 scenario
+
+test_cases:
+  - name: "ai_incident_not_eligible_low_adoption"
+    description: "AI incident should not be eligible when adoption is below threshold"
+    turn: 1
+    time_period: "January-June 2026"
+    metrics:
+      ai_adoption_sweden: 20
+    event: |
+      ## AI Incident in Sweden
+      **ID:** ai_incident_sweden
+      **Condition:** Requires ai_adoption_sweden >= 30
+      **Probability:** 8 percent per round when ai_adoption_sweden is 30-49, 12 percent when 50-69, and 18 percent when 70 or higher.
+      **Can repeat:** Yes
+      **Description:** A severe harm case linked to intensive use of an AI companion gets national attention.
+    expected:
+      eligible: false
+      probability: 0.0
+
+  - name: "ai_incident_eligible_mid_tier"
+    description: "AI incident should use 12% tier at adoption 55"
+    turn: 4
+    time_period: "July-December 2027"
+    metrics:
+      ai_adoption_sweden: 55
+    event: |
+      ## AI Incident in Sweden
+      **ID:** ai_incident_sweden
+      **Condition:** Requires ai_adoption_sweden >= 30
+      **Probability:** 8 percent per round when ai_adoption_sweden is 30-49, 12 percent when 50-69, and 18 percent when 70 or higher.
+      **Can repeat:** Yes
+      **Description:** A severe harm case linked to intensive use of an AI companion gets national attention.
+    expected:
+      eligible: true
+      probability: 0.12
+
+  - name: "strike_high_unemployment_tier"
+    description: "Strike probability should map to 28% tier when unemployment is 16"
+    turn: 3
+    time_period: "January-June 2027"
+    metrics:
+      unemployment: 16
+    event: |
+      ## Strike Against AI Implementation
+      **ID:** strike
+      **Condition:** Requires unemployment > 10
+      **Probability:** 12 percent per round when unemployment is 10-11.9, 18 percent when 12-14.9, 28 percent when 15-19.9, and 40 percent when 20 or higher.
+      **Can repeat:** Yes
+      **Description:** Trade unions initiate strikes against AI implementation.
+    expected:
+      eligible: true
+      probability: 0.28
+
+  - name: "taiwan_blockade_not_before_turn_3"
+    description: "Taiwan blockade should not be eligible before turn 3"
+    turn: 2
+    time_period: "July-December 2026"
+    metrics:
+      ai_capability: 40
+    event: |
+      ## Taiwan Blockade
+      **ID:** taiwan_blockade
+      **Condition:** Turn is 3 or later
+      **Probability:** 5 percent per round
+      **Can repeat:** No
+      **Description:** China initiates a blockade of Taiwan.
+    expected:
+      eligible: false
+      probability: 0.0
+
+  - name: "taiwan_blockade_eligible_turn_4"
+    description: "Taiwan blockade should be eligible at turn 4 with base probability"
+    turn: 4
+    time_period: "July-December 2027"
+    metrics:
+      ai_capability: 120
+    event: |
+      ## Taiwan Blockade
+      **ID:** taiwan_blockade
+      **Condition:** Turn is 3 or later
+      **Probability:** 5 percent per round
+      **Can repeat:** No
+      **Description:** China initiates a blockade of Taiwan.
+    expected:
+      eligible: true
+      probability: 0.05
+
+  - name: "sweden_election_date_condition"
+    description: "Election should trigger when September 2026 is in period"
+    turn: 2
+    time_period: "July-December 2026"
+    metrics:
+      ai_adoption_sweden: 25
+      unemployment: 9
+    event: |
+      ## Parliamentary Election 2026
+      **ID:** general_election_2026
+      **Condition:** September 2026 is included in the turn being covered
+      **Probability:** 100 percent
+      **Can repeat:** No
+      **Description:** New parliamentary election leads to government negotiations and possible change of government.
+    expected:
+      eligible: true
+      probability: 1.0
