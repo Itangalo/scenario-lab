@@ -255,3 +255,32 @@ def test_cli_estimate_model_overrides_all_llm_tasks():
     assert mock_scenario.config.llm.metrics == "new-model"
     assert mock_scenario.config.llm.summary == "new-model"
     assert mock_scenario.config.llm.referee == "new-model"
+
+
+def test_cli_calibrate_runs_analysis_without_api_calls(tmp_path):
+    """calibrate command should run local analysis and print report."""
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+    run_dir = scenario_dir / "runs" / "run-20250101-000001"
+    run_dir.mkdir(parents=True)
+    (run_dir / "summary.json").write_text(
+        json.dumps(
+            {
+                "scenario": "Test",
+                "total_turns": 1,
+                "final_metrics": {"m1": 10},
+                "history": [{"turn": 1, "metrics": {"m1": 10}}],
+                "occurred_events": [],
+                "status": "completed",
+            }
+        ),
+        encoding="utf-8",
+    )
+    turn_dir = run_dir / "turn-01"
+    turn_dir.mkdir()
+    (turn_dir / "1-events.json").write_text(
+        json.dumps([{"id": "e1", "probability": 0.1}]), encoding="utf-8"
+    )
+
+    with patch("sys.argv", ["scenario_lab", "calibrate", str(scenario_dir)]):
+        main()

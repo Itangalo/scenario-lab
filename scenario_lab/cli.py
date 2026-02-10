@@ -99,6 +99,16 @@ def main():
     estimate_parser.add_argument("--turns", type=int, help="Number of turns (default: from config)")
     estimate_parser.add_argument("--model", type=str, help="Override all LLM models for estimation")
 
+    # Calibrate command
+    calibrate_parser = subparsers.add_parser(
+        "calibrate",
+        help="Analyze existing runs for scenario calibration (no API calls)",
+    )
+    calibrate_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
+    calibrate_parser.add_argument("--max-runs", type=int, default=None, help="Analyze most recent N runs")
+    calibrate_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
+    calibrate_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
+
     args = parser.parse_args()
 
     # Default to run if no command specified (backward compatibility)
@@ -240,6 +250,30 @@ def main():
         # Display report
         report = format_estimate_report(estimate, scenario.config.name, num_turns)
         print(report)
+        return
+
+    if args.command == "calibrate":
+        from .calibration import analyze_runs, format_analysis_report
+
+        scenario_dir = args.scenario if args.scenario.is_dir() else args.scenario.parent
+        print(f"Analyzing runs for: {scenario_dir}")
+
+        try:
+            analysis = analyze_runs(scenario_dir, max_runs=args.max_runs)
+        except Exception as e:
+            print(f"❌ Calibration analysis failed: {e}")
+            return
+
+        if args.json:
+            report = json.dumps(analysis, indent=2, ensure_ascii=False)
+        else:
+            report = format_analysis_report(analysis)
+
+        if args.output:
+            args.output.write_text(report, encoding="utf-8")
+            print(f"✅ Calibration report written to: {args.output}")
+        else:
+            print(report)
         return
 
     if args.command == "resume":
