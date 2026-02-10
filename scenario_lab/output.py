@@ -239,25 +239,55 @@ class OutputManager:
         if not self.run_dir:
             raise RuntimeError("Must call start_run() first")
 
-        # Build complete history from results
-        history = [
-            {"turn": r.turn, "metrics": r.metrics}
-            for r in results
-        ]
+        summary_path = self.run_dir / "summary.json"
 
-        summary = {
-            "scenario": self.scenario.config.name,
-            "total_turns": len(results),
-            "final_metrics": results[-1].metrics if results else {},
-            "history": history,
-            "occurred_events": list(self.scenario.occurred_events),
-            "completed_at": datetime.now().isoformat(),
-            "status": "completed",
-        }
+        # Preserve pre-existing summary data (critical for resume/branch flows)
+        existing_summary = {}
+        if summary_path.exists():
+            try:
+                existing_summary = json.loads(summary_path.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                existing_summary = {}
 
-        (self.run_dir / "summary.json").write_text(
-            json.dumps(summary, indent=2, ensure_ascii=False)
+        # Merge history by turn so new results replace same-turn entries but do not drop older turns
+        history_by_turn = {}
+        for entry in existing_summary.get("history", []):
+            if isinstance(entry, dict) and "turn" in entry and "metrics" in entry:
+                history_by_turn[entry["turn"]] = {
+                    "turn": entry["turn"],
+                    "metrics": entry["metrics"],
+                }
+
+        for result in results:
+            history_by_turn[result.turn] = {"turn": result.turn, "metrics": result.metrics}
+
+        history = [history_by_turn[turn] for turn in sorted(history_by_turn.keys())]
+
+        if history:
+            total_turns = history[-1]["turn"]
+            final_metrics = history[-1]["metrics"]
+        else:
+            total_turns = existing_summary.get("total_turns", 0)
+            final_metrics = existing_summary.get("final_metrics", {})
+
+        occurred_events = sorted(
+            set(existing_summary.get("occurred_events", [])) | set(self.scenario.occurred_events)
         )
+
+        summary = existing_summary.copy()
+        summary.update(
+            {
+                "scenario": self.scenario.config.name,
+                "total_turns": total_turns,
+                "final_metrics": final_metrics,
+                "history": history,
+                "occurred_events": occurred_events,
+                "completed_at": datetime.now().isoformat(),
+                "status": "completed",
+            }
+        )
+
+        summary_path.write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
 
     def save_summary(self, results: list[TurnResult]):
         """Save final summary of the simulation run.

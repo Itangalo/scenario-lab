@@ -5,6 +5,7 @@ import pytest
 from pathlib import Path
 from scenario_lab.loader import load_scenario
 from scenario_lab.llm import MockLLMClient
+from scenario_lab.models import TurnResult
 from scenario_lab.orchestrator import run_simulation
 from scenario_lab.output import OutputManager
 
@@ -154,3 +155,75 @@ def test_output_write_error(test_scenario, mock_llm_client, tmp_path):
     finally:
         # Cleanup: restore permissions so pytest can delete tmp_path
         turn1_dir.chmod(0o777)
+
+
+def test_finalize_summary_preserves_existing_history_for_resume(test_scenario, tmp_path):
+    """Finalization must keep prior history when only new turns are provided."""
+    output = OutputManager(test_scenario, tmp_path)
+    run_dir = output.start_run()
+
+    existing_summary = {
+        "scenario": test_scenario.config.name,
+        "total_turns": 2,
+        "final_metrics": {"ai_capability": 5},
+        "history": [
+            {"turn": 1, "metrics": {"ai_capability": 4}},
+            {"turn": 2, "metrics": {"ai_capability": 5}},
+        ],
+        "occurred_events": ["event_a"],
+        "metadata": {"resumed_from_turn": 2},
+        "status": "running",
+    }
+    (run_dir / "summary.json").write_text(json.dumps(existing_summary), encoding="utf-8")
+
+    test_scenario.occurred_events.add("event_b")
+
+    new_result = TurnResult(
+        turn=3,
+        time_period="January-June 2027",
+        triggered_events=[],
+        actor_outputs={},
+        metric_rules="rules",
+        metrics={"ai_capability": 6},
+        narrative="narrative",
+        notepad="notepad",
+    )
+
+    output.finalize_summary([new_result])
+
+    summary = json.loads((run_dir / "summary.json").read_text(encoding="utf-8"))
+
+    assert summary["total_turns"] == 3
+    assert summary["final_metrics"] == {"ai_capability": 6}
+    assert [entry["turn"] for entry in summary["history"]] == [1, 2, 3]
+    assert set(summary["occurred_events"]) == {"event_a", "event_b"}
+    assert summary["metadata"]["resumed_from_turn"] == 2
+    assert summary["status"] == "completed"
+    assert "completed_at" in summary
+
+
+def test_finalize_summary_with_no_new_results_keeps_existing_history(test_scenario, tmp_path):
+    """If no new turns are produced, finalization must not wipe existing summary history."""
+    output = OutputManager(test_scenario, tmp_path)
+    run_dir = output.start_run()
+
+    existing_summary = {
+        "scenario": test_scenario.config.name,
+        "total_turns": 2,
+        "final_metrics": {"ai_capability": 5},
+        "history": [
+            {"turn": 1, "metrics": {"ai_capability": 4}},
+            {"turn": 2, "metrics": {"ai_capability": 5}},
+        ],
+        "occurred_events": [],
+        "status": "running",
+    }
+    (run_dir / "summary.json").write_text(json.dumps(existing_summary), encoding="utf-8")
+
+    output.finalize_summary([])
+
+    summary = json.loads((run_dir / "summary.json").read_text(encoding="utf-8"))
+    assert summary["total_turns"] == 2
+    assert summary["final_metrics"] == {"ai_capability": 5}
+    assert [entry["turn"] for entry in summary["history"]] == [1, 2]
+    assert summary["status"] == "completed"
