@@ -22,8 +22,8 @@ from typing import Any
 import pytest
 import yaml
 
-# Skip these tests by default as they are live LLM evaluations
-pytestmark = pytest.mark.skip(reason="Live LLM evaluations, not unit tests")
+# Live LLM eval suite: opt-in via `pytest -m integration`
+pytestmark = pytest.mark.integration
 
 # Add project root to path so we can import scenario_lab
 PROJECT_ROOT = Path(__file__).parent.parent.parent.parent

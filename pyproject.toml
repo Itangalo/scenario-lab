@@ -24,3 +24,9 @@ dev = [
 
 [project.scripts]
 scenario-lab = "scenario_lab.cli:main"
+
+[tool.pytest.ini_options]
+addopts = "-m 'not integration'"
+markers = [
+    "integration: tests that require live external services (e.g., LLM API)",
+]

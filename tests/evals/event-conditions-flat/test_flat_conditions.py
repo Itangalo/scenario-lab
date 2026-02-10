@@ -14,6 +14,9 @@ from typing import Any
 import pytest
 import yaml
 
+# Live LLM eval suite: opt-in via `pytest -m integration`
+pytestmark = pytest.mark.integration
+
 # Add project root to path so we can import scenario_lab
 PROJECT_ROOT = Path(__file__).parent.parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
