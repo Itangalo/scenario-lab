@@ -322,6 +322,7 @@ class Orchestrator:
             # Update saved metrics/narrative if they were corrected
             if self.output_manager:
                 self.output_manager.save_metrics_and_narrative(turn, new_metrics, narrative)
+                self.output_manager.update_summary(turn, new_metrics)
 
         # Step 6: Update historical summary
         if self.progress_tracker:

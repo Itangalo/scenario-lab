@@ -118,6 +118,33 @@ def test_crash_preservation(test_scenario, mock_llm_client, tmp_path):
     assert turn1_dir.exists()
     assert (turn1_dir / "4-metrics.json").exists()
 
+
+def test_summary_uses_corrected_metrics_for_same_turn(test_scenario, mock_llm_client, tmp_path):
+    """Summary history should be updated when constitutional review corrects a turn."""
+    output = OutputManager(test_scenario, tmp_path)
+    run_dir = output.start_run()
+
+    corrected_metrics = {
+        "ai_capability": 3,
+        "ai_adoption_sweden": 48,
+        "unemployment": 7,
+        "public_sentiment_to_ai": 1,
+    }
+
+    with patch(
+        "scenario_lab.orchestrator.Orchestrator._run_constitutional_referee_step",
+        return_value=(corrected_metrics, "Corrected narrative"),
+    ):
+        run_simulation(test_scenario, mock_llm_client, num_turns=1, output_manager=output)
+
+    summary = json.loads((run_dir / "summary.json").read_text(encoding="utf-8"))
+    turn_metrics = json.loads((run_dir / "turn-01" / "4-metrics.json").read_text(encoding="utf-8"))
+
+    assert summary["status"] == "running"
+    assert summary["final_metrics"] == corrected_metrics
+    assert summary["history"] == [{"turn": 1, "metrics": corrected_metrics}]
+    assert turn_metrics == corrected_metrics
+
 def test_output_content(test_scenario, mock_llm_client, tmp_path):
     """Test that written files contain correct data."""
     output = OutputManager(test_scenario, tmp_path)

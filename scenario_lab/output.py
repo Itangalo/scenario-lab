@@ -223,11 +223,24 @@ class OutputManager:
             except json.JSONDecodeError:
                 pass
 
-        # Append new turn data
-        history.append({
-            "turn": current_turn,
-            "metrics": latest_metrics
-        })
+        # Upsert current turn data so later corrections replace provisional metrics.
+        replaced = False
+        for entry in history:
+            if isinstance(entry, dict) and entry.get("turn") == current_turn:
+                entry["metrics"] = latest_metrics
+                replaced = True
+                break
+
+        if not replaced:
+            history.append({
+                "turn": current_turn,
+                "metrics": latest_metrics
+            })
+
+        history = sorted(
+            [h for h in history if isinstance(h, dict) and "turn" in h and "metrics" in h],
+            key=lambda x: x["turn"],
+        )
 
         summary = {
             "scenario": self.scenario.config.name,
