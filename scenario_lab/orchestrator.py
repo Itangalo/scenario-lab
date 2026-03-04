@@ -655,6 +655,13 @@ class Orchestrator:
             fenced_match = re.match(r"^```[^\n]*\n(?P<body>.*)\n```$", stripped, re.DOTALL)
             if fenced_match:
                 return fenced_match.group("body").strip()
+            if stripped.startswith("```"):
+                first_newline = stripped.find("\n")
+                if first_newline != -1:
+                    body = stripped[first_newline + 1 :].strip()
+                    if body.endswith("```"):
+                        body = body[:-3].rstrip()
+                    return body.strip()
             return stripped
 
         for iteration in range(max_iterations):

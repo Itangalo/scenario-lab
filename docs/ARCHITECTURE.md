@@ -154,6 +154,7 @@ Each turn executes the following steps in order:
 - **Target Types:** Accepts scenario directories and variant YAML files. With `--variants`, a scenario directory expands to all YAML files in its `variants/` directory.
 - **Repeat Runs:** `--repeat N` runs each resolved target N times, which supports Monte Carlo-style repeated runs of the same scenario without repeating the path manually.
 - **Execution Model:** Batch jobs run as separate child processes that invoke the normal `run` command. This keeps each simulation isolated while preserving the same orchestration and persistence behavior as single runs.
+- **Live Status:** In interactive terminals, batch commands stream child output into an inline dashboard that shows one row per job, including current turn, current activity, and the latest warning.
 - **Concurrency Control:** Uses bounded parallelism via `--max-concurrency` rather than launching every job at once.
 - **Logging:** Each batch job writes its stdout/stderr to a per-job log file under the owning scenario's `runs/batch-logs/` directory.
 - **Model Checks:** Batch jobs bypass interactive model preflight prompts so unattended runs do not block on TTY input.

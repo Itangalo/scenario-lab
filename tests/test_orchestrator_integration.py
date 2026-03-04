@@ -523,3 +523,90 @@ The budget expansion is phased in over time to keep the transition realistic."""
             "violations": "- Budget increase is too large for one turn.",
         }
     ]
+
+
+def test_constitutional_referee_accepts_unclosed_fenced_violations_response(test_scenario):
+    """A dangling opening fence should not force a parse_error if the body is usable."""
+
+    class SequenceClient:
+        def __init__(self, contents: list[str]):
+            self.contents = contents
+            self.calls = 0
+            self.models = ["mock/model"]
+
+        def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
+            if self.calls >= len(self.contents):
+                raise AssertionError("Client received more calls than expected")
+            content = self.contents[self.calls]
+            self.calls += 1
+            return LLMResponse(
+                content=content,
+                raw_response={"model": "mock/model"},
+            )
+
+        def close(self):
+            pass
+
+    class MetadataRecorder:
+        def __init__(self):
+            self.calls = []
+
+        def save_constitutional_metadata(self, turn: int, metadata: dict):
+            self.calls.append((turn, metadata))
+
+    referee_client = SequenceClient(
+        [
+            "```\nVIOLATIONS:\n- Adoption increase is too abrupt for one turn.",
+            "APPROVED",
+        ]
+    )
+    correction_client = SequenceClient(
+        [
+            """## Metrics
+
+```json
+{"ai_capability": 3, "ai_adoption_sweden": 10, "unemployment": 8, "public_sentiment_to_ai": 3}
+```
+
+## Narrative
+
+The increase is phased in across multiple quarters to stay realistic."""
+        ]
+    )
+    metadata_recorder = MetadataRecorder()
+    clients = {
+        "events": correction_client,
+        "actors": {},
+        "rules": correction_client,
+        "metrics": correction_client,
+        "summary": correction_client,
+        "referee": referee_client,
+    }
+
+    orchestrator = Orchestrator(
+        test_scenario,
+        llm_client=clients,
+        output_manager=metadata_recorder,
+    )
+
+    proposed_metrics = {metric_id: metric.value for metric_id, metric in test_scenario.metrics.metrics.items()}
+    proposed_metrics["ai_adoption_sweden"] = 40
+    narrative = "AI adoption jumps immediately after a broad policy shift."
+
+    final_metrics, final_narrative = orchestrator._run_constitutional_referee_step(
+        turn=1,
+        proposed_metrics=proposed_metrics,
+        narrative=narrative,
+    )
+
+    assert referee_client.calls == 2
+    assert correction_client.calls == 1
+    assert final_metrics["ai_adoption_sweden"] == 10
+    assert "phased in" in final_narrative
+    assert len(metadata_recorder.calls) == 1
+
+    saved_turn, metadata = metadata_recorder.calls[0]
+    assert saved_turn == 1
+    assert metadata["status"] == "approved"
+    assert metadata["iterations"] == 2
+    assert metadata["final_action"] == "corrected_and_approved"

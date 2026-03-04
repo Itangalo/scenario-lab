@@ -2,11 +2,12 @@
 
 import argparse
 import json
+import queue
 import re
 import shlex
 import subprocess
 import sys
-from concurrent.futures import ThreadPoolExecutor, as_completed
+import threading
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
@@ -89,6 +90,27 @@ class BatchJobResult:
     log_path: Path
 
 
+@dataclass
+class BatchJobSpec:
+    """Definition of one child process to launch for a batch command."""
+
+    target: Path
+    command: list[str]
+    log_path: Path
+
+
+@dataclass
+class BatchJobView:
+    """Mutable display state for one batch job."""
+
+    label: str
+    status: str = "queued"
+    turn: str = "-"
+    activity: str = "Waiting"
+    warning: str = ""
+    warning_count: int = 0
+
+
 def resolve_output_base(scenario_path: Path) -> Path:
     """Resolve the scenario directory that should own the run output."""
     output_base = Path(scenario_path)
@@ -137,6 +159,7 @@ def build_batch_run_command(target: Path, args: argparse.Namespace) -> list[str]
     """Build the child command used for one batch run job."""
     command = [
         sys.executable,
+        "-u",
         "-m",
         "scenario_lab.cli",
         "run",
@@ -167,27 +190,22 @@ def sanitize_batch_label(path: Path) -> str:
     return label or "scenario"
 
 
-def run_batch_job(
-    target: Path, args: argparse.Namespace, batch_id: str, index: int
-) -> BatchJobResult:
-    """Execute one scenario run in an isolated child process."""
-    output_base = resolve_output_base(target)
-    log_dir = output_base / "runs" / "batch-logs"
-    log_dir.mkdir(parents=True, exist_ok=True)
-
-    log_path = log_dir / f"batch-{batch_id}-{index:03d}-{sanitize_batch_label(target)}.log"
-    command = build_batch_run_command(target, args)
-
-    with log_path.open("w", encoding="utf-8") as log_file:
-        log_file.write(f"$ {' '.join(shlex.quote(part) for part in command)}\n\n")
-        completed = subprocess.run(
-            command,
-            stdout=log_file,
-            stderr=subprocess.STDOUT,
-            text=True,
+def build_batch_run_specs(targets: list[Path], args: argparse.Namespace, batch_id: str) -> list[BatchJobSpec]:
+    """Build batch-run job specs."""
+    specs: list[BatchJobSpec] = []
+    for index, target in enumerate(targets, start=1):
+        output_base = resolve_output_base(target)
+        log_dir = output_base / "runs" / "batch-logs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        log_path = log_dir / f"batch-{batch_id}-{index:03d}-{sanitize_batch_label(target)}.log"
+        specs.append(
+            BatchJobSpec(
+                target=target,
+                command=build_batch_run_command(target, args),
+                log_path=log_path,
+            )
         )
-
-    return BatchJobResult(target=target, returncode=completed.returncode, log_path=log_path)
+    return specs
 
 
 def is_incomplete_run(run_dir: Path) -> bool:
@@ -261,6 +279,7 @@ def build_batch_resume_command(run_dir: Path, args: argparse.Namespace) -> list[
     """Build the child command used for one batch resume job."""
     command = [
         sys.executable,
+        "-u",
         "-m",
         "scenario_lab.cli",
         "resume",
@@ -282,26 +301,313 @@ def build_batch_resume_command(run_dir: Path, args: argparse.Namespace) -> list[
     return command
 
 
-def run_batch_resume_job(
-    run_dir: Path, args: argparse.Namespace, batch_id: str, index: int
-) -> BatchJobResult:
-    """Execute one resume job in an isolated child process."""
-    log_dir = run_dir.parent / "batch-logs"
-    log_dir.mkdir(parents=True, exist_ok=True)
+def build_batch_resume_specs(run_dirs: list[Path], args: argparse.Namespace, batch_id: str) -> list[BatchJobSpec]:
+    """Build batch-resume job specs."""
+    specs: list[BatchJobSpec] = []
+    for index, run_dir in enumerate(run_dirs, start=1):
+        log_dir = run_dir.parent / "batch-logs"
+        log_dir.mkdir(parents=True, exist_ok=True)
+        log_path = log_dir / f"batch-resume-{batch_id}-{index:03d}-{sanitize_batch_label(run_dir)}.log"
+        specs.append(
+            BatchJobSpec(
+                target=run_dir,
+                command=build_batch_resume_command(run_dir, args),
+                log_path=log_path,
+            )
+        )
+    return specs
 
-    log_path = log_dir / f"batch-resume-{batch_id}-{index:03d}-{sanitize_batch_label(run_dir)}.log"
-    command = build_batch_resume_command(run_dir, args)
 
-    with log_path.open("w", encoding="utf-8") as log_file:
-        log_file.write(f"$ {' '.join(shlex.quote(part) for part in command)}\n\n")
-        completed = subprocess.run(
-            command,
-            stdout=log_file,
-            stderr=subprocess.STDOUT,
-            text=True,
+def truncate_batch_text(text: str, limit: int = 56) -> str:
+    """Trim long status text for inline batch display."""
+    cleaned = " ".join(text.split())
+    if len(cleaned) <= limit:
+        return cleaned
+    return cleaned[: limit - 3] + "..."
+
+
+def update_batch_view_from_line(view: BatchJobView, line: str):
+    """Update one batch job's display state from a child output line."""
+    text = line.strip()
+    if not text:
+        return
+
+    turns_match = re.match(r"^Turns:\s+(?:(\d+)\s+to\s+)?(\d+)$", text)
+    if turns_match:
+        start_turn = turns_match.group(1)
+        end_turn = turns_match.group(2)
+        if start_turn:
+            view.turn = f"{start_turn}-{end_turn}"
+        elif view.turn == "-":
+            view.turn = f"0/{end_turn}"
+        return
+
+    turn_match = re.match(r"^TURN\s+(\d+)(?:/(\d+))?:", text)
+    if turn_match:
+        current = turn_match.group(1)
+        total = turn_match.group(2)
+        view.turn = f"{current}/{total}" if total else current
+        view.activity = "Running turn"
+        return
+
+    quiet_turn_match = re.match(r"^Turn\s+(\d+)/(\d+):", text)
+    if quiet_turn_match:
+        view.turn = f"{quiet_turn_match.group(1)}/{quiet_turn_match.group(2)}"
+        view.activity = "Running turn"
+        return
+
+    step_match = re.match(r"^\[\d+/\d+\]\s+(.+?)\.\.\.$", text)
+    if step_match:
+        view.activity = truncate_batch_text(step_match.group(1))
+        return
+
+    if text.startswith("Warning:") or text.startswith("⚠️") or " Warning:" in text:
+        view.warning = truncate_batch_text(text)
+        view.warning_count += 1
+        return
+
+    if text.startswith("❌"):
+        view.warning = truncate_batch_text(text)
+        view.warning_count += 1
+        view.activity = "Error"
+        return
+
+    if text.startswith("SIMULATION COMPLETE") or text.startswith("RESUMED SIMULATION COMPLETE"):
+        view.activity = "Finalizing"
+        return
+
+    if text.startswith("Cost report saved:"):
+        view.activity = "Saving costs"
+        return
+
+    if text.startswith("Output directory:"):
+        view.activity = truncate_batch_text(text)
+        return
+
+    if text.startswith("Results saved to:"):
+        view.activity = "Saved results"
+        return
+
+    if text.startswith("Loading scenario from"):
+        view.activity = "Loading scenario"
+        return
+
+    if text.startswith("Resuming run:"):
+        view.activity = "Loading run"
+        return
+
+    if text.startswith("  → ") or text.startswith("  ✓ "):
+        view.activity = truncate_batch_text(text[4:])
+        return
+
+
+def render_batch_table(
+    title: str,
+    views: list[BatchJobView],
+    pending_count: int,
+    running_count: int,
+    completed_count: int,
+    failed_count: int,
+):
+    """Render an inline table for batch progress."""
+    from rich import box
+    from rich.table import Table
+
+    table = Table(title=title, box=box.SIMPLE_HEAVY)
+    table.caption = (
+        f"Pending: {pending_count}  Running: {running_count}  "
+        f"Completed: {completed_count}  Failed: {failed_count}"
+    )
+    table.add_column("#", style="dim", width=4)
+    table.add_column("Job", overflow="fold")
+    table.add_column("Status", width=11)
+    table.add_column("Turn", width=9)
+    table.add_column("Activity", overflow="fold")
+    table.add_column("Warning", overflow="fold")
+
+    for index, view in enumerate(views, start=1):
+        warning_text = ""
+        if view.warning:
+            warning_text = view.warning
+            if view.warning_count > 1:
+                warning_text = f"{warning_text} ({view.warning_count})"
+
+        table.add_row(
+            str(index),
+            view.label,
+            view.status,
+            view.turn,
+            view.activity,
+            warning_text,
         )
 
-    return BatchJobResult(target=run_dir, returncode=completed.returncode, log_path=log_path)
+    return table
+
+
+def execute_batch_specs(specs: list[BatchJobSpec], max_concurrency: int, title: str) -> tuple[list[BatchJobResult], list[tuple[Path, str]]]:
+    """Run batch jobs with bounded concurrency and inline status updates."""
+    from rich.console import Console
+    from rich.live import Live
+
+    views = [BatchJobView(label=sanitize_batch_label(spec.target)) for spec in specs]
+    results: list[BatchJobResult] = []
+    failures: list[tuple[Path, str]] = []
+
+    console = Console()
+    use_live = console.is_terminal
+
+    pending = list(enumerate(specs, start=1))
+    line_queue: "queue.Queue[tuple[int, str | None]]" = queue.Queue()
+    active: dict[int, dict] = {}
+
+    def start_job(job_id: int, spec: BatchJobSpec):
+        view = views[job_id - 1]
+        view.status = "starting"
+        view.activity = "Launching"
+
+        try:
+            log_file = spec.log_path.open("w", encoding="utf-8")
+            log_file.write(f"$ {' '.join(shlex.quote(part) for part in spec.command)}\n\n")
+            log_file.flush()
+            process = subprocess.Popen(
+                spec.command,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                bufsize=1,
+            )
+        except Exception as exc:
+            failures.append((spec.target, str(exc)))
+            view.status = "failed"
+            view.activity = "Launch error"
+            view.warning = truncate_batch_text(str(exc))
+            return
+
+        def pump_output():
+            try:
+                assert process.stdout is not None
+                for raw_line in process.stdout:
+                    log_file.write(raw_line)
+                    log_file.flush()
+                    line_queue.put((job_id, raw_line.rstrip("\n")))
+            finally:
+                if process.stdout is not None:
+                    process.stdout.close()
+                line_queue.put((job_id, None))
+
+        thread = threading.Thread(target=pump_output, daemon=True)
+        thread.start()
+
+        active[job_id] = {
+            "spec": spec,
+            "process": process,
+            "log_file": log_file,
+            "thread": thread,
+            "output_done": False,
+        }
+        view.status = "running"
+        view.activity = "Starting"
+
+    def refresh_live(live):
+        if not use_live:
+            return
+        pending_count = len(pending)
+        running_count = sum(1 for view in views if view.status == "running")
+        completed_count = sum(1 for view in views if view.status == "completed")
+        failed_count = sum(1 for view in views if view.status == "failed")
+        live.update(
+            render_batch_table(
+                title,
+                views,
+                pending_count,
+                running_count,
+                completed_count,
+                failed_count,
+            ),
+            refresh=True,
+        )
+
+    def finalize_finished_jobs():
+        finished_ids: list[int] = []
+        for job_id, state in active.items():
+            process = state["process"]
+            if process.poll() is None or not state["output_done"]:
+                continue
+
+            view = views[job_id - 1]
+            thread = state["thread"]
+            thread.join(timeout=0.1)
+            state["log_file"].close()
+
+            result = BatchJobResult(
+                target=state["spec"].target,
+                returncode=process.returncode or 0,
+                log_path=state["spec"].log_path,
+            )
+            results.append(result)
+
+            if result.returncode == 0:
+                view.status = "completed"
+                view.activity = "Done"
+            else:
+                view.status = "failed"
+                view.activity = f"Exit {result.returncode}"
+                if not view.warning:
+                    view.warning = f"Exited with code {result.returncode}"
+
+            finished_ids.append(job_id)
+
+        for job_id in finished_ids:
+            active.pop(job_id, None)
+
+    live = None
+    if use_live:
+        live = Live(
+            render_batch_table(title, views, len(pending), 0, 0, 0),
+            console=console,
+            refresh_per_second=8,
+        )
+        live.start()
+
+    try:
+        while pending or active:
+            while pending and len(active) < max_concurrency:
+                job_id, spec = pending.pop(0)
+                start_job(job_id, spec)
+                refresh_live(live)
+
+            try:
+                job_id, line = line_queue.get(timeout=0.1)
+                if job_id in active:
+                    if line is None:
+                        active[job_id]["output_done"] = True
+                    else:
+                        update_batch_view_from_line(views[job_id - 1], line)
+                        if not use_live and views[job_id - 1].warning and views[job_id - 1].warning_count == 1:
+                            print(f"⚠️  {specs[job_id - 1].target}: {views[job_id - 1].warning}")
+                refresh_live(live)
+            except queue.Empty:
+                pass
+
+            finalize_finished_jobs()
+            refresh_live(live)
+    finally:
+        if live is not None:
+            live.stop()
+
+    if use_live:
+        console.print(
+            render_batch_table(
+                title,
+                views,
+                pending_count=0,
+                running_count=0,
+                completed_count=sum(1 for view in views if view.status == "completed"),
+                failed_count=sum(1 for view in views if view.status == "failed"),
+            )
+        )
+
+    return results, failures
 
 
 def main():
@@ -532,6 +838,10 @@ def main():
             print(f"❌ {e}")
             return 1
 
+        if not targets:
+            print("No batch targets resolved.")
+            return 1
+
         batch_id = datetime.now().strftime("%Y%m%d-%H%M%S")
         worker_count = min(args.max_concurrency, len(targets))
         print(f"Launching batch: {len(targets)} run(s)")
@@ -540,30 +850,8 @@ def main():
         if args.variants:
             print("Mode: variants")
 
-        results: list[BatchJobResult] = []
-        failures: list[tuple[Path, str]] = []
-
-        with ThreadPoolExecutor(max_workers=worker_count) as executor:
-            futures = {
-                executor.submit(run_batch_job, target, args, batch_id, index): target
-                for index, target in enumerate(targets, start=1)
-            }
-
-            for future in as_completed(futures):
-                target = futures[future]
-                try:
-                    result = future.result()
-                except Exception as exc:
-                    failures.append((target, str(exc)))
-                    print(f"✗ {target}")
-                    print(f"  Launch error: {exc}")
-                    continue
-
-                results.append(result)
-                status = "✓" if result.returncode == 0 else "✗"
-                outcome = "completed" if result.returncode == 0 else "failed"
-                print(f"{status} {result.target} ({outcome})")
-                print(f"  Log: {result.log_path}")
+        specs = build_batch_run_specs(targets, args, batch_id)
+        results, failures = execute_batch_specs(specs, worker_count, "Batch Run Progress")
 
         success_count = sum(1 for result in results if result.returncode == 0)
         failed_results = [result for result in results if result.returncode != 0]
@@ -603,30 +891,8 @@ def main():
         print(f"Launching batch resume: {len(run_dirs)} run(s)")
         print(f"Max concurrency: {worker_count}")
 
-        results: list[BatchJobResult] = []
-        failures: list[tuple[Path, str]] = []
-
-        with ThreadPoolExecutor(max_workers=worker_count) as executor:
-            futures = {
-                executor.submit(run_batch_resume_job, run_dir, args, batch_id, index): run_dir
-                for index, run_dir in enumerate(run_dirs, start=1)
-            }
-
-            for future in as_completed(futures):
-                run_dir = futures[future]
-                try:
-                    result = future.result()
-                except Exception as exc:
-                    failures.append((run_dir, str(exc)))
-                    print(f"✗ {run_dir}")
-                    print(f"  Launch error: {exc}")
-                    continue
-
-                results.append(result)
-                status = "✓" if result.returncode == 0 else "✗"
-                outcome = "completed" if result.returncode == 0 else "failed"
-                print(f"{status} {result.target} ({outcome})")
-                print(f"  Log: {result.log_path}")
+        specs = build_batch_resume_specs(run_dirs, args, batch_id)
+        results, failures = execute_batch_specs(specs, worker_count, "Batch Resume Progress")
 
         success_count = sum(1 for result in results if result.returncode == 0)
         failed_results = [result for result in results if result.returncode != 0]
@@ -1252,7 +1518,8 @@ def main():
         total_turns=num_turns,
         actors=scenario.config.actor_ids,
         enabled=not args.no_progress,
-        quiet=args.quiet
+        quiet=args.quiet,
+        has_constitution=bool(getattr(scenario, "constitution", None)),
     )
 
     # run_simulation will create LLM clients and write incrementally

@@ -15,7 +15,14 @@ from rich import box
 class ProgressTracker:
     """Track and display simulation progress with Rich."""
 
-    def __init__(self, total_turns: int, actors: list[str], enabled: bool = True, quiet: bool = False):
+    def __init__(
+        self,
+        total_turns: int,
+        actors: list[str],
+        enabled: bool = True,
+        quiet: bool = False,
+        has_constitution: bool = False,
+    ):
         """Initialize progress tracker.
 
         Args:
@@ -23,6 +30,7 @@ class ProgressTracker:
             actors: List of actor IDs
             enabled: Whether to show progress (--no-progress disables)
             quiet: Minimal output mode (--quiet enables)
+            has_constitution: Whether the scenario runs the constitutional referee step
         """
         self.total_turns = total_turns
         self.actors = actors
@@ -47,8 +55,10 @@ class ProgressTracker:
             "Getting actor actions",
             "Updating metric rules",
             "Updating metrics and narrative",
-            "Updating historical summary"
         ]
+        if has_constitution:
+            self.steps.append("Validating constitutional constraints")
+        self.steps.append("Updating historical summary")
 
     def start_simulation(self):
         """Mark the start of the simulation."""
@@ -99,10 +109,10 @@ class ProgressTracker:
         self.console.print(turn_panel)
 
     def start_step(self, step_num: int, details: str = "") -> "StepContext":
-        """Start a simulation step (1-5).
+        """Start a simulation step.
 
         Args:
-            step_num: Step number (1-5)
+            step_num: Step number (1-based)
             details: Optional additional details
 
         Returns:
@@ -114,7 +124,7 @@ class ProgressTracker:
         """Internal: Update step display.
 
         Args:
-            step_num: Step number (1-5)
+            step_num: Step number (1-based)
             details: Step details
             status: "start", "complete"
         """
@@ -125,7 +135,7 @@ class ProgressTracker:
             # Simple print when progress disabled
             if status == "start":
                 step_name = self.steps[step_num - 1] if step_num <= len(self.steps) else f"Step {step_num}"
-                self.console.print(f"\n[{step_num}/5] {step_name}...")
+                self.console.print(f"\n[{step_num}/{len(self.steps)}] {step_name}...")
             elif status == "complete":
                 self.console.print(f"  → {details}")
             return
@@ -133,7 +143,7 @@ class ProgressTracker:
         # Rich output
         if status == "start":
             step_name = self.steps[step_num - 1] if step_num <= len(self.steps) else f"Step {step_num}"
-            self.console.print(f"\n  [{step_num}/5] [cyan]{step_name}...[/cyan]")
+            self.console.print(f"\n  [{step_num}/{len(self.steps)}] [cyan]{step_name}...[/cyan]")
         elif status == "complete":
             self.console.print(f"    [green]✓[/green] {details}")
 

@@ -138,7 +138,7 @@ python -m scenario_lab.cli batch-run scenarios/sweden-ai-2030/variants/quick-tes
 
 Use `--repeat` when you want to run the same scenario multiple times. Use `--variants` when you want to expand a scenario directory to all YAML files in `variants/`.
 
-`batch-run` launches multiple isolated child processes and limits concurrency with `--max-concurrency`, which is safer than starting many foreground runs manually.
+`batch-run` launches multiple isolated child processes and limits concurrency with `--max-concurrency`, which is safer than starting many foreground runs manually. In an interactive terminal it shows an inline batch dashboard with one row per job, including current turn, current activity, and the latest warning.
 
 ### Resume many incomplete runs in parallel
 
@@ -147,7 +147,7 @@ python -m scenario_lab.cli batch-resume scenarios/sweden-ai-2030 --max-concurren
 python -m scenario_lab.cli batch-resume scenarios/sweden-ai-2030/runs --max-concurrency 4 --turns 10
 ```
 
-`batch-resume` discovers incomplete `run-*` directories and resumes them in parallel. You can target a specific run directory, a `runs/` directory, or a scenario directory.
+`batch-resume` discovers incomplete `run-*` directories and resumes them in parallel. You can target a specific run directory, a `runs/` directory, or a scenario directory. In an interactive terminal it uses the same inline batch dashboard as `batch-run`.
 
 ### Calibrate from existing runs
 

@@ -1,11 +1,10 @@
 """Tests for CLI module."""
 
 import pytest
-import subprocess
 import sys
 import json
 from unittest.mock import patch, MagicMock
-from scenario_lab.cli import main, run_model_preflight_checks
+from scenario_lab.cli import main, run_model_preflight_checks, BatchJobResult
 from scenario_lab.model_audit import ModelRecommendation
 from scenario_lab.models import LLMConfig
 
@@ -386,15 +385,16 @@ def test_cli_batch_run_variants_launches_one_child_per_variant(tmp_path):
     variant_a.write_text("name: A\n", encoding="utf-8")
     variant_b.write_text("name: B\n", encoding="utf-8")
 
-    commands = []
+    captured_specs = []
 
-    def fake_run(command, stdout=None, stderr=None, text=None):
-        commands.append(command)
-        if stdout is not None:
-            stdout.write("ok\n")
-        return subprocess.CompletedProcess(command, 0)
+    def fake_execute(specs, max_concurrency, title):
+        captured_specs.extend(specs)
+        return (
+            [BatchJobResult(target=spec.target, returncode=0, log_path=spec.log_path) for spec in specs],
+            [],
+        )
 
-    with patch("scenario_lab.cli.subprocess.run", side_effect=fake_run):
+    with patch("scenario_lab.cli.execute_batch_specs", side_effect=fake_execute):
         with patch(
             "sys.argv",
             [
@@ -418,20 +418,20 @@ def test_cli_batch_run_variants_launches_one_child_per_variant(tmp_path):
             result = main()
 
     assert result == 0
-    assert len(commands) == 4
+    assert len(captured_specs) == 4
 
-    command_texts = [" ".join(command) for command in commands]
+    command_texts = [" ".join(spec.command) for spec in captured_specs]
     assert sum(str(variant_a) in text for text in command_texts) == 2
     assert sum(str(variant_b) in text for text in command_texts) == 2
 
-    for command in commands:
-        assert command[:4] == [sys.executable, "-m", "scenario_lab.cli", "run"]
-        assert "--skip-model-checks" in command
-        assert "--no-progress" in command
-        assert "--validate" in command
-        assert "--turns" in command
-        assert "--model" in command
-        assert "--override" in command
+    for spec in captured_specs:
+        assert spec.command[:5] == [sys.executable, "-u", "-m", "scenario_lab.cli", "run"]
+        assert "--skip-model-checks" in spec.command
+        assert "--no-progress" in spec.command
+        assert "--validate" in spec.command
+        assert "--turns" in spec.command
+        assert "--model" in spec.command
+        assert "--override" in spec.command
 
 
 def test_cli_batch_run_repeat_reuses_same_target(tmp_path):
@@ -439,15 +439,16 @@ def test_cli_batch_run_repeat_reuses_same_target(tmp_path):
     scenario_dir = tmp_path / "scenario"
     scenario_dir.mkdir()
 
-    commands = []
+    captured_specs = []
 
-    def fake_run(command, stdout=None, stderr=None, text=None):
-        commands.append(command)
-        if stdout is not None:
-            stdout.write("ok\n")
-        return subprocess.CompletedProcess(command, 0)
+    def fake_execute(specs, max_concurrency, title):
+        captured_specs.extend(specs)
+        return (
+            [BatchJobResult(target=spec.target, returncode=0, log_path=spec.log_path) for spec in specs],
+            [],
+        )
 
-    with patch("scenario_lab.cli.subprocess.run", side_effect=fake_run):
+    with patch("scenario_lab.cli.execute_batch_specs", side_effect=fake_execute):
         with patch(
             "sys.argv",
             [
@@ -463,10 +464,10 @@ def test_cli_batch_run_repeat_reuses_same_target(tmp_path):
             result = main()
 
     assert result == 0
-    assert len(commands) == 3
-    for command in commands:
-        assert command[:4] == [sys.executable, "-m", "scenario_lab.cli", "run"]
-        assert str(scenario_dir) in command
+    assert len(captured_specs) == 3
+    for spec in captured_specs:
+        assert spec.command[:5] == [sys.executable, "-u", "-m", "scenario_lab.cli", "run"]
+        assert str(scenario_dir) in spec.command
 
 
 def test_cli_batch_resume_scenario_only_launches_incomplete_runs(tmp_path):
@@ -502,15 +503,16 @@ def test_cli_batch_resume_scenario_only_launches_incomplete_runs(tmp_path):
         (turn_dir / "4-world-state.md").write_text("world", encoding="utf-8")
         (turn_dir / "5-notepad.md").write_text("notes", encoding="utf-8")
 
-    commands = []
+    captured_specs = []
 
-    def fake_run(command, stdout=None, stderr=None, text=None):
-        commands.append(command)
-        if stdout is not None:
-            stdout.write("ok\n")
-        return subprocess.CompletedProcess(command, 0)
+    def fake_execute(specs, max_concurrency, title):
+        captured_specs.extend(specs)
+        return (
+            [BatchJobResult(target=spec.target, returncode=0, log_path=spec.log_path) for spec in specs],
+            [],
+        )
 
-    with patch("scenario_lab.cli.subprocess.run", side_effect=fake_run):
+    with patch("scenario_lab.cli.execute_batch_specs", side_effect=fake_execute):
         with patch(
             "sys.argv",
             [
@@ -530,11 +532,11 @@ def test_cli_batch_resume_scenario_only_launches_incomplete_runs(tmp_path):
             result = main()
 
     assert result == 0
-    assert len(commands) == 1
-    command = commands[0]
-    assert command[:4] == [sys.executable, "-m", "scenario_lab.cli", "resume"]
-    assert str(active_run) in command
-    assert str(done_run) not in command
-    assert "--turns" in command
-    assert "--model" in command
-    assert "--override" in command
+    assert len(captured_specs) == 1
+    spec = captured_specs[0]
+    assert spec.command[:5] == [sys.executable, "-u", "-m", "scenario_lab.cli", "resume"]
+    assert str(active_run) in spec.command
+    assert str(done_run) not in spec.command
+    assert "--turns" in spec.command
+    assert "--model" in spec.command
+    assert "--override" in spec.command
