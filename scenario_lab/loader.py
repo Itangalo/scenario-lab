@@ -1,5 +1,6 @@
 """Scenario loading from disk."""
 
+import re
 import yaml
 from pathlib import Path
 from typing import Union, Optional, List
@@ -364,28 +365,19 @@ def load_metrics(path: Path) -> Metrics:
 
         elif line.startswith("**") and ":" in line:
             key, value = parse_key_value(line)
-            metric_data[key.lower()] = value
+            metric_data[normalize_markdown_key(key)] = value
 
         elif current_metric_id and line.startswith("- ") and ":" in line:
             # Reference point: "- 0: description"
-            # Check for either Swedish or English key
-            ref_key_swe = "referenspunkter"
-            ref_key_eng = "reference_points"
-            
-            if ref_key_swe not in metric_data and ref_key_eng not in metric_data:
-                # Default to English if neither exists (will be merged in create_metric)
-                metric_data[ref_key_eng] = {}
-            
-            # Use whichever key exists (or English if we just created it)
-            active_ref_key = ref_key_swe if ref_key_swe in metric_data else ref_key_eng
-            
-            # Ensure the value is a dictionary (it might be a string if the header was empty like "**Referenspunkter:**")
-            if not isinstance(metric_data[active_ref_key], dict):
-                metric_data[active_ref_key] = {}
-            
+            if "reference_points" not in metric_data:
+                metric_data["reference_points"] = {}
+
+            if not isinstance(metric_data["reference_points"], dict):
+                metric_data["reference_points"] = {}
+
             try:
                 ref_value, ref_desc = line[2:].split(":", 1)
-                metric_data[active_ref_key][float(ref_value.strip())] = ref_desc.strip()
+                metric_data["reference_points"][float(ref_value.strip())] = ref_desc.strip()
             except ValueError:
                 pass
 
@@ -398,20 +390,22 @@ def load_metrics(path: Path) -> Metrics:
 
 def create_metric(metric_id: str, data: dict) -> Metric:
     """Create a Metric from parsed data."""
-    # Handle bilingual keys (prefer Swedish for backward compat, fallback to English)
-    description = data.get("beskrivning") or data.get("description", "")
+    description = data.get("description", "")
     
-    # Value can be 'startvärde' (SE) or 'value' (EN)
-    value_str = data.get("startvärde") or data.get("value", "0")
+    # Accept the English labels used in metrics.md and tests.
+    value_str = (
+        data.get("starting_value")
+        or data.get("start_value")
+        or data.get("value", "0")
+    )
     value = float(value_str)
     
     min_val = float(data.get("min", 0))
     max_val = float(data.get("max", 100))
     
-    unit = data.get("enhet") or data.get("unit", "")
+    unit = data.get("unit", "")
     
-    # Reference points can be referenspunkter or reference_points
-    ref_points = data.get("referenspunkter") or data.get("reference_points", {})
+    ref_points = data.get("reference_points", {})
     
     return Metric(
         id=metric_id,
@@ -430,10 +424,10 @@ def load_events(path: Path) -> list[Event]:
     Expected format:
     ## Event Name
     **ID:** event_id
-    **Villkor:** condition description
-    **Sannolikhet:** 0.10 or formula
-    **Kan upprepas:** Ja/Nej
-    **Beskrivning:** event description
+    **Condition:** condition description
+    **Probability:** 0.10 or formula
+    **Can repeat:** Yes/No
+    **Description:** event description
     """
     content = path.read_text(encoding="utf-8")
     events = []
@@ -452,7 +446,7 @@ def load_events(path: Path) -> list[Event]:
 
         elif line.startswith("**") and ":" in line:
             key, value = parse_key_value(line)
-            current_event[key.lower()] = value
+            current_event[normalize_markdown_key(key)] = value
 
     # Don't forget last event
     if current_event.get("id"):
@@ -463,18 +457,14 @@ def load_events(path: Path) -> list[Event]:
 
 def create_event(data: dict) -> Event:
     """Create an Event from parsed data."""
-    # Handle bilingual keys for can_repeat
-    can_repeat_str_swe = data.get("kan upprepas")
-    can_repeat_str_eng = data.get("can repeat")
-    
-    can_repeat_str = (can_repeat_str_swe or can_repeat_str_eng or "nej").lower()
-    can_repeat = can_repeat_str in ["ja", "yes", "true"]
+    can_repeat_str = data.get("can_repeat", "no").lower()
+    can_repeat = can_repeat_str in ["yes", "true"]
 
     # Handle probability - could be number or formula
-    probability = data.get("sannolikhet") or data.get("probability", "0")
+    probability = data.get("probability", "0")
     
-    description = data.get("beskrivning") or data.get("description", "")
-    condition = data.get("villkor") or data.get("condition", "")
+    description = data.get("description", "")
+    condition = data.get("condition", "")
 
     return Event(
         id=data["id"],
@@ -509,9 +499,9 @@ def load_actor(path: Path, actor_id: str) -> Actor:
 
         if line_stripped.startswith("# "):
             name = line_stripped[2:].strip()
-        elif line_lower.startswith("## kort beskrivning") or line_lower.startswith("## short description"):
+        elif line_lower.startswith("## short description"):
             current_section = "short"
-        elif line_lower.startswith("## längre beskrivning") or line_lower.startswith("## long description"):
+        elif line_lower.startswith("## long description"):
             current_section = "long"
         elif line_stripped.startswith("##"):
             current_section = None
@@ -541,6 +531,11 @@ def parse_key_value(line: str) -> tuple[str, str]:
 
     key, value = line.split(":", 1)
     return key.strip(), value.strip()
+
+
+def normalize_markdown_key(key: str) -> str:
+    """Normalize markdown field labels to stable lookup keys."""
+    return re.sub(r"\s+", "_", key.strip().lower())
 
 
 def get_time_period(start_date: str, turn: int, time_scale: str) -> str:

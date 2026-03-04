@@ -74,12 +74,12 @@ actors:
     metrics = """# Metrics
 
 ## test_metric
-**Beskrivning:** Test metric
+**Description:** Test metric
 **ID:** test_metric
-**Startvärde:** 50
+**Starting value:** 50
 **Min:** 0
 **Max:** 100
-**Enhet:** percent
+**Unit:** percent
 """
     (scenario_dir / "metrics.md").write_text(metrics)
 
@@ -100,9 +100,10 @@ actors:
     actors_dir.mkdir()
 
     actor1 = """# Actor 1
-
-**Beskrivning:** Test actor
-**Mål:** Test goal
+## Short description
+Test actor.
+## Long description
+Test goal.
 """
     (actors_dir / "actor1.md").write_text(actor1)
 

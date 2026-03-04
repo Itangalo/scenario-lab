@@ -3,6 +3,7 @@
 import json
 import pytest
 from pathlib import Path
+from unittest.mock import Mock, patch
 from scenario_lab.loader import load_scenario
 from scenario_lab.llm import MockLLMClient
 from scenario_lab.models import TurnResult
@@ -230,3 +231,21 @@ def test_finalize_summary_with_no_new_results_keeps_existing_history(test_scenar
     assert summary["final_metrics"] == {"ai_capability": 5}
     assert [entry["turn"] for entry in summary["history"]] == [1, 2]
     assert summary["status"] == "completed"
+
+
+def test_start_run_adds_suffix_when_timestamp_collides(test_scenario, tmp_path):
+    """Colliding run timestamps should create distinct directories."""
+    output_one = OutputManager(test_scenario, tmp_path)
+    output_two = OutputManager(test_scenario, tmp_path)
+
+    fake_now = Mock()
+    fake_now.strftime.return_value = "20260304-120000"
+    fake_datetime = Mock()
+    fake_datetime.now.return_value = fake_now
+
+    with patch("scenario_lab.output.datetime", fake_datetime):
+        run_one = output_one.start_run()
+        run_two = output_two.start_run()
+
+    assert run_one.name == "run-20260304-120000"
+    assert run_two.name == "run-20260304-120000-01"

@@ -27,9 +27,22 @@ class OutputManager:
         Returns:
             Path to the created run directory
         """
+        runs_dir = self.base_path / "runs"
+        runs_dir.mkdir(parents=True, exist_ok=True)
+
         timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-        self.run_dir = self.base_path / "runs" / f"run-{timestamp}"
-        self.run_dir.mkdir(parents=True, exist_ok=True)
+        base_name = f"run-{timestamp}"
+        attempt = 0
+
+        while True:
+            suffix = "" if attempt == 0 else f"-{attempt:02d}"
+            candidate = runs_dir / f"{base_name}{suffix}"
+            try:
+                candidate.mkdir(exist_ok=False)
+                self.run_dir = candidate
+                break
+            except FileExistsError:
+                attempt += 1
 
         # Save config snapshot
         self._save_config()

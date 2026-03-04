@@ -1,6 +1,7 @@
 """Tests for CLI module."""
 
 import pytest
+import subprocess
 import sys
 import json
 from unittest.mock import patch, MagicMock
@@ -373,3 +374,130 @@ def test_cli_audit_models_reports_project_warnings(tmp_path, capsys):
     captured = capsys.readouterr()
     assert "MODEL AUDIT" in captured.out
     assert "gpt-3.5-turbo-2024-01-15" in captured.out
+
+
+def test_cli_batch_run_variants_launches_one_child_per_variant(tmp_path):
+    """batch-run should expand variants and launch one child run per YAML file."""
+    scenario_dir = tmp_path / "scenario"
+    variants_dir = scenario_dir / "variants"
+    variants_dir.mkdir(parents=True)
+    variant_a = variants_dir / "a.yaml"
+    variant_b = variants_dir / "b.yml"
+    variant_a.write_text("name: A\n", encoding="utf-8")
+    variant_b.write_text("name: B\n", encoding="utf-8")
+
+    commands = []
+
+    def fake_run(command, stdout=None, stderr=None, text=None):
+        commands.append(command)
+        if stdout is not None:
+            stdout.write("ok\n")
+        return subprocess.CompletedProcess(command, 0)
+
+    with patch("scenario_lab.cli.subprocess.run", side_effect=fake_run):
+        with patch(
+            "sys.argv",
+            [
+                "scenario_lab",
+                "batch-run",
+                str(scenario_dir),
+                "--variants",
+                "--max-concurrency",
+                "2",
+                "--turns",
+                "3",
+                "--model",
+                "test-model",
+                "--override",
+                "foo=bar",
+                "--validate",
+            ],
+        ):
+            result = main()
+
+    assert result == 0
+    assert len(commands) == 2
+
+    command_texts = [" ".join(command) for command in commands]
+    assert any(str(variant_a) in text for text in command_texts)
+    assert any(str(variant_b) in text for text in command_texts)
+
+    for command in commands:
+        assert command[:4] == [sys.executable, "-m", "scenario_lab.cli", "run"]
+        assert "--skip-model-checks" in command
+        assert "--no-progress" in command
+        assert "--validate" in command
+        assert "--turns" in command
+        assert "--model" in command
+        assert "--override" in command
+
+
+def test_cli_batch_resume_scenario_only_launches_incomplete_runs(tmp_path):
+    """batch-resume should discover only incomplete runs under a scenario directory."""
+    scenario_dir = tmp_path / "scenario"
+    runs_dir = scenario_dir / "runs"
+    runs_dir.mkdir(parents=True)
+
+    active_run = runs_dir / "run-20260304-100000"
+    done_run = runs_dir / "run-20260304-101000"
+
+    for run_dir, max_turns, status, completed_turns in [
+        (active_run, 3, "running", 1),
+        (done_run, 1, "completed", 1),
+    ]:
+        run_dir.mkdir()
+        (run_dir / "config.json").write_text(
+            json.dumps({"max_turns": max_turns}),
+            encoding="utf-8",
+        )
+        (run_dir / "summary.json").write_text(
+            json.dumps({"status": status}),
+            encoding="utf-8",
+        )
+        turn_dir = run_dir / f"turn-{completed_turns:02d}"
+        turn_dir.mkdir()
+        (turn_dir / "1-events.json").write_text("[]", encoding="utf-8")
+        actors_dir = turn_dir / "2-actors"
+        actors_dir.mkdir()
+        (actors_dir / "actor.md").write_text("actions", encoding="utf-8")
+        (turn_dir / "3-metric-rules.md").write_text("rules", encoding="utf-8")
+        (turn_dir / "4-metrics.json").write_text("{}", encoding="utf-8")
+        (turn_dir / "4-world-state.md").write_text("world", encoding="utf-8")
+        (turn_dir / "5-notepad.md").write_text("notes", encoding="utf-8")
+
+    commands = []
+
+    def fake_run(command, stdout=None, stderr=None, text=None):
+        commands.append(command)
+        if stdout is not None:
+            stdout.write("ok\n")
+        return subprocess.CompletedProcess(command, 0)
+
+    with patch("scenario_lab.cli.subprocess.run", side_effect=fake_run):
+        with patch(
+            "sys.argv",
+            [
+                "scenario_lab",
+                "batch-resume",
+                str(scenario_dir),
+                "--max-concurrency",
+                "2",
+                "--turns",
+                "5",
+                "--model",
+                "test-model",
+                "--override",
+                "foo=bar",
+            ],
+        ):
+            result = main()
+
+    assert result == 0
+    assert len(commands) == 1
+    command = commands[0]
+    assert command[:4] == [sys.executable, "-m", "scenario_lab.cli", "resume"]
+    assert str(active_run) in command
+    assert str(done_run) not in command
+    assert "--turns" in command
+    assert "--model" in command
+    assert "--override" in command

@@ -8,13 +8,13 @@ def test_load_metrics(tmp_path):
     """Test parsing of metrics markdown file."""
     content = """
 ## metric1
-**Beskrivning:** First metric
+**Description:** First metric
 **ID:** metric1
 **Min:** 0
 **Max:** 100
-**Enhet:** percent
-**Startvärde:** 50
-**Referenspunkter:**
+**Unit:** percent
+**Starting value:** 50
+**Reference points:**
 - 0: low
 - 100: high
 
@@ -24,7 +24,7 @@ def test_load_metrics(tmp_path):
 **Min:** -10
 **Max:** 10
 **Unit:** index
-**Value:** 0
+**Starting value:** 0
 **Reference points:**
 - -10: bad
 - 10: good
@@ -54,10 +54,10 @@ def test_load_events(tmp_path):
     content = """
 ## Event One
 **ID:** event1
-**Villkor:** condition1
-**Sannolikhet:** 0.5
-**Kan upprepas:** Ja
-**Beskrivning:** Desc 1
+**Condition:** condition1
+**Probability:** 0.5
+**Can repeat:** Yes
+**Description:** Desc 1
 
 ## Event Two
 **ID:** event2
@@ -89,9 +89,9 @@ def test_load_events(tmp_path):
 def test_load_actor(tmp_path):
     """Test parsing of actor markdown file."""
     content = """# My Actor
-## Kort beskrivning
+## Short description
 A short summary.
-## Längre beskrivning
+## Long description
 A longer description
 spanning multiple lines.
 """

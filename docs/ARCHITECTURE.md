@@ -145,9 +145,18 @@ Each turn executes the following steps in order:
 
 ### Persistence (`output.py`)
 - **Incremental Writing:** Results are saved to disk *immediately* after each step of the turn loop.
-- **Structure:** Each run gets a timestamped directory. Each turn gets a subdirectory.
+- **Structure:** Each run gets a timestamped directory. If a timestamp collides, the writer appends a numeric suffix (for example `run-20260304-102254-01`) instead of reusing the same directory. Each turn gets a subdirectory.
 - **Crash Resilience:** If the simulation crashes, all progress up to the last successful step is preserved.
 - **Resumption:** The directory structure and `summary.json` support resuming crashed runs or extending completed runs.
+
+### Batch Execution (`cli.py`)
+- **CLI Command:** `python -m scenario_lab.cli batch-run <target...> [options]`
+- **Target Types:** Accepts scenario directories and variant YAML files. With `--variants`, a scenario directory expands to all YAML files in its `variants/` directory.
+- **Execution Model:** Batch jobs run as separate child processes that invoke the normal `run` command. This keeps each simulation isolated while preserving the same orchestration and persistence behavior as single runs.
+- **Concurrency Control:** Uses bounded parallelism via `--max-concurrency` rather than launching every job at once.
+- **Logging:** Each batch job writes its stdout/stderr to a per-job log file under the owning scenario's `runs/batch-logs/` directory.
+- **Model Checks:** Batch jobs bypass interactive model preflight prompts so unattended runs do not block on TTY input.
+- **Batch Resume:** `python -m scenario_lab.cli batch-resume <target...> [options]` resumes multiple runs with the same bounded-concurrency/process-isolation model. Scenario directories and `runs/` directories expand to incomplete `run-*` directories automatically; explicit run directories are resumed directly.
 
 ### Resume & Branching (`resume.py`)
 
@@ -242,9 +251,8 @@ The `5-constitutional-check.json` file (when present) includes:
 - Final action: Whether metrics were accepted or corrected
 
 **Future Extensions:**
-- Batch resume: Resume all incomplete runs in a batch directory
 - Batch branch: Create multiple branches from a batch of runs
-- Parallel execution: Run multiple resume/branch operations concurrently
+- Parallel execution for resume/branch operations
 
 ### Validation (`validator.py`)
 
@@ -373,7 +381,7 @@ Cost so far: $0.15 | Projected total: $0.50
 
 ### CLI (`cli.py`)
 - **Entry Point:** `python -m scenario_lab.cli`.
-- **Commands:** `run`, `resume`, `branch`, `validate`, `audit-models`, `visualize`, `costs`, `estimate`
+- **Commands:** `run`, `batch-run`, `batch-resume`, `resume`, `branch`, `validate`, `audit-models`, `visualize`, `costs`, `estimate`
 - **Overrides:** Supports `--override key=value` to modify configuration at runtime (e.g., `--override output_language=Spanish`).
 - **Validation:** Supports `--validate` flag to validate scenarios before running
 - **Model Preflight:** `run` performs model hygiene checks by default and can be bypassed with `--skip-model-checks`

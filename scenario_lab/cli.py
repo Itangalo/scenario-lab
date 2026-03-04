@@ -2,7 +2,13 @@
 
 import argparse
 import json
+import re
+import shlex
+import subprocess
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import dataclass
+from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -74,6 +80,229 @@ def run_model_preflight_checks(scenario) -> bool:
     return False
 
 
+@dataclass
+class BatchJobResult:
+    """Result of one batch-run child process."""
+
+    target: Path
+    returncode: int
+    log_path: Path
+
+
+def resolve_output_base(scenario_path: Path) -> Path:
+    """Resolve the scenario directory that should own the run output."""
+    output_base = Path(scenario_path)
+    if output_base.is_file():
+        original_parent = output_base.parent
+        output_base = original_parent
+        while output_base != output_base.parent:
+            if (output_base / "metrics.md").exists():
+                return output_base
+            output_base = output_base.parent
+        return original_parent
+    return output_base
+
+
+def normalize_batch_targets(targets: list[Path], use_variants: bool) -> list[Path]:
+    """Expand batch targets into concrete scenario directories or variant files."""
+    normalized: list[Path] = []
+
+    for target in targets:
+        if not target.exists():
+            raise ValueError(f"Target does not exist: {target}")
+
+        if use_variants and target.is_dir():
+            variants_dir = target / "variants"
+            if not variants_dir.is_dir():
+                raise ValueError(f"No variants/ directory found for: {target}")
+
+            variant_files = sorted(
+                path
+                for path in variants_dir.iterdir()
+                if path.is_file() and path.suffix in {".yaml", ".yml"}
+            )
+            if not variant_files:
+                raise ValueError(f"No variant YAML files found in: {variants_dir}")
+
+            normalized.extend(variant_files)
+            continue
+
+        normalized.append(target)
+
+    return normalized
+
+
+def build_batch_run_command(target: Path, args: argparse.Namespace) -> list[str]:
+    """Build the child command used for one batch run job."""
+    command = [
+        sys.executable,
+        "-m",
+        "scenario_lab.cli",
+        "run",
+        str(target),
+        "--skip-model-checks",
+        "--no-progress",
+    ]
+
+    if args.turns is not None:
+        command.extend(["--turns", str(args.turns)])
+
+    if args.model:
+        command.extend(["--model", args.model])
+
+    if args.validate:
+        command.append("--validate")
+
+    for override in args.override or []:
+        command.extend(["--override", override])
+
+    return command
+
+
+def sanitize_batch_label(path: Path) -> str:
+    """Create a filesystem-safe label for batch log filenames."""
+    source = path.stem if path.is_file() else path.name
+    label = re.sub(r"[^A-Za-z0-9._-]+", "-", source).strip("-")
+    return label or "scenario"
+
+
+def run_batch_job(
+    target: Path, args: argparse.Namespace, batch_id: str, index: int
+) -> BatchJobResult:
+    """Execute one scenario run in an isolated child process."""
+    output_base = resolve_output_base(target)
+    log_dir = output_base / "runs" / "batch-logs"
+    log_dir.mkdir(parents=True, exist_ok=True)
+
+    log_path = log_dir / f"batch-{batch_id}-{index:03d}-{sanitize_batch_label(target)}.log"
+    command = build_batch_run_command(target, args)
+
+    with log_path.open("w", encoding="utf-8") as log_file:
+        log_file.write(f"$ {' '.join(shlex.quote(part) for part in command)}\n\n")
+        completed = subprocess.run(
+            command,
+            stdout=log_file,
+            stderr=subprocess.STDOUT,
+            text=True,
+        )
+
+    return BatchJobResult(target=target, returncode=completed.returncode, log_path=log_path)
+
+
+def is_incomplete_run(run_dir: Path) -> bool:
+    """Check whether a run directory should be included in batch-resume discovery."""
+    from .resume import detect_last_turn, validate_run_directory
+
+    is_valid, _ = validate_run_directory(run_dir)
+    if not is_valid:
+        return False
+
+    try:
+        summary = json.loads((run_dir / "summary.json").read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return True
+
+    try:
+        config = json.loads((run_dir / "config.json").read_text(encoding="utf-8"))
+        max_turns = int(config.get("max_turns", 0))
+    except (OSError, json.JSONDecodeError, TypeError, ValueError):
+        max_turns = 0
+
+    completed_turns = detect_last_turn(run_dir)
+    if max_turns and completed_turns < max_turns:
+        return True
+
+    return summary.get("status") != "completed"
+
+
+def collect_batch_resume_runs(targets: list[Path]) -> list[Path]:
+    """Expand batch-resume targets into concrete run directories."""
+    collected: list[Path] = []
+
+    for target in targets:
+        if not target.exists():
+            raise ValueError(f"Target does not exist: {target}")
+
+        if target.is_dir() and target.parent.name == "runs" and target.name.startswith("run-"):
+            collected.append(target)
+            continue
+
+        if target.is_dir() and target.name == "runs":
+            run_dirs = sorted(
+                path for path in target.iterdir() if path.is_dir() and path.name.startswith("run-")
+            )
+            collected.extend(run_dir for run_dir in run_dirs if is_incomplete_run(run_dir))
+            continue
+
+        if target.is_dir() and (target / "runs").is_dir():
+            runs_dir = target / "runs"
+            run_dirs = sorted(
+                path for path in runs_dir.iterdir() if path.is_dir() and path.name.startswith("run-")
+            )
+            collected.extend(run_dir for run_dir in run_dirs if is_incomplete_run(run_dir))
+            continue
+
+        raise ValueError(f"Unsupported batch-resume target: {target}")
+
+    deduped: list[Path] = []
+    seen: set[Path] = set()
+    for run_dir in collected:
+        resolved = run_dir.resolve()
+        if resolved in seen:
+            continue
+        seen.add(resolved)
+        deduped.append(run_dir)
+
+    return deduped
+
+
+def build_batch_resume_command(run_dir: Path, args: argparse.Namespace) -> list[str]:
+    """Build the child command used for one batch resume job."""
+    command = [
+        sys.executable,
+        "-m",
+        "scenario_lab.cli",
+        "resume",
+        str(run_dir),
+    ]
+
+    if args.turns is not None:
+        command.extend(["--turns", str(args.turns)])
+
+    if args.model:
+        command.extend(["--model", args.model])
+
+    if args.from_turn is not None:
+        command.extend(["--from-turn", str(args.from_turn)])
+
+    for override in args.override or []:
+        command.extend(["--override", override])
+
+    return command
+
+
+def run_batch_resume_job(
+    run_dir: Path, args: argparse.Namespace, batch_id: str, index: int
+) -> BatchJobResult:
+    """Execute one resume job in an isolated child process."""
+    log_dir = run_dir.parent / "batch-logs"
+    log_dir.mkdir(parents=True, exist_ok=True)
+
+    log_path = log_dir / f"batch-resume-{batch_id}-{index:03d}-{sanitize_batch_label(run_dir)}.log"
+    command = build_batch_resume_command(run_dir, args)
+
+    with log_path.open("w", encoding="utf-8") as log_file:
+        log_file.write(f"$ {' '.join(shlex.quote(part) for part in command)}\n\n")
+        completed = subprocess.run(
+            command,
+            stdout=log_file,
+            stderr=subprocess.STDOUT,
+            text=True,
+        )
+
+    return BatchJobResult(target=run_dir, returncode=completed.returncode, log_path=log_path)
+
+
 def main():
     """CLI entry point."""
     load_dotenv()
@@ -117,6 +346,86 @@ def main():
         "--skip-model-checks",
         action="store_true",
         help="Skip default model hygiene checks before running",
+    )
+
+    # Batch run command
+    batch_run_parser = subparsers.add_parser(
+        "batch-run",
+        help="Run multiple scenarios or variants in parallel",
+    )
+    batch_run_parser.add_argument(
+        "targets",
+        nargs="+",
+        type=Path,
+        help="Scenario directories or variant YAML files",
+    )
+    batch_run_parser.add_argument(
+        "--variants",
+        action="store_true",
+        help="Expand directory targets to all YAML files in variants/",
+    )
+    batch_run_parser.add_argument(
+        "--max-concurrency",
+        type=int,
+        default=4,
+        help="Maximum number of runs to execute at the same time",
+    )
+    batch_run_parser.add_argument(
+        "--turns",
+        type=int,
+        default=None,
+        help="Number of turns to run for each scenario (default: from config)",
+    )
+    batch_run_parser.add_argument(
+        "--model", type=str, default=None, help="Override LLM model for all batch jobs"
+    )
+    batch_run_parser.add_argument(
+        "--override",
+        action="append",
+        help="Override scenario config for all batch jobs (repeatable)",
+    )
+    batch_run_parser.add_argument(
+        "--validate",
+        action="store_true",
+        help="Validate each scenario before running",
+    )
+
+    # Batch resume command
+    batch_resume_parser = subparsers.add_parser(
+        "batch-resume",
+        help="Resume multiple runs in parallel",
+    )
+    batch_resume_parser.add_argument(
+        "targets",
+        nargs="+",
+        type=Path,
+        help="Run directories, runs/ directories, or scenario directories",
+    )
+    batch_resume_parser.add_argument(
+        "--max-concurrency",
+        type=int,
+        default=4,
+        help="Maximum number of resumes to execute at the same time",
+    )
+    batch_resume_parser.add_argument(
+        "--turns",
+        type=int,
+        default=None,
+        help="Total turns to run for each resumed scenario",
+    )
+    batch_resume_parser.add_argument(
+        "--model", type=str, default=None, help="Override LLM model for all resumed jobs"
+    )
+    batch_resume_parser.add_argument(
+        "--override",
+        action="append",
+        help="Override config for all resumed jobs (repeatable)",
+    )
+    batch_resume_parser.add_argument(
+        "--from-turn",
+        type=int,
+        default=None,
+        help="Force all resumes to load from a specific turn",
     )
 
     # Validate command
@@ -201,6 +510,131 @@ def main():
         except Exception as e:
             print(f"❌ Error generating visualization: {e}")
         return
+
+    if args.command == "batch-run":
+        if args.max_concurrency < 1:
+            print("❌ --max-concurrency must be at least 1")
+            return 1
+
+        try:
+            targets = normalize_batch_targets(args.targets, args.variants)
+        except ValueError as e:
+            print(f"❌ {e}")
+            return 1
+
+        batch_id = datetime.now().strftime("%Y%m%d-%H%M%S")
+        worker_count = min(args.max_concurrency, len(targets))
+        print(f"Launching batch: {len(targets)} run(s)")
+        print(f"Max concurrency: {worker_count}")
+
+        if args.variants:
+            print("Mode: variants")
+
+        results: list[BatchJobResult] = []
+        failures: list[tuple[Path, str]] = []
+
+        with ThreadPoolExecutor(max_workers=worker_count) as executor:
+            futures = {
+                executor.submit(run_batch_job, target, args, batch_id, index): target
+                for index, target in enumerate(targets, start=1)
+            }
+
+            for future in as_completed(futures):
+                target = futures[future]
+                try:
+                    result = future.result()
+                except Exception as exc:
+                    failures.append((target, str(exc)))
+                    print(f"✗ {target}")
+                    print(f"  Launch error: {exc}")
+                    continue
+
+                results.append(result)
+                status = "✓" if result.returncode == 0 else "✗"
+                outcome = "completed" if result.returncode == 0 else "failed"
+                print(f"{status} {result.target} ({outcome})")
+                print(f"  Log: {result.log_path}")
+
+        success_count = sum(1 for result in results if result.returncode == 0)
+        failed_results = [result for result in results if result.returncode != 0]
+        total_failures = len(failed_results) + len(failures)
+
+        print(f"\n{'='*60}")
+        print("BATCH RUN COMPLETE")
+        print(f"{'='*60}")
+        print(f"Successful: {success_count}")
+        print(f"Failed: {total_failures}")
+
+        for result in failed_results:
+            print(f"  - {result.target} (log: {result.log_path})")
+
+        for target, error_text in failures:
+            print(f"  - {target} (launch error: {error_text})")
+
+        return 1 if total_failures else 0
+
+    if args.command == "batch-resume":
+        if args.max_concurrency < 1:
+            print("❌ --max-concurrency must be at least 1")
+            return 1
+
+        try:
+            run_dirs = collect_batch_resume_runs(args.targets)
+        except ValueError as e:
+            print(f"❌ {e}")
+            return 1
+
+        if not run_dirs:
+            print("No incomplete runs found.")
+            return 0
+
+        batch_id = datetime.now().strftime("%Y%m%d-%H%M%S")
+        worker_count = min(args.max_concurrency, len(run_dirs))
+        print(f"Launching batch resume: {len(run_dirs)} run(s)")
+        print(f"Max concurrency: {worker_count}")
+
+        results: list[BatchJobResult] = []
+        failures: list[tuple[Path, str]] = []
+
+        with ThreadPoolExecutor(max_workers=worker_count) as executor:
+            futures = {
+                executor.submit(run_batch_resume_job, run_dir, args, batch_id, index): run_dir
+                for index, run_dir in enumerate(run_dirs, start=1)
+            }
+
+            for future in as_completed(futures):
+                run_dir = futures[future]
+                try:
+                    result = future.result()
+                except Exception as exc:
+                    failures.append((run_dir, str(exc)))
+                    print(f"✗ {run_dir}")
+                    print(f"  Launch error: {exc}")
+                    continue
+
+                results.append(result)
+                status = "✓" if result.returncode == 0 else "✗"
+                outcome = "completed" if result.returncode == 0 else "failed"
+                print(f"{status} {result.target} ({outcome})")
+                print(f"  Log: {result.log_path}")
+
+        success_count = sum(1 for result in results if result.returncode == 0)
+        failed_results = [result for result in results if result.returncode != 0]
+        total_failures = len(failed_results) + len(failures)
+
+        print(f"\n{'='*60}")
+        print("BATCH RESUME COMPLETE")
+        print(f"{'='*60}")
+        print(f"Successful: {success_count}")
+        print(f"Failed: {total_failures}")
+
+        for result in failed_results:
+            print(f"  - {result.target} (log: {result.log_path})")
+
+        for run_dir, error_text in failures:
+            print(f"  - {run_dir} (launch error: {error_text})")
+
+        return 1 if total_failures else 0
 
     if args.command == "validate":
         print(f"Validating scenario: {args.scenario}...")
@@ -362,7 +796,6 @@ def main():
 
     if args.command == "resume":
         from .resume import load_run_state, detect_last_turn, validate_run_directory
-        from datetime import datetime
 
         print(f"Resuming run: {args.run_dir}")
 
@@ -372,13 +805,13 @@ def main():
             print(f"❌ Invalid run directory:")
             for error in errors:
                 print(f"  - {error}")
-            return
+            return 1
 
         # Determine resume point
         from_turn = args.from_turn or detect_last_turn(args.run_dir)
         if from_turn == 0:
             print("❌ No completed turns found")
-            return
+            return 1
         print(f"  Resuming from turn {from_turn}")
 
         # Load state
@@ -480,7 +913,7 @@ def main():
             print(f"RESUMED SIMULATION COMPLETE")
             print(f"{'='*60}")
             print(f"Results saved to: {args.run_dir}")
-            return
+            return 0
 
         results = run_simulation(
             scenario,
@@ -496,7 +929,7 @@ def main():
         print(f"RESUMED SIMULATION COMPLETE")
         print(f"{'='*60}")
         print(f"Results saved to: {args.run_dir}")
-        return
+        return 0
 
     if args.command == "branch":
         from .resume import (
@@ -762,7 +1195,7 @@ def main():
             for error in result.errors:
                 print(f"  - {error}")
             print("\nFix the errors above before running the simulation.")
-            return
+            return 1
         else:
             print("✅ Scenario validation passed!\n")
 
@@ -776,7 +1209,7 @@ def main():
 
     if not getattr(args, "skip_model_checks", False):
         if not run_model_preflight_checks(scenario):
-            return
+            return 1
 
     # Run simulation
     print(f"\nRunning simulation: {scenario.config.name}")
@@ -795,14 +1228,7 @@ def main():
     print(f"Turns: {args.turns or scenario.config.max_turns}")
 
     # Determine output directory (use parent dir if args.scenario is a .yaml file)
-    output_base = args.scenario
-    if Path(args.scenario).is_file():
-        # For variant files, output to the base scenario directory
-        output_base = Path(args.scenario).parent
-        while output_base != output_base.parent:
-            if (output_base / "metrics.md").exists():
-                break
-            output_base = output_base.parent
+    output_base = resolve_output_base(args.scenario)
 
     output_manager = OutputManager(scenario, output_base)
     run_dir = output_manager.start_run()
@@ -834,6 +1260,7 @@ def main():
     print(f"SIMULATION COMPLETE")
     print(f"{'='*60}")
     print(f"Results saved to: {run_dir}")
+    return 0
 
 
 def run_dry(scenario):
@@ -869,4 +1296,4 @@ def run_dry(scenario):
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main() or 0)
