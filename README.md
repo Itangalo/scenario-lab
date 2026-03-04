@@ -240,6 +240,21 @@ At a high level:
 - `background/` provides the contextual material the models use
 - `constitution.md` adds hard plausibility constraints when needed
 
+## Creating New Scenarios
+
+The recommended workflow is to build new scenarios together with a terminal-based AI coding agent (for example Claude Code, OpenAI Codex, or Gemini CLI), then iterate based on test runs.
+
+For the full step-by-step process, see:
+
+- [docs/SCENARIO_CREATION_WITH_AGENT.md](docs/SCENARIO_CREATION_WITH_AGENT.md)
+
+In short:
+
+1. Create a scenario directory (optionally with `source-material/` for background input).
+2. Ask the agent to build the scenario in that directory.
+3. Let the agent interview you for missing requirements, draft files, and run validation.
+4. Run short simulations, review outcomes, and iterate.
+
 ## Included Example Scenario
 
 The main example scenario is `scenarios/sweden-ai-2030`.

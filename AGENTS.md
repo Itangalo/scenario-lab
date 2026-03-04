@@ -4,6 +4,10 @@ You are working on **Scenario Lab**, an AI-powered scenario simulation framework
 
 This file is the repository-specific instruction source for coding agents. Human-facing project overview and usage belong in `README.md`. System design details belong in `docs/ARCHITECTURE.md`.
 
+When helping create a new scenario from scratch, use:
+
+- [docs/SCENARIO_CREATION_WITH_AGENT.md](docs/SCENARIO_CREATION_WITH_AGENT.md)
+
 ## Critical Ground Truth
 
 Before proposing or implementing any change to system behavior, you must read:
