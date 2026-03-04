@@ -326,6 +326,22 @@ def truncate_batch_text(text: str, limit: int = 56) -> str:
     return cleaned[: limit - 3] + "..."
 
 
+def summarize_batch_activity(text: str) -> str:
+    """Convert verbose child output into short, stable batch activity labels."""
+    normalized = " ".join(text.split())
+    activity_aliases = {
+        "Determining external events": "Determining events",
+        "Getting actor actions": "Getting actions",
+        "Updating metric rules": "Adjusting rules",
+        "Updating metrics and narrative": "Updating metrics",
+        "Validating constitutional constraints": "Validating contraints",
+        "Updating historical summary": "Writing history",
+    }
+    if normalized in activity_aliases:
+        return activity_aliases[normalized]
+    return truncate_batch_text(normalized)
+
+
 def update_batch_view_from_line(view: BatchJobView, line: str):
     """Update one batch job's display state from a child output line."""
     text = line.strip()
@@ -358,7 +374,7 @@ def update_batch_view_from_line(view: BatchJobView, line: str):
 
     step_match = re.match(r"^\[\d+/\d+\]\s+(.+?)\.\.\.$", text)
     if step_match:
-        view.activity = truncate_batch_text(step_match.group(1))
+        view.activity = summarize_batch_activity(step_match.group(1))
         return
 
     if text.startswith("Warning:") or text.startswith("⚠️") or " Warning:" in text:

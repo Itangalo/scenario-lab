@@ -4,7 +4,14 @@ import pytest
 import sys
 import json
 from unittest.mock import patch, MagicMock
-from scenario_lab.cli import main, run_model_preflight_checks, BatchJobResult
+from scenario_lab.cli import (
+    main,
+    run_model_preflight_checks,
+    BatchJobResult,
+    BatchJobView,
+    summarize_batch_activity,
+    update_batch_view_from_line,
+)
 from scenario_lab.model_audit import ModelRecommendation
 from scenario_lab.models import LLMConfig
 
@@ -155,6 +162,25 @@ def test_cli_run_skip_model_checks_bypasses_preflight(tmp_path):
                         main()
 
     mock_preflight.assert_not_called()
+
+
+def test_summarize_batch_activity_uses_short_aliases():
+    """Known step labels should map to short, stable batch activity text."""
+    assert summarize_batch_activity("Updating historical summary") == "Writing history"
+    assert summarize_batch_activity("Updating metrics and narrative") == "Updating metrics"
+    assert summarize_batch_activity("Updating metric rules") == "Adjusting rules"
+    assert summarize_batch_activity("Validating constitutional constraints") == "Validating contraints"
+
+
+def test_update_batch_view_from_line_shortens_step_activity():
+    """Batch view should use the short aliases for step lines."""
+    view = BatchJobView(label="test")
+
+    update_batch_view_from_line(view, "[6/6] Updating historical summary...")
+    assert view.activity == "Writing history"
+
+    update_batch_view_from_line(view, "[4/6] Updating metrics and narrative...")
+    assert view.activity == "Updating metrics"
 
 
 def test_cli_resume_no_additional_turns_skips_simulation(tmp_path):
