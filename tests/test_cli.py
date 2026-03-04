@@ -5,6 +5,7 @@ import sys
 import json
 from unittest.mock import patch, MagicMock
 from scenario_lab.cli import (
+    build_batch_resume_command,
     main,
     run_model_preflight_checks,
     BatchJobResult,
@@ -197,6 +198,16 @@ def test_update_batch_view_from_line_tracks_run_directory():
     )
     assert view.run_dir == "run-20260304-134833-03"
     assert view.activity == "Saved results"
+
+
+def test_build_batch_resume_command_uses_no_progress(tmp_path):
+    """batch-resume child commands should use the same plain-text mode as batch-run."""
+    run_dir = tmp_path / "runs" / "run-123"
+    args = MagicMock(turns=10, model=None, from_turn=None, override=None)
+
+    command = build_batch_resume_command(run_dir, args)
+
+    assert "--no-progress" in command
 
 
 def test_cli_resume_no_additional_turns_skips_simulation(tmp_path):

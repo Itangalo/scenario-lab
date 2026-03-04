@@ -285,6 +285,7 @@ def build_batch_resume_command(run_dir: Path, args: argparse.Namespace) -> list[
         "scenario_lab.cli",
         "resume",
         str(run_dir),
+        "--no-progress",
     ]
 
     if args.turns is not None:
@@ -780,6 +781,9 @@ def main():
     resume_parser.add_argument("--model", type=str, default=None, help="Override all LLM models")
     resume_parser.add_argument("--override", action="append", help="Override config (e.g., 'llm.temperature=0.5')")
     resume_parser.add_argument("--from-turn", type=int, default=None, help="Resume from specific turn")
+    resume_parser.add_argument(
+        "--no-progress", action="store_true", help="Disable progress display"
+    )
 
     # Branch command
     branch_parser = subparsers.add_parser("branch", help="Create a branch from an existing run")
