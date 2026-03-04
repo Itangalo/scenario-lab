@@ -9,7 +9,7 @@ Tests LLM performance on:
 
 Usage:
     pytest tests/evals/llm-event-conditions/ -v
-    pytest tests/evals/llm-event-conditions/ --model "anthropic/claude-haiku-4"
+    pytest tests/evals/llm-event-conditions/ --model "x-ai/grok-4.1-fast"
     pytest tests/evals/llm-event-conditions/ -k "hallucination"
 """
 
@@ -71,7 +71,7 @@ def llm_client():
     Model can be specified via TEST_LLM_MODEL env var.
     Defaults to Claude Haiku 4 for cost-effective testing.
     """
-    model = os.getenv("TEST_LLM_MODEL", "anthropic/claude-haiku-4")
+    model = os.getenv("TEST_LLM_MODEL", "x-ai/grok-4.1-fast")
     api_key = os.getenv("OPENROUTER_API_KEY")
 
     if not api_key:

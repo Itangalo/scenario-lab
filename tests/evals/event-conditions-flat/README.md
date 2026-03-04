@@ -260,16 +260,16 @@ Or even more explicit:
 
 ```bash
 # Cheap models for iteration
-export TEST_LLM_MODEL="anthropic/claude-haiku-4"
-export TEST_LLM_MODEL="google/gemini-flash-1.5"
+export TEST_LLM_MODEL="x-ai/grok-4.1-fast"
+export TEST_LLM_MODEL="x-ai/grok-4.1-fast"
 
 # Mid-tier models
-export TEST_LLM_MODEL="anthropic/claude-sonnet-3.5"
-export TEST_LLM_MODEL="openai/gpt-4o-mini"
+export TEST_LLM_MODEL="google/gemini-3-flash-preview"
+export TEST_LLM_MODEL="x-ai/grok-4.1-fast"
 
 # Premium models (final validation)
-export TEST_LLM_MODEL="anthropic/claude-sonnet-4"
-export TEST_LLM_MODEL="openai/gpt-4o"
+export TEST_LLM_MODEL="google/gemini-3-flash-preview"
+export TEST_LLM_MODEL="google/gemini-3-flash-preview"
 ```
 
 ## Adding New Test Cases

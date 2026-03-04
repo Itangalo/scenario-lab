@@ -373,6 +373,7 @@ class OutputManager:
                 "referee": self.scenario.config.llm.referee,
                 "temperature": self.scenario.config.llm.temperature,
                 "max_tokens": self.scenario.config.llm.max_tokens,
+                "max_tokens_by_task": self.scenario.config.llm.max_tokens_by_task,
             },
         }
         (self.run_dir / "config.json").write_text(

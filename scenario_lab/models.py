@@ -113,22 +113,23 @@ class LLMConfig:
     """LLM configuration with per-task model selection and fallback lists.
 
     Each model field supports:
-    - Single string: "anthropic/claude-sonnet-4"
-    - Fallback list: ["x-ai/grok-4-fast", "google/gemini-flash-1.5", "anthropic/claude-haiku-4.5"]
+    - Single string: "google/gemini-3-flash-preview"
+    - Fallback list: ["x-ai/grok-4.1-fast", "google/gemini-3-flash-preview"]
     - Dict for actors: {"actor1": "model1", "actor2": ["model1", "model2"]}
     """
 
     # Per-task model selection (string or list for fallback)
-    events: Union[str, List[str]] = "anthropic/claude-sonnet-4"
-    actors: Union[str, List[str], dict] = "anthropic/claude-sonnet-4"  # actor_id -> model/list, or default
-    rules: Union[str, List[str]] = "anthropic/claude-sonnet-4"
-    metrics: Union[str, List[str]] = "anthropic/claude-sonnet-4"
-    summary: Union[str, List[str]] = "openai/gpt-4o-mini"  # Default to cheap model for summarization
+    events: Union[str, List[str]] = "google/gemini-3-flash-preview"
+    actors: Union[str, List[str], dict] = "google/gemini-3-flash-preview"  # actor_id -> model/list, or default
+    rules: Union[str, List[str]] = "google/gemini-3-flash-preview"
+    metrics: Union[str, List[str]] = "google/gemini-3-flash-preview"
+    summary: Union[str, List[str]] = "x-ai/grok-4.1-fast"  # Default to cheap model for summarization
     referee: Union[str, List[str]] = "x-ai/grok-4.1-fast"  # Default to fast, cheap model for validation
 
     # Global settings
     temperature: float = 0.7
     max_tokens: int = 2000
+    max_tokens_by_task: dict[str, int] = field(default_factory=dict)
 
     def get_actor_models(self, actor_id: str) -> Union[str, List[str]]:
         """Get model(s) for a specific actor.
@@ -140,12 +141,25 @@ class LLMConfig:
             return self.actors
 
         # Dict case
-        result = self.actors.get(actor_id, self.actors.get("default", "anthropic/claude-sonnet-4"))
+        result = self.actors.get(actor_id, self.actors.get("default", "google/gemini-3-flash-preview"))
         return result
 
     def normalize_to_list(self, value: Union[str, List[str]]) -> List[str]:
         """Convert a model value to a list (for fallback processing)."""
         return [value] if isinstance(value, str) else value
+
+    def get_task_max_tokens(self, task: str, default: Optional[int] = None) -> int:
+        """Get max_tokens for a task, falling back to global max_tokens.
+
+        Args:
+            task: Task name (events, actors, rules, metrics, summary, referee)
+            default: Optional fallback if task-specific value is not set
+        """
+        if task in self.max_tokens_by_task:
+            return self.max_tokens_by_task[task]
+        if default is not None:
+            return default
+        return self.max_tokens
 
 
 @dataclass

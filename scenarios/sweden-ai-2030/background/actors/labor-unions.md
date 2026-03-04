@@ -1,5 +1,11 @@
 # Labor Unions – Sweden's Workers
 
+## Short description
+
+Worker-representation actor focused on employment protection, bargaining power, and fair transition terms.
+
+## Long description
+
 The Swedish labor unions (LO, TCO, SACO) together represent over two million workers. They negotiate with employers, lobby the government, and try to ensure that the AI transition does not cause mass unemployment or crush working conditions.
 
 **Initial Goals:**

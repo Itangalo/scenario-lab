@@ -1,5 +1,11 @@
 # Media – Swedish News Media
 
+## Short description
+
+Agenda-shaping actor that influences public sentiment while facing commercial and credibility pressures.
+
+## Long description
+
 Swedish media includes both public service (SVT, SR) and commercial actors (DN, SvD, Aftonbladet, etc.). They report on AI, shape public opinion, and scrutinize other actors – while themselves being shaped by AI development.
 
 **Initial Goals:**

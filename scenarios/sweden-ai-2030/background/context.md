@@ -6,7 +6,7 @@ Sweden stands at a turning point in January 2026. While artificial intelligence 
 
 Globally, AI systems' capabilities have grown exponentially. Models from OpenAI, Anthropic, Google, and xAI show significant advances in reasoning and coding. Chinese development follows close behind. At the same time, first serious concerns about safety are emerging – not yet in the form of incidents, but rather as discussions among experts. An economic bubble noise is beginning to be heard as investments in AI startups flourish, but the rationale for valuations seems thin. The chip crisis from previous years has subsided, but dependence on Taiwanese production creates vulnerability.
 
-In Sweden, interest in AI is high but action is slow. The government has launched several initiatives without much coordination. Labor market shadows are beginning to grow: some layoffs linked to AI automation here and there, but nothing that yet triggers panic. About half of Swedes use AI tools regularly. Media engagement with AI issues oscillates between optimism and concern – often without deep technical analysis. The EU's AI Act is beginning to be implemented in workplaces.
+In Sweden, interest in AI is high but action is slow. The government has launched several initiatives without much coordination. Labor market shadows are beginning to grow: some layoffs linked to AI automation here and there, but nothing that yet triggers panic. Frontier AI is still mostly used by early adopters (around one in ten Swedes), even if awareness is rising quickly. Media engagement with AI issues oscillates between optimism and concern – often without deep technical analysis. The EU's AI Act is beginning to be implemented in workplaces.
 
 ## Swedish Actors in the Scenario
 

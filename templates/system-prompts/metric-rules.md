@@ -33,6 +33,12 @@ You MUST structure your response exactly as follows:
    - **Removed:** Deleted rules with motivation
 3. **Rules:** The complete numbered list of current rules
 
+Conciseness requirements:
+- Keep the full response concise to avoid truncation.
+- Include at most 6 changelog entries unless absolutely necessary.
+- For each changelog entry, keep Motivation and Expected impact to 1 short sentence each.
+- Keep rule text concrete but brief.
+
 **Example format:**
 
 ```markdown

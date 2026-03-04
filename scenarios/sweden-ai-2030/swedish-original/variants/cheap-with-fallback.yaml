@@ -5,25 +5,22 @@ base: ../scenario.yaml
 
 # Override LLM configuration with cheap models and fallbacks
 llm:
-  # Events: Try grok first, fall back to gemini, then haiku
+  # Events: default cheap model, then richer fallback
   events:
-    - "x-ai/grok-4.1-fast:free"
-    - "x-ai/grok-4-fast"
+    - "x-ai/grok-4.1-fast"
+    - "google/gemini-3-flash-preview"
 
   # All actors use same fallback list
   actors:
-    - "anthropic/claude-haiku-4.5"
-    - "x-ai/grok-4-fast"
+    - "x-ai/grok-4.1-fast"
+    - "google/gemini-3-flash-preview"
 
   # Rules: Single cheap model with fallback
   rules:
-    - "anthropic/claude-haiku-4.5"
-    - "x-ai/grok-4.1-fast:free"
-    - "x-ai/grok-4-fast"
+    - "x-ai/grok-4.1-fast"
+    - "google/gemini-3-flash-preview"
 
   # Metrics: Better model for narrative quality
   metrics:
-    - "x-ai/grok-4.1-fast:free"
-    - "x-ai/grok-4-fast"
-    - "anthropic/claude-sonnet-4.5"
-    - "anthropic/claude-haiku-4.5"
+    - "google/gemini-3-flash-preview"
+    - "x-ai/grok-4.1-fast"

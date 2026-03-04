@@ -100,3 +100,12 @@ def test_extract_metrics_malformed():
     resp = LLMResponse(content="No metrics here", raw_response={})
     with pytest.raises(LLMParseError, match="Could not find metrics"):
         resp.extract_metrics_and_narrative()
+
+
+def test_get_finish_reason():
+    """LLMResponse should expose finish_reason when present."""
+    resp = LLMResponse(
+        content="x",
+        raw_response={"choices": [{"finish_reason": "length"}]},
+    )
+    assert resp.get_finish_reason() == "length"

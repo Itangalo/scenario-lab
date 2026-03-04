@@ -15,20 +15,20 @@ actors:
 
 llm:
   # Fast/cheap model for event evaluation
-  events: "x-ai/grok-2-1212"
+  events: "x-ai/grok-4.1-fast"
 
   # Per-actor model selection
   actors:
-    government: "anthropic/claude-3.5-haiku-20241022"
-    labor-unions: "anthropic/claude-3.5-haiku-20241022"
-    media: "anthropic/claude-3.5-haiku-20241022"
-    business-sector: "anthropic/claude-3.5-haiku-20241022"
+    government: "x-ai/grok-4.1-fast"
+    labor-unions: "x-ai/grok-4.1-fast"
+    media: "x-ai/grok-4.1-fast"
+    business-sector: "x-ai/grok-4.1-fast"
 
   # Rules can use cheaper model
-  rules: "anthropic/claude-3.5-haiku-20241022"
+  rules: "x-ai/grok-4.1-fast"
 
   # Metrics and narrative benefits from better model
-  metrics: "anthropic/claude-sonnet-4"
+  metrics: "google/gemini-3-flash-preview"
 
   # Global settings
   temperature: 0.7

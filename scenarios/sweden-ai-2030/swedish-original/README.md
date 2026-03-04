@@ -109,7 +109,7 @@ python -m scenario_lab.cli run scenarios/sweden-ai-2030
 python -m scenario_lab.cli run scenarios/sweden-ai-2030 --turns 5
 
 # Use different model
-python -m scenario_lab.cli run scenarios/sweden-ai-2030 --model anthropic/claude-sonnet-4
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --model google/gemini-3-flash-preview
 ```
 
 ## Debugging

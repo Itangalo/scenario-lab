@@ -5,33 +5,15 @@ from typing import Optional
 from collections import defaultdict
 
 
-# OpenRouter pricing in USD per million tokens (as of December 2024)
+# OpenRouter pricing in USD per million tokens (as of February 2026)
 # Source: https://openrouter.ai/models
 MODEL_PRICING = {
-    # Anthropic Claude models
-    "anthropic/claude-opus-4": {"prompt": 15.00, "completion": 75.00},
-    "anthropic/claude-sonnet-4": {"prompt": 3.00, "completion": 15.00},
-    "anthropic/claude-sonnet-4.5": {"prompt": 3.00, "completion": 15.00},
-    "anthropic/claude-sonnet-4-20250514": {"prompt": 3.00, "completion": 15.00},
-    "anthropic/claude-haiku-4": {"prompt": 0.25, "completion": 1.25},
-    "anthropic/claude-haiku-4.5": {"prompt": 1.00, "completion": 5.00},
-    # OpenAI models
-    "openai/gpt-4o": {"prompt": 2.50, "completion": 10.00},
-    "openai/gpt-4o-mini": {"prompt": 0.15, "completion": 0.60},
-    "openai/gpt-4-turbo": {"prompt": 10.00, "completion": 30.00},
-    "openai/o1": {"prompt": 15.00, "completion": 60.00},
-    "openai/o1-mini": {"prompt": 3.00, "completion": 12.00},
-    # X.AI Grok models
-    "x-ai/grok-4": {"prompt": 10.00, "completion": 10.00},
-    "x-ai/grok-4-fast": {"prompt": 1.00, "completion": 1.00},
+    # Primary project defaults
     "x-ai/grok-4.1-fast": {"prompt": 1.00, "completion": 1.00},
-    "x-ai/grok-4.1-fast:free": {"prompt": 0.00, "completion": 0.00},
-    "x-ai/grok-2-1212": {"prompt": 2.00, "completion": 10.00},
+    "google/gemini-3-flash-preview": {"prompt": 1.25, "completion": 5.00},
+    # Other models retained for compatibility
+    "x-ai/grok-4": {"prompt": 10.00, "completion": 10.00},
     "x-ai/grok-beta": {"prompt": 5.00, "completion": 15.00},
-    # Google Gemini models
-    "google/gemini-flash-1.5": {"prompt": 0.075, "completion": 0.30},
-    "google/gemini-flash-1.5-8b": {"prompt": 0.0375, "completion": 0.15},
-    "google/gemini-pro-1.5": {"prompt": 1.25, "completion": 5.00},
     "google/gemini-2.0-flash-exp:free": {"prompt": 0.00, "completion": 0.00},
     # DeepSeek models
     "deepseek/deepseek-chat": {"prompt": 0.14, "completion": 0.28},

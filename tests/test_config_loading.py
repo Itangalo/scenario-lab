@@ -47,6 +47,10 @@ def setup_scenarios(tmp_path):
             "actors": "model-base",
             "summary": "model-summary-base",
             "referee": "model-referee-base",
+            "max_tokens": 2000,
+            "max_tokens_by_task": {
+                "rules": 2800,
+            },
         }
     }
     (scenario_dir / "scenario.yaml").write_text(yaml.dump(base_config))
@@ -61,6 +65,9 @@ def setup_scenarios(tmp_path):
         "llm": {
             "events": "model-variant", # Override
             "referee": "model-referee-variant", # Override
+            "max_tokens_by_task": {
+                "rules": 3600, # Override
+            },
         }
     }
     (variants_dir / "variant.yaml").write_text(yaml.dump(variant_config))
@@ -74,6 +81,9 @@ def setup_scenarios(tmp_path):
             "metrics": "model-metrics",
             "summary": "model-summary-fine",
             "referee": "model-referee-fine",
+            "max_tokens_by_task": {
+                "rules": 3500,
+            },
             "actors": {
                 "actor1": ["model-actor1-a", "model-actor1-b"],
                 "default": "model-default"
@@ -101,6 +111,7 @@ def test_scenario_inheritance(setup_scenarios):
     assert config.max_turns == 5
     assert config.llm.events == "model-variant"
     assert config.llm.referee == "model-referee-variant"
+    assert config.llm.max_tokens_by_task["rules"] == 3600
 
 def test_fine_grained_llm_config(setup_scenarios):
     """Test loading of complex LLM configurations."""
@@ -115,6 +126,7 @@ def test_fine_grained_llm_config(setup_scenarios):
     assert config.llm.metrics == "model-metrics"
     assert config.llm.summary == "model-summary-fine"
     assert config.llm.referee == "model-referee-fine"
+    assert config.llm.max_tokens_by_task["rules"] == 3500
     
     # Check actor specific models
     assert isinstance(config.llm.actors, dict)
@@ -150,6 +162,7 @@ def test_orchestrator_client_creation(setup_scenarios):
     
     # Check rules client
     assert clients["rules"].models == ["model-rules"]
+    assert clients["rules"].max_tokens == 3500
     
     # Check actors client
     # actor1 should have its specific client

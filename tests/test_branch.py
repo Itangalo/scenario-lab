@@ -21,10 +21,10 @@ def parent_run_dir(tmp_path):
         "max_turns": 5,
         "actors": ["actor1"],
         "llm": {
-            "events": "anthropic/claude-sonnet-4",
-            "actors": "anthropic/claude-sonnet-4",
-            "rules": "anthropic/claude-sonnet-4",
-            "metrics": "anthropic/claude-sonnet-4",
+            "events": "google/gemini-3-flash-preview",
+            "actors": "google/gemini-3-flash-preview",
+            "rules": "google/gemini-3-flash-preview",
+            "metrics": "google/gemini-3-flash-preview",
             "temperature": 0.7,
             "max_tokens": 2000
         }
@@ -122,7 +122,7 @@ class TestCreateBranch:
     def test_branch_with_config_overrides(self, parent_run_dir, output_base):
         """Test branch with config overrides."""
         config_overrides = {
-            "llm.events": "anthropic/claude-opus-4",
+            "llm.events": "google/gemini-3-flash-preview",
             "llm.temperature": "0.3"
         }
 
@@ -137,7 +137,7 @@ class TestCreateBranch:
         config = json.loads((new_run_dir / "config.json").read_text())
 
         # Check overrides were applied
-        assert config["llm"]["events"] == "anthropic/claude-opus-4"
+        assert config["llm"]["events"] == "google/gemini-3-flash-preview"
         assert config["llm"]["temperature"] == "0.3"
 
         # Check metadata includes overrides

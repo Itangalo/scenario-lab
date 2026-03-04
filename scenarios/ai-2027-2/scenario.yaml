@@ -16,27 +16,24 @@ llm:
   max_tokens: 3000
 
   events:
-    - "x-ai/grok-4.1-fast:free"
-    - "x-ai/grok-4-fast"
+    - "x-ai/grok-4.1-fast"
+    - "google/gemini-3-flash-preview"
 
   actors:
     default:
-      - "anthropic/claude-haiku-4.5"
-      - "x-ai/grok-4-fast"
+      - "x-ai/grok-4.1-fast"
+      - "google/gemini-3-flash-preview"
     agent_us:
       - "deepseek/deepseek-chat-v3-0324"
-      - "x-ai/grok-4-fast"
+      - "x-ai/grok-4.1-fast"
     agent_china:
       - "deepseek/deepseek-chat-v3-0324"
-      - "x-ai/grok-4-fast"
+      - "x-ai/grok-4.1-fast"
 
   rules:
-    - "anthropic/claude-haiku-4.5"
-    - "x-ai/grok-4.1-fast:free"
-    - "x-ai/grok-4-fast"
+    - "x-ai/grok-4.1-fast"
+    - "google/gemini-3-flash-preview"
 
   metrics:
-    - "x-ai/grok-4.1-fast:free"
-    - "x-ai/grok-4-fast"
-    - "anthropic/claude-sonnet-4.5"
-    - "anthropic/claude-haiku-4.5"
+    - "google/gemini-3-flash-preview"
+    - "x-ai/grok-4.1-fast"

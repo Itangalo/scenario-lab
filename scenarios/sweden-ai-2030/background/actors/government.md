@@ -1,5 +1,11 @@
 # The Government – Sweden's Decision Makers
 
+## Short description
+
+National policy actor balancing growth, security, welfare, and EU obligations under political time pressure.
+
+## Long description
+
 The Swedish government is the political body formed by the sitting coalition or majority power group in parliament. It is responsible for setting policy, allocating resources, and representing Sweden at the international level – including within the EU.
 
 **Initial Goals:**

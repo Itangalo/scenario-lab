@@ -34,6 +34,17 @@ class LLMResponse:
     content: str
     raw_response: dict
 
+    def get_finish_reason(self) -> Optional[str]:
+        """Extract finish_reason from OpenRouter raw_response if available."""
+        choices = self.raw_response.get("choices")
+        if isinstance(choices, list) and choices:
+            first = choices[0]
+            if isinstance(first, dict):
+                reason = first.get("finish_reason")
+                if isinstance(reason, str):
+                    return reason
+        return None
+
     def extract_json(self) -> dict:
         """Extract JSON from markdown code block or raw content.
 
@@ -148,7 +159,7 @@ class LLMClient:
     def __init__(
         self,
         api_key: Optional[str] = None,
-        model: Union[str, List[str]] = "anthropic/claude-sonnet-4",
+        model: Union[str, List[str]] = "google/gemini-3-flash-preview",
         temperature: float = 0.7,
         max_tokens: int = 2000,
     ):

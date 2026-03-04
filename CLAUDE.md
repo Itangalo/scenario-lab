@@ -86,7 +86,7 @@ actors:
   - actor1
   - actor2
 llm:
-  model: "anthropic/claude-sonnet-4"
+  model: "google/gemini-3-flash-preview"
   temperature: 0.7
   max_tokens: 2000
 ```
@@ -174,7 +174,7 @@ export OPENROUTER_API_KEY="your_key"
 pytest tests/evals/llm-event-conditions/ -v
 
 # Test specific model
-export TEST_LLM_MODEL="anthropic/claude-haiku-4"
+export TEST_LLM_MODEL="x-ai/grok-4.1-fast"
 pytest tests/evals/llm-event-conditions/ -v
 
 # Test specific category
@@ -232,7 +232,7 @@ python -m scenario_lab.cli scenarios/sweden-ai-2030
 python -m scenario_lab.cli scenarios/sweden-ai-2030 --turns 5
 
 # Use specific model
-python -m scenario_lab.cli scenarios/sweden-ai-2030 --model anthropic/claude-opus-4
+python -m scenario_lab.cli scenarios/sweden-ai-2030 --model google/gemini-3-flash-preview
 
 # Dry run (show prompts without running)
 python -m scenario_lab.cli scenarios/sweden-ai-2030 --dry-run
@@ -253,7 +253,7 @@ python -m scenario_lab.cli resume scenarios/sweden-ai-2030/runs/run-20251205-120
 python -m scenario_lab.cli resume scenarios/sweden-ai-2030/runs/run-20251205-120000 --from-turn 3
 
 # Resume with different model
-python -m scenario_lab.cli resume scenarios/sweden-ai-2030/runs/run-20251205-120000 --model anthropic/claude-opus-4
+python -m scenario_lab.cli resume scenarios/sweden-ai-2030/runs/run-20251205-120000 --model google/gemini-3-flash-preview
 
 # Resume and run to turn 10
 python -m scenario_lab.cli resume scenarios/sweden-ai-2030/runs/run-20251205-120000 --turns 10
@@ -277,7 +277,7 @@ python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-20251205-120
 # Branch with different model
 python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-20251205-120000 \
   --from-turn 3 \
-  --model anthropic/claude-opus-4
+  --model google/gemini-3-flash-preview
 
 # Branch with modified narrative
 python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-20251205-120000 \

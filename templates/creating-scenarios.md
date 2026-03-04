@@ -54,15 +54,15 @@ output_language: "English" # Optional: The desired language for LLM-generated te
 
 llm:
   # Option 1: Single model for all tasks
-  model: "anthropic/claude-sonnet-4"
+  model: "google/gemini-3-flash-preview"
   temperature: 0.7
   max_tokens: 2000
 
   # Option 2: Per-task models (more control)
-  events: "anthropic/claude-haiku-4"
-  actors: "anthropic/claude-sonnet-4"
-  rules: "anthropic/claude-sonnet-4"
-  metrics: "anthropic/claude-sonnet-4"
+  events: "x-ai/grok-4.1-fast"
+  actors: "google/gemini-3-flash-preview"
+  rules: "google/gemini-3-flash-preview"
+  metrics: "google/gemini-3-flash-preview"
   temperature: 0.7
   max_tokens: 2000
 ```
@@ -342,7 +342,7 @@ python -m scenario_lab.cli scenarios/scenario-name
 python -m scenario_lab.cli scenarios/scenario-name --turns 5
 
 # Use different model
-python -m scenario_lab.cli scenarios/scenario-name --model anthropic/claude-opus-4
+python -m scenario_lab.cli scenarios/scenario-name --model google/gemini-3-flash-preview
 
 # Dry run (show prompts without executing)
 python -m scenario_lab.cli scenarios/scenario-name --dry-run
@@ -381,7 +381,7 @@ time_scale: "1 year per turn"
 max_turns: 10
 actors: [government, industry, environmental_groups]
 llm:
-  model: "anthropic/claude-sonnet-4"
+  model: "google/gemini-3-flash-preview"
   temperature: 0.7
   max_tokens: 2000
 ```

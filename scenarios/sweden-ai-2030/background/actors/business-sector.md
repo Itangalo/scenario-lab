@@ -1,5 +1,11 @@
 # Business Sector – Swedish Companies
 
+## Short description
+
+Execution actor for AI deployment, productivity growth, and lobbying for favorable policy conditions.
+
+## Long description
+
 The business sector encompasses everything from global giants to small startups. This is where AI is actually implemented – and where productivity gains (or losses) are realized. Business has the most technical expertise but is also most dependent on global AI platforms.
 
 **Initial Goals:**

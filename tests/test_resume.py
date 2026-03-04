@@ -28,10 +28,10 @@ def temp_run_dir(tmp_path):
         "max_turns": 5,
         "actors": ["actor1"],
         "llm": {
-            "events": "anthropic/claude-sonnet-4",
-            "actors": "anthropic/claude-sonnet-4",
-            "rules": "anthropic/claude-sonnet-4",
-            "metrics": "anthropic/claude-sonnet-4",
+            "events": "google/gemini-3-flash-preview",
+            "actors": "google/gemini-3-flash-preview",
+            "rules": "google/gemini-3-flash-preview",
+            "metrics": "google/gemini-3-flash-preview",
             "temperature": 0.7,
             "max_tokens": 2000
         }

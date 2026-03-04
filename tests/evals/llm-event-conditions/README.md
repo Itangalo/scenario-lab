@@ -32,7 +32,7 @@ pytest tests/evals/llm-event-conditions/ -v
 ### Test Specific Model
 
 ```bash
-export TEST_LLM_MODEL="anthropic/claude-sonnet-4"
+export TEST_LLM_MODEL="google/gemini-3-flash-preview"
 pytest tests/evals/llm-event-conditions/ -v
 ```
 
@@ -257,14 +257,14 @@ categories:
 
 ```bash
 # Claude models
-export TEST_LLM_MODEL="anthropic/claude-sonnet-4"
+export TEST_LLM_MODEL="google/gemini-3-flash-preview"
 pytest tests/evals/llm-event-conditions/ -v
 
-export TEST_LLM_MODEL="anthropic/claude-haiku-4"
+export TEST_LLM_MODEL="x-ai/grok-4.1-fast"
 pytest tests/evals/llm-event-conditions/ -v
 
 # Other providers
-export TEST_LLM_MODEL="google/gemini-pro-1.5"
+export TEST_LLM_MODEL="google/gemini-3-flash-preview"
 pytest tests/evals/llm-event-conditions/ -v
 ```
 
@@ -408,7 +408,7 @@ jobs:
       - run: pytest tests/evals/llm-event-conditions/ -v
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          TEST_LLM_MODEL: "anthropic/claude-haiku-4"
+          TEST_LLM_MODEL: "x-ai/grok-4.1-fast"
 ```
 
 ## Maintenance

@@ -42,6 +42,7 @@ Sweden undergoes a period of intense AI adoption following the government's supp
 
 The government's AI support program was launched during this turn. The program is expected to continue for at least 2 turns.""",
         "CURRENT NARRATIVE": "Summary of narrative",
+        "Constitutional Referee": "APPROVED",
     }
     return MockLLMClient(mock_responses)
 
