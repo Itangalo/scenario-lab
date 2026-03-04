@@ -183,6 +183,22 @@ def test_update_batch_view_from_line_shortens_step_activity():
     assert view.activity == "Updating metrics"
 
 
+def test_update_batch_view_from_line_tracks_run_directory():
+    """Batch view should keep the created run directory visible in the table."""
+    view = BatchJobView(label="test")
+
+    update_batch_view_from_line(view, "Output directory: run-20260304-134833-03")
+    assert view.run_dir == "run-20260304-134833-03"
+    assert view.activity == "Run dir ready"
+
+    update_batch_view_from_line(
+        view,
+        "Results saved to: /tmp/scenario/runs/run-20260304-134833-03",
+    )
+    assert view.run_dir == "run-20260304-134833-03"
+    assert view.activity == "Saved results"
+
+
 def test_cli_resume_no_additional_turns_skips_simulation(tmp_path):
     """Resume should finalize immediately when start_turn is beyond requested turns."""
     run_dir = tmp_path / "scenarios" / "test-scenario" / "runs" / "run-123"

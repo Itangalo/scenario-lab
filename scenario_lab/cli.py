@@ -104,6 +104,7 @@ class BatchJobView:
     """Mutable display state for one batch job."""
 
     label: str
+    run_dir: str = "-"
     status: str = "queued"
     turn: str = "-"
     activity: str = "Waiting"
@@ -397,10 +398,16 @@ def update_batch_view_from_line(view: BatchJobView, line: str):
         return
 
     if text.startswith("Output directory:"):
-        view.activity = truncate_batch_text(text)
+        run_dir = text.partition(":")[2].strip()
+        if run_dir:
+            view.run_dir = run_dir
+        view.activity = "Run dir ready"
         return
 
     if text.startswith("Results saved to:"):
+        saved_path = text.partition(":")[2].strip()
+        if saved_path:
+            view.run_dir = Path(saved_path).name
         view.activity = "Saved results"
         return
 
@@ -409,6 +416,9 @@ def update_batch_view_from_line(view: BatchJobView, line: str):
         return
 
     if text.startswith("Resuming run:"):
+        resumed_path = text.partition(":")[2].strip()
+        if resumed_path:
+            view.run_dir = Path(resumed_path).name
         view.activity = "Loading run"
         return
 
@@ -435,7 +445,8 @@ def render_batch_table(
         f"Completed: {completed_count}  Failed: {failed_count}"
     )
     table.add_column("#", style="dim", width=4)
-    table.add_column("Job", overflow="fold")
+    table.add_column("Scenario", overflow="fold")
+    table.add_column("Run", overflow="fold")
     table.add_column("Status", width=11)
     table.add_column("Turn", width=9)
     table.add_column("Activity", overflow="fold")
@@ -451,6 +462,7 @@ def render_batch_table(
         table.add_row(
             str(index),
             view.label,
+            view.run_dir,
             view.status,
             view.turn,
             view.activity,
