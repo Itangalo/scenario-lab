@@ -255,4 +255,4 @@ Scenario Lab uses a few simple but important safety measures:
 
 ## License
 
-MIT
+Apache-2.0
