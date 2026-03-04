@@ -152,6 +152,7 @@ Each turn executes the following steps in order:
 ### Batch Execution (`cli.py`)
 - **CLI Command:** `python -m scenario_lab.cli batch-run <target...> [options]`
 - **Target Types:** Accepts scenario directories and variant YAML files. With `--variants`, a scenario directory expands to all YAML files in its `variants/` directory.
+- **Repeat Runs:** `--repeat N` runs each resolved target N times, which supports Monte Carlo-style repeated runs of the same scenario without repeating the path manually.
 - **Execution Model:** Batch jobs run as separate child processes that invoke the normal `run` command. This keeps each simulation isolated while preserving the same orchestration and persistence behavior as single runs.
 - **Concurrency Control:** Uses bounded parallelism via `--max-concurrency` rather than launching every job at once.
 - **Logging:** Each batch job writes its stdout/stderr to a per-job log file under the owning scenario's `runs/batch-logs/` directory.

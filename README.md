@@ -131,9 +131,12 @@ python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHM
 ### Run many scenarios in parallel
 
 ```bash
+python -m scenario_lab.cli batch-run scenarios/sweden-ai-2030 --repeat 10 --max-concurrency 4
 python -m scenario_lab.cli batch-run scenarios/sweden-ai-2030 --variants --max-concurrency 4
 python -m scenario_lab.cli batch-run scenarios/sweden-ai-2030/variants/quick-test.yaml scenarios/sweden-ai-2030/variants/high-adoption.yaml --max-concurrency 2
 ```
+
+Use `--repeat` when you want to run the same scenario multiple times. Use `--variants` when you want to expand a scenario directory to all YAML files in `variants/`.
 
 `batch-run` launches multiple isolated child processes and limits concurrency with `--max-concurrency`, which is safer than starting many foreground runs manually.
 

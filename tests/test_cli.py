@@ -411,16 +411,18 @@ def test_cli_batch_run_variants_launches_one_child_per_variant(tmp_path):
                 "--override",
                 "foo=bar",
                 "--validate",
+                "--repeat",
+                "2",
             ],
         ):
             result = main()
 
     assert result == 0
-    assert len(commands) == 2
+    assert len(commands) == 4
 
     command_texts = [" ".join(command) for command in commands]
-    assert any(str(variant_a) in text for text in command_texts)
-    assert any(str(variant_b) in text for text in command_texts)
+    assert sum(str(variant_a) in text for text in command_texts) == 2
+    assert sum(str(variant_b) in text for text in command_texts) == 2
 
     for command in commands:
         assert command[:4] == [sys.executable, "-m", "scenario_lab.cli", "run"]
@@ -430,6 +432,41 @@ def test_cli_batch_run_variants_launches_one_child_per_variant(tmp_path):
         assert "--turns" in command
         assert "--model" in command
         assert "--override" in command
+
+
+def test_cli_batch_run_repeat_reuses_same_target(tmp_path):
+    """batch-run --repeat should run the same target multiple times."""
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+
+    commands = []
+
+    def fake_run(command, stdout=None, stderr=None, text=None):
+        commands.append(command)
+        if stdout is not None:
+            stdout.write("ok\n")
+        return subprocess.CompletedProcess(command, 0)
+
+    with patch("scenario_lab.cli.subprocess.run", side_effect=fake_run):
+        with patch(
+            "sys.argv",
+            [
+                "scenario_lab",
+                "batch-run",
+                str(scenario_dir),
+                "--repeat",
+                "3",
+                "--max-concurrency",
+                "2",
+            ],
+        ):
+            result = main()
+
+    assert result == 0
+    assert len(commands) == 3
+    for command in commands:
+        assert command[:4] == [sys.executable, "-m", "scenario_lab.cli", "run"]
+        assert str(scenario_dir) in command
 
 
 def test_cli_batch_resume_scenario_only_launches_incomplete_runs(tmp_path):

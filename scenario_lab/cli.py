@@ -103,7 +103,7 @@ def resolve_output_base(scenario_path: Path) -> Path:
     return output_base
 
 
-def normalize_batch_targets(targets: list[Path], use_variants: bool) -> list[Path]:
+def normalize_batch_targets(targets: list[Path], use_variants: bool, repeat: int) -> list[Path]:
     """Expand batch targets into concrete scenario directories or variant files."""
     normalized: list[Path] = []
 
@@ -124,10 +124,11 @@ def normalize_batch_targets(targets: list[Path], use_variants: bool) -> list[Pat
             if not variant_files:
                 raise ValueError(f"No variant YAML files found in: {variants_dir}")
 
-            normalized.extend(variant_files)
+            for _ in range(repeat):
+                normalized.extend(variant_files)
             continue
 
-        normalized.append(target)
+        normalized.extend([target] * repeat)
 
     return normalized
 
@@ -389,6 +390,12 @@ def main():
         action="store_true",
         help="Validate each scenario before running",
     )
+    batch_run_parser.add_argument(
+        "--repeat",
+        type=int,
+        default=1,
+        help="Run each resolved target N times",
+    )
 
     # Batch resume command
     batch_resume_parser = subparsers.add_parser(
@@ -515,9 +522,12 @@ def main():
         if args.max_concurrency < 1:
             print("❌ --max-concurrency must be at least 1")
             return 1
+        if args.repeat < 1:
+            print("❌ --repeat must be at least 1")
+            return 1
 
         try:
-            targets = normalize_batch_targets(args.targets, args.variants)
+            targets = normalize_batch_targets(args.targets, args.variants, args.repeat)
         except ValueError as e:
             print(f"❌ {e}")
             return 1
