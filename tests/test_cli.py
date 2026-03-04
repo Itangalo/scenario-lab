@@ -200,6 +200,17 @@ def test_update_batch_view_from_line_tracks_run_directory():
     assert view.activity == "Saved results"
 
 
+def test_update_batch_view_from_line_normalizes_completion_text():
+    """Batch view should use one stable completion label for passthrough lines."""
+    view = BatchJobView(label="test")
+
+    update_batch_view_from_line(view, "  ✓ complete")
+    assert view.activity == "Done"
+
+    update_batch_view_from_line(view, "  → completed")
+    assert view.activity == "Done"
+
+
 def test_build_batch_resume_command_uses_no_progress(tmp_path):
     """batch-resume child commands should use the same plain-text mode as batch-run."""
     run_dir = tmp_path / "runs" / "run-123"

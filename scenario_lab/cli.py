@@ -328,6 +328,14 @@ def truncate_batch_text(text: str, limit: int = 56) -> str:
     return cleaned[: limit - 3] + "..."
 
 
+def normalize_batch_activity_text(text: str) -> str:
+    """Map raw child output onto stable batch activity labels."""
+    normalized = " ".join(text.split())
+    if normalized.lower() in {"done", "complete", "completed"}:
+        return "Done"
+    return truncate_batch_text(normalized)
+
+
 def summarize_batch_activity(text: str) -> str:
     """Convert verbose child output into short, stable batch activity labels."""
     normalized = " ".join(text.split())
@@ -423,8 +431,8 @@ def update_batch_view_from_line(view: BatchJobView, line: str):
         view.activity = "Loading run"
         return
 
-    if text.startswith("  → ") or text.startswith("  ✓ "):
-        view.activity = truncate_batch_text(text[4:])
+    if text.startswith("→ ") or text.startswith("✓ "):
+        view.activity = normalize_batch_activity_text(text[2:])
         return
 
 
