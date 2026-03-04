@@ -1,8 +1,8 @@
 """Metric rules versioning and changelog parsing."""
 
 import re
-from typing import Optional
 from dataclasses import dataclass
+from typing import Optional
 
 
 @dataclass
@@ -28,6 +28,15 @@ class VersionedRules:
     has_changelog: bool
 
 
+def _strip_surrounding_code_fence(content: str) -> str:
+    """Remove a single surrounding fenced code block wrapper if present."""
+    stripped = content.strip()
+    fenced_match = re.match(r"^```[^\n]*\n(?P<body>.*)\n```$", stripped, re.DOTALL)
+    if fenced_match:
+        return fenced_match.group("body").strip()
+    return content
+
+
 def parse_versioned_rules(content: str, expected_turn: int) -> VersionedRules:
     """Parse versioned metric rules output from LLM.
 
@@ -41,11 +50,13 @@ def parse_versioned_rules(content: str, expected_turn: int) -> VersionedRules:
     Raises:
         ValueError: If content doesn't match expected format
     """
+    normalized_content = _strip_surrounding_code_fence(content)
+
     # Extract version and turn from header
     # Format: "# Metric Rules v2 (Turn 3)" or "# Metric Rules v1 (Turn 0 - Initial)"
     header_match = re.search(
         r"#\s*Metric\s+Rules\s+v(\d+)\s*\(Turn\s+(\d+)(?:\s*-\s*Initial)?\)",
-        content,
+        normalized_content,
         re.IGNORECASE,
     )
 
@@ -71,7 +82,7 @@ def parse_versioned_rules(content: str, expected_turn: int) -> VersionedRules:
         # Look for changelog section
         changelog_match = re.search(
             r"##\s*Changelog\s+from\s+v(\d+)(.*?)(?=##\s*Rules|##\s*[A-Z]|\Z)",
-            content,
+            normalized_content,
             re.DOTALL | re.IGNORECASE,
         )
 
@@ -86,22 +97,22 @@ def parse_versioned_rules(content: str, expected_turn: int) -> VersionedRules:
 
     # Extract rules section
     # Look for "## Rules" header
-    rules_match = re.search(r"##\s*Rules\s*\n(.*)", content, re.DOTALL | re.IGNORECASE)
+    rules_match = re.search(r"##\s*Rules\s*\n(.*)", normalized_content, re.DOTALL | re.IGNORECASE)
 
     if rules_match:
         rules_content = rules_match.group(1).strip()
     else:
         # If no explicit "## Rules" section, take everything after changelog (or after header if no changelog)
         if has_changelog and changelog_match:
-            rules_content = content[changelog_match.end() :].strip()
+            rules_content = normalized_content[changelog_match.end() :].strip()
         else:
             # Take everything after header
-            rules_content = content[header_match.end() :].strip()
+            rules_content = normalized_content[header_match.end() :].strip()
 
     return VersionedRules(
         version=version,
         turn=turn,
-        full_content=content,
+        full_content=normalized_content,
         changelog_entries=changelog_entries,
         rules_content=rules_content,
         has_changelog=has_changelog,
@@ -125,14 +136,17 @@ def _parse_changelog_content(changelog_text: str) -> list[RulesChangelog]:
     #   - **Motivation:** why
     #   - **Expected impact:** impact
     entry_pattern = re.compile(
-        r"-\s*\*\*(Added|Modified|Removed):\*\*\s*`?([^`\n]+?)`?\s*\n((?:.*?\n)*?)(?=-\s*\*\*(?:Added|Modified|Removed)|\Z)",
+        r"-\s*\*\*(Added|Modified|Removed):\*\*\s*"
+        r"(?:`([^`\n]+)`|([^\n(]+?))"
+        r"\s*(?:\([^)\n]*\))?\s*\n"
+        r"((?:.*?\n)*?)(?=-\s*\*\*(?:Added|Modified|Removed)|\Z)",
         re.IGNORECASE | re.DOTALL,
     )
 
     for match in entry_pattern.finditer(changelog_text):
         change_type = match.group(1).lower()
-        rule_name = match.group(2).strip()
-        details = match.group(3)
+        rule_name = (match.group(2) or match.group(3) or "").strip()
+        details = match.group(4)
 
         # Extract sub-fields from details
         change_desc = None
@@ -191,7 +205,7 @@ def validate_rules_format(content: str, expected_turn: int) -> tuple[bool, list[
 
         # Check that changelog has entries if present
         if parsed.has_changelog and len(parsed.changelog_entries) == 0:
-            warnings.append("Changelog section present but no entries found")
+            warnings.append("Changelog section present but no parseable entries found")
 
         # Check that rules content is not empty
         if not parsed.rules_content or len(parsed.rules_content.strip()) < 10:

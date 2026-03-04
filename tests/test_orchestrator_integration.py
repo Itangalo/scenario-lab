@@ -358,5 +358,168 @@ def test_constitutional_referee_records_parse_error_metadata(test_scenario):
     assert metadata["status"] == "parse_error"
     assert metadata["iterations"] == 1
     assert metadata["violations_found"] == []
-    assert metadata["error"] == "Unexpected response format"
-    assert metadata["response_preview"] == malformed_response
+
+
+def test_constitutional_referee_accepts_fenced_approved_response(test_scenario):
+    """Referee approval wrapped in a fenced code block should still be accepted."""
+
+    class RefereeClient:
+        def __init__(self, content: str):
+            self.content = content
+            self.calls = 0
+            self.models = ["mock/model"]
+
+        def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
+            self.calls += 1
+            return LLMResponse(
+                content=self.content,
+                raw_response={"model": "mock/model"},
+            )
+
+        def close(self):
+            pass
+
+    class MetadataRecorder:
+        def __init__(self):
+            self.calls = []
+
+        def save_constitutional_metadata(self, turn: int, metadata: dict):
+            self.calls.append((turn, metadata))
+
+    referee_client = RefereeClient("""```markdown
+APPROVED
+```""")
+    metadata_recorder = MetadataRecorder()
+    clients = {
+        "events": referee_client,
+        "actors": {},
+        "rules": referee_client,
+        "metrics": referee_client,
+        "summary": referee_client,
+        "referee": referee_client,
+    }
+
+    orchestrator = Orchestrator(
+        test_scenario,
+        llm_client=clients,
+        output_manager=metadata_recorder,
+    )
+
+    proposed_metrics = {metric_id: metric.value for metric_id, metric in test_scenario.metrics.metrics.items()}
+    narrative = "The turn completes with moderate economic changes."
+
+    final_metrics, final_narrative = orchestrator._run_constitutional_referee_step(
+        turn=2,
+        proposed_metrics=proposed_metrics,
+        narrative=narrative,
+    )
+
+    assert referee_client.calls == 1
+    assert final_metrics == proposed_metrics
+    assert final_narrative == narrative
+    assert len(metadata_recorder.calls) == 1
+
+    saved_turn, metadata = metadata_recorder.calls[0]
+    assert saved_turn == 2
+    assert metadata["status"] == "approved"
+    assert metadata["iterations"] == 1
+    assert metadata["final_action"] == "approved"
+    assert metadata["violations_found"] == []
+    assert "error" not in metadata
+    assert "response_preview" not in metadata
+
+
+def test_constitutional_referee_accepts_fenced_violations_response(test_scenario):
+    """Referee violations wrapped in a fenced code block should still trigger correction."""
+
+    class SequenceClient:
+        def __init__(self, contents: list[str]):
+            self.contents = contents
+            self.calls = 0
+            self.models = ["mock/model"]
+
+        def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
+            if self.calls >= len(self.contents):
+                raise AssertionError("Client received more calls than expected")
+            content = self.contents[self.calls]
+            self.calls += 1
+            return LLMResponse(
+                content=content,
+                raw_response={"model": "mock/model"},
+            )
+
+        def close(self):
+            pass
+
+    class MetadataRecorder:
+        def __init__(self):
+            self.calls = []
+
+        def save_constitutional_metadata(self, turn: int, metadata: dict):
+            self.calls.append((turn, metadata))
+
+    referee_client = SequenceClient(
+        [
+            """```text
+VIOLATIONS:
+- Budget increase is too large for one turn.
+```""",
+            "APPROVED",
+        ]
+    )
+    correction_client = SequenceClient(
+        [
+            """## Metrics
+
+```json
+{"ai_capability": 3, "ai_adoption_sweden": 10, "unemployment": 9, "public_sentiment_to_ai": 3}
+```
+
+## Narrative
+
+The budget expansion is phased in over time to keep the transition realistic."""
+        ]
+    )
+    metadata_recorder = MetadataRecorder()
+    clients = {
+        "events": correction_client,
+        "actors": {},
+        "rules": correction_client,
+        "metrics": correction_client,
+        "summary": correction_client,
+        "referee": referee_client,
+    }
+
+    orchestrator = Orchestrator(
+        test_scenario,
+        llm_client=clients,
+        output_manager=metadata_recorder,
+    )
+
+    proposed_metrics = {metric_id: metric.value for metric_id, metric in test_scenario.metrics.metrics.items()}
+    proposed_metrics["unemployment"] = 20
+    narrative = "Unemployment spikes sharply after rapid automation."
+
+    final_metrics, final_narrative = orchestrator._run_constitutional_referee_step(
+        turn=1,
+        proposed_metrics=proposed_metrics,
+        narrative=narrative,
+    )
+
+    assert referee_client.calls == 2
+    assert correction_client.calls == 1
+    assert final_metrics["unemployment"] == 9
+    assert "phased in over time" in final_narrative
+    assert len(metadata_recorder.calls) == 1
+
+    saved_turn, metadata = metadata_recorder.calls[0]
+    assert saved_turn == 1
+    assert metadata["status"] == "approved"
+    assert metadata["iterations"] == 2
+    assert metadata["final_action"] == "corrected_and_approved"
+    assert metadata["violations_found"] == [
+        {
+            "iteration": 1,
+            "violations": "- Budget increase is too large for one turn.",
+        }
+    ]

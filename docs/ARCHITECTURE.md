@@ -92,6 +92,7 @@ Each turn executes the following steps in order:
     - Complete and accurate changelog
     - Internal consistency (no contradictory rules)
     - Grounding in narrative/metrics/events
+  * **Parser Tolerance:** The Python parser remains formatting-oriented, but tolerates common LLM presentation noise such as an outer fenced Markdown code block and parenthetical annotations after changelog rule names (for example, "`rule_name` (rule 2)").
   * **Length Handling:** If rules output is truncated (`finish_reason=length`) or missing complete rules content, the orchestrator retries once with a concise-output instruction set to recover a complete `## Rules` section.
 
 4. **Metrics Step**:
@@ -113,6 +114,7 @@ Each turn executes the following steps in order:
     - Organizational changes are feasible (capacity growth, hiring)
     - Physical constraints are honored (compute, infrastructure)
   * **Output:** Either "APPROVED" or "VIOLATIONS: [list of issues]"
+  * **Parser Tolerance:** The parser accepts those responses even when the whole referee output is wrapped in a single outer fenced Markdown code block.
   * **Retry Logic:** If violations are found, the orchestrator makes one additional LLM correction pass:
     - The referee first returns structured violations
     - A dedicated correction prompt asks the LLM to minimally revise the metrics and narrative so they comply

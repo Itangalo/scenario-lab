@@ -233,6 +233,60 @@ def test_parse_changelog_without_backticks():
     assert parsed.changelog_entries[0].rule_name == "unemployment_lag_effect"
 
 
+def test_parse_changelog_with_parenthetical_rule_suffix():
+    """Test parsing changelog entries that annotate rule position after the name."""
+    content = """# Metric Rules v3 (Turn 2)
+
+## Changelog from v2
+
+- **Modified:** `ai_adoption_growth` (rule 2)
+  - **Change:** Increased baseline growth
+  - **Motivation:** Stronger rollout than expected
+  - **Expected impact:** Faster adoption this turn
+
+- **Removed:** `resistance_halt` (ex-rule 6)
+  - **Motivation:** Negative trigger no longer applies
+  - **Expected impact:** Simplifies the ruleset
+
+## Rules
+
+1. Rule one
+2. Rule two
+"""
+    parsed = parse_versioned_rules(content, expected_turn=2)
+
+    assert len(parsed.changelog_entries) == 2
+    assert parsed.changelog_entries[0].rule_name == "ai_adoption_growth"
+    assert parsed.changelog_entries[1].rule_name == "resistance_halt"
+
+
+def test_parse_versioned_rules_wrapped_in_markdown_code_fence():
+    """Test parsing rules output when the whole response is wrapped in a markdown fence."""
+    content = """```markdown
+# Metric Rules v3 (Turn 2)
+
+## Changelog from v2
+
+- **Added:** `new_rule`
+  - **Rule:** New quantitative rule
+  - **Motivation:** Needed after a major event
+  - **Expected impact:** Clearer metric shifts
+
+## Rules
+
+1. Rule one
+2. Rule two
+```"""
+    parsed = parse_versioned_rules(content, expected_turn=2)
+    is_valid, warnings = validate_rules_format(content, expected_turn=2)
+
+    assert parsed.version == 3
+    assert len(parsed.changelog_entries) == 1
+    assert "Rule one" in parsed.rules_content
+    assert is_valid
+    assert warnings == []
+
+
 def test_parse_complex_rules_section():
     """Test parsing rules with complex markdown structure."""
     content = """# Metric Rules v1 (Turn 0 - Initial)

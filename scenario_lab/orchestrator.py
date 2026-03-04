@@ -1,7 +1,8 @@
 """Orchestrator for executing simulation turns."""
 
-import random
 import json
+import random
+import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Protocol, Optional, Union, TYPE_CHECKING
 from .models import Scenario, TurnResult, WorldState
@@ -649,6 +650,13 @@ class Orchestrator:
         violations_log = []
         max_iterations = 2
 
+        def _normalize_referee_result(raw_result: str) -> str:
+            stripped = raw_result.strip()
+            fenced_match = re.match(r"^```[^\n]*\n(?P<body>.*)\n```$", stripped, re.DOTALL)
+            if fenced_match:
+                return fenced_match.group("body").strip()
+            return stripped
+
         for iteration in range(max_iterations):
             # Build referee prompt
             system, user = self.prompt_builder.build_constitutional_referee_prompt(
@@ -661,7 +669,7 @@ class Orchestrator:
             self._record_llm_call(turn, f"constitutional_referee:attempt_{iteration+1}", response)
 
             # Parse response
-            result = response.content.strip()
+            result = _normalize_referee_result(response.content)
 
             if result.startswith("APPROVED"):
                 if iteration > 0:
