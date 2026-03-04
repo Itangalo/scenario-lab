@@ -1,5 +1,7 @@
 # Scenario Lab
 
+If you are an AI coding agent working in this repository, read [AGENTS.md](AGENTS.md) before making changes.
+
 Scenario Lab is a framework for running multi-turn scenario simulations with LLMs.
 
 You define a world, a set of actors, a few quantitative metrics, and possible external events. Scenario Lab then simulates how that world evolves over time by using LLMs to:
