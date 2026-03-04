@@ -1,0 +1,13 @@
+# Repository-local policy for model hygiene checks.
+# Edit this file to tighten or relax the warnings without changing Python code.
+
+# Warn if a dated snapshot model is older than this many days.
+max_snapshot_age_days: 180
+
+# Optional allowlist of regex patterns. If this list is non-empty, any configured
+# model that does not match at least one pattern will produce a warning.
+allowed_patterns: []
+
+# Optional denylist of regex patterns. Any configured model matching one of these
+# patterns will produce a warning in addition to the built-in heuristic checks.
+blocked_patterns: []

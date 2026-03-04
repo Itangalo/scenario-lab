@@ -61,7 +61,8 @@ V4 represents a radical simplification from previous versions. Instead of comple
 
 ### File Structure & Loading (`loader.py`)
 - **`scenario.yaml`**: Configuration (time scale, actors, LLM settings, output language).
-  * **LLM Settings:** Now includes `summary` model configuration alongside `events`, `actors`, `rules`, and `metrics`.
+  * **LLM Settings:** Includes per-task model configuration (`events`, `actors`, `rules`, `metrics`, `summary`, `referee`).
+  * **Token Budgets:** Supports global `llm.max_tokens` plus optional per-task overrides via `llm.max_tokens_by_task` (for example, higher cap for `rules` to reduce truncation).
 - **Markdown Resources**: `metrics.md`, `events.md`, `metric-rules.md`, `background/*.md`.
 - **Optional Resources**:
   * `constitution.md`: Constitutional constraints (invariant rules) for the scenario.
@@ -91,6 +92,7 @@ Each turn executes the following steps in order:
     - Complete and accurate changelog
     - Internal consistency (no contradictory rules)
     - Grounding in narrative/metrics/events
+  * **Length Handling:** If rules output is truncated (`finish_reason=length`) or missing complete rules content, the orchestrator retries once with a concise-output instruction set to recover a complete `## Rules` section.
 
 4. **Metrics Step**:
   * **Input:** World state, triggered events, actor actions, updated rules.
@@ -111,7 +113,11 @@ Each turn executes the following steps in order:
     - Organizational changes are feasible (capacity growth, hiring)
     - Physical constraints are honored (compute, infrastructure)
   * **Output:** Either "APPROVED" or "VIOLATIONS: [list of issues]"
-  * **Retry Logic:** If violations found, logs violations and continues (max 2 iterations).
+  * **Retry Logic:** If violations are found, the orchestrator makes one additional LLM correction pass:
+    - The referee first returns structured violations
+    - A dedicated correction prompt asks the LLM to minimally revise the metrics and narrative so they comply
+    - The referee then validates the revised output once more
+    - If the revised output still violates the constitution or cannot be parsed, the run continues with the latest proposal and records that it was accepted with violations
   * **Model:** Uses dedicated `referee` model (default: x-ai/grok-4.1-fast) for cost-effective validation.
   * **Metadata:** Saves detailed validation results to `5-constitutional-check.json` including:
     - Status (approved, violations_found, max_attempts_reached, parse_error)
@@ -257,6 +263,18 @@ The `5-constitutional-check.json` file (when present) includes:
    - Handles both static probabilities (e.g., "10 procent per runda") and dynamic formulas (e.g., "unemployment / 100")
    - **Security:** Uses `SafeExpressionEvaluator` class that parses expressions into Abstract Syntax Trees (AST) and validates each operation before execution, eliminating the security risks of Python's `eval()` function
 
+3. **Model Hygiene Checks** (`model_audit.py` + `validate_scenario` warnings):
+   - Applies local heuristic warnings to configured LLM model names before expensive runs
+   - Flags clearly legacy model families (for example GPT-3.5 / Claude 2 style names)
+   - Flags dated snapshot models older than a configured age threshold (currently 180 days)
+   - Reads optional repository policy from `model-policy.yaml` to make hygiene rules editable without code changes
+   - Policy supports:
+     - `max_snapshot_age_days`: override the snapshot age threshold
+     - `allowed_patterns`: optional regex allowlist; if non-empty, models outside it are warned
+     - `blocked_patterns`: regex denylist; matching models are warned
+   - Static validation remains local and deterministic; optional run-time replacement suggestions may query OpenRouter's model catalog for current pricing and capability metadata
+   - Replacement selection prefers models that are both newer and cheaper than the current one when such candidates exist, while preserving modality compatibility
+
 3. **LLM Configuration Validation** (`validate_llm_config`):
    - Validates model strings follow OpenRouter format
    - Ensures temperature is in valid range [0, 2]
@@ -353,9 +371,10 @@ Cost so far: $0.15 | Projected total: $0.50
 
 ### CLI (`cli.py`)
 - **Entry Point:** `python -m scenario_lab.cli`.
-- **Commands:** `run`, `resume`, `branch`, `validate`, `visualize`, `costs`, `estimate`
+- **Commands:** `run`, `resume`, `branch`, `validate`, `audit-models`, `visualize`, `costs`, `estimate`
 - **Overrides:** Supports `--override key=value` to modify configuration at runtime (e.g., `--override output_language=Spanish`).
 - **Validation:** Supports `--validate` flag to validate scenarios before running
+- **Model Preflight:** `run` performs model hygiene checks by default and can be bypassed with `--skip-model-checks`
 - **Progress:** Supports `--no-progress` and `--quiet` flags for output control
 
 ## 4. Evaluation & Testing

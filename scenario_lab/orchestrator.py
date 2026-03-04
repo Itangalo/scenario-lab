@@ -6,7 +6,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Protocol, Optional, Union, TYPE_CHECKING
 from .models import Scenario, TurnResult, WorldState
 from .prompts import PromptBuilder
-from .llm import LLMResponse, LLMClient
+from .llm import LLMResponse, LLMClient, LLMParseError
 
 if TYPE_CHECKING:
     from .output import OutputManager
@@ -86,7 +86,7 @@ class Orchestrator:
         events_client = LLMClient(
             model=config.events,  # Can be str or List[str]
             temperature=config.temperature,
-            max_tokens=config.max_tokens,
+            max_tokens=config.get_task_max_tokens("events"),
         )
         self._owned_clients.append(events_client)
 
@@ -109,7 +109,7 @@ class Orchestrator:
                 actor_clients[actor_id] = existing
             else:
                 client = LLMClient(
-                    model=models, temperature=config.temperature, max_tokens=config.max_tokens
+                    model=models, temperature=config.temperature, max_tokens=config.get_task_max_tokens("actors")
                 )
                 self._owned_clients.append(client)
                 actor_clients[actor_id] = client
@@ -132,7 +132,7 @@ class Orchestrator:
                 rules_client = existing
             else:
                 rules_client = LLMClient(
-                    model=config.rules, temperature=config.temperature, max_tokens=config.max_tokens
+                    model=config.rules, temperature=config.temperature, max_tokens=config.get_task_max_tokens("rules")
                 )
                 self._owned_clients.append(rules_client)
 
@@ -156,7 +156,7 @@ class Orchestrator:
                 metrics_client = existing
             else:
                 metrics_client = LLMClient(
-                    model=config.metrics, temperature=config.temperature, max_tokens=config.max_tokens
+                    model=config.metrics, temperature=config.temperature, max_tokens=config.get_task_max_tokens("metrics")
                 )
                 self._owned_clients.append(metrics_client)
 
@@ -166,7 +166,7 @@ class Orchestrator:
             summary_client = events_client
         else:
             summary_client = LLMClient(
-                model=config.summary, temperature=0.3, max_tokens=config.max_tokens  # Lower temp for summary
+                model=config.summary, temperature=0.3, max_tokens=config.get_task_max_tokens("summary")  # Lower temp for summary
             )
             self._owned_clients.append(summary_client)
 
@@ -186,7 +186,7 @@ class Orchestrator:
             referee_client = existing
         else:
             referee_client = LLMClient(
-                model=config.referee, temperature=0.3, max_tokens=1000  # Low temp, short output
+                model=config.referee, temperature=0.3, max_tokens=config.get_task_max_tokens("referee", default=1000)  # Low temp, short output
             )
             self._owned_clients.append(referee_client)
 
@@ -371,7 +371,7 @@ class Orchestrator:
 
         try:
             candidate_events = response.extract_json_array()
-        except (json.JSONDecodeError, ValueError) as e:
+        except (json.JSONDecodeError, ValueError, LLMParseError) as e:
             print(f"  Warning: Could not parse events response: {e}")
             print(f"  Response was: {response.content[:200]}...")
 
@@ -507,13 +507,50 @@ class Orchestrator:
         response = self.llm_clients["rules"].complete(system, user)
         self._record_llm_call(turn, "rules", response)
 
+        def _analyze_rules_output(raw_content: str) -> tuple[Optional[object], list[str], Optional[ValueError]]:
+            try:
+                parsed_rules = parse_versioned_rules(raw_content, turn)
+                _, parsed_warnings = validate_rules_format(raw_content, turn)
+                return parsed_rules, parsed_warnings, None
+            except ValueError as err:
+                return None, [], err
+
+        parsed, warnings, parse_error = _analyze_rules_output(response.content)
+
+        should_retry_for_truncation = (
+            response.get_finish_reason() == "length"
+            or "Rules content is empty or too short" in warnings
+        )
+
+        if should_retry_for_truncation:
+            print("  ⚠️  Rules output truncated (finish_reason=length or missing rules), retrying with concise constraints...")
+            concise_system = (
+                system
+                + "\n\nKeep the response concise. Prioritize completeness over detail."
+            )
+            concise_user = (
+                user
+                + "\n\nIMPORTANT OUTPUT LIMITS:\n"
+                + "- Keep total output concise (target under ~1200 tokens).\n"
+                + "- Max 6 changelog entries total.\n"
+                + "- Motivation and Expected impact: max 1 short sentence each.\n"
+                + "- You MUST include a complete '## Rules' section with 5-10 numbered rules.\n"
+                + "- Do not add any preamble."
+            )
+            retry_response = self.llm_clients["rules"].complete(concise_system, concise_user)
+            self._record_llm_call(turn, "rules:concise_retry", retry_response)
+
+            retry_parsed, retry_warnings, retry_parse_error = _analyze_rules_output(retry_response.content)
+            if retry_parse_error is None and "Rules content is empty or too short" not in retry_warnings:
+                response = retry_response
+                parsed = retry_parsed
+                warnings = retry_warnings
+                parse_error = retry_parse_error
+
         # Parse and validate versioned rules
         try:
-            parsed = parse_versioned_rules(response.content, turn)
-
-            # Validate format
-            is_valid, warnings = validate_rules_format(response.content, turn)
-
+            if parse_error is not None or parsed is None:
+                raise parse_error or ValueError("Could not parse rules output")
             if warnings:
                 for warning in warnings:
                     print(f"  ⚠️  Rules format: {warning}")
@@ -567,7 +604,7 @@ class Orchestrator:
 
         try:
             metrics, narrative, notepad = response.extract_metrics_and_narrative()
-        except (json.JSONDecodeError, ValueError) as e:
+        except (json.JSONDecodeError, ValueError, LLMParseError) as e:
             print(f"  Warning: Could not parse metrics response: {e}")
             print(f"  Response was: {response.content[:200]}...")
 
@@ -591,24 +628,7 @@ class Orchestrator:
                 )
                 return current_metrics, error_narrative, self.scenario.notepad
 
-        # Validate and clamp metrics
-        for metric_id, value in list(metrics.items()):
-            if metric_id in self.scenario.metrics.metrics:
-                metric = self.scenario.metrics.metrics[metric_id]
-                if not isinstance(value, (int, float)):
-                    print(f"  Warning: Invalid value type for {metric_id}: {type(value)}")
-                    metrics[metric_id] = metric.value  # Keep previous
-                elif not metric.min_value <= value <= metric.max_value:
-                    print(
-                        f"  Warning: Value {value} out of bounds for {metric_id} "
-                        f"({metric.min_value}-{metric.max_value}), clamping"
-                    )
-                    metrics[metric_id] = max(metric.min_value, min(metric.max_value, value))
-            else:
-                print(f"  Warning: Unknown metric '{metric_id}' in response, skipping")
-                del metrics[metric_id]
-
-        return metrics, narrative, notepad
+        return self._validate_and_clamp_metrics(metrics), narrative, notepad
 
     def _run_constitutional_referee_step(
         self, turn: int, proposed_metrics: dict, narrative: str
@@ -653,6 +673,11 @@ class Orchestrator:
                         "status": "approved",
                         "iterations": iteration + 1,
                         "violations_found": violations_log,
+                        "final_action": (
+                            "approved"
+                            if not violations_log
+                            else "corrected_and_approved"
+                        ),
                     }
                     self.output_manager.save_constitutional_metadata(turn, metadata)
 
@@ -672,22 +697,23 @@ class Orchestrator:
 
                 if iteration < max_iterations - 1:
                     print(f"  🔄 Requesting corrected metrics (attempt {iteration+2}/{max_iterations})...")
+                    corrected = self._request_constitutional_correction(
+                        turn, previous_metrics, proposed_metrics, narrative, violations
+                    )
+                    if corrected is None:
+                        print("  ⚠️  Correction could not be parsed, continuing with current proposal")
+                        if self.output_manager:
+                            metadata = {
+                                "status": "violations_found",
+                                "iterations": iteration + 1,
+                                "violations_found": violations_log,
+                                "final_action": "accepted_with_violations",
+                            }
+                            self.output_manager.save_constitutional_metadata(turn, metadata)
+                        break
 
-                    # TODO: Implement full metrics correction request with violations context
-                    # For now, we continue with proposed metrics
-                    print(f"  ⚠️  Continuing with proposed metrics (correction not yet implemented)")
-
-                    # Save metadata about violations
-                    if self.output_manager:
-                        metadata = {
-                            "status": "violations_found",
-                            "iterations": iteration + 1,
-                            "violations_found": violations_log,
-                            "final_action": "accepted_with_violations",
-                        }
-                        self.output_manager.save_constitutional_metadata(turn, metadata)
-
-                    break
+                    proposed_metrics, narrative = corrected
+                    continue
                 else:
                     print(f"  ⚠️  Max correction attempts reached, continuing with proposed metrics")
 
@@ -719,6 +745,66 @@ class Orchestrator:
                 break
 
         return proposed_metrics, narrative
+
+    def _request_constitutional_correction(
+        self,
+        turn: int,
+        previous_metrics: dict,
+        proposed_metrics: dict,
+        narrative: str,
+        violations: str,
+    ) -> Optional[tuple[dict, str]]:
+        """Request a minimal metrics/narrative correction after constitutional violations."""
+        system, user = self.prompt_builder.build_constitutional_correction_prompt(
+            turn, previous_metrics, proposed_metrics, narrative, violations
+        )
+        client = self.llm_clients.get("metrics", self.llm_clients["events"])
+        response = client.complete(system, user)
+        self._record_llm_call(turn, "constitutional_correction", response)
+
+        try:
+            corrected_metrics, corrected_narrative, _ = response.extract_metrics_and_narrative()
+        except (json.JSONDecodeError, ValueError, LLMParseError) as e:
+            print(f"  Warning: Could not parse constitutional correction response: {e}")
+            print(f"  Response was: {response.content[:200]}...")
+
+            try:
+                fix_system, fix_user = self.prompt_builder.build_format_fix_metrics_prompt(
+                    turn, response.content
+                )
+                fix_response = client.complete(fix_system, fix_user)
+                self._record_llm_call(turn, "constitutional_correction:format_fix", fix_response)
+                corrected_metrics, corrected_narrative, _ = fix_response.extract_metrics_and_narrative()
+                print("  ✓ Constitutional correction format fixed on retry")
+            except Exception as fix_e:
+                print(f"  Warning: Constitutional correction format-fix retry failed: {fix_e}")
+                return None
+
+        corrected_metrics = self._validate_and_clamp_metrics(corrected_metrics)
+        if not corrected_narrative.strip():
+            corrected_narrative = narrative
+
+        return corrected_metrics, corrected_narrative
+
+    def _validate_and_clamp_metrics(self, metrics: dict) -> dict:
+        """Validate metric IDs/types and clamp out-of-range values."""
+        for metric_id, value in list(metrics.items()):
+            if metric_id in self.scenario.metrics.metrics:
+                metric = self.scenario.metrics.metrics[metric_id]
+                if not isinstance(value, (int, float)):
+                    print(f"  Warning: Invalid value type for {metric_id}: {type(value)}")
+                    metrics[metric_id] = metric.value
+                elif not metric.min_value <= value <= metric.max_value:
+                    print(
+                        f"  Warning: Value {value} out of bounds for {metric_id} "
+                        f"({metric.min_value}-{metric.max_value}), clamping"
+                    )
+                    metrics[metric_id] = max(metric.min_value, min(metric.max_value, value))
+            else:
+                print(f"  Warning: Unknown metric '{metric_id}' in response, skipping")
+                del metrics[metric_id]
+
+        return metrics
 
     def _run_summarization_step(self, turn: int, current_narrative: str) -> str:
         """Step 6: Update historical summary.

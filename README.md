@@ -58,7 +58,7 @@ python -m scenario_lab.cli run scenarios/sweden-ai-2030
 python -m scenario_lab.cli run scenarios/sweden-ai-2030 --turns 5
 
 # Override the model
-python -m scenario_lab.cli run scenarios/sweden-ai-2030 --model anthropic/claude-opus-4
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --model google/gemini-3-flash-preview
 
 # Preview prompts without running (dry run)
 python -m scenario_lab.cli run scenarios/sweden-ai-2030 --dry-run
@@ -71,6 +71,15 @@ python -m scenario_lab.cli run scenarios/sweden-ai-2030 --validate
 
 # Validate without running
 python -m scenario_lab.cli validate scenarios/sweden-ai-2030
+
+# Audit configured models across all scenarios
+python -m scenario_lab.cli audit-models
+
+# Audit one scenario tree and output JSON
+python -m scenario_lab.cli audit-models scenarios/sweden-ai-2030 --json
+
+# Skip default model hygiene checks when starting a run
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --skip-model-checks
 
 # Estimate costs before running
 python -m scenario_lab.cli estimate scenarios/sweden-ai-2030 --turns 10
@@ -112,8 +121,17 @@ Comprehensive validation catches errors before expensive LLM calls:
 - Metric references in actors, events, and rules
 - Event probability formulas (static values and mathematical expressions)
 - LLM configuration (model strings, temperature, max_tokens)
+- Model hygiene warnings (clearly legacy families, dated snapshots older than ~6 months, and optional repo policy mismatches)
 - Actor references (ensuring all configured actors have files)
 - Time configuration (start_date format, max_turns limits)
+
+**Run-time model preflight (default on `run`):**
+- Warns before execution if the configured models look stale or risky
+- Tries to suggest replacements from OpenRouter's models catalog
+- Prefers replacements that are both newer and cheaper than the current model when available
+- Lets you accept replacements interactively before the simulation starts
+- Can be disabled with `--skip-model-checks`
+- Uses the repository-local `model-policy.yaml` file so teams can tune the rules without changing Python code
 
 **Smart probability handling:**
 - Static probabilities: "10%", "5 percent per round"
@@ -457,7 +475,7 @@ export OPENROUTER_API_KEY="your_key_here"
 pytest tests/evals/llm-event-conditions/ -v
 
 # Test specific model
-export TEST_LLM_MODEL="anthropic/claude-haiku-4"
+export TEST_LLM_MODEL="x-ai/grok-4.1-fast"
 pytest tests/evals/llm-event-conditions/ -v
 
 # Test specific category

@@ -8,6 +8,7 @@ import operator
 from datetime import datetime
 from .models import Scenario
 from .loader import load_scenario
+from .model_audit import collect_model_hygiene_warnings
 
 
 class ValidationResult:
@@ -283,7 +284,7 @@ def is_valid_model_string(model: str) -> bool:
     """Check if model string follows expected format.
 
     Expected format: provider/model-name
-    Examples: anthropic/claude-sonnet-4, openai/gpt-4o
+    Examples: google/gemini-3-flash-preview, x-ai/grok-4.1-fast
     """
     if not isinstance(model, str):
         return False
@@ -493,6 +494,20 @@ def validate_llm_config(scenario: Scenario) -> List[str]:
     elif config.max_tokens > 100000:
         errors.append(f"max_tokens {config.max_tokens} is unusually high (maximum 100000)")
 
+    # Validate per-task max_tokens overrides
+    valid_tasks = {"events", "actors", "rules", "metrics", "summary", "referee"}
+    for task, value in config.max_tokens_by_task.items():
+        if task not in valid_tasks:
+            errors.append(f"max_tokens_by_task has invalid task '{task}'")
+            continue
+        if not isinstance(value, int):
+            errors.append(f"max_tokens_by_task['{task}'] must be an integer, got {type(value).__name__}")
+            continue
+        if value < 100:
+            errors.append(f"max_tokens_by_task['{task}']={value} is too low (minimum 100)")
+        elif value > 100000:
+            errors.append(f"max_tokens_by_task['{task}']={value} is unusually high (maximum 100000)")
+
     # Validate model strings for each task
     task_fields = ["events", "rules", "metrics", "summary"]
 
@@ -652,6 +667,7 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
     errors.extend(event_probability_errors)
     warnings.extend(event_probability_warnings)
     errors.extend(validate_llm_config(scenario))
+    warnings.extend(collect_model_hygiene_warnings(scenario.config.llm, scope=scenario_path.name))
     errors.extend(validate_actor_references(scenario))
     errors.extend(validate_time_config(scenario))
 

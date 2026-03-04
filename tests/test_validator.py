@@ -1,6 +1,7 @@
 """Tests for scenario validation."""
 
 import pytest
+from datetime import date
 from pathlib import Path
 from scenario_lab.validator import (
     validate_scenario,
@@ -13,6 +14,12 @@ from scenario_lab.validator import (
     parse_static_probability,
     is_formula_probability,
     is_valid_model_string,
+)
+from scenario_lab.model_audit import (
+    choose_replacement_model,
+    collect_model_hygiene_warnings,
+    evaluate_model_hygiene,
+    load_model_policy,
 )
 from scenario_lab.models import Scenario, ScenarioConfig, Metrics, Metric, Event, Actor, WorldState, LLMConfig
 
@@ -54,13 +61,13 @@ def test_is_formula_probability():
 def test_is_valid_model_string():
     """Test model string validation."""
     # Valid models
-    assert is_valid_model_string("anthropic/claude-sonnet-4")
-    assert is_valid_model_string("openai/gpt-4o")
-    assert is_valid_model_string("x-ai/grok-4-fast")
+    assert is_valid_model_string("google/gemini-3-flash-preview")
+    assert is_valid_model_string("google/gemini-3-flash-preview")
+    assert is_valid_model_string("x-ai/grok-4.1-fast")
 
     # Invalid models
     assert not is_valid_model_string("claude-sonnet-4")  # Missing provider
-    assert not is_valid_model_string("anthropic/")  # Missing model name
+    assert not is_valid_model_string("google/")  # Missing model name
     assert not is_valid_model_string("/claude-sonnet-4")  # Missing provider
     assert not is_valid_model_string("invalid")  # No slash
 
@@ -117,6 +124,33 @@ def test_validate_llm_config_max_tokens():
     assert any("max_tokens" in e for e in errors)
 
 
+def test_validate_llm_config_max_tokens_by_task():
+    """Test LLM config per-task max_tokens validation."""
+    config = ScenarioConfig(
+        name="Test",
+        description="Test",
+        start_date="2026-01",
+        time_scale="6 months",
+        max_turns=5,
+        actor_ids=["actor1"],
+        llm=LLMConfig(max_tokens_by_task={"rules": 50, "unknown": 500})  # Too low + invalid task
+    )
+
+    scenario = Scenario(
+        config=config,
+        metrics=Metrics(metrics={}),
+        events=[],
+        actors={},
+        metric_rules="",
+        world_state=WorldState(narrative="", turn=0, time_period=""),
+        context=""
+    )
+
+    errors = validate_llm_config(scenario)
+    assert any("max_tokens_by_task['rules']" in e for e in errors)
+    assert any("invalid task 'unknown'" in e for e in errors)
+
+
 def test_validate_llm_config_model_string():
     """Test LLM config model string validation."""
     config = ScenarioConfig(
@@ -141,6 +175,143 @@ def test_validate_llm_config_model_string():
 
     errors = validate_llm_config(scenario)
     assert any("invalid model string" in e.lower() for e in errors)
+
+
+def test_evaluate_model_hygiene_warns_for_legacy_and_old_snapshot():
+    """Model hygiene checks should flag legacy families and old dated snapshots."""
+    warnings = evaluate_model_hygiene(
+        "openai/gpt-3.5-turbo-2024-01-15",
+        today=date(2026, 3, 4),
+    )
+
+    assert len(warnings) >= 2
+    assert any("legacy GPT-3.5 family" in warning for warning in warnings)
+    assert any("2024-01-15" in warning for warning in warnings)
+
+
+def test_evaluate_model_hygiene_does_not_warn_for_preview_name_alone():
+    """The word 'preview' alone should not trigger a model hygiene warning."""
+    warnings = evaluate_model_hygiene(
+        "google/gemini-3-flash-preview",
+        today=date(2026, 3, 4),
+    )
+
+    assert warnings == []
+
+
+def test_load_model_policy_reads_repo_local_overrides(tmp_path):
+    """Model policy YAML should override age threshold and pattern lists."""
+    policy_path = tmp_path / "model-policy.yaml"
+    policy_path.write_text(
+        "\n".join(
+            [
+                "max_snapshot_age_days: 30",
+                "allowed_patterns:",
+                "  - '^x-ai/'",
+                "blocked_patterns:",
+                "  - 'grok-4.1-fast'",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    policy = load_model_policy(policy_path)
+
+    assert policy.max_snapshot_age_days == 30
+    assert policy.allowed_patterns == ["^x-ai/"]
+    assert policy.blocked_patterns == ["grok-4.1-fast"]
+
+
+def test_evaluate_model_hygiene_applies_policy_allowlist_and_blocklist(tmp_path):
+    """Policy allowlist/blocklist should add warnings without code changes."""
+    policy_path = tmp_path / "model-policy.yaml"
+    policy_path.write_text(
+        "\n".join(
+            [
+                "max_snapshot_age_days: 365",
+                "allowed_patterns:",
+                "  - '^x-ai/'",
+                "blocked_patterns:",
+                "  - 'grok-4.1-fast'",
+            ]
+        ),
+        encoding="utf-8",
+    )
+    policy = load_model_policy(policy_path)
+
+    blocked_warnings = evaluate_model_hygiene(
+        "x-ai/grok-4.1-fast",
+        today=date(2026, 3, 4),
+        policy=policy,
+    )
+    outside_allowlist_warnings = evaluate_model_hygiene(
+        "google/gemini-2.0-flash",
+        today=date(2026, 3, 4),
+        policy=policy,
+    )
+
+    assert any("blocked pattern" in warning for warning in blocked_warnings)
+    assert any("outside the repository allowlist" in warning for warning in outside_allowlist_warnings)
+
+
+def test_collect_model_hygiene_warnings_reports_task_names():
+    """Scenario-level model hygiene warnings should identify task and scope."""
+    config = LLMConfig(
+        events="x-ai/grok-4.1-fast",
+        actors="x-ai/grok-4.1-fast",
+        rules="x-ai/grok-4.1-fast",
+        metrics="openai/gpt-3.5-turbo-2024-01-15",
+        summary="x-ai/grok-4.1-fast",
+        referee="x-ai/grok-4.1-fast",
+    )
+
+    warnings = collect_model_hygiene_warnings(
+        config,
+        scope="test-scope",
+        today=date(2026, 3, 4),
+    )
+
+    assert any("Task 'metrics'" in warning and "2024-01-15" in warning for warning in warnings)
+    assert all("Task 'events'" not in warning for warning in warnings)
+
+
+def test_choose_replacement_model_prefers_newer_and_cheaper_candidate():
+    """Replacement selection should prefer a candidate that is both newer and cheaper."""
+    catalog = [
+        {
+            "id": "google/gemini-3-flash-preview",
+            "created": 1735689600,
+            "context_length": 1000000,
+            "pricing": {"prompt": "0.000003", "completion": "0.000004"},
+            "architecture": {"input_modalities": ["text"], "output_modalities": ["text"]},
+        },
+        {
+            "id": "google/gemini-2.5-flash",
+            "created": 1771113600,
+            "context_length": 1000000,
+            "pricing": {"prompt": "0.000001", "completion": "0.000002"},
+            "architecture": {"input_modalities": ["text"], "output_modalities": ["text"]},
+        },
+        {
+            "id": "x-ai/grok-4.1-fast",
+            "created": 1771113600,
+            "context_length": 1000000,
+            "pricing": {"prompt": "0.000004", "completion": "0.000005"},
+            "architecture": {"input_modalities": ["text"], "output_modalities": ["text"]},
+        },
+    ]
+    catalog_by_id = {model["id"]: model for model in catalog}
+
+    suggestion = choose_replacement_model(
+        "google/gemini-3-flash-preview",
+        catalog,
+        catalog_by_id,
+        today=date(2026, 3, 4),
+    )
+
+    assert suggestion is not None
+    assert suggestion["id"] == "google/gemini-2.5-flash"
+    assert "newer and cheaper" in suggestion["reason"]
 
 
 def test_validate_time_config_start_date():
@@ -456,6 +627,5 @@ def test_validate_scenario_sweden_ai_2030():
         pytest.skip("sweden-ai-2030 scenario not found")
 
     result = validate_scenario(scenario_path)
-    # Should have warnings about missing short descriptions, but no errors
     assert result.is_valid
-    assert len(result.warnings) > 0  # Expected warnings about short descriptions
+    assert len(result.warnings) == 0

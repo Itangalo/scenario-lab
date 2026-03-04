@@ -2,11 +2,21 @@
 
 import argparse
 import json
+import sys
 from pathlib import Path
 from dotenv import load_dotenv
 
 from .loader import load_scenario
 from .llm import LLMClient
+from .model_audit import (
+    apply_recommendations as apply_model_recommendations,
+    audit_model_configs,
+    collect_model_hygiene_warnings,
+    format_model_audit_report,
+    format_recommendations,
+    recommend_replacements,
+)
+from .models import LLMConfig
 from .orchestrator import run_simulation
 from .output import OutputManager
 from .validator import validate_scenario
@@ -20,6 +30,48 @@ def apply_model_override(llm_config, model: str):
     llm_config.metrics = model
     llm_config.summary = model
     llm_config.referee = model
+
+
+def run_model_preflight_checks(scenario) -> bool:
+    """Run default model hygiene checks before a real simulation run.
+
+    Returns:
+        True if execution should continue, False if the run should stop.
+    """
+    llm_config = getattr(scenario.config, "llm", None)
+    if not isinstance(llm_config, LLMConfig):
+        return True
+
+    warnings = collect_model_hygiene_warnings(llm_config, scope=scenario.config.name)
+    if not warnings:
+        return True
+
+    print("\n⚠️  Model hygiene warnings:")
+    for warning in warnings:
+        print(f"  - {warning}")
+
+    recommendations = recommend_replacements(llm_config)
+    if recommendations:
+        print()
+        print(format_recommendations(recommendations))
+
+    if not sys.stdin.isatty():
+        print("Non-interactive terminal detected; continuing with current models.")
+        return True
+
+    if recommendations:
+        response = input("\nApply the suggested replacements before running? [y/N]: ").strip().lower()
+        if response in {"y", "yes"}:
+            applied = apply_model_recommendations(llm_config, recommendations)
+            print(f"  → Applied {applied} model replacement(s)")
+            return True
+
+    response = input("Continue with the current model configuration? [y/N]: ").strip().lower()
+    if response in {"y", "yes"}:
+        return True
+
+    print("Run cancelled. Adjust model settings or use --skip-model-checks to bypass this prompt.")
+    return False
 
 
 def main():
@@ -60,6 +112,11 @@ def main():
     )
     run_parser.add_argument(
         "--validate", action="store_true", help="Validate scenario before running"
+    )
+    run_parser.add_argument(
+        "--skip-model-checks",
+        action="store_true",
+        help="Skip default model hygiene checks before running",
     )
 
     # Validate command
@@ -108,6 +165,20 @@ def main():
     calibrate_parser.add_argument("--max-runs", type=int, default=None, help="Analyze most recent N runs")
     calibrate_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
     calibrate_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
+
+    # Audit models command
+    audit_models_parser = subparsers.add_parser(
+        "audit-models",
+        help="Audit configured LLM models for stale or risky selections",
+    )
+    audit_models_parser.add_argument(
+        "path",
+        nargs="?",
+        type=Path,
+        default=Path("scenarios"),
+        help="Path to a scenario, scenario config, or directory tree (default: scenarios/)",
+    )
+    audit_models_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
 
     args = parser.parse_args()
 
@@ -274,6 +345,19 @@ def main():
             print(f"✅ Calibration report written to: {args.output}")
         else:
             print(report)
+        return
+
+    if args.command == "audit-models":
+        try:
+            report = audit_model_configs(args.path)
+        except Exception as e:
+            print(f"❌ Model audit failed: {e}")
+            return
+
+        if args.json:
+            print(json.dumps(report.to_dict(), indent=2, ensure_ascii=False))
+        else:
+            print(format_model_audit_report(report))
         return
 
     if args.command == "resume":
@@ -689,6 +773,10 @@ def main():
     if args.dry_run:
         run_dry(scenario)
         return
+
+    if not getattr(args, "skip_model_checks", False):
+        if not run_model_preflight_checks(scenario):
+            return
 
     # Run simulation
     print(f"\nRunning simulation: {scenario.config.name}")

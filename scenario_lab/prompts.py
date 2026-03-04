@@ -39,6 +39,7 @@ class PromptBuilder:
             "summarize": (system_dir / "summarize.md").read_text(encoding="utf-8"),
             "format_fix_system": (system_dir / "format-fix.md").read_text(encoding="utf-8"),
             "constitutional_referee_system": (system_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
+            "constitutional_referee_correction_system": (system_dir / "constitutional-referee-correction.md").read_text(encoding="utf-8"),
         }
 
         self.user_templates = {
@@ -50,6 +51,7 @@ class PromptBuilder:
             "format_fix_events": (user_dir / "format-fix-events.md").read_text(encoding="utf-8"),
             "format_fix_metrics": (user_dir / "format-fix-metrics.md").read_text(encoding="utf-8"),
             "constitutional_referee": (user_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
+            "constitutional_referee_correction": (user_dir / "constitutional-referee-correction.md").read_text(encoding="utf-8"),
         }
 
     def _get_system_prompt(self, prompt_type: str, actor_id: Optional[str] = None) -> str:
@@ -404,11 +406,7 @@ class PromptBuilder:
         Returns:
             (system_prompt, user_prompt)
         """
-        # Get system prompt with constitution injected
-        system_template = self.jinja_env.from_string(
-            self.system_templates["constitutional_referee_system"]
-        )
-        system = system_template.render(constitution=self.scenario.constitution)
+        system = self._render_constitutional_system_prompt("constitutional_referee")
 
         # Get user template
         template = self._get_user_template("constitutional_referee")
@@ -431,6 +429,50 @@ class PromptBuilder:
         user = template.render(**context)
 
         return system, user
+
+    def build_constitutional_correction_prompt(
+        self,
+        turn: int,
+        previous_metrics: dict,
+        new_metrics: dict,
+        narrative: str,
+        violations: str,
+    ) -> tuple[str, str]:
+        """Build prompts for correcting a metrics update after constitutional violations."""
+        system = self._render_constitutional_system_prompt("constitutional_referee_correction")
+        template = self._get_user_template("constitutional_referee_correction")
+
+        from .loader import get_time_period
+
+        time_period = get_time_period(
+            self.scenario.config.start_date, turn, self.scenario.config.time_scale
+        )
+
+        context = {
+            "turn": turn,
+            "time_period": time_period,
+            "previous_metrics_json": json.dumps(previous_metrics, indent=2, ensure_ascii=False),
+            "new_metrics_json": json.dumps(new_metrics, indent=2, ensure_ascii=False),
+            "narrative": narrative,
+            "violations": violations,
+            "output_language": self.scenario.config.output_language,
+        }
+
+        user = template.render(**context)
+
+        return system, user
+
+    def _render_constitutional_system_prompt(self, prompt_type: str) -> str:
+        """Render a constitutional system prompt with the scenario constitution injected."""
+        key = prompt_type.replace("-", "_")
+
+        if key in self.scenario.custom_system_prompts:
+            template_text = self.scenario.custom_system_prompts[key]
+        else:
+            template_text = self.system_templates[f"{key}_system"]
+
+        system_template = self.jinja_env.from_string(template_text)
+        return system_template.render(constitution=self.scenario.constitution)
 
     def _format_events_list(self) -> str:
         """Format available events for events prompt."""

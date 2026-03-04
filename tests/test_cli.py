@@ -4,7 +4,9 @@ import pytest
 import sys
 import json
 from unittest.mock import patch, MagicMock
-from scenario_lab.cli import main
+from scenario_lab.cli import main, run_model_preflight_checks
+from scenario_lab.model_audit import ModelRecommendation
+from scenario_lab.models import LLMConfig
 
 def test_cli_missing_args(capsys):
     """Test running CLI without arguments prints usage."""
@@ -99,6 +101,60 @@ def test_cli_run_model_overrides_all_llm_tasks(tmp_path):
                 assert mock_scenario.config.llm.metrics == "new-model"
                 assert mock_scenario.config.llm.summary == "new-model"
                 assert mock_scenario.config.llm.referee == "new-model"
+
+
+def test_run_model_preflight_checks_applies_recommendations(capsys):
+    """Interactive preflight should offer and apply model replacements."""
+    scenario = MagicMock()
+    scenario.config.name = "Test Scenario"
+    scenario.config.llm = LLMConfig(
+        events="google/gemini-3-flash-preview",
+        actors="google/gemini-3-flash-preview",
+        rules="x-ai/grok-4.1-fast",
+        metrics="x-ai/grok-4.1-fast",
+        summary="x-ai/grok-4.1-fast",
+        referee="x-ai/grok-4.1-fast",
+    )
+
+    recommendations = [
+        ModelRecommendation(
+            task="events",
+            current_model="google/gemini-3-flash-preview",
+            suggested_model="x-ai/grok-4.1-fast",
+            reason="stable model",
+        )
+    ]
+
+    with patch("scenario_lab.cli.collect_model_hygiene_warnings", return_value=["warning"]):
+        with patch("scenario_lab.cli.recommend_replacements", return_value=recommendations):
+            with patch("scenario_lab.cli.apply_model_recommendations", return_value=1) as mock_apply:
+                with patch("scenario_lab.cli.sys.stdin.isatty", return_value=True):
+                    with patch("builtins.input", return_value="y"):
+                        assert run_model_preflight_checks(scenario) is True
+
+    mock_apply.assert_called_once_with(scenario.config.llm, recommendations)
+    captured = capsys.readouterr()
+    assert "Model hygiene warnings" in captured.out
+    assert "Suggested replacements from OpenRouter" in captured.out
+
+
+def test_cli_run_skip_model_checks_bypasses_preflight(tmp_path):
+    """--skip-model-checks should bypass the default preflight prompt."""
+    with patch("scenario_lab.cli.run_model_preflight_checks") as mock_preflight:
+        with patch("scenario_lab.cli.run_simulation"):
+            with patch("scenario_lab.cli.load_scenario") as mock_load:
+                with patch("scenario_lab.cli.OutputManager") as MockOutputManager:
+                    mock_scenario = MagicMock()
+                    mock_scenario.config.name = "Test Scenario"
+                    mock_load.return_value = mock_scenario
+
+                    mock_output = MockOutputManager.return_value
+                    mock_output.start_run.return_value = tmp_path / "run_dir"
+
+                    with patch("sys.argv", ["scenario_lab", "run", "path", "--skip-model-checks"]):
+                        main()
+
+    mock_preflight.assert_not_called()
 
 
 def test_cli_resume_no_additional_turns_skips_simulation(tmp_path):
@@ -284,3 +340,36 @@ def test_cli_calibrate_runs_analysis_without_api_calls(tmp_path):
 
     with patch("sys.argv", ["scenario_lab", "calibrate", str(scenario_dir)]):
         main()
+
+
+def test_cli_audit_models_reports_project_warnings(tmp_path, capsys):
+    """audit-models should scan scenario configs and report model hygiene warnings."""
+    scenario_dir = tmp_path / "scenarios" / "demo"
+    scenario_dir.mkdir(parents=True)
+    (scenario_dir / "scenario.yaml").write_text(
+        "\n".join(
+            [
+                "name: Demo",
+                "description: Demo scenario",
+                "start_date: '2026-01'",
+                "time_scale: '6 months'",
+                "max_turns: 3",
+                "actors: ['government']",
+                "llm:",
+                "  events: x-ai/grok-4.1-fast",
+                "  actors: openai/gpt-3.5-turbo-2024-01-15",
+                "  rules: x-ai/grok-4.1-fast",
+                "  metrics: x-ai/grok-4.1-fast",
+                "  summary: x-ai/grok-4.1-fast",
+                "  referee: x-ai/grok-4.1-fast",
+            ]
+        ),
+        encoding="utf-8",
+    )
+
+    with patch("sys.argv", ["scenario_lab", "audit-models", str(tmp_path / "scenarios")]):
+        main()
+
+    captured = capsys.readouterr()
+    assert "MODEL AUDIT" in captured.out
+    assert "gpt-3.5-turbo-2024-01-15" in captured.out

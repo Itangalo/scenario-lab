@@ -111,7 +111,8 @@ def load_custom_user_prompts(scenario_dir: Path) -> dict[str, str]:
 
     Returns:
         Dictionary mapping prompt name to content.
-        Keys: "events", "actor", "metric_rules", "metrics_update"
+        Keys include "events", "actor", "metric_rules", "metrics_update",
+        "constitutional_referee", and "constitutional_referee_correction"
     """
     custom_prompts = {}
     prompts_dir = scenario_dir / "user-prompts"
@@ -119,7 +120,14 @@ def load_custom_user_prompts(scenario_dir: Path) -> dict[str, str]:
     if not prompts_dir.exists():
         return custom_prompts
 
-    prompt_files = ["events.md", "actor.md", "metric-rules.md", "metrics-update.md"]
+    prompt_files = [
+        "events.md",
+        "actor.md",
+        "metric-rules.md",
+        "metrics-update.md",
+        "constitutional-referee.md",
+        "constitutional-referee-correction.md",
+    ]
     for filename in prompt_files:
         prompt_path = prompts_dir / filename
         if prompt_path.exists():
@@ -141,7 +149,8 @@ def load_custom_system_prompts(scenario_dir: Path, actor_ids: list[str]) -> dict
     Returns:
         Dictionary mapping prompt name to content.
         For actor prompts, keys are "actor_{actor_id}" (e.g., "actor_government")
-        For other prompts, keys are "events", "metric_rules", "metrics_update"
+        For other prompts, keys include "events", "metric_rules", "metrics_update",
+        "constitutional_referee", and "constitutional_referee_correction"
     """
     custom_prompts = {}
     prompts_dir = scenario_dir / "system-prompts"
@@ -150,7 +159,14 @@ def load_custom_system_prompts(scenario_dir: Path, actor_ids: list[str]) -> dict
         return custom_prompts
 
     # Load non-actor system prompt files
-    prompt_files = ["events.md", "metric-rules.md", "metrics-update.md", "actor.md"]
+    prompt_files = [
+        "events.md",
+        "metric-rules.md",
+        "metrics-update.md",
+        "actor.md",
+        "constitutional-referee.md",
+        "constitutional-referee-correction.md",
+    ]
     for filename in prompt_files:
         prompt_path = prompts_dir / filename
         if prompt_path.exists():
@@ -265,6 +281,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "referee": base_config.llm.referee,
                     "temperature": base_config.llm.temperature,
                     "max_tokens": base_config.llm.max_tokens,
+                    "max_tokens_by_task": base_config.llm.max_tokens_by_task,
                 },
             }
 
@@ -278,26 +295,28 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
     if "model" in llm_data and not any(k in llm_data for k in ["events", "actors", "rules", "metrics"]):
         # Old format: single model for everything
         llm_config = LLMConfig(
-            events=llm_data.get("model", "anthropic/claude-sonnet-4"),
-            actors=llm_data.get("model", "anthropic/claude-sonnet-4"),
-            rules=llm_data.get("model", "anthropic/claude-sonnet-4"),
-            metrics=llm_data.get("model", "anthropic/claude-sonnet-4"),
-            summary=llm_data.get("summary", llm_data.get("model", "anthropic/claude-sonnet-4")),
+            events=llm_data.get("model", "google/gemini-3-flash-preview"),
+            actors=llm_data.get("model", "google/gemini-3-flash-preview"),
+            rules=llm_data.get("model", "google/gemini-3-flash-preview"),
+            metrics=llm_data.get("model", "google/gemini-3-flash-preview"),
+            summary=llm_data.get("summary", llm_data.get("model", "google/gemini-3-flash-preview")),
             referee=llm_data.get("referee", "x-ai/grok-4.1-fast"),
             temperature=llm_data.get("temperature", 0.7),
             max_tokens=llm_data.get("max_tokens", 2000),
+            max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
         )
     else:
         # New format: per-task models
         llm_config = LLMConfig(
-            events=llm_data.get("events", "anthropic/claude-sonnet-4"),
-            actors=llm_data.get("actors", "anthropic/claude-sonnet-4"),
-            rules=llm_data.get("rules", "anthropic/claude-sonnet-4"),
-            metrics=llm_data.get("metrics", "anthropic/claude-sonnet-4"),
-            summary=llm_data.get("summary", "openai/gpt-4o-mini"),
+            events=llm_data.get("events", "google/gemini-3-flash-preview"),
+            actors=llm_data.get("actors", "google/gemini-3-flash-preview"),
+            rules=llm_data.get("rules", "google/gemini-3-flash-preview"),
+            metrics=llm_data.get("metrics", "google/gemini-3-flash-preview"),
+            summary=llm_data.get("summary", "x-ai/grok-4.1-fast"),
             referee=llm_data.get("referee", "x-ai/grok-4.1-fast"),
             temperature=llm_data.get("temperature", 0.7),
             max_tokens=llm_data.get("max_tokens", 2000),
+            max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
         )
 
     return ScenarioConfig(
