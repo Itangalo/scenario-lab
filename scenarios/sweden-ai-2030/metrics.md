@@ -12,7 +12,7 @@
 
 **Unit:** hours
 
-**Starting value:** 3
+**Starting value:** 7
 
 **Reference points:**
 

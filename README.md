@@ -54,6 +54,16 @@ cp .env.example .env
 
 Then add your `OPENROUTER_API_KEY` to `.env`.
 
+### Recommended workflow
+
+Scenario Lab works much better with a terminal-based AI coding agent assisting your workflow, for example:
+
+- Claude Code
+- OpenAI Codex
+- Gemini CLI
+
+You can run scenarios manually, but an agent is especially useful for reviewing run outputs, comparing trajectories, and iterating quickly on prompts/rules.
+
 ### Run the example scenario
 
 ```bash
