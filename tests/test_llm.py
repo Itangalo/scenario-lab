@@ -53,6 +53,49 @@ def test_llm_client_network_error_retry():
         # Verify it was called twice (initial + retry)
         assert mock_post.call_count == 2
 
+
+def test_llm_client_invalid_payload_retry():
+    """Malformed provider payloads should retry instead of crashing immediately."""
+    client = LLMClient(api_key="fake_key", model="test/model")
+
+    with patch("httpx.Client.post") as mock_post:
+        mock_post.side_effect = [
+            MockResponse(json_data={"id": "missing-choices"}),
+            MockResponse(
+                json_data={
+                    "choices": [{"message": {"content": "Recovered after malformed response"}}]
+                }
+            ),
+        ]
+
+        response = client.complete("System", "User")
+        assert response.content == "Recovered after malformed response"
+        assert mock_post.call_count == 2
+
+
+def test_llm_client_accepts_content_parts():
+    """Content arrays should be flattened into plain text."""
+    client = LLMClient(api_key="fake_key", model="test/model")
+
+    with patch("httpx.Client.post") as mock_post:
+        mock_post.return_value = MockResponse(
+            json_data={
+                "choices": [
+                    {
+                        "message": {
+                            "content": [
+                                {"type": "text", "text": "Hello"},
+                                {"type": "text", "text": " world"},
+                            ]
+                        }
+                    }
+                ]
+            }
+        )
+
+        response = client.complete("System", "User")
+        assert response.content == "Hello world"
+
 def test_llm_response_parsing():
     """Test LLMResponse parsing methods."""
     

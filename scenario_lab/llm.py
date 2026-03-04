@@ -184,6 +184,43 @@ class LLMClient:
         self.max_tokens = max_tokens
         self.client = httpx.Client(timeout=120.0)
 
+    @staticmethod
+    def _extract_content_from_response(data: object) -> str:
+        """Extract assistant text from an OpenRouter-style response payload."""
+        if not isinstance(data, dict):
+            raise ValueError("Response payload was not a JSON object")
+
+        choices = data.get("choices")
+        if not isinstance(choices, list) or not choices:
+            raise ValueError("Response payload did not include choices")
+
+        first_choice = choices[0]
+        if not isinstance(first_choice, dict):
+            raise ValueError("First choice was not an object")
+
+        message = first_choice.get("message")
+        if isinstance(message, dict):
+            content = message.get("content")
+            if isinstance(content, str):
+                return content
+
+            if isinstance(content, list):
+                text_parts: list[str] = []
+                for item in content:
+                    if not isinstance(item, dict):
+                        continue
+                    text = item.get("text")
+                    if isinstance(text, str):
+                        text_parts.append(text)
+                if text_parts:
+                    return "".join(text_parts)
+
+        text = first_choice.get("text")
+        if isinstance(text, str):
+            return text
+
+        raise ValueError("Response payload did not include assistant content")
+
     def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
         """Send a completion request with fallback support.
 
@@ -232,12 +269,23 @@ class LLMClient:
                     response.raise_for_status()
 
                     data = response.json()
-                    content = data["choices"][0]["message"]["content"]
+                    content = self._extract_content_from_response(data)
 
                     if is_fallback:
                         print(f"  ✓ Fallback successful")
 
                     return LLMResponse(content=content, raw_response=data)
+
+                except (json.JSONDecodeError, ValueError) as e:
+                    if attempt < max_retries - 1:
+                        print(
+                            f"  Invalid response ({type(e).__name__}), retrying ({attempt + 1}/{max_retries})..."
+                        )
+                        time.sleep(1)
+                        continue
+                    last_error = LLMError(f"Invalid response for {model}: {e}")
+                    print(f"  ✗ {model} returned an invalid response")
+                    break
 
                 except httpx.HTTPStatusError as e:
                     if e.response.status_code == 429:  # Rate limit

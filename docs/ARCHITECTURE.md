@@ -141,6 +141,7 @@ Each turn executes the following steps in order:
 ### LLM Integration (`llm.py`)
 - **Client:** Uses `httpx` to call OpenRouter API.
 - **Fallback:** Supports a list of models for fallback (e.g., try Claude 3.5 Sonnet, then Haiku).
+- **Defensive Response Handling:** Retries transiently when the provider returns a malformed success payload (for example a 200 response without `choices`) instead of crashing the run immediately.
 - **Parsing:** Includes strict regex-based parsing for JSON and specific Markdown headers.
 
 ### Persistence (`output.py`)
