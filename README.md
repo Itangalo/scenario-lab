@@ -128,6 +128,24 @@ python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHM
 
 `resume` continues the same run. `branch` creates a new run starting from a previous turn, which is useful for "what if" analysis.
 
+### Run many scenarios in parallel
+
+```bash
+python -m scenario_lab.cli batch-run scenarios/sweden-ai-2030 --variants --max-concurrency 4
+python -m scenario_lab.cli batch-run scenarios/sweden-ai-2030/variants/quick-test.yaml scenarios/sweden-ai-2030/variants/high-adoption.yaml --max-concurrency 2
+```
+
+`batch-run` launches multiple isolated child processes and limits concurrency with `--max-concurrency`, which is safer than starting many foreground runs manually.
+
+### Resume many incomplete runs in parallel
+
+```bash
+python -m scenario_lab.cli batch-resume scenarios/sweden-ai-2030 --max-concurrency 4
+python -m scenario_lab.cli batch-resume scenarios/sweden-ai-2030/runs --max-concurrency 4 --turns 10
+```
+
+`batch-resume` discovers incomplete `run-*` directories and resumes them in parallel. You can target a specific run directory, a `runs/` directory, or a scenario directory.
+
 ### Calibrate from existing runs
 
 ```bash
@@ -174,6 +192,10 @@ scenarios/<scenario>/runs/run-YYYYMMDD-HHMMSS/
     ├── 5-notepad.md
     └── 6-historical-summary.md
 ```
+
+If two runs start in the same second, Scenario Lab now adds a numeric suffix instead of reusing the same directory (for example `run-YYYYMMDD-HHMMSS-01`).
+
+Batch commands also write per-job logs under `scenarios/<scenario>/runs/batch-logs/`.
 
 This structure is one of the main strengths of the project: you can inspect intermediate artifacts instead of treating the simulation as a black box.
 
