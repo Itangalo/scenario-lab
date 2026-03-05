@@ -20,7 +20,7 @@ There is a list, Metric Rules, that describes how metrics potentially affect eac
 Respond with a Markdown text with the following content:
 
 * Heading level 2: Metrics
-* A JSON object describing all metrics, in the following format: `{"metric1_name": value1, "metric2_name": value2}`
+* A JSON object describing all metrics in a ```json code fence, in the following format: `{"metric1_name": value1, "metric2_name": value2}`
 * Heading level 2: Narrative
 * A coherent story about what happens in the world during this turn (max 400 words). You may use subheadings (level 3) if desired.
 * Heading level 2: Notepad

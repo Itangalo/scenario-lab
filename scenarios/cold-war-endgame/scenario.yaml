@@ -1,0 +1,18 @@
+name: "Cold War Endgame"
+description: "The final years of the Cold War, from Gorbachev's rise to the dissolution of the Soviet Union. Can the simulation reproduce the dynamics that ended the superpower standoff?"
+start_date: "1985-07"
+time_scale: "6 months per turn"
+max_turns: 13
+
+actors:
+  - soviet-reformers
+  - soviet-hardliners
+  - united-states
+  - poland-solidarity
+
+llm:
+  model: "x-ai/grok-4.1-fast"
+  temperature: 0.7
+  max_tokens: 2000
+  max_tokens_by_task:
+    rules: 3500

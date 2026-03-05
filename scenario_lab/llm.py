@@ -52,7 +52,7 @@ class LLMResponse:
         the first valid JSON object/array within the text using a streaming decoder.
         """
         # Prefer fenced ```json ... ``` blocks
-        match = re.search(r"```json\\s*(.*?)\\s*```", self.content, re.DOTALL | re.IGNORECASE)
+        match = re.search(r"```json\s*(.*?)\s*```", self.content, re.DOTALL | re.IGNORECASE)
         if match:
             return json.loads(match.group(1))
 
@@ -100,20 +100,34 @@ class LLMResponse:
         ## Notepad
         notepad text...
         """
-        # Find ## Metrics section with JSON
-        metrics_match = re.search(
-            r"##\s*Metrics\s*\n+```json\s*(.*?)\s*```", self.content, re.DOTALL | re.IGNORECASE
+        # Find the ## Metrics section and extract JSON from within it
+        section_match = re.search(
+            r"##\s*Metrics\b(.*?)(?=##\s*\w|\Z)", self.content, re.DOTALL | re.IGNORECASE
         )
-        if not metrics_match:
-            # Try without code block
-            metrics_match = re.search(
-                r"##\s*Metrics\s*\n+(\{.*?\})", self.content, re.DOTALL | re.IGNORECASE
-            )
-
-        if not metrics_match:
+        if not section_match:
             raise LLMParseError("Could not find metrics in response")
 
-        metrics = json.loads(metrics_match.group(1))
+        section = section_match.group(1)
+
+        # Try code fence first
+        metrics_match = re.search(r"```json\s*(.*?)\s*```", section, re.DOTALL | re.IGNORECASE)
+        if metrics_match:
+            metrics = json.loads(metrics_match.group(1))
+        else:
+            # Scan for first JSON object in the section (handles raw, inline-backtick, or prose before JSON)
+            decoder = json.JSONDecoder()
+            metrics = None
+            for i, ch in enumerate(section):
+                if ch == "{":
+                    try:
+                        obj, _ = decoder.raw_decode(section[i:])
+                        if isinstance(obj, dict):
+                            metrics = obj
+                            break
+                    except json.JSONDecodeError:
+                        continue
+            if metrics is None:
+                raise LLMParseError("Could not find metrics in response")
 
         # Find ## Narrative/Narrativ section (stop at ## Notepad if present)
         narrative_match = re.search(
