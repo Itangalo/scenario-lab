@@ -339,6 +339,56 @@ def test_validate_time_config_start_date():
     assert any("start_date" in e for e in errors)
 
 
+def test_validate_time_config_start_date_day_precision_valid():
+    """YYYY-MM-DD start dates should be accepted."""
+    config = ScenarioConfig(
+        name="Test",
+        description="Test",
+        start_date="2026-03-09",
+        time_scale="2 weeks per turn",
+        max_turns=5,
+        actor_ids=["actor1"]
+    )
+
+    scenario = Scenario(
+        config=config,
+        metrics=Metrics(metrics={}),
+        events=[],
+        actors={},
+        metric_rules="",
+        world_state=WorldState(narrative="", turn=0, time_period=""),
+        context=""
+    )
+
+    errors = validate_time_config(scenario)
+    assert not any("start_date" in e for e in errors)
+
+
+def test_validate_time_config_time_scale_parseable():
+    """time_scale should include a quantity and supported unit."""
+    config = ScenarioConfig(
+        name="Test",
+        description="Test",
+        start_date="2026-01",
+        time_scale="fortnight cadence",  # Invalid format
+        max_turns=5,
+        actor_ids=["actor1"]
+    )
+
+    scenario = Scenario(
+        config=config,
+        metrics=Metrics(metrics={}),
+        events=[],
+        actors={},
+        metric_rules="",
+        world_state=WorldState(narrative="", turn=0, time_period=""),
+        context=""
+    )
+
+    errors = validate_time_config(scenario)
+    assert any("time_scale" in e for e in errors)
+
+
 def test_validate_time_config_max_turns():
     """Test max_turns validation."""
     config = ScenarioConfig(
@@ -628,4 +678,5 @@ def test_validate_scenario_sweden_ai_2030():
 
     result = validate_scenario(scenario_path)
     assert result.is_valid
-    assert len(result.warnings) == 0
+    assert any("has no initial goals" in warning for warning in result.warnings)
+    assert any("has no behavioral traits" in warning for warning in result.warnings)

@@ -1,7 +1,9 @@
 """Scenario loading from disk."""
 
+import calendar
 import re
 import yaml
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Union, Optional, List
 from .models import (
@@ -491,6 +493,8 @@ def load_actor(path: Path, actor_id: str) -> Actor:
     name = ""
     short_desc = ""
     long_desc = ""
+    initial_goals: list[str] = []
+    behavioral_traits: list[str] = []
     current_section = None
 
     for line in lines:
@@ -499,19 +503,33 @@ def load_actor(path: Path, actor_id: str) -> Actor:
 
         if line_stripped.startswith("# "):
             name = line_stripped[2:].strip()
+        elif line_lower.startswith("### initial goals"):
+            current_section = "goals"
+        elif (
+            line_lower.startswith("### behavioral traits")
+            or line_lower.startswith("### behavioural traits")
+            or line_lower.startswith("### traits")
+        ):
+            current_section = "traits"
         elif line_lower.startswith("## short description"):
             current_section = "short"
         elif line_lower.startswith("## long description"):
             current_section = "long"
-        elif line_stripped.startswith("##"):
+        elif line_stripped.startswith("##") or line_stripped.startswith("###"):
             current_section = None
         elif current_section == "short" and line_stripped:
             short_desc += line_stripped + " "
         elif current_section == "long" and line_stripped:
             long_desc += line_stripped + " "
-
-    # Default goals - can be extracted from description if needed
-    initial_goals = []
+        elif current_section in {"goals", "traits"} and line_stripped:
+            item = re.sub(r"^[-*]\s+", "", line_stripped)
+            item = re.sub(r"^\d+\.\s+", "", item)
+            if not item:
+                continue
+            if current_section == "goals":
+                initial_goals.append(item)
+            else:
+                behavioral_traits.append(item)
 
     return Actor(
         id=actor_id,
@@ -519,6 +537,7 @@ def load_actor(path: Path, actor_id: str) -> Actor:
         short_description=short_desc.strip(),
         long_description=long_desc.strip(),
         initial_goals=initial_goals,
+        behavioral_traits=behavioral_traits,
     )
 
 
@@ -542,62 +561,101 @@ def get_time_period(start_date: str, turn: int, time_scale: str) -> str:
     """Calculate time period string for a given turn.
 
     Args:
-        start_date: Format "2026-01" (YYYY-MM)
+        start_date: Format "2026-01" (YYYY-MM), "2026", or "2026-03-09" (YYYY-MM-DD)
         turn: Turn number (0 = initial state, 1 = first turn)
-        time_scale: e.g., "6 months per turn"
+        time_scale: e.g., "6 months per turn", "2 weeks per turn"
 
     Returns:
-        String like "January-June 2026"
+        String like "January-June 2026" or "2026-03-09 to 2026-03-22"
     """
     if turn == 0:
         return f"Start: {start_date}"
 
-    # Parse start date (supports YYYY-MM and YYYY)
-    if "-" in start_date:
-        year, month = map(int, start_date.split("-"))
+    start = _parse_start_date(start_date)
+    amount, unit = _parse_time_scale(time_scale)
+
+    if unit == "days":
+        period_start = start + timedelta(days=(turn - 1) * amount)
+        period_end = period_start + timedelta(days=amount - 1)
+    elif unit == "weeks":
+        period_start = start + timedelta(weeks=(turn - 1) * amount)
+        period_end = period_start + timedelta(weeks=amount) - timedelta(days=1)
     else:
-        year = int(start_date)
-        month = 1
+        months = amount if unit == "months" else amount * 12
+        period_start = _add_months(start, (turn - 1) * months)
+        period_end = _add_months(period_start, months) - timedelta(days=1)
 
-    # Parse time scale
-    months_per_turn = 6  # default
-    if "month" in time_scale.lower():
-        parts = time_scale.lower().split()
-        for i, part in enumerate(parts):
-            if part.isdigit():
-                months_per_turn = int(part)
-                break
+    return _format_time_period(period_start, period_end)
 
-    # Calculate period
-    start_month = month + (turn - 1) * months_per_turn
-    end_month = start_month + months_per_turn - 1
 
-    # Handle year overflow
-    start_year = year + (start_month - 1) // 12
-    start_month = ((start_month - 1) % 12) + 1
+def _parse_start_date(start_date: str) -> date:
+    """Parse supported start_date formats into a date object."""
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", start_date):
+        return datetime.strptime(start_date, "%Y-%m-%d").date()
+    if re.fullmatch(r"\d{4}-\d{2}", start_date):
+        return datetime.strptime(start_date, "%Y-%m").date().replace(day=1)
+    if re.fullmatch(r"\d{4}", start_date):
+        return datetime.strptime(start_date, "%Y").date().replace(month=1, day=1)
+    raise ValueError(f"Unsupported start_date format: {start_date}")
 
-    end_year = year + (end_month - 1) // 12
-    end_month = ((end_month - 1) % 12) + 1
 
-    month_names = [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-    ]
+def _parse_time_scale(time_scale: str) -> tuple[int, str]:
+    """Parse time_scale into (amount, normalized unit)."""
+    match = re.search(
+        r"(\d+)\s*(day|days|week|weeks|month|months|year|years)\b",
+        time_scale.lower(),
+    )
+    if not match:
+        # Backward-compatible default.
+        return 6, "months"
 
-    start_name = month_names[start_month - 1]
-    end_name = month_names[end_month - 1]
+    amount = int(match.group(1))
+    raw_unit = match.group(2)
 
-    if start_year == end_year:
-        return f"{start_name}-{end_name} {start_year}"
-    else:
-        return f"{start_name} {start_year}-{end_name} {end_year}"
+    if raw_unit.startswith("day"):
+        return amount, "days"
+    if raw_unit.startswith("week"):
+        return amount, "weeks"
+    if raw_unit.startswith("year"):
+        return amount, "years"
+    return amount, "months"
+
+
+def _add_months(input_date: date, months: int) -> date:
+    """Add months while clamping day to target month length."""
+    total_months = (input_date.year * 12 + input_date.month - 1) + months
+    year = total_months // 12
+    month = total_months % 12 + 1
+    max_day = calendar.monthrange(year, month)[1]
+    day = min(input_date.day, max_day)
+    return date(year, month, day)
+
+
+def _format_time_period(period_start: date, period_end: date) -> str:
+    """Format periods as month ranges when clean, otherwise full date ranges."""
+    starts_at_month_start = period_start.day == 1
+    ends_at_month_end = period_end.day == calendar.monthrange(period_end.year, period_end.month)[1]
+    is_full_month_window = starts_at_month_start and ends_at_month_end
+
+    if is_full_month_window:
+        month_names = [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December",
+        ]
+        start_name = month_names[period_start.month - 1]
+        end_name = month_names[period_end.month - 1]
+        if period_start.year == period_end.year:
+            return f"{start_name}-{end_name} {period_start.year}"
+        return f"{start_name} {period_start.year}-{end_name} {period_end.year}"
+
+    return f"{period_start.isoformat()} to {period_end.isoformat()}"

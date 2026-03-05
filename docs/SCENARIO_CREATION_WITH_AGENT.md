@@ -37,17 +37,29 @@ scenarios/my-scenario/
 
 `source-material/` is raw input material for the agent (reports, policy docs, notes, transcripts, etc.), not executable instructions.
 
+## Mandatory Interview Gate (Do Not Skip)
+
+Before drafting or editing scenario files, the agent must run an explicit interview step.
+
+The agent must not start writing `scenario.yaml`, `metrics.md`, `metric-rules.md`, `events.md`, or actor/context files until one of the following is true:
+
+- the user has answered the core interview topics, or
+- the user explicitly approves that the agent proceeds with documented assumptions.
+
+If information is missing, the agent should ask concise follow-up questions first, then summarize assumptions and ask for confirmation before drafting.
+
 ## End-to-End Process
 
 1. Create the scenario folder and optionally add `source-material/`.
 2. Start the AI agent in the repository root.
 3. Ask the agent to build a scenario in the target folder.
 4. The agent interviews you to fill gaps (purpose, scope, actors, metrics, events, constraints, language, success criteria).
-5. The agent drafts scenario files and uses source material to inform content.
-6. The agent runs validation:
+5. The agent confirms interview outputs (or explicit assumptions approved by the user).
+6. The agent drafts scenario files and uses source material to inform content.
+7. The agent runs validation:
    `python -m scenario_lab.cli validate scenarios/<your-scenario>`
-7. You run one or more test simulations and review outcomes with the agent.
-8. Iterate on prompts/rules/events/metrics until behavior matches intent.
+8. You run one or more test simulations and review outcomes with the agent.
+9. Iterate on prompts/rules/events/metrics until behavior matches intent.
 
 ## Interview Topics the Agent Should Cover
 
@@ -60,6 +72,18 @@ Before drafting files, the agent should gather:
 - major external events and trigger logic
 - constitutional constraints (if any)
 - output language and style preferences
+
+## Interview Output Checklist
+
+Before drafting starts, the agent should provide a short summary of:
+
+- scope and intended use of the scenario
+- chosen actors and why they are included
+- selected metrics and what each represents
+- selected external events (including tail-risk/black swan candidates)
+- key assumptions and open uncertainties
+
+The user should have a chance to approve or correct this summary before file creation begins.
 
 ## Source-Material Handling Rules
 

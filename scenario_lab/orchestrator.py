@@ -393,7 +393,7 @@ class Orchestrator:
         # Validate and roll dice for each event
         triggered = []
         for event_data in candidate_events:
-            if "id" not in event_data or "probability" not in event_data:
+            if not isinstance(event_data, dict) or "id" not in event_data or "probability" not in event_data:
                 print(f"  Warning: Skipping invalid event data: {event_data}")
                 continue
 

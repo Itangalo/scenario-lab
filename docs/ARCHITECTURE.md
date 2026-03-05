@@ -299,8 +299,8 @@ The `5-constitutional-check.json` file (when present) includes:
    - Detects orphaned actor files
 
 5. **Date and Time Scale Validation** (`validate_time_config`):
-   - Validates start_date is in correct format (YYYY-MM)
-   - Checks time_scale is parseable
+   - Validates start_date is in correct format (YYYY-MM-DD, YYYY-MM, or YYYY)
+   - Checks time_scale is parseable (days/weeks/months/years)
    - Ensures max_turns doesn't exceed reasonable limits
 
 **Integration:**

@@ -107,6 +107,56 @@ spanning multiple lines.
     assert actor.initial_goals == [] # Defaults
 
 
+def test_load_actor_parses_initial_goals_and_traits(tmp_path):
+    """Actor parser should load optional h3 goals/traits sections under long description."""
+    content = """# My Actor
+## Short description
+A short summary.
+## Long description
+Long details here.
+### Initial goals
+- Protect critical infrastructure
+- Maintain investor confidence
+### Behavioral traits
+- Pragmatic under pressure
+1. Risk-aware communicator
+"""
+    f = tmp_path / "actor.md"
+    f.write_text(content, encoding="utf-8")
+
+    actor = load_actor(f, "actor_id")
+
+    assert actor.initial_goals == [
+        "Protect critical infrastructure",
+        "Maintain investor confidence",
+    ]
+    assert actor.behavioral_traits == [
+        "Pragmatic under pressure",
+        "Risk-aware communicator",
+    ]
+
+
+def test_load_actor_does_not_parse_h2_goals_and_traits(tmp_path):
+    """Legacy h2 sections should not populate goals/traits."""
+    content = """# My Actor
+## Short description
+A short summary.
+## Long description
+Long details here.
+## Initial goals
+- Legacy goal format
+## Behavioral traits
+- Legacy trait format
+"""
+    f = tmp_path / "actor.md"
+    f.write_text(content, encoding="utf-8")
+
+    actor = load_actor(f, "actor_id")
+
+    assert actor.initial_goals == []
+    assert actor.behavioral_traits == []
+
+
 def test_get_time_period_accepts_year_month():
     """Time period calculation works with YYYY-MM start dates."""
     period = get_time_period("2026-01", turn=1, time_scale="6 months per turn")
@@ -117,3 +167,12 @@ def test_get_time_period_accepts_year_only():
     """Time period calculation works with YYYY start dates (defaults to January)."""
     period = get_time_period("2026", turn=2, time_scale="6 months per turn")
     assert period == "July-December 2026"
+
+
+def test_get_time_period_supports_weeks_with_day_precision():
+    """Time period calculation supports weekly cadence with YYYY-MM-DD start dates."""
+    period_1 = get_time_period("2026-03-09", turn=1, time_scale="2 weeks per turn")
+    period_2 = get_time_period("2026-03-09", turn=2, time_scale="2 weeks per turn")
+
+    assert period_1 == "2026-03-09 to 2026-03-22"
+    assert period_2 == "2026-03-23 to 2026-04-05"

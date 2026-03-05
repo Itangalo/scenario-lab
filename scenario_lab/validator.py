@@ -567,7 +567,8 @@ def validate_time_config(scenario: Scenario) -> List[str]:
     """Validate start_date and time_scale.
 
     Checks:
-    - start_date is in valid format (YYYY-MM or YYYY)
+    - start_date is in valid format (YYYY-MM-DD, YYYY-MM, or YYYY)
+    - time_scale includes a supported unit (days/weeks/months/years)
     - max_turns doesn't exceed reasonable limits
 
     Returns:
@@ -578,16 +579,30 @@ def validate_time_config(scenario: Scenario) -> List[str]:
     # Validate start_date format
     start_date = scenario.config.start_date
     if start_date:
-        # Accept YYYY-MM or YYYY formats
-        if not re.match(r'^\d{4}(-\d{2})?$', start_date):
-            errors.append(f"start_date '{start_date}' has invalid format (expected YYYY-MM or YYYY)")
+        # Accept YYYY-MM-DD, YYYY-MM, or YYYY formats
+        if not re.match(r'^\d{4}(-\d{2}){0,2}$', start_date):
+            errors.append(
+                f"start_date '{start_date}' has invalid format "
+                f"(expected YYYY-MM-DD, YYYY-MM, or YYYY)"
+            )
         else:
-            # Try to parse if it's YYYY-MM
-            if '-' in start_date:
-                try:
+            parts = start_date.split("-")
+            try:
+                if len(parts) == 1:
+                    datetime.strptime(start_date, '%Y')
+                elif len(parts) == 2:
                     datetime.strptime(start_date, '%Y-%m')
-                except ValueError:
-                    errors.append(f"start_date '{start_date}' is not a valid date")
+                else:
+                    datetime.strptime(start_date, '%Y-%m-%d')
+            except ValueError:
+                errors.append(f"start_date '{start_date}' is not a valid date")
+
+    time_scale = (scenario.config.time_scale or "").lower()
+    if not re.search(r'\b\d+\s*(day|days|week|weeks|month|months|year|years)\b', time_scale):
+        errors.append(
+            f"time_scale '{scenario.config.time_scale}' is not parseable "
+            f"(expected forms like '2 weeks per turn' or '6 months')"
+        )
 
     # Validate max_turns
     if scenario.config.max_turns < 1:
@@ -633,6 +648,16 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
                 warnings.append(f"Actor '{actor_id}' has no display name")
             if not actor.short_description:
                 warnings.append(f"Actor '{actor_id}' has no short description")
+            if not actor.initial_goals:
+                warnings.append(
+                    f"Actor '{actor_id}' has no initial goals "
+                    f"(consider adding '### Initial goals' under '## Long description')"
+                )
+            if not actor.behavioral_traits:
+                warnings.append(
+                    f"Actor '{actor_id}' has no behavioral traits "
+                    f"(consider adding '### Behavioral traits' under '## Long description')"
+                )
 
     # 3. Basic Metrics Validation
     if not scenario.metrics.metrics:
