@@ -6,7 +6,8 @@ This file is the repository-specific instruction source for coding agents. Human
 
 When helping create a new scenario from scratch, use:
 
-- [docs/SCENARIO_CREATION_WITH_AGENT.md](docs/SCENARIO_CREATION_WITH_AGENT.md)
+- [docs/SCENARIO_CREATION_WITH_AGENT.md](docs/SCENARIO_CREATION_WITH_AGENT.md) for process/workflow
+- [docs/SCENARIO_TECHNICAL_REFERENCE.md](docs/SCENARIO_TECHNICAL_REFERENCE.md) for file format and validation contract
 
 ## Critical Ground Truth
 

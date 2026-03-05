@@ -434,7 +434,7 @@ When a test fails:
 ## Related Documentation
 
 - [Issue #120: Evals for LLMs](https://github.com/Itangalo/scenario-lab/issues/120)
-- [Creating Scenarios Guide](../../../docs/creating-scenarios.md)
+- [Scenario Technical Reference](../../../docs/SCENARIO_TECHNICAL_REFERENCE.md)
 - [Scenario Lab V4 Design](../../../docs/V4/early-testing/)
 
 ## License

@@ -427,4 +427,4 @@ After using this eval suite to improve event condition wording:
 
 - Full scenario-based eval: `tests/evals/llm-event-conditions/`
 - AI 2027-2 scenario: `scenarios/ai-2027-2/`
-- Event condition documentation: `docs/creating-scenarios.md`
+- Event condition documentation: `docs/SCENARIO_TECHNICAL_REFERENCE.md`

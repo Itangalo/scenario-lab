@@ -4,6 +4,11 @@ This guide describes the recommended workflow for creating new scenarios in Scen
 
 Use this workflow for first versions. Expect to iterate.
 
+This document is process-oriented.  
+For file formats, schema rules, and parsing/validation contract, use:
+
+- `docs/SCENARIO_TECHNICAL_REFERENCE.md`
+
 ## Why This Workflow
 
 Scenario quality depends heavily on prompt/rule design and iterative calibration. A terminal AI agent helps by:
@@ -13,35 +18,21 @@ Scenario quality depends heavily on prompt/rule design and iterative calibration
 - enforcing technical completeness and validation
 - accelerating analysis-and-revision loops after test runs
 
-## Recommended Directory Setup
+## Setup
 
-Create a new scenario directory under `scenarios/`:
-
-```text
-scenarios/my-scenario/
-├── source-material/           # optional but recommended
-│   ├── reports/
-│   ├── policy/
-│   └── notes.md
-├── scenario.yaml
-├── metrics.md
-├── metric-rules.md
-├── events.md
-├── constitution.md            # optional
-└── background/
-    ├── context.md
-    └── actors/
-        ├── actor-a.md
-        └── actor-b.md
-```
+Create a new scenario directory under `scenarios/` and (optionally) add a `source-material/` folder.
 
 `source-material/` is raw input material for the agent (reports, policy docs, notes, transcripts, etc.), not executable instructions.
 
+All required scenario files and exact file/format rules are defined in:
+
+- `docs/SCENARIO_TECHNICAL_REFERENCE.md`
+
 ## Mandatory Interview Gate (Do Not Skip)
 
-Before drafting or editing scenario files, the agent must run an explicit interview step.
+Before drafting or editing technical scenario files, the agent must run an explicit interview step.
 
-The agent must not start writing `scenario.yaml`, `metrics.md`, `metric-rules.md`, `events.md`, or actor/context files until one of the following is true:
+The agent must not start drafting scenario content until one of the following is true:
 
 - the user has answered the core interview topics, or
 - the user explicitly approves that the agent proceeds with documented assumptions.

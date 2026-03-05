@@ -244,9 +244,10 @@ At a high level:
 
 The recommended workflow is to build new scenarios together with a terminal-based AI coding agent (for example Claude Code, OpenAI Codex, or Gemini CLI), then iterate based on test runs.
 
-For the full step-by-step process, see:
+Use the docs as separate sources of truth:
 
-- [docs/SCENARIO_CREATION_WITH_AGENT.md](docs/SCENARIO_CREATION_WITH_AGENT.md)
+- [docs/SCENARIO_CREATION_WITH_AGENT.md](docs/SCENARIO_CREATION_WITH_AGENT.md) (process/workflow)
+- [docs/SCENARIO_TECHNICAL_REFERENCE.md](docs/SCENARIO_TECHNICAL_REFERENCE.md) (technical format/specification)
 
 In short:
 
