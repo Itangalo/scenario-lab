@@ -12,12 +12,12 @@
 
 **Unit:** (dimensionless)
 
-**Starting value:** 72
+**Starting value:** 87
 
 **Reference points:**
 
-- **85:** The party-state apparatus functions as intended. Dissent is marginal and controlled. This was the norm in the Brezhnev era.
-- **72:** Early Gorbachev era. The system functions but stagnation is evident. Minor cracks in discipline.
+- **87:** Early Gorbachev era. The party-state apparatus is still firmly in control. Perestroika has been announced but not yet implemented. Stagnation is visible beneath the surface.
+- **75:** The party's grip is weakening. Institutional discipline is uneven. Reform pressures and hardliner resistance create visible fissures.
 - **55:** Significant institutional disagreements. Republics begin asserting autonomy. Central directives are unevenly followed.
 - **35:** The center struggles to govern. Multiple republics openly defy Moscow. Military and security forces are divided on loyalties.
 - **15:** The state is collapsing. Institutions no longer respond to central authority. Dissolution is imminent or underway.
@@ -34,12 +34,12 @@
 
 **Unit:** (dimensionless)
 
-**Starting value:** 65
+**Starting value:** 87
 
 **Reference points:**
 
-- **90:** Total alignment. Satellite states follow Moscow's directives without question. The Brezhnev Doctrine is credible and enforced.
-- **65:** Formal alignment holds but several states quietly pursue limited reforms. Moscow's willingness to intervene is uncertain.
+- **87:** Strong alignment. Satellite states follow Moscow's directives without serious challenge. The Brezhnev Doctrine is credible and has not been tested since 1968.
+- **70:** Formal alignment holds but several states quietly pursue limited reforms. Moscow's willingness to intervene is increasingly uncertain.
 - **45:** Open cracks. One or more states pursue reforms that Moscow disapproves of but tolerates. Others watch closely.
 - **25:** The bloc is fracturing. Multiple states pursue independent paths. The threat of Soviet intervention is no longer credible.
 - **10:** The bloc has effectively dissolved. Former satellite states are negotiating their own futures independently of Moscow.
@@ -56,7 +56,7 @@
 
 **Unit:** (dimensionless)
 
-**Starting value:** 70
+**Starting value:** 78
 
 **Reference points:**
 
@@ -100,12 +100,12 @@
 
 **Unit:** (dimensionless)
 
-**Starting value:** 25
+**Starting value:** 12
 
 **Reference points:**
 
-- **10:** Reform is suppressed or dormant. Opposition exists only underground. The status quo feels permanent.
-- **25:** Early reform signals. Gorbachev has announced intentions but concrete changes are limited. Dissidents are cautiously hopeful.
+- **12:** Reform is nascent. Gorbachev has taken power and signaled intentions, but concrete glasnost/perestroika changes are not yet visible. Dissidents remain mostly underground.
+- **25:** Early reform signals are becoming concrete. Press freedoms are expanding slightly. Opposition movements are testing limits carefully.
 - **45:** Reform is underway and visible. Press freedom is expanding, political prisoners are released, opposition movements are testing limits.
 - **65:** Reform has its own momentum. Multiple countries in the bloc are pursuing change. Events are moving faster than leaders can control.
 - **85:** Revolutionary change. The old order is collapsing. New institutions and movements are forming rapidly. The question is no longer whether the system changes, but what replaces it.

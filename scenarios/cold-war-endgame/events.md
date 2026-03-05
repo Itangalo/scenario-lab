@@ -64,7 +64,7 @@
 
 **ID:** hardliner_coup
 
-**Condition:** Requires reform_momentum >= 55 and soviet_stability <= 45
+**Condition:** Requires turn 9 or later, reform_momentum >= 55, and soviet_stability <= 45
 
 **Probability:** 12 percent per round when conditions are met, increasing to 25 percent when soviet_stability is below 30.
 
