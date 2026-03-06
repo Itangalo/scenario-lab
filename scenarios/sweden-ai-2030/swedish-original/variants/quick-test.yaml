@@ -1,7 +1,0 @@
-# Variant: Quick test with only 2 turns
-# Inherits from base, overrides turns and LLM
-
-base: cheap-with-fallback.yaml
-
-# Override number of turns for quick testing
-max_turns: 2
