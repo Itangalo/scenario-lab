@@ -201,8 +201,8 @@ def test_rules_step_retries_on_length_truncation(test_scenario):
     assert "## Rules" in output
 
 
-def test_rules_step_carries_forward_rules_when_policy_freezes_changes(test_scenario):
-    """Frozen turns should carry the previous rules forward if the model keeps rewriting them."""
+def test_rules_step_skips_llm_when_policy_freezes_changes(test_scenario):
+    """Frozen turns should skip the LLM and carry the previous rules forward directly."""
     test_scenario.config.rule_evolution.freeze_until_turn = 2
 
     class RewritingRulesClient:
@@ -246,9 +246,56 @@ def test_rules_step_carries_forward_rules_when_policy_freezes_changes(test_scena
 
     output = orchestrator._run_rules_step(turn=1, actor_outputs=actor_outputs, triggered_events=[])
 
-    assert rules_client.calls == 2
+    assert rules_client.calls == 0
     assert "- No material rule changes." in output
     assert orchestrator._extract_rules_content(output) == orchestrator._extract_rules_content(test_scenario.metric_rules)
+
+
+def test_rules_step_records_skip_metadata_when_frozen(test_scenario):
+    """Skipped frozen turns should emit explicit rules metadata."""
+    test_scenario.config.rule_evolution.freeze_until_turn = 1
+
+    class NeverCalledClient:
+        def __init__(self):
+            self.calls = 0
+            self.models = ["mock/model"]
+
+        def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
+            self.calls += 1
+            raise AssertionError("Rules LLM should not be called during frozen turns")
+
+        def close(self):
+            pass
+
+    class MetadataRecorder:
+        def __init__(self):
+            self.calls = []
+
+        def save_rules_metadata(self, turn: int, metadata: dict):
+            self.calls.append((turn, metadata))
+
+    rules_client = NeverCalledClient()
+    metadata_recorder = MetadataRecorder()
+    clients = {
+        "events": rules_client,
+        "actors": {},
+        "rules": rules_client,
+        "metrics": rules_client,
+        "summary": rules_client,
+        "referee": rules_client,
+    }
+
+    orchestrator = Orchestrator(test_scenario, llm_client=clients, output_manager=metadata_recorder)
+    actor_outputs = {actor_id: "No major action." for actor_id in test_scenario.actors}
+
+    output = orchestrator._run_rules_step(turn=1, actor_outputs=actor_outputs, triggered_events=[])
+
+    assert "- No material rule changes." in output
+    assert len(metadata_recorder.calls) == 1
+    saved_turn, metadata = metadata_recorder.calls[0]
+    assert saved_turn == 1
+    assert metadata["final_action"] == "skipped_due_to_freeze"
+    assert metadata["is_noop_update"] is True
 
 
 def test_constitutional_referee_requests_correction_before_approval(test_scenario):

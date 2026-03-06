@@ -505,19 +505,34 @@ class Orchestrator:
         """
         from .metric_rules import parse_versioned_rules, validate_rules_format, get_changelog_summary
 
+        if turn <= self.scenario.config.rule_evolution.freeze_until_turn:
+            print("  ⏭️  Rules step skipped due to freeze policy")
+            skipped_rules = self._build_noop_rules_update(turn)
+            parsed, warnings, parse_error = self._analyze_rules_output(skipped_rules, turn)
+            if parse_error is None and parsed is not None:
+                print("  📝 Rules changes: No material changes")
+                if self.output_manager:
+                    self.output_manager.save_rules_metadata(
+                        turn,
+                        {
+                            "version": parsed.version,
+                            "has_changelog": parsed.has_changelog,
+                            "changelog_entries": [],
+                            "format_warnings": warnings,
+                            "is_noop_update": parsed.is_noop_update,
+                            "final_action": "skipped_due_to_freeze",
+                            "policy": {
+                                "freeze_until_turn": self.scenario.config.rule_evolution.freeze_until_turn,
+                                "max_changes_per_turn": self.scenario.config.rule_evolution.max_changes_per_turn,
+                            },
+                        },
+                    )
+            return skipped_rules
+
         system, user = self.prompt_builder.build_rules_prompt(turn, actor_outputs, triggered_events)
         response = self.llm_clients["rules"].complete(system, user)
         self._record_llm_call(turn, "rules", response)
-
-        def _analyze_rules_output(raw_content: str) -> tuple[Optional[object], list[str], Optional[ValueError]]:
-            try:
-                parsed_rules = parse_versioned_rules(raw_content, turn)
-                _, parsed_warnings = validate_rules_format(raw_content, turn)
-                return parsed_rules, parsed_warnings, None
-            except ValueError as err:
-                return None, [], err
-
-        parsed, warnings, parse_error = _analyze_rules_output(response.content)
+        parsed, warnings, parse_error = self._analyze_rules_output(response.content, turn)
 
         should_retry_for_truncation = (
             response.get_finish_reason() == "length"
@@ -542,7 +557,7 @@ class Orchestrator:
             retry_response = self.llm_clients["rules"].complete(concise_system, concise_user)
             self._record_llm_call(turn, "rules:concise_retry", retry_response)
 
-            retry_parsed, retry_warnings, retry_parse_error = _analyze_rules_output(retry_response.content)
+            retry_parsed, retry_warnings, retry_parse_error = self._analyze_rules_output(retry_response.content, turn)
             if retry_parse_error is None and "Rules content is empty or too short" not in retry_warnings:
                 response = retry_response
                 parsed = retry_parsed
@@ -567,7 +582,7 @@ class Orchestrator:
             )
             retry_response = self.llm_clients["rules"].complete(strict_system, strict_user)
             self._record_llm_call(turn, "rules:policy_retry", retry_response)
-            retry_parsed, retry_warnings, retry_parse_error = _analyze_rules_output(retry_response.content)
+            retry_parsed, retry_warnings, retry_parse_error = self._analyze_rules_output(retry_response.content, turn)
             retry_policy_violations = self._validate_rule_update_policy(turn, retry_parsed)
             if retry_parse_error is None and retry_parsed is not None and not retry_policy_violations:
                 response = retry_response
@@ -580,7 +595,7 @@ class Orchestrator:
                     content=self._build_noop_rules_update(turn),
                     raw_response={"model": "policy-fallback/noop-rules"},
                 )
-                parsed, warnings, parse_error = _analyze_rules_output(response.content)
+                parsed, warnings, parse_error = self._analyze_rules_output(response.content, turn)
 
         # Parse and validate versioned rules
         try:
@@ -611,6 +626,9 @@ class Orchestrator:
                     ],
                     "format_warnings": warnings,
                     "is_noop_update": parsed.is_noop_update,
+                    "final_action": "updated"
+                    if not parsed.is_noop_update
+                    else "carried_forward",
                     "policy": {
                         "freeze_until_turn": self.scenario.config.rule_evolution.freeze_until_turn,
                         "max_changes_per_turn": self.scenario.config.rule_evolution.max_changes_per_turn,
@@ -622,6 +640,19 @@ class Orchestrator:
             print(f"  Continuing with raw content...")
 
         return response.content
+
+    def _analyze_rules_output(
+        self, raw_content: str, turn: int
+    ) -> tuple[Optional[object], list[str], Optional[ValueError]]:
+        """Parse and validate versioned rules output."""
+        from .metric_rules import parse_versioned_rules, validate_rules_format
+
+        try:
+            parsed_rules = parse_versioned_rules(raw_content, turn)
+            _, parsed_warnings = validate_rules_format(raw_content, turn)
+            return parsed_rules, parsed_warnings, None
+        except ValueError as err:
+            return None, [], err
 
     def _validate_rule_update_policy(self, turn: int, parsed_rules: Optional[object]) -> list[str]:
         """Check whether a rules update complies with scenario rule-evolution guardrails."""

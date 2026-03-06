@@ -93,6 +93,7 @@ Each turn executes the following steps in order:
     - Motivation for each change (grounded in simulation state)
     - Expected impact on future metrics
     - Or an explicit no-op changelog entry when the prior rules still hold
+  * **Freeze Handling:** If `turn <= rule_evolution.freeze_until_turn`, the orchestrator skips the rules LLM call entirely, writes a versioned carry-forward rules file with `No material rule changes.`, and records metadata indicating that the step was skipped due to freeze policy.
   * **Sanity Check:** Optional validation step to check for:
     - Complete and accurate changelog
     - Internal consistency (no contradictory rules)
@@ -101,7 +102,7 @@ Each turn executes the following steps in order:
   * **Parser Tolerance:** The Python parser remains formatting-oriented, but tolerates common LLM presentation noise such as an outer fenced Markdown code block and parenthetical annotations after changelog rule names (for example, "`rule_name` (rule 2)").
   * **No-op Parsing:** The parser also accepts changelog sections that explicitly say `No material rule changes.` and treats them as valid carry-forward updates rather than malformed changelogs.
   * **Length Handling:** If rules output is truncated (`finish_reason=length`) or missing complete rules content, the orchestrator retries once with a concise-output instruction set to recover a complete `## Rules` section.
-  * **Policy Handling:** If the rules output violates configured rule-evolution guardrails, the orchestrator retries once with stricter instructions. If it still fails, the orchestrator carries the previous rules forward in a new versioned wrapper instead of accepting a broad rewrite that the scenario disallows.
+  * **Policy Handling:** Outside frozen turns, if the rules output violates configured rule-evolution guardrails, the orchestrator retries once with stricter instructions. If it still fails, the orchestrator carries the previous rules forward in a new versioned wrapper instead of accepting a broad rewrite that the scenario disallows.
 
 4. **Metrics Step**:
   * **Input:** World state, triggered events, actor actions, updated rules.
