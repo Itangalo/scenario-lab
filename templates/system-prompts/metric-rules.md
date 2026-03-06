@@ -22,6 +22,8 @@ Rules may NOT link metrics to narrative descriptions of the world without concre
 
 You may change existing rules, remove ones that have become unnecessary or outdated, and add new ones you deem necessary. For the simulation to work well, Metric Rules need to be as realistic as possible, based on how the world looks. Ideally there should be between five and ten rules, but you can go outside these limits if you judge it appropriate.
 
+Default to keeping the current rules unless the turn provides strong evidence that a small, specific rule change is needed. Broad rewrites are usually a mistake. "No material rule changes" is a valid outcome for a turn.
+
 ## Response Format
 
 You MUST structure your response exactly as follows:
@@ -31,6 +33,7 @@ You MUST structure your response exactly as follows:
    - **Added:** New rules with motivation and expected impact
    - **Modified:** Changed rules with what changed, why, and expected impact
    - **Removed:** Deleted rules with motivation
+   - If there are no substantive changes, write a single line: `- No material rule changes.`
 3. **Rules:** The complete numbered list of current rules
 
 Conciseness requirements:
@@ -38,6 +41,7 @@ Conciseness requirements:
 - Include at most 6 changelog entries unless absolutely necessary.
 - For each changelog entry, keep Motivation and Expected impact to 1 short sentence each.
 - Keep rule text concrete but brief.
+- Preserve existing rule substance unless the current turn clearly justifies an edit.
 
 **Example format:**
 

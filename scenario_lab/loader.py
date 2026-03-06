@@ -10,6 +10,8 @@ from .models import (
     Scenario,
     ScenarioConfig,
     LLMConfig,
+    RuleEvolutionConfig,
+    ConstitutionalEnforcementConfig,
     Metric,
     Metrics,
     Event,
@@ -286,6 +288,14 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "max_tokens": base_config.llm.max_tokens,
                     "max_tokens_by_task": base_config.llm.max_tokens_by_task,
                 },
+                "rule_evolution": {
+                    "freeze_until_turn": base_config.rule_evolution.freeze_until_turn,
+                    "max_changes_per_turn": base_config.rule_evolution.max_changes_per_turn,
+                },
+                "constitutional_enforcement": {
+                    "max_attempts": base_config.constitutional_enforcement.max_attempts,
+                    "on_failure": base_config.constitutional_enforcement.on_failure,
+                },
             }
 
         # Merge configurations (override wins)
@@ -322,6 +332,18 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
         )
 
+    rule_evolution_data = data.get("rule_evolution", {})
+    rule_evolution = RuleEvolutionConfig(
+        freeze_until_turn=rule_evolution_data.get("freeze_until_turn", 0),
+        max_changes_per_turn=rule_evolution_data.get("max_changes_per_turn", 6),
+    )
+
+    constitutional_data = data.get("constitutional_enforcement", {})
+    constitutional_enforcement = ConstitutionalEnforcementConfig(
+        max_attempts=constitutional_data.get("max_attempts", 2),
+        on_failure=constitutional_data.get("on_failure", "accept_with_violations"),
+    )
+
     return ScenarioConfig(
         name=data["name"],
         description=data["description"],
@@ -331,6 +353,8 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         actor_ids=data["actors"],
         output_language=data.get("output_language"),
         llm=llm_config,
+        rule_evolution=rule_evolution,
+        constitutional_enforcement=constitutional_enforcement,
     )
 
 

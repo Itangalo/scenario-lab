@@ -201,6 +201,56 @@ def test_rules_step_retries_on_length_truncation(test_scenario):
     assert "## Rules" in output
 
 
+def test_rules_step_carries_forward_rules_when_policy_freezes_changes(test_scenario):
+    """Frozen turns should carry the previous rules forward if the model keeps rewriting them."""
+    test_scenario.config.rule_evolution.freeze_until_turn = 2
+
+    class RewritingRulesClient:
+        def __init__(self):
+            self.calls = 0
+            self.models = ["mock/model"]
+
+        def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
+            self.calls += 1
+            return LLMResponse(
+                content=(
+                    "# Metric Rules v2 (Turn 1)\n\n"
+                    "## Changelog from v1\n\n"
+                    "- **Modified:** `growth_rule`\n"
+                    "  - **Change:** Increase baseline growth sharply.\n"
+                    "  - **Motivation:** Momentum is rising.\n"
+                    "  - **Expected impact:** Faster metric movement.\n\n"
+                    "## Rules\n\n"
+                    "1. ai_capability increases by 25% every six months.\n"
+                    "2. ai_adoption_sweden increases by 3 points every six months.\n"
+                    "3. Unemployment changes with a 1 turn lag behind adoption shifts.\n"
+                ),
+                raw_response={"choices": [{"finish_reason": "stop"}], "model": "mock/model"},
+            )
+
+        def close(self):
+            pass
+
+    rules_client = RewritingRulesClient()
+    clients = {
+        "events": rules_client,
+        "actors": {},
+        "rules": rules_client,
+        "metrics": rules_client,
+        "summary": rules_client,
+        "referee": rules_client,
+    }
+
+    orchestrator = Orchestrator(test_scenario, llm_client=clients)
+    actor_outputs = {actor_id: "No major action." for actor_id in test_scenario.actors}
+
+    output = orchestrator._run_rules_step(turn=1, actor_outputs=actor_outputs, triggered_events=[])
+
+    assert rules_client.calls == 2
+    assert "- No material rule changes." in output
+    assert orchestrator._extract_rules_content(output) == orchestrator._extract_rules_content(test_scenario.metric_rules)
+
+
 def test_constitutional_referee_requests_correction_before_approval(test_scenario):
     """A referee violation should trigger one correction pass before final approval."""
 
@@ -293,6 +343,78 @@ The rollout is phased in over time, so unemployment rises more gradually while t
             "violations": "- Budget increase is too large for one turn.\n- Hiring ramp exceeds capacity.",
         }
     ]
+
+
+def test_constitutional_referee_can_keep_previous_state_on_failure(test_scenario):
+    """Configured fallback should keep the previous state instead of accepting violations."""
+    test_scenario.config.constitutional_enforcement.on_failure = "keep_previous"
+
+    class SequenceClient:
+        def __init__(self, contents: list[str]):
+            self.contents = contents
+            self.calls = 0
+            self.models = ["mock/model"]
+
+        def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
+            if self.calls >= len(self.contents):
+                raise AssertionError("Client received more calls than expected")
+            content = self.contents[self.calls]
+            self.calls += 1
+            return LLMResponse(content=content, raw_response={"model": "mock/model"})
+
+        def close(self):
+            pass
+
+    class MetadataRecorder:
+        def __init__(self):
+            self.calls = []
+
+        def save_constitutional_metadata(self, turn: int, metadata: dict):
+            self.calls.append((turn, metadata))
+
+    referee_client = SequenceClient(
+        [
+            "VIOLATIONS:\n- Organizational constraint violated.",
+            "VIOLATIONS:\n- Organizational constraint still violated.",
+        ]
+    )
+    correction_client = SequenceClient(
+        [
+            """## Metrics
+
+```json
+{"ai_capability": 12, "ai_adoption_sweden": 55, "unemployment": 15, "public_sentiment_to_ai": 1}
+```
+
+## Narrative
+
+Implementation surges ahead immediately despite limited capacity."""
+        ]
+    )
+    metadata_recorder = MetadataRecorder()
+    clients = {
+        "events": correction_client,
+        "actors": {},
+        "rules": correction_client,
+        "metrics": correction_client,
+        "summary": correction_client,
+        "referee": referee_client,
+    }
+
+    orchestrator = Orchestrator(test_scenario, llm_client=clients, output_manager=metadata_recorder)
+
+    previous_metrics = {metric_id: metric.value for metric_id, metric in test_scenario.metrics.metrics.items()}
+    previous_narrative = test_scenario.world_state.narrative
+
+    final_metrics, final_narrative = orchestrator._run_constitutional_referee_step(
+        turn=2,
+        proposed_metrics={"ai_capability": 12, "ai_adoption_sweden": 55, "unemployment": 15, "public_sentiment_to_ai": 1},
+        narrative="Immediate nationwide scaling succeeds.",
+    )
+
+    assert final_metrics == previous_metrics
+    assert final_narrative == previous_narrative
+    assert metadata_recorder.calls[0][1]["final_action"] == "kept_previous_state"
 
 
 def test_constitutional_referee_records_parse_error_metadata(test_scenario):

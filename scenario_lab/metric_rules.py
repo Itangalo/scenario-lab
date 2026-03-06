@@ -26,6 +26,7 @@ class VersionedRules:
     changelog_entries: list[RulesChangelog]
     rules_content: str  # The actual rules section
     has_changelog: bool
+    is_noop_update: bool = False
 
 
 def _strip_surrounding_code_fence(content: str) -> str:
@@ -77,6 +78,7 @@ def parse_versioned_rules(content: str, expected_turn: int) -> VersionedRules:
     # Extract changelog section if present
     changelog_entries = []
     has_changelog = False
+    is_noop_update = False
 
     if not is_initial:
         # Look for changelog section
@@ -89,6 +91,9 @@ def parse_versioned_rules(content: str, expected_turn: int) -> VersionedRules:
         if changelog_match:
             has_changelog = True
             changelog_content = changelog_match.group(2)
+            is_noop_update = bool(
+                re.search(r"(?:^|\n)\s*-?\s*No material rule changes\.?", changelog_content, re.IGNORECASE)
+            )
             changelog_entries = _parse_changelog_content(changelog_content)
         else:
             # Changelog should be present for non-initial versions
@@ -116,6 +121,7 @@ def parse_versioned_rules(content: str, expected_turn: int) -> VersionedRules:
         changelog_entries=changelog_entries,
         rules_content=rules_content,
         has_changelog=has_changelog,
+        is_noop_update=is_noop_update,
     )
 
 
@@ -128,6 +134,9 @@ def _parse_changelog_content(changelog_text: str) -> list[RulesChangelog]:
     Returns:
         List of RulesChangelog entries
     """
+    if re.search(r"(?:^|\n)\s*-?\s*No material rule changes\.?", changelog_text, re.IGNORECASE):
+        return []
+
     entries = []
 
     # Match patterns like:
@@ -136,10 +145,10 @@ def _parse_changelog_content(changelog_text: str) -> list[RulesChangelog]:
     #   - **Motivation:** why
     #   - **Expected impact:** impact
     entry_pattern = re.compile(
-        r"-\s*\*\*(Added|Modified|Removed):\*\*\s*"
+        r"(?:^|\n)\s*-?\s*\*\*(Added|Modified|Removed):\*\*\s*"
         r"(?:`([^`\n]+)`|([^\n(]+?))"
         r"\s*(?:\([^)\n]*\))?\s*\n"
-        r"((?:.*?\n)*?)(?=-\s*\*\*(?:Added|Modified|Removed)|\Z)",
+        r"((?:.*?\n)*?)(?=(?:\n\s*-?\s*\*\*(?:Added|Modified|Removed))|\Z)",
         re.IGNORECASE | re.DOTALL,
     )
 
@@ -154,14 +163,24 @@ def _parse_changelog_content(changelog_text: str) -> list[RulesChangelog]:
         expected_impact = None
 
         # Look for **Rule:**, **Change:**, **Motivation:**, **Expected impact:**
-        if change_match := re.search(r"\*\*(?:Rule|Change):\*\*\s*(.*?)(?=\n\s*-\s*\*\*|\Z)", details, re.DOTALL):
+        if change_match := re.search(
+            r"(?:^|\n)\s*-?\s*\*\*(?:Rule|Change):\*\*\s*(.*?)(?=\n\s*-?\s*\*\*|\Z)",
+            details,
+            re.DOTALL,
+        ):
             change_desc = change_match.group(1).strip()
 
-        if motivation_match := re.search(r"\*\*Motivation:\*\*\s*(.*?)(?=\n\s*-\s*\*\*|\Z)", details, re.DOTALL):
+        if motivation_match := re.search(
+            r"(?:^|\n)\s*-?\s*\*\*Motivation:\*\*\s*(.*?)(?=\n\s*-?\s*\*\*|\Z)",
+            details,
+            re.DOTALL,
+        ):
             motivation = motivation_match.group(1).strip()
 
         if impact_match := re.search(
-            r"\*\*Expected impact:\*\*\s*(.*?)(?=\n\s*-\s*\*\*|\Z)", details, re.DOTALL
+            r"(?:^|\n)\s*-?\s*\*\*Expected impact:\*\*\s*(.*?)(?=\n\s*-?\s*\*\*|\Z)",
+            details,
+            re.DOTALL,
         ):
             expected_impact = impact_match.group(1).strip()
 
@@ -204,7 +223,7 @@ def validate_rules_format(content: str, expected_turn: int) -> tuple[bool, list[
             )
 
         # Check that changelog has entries if present
-        if parsed.has_changelog and len(parsed.changelog_entries) == 0:
+        if parsed.has_changelog and len(parsed.changelog_entries) == 0 and not parsed.is_noop_update:
             warnings.append("Changelog section present but no parseable entries found")
 
         # Check that rules content is not empty
@@ -233,6 +252,9 @@ def get_changelog_summary(parsed: VersionedRules) -> str:
     Returns:
         Summary string
     """
+    if parsed.is_noop_update:
+        return "No material changes"
+
     if not parsed.has_changelog or not parsed.changelog_entries:
         return "No changes"
 

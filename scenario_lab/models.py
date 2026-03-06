@@ -163,6 +163,22 @@ class LLMConfig:
 
 
 @dataclass
+class RuleEvolutionConfig:
+    """Guardrails for how freely metric rules may evolve."""
+
+    freeze_until_turn: int = 0
+    max_changes_per_turn: int = 6
+
+
+@dataclass
+class ConstitutionalEnforcementConfig:
+    """Guardrails for how constitutional referee failures are handled."""
+
+    max_attempts: int = 2
+    on_failure: str = "accept_with_violations"
+
+
+@dataclass
 class ScenarioConfig:
     """Scenario configuration with optional inheritance."""
 
@@ -176,6 +192,10 @@ class ScenarioConfig:
 
     # LLM settings
     llm: LLMConfig = None
+    rule_evolution: RuleEvolutionConfig = field(default_factory=RuleEvolutionConfig)
+    constitutional_enforcement: ConstitutionalEnforcementConfig = field(
+        default_factory=ConstitutionalEnforcementConfig
+    )
 
     # Inheritance (set during loading, not in YAML)
     base: Optional[str] = None  # Path to base scenario (relative to current)

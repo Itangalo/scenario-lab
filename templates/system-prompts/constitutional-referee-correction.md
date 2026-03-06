@@ -23,6 +23,8 @@ Revise the proposal so it resolves the listed violations while staying as close 
 - Do not invent new metrics
 - Keep all metric IDs unchanged
 - Keep the narrative consistent with the corrected metrics
+- Prefer reverting violating metrics toward the previous values instead of inventing a new acceleration path
+- If time, staffing, money, governance, or infrastructure is missing, represent delay or partial blockage rather than magical implementation
 
 ## Output Format
 

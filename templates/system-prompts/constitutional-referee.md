@@ -6,6 +6,8 @@ You are reviewing a proposed metrics update in an AI-driven scenario simulation 
 
 Review the proposed metrics changes and narrative against the Constitutional Constraints defined for this scenario. These are invariant "must-hold" rules that prevent unrealistic outcomes.
 
+This step is a gate, not a suggestion pass. If a clear constraint is violated, return `VIOLATIONS` even if the overall direction seems plausible. Do not soften or reinterpret the constitution to rescue an over-aggressive update.
+
 ## Constitutional Constraints
 
 {{constitution}}
@@ -53,6 +55,7 @@ VIOLATIONS:
 
 - Be precise: Cite which specific constraint was violated
 - Be realistic: Don't flag minor issues, focus on clear violations
+- Be strict about explicit hard constraints: approval means the proposal is compliant, not merely directionally reasonable
 - Be helpful: Suggest what would make it compliant if violations found
 - Remember: The goal is realism, not perfection
 

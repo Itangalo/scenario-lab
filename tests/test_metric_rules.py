@@ -104,6 +104,51 @@ def test_parse_versioned_update_with_bare_changelog_header():
     assert warnings == []
 
 
+def test_parse_versioned_update_with_noop_changelog():
+    """A no-op changelog should be accepted as a valid carry-forward update."""
+    content = """# Metric Rules v3 (Turn 4)
+
+## Changelog from v2
+
+- No material rule changes.
+  - **Motivation:** The prior rule set still matches the world.
+  - **Expected impact:** Metric dynamics continue under the prior rules.
+
+## Rules
+
+1. ai_capability increases by 50% every six months
+"""
+    parsed = parse_versioned_rules(content, expected_turn=4)
+    is_valid, warnings = validate_rules_format(content, expected_turn=4)
+
+    assert parsed.has_changelog
+    assert parsed.is_noop_update
+    assert parsed.changelog_entries == []
+    assert is_valid
+    assert warnings == []
+
+
+def test_parse_versioned_update_with_unbulleted_entries():
+    """Parser should tolerate changelog entries written without leading dashes."""
+    content = """# Metric Rules v2 (Turn 3)
+
+## Changelog from v1
+
+**Modified:** `ai_capability_growth`
+**Change:** Reduced growth rate from doubles to +50%
+**Motivation:** Compute constraints
+**Expected impact:** Slower AI progress
+
+## Rules
+
+1. ai_capability increases by 50% every six months
+"""
+    parsed = parse_versioned_rules(content, expected_turn=3)
+
+    assert len(parsed.changelog_entries) == 1
+    assert parsed.changelog_entries[0].rule_name == "ai_capability_growth"
+
+
 def test_parse_missing_header():
     """Test that missing header raises error."""
     content = """Some rules without proper header
@@ -207,6 +252,7 @@ def test_get_changelog_summary_no_changes():
         changelog_entries=[],
         rules_content="",
         has_changelog=False,
+        is_noop_update=False,
     )
 
     summary = get_changelog_summary(parsed)
@@ -229,6 +275,7 @@ def test_get_changelog_summary_mixed_changes():
         ],
         rules_content="",
         has_changelog=True,
+        is_noop_update=False,
     )
 
     summary = get_changelog_summary(parsed)

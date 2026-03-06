@@ -41,6 +41,14 @@ def setup_scenarios(tmp_path):
         "time_scale": "1 month",
         "max_turns": 10,
         "actors": ["actor1"],
+        "rule_evolution": {
+            "freeze_until_turn": 2,
+            "max_changes_per_turn": 3,
+        },
+        "constitutional_enforcement": {
+            "max_attempts": 3,
+            "on_failure": "keep_previous",
+        },
         "llm": {
             "temperature": 0.7,
             "events": "model-base",
@@ -106,6 +114,10 @@ def test_scenario_inheritance(setup_scenarios):
     assert config.llm.temperature == 0.7
     assert config.llm.actors == "model-base"
     assert config.llm.summary == "model-summary-base"
+    assert config.rule_evolution.freeze_until_turn == 2
+    assert config.rule_evolution.max_changes_per_turn == 3
+    assert config.constitutional_enforcement.max_attempts == 3
+    assert config.constitutional_enforcement.on_failure == "keep_previous"
     
     # Check overridden properties
     assert config.max_turns == 5

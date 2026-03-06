@@ -15,3 +15,5 @@ Review the following metrics update for Turn {{turn}} ({{time_period}}).
 ---
 
 Check if this update respects all Constitutional Constraints. Respond with either "APPROVED" or "VIOLATIONS: [list specific violations]".
+
+Treat approval as a hard gate. If an explicit constraint is broken, do not wave it through because the broader narrative feels reasonable.

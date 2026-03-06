@@ -549,6 +549,39 @@ class Orchestrator:
                 warnings = retry_warnings
                 parse_error = retry_parse_error
 
+        policy_violations = self._validate_rule_update_policy(turn, parsed)
+        if parse_error is None and parsed is not None and policy_violations:
+            print("  ⚠️  Rules policy violation detected, retrying with stricter constraints...")
+            strict_system = (
+                system
+                + "\n\nRule-evolution policy is binding. Prefer carrying the previous rules forward unchanged "
+                + "unless the prompt explicitly justifies a small, necessary edit."
+            )
+            strict_user = (
+                user
+                + "\n\nSTRICT RULE EVOLUTION POLICY:\n"
+                + "\n".join(f"- {violation}" for violation in policy_violations)
+                + "\n- If the policy forbids substantive changes this turn, keep the rules materially identical."
+                + "\n- In that case, use a changelog line that says `- No material rule changes.`"
+                + "\n- Do not broaden, relax, or rewrite the rule system."
+            )
+            retry_response = self.llm_clients["rules"].complete(strict_system, strict_user)
+            self._record_llm_call(turn, "rules:policy_retry", retry_response)
+            retry_parsed, retry_warnings, retry_parse_error = _analyze_rules_output(retry_response.content)
+            retry_policy_violations = self._validate_rule_update_policy(turn, retry_parsed)
+            if retry_parse_error is None and retry_parsed is not None and not retry_policy_violations:
+                response = retry_response
+                parsed = retry_parsed
+                warnings = retry_warnings
+                parse_error = retry_parse_error
+            else:
+                print("  ⚠️  Rules output still violated policy, carrying forward previous rules")
+                response = LLMResponse(
+                    content=self._build_noop_rules_update(turn),
+                    raw_response={"model": "policy-fallback/noop-rules"},
+                )
+                parsed, warnings, parse_error = _analyze_rules_output(response.content)
+
         # Parse and validate versioned rules
         try:
             if parse_error is not None or parsed is None:
@@ -577,6 +610,11 @@ class Orchestrator:
                         for entry in parsed.changelog_entries
                     ],
                     "format_warnings": warnings,
+                    "is_noop_update": parsed.is_noop_update,
+                    "policy": {
+                        "freeze_until_turn": self.scenario.config.rule_evolution.freeze_until_turn,
+                        "max_changes_per_turn": self.scenario.config.rule_evolution.max_changes_per_turn,
+                    },
                 })
 
         except ValueError as e:
@@ -584,6 +622,71 @@ class Orchestrator:
             print(f"  Continuing with raw content...")
 
         return response.content
+
+    def _validate_rule_update_policy(self, turn: int, parsed_rules: Optional[object]) -> list[str]:
+        """Check whether a rules update complies with scenario rule-evolution guardrails."""
+        if parsed_rules is None:
+            return []
+
+        policy = self.scenario.config.rule_evolution
+        violations: list[str] = []
+        previous_rules_content = self._extract_rules_content(self.scenario.metric_rules)
+        new_rules_content = self._extract_rules_content(parsed_rules.full_content)
+
+        if turn <= policy.freeze_until_turn:
+            if not parsed_rules.is_noop_update:
+                violations.append(
+                    f"Turn {turn} is within the freeze window through turn {policy.freeze_until_turn}; "
+                    "the changelog must state that no material rule changes were made."
+                )
+            if self._normalize_rules_text(previous_rules_content) != self._normalize_rules_text(new_rules_content):
+                violations.append("Frozen turns must keep the substantive rules unchanged.")
+
+        if not parsed_rules.is_noop_update and len(parsed_rules.changelog_entries) > policy.max_changes_per_turn:
+            violations.append(
+                f"This turn changed {len(parsed_rules.changelog_entries)} rules, exceeding the configured limit "
+                f"of {policy.max_changes_per_turn}."
+            )
+
+        return violations
+
+    def _extract_rules_content(self, content: str) -> str:
+        """Extract the substantive rules section from versioned rules markdown."""
+        rules_match = re.search(r"##\s*Rules\s*\n(.*)", content, re.DOTALL | re.IGNORECASE)
+        if rules_match:
+            return rules_match.group(1).strip()
+        return content.strip()
+
+    def _normalize_rules_text(self, content: str) -> str:
+        """Normalize rules text for policy comparisons."""
+        return re.sub(r"\s+", " ", content).strip().lower()
+
+    def _build_noop_rules_update(self, turn: int) -> str:
+        """Carry forward the previous rule set with a no-change changelog."""
+        version_match = re.search(
+            r"#\s*Metric\s+Rules\s+v(\d+)",
+            self.scenario.metric_rules,
+            re.IGNORECASE,
+        )
+        previous_version = int(version_match.group(1)) if version_match else max(turn - 1, 1)
+        rules_content = self._extract_rules_content(self.scenario.metric_rules)
+        freeze_until = self.scenario.config.rule_evolution.freeze_until_turn
+        if turn <= freeze_until:
+            motivation = (
+                f"Rule evolution is frozen through turn {freeze_until}, so the prior rule set remains in force."
+            )
+        else:
+            motivation = "No strong evidence justified a substantive rule change this turn."
+
+        return (
+            f"# Metric Rules v{previous_version + 1} (Turn {turn})\n\n"
+            f"## Changelog from v{previous_version}\n\n"
+            "- No material rule changes.\n"
+            f"  - **Motivation:** {motivation}\n"
+            "  - **Expected impact:** Metric dynamics continue under the prior rule set.\n\n"
+            "## Rules\n\n"
+            f"{rules_content}\n"
+        )
 
     def _run_metrics_step(
         self, turn: int, actor_outputs: dict[str, str], triggered_events: list[dict]
@@ -649,7 +752,8 @@ class Orchestrator:
         previous_metrics = {m.id: m.value for m in self.scenario.metrics.metrics.values()}
 
         violations_log = []
-        max_iterations = 2
+        max_iterations = self.scenario.config.constitutional_enforcement.max_attempts
+        on_failure = self.scenario.config.constitutional_enforcement.on_failure
 
         def _normalize_referee_result(raw_result: str) -> str:
             stripped = raw_result.strip()
@@ -717,21 +821,27 @@ class Orchestrator:
                         turn, previous_metrics, proposed_metrics, narrative, violations
                     )
                     if corrected is None:
-                        print("  ⚠️  Correction could not be parsed, continuing with current proposal")
+                        print("  ⚠️  Correction could not be parsed")
+                        final_metrics, final_narrative, final_action = self._apply_constitutional_failure_policy(
+                            previous_metrics, proposed_metrics, narrative
+                        )
                         if self.output_manager:
                             metadata = {
                                 "status": "violations_found",
                                 "iterations": iteration + 1,
                                 "violations_found": violations_log,
-                                "final_action": "accepted_with_violations",
+                                "final_action": final_action,
                             }
                             self.output_manager.save_constitutional_metadata(turn, metadata)
-                        break
+                        return final_metrics, final_narrative
 
                     proposed_metrics, narrative = corrected
                     continue
                 else:
-                    print(f"  ⚠️  Max correction attempts reached, continuing with proposed metrics")
+                    print(f"  ⚠️  Max correction attempts reached")
+                    final_metrics, final_narrative, final_action = self._apply_constitutional_failure_policy(
+                        previous_metrics, proposed_metrics, narrative
+                    )
 
                     # Save metadata
                     if self.output_manager:
@@ -739,11 +849,11 @@ class Orchestrator:
                             "status": "max_attempts_reached",
                             "iterations": iteration + 1,
                             "violations_found": violations_log,
-                            "final_action": "accepted_with_violations",
+                            "final_action": final_action,
                         }
                         self.output_manager.save_constitutional_metadata(turn, metadata)
 
-                    break
+                    return final_metrics, final_narrative
             else:
                 print(f"  ⚠️  Unexpected referee response format: {result[:100]}...")
 
@@ -761,6 +871,21 @@ class Orchestrator:
                 break
 
         return proposed_metrics, narrative
+
+    def _apply_constitutional_failure_policy(
+        self,
+        previous_metrics: dict,
+        proposed_metrics: dict,
+        narrative: str,
+    ) -> tuple[dict, str, str]:
+        """Apply configured fallback when the referee cannot obtain a compliant update."""
+        on_failure = self.scenario.config.constitutional_enforcement.on_failure
+        if on_failure == "keep_previous":
+            print("  ↩️  Keeping previous state because no compliant update was produced")
+            return previous_metrics, self.scenario.world_state.narrative, "kept_previous_state"
+
+        print("  ⚠️  Continuing with proposed metrics despite remaining violations")
+        return proposed_metrics, narrative, "accepted_with_violations"
 
     def _request_constitutional_correction(
         self,

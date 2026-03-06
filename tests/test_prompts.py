@@ -89,3 +89,20 @@ def test_specific_actor_override_precedence(mock_scenario):
     # actor2 should get generic
     prompt2 = builder._get_system_prompt("actor", "actor2")
     assert "Generic Prompt" in prompt2
+
+
+def test_rules_prompt_includes_rule_evolution_policy(mock_scenario):
+    """Rules prompts should include the active rule-evolution guardrails."""
+    mock_scenario.config.rule_evolution.freeze_until_turn = 2
+    mock_scenario.config.rule_evolution.max_changes_per_turn = 1
+
+    builder = PromptBuilder(mock_scenario)
+    system_prompt, user_prompt = builder.build_rules_prompt(
+        turn=1,
+        actor_actions={"actor1": "Action 1", "actor2": "Action 2"},
+        triggered_events=[],
+    )
+
+    assert "No material rule changes" in system_prompt
+    assert "Substantive rule changes are not allowed before turn 3" in user_prompt
+    assert "Maximum substantive rule changes this turn: 1" in user_prompt

@@ -23,6 +23,7 @@ V4 represents a radical simplification from previous versions. Instead of comple
 - **Definition:** Quantitative rules describing how metrics change over time or in relation to each other.
 - **Examples:** "ai_capability doubles every 6 months", "high unemployment decreases public_sentiment".
 - **Evolution:** The LLM reviews and updates these rules *every turn* based on world events. This allows the "physics" of the simulation to evolve.
+- **Guardrails:** Rule evolution can be constrained per scenario via `rule_evolution` config. Scenarios may freeze substantive rule changes through an early turn window and cap the number of allowed changes per turn. When a turn should not materially change the rules, the intended output is a version bump plus a changelog line stating `No material rule changes.`
 - **Versioning:** Each rules update increments a version number (v1, v2, v3...) to track rule evolution over time.
 - **Changelog:** All rule modifications require a structured changelog documenting:
   * **What changed** (Added/Modified/Removed rules)
@@ -55,6 +56,7 @@ V4 represents a radical simplification from previous versions. Instead of comple
   * Physical: "Compute/hardware has supply constraints"
 - **Format:** Optional `constitution.md` file per scenario with 5-15 short, clear constraints.
 - **Enforcement:** Lightweight LLM-based "referee" step that validates metrics updates against the constitution.
+- **Fallback Policy:** Constitutional enforcement can be configured per scenario via `constitutional_enforcement`, including maximum referee attempts and whether unresolved violations should be accepted or fall back to the previous state.
 - **Philosophy:** Maintains pure LLM architecture while preventing common failure modes (instant budgets, magical scaling, etc.).
 
 ## 3. System Architecture
@@ -63,6 +65,8 @@ V4 represents a radical simplification from previous versions. Instead of comple
 - **`scenario.yaml`**: Configuration (time scale, actors, LLM settings, output language).
   * **LLM Settings:** Includes per-task model configuration (`events`, `actors`, `rules`, `metrics`, `summary`, `referee`).
   * **Token Budgets:** Supports global `llm.max_tokens` plus optional per-task overrides via `llm.max_tokens_by_task` (for example, higher cap for `rules` to reduce truncation).
+  * **Rule Evolution Policy:** Optional `rule_evolution.freeze_until_turn` and `rule_evolution.max_changes_per_turn` let scenarios make early rules effectively fixed and keep later rule edits small.
+  * **Constitutional Enforcement Policy:** Optional `constitutional_enforcement.max_attempts` and `constitutional_enforcement.on_failure` tune how hard the referee gate is.
 - **Markdown Resources**: `metrics.md`, `events.md`, `metric-rules.md`, `background/*.md`.
 - **Optional Resources**:
   * `constitution.md`: Constitutional constraints (invariant rules) for the scenario.
@@ -88,12 +92,16 @@ Each turn executes the following steps in order:
     - Complete changelog documenting all Added/Modified/Removed rules
     - Motivation for each change (grounded in simulation state)
     - Expected impact on future metrics
+    - Or an explicit no-op changelog entry when the prior rules still hold
   * **Sanity Check:** Optional validation step to check for:
     - Complete and accurate changelog
     - Internal consistency (no contradictory rules)
     - Grounding in narrative/metrics/events
+    - Compliance with scenario rule-evolution policy (for example frozen early turns or too many rule changes)
   * **Parser Tolerance:** The Python parser remains formatting-oriented, but tolerates common LLM presentation noise such as an outer fenced Markdown code block and parenthetical annotations after changelog rule names (for example, "`rule_name` (rule 2)").
+  * **No-op Parsing:** The parser also accepts changelog sections that explicitly say `No material rule changes.` and treats them as valid carry-forward updates rather than malformed changelogs.
   * **Length Handling:** If rules output is truncated (`finish_reason=length`) or missing complete rules content, the orchestrator retries once with a concise-output instruction set to recover a complete `## Rules` section.
+  * **Policy Handling:** If the rules output violates configured rule-evolution guardrails, the orchestrator retries once with stricter instructions. If it still fails, the orchestrator carries the previous rules forward in a new versioned wrapper instead of accepting a broad rewrite that the scenario disallows.
 
 4. **Metrics Step**:
   * **Input:** World state, triggered events, actor actions, updated rules.
@@ -119,7 +127,7 @@ Each turn executes the following steps in order:
     - The referee first returns structured violations
     - A dedicated correction prompt asks the LLM to minimally revise the metrics and narrative so they comply
     - The referee then validates the revised output once more
-    - If the revised output still violates the constitution or cannot be parsed, the run continues with the latest proposal and records that it was accepted with violations
+    - If the revised output still violates the constitution or cannot be parsed, the orchestrator follows the scenario's configured fallback policy: either continue with the latest proposal or keep the previous state
   * **Model:** Uses dedicated `referee` model (default: x-ai/grok-4.1-fast) for cost-effective validation.
   * **Metadata:** Saves detailed validation results to `5-constitutional-check.json` including:
     - Status (approved, violations_found, max_attempts_reached, parse_error)

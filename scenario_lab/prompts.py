@@ -272,6 +272,7 @@ class PromptBuilder:
         # Build context
         context = self._get_common_context(turn)
         context["metric_rules"] = self.scenario.metric_rules
+        context["rule_evolution_policy"] = self._format_rule_evolution_policy(turn)
         
         # Format triggered events
         events_text = ""
@@ -298,6 +299,22 @@ class PromptBuilder:
         user = template.render(**context)
         
         return system, user
+
+    def _format_rule_evolution_policy(self, turn: int) -> str:
+        """Describe rule-evolution guardrails for the current turn."""
+        policy = self.scenario.config.rule_evolution
+        lines = [
+            f"- Maximum substantive rule changes this turn: {policy.max_changes_per_turn}",
+            "- Default posture: keep the existing rule set unless clear evidence justifies a change.",
+            "- Small, explicit, well-motivated edits are preferred over broad rewrites.",
+        ]
+        if turn <= policy.freeze_until_turn:
+            lines.insert(
+                0,
+                f"- Substantive rule changes are not allowed before turn {policy.freeze_until_turn + 1}. "
+                "Carry forward the current rules and state that no material rule changes were made.",
+            )
+        return "\n".join(lines)
 
     def build_metrics_prompt(
         self, turn: int, actor_actions: dict[str, str], triggered_events: list[dict]
