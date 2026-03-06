@@ -79,6 +79,31 @@ def test_parse_versioned_update_with_changelog():
     assert "50% every six months" in parsed.rules_content
 
 
+def test_parse_versioned_update_with_bare_changelog_header():
+    """Test parsing versioned update when changelog omits 'from vN'."""
+    content = """# Metric Rules v2 (Turn 3)
+
+## Changelog
+
+- **Modified:** `ai_capability_growth`
+  - **Change:** Reduced growth rate from doubles to +50%
+  - **Motivation:** Compute constraints
+  - **Expected impact:** Slower AI progress
+
+## Rules
+
+1. ai_capability increases by 50% every six months
+"""
+    parsed = parse_versioned_rules(content, expected_turn=3)
+    is_valid, warnings = validate_rules_format(content, expected_turn=3)
+
+    assert parsed.has_changelog
+    assert len(parsed.changelog_entries) == 1
+    assert parsed.changelog_entries[0].rule_name == "ai_capability_growth"
+    assert is_valid
+    assert warnings == []
+
+
 def test_parse_missing_header():
     """Test that missing header raises error."""
     content = """Some rules without proper header

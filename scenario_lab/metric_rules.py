@@ -81,7 +81,7 @@ def parse_versioned_rules(content: str, expected_turn: int) -> VersionedRules:
     if not is_initial:
         # Look for changelog section
         changelog_match = re.search(
-            r"##\s*Changelog\s+from\s+v(\d+)(.*?)(?=##\s*Rules|##\s*[A-Z]|\Z)",
+            r"##\s*Changelog(?:\s+from\s+v(\d+))?(.*?)(?=##\s*Rules|##\s*[A-Z]|\Z)",
             normalized_content,
             re.DOTALL | re.IGNORECASE,
         )
