@@ -42,13 +42,27 @@ You may change existing rules, remove ones that have become unnecessary or outda
 You MUST structure your response exactly as follows:
 
 1. **Header:** Include version number and turn (e.g., "# Metric Rules v2 (Turn 3)")
-2. **Changelog:** Document ALL changes from the previous version:
-   - **Added:** New rules with motivation and expected impact
-   - **Modified:** Changed rules with what changed, why, and expected impact
-   - **Removed:** Deleted rules with motivation
+2. **Changelog:** Document ALL changes from the previous version using the exact format shown below.
 3. **Rules:** The complete numbered list of current rules
 
+If no rules changed, write: `- No material rule changes.`
+
+Otherwise, each changelog entry MUST use this exact format:
+
+```
+- **Modified:** Rule 3 (school_readiness growth ranges)
+  - **Motivation:** Heavy actor investment in procurement and training justifies slightly higher ceiling.
+  - **Expected impact:** Allows school_readiness +2 from aligned efforts without implying nationwide jumps.
+
+- **Removed:** Rule 11 (Institutional inertia in early turns)
+  - **Motivation:** Turn 3 has passed the early constraint period.
+  - **Expected impact:** Standard rules now govern scaling dynamics.
+```
+
+The change type must be one of **Added:**, **Modified:**, or **Removed:**. Each entry must include **Motivation:** and **Expected impact:** as sub-items.
+
 Conciseness requirements:
+
 - Keep the full response concise to avoid truncation.
 - Include at most 6 changelog entries unless absolutely necessary.
 - For each changelog entry, keep Motivation and Expected impact to 1 short sentence each.
