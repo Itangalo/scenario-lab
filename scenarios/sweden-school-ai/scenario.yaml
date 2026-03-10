@@ -1,0 +1,26 @@
+name: "AI Competence in Swedish Schools"
+description: "Explore how student AI competence develops in Swedish schools from 2026 to 2030, driven by government policy, school authorities, edtech, and grassroots teacher pioneers."
+start_date: "2026-01"
+time_scale: "6 months per turn"
+max_turns: 10
+
+actors:
+  - government
+  - school-authorities
+  - edtech
+  - ai-pioneers
+
+rule_evolution:
+  freeze_until_turn: 2
+  max_changes_per_turn: 2
+
+constitutional_enforcement:
+  max_attempts: 2
+  on_failure: "keep_previous"
+
+llm:
+  model: "x-ai/grok-4.1-fast"
+  temperature: 0.7
+  max_tokens: 2000
+  max_tokens_by_task:
+    rules: 4500
