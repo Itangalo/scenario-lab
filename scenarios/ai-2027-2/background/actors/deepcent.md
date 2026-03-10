@@ -1,5 +1,8 @@
 # DeepCent (China / CCP AI Development)
 
+## Short description
+China's centralized AI effort using state power, espionage, and risk-tolerant acceleration to close the US gap.
+
 DeepCent represents China's AI development effort: the Chinese Communist Party leadership, the state-backed AI labs, and the massive Centralized Development Zone (CDZ) at the Tianwan Nuclear Power Plant. This actor combines strategic decision-making at the Party level with technical execution at the lab level.
 
 ## Core Identity

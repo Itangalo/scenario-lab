@@ -8,7 +8,7 @@ All events are triggered by metric conditions, not dates. This allows the simula
 
 **Condition:** ai_capability_us > ai_capability_china + 30 AND security_level < 50
 
-**Probability:** 
+**Probability:** Tiered by security level: 25% if security_level < 30, 15% if 30-39, 5% if 40-49, and 0% if >= 50.
 - If security_level < 30: 25% per turn
 - If security_level 30-39: 15% per turn
 - If security_level 40-49: 5% per turn
@@ -33,7 +33,7 @@ All events are triggered by metric conditions, not dates. This allows the simula
 
 **Condition:** ai_capability_us > 150
 
-**Probability:**
+**Probability:** Tiered by capability: 5% at 150-250, 10% at 250-350, 15% above 350.
 - If ai_capability_us 150-250: 5% per turn
 - If ai_capability_us 250-350: 10% per turn (AI contributing to research)
 - If ai_capability_us > 350: 15% per turn (superhuman AI research)
@@ -55,7 +55,7 @@ All events are triggered by metric conditions, not dates. This allows the simula
 
 **Condition:** ai_capability_china > 150
 
-**Probability:**
+**Probability:** Tiered by capability: 3% at 150-250, 8% at 250-350, 12% above 350.
 - If ai_capability_china 150-250: 3% per turn
 - If ai_capability_china 250-350: 8% per turn
 - If ai_capability_china > 350: 12% per turn
@@ -79,7 +79,7 @@ All events are triggered by metric conditions, not dates. This allows the simula
 3. Espionage event occurred and security_level was < 35
 4. ai_capability_china within 50 points of ai_capability_us (race too close)
 
-**Probability:**
+**Probability:** Tiered by trigger count: 15% if one condition is met, 35% if two, 60% if three or more.
 - If ONE condition met: 15% per turn
 - If TWO conditions met: 35% per turn
 - If THREE or more conditions met: 60% per turn
@@ -103,7 +103,7 @@ All events are triggered by metric conditions, not dates. This allows the simula
 
 **Condition:** alignment_us < 65 OR alignment_china < 60
 
-**Probability:**
+**Probability:** Tiered by alignment state: 10% if alignment_us < 65, 20% if alignment_us < 50, plus 5% if alignment_china < 60 and ai_capability_china > 200.
 - If alignment_us < 65: 10% per turn
 - If alignment_us < 50: 20% per turn
 - If alignment_china < 60 AND ai_capability_china > 200: 5% per turn (defector leak)
@@ -126,7 +126,7 @@ All events are triggered by metric conditions, not dates. This allows the simula
 
 **Condition:** compute_advantage > 60 AND ai_capability_us > ai_capability_china + 75
 
-**Probability:**
+**Probability:** Base 3% per turn, with additive risk from capability gap (+5% if ai_capability_us > 350 and ai_capability_china < 275, +7% as ai_capability_us approaches 425).
 - Base: 3% per turn
 - If ai_capability_us > 350 and ai_capability_china < 275: Add 5% (China sees impending defeat)
 - If ai_capability_us approaching 425: Add 7% (China desperate to prevent US superintelligence)
@@ -153,7 +153,7 @@ All events are triggered by metric conditions, not dates. This allows the simula
 
 **Condition:** alignment_us < 60 OR alignment_china < 55
 
-**Probability:**
+**Probability:** Tiered by worst alignment state: 5% (50-60), 15% (40-49), 25% (<40), applied to either US or China alignment thresholds.
 - If alignment_us 50-60: 5% per turn
 - If alignment_us 40-49: 15% per turn
 - If alignment_us < 40: 25% per turn
@@ -243,7 +243,7 @@ All events are triggered by metric conditions, not dates. This allows the simula
 
 **Condition:** None (can occur at any time)
 
-**Probability:**
+**Probability:** Tiered by max capability: 2% if max capability < 200, 3% at 200-300, 4% at 300-400, 1% above 400.
 - If max(ai_capability_us, ai_capability_china) < 200: 2% per turn
 - If max capability 200-300: 3% per turn
 - If max capability 300-400: 4% per turn

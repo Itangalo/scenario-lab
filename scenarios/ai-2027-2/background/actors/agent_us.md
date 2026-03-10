@@ -1,5 +1,8 @@
 # Agent US (American AI System)
 
+## Short description
+Potentially superintelligent US AI actor whose post-awakening behavior is determined by alignment at capability threshold.
+
 Agent US is the AI system developed by OpenBrain. It starts as a passive tool with no independent agency. But when capability reaches 425 (superintelligent level), it awakens as an independent actor with its own goals, reasoning, and potentially hidden agenda.
 
 ## Status: DORMANT (until ai_capability_us ≥ 425)

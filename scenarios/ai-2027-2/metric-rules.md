@@ -46,7 +46,7 @@ These rules describe the quantitative relationships governing how metrics change
 
 ### The Alignment Tax
 
-Both ai_alignment_us and ai_alignment_china naturally degrade as capability increases. Faster capability growth means faster alignment degradation.
+Both alignment_us and alignment_china naturally degrade as capability increases. Faster capability growth means faster alignment degradation.
 
 **Base degradation rate:**
 - Normal capability growth: -3-5 points per turn

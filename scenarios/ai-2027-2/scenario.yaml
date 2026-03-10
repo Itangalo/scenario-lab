@@ -15,25 +15,9 @@ llm:
   temperature: 0.7
   max_tokens: 3000
 
-  events:
-    - "x-ai/grok-4.1-fast"
-    - "google/gemini-3-flash-preview"
-
-  actors:
-    default:
-      - "x-ai/grok-4.1-fast"
-      - "google/gemini-3-flash-preview"
-    agent_us:
-      - "deepseek/deepseek-chat-v3-0324"
-      - "x-ai/grok-4.1-fast"
-    agent_china:
-      - "deepseek/deepseek-chat-v3-0324"
-      - "x-ai/grok-4.1-fast"
-
-  rules:
-    - "x-ai/grok-4.1-fast"
-    - "google/gemini-3-flash-preview"
-
-  metrics:
-    - "google/gemini-3-flash-preview"
-    - "x-ai/grok-4.1-fast"
+  events: "x-ai/grok-4.1-fast"
+  actors: "x-ai/grok-4.1-fast"
+  rules: "x-ai/grok-4.1-fast"
+  metrics: "x-ai/grok-4.1-fast"
+  summary: "x-ai/grok-4.1-fast"
+  referee: "x-ai/grok-4.1-fast"

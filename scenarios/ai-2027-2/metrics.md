@@ -30,7 +30,7 @@
 
 **ID:** ai_capability_china
 
-**Min:** 100
+**Min:** 85
 
 **Max:** 500
 

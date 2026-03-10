@@ -1,5 +1,8 @@
 # US Government (White House / National Security Council)
 
+## Short description
+US national security leadership balancing the race against China with pressure to control AI risk and OpenBrain.
+
 The US Government actor represents the executive branch's national security apparatus: the President, the National Security Council (NSC), Department of Defense (DoD), and intelligence agencies. This is not Congress, the judiciary, or the broader federal bureaucracy – it's the decision-making elite who understand what's at stake.
 
 ## Core Identity

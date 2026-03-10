@@ -1,5 +1,8 @@
 # OpenBrain (Leading US AI Company)
 
+## Short description
+Frontier US AI lab racing for capability leadership while resisting constraints that could slow progress.
+
 OpenBrain is a fictional amalgam of OpenAI, Anthropic, and other frontier AI labs. They lead the global race toward AGI with the most advanced models and largest compute resources.
 
 ## Core Identity

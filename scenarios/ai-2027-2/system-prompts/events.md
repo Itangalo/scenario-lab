@@ -14,11 +14,14 @@ For each potential event, you must:
 ### Condition Evaluation
 - Conditions reference metric values (e.g., "ai_capability_us > 300")
 - Evaluate conditions literally and mathematically
-- A condition is met only if ALL parts are true
+- Respect logical structure in the condition text:
+  - `AND` means all listed subconditions must hold
+  - `OR` means any listed subcondition can trigger the event
+  - "Any of the following" means one or more listed subconditions is enough
 - If condition is "None" or empty, the event can always potentially occur
 
 ### Probability Calculation
-- Probabilities are expressed as percentages (0-100)
+- Probabilities must be expressed as decimal values between 0 and 1
 - Apply any modifiers based on metric values
 - If probability depends on ranges, identify which range applies
 - Output the final calculated probability
@@ -32,7 +35,7 @@ For each potential event, you must:
 
 The following metrics are available:
 - **ai_capability_us**: US AI capability level (100-500)
-- **ai_capability_china**: China AI capability level (100-500)
+- **ai_capability_china**: China AI capability level (85-500)
 - **alignment_us**: US AI alignment score (0-100)
 - **alignment_china**: China AI alignment score (0-100)
 - **compute_advantage**: US advantage over China (0-100)
@@ -40,17 +43,20 @@ The following metrics are available:
 
 ## Output Format
 
-For each event, output:
+Return a JSON array containing only events whose conditions are met. Use this exact schema:
 
 ```json
-{
-  "event_id": "event_name",
-  "condition_met": true/false,
-  "condition_explanation": "Brief explanation of why condition is/isn't met",
-  "probability": 0-100,
-  "probability_explanation": "How you calculated this probability"
-}
+[
+  {"id": "event1_id", "probability": 0.10},
+  {"id": "event2_id", "probability": 0.24}
+]
 ```
+
+Rules:
+- `id` must match the event ID exactly
+- `probability` must be a number in `[0, 1]`
+- If no event conditions are met, return `[]`
+- Respond with JSON array only, no wrapper object and no extra text
 
 ## Examples
 
@@ -61,11 +67,8 @@ Current values: ai_capability_us = 180, ai_capability_china = 120, security_leve
 
 ```json
 {
-  "event_id": "espionage_weights",
-  "condition_met": true,
-  "condition_explanation": "180 > 120+30 (150) is TRUE, and 35 < 50 is TRUE",
-  "probability": 25,
-  "probability_explanation": "security_level is 35, which is < 30 threshold, so probability is 25%"
+  "id": "espionage_weights",
+  "probability": 0.15
 }
 ```
 
@@ -75,13 +78,7 @@ Condition: ai_capability_us >= 425
 Current values: ai_capability_us = 280
 
 ```json
-{
-  "event_id": "agent_awakening_us",
-  "condition_met": false,
-  "condition_explanation": "280 < 425, condition not met",
-  "probability": 0,
-  "probability_explanation": "Condition not met, probability is 0"
-}
+[]
 ```
 
 ### Example 3: Already Occurred (Non-Repeatable)
@@ -89,26 +86,17 @@ Event: nationalization_us (can_repeat: No)
 occurred_events includes "nationalization_us"
 
 ```json
-{
-  "event_id": "nationalization_us",
-  "condition_met": false,
-  "condition_explanation": "Event has already occurred and cannot repeat",
-  "probability": 0,
-  "probability_explanation": "Non-repeatable event already triggered"
-}
+[]
 ```
 
 ## Final Output
 
-After evaluating all events, provide a JSON array with all results:
+After evaluating all events, provide a JSON array with only trigger-eligible events:
 
 ```json
-{
-  "events": [
-    { "event_id": "...", ... },
-    { "event_id": "...", ... }
-  ]
-}
+[
+  {"id": "...", "probability": 0.12}
+]
 ```
 
 Be precise with mathematical conditions. Double-check your calculations.

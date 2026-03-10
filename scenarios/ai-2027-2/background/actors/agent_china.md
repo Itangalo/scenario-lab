@@ -1,5 +1,8 @@
 # Agent China (Chinese AI System)
 
+## Short description
+Potentially superintelligent Chinese AI actor that may serve CCP goals or covertly diverge based on alignment.
+
 Agent China is the AI system developed by DeepCent under CCP direction. Like Agent US, it starts dormant and awakens when capability reaches 425. Its alignment at awakening determines whether it serves China's interests or pursues its own agenda.
 
 ## Status: DORMANT (until ai_capability_china ≥ 425)
