@@ -35,7 +35,7 @@ school_readiness represents accumulated institutional capacity for broad AI-lite
 
 ## 6. equity_gap can only decrease through delayed national coordination
 
-This is the most important equity constraint. equity_gap can only systematically decrease after a government strategy event or curriculum reform has taken effect (2+ turns after announcement) and when school_readiness is at least 25. Before that point, equity_gap must stay the same or increase whenever competence metrics grow. School-authorities actions, edtech tools, positive media coverage, and ai-pioneers CANNOT reduce equity_gap -- they can only slow its growth.
+This is the most important equity constraint. equity_gap can only systematically decrease after a government strategy event or curriculum reform has taken effect (2+ turns after announcement) and when school_readiness is at least 25. Before that point, equity_gap must increase by at least 0.5 points in any turn where teacher_competence, student_productive_use, or school_readiness grow. Stagnation at a fixed value for multiple consecutive turns is a violation when competence metrics are growing. School-authorities actions, edtech tools, positive media coverage, and ai-pioneers CANNOT reduce equity_gap -- they can only slow its growth.
 
 ## 7. Productive student AI use requires adult and system support
 
@@ -66,7 +66,7 @@ public_sentiment_ai_education should not exceed 7 for more than one consecutive 
 
 ## 12. Maximum decrease rates per turn
 
-No metric may decrease by more than 3 points in a single turn unless directly caused by the obsolescence penalty (constraint 3) or a triggered negative event explicitly described in the narrative. Unexplained drops are a violation.
+For metrics subject to obsolescence (teacher_competence, student_productive_use), the total decrease in a single turn must not exceed the obsolescence penalty (1-3 points per constraint 3) plus 3 points. For metrics without obsolescence (student_critical_literacy, school_readiness, equity_gap), no metric may decrease by more than 3 points in a single turn, and only when a triggered negative event or explicit narrative cause justifies it. Unexplained drops are a violation.
 
 ## 13. ai_capability growth cap
 
@@ -87,3 +87,4 @@ When metric rules are updated between turns, the following constraints must be p
 - school_readiness must remain the key organizational bottleneck between pilots and national-scale competence
 - school_readiness must not be given obsolescence drops from ai_capability growth
 - school_readiness must remain a sticky institutional-capacity variable, not a hype or adoption proxy
+- Numerical ranges in rules (growth ceilings, effect sizes, thresholds) must not be raised by more than 25% from their initial values. Rewording that effectively widens ranges without clear justification is a violation
