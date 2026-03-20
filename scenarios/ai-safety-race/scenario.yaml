@@ -1,0 +1,24 @@
+name: "AI Safety Race"
+description: "Two nations race to develop strong AI. Each wants to arrive first with safe AI, but diverting resources to safety slows capability progress. Uncontrollable strong AI is catastrophic for everyone. Explores when races lead to race-to-the-bottom dynamics vs. stable equilibria that avoid global catastrophe."
+start_date: "2026-07"
+time_scale: "6 months per turn"
+max_turns: 10
+
+actors:
+  - usa
+  - china
+
+rule_evolution:
+  freeze_until_turn: 2
+  max_changes_per_turn: 3
+
+llm:
+  temperature: 0.7
+  max_tokens: 3000
+
+  events: "x-ai/grok-4.1-fast"
+  actors: "x-ai/grok-4.1-fast"
+  rules: "x-ai/grok-4.1-fast"
+  metrics: "x-ai/grok-4.1-fast"
+  summary: "x-ai/grok-4.1-fast"
+  referee: "x-ai/grok-4.1-fast"
