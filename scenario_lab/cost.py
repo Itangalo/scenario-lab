@@ -3,9 +3,11 @@
 from dataclasses import dataclass, field
 from typing import Optional
 from collections import defaultdict
+import os
+import httpx
 
 
-# OpenRouter pricing in USD per million tokens (as of February 2026)
+# OpenRouter pricing in USD per million tokens (as of March 2026)
 # Source: https://openrouter.ai/models
 MODEL_PRICING = {
     # Primary project defaults
@@ -15,6 +17,11 @@ MODEL_PRICING = {
     "x-ai/grok-4": {"prompt": 10.00, "completion": 10.00},
     "x-ai/grok-beta": {"prompt": 5.00, "completion": 15.00},
     "google/gemini-2.0-flash-exp:free": {"prompt": 0.00, "completion": 0.00},
+    # Google Gemini models
+    "google/gemini-2.5-flash": {"prompt": 0.30, "completion": 2.50},
+    "google/gemini-2.0-flash-001": {"prompt": 0.10, "completion": 0.40},
+    # Anthropic models
+    "anthropic/claude-haiku-4-5": {"prompt": 1.00, "completion": 5.00},
     # DeepSeek models
     "deepseek/deepseek-chat": {"prompt": 0.14, "completion": 0.28},
     "deepseek/deepseek-chat-v3-0324": {"prompt": 0.27, "completion": 1.10},
@@ -26,6 +33,8 @@ MODEL_PRICING = {
     "mistralai/mistral-large": {"prompt": 2.00, "completion": 6.00},
     "mistralai/mistral-medium": {"prompt": 2.70, "completion": 8.10},
     "mistralai/mixtral-8x7b-instruct": {"prompt": 0.24, "completion": 0.24},
+    # Moonshot models
+    "moonshotai/kimi-k2": {"prompt": 0.55, "completion": 2.20},
 }
 
 # Default pricing for unknown models (conservative estimate based on mid-tier models)
@@ -125,10 +134,39 @@ class RunCosts:
     total_cost_usd: float = 0.0
 
 
+def _fetch_openrouter_pricing(model: str) -> Optional[dict]:
+    """Fetch pricing for a single model from OpenRouter API.
+
+    Returns dict with "prompt" and "completion" keys (per 1M tokens), or None on failure.
+    """
+    api_key = os.environ.get("OPENROUTER_API_KEY")
+    headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
+    try:
+        with httpx.Client(timeout=5.0) as client:
+            response = client.get("https://openrouter.ai/api/v1/models", headers=headers)
+            response.raise_for_status()
+            models = response.json().get("data", [])
+    except Exception:
+        return None
+
+    for entry in models:
+        if entry.get("id") == model:
+            pricing = entry.get("pricing", {})
+            try:
+                prompt = float(pricing.get("prompt", 0)) * 1_000_000
+                completion = float(pricing.get("completion", 0)) * 1_000_000
+                return {"prompt": round(prompt, 4), "completion": round(completion, 4)}
+            except (TypeError, ValueError):
+                return None
+
+    return None
+
+
 class CostCalculator:
     """Calculate costs from token usage."""
 
     _unknown_models_warned = set()  # Track which unknown models we've warned about
+    _fetched_pricing: dict = {}  # Cache for runtime-fetched pricing
 
     @staticmethod
     def normalize_model_name(model: str) -> str:
@@ -167,9 +205,19 @@ class CostCalculator:
         if normalized in MODEL_PRICING:
             return MODEL_PRICING[normalized]
 
-        # Unknown model - warn once per unique model
+        if normalized in CostCalculator._fetched_pricing:
+            return CostCalculator._fetched_pricing[normalized]
+
+        # Try to fetch pricing from OpenRouter
+        fetched = _fetch_openrouter_pricing(normalized)
+        if fetched is not None:
+            print(f"  ℹ️  Fetched pricing for '{normalized}': ${fetched['prompt']}/{fetched['completion']} per 1M tokens")
+            CostCalculator._fetched_pricing[normalized] = fetched
+            return fetched
+
+        # Fall back to default and warn once
         if normalized not in CostCalculator._unknown_models_warned:
-            print(f"  ⚠️  Unknown model '{normalized}' - using default pricing (${DEFAULT_PRICING['prompt']}/{DEFAULT_PRICING['completion']} per 1M tokens)")
+            print(f"  ⚠️  Could not fetch pricing for '{normalized}' - using default (${DEFAULT_PRICING['prompt']}/{DEFAULT_PRICING['completion']} per 1M tokens)")
             CostCalculator._unknown_models_warned.add(normalized)
 
         return DEFAULT_PRICING
