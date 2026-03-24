@@ -152,9 +152,10 @@ python -m scenario_lab.cli compare-runs path/to/baseline-run path/to/candidate-r
 ```bash
 python -m scenario_lab.cli check-run-integrity scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS
 python -m scenario_lab.cli check-run-integrity tests/fixtures/regression/pairwise/run-baseline
+python -m scenario_lab.cli check-run-integrity scenarios/sweden-ai-2030 --max-runs 5
 ```
 
-`check-run-integrity` performs strict structural validation of a saved run: required files, JSON readability, turn numbering, summary/history consistency, and alignment between `summary.json` and persisted turn metrics.
+`check-run-integrity` performs strict structural validation of saved runs: required files, JSON readability, turn numbering, summary/history consistency, and alignment between `summary.json` and persisted turn metrics. You can point it at a single run, a `runs/` directory, or a whole scenario directory.
 
 ### Check a regression manifest
 

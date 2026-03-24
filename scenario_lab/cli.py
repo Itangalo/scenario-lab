@@ -13,6 +13,7 @@ from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
 import yaml
+from typing import Optional
 
 from .loader import load_scenario
 from .llm import LLMClient
@@ -244,6 +245,32 @@ def resolve_regression_manifests(target: Path, expected_kind: str) -> list[Path]
         )
 
     return selected
+
+
+def resolve_integrity_targets(target: Path, max_runs: Optional[int] = None) -> list[Path]:
+    """Resolve one or more run directories for integrity checking."""
+    if not target.exists():
+        raise ValueError(f"Target does not exist: {target}")
+
+    if target.is_dir() and target.name.startswith("run-") and target.parent.name == "runs":
+        return [target]
+
+    runs_dir = target
+    if target.is_dir() and (target / "runs").is_dir():
+        runs_dir = target / "runs"
+
+    if runs_dir.is_dir():
+        run_dirs = sorted(
+            path for path in runs_dir.iterdir() if path.is_dir() and path.name.startswith("run-")
+        )
+        if max_runs is not None:
+            run_dirs = run_dirs[-max_runs:]
+        if run_dirs:
+            return run_dirs
+
+    raise ValueError(
+        "Expected a run directory, a runs/ directory, or a scenario directory containing runs/"
+    )
 
 
 def build_batch_run_specs(targets: list[Path], args: argparse.Namespace, batch_id: str) -> list[BatchJobSpec]:
@@ -885,8 +912,18 @@ def main():
         "check-run-integrity",
         help="Run strict structural validation on a saved run",
     )
-    integrity_parser.add_argument("run_dir", type=Path, help="Run directory to validate")
+    integrity_parser.add_argument(
+        "run_dir",
+        type=Path,
+        help="Run directory, runs/ directory, or scenario directory to validate",
+    )
     integrity_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
+    integrity_parser.add_argument(
+        "--max-runs",
+        type=int,
+        default=None,
+        help="When checking a runs/ or scenario directory, only inspect the most recent N runs",
+    )
 
     regression_parser = subparsers.add_parser(
         "check-regressions",
@@ -1166,14 +1203,34 @@ def main():
         return 1 if args.fail_on_diff and report["has_differences"] else 0
 
     if args.command == "check-run-integrity":
-        from .regression import check_run_integrity, format_run_integrity
+        from .regression import (
+            check_run_integrity,
+            format_integrity_suite,
+            format_run_integrity,
+            summarize_integrity_reports,
+        )
 
-        report = check_run_integrity(args.run_dir)
+        try:
+            run_dirs = resolve_integrity_targets(args.run_dir, max_runs=args.max_runs)
+        except Exception as e:
+            print(f"❌ Integrity check failed: {e}")
+            return 1
+
+        reports = [check_run_integrity(run_dir) for run_dir in run_dirs]
+        if len(reports) == 1 and run_dirs[0] == args.run_dir:
+            report = reports[0]
+            if args.json:
+                print(json.dumps(report, indent=2, ensure_ascii=False))
+            else:
+                print(format_run_integrity(report))
+            return 0 if report["is_valid"] else 1
+
+        summary = summarize_integrity_reports(reports, str(args.run_dir.resolve()))
         if args.json:
-            print(json.dumps(report, indent=2, ensure_ascii=False))
+            print(json.dumps(summary, indent=2, ensure_ascii=False))
         else:
-            print(format_run_integrity(report))
-        return 0 if report["is_valid"] else 1
+            print(format_integrity_suite(summary))
+        return 0 if summary["invalid_count"] == 0 else 1
 
     if args.command == "check-regressions":
         from .regression import format_regression_suite, run_regression_suite

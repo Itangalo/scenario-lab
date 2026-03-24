@@ -332,6 +332,58 @@ def test_cli_check_run_integrity_returns_error_for_invalid_run(tmp_path):
     assert result == 1
 
 
+def test_cli_check_run_integrity_accepts_scenario_directory(tmp_path):
+    """check-run-integrity should summarize all runs in a scenario directory."""
+    scenario_dir = tmp_path / "scenario"
+    runs_dir = scenario_dir / "runs"
+    (runs_dir / "run-001").mkdir(parents=True)
+    (runs_dir / "run-002").mkdir(parents=True)
+
+    def fake_report(run_dir):
+        return {
+            "run_name": run_dir.name,
+            "is_valid": run_dir.name == "run-001",
+            "errors": [] if run_dir.name == "run-001" else ["bad"],
+            "warnings": [],
+        }
+
+    with patch("scenario_lab.regression.check_run_integrity", side_effect=fake_report):
+        with patch("scenario_lab.regression.format_integrity_suite", return_value="suite report"):
+            with patch("sys.argv", ["scenario_lab", "check-run-integrity", str(scenario_dir)]):
+                result = main()
+
+    assert result == 1
+
+
+def test_cli_check_run_integrity_max_runs_limits_scope(tmp_path):
+    """check-run-integrity --max-runs should only inspect the most recent N run directories."""
+    runs_dir = tmp_path / "runs"
+    (runs_dir / "run-001").mkdir(parents=True)
+    (runs_dir / "run-002").mkdir(parents=True)
+    (runs_dir / "run-003").mkdir(parents=True)
+    seen = []
+
+    def fake_report(run_dir):
+        seen.append(run_dir.name)
+        return {
+            "run_name": run_dir.name,
+            "is_valid": True,
+            "errors": [],
+            "warnings": [],
+        }
+
+    with patch("scenario_lab.regression.check_run_integrity", side_effect=fake_report):
+        with patch("scenario_lab.regression.format_integrity_suite", return_value="suite report"):
+            with patch(
+                "sys.argv",
+                ["scenario_lab", "check-run-integrity", str(runs_dir), "--max-runs", "2"],
+            ):
+                result = main()
+
+    assert result == 0
+    assert seen == ["run-002", "run-003"]
+
+
 def test_cli_compare_distributions_returns_error_when_suite_has_errors(tmp_path):
     """compare-distributions should return non-zero when a comparison errors."""
     manifest = tmp_path / "distribution.yaml"

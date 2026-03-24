@@ -397,6 +397,50 @@ def format_run_integrity(report: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def summarize_integrity_reports(reports: list[dict[str, Any]], target: str) -> dict[str, Any]:
+    """Summarize integrity reports across multiple runs."""
+    valid_count = sum(1 for report in reports if report["is_valid"])
+    invalid_count = len(reports) - valid_count
+    warning_count = sum(1 for report in reports if report["warnings"])
+
+    return {
+        "target": target,
+        "run_count": len(reports),
+        "valid_count": valid_count,
+        "invalid_count": invalid_count,
+        "warning_count": warning_count,
+        "reports": reports,
+    }
+
+
+def format_integrity_suite(summary: dict[str, Any]) -> str:
+    """Render a compact text report for multiple run integrity checks."""
+    lines = [
+        "=" * 60,
+        "RUN INTEGRITY SUITE",
+        "=" * 60,
+        f"Target   : {summary['target']}",
+        f"Runs     : {summary['run_count']}",
+        f"Valid    : {summary['valid_count']}",
+        f"Invalid  : {summary['invalid_count']}",
+        f"Warnings : {summary['warning_count']}",
+    ]
+
+    if not summary["reports"]:
+        lines.extend(["", "No runs checked."])
+        return "\n".join(lines)
+
+    lines.extend(["", "Results:"])
+    for report in summary["reports"]:
+        status = "VALID" if report["is_valid"] else "INVALID"
+        warning_note = f", warnings={len(report['warnings'])}" if report["warnings"] else ""
+        lines.append(f"  - {report['run_name']}: {status}{warning_note}")
+        if report["errors"]:
+            lines.append(f"    first error: {report['errors'][0]}")
+
+    return "\n".join(lines)
+
+
 def summarize_run(run_dir: Path) -> dict[str, Any]:
     """Build a normalized summary for a saved run."""
     integrity = check_run_integrity(run_dir)

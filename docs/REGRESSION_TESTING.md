@@ -29,6 +29,7 @@ That makes saved-run comparison a practical foundation for regression checks.
 python -m scenario_lab.cli check-run-integrity path/to/run
 python -m scenario_lab.cli check-run-integrity path/to/run --json
 python -m scenario_lab.cli check-run-integrity tests/fixtures/regression/pairwise/run-baseline
+python -m scenario_lab.cli check-run-integrity scenarios/sweden-ai-2030 --max-runs 5
 ```
 
 This is the hard-failure layer. It checks:
@@ -42,6 +43,14 @@ This is the hard-failure layer. It checks:
 - optional `costs.json` fields are structurally valid
 
 If this check fails, treat it as a true regression or run-corruption signal.
+
+You can pass:
+
+- a single run directory
+- a `runs/` directory
+- a scenario directory containing `runs/`
+
+When multiple runs are targeted, the command prints a suite summary and returns non-zero if any run is invalid.
 
 ### Compare Two Runs Directly
 
