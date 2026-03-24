@@ -1,0 +1,28 @@
+{
+  "scenario": "Distribution Example Scenario",
+  "status": "completed",
+  "total_turns": 2,
+  "final_metrics": {
+    "gdp": 102,
+    "employment": 88
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "gdp": 96,
+        "employment": 91
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "gdp": 102,
+        "employment": 88
+      }
+    }
+  ],
+  "occurred_events": [
+    "shock-a"
+  ]
+}

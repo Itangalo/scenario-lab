@@ -151,6 +151,7 @@ python -m scenario_lab.cli compare-runs path/to/baseline-run path/to/candidate-r
 
 ```bash
 python -m scenario_lab.cli check-run-integrity scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS
+python -m scenario_lab.cli check-run-integrity tests/fixtures/regression/pairwise/run-baseline
 ```
 
 `check-run-integrity` performs strict structural validation of a saved run: required files, JSON readability, turn numbering, summary/history consistency, and alignment between `summary.json` and persisted turn metrics.
@@ -160,6 +161,7 @@ python -m scenario_lab.cli check-run-integrity scenarios/sweden-ai-2030/runs/run
 ```bash
 python -m scenario_lab.cli check-regressions regressions.yaml
 python -m scenario_lab.cli check-regressions regressions.yaml --fail-on-diff
+python -m scenario_lab.cli check-regressions tests/fixtures/regression/pairwise-regressions.yaml
 ```
 
 `check-regressions` runs a YAML manifest of saved-run comparisons and produces one summary report for the whole suite. Paths inside the manifest are resolved relative to the manifest file, which makes it practical for repo-local regression fixtures and CI checks.
@@ -168,9 +170,15 @@ python -m scenario_lab.cli check-regressions regressions.yaml --fail-on-diff
 
 ```bash
 python -m scenario_lab.cli compare-distributions distributions.yaml
+python -m scenario_lab.cli compare-distributions tests/fixtures/regression/distribution-comparison.yaml
 ```
 
 `compare-distributions` compares sets of saved runs and reports shifts in final metric distributions, occurred-event rates, run status mix, turn counts, and cost distributions. This is intended for behavioral analysis across multiple runs rather than binary pass/fail on a single trajectory.
+
+Concrete scenario-local examples are included in:
+
+- `scenarios/sweden-ai-2030/regressions/`
+- `scenarios/ai-safety-race/regressions/`
 
 ### Run many scenarios in parallel
 

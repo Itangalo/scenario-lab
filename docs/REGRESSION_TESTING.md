@@ -28,6 +28,7 @@ That makes saved-run comparison a practical foundation for regression checks.
 ```bash
 python -m scenario_lab.cli check-run-integrity path/to/run
 python -m scenario_lab.cli check-run-integrity path/to/run --json
+python -m scenario_lab.cli check-run-integrity tests/fixtures/regression/pairwise/run-baseline
 ```
 
 This is the hard-failure layer. It checks:
@@ -69,6 +70,7 @@ This command is best used for observability and review. In a stochastic system l
 python -m scenario_lab.cli check-regressions regressions.yaml
 python -m scenario_lab.cli check-regressions regressions.yaml --json
 python -m scenario_lab.cli check-regressions regressions.yaml --fail-on-diff
+python -m scenario_lab.cli check-regressions tests/fixtures/regression/pairwise-regressions.yaml
 ```
 
 This command runs a suite of saved-run comparisons defined in a YAML manifest and prints one summary report.
@@ -78,6 +80,7 @@ This command runs a suite of saved-run comparisons defined in a YAML manifest an
 ```bash
 python -m scenario_lab.cli compare-distributions distributions.yaml
 python -m scenario_lab.cli compare-distributions distributions.yaml --json
+python -m scenario_lab.cli compare-distributions tests/fixtures/regression/distribution-comparison.yaml
 ```
 
 This command compares two sets of saved runs at the distribution level. It is the preferred tool for behavioral change detection when single-run variation is expected.
@@ -124,6 +127,12 @@ Rules:
 - `baseline` and `candidate` must point to saved run directories
 - relative paths are resolved relative to the manifest file location
 
+The repository includes a working example at:
+
+- `tests/fixtures/regression/pairwise-regressions.yaml`
+- `scenarios/sweden-ai-2030/regressions/pairwise-example.yaml`
+- `scenarios/ai-safety-race/regressions/pairwise-example.yaml`
+
 ## Distribution Manifest Format
 
 Minimal example:
@@ -163,6 +172,12 @@ Rules:
   - `glob`
   - `runs`
 - relative paths and globs are resolved relative to the manifest file location
+
+The repository includes a working example at:
+
+- `tests/fixtures/regression/distribution-comparison.yaml`
+- `scenarios/sweden-ai-2030/regressions/distribution-example.yaml`
+- `scenarios/ai-safety-race/regressions/distribution-example.yaml`
 
 ## Suggested Workflow
 

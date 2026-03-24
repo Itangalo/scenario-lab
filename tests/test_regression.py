@@ -1,6 +1,7 @@
 """Tests for run regression comparison helpers."""
 
 import json
+from pathlib import Path
 
 from scenario_lab.regression import (
     check_run_integrity,
@@ -9,6 +10,8 @@ from scenario_lab.regression import (
     run_regression_suite,
     summarize_run,
 )
+
+FIXTURES_DIR = Path(__file__).parent / "fixtures" / "regression"
 
 
 def _write_run(
@@ -304,3 +307,34 @@ def test_compare_distributions_reports_metric_and_event_shifts(tmp_path):
         entry["event"] == "shock-b" and entry["rate_delta"] == 1.0
         for entry in comparison["event_rate_deltas"]
     )
+
+
+def test_repository_pairwise_fixture_manifest_is_valid():
+    manifest = FIXTURES_DIR / "pairwise-regressions.yaml"
+
+    report = run_regression_suite(manifest)
+
+    assert report["comparison_count"] == 1
+    assert report["differing_count"] == 1
+    assert report["comparisons"][0]["label"] == "example-pairwise"
+
+
+def test_repository_distribution_fixture_manifest_is_valid():
+    manifest = FIXTURES_DIR / "distribution-comparison.yaml"
+
+    report = compare_distributions(manifest)
+
+    assert report["comparison_count"] == 1
+    assert report["error_count"] == 0
+    assert report["comparisons"][0]["label"] == "example-distribution"
+    assert report["comparisons"][0]["baseline"]["run_count"] == 2
+    assert report["comparisons"][0]["candidate"]["run_count"] == 2
+
+
+def test_repository_integrity_fixture_is_valid():
+    run_dir = FIXTURES_DIR / "pairwise" / "run-baseline"
+
+    report = check_run_integrity(run_dir)
+
+    assert report["is_valid"] is True
+    assert report["errors"] == []

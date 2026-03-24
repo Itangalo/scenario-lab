@@ -1,0 +1,12 @@
+comparisons:
+  - label: early-completed-cluster-vs-later-completed-cluster
+    baseline:
+      runs:
+        - ../runs/run-20260319-233944
+        - ../runs/run-20260320-070957
+        - ../runs/run-20260320-090328
+    candidate:
+      runs:
+        - ../runs/run-20260320-090330
+        - ../runs/run-20260320-090333
+        - ../runs/run-20260320-093156

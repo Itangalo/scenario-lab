@@ -1,0 +1,14 @@
+comparisons:
+  - label: early-march-cluster-vs-follow-up-cluster
+    baseline:
+      runs:
+        - ../runs/run-20260304-200354
+        - ../runs/run-20260304-200354-01
+        - ../runs/run-20260304-200354-02
+        - ../runs/run-20260304-200354-03
+    candidate:
+      runs:
+        - ../runs/run-20260304-202017
+        - ../runs/run-20260304-202059
+        - ../runs/run-20260304-202243
+        - ../runs/run-20260304-202508

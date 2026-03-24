@@ -1,0 +1,6 @@
+comparisons:
+  - label: example-distribution
+    baseline:
+      glob: distribution/baseline/run-*
+    candidate:
+      glob: distribution/candidate/run-*
