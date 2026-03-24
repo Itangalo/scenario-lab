@@ -162,18 +162,20 @@ python -m scenario_lab.cli check-run-integrity tests/fixtures/regression/pairwis
 python -m scenario_lab.cli check-regressions regressions.yaml
 python -m scenario_lab.cli check-regressions regressions.yaml --fail-on-diff
 python -m scenario_lab.cli check-regressions tests/fixtures/regression/pairwise-regressions.yaml
+python -m scenario_lab.cli check-regressions scenarios/sweden-ai-2030
 ```
 
-`check-regressions` runs a YAML manifest of saved-run comparisons and produces one summary report for the whole suite. Paths inside the manifest are resolved relative to the manifest file, which makes it practical for repo-local regression fixtures and CI checks.
+`check-regressions` runs one or more YAML manifests of saved-run comparisons and produces a summary report for each suite. You can pass either a manifest file or a scenario directory; when given a scenario directory, it auto-discovers pairwise manifests under `regressions/`.
 
 ### Compare distributions across sets of runs
 
 ```bash
 python -m scenario_lab.cli compare-distributions distributions.yaml
 python -m scenario_lab.cli compare-distributions tests/fixtures/regression/distribution-comparison.yaml
+python -m scenario_lab.cli compare-distributions scenarios/ai-safety-race
 ```
 
-`compare-distributions` compares sets of saved runs and reports shifts in final metric distributions, occurred-event rates, run status mix, turn counts, and cost distributions. This is intended for behavioral analysis across multiple runs rather than binary pass/fail on a single trajectory.
+`compare-distributions` compares sets of saved runs and reports shifts in final metric distributions, occurred-event rates, run status mix, turn counts, and cost distributions. You can pass either a manifest file or a scenario directory; when given a scenario directory, it auto-discovers distribution manifests under `regressions/`. This is intended for behavioral analysis across multiple runs rather than binary pass/fail on a single trajectory.
 
 Concrete scenario-local examples are included in:
 

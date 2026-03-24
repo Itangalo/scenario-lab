@@ -12,6 +12,7 @@ from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
+import yaml
 
 from .loader import load_scenario
 from .llm import LLMClient
@@ -189,6 +190,60 @@ def sanitize_batch_label(path: Path) -> str:
     source = path.stem if path.is_file() else path.name
     label = re.sub(r"[^A-Za-z0-9._-]+", "-", source).strip("-")
     return label or "scenario"
+
+
+def detect_regression_manifest_kind(manifest_path: Path) -> str:
+    """Infer whether a manifest is pairwise or distribution based on its contents."""
+    payload = yaml.safe_load(manifest_path.read_text(encoding="utf-8")) or {}
+    comparisons = payload.get("comparisons")
+    if not isinstance(comparisons, list) or not comparisons:
+        raise ValueError(f"Manifest must define a non-empty comparisons list: {manifest_path}")
+
+    baseline = comparisons[0].get("baseline") if isinstance(comparisons[0], dict) else None
+    candidate = comparisons[0].get("candidate") if isinstance(comparisons[0], dict) else None
+
+    if isinstance(baseline, str) and isinstance(candidate, str):
+        return "pairwise"
+    if isinstance(baseline, dict) and isinstance(candidate, dict):
+        return "distribution"
+    raise ValueError(f"Could not infer manifest kind from: {manifest_path}")
+
+
+def resolve_regression_manifests(target: Path, expected_kind: str) -> list[Path]:
+    """Resolve one or more manifest files from a file path or scenario directory."""
+    if target.is_file():
+        kind = detect_regression_manifest_kind(target)
+        if kind != expected_kind:
+            raise ValueError(
+                f"Expected a {expected_kind} manifest, but {target} is {kind}"
+            )
+        return [target]
+
+    if not target.is_dir():
+        raise ValueError(f"Target does not exist: {target}")
+
+    regressions_dir = target / "regressions"
+    if not regressions_dir.is_dir():
+        raise ValueError(f"No regressions/ directory found for: {target}")
+
+    manifest_paths = sorted(
+        path for path in regressions_dir.iterdir() if path.is_file() and path.suffix in {".yaml", ".yml"}
+    )
+    if not manifest_paths:
+        raise ValueError(f"No regression manifests found in: {regressions_dir}")
+
+    selected: list[Path] = []
+    for manifest_path in manifest_paths:
+        kind = detect_regression_manifest_kind(manifest_path)
+        if kind == expected_kind:
+            selected.append(manifest_path)
+
+    if not selected:
+        raise ValueError(
+            f"No {expected_kind} manifests found in: {regressions_dir}"
+        )
+
+    return selected
 
 
 def build_batch_run_specs(targets: list[Path], args: argparse.Namespace, batch_id: str) -> list[BatchJobSpec]:
@@ -837,7 +892,11 @@ def main():
         "check-regressions",
         help="Run a manifest of saved-run regression comparisons",
     )
-    regression_parser.add_argument("manifest", type=Path, help="Path to regression manifest YAML")
+    regression_parser.add_argument(
+        "manifest",
+        type=Path,
+        help="Path to a regression manifest YAML or a scenario directory with regressions/",
+    )
     regression_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
     regression_parser.add_argument(
         "--fail-on-diff",
@@ -849,7 +908,11 @@ def main():
         "compare-distributions",
         help="Compare output distributions across sets of saved runs",
     )
-    distribution_parser.add_argument("manifest", type=Path, help="Path to distribution manifest YAML")
+    distribution_parser.add_argument(
+        "manifest",
+        type=Path,
+        help="Path to a distribution manifest YAML or a scenario directory with regressions/",
+    )
     distribution_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
 
     # Estimate command
@@ -1116,33 +1179,45 @@ def main():
         from .regression import format_regression_suite, run_regression_suite
 
         try:
-            report = run_regression_suite(args.manifest)
+            manifests = resolve_regression_manifests(args.manifest, "pairwise")
         except Exception as e:
             print(f"❌ Regression check failed: {e}")
             return 1
 
-        if args.json:
-            print(json.dumps(report, indent=2, ensure_ascii=False))
-        else:
-            print(format_regression_suite(report))
+        reports = [run_regression_suite(manifest) for manifest in manifests]
 
-        should_fail = report["has_differences"] or report["has_errors"]
+        if args.json:
+            payload = reports[0] if len(reports) == 1 else {"reports": reports}
+            print(json.dumps(payload, indent=2, ensure_ascii=False))
+        else:
+            for index, report in enumerate(reports):
+                if index:
+                    print()
+                print(format_regression_suite(report))
+
+        should_fail = any(report["has_differences"] or report["has_errors"] for report in reports)
         return 1 if args.fail_on_diff and should_fail else 0
 
     if args.command == "compare-distributions":
         from .regression import compare_distributions, format_distribution_comparison
 
         try:
-            report = compare_distributions(args.manifest)
+            manifests = resolve_regression_manifests(args.manifest, "distribution")
         except Exception as e:
             print(f"❌ Distribution comparison failed: {e}")
             return 1
 
+        reports = [compare_distributions(manifest) for manifest in manifests]
+
         if args.json:
-            print(json.dumps(report, indent=2, ensure_ascii=False))
+            payload = reports[0] if len(reports) == 1 else {"reports": reports}
+            print(json.dumps(payload, indent=2, ensure_ascii=False))
         else:
-            print(format_distribution_comparison(report))
-        return 0 if report["error_count"] == 0 else 1
+            for index, report in enumerate(reports):
+                if index:
+                    print()
+                print(format_distribution_comparison(report))
+        return 0 if all(report["error_count"] == 0 for report in reports) else 1
 
     if args.command == "estimate":
         from .estimator import CostEstimator, format_estimate_report

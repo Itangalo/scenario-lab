@@ -71,9 +71,17 @@ python -m scenario_lab.cli check-regressions regressions.yaml
 python -m scenario_lab.cli check-regressions regressions.yaml --json
 python -m scenario_lab.cli check-regressions regressions.yaml --fail-on-diff
 python -m scenario_lab.cli check-regressions tests/fixtures/regression/pairwise-regressions.yaml
+python -m scenario_lab.cli check-regressions scenarios/sweden-ai-2030
 ```
 
-This command runs a suite of saved-run comparisons defined in a YAML manifest and prints one summary report.
+This command runs one or more suites of saved-run comparisons and prints one summary report per manifest.
+
+You can pass either:
+
+- a manifest file
+- a scenario directory with `regressions/`
+
+When given a scenario directory, the command auto-discovers pairwise manifests from `regressions/`.
 
 ### Compare Distributions Across Run Sets
 
@@ -81,9 +89,17 @@ This command runs a suite of saved-run comparisons defined in a YAML manifest an
 python -m scenario_lab.cli compare-distributions distributions.yaml
 python -m scenario_lab.cli compare-distributions distributions.yaml --json
 python -m scenario_lab.cli compare-distributions tests/fixtures/regression/distribution-comparison.yaml
+python -m scenario_lab.cli compare-distributions scenarios/ai-safety-race
 ```
 
 This command compares two sets of saved runs at the distribution level. It is the preferred tool for behavioral change detection when single-run variation is expected.
+
+You can pass either:
+
+- a manifest file
+- a scenario directory with `regressions/`
+
+When given a scenario directory, the command auto-discovers distribution manifests from `regressions/`.
 
 It summarizes:
 

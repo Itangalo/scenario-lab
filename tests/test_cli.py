@@ -16,6 +16,12 @@ from scenario_lab.cli import (
 from scenario_lab.model_audit import ModelRecommendation
 from scenario_lab.models import LLMConfig
 
+
+def _write_manifest(path, content: str):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+
+
 def test_cli_missing_args(capsys):
     """Test running CLI without arguments prints usage."""
     with patch("sys.argv", ["scenario_lab"]):
@@ -269,6 +275,47 @@ def test_cli_check_regressions_fail_on_diff_returns_error(tmp_path):
     assert result == 1
 
 
+def test_cli_check_regressions_accepts_scenario_directory(tmp_path):
+    """check-regressions should autodiscover pairwise manifests from a scenario directory."""
+    scenario_dir = tmp_path / "scenario"
+    regressions_dir = scenario_dir / "regressions"
+    _write_manifest(
+        regressions_dir / "pairwise.yaml",
+        "\n".join(
+            [
+                "comparisons:",
+                "  - label: pair",
+                "    baseline: ../runs/run-a",
+                "    candidate: ../runs/run-b",
+            ]
+        ),
+    )
+    _write_manifest(
+        regressions_dir / "distribution.yaml",
+        "\n".join(
+            [
+                "comparisons:",
+                "  - label: dist",
+                "    baseline:",
+                "      runs:",
+                "        - ../runs/run-a",
+                "    candidate:",
+                "      runs:",
+                "        - ../runs/run-b",
+            ]
+        ),
+    )
+
+    with patch("scenario_lab.regression.run_regression_suite", return_value={"has_differences": False, "has_errors": False}) as mock_run:
+        with patch("scenario_lab.regression.format_regression_suite", return_value="suite report"):
+            with patch("sys.argv", ["scenario_lab", "check-regressions", str(scenario_dir)]):
+                result = main()
+
+    assert result == 0
+    assert mock_run.call_count == 1
+    assert mock_run.call_args.args[0] == regressions_dir / "pairwise.yaml"
+
+
 def test_cli_check_run_integrity_returns_error_for_invalid_run(tmp_path):
     """check-run-integrity should return non-zero for invalid runs."""
     run_dir = tmp_path / "runs" / "run-bad"
@@ -309,6 +356,53 @@ def test_cli_compare_distributions_returns_error_when_suite_has_errors(tmp_path)
                 result = main()
 
     assert result == 1
+
+
+def test_cli_compare_distributions_accepts_scenario_directory(tmp_path):
+    """compare-distributions should autodiscover distribution manifests from a scenario directory."""
+    scenario_dir = tmp_path / "scenario"
+    regressions_dir = scenario_dir / "regressions"
+    _write_manifest(
+        regressions_dir / "pairwise.yaml",
+        "\n".join(
+            [
+                "comparisons:",
+                "  - label: pair",
+                "    baseline: ../runs/run-a",
+                "    candidate: ../runs/run-b",
+            ]
+        ),
+    )
+    _write_manifest(
+        regressions_dir / "distribution.yaml",
+        "\n".join(
+            [
+                "comparisons:",
+                "  - label: dist",
+                "    baseline:",
+                "      runs:",
+                "        - ../runs/run-a",
+                "    candidate:",
+                "      runs:",
+                "        - ../runs/run-b",
+            ]
+        ),
+    )
+
+    with patch(
+        "scenario_lab.regression.compare_distributions",
+        return_value={"comparison_count": 1, "error_count": 0},
+    ) as mock_compare:
+        with patch(
+            "scenario_lab.regression.format_distribution_comparison",
+            return_value="distribution report",
+        ):
+            with patch("sys.argv", ["scenario_lab", "compare-distributions", str(scenario_dir)]):
+                result = main()
+
+    assert result == 0
+    assert mock_compare.call_count == 1
+    assert mock_compare.call_args.args[0] == regressions_dir / "distribution.yaml"
 
 
 def test_cli_resume_no_additional_turns_skips_simulation(tmp_path):
