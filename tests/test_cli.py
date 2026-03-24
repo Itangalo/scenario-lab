@@ -221,6 +221,96 @@ def test_build_batch_resume_command_uses_no_progress(tmp_path):
     assert "--no-progress" in command
 
 
+def test_cli_compare_runs_fail_on_diff_returns_error(tmp_path):
+    """compare-runs should support CI-style failure when differences are present."""
+    baseline_run = tmp_path / "runs" / "run-a"
+    candidate_run = tmp_path / "runs" / "run-b"
+    baseline_run.mkdir(parents=True)
+    candidate_run.mkdir(parents=True)
+
+    with patch("scenario_lab.regression.compare_runs", return_value={"has_differences": True}):
+        with patch("scenario_lab.regression.format_run_comparison", return_value="diff report"):
+            with patch(
+                "sys.argv",
+                [
+                    "scenario_lab",
+                    "compare-runs",
+                    str(baseline_run),
+                    str(candidate_run),
+                    "--fail-on-diff",
+                ],
+            ):
+                result = main()
+
+    assert result == 1
+
+
+def test_cli_check_regressions_fail_on_diff_returns_error(tmp_path):
+    """check-regressions should fail when the suite reports differences."""
+    manifest = tmp_path / "regressions.yaml"
+    manifest.write_text("comparisons: []", encoding="utf-8")
+
+    with patch(
+        "scenario_lab.regression.run_regression_suite",
+        return_value={"has_differences": True, "has_errors": False},
+    ):
+        with patch("scenario_lab.regression.format_regression_suite", return_value="suite report"):
+            with patch(
+                "sys.argv",
+                [
+                    "scenario_lab",
+                    "check-regressions",
+                    str(manifest),
+                    "--fail-on-diff",
+                ],
+            ):
+                result = main()
+
+    assert result == 1
+
+
+def test_cli_check_run_integrity_returns_error_for_invalid_run(tmp_path):
+    """check-run-integrity should return non-zero for invalid runs."""
+    run_dir = tmp_path / "runs" / "run-bad"
+    run_dir.mkdir(parents=True)
+
+    with patch(
+        "scenario_lab.regression.check_run_integrity",
+        return_value={"is_valid": False, "run_name": "run-bad", "errors": ["bad"], "warnings": []},
+    ):
+        with patch("scenario_lab.regression.format_run_integrity", return_value="integrity report"):
+            with patch("sys.argv", ["scenario_lab", "check-run-integrity", str(run_dir)]):
+                result = main()
+
+    assert result == 1
+
+
+def test_cli_compare_distributions_returns_error_when_suite_has_errors(tmp_path):
+    """compare-distributions should return non-zero when a comparison errors."""
+    manifest = tmp_path / "distribution.yaml"
+    manifest.write_text("comparisons: []", encoding="utf-8")
+
+    with patch(
+        "scenario_lab.regression.compare_distributions",
+        return_value={"comparison_count": 1, "error_count": 1},
+    ):
+        with patch(
+            "scenario_lab.regression.format_distribution_comparison",
+            return_value="distribution report",
+        ):
+            with patch(
+                "sys.argv",
+                [
+                    "scenario_lab",
+                    "compare-distributions",
+                    str(manifest),
+                ],
+            ):
+                result = main()
+
+    assert result == 1
+
+
 def test_cli_resume_no_additional_turns_skips_simulation(tmp_path):
     """Resume should finalize immediately when start_turn is beyond requested turns."""
     run_dir = tmp_path / "scenarios" / "test-scenario" / "runs" / "run-123"

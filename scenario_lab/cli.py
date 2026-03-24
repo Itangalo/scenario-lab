@@ -812,6 +812,46 @@ def main():
     costs_parser.add_argument("run_dir", type=Path, help="Path to run directory")
     costs_parser.add_argument("--detailed", action="store_true", help="Show detailed breakdown by turn")
 
+    # Compare runs command
+    compare_runs_parser = subparsers.add_parser(
+        "compare-runs",
+        help="Compare two saved runs for regressions or divergences",
+    )
+    compare_runs_parser.add_argument("baseline_run", type=Path, help="Baseline run directory")
+    compare_runs_parser.add_argument("candidate_run", type=Path, help="Candidate run directory")
+    compare_runs_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
+    compare_runs_parser.add_argument(
+        "--fail-on-diff",
+        action="store_true",
+        help="Exit with status 1 if any differences are detected",
+    )
+
+    integrity_parser = subparsers.add_parser(
+        "check-run-integrity",
+        help="Run strict structural validation on a saved run",
+    )
+    integrity_parser.add_argument("run_dir", type=Path, help="Run directory to validate")
+    integrity_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
+
+    regression_parser = subparsers.add_parser(
+        "check-regressions",
+        help="Run a manifest of saved-run regression comparisons",
+    )
+    regression_parser.add_argument("manifest", type=Path, help="Path to regression manifest YAML")
+    regression_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
+    regression_parser.add_argument(
+        "--fail-on-diff",
+        action="store_true",
+        help="Exit with status 1 if any comparison differs or errors",
+    )
+
+    distribution_parser = subparsers.add_parser(
+        "compare-distributions",
+        help="Compare output distributions across sets of saved runs",
+    )
+    distribution_parser.add_argument("manifest", type=Path, help="Path to distribution manifest YAML")
+    distribution_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
+
     # Estimate command
     estimate_parser = subparsers.add_parser("estimate", help="Estimate costs before running")
     estimate_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
@@ -1045,6 +1085,64 @@ def main():
 
         print("=" * 60)
         return
+
+    if args.command == "compare-runs":
+        from .regression import compare_runs, format_run_comparison
+
+        try:
+            report = compare_runs(args.baseline_run, args.candidate_run)
+        except Exception as e:
+            print(f"❌ Run comparison failed: {e}")
+            return 1
+
+        if args.json:
+            print(json.dumps(report, indent=2, ensure_ascii=False))
+        else:
+            print(format_run_comparison(report))
+
+        return 1 if args.fail_on_diff and report["has_differences"] else 0
+
+    if args.command == "check-run-integrity":
+        from .regression import check_run_integrity, format_run_integrity
+
+        report = check_run_integrity(args.run_dir)
+        if args.json:
+            print(json.dumps(report, indent=2, ensure_ascii=False))
+        else:
+            print(format_run_integrity(report))
+        return 0 if report["is_valid"] else 1
+
+    if args.command == "check-regressions":
+        from .regression import format_regression_suite, run_regression_suite
+
+        try:
+            report = run_regression_suite(args.manifest)
+        except Exception as e:
+            print(f"❌ Regression check failed: {e}")
+            return 1
+
+        if args.json:
+            print(json.dumps(report, indent=2, ensure_ascii=False))
+        else:
+            print(format_regression_suite(report))
+
+        should_fail = report["has_differences"] or report["has_errors"]
+        return 1 if args.fail_on_diff and should_fail else 0
+
+    if args.command == "compare-distributions":
+        from .regression import compare_distributions, format_distribution_comparison
+
+        try:
+            report = compare_distributions(args.manifest)
+        except Exception as e:
+            print(f"❌ Distribution comparison failed: {e}")
+            return 1
+
+        if args.json:
+            print(json.dumps(report, indent=2, ensure_ascii=False))
+        else:
+            print(format_distribution_comparison(report))
+        return 0 if report["error_count"] == 0 else 1
 
     if args.command == "estimate":
         from .estimator import CostEstimator, format_estimate_report

@@ -138,6 +138,40 @@ python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHM
 
 `resume` continues the same run. `branch` creates a new run starting from a previous turn, which is useful for "what if" analysis.
 
+### Compare two saved runs
+
+```bash
+python -m scenario_lab.cli compare-runs scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS-01
+python -m scenario_lab.cli compare-runs path/to/baseline-run path/to/candidate-run --fail-on-diff
+```
+
+`compare-runs` highlights differences in final metrics, per-turn metrics, occurred events, rules versions, and total cost. `--fail-on-diff` makes it suitable for regression checks in scripts or CI.
+
+### Validate a saved run's integrity
+
+```bash
+python -m scenario_lab.cli check-run-integrity scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS
+```
+
+`check-run-integrity` performs strict structural validation of a saved run: required files, JSON readability, turn numbering, summary/history consistency, and alignment between `summary.json` and persisted turn metrics.
+
+### Check a regression manifest
+
+```bash
+python -m scenario_lab.cli check-regressions regressions.yaml
+python -m scenario_lab.cli check-regressions regressions.yaml --fail-on-diff
+```
+
+`check-regressions` runs a YAML manifest of saved-run comparisons and produces one summary report for the whole suite. Paths inside the manifest are resolved relative to the manifest file, which makes it practical for repo-local regression fixtures and CI checks.
+
+### Compare distributions across sets of runs
+
+```bash
+python -m scenario_lab.cli compare-distributions distributions.yaml
+```
+
+`compare-distributions` compares sets of saved runs and reports shifts in final metric distributions, occurred-event rates, run status mix, turn counts, and cost distributions. This is intended for behavioral analysis across multiple runs rather than binary pass/fail on a single trajectory.
+
 ### Run many scenarios in parallel
 
 ```bash
@@ -248,6 +282,7 @@ Use the docs as separate sources of truth:
 
 - [docs/SCENARIO_CREATION_WITH_AGENT.md](docs/SCENARIO_CREATION_WITH_AGENT.md) (process/workflow)
 - [docs/SCENARIO_TECHNICAL_REFERENCE.md](docs/SCENARIO_TECHNICAL_REFERENCE.md) (technical format/specification)
+- [docs/REGRESSION_TESTING.md](docs/REGRESSION_TESTING.md) (saved-run regression workflow)
 
 In short:
 
