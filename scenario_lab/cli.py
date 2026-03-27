@@ -273,6 +273,60 @@ def resolve_integrity_targets(target: Path, max_runs: Optional[int] = None) -> l
     )
 
 
+def build_quality_report(
+    target: Path,
+    integrity_summary: dict,
+    regression_reports: list[dict],
+    distribution_reports: list[dict],
+) -> dict:
+    """Build a unified quality-check report."""
+    return {
+        "target": str(target.resolve()),
+        "integrity": integrity_summary,
+        "regressions": regression_reports,
+        "distributions": distribution_reports,
+    }
+
+
+def format_quality_report(report: dict) -> str:
+    """Format a unified quality-check report."""
+    integrity = report["integrity"]
+    lines = [
+        "=" * 60,
+        "QUALITY CHECK",
+        "=" * 60,
+        f"Target              : {report['target']}",
+        f"Integrity runs      : {integrity['run_count']}",
+        f"Integrity invalid   : {integrity['invalid_count']}",
+        f"Integrity warnings  : {integrity['warning_count']}",
+        f"Regression suites   : {len(report['regressions'])}",
+        f"Distribution suites : {len(report['distributions'])}",
+    ]
+
+    if integrity["reports"]:
+        lines.extend(["", "Integrity summary:"])
+        for item in integrity["reports"]:
+            status = "VALID" if item["is_valid"] else "INVALID"
+            warning_note = f", warnings={len(item['warnings'])}" if item["warnings"] else ""
+            lines.append(f"  - {item['run_name']}: {status}{warning_note}")
+
+    if report["regressions"]:
+        lines.extend(["", "Regression summary:"])
+        for suite in report["regressions"]:
+            lines.append(
+                f"  - {Path(suite['manifest_path']).name}: diffs={suite['differing_count']}, errors={suite['error_count']}"
+            )
+
+    if report["distributions"]:
+        lines.extend(["", "Distribution summary:"])
+        for suite in report["distributions"]:
+            lines.append(
+                f"  - {Path(suite['manifest_path']).name}: comparisons={suite['comparison_count']}, errors={suite['error_count']}"
+            )
+
+    return "\n".join(lines)
+
+
 def build_batch_run_specs(targets: list[Path], args: argparse.Namespace, batch_id: str) -> list[BatchJobSpec]:
     """Build batch-run job specs."""
     specs: list[BatchJobSpec] = []
@@ -952,6 +1006,28 @@ def main():
     )
     distribution_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
 
+    quality_parser = subparsers.add_parser(
+        "quality-check",
+        help="Run integrity, regression, and distribution checks for a target",
+    )
+    quality_parser.add_argument(
+        "target",
+        type=Path,
+        help="Run directory, runs/ directory, scenario directory, or manifest-backed scenario target",
+    )
+    quality_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
+    quality_parser.add_argument(
+        "--max-runs",
+        type=int,
+        default=None,
+        help="When checking runs from a scenario or runs/ directory, only inspect the most recent N runs",
+    )
+    quality_parser.add_argument(
+        "--fail-on-diff",
+        action="store_true",
+        help="Exit with status 1 when pairwise regression suites contain differences",
+    )
+
     # Estimate command
     estimate_parser = subparsers.add_parser("estimate", help="Estimate costs before running")
     estimate_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
@@ -1275,6 +1351,63 @@ def main():
                     print()
                 print(format_distribution_comparison(report))
         return 0 if all(report["error_count"] == 0 for report in reports) else 1
+
+    if args.command == "quality-check":
+        from .regression import (
+            check_run_integrity,
+            compare_distributions,
+            run_regression_suite,
+            summarize_integrity_reports,
+        )
+
+        try:
+            run_dirs = resolve_integrity_targets(args.target, max_runs=args.max_runs)
+        except Exception as e:
+            print(f"❌ Quality check failed during integrity target resolution: {e}")
+            return 1
+
+        integrity_reports = [check_run_integrity(run_dir) for run_dir in run_dirs]
+        integrity_summary = summarize_integrity_reports(
+            integrity_reports,
+            str(args.target.resolve()),
+        )
+
+        regression_reports: list[dict] = []
+        distribution_reports: list[dict] = []
+        if args.target.is_dir() and (args.target / "regressions").is_dir():
+            try:
+                manifests = resolve_regression_manifests(args.target, "pairwise")
+                regression_reports = [run_regression_suite(manifest) for manifest in manifests]
+            except ValueError:
+                regression_reports = []
+
+            try:
+                manifests = resolve_regression_manifests(args.target, "distribution")
+                distribution_reports = [compare_distributions(manifest) for manifest in manifests]
+            except ValueError:
+                distribution_reports = []
+
+        report = build_quality_report(
+            args.target,
+            integrity_summary,
+            regression_reports,
+            distribution_reports,
+        )
+
+        if args.json:
+            print(json.dumps(report, indent=2, ensure_ascii=False))
+        else:
+            print(format_quality_report(report))
+
+        has_invalid_integrity = integrity_summary["invalid_count"] > 0
+        has_regression_errors = any(item["has_errors"] for item in regression_reports)
+        has_distribution_errors = any(item["error_count"] > 0 for item in distribution_reports)
+        has_regression_diffs = any(item["has_differences"] for item in regression_reports)
+
+        should_fail = has_invalid_integrity or has_regression_errors or has_distribution_errors
+        if args.fail_on_diff:
+            should_fail = should_fail or has_regression_diffs
+        return 1 if should_fail else 0
 
     if args.command == "estimate":
         from .estimator import CostEstimator, format_estimate_report

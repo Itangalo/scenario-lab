@@ -457,6 +457,89 @@ def test_cli_compare_distributions_accepts_scenario_directory(tmp_path):
     assert mock_compare.call_args.args[0] == regressions_dir / "distribution.yaml"
 
 
+def test_cli_quality_check_accepts_scenario_directory_without_failing_on_diffs(tmp_path):
+    """quality-check should aggregate integrity and manifest checks for a scenario directory."""
+    scenario_dir = tmp_path / "scenario"
+    runs_dir = scenario_dir / "runs"
+    regressions_dir = scenario_dir / "regressions"
+    (runs_dir / "run-001").mkdir(parents=True)
+    _write_manifest(
+        regressions_dir / "pairwise.yaml",
+        "\n".join(
+            [
+                "comparisons:",
+                "  - label: pair",
+                "    baseline: ../runs/run-a",
+                "    candidate: ../runs/run-b",
+            ]
+        ),
+    )
+    _write_manifest(
+        regressions_dir / "distribution.yaml",
+        "\n".join(
+            [
+                "comparisons:",
+                "  - label: dist",
+                "    baseline:",
+                "      runs:",
+                "        - ../runs/run-a",
+                "    candidate:",
+                "      runs:",
+                "        - ../runs/run-b",
+            ]
+        ),
+    )
+
+    with patch(
+        "scenario_lab.regression.check_run_integrity",
+        return_value={"run_name": "run-001", "is_valid": True, "errors": [], "warnings": []},
+    ):
+        with patch(
+            "scenario_lab.regression.run_regression_suite",
+            return_value={"has_differences": True, "has_errors": False, "manifest_path": "pairwise.yaml", "differing_count": 1, "error_count": 0},
+        ):
+            with patch(
+                "scenario_lab.regression.compare_distributions",
+                return_value={"comparison_count": 1, "error_count": 0, "manifest_path": "distribution.yaml"},
+            ):
+                with patch("sys.argv", ["scenario_lab", "quality-check", str(scenario_dir)]):
+                    result = main()
+
+    assert result == 0
+
+
+def test_cli_quality_check_fail_on_diff_returns_error(tmp_path):
+    """quality-check --fail-on-diff should fail when pairwise suites differ."""
+    scenario_dir = tmp_path / "scenario"
+    runs_dir = scenario_dir / "runs"
+    regressions_dir = scenario_dir / "regressions"
+    (runs_dir / "run-001").mkdir(parents=True)
+    _write_manifest(
+        regressions_dir / "pairwise.yaml",
+        "\n".join(
+            [
+                "comparisons:",
+                "  - label: pair",
+                "    baseline: ../runs/run-a",
+                "    candidate: ../runs/run-b",
+            ]
+        ),
+    )
+
+    with patch(
+        "scenario_lab.regression.check_run_integrity",
+        return_value={"run_name": "run-001", "is_valid": True, "errors": [], "warnings": []},
+    ):
+        with patch(
+            "scenario_lab.regression.run_regression_suite",
+            return_value={"has_differences": True, "has_errors": False, "manifest_path": "pairwise.yaml", "differing_count": 1, "error_count": 0},
+        ):
+            with patch("sys.argv", ["scenario_lab", "quality-check", str(scenario_dir), "--fail-on-diff"]):
+                result = main()
+
+    assert result == 1
+
+
 def test_cli_resume_no_additional_turns_skips_simulation(tmp_path):
     """Resume should finalize immediately when start_turn is beyond requested turns."""
     run_dir = tmp_path / "scenarios" / "test-scenario" / "runs" / "run-123"

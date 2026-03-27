@@ -183,6 +183,15 @@ Concrete scenario-local examples are included in:
 - `scenarios/sweden-ai-2030/regressions/`
 - `scenarios/ai-safety-race/regressions/`
 
+### Run a combined quality check
+
+```bash
+python -m scenario_lab.cli quality-check scenarios/sweden-ai-2030 --max-runs 5
+python -m scenario_lab.cli quality-check scenarios/ai-safety-race --fail-on-diff
+```
+
+`quality-check` combines run integrity checks with any auto-discovered pairwise regression and distribution manifests for a scenario. By default it fails on structural errors; `--fail-on-diff` additionally makes pairwise regression differences fail the command.
+
 ### Run many scenarios in parallel
 
 ```bash

@@ -118,6 +118,27 @@ It summarizes:
 - turn-count distributions
 - cost distributions
 
+### Run a Combined Quality Check
+
+```bash
+python -m scenario_lab.cli quality-check scenarios/sweden-ai-2030 --max-runs 5
+python -m scenario_lab.cli quality-check scenarios/ai-safety-race --fail-on-diff
+python -m scenario_lab.cli quality-check scenarios/sweden-ai-2030 --json
+```
+
+This command combines the current layers into one scenario-level workflow:
+
+1. strict integrity checks across one or more runs
+2. pairwise regression suites from `regressions/`
+3. distribution comparisons from `regressions/`
+
+Exit behavior:
+
+- structural invalidity always fails
+- pairwise regression errors always fail
+- distribution comparison errors always fail
+- pairwise differences only fail when `--fail-on-diff` is set
+
 ## Manifest Format
 
 Minimal example:
