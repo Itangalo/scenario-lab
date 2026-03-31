@@ -254,6 +254,7 @@ scenarios/<scenario>/runs/run-YYYYMMDD-HHMMSS/
     ├── 1-events.json
     ├── 2-actors/
     ├── 3-metric-rules.md
+    ├── 3-metric-rules-metadata.json
     ├── 4-metrics.json
     ├── 4-world-state.md
     ├── 5-constitutional-check.json   # if the scenario uses a constitution
@@ -278,6 +279,8 @@ scenarios/my-scenario/
 ├── metric-rules.md
 ├── events.md
 ├── constitution.md           # optional
+├── system-prompts/           # optional
+├── user-prompts/             # optional
 ├── background/
 │   ├── context.md
 │   └── actors/

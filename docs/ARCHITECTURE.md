@@ -143,7 +143,7 @@ Each turn executes the following steps in order:
   * **Purpose:** Prevent context window explosion over long simulations.
 
 ### Prompt Engineering (`prompts.py` & Templates)
-- **Jinja2 Templates:** All prompts are generated using Jinja2 templates located in `scenarios/{name}/system-prompts/` and `scenarios/{name}/user-prompts/`, defaulting to `templates/systemp-prompts/` and `templates/user-prompts/` if none are found.
+- **Jinja2 Templates:** All prompts are generated using Jinja2 templates located in `scenarios/{name}/system-prompts/` and `scenarios/{name}/user-prompts/`, defaulting to `templates/system-prompts/` and `templates/user-prompts/` if none are found.
 - **Context:** Templates receive a rich context object including `turn`, `time_period`, `metrics_json`, `world_state`, `events_list`, and individual metric variables (`metric_X`).
 - **Output Language:** The `output_language` setting injects instructions into templates to control the language of the LLM's response (e.g., "Please write your response in Swedish").
 
@@ -329,8 +329,8 @@ The `5-constitutional-check.json` file (when present) includes:
 
 **Token Usage Tracking:**
 - `TokenUsage` dataclass stores prompt_tokens, completion_tokens, total_tokens, and model
-- `LLMClient` tracks usage for every API call in `call_history` and maintains `total_usage`
-- Token counts extracted from OpenRouter API responses
+- Token counts are extracted from OpenRouter API responses via `LLMResponse.get_usage()`
+- The orchestrator converts token usage into `CostDetails` and records them in `CostTracker`
 - Cost estimation based on OpenRouter pricing snapshots (per 1M tokens)
 
 **Pricing Cache:**

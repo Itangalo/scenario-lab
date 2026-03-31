@@ -58,6 +58,8 @@ Optional top-level fields:
 - `output_language` (string)
 - `base` (relative path to a base scenario YAML)
 - `llm` (object)
+- `rule_evolution` (object)
+- `constitutional_enforcement` (object)
 
 ### `start_date` and `time_scale`
 
@@ -142,6 +144,41 @@ Validation rules:
 - `max_tokens` and `max_tokens_by_task[*]` must be integers in `[100, 100000]`
 - `max_tokens_by_task` keys must be one of:
   - `events`, `actors`, `rules`, `metrics`, `summary`, `referee`
+
+### `rule_evolution`
+
+Optional guardrails for how freely `metric-rules.md` may change during runs:
+
+```yaml
+rule_evolution:
+  freeze_until_turn: 2
+  max_changes_per_turn: 4
+```
+
+Supported fields:
+
+- `freeze_until_turn` (integer, default `0`)
+- `max_changes_per_turn` (integer, default `6`)
+
+Behavior:
+
+- when `turn <= freeze_until_turn`, the rules LLM step is skipped and the previous rules are carried forward in a new versioned wrapper
+- after the freeze window, rule updates are expected to stay within `max_changes_per_turn`
+
+### `constitutional_enforcement`
+
+Optional guardrails for the constitutional referee retry/fallback policy:
+
+```yaml
+constitutional_enforcement:
+  max_attempts: 2
+  on_failure: accept_with_violations
+```
+
+Supported fields:
+
+- `max_attempts` (integer, default `2`)
+- `on_failure` (string, one of `accept_with_violations` or `revert_to_previous`)
 
 ## `metrics.md`
 
@@ -285,6 +322,11 @@ Recognized files:
 - `metrics-update.md`
 - `constitutional-referee.md`
 - `constitutional-referee-correction.md`
+
+Notes:
+
+- default shared templates also include summarization and format-fix prompts under `templates/`
+- scenario-local overrides are currently supported only for the files listed above
 
 ## Validation Command
 
