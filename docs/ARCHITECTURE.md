@@ -347,6 +347,7 @@ The `5-constitutional-check.json` file (when present) includes:
 **CLI Commands:**
 - `estimate`: Pre-run cost estimation based on scenario configuration
 - `costs`: Display cost report for completed runs with optional `--detailed` breakdown
+- `refresh-pricing`: Force-refresh the local OpenRouter pricing cache used by cost estimation
 
 **Value:**
 - Budget control and planning
@@ -393,7 +394,7 @@ Cost so far: $0.15 | Projected total: $0.50
 
 ### CLI (`cli.py`)
 - **Entry Point:** `python -m scenario_lab.cli`.
-- **Commands:** `run`, `batch-run`, `batch-resume`, `resume`, `branch`, `validate`, `audit-models`, `visualize`, `costs`, `estimate`
+- **Commands:** `run`, `batch-run`, `batch-resume`, `resume`, `branch`, `validate`, `audit-models`, `visualize`, `costs`, `estimate`, `refresh-pricing`
 - **Overrides:** Supports `--override key=value` to modify configuration at runtime (e.g., `--override output_language=Spanish`).
 - **Validation:** Supports `--validate` flag to validate scenarios before running
 - **Model Preflight:** `run` performs model hygiene checks by default and can be bypassed with `--skip-model-checks`

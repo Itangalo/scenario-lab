@@ -3,6 +3,7 @@
 import pytest
 import sys
 import json
+from pathlib import Path
 from unittest.mock import patch, MagicMock
 from scenario_lab.cli import (
     build_batch_resume_command,
@@ -169,6 +170,48 @@ def test_cli_run_skip_model_checks_bypasses_preflight(tmp_path):
                         main()
 
     mock_preflight.assert_not_called()
+
+
+def test_cli_refresh_pricing_success_json(capsys):
+    """refresh-pricing should report refreshed cache metadata."""
+    class FakePricingCache:
+        def __init__(self):
+            self.cache_path = Path("/tmp/openrouter-pricing.json")
+            self._snapshot = {
+                "fetched_at": "2026-03-31T12:00:00Z",
+                "models": {"a/model": {"prompt": 1.0, "completion": 2.0}},
+            }
+
+        def refresh(self):
+            return True
+
+    with patch("scenario_lab.pricing.OpenRouterPricingCache", FakePricingCache):
+        with patch("sys.argv", ["scenario_lab", "refresh-pricing", "--json"]):
+            assert main() == 0
+
+    captured = capsys.readouterr()
+    payload = json.loads(captured.out)
+    assert payload["status"] == "ok"
+    assert payload["model_count"] == 1
+    assert payload["cache_path"] == "/tmp/openrouter-pricing.json"
+
+
+def test_cli_refresh_pricing_failure(capsys):
+    """refresh-pricing should fail cleanly when OpenRouter refresh fails."""
+    class FakePricingCache:
+        def __init__(self):
+            self.cache_path = Path("/tmp/openrouter-pricing.json")
+            self._snapshot = None
+
+        def refresh(self):
+            return False
+
+    with patch("scenario_lab.pricing.OpenRouterPricingCache", FakePricingCache):
+        with patch("sys.argv", ["scenario_lab", "refresh-pricing"]):
+            assert main() == 1
+
+    captured = capsys.readouterr()
+    assert "Could not fetch pricing from OpenRouter" in captured.out
 
 
 def test_summarize_batch_activity_uses_short_aliases():

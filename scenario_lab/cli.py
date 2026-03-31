@@ -1034,6 +1034,16 @@ def main():
     estimate_parser.add_argument("--turns", type=int, help="Number of turns (default: from config)")
     estimate_parser.add_argument("--model", type=str, help="Override all LLM models for estimation")
 
+    refresh_pricing_parser = subparsers.add_parser(
+        "refresh-pricing",
+        help="Refresh the cached OpenRouter pricing snapshot",
+    )
+    refresh_pricing_parser.add_argument(
+        "--json",
+        action="store_true",
+        help="Print refresh metadata as JSON",
+    )
+
     # Calibrate command
     calibrate_parser = subparsers.add_parser(
         "calibrate",
@@ -1435,6 +1445,47 @@ def main():
         report = format_estimate_report(estimate, scenario.config.name, num_turns)
         print(report)
         return
+
+    if args.command == "refresh-pricing":
+        from .pricing import OpenRouterPricingCache
+
+        cache = OpenRouterPricingCache()
+        if not args.json:
+            print("Refreshing OpenRouter pricing cache...")
+
+        if not cache.refresh():
+            if args.json:
+                print(
+                    json.dumps(
+                        {
+                            "status": "error",
+                            "cache_path": str(cache.cache_path),
+                            "message": "Could not fetch pricing from OpenRouter.",
+                        },
+                        indent=2,
+                        ensure_ascii=False,
+                    )
+                )
+            else:
+                print("❌ Could not fetch pricing from OpenRouter.")
+                print(f"   Cache path: {cache.cache_path}")
+            return 1
+
+        snapshot = cache._snapshot or {"models": {}, "fetched_at": None}
+        payload = {
+            "status": "ok",
+            "cache_path": str(cache.cache_path),
+            "fetched_at": snapshot.get("fetched_at"),
+            "model_count": len(snapshot.get("models", {})),
+        }
+
+        if args.json:
+            print(json.dumps(payload, indent=2, ensure_ascii=False))
+        else:
+            print(f"✅ Cached {payload['model_count']} models")
+            print(f"   Fetched at: {payload['fetched_at']}")
+            print(f"   Cache path: {payload['cache_path']}")
+        return 0
 
     if args.command == "calibrate":
         from .calibration import analyze_runs, format_analysis_report

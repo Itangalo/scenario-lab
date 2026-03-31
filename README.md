@@ -124,6 +124,7 @@ Validation checks:
 python -m scenario_lab.cli estimate scenarios/sweden-ai-2030 --turns 10
 python -m scenario_lab.cli costs scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS
 python -m scenario_lab.cli costs scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --detailed
+python -m scenario_lab.cli refresh-pricing
 ```
 
 ### Resume or branch from an earlier run
