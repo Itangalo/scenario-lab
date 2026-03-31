@@ -8,6 +8,26 @@ The guiding principle is simple:
 - Treat Mirofish-inspired ideas mainly as improvements to ingest, analysis, visualization, and UX.
 - Avoid changes that weaken the pure LLM architecture by moving scenario logic into Python.
 
+## Pre-release Checklist
+
+These items must be completed before any public or semi-public release.
+
+### Must-do
+
+- [ ] Clean up the scenarios directory so only polished, tested scenarios remain.
+- [ ] Review and tighten all documentation so it reads coherently to a new user.
+- [ ] Revisit batch analysis features and make sure they work in a meaningful way — likely requires some development work.
+- [ ] Run a proper test batch: ~50 simulations of the same scenario, including at least one run with non-budget LLMs.
+
+### Nice to Have
+
+- [ ] Videos showing how to use the tool and what you get out of it.
+- [ ] Better workflow for creating new scenarios.
+- [ ] Graphical user interface.
+- [ ] Support for running local LLMs.
+
+---
+
 ## Prioritization Lens
 
 Each candidate improvement should be judged against four questions:
