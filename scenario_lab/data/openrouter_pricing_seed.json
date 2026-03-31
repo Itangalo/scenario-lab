@@ -1,0 +1,86 @@
+{
+  "fetched_at": "2026-03-31T00:00:00Z",
+  "source": "bundled-seed",
+  "models": {
+    "x-ai/grok-4.1-fast": {
+      "prompt": 0.2,
+      "completion": 0.5
+    },
+    "qwen/qwen3-235b-a22b-2507": {
+      "prompt": 0.071,
+      "completion": 0.1
+    },
+    "qwen/qwen3-235b-a22b": {
+      "prompt": 0.455,
+      "completion": 1.82
+    },
+    "qwen/qwen3-235b-a22b-thinking-2507": {
+      "prompt": 0.15,
+      "completion": 1.5
+    },
+    "google/gemini-3-flash-preview": {
+      "prompt": 1.25,
+      "completion": 5.0
+    },
+    "x-ai/grok-4": {
+      "prompt": 10.0,
+      "completion": 10.0
+    },
+    "x-ai/grok-beta": {
+      "prompt": 5.0,
+      "completion": 15.0
+    },
+    "google/gemini-2.0-flash-exp:free": {
+      "prompt": 0.0,
+      "completion": 0.0
+    },
+    "google/gemini-2.5-flash": {
+      "prompt": 0.3,
+      "completion": 2.5
+    },
+    "google/gemini-2.0-flash-001": {
+      "prompt": 0.1,
+      "completion": 0.4
+    },
+    "anthropic/claude-haiku-4-5": {
+      "prompt": 1.0,
+      "completion": 5.0
+    },
+    "deepseek/deepseek-chat": {
+      "prompt": 0.14,
+      "completion": 0.28
+    },
+    "deepseek/deepseek-chat-v3-0324": {
+      "prompt": 0.27,
+      "completion": 1.1
+    },
+    "meta-llama/llama-3.3-70b-instruct": {
+      "prompt": 0.35,
+      "completion": 0.4
+    },
+    "meta-llama/llama-3.1-405b-instruct": {
+      "prompt": 2.7,
+      "completion": 2.7
+    },
+    "meta-llama/llama-3.1-70b-instruct": {
+      "prompt": 0.35,
+      "completion": 0.4
+    },
+    "mistralai/mistral-large": {
+      "prompt": 2.0,
+      "completion": 6.0
+    },
+    "mistralai/mistral-medium": {
+      "prompt": 2.7,
+      "completion": 8.1
+    },
+    "mistralai/mixtral-8x7b-instruct": {
+      "prompt": 0.24,
+      "completion": 0.24
+    },
+    "moonshotai/kimi-k2": {
+      "prompt": 0.55,
+      "completion": 2.2
+    }
+  }
+}

@@ -328,16 +328,16 @@ The `5-constitutional-check.json` file (when present) includes:
 **Purpose:** Track token usage and estimate costs to help users budget and optimize LLM API spending.
 
 **Token Usage Tracking:**
-- `TokenUsage` dataclass stores prompt_tokens, completion_tokens, total_tokens, model, and estimated_cost_usd
+- `TokenUsage` dataclass stores prompt_tokens, completion_tokens, total_tokens, and model
 - `LLMClient` tracks usage for every API call in `call_history` and maintains `total_usage`
 - Token counts extracted from OpenRouter API responses
-- Cost estimation based on pricing table for common models (per 1M tokens)
+- Cost estimation based on OpenRouter pricing snapshots (per 1M tokens)
 
-**Pricing Table:**
-- Maintains pricing for common models (Claude, GPT, Grok, etc.)
-- Pricing in USD per 1M tokens (separate for prompt and completion)
-- Returns $0.00 for unknown models with warning
-- Can be updated as model pricing changes
+**Pricing Cache:**
+- Pricing seed data lives in `scenario_lab/data/openrouter_pricing_seed.json`, not inline in Python code
+- Runtime refreshes are cached in `.scenario-lab-cache/openrouter-pricing.json`
+- If the cached snapshot is older than the configured TTL, or a required model is missing, the cost layer refreshes from OpenRouter before estimating again
+- If OpenRouter is unavailable, the calculator falls back to the latest cached snapshot; only when no pricing is available does it use a conservative default with warning
 
 **Cost Reporting:**
 - Saved to `costs.json` in run directory with detailed breakdown

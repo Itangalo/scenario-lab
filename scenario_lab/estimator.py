@@ -2,7 +2,7 @@
 
 from .models import Scenario
 from .prompts import PromptBuilder
-from .cost import CostCalculator, estimate_tokens, MODEL_PRICING
+from .cost import CostCalculator, estimate_tokens
 
 
 class CostEstimator:
