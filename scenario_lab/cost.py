@@ -1,8 +1,9 @@
 """Cost tracking and reporting for LLM API calls."""
 
-from dataclasses import dataclass, field
-from typing import Optional
 from collections import defaultdict
+from dataclasses import dataclass, field
+import re
+from typing import Optional
 
 from .pricing import DEFAULT_PRICING, get_pricing_cache
 
@@ -118,15 +119,26 @@ class CostCalculator:
         Returns:
             Normalized model name
         """
-        # Remove :free suffix and other variations
-        if ":" in model:
-            base_model = model.split(":")[0]
-            # Keep the full model id when the cache knows that exact variant.
-            if CostCalculator._pricing_cache.get_model_pricing(model) is not None:
-                return model
-            return base_model
+        if CostCalculator._pricing_cache.get_model_pricing(model) is not None:
+            return model
 
-        return model
+        normalized = model
+
+        # Remove :free suffix and other variations
+        if ":" in normalized:
+            base_model = normalized.split(":")[0]
+            normalized = base_model
+
+        # OpenRouter sometimes returns a dated model revision such as
+        # `openai/gpt-5.4-nano-20260317` while pricing is published under the
+        # stable base id `openai/gpt-5.4-nano`.
+        dated_revision = re.match(r"^(?P<base>.+)-\d{8}$", normalized)
+        if dated_revision:
+            base_model = dated_revision.group("base")
+            if CostCalculator._pricing_cache.get_model_pricing(base_model) is not None:
+                return base_model
+
+        return normalized
 
     @staticmethod
     def get_model_pricing(model: str) -> dict:

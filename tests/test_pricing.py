@@ -3,6 +3,7 @@
 from datetime import datetime, timedelta, timezone
 import json
 
+from scenario_lab.cost import CostCalculator
 from scenario_lab.pricing import OpenRouterPricingCache
 
 
@@ -157,3 +158,51 @@ def test_pricing_cache_falls_back_to_stale_data_when_refresh_fails(monkeypatch, 
         "prompt": 7.0,
         "completion": 8.0,
     }
+
+
+class _FakePricingCache:
+    def __init__(self, prices: dict[str, dict[str, float]]):
+        self.prices = prices
+
+    def get_model_pricing(self, model: str):
+        return self.prices.get(model)
+
+
+def test_cost_normalization_maps_dated_openrouter_revision_to_base(monkeypatch):
+    """Dated OpenRouter model ids should resolve to the stable base model price."""
+    monkeypatch.setattr(
+        CostCalculator,
+        "_pricing_cache",
+        _FakePricingCache(
+            {
+                "openai/gpt-5.4-nano": {"prompt": 0.2, "completion": 1.25},
+            }
+        ),
+    )
+
+    assert (
+        CostCalculator.normalize_model_name("openai/gpt-5.4-nano-20260317")
+        == "openai/gpt-5.4-nano"
+    )
+
+
+def test_cost_normalization_keeps_exact_dated_model_when_cache_knows_it(monkeypatch):
+    """Exact cache hits should win over stripping a dated suffix."""
+    monkeypatch.setattr(
+        CostCalculator,
+        "_pricing_cache",
+        _FakePricingCache(
+            {
+                "openai/gpt-5.4-nano": {"prompt": 0.2, "completion": 1.25},
+                "openai/gpt-5.4-nano-20260317": {
+                    "prompt": 0.21,
+                    "completion": 1.3,
+                },
+            }
+        ),
+    )
+
+    assert (
+        CostCalculator.get_model_pricing("openai/gpt-5.4-nano-20260317")
+        == {"prompt": 0.21, "completion": 1.3}
+    )
