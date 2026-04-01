@@ -130,6 +130,7 @@ def load_custom_user_prompts(scenario_dir: Path) -> dict[str, str]:
         "actor.md",
         "metric-rules.md",
         "metrics-update.md",
+        "analysis.md",
         "constitutional-referee.md",
         "constitutional-referee-correction.md",
     ]
@@ -169,6 +170,7 @@ def load_custom_system_prompts(scenario_dir: Path, actor_ids: list[str]) -> dict
         "metric-rules.md",
         "metrics-update.md",
         "actor.md",
+        "analysis.md",
         "constitutional-referee.md",
         "constitutional-referee-correction.md",
     ]
@@ -283,6 +285,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "rules": base_config.llm.rules,
                     "metrics": base_config.llm.metrics,
                     "summary": base_config.llm.summary,
+                    "analysis": base_config.llm.analysis,
                     "referee": base_config.llm.referee,
                     "temperature": base_config.llm.temperature,
                     "max_tokens": base_config.llm.max_tokens,
@@ -313,6 +316,10 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             rules=llm_data.get("model", "google/gemini-3-flash-preview"),
             metrics=llm_data.get("model", "google/gemini-3-flash-preview"),
             summary=llm_data.get("summary", llm_data.get("model", "google/gemini-3-flash-preview")),
+            analysis=llm_data.get(
+                "analysis",
+                llm_data.get("summary", llm_data.get("model", "google/gemini-3-flash-preview")),
+            ),
             referee=llm_data.get("referee", "x-ai/grok-4.1-fast"),
             temperature=llm_data.get("temperature", 0.7),
             max_tokens=llm_data.get("max_tokens", 2000),
@@ -326,6 +333,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             rules=llm_data.get("rules", "google/gemini-3-flash-preview"),
             metrics=llm_data.get("metrics", "google/gemini-3-flash-preview"),
             summary=llm_data.get("summary", "x-ai/grok-4.1-fast"),
+            analysis=llm_data.get("analysis", llm_data.get("summary", "x-ai/grok-4.1-fast")),
             referee=llm_data.get("referee", "x-ai/grok-4.1-fast"),
             temperature=llm_data.get("temperature", 0.7),
             max_tokens=llm_data.get("max_tokens", 2000),

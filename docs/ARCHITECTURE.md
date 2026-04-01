@@ -63,7 +63,7 @@ V4 represents a radical simplification from previous versions. Instead of comple
 
 ### File Structure & Loading (`loader.py`)
 - **`scenario.yaml`**: Configuration (time scale, actors, LLM settings, output language).
-  * **LLM Settings:** Includes per-task model configuration (`events`, `actors`, `rules`, `metrics`, `summary`, `referee`).
+  * **LLM Settings:** Includes per-task model configuration (`events`, `actors`, `rules`, `metrics`, `summary`, `analysis`, `referee`).
   * **Token Budgets:** Supports global `llm.max_tokens` plus optional per-task overrides via `llm.max_tokens_by_task` (for example, higher cap for `rules` to reduce truncation).
   * **Rule Evolution Policy:** Optional `rule_evolution.freeze_until_turn` and `rule_evolution.max_changes_per_turn` let scenarios make early rules effectively fixed and keep later rule edits small.
   * **Constitutional Enforcement Policy:** Optional `constitutional_enforcement.max_attempts` and `constitutional_enforcement.on_failure` tune how hard the referee gate is.
@@ -169,6 +169,15 @@ Each turn executes the following steps in order:
 - **Logging:** Each batch job writes its stdout/stderr to a per-job log file under the owning scenario's `runs/batch-logs/` directory.
 - **Model Checks:** Batch jobs bypass interactive model preflight prompts so unattended runs do not block on TTY input.
 - **Batch Resume:** `python -m scenario_lab.cli batch-resume <target...> [options]` resumes multiple runs with the same bounded-concurrency/process-isolation model. Scenario directories and `runs/` directories expand to incomplete `run-*` directories automatically; explicit run directories are resumed directly.
+
+### Run Analysis (`analysis.py`)
+- **CLI Command:** `python -m scenario_lab.cli analyze <run-dir> [options]`
+- **Purpose:** Generates a post-run analysis report from persisted artifacts in a completed run directory.
+- **Inputs:** Reads the run snapshot (`config.json`, `summary.json`, optional `costs.json`) plus per-turn artifacts such as triggered events, actor outputs, metric rules, metrics, world-state narrative, referee results, notepad, and historical summary.
+- **Scenario Context:** Also reloads the owning scenario definition so the analysis step sees the intended metrics, events, actors, initial metric rules, and optional constitution.
+- **Prompting:** Uses the same template override pattern as simulation prompts, with default templates under `templates/system-prompts/analysis.md` and `templates/user-prompts/analysis.md`, and optional scenario overrides under `system-prompts/analysis.md` and `user-prompts/analysis.md`.
+- **Context Handling:** Attempts to include rich turn-level artifacts directly; if the prompt would become too large, long artifact sections are truncated into a more condensed context before the final analysis call.
+- **Output:** Saves `analysis.md` by default, or `analysis.json` with `--json`. `--no-save` leaves the report unsaved and prints only a short top-line summary to stdout.
 
 ### Resume & Branching (`resume.py`)
 

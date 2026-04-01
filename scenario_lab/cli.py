@@ -15,6 +15,7 @@ from dotenv import load_dotenv
 import yaml
 from typing import Optional
 
+from .analysis import generate_run_analysis
 from .loader import load_scenario
 from .llm import LLMClient
 from .model_audit import (
@@ -38,6 +39,7 @@ def apply_model_override(llm_config, model: str):
     llm_config.rules = model
     llm_config.metrics = model
     llm_config.summary = model
+    llm_config.analysis = model
     llm_config.referee = model
 
 
@@ -948,6 +950,13 @@ def main():
     costs_parser.add_argument("run_dir", type=Path, help="Path to run directory")
     costs_parser.add_argument("--detailed", action="store_true", help="Show detailed breakdown by turn")
 
+    analyze_parser = subparsers.add_parser("analyze", help="Generate a post-run analysis report")
+    analyze_parser.add_argument("run_dir", type=Path, help="Path to run directory")
+    analyze_parser.add_argument("--model", type=str, default=None, help="Override analysis model")
+    analyze_parser.add_argument("--output", type=Path, default=None, help="Write report to a custom path")
+    analyze_parser.add_argument("--json", action="store_true", help="Write structured JSON instead of markdown")
+    analyze_parser.add_argument("--no-save", action="store_true", help="Print report summary only without saving")
+
     # Compare runs command
     compare_runs_parser = subparsers.add_parser(
         "compare-runs",
@@ -1271,6 +1280,30 @@ def main():
 
         print("=" * 60)
         return
+
+    if args.command == "analyze":
+        try:
+            result = generate_run_analysis(
+                args.run_dir,
+                model=args.model,
+                output_path=args.output,
+                json_output=args.json,
+                no_save=args.no_save,
+            )
+        except Exception as e:
+            print(f"❌ Run analysis failed: {e}")
+            return 1
+
+        if result.output_path is not None:
+            print(f"Analysis saved to: {result.output_path}")
+        elif not args.no_save:
+            print("Analysis generated.")
+
+        if result.summary_text:
+            print()
+            print(result.summary_text)
+
+        return 0
 
     if args.command == "compare-runs":
         from .regression import compare_runs, format_run_comparison

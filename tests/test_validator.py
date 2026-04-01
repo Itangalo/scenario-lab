@@ -133,7 +133,7 @@ def test_validate_llm_config_max_tokens_by_task():
         time_scale="6 months",
         max_turns=5,
         actor_ids=["actor1"],
-        llm=LLMConfig(max_tokens_by_task={"rules": 50, "unknown": 500})  # Too low + invalid task
+        llm=LLMConfig(max_tokens_by_task={"analysis": 50, "unknown": 500})  # Too low + invalid task
     )
 
     scenario = Scenario(
@@ -147,7 +147,7 @@ def test_validate_llm_config_max_tokens_by_task():
     )
 
     errors = validate_llm_config(scenario)
-    assert any("max_tokens_by_task['rules']" in e for e in errors)
+    assert any("max_tokens_by_task['analysis']" in e for e in errors)
     assert any("invalid task 'unknown'" in e for e in errors)
 
 

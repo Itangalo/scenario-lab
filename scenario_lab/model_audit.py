@@ -379,7 +379,7 @@ def discover_config_paths(path: Path) -> Iterable[Path]:
 
 def iter_model_locations(llm_config: LLMConfig) -> Iterable[ModelConfigLocation]:
     """Flatten all configured models into concrete locations."""
-    for task in ("events", "rules", "metrics", "summary", "referee"):
+    for task in ("events", "rules", "metrics", "summary", "analysis", "referee"):
         yield from _yield_task_locations(task, (task,), getattr(llm_config, task))
 
     actors = llm_config.actors

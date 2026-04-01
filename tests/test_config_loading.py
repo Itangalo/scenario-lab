@@ -54,6 +54,7 @@ def setup_scenarios(tmp_path):
             "events": "model-base",
             "actors": "model-base",
             "summary": "model-summary-base",
+            "analysis": "model-analysis-base",
             "referee": "model-referee-base",
             "max_tokens": 2000,
             "max_tokens_by_task": {
@@ -88,6 +89,7 @@ def setup_scenarios(tmp_path):
             "rules": "model-rules",
             "metrics": "model-metrics",
             "summary": "model-summary-fine",
+            "analysis": "model-analysis-fine",
             "referee": "model-referee-fine",
             "max_tokens_by_task": {
                 "rules": 3500,
@@ -114,6 +116,7 @@ def test_scenario_inheritance(setup_scenarios):
     assert config.llm.temperature == 0.7
     assert config.llm.actors == "model-base"
     assert config.llm.summary == "model-summary-base"
+    assert config.llm.analysis == "model-analysis-base"
     assert config.rule_evolution.freeze_until_turn == 2
     assert config.rule_evolution.max_changes_per_turn == 3
     assert config.constitutional_enforcement.max_attempts == 3
@@ -137,6 +140,7 @@ def test_fine_grained_llm_config(setup_scenarios):
     assert config.llm.rules == "model-rules"
     assert config.llm.metrics == "model-metrics"
     assert config.llm.summary == "model-summary-fine"
+    assert config.llm.analysis == "model-analysis-fine"
     assert config.llm.referee == "model-referee-fine"
     assert config.llm.max_tokens_by_task["rules"] == 3500
     
@@ -188,7 +192,7 @@ def test_orchestrator_client_creation(setup_scenarios):
 
 
 def test_old_style_model_config_sets_summary_and_referee(tmp_path):
-    """Legacy llm.model configs should still configure summary/referee deterministically."""
+    """Legacy llm.model configs should still configure summary/analysis/referee deterministically."""
     config_path = tmp_path / "scenario.yaml"
     config_path.write_text(
         yaml.dump(
@@ -212,4 +216,5 @@ def test_old_style_model_config_sets_summary_and_referee(tmp_path):
     assert config.llm.rules == "legacy-model"
     assert config.llm.metrics == "legacy-model"
     assert config.llm.summary == "legacy-model"
+    assert config.llm.analysis == "legacy-model"
     assert config.llm.referee == "x-ai/grok-4.1-fast"

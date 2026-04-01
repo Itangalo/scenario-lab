@@ -101,6 +101,7 @@ def test_cli_run_model_overrides_all_llm_tasks(tmp_path):
                 mock_scenario.config.llm.rules = "old"
                 mock_scenario.config.llm.metrics = "old"
                 mock_scenario.config.llm.summary = "old"
+                mock_scenario.config.llm.analysis = "old"
                 mock_scenario.config.llm.referee = "old"
                 mock_load.return_value = mock_scenario
 
@@ -115,6 +116,7 @@ def test_cli_run_model_overrides_all_llm_tasks(tmp_path):
                 assert mock_scenario.config.llm.rules == "new-model"
                 assert mock_scenario.config.llm.metrics == "new-model"
                 assert mock_scenario.config.llm.summary == "new-model"
+                assert mock_scenario.config.llm.analysis == "new-model"
                 assert mock_scenario.config.llm.referee == "new-model"
 
 

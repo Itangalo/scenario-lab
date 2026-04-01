@@ -37,6 +37,7 @@ class PromptBuilder:
             "rules_system": (system_dir / "metric-rules.md").read_text(encoding="utf-8"),
             "metrics_system": (system_dir / "metrics-update.md").read_text(encoding="utf-8"),
             "summarize": (system_dir / "summarize.md").read_text(encoding="utf-8"),
+            "analysis_system": (system_dir / "analysis.md").read_text(encoding="utf-8"),
             "format_fix_system": (system_dir / "format-fix.md").read_text(encoding="utf-8"),
             "constitutional_referee_system": (system_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
             "constitutional_referee_correction_system": (system_dir / "constitutional-referee-correction.md").read_text(encoding="utf-8"),
@@ -48,6 +49,7 @@ class PromptBuilder:
             "metric_rules": (user_dir / "metric-rules.md").read_text(encoding="utf-8"),
             "metrics_update": (user_dir / "metrics-update.md").read_text(encoding="utf-8"),
             "summarize": (user_dir / "summarize.md").read_text(encoding="utf-8"),
+            "analysis": (user_dir / "analysis.md").read_text(encoding="utf-8"),
             "format_fix_events": (user_dir / "format-fix-events.md").read_text(encoding="utf-8"),
             "format_fix_metrics": (user_dir / "format-fix-metrics.md").read_text(encoding="utf-8"),
             "constitutional_referee": (user_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
@@ -70,6 +72,7 @@ class PromptBuilder:
             "actor": "actor_system",
             "metric_rules": "rules_system",
             "metrics_update": "metrics_system",
+            "analysis": "analysis_system",
             "format_fix": "format_fix_system",
         }
         template_key = template_key_map.get(prompt_type, f"{prompt_type}_system")
@@ -389,6 +392,19 @@ class PromptBuilder:
 
         user = template.render(**context)
         
+        return system, user
+
+    def build_analysis_prompt(self, analysis_context: dict[str, Any]) -> tuple[str, str]:
+        """Build prompts for post-run analysis."""
+        system = self._get_system_prompt("analysis")
+        template = self._get_user_template("analysis")
+
+        context = {
+            "output_language": self.scenario.config.output_language,
+            **analysis_context,
+        }
+
+        user = template.render(**context)
         return system, user
 
     def build_format_fix_events_prompt(self, turn: int, previous_response: str) -> tuple[str, str]:

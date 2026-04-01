@@ -495,7 +495,7 @@ def validate_llm_config(scenario: Scenario) -> List[str]:
         errors.append(f"max_tokens {config.max_tokens} is unusually high (maximum 100000)")
 
     # Validate per-task max_tokens overrides
-    valid_tasks = {"events", "actors", "rules", "metrics", "summary", "referee"}
+    valid_tasks = {"events", "actors", "rules", "metrics", "summary", "analysis", "referee"}
     for task, value in config.max_tokens_by_task.items():
         if task not in valid_tasks:
             errors.append(f"max_tokens_by_task has invalid task '{task}'")
@@ -509,7 +509,7 @@ def validate_llm_config(scenario: Scenario) -> List[str]:
             errors.append(f"max_tokens_by_task['{task}']={value} is unusually high (maximum 100000)")
 
     # Validate model strings for each task
-    task_fields = ["events", "rules", "metrics", "summary"]
+    task_fields = ["events", "rules", "metrics", "summary", "analysis", "referee"]
 
     for task in task_fields:
         model_value = getattr(config, task)

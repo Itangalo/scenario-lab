@@ -124,6 +124,7 @@ class LLMConfig:
     rules: Union[str, List[str]] = "google/gemini-3-flash-preview"
     metrics: Union[str, List[str]] = "google/gemini-3-flash-preview"
     summary: Union[str, List[str]] = "x-ai/grok-4.1-fast"  # Default to cheap model for summarization
+    analysis: Union[str, List[str]] = "x-ai/grok-4.1-fast"  # Default to summary-class synthesis model
     referee: Union[str, List[str]] = "x-ai/grok-4.1-fast"  # Default to fast, cheap model for validation
 
     # Global settings
@@ -152,7 +153,7 @@ class LLMConfig:
         """Get max_tokens for a task, falling back to global max_tokens.
 
         Args:
-            task: Task name (events, actors, rules, metrics, summary, referee)
+            task: Task name (events, actors, rules, metrics, summary, analysis, referee)
             default: Optional fallback if task-specific value is not set
         """
         if task in self.max_tokens_by_task:

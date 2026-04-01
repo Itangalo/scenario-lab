@@ -127,6 +127,17 @@ python -m scenario_lab.cli costs scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMM
 python -m scenario_lab.cli refresh-pricing
 ```
 
+### Analyze a completed run
+
+```bash
+python -m scenario_lab.cli analyze scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS
+python -m scenario_lab.cli analyze scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --model openai/gpt-5
+python -m scenario_lab.cli analyze scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --json
+python -m scenario_lab.cli analyze scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --output report.md
+```
+
+`analyze` reads the saved run artifacts and writes a structured post-run report that summarizes the trajectory, highlights turning points, reviews event and actor behavior, and calls out caveats or calibration issues.
+
 ### Resume or branch from an earlier run
 
 ```bash
