@@ -17,7 +17,6 @@ from typing import Optional
 
 from .analysis import generate_run_analysis
 from .loader import load_scenario
-from .llm import LLMClient
 from .model_audit import (
     apply_recommendations as apply_model_recommendations,
     audit_model_configs,
@@ -27,20 +26,22 @@ from .model_audit import (
     recommend_replacements,
 )
 from .models import LLMConfig
+from .loader import parse_route
 from .orchestrator import run_simulation
 from .output import OutputManager
 from .validator import validate_scenario
 
 
 def apply_model_override(llm_config, model: str):
-    """Apply a single model override to all LLM task slots."""
-    llm_config.events = model
-    llm_config.actors = model
-    llm_config.rules = model
-    llm_config.metrics = model
-    llm_config.summary = model
-    llm_config.analysis = model
-    llm_config.referee = model
+    """Apply a single model override (provider:model string) to all LLM task slots."""
+    route = parse_route(model)
+    llm_config.events = route
+    llm_config.actors = route
+    llm_config.rules = route
+    llm_config.metrics = route
+    llm_config.summary = route
+    llm_config.analysis = route
+    llm_config.referee = route
 
 
 def run_model_preflight_checks(scenario) -> bool:
@@ -1045,12 +1046,18 @@ def main():
 
     refresh_pricing_parser = subparsers.add_parser(
         "refresh-pricing",
-        help="Refresh the cached OpenRouter pricing snapshot",
+        help="Refresh the cached LLM pricing snapshot(s)",
     )
     refresh_pricing_parser.add_argument(
         "--json",
         action="store_true",
         help="Print refresh metadata as JSON",
+    )
+    refresh_pricing_parser.add_argument(
+        "--provider",
+        choices=["openrouter", "anthropic"],
+        default=None,
+        help="Refresh only this provider (default: all)",
     )
 
     # Calibrate command
@@ -1480,45 +1487,55 @@ def main():
         return
 
     if args.command == "refresh-pricing":
-        from .pricing import OpenRouterPricingCache
+        from .pricing import OpenRouterPricingCache, AnthropicPricingCache
 
-        cache = OpenRouterPricingCache()
+        provider_filter = getattr(args, "provider", None)
+        results = []
+
+        providers_to_refresh = []
+        if provider_filter in (None, "openrouter"):
+            providers_to_refresh.append(("openrouter", OpenRouterPricingCache()))
+        if provider_filter in (None, "anthropic"):
+            providers_to_refresh.append(("anthropic", AnthropicPricingCache()))
+
         if not args.json:
-            print("Refreshing OpenRouter pricing cache...")
+            label = provider_filter or "all"
+            print(f"Refreshing pricing cache ({label})...")
 
-        if not cache.refresh():
-            if args.json:
-                print(
-                    json.dumps(
-                        {
-                            "status": "error",
-                            "cache_path": str(cache.cache_path),
-                            "message": "Could not fetch pricing from OpenRouter.",
-                        },
-                        indent=2,
-                        ensure_ascii=False,
-                    )
-                )
+        any_failure = False
+        for provider_name, cache in providers_to_refresh:
+            ok = cache.refresh()
+            if ok:
+                snapshot = cache._snapshot or {"models": {}, "fetched_at": None}
+                results.append({
+                    "provider": provider_name,
+                    "status": "ok",
+                    "cache_path": str(cache.cache_path),
+                    "fetched_at": snapshot.get("fetched_at"),
+                    "model_count": len(snapshot.get("models", {})),
+                })
             else:
-                print("❌ Could not fetch pricing from OpenRouter.")
-                print(f"   Cache path: {cache.cache_path}")
-            return 1
-
-        snapshot = cache._snapshot or {"models": {}, "fetched_at": None}
-        payload = {
-            "status": "ok",
-            "cache_path": str(cache.cache_path),
-            "fetched_at": snapshot.get("fetched_at"),
-            "model_count": len(snapshot.get("models", {})),
-        }
+                any_failure = True
+                results.append({
+                    "provider": provider_name,
+                    "status": "error",
+                    "cache_path": str(cache.cache_path),
+                    "message": f"Could not fetch pricing from {provider_name}.",
+                })
 
         if args.json:
-            print(json.dumps(payload, indent=2, ensure_ascii=False))
+            print(json.dumps(results, indent=2, ensure_ascii=False))
         else:
-            print(f"✅ Cached {payload['model_count']} models")
-            print(f"   Fetched at: {payload['fetched_at']}")
-            print(f"   Cache path: {payload['cache_path']}")
-        return 0
+            for entry in results:
+                if entry["status"] == "ok":
+                    print(
+                        f"  ✅ {entry['provider']}: {entry['model_count']} models "
+                        f"(fetched_at: {entry['fetched_at']})"
+                    )
+                else:
+                    print(f"  ❌ {entry['provider']}: {entry['message']}")
+
+        return 1 if any_failure else 0
 
     if args.command == "calibrate":
         from .calibration import analyze_runs, format_analysis_report
@@ -1657,14 +1674,13 @@ def main():
         print(f"\nContinuing simulation from turn {start_turn}")
         print(f"LLM Configuration:")
         print(f"  Events: {scenario.config.llm.events}")
-        if isinstance(scenario.config.llm.actors, str):
-            print(f"  Actors: {scenario.config.llm.actors} (all)")
-        elif isinstance(scenario.config.llm.actors, list):
-            print(f"  Actors: {scenario.config.llm.actors} (all)")
-        else:
+        actors_cfg = scenario.config.llm.actors
+        if isinstance(actors_cfg, dict):
             print(f"  Actors:")
-            for actor_id, model in scenario.config.llm.actors.items():
+            for actor_id, model in actors_cfg.items():
                 print(f"    {actor_id}: {model}")
+        else:
+            print(f"  Actors: {actors_cfg} (all)")
         print(f"  Rules: {scenario.config.llm.rules}")
         print(f"  Metrics: {scenario.config.llm.metrics}")
         print(f"Turns: {start_turn} to {num_turns}")
@@ -1844,14 +1860,13 @@ def main():
         print(f"\nRunning simulation from turn {start_turn}")
         print(f"LLM Configuration:")
         print(f"  Events: {scenario.config.llm.events}")
-        if isinstance(scenario.config.llm.actors, str):
-            print(f"  Actors: {scenario.config.llm.actors} (all)")
-        elif isinstance(scenario.config.llm.actors, list):
-            print(f"  Actors: {scenario.config.llm.actors} (all)")
-        else:
+        actors_cfg = scenario.config.llm.actors
+        if isinstance(actors_cfg, dict):
             print(f"  Actors:")
-            for actor_id, model in scenario.config.llm.actors.items():
+            for actor_id, model in actors_cfg.items():
                 print(f"    {actor_id}: {model}")
+        else:
+            print(f"  Actors: {actors_cfg} (all)")
         print(f"  Rules: {scenario.config.llm.rules}")
         print(f"  Metrics: {scenario.config.llm.metrics}")
         print(f"Turns: {start_turn} to {num_turns}")
@@ -1978,14 +1993,13 @@ def main():
     print(f"\nRunning simulation: {scenario.config.name}")
     print(f"LLM Configuration:")
     print(f"  Events: {scenario.config.llm.events}")
-    if isinstance(scenario.config.llm.actors, str):
-        print(f"  Actors: {scenario.config.llm.actors} (all)")
-    elif isinstance(scenario.config.llm.actors, list):
-        print(f"  Actors: {scenario.config.llm.actors} (all)")
-    else:
+    actors_cfg = scenario.config.llm.actors
+    if isinstance(actors_cfg, dict):
         print(f"  Actors:")
-        for actor_id, model in scenario.config.llm.actors.items():
+        for actor_id, model in actors_cfg.items():
             print(f"    {actor_id}: {model}")
+    else:
+        print(f"  Actors: {actors_cfg} (all)")
     print(f"  Rules: {scenario.config.llm.rules}")
     print(f"  Metrics: {scenario.config.llm.metrics}")
     print(f"Turns: {args.turns or scenario.config.max_turns}")

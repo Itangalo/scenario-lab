@@ -52,7 +52,12 @@ pip install -e .
 cp .env.example .env
 ```
 
-Then add your `OPENROUTER_API_KEY` to `.env`.
+Then add your API key(s) to `.env`. At least one of the following is required:
+
+- `OPENROUTER_API_KEY` – for OpenRouter (access to most models)
+- `ANTHROPIC_API_KEY` – for direct Anthropic API access (claude-opus-4-6, claude-sonnet-4-6, etc.)
+
+Models are specified in `scenario.yaml` as `provider:model`, for example `openrouter:x-ai/grok-4.1-fast` or `anthropic:claude-sonnet-4-6`.
 
 ### Recommended workflow
 

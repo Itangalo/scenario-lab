@@ -21,7 +21,9 @@ pytestmark = pytest.mark.integration
 PROJECT_ROOT = Path(__file__).parent.parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from scenario_lab.llm import LLMClient
+from scenario_lab.models import ModelRoute
+from scenario_lab.providers.registry import ProviderRegistry
+from scenario_lab.router import FallbackRouter
 
 
 # Configuration
@@ -38,10 +40,14 @@ def llm_client():
     if not api_key:
         pytest.skip("OPENROUTER_API_KEY not set")
 
-    model = os.getenv("TEST_LLM_MODEL", "x-ai/grok-4.1-fast")
-    return LLMClient(
-        model=model,
-        temperature=0.0,  # Deterministic for testing
+    model = os.getenv("TEST_LLM_MODEL", "openrouter:x-ai/grok-4.1-fast")
+    from scenario_lab.loader import parse_route
+    route = parse_route(model)
+    registry = ProviderRegistry()
+    return FallbackRouter(
+        routes=[route],
+        registry=registry,
+        temperature=0.0,
         max_tokens=500,
     )
 
@@ -78,7 +84,7 @@ def build_user_prompt(template: str, test_case: dict[str, Any]) -> str:
 
 
 def evaluate_test_case(
-    llm_client: LLMClient,
+    llm_client: FallbackRouter,
     system_prompt: str,
     user_prompt_template: str,
     test_case: dict[str, Any]

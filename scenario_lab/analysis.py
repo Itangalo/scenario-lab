@@ -9,7 +9,10 @@ import re
 from pathlib import Path
 from typing import Any, Optional
 
-from .llm import LLMClient
+from .loader import parse_route
+from .models import ModelRoute
+from .router import FallbackRouter
+from .providers.registry import ProviderRegistry
 from .loader import get_time_period, load_scenario
 from .models import Scenario
 from .prompts import PromptBuilder
@@ -136,16 +139,26 @@ def generate_run_analysis(
     system_prompt, user_prompt = builder.build_analysis_prompt(analysis_context)
 
     llm_config = bundle.scenario.config.llm
-    client = LLMClient(
-        model=model or llm_config.analysis,
+    if model is not None:
+        # CLI-supplied model string: must be provider-prefixed
+        route = parse_route(model)
+        routes = [route]
+    else:
+        cfg_routes = llm_config.analysis
+        routes = cfg_routes if isinstance(cfg_routes, list) else [cfg_routes]
+
+    registry = ProviderRegistry()
+    router = FallbackRouter(
+        routes=routes,
+        registry=registry,
         temperature=0.3,
         max_tokens=llm_config.get_task_max_tokens("analysis"),
     )
 
     try:
-        response = client.complete(system_prompt, user_prompt)
+        response = router.complete(system_prompt, user_prompt)
     finally:
-        client.close()
+        router.close()
 
     report = _normalize_report(response.content, json_output)
     destination = None if no_save else _resolve_output_path(bundle.run_dir, output_path, json_output)

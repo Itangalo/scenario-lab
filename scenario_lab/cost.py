@@ -5,7 +5,8 @@ from dataclasses import dataclass, field
 import re
 from typing import Optional
 
-from .pricing import DEFAULT_PRICING, get_pricing_cache
+from .pricing import DEFAULT_PRICING, get_pricing_cache, get_pricing_for
+from .models import ModelRoute
 
 
 @dataclass
@@ -16,6 +17,9 @@ class TokenUsage:
     completion_tokens: int
     total_tokens: int
     model: str
+    provider: str = "openrouter"
+    cache_creation_input_tokens: int = 0
+    cache_read_input_tokens: int = 0
 
     @property
     def tokens(self) -> int:
@@ -175,7 +179,12 @@ class CostCalculator:
         Returns:
             CostDetails with calculated costs
         """
-        pricing = CostCalculator.get_model_pricing(usage.model)
+        # Dispatch to provider-specific pricing cache when possible
+        route_pricing = get_pricing_for(ModelRoute(provider=usage.provider, model=usage.model))
+        if route_pricing is not None:
+            pricing = route_pricing
+        else:
+            pricing = CostCalculator.get_model_pricing(usage.model)
 
         # Convert to cost (pricing is per million tokens)
         prompt_cost = (usage.prompt_tokens / 1_000_000) * pricing["prompt"]

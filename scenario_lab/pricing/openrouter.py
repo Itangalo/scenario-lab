@@ -16,10 +16,10 @@ USER_MODELS_API_URL = "https://openrouter.ai/api/v1/models/user"
 DEFAULT_PRICING = {"prompt": 5.0, "completion": 15.0}
 DEFAULT_CACHE_TTL_HOURS = 72
 BUNDLED_PRICING_PATH = (
-    Path(__file__).resolve().parent / "data" / "openrouter_pricing_seed.json"
+    Path(__file__).resolve().parent.parent / "data" / "openrouter_pricing_seed.json"
 )
 DEFAULT_CACHE_PATH = (
-    Path(__file__).resolve().parent.parent
+    Path(__file__).resolve().parent.parent.parent
     / ".scenario-lab-cache"
     / "openrouter-pricing.json"
 )

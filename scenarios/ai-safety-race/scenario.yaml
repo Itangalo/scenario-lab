@@ -16,9 +16,9 @@ llm:
   temperature: 0.7
   max_tokens: 3000
 
-  events: "x-ai/grok-4.1-fast"
-  actors: "x-ai/grok-4.1-fast"
-  rules: "x-ai/grok-4.1-fast"
-  metrics: "x-ai/grok-4.1-fast"
-  summary: "x-ai/grok-4.1-fast"
-  referee: "x-ai/grok-4.1-fast"
+  events: "openrouter:x-ai/grok-4.1-fast"
+  actors: "openrouter:x-ai/grok-4.1-fast"
+  rules: "openrouter:x-ai/grok-4.1-fast"
+  metrics: "openrouter:x-ai/grok-4.1-fast"
+  summary: "openrouter:x-ai/grok-4.1-fast"
+  referee: "openrouter:x-ai/grok-4.1-fast"

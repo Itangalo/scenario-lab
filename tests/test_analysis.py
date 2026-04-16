@@ -16,25 +16,25 @@ class FakeLLMResponse:
         self.raw_response = {}
 
 
-class FakeLLMClient:
-    """Fake client used to avoid real API calls in analysis tests."""
+class FakeRouter:
+    """Fake router used to avoid real API calls in analysis tests."""
 
     response_content = ""
     last_system_prompt = ""
     last_user_prompt = ""
-    last_model = None
+    last_primary_route = None
     last_max_tokens = None
 
-    def __init__(self, api_key=None, model=None, temperature=0.7, max_tokens=2000):
-        self.model = model
+    def __init__(self, routes, registry, *, temperature=0.7, max_tokens=2000):
+        self.routes = routes
         self.temperature = temperature
         self.max_tokens = max_tokens
-        FakeLLMClient.last_model = model
-        FakeLLMClient.last_max_tokens = max_tokens
+        FakeRouter.last_primary_route = routes[0] if routes else None
+        FakeRouter.last_max_tokens = max_tokens
 
     def complete(self, system_prompt: str, user_prompt: str) -> FakeLLMResponse:
-        FakeLLMClient.last_system_prompt = system_prompt
-        FakeLLMClient.last_user_prompt = user_prompt
+        FakeRouter.last_system_prompt = system_prompt
+        FakeRouter.last_user_prompt = user_prompt
         return FakeLLMResponse(self.response_content)
 
     def close(self):
@@ -65,13 +65,13 @@ actors:
   - government
   - company
 llm:
-  events: "model-events"
-  actors: "model-actors"
-  rules: "model-rules"
-  metrics: "model-metrics"
-  summary: "model-summary"
-  analysis: "model-analysis"
-  referee: "model-referee"
+  events: "openrouter:model-events"
+  actors: "openrouter:model-actors"
+  rules: "openrouter:model-rules"
+  metrics: "openrouter:model-metrics"
+  summary: "openrouter:model-summary"
+  analysis: "openrouter:model-analysis"
+  referee: "openrouter:model-referee"
   max_tokens_by_task:
     analysis: 4321
 """.strip()
@@ -262,7 +262,7 @@ def test_load_run_analysis_bundle_reads_turns_and_optional_metadata(tmp_path):
 def test_generate_run_analysis_markdown_saves_default_report(tmp_path):
     """Markdown analysis should be saved to analysis.md by default."""
     run_dir = create_analysis_fixture(tmp_path)
-    FakeLLMClient.response_content = """
+    FakeRouter.response_content = """
 ## Summary
 The run ends with higher growth but lower stability after a protest wave shifts the trajectory.
 
@@ -291,7 +291,7 @@ No referee correction was needed.
 - Stability fell quickly.
 """.strip()
 
-    with patch("scenario_lab.analysis.LLMClient", FakeLLMClient):
+    with patch("scenario_lab.analysis.FallbackRouter", FakeRouter):
         result = generate_run_analysis(run_dir)
 
     saved_path = run_dir / "analysis.md"
@@ -299,15 +299,15 @@ No referee correction was needed.
     assert saved_path.exists()
     assert "higher growth but lower stability" in saved_path.read_text(encoding="utf-8")
     assert result.summary_text.startswith("The run ends with higher growth")
-    assert FakeLLMClient.last_model == "model-analysis"
-    assert FakeLLMClient.last_max_tokens == 4321
-    assert "## Metric Overview" in FakeLLMClient.last_user_prompt
+    assert str(FakeRouter.last_primary_route) == "openrouter:model-analysis"
+    assert FakeRouter.last_max_tokens == 4321
+    assert "## Metric Overview" in FakeRouter.last_user_prompt
 
 
 def test_generate_run_analysis_json_no_save_handles_missing_optional_files(tmp_path):
     """JSON analysis should work without costs or constitution and skip saving when requested."""
     run_dir = create_analysis_fixture(tmp_path, with_costs=False, with_constitution=False)
-    FakeLLMClient.response_content = json.dumps(
+    FakeRouter.response_content = json.dumps(
         {
             "summary": "Growth rises, but protests reduce stability.",
             "key_metrics_overview": [],
@@ -324,7 +324,7 @@ def test_generate_run_analysis_json_no_save_handles_missing_optional_files(tmp_p
         }
     )
 
-    with patch("scenario_lab.analysis.LLMClient", FakeLLMClient):
+    with patch("scenario_lab.analysis.FallbackRouter", FakeRouter):
         result = generate_run_analysis(run_dir, json_output=True, no_save=True)
 
     assert result.output_path is None
@@ -337,7 +337,7 @@ def test_cli_analyze_invokes_pipeline_and_writes_custom_output(tmp_path, capsys)
     """CLI analyze should generate a report and print the summary."""
     run_dir = create_analysis_fixture(tmp_path)
     custom_output = tmp_path / "reports" / "analysis-output.md"
-    FakeLLMClient.response_content = """
+    FakeRouter.response_content = """
 ## Summary
 The decisive shift came in turn 2 when protests undercut stability.
 
@@ -365,7 +365,7 @@ None.
 - Calibration may be aggressive.
 """.strip()
 
-    with patch("scenario_lab.analysis.LLMClient", FakeLLMClient):
+    with patch("scenario_lab.analysis.FallbackRouter", FakeRouter):
         with patch("sys.argv", ["scenario_lab", "analyze", str(run_dir), "--output", str(custom_output)]):
             assert main() == 0
 

@@ -30,9 +30,11 @@ PROJECT_ROOT = Path(__file__).parent.parent.parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 # Import Scenario Lab modules
-from scenario_lab.loader import load_scenario
-from scenario_lab.llm import LLMClient
+from scenario_lab.loader import load_scenario, parse_route
+from scenario_lab.models import ModelRoute
 from scenario_lab.prompts import PromptBuilder
+from scenario_lab.providers.registry import ProviderRegistry
+from scenario_lab.router import FallbackRouter
 
 # Constants
 TEST_DIR = Path(__file__).parent
@@ -71,13 +73,14 @@ def llm_client():
     Model can be specified via TEST_LLM_MODEL env var.
     Defaults to Claude Haiku 4 for cost-effective testing.
     """
-    model = os.getenv("TEST_LLM_MODEL", "x-ai/grok-4.1-fast")
-    api_key = os.getenv("OPENROUTER_API_KEY")
+    model = os.getenv("TEST_LLM_MODEL", "openrouter:x-ai/grok-4.1-fast")
 
-    if not api_key:
-        pytest.skip("OPENROUTER_API_KEY environment variable not set")
+    if not os.getenv("OPENROUTER_API_KEY") and not os.getenv("ANTHROPIC_API_KEY"):
+        pytest.skip("Neither OPENROUTER_API_KEY nor ANTHROPIC_API_KEY is set")
 
-    return LLMClient(api_key=api_key, model=model)
+    route = parse_route(model)
+    registry = ProviderRegistry()
+    return FallbackRouter(routes=[route], registry=registry, temperature=0.0, max_tokens=2000)
 
 
 # ============================================================================
@@ -88,7 +91,7 @@ def llm_client():
 def call_llm_for_events(
     turn: int,
     prompt_builder: PromptBuilder,
-    llm_client: LLMClient,
+    llm_client: FallbackRouter,
 ) -> list[dict]:
     """Call LLM to get event candidates for a turn.
 

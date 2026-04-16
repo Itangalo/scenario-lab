@@ -15,20 +15,20 @@ actors:
 
 llm:
   # Fast/cheap model for event evaluation
-  events: "x-ai/grok-4.1-fast"
+  events: "openrouter:x-ai/grok-4.1-fast"
 
   # Per-actor model selection
   actors:
-    government: "x-ai/grok-4.1-fast"
-    labor-unions: "x-ai/grok-4.1-fast"
-    media: "x-ai/grok-4.1-fast"
-    business-sector: "x-ai/grok-4.1-fast"
+    government: "openrouter:x-ai/grok-4.1-fast"
+    labor-unions: "openrouter:x-ai/grok-4.1-fast"
+    media: "openrouter:x-ai/grok-4.1-fast"
+    business-sector: "openrouter:x-ai/grok-4.1-fast"
 
   # Rules can use cheaper model
-  rules: "x-ai/grok-4.1-fast"
+  rules: "openrouter:x-ai/grok-4.1-fast"
 
   # Metrics and narrative benefits from better model
-  metrics: "google/gemini-3-flash-preview"
+  metrics: "openrouter:google/gemini-3-flash-preview"
 
   # Global settings
   temperature: 0.7

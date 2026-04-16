@@ -50,18 +50,16 @@ def test_cli_run_scenario(tmp_path):
                 mock_output = MockOutputManager.return_value
                 mock_output.start_run.return_value = tmp_path / "run_dir"
                 
-                # Mock LLM client
-                with patch("scenario_lab.cli.LLMClient"):
-                    # Run CLI
-                    scenario_path = str(tmp_path / "scenarios/test-scenario")
-                    with patch("sys.argv", ["scenario_lab", "run", scenario_path, "--turns", "5"]):
-                        main()
-                    
-                    # Verify calls
-                    mock_load.assert_called_once()
-                    mock_run.assert_called_once()
-                    _, kwargs = mock_run.call_args
-                    assert kwargs["num_turns"] == 5
+                # Run CLI
+                scenario_path = str(tmp_path / "scenarios/test-scenario")
+                with patch("sys.argv", ["scenario_lab", "run", scenario_path, "--turns", "5"]):
+                    main()
+
+                # Verify calls
+                mock_load.assert_called_once()
+                mock_run.assert_called_once()
+                _, kwargs = mock_run.call_args
+                assert kwargs["num_turns"] == 5
 
 def test_cli_override_args():
     """Test --override arguments are parsed correctly."""
@@ -78,13 +76,12 @@ def test_cli_override_args():
                 mock_output = MockOutputManager.return_value
                 mock_output.start_run.return_value = MagicMock()
 
-                with patch("scenario_lab.cli.LLMClient"):
-                    with patch("sys.argv", ["scenario_lab", "run", "path", "--override", "foo=bar", "--override", "baz=qux"]):
-                        main()
-                    
-                    # Check that overrides were applied
-                    assert mock_scenario.config.foo == "bar"
-                    assert mock_scenario.config.baz == "qux"
+                with patch("sys.argv", ["scenario_lab", "run", "path", "--override", "foo=bar", "--override", "baz=qux"]):
+                    main()
+
+                # Check that overrides were applied
+                assert mock_scenario.config.foo == "bar"
+                assert mock_scenario.config.baz == "qux"
 
 
 def test_cli_run_model_overrides_all_llm_tasks(tmp_path):
@@ -108,29 +105,32 @@ def test_cli_run_model_overrides_all_llm_tasks(tmp_path):
                 mock_output = MockOutputManager.return_value
                 mock_output.start_run.return_value = tmp_path / "run_dir"
 
-                with patch("sys.argv", ["scenario_lab", "run", "path", "--model", "new-model"]):
+                with patch("sys.argv", ["scenario_lab", "run", "path", "--model", "openrouter:new-model"]):
                     main()
 
-                assert mock_scenario.config.llm.events == "new-model"
-                assert mock_scenario.config.llm.actors == "new-model"
-                assert mock_scenario.config.llm.rules == "new-model"
-                assert mock_scenario.config.llm.metrics == "new-model"
-                assert mock_scenario.config.llm.summary == "new-model"
-                assert mock_scenario.config.llm.analysis == "new-model"
-                assert mock_scenario.config.llm.referee == "new-model"
+                from scenario_lab.models import ModelRoute
+                expected = ModelRoute("openrouter", "new-model")
+                assert mock_scenario.config.llm.events == expected
+                assert mock_scenario.config.llm.actors == expected
+                assert mock_scenario.config.llm.rules == expected
+                assert mock_scenario.config.llm.metrics == expected
+                assert mock_scenario.config.llm.summary == expected
+                assert mock_scenario.config.llm.analysis == expected
+                assert mock_scenario.config.llm.referee == expected
 
 
 def test_run_model_preflight_checks_applies_recommendations(capsys):
     """Interactive preflight should offer and apply model replacements."""
     scenario = MagicMock()
     scenario.config.name = "Test Scenario"
+    from scenario_lab.models import ModelRoute
     scenario.config.llm = LLMConfig(
-        events="google/gemini-3-flash-preview",
-        actors="google/gemini-3-flash-preview",
-        rules="x-ai/grok-4.1-fast",
-        metrics="x-ai/grok-4.1-fast",
-        summary="x-ai/grok-4.1-fast",
-        referee="x-ai/grok-4.1-fast",
+        events=ModelRoute("openrouter", "google/gemini-3-flash-preview"),
+        actors=ModelRoute("openrouter", "google/gemini-3-flash-preview"),
+        rules=ModelRoute("openrouter", "x-ai/grok-4.1-fast"),
+        metrics=ModelRoute("openrouter", "x-ai/grok-4.1-fast"),
+        summary=ModelRoute("openrouter", "x-ai/grok-4.1-fast"),
+        referee=ModelRoute("openrouter", "x-ai/grok-4.1-fast"),
     )
 
     recommendations = [
@@ -175,8 +175,8 @@ def test_cli_run_skip_model_checks_bypasses_preflight(tmp_path):
 
 
 def test_cli_refresh_pricing_success_json(capsys):
-    """refresh-pricing should report refreshed cache metadata."""
-    class FakePricingCache:
+    """refresh-pricing should report refreshed cache metadata as a list."""
+    class FakeORCache:
         def __init__(self):
             self.cache_path = Path("/tmp/openrouter-pricing.json")
             self._snapshot = {
@@ -187,20 +187,35 @@ def test_cli_refresh_pricing_success_json(capsys):
         def refresh(self):
             return True
 
-    with patch("scenario_lab.pricing.OpenRouterPricingCache", FakePricingCache):
-        with patch("sys.argv", ["scenario_lab", "refresh-pricing", "--json"]):
-            assert main() == 0
+    class FakeAnthropicCache:
+        def __init__(self):
+            self.cache_path = Path("/tmp/anthropic-pricing.json")
+            self._snapshot = {
+                "fetched_at": "2026-03-31T12:00:00Z",
+                "models": {"claude-opus-4-6": {"prompt": 15.0, "completion": 75.0}},
+            }
+
+        def refresh(self):
+            return True
+
+    with patch("scenario_lab.pricing.OpenRouterPricingCache", FakeORCache):
+        with patch("scenario_lab.pricing.AnthropicPricingCache", FakeAnthropicCache):
+            with patch("sys.argv", ["scenario_lab", "refresh-pricing", "--json"]):
+                assert main() == 0
 
     captured = capsys.readouterr()
     payload = json.loads(captured.out)
-    assert payload["status"] == "ok"
-    assert payload["model_count"] == 1
-    assert payload["cache_path"] == "/tmp/openrouter-pricing.json"
+    assert isinstance(payload, list)
+    assert len(payload) == 2
+    or_entry = next(e for e in payload if e["provider"] == "openrouter")
+    assert or_entry["status"] == "ok"
+    assert or_entry["model_count"] == 1
+    assert or_entry["cache_path"] == "/tmp/openrouter-pricing.json"
 
 
 def test_cli_refresh_pricing_failure(capsys):
     """refresh-pricing should fail cleanly when OpenRouter refresh fails."""
-    class FakePricingCache:
+    class FakeORCache:
         def __init__(self):
             self.cache_path = Path("/tmp/openrouter-pricing.json")
             self._snapshot = None
@@ -208,12 +223,21 @@ def test_cli_refresh_pricing_failure(capsys):
         def refresh(self):
             return False
 
-    with patch("scenario_lab.pricing.OpenRouterPricingCache", FakePricingCache):
-        with patch("sys.argv", ["scenario_lab", "refresh-pricing"]):
-            assert main() == 1
+    class FakeAnthropicCache:
+        def __init__(self):
+            self.cache_path = Path("/tmp/anthropic-pricing.json")
+            self._snapshot = None
+
+        def refresh(self):
+            return False
+
+    with patch("scenario_lab.pricing.OpenRouterPricingCache", FakeORCache):
+        with patch("scenario_lab.pricing.AnthropicPricingCache", FakeAnthropicCache):
+            with patch("sys.argv", ["scenario_lab", "refresh-pricing"]):
+                assert main() == 1
 
     captured = capsys.readouterr()
-    assert "Could not fetch pricing from OpenRouter" in captured.out
+    assert "openrouter" in captured.out
 
 
 def test_summarize_batch_activity_uses_short_aliases():
@@ -632,15 +656,17 @@ def test_cli_resume_model_overrides_all_llm_tasks(tmp_path):
             with patch("scenario_lab.resume.load_run_state", return_value=(mock_scenario, 2)):
                 with patch("scenario_lab.cli.OutputManager"):
                     with patch("scenario_lab.cli.run_simulation"):
-                        with patch("sys.argv", ["scenario_lab", "resume", str(run_dir), "--turns", "2", "--model", "new-model"]):
+                        with patch("sys.argv", ["scenario_lab", "resume", str(run_dir), "--turns", "2", "--model", "openrouter:new-model"]):
                             main()
 
-    assert mock_scenario.config.llm.events == "new-model"
-    assert mock_scenario.config.llm.actors == "new-model"
-    assert mock_scenario.config.llm.rules == "new-model"
-    assert mock_scenario.config.llm.metrics == "new-model"
-    assert mock_scenario.config.llm.summary == "new-model"
-    assert mock_scenario.config.llm.referee == "new-model"
+    from scenario_lab.models import ModelRoute
+    expected = ModelRoute("openrouter", "new-model")
+    assert mock_scenario.config.llm.events == expected
+    assert mock_scenario.config.llm.actors == expected
+    assert mock_scenario.config.llm.rules == expected
+    assert mock_scenario.config.llm.metrics == expected
+    assert mock_scenario.config.llm.summary == expected
+    assert mock_scenario.config.llm.referee == expected
 
 
 def test_cli_branch_no_additional_turns_skips_simulation(tmp_path):
@@ -702,17 +728,17 @@ def test_cli_branch_model_sets_full_config_overrides(tmp_path):
                     with patch("scenario_lab.resume.sync_summary_turn_state"):
                         with patch("scenario_lab.cli.OutputManager"):
                             with patch("scenario_lab.cli.run_simulation"):
-                                with patch("sys.argv", ["scenario_lab", "branch", str(parent_run), "--from-turn", "2", "--turns", "2", "--model", "new-model"]):
+                                with patch("sys.argv", ["scenario_lab", "branch", str(parent_run), "--from-turn", "2", "--turns", "2", "--model", "openrouter:new-model"]):
                                     main()
 
     _, kwargs = mock_create_branch.call_args
     overrides = kwargs["config_overrides"]
-    assert overrides["llm.events"] == "new-model"
-    assert overrides["llm.actors"] == "new-model"
-    assert overrides["llm.rules"] == "new-model"
-    assert overrides["llm.metrics"] == "new-model"
-    assert overrides["llm.summary"] == "new-model"
-    assert overrides["llm.referee"] == "new-model"
+    assert overrides["llm.events"] == "openrouter:new-model"
+    assert overrides["llm.actors"] == "openrouter:new-model"
+    assert overrides["llm.rules"] == "openrouter:new-model"
+    assert overrides["llm.metrics"] == "openrouter:new-model"
+    assert overrides["llm.summary"] == "openrouter:new-model"
+    assert overrides["llm.referee"] == "openrouter:new-model"
 
 
 def test_cli_estimate_model_overrides_all_llm_tasks():
@@ -730,15 +756,17 @@ def test_cli_estimate_model_overrides_all_llm_tasks():
     with patch("scenario_lab.cli.load_scenario", return_value=mock_scenario):
         with patch("scenario_lab.estimator.CostEstimator") as MockEstimator:
             with patch("scenario_lab.estimator.format_estimate_report", return_value="report"):
-                with patch("sys.argv", ["scenario_lab", "estimate", "path", "--model", "new-model"]):
+                with patch("sys.argv", ["scenario_lab", "estimate", "path", "--model", "openrouter:new-model"]):
                     main()
 
-    assert mock_scenario.config.llm.events == "new-model"
-    assert mock_scenario.config.llm.actors == "new-model"
-    assert mock_scenario.config.llm.rules == "new-model"
-    assert mock_scenario.config.llm.metrics == "new-model"
-    assert mock_scenario.config.llm.summary == "new-model"
-    assert mock_scenario.config.llm.referee == "new-model"
+    from scenario_lab.models import ModelRoute
+    expected = ModelRoute("openrouter", "new-model")
+    assert mock_scenario.config.llm.events == expected
+    assert mock_scenario.config.llm.actors == expected
+    assert mock_scenario.config.llm.rules == expected
+    assert mock_scenario.config.llm.metrics == expected
+    assert mock_scenario.config.llm.summary == expected
+    assert mock_scenario.config.llm.referee == expected
 
 
 def test_cli_calibrate_runs_analysis_without_api_calls(tmp_path):
@@ -784,12 +812,12 @@ def test_cli_audit_models_reports_project_warnings(tmp_path, capsys):
                 "max_turns: 3",
                 "actors: ['government']",
                 "llm:",
-                "  events: x-ai/grok-4.1-fast",
-                "  actors: openai/gpt-3.5-turbo-2024-01-15",
-                "  rules: x-ai/grok-4.1-fast",
-                "  metrics: x-ai/grok-4.1-fast",
-                "  summary: x-ai/grok-4.1-fast",
-                "  referee: x-ai/grok-4.1-fast",
+                "  events: openrouter:x-ai/grok-4.1-fast",
+                "  actors: openrouter:openai/gpt-3.5-turbo-2024-01-15",
+                "  rules: openrouter:x-ai/grok-4.1-fast",
+                "  metrics: openrouter:x-ai/grok-4.1-fast",
+                "  summary: openrouter:x-ai/grok-4.1-fast",
+                "  referee: openrouter:x-ai/grok-4.1-fast",
             ]
         ),
         encoding="utf-8",

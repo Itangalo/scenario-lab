@@ -51,11 +51,11 @@ def setup_scenarios(tmp_path):
         },
         "llm": {
             "temperature": 0.7,
-            "events": "model-base",
-            "actors": "model-base",
-            "summary": "model-summary-base",
-            "analysis": "model-analysis-base",
-            "referee": "model-referee-base",
+            "events": "openrouter:model-base",
+            "actors": "openrouter:model-base",
+            "summary": "openrouter:model-summary-base",
+            "analysis": "openrouter:model-analysis-base",
+            "referee": "openrouter:model-referee-base",
             "max_tokens": 2000,
             "max_tokens_by_task": {
                 "rules": 2800,
@@ -63,40 +63,40 @@ def setup_scenarios(tmp_path):
         }
     }
     (scenario_dir / "scenario.yaml").write_text(yaml.dump(base_config))
-    
+
     # Variant config (inheritance)
     variants_dir = scenario_dir / "variants"
     variants_dir.mkdir()
-    
+
     variant_config = {
         "base": "../scenario.yaml",
-        "max_turns": 5, # Override
+        "max_turns": 5,  # Override
         "llm": {
-            "events": "model-variant", # Override
-            "referee": "model-referee-variant", # Override
+            "events": "openrouter:model-variant",  # Override
+            "referee": "openrouter:model-referee-variant",  # Override
             "max_tokens_by_task": {
-                "rules": 3600, # Override
+                "rules": 3600,  # Override
             },
         }
     }
     (variants_dir / "variant.yaml").write_text(yaml.dump(variant_config))
-    
+
     # Fine-grained config
     fine_grained_config = {
         "base": "../scenario.yaml",
         "llm": {
-            "events": ["model-a", "model-b"], # Fallback list
-            "rules": "model-rules",
-            "metrics": "model-metrics",
-            "summary": "model-summary-fine",
-            "analysis": "model-analysis-fine",
-            "referee": "model-referee-fine",
+            "events": ["openrouter:model-a", "openrouter:model-b"],  # Fallback list
+            "rules": "openrouter:model-rules",
+            "metrics": "openrouter:model-metrics",
+            "summary": "openrouter:model-summary-fine",
+            "analysis": "openrouter:model-analysis-fine",
+            "referee": "openrouter:model-referee-fine",
             "max_tokens_by_task": {
                 "rules": 3500,
             },
             "actors": {
-                "actor1": ["model-actor1-a", "model-actor1-b"],
-                "default": "model-default"
+                "actor1": ["openrouter:model-actor1-a", "openrouter:model-actor1-b"],
+                "default": "openrouter:model-default"
             }
         }
     }
@@ -113,19 +113,20 @@ def test_scenario_inheritance(setup_scenarios):
     assert config.name == "Base Scenario"
     assert config.start_date == "2025-01"
     assert config.actor_ids == ["actor1"]
+    from scenario_lab.models import ModelRoute
     assert config.llm.temperature == 0.7
-    assert config.llm.actors == "model-base"
-    assert config.llm.summary == "model-summary-base"
-    assert config.llm.analysis == "model-analysis-base"
+    assert config.llm.actors == ModelRoute("openrouter", "model-base")
+    assert config.llm.summary == ModelRoute("openrouter", "model-summary-base")
+    assert config.llm.analysis == ModelRoute("openrouter", "model-analysis-base")
     assert config.rule_evolution.freeze_until_turn == 2
     assert config.rule_evolution.max_changes_per_turn == 3
     assert config.constitutional_enforcement.max_attempts == 3
     assert config.constitutional_enforcement.on_failure == "keep_previous"
-    
+
     # Check overridden properties
     assert config.max_turns == 5
-    assert config.llm.events == "model-variant"
-    assert config.llm.referee == "model-referee-variant"
+    assert config.llm.events == ModelRoute("openrouter", "model-variant")
+    assert config.llm.referee == ModelRoute("openrouter", "model-referee-variant")
     assert config.llm.max_tokens_by_task["rules"] == 3600
 
 def test_fine_grained_llm_config(setup_scenarios):
@@ -133,33 +134,42 @@ def test_fine_grained_llm_config(setup_scenarios):
     config_path = setup_scenarios / "variants" / "fine_grained.yaml"
     config = load_config(config_path)
     
+    from scenario_lab.models import ModelRoute
     # Check events fallback list
-    assert config.llm.events == ["model-a", "model-b"]
-    
+    assert config.llm.events == [ModelRoute("openrouter", "model-a"), ModelRoute("openrouter", "model-b")]
+
     # Check specific task models
-    assert config.llm.rules == "model-rules"
-    assert config.llm.metrics == "model-metrics"
-    assert config.llm.summary == "model-summary-fine"
-    assert config.llm.analysis == "model-analysis-fine"
-    assert config.llm.referee == "model-referee-fine"
+    assert config.llm.rules == ModelRoute("openrouter", "model-rules")
+    assert config.llm.metrics == ModelRoute("openrouter", "model-metrics")
+    assert config.llm.summary == ModelRoute("openrouter", "model-summary-fine")
+    assert config.llm.analysis == ModelRoute("openrouter", "model-analysis-fine")
+    assert config.llm.referee == ModelRoute("openrouter", "model-referee-fine")
     assert config.llm.max_tokens_by_task["rules"] == 3500
-    
+
     # Check actor specific models
     assert isinstance(config.llm.actors, dict)
-    assert config.llm.actors["actor1"] == ["model-actor1-a", "model-actor1-b"]
-    assert config.llm.actors["default"] == "model-default"
+    assert config.llm.actors["actor1"] == [
+        ModelRoute("openrouter", "model-actor1-a"),
+        ModelRoute("openrouter", "model-actor1-b"),
+    ]
+    assert config.llm.actors["default"] == ModelRoute("openrouter", "model-default")
 
 def test_llm_config_methods():
     """Test helper methods in LLMConfig class."""
-    config = LLMConfig(actors={"actor1": "model1", "default": "model-def"})
-    
-    # get_actor_models
-    assert config.get_actor_models("actor1") == "model1"
-    assert config.get_actor_models("unknown_actor") == "model-def"
-    
+    from scenario_lab.models import ModelRoute
+    route1 = ModelRoute("openrouter", "model1")
+    route_def = ModelRoute("openrouter", "model-def")
+    config = LLMConfig(actors={"actor1": route1, "default": route_def})
+
+    # get_actor_routes
+    assert config.get_actor_routes("actor1") == route1
+    assert config.get_actor_routes("unknown_actor") == route_def
+
     # normalize_to_list
-    assert config.normalize_to_list("model") == ["model"]
-    assert config.normalize_to_list(["m1", "m2"]) == ["m1", "m2"]
+    route = ModelRoute("openrouter", "model")
+    assert config.normalize_to_list(route) == [route]
+    r1, r2 = ModelRoute("openrouter", "m1"), ModelRoute("openrouter", "m2")
+    assert config.normalize_to_list([r1, r2]) == [r1, r2]
 
 def test_orchestrator_client_creation(setup_scenarios):
     """Test that Orchestrator creates clients according to config."""
@@ -171,23 +181,19 @@ def test_orchestrator_client_creation(setup_scenarios):
     
     orchestrator = Orchestrator(scenario, llm_client=None)
     
+    from scenario_lab.models import ModelRoute
     clients = orchestrator.llm_clients
-    
-    # Check events client
-    assert clients["events"].models == ["model-a", "model-b"]
-    
-    # Check rules client
-    assert clients["rules"].models == ["model-rules"]
-    assert clients["rules"].max_tokens == 3500
-    
-    # Check actors client
-    # actor1 should have its specific client
-    assert clients["actors"]["actor1"].models == ["model-actor1-a", "model-actor1-b"]
-    
-    # Check reuse (optimization check)
-    # If we had another actor using the same model, they should share client.
-    # Let's test that manually.
-    
+
+    # Check events router has both routes in its fallback chain
+    assert clients["events"].primary_route == ModelRoute("openrouter", "model-a")
+
+    # Check rules router uses the right route
+    assert clients["rules"].primary_route == ModelRoute("openrouter", "model-rules")
+    assert clients["rules"]._max_tokens == 3500
+
+    # Check actors router for actor1
+    assert clients["actors"]["actor1"].primary_route == ModelRoute("openrouter", "model-actor1-a")
+
     orchestrator.close()
 
 
@@ -204,17 +210,18 @@ def test_old_style_model_config_sets_summary_and_referee(tmp_path):
                 "max_turns": 2,
                 "actors": ["actor1"],
                 "llm": {
-                    "model": "legacy-model",
+                    "model": "openrouter:legacy-model",
                 },
             }
         )
     )
 
+    from scenario_lab.models import ModelRoute
     config = load_config(config_path)
-    assert config.llm.events == "legacy-model"
-    assert config.llm.actors == "legacy-model"
-    assert config.llm.rules == "legacy-model"
-    assert config.llm.metrics == "legacy-model"
-    assert config.llm.summary == "legacy-model"
-    assert config.llm.analysis == "legacy-model"
-    assert config.llm.referee == "x-ai/grok-4.1-fast"
+    assert config.llm.events == ModelRoute("openrouter", "legacy-model")
+    assert config.llm.actors == ModelRoute("openrouter", "legacy-model")
+    assert config.llm.rules == ModelRoute("openrouter", "legacy-model")
+    assert config.llm.metrics == ModelRoute("openrouter", "legacy-model")
+    assert config.llm.summary == ModelRoute("openrouter", "legacy-model")
+    assert config.llm.analysis == ModelRoute("openrouter", "legacy-model")
+    assert config.llm.referee == ModelRoute("openrouter", "x-ai/grok-4.1-fast")

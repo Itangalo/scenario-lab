@@ -182,26 +182,24 @@ These items should follow once the quality loop and run comparison story are str
 
 These items are valuable, but they should follow after the engine, comparison layer, and authoring workflow are clearly stronger.
 
-### 7. Better Provider Abstraction and Operational Ergonomics
+### 7. Better Provider Abstraction and Operational Ergonomics ✅ Done
 
-**Priority:** Medium  
-**Type:** Mirofish-inspired  
-**Why it matters:** Mirofish appears more flexible in how users actually connect to LLMs in practice. Scenario Lab is currently more focused on the simulation architecture than on offering multiple access paths. Better provider ergonomics would lower adoption friction and make deployments less brittle.
+**Status:** Implemented (2026-04).
 
-**What this means:**
+**What was built:**
 
-- Separate "provider" from "model" more clearly.
-- Support multiple operational paths for getting LLM access.
-- Reduce setup friction for users who do not want to rely on one provider path.
+- `ModelRoute(provider, model)` replaces bare model strings everywhere. YAML syntax: `"openrouter:x-ai/grok-4.1-fast"`, `"anthropic:claude-sonnet-4-6"`.
+- `LLMProvider` ABC with `OpenRouterProvider` (httpx) and `AnthropicProvider` (official SDK).
+- `ProviderRegistry` creates providers lazily, so only keys for providers actually used need to be set.
+- `FallbackRouter` replaces the old in-class fallback loop: ordered routes, per-route retries with backoff, falls through on non-retryable errors.
+- Provider-specific pricing caches: `OpenRouterPricingCache` (unchanged) and `AnthropicPricingCache` (LiteLLM catalog + bundled seed). `get_pricing_for(route)` dispatches to the right one.
+- `TokenUsage` gains a `provider` field so cost calculation uses the correct pricing cache.
+- `refresh-pricing` now refreshes both caches; `--provider` scopes to one.
 
-**Likely scope:**
+**Follow-up items:**
 
-- Provider interface improvements
-- Support for additional API providers
-- Possible support for CLI/proxy-style providers where operationally useful
-- Stronger fallback and configuration ergonomics
-
-**Why this is not earlier:** It improves usability and deployment flexibility more than simulation validity. That matters, but it should not preempt the quality loop.
+- [ ] Prompt caching support for Anthropic (use `cache_creation_input_tokens` / `cache_read_input_tokens` already tracked in `TokenUsage`).
+- [ ] Support for local model endpoints (Ollama, vLLM) as a third provider type.
 
 ### 8. Thin Scenario Workbench
 
@@ -281,7 +279,7 @@ If implemented in phases, the recommended order is:
 ### Phase 3: Lower Creation and Usage Friction
 
 6. Ingest pipeline from source material to scenario draft
-7. Better provider abstraction and operational ergonomics
+7. ~~Better provider abstraction and operational ergonomics~~ ✅
 8. Thin scenario workbench
 
 ### Phase 4: Add Optional Product Layers

@@ -8,6 +8,6 @@ actors:
   - government
 
 llm:
-  model: "google/gemini-3-flash-preview"
+  model: "openrouter:google/gemini-3-flash-preview"
   temperature: 0.7
   max_tokens: 2000

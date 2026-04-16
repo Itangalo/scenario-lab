@@ -6,6 +6,25 @@ import json
 
 
 @dataclass
+class ModelRoute:
+    """A (provider, model) pair identifying where to send an LLM request."""
+
+    provider: str
+    model: str
+
+    def __str__(self) -> str:
+        return f"{self.provider}:{self.model}"
+
+    def __hash__(self) -> int:
+        return hash((self.provider, self.model))
+
+    def __eq__(self, other: object) -> bool:
+        if not isinstance(other, ModelRoute):
+            return NotImplemented
+        return self.provider == other.provider and self.model == other.model
+
+
+@dataclass
 class Metric:
     """A single quantitative metric."""
 
@@ -113,41 +132,60 @@ class LLMConfig:
     """LLM configuration with per-task model selection and fallback lists.
 
     Each model field supports:
-    - Single string: "google/gemini-3-flash-preview"
-    - Fallback list: ["x-ai/grok-4.1-fast", "google/gemini-3-flash-preview"]
-    - Dict for actors: {"actor1": "model1", "actor2": ["model1", "model2"]}
+    - Single ModelRoute: ModelRoute("openrouter", "x-ai/grok-4.1-fast")
+    - Fallback list: [ModelRoute(...), ModelRoute(...)]
+    - Dict for actors: {"actor1": ModelRoute(...), "actor2": [ModelRoute(...), ...]}
     """
 
-    # Per-task model selection (string or list for fallback)
-    events: Union[str, List[str]] = "google/gemini-3-flash-preview"
-    actors: Union[str, List[str], dict] = "google/gemini-3-flash-preview"  # actor_id -> model/list, or default
-    rules: Union[str, List[str]] = "google/gemini-3-flash-preview"
-    metrics: Union[str, List[str]] = "google/gemini-3-flash-preview"
-    summary: Union[str, List[str]] = "x-ai/grok-4.1-fast"  # Default to cheap model for summarization
-    analysis: Union[str, List[str]] = "x-ai/grok-4.1-fast"  # Default to summary-class synthesis model
-    referee: Union[str, List[str]] = "x-ai/grok-4.1-fast"  # Default to fast, cheap model for validation
+    # Per-task model selection (ModelRoute or list for fallback)
+    events: Union[ModelRoute, List[ModelRoute]] = field(
+        default_factory=lambda: ModelRoute("openrouter", "google/gemini-3-flash-preview")
+    )
+    actors: Union[ModelRoute, List[ModelRoute], dict] = field(
+        default_factory=lambda: ModelRoute("openrouter", "google/gemini-3-flash-preview")
+    )
+    rules: Union[ModelRoute, List[ModelRoute]] = field(
+        default_factory=lambda: ModelRoute("openrouter", "google/gemini-3-flash-preview")
+    )
+    metrics: Union[ModelRoute, List[ModelRoute]] = field(
+        default_factory=lambda: ModelRoute("openrouter", "google/gemini-3-flash-preview")
+    )
+    summary: Union[ModelRoute, List[ModelRoute]] = field(
+        default_factory=lambda: ModelRoute("openrouter", "x-ai/grok-4.1-fast")
+    )
+    analysis: Union[ModelRoute, List[ModelRoute]] = field(
+        default_factory=lambda: ModelRoute("openrouter", "x-ai/grok-4.1-fast")
+    )
+    referee: Union[ModelRoute, List[ModelRoute]] = field(
+        default_factory=lambda: ModelRoute("openrouter", "x-ai/grok-4.1-fast")
+    )
 
     # Global settings
     temperature: float = 0.7
     max_tokens: int = 2000
     max_tokens_by_task: dict[str, int] = field(default_factory=dict)
 
-    def get_actor_models(self, actor_id: str) -> Union[str, List[str]]:
-        """Get model(s) for a specific actor.
+    def get_actor_routes(self, actor_id: str) -> Union[ModelRoute, List[ModelRoute]]:
+        """Get route(s) for a specific actor.
 
         Returns:
-            String or list of strings (for fallback)
+            ModelRoute or list of ModelRoute (for fallback)
         """
-        if isinstance(self.actors, (str, list)):
+        if isinstance(self.actors, (ModelRoute, list)):
             return self.actors
 
         # Dict case
-        result = self.actors.get(actor_id, self.actors.get("default", "google/gemini-3-flash-preview"))
+        default_route = ModelRoute("openrouter", "google/gemini-3-flash-preview")
+        result = self.actors.get(actor_id, self.actors.get("default", default_route))
         return result
 
-    def normalize_to_list(self, value: Union[str, List[str]]) -> List[str]:
-        """Convert a model value to a list (for fallback processing)."""
-        return [value] if isinstance(value, str) else value
+    # Keep old name as alias for backward compatibility with any call sites not yet updated
+    def get_actor_models(self, actor_id: str) -> Union[ModelRoute, List[ModelRoute]]:
+        return self.get_actor_routes(actor_id)
+
+    def normalize_to_list(self, value: Union[ModelRoute, List[ModelRoute]]) -> List[ModelRoute]:
+        """Convert a route value to a list (for fallback processing)."""
+        return [value] if isinstance(value, ModelRoute) else value
 
     def get_task_max_tokens(self, task: str, default: Optional[int] = None) -> int:
         """Get max_tokens for a task, falling back to global max_tokens.

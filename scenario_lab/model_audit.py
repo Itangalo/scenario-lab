@@ -11,7 +11,7 @@ import httpx
 import yaml
 
 from .loader import load_config
-from .models import LLMConfig
+from .models import LLMConfig, ModelRoute
 
 
 DEFAULT_SNAPSHOT_MAX_AGE_DAYS = 180
@@ -499,7 +499,11 @@ def choose_replacement_model(
 
 
 def set_model_at_path(llm_config: LLMConfig, path: tuple[Union[str, int], ...], new_model: str) -> None:
-    """Replace a specific model string within LLMConfig."""
+    """Replace a specific model within LLMConfig.
+
+    new_model is an OpenRouter model ID (no provider prefix); wraps it in a
+    ModelRoute preserving the provider of the existing value when possible.
+    """
     current = llm_config
     for part in path[:-1]:
         if isinstance(part, str):
@@ -508,31 +512,63 @@ def set_model_at_path(llm_config: LLMConfig, path: tuple[Union[str, int], ...], 
             current = current[part]
 
     last = path[-1]
+
+    # Determine provider from the existing value
+    if isinstance(last, str):
+        existing = getattr(current, last, None) if not isinstance(current, dict) else current.get(last)
+    else:
+        existing = current[last] if isinstance(current, list) and len(current) > last else None
+
+    provider = "openrouter"
+    if isinstance(existing, ModelRoute):
+        provider = existing.provider
+    elif isinstance(existing, list) and existing and isinstance(existing[0], ModelRoute):
+        provider = existing[0].provider
+
+    new_route = ModelRoute(provider=provider, model=new_model)
+
     if isinstance(last, str):
         if isinstance(current, dict):
-            current[last] = new_model
+            current[last] = new_route
         else:
-            setattr(current, last, new_model)
+            setattr(current, last, new_route)
     else:
-        current[last] = new_model
+        current[last] = new_route
+
+
+def _route_to_model_str(value: object) -> str:
+    """Extract the model string from a ModelRoute or a plain string."""
+    if isinstance(value, ModelRoute):
+        return value.model
+    return str(value)
 
 
 def _yield_task_locations(
     task: str,
     path_prefix: tuple[Union[str, int], ...],
-    value: Union[str, list[str]],
+    value: object,
 ) -> Iterable[ModelConfigLocation]:
-    """Yield concrete config locations for a task."""
-    if isinstance(value, str):
-        yield ModelConfigLocation(task=task, path=path_prefix, model=value)
+    """Yield concrete config locations for a task.
+
+    Accepts ModelRoute, str, or lists thereof.
+    The 'model' field on each location holds just the model name (no provider prefix)
+    so that existing regex-based hygiene rules work unchanged.
+    """
+    if isinstance(value, (str, ModelRoute)):
+        yield ModelConfigLocation(task=task, path=path_prefix, model=_route_to_model_str(value))
         return
 
-    for index, model in enumerate(value):
-        yield ModelConfigLocation(
-            task=f"{task}[{index + 1}]",
-            path=path_prefix + (index,),
-            model=model,
-        )
+    if isinstance(value, list):
+        for index, item in enumerate(value):
+            yield ModelConfigLocation(
+                task=f"{task}[{index + 1}]",
+                path=path_prefix + (index,),
+                model=_route_to_model_str(item),
+            )
+        return
+
+    # Unexpected type – yield a best-effort location
+    yield ModelConfigLocation(task=task, path=path_prefix, model=str(value))
 
 
 def _get_nested(obj: dict, *keys: str):

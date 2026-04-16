@@ -7,20 +7,20 @@ base: ../scenario.yaml
 llm:
   # Events: default cheap model, then richer fallback
   events:
-    - "x-ai/grok-4.1-fast"
-    - "google/gemini-3-flash-preview"
+    - "openrouter:x-ai/grok-4.1-fast"
+    - "openrouter:google/gemini-3-flash-preview"
 
   # All actors use same fallback list
   actors:
-    - "x-ai/grok-4.1-fast"
-    - "google/gemini-3-flash-preview"
+    - "openrouter:x-ai/grok-4.1-fast"
+    - "openrouter:google/gemini-3-flash-preview"
 
   # Rules: Single cheap model with fallback
   rules:
-    - "x-ai/grok-4.1-fast"
-    - "google/gemini-3-flash-preview"
+    - "openrouter:x-ai/grok-4.1-fast"
+    - "openrouter:google/gemini-3-flash-preview"
 
   # Metrics: Better model for narrative quality
   metrics:
-    - "google/gemini-3-flash-preview"
-    - "x-ai/grok-4.1-fast"
+    - "openrouter:google/gemini-3-flash-preview"
+    - "openrouter:x-ai/grok-4.1-fast"

@@ -7,6 +7,7 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 from typing import Union, Optional, List
 from .models import (
+    ModelRoute,
     Scenario,
     ScenarioConfig,
     LLMConfig,
@@ -18,6 +19,90 @@ from .models import (
     Actor,
     WorldState,
 )
+
+
+def _parse_routes_field(value: object) -> "ModelRoute | list[ModelRoute]":
+    """Return a single ModelRoute for a single value, or list for a list value."""
+    if isinstance(value, list):
+        return [parse_route(item) for item in value]
+    return parse_route(value)
+
+
+def _route_to_yaml_str(route: "ModelRoute") -> str:
+    return str(route)  # "provider:model"
+
+
+def _routes_to_yaml(value: object) -> object:
+    """Serialize a ModelRoute/list/dict back to YAML-serializable strings for deep_merge."""
+    from .models import ModelRoute as _MR
+    if isinstance(value, _MR):
+        return str(value)
+    if isinstance(value, list):
+        return [str(r) if isinstance(r, _MR) else r for r in value]
+    if isinstance(value, dict):
+        return {k: _routes_to_yaml(v) for k, v in value.items()}
+    return value
+
+
+def parse_route(value: object) -> ModelRoute:
+    """Parse a single model route from YAML config value.
+
+    Accepts:
+    - "provider:model" string, e.g. "openrouter:x-ai/grok-4.1-fast"
+    - {"provider": "openrouter", "model": "x-ai/grok-4.1-fast"} dict
+
+    Raises ValueError for bare strings without a provider prefix.
+    """
+    if isinstance(value, dict):
+        provider = value.get("provider")
+        model = value.get("model")
+        if not provider or not model:
+            raise ValueError(
+                f"Route dict must have 'provider' and 'model' keys, got: {value}"
+            )
+        return ModelRoute(provider=str(provider), model=str(model))
+
+    if isinstance(value, str):
+        if ":" not in value:
+            raise ValueError(
+                f"Model string '{value}' is missing a provider prefix. "
+                f"Use 'openrouter:{value}' or 'anthropic:{value}'."
+            )
+        provider, model = value.split(":", 1)
+        if not provider or not model:
+            raise ValueError(f"Invalid route string '{value}': provider and model must be non-empty.")
+        return ModelRoute(provider=provider, model=model)
+
+    raise ValueError(f"Expected a string or dict for model route, got {type(value).__name__}: {value!r}")
+
+
+def parse_routes(value: object) -> list[ModelRoute]:
+    """Parse one or more model routes from a YAML config value.
+
+    Accepts a single route or a list of routes (each in any form parse_route accepts).
+    Returns a list with at least one element.
+    """
+    if isinstance(value, list):
+        return [parse_route(item) for item in value]
+    return [parse_route(value)]
+
+
+def parse_actor_routes(value: object) -> object:
+    """Parse the actors field which can be a route, list of routes, or per-actor dict.
+
+    Returns ModelRoute, list[ModelRoute], or dict[str, ModelRoute | list[ModelRoute]].
+    """
+    if isinstance(value, dict) and not ("provider" in value and "model" in value):
+        # Per-actor dict: keys are actor IDs (or "default"), values are routes
+        result = {}
+        for actor_id, route_value in value.items():
+            if isinstance(route_value, list):
+                result[actor_id] = [parse_route(r) for r in route_value]
+            else:
+                result[actor_id] = parse_route(route_value)
+        return result
+
+    return parse_routes(value) if isinstance(value, list) else parse_route(value)
 
 
 def load_scenario(path: Union[Path, str]) -> Scenario:
@@ -280,13 +365,13 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                 "actors": base_config.actor_ids,
                 "output_language": base_config.output_language,
                 "llm": {
-                    "events": base_config.llm.events,
-                    "actors": base_config.llm.actors,
-                    "rules": base_config.llm.rules,
-                    "metrics": base_config.llm.metrics,
-                    "summary": base_config.llm.summary,
-                    "analysis": base_config.llm.analysis,
-                    "referee": base_config.llm.referee,
+                    "events": _routes_to_yaml(base_config.llm.events),
+                    "actors": _routes_to_yaml(base_config.llm.actors),
+                    "rules": _routes_to_yaml(base_config.llm.rules),
+                    "metrics": _routes_to_yaml(base_config.llm.metrics),
+                    "summary": _routes_to_yaml(base_config.llm.summary),
+                    "analysis": _routes_to_yaml(base_config.llm.analysis),
+                    "referee": _routes_to_yaml(base_config.llm.referee),
                     "temperature": base_config.llm.temperature,
                     "max_tokens": base_config.llm.max_tokens,
                     "max_tokens_by_task": base_config.llm.max_tokens_by_task,
@@ -307,20 +392,21 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
     # Parse LLM configuration
     llm_data = data.get("llm", {})
 
+    _default_main = "openrouter:google/gemini-3-flash-preview"
+    _default_cheap = "openrouter:x-ai/grok-4.1-fast"
+
     # Support both old format (single model) and new format (per-task models)
     if "model" in llm_data and not any(k in llm_data for k in ["events", "actors", "rules", "metrics"]):
         # Old format: single model for everything
+        _m = llm_data.get("model", _default_main)
         llm_config = LLMConfig(
-            events=llm_data.get("model", "google/gemini-3-flash-preview"),
-            actors=llm_data.get("model", "google/gemini-3-flash-preview"),
-            rules=llm_data.get("model", "google/gemini-3-flash-preview"),
-            metrics=llm_data.get("model", "google/gemini-3-flash-preview"),
-            summary=llm_data.get("summary", llm_data.get("model", "google/gemini-3-flash-preview")),
-            analysis=llm_data.get(
-                "analysis",
-                llm_data.get("summary", llm_data.get("model", "google/gemini-3-flash-preview")),
-            ),
-            referee=llm_data.get("referee", "x-ai/grok-4.1-fast"),
+            events=parse_route(_m),
+            actors=parse_route(_m),
+            rules=parse_route(_m),
+            metrics=parse_route(_m),
+            summary=parse_route(llm_data.get("summary", _m)),
+            analysis=parse_route(llm_data.get("analysis", llm_data.get("summary", _m))),
+            referee=parse_route(llm_data.get("referee", _default_cheap)),
             temperature=llm_data.get("temperature", 0.7),
             max_tokens=llm_data.get("max_tokens", 2000),
             max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
@@ -328,13 +414,15 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
     else:
         # New format: per-task models
         llm_config = LLMConfig(
-            events=llm_data.get("events", "google/gemini-3-flash-preview"),
-            actors=llm_data.get("actors", "google/gemini-3-flash-preview"),
-            rules=llm_data.get("rules", "google/gemini-3-flash-preview"),
-            metrics=llm_data.get("metrics", "google/gemini-3-flash-preview"),
-            summary=llm_data.get("summary", "x-ai/grok-4.1-fast"),
-            analysis=llm_data.get("analysis", llm_data.get("summary", "x-ai/grok-4.1-fast")),
-            referee=llm_data.get("referee", "x-ai/grok-4.1-fast"),
+            events=_parse_routes_field(llm_data.get("events", _default_main)),
+            actors=parse_actor_routes(llm_data.get("actors", _default_main)),
+            rules=_parse_routes_field(llm_data.get("rules", _default_main)),
+            metrics=_parse_routes_field(llm_data.get("metrics", _default_main)),
+            summary=_parse_routes_field(llm_data.get("summary", _default_cheap)),
+            analysis=_parse_routes_field(
+                llm_data.get("analysis", llm_data.get("summary", _default_cheap))
+            ),
+            referee=_parse_routes_field(llm_data.get("referee", _default_cheap)),
             temperature=llm_data.get("temperature", 0.7),
             max_tokens=llm_data.get("max_tokens", 2000),
             max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),

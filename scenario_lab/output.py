@@ -4,7 +4,18 @@ import json
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
-from .models import Scenario, TurnResult
+from .models import ModelRoute, Scenario, TurnResult
+
+
+def _routes_to_json(value: object) -> object:
+    """Convert ModelRoute/list/dict to JSON-serializable strings."""
+    if isinstance(value, ModelRoute):
+        return str(value)
+    if isinstance(value, list):
+        return [_routes_to_json(item) for item in value]
+    if isinstance(value, dict):
+        return {k: _routes_to_json(v) for k, v in value.items()}
+    return value
 
 
 class OutputManager:
@@ -391,13 +402,13 @@ class OutputManager:
             "max_turns": self.scenario.config.max_turns,
             "actors": self.scenario.config.actor_ids,
             "llm": {
-                "events": self.scenario.config.llm.events,
-                "actors": self.scenario.config.llm.actors,
-                "rules": self.scenario.config.llm.rules,
-                "metrics": self.scenario.config.llm.metrics,
-                "summary": self.scenario.config.llm.summary,
-                "analysis": self.scenario.config.llm.analysis,
-                "referee": self.scenario.config.llm.referee,
+                "events": _routes_to_json(self.scenario.config.llm.events),
+                "actors": _routes_to_json(self.scenario.config.llm.actors),
+                "rules": _routes_to_json(self.scenario.config.llm.rules),
+                "metrics": _routes_to_json(self.scenario.config.llm.metrics),
+                "summary": _routes_to_json(self.scenario.config.llm.summary),
+                "analysis": _routes_to_json(self.scenario.config.llm.analysis),
+                "referee": _routes_to_json(self.scenario.config.llm.referee),
                 "temperature": self.scenario.config.llm.temperature,
                 "max_tokens": self.scenario.config.llm.max_tokens,
                 "max_tokens_by_task": self.scenario.config.llm.max_tokens_by_task,

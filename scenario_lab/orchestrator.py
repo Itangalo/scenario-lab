@@ -5,9 +5,11 @@ import random
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Protocol, Optional, Union, TYPE_CHECKING
-from .models import Scenario, TurnResult, WorldState
+from .models import Scenario, TurnResult, WorldState, ModelRoute
 from .prompts import PromptBuilder
-from .llm import LLMResponse, LLMClient, LLMParseError
+from .llm import LLMResponse, LLMParseError
+from .router import FallbackRouter
+from .providers.registry import ProviderRegistry
 
 if TYPE_CHECKING:
     from .output import OutputManager
@@ -48,162 +50,116 @@ class Orchestrator:
         self.prompt_builder = PromptBuilder(scenario)
         self.output_manager = output_manager
         self.progress_tracker = progress_tracker
-        self._owned_clients = []  # Clients we created and need to close
+        self._owned_routers: list[FallbackRouter] = []
 
         # Initialize cost tracking
         from .cost import CostTracker
         self.cost_tracker = CostTracker()
 
-        # Setup LLM clients
+        # Setup LLM routers
         if llm_client is None:
-            # Create clients based on config
-            self.llm_clients = self._create_clients_from_config()
+            self.llm_clients = self._create_routers_from_config()
         elif isinstance(llm_client, dict):
-            # Use provided dict of clients
             self.llm_clients = llm_client
         else:
-            # Single client for all tasks (backward compatible)
+            # Single client/router for all tasks (backward compatible with MockLLMClient)
             self.llm_clients = {
                 "events": llm_client,
-                "actors": {},  # Will use events client as fallback
+                "actors": {},
                 "rules": llm_client,
                 "metrics": llm_client,
                 "summary": llm_client,
+                "referee": llm_client,
             }
 
-    def _normalize_model(self, model: Union[str, list]) -> str:
-        """Get primary model string from model or fallback list."""
-        return model[0] if isinstance(model, list) else model
+    @staticmethod
+    def _primary_route_key(routes: "ModelRoute | list[ModelRoute]") -> str:
+        """Return the string key for the primary route, used for reuse deduplication."""
+        primary = routes[0] if isinstance(routes, list) else routes
+        return str(primary)
 
-    def _models_match(self, model1: Union[str, list], model2: Union[str, list]) -> bool:
-        """Check if two model specifications match (same primary model)."""
-        return self._normalize_model(model1) == self._normalize_model(model2)
+    @staticmethod
+    def _routes_match(
+        a: "ModelRoute | list[ModelRoute]",
+        b: "ModelRoute | list[ModelRoute]",
+    ) -> bool:
+        """True if both route specs share the same primary route."""
+        return Orchestrator._primary_route_key(a) == Orchestrator._primary_route_key(b)
 
-    def _create_clients_from_config(self) -> dict:
-        """Create LLM clients based on scenario configuration with fallback support."""
+    def _make_router(
+        self,
+        routes: "ModelRoute | list[ModelRoute]",
+        registry: ProviderRegistry,
+        temperature: float,
+        max_tokens: int,
+    ) -> FallbackRouter:
+        """Build a FallbackRouter and register it for cleanup."""
+        route_list = routes if isinstance(routes, list) else [routes]
+        router = FallbackRouter(
+            routes=route_list,
+            registry=registry,
+            temperature=temperature,
+            max_tokens=max_tokens,
+        )
+        self._owned_routers.append(router)
+        return router
+
+    def _create_routers_from_config(self) -> dict:
+        """Create FallbackRouters based on scenario configuration."""
         config = self.scenario.config.llm
+        registry = ProviderRegistry()
 
-        # Create client for events (supports fallback list)
-        events_client = LLMClient(
-            model=config.events,  # Can be str or List[str]
-            temperature=config.temperature,
-            max_tokens=config.get_task_max_tokens("events"),
+        router_cache: dict[str, FallbackRouter] = {}
+
+        def get_or_create(
+            routes: "ModelRoute | list[ModelRoute]",
+            temperature: float,
+            max_tokens: int,
+        ) -> FallbackRouter:
+            key = self._primary_route_key(routes)
+            if key in router_cache:
+                return router_cache[key]
+            router = self._make_router(routes, registry, temperature, max_tokens)
+            router_cache[key] = router
+            return router
+
+        events_router = get_or_create(
+            config.events, config.temperature, config.get_task_max_tokens("events")
         )
-        self._owned_clients.append(events_client)
 
-        # Create clients for actors
-        actor_clients = {}
+        actor_routers: dict[str, FallbackRouter] = {}
         for actor_id in self.scenario.config.actor_ids:
-            models = config.get_actor_models(actor_id)  # Can be str or List[str]
-
-            # Reuse existing client if same primary model
-            primary_model = self._normalize_model(models)
-            existing = next(
-                (
-                    c
-                    for c in [events_client] + list(actor_clients.values())
-                    if self._normalize_model(c.models) == primary_model
-                ),
-                None,
+            routes = config.get_actor_routes(actor_id)
+            actor_routers[actor_id] = get_or_create(
+                routes, config.temperature, config.get_task_max_tokens("actors")
             )
-            if existing:
-                actor_clients[actor_id] = existing
-            else:
-                client = LLMClient(
-                    model=models, temperature=config.temperature, max_tokens=config.get_task_max_tokens("actors")
-                )
-                self._owned_clients.append(client)
-                actor_clients[actor_id] = client
 
-        # Create client for rules
-        if self._models_match(config.rules, config.events):
-            rules_client = events_client
-        else:
-            # Check if any actor client matches
-            primary_model = self._normalize_model(config.rules)
-            existing = next(
-                (
-                    c
-                    for c in actor_clients.values()
-                    if self._normalize_model(c.models) == primary_model
-                ),
-                None,
-            )
-            if existing:
-                rules_client = existing
-            else:
-                rules_client = LLMClient(
-                    model=config.rules, temperature=config.temperature, max_tokens=config.get_task_max_tokens("rules")
-                )
-                self._owned_clients.append(rules_client)
-
-        # Create client for metrics
-        primary_model = self._normalize_model(config.metrics)
-        if self._models_match(config.metrics, config.events):
-            metrics_client = events_client
-        elif self._models_match(config.metrics, config.rules):
-            metrics_client = rules_client
-        else:
-            # Check if any actor client matches
-            existing = next(
-                (
-                    c
-                    for c in actor_clients.values()
-                    if self._normalize_model(c.models) == primary_model
-                ),
-                None,
-            )
-            if existing:
-                metrics_client = existing
-            else:
-                metrics_client = LLMClient(
-                    model=config.metrics, temperature=config.temperature, max_tokens=config.get_task_max_tokens("metrics")
-                )
-                self._owned_clients.append(metrics_client)
-
-        # Create client for summary
-        # Use a simpler logic for summary: reuse events client if it matches, else create new
-        if self._models_match(config.summary, config.events):
-            summary_client = events_client
-        else:
-            summary_client = LLMClient(
-                model=config.summary, temperature=0.3, max_tokens=config.get_task_max_tokens("summary")  # Lower temp for summary
-            )
-            self._owned_clients.append(summary_client)
-
-        # Create client for constitutional referee (cheap, fast model)
-        # Check if any existing client matches
-        primary_model = self._normalize_model(config.referee)
-        existing = next(
-            (
-                c
-                for c in [events_client, rules_client, metrics_client, summary_client]
-                + list(actor_clients.values())
-                if self._normalize_model(c.models) == primary_model
-            ),
-            None,
+        rules_router = get_or_create(
+            config.rules, config.temperature, config.get_task_max_tokens("rules")
         )
-        if existing:
-            referee_client = existing
-        else:
-            referee_client = LLMClient(
-                model=config.referee, temperature=0.3, max_tokens=config.get_task_max_tokens("referee", default=1000)  # Low temp, short output
-            )
-            self._owned_clients.append(referee_client)
+        metrics_router = get_or_create(
+            config.metrics, config.temperature, config.get_task_max_tokens("metrics")
+        )
+        summary_router = get_or_create(
+            config.summary, 0.3, config.get_task_max_tokens("summary")
+        )
+        referee_router = get_or_create(
+            config.referee, 0.3, config.get_task_max_tokens("referee", default=1000)
+        )
 
         return {
-            "events": events_client,
-            "actors": actor_clients,
-            "rules": rules_client,
-            "metrics": metrics_client,
-            "summary": summary_client,
-            "referee": referee_client,
+            "events": events_router,
+            "actors": actor_routers,
+            "rules": rules_router,
+            "metrics": metrics_router,
+            "summary": summary_router,
+            "referee": referee_router,
         }
 
     def close(self):
-        """Close all owned LLM clients."""
-        for client in self._owned_clients:
-            client.close()
+        """Close all owned routers (and their underlying providers via registry)."""
+        for router in self._owned_routers:
+            router.close()
 
     def _record_llm_call(self, turn: int, task_name: str, response: LLMResponse):
         """Record token usage and cost from an LLM call.

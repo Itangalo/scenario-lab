@@ -44,7 +44,7 @@ def test_pricing_cache_uses_fresh_runtime_cache(monkeypatch, tmp_path):
         return None
 
     monkeypatch.setattr(
-        "scenario_lab.pricing.fetch_openrouter_pricing_snapshot",
+        "scenario_lab.pricing.openrouter.fetch_openrouter_pricing_snapshot",
         _unexpected_refresh,
     )
 
@@ -72,7 +72,7 @@ def test_pricing_cache_refreshes_stale_snapshot(monkeypatch, tmp_path):
     )
 
     monkeypatch.setattr(
-        "scenario_lab.pricing.fetch_openrouter_pricing_snapshot",
+        "scenario_lab.pricing.openrouter.fetch_openrouter_pricing_snapshot",
         lambda: {
             "fetched_at": _timestamp(hours_ago=0),
             "source": "openrouter",
@@ -110,7 +110,7 @@ def test_pricing_cache_refreshes_when_model_missing(monkeypatch, tmp_path):
     )
 
     monkeypatch.setattr(
-        "scenario_lab.pricing.fetch_openrouter_pricing_snapshot",
+        "scenario_lab.pricing.openrouter.fetch_openrouter_pricing_snapshot",
         lambda: {
             "fetched_at": _timestamp(hours_ago=0),
             "source": "openrouter",
@@ -144,7 +144,7 @@ def test_pricing_cache_falls_back_to_stale_data_when_refresh_fails(monkeypatch, 
     )
 
     monkeypatch.setattr(
-        "scenario_lab.pricing.fetch_openrouter_pricing_snapshot",
+        "scenario_lab.pricing.openrouter.fetch_openrouter_pricing_snapshot",
         lambda: None,
     )
 

@@ -11,6 +11,7 @@ Pricing should still be verified against OpenRouter before trusting older logged
 | google/gemini-2.0-flash-001 | $0.10 | $0.40 | 1/10 turns (ai-safety-race) | Recommended |
 | x-ai/grok-4.1-fast | $0.20 | $0.50 | 0/10 turns (ai-safety-race) | Recommended |
 | qwen/qwen3-235b-a22b-2507 | $0.071 | $0.10 | 0/40 turns (sweden-ai-2030) | Recommended |
+| openai/gpt-5.4-nano | $0.20 | $1.25 | 35/40 turns accepted with constitutional violations (sweden-ai-2030) | Avoid |
 | google/gemini-2.5-flash | $0.30 | $2.50 | 10/10 turns (ai-safety-race) | Avoid |
 | moonshotai/kimi-k2 | $0.55 | $2.20 | 6/10 turns (ai-safety-race) | Avoid |
 | anthropic/claude-haiku-4-5 | $1.00 | $5.00 | 10/10 turns (ai-safety-race) | Avoid |
@@ -21,6 +22,7 @@ Pricing should still be verified against OpenRouter before trusting older logged
 | Model | Scenario | Avg cost | Avg tokens |
 |-------|----------|----------|------------|
 | qwen/qwen3-235b-a22b-2507 | sweden-ai-2030 | ~$0.023 | ~302k |
+| openai/gpt-5.4-nano | sweden-ai-2030 | ~$0.14 | ~368k |
 | google/gemini-2.0-flash-001 | ai-safety-race | ~$0.05 | – |
 | x-ai/grok-4.1-fast | sweden-ai-2030 | ~$0.12 | ~388k |
 | x-ai/grok-4.1-fast | ai-safety-race | ~$0.44* | – |
@@ -71,6 +73,21 @@ Pricing should still be verified against OpenRouter before trusting older logged
 - Cheapest tested model at ~$0.023/run
 
 **Verdict:** Strong budget option. Stable, no constitutional violations, good narrative quality.
+
+---
+
+### openai/gpt-5.4-nano
+
+**Tested on:** sweden-ai-2030 (4 runs, 2026-04-01)
+
+- Poor at following the scenario's formal game rules and output contracts
+- 35/40 turns ended as `accepted_with_violations`; only 5/40 were approved after referee review, and only 1 turn was approved on the first pass
+- Repeated rule-output formatting problems: fenced markdown wrappers, missing parseable changelog entries, and recurring "Metric rules header not found" warnings
+- Metrics output was not reliable: one run produced empty `4-metrics.json` files in turns 8 and 9, and other runs produced partial metric payloads with only `ai_capability`
+- The runs completed and persisted to disk, but mostly because the orchestrator tolerated malformed outputs and constitutional failures rather than because the model stayed within the rules
+- More expensive than qwen/qwen3-235b-a22b-2507 while much worse at rule-following
+
+**Verdict:** Avoid for full scenario runs where formal rule-following matters. GPT-5.4-nano is bad at following the game rules in Scenario Lab.
 
 ---
 

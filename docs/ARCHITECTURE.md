@@ -147,11 +147,33 @@ Each turn executes the following steps in order:
 - **Context:** Templates receive a rich context object including `turn`, `time_period`, `metrics_json`, `world_state`, `events_list`, and individual metric variables (`metric_X`).
 - **Output Language:** The `output_language` setting injects instructions into templates to control the language of the LLM's response (e.g., "Please write your response in Swedish").
 
-### LLM Integration (`llm.py`)
-- **Client:** Uses `httpx` to call OpenRouter API.
-- **Fallback:** Supports a list of models for fallback (e.g., try Claude 3.5 Sonnet, then Haiku).
-- **Defensive Response Handling:** Retries transiently when the provider returns a malformed success payload (for example a 200 response without `choices`) instead of crashing the run immediately.
-- **Parsing:** Includes strict regex-based parsing for JSON and specific Markdown headers.
+### LLM Providers and Routing (`providers/`, `router.py`)
+
+**ModelRoute:** Every model reference in configuration is a `ModelRoute(provider, model)` dataclass. YAML syntax is `"provider:model"`, for example `"openrouter:x-ai/grok-4.1-fast"` or `"anthropic:claude-sonnet-4-6"`. String literals without a provider prefix are rejected at load time.
+
+**Provider abstraction (`providers/`):** Each backend is an `LLMProvider` subclass with a single `complete(system, user, *, model, temperature, max_tokens)` method:
+
+- `OpenRouterProvider` – HTTP via `httpx`, reads `OPENROUTER_API_KEY`.
+- `AnthropicProvider` – official `anthropic` SDK, reads `ANTHROPIC_API_KEY`.
+
+New providers can be registered without changing orchestrator code.
+
+**ProviderRegistry:** One instance per run. Lazily creates built-in providers on first access so that a run using only OpenRouter never touches `ANTHROPIC_API_KEY`. Custom providers can be registered explicitly before the run starts.
+
+**FallbackRouter (`router.py`):** Wraps an ordered list of `ModelRoute`s and one `ProviderRegistry`. On each call it tries routes left-to-right:
+
+- Rate limits (`LLMRateLimitError`): up to three retries with exponential backoff on the same route.
+- Non-retryable errors (`LLMError`): move to the next route immediately.
+- Malformed responses (`ValueError`): up to three retries, then move on.
+- After all routes are exhausted: raises `LLMError` with the list of attempted routes.
+
+**LLM shared types (`llm.py`):** `LLMResponse`, `LLMError`, `LLMRateLimitError`, `LLMParseError`, and `MockLLMClient` (used by the test suite). `LLMResponse.get_usage()` extracts a `TokenUsage` object from the raw response, with `provider` set to the originating backend.
+
+**Pricing (`pricing/`):**
+
+- `pricing/openrouter.py` – `OpenRouterPricingCache`: fetches from OpenRouter's model catalog, caches locally in `.scenario-lab-cache/openrouter-pricing.json`, falls back to the bundled seed in `data/openrouter_pricing_seed.json`.
+- `pricing/anthropic.py` – `AnthropicPricingCache`: fetches from LiteLLM's model catalog (filters `litellm_provider == "anthropic"`), caches in `.scenario-lab-cache/anthropic-pricing.json`, falls back to the bundled seed in `data/anthropic_pricing_seed.json`.
+- `pricing/__init__.py` exposes `get_pricing_for(route: ModelRoute)` which dispatches to the correct cache based on `route.provider`.
 
 ### Persistence (`output.py`)
 - **Incremental Writing:** Results are saved to disk *immediately* after each step of the turn loop.
@@ -332,31 +354,30 @@ The `5-constitutional-check.json` file (when present) includes:
 - **Reliability:** Fewer runtime failures
 - **Documentation:** Validation errors help users understand requirements
 
-### Cost Tracking (`llm.py`, `output.py`)
+### Cost Tracking (`cost.py`, `output.py`)
 
 **Purpose:** Track token usage and estimate costs to help users budget and optimize LLM API spending.
 
 **Token Usage Tracking:**
-- `TokenUsage` dataclass stores prompt_tokens, completion_tokens, total_tokens, and model
-- Token counts are extracted from OpenRouter API responses via `LLMResponse.get_usage()`
-- The orchestrator converts token usage into `CostDetails` and records them in `CostTracker`
-- Cost estimation based on OpenRouter pricing snapshots (per 1M tokens)
+- `TokenUsage` dataclass stores `prompt_tokens`, `completion_tokens`, `total_tokens`, `model`, and `provider`. Anthropic responses also populate `cache_creation_input_tokens` and `cache_read_input_tokens`.
+- Token counts are extracted from every LLM response via `LLMResponse.get_usage()`.
+- The orchestrator converts token usage into `CostDetails` and records them in `CostTracker`.
+- Cost estimation dispatches to the correct pricing cache based on `usage.provider`.
 
-**Pricing Cache:**
-- Pricing seed data lives in `scenario_lab/data/openrouter_pricing_seed.json`, not inline in Python code
-- Runtime refreshes are cached in `.scenario-lab-cache/openrouter-pricing.json`
-- If the cached snapshot is older than the configured TTL, or a required model is missing, the cost layer refreshes from OpenRouter before estimating again
-- If OpenRouter is unavailable, the calculator falls back to the latest cached snapshot; only when no pricing is available does it use a conservative default with warning
+**Pricing Caches:**
+- OpenRouter: seed in `scenario_lab/data/openrouter_pricing_seed.json`, runtime cache in `.scenario-lab-cache/openrouter-pricing.json`, refreshed from OpenRouter's model catalog.
+- Anthropic: seed in `scenario_lab/data/anthropic_pricing_seed.json`, runtime cache in `.scenario-lab-cache/anthropic-pricing.json`, refreshed from LiteLLM's model catalog.
+- Both caches refresh automatically when a model is missing or the snapshot is stale; each falls back to its bundled seed if a refresh fails.
 
 **Cost Reporting:**
-- Saved to `costs.json` in run directory with detailed breakdown
-- Tracks costs by turn, by task (events, actors, rules, metrics, summary), and by model
-- Includes total tokens, total cost, and averages
+- Saved to `costs.json` in run directory with detailed breakdown.
+- Tracks costs by turn, by task (events, actors, rules, metrics, summary), and by model.
+- Includes total tokens, total cost, and averages.
 
 **CLI Commands:**
-- `estimate`: Pre-run cost estimation based on scenario configuration
-- `costs`: Display cost report for completed runs with optional `--detailed` breakdown
-- `refresh-pricing`: Force-refresh the local OpenRouter pricing cache used by cost estimation
+- `estimate`: Pre-run cost estimation based on scenario configuration.
+- `costs`: Display cost report for completed runs with optional `--detailed` breakdown.
+- `refresh-pricing`: Refresh pricing caches; `--provider {openrouter,anthropic}` scopes to one provider.
 
 **Value:**
 - Budget control and planning
