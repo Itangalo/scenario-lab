@@ -45,6 +45,9 @@ V4 represents a radical simplification from previous versions. Instead of comple
 ### Events
 - **Definition:** Exogenous happenings with probabilities and conditions.
 - **Evaluation:** The LLM evaluates whether conditions are met and calculates probabilities. The Python orchestrator then "rolls the dice" to see if the event actually triggers.
+- **Deterministic Dice:** The roll for each event is derived from a recorded run seed: `random.Random(f"{seed}:{turn}:{event_id}").random()`. This makes the dice deterministic given the seed and independent of evaluation order, so `resume` and `branch` reproduce identical rolls without saving RNG state. Note that this only makes the dice deterministic – the LLM outputs (probabilities, narrative, actor actions) remain nondeterministic.
+- **Full Provenance:** Every candidate event the LLM returns is recorded in `turn-XX/1-event-evaluations.json` with its `id`, evaluated `probability`, the `roll`, a `triggered` flag, and any extra fields the LLM returned (for example reasoning). Invalid or unknown entries are recorded with a `skipped` field describing the reason. The legacy `turn-XX/1-events.json` still contains only the triggered events in their original shape.
+- **Event Forcing (counterfactuals):** A branch may force or suppress specific events on its first executed turn via `event_overrides`. Forced events trigger regardless of probability/roll; suppressed events never trigger (suppression wins if an id is both forced and suppressed). Affected entries are marked `"forced": true` or `"suppressed": true` in `1-event-evaluations.json`.
 
 ### Constitutional Constraints
 - **Definition:** Invariant "must-hold" rules that the LLM must respect throughout the simulation.
@@ -65,8 +68,11 @@ V4 represents a radical simplification from previous versions. Instead of comple
 - **`scenario.yaml`**: Configuration (time scale, actors, LLM settings, output language).
   * **LLM Settings:** Includes per-task model configuration (`events`, `actors`, `rules`, `metrics`, `summary`, `analysis`, `referee`).
   * **Token Budgets:** Supports global `llm.max_tokens` plus optional per-task overrides via `llm.max_tokens_by_task` (for example, higher cap for `rules` to reduce truncation).
+  * **Structured Outputs:** Optional `llm.structured_outputs: auto | true | false` (default `auto`) controls provider-native structured outputs for the events step. YAML booleans are normalized to the canonical strings at load time.
   * **Rule Evolution Policy:** Optional `rule_evolution.freeze_until_turn` and `rule_evolution.max_changes_per_turn` let scenarios make early rules effectively fixed and keep later rule edits small.
   * **Constitutional Enforcement Policy:** Optional `constitutional_enforcement.max_attempts` and `constitutional_enforcement.on_failure` tune how hard the referee gate is.
+  * **Logging:** Optional `logging.llm_io` enables per-call LLM prompt/response transcripts. It can also be turned on per run with the `--log-llm-io` CLI flag.
+  * **Run-time Config Fields:** `config.json` additionally records `random_seed` (the dice RNG seed for the run), `logging.llm_io`, and, for branch counterfactuals, `event_overrides: {"turn": N, "force": [...], "suppress": [...]}`. `random_seed` and `event_overrides` are set at run time rather than declared in `scenario.yaml`.
 - **Markdown Resources**: `metrics.md`, `events.md`, `metric-rules.md`, `background/*.md`.
 - **Optional Resources**:
   * `constitution.md`: Constitutional constraints (invariant rules) for the scenario.
@@ -78,7 +84,12 @@ Each turn executes the following steps in order:
 1. **Events Step**:
   * **Input:** World state (history + current), current metrics, list of potential events.
   * **LLM Task:** Determine which events meet their conditions and calculate their probabilities.
-  * **Python Action:** Parse JSON response, roll dice for probabilities, determine triggered events. If parsing fails, the orchestrator retries once with a dedicated “format-fix” prompt to coerce valid JSON before giving up for the turn.
+  * **Python Action:** Parse JSON response, roll the seeded dice for each candidate, and determine triggered events. If parsing fails, the orchestrator retries once with a dedicated “format-fix” prompt to coerce valid JSON before giving up for the turn.
+  * **Structured Outputs:** Controlled by `llm.structured_outputs` (`auto` | `true` | `false`, default `auto`). When active, the events call uses the provider's native structured-output capability (`complete_structured` with the schema in `schemas.py`), which skips text parsing and the format-fix retry entirely. In `auto` mode, an unsupported model triggers a one-line info message, a silent fallback to the legacy parse path, and a per-run flag so structured output is not retried every turn. In `true` mode, lack of support is a hard error. The schema mirrors exactly what the prompt template asks for (objects with `id` and `probability`) – prompt semantics are unchanged.
+  * **Parse-Failure Marker:** If the legacy path exhausts the format-fix retry and the turn proceeds with zero events, the orchestrator records `[{"parse_failure": true, "triggered": false}]` in `1-event-evaluations.json` and prints a warning, so a parse failure cannot be mistaken for "no events this turn".
+  * **Persistence:** Writes both `1-events.json` (triggered events only, legacy shape) and `1-event-evaluations.json` (full per-candidate record: probability, roll, triggered, skipped reasons, force/suppress flags) at the same incremental point.
+  * **Determinism:** Dice rolls come from a stable RNG derived from the run seed (`random.Random(f"{seed}:{turn}:{event_id}")`), not from a global unseeded generator.
+  * **Overrides:** If `event_overrides` is set for this turn, forced events trigger regardless of the roll and suppressed events never trigger.
 
 2. **Actors Step**:
   * **Input:** World state (history + current), metrics, triggered events.
@@ -151,12 +162,19 @@ Each turn executes the following steps in order:
 
 **ModelRoute:** Every model reference in configuration is a `ModelRoute(provider, model)` dataclass. YAML syntax is `"provider:model"`, for example `"openrouter:x-ai/grok-4.1-fast"` or `"anthropic:claude-sonnet-4-6"`. String literals without a provider prefix are rejected at load time.
 
-**Provider abstraction (`providers/`):** Each backend is an `LLMProvider` subclass with a single `complete(system, user, *, model, temperature, max_tokens)` method:
+**Provider abstraction (`providers/`):** Each backend is an `LLMProvider` subclass with a `complete(system, user, *, model, temperature, max_tokens)` method:
 
 - `OpenRouterProvider` – HTTP via `httpx`, reads `OPENROUTER_API_KEY`.
 - `AnthropicProvider` – official `anthropic` SDK, reads `ANTHROPIC_API_KEY`.
 
 New providers can be registered without changing orchestrator code.
+
+**Structured outputs:** Providers additionally expose `complete_structured(system, user, *, model, temperature, max_tokens, schema, schema_name)` for schema-constrained completions (currently used by the events step only). `schema` is the JSON schema of the expected *array*; the returned `LLMResponse` carries the parsed payload in `structured_data` and a JSON serialization in `content` (so transcript logging keeps working unchanged).
+
+- `OpenRouterProvider` sends `response_format: {"type": "json_schema", "json_schema": {..., "strict": true}}`. Models that reject it (any 4xx other than 429, or non-JSON content) raise `LLMUnsupportedStructuredError`.
+- `AnthropicProvider` implements it as a forced tool call (`tools` + `tool_choice: {"type": "tool", "name": ...}`) whose `input_schema` wraps the array under an `events` object property; the tool-use input is unwrapped back to the array, so both providers return the same shape.
+- The `LLMProvider` base class default raises `LLMUnsupportedStructuredError`, so new providers get graceful fallback for free.
+- `FallbackRouter.complete_structured` threads the call through routes like `complete`, except that `LLMUnsupportedStructuredError` propagates immediately (no route fallback) – the caller decides whether to fall back to text parsing (`auto`) or fail hard (`true`). Token usage and cost accounting work identically for structured calls.
 
 **ProviderRegistry:** One instance per run. Lazily creates built-in providers on first access so that a run using only OpenRouter never touches `ANTHROPIC_API_KEY`. Custom providers can be registered explicitly before the run starts.
 
@@ -167,7 +185,7 @@ New providers can be registered without changing orchestrator code.
 - Malformed responses (`ValueError`): up to three retries, then move on.
 - After all routes are exhausted: raises `LLMError` with the list of attempted routes.
 
-**LLM shared types (`llm.py`):** `LLMResponse`, `LLMError`, `LLMRateLimitError`, `LLMParseError`, and `MockLLMClient` (used by the test suite). `LLMResponse.get_usage()` extracts a `TokenUsage` object from the raw response, with `provider` set to the originating backend.
+**LLM shared types (`llm.py`):** `LLMResponse`, `LLMError`, `LLMRateLimitError`, `LLMParseError`, `LLMUnsupportedStructuredError`, and `MockLLMClient` (used by the test suite). `LLMResponse.get_usage()` extracts a `TokenUsage` object from the raw response, with `provider` set to the originating backend.
 
 **Pricing (`pricing/`):**
 
@@ -177,6 +195,8 @@ New providers can be registered without changing orchestrator code.
 
 ### Persistence (`output.py`)
 - **Incremental Writing:** Results are saved to disk *immediately* after each step of the turn loop.
+- **Event Evaluations:** `1-event-evaluations.json` is written incrementally at the same point as `1-events.json` and captures the full per-candidate provenance for the turn.
+- **LLM I/O Transcripts:** When `logging.llm_io` is enabled, every LLM call is written at call time to `turn-XX/llm-io/NN-<task>.md` (task name, model, system/user prompts, raw response, token counts, cost). `NN` is a per-turn sequence number and task names are sanitized for filenames (for example `events:format_fix` becomes `events-format_fix`). This is implemented as a thin recording wrapper around the per-task LLM clients in the orchestrator, so logging is not scattered across call sites.
 - **Structure:** Each run gets a timestamped directory. If a timestamp collides, the writer appends a numeric suffix (for example `run-20260304-102254-01`) instead of reusing the same directory. Each turn gets a subdirectory.
 - **Crash Resilience:** If the simulation crashes, all progress up to the last successful step is preserved.
 - **Resumption:** The directory structure and `summary.json` support resuming crashed runs or extending completed runs.
@@ -219,6 +239,8 @@ New providers can be registered without changing orchestrator code.
   * `--turns N`: Total turns to run (overrides config)
   * `--model X`: Override all LLM models
   * `--override key=value`: Override any config value
+  * `--log-llm-io`: Write per-call LLM transcripts under `turn-XX/llm-io/`
+- **Seed Handling:** Resume reads `random_seed` from the saved `config.json` so dice rolls stay reproducible. Legacy runs without a seed get a fresh one generated and written back into `config.json`.
 - **Behavior:**
   * Loads state from the specified turn (metrics, narrative, rules, notepad, historical summary, occurred events)
   * Continues execution in the *same* run directory (no duplication)
@@ -241,6 +263,9 @@ New providers can be registered without changing orchestrator code.
   * `--model X`: Override all LLM models
   * `--override key=value`: Override any config value
   * `--turns N`: Total turns to run from branch point
+  * `--seed INT`: Override the dice RNG seed (default: keep the parent run's seed)
+  * `--force-event EVENT_ID` / `--suppress-event EVENT_ID`: Repeatable counterfactual controls applied to the first turn executed in the branch. Event ids are validated against the scenario; an unknown id fails with a clear error. The overrides are recorded in the new run's `config.json` as `event_overrides` and reflected in `1-event-evaluations.json`.
+  * `--log-llm-io`: Write per-call LLM transcripts under `turn-XX/llm-io/`
 - **Behavior:**
   * Creates a *new* timestamped run directory
   * Copies turn directories 1 through N from parent run
@@ -270,6 +295,8 @@ run-YYYYMMDD-HHMMSS/
 ├── summary.json                  # Contains resume/branch metadata
 └── turn-XX/                      # Validated for completeness before loading
     ├── 1-events.json
+    ├── 1-event-evaluations.json # Full per-candidate event record (optional for legacy runs)
+    ├── llm-io/                  # Per-call LLM transcripts (only when llm_io logging is on)
     ├── 2-actors/*.md
     ├── 3-metric-rules.md         # Versioned rules with changelog
     ├── 3-metric-rules-metadata.json  # Rules version and changelog metadata
@@ -424,11 +451,26 @@ Cost so far: $0.15 | Projected total: $0.50
 
 ### CLI (`cli.py`)
 - **Entry Point:** `python -m scenario_lab.cli`.
-- **Commands:** `run`, `batch-run`, `batch-resume`, `resume`, `branch`, `validate`, `audit-models`, `visualize`, `costs`, `estimate`, `refresh-pricing`
+- **Commands:** `run`, `batch-run`, `batch-resume`, `resume`, `branch`, `validate`, `audit-models`, `visualize`, `costs`, `estimate`, `refresh-pricing`, `calibrate`, `ensemble`, `model-sensitivity`, `compare-runs`, `check-run-integrity`, `check-regressions`, `compare-distributions`, `quality-check`, `analyze`
 - **Overrides:** Supports `--override key=value` to modify configuration at runtime (e.g., `--override output_language=Spanish`).
 - **Validation:** Supports `--validate` flag to validate scenarios before running
 - **Model Preflight:** `run` performs model hygiene checks by default and can be bypassed with `--skip-model-checks`
 - **Progress:** Supports `--no-progress` and `--quiet` flags for output control
+
+### Ensemble Analysis (`ensemble.py`)
+- **CLI Command:** `python -m scenario_lab.cli ensemble <scenario-dir> [options]`
+- **Purpose:** Analyzes all completed runs of a scenario as an ensemble without making any API calls.
+- **Inputs:** Reads `config.json`, `summary.json`, `costs.json`, and per-turn `4-metrics.json`, `1-events.json`, and `1-event-evaluations.json` (optional, absent in legacy runs) from every completed run directory.
+- **Report Sections:** Run overview (N, status mix, turn counts, cost); per-metric trajectories (mean/min/max/p10/p50/p90 per turn, with per-turn N reflecting runs that ended early); event statistics (overall occurrence rate, per-turn occurrence counts, mean evaluated probability vs realized frequency when evaluation data is available); divergence detection (metric × turn with the largest IQR jump, event associations via mean-split); automatic caveats for small N and mixed model configs.
+- **Output:** Markdown to stdout, or `--output file.md` for file output; `--json` emits the raw data structure.
+
+### Model Sensitivity Analysis (`model_sensitivity.py`)
+- **CLI Command:** `python -m scenario_lab.cli model-sensitivity <scenario-dir> [options]`
+- **Purpose:** Groups completed runs by their LLM configuration and compares outcomes across groups. Helps distinguish scenario stochasticity from model-driven variation.
+- **Grouping:** Runs are grouped by the sorted set of task→model assignments from each run's `config.json` `llm` block. Runs with identical model configs form one group.
+- **Report Sections:** Groups found with N and model(s); per-metric final-value distributions per group (mean/min/max/p10/p90); event occurrence rates per group; a robustness summary labeling metrics/events as sensitive (groups disagree) or robust (groups agree), using a 20% observed-range threshold for metrics and a 0.30 rate-difference threshold for events; caveats for single-group and small sample sizes.
+- **Single-group behavior:** If all runs use the same model, the report states clearly that sensitivity cannot be assessed and points at `variants/` + `batch-run` as the workflow to create multiple groups.
+- **Output:** Same `--json` / `--output` options as `ensemble`.
 
 ## 4. Evaluation & Testing
 - **Unit Tests:** Standard pytest suite for Python logic.

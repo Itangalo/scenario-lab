@@ -3,6 +3,7 @@
 import argparse
 import json
 import queue
+import random
 import re
 import shlex
 import subprocess
@@ -182,6 +183,12 @@ def build_batch_run_command(target: Path, args: argparse.Namespace) -> list[str]
 
     if args.validate:
         command.append("--validate")
+
+    if getattr(args, "seed", None) is not None:
+        command.extend(["--seed", str(args.seed)])
+
+    if getattr(args, "log_llm_io", False):
+        command.append("--log-llm-io")
 
     for override in args.override or []:
         command.extend(["--override", override])
@@ -830,6 +837,17 @@ def main():
         action="store_true",
         help="Skip default model hygiene checks before running",
     )
+    run_parser.add_argument(
+        "--seed",
+        type=int,
+        default=None,
+        help="Random seed for the dice RNG (default: random 64-bit seed)",
+    )
+    run_parser.add_argument(
+        "--log-llm-io",
+        action="store_true",
+        help="Write per-call LLM prompt/response transcripts to turn-XX/llm-io/",
+    )
 
     # Batch run command
     batch_run_parser = subparsers.add_parser(
@@ -877,6 +895,17 @@ def main():
         type=int,
         default=1,
         help="Run each resolved target N times",
+    )
+    batch_run_parser.add_argument(
+        "--seed",
+        type=int,
+        default=None,
+        help="Forward a fixed dice RNG seed to every job (shared across jobs)",
+    )
+    batch_run_parser.add_argument(
+        "--log-llm-io",
+        action="store_true",
+        help="Forward --log-llm-io to every job",
     )
 
     # Batch resume command
@@ -931,6 +960,11 @@ def main():
     resume_parser.add_argument(
         "--no-progress", action="store_true", help="Disable progress display"
     )
+    resume_parser.add_argument(
+        "--log-llm-io",
+        action="store_true",
+        help="Write per-call LLM prompt/response transcripts to turn-XX/llm-io/",
+    )
 
     # Branch command
     branch_parser = subparsers.add_parser("branch", help="Create a branch from an existing run")
@@ -941,6 +975,29 @@ def main():
     branch_parser.add_argument("--modify-narrative", type=str, help="Replace narrative text")
     branch_parser.add_argument("--model", type=str, help="Override all LLM models")
     branch_parser.add_argument("--override", action="append", help="Override config values")
+    branch_parser.add_argument(
+        "--seed",
+        type=int,
+        default=None,
+        help="Override the dice RNG seed (default: keep parent run's seed)",
+    )
+    branch_parser.add_argument(
+        "--force-event",
+        action="append",
+        default=None,
+        help="Force an event to trigger on the first executed turn (repeatable)",
+    )
+    branch_parser.add_argument(
+        "--suppress-event",
+        action="append",
+        default=None,
+        help="Suppress an event on the first executed turn (repeatable)",
+    )
+    branch_parser.add_argument(
+        "--log-llm-io",
+        action="store_true",
+        help="Write per-call LLM prompt/response transcripts to turn-XX/llm-io/",
+    )
 
     # Visualize command
     viz_parser = subparsers.add_parser("visualize", help="Generate charts for a run")
@@ -1069,6 +1126,26 @@ def main():
     calibrate_parser.add_argument("--max-runs", type=int, default=None, help="Analyze most recent N runs")
     calibrate_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
     calibrate_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
+
+    # Ensemble command
+    ensemble_parser = subparsers.add_parser(
+        "ensemble",
+        help="Analyze all completed runs of a scenario as an ensemble (no API calls)",
+    )
+    ensemble_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
+    ensemble_parser.add_argument("--max-runs", type=int, default=None, help="Analyze most recent N runs")
+    ensemble_parser.add_argument("--json", action="store_true", help="Print JSON instead of markdown report")
+    ensemble_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
+
+    # Model sensitivity command
+    model_sensitivity_parser = subparsers.add_parser(
+        "model-sensitivity",
+        help="Show how outcomes depend on which LLM was used (no API calls)",
+    )
+    model_sensitivity_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
+    model_sensitivity_parser.add_argument("--max-runs", type=int, default=None, help="Analyze most recent N runs")
+    model_sensitivity_parser.add_argument("--json", action="store_true", help="Print JSON instead of markdown report")
+    model_sensitivity_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
 
     # Audit models command
     audit_models_parser = subparsers.add_parser(
@@ -1537,6 +1614,54 @@ def main():
 
         return 1 if any_failure else 0
 
+    if args.command == "ensemble":
+        from .ensemble import analyze_ensemble, format_ensemble_report
+
+        scenario_dir = args.scenario if args.scenario.is_dir() else args.scenario.parent
+        print(f"Analyzing ensemble for: {scenario_dir}")
+
+        try:
+            analysis = analyze_ensemble(scenario_dir, max_runs=args.max_runs)
+        except Exception as e:
+            print(f"❌ Ensemble analysis failed: {e}")
+            return 1
+
+        if args.json:
+            report = json.dumps(analysis, indent=2, ensure_ascii=False)
+        else:
+            report = format_ensemble_report(analysis)
+
+        if args.output:
+            args.output.write_text(report, encoding="utf-8")
+            print(f"✅ Ensemble report written to: {args.output}")
+        else:
+            print(report)
+        return
+
+    if args.command == "model-sensitivity":
+        from .model_sensitivity import analyze_model_sensitivity, format_model_sensitivity_report
+
+        scenario_dir = args.scenario if args.scenario.is_dir() else args.scenario.parent
+        print(f"Analyzing model sensitivity for: {scenario_dir}")
+
+        try:
+            analysis = analyze_model_sensitivity(scenario_dir, max_runs=args.max_runs)
+        except Exception as e:
+            print(f"❌ Model sensitivity analysis failed: {e}")
+            return 1
+
+        if args.json:
+            report = json.dumps(analysis, indent=2, ensure_ascii=False)
+        else:
+            report = format_model_sensitivity_report(analysis)
+
+        if args.output:
+            args.output.write_text(report, encoding="utf-8")
+            print(f"✅ Model sensitivity report written to: {args.output}")
+        else:
+            print(report)
+        return
+
     if args.command == "calibrate":
         from .calibration import analyze_runs, format_analysis_report
 
@@ -1597,6 +1722,31 @@ def main():
         # Load state
         scenario, loaded_turn = load_run_state(args.run_dir, from_turn)
         print(f"  ✓ Loaded scenario state from turn {loaded_turn}")
+
+        # Restore the dice RNG seed from config.json so rolls stay reproducible.
+        # Legacy runs without a seed get a fresh one written back to config.json.
+        config_path = args.run_dir / "config.json"
+        run_config = {}
+        if config_path.exists():
+            try:
+                run_config = json.loads(config_path.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                run_config = {}
+        saved_seed = run_config.get("random_seed") if isinstance(run_config, dict) else None
+        if isinstance(saved_seed, int):
+            scenario.config.random_seed = saved_seed
+            print(f"  Random seed: {saved_seed}")
+        else:
+            scenario.config.random_seed = random.getrandbits(64)
+            if config_path.exists() and isinstance(run_config, dict):
+                run_config["random_seed"] = scenario.config.random_seed
+                config_path.write_text(
+                    json.dumps(run_config, indent=2, ensure_ascii=False), encoding="utf-8"
+                )
+            print(f"  Random seed: {scenario.config.random_seed} (generated for legacy run)")
+
+        if getattr(args, "log_llm_io", False):
+            scenario.config.logging.llm_io = True
 
         # Apply overrides (reuse existing logic from run command)
         if args.override:
@@ -1758,6 +1908,10 @@ def main():
             config_overrides["llm.summary"] = args.model
             config_overrides["llm.referee"] = args.model
 
+        # Seed override: keep parent's seed by default, override if --seed given.
+        if getattr(args, "seed", None) is not None:
+            config_overrides["random_seed"] = args.seed
+
         # Determine output location
         try:
             scenario_path = get_scenario_path_from_run(args.run_dir)
@@ -1845,6 +1999,69 @@ def main():
         if args.model:
             apply_model_override(scenario.config.llm, args.model)
             print(f"  → Overrode all models to: {args.model}")
+
+        # Resolve the dice RNG seed: keep parent's unless --seed overrides it.
+        new_config_path = new_run_dir / "config.json"
+        new_config = {}
+        if new_config_path.exists():
+            try:
+                new_config = json.loads(new_config_path.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                new_config = {}
+        if not isinstance(new_config, dict):
+            new_config = {}
+        if getattr(args, "seed", None) is not None:
+            scenario.config.random_seed = args.seed
+        else:
+            parent_seed = new_config.get("random_seed")
+            if isinstance(parent_seed, int):
+                scenario.config.random_seed = parent_seed
+            else:
+                scenario.config.random_seed = random.getrandbits(64)
+        new_config["random_seed"] = scenario.config.random_seed
+        print(f"  Random seed: {scenario.config.random_seed}")
+
+        if getattr(args, "log_llm_io", False):
+            scenario.config.logging.llm_io = True
+            new_config.setdefault("logging", {})["llm_io"] = True
+
+        # Event forcing/suppression for the first executed turn.
+        first_turn = loaded_turn + 1
+        force_events = list(args.force_event or [])
+        suppress_events = list(args.suppress_event or [])
+        if force_events or suppress_events:
+            from .models import EventOverrides
+
+            valid_ids = {event.id for event in scenario.events}
+            unknown = sorted(
+                {eid for eid in force_events + suppress_events if eid not in valid_ids}
+            )
+            if unknown:
+                print(
+                    "❌ Error: unknown event id(s) for --force-event/--suppress-event: "
+                    + ", ".join(unknown)
+                )
+                print(f"  Known events: {', '.join(sorted(valid_ids))}")
+                return 1
+
+            scenario.config.event_overrides = EventOverrides(
+                turn=first_turn,
+                force=force_events,
+                suppress=suppress_events,
+            )
+            new_config["event_overrides"] = {
+                "turn": first_turn,
+                "force": force_events,
+                "suppress": suppress_events,
+            }
+            print(
+                f"  Event overrides for turn {first_turn}: "
+                f"force={force_events or '[]'}, suppress={suppress_events or '[]'}"
+            )
+
+        new_config_path.write_text(
+            json.dumps(new_config, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
 
         # Run from branch point
         output_manager = OutputManager(scenario, output_base)
@@ -1980,6 +2197,17 @@ def main():
     if args.model:
         # Override all task models if --model is specified
         apply_model_override(scenario.config.llm, args.model)
+
+    # Resolve the dice RNG seed (random 64-bit if not provided).
+    if getattr(args, "seed", None) is not None:
+        scenario.config.random_seed = args.seed
+    elif scenario.config.random_seed is None:
+        scenario.config.random_seed = random.getrandbits(64)
+    print(f"  Random seed: {scenario.config.random_seed}")
+
+    # Enable LLM I/O transcript logging if requested via flag or scenario.yaml.
+    if getattr(args, "log_llm_io", False):
+        scenario.config.logging.llm_io = True
 
     if args.dry_run:
         run_dry(scenario)

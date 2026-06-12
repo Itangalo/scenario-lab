@@ -165,6 +165,21 @@ class LLMConfig:
     max_tokens: int = 2000
     max_tokens_by_task: dict[str, int] = field(default_factory=dict)
 
+    # Provider-native structured outputs for the events step.
+    #   "auto"  – try structured; on "unsupported" fall back silently to the
+    #             legacy parse + format-fix path and remember it for the run.
+    #   "true"  – structured required; hard error if the model doesn't support it.
+    #   "false" – legacy parse path only (never attempt structured output).
+    structured_outputs: str = "auto"
+
+    def __post_init__(self) -> None:
+        allowed = {"auto", "true", "false"}
+        if self.structured_outputs not in allowed:
+            raise ValueError(
+                f"llm.structured_outputs must be one of {sorted(allowed)}, "
+                f"got {self.structured_outputs!r}"
+            )
+
     def get_actor_routes(self, actor_id: str) -> Union[ModelRoute, List[ModelRoute]]:
         """Get route(s) for a specific actor.
 
@@ -218,6 +233,27 @@ class ConstitutionalEnforcementConfig:
 
 
 @dataclass
+class LoggingConfig:
+    """Optional logging behavior for a run."""
+
+    llm_io: bool = False
+
+
+@dataclass
+class EventOverrides:
+    """Forced/suppressed events applied to a single executed turn.
+
+    Used by branch counterfactuals: forced events trigger regardless of the
+    rolled probability, suppressed events never trigger. Both apply only to the
+    `turn` they are scoped to (the first turn executed in the branched run).
+    """
+
+    turn: int
+    force: list[str] = field(default_factory=list)
+    suppress: list[str] = field(default_factory=list)
+
+
+@dataclass
 class ScenarioConfig:
     """Scenario configuration with optional inheritance."""
 
@@ -235,6 +271,13 @@ class ScenarioConfig:
     constitutional_enforcement: ConstitutionalEnforcementConfig = field(
         default_factory=ConstitutionalEnforcementConfig
     )
+    logging: LoggingConfig = field(default_factory=LoggingConfig)
+
+    # Randomness: seed for the derived dice RNG (set at run time if None).
+    random_seed: Optional[int] = None
+
+    # Event forcing for branch counterfactuals (set at run time, not in YAML).
+    event_overrides: Optional[EventOverrides] = None
 
     # Inheritance (set during loading, not in YAML)
     base: Optional[str] = None  # Path to base scenario (relative to current)

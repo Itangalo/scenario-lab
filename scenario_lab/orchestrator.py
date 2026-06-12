@@ -3,11 +3,12 @@
 import json
 import random
 import re
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Protocol, Optional, Union, TYPE_CHECKING
 from .models import Scenario, TurnResult, WorldState, ModelRoute
 from .prompts import PromptBuilder
-from .llm import LLMResponse, LLMParseError
+from .llm import LLMResponse, LLMParseError, LLMError, LLMUnsupportedStructuredError
 from .router import FallbackRouter
 from .providers.registry import ProviderRegistry
 
@@ -21,8 +22,59 @@ class LLMClientProtocol(Protocol):
     def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
         ...
 
+    def complete_structured(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        schema: dict,
+        schema_name: str,
+    ) -> LLMResponse:
+        ...
+
     def close(self):
         ...
+
+
+class _RecordingClient:
+    """Thin wrapper around an LLM client that records each call as a transcript.
+
+    It defers all behavior to the wrapped client and, after each ``complete``
+    call, asks the orchestrator to persist the prompt/response transcript. The
+    task name and turn are resolved from the orchestrator's thread-local call
+    context, which lets a single shared client (for example a router reused by
+    several actors running in parallel) still log the correct task name.
+    """
+
+    def __init__(self, inner: "LLMClientProtocol", orchestrator: "Orchestrator"):
+        self._inner = inner
+        self._orchestrator = orchestrator
+        # Expose ``models`` if the inner client has it (used by reuse logic/tests).
+        self.models = getattr(inner, "models", None)
+
+    def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
+        response = self._inner.complete(system_prompt, user_prompt)
+        # Buffer the call so the orchestrator can persist it from the single
+        # `_record_llm_call` point, which knows the turn and task name.
+        self._orchestrator._buffer_llm_io(system_prompt, user_prompt, response)
+        return response
+
+    def complete_structured(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        schema: dict,
+        schema_name: str,
+    ) -> LLMResponse:
+        response = self._inner.complete_structured(
+            system_prompt, user_prompt, schema, schema_name
+        )
+        # Structured calls are buffered and persisted the same way as text calls.
+        self._orchestrator._buffer_llm_io(system_prompt, user_prompt, response)
+        return response
+
+    def close(self) -> None:
+        # The underlying client/router is owned and closed elsewhere.
+        pass
 
 
 class Orchestrator:
@@ -52,6 +104,23 @@ class Orchestrator:
         self.progress_tracker = progress_tracker
         self._owned_routers: list[FallbackRouter] = []
 
+        # Resolve the random seed for the dice RNG. If unset, generate a
+        # 64-bit seed so that every run records a concrete, reproducible seed.
+        if self.scenario.config.random_seed is None:
+            self.scenario.config.random_seed = random.getrandbits(64)
+        self.random_seed: int = self.scenario.config.random_seed
+
+        # Structured-output state for the events step. In "auto" mode, once the
+        # events model rejects structured output we stop retrying it for the run.
+        self._structured_events_mode: str = self.scenario.config.llm.structured_outputs
+        self._structured_events_unsupported: bool = False
+
+        # LLM I/O transcript logging state.
+        self._log_llm_io: bool = bool(self.scenario.config.logging.llm_io)
+        self._llm_io_context = threading.local()
+        self._llm_io_lock = threading.Lock()
+        self._llm_io_sequences: dict[int, int] = {}
+
         # Initialize cost tracking
         from .cost import CostTracker
         self.cost_tracker = CostTracker()
@@ -71,6 +140,10 @@ class Orchestrator:
                 "summary": llm_client,
                 "referee": llm_client,
             }
+
+        # Wrap clients for transcript logging if enabled.
+        if self._log_llm_io and self.output_manager is not None:
+            self.llm_clients = self._wrap_clients_for_io(self.llm_clients)
 
     @staticmethod
     def _primary_route_key(routes: "ModelRoute | list[ModelRoute]") -> str:
@@ -161,8 +234,40 @@ class Orchestrator:
         for router in self._owned_routers:
             router.close()
 
+    def _wrap_clients_for_io(self, clients: dict) -> dict:
+        """Wrap every per-task client in a recording wrapper for transcripts."""
+        wrapped: dict = {}
+        for task, value in clients.items():
+            if isinstance(value, dict):
+                wrapped[task] = {
+                    actor_id: _RecordingClient(client, self)
+                    for actor_id, client in value.items()
+                }
+            elif value is None:
+                wrapped[task] = value
+            else:
+                wrapped[task] = _RecordingClient(value, self)
+        return wrapped
+
+    def _buffer_llm_io(
+        self, system_prompt: str, user_prompt: str, response: LLMResponse
+    ) -> None:
+        """Stash the latest LLM call on the current thread for later persistence."""
+        self._llm_io_context.pending = (system_prompt, user_prompt, response)
+
+    def _next_llm_io_sequence(self, turn: int) -> int:
+        """Return the next per-turn sequence number for transcript files."""
+        with self._llm_io_lock:
+            seq = self._llm_io_sequences.get(turn, 0) + 1
+            self._llm_io_sequences[turn] = seq
+            return seq
+
     def _record_llm_call(self, turn: int, task_name: str, response: LLMResponse):
         """Record token usage and cost from an LLM call.
+
+        When LLM I/O logging is enabled, this is also the single point where the
+        prompt/response transcript is persisted, using the call buffered by the
+        recording client wrapper on this thread.
 
         Args:
             turn: Turn number
@@ -172,9 +277,46 @@ class Orchestrator:
         from .cost import CostCalculator
 
         usage = response.get_usage()
+        cost_details = None
         if usage:
             cost_details = CostCalculator.calculate_cost(usage)
             self.cost_tracker.record_call(turn, task_name, cost_details)
+
+        if self._log_llm_io and self.output_manager is not None:
+            self._persist_llm_io(turn, task_name, response, usage, cost_details)
+
+    def _persist_llm_io(
+        self,
+        turn: int,
+        task_name: str,
+        response: LLMResponse,
+        usage,
+        cost_details,
+    ) -> None:
+        """Write the buffered transcript for the current call, if any."""
+        pending = getattr(self._llm_io_context, "pending", None)
+        if pending is None:
+            return
+        system_prompt, user_prompt, buffered_response = pending
+        self._llm_io_context.pending = None
+
+        # Guard against a stale buffer from an unrelated call.
+        if buffered_response is not response:
+            return
+
+        record = {
+            "task": task_name,
+            "model": usage.model if usage else response.raw_response.get("model", "unknown"),
+            "system": system_prompt,
+            "user": user_prompt,
+            "response": response.content,
+            "prompt_tokens": usage.prompt_tokens if usage else None,
+            "completion_tokens": usage.completion_tokens if usage else None,
+            "total_tokens": usage.total_tokens if usage else None,
+            "cost_usd": round(cost_details.total_cost_usd, 6) if cost_details else None,
+        }
+        sequence = self._next_llm_io_sequence(turn)
+        self.output_manager.save_llm_io(turn, sequence, task_name, record)
 
     def get_run_costs(self):
         """Get complete cost summary for this run.
@@ -317,18 +459,97 @@ class Orchestrator:
             notepad=notepad,
         )
 
+    def _event_roll(self, turn: int, event_id: str) -> float:
+        """Return a deterministic dice roll in [0, 1) for one event this turn.
+
+        The roll is derived from the run seed, turn, and event id, so it is
+        stable given the seed and independent of call order. This lets resume
+        and branch reproduce identical rolls without persisting RNG state.
+        """
+        return random.Random(f"{self.random_seed}:{turn}:{event_id}").random()
+
+    def _event_override_for_turn(self, turn: int):
+        """Return the EventOverrides scoped to this turn, if any."""
+        overrides = self.scenario.config.event_overrides
+        if overrides is not None and overrides.turn == turn:
+            return overrides
+        return None
+
     def _run_events_step(self, turn: int) -> list[dict]:
         """Step 1: Determine which events occur.
 
         Returns:
             List of triggered events with their probabilities
         """
-        system, user = self.prompt_builder.build_events_prompt(turn)
+        triggered, evaluations = self._evaluate_events(turn)
+        if self.output_manager:
+            self.output_manager.save_event_evaluations(turn, evaluations)
+        return triggered
+
+    def _fetch_candidate_events(
+        self, turn: int, system: str, user: str
+    ) -> Optional[list]:
+        """Get the candidate-event list from the LLM for one turn.
+
+        Tries the provider-native structured path when ``llm.structured_outputs``
+        is active ("true", or "auto" while the model is not known-unsupported),
+        otherwise uses the legacy text path (extract_json_array + one format-fix
+        retry).
+
+        Returns:
+            The candidate list, or None when the legacy path ends in an
+            unrecoverable parse failure (caller records the parse-failure
+            marker and proceeds with zero events).
+        """
+        mode = self._structured_events_mode
+        try_structured = mode == "true" or (
+            mode == "auto" and not self._structured_events_unsupported
+        )
+
+        if try_structured:
+            from .schemas import EVENTS_SCHEMA_NAME, events_array_schema
+
+            try:
+                response = self.llm_clients["events"].complete_structured(
+                    system, user, events_array_schema(), EVENTS_SCHEMA_NAME
+                )
+            except (LLMUnsupportedStructuredError, AttributeError, NotImplementedError) as e:
+                # AttributeError/NotImplementedError cover injected clients that
+                # predate complete_structured – treat them as unsupported too.
+                if mode == "true":
+                    raise LLMError(
+                        "llm.structured_outputs is 'true' but the events model "
+                        f"does not support structured output: {e}"
+                    ) from e
+                self._structured_events_unsupported = True
+                print(
+                    "  Info: Events model does not support structured outputs; "
+                    "using legacy JSON parsing for the rest of this run."
+                )
+            else:
+                self._record_llm_call(turn, "events", response)
+                data = response.structured_data
+                if isinstance(data, list):
+                    # Per-event validation downstream handles bad items.
+                    return data
+                # Defensive: a strict schema should guarantee a list. Treat
+                # anything else like a parse failure of the structured path.
+                if mode == "true":
+                    raise LLMError(
+                        "Structured events response was not a JSON array "
+                        f"(got {type(data).__name__})."
+                    )
+                print(
+                    "  Warning: Structured events response was not a JSON array; "
+                    "falling back to legacy parsing."
+                )
+
+        # Legacy text path: parse, then one format-fix retry.
         response = self.llm_clients["events"].complete(system, user)
         self._record_llm_call(turn, "events", response)
 
         try:
-            candidate_events = response.extract_json_array()
+            return response.extract_json_array()
         except (json.JSONDecodeError, ValueError, LLMParseError) as e:
             print(f"  Warning: Could not parse events response: {e}")
             print(f"  Response was: {response.content[:200]}...")
@@ -342,15 +563,50 @@ class Orchestrator:
                 self._record_llm_call(turn, "events:format_fix", fix_response)
                 candidate_events = fix_response.extract_json_array()
                 print("  ✓ Events format fixed on retry")
+                return candidate_events
             except Exception as fix_e:
                 print(f"  Warning: Events format-fix retry failed: {fix_e}")
-                return []
+                return None
 
-        # Validate and roll dice for each event
-        triggered = []
+    def _evaluate_events(self, turn: int) -> tuple[list[dict], list[dict]]:
+        """Evaluate candidate events and roll the seeded dice.
+
+        Returns:
+            Tuple of (triggered_events, evaluations). ``triggered_events`` keeps
+            the legacy shape (the raw LLM event dicts) for 1-events.json.
+            ``evaluations`` is the full per-event record for
+            1-event-evaluations.json.
+        """
+        system, user = self.prompt_builder.build_events_prompt(turn)
+
+        candidate_events = self._fetch_candidate_events(turn, system, user)
+        if candidate_events is None:
+            # Legacy parse path exhausted its format-fix retry and produced no
+            # usable events. Make the silent-bias case visible in the artifact
+            # so a parse failure cannot be mistaken for "no events this turn".
+            print(
+                "  Warning: Events step ended with zero events due to a parse "
+                "failure (recorded in event-evaluations artifact)."
+            )
+            return [], [{"parse_failure": True, "triggered": False}]
+
+        override = self._event_override_for_turn(turn)
+        force_ids = set(override.force) if override else set()
+        suppress_ids = set(override.suppress) if override else set()
+
+        triggered: list[dict] = []
+        evaluations: list[dict] = []
+
         for event_data in candidate_events:
             if not isinstance(event_data, dict) or "id" not in event_data or "probability" not in event_data:
                 print(f"  Warning: Skipping invalid event data: {event_data}")
+                evaluations.append(
+                    {
+                        "id": event_data.get("id") if isinstance(event_data, dict) else None,
+                        "skipped": "Invalid event data (missing id or probability)",
+                        "triggered": False,
+                    }
+                )
                 continue
 
             event_id = event_data["id"]
@@ -360,25 +616,65 @@ class Orchestrator:
             event_obj = next((e for e in self.scenario.events if e.id == event_id), None)
             if not event_obj:
                 print(f"  Warning: Unknown event '{event_id}', skipping")
+                evaluation = {key: value for key, value in event_data.items()}
+                evaluation["skipped"] = f"Unknown event '{event_id}'"
+                evaluation["triggered"] = False
+                evaluations.append(evaluation)
                 continue
 
             # Validate probability
             if not isinstance(probability, (int, float)) or not 0 <= probability <= 1:
                 print(f"  Warning: Invalid probability {probability} for {event_id}, skipping")
+                evaluation = {key: value for key, value in event_data.items()}
+                evaluation["skipped"] = f"Invalid probability {probability}"
+                evaluation["triggered"] = False
+                evaluations.append(evaluation)
                 continue
 
-            # Roll dice
-            if random.random() < probability:
+            roll = self._event_roll(turn, event_id)
+
+            # Start the evaluation record with any extra fields the LLM returned.
+            evaluation = {key: value for key, value in event_data.items()}
+            evaluation["probability"] = probability
+            evaluation["roll"] = roll
+
+            forced = event_id in force_ids
+            suppressed = event_id in suppress_ids
+
+            if forced and suppressed:
+                # Suppression wins over forcing to keep behavior unambiguous.
+                forced = False
+
+            if suppressed:
+                is_triggered = False
+                evaluation["suppressed"] = True
+            elif forced:
+                is_triggered = True
+                evaluation["forced"] = True
+            else:
+                is_triggered = roll < probability
+
+            evaluation["triggered"] = is_triggered
+
+            if is_triggered:
                 triggered.append(event_data)
-                print(f"  ✓ Event triggered: {event_id} (p={probability:.2%})")
+                if forced:
+                    print(f"  ✓ Event triggered (forced): {event_id} (p={probability:.2%})")
+                else:
+                    print(f"  ✓ Event triggered: {event_id} (p={probability:.2%}, roll={roll:.2f})")
 
                 # Mark non-repeatable events as occurred
                 if not event_obj.can_repeat:
                     self._mark_event_occurred(event_id)
             else:
-                print(f"    Event not triggered: {event_id} (p={probability:.2%})")
+                if suppressed:
+                    print(f"    Event suppressed: {event_id} (p={probability:.2%})")
+                else:
+                    print(f"    Event not triggered: {event_id} (p={probability:.2%}, roll={roll:.2f})")
 
-        return triggered
+            evaluations.append(evaluation)
+
+        return triggered, evaluations
 
     def _run_actors_step(self, turn: int, triggered_events: list[dict]) -> dict[str, str]:
         """Step 2: Get actions from each actor.

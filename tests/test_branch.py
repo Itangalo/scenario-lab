@@ -119,6 +119,31 @@ class TestCreateBranch:
         assert config["metadata"]["branch_turn"] == 2
         assert "branch_created_at" in config["metadata"]
 
+    def test_branch_carries_parent_seed(self, parent_run_dir, output_base):
+        """A branch should inherit the parent run's random_seed by default."""
+        config = json.loads((parent_run_dir / "config.json").read_text())
+        config["random_seed"] = 4242
+        (parent_run_dir / "config.json").write_text(json.dumps(config, indent=2))
+
+        new_run_dir = create_branch(parent_run_dir, from_turn=2, output_base=output_base)
+        new_config = json.loads((new_run_dir / "config.json").read_text())
+        assert new_config["random_seed"] == 4242
+
+    def test_branch_seed_override_via_config_override(self, parent_run_dir, output_base):
+        """A random_seed config override should replace the parent seed."""
+        config = json.loads((parent_run_dir / "config.json").read_text())
+        config["random_seed"] = 4242
+        (parent_run_dir / "config.json").write_text(json.dumps(config, indent=2))
+
+        new_run_dir = create_branch(
+            parent_run_dir,
+            from_turn=2,
+            output_base=output_base,
+            config_overrides={"random_seed": 1},
+        )
+        new_config = json.loads((new_run_dir / "config.json").read_text())
+        assert new_config["random_seed"] == 1
+
     def test_branch_with_config_overrides(self, parent_run_dir, output_base):
         """Test branch with config overrides."""
         config_overrides = {

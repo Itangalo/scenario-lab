@@ -1,10 +1,21 @@
 """Output management for saving simulation results."""
 
 import json
+import re
 from pathlib import Path
 from datetime import datetime
 from typing import Optional
 from .models import ModelRoute, Scenario, TurnResult
+
+
+def _sanitize_task_name(task_name: str) -> str:
+    """Sanitize a task name for use in a filename.
+
+    Replaces characters that are awkward in filenames (e.g. ``:``) with ``-``
+    so that ``events:format_fix`` becomes ``events-format_fix``.
+    """
+    sanitized = re.sub(r"[^A-Za-z0-9._-]+", "-", task_name)
+    return sanitized.strip("-") or "call"
 
 
 def _routes_to_json(value: object) -> object:
@@ -87,6 +98,71 @@ class OutputManager:
         (turn_dir / "1-events.json").write_text(
             json.dumps(triggered_events, indent=2, ensure_ascii=False)
         )
+
+    def save_event_evaluations(self, turn: int, evaluations: list[dict]):
+        """Save full per-event evaluations for a turn.
+
+        This is written incrementally at the same point as 1-events.json and
+        records every candidate event the LLM returned, including non-triggered
+        and skipped entries. It is a superset of 1-events.json and does not
+        replace it.
+
+        Args:
+            turn: Turn number
+            evaluations: List of evaluation dicts
+        """
+        turn_dir = self.get_turn_dir(turn)
+        (turn_dir / "1-event-evaluations.json").write_text(
+            json.dumps(evaluations, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
+    def save_llm_io(self, turn: int, sequence: int, task_name: str, record: dict):
+        """Write a single LLM call transcript to turn-XX/llm-io/NN-<task>.md.
+
+        Args:
+            turn: Turn number
+            sequence: Per-turn sequence number for this call
+            task_name: Task identifier (sanitized for the filename)
+            record: Dict with task, model, system, user, response, tokens, cost
+        """
+        turn_dir = self.get_turn_dir(turn)
+        io_dir = turn_dir / "llm-io"
+        io_dir.mkdir(exist_ok=True)
+
+        safe_task = _sanitize_task_name(task_name)
+        filename = f"{sequence:02d}-{safe_task}.md"
+
+        lines = [
+            f"# LLM call: {record.get('task', task_name)}",
+            "",
+            f"- Turn: {turn}",
+            f"- Sequence: {sequence}",
+            f"- Model: {record.get('model', 'unknown')}",
+            f"- Prompt tokens: {record.get('prompt_tokens', 'n/a')}",
+            f"- Completion tokens: {record.get('completion_tokens', 'n/a')}",
+            f"- Total tokens: {record.get('total_tokens', 'n/a')}",
+            f"- Cost (USD): {record.get('cost_usd', 'n/a')}",
+            "",
+            "## System prompt",
+            "",
+            "```",
+            record.get("system", ""),
+            "```",
+            "",
+            "## User prompt",
+            "",
+            "```",
+            record.get("user", ""),
+            "```",
+            "",
+            "## Raw response",
+            "",
+            "```",
+            record.get("response", ""),
+            "```",
+            "",
+        ]
+        (io_dir / filename).write_text("\n".join(lines), encoding="utf-8")
 
     def save_actor_output(self, turn: int, actor_id: str, output: str):
         """Save single actor output immediately after generation.
@@ -413,7 +489,20 @@ class OutputManager:
                 "max_tokens": self.scenario.config.llm.max_tokens,
                 "max_tokens_by_task": self.scenario.config.llm.max_tokens_by_task,
             },
+            "random_seed": self.scenario.config.random_seed,
+            "logging": {
+                "llm_io": self.scenario.config.logging.llm_io,
+            },
         }
+
+        overrides = self.scenario.config.event_overrides
+        if overrides is not None:
+            config["event_overrides"] = {
+                "turn": overrides.turn,
+                "force": list(overrides.force),
+                "suppress": list(overrides.suppress),
+            }
+
         (self.run_dir / "config.json").write_text(
             json.dumps(config, indent=2, ensure_ascii=False)
         )

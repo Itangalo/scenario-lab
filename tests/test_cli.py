@@ -741,6 +741,63 @@ def test_cli_branch_model_sets_full_config_overrides(tmp_path):
     assert overrides["llm.referee"] == "openrouter:new-model"
 
 
+def test_cli_resume_writes_back_seed_for_legacy_run(tmp_path):
+    """Resuming a legacy run without a seed should write one into config.json."""
+    run_dir = tmp_path / "scenarios" / "test-scenario" / "runs" / "run-123"
+    run_dir.mkdir(parents=True)
+    (run_dir / "summary.json").write_text(json.dumps({"status": "completed"}), encoding="utf-8")
+    # Legacy config.json has no random_seed.
+    (run_dir / "config.json").write_text(json.dumps({"name": "Test"}), encoding="utf-8")
+
+    mock_scenario = MagicMock()
+    mock_scenario.config.max_turns = 2
+    mock_scenario.config.random_seed = None
+    mock_scenario.config.logging.llm_io = False
+    for task in ("events", "actors", "rules", "metrics", "summary", "referee"):
+        setattr(mock_scenario.config.llm, task, f"model-{task}")
+
+    with patch("scenario_lab.resume.validate_run_directory", return_value=(True, [])):
+        with patch("scenario_lab.resume.detect_last_turn", return_value=2):
+            with patch("scenario_lab.resume.load_run_state", return_value=(mock_scenario, 2)):
+                with patch("scenario_lab.cli.OutputManager"):
+                    with patch("scenario_lab.cli.run_simulation"):
+                        with patch("sys.argv", ["scenario_lab", "resume", str(run_dir), "--turns", "2"]):
+                            main()
+
+    config = json.loads((run_dir / "config.json").read_text(encoding="utf-8"))
+    assert isinstance(config["random_seed"], int)
+    assert mock_scenario.config.random_seed == config["random_seed"]
+
+
+def test_cli_resume_restores_existing_seed(tmp_path):
+    """Resuming a run with a saved seed should not change config.json's seed."""
+    run_dir = tmp_path / "scenarios" / "test-scenario" / "runs" / "run-123"
+    run_dir.mkdir(parents=True)
+    (run_dir / "summary.json").write_text(json.dumps({"status": "completed"}), encoding="utf-8")
+    (run_dir / "config.json").write_text(
+        json.dumps({"name": "Test", "random_seed": 777}), encoding="utf-8"
+    )
+
+    mock_scenario = MagicMock()
+    mock_scenario.config.max_turns = 2
+    mock_scenario.config.random_seed = None
+    mock_scenario.config.logging.llm_io = False
+    for task in ("events", "actors", "rules", "metrics", "summary", "referee"):
+        setattr(mock_scenario.config.llm, task, f"model-{task}")
+
+    with patch("scenario_lab.resume.validate_run_directory", return_value=(True, [])):
+        with patch("scenario_lab.resume.detect_last_turn", return_value=2):
+            with patch("scenario_lab.resume.load_run_state", return_value=(mock_scenario, 2)):
+                with patch("scenario_lab.cli.OutputManager"):
+                    with patch("scenario_lab.cli.run_simulation"):
+                        with patch("sys.argv", ["scenario_lab", "resume", str(run_dir), "--turns", "2"]):
+                            main()
+
+    assert mock_scenario.config.random_seed == 777
+    config = json.loads((run_dir / "config.json").read_text(encoding="utf-8"))
+    assert config["random_seed"] == 777
+
+
 def test_cli_estimate_model_overrides_all_llm_tasks():
     """--model on estimate should override all task models including summary/referee."""
     mock_scenario = MagicMock()

@@ -13,6 +13,7 @@ from .models import (
     LLMConfig,
     RuleEvolutionConfig,
     ConstitutionalEnforcementConfig,
+    LoggingConfig,
     Metric,
     Metrics,
     Event,
@@ -375,6 +376,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "temperature": base_config.llm.temperature,
                     "max_tokens": base_config.llm.max_tokens,
                     "max_tokens_by_task": base_config.llm.max_tokens_by_task,
+                    "structured_outputs": base_config.llm.structured_outputs,
                 },
                 "rule_evolution": {
                     "freeze_until_turn": base_config.rule_evolution.freeze_until_turn,
@@ -383,6 +385,9 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                 "constitutional_enforcement": {
                     "max_attempts": base_config.constitutional_enforcement.max_attempts,
                     "on_failure": base_config.constitutional_enforcement.on_failure,
+                },
+                "logging": {
+                    "llm_io": base_config.logging.llm_io,
                 },
             }
 
@@ -394,6 +399,15 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
 
     _default_main = "openrouter:google/gemini-3-flash-preview"
     _default_cheap = "openrouter:x-ai/grok-4.1-fast"
+
+    # structured_outputs: accept YAML strings or native booleans, normalize to
+    # the canonical "auto" | "true" | "false" strings the model validates.
+    def _normalize_structured(value: object) -> str:
+        if isinstance(value, bool):
+            return "true" if value else "false"
+        return str(value).lower()
+
+    _structured = _normalize_structured(llm_data.get("structured_outputs", "auto"))
 
     # Support both old format (single model) and new format (per-task models)
     if "model" in llm_data and not any(k in llm_data for k in ["events", "actors", "rules", "metrics"]):
@@ -410,6 +424,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             temperature=llm_data.get("temperature", 0.7),
             max_tokens=llm_data.get("max_tokens", 2000),
             max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
+            structured_outputs=_structured,
         )
     else:
         # New format: per-task models
@@ -426,6 +441,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             temperature=llm_data.get("temperature", 0.7),
             max_tokens=llm_data.get("max_tokens", 2000),
             max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
+            structured_outputs=_structured,
         )
 
     rule_evolution_data = data.get("rule_evolution", {})
@@ -440,6 +456,11 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         on_failure=constitutional_data.get("on_failure", "accept_with_violations"),
     )
 
+    logging_data = data.get("logging", {})
+    logging_config = LoggingConfig(
+        llm_io=bool(logging_data.get("llm_io", False)),
+    )
+
     return ScenarioConfig(
         name=data["name"],
         description=data["description"],
@@ -451,6 +472,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         llm=llm_config,
         rule_evolution=rule_evolution,
         constitutional_enforcement=constitutional_enforcement,
+        logging=logging_config,
     )
 
 

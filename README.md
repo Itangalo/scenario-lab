@@ -55,9 +55,11 @@ cp .env.example .env
 Then add your API key(s) to `.env`. At least one of the following is required:
 
 - `OPENROUTER_API_KEY` – for OpenRouter (access to most models)
-- `ANTHROPIC_API_KEY` – for direct Anthropic API access (claude-opus-4-6, claude-sonnet-4-6, etc.)
+- `ANTHROPIC_API_KEY` – for direct Anthropic API access (claude-opus-4-8, claude-sonnet-4-6, etc.)
 
 Models are specified in `scenario.yaml` as `provider:model`, for example `openrouter:x-ai/grok-4.1-fast` or `anthropic:claude-sonnet-4-6`.
+
+The events step can use provider-native structured outputs via `llm.structured_outputs` in `scenario.yaml` (`auto` | `true` | `false`, default `auto`). With `auto`, models that support structured output return schema-validated event JSON directly; unsupported models fall back automatically to the regular JSON parsing path. Use `true` to require structured output (hard error if unsupported) or `false` to disable it.
 
 ### Recommended workflow
 
@@ -103,9 +105,13 @@ python -m scenario_lab.cli run scenarios/sweden-ai-2030 --turns 5
 python -m scenario_lab.cli run scenarios/sweden-ai-2030 --dry-run
 python -m scenario_lab.cli run scenarios/sweden-ai-2030 --override output_language=Swedish
 python -m scenario_lab.cli run scenarios/sweden-ai-2030 --skip-model-checks
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --seed 42
+python -m scenario_lab.cli run scenarios/sweden-ai-2030 --log-llm-io
 ```
 
 By default, `run` performs model hygiene checks before execution and warns if the configured models look stale or risky.
+
+Each run records a `random_seed` in `config.json`. The seed makes the event *dice* deterministic (same seed, same rolls across `run`, `resume`, and `branch`), while the LLM outputs themselves remain nondeterministic. Pass `--seed INT` to fix the seed, or let Scenario Lab generate a random 64-bit seed. Use `--log-llm-io` to capture every LLM prompt/response under each turn's `llm-io/` directory.
 
 ### Validate a scenario
 
@@ -151,9 +157,13 @@ python -m scenario_lab.cli resume scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHM
 
 python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --from-turn 4
 python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --from-turn 4 --modify-metric unemployment=12
+python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --from-turn 4 --force-event ai_breakthrough
+python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --from-turn 4 --suppress-event taiwan_blockade --seed 7
 ```
 
 `resume` continues the same run. `branch` creates a new run starting from a previous turn, which is useful for "what if" analysis.
+
+A branch keeps its parent's `random_seed` by default (so shared turns reproduce identically); pass `--seed INT` to override it. For controlled event counterfactuals, use repeatable `--force-event EVENT_ID` and `--suppress-event EVENT_ID`. These apply to the first turn executed in the branch: forced events trigger regardless of probability, suppressed events never trigger. The overrides are recorded in the new run's `config.json` and marked in `1-event-evaluations.json`.
 
 ### Compare two saved runs
 
@@ -239,6 +249,28 @@ python -m scenario_lab.cli calibrate scenarios/sweden-ai-2030 --max-runs 10
 
 This analyzes saved runs without making new API calls.
 
+### Analyze an ensemble of runs
+
+```bash
+python -m scenario_lab.cli ensemble scenarios/sweden-ai-2030
+python -m scenario_lab.cli ensemble scenarios/sweden-ai-2030 --max-runs 20
+python -m scenario_lab.cli ensemble scenarios/sweden-ai-2030 --json
+python -m scenario_lab.cli ensemble scenarios/sweden-ai-2030 --output report.md
+```
+
+`ensemble` analyzes all completed runs for a scenario and produces a markdown report covering: run overview (N, status, cost), per-metric trajectories (mean, min, max, p10/p50/p90 per turn), event occurrence rates and mean evaluated probabilities (when available), divergence detection (which turns show the largest spread increase and which events are associated), and automatic caveats about small N or mixed model configs. No API calls.
+
+### Analyze model sensitivity
+
+```bash
+python -m scenario_lab.cli model-sensitivity scenarios/sweden-ai-2030
+python -m scenario_lab.cli model-sensitivity scenarios/sweden-ai-2030 --max-runs 20
+python -m scenario_lab.cli model-sensitivity scenarios/sweden-ai-2030 --json
+python -m scenario_lab.cli model-sensitivity scenarios/sweden-ai-2030 --output sensitivity.md
+```
+
+`model-sensitivity` groups completed runs by their LLM configuration and compares outcomes across groups. It reports per-metric final-value distributions and event occurrence rates side by side, then labels metrics and events as robust or sensitive based on simple descriptive thresholds. If only one model group exists, it explains how to create multiple groups using `variants/` and `batch-run`. No API calls.
+
 ### Audit configured models
 
 ```bash
@@ -268,6 +300,8 @@ scenarios/<scenario>/runs/run-YYYYMMDD-HHMMSS/
 ├── costs.json
 └── turn-XX/
     ├── 1-events.json
+    ├── 1-event-evaluations.json      # full per-candidate event record (probability, roll, triggered)
+    ├── llm-io/                       # per-call LLM transcripts (only with --log-llm-io)
     ├── 2-actors/
     ├── 3-metric-rules.md
     ├── 3-metric-rules-metadata.json

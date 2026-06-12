@@ -234,6 +234,48 @@ def check_run_integrity(run_dir: Path) -> dict[str, Any]:
             except json.JSONDecodeError as exc:
                 errors.append(f"Turn {turn} has invalid 1-events.json: {exc}")
 
+        # 1-event-evaluations.json is optional (legacy runs lack it) but, when
+        # present, must be a list of objects each carrying an id and a triggered
+        # flag (skipped entries are allowed without probability/roll; a
+        # parse-failure marker entry is allowed without either).
+        evaluations_file = turn_dir / "1-event-evaluations.json"
+        if evaluations_file.exists():
+            try:
+                evaluations = _load_json(evaluations_file)
+            except json.JSONDecodeError as exc:
+                errors.append(
+                    f"Turn {turn} has invalid 1-event-evaluations.json: {exc}"
+                )
+            else:
+                if not isinstance(evaluations, list):
+                    errors.append(
+                        f"Turn {turn} event evaluations payload must be a list"
+                    )
+                else:
+                    for entry in evaluations:
+                        if not isinstance(entry, dict):
+                            errors.append(
+                                f"Turn {turn} event evaluation entries must be objects"
+                            )
+                            break
+                        if "triggered" not in entry:
+                            errors.append(
+                                f"Turn {turn} event evaluation entry missing 'triggered' field"
+                            )
+                            break
+                        if entry.get("parse_failure"):
+                            # Marker entry recorded when the events response
+                            # could not be parsed; carries no probability/roll.
+                            continue
+                        if not entry.get("skipped") and (
+                            "probability" not in entry or "roll" not in entry
+                        ):
+                            errors.append(
+                                f"Turn {turn} non-skipped event evaluation entry "
+                                "missing 'probability' or 'roll'"
+                            )
+                            break
+
         metrics_file = turn_dir / "4-metrics.json"
         if metrics_file.exists():
             try:

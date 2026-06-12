@@ -3,7 +3,12 @@
 import time
 from typing import Optional
 
-from .llm import LLMError, LLMRateLimitError, LLMResponse
+from .llm import (
+    LLMError,
+    LLMRateLimitError,
+    LLMResponse,
+    LLMUnsupportedStructuredError,
+)
 from .models import ModelRoute
 from .providers.registry import ProviderRegistry
 
@@ -74,6 +79,80 @@ class FallbackRouter:
 
                 except LLMError as e:
                     # Non-retryable provider error – move to next route immediately
+                    last_error = e
+                    print(f"  ✗ {route} failed: {e}")
+                    break
+
+                except Exception as e:
+                    if attempt < self.MAX_RETRIES - 1:
+                        print(
+                            f"  Transient error ({type(e).__name__}) on {route}, "
+                            f"retrying ({attempt + 1}/{self.MAX_RETRIES})..."
+                        )
+                        time.sleep(1)
+                        continue
+                    last_error = LLMError(f"Error from {route}: {e}")
+                    print(f"  ✗ {route} error: {e}")
+                    break
+
+        routes_tried = ", ".join(str(r) for r in self._routes)
+        raise LLMError(
+            f"All routes failed ({routes_tried}). Last error: {last_error}"
+        )
+
+    def complete_structured(
+        self,
+        system: str,
+        user: str,
+        schema: dict,
+        schema_name: str,
+    ) -> LLMResponse:
+        """Try each route in order for a schema-constrained completion.
+
+        ``LLMUnsupportedStructuredError`` propagates immediately without trying
+        other routes – the caller decides whether to fall back to the legacy
+        text-parsing path (``auto``) or treat it as fatal (``true``). Rate limits
+        and transient errors retry/fall through exactly like ``complete``.
+        """
+        last_error = None  # type: Optional[Exception]
+
+        for route_index, route in enumerate(self._routes):
+            is_fallback = route_index > 0
+            if is_fallback:
+                print(f"  → Falling back to: {route}")
+
+            provider = self._registry.get(route.provider)
+
+            for attempt in range(self.MAX_RETRIES):
+                try:
+                    response = provider.complete_structured(
+                        system,
+                        user,
+                        model=route.model,
+                        temperature=self._temperature,
+                        max_tokens=self._max_tokens,
+                        schema=schema,
+                        schema_name=schema_name,
+                    )
+                    if is_fallback:
+                        print(f"  ✓ Fallback successful ({route})")
+                    return response
+
+                except LLMUnsupportedStructuredError:
+                    # Not a transient/route failure – let the caller decide.
+                    raise
+
+                except LLMRateLimitError:
+                    if attempt < self.MAX_RETRIES - 1:
+                        wait_time = 2 ** attempt
+                        print(f"  Rate limit hit ({route}), waiting {wait_time}s...")
+                        time.sleep(wait_time)
+                        continue
+                    last_error = LLMError(f"Rate limit exhausted for {route}")
+                    print(f"  ✗ {route} unavailable (rate limit)")
+                    break
+
+                except LLMError as e:
                     last_error = e
                     print(f"  ✗ {route} failed: {e}")
                     break

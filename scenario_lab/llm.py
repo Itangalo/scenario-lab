@@ -24,12 +24,30 @@ class LLMParseError(LLMError):
     pass
 
 
+class LLMUnsupportedStructuredError(LLMError):
+    """The model/provider does not support structured (schema-constrained) output.
+
+    Raised by ``complete_structured`` so callers can treat it as "unsupported,
+    fall back to the legacy parse path" rather than a hard failure.
+    """
+
+    pass
+
+
 @dataclass
 class LLMResponse:
-    """Parsed response from LLM."""
+    """Parsed response from LLM.
+
+    ``structured_data`` is populated only by ``complete_structured`` calls. When
+    present it holds the already-parsed payload that the provider extracted from
+    a schema-constrained response (or a forced tool call), so callers can skip
+    text parsing entirely. ``content`` still holds a JSON serialization of that
+    payload for transcript logging.
+    """
 
     content: str
     raw_response: dict
+    structured_data: Optional[object] = None
 
     def get_finish_reason(self) -> Optional[str]:
         """Extract finish_reason from OpenRouter raw_response if available."""
@@ -187,6 +205,8 @@ class MockLLMClient:
         responses: dict[str, str],
         model: Union[str, List[str]] = "mock/model",
         provider: str = "mock",
+        structured_data: object = None,
+        supports_structured: bool = False,
         **kwargs,
     ):
         """
@@ -195,11 +215,18 @@ class MockLLMClient:
                       Example: {"events": "[{...}]", "government": "## Goals\\n..."}
             model: Model name(s) for compatibility with orchestrator reuse logic.
             provider: Provider name reported in mock usage data.
+            structured_data: Payload returned by ``complete_structured`` when
+                ``supports_structured`` is True.
+            supports_structured: If False, ``complete_structured`` raises
+                ``LLMUnsupportedStructuredError`` so callers exercise fallback.
         """
         self.responses = responses
         self.calls: list[tuple[str, str]] = []
+        self.structured_calls: list[tuple[str, str, dict, str]] = []
         self.models = [model] if isinstance(model, str) else model
         self.provider = provider
+        self.structured_data = structured_data
+        self.supports_structured = supports_structured
         # Orchestrator may pass other kwargs (temperature, max_tokens) – ignore them.
 
     def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
@@ -219,6 +246,36 @@ class MockLLMClient:
                 return LLMResponse(content=content, raw_response=raw_response)
 
         raise ValueError("No mock response configured for this prompt. Add key to responses dict.")
+
+    def complete_structured(
+        self,
+        system_prompt: str,
+        user_prompt: str,
+        schema: dict,
+        schema_name: str,
+    ) -> LLMResponse:
+        """Return a structured response, or raise if the mock has it disabled."""
+        self.structured_calls.append((system_prompt, user_prompt, schema, schema_name))
+
+        if not self.supports_structured:
+            raise LLMUnsupportedStructuredError(
+                "MockLLMClient configured without structured-output support."
+            )
+
+        content = json.dumps(self.structured_data)
+        raw_response = {
+            "usage": {
+                "prompt_tokens": 100,
+                "completion_tokens": 50,
+                "total_tokens": 150,
+            },
+            "model": self.models[0] if self.models else "mock/model",
+        }
+        return LLMResponse(
+            content=content,
+            raw_response=raw_response,
+            structured_data=self.structured_data,
+        )
 
     def close(self) -> None:
         pass
