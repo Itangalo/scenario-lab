@@ -11,6 +11,7 @@ from .models import (
     Scenario,
     ScenarioConfig,
     LLMConfig,
+    EmergentEventsConfig,
     RuleEvolutionConfig,
     ConstitutionalEnforcementConfig,
     LoggingConfig,
@@ -377,6 +378,12 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "max_tokens": base_config.llm.max_tokens,
                     "max_tokens_by_task": base_config.llm.max_tokens_by_task,
                     "structured_outputs": base_config.llm.structured_outputs,
+                    "probability_samples": base_config.llm.probability_samples,
+                },
+                "emergent_events": {
+                    "enabled": base_config.emergent_events.enabled,
+                    "max_per_turn": base_config.emergent_events.max_per_turn,
+                    "max_probability": base_config.emergent_events.max_probability,
                 },
                 "rule_evolution": {
                     "freeze_until_turn": base_config.rule_evolution.freeze_until_turn,
@@ -408,6 +415,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         return str(value).lower()
 
     _structured = _normalize_structured(llm_data.get("structured_outputs", "auto"))
+    _probability_samples = llm_data.get("probability_samples", 1)
 
     # Support both old format (single model) and new format (per-task models)
     if "model" in llm_data and not any(k in llm_data for k in ["events", "actors", "rules", "metrics"]):
@@ -425,6 +433,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             max_tokens=llm_data.get("max_tokens", 2000),
             max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
             structured_outputs=_structured,
+            probability_samples=_probability_samples,
         )
     else:
         # New format: per-task models
@@ -442,7 +451,15 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             max_tokens=llm_data.get("max_tokens", 2000),
             max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
             structured_outputs=_structured,
+            probability_samples=_probability_samples,
         )
+
+    emergent_events_data = data.get("emergent_events", {})
+    emergent_events = EmergentEventsConfig(
+        enabled=bool(emergent_events_data.get("enabled", False)),
+        max_per_turn=emergent_events_data.get("max_per_turn", 1),
+        max_probability=emergent_events_data.get("max_probability", 0.35),
+    )
 
     rule_evolution_data = data.get("rule_evolution", {})
     rule_evolution = RuleEvolutionConfig(
@@ -470,6 +487,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         actor_ids=data["actors"],
         output_language=data.get("output_language"),
         llm=llm_config,
+        emergent_events=emergent_events,
         rule_evolution=rule_evolution,
         constitutional_enforcement=constitutional_enforcement,
         logging=logging_config,

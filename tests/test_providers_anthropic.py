@@ -291,3 +291,77 @@ class TestGetPricingFor:
         result = get_pricing_for(ModelRoute("openrouter", "x-ai/grok-4.1-fast"))
         fake_cache.get_model_pricing.assert_called_once_with("x-ai/grok-4.1-fast")
         assert result == {"prompt": 0.5, "completion": 1.5}
+
+
+class TestAnthropicPromptCaching:
+    def _provider(self):
+        mock_sdk = MagicMock()
+        mock_sdk.RateLimitError = type("RateLimitError", (Exception,), {})
+        mock_sdk.APIStatusError = type("APIStatusError", (Exception,), {})
+        prov = AnthropicProvider.__new__(AnthropicProvider)
+        prov._sdk = mock_sdk
+        prov._client = MagicMock()
+        prov._client.messages.create.return_value = _make_message()
+        return prov
+
+    def test_system_prompt_sent_with_cache_control(self):
+        prov = self._provider()
+        prov.complete(
+            "big system prompt", "user",
+            model="claude-sonnet-4-6", temperature=0.7, max_tokens=500,
+        )
+        kwargs = prov._client.messages.create.call_args.kwargs
+        system = kwargs["system"]
+        assert isinstance(system, list)
+        assert system[0]["text"] == "big system prompt"
+        assert system[0]["cache_control"] == {"type": "ephemeral"}
+
+    def test_caching_can_be_disabled(self):
+        prov = self._provider()
+        prov._enable_prompt_caching = False
+        prov.complete(
+            "system", "user",
+            model="claude-sonnet-4-6", temperature=0.7, max_tokens=500,
+        )
+        kwargs = prov._client.messages.create.call_args.kwargs
+        assert kwargs["system"] == "system"
+
+    def test_structured_call_uses_cache_control(self):
+        prov = self._provider()
+        msg = _make_message()
+        block = MagicMock()
+        block.type = "tool_use"
+        block.name = "events_evaluation"
+        block.input = {"events": []}
+        msg.content = [block]
+        prov._client.messages.create.return_value = msg
+
+        prov.complete_structured(
+            "system", "user",
+            model="claude-sonnet-4-6", temperature=0.7, max_tokens=500,
+            schema={"type": "array"}, schema_name="events_evaluation",
+        )
+        kwargs = prov._client.messages.create.call_args.kwargs
+        assert isinstance(kwargs["system"], list)
+        assert kwargs["system"][0]["cache_control"] == {"type": "ephemeral"}
+
+
+class TestCacheTokenCosting:
+    def test_cache_tokens_priced_with_multipliers(self):
+        from scenario_lab.cost import CostCalculator, TokenUsage
+
+        usage = TokenUsage(
+            prompt_tokens=1_000_000,
+            completion_tokens=0,
+            total_tokens=1_000_000,
+            model="claude-sonnet-4-6",
+            provider="anthropic",
+            cache_creation_input_tokens=1_000_000,
+            cache_read_input_tokens=1_000_000,
+        )
+        with patch("scenario_lab.cost.get_pricing_for",
+                   return_value={"prompt": 3.0, "completion": 15.0}):
+            details = CostCalculator.calculate_cost(usage)
+
+        # 1M base (3.0) + 1M cache write (3.75) + 1M cache read (0.30)
+        assert details.prompt_cost_usd == pytest.approx(3.0 + 3.75 + 0.30)

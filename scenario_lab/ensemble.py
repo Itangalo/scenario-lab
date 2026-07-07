@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import re
+from itertools import combinations
 from pathlib import Path
 from statistics import mean, pstdev
 from typing import Any
@@ -131,6 +133,40 @@ def _read_event_evaluations_by_turn(run_dir: Path) -> dict[int, list[dict[str, A
 # Core analysis
 # ---------------------------------------------------------------------------
 
+def _read_final_historical_summary(run_dir: Path) -> str | None:
+    """Return the historical summary of the last completed turn, if present."""
+    turn_dirs = sorted(
+        (d for d in run_dir.iterdir() if d.is_dir() and d.name.startswith("turn-")),
+        key=lambda d: d.name,
+    )
+    for turn_dir in reversed(turn_dirs):
+        summary_path = turn_dir / "6-historical-summary.md"
+        if summary_path.exists():
+            try:
+                text = summary_path.read_text(encoding="utf-8").strip()
+            except OSError:
+                return None
+            return text or None
+    return None
+
+
+def _lexical_profile(text: str) -> set[str]:
+    """Reduce a narrative text to a set of content words for similarity comparison.
+
+    Tokens shorter than 4 characters are dropped, which removes most function
+    words in both English and Swedish without a language-specific stopword list.
+    """
+    words = re.findall(r"[a-zA-ZåäöÅÄÖüÜéÉ]+", text.lower())
+    return {w for w in words if len(w) >= 4}
+
+
+def _jaccard(a: set[str], b: set[str]) -> float:
+    union = a | b
+    if not union:
+        return 0.0
+    return len(a & b) / len(union)
+
+
 def analyze_ensemble(scenario_dir: Path, max_runs: int | None = None) -> dict[str, Any]:
     """Analyze all completed runs for a scenario and return a structured report dict.
 
@@ -140,7 +176,7 @@ def analyze_ensemble(scenario_dir: Path, max_runs: int | None = None) -> dict[st
 
     Returns:
         A dict with keys: scenario, run_overview, metric_trajectories,
-        event_statistics, divergence, caveats.
+        event_statistics, divergence, narrative_diversity, caveats.
     """
     run_dirs = _discover_completed_runs(scenario_dir, max_runs)
     if not run_dirs:
@@ -342,9 +378,50 @@ def analyze_ensemble(scenario_dir: Path, max_runs: int | None = None) -> dict[st
     divergence.sort(key=lambda x: x["max_iqr_jump"], reverse=True)
 
     # ------------------------------------------------------------------
-    # 5. Caveats
+    # 5. Narrative diversity
+    # ------------------------------------------------------------------
+    # Metric spread can hide storyline monoculture: runs may reach different
+    # numbers through near-identical narratives. Compare the final historical
+    # summaries lexically (pairwise Jaccard over content words) as a cheap,
+    # local proxy for how different the storylines actually are.
+    narrative_diversity: dict[str, Any] | None = None
+    profiles: list[tuple[str, set[str]]] = []
+    for run_dir in run_dirs:
+        text = _read_final_historical_summary(run_dir)
+        if text:
+            profiles.append((run_dir.name, _lexical_profile(text)))
+
+    if len(profiles) >= 2:
+        similarities: list[tuple[float, str, str]] = []
+        for (name_a, prof_a), (name_b, prof_b) in combinations(profiles, 2):
+            similarities.append((_jaccard(prof_a, prof_b), name_a, name_b))
+        sims = [s for s, _, _ in similarities]
+        most_similar = max(similarities, key=lambda x: x[0])
+        most_distinct = min(similarities, key=lambda x: x[0])
+        narrative_diversity = {
+            "n_texts": len(profiles),
+            "mean_pairwise_similarity": _round2(mean(sims)),
+            "min_pairwise_similarity": _round2(min(sims)),
+            "max_pairwise_similarity": _round2(max(sims)),
+            "most_similar_pair": [most_similar[1], most_similar[2]],
+            "most_distinct_pair": [most_distinct[1], most_distinct[2]],
+            "method": (
+                "Jaccard similarity over content words (length >= 4) of each run's "
+                "final historical summary. Lexical only; does not capture paraphrase."
+            ),
+        }
+
+    # ------------------------------------------------------------------
+    # 6. Caveats
     # ------------------------------------------------------------------
     caveats: list[str] = []
+
+    if narrative_diversity and narrative_diversity["mean_pairwise_similarity"] >= 0.5:
+        caveats.append(
+            f"Final narratives are lexically similar across runs (mean pairwise Jaccard "
+            f"{narrative_diversity['mean_pairwise_similarity']:.2f}). Metric spread may hide "
+            "storyline monoculture – inspect a few historical summaries side by side."
+        )
 
     if num_runs < 10:
         caveats.append(
@@ -373,6 +450,7 @@ def analyze_ensemble(scenario_dir: Path, max_runs: int | None = None) -> dict[st
         "metric_trajectories": metric_trajectories,
         "event_statistics": event_statistics,
         "divergence": divergence,
+        "narrative_diversity": narrative_diversity,
         "caveats": caveats,
     }
 
@@ -528,6 +606,30 @@ def format_ensemble_report(report: dict[str, Any]) -> str:
             else:
                 lines.append("No event associations with sufficient split (need ≥2 runs in each group).")
                 lines.append("")
+
+    # ------------------------------------------------------------------
+    # Narrative diversity
+    # ------------------------------------------------------------------
+    diversity = report.get("narrative_diversity")
+    if diversity:
+        lines.append("## Narrative Diversity")
+        lines.append("")
+        lines.append(
+            f"- Final historical summaries compared: {diversity['n_texts']}"
+        )
+        lines.append(
+            f"- Mean pairwise similarity: {diversity['mean_pairwise_similarity']:.2f} "
+            f"(min {diversity['min_pairwise_similarity']:.2f}, "
+            f"max {diversity['max_pairwise_similarity']:.2f})"
+        )
+        lines.append(
+            f"- Most similar pair: {diversity['most_similar_pair'][0]} / {diversity['most_similar_pair'][1]}"
+        )
+        lines.append(
+            f"- Most distinct pair: {diversity['most_distinct_pair'][0]} / {diversity['most_distinct_pair'][1]}"
+        )
+        lines.append(f"- Method: {diversity['method']}")
+        lines.append("")
 
     # ------------------------------------------------------------------
     # Caveats

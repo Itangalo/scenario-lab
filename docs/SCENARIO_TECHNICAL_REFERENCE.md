@@ -58,6 +58,7 @@ Optional top-level fields:
 - `output_language` (string)
 - `base` (relative path to a base scenario YAML)
 - `llm` (object)
+- `emergent_events` (object)
 - `rule_evolution` (object)
 - `constitutional_enforcement` (object)
 
@@ -144,6 +145,45 @@ Validation rules:
 - `max_tokens` and `max_tokens_by_task[*]` must be integers in `[100, 100000]`
 - `max_tokens_by_task` keys must be one of:
   - `events`, `actors`, `rules`, `metrics`, `summary`, `referee`
+- `probability_samples` must be an integer in `[1, 10]`
+
+#### `llm.probability_samples`
+
+Optional multi-sample probability elicitation for the events step (default `1`):
+
+```yaml
+llm:
+  probability_samples: 3
+```
+
+With `N > 1`, the events step elicits the candidate-event list `N` times per turn. Per event, the probability used for the dice roll is the mean across valid samples, counting samples where the event was absent as `0` (absence means the conditions were judged not met). The per-sample values are recorded in `1-event-evaluations.json` as `probability_samples`, together with `samples_present` and `n_samples`. Each sample repeats the full events call, so cost for the events step scales linearly with `N`.
+
+### `emergent_events`
+
+Optional policy allowing the Game Master to propose novel exogenous events that are not listed in `events.md`:
+
+```yaml
+emergent_events:
+  enabled: true
+  max_per_turn: 1
+  max_probability: 0.35
+```
+
+Supported fields:
+
+- `enabled` (boolean, default `false`)
+- `max_per_turn` (integer in `[1, 5]`, default `1`)
+- `max_probability` (number in `(0, 1]`, default `0.35`)
+
+Behavior:
+
+- when enabled, the events prompt invites up to `max_per_turn` emergent proposals per turn, each with `"emergent": true`, an id starting with `emergent_`, and a 1–3 sentence description
+- proposed probabilities above `max_probability` are capped (the original value is recorded as `probability_capped_from`)
+- emergent proposals roll the same seeded dice as listed events and are fully recorded in `1-event-evaluations.json` with `"emergent": true`
+- triggered emergent events are passed to the actor/rules/metrics prompts using their proposed description and added to the run's occurred-events list
+- when disabled, unknown event ids are skipped exactly as before
+
+Note: scenarios that override `user-prompts/events.md` must include the emergent-events instructions themselves (see `templates/user-prompts/events.md` for the default wording); otherwise the model is never told it may propose emergent events.
 
 ### `rule_evolution`
 

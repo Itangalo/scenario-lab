@@ -198,7 +198,7 @@ These items are valuable, but they should follow after the engine, comparison la
 
 **Follow-up items:**
 
-- [ ] Prompt caching support for Anthropic (use `cache_creation_input_tokens` / `cache_read_input_tokens` already tracked in `TokenUsage`).
+- [x] Prompt caching support for Anthropic (2026-07): system prompts are sent as cache-controlled blocks by default, and cache write/read tokens are priced with their 1.25x/0.1x multipliers in cost tracking.
 - [ ] Support for local model endpoints (Ollama, vLLM) as a third provider type.
 
 ### 8. Thin Scenario Workbench
@@ -260,6 +260,14 @@ These items are valuable, but they should follow after the engine, comparison la
 - Scenario-specific prompt/tooling support
 
 **Why this is last:** It is the easiest category to overbuild. It can be valuable, but it does not improve the baseline framework for most scenarios as much as comparison, evals, or ingest do.
+
+## Backlog from the 2026-07 Epistemics Review
+
+A review of how well the engine models genuine uncertainty produced four shipped improvements (emergent events, multi-sample probability elicitation, the `causal-impact` command, GM friction guidance + narrative-diversity stats) and three ideas deliberately left for later:
+
+- **Established-facts canon against summarization drift.** All long-term memory flows through the historical summary (re-condensed every turn) and the notepad (REPLACE semantics), so load-bearing facts can silently vanish over 10+ turns. Idea: an append-only "established facts" list that the summarization step may add to but not delete, injected into prompt context. Left undone because it changes the summarize output contract and can only be verified with real runs.
+- **Probability calibration vignettes.** The evals test event-condition *logic*, but nothing tests whether elicited probabilities are *calibrated*. Idea: a small set of human-anchored reference vignettes with agreed probability ranges, run against candidate event models.
+- **Human-in-the-loop mode.** Let a human play one actor or approve/steer between turns, on top of the existing pause/resume machinery. Connects the tool to live scenario exercises with clients rather than only Monte Carlo automation.
 
 ## Recommended Sequence
 

@@ -13,7 +13,13 @@ class AnthropicProvider(LLMProvider):
 
     name = "anthropic"
 
-    def __init__(self, api_key: Optional[str] = None) -> None:
+    # Class-level default so instances constructed without __init__ (tests)
+    # still get caching behavior.
+    _enable_prompt_caching: bool = True
+
+    def __init__(
+        self, api_key: Optional[str] = None, enable_prompt_caching: bool = True
+    ) -> None:
         try:
             import anthropic as _anthropic_sdk
         except ImportError as e:
@@ -29,6 +35,26 @@ class AnthropicProvider(LLMProvider):
             )
         self._sdk = _anthropic_sdk
         self._client = _anthropic_sdk.Anthropic(api_key=resolved_key)
+        self._enable_prompt_caching = enable_prompt_caching
+
+    def _system_param(self, system: str):
+        """Return the system parameter, with prompt caching when enabled.
+
+        The system prompt for a given task is stable across turns (scenario
+        background, metrics list), while the user prompt changes every call.
+        Marking the system block with an ephemeral cache_control lets repeated
+        turn-loop calls read it from cache. Blocks below Anthropic's minimum
+        cacheable length are silently not cached, so this is always safe.
+        """
+        if not self._enable_prompt_caching:
+            return system
+        return [
+            {
+                "type": "text",
+                "text": system,
+                "cache_control": {"type": "ephemeral"},
+            }
+        ]
 
     def complete(
         self,
@@ -49,7 +75,7 @@ class AnthropicProvider(LLMProvider):
         try:
             message = self._client.messages.create(
                 model=model,
-                system=system,
+                system=self._system_param(system),
                 messages=[{"role": "user", "content": user}],
                 max_tokens=max_tokens,
                 temperature=temperature,
@@ -127,7 +153,7 @@ class AnthropicProvider(LLMProvider):
         try:
             message = self._client.messages.create(
                 model=model,
-                system=system,
+                system=self._system_param(system),
                 messages=[{"role": "user", "content": user}],
                 max_tokens=max_tokens,
                 temperature=temperature,

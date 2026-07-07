@@ -1147,6 +1147,40 @@ def main():
     model_sensitivity_parser.add_argument("--json", action="store_true", help="Print JSON instead of markdown report")
     model_sensitivity_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
 
+    # Causal impact command
+    causal_parser = subparsers.add_parser(
+        "causal-impact",
+        help="Estimate an event's causal effect via forced/suppressed branch batches",
+    )
+    causal_parser.add_argument(
+        "target", type=Path, help="Scenario directory or parent run directory"
+    )
+    causal_parser.add_argument(
+        "--event", action="append", dest="events", default=None,
+        help="Event id to test (repeatable)",
+    )
+    causal_parser.add_argument(
+        "--repeats", type=int, default=5,
+        help="Seed-matched force/suppress pairs per event (default: 5)",
+    )
+    causal_parser.add_argument(
+        "--from-turn", type=int, default=1, dest="from_turn",
+        help="Branch point; overrides apply to the following turn (default: 1)",
+    )
+    causal_parser.add_argument("--turns", type=int, default=None, help="Total turns per branch")
+    causal_parser.add_argument("--max-concurrency", type=int, default=2)
+    causal_parser.add_argument("--seed", type=int, default=None, help="Base seed for matched pairs")
+    causal_parser.add_argument(
+        "--report-only", action="store_true",
+        help="Analyze existing forced/suppressed branches without running new ones",
+    )
+    causal_parser.add_argument(
+        "--dry-run", action="store_true",
+        help="Print the planned branch commands without executing them",
+    )
+    causal_parser.add_argument("--json", action="store_true", help="Print JSON instead of markdown")
+    causal_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
+
     # Audit models command
     audit_models_parser = subparsers.add_parser(
         "audit-models",
@@ -1270,6 +1304,137 @@ def main():
             print(f"  - {run_dir} (launch error: {error_text})")
 
         return 1 if total_failures else 0
+
+    if args.command == "causal-impact":
+        from .causal import (
+            analyze_causal_impact,
+            format_causal_report,
+            plan_causal_jobs,
+        )
+
+        target = args.target.resolve()
+
+        # Resolve the scenario directory and the baseline parent run.
+        def _is_baseline_completed(run_dir: Path) -> bool:
+            try:
+                config = json.loads((run_dir / "config.json").read_text(encoding="utf-8"))
+                summary = json.loads((run_dir / "summary.json").read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                return False
+            return (
+                summary.get("status") == "completed"
+                and not config.get("event_overrides")
+            )
+
+        if target.name.startswith("run-") and (target / "config.json").exists():
+            parent_run = target
+            scenario_dir = target.parent.parent
+        else:
+            scenario_dir = target
+            runs_dir = scenario_dir / "runs"
+            candidates = [
+                d for d in sorted(runs_dir.iterdir())
+                if d.is_dir() and d.name.startswith("run-") and _is_baseline_completed(d)
+            ] if runs_dir.is_dir() else []
+            if not candidates and not args.report_only:
+                print(f"❌ No completed baseline run found in {runs_dir}")
+                return 1
+            parent_run = candidates[-1] if candidates else None
+
+        # Resolve and validate target events.
+        known_event_ids: set[str] = set()
+        try:
+            scenario = load_scenario(scenario_dir)
+            known_event_ids = {event.id for event in scenario.events}
+        except Exception as e:
+            print(f"❌ Error loading scenario: {e}")
+            return 1
+
+        if not args.events:
+            print("No --event given. Available events:")
+            for eid in sorted(known_event_ids):
+                print(f"  - {eid}")
+            print(
+                "\nTip: run 'ensemble' first and pick events with strong divergence "
+                "associations, then rerun with --event <id>."
+            )
+            return 1
+
+        unknown = sorted(set(args.events) - known_event_ids)
+        if unknown:
+            print(f"❌ Unknown event id(s): {', '.join(unknown)}")
+            return 1
+
+        if not args.report_only:
+            jobs = plan_causal_jobs(
+                parent_run,
+                args.events,
+                repeats=args.repeats,
+                from_turn=args.from_turn,
+                turns=args.turns,
+                base_seed=args.seed,
+            )
+            print(f"Parent run: {parent_run}")
+            print(
+                f"Planned branches: {len(jobs)} "
+                f"({args.repeats} seed-matched pair(s) per event, "
+                f"overrides apply to turn {args.from_turn + 1})"
+            )
+
+            if args.dry_run:
+                for job in jobs:
+                    print(f"  [{job.event_id} {job.mode} seed={job.seed}] " + " ".join(job.command))
+                return 0
+
+            batch_id = datetime.now().strftime("%Y%m%d-%H%M%S")
+            log_dir = scenario_dir / "runs" / "batch-logs"
+            log_dir.mkdir(parents=True, exist_ok=True)
+            specs = [
+                BatchJobSpec(
+                    target=parent_run,
+                    command=job.command,
+                    log_path=log_dir / (
+                        f"causal-{batch_id}-{index:03d}-{job.event_id}-{job.mode}.log"
+                    ),
+                )
+                for index, job in enumerate(jobs, start=1)
+            ]
+            worker_count = min(args.max_concurrency, len(specs))
+            results, failures = execute_batch_specs(
+                specs, worker_count, "Causal Impact Branches"
+            )
+            failed = [r for r in results if r.returncode != 0]
+            if failed or failures:
+                print(f"\n⚠️  {len(failed) + len(failures)} branch job(s) failed:")
+                for result in failed:
+                    print(f"  - log: {result.log_path}")
+                for job_target, error_text in failures:
+                    print(f"  - {job_target} (launch error: {error_text})")
+
+        # Analyze whatever forced/suppressed branches now exist.
+        reports = []
+        for event_id in args.events:
+            try:
+                reports.append(analyze_causal_impact(scenario_dir, event_id))
+            except ValueError as e:
+                print(f"⚠️  {event_id}: {e}")
+
+        if not reports:
+            print("❌ No analyzable forced/suppressed branch groups found.")
+            return 1
+
+        if args.json:
+            output_text = json.dumps(reports, indent=2, ensure_ascii=False)
+        else:
+            output_text = "\n\n".join(format_causal_report(r) for r in reports)
+
+        if args.output:
+            args.output.write_text(output_text + "\n", encoding="utf-8")
+            print(f"✓ Report written to {args.output}")
+        else:
+            print()
+            print(output_text)
+        return 0
 
     if args.command == "validate":
         print(f"Validating scenario: {args.scenario}...")

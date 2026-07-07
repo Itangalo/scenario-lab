@@ -61,6 +61,13 @@ Models are specified in `scenario.yaml` as `provider:model`, for example `openro
 
 The events step can use provider-native structured outputs via `llm.structured_outputs` in `scenario.yaml` (`auto` | `true` | `false`, default `auto`). With `auto`, models that support structured output return schema-validated event JSON directly; unsupported models fall back automatically to the regular JSON parsing path. Use `true` to require structured output (hard error if unsupported) or `false` to disable it.
 
+Two optional settings improve how well the event step models genuine uncertainty:
+
+- `emergent_events.enabled: true` lets the Game Master propose novel exogenous events that are not listed in `events.md` (capped in number and probability per turn) – the mechanism for exploring futures the scenario author did not enumerate. Proposals are fully recorded in `1-event-evaluations.json` with `"emergent": true`.
+- `llm.probability_samples: N` elicits event probabilities N times per turn and rolls the dice on the aggregated value, recording the per-sample spread in the run artifacts.
+
+See [docs/SCENARIO_TECHNICAL_REFERENCE.md](docs/SCENARIO_TECHNICAL_REFERENCE.md) for details on both.
+
 ### Recommended workflow
 
 Scenario Lab works much better with a terminal-based AI coding agent assisting your workflow, for example:
@@ -258,7 +265,17 @@ python -m scenario_lab.cli ensemble scenarios/sweden-ai-2030 --json
 python -m scenario_lab.cli ensemble scenarios/sweden-ai-2030 --output report.md
 ```
 
-`ensemble` analyzes all completed runs for a scenario and produces a markdown report covering: run overview (N, status, cost), per-metric trajectories (mean, min, max, p10/p50/p90 per turn), event occurrence rates and mean evaluated probabilities (when available), divergence detection (which turns show the largest spread increase and which events are associated), and automatic caveats about small N or mixed model configs. No API calls.
+`ensemble` analyzes all completed runs for a scenario and produces a markdown report covering: run overview (N, status, cost), per-metric trajectories (mean, min, max, p10/p50/p90 per turn), event occurrence rates and mean evaluated probabilities (when available), divergence detection (which turns show the largest spread increase and which events are associated), narrative diversity (how lexically similar the final storylines are – metric spread can hide storyline monoculture), and automatic caveats about small N or mixed model configs. No API calls.
+
+### Estimate an event's causal impact
+
+```bash
+python -m scenario_lab.cli causal-impact scenarios/sweden-ai-2030 --event ai_incident_sweden --repeats 5
+python -m scenario_lab.cli causal-impact scenarios/sweden-ai-2030 --event ai_incident_sweden --dry-run
+python -m scenario_lab.cli causal-impact scenarios/sweden-ai-2030 --event ai_incident_sweden --report-only
+```
+
+`causal-impact` runs matched batches of branches that force respectively suppress a specific event (each pair shares a dice seed, so all other events roll identically within the pair), then compares final-metric distributions between the two groups. The report shows each metric's mean effect of the event, with paired estimates where available. Use `--dry-run` to inspect the planned branch commands, and `--report-only` to re-analyze existing forced/suppressed branches without new API calls. Without `--event`, the command lists available events – pick candidates from the `ensemble` report's divergence associations.
 
 ### Analyze model sensitivity
 

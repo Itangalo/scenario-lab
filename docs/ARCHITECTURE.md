@@ -48,6 +48,8 @@ V4 represents a radical simplification from previous versions. Instead of comple
 - **Deterministic Dice:** The roll for each event is derived from a recorded run seed: `random.Random(f"{seed}:{turn}:{event_id}").random()`. This makes the dice deterministic given the seed and independent of evaluation order, so `resume` and `branch` reproduce identical rolls without saving RNG state. Note that this only makes the dice deterministic – the LLM outputs (probabilities, narrative, actor actions) remain nondeterministic.
 - **Full Provenance:** Every candidate event the LLM returns is recorded in `turn-XX/1-event-evaluations.json` with its `id`, evaluated `probability`, the `roll`, a `triggered` flag, and any extra fields the LLM returned (for example reasoning). Invalid or unknown entries are recorded with a `skipped` field describing the reason. The legacy `turn-XX/1-events.json` still contains only the triggered events in their original shape.
 - **Event Forcing (counterfactuals):** A branch may force or suppress specific events on its first executed turn via `event_overrides`. Forced events trigger regardless of probability/roll; suppressed events never trigger (suppression wins if an id is both forced and suppressed). Affected entries are marked `"forced": true` or `"suppressed": true` in `1-event-evaluations.json`.
+- **Emergent Events (optional):** With `emergent_events.enabled: true` in `scenario.yaml`, the Game Master may additionally propose novel exogenous events that are *not* in `events.md` — up to `emergent_events.max_per_turn` per turn (default 1). Each proposal must carry an `id` starting with `emergent_`, a `probability`, `"emergent": true`, and a short `description`. Python applies guardrails only: it validates the shape, caps the probability at `emergent_events.max_probability` (default 0.35, recorded as `probability_capped_from` when applied), enforces the per-turn limit, and rolls the same seeded dice as for listed events. Triggered emergent events flow into the actor/rules/metrics prompts using their proposed description and are added to the run's occurred-events list; their evaluation records are marked `"emergent": true`. When the feature is disabled (the default), unknown event ids are skipped exactly as before. This is the mechanism for exploring futures the scenario author did not enumerate, while keeping full provenance.
+- **Probability Sampling (optional):** `llm.probability_samples: N` (default 1) makes the events step elicit the candidate list N times instead of once. Per event id, the probability used for the dice is the mean across valid samples, counting samples where the event was absent as 0 (absence ≈ conditions judged not met). The evaluation record then includes `probability_samples` (the per-sample values), `samples_present`, and `n_samples`, so probability uncertainty is visible in the artifact. Samples that end in a parse failure are excluded from the denominator; if every sample fails, the turn records the usual parse-failure marker. Multi-sample elicitation also naturally down-weights one-off emergent proposals, since an emergent event appearing in only one of N samples gets its probability divided by N.
 
 ### Constitutional Constraints
 - **Definition:** Invariant "must-hold" rules that the LLM must respect throughout the simulation.
@@ -69,6 +71,8 @@ V4 represents a radical simplification from previous versions. Instead of comple
   * **LLM Settings:** Includes per-task model configuration (`events`, `actors`, `rules`, `metrics`, `summary`, `analysis`, `referee`).
   * **Token Budgets:** Supports global `llm.max_tokens` plus optional per-task overrides via `llm.max_tokens_by_task` (for example, higher cap for `rules` to reduce truncation).
   * **Structured Outputs:** Optional `llm.structured_outputs: auto | true | false` (default `auto`) controls provider-native structured outputs for the events step. YAML booleans are normalized to the canonical strings at load time.
+  * **Probability Sampling:** Optional `llm.probability_samples` (integer ≥ 1, default 1) controls how many times the events step elicits candidate events per turn; probabilities are aggregated as described under Events above.
+  * **Emergent Events Policy:** Optional `emergent_events` block (`enabled`, default false; `max_per_turn`, default 1; `max_probability`, default 0.35) lets the Game Master propose novel exogenous events not listed in `events.md`.
   * **Rule Evolution Policy:** Optional `rule_evolution.freeze_until_turn` and `rule_evolution.max_changes_per_turn` let scenarios make early rules effectively fixed and keep later rule edits small.
   * **Constitutional Enforcement Policy:** Optional `constitutional_enforcement.max_attempts` and `constitutional_enforcement.on_failure` tune how hard the referee gate is.
   * **Logging:** Optional `logging.llm_io` enables per-call LLM prompt/response transcripts. It can also be turned on per run with the `--log-llm-io` CLI flag.
@@ -90,6 +94,8 @@ Each turn executes the following steps in order:
   * **Persistence:** Writes both `1-events.json` (triggered events only, legacy shape) and `1-event-evaluations.json` (full per-candidate record: probability, roll, triggered, skipped reasons, force/suppress flags) at the same incremental point.
   * **Determinism:** Dice rolls come from a stable RNG derived from the run seed (`random.Random(f"{seed}:{turn}:{event_id}")`), not from a global unseeded generator.
   * **Overrides:** If `event_overrides` is set for this turn, forced events trigger regardless of the roll and suppressed events never trigger.
+  * **Emergent Events:** When `emergent_events.enabled` is true, the prompt additionally invites up to `max_per_turn` novel exogenous proposals (`"emergent": true` plus a `description`). Python validates the shape, caps the probability at `max_probability`, rolls the same seeded dice, and records the proposal with `"emergent": true` in `1-event-evaluations.json`. Ids are normalized to start with `emergent_` (recorded as `id_normalized_from` if changed). When structured outputs are active, an extended item schema (adding required `emergent` and `description` fields) is used so both listed and emergent entries validate strictly.
+  * **Probability Sampling:** When `llm.probability_samples > 1`, the candidate list is elicited that many times and per-event probabilities are aggregated (mean with absent-as-zero over valid samples) before the single dice roll. Per-sample values are persisted in the evaluation record.
 
 2. **Actors Step**:
   * **Input:** World state (history + current), metrics, triggered events.
@@ -122,6 +128,7 @@ Each turn executes the following steps in order:
     * Calculate new metric values.
     * Write a narrative summary of the turn.
     * Update the "Notepad" (persistent and secret game master notes).
+  * **Realism Guidance:** The default prompt instructs the Game Master to avoid consensus bias: most turns should include at least one meaningful setback or friction point, actor conflicts should show up in outcomes, and a turn where every actor succeeds cleanly should prompt reassessment. This counters the LLM tendency toward smooth cooperative narratives that understate real-world friction.
   * **Output Parsing:** Requires verbatim headers (`## Metrics`, `## Narrative`, `## Notepad`) for reliable parsing.
   * **Failure Handling:** If the metrics response cannot be parsed, the orchestrator retries once with a "format-fix" prompt to enforce the required headers/JSON. If it still fails, previous metric values are kept for that turn.
 
@@ -165,7 +172,7 @@ Each turn executes the following steps in order:
 **Provider abstraction (`providers/`):** Each backend is an `LLMProvider` subclass with a `complete(system, user, *, model, temperature, max_tokens)` method:
 
 - `OpenRouterProvider` – HTTP via `httpx`, reads `OPENROUTER_API_KEY`.
-- `AnthropicProvider` – official `anthropic` SDK, reads `ANTHROPIC_API_KEY`.
+- `AnthropicProvider` – official `anthropic` SDK, reads `ANTHROPIC_API_KEY`. System prompts are sent as cache-controlled blocks (ephemeral prompt caching) by default, since a task's system prompt is stable across turns while the user prompt changes; cache write/read tokens are priced with their 1.25x/0.1x multipliers in `cost.py`. Caching can be disabled via the provider constructor (`enable_prompt_caching=False`).
 
 New providers can be registered without changing orchestrator code.
 
@@ -267,7 +274,7 @@ New providers can be registered without changing orchestrator code.
   * `--force-event EVENT_ID` / `--suppress-event EVENT_ID`: Repeatable counterfactual controls applied to the first turn executed in the branch. Event ids are validated against the scenario; an unknown id fails with a clear error. The overrides are recorded in the new run's `config.json` as `event_overrides` and reflected in `1-event-evaluations.json`.
   * `--log-llm-io`: Write per-call LLM transcripts under `turn-XX/llm-io/`
 - **Behavior:**
-  * Creates a *new* timestamped run directory
+  * Creates a *new* timestamped run directory (same-second collisions get a numeric suffix, so concurrent branch creation is safe)
   * Copies turn directories 1 through N from parent run
   * Loads state from turn N and applies modifications
   * Continues execution from turn N+1 in new directory
@@ -451,7 +458,7 @@ Cost so far: $0.15 | Projected total: $0.50
 
 ### CLI (`cli.py`)
 - **Entry Point:** `python -m scenario_lab.cli`.
-- **Commands:** `run`, `batch-run`, `batch-resume`, `resume`, `branch`, `validate`, `audit-models`, `visualize`, `costs`, `estimate`, `refresh-pricing`, `calibrate`, `ensemble`, `model-sensitivity`, `compare-runs`, `check-run-integrity`, `check-regressions`, `compare-distributions`, `quality-check`, `analyze`
+- **Commands:** `run`, `batch-run`, `batch-resume`, `resume`, `branch`, `validate`, `audit-models`, `visualize`, `costs`, `estimate`, `refresh-pricing`, `calibrate`, `ensemble`, `model-sensitivity`, `causal-impact`, `compare-runs`, `check-run-integrity`, `check-regressions`, `compare-distributions`, `quality-check`, `analyze`
 - **Overrides:** Supports `--override key=value` to modify configuration at runtime (e.g., `--override output_language=Spanish`).
 - **Validation:** Supports `--validate` flag to validate scenarios before running
 - **Model Preflight:** `run` performs model hygiene checks by default and can be bypassed with `--skip-model-checks`
@@ -461,7 +468,7 @@ Cost so far: $0.15 | Projected total: $0.50
 - **CLI Command:** `python -m scenario_lab.cli ensemble <scenario-dir> [options]`
 - **Purpose:** Analyzes all completed runs of a scenario as an ensemble without making any API calls.
 - **Inputs:** Reads `config.json`, `summary.json`, `costs.json`, and per-turn `4-metrics.json`, `1-events.json`, and `1-event-evaluations.json` (optional, absent in legacy runs) from every completed run directory.
-- **Report Sections:** Run overview (N, status mix, turn counts, cost); per-metric trajectories (mean/min/max/p10/p50/p90 per turn, with per-turn N reflecting runs that ended early); event statistics (overall occurrence rate, per-turn occurrence counts, mean evaluated probability vs realized frequency when evaluation data is available); divergence detection (metric × turn with the largest IQR jump, event associations via mean-split); automatic caveats for small N and mixed model configs.
+- **Report Sections:** Run overview (N, status mix, turn counts, cost); per-metric trajectories (mean/min/max/p10/p50/p90 per turn, with per-turn N reflecting runs that ended early); event statistics (overall occurrence rate, per-turn occurrence counts, mean evaluated probability vs realized frequency when evaluation data is available); divergence detection (metric × turn with the largest IQR jump, event associations via mean-split); narrative diversity (pairwise lexical Jaccard similarity of each run's final historical summary – a cheap local check for storyline monoculture behind diverging metrics, with a caveat raised when mean similarity ≥ 0.5); automatic caveats for small N and mixed model configs.
 - **Output:** Markdown to stdout, or `--output file.md` for file output; `--json` emits the raw data structure.
 
 ### Model Sensitivity Analysis (`model_sensitivity.py`)
@@ -471,6 +478,14 @@ Cost so far: $0.15 | Projected total: $0.50
 - **Report Sections:** Groups found with N and model(s); per-metric final-value distributions per group (mean/min/max/p10/p90); event occurrence rates per group; a robustness summary labeling metrics/events as sensitive (groups disagree) or robust (groups agree), using a 20% observed-range threshold for metrics and a 0.30 rate-difference threshold for events; caveats for single-group and small sample sizes.
 - **Single-group behavior:** If all runs use the same model, the report states clearly that sensitivity cannot be assessed and points at `variants/` + `batch-run` as the workflow to create multiple groups.
 - **Output:** Same `--json` / `--output` options as `ensemble`.
+
+### Causal Impact Analysis (`causal.py`)
+- **CLI Command:** `python -m scenario_lab.cli causal-impact <scenario-or-run-dir> --event EVENT_ID [options]`
+- **Purpose:** Estimates a specific event's causal effect on final metrics by running matched batches of forced and suppressed branches and comparing the outcome distributions. This upgrades the ensemble's descriptive event associations into branch-point counterfactuals.
+- **Workflow:** Picks a baseline parent run (latest completed run without `event_overrides`, or an explicit run directory), plans `--repeats` seed-matched pairs per event (one forced + one suppressed branch sharing the same dice seed, so all *other* events roll identically within a pair), executes them as `branch` child processes through the shared batch executor, then analyzes the resulting groups.
+- **Analysis:** Groups completed branch runs by inspecting `event_overrides` in their `config.json` (no extra bookkeeping files). Reports per-metric forced/suppressed means, the mean effect (forced − suppressed), and seed-paired mean effects where pairs exist, plus caveats about small N, unpaired runs, and world-model reliability.
+- **Options:** `--repeats` (default 5), `--from-turn` (default 1; overrides apply to the following turn), `--turns`, `--max-concurrency`, `--seed`, `--report-only` (analyze existing branches without running new ones), `--dry-run` (print planned branch commands), `--json`, `--output`.
+- **Cost:** Each pair costs two branch runs. Without `--event`, the command lists available events and exits, pointing at `ensemble` divergence associations for candidate selection.
 
 ## 4. Evaluation & Testing
 - **Unit Tests:** Standard pytest suite for Python logic.

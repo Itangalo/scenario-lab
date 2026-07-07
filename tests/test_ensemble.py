@@ -25,6 +25,7 @@ def _write_run(
     status: str = "completed",
     config_llm: dict | None = None,
     cost_usd: float | None = None,
+    historical_summary: str | None = None,
 ) -> Path:
     """Write a synthetic run directory under <scenario_dir>/runs/<run_name>/."""
     run_dir = scenario_dir / "runs" / run_name
@@ -68,6 +69,11 @@ def _write_run(
             (entry["metrics"] for entry in history if entry.get("turn") == turn), {}
         )
         (turn_dir / "4-metrics.json").write_text(json.dumps(metrics, indent=2), encoding="utf-8")
+
+        if historical_summary is not None and turn == max_turn:
+            (turn_dir / "6-historical-summary.md").write_text(
+                historical_summary, encoding="utf-8"
+            )
 
     return run_dir
 
@@ -428,3 +434,63 @@ def test_cli_ensemble_no_runs_error(tmp_path, capsys):
 
     captured = capsys.readouterr()
     assert "failed" in captured.out.lower() or result == 1
+
+
+# ---------------------------------------------------------------------------
+# Narrative diversity
+# ---------------------------------------------------------------------------
+
+def test_narrative_diversity_distinct_texts(tmp_path):
+    """Lexically different summaries give low similarity and no caveat."""
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+    history = [{"turn": 1, "metrics": {"gdp": 100}}]
+    _write_run(
+        scenario_dir, "run-a", history, {1: []},
+        historical_summary="Unemployment surged while protests spread through Stockholm suburbs.",
+    )
+    _write_run(
+        scenario_dir, "run-b", history, {1: []},
+        historical_summary="Exports boomed after semiconductor deals reshaped Nordic industry alliances.",
+    )
+
+    report = analyze_ensemble(scenario_dir)
+    diversity = report["narrative_diversity"]
+    assert diversity["n_texts"] == 2
+    assert diversity["mean_pairwise_similarity"] < 0.2
+    assert not any("monoculture" in c for c in report["caveats"])
+
+
+def test_narrative_diversity_similar_texts_flagged(tmp_path):
+    """Near-identical summaries raise the storyline-monoculture caveat."""
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+    history = [{"turn": 1, "metrics": {"gdp": 100}}]
+    text = "Tripartite cooperation delivered steady adoption gains while reskilling programs expanded."
+    _write_run(scenario_dir, "run-a", history, {1: []}, historical_summary=text)
+    _write_run(
+        scenario_dir, "run-b", history, {1: []},
+        historical_summary=text + " Momentum continued.",
+    )
+
+    report = analyze_ensemble(scenario_dir)
+    diversity = report["narrative_diversity"]
+    assert diversity["mean_pairwise_similarity"] > 0.5
+    assert any("monoculture" in c for c in report["caveats"])
+
+    rendered = format_ensemble_report(report)
+    assert "## Narrative Diversity" in rendered
+
+
+def test_narrative_diversity_absent_without_summaries(tmp_path):
+    """Runs without historical summaries omit the section gracefully."""
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+    history = [{"turn": 1, "metrics": {"gdp": 100}}]
+    _write_run(scenario_dir, "run-a", history, {1: []})
+    _write_run(scenario_dir, "run-b", history, {1: []})
+
+    report = analyze_ensemble(scenario_dir)
+    assert report["narrative_diversity"] is None
+    rendered = format_ensemble_report(report)
+    assert "## Narrative Diversity" not in rendered

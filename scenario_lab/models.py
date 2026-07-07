@@ -172,12 +172,22 @@ class LLMConfig:
     #   "false" – legacy parse path only (never attempt structured output).
     structured_outputs: str = "auto"
 
+    # How many times the events step elicits the candidate-event list per turn.
+    # With N > 1, per-event probabilities are aggregated (mean, absent-as-zero)
+    # before the dice roll, and per-sample values are persisted.
+    probability_samples: int = 1
+
     def __post_init__(self) -> None:
         allowed = {"auto", "true", "false"}
         if self.structured_outputs not in allowed:
             raise ValueError(
                 f"llm.structured_outputs must be one of {sorted(allowed)}, "
                 f"got {self.structured_outputs!r}"
+            )
+        if not isinstance(self.probability_samples, int) or self.probability_samples < 1:
+            raise ValueError(
+                f"llm.probability_samples must be an integer >= 1, "
+                f"got {self.probability_samples!r}"
             )
 
     def get_actor_routes(self, actor_id: str) -> Union[ModelRoute, List[ModelRoute]]:
@@ -214,6 +224,21 @@ class LLMConfig:
         if default is not None:
             return default
         return self.max_tokens
+
+
+@dataclass
+class EmergentEventsConfig:
+    """Policy for Game Master-proposed events not listed in events.md.
+
+    When enabled, the events step may propose up to ``max_per_turn`` novel
+    exogenous events per turn. Python only applies guardrails: shape
+    validation, a probability cap, and the per-turn limit. The proposals
+    themselves come from the LLM, keeping the pure LLM architecture.
+    """
+
+    enabled: bool = False
+    max_per_turn: int = 1
+    max_probability: float = 0.35
 
 
 @dataclass
@@ -267,6 +292,7 @@ class ScenarioConfig:
 
     # LLM settings
     llm: LLMConfig = None
+    emergent_events: EmergentEventsConfig = field(default_factory=EmergentEventsConfig)
     rule_evolution: RuleEvolutionConfig = field(default_factory=RuleEvolutionConfig)
     constitutional_enforcement: ConstitutionalEnforcementConfig = field(
         default_factory=ConstitutionalEnforcementConfig

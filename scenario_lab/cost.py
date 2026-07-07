@@ -190,6 +190,17 @@ class CostCalculator:
         prompt_cost = (usage.prompt_tokens / 1_000_000) * pricing["prompt"]
         completion_cost = (usage.completion_tokens / 1_000_000) * pricing["completion"]
 
+        # Anthropic reports cached prompt tokens separately from input_tokens.
+        # Cache writes cost 1.25x the base input price, cache reads 0.1x.
+        if usage.cache_creation_input_tokens:
+            prompt_cost += (
+                usage.cache_creation_input_tokens / 1_000_000
+            ) * pricing["prompt"] * 1.25
+        if usage.cache_read_input_tokens:
+            prompt_cost += (
+                usage.cache_read_input_tokens / 1_000_000
+            ) * pricing["prompt"] * 0.1
+
         return CostDetails(
             usage=usage,
             prompt_cost_usd=prompt_cost,

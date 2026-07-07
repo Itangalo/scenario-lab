@@ -509,9 +509,12 @@ class Orchestrator:
         if try_structured:
             from .schemas import EVENTS_SCHEMA_NAME, events_array_schema
 
+            schema = events_array_schema(
+                emergent=self.scenario.config.emergent_events.enabled
+            )
             try:
                 response = self.llm_clients["events"].complete_structured(
-                    system, user, events_array_schema(), EVENTS_SCHEMA_NAME
+                    system, user, schema, EVENTS_SCHEMA_NAME
                 )
             except (LLMUnsupportedStructuredError, AttributeError, NotImplementedError) as e:
                 # AttributeError/NotImplementedError cover injected clients that
@@ -571,6 +574,10 @@ class Orchestrator:
     def _evaluate_events(self, turn: int) -> tuple[list[dict], list[dict]]:
         """Evaluate candidate events and roll the seeded dice.
 
+        With ``llm.probability_samples > 1``, the candidate list is elicited
+        multiple times and per-event probabilities are aggregated (mean with
+        absent-as-zero over valid samples) before the single dice roll.
+
         Returns:
             Tuple of (triggered_events, evaluations). ``triggered_events`` keeps
             the legacy shape (the raw LLM event dicts) for 1-events.json.
@@ -579,23 +586,43 @@ class Orchestrator:
         """
         system, user = self.prompt_builder.build_events_prompt(turn)
 
-        candidate_events = self._fetch_candidate_events(turn, system, user)
-        if candidate_events is None:
-            # Legacy parse path exhausted its format-fix retry and produced no
-            # usable events. Make the silent-bias case visible in the artifact
-            # so a parse failure cannot be mistaken for "no events this turn".
+        n_samples = self.scenario.config.llm.probability_samples
+        samples: list[list] = []
+        for _ in range(n_samples):
+            candidates = self._fetch_candidate_events(turn, system, user)
+            if candidates is not None:
+                samples.append(candidates)
+
+        if not samples:
+            # Every elicitation ended in an unrecoverable parse failure. Make
+            # the silent-bias case visible in the artifact so a parse failure
+            # cannot be mistaken for "no events this turn".
             print(
                 "  Warning: Events step ended with zero events due to a parse "
                 "failure (recorded in event-evaluations artifact)."
             )
             return [], [{"parse_failure": True, "triggered": False}]
 
+        sample_skipped: list[dict] = []
+        if n_samples == 1:
+            candidate_events = samples[0]
+        else:
+            if len(samples) < n_samples:
+                print(
+                    f"  Warning: Only {len(samples)}/{n_samples} event samples "
+                    "were usable; aggregating over the valid ones."
+                )
+            candidate_events, sample_skipped = self._aggregate_event_samples(samples)
+
         override = self._event_override_for_turn(turn)
         force_ids = set(override.force) if override else set()
         suppress_ids = set(override.suppress) if override else set()
 
         triggered: list[dict] = []
-        evaluations: list[dict] = []
+        evaluations: list[dict] = list(sample_skipped)
+
+        emergent_cfg = self.scenario.config.emergent_events
+        emergent_accepted = 0
 
         for event_data in candidate_events:
             if not isinstance(event_data, dict) or "id" not in event_data or "probability" not in event_data:
@@ -612,15 +639,40 @@ class Orchestrator:
             event_id = event_data["id"]
             probability = event_data["probability"]
 
-            # Validate event exists
+            # Classify: listed event, emergent proposal, or unknown.
             event_obj = next((e for e in self.scenario.events if e.id == event_id), None)
-            if not event_obj:
+            is_emergent = event_obj is None and bool(event_data.get("emergent"))
+
+            if event_obj is None and not is_emergent:
                 print(f"  Warning: Unknown event '{event_id}', skipping")
                 evaluation = {key: value for key, value in event_data.items()}
                 evaluation["skipped"] = f"Unknown event '{event_id}'"
                 evaluation["triggered"] = False
                 evaluations.append(evaluation)
                 continue
+
+            if event_obj is not None:
+                # Keep artifacts tidy: drop the extended-contract filler fields
+                # that listed events carry when emergent events are enabled.
+                if not event_data.get("emergent"):
+                    event_data.pop("emergent", None)
+                if event_data.get("description") == "":
+                    event_data.pop("description", None)
+
+            if is_emergent:
+                skip_reason = None
+                description = event_data.get("description")
+                if not emergent_cfg.enabled:
+                    skip_reason = "Emergent events are disabled for this scenario"
+                elif not isinstance(description, str) or not description.strip():
+                    skip_reason = "Emergent event missing description"
+                if skip_reason:
+                    print(f"  Warning: Skipping emergent event '{event_id}': {skip_reason}")
+                    evaluation = {key: value for key, value in event_data.items()}
+                    evaluation["skipped"] = skip_reason
+                    evaluation["triggered"] = False
+                    evaluations.append(evaluation)
+                    continue
 
             # Validate probability
             if not isinstance(probability, (int, float)) or not 0 <= probability <= 1:
@@ -630,6 +682,36 @@ class Orchestrator:
                 evaluation["triggered"] = False
                 evaluations.append(evaluation)
                 continue
+
+            if is_emergent:
+                if emergent_accepted >= emergent_cfg.max_per_turn:
+                    print(
+                        f"  Warning: Skipping emergent event '{event_id}': "
+                        f"exceeds emergent_events.max_per_turn ({emergent_cfg.max_per_turn})"
+                    )
+                    evaluation = {key: value for key, value in event_data.items()}
+                    evaluation["skipped"] = (
+                        f"Exceeds emergent_events.max_per_turn ({emergent_cfg.max_per_turn})"
+                    )
+                    evaluation["triggered"] = False
+                    evaluations.append(evaluation)
+                    continue
+
+                # Normalize the id so emergent events are recognizable in all
+                # artifacts and cannot collide with listed event ids.
+                if not event_id.startswith("emergent_"):
+                    event_data["id_normalized_from"] = event_id
+                    event_id = f"emergent_{event_id}"
+                    event_data["id"] = event_id
+
+                # Guardrail: cap the proposed probability at the scenario policy.
+                if probability > emergent_cfg.max_probability:
+                    event_data["probability_capped_from"] = probability
+                    probability = emergent_cfg.max_probability
+                    event_data["probability"] = probability
+
+                event_data["emergent"] = True
+                emergent_accepted += 1
 
             roll = self._event_roll(turn, event_id)
 
@@ -658,13 +740,18 @@ class Orchestrator:
 
             if is_triggered:
                 triggered.append(event_data)
+                label = f"{event_id} (emergent)" if is_emergent else event_id
                 if forced:
-                    print(f"  ✓ Event triggered (forced): {event_id} (p={probability:.2%})")
+                    print(f"  ✓ Event triggered (forced): {label} (p={probability:.2%})")
                 else:
-                    print(f"  ✓ Event triggered: {event_id} (p={probability:.2%}, roll={roll:.2f})")
+                    print(f"  ✓ Event triggered: {label} (p={probability:.2%}, roll={roll:.2f})")
 
-                # Mark non-repeatable events as occurred
-                if not event_obj.can_repeat:
+                if is_emergent:
+                    # Emergent events are one-off by definition; record them so
+                    # summary.json preserves the full occurred-events history.
+                    self.scenario.occurred_events.add(event_id)
+                elif not event_obj.can_repeat:
+                    # Mark non-repeatable events as occurred
                     self._mark_event_occurred(event_id)
             else:
                 if suppressed:
@@ -675,6 +762,74 @@ class Orchestrator:
             evaluations.append(evaluation)
 
         return triggered, evaluations
+
+    @staticmethod
+    def _aggregate_event_samples(samples: list[list]) -> tuple[list[dict], list[dict]]:
+        """Aggregate candidate events from multiple elicitation samples.
+
+        Per event id, the aggregated probability is the mean across samples,
+        counting samples where the id is absent as 0 (absence means the event's
+        conditions were judged not met). Extra fields (for example emergent
+        descriptions) come from the first appearance.
+
+        Returns:
+            Tuple of (aggregated_candidates, skipped_evaluations). Skipped
+            evaluations record per-sample entries that were malformed, tagged
+            with the sample index.
+        """
+        n = len(samples)
+        order: list[str] = []
+        entries: dict[str, dict] = {}
+        sample_values: dict[str, list[float]] = {}
+        present_counts: dict[str, int] = {}
+        skipped: list[dict] = []
+
+        for index, sample in enumerate(samples):
+            seen_in_sample: set[str] = set()
+            for event_data in sample:
+                probability = event_data.get("probability") if isinstance(event_data, dict) else None
+                if (
+                    not isinstance(event_data, dict)
+                    or not isinstance(event_data.get("id"), str)
+                    or not isinstance(probability, (int, float))
+                    or isinstance(probability, bool)
+                    or not 0 <= probability <= 1
+                ):
+                    skipped.append(
+                        {
+                            "id": event_data.get("id") if isinstance(event_data, dict) else None,
+                            "sample": index,
+                            "skipped": "Invalid event data in sample (missing id or invalid probability)",
+                            "triggered": False,
+                        }
+                    )
+                    continue
+
+                event_id = event_data["id"]
+                if event_id in seen_in_sample:
+                    # Duplicate id within one sample: first occurrence wins.
+                    continue
+                seen_in_sample.add(event_id)
+
+                if event_id not in entries:
+                    order.append(event_id)
+                    entries[event_id] = dict(event_data)
+                    sample_values[event_id] = [0.0] * n
+                    present_counts[event_id] = 0
+                sample_values[event_id][index] = float(probability)
+                present_counts[event_id] += 1
+
+        aggregated: list[dict] = []
+        for event_id in order:
+            entry = entries[event_id]
+            values = sample_values[event_id]
+            entry["probability"] = sum(values) / n
+            entry["probability_samples"] = values
+            entry["samples_present"] = present_counts[event_id]
+            entry["n_samples"] = n
+            aggregated.append(entry)
+
+        return aggregated, skipped
 
     def _run_actors_step(self, turn: int, triggered_events: list[dict]) -> dict[str, str]:
         """Step 2: Get actions from each actor.

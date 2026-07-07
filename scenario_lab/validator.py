@@ -494,6 +494,32 @@ def validate_llm_config(scenario: Scenario) -> List[str]:
     elif config.max_tokens > 100000:
         errors.append(f"max_tokens {config.max_tokens} is unusually high (maximum 100000)")
 
+    # Validate probability sampling
+    if not isinstance(config.probability_samples, int) or config.probability_samples < 1:
+        errors.append(
+            f"probability_samples {config.probability_samples!r} must be an integer >= 1"
+        )
+    elif config.probability_samples > 10:
+        errors.append(
+            f"probability_samples {config.probability_samples} is unusually high (maximum 10); "
+            "each sample repeats the full events call"
+        )
+
+    # Validate emergent events policy
+    emergent = scenario.config.emergent_events
+    if not isinstance(emergent.max_per_turn, int) or emergent.max_per_turn < 1:
+        errors.append(
+            f"emergent_events.max_per_turn {emergent.max_per_turn!r} must be an integer >= 1"
+        )
+    elif emergent.max_per_turn > 5:
+        errors.append(
+            f"emergent_events.max_per_turn {emergent.max_per_turn} is unusually high (maximum 5)"
+        )
+    if not isinstance(emergent.max_probability, (int, float)) or not 0 < emergent.max_probability <= 1:
+        errors.append(
+            f"emergent_events.max_probability {emergent.max_probability!r} must be in (0, 1]"
+        )
+
     # Validate per-task max_tokens overrides
     valid_tasks = {"events", "actors", "rules", "metrics", "summary", "analysis", "referee"}
     for task, value in config.max_tokens_by_task.items():

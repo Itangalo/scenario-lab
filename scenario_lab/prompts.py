@@ -199,14 +199,19 @@ class PromptBuilder:
 
         # Get user template
         template = self._get_user_template("events")
-        
+
         # Build context
         context = self._get_common_context(turn)
         context["events_list"] = self._format_events_list()
-        
+
+        emergent = self.scenario.config.emergent_events
+        context["emergent_events_enabled"] = emergent.enabled
+        context["emergent_max_per_turn"] = emergent.max_per_turn
+        context["emergent_max_probability"] = emergent.max_probability
+
         # Render user prompt
         user = template.render(**context)
-        
+
         return system, user
 
     def build_actor_prompt(
@@ -237,21 +242,28 @@ class PromptBuilder:
             context["actor_name"] = actor.name
             context["actor_description"] = actor.long_description
         
-        # Format triggered events
-        events_text = ""
-        if triggered_events:
-            event_lines = []
-            for event in triggered_events:
-                event_obj = next((e for e in self.scenario.events if e.id == event["id"]), None)
-                if event_obj:
-                    event_lines.append(f"**{event_obj.id}:** {event_obj.description}")
-            events_text = "\n".join(event_lines)
-        context["triggered_events"] = events_text
+        context["triggered_events"] = self._format_triggered_events(triggered_events)
 
         # Render user prompt
         user = template.render(**context)
-        
+
         return system, user
+
+    def _format_triggered_events(self, triggered_events: list[dict]) -> str:
+        """Format triggered events for actor/rules/metrics prompts.
+
+        Listed events use the description from the scenario definition.
+        Emergent events are not in the scenario definition, so they fall back
+        to the description the Game Master proposed for them.
+        """
+        event_lines = []
+        for event in triggered_events:
+            event_obj = next((e for e in self.scenario.events if e.id == event["id"]), None)
+            if event_obj:
+                event_lines.append(f"**{event_obj.id}:** {event_obj.description}")
+            elif event.get("description"):
+                event_lines.append(f"**{event['id']} (emergent event):** {event['description']}")
+        return "\n".join(event_lines)
 
     def build_rules_prompt(
         self, turn: int, actor_actions: dict[str, str], triggered_events: list[dict]
@@ -276,17 +288,7 @@ class PromptBuilder:
         context = self._get_common_context(turn)
         context["metric_rules"] = self.scenario.metric_rules
         context["rule_evolution_policy"] = self._format_rule_evolution_policy(turn)
-        
-        # Format triggered events
-        events_text = ""
-        if triggered_events:
-            event_lines = []
-            for event in triggered_events:
-                event_obj = next((e for e in self.scenario.events if e.id == event["id"]), None)
-                if event_obj:
-                    event_lines.append(f"**{event_obj.id}:** {event_obj.description}")
-            events_text = "\n".join(event_lines)
-        context["triggered_events"] = events_text
+        context["triggered_events"] = self._format_triggered_events(triggered_events)
 
         # Format actor actions
         actions_lines = []
@@ -341,17 +343,7 @@ class PromptBuilder:
         # Build context
         context = self._get_common_context(turn)
         context["metric_rules"] = self.scenario.metric_rules
-        
-        # Format triggered events
-        events_text = ""
-        if triggered_events:
-            event_lines = []
-            for event in triggered_events:
-                event_obj = next((e for e in self.scenario.events if e.id == event["id"]), None)
-                if event_obj:
-                    event_lines.append(f"**{event_obj.id}:** {event_obj.description}")
-            events_text = "\n".join(event_lines)
-        context["triggered_events"] = events_text
+        context["triggered_events"] = self._format_triggered_events(triggered_events)
         
         # Format actor actions
         actions_lines = []

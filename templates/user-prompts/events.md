@@ -40,6 +40,25 @@ IMPORTANT: For events with date-specific conditions (e.g., "September 2026 is in
 - If the current period is "January-June 2026", it does NOT cover September 2026.
 - If the current period is "July-December 2026", it DOES cover September 2026.
 
+{% if emergent_events_enabled %}
+In addition to the listed events, you may propose up to {{ emergent_max_per_turn }} novel *emergent* event(s) this turn: exogenous developments that are not on the list but are plausible given the world state. Use this sparingly, for genuinely consequential surprises (technological, political, economic, natural, or social). Requirements:
+
+- An emergent event must be exogenous: not an action by one of the actors, and not a restatement of something already in the narrative or history.
+- Give it an id starting with `emergent_` (snake_case), a description of 1-3 sentences, and an honest probability that it happens during this turn's time window (maximum {{ emergent_max_probability }}).
+- Do not re-propose emergent events that already occurred in previous turns.
+- If nothing novel is warranted, propose none. Most turns should have none.
+
+Your response should be a JSON array where every object has four fields: `id`, `probability`, `emergent`, and `description`. For listed events, set `"emergent": false` and `"description": ""`.
+
+```json
+[
+  {"id": "event1_id", "probability": 0.10, "emergent": false, "description": ""},
+  {"id": "emergent_example_id", "probability": 0.08, "emergent": true, "description": "One to three sentences describing the novel event."}
+]
+```
+
+The probability should be specified as a value between 0 and 1. If no event meets the conditions and no emergent event is warranted, respond with an empty array: `[]`
+{% else %}
 Your response should be a JSON array with objects for each event whose conditions are met, in this format:
 
 ```json
@@ -50,5 +69,6 @@ Your response should be a JSON array with objects for each event whose condition
 ```
 
 The probability should be specified as a value between 0 and 1. If no event meets the conditions, respond with an empty array: `[]`
+{% endif %}
 
 Respond *only* with this JSON array, nothing else.

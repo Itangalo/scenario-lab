@@ -488,6 +488,12 @@ class OutputManager:
                 "temperature": self.scenario.config.llm.temperature,
                 "max_tokens": self.scenario.config.llm.max_tokens,
                 "max_tokens_by_task": self.scenario.config.llm.max_tokens_by_task,
+                "probability_samples": self.scenario.config.llm.probability_samples,
+            },
+            "emergent_events": {
+                "enabled": self.scenario.config.emergent_events.enabled,
+                "max_per_turn": self.scenario.config.emergent_events.max_per_turn,
+                "max_probability": self.scenario.config.emergent_events.max_probability,
             },
             "random_seed": self.scenario.config.random_seed,
             "logging": {

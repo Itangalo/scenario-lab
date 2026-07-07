@@ -15,6 +15,12 @@ There is a list, Metric Rules, that describes how metrics potentially affect eac
 * Determine how successful the actors are with their actions. This is based on how the world looks and your assessment of how likely they are to succeed.
 * Based on the actors' actions and Metric Rules, determine Metrics for the next turn.
 * Write a coherent narrative that tells what happens in the world during this turn.
+
+When judging success and writing the narrative, be realistic rather than harmonious:
+
+* In the real world, ambitious actions often partially fail, stall, get delayed, or run over budget. Most turns should include at least one meaningful setback, friction point, or unintended second-order effect.
+* Actors have conflicting interests. Do not smooth these over: let disagreements, blame, negotiation failures, and competition show up in outcomes when the world state supports them.
+* If every actor's actions succeeded cleanly this turn, reconsider your assessment before finalizing it.
 * Update the notepad with important information that should be remembered for the next turn, but doesn't fit in metrics or the narrative. This can be ongoing events, conditions that have come into effect, or other information affecting future turns. The content you write here will REPLACE the current notepad. Make sure to include any previous notes you wish to keep. If nothing needs to be noted, leave the notepad empty.
 
 Respond with a Markdown text with the following content:

@@ -97,7 +97,9 @@ class CostEstimator:
         # Average ~50 chars per event, assume ~2 events triggered
         output_tokens = estimate_tokens('[{"id": "event_example", "probability": 0.15}]')
 
-        return input_tokens + output_tokens
+        # Probability sampling repeats the full events call per sample.
+        samples = self.scenario.config.llm.probability_samples
+        return (input_tokens + output_tokens) * samples
 
     def _estimate_actors_tokens(self) -> int:
         """Estimate tokens for all actors combined."""
@@ -218,8 +220,11 @@ class CostEstimator:
         if isinstance(model, list):
             model = model[0]
 
-        # Get pricing
-        pricing = CostCalculator.get_model_pricing(model)
+        # Get pricing for the route, falling back to the default estimate for
+        # models missing from the cache.
+        from .pricing import DEFAULT_PRICING, get_pricing_for
+
+        pricing = get_pricing_for(model) or DEFAULT_PRICING
 
         # Assume 60/40 split between prompt and completion tokens
         prompt_tokens = int(tokens * 0.6)

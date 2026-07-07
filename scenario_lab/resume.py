@@ -284,10 +284,21 @@ def create_branch(
     if from_turn < 1:
         raise ValueError(f"Cannot branch from turn {from_turn}. Must be at least turn 1.")
 
-    # Create new timestamped run directory
+    # Create new timestamped run directory. On a same-second collision (for
+    # example many branches launched concurrently), append a numeric suffix
+    # instead of silently merging into an existing directory.
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
-    new_run_dir = output_base / "runs" / f"run-{timestamp}"
-    new_run_dir.mkdir(parents=True, exist_ok=True)
+    base_name = f"run-{timestamp}"
+    (output_base / "runs").mkdir(parents=True, exist_ok=True)
+    new_run_dir = output_base / "runs" / base_name
+    suffix = 0
+    while True:
+        try:
+            new_run_dir.mkdir(exist_ok=False)
+            break
+        except FileExistsError:
+            suffix += 1
+            new_run_dir = output_base / "runs" / f"{base_name}-{suffix:02d}"
 
     # Copy turn directories 1 through from_turn
     for turn_num in range(1, from_turn + 1):
