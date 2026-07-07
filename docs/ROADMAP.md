@@ -22,7 +22,7 @@ These items must be completed before any public or semi-public release.
 ### Nice to Have
 
 - [ ] Videos showing how to use the tool and what you get out of it.
-- [ ] Better workflow for creating new scenarios.
+- [x] Better workflow for creating new scenarios (2026-07: `create-scenario` skill + `describe` command).
 - [ ] Graphical user interface.
 - [ ] Support for running local LLMs.
 
@@ -136,7 +136,9 @@ These items should follow once the quality loop and run comparison story are str
 
 **Why this is not first:** It builds on the comparison and eval foundations. Without those, the analysis layer risks becoming polished but unreliable.
 
-### 5. Ingest Pipeline from Source Material to Scenario Draft
+### 5. Ingest Pipeline from Source Material to Scenario Draft ✅ Largely done
+
+**Status:** Implemented 2026-07 as an agent-side pipeline rather than engine code: the `create-scenario` skill (`.claude/skills/create-scenario/`) handles ingest, extraction, checkpointed drafting, and smoke testing, and the `describe` CLI command provides the reviewable overview. The engine deliberately stays thin; remaining ideas below are still valid for deepening the pipeline.
 
 **Priority:** High  
 **Type:** Mirofish-inspired  

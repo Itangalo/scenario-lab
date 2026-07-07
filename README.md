@@ -120,6 +120,15 @@ By default, `run` performs model hygiene checks before execution and warns if th
 
 Each run records a `random_seed` in `config.json`. The seed makes the event *dice* deterministic (same seed, same rolls across `run`, `resume`, and `branch`), while the LLM outputs themselves remain nondeterministic. Pass `--seed INT` to fix the seed, or let Scenario Lab generate a random 64-bit seed. Use `--log-llm-io` to capture every LLM prompt/response under each turn's `llm-io/` directory.
 
+### Show a scenario overview
+
+```bash
+python -m scenario_lab.cli describe scenarios/sweden-ai-2030
+python -m scenario_lab.cli describe scenarios/sweden-ai-2030 --output overview.md
+```
+
+`describe` renders any scenario as a compact one-page summary: actors with goals, metrics with ranges, events with conditions and probabilities, world-model settings, LLM configuration, and file/run inventory. Useful both for reviewing newly created scenarios and for getting oriented in existing ones. No API calls.
+
 ### Validate a scenario
 
 ```bash
@@ -368,6 +377,8 @@ At a high level:
 ## Creating New Scenarios
 
 The recommended workflow is to build new scenarios together with a terminal-based AI coding agent (for example Claude Code, OpenAI Codex, or Gemini CLI), then iterate based on test runs.
+
+For Claude Code, the repository ships an executable pipeline for this: the `create-scenario` skill (`.claude/skills/create-scenario/`). Ask Claude Code to "create a scenario from …" and it runs a phased workflow – ingest source material, ask you only the questions it cannot answer itself, draft all files, then `validate` + `describe` + a short smoke run with a quality checklist. Assumptions it makes on your behalf are logged in the scenario's `design-notes.md`.
 
 Use the docs as separate sources of truth:
 

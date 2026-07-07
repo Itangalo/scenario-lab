@@ -458,7 +458,7 @@ Cost so far: $0.15 | Projected total: $0.50
 
 ### CLI (`cli.py`)
 - **Entry Point:** `python -m scenario_lab.cli`.
-- **Commands:** `run`, `batch-run`, `batch-resume`, `resume`, `branch`, `validate`, `audit-models`, `visualize`, `costs`, `estimate`, `refresh-pricing`, `calibrate`, `ensemble`, `model-sensitivity`, `causal-impact`, `compare-runs`, `check-run-integrity`, `check-regressions`, `compare-distributions`, `quality-check`, `analyze`
+- **Commands:** `run`, `batch-run`, `batch-resume`, `resume`, `branch`, `validate`, `describe`, `audit-models`, `visualize`, `costs`, `estimate`, `refresh-pricing`, `calibrate`, `ensemble`, `model-sensitivity`, `causal-impact`, `compare-runs`, `check-run-integrity`, `check-regressions`, `compare-distributions`, `quality-check`, `analyze`
 - **Overrides:** Supports `--override key=value` to modify configuration at runtime (e.g., `--override output_language=Spanish`).
 - **Validation:** Supports `--validate` flag to validate scenarios before running
 - **Model Preflight:** `run` performs model hygiene checks by default and can be bypassed with `--skip-model-checks`
@@ -478,6 +478,12 @@ Cost so far: $0.15 | Projected total: $0.50
 - **Report Sections:** Groups found with N and model(s); per-metric final-value distributions per group (mean/min/max/p10/p90); event occurrence rates per group; a robustness summary labeling metrics/events as sensitive (groups disagree) or robust (groups agree), using a 20% observed-range threshold for metrics and a 0.30 rate-difference threshold for events; caveats for single-group and small sample sizes.
 - **Single-group behavior:** If all runs use the same model, the report states clearly that sensitivity cannot be assessed and points at `variants/` + `batch-run` as the workflow to create multiple groups.
 - **Output:** Same `--json` / `--output` options as `ensemble`.
+
+### Scenario Overview (`describe.py`)
+- **CLI Command:** `python -m scenario_lab.cli describe <scenario-dir> [options]`
+- **Purpose:** Renders any scenario definition as a compact one-page markdown overview: identity and time frame, actors with goals, metrics with start values/ranges/reference-point count, events with conditions and probabilities, metric-rule count, constitution presence, LLM configuration (per-task routes, probability sampling, emergent-events policy, rule-evolution guardrails), custom prompt overrides, and directory contents (background files, variants, completed runs).
+- **Role in authoring:** This is the "show what was created at a glance" step of the scenario-creation workflow (see `.claude/skills/create-scenario/`): after drafting or editing scenario files, `describe` gives the human a reviewable summary without reading every file. It reads only the scenario definition – no API calls.
+- **Output:** Markdown to stdout, `--output file.md`, or `--json` for the raw structure.
 
 ### Causal Impact Analysis (`causal.py`)
 - **CLI Command:** `python -m scenario_lab.cli causal-impact <scenario-or-run-dir> --event EVENT_ID [options]`

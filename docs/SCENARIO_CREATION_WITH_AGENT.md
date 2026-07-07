@@ -4,6 +4,8 @@ This guide describes the recommended workflow for creating new scenarios in Scen
 
 Use this workflow for first versions. Expect to iterate.
 
+For Claude Code users, this process is packaged as an executable skill in `.claude/skills/create-scenario/SKILL.md` – it adds phased checkpoints, ask-when-needed rules, assumption logging in `design-notes.md`, and a smoke-test quality checklist on top of the process below. Agents without skill support should follow this document directly.
+
 This document is process-oriented.  
 For file formats, schema rules, and parsing/validation contract, use:
 

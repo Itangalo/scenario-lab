@@ -41,8 +41,9 @@ htmlcov/
 .mypy_cache/
 .ruff_cache/
 
-# Local tool config
-.claude/
+# Local tool config (shared skills in .claude/skills/ are tracked)
+.claude/*
+!.claude/skills/
 .scenario-lab-cache/
 
 # Env files

@@ -539,7 +539,11 @@ def load_metrics(path: Path) -> Metrics:
 
             try:
                 ref_value, ref_desc = line[2:].split(":", 1)
-                metric_data["reference_points"][float(ref_value.strip())] = ref_desc.strip()
+                # Accept both "- 8: text" and the bolded "- **8:** text" form
+                # that scenario files commonly use.
+                ref_value = ref_value.strip().strip("*").strip()
+                ref_desc = ref_desc.strip().lstrip("*").strip()
+                metric_data["reference_points"][float(ref_value)] = ref_desc
             except ValueError:
                 pass
 

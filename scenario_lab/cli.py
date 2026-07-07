@@ -947,6 +947,13 @@ def main():
     )
 
     # Validate command
+    describe_parser = subparsers.add_parser(
+        "describe", help="Show a one-page overview of a scenario definition"
+    )
+    describe_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
+    describe_parser.add_argument("--json", action="store_true", help="Print JSON instead of markdown")
+    describe_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
+
     validate_parser = subparsers.add_parser("validate", help="Validate a scenario")
     validate_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
 
@@ -1433,6 +1440,27 @@ def main():
             print(f"✓ Report written to {args.output}")
         else:
             print()
+            print(output_text)
+        return 0
+
+    if args.command == "describe":
+        from .describe import describe_scenario, format_describe_report
+
+        try:
+            overview = describe_scenario(args.scenario)
+        except Exception as e:
+            print(f"❌ Error describing scenario: {e}")
+            return 1
+
+        if args.json:
+            output_text = json.dumps(overview, indent=2, ensure_ascii=False)
+        else:
+            output_text = format_describe_report(overview)
+
+        if args.output:
+            args.output.write_text(output_text + "\n", encoding="utf-8")
+            print(f"✓ Overview written to {args.output}")
+        else:
             print(output_text)
         return 0
 
