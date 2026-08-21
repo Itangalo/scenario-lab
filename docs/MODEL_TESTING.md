@@ -25,7 +25,7 @@ Re-test candidates against the fixed prompt before trusting any comparison below
 |-------|----------|--------------|--------------------------|---------|
 | google/gemini-2.0-flash-001 | $0.10 | $0.40 | 1/10 turns (ai-safety-race) | **REMOVED from OpenRouter 2026-08** |
 | x-ai/grok-4.1-fast | $0.20 | $0.50 | 0/10 turns (ai-safety-race) | **REMOVED from OpenRouter 2026-08** |
-| qwen/qwen3-235b-a22b-2507 | $0.09 | $0.55 | 0/40 turns (sweden-ai-2030) | Recommended (only surviving recommendation; repriced 2026-08) |
+| qwen/qwen3-235b-a22b-2507 | $0.09 | $0.55 | 0/40 (sweden-ai-2030); 9/10 approved, 0 arithmetic violations (ai-safety-race, **fixed prompt**) | **Recommended – the only verdict resting on a correct prompt** |
 | openai/gpt-5.4-nano | $0.20 | $1.25 | 35/40 turns accepted with constitutional violations (sweden-ai-2030) | Avoid |
 | google/gemini-2.5-flash | $0.30 | $2.50 | 10/10 turns (ai-safety-race) | Avoid |
 | moonshotai/kimi-k2 | $0.55 | $2.20 | 6/10 turns (ai-safety-race) | Avoid |
@@ -34,7 +34,7 @@ Re-test candidates against the fixed prompt before trusting any comparison below
 | mistralai/mistral-small-24b-instruct-2501 | $0.05 | $0.08 | 9/10 turns unresolved (ai-safety-race) | Avoid |
 | qwen/qwen3-30b-a3b-instruct-2507 | $0.048 | $0.193 | 3/7 turns unresolved (ai-safety-race) | Avoid (hangs, hallucinates metrics) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | $0 | $0 | 2/3 approved before crash | Avoid (free tier drops responses) |
-| deepseek/deepseek-v4-flash-0731 | $0.065 | $0.18 | 3/4 approved, 0 incidents in 4 turns | **Most stable reasoning model tested** |
+| deepseek/deepseek-v4-flash-0731 | $0.065 | $0.18 | 3/3 approved, 0 incidents (3 turns) | **Most stable reasoning model tested** – but slow, and unfinished |
 | minimax/minimax-m3 | $0.23 | $0.96 | 3/3 approved, then crashed turn 4 | Avoid (reasoning budget exhaustion) |
 | z-ai/glm-4.7-flash | $0.06 | $0.40 | 2/2 approved, 661s/turn | Avoid (far too slow) |
 
@@ -47,6 +47,7 @@ Re-test candidates against the fixed prompt before trusting any comparison below
 | google/gemini-2.0-flash-001 | ai-safety-race | ~$0.05 | – |
 | x-ai/grok-4.1-fast | sweden-ai-2030 | ~$0.12 | ~388k |
 | x-ai/grok-4.1-fast | ai-safety-race | ~$0.44* | – |
+| qwen/qwen3-235b-a22b-2507 | ai-safety-race | ~$0.042 | ~266k |
 | mistralai/mistral-small-24b-instruct-2501 | ai-safety-race | ~$0.022 | ~394k |
 | qwen/qwen3-30b-a3b-instruct-2507 | ai-safety-race | ~$0.035 (projected) | ~390k (6 turns: 260k) |
 | anthropic/claude-haiku-4-5 | ai-safety-race | ~$1.30* | – |
@@ -98,6 +99,26 @@ Re-test candidates against the fixed prompt before trusting any comparison below
 **Verdict:** Strong budget option. Stable, no constitutional violations, good narrative quality.
 
 ---
+
+---
+
+### qwen/qwen3-235b-a22b-2507 on the fixed prompt
+
+**Tested on:** ai-safety-race (10 turns, completed, 2026-08-22, seed 20260821, `max_tokens: 3000`, **fixed actor prompt**)
+
+The first model verdict in this project that rests on a correctly rendered actor prompt, and the strongest result recorded here.
+
+- **9/10 turns approved cleanly** by the constitutional referee; turn 10 ended `max_attempts_reached`. Six turns needed a single referee iteration, three needed two
+- **Zero arithmetic constitutional violations across all 10 turns**, checked independently against the constitution: no capability decrease (C6), no resource-tradeoff sum above 10 (C2), no safety erosion beyond -5 (C7), no coordination jump above 10 (C4), no belief shift above 15 (C3), and `catastrophe_threshold` held at exactly 70 throughout (C1)
+- **Catastrophe mechanics exercised:** `us_capability` reached 72.5, crossing the immutable threshold of 70, and `global_catastrophe` fired
+- **China now plays China.** Its safety metric rose 16 → 28.3 over the run. Under the broken prompt it sat frozen at a single value in every run by every model, because no actor ever argued China's side. This is the clearest confirmation that the prompt fix works
+- 137s/turn at 185 tok/s; $0.0042/turn, ~$0.042 for the full run – the cheapest completed run of any model tested
+- One rules-output truncation, which recovered
+
+**One interruption, not a model failure.** The first attempt died at turn 3 with `Connection/timeout error … The read operation timed out` during the rules step: httpx's 120s read timeout fired correctly, but `FallbackRouter` classifies `LLMError` as non-retryable and moved on, and with a single configured route that ended the run. `resume` picked it up from turn 3 with no rework. See the robustness note below.
+
+**Verdict:** Recommended, and now on evidence rather than inheritance. Best constitutional compliance, cheapest completed run, and second-fastest of everything tested.
+
 
 ### openai/gpt-5.4-nano
 
@@ -201,6 +222,25 @@ Re-test candidates against the fixed prompt before trusting any comparison below
 
 ---
 
+---
+
+### deepseek/deepseek-v4-flash-0731
+
+**Tested on:** ai-safety-race (3 completed turns, 2026-08-21, seed 20260821, `max_tokens: 32000`, **broken actor prompt**)
+
+The only reasoning model of five tested that did not fail. Stopped manually after three turns at the user's request because of its speed, not because anything went wrong.
+
+- **Zero incidents across three turns:** no transient retries, no rules truncation, no format-fix invocations, no hallucinated metric names, no empty or partial metrics payloads
+- Supports structured outputs natively, unlike nemotron-3-ultra which fell back to legacy JSON parsing for its whole run
+- 3/3 turns approved cleanly by the constitutional referee, one iteration each
+- 402s/turn at 128 tok/s. Token volume per turn is normal – it is slow per token, not verbose, so lowering `max_tokens` would not speed it up meaningfully
+- ~$0.0064/turn, roughly $0.064 per 10 turns
+
+**Caveat on the constitutional result.** This run predates the actor-prompt fix, so both actors were playing the United States and the referee was judging a world where China never advocated for itself. The 3/3 approvals are therefore not evidence of constitutional compliance. What does stand is everything the prompt bug cannot touch: output-contract discipline, structured-output support, absence of retries, and cost/throughput.
+
+**Verdict:** The best reasoning model tested, with two real reservations. It was never run to completion, and at ~400s/turn a 10-turn run takes over an hour, which makes batch work painful. Re-run against the fixed prompt before treating its constitutional behaviour as known.
+
+
 ### minimax/minimax-m3
 
 **Tested on:** ai-safety-race (5 turns requested, **crashed at turn 4**, 2026-08-21, seed 20260821, `max_tokens: 32000`, fixed actor prompt)
@@ -254,7 +294,7 @@ Prefer instruct (non-thinking) variants. This is consistent with the project's o
 | nvidia/nemotron-3-ultra-550b-a55b:free | Crashed turn 3 (`did not include choices`) |
 | minimax/minimax-m3 | Crashed turn 4 (`did not include assistant content`) |
 | z-ai/glm-4.7-flash | Survived, but 661s/turn and one hallucinated metric |
-| deepseek/deepseek-v4-flash-0731 | 4 turns, zero incidents – the only clean one |
+| deepseek/deepseek-v4-flash-0731 | 3 turns, zero incidents – the only clean one |
 
 Four of five failed or were unusable. Raising `max_tokens` to 32000 did not prevent budget exhaustion; the models scaled their reasoning to fill whatever budget they were given.
 
