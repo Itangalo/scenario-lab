@@ -38,7 +38,7 @@ Shorthand:
 ```yaml
 llm:
   events: "anthropic:claude-opus-4-6"
-  actors: "openrouter:x-ai/grok-4.1-fast"
+  actors: "openrouter:qwen/qwen3-235b-a22b-2507"
 ```
 
 Dict (equivalent):
@@ -57,7 +57,7 @@ llm:
   events:
     - "anthropic:claude-opus-4-6"
     - provider: openrouter
-      model: x-ai/grok-4.1-fast
+      model: qwen/qwen3-235b-a22b-2507
 ```
 
 Per-actor dicts keep working; values are routes (shorthand or dict) instead of bare strings.

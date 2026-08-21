@@ -56,6 +56,7 @@ Required top-level fields:
 Optional top-level fields:
 
 - `output_language` (string)
+- `research_questions` (list)
 - `base` (relative path to a base scenario YAML)
 - `llm` (object)
 - `emergent_events` (object)
@@ -89,6 +90,39 @@ Validation constraints:
 
 - minimum: `1`
 - maximum: `100`
+
+### `research_questions`
+
+Optional declaration of what the scenario exists to answer. Consumed by the `synthesize` command, which answers each declared question explicitly before reporting anything undeclared.
+
+Two accepted shapes, mixable in one list:
+
+```yaml
+research_questions:
+  - "Does public trust recover after a major incident?"
+  - id: rq_regulator_timing
+    question: "Under what conditions does the regulator act before an incident rather than after?"
+    metrics: [regulatory_pressure, public_trust]
+    events: [major_incident]
+    notes: "The central question; everything else is secondary."
+```
+
+Fields on the mapping form:
+
+- `question` (string, required)
+- `id` (string, optional – derived from the question text when omitted)
+- `metrics` (string or list of strings, optional) – metric IDs bearing on the question
+- `events` (string or list of strings, optional) – event IDs bearing on the question
+- `notes` (string, optional)
+
+Validation:
+
+- `research_questions` must be a list; each entry must be a string or a mapping with non-empty `question`
+- `id` values must be unique within the scenario
+- every id in `metrics` must exist in `metrics.md`, and every id in `events` must exist in `events.md` (error) – this is what catches a question the scenario cannot answer before runs are spent on it
+- a question naming neither metrics nor events produces a warning: synthesis can then answer it only qualitatively
+
+Inheritance: `research_questions` is a list, so a scenario declaring its own replaces the base's entirely rather than appending.
 
 ### `base` Inheritance
 
@@ -144,8 +178,22 @@ Validation rules:
 - `temperature` must be in `[0, 2]`
 - `max_tokens` and `max_tokens_by_task[*]` must be integers in `[100, 100000]`
 - `max_tokens_by_task` keys must be one of:
-  - `events`, `actors`, `rules`, `metrics`, `summary`, `referee`
+  - `events`, `actors`, `rules`, `metrics`, `summary`, `analysis`, `synthesis`, `referee`
 - `probability_samples` must be an integer in `[1, 10]`
+- `call_timeout_seconds` must be an integer in `[10, 3600]`
+
+#### `llm.call_timeout_seconds`
+
+Wall-clock deadline for a single LLM call, in seconds (default `300`):
+
+```yaml
+llm:
+  call_timeout_seconds: 300
+```
+
+This bounds the whole request, not each read. The HTTP client's own timeout applies per read operation, so a provider that emits bytes slowly resets it indefinitely and a call can block for as long as the connection stays open – observed in practice as single calls running 11 to 23 minutes with the process idle. Exceeding the deadline raises `LLMCallTimeoutError`, which `FallbackRouter` treats as a route failure and moves past.
+
+Raise it for slow reasoning models; lower it for unattended batches where a stalled run is worse than a failed one.
 
 #### `llm.probability_samples`
 
@@ -362,6 +410,25 @@ Recognized files:
 - `metrics-update.md`
 - `constitutional-referee.md`
 - `constitutional-referee-correction.md`
+
+### Rendering and Available Variables
+
+Both override directories are rendered as Jinja templates in a sandboxed environment. Conditionals, loops, and spaced placeholders (`{{ actor_name }}`) all work, and legacy space-free placeholders (`{{actor_name}}`) behave identically.
+
+`system-prompts/` templates receive:
+
+- `scenario_name`, `scenario_description`
+- `actors_list`, `metrics_list` (pre-rendered text blocks)
+- `constitution` (empty string when the scenario defines none)
+- `output_language`
+- `actor_id`, `actor_name`, `actor_description`, `actor_short_description` (populated only for actor prompts)
+- `metric_<metric_id>` for every metric, carrying its current value
+
+`user-prompts/` templates receive a turn-aware context instead: `turn`, `time_period`, `metrics_json`, `world_state`, `historical_summary`, `notepad`, `output_language`, and `metric_<metric_id>`.
+
+Because system prompts are built without a turn number, turn-specific variables are unavailable there – reference them from a user prompt instead.
+
+Validation parses every override: invalid Jinja syntax is an error, and a variable the context does not supply is a warning. Heed the warning. Jinja renders an undefined variable as empty text rather than failing, so the resulting prompt is silently missing whatever that variable was meant to carry while the file itself still reads correctly.
 
 Notes:
 

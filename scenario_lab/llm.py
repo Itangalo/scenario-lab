@@ -24,6 +24,30 @@ class LLMParseError(LLMError):
     pass
 
 
+class LLMReasoningBudgetError(LLMError):
+    """A reasoning model spent its whole token budget before emitting content.
+
+    Distinct from a generic failure because retrying the identical request is
+    guaranteed to fail the same way: the model deterministically fills whatever
+    budget it is given with reasoning tokens. Raising this as an ``LLMError``
+    makes ``FallbackRouter`` move to the next route immediately instead of
+    burning three identical attempts.
+    """
+
+    pass
+
+
+class LLMCallTimeoutError(LLMError):
+    """A single LLM call exceeded its wall-clock deadline.
+
+    Distinct from httpx's per-read timeout, which never fires when a provider
+    trickles bytes indefinitely. Observed in practice as calls blocking for
+    11-23 minutes with the process idle on an open socket.
+    """
+
+    pass
+
+
 class LLMUnsupportedStructuredError(LLMError):
     """The model/provider does not support structured (schema-constrained) output.
 

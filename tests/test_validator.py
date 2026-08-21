@@ -63,7 +63,7 @@ def test_is_valid_model_string():
     # Valid models
     assert is_valid_model_string("google/gemini-3-flash-preview")
     assert is_valid_model_string("google/gemini-3-flash-preview")
-    assert is_valid_model_string("x-ai/grok-4.1-fast")
+    assert is_valid_model_string("qwen/qwen3-235b-a22b-2507")
 
     # Invalid models
     assert not is_valid_model_string("claude-sonnet-4")  # Missing provider
@@ -225,14 +225,16 @@ def test_load_model_policy_reads_repo_local_overrides(tmp_path):
 def test_evaluate_model_hygiene_applies_policy_allowlist_and_blocklist(tmp_path):
     """Policy allowlist/blocklist should add warnings without code changes."""
     policy_path = tmp_path / "model-policy.yaml"
+    # Synthetic patterns: this exercises the policy mechanism, so it must not
+    # break whenever the project changes which real model it recommends.
     policy_path.write_text(
         "\n".join(
             [
                 "max_snapshot_age_days: 365",
                 "allowed_patterns:",
-                "  - '^x-ai/'",
+                "  - '^qwen/'",
                 "blocked_patterns:",
-                "  - 'grok-4.1-fast'",
+                "  - 'qwen3-235b'",
             ]
         ),
         encoding="utf-8",
@@ -240,7 +242,7 @@ def test_evaluate_model_hygiene_applies_policy_allowlist_and_blocklist(tmp_path)
     policy = load_model_policy(policy_path)
 
     blocked_warnings = evaluate_model_hygiene(
-        "x-ai/grok-4.1-fast",
+        "qwen/qwen3-235b-a22b-2507",
         today=date(2026, 3, 4),
         policy=policy,
     )
@@ -257,12 +259,12 @@ def test_evaluate_model_hygiene_applies_policy_allowlist_and_blocklist(tmp_path)
 def test_collect_model_hygiene_warnings_reports_task_names():
     """Scenario-level model hygiene warnings should identify task and scope."""
     config = LLMConfig(
-        events="x-ai/grok-4.1-fast",
-        actors="x-ai/grok-4.1-fast",
-        rules="x-ai/grok-4.1-fast",
+        events="qwen/qwen3-235b-a22b-2507",
+        actors="qwen/qwen3-235b-a22b-2507",
+        rules="qwen/qwen3-235b-a22b-2507",
         metrics="openai/gpt-3.5-turbo-2024-01-15",
-        summary="x-ai/grok-4.1-fast",
-        referee="x-ai/grok-4.1-fast",
+        summary="qwen/qwen3-235b-a22b-2507",
+        referee="qwen/qwen3-235b-a22b-2507",
     )
 
     warnings = collect_model_hygiene_warnings(
@@ -293,7 +295,7 @@ def test_choose_replacement_model_prefers_newer_and_cheaper_candidate():
             "architecture": {"input_modalities": ["text"], "output_modalities": ["text"]},
         },
         {
-            "id": "x-ai/grok-4.1-fast",
+            "id": "qwen/qwen3-235b-a22b-2507",
             "created": 1771113600,
             "context_length": 1000000,
             "pricing": {"prompt": "0.000004", "completion": "0.000005"},
@@ -679,3 +681,60 @@ def test_validate_scenario_sweden_ai_2030():
     result = validate_scenario(scenario_path)
     assert result.is_valid
     assert isinstance(result.warnings, list)
+
+
+# ---------------------------------------------------------------------------
+# Regression: model validation after the ModelRoute migration
+#
+# validate_llm_config was written before config values became ModelRoute
+# objects and was never updated. Single models matched neither the str nor the
+# list branch and went unchecked; every fallback list failed regardless of its
+# contents. Both went unnoticed because one is silent and the other looked like
+# a scenario error.
+# ---------------------------------------------------------------------------
+
+class TestModelRouteValidation:
+    def test_fallback_list_of_routes_is_accepted(self):
+        from scenario_lab.models import LLMConfig, ModelRoute
+        from scenario_lab.validator import validate_llm_config
+        from scenario_lab.models import Scenario, ScenarioConfig, Metrics, WorldState
+
+        config = LLMConfig(
+            events=[
+                ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507"),
+                ModelRoute("openrouter", "google/gemini-3-flash-preview"),
+            ]
+        )
+        scenario = Scenario(
+            config=ScenarioConfig(
+                name="t", description="d", start_date="2026-01",
+                time_scale="1 month", max_turns=5, actor_ids=[], llm=config,
+            ),
+            metrics=Metrics(metrics={}), events=[], actors={}, metric_rules="",
+            world_state=WorldState(narrative="", turn=0, time_period=""), context="",
+        )
+
+        errors = validate_llm_config(scenario)
+        assert not any("fallback list" in e for e in errors)
+
+    def test_anthropic_model_without_slash_is_accepted(self):
+        """vendor/model is an OpenRouter convention, not a universal one."""
+        from scenario_lab.validator import is_valid_model_route
+        from scenario_lab.models import ModelRoute
+
+        assert is_valid_model_route(ModelRoute("anthropic", "claude-sonnet-4-6"))
+        assert is_valid_model_route(ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507"))
+
+    def test_openrouter_model_without_vendor_is_rejected(self):
+        from scenario_lab.validator import is_valid_model_route
+        from scenario_lab.models import ModelRoute
+
+        assert not is_valid_model_route(ModelRoute("openrouter", "bare-name"))
+
+    def test_empty_provider_or_model_is_rejected(self):
+        from scenario_lab.validator import is_valid_model_route
+        from scenario_lab.models import ModelRoute
+
+        assert not is_valid_model_route(ModelRoute("", "qwen/q"))
+        assert not is_valid_model_route(ModelRoute("openrouter", ""))
+        assert not is_valid_model_route(None)

@@ -9,7 +9,7 @@ Tests LLM performance on:
 
 Usage:
     pytest tests/evals/llm-event-conditions/ -v
-    pytest tests/evals/llm-event-conditions/ --model "x-ai/grok-4.1-fast"
+    pytest tests/evals/llm-event-conditions/ --model "qwen/qwen3-235b-a22b-2507"
     pytest tests/evals/llm-event-conditions/ -k "hallucination"
 """
 
@@ -73,7 +73,7 @@ def llm_client():
     Model can be specified via TEST_LLM_MODEL env var.
     Defaults to Claude Haiku 4 for cost-effective testing.
     """
-    model = os.getenv("TEST_LLM_MODEL", "openrouter:x-ai/grok-4.1-fast")
+    model = os.getenv("TEST_LLM_MODEL", "openrouter:qwen/qwen3-235b-a22b-2507")
 
     if not os.getenv("OPENROUTER_API_KEY") and not os.getenv("ANTHROPIC_API_KEY"):
         pytest.skip("Neither OPENROUTER_API_KEY nor ANTHROPIC_API_KEY is set")

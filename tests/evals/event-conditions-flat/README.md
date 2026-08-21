@@ -109,7 +109,7 @@ pytest tests/evals/event-conditions-flat/ -v
 ### Test Specific Model
 
 ```bash
-export TEST_LLM_MODEL="x-ai/grok-4.1-fast"
+export TEST_LLM_MODEL="qwen/qwen3-235b-a22b-2507"
 pytest tests/evals/event-conditions-flat/ -v
 ```
 
@@ -205,7 +205,7 @@ Total tokens used             : ~15,000
 
 ## Baseline Results (Grok 4.1 Fast)
 
-Initial testing with `x-ai/grok-4.1-fast` shows **excellent performance**:
+Initial testing with `qwen/qwen3-235b-a22b-2507` shows **excellent performance**:
 
 - **Overall:** 33/33 tests passed (100%) in ~4.0 minutes
 - **Simple conditions:** 6/6 (100%) - Basic thresholds and logic
@@ -260,12 +260,12 @@ Or even more explicit:
 
 ```bash
 # Cheap models for iteration
-export TEST_LLM_MODEL="x-ai/grok-4.1-fast"
-export TEST_LLM_MODEL="x-ai/grok-4.1-fast"
+export TEST_LLM_MODEL="qwen/qwen3-235b-a22b-2507"
+export TEST_LLM_MODEL="qwen/qwen3-235b-a22b-2507"
 
 # Mid-tier models
 export TEST_LLM_MODEL="google/gemini-3-flash-preview"
-export TEST_LLM_MODEL="x-ai/grok-4.1-fast"
+export TEST_LLM_MODEL="qwen/qwen3-235b-a22b-2507"
 
 # Premium models (final validation)
 export TEST_LLM_MODEL="google/gemini-3-flash-preview"

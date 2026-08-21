@@ -260,7 +260,7 @@ categories:
 export TEST_LLM_MODEL="google/gemini-3-flash-preview"
 pytest tests/evals/llm-event-conditions/ -v
 
-export TEST_LLM_MODEL="x-ai/grok-4.1-fast"
+export TEST_LLM_MODEL="qwen/qwen3-235b-a22b-2507"
 pytest tests/evals/llm-event-conditions/ -v
 
 # Other providers
@@ -408,7 +408,7 @@ jobs:
       - run: pytest tests/evals/llm-event-conditions/ -v
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          TEST_LLM_MODEL: "x-ai/grok-4.1-fast"
+          TEST_LLM_MODEL: "qwen/qwen3-235b-a22b-2507"
 ```
 
 ## Maintenance

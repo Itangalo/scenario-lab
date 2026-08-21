@@ -40,7 +40,7 @@ def llm_client():
     if not api_key:
         pytest.skip("OPENROUTER_API_KEY not set")
 
-    model = os.getenv("TEST_LLM_MODEL", "openrouter:x-ai/grok-4.1-fast")
+    model = os.getenv("TEST_LLM_MODEL", "openrouter:qwen/qwen3-235b-a22b-2507")
     from scenario_lab.loader import parse_route
     route = parse_route(model)
     registry = ProviderRegistry()

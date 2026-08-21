@@ -6,6 +6,8 @@ Use this workflow for first versions. Expect to iterate.
 
 For Claude Code users, this process is packaged as an executable skill in `.claude/skills/create-scenario/SKILL.md` – it adds phased checkpoints, ask-when-needed rules, assumption logging in `design-notes.md`, and a smoke-test quality checklist on top of the process below. Agents without skill support should follow this document directly.
 
+The stage before this one – deciding what question the scenario should answer, and gathering the material to answer it – is covered by `.claude/skills/frame-scenario/SKILL.md` and by "Before This Document" below.
+
 This document is process-oriented.  
 For file formats, schema rules, and parsing/validation contract, use:
 
@@ -19,6 +21,24 @@ Scenario quality depends heavily on prompt/rule design and iterative calibration
 - turning source material into structured scenario files
 - enforcing technical completeness and validation
 - accelerating analysis-and-revision loops after test runs
+
+## Before This Document: Question and Material
+
+A scenario is only as good as the question it was built to answer. If you start from a topic rather than a question, settle the question first – it is far cheaper to change here than after every scenario file has been written to fit it.
+
+A research question is ready to build from when it passes all seven of these. Each test yields part of the scenario frame, which is the reason to run them.
+
+1. **Simulable** – could two honest runs of this world end differently? If not, it is a lookup, not a simulation.
+2. **Bounded in time** – what date does the world start at, and when do we stop caring? Gives `start_date` and the horizon.
+3. **Paced** – what is the shortest interval in which something decision-relevant could change? Gives `time_scale` and, with the horizon, `max_turns`.
+4. **Populated** – who can decide something that changes the answer, and which pairs of them want incompatible things? Gives `actors`. If no conflict can be named, the question is about a process, not a system, and will produce smooth consensus narratives.
+5. **Measurable** – what would have to go up or down for the answer to be "yes"? Gives `metrics.md`. A quantity that cannot move within the horizon is background, not a metric.
+6. **Genuinely uncertain** – name two endings you would find credible. If only one, the question is rhetorical.
+7. **Open, not leading** – does it survive rewriting as "under what conditions does X happen, and how often?" Questions phrased to presume their mechanism produce scenarios that confirm themselves.
+
+Two further outputs fall out of the same work: the turning points the question hinges on become candidate entries in `events.md` with probabilities rather than scripted certainties, and whatever the question takes for granted becomes `background/context.md` and the out-of-scope list.
+
+Research against the approved question rather than the topic. When gathering, keep visible where each claim came from – user-supplied material, a retrieved source with its retrieval date, model knowledge, or an assumption made to fill a gap. Specific figures, dates, names, and institutional facts asserted from model knowledge alone are the material most likely to be confidently wrong, and should be marked as such so the drafting step can treat them as assumptions rather than facts. Record disagreements between sources instead of resolving them: a contested quantity is usually a sign that it belongs in a metric or an event.
 
 ## Setup
 
@@ -37,12 +57,14 @@ Before drafting or editing technical scenario files, the agent must run an expli
 The agent must not start drafting scenario content until one of the following is true:
 
 - the user has answered the core interview topics, or
-- the user explicitly approves that the agent proceeds with documented assumptions.
+- the user explicitly approves that the agent proceeds with documented assumptions, or
+- an approved `research-question.md` already records the question and frame, in which case those decisions are settled and re-asking them only invites drift.
 
 If information is missing, the agent should ask concise follow-up questions first, then summarize assumptions and ask for confirmation before drafting.
 
 ## End-to-End Process
 
+0. Settle the research question and gather material against it (see "Before This Document"). Record the approved question and the frame it implies in `scenarios/<your-scenario>/research-question.md`.
 1. Create the scenario folder and optionally add `source-material/`.
 2. Start the AI agent in the repository root.
 3. Ask the agent to build a scenario in the target folder.

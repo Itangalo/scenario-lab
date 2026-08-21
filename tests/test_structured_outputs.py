@@ -38,12 +38,27 @@ EVENTS_PAYLOAD = [{"id": "ai_breakthrough", "probability": 1.0}]
 
 
 class _MockHTTPResponse:
+    """Streaming-capable stand-in; the provider reads the body incrementally
+    so it can enforce a wall-clock deadline per call."""
+
     def __init__(self, json_data, status_code=200):
         self.json_data = json_data
         self.status_code = status_code
 
     def json(self):
         return self.json_data
+
+    def read(self):
+        return json.dumps(self.json_data).encode("utf-8")
+
+    def iter_bytes(self):
+        yield json.dumps(self.json_data).encode("utf-8")
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *exc_info):
+        return False
 
     def raise_for_status(self):
         if self.status_code >= 400:
@@ -60,7 +75,7 @@ class TestOpenRouterStructured:
         provider = OpenRouterProvider(api_key="key")
         schema = events_array_schema()
         with patch.object(
-            provider._client, "post", return_value=_openrouter_success("[]")
+            provider._client, "stream", return_value=_openrouter_success("[]")
         ) as mock_post:
             provider.complete_structured(
                 "sys", "usr",
@@ -86,7 +101,7 @@ class TestOpenRouterStructured:
         provider = OpenRouterProvider(api_key="key")
         content = json.dumps(EVENTS_PAYLOAD)
         with patch.object(
-            provider._client, "post", return_value=_openrouter_success(content)
+            provider._client, "stream", return_value=_openrouter_success(content)
         ):
             resp = provider.complete_structured(
                 "sys", "usr",
@@ -101,7 +116,7 @@ class TestOpenRouterStructured:
         """A 4xx rejection surfaces as LLMUnsupportedStructuredError."""
         provider = OpenRouterProvider(api_key="key")
         with patch.object(
-            provider._client, "post", return_value=_MockHTTPResponse({}, status_code=400)
+            provider._client, "stream", return_value=_MockHTTPResponse({}, status_code=400)
         ):
             with pytest.raises(LLMUnsupportedStructuredError):
                 provider.complete_structured(
@@ -114,7 +129,7 @@ class TestOpenRouterStructured:
         """Rate limits keep their type so the router can retry."""
         provider = OpenRouterProvider(api_key="key")
         with patch.object(
-            provider._client, "post", return_value=_MockHTTPResponse({}, status_code=429)
+            provider._client, "stream", return_value=_MockHTTPResponse({}, status_code=429)
         ):
             with pytest.raises(LLMRateLimitError):
                 provider.complete_structured(
@@ -127,7 +142,7 @@ class TestOpenRouterStructured:
         """Server errors stay generic LLMError (not unsupported)."""
         provider = OpenRouterProvider(api_key="key")
         with patch.object(
-            provider._client, "post", return_value=_MockHTTPResponse({}, status_code=503)
+            provider._client, "stream", return_value=_MockHTTPResponse({}, status_code=503)
         ):
             with pytest.raises(LLMError) as exc_info:
                 provider.complete_structured(
@@ -141,7 +156,7 @@ class TestOpenRouterStructured:
         """A model that ignores the schema contract is treated as unsupported."""
         provider = OpenRouterProvider(api_key="key")
         with patch.object(
-            provider._client, "post", return_value=_openrouter_success("not json")
+            provider._client, "stream", return_value=_openrouter_success("not json")
         ):
             with pytest.raises(LLMUnsupportedStructuredError):
                 provider.complete_structured(

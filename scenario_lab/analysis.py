@@ -147,7 +147,7 @@ def generate_run_analysis(
         cfg_routes = llm_config.analysis
         routes = cfg_routes if isinstance(cfg_routes, list) else [cfg_routes]
 
-    registry = ProviderRegistry()
+    registry = ProviderRegistry(call_timeout_seconds=llm_config.call_timeout_seconds)
     router = FallbackRouter(
         routes=routes,
         registry=registry,

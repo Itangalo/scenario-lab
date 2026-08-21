@@ -280,11 +280,43 @@ def eval_probability_formula(formula: str, context: dict) -> float:
     return float(result)
 
 
-def is_valid_model_string(model: str) -> bool:
-    """Check if model string follows expected format.
+def is_valid_model_route(value: object) -> bool:
+    """Check a configured model entry, which is a ModelRoute after loading.
 
-    Expected format: provider/model-name
-    Examples: google/gemini-3-flash-preview, x-ai/grok-4.1-fast
+    Config values are parsed into ``ModelRoute(provider, model)`` before
+    validation runs, so checking them as raw strings does not work. Doing so
+    had two silent consequences: single-model entries matched neither the
+    ``str`` nor the ``list`` branch and were never checked at all, while every
+    fallback list failed with "invalid model in fallback list" regardless of
+    what it contained.
+
+    The ``vendor/model`` shape is an OpenRouter convention, not a universal
+    one: Anthropic model ids such as ``claude-sonnet-4-6`` carry no slash, so
+    the check is applied per provider rather than to every route.
+    """
+    from .models import ModelRoute
+
+    if isinstance(value, ModelRoute):
+        if not value.provider or not value.model:
+            return False
+        if value.provider == "openrouter":
+            return is_valid_model_string(value.model)
+        return True
+    if isinstance(value, str):
+        # A literal that has not been through the loader.
+        provider, sep, remainder = value.partition(":")
+        if sep:
+            if provider == "openrouter":
+                return is_valid_model_string(remainder)
+            return bool(provider and remainder)
+        return is_valid_model_string(value)
+    return False
+
+
+def is_valid_model_string(model: str) -> bool:
+    """Check if a bare model name follows the expected ``vendor/name`` format.
+
+    Examples: google/gemini-3-flash-preview, qwen/qwen3-235b-a22b-2507
     """
     if not isinstance(model, str):
         return False
@@ -505,6 +537,18 @@ def validate_llm_config(scenario: Scenario) -> List[str]:
             "each sample repeats the full events call"
         )
 
+    # Validate the per-call wall-clock deadline
+    timeout = getattr(config, "call_timeout_seconds", 300)
+    if not isinstance(timeout, int) or timeout < 10:
+        errors.append(
+            f"llm.call_timeout_seconds {timeout!r} must be an integer >= 10 seconds"
+        )
+    elif timeout > 3600:
+        errors.append(
+            f"llm.call_timeout_seconds {timeout} is unusually high (maximum 3600); "
+            f"a single call blocking for an hour will stall a whole batch"
+        )
+
     # Validate emergent events policy
     emergent = scenario.config.emergent_events
     if not isinstance(emergent.max_per_turn, int) or emergent.max_per_turn < 1:
@@ -521,7 +565,7 @@ def validate_llm_config(scenario: Scenario) -> List[str]:
         )
 
     # Validate per-task max_tokens overrides
-    valid_tasks = {"events", "actors", "rules", "metrics", "summary", "analysis", "referee"}
+    valid_tasks = {"events", "actors", "rules", "metrics", "summary", "analysis", "synthesis", "referee"}
     for task, value in config.max_tokens_by_task.items():
         if task not in valid_tasks:
             errors.append(f"max_tokens_by_task has invalid task '{task}'")
@@ -540,33 +584,136 @@ def validate_llm_config(scenario: Scenario) -> List[str]:
     for task in task_fields:
         model_value = getattr(config, task)
 
-        if isinstance(model_value, str):
-            if not is_valid_model_string(model_value):
-                errors.append(f"Task '{task}' has invalid model string: '{model_value}'")
-        elif isinstance(model_value, list):
+        if isinstance(model_value, list):
             for m in model_value:
-                if not is_valid_model_string(m):
+                if not is_valid_model_route(m):
                     errors.append(f"Task '{task}' has invalid model in fallback list: '{m}'")
+        elif not is_valid_model_route(model_value):
+            errors.append(f"Task '{task}' has invalid model string: '{model_value}'")
 
-    # Validate actors field (can be str, list, or dict)
-    if isinstance(config.actors, str):
-        if not is_valid_model_string(config.actors):
-            errors.append(f"Actors model has invalid string: '{config.actors}'")
-    elif isinstance(config.actors, list):
+    # Validate actors field (can be a route, a fallback list, or a per-actor dict)
+    if isinstance(config.actors, list):
         for m in config.actors:
-            if not is_valid_model_string(m):
+            if not is_valid_model_route(m):
                 errors.append(f"Actors model has invalid model in fallback list: '{m}'")
     elif isinstance(config.actors, dict):
         for actor_id, model_value in config.actors.items():
-            if isinstance(model_value, str):
-                if not is_valid_model_string(model_value):
-                    errors.append(f"Actor '{actor_id}' has invalid model string: '{model_value}'")
-            elif isinstance(model_value, list):
+            if isinstance(model_value, list):
                 for m in model_value:
-                    if not is_valid_model_string(m):
+                    if not is_valid_model_route(m):
                         errors.append(f"Actor '{actor_id}' has invalid model in fallback list: '{m}'")
 
     return errors
+
+
+def validate_prompt_overrides(scenario: Scenario) -> Tuple[List[str], List[str]]:
+    """Validate scenario prompt overrides against the render context they get.
+
+    Prompt overrides are Jinja templates, and Jinja renders an undefined
+    variable as an empty string rather than raising. A typo, or a variable the
+    prompt type does not receive, therefore produces a silently degraded prompt
+    that still looks fine in the file. This check surfaces those before a run.
+
+    Returns:
+        (errors, warnings) – syntax problems are errors, unknown variables are
+        warnings, since a template may legitimately define its own via ``set``.
+    """
+    from jinja2 import TemplateSyntaxError, meta
+    from jinja2.sandbox import SandboxedEnvironment
+
+    from .prompts import PromptBuilder
+
+    errors: List[str] = []
+    warnings: List[str] = []
+
+    if not scenario.custom_system_prompts and not scenario.custom_user_prompts:
+        return errors, warnings
+
+    env = SandboxedEnvironment()
+    builder = PromptBuilder(scenario)
+
+    # The union of names any actor could see, so an actor-branching prompt
+    # validates against the same vocabulary the renderer will supply.
+    known: Set[str] = set(builder._get_system_prompt_context(None))
+    for actor_id in scenario.actors:
+        known |= set(builder._get_system_prompt_context(actor_id))
+
+    for name, source in sorted(scenario.custom_system_prompts.items()):
+        try:
+            parsed = env.parse(source)
+        except TemplateSyntaxError as exc:
+            errors.append(f"system-prompts/{name}.md has invalid Jinja syntax: {exc}")
+            continue
+
+        unknown = sorted(meta.find_undeclared_variables(parsed) - known)
+        if unknown:
+            warnings.append(
+                f"system-prompts/{name}.md references undefined variable(s) "
+                f"{', '.join(unknown)}; Jinja renders these as empty text"
+            )
+
+    for name, source in sorted(scenario.custom_user_prompts.items()):
+        try:
+            env.parse(source)
+        except TemplateSyntaxError as exc:
+            errors.append(f"user-prompts/{name}.md has invalid Jinja syntax: {exc}")
+
+    return errors, warnings
+
+
+def validate_research_questions(scenario: Scenario) -> Tuple[List[str], List[str]]:
+    """Validate declared research questions against what the scenario measures.
+
+    The point of this check is to catch a question the scenario cannot answer
+    before runs are spent on it: a question hinging on a metric that does not
+    exist, or on an event that was never defined, will produce a confident but
+    ungrounded answer during synthesis.
+
+    Returns:
+        (errors, warnings)
+    """
+    errors: List[str] = []
+    warnings: List[str] = []
+
+    questions = scenario.config.research_questions
+    if not questions:
+        return errors, warnings
+
+    valid_metrics = set(scenario.metrics.metrics.keys())
+    valid_events = {event.id for event in scenario.events if event.id}
+
+    seen_ids: Set[str] = set()
+    for rq in questions:
+        if not rq.id:
+            errors.append("Research question found without an id")
+            continue
+        if rq.id in seen_ids:
+            errors.append(f"Duplicate research question id: '{rq.id}'")
+        seen_ids.add(rq.id)
+
+        if not rq.question.strip():
+            errors.append(f"Research question '{rq.id}' has no question text")
+
+        for metric_id in rq.metrics:
+            if metric_id not in valid_metrics:
+                errors.append(
+                    f"Research question '{rq.id}' references unknown metric "
+                    f"'{metric_id}' (defined metrics: {', '.join(sorted(valid_metrics)) or 'none'})"
+                )
+
+        for event_id in rq.events:
+            if event_id not in valid_events:
+                errors.append(
+                    f"Research question '{rq.id}' references unknown event '{event_id}'"
+                )
+
+        if not rq.metrics and not rq.events:
+            warnings.append(
+                f"Research question '{rq.id}' names no metrics or events; "
+                f"synthesis can only answer it qualitatively"
+            )
+
+    return errors, warnings
 
 
 def validate_actor_references(scenario: Scenario) -> List[str]:
@@ -721,5 +868,11 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
     warnings.extend(collect_model_hygiene_warnings(scenario.config.llm, scope=scenario_path.name))
     errors.extend(validate_actor_references(scenario))
     errors.extend(validate_time_config(scenario))
+    rq_errors, rq_warnings = validate_research_questions(scenario)
+    errors.extend(rq_errors)
+    warnings.extend(rq_warnings)
+    prompt_errors, prompt_warnings = validate_prompt_overrides(scenario)
+    errors.extend(prompt_errors)
+    warnings.extend(prompt_warnings)
 
     return ValidationResult(errors, warnings)

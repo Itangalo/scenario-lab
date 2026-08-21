@@ -38,6 +38,7 @@ class PromptBuilder:
             "metrics_system": (system_dir / "metrics-update.md").read_text(encoding="utf-8"),
             "summarize": (system_dir / "summarize.md").read_text(encoding="utf-8"),
             "analysis_system": (system_dir / "analysis.md").read_text(encoding="utf-8"),
+            "synthesis_system": (system_dir / "synthesis.md").read_text(encoding="utf-8"),
             "format_fix_system": (system_dir / "format-fix.md").read_text(encoding="utf-8"),
             "constitutional_referee_system": (system_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
             "constitutional_referee_correction_system": (system_dir / "constitutional-referee-correction.md").read_text(encoding="utf-8"),
@@ -50,6 +51,7 @@ class PromptBuilder:
             "metrics_update": (user_dir / "metrics-update.md").read_text(encoding="utf-8"),
             "summarize": (user_dir / "summarize.md").read_text(encoding="utf-8"),
             "analysis": (user_dir / "analysis.md").read_text(encoding="utf-8"),
+            "synthesis": (user_dir / "synthesis.md").read_text(encoding="utf-8"),
             "format_fix_events": (user_dir / "format-fix-events.md").read_text(encoding="utf-8"),
             "format_fix_metrics": (user_dir / "format-fix-metrics.md").read_text(encoding="utf-8"),
             "constitutional_referee": (user_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
@@ -64,7 +66,16 @@ class PromptBuilder:
             actor_id: Optional actor ID for actor-specific prompts
 
         Returns:
-            System prompt with placeholders replaced if custom
+            Rendered system prompt.
+
+        System prompts are rendered with the same sandboxed Jinja environment
+        as user prompts. Before this, they went through a plain string replace
+        that handled only a handful of space-free placeholders, so a scenario
+        override written as a Jinja template (conditionals, spaced
+        placeholders) reached the model as raw template source with every
+        branch present at once – silently, since nothing errors on unrendered
+        markup. The constitutional-referee prompts were already Jinja-rendered;
+        this makes the rest consistent.
         """
         # Map prompt type to template key
         template_key_map = {
@@ -73,6 +84,7 @@ class PromptBuilder:
             "metric_rules": "rules_system",
             "metrics_update": "metrics_system",
             "analysis": "analysis_system",
+            "synthesis": "synthesis_system",
             "format_fix": "format_fix_system",
         }
         template_key = template_key_map.get(prompt_type, f"{prompt_type}_system")
@@ -81,19 +93,79 @@ class PromptBuilder:
         if prompt_type == "actor" and actor_id:
             actor_specific_key = f"actor_{actor_id}"
             if actor_specific_key in self.scenario.custom_system_prompts:
-                # Use actor-specific custom prompt and replace placeholders
                 prompt = self.scenario.custom_system_prompts[actor_specific_key]
-                return self._replace_placeholders(prompt, actor_id)
+                return self._render_system_prompt(prompt, actor_id)
 
         # Check if scenario has generic custom prompt for this type
         custom_key = prompt_type.replace("-", "_")
         if custom_key in self.scenario.custom_system_prompts:
-            # Use custom prompt and replace placeholders
             prompt = self.scenario.custom_system_prompts[custom_key]
-            return self._replace_placeholders(prompt, actor_id)
+            return self._render_system_prompt(prompt, actor_id)
 
         # Fall back to template
-        return self._replace_placeholders(self.system_templates[template_key], actor_id)
+        return self._render_system_prompt(self.system_templates[template_key], actor_id)
+
+    def _render_system_prompt(self, prompt: str, actor_id: Optional[str] = None) -> str:
+        """Render a system prompt template with the sandboxed Jinja environment.
+
+        SECURITY: uses the same sandboxed environment as custom user prompts,
+        since scenario-supplied system prompts are equally untrusted input.
+        """
+        template = self.jinja_env.from_string(prompt)
+        return template.render(**self._get_system_prompt_context(actor_id))
+
+    def _get_system_prompt_context(self, actor_id: Optional[str] = None) -> dict[str, Any]:
+        """Build the render context available to system prompt templates.
+
+        Includes the legacy placeholder names so existing prompts written as
+        ``{{actors_list}}`` keep working unchanged, plus ``actor_id`` and one
+        ``metric_<id>`` per metric so actor prompts can branch on who they are
+        and reference live metric values – which is what scenario authors were
+        already writing before it worked.
+        """
+        context: dict[str, Any] = {
+            "scenario_name": self.scenario.config.name,
+            "scenario_description": self.scenario.config.description,
+            "actors_list": self._format_actors_list(),
+            "metrics_list": self._format_metrics_list(),
+            "constitution": self.scenario.constitution or "",
+            "output_language": self.scenario.config.output_language,
+            "actor_id": actor_id,
+            "actor_name": "",
+            "actor_description": "",
+        }
+
+        if actor_id and actor_id in self.scenario.actors:
+            actor = self.scenario.actors[actor_id]
+            context["actor_name"] = actor.name
+            context["actor_description"] = actor.long_description
+            context["actor_short_description"] = actor.short_description
+
+        # Individual metric values as {{metric_<id>}}, matching user prompts.
+        for m_id, metric in self.scenario.metrics.metrics.items():
+            context[f"metric_{m_id.replace('-', '_')}"] = metric.value
+
+        return context
+
+    def _format_actors_list(self) -> str:
+        """Render the actor roster used by several system prompts."""
+        return "\n".join(
+            f"* {actor.name}: {actor.short_description}"
+            for actor in self.scenario.actors.values()
+        )
+
+    def _format_metrics_list(self) -> str:
+        """Render the metric catalog used by several system prompts."""
+        lines: list[str] = []
+        for metric_id, metric in self.scenario.metrics.metrics.items():
+            lines.append(f"* {metric_id}")
+            lines.append(f"  * Description: {metric.description}")
+            lines.append(f"  * Range: {metric.min_value} to {metric.max_value} {metric.unit}")
+            if metric.reference_points:
+                lines.append("  * Reference points:")
+                for value, desc in sorted(metric.reference_points.items()):
+                    lines.append(f"    - {value}: {desc}")
+        return "\n".join(lines)
 
     def _get_user_template(self, prompt_type: str) -> Template:
         """Get user prompt template, preferring custom over default.
@@ -116,46 +188,13 @@ class PromptBuilder:
         return self.jinja_env.from_string(self.user_templates[key])
 
     def _replace_placeholders(self, prompt: str, actor_id: Optional[str] = None) -> str:
-        """Replace placeholders in custom system prompts with scenario data.
+        """Deprecated: retained for callers outside the package.
 
-        Args:
-            prompt: Prompt text with placeholders
-            actor_id: Optional actor ID for actor-specific replacements
-
-        Returns:
-            Prompt with placeholders replaced
+        System prompts are now rendered by :meth:`_render_system_prompt`, which
+        handles the same placeholders plus full Jinja syntax.
         """
-        # Build actors list
-        actors_list = []
-        for aid, actor in self.scenario.actors.items():
-            actors_list.append(f"* {actor.name}: {actor.short_description}")
-        actors_text = "\n".join(actors_list)
+        return self._render_system_prompt(prompt, actor_id)
 
-        # Build metrics list
-        metrics_list = []
-        for metric_id, metric in self.scenario.metrics.metrics.items():
-            metrics_list.append(f"* {metric_id}")
-            metrics_list.append(f"  * Description: {metric.description}")
-            metrics_list.append(f"  * Range: {metric.min_value} to {metric.max_value} {metric.unit}")
-            if metric.reference_points:
-                metrics_list.append("  * Reference points:")
-                for value, desc in sorted(metric.reference_points.items()):
-                    metrics_list.append(f"    - {value}: {desc}")
-        metrics_text = "\n".join(metrics_list)
-
-        # Replace placeholders
-        result = prompt.replace("{{scenario_description}}", self.scenario.config.description)
-        result = result.replace("{{actors_list}}", actors_text)
-        result = result.replace("{{metrics_list}}", metrics_text)
-
-        # Actor-specific replacements
-        if actor_id and actor_id in self.scenario.actors:
-            actor = self.scenario.actors[actor_id]
-            result = result.replace("{{actor_name}}", actor.name)
-            result = result.replace("{{actor_description}}", actor.long_description)
-
-        return result
-    
     def _get_common_context(self, turn: int) -> dict[str, Any]:
         """Get context variables common to all prompts."""
         time_period = self._get_time_period(turn)
@@ -394,6 +433,19 @@ class PromptBuilder:
         context = {
             "output_language": self.scenario.config.output_language,
             **analysis_context,
+        }
+
+        user = template.render(**context)
+        return system, user
+
+    def build_synthesis_prompt(self, synthesis_context: dict[str, Any]) -> tuple[str, str]:
+        """Build prompts for cross-run synthesis over an ensemble of runs."""
+        system = self._get_system_prompt("synthesis")
+        template = self._get_user_template("synthesis")
+
+        context = {
+            "output_language": self.scenario.config.output_language,
+            **synthesis_context,
         }
 
         user = template.render(**context)

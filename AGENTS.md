@@ -9,6 +9,8 @@ When helping create a new scenario from scratch, use:
 - [docs/SCENARIO_CREATION_WITH_AGENT.md](docs/SCENARIO_CREATION_WITH_AGENT.md) for process/workflow
 - [docs/SCENARIO_TECHNICAL_REFERENCE.md](docs/SCENARIO_TECHNICAL_REFERENCE.md) for file format and validation contract
 
+Claude Code has two skills covering this pipeline: `frame-scenario` (rough topic to approved research question, then a provenance-tagged information bank) and `create-scenario` (information bank to validated, smoke-tested scenario files). Start with the former when the user has a question, the latter when they already have material.
+
 ## Critical Ground Truth
 
 Before proposing or implementing any change to system behavior, you must read:
@@ -64,6 +66,9 @@ If your change alters intended behavior, verify it against `docs/ARCHITECTURE.md
 
 - **Auditing model choices:**
   `python -m scenario_lab.cli audit-models`
+
+- **Synthesizing a batch of runs into one answer:**
+  `python -m scenario_lab.cli synthesize scenarios/sweden-ai-2030 --dry-run` first (shows how many analysis calls it would make), then without the flag
 
 - **Resuming a run:**
   `python -m scenario_lab.cli resume scenarios/<scenario>/runs/run-YYYYMMDD-HHMMSS`

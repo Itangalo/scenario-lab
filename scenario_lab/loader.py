@@ -19,6 +19,7 @@ from .models import (
     Metrics,
     Event,
     Actor,
+    ResearchQuestion,
     WorldState,
 )
 
@@ -50,8 +51,8 @@ def parse_route(value: object) -> ModelRoute:
     """Parse a single model route from YAML config value.
 
     Accepts:
-    - "provider:model" string, e.g. "openrouter:x-ai/grok-4.1-fast"
-    - {"provider": "openrouter", "model": "x-ai/grok-4.1-fast"} dict
+    - "provider:model" string, e.g. "openrouter:qwen/qwen3-235b-a22b-2507"
+    - {"provider": "openrouter", "model": "qwen/qwen3-235b-a22b-2507"} dict
 
     Raises ValueError for bare strings without a provider prefix.
     """
@@ -105,6 +106,76 @@ def parse_actor_routes(value: object) -> object:
         return result
 
     return parse_routes(value) if isinstance(value, list) else parse_route(value)
+
+
+def _slugify_question(text: str, index: int) -> str:
+    """Derive a stable id for a research question declared as a bare string."""
+    slug = re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
+    slug = "_".join(slug.split("_")[:6])
+    return slug or f"rq_{index + 1}"
+
+
+def parse_research_questions(value: object) -> List[ResearchQuestion]:
+    """Parse the optional ``research_questions`` block from scenario.yaml.
+
+    Accepts either bare strings (id derived from the text) or mappings with
+    ``question`` plus optional ``id``, ``metrics``, ``events``, and ``notes``.
+    Shape problems raise here; semantic problems (unknown metric ids, and so
+    on) are reported by the validator so that `validate` can show them all at
+    once rather than failing on the first.
+    """
+    if value is None:
+        return []
+    if not isinstance(value, list):
+        raise ValueError(
+            f"research_questions must be a list, got {type(value).__name__}"
+        )
+
+    def _as_id_list(raw: object, field_name: str, question_id: str) -> List[str]:
+        if raw is None:
+            return []
+        if isinstance(raw, str):
+            return [raw]
+        if isinstance(raw, list) and all(isinstance(item, str) for item in raw):
+            return list(raw)
+        raise ValueError(
+            f"research_questions['{question_id}'].{field_name} must be a string "
+            f"or a list of strings"
+        )
+
+    questions: List[ResearchQuestion] = []
+    for index, entry in enumerate(value):
+        if isinstance(entry, str):
+            text = entry.strip()
+            if not text:
+                raise ValueError(f"research_questions[{index}] is empty")
+            questions.append(
+                ResearchQuestion(id=_slugify_question(text, index), question=text)
+            )
+            continue
+
+        if not isinstance(entry, dict):
+            raise ValueError(
+                f"research_questions[{index}] must be a string or a mapping, "
+                f"got {type(entry).__name__}"
+            )
+
+        text = str(entry.get("question", "")).strip()
+        if not text:
+            raise ValueError(f"research_questions[{index}] has no 'question' text")
+
+        question_id = str(entry.get("id") or _slugify_question(text, index)).strip()
+        questions.append(
+            ResearchQuestion(
+                id=question_id,
+                question=text,
+                metrics=_as_id_list(entry.get("metrics"), "metrics", question_id),
+                events=_as_id_list(entry.get("events"), "events", question_id),
+                notes=str(entry.get("notes", "")).strip(),
+            )
+        )
+
+    return questions
 
 
 def load_scenario(path: Union[Path, str]) -> Scenario:
@@ -366,6 +437,16 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                 "max_turns": base_config.max_turns,
                 "actors": base_config.actor_ids,
                 "output_language": base_config.output_language,
+                "research_questions": [
+                    {
+                        "id": rq.id,
+                        "question": rq.question,
+                        "metrics": list(rq.metrics),
+                        "events": list(rq.events),
+                        "notes": rq.notes,
+                    }
+                    for rq in base_config.research_questions
+                ],
                 "llm": {
                     "events": _routes_to_yaml(base_config.llm.events),
                     "actors": _routes_to_yaml(base_config.llm.actors),
@@ -379,6 +460,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "max_tokens_by_task": base_config.llm.max_tokens_by_task,
                     "structured_outputs": base_config.llm.structured_outputs,
                     "probability_samples": base_config.llm.probability_samples,
+                    "call_timeout_seconds": base_config.llm.call_timeout_seconds,
                 },
                 "emergent_events": {
                     "enabled": base_config.emergent_events.enabled,
@@ -405,7 +487,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
     llm_data = data.get("llm", {})
 
     _default_main = "openrouter:google/gemini-3-flash-preview"
-    _default_cheap = "openrouter:x-ai/grok-4.1-fast"
+    _default_cheap = "openrouter:qwen/qwen3-235b-a22b-2507"
 
     # structured_outputs: accept YAML strings or native booleans, normalize to
     # the canonical "auto" | "true" | "false" strings the model validates.
@@ -416,6 +498,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
 
     _structured = _normalize_structured(llm_data.get("structured_outputs", "auto"))
     _probability_samples = llm_data.get("probability_samples", 1)
+    _call_timeout = llm_data.get("call_timeout_seconds", 300)
 
     # Support both old format (single model) and new format (per-task models)
     if "model" in llm_data and not any(k in llm_data for k in ["events", "actors", "rules", "metrics"]):
@@ -434,6 +517,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
             structured_outputs=_structured,
             probability_samples=_probability_samples,
+            call_timeout_seconds=_call_timeout,
         )
     else:
         # New format: per-task models
@@ -452,6 +536,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             max_tokens_by_task=llm_data.get("max_tokens_by_task", {}),
             structured_outputs=_structured,
             probability_samples=_probability_samples,
+            call_timeout_seconds=_call_timeout,
         )
 
     emergent_events_data = data.get("emergent_events", {})
@@ -486,6 +571,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         max_turns=data["max_turns"],
         actor_ids=data["actors"],
         output_language=data.get("output_language"),
+        research_questions=parse_research_questions(data.get("research_questions")),
         llm=llm_config,
         emergent_events=emergent_events,
         rule_evolution=rule_evolution,

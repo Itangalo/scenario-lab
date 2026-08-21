@@ -127,17 +127,17 @@ def test_run_model_preflight_checks_applies_recommendations(capsys):
     scenario.config.llm = LLMConfig(
         events=ModelRoute("openrouter", "google/gemini-3-flash-preview"),
         actors=ModelRoute("openrouter", "google/gemini-3-flash-preview"),
-        rules=ModelRoute("openrouter", "x-ai/grok-4.1-fast"),
-        metrics=ModelRoute("openrouter", "x-ai/grok-4.1-fast"),
-        summary=ModelRoute("openrouter", "x-ai/grok-4.1-fast"),
-        referee=ModelRoute("openrouter", "x-ai/grok-4.1-fast"),
+        rules=ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507"),
+        metrics=ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507"),
+        summary=ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507"),
+        referee=ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507"),
     )
 
     recommendations = [
         ModelRecommendation(
             task="events",
             current_model="google/gemini-3-flash-preview",
-            suggested_model="x-ai/grok-4.1-fast",
+            suggested_model="qwen/qwen3-235b-a22b-2507",
             reason="stable model",
         )
     ]
@@ -869,12 +869,12 @@ def test_cli_audit_models_reports_project_warnings(tmp_path, capsys):
                 "max_turns: 3",
                 "actors: ['government']",
                 "llm:",
-                "  events: openrouter:x-ai/grok-4.1-fast",
+                "  events: openrouter:qwen/qwen3-235b-a22b-2507",
                 "  actors: openrouter:openai/gpt-3.5-turbo-2024-01-15",
-                "  rules: openrouter:x-ai/grok-4.1-fast",
-                "  metrics: openrouter:x-ai/grok-4.1-fast",
-                "  summary: openrouter:x-ai/grok-4.1-fast",
-                "  referee: openrouter:x-ai/grok-4.1-fast",
+                "  rules: openrouter:qwen/qwen3-235b-a22b-2507",
+                "  metrics: openrouter:qwen/qwen3-235b-a22b-2507",
+                "  summary: openrouter:qwen/qwen3-235b-a22b-2507",
+                "  referee: openrouter:qwen/qwen3-235b-a22b-2507",
             ]
         ),
         encoding="utf-8",

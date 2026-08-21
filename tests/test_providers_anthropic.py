@@ -288,8 +288,8 @@ class TestGetPricingFor:
             lambda: fake_cache,
         )
 
-        result = get_pricing_for(ModelRoute("openrouter", "x-ai/grok-4.1-fast"))
-        fake_cache.get_model_pricing.assert_called_once_with("x-ai/grok-4.1-fast")
+        result = get_pricing_for(ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507"))
+        fake_cache.get_model_pricing.assert_called_once_with("qwen/qwen3-235b-a22b-2507")
         assert result == {"prompt": 0.5, "completion": 1.5}
 
 

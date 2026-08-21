@@ -94,7 +94,7 @@ max_turns: 5
 actors:
   - actor-a
 llm:
-  model: "openrouter:x-ai/grok-4.1-fast"
+  model: "openrouter:qwen/qwen3-235b-a22b-2507"
   probability_samples: 3
 emergent_events:
   enabled: true

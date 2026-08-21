@@ -57,7 +57,7 @@ Then add your API key(s) to `.env`. At least one of the following is required:
 - `OPENROUTER_API_KEY` – for OpenRouter (access to most models)
 - `ANTHROPIC_API_KEY` – for direct Anthropic API access (claude-opus-4-8, claude-sonnet-4-6, etc.)
 
-Models are specified in `scenario.yaml` as `provider:model`, for example `openrouter:x-ai/grok-4.1-fast` or `anthropic:claude-sonnet-4-6`.
+Models are specified in `scenario.yaml` as `provider:model`, for example `openrouter:qwen/qwen3-235b-a22b-2507` or `anthropic:claude-sonnet-4-6`.
 
 The events step can use provider-native structured outputs via `llm.structured_outputs` in `scenario.yaml` (`auto` | `true` | `false`, default `auto`). With `auto`, models that support structured output return schema-validated event JSON directly; unsupported models fall back automatically to the regular JSON parsing path. Use `true` to require structured output (hard error if unsupported) or `false` to disable it.
 
@@ -276,6 +276,34 @@ python -m scenario_lab.cli ensemble scenarios/sweden-ai-2030 --output report.md
 
 `ensemble` analyzes all completed runs for a scenario and produces a markdown report covering: run overview (N, status, cost), per-metric trajectories (mean, min, max, p10/p50/p90 per turn), event occurrence rates and mean evaluated probabilities (when available), divergence detection (which turns show the largest spread increase and which events are associated), narrative diversity (how lexically similar the final storylines are – metric spread can hide storyline monoculture), and automatic caveats about small N or mixed model configs. No API calls.
 
+### Synthesize many runs into one answer
+
+```bash
+python -m scenario_lab.cli synthesize scenarios/sweden-ai-2030 --dry-run
+python -m scenario_lab.cli synthesize scenarios/sweden-ai-2030
+python -m scenario_lab.cli synthesize scenarios/sweden-ai-2030 --max-runs 20
+python -m scenario_lab.cli synthesize scenarios/sweden-ai-2030 --json --output synthesis.json
+```
+
+`ensemble` tells you how often things happened; `analyze` tells you what happened in one run. `synthesize` joins them. It ensures every completed run has a structured `analysis.json` (generating the missing ones in parallel, reusing the rest), then makes a single LLM call that reads all of those readings against the ensemble statistics. The report covers outcome patterns with run counts and example runs, recurring turning points, actor dynamics, one-off surprises, and caveats about which apparent findings may be artifacts of the scenario design rather than facts about the world. It is saved as `synthesis.md` in the scenario directory.
+
+Where the scenario declares `research_questions` (see below), the report answers each of them explicitly – with a frequency, the conditions the answer depends on, and the runs that evidence it – before reporting anything undeclared.
+
+Cost scales with how many runs still need analyzing, so start with `--dry-run`: it lists exactly which runs would need a new analysis and makes no API calls. Per-run analyses are cached in each run directory, so a second `synthesize` over the same runs costs one call. Use `--refresh-analyses` to rebuild them, `--analysis-model` to analyze with a cheaper model than the synthesis itself, and `--max-concurrency` to control parallelism.
+
+### Declare what a scenario is meant to answer
+
+```yaml
+# in scenario.yaml
+research_questions:
+  - id: rq_regulator_timing
+    question: "Under what conditions does the regulator act before an incident rather than after?"
+    metrics: [regulatory_pressure, public_trust]
+    events: [major_incident]
+```
+
+A scenario records what the world is; `research_questions` records what you wanted to learn from it. `validate` checks that every metric and event named actually exists, which catches a question the scenario cannot answer before you spend runs on it, and `describe` shows the questions alongside the rest of the scenario. Bare strings work too when a question has no obvious quantitative anchor, though `synthesize` can then only answer it qualitatively.
+
 ### Estimate an event's causal impact
 
 ```bash
@@ -378,7 +406,11 @@ At a high level:
 
 The recommended workflow is to build new scenarios together with a terminal-based AI coding agent (for example Claude Code, OpenAI Codex, or Gemini CLI), then iterate based on test runs.
 
-For Claude Code, the repository ships an executable pipeline for this: the `create-scenario` skill (`.claude/skills/create-scenario/`). Ask Claude Code to "create a scenario from …" and it runs a phased workflow – ingest source material, ask you only the questions it cannot answer itself, draft all files, then `validate` + `describe` + a short smoke run with a quality checklist. Assumptions it makes on your behalf are logged in the scenario's `design-notes.md`.
+For Claude Code, the repository ships an executable pipeline for this, in two skills.
+
+`frame-scenario` (`.claude/skills/frame-scenario/`) is the front end, for when you have a question rather than a folder of documents. Tell Claude Code what you want to explore and it proposes candidate research questions, tests each against seven criteria – simulable, bounded in time, paced, populated with conflicting actors, measurable, genuinely uncertain, and open rather than leading – and iterates with you until you approve one. The criteria are diagnostic rather than decorative: their answers are the time scale, actor set, and candidate metrics. It then researches against the approved question and writes an information bank to `source-material/`, tagging each claim by whether it came from you, a source, model knowledge, or an assumption, with an `INDEX.md` recording what each file does not cover.
+
+`create-scenario` (`.claude/skills/create-scenario/`) takes it from there. Ask Claude Code to "create a scenario from …" and it runs a phased workflow – ingest source material, ask you only the questions it cannot answer itself, draft all files, then `validate` + `describe` + a short smoke run with a quality checklist. Assumptions it makes on your behalf are logged in the scenario's `design-notes.md`. When a `research-question.md` from `frame-scenario` is present it drafts to that frame instead of re-interviewing you.
 
 Use the docs as separate sources of truth:
 
@@ -388,10 +420,12 @@ Use the docs as separate sources of truth:
 
 In short:
 
-1. Create a scenario directory (optionally with `source-material/` for background input).
-2. Ask the agent to build the scenario in that directory.
-3. Let the agent interview you for missing requirements, draft files, and run validation.
-4. Run short simulations, review outcomes, and iterate.
+1. Settle what you actually want to know, as a question a simulation can answer.
+2. Gather the material needed to describe that world at its starting point.
+3. Create a scenario directory (optionally with `source-material/` for background input).
+4. Ask the agent to build the scenario in that directory.
+5. Let the agent interview you for missing requirements, draft files, and run validation.
+6. Run short simulations, review outcomes, and iterate.
 
 ## Included Example Scenario
 

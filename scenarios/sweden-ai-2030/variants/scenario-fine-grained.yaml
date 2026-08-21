@@ -15,17 +15,17 @@ actors:
 
 llm:
   # Fast/cheap model for event evaluation
-  events: "openrouter:x-ai/grok-4.1-fast"
+  events: "openrouter:qwen/qwen3-235b-a22b-2507"
 
   # Per-actor model selection
   actors:
-    government: "openrouter:x-ai/grok-4.1-fast"
-    labor-unions: "openrouter:x-ai/grok-4.1-fast"
-    media: "openrouter:x-ai/grok-4.1-fast"
-    business-sector: "openrouter:x-ai/grok-4.1-fast"
+    government: "openrouter:qwen/qwen3-235b-a22b-2507"
+    labor-unions: "openrouter:qwen/qwen3-235b-a22b-2507"
+    media: "openrouter:qwen/qwen3-235b-a22b-2507"
+    business-sector: "openrouter:qwen/qwen3-235b-a22b-2507"
 
   # Rules can use cheaper model
-  rules: "openrouter:x-ai/grok-4.1-fast"
+  rules: "openrouter:qwen/qwen3-235b-a22b-2507"
 
   # Metrics and narrative benefits from better model
   metrics: "openrouter:google/gemini-3-flash-preview"

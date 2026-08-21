@@ -104,6 +104,25 @@ class Actor:
 
 
 @dataclass
+class ResearchQuestion:
+    """A question the scenario exists to answer.
+
+    Declared in ``scenario.yaml`` so that cross-run synthesis has something
+    specific to answer instead of producing generic summaries. ``metrics`` and
+    ``events`` name the parts of the scenario that bear on the question; they
+    are validated against the scenario's actual metrics and events, which is
+    what catches a question the scenario cannot answer before runs are spent
+    on it.
+    """
+
+    id: str
+    question: str
+    metrics: list[str] = field(default_factory=list)
+    events: list[str] = field(default_factory=list)
+    notes: str = ""
+
+
+@dataclass
 class WorldState:
     """The narrative state of the world."""
 
@@ -132,7 +151,7 @@ class LLMConfig:
     """LLM configuration with per-task model selection and fallback lists.
 
     Each model field supports:
-    - Single ModelRoute: ModelRoute("openrouter", "x-ai/grok-4.1-fast")
+    - Single ModelRoute: ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507")
     - Fallback list: [ModelRoute(...), ModelRoute(...)]
     - Dict for actors: {"actor1": ModelRoute(...), "actor2": [ModelRoute(...), ...]}
     """
@@ -151,13 +170,13 @@ class LLMConfig:
         default_factory=lambda: ModelRoute("openrouter", "google/gemini-3-flash-preview")
     )
     summary: Union[ModelRoute, List[ModelRoute]] = field(
-        default_factory=lambda: ModelRoute("openrouter", "x-ai/grok-4.1-fast")
+        default_factory=lambda: ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507")
     )
     analysis: Union[ModelRoute, List[ModelRoute]] = field(
-        default_factory=lambda: ModelRoute("openrouter", "x-ai/grok-4.1-fast")
+        default_factory=lambda: ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507")
     )
     referee: Union[ModelRoute, List[ModelRoute]] = field(
-        default_factory=lambda: ModelRoute("openrouter", "x-ai/grok-4.1-fast")
+        default_factory=lambda: ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507")
     )
 
     # Global settings
@@ -171,6 +190,11 @@ class LLMConfig:
     #   "true"  – structured required; hard error if the model doesn't support it.
     #   "false" – legacy parse path only (never attempt structured output).
     structured_outputs: str = "auto"
+
+    # Wall-clock deadline for a single LLM call, in seconds. Bounds the whole
+    # request rather than each read, so a provider that trickles bytes cannot
+    # block a run indefinitely.
+    call_timeout_seconds: int = 300
 
     # How many times the events step elicits the candidate-event list per turn.
     # With N > 1, per-event probabilities are aggregated (mean, absent-as-zero)
@@ -188,6 +212,11 @@ class LLMConfig:
             raise ValueError(
                 f"llm.probability_samples must be an integer >= 1, "
                 f"got {self.probability_samples!r}"
+            )
+        if not isinstance(self.call_timeout_seconds, int) or self.call_timeout_seconds < 1:
+            raise ValueError(
+                f"llm.call_timeout_seconds must be an integer >= 1, "
+                f"got {self.call_timeout_seconds!r}"
             )
 
     def get_actor_routes(self, actor_id: str) -> Union[ModelRoute, List[ModelRoute]]:
@@ -289,6 +318,9 @@ class ScenarioConfig:
     max_turns: int
     actor_ids: list[str]
     output_language: Optional[str] = None
+
+    # Questions the scenario exists to answer; consumed by cross-run synthesis.
+    research_questions: list[ResearchQuestion] = field(default_factory=list)
 
     # LLM settings
     llm: LLMConfig = None

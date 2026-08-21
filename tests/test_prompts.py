@@ -106,3 +106,111 @@ def test_rules_prompt_includes_rule_evolution_policy(mock_scenario):
     assert "No material rule changes" in system_prompt
     assert "Substantive rule changes are not allowed before turn 3" in user_prompt
     assert "Maximum substantive rule changes this turn: 1" in user_prompt
+
+
+# ---------------------------------------------------------------------------
+# Regression: system prompt overrides are Jinja-rendered
+#
+# Scenario system prompts used to go through a plain string replace handling
+# only a few space-free placeholders. A scenario override written as a Jinja
+# template reached the model as raw source with every branch present at once,
+# so an actor prompt that branched on actor_id made every actor play the first
+# branch. Caught in ai-safety-race, where both the US and China played the US.
+# ---------------------------------------------------------------------------
+
+def test_system_prompt_override_renders_jinja_conditionals(mock_scenario):
+    """Each actor must see only its own branch of a conditional override."""
+    mock_scenario.custom_system_prompts["actor"] = (
+        "You are {{ actor_name }}.\n"
+        "{% if actor_id == 'actor1' %}\n"
+        "SECRET_ONE: you believe the threshold is high.\n"
+        "{% elif actor_id == 'actor2' %}\n"
+        "SECRET_TWO: you believe the threshold is low.\n"
+        "{% endif %}\n"
+    )
+    builder = PromptBuilder(mock_scenario)
+
+    first = builder._get_system_prompt("actor", "actor1")
+    second = builder._get_system_prompt("actor", "actor2")
+
+    assert "SECRET_ONE" in first and "SECRET_TWO" not in first
+    assert "SECRET_TWO" in second and "SECRET_ONE" not in second
+    assert "Test Actor 1" in first and "Test Actor 2" in second
+    for prompt in (first, second):
+        assert "{%" not in prompt
+        assert "{{" not in prompt
+
+
+def test_system_prompt_override_renders_spaced_placeholders(mock_scenario):
+    """Placeholders written with surrounding spaces must resolve."""
+    mock_scenario.custom_system_prompts["actor"] = (
+        "Name: {{ actor_name }} / {{actor_name}}\nMetric: {{ metric_test_metric }}\n"
+    )
+    builder = PromptBuilder(mock_scenario)
+
+    prompt = builder._get_system_prompt("actor", "actor1")
+
+    assert prompt.count("Test Actor 1") == 2
+    assert "50" in prompt
+    assert "{{" not in prompt
+
+
+def test_legacy_space_free_placeholders_still_work(mock_scenario):
+    """Existing overrides using {{actors_list}} must keep working unchanged."""
+    mock_scenario.custom_system_prompts["events"] = (
+        "Scenario: {{scenario_description}}\nActors:\n{{actors_list}}\nMetrics:\n{{metrics_list}}\n"
+    )
+    builder = PromptBuilder(mock_scenario)
+
+    prompt = builder._get_system_prompt("events")
+
+    assert "A test scenario description" in prompt
+    assert "Test Actor 1: Short Desc 1" in prompt
+    assert "test_metric" in prompt
+    assert "{{" not in prompt
+
+
+def test_actor_specific_override_also_renders(mock_scenario):
+    """actor_<id>.md overrides take the same render path."""
+    mock_scenario.custom_system_prompts["actor_actor2"] = (
+        "I am {{ actor_name }} and my id is {{ actor_id }}."
+    )
+    builder = PromptBuilder(mock_scenario)
+
+    prompt = builder._get_system_prompt("actor", "actor2")
+
+    assert prompt == "I am Test Actor 2 and my id is actor2."
+
+
+def test_validator_flags_undefined_variable_in_override(mock_scenario):
+    """Undefined variables render as empty text, so validation must warn."""
+    from scenario_lab.validator import validate_prompt_overrides
+
+    mock_scenario.custom_system_prompts["actor"] = "You are {{ actro_name }}."
+    errors, warnings = validate_prompt_overrides(mock_scenario)
+
+    assert errors == []
+    assert any("actro_name" in w for w in warnings)
+
+
+def test_validator_accepts_known_variables(mock_scenario):
+    """A correct override produces no warnings."""
+    from scenario_lab.validator import validate_prompt_overrides
+
+    mock_scenario.custom_system_prompts["actor"] = (
+        "{{ actor_name }} ({{ actor_id }}) sees {{ metric_test_metric }} and {{actors_list}}."
+    )
+    errors, warnings = validate_prompt_overrides(mock_scenario)
+
+    assert errors == []
+    assert warnings == []
+
+
+def test_validator_flags_broken_jinja_syntax(mock_scenario):
+    """Malformed Jinja is an error, not a silent passthrough."""
+    from scenario_lab.validator import validate_prompt_overrides
+
+    mock_scenario.custom_system_prompts["actor"] = "{% if actor_id == 'x' %}unclosed"
+    errors, _ = validate_prompt_overrides(mock_scenario)
+
+    assert any("invalid Jinja syntax" in e for e in errors)

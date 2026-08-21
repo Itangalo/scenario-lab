@@ -147,7 +147,7 @@ Each turn executes the following steps in order:
     - A dedicated correction prompt asks the LLM to minimally revise the metrics and narrative so they comply
     - The referee then validates the revised output once more
     - If the revised output still violates the constitution or cannot be parsed, the orchestrator follows the scenario's configured fallback policy: either continue with the latest proposal or keep the previous state
-  * **Model:** Uses dedicated `referee` model (default: x-ai/grok-4.1-fast) for cost-effective validation.
+  * **Model:** Uses dedicated `referee` model (default: qwen/qwen3-235b-a22b-2507) for cost-effective validation.
   * **Metadata:** Saves detailed validation results to `5-constitutional-check.json` including:
     - Status (approved, violations_found, max_attempts_reached, parse_error)
     - Number of iterations
@@ -161,13 +161,23 @@ Each turn executes the following steps in order:
   * **Purpose:** Prevent context window explosion over long simulations.
 
 ### Prompt Engineering (`prompts.py` & Templates)
-- **Jinja2 Templates:** All prompts are generated using Jinja2 templates located in `scenarios/{name}/system-prompts/` and `scenarios/{name}/user-prompts/`, defaulting to `templates/system-prompts/` and `templates/user-prompts/` if none are found.
-- **Context:** Templates receive a rich context object including `turn`, `time_period`, `metrics_json`, `world_state`, `events_list`, and individual metric variables (`metric_X`).
+- **Jinja2 Templates:** All prompts – system and user alike – are rendered through a `SandboxedEnvironment` (SSTI protection, since scenario-supplied templates are untrusted). Templates live in `scenarios/{name}/system-prompts/` and `scenarios/{name}/user-prompts/`, defaulting to `templates/system-prompts/` and `templates/user-prompts/` when absent.
+- **User prompt context:** `turn`, `time_period`, `metrics_json`, `world_state`, `historical_summary`, `notepad`, `output_language`, and individual metric variables (`metric_X`). Built by `_get_common_context`.
+- **System prompt context:** a deliberately smaller set, since system prompts are built without a turn: `scenario_name`, `scenario_description`, `actors_list`, `metrics_list`, `constitution`, `output_language`, `actor_id`, `actor_name`, `actor_description`, `actor_short_description`, and `metric_X`. Built by `_get_system_prompt_context`. `actor_id` is what lets an actor system prompt branch on which actor it is speaking for.
 - **Output Language:** The `output_language` setting injects instructions into templates to control the language of the LLM's response (e.g., "Please write your response in Swedish").
+- **Validation:** `validate_prompt_overrides` parses every scenario override, erroring on invalid Jinja syntax and warning on variables the render context does not supply. This matters because Jinja renders an undefined variable as empty text rather than raising, so a typo or a wrong-context variable silently degrades the prompt while the file still looks correct.
+
+**History (2026-08):** System prompts were previously not Jinja-rendered. They went through a plain string replace that handled five placeholders, all written without inner spaces (`{{actor_name}}`). A scenario override authored as a Jinja template therefore reached the model as raw template source with *every* conditional branch present simultaneously. This was found in `ai-safety-race`, whose `system-prompts/actor.md` branches on `actor_id`: because the US branch came first, every model tested played the US for both actors, and China's safety metric never moved. Nothing errored, and the affected runs looked superficially valid. The constitutional-referee prompts had always been Jinja-rendered, so the fix aligned the remaining paths with that precedent and with this document, which already specified Jinja for all prompts.
 
 ### LLM Providers and Routing (`providers/`, `router.py`)
 
-**ModelRoute:** Every model reference in configuration is a `ModelRoute(provider, model)` dataclass. YAML syntax is `"provider:model"`, for example `"openrouter:x-ai/grok-4.1-fast"` or `"anthropic:claude-sonnet-4-6"`. String literals without a provider prefix are rejected at load time.
+**Call bounding and failure diagnosis (2026-08):** Three failure modes were found while evaluating candidate models, all of which destroyed or stalled runs without saying why.
+
+- **Wall-clock deadline per call.** `OpenRouterProvider` streams the response body and checks elapsed time against a single deadline (`llm.call_timeout_seconds`, default 300s), raising `LLMCallTimeoutError`. httpx's timeout applies per read operation, so a trickling provider resets it forever; calls were observed blocking 11-23 minutes at near-zero CPU on an open socket. Streaming was chosen over a watchdog thread because it bounds the call without leaving an orphaned thread behind when the deadline fires.
+- **Reasoning-budget exhaustion.** A reasoning model that fills its whole token budget with reasoning returns empty content beside a populated `reasoning` field. This now raises `LLMReasoningBudgetError` with the finish reason and token count. It is an `LLMError`, so `FallbackRouter` moves to the next route instead of making three identical retries that are guaranteed to fail the same way.
+- **Provider errors are surfaced, not discarded.** When a payload carries no `choices` or no content, OpenRouter's own `error` object is included in the raised message. Previously the reason (rate limited, no capacity) was dropped and the user saw only "did not include choices".
+
+**ModelRoute:** Every model reference in configuration is a `ModelRoute(provider, model)` dataclass. YAML syntax is `"provider:model"`, for example `"openrouter:qwen/qwen3-235b-a22b-2507"` or `"anthropic:claude-sonnet-4-6"`. String literals without a provider prefix are rejected at load time.
 
 **Provider abstraction (`providers/`):** Each backend is an `LLMProvider` subclass with a `complete(system, user, *, model, temperature, max_tokens)` method:
 
@@ -377,6 +387,22 @@ The `5-constitutional-check.json` file (when present) includes:
    - Checks time_scale is parseable (days/weeks/months/years)
    - Ensures max_turns doesn't exceed reasonable limits
 
+6. **Model Route Validation** (`is_valid_model_route`, used by `validate_llm_config`):
+   - Validates each configured entry as a `ModelRoute`, covering single models, fallback lists, and per-actor dicts
+   - Provider-aware: `vendor/model` is required for `openrouter`, while other providers (Anthropic ids like `claude-sonnet-4-6`) only need a non-empty model
+   - **Why it matters:** the previous check predated the `ModelRoute` migration and compared raw strings. Single models matched neither branch and were silently unvalidated; every fallback list failed regardless of contents, which read as a scenario error rather than a validator bug.
+
+7. **Prompt Override Validation** (`validate_prompt_overrides`):
+   - Parses every `system-prompts/` and `user-prompts/` override as Jinja; invalid syntax is an error
+   - Warns when an override references a variable the render context does not supply, checked against the union of contexts across all actors
+   - **Why it matters:** Jinja renders undefined variables as empty text instead of raising, so a misspelled or wrong-context variable produces a silently degraded prompt. This check exists because exactly that failure went undetected across multiple model evaluations (see the prompt-engineering history note above).
+
+8. **Research Question Validation** (`validate_research_questions`):
+   - Checks that every metric and event id named by a declared research question actually exists in the scenario (error)
+   - Enforces unique question ids and non-empty question text
+   - Warns when a question names neither metrics nor events, since synthesis can then only answer it qualitatively
+   - **Why it matters:** This is the check that catches a question the scenario cannot answer *before* runs are spent on it. Without it, `synthesize` would produce a confident but ungrounded answer.
+
 **Integration:**
 - `validate_scenario(scenario_path)`: Runs all validation checks and returns `ValidationResult` with errors and warnings
 - CLI command: `python -m scenario_lab.cli validate scenarios/sweden-ai-2030`
@@ -470,6 +496,17 @@ Cost so far: $0.15 | Projected total: $0.50
 - **Inputs:** Reads `config.json`, `summary.json`, `costs.json`, and per-turn `4-metrics.json`, `1-events.json`, and `1-event-evaluations.json` (optional, absent in legacy runs) from every completed run directory.
 - **Report Sections:** Run overview (N, status mix, turn counts, cost); per-metric trajectories (mean/min/max/p10/p50/p90 per turn, with per-turn N reflecting runs that ended early); event statistics (overall occurrence rate, per-turn occurrence counts, mean evaluated probability vs realized frequency when evaluation data is available); divergence detection (metric × turn with the largest IQR jump, event associations via mean-split); narrative diversity (pairwise lexical Jaccard similarity of each run's final historical summary – a cheap local check for storyline monoculture behind diverging metrics, with a caveat raised when mean similarity ≥ 0.5); automatic caveats for small N and mixed model configs.
 - **Output:** Markdown to stdout, or `--output file.md` for file output; `--json` emits the raw data structure.
+
+### Cross-Run Synthesis (`synthesis.py`)
+- **CLI Command:** `python -m scenario_lab.cli synthesize <scenario-dir> [options]`
+- **Purpose:** Joins the two halves of batch analysis. `analysis.py` reads one run in depth but knows nothing of the others; `ensemble.py` counts across all runs but reads none of them. Synthesis makes one LLM call over every run's structured analysis, grounded in the ensemble statistics, to answer "what does this world tend to do".
+- **Per-run analysis pass:** For each completed run, reuses `analysis.json` when present and readable, otherwise calls `generate_run_analysis(..., json_output=True)` to create it. Because a completed run is immutable, a readable cached analysis is always still valid for it; `--refresh-analyses` forces regeneration. Missing analyses are generated in parallel (`--max-concurrency`, default 4). A run whose analysis fails is recorded as a failure and excluded from the prompt rather than aborting the command, and the exclusion is stated in the prompt and the CLI output.
+- **Division of labor:** Python discovers runs, generates/caches per-run analyses, computes the ensemble statistics, condenses context, and counts. The LLM does the judging. No world rules live in this module.
+- **Prompting:** Default templates at `templates/system-prompts/synthesis.md` and `templates/user-prompts/synthesis.md`. The system prompt establishes that ensemble statistics are authoritative for anything countable while per-run analyses are individual readings to be attributed to their runs, and requires that recurring narrative shapes or implausible event rates be reported as possible simulation artifacts rather than findings about the world.
+- **Research questions:** When the scenario declares `research_questions` (see `loader.parse_research_questions`), they are rendered into the prompt and answered explicitly, each with a frequency, the conditions the answer depends on, and evidencing run names – before any undeclared findings. With none declared, the prompt states that the framing is the model's own.
+- **Context Handling:** Three densities (`full`, `condensed`, `minimal`) chosen by the same fit-to-window loop as `analysis.py`. Density controls which analysis sections are included per run (full: summary, turning points, event analysis, actor patterns, caveats; minimal: summary only), their truncation limits, and whether ensemble metric trajectories are sent whole or trimmed to first/middle/last turn per metric. Event statistics, divergence, and narrative diversity are always sent whole – they are the countable evidence.
+- **Output:** Saves `synthesis.md` in the scenario directory by default, or `synthesis.json` with `--json`; `--output` overrides the path and `--no-save` prints without saving. `--dry-run` reports which runs would need a new analysis and makes no API calls.
+- **Cost shape:** One analysis call per uncached run, plus exactly one synthesis call. A repeat `synthesize` over the same runs costs one call.
 
 ### Model Sensitivity Analysis (`model_sensitivity.py`)
 - **CLI Command:** `python -m scenario_lab.cli model-sensitivity <scenario-dir> [options]`

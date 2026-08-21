@@ -16,13 +16,13 @@ These items must be completed before any public or semi-public release.
 
 - [ ] Clean up the scenarios directory so only polished, tested scenarios remain.
 - [ ] Review and tighten all documentation so it reads coherently to a new user.
-- [ ] Revisit batch analysis features and make sure they work in a meaningful way — likely requires some development work.
+- [x] Revisit batch analysis features and make sure they work in a meaningful way (2026-08: the `synthesize` command). Still needs validating at volume – see "Now" item 1.
 - [ ] Run a proper test batch: ~50 simulations of the same scenario, including at least one run with non-budget LLMs.
 
 ### Nice to Have
 
 - [ ] Videos showing how to use the tool and what you get out of it.
-- [x] Better workflow for creating new scenarios (2026-07: `create-scenario` skill + `describe` command).
+- [x] Better workflow for creating new scenarios (2026-07: `create-scenario` skill + `describe` command; 2026-08: `frame-scenario` skill for question framing and research).
 - [ ] Graphical user interface.
 - [ ] Support for running local LLMs.
 
@@ -37,7 +37,7 @@ Each candidate improvement should be judged against four questions:
 3. Does it reduce scenario-authoring friction without obscuring the scenario spec?
 4. Does it preserve the architecture described in [ARCHITECTURE.md](ARCHITECTURE.md)?
 
-In practice, this implies the following order of importance:
+In practice, this implied the following order of importance:
 
 1. Core robustness and evals
 2. Run analysis and comparison
@@ -45,120 +45,64 @@ In practice, this implies the following order of importance:
 4. Provider and operational ergonomics
 5. Richer product/workbench layers
 
+As of 2026-08 all five are substantially built (see "Shipped"). The pipeline
+now runs end to end: frame a question, draft a scenario, run it fifty times,
+and get a synthesized answer. The binding constraint has moved from missing
+capability to unverified capability – almost none of this has been exercised
+at volume. Judge current candidates primarily by whether they tell us where
+the pipeline actually breaks.
+
+## Shipped
+
+These items were on earlier versions of this roadmap and are now implemented. They are kept here, condensed, so the sequence of the project stays legible.
+
+- **First-class regression and eval loop** ✅ (2026-06) – `check-run-integrity` for strict structural validation of saved runs, `check-regressions` for manifest-driven pairwise comparison, `compare-distributions` for distribution-level comparison across sets of runs, and `quality-check` as the combined entry point. Backed by `scenario_lab/regression.py` and fixtures under `tests/fixtures/regression/`.
+- **Run comparison and branch analysis** ✅ – `compare-runs` diffs final metrics, per-turn metrics, occurred events, rules versions, and cost between any two saved runs; `--fail-on-diff` makes it scriptable. `branch` plus seed control makes matched-pair comparison possible, and `causal-impact` builds on it.
+- **Stronger scenario linting and smoke tests** ✅ – `validate` covers structure, metric ranges, event probability formulas, and actor content warnings; `describe` gives the one-page overview; the `create-scenario` skill adds a cheap smoke run with an explicit behavioral checklist.
+- **Better provider abstraction and operational ergonomics** ✅ (2026-04) – `ModelRoute(provider, model)`, an `LLMProvider` ABC with OpenRouter and Anthropic implementations, lazy `ProviderRegistry`, `FallbackRouter` with per-route retries, per-provider pricing caches, and Anthropic prompt caching with correct 1.25x/0.1x cost multipliers (2026-07).
+- **Ingest pipeline from source material to scenario draft** ✅ (2026-07) – the `create-scenario` skill: ingest, framing checkpoint, ordered drafting, validation, smoke test, assumption logging in `design-notes.md`. Deliberately built agent-side rather than as engine code, so the engine stays thin.
+- **Cross-run synthesis** ✅ (2026-08) – the `synthesize` command (`scenario_lab/synthesis.py`) joins the two halves of batch analysis: it ensures every completed run has a structured `analysis.json` (generating missing ones in parallel, reusing the rest), then makes one LLM call over those readings grounded in `ensemble`'s statistics. Reports outcome patterns with run counts and exemplar runs, recurring turning points, actor dynamics, one-off surprises, and which apparent findings may be simulation artifacts. `--dry-run` shows the cost shape before any call. Closes the "revisit batch analysis features" pre-release item.
+- **Declarable research questions** ✅ (2026-08) – a `research_questions:` block in `scenario.yaml` records what the scenario exists to answer. `validate` errors on questions naming metrics or events that do not exist, which catches an unanswerable question before runs are spent on it; `describe` shows them; `synthesize` answers each explicitly with a frequency, the conditions the answer depends on, and evidencing runs, before reporting anything undeclared.
+- **Question framing and research front-end** ✅ (2026-08) – the `frame-scenario` skill covers the two stages before drafting: refining a rough topic into a research question that passes seven explicit criteria (simulable, bounded, paced, populated, measurable, genuinely uncertain, open), then building a provenance-tagged information bank in `source-material/` with an `INDEX.md` and a known-gaps list. Hands off to `create-scenario`, which now skips its own framing checkpoint when `research-question.md` is present.
+
 ## Now
 
-These items should be prioritized first because they directly improve confidence, iteration speed, and the practical usefulness of the existing engine.
+The engine, the quality loop, the authoring path, and the synthesis layer are all now in place. What remains is finding out how well they hold up in use.
 
-### 1. First-Class Regression and Eval Loop
+### 1. Field-Test the Full Pipeline
 
 **Priority:** Highest  
-**Type:** Core Scenario Lab  
-**Why it matters:** Scenario Lab lives or dies on whether changes make runs better, not just different. The project already has tests and evals, but the next level of maturity is a clearer quality loop that catches behavioral regressions, prompt drift, parsing instability, and silent cost creep.
+**Type:** Process  
+**Why it matters:** Everything from question to answer now exists on paper, and almost none of it has been exercised end to end. Skills fail in ways code does not – checkpoints that feel bureaucratic, questions that miss what actually mattered, criteria that pass a bad question. Synthesis has its own failure modes that only show up at volume: reports that read plausibly but launder one run's analysis into a claim about the ensemble, or that miss the interesting minority entirely.
 
 **What this means:**
 
-- Define a set of reference scenarios and cheap reference runs.
-- Track changes in key outputs across commits: metrics, events, rule updates, constitutional interventions, and total cost.
-- Make it easy to detect when a prompt or parser change unexpectedly shifts behavior.
-- Add scenario-quality evals, not just code correctness tests.
+- Build two or three scenarios end to end from a bare question, through `frame-scenario`, `create-scenario`, `batch-run`, and `synthesize`.
+- At volume, check the synthesis against the runs by hand: are the counts right, do the exemplar runs actually show what is claimed, does it notice the outliers?
+- Record where the pipeline asked the wrong thing, defaulted badly, or produced confident nonsense, and tighten against what actually went wrong.
 
-**Likely scope:**
+**Note:** This also covers the pre-release checklist's "~50 simulations of the same scenario" item, which is the natural test bed for synthesis at volume.
 
-- Golden-run fixtures or sampled baseline outputs
-- Diff tooling for run artifacts
-- Cost and token-budget regression checks
-- Prompt/eval dashboards or summaries in CI or CLI
-
-**Why this comes first:** It compounds with every later improvement. Without it, the roadmap increases complexity faster than confidence.
-
-### 2. Run Comparison and Branch Analysis
-
-**Priority:** Highest  
-**Type:** Core Scenario Lab  
-**Why it matters:** Scenario Lab already stores rich artifacts, but comparing two runs is still more manual than it should be. The project's strongest differentiator is not just generation, but inspectable divergence over time.
-
-**What this means:**
-
-- Add first-class support for comparing two runs, two variants, or a parent run against a branch.
-- Surface where trajectories diverged and which events, actor actions, or rule changes appear to explain the difference.
-- Make comparison output useful both for CLI users and later visualization/reporting layers.
-
-**Likely scope:**
-
-- `compare` CLI command for runs or branches
-- Structured diffs for metric trajectories, occurred events, actor actions, and rule versions
-- Outcome summaries such as "largest divergences by turn" or "branch point effects"
-
-**Why this comes first:** This turns existing persistence into actual analytical leverage.
-
-### 3. Stronger Scenario Linting and Smoke Tests
+### 2. Synthesis Quality Evals
 
 **Priority:** High  
 **Type:** Core Scenario Lab  
-**Why it matters:** A lot of simulation failures are not code bugs. They come from weak scenario definitions, ambiguous prompts, unbalanced metrics, or event logic that looks valid but behaves badly in practice. Better pre-run feedback saves both cost and iteration time.
+**Why it matters:** Synthesis is the one part of the pipeline whose output cannot be checked structurally. A per-run analysis can be compared against the run's artifacts; a synthesis claim about "14 of 20 runs" can only be checked by counting, which nothing currently does.
 
 **What this means:**
 
-- Strengthen validation of metrics, events, constitutions, actor references, and prompt assumptions.
-- Add a lightweight smoke-test path for new scenarios.
-- Detect common scenario design problems before a full run.
+- Verify mechanically what can be verified: do frequencies cited in a synthesis match the ensemble statistics, do named runs exist, do claimed events appear in those runs?
+- Treat unverifiable-but-checkable claims as the eval target, not the prose quality.
 
 **Likely scope:**
 
-- Validation warnings for over-broad event conditions, impossible metric dynamics, or unstable prompt contracts
-- A cheap `quick-check` or improved `validate` mode that runs one or two short low-cost turns
-- Better actionable diagnostics when a scenario is technically valid but likely low quality
-
-**Why this comes first:** The authoring loop is still a major bottleneck, and this improves it without major architectural risk.
+- A checker that cross-references a `synthesis.json` against `ensemble` output and the per-run analyses it drew on
+- Fixture ensembles with known properties, where the right answer is established in advance
+- Extension of `quality-check` to cover synthesis output where present
 
 ## Next
 
-These items should follow once the quality loop and run comparison story are stronger. They create leverage for users without destabilizing the engine.
-
-### 4. Richer Analysis Layer on Top of Run Output
-
-**Priority:** High  
-**Type:** Core with some Mirofish inspiration  
-**Why it matters:** Scenario Lab already produces good raw material, but the user still has to synthesize a lot manually. A stronger analysis layer would convert saved artifacts into insight more quickly.
-
-**What this means:**
-
-- Generate higher-level summaries of what drove outcomes.
-- Highlight turning points, surprising events, actor bottlenecks, and rule shifts.
-- Help users answer "what happened?" and "why did this outcome emerge?" without re-reading every file.
-
-**Likely scope:**
-
-- Auto-generated run reports
-- Outcome-driver summaries
-- Turn highlight extraction
-- Branch comparison narratives
-
-**Why this is not first:** It builds on the comparison and eval foundations. Without those, the analysis layer risks becoming polished but unreliable.
-
-### 5. Ingest Pipeline from Source Material to Scenario Draft ✅ Largely done
-
-**Status:** Implemented 2026-07 as an agent-side pipeline rather than engine code: the `create-scenario` skill (`.claude/skills/create-scenario/`) handles ingest, extraction, checkpointed drafting, and smoke testing, and the `describe` CLI command provides the reviewable overview. The engine deliberately stays thin; remaining ideas below are still valid for deepening the pipeline.
-
-**Priority:** High  
-**Type:** Mirofish-inspired  
-**Why it matters:** This is the strongest idea to borrow from Mirofish. Scenario Lab is powerful once a scenario exists, but the jump from raw source material to a good scenario spec is still expensive in human attention.
-
-**What this means:**
-
-- Accept raw material such as markdown, text, notes, or PDFs.
-- Use that material to propose a first-pass scenario scaffold.
-- Help a user move from research input to editable scenario files more quickly.
-
-**Likely scope:**
-
-- Draft generation for `scenario.yaml`, `metrics.md`, `events.md`, `metric-rules.md`, and actor/background files
-- Confidence flags such as "missing actors," "weak metrics," or "events need human review"
-- A workflow explicitly positioned as assisted authoring, not push-button truth generation
-
-**Architectural constraint:** The output should still be explicit scenario files that humans can inspect and edit. The ingest layer should not become a hidden second source of truth.
-
-### 6. Better Visualization for Runs and Branches
+### 3. Better Visualization for Runs and Branches
 
 **Priority:** Medium-High  
 **Type:** Mirofish-inspired  
@@ -172,42 +116,19 @@ These items should follow once the quality loop and run comparison story are str
 
 **Likely scope:**
 
-- Metric trajectory charts
+- Metric trajectory charts, including ensemble percentile bands
 - Event timelines
 - Rule evolution views
 - Branch divergence views
 - Cost and token usage charts
 
-**Why this is later than comparison:** Good visualization should sit on top of stable structured comparison data, not compensate for its absence.
+**Why this is after synthesis:** Good visualization should sit on top of stable structured aggregation, not compensate for its absence.
 
-## Later
-
-These items are valuable, but they should follow after the engine, comparison layer, and authoring workflow are clearly stronger.
-
-### 7. Better Provider Abstraction and Operational Ergonomics ✅ Done
-
-**Status:** Implemented (2026-04).
-
-**What was built:**
-
-- `ModelRoute(provider, model)` replaces bare model strings everywhere. YAML syntax: `"openrouter:x-ai/grok-4.1-fast"`, `"anthropic:claude-sonnet-4-6"`.
-- `LLMProvider` ABC with `OpenRouterProvider` (httpx) and `AnthropicProvider` (official SDK).
-- `ProviderRegistry` creates providers lazily, so only keys for providers actually used need to be set.
-- `FallbackRouter` replaces the old in-class fallback loop: ordered routes, per-route retries with backoff, falls through on non-retryable errors.
-- Provider-specific pricing caches: `OpenRouterPricingCache` (unchanged) and `AnthropicPricingCache` (LiteLLM catalog + bundled seed). `get_pricing_for(route)` dispatches to the right one.
-- `TokenUsage` gains a `provider` field so cost calculation uses the correct pricing cache.
-- `refresh-pricing` now refreshes both caches; `--provider` scopes to one.
-
-**Follow-up items:**
-
-- [x] Prompt caching support for Anthropic (2026-07): system prompts are sent as cache-controlled blocks by default, and cache write/read tokens are priced with their 1.25x/0.1x multipliers in cost tracking.
-- [ ] Support for local model endpoints (Ollama, vLLM) as a third provider type.
-
-### 8. Thin Scenario Workbench
+### 4. Thin Scenario Workbench
 
 **Priority:** Medium  
 **Type:** Mixed  
-**Why it matters:** Once comparison, analysis, and ingest are better, a thin workbench can unify the workflow into something much easier to use. The important constraint is that this should remain a thin layer over existing primitives, not a heavyweight platform rewrite.
+**Why it matters:** Once synthesis, analysis, and ingest are stronger, a thin workbench can unify the workflow into something much easier to use. The important constraint is that this should remain a thin layer over existing primitives, not a heavyweight platform rewrite.
 
 **What this means:**
 
@@ -217,13 +138,15 @@ These items are valuable, but they should follow after the engine, comparison la
 
 **Likely scope:**
 
-- Wizard or guided workflow for new scenarios
+- A single entry point spanning frame → draft → validate → run → synthesize
 - Faster quick-run and compare loops
-- Unified entry point for common tasks
+- Graphical interface, if the pre-release checklist item is pursued
 
 **Why this is later:** The workbench becomes much more valuable after the underlying authoring and analysis capabilities are mature enough to deserve a front door.
 
-### 9. Analyst Assistant over Saved Runs
+## Later
+
+### 5. Analyst Assistant over Saved Runs
 
 **Priority:** Medium-Low  
 **Type:** Mirofish-inspired  
@@ -231,19 +154,26 @@ These items are valuable, but they should follow after the engine, comparison la
 
 **What this means:**
 
-- Let a user ask questions about one or more saved runs.
+- Let a user ask ad-hoc questions about one or more saved runs, beyond the declared research questions.
 - Ground answers in persisted artifacts rather than vague memory.
-- Focus on explanation and analysis, not on creating new simulation state.
 
 **Likely scope:**
 
 - Queries like "why did unemployment rise in run B but not run A?"
 - Artifact-grounded summaries with links to relevant turns or files
-- Report mode for key findings across repeated runs
 
 **Architectural constraint:** This should be a reader and analyst, not a second orchestrator or a hidden rule engine.
 
-### 10. Optional Public-Sphere or Social-Dynamics Modules
+**Relationship to synthesis:** Largely the interactive form of the same capability. Now that `synthesize` exists, this is a much smaller job: the same artifacts, asked ad hoc rather than in one pass.
+
+### 6. Local Model Endpoints
+
+**Priority:** Low-Medium  
+**Type:** Operational  
+
+The provider abstraction was built to accommodate this: a third provider type for Ollama or vLLM slots into `LLMProvider` and `ProviderRegistry` without touching the router. Mainly useful for cheap high-volume batches and for running scenarios with sensitive material.
+
+### 7. Optional Public-Sphere or Social-Dynamics Modules
 
 **Priority:** Low / Experimental  
 **Type:** Mirofish-inspired  
@@ -255,13 +185,7 @@ These items are valuable, but they should follow after the engine, comparison la
 - Treat these as optional scenario-level modules or templates.
 - Avoid reshaping the whole framework around a Twitter/Reddit-style simulation model.
 
-**Likely scope:**
-
-- Reusable scenario templates for public sentiment dynamics
-- Better handling of information cascades, media amplification, or backlash loops
-- Scenario-specific prompt/tooling support
-
-**Why this is last:** It is the easiest category to overbuild. It can be valuable, but it does not improve the baseline framework for most scenarios as much as comparison, evals, or ingest do.
+**Why this is last:** It is the easiest category to overbuild.
 
 ## Backlog from the 2026-07 Epistemics Review
 
@@ -273,29 +197,11 @@ A review of how well the engine models genuine uncertainty produced four shipped
 
 ## Recommended Sequence
 
-If implemented in phases, the recommended order is:
-
-### Phase 1: Strengthen the Core
-
-1. First-class regression and eval loop
-2. Run comparison and branch analysis
-3. Stronger scenario linting and smoke tests
-
-### Phase 2: Increase Analytical Leverage
-
-4. Richer analysis layer on top of run output
-5. Better visualization for runs and branches
-
-### Phase 3: Lower Creation and Usage Friction
-
-6. Ingest pipeline from source material to scenario draft
-7. ~~Better provider abstraction and operational ergonomics~~ ✅
-8. Thin scenario workbench
-
-### Phase 4: Add Optional Product Layers
-
-9. Analyst assistant over saved runs
-10. Optional public-sphere or social-dynamics modules
+1. Field-testing the full pipeline end to end, at volume
+2. Synthesis quality evals
+3. Visualization on top of stable aggregation
+4. Thin workbench over the whole flow
+5. Optional product layers: analyst assistant, local models, social-dynamics modules
 
 ## What to Avoid
 

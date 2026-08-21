@@ -1144,6 +1144,46 @@ def main():
     ensemble_parser.add_argument("--json", action="store_true", help="Print JSON instead of markdown report")
     ensemble_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
 
+    # Synthesize command
+    synthesize_parser = subparsers.add_parser(
+        "synthesize",
+        help="Synthesize many completed runs into one report (uses the LLM)",
+    )
+    synthesize_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
+    synthesize_parser.add_argument(
+        "--max-runs", type=int, default=None, help="Synthesize the most recent N completed runs"
+    )
+    synthesize_parser.add_argument(
+        "--model", type=str, default=None, help="Override the model used for the synthesis call"
+    )
+    synthesize_parser.add_argument(
+        "--analysis-model",
+        type=str,
+        default=None,
+        help="Override the model used for any missing per-run analyses",
+    )
+    synthesize_parser.add_argument(
+        "--refresh-analyses",
+        action="store_true",
+        help="Regenerate every per-run analysis instead of reusing cached analysis.json files",
+    )
+    synthesize_parser.add_argument(
+        "--max-concurrency",
+        type=int,
+        default=4,
+        help="Parallel per-run analysis calls (default: 4)",
+    )
+    synthesize_parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Report which runs would need a new analysis, without making API calls",
+    )
+    synthesize_parser.add_argument("--json", action="store_true", help="Write structured JSON instead of markdown")
+    synthesize_parser.add_argument("--output", type=Path, default=None, help="Write report to a custom path")
+    synthesize_parser.add_argument(
+        "--no-save", action="store_true", help="Print the report without saving it"
+    )
+
     # Model sensitivity command
     model_sensitivity_parser = subparsers.add_parser(
         "model-sensitivity",
@@ -1201,6 +1241,11 @@ def main():
         help="Path to a scenario, scenario config, or directory tree (default: scenarios/)",
     )
     audit_models_parser.add_argument("--json", action="store_true", help="Print JSON instead of text report")
+    audit_models_parser.add_argument(
+        "--offline",
+        action="store_true",
+        help="Skip the OpenRouter catalog check (withdrawn models, reasoning models)",
+    )
 
     args = parser.parse_args()
 
@@ -1831,6 +1876,76 @@ def main():
             print(report)
         return
 
+    if args.command == "synthesize":
+        from .ensemble import _discover_completed_runs
+        from .synthesis import read_cached_analysis, synthesize_scenario
+
+        scenario_dir = args.scenario if args.scenario.is_dir() else args.scenario.parent
+
+        if args.dry_run:
+            run_dirs = _discover_completed_runs(scenario_dir, args.max_runs)
+            if not run_dirs:
+                print(f"❌ No completed runs found in: {scenario_dir / 'runs'}")
+                return 1
+            missing = [
+                d for d in run_dirs
+                if args.refresh_analyses or read_cached_analysis(d) is None
+            ]
+            print(f"Completed runs: {len(run_dirs)}")
+            print(f"Cached analyses reusable: {len(run_dirs) - len(missing)}")
+            print(f"Per-run analyses to generate: {len(missing)}")
+            for run_dir in missing:
+                print(f"  - {run_dir.name}")
+            print()
+            print(f"Then 1 synthesis call over {len(run_dirs)} runs.")
+            return 0
+
+        print(f"Synthesizing runs for: {scenario_dir}")
+
+        def _report_progress(run_dir: Path, status: str) -> None:
+            if status != "reused":
+                print(f"  {status}: {run_dir.name}")
+
+        try:
+            result = synthesize_scenario(
+                scenario_dir,
+                max_runs=args.max_runs,
+                model=args.model,
+                analysis_model=args.analysis_model,
+                refresh_analyses=args.refresh_analyses,
+                max_concurrency=args.max_concurrency,
+                output_path=args.output,
+                json_output=args.json,
+                no_save=args.no_save,
+                on_progress=_report_progress,
+            )
+        except Exception as e:
+            print(f"❌ Synthesis failed: {e}")
+            return 1
+
+        coverage = result.coverage
+        print(
+            f"Runs synthesized: {result.num_runs} "
+            f"({coverage.reused} cached, {coverage.generated} newly analyzed, "
+            f"{len(coverage.failures)} failed)"
+        )
+        if coverage.failures:
+            for run_dir, error in coverage.failures:
+                print(f"  ⚠️  {run_dir.name}: {error}")
+        if result.prompt_context_mode != "full":
+            print(f"Prompt context density: {result.prompt_context_mode}")
+
+        if result.output_path is not None:
+            print(f"✅ Synthesis written to: {result.output_path}")
+        if args.no_save:
+            print()
+            print(result.report)
+        elif result.summary_text:
+            print()
+            print(result.summary_text)
+
+        return 0
+
     if args.command == "model-sensitivity":
         from .model_sensitivity import analyze_model_sensitivity, format_model_sensitivity_report
 
@@ -1885,6 +2000,15 @@ def main():
         except Exception as e:
             print(f"❌ Model audit failed: {e}")
             return
+
+        if not args.offline:
+            from .model_audit import audit_catalog_availability
+
+            catalog_findings = audit_catalog_availability(args.path)
+            if catalog_findings:
+                report.findings.extend(catalog_findings)
+            elif not args.json:
+                print("(catalog check skipped or clean – no network, no key, or nothing found)")
 
         if args.json:
             print(json.dumps(report.to_dict(), indent=2, ensure_ascii=False))

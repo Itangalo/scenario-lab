@@ -21,6 +21,10 @@ Contracts and process background (read before drafting, do not duplicate here):
 - `docs/SCENARIO_CREATION_WITH_AGENT.md` – process rationale and interview gate
 - `scenarios/sweden-ai-2030/` – reference example of a complete scenario
 
+If the user is starting from a question or a topic rather than from source
+material they already have, run the `frame-scenario` skill first. It settles
+the research question and builds the information bank this skill drafts from.
+
 ## Ask-When-Needed Rules
 
 Apply these throughout all phases:
@@ -39,6 +43,10 @@ Apply these throughout all phases:
 
 ## Phase 1: Ingest
 
+0. Check for a `frame-scenario` handoff: `<scenario>/research-question.md`
+   and `<scenario>/source-material/INDEX.md`. If both exist, read them first
+   – the question, frame, and known gaps are already settled, and the index
+   tells you what each file covers and how far to trust it.
 1. Identify inputs: user description, files in `<scenario>/source-material/`,
    and any URLs the user provided (fetch them; save extracted text summaries
    to `source-material/` so the scenario is reproducible without the link).
@@ -49,7 +57,14 @@ Apply these throughout all phases:
 
 ## Phase 2: Framing Checkpoint (required – do not draft before this)
 
-Present to the user, concisely:
+**Skip this phase if `research-question.md` exists and records an approved
+question.** The framing decisions were made there; re-asking them wastes the
+user's attention and invites drift from what they approved. Instead, confirm
+in one line that you are drafting to that frame, and raise anything in the
+material that contradicts it. If nothing contradicts it, go straight to
+Phase 3.
+
+Otherwise, present to the user, concisely:
 
 - **The central question** the scenario should explore (your proposal, 1-2
   sentences). This drives every other choice.
@@ -69,6 +84,12 @@ Wait for answers/approval before Phase 3.
 
 ## Phase 3: Draft
 
+Where the source material carries provenance tags (`[user]`, `[source: …]`,
+`[model]`, `[assumption]`), let them govern how firmly you commit: tagged
+`[model]` or `[assumption]` claims belong in `design-notes.md` under
+Assumptions, not asserted as fact in `background/context.md`. Carry the
+"Known Gaps" section of `source-material/INDEX.md` into design-notes too.
+
 Draft in this order (each file informs the next):
 
 1. `background/context.md` – world state at start, grounded in source material
@@ -80,9 +101,15 @@ Draft in this order (each file informs the next):
    `can_repeat: false` for structural shifts
 5. `metric-rules.md` – starting "physics"; few, clear, quantitative
 6. `scenario.yaml` – config; start with cheap models (e.g.
-   `openrouter:x-ai/grok-4.1-fast`), consider `rule_evolution.freeze_until_turn: 2`,
+   `openrouter:qwen/qwen3-235b-a22b-2507`), consider `rule_evolution.freeze_until_turn: 2`,
    and consider `emergent_events.enabled: true` (the purpose is exploring
-   unknown futures) and `llm.probability_samples: 3` for better probabilities
+   unknown futures) and `llm.probability_samples: 3` for better probabilities.
+   Include a `research_questions:` block: copy the entry proposed in
+   `research-question.md` if there is one, otherwise derive it from the
+   framing checkpoint. Name the metrics and events that bear on each question
+   – `validate` checks they exist, and `synthesize` uses them to answer the
+   question with evidence rather than impressions. A scenario with no declared
+   questions can still be synthesized, but only generically.
 7. `constitution.md` – only if the domain has hard plausibility constraints
 8. `design-notes.md` – central question, key design decisions, assumptions,
    weak spots, ideas deliberately left out
@@ -119,6 +146,13 @@ Smoke-test quality checklist:
 ## Phase 6: Handoff
 
 Report to the user: what was built, the describe overview, smoke-test verdict,
-remaining weak spots, and the recommended next step (typically
-`batch-run --repeat 10` with cheap models, then `ensemble`). Update
-design-notes.md to match the final state.
+remaining weak spots, and the recommended next step. That next step is
+normally:
+
+1. `batch-run scenarios/<name> --repeat 10` with cheap models
+2. `synthesize scenarios/<name> --dry-run` to see the cost shape
+3. `synthesize scenarios/<name>` for the answer, which will address the
+   declared research questions explicitly
+
+`ensemble` remains useful alongside it for the raw distributions, and costs
+nothing. Update design-notes.md to match the final state.

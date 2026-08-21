@@ -4,18 +4,39 @@ Accumulated findings from running Scenario Lab scenarios with different LLMs. Us
 
 Pricing should still be verified against OpenRouter before trusting older logged cost figures — newer runs use a cached OpenRouter pricing snapshot, but historical runs may reflect outdated pricing data.
 
+**Model availability changes without warning.** As of 2026-08-21, two of the three previously recommended models – `x-ai/grok-4.1-fast` and `google/gemini-2.0-flash-001` – have been removed from the OpenRouter catalogue and return HTTP 404. `x-ai/grok-4.1-fast` was still configured in six scenarios and was the library default for the `summary`, `analysis`, and `referee` tasks, so those scenarios could not run at all until reconfigured. `audit-models` does not catch this: it checks name patterns and snapshot age, never whether the model still exists. Verify availability against the pricing cache before a batch, not after.
+
+## ⚠️ ai-safety-race Results Before 2026-08-21 Are Unreliable
+
+A prompt-rendering bug meant that `scenarios/ai-safety-race/system-prompts/actor.md` was never Jinja-rendered. Its `{% if actor_id == 'usa' %}` / `{% elif actor_id == 'china' %}` branches reached the model as literal text with both branches present, and the US branch came first. **Every model tested on this scenario played the United States for both actors.** China never advocated for itself, which is why `china_safety` sat frozen in run after run.
+
+Fixed 2026-08-21 (system prompts now render through the sandboxed Jinja environment, with validation for undefined variables). Consequences for this document:
+
+- Every ai-safety-race assessment below predates the fix and measured models under a broken prompt: `google/gemini-2.0-flash-001`, `x-ai/grok-4.1-fast`, `google/gemini-2.5-flash`, `moonshotai/kimi-k2`, `anthropic/claude-haiku-4-5`, `deepseek/deepseek-v3.2`, `mistralai/mistral-small-24b-instruct-2501`, `qwen/qwen3-30b-a3b-instruct-2507`, `nvidia/nemotron-3-ultra-550b-a55b:free`, `deepseek/deepseek-v4-flash-0731`.
+- Constitutional-violation counts from those runs are not trustworthy. An actor arguing the wrong country's position will produce metric updates that look like constraint violations without the model having reasoned badly.
+- Findings that do **not** depend on the actor prompt still stand: crashes, hangs, parse errors, empty or partial metrics payloads, hallucinated metric names, throughput, and cost.
+- `qwen/qwen3-235b-a22b-2507` and `openai/gpt-5.4-nano` were tested on sweden-ai-2030, which has no Jinja in its overrides. Those assessments are unaffected.
+
+Re-test candidates against the fixed prompt before trusting any comparison below.
+
 ## Summary
 
 | Model | Prompt/M | Completion/M | Constitutional violations | Verdict |
 |-------|----------|--------------|--------------------------|---------|
-| google/gemini-2.0-flash-001 | $0.10 | $0.40 | 1/10 turns (ai-safety-race) | Recommended |
-| x-ai/grok-4.1-fast | $0.20 | $0.50 | 0/10 turns (ai-safety-race) | Recommended |
-| qwen/qwen3-235b-a22b-2507 | $0.071 | $0.10 | 0/40 turns (sweden-ai-2030) | Recommended |
+| google/gemini-2.0-flash-001 | $0.10 | $0.40 | 1/10 turns (ai-safety-race) | **REMOVED from OpenRouter 2026-08** |
+| x-ai/grok-4.1-fast | $0.20 | $0.50 | 0/10 turns (ai-safety-race) | **REMOVED from OpenRouter 2026-08** |
+| qwen/qwen3-235b-a22b-2507 | $0.09 | $0.55 | 0/40 turns (sweden-ai-2030) | Recommended (only surviving recommendation; repriced 2026-08) |
 | openai/gpt-5.4-nano | $0.20 | $1.25 | 35/40 turns accepted with constitutional violations (sweden-ai-2030) | Avoid |
 | google/gemini-2.5-flash | $0.30 | $2.50 | 10/10 turns (ai-safety-race) | Avoid |
 | moonshotai/kimi-k2 | $0.55 | $2.20 | 6/10 turns (ai-safety-race) | Avoid |
 | anthropic/claude-haiku-4-5 | $1.00 | $5.00 | 10/10 turns (ai-safety-race) | Avoid |
 | deepseek/deepseek-v3.2 | $0.27 | $1.10 | – | Avoid (crashes) |
+| mistralai/mistral-small-24b-instruct-2501 | $0.05 | $0.08 | 9/10 turns unresolved (ai-safety-race) | Avoid |
+| qwen/qwen3-30b-a3b-instruct-2507 | $0.048 | $0.193 | 3/7 turns unresolved (ai-safety-race) | Avoid (hangs, hallucinates metrics) |
+| nvidia/nemotron-3-ultra-550b-a55b:free | $0 | $0 | 2/3 approved before crash | Avoid (free tier drops responses) |
+| deepseek/deepseek-v4-flash-0731 | $0.065 | $0.18 | 3/4 approved, 0 incidents in 4 turns | **Most stable reasoning model tested** |
+| minimax/minimax-m3 | $0.23 | $0.96 | 3/3 approved, then crashed turn 4 | Avoid (reasoning budget exhaustion) |
+| z-ai/glm-4.7-flash | $0.06 | $0.40 | 2/2 approved, 661s/turn | Avoid (far too slow) |
 
 ## Cost per Run (10 turns, correct pricing)
 
@@ -26,6 +47,8 @@ Pricing should still be verified against OpenRouter before trusting older logged
 | google/gemini-2.0-flash-001 | ai-safety-race | ~$0.05 | – |
 | x-ai/grok-4.1-fast | sweden-ai-2030 | ~$0.12 | ~388k |
 | x-ai/grok-4.1-fast | ai-safety-race | ~$0.44* | – |
+| mistralai/mistral-small-24b-instruct-2501 | ai-safety-race | ~$0.022 | ~394k |
+| qwen/qwen3-30b-a3b-instruct-2507 | ai-safety-race | ~$0.035 (projected) | ~390k (6 turns: 260k) |
 | anthropic/claude-haiku-4-5 | ai-safety-race | ~$1.30* | – |
 
 *Logged costs for older runs used incorrect pricing and have not been recalculated.
@@ -144,6 +167,112 @@ Pricing should still be verified against OpenRouter before trusting older logged
 
 ---
 
+---
+
+### mistralai/mistral-small-24b-instruct-2501
+
+**Tested on:** ai-safety-race (1 run, 10 turns, 2026-08-21, seed 20260821)
+
+- Only 1/10 turns approved cleanly by the constitutional referee; 8/10 ended `max_attempts_reached`, 1 ended `parse_error`
+- Failure mode is specifically *referee* quality, not metric generation. As referee it hedges instead of judging – turn 1 produced "which is within the limit… however the narrative implies a more aggressive tradeoff" for four separate constraints, none of them actual violations. The correction loop cannot converge on non-violations, so every turn burns its attempts and continues regardless
+- Metrics output itself was well-formed throughout: no empty or partial `4-metrics.json`, no hallucinated metric names
+- Only 2 rules-output retries across the run
+- Catastrophe mechanics were exercised: `us_capability` reached 71 against the immutable threshold of 70 and `global_catastrophe` fired – further than most tested models reach
+- Cheapest completion pricing of any candidate, and the run completed without intervention at ~$0.022
+
+**Verdict:** Avoid as a single model for all tasks. Might be worth retesting as the `metrics`/`actors` model with a stronger `referee`, since its metric contract compliance was clean and only its refereeing failed.
+
+---
+
+### qwen/qwen3-30b-a3b-instruct-2507
+
+**Tested on:** ai-safety-race (1 run, **incomplete** – hung at turn 7, 2026-08-21, seed 20260821)
+
+- Better constitutional compliance than mistral-small: 4/7 turns approved cleanly, 2 ended `max_attempts_reached`
+- But much worse at output contracts. Across 6 completed turns: 4 rules-output truncations (`finish_reason=length`), 5 rules-policy retries, and 1 empty metrics file
+- **Hallucinated metric names** not present in the scenario: `us_safety_investment`, `china_safety_investment`, `ai_incident`, and `notepad`. The last two are structural names from the framework leaking into the metrics payload, which suggests it is confusing prompt scaffolding for scenario content
+- Final metrics were left incomplete (`us_capability`, `china_capability`, `coordination_level` all absent) – the same partial-payload failure recorded for gpt-5.4-nano
+- Retries made turns slow and expensive: 130–172s per turn versus ~30s for mistral-small, and ~$0.021 for 6 turns (~$0.035 projected for 10) despite lower headline pricing
+- **The run hung indefinitely on turn 7** – 23 minutes blocked on a single established HTTPS connection to OpenRouter with no bytes logged, at 1.9s total CPU. Killed manually
+
+**Verdict:** Avoid. The hallucinated metric names and partial metric payloads are disqualifying on their own; the hang makes it unusable for unattended batches.
+
+---
+
+---
+
+### minimax/minimax-m3
+
+**Tested on:** ai-safety-race (5 turns requested, **crashed at turn 4**, 2026-08-21, seed 20260821, `max_tokens: 32000`, fixed actor prompt)
+
+- First model evaluated after the actor-prompt fix, so its constitutional results are trustworthy
+- 3/3 turns approved cleanly by the referee with a single iteration each, and no contract failures in those turns
+- **Crashed in turn 4's events step** (`complete_structured`): `Response payload did not include assistant content`, three identical retries, then `All routes failed` killed the run
+- Cause is reasoning-budget exhaustion: it spent the entire 32000-token budget on `reasoning` and emitted no content. Raising the budget did not help – it scaled its reasoning to fill the space
+- The failure landed on the structured-output path, where schema conformance and open-ended reasoning appear to interact badly
+- 224s/turn, 167 tok/s, $0.0179/turn (~$0.18 per 10 turns)
+
+**Verdict:** Avoid until reasoning-budget exhaustion is handled by the engine. Quality while running was good; it simply cannot be trusted to finish.
+
+---
+
+### z-ai/glm-4.7-flash
+
+**Tested on:** ai-safety-race (5 turns requested, stopped after 2 for being too slow, 2026-08-21, seed 20260821, `max_tokens: 32000`, fixed actor prompt)
+
+- 2/2 turns approved cleanly, but only after a transient retry in turn 1
+- **661s/turn, 70 tok/s – the slowest model tested by a wide margin.** Turn 1 alone took 892s, of which roughly 11 minutes was a single constitutional-referee call that produced no output while the process sat blocked on an open socket
+- Hallucinated the metric name `metric_id` – the schema's own placeholder field name – echoed back as if it were a scenario metric
+- Cheapest per run of the reasoning models at $0.0110/turn, but that is meaningless at this speed: a 10-turn run would take about 110 minutes
+
+**Verdict:** Avoid. Not unstable enough to disqualify on correctness alone, but the throughput makes batch work impossible.
+
+
+## Reasoning Models Are a Poor Fit
+
+Probed 2026-08-21. Several of the cheapest current models are reasoning models that emit `reasoning` tokens before `content`:
+
+| Model | Output tokens for a trivial JSON task | Reasoning model |
+|-------|---------------------------------------|-----------------|
+| openai/gpt-oss-120b | failed at max_tokens=50, needed 400 | yes |
+| qwen/qwen3.7-flash | 220 | yes |
+| z-ai/glm-4.7-flash | 190 | yes |
+| deepseek/deepseek-v4-flash-0731 | 39 | yes |
+| google/gemma-4-26b-a4b-it | 6 | no |
+| qwen/qwen3-30b-a3b-instruct-2507 | 12 | no |
+| mistralai/mistral-small-24b-instruct-2501 | 12 | no |
+
+This matters because scenarios set `max_tokens` around 2000–3500. A reasoning model spends part of that budget before producing any content, so it will intermittently return nothing parseable, and the headline price understates real cost because reasoning tokens are billed. When the budget runs out mid-reasoning the provider raises `ValueError: Response payload did not include assistant content`, which is opaque about the real cause.
+
+Prefer instruct (non-thinking) variants. This is consistent with the project's own history: the best-performing model tested here is `qwen3-235b-a22b-2507`, the instruct variant, while the thinking variant remains untested.
+
+**Empirical record after testing five reasoning models (2026-08-21):**
+
+| Model | Outcome |
+|-------|---------|
+| openai/gpt-oss-120b | Failed during probing; needed 400 tokens to answer a 12-token question |
+| nvidia/nemotron-3-ultra-550b-a55b:free | Crashed turn 3 (`did not include choices`) |
+| minimax/minimax-m3 | Crashed turn 4 (`did not include assistant content`) |
+| z-ai/glm-4.7-flash | Survived, but 661s/turn and one hallucinated metric |
+| deepseek/deepseek-v4-flash-0731 | 4 turns, zero incidents – the only clean one |
+
+Four of five failed or were unusable. Raising `max_tokens` to 32000 did not prevent budget exhaustion; the models scaled their reasoning to fill whatever budget they were given.
+
+**Reasoning capability is discoverable before spending anything.** OpenRouter's `/models` endpoint lists `reasoning` in `supported_parameters`, and that flag matched empirical probing exactly across all six models checked. `audit-models` could warn on this without guessing.
+
+## Robustness Gaps Found During Model Testing – All Fixed 2026-08-21
+
+Four gaps turned model failures into run-destroying, undiagnosable events. All are now addressed; the model verdicts above were collected before the fixes.
+
+- **No total request deadline** → fixed. `OpenRouterProvider` streams the response and enforces `llm.call_timeout_seconds` (default 300s) across the whole call, raising `LLMCallTimeoutError`. httpx's timeout applies per read, so a trickling provider reset it forever; calls were observed blocking 11–23 minutes at near-zero CPU. Streaming was chosen over a watchdog thread so nothing is orphaned when the deadline fires.
+- **Reasoning-budget exhaustion retried blindly** → fixed. Empty content beside a populated `reasoning` field now raises `LLMReasoningBudgetError` naming the finish reason and token count. Being an `LLMError`, it makes the router move on rather than repeat three identical attempts that cannot succeed. This is what killed nemotron and minimax.
+- **Provider errors discarded** → fixed. OpenRouter's own `error` object is included in the raised message, so a free-tier limit reads as a free-tier limit instead of "did not include choices".
+- **`audit-models` blind to withdrawn and reasoning models** → fixed. It now checks the live catalog: a configured model absent from it is flagged as possibly withdrawn, and `supported_parameters` containing `reasoning` is flagged with the budget risk. `--offline` skips the check. Running it across `scenarios/` immediately flagged `x-ai/grok-4.1-fast` in six scenarios.
+
+**Defaults migrated 2026-08-22.** `summary`, `analysis`, and `referee` now default to `qwen/qwen3-235b-a22b-2507`, and all seven scenarios plus the sweden-ai-2030 variants were swept off the withdrawn model. `_default_main` stays `google/gemini-3-flash-preview`: the catalog lists it as reasoning-capable, but probing shows it does not reason unprompted (11 output tokens for a trivial JSON task, no `reasoning` field), so it carries none of the budget risk.
+
+The sweep exposed a further bug, now fixed. `validate_llm_config` predated the `ModelRoute` migration and still checked raw strings: single-model entries matched neither its `str` nor its `list` branch and **were never validated at all**, while every fallback list failed with "invalid model in fallback list" regardless of contents. `is_valid_model_route` replaces it and is provider-aware, since `vendor/model` is an OpenRouter convention that Anthropic ids such as `claude-sonnet-4-6` do not follow. All seven scenarios validate cleanly for the first time.
+
 ## Other Qwen3-235b Variants (pricing only, not tested)
 
 | Model | Prompt/M | Completion/M | Notes |
@@ -153,5 +282,5 @@ Pricing should still be verified against OpenRouter before trusting older logged
 
 ## Not Yet Tested
 
-- openai/gpt-4o-mini
+- google/gemma-4-26b-a4b-it (non-reasoning, $0.05/$0.25 – the most promising untested budget candidate)
 - meta-llama/llama-3.3-70b-instruct

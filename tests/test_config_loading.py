@@ -224,4 +224,4 @@ def test_old_style_model_config_sets_summary_and_referee(tmp_path):
     assert config.llm.metrics == ModelRoute("openrouter", "legacy-model")
     assert config.llm.summary == ModelRoute("openrouter", "legacy-model")
     assert config.llm.analysis == ModelRoute("openrouter", "legacy-model")
-    assert config.llm.referee == ModelRoute("openrouter", "x-ai/grok-4.1-fast")
+    assert config.llm.referee == ModelRoute("openrouter", "qwen/qwen3-235b-a22b-2507")

@@ -180,7 +180,7 @@ class Orchestrator:
     def _create_routers_from_config(self) -> dict:
         """Create FallbackRouters based on scenario configuration."""
         config = self.scenario.config.llm
-        registry = ProviderRegistry()
+        registry = ProviderRegistry(call_timeout_seconds=config.call_timeout_seconds)
 
         router_cache: dict[str, FallbackRouter] = {}
 

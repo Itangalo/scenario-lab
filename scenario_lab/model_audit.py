@@ -254,6 +254,93 @@ def audit_model_configs(
     )
 
 
+def audit_catalog_availability(
+    path: Union[str, Path],
+    api_key: Optional[str] = None,
+    catalog: Optional[list[dict]] = None,
+) -> list[ModelAuditFinding]:
+    """Check configured OpenRouter models against the live catalog.
+
+    Two failure modes the name-pattern heuristics cannot see:
+
+    1. **The model no longer exists.** Models are withdrawn without notice, and
+       a withdrawn model makes every scenario configured for it fail at the
+       first call. Found the hard way when `qwen/qwen3-235b-a22b-2507` disappeared
+       while it was still the default for three tasks and six scenarios.
+    2. **The model can emit reasoning tokens.** ``supported_parameters``
+       advertises the capability, but not whether the model uses it unprompted.
+       Empirically minimax-m3, deepseek-v4-flash, glm-4.7-flash and
+       nemotron-3-ultra all reason without being asked, while
+       gemini-3-flash-preview does not despite carrying the same flag. The
+       warning therefore points at a risk to verify, not a defect.
+
+    Requires network access. Returns an empty list when the catalog cannot be
+    fetched, so callers degrade to offline heuristics rather than failing.
+    """
+    path = Path(path)
+    findings: list[ModelAuditFinding] = []
+
+    if catalog is None:
+        try:
+            catalog = fetch_openrouter_models(api_key=api_key)
+        except Exception:  # noqa: BLE001 - offline audit must still work
+            return findings
+    if not catalog:
+        return findings
+
+    by_id = {model.get("id"): model for model in catalog if isinstance(model, dict)}
+
+    for config_path in discover_config_paths(path):
+        config = load_config(config_path)
+
+        # One finding per model, listing every task that uses it, rather than
+        # six identical lines when a scenario points all tasks at one model.
+        tasks_by_route: dict[str, list[str]] = {}
+        for task, route in iter_configured_routes(config.llm):
+            if route.provider != "openrouter":
+                continue
+            tasks_by_route.setdefault(str(route), []).append(task)
+
+        for model, tasks in tasks_by_route.items():
+            model_id = model.split(":", 1)[1]
+            task_label = ", ".join(dict.fromkeys(tasks))
+            entry = by_id.get(model_id)
+
+            if entry is None:
+                findings.append(
+                    ModelAuditFinding(
+                        scope=str(config_path),
+                        task=task_label,
+                        model=model,
+                        message=(
+                            "is not in the OpenRouter catalog; it may have been "
+                            "withdrawn, and calls to it will fail"
+                        ),
+                    )
+                )
+                continue
+
+            supported = entry.get("supported_parameters") or []
+            if "reasoning" in supported or "include_reasoning" in supported:
+                findings.append(
+                    ModelAuditFinding(
+                        scope=str(config_path),
+                        task=task_label,
+                        model=model,
+                        message=(
+                            "can emit reasoning tokens before content. Some models in "
+                            "this class do so unprompted and exhaust max_tokens without "
+                            "producing anything parseable; others only reason on request "
+                            "and are perfectly safe. The catalog cannot tell them apart, "
+                            "so probe it with a small request before a batch, and leave "
+                            "headroom in llm.max_tokens"
+                        ),
+                    )
+                )
+
+    return findings
+
+
 def recommend_replacements(
     llm_config: LLMConfig,
     api_key: Optional[str] = None,
@@ -394,6 +481,35 @@ def iter_configured_models(llm_config: LLMConfig) -> Iterable[tuple[str, str]]:
     """Flatten all configured models into task/model pairs."""
     for location in iter_model_locations(llm_config):
         yield location.task, location.model
+
+
+def iter_configured_routes(llm_config: LLMConfig) -> Iterable[tuple[str, ModelRoute]]:
+    """Flatten all configured models into task/route pairs, provider intact.
+
+    ``iter_configured_models`` deliberately strips the provider prefix so the
+    regex hygiene rules match bare model names. Catalog checks need the
+    provider, since only OpenRouter models can be looked up in its catalog.
+    """
+
+    def _routes(value: object) -> Iterable[ModelRoute]:
+        if isinstance(value, ModelRoute):
+            yield value
+        elif isinstance(value, list):
+            for item in value:
+                yield from _routes(item)
+
+    for task in ("events", "rules", "metrics", "summary", "analysis", "referee"):
+        for route in _routes(getattr(llm_config, task)):
+            yield task, route
+
+    actors = llm_config.actors
+    if isinstance(actors, dict):
+        for actor_id, value in actors.items():
+            for route in _routes(value):
+                yield f"actors.{actor_id}", route
+    else:
+        for route in _routes(actors):
+            yield "actors", route
 
 
 def fetch_openrouter_models(api_key: Optional[str] = None) -> list[dict]:

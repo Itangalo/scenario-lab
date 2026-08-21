@@ -127,6 +127,16 @@ def describe_scenario(scenario_path: Path) -> dict[str, Any]:
             "max_turns": config.max_turns,
         },
         "output_language": config.output_language,
+        "research_questions": [
+            {
+                "id": rq.id,
+                "question": rq.question,
+                "metrics": list(rq.metrics),
+                "events": list(rq.events),
+                "notes": rq.notes,
+            }
+            for rq in config.research_questions
+        ],
         "actors": actors,
         "metrics": metrics,
         "events": events,
@@ -184,6 +194,21 @@ def format_describe_report(overview: dict[str, Any]) -> str:
         + (f" · **Language:** {overview['output_language']}" if overview["output_language"] else "")
     )
     lines.append("")
+
+    research_questions = overview.get("research_questions") or []
+    if research_questions:
+        lines.append(f"## Research Questions ({len(research_questions)})")
+        lines.append("")
+        for rq in research_questions:
+            lines.append(f"- **{rq['id']}** – {rq['question']}")
+            grounding = []
+            if rq["metrics"]:
+                grounding.append("metrics: " + ", ".join(f"`{m}`" for m in rq["metrics"]))
+            if rq["events"]:
+                grounding.append("events: " + ", ".join(f"`{e}`" for e in rq["events"]))
+            if grounding:
+                lines.append(f"  - {' · '.join(grounding)}")
+        lines.append("")
 
     lines.append(f"## Actors ({len(overview['actors'])})")
     lines.append("")
