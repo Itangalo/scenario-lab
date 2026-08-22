@@ -33,6 +33,7 @@ def provider(monkeypatch):
     # Patch the anthropic SDK import to avoid needing a real API key
     mock_sdk = MagicMock()
     mock_sdk.RateLimitError = type("RateLimitError", (Exception,), {})
+    mock_sdk.APIConnectionError = type("APIConnectionError", (Exception,), {})
     mock_sdk.APIStatusError = type("APIStatusError", (Exception,), {"status_code": 503, "message": "err"})
 
     monkeypatch.setattr("scenario_lab.providers.anthropic.AnthropicProvider.__init__",
@@ -70,6 +71,7 @@ class TestAnthropicProviderComplete:
         """Successful response returns LLMResponse with correct content and provider."""
         mock_sdk = MagicMock()
         mock_sdk.RateLimitError = type("RateLimitError", (Exception,), {})
+        mock_sdk.APIConnectionError = type("APIConnectionError", (Exception,), {})
         mock_sdk.APIStatusError = type("APIStatusError", (Exception,), {})
 
         prov = AnthropicProvider.__new__(AnthropicProvider)
@@ -94,6 +96,7 @@ class TestAnthropicProviderComplete:
         """get_usage() returns TokenUsage with provider='anthropic'."""
         mock_sdk = MagicMock()
         mock_sdk.RateLimitError = type("RateLimitError", (Exception,), {})
+        mock_sdk.APIConnectionError = type("APIConnectionError", (Exception,), {})
         mock_sdk.APIStatusError = type("APIStatusError", (Exception,), {})
 
         prov = AnthropicProvider.__new__(AnthropicProvider)
@@ -120,9 +123,11 @@ class TestAnthropicProviderComplete:
 
     def test_rate_limit_raises_rate_limit_error(self):
         RateLimitError = type("RateLimitError", (Exception,), {})
+        APIConnectionError = type("APIConnectionError", (Exception,), {})
         APIStatusError = type("APIStatusError", (Exception,), {})
         mock_sdk = MagicMock()
         mock_sdk.RateLimitError = RateLimitError
+        mock_sdk.APIConnectionError = APIConnectionError
         mock_sdk.APIStatusError = APIStatusError
 
         prov = AnthropicProvider.__new__(AnthropicProvider)
@@ -135,6 +140,7 @@ class TestAnthropicProviderComplete:
 
     def test_api_status_error_raises_llm_error(self):
         RateLimitError = type("RateLimitError", (Exception,), {})
+        APIConnectionError = type("APIConnectionError", (Exception,), {})
 
         class APIStatusError(Exception):
             status_code = 503
@@ -142,6 +148,7 @@ class TestAnthropicProviderComplete:
 
         mock_sdk = MagicMock()
         mock_sdk.RateLimitError = RateLimitError
+        mock_sdk.APIConnectionError = APIConnectionError
         mock_sdk.APIStatusError = APIStatusError
 
         prov = AnthropicProvider.__new__(AnthropicProvider)
@@ -156,6 +163,7 @@ class TestAnthropicProviderComplete:
         """Multiple TextBlocks in message.content are joined."""
         mock_sdk = MagicMock()
         mock_sdk.RateLimitError = type("RateLimitError", (Exception,), {})
+        mock_sdk.APIConnectionError = type("APIConnectionError", (Exception,), {})
         mock_sdk.APIStatusError = type("APIStatusError", (Exception,), {})
 
         block1 = MagicMock()
@@ -297,6 +305,7 @@ class TestAnthropicPromptCaching:
     def _provider(self):
         mock_sdk = MagicMock()
         mock_sdk.RateLimitError = type("RateLimitError", (Exception,), {})
+        mock_sdk.APIConnectionError = type("APIConnectionError", (Exception,), {})
         mock_sdk.APIStatusError = type("APIStatusError", (Exception,), {})
         prov = AnthropicProvider.__new__(AnthropicProvider)
         prov._sdk = mock_sdk

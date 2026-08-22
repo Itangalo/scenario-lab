@@ -12,6 +12,7 @@ from ..llm import (
     LLMError,
     LLMReasoningBudgetError,
     LLMResponse,
+    LLMTransientError,
     LLMUnsupportedStructuredError,
 )
 from .base import LLMProvider
@@ -226,7 +227,9 @@ class OpenRouterProvider(LLMProvider):
             ) from e
 
         except (httpx.TimeoutException, httpx.NetworkError) as e:
-            raise LLMError(f"Connection/timeout error from OpenRouter for {model}: {e}") from e
+            raise LLMTransientError(
+                f"Connection/timeout error from OpenRouter for {model}: {e}"
+            ) from e
 
     @staticmethod
     def _http_error_detail(error: httpx.HTTPStatusError) -> str:
@@ -306,7 +309,7 @@ class OpenRouterProvider(LLMProvider):
             ) from e
 
         except (httpx.TimeoutException, httpx.NetworkError) as e:
-            raise LLMError(
+            raise LLMTransientError(
                 f"Connection/timeout error from OpenRouter for {model}: {e}"
             ) from e
 

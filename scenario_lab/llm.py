@@ -24,6 +24,20 @@ class LLMParseError(LLMError):
     pass
 
 
+class LLMTransientError(LLMError):
+    """A transport-level failure that is worth retrying on the same route.
+
+    Read timeouts, connection resets, and network errors say nothing about
+    whether the request was acceptable – only that this attempt did not get
+    through. They were previously raised as plain ``LLMError``, which
+    ``FallbackRouter`` classifies as non-retryable, so a single slow response
+    ended an entire run whenever a scenario configured one route (which most
+    do). Observed killing a 10-turn run at turn 3.
+    """
+
+    pass
+
+
 class LLMReasoningBudgetError(LLMError):
     """A reasoning model spent its whole token budget before emitting content.
 
@@ -37,12 +51,15 @@ class LLMReasoningBudgetError(LLMError):
     pass
 
 
-class LLMCallTimeoutError(LLMError):
+class LLMCallTimeoutError(LLMTransientError):
     """A single LLM call exceeded its wall-clock deadline.
 
     Distinct from httpx's per-read timeout, which never fires when a provider
     trickles bytes indefinitely. Observed in practice as calls blocking for
     11-23 minutes with the process idle on an open socket.
+
+    Retryable, since provider congestion usually passes, and each attempt is
+    bounded by the deadline rather than open-ended.
     """
 
     pass

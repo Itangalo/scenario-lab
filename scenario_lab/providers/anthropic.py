@@ -4,7 +4,7 @@ import json
 import os
 from typing import Optional
 
-from ..llm import LLMError, LLMResponse, LLMUnsupportedStructuredError
+from ..llm import LLMError, LLMResponse, LLMUnsupportedStructuredError, LLMTransientError
 from .base import LLMProvider
 
 
@@ -82,6 +82,10 @@ class AnthropicProvider(LLMProvider):
             )
         except self._sdk.RateLimitError as e:
             raise LLMRateLimitError(f"Anthropic rate limit for {model}") from e
+        except self._sdk.APIConnectionError as e:
+            raise LLMTransientError(
+                f"Connection/timeout error from Anthropic for {model}: {e}"
+            ) from e
         except self._sdk.APIStatusError as e:
             raise LLMError(
                 f"Anthropic API error {e.status_code} for {model}: {e.message}"
@@ -162,6 +166,10 @@ class AnthropicProvider(LLMProvider):
             )
         except self._sdk.RateLimitError as e:
             raise LLMRateLimitError(f"Anthropic rate limit for {model}") from e
+        except self._sdk.APIConnectionError as e:
+            raise LLMTransientError(
+                f"Connection/timeout error from Anthropic for {model}: {e}"
+            ) from e
         except self._sdk.APIStatusError as e:
             # 4xx generally means the model/params don't support forced tools –
             # surface as unsupported so the caller falls back.

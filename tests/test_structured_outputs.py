@@ -174,6 +174,7 @@ class TestOpenRouterStructured:
 def _anthropic_provider():
     mock_sdk = MagicMock()
     mock_sdk.RateLimitError = type("RateLimitError", (Exception,), {})
+    mock_sdk.APIConnectionError = type("APIConnectionError", (Exception,), {})
     mock_sdk.APIStatusError = type(
         "APIStatusError", (Exception,), {"status_code": 500, "message": "err"}
     )

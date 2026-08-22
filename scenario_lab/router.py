@@ -7,6 +7,7 @@ from .llm import (
     LLMError,
     LLMRateLimitError,
     LLMResponse,
+    LLMTransientError,
     LLMUnsupportedStructuredError,
 )
 from .models import ModelRoute
@@ -16,10 +17,15 @@ from .providers.registry import ProviderRegistry
 class FallbackRouter:
     """Routes completion requests through an ordered list of ModelRoutes.
 
-    For each route, retries up to *max_retries* times on transient errors
-    (rate limits, timeouts, network errors, malformed responses). After
-    exhausting retries on a route it falls through to the next one.
-    After all routes fail, raises LLMError.
+    For each route, retries up to ``MAX_RETRIES`` times on transient errors –
+    rate limits, connection and read timeouts, wall-clock deadline overruns,
+    and malformed responses – backing off between attempts. After exhausting
+    retries on a route it falls through to the next one. After all routes
+    fail, raises LLMError.
+
+    Errors that say the request itself was unacceptable (a rejected model, an
+    exhausted reasoning budget) are *not* retried: repeating them identically
+    cannot succeed, so the router moves straight to the next route.
     """
 
     MAX_RETRIES = 3
@@ -77,8 +83,27 @@ class FallbackRouter:
                     print(f"  ✗ {route} unavailable (rate limit)")
                     break
 
+                except LLMTransientError as e:
+                    # Transport-level failure: the request never got a verdict,
+                    # so the same route deserves another attempt. Without this,
+                    # one slow response ended a whole run for the many
+                    # scenarios that configure a single route.
+                    if attempt < self.MAX_RETRIES - 1:
+                        wait_time = 2 ** attempt
+                        print(
+                            f"  Transient network error ({route}): {e}; "
+                            f"retrying in {wait_time}s "
+                            f"({attempt + 1}/{self.MAX_RETRIES})..."
+                        )
+                        time.sleep(wait_time)
+                        continue
+                    last_error = e
+                    print(f"  ✗ {route} unavailable after {self.MAX_RETRIES} attempts: {e}")
+                    break
+
                 except LLMError as e:
-                    # Non-retryable provider error – move to next route immediately
+                    # The request was seen and rejected – retrying it unchanged
+                    # cannot help, so move to the next route immediately.
                     last_error = e
                     print(f"  ✗ {route} failed: {e}")
                     break
@@ -150,6 +175,20 @@ class FallbackRouter:
                         continue
                     last_error = LLMError(f"Rate limit exhausted for {route}")
                     print(f"  ✗ {route} unavailable (rate limit)")
+                    break
+
+                except LLMTransientError as e:
+                    if attempt < self.MAX_RETRIES - 1:
+                        wait_time = 2 ** attempt
+                        print(
+                            f"  Transient network error ({route}): {e}; "
+                            f"retrying in {wait_time}s "
+                            f"({attempt + 1}/{self.MAX_RETRIES})..."
+                        )
+                        time.sleep(wait_time)
+                        continue
+                    last_error = e
+                    print(f"  ✗ {route} unavailable after {self.MAX_RETRIES} attempts: {e}")
                     break
 
                 except LLMError as e:
