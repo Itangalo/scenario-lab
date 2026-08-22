@@ -49,6 +49,39 @@ scenario and makes the omission a hard error.
 rather than pursuing an interest. Their power appears through the constitution
 and through `speaker_switches_mandate`.
 
+## What the Validation Runs Changed
+
+Four runs of 11-14 turns were used to calibrate this scenario before any batch.
+Three findings changed the design, and all three were the same shape: a
+constraint that mattered had been written somewhere the model was allowed to
+renegotiate.
+
+1. **Invariants moved from `metric-rules.md` to `constitution.md`.** The cap on
+   viability, the meaning of the Centre Party's vetoes, the limit on single-turn
+   swings and the ceiling on `time_pressure` are not evolving physics – they are
+   what the metrics mean and what the parties publicly committed to. In the
+   evolvable file the model rewrote the viability cap on *every* unfrozen turn,
+   eight turns running, and `viability_cross_bloc` swung 85 to 15 to 75. In the
+   constitution the same metric rose smoothly from 20 to 85 across fourteen
+   turns, and `time_pressure` stopped saturating halfway through the run.
+
+2. **Rule evolution disabled entirely.** Moving the invariants contained the
+   damage but did not stop the behaviour: the model simply rewrote whichever
+   rule sat nearest the action instead, again on every single turn.
+   `max_changes_per_turn: 1` means "exactly one" in practice. Since the physics
+   here is procedure written in law, evolution added cross-run variance without
+   insight.
+
+3. **Referee attempts raised from 2 to 3.** The constitution now carries more
+   that can be violated. Under the new constraints the referee flagged 4 of 14
+   and 9 of 13 turns and corrected all but one – a `viability_right_bloc` move
+   from 47 to 52 that crossed the procedural threshold on rhetoric alone. One
+   unresolved violation in 27 turns is the accepted residual.
+
+Earlier smoke tests fixed a `pm_vote_failed` condition that was evaluated at 40%
+before any vote could have been held, and anchored the viability reference points
+to procedural facts rather than sentiment.
+
 ## Assumptions
 
 Carried from the provenance tags in `source-material/`, where every claim is

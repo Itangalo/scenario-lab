@@ -17,21 +17,10 @@ in response to what the actors do. They may be refined as the run proceeds.
    size.** Do not treat lacking a majority as low viability. Treat *the existence
    of 175 members willing to vote against* as low viability.
 
-4. **Vetoes suppress only what they actually block.** The Centre Party's vetoes
-   are specific: no organised cooperation with the Sweden Democrats, and no
-   support for a government *containing* the Left Party. While both stand, cap
-   at 40 any constellation that requires Centre Party support and includes the
-   Left Party in government, and any that requires organised Centre Party
-   cooperation with the Sweden Democrats. An arrangement that includes neither
-   party is not blocked by these vetoes and must not be capped by this rule.
-   If a veto is publicly abandoned, remove its cap immediately.
-
-4b. **Viability above 50 requires a procedural step that has actually happened.**
-   Statements, policy annexes, private talks, listening sessions and media
-   campaigns are not procedural steps. Above 50 requires that the Speaker has
-   given an exploratory mandate, or that formal negotiations have begun, or that
-   parties have publicly declared how they will vote. If the narrative says no
-   formal negotiations have begun, no viability may exceed 50.
+4. **The veto caps and the procedural threshold are constitutional, not rules.**
+   See `constitution.md`, constraints 10 to 13. They are not open to
+   reinterpretation here and must not be restated, softened or qualified in this
+   file.
 
 5. **Viabilities are not required to sum to anything.** Several constellations can
    be simultaneously plausible or simultaneously dead. Only one can reach 100.
@@ -39,9 +28,10 @@ in response to what the actors do. They may be refined as the run proceeds.
 6. **Reaching 100 ends the process.** When a constellation reaches 100, a prime
    minister has been elected. Other viabilities drop toward 0 in the same turn.
 
-7. **Time pressure accumulates.** It rises 3–8 points per turn with no government,
-   faster after a failed prime-ministerial vote, and faster again as budget
-   deadlines approach. It does not fall while the deadlock continues.
+7. **Time pressure accumulates** with no government, faster after a failed
+   prime-ministerial vote and as budget deadlines approach, and does not fall
+   while the deadlock continues. Its per-turn ceiling is constitutional; see
+   `constitution.md`, constraint 14.
 
 8. **High time pressure makes concessions cheaper.** Above 50, parties become
    measurably more willing to break commitments and accept arrangements they

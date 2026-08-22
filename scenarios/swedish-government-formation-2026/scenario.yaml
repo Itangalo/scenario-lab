@@ -60,12 +60,20 @@ emergent_events:
   max_probability: 0.35
 
 rule_evolution:
-  # Raised from 2 after the first smoke test: the model unfroze on turn 3 and
-  # immediately both removed a brake and added a rule accelerating the metric
-  # that was already running away. Over 20 turns there is no need to let the
-  # physics move this early, and one change per turn is enough.
-  freeze_until_turn: 5
-  max_changes_per_turn: 1
+  # Disabled. Across four validation runs the model rewrote exactly one rule on
+  # every unfrozen turn -- eight or nine turns running, always whichever rule sat
+  # nearest the action. `max_changes_per_turn: 1` turned out to mean "exactly
+  # one", not "at most one". With the invariants moved into constitution.md the
+  # damage was contained, but the soft physics still differed between runs, and
+  # that is noise in exactly what this scenario measures: the distribution over
+  # outcomes. Swedish government formation has no emergent rules to discover --
+  # the procedure is law and the commitments are on the record.
+  freeze_until_turn: 21  # > max_turns, so rules never evolve
+  max_changes_per_turn: 0
 
 constitutional_enforcement:
-  max_attempts: 2
+  # Raised from 2 after the first validation batch: the constitution now carries
+  # the viability and pressure invariants that metric rules kept renegotiating,
+  # so there is more for the referee to catch and it needs room to correct
+  # rather than persist a violation.
+  max_attempts: 3
