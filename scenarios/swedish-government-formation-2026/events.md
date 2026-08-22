@@ -40,7 +40,7 @@ seat distribution, which is fixed at the start of the run and settled.
 
 ## Extraordinary Election Date Announced
 **ID:** snap_election_date_announced
-**Condition:** The process has visibly failed to converge – at least two prime-ministerial votes have been rejected, or the Speaker's soundings have collapsed with no constellation close to a majority. Do not trigger this merely because turns have passed.
+**Condition:** The process has visibly failed to converge. This requires that **at least two prime-ministerial votes have actually been held and rejected**, or that the Speaker has publicly abandoned the soundings with no constellation close to a majority. If neither has happened in the narrative so far, this event is impossible and its probability is 0, regardless of the base rate below. Turns passing, rising pressure and pessimistic commentary are **not** sufficient: an election date is announced by a government that has run out of options, not by a mood.
 **Probability:** snap_election_risk / 200
 **Can repeat:** No
 **Description:** A specific date for an extraordinary election is set and made public. This is the single sharpest event in the scenario. In December 2014 the announcement of an election date produced a cross-bloc agreement within weeks, and the election was called off – it was the dated threat, not the election, that forced the deal. Parties that lost ground on 13 September now face fighting a campaign they cannot afford, for a shortened mandate that runs only to the next ordinary election. Parties that gained face the same shortened mandate and a smaller prize than it first appears. Expect rapid, visible movement from whoever stands to lose most.
