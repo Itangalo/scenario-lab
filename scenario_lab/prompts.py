@@ -470,7 +470,12 @@ class PromptBuilder:
         return system, user
 
     def build_constitutional_referee_prompt(
-        self, turn: int, previous_metrics: dict, new_metrics: dict, narrative: str
+        self,
+        turn: int,
+        previous_metrics: dict,
+        new_metrics: dict,
+        narrative: str,
+        notepad: Optional[str] = None,
     ) -> tuple[str, str]:
         """Build prompts for constitutional referee step.
 
@@ -504,7 +509,11 @@ class PromptBuilder:
             "previous_metrics_json": json.dumps(previous_metrics, indent=2, ensure_ascii=False),
             "new_metrics_json": json.dumps(new_metrics, indent=2, ensure_ascii=False),
             "narrative": narrative,
-            "notepad": self.scenario.notepad.strip() or "(Empty)",
+            # The notepad for the turn under judgement, which includes anything
+            # this turn added. Falling back to scenario state would show the
+            # referee the *previous* turn's record, because scenario.notepad is
+            # only updated after this step.
+            "notepad": (notepad if notepad is not None else self.scenario.notepad).strip() or "(Empty)",
         }
 
         user = template.render(**context)
@@ -518,6 +527,7 @@ class PromptBuilder:
         new_metrics: dict,
         narrative: str,
         violations: str,
+        notepad: Optional[str] = None,
     ) -> tuple[str, str]:
         """Build prompts for correcting a metrics update after constitutional violations."""
         system = self._render_constitutional_system_prompt("constitutional_referee_correction")
@@ -536,7 +546,7 @@ class PromptBuilder:
             "new_metrics_json": json.dumps(new_metrics, indent=2, ensure_ascii=False),
             "narrative": narrative,
             "violations": violations,
-            "notepad": self.scenario.notepad.strip() or "(Empty)",
+            "notepad": (notepad if notepad is not None else self.scenario.notepad).strip() or "(Empty)",
             "output_language": self.scenario.config.output_language,
         }
 

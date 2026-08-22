@@ -430,13 +430,13 @@ class Orchestrator:
             if self.progress_tracker:
                 with self.progress_tracker.start_step(5, "") as step:
                     new_metrics, narrative = self._run_constitutional_referee_step(
-                        turn, new_metrics, narrative
+                        turn, new_metrics, narrative, notepad=notepad
                     )
                     step.update("Constitution validated")
             else:
                 print("\n[5/6] Validating against constitutional constraints...")
                 new_metrics, narrative = self._run_constitutional_referee_step(
-                    turn, new_metrics, narrative
+                    turn, new_metrics, narrative, notepad=notepad
                 )
                 print(f"  → Constitution validated")
 
@@ -1197,7 +1197,7 @@ class Orchestrator:
         return self._validate_and_clamp_metrics(metrics), narrative, notepad
 
     def _run_constitutional_referee_step(
-        self, turn: int, proposed_metrics: dict, narrative: str
+        self, turn: int, proposed_metrics: dict, narrative: str, notepad: Optional[str] = None
     ) -> tuple[dict, str]:
         """Step 5: Validate metrics against constitutional constraints (optional).
 
@@ -1205,6 +1205,10 @@ class Orchestrator:
             turn: Current turn number
             proposed_metrics: Proposed new metrics
             narrative: Narrative explaining the changes
+            notepad: This turn's notepad. Required for constraints that depend on
+                what has already happened -- scenario.notepad is not updated until
+                after this step, so relying on it shows the referee the previous
+                turn's record and a milestone recorded this turn is invisible.
 
         Returns:
             Tuple of (final_metrics, final_narrative) - may be corrected if violations found
@@ -1233,7 +1237,7 @@ class Orchestrator:
         for iteration in range(max_iterations):
             # Build referee prompt
             system, user = self.prompt_builder.build_constitutional_referee_prompt(
-                turn, previous_metrics, proposed_metrics, narrative
+                turn, previous_metrics, proposed_metrics, narrative, notepad=notepad
             )
 
             # Use dedicated referee client (cheaper/faster model)
@@ -1355,10 +1359,11 @@ class Orchestrator:
         proposed_metrics: dict,
         narrative: str,
         violations: str,
+        notepad: Optional[str] = None,
     ) -> Optional[tuple[dict, str]]:
         """Request a minimal metrics/narrative correction after constitutional violations."""
         system, user = self.prompt_builder.build_constitutional_correction_prompt(
-            turn, previous_metrics, proposed_metrics, narrative, violations
+            turn, previous_metrics, proposed_metrics, narrative, violations, notepad=notepad
         )
         client = self.llm_clients.get("metrics", self.llm_clients["events"])
         response = client.complete(system, user)

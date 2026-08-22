@@ -256,3 +256,47 @@ def test_referee_prompt_handles_an_empty_notepad(mock_scenario):
 
     assert "(Empty)" in user
 
+
+def test_referee_prompt_prefers_this_turns_notepad(mock_scenario):
+    """scenario.notepad is only updated after the referee runs.
+
+    Relying on it shows the referee the *previous* turn's record, so a milestone
+    recorded this turn is invisible exactly when it matters -- the referee then
+    blocks a change that the run's own notes justify.
+    """
+    mock_scenario.notepad = "- Mandate expected next turn."  # last turn's record
+    builder = PromptBuilder(mock_scenario)
+
+    _, user = builder.build_constitutional_referee_prompt(
+        turn=10, previous_metrics={}, new_metrics={}, narrative="n",
+        notepad="- Speaker has granted the mandate.",
+    )
+
+    assert "Speaker has granted the mandate" in user
+    assert "Mandate expected next turn" not in user
+
+
+def test_referee_correction_prompt_prefers_this_turns_notepad(mock_scenario):
+    mock_scenario.notepad = "- Stale."
+    builder = PromptBuilder(mock_scenario)
+
+    _, user = builder.build_constitutional_correction_prompt(
+        turn=10, previous_metrics={}, new_metrics={}, narrative="n", violations="v",
+        notepad="- Fresh milestone this turn.",
+    )
+
+    assert "Fresh milestone this turn" in user
+    assert "Stale" not in user
+
+
+def test_referee_prompt_falls_back_to_scenario_notepad(mock_scenario):
+    """Callers that do not pass one still get the scenario's record."""
+    mock_scenario.notepad = "- Recorded earlier."
+    builder = PromptBuilder(mock_scenario)
+
+    _, user = builder.build_constitutional_referee_prompt(
+        turn=3, previous_metrics={}, new_metrics={}, narrative="n",
+    )
+
+    assert "Recorded earlier" in user
+
