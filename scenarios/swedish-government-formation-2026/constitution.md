@@ -86,6 +86,13 @@ metric rule.
     withdrawing, a vote failing, a pledge publicly broken. Gradual shifts in
     sentiment do not justify large jumps in either direction.
 
+    **A movement of 25 points or fewer needs no special justification.** This
+    constraint is a ceiling on the size of a single step, not a requirement that
+    every step be attributed. Do not report a move of 25 or less as a violation
+    of this constraint — count the difference before objecting. In particular, a
+    rise to 100 that is within the ceiling is a government being formed, and
+    blocking it on this constraint prevents the run from ever concluding.
+
 14. **`deadlock_cost` may rise at most 12 points per turn**, and may only rise
     when the narrative names what is being lost – a missed decision, an
     approaching deadline, a failed vote, or an extraordinary election becoming
