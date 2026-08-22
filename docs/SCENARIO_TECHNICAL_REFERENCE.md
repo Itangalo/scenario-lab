@@ -346,6 +346,27 @@ The file may evolve during simulation and is versioned in turn outputs.
 
 `background/context.md` is loaded as raw markdown text and used as initial world narrative.
 
+### `termination` (optional)
+
+Ends a run before `max_turns` when the scenario reaches its own finish line.
+
+```yaml
+termination:
+  - id: government_formed
+    when: "viability_left_bloc >= 100 or viability_right_bloc >= 100"
+    description: "A government has been formed"
+  - id: snap_election_called
+    when: "snap_election_risk >= 100"
+    description: "Four votes failed; an extraordinary election is called"
+```
+
+- `when` is evaluated in Python after each turn, against current metric values, using the same safe evaluator as event probability formulas. Arithmetic, comparisons, boolean operators, `min()` and `max()`, and metric references are allowed; nothing else is.
+- Conditions are checked in order and the first match ends the run.
+- Validation rejects unknown metric references and warns if a condition is already true at the starting values, which would end every run at turn 1.
+- The triggering condition is recorded in the run's `summary.json` under `termination`.
+
+Use this whenever the scenario has a definite end. Without it, a run that resolves at turn 8 keeps simulating through turn 20, which costs money and lets the narrative drift away from its own conclusion.
+
 ## Starting-State Draws (optional)
 
 A scenario normally starts from the values declared in `metrics.md`, so repeated runs differ only in their event dice. When the *starting* world is itself uncertain, a run can be given a draw: a JSON file that sets metric values and adds context before turn 1.

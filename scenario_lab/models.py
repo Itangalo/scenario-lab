@@ -308,6 +308,25 @@ class EventOverrides:
 
 
 @dataclass
+class TerminationCondition:
+    """A condition that ends a run early when it becomes true.
+
+    Some scenarios have a definite finish: a government forms, a war ends, a
+    deadline passes. Without this the loop runs every turn regardless, spending
+    money on a world whose answer is already settled and inviting the model to
+    contradict it.
+
+    ``when`` is evaluated in Python against current metric values using the same
+    sandboxed AST evaluator as event probability formulas. It is deliberately not
+    an LLM judgement: whether a run is over should be reproducible.
+    """
+
+    id: str
+    when: str  # Safe expression over metric ids, e.g. "snap_election_risk >= 100"
+    description: str = ""
+
+
+@dataclass
 class ScenarioConfig:
     """Scenario configuration with optional inheritance."""
 
@@ -330,6 +349,15 @@ class ScenarioConfig:
         default_factory=ConstitutionalEnforcementConfig
     )
     logging: LoggingConfig = field(default_factory=LoggingConfig)
+
+    # Conditions that end a run before max_turns (evaluated after each turn).
+    termination: list[TerminationCondition] = field(default_factory=list)
+
+    # Some scenarios are incoherent without a starting-state draw (for example
+    # one whose world begins with an election result supplied per run). Setting
+    # this makes running without --initial-state a hard error instead of a
+    # silently broken simulation.
+    requires_initial_state: bool = False
 
     # Randomness: seed for the derived dice RNG (set at run time if None).
     random_seed: Optional[int] = None

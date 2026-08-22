@@ -93,6 +93,18 @@ By default a scenario has exactly one starting world: the values declared in `me
 - **Provenance:** The applied draw is recorded in the run's `config.json` under `initial_state`, so results can be traced back to the world they started from. `branch` inherits it with the rest of the parent config.
 - **Data, not code:** Scenario Lab *reads* the draw as data and never executes generator code. Producing the draws is a deliberate, separate step owned by the user; a scenario may ship a generator script in its own directory, but nothing in the loading path runs it. See Security Architecture below for why this boundary matters.
 
+### Termination Conditions (`orchestrator.py`, `scenario.yaml`)
+
+Some scenarios have a definite finish – a government forms, a deadline passes, a war ends. Without a stopping rule the loop runs every turn to `max_turns` regardless, which spends money simulating a world whose answer is already settled and invites the model to contradict its own resolution.
+
+- **Declaration:** an optional `termination` block in `scenario.yaml`, each entry with an `id`, a `when` expression, and an optional `description`.
+- **Evaluation:** after each completed turn, in Python, against current metric values. Deliberately *not* an LLM judgement: whether a run is over must be reproducible from the artifacts.
+- **Safety:** `when` is evaluated by the same sandboxed AST evaluator as event probability formulas (`validator.eval_boolean_expression`), so it is no more powerful than a probability formula. Comparisons and boolean operators were already supported.
+- **Robustness:** a condition that cannot be evaluated warns once per turn and is treated as unmet, so a bad expression cannot silently end every run at turn 1.
+- **Validation:** `validate` rejects conditions referencing unknown metrics and warns when a condition is already true at the scenario's starting values.
+- **Persistence:** the triggering condition is written to `summary.json` under `termination` as soon as it fires, so an interrupted run still records why it stopped.
+- **Ordering:** conditions are checked in declaration order and the first match wins.
+
 ### The Turn Loop (`orchestrator.py`)
 Each turn executes the following steps in order:
 

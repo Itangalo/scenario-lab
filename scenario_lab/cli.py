@@ -2516,6 +2516,14 @@ def main():
         print(f"❌ Error loading scenario: {e}")
         return 1
 
+    if scenario.config.requires_initial_state and scenario.initial_state is None:
+        print(
+            "❌ This scenario declares requires_initial_state: it is incoherent without "
+            "a starting-state draw."
+        )
+        print("   Pass --initial-state <file.json>, or --initial-states <dir> for a batch.")
+        return 1
+
     if scenario.initial_state is not None:
         state = scenario.initial_state
         print(f"  Initial state: {initial_state_path}")

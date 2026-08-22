@@ -343,6 +343,34 @@ class OutputManager:
             json.dumps(summary, indent=2, ensure_ascii=False)
         )
 
+    def record_termination(self, turn: int, condition) -> None:
+        """Record that a termination condition ended the run.
+
+        Written immediately rather than at the end, so an interrupted run still
+        shows why it stopped. ``finalize_summary`` copies the existing summary
+        before updating it, so this survives.
+        """
+        if not self.run_dir:
+            raise RuntimeError("Must call start_run() first")
+
+        summary_path = self.run_dir / "summary.json"
+        summary = {}
+        if summary_path.exists():
+            try:
+                summary = json.loads(summary_path.read_text(encoding="utf-8"))
+            except json.JSONDecodeError:
+                summary = {}
+
+        summary["termination"] = {
+            "turn": turn,
+            "condition_id": condition.id,
+            "when": condition.when,
+            "description": condition.description,
+        }
+        summary_path.write_text(
+            json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
     def finalize_summary(self, results: list[TurnResult]):
         """Mark summary as complete after simulation finishes.
 

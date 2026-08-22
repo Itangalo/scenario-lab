@@ -326,6 +326,29 @@ class Orchestrator:
         """
         return self.cost_tracker.get_run_costs()
 
+    def check_termination(self) -> Optional["TerminationCondition"]:
+        """Return the first termination condition that now holds, if any.
+
+        Evaluated in Python against current metric values, not by an LLM: whether
+        a run is over must be reproducible from the artifacts. A malformed or
+        unevaluable condition is reported and treated as not met, so a bad
+        expression cannot silently end every run at turn 1.
+        """
+        conditions = self.scenario.config.termination
+        if not conditions:
+            return None
+
+        from .validator import eval_boolean_expression
+
+        context = {m.id: m.value for m in self.scenario.metrics.metrics.values()}
+        for condition in conditions:
+            try:
+                if eval_boolean_expression(condition.when, context):
+                    return condition
+            except (ValueError, TypeError, NameError, ZeroDivisionError, SyntaxError) as exc:
+                print(f"  ⚠️  Termination condition '{condition.id}' could not be evaluated: {exc}")
+        return None
+
     def run_turn(self, turn: int) -> TurnResult:
         """Execute one complete turn.
 
@@ -1461,6 +1484,17 @@ def run_simulation(
             result = orchestrator.run_turn(turn)
             results.append(result)
             scenario.turn_history.append(result)
+
+            # Stop once the scenario's own finish line is crossed. Continuing
+            # would spend money simulating a world whose answer is settled, and
+            # invite the model to contradict it.
+            triggered = orchestrator.check_termination()
+            if triggered is not None:
+                detail = f" – {triggered.description}" if triggered.description else ""
+                print(f"\n■ Run ended at turn {turn}: {triggered.id}{detail}")
+                if output_manager:
+                    output_manager.record_termination(turn, triggered)
+                break
 
         # Display final cost summary
         run_costs = orchestrator.get_run_costs()

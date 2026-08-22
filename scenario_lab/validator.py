@@ -280,6 +280,27 @@ def eval_probability_formula(formula: str, context: dict) -> float:
     return float(result)
 
 
+def eval_boolean_expression(expression: str, context: dict) -> bool:
+    """Evaluate a boolean expression over metric values, safely.
+
+    Uses the same AST-based evaluator as probability formulas, so termination
+    conditions cannot execute code any more than a probability formula can.
+
+    Args:
+        expression: Expression such as "snap_election_risk >= 100"
+        context: Mapping of metric id to current value
+
+    Returns:
+        The expression's truth value
+
+    Raises:
+        ValueError: If the expression is unsafe or malformed
+        NameError: If it references a variable that is not a known metric
+    """
+    evaluator = SafeExpressionEvaluator(context)
+    return bool(evaluator.eval(expression))
+
+
 def is_valid_model_route(value: object) -> bool:
     """Check a configured model entry, which is a ModelRoute after loading.
 
@@ -661,6 +682,54 @@ def validate_prompt_overrides(scenario: Scenario) -> Tuple[List[str], List[str]]
     return errors, warnings
 
 
+def validate_termination(scenario: Scenario) -> Tuple[List[str], List[str]]:
+    """Validate termination conditions against the metrics they reference.
+
+    A condition that cannot be evaluated is worse than none: it fires a warning
+    every turn and the run silently plays out to max_turns anyway. Catching it
+    here costs nothing; catching it after a paid batch costs the batch.
+
+    Returns:
+        (errors, warnings)
+    """
+    errors: List[str] = []
+    warnings: List[str] = []
+
+    conditions = scenario.config.termination
+    if not conditions:
+        return errors, warnings
+
+    seen: set = set()
+    context = {m.id: m.value for m in scenario.metrics.metrics.values()}
+
+    for condition in conditions:
+        if condition.id in seen:
+            errors.append(f"termination: duplicate condition id '{condition.id}'")
+        seen.add(condition.id)
+
+        try:
+            eval_boolean_expression(condition.when, context)
+        except Exception as exc:
+            errors.append(
+                f"termination['{condition.id}']: cannot evaluate \"{condition.when}\" – {exc}. "
+                f"Available metrics: {', '.join(sorted(context))}"
+            )
+            continue
+
+        # A condition already true at the start values would end every run at
+        # turn 1, which is almost always a mistake rather than an intention.
+        try:
+            if eval_boolean_expression(condition.when, context):
+                warnings.append(
+                    f"termination['{condition.id}'] is already true at the scenario's "
+                    f"starting metric values, so every run would end at turn 1"
+                )
+        except Exception:
+            pass
+
+    return errors, warnings
+
+
 def validate_research_questions(scenario: Scenario) -> Tuple[List[str], List[str]]:
     """Validate declared research questions against what the scenario measures.
 
@@ -871,6 +940,9 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
     rq_errors, rq_warnings = validate_research_questions(scenario)
     errors.extend(rq_errors)
     warnings.extend(rq_warnings)
+    term_errors, term_warnings = validate_termination(scenario)
+    errors.extend(term_errors)
+    warnings.extend(term_warnings)
     prompt_errors, prompt_warnings = validate_prompt_overrides(scenario)
     errors.extend(prompt_errors)
     warnings.extend(prompt_warnings)

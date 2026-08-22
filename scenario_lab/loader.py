@@ -22,6 +22,7 @@ from .models import (
     Actor,
     InitialState,
     ResearchQuestion,
+    TerminationCondition,
     WorldState,
 )
 
@@ -178,6 +179,47 @@ def parse_research_questions(value: object) -> List[ResearchQuestion]:
         )
 
     return questions
+
+
+def parse_termination(value: object) -> List[TerminationCondition]:
+    """Parse the optional ``termination`` block from scenario.yaml.
+
+    Args:
+        value: Raw YAML value (list of mappings, or None)
+
+    Returns:
+        Parsed conditions, empty when the block is absent
+
+    Raises:
+        ValueError: If the block is malformed
+    """
+    if value is None:
+        return []
+    if not isinstance(value, list):
+        raise ValueError(f"termination must be a list, got {type(value).__name__}")
+
+    conditions: List[TerminationCondition] = []
+    for index, entry in enumerate(value):
+        if not isinstance(entry, dict):
+            raise ValueError(
+                f"termination[{index}] must be a mapping, got {type(entry).__name__}"
+            )
+        condition_id = entry.get("id")
+        when = entry.get("when")
+        if not isinstance(condition_id, str) or not condition_id.strip():
+            raise ValueError(f"termination[{index}] needs a non-empty string 'id'")
+        if not isinstance(when, str) or not when.strip():
+            raise ValueError(f"termination['{condition_id}'] needs a non-empty string 'when'")
+        description = entry.get("description", "")
+        if not isinstance(description, str):
+            raise ValueError(
+                f"termination['{condition_id}'].description must be a string, "
+                f"got {type(description).__name__}"
+            )
+        conditions.append(
+            TerminationCondition(id=condition_id, when=when, description=description)
+        )
+    return conditions
 
 
 _INITIAL_STATE_KEYS = {"metrics", "context", "notes"}
@@ -572,6 +614,11 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                 "max_turns": base_config.max_turns,
                 "actors": base_config.actor_ids,
                 "output_language": base_config.output_language,
+                "requires_initial_state": base_config.requires_initial_state,
+                "termination": [
+                    {"id": t.id, "when": t.when, "description": t.description}
+                    for t in base_config.termination
+                ],
                 "research_questions": [
                     {
                         "id": rq.id,
@@ -707,6 +754,8 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         actor_ids=data["actors"],
         output_language=data.get("output_language"),
         research_questions=parse_research_questions(data.get("research_questions")),
+        requires_initial_state=bool(data.get("requires_initial_state", False)),
+        termination=parse_termination(data.get("termination")),
         llm=llm_config,
         emergent_events=emergent_events,
         rule_evolution=rule_evolution,

@@ -414,6 +414,28 @@ def test_build_batch_run_specs_without_initial_states(scenario_dir):
     assert all("--initial-state" not in spec.command for spec in specs)
 
 
+# --- requires_initial_state -------------------------------------------------
+
+
+def test_requires_initial_state_defaults_to_false(scenario_dir):
+    scenario = load_scenario(scenario_dir)
+
+    assert scenario.config.requires_initial_state is False
+
+
+def test_requires_initial_state_parsed_from_yaml(scenario_dir):
+    """Scenarios whose world only exists once a draw is applied can say so."""
+    config = scenario_dir / "scenario.yaml"
+    config.write_text(
+        config.read_text(encoding="utf-8") + "requires_initial_state: true\n",
+        encoding="utf-8",
+    )
+
+    scenario = load_scenario(scenario_dir)
+
+    assert scenario.config.requires_initial_state is True
+
+
 # --- describe integration ---------------------------------------------------
 
 
