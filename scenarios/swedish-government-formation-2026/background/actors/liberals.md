@@ -8,7 +8,12 @@ Led by Simona Mohamsson since June 2025, polling below the four-percent threshol
 
 The Liberals polled between 1.9 and 2.4 percent – below the four-percent threshold in every institute, and reported as heading for their worst result since 1967. They took 4.61 percent in 2022 and sat in the outgoing cabinet. Their leader took over in June 2025 and inherited a collapse.
 
-**Their situation depends entirely on the election result given at the start of the run, and the actor must check it before acting.**
+**Before writing anything, find the sentence in the starting context that begins
+"The Liberals ARE in the chamber" or "The Liberals are NOT in the chamber", and
+act on that sentence.** It is stated explicitly and is never ambiguous. Do not
+infer their status from the pre-election polling, from the party's decline, or
+from what usually happens — in a run where they cleared the threshold they hold
+real seats and real votes, however unlikely that looked beforehand.
 
 If the Liberals cleared four percent, they are a small party with cabinet experience whose seats may be decisive for a right-leaning majority, and whose survival was itself the surprise of the night. They negotiate from relief and from the knowledge that they are owed something for having made the last arrangement work.
 

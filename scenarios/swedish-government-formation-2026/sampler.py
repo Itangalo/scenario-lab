@@ -255,6 +255,27 @@ def render_context(shares: dict[str, float], seats: dict[str, int]) -> str:
         "",
         f"Parties in the chamber: {', '.join(in_chamber)}.",
     ]
+    # Stated as its own sentence, in both directions. Everything else in this
+    # scenario -- the polling, the background, the actor file -- points to the
+    # Liberals being out, and a single row in a table does not override that
+    # prior: runs drawn with L holding 17 seats still had the Liberals acting
+    # "despite lacking parliamentary representation".
+    if shares["L"] >= THRESHOLD:
+        lines += [
+            "",
+            f"**The Liberals ARE in the chamber.** They cleared the four-percent "
+            f"threshold with {shares['L']:.1f}% and hold {seats['L']} seats. They vote, "
+            f"they count toward the 175 needed to block a government, and they can be "
+            f"given cabinet posts. Any narrative describing them as outside parliament, "
+            f"as lacking representation, or as commentators without votes is wrong.",
+        ]
+    else:
+        lines += [
+            "",
+            f"**The Liberals are NOT in the chamber.** They took {shares['L']:.1f}%, below "
+            f"the four-percent threshold, and hold no seats. They cannot vote, cannot be "
+            f"counted toward 175, and cannot receive cabinet posts.",
+        ]
     if out:
         lines.append(f"Below the four-percent threshold and out of the chamber: {', '.join(out)}.")
     lines += [
