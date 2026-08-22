@@ -20,9 +20,13 @@ seat distribution, which is fixed at the start of the run and settled.
 ## Stated Pledge Broken
 **ID:** pledge_broken
 **Condition:** A party is under sustained pressure to abandon a commitment it made before the election, and the cost of continued deadlock has begun to exceed the cost of the reversal.
-**Probability:** deadlock_cost / 250
+**Probability:** deadlock_cost / 600
 **Can repeat:** Yes
-**Description:** A party publicly abandons a pre-election commitment about who it will or will not work with. This unlocks arrangements that were previously blocked, at a cost in credibility that other parties will exploit.
+**Description:** A party publicly abandons a pre-election commitment about who it will or will not work with.
+
+**When this fires, the narrative must record an actual abandonment.** Name the party, quote or paraphrase what its leader now says, and name the specific commitment being dropped – "the Centre Party will not support a government containing the Left Party", "the Centre Party will not organise with the Sweden Democrats", "the Social Democrats rule out the Sweden Democrats". That statement is what constitutional constraint 12 requires to lift a veto, and lifting it removes the constraint 11 cap on every arrangement that veto was blocking.
+
+**This event is not general momentum.** It is one party breaking one named promise, at a real cost in credibility that its opponents will use against it for the rest of the run. A turn in which the event fires and the narrative has parties *reaffirming* their commitments has not modelled the event at all: if no pledge is actually abandoned, do not treat the event as having occurred and do not let it move any metric.
 
 ## Budget Cooperation Offered
 **ID:** budget_deal_offered
