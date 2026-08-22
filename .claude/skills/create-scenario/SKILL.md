@@ -114,6 +114,48 @@ Draft in this order (each file informs the next):
 8. `design-notes.md` – central question, key design decisions, assumptions,
    weak spots, ideas deliberately left out
 
+## Rule Economy (check at every iteration)
+
+Rules and constraints accumulate. Each one is added to stop a specific drift you
+just watched happen, which makes every individual addition feel justified — and
+the set as a whole grows past what a model can apply consistently. The failure
+mode then changes character: early runs fail because nothing drives the process,
+later runs fail because the model *misreads* a rule. Reading errors scale with
+how much there is to read.
+
+Watch for these signatures, and treat any of them as a sign to consolidate
+rather than extend:
+
+- **A rule that exists to counteract another rule.** "Metric X is capped at 50"
+  plus "except when Y, in which case the cap does not apply" is one idea written
+  as two rules. Replace both with a single statement of what the metric *means*,
+  and let the exception fall out of it.
+- **A clarification added because a rule was misapplied.** If you find yourself
+  writing "note that this does not mean...", the original rule was pointing at
+  the wrong thing.
+- **Unresolved violations rising.** When `max_attempts_reached` starts appearing,
+  the model cannot satisfy the set even when told exactly what is wrong. That is
+  over-constraint or mutual conflict, not carelessness.
+- **A rule that never fires.** If no run ever violates it and no narrative ever
+  cites it, it is dead text taking up attention.
+
+Two structural habits prevent most of this:
+
+1. **Separate invariants from modelling choices.** Invariants are facts of the
+   world — arithmetic, law, physics. They are short, they never conflict, and
+   they almost never need revision. Modelling choices are your decisions about
+   how a metric should behave. Both may live in `constitution.md`, but the
+   accretion happens entirely in the second group, so audit it separately and
+   hold it to a much smaller budget.
+2. **Put mechanical limits on the metric, not in prose.** A per-turn rate limit,
+   a floor, a ceiling — these belong in `metrics.md` as properties of the metric
+   where they apply uniformly, not as a numbered constraint that covers whichever
+   metrics you happened to be thinking about. A constraint written for one metric
+   silently leaves its neighbours unbounded.
+
+When a constraint set passes roughly a dozen entries, stop and ask what single
+underlying statement three of them are approximating. It is usually there.
+
 ## Phase 4: Review Checkpoint
 
 1. Run `python -m scenario_lab.cli validate scenarios/<name>` – fix errors.
@@ -142,6 +184,9 @@ Smoke-test quality checklist:
 - Narrative contains friction/setbacks, not smooth consensus
 - Rules changelog is grounded, not rewriting physics every turn
 - Nothing in the run contradicts source material or the constitution
+- The rule set is still small enough to be applied consistently — see Rule
+  Economy above, and check the constitutional-check artifacts for unresolved
+  violations, which are the earliest sign that it is not
 
 ## Phase 6: Handoff
 
