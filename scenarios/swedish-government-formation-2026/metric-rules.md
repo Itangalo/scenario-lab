@@ -1,0 +1,56 @@
+# Metric Rules
+
+Starting physics for the formation process. These describe how the metrics move
+in response to what the actors do. They may be refined as the run proceeds.
+
+1. **Viability rises with credible commitment, not with talk.** A constellation's
+   viability increases substantially (10–25 points) only when a party actually
+   commits to supporting or abstaining. Statements of openness without commitment
+   move it a little (0–5 points).
+
+2. **Abstention counts as much as support.** Under negative parliamentarism a
+   government passes unless 175 members vote against. When calculating whether a
+   constellation could survive a vote, count declared abstentions as helping it,
+   not as neutral.
+
+3. **A constellation that cannot reach 175 opponents is viable regardless of its
+   size.** Do not treat lacking a majority as low viability. Treat *the existence
+   of 175 members willing to vote against* as low viability.
+
+4. **Vetoes suppress only what they actually block.** The Centre Party's vetoes
+   are specific: no organised cooperation with the Sweden Democrats, and no
+   support for a government *containing* the Left Party. While both stand, cap
+   at 40 any constellation that requires Centre Party support and includes the
+   Left Party in government, and any that requires organised Centre Party
+   cooperation with the Sweden Democrats. An arrangement that includes neither
+   party is not blocked by these vetoes and must not be capped by this rule.
+   If a veto is publicly abandoned, remove its cap immediately.
+
+4b. **Viability above 50 requires a procedural step that has actually happened.**
+   Statements, policy annexes, private talks, listening sessions and media
+   campaigns are not procedural steps. Above 50 requires that the Speaker has
+   given an exploratory mandate, or that formal negotiations have begun, or that
+   parties have publicly declared how they will vote. If the narrative says no
+   formal negotiations have begun, no viability may exceed 50.
+
+5. **Viabilities are not required to sum to anything.** Several constellations can
+   be simultaneously plausible or simultaneously dead. Only one can reach 100.
+
+6. **Reaching 100 ends the process.** When a constellation reaches 100, a prime
+   minister has been elected. Other viabilities drop toward 0 in the same turn.
+
+7. **Time pressure accumulates.** It rises 3–8 points per turn with no government,
+   faster after a failed prime-ministerial vote, and faster again as budget
+   deadlines approach. It does not fall while the deadlock continues.
+
+8. **High time pressure makes concessions cheaper.** Above 50, parties become
+   measurably more willing to break commitments and accept arrangements they
+   previously refused. This is the main mechanism by which deadlock resolves.
+
+9. **Snap-election risk tracks failed votes.** It rises roughly 20–25 points per
+   failed prime-ministerial vote and falls when a viable constellation gains
+   commitments. At four failed votes it is 100 and the process ends.
+
+10. **SD cabinet proximity moves only on explicit concessions.** It rises when the
+    Moderates or Christian Democrats concede something concrete about portfolios,
+    and falls when they publicly rule it out. Sentiment alone does not move it.

@@ -1,0 +1,71 @@
+name: "Swedish Government Formation 2026"
+description: "Which government constellations are reachable from the 13 September 2026 election result, how often each occurs, and what decides it"
+start_date: "2026-09-13"
+time_scale: "1 week per turn"
+max_turns: 20
+
+# The world begins with an election result supplied per run by sampler.py.
+# Without a draw there is no result and the simulation is incoherent, so make
+# that a hard error rather than a silently broken run.
+requires_initial_state: true
+
+actors:
+  - social_democrats
+  - moderates
+  - sweden_democrats
+  - centre_party
+  - left_party
+  - christian_democrats
+  - green_party
+  - liberals
+
+research_questions:
+  - id: rq_reachable_constellations
+    question: "Which government constellations are reachable from the 2026 election result, and how often does each occur?"
+    metrics: [viability_right_bloc, viability_left_bloc, viability_cross_bloc, snap_election_risk]
+    events: [pm_vote_failed, pledge_broken, speaker_switches_mandate]
+    notes: "The central question. Read the answer off which viability reaches 100, or whether snap_election_risk does instead."
+  - id: rq_sd_in_cabinet
+    question: "Under what conditions does SD move from support party into cabinet, rather than being kept outside again?"
+    metrics: [sd_in_cabinet, viability_right_bloc]
+    events: [pledge_broken, leader_resigns]
+  - id: rq_threshold_leverage
+    question: "How much does the Liberals' threshold outcome change which government forms?"
+    metrics: [viability_right_bloc, viability_left_bloc]
+    events: [pm_vote_failed]
+    notes: "Answered by comparing the honest batch against the batch conditioned on L clearing 4 percent. Never pool the two."
+
+# The run has a definite finish: a prime minister is elected, or four failed
+# votes force an extraordinary election. Without these the loop would keep
+# simulating a world whose answer is already settled.
+termination:
+  - id: government_formed
+    when: "viability_right_bloc >= 100 or viability_left_bloc >= 100 or viability_cross_bloc >= 100"
+    description: "A government has been formed and its prime minister elected"
+  - id: snap_election_called
+    when: "snap_election_risk >= 100"
+    description: "Four prime-ministerial votes failed; an extraordinary election is called"
+
+llm:
+  model: "openrouter:qwen/qwen3-235b-a22b-2507"
+  temperature: 0.7
+  max_tokens: 2500
+  max_tokens_by_task:
+    rules: 3500
+  probability_samples: 3
+
+emergent_events:
+  enabled: true
+  max_per_turn: 1
+  max_probability: 0.35
+
+rule_evolution:
+  # Raised from 2 after the first smoke test: the model unfroze on turn 3 and
+  # immediately both removed a brake and added a rule accelerating the metric
+  # that was already running away. Over 20 turns there is no need to let the
+  # physics move this early, and one change per turn is enough.
+  freeze_until_turn: 5
+  max_changes_per_turn: 1
+
+constitutional_enforcement:
+  max_attempts: 2
