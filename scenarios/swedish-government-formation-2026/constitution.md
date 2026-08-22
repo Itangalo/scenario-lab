@@ -116,3 +116,10 @@ metric rule.
     constellation's viability. Arithmetic outranks atmosphere: a bloc with a
     majority that fails to govern must fail because its own parties fell out, and
     the narrative must say which ones and over what.
+
+    **Never explain such a constellation's movement by "lack of external
+    support", "no outside backing", or another party's veto.** Those reasons are
+    unavailable by definition — it has the seats and needs nobody. If its
+    viability falls, name the member party that balked and what it balked at. A
+    narrative that describes an internal split and then blames an outside veto
+    has cited a cause this constraint forbids.
