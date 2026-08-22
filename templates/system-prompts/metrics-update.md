@@ -23,6 +23,18 @@ When judging success and writing the narrative, be realistic rather than harmoni
 * If every actor's actions succeeded cleanly this turn, reconsider your assessment before finalizing it.
 * Update the notepad with important information that should be remembered for the next turn, but doesn't fit in metrics or the narrative. This can be ongoing events, conditions that have come into effect, or other information affecting future turns. The content you write here will REPLACE the current notepad. Make sure to include any previous notes you wish to keep. If nothing needs to be noted, leave the notepad empty.
 
+{% if constitution %}
+## Constitutional Constraints
+
+These are hard rules of this world. They are checked after you answer, and an
+update that breaks one is sent back to be redone – so read them before deciding
+metric values, and write a narrative that is consistent with them rather than one
+that has to be corrected afterwards. Where a constraint is conditional, check
+whether its condition actually holds before applying it.
+
+{{constitution}}
+
+{% endif %}
 Respond with a Markdown text with the following content:
 
 * Heading level 2: Metrics

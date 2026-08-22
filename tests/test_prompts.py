@@ -300,3 +300,28 @@ def test_referee_prompt_falls_back_to_scenario_notepad(mock_scenario):
 
     assert "Recorded earlier" in user
 
+
+def test_metrics_prompt_shows_the_constitution(mock_scenario):
+    """The Game Master wrote metrics and narrative blind to the constraints.
+
+    The referee only gates afterwards, so every violation cost an extra round
+    trip and the narrative was built on reasoning the constraints forbid --
+    the referee could patch the numbers but not the story's logic.
+    """
+    mock_scenario.constitution = "1. Seats never change.\n2. A bloc with 175 cannot be blocked."
+    builder = PromptBuilder(mock_scenario)
+
+    system, _ = builder.build_metrics_prompt(1, {"actor1": "acted"}, [])
+
+    assert "Constitutional Constraints" in system
+    assert "A bloc with 175 cannot be blocked" in system
+
+
+def test_metrics_prompt_omits_the_section_without_a_constitution(mock_scenario):
+    mock_scenario.constitution = None
+    builder = PromptBuilder(mock_scenario)
+
+    system, _ = builder.build_metrics_prompt(1, {"actor1": "acted"}, [])
+
+    assert "Constitutional Constraints" not in system
+

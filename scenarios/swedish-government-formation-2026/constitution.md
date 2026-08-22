@@ -91,3 +91,21 @@ metric rule.
     approaching deadline, a failed vote, or an extraordinary election becoming
     more concrete. It may not rise merely because a week has passed, and may not
     fall while no government has been formed.
+
+15. **A constellation holding 175 or more seats cannot be blocked from outside.**
+    Under negative parliamentarism no one can assemble 175 votes against a
+    constellation that already holds 175 itself. For such a constellation:
+
+    - Constraint 11 does not apply. It needs no outside party's support, so no
+      outside party's veto touches it. The Centre Party's vetoes are irrelevant
+      to a bloc that does not need the Centre Party.
+    - Constraint 10's ceiling is satisfied by the arithmetic. It does not need a
+      procedural step to be *possible*; it needs one only to be *enacted*.
+    - Its viability starts at no less than 60 and moves on whether its own member
+      parties agree with each other — over portfolios, policy and the premiership
+      — not on what anyone outside it does.
+
+    Check the seat table in the starting context before deciding any
+    constellation's viability. Arithmetic outranks atmosphere: a bloc with a
+    majority that fails to govern must fail because its own parties fell out, and
+    the narrative must say which ones and over what.
