@@ -509,6 +509,12 @@ class OutputManager:
                 "suppress": list(overrides.suppress),
             }
 
+        # Record the starting-state draw so a run can be traced back to the world
+        # it started from. Without this, a batch over sampled initial conditions
+        # produces results nobody can attribute afterwards.
+        if self.scenario.initial_state is not None:
+            config["initial_state"] = self.scenario.initial_state.to_dict()
+
         (self.run_dir / "config.json").write_text(
             json.dumps(config, indent=2, ensure_ascii=False)
         )

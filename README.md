@@ -247,6 +247,18 @@ Use `--repeat` when you want to run the same scenario multiple times. Use `--var
 
 `batch-run` launches multiple isolated child processes and limits concurrency with `--max-concurrency`, which is safer than starting many foreground runs manually. In an interactive terminal it shows an inline batch dashboard with one row per job, including current turn, current activity, and the latest warning.
 
+### Vary the starting world, not just the dice
+
+By default every run starts from the metric values in `metrics.md`, so repeated runs differ only in their event rolls. When the starting world is itself uncertain, give each run its own draw:
+
+```bash
+python -m scenario_lab.cli describe scenarios/<id> --initial-state draws/draw-07.json
+python -m scenario_lab.cli run scenarios/<id> --initial-state draws/draw-07.json
+python -m scenario_lab.cli batch-run scenarios/<id> --repeat 20 --initial-states draws/
+```
+
+A draw is a small JSON file that sets metric values and adds context before turn 1. `--initial-states` assigns one distinct draw per run in sorted order, and needs at least as many files as runs. Each run records the draw it used in `config.json`. See [docs/SCENARIO_TECHNICAL_REFERENCE.md](docs/SCENARIO_TECHNICAL_REFERENCE.md) for the file format.
+
 ### Resume many incomplete runs in parallel
 
 ```bash

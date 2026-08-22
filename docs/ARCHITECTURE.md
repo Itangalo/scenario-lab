@@ -76,11 +76,22 @@ V4 represents a radical simplification from previous versions. Instead of comple
   * **Rule Evolution Policy:** Optional `rule_evolution.freeze_until_turn` and `rule_evolution.max_changes_per_turn` let scenarios make early rules effectively fixed and keep later rule edits small.
   * **Constitutional Enforcement Policy:** Optional `constitutional_enforcement.max_attempts` and `constitutional_enforcement.on_failure` tune how hard the referee gate is.
   * **Logging:** Optional `logging.llm_io` enables per-call LLM prompt/response transcripts. It can also be turned on per run with the `--log-llm-io` CLI flag.
-  * **Run-time Config Fields:** `config.json` additionally records `random_seed` (the dice RNG seed for the run), `logging.llm_io`, and, for branch counterfactuals, `event_overrides: {"turn": N, "force": [...], "suppress": [...]}`. `random_seed` and `event_overrides` are set at run time rather than declared in `scenario.yaml`.
+  * **Run-time Config Fields:** `config.json` additionally records `random_seed` (the dice RNG seed for the run), `logging.llm_io`, and, for branch counterfactuals, `event_overrides: {"turn": N, "force": [...], "suppress": [...]}`. `random_seed` and `event_overrides` are set at run time rather than declared in `scenario.yaml`. When a run is given a starting-state draw, `config.json` also records `initial_state` (see Starting-State Draws below).
 - **Markdown Resources**: `metrics.md`, `events.md`, `metric-rules.md`, `background/*.md`.
 - **Optional Resources**:
   * `constitution.md`: Constitutional constraints (invariant rules) for the scenario.
 - **Inheritance:** Scenarios can inherit from others via the `base` field in `scenario.yaml`.
+
+### Starting-State Draws (`loader.py`, `--initial-state`)
+
+By default a scenario has exactly one starting world: the values declared in `metrics.md`. Runs then differ only in their event dice. Some questions instead hinge on uncertainty in the *starting* world, where the interesting variation is present before turn 1 (for example an election result that is still unknown, where small shifts change which coalitions are arithmetically possible at all).
+
+- **Mechanism:** `run`, `describe`, and `batch-run` accept a JSON file of starting-state overrides. `load_scenario(path, initial_state=...)` applies it immediately after loading, before any turn executes.
+- **File format:** A JSON object with three optional keys: `metrics` (metric id to number), `context` (markdown appended to `background/context.md` and to the initial world state), and `notes` (free text for provenance). Unknown top-level keys are rejected.
+- **Strictness:** Unknown metric ids and out-of-bounds values are hard errors, not clamped. A draw that misses in either way indicates a broken generator, and silently repairing it would bias the batch while hiding the cause.
+- **Batches:** `batch-run --initial-states <dir>` assigns one distinct draw per job in sorted order. Too few draws for the number of jobs is an error rather than a cycle, because reusing draws would silently narrow the distribution the batch reports on.
+- **Provenance:** The applied draw is recorded in the run's `config.json` under `initial_state`, so results can be traced back to the world they started from. `branch` inherits it with the rest of the parent config.
+- **Data, not code:** Scenario Lab *reads* the draw as data and never executes generator code. Producing the draws is a deliberate, separate step owned by the user; a scenario may ship a generator script in its own directory, but nothing in the loading path runs it. See Security Architecture below for why this boundary matters.
 
 ### The Turn Loop (`orchestrator.py`)
 Each turn executes the following steps in order:
@@ -223,6 +234,7 @@ New providers can be registered without changing orchestrator code.
 - **CLI Command:** `python -m scenario_lab.cli batch-run <target...> [options]`
 - **Target Types:** Accepts scenario directories and variant YAML files. With `--variants`, a scenario directory expands to all YAML files in its `variants/` directory.
 - **Repeat Runs:** `--repeat N` runs each resolved target N times, which supports Monte Carlo-style repeated runs of the same scenario without repeating the path manually.
+- **Starting-State Draws:** `--initial-states <dir>` assigns one distinct JSON draw per job, so a batch can explore a distribution of starting worlds rather than only a distribution of event outcomes.
 - **Execution Model:** Batch jobs run as separate child processes that invoke the normal `run` command. This keeps each simulation isolated while preserving the same orchestration and persistence behavior as single runs.
 - **Live Status:** In interactive terminals, batch commands stream child output into an inline dashboard that shows one row per job, including current turn, current activity, and the latest warning.
 - **Concurrency Control:** Uses bounded parallelism via `--max-concurrency` rather than launching every job at once.
@@ -552,6 +564,7 @@ Scenario Lab implements defense-in-depth security measures to protect against co
 
 ### Input Security
 - **Safe YAML Loading:** Uses `yaml.safe_load()` instead of `yaml.load()` to prevent arbitrary object deserialization.
+- **Data-Only Starting States:** Starting-state draws are parsed with `json.loads` and validated field by field. Scenario files cannot declare a script for Scenario Lab to execute, and the loading path never runs generator code. This preserves the same guarantee as the sandboxed template environment and the AST-based probability evaluator: content inside a scenario directory is data to be read, never code to be run.
 - **AST-Based Expression Evaluation:** Event probability formulas are evaluated using a safe AST-based evaluator, not `eval()`. Only allows basic arithmetic operations and metric variable references.
 - **API Key Handling:** API keys are only loaded from environment variables, never hardcoded or logged.
 

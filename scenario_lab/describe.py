@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import re
 from pathlib import Path
-from typing import Any, Union
+from typing import Any, Optional, Union
 
 from .loader import load_scenario
 from .models import ModelRoute, Scenario
@@ -35,16 +35,21 @@ def _count_constraints(constitution: str) -> int:
     return len(re.findall(r"^\s*(?:\d+\.|[-*])\s+\S", constitution, flags=re.MULTILINE))
 
 
-def describe_scenario(scenario_path: Path) -> dict[str, Any]:
+def describe_scenario(
+    scenario_path: Path,
+    initial_state: Optional[Path] = None,
+) -> dict[str, Any]:
     """Build a structured overview of a scenario directory.
 
     Args:
         scenario_path: Path to the scenario directory.
+        initial_state: Optional starting-state draw to apply first, so the
+            overview shows the world a specific run would actually begin from.
 
     Returns:
         Dict suitable for JSON export or markdown rendering.
     """
-    scenario: Scenario = load_scenario(scenario_path)
+    scenario: Scenario = load_scenario(scenario_path, initial_state=initial_state)
     scenario_dir = Path(scenario_path)
     config = scenario.config
 

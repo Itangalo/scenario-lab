@@ -347,6 +347,35 @@ class ScenarioConfig:
 
 
 @dataclass
+class InitialState:
+    """Starting-state overrides applied to a scenario before turn 1.
+
+    Supplied as a JSON data file via ``--initial-state``. This lets a batch of
+    runs explore a distribution of starting worlds (a Monte Carlo over initial
+    conditions) rather than only over event dice.
+
+    Scenario Lab reads this file as *data* and never executes scenario-supplied
+    code. Producing the file is a deliberate, separate step owned by the user,
+    which keeps the code-execution guarantees described in
+    ``docs/ARCHITECTURE.md`` intact.
+    """
+
+    metrics: dict[str, float] = field(default_factory=dict)
+    context: str = ""
+    notes: str = ""
+    source: Optional[str] = None  # Path the state was loaded from, for provenance
+
+    def to_dict(self) -> dict:
+        """Serialize for persistence alongside run artifacts."""
+        return {
+            "metrics": dict(self.metrics),
+            "context": self.context,
+            "notes": self.notes,
+            "source": self.source,
+        }
+
+
+@dataclass
 class Scenario:
     """Complete scenario state."""
 
@@ -361,6 +390,9 @@ class Scenario:
     constitution: Optional[str] = None  # Constitutional constraints (optional)
     custom_system_prompts: dict[str, str] = field(default_factory=dict)  # Optional scenario-specific system prompts
     custom_user_prompts: dict[str, str] = field(default_factory=dict)  # Optional scenario-specific user prompts
+
+    # Starting-state overrides applied before turn 1 (via --initial-state).
+    initial_state: Optional[InitialState] = None
 
     # History
     turn_history: list[TurnResult] = field(default_factory=list)

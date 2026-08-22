@@ -1,6 +1,7 @@
 """Scenario loading from disk."""
 
 import calendar
+import json
 import re
 import yaml
 from datetime import date, datetime, timedelta
@@ -19,6 +20,7 @@ from .models import (
     Metrics,
     Event,
     Actor,
+    InitialState,
     ResearchQuestion,
     WorldState,
 )
@@ -178,11 +180,139 @@ def parse_research_questions(value: object) -> List[ResearchQuestion]:
     return questions
 
 
-def load_scenario(path: Union[Path, str]) -> Scenario:
+_INITIAL_STATE_KEYS = {"metrics", "context", "notes"}
+
+
+def load_initial_state(path: Union[Path, str]) -> InitialState:
+    """Load starting-state overrides from a JSON data file.
+
+    The file is read as data only. Unknown top-level keys are rejected so that
+    a typo in a generated draw fails loudly instead of being silently ignored.
+
+    Args:
+        path: Path to the initial-state JSON file
+
+    Returns:
+        Parsed InitialState
+
+    Raises:
+        FileNotFoundError: If the file does not exist
+        ValueError: If the file is not a JSON object with the expected shape
+    """
+    path = Path(path)
+    if not path.exists():
+        raise FileNotFoundError(f"Initial state file not found: {path}")
+
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as exc:
+        raise ValueError(f"Initial state file {path} is not valid JSON: {exc}") from exc
+
+    if not isinstance(data, dict):
+        raise ValueError(
+            f"Initial state file {path} must contain a JSON object, got {type(data).__name__}"
+        )
+
+    unknown = sorted(set(data) - _INITIAL_STATE_KEYS)
+    if unknown:
+        allowed = ", ".join(sorted(_INITIAL_STATE_KEYS))
+        raise ValueError(
+            f"Initial state file {path} has unknown key(s): {', '.join(unknown)}. "
+            f"Allowed keys: {allowed}"
+        )
+
+    raw_metrics = data.get("metrics", {})
+    if not isinstance(raw_metrics, dict):
+        raise ValueError(
+            f"Initial state file {path}: 'metrics' must be an object, "
+            f"got {type(raw_metrics).__name__}"
+        )
+
+    metrics: dict[str, float] = {}
+    for metric_id, value in raw_metrics.items():
+        if not isinstance(metric_id, str):
+            raise ValueError(
+                f"Initial state file {path}: metric ids must be strings, got {metric_id!r}"
+            )
+        # bool is a subclass of int; a boolean metric value is always a mistake.
+        if isinstance(value, bool) or not isinstance(value, (int, float)):
+            raise ValueError(
+                f"Initial state file {path}: metric '{metric_id}' must be a number, "
+                f"got {type(value).__name__}"
+            )
+        metrics[metric_id] = float(value)
+
+    context = data.get("context", "")
+    if not isinstance(context, str):
+        raise ValueError(
+            f"Initial state file {path}: 'context' must be a string, "
+            f"got {type(context).__name__}"
+        )
+
+    notes = data.get("notes", "")
+    if not isinstance(notes, str):
+        raise ValueError(
+            f"Initial state file {path}: 'notes' must be a string, got {type(notes).__name__}"
+        )
+
+    return InitialState(
+        metrics=metrics,
+        context=context,
+        notes=notes,
+        source=str(path),
+    )
+
+
+def apply_initial_state(scenario: Scenario, state: InitialState) -> None:
+    """Apply starting-state overrides to a freshly loaded scenario, in place.
+
+    Metric ids must exist and values must fall inside the declared bounds. Both
+    are hard errors rather than silent fixes: a draw that names an unknown
+    metric or lands out of bounds indicates a broken sampler, and clamping it
+    would hide that while quietly biasing the batch.
+
+    Args:
+        scenario: Scenario to modify
+        state: Parsed initial state
+
+    Raises:
+        ValueError: If a metric is unknown or its value is out of bounds
+    """
+    unknown = sorted(set(state.metrics) - set(scenario.metrics.metrics))
+    if unknown:
+        known = ", ".join(sorted(scenario.metrics.metrics))
+        raise ValueError(
+            f"Initial state names unknown metric(s): {', '.join(unknown)}. "
+            f"Scenario metrics: {known}"
+        )
+
+    for metric_id, value in state.metrics.items():
+        metric = scenario.metrics.metrics[metric_id]
+        if not (metric.min_value <= value <= metric.max_value):
+            raise ValueError(
+                f"Initial state sets '{metric_id}' to {value}, outside its bounds "
+                f"[{metric.min_value}, {metric.max_value}]"
+            )
+        metric.value = value
+
+    if state.context:
+        # The world state starts as a copy of the context, so both need the
+        # addition for turn 1 prompts to see the same starting world.
+        scenario.context = f"{scenario.context.rstrip()}\n\n{state.context.strip()}\n"
+        scenario.world_state.narrative = scenario.context
+
+    scenario.initial_state = state
+
+
+def load_scenario(
+    path: Union[Path, str],
+    initial_state: Optional[Union[Path, str]] = None,
+) -> Scenario:
     """Load a complete scenario from directory or YAML file.
 
     Args:
         path: Either a directory containing scenario.yaml, or a direct path to a .yaml file
+        initial_state: Optional path to a JSON file with starting-state overrides
 
     Returns:
         Loaded Scenario
@@ -252,7 +382,7 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
     # Load custom user prompts if they exist
     custom_user_prompts = load_custom_user_prompts(scenario_dir)
 
-    return Scenario(
+    scenario = Scenario(
         config=config,
         metrics=metrics,
         events=events,
@@ -264,6 +394,11 @@ def load_scenario(path: Union[Path, str]) -> Scenario:
         custom_system_prompts=custom_system_prompts,
         custom_user_prompts=custom_user_prompts,
     )
+
+    if initial_state is not None:
+        apply_initial_state(scenario, load_initial_state(initial_state))
+
+    return scenario
 
 
 def load_custom_user_prompts(scenario_dir: Path) -> dict[str, str]:

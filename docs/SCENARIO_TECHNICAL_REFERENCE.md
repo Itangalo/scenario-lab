@@ -346,6 +346,41 @@ The file may evolve during simulation and is versioned in turn outputs.
 
 `background/context.md` is loaded as raw markdown text and used as initial world narrative.
 
+## Starting-State Draws (optional)
+
+A scenario normally starts from the values declared in `metrics.md`, so repeated runs differ only in their event dice. When the *starting* world is itself uncertain, a run can be given a draw: a JSON file that sets metric values and adds context before turn 1.
+
+```json
+{
+  "metrics": { "seats_left_bloc": 168, "seats_right_bloc": 181 },
+  "context": "## Election Result\n\nThe Liberals fell below the threshold.",
+  "notes": "draw 07, sampler seed 12345"
+}
+```
+
+All three keys are optional; unknown top-level keys are rejected.
+
+- `metrics` – metric id to number. Ids must exist in `metrics.md` and values must fall inside the declared bounds. Both are hard errors, never clamped: a miss means the generator is broken, and repairing it silently would bias the batch.
+- `context` – markdown appended to `background/context.md` and to the initial world narrative.
+- `notes` – free text, recorded for provenance.
+
+Usage:
+
+```bash
+# Inspect the world one draw starts from, without running anything
+python -m scenario_lab.cli describe scenarios/<id> --initial-state draws/draw-07.json
+
+# One run from one draw
+python -m scenario_lab.cli run scenarios/<id> --initial-state draws/draw-07.json
+
+# A batch where each run gets its own draw, assigned in sorted order
+python -m scenario_lab.cli batch-run scenarios/<id> --repeat 20 --initial-states draws/
+```
+
+`--initial-states` needs at least as many `.json` files as there are runs; too few is an error rather than a cycle, since reusing draws would narrow the distribution the batch reports on. The applied draw is stored in each run's `config.json` under `initial_state`.
+
+Scenario Lab reads draws as data and never runs generator code. A scenario that needs draws should ship its generator as an ordinary script in its own directory and document how to run it; generating the draws stays a deliberate step you take, not something loading a scenario triggers.
+
 ## Actor Files (`background/actors/<actor_id>.md`)
 
 Canonical format:

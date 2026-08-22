@@ -162,7 +162,46 @@ def normalize_batch_targets(targets: list[Path], use_variants: bool, repeat: int
     return normalized
 
 
-def build_batch_run_command(target: Path, args: argparse.Namespace) -> list[str]:
+def resolve_initial_state_files(directory: Path, job_count: int) -> list[Path]:
+    """Pick one initial-state file per batch job, in sorted order.
+
+    A batch exploring a distribution of starting worlds needs a *distinct* draw
+    per run, so too few files is an error rather than something to cycle over:
+    reusing draws would silently narrow the distribution the batch reports on.
+
+    Args:
+        directory: Directory holding the generated .json draws
+        job_count: Number of jobs the batch will launch
+
+    Returns:
+        The first ``job_count`` draw files, sorted by name
+
+    Raises:
+        ValueError: If the directory is missing, empty, or has too few draws
+    """
+    if not directory.is_dir():
+        raise ValueError(f"Initial-states directory not found: {directory}")
+
+    state_files = sorted(
+        path for path in directory.iterdir() if path.is_file() and path.suffix == ".json"
+    )
+    if not state_files:
+        raise ValueError(f"No .json initial-state files found in: {directory}")
+
+    if len(state_files) < job_count:
+        raise ValueError(
+            f"Need {job_count} initial-state file(s) for {job_count} run(s), but "
+            f"{directory} has {len(state_files)}. Generate more draws, or lower --repeat."
+        )
+
+    return state_files[:job_count]
+
+
+def build_batch_run_command(
+    target: Path,
+    args: argparse.Namespace,
+    initial_state: Optional[Path] = None,
+) -> list[str]:
     """Build the child command used for one batch run job."""
     command = [
         sys.executable,
@@ -192,6 +231,9 @@ def build_batch_run_command(target: Path, args: argparse.Namespace) -> list[str]
 
     for override in args.override or []:
         command.extend(["--override", override])
+
+    if initial_state is not None:
+        command.extend(["--initial-state", str(initial_state)])
 
     return command
 
@@ -339,6 +381,13 @@ def format_quality_report(report: dict) -> str:
 
 def build_batch_run_specs(targets: list[Path], args: argparse.Namespace, batch_id: str) -> list[BatchJobSpec]:
     """Build batch-run job specs."""
+    states_dir = getattr(args, "initial_states", None)
+    state_files: list[Optional[Path]]
+    if states_dir:
+        state_files = list(resolve_initial_state_files(Path(states_dir), len(targets)))
+    else:
+        state_files = [None] * len(targets)
+
     specs: list[BatchJobSpec] = []
     for index, target in enumerate(targets, start=1):
         output_base = resolve_output_base(target)
@@ -348,7 +397,7 @@ def build_batch_run_specs(targets: list[Path], args: argparse.Namespace, batch_i
         specs.append(
             BatchJobSpec(
                 target=target,
-                command=build_batch_run_command(target, args),
+                command=build_batch_run_command(target, args, state_files[index - 1]),
                 log_path=log_path,
             )
         )
@@ -838,6 +887,12 @@ def main():
         help="Skip default model hygiene checks before running",
     )
     run_parser.add_argument(
+        "--initial-state",
+        type=str,
+        default=None,
+        help="JSON file with starting-state overrides (metric values and extra context)",
+    )
+    run_parser.add_argument(
         "--seed",
         type=int,
         default=None,
@@ -897,6 +952,15 @@ def main():
         help="Run each resolved target N times",
     )
     batch_run_parser.add_argument(
+        "--initial-states",
+        type=str,
+        default=None,
+        help=(
+            "Directory of JSON initial-state files; one distinct draw is assigned "
+            "per run, in sorted order"
+        ),
+    )
+    batch_run_parser.add_argument(
         "--seed",
         type=int,
         default=None,
@@ -953,6 +1017,12 @@ def main():
     describe_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
     describe_parser.add_argument("--json", action="store_true", help="Print JSON instead of markdown")
     describe_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
+    describe_parser.add_argument(
+        "--initial-state",
+        type=str,
+        default=None,
+        help="Apply a JSON starting-state draw before describing (inspect one draw)",
+    )
 
     validate_parser = subparsers.add_parser("validate", help="Validate a scenario")
     validate_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
@@ -1295,7 +1365,11 @@ def main():
         if args.variants:
             print("Mode: variants")
 
-        specs = build_batch_run_specs(targets, args, batch_id)
+        try:
+            specs = build_batch_run_specs(targets, args, batch_id)
+        except ValueError as e:
+            print(f"❌ {e}")
+            return 1
         results, failures = execute_batch_specs(specs, worker_count, "Batch Run Progress")
 
         success_count = sum(1 for result in results if result.returncode == 0)
@@ -1492,7 +1566,9 @@ def main():
         from .describe import describe_scenario, format_describe_report
 
         try:
-            overview = describe_scenario(args.scenario)
+            overview = describe_scenario(
+                args.scenario, initial_state=getattr(args, "initial_state", None)
+            )
         except Exception as e:
             print(f"❌ Error describing scenario: {e}")
             return 1
@@ -2433,7 +2509,25 @@ def main():
     # Run logic starts here
     # Load scenario
     print(f"Loading scenario from {args.scenario}...")
-    scenario = load_scenario(args.scenario)
+    initial_state_path = getattr(args, "initial_state", None)
+    try:
+        scenario = load_scenario(args.scenario, initial_state=initial_state_path)
+    except (FileNotFoundError, ValueError) as e:
+        print(f"❌ Error loading scenario: {e}")
+        return 1
+
+    if scenario.initial_state is not None:
+        state = scenario.initial_state
+        print(f"  Initial state: {initial_state_path}")
+        if state.metrics:
+            preview = ", ".join(
+                f"{k}={v:g}" for k, v in sorted(state.metrics.items())
+            )
+            print(f"    Metrics set ({len(state.metrics)}): {preview}")
+        if state.context:
+            print(f"    Context added: {len(state.context)} chars")
+        if state.notes:
+            print(f"    Notes: {state.notes}")
     
     # Apply overrides
     if args.override:
