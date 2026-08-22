@@ -325,3 +325,41 @@ def test_metrics_prompt_omits_the_section_without_a_constitution(mock_scenario):
 
     assert "Constitutional Constraints" not in system
 
+
+def test_background_context_survives_narrative_drift(mock_scenario):
+    """background/context.md seeded turn 0 and then vanished.
+
+    world_state.narrative starts as a copy of the background and is overwritten
+    by the Game Master in turn 1, so anything a scenario fixes at the start -- an
+    election result, a treaty, a map -- was visible for exactly one turn. A run
+    drawn with the Liberals holding 17 seats had them acting "despite lacking
+    parliamentary representation" by turn 3.
+    """
+    mock_scenario.context = "The Liberals hold 17 seats and vote."
+    mock_scenario.world_state.narrative = "Turn 9. Talks continue."
+    builder = PromptBuilder(mock_scenario)
+
+    _, user = builder.build_actor_prompt("actor1", 9, [])
+
+    assert "The Liberals hold 17 seats" in user
+    assert "Turn 9. Talks continue." in user  # the evolving narrative is still there
+
+
+def test_background_context_reaches_the_metrics_prompt(mock_scenario):
+    mock_scenario.context = "The chamber has 349 seats."
+    mock_scenario.world_state.narrative = "Later."
+    builder = PromptBuilder(mock_scenario)
+
+    _, user = builder.build_metrics_prompt(9, {"actor1": "acted"}, [])
+
+    assert "The chamber has 349 seats" in user
+
+
+def test_no_background_block_without_context(mock_scenario):
+    mock_scenario.context = ""
+    builder = PromptBuilder(mock_scenario)
+
+    _, user = builder.build_actor_prompt("actor1", 1, [])
+
+    assert "Fixed Background" not in user
+

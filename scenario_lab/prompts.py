@@ -212,6 +212,12 @@ class PromptBuilder:
             "world_state": world_state,
             "historical_summary": self.scenario.world_state.historical_summary,
             "notepad": notepad,
+            # background/context.md is loaded once and then only used to seed
+            # world_state.narrative, which the Game Master overwrites in turn 1.
+            # Anything a scenario fixes at the start -- an election result, a
+            # treaty, a map -- otherwise vanishes after a single turn. Keep it
+            # available for the whole run as its own block.
+            "background_context": self.scenario.context or "",
             "output_language": self.scenario.config.output_language,
         }
         
