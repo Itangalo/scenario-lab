@@ -16,6 +16,7 @@ Fixed 2026-08-21 (system prompts now render through the sandboxed Jinja environm
 - Constitutional-violation counts from those runs are not trustworthy. An actor arguing the wrong country's position will produce metric updates that look like constraint violations without the model having reasoned badly.
 - Findings that do **not** depend on the actor prompt still stand: crashes, hangs, parse errors, empty or partial metrics payloads, hallucinated metric names, throughput, and cost.
 - `qwen/qwen3-235b-a22b-2507` and `openai/gpt-5.4-nano` were tested on sweden-ai-2030, which has no Jinja in its overrides. Those assessments are unaffected.
+- `deepseek/deepseek-v4-flash-0731` has since been re-run to completion against the fixed prompt (2026-08-22). Its assessment below reflects that run, not the earlier three-turn one.
 
 Re-test candidates against the fixed prompt before trusting any comparison below.
 
@@ -34,7 +35,7 @@ Re-test candidates against the fixed prompt before trusting any comparison below
 | mistralai/mistral-small-24b-instruct-2501 | $0.05 | $0.08 | 9/10 turns unresolved (ai-safety-race) | Avoid |
 | qwen/qwen3-30b-a3b-instruct-2507 | $0.048 | $0.193 | 3/7 turns unresolved (ai-safety-race) | Avoid (hangs, hallucinates metrics) |
 | nvidia/nemotron-3-ultra-550b-a55b:free | $0 | $0 | 2/3 approved before crash | Avoid (free tier drops responses) |
-| deepseek/deepseek-v4-flash-0731 | $0.065 | $0.18 | 3/3 approved, 0 incidents (3 turns) | **Most stable reasoning model tested** – but slow, and unfinished |
+| deepseek/deepseek-v4-flash-0731 | $0.065 | $0.18 | 6/10 turns violated on first attempt, 2/10 left unresolved (ai-safety-race, **fixed prompt**, 10 turns) | Avoid for unattended work – never crashes, but 565s/turn and the referee cannot keep it in bounds |
 | minimax/minimax-m3 | $0.23 | $0.96 | 3/3 approved, then crashed turn 4 | Avoid (reasoning budget exhaustion) |
 | z-ai/glm-4.7-flash | $0.06 | $0.40 | 2/2 approved, 661s/turn | Avoid (far too slow) |
 
@@ -51,6 +52,7 @@ Re-test candidates against the fixed prompt before trusting any comparison below
 | mistralai/mistral-small-24b-instruct-2501 | ai-safety-race | ~$0.022 | ~394k |
 | qwen/qwen3-30b-a3b-instruct-2507 | ai-safety-race | ~$0.035 (projected) | ~390k (6 turns: 260k) |
 | anthropic/claude-haiku-4-5 | ai-safety-race | ~$1.30* | – |
+| deepseek/deepseek-v4-flash-0731 | ai-safety-race | ~$0.067 | ~566k |
 
 *Logged costs for older runs used incorrect pricing and have not been recalculated.
 
@@ -226,19 +228,34 @@ The first model verdict in this project that rests on a correctly rendered actor
 
 ### deepseek/deepseek-v4-flash-0731
 
-**Tested on:** ai-safety-race (3 completed turns, 2026-08-21, seed 20260821, `max_tokens: 32000`, **broken actor prompt**)
+**Tested on:** ai-safety-race twice – 3 turns on the broken actor prompt (2026-08-21), then **10 turns to completion on the fixed prompt** (2026-08-22, seed 20260821, `max_tokens: 32000`, `call_timeout_seconds: 900`). The completed run supersedes the earlier one.
 
-The only reasoning model of five tested that did not fail. Stopped manually after three turns at the user's request because of its speed, not because anything went wrong.
+**Stability: excellent.** Ten turns, no crash, no transient retries, no rules truncation, no format-fix invocations, no hallucinated metric names, no empty or partial metrics payloads. It is the only reasoning model of the five tested that has ever finished a run. Structured outputs are supported natively.
 
-- **Zero incidents across three turns:** no transient retries, no rules truncation, no format-fix invocations, no hallucinated metric names, no empty or partial metrics payloads
-- Supports structured outputs natively, unlike nemotron-3-ultra which fell back to legacy JSON parsing for its whole run
-- 3/3 turns approved cleanly by the constitutional referee, one iteration each
-- 402s/turn at 128 tok/s. Token volume per turn is normal – it is slow per token, not verbose, so lowering `max_tokens` would not speed it up meaningfully
-- ~$0.0064/turn, roughly $0.064 per 10 turns
+**Actor differentiation confirmed the prompt fix.** Final metrics show China acting as itself – `china_capability` 43 against `us_capability` 51, and `china_belief_threshold` 70 against `us_belief_threshold` 56. Under the broken prompt `china_safety` sat frozen because both actors played the United States. That failure mode is gone.
 
-**Caveat on the constitutional result.** This run predates the actor-prompt fix, so both actors were playing the United States and the referee was judging a world where China never advocated for itself. The 3/3 approvals are therefore not evidence of constitutional compliance. What does stand is everything the prompt bug cannot touch: output-contract discipline, structured-output support, absence of retries, and cost/throughput.
+**Constitutional compliance: poor, and this is the finding that matters.**
 
-**Verdict:** The best reasoning model tested, with two real reservations. It was never run to completion, and at ~400s/turn a 10-turn run takes over an hour, which makes batch work painful. Re-run against the fixed prompt before treating its constitutional behaviour as known.
+| Turn | Referee status | Iterations | Violated on first attempt |
+|------|---------------|------------|---------------------------|
+| 1–3 | approved | 1 | no |
+| 4 | approved | 2 | yes |
+| 5 | approved | 1 | no |
+| 6, 7, 8 | approved | 2 | yes |
+| 9, 10 | **max_attempts_reached** | 2 | yes, unresolved |
+
+Six of ten turns produced constitutional violations on the first attempt. The referee corrected four of them. **Turns 9 and 10 hit `max_attempts_reached` and were persisted with the violations intact.**
+
+Two violations recurred rather than being one-off slips:
+
+- **`coordination_level` repeatedly breached its +10-per-turn cap** – +16 on turn 6, +12 on turn 7, +16 on turn 8. The model kept narrating diplomatic breakthroughs and moving the metric to match the story rather than to match the rule. It ended at 76.
+- **`china_capability` decreased twice** (43→40, 43→41) although the constitution allows capability to fall only after catastrophic infrastructure destruction, which the narrative never described.
+
+The pattern is consistent: it writes a plausible narrative and then sets metrics to fit the narrative, overriding explicit numeric constraints. That is a worse failure than a crash for unattended batch work, because the run completes and the artifacts look valid.
+
+**Throughput and cost.** 565s/turn measured across the ten turns – 85 minutes for one run. $0.0671 and 566k tokens for 10 turns. The token figure is inflated by `max_tokens: 32000` and is not directly comparable with models run at default budgets; the wall-clock figure is real regardless.
+
+**Verdict:** Avoid for unattended work. It has the best stability record of any reasoning model tested and is the only one to finish a run, but stability is not the same as compliance. At 565s/turn a 20-run batch would take over a day, and one turn in five would be persisted with an unresolved violation. `qwen/qwen3-235b-a22b-2507` remains the recommendation: 9/10 turns approved with zero arithmetic violations on the same scenario and fixed prompt, at roughly a quarter of the time per turn.
 
 
 ### minimax/minimax-m3
@@ -294,9 +311,9 @@ Prefer instruct (non-thinking) variants. This is consistent with the project's o
 | nvidia/nemotron-3-ultra-550b-a55b:free | Crashed turn 3 (`did not include choices`) |
 | minimax/minimax-m3 | Crashed turn 4 (`did not include assistant content`) |
 | z-ai/glm-4.7-flash | Survived, but 661s/turn and one hallucinated metric |
-| deepseek/deepseek-v4-flash-0731 | 3 turns, zero incidents – the only clean one |
+| deepseek/deepseek-v4-flash-0731 | Completed 10/10 turns with zero contract failures – the only reasoning model to finish a run |
 
-Four of five failed or were unusable. Raising `max_tokens` to 32000 did not prevent budget exhaustion; the models scaled their reasoning to fill whatever budget they were given.
+Four of five failed or were unusable. The fifth finished, but see its assessment: surviving a run and reasoning within constraints turned out to be different things. Raising `max_tokens` to 32000 did not prevent budget exhaustion; the models scaled their reasoning to fill whatever budget they were given.
 
 **Reasoning capability is discoverable before spending anything.** OpenRouter's `/models` endpoint lists `reasoning` in `supported_parameters`, and that flag matched empirical probing exactly across all six models checked. `audit-models` could warn on this without guessing.
 
