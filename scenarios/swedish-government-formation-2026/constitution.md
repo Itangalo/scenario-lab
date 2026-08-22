@@ -58,11 +58,23 @@ metric rule.
     A constellation whose talks are under way keeps whatever viability it has
     earned; it rises or falls on what the parties do, not on the calendar.
 
+    **The notepad is the authoritative record of which steps have occurred.**
+    Consult it before concluding that no procedural step has taken place. A
+    mandate granted in turn 7 still counts in turn 14 even if this turn's
+    narrative does not mention it. Record every procedural milestone in the
+    notepad when it happens, naming the constellation it covers.
+
 11. **The Centre Party's vetoes cap what they actually block.** While the vetoes
     stand, cap at 40 any constellation that requires Centre Party support and
     places the Left Party in government, and any that requires organised Centre
     Party cooperation with the Sweden Democrats. An arrangement containing
     neither party is not blocked by these vetoes and must not be capped by them.
+
+    **Name the member parties before applying this cap.** The notepad records
+    which parties each arrangement contains. An S–C–MP government contains
+    neither the Left Party nor the Sweden Democrats, so neither veto touches it,
+    regardless of how those parties are behaving elsewhere. Opposition from a
+    party is not membership in the arrangement it opposes.
 
 12. **A veto is lifted only by a public, attributed statement.** The cap in
     constraint 11 may be removed only when the narrative records the Centre

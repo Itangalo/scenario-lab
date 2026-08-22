@@ -214,3 +214,45 @@ def test_validator_flags_broken_jinja_syntax(mock_scenario):
     errors, _ = validate_prompt_overrides(mock_scenario)
 
     assert any("invalid Jinja syntax" in e for e in errors)
+
+
+def test_referee_prompt_includes_the_notepad(mock_scenario):
+    """The referee judges constraints that depend on what already happened.
+
+    Without the persistent record it sees only this turn's delta, so a constraint
+    phrased "once X has occurred" is unjudgeable -- it will read a narrative that
+    does not mention X and conclude X never happened.
+    """
+    mock_scenario.notepad = "- Speaker granted an exploratory mandate in turn 7."
+    builder = PromptBuilder(mock_scenario)
+
+    _, user = builder.build_constitutional_referee_prompt(
+        turn=11, previous_metrics={"test_metric": 50}, new_metrics={"test_metric": 60},
+        narrative="Nothing procedural happened this week.",
+    )
+
+    assert "exploratory mandate in turn 7" in user
+
+
+def test_referee_correction_prompt_includes_the_notepad(mock_scenario):
+    mock_scenario.notepad = "- Formal negotiations began in turn 4."
+    builder = PromptBuilder(mock_scenario)
+
+    _, user = builder.build_constitutional_correction_prompt(
+        turn=11, previous_metrics={"test_metric": 50}, new_metrics={"test_metric": 60},
+        narrative="n", violations="v",
+    )
+
+    assert "Formal negotiations began in turn 4" in user
+
+
+def test_referee_prompt_handles_an_empty_notepad(mock_scenario):
+    mock_scenario.notepad = "   "
+    builder = PromptBuilder(mock_scenario)
+
+    _, user = builder.build_constitutional_referee_prompt(
+        turn=1, previous_metrics={}, new_metrics={}, narrative="n",
+    )
+
+    assert "(Empty)" in user
+

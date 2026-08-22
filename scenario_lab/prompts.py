@@ -495,12 +495,16 @@ class PromptBuilder:
             self.scenario.config.start_date, turn, self.scenario.config.time_scale
         )
 
+        # The referee judges constraints that may depend on what has already
+        # happened ("once a procedural step has occurred"). Without the notepad it
+        # sees only this turn's delta and cannot judge such a constraint at all.
         context = {
             "turn": turn,
             "time_period": time_period,
             "previous_metrics_json": json.dumps(previous_metrics, indent=2, ensure_ascii=False),
             "new_metrics_json": json.dumps(new_metrics, indent=2, ensure_ascii=False),
             "narrative": narrative,
+            "notepad": self.scenario.notepad.strip() or "(Empty)",
         }
 
         user = template.render(**context)
@@ -532,6 +536,7 @@ class PromptBuilder:
             "new_metrics_json": json.dumps(new_metrics, indent=2, ensure_ascii=False),
             "narrative": narrative,
             "violations": violations,
+            "notepad": self.scenario.notepad.strip() or "(Empty)",
             "output_language": self.scenario.config.output_language,
         }
 
