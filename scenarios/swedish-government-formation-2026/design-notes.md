@@ -82,6 +82,28 @@ Earlier smoke tests fixed a `pm_vote_failed` condition that was evaluated at 40%
 before any vote could have been held, and anchored the viability reference points
 to procedural facts rather than sentiment.
 
+## A Conditioned Batch That Did Not Condition
+
+The first `l-crosses` batch is a cautionary case worth keeping. Every draw gave
+the Liberals 14–21 seats, and the runs simulated them as a party without seats.
+
+Nothing was wrong with the draw: the seat table showed the number, the
+commitments section said they had cleared the threshold. But every *other* signal
+in the scenario points the other way — polling at 1.9%, background describing
+their worst result since 1967, an actor file whose out-of-chamber branch is the
+longer and more vivid of the two. A single row in a table does not overcome a
+prior that strong, and the batch silently measured nothing.
+
+The general lesson: **a fact that must override a strong prior has to be stated
+as its own sentence, in both directions, saying what follows from it.** Putting
+it in a table and trusting the reader to notice is not enough. The sampler now
+writes "The Liberals ARE in the chamber… any narrative describing them as outside
+parliament is wrong", and the actor file leads with finding that sentence.
+
+This is the same failure that produced the referee ignoring the notepad and the
+veto cap being applied to constellations containing neither vetoed party: the
+information was present and insufficiently salient.
+
 ## Assumptions
 
 Carried from the provenance tags in `source-material/`, where every claim is
