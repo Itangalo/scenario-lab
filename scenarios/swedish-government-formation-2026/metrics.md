@@ -76,16 +76,16 @@ does not move during the simulation.
 - 70: Two or three votes have failed; parties are openly discussing a new election
 - 100: Four votes have failed; an extraordinary election is triggered
 
-## time_pressure
-**Description:** Accumulated public, media, market and institutional pressure to produce a government. Rises the longer the country goes without one, and makes concessions cheaper to justify.
-**ID:** time_pressure
+## deadlock_cost
+**Description:** What the parties collectively stand to lose by not producing a government. This is not elapsed time. It moves when something concrete is at stake – a decision the caretaker government cannot take, an institutional deadline, or the prospect of an extraordinary election becoming real.
+**ID:** deadlock_cost
 **Min:** 0
 **Max:** 100
 **Unit:** index
 **Start value:** 5
 **Reference points:**
-- 5: Election night; nobody expects an answer yet
-- 25: Weeks in; commentary turns impatient but nothing is urgent
-- 50: A budget deadline or comparable institutional date is approaching
-- 75: Sustained criticism; parties are visibly paying a price for the deadlock
-- 100: The deadlock is itself the dominant political issue
+- 5: Election night; nobody expects an answer yet and nothing is foregone
+- 20: Commentary is impatient, but no decision has actually been missed
+- 40: A named institutional deadline is approaching, or the caretaker government has had to decline something that mattered
+- 70: At least one party leader has publicly raised an extraordinary election as a real prospect
+- 100: An extraordinary election has an announced date; every party is bargaining in its shadow

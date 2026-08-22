@@ -59,6 +59,12 @@ PARTY_NAMES = {
     "L": "Liberalerna",
 }
 
+# 2022 seats, so each draw can say who gained and who lost. That asymmetry is
+# what makes the snap-election threat a bargaining instrument rather than a
+# uniform pressure: a party that collapsed dreads a fresh election, one that
+# surged is tempted by it.
+SEATS_2022 = {"S": 107, "SD": 73, "M": 68, "V": 24, "C": 24, "KD": 19, "MP": 18, "L": 16}
+
 LEFT_BLOC = ["S", "V", "MP"]
 RIGHT_BLOC = ["M", "SD", "KD", "L"]
 # C sits with neither: its double veto is the point of the scenario.
@@ -268,6 +274,26 @@ def render_context(shares: dict[str, float], seats: dict[str, int]) -> str:
             if right_seats >= MAJORITY
             else f"The right bloc is {MAJORITY - right_seats} short of one."
         ),
+        "",
+        "## What the Night Meant for Each Party",
+        "",
+        "Change against 2022, which is what each party will weigh when judging "
+        "whether an extraordinary election would help or hurt it. Note that an "
+        "extra election does not start a new four-year term: those elected serve "
+        "only until the next ordinary election, so even a party riding high wins "
+        "a shortened mandate.",
+        "",
+        "| Party | Seats | 2022 | Change |",
+        "|-------|-------|------|--------|",
+    ]
+    for party in order:
+        held = seats[party]
+        was = SEATS_2022[party]
+        delta = held - was
+        arrow = f"{delta:+d}" if delta else "±0"
+        lines.append(f"| {party} | {held} | {was} | {arrow} |")
+
+    lines += [
         "",
         "## What Was Said Before the Vote",
         "",

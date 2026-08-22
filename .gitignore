@@ -60,3 +60,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
+
+# Calibration and validation run artifacts (regenerable, large)
+**/calibration-runs/

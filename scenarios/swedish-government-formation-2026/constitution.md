@@ -44,12 +44,19 @@ not evolving physics, and may not be reinterpreted, softened or qualified by any
 metric rule.
 
 10. **Viability above 50 requires a procedural step that has actually occurred.**
-    A viability metric may exceed 50 only if the narrative states that the
-    Speaker has given an exploratory mandate, or that formal negotiations
-    between the relevant parties have begun, or that parties holding enough
-    seats have publicly declared how they will vote. Statements of openness,
-    policy annexes, private talks, listening sessions, working groups and media
-    campaigns are **not** procedural steps.
+    A viability metric may exceed 50 only once the narrative has recorded, **at
+    any point in the run**, that the Speaker gave an exploratory mandate covering
+    that constellation, or that formal negotiations between its parties began, or
+    that parties holding enough seats publicly declared how they will vote.
+    Statements of openness, policy annexes, private talks, listening sessions,
+    working groups and media campaigns are **not** procedural steps.
+
+    **This is a persistent state, not a per-turn test.** Once such a step has
+    occurred for a constellation, the threshold stays unlocked for it for the
+    rest of the run. Do not require a fresh procedural step each turn, and do not
+    push a metric back down to 50 because nothing procedural happened this week.
+    A constellation whose talks are under way keeps whatever viability it has
+    earned; it rises or falls on what the parties do, not on the calendar.
 
 11. **The Centre Party's vetoes cap what they actually block.** While the vetoes
     stand, cap at 40 any constellation that requires Centre Party support and
@@ -67,5 +74,8 @@ metric rule.
     withdrawing, a vote failing, a pledge publicly broken. Gradual shifts in
     sentiment do not justify large jumps in either direction.
 
-14. **`time_pressure` may rise at most 6 points per turn** and may not fall while
-    no government has been formed.
+14. **`deadlock_cost` may rise at most 12 points per turn**, and may only rise
+    when the narrative names what is being lost – a missed decision, an
+    approaching deadline, a failed vote, or an extraordinary election becoming
+    more concrete. It may not rise merely because a week has passed, and may not
+    fall while no government has been formed.

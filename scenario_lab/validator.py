@@ -377,6 +377,12 @@ def validate_metric_references(scenario: Scenario) -> List[str]:
     valid_metric_ids = set(scenario.metrics.metrics.keys())
 
     # Check actor descriptions
+    # Prose in rules and actor files may legitimately name an event as well as a
+    # metric -- "once snap_election_date_announced has fired" is exactly the kind
+    # of rule the events system exists to support. Check against both, or such a
+    # rule cannot be written using the event's own id.
+    valid_identifiers = set(valid_metric_ids) | {event.id for event in scenario.events}
+
     for actor_id, actor in scenario.actors.items():
         text = f"{actor.short_description} {actor.long_description}"
         referenced_metrics = extract_metric_references(text)
@@ -387,9 +393,11 @@ def validate_metric_references(scenario: Scenario) -> List[str]:
             if metric in ['the', 'a', 'an', 'and', 'or', 'to', 'of', 'in', 'for', 'on', 'with', 'as', 'by', 'at', 'from', 'is', 'are', 'be', 'has', 'have', 'will', 'can', 'may']:
                 continue
             # Only check metrics that could plausibly be metric IDs (contain underscore or match a known metric pattern)
-            if '_' in metric or metric in valid_metric_ids:
-                if metric not in valid_metric_ids:
-                    errors.append(f"Actor '{actor_id}' may reference unknown metric '{metric}'")
+            if '_' in metric or metric in valid_identifiers:
+                if metric not in valid_identifiers:
+                    errors.append(
+                        f"Actor '{actor_id}' may reference unknown metric or event '{metric}'"
+                    )
 
     # Check events
     for event in scenario.events:
@@ -413,8 +421,10 @@ def validate_metric_references(scenario: Scenario) -> List[str]:
     if scenario.metric_rules:
         referenced_metrics = extract_metric_references(scenario.metric_rules)
         for metric in referenced_metrics:
-            if '_' in metric and metric not in valid_metric_ids:
-                errors.append(f"Metric rules reference unknown metric '{metric}'")
+            if '_' in metric and metric not in valid_identifiers:
+                errors.append(
+                    f"Metric rules reference unknown metric or event '{metric}'"
+                )
 
     return errors
 

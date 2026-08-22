@@ -738,3 +738,45 @@ class TestModelRouteValidation:
         assert not is_valid_model_route(ModelRoute("", "qwen/q"))
         assert not is_valid_model_route(ModelRoute("openrouter", ""))
         assert not is_valid_model_route(None)
+
+
+def make_reference_scenario(metric_rules: str):
+    """Minimal scenario for exercising the cross-reference check."""
+    from scenario_lab.models import Actor, Event, Metric, Metrics, Scenario, ScenarioConfig, WorldState
+
+    return Scenario(
+        config=ScenarioConfig(
+            name="t", description="d", start_date="2026-01",
+            time_scale="1 week per turn", max_turns=3, actor_ids=["a"],
+        ),
+        metrics=Metrics(metrics={
+            "risk_level": Metric(id="risk_level", description="d", value=10,
+                                 min_value=0, max_value=100, unit="index")
+        }),
+        events=[Event(id="vote_failed", description="d", condition="c", probability="10%")],
+        actors={"a": Actor(id="a", name="A", short_description="s",
+                           long_description="l", initial_goals=["g"])},
+        metric_rules=metric_rules,
+        world_state=WorldState(narrative="n", turn=0, time_period="p"),
+        context="c",
+    )
+
+
+def test_metric_rules_may_reference_an_event_by_id():
+    """A rule saying "once vote_failed has fired" is exactly what events are for."""
+    from scenario_lab.validator import validate_metric_references
+
+    scenario = make_reference_scenario("1. Once `vote_failed` has fired, raise `risk_level`.")
+
+    assert validate_metric_references(scenario) == []
+
+
+def test_metric_rules_still_reject_unknown_identifiers():
+    from scenario_lab.validator import validate_metric_references
+
+    scenario = make_reference_scenario("1. Raise `no_such_thing` when things happen.")
+
+    errors = validate_metric_references(scenario)
+    assert len(errors) == 1
+    assert "no_such_thing" in errors[0]
+
