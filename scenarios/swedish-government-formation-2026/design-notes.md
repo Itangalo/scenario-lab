@@ -104,6 +104,38 @@ This is the same failure that produced the referee ignoring the notepad and the
 veto cap being applied to constellations containing neither vetoed party: the
 information was present and insufficiently salient.
 
+## Open Question: What Does the Centre Party's Veto Actually Block?
+
+**This is the most consequential unresolved item, and it is a research question
+rather than a calibration one.**
+
+The source material states that the Centre Party "will not support any government
+**containing** the Left Party". Two readings are available, both defensible, and
+they give opposite answers to the scenario's central question:
+
+- **Broad:** any arrangement in which V supports an S-led government is blocked.
+  Run with `qwen3-235b-a22b-2507`, this produces an S-led minority government
+  carried by Centre abstention in 15 of 20 runs and no V-borne government at all.
+- **Narrow:** only V *in cabinet or in formal machinery* is blocked; V voting a
+  government through from outside is not. Run with `stealth/ox-alpha` on five
+  matched draws, this produces four governments resting on V — the model wrote
+  "its veto concerns V in cabinet and formal machinery, not S governing".
+
+The narrow reading is a real distinction in Swedish practice (koalition versus
+samarbetsavtal versus passivt stöd) and is arithmetically available: left plus
+Centre is 181–191 seats in those draws, comfortably past 175.
+
+**The headline result therefore depends on one word.** Two models read it
+differently and both were internally consistent, which means the ambiguity is in
+the source material, not in either model.
+
+**To resolve:** find what the Centre Party has actually said during this
+campaign, specifically about tolerating an S-led government that V votes for
+without entering. Then state it unambiguously in `background/context.md` and in
+`source-material/actors.md`, in the same explicit form now used for the Liberals'
+threshold status. Until then, treat the 75%/10%/10%/5% distribution as
+conditional on the broad reading.
+
 ## Assumptions
 
 Carried from the provenance tags in `source-material/`, where every claim is
