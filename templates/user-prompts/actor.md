@@ -42,11 +42,10 @@ No special events occur this turn.
 
 {{statement_ledger}}
 
-These carry forward unchanged unless you explicitly propose a change. Most
-turns need none, and saying so is a complete answer.
+These carry forward unchanged unless you explicitly propose a change.
 {% endif %}
 
-Use the background information to determine (1) which actions you want to take during the turn and (2) whether anything that happened this turn genuinely warrants a change to your statements.
+Use the background information to determine (1) which actions you want to take during the turn and (2) whether your statements still match what you are doing — proposing changes where they no longer do.
 
 Actions should align with your statements and be realistic given time and other resources. Your actions will be evaluated by a Game Master, who determines how they affect the world. Bold actions can have greater impact, but also greater risk of failure.
 
