@@ -222,6 +222,15 @@ Rules while gathering:
 - Never state a specific figure, date, name, or institutional fact from model
   knowledge alone without tagging it `[model]`. Specifics are exactly what
   gets fabricated.
+- Record constraint-like statements ("rules out", "demands", "will never
+  accept") **verbatim, with their scope**: who said it, what action and what
+  kind of arrangement it covers, and when. Do not compress them into summary
+  words – a paraphrase like "supports" or "containing" can silently widen or
+  narrow the scope, and that single word can later flip the headline result
+  (this happened: see `scenarios/swedish-government-formation-2026/design-notes.md`).
+  If the source's own scope is unclear, record the ambiguity as a Known Gap
+  for the drafting step's constraint interrogation – do not resolve it by
+  choosing a wording.
 - Where sources disagree, record the disagreement rather than picking a
   winner. Disagreement in the world is usually a signal that the quantity
   belongs in a metric or an event, not that one source is wrong.

@@ -114,6 +114,62 @@ Draft in this order (each file informs the next):
 8. `design-notes.md` – central question, key design decisions, assumptions,
    weak spots, ideas deliberately left out
 
+## Constraint Language (applies to actor goals and scenario rules alike)
+
+Precision comes from **scope, not from stacked conditions**. A goal, preference,
+or constraint is precise when a model can rule on edge cases without
+interpreting: it names what action, by whom, under what kind of arrangement it
+covers. "Will not support any government containing V" reads precise but is
+not – "containing" collapses cabinet membership, formal agreements, and
+external voting support into one word, and two models read it in opposite
+directions, flipping the headline result (see
+`scenarios/swedish-government-formation-2026/design-notes.md`, "Open
+Question"). The failure was invisible in the prose and only surfaced in
+behavior.
+
+The wrong fix is piling qualifiers into the sentence until it covers every
+case – that recreates the Rule Economy failure mode inside a single
+formulation, and reading errors scale with length. The right fix is a short
+scope-explicit statement, with the remaining edge cases resolved as recorded
+rulings in the constraint ledger (Phase 3b), not as extra clauses. Keep the
+verbatim source quote next to the operational statement: paraphrase is where
+ambiguity enters, because a summary word can silently widen or narrow scope.
+
+## Phase 3b: Constraint Interrogation (the ledger)
+
+The outcome distribution is usually more sensitive to how a handful of
+constraints are worded than to anything the ensemble randomizes. Find those
+formulations before spending run money – a few model calls here are cheap
+against a batch of runs conditioned on a misreading.
+
+1. **Enumerate** the load-bearing constraints and goals: every "rules out /
+   demands / will not accept / must have" across actor files, context, and
+   constitution.
+2. **Generate edge cases** for each – 3-5 concrete situations the simulation
+   could plausibly produce, sitting near the constraint's boundary (external
+   support vs. cabinet seat, budget cooperation vs. formal agreement, a
+   one-off vote vs. a standing arrangement).
+3. **Interrogate in two independent tracks** – two different models, or two
+   independently prompted passes: each rules on every edge case as the actor
+   would, from the drafted text alone. Compare *rulings, not prose*: two
+   drafts routinely agree on wording while diverging on interpretation.
+4. **Divergence between tracks means the text underdetermines behavior.**
+   Resolve it by researching what the real actor has actually said – never by
+   picking the reading you find more plausible. Agreement is weaker evidence
+   than it looks (both tracks can share a misreading), so spot-check rulings
+   against the verbatim quotes.
+5. **Write `<scenario>/constraint-ledger.md`**: one entry per constraint –
+   the operational statement, the verbatim source quote with provenance tag,
+   the edge-case rulings, and each ruling marked **settled by source**,
+   **settled by research**, or **open**.
+6. **"Open" is a finding, not a failure.** An edge case with no real-world
+   answer (the actor genuinely has not decided) is live uncertainty: model it
+   as an event or a branch dimension of the ensemble, and report results
+   conditional on it. Never silently condition the whole ensemble on one
+   reading of an open ruling.
+7. **Fold settled rulings back** into the actor files and context so no
+   downstream model has to interpret the original formulation again.
+
 ## Rule Economy (check at every iteration)
 
 Rules and constraints accumulate. Each one is added to stop a specific drift you
@@ -163,6 +219,13 @@ underlying statement three of them are approximating. It is usually there.
    output to the user (this is the at-a-glance overview).
 3. Run `python -m scenario_lab.cli estimate scenarios/<name>` and report cost.
 4. Summarize the assumptions from design-notes.md.
+5. Present `constraint-ledger.md`, leading with the open rulings and how each
+   will be handled (event, branch dimension, or explicit limitation). The
+   ledger – not the prose files – is the reviewable artifact: it is where a
+   domain expert can say "no, that actor has never said that" at the
+   granularity where errors flip results. When the scenario is used for real
+   decisions, expert sign-off on the ledger is the gate before any runs are
+   paid for.
 
 Wait for approval before spending API money in Phase 5.
 
