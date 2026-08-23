@@ -1,7 +1,13 @@
 # Proposal: Adjustable Statements
 
-Status: proposal, not implemented. Design only – no framework code, scenarios or
-templates have been changed.
+Status: **implemented** (2026-08-23). The mechanism, actor-file format, tier
+taxonomy and validation described below are live; `docs/ARCHITECTURE.md`
+("Actor Statement Ledgers") is the current ground truth for behavior. Two
+things have deliberately moved past this text: the prompt contract's frequency
+norm ("in most turns you make no statement changes") was replaced by a
+tier-scoped procedural review after it produced fully frozen ledgers across
+two scenarios, and scenario-level prompt overrides that predated statements
+were removed rather than migrated. The design rationale below still stands.
 
 ## Summary
 

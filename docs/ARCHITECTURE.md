@@ -40,7 +40,8 @@ V4 represents a radical simplification from previous versions. Instead of comple
 
 ### Actors
 - **Definition:** Simulation participants (governments, organizations, companies) with defined goals and behaviors.
-- **Actions:** Actors decide on goals and actions each turn. These are descriptive text, not structured data.
+- **Statements:** Each actor holds a **statement ledger** – a list of what it stands for, wants, and is, tagged with a changeability tier: `position` (working stances, move with strategy), `commitment` (staked positions whose reversal costs something someone will collect), and `identity` (what the actor would have to stop being to drop). Absolutes live outside the ledger in `constitution.md`. See *Actor Statement Ledgers* below.
+- **Actions:** Actors review their statements and describe actions each turn. These are descriptive text, not structured data.
 
 ### Events
 - **Definition:** Exogenous happenings with probabilities and conditions.
@@ -82,6 +83,21 @@ V4 represents a radical simplification from previous versions. Instead of comple
   * `constitution.md`: Constitutional constraints (invariant rules) for the scenario.
 - **Inheritance:** Scenarios can inherit from others via the `base` field in `scenario.yaml`.
 
+### Actor Statement Ledgers (`statements.py`, `orchestrator.py`)
+
+Every actor carries a ledger of statements that persists across turns and changes only through explicit, structured proposals. The mechanism exists because two earlier designs failed in measured runs: goal re-derivation from prose (actors re-invented their goals each turn, unrecorded) and rules evolution with mandatory re-emission (one rewrite per turn, always the rule nearest the action – format pressure became drift). The statements design removes the slot whose emptiness looks like an incomplete answer.
+
+- **Storage:** Statements are authored per actor in `background/actors/<id>.md` under `### Statements`, one per bullet: `` - `statement_id` (tier): text ``. The loader rejects the old `### Initial goals` section with a pointing error rather than silently reading prose. The live ledger is carried forward **verbatim by Python**; actors never restate their statements, so silent drift is structurally impossible.
+- **Tiers:** `position`, `commitment`, `identity`. The tier is defined by what the actor has *staked* on the statement, not by whether it was announced publicly – sunk investment, organizational culture and doctrine count as stakes. Tier semantics are scenario-authoring data; the machinery is framework code.
+- **Proposal grammar:** An optional `## Statement changes` section in the actor output holds one proposal per bullet: `modify` (with full replacement text), `add`, `reclassify <id> to <tier>`, or `retire`, plus indented `- Trigger:` / `- Grounds:` lines. An absent section or the literal line `No statement changes.` means the ledger carries forward untouched.
+- **Structural check (Python, formatting-only):** Unknown ids, invalid tiers, missing replacement text, identical-to-current text, and missing `Trigger:` on gated proposals are rejected with a recorded reason – mirroring how unknown event ids are skipped. Deliberately absent: any cap, budget, cooldown or counter. Rule evolution's `max_changes_per_turn: 1` behaved as a quota ("exactly one"), and nothing here recreates that shape.
+- **Relevance check (LLM, gated tiers only):** A `commitment` or `identity` change must name a triggering development from this turn's inputs. A cheap referee model (`referee` route) answers one binary question per proposal: quote the passage the trigger refers to, then BEARS or UNRELATED on whether it bears on *this specific statement*. A verbatim quote plus BEARS applies the change; anything else rejects it with reasoning attached. The check deliberately stops at relevance and never judges merit – merit varies between referees and would re-import cross-run variance; merit is charged for in the world instead (below). Covered by the opt-in eval suite in `tests/evals/statement-relevance/`.
+- **Tier transitions:** Downgrades (`identity` → `commitment` → `position`) require grounds at the *current* tier – de-committing has a cost just as reversing does. Upgrades need no trigger (staking yourself is self-binding, paid later) but must appear in the actor's actions.
+- **Persistence:** Every turn writes the full ledger plus a changelog of all proposals with verdicts to `turn-XX/2-actors/<actor_id>-statements.md`. A diff between consecutive turns is empty unless a change was accepted, so erosion is visible in the artifacts rather than hidden in narrative.
+- **World pricing:** Accepted changes ride into the Game Master step with the actor's actions (`last_actions` already carries the whole response). The GM template instructs it to treat a changed commitment- or identity-tier statement as a public event: narrate it, let other actors react next turn, and price it in whatever metrics the scenario provides. This is where reversal cost lives – diegetically, not as a Python rule.
+- **Resume and branch:** Ledgers are restored from the last completed turn's `<actor_id>-statements.md` files, exactly like notepad and rules.
+- **Prompt contract:** The default templates make *reviewing* mandatory but *changing* optional: task 2 instructs the actor to check each statement against what happened and what it plans, adjust stale positions, name triggers for staked reversals – or write `No statement changes.` after checking. Frequency norms ("in most turns you change nothing") were removed after they produced fully frozen ledgers across two scenarios of different character; quantity norms are avoided entirely because they read as quotas.
+
 ### Starting-State Draws (`loader.py`, `--initial-state`)
 
 By default a scenario has exactly one starting world: the values declared in `metrics.md`. Runs then differ only in their event dice. Some questions instead hinge on uncertainty in the *starting* world, where the interesting variation is present before turn 1 (for example an election result that is still unknown, where small shifts change which coalitions are arithmetically possible at all).
@@ -121,9 +137,10 @@ Each turn executes the following steps in order:
   * **Probability Sampling:** When `llm.probability_samples > 1`, the candidate list is elicited that many times and per-event probabilities are aggregated (mean with absent-as-zero over valid samples) before the single dice roll. Per-sample values are persisted in the evaluation record.
 
 2. **Actors Step**:
-  * **Input:** World state (history + current), metrics, triggered events.
-  * **LLM Task:** For *each* actor, review goals and describe actions for the turn.
-  * **Parallelization:** Actor prompts are independent and are executed in parallel with bounded concurrency.
+   * **Input:** World state (history + current), metrics, triggered events, and the actor's own statement ledger.
+   * **LLM Task:** For *each* actor, review its statements against the turn's developments, optionally propose statement changes, and describe actions for the turn.
+   * **Parallelization:** Actor prompts are independent and are executed in parallel with bounded concurrency.
+   * **Statement Processing:** After all actor outputs return, `_process_statement_changes` parses proposals, applies the structural check and the gated relevance check, updates ledgers, and persists `<actor_id>-statements.md` per actor – before the rules step runs, so accepted changes reach the GM with the actions.
 
 3. **Rules Step**:
   * **Input:** World state, triggered events, all actor actions, current rules (with version number).
@@ -340,6 +357,7 @@ run-YYYYMMDD-HHMMSS/
     ├── 1-event-evaluations.json # Full per-candidate event record (optional for legacy runs)
     ├── llm-io/                  # Per-call LLM transcripts (only when llm_io logging is on)
     ├── 2-actors/*.md
+    ├── 2-actors/<actor_id>-statements.md  # Full statement ledger + proposal changelog
     ├── 3-metric-rules.md         # Versioned rules with changelog
     ├── 3-metric-rules-metadata.json  # Rules version and changelog metadata
     ├── 4-metrics.json            # Source of truth for metric values
@@ -558,6 +576,7 @@ Cost so far: $0.15 | Projected total: $0.50
 ## 4. Evaluation & Testing
 - **Unit Tests:** Standard pytest suite for Python logic.
 - **LLM Evals:** Specialized suite in `tests/evals/llm-event-conditions/` to benchmark LLM performance on logic, math, and hallucination prevention.
+- **Statement Relevance Evals:** Opt-in live-LLM suite in `tests/evals/statement-relevance/` (`pytest -m integration`) exercising the relevance referee on fixed cases: real triggers accepted (including slow pressure), invented ones rejected, laundered ones (real quote, wrong statement) rejected.
 - **Security Tests:** Comprehensive security test suite in `tests/test_security.py` covering path traversal, template injection, and code execution prevention.
 
 ## 5. Security Architecture
