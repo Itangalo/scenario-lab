@@ -64,11 +64,15 @@ metric rule.
     narrative does not mention it. Record every procedural milestone in the
     notepad when it happens, naming the constellation it covers.
 
-11. **The Centre Party's vetoes cap what they actually block.** While the vetoes
-    stand, cap at 40 any constellation that requires Centre Party support and
-    places the Left Party in government, and any that requires organised Centre
-    Party cooperation with the Sweden Democrats. An arrangement containing
-    neither party is not blocked by these vetoes and must not be capped by them.
+11. **A veto in an actor's ledger caps what it actually blocks.** Some actors
+    hold commitment-tier statements that rule out a constellation. While such a
+    commitment stands, cap at 40 any constellation it blocks.
+
+    Concretely, for the Centre Party's two commitments: cap at 40 any
+    constellation that requires Centre Party support and places the Left Party
+    in cabinet, and any that requires organised Centre Party cooperation with
+    the Sweden Democrats, or that depends on the Sweden Democrats while
+    requiring Centre Party support.
 
     **Name the member parties before applying this cap.** The notepad records
     which parties each arrangement contains. An S–C–MP government contains
@@ -76,10 +80,16 @@ metric rule.
     regardless of how those parties are behaving elsewhere. Opposition from a
     party is not membership in the arrangement it opposes.
 
-12. **A veto is lifted only by a public, attributed statement.** The cap in
-    constraint 11 may be removed only when the narrative records the Centre
-    Party publicly abandoning that specific veto. Inference from mood, pressure,
-    or other parties' behaviour is not sufficient.
+12. **The actor's own ledger decides whether a veto still stands.** These
+    commitments are not absolutes and are not owned by this document. They live
+    in the actor's statement ledger, and they change only through the statement
+    mechanism: the actor proposes the change, names the development that caused
+    it, and the change is recorded. Do not infer that a veto has been abandoned
+    from mood, pressure, or another party's behaviour, and do not treat one as
+    permanent either. **Read the actor's current statements; they are
+    authoritative.** If a veto commitment has been changed or retired there, the
+    cap above no longer applies and the narrative should reflect what the
+    reversal cost the actor.
 
 13. **No viability may move more than 25 points in a single turn** unless the
     narrative names a specific, attributed act that caused it – a party

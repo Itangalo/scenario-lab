@@ -39,7 +39,7 @@ Christian Democrats and the Liberals in cabinet, with the Sweden Democrats
 supporting it from outside. Whether that arrangement can or should be repeated
 is the question the election has just reopened.
 
-Five commitments were made out loud before the election, and they define the
+Six commitments were made out loud before the election, and they define the
 shape of the problem:
 
 - The Centre Party will not seek organised cooperation with the Sweden
@@ -53,6 +53,11 @@ shape of the problem:
 - The Left Party has made cabinet seats an ultimatum: it demands a place in
   an S-led government as its condition for supporting Andersson as prime
   minister.
+- The Centre Party has declared Ulf Kristersson personally disqualified as a
+  prime-ministerial candidate, because of the ministries he promised the Sweden
+  Democrats. It named the Social Democrats its most likely partner, and said
+  its support would never come free. The declaration names Kristersson, not the
+  Moderates.
 - The Social Democrats rule out cooperation with the Sweden Democrats.
 - The Social Democrats have refused to commit to any constellation at all.
 

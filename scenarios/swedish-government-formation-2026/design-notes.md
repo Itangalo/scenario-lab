@@ -163,6 +163,42 @@ assumed a frictionless narrow reading that ignored the ultimatum standoff.
 Both arms are superseded; the scenario needs a re-run on the corrected source
 material before the 13 September deadline.
 
+## Migration to Adjustable Statements (2026-08-23)
+
+The scenario now uses the framework's statement ledger: each actor holds
+tiered statements (`position` / `commitment` / `identity`) that carry forward
+verbatim and change only through an explicit, grounded proposal. Tier
+assignment came straight out of `constraint-ledger.md` — the four load-bearing
+constraints became commitment-tier statements, tactical goals became positions,
+and each actor got one identity statement.
+
+**Constitution rules 11 and 12 were rewritten to defer to the ledger.** They
+previously encoded the Centre Party's vetoes as fixed metric caps liftable only
+by a public attributed statement. With the vetoes now living in C's ledger as
+adjustable commitments, two mechanisms owned the same fact and would have
+fought: C could change its statement while the constitution went on capping the
+metric. Rule 11 now caps what a *standing* veto blocks and rule 12 points at the
+actor's ledger as authoritative. The metric behaviour is unchanged; what changed
+is which document owns the question.
+
+Note the general principle, since it will recur in other scenarios: the
+constitution holds absolutes, the ledger holds what an actor may reconsider. A
+constitution clause that *references* a commitment is fine — a metric cap has to
+name what it caps. A constitution clause that *owns* what should be adjustable
+is a design error.
+
+**What the first runs showed.** A 4-turn and a 14-turn run produced zero
+statement changes across 144 actor-turns. That is the right answer rather than a
+frozen one: both runs converged toward S–C–MP, which contains neither the Left
+Party nor the Sweden Democrats, so no commitment had to break. The ledger is
+visibly in the model's reasoning — the world state records "V remains committed
+to *cabinet_or_nothing*", and C applies the dependence test in those words.
+
+Because no proposal ever fired, the gate's permissive half was tested separately
+in `tests/evals/statement-relevance/`. That eval caught a real laundering
+failure — a referee accepting an unrelated SD press motion as grounds for the
+Left Party abandoning its cabinet ultimatum — which was fixed prompt-side.
+
 ## Assumptions
 
 Carried from the provenance tags in `source-material/`, where every claim is

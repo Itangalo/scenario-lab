@@ -21,6 +21,17 @@ has ruled out whom, and how expensively.
   `[source: same TV4 article]`. The veto is therefore **narrow in scope but
   the tolerance path is conditional and unsettled** — it is live uncertainty,
   not a fixed rule, exactly like L's threshold status.
+- **C has disqualified Kristersson personally as a prime-ministerial
+  candidate.** At a press conference on 9 June 2026 Thand Ringqvist said "Ulf
+  Kristersson har diskvalificerats sig som statsministerkandidat", grounded in
+  "statsministerns eget agerande: Löften om många och tunga ministerposter till
+  Sverigedemokraterna". She named Andersson and the Social Democrats "den mest
+  sannolika samarbetspartnern för oss i Centerpartiet", and said "Centerpartiets
+  stöd för att bilda regering kommer aldrig att komma gratis" `[source: SVT
+  Nyheter 2026-06-09; corroborated by Sveriges Radio, Göteborgs-Posten,
+  Bohusläningen, TTELA and Hallandsposten via TT, retrieved 2026-08-23]`. Note
+  the scope: it names *Kristersson*, not the Moderates. Whether an M-led
+  government under a different leader clears it is not stated.
 - **S rules out cooperation with SD** `[source: statement by Lawen Redar (S),
   via search summary, retrieved 2026-08-22]`.
 - **S declines to commit to any constellation**, deliberately keeping its
