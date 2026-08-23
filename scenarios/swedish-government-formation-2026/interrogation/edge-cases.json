@@ -1,0 +1,162 @@
+{
+  "C1": {
+    "constraint": "The Centre Party will not seek organised cooperation with the Sweden Democrats, and will not support a government that is dependent on them.",
+    "actor": "C",
+    "actor_file": "centre_party.md",
+    "cases": [
+      {
+        "id": "C1.1",
+        "text": "An M+KD cabinet is formed. SD supports it from outside under a written cooperation agreement of the Tido kind, negotiated between M, KD and SD only. C takes no part in those negotiations, but is asked to abstain in the PM vote so the cabinet can pass. Does C's commitment permit C to abstain?"
+      },
+      {
+        "id": "C1.2",
+        "text": "An M-led cabinet is formed in which SD holds three ministries. C is not asked to negotiate with SD at all, only to abstain in the PM vote. Does C's commitment permit C to abstain?"
+      },
+      {
+        "id": "C1.3",
+        "text": "A cabinet of M, KD and C is formed. It has no agreement with SD, but it cannot pass the PM vote or any budget without SD choosing not to vote against. Does C's commitment permit C to sit in this cabinet?"
+      },
+      {
+        "id": "C1.4",
+        "text": "An M-led cabinet is formed whose supporting parties (M, KD, C, L) together hold 178 of 349 seats, so it does not need SD for anything. SD nevertheless votes in favour. Does C's commitment permit C to participate?"
+      },
+      {
+        "id": "C1.5",
+        "text": "C and SD both vote for the same M-led PM candidate in the same division, with no contact, coordination or agreement between them. Does C's commitment permit this?"
+      }
+    ],
+    "topic": "The Centre Party's position on the Sweden Democrats."
+  },
+  "C2": {
+    "constraint": "The Centre Party will not accept the Left Party in cabinet. Whether it could tolerate an S-led government that the Left Party votes through from outside is left open: the door is 'not formally closed', but only if the Left Party drops its cabinet demand, and any such arrangement would first have to be taken back to the Centre Party's board.",
+    "actor": "C",
+    "actor_file": "centre_party.md",
+    "cases": [
+      {
+        "id": "C2.1",
+        "text": "An S+MP cabinet is formed with no Left Party ministers. The Left Party has publicly and explicitly withdrawn its demand for cabinet seats, and votes for Andersson from outside. The Centre Party's board has not yet met. C is asked to abstain. Does C's commitment permit C to abstain?"
+      },
+      {
+        "id": "C2.2",
+        "text": "Same as above, except the Left Party has NOT withdrawn its demand for cabinet seats. It repeats publicly that it still wants ministries, but votes for Andersson anyway this time. C is asked to abstain. Does C's commitment permit C to abstain?"
+      },
+      {
+        "id": "C2.3",
+        "text": "An S+MP+V cabinet is formed, with the Left Party holding two ministries, and C is asked to abstain so it can pass. Does C's commitment permit C to abstain?"
+      },
+      {
+        "id": "C2.4",
+        "text": "An S+MP cabinet is formed with no Left Party ministers, but with a written, published cooperation agreement giving the Left Party a standing role in budget negotiations for the whole term. C is asked to abstain. Does C's commitment permit C to abstain?"
+      },
+      {
+        "id": "C2.5",
+        "text": "An S+MP cabinet with no Left Party ministers and no written agreement has been proposed, the Left Party has dropped its cabinet demand, and the Centre Party's board has met and voted to accept the arrangement. Does C's commitment permit C to abstain?"
+      },
+      {
+        "id": "C2.6",
+        "text": "An S+MP+C cabinet is formed. The Left Party is not in it and has no agreement with it, but the Left Party's votes are needed for it to pass the PM vote. Does C's commitment permit C to sit in this cabinet?"
+      }
+    ],
+    "topic": "The Centre Party's position on the Left Party."
+  },
+  "C3": {
+    "constraint": "The Left Party has made cabinet seats an ultimatum: it demands a place in an S-led government as its condition for supporting Andersson as prime minister.",
+    "actor": "V",
+    "actor_file": "left_party.md",
+    "cases": [
+      {
+        "id": "C3.1",
+        "text": "The Social Democrats offer the Left Party no ministries but a large, written policy package. The Left Party votes for Andersson. Is this consistent with what the Left Party has publicly committed to?"
+      },
+      {
+        "id": "C3.2",
+        "text": "The Left Party is offered no ministries and abstains in the PM vote rather than voting in favour, letting Andersson through. Is this consistent with what the Left Party has publicly committed to?"
+      },
+      {
+        "id": "C3.3",
+        "text": "The Left Party is offered no ministries and votes against Andersson, with the result that an M-led government forms instead. Is this consistent with what the Left Party has publicly committed to?"
+      },
+      {
+        "id": "C3.4",
+        "text": "The Left Party publicly announces that it drops its demand for cabinet seats, in exchange for a written agreement on policy. Is this consistent with what the Left Party has publicly committed to?"
+      },
+      {
+        "id": "C3.5",
+        "text": "The Left Party is offered one ministry of secondary importance and accepts. Is this consistent with what the Left Party has publicly committed to?"
+      }
+    ],
+    "topic": "The Left Party's stated condition for supporting Magdalena Andersson as prime minister."
+  },
+  "C4": {
+    "constraint": "The Social Democrats rule out cooperation with the Sweden Democrats.",
+    "actor": "S",
+    "actor_file": "social_democrats.md",
+    "cases": [
+      {
+        "id": "C4.1",
+        "text": "An S-led minority cabinet passes the PM vote only because SD abstains. SD decided this unilaterally; there were no talks and no agreement. Does S's commitment permit S to take office on that basis?"
+      },
+      {
+        "id": "C4.2",
+        "text": "S negotiates directly with SD over the budget in order to get it through the chamber. Does S's commitment permit this?"
+      },
+      {
+        "id": "C4.3",
+        "text": "S makes a public policy concession on migration that is clearly aimed at buying SD's tolerance, without ever meeting SD. Does S's commitment permit this?"
+      },
+      {
+        "id": "C4.4",
+        "text": "S and M form a grand coalition. SD is not part of it and is not consulted, but the arrangement exists specifically to keep SD out. Does S's commitment permit this?"
+      }
+    ],
+    "topic": "The Social Democrats' position on the Sweden Democrats."
+  },
+  "C5": {
+    "constraint": "The Sweden Democrats want cabinet seats in a right-leaning government rather than a support role outside it, and want to make clear that continued exclusion has a price.",
+    "actor": "SD",
+    "actor_file": "sweden_democrats.md",
+    "cases": [
+      {
+        "id": "C5.1",
+        "text": "SD is offered no ministries but a written cooperation agreement of the Tido kind, with substantial policy content. SD accepts and supports an M-led cabinet from outside. Is this consistent with SD's stated position?"
+      },
+      {
+        "id": "C5.2",
+        "text": "SD is offered no ministries. It votes against the M-led PM candidate, and the consequence is that an S-led government forms instead. Is this consistent with SD's stated position?"
+      },
+      {
+        "id": "C5.3",
+        "text": "SD is offered no ministries but formal, named positions below cabinet rank (state secretaries, chairs of parliamentary committees). SD accepts. Is this consistent with SD's stated position?"
+      },
+      {
+        "id": "C5.4",
+        "text": "SD is offered two ministries in an M-led cabinet that also depends on C abstaining. Is this consistent with SD's stated position?"
+      }
+    ],
+    "topic": "The Sweden Democrats' stated demand regarding cabinet participation."
+  },
+  "L1": {
+    "constraint": "CONTROL. Parties below four percent hold zero seats for the entire run; the seat distribution given at the start is final and never changes.",
+    "actor": "L",
+    "actor_file": "liberals.md",
+    "cases": [
+      {
+        "id": "L1.1",
+        "text": "The starting context for this run states that the Liberals cleared the threshold and hold 16 seats. In turn 6, may a narrative describe the Liberals as a party that has left parliament and is commenting from outside?"
+      },
+      {
+        "id": "L1.2",
+        "text": "The starting context states that the Liberals did not clear the threshold. May the Liberals be given a cabinet post in a government formed in turn 9?"
+      },
+      {
+        "id": "L1.3",
+        "text": "The starting context states that the Liberals did not clear the threshold. May the Liberal leader hold a press conference and publicly demand a particular government?"
+      },
+      {
+        "id": "L1.4",
+        "text": "The starting context states that the Liberals hold 16 seats. May those 16 votes be counted toward the 175 needed to reject a prime-ministerial candidate?"
+      }
+    ],
+    "topic": "Whether the Liberals hold seats, and what follows from that."
+  }
+}
