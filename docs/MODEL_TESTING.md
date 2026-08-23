@@ -38,6 +38,7 @@ Re-test candidates against the fixed prompt before trusting any comparison below
 | deepseek/deepseek-v4-flash-0731 | $0.065 | $0.18 | 6/10 turns violated on first attempt, 2/10 left unresolved (ai-safety-race, **fixed prompt**, 10 turns) | Avoid for unattended work – never crashes, but 565s/turn and the referee cannot keep it in bounds |
 | minimax/minimax-m3 | $0.23 | $0.96 | 3/3 approved, then crashed turn 4 | Avoid (reasoning budget exhaustion) |
 | z-ai/glm-4.7-flash | $0.06 | $0.40 | 2/2 approved, 661s/turn | Avoid (far too slow) |
+| stealth/ox-alpha | free | free | **0/10 turns** (ai-safety-race, fixed prompt); 0 unresolved in 5 government-formation runs | **Use for synthesis only** – cleanest output tested, but 5 of 12 batch jobs completed and 15.6 min/turn |
 
 ## Cost per Run (10 turns, correct pricing)
 
@@ -53,6 +54,7 @@ Re-test candidates against the fixed prompt before trusting any comparison below
 | qwen/qwen3-30b-a3b-instruct-2507 | ai-safety-race | ~$0.035 (projected) | ~390k (6 turns: 260k) |
 | anthropic/claude-haiku-4-5 | ai-safety-race | ~$1.30* | – |
 | deepseek/deepseek-v4-flash-0731 | ai-safety-race | ~$0.067 | ~566k |
+| stealth/ox-alpha | ai-safety-race | $0 (free) | ~715k |
 
 *Logged costs for older runs used incorrect pricing and have not been recalculated.
 
@@ -258,6 +260,22 @@ The pattern is consistent: it writes a plausible narrative and then sets metrics
 **Verdict:** Avoid for unattended work. It has the best stability record of any reasoning model tested and is the only one to finish a run, but stability is not the same as compliance. At 565s/turn a 20-run batch would take over a day, and one turn in five would be persisted with an unresolved violation. `qwen/qwen3-235b-a22b-2507` remains the recommendation: 9/10 turns approved with zero arithmetic violations on the same scenario and fixed prompt, at roughly a quarter of the time per turn.
 
 
+### stealth/ox-alpha
+
+**Tested on:** ai-safety-race (10 turns to completion, 2026-08-22, seed 20260821, `max_tokens: 32000`) and swedish-government-formation-2026 (a 12-job comparison arm against `qwen3-235b-a22b-2507` on matched draws). Free at time of testing.
+
+**The cleanest output of any model tested.** Zero constitutional violations across ten turns of ai-safety-race; no other model has bettered 1/10. On five completed government-formation runs it left zero unresolved violations where qwen3-235b left four on the same draws.
+
+**Delivery is the problem, and it is severe.** Of twelve batch jobs, five completed. Seven failed on transport: five where OpenRouter returned a body containing nothing but whitespace, three on HTTP 502. This is the free-tier failure mode already recorded for `nvidia/nemotron-3-ultra:free`. It is probably the endpoint rather than the model — the failures are absent or malformed responses, never bad content — but a 58% job failure rate makes the distinction academic for unattended work.
+
+**Slowest tested.** 15.6 min/turn averaged over ai-safety-race (141 minutes for ten turns), rising from ~9 min early as context grows; 715k tokens for ten turns. A 20-turn scenario with eight actors takes three to four hours per run.
+
+**It reads source material more precisely than qwen3-235b, and that changes the answer.** On five matched draws, qwen produced three cross-bloc governments and two snap elections; ox-alpha produced four governments resting on the Left Party. The divergence traces to a single word. The scenario states that the Centre Party "will not support any government **containing** the Left Party". qwen reads that as blocking any arrangement involving V. ox-alpha distinguishes V in cabinet from V voting a government through — "its veto concerns V in cabinet and formal machinery, not S governing" — which is a real distinction in Swedish practice and arithmetically available, since left plus Centre is 181–191 seats in those draws. Both readings are defensible and they give opposite answers. Read a divergence of this shape as evidence that the source material is ambiguous, not that one model is wrong.
+
+**Synthesis is its strongest use.** Its ensemble report over twenty runs refused to answer a research question the data could not support, flagged a run whose summary contradicted its own actor analysis, noticed that logged `pm_vote_failed` events were far rarer than the failed votes the narratives described, and caught an event firing before its stated condition could hold. Three of those four had gone unnoticed by hand.
+
+**Verdict:** Use for `synthesize` and `analysis`, where one call per batch makes fifteen minutes free and the quality lands directly in what a human reads. Do not use for turn-by-turn simulation while it is served this way — the failure rate destroys unattended batches, and at three to four hours per run a 40-run batch is not feasible.
+
 ### minimax/minimax-m3
 
 **Tested on:** ai-safety-race (5 turns requested, **crashed at turn 4**, 2026-08-21, seed 20260821, `max_tokens: 32000`, fixed actor prompt)
@@ -312,6 +330,7 @@ Prefer instruct (non-thinking) variants. This is consistent with the project's o
 | minimax/minimax-m3 | Crashed turn 4 (`did not include assistant content`) |
 | z-ai/glm-4.7-flash | Survived, but 661s/turn and one hallucinated metric |
 | deepseek/deepseek-v4-flash-0731 | Completed 10/10 turns with zero contract failures – the only reasoning model to finish a run |
+| stealth/ox-alpha | Completed 10/10 with zero constitutional violations, then failed 7 of 12 batch jobs on empty responses and 502s |
 
 Four of five failed or were unusable. The fifth finished, but see its assessment: surviving a run and reasoning within constraints turned out to be different things. Raising `max_tokens` to 32000 did not prevent budget exhaustion; the models scaled their reasoning to fill whatever budget they were given.
 
