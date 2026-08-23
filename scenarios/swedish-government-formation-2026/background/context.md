@@ -39,12 +39,20 @@ Christian Democrats and the Liberals in cabinet, with the Sweden Democrats
 supporting it from outside. Whether that arrangement can or should be repeated
 is the question the election has just reopened.
 
-Four commitments were made out loud before the election, and they define the
+Five commitments were made out loud before the election, and they define the
 shape of the problem:
 
 - The Centre Party will not seek organised cooperation with the Sweden
-  Democrats.
-- The Centre Party will not support any government containing the Left Party.
+  Democrats, and will not support a government that is dependent on them.
+- The Centre Party will not accept the Left Party in cabinet. Whether it
+  could tolerate an S-led government that the Left Party votes through from
+  outside is a question its leader has left open: the door is "not formally
+  closed", but only if the Left Party drops its cabinet demand, and any such
+  arrangement would first have to be taken back to the Centre Party's board.
+  No commitment in either direction exists.
+- The Left Party has made cabinet seats an ultimatum: it demands a place in
+  an S-led government as its condition for supporting Andersson as prime
+  minister.
 - The Social Democrats rule out cooperation with the Sweden Democrats.
 - The Social Democrats have refused to commit to any constellation at all.
 

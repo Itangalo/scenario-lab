@@ -34,11 +34,16 @@ refusing to tolerate an M-led government at all `[assumption]`.
 
 ## 3. Does C break one of its vetoes, and which one?
 
-C has ruled out both organised SD cooperation and any government containing V.
-Under negative parliamentarism C does not have to *support* anything — it can
-abstain. The interesting branch is whether C converts abstention into
-concessions, and from which side. M's reported tax-policy invitation is an
-early sign this channel is open `[source: SVT, retrieved 2026-08-22]`.
+C has ruled out organised SD cooperation, SD-dependent governments, and V in
+cabinet — but **not**, categorically, an S-led government that V supports from
+outside. That path is "inte formellt stängd" per Thand Ringqvist, conditional
+on V dropping its cabinet ultimatum and on C's party board accepting it
+`[source: TV4/SVT, retrieved 2026-08-23]`. Under negative parliamentarism C
+does not have to *support* anything — it can abstain. The interesting branches
+are (a) whether V climbs down and C's conditional tolerance materialises, and
+(b) whether C converts abstention into concessions, and from which side. M's
+reported tax-policy invitation is an early sign the right-side channel is open
+`[source: SVT, retrieved 2026-08-22]`.
 
 ## 4. Turning points to model as events
 

@@ -136,6 +136,33 @@ without entering. Then state it unambiguously in `background/context.md` and in
 threshold status. Until then, treat the 75%/10%/10%/5% distribution as
 conditional on the broad reading.
 
+**Resolved 2026-08-23.** The research came back with a third answer: neither
+reading is right as a fixed rule.
+
+- Thand Ringqvist's categorical formulation is scope-limited to cabinet: "Vi
+  kommer inte att acceptera Vänsterpartiet i en regering och vi kommer heller
+  inte stötta en regering som är beroende av Sverigedemokraterna" (SVT). So
+  the *veto itself* is narrow — the broad reading is not what C has said.
+- But the tolerance path is not open either. On an S-led government carried by
+  V from outside, the door is "inte formellt stängd" — conditional on V
+  dropping its cabinet demand, and requiring her to "ta tillbaka det till min
+  partistyrelse" (TV4). On budget negotiation with V: "den frågan ligger inte
+  på bordet".
+- V has made cabinet seats an ultimatum for supporting Andersson, so the
+  narrow path additionally requires a public V climbdown.
+
+The correct modelling is therefore: **narrow veto, plus a conditional
+tolerance path gated by two live uncertainties** (V's climbdown, C's internal
+approval) — the same treatment as L's threshold, not a hard constraint either
+way. `background/context.md`, `source-material/actors.md` and
+`source-material/uncertainties.md` were updated 2026-08-23 to state this.
+
+Consequence: the 75%/10%/10%/5% distribution was conditioned on a broad
+reading that C has not actually committed to, and the stealth/ox-alpha runs
+assumed a frictionless narrow reading that ignored the ultimatum standoff.
+Both arms are superseded; the scenario needs a re-run on the corrected source
+material before the 13 September deadline.
+
 ## Assumptions
 
 Carried from the provenance tags in `source-material/`, where every claim is

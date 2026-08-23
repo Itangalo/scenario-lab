@@ -7,8 +7,20 @@ has ruled out whom, and how expensively.
 
 - **C rules out organised cooperation with SD** `[source: statement by C leader
   Elisabeth Thand Ringqvist, via search summary, retrieved 2026-08-22]`.
-- **C rules out supporting any government containing V** `[source:
-  Nationalekonomiska Föreningen, retrieved 2026-08-22]`.
+- **C rules out V in cabinet — but not, categorically, V as external
+  support.** Thand Ringqvist's own formulation is scope-limited: "Vi kommer
+  inte att acceptera Vänsterpartiet i en regering och vi kommer heller inte
+  stötta en regering som är beroende av Sverigedemokraterna" `[source: SVT
+  Nyheter live blog, retrieved 2026-08-23]`. On an S-led government that V
+  votes through from outside, she says the door is "inte formellt stängd" —
+  but only if V drops its cabinet demand, and she would then have to "ta
+  tillbaka det till min partistyrelse och diskutera det" `[source: TV4,
+  "C-ledaren: Dörren inte stängd formellt för V-samarbete", retrieved
+  2026-08-23]`. Asked whether C could accept a government that budget-
+  negotiates with V, her answer was that "den frågan ligger inte på bordet"
+  `[source: same TV4 article]`. The veto is therefore **narrow in scope but
+  the tolerance path is conditional and unsettled** — it is live uncertainty,
+  not a fixed rule, exactly like L's threshold status.
 - **S rules out cooperation with SD** `[source: statement by Lawen Redar (S),
   via search summary, retrieved 2026-08-22]`.
 - **S declines to commit to any constellation**, deliberately keeping its
@@ -18,7 +30,10 @@ has ruled out whom, and how expensively.
 C's double veto is the pivot. The left bloc leads in polling, but C will not
 back a government with V in it; the right bloc cannot reach a majority without
 SD, which C will not organise with. Neither side has a clean path, which is
-exactly what makes the question worth simulating.
+exactly what makes the question worth simulating. Note the asymmetry in C's
+two vetoes as actually stated: the SD veto covers *dependence* on SD (broad),
+while the V veto covers V *in cabinet* (narrow), with external V support a
+conditional, board-gated maybe.
 
 ## Party Positions
 
@@ -45,9 +60,13 @@ abstaining is enough to let a government through, which makes abstention its
 main instrument.
 
 **V** (~6.5–7.7%) — Leader Nooshi Dadgostar `[source: party overview,
-retrieved 2026-08-22]`. Wants to convert support into cabinet seats or explicit
-policy concessions. Its inclusion is precisely what C vetoes, so V faces a
-choice between influence and blocking its own bloc `[assumption]`.
+retrieved 2026-08-22]`. Has made cabinet seats an **ultimatum**: V demands a
+place in an S-led government as its condition for supporting Andersson as
+prime minister `[source: TV4/SVT campaign coverage, retrieved 2026-08-23]`.
+Its inclusion is precisely what C vetoes, so V faces a choice between
+climbing down from a publicly stated ultimatum (opening C's conditional
+tolerance path) and blocking its own bloc. Whether V backs down is itself
+live uncertainty, not a given.
 
 **MP** (~6.6–7.9%) — Spokespersons Amanda Lind and Daniel Helldén `[source:
 party overview, retrieved 2026-08-22]`. MP has two co-leaders (språkrör), which
