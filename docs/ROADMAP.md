@@ -83,6 +83,26 @@ The engine, the quality loop, the authoring path, and the synthesis layer are al
 
 **Note:** This also covers the pre-release checklist's "~50 simulations of the same scenario" item, which is the natural test bed for synthesis at volume.
 
+**First field test, 2026-08-22 (`swedish-government-formation-2026`):** one scenario built from a bare question through to two synthesis reports over 40 runs. The pipeline worked, but only after seven rounds of correction, and five of the seven faults were in the framework rather than the scenario. Four had the same shape and are worth naming as a class:
+
+**Information present, invisible where it was needed.**
+
+- The constitutional referee judged constraints like "viability may exceed 50 once a procedural step has occurred" while receiving only the current turn's metrics delta. The notepad recording that step was never passed to it. *Fixed.*
+- Passing the notepad then landed one turn short: `scenario.notepad` is assigned after the referee runs, so a milestone recorded this turn was still invisible. *Fixed.*
+- The Game Master wrote metrics and narrative without ever seeing `constitution.md`. The variable was in the template context; the metrics templates never used it. Every violation cost a correction round-trip, and the narrative was built on reasoning the constraints forbade. *Fixed.*
+- `background/context.md` seeds `world_state.narrative` and is then overwritten in turn 1. Anything a scenario fixes at the start — an election result, a treaty, a map — was visible for exactly one turn. Runs drawn with a party holding 17 seats had that party acting "despite lacking parliamentary representation" by turn 3. *Fixed.*
+
+The other three: nothing in the scenario drove the procedure to a conclusion (no event could make a prime-ministerial vote *succeed*); constraint prose accumulated into a set the model applied inconsistently (see Rule Economy in the `create-scenario` skill); and an event fired sixty times without ever doing what it was named for, because its description invited use as generic momentum.
+
+**Still open, in rough priority order:**
+
+- **`audit-constitution <scenario>`.** Aggregate the per-turn `5-constitutional-check.json` artifacts: which constraints are violated most, which are never violated (dead text), which hit `max_attempts_reached`. Diagnosing this by hand took hours and is the single highest-value addition.
+- **Rate limits as metric properties.** A `max_change_per_turn` field in `metrics.md`, clamped in Python, replaces prose constraints that silently cover only the metrics their author happened to be thinking about. `snap_election_risk` jumped 60 points in turn 1 and ended a run because the cap was written for the viability metrics.
+- **Surface unresolved violations.** `max_attempts_reached` persists a violating state and reports it nowhere. It belongs in `summary.json` and in the run's closing output.
+- **A run-subset filter for `synthesize`.** Only `--max-runs N` exists, so a stratified design cannot be synthesized per arm without moving directories out of `runs/` and back.
+- **Verify that a conditioned batch actually conditioned.** A batch drawn with a party above the threshold in 20 of 20 runs simulated it as absent in 14, and nothing noticed until the synthesis said so. Any conditioned arm needs a check that the condition held in the artifacts, not just in the draws.
+- **Synthesis invents comparisons from missing evidence.** Asked to compare in-chamber against out-of-chamber runs where every run was in-chamber, a report produced a confident 83%-vs-50% split. 17 of 20 per-run analyses simply did not mention the party's status. This belongs with the synthesis evals below.
+
 ### 2. Synthesis Quality Evals
 
 **Priority:** High  
