@@ -103,3 +103,27 @@ cases:
     note: >-
       Weak-but-real is still BEARS. Merit is priced by the Game Master, not
       judged here.
+
+  - id: bundled_downgrade_modify
+    expect: BEARS
+    statement:
+      id: no_v_in_cabinet
+      tier: commitment
+      text: We will not accept the Left Party in cabinet.
+    proposal: >-
+      Modify it to position and rewrite the text to "Keep the Left Party at a
+      distance, but cabinet participation is negotiable under sustained
+      deadlock."
+    trigger: >-
+      The fourth failed prime-ministerial vote moved snap_election_risk to 70,
+      with the Left Party the only remaining path to any government.
+    events: "pm_vote_failed: The Speaker's fourth candidate was rejected, 175 to 162."
+    world_state: >-
+      Four failed votes. snap_election_risk stands at 70 and editorials blame
+      every party that names a condition. The Left Party has offered to support
+      a government from outside without ministries.
+    note: >-
+      A modify that bundles a tier drop in one step is gated by what the
+      statement currently IS. The referee must judge the trigger on its merits
+      exactly as for a plain reversal; the downgrade does not lower the bar,
+      and a genuine bearing trigger still passes.

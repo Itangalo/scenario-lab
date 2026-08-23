@@ -126,6 +126,29 @@ def test_downgrading_needs_grounds_at_the_current_tier():
     assert requires_trigger(downgrade, actor) is True
 
 
+def test_a_modify_bundling_a_downgrade_is_gated_by_the_existing_tier():
+    """`modify `id` (position)` on a commitment is a reversal plus a downgrade.
+
+    The gate must read what the statement currently IS, not the tier named in
+    the proposal -- otherwise every gated change could be laundered through a
+    bundled tier drop.
+    """
+    actor = make_actor()
+    proposal = StatementProposal(
+        "modify", "no_sd", tier="position", text="We might support one after all."
+    )
+    assert effective_tier(proposal, actor) == "commitment"
+    assert requires_trigger(proposal, actor) is True
+    assert "must name a Trigger" in (check_structure(proposal, actor) or "")
+
+    proposal.trigger = "The third prime-ministerial vote failed this turn."
+    assert check_structure(proposal, actor) is None
+    apply_proposal(actor, proposal)
+    moved = actor.statement("no_sd")
+    assert moved.tier == "position"
+    assert moved.text == "We might support one after all."
+
+
 # --- Structural rejections ----------------------------------------------------
 
 def test_unknown_id_is_rejected_not_raised():
