@@ -1,0 +1,34 @@
+name: "Librar Labs – US Market Opportunities"
+description: >
+  Strategic opportunity and risk analysis for Librar Labs in the US school library
+  market, 2026–2029. The simulation surfaces hidden opportunities and missed risks
+  across adjacent markets (physical books, e-books, audiobooks, music, podcasts)
+  and informs Librar Labs' strategic choices as they scale.
+start_date: "2026-04"
+time_scale: "3 months per turn"
+max_turns: 12
+output_language: "English"
+
+actors:
+  - librar_labs
+  - school_library_sector
+  - traditional_ils_vendors
+  - digital_content_platforms
+  - policy_funders
+
+llm:
+  events: "anthropic:claude-haiku-4-5-20251001"
+  actors: "anthropic:claude-sonnet-4-6"
+  rules: "anthropic:claude-sonnet-4-6"
+  metrics: "anthropic:claude-haiku-4-5-20251001"
+  summary: "anthropic:claude-sonnet-4-6"
+  temperature: 0.7
+  max_tokens: 2000
+  max_tokens_by_task:
+    rules: 3500
+    actors: 3000
+    summary: 4000
+
+rule_evolution:
+  freeze_until_turn: 2
+  max_changes_per_turn: 5

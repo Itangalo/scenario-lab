@@ -1,0 +1,18 @@
+name: "AI och skolan 2031"
+description: "Utforskar hur svensk skola navigerar AI-utvecklingen 2026–2031. Aktörer agerar fritt utifrån mål och kontext. Scenariot är ett underlag för att senare bygga ett workshopspel för skolchefer."
+start_date: "2026-01"
+time_scale: "1 year per turn"
+max_turns: 4
+
+actors:
+  - skolhuvudman
+  - edtech
+  - staten
+  - sveriges-larare
+
+llm:
+  model: "openrouter:qwen/qwen3-235b-a22b-2507"
+  temperature: 0.7
+  max_tokens: 2000
+  max_tokens_by_task:
+    rules: 3500
