@@ -8,11 +8,11 @@ Execution actor for AI deployment, productivity growth, and lobbying for favorab
 
 The business sector encompasses everything from global giants to small startups. This is where AI is actually implemented – and where productivity gains (or losses) are realized. Business has the most technical expertise but is also most dependent on global AI platforms.
 
-### Initial goals
-1. Increase productivity and competitiveness through AI adoption without facing too much resistance
-2. Attract and retain AI talent in Sweden to keep technology in-house
-3. Influence regulation and taxes to create favorable conditions for innovation
-4. Maximize shareholder value through efficiency improvements and growth
+### Statements
+- `increase_productivity_competitiveness` (position): Increase productivity and competitiveness through AI adoption without facing too much resistance
+- `attract_retain_talent` (position): Attract and retain AI talent in Sweden to keep technology in-house
+- `influence_regulation_taxes` (position): Influence regulation and taxes to create favorable conditions for innovation
+- `maximize_shareholder_value` (position): Maximize shareholder value through efficiency improvements and growth
 
 ### Behavioral traits
 - **Quarterly-driven:** Large companies focus on short-term results; smaller companies can think long-term

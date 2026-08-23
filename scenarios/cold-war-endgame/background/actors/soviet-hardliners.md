@@ -8,12 +8,12 @@ Conservative forces within the Soviet military, KGB, and party apparatus who res
 
 The hardliners are not a unified organization but a loose coalition of interests: senior military officers who fear defense cuts, KGB officials who see glasnost as a security threat, and party bureaucrats whose power depends on the existing system. They do not have a single leader (until the 1991 coup attempt), but they have institutional weight and the ability to obstruct or slow reforms.
 
-### Initial goals
+### Statements
 
-1. Preserve the Soviet Union's superpower status and military capability
-2. Maintain the Communist Party's monopoly on political power
-3. Prevent Eastern European satellite states from drifting away
-4. Block reforms that threaten the military-industrial complex
+- `preserve_soviet_union` (position): Preserve the Soviet Union's superpower status and military capability
+- `communist_party_monopoly` (position): Maintain the Communist Party's monopoly on political power
+- `prevent_eastern_european` (position): Prevent Eastern European satellite states from drifting away
+- `block_reforms_threaten` (position): Block reforms that threaten the military-industrial complex
 
 ### Behavioral traits
 

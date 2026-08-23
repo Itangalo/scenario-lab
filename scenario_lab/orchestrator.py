@@ -11,6 +11,41 @@ from .prompts import PromptBuilder
 from .llm import LLMResponse, LLMParseError, LLMError, LLMUnsupportedStructuredError
 from .router import FallbackRouter
 from .providers.registry import ProviderRegistry
+from .statements import (
+    ProposalOutcome,
+    apply_proposal,
+    check_structure,
+    parse_statement_changes,
+    render_statements_file,
+    requires_trigger,
+)
+
+
+def _parse_relevance_result(raw: str) -> Optional[dict]:
+    """Extract the relevance verdict JSON from a referee response."""
+    text = raw.strip()
+    fenced = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.DOTALL)
+    if fenced:
+        text = fenced.group(1)
+    else:
+        brace = re.search(r"\{.*\}", text, re.DOTALL)
+        if not brace:
+            return None
+        text = brace.group(0)
+
+    try:
+        parsed = json.loads(text)
+    except json.JSONDecodeError:
+        return None
+
+    if not isinstance(parsed, dict):
+        return None
+
+    verdict = str(parsed.get("verdict", "")).strip().upper()
+    parsed["verdict"] = verdict if verdict in {"BEARS", "UNRELATED"} else "UNRELATED"
+    if not parsed.get("found", True):
+        parsed["verdict"] = "UNRELATED"
+    return parsed
 
 if TYPE_CHECKING:
     from .output import OutputManager
@@ -394,6 +429,20 @@ class Orchestrator:
             print("\n[2/5] Getting actor actions...")
             actor_outputs = self._run_actors_step(turn, triggered_events)
             print(f"  → {len(actor_outputs)} actors responded")
+
+        # Statement ledgers: apply any changes the actors proposed. Runs before
+        # the rules step so the rest of the turn sees the updated ledgers.
+        statement_outcomes = self._process_statement_changes(
+            turn, actor_outputs, triggered_events
+        )
+        applied = sum(
+            1
+            for outcomes in statement_outcomes.values()
+            for outcome in outcomes
+            if outcome.verdict == "applied"
+        )
+        if applied:
+            print(f"  → {applied} statement change(s) applied")
 
         # Step 3: Update metric rules
         if self.progress_tracker:
@@ -919,6 +968,102 @@ class Orchestrator:
                 self.output_manager.save_actor_output(turn, actor_id, response.content)
 
         return outputs
+
+    def _process_statement_changes(
+        self, turn: int, actor_outputs: dict[str, str], triggered_events: list[dict]
+    ) -> dict[str, list[ProposalOutcome]]:
+        """Apply actors' statement-change proposals to their ledgers.
+
+        Runs after the actor step and before the rules step. Proposals that
+        fail the structural check or the relevance check are not applied, and
+        are recorded with a reason so a rejected change is as visible in the
+        artifacts as an accepted one.
+
+        Note what is absent: no cap on how many changes a turn may contain, and
+        no judgement about whether a change is a good idea. The first failed
+        before (a cap behaves as a quota); the second belongs to the Game
+        Master, which prices the change in the world.
+        """
+        all_outcomes: dict[str, list[ProposalOutcome]] = {}
+
+        for actor_id, output in actor_outputs.items():
+            actor = self.scenario.actors.get(actor_id)
+            if actor is None:
+                continue
+
+            outcomes: list[ProposalOutcome] = []
+            for proposal in parse_statement_changes(output):
+                statement = actor.statement(proposal.statement_id)
+
+                reason = check_structure(proposal, actor)
+                if reason:
+                    outcomes.append(
+                        ProposalOutcome(proposal, "rejected-structural", reason)
+                    )
+                    continue
+
+                if requires_trigger(proposal, actor) and statement is not None:
+                    verdict, evidence, why = self._check_statement_relevance(
+                        turn, actor_id, statement, proposal, triggered_events
+                    )
+                    if verdict != "BEARS":
+                        outcomes.append(
+                            ProposalOutcome(proposal, "rejected-relevance", why, evidence)
+                        )
+                        continue
+                    apply_proposal(actor, proposal)
+                    outcomes.append(ProposalOutcome(proposal, "applied", why, evidence))
+                    continue
+
+                apply_proposal(actor, proposal)
+                outcomes.append(ProposalOutcome(proposal, "applied"))
+
+            all_outcomes[actor_id] = outcomes
+
+            if self.output_manager:
+                self.output_manager.save_actor_statements(
+                    turn, actor_id, render_statements_file(actor, turn, outcomes)
+                )
+
+        return all_outcomes
+
+    def _check_statement_relevance(
+        self, turn: int, actor_id: str, statement, proposal, triggered_events: list[dict]
+    ) -> tuple[str, str, str]:
+        """Ask the referee whether the named trigger exists and bears on the statement.
+
+        Returns (verdict, quoted evidence, reason). On any failure to get a
+        usable answer the proposal is left unapplied: a change that cannot be
+        checked is not silently allowed through.
+        """
+        system, user = self.prompt_builder.build_statement_relevance_prompt(
+            actor_id=actor_id,
+            statement=statement,
+            proposal=proposal,
+            triggered_events=triggered_events,
+            world_state=self.scenario.world_state.narrative,
+            previous_actions=self.scenario.actors[actor_id].last_actions,
+        )
+
+        client = self.llm_clients.get("referee", self.llm_clients["metrics"])
+        try:
+            response = client.complete(system, user)
+        except Exception as exc:  # noqa: BLE001 - a failed check must not kill the run
+            return "UNRELATED", "", f"relevance check failed: {exc}"
+
+        self._record_llm_call(
+            turn, f"statement_relevance:{actor_id}:{proposal.statement_id}", response
+        )
+
+        result = _parse_relevance_result(response.content)
+        if result is None:
+            return "UNRELATED", "", "relevance check returned an unparseable answer"
+
+        return (
+            result.get("verdict", "UNRELATED"),
+            str(result.get("quote", "")),
+            str(result.get("reason", "")),
+        )
 
     def _run_rules_step(
         self, turn: int, actor_outputs: dict[str, str], triggered_events: list[dict]

@@ -900,11 +900,19 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
                 warnings.append(f"Actor '{actor_id}' has no display name")
             if not actor.short_description:
                 warnings.append(f"Actor '{actor_id}' has no short description")
-            if not actor.initial_goals:
+            if not actor.initial_statements:
                 warnings.append(
-                    f"Actor '{actor_id}' has no initial goals "
-                    f"(consider adding '### Initial goals' under '## Long description')"
+                    f"Actor '{actor_id}' has no statements "
+                    f"(consider adding '### Statements' under '## Long description')"
                 )
+            # Deliberately not checked here: whether a commitment-tier statement
+            # duplicates a constitution clause. A constitution that *references*
+            # an actor's commitment is correct and common -- the metric cap has
+            # to name what it caps -- while a constitution that *owns* what
+            # should be adjustable is a design error. Telling those apart is a
+            # judgement about authority, not a string comparison, and a word-
+            # overlap heuristic flags the correct case as loudly as the wrong
+            # one. It belongs in review, not in the validator.
             if not actor.behavioral_traits:
                 warnings.append(
                     f"Actor '{actor_id}' has no behavioral traits "

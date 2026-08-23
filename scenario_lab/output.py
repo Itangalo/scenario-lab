@@ -177,6 +177,22 @@ class OutputManager:
         actors_dir.mkdir(exist_ok=True)
         (actors_dir / f"{actor_id}.md").write_text(output, encoding="utf-8")
 
+    def save_actor_statements(self, turn: int, actor_id: str, content: str):
+        """Save an actor's statement ledger and this turn's changelog.
+
+        Written every turn whether or not anything changed, so a diff between
+        consecutive turns is empty unless a change was actually accepted.
+
+        Args:
+            turn: Turn number
+            actor_id: Actor identifier
+            content: Rendered ledger and changelog markdown
+        """
+        turn_dir = self.get_turn_dir(turn)
+        actors_dir = turn_dir / "2-actors"
+        actors_dir.mkdir(exist_ok=True)
+        (actors_dir / f"{actor_id}-statements.md").write_text(content, encoding="utf-8")
+
     def save_metric_rules(self, turn: int, rules: str):
         """Save metric rules immediately after generation.
 

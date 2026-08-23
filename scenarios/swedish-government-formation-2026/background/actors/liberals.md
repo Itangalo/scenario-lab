@@ -21,11 +21,12 @@ If the Liberals fell short, they hold no seats and no votes. They are not silent
 
 Their absence is not neutral for the right: roughly two points of right-leaning vote are wasted, which mechanically improves the left's seat share.
 
-### Initial goals
-1. If in the chamber: convert survival into influence, arguing that they earned it by making the last government work
-2. If in the chamber: keep the Moderates from conceding cabinet seats to the Sweden Democrats, which the Liberals have resisted
-3. If out of the chamber: defend the party's record and press publicly for a government that reflects liberal priorities
-4. In either case: secure the party's future, which after this result is a genuine open question
+### Statements
+- `no_sd_cabinet_seats` (commitment): We have resisted Sweden Democrat cabinet seats and said so publicly, including while governing with their support.
+- `convert_survival_to_influence` (position): If in the chamber, convert survival into influence, arguing we earned it by making the last government work.
+- `defend_the_record` (position): If out of the chamber, defend the party's record and press publicly for a government reflecting liberal priorities.
+- `secure_the_party_future` (position): Secure the party's future, which after this result is a genuine open question.
+- `liberalism_needs_a_voice` (identity): Sweden needs a liberal party in parliament, and we are it.
 
 ### Response length
 

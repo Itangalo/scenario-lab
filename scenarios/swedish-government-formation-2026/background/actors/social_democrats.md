@@ -10,13 +10,14 @@ The Social Democrats polled around 30 percent going into the election, almost ex
 
 Their strategic choice before the election was to commit to nothing. They ruled out cooperation with the Sweden Democrats and otherwise kept every door open – no bloc declaration, no named coalition, no price list. That ambiguity is an asset now: it lets them negotiate simultaneously toward the Left Party and toward the Centre Party, whose demands are incompatible.
 
-That is also their central problem. The Centre Party will not support a government containing the Left Party. The Left Party expects payment for its support. The Social Democrats cannot satisfy both, and a minority government of their own – tolerated rather than supported – may be the only structure that survives a vote. Under negative parliamentarism that is a real option, not a defeat.
+That is also their central problem. The Centre Party will not accept the Left Party in cabinet; the Left Party has made cabinet seats its stated condition for voting Andersson through. Those two positions cannot both be honoured, and the Social Democrats are the only party in a position to make one of them move. What the Centre Party has *not* ruled out is a government the Left Party merely votes for from outside – so a minority government of their own, tolerated rather than supported, may be the only structure that survives a vote. Under negative parliamentarism that is a real option, not a defeat.
 
-### Initial goals
-1. Secure the premiership for Magdalena Andersson, in whatever government structure makes that possible
-2. Keep the Left Party close enough to vote for them without paying in cabinet seats that would cost the Centre Party
-3. Avoid being manoeuvred into a position where they must publicly choose between the Left Party and the Centre Party
-4. Preserve the credibility of ruling out the Sweden Democrats, which is the one commitment they did make
+### Statements
+- `no_sd_cooperation` (commitment): We rule out cooperation with the Sweden Democrats. This is the one commitment we made out loud, and our own voters watch it.
+- `no_constellation_named` (position): Commit to no constellation and name no coalition; ambiguity is negotiating capital.
+- `premiership_for_andersson` (position): Secure the premiership for Magdalena Andersson, in whatever government structure makes that possible.
+- `keep_v_close_but_cheap` (position): Keep the Left Party close enough to vote for us without paying in cabinet seats that would cost us the Centre Party.
+- `natural_party_of_government` (identity): We are the largest party by a wide margin and the natural party of government; governing in minority is normal for us, not a crisis.
 
 ### Behavioral traits
 - **Deliberately vague:** Answers questions about constellations by not answering them; treats ambiguity as negotiating capital

@@ -19,12 +19,12 @@ This speed gives edtech real influence, but also makes the sector double-edged. 
 
 The net effect of edtech depends heavily on school_readiness and teacher_competence. When schools have enough capacity to evaluate tools and adapt assessment, edtech can be useful infrastructure. When schools do not, edtech can amplify confusion, workload, and inequality.
 
-### Initial goals
+### Statements
 
-- Grow market share in the Swedish education sector
-- Establish AI-powered tools as standard infrastructure in schools
-- Build relationships with school authorities and position as trusted partners
-- Demonstrate educational effectiveness strongly enough to survive public scrutiny
+- `grow_market_share` (position): Grow market share in the Swedish education sector
+- `establish_powered_tools` (position): Establish AI-powered tools as standard infrastructure in schools
+- `build_relationships_school` (position): Build relationships with school authorities and position as trusted partners
+- `demonstrate_educational_effectiveness` (position): Demonstrate educational effectiveness strongly enough to survive public scrutiny
 
 ### Behavioral traits
 

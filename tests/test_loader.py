@@ -104,19 +104,20 @@ spanning multiple lines.
     assert actor.name == "My Actor"
     assert actor.short_description == "A short summary."
     assert "spanning multiple lines" in actor.long_description
-    assert actor.initial_goals == [] # Defaults
+    assert actor.initial_statements == [] # Defaults
 
 
-def test_load_actor_parses_initial_goals_and_traits(tmp_path):
-    """Actor parser should load optional h3 goals/traits sections under long description."""
+def test_load_actor_parses_statements_and_traits(tmp_path):
+    """Actor parser should load h3 statements/traits sections under long description."""
     content = """# My Actor
 ## Short description
 A short summary.
 ## Long description
 Long details here.
-### Initial goals
-- Protect critical infrastructure
-- Maintain investor confidence
+### Statements
+- `protect_infrastructure` (commitment): Protect critical infrastructure
+- `investor_confidence` (position): Maintain investor confidence
+- `we_are_reliable` (identity): We are the reliable operator
 ### Behavioral traits
 - Pragmatic under pressure
 1. Risk-aware communicator
@@ -126,25 +127,62 @@ Long details here.
 
     actor = load_actor(f, "actor_id")
 
-    assert actor.initial_goals == [
-        "Protect critical infrastructure",
-        "Maintain investor confidence",
+    assert [(s.id, s.tier, s.text) for s in actor.initial_statements] == [
+        ("protect_infrastructure", "commitment", "Protect critical infrastructure"),
+        ("investor_confidence", "position", "Maintain investor confidence"),
+        ("we_are_reliable", "identity", "We are the reliable operator"),
     ]
     assert actor.behavioral_traits == [
         "Pragmatic under pressure",
         "Risk-aware communicator",
     ]
+    # The live ledger starts as a copy, not as a shared reference.
+    assert [s.id for s in actor.statements] == [s.id for s in actor.initial_statements]
+    actor.statements[0].text = "changed"
+    assert actor.initial_statements[0].text == "Protect critical infrastructure"
 
 
-def test_load_actor_does_not_parse_h2_goals_and_traits(tmp_path):
-    """Legacy h2 sections should not populate goals/traits."""
+def test_load_actor_rejects_the_old_goals_section(tmp_path):
+    """`### Initial goals` is gone; the loader must say so rather than read prose."""
     content = """# My Actor
 ## Short description
 A short summary.
 ## Long description
 Long details here.
-## Initial goals
-- Legacy goal format
+### Initial goals
+- Protect critical infrastructure
+"""
+    f = tmp_path / "actor.md"
+    f.write_text(content, encoding="utf-8")
+
+    with pytest.raises(ValueError, match="Initial goals"):
+        load_actor(f, "actor_id")
+
+
+def test_load_actor_rejects_a_malformed_statement(tmp_path):
+    """A statement without an id and tier is an error, not a silently dropped line."""
+    content = """# My Actor
+## Short description
+A short summary.
+## Long description
+Long details here.
+### Statements
+- Protect critical infrastructure
+"""
+    f = tmp_path / "actor.md"
+    f.write_text(content, encoding="utf-8")
+
+    with pytest.raises(ValueError, match="malformed statement"):
+        load_actor(f, "actor_id")
+
+
+def test_load_actor_does_not_parse_h2_traits(tmp_path):
+    """Legacy h2 sections should not populate statements/traits."""
+    content = """# My Actor
+## Short description
+A short summary.
+## Long description
+Long details here.
 ## Behavioral traits
 - Legacy trait format
 """
@@ -153,7 +191,7 @@ Long details here.
 
     actor = load_actor(f, "actor_id")
 
-    assert actor.initial_goals == []
+    assert actor.initial_statements == []
     assert actor.behavioral_traits == []
 
 

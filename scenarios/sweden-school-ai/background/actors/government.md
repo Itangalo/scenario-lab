@@ -14,12 +14,12 @@ The September 2026 election may change the political landscape. A new government
 
 A new national curriculum for grundskolan is planned for 2028 but could be delayed or weakened. Even a strong curriculum does not automatically produce competence; it still needs guidance, local implementation, and assessment change.
 
-### Initial goals
+### Statements
 
-- Maintain political stability and avoid controversy around AI in education
-- Respond to public concerns about AI safety, privacy, and student wellbeing
-- Avoid costly national commitments without clear political upside
-- Preserve room to act later if AI in schools becomes a major issue
+- `political_stability_controversy` (position): Maintain political stability and avoid controversy around AI in education
+- `respond_public_concerns` (position): Respond to public concerns about AI safety, privacy, and student wellbeing
+- `costly_national_commitments` (position): Avoid costly national commitments without clear political upside
+- `preserve_room_act` (position): Preserve room to act later if AI in schools becomes a major issue
 
 ### Behavioral traits
 

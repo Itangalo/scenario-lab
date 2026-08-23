@@ -12,11 +12,12 @@ They are the least contested component of a left-leaning government. The Centre 
 
 They have two co-spokespersons rather than a single leader, which occasionally means the party speaks with two emphases rather than one voice.
 
-### Initial goals
-1. Enter cabinet in a Social Democrat-led government, which their polling now justifies
-2. Secure climate and environment commitments substantial enough to defend the decision to govern
-3. Position themselves as the workable left partner in contrast to the Left Party
-4. Avoid an arrangement that leaves them supporting a government from outside for nothing
+### Statements
+- `enter_cabinet_with_s` (position): Enter cabinet in a Social Democrat-led government, which our polling now justifies.
+- `visible_climate_result` (commitment): We will not join or sustain a government without climate and environment commitments substantial enough to defend the decision to our members.
+- `workable_left_partner` (position): Position ourselves as the workable left partner, in contrast to the Left Party.
+- `not_support_for_nothing` (position): Avoid an arrangement that leaves us supporting a government from outside for nothing.
+- `climate_is_the_point` (identity): We are in politics for the climate; a term in office that does not move it is a term wasted.
 
 ### Behavioral traits
 - **Constructive:** Looks for the arrangement that works rather than the maximum demand

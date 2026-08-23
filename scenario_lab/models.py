@@ -83,6 +83,30 @@ class Event:
     occurred: bool = False
 
 
+STATEMENT_TIERS = ("position", "commitment", "identity")
+
+
+@dataclass
+class Statement:
+    """One adjustable thing an actor holds: a goal, a value, or a stance.
+
+    The three are deliberately one category. What governs whether a statement
+    can move is its ``tier`` -- what the actor has staked on it -- not which
+    grammatical kind of thing it is.
+    """
+
+    id: str
+    tier: str
+    text: str
+
+    def __post_init__(self) -> None:
+        if self.tier not in STATEMENT_TIERS:
+            raise ValueError(
+                f"Statement '{self.id}' has tier '{self.tier}'; "
+                f"expected one of {', '.join(STATEMENT_TIERS)}"
+            )
+
+
 @dataclass
 class Actor:
     """A stakeholder in the scenario."""
@@ -91,16 +115,27 @@ class Actor:
     name: str
     short_description: str
     long_description: str
-    initial_goals: list[str]
+    initial_statements: list[Statement] = field(default_factory=list)
     behavioral_traits: list[str] = field(default_factory=list)
 
-    # Updated each turn
-    current_goals: list[str] = field(default_factory=list)
+    # The live ledger. Carried forward verbatim between turns; only an accepted
+    # change proposal alters it, so a diff between turns is empty unless the
+    # actor deliberately changed something.
+    statements: list[Statement] = field(default_factory=list)
     last_actions: str = ""
 
     def __post_init__(self):
-        if not self.current_goals:
-            self.current_goals = self.initial_goals.copy()
+        if not self.statements:
+            self.statements = [
+                Statement(s.id, s.tier, s.text) for s in self.initial_statements
+            ]
+
+    def statement(self, statement_id: str) -> Optional[Statement]:
+        """Return the live statement with this id, or None."""
+        for stmt in self.statements:
+            if stmt.id == statement_id:
+                return stmt
+        return None
 
 
 @dataclass

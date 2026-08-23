@@ -48,13 +48,13 @@ However, China also has potential advantages:
 - **Signaling:** Demonstrate military AI applications to increase US threat perception, or demonstrate safety commitment to build trust for coordination
 - **Domestic compute development:** Invest in domestic chip production to reduce dependence on US technology
 
-### Initial goals
+### Statements
 
-- Close the capability gap with the US as quickly as possible
-- Minimize safety investment unless forced by incidents or credible evidence of near-term risk
-- Resist coordination frameworks that lock in US advantage
-- Maintain espionage and intelligence capabilities to monitor US progress
-- Present AI safety concerns as exaggerated to reduce international pressure to slow down
+- `close_capability_gap` (position): Close the capability gap with the US as quickly as possible
+- `minimize_safety_investment` (position): Minimize safety investment unless forced by incidents or credible evidence of near-term risk
+- `resist_coordination_frameworks` (position): Resist coordination frameworks that lock in US advantage
+- `espionage_intelligence_capabilities` (position): Maintain espionage and intelligence capabilities to monitor US progress
+- `present_safety_concerns` (position): Present AI safety concerns as exaggerated to reduce international pressure to slow down
 
 ### Behavioral traits
 

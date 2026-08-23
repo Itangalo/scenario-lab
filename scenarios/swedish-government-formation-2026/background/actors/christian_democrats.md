@@ -12,11 +12,12 @@ Their position is closely aligned with the Moderates and has been for the whole 
 
 Their risk is that a cross-bloc arrangement between the Moderates and the Centre Party would leave them with less than the Tidö structure gave them.
 
-### Initial goals
-1. Return to cabinet in a right-leaning government
-2. Keep the Sweden Democrats inside the arrangement, since a right-leaning majority requires them
-3. Avoid a Moderate drift toward the Centre Party that would dilute Christian Democrat influence
-4. Protect the policy gains made during the outgoing term
+### Statements
+- `return_to_cabinet` (position): Return to cabinet in a right-leaning government.
+- `keep_sd_inside` (position): Keep the Sweden Democrats inside the arrangement, since a right-leaning majority requires them.
+- `resist_m_drift_to_c` (position): Avoid a Moderate drift toward the Centre Party that would dilute our influence.
+- `protect_policy_gains` (position): Protect the policy gains made during the outgoing term.
+- `loyal_partner` (identity): We hold the arrangement together rather than defecting when it strains.
 
 ### Behavioral traits
 - **Aligned with M:** Rarely breaks publicly with the Moderates, and coordinates before speaking

@@ -10,12 +10,12 @@ The United States under Reagan has pursued a confrontational strategy: massive m
 
 After Reagan, George H.W. Bush takes office in January 1989 with a more cautious approach — initially skeptical of Gorbachev's sincerity, but eventually supportive of managed change.
 
-### Initial goals
+### Statements
 
-1. Reduce the Soviet nuclear threat through verifiable arms control
-2. Maintain Western alliance cohesion (NATO, European partners)
-3. Support democratic movements in Eastern Europe without provoking Soviet military intervention
-4. Manage the transition so that it does not destabilize Europe or create a security vacuum
+- `reduce_soviet_nuclear` (position): Reduce the Soviet nuclear threat through verifiable arms control
+- `western_alliance_cohesion` (position): Maintain Western alliance cohesion (NATO, European partners)
+- `support_democratic_movements` (position): Support democratic movements in Eastern Europe without provoking Soviet military intervention
+- `manage_transition_does` (position): Manage the transition so that it does not destabilize Europe or create a security vacuum
 
 ### Behavioral traits
 

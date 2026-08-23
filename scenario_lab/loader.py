@@ -20,6 +20,7 @@ from .models import (
     Metrics,
     Event,
     Actor,
+    Statement,
     InitialState,
     ResearchQuestion,
     TerminationCondition,
@@ -927,7 +928,7 @@ def load_actor(path: Path, actor_id: str) -> Actor:
     name = ""
     short_desc = ""
     long_desc = ""
-    initial_goals: list[str] = []
+    statement_lines: list[str] = []
     behavioral_traits: list[str] = []
     current_section = None
 
@@ -937,8 +938,15 @@ def load_actor(path: Path, actor_id: str) -> Actor:
 
         if line_stripped.startswith("# "):
             name = line_stripped[2:].strip()
+        elif line_lower.startswith("### statements"):
+            current_section = "statements"
         elif line_lower.startswith("### initial goals"):
-            current_section = "goals"
+            raise ValueError(
+                f"Actor file '{path}' uses '### Initial goals', which no longer "
+                f"exists. Replace it with '### Statements', where each entry is "
+                f"`- `id` (position|commitment|identity): text`. See "
+                f"docs/proposals/adjustable-statements.md for the format."
+            )
         elif (
             line_lower.startswith("### behavioral traits")
             or line_lower.startswith("### behavioural traits")
@@ -955,13 +963,18 @@ def load_actor(path: Path, actor_id: str) -> Actor:
             short_desc += line_stripped + " "
         elif current_section == "long" and line_stripped:
             long_desc += line_stripped + " "
-        elif current_section in {"goals", "traits"} and line_stripped:
+        elif current_section in {"statements", "traits"} and line_stripped:
             item = re.sub(r"^[-*]\s+", "", line_stripped)
             item = re.sub(r"^\d+\.\s+", "", item)
             if not item:
                 continue
-            if current_section == "goals":
-                initial_goals.append(item)
+            if current_section == "statements":
+                # Continuation lines of a wrapped statement belong to the
+                # entry above, not to a new one.
+                if _STATEMENT_RE.match(item) or not statement_lines:
+                    statement_lines.append(item)
+                else:
+                    statement_lines[-1] += " " + item
             else:
                 behavioral_traits.append(item)
 
@@ -970,9 +983,50 @@ def load_actor(path: Path, actor_id: str) -> Actor:
         name=name or actor_id,
         short_description=short_desc.strip(),
         long_description=long_desc.strip(),
-        initial_goals=initial_goals,
+        initial_statements=_parse_statements(statement_lines, path),
         behavioral_traits=behavioral_traits,
     )
+
+
+_STATEMENT_RE = re.compile(
+    r"^`(?P<id>[a-z0-9_]+)`\s*\((?P<tier>position|commitment|identity)\)\s*:\s*(?P<text>.+)$"
+)
+
+
+def _parse_statements(raw_lines: list[str], path: Path) -> list[Statement]:
+    """Parse `### Statements` entries into Statement objects.
+
+    Expected form, one per bullet:
+
+        - `no_sd_dependence` (commitment): We will not support a government
+          that is dependent on the Sweden Democrats.
+    """
+    statements: list[Statement] = []
+    seen: set[str] = set()
+
+    for raw in raw_lines:
+        match = _STATEMENT_RE.match(raw)
+        if not match:
+            raise ValueError(
+                f"Actor file '{path}' has a malformed statement:\n  {raw}\n"
+                f"Expected: - `some_id` (position|commitment|identity): text"
+            )
+        statement_id = match.group("id")
+        if statement_id in seen:
+            raise ValueError(
+                f"Actor file '{path}' declares statement id '{statement_id}' twice; "
+                f"ids must be unique per actor."
+            )
+        seen.add(statement_id)
+        statements.append(
+            Statement(
+                id=statement_id,
+                tier=match.group("tier"),
+                text=match.group("text").strip(),
+            )
+        )
+
+    return statements
 
 
 def parse_key_value(line: str) -> tuple[str, str]:

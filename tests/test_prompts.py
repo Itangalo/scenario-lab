@@ -11,8 +11,8 @@ def mock_scenario(tmp_path):
     })
     
     actors = {
-        "actor1": Actor(id="actor1", name="Test Actor 1", short_description="Short Desc 1", long_description="Long Desc 1", initial_goals=[]),
-        "actor2": Actor(id="actor2", name="Test Actor 2", short_description="Short Desc 2", long_description="Long Desc 2", initial_goals=[])
+        "actor1": Actor(id="actor1", name="Test Actor 1", short_description="Short Desc 1", long_description="Long Desc 1", initial_statements=[]),
+        "actor2": Actor(id="actor2", name="Test Actor 2", short_description="Short Desc 2", long_description="Long Desc 2", initial_statements=[])
     }
     
     config = ScenarioConfig(

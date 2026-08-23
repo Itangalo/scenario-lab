@@ -37,9 +37,18 @@ No special events occur this turn.
 
 ---
 
-Use the background information to determine (1) whether your goals should be adjusted and (2) which actions you want to take during the turn.
+{% if statement_ledger %}
+## Your statements
 
-Actions should align with your goals and be realistic given time and other resources. Your actions will be evaluated by a Game Master, who determines how they affect the world. Bold actions can have greater impact, but also greater risk of failure.
+{{statement_ledger}}
+
+These carry forward unchanged unless you explicitly propose a change. Most
+turns need none, and saying so is a complete answer.
+{% endif %}
+
+Use the background information to determine (1) which actions you want to take during the turn and (2) whether anything that happened this turn genuinely warrants a change to your statements.
+
+Actions should align with your statements and be realistic given time and other resources. Your actions will be evaluated by a Game Master, who determines how they affect the world. Bold actions can have greater impact, but also greater risk of failure.
 
 {% if output_language %}
 Please write your response in {{output_language}}.
@@ -47,9 +56,6 @@ Please write your response in {{output_language}}.
 
 Respond with a Markdown text containing the following sections:
 
-* Heading level 2: Goals
-* Brief description of your goals in a bullet list
-* Optional heading level 3: Reason for changes (only if goals changed)
-* Brief description of why goals changed (only if goals changed)
+* Optional heading level 2: Statement changes — omit it, or write `No statement changes.`, when nothing has changed
 * Heading level 2: Actions
 * One paragraph for each action, describing at an appropriate level each action you intend to carry out during the turn.

@@ -42,12 +42,12 @@ The US views Chinese AI dominance as a severe threat (belief_opponent_threat = 7
 - **Export controls:** Restrict China's access to advanced compute hardware
 - **Signaling:** Publicly demonstrate safety commitment to build trust for coordination
 
-### Initial goals
+### Statements
 
-- Maintain capability lead over China while managing catastrophe risk
-- Invest enough in safety to stay ahead of perceived danger (belief_threshold = 55)
-- Explore coordination opportunities that don't require unilateral slowdown
-- Monitor China's progress and adjust strategy based on competitive dynamics
+- `capability_lead_over` (position): Maintain capability lead over China while managing catastrophe risk
+- `invest_enough_safety` (position): Invest enough in safety to stay ahead of perceived danger (belief_threshold = 55)
+- `explore_coordination_opportunities` (position): Explore coordination opportunities that don't require unilateral slowdown
+- `monitor_china_progress` (position): Monitor China's progress and adjust strategy based on competitive dynamics
 
 ### Behavioral traits
 

@@ -21,7 +21,7 @@ from scenario_lab.model_audit import (
     evaluate_model_hygiene,
     load_model_policy,
 )
-from scenario_lab.models import Scenario, ScenarioConfig, Metrics, Metric, Event, Actor, WorldState, LLMConfig
+from scenario_lab.models import Scenario, ScenarioConfig, Metrics, Metric, Event, Actor, WorldState, LLMConfig, Statement
 
 
 def test_is_static_probability():
@@ -436,7 +436,7 @@ def test_validate_actor_references():
             name="Actor 1",
             short_description="Short",
             long_description="Long",
-            initial_goals=[]
+            initial_statements=[]
         )},
         metric_rules="",
         world_state=WorldState(narrative="", turn=0, time_period=""),
@@ -755,7 +755,7 @@ def make_reference_scenario(metric_rules: str):
         }),
         events=[Event(id="vote_failed", description="d", condition="c", probability="10%")],
         actors={"a": Actor(id="a", name="A", short_description="s",
-                           long_description="l", initial_goals=["g"])},
+                           long_description="l", initial_statements=[Statement("g", "position", "g")])},
         metric_rules=metric_rules,
         world_state=WorldState(narrative="n", turn=0, time_period="p"),
         context="c",

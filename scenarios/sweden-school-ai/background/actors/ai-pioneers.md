@@ -14,12 +14,12 @@ The pioneers play a unique role in the ecosystem. They translate abstract talk a
 
 But pioneers cannot scale a school system on their own. Their reach is limited, burnout is a real risk, and informal sharing does not replace procurement routines, assessment policy, or structured professional development. They can seed change, legitimize it, and improve local practice, but they cannot by themselves create national readiness.
 
-### Initial goals
+### Statements
 
-- Spread practical AI competence among fellow teachers through usable examples and mentoring
-- Show that AI can support learning when handled well
-- Push institutions to recognize and support real classroom expertise
-- Prevent AI use in schools from collapsing into cheating, hype, or panic
+- `spread_practical_competence` (position): Spread practical AI competence among fellow teachers through usable examples and mentoring
+- `show_can_support` (position): Show that AI can support learning when handled well
+- `push_institutions_recognize` (position): Push institutions to recognize and support real classroom expertise
+- `prevent_use_schools` (position): Prevent AI use in schools from collapsing into cheating, hype, or panic
 
 ### Behavioral traits
 

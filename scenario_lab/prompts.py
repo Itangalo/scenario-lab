@@ -2,6 +2,7 @@
 
 from pathlib import Path
 from typing import Optional, Any
+from .statements import render_ledger
 from .models import Scenario, Actor
 import json
 from jinja2 import Template
@@ -42,6 +43,7 @@ class PromptBuilder:
             "format_fix_system": (system_dir / "format-fix.md").read_text(encoding="utf-8"),
             "constitutional_referee_system": (system_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
             "constitutional_referee_correction_system": (system_dir / "constitutional-referee-correction.md").read_text(encoding="utf-8"),
+            "statement_relevance_system": (system_dir / "statement_relevance.md").read_text(encoding="utf-8"),
         }
 
         self.user_templates = {
@@ -56,6 +58,7 @@ class PromptBuilder:
             "format_fix_metrics": (user_dir / "format-fix-metrics.md").read_text(encoding="utf-8"),
             "constitutional_referee": (user_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
             "constitutional_referee_correction": (user_dir / "constitutional-referee-correction.md").read_text(encoding="utf-8"),
+            "statement_relevance": (user_dir / "statement_relevance.md").read_text(encoding="utf-8"),
         }
 
     def _get_system_prompt(self, prompt_type: str, actor_id: Optional[str] = None) -> str:
@@ -133,6 +136,7 @@ class PromptBuilder:
             "actor_id": actor_id,
             "actor_name": "",
             "actor_description": "",
+            "behavioral_traits": "",
         }
 
         if actor_id and actor_id in self.scenario.actors:
@@ -140,6 +144,11 @@ class PromptBuilder:
             context["actor_name"] = actor.name
             context["actor_description"] = actor.long_description
             context["actor_short_description"] = actor.short_description
+            # Traits never change, so they belong in the cache-controlled
+            # system prompt rather than the per-turn user prompt.
+            context["behavioral_traits"] = "\n".join(
+                f"- {trait}" for trait in actor.behavioral_traits
+            )
 
         # Individual metric values as {{metric_<id>}}, matching user prompts.
         for m_id, metric in self.scenario.metrics.metrics.items():
@@ -282,17 +291,65 @@ class PromptBuilder:
         context = self._get_common_context(turn)
         
         # Add actor-specific context
+        context["statement_ledger"] = ""
         if actor_id in self.scenario.actors:
             actor = self.scenario.actors[actor_id]
             context["actor_name"] = actor.name
             context["actor_description"] = actor.long_description
-        
+            # The ledger changes across turns, so it goes in the user prompt.
+            # Rendered verbatim from the live ledger: the actor never restates
+            # it, which is what keeps drift from being invisible.
+            context["statement_ledger"] = render_ledger(actor)
+
         context["triggered_events"] = self._format_triggered_events(triggered_events)
 
         # Render user prompt
         user = template.render(**context)
 
         return system, user
+
+    def build_statement_relevance_prompt(
+        self,
+        actor_id: str,
+        statement,
+        proposal,
+        triggered_events: list[dict],
+        world_state: str,
+        previous_actions: str = "",
+    ) -> tuple[str, str]:
+        """Build prompts for the relevance check on one statement proposal.
+
+        Deliberately narrow: the referee sees the statement, the proposal, the
+        named trigger and this turn's inputs -- enough to locate the trigger and
+        judge whether it bears on the statement, and nothing that would invite a
+        judgement about whether the change is a good idea.
+        """
+        system = self.system_templates["statement_relevance_system"]
+
+        if proposal.kind == "modify":
+            summary = f"Rewrite it to read: {proposal.text}"
+        elif proposal.kind == "reclassify":
+            summary = f"Downgrade it from {statement.tier} to {proposal.tier}."
+        elif proposal.kind == "retire":
+            summary = "Drop the statement entirely."
+        else:
+            summary = f"{proposal.kind} `{proposal.statement_id}`"
+
+        actor = self.scenario.actors.get(actor_id)
+        context = {
+            "actor_name": actor.name if actor else actor_id,
+            "statement_id": statement.id,
+            "statement_tier": statement.tier,
+            "statement_text": statement.text,
+            "proposal_summary": summary,
+            "trigger": proposal.trigger,
+            "triggered_events": self._format_triggered_events(triggered_events),
+            "world_state": world_state,
+            "previous_actions": previous_actions,
+        }
+
+        template = self._get_user_template("statement_relevance")
+        return system, template.render(**context)
 
     def _format_triggered_events(self, triggered_events: list[dict]) -> str:
         """Format triggered events for actor/rules/metrics prompts.

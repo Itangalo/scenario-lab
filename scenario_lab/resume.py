@@ -8,6 +8,7 @@ from datetime import datetime
 
 from .models import Scenario
 from .loader import load_scenario, get_time_period
+from .statements import parse_ledger_file, render_statements_file
 
 
 def detect_last_turn(run_dir: Path) -> int:
@@ -201,6 +202,17 @@ def load_run_state(
     if notepad_file.exists():
         notepad = notepad_file.read_text(encoding="utf-8")
         scenario.notepad = notepad
+
+    # 4b. Load actor statement ledgers, so a resumed run continues from the
+    # statements as they stood rather than from the actor files' initial ones.
+    actors_dir = turn_dir / "2-actors"
+    if actors_dir.exists():
+        for actor_id, actor in scenario.actors.items():
+            ledger_file = actors_dir / f"{actor_id}-statements.md"
+            if ledger_file.exists():
+                loaded = parse_ledger_file(ledger_file.read_text(encoding="utf-8"))
+                if loaded:
+                    actor.statements = loaded
 
     # 5. Load historical summary (if exists)
     summary_file = turn_dir / "6-historical-summary.md"
@@ -398,6 +410,14 @@ def persist_scenario_state_at_turn(run_dir: Path, turn: int, scenario: Scenario)
     (turn_dir / "4-world-state.md").write_text(scenario.world_state.narrative, encoding="utf-8")
     (turn_dir / "3-metric-rules.md").write_text(scenario.metric_rules, encoding="utf-8")
     (turn_dir / "5-notepad.md").write_text(scenario.notepad, encoding="utf-8")
+
+    # Statement ledgers, so a branch created here starts from the right ones.
+    actors_dir = turn_dir / "2-actors"
+    actors_dir.mkdir(exist_ok=True)
+    for actor_id, actor in scenario.actors.items():
+        (actors_dir / f"{actor_id}-statements.md").write_text(
+            render_statements_file(actor, turn, []), encoding="utf-8"
+        )
 
     # Keep historical summary aligned with loaded state when present.
     if scenario.world_state.historical_summary:

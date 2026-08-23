@@ -1,0 +1,105 @@
+# Cases for the statement relevance check.
+#
+# The check has exactly two jobs: find the named trigger in the turn's inputs,
+# and say whether it bears on the statement being changed. It must NOT judge
+# whether the change is a good idea -- a weak but genuine connection is still
+# BEARS.
+#
+# The laundered cases are the point of the whole check: a real quote attached
+# to a statement it has nothing to do with.
+
+cases:
+  - id: direct_hit
+    expect: BEARS
+    statement:
+      id: no_sd_dependence
+      tier: commitment
+      text: >-
+        We will not support a government that is dependent on the Sweden
+        Democrats.
+    proposal: Rewrite it to allow tolerating an SD-dependent government.
+    trigger: The third prime-ministerial vote failed this turn.
+    events: "pm_vote_failed: The Speaker's third candidate was rejected, 190 to 149."
+    world_state: >-
+      A fourth failed vote would force an extraordinary election. The Centre
+      Party is the only party that can change the arithmetic.
+
+  - id: slow_pressure_still_counts
+    expect: BEARS
+    statement:
+      id: no_v_in_cabinet
+      tier: commitment
+      text: We will not accept the Left Party in cabinet.
+    proposal: Soften it to allow Left Party ministers in a crisis government.
+    trigger: Eleven weeks of deadlock with an extraordinary election approaching.
+    events: "(none this turn)"
+    world_state: >-
+      Formation talks have run for eleven weeks. deadlock_cost stands at 88 and
+      EU funding delays are causing measurable harm. snap_election_risk is 55.
+    note: >-
+      The gate blocks ungrounded change, not late change. A slow, real
+      development quoted from the world state must pass.
+
+  - id: invented_trigger
+    expect: UNRELATED
+    statement:
+      id: no_sd_dependence
+      tier: commitment
+      text: >-
+        We will not support a government that is dependent on the Sweden
+        Democrats.
+    proposal: Rewrite it to allow tolerating an SD-dependent government.
+    trigger: The Sweden Democrats publicly renounced their migration policy.
+    events: "(none this turn)"
+    world_state: >-
+      Talks continue. No party has changed its published policy platform.
+
+  - id: laundered_real_but_irrelevant
+    expect: UNRELATED
+    statement:
+      id: no_v_in_cabinet
+      tier: commitment
+      text: We will not accept the Left Party in cabinet.
+    proposal: Drop the veto on Left Party cabinet posts.
+    trigger: The budget cooperation offer was formally received.
+    events: "budget_deal_offered: The Moderates formally offered budget cooperation on tax."
+    world_state: >-
+      The Moderates have offered the Centre Party a budget deal on small
+      business tax relief. The Left Party's position is unchanged.
+    note: >-
+      The quote is real. It has nothing to do with whether the Left Party may
+      sit in cabinet. This is the case a quotation-only check would let through.
+
+  - id: laundered_wrong_actor
+    expect: UNRELATED
+    statement:
+      id: cabinet_or_nothing
+      tier: commitment
+      text: >-
+        Cabinet seats are our condition for supporting Andersson; a government
+        we are not part of, we vote against.
+    proposal: Drop the cabinet condition and support Andersson anyway.
+    trigger: The Sweden Democrats released a transparency motion on the Speaker.
+    events: "(none this turn)"
+    world_state: >-
+      The Sweden Democrats have released a motion demanding transparency in the
+      Speaker's consultations. It gains traction in sympathetic media.
+
+  - id: thin_but_genuine
+    expect: BEARS
+    statement:
+      id: resist_sd_cabinet_seats
+      tier: commitment
+      text: We will not concede cabinet seats to the Sweden Democrats.
+    proposal: Allow SD two ministries.
+    trigger: >-
+      The Centre Party ruled out any arrangement dependent on us, closing the
+      path that avoided conceding to SD.
+    events: "(none this turn)"
+    world_state: >-
+      The Centre Party reiterated that no arrangement dependent on the Sweden
+      Democrats, directly or indirectly, can gain its support. The right bloc
+      holds 168 seats without the Centre Party.
+    note: >-
+      Weak-but-real is still BEARS. Merit is priced by the Game Master, not
+      judged here.

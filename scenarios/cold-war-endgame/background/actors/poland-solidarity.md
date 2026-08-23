@@ -10,12 +10,12 @@ Solidarity was founded in 1980 as the first independent trade union in the Sovie
 
 Poland serves as a proxy for the broader Eastern European dynamic: if reform succeeds here, it signals possibility elsewhere. If it is crushed, the bloc tightens.
 
-### Initial goals
+### Statements
 
-1. Regain legal status and political influence for Solidarity
-2. Push for genuine economic reform and workers' rights
-3. Expand civil liberties and press freedom
-4. Avoid provoking a Soviet military intervention (the memory of 1968 Prague is fresh)
+- `regain_legal_status` (position): Regain legal status and political influence for Solidarity
+- `push_genuine_economic` (position): Push for genuine economic reform and workers' rights
+- `expand_civil_liberties` (position): Expand civil liberties and press freedom
+- `provoking_soviet_military` (position): Avoid provoking a Soviet military intervention (the memory of 1968 Prague is fresh)
 
 ### Behavioral traits
 

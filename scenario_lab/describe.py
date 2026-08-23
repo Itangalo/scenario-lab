@@ -58,7 +58,10 @@ def describe_scenario(
             "id": actor.id,
             "name": actor.name,
             "short_description": actor.short_description,
-            "initial_goals": list(actor.initial_goals),
+            "statements": [
+                {"id": s.id, "tier": s.tier, "text": s.text}
+                for s in actor.initial_statements
+            ],
         }
         for actor in scenario.actors.values()
     ]
@@ -219,10 +222,10 @@ def format_describe_report(overview: dict[str, Any]) -> str:
     lines.append("")
     for actor in overview["actors"]:
         lines.append(f"- **{actor['name']}** (`{actor['id']}`) – {_truncate(actor['short_description'])}")
-        for goal in actor["initial_goals"][:3]:
-            lines.append(f"  - Goal: {_truncate(goal)}")
-        if len(actor["initial_goals"]) > 3:
-            lines.append(f"  - … and {len(actor['initial_goals']) - 3} more goal(s)")
+        for stmt in actor["statements"][:3]:
+            lines.append(f"  - [{stmt['tier']}] {_truncate(stmt['text'])}")
+        if len(actor["statements"]) > 3:
+            lines.append(f"  - … and {len(actor['statements']) - 3} more statement(s)")
     lines.append("")
 
     lines.append(f"## Metrics ({len(overview['metrics'])})")

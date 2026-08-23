@@ -14,12 +14,12 @@ School authorities own the most direct levers for turning AI interest into real 
 
 School leaders (rektorer) are key gatekeepers inside each municipality or school chain. Even when a huvudman prioritizes AI, individual schools may still stall if principals cannot create time, legitimacy, and routines.
 
-### Initial goals
+### Statements
 
-- Ensure schools meet existing curriculum requirements and quality standards
-- Manage tight budgets while addressing multiple competing priorities
-- Avoid procurement, privacy, or media scandals around AI tools
-- Avoid being seen as either recklessly tech-forward or hopelessly behind
+- `schools_meet_existing` (position): Ensure schools meet existing curriculum requirements and quality standards
+- `manage_tight_budgets` (position): Manage tight budgets while addressing multiple competing priorities
+- `procurement_privacy_media` (position): Avoid procurement, privacy, or media scandals around AI tools
+- `being_seen_either` (position): Avoid being seen as either recklessly tech-forward or hopelessly behind
 
 ### Behavioral traits
 

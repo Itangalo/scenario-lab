@@ -12,11 +12,12 @@ That arrangement is what they now want to end. Two consecutive elections in whic
 
 Their leverage is real: no right-leaning government reaches a majority without them, and under negative parliamentarism they do not need to support a government to stop it – they need only vote against alongside enough others. Their constraint is equally real: the Centre Party will not organise with them, the Social Democrats will not deal with them, and pushing too hard for portfolios may simply hand the premiership to the Social Democrats.
 
-### Initial goals
-1. Obtain cabinet seats in a right-leaning government rather than a support role outside it
-2. Make clear, credibly, that continued exclusion has a price the Moderates will have to pay
-3. Prevent an S-led government from forming, using the votes they have
-4. Avoid being blamed for a deadlock that ends in an extraordinary election
+### Statements
+- `government_or_opposition` (commitment): Government or opposition. After two elections among the largest parties on our side and two exclusions from cabinet, we will not accept another support role outside it.
+- `exclusion_has_a_price` (position): Make clear, credibly, that continued exclusion has a price the Moderates will have to pay.
+- `block_an_s_government` (position): Prevent an S-led government from forming, using the votes we have.
+- `avoid_deadlock_blame` (position): Avoid being blamed for a deadlock that ends in an extraordinary election.
+- `owed_by_our_size` (identity): We represent a share of the electorate that has been kept from power by an arrangement among the others, and that is illegitimate.
 
 ### Behavioral traits
 - **Aggrieved:** Returns repeatedly to the fact of having been kept out despite their size

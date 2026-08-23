@@ -59,7 +59,7 @@ def _write_scenario(tmp_path: Path, research_questions: list | None = None) -> P
         "# Regulator\n\n"
         "## Short description\nThe regulator.\n\n"
         "## Long description\nRegulates things.\n\n"
-        "### Initial goals\n- Keep trust high\n\n"
+        "### Statements\n- `keep_trust` (position): Keep trust high\n\n"
         "### Behavioral traits\n- Cautious\n",
         encoding="utf-8",
     )

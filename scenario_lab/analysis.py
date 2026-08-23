@@ -295,10 +295,10 @@ def _format_actor_catalog(scenario: Scenario) -> str:
         lines.append(f"### {actor.name} ({actor.id})")
         lines.append(f"- Short description: {actor.short_description}")
         lines.append(f"- Long description: {actor.long_description}")
-        if actor.initial_goals:
-            lines.append("- Initial goals:")
-            for goal in actor.initial_goals:
-                lines.append(f"  - {goal}")
+        if actor.initial_statements:
+            lines.append("- Initial statements:")
+            for stmt in actor.initial_statements:
+                lines.append(f"  - ({stmt.tier}) {stmt.text}")
         lines.append("")
     return "\n".join(lines).strip() or "(No actors defined.)"
 
