@@ -189,6 +189,31 @@ def _choose_context_mode(
     return "minimal"
 
 
+def _event_timeline(bundle: RunAnalysisBundle) -> list[dict[str, Any]]:
+    """Turn-stamped record of every event that fired, newest turn last.
+
+    Derived from the per-turn ``1-events.json`` artifacts rather than
+    ``summary.json``'s ``occurred_events``. Runs produced before repeatable
+    events entered that record hold only the one-shot ones, so reading the
+    artifacts is both complete and backward-compatible. The turn stamps matter
+    as much as the ids: a precursor and its escalation are only legible as a
+    pair if their order and spacing survive into the analysis.
+    """
+    timeline: list[dict[str, Any]] = []
+    for turn_artifacts in bundle.turns:
+        events = turn_artifacts.events
+        items = events if isinstance(events, list) else (events or {}).get("events", [])
+        for entry in items or []:
+            event_id = entry.get("id") if isinstance(entry, dict) else entry
+            if not isinstance(event_id, str):
+                continue
+            record: dict[str, Any] = {"turn": turn_artifacts.turn, "id": event_id}
+            if isinstance(entry, dict) and entry.get("emergent"):
+                record["emergent"] = True
+            timeline.append(record)
+    return timeline
+
+
 def _build_analysis_context(
     bundle: RunAnalysisBundle,
     output_format: str,
@@ -203,6 +228,9 @@ def _build_analysis_context(
         "completed_turns": len(bundle.turns),
         "time_scale": bundle.scenario.config.time_scale,
         "start_date": bundle.scenario.config.start_date,
+        # Turn-stamped and complete; see _event_timeline. The flat
+        # summary.json list is kept alongside it for continuity.
+        "event_timeline": _event_timeline(bundle),
         "occurred_events": bundle.summary.get("occurred_events", []),
         "costs": bundle.costs,
     }

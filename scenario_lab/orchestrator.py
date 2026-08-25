@@ -927,12 +927,15 @@ class Orchestrator:
                 else:
                     print(f"  ✓ Event triggered: {label} (p={probability:.2%}, roll={roll:.2f})")
 
-                if is_emergent:
-                    # Emergent events are one-off by definition; record them so
-                    # summary.json preserves the full occurred-events history.
-                    self.scenario.occurred_events.add(event_id)
-                elif not event_obj.can_repeat:
-                    # Mark non-repeatable events as occurred
+                # Every triggered event enters the occurred-events record,
+                # repeatable or not. The record is history: it answers "what
+                # happened in this run", which gate judgments, precursor
+                # analysis and every downstream report need. Suppression of
+                # one-shot events is a separate concern carried by
+                # ``Event.occurred``, set below only where it applies.
+                self.scenario.occurred_events.add(event_id)
+                self.scenario.event_log.append({"turn": turn, "id": event_id})
+                if not is_emergent and not event_obj.can_repeat:
                     self._mark_event_occurred(event_id)
             else:
                 if suppressed:

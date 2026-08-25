@@ -226,10 +226,21 @@ def load_run_state(
 
     if "occurred_events" in summary:
         scenario.occurred_events = set(summary["occurred_events"])
-        # Mark events as occurred in the events list
+        # The record now contains repeatable events too, so restoring it must
+        # not mark those as occurred: ``Event.occurred`` is the one-shot
+        # suppression flag, and setting it on a repeatable event would claim
+        # something the record does not say.
         for event in scenario.events:
-            if event.id in scenario.occurred_events:
+            if event.id in scenario.occurred_events and not event.can_repeat:
                 event.occurred = True
+
+    if isinstance(summary.get("event_log"), list):
+        scenario.event_log = [
+            entry for entry in summary["event_log"]
+            if isinstance(entry, dict) and isinstance(entry.get("id"), str)
+            and isinstance(entry.get("turn"), int)
+            and (from_turn is None or entry["turn"] <= from_turn)
+        ]
 
     # 6b. Restore emerging developments (unfired emergent proposals carried
     # forward), so a resumed or branched run keeps tracking what was in flight.
