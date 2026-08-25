@@ -1,0 +1,80 @@
+name: "Forking Futures"
+description: "One regulator, three possible speeds of AI development, and instruments too slow for the windows they have to hit. Explores which kinds of regulation and policy hold up across futures that develop very differently, and which developments are worth monitoring as early signals."
+start_date: "2026-07"
+time_scale: "6 months per turn"
+max_turns: 18
+
+output_language: "English"
+
+# The trajectory regime is the experimental variable and is supplied per run by
+# sampler.py. Without a draw there is no regime, and the run answers nothing.
+# Make that a hard error rather than a silently pooled result.
+requires_initial_state: true
+
+actors:
+  - regulator
+
+research_questions:
+  - id: rq_early_vs_reactive
+    question: "Do early, broad interventions beat reactive ones in outcomes — in which regimes, and under what conditions?"
+    metrics: [regulatory_capacity, incident_pressure, us_capability, public_sentiment_to_ai]
+    events: [negotiation_window, cyber_mass_campaign, bio_incident, capability_jump, algorithmic_bias_scandal]
+    notes: "The central question. Compare runs by when the regulator first committed capital to a measure class against when an incident of that class landed."
+
+  - id: rq_early_signals
+    question: "Which precursor developments precede the largest divergences between runs, and are therefore worth monitoring?"
+    metrics: [incident_pressure, economic_context, openweight_gap, public_sentiment_to_ai]
+    events: [cyber_recon_wave, bio_uplift_findings, taiwan_tension_rise, eval_anomaly_reports, funding_round_pulled, whistleblower_disclosure, agent_misconduct_disclosure, datacenter_protest_wave]
+    notes: "Produces the draft indicator set. Report which precursors actually preceded escalations and which fired without consequence — the false-positive rate is part of the answer."
+
+  - id: rq_no_regret
+    question: "Are there no-regret packages: combinations of measures that are never worse and often better across all three trajectory regimes?"
+    metrics: [regulatory_capacity, incident_pressure, openweight_gap, economic_context]
+    events: [capability_jump, ai_market_crash, open_weight_frontier_release, rsi_onset]
+    notes: "Group measures by their category tag before comparing. A package that only pays off in one regime is not no-regret, however strongly it pays off there."
+
+llm:
+  model: "openrouter:qwen/qwen3-235b-a22b-2507"
+  temperature: 0.7
+  max_tokens: 3000
+  # Analysis and synthesis read a whole run (or the whole ensemble) and are the
+  # only steps a reasoning model is used for here. At the 3000 the turn steps
+  # need, stealth/ox-alpha spends the entire budget on reasoning and returns no
+  # content; 32000 is the budget it was tested at in docs/MODEL_TESTING.md.
+  max_tokens_by_task:
+    analysis: 32000
+    synthesis: 32000
+  probability_samples: 3
+
+emergent_events:
+  # On deliberately: the scenario exists to explore futures nobody listed, and a
+  # closed event list would quietly rule them out. max_per_turn is 2 so that a
+  # steady state of 2-4 tracked emerging developments can be maintained across
+  # consecutive turns (see design-notes.md, "Emerging developments").
+  enabled: true
+  max_per_turn: 2
+  max_probability: 0.35
+  # Opt-in carry-forward: an unfired proposal stays live as an emerging
+  # development -- re-listed each turn at an escalating probability until it
+  # fires or its window closes. Off by default; other scenarios that enable
+  # emergent events keep one-shot semantics unless they set this too.
+  track_unfired: true
+  window_turns: 3
+
+rule_evolution:
+  # Disabled. This scenario is read as a distribution over ~50 runs, and rule
+  # drift is noise in exactly the thing being measured: if the physics differs
+  # between runs, differences in outcome cannot be attributed to the regime or
+  # to the regulator's choices. The evolution mechanism is also known to rewrite
+  # roughly one rule per unfrozen turn regardless of need
+  # (see scenarios/swedish-government-formation-2026/scenario.yaml).
+  freeze_until_turn: 19  # > max_turns, so rules never evolve
+  max_changes_per_turn: 0
+
+constitutional_enforcement:
+  # 4 rather than the default 3: the first plateau batch saw several turns where
+  # three iterations were spent on competing violations (a leaked regime label
+  # plus metric disputes) and the last violation shipped. One extra cheap retry
+  # is less costly than an unresolved hard invariant.
+  max_attempts: 4
+  on_failure: accept_with_violations
