@@ -547,6 +547,18 @@ class OutputManager:
                 "max_tokens": self.scenario.config.llm.max_tokens,
                 "max_tokens_by_task": self.scenario.config.llm.max_tokens_by_task,
                 "probability_samples": self.scenario.config.llm.probability_samples,
+                "call_timeout_seconds": self.scenario.config.llm.call_timeout_seconds,
+                "model_limits": {
+                    key: {
+                        field: value
+                        for field, value in (
+                            ("max_tokens", limits.max_tokens),
+                            ("call_timeout_seconds", limits.call_timeout_seconds),
+                        )
+                        if value is not None
+                    }
+                    for key, limits in self.scenario.config.llm.model_limits.items()
+                },
             },
             "emergent_events": {
                 "enabled": self.scenario.config.emergent_events.enabled,

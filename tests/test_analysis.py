@@ -25,10 +25,11 @@ class FakeRouter:
     last_primary_route = None
     last_max_tokens = None
 
-    def __init__(self, routes, registry, *, temperature=0.7, max_tokens=2000):
+    def __init__(self, routes, registry, *, temperature=0.7, max_tokens=2000, limits_resolver=None):
         self.routes = routes
         self.temperature = temperature
         self.max_tokens = max_tokens
+        self.limits_resolver = limits_resolver
         FakeRouter.last_primary_route = routes[0] if routes else None
         FakeRouter.last_max_tokens = max_tokens
 

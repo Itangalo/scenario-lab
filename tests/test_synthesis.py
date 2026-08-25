@@ -79,7 +79,10 @@ def _write_scenario(tmp_path: Path, research_questions: list | None = None) -> P
     return scenario_dir
 
 
-def _write_run(scenario_dir: Path, name: str, analysis: dict | None = None) -> Path:
+def _write_run(
+    scenario_dir: Path, name: str, analysis: dict | None = None,
+    initial_state: dict | None = None,
+) -> Path:
     """Write a completed run, optionally with a cached structured analysis."""
     run_dir = scenario_dir / "runs" / name
     run_dir.mkdir(parents=True)
@@ -98,10 +101,10 @@ def _write_run(scenario_dir: Path, name: str, analysis: dict | None = None) -> P
         ),
         encoding="utf-8",
     )
-    (run_dir / "config.json").write_text(
-        json.dumps({"name": "Test Scenario", "llm": {"events": "openrouter:model-a"}}),
-        encoding="utf-8",
-    )
+    config: dict = {"name": "Test Scenario", "llm": {"events": "openrouter:model-a"}}
+    if initial_state is not None:
+        config["initial_state"] = initial_state
+    (run_dir / "config.json").write_text(json.dumps(config), encoding="utf-8")
 
     for turn, entry in enumerate(history, start=1):
         turn_dir = run_dir / f"turn-{turn:02d}"
@@ -113,6 +116,13 @@ def _write_run(scenario_dir: Path, name: str, analysis: dict | None = None) -> P
         (run_dir / "analysis.json").write_text(json.dumps(analysis), encoding="utf-8")
 
     return run_dir
+
+
+def _arm_state(arm: str) -> dict:
+    return {
+        "notes": f"arm={arm}; draw=001; regime fixed for the whole run",
+        "source": f"scenarios/test-scenario/draws/{arm}/draw-001.json",
+    }
 
 
 def _analysis(summary: str = "Trust fell after a scandal.") -> dict:
@@ -536,6 +546,84 @@ def test_synthesize_scenario_respects_max_runs(tmp_path):
 
 
 # ---------------------------------------------------------------------------
+# Cohort filters and grouping
+# ---------------------------------------------------------------------------
+
+def test_synthesize_scenario_with_filter_restricts_population(tmp_path):
+    scenario_dir = _write_scenario(tmp_path)
+    _write_run(scenario_dir, "run-1", analysis=_analysis("A"), initial_state=_arm_state("fast"))
+    _write_run(scenario_dir, "run-2", analysis=_analysis("B"), initial_state=_arm_state("plateau"))
+
+    with patch("scenario_lab.synthesis.FallbackRouter") as mock_router_cls:
+        mock_router_cls.return_value.complete.return_value = _FakeResponse("## Summary\n\nX.\n")
+        result = synthesize_scenario(scenario_dir, filters=[("arm", "fast")])
+
+    assert result.num_runs == 1
+    _, user_prompt = mock_router_cls.return_value.complete.call_args[0]
+    assert "run-1" in user_prompt
+    assert "run-2" not in user_prompt
+
+
+def test_synthesize_scenario_with_impossible_filter_raises(tmp_path):
+    scenario_dir = _write_scenario(tmp_path)
+    _write_run(scenario_dir, "run-1", analysis=_analysis("A"), initial_state=_arm_state("fast"))
+
+    with pytest.raises(ValueError, match="No runs match filter"):
+        synthesize_scenario(scenario_dir, filters=[("arm", "rlvr-limited")])
+
+
+def test_synthesize_scenario_group_by_runs_per_cohort_then_stitches(tmp_path):
+    scenario_dir = _write_scenario(
+        tmp_path,
+        research_questions=[{"id": "rq_trust", "question": "Does trust recover?", "metrics": ["trust"]}],
+    )
+    _write_run(scenario_dir, "run-a1", analysis=_analysis("Fast run."), initial_state=_arm_state("fast"))
+    _write_run(scenario_dir, "run-p1", analysis=_analysis("Plateau run."), initial_state=_arm_state("plateau"))
+    _write_run(scenario_dir, "run-p2", analysis=_analysis("Plateau run two."), initial_state=_arm_state("plateau"))
+
+    def _fake_complete(system_prompt, user_prompt):
+        if "Per-Cohort Syntheses" in user_prompt:
+            return _FakeResponse("## Summary\n\nArms differ.\n")
+        return _FakeResponse(f"## Summary\n\nCohort report over: {user_prompt.count('### run-')} runs.\n")
+
+    with patch("scenario_lab.synthesis.FallbackRouter") as mock_router_cls:
+        mock_router_cls.return_value.complete.side_effect = _fake_complete
+        result = synthesize_scenario(scenario_dir, group_by="arm")
+
+    # Two cohort syntheses + one comparison call
+    calls = mock_router_cls.return_value.complete.call_args_list
+    assert len(calls) == 3
+
+    # The comparison prompt carried both cohort reports and the declared question
+    comparison_user = calls[-1][0][1]
+    assert "Cohort: fast" in comparison_user
+    assert "Cohort: plateau" in comparison_user
+    assert "Does trust recover?" in comparison_user
+    # Python-computed per-cohort statistics are authoritative there
+    assert '"final_metrics_mean"' in comparison_user
+
+    # Stitched report takes the canonical destination; cohorts land under syntheses/
+    assert result.output_path == scenario_dir / "synthesis.md"
+    assert "Arms differ." in (scenario_dir / "synthesis.md").read_text(encoding="utf-8")
+    group_files = sorted(p.name for p in (scenario_dir / "syntheses").iterdir())
+    assert group_files == ["arm_fast.md", "arm_plateau.md"]
+    assert result.num_runs == 3
+    assert [c.cohort for c in result.cohorts] == ["fast", "plateau"]
+
+
+def test_synthesize_scenario_group_by_single_group_still_compares(tmp_path):
+    scenario_dir = _write_scenario(tmp_path)
+    _write_run(scenario_dir, "run-a1", analysis=_analysis("A"), initial_state=_arm_state("fast"))
+
+    with patch("scenario_lab.synthesis.FallbackRouter") as mock_router_cls:
+        mock_router_cls.return_value.complete.return_value = _FakeResponse("## Summary\n\nOne arm.\n")
+        result = synthesize_scenario(scenario_dir, group_by="arm")
+
+    assert len(mock_router_cls.return_value.complete.call_args_list) == 2
+    assert [c.cohort for c in result.cohorts] == ["fast"]
+
+
+# ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
 
@@ -556,6 +644,53 @@ def test_cli_synthesize_dry_run_makes_no_calls(tmp_path, capsys):
     assert "Completed runs: 2" in captured.out
     assert "Cached analyses reusable: 1" in captured.out
     assert "Per-run analyses to generate: 1" in captured.out
+
+
+def test_cli_synthesize_dry_run_grouped_reports_calls(tmp_path, capsys):
+    from scenario_lab.cli import main
+
+    scenario_dir = _write_scenario(tmp_path)
+    _write_run(scenario_dir, "run-a1", analysis=_analysis(), initial_state=_arm_state("fast"))
+    _write_run(scenario_dir, "run-p1", initial_state=_arm_state("plateau"))
+    _write_run(scenario_dir, "run-p2", initial_state=_arm_state("plateau"))
+
+    with patch(
+        "sys.argv",
+        ["scenario_lab", "synthesize", str(scenario_dir), "--dry-run", "--group-by", "arm"],
+    ):
+        with patch("scenario_lab.synthesis.FallbackRouter") as mock_router_cls:
+            result = main()
+
+    mock_router_cls.assert_not_called()
+    captured = capsys.readouterr()
+    assert result == 0
+    assert "Grouped by 'arm': 2 cohort(s)" in captured.out
+    assert "- fast: 1 runs" in captured.out
+    assert "- plateau: 2 runs" in captured.out
+    assert "2 group synthesis calls + 1 comparison call" in captured.out
+
+
+def test_cli_synthesize_dry_run_filter_counts_matches(tmp_path, capsys):
+    from scenario_lab.cli import main
+
+    scenario_dir = _write_scenario(tmp_path)
+    _write_run(scenario_dir, "run-a1", analysis=_analysis(), initial_state=_arm_state("fast"))
+    _write_run(scenario_dir, "run-p1", analysis=_analysis(), initial_state=_arm_state("plateau"))
+
+    with patch(
+        "sys.argv",
+        [
+            "scenario_lab", "synthesize", str(scenario_dir), "--dry-run",
+            "--filter", "arm=fast",
+        ],
+    ):
+        with patch("scenario_lab.synthesis.FallbackRouter") as mock_router_cls:
+            result = main()
+
+    mock_router_cls.assert_not_called()
+    captured = capsys.readouterr()
+    assert result == 0
+    assert "Filter arm=fast: 1 of 2 runs match" in captured.out
 
 
 def test_cli_synthesize_reports_coverage(tmp_path, capsys):
@@ -615,13 +750,16 @@ def test_validator_rejects_absurd_call_timeout(tmp_path):
     scenario = load_scenario(d)
 
     scenario.config.llm.call_timeout_seconds = 5
-    assert any("call_timeout_seconds" in e for e in validate_llm_config(scenario))
+    errors, _ = validate_llm_config(scenario)
+    assert any("call_timeout_seconds" in e for e in errors)
 
     scenario.config.llm.call_timeout_seconds = 99999
-    assert any("call_timeout_seconds" in e for e in validate_llm_config(scenario))
+    errors, _ = validate_llm_config(scenario)
+    assert any("call_timeout_seconds" in e for e in errors)
 
     scenario.config.llm.call_timeout_seconds = 300
-    assert not any("call_timeout_seconds" in e for e in validate_llm_config(scenario))
+    errors, _ = validate_llm_config(scenario)
+    assert not any("call_timeout_seconds" in e for e in errors)
 
 
 def test_registry_forwards_timeout_to_provider():

@@ -1,7 +1,7 @@
 """Abstract base class for LLM providers."""
 
 from abc import ABC, abstractmethod
-from typing import ClassVar
+from typing import ClassVar, Optional
 
 from ..llm import LLMResponse, LLMUnsupportedStructuredError
 
@@ -20,8 +20,13 @@ class LLMProvider(ABC):
         model: str,
         temperature: float,
         max_tokens: int,
+        call_timeout_seconds: Optional[int] = None,
     ) -> LLMResponse:
-        """Send a completion request and return a parsed response."""
+        """Send a completion request and return a parsed response.
+
+        ``call_timeout_seconds`` overrides the provider's instance default for
+        this one call; limits follow the model being called, not the step.
+        """
         ...
 
     def complete_structured(
@@ -34,6 +39,7 @@ class LLMProvider(ABC):
         max_tokens: int,
         schema: dict,
         schema_name: str,
+        call_timeout_seconds: Optional[int] = None,
     ) -> LLMResponse:
         """Send a schema-constrained completion and return parsed structured data.
 

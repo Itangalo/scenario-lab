@@ -165,6 +165,18 @@ def describe_scenario(
             "max_tokens": llm.max_tokens,
             "structured_outputs": llm.structured_outputs,
             "probability_samples": llm.probability_samples,
+            "call_timeout_seconds": llm.call_timeout_seconds,
+            "model_limits": {
+                key: {
+                    field: value
+                    for field, value in (
+                        ("max_tokens", limits.max_tokens),
+                        ("call_timeout_seconds", limits.call_timeout_seconds),
+                    )
+                    if value is not None
+                }
+                for key, limits in llm.model_limits.items()
+            },
         },
         "emergent_events": {
             "enabled": config.emergent_events.enabled,
@@ -279,8 +291,13 @@ def format_describe_report(overview: dict[str, Any]) -> str:
     lines.append(
         f"- temperature {llm['temperature']}, max_tokens {llm['max_tokens']}, "
         f"structured_outputs {llm['structured_outputs']}, "
-        f"probability_samples {llm['probability_samples']}"
+        f"probability_samples {llm['probability_samples']}, "
+        f"call_timeout_seconds {llm['call_timeout_seconds']}"
     )
+    if llm["model_limits"]:
+        for key, limits in llm["model_limits"].items():
+            parts = [f"{field} {value}" for field, value in limits.items()]
+            lines.append(f"- model limits {key}: {', '.join(parts)}")
     lines.append("")
 
     lines.append("## Files and Runs")

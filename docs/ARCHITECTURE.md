@@ -75,13 +75,14 @@ V4 represents a radical simplification from previous versions. Instead of comple
 - **`scenario.yaml`**: Configuration (time scale, actors, LLM settings, output language).
   * **LLM Settings:** Includes per-task model configuration (`events`, `actors`, `rules`, `metrics`, `summary`, `analysis`, `referee`).
   * **Token Budgets:** Supports global `llm.max_tokens` plus optional per-task overrides via `llm.max_tokens_by_task` (for example, higher cap for `rules` to reduce truncation).
+  * **Model-Scoped Limits:** Optional `llm.model_limits` maps a model route (`"provider:model"`) to limit floors: `max_tokens` and/or `call_timeout_seconds`. Both limits actually depend on which model runs the call, not which step – a reasoning model needs a large budget and a long deadline whatever step it runs. Entries compose with task-scoped values as lower bounds and the larger wins (a task entry says "this step needs room"; a model entry says "this model cannot work below this"), so limits resolve per route attempt inside `FallbackRouter` and a fallback list can pair a reasoning model with an instruct one without either inheriting the other's limits. Unknown fields in an entry are a load error; validator warns when an entry's key matches no configured route.
   * **Structured Outputs:** Optional `llm.structured_outputs: auto | true | false` (default `auto`) controls provider-native structured outputs for the events step. YAML booleans are normalized to the canonical strings at load time.
   * **Probability Sampling:** Optional `llm.probability_samples` (integer ≥ 1, default 1) controls how many times the events step elicits candidate events per turn; probabilities are aggregated as described under Events above.
   * **Emergent Events Policy:** Optional `emergent_events` block (`enabled`, default false; `max_per_turn`, default 1; `max_probability`, default 0.35) lets the Game Master propose novel exogenous events not listed in `events.md`.
   * **Rule Evolution Policy:** Optional `rule_evolution.freeze_until_turn` and `rule_evolution.max_changes_per_turn` let scenarios make early rules effectively fixed and keep later rule edits small.
   * **Constitutional Enforcement Policy:** Optional `constitutional_enforcement.max_attempts` and `constitutional_enforcement.on_failure` tune how hard the referee gate is.
   * **Logging:** Optional `logging.llm_io` enables per-call LLM prompt/response transcripts. It can also be turned on per run with the `--log-llm-io` CLI flag.
-  * **Run-time Config Fields:** `config.json` additionally records `random_seed` (the dice RNG seed for the run), `logging.llm_io`, and, for branch counterfactuals, `event_overrides: {"turn": N, "force": [...], "suppress": [...]}`. `random_seed` and `event_overrides` are set at run time rather than declared in `scenario.yaml`. When a run is given a starting-state draw, `config.json` also records `initial_state` (see Starting-State Draws below).
+  * **Run-time Config Fields:** `config.json` additionally records `random_seed` (the dice RNG seed for the run), `logging.llm_io`, and, for branch counterfactuals, `event_overrides: {"turn": N, "force": [...], "suppress": [...]}`. `random_seed` and `event_overrides` are set at run time rather than declared in `scenario.yaml`. The run's `llm` block snapshot also records `call_timeout_seconds` and `model_limits`, so a run's effective limits are traceable from its artifacts. When a run is given a starting-state draw, `config.json` also records `initial_state` (see Starting-State Draws below).
 - **Markdown Resources**: `metrics.md`, `events.md`, `metric-rules.md`, `background/*.md`.
 - **Optional Resources**:
   * `constitution.md`: Constitutional constraints (invariant rules) for the scenario.
@@ -218,7 +219,7 @@ Each turn executes the following steps in order:
 
 **Call bounding and failure diagnosis (2026-08):** Three failure modes were found while evaluating candidate models, all of which destroyed or stalled runs without saying why.
 
-- **Wall-clock deadline per call.** `OpenRouterProvider` streams the response body and checks elapsed time against a single deadline (`llm.call_timeout_seconds`, default 300s), raising `LLMCallTimeoutError`. httpx's timeout applies per read operation, so a trickling provider resets it forever; calls were observed blocking 11-23 minutes at near-zero CPU on an open socket. Streaming was chosen over a watchdog thread because it bounds the call without leaving an orphaned thread behind when the deadline fires.
+- **Wall-clock deadline per call.** `OpenRouterProvider` streams the response body and checks elapsed time against a single deadline (`llm.call_timeout_seconds`, default 300s), raising `LLMCallTimeoutError`. httpx's timeout applies per read operation, so a trickling provider resets it forever; calls were observed blocking 11-23 minutes at near-zero CPU on an open socket. Streaming was chosen over a watchdog thread because it bounds the call without leaving an orphaned thread behind when the deadline fires. The deadline is a per-call parameter: the router passes the value resolved for the route being attempted (model floors from `llm.model_limits`), so one route in a fallback list may run a 1800s budget while another keeps 300s. `AnthropicProvider` applies the same per-call timeout to its SDK requests.
 - **Reasoning-budget exhaustion.** A reasoning model that fills its whole token budget with reasoning returns empty content beside a populated `reasoning` field. This now raises `LLMReasoningBudgetError` with the finish reason and token count. It is an `LLMError`, so `FallbackRouter` moves to the next route instead of making three identical retries that are guaranteed to fail the same way.
 - **Transient failures are retried; rejections are not.** `LLMTransientError` covers transport-level failures (connection errors, read timeouts, wall-clock deadline overruns) where the request never received a verdict. `FallbackRouter` retries these on the same route with exponential backoff before falling through. Errors meaning the request itself was unacceptable – a rejected model, an exhausted reasoning budget – still move straight to the next route, since repeating them unchanged cannot succeed. Before this, provider timeouts were raised as plain `LLMError` and classified as non-retryable, so one slow response ended an entire run for the many scenarios configuring a single route; it killed a 10-turn qwen3-235b run at turn 3.
 - **Provider errors are surfaced, not discarded.** When a payload carries no `choices` or no content, OpenRouter's own `error` object is included in the raised message. Previously the reason (rate limited, no capacity) was dropped and the user saw only "did not include choices".
@@ -241,7 +242,7 @@ New providers can be registered without changing orchestrator code.
 
 **ProviderRegistry:** One instance per run. Lazily creates built-in providers on first access so that a run using only OpenRouter never touches `ANTHROPIC_API_KEY`. Custom providers can be registered explicitly before the run starts.
 
-**FallbackRouter (`router.py`):** Wraps an ordered list of `ModelRoute`s and one `ProviderRegistry`. On each call it tries routes left-to-right:
+**FallbackRouter (`router.py`):** Wraps an ordered list of `ModelRoute`s and one `ProviderRegistry`. On each call it tries routes left-to-right, resolving limits for the route it is about to try (via the config's bound `limits_resolver`, so model floors apply per attempt; without a resolver, providers keep their own defaults):
 
 - Rate limits (`LLMRateLimitError`): up to three retries with exponential backoff on the same route.
 - Non-retryable errors (`LLMError`): move to the next route immediately.
@@ -426,6 +427,7 @@ The `5-constitutional-check.json` file (when present) includes:
    - Ensures temperature is in valid range [0, 2]
    - Checks max_tokens is reasonable (> 100, < 100000)
    - Validates all task-specific model configurations (events, actors, rules, metrics, summary)
+   - Bounds per-model entries in `llm.model_limits` like their global counterparts (`max_tokens` ≥ 100; `call_timeout_seconds` in [10, 3600]) and warns when an entry's key matches no route configured on any task, since such limits would silently never apply
 
 4. **Actor Reference Validation** (`validate_actor_references`):
    - Ensures all actors in scenario.yaml have corresponding files
@@ -539,10 +541,31 @@ Cost so far: $0.15 | Projected total: $0.50
 - **Model Preflight:** `run` performs model hygiene checks by default and can be bypassed with `--skip-model-checks`
 - **Progress:** Supports `--no-progress` and `--quiet` flags for output control
 
+### Run Cohorts (`cohorts.py`)
+
+**Purpose:** Let `ensemble` and `synthesize` keep conditions apart within one run population – report per condition, and stop a variant's runs from silently contaminating the base scenario's ensemble. Variant runs land in the base scenario's `runs/` because `resolve_output_base()` walks a variant YAML up to the directory containing `metrics.md`, and discovery has no filter; cohorts make that metadata readable instead of invisible.
+
+**Derivation from persisted metadata only.** A run's cohort value for a key is read from its `config.json`; nothing new is written at run time, so all past runs are cohort-ready without re-running. Key resolution order:
+
+1. `scenario` – the scenario name (`config.json` `name`)
+2. `actors` – sorted actor ids joined with ","
+3. any `key=value` pair recorded in `initial_state.notes` (for example `arm=fast`, parsed from `"arm=fast; draw=018; ..."`), which lets scenarios define their own axes
+4. `initial_state` – the draw's *directory* name taken from `initial_state.source`
+5. `draw` – the notes pair if present, else the draw file stem
+
+A run with no value for the requested key is excluded by filters and grouped under `(unknown)` when grouping.
+
+**CLI surface on `ensemble` and `synthesize`:**
+- `--filter KEY=VALUE` (repeatable, AND semantics) restricts the population; exclusion counts are reported rather than silent. Recency (`--max-runs`) is applied before filtering.
+- `--group-by KEY` facets the analysis per cohort.
+
+**Default behaviour with neither flag is pooled and unchanged**, but when a population mixes scenario identities (name + actors), ensemble reports state it explicitly and point at `--filter`, so contamination is visible even when pooled.
+
 ### Ensemble Analysis (`ensemble.py`)
 - **CLI Command:** `python -m scenario_lab.cli ensemble <scenario-dir> [options]`
 - **Purpose:** Analyzes all completed runs of a scenario as an ensemble without making any API calls.
 - **Inputs:** Reads `config.json`, `summary.json`, `costs.json`, and per-turn `4-metrics.json`, `1-events.json`, and `1-event-evaluations.json` (optional, absent in legacy runs) from every completed run directory.
+- **Cohorts:** Supports `--filter` and `--group-by` (see Run Cohorts above). When grouping, the pooled sections cover the whole filtered population and an additional **Cohort Comparison** section reports per-cohort final-metric means and event occurrence rates side by side, plus caveats for cohorts with fewer than 3 runs and for runs missing the grouping key. The comparison is descriptive only; sensitivity labeling remains `model-sensitivity`'s job.
 - **Report Sections:** Run overview (N, status mix, turn counts, cost); per-metric trajectories (mean/min/max/p10/p50/p90 per turn, with per-turn N reflecting runs that ended early); event statistics (overall occurrence rate, per-turn occurrence counts, mean evaluated probability vs realized frequency when evaluation data is available); divergence detection (metric × turn with the largest IQR jump, event associations via mean-split); narrative diversity (pairwise lexical Jaccard similarity of each run's final historical summary – a cheap local check for storyline monoculture behind diverging metrics, with a caveat raised when mean similarity ≥ 0.5); automatic caveats for small N and mixed model configs.
 - **Output:** Markdown to stdout, or `--output file.md` for file output; `--json` emits the raw data structure.
 
@@ -554,8 +577,9 @@ Cost so far: $0.15 | Projected total: $0.50
 - **Prompting:** Default templates at `templates/system-prompts/synthesis.md` and `templates/user-prompts/synthesis.md`. The system prompt establishes that ensemble statistics are authoritative for anything countable while per-run analyses are individual readings to be attributed to their runs, and requires that recurring narrative shapes or implausible event rates be reported as possible simulation artifacts rather than findings about the world.
 - **Research questions:** When the scenario declares `research_questions` (see `loader.parse_research_questions`), they are rendered into the prompt and answered explicitly, each with a frequency, the conditions the answer depends on, and evidencing run names – before any undeclared findings. With none declared, the prompt states that the framing is the model's own.
 - **Context Handling:** Three densities (`full`, `condensed`, `minimal`) chosen by the same fit-to-window loop as `analysis.py`. Density controls which analysis sections are included per run (full: summary, turning points, event analysis, actor patterns, caveats; minimal: summary only), their truncation limits, and whether ensemble metric trajectories are sent whole or trimmed to first/middle/last turn per metric. Event statistics, divergence, and narrative diversity are always sent whole – they are the countable evidence.
+- **Grouped synthesis (N calls + stitching pass):** With `--group-by`, Python partitions the filtered runs into cohorts and runs the standard pipeline once per cohort (per-run analyses are cached on disk and reused across cohorts, so they are paid for once). Each cohort's synthesis is saved under `<scenario>/syntheses/<key>_<value>.md|.json`. A final stitching call then receives all cohort syntheses plus Python-computed per-cohort statistics (authoritative for countables) via default templates at `templates/system-prompts/cohort-comparison.md` and `templates/user-prompts/cohort-comparison.md`, and produces one comparative report saved to the usual destination (`synthesis.md` / `synthesis.json` or `--output`). The stitched prompt degrades gracefully: if it does not fit the window, each cohort report is truncated progressively until it does. This shape was chosen over a single faceted mega-call deliberately: it keeps every cohort's synthesis at full density regardless of group count, at the cost of N+1 calls, and the stitcher compares full per-cohort readings rather than squeezed fragments of one shared context. `--dry-run` reports the per-cohort run counts and the N+1 call shape before anything is spent.
 - **Output:** Saves `synthesis.md` in the scenario directory by default, or `synthesis.json` with `--json`; `--output` overrides the path and `--no-save` prints without saving. `--dry-run` reports which runs would need a new analysis and makes no API calls.
-- **Cost shape:** One analysis call per uncached run, plus exactly one synthesis call. A repeat `synthesize` over the same runs costs one call.
+- **Cost shape:** One analysis call per uncached run, plus exactly one synthesis call (or, with `--group-by`, one synthesis call per cohort plus exactly one comparison call). A repeat `synthesize` over the same runs costs one call (or N+1 when grouped).
 
 ### Model Sensitivity Analysis (`model_sensitivity.py`)
 - **CLI Command:** `python -m scenario_lab.cli model-sensitivity <scenario-dir> [options]`

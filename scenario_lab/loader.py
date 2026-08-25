@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Union, Optional, List
 from .models import (
     ModelRoute,
+    ModelLimits,
     Scenario,
     ScenarioConfig,
     LLMConfig,
@@ -110,6 +111,67 @@ def parse_actor_routes(value: object) -> object:
         return result
 
     return parse_routes(value) if isinstance(value, list) else parse_route(value)
+
+
+_MODEL_LIMITS_FIELDS = {"max_tokens", "call_timeout_seconds"}
+
+
+def parse_model_limits(value: object) -> dict:
+    """Parse the ``llm.model_limits`` mapping from YAML config.
+
+    Keys are model route strings ("provider:model"); values are dicts with any
+    of ``max_tokens`` and ``call_timeout_seconds``. Unknown fields are rejected,
+    not ignored – a typo'd entry would otherwise silently do nothing.
+    """
+    if value is None:
+        return {}
+    if not isinstance(value, dict):
+        raise ValueError(
+            f"llm.model_limits must be a mapping of 'provider:model' to limits, "
+            f"got {type(value).__name__}"
+        )
+
+    parsed: dict = {}
+    for key, entry in value.items():
+        if not isinstance(key, str) or ":" not in key:
+            raise ValueError(
+                f"llm.model_limits key {key!r} must be a 'provider:model' string"
+            )
+        route = parse_route(key)
+        if entry is None:
+            entry = {}
+        if not isinstance(entry, dict):
+            raise ValueError(
+                f"llm.model_limits['{key}'] must be a mapping with any of "
+                f"{sorted(_MODEL_LIMITS_FIELDS)}, got {type(entry).__name__}"
+            )
+        unknown = set(entry) - _MODEL_LIMITS_FIELDS
+        if unknown:
+            raise ValueError(
+                f"llm.model_limits['{key}'] has unknown field(s) {sorted(unknown)}; "
+                f"allowed: {sorted(_MODEL_LIMITS_FIELDS)}"
+            )
+
+        limits: dict[str, int | None] = {"max_tokens": None, "call_timeout_seconds": None}
+        for field_name in _MODEL_LIMITS_FIELDS:
+            raw = entry.get(field_name)
+            if raw is None:
+                continue
+            if isinstance(raw, bool) or not isinstance(raw, int):
+                raise ValueError(
+                    f"llm.model_limits['{key}']['{field_name}'] must be an integer, "
+                    f"got {raw!r}"
+                )
+            if raw < 1:
+                raise ValueError(
+                    f"llm.model_limits['{key}']['{field_name}'] must be >= 1, got {raw}"
+                )
+            limits[field_name] = raw
+
+        canonical = f"{route.provider}:{route.model}"
+        parsed[canonical] = ModelLimits(**limits)
+
+    return parsed
 
 
 def _slugify_question(text: str, index: int) -> str:
@@ -467,6 +529,7 @@ def load_custom_user_prompts(scenario_dir: Path) -> dict[str, str]:
         "metric-rules.md",
         "metrics-update.md",
         "analysis.md",
+        "cohort-comparison.md",
         "constitutional-referee.md",
         "constitutional-referee-correction.md",
     ]
@@ -507,6 +570,7 @@ def load_custom_system_prompts(scenario_dir: Path, actor_ids: list[str]) -> dict
         "metrics-update.md",
         "actor.md",
         "analysis.md",
+        "cohort-comparison.md",
         "constitutional-referee.md",
         "constitutional-referee-correction.md",
     ]
@@ -644,6 +708,17 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "structured_outputs": base_config.llm.structured_outputs,
                     "probability_samples": base_config.llm.probability_samples,
                     "call_timeout_seconds": base_config.llm.call_timeout_seconds,
+                    "model_limits": {
+                        key: {
+                            field: value
+                            for field, value in (
+                                ("max_tokens", limits.max_tokens),
+                                ("call_timeout_seconds", limits.call_timeout_seconds),
+                            )
+                            if value is not None
+                        }
+                        for key, limits in base_config.llm.model_limits.items()
+                    },
                 },
                 "emergent_events": {
                     "enabled": base_config.emergent_events.enabled,
@@ -684,6 +759,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
     _structured = _normalize_structured(llm_data.get("structured_outputs", "auto"))
     _probability_samples = llm_data.get("probability_samples", 1)
     _call_timeout = llm_data.get("call_timeout_seconds", 300)
+    _model_limits = parse_model_limits(llm_data.get("model_limits"))
 
     # Support both old format (single model) and new format (per-task models)
     if "model" in llm_data and not any(k in llm_data for k in ["events", "actors", "rules", "metrics"]):
@@ -703,6 +779,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             structured_outputs=_structured,
             probability_samples=_probability_samples,
             call_timeout_seconds=_call_timeout,
+            model_limits=_model_limits,
         )
     else:
         # New format: per-task models
@@ -722,6 +799,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
             structured_outputs=_structured,
             probability_samples=_probability_samples,
             call_timeout_seconds=_call_timeout,
+            model_limits=_model_limits,
         )
 
     emergent_events_data = data.get("emergent_events", {})

@@ -337,6 +337,7 @@ class TestRouterStructured:
             "sys", "usr",
             model="x/y", temperature=0.4, max_tokens=250,
             schema=schema, schema_name=EVENTS_SCHEMA_NAME,
+            call_timeout_seconds=None,
         )
 
     def test_unsupported_propagates_without_fallback(self):

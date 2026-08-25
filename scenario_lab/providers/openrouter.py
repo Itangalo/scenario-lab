@@ -142,16 +142,20 @@ class OpenRouterProvider(LLMProvider):
             f"fail identically."
         )
 
-    def _post_with_deadline(self, payload: dict, model: str) -> dict:
+    def _post_with_deadline(
+        self, payload: dict, model: str, call_timeout_seconds: Optional[int] = None
+    ) -> dict:
         """POST and parse JSON under a true wall-clock deadline.
 
         httpx applies its timeout per read operation, so a provider that emits
         bytes slowly resets the clock indefinitely and a call can block for as
         long as the connection stays open. Streaming the body and checking
         elapsed time against a single deadline bounds the whole call regardless
-        of how the bytes arrive.
+        of how the bytes arrive. ``call_timeout_seconds`` overrides the
+        instance default for this call (per-model limits).
         """
-        deadline = time.monotonic() + self.call_timeout_seconds
+        timeout = call_timeout_seconds or self.call_timeout_seconds
+        deadline = time.monotonic() + timeout
         chunks: list[bytes] = []
 
         with self._client.stream(
@@ -165,7 +169,7 @@ class OpenRouterProvider(LLMProvider):
         ) as response:
             if time.monotonic() > deadline:
                 raise LLMCallTimeoutError(
-                    f"Call to {model} exceeded {self.call_timeout_seconds}s "
+                    f"Call to {model} exceeded {timeout}s "
                     f"before response headers arrived"
                 )
             response.raise_for_status()
@@ -174,7 +178,7 @@ class OpenRouterProvider(LLMProvider):
                 chunks.append(chunk)
                 if time.monotonic() > deadline:
                     raise LLMCallTimeoutError(
-                        f"Call to {model} exceeded {self.call_timeout_seconds}s "
+                        f"Call to {model} exceeded {timeout}s "
                         f"while receiving the response body"
                     )
 
@@ -194,6 +198,7 @@ class OpenRouterProvider(LLMProvider):
         model: str,
         temperature: float,
         max_tokens: int,
+        call_timeout_seconds: Optional[int] = None,
     ) -> LLMResponse:
         """Send a single completion request to OpenRouter.
 
@@ -214,6 +219,7 @@ class OpenRouterProvider(LLMProvider):
                     "max_tokens": max_tokens,
                 },
                 model,
+                call_timeout_seconds=call_timeout_seconds,
             )
             content = self._extract_content(data, model)
             return LLMResponse(content=content, raw_response=data)
@@ -261,6 +267,7 @@ class OpenRouterProvider(LLMProvider):
         max_tokens: int,
         schema: dict,
         schema_name: str,
+        call_timeout_seconds: Optional[int] = None,
     ) -> LLMResponse:
         """Send a schema-constrained request via OpenRouter's ``response_format``.
 
@@ -291,6 +298,7 @@ class OpenRouterProvider(LLMProvider):
                     },
                 },
                 model,
+                call_timeout_seconds=call_timeout_seconds,
             )
             content = self._extract_content(data, model)
 

@@ -167,21 +167,92 @@ def _jaccard(a: set[str], b: set[str]) -> float:
     return len(a & b) / len(union)
 
 
-def analyze_ensemble(scenario_dir: Path, max_runs: int | None = None) -> dict[str, Any]:
-    """Analyze all completed runs for a scenario and return a structured report dict.
+def analyze_ensemble(
+    scenario_dir: Path,
+    max_runs: int | None = None,
+    filters: list[tuple[str, str]] | None = None,
+    group_by: str | None = None,
+) -> dict[str, Any]:
+    """Analyze completed runs for a scenario and return a structured report dict.
 
     Args:
         scenario_dir: Path to the scenario directory (must contain a ``runs/`` subdirectory).
-        max_runs: If given, analyze only the most recent N completed runs.
+        max_runs: If given, analyze only the most recent N run directories
+            (recency is applied before cohort filtering).
+        filters: Optional ``KEY=VALUE`` cohort filters applied to each run's
+            config.json metadata (see ``cohorts.py`` for key resolution).
+        group_by: Optional cohort key. When given, the report gains a
+            ``cohort_comparison`` block with per-group statistics; the pooled
+            sections cover the whole filtered population.
 
     Returns:
         A dict with keys: scenario, run_overview, metric_trajectories,
-        event_statistics, divergence, narrative_diversity, caveats.
+        event_statistics, divergence, narrative_diversity, caveats – plus
+        ``cohort_comparison`` when grouping.
     """
+    from .cohorts import (
+        apply_filters,
+        available_cohort_keys,
+        between_group_stats,
+        mixed_scenario_warning,
+        partition_runs,
+    )
+
     run_dirs = _discover_completed_runs(scenario_dir, max_runs)
     if not run_dirs:
         raise ValueError(f"No completed runs found in: {scenario_dir / 'runs'}")
 
+    excluded_note: str | None = None
+    if filters:
+        run_dirs, excluded = apply_filters(run_dirs, filters)
+        if not run_dirs:
+            available = available_cohort_keys(_discover_completed_runs(scenario_dir))
+            raise ValueError(
+                "No runs match filter "
+                f"{' AND '.join(f'{k}={v}' for k, v in filters)}. "
+                f"Available keys/values: {available}"
+            )
+        if excluded:
+            excluded_note = (
+                f"{len(excluded)} of {len(excluded) + len(run_dirs)} runs excluded by "
+                f"filter {' AND '.join(f'{k}={v}' for k, v in filters)}"
+            )
+
+    report = _analyze_run_set(scenario_dir, run_dirs)
+
+    caveats = report["caveats"]
+    mixed = mixed_scenario_warning(run_dirs)
+    if mixed:
+        caveats.append(mixed)
+    if excluded_note:
+        caveats.append(excluded_note)
+
+    if group_by:
+        groups = partition_runs(run_dirs, group_by)
+        report["cohort_comparison"] = {
+            "group_by": group_by,
+            **between_group_stats(groups),
+        }
+        small_groups = [value for value, dirs in groups if len(dirs) < 3]
+        if small_groups:
+            quoted = ", ".join("'" + value + "'" for value in small_groups)
+            caveats.append(
+                f"Cohort(s) with fewer than 3 runs: {quoted} – "
+                "per-cohort estimates are unreliable."
+            )
+        if any(value == "(unknown)" for value, _ in groups):
+            caveats.append(
+                f"Some runs carry no '{group_by}' value in their metadata; they are "
+                "reported under '(unknown)'."
+            )
+
+    return report
+
+
+def _analyze_run_set(scenario_dir: Path, run_dirs: list[Path]) -> dict[str, Any]:
+    """Analyze one explicit set of run directories (no discovery here)."""
+    if not run_dirs:
+        raise ValueError("No runs to analyze")
     # ------------------------------------------------------------------
     # 1. Per-run metadata
     # ------------------------------------------------------------------
@@ -561,6 +632,57 @@ def format_ensemble_report(report: dict[str, Any]) -> str:
             elif has_eval_probs:
                 lines.append("  Mean evaluated probability: (no evaluation data for this event)")
 
+            lines.append("")
+
+    # ------------------------------------------------------------------
+    # Cohort comparison (when grouped)
+    # ------------------------------------------------------------------
+    cohorts = report.get("cohort_comparison")
+    if cohorts:
+        lines.append(f"## Cohort Comparison (group-by: {cohorts['group_by']})")
+        lines.append("")
+        lines.append("Per-cohort aggregates over each group's runs. Pooled sections above mix all cohorts.")
+        lines.append("")
+
+        group_names = [g["cohort"] for g in cohorts["groups"]]
+        header = "| cohort | n |"
+        sep = "|--------|---|"
+        lines.append(header)
+        lines.append(sep)
+        for g in cohorts["groups"]:
+            lines.append(f"| {g['cohort']} | {g['n_runs']} |")
+        lines.append("")
+
+        finals = cohorts.get("final_metrics_mean") or {}
+        if finals:
+            lines.append("### Final metric mean per cohort")
+            lines.append("")
+            header = "| metric | " + " | ".join(group_names) + " |"
+            sep = "|--------|" + "|".join(["------"] * len(group_names)) + "|"
+            lines.append(header)
+            lines.append(sep)
+            for mid, by_group in sorted(finals.items()):
+                cols = " | ".join(
+                    f"{by_group.get(name, float('nan')):.1f}" if name in by_group else "–"
+                    for name in group_names
+                )
+                lines.append(f"| {mid} | {cols} |")
+            lines.append("")
+
+        rates = cohorts.get("event_occurrence_rate") or {}
+        if rates:
+            lines.append("### Event occurrence rate per cohort")
+            lines.append("")
+            header = "| event | " + " | ".join(group_names) + " |"
+            sep = "|-------|" + "|".join(["------"] * len(group_names)) + "|"
+            lines.append(header)
+            lines.append(sep)
+            for eid, by_group in sorted(rates.items()):
+                cols = " | ".join(
+                    f"{by_group.get(name, 0.0):.2f}" if name in by_group else "–"
+                    for name in group_names
+                )
+                lines.append(f"| {eid} | {cols} |")
             lines.append("")
 
     # ------------------------------------------------------------------

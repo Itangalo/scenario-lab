@@ -200,14 +200,21 @@ class Orchestrator:
         registry: ProviderRegistry,
         temperature: float,
         max_tokens: int,
+        task: Optional[str] = None,
     ) -> FallbackRouter:
-        """Build a FallbackRouter and register it for cleanup."""
+        """Build a FallbackRouter and register it for cleanup.
+
+        Limits resolve per route attempt (model floors from
+        ``llm.model_limits`` compose with the task's token budget), so a
+        fallback list can pair models with different needs.
+        """
         route_list = routes if isinstance(routes, list) else [routes]
         router = FallbackRouter(
             routes=route_list,
             registry=registry,
             temperature=temperature,
             max_tokens=max_tokens,
+            limits_resolver=self.scenario.config.llm.limits_resolver(task),
         )
         self._owned_routers.append(router)
         return router
@@ -223,36 +230,43 @@ class Orchestrator:
             routes: "ModelRoute | list[ModelRoute]",
             temperature: float,
             max_tokens: int,
+            task: str,
         ) -> FallbackRouter:
             key = self._primary_route_key(routes)
             if key in router_cache:
                 return router_cache[key]
-            router = self._make_router(routes, registry, temperature, max_tokens)
+            router = self._make_router(routes, registry, temperature, max_tokens, task=task)
             router_cache[key] = router
             return router
 
         events_router = get_or_create(
-            config.events, config.temperature, config.get_task_max_tokens("events")
+            config.events, config.temperature, config.get_task_max_tokens("events"),
+            task="events",
         )
 
         actor_routers: dict[str, FallbackRouter] = {}
         for actor_id in self.scenario.config.actor_ids:
             routes = config.get_actor_routes(actor_id)
             actor_routers[actor_id] = get_or_create(
-                routes, config.temperature, config.get_task_max_tokens("actors")
+                routes, config.temperature, config.get_task_max_tokens("actors"),
+                task="actors",
             )
 
         rules_router = get_or_create(
-            config.rules, config.temperature, config.get_task_max_tokens("rules")
+            config.rules, config.temperature, config.get_task_max_tokens("rules"),
+            task="rules",
         )
         metrics_router = get_or_create(
-            config.metrics, config.temperature, config.get_task_max_tokens("metrics")
+            config.metrics, config.temperature, config.get_task_max_tokens("metrics"),
+            task="metrics",
         )
         summary_router = get_or_create(
-            config.summary, 0.3, config.get_task_max_tokens("summary")
+            config.summary, 0.3, config.get_task_max_tokens("summary"),
+            task="summary",
         )
         referee_router = get_or_create(
-            config.referee, 0.3, config.get_task_max_tokens("referee", default=1000)
+            config.referee, 0.3, config.get_task_max_tokens("referee", default=1000),
+            task="referee",
         )
 
         return {

@@ -26,6 +26,7 @@ def _write_run(
     config_llm: dict | None = None,
     cost_usd: float | None = None,
     historical_summary: str | None = None,
+    config_extra: dict | None = None,
 ) -> Path:
     """Write a synthetic run directory under <scenario_dir>/runs/<run_name>/."""
     run_dir = scenario_dir / "runs" / run_name
@@ -46,6 +47,8 @@ def _write_run(
 
     llm_block = config_llm or {"events": "openrouter:model-a", "actors": "openrouter:model-a"}
     config: dict = {"name": "Test Scenario", "llm": llm_block}
+    if config_extra:
+        config.update(config_extra)
     (run_dir / "config.json").write_text(json.dumps(config, indent=2), encoding="utf-8")
 
     if cost_usd is not None:
@@ -494,3 +497,132 @@ def test_narrative_diversity_absent_without_summaries(tmp_path):
     assert report["narrative_diversity"] is None
     rendered = format_ensemble_report(report)
     assert "## Narrative Diversity" not in rendered
+
+
+# ---------------------------------------------------------------------------
+# Cohort filtering and grouping
+# ---------------------------------------------------------------------------
+
+def _arm_extra(arm: str, draw: str) -> dict:
+    return {
+        "actors": ["regulator"],
+        "initial_state": {
+            "notes": f"arm={arm}; draw={draw}; regime fixed for the whole run",
+            "source": f"scenarios/s/draws/{arm}/draw-{draw}.json",
+        },
+    }
+
+
+def test_analyze_ensemble_without_grouping_has_no_comparison(tmp_path):
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+    history = [{"turn": 1, "metrics": {"m1": 10}}]
+    _write_run(scenario_dir, "run-a", history, {1: []}, config_extra=_arm_extra("fast", "001"))
+    _write_run(scenario_dir, "run-b", history, {1: []}, config_extra=_arm_extra("plateau", "002"))
+
+    result = analyze_ensemble(scenario_dir)
+    assert "cohort_comparison" not in result
+
+
+def test_analyze_ensemble_with_filters_restricts_population(tmp_path):
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+    history = [{"turn": 1, "metrics": {"m1": 10}}]
+    for name, arm in [("run-a", "fast"), ("run-b", "plateau"), ("run-c", "fast")]:
+        _write_run(scenario_dir, name, history, {1: []}, config_extra=_arm_extra(arm, "0"))
+
+    result = analyze_ensemble(scenario_dir, filters=[("arm", "fast")])
+    assert result["run_overview"]["num_runs"] == 2
+    assert any("excluded by filter" in c for c in result["caveats"])
+
+
+def test_analyze_ensemble_filter_no_match_lists_available_keys(tmp_path):
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+    history = [{"turn": 1, "metrics": {"m1": 10}}]
+    _write_run(scenario_dir, "run-a", history, {1: []}, config_extra=_arm_extra("fast", "001"))
+
+    with pytest.raises(ValueError, match="Available keys"):
+        analyze_ensemble(scenario_dir, filters=[("arm", "rlvr-limited")])
+
+
+def test_analyze_ensemble_group_by_adds_comparison(tmp_path):
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+    _write_run(
+        scenario_dir, "run-a", [{"turn": 1, "metrics": {"m1": 10}}], {1: [{"id": "e1"}]},
+        occurred_events=["e1"], config_extra=_arm_extra("fast", "001"),
+    )
+    _write_run(
+        scenario_dir, "run-b", [{"turn": 1, "metrics": {"m1": 30}}], {1: []},
+        config_extra=_arm_extra("plateau", "002"),
+    )
+    _write_run(
+        scenario_dir, "run-c", [{"turn": 1, "metrics": {"m1": 20}}], {1: []},
+        config_extra=_arm_extra("fast", "003"),
+    )
+
+    result = analyze_ensemble(scenario_dir, group_by="arm")
+    comparison = result["cohort_comparison"]
+    assert comparison["group_by"] == "arm"
+
+    by_cohort = {g["cohort"]: g["n_runs"] for g in comparison["groups"]}
+    assert by_cohort == {"fast": 2, "plateau": 1}
+
+    # fast final m1 mean: (10 + 20) / 2; plateau: 30
+    assert comparison["final_metrics_mean"]["m1"]["fast"] == pytest.approx(15.0)
+    assert comparison["final_metrics_mean"]["m1"]["plateau"] == pytest.approx(30.0)
+    assert comparison["event_occurrence_rate"]["e1"]["fast"] == pytest.approx(0.5)
+    assert comparison["event_occurrence_rate"]["e1"]["plateau"] == pytest.approx(0.0)
+
+    # Pooled sections still cover all three runs
+    assert result["run_overview"]["num_runs"] == 3
+
+
+def test_analyze_ensemble_group_by_warns_on_small_groups(tmp_path):
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+    history = [{"turn": 1, "metrics": {"m1": 10}}]
+    for name, arm in [("run-a", "fast"), ("run-b", "plateau"), ("run-c", "plateau")]:
+        _write_run(scenario_dir, name, history, {1: []}, config_extra=_arm_extra(arm, "0"))
+
+    result = analyze_ensemble(scenario_dir, group_by="arm")
+    assert any("'fast'" in c and "fewer than 3" in c for c in result["caveats"])
+
+
+def test_analyze_ensemble_flags_mixed_scenario_identities(tmp_path):
+    """A variant's runs sharing runs/ must be surfaced, not silently pooled."""
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+    history = [{"turn": 1, "metrics": {"m1": 10}}]
+    _write_run(scenario_dir, "run-a", history, {1: []})
+    _write_run(
+        scenario_dir, "run-b", history, {1: []},
+        config_extra={"name": "Test Scenario — Urgent", "actors": ["regulator-urgent"]},
+    )
+
+    result = analyze_ensemble(scenario_dir)
+    caveat = next(c for c in result["caveats"] if "different scenario identities" in c)
+    assert "--filter" in caveat
+    assert "Test Scenario — Urgent" in caveat
+
+
+def test_format_ensemble_report_renders_cohort_section(tmp_path):
+    scenario_dir = tmp_path / "scenario"
+    scenario_dir.mkdir()
+    _write_run(
+        scenario_dir, "run-a", [{"turn": 1, "metrics": {"m1": 10}}], {1: [{"id": "e1"}]},
+        occurred_events=["e1"], config_extra=_arm_extra("fast", "001"),
+    )
+    _write_run(
+        scenario_dir, "run-b", [{"turn": 1, "metrics": {"m1": 30}}], {1: []},
+        config_extra=_arm_extra("plateau", "002"),
+    )
+
+    result = analyze_ensemble(scenario_dir, group_by="arm")
+    report = format_ensemble_report(result)
+
+    assert "## Cohort Comparison (group-by: arm)" in report
+    assert "| fast | 1 |" in report
+    assert "Final metric mean per cohort" in report
+    assert "Event occurrence rate per cohort" in report

@@ -1211,6 +1211,20 @@ def main():
     )
     ensemble_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
     ensemble_parser.add_argument("--max-runs", type=int, default=None, help="Analyze most recent N runs")
+    ensemble_parser.add_argument(
+        "--filter",
+        action="append",
+        dest="filters",
+        metavar="KEY=VALUE",
+        default=None,
+        help="Restrict to runs whose metadata matches (repeatable; e.g. arm=fast)",
+    )
+    ensemble_parser.add_argument(
+        "--group-by",
+        metavar="KEY",
+        default=None,
+        help="Add a per-cohort comparison section (e.g. arm, scenario, initial_state)",
+    )
     ensemble_parser.add_argument("--json", action="store_true", help="Print JSON instead of markdown report")
     ensemble_parser.add_argument("--output", type=Path, default=None, help="Write report to file")
 
@@ -1222,6 +1236,23 @@ def main():
     synthesize_parser.add_argument("scenario", type=Path, help="Path to scenario directory")
     synthesize_parser.add_argument(
         "--max-runs", type=int, default=None, help="Synthesize the most recent N completed runs"
+    )
+    synthesize_parser.add_argument(
+        "--filter",
+        action="append",
+        dest="filters",
+        metavar="KEY=VALUE",
+        default=None,
+        help="Restrict to runs whose metadata matches (repeatable; e.g. arm=fast)",
+    )
+    synthesize_parser.add_argument(
+        "--group-by",
+        metavar="KEY",
+        default=None,
+        help=(
+            "Synthesize each cohort separately (saved under syntheses/), then one "
+            "comparison call stitches them; e.g. arm, scenario, initial_state"
+        ),
     )
     synthesize_parser.add_argument(
         "--model", type=str, default=None, help="Override the model used for the synthesis call"
@@ -1929,13 +1960,17 @@ def main():
         return 1 if any_failure else 0
 
     if args.command == "ensemble":
+        from .cohorts import parse_filter
         from .ensemble import analyze_ensemble, format_ensemble_report
 
         scenario_dir = args.scenario if args.scenario.is_dir() else args.scenario.parent
         print(f"Analyzing ensemble for: {scenario_dir}")
 
         try:
-            analysis = analyze_ensemble(scenario_dir, max_runs=args.max_runs)
+            filters = [parse_filter(spec) for spec in (args.filters or [])]
+            analysis = analyze_ensemble(
+                scenario_dir, max_runs=args.max_runs, filters=filters, group_by=args.group_by
+            )
         except Exception as e:
             print(f"❌ Ensemble analysis failed: {e}")
             return 1
@@ -1953,16 +1988,57 @@ def main():
         return
 
     if args.command == "synthesize":
+        from .cohorts import apply_filters, parse_filter, partition_runs
         from .ensemble import _discover_completed_runs
         from .synthesis import read_cached_analysis, synthesize_scenario
 
         scenario_dir = args.scenario if args.scenario.is_dir() else args.scenario.parent
+
+        try:
+            filters = [parse_filter(spec) for spec in (args.filters or [])]
+        except ValueError as e:
+            print(f"❌ {e}")
+            return 1
 
         if args.dry_run:
             run_dirs = _discover_completed_runs(scenario_dir, args.max_runs)
             if not run_dirs:
                 print(f"❌ No completed runs found in: {scenario_dir / 'runs'}")
                 return 1
+
+            if filters:
+                run_dirs, excluded = apply_filters(run_dirs, filters)
+                print(
+                    f"Filter {' AND '.join(f'{k}={v}' for k, v in filters)}: "
+                    f"{len(run_dirs)} of {len(run_dirs) + len(excluded)} runs match"
+                )
+                if not run_dirs:
+                    return 1
+
+            if args.group_by:
+                groups = partition_runs(run_dirs, args.group_by)
+                total_missing = 0
+                print(f"Grouped by '{args.group_by}': {len(groups)} cohort(s)")
+                for value, dirs in groups:
+                    missing = sum(
+                        1
+                        for d in dirs
+                        if args.refresh_analyses or read_cached_analysis(d) is None
+                    )
+                    total_missing += missing
+                    print(
+                        f"  - {value}: {len(dirs)} runs "
+                        f"({len(dirs) - missing} cached analyses, {missing} to generate)"
+                    )
+                calls = len(groups) + 1
+                print()
+                print(
+                    f"Then {len(groups)} group synthesis calls + 1 comparison call "
+                    f"({total_missing} per-run analyses to generate first)."
+                )
+                print(f"Total LLM calls after analyses: {calls}")
+                return 0
+
             missing = [
                 d for d in run_dirs
                 if args.refresh_analyses or read_cached_analysis(d) is None
@@ -1979,7 +2055,10 @@ def main():
         print(f"Synthesizing runs for: {scenario_dir}")
 
         def _report_progress(run_dir: Path, status: str) -> None:
-            if status != "reused":
+            if status.startswith("cohort:"):
+                _, value, count = status.split(":", 2)
+                print(f"\n▶ Cohort '{value}' ({count} runs)")
+            elif status != "reused":
                 print(f"  {status}: {run_dir.name}")
 
         try:
@@ -1994,6 +2073,8 @@ def main():
                 json_output=args.json,
                 no_save=args.no_save,
                 on_progress=_report_progress,
+                filters=filters,
+                group_by=args.group_by,
             )
         except Exception as e:
             print(f"❌ Synthesis failed: {e}")
@@ -2008,6 +2089,15 @@ def main():
         if coverage.failures:
             for run_dir, error in coverage.failures:
                 print(f"  ⚠️  {run_dir.name}: {error}")
+        if result.cohorts:
+            print(f"Compared {len(result.cohorts)} cohort syntheses:")
+            for cohort in result.cohorts:
+                dest = (
+                    f" -> {cohort.result.output_path.name}"
+                    if cohort.result.output_path is not None
+                    else ""
+                )
+                print(f"  - {cohort.cohort}: {cohort.n_runs} runs{dest}")
         if result.prompt_context_mode != "full":
             print(f"Prompt context density: {result.prompt_context_mode}")
 

@@ -1,7 +1,7 @@
 """Data models for Scenario Lab V4."""
 
 from dataclasses import dataclass, field
-from typing import Optional, Union, List
+from typing import Callable, Optional, Union, List
 import json
 
 
@@ -213,6 +213,20 @@ class TurnResult:
 
 
 @dataclass
+class ModelLimits:
+    """Per-model floors for call limits.
+
+    A reasoning model needs a large token budget and a long deadline whatever
+    step it runs; a fast instruct model needs neither. Entries here say what a
+    model cannot work *below* – they compose with task-scoped limits as lower
+    bounds, never as caps (see ``LLMConfig.resolve_limits``).
+    """
+
+    max_tokens: Optional[int] = None
+    call_timeout_seconds: Optional[int] = None
+
+
+@dataclass
 class LLMConfig:
     """LLM configuration with per-task model selection and fallback lists.
 
@@ -261,6 +275,11 @@ class LLMConfig:
     # request rather than each read, so a provider that trickles bytes cannot
     # block a run indefinitely.
     call_timeout_seconds: int = 300
+
+    # Per-model limit floors keyed by canonical route string
+    # ("provider:model", e.g. "openrouter:stealth/ox-alpha"). Resolved per
+    # route attempt so fallback lists can mix models with different needs.
+    model_limits: dict[str, ModelLimits] = field(default_factory=dict)
 
     # How many times the events step elicits the candidate-event list per turn.
     # With N > 1, per-event probabilities are aggregated (mean, absent-as-zero)
@@ -319,6 +338,85 @@ class LLMConfig:
         if default is not None:
             return default
         return self.max_tokens
+
+    @staticmethod
+    def canonical_limit_key(route: Union[ModelRoute, str]) -> str:
+        """Canonical dict key for a model-limits entry: "provider:model"."""
+        if isinstance(route, str):
+            # Local import: loader imports this module at load time.
+            from .loader import parse_route
+
+            route = parse_route(route)
+        return f"{route.provider}:{route.model}"
+
+    def _with_model_floors(
+        self, route: ModelRoute, max_tokens: int, timeout: int
+    ) -> "ResolvedLimits":
+        """Compose task-derived limits with the route's model floors (larger wins)."""
+        entry = self.model_limits.get(self.canonical_limit_key(route))
+        if entry is not None:
+            if entry.max_tokens is not None:
+                max_tokens = max(max_tokens, entry.max_tokens)
+            if entry.call_timeout_seconds is not None:
+                timeout = max(timeout, entry.call_timeout_seconds)
+        return ResolvedLimits(max_tokens=max_tokens, call_timeout_seconds=timeout)
+
+    def resolve_limits(
+        self, route: ModelRoute, task: Optional[str] = None
+    ) -> "ResolvedLimits":
+        """Resolve the call limits for one route attempt.
+
+        Task-scoped and model-scoped entries are lower bounds, so each resolved
+        value is the *larger* of the applicable floors. A task entry says "this
+        step needs room"; a model entry says "this model cannot work below
+        this" – taking the max means no one has to remember which key wins,
+        which matters because fallback route lists make the model vary within
+        one task.
+
+        Args:
+            route: The route about to be attempted.
+            task: Task name for ``max_tokens_by_task`` lookup, when known.
+
+        Returns:
+            ResolvedLimits with the max_tokens and call_timeout_seconds to use.
+        """
+        max_tokens = (
+            self.get_task_max_tokens(task) if task is not None else self.max_tokens
+        )
+        return self._with_model_floors(route, max_tokens, self.call_timeout_seconds)
+
+    def limits_resolver(
+        self,
+        task: Optional[str] = None,
+        *,
+        max_tokens_default: Optional[int] = None,
+    ) -> "Callable[[ModelRoute], ResolvedLimits]":
+        """Return a per-route limit resolver bound to a task.
+
+        Used by FallbackRouter so limits are resolved at call time for the
+        route actually being attempted. ``max_tokens_default`` replaces the
+        task/global lookup as the starting token budget (callers with their own
+        precedence chain, such as synthesis falling back to analysis tokens).
+        """
+
+        def resolve(route: ModelRoute) -> ResolvedLimits:
+            if max_tokens_default is not None:
+                max_tokens = max_tokens_default
+            elif task is not None:
+                max_tokens = self.get_task_max_tokens(task)
+            else:
+                max_tokens = self.max_tokens
+            return self._with_model_floors(route, max_tokens, self.call_timeout_seconds)
+
+        return resolve
+
+
+@dataclass(frozen=True)
+class ResolvedLimits:
+    """Call limits resolved for one route attempt."""
+
+    max_tokens: int
+    call_timeout_seconds: int
 
 
 @dataclass

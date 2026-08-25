@@ -100,12 +100,15 @@ class TestFallbackRouterRetries:
             max_tokens=100,
         )
         import scenario_lab.router as router_module
+        original_sleep = router_module.time.sleep
         router_module.time.sleep = lambda _: None
         try:
             with pytest.raises(LLMError, match="All routes failed"):
                 router.complete("sys", "usr")
         finally:
-            router_module.time.sleep = __import__("time").sleep
+            # Restore the captured original – re-reading the attribute here
+            # would return the lambda we just installed and leak the patch.
+            router_module.time.sleep = original_sleep
 
         assert prov.complete.call_count == FallbackRouter.MAX_RETRIES
 

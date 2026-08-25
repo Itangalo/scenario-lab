@@ -40,6 +40,7 @@ class PromptBuilder:
             "summarize": (system_dir / "summarize.md").read_text(encoding="utf-8"),
             "analysis_system": (system_dir / "analysis.md").read_text(encoding="utf-8"),
             "synthesis_system": (system_dir / "synthesis.md").read_text(encoding="utf-8"),
+            "cohort_comparison_system": (system_dir / "cohort-comparison.md").read_text(encoding="utf-8"),
             "format_fix_system": (system_dir / "format-fix.md").read_text(encoding="utf-8"),
             "constitutional_referee_system": (system_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
             "constitutional_referee_correction_system": (system_dir / "constitutional-referee-correction.md").read_text(encoding="utf-8"),
@@ -54,6 +55,7 @@ class PromptBuilder:
             "summarize": (user_dir / "summarize.md").read_text(encoding="utf-8"),
             "analysis": (user_dir / "analysis.md").read_text(encoding="utf-8"),
             "synthesis": (user_dir / "synthesis.md").read_text(encoding="utf-8"),
+            "cohort_comparison": (user_dir / "cohort-comparison.md").read_text(encoding="utf-8"),
             "format_fix_events": (user_dir / "format-fix-events.md").read_text(encoding="utf-8"),
             "format_fix_metrics": (user_dir / "format-fix-metrics.md").read_text(encoding="utf-8"),
             "constitutional_referee": (user_dir / "constitutional-referee.md").read_text(encoding="utf-8"),
@@ -592,6 +594,19 @@ class PromptBuilder:
         context = {
             "output_language": self.scenario.config.output_language,
             **synthesis_context,
+        }
+
+        user = template.render(**context)
+        return system, user
+
+    def build_cohort_comparison_prompt(self, comparison_context: dict[str, Any]) -> tuple[str, str]:
+        """Build prompts for the stitching pass that compares cohort syntheses."""
+        system = self._get_system_prompt("cohort_comparison")
+        template = self._get_user_template("cohort_comparison")
+
+        context = {
+            "output_language": self.scenario.config.output_language,
+            **comparison_context,
         }
 
         user = template.render(**context)

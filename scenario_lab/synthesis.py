@@ -19,6 +19,7 @@ import json
 import math
 from pathlib import Path
 from typing import Any, Callable, Optional
+import re
 
 from .analysis import (
     _format_actor_catalog,
@@ -26,7 +27,16 @@ from .analysis import (
     _format_metric_catalog,
     generate_run_analysis,
 )
-from .ensemble import _discover_completed_runs, analyze_ensemble
+from .cohorts import (
+    apply_filters,
+    available_cohort_keys,
+    between_group_stats,
+    partition_runs,
+)
+from .ensemble import (
+    _discover_completed_runs,
+    _analyze_run_set,
+)
 from .loader import load_scenario, parse_route
 from .models import Scenario
 from .prompts import PromptBuilder
@@ -35,6 +45,10 @@ from .router import FallbackRouter
 
 
 PROMPT_TOKEN_THRESHOLD = 80000
+
+# Char budgets tried per cohort report when fitting the comparison prompt.
+# None means send whole; later entries truncate each report progressively.
+_COHORT_REPORT_LIMITS: list[Optional[int]] = [None, 12000, 6000]
 
 # Keys of a per-run analysis.json that carry cross-run signal. Metric tables
 # and rule-evolution prose are deliberately excluded: the ensemble statistics
@@ -88,6 +102,17 @@ class SynthesisResult:
     prompt_context_mode: str
     num_runs: int
     coverage: AnalysisCoverage
+    cohorts: Optional[list["CohortSynthesis"]] = None
+
+
+@dataclass
+class CohortSynthesis:
+    """One cohort's full synthesis, produced before the comparison pass."""
+
+    cohort: str
+    n_runs: int
+    report: str
+    result: SynthesisResult
 
 
 def read_cached_analysis(run_dir: Path) -> Optional[dict[str, Any]]:
@@ -182,15 +207,262 @@ def synthesize_scenario(
     json_output: bool = False,
     no_save: bool = False,
     on_progress: Optional[Callable[[Path, str], None]] = None,
+    filters: Optional[list[tuple[str, str]]] = None,
+    group_by: Optional[str] = None,
 ) -> SynthesisResult:
-    """Synthesize every completed run of a scenario into one report."""
+    """Synthesize completed runs of a scenario into one report.
+
+    With ``filters``, only runs whose config.json metadata matches every
+    ``KEY=VALUE`` pair are synthesized. With ``group_by``, one full synthesis
+    is produced per cohort (saved under ``syntheses/``) and a final comparison
+    call stitches them together; the returned result carries both.
+    """
     scenario_path = Path(scenario_dir)
     run_dirs = _discover_completed_runs(scenario_path, max_runs)
     if not run_dirs:
         raise ValueError(f"No completed runs found in: {scenario_path / 'runs'}")
 
+    if filters:
+        run_dirs, _excluded = apply_filters(run_dirs, filters)
+        if not run_dirs:
+            available = available_cohort_keys(_discover_completed_runs(scenario_path))
+            raise ValueError(
+                "No runs match filter "
+                f"{' AND '.join(f'{k}={v}' for k, v in filters)}. "
+                f"Available keys/values: {available}"
+            )
+
     scenario = load_scenario(scenario_path)
-    ensemble = analyze_ensemble(scenario_path, max_runs=max_runs)
+
+    if group_by:
+        return _synthesize_grouped(
+            scenario_path=scenario_path,
+            scenario=scenario,
+            run_dirs=run_dirs,
+            group_by=group_by,
+            model=model,
+            analysis_model=analysis_model,
+            refresh_analyses=refresh_analyses,
+            max_concurrency=max_concurrency,
+            output_path=Path(output_path) if output_path is not None else None,
+            json_output=json_output,
+            no_save=no_save,
+            on_progress=on_progress,
+        )
+
+    return _synthesize_run_set(
+        scenario_path=scenario_path,
+        scenario=scenario,
+        run_dirs=run_dirs,
+        model=model,
+        analysis_model=analysis_model,
+        refresh_analyses=refresh_analyses,
+        max_concurrency=max_concurrency,
+        output_path=Path(output_path) if output_path is not None else None,
+        json_output=json_output,
+        no_save=no_save,
+        on_progress=on_progress,
+    )
+
+
+def _synthesize_grouped(
+    scenario_path: Path,
+    scenario: Scenario,
+    run_dirs: list[Path],
+    group_by: str,
+    model: Optional[str],
+    analysis_model: Optional[str],
+    refresh_analyses: bool,
+    max_concurrency: int,
+    output_path: Optional[Path],
+    json_output: bool,
+    no_save: bool,
+    on_progress: Optional[Callable[[Path, str], None]],
+) -> SynthesisResult:
+    """Run one synthesis per cohort, then stitch a comparison over them.
+
+    The stitching pass sees each cohort's full synthesis plus Python-computed
+    per-cohort statistics. Cohort syntheses are saved under ``syntheses/``
+    unless ``no_save``; the stitched comparison takes the usual synthesis
+    destination (``synthesis.md`` / ``synthesis.json`` or ``--output``).
+    """
+    groups = partition_runs(run_dirs, group_by)
+
+    cohort_results: list[CohortSynthesis] = []
+    for value, dirs in groups:
+        if on_progress:
+            on_progress(dirs[0], f"cohort:{value}:{len(dirs)}")
+        ext = ".json" if json_output else ".md"
+        group_destination = None
+        if not no_save:
+            slug = re.sub(r"[^A-Za-z0-9_.-]+", "_", value).strip("_") or "group"
+            group_dir = scenario_path / "syntheses"
+            group_dir.mkdir(parents=True, exist_ok=True)
+            group_destination = group_dir / f"{group_by}_{slug}{ext}"
+
+        result = _synthesize_run_set(
+            scenario_path=scenario_path,
+            scenario=scenario,
+            run_dirs=dirs,
+            model=model,
+            analysis_model=analysis_model,
+            refresh_analyses=refresh_analyses,
+            max_concurrency=max_concurrency,
+            output_path=group_destination,
+            json_output=json_output,
+            no_save=False,
+            on_progress=on_progress,
+        )
+        cohort_results.append(
+            CohortSynthesis(cohort=value, n_runs=len(dirs), report=result.report, result=result)
+        )
+
+    # ------------------------------------------------------------------
+    # Stitching pass
+    # ------------------------------------------------------------------
+    builder = PromptBuilder(scenario)
+    stats = between_group_stats(groups)
+
+    system_prompt = None
+    user_prompt = None
+    for limit in _COHORT_REPORT_LIMITS:
+        context = _build_comparison_context(
+            scenario=scenario,
+            group_by=group_by,
+            cohort_results=cohort_results,
+            stats=stats,
+            output_format="json" if json_output else "markdown",
+            char_limit=limit,
+        )
+        candidate_system, candidate_user = builder.build_cohort_comparison_prompt(context)
+        system_prompt, user_prompt = candidate_system, candidate_user
+        if (
+            _estimate_tokens(candidate_system) + _estimate_tokens(candidate_user)
+            <= PROMPT_TOKEN_THRESHOLD
+        ):
+            break
+
+    llm_config = scenario.config.llm
+    if model is not None:
+        routes = [parse_route(model)]
+    else:
+        cfg_routes = llm_config.analysis
+        routes = cfg_routes if isinstance(cfg_routes, list) else [cfg_routes]
+
+    router = FallbackRouter(
+        routes=routes,
+        registry=ProviderRegistry(call_timeout_seconds=llm_config.call_timeout_seconds),
+        temperature=0.3,
+        max_tokens=llm_config.get_task_max_tokens("comparison", default=llm_config.get_task_max_tokens("synthesis", default=llm_config.get_task_max_tokens("analysis"))),
+        limits_resolver=llm_config.limits_resolver(
+            "comparison",
+            max_tokens_default=llm_config.get_task_max_tokens(
+                "synthesis", default=llm_config.get_task_max_tokens("analysis")
+            ),
+        ),
+    )
+    try:
+        response = router.complete(system_prompt, user_prompt)
+    finally:
+        router.close()
+
+    report = _normalize_report(response.content, json_output)
+    destination = None
+    if not no_save:
+        destination = output_path if output_path is not None else (
+            scenario_path / ("synthesis.json" if json_output else "synthesis.md")
+        )
+        destination.parent.mkdir(parents=True, exist_ok=True)
+        destination.write_text(report, encoding="utf-8")
+
+    total_entries = sum(len(c.result.coverage.entries) for c in cohort_results)
+    failures = [
+        (run_dir, error)
+        for c in cohort_results
+        for run_dir, error in c.result.coverage.failures
+    ]
+    coverage = AnalysisCoverage(
+        entries=[
+            entry
+            for c in cohort_results
+            for entry in c.result.coverage.entries
+        ],
+        failures=failures,
+    )
+
+    return SynthesisResult(
+        report=report,
+        output_path=destination,
+        summary_text=_extract_summary_text(report, json_output),
+        output_format="json" if json_output else "markdown",
+        prompt_context_mode="comparison",
+        num_runs=total_entries,
+        coverage=coverage,
+        cohorts=cohort_results,
+    )
+
+
+def _build_comparison_context(
+    scenario: Scenario,
+    group_by: str,
+    cohort_results: list[CohortSynthesis],
+    stats: dict[str, Any],
+    output_format: str,
+    char_limit: Optional[int],
+) -> dict[str, Any]:
+    """Build the render context for the cohort-comparison prompt template."""
+    config = scenario.config
+    scenario_metadata = {
+        "scenario_name": config.name,
+        "scenario_description": config.description,
+        "start_date": config.start_date,
+        "time_scale": config.time_scale,
+        "max_turns": config.max_turns,
+        "grouped_by": group_by,
+        "cohorts": [c.n_runs for c in cohort_results],
+    }
+
+    sections: list[str] = []
+    for entry in cohort_results:
+        body = entry.report.strip()
+        if char_limit is not None and len(body) > char_limit:
+            body = f"{body[:char_limit].rstrip()}\n\n[Truncated for comparison context]"
+        sections.append(f"### Cohort: {entry.cohort} ({entry.n_runs} runs)\n\n{body}")
+
+    return {
+        "output_format": output_format,
+        "research_questions": [
+            {
+                "id": rq.id,
+                "question": rq.question,
+                "metrics": list(rq.metrics),
+                "events": list(rq.events),
+                "notes": rq.notes,
+            }
+            for rq in config.research_questions
+        ],
+        "group_by": group_by,
+        "scenario_metadata_json": _to_json(scenario_metadata),
+        "cohort_stats_json": _to_json(stats),
+        "per_cohort_reports_markdown": "\n\n".join(sections).strip(),
+    }
+
+
+def _synthesize_run_set(
+    scenario_path: Path,
+    scenario: Scenario,
+    run_dirs: list[Path],
+    model: Optional[str],
+    analysis_model: Optional[str],
+    refresh_analyses: bool,
+    max_concurrency: int,
+    output_path: Optional[Path],
+    json_output: bool,
+    no_save: bool,
+    on_progress: Optional[Callable[[Path, str], None]],
+) -> SynthesisResult:
+    """Synthesize one explicit set of runs (no discovery, no grouping here)."""
+    ensemble = _analyze_run_set(scenario_path, run_dirs)
 
     coverage = ensure_run_analyses(
         run_dirs,
@@ -223,6 +495,12 @@ def synthesize_scenario(
         registry=ProviderRegistry(call_timeout_seconds=llm_config.call_timeout_seconds),
         temperature=0.3,
         max_tokens=llm_config.get_task_max_tokens("synthesis", default=llm_config.get_task_max_tokens("analysis")),
+        limits_resolver=llm_config.limits_resolver(
+            "synthesis",
+            max_tokens_default=llm_config.get_task_max_tokens(
+                "synthesis", default=llm_config.get_task_max_tokens("analysis")
+            ),
+        ),
     )
     try:
         response = router.complete(system_prompt, user_prompt)
@@ -232,10 +510,8 @@ def synthesize_scenario(
     report = _normalize_report(response.content, json_output)
     destination = None
     if not no_save:
-        destination = (
-            Path(output_path)
-            if output_path is not None
-            else scenario_path / ("synthesis.json" if json_output else "synthesis.md")
+        destination = output_path if output_path is not None else (
+            scenario_path / ("synthesis.json" if json_output else "synthesis.md")
         )
         destination.parent.mkdir(parents=True, exist_ok=True)
         destination.write_text(report, encoding="utf-8")

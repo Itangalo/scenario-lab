@@ -7,18 +7,26 @@ from typing import Optional
 from ..llm import LLMError, LLMResponse, LLMUnsupportedStructuredError, LLMTransientError
 from .base import LLMProvider
 
+# The SDK applies a per-request timeout only when asked; without it a call can
+# hang on an open connection for the client-level default (or indefinitely).
+DEFAULT_CALL_TIMEOUT_SECONDS = 600
+
 
 class AnthropicProvider(LLMProvider):
     """LLM backend adapter for the Anthropic Messages API."""
 
     name = "anthropic"
 
-    # Class-level default so instances constructed without __init__ (tests)
-    # still get caching behavior.
+    # Class-level defaults so instances constructed without __init__ (tests)
+    # still behave.
     _enable_prompt_caching: bool = True
+    call_timeout_seconds: int = DEFAULT_CALL_TIMEOUT_SECONDS
 
     def __init__(
-        self, api_key: Optional[str] = None, enable_prompt_caching: bool = True
+        self,
+        api_key: Optional[str] = None,
+        enable_prompt_caching: bool = True,
+        call_timeout_seconds: Optional[int] = None,
     ) -> None:
         try:
             import anthropic as _anthropic_sdk
@@ -36,6 +44,7 @@ class AnthropicProvider(LLMProvider):
         self._sdk = _anthropic_sdk
         self._client = _anthropic_sdk.Anthropic(api_key=resolved_key)
         self._enable_prompt_caching = enable_prompt_caching
+        self.call_timeout_seconds = call_timeout_seconds or DEFAULT_CALL_TIMEOUT_SECONDS
 
     def _system_param(self, system: str):
         """Return the system parameter, with prompt caching when enabled.
@@ -64,6 +73,7 @@ class AnthropicProvider(LLMProvider):
         model: str,
         temperature: float,
         max_tokens: int,
+        call_timeout_seconds: Optional[int] = None,
     ) -> LLMResponse:
         """Send a single completion request to the Anthropic Messages API.
 
@@ -79,6 +89,7 @@ class AnthropicProvider(LLMProvider):
                 messages=[{"role": "user", "content": user}],
                 max_tokens=max_tokens,
                 temperature=temperature,
+                timeout=call_timeout_seconds or self.call_timeout_seconds,
             )
         except self._sdk.RateLimitError as e:
             raise LLMRateLimitError(f"Anthropic rate limit for {model}") from e
@@ -132,6 +143,7 @@ class AnthropicProvider(LLMProvider):
         max_tokens: int,
         schema: dict,
         schema_name: str,
+        call_timeout_seconds: Optional[int] = None,
     ) -> LLMResponse:
         """Send a schema-constrained request via a forced tool call.
 
@@ -163,6 +175,7 @@ class AnthropicProvider(LLMProvider):
                 temperature=temperature,
                 tools=[tool],
                 tool_choice={"type": "tool", "name": schema_name},
+                timeout=call_timeout_seconds or self.call_timeout_seconds,
             )
         except self._sdk.RateLimitError as e:
             raise LLMRateLimitError(f"Anthropic rate limit for {model}") from e

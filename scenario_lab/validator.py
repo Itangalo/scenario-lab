@@ -561,18 +561,21 @@ def validate_event_probabilities(scenario: Scenario) -> Tuple[List[str], List[st
     return errors, warnings
 
 
-def validate_llm_config(scenario: Scenario) -> List[str]:
+def validate_llm_config(scenario: Scenario) -> Tuple[List[str], List[str]]:
     """Validate LLM configuration.
 
     Checks:
     - Model strings follow OpenRouter format
     - Temperature is in valid range [0, 2]
     - Max tokens is reasonable (> 100, < 100000)
+    - Model-scoped limit floors are in range and referenced by some task
 
     Returns:
-        List of validation errors and warnings
+        (errors, warnings) – hard config mistakes are errors; entries that
+        would silently do nothing or look unintended are warnings.
     """
-    errors = []
+    errors: List[str] = []
+    warnings: List[str] = []
     config = scenario.config.llm
 
     # Validate temperature
@@ -650,6 +653,53 @@ def validate_llm_config(scenario: Scenario) -> List[str]:
         elif value > 100000:
             errors.append(f"max_tokens_by_task['{task}']={value} is unusually high (maximum 100000)")
 
+    # Validate per-model limit floors
+    from .models import LLMConfig, ModelRoute
+
+    def _collect_route_keys(value: object) -> None:
+        if isinstance(value, ModelRoute):
+            configured_routes.add(LLMConfig.canonical_limit_key(value))
+        elif isinstance(value, list):
+            for item in value:
+                _collect_route_keys(item)
+        elif isinstance(value, dict):
+            for item in value.values():
+                _collect_route_keys(item)
+
+    configured_routes: set[str] = set()
+    for task in ["events", "actors", "rules", "metrics", "summary", "analysis", "referee"]:
+        _collect_route_keys(getattr(config, task))
+
+    for model_key, limits in config.model_limits.items():
+        if model_key not in configured_routes:
+            warnings.append(
+                f"model_limits has entry '{model_key}' but no task is configured to use "
+                f"that model – the limits apply only when selected via --model"
+            )
+        if limits.max_tokens is not None:
+            if limits.max_tokens < 100:
+                errors.append(
+                    f"model_limits['{model_key}'].max_tokens={limits.max_tokens} is too low (minimum 100)"
+                )
+            elif limits.max_tokens > 200000:
+                warnings.append(
+                    f"model_limits['{model_key}'].max_tokens={limits.max_tokens} is unusually high "
+                    "(maximum 200000); reasoning models legitimately need large budgets, "
+                    "but check this is intended"
+                )
+        if limits.call_timeout_seconds is not None:
+            if limits.call_timeout_seconds < 10:
+                errors.append(
+                    f"model_limits['{model_key}'].call_timeout_seconds "
+                    f"{limits.call_timeout_seconds} must be an integer >= 10 seconds"
+                )
+            elif limits.call_timeout_seconds > 3600:
+                warnings.append(
+                    f"model_limits['{model_key}'].call_timeout_seconds "
+                    f"{limits.call_timeout_seconds} is unusually high (maximum 3600); "
+                    "a single call blocking for an hour will stall a whole batch"
+                )
+
     # Validate model strings for each task
     task_fields = ["events", "rules", "metrics", "summary", "analysis", "referee"]
 
@@ -675,7 +725,7 @@ def validate_llm_config(scenario: Scenario) -> List[str]:
                     if not is_valid_model_route(m):
                         errors.append(f"Actor '{actor_id}' has invalid model in fallback list: '{m}'")
 
-    return errors
+    return errors, warnings
 
 
 def validate_prompt_overrides(scenario: Scenario) -> Tuple[List[str], List[str]]:
@@ -992,7 +1042,9 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
     event_probability_errors, event_probability_warnings = validate_event_probabilities(scenario)
     errors.extend(event_probability_errors)
     warnings.extend(event_probability_warnings)
-    errors.extend(validate_llm_config(scenario))
+    llm_errors, llm_warnings = validate_llm_config(scenario)
+    errors.extend(llm_errors)
+    warnings.extend(llm_warnings)
     warnings.extend(collect_model_hygiene_warnings(scenario.config.llm, scope=scenario_path.name))
     errors.extend(validate_actor_references(scenario))
     errors.extend(validate_time_config(scenario))

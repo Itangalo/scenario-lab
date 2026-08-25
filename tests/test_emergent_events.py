@@ -125,7 +125,7 @@ def test_validator_rejects_bad_values(test_scenario):
 
     # probability_samples validation happens in LLMConfig.__post_init__ too,
     # but the validator must also catch values set after construction.
-    errors = validate_llm_config(test_scenario)
+    errors, _ = validate_llm_config(test_scenario)
     assert any("probability_samples" in e for e in errors)
     assert any("max_per_turn" in e for e in errors)
     assert any("max_probability" in e for e in errors)

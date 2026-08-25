@@ -153,6 +153,7 @@ def generate_run_analysis(
         registry=registry,
         temperature=0.3,
         max_tokens=llm_config.get_task_max_tokens("analysis"),
+        limits_resolver=llm_config.limits_resolver("analysis"),
     )
 
     try:

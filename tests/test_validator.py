@@ -94,7 +94,7 @@ def test_validate_llm_config_temperature():
         context=""
     )
 
-    errors = validate_llm_config(scenario)
+    errors, _ = validate_llm_config(scenario)
     assert any("temperature" in e.lower() for e in errors)
 
 
@@ -120,7 +120,7 @@ def test_validate_llm_config_max_tokens():
         context=""
     )
 
-    errors = validate_llm_config(scenario)
+    errors, _ = validate_llm_config(scenario)
     assert any("max_tokens" in e for e in errors)
 
 
@@ -146,7 +146,7 @@ def test_validate_llm_config_max_tokens_by_task():
         context=""
     )
 
-    errors = validate_llm_config(scenario)
+    errors, _ = validate_llm_config(scenario)
     assert any("max_tokens_by_task['analysis']" in e for e in errors)
     assert any("invalid task 'unknown'" in e for e in errors)
 
@@ -173,7 +173,7 @@ def test_validate_llm_config_model_string():
         context=""
     )
 
-    errors = validate_llm_config(scenario)
+    errors, _ = validate_llm_config(scenario)
     assert any("invalid model string" in e.lower() for e in errors)
 
 
@@ -714,7 +714,7 @@ class TestModelRouteValidation:
             world_state=WorldState(narrative="", turn=0, time_period=""), context="",
         )
 
-        errors = validate_llm_config(scenario)
+        errors, _ = validate_llm_config(scenario)
         assert not any("fallback list" in e for e in errors)
 
     def test_anthropic_model_without_slash_is_accepted(self):

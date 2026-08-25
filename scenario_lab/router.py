@@ -1,7 +1,7 @@
 """FallbackRouter: tries an ordered list of ModelRoutes until one succeeds."""
 
 import time
-from typing import Optional
+from typing import Callable, Optional
 
 from .llm import (
     LLMError,
@@ -10,7 +10,7 @@ from .llm import (
     LLMTransientError,
     LLMUnsupportedStructuredError,
 )
-from .models import ModelRoute
+from .models import ModelRoute, ResolvedLimits
 from .providers.registry import ProviderRegistry
 
 
@@ -26,6 +26,11 @@ class FallbackRouter:
     Errors that say the request itself was unacceptable (a rejected model, an
     exhausted reasoning budget) are *not* retried: repeating them identically
     cannot succeed, so the router moves straight to the next route.
+
+    Limits follow the model, not the step: when ``limits_resolver`` is given,
+    max_tokens and the call deadline are resolved per route attempt (see
+    ``LLMConfig.resolve_limits``), so a fallback list can pair a reasoning
+    model with an instruct one without either inheriting the other's limits.
     """
 
     MAX_RETRIES = 3
@@ -36,14 +41,32 @@ class FallbackRouter:
         registry: ProviderRegistry,
         *,
         temperature: float,
-        max_tokens: int,
+        max_tokens: Optional[int] = None,
+        limits_resolver: Optional[Callable[[ModelRoute], ResolvedLimits]] = None,
     ) -> None:
         if not routes:
             raise ValueError("FallbackRouter requires at least one route.")
+        if limits_resolver is None and max_tokens is None:
+            raise ValueError(
+                "FallbackRouter needs either max_tokens or a limits_resolver."
+            )
         self._routes = routes
         self._registry = registry
         self._temperature = temperature
         self._max_tokens = max_tokens
+        self._limits_resolver = limits_resolver
+
+    def _limits_for(self, route: ModelRoute) -> "tuple[int, Optional[int]]":
+        """Resolve (max_tokens, call deadline) for one route attempt.
+
+        The deadline is None when no resolver is configured, meaning providers
+        keep their own instance defaults.
+        """
+        if self._limits_resolver is not None:
+            limits = self._limits_resolver(route)
+            return limits.max_tokens, limits.call_timeout_seconds
+        assert self._max_tokens is not None
+        return self._max_tokens, None
 
     @property
     def primary_route(self) -> ModelRoute:
@@ -59,6 +82,7 @@ class FallbackRouter:
                 print(f"  → Falling back to: {route}")
 
             provider = self._registry.get(route.provider)
+            max_tokens, call_timeout = self._limits_for(route)
 
             for attempt in range(self.MAX_RETRIES):
                 try:
@@ -67,7 +91,8 @@ class FallbackRouter:
                         user,
                         model=route.model,
                         temperature=self._temperature,
-                        max_tokens=self._max_tokens,
+                        max_tokens=max_tokens,
+                        call_timeout_seconds=call_timeout,
                     )
                     if is_fallback:
                         print(f"  ✓ Fallback successful ({route})")
@@ -147,6 +172,7 @@ class FallbackRouter:
                 print(f"  → Falling back to: {route}")
 
             provider = self._registry.get(route.provider)
+            max_tokens, call_timeout = self._limits_for(route)
 
             for attempt in range(self.MAX_RETRIES):
                 try:
@@ -155,9 +181,10 @@ class FallbackRouter:
                         user,
                         model=route.model,
                         temperature=self._temperature,
-                        max_tokens=self._max_tokens,
+                        max_tokens=max_tokens,
                         schema=schema,
                         schema_name=schema_name,
+                        call_timeout_seconds=call_timeout,
                     )
                     if is_fallback:
                         print(f"  ✓ Fallback successful ({route})")

@@ -44,6 +44,9 @@ class ProviderRegistry:
             return OpenRouterProvider()
         if name == "anthropic":
             from .anthropic import AnthropicProvider
+
+            if self._call_timeout_seconds is not None:
+                return AnthropicProvider(call_timeout_seconds=self._call_timeout_seconds)
             return AnthropicProvider()
         raise LLMError(f"Unknown provider '{name}'. Register it explicitly or use a built-in.")
 
