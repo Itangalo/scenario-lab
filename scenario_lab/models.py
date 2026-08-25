@@ -55,6 +55,10 @@ class Metrics:
         """Export as simple JSON for prompts."""
         return json.dumps({m.id: m.value for m in self.metrics.values()}, indent=2)
 
+    def to_env(self) -> dict[str, float]:
+        """Metric id -> current value, for expression evaluation."""
+        return {m_id: m.value for m_id, m in self.metrics.items()}
+
     def update_from_json(self, json_str: str) -> None:
         """Update values from LLM response."""
         data = json.loads(json_str)
@@ -71,6 +75,27 @@ class Metrics:
                 self.metrics[metric_id].clamp()
 
 
+def build_expression_env(scenario: "Scenario") -> dict[str, float]:
+    """Variable environment for event eligibility gates: metrics plus regime flags.
+
+    Gate expressions may reference metric ids directly and one flag per known
+    trajectory regime (`is_fast`, `is_plateau`, `is_rlvr_limited`). The regime
+    is read from the run's starting-state context ("REGIME: FAST." etc.), which
+    apply_initial_state folds into scenario.context; without a draw all flags
+    are 0. Flags are floats so the sandboxed evaluator needs nothing beyond its
+    arithmetic vocabulary.
+    """
+    env = scenario.metrics.to_env()
+    import re
+
+    match = re.search(r"REGIME:\s*([A-Z\-]+)\.", scenario.context or "")
+    regime = match.group(1).strip().upper() if match else ""
+    env["is_fast"] = 1.0 if regime == "FAST" else 0.0
+    env["is_plateau"] = 1.0 if regime == "PLATEAU" else 0.0
+    env["is_rlvr_limited"] = 1.0 if regime == "RLVR-LIMITED" else 0.0
+    return env
+
+
 @dataclass
 class Event:
     """An external event that can occur."""
@@ -81,6 +106,12 @@ class Event:
     probability: str  # Can be formula like "2 * unemployment / 100"
     can_repeat: bool = False
     occurred: bool = False
+    # Optional deterministic eligibility gate, e.g. "public_sentiment_to_ai < 30".
+    # Evaluated by Python against current metric values (same sandboxed evaluator
+    # as termination conditions); a false gate removes the event from the events
+    # prompt entirely and rejects any candidate for it that turn. Prose
+    # conditions the metrics cannot express stay in `condition` for the LLM.
+    eligible: str = ""
 
 
 STATEMENT_TIERS = ("position", "commitment", "identity")
@@ -298,11 +329,20 @@ class EmergentEventsConfig:
     exogenous events per turn. Python only applies guardrails: shape
     validation, a probability cap, and the per-turn limit. The proposals
     themselves come from the LLM, keeping the pure LLM architecture.
+
+    When ``track_unfired`` is also enabled (opt-in), a proposal that does not
+    fire is carried forward as an emerging development for up to
+    ``window_turns`` consecutive listed turns: it is rendered into the tracked
+    notepad section, and the events step is instructed to re-list it with an
+    escalating probability until it fires or its window closes. Off by default,
+    so enabling emergent events alone preserves one-shot proposal semantics.
     """
 
     enabled: bool = False
     max_per_turn: int = 1
     max_probability: float = 0.35
+    track_unfired: bool = False
+    window_turns: int = 3
 
 
 @dataclass
@@ -439,6 +479,25 @@ class InitialState:
 
 
 @dataclass
+class EmergingDevelopment:
+    """An emergent proposal that did not fire and is carried forward.
+
+    Python tracks only existence, wording and age (persistence); what the
+    development means and how likely it is stay with the LLM steps, which see
+    these entries through the tracked section of the notepad.
+    """
+
+    id: str
+    description: str
+    first_turn: int
+    last_turn: int
+
+    @property
+    def appearances(self) -> int:
+        return self.last_turn - self.first_turn + 1
+
+
+@dataclass
 class Scenario:
     """Complete scenario state."""
 
@@ -460,3 +519,7 @@ class Scenario:
     # History
     turn_history: list[TurnResult] = field(default_factory=list)
     occurred_events: set[str] = field(default_factory=set)
+
+    # Emergent proposals that have not fired yet and are being carried forward
+    # as emerging developments (see ARCHITECTURE.md).
+    emerging_developments: list[EmergingDevelopment] = field(default_factory=list)

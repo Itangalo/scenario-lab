@@ -401,11 +401,39 @@ def validate_metric_references(scenario: Scenario) -> List[str]:
 
     # Check events
     for event in scenario.events:
-        # Check conditions - look for metric-like patterns
+        # Check conditions - look for metric-like patterns. Conditions may name
+        # other events as well as metrics: a gated event whose condition is
+        # "open if cyber_recon_wave occurred in the previous 3 turns" is exactly
+        # the kind of precursor/escalation pair the events system supports, and
+        # checking against metrics alone would make it unwritable.
         referenced_metrics = extract_metric_references(event.condition)
         for metric in referenced_metrics:
-            if '_' in metric and metric not in valid_metric_ids:
-                errors.append(f"Event '{event.id}' condition references unknown metric '{metric}'")
+            if '_' in metric and metric not in valid_identifiers:
+                errors.append(
+                    f"Event '{event.id}' condition references unknown metric or event '{metric}'"
+                )
+
+        # Eligibility gates are evaluated by Python, so their identifiers must
+        # be metrics (events cannot be expressed), the expression must parse,
+        # and it must evaluate against the starting values.
+        if event.eligible:
+            gate_metrics = extract_metric_references(event.eligible)
+            allowed_gate_names = valid_metric_ids | {"is_fast", "is_plateau", "is_rlvr_limited"}
+            for metric in gate_metrics:
+                if '_' in metric and metric not in allowed_gate_names:
+                    errors.append(
+                        f"Event '{event.id}' eligibility gate references unknown "
+                        f"metric '{metric}' (gates may only reference metrics)"
+                    )
+            try:
+                from .models import build_expression_env
+
+                eval_boolean_expression(event.eligible, build_expression_env(scenario))
+            except (NameError, ValueError, TypeError, SyntaxError, ZeroDivisionError) as exc:
+                errors.append(
+                    f"Event '{event.id}' eligibility gate '{event.eligible}' could not be "
+                    f"evaluated against starting values: {exc}"
+                )
 
         # Check probability formulas - only if it looks like a formula (not natural language or static)
         if not is_static_probability(event.probability) and is_formula_probability(event.probability, valid_metric_ids):
@@ -593,6 +621,19 @@ def validate_llm_config(scenario: Scenario) -> List[str]:
     if not isinstance(emergent.max_probability, (int, float)) or not 0 < emergent.max_probability <= 1:
         errors.append(
             f"emergent_events.max_probability {emergent.max_probability!r} must be in (0, 1]"
+        )
+    if not isinstance(emergent.track_unfired, bool):
+        errors.append(
+            f"emergent_events.track_unfired {emergent.track_unfired!r} must be a boolean"
+        )
+    if not isinstance(emergent.window_turns, int) or emergent.window_turns < 1:
+        errors.append(
+            f"emergent_events.window_turns {emergent.window_turns!r} must be an integer >= 1"
+        )
+    elif emergent.track_unfired and emergent.window_turns > 10:
+        errors.append(
+            f"emergent_events.window_turns {emergent.window_turns} is unusually high "
+            "(maximum 10); a development tracked that long without firing is not emerging"
         )
 
     # Validate per-task max_tokens overrides

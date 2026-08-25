@@ -77,6 +77,8 @@ def test_emergent_events_defaults(test_scenario):
     assert emergent.enabled is False
     assert emergent.max_per_turn == 1
     assert emergent.max_probability == 0.35
+    assert emergent.track_unfired is False
+    assert emergent.window_turns == 3
     assert test_scenario.config.llm.probability_samples == 1
 
 
@@ -100,6 +102,8 @@ emergent_events:
   enabled: true
   max_per_turn: 2
   max_probability: 0.5
+  track_unfired: true
+  window_turns: 4
 """,
         encoding="utf-8",
     )
@@ -108,12 +112,16 @@ emergent_events:
     assert config.emergent_events.enabled is True
     assert config.emergent_events.max_per_turn == 2
     assert config.emergent_events.max_probability == 0.5
+    assert config.emergent_events.track_unfired is True
+    assert config.emergent_events.window_turns == 4
 
 
 def test_validator_rejects_bad_values(test_scenario):
     test_scenario.config.llm.probability_samples = 0
     test_scenario.config.emergent_events.max_per_turn = 0
     test_scenario.config.emergent_events.max_probability = 1.5
+    test_scenario.config.emergent_events.track_unfired = "yes"
+    test_scenario.config.emergent_events.window_turns = 0
 
     # probability_samples validation happens in LLMConfig.__post_init__ too,
     # but the validator must also catch values set after construction.
@@ -121,6 +129,8 @@ def test_validator_rejects_bad_values(test_scenario):
     assert any("probability_samples" in e for e in errors)
     assert any("max_per_turn" in e for e in errors)
     assert any("max_probability" in e for e in errors)
+    assert any("track_unfired" in e for e in errors)
+    assert any("window_turns" in e for e in errors)
 
 
 def test_llm_config_rejects_bad_probability_samples():
@@ -416,3 +426,201 @@ def test_estimator_scales_events_tokens_with_samples(test_scenario):
     tripled = CostEstimator(test_scenario)._estimate_events_tokens()
 
     assert tripled == 3 * single
+
+
+# ---------------------------------------------------------------------------
+# Emerging developments: unfired emergent proposals carried forward
+# ---------------------------------------------------------------------------
+
+
+def _unfired_emergent_payload() -> str:
+    """A proposal with probability 0.0 can never fire (roll < 0 is impossible)."""
+    return _emergent_payload(probability=0.0)
+
+
+def test_unfired_emergent_carried_as_emerging_development(test_scenario, tmp_path):
+    test_scenario.config.emergent_events.enabled = True
+    test_scenario.config.emergent_events.track_unfired = True
+    om = _recording_output_manager(test_scenario, tmp_path)
+    orchestrator = Orchestrator(test_scenario, _events_client(_unfired_emergent_payload()), output_manager=om)
+
+    orchestrator._run_events_step(turn=1)
+
+    assert len(test_scenario.emerging_developments) == 1
+    dev = test_scenario.emerging_developments[0]
+    assert dev.id == "emergent_solar_storm"
+    assert dev.first_turn == 1
+    assert dev.last_turn == 1
+    assert dev.appearances == 1
+    assert dev.description.startswith("A severe solar storm")
+
+
+def test_emerging_development_expires_after_three_appearances(test_scenario, tmp_path):
+    test_scenario.config.emergent_events.enabled = True
+    test_scenario.config.emergent_events.track_unfired = True
+    om = _recording_output_manager(test_scenario, tmp_path)
+    orchestrator = Orchestrator(test_scenario, _events_client(_unfired_emergent_payload()), output_manager=om)
+
+    orchestrator._run_events_step(turn=1)
+    assert test_scenario.emerging_developments[0].appearances == 1
+
+    orchestrator._run_events_step(turn=2)
+    assert test_scenario.emerging_developments[0].appearances == 2
+
+    # Third listing without firing closes the window.
+    orchestrator._run_events_step(turn=3)
+    assert test_scenario.emerging_developments == []
+
+
+def test_fired_emergent_leaves_tracking(test_scenario, tmp_path):
+    test_scenario.config.emergent_events.enabled = True
+    test_scenario.config.emergent_events.track_unfired = True
+    test_scenario.config.emergent_events.max_probability = 1.0
+    om = _recording_output_manager(test_scenario, tmp_path)
+    orchestrator = Orchestrator(test_scenario, _events_client(_emergent_payload()), output_manager=om)
+
+    orchestrator._run_events_step(turn=1)
+
+    assert "emergent_solar_storm" in test_scenario.occurred_events
+    assert test_scenario.emerging_developments == []
+
+
+def test_emergent_not_reproposed_fizzles(test_scenario, tmp_path):
+    test_scenario.config.emergent_events.enabled = True
+    test_scenario.config.emergent_events.track_unfired = True
+
+    class VanishingClient(SequenceClient):
+        def complete(self, system_prompt, user_prompt):
+            if self.contents:
+                return super().complete(system_prompt, user_prompt)
+            return LLMResponse(
+                content="[]",
+                raw_response={"usage": {}, "model": "mock/model"},
+            )
+
+    client = VanishingClient([_unfired_emergent_payload()])
+    om = _recording_output_manager(test_scenario, tmp_path)
+    orchestrator = Orchestrator(test_scenario, client, output_manager=om)
+
+    orchestrator._run_events_step(turn=1)
+    assert len(test_scenario.emerging_developments) == 1
+
+    orchestrator._run_events_step(turn=2)
+    assert test_scenario.emerging_developments == []
+
+
+def test_tracking_inert_when_emergent_disabled(test_scenario, tmp_path):
+    om = _recording_output_manager(test_scenario, tmp_path)
+    orchestrator = Orchestrator(
+        test_scenario, _events_client(_unfired_emergent_payload()), output_manager=om
+    )
+
+    orchestrator._run_events_step(turn=1)
+
+    assert test_scenario.emerging_developments == []
+
+
+def test_tracking_off_by_default_when_enabled(test_scenario, tmp_path):
+    """Emergent events alone keep one-shot semantics; tracking is opt-in."""
+    test_scenario.config.emergent_events.enabled = True
+    om = _recording_output_manager(test_scenario, tmp_path)
+    orchestrator = Orchestrator(
+        test_scenario, _events_client(_unfired_emergent_payload()), output_manager=om
+    )
+
+    orchestrator._run_events_step(turn=1)
+
+    assert test_scenario.emerging_developments == []
+
+
+# ---------------------------------------------------------------------------
+# Emerging developments: prompt composition and persistence
+# ---------------------------------------------------------------------------
+
+
+def test_compose_notepad_appends_tracked_section_once(test_scenario):
+    from scenario_lab.models import EmergingDevelopment
+    from scenario_lab.prompts import PromptBuilder
+
+    test_scenario.config.emergent_events.enabled = True
+    test_scenario.config.emergent_events.track_unfired = True
+    test_scenario.notepad = "GM note: keep an eye on the grid."
+    test_scenario.emerging_developments = [
+        EmergingDevelopment(
+            id="emergent_solar_storm",
+            description="A severe solar storm is trending.",
+            first_turn=2,
+            last_turn=3,
+        )
+    ]
+    builder = PromptBuilder(test_scenario)
+
+    first = builder._compose_notepad()
+    assert "GM note: keep an eye on the grid." in first
+    assert "## Emerging developments (tracked)" in first
+    assert "`emergent_solar_storm`" in first
+    assert "listed in 2 turn(s)" in first
+
+    # A model that copies the tracked section into its own notepad must not
+    # produce a duplicated section on the next composition.
+    test_scenario.notepad = first
+    second = builder._compose_notepad()
+    assert second.count("## Emerging developments (tracked)") == 1
+
+
+def test_update_summary_persists_emerging_developments(test_scenario, tmp_path):
+    import json as json_mod
+
+    from scenario_lab.models import EmergingDevelopment
+
+    test_scenario.config.emergent_events.enabled = True
+    test_scenario.config.emergent_events.track_unfired = True
+    test_scenario.emerging_developments = [
+        EmergingDevelopment(
+            id="emergent_solar_storm",
+            description="A severe solar storm is trending.",
+            first_turn=1,
+            last_turn=2,
+        )
+    ]
+    om = _recording_output_manager(test_scenario, tmp_path)
+    om.update_summary(current_turn=2, latest_metrics={"cap": 50})
+
+    summary = json_mod.loads((om.run_dir / "summary.json").read_text(encoding="utf-8"))
+    assert summary["emerging_events"] == [
+        {
+            "id": "emergent_solar_storm",
+            "description": "A severe solar storm is trending.",
+            "first_turn": 1,
+            "last_turn": 2,
+        }
+    ]
+
+
+def test_events_template_mentions_carried_entries(test_scenario):
+    """The re-listing instruction appears exactly when there are entries to carry."""
+    from scenario_lab.models import EmergingDevelopment
+
+    # Use the default events template (the scenario ships a custom override).
+    test_scenario.custom_user_prompts.pop("events", None)
+    test_scenario.config.emergent_events.enabled = True
+    test_scenario.config.emergent_events.track_unfired = True
+    builder = PromptBuilder(test_scenario)
+
+    # Tracking on but nothing in flight: no instruction, no section reference.
+    _, user_empty = builder.build_events_prompt(turn=3)
+    assert "Emerging developments (tracked)" not in user_empty
+
+    # Entries in flight: the instruction to re-list them at higher probability.
+    test_scenario.emerging_developments = [
+        EmergingDevelopment(
+            id="emergent_solar_storm",
+            description="A severe solar storm is trending.",
+            first_turn=2,
+            last_turn=2,
+        )
+    ]
+    builder = PromptBuilder(test_scenario)
+    _, user = builder.build_events_prompt(turn=3)
+    assert "Emerging developments (tracked)" in user
+    assert "higher" in user

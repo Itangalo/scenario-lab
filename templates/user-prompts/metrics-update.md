@@ -29,6 +29,10 @@ The notepad contains the following information:
 
 {{notepad}}
 
+{% if has_emerging_developments %}
+The notepad's "Emerging developments (tracked)" section lists developments that recent turns have judged plausible but that have not happened. They are not events. Let them colour the narrative only as faint, ambiguous signals whose visibility grows with how long they have been listed — never as anything confirmed, and never with a stated probability.
+{% endif %}
+
 ---
 
 This turn, the following external events have occurred:

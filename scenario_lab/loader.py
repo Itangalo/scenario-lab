@@ -649,6 +649,8 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     "enabled": base_config.emergent_events.enabled,
                     "max_per_turn": base_config.emergent_events.max_per_turn,
                     "max_probability": base_config.emergent_events.max_probability,
+                    "track_unfired": base_config.emergent_events.track_unfired,
+                    "window_turns": base_config.emergent_events.window_turns,
                 },
                 "rule_evolution": {
                     "freeze_until_turn": base_config.rule_evolution.freeze_until_turn,
@@ -727,6 +729,8 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         enabled=bool(emergent_events_data.get("enabled", False)),
         max_per_turn=emergent_events_data.get("max_per_turn", 1),
         max_probability=emergent_events_data.get("max_probability", 0.35),
+        track_unfired=bool(emergent_events_data.get("track_unfired", False)),
+        window_turns=emergent_events_data.get("window_turns", 3),
     )
 
     rule_evolution_data = data.get("rule_evolution", {})
@@ -902,6 +906,7 @@ def create_event(data: dict) -> Event:
     
     description = data.get("description", "")
     condition = data.get("condition", "")
+    eligible = data.get("eligible", "")
 
     return Event(
         id=data["id"],
@@ -909,6 +914,7 @@ def create_event(data: dict) -> Event:
         condition=condition,
         probability=probability,
         can_repeat=can_repeat,
+        eligible=eligible,
     )
 
 

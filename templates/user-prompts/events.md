@@ -36,6 +36,8 @@ The list of potential external events looks like this:
 
 Use the background information to determine which external events can occur in this turn. If the probability is specified as a formula or description, you should calculate the actual value.
 
+Eligibility is binary, and listing is not harmless: every entry you output gets rolled. An event whose Condition is not satisfied this turn must be omitted from the array entirely — including it "just in case" with a small probability is an error of the same weight as omitting an eligible one. When a condition is genuinely uncertain, judge conservatively and omit.
+
 IMPORTANT: For events with date-specific conditions (e.g., "September 2026 is included"), check if the current time period ({{time_period}}) covers that date.
 - If the current period is "January-June 2026", it does NOT cover September 2026.
 - If the current period is "July-December 2026", it DOES cover September 2026.
@@ -46,6 +48,9 @@ In addition to the listed events, you may propose up to {{ emergent_max_per_turn
 - An emergent event must be exogenous: not an action by one of the actors, and not a restatement of something already in the narrative or history.
 - Give it an id starting with `emergent_` (snake_case), a description of 1-3 sentences, and an honest probability that it happens during this turn's time window (maximum {{ emergent_max_probability }}).
 - Do not re-propose emergent events that already occurred in previous turns.
+{% if has_emerging_developments %}
+- **Emerging developments.** The notepad's "Emerging developments (tracked)" section lists proposals from recent turns that were judged plausible but did not happen. While an entry stays plausible, list it again in your array — same id, same description — with a *higher* probability than last turn, because a development that keeps failing to materialise is either about to or is fading: roughly 1.5–2× the previous figure, still at most {{ emergent_max_probability }}. If it is no longer plausible, omit it and it is gone. An entry that has been listed without firing is normally in its last window; do not carry entries indefinitely.
+{% endif %}
 - If nothing novel is warranted, propose none. Most turns should have none.
 
 Your response should be a JSON array where every object has four fields: `id`, `probability`, `emergent`, and `description`. For listed events, set `"emergent": false` and `"description": ""`.

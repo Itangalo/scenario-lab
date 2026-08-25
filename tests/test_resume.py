@@ -371,3 +371,31 @@ def test_sync_summary_turn_state_updates_existing_turn_without_duplication(temp_
     assert len(updated["history"]) == 1
     assert updated["history"][0] == {"turn": 1, "metrics": {"test_metric": 99}}
     assert "last_updated" in updated
+
+
+def test_load_run_state_restores_emerging_developments(temp_run_dir, scenario_dir):
+    """Emerging developments persist in summary.json and survive resume."""
+    create_complete_turn(temp_run_dir, 1)
+
+    summary = json.loads((temp_run_dir / "summary.json").read_text())
+    summary["history"] = [{"turn": 1, "metrics": {"test_metric": 50}}]
+    summary["total_turns"] = 1
+    summary["emerging_events"] = [
+        {
+            "id": "emergent_solar_storm",
+            "description": "A severe solar storm is trending.",
+            "first_turn": 1,
+            "last_turn": 2,
+        },
+        {"description": "Malformed entry without an id is dropped."},
+    ]
+    (temp_run_dir / "summary.json").write_text(json.dumps(summary, indent=2))
+
+    scenario, loaded_turn = load_run_state(temp_run_dir)
+
+    assert len(scenario.emerging_developments) == 1
+    dev = scenario.emerging_developments[0]
+    assert dev.id == "emergent_solar_storm"
+    assert dev.description.startswith("A severe solar storm")
+    assert dev.first_turn == 1
+    assert dev.last_turn == 2

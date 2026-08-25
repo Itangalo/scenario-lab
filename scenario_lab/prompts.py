@@ -3,7 +3,7 @@
 from pathlib import Path
 from typing import Optional, Any
 from .statements import render_ledger
-from .models import Scenario, Actor
+from .models import Scenario, build_expression_env, Actor
 import json
 from jinja2 import Template
 from jinja2.sandbox import SandboxedEnvironment
@@ -204,15 +204,48 @@ class PromptBuilder:
         """
         return self._render_system_prompt(prompt, actor_id)
 
+    # Marks the tracked section that _compose_notepad appends to the Game
+    # Master's notepad. Idempotency depends on the exact header string.
+    EMERGING_SECTION_HEADER = "## Emerging developments (tracked)"
+
+    def _compose_notepad(self) -> str:
+        """Render the notepad as the LLM steps should see it this turn.
+
+        The stored notepad is exactly what the metrics step wrote last turn.
+        When emergent events are enabled, a tracked section listing emerging
+        developments is appended on top, regenerated from
+        ``scenario.emerging_developments`` each time so it can never go stale:
+        if a model copies the section into its own notepad output, the stale
+        copy is stripped before the fresh one is added. The actor's prompt does
+        not render the notepad, so tracked developments reach actors only as
+        narrative traces written by the Game Master.
+        """
+        base = self.scenario.notepad.strip()
+        if self.EMERGING_SECTION_HEADER in base:
+            base = base.split(self.EMERGING_SECTION_HEADER)[0].rstrip()
+
+        developments = self.scenario.emerging_developments
+        cfg = self.scenario.config.emergent_events
+        if not (cfg.enabled and cfg.track_unfired) or not developments:
+            return base or "(Empty)"
+
+        lines = [self.EMERGING_SECTION_HEADER, ""]
+        for dev in developments:
+            note = dev.description.strip() or "(no description recorded)"
+            lines.append(
+                f"- `{dev.id}` -- first noted turn {dev.first_turn}, "
+                f"listed in {dev.appearances} turn(s) so far: {note}"
+            )
+        section = "\n".join(lines)
+        return f"{base}\n\n{section}" if base else section
+
     def _get_common_context(self, turn: int) -> dict[str, Any]:
         """Get context variables common to all prompts."""
         time_period = self._get_time_period(turn)
         metrics_json = self.scenario.metrics.to_json()
         world_state = self.scenario.world_state.narrative
-        
-        notepad = "(Empty)"
-        if self.scenario.notepad.strip():
-            notepad = self.scenario.notepad
+
+        notepad = self._compose_notepad()
 
         context = {
             "turn": turn,
@@ -228,6 +261,15 @@ class PromptBuilder:
             # available for the whole run as its own block.
             "background_context": self.scenario.context or "",
             "output_language": self.scenario.config.output_language,
+            # Lets templates branch on the emergent-events policy (for example
+            # to explain the tracked notepad section) without hardcoding any
+            # of its wording.
+            "emergent_events_enabled": self.scenario.config.emergent_events.enabled,
+            "has_emerging_developments": bool(
+                self.scenario.config.emergent_events.enabled
+                and self.scenario.config.emergent_events.track_unfired
+                and self.scenario.emerging_developments
+            ),
         }
         
         # Add current month information if possible (simple parsing)
@@ -269,7 +311,11 @@ class PromptBuilder:
         return system, user
 
     def build_actor_prompt(
-        self, actor_id: str, turn: int, triggered_events: list[dict]
+        self,
+        actor_id: str,
+        turn: int,
+        triggered_events: list[dict],
+        previous_actions: str = "",
     ) -> tuple[str, str]:
         """Build prompts for a specific actor.
 
@@ -277,6 +323,12 @@ class PromptBuilder:
             actor_id: ID of the actor
             turn: Current turn number
             triggered_events: List of events that occurred this turn
+            previous_actions: The actor's own response from the previous turn.
+                Empty on turn 1. Not rendered by the default template, but
+                supplied so scenario overrides can give an actor a memory of
+                its own last output -- the only durable record some scenarios
+                need (portfolios, tracked commitments) that the lossy
+                historical summary cannot provide.
 
         Returns:
             (system_prompt, user_prompt)
@@ -286,9 +338,10 @@ class PromptBuilder:
 
         # Get user template
         template = self._get_user_template("actor")
-        
+
         # Build context
         context = self._get_common_context(turn)
+        context["previous_actions"] = previous_actions
         
         # Add actor-specific context
         context["statement_ledger"] = ""
@@ -630,12 +683,31 @@ class PromptBuilder:
         return system_template.render(constitution=self.scenario.constitution)
 
     def _format_events_list(self) -> str:
-        """Format available events for events prompt."""
+        """Format available events for the events prompt.
+
+        Events carrying an `Eligible:` gate that evaluates false against the
+        current metrics are left out entirely: the model cannot list what it is
+        not shown, so deterministic thresholds never depend on prose discipline.
+        """
+        from .validator import eval_boolean_expression
+
         lines = []
         for event in self.scenario.events:
             # Skip already-occurred non-repeatable events
             if event.occurred and not event.can_repeat:
                 continue
+
+            if event.eligible:
+                try:
+                    if not eval_boolean_expression(event.eligible, build_expression_env(self.scenario)):
+                        continue
+                except (NameError, ValueError, TypeError, SyntaxError) as exc:
+                    # A broken expression must not silently hide an event; show
+                    # it and let validation surface the defect.
+                    print(
+                        f"  Warning: Eligibility expression for '{event.id}' "
+                        f"could not be evaluated ({exc}); event shown regardless."
+                    )
 
             lines.append(f"**{event.id}**")
             lines.append(f"- ID: {event.id}")

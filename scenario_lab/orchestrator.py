@@ -6,7 +6,7 @@ import re
 import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Protocol, Optional, Union, TYPE_CHECKING
-from .models import Scenario, TurnResult, WorldState, ModelRoute
+from .models import Scenario, TurnResult, WorldState, ModelRoute, EmergingDevelopment, build_expression_env
 from .prompts import PromptBuilder
 from .llm import LLMResponse, LLMParseError, LLMError, LLMUnsupportedStructuredError
 from .router import FallbackRouter
@@ -556,7 +556,78 @@ class Orchestrator:
         triggered, evaluations = self._evaluate_events(turn)
         if self.output_manager:
             self.output_manager.save_event_evaluations(turn, evaluations)
+        self._update_emerging_developments(turn, evaluations)
         return triggered
+
+    def _update_emerging_developments(self, turn: int, evaluations: list[dict]) -> None:
+        """Carry unfired emergent proposals forward as emerging developments.
+
+        Opt-in via ``emergent_events.track_unfired``; scenarios that enable only
+        emergent events keep their one-shot semantics. While tracking is on: a
+        proposal that did not fire stays on the books for up to
+        ``emergent_events.window_turns`` consecutive turns so later turns can
+        re-list it with an escalating probability; a proposal that fires
+        occurred and leaves the list; a proposal that is not repeated has
+        fizzled and is dropped. Python owns only this bookkeeping -- what a
+        development means, and how likely it is, stay with the LLM steps, which
+        read the tracked notepad section that prompts.py renders from this
+        list.
+        """
+        cfg = self.scenario.config.emergent_events
+        if not (cfg.enabled and cfg.track_unfired):
+            self.scenario.emerging_developments = []
+            return
+
+        proposed_now: dict[str, dict] = {}
+        fired_now: set[str] = set()
+        for entry in evaluations:
+            if not isinstance(entry, dict) or not entry.get("emergent"):
+                continue
+            event_id = entry.get("id")
+            if not isinstance(event_id, str):
+                continue
+            if entry.get("skipped"):
+                continue
+            if entry.get("triggered"):
+                fired_now.add(event_id)
+            else:
+                proposed_now[event_id] = entry
+
+        carried: list[EmergingDevelopment] = []
+        for dev in self.scenario.emerging_developments:
+            if dev.id in fired_now:
+                continue
+            if dev.id in proposed_now:
+                dev.last_turn = turn
+                carried.append(dev)
+            else:
+                print(f"  Emerging development fizzled: {dev.id}")
+
+        tracked_ids = {dev.id for dev in carried}
+        for event_id, entry in proposed_now.items():
+            if event_id in tracked_ids:
+                continue
+            description = entry.get("description")
+            carried.append(
+                EmergingDevelopment(
+                    id=event_id,
+                    description=description.strip() if isinstance(description, str) else "",
+                    first_turn=turn,
+                    last_turn=turn,
+                )
+            )
+
+        still_open: list[EmergingDevelopment] = []
+        for dev in carried:
+            if dev.appearances >= cfg.window_turns:
+                print(
+                    f"  Emerging development window closed without firing: "
+                    f"{dev.id} (listed {dev.appearances}x)"
+                )
+            else:
+                still_open.append(dev)
+
+        self.scenario.emerging_developments = still_open
 
     def _fetch_candidate_events(
         self, turn: int, system: str, user: str
@@ -722,6 +793,44 @@ class Orchestrator:
                 evaluation["triggered"] = False
                 evaluations.append(evaluation)
                 continue
+
+            if event_obj is not None:
+                # Deterministic eligibility gate: a candidate for an event whose
+                # declared `Eligible:` expression is false this turn is rejected
+                # regardless of the probability the model attached to it.
+                if event_obj.eligible:
+                    from .validator import eval_boolean_expression
+
+                    try:
+                        gate_open = eval_boolean_expression(
+                            event_obj.eligible, build_expression_env(self.scenario)
+                        )
+                    except (NameError, ValueError, TypeError, SyntaxError) as exc:
+                        print(
+                            f"  Warning: Eligibility expression for '{event_id}' "
+                            f"could not be evaluated ({exc}); treating gate as open."
+                        )
+                        gate_open = True
+                    if not gate_open:
+                        print(f"  Warning: Skipping '{event_id}': eligibility gate false this turn")
+                        evaluation = {key: value for key, value in event_data.items()}
+                        evaluation["skipped"] = (
+                            f"Eligibility gate false this turn: {event_obj.eligible}"
+                        )
+                        evaluation["triggered"] = False
+                        evaluations.append(evaluation)
+                        continue
+
+                # One-shot discipline: an already-occurred non-repeatable event
+                # is never re-rolled, no matter how insistently the model
+                # re-proposes it (the always-eligible contract names ids that
+                # outlive their own occurrence).
+                if event_obj.occurred and not event_obj.can_repeat:
+                    evaluation = {key: value for key, value in event_data.items()}
+                    evaluation["skipped"] = "Event already occurred and cannot repeat"
+                    evaluation["triggered"] = False
+                    evaluations.append(evaluation)
+                    continue
 
             if event_obj is not None:
                 # Keep artifacts tidy: drop the extended-contract filler fields
@@ -925,7 +1034,12 @@ class Orchestrator:
         def run_actor(actor_id: str) -> tuple[str, LLMResponse]:
             """Execute one actor prompt and return raw response."""
             client = get_client(actor_id)
-            system, user = self.prompt_builder.build_actor_prompt(actor_id, turn, triggered_events)
+            system, user = self.prompt_builder.build_actor_prompt(
+                actor_id,
+                turn,
+                triggered_events,
+                previous_actions=self.scenario.actors[actor_id].last_actions,
+            )
             response = client.complete(system, user)
             return actor_id, response
 
@@ -955,7 +1069,12 @@ class Orchestrator:
             # Get appropriate client for this actor
             client = get_client(actor_id)
 
-            system, user = self.prompt_builder.build_actor_prompt(actor_id, turn, triggered_events)
+            system, user = self.prompt_builder.build_actor_prompt(
+                actor_id,
+                turn,
+                triggered_events,
+                previous_actions=self.scenario.actors[actor_id].last_actions,
+            )
             response = client.complete(system, user)
             self._record_llm_call(turn, f"actor:{actor_id}", response)
             outputs[actor_id] = response.content

@@ -6,7 +6,7 @@ from pathlib import Path
 from typing import Optional, Tuple
 from datetime import datetime
 
-from .models import Scenario
+from .models import Scenario, EmergingDevelopment
 from .loader import load_scenario, get_time_period
 from .statements import parse_ledger_file, render_statements_file
 
@@ -231,6 +231,23 @@ def load_run_state(
             if event.id in scenario.occurred_events:
                 event.occurred = True
 
+    # 6b. Restore emerging developments (unfired emergent proposals carried
+    # forward), so a resumed or branched run keeps tracking what was in flight.
+    if "emerging_events" in summary and isinstance(summary["emerging_events"], list):
+        restored: list[EmergingDevelopment] = []
+        for entry in summary["emerging_events"]:
+            if not isinstance(entry, dict) or not isinstance(entry.get("id"), str):
+                continue
+            restored.append(
+                EmergingDevelopment(
+                    id=entry["id"],
+                    description=entry.get("description", ""),
+                    first_turn=int(entry.get("first_turn", from_turn)),
+                    last_turn=int(entry.get("last_turn", from_turn)),
+                )
+            )
+        scenario.emerging_developments = restored
+
     # 7. Apply state modifications if provided
     if state_modifications:
         if "metrics" in state_modifications:
@@ -371,6 +388,7 @@ def create_branch(
         "final_metrics": final_metrics,
         "history": new_history,
         "occurred_events": parent_summary.get("occurred_events", []),
+        "emerging_events": parent_summary.get("emerging_events", []),
         "status": "running",
         "last_updated": datetime.now().isoformat(),
         "metadata": {

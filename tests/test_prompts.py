@@ -363,3 +363,38 @@ def test_no_background_block_without_context(mock_scenario):
 
     assert "Fixed Background" not in user
 
+
+
+def test_actor_prompt_supplies_previous_actions(mock_scenario):
+    """previous_actions reaches the actor prompt when the template renders it."""
+    builder = PromptBuilder(mock_scenario)
+    previous = "## Portfolio\n\n`decided` — Test measure (category 4): on track"
+
+    # Default actor template does not render the variable.
+    _, user_default = builder.build_actor_prompt(
+        "actor1", turn=2, triggered_events=[], previous_actions=previous
+    )
+    assert "Test measure" not in user_default
+
+    # A scenario override that renders it gets a memory of the last output.
+    mock_scenario.custom_user_prompts["actor"] = (
+        "{% if previous_actions %}PREV: {{ previous_actions }}{% endif %}"
+        "Turn {{turn}}."
+    )
+    builder = PromptBuilder(mock_scenario)
+    _, user_override = builder.build_actor_prompt(
+        "actor1", turn=2, triggered_events=[], previous_actions=previous
+    )
+    assert "PREV:" in user_override
+    assert "Test measure" in user_override
+
+
+def test_actor_prompt_previous_actions_empty_on_first_turn(mock_scenario):
+    """With no previous response, the conditional block is omitted entirely."""
+    mock_scenario.custom_user_prompts["actor"] = (
+        "{% if previous_actions %}PREV: {{ previous_actions }}{% endif %}"
+        "Turn {{turn}}."
+    )
+    builder = PromptBuilder(mock_scenario)
+    _, user = builder.build_actor_prompt("actor1", turn=1, triggered_events=[])
+    assert "PREV:" not in user

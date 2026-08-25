@@ -345,6 +345,8 @@ class OutputManager:
             key=lambda x: x["turn"],
         )
 
+        emergent_cfg = self.scenario.config.emergent_events
+
         summary = {
             "scenario": self.scenario.config.name,
             "total_turns": current_turn,
@@ -354,6 +356,16 @@ class OutputManager:
             "last_updated": datetime.now().isoformat(),
             "status": "running",
         }
+        if emergent_cfg.enabled and emergent_cfg.track_unfired:
+            summary["emerging_events"] = [
+                {
+                    "id": dev.id,
+                    "description": dev.description,
+                    "first_turn": dev.first_turn,
+                    "last_turn": dev.last_turn,
+                }
+                for dev in self.scenario.emerging_developments
+            ]
 
         summary_path.write_text(
             json.dumps(summary, indent=2, ensure_ascii=False)
