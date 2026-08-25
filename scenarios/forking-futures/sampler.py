@@ -19,13 +19,13 @@ Scenario Lab never runs this script. You run it, deliberately, and then point
 
 Usage:
 
-    python3 sampler.py --count 17 --out draws
+    python3 sampler.py --count 20 --out draws
 
     # then one batch per arm -- never pooled into a single batch, because the
     # three arms answer "how do outcomes differ between regimes", which requires
     # them to stay separable
     python -m scenario_lab.cli batch-run scenarios/forking-futures \
-        --repeat 17 --initial-states scenarios/forking-futures/draws/fast
+        --repeat 20 --initial-states scenarios/forking-futures/draws/fast
 
 Runs within one arm are deliberately identical at the start. They diverge only
 through the event dice and through what the regulator chooses, which is what
@@ -102,7 +102,7 @@ def write_draws(out_root: Path, count: int) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "--count", type=int, default=17, help="draws per arm (default: 17, giving ~51 runs)"
+        "--count", type=int, default=20, help="draws per arm (default: 20, giving 60 runs)"
     )
     parser.add_argument(
         "--out", type=Path, default=Path(__file__).parent / "draws", help="output directory"
