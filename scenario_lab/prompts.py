@@ -284,6 +284,35 @@ class PromptBuilder:
             
         return context
 
+    def _format_event_history(self, turn: int) -> str:
+        """Chronological record of what has fired, one line per completed turn.
+
+        Gate conditions are windowed ("if X occurred in any of the previous 4
+        completed turns"), and until this existed the events step had to answer
+        that from the narrative and the historical summary -- prose that
+        condenses and loses dates. Giving it the record directly makes gate
+        judgments checkable rather than recalled.
+        """
+        if not self.scenario.event_log:
+            return ""
+        by_turn: dict[int, list[str]] = {}
+        for entry in self.scenario.event_log:
+            entry_turn = entry.get("turn")
+            event_id = entry.get("id")
+            if not isinstance(entry_turn, int) or not isinstance(event_id, str):
+                continue
+            if entry_turn >= turn:  # only completed turns count for windows
+                continue
+            ids = by_turn.setdefault(entry_turn, [])
+            if event_id not in ids:
+                ids.append(event_id)
+        if not by_turn:
+            return ""
+        return "\n".join(
+            f"- Turn {t} ({turn - t} turn(s) ago): " + ", ".join(by_turn[t])
+            for t in sorted(by_turn)
+        )
+
     def build_events_prompt(self, turn: int) -> tuple[str, str]:
         """Build system and user prompts for events step.
 
@@ -299,6 +328,7 @@ class PromptBuilder:
         # Build context
         context = self._get_common_context(turn)
         context["events_list"] = self._format_events_list()
+        context["event_history"] = self._format_event_history(turn)
 
         emergent = self.scenario.config.emergent_events
         context["emergent_events_enabled"] = emergent.enabled

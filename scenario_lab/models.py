@@ -519,6 +519,11 @@ class Scenario:
     # History
     turn_history: list[TurnResult] = field(default_factory=list)
     occurred_events: set[str] = field(default_factory=set)
+    # Turn-stamped companion to occurred_events: [{"turn": int, "id": str}, ...]
+    # in fire order. Gate conditions are written in terms of windows ("in any of
+    # the previous 4 completed turns"), which a set cannot answer, so the events
+    # step is given this rather than being left to recall dates from prose.
+    event_log: list[dict] = field(default_factory=list)
 
     # Emergent proposals that have not fired yet and are being carried forward
     # as emerging developments (see ARCHITECTURE.md).

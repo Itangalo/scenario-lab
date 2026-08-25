@@ -353,6 +353,7 @@ class OutputManager:
             "final_metrics": latest_metrics,
             "history": history,
             "occurred_events": list(self.scenario.occurred_events),
+            "event_log": list(self.scenario.event_log),
             "last_updated": datetime.now().isoformat(),
             "status": "running",
         }
@@ -451,6 +452,7 @@ class OutputManager:
                 "final_metrics": final_metrics,
                 "history": history,
                 "occurred_events": occurred_events,
+                "event_log": list(self.scenario.event_log),
                 "completed_at": datetime.now().isoformat(),
                 "status": "completed",
             }

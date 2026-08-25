@@ -42,6 +42,21 @@ The list of potential external events looks like this:
 
 {{events_list}}
 
+{% if event_history %}
+---
+
+## What has actually fired so far
+
+This is the run's own record, not a summary of it. Judge any condition that
+depends on what has happened — gate windows above all — against this list and
+nothing else. The narrative and the historical summary condense and lose dates;
+they are not evidence that an event occurred, and atmosphere is not an event.
+
+{{event_history}}
+
+Windows are counted in completed turns and exclude the current one.
+{% endif %}
+
 ---
 
 Use the background information to determine which external events can occur in this turn. If the probability is specified as a formula or description, you should calculate the actual value.
