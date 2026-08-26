@@ -189,6 +189,9 @@ def describe_scenario(
         },
         "custom_system_prompts": sorted(scenario.custom_system_prompts),
         "custom_user_prompts": sorted(scenario.custom_user_prompts),
+        "patches": [
+            {"resource": p.resource, "path": p.path} for p in config.patches
+        ],
         "background_files": background_files,
         "variants": variants,
         "runs": {"total": total_runs, "completed": completed_runs},
@@ -303,6 +306,10 @@ def format_describe_report(overview: dict[str, Any]) -> str:
     lines.append("## Files and Runs")
     lines.append("")
     lines.append(f"- Background files: {len(overview['background_files'])}")
+    if overview.get("patches"):
+        lines.append("- Resource patches:")
+        for patch in overview["patches"]:
+            lines.append(f"    - {patch['resource']}: {patch['path']}")
     if overview["custom_system_prompts"] or overview["custom_user_prompts"]:
         overrides = sorted(
             set(overview["custom_system_prompts"]) | set(overview["custom_user_prompts"])

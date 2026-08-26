@@ -560,6 +560,9 @@ class OutputManager:
                     for key, limits in self.scenario.config.llm.model_limits.items()
                 },
             },
+            "patches": [
+                {"resource": p.resource, "path": p.path} for p in self.scenario.config.patches
+            ],
             "emergent_events": {
                 "enabled": self.scenario.config.emergent_events.enabled,
                 "max_per_turn": self.scenario.config.emergent_events.max_per_turn,

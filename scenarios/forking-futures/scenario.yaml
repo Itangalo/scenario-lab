@@ -1,3 +1,12 @@
+# Forking Futures: one regulator, three possible speeds of AI development, and
+# instruments too slow for the windows they have to hit.
+#
+# This file is the SHARED PHYSICS and is not itself a run target: the trajectory
+# arms (fast / plateau / rlvr-limited) and their urgent-regulator siblings live
+# in variants/, each carrying its regime's figures as resource patches. Run
+# them with batch-run --variants. The events.md and metric-rules.md branched
+# text below remains as the historical record of where every patched figure
+# came from; runs before 2026-08-26 also drew their regime from draws/.
 name: "Forking Futures"
 description: "One regulator, three possible speeds of AI development, and instruments too slow for the windows they have to hit. Explores which kinds of regulation and policy hold up across futures that develop very differently, and which developments are worth monitoring as early signals."
 start_date: "2026-07"
@@ -5,11 +14,6 @@ time_scale: "6 months per turn"
 max_turns: 18
 
 output_language: "English"
-
-# The trajectory regime is the experimental variable and is supplied per run by
-# sampler.py. Without a draw there is no regime, and the run answers nothing.
-# Make that a hard error rather than a silently pooled result.
-requires_initial_state: true
 
 actors:
   - regulator

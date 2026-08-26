@@ -1,0 +1,12 @@
+# RLVR-LIMITED trajectory arm. See fast.yaml for the patching rationale.
+
+base: "../scenario.yaml"
+
+name: "Forking Futures — RLVR-Limited"
+description: "Trajectory arm. General competence saturates early, but domains with verifiable reward — code, mathematics, cyber, narrow engineering — keep improving sharply. Identical physics and instruments to the other arms; only where improvement lands differs."
+
+patches:
+  - resource: events
+    path: rlvr-limited.events.patch.md
+  - resource: metric_rules
+    path: rlvr-limited.rules.patch.md

@@ -1,0 +1,12 @@
+# PLATEAU trajectory arm. See fast.yaml for the patching rationale.
+
+base: "../scenario.yaml"
+
+name: "Forking Futures — Plateau"
+description: "Trajectory arm. Progress decelerates visibly: models become reliable, cheap and widely deployed while returns to scaling decline. Nothing superhuman arrives within the horizon. Identical physics and instruments to the other arms; only the world's speed differs."
+
+patches:
+  - resource: events
+    path: plateau.events.patch.md
+  - resource: metric_rules
+    path: plateau.rules.patch.md

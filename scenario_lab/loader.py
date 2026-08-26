@@ -10,6 +10,7 @@ from typing import Union, Optional, List
 from .models import (
     ModelRoute,
     ModelLimits,
+    ResourcePatch,
     Scenario,
     ScenarioConfig,
     LLMConfig,
@@ -468,6 +469,15 @@ def load_scenario(
     # Load initial metric rules
     metric_rules = (scenario_dir / "metric-rules.md").read_text(encoding="utf-8")
 
+    # Apply variant resource patches in declaration order (base's patches
+    # first, the variant's own last).
+    from .resource_patches import apply_resource_patch
+
+    for patch in config.patches:
+        events, metric_rules = apply_resource_patch(
+            patch.resource, events, metric_rules, Path(patch.path)
+        )
+
     # Load constitutional constraints if present (optional)
     constitution = None
     constitution_path = scenario_dir / "constitution.md"
@@ -636,6 +646,11 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
 
     data = yaml.safe_load(path.read_text(encoding="utf-8"))
 
+    # Patches are inherited by extension, not deep_merge: a variant appends its
+    # own to its base's, each resolved relative to the file declaring it.
+    child_patch_specs = data.pop("patches", None)
+    base_patches: List[ResourcePatch] = []
+
     # Check for base scenario
     if "base" in data:
         base_path_str = data.pop("base")  # Remove 'base' from data
@@ -663,15 +678,14 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         if not base_path.exists():
             raise FileNotFoundError(f"Base scenario not found: {base_path}")
 
-        # Load base configuration
-        base_config_dict = yaml.safe_load(base_path.read_text(encoding="utf-8"))
+        # Always load the base through load_config so multi-level inheritance
+        # (a variant whose base is another variant) resolves nested bases and
+        # patch paths correctly.
+        base_config = load_config(base_path, _loading_stack)
+        base_patches: List[ResourcePatch] = list(base_config.patches)
 
-        # Recursively handle base's base (multi-level inheritance)
-        if "base" in base_config_dict:
-            # Load base's config through load_config to handle its inheritance
-            base_config = load_config(base_path, _loading_stack)
-            # Convert back to dict for merging
-            base_config_dict = {
+        # Convert back to dict for merging
+        base_config_dict = {
                 "name": base_config.name,
                 "description": base_config.description,
                 "start_date": base_config.start_date,
@@ -844,7 +858,44 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         rule_evolution=rule_evolution,
         constitutional_enforcement=constitutional_enforcement,
         logging=logging_config,
+        patches=[*base_patches, *resolve_patch_specs(child_patch_specs, path.parent)],
     )
+
+
+def resolve_patch_specs(specs: object, base_dir: Path) -> List[ResourcePatch]:
+    """Validate and resolve a variant's ``patches:`` YAML to absolute paths."""
+    from .resource_patches import PATCHABLE_RESOURCES
+
+    if specs is None:
+        return []
+    if not isinstance(specs, list):
+        raise ValueError("patches must be a list of {resource, path} mappings")
+
+    resolved: List[ResourcePatch] = []
+    for index, spec in enumerate(specs):
+        if (
+            not isinstance(spec, dict)
+            or set(spec.keys()) != {"resource", "path"}
+            or not isinstance(spec.get("resource"), str)
+            or not isinstance(spec.get("path"), str)
+        ):
+            raise ValueError(
+                f"patches[{index}] must be a mapping with exactly 'resource' and "
+                f"'path' string keys, got {spec!r}"
+            )
+        resource = spec["resource"]
+        if resource not in PATCHABLE_RESOURCES:
+            raise ValueError(
+                f"patches[{index}]: unknown patchable resource '{resource}'; "
+                f"allowed: {list(PATCHABLE_RESOURCES)}"
+            )
+        patch_path = (base_dir / spec["path"]).resolve()
+        if not patch_path.is_file():
+            raise FileNotFoundError(
+                f"patches[{index}]: patch file not found: {patch_path}"
+            )
+        resolved.append(ResourcePatch(resource=resource, path=str(patch_path)))
+    return resolved
 
 
 def load_metrics(path: Path) -> Metrics:

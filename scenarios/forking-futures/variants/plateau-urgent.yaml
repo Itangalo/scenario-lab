@@ -1,0 +1,9 @@
+# Urgent disposition on the PLATEAU arm. Inherits the arm's physics patches via
+# base; only identity and the actor file differ.
+
+base: "plateau.yaml"
+
+name: "Forking Futures — Plateau (Urgent Regulator)"
+description: "Urgent-regulator condition on the PLATEAU arm: same world and physics as Forking Futures — Plateau, but the regulator is told that preventing large-scale societal harm is what it exists for, and that it may break precedent to do so."
+actors:
+  - regulator-urgent

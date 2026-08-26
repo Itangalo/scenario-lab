@@ -483,18 +483,29 @@ stall. All three stay open for the full batch.
 - The numbers are framework-generated. This is scenario exploration, not
   evidence synthesis and not calibrated forecasting.
 
-## Populations and variants (25 August)
+## Populations and variants (updated 26 August)
 
-- The urgent-regulator condition lives at `variants/urgent.yaml`. Its runs pool
-  into this scenario's `runs/` by design; each run's `config.json` records its
-  population, so keep them apart with the cohort mechanics: `--filter
-  actors=regulator-urgent` for the variant alone, `--filter arm=fast --group-by
-  scenario` for a within-regime disposition contrast.
-- Converting the three trajectory arms into variants was considered and
-  deferred. Draws remain the right vehicle for them (the regime text rides in
-  the draw's `initial_state.context`, which a variant cannot carry today), and
-  conversion would split provenance across the existing runs. Revisit if a
-  fourth condition is added or the arms are re-batched at scale.
+- The trajectory arms are now **variants**, not draws: `variants/fast.yaml`,
+  `plateau.yaml`, `rlvr-limited.yaml`, each carrying its regime's figures as
+  resource patches over the shared physics, plus three urgent-disposition
+  siblings chained on them (`fast-urgent.yaml` etc.). One
+  `batch-run scenarios/forking-futures --variants --repeat N` covers all six.
+- Why: an audit of all runs up to 2026-08-26 showed evaluated event
+  probabilities *converging* across arms instead of tracking their declared
+  per-regime figures (e.g. ai_market_crash evaluated ~4–5% everywhere against
+  declared 12/25/18) — the tri-regime prose depended on the events model
+  picking the right column every turn, and it mostly didn't. Flat per-arm
+  figures remove that failure mode; the old branched text stays in
+  `events.md`/`metric-rules.md` as the record of where each patched figure
+  came from. `sampler.py` and `draws/` are retired for new runs (kept as
+  provenance for runs before this date).
+- Two provenance eras, accepted: runs before 2026-08-26 carry `arm=...` in
+  `initial_state.notes` and one scenario identity for base + one for the old
+  sibling-style urgent batch; runs after carry the arm in their scenario name
+  (`Forking Futures — Fast`, `— Plateau (Urgent Regulator)`, …). Group old
+  runs by `arm`, new runs by `scenario`.
+- `rsi_onset` keeps its id in plateau/rlvr with a permanently-false gate so
+  research questions and cross-arm statistics stay comparable.
 
 ## Open
 

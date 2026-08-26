@@ -1,0 +1,17 @@
+# FAST trajectory arm. Same physics file as every other arm -- these patches
+# carry this run's regime figures directly, replacing the shared branched text,
+# so each probability below is unambiguous instead of one column among three.
+#
+# Runs land in this scenario's runs/ alongside every other arm and the urgent
+# variants; config.json identity separates populations.
+
+base: "../scenario.yaml"
+
+name: "Forking Futures — Fast"
+description: "Trajectory arm. AI progress compounds through the whole horizon: rapid, accelerating, with recursive self-improvement a live prospect in the second half. Identical physics and instruments to the other arms; only the world's speed differs."
+
+patches:
+  - resource: events
+    path: fast.events.patch.md
+  - resource: metric_rules
+    path: fast.rules.patch.md

@@ -509,6 +509,21 @@ def validate_event_probabilities(scenario: Scenario) -> Tuple[List[str], List[st
     warnings = []
     valid_metric_ids = set(scenario.metrics.metrics.keys())
 
+    # Regime-flag gates (is_fast etc.) resolve from the run's starting context.
+    # Without a draw they are all 0, so a flag gate in a scenario that no longer
+    # takes draws would silently make the event permanently ineligible.
+    if not scenario.config.requires_initial_state and "REGIME:" not in (
+        scenario.context or ""
+    ):
+        _FLAG_RE = re.compile(r"\bis_(?:fast|plateau|rlvr_limited)\b")
+        for event in scenario.events:
+            if event.eligible and _FLAG_RE.search(event.eligible):
+                warnings.append(
+                    f"Event '{event.id}' gate references a regime flag "
+                    f"(is_fast/is_plateau/is_rlvr_limited) but the scenario runs "
+                    "without starting-state draws – the gate will always be false"
+                )
+
     for event in scenario.events:
         prob = event.probability
 

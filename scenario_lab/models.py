@@ -500,6 +500,21 @@ class TerminationCondition:
 
 
 @dataclass
+@dataclass
+class ResourcePatch:
+    """A partial override of one base-scenario resource, declared by a variant.
+
+    `resource` names the patchable resource ("events", "metric_rules"); `path`
+    points at the patch file, resolved absolute relative to the YAML file that
+    declared it. Patches apply in order after the base resources load; a variant
+    inherits its base's patches and appends its own.
+    """
+
+    resource: str
+    path: str
+
+
+@dataclass
 class ScenarioConfig:
     """Scenario configuration with optional inheritance."""
 
@@ -525,6 +540,11 @@ class ScenarioConfig:
 
     # Conditions that end a run before max_turns (evaluated after each turn).
     termination: list[TerminationCondition] = field(default_factory=list)
+
+    # Variant resource patches (set from YAML `patches:`, paths resolved
+    # absolute during loading). Applied in order after the base scenario's
+    # resources load; a variant inherits its base's patches and appends its own.
+    patches: List["ResourcePatch"] = field(default_factory=list)
 
     # Some scenarios are incoherent without a starting-state draw (for example
     # one whose world begins with an election result supplied per run). Setting

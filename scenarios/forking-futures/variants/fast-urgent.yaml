@@ -1,0 +1,10 @@
+# Urgent disposition on the FAST arm. Inherits the arm's physics patches via
+# base; only identity and the actor file differ. The actor file lives in the
+# base scenario's background/actors/ because variant resources resolve there.
+
+base: "fast.yaml"
+
+name: "Forking Futures — Fast (Urgent Regulator)"
+description: "Urgent-regulator condition on the FAST arm: same world and physics as Forking Futures — Fast, but the regulator is told that preventing large-scale societal harm is what it exists for, and that it may break precedent to do so."
+actors:
+  - regulator-urgent

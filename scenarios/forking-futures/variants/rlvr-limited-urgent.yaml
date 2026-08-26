@@ -1,0 +1,9 @@
+# Urgent disposition on the RLVR-LIMITED arm. Inherits the arm's physics
+# patches via base; only identity and the actor file differ.
+
+base: "rlvr-limited.yaml"
+
+name: "Forking Futures — RLVR-Limited (Urgent Regulator)"
+description: "Urgent-regulator condition on the RLVR-LIMITED arm: same world and physics as Forking Futures — RLVR-Limited, but the regulator is told that preventing large-scale societal harm is what it exists for, and that it may break precedent to do so."
+actors:
+  - regulator-urgent
