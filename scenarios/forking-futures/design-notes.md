@@ -483,6 +483,19 @@ stall. All three stay open for the full batch.
 - The numbers are framework-generated. This is scenario exploration, not
   evidence synthesis and not calibrated forecasting.
 
+## Populations and variants (25 August)
+
+- The urgent-regulator condition lives at `variants/urgent.yaml`. Its runs pool
+  into this scenario's `runs/` by design; each run's `config.json` records its
+  population, so keep them apart with the cohort mechanics: `--filter
+  actors=regulator-urgent` for the variant alone, `--filter arm=fast --group-by
+  scenario` for a within-regime disposition contrast.
+- Converting the three trajectory arms into variants was considered and
+  deferred. Draws remain the right vehicle for them (the regime text rides in
+  the draw's `initial_state.context`, which a variant cannot carry today), and
+  conversion would split provenance across the existing runs. Revisit if a
+  fourth condition is added or the arms are re-batched at scale.
+
 ## Open
 
 See `constraint-ledger.md`: what counts as a good outcome (O1), lead times per
