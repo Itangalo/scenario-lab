@@ -42,9 +42,14 @@ llm:
   temperature: 0.7
   max_tokens: 3000
   # Analysis and synthesis read a whole run (or the whole ensemble) and are the
-  # only steps a reasoning model is used for here. At the 3000 the turn steps
-  # need, stealth/ox-alpha spends the entire budget on reasoning and returns no
-  # content; 32000 is the budget it was tested at in docs/MODEL_TESTING.md.
+  # only steps a reasoning model is used for here. The 3000 the turn steps need
+  # is far too small for them: a reasoning model can spend that entire budget on
+  # reasoning and return no content at all. 32000 leaves room for both.
+  #
+  # These two tasks are also the ones worth spending a better model on than the
+  # turn steps use, and the model is not pinned here. Pass --analysis-model and
+  # --model to `synthesize` deliberately; without them both fall back to the
+  # turn-step model above.
   max_tokens_by_task:
     analysis: 32000
     synthesis: 32000

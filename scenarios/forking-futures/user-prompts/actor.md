@@ -1,18 +1,17 @@
-{# Scenario override. Two deviations from templates/user-prompts/actor.md:
-   1. Both background_context and world_state are truncated at the <!-- GM-ONLY -->
-      marker. The starting-state draw places this run's trajectory regime after
-      that marker, so the Game Master steps see which future the run is in and
-      the regulator does not. Without this the regime would reach the actor
-      through the fixed background and through the turn-1 narrative, and the
-      scenario's central question -- how a regulator commits capital before it
-      knows -- would collapse.
-   2. The actor's own previous response is rendered as "Your previous response".
-      The regulator has no other memory substrate: the notepad is Game-Master-
-      only and the historical summary is a lossy condensation. In prototype runs
-      without this block the Portfolio silently shed, renamed and reinvented
-      measures between turns, which corrupts every measure-status mechanic
-      (capital drain, lead times, fully-implemented effects) and the category
-      grouping that rq_no_regret depends on.
+{# Scenario override. One deviation from templates/user-prompts/actor.md:
+   The actor's own previous response is rendered as "Your previous response".
+   The regulator has no other memory substrate: the notepad is Game-Master-only
+   and the historical summary is a lossy condensation. In prototype runs without
+   this block the Portfolio silently shed, renamed and reinvented measures
+   between turns, which corrupts every measure-status mechanic (capital drain,
+   lead times, fully-implemented effects) and the category grouping that
+   rq_no_regret depends on.
+
+   The regime is not hidden here any more. It reaches the Game Master through
+   the variant's patched events and metric_rules, which are never rendered into
+   an actor prompt, so there is nothing for this template to withhold. The
+   <!-- GM-ONLY --> truncation this override used to carry is gone with the
+   draws it was written for.
    Keep in sync with the default template when that changes. #}
 {% if background_context %}
 ## Fixed Background (unchanged all run)
@@ -21,7 +20,7 @@ This is the world as it stood at the start. It does not change, and it outranks
 the evolving narrative on any fact it states — if the narrative drifts away from
 something fixed here, the narrative is wrong.
 
-{{ background_context.split('<!-- GM-ONLY -->')[0] }}
+{{ background_context }}
 
 {% endif %}It is now turn {{turn}} which covers {{time_period}}.
 
@@ -39,7 +38,7 @@ The world state at the start of the turn is described as follows:
 {% endif %}
 
 ## Current Situation ({{time_period_lower}})
-{{ world_state.split('<!-- GM-ONLY -->')[0] }}
+{{ world_state }}
 
 ---
 

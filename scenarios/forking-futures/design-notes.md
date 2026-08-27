@@ -47,7 +47,7 @@ says what was changed and why.
 
 The regime must reach the Game Master and stay away from the regulator, which exists to infer it from what happens. Since the arms became variants this is structural rather than defensive: each variant patches `events` and `metric_rules` with its own figures, and neither resource is ever rendered into the actor prompt. There is no regime text sitting in `background_context` or `world_state` for the actor to see, so there is nothing to truncate.
 
-The `<!-- GM-ONLY -->` marker is retired and must not be used for new work. It solved the draws-era problem: a draw's context reached every prompt including the actor's, so the regime paragraph was placed behind the marker and `user-prompts/actor.md` truncated the actor's view at it. `sampler.py` and `draws/` keep the marker as provenance for runs before 2026-08-26. The two Jinja `.split()` calls survive in the actor override and are now inert, since nothing they read contains the marker.
+The `<!-- GM-ONLY -->` marker is retired and must not be used for new work. It solved the draws-era problem: a draw's context reached every prompt including the actor's, so the regime paragraph was placed behind the marker and `user-prompts/actor.md` truncated the actor's view at it. Variants made it unnecessary and it has been removed from the actor override. Verified before removing: no variant's `context` or `world_state` contains the marker, every arm's resolved events and metric rules mention only its own regime label (so the Game Master no longer picks a column and needs no secret), and the rendered actor prompts are byte-identical before and after the removal. `sampler.py` and `draws/` still contain the marker as provenance for runs before 2026-08-26; anything rerun from those draws would need the truncation back.
 
 ### The channel the marker never covered (found 27 August) (ECHO 2026-08-27)
 
@@ -500,6 +500,4 @@ stall. All three stay open for the full batch.
 
 ## Open
 
-See `constraint-ledger.md`: what counts as a good outcome (O1), lead times per
-measure type (O2), whether the world is too passive with one actor (O3). Runs
-per arm is set by `sampler.py --count`, currently 17 (≈51 runs, ≈$8 total).
+See `constraint-ledger.md`: what counts as a good outcome (O1), lead times per measure type (O2), whether the world is too passive with one actor (O3). Runs per arm is now set by how many times the batch repeats each variant, not by `sampler.py --count`: `batch-run` the variant files with `--repeat N`, or list them explicitly when the arms need different counts. At 18 turns a run costs roughly $0.11, so 20 per arm across the six variants is about $13. (ECHO 2026-08-27)

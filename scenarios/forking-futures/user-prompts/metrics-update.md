@@ -1,13 +1,13 @@
 {# Scenario override. Identical to templates/user-prompts/metrics-update.md except for
    two additions, both after the notepad block:
    1. A hard ban on writing the uppercase regime labels (FAST, PLATEAU,
-      RLVR-LIMITED) anywhere in the Narrative. The GM knows this run's regime and
-      applies its metric rules, but from turn 2 onward the narrative IS the world
-      state the regulator reads, and the <!-- GM-ONLY --> truncation in the actor
-      override only protects the turn-1 context. In four plateau runs the labels
-      leaked into the narrative in seven turns; the referee caught some, missed
-      others, and ran out of attempts once. Prevention at the source is the only
-      reliable layer.
+      RLVR-LIMITED) anywhere in the Narrative. The GM knows this run's regime
+      because the variant's patched metric rules state it, but from turn 2
+      onward the narrative IS the world state the regulator reads, so the
+      narrative is the one channel that carries the regime to the actor. In
+      four plateau runs the labels leaked into the narrative in seven turns;
+      the referee caught some, missed others, and ran out of attempts once.
+      Prevention at the source is the only reliable layer.
    2. Guidance for treating tracked emerging developments as faint narrative
       signals rather than events.
    Keep in sync with the default template when that changes. #}
