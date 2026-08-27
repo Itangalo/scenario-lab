@@ -20,24 +20,74 @@ output_language: "English"
 actors:
   - regulator
 
-research_questions:
-  - id: rq_early_vs_reactive
-    question: "Do early, broad interventions beat reactive ones in outcomes — in which regimes, and under what conditions?"
-    metrics: [regulatory_capacity, incident_pressure, us_capability, public_sentiment_to_ai]
-    events: [negotiation_window, cyber_mass_campaign, bio_incident, capability_jump, algorithmic_bias_scandal]
-    notes: "The central question. Compare runs by when the regulator first committed capital to a measure class against when an incident of that class landed."
+# Outcome criteria (analyst-side, not simulation-side)
+#
+# The simulation does not need to know what "good" means; outcome evaluation
+# happens post-hoc, as in RDM. Satisficing floors rather than a weighted
+# composite: any weighting of sentiment against economy is indefensible, and a
+# reader who disagrees with the weights dismisses the finding. Floors survive
+# disagreement about priorities. Popper (2019) uses the same construction --
+# a case counts as successful only if it clears every floor.
+#
+# Four dimensions, each with a floor. Thresholds are first guesses and are to be
+# calibrated against the distribution of the 60-run batch before anything is
+# reported (constraint-ledger O1).
+#
+#   harm            integral of incident_pressure over all 18 turns, not the
+#                   endpoint -- how long the world spent in crisis, not where it
+#                   happened to land. Floor: below the batch median.
+#   steerability    regulatory_capacity at the final turn. Can the polity still
+#                   act? A calm world that has lost the capacity to act is
+#                   fragile, not safe. Floor: not below its start value of 50.
+#   economy         economic_context at the final turn. A floor, not a maximand:
+#                   it is shock-driven and measures luck as much as competence.
+#                   Floor: >= 45.
+#   legitimacy      public_sentiment_to_ai at the final turn. Also a floor and
+#                   deliberately NOT a maximand: if AI is genuinely dangerous,
+#                   low sentiment may be the correct public response, and high
+#                   sentiment in a dangerous world is a failure of perception.
+#                   What matters is whether the polity retains enough consent to
+#                   sustain any policy at all. Floor: >= 20.
+#
+# Most favourable  = clears all four floors.
+# Least favourable = fails two or more.
+#
+# us_capability, cn_capability and openweight_gap are deliberately NOT outcome
+# measures. Capability is the regime's driving variable; treating low capability
+# as success would confuse slow progress with safety. The gap is a structural
+# condition. Both are reported as descriptors of a run, never as scores.
+#
+# Attribution discipline: events are exogenous dice, measures are the
+# regulator's choices, and at n=60 neither can be causally separated from the
+# other. Report the event profile -- which events occurred, not how many -- and
+# the measure portfolio side by side, and say plainly that co-occurrence is not
+# attribution. Profiles, not counts: a taiwan_blockade and an
+# algorithmic_bias_scandal are not interchangeable units.
 
-  - id: rq_early_signals
-    question: "Which precursor developments precede the largest divergences between runs, and are therefore worth monitoring?"
-    metrics: [incident_pressure, economic_context, openweight_gap, public_sentiment_to_ai]
-    events: [cyber_recon_wave, bio_uplift_findings, taiwan_tension_rise, eval_anomaly_reports, funding_round_pulled, whistleblower_disclosure, agent_misconduct_disclosure, datacenter_protest_wave]
-    notes: "Produces the draft indicator set. Report which precursors actually preceded escalations and which fired without consequence — the false-positive rate is part of the answer."
+research_questions:
+  - id: rq_favourable_profile
+    question: "Which event profiles and which measure portfolios characterise the most favourable outcomes within each arm, and which of them recur across all three arms?"
+    metrics: [incident_pressure, regulatory_capacity, economic_context, public_sentiment_to_ai]
+    events: [cyber_mass_campaign, bio_incident, taiwan_blockade, capability_jump, rsi_onset, ai_market_crash, open_weight_frontier_release, negotiation_window, alliance_bloc_forms, information_integrity_crisis]
+    notes: "Scenario discovery, favourable half. Take the runs clearing all four floors and describe what they have in common -- as a profile of which events fired and which measure categories were in force, not as a count. Anything recurring across all three arms is a candidate for rq_no_regret. Report the emergent events separately from the catalogue events: the emergent ones carry no authored gates and are the only genuinely exploratory material here."
 
   - id: rq_no_regret
-    question: "Are there no-regret packages: combinations of measures that are never worse and often better across all three trajectory regimes?"
-    metrics: [regulatory_capacity, incident_pressure, openweight_gap, economic_context]
-    events: [capability_jump, ai_market_crash, open_weight_frontier_release, rsi_onset]
-    notes: "Group measures by their category tag before comparing. A package that only pays off in one regime is not no-regret, however strongly it pays off there."
+    question: "Are there measures or combinations of measures that clear the acceptability floors in every arm, rather than paying off strongly in one?"
+    metrics: [incident_pressure, regulatory_capacity, economic_context, public_sentiment_to_ai]
+    events: [capability_jump, ai_market_crash, open_weight_frontier_release, rsi_onset, taiwan_blockade]
+    notes: "Robustness in the RDM sense: satisficing across regimes, not optimising within one. Group measures by category tag before comparing. A package that pays off strongly in one arm and fails a floor in another is not no-regret, however large the payoff. State the null result if there is one -- finding no robust package is a real finding about the difficulty of the problem."
+
+  - id: rq_proactive_vs_reactive
+    question: "Do bets on anticipatory measures pay off compared with reacting after an incident of the same class has landed?"
+    metrics: [regulatory_capacity, incident_pressure, economic_context]
+    events: [cyber_mass_campaign, bio_incident, capability_jump, agent_supply_chain_compromise, taiwan_blockade]
+    notes: "The decision problem the scenario exists for. Compare when the regulator first committed capital to a measure class against when an incident of that class landed. Caveat to state in any write-up: constitutional rule 6 hard-codes that anticipatory action always costs more political capital than the same action taken reactively, so the cost side is authored. What is not authored is whether the payoff exceeds that cost over 18 turns, and in which arms."
+
+  - id: rq_adverse_profile
+    question: "Which event profiles and which measure portfolios characterise the least favourable outcomes within each arm, and which of them recur across all three arms?"
+    metrics: [incident_pressure, regulatory_capacity, economic_context, public_sentiment_to_ai]
+    events: [cyber_mass_campaign, bio_incident, taiwan_blockade, rsi_onset, ai_market_crash, open_weight_frontier_release, agent_supply_chain_compromise, information_integrity_crisis, covert_defection, chip_export_escalation]
+    notes: "Scenario discovery, adverse half, and the mirror of rq_favourable_profile -- the contrast between the two is more informative than either alone. incident_pressure belongs here as an outcome, not merely as a symptom: sustained realised harm is itself the bad outcome. Watch for measure portfolios that appear in both the favourable and adverse sets; those are measures whose value is contingent on something else, and identifying that something is the useful result."
 
 llm:
   model: "openrouter:qwen/qwen3-235b-a22b-2507"
