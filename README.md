@@ -181,6 +181,22 @@ python -m scenario_lab.cli branch scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHM
 
 A branch keeps its parent's `random_seed` by default (so shared turns reproduce identically); pass `--seed INT` to override it. For controlled event counterfactuals, use repeatable `--force-event EVENT_ID` and `--suppress-event EVENT_ID`. These apply to the first turn executed in the branch: forced events trigger regardless of probability, suppressed events never trigger. The overrides are recorded in the new run's `config.json` and marked in `1-event-evaluations.json`.
 
+### Sample an actor's choice under identical conditions
+
+```bash
+python -m scenario_lab.cli sample-actor scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --turn 4 --samples 10
+python -m scenario_lab.cli sample-actor scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --turn 4 --actor government --temperature 1.0
+python -m scenario_lab.cli sample-actor scenarios/sweden-ai-2030/runs/run-YYYYMMDD-HHMMSS --turn 4 --events-from scenarios/sweden-ai-2030/runs/run-OTHER
+python -m scenario_lab.cli sample-actor scenarios/sweden-ai-2030 --turn 1 --samples 10
+python -m scenario_lab.cli sample-actor scenarios/forking-futures/variants/plateau.yaml --turn 1 --samples 10
+```
+
+`sample-actor` answers "what would this actor have done here", where `branch` answers "what futures follow from here". It rebuilds the actor prompt for one situation and sends it N times. For turn N >= 2 that situation is an already-simulated turn: state as of the end of turn N-1, plus turn N's recorded events. Turn 1 is the opening move, where the actor acts on the scenario's initial state, so it can be sampled from a scenario or variant directly – before a single run exists.
+
+Use it instead of N branches when you want the distribution of an actor's choices rather than their consequences. Branching cannot hold conditions fixed: the events step runs *before* the actor and makes its own LLM call, so with emergent events enabled each branch hands its actor a slightly different situation, and any variation in choices is confounded with that. Here the prompt is built once, so the conditions are identical by construction.
+
+Samples land in `turn-NN/actor-samples/` for a run, or `<scenario>/actor-samples/<name>-turn-NN/` when sampling a scenario's opening move: the shared `prompt-system.md` and `prompt-user.md`, one `sample-NN.md` per draw, and an `index.json` recording the model, temperature, per-sample cost, and a `prompt_hash` that lets a reader verify every sample answered the same question. Each sample is written as it arrives. `--events-from` borrows another run's events for the same turn, which is how a situation gets composed deliberately rather than being whatever the dice produced. Events are optional on turn 1 – an authored world before anything has happened is a situation in its own right – and required after it. `--initial-state` applies a starting-state draw to the opening move; sampling turn 1 of a run that recorded one applies that draw automatically.
+
 ### Compare two saved runs
 
 ```bash

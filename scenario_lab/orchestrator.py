@@ -311,6 +311,17 @@ class Orchestrator:
             self._llm_io_sequences[turn] = seq
             return seq
 
+    def client_for_actor(self, actor_id: str):
+        """Resolve the LLM client for one actor.
+
+        Actors may be routed per id; anything unrouted falls back to the shared
+        client. Public so that actor sampling resolves models exactly as a
+        simulated turn does.
+        """
+        if "actors" in self.llm_clients and actor_id in self.llm_clients["actors"]:
+            return self.llm_clients["actors"][actor_id]
+        return self.llm_clients["events"]
+
     def _record_llm_call(self, turn: int, task_name: str, response: LLMResponse):
         """Record token usage and cost from an LLM call.
 
@@ -1042,15 +1053,9 @@ class Orchestrator:
         outputs = {}
         actor_ids = list(self.scenario.actors.keys())
 
-        def get_client(actor_id: str):
-            """Resolve LLM client for a specific actor."""
-            if "actors" in self.llm_clients and actor_id in self.llm_clients["actors"]:
-                return self.llm_clients["actors"][actor_id]
-            return self.llm_clients["events"]
-
         def run_actor(actor_id: str) -> tuple[str, LLMResponse]:
             """Execute one actor prompt and return raw response."""
-            client = get_client(actor_id)
+            client = self.client_for_actor(actor_id)
             system, user = self.prompt_builder.build_actor_prompt(
                 actor_id,
                 turn,
@@ -1084,7 +1089,7 @@ class Orchestrator:
             print(f"  → {actor.name}...")
 
             # Get appropriate client for this actor
-            client = get_client(actor_id)
+            client = self.client_for_actor(actor_id)
 
             system, user = self.prompt_builder.build_actor_prompt(
                 actor_id,

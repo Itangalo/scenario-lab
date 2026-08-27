@@ -288,6 +288,15 @@ New providers can be registered without changing orchestrator code.
 - **Context Handling:** Attempts to include rich turn-level artifacts directly; if the prompt would become too large, long artifact sections are truncated into a more condensed context before the final analysis call.
 - **Output:** Saves `analysis.md` by default, or `analysis.json` with `--json`. `--no-save` leaves the report unsaved and prints only a short top-line summary to stdout.
 
+### Actor Sampling (`actor_sampling.py`)
+
+- **Purpose:** Draw one actor's choice repeatedly against a single fixed situation, giving the distribution of what an actor would do rather than the consequences of what it did.
+- **Why not branching:** The turn pipeline settles the world before the actor speaks – `_run_events_step` runs first, and its LLM call proposes emergent events even when catalogue events are pinned with `--force-event`. N branches therefore present N slightly different situations, confounding actor variation with world variation. Sampling builds the actor prompt once and sends it N times, so conditions are identical by construction and verifiable from the persisted prompt.
+- **Situation (turn N >= 2):** State is restored via `load_run_state(run_dir, from_turn=N-1)` and combined with turn N's recorded `1-events.json`, reproducing the prompt that turn's actor actually saw. `--events-from` substitutes another run's events for the same turn.
+- **Situation (turn 1):** The opening move acts on the scenario's initial state, which no recorded turn expresses, so `load_opening_state` loads the scenario fresh. The target may therefore be a scenario directory or variant YAML as well as a run, letting an actor's opening choice be sampled before any run exists. Sampling turn 1 of a run reloads that run's `scenario_source` and reapplies the `initial_state` draw recorded in its `config.json`, so the sampled world matches the one the run began in; `--initial-state` supplies a draw for a scenario target. Events are optional on turn 1 and required after it: an authored world before anything has happened is a legitimate situation, whereas a later turn without recorded events is missing data.
+- **Fidelity:** Prompts and model routing come from a real `Orchestrator` instance (`prompt_builder`, `client_for_actor`), so sampled choices are the choices a simulated turn would have produced. Cost is recorded through the same `CostTracker` path under the task name `actor-sample:<actor_id>`.
+- **Outputs:** `turn-NN/actor-samples/` (or `<scenario>/actor-samples/<name>-turn-NN/` for a scenario target) holds `prompt-system.md`, `prompt-user.md`, `sample-NN.md` per draw, and `index.json` with model, temperature, triggered event ids, per-sample tokens and cost, and a `prompt_hash` digest of the shared prompt. Samples are written as they land, preserving incremental persistence.
+
 ### Resume & Branching (`resume.py`)
 
 **Module:** `scenario_lab/resume.py` provides core functionality for loading and manipulating run state.

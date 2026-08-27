@@ -1076,6 +1076,51 @@ def main():
         help="Write per-call LLM prompt/response transcripts to turn-XX/llm-io/",
     )
 
+    # Sample-actor command
+    sample_parser = subparsers.add_parser(
+        "sample-actor",
+        help="Sample an actor's choice repeatedly under identical conditions",
+    )
+    sample_parser.add_argument(
+        "target",
+        type=Path,
+        help="Run supplying the situation, or (turn 1 only) a scenario directory or variant YAML",
+    )
+    sample_parser.add_argument(
+        "--turn", type=int, required=True, help="Turn whose actor step to sample"
+    )
+    sample_parser.add_argument(
+        "--samples", type=int, default=10, help="How many responses to draw (default: 10)"
+    )
+    sample_parser.add_argument(
+        "--actor", type=str, default=None, help="Actor id (default: the only actor)"
+    )
+    sample_parser.add_argument(
+        "--events-from",
+        type=Path,
+        default=None,
+        help="Borrow this run's events for the same turn instead of the target's",
+    )
+    sample_parser.add_argument(
+        "--initial-state",
+        type=Path,
+        default=None,
+        help="JSON file with starting-state overrides (turn 1 only)",
+    )
+    sample_parser.add_argument("--model", type=str, default=None, help="Override the actor model")
+    sample_parser.add_argument(
+        "--temperature", type=float, default=None, help="Override sampling temperature"
+    )
+    sample_parser.add_argument(
+        "--max-concurrency", type=int, default=4, help="Samples drawn at once (default: 4)"
+    )
+    sample_parser.add_argument(
+        "--output",
+        type=Path,
+        default=None,
+        help="Where to write samples (default: <run>/turn-NN/actor-samples/)",
+    )
+
     # Visualize command
     viz_parser = subparsers.add_parser("visualize", help="Generate charts for a run")
     viz_parser.add_argument("run_dir", type=Path, help="Path to run directory (e.g. scenarios/x/runs/run-123)")
@@ -2341,6 +2386,73 @@ def main():
         print(f"RESUMED SIMULATION COMPLETE")
         print(f"{'='*60}")
         print(f"Results saved to: {args.run_dir}")
+        return 0
+
+    if args.command == "sample-actor":
+        from .actor_sampling import is_run_dir, sample_actor, write_samples
+
+        if args.output:
+            output_dir = args.output
+        elif is_run_dir(args.target):
+            output_dir = args.target / f"turn-{args.turn:02d}" / "actor-samples"
+        else:
+            # Sampling a scenario's opening move, before any run exists: keep
+            # the samples beside the scenario rather than inventing a run.
+            scenario_dir = args.target if args.target.is_dir() else args.target.parent
+            if scenario_dir.name == "variants":
+                scenario_dir = scenario_dir.parent
+            output_dir = (
+                scenario_dir / "actor-samples" / f"{args.target.stem}-turn-{args.turn:02d}"
+            )
+
+        print(f"Sampling actor choices from: {args.target}")
+        print(f"  Turn: {args.turn}   Samples: {args.samples}")
+        if args.events_from:
+            print(f"  Events borrowed from: {args.events_from}")
+        if args.initial_state:
+            print(f"  Starting state: {args.initial_state}")
+
+        # Persist each sample the moment it lands, so an interrupted sampling
+        # run keeps whatever it already paid for.
+        output_dir.mkdir(parents=True, exist_ok=True)
+        landed = [0]
+
+        def on_sample(sample):
+            (output_dir / f"sample-{sample.index:02d}.md").write_text(
+                sample.content, encoding="utf-8"
+            )
+            landed[0] += 1
+            print(f"  → sample {landed[0]}/{args.samples}")
+
+        try:
+            result = sample_actor(
+                args.target,
+                turn=args.turn,
+                samples=args.samples,
+                actor_id=args.actor,
+                events_from=args.events_from,
+                initial_state=args.initial_state,
+                model=args.model,
+                temperature=args.temperature,
+                max_concurrency=args.max_concurrency,
+                on_sample=on_sample,
+            )
+        except ValueError as e:
+            print(f"❌ Error: {e}")
+            return 1
+
+        write_samples(result, output_dir)
+
+        events = [event.get("id") for event in result.triggered_events]
+        print(f"\n{'='*60}")
+        print("ACTOR SAMPLING COMPLETE")
+        print(f"{'='*60}")
+        print(f"Actor:       {result.actor_id}")
+        print(f"Model:       {result.model} @ temperature {result.temperature}")
+        print(f"Conditions:  turn {result.turn}, events: {', '.join(events) or '(none)'}")
+        print(f"Prompt hash: {result.prompt_hash} (identical for all samples)")
+        print(f"Cost:        ${result.total_cost_usd:.4f} ({result.total_tokens:,} tokens)")
+        print(f"Written to:  {output_dir}")
         return 0
 
     if args.command == "branch":
