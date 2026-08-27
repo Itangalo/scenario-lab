@@ -6,7 +6,9 @@
 # in variants/, each carrying its regime's figures as resource patches. Run
 # them with batch-run --variants. The events.md and metric-rules.md branched
 # text below remains as the historical record of where every patched figure
-# came from; runs before 2026-08-26 also drew their regime from draws/.
+# came from. Runs before 2026-08-26 took their regime from a starting-state
+# draw instead; sampler.py and draws/ were removed on 2026-08-27 and are in
+# git history if a draws-era run ever has to be reproduced.
 name: "Forking Futures"
 description: "One regulator, three possible speeds of AI development, and instruments too slow for the windows they have to hit. Explores which kinds of regulation and policy hold up across futures that develop very differently, and which developments are worth monitoring as early signals."
 start_date: "2026-07"

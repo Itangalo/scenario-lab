@@ -47,7 +47,7 @@ says what was changed and why.
 
 The regime must reach the Game Master and stay away from the regulator, which exists to infer it from what happens. Since the arms became variants this is structural rather than defensive: each variant patches `events` and `metric_rules` with its own figures, and neither resource is ever rendered into the actor prompt. There is no regime text sitting in `background_context` or `world_state` for the actor to see, so there is nothing to truncate.
 
-The `<!-- GM-ONLY -->` marker is retired and must not be used for new work. It solved the draws-era problem: a draw's context reached every prompt including the actor's, so the regime paragraph was placed behind the marker and `user-prompts/actor.md` truncated the actor's view at it. Variants made it unnecessary and it has been removed from the actor override. Verified before removing: no variant's `context` or `world_state` contains the marker, every arm's resolved events and metric rules mention only its own regime label (so the Game Master no longer picks a column and needs no secret), and the rendered actor prompts are byte-identical before and after the removal. `sampler.py` and `draws/` still contain the marker as provenance for runs before 2026-08-26; anything rerun from those draws would need the truncation back.
+The `<!-- GM-ONLY -->` marker is retired and must not be used for new work. It solved the draws-era problem: a draw's context reached every prompt including the actor's, so the regime paragraph was placed behind the marker and `user-prompts/actor.md` truncated the actor's view at it. Variants made it unnecessary and it has been removed from the actor override. Verified before removing: no variant's `context` or `world_state` contains the marker, every arm's resolved events and metric rules mention only its own regime label (so the Game Master no longer picks a column and needs no secret), and the rendered actor prompts are byte-identical before and after the removal. `sampler.py` and `draws/` were removed on 2026-08-27, once it was clear they carried nothing else: every draw set `metrics: {}`, and the 20 draws within an arm were identical apart from a `draw=NNN` index in `notes`. Their only jobs were injecting the regime behind the marker and tagging the cohort with `arm=`, and variants do both. They are in git history if a draws-era run ever has to be reproduced, and such a rerun would need the truncation back.
 
 ### The channel the marker never covered (found 27 August) (ECHO 2026-08-27)
 
@@ -488,8 +488,11 @@ stall. All three stay open for the full batch.
   picking the right column every turn, and it mostly didn't. Flat per-arm
   figures remove that failure mode; the old branched text stays in
   `events.md`/`metric-rules.md` as the record of where each patched figure
-  came from. `sampler.py` and `draws/` are retired for new runs (kept as
-  provenance for runs before this date).
+  came from. `sampler.py` and `draws/` were retired for new runs on
+  2026-08-26 and deleted on 2026-08-27; git history keeps them. Note what
+  they were not: no draw set any metric, so they never varied the starting
+  world and never carried a seed. Seeds are separate and unaffected, each
+  run generates its own unless `batch-run --seed` supplies a shared one.
 - Two provenance eras, accepted: runs before 2026-08-26 carry `arm=...` in
   `initial_state.notes` and one scenario identity for base + one for the old
   sibling-style urgent batch; runs after carry the arm in their scenario name
