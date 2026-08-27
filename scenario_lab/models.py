@@ -646,3 +646,9 @@ class Scenario:
     # Emergent proposals that have not fired yet and are being carried forward
     # as emerging developments (see ARCHITECTURE.md).
     emerging_developments: list[EmergingDevelopment] = field(default_factory=list)
+
+    # The YAML this scenario was loaded from, as an absolute path. Recorded in a
+    # run's config.json so `resume` and `branch` can reload the same variant.
+    # Without it they fall back to the base scenario.yaml, which silently swaps
+    # a variant's actors and resource patches for the base ones.
+    source_path: Optional[str] = None

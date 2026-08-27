@@ -568,6 +568,7 @@ class OutputManager:
                 "max_per_turn": self.scenario.config.emergent_events.max_per_turn,
                 "max_probability": self.scenario.config.emergent_events.max_probability,
             },
+            "scenario_source": self.scenario.source_path,
             "random_seed": self.scenario.config.random_seed,
             "logging": {
                 "llm_io": self.scenario.config.logging.llm_io,

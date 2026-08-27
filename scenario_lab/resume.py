@@ -134,6 +134,47 @@ def get_scenario_path_from_run(run_dir: Path) -> Path:
     return scenario_dir
 
 
+def get_scenario_source_from_run(run_dir: Path) -> Path:
+    """Determine which scenario YAML a run was started from.
+
+    Prefers the ``scenario_source`` recorded in the run's config.json, so a
+    variant run reloads its own YAML -- with its actors and resource patches --
+    rather than the base scenario.yaml. Falls back to the scenario directory for
+    runs made before that field existed, and for runs whose recorded source has
+    since moved.
+
+    Args:
+        run_dir: Path to run directory
+
+    Returns:
+        Path to the scenario YAML file, or the scenario directory as a fallback
+    """
+    scenario_dir = get_scenario_path_from_run(run_dir)
+
+    config_file = run_dir / "config.json"
+    if config_file.exists():
+        try:
+            config = json.loads(config_file.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            config = {}
+        source = config.get("scenario_source") if isinstance(config, dict) else None
+        if isinstance(source, str) and source:
+            source_path = Path(source)
+            if source_path.exists():
+                return source_path
+            # The run may have been moved between machines or checkouts. Try the
+            # same file name relative to the scenario directory this run sits in.
+            relocated = scenario_dir / "variants" / source_path.name
+            if source_path.name != "scenario.yaml" and relocated.exists():
+                return relocated
+            print(
+                f"  Warning: recorded scenario source not found ({source}); "
+                f"falling back to {scenario_dir}"
+            )
+
+    return scenario_dir
+
+
 def load_run_state(
     run_dir: Path,
     from_turn: Optional[int] = None,
@@ -176,8 +217,10 @@ def load_run_state(
         last_turn = detect_last_turn(run_dir)
         raise ValueError(f"Turn {from_turn} does not exist. Last completed turn: {last_turn}")
 
-    # Get scenario path and load original scenario
-    scenario_path = get_scenario_path_from_run(run_dir)
+    # Get scenario path and load original scenario. This must be the YAML the
+    # run actually started from, not merely its directory: branching a variant
+    # off the base scenario.yaml would swap its actors and resource patches.
+    scenario_path = get_scenario_source_from_run(run_dir)
     scenario = load_scenario(scenario_path)
 
     # Load state from turn directory

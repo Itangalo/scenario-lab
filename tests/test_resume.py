@@ -7,6 +7,7 @@ from scenario_lab.resume import (
     detect_last_turn,
     validate_run_directory,
     get_scenario_path_from_run,
+    get_scenario_source_from_run,
     load_run_state,
     persist_scenario_state_at_turn,
     sync_summary_turn_state,
@@ -399,3 +400,80 @@ def test_load_run_state_restores_emerging_developments(temp_run_dir, scenario_di
     assert dev.description.startswith("A severe solar storm")
     assert dev.first_turn == 1
     assert dev.last_turn == 2
+
+
+class TestScenarioSourceResolution:
+    """A run must reload the YAML it started from, not merely its directory.
+
+    Variants live in ``variants/`` and carry their own actors and resource
+    patches. Resolving a run back to its scenario *directory* loads the base
+    scenario.yaml instead, which silently swaps both -- so a branch off a
+    variant run would simulate different physics than its parent.
+    """
+
+    def _make_variant(self, scenario_dir: Path) -> Path:
+        """Add a variant with its own actor and an events patch."""
+        actors_dir = scenario_dir / "background" / "actors"
+        (actors_dir / "actor2.md").write_text(
+            "# Actor 2\n## Short description\nVariant actor.\n"
+            "## Long description\nVariant goal.\n"
+        )
+
+        patch = scenario_dir / "variants" / "arm.events.patch.md"
+        patch.parent.mkdir(parents=True, exist_ok=True)
+        patch.write_text("# Events\n")
+
+        variant = scenario_dir / "variants" / "arm.yaml"
+        variant.write_text(
+            'base: "../scenario.yaml"\n'
+            'name: "Test Scenario — Arm"\n'
+            "actors:\n"
+            "  - actor2\n"
+            "patches:\n"
+            "  - resource: events\n"
+            "    path: arm.events.patch.md\n"
+        )
+        return variant
+
+    def _record_source(self, run_dir: Path, source) -> None:
+        config = json.loads((run_dir / "config.json").read_text())
+        config["scenario_source"] = str(source)
+        (run_dir / "config.json").write_text(json.dumps(config, indent=2))
+
+    def test_recorded_variant_source_is_used(self, temp_run_dir, scenario_dir):
+        variant = self._make_variant(scenario_dir)
+        self._record_source(temp_run_dir, variant.resolve())
+
+        assert get_scenario_source_from_run(temp_run_dir) == variant.resolve()
+
+        create_complete_turn(temp_run_dir, 1)
+        scenario, _ = load_run_state(temp_run_dir, from_turn=1)
+
+        assert scenario.config.name == "Test Scenario — Arm"
+        assert list(scenario.actors.keys()) == ["actor2"]
+        assert [p.resource for p in scenario.config.patches] == ["events"]
+
+    def test_falls_back_to_directory_without_recorded_source(
+        self, temp_run_dir, scenario_dir
+    ):
+        """Runs made before scenario_source existed still resolve."""
+        assert get_scenario_source_from_run(temp_run_dir) == scenario_dir
+
+        create_complete_turn(temp_run_dir, 1)
+        scenario, _ = load_run_state(temp_run_dir, from_turn=1)
+
+        assert scenario.config.name == "Test Scenario"
+        assert list(scenario.actors.keys()) == ["actor1"]
+
+    def test_relocated_variant_is_found_by_name(self, temp_run_dir, scenario_dir):
+        """A run copied between checkouts keeps an absolute path that no longer
+        exists; the variant is recovered by name under the scenario directory."""
+        variant = self._make_variant(scenario_dir)
+        self._record_source(temp_run_dir, "/gone/scenarios/test-scenario/variants/arm.yaml")
+
+        assert get_scenario_source_from_run(temp_run_dir) == variant
+
+    def test_missing_source_falls_back_to_directory(self, temp_run_dir, scenario_dir):
+        self._record_source(temp_run_dir, "/gone/scenarios/test-scenario/variants/nope.yaml")
+
+        assert get_scenario_source_from_run(temp_run_dir) == scenario_dir

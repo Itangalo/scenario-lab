@@ -508,6 +508,7 @@ def load_scenario(
         constitution=constitution,
         custom_system_prompts=custom_system_prompts,
         custom_user_prompts=custom_user_prompts,
+        source_path=str(config_file.resolve()),
     )
 
     if initial_state is not None:
