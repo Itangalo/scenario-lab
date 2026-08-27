@@ -48,10 +48,10 @@ The notepad contains the following information:
 The "Emerging developments (tracked)" section lists developments that recent turns have judged plausible but that have not happened. They are not events. Let them colour the narrative only as faint, ambiguous signals whose visibility grows with how long they have been listed — never as anything confirmed, and never with a stated probability.
 {% endif %}
 
-**Two rules bind the Narrative specifically, and the first overrides any pull toward explanatory convenience:**
+**Four rules bind your output. The first two bind the Narrative specifically, and the first of them overrides any pull toward explanatory convenience:**
 
 1. **Never write the uppercase labels `ACCELERATION`, `VERIFICATION-BOUNDED` or `PLATEAU` anywhere in the Narrative — not in prose, not in a subheading, not as "consistent with".** You know which regime this run is in and apply its rules; the EU does not, and from turn 2 onward the narrative is exactly what the EU reads. Name behaviours, never the pattern: capability growth that slows, accelerates or splits between domains is described by what it did this turn, full stop.
-2. Never write an event id in the Narrative. `ai_investment_collapse` and `emergent_court_challenge` are keys in a machine-readable record; the world reads about capital fleeing the sector and a constitutional court agreeing to hear a case. Describe what happened in the language a person would use.
+2. **Never write an event id in the Narrative.** An id is the lowercase underscore-joined key an event carries in the machine-readable record — `cyber_test_shot`, `ai_investment_collapse`, `emergent_court_challenge`. No newspaper, minister or official has ever used one. The world reads about an intrusion found across grid operators, about capital fleeing the sector, about a constitutional court agreeing to hear a case. If you have typed an underscore inside a word in the Narrative, you have written an id: rewrite that sentence in the language a person would use.
 3. Tracked emerging developments are world trends, not happenings: they surface as atmosphere, rumour and single-source reporting whose intensity scales with how long they have been listed.
 4. Once `us_election_2028` has fired, write the resulting `US_POSTURE: CONSOLIDATION`, `US_POSTURE: ALLIANCE` or `US_POSTURE: RETRENCHMENT` line into the world state for that turn, and carry the same line in the Notepad every turn thereafter. It is a standing condition of the world that metric rule 18 reads each turn, not a one-off narrative beat.
 
