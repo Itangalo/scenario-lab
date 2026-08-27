@@ -1,0 +1,27 @@
+# ACCELERATION trajectory arm.
+#
+# The arms are variants rather than starting-state draws so that every figure
+# revealing the regime lives in a file the actor's prompts never render. The
+# base scenario keeps the regime-neutral defaults; these patches replace the two
+# metric rules and the handful of event entries that would otherwise leak it.
+
+base: "../scenario.yaml"
+
+# NOTE: no `description` field here, on purpose. It is inherited from
+# ../scenario.yaml, which is regime-neutral. The actor system prompt renders
+# scenario_description verbatim, so an arm-specific description states the
+# regime in the Union's own prompt and destroys the inference the scenario
+# exists to study. Keep this variant's wording in the comment below, never in
+# the field.
+#
+# This variant: the compounding is real. Models improve models, the domains of
+# superhuman capability keep widening, and systems substantially beyond human
+# capability arrive inside the horizon. Identical physics and instruments to the
+# other arms; only the world's speed differs.
+name: "Europe 2032 — Acceleration"
+
+patches:
+  - resource: metric_rules
+    path: acceleration.rules.patch.md
+  - resource: events
+    path: acceleration.events.patch.md

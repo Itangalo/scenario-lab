@@ -1,0 +1,61 @@
+# Metric Rules
+
+Starting physics. One turn is six months. Figures are per turn unless stated.
+
+The seven metrics sort by how far the EU can actually move them, and that ordering governs everything below: strong on `resilience`, `eu_ai_sovereignty` and `eu_political_capital`; moderate on `public_sentiment`; weak on `ai_safety` and `openweight_capability`, which it reaches only through market access and international agreement; and essentially none on `ai_capability`. This is uncomfortable and it is correct. The EU does not set the frontier's pace, and rules that let it do so turn the scenario into a fantasy.
+
+## The frontier
+
+1. **The trajectory regime sets the growth of `ai_capability`.** Use the regime named in this run's metric rules. It states a per-turn rate and a terminal zone the trajectory settles into: advance at the rate while below the zone, taper to a stop inside it. Rates are floors on motion, not decorations – a trajectory that stalls well below its terminal zone, or accelerates under conditions this rule does not give, is misapplying the rule. Growth is sub-linear near the top of the scale: above 85, halve the stated increment, because the instrument is losing resolution rather than the world slowing down.
+
+2. **`ai_capability` is otherwise exogenous, with exactly one exception.** Nothing the EU does moves it. The exception is an international agreement that actually binds both leading powers – `us_china_agreement` with the EU inside it, or an equivalent the narrative establishes as accepted and being complied with by both – which reduces the regime's stated growth rate by a quarter to a half while it holds. It is reversible: the reduction ends the turn the narrative establishes that either power has stopped complying.
+
+3. **`openweight_capability` tracks `ai_capability` at a lag, and the lag is the policy-relevant variable.** The regime named in this run's metric rules states how the gap moves by default. Open weights trail the closed frontier by roughly six to nine months throughout; what that constant lag *means* depends entirely on how fast the frontier is moving. `openweight_frontier_release` cuts the gap to 5 or below at a stroke. A fully implemented restriction on open release above a capability threshold, binding in a jurisdiction where such models are actually trained, widens the gap by 2 to 4 per turn while it holds; the same restriction binding only inside the Union widens it by nothing at all, and the Union will be told so by its critics.
+
+4. **Capability never falls.** `ai_capability` and `openweight_capability` are accumulated knowledge and infrastructure. `openweight_capability` never exceeds `ai_capability`. The only exception is catastrophic physical destruction of the compute base, which must be narrated as such.
+
+## The incident engine
+
+5. **Frequency comes from two separate channels, and severity from a third.** Misuse incidents – cyber and biological harm caused by someone who wanted it – are driven by `openweight_capability`, because proliferated capability is what a non-state attacker actually has in hand. Accident and loss-of-control incidents are driven by the gap between `ai_capability` and `ai_safety`, because they originate inside the laboratories, where assurance is the thing that failed. Both are damped by `resilience`, which governs how much damage an incident does rather than whether it happens. Stated compactly: frontier capability creates the possibility, open capability creates the frequency, safety prevents the lab-origin class, resilience shrinks the consequences of both.
+
+6. **`ai_safety` measures assurance that has landed on deployed systems, not effort spent.** It therefore falls when capability advances without matching assurance: −1 to −3 per turn in any turn `ai_capability` rose and nothing new landed on shipped systems, and −5 to −12 on `opaque_reasoning`, `capability_jump` or `rsi_onset`, with no reduction in anybody's spending. It rises on `safety_breakthrough` (+5 to +10), and by +2 to +4 per turn while a fully implemented EU measure in category 1, 2 or 5 actually binds the jurisdiction where the frontier models are built – through market access, agreed evaluation, or a developer that needs the single market. The same measure binding only inside the Union moves it by 0 to +1. That weakness is the point.
+
+7. **`resilience` is the EU's strongest lever and decays if left alone.** A fully implemented category 6 measure covering a named class of harm adds +3 to +6 per turn for as long as it is sustained, and half that while under implementation. Against it: −1 to −2 per turn in any turn `ai_capability` rose and no resilience measure is in force, because a static defence weakens against a moving offence. Standing still has to cost something, or every run builds once and coasts.
+
+## The Union's two stocks
+
+8. **`eu_ai_sovereignty` is slow in both directions.** A fully implemented category 4 measure adds +2 to +4 per turn while sustained, and half that while under implementation; compute, grid and talent take years, and no single turn moves it by more than 5 in either direction absent an event that says otherwise. It decays by −1 to −2 per turn whenever `ai_capability` rose and no sovereignty measure is in force, because the same physical estate buys less independence against a faster frontier. Its slowness in both directions is what makes late action expensive and the timing question real.
+
+9. **The flow costs, the stock pays.** Building sovereignty drains `eu_political_capital` while it is being built – that is the implementation load of rule 10, and a category 4 measure is high-load by default. Having sovereignty pays capital back: +1 to +3 per turn while `eu_ai_sovereignty` is above 40, rising to the top of that range above 60, because there is something to bargain with, successes to point at, and less humiliation feeding sentiment. **Guard, and it binds:** sovereignty's contribution to `eu_political_capital` never exceeds +3 in a turn and never exceeds the combined contribution of every other positive term that turn. A run must be able to reach 2032 with real political capital and little sovereignty, on cohesion, instruments and legitimacy alone. The claim that muscles are *necessary* for agency is what these runs exist to test, not something the physics may assume.
+
+10. **Unfinished measures draw capital every turn.** Each measure that is decided or under implementation costs `eu_political_capital`: −1 for a low-load measure, −3 for medium, −6 for high. The named priority advances one phase this turn; other unfinished measures advance only while `eu_political_capital` is above 55. There is no further arithmetic than this.
+
+11. **`eu_political_capital` recovers from results and erodes from their absence.** A measure reaching full implementation: +4 to +8. A measure visibly working when an incident it addresses occurs: +8 to +15. A measure abandoned, a deadline missed, or a proposal publicly defeated: −5 to −12. Idle capacity decays: −3 per turn when nothing is under implementation, and a further −2 per turn while a live class of harm sits unaddressed. There is no drift back toward 48. Capital exists to be spent, and a turn that banks it against a future that may never arrive has cost something.
+
+12. **The attribution rule decides whether a shock strengthens the Union or breaks it.** Negative events move `eu_political_capital` in either direction, and the sign follows from two things already on the record – where the harm originated, and whether the EU had acted beforehand.
+
+    - External origin, prior action taken: reads as vindication. +5 to +12.
+    - External origin, no prior action: reads as *why did you not see this coming*. −5 to −12.
+    - Internal origin – an EU-deployed system, a regulatory failure, an automated-decision scandal: −10 to −20, regardless of anything else.
+
+    **Damper.** The vindication bonus decays where the same class of harm recurs and the response demonstrably did not work: full on the first occurrence, half on the second, none on the third, and a penalty thereafter. Being attacked twice is someone else's fault; being attacked five times is your own.
+
+13. **Political asymmetry, and it is one-directional.** The capital cost of adopting a measure falls by roughly half in the turn after an incident of the class it addresses, and by roughly a quarter for the two turns after that. Before any such incident the full stated cost applies. A precursor is not an incident, and neither is rising tension: the discount is earned by realised harm. Note what this sets up against rule 12 – waiting makes the next measure cheaper, acting early makes the shock itself strengthen you, and neither dominates.
+
+## The public and the world's mood
+
+14. **`public_sentiment` moves in both directions and must be allowed to.** It falls −8 to −20 after a major incident, −5 to −10 after a labour displacement wave or a visible episode of dependency humiliation, and −4 to −10 after a scandal that names AI as the cause. It rises +2 to +5 per turn where AI is delivering visible public benefit and no harm has landed, and by a further +2 to +6 per turn while a fully implemented category 7 or 9 measure holds. It recovers slowly and does not return to its pre-crisis level within four turns.
+
+15. **Sentiment sets what is affordable, in both directions.** Below 40 it lowers the capital cost of restrictive measures (categories 1, 3) by roughly half and raises the cost of adoption, infrastructure and any partnership with a foreign provider (categories 4, 9) by roughly half. Above 60 it does the reverse. This is not a goodness score: a soured public enlarges the room to restrict and simultaneously makes every diffusion and compute measure politically expensive, which is why neither direction is simply good for the Union.
+
+16. **Diffusion cuts both ways.** Category 9 measures that broaden adoption raise `public_sentiment` and the economic case for everything else, and simultaneously raise the frequency and severity of misuse and cyber events, because there is more surface to attack. Category 7 measures buy sentiment and cohesion without buying capability.
+
+## What the Union does not control
+
+17. **Nothing the EU decides binds anyone else automatically.** Measures aimed at the United States, at China or at the frontier developers work through market access, standards, supply-chain leverage and reputational cost. Their effect on those jurisdictions is at most half of what the same instrument achieves domestically, and is contingent on the narrative first establishing that the target actually complied. Agreement in public and evasion in private is a permitted outcome and should sometimes be the one that happens.
+
+18. **The American posture is a standing condition from the 2028 election onward.** Once `us_election_2028` has fired, the `US_POSTURE:` line carried in the notepad conditions every turn that follows.
+
+    - **CONSOLIDATION:** access to frontier capability is rationed by country tier. Category 4 and 5 measures cost one load level more, `eu_ai_sovereignty` decays at the top of the rule 8 range whenever no build is in force, and events in the EU-exposure family are markedly more likely.
+    - **ALLIANCE:** structured access on published terms. `ai_safety` gains +1 to +2 per turn from joint evaluation and incident reporting, and `public_sentiment` gains +1 to +2 per turn; against that, every category 4 measure costs one load level more in political terms, because the case for building an alternative is much harder to fund once the pressure is off.
+    - **RETRENCHMENT:** American frontier progress slows for reasons that are neither compute nor capital – reduce the regime's stated `ai_capability` growth rate by a quarter while it holds – but the partner is preoccupied and less capable. Category 8 measures aimed at Washington achieve half of what they otherwise would, and whoever is second in the world gains ground in the narrative.

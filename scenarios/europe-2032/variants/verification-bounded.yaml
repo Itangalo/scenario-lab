@@ -1,0 +1,29 @@
+# VERIFICATION-BOUNDED trajectory arm. See acceleration.yaml for the patching rationale.
+#
+# The arms are variants rather than starting-state draws so that every figure
+# revealing the regime lives in a file the actor's prompts never render. The
+# base scenario keeps the regime-neutral defaults; these patches replace the two
+# metric rules and the handful of event entries that would otherwise leak it.
+
+base: "../scenario.yaml"
+
+# NOTE: no `description` field here, on purpose. It is inherited from
+# ../scenario.yaml, which is regime-neutral. The actor system prompt renders
+# scenario_description verbatim, so an arm-specific description states the
+# regime in the Union's own prompt and destroys the inference the scenario
+# exists to study. Keep this variant's wording in the comment below, never in
+# the field.
+#
+# This variant: the striking results cluster where success can be checked
+# automatically — code, mathematics, cyber operations — and capability stays
+# narrow wherever cheap verification is unavailable, which is most of the
+# economy. General competence saturates early while offensive cyber and open
+# replication keep improving sharply. Identical physics and instruments to the
+# other arms; only the world's speed and shape differ.
+name: "Europe 2032 — Verification-bounded"
+
+patches:
+  - resource: metric_rules
+    path: verification-bounded.rules.patch.md
+  - resource: events
+    path: verification-bounded.events.patch.md

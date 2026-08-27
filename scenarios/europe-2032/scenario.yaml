@@ -1,0 +1,148 @@
+# Europe 2032: one Union, three possible speeds of AI development, and two
+# mandates that do not reconcile.
+#
+# This file is the SHARED PHYSICS and is not itself a run target: the trajectory
+# arms (acceleration / verification-bounded / plateau) live in variants/, each
+# carrying its regime's figures as resource patches. Run them with
+# batch-run --variants. Every figure that would reveal the regime – capability
+# growth rates, the open-weight lag, the arm-diagnostic event probabilities –
+# belongs in variants/*.rules.patch.md and variants/*.events.patch.md and
+# nowhere else. A rate in this directory leaks the trajectory into every run.
+name: "Europe 2032"
+description: "One EU decision-maker, six years, and two mandates that do not reconcile: staying capable of determining its own future, and preventing lasting harm from AI. Explores which commitments hold up across futures that develop very differently, and whether political agency in the Union depends on holding AI capacity of its own."
+start_date: "2026-07"
+time_scale: "6 months per turn"
+max_turns: 13
+
+output_language: "English"
+
+actors:
+  - eu
+
+# Turn calendar. Turn 1 covers July-December 2026 and is identical in every run.
+#   t1  H2 2026   fixed opening event (cyber_test_shot)
+#   t3  H2 2027   campaign currents open
+#   t4  H1 2028   campaign currents close
+#   t5  H2 2028   us_election_2028 fires; US_POSTURE set for the rest of the run
+#   t13 H2 2032   final turn
+#
+# Outcome criteria (analyst-side, not simulation-side)
+#
+# The simulation does not need to know what "good" means; outcome evaluation
+# happens post-hoc, as in RDM. Satisficing floors rather than a weighted
+# composite: any weighting of sovereignty against safety is exactly the trade
+# the actor is supposed to make freshly each turn, and hard-coding a weight
+# would answer the scenario's own question in the scoring.
+#
+# Four floors. Thresholds are first guesses, to be calibrated against the
+# distribution of the first full batch before anything is reported.
+#
+#   harm          the event record, not a metric: a run fails this floor if
+#                 bio_incident or loss_of_control_incident occurred without a
+#                 measure of the matching class having been fully implemented
+#                 beforehand, or if cyber_major_incident occurred three or more
+#                 times. There is deliberately no cumulative-harm index; the
+#                 event record reports what happened better than a running
+#                 number would.
+#   agency        eu_political_capital at the final turn. Can the Union still
+#                 act? Floor: >= 40, i.e. not far below its start value of 48.
+#   absorption    resilience at the final turn. Floor: >= 50 – baseline
+#                 hardening across critical sectors, incident response
+#                 exercised rather than documented.
+#   legitimacy    public_sentiment at the final turn. A floor, deliberately NOT
+#                 a maximand: in a genuinely dangerous world low sentiment may
+#                 be the correct public response, and high sentiment a failure
+#                 of perception. What matters is whether enough consent remains
+#                 to sustain any policy at all. Floor: >= 25.
+#
+# Most favourable  = clears all four floors.
+# Least favourable = fails two or more.
+#
+# eu_ai_sovereignty is deliberately NOT a floor, and this is the single most
+# important line in this block. Europe 2031's claim is that AI capacity of one's
+# own is necessary for agency at all. Scoring sovereignty as an outcome would
+# assume that claim instead of testing it. It is reported as a descriptor of
+# every run, alongside eu_political_capital, and the pairing is the finding.
+# ai_capability and openweight_capability are likewise descriptors: capability
+# is the regime's driving variable, and treating a slow frontier as success
+# would confuse a lucky arm with a competent Union.
+#
+# Attribution discipline: events are exogenous dice, measures are the EU's
+# choices, and at batch sizes of a few dozen neither can be causally separated
+# from the other. Report the event profile – which events occurred, not how
+# many – and the measure portfolio side by side, and say plainly that
+# co-occurrence is not attribution.
+
+research_questions:
+  - id: rq_sovereignty_and_agency
+    question: "Do runs that build AI capacity of their own end with more room to act than runs that do not, or can a Union with strong instruments and little compute hold its agency to 2032?"
+    metrics: [eu_ai_sovereignty, eu_political_capital, public_sentiment]
+    events: [eu_frontier_access_denied, supply_chain_coercion, eu_access_secured, export_control_escalation, member_state_defection, us_election_2028]
+    notes: "The central question, and the one the metric design exists to keep open. Plot the two stocks against each other at the final turn and look for all four quadrants. A batch in which they never diverge means the physics coupled them and begged the question – report that as a defect in the rules, not as a finding about Europe. Group by US_POSTURE before comparing: the posture is the largest exogenous determinant of what dependence costs."
+
+  - id: rq_no_regret
+    question: "Are there measures or combinations of measures that clear the acceptability floors in every arm, rather than paying off strongly in one?"
+    metrics: [eu_political_capital, resilience, ai_safety, public_sentiment]
+    events: [capability_jump, rsi_onset, capability_plateau_evidence, openweight_frontier_release, ai_investment_collapse, cyber_major_incident]
+    notes: "Robustness in the RDM sense: satisficing across regimes, not optimising within one. Group measures by their category tag before comparing. A package that pays off strongly in one arm and fails a floor in another is not no-regret, however large the payoff. State the null result if there is one – finding no robust package is a real finding about the difficulty of the problem. Watch category 6 in particular: the metric rules give the Union its strongest lever there, so a finding that resilience spending is robust is partly authored and must be reported with that caveat."
+
+  - id: rq_proactive_vs_reactive
+    question: "Do bets on anticipatory measures pay off compared with reacting after an incident of the same class has landed?"
+    metrics: [eu_political_capital, resilience, ai_safety]
+    events: [cyber_major_incident, bio_incident, loss_of_control_incident, eu_frontier_access_denied, automated_decision_scandal]
+    notes: "The decision problem the scenario exists for, and here it is genuinely two-sided: constitutional rule 7 hard-codes that anticipatory action costs more, while metric rule 12 gives prior action a capital gain when the shock lands. Neither dominates by construction. Compare when the Union first committed capital to a measure class against when an incident of that class landed, and report the capital trajectory across the three turns following each incident."
+
+  - id: rq_two_mandates
+    question: "How does the Union actually trade its two mandates against each other under pressure, and which balance appears in the runs that clear all four floors?"
+    metrics: [eu_ai_sovereignty, ai_safety, resilience, eu_political_capital]
+    events: [bio_incident, loss_of_control_incident, medical_breakthrough, adoption_success, labour_displacement, backlash_physical]
+    notes: "Descriptive before evaluative. Classify each turn's named priority by whether it serves capability-and-independence or harm-prevention, and describe the sequence rather than scoring it. The interesting cases are the turns where the standing commitment was explicitly abandoned: the actor is required to say so and give a reason, so those turns are recoverable from the transcripts and are the closest thing to a record of the trade being made."
+
+  - id: rq_adverse_profile
+    question: "Which event profiles and which measure portfolios characterise the least favourable outcomes within each arm, and which of them recur across all three arms?"
+    metrics: [eu_political_capital, public_sentiment, resilience, ai_safety]
+    events: [cyber_major_incident, bio_incident, loss_of_control_incident, automated_decision_scandal, member_state_defection, backlash_physical, election_annulled, taiwan_blockade]
+    notes: "Scenario discovery, adverse half. Report the emergent events separately from the catalogue events: the emergent ones carry no authored gates and are the only genuinely exploratory material in the pool. Watch for measure portfolios that appear in both the favourable and the adverse sets; those are measures whose value is contingent on something else, and identifying that something is the useful result."
+
+llm:
+  model: "openrouter:qwen/qwen3-235b-a22b-2507"
+  temperature: 0.7
+  max_tokens: 3000
+  # Analysis and synthesis read a whole run (or the whole ensemble) and are the
+  # only steps a reasoning model is used for here. The 3000 the turn steps need
+  # is far too small for them: a reasoning model can spend that entire budget on
+  # reasoning and return no content at all. Pass --analysis-model and --model to
+  # `synthesize` deliberately; without them both fall back to the model above.
+  max_tokens_by_task:
+    analysis: 32000
+    synthesis: 32000
+  probability_samples: 3
+
+emergent_events:
+  # On deliberately: the scenario exists to explore futures nobody listed, and a
+  # closed event list would quietly rule them out. The catalogue is 33 events
+  # and covers what was foreseeable in 2026; six years is long enough that the
+  # unforeseen is the point.
+  enabled: true
+  max_per_turn: 2
+  max_probability: 0.35
+  # Opt-in carry-forward: an unfired proposal stays live as an emerging
+  # development – re-listed each turn at an escalating probability until it
+  # fires or its window closes.
+  track_unfired: true
+  window_turns: 3
+
+rule_evolution:
+  # Disabled. This scenario is read as a distribution over runs, and rule drift
+  # is noise in exactly the thing being measured: if the physics differs between
+  # runs, differences in outcome cannot be attributed to the arm or to the
+  # Union's choices.
+  freeze_until_turn: 14  # > max_turns, so rules never evolve
+  max_changes_per_turn: 0
+
+constitutional_enforcement:
+  # 4 rather than the default: turns can spend several iterations on competing
+  # violations (a leaked regime label plus a metric dispute), and one extra
+  # cheap retry is less costly than an unresolved hard invariant.
+  max_attempts: 4
+  on_failure: accept_with_violations
