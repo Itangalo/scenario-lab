@@ -402,6 +402,46 @@ def test_load_run_state_restores_emerging_developments(temp_run_dir, scenario_di
     assert dev.last_turn == 2
 
 
+def test_load_run_state_restores_last_actions(temp_run_dir, scenario_dir):
+    """An actor's own previous response survives resume and branch.
+
+    It is the only substrate for state an actor carries forward in prose --
+    a measure portfolio, a standing commitment -- so losing it at the seam
+    silently drops that state without any other artifact recording the loss.
+    """
+    create_complete_turn(temp_run_dir, 1)
+    response = "## Standing commitment\nHold the line on evaluation access.\n"
+    (temp_run_dir / "turn-01" / "2-actors" / "actor1.md").write_text(response)
+
+    summary = json.loads((temp_run_dir / "summary.json").read_text())
+    summary["history"] = [{"turn": 1, "metrics": {"test_metric": 50}}]
+    summary["total_turns"] = 1
+    (temp_run_dir / "summary.json").write_text(json.dumps(summary, indent=2))
+
+    scenario, _ = load_run_state(temp_run_dir)
+
+    assert scenario.actors["actor1"].last_actions == response
+
+
+def test_load_run_state_without_actor_response_leaves_last_actions_empty(
+    temp_run_dir, scenario_dir
+):
+    """A turn directory missing this actor's response file is not an error."""
+    create_complete_turn(temp_run_dir, 1)
+    actors_dir = temp_run_dir / "turn-01" / "2-actors"
+    (actors_dir / "someone-else.md").write_text("# Another actor\n")
+    (actors_dir / "actor1.md").unlink()
+
+    summary = json.loads((temp_run_dir / "summary.json").read_text())
+    summary["history"] = [{"turn": 1, "metrics": {"test_metric": 50}}]
+    summary["total_turns"] = 1
+    (temp_run_dir / "summary.json").write_text(json.dumps(summary, indent=2))
+
+    scenario, _ = load_run_state(temp_run_dir)
+
+    assert scenario.actors["actor1"].last_actions == ""
+
+
 class TestScenarioSourceResolution:
     """A run must reload the YAML it started from, not merely its directory.
 

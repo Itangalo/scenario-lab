@@ -257,6 +257,19 @@ def load_run_state(
                 if loaded:
                     actor.statements = loaded
 
+            # And the actor's own last response, which the actor prompt renders
+            # back as "Your previous response". It is the only substrate for
+            # anything an actor carries forward in prose rather than in the
+            # ledger -- a measure portfolio, a standing commitment, whatever a
+            # scenario asks an actor to restate each turn. The notepad is
+            # Game-Master-only and the historical summary condenses, so without
+            # this a resumed or branched run hands the actor an empty block and
+            # that state is gone at the seam. The file is written as exactly
+            # the response content, so restoring it is a straight read.
+            response_file = actors_dir / f"{actor_id}.md"
+            if response_file.exists():
+                actor.last_actions = response_file.read_text(encoding="utf-8")
+
     # 5. Load historical summary (if exists)
     summary_file = turn_dir / "6-historical-summary.md"
     if summary_file.exists():
