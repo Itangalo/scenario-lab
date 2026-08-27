@@ -439,6 +439,24 @@ incident_pressure still saturates in event-dense runs (97 in FAST with seven
 cyber campaigns); PLATEAU's early flatness was crash-adjusted rather than a
 stall. All three stay open for the full batch.
 
+## What the first-principles prompt test showed (6 branches, 27 August) (ECHO 2026-08-27)
+
+Hypothesis under test: appending "Use first principles. Be brief." to the reasoning steps would widen the outcome space by making the model consider paths it otherwise skips. Placed in three prompts, scoped deliberately: full strength in `user-prompts/actor.md`; in `metrics-update.md` restricted to the narrative, with the metric arithmetic explicitly fenced off, because inviting the Game Master to reconsider frozen physics would destroy cross-run comparability; and in `events.md` restricted to emergent proposals, with an explicit instruction that it widens what is considered and never what is claimed to be likely, so the dice stay calibrated.
+
+Design: six branches from one parent (`run-20260826-115843-01`, fast arm) at turn 9, three control and three treatment, all inheriting the parent's dice seed so the RNG is not a free variable. The parent's own turns 10–18 are a seventh data point on the control side. Measures were fixed before the results were read. Everything is kept in `runs/experiment-first-principles/` with the patch, the cohort labels and the comparison script.
+
+The hypothesis was not supported. Mean spread of the seven final metrics was 20.4 in control against 19.4 in treatment; distinct emergent events 1.8 against 1.7; measures proposed 9.0 against 8.3. Nothing widened.
+
+What did change was the shape of the regulator's programme, in the opposite direction from the intent. Control runs scatter topically, opening a new domain almost every turn: detection, labour, creative works, cyber, whistleblowers. Treatment runs build chains, developing one instrument and escalating it, for example sovereign evaluation node access to a pilot framework to an interim verification regime to red-team verification to tiered market access to automatic restrictions under that regime. That is plausibly better policy reasoning and it is certainly narrower.
+
+It also cost something. Outright referee approvals fell from 64% to 52%, one treatment turn shipped with unresolved violations where no control turn did, and one run proposed the same measure in two consecutive turns instead of carrying it forward under Portfolio.
+
+The brevity half worked: actor completion tokens fell from 1455 to 1238, about 15%.
+
+The test cannot separate the two instructions. "Be brief" demonstrably took effect, and the narrowing may be its consequence rather than the reasoning instruction's, since a shorter answer has less room to open a new topic. Anyone repeating this should vary one at a time.
+
+Caveats: one fork point, one arm, n=3 against 4, and the chaining pattern was read off measure headlines rather than full texts. Treat the chaining as a hypothesis worth another look, not a finding. The prompts were reverted to baseline afterwards; nothing in `runs/` outside the quarantine directory was produced with the modified prompts.
+
 ## Still uncalibrated
 
 - **Gate-open probabilities came back below their stated figures** (the model
