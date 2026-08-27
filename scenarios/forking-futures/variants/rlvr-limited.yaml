@@ -2,8 +2,18 @@
 
 base: "../scenario.yaml"
 
+# NOTE: no `description` field here, on purpose. It is inherited from
+# ../scenario.yaml, which is regime-neutral. The actor system prompt renders
+# scenario_description verbatim ("The simulation focuses on ..."), so an
+# arm-specific description states the regime in the regulator's own prompt and
+# destroys the inference the scenario exists to study. Keep this variant's
+# wording in the comment below, never in the field.
+#
+# This variant: Trajectory arm. General competence saturates early, but
+# domains with verifiable reward — code, mathematics, cyber, narrow
+# engineering — keep improving sharply. Identical physics and instruments to
+# the other arms; only where improvement lands differs.
 name: "Forking Futures — RLVR-Limited"
-description: "Trajectory arm. General competence saturates early, but domains with verifiable reward — code, mathematics, cyber, narrow engineering — keep improving sharply. Identical physics and instruments to the other arms; only where improvement lands differs."
 
 patches:
   - resource: events

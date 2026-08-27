@@ -3,7 +3,17 @@
 
 base: "rlvr-limited.yaml"
 
+# NOTE: no `description` field here, on purpose. It is inherited from
+# ../scenario.yaml, which is regime-neutral. The actor system prompt renders
+# scenario_description verbatim ("The simulation focuses on ..."), so an
+# arm-specific description states the regime in the regulator's own prompt and
+# destroys the inference the scenario exists to study. Keep this variant's
+# wording in the comment below, never in the field.
+#
+# This variant: Urgent-regulator condition on the RLVR-LIMITED arm: same
+# world and physics as Forking Futures — RLVR-Limited, but the regulator is
+# told that preventing large-scale societal harm is what it exists for, and
+# that it may break precedent to do so.
 name: "Forking Futures — RLVR-Limited (Urgent Regulator)"
-description: "Urgent-regulator condition on the RLVR-LIMITED arm: same world and physics as Forking Futures — RLVR-Limited, but the regulator is told that preventing large-scale societal harm is what it exists for, and that it may break precedent to do so."
 actors:
   - regulator-urgent

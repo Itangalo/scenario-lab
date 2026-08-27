@@ -43,32 +43,23 @@ must keep carrying the emergent-events block itself, and the metrics-update
 override must keep carrying the regime-label ban. Each file's header comment
 says what was changed and why.
 
-## The regime-hiding mechanism (built here, not in the brief)
+## How the regime is kept from the regulator (rewritten 27 August) (ECHO 2026-08-27)
 
-The regime must reach the Game Master and stay away from the regulator. Both
-`background_context` and the turn-1 `world_state` carry the draw's context to
-every prompt, including the actor's, so naming the regime in a draw would leak
-it and the central question would collapse.
+The regime must reach the Game Master and stay away from the regulator, which exists to infer it from what happens. Since the arms became variants this is structural rather than defensive: each variant patches `events` and `metric_rules` with its own figures, and neither resource is ever rendered into the actor prompt. There is no regime text sitting in `background_context` or `world_state` for the actor to see, so there is nothing to truncate.
 
-Solution: the draw's context begins with a `<!-- GM-ONLY -->` marker, and
-`user-prompts/actor.md` — a copy of the default template, identical except for
-two Jinja `.split()` calls — truncates the actor's view at that marker.
-Verified: the events, rules and metrics prompts see `REGIME: FAST`; the actor
-prompt does not.
+The `<!-- GM-ONLY -->` marker is retired and must not be used for new work. It solved the draws-era problem: a draw's context reached every prompt including the actor's, so the regime paragraph was placed behind the marker and `user-prompts/actor.md` truncated the actor's view at it. `sampler.py` and `draws/` keep the marker as provenance for runs before 2026-08-26. The two Jinja `.split()` calls survive in the actor override and are now inert, since nothing they read contains the marker.
 
-**This override must be kept in sync** if `templates/user-prompts/actor.md`
-changes. That is a real maintenance cost and was accepted over the alternative
-(three `base`-inheriting sub-scenarios, each duplicating three templates).
+### The channel the marker never covered (found 27 August) (ECHO 2026-08-27)
 
-### The leak the marker cannot stop, and the three layers against it
+Moving the arms onto variants opened a leak the marker was structurally unable to catch. `templates/system-prompts/actor.md` renders `The simulation focuses on {{scenario_description}}.`, and this scenario has no `system-prompts/` override. Under draws that was harmless, because the description came from the shared `scenario.yaml` and named no regime. Each variant then acquired its own `description` stating its arm in plain language, and `rlvr-limited-urgent.yaml` spelled out `RLVR-LIMITED`, the exact uppercase string the constitution bans from the narrative. Every run in `runs/` up to and including the 2026-08-26 batch therefore opened by telling the regulator the regime it was meant to infer. The marker guards `background_context` and `world_state`; the description reaches the prompt through neither.
 
-The truncation only protects the turn-1 context. From turn 2 onward the
-narrative *is* the world state the regulator reads, and the Game Master — which
-legitimately knows the regime — sometimes wrote the label into it. In the first
-plateau batch (four runs) the uppercase labels leaked into seven turns across
-three runs; in one run the regulator declared its regime with certainty by turn
-9. The referee caught some instances, missed others (approved turns still
-contained the label), and once ran out of attempts.
+The fix: variants define no `description` at all and inherit the neutral one from `scenario.yaml`, keeping their own wording in a YAML comment. Arm identity still travels by `name`, which is not rendered into the actor prompt, so cohort grouping is unaffected. `tests/test_regime_not_leaked_to_actor.py` asserts both halves, at the source and in the rendered prompt, for every variant.
+
+Two lessons worth keeping. Hiding a fact is a property of every channel into the prompt, not of the one channel that leaked first, so a guard aimed at a specific field ages badly. And a check that renders the real prompt and greps it would have caught both this leak and the original one, which is why the test does that rather than inspecting the YAML alone.
+
+### The third channel: the narrative itself (ECHO 2026-08-27)
+
+Structural separation covers the prompts the regime is configured in, and the description fix covers the scenario blurb, but neither reaches the narrative. From turn 2 onward the narrative *is* the world state the regulator reads, and the Game Master, which legitimately knows the regime, sometimes wrote the label into it. In the first plateau batch (four runs) the uppercase labels leaked into seven turns across three runs; in one run the regulator declared its regime with certainty by turn 9. The referee caught some instances, missed others (approved turns still contained the label), and once ran out of attempts.
 
 Three layers now guard this, because no single one is reliable:
 

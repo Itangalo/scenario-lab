@@ -2,8 +2,18 @@
 
 base: "../scenario.yaml"
 
+# NOTE: no `description` field here, on purpose. It is inherited from
+# ../scenario.yaml, which is regime-neutral. The actor system prompt renders
+# scenario_description verbatim ("The simulation focuses on ..."), so an
+# arm-specific description states the regime in the regulator's own prompt and
+# destroys the inference the scenario exists to study. Keep this variant's
+# wording in the comment below, never in the field.
+#
+# This variant: Trajectory arm. Progress decelerates visibly: models become
+# reliable, cheap and widely deployed while returns to scaling decline.
+# Nothing superhuman arrives within the horizon. Identical physics and
+# instruments to the other arms; only the world's speed differs.
 name: "Forking Futures — Plateau"
-description: "Trajectory arm. Progress decelerates visibly: models become reliable, cheap and widely deployed while returns to scaling decline. Nothing superhuman arrives within the horizon. Identical physics and instruments to the other arms; only the world's speed differs."
 
 patches:
   - resource: events
