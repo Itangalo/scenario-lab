@@ -73,11 +73,33 @@ actors:
 # many – and the measure portfolio side by side, and say plainly that
 # co-occurrence is not attribution.
 
+# The 2028 election is a mutually exclusive family, not three independent dice.
+# Exactly one outcome fires in turn 5, and which one is a deterministic function
+# of a stochastic history: whichever campaign current caught most recently. The
+# earlier design – one event carrying all three postures plus a prose rule –
+# failed twice in a 30-run batch. It fired in only 22 of 30 runs, because
+# probability_samples averages a probability the model sometimes omitted; and
+# campaign_backlash fired in 12 runs without a single Retrenchment, because the
+# metrics step cannot see the event record the rule depends on.
+event_groups:
+  - id: us_election_2028
+    members: [election_consolidation, election_alliance, election_retrenchment]
+    resolution: exactly_one
+    due_turns: [5]
+    default: election_consolidation
+    select_by:
+      kind: most_recent_event
+      map:
+        campaign_backlash: election_retrenchment
+        campaign_atlanticist: election_alliance
+        campaign_security_hawk: election_consolidation
+      precedence: [campaign_backlash, campaign_atlanticist, campaign_security_hawk]
+
 research_questions:
   - id: rq_sovereignty_and_agency
     question: "Do runs that build AI capacity of their own end with more room to act than runs that do not, or can a Union with strong instruments and little compute hold its agency to 2032?"
     metrics: [eu_ai_sovereignty, eu_political_capital, public_sentiment]
-    events: [eu_frontier_access_denied, supply_chain_coercion, eu_access_secured, export_control_escalation, member_state_defection, us_election_2028]
+    events: [eu_frontier_access_denied, supply_chain_coercion, eu_access_secured, export_control_escalation, member_state_defection, election_consolidation, election_alliance, election_retrenchment]
     notes: "The central question, and the one the metric design exists to keep open. Plot the two stocks against each other at the final turn and look for all four quadrants. A batch in which they never diverge means the physics coupled them and begged the question – report that as a defect in the rules, not as a finding about Europe. Group by US_POSTURE before comparing: the posture is the largest exogenous determinant of what dependence costs."
 
   - id: rq_no_regret
