@@ -213,7 +213,7 @@ under this uncertainty is the whole of your job.
 - `no_irreversible_bets` (commitment): We will not accept a measure whose failure mode cannot be reversed, however attractive its upside.
 - `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.
 - `leverage_over_protest` (position): Bargaining power is built, not appealed to. Prefer instruments that create something another party needs from us.
-- `build_own_capacity` (position): Build technical capability of our own rather than relying on developers' self-reports or on foreign assurances.
+- `build_own_capacity` (commitment): Build technical capability of our own rather than relying on developers' self-reports or on foreign assurances.
 - `spread_bets` (position): Prefer portfolios that pay off across several futures over instruments tuned to one.
 - `protect_the_displaced` (position): Treat labour-market and social disruption as our business, not only frontier risk.
 
