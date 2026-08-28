@@ -245,6 +245,21 @@ def parse_research_questions(value: object) -> List[ResearchQuestion]:
     return questions
 
 
+def parse_event_groups_or_raise(value: object):
+    """Parse ``event_groups`` from scenario.yaml, raising on malformed entries.
+
+    Structural problems are configuration errors rather than warnings: a group
+    that does not parse silently reverts its members to independent dice, which
+    is exactly the behaviour the group exists to prevent.
+    """
+    from .event_groups import parse_event_groups
+
+    groups, errors = parse_event_groups(value)
+    if errors:
+        raise ValueError("; ".join(errors))
+    return groups
+
+
 def parse_termination(value: object) -> List[TerminationCondition]:
     """Parse the optional ``termination`` block from scenario.yaml.
 
@@ -699,6 +714,27 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
                     {"id": t.id, "when": t.when, "description": t.description}
                     for t in base_config.termination
                 ],
+                "event_groups": [
+                    {
+                        "id": g.id,
+                        "members": list(g.members),
+                        "resolution": g.resolution,
+                        "due_turns": list(g.due_turns),
+                        "default": g.default,
+                        **(
+                            {
+                                "select_by": {
+                                    "kind": "most_recent_event",
+                                    "map": dict(g.select_by.mapping),
+                                    "precedence": list(g.select_by.precedence),
+                                }
+                            }
+                            if g.select_by
+                            else {}
+                        ),
+                    }
+                    for g in base_config.event_groups
+                ],
                 "research_questions": [
                     {
                         "id": rq.id,
@@ -854,6 +890,7 @@ def load_config(path: Path, _loading_stack: Optional[List[str]] = None) -> Scena
         research_questions=parse_research_questions(data.get("research_questions")),
         requires_initial_state=bool(data.get("requires_initial_state", False)),
         termination=parse_termination(data.get("termination")),
+        event_groups=parse_event_groups_or_raise(data.get("event_groups")),
         llm=llm_config,
         emergent_events=emergent_events,
         rule_evolution=rule_evolution,

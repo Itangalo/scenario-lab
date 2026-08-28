@@ -565,6 +565,105 @@ class Orchestrator:
         """
         return random.Random(f"{self.random_seed}:{turn}:{event_id}").random()
 
+    def _record_occurrence(self, turn: int, event_id: str, repeatable: bool) -> None:
+        """Enter a fired event into the run's history and one-shot bookkeeping."""
+        self.scenario.occurred_events.add(event_id)
+        self.scenario.event_log.append({"turn": turn, "id": event_id})
+        if not repeatable:
+            self._mark_event_occurred(event_id)
+
+    def _resolve_event_groups(
+        self,
+        turn: int,
+        groups: list,
+        pending_groups: dict,
+        group_weights: dict,
+        force_ids: set,
+        triggered: list,
+        evaluations: list,
+    ) -> None:
+        """Settle every mutually exclusive family that is live this turn.
+
+        A group consumes one seeded roll whatever its size, keyed on the group
+        id rather than an event id, so adding a member does not shift the dice
+        for the others. An ``exactly_one`` group resolves even when the events
+        step listed none of its members: that is the whole point of declaring
+        one, and the default member carries it.
+        """
+        from .event_groups import resolve_group
+
+        for group in groups:
+            if not group.is_due(turn):
+                continue
+            pending = pending_groups.get(group.id, [])
+            if not pending and group.resolution != "exactly_one":
+                continue
+
+            weights = group_weights.get(group.id, {})
+            roll = self._event_roll(turn, f"group:{group.id}")
+            outcome = resolve_group(
+                group,
+                weights,
+                roll,
+                event_log=self.scenario.event_log,
+                turn=turn,
+                forced=tuple(m for m in group.members if m in force_ids),
+            )
+
+            for evaluation in pending:
+                member_id = evaluation.get("id")
+                evaluation["group_roll"] = roll
+                evaluation["group_basis"] = outcome.basis
+                if member_id == outcome.chosen:
+                    evaluation["triggered"] = True
+                else:
+                    evaluation["triggered"] = False
+                    evaluation["suppressed_by_group"] = group.id
+
+            if outcome.chosen is None:
+                print(f"    Group {group.id}: no member fires ({outcome.detail})")
+                continue
+
+            event_obj = next(
+                (e for e in self.scenario.events if e.id == outcome.chosen), None
+            )
+            if event_obj is None:
+                print(
+                    f"  Warning: Group {group.id} chose '{outcome.chosen}', which is not "
+                    f"an event in this scenario; nothing fires."
+                )
+                continue
+
+            print(
+                f"  ✓ Event triggered: {outcome.chosen} "
+                f"(group {group.id}, {outcome.basis}: {outcome.detail})"
+            )
+            self._record_occurrence(turn, outcome.chosen, repeatable=event_obj.can_repeat)
+
+            # A member the events step never listed still has to reach the rest
+            # of the turn, so synthesise the record the downstream steps read.
+            listed = next(
+                (e for e in pending if e.get("id") == outcome.chosen), None
+            )
+            if listed is None:
+                record = {
+                    "id": outcome.chosen,
+                    "probability": weights.get(outcome.chosen, 0.0),
+                    "event_group": group.id,
+                    "group_roll": roll,
+                    "group_basis": outcome.basis,
+                    "triggered": True,
+                    "unlisted_by_model": True,
+                }
+                pending.append(record)
+                pending_groups[group.id] = pending
+                evaluations.append(record)
+                triggered.append({"id": outcome.chosen, "probability": record["probability"]})
+            else:
+                triggered.append(
+                    {"id": outcome.chosen, "probability": listed.get("probability", 0.0)}
+                )
+
     def _event_override_for_turn(self, turn: int):
         """Return the EventOverrides scoped to this turn, if any."""
         overrides = self.scenario.config.event_overrides
@@ -792,6 +891,12 @@ class Orchestrator:
         emergent_cfg = self.scenario.config.emergent_events
         emergent_accepted = 0
 
+        # Mutually exclusive families: one roll per group, after the loop.
+        groups = list(getattr(self.scenario.config, "event_groups", []) or [])
+        grouped_members = {m: g for g in groups for m in g.members}
+        pending_groups: dict[str, list[dict]] = {}
+        group_weights: dict[str, dict[str, float]] = {}
+
         for event_data in candidate_events:
             if not isinstance(event_data, dict) or "id" not in event_data or "probability" not in event_data:
                 print(f"  Warning: Skipping invalid event data: {event_data}")
@@ -919,6 +1024,33 @@ class Orchestrator:
                 event_data["emergent"] = True
                 emergent_accepted += 1
 
+            # Members of a mutually exclusive family do not roll their own
+            # dice. Their probabilities become the family's relative weights
+            # and one roll decides the whole group, after this loop.
+            group = grouped_members.get(event_id)
+            if group is not None and not group.is_due(turn):
+                # A member never rolls its own dice. Outside the group's due
+                # turns the family is not resolving at all, so a candidate the
+                # model listed anyway is dropped rather than falling through to
+                # an individual roll it was never meant to have.
+                evaluation = {key: value for key, value in event_data.items()}
+                evaluation["skipped"] = (
+                    f"Member of event group '{group.id}', which does not resolve this turn"
+                )
+                evaluation["triggered"] = False
+                evaluations.append(evaluation)
+                continue
+
+            if group is not None:
+                evaluation = {key: value for key, value in event_data.items()}
+                evaluation["probability"] = probability
+                evaluation["event_group"] = group.id
+                pending_groups.setdefault(group.id, []).append(evaluation)
+                if event_id not in suppress_ids:
+                    group_weights.setdefault(group.id, {})[event_id] = probability
+                evaluations.append(evaluation)
+                continue
+
             roll = self._event_roll(turn, event_id)
 
             # Start the evaluation record with any extra fields the LLM returned.
@@ -958,10 +1090,7 @@ class Orchestrator:
                 # analysis and every downstream report need. Suppression of
                 # one-shot events is a separate concern carried by
                 # ``Event.occurred``, set below only where it applies.
-                self.scenario.occurred_events.add(event_id)
-                self.scenario.event_log.append({"turn": turn, "id": event_id})
-                if not is_emergent and not event_obj.can_repeat:
-                    self._mark_event_occurred(event_id)
+                self._record_occurrence(turn, event_id, repeatable=is_emergent or event_obj.can_repeat)
             else:
                 if suppressed:
                     print(f"    Event suppressed: {event_id} (p={probability:.2%})")
@@ -969,6 +1098,10 @@ class Orchestrator:
                     print(f"    Event not triggered: {event_id} (p={probability:.2%}, roll={roll:.2f})")
 
             evaluations.append(evaluation)
+
+        self._resolve_event_groups(
+            turn, groups, pending_groups, group_weights, force_ids, triggered, evaluations
+        )
 
         return triggered, evaluations
 

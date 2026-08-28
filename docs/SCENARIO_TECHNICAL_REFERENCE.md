@@ -233,6 +233,45 @@ Behavior:
 
 Note: scenarios that override `user-prompts/events.md` must include the emergent-events instructions themselves (see `templates/user-prompts/events.md` for the default wording); otherwise the model is never told it may propose emergent events.
 
+### `event_groups`
+
+Optional. Declares families of events that cannot co-occur, so that exactly one — or at most one — resolves.
+
+```yaml
+event_groups:
+  - id: us_election_2028
+    members: [election_consolidation, election_alliance, election_retrenchment]
+    resolution: exactly_one        # or at_most_one
+    due_turns: [5]
+    default: election_consolidation
+    select_by:                     # optional: decide from the run's history instead of dice
+      kind: most_recent_event
+      map:
+        campaign_backlash: election_retrenchment
+        campaign_atlanticist: election_alliance
+        campaign_security_hawk: election_consolidation
+      precedence: [campaign_backlash, campaign_atlanticist, campaign_security_hawk]
+```
+
+Fields:
+
+- `id` (string, required) — unique across groups
+- `members` (list, required) — at least two event ids, each defined in `events.md`
+- `resolution` (string) — `exactly_one` or `at_most_one` (default `at_most_one`)
+- `due_turns` (list of integers, optional for `at_most_one`, **required** for `exactly_one`) — the turns in which the group resolves; omitted means every turn
+- `default` (string, **required** for `exactly_one`) — the member that wins when every weight is zero
+- `select_by` (mapping, optional) — deterministic selection from the event record; `kind` must be `most_recent_event`, `map` sends a source event id to the member it elects, and `precedence` orders sources that fired in the same turn (defaults to `map` order)
+
+Behavior:
+
+- one seeded roll per group per turn, independent of member count
+- weights come from the probabilities the events step returned for the members; a member the model omitted counts as zero
+- `select_by` ignores the dice entirely and reads only events that fired in turns *before* the resolving turn
+- a branch's forced event wins its group; a suppressed member is weighted zero
+- the winner enters `occurred_events` and `event_log` as an ordinary event; losers are recorded with `suppressed_by_group`
+
+Validation: unknown members, a member in two groups, fewer than two members, a `due_turn` outside `1..max_turns`, an `exactly_one` group missing `due_turns` or `default`, and a `default` or `select_by` target that is not a member are all errors. A repeatable member in an `exactly_one` group is a warning.
+
 ### `rule_evolution`
 
 Optional guardrails for how freely `metric-rules.md` may change during runs:

@@ -1,5 +1,6 @@
 """Data models for Scenario Lab V4."""
 
+from .event_groups import EventGroup  # noqa: F401  (typing)
 from dataclasses import dataclass, field
 from typing import Callable, Optional, Union, List
 import json
@@ -540,6 +541,10 @@ class ScenarioConfig:
 
     # Conditions that end a run before max_turns (evaluated after each turn).
     termination: list[TerminationCondition] = field(default_factory=list)
+
+    # Mutually exclusive event families ("exactly one of these happens").
+    # See scenario_lab/event_groups.py.
+    event_groups: list["EventGroup"] = field(default_factory=list)
 
     # Variant resource patches (set from YAML `patches:`, paths resolved
     # absolute during loading). Applied in order after the base scenario's

@@ -326,3 +326,26 @@ class TestCreateBranch:
         # Verify runs directory was created
         assert (output_base / "runs").exists()
         assert new_run_dir.parent == output_base / "runs"
+
+
+def test_branch_carries_the_event_log_truncated_at_the_branch_point(parent_run_dir, output_base):
+    """A branch inherits what happened before it, and nothing after.
+
+    Without this the branch starts with an empty record: windowed gate
+    conditions ("if X occurred in the previous 3 turns") all read as shut, and
+    an event group selecting from the record falls to its default.
+    """
+    from scenario_lab.resume import create_branch
+
+    summary = json.loads((parent_run_dir / "summary.json").read_text())
+    summary["event_log"] = [
+        {"turn": 1, "id": "early_signal"},
+        {"turn": 2, "id": "campaign_backlash"},
+        {"turn": 3, "id": "after_the_branch"},
+    ]
+    (parent_run_dir / "summary.json").write_text(json.dumps(summary, indent=2))
+
+    branch_dir = create_branch(parent_run_dir, from_turn=2, output_base=output_base)
+    branched = json.loads((branch_dir / "summary.json").read_text())
+
+    assert [e["id"] for e in branched["event_log"]] == ["early_signal", "campaign_backlash"]

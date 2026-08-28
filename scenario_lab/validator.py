@@ -381,7 +381,12 @@ def validate_metric_references(scenario: Scenario) -> List[str]:
     # metric -- "once snap_election_date_announced has fired" is exactly the kind
     # of rule the events system exists to support. Check against both, or such a
     # rule cannot be written using the event's own id.
-    valid_identifiers = set(valid_metric_ids) | {event.id for event in scenario.events}
+    # Event group ids are legitimate references too: a member's condition names
+    # the family that resolves it, and that family is not itself an event.
+    group_ids = {group.id for group in getattr(scenario.config, "event_groups", []) or []}
+    valid_identifiers = (
+        set(valid_metric_ids) | {event.id for event in scenario.events} | group_ids
+    )
 
     for actor_id, actor in scenario.actors.items():
         text = f"{actor.short_description} {actor.long_description}"
@@ -798,6 +803,71 @@ def validate_prompt_overrides(scenario: Scenario) -> Tuple[List[str], List[str]]
     return errors, warnings
 
 
+def validate_event_groups(scenario: Scenario) -> Tuple[List[str], List[str]]:
+    """Validate mutually exclusive event families against the event catalogue.
+
+    Every failure here is one that would otherwise show up as a group silently
+    doing nothing: a member id that matches no event, a member claimed by two
+    groups, a due turn past the end of the run. Each of those degrades the
+    family back to independent dice, which is the failure the mechanism exists
+    to prevent, and does so without an error at run time.
+
+    Returns:
+        (errors, warnings)
+    """
+    errors: List[str] = []
+    warnings: List[str] = []
+
+    groups = getattr(scenario.config, "event_groups", [])
+    if not groups:
+        return errors, warnings
+
+    known = {event.id: event for event in scenario.events}
+    seen_groups: set = set()
+    claimed: dict = {}
+
+    for group in groups:
+        if group.id in seen_groups:
+            errors.append(f"event_groups: duplicate group id '{group.id}'")
+        seen_groups.add(group.id)
+
+        for member in group.members:
+            if member not in known:
+                errors.append(
+                    f"event group '{group.id}': member '{member}' is not an event in events.md"
+                )
+                continue
+            if member in claimed and claimed[member] != group.id:
+                errors.append(
+                    f"event group '{group.id}': member '{member}' already belongs to "
+                    f"group '{claimed[member]}'; a member may belong to one group only"
+                )
+            claimed[member] = group.id
+
+            if known[member].can_repeat and group.resolution == "exactly_one":
+                warnings.append(
+                    f"event group '{group.id}': member '{member}' is repeatable, which "
+                    f"sits oddly with an exactly-one family that resolves once"
+                )
+
+        for turn in group.due_turns:
+            if turn < 1 or turn > scenario.config.max_turns:
+                errors.append(
+                    f"event group '{group.id}': due_turn {turn} is outside the run "
+                    f"(1..{scenario.config.max_turns})"
+                )
+
+        if group.select_by is not None:
+            for source in group.select_by.mapping:
+                if source not in known:
+                    warnings.append(
+                        f"event group '{group.id}': select_by reads '{source}', which is "
+                        f"not an event in events.md, so it can never elect anything"
+                    )
+
+    return errors, warnings
+
+
 def validate_termination(scenario: Scenario) -> Tuple[List[str], List[str]]:
     """Validate termination conditions against the metrics they reference.
 
@@ -1069,6 +1139,9 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
     term_errors, term_warnings = validate_termination(scenario)
     errors.extend(term_errors)
     warnings.extend(term_warnings)
+    group_errors, group_warnings = validate_event_groups(scenario)
+    errors.extend(group_errors)
+    warnings.extend(group_warnings)
     prompt_errors, prompt_warnings = validate_prompt_overrides(scenario)
     errors.extend(prompt_errors)
     warnings.extend(prompt_warnings)

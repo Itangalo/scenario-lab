@@ -455,6 +455,16 @@ def create_branch(
         "final_metrics": final_metrics,
         "history": new_history,
         "occurred_events": parent_summary.get("occurred_events", []),
+        # The turn-stamped record, truncated at the branch point. Without it a
+        # branch starts with no history: every windowed gate condition reads as
+        # shut, and any event group selecting from the record falls to its
+        # default. The flat occurred-events set cannot stand in, because it
+        # carries no turns.
+        "event_log": [
+            entry
+            for entry in parent_summary.get("event_log", [])
+            if isinstance(entry, dict) and entry.get("turn", 0) <= from_turn
+        ],
         "emerging_events": parent_summary.get("emerging_events", []),
         "status": "running",
         "last_updated": datetime.now().isoformat(),
