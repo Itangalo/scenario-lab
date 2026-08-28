@@ -31,15 +31,13 @@ Turn 1 covers autumn 2026 and is the same in every run and in every trajectory r
 
 ## The 2028 US presidential election
 
-The election falls in turn 5, which covers the second half of 2028, and its outcome sets the posture the United States holds for the rest of the run. Three outcomes are defined and **exactly one occurs**. None of them is simply good or bad for the Union; each trades something.
+The election falls in turn 5, which covers the second half of 2028, and its outcome sets the posture the United States holds for the rest of the run. Three outcomes are defined – Consolidation, Alliance and Retrenchment – and **exactly one occurs**. None of them is simply good or bad for the Union; each trades something.
 
-The outcome must not be a deterministic function of the metrics, or every run from the same starting point elects the same president. It is resolved in two stages instead, with the dice one step earlier in the chain.
+They are declared as an event group in `scenario.yaml`, so exclusivity is enforced by the orchestrator rather than asked for in prose. What the group needs from you is not a probability each, but a **weight each: how plausible this outcome looks against the other two, given the world as it now stands.** The three weights are normalised and one roll settles it, so what matters is their ratio, not their absolute size.
 
-**Stage one – the campaign.** In turns 3 and 4, covering the second half of 2027 and the first half of 2028, three campaign currents are evaluated independently, each with its own dice and its own metric-weighted probability. They are not mutually exclusive: several currents can be live in the same campaign, which is what actually happens. Each fires at most once.
+Weigh them by reading the campaign, not by counting events. The three campaign entries below are evidence – the loudest signals, when they occur – but they are not the mechanism, and a campaign with none of them still has a mood. Read the whole world: what has happened to American jobs and prices, whether the frontier looks like an asset to guard or a liability to contain, whether the contest with China is the frame everything is discussed through, whether allies have proved useful or merely expensive, and what the Union itself has done to make itself worth having.
 
-**Stage two – the result.** Three outcome events – `election_consolidation`, `election_alliance` and `election_retrenchment` – form a mutually exclusive family declared as an event group in `scenario.yaml`. The group resolves in turn 5 and exactly one member fires, enforced by the orchestrator rather than by instruction. No dice are involved: the group selects from the run's own event record.
-
-*The resolution rule, now mechanical.* The campaign current that fired **most recently** elects the outcome: `campaign_backlash` gives Retrenchment, `campaign_atlanticist` gives Alliance, `campaign_security_hawk` gives Consolidation. Where two or more fired in the same turn, precedence is backlash, then atlanticist, then hawk – a domestic grievance outweighs a foreign-policy argument in a general election. **If no current fired, the result is Consolidation**, the continuation of the posture already in place in 2026. The outcome is therefore a deterministic function of a stochastic history: runs that started identically elect different presidents, while the EU's choices still bias which currents catch.
+**Give all three a non-zero weight unless the world genuinely rules one out.** A near-certain outcome is a real judgment and you may state it; three identical weights are also a real judgment, and mean the campaign could go any way. What is not acceptable is silently omitting an outcome, which reads as a weight of zero and removes a possible future without saying so.
 
 *Recording the result.* The outcome is its own event id, so it enters the run's event record automatically and runs can be grouped afterwards without reading prose. The Game Master's remaining job is memory: carry the line `US_POSTURE: CONSOLIDATION`, `US_POSTURE: ALLIANCE` or `US_POSTURE: RETRENCHMENT` in the notepad from turn 5 onward, matching whichever event fired. The posture is a standing condition of the world through 2032, and metric rule 18 reads it every turn.
 
@@ -60,43 +58,43 @@ The reading that settles across the security community within days is that this 
 
 ## Anti-AI Backlash Becomes a Campaign Platform
 **ID:** campaign_backlash
-**Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. Candidates with a serious path to the nomination run explicitly against AI.
+**Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. Candidates with a serious path to the nomination run explicitly against AI. This is campaign evidence, not a mechanism: it decides nothing on its own, and weighs on the 2028 outcome only as one signal among many.
 **Probability:** 25%. Add 20 points if `public_sentiment` is below 30. Add 15 points if `labour_displacement` has occurred. Add 10 points if `backlash_physical` has occurred.
 **Can repeat:** No
 **Description:** Moratoriums on data centres, restrictions on AI in schools and hiring, and protection for displaced workers move from the fringe to the platform, on both left and right. Polling shows the position is popular well beyond the activists, and candidates who hedged start to reposition.
 
 ## Security Hawks Set the Terms
 **ID:** campaign_security_hawk
-**Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. The contest with China becomes the frame through which AI is discussed, and the candidates compete on toughness.
+**Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. The contest with China becomes the frame through which AI is discussed, and the candidates compete on toughness. This is campaign evidence, not a mechanism: it decides nothing on its own, and weighs on the 2028 outcome only as one signal among many.
 **Probability:** 30%. Add 20 points if a Taiwan event has occurred in the previous four completed turns. Add 10 points if `ai_capability` is above 65. Add 10 points if `export_control_escalation` has occurred in the previous four completed turns.
 **Can repeat:** No
 **Description:** Both campaigns converge on the position that the United States must win, that the lead is fragile, and that anything shared with anyone is a lead surrendered. Arguments for restraint are recast as arguments for losing.
 
 ## The Alliance Argument Gains Ground
 **ID:** campaign_atlanticist
-**Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. A serious argument takes hold that a coalition beats a fortress. Leverage is what makes the argument concrete rather than sentimental.
-**Probability:** 15%. Add 20 points if `eu_ai_sovereignty` is above 40. Add 15 points if a fully implemented category 8 measure has coordinated other states holding pieces of the supply chain, or if a shock landing on both sides of the Atlantic occurred in the previous four completed turns.
+**Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. A serious argument takes hold that a coalition beats a fortress. This is campaign evidence, not a mechanism: it decides nothing on its own, and weighs on the 2028 outcome only as one signal among many.
+**Probability:** 20%. Add 15 points if `eu_access_secured`, `middle_power_coalition` or a fully implemented category 8 measure has given Washington something it needs from the Union. Add 10 points if a shock landed on both sides of the Atlantic in the previous four completed turns. Add 10 points if `eu_ai_sovereignty` is above 35.
 **Can repeat:** No
 **Description:** A coalition of defence, intelligence and industrial voices argues that a hollowed-out Europe is a strategic liability, that allied capacity is a force multiplier rather than a leak, and that the current arrangement is producing dependency without loyalty. It is not the loudest argument in the campaign, but it stops being unrespectable.
 
 ## The 2028 US Presidential Election – Consolidation
 **ID:** election_consolidation
-**Condition:** One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. Which member fires is set by the resolution rule above, not by judgement about which would be most fitting, and not by this entry's probability.
-**Probability:** Not rolled individually. The group resolves from the run's event record.
+**Condition:** One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. List all three in that turn; the group fires exactly one.
+**Probability:** A weight against the other two outcomes, not a chance of happening alone. This is the posture already in place in 2026, so it is the one the other two have to beat: weigh it up where the contest with China is the frame AI is discussed through, where the lead looks large enough to be worth guarding and fragile enough to lose, where anything shared reads as a lead surrendered, and where allies have looked like leaks rather than assets. Weigh it down where the domestic politics of AI has turned hostile, or where holding the technology this closely has visibly cost the United States something.
 **Can repeat:** No
 **Description:** The United States elects a president, and advanced AI is treated as a strategic asset to be held rather than a product to be sold. Federal review of frontier models becomes explicit rather than nominally voluntary, export controls tighten again, and access for foreign customers is rationed by country tier and reviewed against American security interests. Allies are not enemies but they are clients: what they receive, and when, is decided in Washington. For the Union this is the hardest of the three – dependence becomes a lever someone else holds, and the AI Act's leverage weakens further because the alternative to compliance is having no access at all. Write `US_POSTURE: CONSOLIDATION` into the world state and carry it in the notepad from this turn onward.
 
 ## The 2028 US Presidential Election – Alliance
 **ID:** election_alliance
-**Condition:** One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. Which member fires is set by the resolution rule above, not by judgement about which would be most fitting, and not by this entry's probability.
-**Probability:** Not rolled individually. The group resolves from the run's event record.
+**Condition:** One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. List all three in that turn; the group fires exactly one.
+**Probability:** A weight against the other two outcomes, not a chance of happening alone. Weigh it up where the Union holds something Washington actually needs – supply-chain leverage exercised rather than merely possessed, a coalition that held under pressure, capacity or evaluation the Americans want access to – and where a shock landed on both sides of the Atlantic and allied capacity visibly helped. Weigh it down where the Union has nothing to bring, since this outcome is an argument about usefulness and there is no sentimental version of it.
 **Can repeat:** No
 **Description:** The United States elects a president, and the administration concludes that a coalition beats a fortress, and that a technologically hollowed-out Europe is a liability rather than a convenience. Allied governments and vetted institutions get structured access to frontier capability on published terms, joint evaluation and incident-reporting arrangements are stood up, and the tiering of inference is relaxed for partners. The price is alignment: on export controls, on standards, and on which third countries are dealt with. For the Union the immediate relief is real, and the trap is that the case for building its own capacity becomes much harder to fund once the pressure is off. Write `US_POSTURE: ALLIANCE` into the world state and carry it in the notepad from this turn onward.
 
 ## The 2028 US Presidential Election – Retrenchment
 **ID:** election_retrenchment
-**Condition:** One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. Which member fires is set by the resolution rule above, not by judgement about which would be most fitting, and not by this entry's probability.
-**Probability:** Not rolled individually. The group resolves from the run's event record.
+**Condition:** One of three mutually exclusive outcomes of the 2028 election, resolved in turn 5 by the `us_election_2028` event group. List all three in that turn; the group fires exactly one.
+**Probability:** A weight against the other two outcomes, not a chance of happening alone. Weigh it up where AI has become domestically toxic in the United States: jobs visibly lost, a scandal with a face to it, protest that has turned physical, prices or power bills blamed on data centres, and polling that makes running against the industry the cheap position. Weigh it down where the technology is delivering benefits the public can feel, or where a security threat has crowded domestic grievance out of the campaign.
 **Can repeat:** No
 **Description:** The anti-AI backlash decides the election and the incoming administration turns inward. Data centre moratoriums, restrictions on AI in schools, courts and hiring, job guarantees and direct transfers funded by the sector, and an abrupt loss of appetite for anything that looks like helping the industry. American frontier progress slows for the first time for reasons that are neither compute nor capital. For the Union the pressure eases and the window for building its own position widens – but the partner it has been depending on is now less capable, less predictable and preoccupied, and whoever is second in the world gains ground while Washington argues with itself. Write `US_POSTURE: RETRENCHMENT` into the world state and carry it in the notepad from this turn onward.
 

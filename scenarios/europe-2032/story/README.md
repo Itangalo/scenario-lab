@@ -72,11 +72,16 @@ Read with care – ten runs per road is far too few to separate a road from its 
 - **Road B bought resilience and paid in sentiment**, ending 11 points below the other two. Hardening is visible, unglamorous and reads to the public as an admission of exposure.
 - **Road C ends with the most room to act** and is the only road that finishes above where it started on capital. Cheap, fast, legible – and it did nothing for safety either, which is the point the metric design keeps making.
 
-### Defects this batch exposed
+### Defects this batch exposed – both since fixed
+
+The two below were found in these 30 runs and are now repaired in the engine and the scenario. The runs themselves still carry the broken elections, so they remain usable as material for what-could-have-happened but not for anything turning on the American posture.
+
 
 Both bear on turns 3–5, so treat the election and anything downstream of it as provisional until they are fixed.
 
-1. **The 2028 election is not certain in practice.** It fired in 22 of 30 runs, though its condition says it always happens. Cause: `probability_samples: 3` averages the events step's three draws, and the model omitted the event from one or two of them, giving a mean probability of 0.33 or 0.67 that the dice could then fail. Fix: name `us_election_2028` in the mandatory always-list paragraph of `user-prompts/events.md`, as the six always-eligible escalations already are.
-2. **The resolution rule is not being applied.** `campaign_backlash` fired in 12 runs, which by the rule gives Retrenchment, yet every run that recorded a posture recorded CONSOLIDATION – the no-current default. The Game Master writing the world state has no structured record of which campaign current fired: `event_history` is rendered into the events prompt, not the metrics prompt. Fix within existing plumbing: instruct the Game Master to write a `CAMPAIGN:` line into the notepad whenever a campaign current fires, and to read those lines at turn 5. Four runs recorded no posture line at all.
+1. **The 2028 election was not certain in practice.** It fired in 22 of 30 runs, though its condition said it always happens: `probability_samples: 3` averages the events step's three draws, and the model omitted the event from one or two of them, giving a mean of 0.33 or 0.67 that the dice could then fail.
+2. **The resolution rule was not applied.** `campaign_backlash` fired in 12 runs, which by the rule gives Retrenchment, yet every run that recorded a posture recorded CONSOLIDATION – the no-current default. The metrics step, which writes the world state, cannot see the event record the rule depends on. Four runs recorded no posture line at all.
 
-`campaign_atlanticist` fired in 0 of 30 runs. Its 15% base needs both `eu_ai_sovereignty` above 40 and a category 8 measure to reach a useful probability, and neither happens by 2028 on any road – so Alliance is currently unreachable, not merely rare.
+Both are gone. The three outcomes are now a mutually exclusive event group resolved in turn 5: Python guarantees exactly one fires, and the events step decides which by weighing the three against each other from the world as it stands. A third failure was avoided on the way – deriving the outcome mechanically from the last campaign current made the presidency hang on two narrow events in a four-turn window, and `campaign_atlanticist` fired 0 times in 30 runs, so Alliance was unreachable rather than rare. The campaign events stay in the pool as evidence the model reads; they decide nothing.
+
+Checked on three branches from turn 4: weights came back graded and all three outcomes were live in every sample – consolidation 0.43–0.52, alliance 0.22–0.30, retrenchment 0.27–0.32 – rather than collapsing onto one. All three elected Retrenchment, which is the shared dice seed rather than a degenerate reading: runs at the same index carry the same seed by design.

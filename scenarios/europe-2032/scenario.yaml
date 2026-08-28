@@ -74,26 +74,29 @@ actors:
 # co-occurrence is not attribution.
 
 # The 2028 election is a mutually exclusive family, not three independent dice.
-# Exactly one outcome fires in turn 5, and which one is a deterministic function
-# of a stochastic history: whichever campaign current caught most recently. The
-# earlier design – one event carrying all three postures plus a prose rule –
-# failed twice in a 30-run batch. It fired in only 22 of 30 runs, because
-# probability_samples averages a probability the model sometimes omitted; and
-# campaign_backlash fired in 12 runs without a single Retrenchment, because the
-# metrics step cannot see the event record the rule depends on.
+# Exactly one outcome fires in turn 5; Python guarantees that, and the events
+# step decides which by weighing the three against each other from the world as
+# it stands. The weights are normalised, so only their ratio matters, and one
+# seeded roll settles it – a campaign the model reads as leaning heavily one way
+# still leaves the other outcomes live.
+#
+# Two earlier designs are recorded here because both failed in ways worth not
+# repeating. One event carrying all three postures plus a prose rule fired in
+# only 22 of 30 runs, because probability_samples averages a probability the
+# model sometimes omits from a sample. Deriving the outcome mechanically from
+# which campaign current fired last then removed that failure but added another:
+# it made the presidency hang on two narrow events inside a four-turn window,
+# and campaign_atlanticist fired zero times in 30 runs, so Alliance was
+# unreachable rather than merely rare. The campaign events remain in the pool as
+# evidence the events step can read; they no longer decide anything.
+#
+# `default` now covers only the degenerate case where every weight is zero.
 event_groups:
   - id: us_election_2028
     members: [election_consolidation, election_alliance, election_retrenchment]
     resolution: exactly_one
     due_turns: [5]
     default: election_consolidation
-    select_by:
-      kind: most_recent_event
-      map:
-        campaign_backlash: election_retrenchment
-        campaign_atlanticist: election_alliance
-        campaign_security_hawk: election_consolidation
-      precedence: [campaign_backlash, campaign_atlanticist, campaign_security_hawk]
 
 research_questions:
   - id: rq_sovereignty_and_agency
