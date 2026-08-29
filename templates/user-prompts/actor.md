@@ -5,7 +5,7 @@ This is the world as it stood at the start. It does not change, and it outranks 
 
 {{background_context}}
 
-{% endif %}It is now turn {{turn}} which covers {{time_period}}.
+{% endif %}It is now turn {{turn}}, which covers {{time_period}}. Each turn covers {{ time_scale.replace(' per turn', '') }}, so that is the span your actions have to land in.
 
 Current metrics look like this:
 

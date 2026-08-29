@@ -355,6 +355,7 @@ class PromptBuilder:
         context = {
             "turn": turn,
             "time_period": time_period,
+            "time_scale": self.scenario.config.time_scale,
             "metrics_json": metrics_json,
             "world_state": world_state,
             "historical_summary": self.scenario.world_state.historical_summary,
