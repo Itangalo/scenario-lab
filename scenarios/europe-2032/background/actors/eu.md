@@ -76,7 +76,7 @@ Categories 4, 7 and 9 are not decoration. Diffusion breadth buys economic gain b
 State each new measure against the same three headings, so that invented measures are read the same way as familiar ones:
 
 - **Capital cost** — the political price of adopting it (low / medium / high).
-- **Size** — large or small, which is what it costs you per turn until it finishes: 2 political capital or 1.
+- **Size** — large or small, which is what it costs you per turn until it finishes: 3 political capital or 2, less whatever the world has made easier. A measure everyone has come round to can cost nothing at all.
 - **Finishing turn** — the turn it is actually in force, judged once from how big the thing is and then left alone. Drafting and passing something takes two or three turns; building and staffing a capability takes six or more.
 - **Targeted effect** — which metrics it moves, in which direction, roughly how much.
 
