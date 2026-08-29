@@ -696,7 +696,8 @@ class Orchestrator:
         emergent events keep their one-shot semantics. While tracking is on: a
         proposal that did not fire stays on the books for up to
         ``emergent_events.window_turns`` consecutive turns so later turns can
-        re-list it with an escalating probability; a proposal that fires
+        re-list it at whatever probability they then judge it to have; a
+        proposal that fires
         occurred and leaves the list; a proposal that is not repeated has
         fizzled and is dropped. Python owns only this bookkeeping -- what a
         development means, and how likely it is, stay with the LLM steps, which

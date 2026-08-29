@@ -77,10 +77,9 @@ This line is what puts the statement in the ledger, and the ledger is what carri
 
 * Heading level 2: Portfolio — one bullet per measure already in flight, in the form `` `status` — Measure name (category N): one clause on what changed ``, where status is one of *decided*, *under implementation*, *fully implemented* or *abandoned*. Write `Nothing in flight.` if there is nothing.
 {% if turn == 1 %}
-You do not start empty. Three programmes are already running when you take over, and they are yours now whether or not you would have chosen them. Open your portfolio with exactly these three, marked `inherited`, and carry them forward as you would any other measure:
+You do not start empty. Two programmes are already running when you take over, and they are yours now whether or not you would have chosen them. Open your portfolio with exactly these two, marked `inherited`, and carry them forward as you would any other measure:
 
-- `` `under implementation` (inherited) — InvestAI Gigafactories (category 4): €20bn of a €200bn fund for four to five sites, operation slipped to 2029 and the ambition scaled down ``
-- `` `decided` (inherited) — Frontier AI Initiative (category 5): announced November 2025 as the best-funded non-profit AI research organisation in the world, still not established, advisers split on direction and the money not there ``
+- `` `under implementation` (inherited) — InvestAI Gigafactories (category 4): €20bn of a €200bn fund for four to five sites, operation slipped to 2029 and the ambition scaled down; at least four turns of sustained priority remain before the first site runs, and no amount of urgency shortens the grid connections and the build ``
 - `` `decided` (inherited) — Tech sovereignty package (category 4): June 2026, targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones ``
 
 Inherited measures behave exactly like chosen ones once you touch them, and drift on their own if you do not. Reviving one is done by naming it your Priority, which is a real use of the single priority you get this turn.

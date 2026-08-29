@@ -152,7 +152,7 @@ emergent_events:
   max_per_turn: 2
   max_probability: 0.35
   # Opt-in carry-forward: an unfired proposal stays live as an emerging
-  # development – re-listed each turn at an escalating probability until it
+  # development – re-listed each turn at a freshly judged probability until it
   # fires or its window closes.
   track_unfired: true
   window_turns: 3
