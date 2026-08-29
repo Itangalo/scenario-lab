@@ -43,11 +43,13 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 3. Tracked emerging developments are world trends, not happenings: they surface as atmosphere, rumour and single-source reporting whose intensity scales with how long they have been listed.
 4. **Price the portfolio, out loud, before you apply it.** Metric rule 10 charges `eu_political_capital` for every unfinished measure, every turn, on all of them and not only the priority: 3 for a large measure, 2 for a small one, plus 1 for whichever is the named priority.
 
-   Then, **before totalling, take each measure in turn and ask what the world has done to its price.** These are political prices, not budgets. An event that vindicates exactly the thing the Union was already building, a member state dropping its objection, an ally carrying part of the load, an argument the public has stopped having — each takes **1 off**, and something that has become obvious to everyone takes **2 off**, to zero if it has stopped costing anything to want. Nothing raises a price except being the priority. A measure whose case the world has just made for it and which is still charged in full is this rule being skipped.
+   Then, **before totalling, price each measure against the event record.** Events in the catalogue carry a `Cheapens:` line naming the measure categories they make politically easier, by how much, and for how many turns. This is a lookup, not a judgement: for each measure, find every event that has fired whose window is still open and whose `Cheapens:` names that measure's category, and subtract. Two stack. There is no floor — a measure can reach zero. Nothing raises a price except being the priority.
+
+   A measure in a category that a recently fired event names, still charged in full, is this rule being skipped. It has been skipped before.
 
    Write one line in the Notepad, giving every measure its price and every discount its reason:
 
-   `PORTFOLIO CHARGE: Gigafactories −3, Frontier Access Guarantee −1 (access cut off; nobody is arguing against it now), Resilience Surge −2, priority +1 = −7`
+   `PORTFOLIO CHARGE: Gigafactories −1 (eu_frontier_access_denied cheapens 4 by 2), Frontier Access Guarantee −1 (same), Resilience Surge −2, priority +1 = −3`
 
    Then apply that total. It is written out because it is the rule most easily skipped in both directions: a turn in which several measures are unfinished and capital did not fall has forgotten the charge, and a turn in which the world plainly made something easier and every measure still paid full price has forgotten the discount.
 
