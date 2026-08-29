@@ -74,7 +74,10 @@ If information is missing, the agent should ask concise follow-up questions firs
 7. The agent runs validation:
    `python -m scenario_lab.cli validate scenarios/<your-scenario>`
 8. You run one or more test simulations and review outcomes with the agent.
-9. Iterate on prompts/rules/events/metrics until behavior matches intent.
+9. The agent generates the prompt sign-off documents and you read them:
+   `python -m scenario_lab.cli run scenarios/<your-scenario> --turns 2 --log-llm-io`
+   then `python scripts/render_signoff.py scenarios/<your-scenario>/runs/<that-run>`.
+10. Iterate on prompts/rules/events/metrics until behavior matches intent.
 
 ## Interview Topics the Agent Should Cover
 
@@ -120,6 +123,55 @@ A scenario should be considered "v1 ready" when:
 - `validate` passes without errors
 - at least 1-3 short runs have been completed
 - known mismatches between intended and observed behavior are documented
+- the prompt sign-off documents have been generated and read, and the source
+  coverage table holds no unexplained gaps (see below)
+
+## Prompt Sign-Off
+
+A scenario file that never reaches a prompt changes nothing, and nothing in the
+pipeline will tell you which files those are. `validate` does not: it checks
+that files exist and parse, not that their contents are rendered. This has bitten
+a real scenario, where 2,619 tokens of actor background – the measure categories,
+the rule that the actor cannot see which trajectory it is in – were dropped by
+the loader and went unnoticed through two thirty-run batches. Everything looked
+right, because the same instructions happened to be duplicated in a prompt
+override that did render.
+
+So before a scenario is considered done, read the prompts themselves:
+
+```
+python -m scenario_lab.cli run scenarios/<name> --turns 2 --log-llm-io
+python scripts/render_signoff.py scenarios/<name>/runs/run-YYYYMMDD-HHMMSS
+```
+
+Two turns, because one is not enough: turn 1 shows what an actor is told about
+itself, and turn 2 shows what survives into the next turn. Carry-forward bugs –
+a ledger that resets, a portfolio the actor cannot see, a world state that never
+arrives – are invisible in turn 1 and obvious in turn 2.
+
+This writes `scenarios/<name>/sign-off/`:
+
+- `actor-turn-1.md` – the actor's opening prompt
+- `actor-turn-2.md` – the same actor with a turn of history behind it
+- `game-master-turn-2.md` – the step that writes the world state
+- `events-turn-2.md` – every condition, gate and probability the world runs on
+- `README.md` – an index plus a source coverage table: every heading in the
+  scenario's background and definition files, and whether the text under it
+  reached any of those prompts
+
+These are the bytes that were actually sent, taken from the `--log-llm-io`
+transcripts, not a reconstruction. Every section carries a `PROVENANCE` comment
+naming the file it came from and whether it arrived verbatim, as a template with
+values interpolated, or assembled at run time from scenario data with no file
+behind it at all. Read each one against the file it claims to come from, section
+by section. A `NO` in the coverage table is not automatically
+wrong – some files are documentation and some headings are read by steps the
+sign-off does not sample – but every `NO` should be one you can explain out loud.
+
+Regenerate them after any change to `templates/`, to the scenario's own
+`user-prompts/` overrides, or to its background files, and note the date you
+signed off in the scenario's design notes. A scenario with more than one actor
+wants a sign-off per actor; add them to `SIGNOFF_TASKS` in the script.
 
 ## Iteration Loop After v1
 

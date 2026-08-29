@@ -251,10 +251,58 @@ Smoke-test quality checklist:
   Economy above, and check the constitutional-check artifacts for unresolved
   violations, which are the earliest sign that it is not
 
+## Phase 5b: Prompt Sign-Off (required – a scenario is not done without it)
+
+`validate` checks that files exist and parse. It does not check that their
+contents reach a prompt, and nothing else does either. A scenario file that
+never reaches a prompt changes nothing while looking exactly like a file that
+does. This has already cost two thirty-run batches in `europe-2032`, where
+`load_actor` silently dropped 2,619 tokens of actor background – the measure
+categories, the rule that the actor cannot see which trajectory it is in – and
+the scenario went on behaving plausibly because a prompt override happened to
+duplicate the same instructions.
+
+Generate the sign-off documents and read them:
+
+```
+python -m scenario_lab.cli run scenarios/<name> --turns 2 --log-llm-io
+python scripts/render_signoff.py scenarios/<name>/runs/run-YYYYMMDD-HHMMSS
+```
+
+Two turns, not one: turn 1 shows what the actor is told about itself, turn 2
+shows what survives into the next turn. Ledgers that reset, portfolios the
+actor cannot see and world state that never arrives are invisible in turn 1.
+
+This writes `scenarios/<name>/sign-off/` with the actor's turn-1 and turn-2
+prompts, the Game Master (metrics) prompt, the events prompt, and a README
+carrying a source coverage table – every heading in the scenario's background
+and definition files, and whether the text under it reached any prompt. Each
+section of each prompt carries a `PROVENANCE` comment naming the file behind it
+and whether it arrived verbatim, interpolated, or assembled at run time from
+scenario data with no file behind it.
+
+What you must do with them, and must not skip:
+
+1. Read each prompt against the file it should have come from, section by
+   section. Do not skim for the file name; look for its actual content.
+2. Account for every `NO` in the coverage table out loud. Some are fine –
+   documentation files, headings read by steps not sampled – but an unexplained
+   `NO` is the bug this phase exists to catch.
+3. Check that the scenario's own `user-prompts/` overrides and the templates
+   they replace do not contradict each other.
+4. Check for leakage: nothing in a prompt should tell an actor something the
+   scenario intends it to infer.
+
+Report what you found to the user and let them sign off. Note the date in
+`design-notes.md`. Regenerate after any later change to `templates/`, to the
+scenario's `user-prompts/`, or to its background files. Scenarios with several
+actors want one actor sign-off each – add them to `SIGNOFF_TASKS` in the script.
+
 ## Phase 6: Handoff
 
 Report to the user: what was built, the describe overview, smoke-test verdict,
-remaining weak spots, and the recommended next step. That next step is
+the sign-off result including any unexplained coverage gaps, remaining weak
+spots, and the recommended next step. That next step is
 normally:
 
 1. `batch-run scenarios/<name> --repeat 10` with cheap models
