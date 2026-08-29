@@ -369,6 +369,12 @@ class Orchestrator:
             "model": usage.model if usage else response.raw_response.get("model", "unknown"),
             "system": system_prompt,
             "user": user_prompt,
+            # Recorded by the prompt builder while it assembled these, and
+            # looked up by content so a parallel multi-actor turn cannot mix two
+            # prompts up. Lets the sign-off documents say where each part of a
+            # prompt came from instead of inferring it from the finished text.
+            "system_provenance": self.prompt_builder.provenance_for(system_prompt),
+            "user_provenance": self.prompt_builder.provenance_for(user_prompt),
             "response": response.content,
             "prompt_tokens": usage.prompt_tokens if usage else None,
             "completion_tokens": usage.completion_tokens if usage else None,

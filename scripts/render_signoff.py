@@ -91,10 +91,15 @@ def split_transcript(text: str) -> dict[str, str]:
     for i in range(1, len(parts) - 1, 2):
         label = parts[i].strip().lower()
         body = parts[i + 1].strip("\n").splitlines()
-        if body and body[0].strip() == "```":
-            body = body[1:]
-        if body and body[-1].strip() == "```":
-            body = body[:-1]
+        # A provenance preamble now sits between the heading and the fence, so
+        # take what lies between the first fence and the last rather than
+        # assuming the block starts on the line after the heading.
+        opening = next((n for n, line in enumerate(body) if line.strip() == "```"), None)
+        closing = next(
+            (n for n in range(len(body) - 1, -1, -1) if body[n].strip() == "```"), None
+        )
+        if opening is not None and closing is not None and closing > opening:
+            body = body[opening + 1 : closing]
         sections[label] = "\n".join(body)
     return sections
 
@@ -144,67 +149,76 @@ def coverage_table(scenario_dir: Path, haystack: str) -> list[str]:
 
 
 
-def load_sources(scenario_dir: Path, repo: Path) -> list[tuple[str, str]]:
-    """Return (label, text) for every file a prompt could have been built from.
+def parse_provenance(transcript: str, which: str) -> Optional[dict]:
+    """Read back the provenance preamble the transcript writer emitted.
 
-    Scenario files come first, so that a scenario's own override is reported in
-    preference to the shared template it replaces when both would match.
+    ``which`` is "System prompt" or "User prompt". Returns the template label
+    and the recorded spans, or None for a transcript written before the prompt
+    builder recorded any.
     """
-    sources: list[tuple[str, str]] = []
-    scenario_files = (
-        sorted(scenario_dir.glob("*.md"))
-        + sorted(scenario_dir.glob("background/**/*.md"))
-        + sorted(scenario_dir.glob("user-prompts/*.md"))
-        + sorted(scenario_dir.glob("variants/*.md"))
+    match = re.search(
+        rf"^## {which}\n\n(?P<preamble>.*?)```", transcript, re.S | re.M
     )
-    for path in scenario_files:
-        label = f"`{path.relative_to(scenario_dir)}` (this scenario)"
-        sources.append((label, path.read_text(encoding="utf-8")))
-    for path in sorted((repo / "templates").glob("**/*.md")):
-        label = f"`templates/{path.relative_to(repo / 'templates')}` (shared template)"
-        sources.append((label, path.read_text(encoding="utf-8")))
-    return sources
+    if not match:
+        return None
+    preamble = match.group("preamble")
+    template = re.search(r"^Template: (.+)$", preamble, re.M)
+    if not template:
+        return None
+    spans = []
+    for line in re.finditer(
+        r"^- characters (\d+)-(\d+): `\{\{(\w+)\}\}` from (.+)$", preamble, re.M
+    ):
+        spans.append(
+            {
+                "start": int(line.group(1)),
+                "end": int(line.group(2)),
+                "variable": line.group(3),
+                "source": line.group(4).strip(),
+            }
+        )
+    return {"template": template.group(1).strip(), "spans": spans}
 
 
-def attribute(block: str, sources: list[tuple[str, str]]) -> str:
-    """Say where a rendered block came from, by matching its own longest lines.
+def annotate(prompt: str, provenance: Optional[dict]) -> str:
+    """Mark up a rendered prompt with where each part of it came from.
 
-    A prompt is a template with values interpolated into it, so a block is
-    rarely byte-identical to any one file. Matching whole lines is enough to be
-    certain and cheap enough to be honest about: a line of prose that appears
-    verbatim in a source file came from it, and a block whose lines appear
-    nowhere was assembled from scenario data rather than copied from a file.
+    Not inferred from the finished text: the spans were recorded by the prompt
+    builder as it interpolated each value, so a one-line heading inside an
+    interpolated block is attributed as confidently as a page of it.
     """
-    lines = [line.strip() for line in block.splitlines() if len(line.strip()) > 45]
-    if not lines:
-        return "too short to attribute"
-    probes = sorted(lines, key=len, reverse=True)[:8]
-    best_label, best_hits = "", 0
-    for label, text in sources:
-        hits = sum(1 for probe in probes if probe in text)
-        if hits > best_hits:
-            best_label, best_hits = label, hits
-    if not best_hits:
-        return "assembled from scenario data (metrics, events, ledgers, run state) - not copied from any file"
-    if best_hits == len(probes):
-        return f"verbatim from {best_label}"
-    return f"mostly from {best_label} ({best_hits} of {len(probes)} sampled lines matched verbatim; the rest are interpolated values or come from elsewhere)"
+    if provenance is None:
+        return (
+            "<!-- PROVENANCE: not recorded. This transcript predates provenance "
+            "recording; re-run with --log-llm-io on a current build. -->\n\n" + prompt
+        )
 
-
-def annotate(prompt: str, sources: list[tuple[str, str]]) -> str:
-    """Prefix each `## ` section of a rendered prompt with where it came from."""
-    parts = re.split(r"^(#{1,3} .+)$", prompt, flags=re.M)
+    template = provenance["template"]
+    spans = sorted(provenance["spans"], key=lambda s: s["start"])
     out: list[str] = []
-    if parts[0].strip():
-        out.append(f"<!-- PROVENANCE: {attribute(parts[0], sources)} -->")
-        out.append(parts[0].rstrip())
-    for i in range(1, len(parts) - 1, 2):
-        heading, body = parts[i], parts[i + 1]
-        out.append("")
-        out.append(f"<!-- PROVENANCE: {attribute(heading + body, sources)} -->")
-        out.append(heading)
-        out.append(body.rstrip())
-    return "\n".join(out)
+    cursor = 0
+    for span in spans:
+        if span["start"] > cursor:
+            chunk = prompt[cursor : span["start"]]
+            if chunk.strip():
+                out.append(f"<!-- FROM {template} -->")
+                out.append(chunk.rstrip("\n"))
+        chunk = prompt[span["start"] : span["end"]]
+        if chunk.strip():
+            out.append(f"<!-- FROM {{{{{span['variable']}}}}} = {span['source']} -->")
+            out.append(chunk.rstrip("\n"))
+        cursor = max(cursor, span["end"])
+    if cursor < len(prompt):
+        chunk = prompt[cursor:]
+        if chunk.strip():
+            out.append(f"<!-- FROM {template} -->")
+            out.append(chunk.rstrip("\n"))
+    return "\n\n".join(out)
+
+
+def coverage_haystack(transcripts: list[str]) -> str:
+    """All prompt text seen, for the source coverage table."""
+    return "\n".join(transcripts)
 
 
 def main() -> int:
@@ -218,7 +232,6 @@ def main() -> int:
     out_dir = Path(args.out).resolve() if args.out else scenario_dir / "sign-off"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    sources = load_sources(scenario_dir, REPO)
     all_prompts: list[str] = []
     written: list[tuple[str, str]] = []
     missing: list[str] = []
@@ -228,9 +241,12 @@ def main() -> int:
         if transcript is None:
             missing.append(f"{name} (no `{task}` transcript in turn-{turn:02d}/llm-io/)")
             continue
-        sections = split_transcript(transcript.read_text(encoding="utf-8"))
+        raw = transcript.read_text(encoding="utf-8")
+        sections = split_transcript(raw)
         system = sections.get("system prompt", "")
         user = sections.get("user prompt", "")
+        system_prov = parse_provenance(raw, "System prompt")
+        user_prov = parse_provenance(raw, "User prompt")
         all_prompts.append(system + "\n" + user)
 
         body = [
@@ -238,8 +254,11 @@ def main() -> int:
             "",
             why,
             "",
-            f"Source: `{transcript.relative_to(scenario_dir)}`. This is the prompt as sent, "
-            "not a reconstruction. Regenerate after any change to the templates, the "
+            f"Source: `{transcript.relative_to(scenario_dir)}`, which holds this prompt "
+            "byte for byte as it was sent, with the same provenance recorded above it. Every "
+            "word below is that prompt in that order; the only difference is that the blocks "
+            "are separated here to carry their `FROM` comments, so blank lines between them "
+            "are not significant. Regenerate after any change to the templates, the "
             "scenario's prompt overrides, or the background files.",
             "",
             "## Reviewer checklist",
@@ -251,21 +270,20 @@ def main() -> int:
             "",
             "## Where each block came from",
             "",
-            "Every section below is preceded by a `PROVENANCE` comment naming the file it "
-            "was rendered from. `verbatim from` means the sampled lines appear unchanged in "
-            "that file; `mostly from` means the block is that file with values interpolated "
-            "into it; `assembled from scenario data` means no file contains it and it was "
-            "built at run time from metrics, events, ledgers or run state. A scenario's own "
-            "`user-prompts/` override is reported in preference to the shared template it "
-            "replaces.",
+            "Each block below carries a `FROM` comment naming its origin. These are not "
+            "inferred from the finished text: the prompt builder recorded them as it "
+            "interpolated each value, so a one-line heading inside an interpolated block is "
+            "attributed as confidently as a page of it. A block marked with a template path "
+            "is the template's own words; a block marked `{{variable}}` is a value put into "
+            "it, and the note says which file or run-time structure that value came from.",
             "",
             "## System prompt",
             "",
-            annotate(system, sources),
+            annotate(system, system_prov),
             "",
             "## User prompt",
             "",
-            annotate(user, sources),
+            annotate(user, user_prov),
             "",
         ]
         target = out_dir / f"{name}.md"
@@ -312,7 +330,7 @@ def main() -> int:
         "one of the three benign cases until you check.",
         "",
     ]
-    index += coverage_table(scenario_dir, "\n".join(all_prompts))
+    index += coverage_table(scenario_dir, coverage_haystack(all_prompts))
     index.append("")
 
     (out_dir / "README.md").write_text("\n".join(index), encoding="utf-8")

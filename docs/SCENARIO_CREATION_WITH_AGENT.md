@@ -159,12 +159,15 @@ This writes `scenarios/<name>/sign-off/`:
   scenario's background and definition files, and whether the text under it
   reached any of those prompts
 
-These are the bytes that were actually sent, taken from the `--log-llm-io`
-transcripts, not a reconstruction. Every section carries a `PROVENANCE` comment
-naming the file it came from and whether it arrived verbatim, as a template with
-values interpolated, or assembled at run time from scenario data with no file
-behind it at all. Read each one against the file it claims to come from, section
-by section. A `NO` in the coverage table is not automatically
+These come from the `--log-llm-io` transcripts, which hold each prompt byte for
+byte as it was sent. Every block carries a `FROM` comment naming its origin, and
+those are recorded by the prompt builder as it interpolates each value rather
+than inferred from the finished text -- so a one-line heading inside an
+interpolated block is attributed as confidently as a page of it. A block marked
+with a template path is the template's own words; a block marked `{{variable}}`
+is a value put into it, named down to the file or run-time structure it came
+from. Read each one against the file it claims to come from, section by
+section. A `NO` in the coverage table is not automatically
 wrong – some files are documentation and some headings are read by steps the
 sign-off does not sample – but every `NO` should be one you can explain out loud.
 

@@ -277,9 +277,10 @@ This writes `scenarios/<name>/sign-off/` with the actor's turn-1 and turn-2
 prompts, the Game Master (metrics) prompt, the events prompt, and a README
 carrying a source coverage table – every heading in the scenario's background
 and definition files, and whether the text under it reached any prompt. Each
-section of each prompt carries a `PROVENANCE` comment naming the file behind it
-and whether it arrived verbatim, interpolated, or assembled at run time from
-scenario data with no file behind it.
+block of each prompt carries a `FROM` comment naming its origin, recorded by the
+prompt builder as it interpolated each value rather than inferred afterwards: a
+template path means the template's own words, and `{{variable}}` names the file
+or run-time structure the value came from.
 
 What you must do with them, and must not skip:
 

@@ -5,6 +5,8 @@ from typing import Optional, Any
 from .statements import render_ledger
 from .models import Scenario, build_expression_env, Actor
 import json
+import hashlib
+
 from jinja2 import Template
 from jinja2.sandbox import SandboxedEnvironment
 
@@ -12,11 +14,24 @@ from jinja2.sandbox import SandboxedEnvironment
 TEMPLATES_DIR = Path(__file__).parent.parent / "templates"
 
 
+def _prompt_key(text: str) -> str:
+    """Content key for provenance lookup, so concurrent builds cannot collide."""
+    return hashlib.sha1(text.encode("utf-8")).hexdigest()
+
+
 class PromptBuilder:
     """Constructs prompts from templates and scenario data."""
 
     def __init__(self, scenario: Scenario):
         self.scenario = scenario
+
+        # Provenance of rendered prompts, keyed by a hash of the rendered text.
+        # Recorded while the prompt is assembled rather than inferred from it
+        # afterwards: which template file was used, and which scenario file or
+        # run-time structure each interpolated value came from. Keyed by content
+        # so that a concurrent multi-actor turn cannot mix two prompts up.
+        self._provenance: dict[str, dict] = {}
+        self._template_label: str = "unknown"
 
         # SECURITY: Create sandboxed Jinja2 environment for custom templates
         # This prevents template injection attacks (SSTI) in user-provided templates
@@ -105,9 +120,11 @@ class PromptBuilder:
         custom_key = prompt_type.replace("-", "_")
         if custom_key in self.scenario.custom_system_prompts:
             prompt = self.scenario.custom_system_prompts[custom_key]
+            self._template_label = f"system-prompts/{prompt_type}.md (this scenario's override)"
             return self._render_system_prompt(prompt, actor_id)
 
         # Fall back to template
+        self._template_label = f"templates/system-prompts/{prompt_type}.md (shared default)"
         return self._render_system_prompt(self.system_templates[template_key], actor_id)
 
     def _render_system_prompt(self, prompt: str, actor_id: Optional[str] = None) -> str:
@@ -117,7 +134,7 @@ class PromptBuilder:
         since scenario-supplied system prompts are equally untrusted input.
         """
         template = self.jinja_env.from_string(prompt)
-        return template.render(**self._get_system_prompt_context(actor_id))
+        return self._render(template, self._get_system_prompt_context(actor_id))
 
     def _get_system_prompt_context(self, actor_id: Optional[str] = None) -> dict[str, Any]:
         """Build the render context available to system prompt templates.
@@ -193,9 +210,11 @@ class PromptBuilder:
         # Check custom scenario prompts first
         if key in self.scenario.custom_user_prompts:
             # SECURITY: Use sandboxed environment for custom templates to prevent SSTI
+            self._template_label = f"user-prompts/{prompt_type}.md (this scenario's override)"
             return self.jinja_env.from_string(self.scenario.custom_user_prompts[key])
 
         # Default templates are trusted, but use sandboxed env for consistency
+        self._template_label = f"templates/user-prompts/{prompt_type}.md (shared default)"
         return self.jinja_env.from_string(self.user_templates[key])
 
     def _replace_placeholders(self, prompt: str, actor_id: Optional[str] = None) -> str:
@@ -240,6 +259,79 @@ class PromptBuilder:
             )
         section = "\n".join(lines)
         return f"{base}\n\n{section}" if base else section
+
+    # Where each interpolated value comes from. Named here rather than guessed
+    # later, because the whole point of the sign-off documents is to distinguish
+    # a scenario file that reaches the model from one that only looks as though
+    # it does. Values not listed are short scalars (turn number, time period)
+    # that no reviewer needs traced.
+    VARIABLE_SOURCES: dict[str, str] = {
+        "metrics_list": "metrics.md, one entry per metric with its reference points",
+        "metrics_json": "the run's live metric values",
+        "events_list": "events.md, parsed to id / condition / probability / description per event -- the prose sections of that file are NOT rendered",
+        "event_history": "the run's own event record",
+        "metric_rules": "metric-rules.md as it currently stands, including any variant patch",
+        "constitution": "constitution.md",
+        "actors_list": "background/actors/*.md, short descriptions only",
+        "actor_description": "background/actors/<actor>.md, the Long description section up to its first ### heading -- everything below that is dropped by load_actor",
+        "actor_short_description": "background/actors/<actor>.md, Short description",
+        "statement_ledger": "the actor's live statement ledger",
+        "statements_list": "the actor's live statement ledger",
+        "behavioral_traits": "background/actors/<actor>.md, Behavioral traits",
+        "historical_summary": "the run's rolling summary, written by the Game Master",
+        "notepad": "the Game Master's notepad, carried across turns",
+        "previous_actions": "the actor's own response from the previous turn",
+        "scenario_description": "scenario.yaml, description",
+        "scenario_name": "scenario.yaml, name",
+        "triggered_events_text": "the events that fired this turn",
+    }
+
+    def _variable_sources(self, turn: int) -> dict[str, str]:
+        """VARIABLE_SOURCES with the entries whose origin depends on the turn."""
+        sources = dict(self.VARIABLE_SOURCES)
+        if turn <= 1:
+            sources["world_state"] = "background/context.md, seeded as the opening world state"
+        else:
+            sources["world_state"] = "the Game Master's narrative from the previous turn"
+        if turn > 1:
+            sources["background_context"] = (
+                "background/fixed-facts.md"
+                if self.scenario.fixed_facts
+                else "background/context.md, in full (no background/fixed-facts.md in this scenario)"
+            )
+        return sources
+
+    def _render(self, template, context: dict[str, Any], turn: Optional[int] = None) -> str:
+        """Render a template and record where every part of the result came from.
+
+        The spans are found by locating each interpolated value in the rendered
+        text. Jinja inserts values verbatim, so this is a lookup rather than a
+        guess; anything not covered by a span is the template's own words.
+        """
+        rendered = template.render(**context)
+        sources = self._variable_sources(turn if turn is not None else 0)
+        spans: list[dict] = []
+        for name, source in sources.items():
+            value = context.get(name)
+            if not isinstance(value, str) or len(value.strip()) < 20:
+                continue
+            start = 0
+            while True:
+                index = rendered.find(value, start)
+                if index == -1:
+                    break
+                spans.append({"start": index, "end": index + len(value), "variable": name, "source": source})
+                start = index + len(value)
+        spans.sort(key=lambda s: s["start"])
+        self._provenance[_prompt_key(rendered)] = {
+            "template": self._template_label,
+            "spans": spans,
+        }
+        return rendered
+
+    def provenance_for(self, rendered: str) -> Optional[dict]:
+        """Return the recorded provenance of a rendered prompt, if it was recorded."""
+        return self._provenance.get(_prompt_key(rendered))
 
     def _background_context_for_turn(self, turn: int) -> str:
         """Return the fixed-background block for this turn, if it earns its place.
@@ -357,7 +449,7 @@ class PromptBuilder:
         context["emergent_max_probability"] = emergent.max_probability
 
         # Render user prompt
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
 
         return system, user
 
@@ -408,7 +500,7 @@ class PromptBuilder:
         context["triggered_events"] = self._format_triggered_events(triggered_events)
 
         # Render user prompt
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
 
         return system, user
 
@@ -453,7 +545,7 @@ class PromptBuilder:
         }
 
         template = self._get_user_template("statement_relevance")
-        return system, template.render(**context)
+        return system, self._render(template, context, context.get("turn"))
 
     def _format_triggered_events(self, triggered_events: list[dict]) -> str:
         """Format triggered events for actor/rules/metrics prompts.
@@ -507,7 +599,7 @@ class PromptBuilder:
         context["actor_actions"] = "\n".join(actions_lines)
 
         # Render user prompt
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
         
         return system, user
 
@@ -562,7 +654,7 @@ class PromptBuilder:
         context["actor_actions"] = "\n".join(actions_lines)
 
         # Render user prompt
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
         
         return system, user
 
@@ -588,7 +680,7 @@ class PromptBuilder:
             "output_language": self.scenario.config.output_language, # Pass output language to summary prompt
         }
 
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
         
         return system, user
 
@@ -602,7 +694,7 @@ class PromptBuilder:
             **analysis_context,
         }
 
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
         return system, user
 
     def build_synthesis_prompt(self, synthesis_context: dict[str, Any]) -> tuple[str, str]:
@@ -615,7 +707,7 @@ class PromptBuilder:
             **synthesis_context,
         }
 
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
         return system, user
 
     def build_cohort_comparison_prompt(self, comparison_context: dict[str, Any]) -> tuple[str, str]:
@@ -628,7 +720,7 @@ class PromptBuilder:
             **comparison_context,
         }
 
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
         return system, user
 
     def build_format_fix_events_prompt(self, turn: int, previous_response: str) -> tuple[str, str]:
@@ -637,7 +729,7 @@ class PromptBuilder:
         template = self._get_user_template("format_fix_events")
         context = self._get_common_context(turn)
         context["previous_response"] = previous_response
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
         return system, user
 
     def build_format_fix_metrics_prompt(self, turn: int, previous_response: str) -> tuple[str, str]:
@@ -646,7 +738,7 @@ class PromptBuilder:
         template = self._get_user_template("format_fix_metrics")
         context = self._get_common_context(turn)
         context["previous_response"] = previous_response
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
         return system, user
 
     def build_constitutional_referee_prompt(
@@ -696,7 +788,7 @@ class PromptBuilder:
             "notepad": (notepad if notepad is not None else self.scenario.notepad).strip() or "(Empty)",
         }
 
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
 
         return system, user
 
@@ -730,7 +822,7 @@ class PromptBuilder:
             "output_language": self.scenario.config.output_language,
         }
 
-        user = template.render(**context)
+        user = self._render(template, context, context.get("turn"))
 
         return system, user
 

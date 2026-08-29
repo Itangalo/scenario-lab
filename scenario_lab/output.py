@@ -8,6 +8,34 @@ from typing import Optional
 from .models import ModelRoute, Scenario, TurnResult
 
 
+def _provenance_block(provenance: Optional[dict]) -> str:
+    """Render the recorded provenance of one prompt as a readable preamble.
+
+    The prompt builder records which template was used and where each
+    interpolated value came from, as character spans into the rendered text.
+    Reported here as a list rather than as inline markers so the prompt below
+    stays byte-identical to what was sent.
+    """
+    if not provenance:
+        return ""
+    lines = [f"Template: {provenance.get('template', 'unknown')}", ""]
+    spans = provenance.get("spans") or []
+    if spans:
+        lines.append("Interpolated into it, in order of appearance:")
+        lines.append("")
+        for span in spans:
+            lines.append(
+                f"- characters {span['start']}-{span['end']}: `{{{{{span['variable']}}}}}` "
+                f"from {span['source']}"
+            )
+    else:
+        lines.append("No values interpolated: every word below is the template's own.")
+    lines.append("")
+    lines.append("Everything outside those spans is the template's own text.")
+    lines.append("")
+    return "\n".join(lines)
+
+
 def _sanitize_task_name(task_name: str) -> str:
     """Sanitize a task name for use in a filename.
 
@@ -145,12 +173,14 @@ class OutputManager:
             "",
             "## System prompt",
             "",
+            _provenance_block(record.get("system_provenance")),
             "```",
             record.get("system", ""),
             "```",
             "",
             "## User prompt",
             "",
+            _provenance_block(record.get("user_provenance")),
             "```",
             record.get("user", ""),
             "```",
