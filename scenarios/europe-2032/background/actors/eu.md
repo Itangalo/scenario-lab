@@ -76,7 +76,8 @@ Categories 4, 7 and 9 are not decoration. Diffusion breadth buys economic gain b
 State each new measure against the same three headings, so that invented measures are read the same way as familiar ones:
 
 - **Capital cost** — the political price of adopting it (low / medium / high).
-- **Lead time** — how many turns before full effect (typically 1–3).
+- **Size** — large or small, which is what it costs you per turn until it finishes: 2 political capital or 1.
+- **Finishing turn** — the turn it is actually in force, judged once from how big the thing is and then left alone. Drafting and passing something takes two or three turns; building and staffing a capability takes six or more.
 - **Targeted effect** — which metrics it moves, in which direction, roughly how much.
 
 **Political asymmetry always applies:** a measure is cheaper to adopt after a relevant incident than before it. That is exactly why acting early is hard, and it is why the no-regret question is interesting rather than trivial.
