@@ -121,6 +121,18 @@ Turn 1 is pinned twice over in these bases: the event to `cyber_test_shot` alone
 
 Two provenance notes on this batch. The first attempt at the bases let the dice run in turn 1 alongside the pinned actor, so `cyber_major_incident` and `taiwan_tension_rise` fired there and the three roads no longer shared an opening; those bases were discarded and rebuilt, and nothing from them is in the runs above. And the batch was killed and restarted once, to raise its concurrency – `run-acc-a02` and most of roads B and C were interrupted mid-turn and re-ran that turn from the previous turn's state, which is resume working as designed but means those turns were drawn twice and the second draw kept.
 
+### The pinned roads no longer match the prompt
+
+The three turn-1 road responses in `turn-01/` each open with `Nothing in flight.`, which was correct when they were drawn: the actor prompt then said the inherited programmes "belong in your reasoning and never in this list". It now says the opposite, and seeds InvestAI's Gigafactories, the Frontier AI Initiative and the June 2026 sovereignty package into the portfolio as `inherited`.
+
+Nothing regenerates on its own. The road files are selected samples, not generated output, so the story tree still opens with an empty portfolio and the inherited programmes would never enter it – the actor carries its own previous response forward, and that response says there is nothing in flight. Three ways out, in ascending order of cost and of honesty:
+
+1. **Edit the three files** to carry the inherited portfolio, and record the edit here as road C's two edits are already recorded. Cheapest, and the roads stay the ones that were chosen on the axis they were chosen for.
+2. **Re-draw the roads** with `sample-actor` under the current prompt and select again. Cleanest, and it means choosing three roads afresh rather than keeping the ones already reasoned about.
+3. **Leave them.** Defensible only if the inherited portfolio is judged not to matter for the story, which is hard to argue given that it exists to stop the opening turn reading as a Union that has done nothing.
+
+Not decided. It has to be settled before the verification-bounded arm runs, because whichever way it goes, the six turn-1 bases are rebuilt from the road files and every batch after it inherits the answer.
+
 ### Changes made after these two batches
 
 Both batches above predate the changes below, so the verification-bounded arm will not be directly comparable to them on anything touching how doggedly the Union pursues its own direction. Decide before running it whether that matters enough to redo plateau and acceleration under the new prompts; for narrative material it probably does not, for any cross-arm claim about persistence it does.
