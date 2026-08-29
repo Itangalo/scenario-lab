@@ -11,7 +11,7 @@
 ## Recursive Self-Improvement Begins
 **ID:** rsi_onset
 **Eligible:** ai_capability < 0
-**Condition:** Impossible under this regime: general research taste is exactly what does not admit a cheap automatic check, so models do not take over the setting of their own research agenda. The id is kept only so run statistics stay comparable across arms; the gate above never opens.
+**Condition:** Impossible in this run: general research taste is exactly what does not admit a cheap automatic check, so models do not take over the setting of their own research agenda. The id is kept only so run statistics stay comparable across arms; the gate above never opens.
 
 ## Verification Frontier Widens
 **ID:** verification_widens
@@ -35,7 +35,7 @@
 
 ## Human-Infective Design Demonstrated
 **ID:** bio_uplift_findings
-**Probability:** 10%. Add 6 points if `openweight_capability` is above 50. Add 5 points if `verification_widens` has occurred in the previous 4 completed turns, because a cheap automatic check on biological design is exactly what this regime keeps producing.
+**Probability:** 10%. Add 6 points if `openweight_capability` is above 50. Add 5 points if `verification_widens` has occurred in the previous 4 completed turns, because a cheap automatic check on biological design is exactly what this world keeps producing.
 
 ## Open Weights Reach the Frontier
 **ID:** openweight_frontier_release

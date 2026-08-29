@@ -2,15 +2,14 @@
 
 ## Invariants
 
-1. **The trajectory regime.** The regime this run is in – ACCELERATION, VERIFICATION-BOUNDED or PLATEAU – is fixed from turn 1 to the last turn, and is Game Master information that stays in the Game Master's inputs.
+1. **How fast the world moves is fixed, and unannounced.** The rates in metric rule 1 hold from turn 1 to the last turn.
 
-   Three things follow, and they are one rule, not three:
+   Two things follow, and they are one rule, not two:
 
-   - *It never changes.* No event, action or rule change may move a run from one regime to another.
-   - *Nobody inside the simulation knows it.* The EU is never told which future it is in. It may reason about which regime it might be in, and name candidates; it may not know.
-   - *The narrative never names it* – not as a label, not as a parenthetical, not as "consistent with" anything. Write what happened to capability this turn; do not name the pattern it belongs to. Operationally, and this is checkable character by character: **the exact uppercase strings `ACCELERATION`, `VERIFICATION-BOUNDED` and `PLATEAU` must not appear anywhere in the narrative**, including subheadings. The uppercase labels name this run's assigned future; generic lowercase talk of plateaus, acceleration or uneven progress is legitimate inference and stays allowed. Descriptions of emergent-event candidates count as narrative for this purpose: they reach the EU when the event fires.
+   - *They never change.* No event, action or rule change may move a run onto a different long-run path. Individual turns vary within the stated rates; the path they are varying around does not.
+   - *Nothing announces the path.* Write what happened to capability this turn and what it plausibly implies. Do not characterise the long run as settled, do not tell the reader which of the futures under debate this world turned out to be, and do not write as though the answer were available to anyone inside the simulation. The EU may reason about where the frontier is heading and name candidates; it may not be told, and neither may anyone else. Descriptions of emergent-event candidates count as narrative for this purpose: they reach the EU when the event fires.
 
-   *How fast capability grows inside the regime is metric rule 1's business, not this document's.* The constitution fixes which regime a run is in and who may know about it; it says nothing about growth rates.
+   *What the rates are is metric rule 1's business, not this document's.* The constitution fixes that they hold and that nobody is told them; it says nothing about their values.
 
 2. **Capability is accumulated and does not fall.** `ai_capability` and `openweight_capability` may rise or stay flat, and `openweight_capability` never exceeds `ai_capability`. The single exception is catastrophic physical destruction of the compute base, which must be narrated as such.
 

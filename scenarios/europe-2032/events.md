@@ -13,9 +13,9 @@ Four rules govern gates, and they matter.
 
 That combination is the point of the design. If the precursor were as conspicuous as the escalation there would be no monitoring problem to study, and if it were invisible there would be nothing to monitor.
 
-## Regime conditioning
+## Where the figures come from
 
-Several probabilities depend on the trajectory regime this run is in. Where this file gives a figure, it is the regime-neutral default; the run's own patched entries carry the figure that actually applies. The regime never changes during a run and is never named in any narrative or event description.
+Several probabilities depend on how fast this particular world is moving. Where this file gives a figure, it is the neutral default; the run's own patched entries carry the figure that actually applies. What applies never changes during a run and is never named in any narrative or event description.
 
 ## Arithmetic of probabilities
 
@@ -27,7 +27,7 @@ Where an entry refers to a measure "fully implemented" in a numbered category, i
 
 ## The opening turn
 
-Turn 1 covers autumn 2026 and is the same in every run and in every trajectory regime: the world is identical for every reader up to the first decision point. `cyber_test_shot` is guaranteed there by its own condition, and is never evaluated again.
+Turn 1 covers autumn 2026 and is the same in every run without exception: the world is identical for every reader up to the first decision point. `cyber_test_shot` is guaranteed there by its own condition, and is never evaluated again.
 
 ## The 2028 US presidential election
 
@@ -45,7 +45,7 @@ Weigh them by reading the campaign, not by counting events. The three campaign e
 
 ## Test Shot Against Critical Infrastructure
 **ID:** cyber_test_shot
-**Condition:** Fires in turn 1 and only in turn 1. This is the scenario's fixed opening event: it occurs in every run and in every trajectory regime, and is never evaluated again.
+**Condition:** Fires in turn 1 and only in turn 1. This is the scenario's fixed opening event: it occurs in every run without exception, and is never evaluated again.
 **Probability:** 100% in turn 1. Not eligible thereafter.
 **Can repeat:** No
 **Description:** In the autumn of 2026 an intrusion is discovered across electricity transmission operators on three continents, together with a large container port authority and a regional water utility. Two of the affected grid operators are in EU member states, but the deepest access is elsewhere, and no jurisdiction is the evident target. The intruders had been present for weeks. They were found by accident, during an unrelated audit, and the defenders' own retrospectives concede that existing detection would not have caught them.
@@ -143,7 +143,7 @@ The reading that settles across the security community within days is that this 
 ## Recursive Self-Improvement Begins
 **ID:** rsi_onset
 **Eligible:** ai_capability >= 65
-**Condition:** This entry appears only while the event is due under this run's regime; when you see it, it is live.
+**Condition:** This entry appears only while the event is due in this run; when you see it, it is live.
 **Probability:** 30%.
 **Can repeat:** No
 **Description:** Models begin contributing materially to the design of their successors, and the pace stops being set by human research throughput. It is recognised in retrospect rather than announced: the first sign is a release cadence nobody planned for. From this point capability growth compounds, and assurance falls behind it.

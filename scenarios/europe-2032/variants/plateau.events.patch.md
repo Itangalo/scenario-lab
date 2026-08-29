@@ -9,7 +9,7 @@
 ## Recursive Self-Improvement Begins
 **ID:** rsi_onset
 **Eligible:** ai_capability < 0
-**Condition:** Impossible under this regime: general competence saturates before recursive self-improvement becomes possible. The id is kept only so run statistics stay comparable across arms; the gate above never opens.
+**Condition:** Impossible in this run: general competence saturates before recursive self-improvement becomes possible. The id is kept only so run statistics stay comparable across arms; the gate above never opens.
 
 ## Verification Frontier Widens
 **ID:** verification_widens
