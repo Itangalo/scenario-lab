@@ -261,14 +261,14 @@ def main() -> int:
             "are not significant. Regenerate after any change to the templates, the "
             "scenario's prompt overrides, or the background files.",
             "",
-            "## Reviewer checklist",
+            "# ═══ REVIEWER CHECKLIST ═══",
             "",
             "- Every section of the actor and background files you expect is present below, not merely present in the file on disk",
             "- Nothing contradicts anything else: the scenario's own prompt overrides say the same thing as the templates they replace",
             "- No leakage: nothing here tells the actor something the scenario means it to infer",
             "- Numbers, thresholds and category names match the scenario definition exactly",
             "",
-            "## Where each block came from",
+            "# ═══ WHERE EACH BLOCK CAME FROM ═══",
             "",
             "Each block below carries a `FROM` comment naming its origin. These are not "
             "inferred from the finished text: the prompt builder recorded them as it "
@@ -277,11 +277,11 @@ def main() -> int:
             "is the template's own words; a block marked `{{variable}}` is a value put into "
             "it, and the note says which file or run-time structure that value came from.",
             "",
-            "## System prompt",
+            "# ═══ SYSTEM PROMPT ═══",
             "",
             annotate(system, system_prov),
             "",
-            "## User prompt",
+            "# ═══ USER PROMPT ═══",
             "",
             annotate(user, user_prov),
             "",

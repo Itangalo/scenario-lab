@@ -4,18 +4,18 @@ The actor's opening prompt. Everything the actor will ever know about itself tha
 
 Source: `runs/run-20260829-192725/turn-01/llm-io/04-actor-eu.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
-## Reviewer checklist
+# ═══ REVIEWER CHECKLIST ═══
 
 - Every section of the actor and background files you expect is present below, not merely present in the file on disk
 - Nothing contradicts anything else: the scenario's own prompt overrides say the same thing as the templates they replace
 - No leakage: nothing here tells the actor something the scenario means it to infer
 - Numbers, thresholds and category names match the scenario definition exactly
 
-## Where each block came from
+# ═══ WHERE EACH BLOCK CAME FROM ═══
 
 Each block below carries a `FROM` comment naming its origin. These are not inferred from the finished text: the prompt builder recorded them as it interpolated each value, so a one-line heading inside an interpolated block is attributed as confidently as a page of it. A block marked with a template path is the template's own words; a block marked `{{variable}}` is a value put into it, and the note says which file or run-time structure that value came from.
 
-## System prompt
+# ═══ SYSTEM PROMPT ═══
 
 <!-- FROM templates/system-prompts/actor.md (shared default) -->
 
@@ -192,7 +192,7 @@ Respond with a Markdown text containing the following sections:
 * Heading level 2: Actions
 * One paragraph for each action, describing at an appropriate level each action you intend to carry out during the turn.
 
-## User prompt
+# ═══ USER PROMPT ═══
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
