@@ -44,15 +44,24 @@ Both A and B write the raw event id `cyber_test_shot` in their prose, as C does 
 
 ### Runs
 
-Ten runs per road, turns 2–5 (the first half of 2027 through the second half of 2028, ending on the American election). One arm only for now: **plateau**. Acceleration and verification-bounded are still to do, ten each per road.
+Ten runs per road, turns 2–5 (the first half of 2027 through the second half of 2028, ending on the American election). Two arms done: **plateau** and **acceleration**. Verification-bounded is still to do, ten per road.
 
 Turn 1 is identical inside a road and pinned across roads: the same single event, `cyber_test_shot`, and the same pinned response. Runs down one road differ only in the dice from turn 2 onward.
 
-| road | runs | turn-1 base |
-|---|---|---|
-| A | `runs/run-a01` … `run-a10` | `runs/run-a-base` |
-| B | `runs/run-b01` … `run-b10` | `runs/run-b-base` |
-| C | `runs/run-c01` … `run-c10` | `runs/run-c-base` |
+**Seeds are unique per run, and are not to be reused across roads or arms.** The first two batches did reuse them – seeds 700001–700010 by index everywhere – on the reasoning that dice-pairing isolates the effect of the reader's choice. It does, and the cost is too high for what this tree is for. The roll for an event is `Random(f"{seed}:{turn}:{event_id}")`, so a shared seed fixes the threshold of every event and only the model's probability moves between roads. Measured on the acceleration batch, event-profile overlap between two roads (Jaccard, catalogue events, turns 2–5) is 0.625 at the same seed against 0.210 at different seeds, and across arms 0.271 against 0.099. Three roads sharing a seed are substantially the same world.
+
+Two consequences, because they pull in opposite directions. Per-road frequency claims – the "in 6 of 10 simulations" boxes – are unaffected either way, since the ten seeds inside a road are distinct regardless. What is affected is anything pooled across roads or arms, which is fewer independent draws than it looks, and the tree as it deepens: reusing ten seeds down every branch of a 42-piece story means the whole story explores ten dice-histories, and a reader replaying would feel the repetition. Breadth is what this needs; attribution at n=10 was disclaimed anyway. If a paired batch is ever wanted for attribution work, make it deliberately and say so here.
+
+| road | arm | runs | turn-1 base |
+|---|---|---|---|
+| A | plateau | archived | `runs/run-a-base` |
+| B | plateau | archived | `runs/run-b-base` |
+| C | plateau | archived | `runs/run-c-base` |
+| A | acceleration | archived | `runs/run-acc-a-base` |
+| B | acceleration | archived | `runs/run-acc-b-base` |
+| C | acceleration | archived | `runs/run-acc-c-base` |
+
+The six turn-1 bases stand and are the starting point for every future batch. Turns 2–5 of both batches were archived to `runs/archive/pre-priority-bias-2026-08/` on 2026-08-29, because the actor that produced them worked from a prompt the priority change has since replaced; that directory's README says what remains citable in them. The two results sections below describe those archived runs and are kept as the record of what they showed.
 
 ### Fork 1 results – plateau arm, turns 2–5 complete
 
@@ -85,3 +94,43 @@ Both bear on turns 3–5, so treat the election and anything downstream of it as
 Both are gone. The three outcomes are now a mutually exclusive event group resolved in turn 5: Python guarantees exactly one fires, and the events step decides which by weighing the three against each other from the world as it stands. A third failure was avoided on the way – deriving the outcome mechanically from the last campaign current made the presidency hang on two narrow events in a four-turn window, and `campaign_atlanticist` fired 0 times in 30 runs, so Alliance was unreachable rather than rare. The campaign events stay in the pool as evidence the model reads; they decide nothing.
 
 Checked on three branches from turn 4: weights came back graded and all three outcomes were live in every sample – consolidation 0.43–0.52, alliance 0.22–0.30, retrenchment 0.27–0.32 – rather than collapsing onto one. All three elected Retrenchment, which is the shared dice seed rather than a degenerate reading: runs at the same index carry the same seed by design.
+
+### Fork 1 results – acceleration arm, turns 2–5 complete
+
+Thirty runs, 120 simulated turns, $0.72, run 2026-08-28 against the repaired election machinery. Runs are `run-acc-a01` … `run-acc-c10` under `runs/`, with the pinned turn-1 bases at `run-acc-a-base`, `run-acc-b-base` and `run-acc-c-base`. Seeds are 700001–700010 by index, the same seeds the plateau batch used, so a run is dice-paired with its plateau twin at the same road and index. That reuse is the thing the seed rule above now forbids – it is recorded here as what these two batches are, not as a property to preserve.
+
+Medians at turn 5, the end of 2028:
+
+| road | capability | open weights | safety | resilience | sovereignty | capital | sentiment |
+|---|---|---|---|---|---|---|---|
+| A build | 69.1 | 51.0 | 29.5 | 41.5 | 25.0 | 38.0 | 28.0 |
+| B absorb | 62.8 | 48.3 | 30.5 | 38.0 | 25.0 | 34.0 | 28.0 |
+| C reach | 67.8 | 40.0 | 30.5 | 37.5 | 24.5 | 34.0 | 28.0 |
+
+Same caution as the plateau batch – ten runs per road cannot separate a road from its dice, and the within-road spread again exceeds the between-road gaps. What the arm changes, read against plateau:
+
+- **Capability runs and safety does not follow.** The frontier ends 5–12 points higher than on plateau and safety ends 4 points lower on every road, from a start of 32. `capability_jump` fired 6–7 times per road against 0 on plateau, and `loss_of_control_incident` 3–4 times against 1. This is the arm doing what it was built to do.
+- **Sentiment converges on 28 and stays there.** All three roads, identical median, against a 11-point spread on plateau. Under acceleration the public reads the world rather than the Union's choice of instrument, and road B no longer pays a sentiment penalty for looking exposed.
+- **Nobody built sovereignty here either.** 24.5–25.0 against a start of 22, on all three roads, in the arm where the argument for building one's own is strongest. Two batches now agree on this, and it is the first thing to settle in calibration.
+- **The roads swapped portfolios.** Counting the measure categories chosen in turns 2–5: road A, which opened with a category 4 sovereignty bet, spent 2 of its 39 later measures on category 4 and went to public technical capacity (13) and evaluation (8) instead. Roads B and C went the other way – 17 of 40 and 10 of 39 into category 4. Every road ends up doing roughly what the other two started with, which is either convergence on what the world demands or the actor regressing to a mean, and telling those apart matters for how much the reader's choice is supposed to weigh.
+- **Road A's opening measure is still stuck at the end.** The EU Sovereign Compute Initiative reads `under implementation` in 9 of 10 runs at turn 5 and `fully implemented` in one, always for the same reasons in prose: legal anchoring deadlocked between Germany and France, an ECJ referral, procurement suspended. In `run-acc-a08` the ASML leverage play backfires outright – Washington answers conditional licensing by suspending equipment licences. The standing commitment survives verbatim in all ten runs; the spending behind it does not.
+
+The election machinery now behaves. Exactly one outcome in all 30 runs, and all three reachable: Consolidation 18, Retrenchment 7, Alliance 5. Alliance fired 3 times on road C alone, against 0 occurrences in the entire plateau batch. The campaign events are legible enough to write from without deciding anything – `campaign_security_hawk` 13 runs, `campaign_backlash` 15, `campaign_atlanticist` 4 – so a run where the hawkish current ran loudest and Retrenchment still won is available as material rather than as a defect.
+
+Turn 1 is pinned twice over in these bases: the event to `cyber_test_shot` alone, and the actor to the road file, so that the opening is identical across roads and across arms as `events.md` requires. `pin-turn-1.py` in this directory does it – it replaces the events and actor steps and lets the rest of the turn run normally, which is what makes the turn-1 world state consistent with the pinned choice rather than with a drawn one. The plateau bases predate it and were made some other way, but come out in the same shape. Run it once per road for the verification-bounded arm, then copy each base into ten seeded siblings and `batch-resume --turns 5`.
+
+Two provenance notes on this batch. The first attempt at the bases let the dice run in turn 1 alongside the pinned actor, so `cyber_major_incident` and `taiwan_tension_rise` fired there and the three roads no longer shared an opening; those bases were discarded and rebuilt, and nothing from them is in the runs above. And the batch was killed and restarted once, to raise its concurrency – `run-acc-a02` and most of roads B and C were interrupted mid-turn and re-ran that turn from the previous turn's state, which is resume working as designed but means those turns were drawn twice and the second draw kept.
+
+### Changes made after these two batches
+
+Both batches above predate the changes below, so the verification-bounded arm will not be directly comparable to them on anything touching how doggedly the Union pursues its own direction. Decide before running it whether that matters enough to redo plateau and acceleration under the new prompts; for narrative material it probably does not, for any cross-arm claim about persistence it does.
+
+**The standing commitment now binds the priority.** Road A showed the failure the old wording allowed: the commitment survived verbatim in all ten runs while the spending went elsewhere – the Sovereign Compute Initiative was the named priority in only 13 of 40 turns, and 2 of the 39 measures chosen in turns 2–5 carried its category. Nothing in the pipeline read the commitment when a measure was picked, so the ledger bound what the Union said and never what it did. Raising `standing_commitment` to identity tier would not have helped: `statements.py` gates commitment and identity identically, and neither tier reaches measure selection.
+
+The lever used instead is the named priority, because metric rule 10 already makes it the only thing that reliably advances – other unfinished measures move only above `eu_political_capital` 55, and these runs sit at 34–45. `user-prompts/actor.md` now says the priority should serve the standing commitment in most turns, and that naming one that does not requires a line saying what the world demanded instead. It is written as a bias rather than a rule: the portfolio is still expected to spread, and a commitment pursued through several categories is still being pursued. The same passage was added to `background/actors/eu.md`, where it is documentation only – see below.
+
+**`background/actors/eu.md` is mostly not rendered, and this was found while making the change above.** `load_actor` in `scenario_lab/loader.py` reads `## Long description` until the first `###` heading and then stops: any `###` that is not `### Statements` or `### Behavioral traits` sets the current section to none. Everything in that file from `### What you are` onward – the instruments, the standing-commitment rules, the ten categories, "What you do not know" – therefore never reaches any prompt. `long_description` as loaded is 380 characters, one paragraph. The scenario behaves correctly anyway because `user-prompts/actor.md` carries the operative wording independently, and the file's `### Statements` and `### Behavioral traits` blocks are parsed by their own branches and do reach the actor. Two consequences worth holding onto. A change made only in `background/actors/eu.md` has no effect on any run, so operative changes go in the user prompt until this is repaired. And the blast radius of repairing it is smaller than it first looks: measured across all 39 actor files in the repository, 34 of them lose 80–110 tokens, which is markup and section headers rather than content. Only five lose anything real, `europe-2032/eu.md` worst at 2,619 tokens and four actor files in two other scenarios behind it. The bug bites exactly the scenarios written in the richer style, and repairing it re-baselines those and no others.
+
+**Still open, and it bears directly on the above.** It is not established that road A's drift was drift rather than the actor being right. Category 4 is high-cost with a three-turn lead time, and the prose gives the same obstacle in every run – legal anchoring deadlocked, ECJ referral, procurement frozen. `run-acc-a08` named the initiative priority in all four turns and it still ended `under implementation`; `run-acc-a04`, the one run where it reached `fully implemented`, never named it once. If a sovereignty measure cannot land inside the window whatever the Union does, the new priority bias will not produce commitment, it will produce an actor visibly spending four turns on a wall. Settle the lead-time and sovereignty-growth rules first – it is the same calibration item as sovereignty never moving in either batch.
+
+One measurement caveat for anyone repeating that analysis: the actor renames measures between turns, so tracking a portfolio by name undercounts. `run-acc-a04`'s "Begin phased deployment of EU-independent…" is very likely the compute initiative under a new label.
