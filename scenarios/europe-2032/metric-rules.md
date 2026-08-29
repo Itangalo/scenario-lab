@@ -12,7 +12,7 @@ The seven metrics sort by how far the EU can actually move them, and that orderi
 
 3. **`openweight_capability` tracks `ai_capability` at a lag, and the lag is the policy-relevant variable.** The regime named in this run's metric rules states how the gap moves by default. Open weights trail the closed frontier by roughly six to nine months throughout; what that constant lag *means* depends entirely on how fast the frontier is moving. `openweight_frontier_release` cuts the gap to 5 or below at a stroke. A fully implemented restriction on open release above a capability threshold, binding in a jurisdiction where such models are actually trained, widens the gap by 2 to 4 per turn while it holds; the same restriction binding only inside the Union widens it by nothing at all, and the Union will be told so by its critics.
 
-4. **Capability never falls.** `ai_capability` and `openweight_capability` are accumulated knowledge and infrastructure. `openweight_capability` never exceeds `ai_capability`. The only exception is catastrophic physical destruction of the compute base, which must be narrated as such.
+4. **Capability never falls, and the opening turn is shared.** `ai_capability` and `openweight_capability` are accumulated knowledge and infrastructure. `openweight_capability` never exceeds `ai_capability`. The only exception is catastrophic physical destruction of the compute base, which must be narrated as such. Turn 1 covers the second half of 2026, which has already happened in every run: it ends with `openweight_capability` at 45, give or take a point, whatever this run's regime says about later turns. Regime-specific divergence begins in turn 2. Rule 3's rates apply from there.
 
 ## The incident engine
 

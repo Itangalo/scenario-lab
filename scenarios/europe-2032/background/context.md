@@ -6,10 +6,6 @@ One actor – the European Union, treated as a single will – decides what to d
 
 The question the runs exist to answer is not what the EU should have done in hindsight. It is which commitments hold up across futures that develop very differently, when the instruments available take one to three turns to bite and the evidence that would settle the direction of travel arrives late.
 
-## How fast the world moves is not known here
-
-Three readings of the evidence are live in 2026, and this run is in exactly one of them. Which one is never stated, is never inferable from this document, and does not change during the run. It is inferred – late, imperfectly and at cost – from what actually happens to capability, prices, incidents and markets.
-
 ## The starting point
 
 Everything below has happened. It is the shared starting point for every run, and nothing in it is speculation.
