@@ -31,8 +31,7 @@ Write a markdown report using exactly these `##` section headers in this order:
 In `## Key Metrics Overview`, include a markdown table with start value, end value, direction, and delta for each metric.
 {% endif %}
 
-Use the supplied metric overview as the baseline for exact start/end values.
-If `context_mode` is `condensed` or `minimal`, some long per-turn artifacts were truncated for context-window reasons. Work only from the evidence that remains in the prompt.
+Use the supplied metric overview as the baseline for exact start/end values. If `context_mode` is `condensed` or `minimal`, some long per-turn artifacts were truncated for context-window reasons. Work only from the evidence that remains in the prompt.
 
 ## Run Metadata
 ```json

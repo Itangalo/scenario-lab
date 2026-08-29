@@ -1,12 +1,6 @@
 {# Scenario override. Identical to templates/user-prompts/events.md except for:
-   1. The paragraph mandating that the six always-eligible events appear in every
-      turn's array. Without it the model filters the gated escalations out when
-      their gate is shut, which makes precursors look perfectly predictive and
-      destroys the monitoring problem the scenario is built on.
-   2. The emerging-developments protocol: how many developments to keep in play
-      and how fast they escalate depends on this run's trajectory regime, and a
-      proposal's description must never leak which regime the run is in.
-   Keep in sync with the default template when that changes, including the
+   1. The paragraph mandating that the six always-eligible events appear in every turn's array. Without it the model filters the gated escalations out when their gate is shut, which makes precursors look perfectly predictive and destroys the monitoring problem the scenario is built on.
+   2. The emerging-developments protocol: how many developments to keep in play and how fast they escalate depends on this run's trajectory regime, and a proposal's description must never leak which regime the run is in. Keep in sync with the default template when that changes, including the
    emergent-events block, which an override must carry itself. #}
 It is now turn {{turn}} which covers {{time_period}}.
 
@@ -47,10 +41,7 @@ The list of potential external events looks like this:
 
 ## What has actually fired so far
 
-This is the run's own record, not a summary of it. Judge any condition that
-depends on what has happened — gate windows above all — against this list and
-nothing else. The narrative and the historical summary condense and lose dates;
-they are not evidence that an event occurred, and atmosphere is not an event.
+This is the run's own record, not a summary of it. Judge any condition that depends on what has happened — gate windows above all — against this list and nothing else. The narrative and the historical summary condense and lose dates; they are not evidence that an event occurred, and atmosphere is not an event.
 
 {{event_history}}
 

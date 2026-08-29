@@ -3,8 +3,7 @@ The previous Events response was not valid JSON in the required schema.
 Here is the previous response:
 
 ---
-{{previous_response}}
----
+{{previous_response}} ---
 
 Rewrite it to be a valid JSON array with objects for each event whose conditions are met, in this exact format:
 

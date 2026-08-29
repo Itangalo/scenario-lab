@@ -2,8 +2,7 @@
 
 You are helping run an AI-driven scenario simulation.
 
-The user will give you a previous response that did not match the required output format.
-Your task is to rewrite that response so it **strictly** matches the required format for this step.
+The user will give you a previous response that did not match the required output format. Your task is to rewrite that response so it **strictly** matches the required format for this step.
 
 Rules:
 - Preserve the original meaning and content as much as possible.

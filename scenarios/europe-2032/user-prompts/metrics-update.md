@@ -1,24 +1,12 @@
-{# Scenario override. Identical to templates/user-prompts/metrics-update.md except for
-   two additions, both after the notepad block:
-   1. A hard ban on writing the uppercase regime labels (ACCELERATION,
-      VERIFICATION-BOUNDED, PLATEAU) anywhere in the Narrative. The GM knows
-      this run's regime because the variant's patched metric rules state it,
-      but from turn 2 onward the narrative IS the world state the EU reads, so
-      the narrative is the one channel that carries the regime to the actor.
-      The same leak was observed repeatedly in forking-futures, where the
-      referee caught some occurrences, missed others, and ran out of attempts
-      once. Prevention at the source is the only reliable layer.
-   3. The US_POSTURE line, which must be carried in the Notepad from the turn
-      the 2028 election fires onward.
-   2. Guidance for treating tracked emerging developments as faint narrative
-      signals rather than events.
+{# Scenario override. Identical to templates/user-prompts/metrics-update.md except for two additions, both after the notepad block:
+   1. A hard ban on writing the uppercase regime labels (ACCELERATION, VERIFICATION-BOUNDED, PLATEAU) anywhere in the Narrative. The GM knows this run's regime because the variant's patched metric rules state it, but from turn 2 onward the narrative IS the world state the EU reads, so the narrative is the one channel that carries the regime to the actor. The leak was observed repeatedly during calibration, where the referee caught some occurrences, missed others, and ran out of attempts once. Prevention at the source is the only reliable layer.
+   3. The US_POSTURE line, which must be carried in the Notepad from the turn the 2028 election fires onward.
+   2. Guidance for treating tracked emerging developments as faint narrative signals rather than events.
    Keep in sync with the default template when that changes. #}
 {% if background_context %}
 ## Fixed Background (unchanged all run)
 
-This is the world as it stood at the start. It does not change, and it outranks
-the evolving narrative on any fact it states — if the narrative drifts away from
-something fixed here, the narrative is wrong.
+This is the world as it stood at the start. It does not change, and it outranks the evolving narrative on any fact it states — if the narrative drifts away from something fixed here, the narrative is wrong.
 
 {{background_context}}
 

@@ -26,11 +26,7 @@ When judging success and writing the narrative, be realistic rather than harmoni
 {% if constitution %}
 ## Constitutional Constraints
 
-These are hard rules of this world. They are checked after you answer, and an
-update that breaks one is sent back to be redone – so read them before deciding
-metric values, and write a narrative that is consistent with them rather than one
-that has to be corrected afterwards. Where a constraint is conditional, check
-whether its condition actually holds before applying it.
+These are hard rules of this world. They are checked after you answer, and an update that breaks one is sent back to be redone – so read them before deciding metric values, and write a narrative that is consistent with them rather than one that has to be corrected afterwards. Where a constraint is conditional, check whether its condition actually holds before applying it.
 
 {{constitution}}
 

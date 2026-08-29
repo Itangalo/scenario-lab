@@ -16,10 +16,7 @@ Review the following metrics update for Turn {{turn}} ({{time_period}}).
 
 {{notepad}}
 
-This is the authoritative record of what has already happened in this run. A
-constraint phrased as "once X has occurred" is satisfied if the notepad records
-X, even when this turn's narrative does not mention it. Check the notepad before
-concluding that something has not happened.
+This is the authoritative record of what has already happened in this run. A constraint phrased as "once X has occurred" is satisfied if the notepad records X, even when this turn's narrative does not mention it. Check the notepad before concluding that something has not happened.
 
 ---
 

@@ -3,8 +3,7 @@ The previous Metrics Update response did not match the required format.
 Here is the previous response:
 
 ---
-{{previous_response}}
----
+{{previous_response}} ---
 
 Rewrite it so it matches **exactly** this Markdown structure:
 

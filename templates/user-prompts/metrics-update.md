@@ -1,9 +1,7 @@
 {% if background_context %}
 ## Fixed Background (unchanged all run)
 
-This is the world as it stood at the start. It does not change, and it outranks
-the evolving narrative on any fact it states — if the narrative drifts away from
-something fixed here, the narrative is wrong.
+This is the world as it stood at the start. It does not change, and it outranks the evolving narrative on any fact it states — if the narrative drifts away from something fixed here, the narrative is wrong.
 
 {{background_context}}
 

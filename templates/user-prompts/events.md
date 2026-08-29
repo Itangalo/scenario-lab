@@ -37,10 +37,7 @@ The list of potential external events looks like this:
 
 ## What has actually fired so far
 
-This is the run's own record, not a summary of it. Judge any condition that
-depends on what has happened — gate windows above all — against this list and
-nothing else. The narrative and the historical summary condense and lose dates;
-they are not evidence that an event occurred, and atmosphere is not an event.
+This is the run's own record, not a summary of it. Judge any condition that depends on what has happened — gate windows above all — against this list and nothing else. The narrative and the historical summary condense and lose dates; they are not evidence that an event occurred, and atmosphere is not an event.
 
 {{event_history}}
 

@@ -30,6 +30,4 @@ Actor: {{actor_name}}
 
 ---
 
-Find the named development in the inputs above and quote it verbatim. Then rule
-whether it bears on this specific statement, or is merely something else that
-happened. Respond with the JSON object only.
+Find the named development in the inputs above and quote it verbatim. Then rule whether it bears on this specific statement, or is merely something else that happened. Respond with the JSON object only.

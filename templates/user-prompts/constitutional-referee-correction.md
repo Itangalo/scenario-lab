@@ -16,9 +16,7 @@ Revise the following metrics update for Turn {{turn}} ({{time_period}}) so it co
 
 {{notepad}}
 
-This is the authoritative record of what has already happened in this run. Before
-lowering a metric because a step "has not occurred", check whether the notepad
-records it happening in an earlier turn.
+This is the authoritative record of what has already happened in this run. Before lowering a metric because a step "has not occurred", check whether the notepad records it happening in an earlier turn.
 
 ## Constitutional Violations To Fix
 
