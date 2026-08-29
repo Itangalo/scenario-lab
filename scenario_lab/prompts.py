@@ -241,6 +241,17 @@ class PromptBuilder:
         section = "\n".join(lines)
         return f"{base}\n\n{section}" if base else section
 
+    def _background_context_for_turn(self, turn: int) -> str:
+        """Return the fixed-background block for this turn, if it earns its place.
+
+        Empty in turn 1, where ``world_state`` already carries the full context
+        and the block would duplicate it. From turn 2 on, the scenario's compact
+        ``fixed_facts`` when it has one, and the full context when it does not.
+        """
+        if turn <= 1:
+            return ""
+        return (self.scenario.fixed_facts or self.scenario.context or "").strip()
+
     def _get_common_context(self, turn: int) -> dict[str, Any]:
         """Get context variables common to all prompts."""
         time_period = self._get_time_period(turn)
@@ -259,9 +270,17 @@ class PromptBuilder:
             # background/context.md is loaded once and then only used to seed
             # world_state.narrative, which the Game Master overwrites in turn 1.
             # Anything a scenario fixes at the start -- an election result, a
-            # treaty, a map -- otherwise vanishes after a single turn. Keep it
-            # available for the whole run as its own block.
-            "background_context": self.scenario.context or "",
+            # treaty, a map -- otherwise vanishes after a single turn, so it is
+            # kept available for the whole run as its own block.
+            #
+            # Two refinements on that, both about not saying the same thing
+            # twice. In turn 1 world_state IS the context, verbatim, so
+            # rendering the block as well puts the entire opening description
+            # into the prompt a second time; it is suppressed there. From turn 2
+            # a scenario that provides background/fixed-facts.md gets that
+            # compact restatement instead of the full opening, which is what the
+            # block is actually for once the narrative has moved on.
+            "background_context": self._background_context_for_turn(turn),
             "output_language": self.scenario.config.output_language,
             # Lets templates branch on the emergent-events policy (for example
             # to explain the tracked notepad section) without hardcoding any

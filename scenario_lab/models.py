@@ -631,6 +631,13 @@ class Scenario:
     metric_rules: str  # Current rules as markdown
     world_state: WorldState
     context: str  # Background context
+    # Optional compact restatement of the fixed facts in `context`, from
+    # background/fixed-facts.md. The full context is the world state in turn 1
+    # and is replaced by the Game Master's narrative afterwards, so from turn 2
+    # this is what keeps the scenario's fixed facts in front of every prompt
+    # without carrying the whole opening description every turn. Empty means
+    # the full context is used instead.
+    fixed_facts: str = ""
     notepad: str = ""  # Game Master notes that persist across turns
     constitution: Optional[str] = None  # Constitutional constraints (optional)
     custom_system_prompts: dict[str, str] = field(default_factory=dict)  # Optional scenario-specific system prompts

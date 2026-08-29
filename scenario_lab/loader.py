@@ -493,6 +493,12 @@ def load_scenario(
             patch.resource, events, metric_rules, Path(patch.path)
         )
 
+    # Optional compact restatement of the fixed facts (see Scenario.fixed_facts)
+    fixed_facts = ""
+    fixed_facts_path = scenario_dir / "background" / "fixed-facts.md"
+    if fixed_facts_path.exists():
+        fixed_facts = fixed_facts_path.read_text(encoding="utf-8")
+
     # Load constitutional constraints if present (optional)
     constitution = None
     constitution_path = scenario_dir / "constitution.md"
@@ -520,6 +526,7 @@ def load_scenario(
         metric_rules=metric_rules,
         world_state=world_state,
         context=context,
+        fixed_facts=fixed_facts,
         constitution=constitution,
         custom_system_prompts=custom_system_prompts,
         custom_user_prompts=custom_user_prompts,

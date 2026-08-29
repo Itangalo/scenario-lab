@@ -29,6 +29,7 @@ scenarios/<scenario-id>/
 ├── user-prompts/                      # optional
 └── background/
     ├── context.md
+    ├── fixed-facts.md                 # optional
     └── actors/
         └── <actor_id>.md              # one file per actor in scenario.yaml
 ```
@@ -384,6 +385,14 @@ The file may evolve during simulation and is versioned in turn outputs.
 ## `background/context.md`
 
 `background/context.md` is loaded as raw markdown text and used as initial world narrative.
+
+## `background/fixed-facts.md` (optional)
+
+The compact standing restatement of `context.md`, loaded as raw markdown. The full context is the world state in turn 1 and is replaced by the Game Master's narrative after it, so from turn 2 onward every prompt carries a fixed-background block to keep the scenario's settled facts from decaying. That block renders this file when it exists and the whole of `context.md` when it does not, which is why a long opening description is worth restating here: only the facts that must not drift belong in it, not the scene-setting.
+
+Write it as facts rather than as narration, and say in the file that it outranks the evolving narrative on anything it states. Do not put anything here that is not also true in `context.md`; the two must not be able to disagree. Nothing renders it in turn 1, where `context.md` itself is the world state, so it never duplicates the opening.
+
+Check the result in the prompt sign-off documents rather than assuming it: `python scripts/render_signoff.py <run-dir>` shows both turns side by side, with each block labelled by the file it came from.
 
 ### `termination` (optional)
 
