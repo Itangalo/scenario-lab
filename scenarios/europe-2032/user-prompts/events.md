@@ -59,6 +59,7 @@ Eligibility is binary, and listing is not harmless: every entry you output gets 
 **In the turn covering the second half of 2028, all three election outcomes must appear in your array:** `election_consolidation`, `election_alliance` and `election_retrenchment`. They are a mutually exclusive family and exactly one of them will be fired, whatever you return; your figures are weights against each other, not chances of happening alone, so only their ratio matters. Omitting one is a weight of zero and silently removes a possible future – if you judge an outcome nearly impossible, say so with a small weight rather than by leaving it out. Outside that turn they are not eligible and must not be listed.
 
 IMPORTANT: For events with date-specific conditions (e.g., "September 2026 is included"), check if the current time period ({{time_period}}) covers that date.
+
 - If the current period is "January-June 2026", it does NOT cover September 2026.
 - If the current period is "July-December 2026", it DOES cover September 2026.
 

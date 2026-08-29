@@ -9,6 +9,7 @@ You are revising a proposed metrics update in an AI-driven scenario simulation s
 ## Your Task
 
 You will receive:
+
 - The previous metrics
 - The currently proposed new metrics
 - The current narrative

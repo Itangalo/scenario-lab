@@ -8,6 +8,7 @@ Write the report in {{ output_language }}.
 Return exactly one JSON object and no surrounding markdown.
 
 Use this schema:
+
 - `summary`: string – what this world tends to do, in 3-6 sentences
 - `research_question_answers`: array of objects with `id`, `question`, `answer`, `frequency` (string, e.g. "14 of 20 runs"), `conditions` (string – what the answer depends on), `evidence_runs` (array of run directory names), and `confidence` (one of "high", "medium", "low")
 - `outcome_patterns`: array of objects with `label`, `description`, `run_count`, `example_runs` (array), and `distinguishing_factors` (string)
@@ -48,6 +49,7 @@ These are the questions this scenario was built to answer. Answer each one expli
 
 {{ rq.question }}
 {% if rq.metrics %}
+
 - Bearing metrics: {{ rq.metrics | join(", ") }}
 {% endif %}
 {% if rq.events %}

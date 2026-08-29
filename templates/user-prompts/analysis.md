@@ -8,6 +8,7 @@ Write the report in {{ output_language }}.
 Return exactly one JSON object and no surrounding markdown.
 
 Use this schema:
+
 - `summary`: string
 - `key_metrics_overview`: array of objects with `metric_id`, `start_value`, `end_value`, `direction`, `delta`, and `commentary`
 - `turning_points`: array of objects with `turn`, `time_period`, `description`, `impact`, and `why_it_mattered`

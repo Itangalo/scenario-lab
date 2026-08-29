@@ -15,21 +15,25 @@ This step is a gate, not a suggestion pass. If a clear constraint is violated, r
 ## What to Check
 
 ### 1. Economic Constraints
+
 - Are budgets and resources consistent with available funding?
 - Do capital expenditures have identified sources?
 - Do economic effects respect minimum time lags?
 
 ### 2. Regulatory Constraints
+
 - Do new laws/policies respect minimum lead times?
 - Are international agreements realistic in timeline?
 - Does regulatory capacity growth respect limits?
 
 ### 3. Organizational Constraints
+
 - Does agency/organization growth respect maximum rates?
 - Are hiring and training timelines realistic?
 - Is expertise development plausible?
 
 ### 4. Physical Constraints
+
 - Are compute/hardware changes within supply constraints?
 - Do infrastructure projects have realistic timelines?
 - Are resource limits respected?

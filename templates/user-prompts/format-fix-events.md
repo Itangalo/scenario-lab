@@ -15,6 +15,7 @@ Rewrite it to be a valid JSON array with objects for each event whose conditions
 ```
 
 Requirements:
+
 - Each element must be a JSON object with exactly two keys: `id` (a string) and `probability` (a number between 0 and 1).
 - Do NOT use `["event_name", 0.25]` — each event must be its own `{"id": ..., "probability": ...}` object.
 - If no events meet conditions, output `[]`.

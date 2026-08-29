@@ -8,6 +8,7 @@ Write the report in {{ output_language }}.
 Return exactly one JSON object and no surrounding markdown.
 
 Use this schema:
+
 - `summary`: string – what differs between the cohorts and what holds everywhere, in 3-6 sentences
 - `research_question_answers`: array of objects with `id`, `question`, `answer` (per cohort where answers differ), `frequency` (string), `conditions` (string – which cohorts or situations change the answer), `evidence_runs` (array of run directory names if given in the cohort reports), and `confidence` (one of "high", "medium", "low")
 - `group_profiles`: array of objects with `cohort`, `n_runs`, `profile` (the cohort's characteristic trajectory in 2-3 sentences), and `key_traits`
@@ -59,6 +60,7 @@ These are the questions this scenario was built to answer. Compare the cohorts' 
 
 {{ rq.question }}
 {% if rq.metrics %}
+
 - Bearing metrics: {{ rq.metrics | join(", ") }}
 {% endif %}
 {% if rq.events %}

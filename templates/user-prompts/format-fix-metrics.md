@@ -19,6 +19,7 @@ Rewrite it so it matches **exactly** this Markdown structure:
 <notepad text>
 
 Requirements:
+
 - Use the exact headers `## Metrics`, `## Narrative`, and `## Notepad` (do not translate them).
 - The `## Metrics` section must contain a valid JSON object inside a ```json code fence.
 - The JSON object should include metric IDs as keys and numbers as values.

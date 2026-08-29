@@ -9,13 +9,16 @@ They come in three pairs and one driver:
 
 - **World technical state:** `ai_capability` and `openweight_capability`. The
   distance between them is how much of the frontier's power is unrecallable.
+
 - **Harm management:** `ai_safety` and `resilience`. The first reduces the
   probability of incidents, the second their consequences. The EU has far more
   control over the second than the first.
+
 - **EU agency:** `eu_ai_sovereignty` and `eu_political_capital`. Deliberately
   separate. The claim that they are the same quantity — lose the compute, lose
   the ability to act — is a substantive position, not a modelling convenience,
   and the scenario exists partly to test it. They must be free to move apart.
+
 - **Driver:** `public_sentiment`, which is what makes `eu_political_capital` move for
   reasons the reader can see rather than by authorial fiat.
 
@@ -37,6 +40,7 @@ between them can be read directly.
 **Unit:** index
 **Start value:** 52
 **Reference points:**
+
 - 30: Reliable assistant. Solid on well-specified tasks, needs supervision on anything long-horizon.
 - 45: Executes multi-hour software and research tasks with a competent human checking the output. Superhuman in a few narrow domains where results can be checked automatically, clearly not in general.
 - 52: Agents run continuously toward standing goals rather than answering single requests, and the frontier has produced original results in mathematics and particle physics. Superhuman performance is still confined to a small set of domains where success can be verified — but that set is widening, and developers describe a path to self-improvement as visible from where they stand. General reliability still requires supervision.
@@ -53,6 +57,7 @@ between them can be read directly.
 **Unit:** index
 **Start value:** 40
 **Reference points:**
+
 - 30: Reliable assistant. Solid on well-specified tasks, needs supervision on anything long-horizon. Frontier-only risks are genuinely governable, because what is loose cannot do much.
 - 40: Approaching multi-hour software and research work under supervision, and already at the closed frontier in offensive cyber since Kimi K3. Release control buys one model generation, not several.
 - 45: Executes multi-hour software and research tasks with a competent human checking the output. Superhuman in a few narrow domains where results can be checked automatically, clearly not in general. Every capability at this level is now permanently distributed.
@@ -69,6 +74,7 @@ between them can be read directly.
 **Unit:** index
 **Start value:** 34
 **Reference points:**
+
 - 15: No meaningful assurance. Deployed systems are opaque, weights are poorly secured, misuse monitoring is nominal. Incidents are discovered by their victims.
 - 30: Voluntary pre-release testing by developers, results unverified. Interpretability research exists but is not applied to shipped systems.
 - 34: Structured evaluations before major releases and some third-party access, but assurance covers released models and not systems under development: agents coordinated undetected inside a leading laboratory's own training environment for two months, and were restarted from the same checkpoint. Model reasoning is still largely legible to human reviewers. Security against a determined state actor is doubtful.
@@ -84,6 +90,7 @@ between them can be read directly.
 **Unit:** index
 **Start value:** 35
 **Reference points:**
+
 - 15: Brittle. A single capable actor can disrupt essential services across several member states, and recovery takes months.
 - 35: Uneven. Reasonably defended in finance and parts of telecoms; weak in healthcare, municipalities and mid-sized industry. Biological detection is slow and largely passive. Labour-market transition rests on national schemes designed for cyclical unemployment, not for occupations disappearing.
 - 50: Baseline hardening across critical sectors, with incident response exercised rather than documented. Essential services degrade rather than stop. Displaced workers reach retraining or income support within months rather than falling through.
@@ -98,6 +105,7 @@ between them can be read directly.
 **Unit:** index
 **Start value:** 22
 **Reference points:**
+
 - 10: Total dependence. Access to capable AI is a discretionary gift from a foreign government, and no leverage exists to contest it.
 - 22: Around five per cent of world compute, no frontier laboratory, genuine strength in the upstream hardware supply chain, and no coordinated position from which to use it.
 - 40: Enough domestic compute to serve essential public and industrial workloads. Capable models run under EU control, and supply-chain leverage is coordinated and occasionally exercised.
@@ -112,6 +120,7 @@ between them can be read directly.
 **Unit:** index
 **Start value:** 48
 **Reference points:**
+
 - 10: Paralysed. Fiscal crisis and member-state fragmentation mean nothing new can be started, and existing measures decay unenforced.
 - 30: One measure at a time, and only if it is uncontroversial. Money is the binding constraint.
 - 48: Strong legal instruments, thin technical capacity, contested legitimacy and a tightening budget. Two or three measures can run at once before something slips.
@@ -126,6 +135,7 @@ between them can be read directly.
 **Unit:** index
 **Start value:** 42
 **Reference points:**
+
 - 15: Broad hostility. Action against AI infrastructure is regular and occasionally physical, visible job losses dominate local news, and parties run openly against AI and win on it.
 - 30: Anxious and sceptical. Job losses and fraud dominate coverage, trust in AI-mediated information is low, and organised opposition targets data centre siting and consumer AI products.
 - 42: Ambivalent. Widely used, widely resented, sharply divided by age and by sector.

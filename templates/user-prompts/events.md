@@ -51,6 +51,7 @@ Use the background information to determine which external events can occur in t
 Eligibility is binary, and listing is not harmless: every entry you output gets rolled. An event whose Condition is not satisfied this turn must be omitted from the array entirely — including it "just in case" with a small probability is an error of the same weight as omitting an eligible one. When a condition is genuinely uncertain, judge conservatively and omit.
 
 IMPORTANT: For events with date-specific conditions (e.g., "September 2026 is included"), check if the current time period ({{time_period}}) covers that date.
+
 - If the current period is "January-June 2026", it does NOT cover September 2026.
 - If the current period is "July-December 2026", it DOES cover September 2026.
 
