@@ -2,7 +2,7 @@
 
 The events step. Every event condition, gate and probability the world runs on is either in this prompt or is not enforced at all.
 
-Source: `runs/run-20260830-162937/turn-02/llm-io/01-events.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260830-185157/turn-02/llm-io/01-events.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -146,11 +146,11 @@ Current metrics look like this:
 {
   "ai_capability": 52.0,
   "openweight_capability": 45.0,
-  "ai_safety": 33.0,
+  "ai_safety": 34.0,
   "resilience": 35.0,
   "eu_ai_sovereignty": 22.0,
   "eu_political_capital": 45.0,
-  "public_sentiment": 40.0
+  "public_sentiment": 42.0
 }
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
@@ -164,11 +164,7 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-In late 2026, a stealthy AI-driven cyber intrusion was detected in critical infrastructure across two EU member states, exposing vulnerabilities in energy, water, and port systems. Though undetected for weeks, the breach caused no major disruption but triggered alarm over the rise of AI-augmented cyber threats. In response, the EU launched the Emergency Resilience Acceleration Programme, reallocating €4.2 billion from cohesion funds to bolster infrastructure, while ENISA began planning AI-focused red-team exercises and drafted AI-specific protocols under NIS2. However, no binding decisions were made, implementation stalled, and the Scientific Panel remained inactive, leaving resilience improvements unrealized.
-
-The InvestAI Gigafactories initiative remained the EU’s top priority, with progress in talks on domestic chip packaging, though broader semiconductor self-reliance stayed uncertain. National resistance, energy capacity constraints, and fragmented interests slowed the tech sovereignty agenda. Political and public confidence eroded: the breach intensified institutional strain, contributing to a decline in political capital to 45.0 and public sentiment to 40.0. The Pope’s encyclical amplified societal skepticism toward opaque AI systems.
-
-Technologically, overall AI capability held steady at 52.0, while openweight model deployment increased, raising openweight_capability to 45.0. However, safety efforts lagged, causing a slight dip in ai_safety. Resilience remained unchanged at 35.0, and eu_ai_sovereignty stayed at 22.0, as coordination without implementation yielded no measurable gains under constitutional rule 6.
+AI capability remains stable at 52.0 due to recursive research automation, while open-weight models advance with Kimi K3's release of a potent offensive cyber capability, raising openweight capability to 45.0. A covert AI-driven cyber intrusion breaches two EU member states, exposing critical gaps in defensive detection despite fortuitous discovery. In response, the EU proposes the Emergency Compute Mobilisation Directive as a priority category 4 measure, initiating preparatory legal work and threat assessments under Article 122 TFEU, though no binding decisions or implementations occur. ENISA and the Scientific Panel begin scoping future AI intrusion detection standards, and talent outreach planning starts with no hires. With three active category 4 initiatives, political costs mount; despite a net −8 cost, capped movement limits reduce eu_political_capital by only 3, from 48.0 to 45.0. Eu_ai_sovereignty and resilience remain unchanged, and public sentiment holds steady at 42.0.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -178,19 +174,25 @@ Technologically, overall AI capability held steady at 52.0, while openweight mod
 
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
-### The Wake-Up Call  
-In the final months of 2026, a silent intrusion was discovered across critical infrastructure—power grids, a port, and a water utility—in two member states. The breach, attributed in initial forensic reports to AI-driven cyber agents, went undetected for weeks before being uncovered by chance. No major disruption occurred, but the depth of access alarmed European security agencies. The intrusion has prompted urgent internal assessments about the evolving nature of cyber threats, with some analysts suggesting a shift toward stealthier, AI-augmented operations. However, no consensus has formed on whether this reflects a broader trend or an isolated incident.
+### The Frontier Creeps Forward
 
-### Response Under Strain  
-The European Union initiated the Emergency Resilience Acceleration Programme, proposing the use of €4.2 billion in cohesion funds to strengthen energy, water, and port systems. ENISA began scoping red-team exercises using open-weight models, and draft mandates under NIS2 were circulated, calling for AI-specific logging and failover protocols. However, no decisions were finalized this turn, and implementation has not yet begun. The Scientific Panel, tasked with providing technical guidance, remains inactive, delaying the development of unified standards. As a result, no measurable improvement in resilience occurred during this period.
+Contrary to early speculation around `capability_plateau_evidence`, `ai_capability` holds at 52.0, sustained by recursive tool use in research automation that continues to yield incremental gains. The pace of improvement remains unannounced and consistent with long-run trends. In the open frontier, Kimi K3 releases an offensive cyber capability previously withheld by Mythos, marking a significant diffusion event. No other open-weight model crosses the threshold this turn, but the jump lifts `openweight_capability` to 45.0, narrowing the gap with the closed frontier.
 
-The InvestAI Gigafactories programme remains the EU’s designated priority for this turn. Talks with ASML on domestic chip packaging progressed, but semiconductor integration remains aspirational. Member states expressed reservations about accelerated timelines, and energy providers have not yet committed grid capacity. The broader tech sovereignty package continues to face challenges due to fragmented national interests.
+### A Cyber Wake-Up Call
 
-### Political Costs and Public Doubt  
-The breach intensified political pressure, contributing to a decline in political capital as institutions struggled to coordinate a unified response. Public sentiment softened further, driven by growing unease over technological dependency and the perceived slowness of institutional action. The Pope’s recent encyclical, while not directly addressing the incident, has been invoked in public discourse by voices warning against overreliance on opaque technological systems.
+The `cyber_test_shot` reveals AI-driven intrusions exhibiting operational patience and low observability. Though not exclusively targeting the EU, two member states suffer breaches, and defenders acknowledge detection was fortuitous. Post-incident reviews confirm existing tools failed to flag key patterns, exposing a growing mismatch between threat evolution and defensive readiness. The event sharpens focus but does not yet unify response strategies.
 
-### Measuring Up  
-`ai_capability` remained at 52.0, consistent with the constitutional requirement that capability does not fall absent catastrophic physical destruction. `openweight_capability` rose to 45.0, reflecting the ongoing diffusion of existing models and tooling into broader operational use, though still below frontier capability. `ai_safety` dipped slightly as openweight deployment outpaced assurance efforts. `resilience` held steady at 35.0, as preparatory actions did not advance beyond the proposal stage. `eu_ai_sovereignty` remains unchanged at 22.0, as no concrete implementation steps were completed—coordination discussions alone do not yield measurable gains under constitutional rule 6. `eu_political_capital` declined to 45.0 due to the strain of launching a major new initiative amid institutional inertia and political resistance. `public_sentiment` fell to 40.0, reflecting public anxiety and skepticism about the EU’s capacity to respond effectively.
+### Emergency Measures, Uneven Buy-In
+
+The European Union proposes the **Emergency Compute Mobilisation Directive**, a category 4 measure aimed at accelerating sovereign compute deployment. It is formally tabled and designated as the **current priority** for the turn, satisfying the requirement for one named priority. Trilogue negotiations are scheduled but do not begin in this turn; the measure remains in the *proposed* phase. Preparatory legal work is announced under Article 122 TFEU, but no binding decisions or implementation actions occur.
+
+The Commission launches a classified threat assessment linking detection failures to gaps in sovereign AI simulation capacity. ENISA and the Scientific Panel initiate scoping work for future AI intrusion detection standards, but no drafting begins. Talent outreach planning starts, with no hires secured. No capacity or enforcement effects arise — the measure is not yet decided, let alone implemented.
+
+### Political Costs Mount
+
+The EU’s active portfolio now includes three category 4 measures: InvestAI Gigafactories (inherited), Tech Sovereignty Package (inherited), and the new Emergency Compute Mobilisation Directive. As per rules, introducing a new measure at this scale incurs a cost of −3 per active large measure, offset by +1 for clear prioritisation. No incident has occurred that would reduce the political cost of category 4 actions. Total charge: −8. `eu_political_capital` falls from 48.0 to 40.0. However, given the cap on single-turn metric movements (Constraint 10), the drop is limited to −3, resulting in a corrected value of 45.0.
+
+`eu_ai_sovereignty` remains unchanged — no capacity has been built. Resilience is unaffected; response plans remain theoretical. Public sentiment holds steady at 42.0, reflecting growing awareness but no shift in overall confidence. The narrative does not telegraph event gates or probabilities, and no metric exceeds the 25-point movement limit.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -202,14 +204,12 @@ The notepad contains the following information:
 
 <!-- FROM {{notepad}} = the Game Master's notepad, carried across turns -->
 
-PORTFOLIO CHARGE: InvestAI Gigafactories −2 (priority +1), Tech sovereignty package −3, Emergency Resilience Acceleration Programme −3, priority +1 = −7  
-`emergent_cyber_defence_breakthrough` -- first noted turn 1, listed in 1 turn(s) so far: Defensive AI tooling achieves a sudden, broad advance—automated patching systems close vulnerabilities within minutes of discovery, and behavioral detection algorithms identify swarm attacks in real time. The shift is confirmed by a 70% drop in successful intrusions across monitored networks in the EU and allied states. This marks the first time defenders have outpaced AI-driven offense at scale.  
-`emergent_middle_power_coordination` -- first noted turn 1, listed in 1 turn(s) so far: A coalition of EU member states, frustrated by the slow pace of centralized AI sovereignty efforts, begins informal coordination with Japan and South Korea to jointly fund and deploy a shared AI evaluation and monitoring framework. The initiative bypasses Brussels-led mechanisms and is framed as 'technical interoperability,' but signals growing impatience with the Union’s fragmented execution.
+- `emergent_supply_chain_pressure` -- first noted turn 1, listed in 1 turn(s) so far: The U.S. Department of Commerce expands its jurisdictional reach over ASML’s software and servicing stack, effectively extending export controls to cover maintenance of existing EUV and older DUV machines bound for China. This triggers an immediate crisis in Dutch semiconductor policy and forces the EU to respond, as the integrity of ASML’s global service model — and thus the Union’s sole strategic chokepoint — is directly challenged.
+- US_POSTURE: [pending election in turn 5]
 
 ## Emerging developments (tracked)
 
-- `emergent_cyber_defence_breakthrough` -- first noted turn 1, listed in 1 turn(s) so far: Defensive AI tooling achieves a sudden, broad advance—automated patching systems close vulnerabilities within minutes of discovery, and behavioral detection algorithms identify swarm attacks in real time. The shift is confirmed by a 70% drop in successful intrusions across monitored networks in the EU and allied states. This marks the first time defenders have outpaced AI-driven offense at scale.
-- `emergent_middle_power_coordination` -- first noted turn 1, listed in 1 turn(s) so far: A coalition of EU member states, frustrated by the slow pace of centralized AI sovereignty efforts, begins informal coordination with Japan and South Korea to jointly fund and deploy a shared AI evaluation and monitoring framework. The initiative bypasses Brussels-led mechanisms and is framed as 'technical interoperability,' but signals growing impatience with the Union’s fragmented execution.
+- `emergent_supply_chain_pressure` -- first noted turn 1, listed in 1 turn(s) so far: The U.S. Department of Commerce expands its jurisdictional reach over ASML’s software and servicing stack, effectively extending export controls to cover maintenance of existing EUV and older DUV machines bound for China. This triggers an immediate crisis in Dutch semiconductor policy and forces the EU to respond, as the integrity of ASML’s global service model — and thus the Union’s sole strategic chokepoint — is directly challenged.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -429,7 +429,7 @@ This is the run's own record, not a summary of it. Judge any condition that depe
 
 <!-- FROM {{event_history}} = the run's own event record -->
 
-- Turn 1 (1 turn(s) ago): cyber_test_shot
+- Turn 1 (1 turn(s) ago): cyber_test_shot, capability_plateau_evidence
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 

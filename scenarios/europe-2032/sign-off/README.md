@@ -1,6 +1,6 @@
 # Prompt sign-off
 
-Generated from `run-20260830-162937`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
+Generated from `run-20260830-185157`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
 
 Read them once when the scenario is built, and again after any change to the templates, the scenario's prompt overrides, or the background files. Sign off by saying so in the scenario's design notes, with the date.
 
