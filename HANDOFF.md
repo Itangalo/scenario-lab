@@ -1,10 +1,11 @@
-# Handoff – session of 2026-08-28/29
+# Handoff – session of 2026-08-28/30
 
-Eighteen commits, `855bb9a` through `7b9026e`. Two threads ran through them: a batch of simulations for the Europe 2032 branching story, and a much longer thread that started when that batch turned out to have been running on a prompt nobody had read.
+Twenty-four commits, `855bb9a` through `88f15bb`. Two threads ran through them: a batch of simulations for the Europe 2032 branching story, and a much longer thread that started when that batch turned out to have been running on a prompt nobody had read. By the end the fork itself had moved, and the two batches the session opened with are archived rather than current.
 
 ## Read these first
 
-- [scenarios/europe-2032/story/README.md](scenarios/europe-2032/story/README.md) – the story tree: where it forks, what each batch showed, and what is still undecided
+- [scenarios/europe-2032/story/README.md](scenarios/europe-2032/story/README.md) – the tree: its arms, its naming scheme, and how options and paths are made. Rewritten by Johan on 2026-08-30; it no longer carries the batch findings, which is a gap noted below
+- [scenarios/europe-2032/story/turn-01/superseded-roads/README.md](scenarios/europe-2032/story/turn-01/superseded-roads/README.md) – why the three turn-1 roads were retired, and the re-draw that moved the fork
 - [scenarios/europe-2032/sign-off/](scenarios/europe-2032/sign-off/) – the prompts as actually sent, each block labelled with the file it came from
 - [scenarios/europe-2032/runs/archive/pre-priority-bias-2026-08/README.md](scenarios/europe-2032/runs/archive/pre-priority-bias-2026-08/README.md) – why 63 runs were retired and what is still citable in them
 
@@ -36,6 +37,7 @@ A measure now states when it finishes, judged once and copied forward:
 - **Finishing turn:** moves only when the priority pulls it in, neglect pushes it out, or an event does either – and the reason is written into the line.
 - **Effect:** nothing in the turn a measure is proposed; a share of the category range judged from how far along it is; full from the turn it finishes.
 - **Portfolio:** starts with two inherited programmes, InvestAI Gigafactories and the June 2026 sovereignty package. The Frontier AI Initiative was dropped as dead.
+- **No fixed-background block.** It was cut from this scenario on 2026-08-30: the opening is 2026 news rather than standing physics, and a block asserting that it outranks the narrative is right at turn 2 and wrong by turn 12. The mechanism stays in the default templates for scenarios that fix something that genuinely does not move. The cost was measured and accepted – structural facts decay out of the rolling summary because nothing happens to them, and a turn-5 summary retains no mention of ASML, of the compute gap, or of Mistral. Anything that must survive six years belongs in the metric rules or the event catalogue, which are read every turn.
 
 ### The lesson that cost the most to learn
 
@@ -47,12 +49,13 @@ The same pattern fixed the discount, which failed twice as a judgement call and 
 
 ## Open, in the order I would take them
 
-1. **The lead-time and sovereignty calibration.** The mechanics are rebuilt but not calibrated against a batch. Whether sovereignty now moves is unknown, and it is the question two batches failed to answer.
-2. **The pinned roads contradict the actor prompt.** `story/turn-01/road-*.md` all say `Nothing in flight.`; the prompt now seeds two inherited programmes. Selected samples do not regenerate. Three options are set out in the story README, and it must be settled before the verification-bounded arm, because the six turn-1 bases are rebuilt from those files.
-3. **`Cheapens:` reaches no prompt, so the discount is not the lookup it is described as.** The event loader parses `Condition`, `Probability`, `Can repeat`, `Description` and `Eligible`, and silently discards anything else -- so all 31 `Cheapens:` lines are dead text, in the same way `background/actors/eu.md` was dead text. The discount does fire, but the Game Master is inferring a plausible value from rule 10's description of the field and the event's own prose, not reading data; that is also why the citation names whichever event fired most recently rather than the one whose window is open. Fix: put `cheapens` on the `Event` model, parse it, and render it wherever events are listed, including the triggered-events block the Game Master receives. Add a validator warning for an unrecognised `**Field:**` in `events.md` while you are there -- it would have caught this the moment it was written, and will catch the next one.
-4. **The sign-off documents are current** as of `run-20260830-162937`. Regenerate after any prompt change: run 2 turns with `--log-llm-io`, then `python scripts/render_signoff.py <run-dir>`. It was this regeneration that found the `Cheapens:` defect above, four hours after the field was added.
-5. **`load_actor` still truncates.** Blast radius is five actor files in three scenarios (34 of 39 lose only markup). Repairing it pushes several thousand words into those actors' prompts at once – a deliberate, calibrated change, not a tidy-up.
-6. **The verification-bounded arm** has never been run. `scenarios/europe-2032/story/pin-turn-1.py` builds the turn-1 bases; then fan out with fresh seeds and `batch-resume --turns 5`.
+1. **The measure mechanics are rebuilt but never batched.** Finishing turns, flat 3/2 costs and the event-driven discount have been through four-turn smoke tests only. Whether sovereignty now moves is unknown, and it is the question two batches failed to answer.
+2. **`Cheapens:` reaches no prompt, so the discount is not the lookup it is described as.** The event loader parses `Condition`, `Probability`, `Can repeat`, `Description` and `Eligible`, and silently discards anything else – so all 31 `Cheapens:` lines are dead text, in the same way `background/actors/eu.md` was dead text. The discount does fire, but the Game Master infers a plausible value from metric rule 10's description of a field it cannot see, which is also why the citation names whichever event fired most recently rather than the one whose window is open. Fix: put `cheapens` on the `Event` model, parse it, and render it wherever events are listed, including the triggered-events block the Game Master receives. Add a validator warning for an unrecognised `**Field:**` in `events.md` while you are there – it would have caught this the moment it was written, and will catch the next one.
+3. **Nothing holds the batch findings any more.** The story README was rewritten around the tree and no longer records what the two batches showed: that sovereignty did not move in either arm on any road, that the election machinery was broken and is now repaired, or the measured seed overlap behind the seeds rule. They survive in this file and in the archive README, both of which are session artifacts. They want a calibration note of their own.
+4. **A dangling reference.** `story/turn-01/superseded-roads/README.md` says the re-draw finding "is in the story README". It is not – the rewrite dropped it. The finding itself is worth keeping: 20 fresh draws under the current prompt returned 16 category 6 and 4 category 5, and no category 4 at all, so the spread the three roads were selected from no longer exists.
+5. **The tree is larger than it looks.** The naming scheme implies 56 turn pieces per arm and 168 across the three, plus 42 options, each built from ten or more simulations. Worth sizing deliberately before building, at roughly seven minutes per turn per run.
+6. **`load_actor` still truncates.** Blast radius is five actor files in three scenarios (34 of 39 lose only markup). Repairing it pushes several thousand words into those actors' prompts at once – a deliberate, calibrated change, not a tidy-up.
+7. **The sign-off documents are current** as of `run-20260830-185157`, which is after every change in this session. Regenerate after any prompt change: run 2 turns with `--log-llm-io`, then `python scripts/render_signoff.py <run-dir>`. A regeneration is what found the `Cheapens:` defect, four hours after the field was added, and the set before it went stale within the hour – these are snapshots taken at a decision point, not something the repo keeps true.
 
 ## Things that will bite you if nobody says them
 
@@ -60,7 +63,13 @@ The same pattern fixed the discount, which failed twice as a judgement call and 
 - **`events.md` prose is not rendered.** `_format_events_list` sends only the parsed per-event fields. The framing sections – the gate mechanism, the election weighting – reach no prompt. Editing them changes nothing.
 - **`--max-concurrency` defaults to 4.** A 30-run batch is three waves at that setting. Each turn is 7 sequential LLM calls; a turn takes 4–10 minutes and cannot be parallelised within a run.
 - **stdout is block-buffered.** Watch a run through its artifact files, not its log.
+- **A rule the model is asked to remember is a rule that will be skipped.** The `PORTFOLIO CHARGE` line proves it twice: introduced because the capital drain was being ignored entirely, then A/B tested on one seed – with the line, capital fell 48-39-30-24; without it, 45-43-40-43 and the charge simply not applied. Metric rule 10 states the cost identically in both.
+- **Silent failure is this codebase's characteristic bug.** Truncated actor background, unrendered event prose, dead `Cheapens:` fields, statement proposals lost to a code-span wrapper. None of them errored; all of them looked like working scenarios. Assume anything not visible in a sign-off document is not reaching the model.
 - **Johan commits directly on `main`** in this project and does not branch.
+
+## Where turn 1 went
+
+The fork moved from turn 1 to turn 2 on 2026-08-30, and turn 1 became a single fixed opening at `story/turn-01/opening.md` – one pinned actor response, shared by every arm and every reader, with the two inherited programmes already in its portfolio. The three roads that used to fork there are in `turn-01/superseded-roads/`, kept as the provenance of the archived batches and for nothing else. `story/pin-turn-1.py` still builds the turn-1 bases from a pinned response; it now takes one rather than three.
 
 ## Untracked and deliberate
 
