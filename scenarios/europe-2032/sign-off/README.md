@@ -1,6 +1,6 @@
 # Prompt sign-off
 
-Generated from `run-20260829-192725`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
+Generated from `run-20260830-162937`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
 
 Read them once when the scenario is built, and again after any change to the templates, the scenario's prompt overrides, or the background files. Sign off by saying so in the scenario's design notes, with the date.
 
@@ -40,17 +40,12 @@ Every heading in the scenario's background and definition files, and whether the
 | `background/context.md` | Where the EU stands | yes |
 | `background/context.md` | What is genuinely contested | yes |
 | `background/context.md` | The Union's problem | yes |
-| `background/fixed-facts.md` | Fixed facts, as of the second half of 2026 | yes |
-| `background/fixed-facts.md` | The frontier | yes |
-| `background/fixed-facts.md` | Washington holds the frontier | yes |
-| `background/fixed-facts.md` | What has already gone wrong | yes |
-| `background/fixed-facts.md` | Where the Union stands | yes |
-| `background/fixed-facts.md` | The Union's problem | yes |
 | `constitution.md` | Invariants | yes |
 | `constitution.md` | Modelling choices | yes |
 | `events.md` | The gate mechanism | **NO** |
-| `events.md` | Regime conditioning | **NO** |
+| `events.md` | Where the figures come from | **NO** |
 | `events.md` | Arithmetic of probabilities | **NO** |
+| `events.md` | What an event does to the price of a measure | **NO** |
 | `events.md` | Measures referred to in conditions | **NO** |
 | `events.md` | The opening turn | **NO** |
 | `events.md` | The 2028 US presidential election | **NO** |
@@ -69,7 +64,7 @@ Every heading in the scenario's background and definition files, and whether the
 | `events.md` | Capability Jump | yes |
 | `events.md` | Recursive Self-Improvement Begins | **NO** |
 | `events.md` | Verification Frontier Widens | yes |
-| `events.md` | Evidence of a Bending Curve | yes |
+| `events.md` | Evidence of a Bending Curve | **NO** |
 | `events.md` | Reasoning Stops Being Legible | **NO** |
 | `events.md` | Medicine Delivers | **NO** |
 | `events.md` | Open Weights Reach the Frontier | **NO** |
@@ -90,7 +85,7 @@ Every heading in the scenario's background and definition files, and whether the
 | `events.md` | Adoption Delivers | yes |
 | `events.md` | Automated Decision Scandal | yes |
 | `metric-rules.md` | Metric Rules | yes |
-| `metric-rules.md` | The frontier | yes |
+| `metric-rules.md` | The frontier | **NO** |
 | `metric-rules.md` | The incident engine | yes |
 | `metric-rules.md` | The Union's two stocks | yes |
 | `metric-rules.md` | The public and the world's mood | yes |

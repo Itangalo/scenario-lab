@@ -1,14 +1,9 @@
 {# Scenario override. One deviation from templates/user-prompts/actor.md: The actor's own previous response is rendered as "Your previous response". The EU has no other memory substrate: the notepad is Game-Master-only and the historical summary is a lossy condensation. In prototype runs without this block the Portfolio silently shed, renamed and reinvented measures between turns, which corrupts every measure-status mechanic (capital drain, lead times, fully-implemented effects) and the category grouping that rq_no_regret depends on.
 
+   Also: the default template's "Fixed Background" block is deliberately absent. It renders background/context.md, or a compact restatement of it, in every prompt from turn 2 onward. This scenario does not want it. The opening description is 2026 news, not standing physics, and the run spends six years making most of it false -- a block asserting that it "outranks the evolving narrative" is right at turn 2 and wrong by turn 12. The cost is real and was measured rather than assumed: structural facts decay out of the rolling summary because nothing happens to them, and by turn 5 a summary retains no mention of ASML, of the compute gap, or of Mistral. That is accepted. Anything the Union must not forget for six years belongs in the metric rules or the event catalogue, which are read every turn, not in a block of background nobody re-reads.
+
    Keep in sync with the default template when that changes. #}
-{% if background_context %}
-## Fixed Background (unchanged all run)
-
-This is the world as it stood at the start. It does not change, and it outranks the evolving narrative on any fact it states — if the narrative drifts away from something fixed here, the narrative is wrong.
-
-{{ background_context }}
-
-{% endif %}It is now turn {{turn}}, which covers {{time_period}}. Each turn covers {{ time_scale.replace(' per turn', '') }}, so that is the span your actions have to land in.
+It is now turn {{turn}}, which covers {{time_period}}. Each turn covers {{ time_scale.replace(' per turn', '') }}, so that is the span your actions have to land in.
 
 Current metrics look like this:
 

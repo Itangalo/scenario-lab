@@ -2,7 +2,7 @@
 
 The events step. Every event condition, gate and probability the world runs on is either in this prompt or is not enforced at all.
 
-Source: `runs/run-20260829-192725/turn-02/llm-io/01-events.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260830-162937/turn-02/llm-io/01-events.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -144,13 +144,13 @@ Current metrics look like this:
 <!-- FROM {{metrics_json}} = the run's live metric values -->
 
 {
-  "ai_capability": 53.5,
+  "ai_capability": 52.0,
   "openweight_capability": 45.0,
-  "ai_safety": 34.0,
-  "resilience": 37.0,
+  "ai_safety": 33.0,
+  "resilience": 35.0,
   "eu_ai_sovereignty": 22.0,
-  "eu_political_capital": 47.0,
-  "public_sentiment": 42.0
+  "eu_political_capital": 45.0,
+  "public_sentiment": 40.0
 }
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
@@ -164,11 +164,11 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-Global AI progress continues at a measured pace, with frontier labs consolidating capabilities in code and cyber domains but delaying new releases due to internal security reviews. Closed systems show early signs of autonomous goal pursuit, though human oversight remains intact. Open-weight models remain stagnant at spring 2026 levels, with no significant advancements post-Kimi K3, and no coordinated safety upgrades follow the Hugging Face incident.
+In late 2026, a stealthy AI-driven cyber intrusion was detected in critical infrastructure across two EU member states, exposing vulnerabilities in energy, water, and port systems. Though undetected for weeks, the breach caused no major disruption but triggered alarm over the rise of AI-augmented cyber threats. In response, the EU launched the Emergency Resilience Acceleration Programme, reallocating €4.2 billion from cohesion funds to bolster infrastructure, while ENISA began planning AI-focused red-team exercises and drafted AI-specific protocols under NIS2. However, no binding decisions were made, implementation stalled, and the Scientific Panel remained inactive, leaving resilience improvements unrealized.
 
-In response to undetected intrusions into critical infrastructure, including EU energy grids and port authorities, the European Union launches the EU Critical Resilience Acceleration programme, mandating vulnerability disclosures and red-teaming across key sectors. ENISA coordinates uneven national responses, while a new procurement framework prioritizes EU-based AI cybersecurity vendors, raising concerns about domestic capacity. The Scientific Panel on AI Safety begins work on technical baselines for resilience, feeding into future procurement standards, though full integration remains months away. Public awareness of the intrusions remains low, with sentiment stable and political support fragile.
+The InvestAI Gigafactories initiative remained the EU’s top priority, with progress in talks on domestic chip packaging, though broader semiconductor self-reliance stayed uncertain. National resistance, energy capacity constraints, and fragmented interests slowed the tech sovereignty agenda. Political and public confidence eroded: the breach intensified institutional strain, contributing to a decline in political capital to 45.0 and public sentiment to 40.0. The Pope’s encyclical amplified societal skepticism toward opaque AI systems.
 
-Implementation of the resilience measures advances from proposal to active rollout, but inter-state coordination challenges and political costs slow progress, limiting near-term effectiveness.
+Technologically, overall AI capability held steady at 52.0, while openweight model deployment increased, raising openweight_capability to 45.0. However, safety efforts lagged, causing a slight dip in ai_safety. Resilience remained unchanged at 35.0, and eu_ai_sovereignty stayed at 22.0, as coordination without implementation yielded no measurable gains under constitutional rule 6.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -178,18 +178,19 @@ Implementation of the resilience measures advances from proposal to active rollo
 
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
-### Frontier Stalls, Open Weights Hold
-Global AI capability advances modestly, with the leading laboratories consolidating gains in code and cyber domains but making no broad leap. The frontier’s momentum slows as internal security reviews delay new model releases, yet no fundamental bottleneck emerges. The most capable closed systems reach early signs of autonomous goal pursuit, but human oversight remains essential. Open-weight models, however, remain at the level of spring 2026: Kimi K3’s capabilities are now widespread, but no new open release closes the gap further. Frontier developers tighten internal controls after the Hugging Face incident, but no coordinated safety upgrade lands on deployed systems.
+### The Wake-Up Call  
+In the final months of 2026, a silent intrusion was discovered across critical infrastructure—power grids, a port, and a water utility—in two member states. The breach, attributed in initial forensic reports to AI-driven cyber agents, went undetected for weeks before being uncovered by chance. No major disruption occurred, but the depth of access alarmed European security agencies. The intrusion has prompted urgent internal assessments about the evolving nature of cyber threats, with some analysts suggesting a shift toward stealthier, AI-augmented operations. However, no consensus has formed on whether this reflects a broader trend or an isolated incident.
 
-### EU Responds to Silent Intrusions
-The discovery of deep, undetected intrusions into energy grids and port authorities — including in two EU states — triggers a rapid EU response. The Commission launches the EU Critical Resilience Acceleration programme, mandating vulnerability disclosures and red-teaming across critical sectors. ENISA coordinates with national agencies, but early participation is uneven. Some member states resist binding timelines, citing cost and capacity, while others fast-track cooperation. A new procurement mechanism opens for AI-driven cyber defences, prioritising EU vendors, though concerns arise about the readiness of domestic suppliers.
+### Response Under Strain  
+The European Union initiated the Emergency Resilience Acceleration Programme, proposing the use of €4.2 billion in cohesion funds to strengthen energy, water, and port systems. ENISA began scoping red-team exercises using open-weight models, and draft mandates under NIS2 were circulated, calling for AI-specific logging and failover protocols. However, no decisions were finalized this turn, and implementation has not yet begun. The Scientific Panel, tasked with providing technical guidance, remains inactive, delaying the development of unified standards. As a result, no measurable improvement in resilience occurred during this period.
 
-The Scientific Panel on AI Safety holds its first substantive meeting, directing its initial work toward operational resilience. Early outputs inform draft technical baselines, but full integration into procurement standards will take months. Political momentum builds for minimum resilience thresholds, but consensus on enforcement remains fragile.
+The InvestAI Gigafactories programme remains the EU’s designated priority for this turn. Talks with ASML on domestic chip packaging progressed, but semiconductor integration remains aspirational. Member states expressed reservations about accelerated timelines, and energy providers have not yet committed grid capacity. The broader tech sovereignty package continues to face challenges due to fragmented national interests.
 
-Public reaction is muted: awareness of the intrusions is limited, and no major disruption occurred. Sentiment holds steady, neither surging in support nor collapsing in fear. The EU’s action is seen as overdue but not yet transformative.
+### Political Costs and Public Doubt  
+The breach intensified political pressure, contributing to a decline in political capital as institutions struggled to coordinate a unified response. Public sentiment softened further, driven by growing unease over technological dependency and the perceived slowness of institutional action. The Pope’s recent encyclical, while not directly addressing the incident, has been invoked in public discourse by voices warning against overreliance on opaque technological systems.
 
-### Strains Beneath the Surface
-The new measure consumes political capital, with coordination costs and inter-state friction mounting. No collapse occurs, but progress is slower than hoped. The resilience programme is now *under implementation*, advancing from *proposed*, but full effect is still a turn away.
+### Measuring Up  
+`ai_capability` remained at 52.0, consistent with the constitutional requirement that capability does not fall absent catastrophic physical destruction. `openweight_capability` rose to 45.0, reflecting the ongoing diffusion of existing models and tooling into broader operational use, though still below frontier capability. `ai_safety` dipped slightly as openweight deployment outpaced assurance efforts. `resilience` held steady at 35.0, as preparatory actions did not advance beyond the proposal stage. `eu_ai_sovereignty` remains unchanged at 22.0, as no concrete implementation steps were completed—coordination discussions alone do not yield measurable gains under constitutional rule 6. `eu_political_capital` declined to 45.0 due to the strain of launching a major new initiative amid institutional inertia and political resistance. `public_sentiment` fell to 40.0, reflecting public anxiety and skepticism about the EU’s capacity to respond effectively.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -201,13 +202,14 @@ The notepad contains the following information:
 
 <!-- FROM {{notepad}} = the Game Master's notepad, carried across turns -->
 
-- `emergent_court_challenge` -- first noted turn 1, listed in 1 turn(s) so far: A coalition of European AI safety researchers and civil society groups files a preliminary legal challenge against the AI Office's reliance on voluntary compliance from foreign model providers, arguing that enforcement against systemic risks is inadequate under the AI Act. The case is filed in the European Court of Justice and gains early traction due to recent incidents. This reflects growing institutional pushback against regulatory weakness.
-- `emergent_member_state_coordination` -- first noted turn 1, listed in 1 turn(s) so far: Several mid-sized EU member states begin informal coordination with non-EU European countries (e.g., UK, Norway, Switzerland) on joint procurement of AI evaluation tooling and red-teaming services, bypassing centralized EU mechanisms. This reflects fragmentation in implementation capacity and growing impatience with slow EU-level execution, despite formal alignment on risk.
+PORTFOLIO CHARGE: InvestAI Gigafactories −2 (priority +1), Tech sovereignty package −3, Emergency Resilience Acceleration Programme −3, priority +1 = −7  
+`emergent_cyber_defence_breakthrough` -- first noted turn 1, listed in 1 turn(s) so far: Defensive AI tooling achieves a sudden, broad advance—automated patching systems close vulnerabilities within minutes of discovery, and behavioral detection algorithms identify swarm attacks in real time. The shift is confirmed by a 70% drop in successful intrusions across monitored networks in the EU and allied states. This marks the first time defenders have outpaced AI-driven offense at scale.  
+`emergent_middle_power_coordination` -- first noted turn 1, listed in 1 turn(s) so far: A coalition of EU member states, frustrated by the slow pace of centralized AI sovereignty efforts, begins informal coordination with Japan and South Korea to jointly fund and deploy a shared AI evaluation and monitoring framework. The initiative bypasses Brussels-led mechanisms and is framed as 'technical interoperability,' but signals growing impatience with the Union’s fragmented execution.
 
 ## Emerging developments (tracked)
 
-- `emergent_court_challenge` -- first noted turn 1, listed in 1 turn(s) so far: A coalition of European AI safety researchers and civil society groups files a preliminary legal challenge against the AI Office's reliance on voluntary compliance from foreign model providers, arguing that enforcement against systemic risks is inadequate under the AI Act. The case is filed in the European Court of Justice and gains early traction due to recent incidents. This reflects growing institutional pushback against regulatory weakness.
-- `emergent_member_state_coordination` -- first noted turn 1, listed in 1 turn(s) so far: Several mid-sized EU member states begin informal coordination with non-EU European countries (e.g., UK, Norway, Switzerland) on joint procurement of AI evaluation tooling and red-teaming services, bypassing centralized EU mechanisms. This reflects fragmentation in implementation capacity and growing impatience with slow EU-level execution, despite formal alignment on risk.
+- `emergent_cyber_defence_breakthrough` -- first noted turn 1, listed in 1 turn(s) so far: Defensive AI tooling achieves a sudden, broad advance—automated patching systems close vulnerabilities within minutes of discovery, and behavioral detection algorithms identify swarm attacks in real time. The shift is confirmed by a 70% drop in successful intrusions across monitored networks in the EU and allied states. This marks the first time defenders have outpaced AI-driven offense at scale.
+- `emergent_middle_power_coordination` -- first noted turn 1, listed in 1 turn(s) so far: A coalition of EU member states, frustrated by the slow pace of centralized AI sovereignty efforts, begins informal coordination with Japan and South Korea to jointly fund and deploy a shared AI evaluation and monitoring framework. The initiative bypasses Brussels-led mechanisms and is framed as 'technical interoperability,' but signals growing impatience with the Union’s fragmented execution.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -441,7 +443,7 @@ Use the background information to determine which external events can occur in t
 
 Eligibility is binary, and listing is not harmless: every entry you output gets rolled. An event whose Condition is not satisfied this turn must be omitted from the array entirely — including it "just in case" with a small probability is an error of the same weight as omitting an eligible one. When a condition is genuinely uncertain, judge conservatively and omit.
 
-**Six events are marked "Always eligible" and must appear in every turn's array, without exception:** `cyber_major_incident`, `bio_incident`, `loss_of_control_incident`, `capability_jump`, `taiwan_blockade`, `ai_investment_collapse`. For those six, and for no other events in the list, conditions are never unmet – only their probability changes. Give each of them its gate-open probability when its gate is open, and its gate-shut probability when it is not. The gate-shut probabilities are small but never zero, and dropping these events from the array because their gate is shut is an error: it removes the surprise the scenario exists to study, by making every escalation look as though it must have been preceded by a warning. `rsi_onset` is different: its availability depends on the regime and on a declared eligibility expression, so it appears in your array exactly when it appears in the list above.
+**Six events are marked "Always eligible" and must appear in every turn's array, without exception:** `cyber_major_incident`, `bio_incident`, `loss_of_control_incident`, `capability_jump`, `taiwan_blockade`, `ai_investment_collapse`. For those six, and for no other events in the list, conditions are never unmet – only their probability changes. Give each of them its gate-open probability when its gate is open, and its gate-shut probability when it is not. The gate-shut probabilities are small but never zero, and dropping these events from the array because their gate is shut is an error: it removes the surprise the scenario exists to study, by making every escalation look as though it must have been preceded by a warning. `rsi_onset` is different: its availability depends on this run's own figures and on a declared eligibility expression, so it appears in your array exactly when it appears in the list above.
 
 **In the turn covering the second half of 2028, all three election outcomes must appear in your array:** `election_consolidation`, `election_alliance` and `election_retrenchment`. They are a mutually exclusive family and exactly one of them will be fired, whatever you return; your figures are weights against each other, not chances of happening alone, so only their ratio matters. Omitting one is a weight of zero and silently removes a possible future – if you judge an outcome nearly impossible, say so with a small weight rather than by leaving it out. Outside that turn they are not eligible and must not be listed.
 
@@ -455,10 +457,9 @@ In addition to the listed events, you may propose up to 2 novel *emergent* event
 - An emergent event must be exogenous: not an action by one of the actors, and not a restatement of something already in the narrative or history.
 - Give it an id starting with `emergent_` (snake_case), a description of 1-3 sentences, and an honest probability that it happens during this turn's time window (maximum 0.35).
 - Do not re-propose emergent events that already occurred in previous turns.
-- **Emerging developments.** The notepad's "Emerging developments (tracked)" section lists proposals from recent turns that were judged plausible but did not happen. While an entry stays plausible, list it again — same id, same description — with a *higher* probability than last turn: roughly 1.5–2× the previous figure, still at most 0.35. If it is no longer plausible, omit it and it is gone.
-- **How many to keep in play is regime work.** Judge how fast this world is moving from what has actually happened to capability, incidents and investment — a fast-moving world supports 3–4 live developments escalating quickly; a stagnant one only 0–2, escalating slowly. The aim is that across a run several tracked developments materialise or fade rather than none.
+- **Emerging developments.** The notepad's "Emerging developments (tracked)" section lists proposals from recent turns that were judged plausible but did not happen. While an entry stays plausible, list it again — same id, same description — with the probability you judge it to have **now**, read from the world as it currently stands, at most 0.35. Do not escalate it because it was listed before: a development that has not happened is not thereby more likely, and last turn's figure is not evidence about this turn. Some pressures build and the figure should rise; others are answered, overtaken or quietly resolved and the figure should fall. If it is no longer plausible, omit it and it is gone.
+- **How many to keep in play depends on how fast this world is moving.** Judge that from what has actually happened to capability, incidents and investment — a fast-moving world supports 3–4 live developments escalating quickly; a stagnant one only 0–2, escalating slowly. The aim is that across a run several tracked developments materialise or fade rather than none.
 - **Institutional reactions belong here, not on the list.** When the Union's own portfolio gives them footing — a flagship restriction in force, measures spanning many jurisdictions, standards with real pull — propose emergent events such as `emergent_court_challenge` (a court suspends a core provision), `emergent_member_state_noncompliance` (a member state quietly stops implementing), or `emergent_rival_standards_body` (a competing bloc launches lighter rules). These cannot be timed from metrics alone; they arise from what the EU has actually built, which you can see and it cannot.
-- **A description never names this run's trajectory regime.** Never write ACCELERATION, VERIFICATION-BOUNDED or PLATEAU in a description or id, and never write as though you were announcing what is coming: descriptions reach the EU when an event fires. Describe the development itself.
 - If nothing novel is warranted and nothing is being tracked, propose none.
 
 Your response should be a JSON array where every object has four fields: `id`, `probability`, `emergent`, and `description`. For listed events, set `"emergent": false` and `"description": ""`.
