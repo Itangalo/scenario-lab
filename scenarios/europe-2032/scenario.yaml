@@ -158,16 +158,22 @@ emergent_events:
   window_turns: 3
 
 rule_evolution:
-  # Disabled. This scenario is read as a distribution over runs, and rule drift
-  # is noise in exactly the thing being measured: if the physics differs between
-  # runs, differences in outcome cannot be attributed to the arm or to the
-  # Union's choices.
-  freeze_until_turn: 14  # > max_turns, so rules never evolve
+  # OFF. Not "frozen until turn 14" -- max_turns is 13, so a freeze point beyond
+  # it is how this setting is switched off, and the number has to be raised with
+  # max_turns if that ever grows.
+  #
+  # Off because the scenario is read as a distribution over runs. If the physics
+  # differs between runs, differences in outcome cannot be attributed to the arm
+  # or to the Union's choices, which is the only thing the batches are for. The
+  # mechanism is also known to rewrite roughly one rule per unfrozen turn whether
+  # or not anything needs rewriting.
+  freeze_until_turn: 14
   max_changes_per_turn: 0
 
 constitutional_enforcement:
-  # 4 rather than the default: turns can spend several iterations on competing
-  # violations (a leaked regime label plus a metric dispute), and one extra
-  # cheap retry is less costly than an unresolved hard invariant.
+  # 4 rather than the default: a turn can spend several iterations on competing
+  # violations, and one extra cheap retry is less costly than shipping an
+  # unresolved hard invariant. (The commonest violation used to be a leaked
+  # regime label; those labels no longer exist anywhere in the prompts.)
   max_attempts: 4
   on_failure: accept_with_violations

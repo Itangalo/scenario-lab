@@ -1,16 +1,22 @@
 """Run turn 1 of Europe 2032 with both the event and the actor pinned.
 
-Turn 1 is the story's fixed opening: `cyber_test_shot` alone, and one of the
-three selected road responses. Neither is drawn, so neither is asked for here --
-the events step and the actor step are replaced, and everything downstream
-(statements, rules, metrics, referee, summary) runs normally against them. This
-reproduces the shape of the plateau bases: 1-events.json holds the single event,
+Turn 1 is the story's fixed opening: `cyber_test_shot` alone, and the one
+selected opening response in turn-01/opening.md. Neither is drawn, so neither is
+asked for here -- the events step and the actor step are replaced, and
+everything downstream (statements, rules, metrics, referee, summary) runs
+normally against them. 1-events.json holds the single event,
 1-event-evaluations.json records it as pinned with roll 0.0.
+
+Run this once per arm. The opening response is arm-independent -- the turn-1
+actor prompt hashed identically under all three variants -- but its resolution
+is not: the rules patches differ on how fast `ai_capability` grows, and that
+applies in turn 1. Sharing one base across arms would hand acceleration a
+plateau-rate opening turn on the one metric the arms exist to separate.
 
 Usage:
     python scenarios/europe-2032/story/pin-turn-1.py \
         scenarios/europe-2032/variants/acceleration.yaml \
-        scenarios/europe-2032/story/turn-01/road-a-sovereign-compute.md 20261231
+        scenarios/europe-2032/story/turn-01/opening.md 20261231
 """
 
 import sys
