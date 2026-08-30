@@ -237,3 +237,36 @@ def test_a_quiet_turn_still_writes_the_whole_ledger():
     rendered = render_statements_file(actor, 5, [])
     assert "No statement changes." in rendered
     assert "no_sd" in rendered
+
+
+def test_a_proposal_written_as_a_code_span_is_still_read():
+    """The prompt states the required form wrapped in double backticks, so models
+    copy the wrapper; before this was stripped, every such proposal parsed as
+    nothing at all and the actor silently lost the statement."""
+    output = (
+        "## Statement changes\n"
+        "``add `standing_commitment` (commitment): Secure the capacity to act "
+        "independently.``\n"
+    )
+    proposals = parse_statement_changes(output)
+    assert [(p.kind, p.statement_id, p.tier) for p in proposals] == [
+        ("add", "standing_commitment", "commitment")
+    ]
+    assert proposals[0].text == "Secure the capacity to act independently."
+
+
+def test_a_bare_proposal_is_unaffected_by_code_span_stripping():
+    """The unwrapped form is what the older pinned road files use."""
+    output = (
+        "## Statement changes\n"
+        "add `standing_commitment` (commitment): Secure the capacity to act "
+        "independently.\n"
+    )
+    assert len(parse_statement_changes(output)) == 1
+
+
+def test_a_single_backtick_pair_is_left_alone():
+    """`retire `x`` ends in a backtick of its own, so one pair stays ambiguous."""
+    output = "## Statement changes\nretire `we_are_centre`\n"
+    proposals = parse_statement_changes(output)
+    assert [(p.kind, p.statement_id) for p in proposals] == [("retire", "we_are_centre")]

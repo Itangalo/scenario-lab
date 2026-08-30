@@ -50,6 +50,23 @@ _RETIRE_RE = re.compile(r"^retire\s+`(?P<id>[a-z0-9_]+)`\s*$", re.IGNORECASE)
 
 _FIELD_RE = re.compile(r"^(?P<key>trigger|grounds)\s*:\s*(?P<value>.+)$", re.IGNORECASE)
 
+# The actor prompt states the required forms as Markdown code spans, wrapped in
+# double backticks so the statement id inside can keep its own single ones:
+# ``add `standing_commitment` (commitment): ...``. Models copy the wrapper along
+# with the form, and every rule below anchors on ^add / ^modify, so the wrapper
+# alone was enough to make a well-formed proposal parse as nothing at all --
+# silently, because a dropped proposal is indistinguishable from no proposal.
+# Only two or more backticks are stripped: a single pair is ambiguous against
+# the trailing id in ``retire `x` ``.
+_CODE_SPAN_RE = re.compile(r"^(?P<fence>`{2,})(?P<body>.+?)(?P=fence)$", re.DOTALL)
+
+
+def _strip_code_span(item: str) -> str:
+    """Unwrap a line the model wrote as a Markdown code span."""
+    match = _CODE_SPAN_RE.match(item)
+    return match.group("body").strip() if match else item
+
+
 TIER_ORDER = {"position": 0, "commitment": 1, "identity": 2}
 
 
@@ -102,6 +119,7 @@ def parse_statement_changes(output: str) -> list[StatementProposal]:
 
         indented = line.startswith(("  ", "\t"))
         item = re.sub(r"^[-*]\s+", "", stripped)
+        item = _strip_code_span(item)
         if not item:
             continue
 
