@@ -57,15 +57,25 @@ Please write your response in {{output_language}}.
 
 Respond with a Markdown text containing the following sections, in this order:
 
-{% if turn == 1 %}* Heading level 2: Standing commitment
-You must add a `commitment` describing the main direction of measures you want to take during the next two years (four rounds). It is a statement like the others, held at commitment tier. In one short phrase, name what you are trying to achieve across the years ahead — an end, not an instrument. Nothing above prescribes it. The standing commitment must be exactly one line, in exactly this form:**
+{% if turn == 1 %}* Heading level 2: Two-year commitment
+You must add a `commitment` describing the main direction of measures you want to take during the next two years (four rounds). It is a statement like the others, held at commitment tier. In one short phrase, name what you are trying to achieve across the years ahead — an end, not an instrument. Nothing above prescribes it. It must be exactly one line, in exactly this form:**
 
-``add `standing_commitment` (commitment): <the direction you named above, in one sentence>``
+``add `two_year_commitment` (commitment): <the direction you named above, in one sentence>``
 
 Write the phrase under this heading and nothing else.
 
 * Optional heading level 2: Statement changes
 Omit it, or write `No statement changes.`, when nothing has changed in the existing statements.
+{% elif turn in [2, 6, 10] %}* Heading level 2: Two-year commitment — **your two-year commitment has run its term and expires this turn.** The one in the ledger covered the two years now ending; it does not carry into the next four turns on its own. Name the direction for the two years ahead, in one short phrase — an end, not an instrument.
+
+Choosing the same direction again is a real option and needs no apology: a commitment renewed because it is still right is worth more than one changed for the sake of movement. But it is a choice you are making now, not something that continues by default, and you must write it out either way.
+
+Write the phrase under this heading, and enter it in the ledger under Statement changes as:
+
+``modify `two_year_commitment` (commitment): <the direction for the two years ahead>``
+`- Trigger: the two-year commitment period ended this turn`
+
+* Heading level 2: Statement changes — **required this turn**, and it must carry the two lines above. Any other statement changes follow them.
 {% else %}* Optional heading level 2: Statement changes
 Omit it, or write `No statement changes.`, when nothing has changed.
 {% endif %}
@@ -83,7 +93,7 @@ Open your portfolio with exactly these two, and carry them forward as you would 
 You may choose to drop measures from your portfolio, to save `eu_political_capital`. If you want to drop a measure, list them in the following way: ``Canceled measure: Name of measure.  Short statement on why you choose to cancel it.``
 
 * Heading level 2: New measure
-**Pick at most one**. `None this turn.` is an option. Every measure in your portfolio cost `eu_political_capital`, but less so if the opinion for the measure is favourable. Propose a measure unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, give a heading plus one short sentence saying what it actually does, then five lines:
+**Pick at most one**. `None this turn.` is an option. **Choose it with your two-year commitment in mind: across the four turns of a commitment period it should be the dominant theme of what you build.** Not everything must serve it — an incident that must be answered now, a window that closes, a cheap chance worth taking are all real reasons to spend a turn elsewhere — but if you reach the end of a two-year period and most of what you started points somewhere else, you did not hold the commitment, whatever the ledger still says. Every measure in your portfolio cost `eu_political_capital`, but less so if the opinion for the measure is favourable. Propose a measure unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, give a heading plus one short sentence saying what it actually does, then five lines:
 `Category:` (**number and name together, copied from the list below** — for example `Category: 6 (Preparedness and resilience)`). Measures you invent are welcome and get the category they most resemble, or `10 (Other)`.
 `Size:` (large or small — large costs 3 political capital a turn, small costs 2, every turn until it finishes, less whatever the world has made easier).
 `Finishes on turn:` (the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more).
@@ -107,6 +117,6 @@ Categories 4, 7 and 9 are not decoration. Diffusion breadth buys economic gain b
 Copy the pair exactly; never invent a name of your own for a number, and never write a number without its name. Read the name before you write the number: standing up your own evaluation or monitoring capability is 5, hardening critical services against attack is 6, and 4 is compute, chips, energy and talent on EU soil — the three are routinely confused, and the tag is how measures are compared across runs. Broadening a measure already in flight is not a new measure — record it under Portfolio instead. This applies with full force to the programmes you inherited: building EU compute *is* the Gigafactories line, and reviving, redirecting or re-funding it belongs in the Portfolio and in your Priority, not here as a fresh initiative under a new name. Standing up a parallel compute programme while the inherited one sits stalled is the one move the Union cannot credibly make.
 
 * Heading level 2: Priority
-Name at most one measure you are pushing hardest this turn, and one sentence on why it and not the others. In most turns this should be a measure that serves your standing commitment. Naming a priority that serves something else is allowed – say in that same sentence what the world demanded that outranked your own direction.
+Name at most one measure you are pushing hardest this turn, and one sentence on why it and not the others. In most turns this should be a measure that serves your two-year commitment. Naming a priority that serves something else is allowed – say in that same sentence what the world demanded that outranked your own direction.
 
 Four rules bind this response and you must not talk your way past any of them. You must open with your **Standing commitment** — chosen and entered in the ledger if this is your first turn, restated or explicitly redirected if it is not. You may introduce **at most one new measure this turn**, however many good ideas you have. Everything under Portfolio and Priority must be carried forward accurately from what you recorded before, not re-invented. And every proposed measure must carry its `Category:` line — a measure without one cannot be compared against anything, which is most of why these runs exist.

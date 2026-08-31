@@ -1,8 +1,8 @@
-## Standing commitment  
+## Two-year commitment  
 Secure the capacity to act independently in an AI-defined world without sacrificing the Union’s foundational stability.
 
 ## Statement changes  
-``add `standing_commitment` (commitment): Secure the capacity to act independently in an AI-defined world without sacrificing the Union’s foundational stability``
+``add `two_year_commitment` (commitment): Secure the capacity to act independently in an AI-defined world without sacrificing the Union’s foundational stability``
 
 ## Portfolio  
 - `under implementation` (inherited) — InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €20bn of a €200bn fund for four to five sites, operation slipped to 2029 and the ambition scaled down  
