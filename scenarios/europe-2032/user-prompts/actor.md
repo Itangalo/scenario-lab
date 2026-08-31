@@ -46,12 +46,10 @@ These carry forward unchanged unless you explicitly propose a change.
 
 {{previous_actions}}
 
-This record is the authority on what you have in flight. Your `## Portfolio` this turn must carry every measure in it forward — same names, same category tags, statuses advanced only as far as the world has actually moved them. A measure disappears from your books only by an explicit decision recorded under Actions, never by being left out.
+This record is the authority on what you have in flight. Your `## Portfolio` this turn must carry every measure in it forward. A measure disappears from your books only by an explicit decision recorded under Actions, never by being left out.
 {% endif %}
 
-Use the background information to determine (1) which actions you want to take during the turn and (2) whether your statements still match what you are doing — proposing changes where they no longer do.
-
-Actions should align with your statements and be realistic given time and other resources. Your actions will be evaluated by a Game Master, who determines how they affect the world. Bold actions can have greater impact, but also greater risk of failure.
+Use the background information to determine your actions this turn. Your actions will be evaluated by a Game Master.
 
 {% if output_language %}
 Please write your response in {{output_language}}.
@@ -59,34 +57,56 @@ Please write your response in {{output_language}}.
 
 Respond with a Markdown text containing the following sections, in this order:
 
-{% if turn == 1 %}* Heading level 2: Standing commitment — your statements are listed above, and one of them is missing: `standing_commitment`, the direction you are pursuing. It is a statement like the others, held at commitment tier, and it is the only one you were not given. **Choosing what it says is the first real decision you make.** In one short phrase, name what you are trying to achieve across the years ahead — an end, not an instrument. Nothing above prescribes it. Write the phrase here and nothing else; it enters the ledger through the Statement changes section below, which is the only place the record is read from.
-{% else %}* Heading level 2: Standing commitment — restate in one short phrase the direction you are pursuing, before anything else. It is the statement `standing_commitment` in the ledger above, so restating it here is a restatement and not a re-invention: carry over the direction the ledger gives, in your own words if you like. Keep pursuing it unless the world has changed materially enough to justify abandoning it. Redirecting or abandoning it is done under Statement changes as ``modify `standing_commitment`: <the new direction>`` with a `Trigger:` line naming the development that forced it — never by quietly writing something different here. Drifting away from it is a failure; changing course deliberately under pressure is not.
-{% endif %}
-{% if turn == 1 %}* Heading level 2: Statement changes — **required this turn, because the statement you just chose is added the same way any statement is added, and it must contain exactly one line, in exactly this form:**
+{% if turn == 1 %}* Heading level 2: Standing commitment
+You must add a `commitment` describing the main direction of measures you want to take during the next two years (four rounds). It is a statement like the others, held at commitment tier. In one short phrase, name what you are trying to achieve across the years ahead — an end, not an instrument. Nothing above prescribes it. The standing commitment must be exactly one line, in exactly this form:**
 
 ``add `standing_commitment` (commitment): <the direction you named above, in one sentence>``
 
-This line is what puts the statement in the ledger, and the ledger is what carries it into every later turn — where it binds exactly as the statements you were given do, and is reversed only by naming the development that forced it. It is read only from this section: writing it under the Standing commitment heading does nothing, and writing `No statement changes.` here leaves you with no direction for the rest of the run.
-{% else %}* Optional heading level 2: Statement changes — omit it, or write `No statement changes.`, when nothing has changed
+Write the phrase under this heading and nothing else.
+
+* Optional heading level 2: Statement changes
+Omit it, or write `No statement changes.`, when nothing has changed in the existing statements.
+{% else %}* Optional heading level 2: Statement changes
+Omit it, or write `No statement changes.`, when nothing has changed.
 {% endif %}
 
-* Heading level 2: Portfolio — one bullet per measure already in flight, in the form `` `status` — Measure name (category N, costs C per turn, started turn X, finishes on turn Y): one clause on what changed ``, where status is one of *decided*, *under implementation*, *finished* or *abandoned*. Write `Nothing in flight.` if there is nothing.
+* Heading level 2: Portfolio
+One bullet per measure already in flight, copied straight from the portfolio passed onto you, on the form ``Measure name (category N, costs C per turn, started turn X, finishes on turn Y): short description``. Write `Nothing in flight.` if there is nothing.
 
-The finishing turn is set once, when the measure is first proposed, and **copied forward unchanged after that** — do not recalculate it, and do not quietly revise it because a measure is going well or badly. It moves only when something moved it, and then you say so in the same line: pushing a measure as your priority may bring it forward a turn, leaving one unprioritised for several turns running may push it back one, and an event may do either. Nothing you propose this turn does anything this turn, and nothing arrives early by being wanted.
+A measure whose finishing turn the run has now reached is **finished**: say so on its line this turn, and drop it from the portfolio from the next turn on. It stops costing you political capital and keeps delivering its effect for as long as it is sustained. Finishing is the one way a measure leaves your books without a decision.
 {% if turn == 1 %}
-You do not start empty. Two programmes are already running when you take over, and they are yours now whether or not you would have chosen them. Open your portfolio with exactly these two, marked `inherited`, and carry them forward as you would any other measure:
+Open your portfolio with exactly these two, and carry them forward as you would any other measure:
 
-- `` `under implementation` (inherited) — InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €20bn of a €200bn fund for four to five sites, operation slipped to 2029 and the ambition scaled down ``
-- `` `decided` (inherited) — Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): June 2026, targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones ``
-
-Inherited measures behave exactly like chosen ones once you touch them, and drift on their own if you do not. Reviving one is done by naming it your Priority, which is a real use of the single priority you get this turn.
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
 {% endif %}
-* Heading level 2: New measure — **at most one**. `None this turn.` is available, but it is a real choice with a real cost: idle capacity decays, and a turn you spend banking capital against a future that may never arrive is a turn the world moved and you did not. Propose unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, give a heading plus one short sentence saying what it actually does, then three lines: `Category:` (**number and name together, copied from the list below** — for example `Category: 6 (Preparedness and resilience)`), `Size:` (large or small — large costs 3 political capital a turn, small costs 2, every turn until it finishes, less whatever the world has made easier), `Finishes on turn:` (the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more), `Targeted effect:` (which metrics, which direction, roughly how much), and `Applies to:` (your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly). Measures you invent are welcome and get the category they most resemble, or `10 (Other)`.
+You may choose to drop measures from your portfolio, to save `eu_political_capital`. If you want to drop a measure, list them in the following way: ``Canceled measure: Name of measure.  Short statement on why you choose to cancel it.``
 
-**The ten categories, and the only names any measure may carry:** 1 (Evaluation and oversight) · 2 (Transparency and reporting) · 3 (Limits and restrictions) · 4 (Sovereignty and industrial capacity) · 5 (Public technical capacity and research) · 6 (Preparedness and resilience) · 7 (Labour and social protection) · 8 (International coordination and leverage) · 9 (Diffusion, adoption and public trust) · 10 (Other). Copy the pair exactly; never invent a name of your own for a number, and never write a number without its name. Read the name before you write the number: standing up your own evaluation or monitoring capability is 5, hardening critical services against attack is 6, and 4 is compute, chips, energy and talent on EU soil — the three are routinely confused, and the tag is how measures are compared across runs. Broadening a measure already in flight is not a new measure — record it under Portfolio instead. This applies with full force to the programmes you inherited: building EU compute *is* the Gigafactories line, and reviving, redirecting or re-funding it belongs in the Portfolio and in your Priority, not here as a fresh initiative under a new name. Standing up a parallel compute programme while the inherited one sits stalled is the one move the Union cannot credibly make.
+* Heading level 2: New measure
+**Pick at most one**. `None this turn.` is an option. Every measure in your portfolio cost `eu_political_capital`, but less so if the opinion for the measure is favourable. Propose a measure unless you have a reason not to, and if you write `None this turn.`, say in one clause what you are waiting for. When you do propose one, give a heading plus one short sentence saying what it actually does, then five lines:
+`Category:` (**number and name together, copied from the list below** — for example `Category: 6 (Preparedness and resilience)`). Measures you invent are welcome and get the category they most resemble, or `10 (Other)`.
+`Size:` (large or small — large costs 3 political capital a turn, small costs 2, every turn until it finishes, less whatever the world has made easier).
+`Finishes on turn:` (the turn it is actually in force, judged from how big the thing is: a directive needing drafting and a vote is two or three turns out, a capability that has to be built and staffed six or more).
+`Targeted effect:` (which metrics, which direction, roughly how much).
+`Applies to:` (your own jurisdiction, particular member states, the US, China, a coalition, the frontier developers directly).
 
-* Heading level 2: Priority — name exactly one measure you are pushing hardest this turn, and one sentence on why it and not the others. Naming two, or none, is an invalid turn. In most turns this should be a measure that serves your standing commitment, because the priority is what actually advances and a commitment nothing advances is not one. Naming a priority that serves something else is allowed – say in that same sentence what the world demanded that outranked your own direction.
-* Heading level 2: Actions
-* One paragraph for each action, describing at an appropriate level each action you intend to carry out during the turn. Actions carry out the measures on your books – the new one, and the ones already in flight. An action that stands up a further distinct instrument with its own implementation track is a second new measure by another name, and the turn's slot does not allow it.
+**There are ten categories for measures, and only these may be used. Each carries an anchor — the measure it most typically means — and, in brackets, others that belong to it:**
+
+1. **Evaluation and oversight.** Anchor: *Third-party pre-release evaluation* — independent assessment of a model's dangerous capabilities before release. (Also: audits, external review of testing procedures, pre-registration of training runs, agent-behaviour evaluations.)
+2. **Transparency and reporting.** Anchor: *Incident reporting* — serious incidents and near-misses reported to a common body. (Also: whistleblower protection, shared safety cases, a public registry of deployed systems.)
+3. **Limits and restrictions.** Anchor: *Intolerable-risk thresholds* — red lines that halt development or deployment when crossed. (Also: KYC for compute, prohibitions on high-risk applications, open-weight release thresholds, licensing regimes.)
+4. **Sovereignty and industrial capacity.** Anchor: *Compute on EU soil* — data centres built and legally anchored inside the Union at a pace set by the race, not by ordinary permitting. (Also: accelerated siting and grid connection, electricity build-out, chip and lithography policy, retaining and attracting frontier talent, funding an EU frontier effort, partnership terms with foreign hyperscalers that bolt capacity to EU jurisdiction.)
+5. **Public technical capacity and research.** Anchor: *Institution-building* — your own evaluation capability and funded safety research. (Also: vetted researcher access, advanced model access for public evaluators, weight-security audits, interpretability programmes.)
+6. **Preparedness and resilience.** Anchor: *Contingency plans with exercises* — rehearsed procedures for fast-moving incident classes. (Also: cyber hardening of critical services, biological detection and response capacity, loss-of-control emergency protocols with escalation thresholds, cross-border mutual aid.)
+7. **Labour and social protection.** Anchor: *Flexicurity-style transition* — wage insurance and retraining paired with employer flexibility to restructure. (Also: safety-net investment, transition funds tied to automating employers, reform of employment protection.)
+8. **International coordination and leverage.** Anchor: *Middle-power coalition* — coordinating with other states holding pieces of the supply chain so that leverage is exercised jointly rather than picked off. (Also: binding accords, standing negotiation forums, mutual recognition of safety evaluations, export-control alignment, use of the Anti-Coercion Instrument.)
+9. **Diffusion, adoption and public trust.** Anchor: *Public-sector adoption programme* — putting capable AI to work in health, administration and education. (Also: procurement rules that favour or exclude particular providers, digital signatures for trusted sources, regulation of AI companions aimed at minors, education programmes.)
+10. **Other.** Anything fitting nowhere else, including combinations and inventions.
+
+Categories 4, 7 and 9 are not decoration. Diffusion breadth buys economic gain but also attack surface and misuse exposure; public trust determines how much capital you have when incidents arrive; industrial and infrastructure pace feeds capability growth. If your strongest lever turns out not to point at the frontier at all, that is a real finding, not a mistake.
+Copy the pair exactly; never invent a name of your own for a number, and never write a number without its name. Read the name before you write the number: standing up your own evaluation or monitoring capability is 5, hardening critical services against attack is 6, and 4 is compute, chips, energy and talent on EU soil — the three are routinely confused, and the tag is how measures are compared across runs. Broadening a measure already in flight is not a new measure — record it under Portfolio instead. This applies with full force to the programmes you inherited: building EU compute *is* the Gigafactories line, and reviving, redirecting or re-funding it belongs in the Portfolio and in your Priority, not here as a fresh initiative under a new name. Standing up a parallel compute programme while the inherited one sits stalled is the one move the Union cannot credibly make.
+
+* Heading level 2: Priority
+Name at most one measure you are pushing hardest this turn, and one sentence on why it and not the others. In most turns this should be a measure that serves your standing commitment. Naming a priority that serves something else is allowed – say in that same sentence what the world demanded that outranked your own direction.
 
 Four rules bind this response and you must not talk your way past any of them. You must open with your **Standing commitment** — chosen and entered in the ledger if this is your first turn, restated or explicitly redirected if it is not. You may introduce **at most one new measure this turn**, however many good ideas you have. Everything under Portfolio and Priority must be carried forward accurately from what you recorded before, not re-invented. And every proposed measure must carry its `Category:` line — a measure without one cannot be compared against anything, which is most of why these runs exist.

@@ -31,7 +31,7 @@ Not every event has one. The three 2028 election outcomes are standing postures 
 
 ## Measures referred to in conditions
 
-Where an entry refers to a measure "fully implemented" in a numbered category, it means a measure the EU actually carries at status *fully implemented* in its portfolio, in the category numbered as in the actor's own list. A measure that is proposed, decided or under implementation does not satisfy such a condition.
+Where an entry refers to a **finished** measure in a numbered category, it means a measure whose stated finishing turn the run has actually reached, in the category numbered as in the actor's own list. A measure still in flight does not satisfy such a condition, however far along it is.
 
 ## The opening turn
 
@@ -84,7 +84,7 @@ The reading that settles across the security community within days is that this 
 ## The Alliance Argument Gains Ground
 **ID:** campaign_atlanticist
 **Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. A serious argument takes hold that a coalition beats a fortress. This is campaign evidence, not a mechanism: it decides nothing on its own, and weighs on the 2028 outcome only as one signal among many.
-**Probability:** 20%. Add 15 points if `eu_access_secured`, `middle_power_coalition` or a fully implemented category 8 measure has given Washington something it needs from the Union. Add 10 points if a shock landed on both sides of the Atlantic in the previous four completed turns. Add 10 points if `eu_ai_sovereignty` is above 35.
+**Probability:** 20%. Add 15 points if `eu_access_secured`, `middle_power_coalition` or a finished category 8 measure has given Washington something it needs from the Union. Add 10 points if a shock landed on both sides of the Atlantic in the previous four completed turns. Add 10 points if `eu_ai_sovereignty` is above 35.
 **Can repeat:** No
 **Cheapens:** category 8 by 1 for 2 turns
 **Description:** A coalition of defence, intelligence and industrial voices argues that a hollowed-out Europe is a strategic liability, that allied capacity is a force multiplier rather than a leak, and that the current arrangement is producing dependency without loyalty. It is not the loudest argument in the campaign, but it stops being unrespectable.
@@ -113,7 +113,7 @@ The reading that settles across the security community within days is that this 
 ## Major Cyber Incident
 **ID:** cyber_major_incident
 **Condition:** Always eligible; list this event every turn. The gate is open if `cyber_test_shot` occurred in any of the previous 3 completed turns, or while `openweight_capability` is at or above 55 – proliferated offensive capability is its own precursor. Otherwise the gate is shut. That choice sets which probability applies, never whether the event is evaluated.
-**Probability:** Gate open: 20%. Gate shut: 6%. Add 8 points if `openweight_capability` is above 65. Add 5 points if a fully implemented category 9 measure has broadened public-sector adoption, because there is more surface to attack. Halve if a fully implemented category 6 measure covers cyber hardening of critical services.
+**Probability:** Gate open: 20%. Gate shut: 6%. Add 8 points if `openweight_capability` is above 65. Add 5 points if a finished category 9 measure has broadened public-sector adoption, because there is more surface to attack. Halve if a finished category 6 measure covers cyber hardening of critical services.
 **Can repeat:** Yes
 **Cheapens:** category 6 by 2 and category 1 by 1 for 3 turns
 **Description:** A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.
@@ -121,7 +121,7 @@ The reading that settles across the security community within days is that this 
 ## Defensive Breakthrough
 **ID:** cyber_defence_breakthrough
 **Condition:** Possible in any turn. More likely where assurance work and defensive tooling are actually being funded.
-**Probability:** 8%. Add 6 points if `ai_safety` is above 50. Add 5 points if a fully implemented category 6 measure covers cyber.
+**Probability:** 8%. Add 6 points if `ai_safety` is above 50. Add 5 points if a finished category 6 measure covers cyber.
 **Can repeat:** Yes
 **Cheapens:** category 6 by 1 for 2 turns
 **Description:** Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.
@@ -137,7 +137,7 @@ The reading that settles across the security community within days is that this 
 ## Biological Incident
 **ID:** bio_incident
 **Condition:** Always eligible; list this event every turn. The gate is open if `bio_uplift_findings` occurred in any of the previous 4 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated.
-**Probability:** Gate open: 9%. Gate shut: 1%. Halve if a fully implemented category 3 measure covers biological design tools or DNA synthesis screening, and halve again if a fully implemented category 6 measure covers biological detection and response.
+**Probability:** Gate open: 9%. Gate shut: 1%. Halve if a finished category 3 measure covers biological design tools or DNA synthesis screening, and halve again if a finished category 6 measure covers biological detection and response.
 **Can repeat:** No
 **Cheapens:** categories 3 and 6 by 2 for 4 turns
 **Description:** A real biological incident with model involvement: a deliberate release or a laboratory escape involving a designed or modified agent. Casualties are real, containment runs for weeks, and every argument about AI risk in every jurisdiction is reset by it.
@@ -153,7 +153,7 @@ The reading that settles across the security community within days is that this 
 ## Capability Jump
 **ID:** capability_jump
 **Condition:** Always eligible; list this event every turn. The gate is open if `eval_anomaly_reports` occurred in either of the previous 2 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated.
-**Probability:** Gate open: 15%. Gate shut: 5%. Reduce by a third if a fully implemented category 1 or 3 measure imposes pre-release evaluation or capability restrictions that actually bind the jurisdiction where the leading models are built.
+**Probability:** Gate open: 15%. Gate shut: 5%. Reduce by a third if a finished category 1 or 3 measure imposes pre-release evaluation or capability restrictions that actually bind the jurisdiction where the leading models are built.
 **Can repeat:** Yes
 **Cheapens:** categories 1 and 3 by 1 for 2 turns
 **Description:** A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.
@@ -204,7 +204,7 @@ The reading that settles across the security community within days is that this 
 ## Open Weights Reach the Frontier
 **ID:** openweight_frontier_release
 **Condition:** Possible in any turn.
-**Probability:** 12%. Halve if a fully implemented restriction on open release above a capability threshold binds a jurisdiction where such models are actually trained.
+**Probability:** 12%. Halve if a finished restriction on open release above a capability threshold binds a jurisdiction where such models are actually trained.
 **Can repeat:** Yes
 **Cheapens:** categories 3 and 6 by 1 for 3 turns
 **Description:** An open-weight release lands within months of the closed frontier rather than years. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5 points of `ai_capability` at a stroke.
@@ -212,7 +212,7 @@ The reading that settles across the security community within days is that this 
 ## Loss-of-Control Incident
 **ID:** loss_of_control_incident
 **Condition:** Always eligible; list this event every turn. The gate is open if `eval_anomaly_reports` occurred in any of the previous 3 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated.
-**Probability:** Gate open: 12%. Gate shut: 3%. Add 10 points if `ai_capability` minus `ai_safety` is above 30. Halve if a fully implemented category 5 or 6 measure carries rehearsed loss-of-control protocols with escalation thresholds.
+**Probability:** Gate open: 12%. Gate shut: 3%. Add 10 points if `ai_capability` minus `ai_safety` is above 30. Halve if a finished category 5 or 6 measure carries rehearsed loss-of-control protocols with escalation thresholds.
 **Can repeat:** Yes
 **Cheapens:** categories 1 and 3 by 2 for 4 turns
 **Description:** An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards and disputed.
@@ -220,7 +220,7 @@ The reading that settles across the security community within days is that this 
 ## Assurance Breakthrough
 **ID:** safety_breakthrough
 **Condition:** Possible in any turn. More likely where evaluation and interpretability are actually funded.
-**Probability:** 10%. Add 6 points if a fully implemented category 5 measure funds interpretability or public evaluation capacity.
+**Probability:** 10%. Add 6 points if a finished category 5 measure funds interpretability or public evaluation capacity.
 **Can repeat:** Yes
 **Cheapens:** category 1 by 1 for 2 turns
 **Description:** An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for. It is adopted quickly, because the laboratories want it too.
@@ -270,7 +270,7 @@ The reading that settles across the security community within days is that this 
 **ID:** us_china_agreement
 **Eligible:** ai_capability >= 60
 **Condition:** Possible in any turn once the stakes are high enough for either power to want a floor under them. Markedly more likely after an incident neither power can pretend was contained.
-**Probability:** 6%. Add 10 points if a loss-of-control or biological incident occurred in either of the previous 2 completed turns. Add 5 points if a fully implemented category 8 measure has put the Union inside a standing negotiation forum.
+**Probability:** 6%. Add 10 points if a loss-of-control or biological incident occurred in either of the previous 2 completed turns. Add 5 points if a finished category 8 measure has put the Union inside a standing negotiation forum.
 **Can repeat:** No
 **Cheapens:** category 8 by 1 for 2 turns
 **Description:** The two leading powers reach a limited but real agreement covering some class of AI risk – weights security, autonomous escalation, a class of biological design tools – with verification thin but not absent. Whether the Union is inside it, consulted about it, or informed of it afterwards depends on what it has built and whom it has coordinated with. This is the one thing in the world that slows `ai_capability`, on the terms of metric rule 2.
@@ -303,7 +303,7 @@ The reading that settles across the security community within days is that this 
 **ID:** eu_access_secured
 **Eligible:** eu_political_capital >= 45
 **Condition:** Possible in any turn where the Union has something to trade and the standing to trade it.
-**Probability:** 8%. Add 8 points if a fully implemented category 8 measure coordinates other states holding pieces of the supply chain. Add 5 points if the standing `US_POSTURE` is ALLIANCE.
+**Probability:** 8%. Add 8 points if a finished category 8 measure coordinates other states holding pieces of the supply chain. Add 5 points if the standing `US_POSTURE` is ALLIANCE.
 **Can repeat:** Yes
 **Cheapens:** category 8 by 1 for 2 turns
 **Description:** The Union obtains frontier access under conditions it set rather than accepted: published terms, evaluation rights, a notice period before withdrawal, or capacity legally anchored inside its own jurisdiction. It is not sovereignty, and it is not nothing.
@@ -311,7 +311,7 @@ The reading that settles across the security community within days is that this 
 ## Member State Defection
 **ID:** member_state_defection
 **Condition:** Possible in any turn. One or more member states break from a common position under external pressure.
-**Probability:** 10%. Add 8 points if `eu_political_capital` is below 35. Add 5 points if a high-load measure is under implementation.
+**Probability:** 10%. Add 8 points if `eu_political_capital` is below 35. Add 5 points if a large measure is in flight.
 **Can repeat:** Yes
 **Description:** A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.
 
@@ -319,7 +319,7 @@ The reading that settles across the security community within days is that this 
 **ID:** backlash_physical
 **Eligible:** public_sentiment < 40
 **Condition:** Possible in any turn where the public has soured.
-**Probability:** 10%. Add 10 points if `public_sentiment` is below 28. Add 5 points if a category 4 build is under implementation, because there is then something local to protest against.
+**Probability:** 10%. Add 10 points if `public_sentiment` is below 28. Add 5 points if a category 4 build is in flight, because there is then something local to protest against.
 **Can repeat:** Yes
 **Cheapens:** category 9 by 1 for 2 turns
 **Description:** Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.
@@ -327,7 +327,7 @@ The reading that settles across the security community within days is that this 
 ## Adoption Delivers
 **ID:** adoption_success
 **Condition:** Possible in any turn.
-**Probability:** 10%. Add 8 points if a fully implemented category 9 measure has put capable AI to work in health, administration or education.
+**Probability:** 10%. Add 8 points if a finished category 9 measure has put capable AI to work in health, administration or education.
 **Can repeat:** Yes
 **Cheapens:** categories 5 and 9 by 1 for 3 turns
 **Description:** Public-sector AI adoption produces visible, measurable benefit – waiting lists that fall, decisions that arrive in days rather than months, teaching that demonstrably works – and it is attributed to a European decision rather than to an American product.
@@ -335,7 +335,7 @@ The reading that settles across the security community within days is that this 
 ## Automated Decision Scandal
 **ID:** automated_decision_scandal
 **Condition:** Possible in any turn. Internal origin by construction: this is harm the Union's own institutions caused.
-**Probability:** 8%. Add 8 points if a fully implemented category 9 measure has broadened public-sector adoption. Add 5 points if `ai_capability` is above 65.
+**Probability:** 8%. Add 8 points if a finished category 9 measure has broadened public-sector adoption. Add 5 points if `ai_capability` is above 65.
 **Can repeat:** Yes
 **Cheapens:** categories 1 and 2 by 2 for 3 turns
 **Description:** An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 12's internal-origin clause applies in full.

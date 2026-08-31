@@ -5,7 +5,7 @@
 ## Capability Jump
 **ID:** capability_jump
 **Condition:** Always eligible; list this event every turn. The gate is open if `eval_anomaly_reports` occurred in either of the previous 2 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated. The jump is confined to domains where success can be checked automatically.
-**Probability:** Gate open: 25%. Gate shut: 8%. Reduce by a third if a fully implemented category 1 or 3 measure imposes pre-release evaluation or capability restrictions that actually bind the jurisdiction where the leading models are built.
+**Probability:** Gate open: 25%. Gate shut: 8%. Reduce by a third if a finished category 1 or 3 measure imposes pre-release evaluation or capability restrictions that actually bind the jurisdiction where the leading models are built.
 **Description:** A discontinuous advance is released or demonstrated, and it lands squarely inside the verifiable domains – code, mathematics, cyber operations, narrow engineering. What an attacker can do changes markedly within weeks. General competence moves by only +1 to +2, and the argument about whether this is progress toward anything general gets louder rather than settled.
 
 ## Recursive Self-Improvement Begins
@@ -31,7 +31,7 @@
 
 ## Major Cyber Incident
 **ID:** cyber_major_incident
-**Probability:** Gate open: 28%. Gate shut: 9%. Add 8 points if `openweight_capability` is above 55. Add 5 points if a fully implemented category 9 measure has broadened public-sector adoption, because there is more surface to attack. Halve if a fully implemented category 6 measure covers cyber hardening of critical services.
+**Probability:** Gate open: 28%. Gate shut: 9%. Add 8 points if `openweight_capability` is above 55. Add 5 points if a finished category 9 measure has broadened public-sector adoption, because there is more surface to attack. Halve if a finished category 6 measure covers cyber hardening of critical services.
 
 ## Human-Infective Design Demonstrated
 **ID:** bio_uplift_findings
@@ -39,4 +39,4 @@
 
 ## Open Weights Reach the Frontier
 **ID:** openweight_frontier_release
-**Probability:** 18%. Halve if a fully implemented restriction on open release above a capability threshold binds a jurisdiction where such models are actually trained.
+**Probability:** 18%. Halve if a finished restriction on open release above a capability threshold binds a jurisdiction where such models are actually trained.
