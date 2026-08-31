@@ -1,6 +1,6 @@
 # Prompt sign-off
 
-Generated from `run-20260830-223259`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
+Generated from `run-20260831-135806`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
 
 Read them once when the scenario is built, and again after any change to the templates, the scenario's prompt overrides, or the background files. Sign off by saying so in the scenario's design notes, with the date.
 
@@ -23,11 +23,11 @@ Every heading in the scenario's background and definition files, and whether the
 | `background/actors/eu.md` | Your instruments | **NO** |
 | `background/actors/eu.md` | Your mandate — two purposes, unreconciled | **NO** |
 | `background/actors/eu.md` | One proposal per turn, and a stated priority | **NO** |
-| `background/actors/eu.md` | Your standing commitment | **NO** |
+| `background/actors/eu.md` | Your two-year commitment | **NO** |
 | `background/actors/eu.md` | How a measure is stated | **NO** |
-| `background/actors/eu.md` | The categories, with one anchor each | **NO** |
+| `background/actors/eu.md` | The categories, with one anchor each | yes |
 | `background/actors/eu.md` | How every measure is judged | **NO** |
-| `background/actors/eu.md` | Implementation phases | **NO** |
+| `background/actors/eu.md` | How long a measure takes | yes |
 | `background/actors/eu.md` | Scope | **NO** |
 | `background/actors/eu.md` | Statements | yes |
 | `background/actors/eu.md` | Behavioral traits | yes |
@@ -71,7 +71,7 @@ Every heading in the scenario's background and definition files, and whether the
 | `events.md` | An Election Is Voided | yes |
 | `events.md` | Frontier Access Denied | yes |
 | `events.md` | Coercion Over ASML | yes |
-| `events.md` | Access Secured on Its Own Terms | yes |
+| `events.md` | Access Secured on Its Own Terms | **NO** |
 | `events.md` | Member State Defection | yes |
 | `events.md` | Backlash Turns Physical | **NO** |
 | `events.md` | Adoption Delivers | yes |

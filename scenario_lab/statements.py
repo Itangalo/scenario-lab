@@ -29,8 +29,27 @@ GATED_TIERS = ("commitment", "identity")
 
 NO_CHANGES_MARKERS = ("no statement changes", "none", "no changes")
 
-_SECTION_RE = re.compile(r"^##\s+Statement changes\s*$", re.IGNORECASE | re.MULTILINE)
-_NEXT_SECTION_RE = re.compile(r"^##\s+", re.MULTILINE)
+# The section heading, matched leniently on purpose. It used to require
+# exactly ``## Statement changes`` with nothing after it, and anything else --
+# a level-1 heading, a trailing "(required this turn)", a stray colon --
+# discarded the whole ledger update silently: no error, no warning, and an
+# actor that turns up several turns later with a commitment it never made.
+# Actors get the heading level wrong often enough that strictness cost more
+# than it bought, so any level is accepted and trailing text is ignored.
+_SECTION_RE = re.compile(
+    r"^[ \t]{0,3}(?P<hashes>#{1,6})[ \t]+Statement changes\b[^\n]*$",
+    re.IGNORECASE | re.MULTILINE,
+)
+
+
+def _next_section_re(level: int) -> re.Pattern[str]:
+    """Where the section ends: the next heading at the same level or shallower.
+
+    Level matters because the opening heading's level is no longer fixed. A
+    deeper heading is a subsection and must not end the section; a response
+    written entirely with ``#`` still terminates on its own next heading.
+    """
+    return re.compile(rf"^[ \t]{{0,3}}#{{1,{level}}}[ \t]+", re.MULTILINE)
 
 _MODIFY_RE = re.compile(
     r"^modify\s+`(?P<id>[a-z0-9_]+)`"
@@ -104,7 +123,7 @@ def parse_statement_changes(output: str) -> list[StatementProposal]:
         return []
 
     body = output[match.end():]
-    next_section = _NEXT_SECTION_RE.search(body)
+    next_section = _next_section_re(len(match.group("hashes"))).search(body)
     if next_section:
         body = body[: next_section.start()]
 

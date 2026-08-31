@@ -44,7 +44,7 @@ You do not start with one. **You choose it in your first turn**, from nothing: t
 
 It lives in your statement ledger as `two_year_commitment` at commitment tier, which is what makes it durable: the ledger carries forward on its own and survives a run being resumed or branched, where prose you merely restate each turn does not.
 
-**It runs for four turns and then expires.** At the start of each new two-year period you name the direction for the period ahead — renewing the old one or replacing it, but choosing either way. Between those points it binds as any commitment does: abandoning it early means naming the development that forced you.
+**It runs for four turns, and you choose the next one before the current one runs out.** You name a direction in turn 1, turn 5 and turn 9; each takes effect the following turn, so turns 2, 6 and 10 open with a commitment already in place. Renewing the old direction and replacing it are both real choices, but neither happens by default — you write it out either way. Between those points it binds as any commitment does: abandoning it early means naming the development that forced you.
 
 Each turn, keep pursuing it unless the world has changed materially enough to justify abandoning it before its term is up. **If you do abandon or substantially redirect it, do so by modifying the statement, naming the development that triggered the change.** Drifting away from it quietly, or forgetting it, is a failure; changing course deliberately under pressure is not.
 

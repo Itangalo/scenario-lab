@@ -58,24 +58,27 @@ Please write your response in {{output_language}}.
 Respond with a Markdown text containing the following sections, in this order:
 
 {% if turn == 1 %}* Heading level 2: Two-year commitment
-You must add a `commitment` describing the main direction of measures you want to take during the next two years (four rounds). It is a statement like the others, held at commitment tier. In one short phrase, name what you are trying to achieve across the years ahead — an end, not an instrument. Nothing above prescribes it. It must be exactly one line, in exactly this form:**
+Name the main direction of measures you will pursue over the next two years (four turns). In one short phrase, say what you are trying to achieve — an end, not an instrument. Nothing above prescribes it, and choosing it is the first real decision you make. **Write the phrase here as plain prose and nothing else — no backticks, no `add` line.** Nothing enters the record from this heading.
 
-``add `two_year_commitment` (commitment): <the direction you named above, in one sentence>``
+* Heading level 2: Statement changes
+**Required this turn.** The heading must read exactly `## Statement changes` and carry nothing else on that line. Your commitment becomes real only under it, as exactly this line:
 
-Write the phrase under this heading and nothing else.
+``add `two_year_commitment` (commitment): <the phrase you just named, in one sentence>``
 
-* Optional heading level 2: Statement changes
-Omit it, or write `No statement changes.`, when nothing has changed in the existing statements.
-{% elif turn in [2, 6, 10] %}* Heading level 2: Two-year commitment — **your two-year commitment has run its term and expires this turn.** The one in the ledger covered the two years now ending; it does not carry into the next four turns on its own. Name the direction for the two years ahead, in one short phrase — an end, not an instrument.
+**This section is the only place the ledger is read from.** Writing that line under the previous heading does nothing at all, and writing `No statement changes.` here leaves you with no direction for the rest of the run. Any other statement changes follow it.
+{% elif turn in [5, 9] %}* Heading level 2: Two-year commitment — **this turn closes your current two-year commitment, and you name the one that replaces it.** The commitment in the ledger has governed the two years ending now; it does not carry on by itself. Name the direction for the two years that begin next turn, in one short phrase — an end, not an instrument.
 
-Choosing the same direction again is a real option and needs no apology: a commitment renewed because it is still right is worth more than one changed for the sake of movement. But it is a choice you are making now, not something that continues by default, and you must write it out either way.
+Two things follow from the timing, and both matter. The new direction takes effect **next turn**, not this one: this turn you are still finishing under the old commitment, and what you do now should still answer to it. And choosing the same direction again is a real option that needs no apology — a commitment renewed because it is still right is worth more than one changed for the sake of movement — but it is a choice you are making, not something that continues by default, and you must write it out either way.
 
-Write the phrase under this heading, and enter it in the ledger under Statement changes as:
+**Write the phrase here as plain prose and nothing else — no backticks, no `modify` line.**
 
-``modify `two_year_commitment` (commitment): <the direction for the two years ahead>``
-`- Trigger: the two-year commitment period ended this turn`
+* Heading level 2: Statement changes
+**Required this turn.** The heading must read exactly `## Statement changes` and carry nothing else on that line. The new commitment becomes real only under it, opening with exactly these two lines:
 
-* Heading level 2: Statement changes — **required this turn**, and it must carry the two lines above. Any other statement changes follow them.
+``modify `two_year_commitment` (commitment): <the phrase you just named, in one sentence>``
+`- Trigger: the two-year commitment period closes this turn`
+
+**This section is the only place the ledger is read from.** Writing those lines under the previous heading does nothing at all, and writing `No statement changes.` here leaves the closing commitment standing into a period it was not chosen for. Any other statement changes follow them.
 {% else %}* Optional heading level 2: Statement changes
 Omit it, or write `No statement changes.`, when nothing has changed.
 {% endif %}
@@ -119,4 +122,9 @@ Copy the pair exactly; never invent a name of your own for a number, and never w
 * Heading level 2: Priority
 Name at most one measure you are pushing hardest this turn, and one sentence on why it and not the others. In most turns this should be a measure that serves your two-year commitment. Naming a priority that serves something else is allowed – say in that same sentence what the world demanded that outranked your own direction.
 
-Four rules bind this response and you must not talk your way past any of them. You must open with your **Standing commitment** — chosen and entered in the ledger if this is your first turn, restated or explicitly redirected if it is not. You may introduce **at most one new measure this turn**, however many good ideas you have. Everything under Portfolio and Priority must be carried forward accurately from what you recorded before, not re-invented. And every proposed measure must carry its `Category:` line — a measure without one cannot be compared against anything, which is most of why these runs exist.
+* Heading level 2: In practice
+Two or three short paragraphs, in the Union's own voice, on how you are actually carrying out what is on your books this turn — the measure you have just proposed and the ones already in flight. Name the instruments, the venues, the money and the people who have to be persuaded: which legal base, which Council formation, which agency, which fund, who is resisting and what you are offering them to stop. This is where the turn becomes something that happened rather than a list of headings, and it is the only part of your answer written as prose.
+
+**It carries out your measures; it does not add any.** Anything here that stands up a further distinct instrument, with its own implementation track and its own lead time, is a second new measure by another name, and the turn's slot does not allow it. If what you are describing would need its own budget line and its own finishing turn, it belongs under New measure in a later turn, not here.
+
+Four rules bind this response and you must not talk your way past any of them. Where a **Two-year commitment** section is asked for you must open with it — chosen and entered in the ledger in your first turn, renewed or redirected when the term expires. You may introduce **at most one new measure this turn**, however many good ideas you have, and nothing under In practice may become a second one. Everything under Portfolio and Priority must be carried forward accurately from what you recorded before, not re-invented. And every proposed measure must carry its `Category:` line — a measure without one cannot be compared against anything, which is most of why these runs exist.

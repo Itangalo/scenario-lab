@@ -270,3 +270,71 @@ def test_a_single_backtick_pair_is_left_alone():
     output = "## Statement changes\nretire `we_are_centre`\n"
     proposals = parse_statement_changes(output)
     assert [(p.kind, p.statement_id) for p in proposals] == [("retire", "we_are_centre")]
+
+
+# The section heading used to be matched as exactly `## Statement changes` with
+# nothing after it. Every shape below was produced by an actor in practice and
+# silently discarded the whole ledger update -- no error, no warning, just a run
+# that carried on without the statement. Europe 2032 lost a commitment-tier
+# statement in both turns of a run that way before the match was loosened.
+
+
+def test_heading_at_another_level_still_opens_the_section():
+    """Actors write `#` as readily as `##`, and the level carries no meaning."""
+    for hashes in ("#", "###", "####"):
+        output = (
+            f"{hashes} Statement changes\n"
+            "add `two_year_commitment` (commitment): Secure independent capacity.\n"
+        )
+        proposals = parse_statement_changes(output)
+        assert [(p.kind, p.statement_id) for p in proposals] == [
+            ("add", "two_year_commitment")
+        ], f"level {hashes!r} did not open the section"
+
+
+def test_trailing_text_on_the_heading_is_ignored():
+    """A prompt that emphasises the heading gets that emphasis echoed into it."""
+    for suffix in (" — **required this turn.**", ":", " (required)", "  "):
+        output = (
+            f"## Statement changes{suffix}\n"
+            "add `two_year_commitment` (commitment): Secure independent capacity.\n"
+        )
+        proposals = parse_statement_changes(output)
+        assert [(p.kind, p.statement_id) for p in proposals] == [
+            ("add", "two_year_commitment")
+        ], f"suffix {suffix!r} broke the match"
+
+
+def test_the_section_ends_at_the_next_heading_of_its_own_level():
+    """A response written entirely with `#` must still stop at its next heading."""
+    output = (
+        "# Statement changes\n"
+        "add `two_year_commitment` (commitment): Secure independent capacity.\n"
+        "# Portfolio\n"
+        "add `not_a_statement` (position): this line is in another section.\n"
+    )
+    proposals = parse_statement_changes(output)
+    assert [p.statement_id for p in proposals] == ["two_year_commitment"]
+
+
+def test_a_deeper_heading_does_not_end_the_section():
+    """A subsection is inside the section, not after it."""
+    output = (
+        "## Statement changes\n"
+        "add `two_year_commitment` (commitment): Secure independent capacity.\n"
+        "### Grounds in detail\n"
+        "modify `act_under_uncertainty` (commitment): Commit sooner.\n"
+        "- Trigger: the cyber warning shot\n"
+        "## Portfolio\n"
+    )
+    proposals = parse_statement_changes(output)
+    assert [p.statement_id for p in proposals] == [
+        "two_year_commitment",
+        "act_under_uncertainty",
+    ]
+
+
+def test_no_statement_changes_still_yields_nothing_under_a_loose_heading():
+    """Loosening the heading must not turn the ordinary answer into a proposal."""
+    output = "# Statement changes (required this turn)\nNo statement changes.\n"
+    assert parse_statement_changes(output) == []
