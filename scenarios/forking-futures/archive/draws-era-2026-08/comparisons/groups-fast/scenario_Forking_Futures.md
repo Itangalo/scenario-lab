@@ -1,0 +1,55 @@
+## Summary
+
+The ensemble of 20 runs in the "Forking Futures" scenario reveals a consistent failure of regulatory instruments to keep pace with accelerating AI capability, regardless of the specific trajectory regime. Capability—especially in the US—rises rapidly, reaching decisively superhuman levels in most runs (mean 94.67 by turn 18), while incident pressure escalates to crisis levels (mean 78.35). Regulatory capacity remains stagnant (mean 50.05), public sentiment declines sharply (mean 21.45), and the openweight gap widens in most cases, reinforcing frontier concentration. Early interventions rarely succeed in altering outcomes, and reactive measures consistently arrive too late. The most significant divergences are driven by tail-event clusters (e.g., simultaneous taiwan_blockade and cyber_mass_campaign) and the timing of rsi_onset, which accelerates capability growth. No-regret policy packages are elusive, as measures often fail to implement fully or are undermined by legal, geopolitical, or technical realities.
+
+## Research Questions
+
+### rq_early_vs_reactive
+
+Early, broad interventions do not consistently outperform reactive ones across regimes; in fact, reactive measures often fail to land at all, and early interventions are frequently hedged, delayed, or legally challenged, rendering them ineffective. Across all 20 runs, regulatory capacity ends near its starting point (mean 50.05 vs. 50.0), and no measure category consistently correlates with improved outcomes. In runs where early measures were proposed (e.g., run-20260824-214357-01, run-20260824-223114), they were often stalled in implementation or struck down in court (e.g., emergent_court_challenge in 13 runs). Reactive measures, triggered by events like bio_incident (6 runs) or cyber_mass_campaign (18 runs), sometimes gained political capital (e.g., Emergency Deployment Suspension Authority in run-20260825-042646), but rarely achieved full implementation. The central condition determining success is not timing but enforceability: measures that rely on extraterritorial authority (e.g., over US or Chinese labs) consistently fail, while domestic or coalition-based instruments (e.g., Emergency Evaluation of Open-Weight Models in run-20260824-214357-01) have limited impact. Examples: run-20260825-004558 (early IFPDE fails), run-20260825-042646 (reactive EDSA fails).
+
+### rq_early_signals
+
+Precursor developments that precede the largest divergences in incident_pressure and openweight_gap include eval_anomaly_reports, rsi_onset, and taiwan_tension_rise. eval_anomaly_reports (16 runs) precedes capability_jump (14 runs) in 12 runs, and rsi_onset (19 runs) is strongly associated with post-onset capability acceleration (mean difference +9.91, n=16 with event). taiwan_tension_rise (17 runs) precedes taiwan_blockade (9 runs) in all 9 cases, and the blockade is associated with a mean economic_context drop of -12.08. However, many precursors fire without consequence: cyber_recon_wave (12 runs) fails to trigger cyber_mass_campaign in 4 runs (false positive rate 33%), and bio_uplift_findings (10 runs) fails to trigger bio_incident in 4 runs (40%). agent_misconduct_disclosure (13 runs) precedes agent_supply_chain_compromise (7 runs) in 5 runs (38% success). The most reliable early signal is eval_anomaly_reports, which precedes rsi_onset in 14 of 16 runs. Examples: run-20260824-223419 (eval_anomaly_reports at T1, rsi_onset at T12), run-20260825-001102 (taiwan_tension_rise at T2, blockade at T3).
+
+### rq_no_regret
+
+There are no no-regret policy packages across all three trajectory regimes; every measure category fails in at least one regime or under common conditions. Measures in category 1 (evaluation and audit) are undermined by legal challenges (emergent_court_challenge in 13 runs) and lab noncompliance (e.g., run-20260825-081543). Category 3 (limits and restrictions) fails to prevent capability_jump (14 runs) or rsi_onset (19 runs). Category 5 (preparedness and response) is often too slow (e.g., Incident-Triggered Deployment Moratorium in run-20260824-232432). Category 8 (adoption and integration) is vulnerable to scandals (algorithmic_bias_scandal in 1 run, information_integrity_crisis in 13 runs). The only partial exception is category 2 (whistleblower protection), which increases disclosure likelihood (doubled probability) but does not improve regulatory capacity or reduce incident pressure. In runs where multiple measures were combined (e.g., run-20260825-000221), outcomes were no better than in runs with single measures. Examples: run-20260825-001102 (Emergency Binding Standards fail after court challenge), run-20260825-030256 (Containment Enforcement Directive fails post-bio_incident).
+
+## Outcome Patterns
+
+- **High-capability, high-incident crisis (14 runs)**: US capability reaches 85–100, incident pressure 75–100, regulatory capacity stagnates (45–55), public sentiment 15–30. Openweight gap widens (60–95) in 10 runs, narrows in 4. Characterized by rsi_onset (13 runs), multiple cyber_mass_campaigns (12 runs), and failed diplomacy. Example runs: run-20260824-232432, run-20260825-000221, run-20260825-004558.
+- **Diffusion-dominated collapse (4 runs)**: Openweight gap collapses to <15 (mean 8.5), capability high (85–99), incident pressure 65–85, sentiment 18–28. Triggered by open_weight_frontier_release (4 runs), often followed by regulatory fragmentation. Example runs: run-20260825-081558, run-20260825-005828.
+- **Geopolitical shock trajectory (2 runs)**: taiwan_blockade (2 runs) causes economic_context to drop to 20–30, capability growth slows temporarily, but resumes. Regulatory capacity drops (to 38–42), sentiment hostile (10–15). Example runs: run-20260825-001102, run-20260825-081558.
+- **One-off: Algorithmic bias scandal (1 run)**: algorithmic_bias_scandal (run-20260825-040755) causes incident_pressure to rise to 55, but no other major shocks follow. Capability grows moderately (to 78.5), openweight_gap stable. Regulatory capacity unchanged (50.0). This is the only run without rsi_onset or capability_jump.
+
+## Recurring Turning Points
+
+- **Early shock cluster (turns 1–3)**: In 12 runs, a major event (cyber_mass_campaign, ai_market_crash, taiwan_blockade) occurs by turn 3, setting a reactive tone. Example: run-20260825-001102 (cyber_mass_campaign and taiwan_blockade at T3).
+- **rsi_onset (turns 7–13)**: Fires in 19 runs, most commonly turns 10–12. Preceded by eval_anomaly_reports in 14 runs. Associated with a mean +9.91 jump in US capability growth. Example: run-20260824-223419 (rsi_onset at T12).
+- **Open-weight release (turns 4–17)**: open_weight_frontier_release in 11 runs, most often turns 4–5 (4 runs) and 14–17 (5 runs). Associated with a mean openweight_gap drop of -36.74. Example: run-20260825-081558 (release at T4, gap to 1.0).
+- **Legal or coalition fracture (turns 5–15)**: emergent_court_challenge (13 runs) or emergent_member_state_noncompliance (5 runs) undermines regulatory authority. Example: run-20260825-081543 (court challenge at T3).
+- **Final crisis (turns 15–18)**: In 14 runs, incident_pressure exceeds 85, often due to repeated cyber_mass_campaign or agent_supply_chain_compromise. Regulatory capacity fails to respond. Example: run-20260825-004558 (pressure at 95, T16–18).
+
+## Actor Dynamics
+
+The regulator consistently attempts to act on early signals (eval_anomaly_reports, cyber_recon_wave) but is constrained by slow implementation (2–3 turns for medium-cost measures) and legal challenges. In 17 runs, negotiation_window opens, but in 15, no binding agreement is reached with both US and China. The US and Chinese labs act as de facto threat actors, resisting audits and withholding data (e.g., run-20260824-223419). The alliance_bloc_forms in 13 runs, but in 10, it excludes China or faces defections. Markets respond to shocks: ai_market_crash in 8 runs reduces economic_context, but recovery is often too fast (e.g., +25 in one turn, violating rule 12). Public sentiment declines uniformly (mean 21.45), driven by labour_displacement_wave (15 runs) and information_integrity_crisis (13 runs). The regulator’s identity shifts from multilateral convener to unilateral enforcer in 12 runs, but enforcement is symbolic (e.g., run-20260824-232432).
+
+## Surprises and Outliers
+
+- **Tail-event clusters**: In run-20260825-001102, cyber_mass_campaign, taiwan_blockade, and ai_market_crash all fire at gate-shut probabilities (4%, 2%, 3%) with no precursors, creating a perfect storm. This is statistically rare (p < 0.001) but shapes the entire run.
+- **Rule violations**: In run-20260825-042646, incident_pressure moves +33 (exceeding 25-point cap) and is not corrected. In run-20260825-000221, openweight_gap jumps +25 with no mechanism.
+- **One-off events**: algorithmic_bias_scandal (run-20260825-040755) is the only run where a public-sector adoption scandal drives harm, not frontier risk.
+- **Metric-artifact drift**: In run-20260825-030256, openweight_gap falls to 55 post-release, contradicting the rule that it should go below 10. In run-20260825-081558, capability reaches 99.0 but openweight_gap collapses to 1.0, violating regime physics.
+
+## Simulation Caveats
+
+- **Event and metric inconsistencies**: The run-level occurred_events list is frequently incomplete or contradictory with per-turn artifacts (e.g., run-20260824-214357-01 omits 7 events). This suggests event tracking is unreliable.
+- **Rule enforcement variability**: The 25-point metric cap is inconsistently enforced (e.g., incident_pressure +33 in run-20260825-042646). Capability growth rules ("rates are floors") are often violated (e.g., flat turns in run-20260825-000221).
+- **Regime ambiguity**: The hidden trajectory regime is never disclosed, and observed paths often mismatch stated rules (e.g., post-rsi_onset growth below +6 in run-20260825-081558). This makes regime-specific analysis speculative.
+- **Cap-driven dynamics**: Large metric moves often hit exactly the 25-point cap (e.g., openweight_gap +25 in run-20260824-223419), suggesting cap enforcement overrides mechanistic logic.
+- **Narrative-metric misalignment**: In run-20260825-004558, sentiment is said to "fall" while it rises from 18 to 28. This indicates poor alignment between narrative and data.
+
+## Confidence Assessment
+
+Confidence is high in ensemble statistics (e.g., mean US capability 94.67, incident pressure 78.35) as they are computed deterministically. Confidence is moderate in causal claims from per-run analyses, as they are consistent across multiple runs (e.g., rsi_onset accelerates capability). Confidence is low in regime-specific dynamics due to hidden regime assignment and rule violations. Confidence is low in event sequences due to inconsistent logging. Confidence is very low in no-regret packages, as no combination of measures shows consistent benefit. The evidence is sufficient to answer the declared research questions, but the simulation artifacts contain enough noise and contradiction to warrant caution in overinterpreting individual run narratives.
