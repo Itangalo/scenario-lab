@@ -23,6 +23,8 @@ The story progresses in half-year segments, with H2 2026 as the starting point a
 
 Turn 1 (H2 2026) is a *shared* starting point for all three arms. It is called `turn-01`. It has a fictive key event, being a warning shot for massive cyber disruption.
 
+Turn 1 is split across three files, because the two-year commitment is named in turn 1 and is therefore the thing the reader's first choice decides. `turn-01/opening.md` holds what is fixed for everyone: the pinned event, the seeded world state, and the inherited portfolio the Union carries in. `turn-01/option-02-1.md` and `turn-01/option-02-2.md` hold the rest of the turn-1 response — the two-year commitment, the new measure, the priority and the prose. Each option file is a complete and valid turn-1 actor response with the shared portfolio included, so it can be handed to `pin-turn-1.py` unchanged; the portfolio is duplicated across them on purpose, and `opening.md` is where it is stated once for a reader.
+
 At the end of turn 1, the reader gets to choose between two key AI strategies for the EU, which branches the story. On the current arm there are thus two branches, but on all arms taken together, there are six branches. Note that both turn 1 and the available options are identical across the arms – even the metrics will be pinned across arms in turn 1. The options that start the six branches are called `option-02-A1`, `option-02-A2`, `option-02-V1`, `option-02-V2`, `option-02-P1` and `option-02-P2`.
 
 After the first choice, the story progresses four turns (two years). The turns are called `turn-02-A1`, `turn-03-A1`, `turn-04-A1` and `turn-05-A1` for the A1 branch, and so on. Then the reader is presented with another choice, again pointing the EU AI policy in one direction or the other. There are six sets of choices, one for each branch, creating twelve options (two per branch). The options are called `option-06-A11` and `option-06-A12` for the first branch, and so on.
@@ -35,7 +37,9 @@ Each turn and option has a directory `turn-NN-branchid/` or `option-NN-branchid/
 
 ## How options and paths are created
 
-**The options** are created by running (at least) ten instances of the turn leading up to it, collecting only the actor output. From these, two outputs are selected. These should be representative of two larger groups of outputs. The actor answers are collected by the special call used for only collecting actor output, not running the full turn.
+**The options** are created by running (at least) ten instances of the turn leading up to it, collecting only the actor output. From these, two outputs are selected. These should be representative of two larger groups of outputs.
+
+Where the draws do not fall into two groups, say so rather than inventing a split. The turn-1 pool of thirty put 28 draws in category 6 and 2 in category 4, and the two-year commitments barely varied at all — nearly every draw committed to sovereign capacity of some kind. The real choice sat in the measure, not the commitment: answer the attack now, or build something that outlasts it. The second option there is a minority draw and is presented as one. The actor answers are collected by the special call used for only collecting actor output, not running the full turn.
 
 All outputs are stored, also those not used as options. The plan is to use the answers for describing how common the two options are among the choices made in the simulation.
 
