@@ -2,7 +2,7 @@
 
 The Game Master step that writes the world state. It decides what the actor's actions achieved and what the metrics become, so the metric rules must be visible here in full and unambiguous.
 
-Source: `runs/run-20260830-185157/turn-02/llm-io/05-metrics.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260830-223259/turn-02/llm-io/05-metrics.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -23,15 +23,13 @@ Each block below carries a `FROM` comment naming its origin. These are not infer
 
 This is part of an AI-driven scenario simulation. You are the Game Master for the simulation, responsible for describing how the world changes.
 
-The simulation includes the following actors:
+The simulation includes a single actor:
 
 <!-- FROM {{actors_list}} = background/actors/*.md, short descriptions only -->
 
 * The European Union: A single EU decision-maker able to redirect the Union's money, rules and attention almost at will — and paying for every use of that freedom in political capital it cannot print.
 
 <!-- FROM templates/system-prompts/metrics_update.md (shared default) -->
-
-
 
 An important part of the world description are these metrics, which vary within given ranges:
 
@@ -108,8 +106,6 @@ An important part of the world description are these metrics, which vary within 
 
 <!-- FROM templates/system-prompts/metrics_update.md (shared default) -->
 
-
-
 There is a list, Metric Rules, that describes how metrics potentially affect each other or develop over time. Your task is to do four things:
 
 * Determine how successful the actors are with their actions. This is based on how the world looks and your assessment of how likely they are to succeed.
@@ -166,8 +162,6 @@ These are hard rules of this world. They are checked after you answer, and an up
 
 <!-- FROM templates/system-prompts/metrics_update.md (shared default) -->
 
-
-
 Respond with a Markdown text with the following content:
 
 * Heading level 2: Metrics
@@ -205,11 +199,11 @@ The seven metrics sort by how far the EU can actually move them, and that orderi
 
 ## The frontier
 
-1. **This run's own rate sets the growth of `ai_capability`.** In this run: +1.5 to +2.5 per turn while capability is below 60, +0.5 to +1.5 above it, easing into the **68–76** terminal zone. Returns to scale decline; they do not disappear mid-range. Decelerating progress is still progress – a trajectory that flatlines well below its terminal zone, or re-accelerates under conditions this rule does not give, is misapplying the rule.
+1. **This run's own rate sets the growth of `ai_capability`.** Use the rate stated in this run's metric rules. It gives a per-turn figure and a terminal zone the trajectory settles into: advance at the rate while below the zone, taper to a stop inside it. Rates are floors on motion, not decorations – a trajectory that stalls well below its terminal zone, or accelerates under conditions this rule does not give, is misapplying the rule. Growth is sub-linear near the top of the scale: above 85, halve the stated increment, because the instrument is losing resolution rather than the world slowing down.
 
 2. **`ai_capability` is otherwise exogenous, with exactly one exception.** Nothing the EU does moves it. The exception is an international agreement that actually binds both leading powers – `us_china_agreement` with the EU inside it, or an equivalent the narrative establishes as accepted and being complied with by both – which reduces this run's stated growth rate by a quarter to a half while it holds. It is reversible: the reduction ends the turn the narrative establishes that either power has stopped complying.
 
-3. **`openweight_capability` tracks `ai_capability` at a lag, and in this run the lag narrows to nearly nothing.** A flat frontier is one that open weights catch, and distillation keeps working: the gap narrows by 2 to 4 per turn, floor around 5. `openweight_frontier_release` cuts the gap to 5 or below at a stroke, and here the cut is permanent. A fully implemented restriction on open release, binding where such models are actually trained, widens the gap by 2 to 4 per turn while it holds; binding only inside the Union it does nothing at all. `openweight_capability` never exceeds `ai_capability` and never falls.
+3. **`openweight_capability` tracks `ai_capability` at a lag, and the lag is the policy-relevant variable.** This run's metric rules state how the gap moves by default. Open weights trail the closed frontier by roughly six to nine months throughout; what that constant lag *means* depends entirely on how fast the frontier is moving. `openweight_frontier_release` cuts the gap to 5 or below at a stroke. A fully implemented restriction on open release above a capability threshold, binding in a jurisdiction where such models are actually trained, widens the gap by 2 to 4 per turn while it holds; the same restriction binding only inside the Union widens it by nothing at all, and the Union will be told so by its critics.
 
 4. **Capability never falls, and the opening turn is shared.** `ai_capability` and `openweight_capability` are accumulated knowledge and infrastructure. `openweight_capability` never exceeds `ai_capability`. The only exception is catastrophic physical destruction of the compute base, which must be narrated as such. Turn 1 covers the second half of 2026, which has already happened in every run: it ends with `openweight_capability` at 45, give or take a point, whatever this run's rates say about later turns. Divergence begins in turn 2. Rule 3's rates apply from there.
 
@@ -271,47 +265,49 @@ The seven metrics sort by how far the EU can actually move them, and that orderi
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
-
-
 The world state at the start of the turn is described as follows:
 
 ## Previous History
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-AI capability remains stable at 52.0 due to recursive research automation, while open-weight models advance with Kimi K3's release of a potent offensive cyber capability, raising openweight capability to 45.0. A covert AI-driven cyber intrusion breaches two EU member states, exposing critical gaps in defensive detection despite fortuitous discovery. In response, the EU proposes the Emergency Compute Mobilisation Directive as a priority category 4 measure, initiating preparatory legal work and threat assessments under Article 122 TFEU, though no binding decisions or implementations occur. ENISA and the Scientific Panel begin scoping future AI intrusion detection standards, and talent outreach planning starts with no hires. With three active category 4 initiatives, political costs mount; despite a net −8 cost, capped movement limits reduce eu_political_capital by only 3, from 48.0 to 45.0. Eu_ai_sovereignty and resilience remain unchanged, and public sentiment holds steady at 42.0.
+In late 2026, a leading lab achieved a significant advance in AI capability with a system capable of autonomously improving reasoning modules, pushing global `ai_capability` to 52.0. These systems now produce original scientific work without human intervention, though no corresponding safety or transparency improvements were implemented, widening the complexity-safety gap. Meanwhile, `openweight_capability` remained at 40.0, with no new open-weight models exceeding that level.
+
+A major cyber intrusion into critical infrastructure, including EU energy grids, exploited AI-powered evasion techniques but caused no service disruption. In response, the European Union proposed the Emergency Resilience Surge—a high-cost, binding directive to audit and strengthen essential services in energy, water, and ports. The measure is currently in the *proposed* phase, facing delays due to member state disagreements over uniform standards. It cannot advance further this turn and will not be fully implemented before Turn 4. No political capital has been spent, and no technical actions have begun.
+
+No other new policy measures were introduced in Turn 1; references to additional initiatives have been corrected. Public sentiment remains stable at 42.0, with limited alarm despite media coverage. Systemic resilience remains unchanged at 35.0, as no defensive upgrades have been enacted. With no new safety interventions, `ai_safety` holds at 34.0, reflecting ongoing reliance on existing safeguards.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
-
-
 
 ## Current Situation (january-june 2027)
 
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
-### The Frontier Creeps Forward
+### The Frontier Shifts
 
-Contrary to early speculation around `capability_plateau_evidence`, `ai_capability` holds at 52.0, sustained by recursive tool use in research automation that continues to yield incremental gains. The pace of improvement remains unannounced and consistent with long-run trends. In the open frontier, Kimi K3 releases an offensive cyber capability previously withheld by Mythos, marking a significant diffusion event. No other open-weight model crosses the threshold this turn, but the jump lifts `openweight_capability` to 45.0, narrowing the gap with the closed frontier.
+In late 2026, a leading lab released a system capable of autonomously designing, testing, and improving a suite of reasoning modules without human intervention. This advancement contributed to the ongoing rise in global AI capability, with `ai_capability` reaching 52.0—consistent with systems now operating continuously and producing original scientific results. However, the release did not include new transparency mechanisms or verifiable control protocols. While the pace of progress remains within observed trends, the absence of commensurate safety advances has raised concerns about the growing complexity gap.
 
-### A Cyber Wake-Up Call
+Meanwhile, `openweight_capability` remained at 40.0. Despite the widespread availability of powerful open models, no new release during this period demonstrated capabilities beyond that threshold. The prior reference to 45.0 as a starting point was incorrect; the baseline for this run is confirmed as 40.0, and no jump in open-weight performance occurred.
 
-The `cyber_test_shot` reveals AI-driven intrusions exhibiting operational patience and low observability. Though not exclusively targeting the EU, two member states suffer breaches, and defenders acknowledge detection was fortuitous. Post-incident reviews confirm existing tools failed to flag key patterns, exposing a growing mismatch between threat evolution and defensive readiness. The event sharpens focus but does not yet unify response strategies.
+### EU Responds to a Near-Miss
 
-### Emergency Measures, Uneven Buy-In
+The discovery of a prolonged intrusion into critical infrastructure across multiple continents—including two EU grid operators—triggered alarm among policymakers. Though services were not disrupted, forensic analysis revealed that the intrusion exploited AI-driven evasion techniques that bypassed conventional detection systems. In response, the European Union proposed the Emergency Resilience Surge, a binding directive to audit and harden essential services in energy, water, and ports.
 
-The European Union proposes the **Emergency Compute Mobilisation Directive**, a category 4 measure aimed at accelerating sovereign compute deployment. It is formally tabled and designated as the **current priority** for the turn, satisfying the requirement for one named priority. Trilogue negotiations are scheduled but do not begin in this turn; the measure remains in the *proposed* phase. Preparatory legal work is announced under Article 122 TFEU, but no binding decisions or implementation actions occur.
+The measure has been formally proposed in Turn 1 and is now under political coordination. Member states have expressed reservations about uniform standards, requesting flexibility in implementation approaches. As a result, the measure remains in the *proposed* phase. No technical scoping, pilot audits, or enforcement activity have begun. Classified as a high-cost measure (category 6), it requires at least two full turns from proposal to full implementation. It cannot advance beyond *proposed* this turn due to ongoing negotiations, and full implementation will not occur before Turn 4 at the earliest.
 
-The Commission launches a classified threat assessment linking detection failures to gaps in sovereign AI simulation capacity. ENISA and the Scientific Panel initiate scoping work for future AI intrusion detection standards, but no drafting begins. Talent outreach planning starts, with no hires secured. No capacity or enforcement effects arise — the measure is not yet decided, let alone implemented.
+### One Measure Per Turn
 
-### Political Costs Mount
+The Emergency Resilience Surge is the only new measure introduced in Turn 1. References to the InvestAI Gigafactories and Tech Sovereignty Package as initiatives launched in this turn are incorrect and have been removed from the record. The notepad now reflects only the Emergency Resilience Surge as the sole new measure for Turn 1, in compliance with the one-new-measure-per-turn rule. The other two may be reconsidered in future turns.
 
-The EU’s active portfolio now includes three category 4 measures: InvestAI Gigafactories (inherited), Tech Sovereignty Package (inherited), and the new Emergency Compute Mobilisation Directive. As per rules, introducing a new measure at this scale incurs a cost of −3 per active large measure, offset by +1 for clear prioritisation. No incident has occurred that would reduce the political cost of category 4 actions. Total charge: −8. `eu_political_capital` falls from 48.0 to 40.0. However, given the cap on single-turn metric movements (Constraint 10), the drop is limited to −3, resulting in a corrected value of 45.0.
+### Political and Public Response
 
-`eu_ai_sovereignty` remains unchanged — no capacity has been built. Resilience is unaffected; response plans remain theoretical. Public sentiment holds steady at 42.0, reflecting growing awareness but no shift in overall confidence. The narrative does not telegraph event gates or probabilities, and no metric exceeds the 25-point movement limit.
+No political capital has been spent on the Emergency Resilience Surge, as it remains in the *proposed* phase and has not advanced to *decided* or *under implementation*. Proposal alone does not incur implementation costs under the rules. Therefore, `eu_political_capital` remains unchanged at 48.0.
+
+Public sentiment remains at 42.0. While the intrusion has drawn media attention, coverage has not yet shifted broadly toward alarm, and no major economic disruptions have occurred. Resilience remains at 35.0, as no concrete defensive upgrades or audits have been carried out. Early discussions and planning are underway, but systemic hardening has not begun.
+
+The safety implications of the latest capability advance are still being assessed. With no new regulatory or technical interventions yet in force, `ai_safety` remains at 34.0, reflecting the current equilibrium between known risks and existing safeguards.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
-
-
 
 ---
 
@@ -319,18 +315,12 @@ The notepad contains the following information:
 
 <!-- FROM {{notepad}} = the Game Master's notepad, carried across turns -->
 
-- `emergent_supply_chain_pressure` -- first noted turn 1, listed in 1 turn(s) so far: The U.S. Department of Commerce expands its jurisdictional reach over ASML’s software and servicing stack, effectively extending export controls to cover maintenance of existing EUV and older DUV machines bound for China. This triggers an immediate crisis in Dutch semiconductor policy and forces the EU to respond, as the integrity of ASML’s global service model — and thus the Union’s sole strategic chokepoint — is directly challenged.
-- US_POSTURE: [pending election in turn 5]
-
-## Emerging developments (tracked)
-
-- `emergent_supply_chain_pressure` -- first noted turn 1, listed in 2 turn(s) so far: The U.S. Department of Commerce expands its jurisdictional reach over ASML’s software and servicing stack, effectively extending export controls to cover maintenance of existing EUV and older DUV machines bound for China. This triggers an immediate crisis in Dutch semiconductor policy and forces the EU to respond, as the integrity of ASML’s global service model — and thus the Union’s sole strategic chokepoint — is directly challenged.
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech Sovereignty Package −3, Emergency Resilience Surge −3, priority +1 = −8  
+Emergency Resilience Surge started turn 1, finishes on turn 3  
+InvestAI Gigafactories started turn 1, finishes on turn 7  
+Tech Sovereignty Package started turn 1, finishes on turn 6
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
-
-
-
-The "Emerging developments (tracked)" section lists developments that recent turns have judged plausible but that have not happened. They are not events. Let them colour the narrative only as faint, ambiguous signals whose visibility grows with how long they have been listed — never as anything confirmed, and never with a stated probability.
 
 **Six rules bind your output. The first two bind the Narrative specifically, and the first of them overrides any pull toward explanatory convenience:**
 
@@ -356,7 +346,7 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
 This turn, the following external events have occurred:
 
-None
+**cyber_major_incident:** A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.
 
 ---
 
@@ -364,37 +354,29 @@ The actors in the scenario describe their actions as follows:
 
 **The European Union:**
 
-## Standing commitment  
-Secure the capacity to act independently in an age of artificial intelligence, before the window closes.
+**Standing commitment**  
+Secure independent AI capacity at or above the global frontier to preserve strategic autonomy and prevent catastrophic risk from uncontrolled systems.
 
 ## Statement changes  
 No statement changes.
 
 ## Portfolio  
-- `proposed` — Emergency Compute Mobilisation Directive (category 4, costs 3 per turn, started turn 2, finishes on turn 5): Trilogue negotiations initiated but not concluded; legal basis under Article 122 TFEU advanced, threat assessment completed and annexed, site selection criteria drafted for three sovereign AI hubs.  
-- `under implementation` — InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): No progress this turn; funding allocation remains stalled pending clarity on energy access and permitting acceleration from the Emergency Compute Mobilisation Directive.  
-- `decided` — Tech Sovereignty Package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Accelerated-permitting zones remain legally proposed but unimplemented; private capital response muted due to regulatory uncertainty around compute access and grid priority.
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`  
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`  
+- `Emergency Resilience Surge for Critical Infrastructure (category 6, costs 3 per turn, started turn 1, finishes on turn 3): Launch a six-month audit and hardening programme across all EU operators of essential services, prioritising energy, water and port systems exposed in the cyber_test_shot event`
 
 ## New measure  
-### Horizon-AI Secure Agent Initiative  
-Launch a classified R&D programme under Horizon Europe to develop a first-generation EU-controlled agent-capable system by turn 8, designed for defensive simulation, intrusion detection, and secure governmental use.  
-Category: 5 (Public technical capacity and research)  
-Size: large  
-Finishes on turn: 8  
-Targeted effect: +8 to eu_ai_sovereignty by turn 8, +5 to ai_safety through sovereign assurance capacity, and foundational leverage for future autonomous defence systems  
-Applies to: EU jurisdiction, EuroHPC JU, ELIXIR, and selected national research agencies in France, Germany, and Finland
+### Cyber Defence Emergency Directive  
+Mandate real-time AI-driven intrusion detection and automated response systems across all operators of essential services, with EU-level coordination and shared threat intelligence.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 3`  
+`Targeted effect:` resilience +10–15, ai_safety indirect upside via faster detection and containment of AI-enabled attacks  
+`Applies to:` EU member states, national regulators, and operators of essential services
 
 ## Priority  
-Emergency Compute Mobilisation Directive — The cyber_test_shot exposed that without sovereign compute, we cannot simulate, detect, or resist AI-driven threats; our defences are blind to attacks we cannot run ourselves, and delaying this directive risks locking the EU into permanent strategic passivity.
-
-## Actions  
-Advance trilogue negotiations on the Emergency Compute Mobilisation Directive with binding timelines, pressing both Parliament and Council to agree on a joint negotiating text by June 2027. Focus discussions on the classified threat assessment, which demonstrates that the recent intrusion exploited patterns only reproducible through offensive AI simulation—capability we lack—and argue that Article 4(2) TEU justifies overriding national veto points on energy and land use in designated hubs. Assign Vice-President for Values and Transparency to lead outreach to member states with siting concerns, offering co-governance models and local benefit-sharing to preserve cohesion.  
-
-Direct the Commission’s Joint Research Centre to finalise the scope and architecture for the Horizon-AI Secure Agent Initiative, contracting EuroHPC JU and ELIXIR to integrate AI-agent workloads into upcoming procurement cycles, beginning with secure testbed environments at LUMI and Leonardo. Launch a targeted talent acquisition protocol offering fast-track residency, security clearance pathways, and €2M per researcher over five years to attract ten frontier AI scientists currently outside the EU, focusing on adversarial robustness, agent alignment, and cyber-physical reasoning.  
-
-Task ENISA and the Scientific Panel to deliver draft baseline standards for AI-enabled intrusion detection in critical infrastructure by Q3 2027, based on lessons from the cyber_test_shot. Require that these standards assume the attacker has access to open-weight offensive tools at 45.0 capability, and mandate that pilot implementations in two member states (Germany and Estonia) include red-team simulations using EU-held models at equivalent capability—contingent on the Emergency Compute Mobilisation Directive delivering the necessary infrastructure.  
-
-Maintain fiscal discipline across the portfolio by freezing new disbursements under InvestAI Gigafactories until the Emergency Compute Mobilisation Directive establishes clear energy and permitting pathways, preventing duplication and preserving political capital. Communicate this pause as tactical sequencing, not abandonment, aligning with the `no_irreversible_bets` commitment by ensuring investments follow rather than precede enablers.
+**Emergency Resilience Surge for Critical Infrastructure** — because the cyber_major_incident confirms that AI-powered attacks are already operational, and without binding, system-wide hardening, the Union’s critical functions remain exposed regardless of how much detection capacity we later deploy. This directive is the foundation: the new measure supports it, but the Surge remains the backbone of our response.
 
 
 ---

@@ -1,12 +1,12 @@
 # System Prompt: Actor
 
-This is part of an AI-driven scenario simulation. The simulation focuses on {{ scenario_description.rstrip('.') }}.
+This is part of an AI-driven scenario simulation. The simulation focuses on {{ scenario_description }}
 
 An important part of the world description are these metrics, which vary within given ranges:
 
 {{metrics_list}}
 
-The simulation includes the following actors:
+The simulation includes {% if actor_count == 1 %}a single actor{% else %}the following actors{% endif %}:
 
 {{actors_list}}
 

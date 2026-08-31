@@ -186,6 +186,11 @@ def annotate(prompt: str, provenance: Optional[dict]) -> str:
     Not inferred from the finished text: the spans were recorded by the prompt
     builder as it interpolated each value, so a one-line heading inside an
     interpolated block is attributed as confidently as a page of it.
+
+    Blank lines at a block's edges are stripped. They carry no meaning once the
+    blocks are separated -- the header says so -- and leaving them in stacked up
+    with the blank line between blocks, so a prompt that broke mid-sentence at an
+    interpolation reappeared three blank lines below where it left off.
     """
     if provenance is None:
         return (
@@ -202,17 +207,17 @@ def annotate(prompt: str, provenance: Optional[dict]) -> str:
             chunk = prompt[cursor : span["start"]]
             if chunk.strip():
                 out.append(f"<!-- FROM {template} -->")
-                out.append(chunk.rstrip("\n"))
+                out.append(chunk.strip("\n"))
         chunk = prompt[span["start"] : span["end"]]
         if chunk.strip():
             out.append(f"<!-- FROM {{{{{span['variable']}}}}} = {span['source']} -->")
-            out.append(chunk.rstrip("\n"))
+            out.append(chunk.strip("\n"))
         cursor = max(cursor, span["end"])
     if cursor < len(prompt):
         chunk = prompt[cursor:]
         if chunk.strip():
             out.append(f"<!-- FROM {template} -->")
-            out.append(chunk.rstrip("\n"))
+            out.append(chunk.strip("\n"))
     return "\n\n".join(out)
 
 

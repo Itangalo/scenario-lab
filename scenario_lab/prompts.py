@@ -19,6 +19,23 @@ def _prompt_key(text: str) -> str:
     return hashlib.sha1(text.encode("utf-8")).hexdigest()
 
 
+def _as_sentence(text: str) -> str:
+    """Give a scenario description its own terminating full stop.
+
+    The templates used to write `{{ scenario_description.rstrip('.') }}.`, which
+    reads the same but leaves the final stop belonging to the template while the
+    context value still carries one. The provenance spans are found by locating
+    the context value in the rendered text, so that stop was attributed to the
+    description anyway -- swallowing the template's own character and leaving the
+    sign-off documents showing a sentence that stops dead at "focuses on". Adding
+    the stop here keeps the value and the rendered text identical.
+    """
+    text = text.strip()
+    if not text or text.endswith((".", "!", "?", ":")):
+        return text
+    return text + "."
+
+
 class PromptBuilder:
     """Constructs prompts from templates and scenario data."""
 
@@ -147,8 +164,11 @@ class PromptBuilder:
         """
         context: dict[str, Any] = {
             "scenario_name": self.scenario.config.name,
-            "scenario_description": self.scenario.config.description,
+            "scenario_description": _as_sentence(self.scenario.config.description),
             "actors_list": self._format_actors_list(),
+            # So a template can say "a single actor" rather than announce a
+            # list of one. Scenarios with one actor are ordinary here.
+            "actor_count": len(self.scenario.actors),
             "metrics_list": self._format_metrics_list(),
             "constitution": self.scenario.constitution or "",
             "output_language": self.scenario.config.output_language,
@@ -322,7 +342,21 @@ class PromptBuilder:
                     break
                 spans.append({"start": index, "end": index + len(value), "variable": name, "source": source})
                 start = index + len(value)
-        spans.sort(key=lambda s: s["start"])
+        # Widest first at a shared start, so containment below keeps the outer.
+        spans.sort(key=lambda s: (s["start"], -(s["end"] - s["start"])))
+        # Values nest: an actor's short description is also a substring of the
+        # actors list built from it. Reporting both spans made the sign-off
+        # documents print the short description twice, once inside the roster
+        # and once on its own. The enclosing span is the one that says where the
+        # text in the prompt actually came from, so the nested one is dropped.
+        outermost: list[dict] = []
+        reach = -1
+        for span in spans:
+            if span["end"] <= reach:
+                continue
+            outermost.append(span)
+            reach = max(reach, span["end"])
+        spans = outermost
         self._provenance[_prompt_key(rendered)] = {
             "template": self._template_label,
             "spans": spans,

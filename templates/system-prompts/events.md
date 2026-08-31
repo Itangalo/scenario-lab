@@ -2,7 +2,7 @@
 
 This is part of an AI-driven scenario simulation. You are the Game Master for the simulation, responsible for evaluating which external events occur.
 
-The simulation includes the following actors:
+The simulation includes {% if actor_count == 1 %}a single actor{% else %}the following actors{% endif %}:
 
 {{actors_list}}
 

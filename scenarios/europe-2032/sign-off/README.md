@@ -1,6 +1,6 @@
 # Prompt sign-off
 
-Generated from `run-20260830-185157`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
+Generated from `run-20260830-223259`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
 
 Read them once when the scenario is built, and again after any change to the templates, the scenario's prompt overrides, or the background files. Sign off by saying so in the scenario's design notes, with the date.
 
@@ -29,17 +29,9 @@ Every heading in the scenario's background and definition files, and whether the
 | `background/actors/eu.md` | How every measure is judged | **NO** |
 | `background/actors/eu.md` | Implementation phases | **NO** |
 | `background/actors/eu.md` | Scope | **NO** |
-| `background/actors/eu.md` | What you do not know | **NO** |
 | `background/actors/eu.md` | Statements | yes |
 | `background/actors/eu.md` | Behavioral traits | yes |
-| `background/context.md` | What this simulation is for | yes |
-| `background/context.md` | The starting point | yes |
-| `background/context.md` | The frontier | yes |
-| `background/context.md` | Washington took control of frontier models in three months | yes |
-| `background/context.md` | Incidents and new capabilities | yes |
-| `background/context.md` | Where the EU stands | yes |
-| `background/context.md` | What is genuinely contested | yes |
-| `background/context.md` | The Union's problem | yes |
+| `background/context.md` | (top of file) | yes |
 | `constitution.md` | Invariants | yes |
 | `constitution.md` | Modelling choices | yes |
 | `events.md` | The gate mechanism | **NO** |
@@ -67,7 +59,7 @@ Every heading in the scenario's background and definition files, and whether the
 | `events.md` | Evidence of a Bending Curve | **NO** |
 | `events.md` | Reasoning Stops Being Legible | **NO** |
 | `events.md` | Medicine Delivers | **NO** |
-| `events.md` | Open Weights Reach the Frontier | **NO** |
+| `events.md` | Open Weights Reach the Frontier | yes |
 | `events.md` | Loss-of-Control Incident | yes |
 | `events.md` | Assurance Breakthrough | yes |
 | `events.md` | Labour Displacement Wave | **NO** |
@@ -85,7 +77,7 @@ Every heading in the scenario's background and definition files, and whether the
 | `events.md` | Adoption Delivers | yes |
 | `events.md` | Automated Decision Scandal | yes |
 | `metric-rules.md` | Metric Rules | yes |
-| `metric-rules.md` | The frontier | **NO** |
+| `metric-rules.md` | The frontier | yes |
 | `metric-rules.md` | The incident engine | yes |
 | `metric-rules.md` | The Union's two stocks | yes |
 | `metric-rules.md` | The public and the world's mood | yes |

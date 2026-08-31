@@ -1,6 +1,6 @@
 # System Prompt: Actor
 
-This is part of an AI-driven scenario simulation. The simulation focuses on {{scenario_description}}.
+This is part of an AI-driven scenario simulation. The simulation focuses on {{scenario_description}}
 
 An important part of the world description are these metrics, which vary within given ranges:
 

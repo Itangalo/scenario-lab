@@ -2,7 +2,7 @@
 
 This is part of an AI-driven scenario simulation. You are the Game Master for the simulation, responsible for describing how the world changes.
 
-The simulation includes the following actors:
+The simulation includes {% if actor_count == 1 %}a single actor{% else %}the following actors{% endif %}:
 
 {{actors_list}}
 
