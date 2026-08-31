@@ -69,12 +69,7 @@ A measure is **in flight** from the turn it is proposed until it reaches its fin
     - abandoned measure: nothing further
     - finished measure: nothing further, and it leaves the portfolio the turn after it finishes — it is no longer in flight, so it is no longer charged and no longer listed
 
-    *What discounts it.* Start from the event record, which is a lookup and not a matter of opinion. Every event that lowers a price says so on its own entry as `Cheapens: category N by X for Y turns`, and the events that have fired are listed for you.
-    - for each measure, subtract every open `Cheapens:` line naming its category
-    - two reaching the same measure stack
-    - then, where the narrative supports it, discount further under rule 13 and say in the same line what earned it
-    - no floor: a measure can reach zero and cost nothing that turn
-    - nothing raises a price except being the priority
+    *Nothing discounts it.* The per-turn charge is 3 for a large measure and 2 for a small one, every turn it is in flight, whatever the world has made easier. Timing is rewarded once, when a measure is proposed, under rule 13 — never as a standing reduction. A charge line that prices a measure below its size is wrong.
 
     *When it finishes.* Every measure carries `costs N per turn, started turn X, finishes on turn Y` from the moment it is proposed. Y is judged once, from how large the thing actually is — a directive needing drafting and a vote in two or three turns, a capability that has to be built and staffed in six or more — and **copied forward unchanged after that. Do not recompute it.** Three things may move it, each written into the portfolio line with its reason:
     - named priority: may pull it in by one turn
@@ -98,15 +93,17 @@ A measure is **in flight** from the turn it is proposed until it reaches its fin
     - internal origin — an EU-deployed system, a regulatory failure, an automated-decision scandal: −10 to −20, regardless of anything else
     - **Damper**, where the same class of harm recurs and the response demonstrably did not work: full on the first occurrence, half on the second, none on the third, a penalty thereafter
 
-13. **What makes a measure cheaper to adopt.** Two sources. The first is a lookup and is not optional; the second is yours to judge.
+13. **Timing is paid once, at proposal.** A measure proposed into a world that has just been shown why it is needed is easier to carry, and that is worth a one-off gain in `eu_political_capital` in the turn it is proposed. It is never a reduction in the measure's per-turn charge.
 
-    *Realised harm*, which is the largest and most reliable discount:
-    - the turn after an incident of the class a measure addresses: adoption cost falls by roughly half
-    - the two turns after that: by roughly a quarter
+    *From the event record*, which is a lookup and not a matter of opinion. Events carry a `Bonus:` line naming the categories they reward, by how much, and for how long.
+    - a new measure whose category is named by an open `Bonus:` line: that many points of `eu_political_capital`, once, in the turn it is proposed
+    - two open `Bonus:` lines reaching the same measure stack, and a measure answering two recent shocks can reach +11 or more; that is intended, and it is what a Union acting on an argument the world has just made for it looks like
+    - the window runs from the turn the event fired; outside it there is no bonus
+    - the figures range from +2 to +8 and are the old per-turn discount's whole worth, paid at once: a shock that made a category easier for three turns is worth what three turns of it would have been
 
-    *The narrative as it actually stands*, where the world has plainly come round to a measure without an incident having landed. A precursor that frightened people, sustained public pressure, an ally moving first, a rival's failure making the case for you, a scandal in a neighbouring domain — any of these may lower a price, by as much as the narrative genuinely supports. Say in one clause what earned the discount, so the reason is on the record and can be read back.
+    *From the narrative*, judged. Where the world has plainly come round to a measure with no event behind it — a precursor that frightened people, sustained public pressure, an ally moving first, a rival's failure making the case for you — a one-off +1 to +3 is available. Say in one clause what earned it, so the reason is on the record and can be read back.
 
-    Realised harm is not the only thing that makes action cheap, and a measure the world is already asking for should not be priced as though nobody had heard of it. Nothing raises a price except being the priority. Against rule 12 this still cuts both ways — waiting can make the next measure cheaper, acting early makes the shock itself strengthen you — and neither dominates.
+    Against rule 12 this still cuts both ways: acting after the harm is rewarded once here, while having acted before it is rewarded there, and neither dominates.
 
 ## The public and the world's mood
 
@@ -118,8 +115,9 @@ A measure is **in flight** from the turn it is proposed until it reaches its fin
     - a finished category 7 or 9 measure holding: a further +2 to +6
 
 15. **Sentiment sets what is affordable, in both directions.** Not a goodness score: a soured public enlarges the room to restrict and simultaneously makes every diffusion and compute measure expensive.
-    - below 40: categories 1 and 3 cost roughly half; categories 4 and 9 cost roughly half again as much
+    - below 40: a new measure in category 1 or 3 earns a one-off +1 to +3 at proposal; one in category 4 or 9 takes a one-off −1 to −3
     - above 60: the reverse
+    - Like rule 13 this lands once, at proposal. It never changes the per-turn charge.
 
 16. **Diffusion cuts both ways.**
     - category 9 measures: raise `public_sentiment` and the economic case for everything else, and raise the frequency and severity of misuse and cyber events, because there is more surface to attack

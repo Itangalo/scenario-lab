@@ -16,7 +16,11 @@ plateau-rate opening turn on the one metric the arms exist to separate.
 Usage:
     python scenarios/europe-2032/story/pin-turn-1.py \
         scenarios/europe-2032/variants/acceleration.yaml \
-        scenarios/europe-2032/story/turn-01/opening.md 20261231
+        scenarios/europe-2032/story/turn-01/option-02-1.md 20261231 5
+
+The optional fourth argument is how many turns to run; turn 1 is pinned and
+the rest proceed normally. Pass an option file rather than opening.md: the
+option is the complete turn-1 response, opening.md only its shared frame.
 """
 
 import sys
@@ -28,6 +32,9 @@ sys.path.insert(0, str(REPO))
 from scenario_lab import orchestrator as orch  # noqa: E402
 
 scenario_path, pinned_path, seed = sys.argv[1], sys.argv[2], sys.argv[3]
+# Turn 1 is pinned; any turns beyond it run normally, which is how a branch
+# is carried forward from the reader's choice. Defaults to turn 1 alone.
+turns = sys.argv[4] if len(sys.argv) > 4 else "1"
 PINNED = Path(pinned_path).read_text()
 OPENING = "cyber_test_shot"
 
@@ -63,5 +70,5 @@ orch.Orchestrator._run_actors_step = _pinned_actors_step
 
 from scenario_lab.cli import main  # noqa: E402
 
-sys.argv = ["cli", "run", scenario_path, "--turns", "1", "--seed", seed, "--no-progress"]
+sys.argv = ["cli", "run", scenario_path, "--turns", turns, "--seed", seed, "--no-progress"]
 main()
