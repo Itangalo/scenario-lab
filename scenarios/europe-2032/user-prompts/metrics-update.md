@@ -44,15 +44,15 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    Recompute that total every turn from the portfolio as it now stands. It changes when a measure is added and when one finishes, and a total carried forward unchanged while the portfolio grew is this rule being skipped.
 
-4b. **Then pay the proposal bonus, if this turn's new measure earned one.** This is a separate, one-off addition to `eu_political_capital` under metric rule 13, paid in the turn a measure is proposed and never again. It does not touch the charge above.
+4b. **Then judge the proposal bonus, if this turn's new measure earned one.** A separate, one-off addition to `eu_political_capital` under metric rule 13, paid in the turn a measure is proposed and never again. It does not touch the charge above.
 
-   Events carry a `Bonus:` line naming the categories they reward, by how much, and for how long. For the measure proposed **this turn**, find every event whose window is still open and whose `Bonus:` names that measure's category, and add those points. Two stack. If the world has plainly come round to the measure with no event behind it, a one-off +2 to +4 is available on your own judgement — say in one clause what earned it.
+   Ask: **in the last three turns, did anything happen that this measure would have helped with?** Events carry a `Makes the case for:` line naming the categories they argued for and for how long — that tells you whether an argument is open. What it is worth is your judgement, on how big the event was, how large the measure is, and how long ago it happened. **Typically +1 to +4**, the top of it for a large measure answering a severe, recent shock directly. Several open arguments pointing at one measure are judged together as a single figure, not summed.
 
-   Write it as its own Notepad line, or `PROPOSAL BONUS: none` when there is none:
+   Write it as its own Notepad line, with the reasoning visible, or `PROPOSAL BONUS: none` when nothing argued for it:
 
-   `PROPOSAL BONUS: Cyber Shield (cat 6) +3 (cyber_test_shot, fired t1, window 3) +6 (cyber_major_incident, fired t3, window 3) = +9`
+   `PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_major_incident landed last turn and this answers it directly`
 
-   A measure proposed in the turn after an incident of its own class, with no bonus recorded, is this rule being skipped. Under the previous per-turn version it was skipped in 160 of 166 chances, which is why it now lands once, at a moment you are already reasoning about this measure.
+   Two things this rule is not. It is not a lookup: no table gives you the number, and a figure with no reason beside it is wrong. And it is not automatic: a small measure gesturing at an old event earns +1 or nothing at all, and `none` is the right answer more often than not.
 
 5. **A finishing turn moves only when something moved it.** The portfolio carries a stated finishing turn per measure, set when the measure was proposed. Copy them forward as they stand. If a measure's finishing turn should change — pushed by being the priority, slipping through neglect, delayed or accelerated by an event — say so in the Narrative in the same breath as the reason, and write the new turn. A finishing turn that drifts with no reason given is an error.
 6. Once `us_election_2028` has fired, write the resulting `US_POSTURE: CONSOLIDATION`, `US_POSTURE: ALLIANCE` or `US_POSTURE: RETRENCHMENT` line into the world state for that turn, and carry the same line in the Notepad every turn thereafter. It is a standing condition of the world that metric rule 18 reads each turn, not a one-off narrative beat.

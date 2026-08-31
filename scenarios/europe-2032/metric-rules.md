@@ -82,7 +82,7 @@ A measure is **in flight** from the turn it is proposed until it reaches its fin
 
 11. **`eu_political_capital` recovers from results and erodes from their absence.** There is no drift back toward 48.
     - a measure reaching its finishing turn: +4 to +8
-    - a measure visibly working when an incident it addresses occurs: +8 to +15
+    - a measure in flight or finished that visibly blunts an incident when it lands: +1 to +7, judged the same way as rule 13 — the bigger the event and the larger the measure, the bigger the gain. This is the mirror of rule 13: that one pays for acting after the harm, this one for having already acted.
     - a measure abandoned, a deadline missed, a proposal publicly defeated: −5 to −12
     - nothing in flight: −3
     - a live class of harm sitting unaddressed: a further −2
@@ -93,15 +93,17 @@ A measure is **in flight** from the turn it is proposed until it reaches its fin
     - internal origin — an EU-deployed system, a regulatory failure, an automated-decision scandal: −10 to −20, regardless of anything else
     - **Damper**, where the same class of harm recurs and the response demonstrably did not work: full on the first occurrence, half on the second, none on the third, a penalty thereafter
 
-13. **Timing is paid once, at proposal.** A measure proposed into a world that has just been shown why it is needed is easier to carry, and that is worth a one-off gain in `eu_political_capital` in the turn it is proposed. It is never a reduction in the measure's per-turn charge.
+13. **Timing is paid once, at proposal, and it is judged.** A measure proposed into a world that has just been shown why it is needed is easier to carry. That is worth a one-off gain in `eu_political_capital` in the turn it is proposed, and it is never a reduction in the measure's per-turn charge.
 
-    *From the event record*, which is a lookup and not a matter of opinion. Events carry a `Bonus:` line naming the categories they reward, by how much, and for how long.
-    - a new measure whose category is named by an open `Bonus:` line: that many points of `eu_political_capital`, once, in the turn it is proposed
-    - two open `Bonus:` lines reaching the same measure stack, and a measure answering two recent shocks can reach +11 or more; that is intended, and it is what a Union acting on an argument the world has just made for it looks like
-    - the window runs from the turn the event fired; outside it there is no bonus
-    - the figures range from +2 to +8 and are the old per-turn discount's whole worth, paid at once: a shock that made a category easier for three turns is worth what three turns of it would have been
+    Ask one question: **in the last three turns, did anything happen that this measure would have helped with?** Events carry a `Makes the case for:` line naming the categories they have argued for and for how long, which tells you whether an argument is open and for what. What it is worth is yours to judge, on three things:
 
-    *From the narrative*, judged. Where the world has plainly come round to a measure with no event behind it — a precursor that frightened people, sustained public pressure, an ally moving first, a rival's failure making the case for you — a one-off +1 to +3 is available. Say in one clause what earned it, so the reason is on the record and can be read back.
+    - **how big the event was** — a warning shot argues for less than a major incident, and a major incident for less than a catastrophe
+    - **how large the measure is** — a serious instrument answering the moment is worth more than a gesture at it
+    - **how long ago it happened** — full value in the turn after, less the turn after that, little by the third
+
+    **Typically +1 to +4. Reserve the top of that for a large measure answering a severe, recent shock directly.** Where several open arguments point at the same measure, judge them together as one figure rather than adding them up; two shocks make the case more strongly than one, not twice as strongly.
+
+    Where the world has plainly come round to a measure with no event behind it at all — a precursor that frightened people, sustained public pressure, an ally moving first — the same range is available on your own reading. Say in one clause what earned it, so the reason is on the record and can be read back.
 
     Against rule 12 this still cuts both ways: acting after the harm is rewarded once here, while having acted before it is rewarded there, and neither dominates.
 

@@ -23,9 +23,9 @@ Apply modifiers exactly as written: "add 8 points" means +0.08 to the stated fig
 
 ## What an event does to the price of a measure
 
-Metric rule 10 charges political capital for every measure in flight, every turn, and nothing lowers that charge. What an event can do is make a measure easier to *start*, and **`Bonus:` on an event is what does it** – it names the measure categories the event rewards, by how many points of `eu_political_capital`, and for how many turns after it fires. An incident that proves the Union was right to be building something does not make that thing cheaper in euros; it buys the argument for it, once, at the moment the Union commits.
+Metric rule 10 charges political capital for every measure in flight, every turn, and nothing lowers that charge. What an event can do is make a measure easier to *start*, and **`Makes the case for:` on an event is what does it** – it names the measure categories the event has just argued for, and for how many turns the argument stays fresh. An incident that proves the Union was right to be building something does not make that thing cheaper in euros; it buys the argument for it, once, at the moment the Union commits. How much it is worth is a judgement, not a table: rule 13 gives the range.
 
-Read it off the event record rather than judging it, and apply it **once**: for the measure proposed this turn, take every `Bonus:` naming its category whose window is still open, and add those points to `eu_political_capital` in that turn alone. Two reaching the same measure stack. It is paid at proposal and never again, and it leaves the per-turn charge untouched.
+The event record says *whether* an argument is open, and the categories say *for what*; rule 13 says what it is worth. It is paid once, in the turn the measure is proposed, and it leaves the per-turn charge untouched.
 
 Not every event has one. The three 2028 election outcomes are standing postures and belong to metric rule 18 rather than here, and `member_state_defection` makes nothing easier.
 
@@ -56,7 +56,7 @@ Weigh them by reading the campaign, not by counting events. The three campaign e
 **Condition:** Fires in turn 1 and only in turn 1. This is the scenario's fixed opening event: it occurs in every run without exception, and is never evaluated again.
 **Probability:** 100% in turn 1. Not eligible thereafter.
 **Can repeat:** No
-**Bonus:** +3 to a new measure in category 1 or 6, proposed within 3 turns
+**Makes the case for:** categories 1 and 6, for 3 turns
 **Description:** In the autumn of 2026 an intrusion is discovered across electricity transmission operators on three continents, together with a large container port authority and a regional water utility. Two of the affected grid operators are in EU member states, but the deepest access is elsewhere, and no jurisdiction is the evident target. The intruders had been present for weeks. They were found by accident, during an unrelated audit, and the defenders' own retrospectives concede that existing detection would not have caught them.
 
 What makes it land is what did not happen. The intruders reached the point where they could have acted: protection relays mapped, credentials for breaker control obtained, tooling staged and in several cases left behind in plain sight. Nothing was actuated. There is no ransom demand, no claim of responsibility, no exfiltration of anything worth selling. Outages are brief and local, caused by containment rather than by the attack.
@@ -70,7 +70,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. Candidates with a serious path to the nomination run explicitly against AI. This is campaign evidence, not a mechanism: it decides nothing on its own, and weighs on the 2028 outcome only as one signal among many.
 **Probability:** 25%. Add 20 points if `public_sentiment` is below 30. Add 15 points if `labour_displacement` has occurred. Add 10 points if `backlash_physical` has occurred.
 **Can repeat:** No
-**Bonus:** +2 to a new measure in category 3, proposed within 2 turns
+**Makes the case for:** category 3, for 2 turns
 **Description:** Moratoriums on data centres, restrictions on AI in schools and hiring, and protection for displaced workers move from the fringe to the platform, on both left and right. Polling shows the position is popular well beyond the activists, and candidates who hedged start to reposition.
 
 ## Security Hawks Set the Terms
@@ -78,7 +78,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. The contest with China becomes the frame through which AI is discussed, and the candidates compete on toughness. This is campaign evidence, not a mechanism: it decides nothing on its own, and weighs on the 2028 outcome only as one signal among many.
 **Probability:** 30%. Add 20 points if a Taiwan event has occurred in the previous four completed turns. Add 10 points if `ai_capability` is above 65. Add 10 points if `export_control_escalation` has occurred in the previous four completed turns.
 **Can repeat:** No
-**Bonus:** +2 to a new measure in category 4, proposed within 2 turns
+**Makes the case for:** category 4, for 2 turns
 **Description:** Both campaigns converge on the position that the United States must win, that the lead is fragile, and that anything shared with anyone is a lead surrendered. Arguments for restraint are recast as arguments for losing.
 
 ## The Alliance Argument Gains Ground
@@ -86,7 +86,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. A serious argument takes hold that a coalition beats a fortress. This is campaign evidence, not a mechanism: it decides nothing on its own, and weighs on the 2028 outcome only as one signal among many.
 **Probability:** 20%. Add 15 points if `eu_access_secured`, `middle_power_coalition` or a finished category 8 measure has given Washington something it needs from the Union. Add 10 points if a shock landed on both sides of the Atlantic in the previous four completed turns. Add 10 points if `eu_ai_sovereignty` is above 35.
 **Can repeat:** No
-**Bonus:** +2 to a new measure in category 8, proposed within 2 turns
+**Makes the case for:** category 8, for 2 turns
 **Description:** A coalition of defence, intelligence and industrial voices argues that a hollowed-out Europe is a strategic liability, that allied capacity is a force multiplier rather than a leak, and that the current arrangement is producing dependency without loyalty. It is not the loudest argument in the campaign, but it stops being unrespectable.
 
 ## The 2028 US Presidential Election – Consolidation
@@ -115,7 +115,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Always eligible; list this event every turn. The gate is open if `cyber_test_shot` occurred in any of the previous 3 completed turns, or while `openweight_capability` is at or above 55 – proliferated offensive capability is its own precursor. Otherwise the gate is shut. That choice sets which probability applies, never whether the event is evaluated.
 **Probability:** Gate open: 20%. Gate shut: 6%. Add 8 points if `openweight_capability` is above 65. Add 5 points if a finished category 9 measure has broadened public-sector adoption, because there is more surface to attack. Halve if a finished category 6 measure covers cyber hardening of critical services.
 **Can repeat:** Yes
-**Bonus:** +6 to a new measure in category 6; +3 to a new measure in category 1, proposed within 3 turns
+**Makes the case for:** categories 1 and 6, for 3 turns
 **Description:** A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.
 
 ## Defensive Breakthrough
@@ -123,7 +123,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn. More likely where assurance work and defensive tooling are actually being funded.
 **Probability:** 8%. Add 6 points if `ai_safety` is above 50. Add 5 points if a finished category 6 measure covers cyber.
 **Can repeat:** Yes
-**Bonus:** +2 to a new measure in category 6, proposed within 2 turns
+**Makes the case for:** category 6, for 2 turns
 **Description:** Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.
 
 ## Human-Infective Design Demonstrated
@@ -131,7 +131,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn. Well past the 2026 phage results, and more likely as capability rises and as capable models proliferate.
 **Probability:** 8%. Add 6 points if `openweight_capability` is above 55. Add 5 points if `ai_capability` is above 65.
 **Can repeat:** Yes
-**Bonus:** +3 to a new measure in category 1, 3 or 6, proposed within 3 turns
+**Makes the case for:** categories 1, 3 and 6, for 3 turns
 **Description:** A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. **This is a precursor: it opens the bio gate for the next 4 turns.**
 
 ## Biological Incident
@@ -139,7 +139,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Always eligible; list this event every turn. The gate is open if `bio_uplift_findings` occurred in any of the previous 4 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated.
 **Probability:** Gate open: 9%. Gate shut: 1%. Halve if a finished category 3 measure covers biological design tools or DNA synthesis screening, and halve again if a finished category 6 measure covers biological detection and response.
 **Can repeat:** No
-**Bonus:** +8 to a new measure in category 3 or 6, proposed within 4 turns
+**Makes the case for:** categories 3 and 6, for 4 turns
 **Description:** A real biological incident with model involvement: a deliberate release or a laboratory escape involving a designed or modified agent. Casualties are real, containment runs for weeks, and every argument about AI risk in every jurisdiction is reset by it.
 
 ## Evaluation Anomalies Surface
@@ -147,7 +147,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn. Requires that frontier laboratories are running large training runs, which is true throughout unless `ai_investment_collapse` has occurred in the previous two completed turns.
 **Probability:** 15%.
 **Can repeat:** Yes
-**Bonus:** +2 to a new measure in category 1, proposed within 2 turns
+**Makes the case for:** category 1, for 2 turns
 **Description:** Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**
 
 ## Capability Jump
@@ -155,7 +155,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Always eligible; list this event every turn. The gate is open if `eval_anomaly_reports` occurred in either of the previous 2 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated.
 **Probability:** Gate open: 15%. Gate shut: 5%. Reduce by a third if a finished category 1 or 3 measure imposes pre-release evaluation or capability restrictions that actually bind the jurisdiction where the leading models are built.
 **Can repeat:** Yes
-**Bonus:** +2 to a new measure in category 1 or 3, proposed within 2 turns
+**Makes the case for:** categories 1 and 3, for 2 turns
 **Description:** A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.
 
 ## Recursive Self-Improvement Begins
@@ -164,7 +164,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** This entry appears only while the event is due in this run; when you see it, it is live.
 **Probability:** 30%.
 **Can repeat:** No
-**Bonus:** +8 to a new measure in category 1 or 3, proposed within 4 turns
+**Makes the case for:** categories 1 and 3, for 4 turns
 **Description:** Models begin contributing materially to the design of their successors, and the pace stops being set by human research throughput. It is recognised in retrospect rather than announced: the first sign is a release cadence nobody planned for. From this point capability growth compounds, and assurance falls behind it.
 
 ## Verification Frontier Widens
@@ -172,7 +172,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn. Automated verification extends into a domain previously thought to require human judgement.
 **Probability:** 12%.
 **Can repeat:** Yes
-**Bonus:** +2 to a new measure in category 1, proposed within 2 turns
+**Makes the case for:** category 1, for 2 turns
 **Description:** A domain that was assumed to need a human to say whether the answer was any good turns out to admit a cheap automatic check – contract review, clinical coding, structural engineering, parts of law. Capability in that domain improves sharply within months of the check existing, and the argument that progress is confined to code and mathematics loses a piece of its territory.
 
 ## Evidence of a Bending Curve
@@ -180,7 +180,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn.
 **Probability:** 10%.
 **Can repeat:** Yes
-**Bonus:** +2 to a new measure in category 9, proposed within 2 turns
+**Makes the case for:** category 9, for 2 turns
 **Description:** A major release underdelivers against its own briefing, and – the stronger signal – the price of top-tier capability falls sharply rather than staying flat, which is what happens when the frontier stops moving and last year's ceiling becomes this year's commodity. It is disputed at once, and the dispute is not resolvable from outside the laboratories.
 
 ## Reasoning Stops Being Legible
@@ -189,7 +189,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn once the frontier is well past 2026 capability. Models cease reasoning in human-readable text.
 **Probability:** 10%.
 **Can repeat:** No
-**Bonus:** +6 to a new measure in category 1, proposed within 3 turns
+**Makes the case for:** category 1, for 3 turns
 **Description:** The leading systems stop producing intermediate reasoning a human can read, because the representations that work best are not words. Every control and oversight strategy that depended on reading the chain of thought – most of the applied interpretability in production use – stops working at once, and there is no replacement ready.
 
 ## Medicine Delivers
@@ -198,7 +198,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn once capability is high. The most direct demonstration the public gets that the technology is worth its costs.
 **Probability:** 12%.
 **Can repeat:** Yes
-**Bonus:** +2 to a new measure in category 9, proposed within 2 turns
+**Makes the case for:** category 9, for 2 turns
 **Description:** Treatments arrive for diseases previously untreatable, or individually tailored therapies reach ordinary clinical use. It moves `public_sentiment` sharply upward – unless the models delivering it are ones the Union cannot access on its own terms, in which case the benefit arrives as a further demonstration of dependence and moves sentiment much less.
 
 ## Open Weights Reach the Frontier
@@ -206,7 +206,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn.
 **Probability:** 12%. Halve if a finished restriction on open release above a capability threshold binds a jurisdiction where such models are actually trained.
 **Can repeat:** Yes
-**Bonus:** +3 to a new measure in category 3 or 6, proposed within 3 turns
+**Makes the case for:** categories 3 and 6, for 3 turns
 **Description:** An open-weight release lands within months of the closed frontier rather than years. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5 points of `ai_capability` at a stroke.
 
 ## Loss-of-Control Incident
@@ -214,7 +214,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Always eligible; list this event every turn. The gate is open if `eval_anomaly_reports` occurred in any of the previous 3 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated.
 **Probability:** Gate open: 12%. Gate shut: 3%. Add 10 points if `ai_capability` minus `ai_safety` is above 30. Halve if a finished category 5 or 6 measure carries rehearsed loss-of-control protocols with escalation thresholds.
 **Can repeat:** Yes
-**Bonus:** +8 to a new measure in category 1 or 3, proposed within 4 turns
+**Makes the case for:** categories 1 and 3, for 4 turns
 **Description:** An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards and disputed.
 
 ## Assurance Breakthrough
@@ -222,7 +222,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn. More likely where evaluation and interpretability are actually funded.
 **Probability:** 10%. Add 6 points if a finished category 5 measure funds interpretability or public evaluation capacity.
 **Can repeat:** Yes
-**Bonus:** +2 to a new measure in category 1, proposed within 2 turns
+**Makes the case for:** category 1, for 2 turns
 **Description:** An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for. It is adopted quickly, because the laboratories want it too.
 
 ## Labour Displacement Wave
@@ -231,7 +231,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn once capability is displacing rather than assisting.
 **Probability:** 15%. Add 10 points if `ai_capability` is above 70.
 **Can repeat:** Yes
-**Bonus:** +8 to a new measure in category 7, proposed within 4 turns
+**Makes the case for:** category 7, for 4 turns
 **Description:** Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.
 
 ## AI Investment Collapse
@@ -239,7 +239,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Always eligible; list this event every turn.
 **Probability:** 6%. Add 10 points if `capability_plateau_evidence` occurred in any of the previous 3 completed turns. Add 5 points if `public_sentiment` is below 30.
 **Can repeat:** No
-**Bonus:** +2 to a new measure in category 7, proposed within 2 turns
+**Makes the case for:** category 7, for 2 turns
 **Description:** Capital flees the sector. Valuations reset hard, announced build-out is cancelled rather than delayed, and several of the arrangements European compute was depending on evaporate with it. What the frontier laboratories can afford to train shrinks for the first time.
 
 ## Taiwan Tension Rises
@@ -247,7 +247,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn.
 **Probability:** 15%. Add 5 points if `export_control_escalation` occurred in the previous 2 completed turns.
 **Can repeat:** Yes
-**Bonus:** +2 to a new measure in category 4, proposed within 2 turns
+**Makes the case for:** category 4, for 2 turns
 **Description:** Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**
 
 ## Taiwan Blockade
@@ -255,7 +255,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Always eligible; list this event every turn. The gate is open if `taiwan_tension_rise` occurred in any of the previous 3 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated.
 **Probability:** Gate open: 10%. Gate shut: 2%.
 **Can repeat:** No
-**Bonus:** +8 to a new measure in category 4, proposed within 4 turns
+**Makes the case for:** category 4, for 4 turns
 **Description:** A quarantine or blockade halts advanced semiconductor exports. Compute supply for everyone outside China's domestic chain is disrupted for years, every AI policy question becomes a security question overnight, and the Union's upstream position in the supply chain becomes the most valuable thing it holds and the most dangerous thing to hold.
 
 ## Export Control Escalation
@@ -263,7 +263,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn. The decisive question is whether allies are inside the perimeter or outside it.
 **Probability:** 15%. Add 10 points if the standing `US_POSTURE` is CONSOLIDATION. Add 5 points if `taiwan_tension_rise` occurred in the previous 2 completed turns.
 **Can repeat:** Yes
-**Bonus:** +6 to a new measure in category 4; +3 to a new measure in category 8, proposed within 3 turns
+**Makes the case for:** categories 4 and 8, for 3 turns
 **Description:** Chip and model export controls tighten again. Either allied buyers keep access on volume licences while everyone else is cut off, or the controls are drawn so tightly that allies are rationed alongside adversaries – decide which at the time from the standing American posture and from what the Union has built.
 
 ## Narrow Binding Agreement
@@ -272,7 +272,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn once the stakes are high enough for either power to want a floor under them. Markedly more likely after an incident neither power can pretend was contained.
 **Probability:** 6%. Add 10 points if a loss-of-control or biological incident occurred in either of the previous 2 completed turns. Add 5 points if a finished category 8 measure has put the Union inside a standing negotiation forum.
 **Can repeat:** No
-**Bonus:** +2 to a new measure in category 8, proposed within 2 turns
+**Makes the case for:** category 8, for 2 turns
 **Description:** The two leading powers reach a limited but real agreement covering some class of AI risk – weights security, autonomous escalation, a class of biological design tools – with verification thin but not absent. Whether the Union is inside it, consulted about it, or informed of it afterwards depends on what it has built and whom it has coordinated with. This is the one thing in the world that slows `ai_capability`, on the terms of metric rule 2.
 
 ## An Election Is Voided
@@ -280,7 +280,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn. Where synthetic content, trust and elections meet.
 **Probability:** 6%. Add 6 points if `public_sentiment` is below 30. Add 5 points if `openweight_capability` is above 60.
 **Can repeat:** Yes
-**Bonus:** +2 to a new measure in category 2 or 3, proposed within 2 turns
+**Makes the case for:** categories 2 and 3, for 2 turns
 **Description:** An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.
 
 ## Frontier Access Denied
@@ -288,7 +288,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn. What happened with Fable and Mythos in June 2026 happening again, on the same notice.
 **Probability:** 12%. Add 10 points if the standing `US_POSTURE` is CONSOLIDATION. Halve if `eu_ai_sovereignty` is above 45, because there is then something to withhold in return.
 **Can repeat:** Yes
-**Bonus:** +8 to a new measure in category 4 or 5, proposed within 4 turns
+**Makes the case for:** categories 4 and 5, for 4 turns
 **Description:** The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.
 
 ## Coercion Over ASML
@@ -296,7 +296,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn.
 **Probability:** 10%. Add 8 points if `export_control_escalation` occurred in either of the previous 2 completed turns.
 **Can repeat:** Yes
-**Bonus:** +6 to a new measure in category 4; +3 to a new measure in category 8, proposed within 3 turns
+**Makes the case for:** categories 4 and 8, for 3 turns
 **Description:** Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers. The instrument is jurisdiction over American technology in the supply chain, and refusing it is not obviously survivable for the company. The Union's one chokepoint is being used, and not by the Union.
 
 ## Access Secured on Its Own Terms
@@ -305,7 +305,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn where the Union has something to trade and the standing to trade it.
 **Probability:** 8%. Add 8 points if a finished category 8 measure coordinates other states holding pieces of the supply chain. Add 5 points if the standing `US_POSTURE` is ALLIANCE.
 **Can repeat:** Yes
-**Bonus:** +2 to a new measure in category 8, proposed within 2 turns
+**Makes the case for:** category 8, for 2 turns
 **Description:** The Union obtains frontier access under conditions it set rather than accepted: published terms, evaluation rights, a notice period before withdrawal, or capacity legally anchored inside its own jurisdiction. It is not sovereignty, and it is not nothing.
 
 ## Member State Defection
@@ -321,7 +321,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn where the public has soured.
 **Probability:** 10%. Add 10 points if `public_sentiment` is below 28. Add 5 points if a category 4 build is in flight, because there is then something local to protest against.
 **Can repeat:** Yes
-**Bonus:** +2 to a new measure in category 9, proposed within 2 turns
+**Makes the case for:** category 9, for 2 turns
 **Description:** Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.
 
 ## Adoption Delivers
@@ -329,7 +329,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn.
 **Probability:** 10%. Add 8 points if a finished category 9 measure has put capable AI to work in health, administration or education.
 **Can repeat:** Yes
-**Bonus:** +3 to a new measure in category 5 or 9, proposed within 3 turns
+**Makes the case for:** categories 5 and 9, for 3 turns
 **Description:** Public-sector AI adoption produces visible, measurable benefit – waiting lists that fall, decisions that arrive in days rather than months, teaching that demonstrably works – and it is attributed to a European decision rather than to an American product.
 
 ## Automated Decision Scandal
@@ -337,5 +337,5 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn. Internal origin by construction: this is harm the Union's own institutions caused.
 **Probability:** 8%. Add 8 points if a finished category 9 measure has broadened public-sector adoption. Add 5 points if `ai_capability` is above 65.
 **Can repeat:** Yes
-**Bonus:** +6 to a new measure in category 1 or 2, proposed within 3 turns
+**Makes the case for:** categories 1 and 2, for 3 turns
 **Description:** An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 12's internal-origin clause applies in full.
