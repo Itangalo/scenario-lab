@@ -641,8 +641,21 @@ class PromptBuilder:
     def _format_rule_evolution_policy(self, turn: int) -> str:
         """Describe rule-evolution guardrails for the current turn."""
         policy = self.scenario.config.rule_evolution
+        # Phrased as a ceiling that is rarely reached, not as a quota. The bare
+        # figure read as a target: with max_changes_per_turn: 1 the step rewrote
+        # roughly one rule per unfrozen turn whether or not anything needed it,
+        # which is why the statement ledger deliberately copied none of this
+        # shape (see docs/ARCHITECTURE.md).
+        allowance = (
+            "at most one rule may change, and on most turns none should"
+            if policy.max_changes_per_turn == 1
+            else f"at most {policy.max_changes_per_turn} rules may change, and on most turns none should"
+        )
         lines = [
-            f"- Maximum substantive rule changes this turn: {policy.max_changes_per_turn}",
+            f"- Rule changes are rare. On the occasional turn where the world has "
+            f"plainly outrun a rule, {allowance}.",
+            "- The ceiling is not a quota. A turn that changes nothing is the normal "
+            "outcome, not a failure to find something.",
             "- Default posture: keep the existing rule set unless clear evidence justifies a change.",
             "- Small, explicit, well-motivated edits are preferred over broad rewrites.",
         ]

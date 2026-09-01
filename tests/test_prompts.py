@@ -105,7 +105,28 @@ def test_rules_prompt_includes_rule_evolution_policy(mock_scenario):
 
     assert "No material rule changes" in system_prompt
     assert "Substantive rule changes are not allowed before turn 3" in user_prompt
-    assert "Maximum substantive rule changes this turn: 1" in user_prompt
+    # The allowance is stated as a rarely-reached ceiling, not as a bare number.
+    # "Maximum substantive rule changes this turn: 1" read as a quota and the
+    # step spent it every turn, which is the behaviour this wording exists to
+    # stop; see docs/ARCHITECTURE.md on why the statement ledger copied none of
+    # this shape.
+    assert "at most one rule may change, and on most turns none should" in user_prompt
+    assert "The ceiling is not a quota" in user_prompt
+    assert "Maximum substantive rule changes" not in user_prompt
+
+
+def test_rule_allowance_above_one_still_reads_as_a_ceiling(mock_scenario):
+    """The plural branch must not reintroduce a bare figure to spend."""
+    mock_scenario.config.rule_evolution.freeze_until_turn = 0
+    mock_scenario.config.rule_evolution.max_changes_per_turn = 4
+
+    builder = PromptBuilder(mock_scenario)
+    _, user_prompt = builder.build_rules_prompt(
+        turn=5, actor_actions={"actor1": "Action 1"}, triggered_events=[]
+    )
+
+    assert "at most 4 rules may change, and on most turns none should" in user_prompt
+    assert "The ceiling is not a quota" in user_prompt
 
 
 # ---------------------------------------------------------------------------

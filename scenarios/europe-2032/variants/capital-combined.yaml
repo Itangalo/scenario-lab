@@ -1,0 +1,20 @@
+# Capital-combined test arm, layered on VERIFICATION-BOUNDED.
+#
+# The two single-change arms each did half a job. Paralysis is a brake: it kept
+# runs off zero by stopping the portfolio growing once capital ran out, but it
+# can only conserve. Drift was the only route back up, but bidirectional it
+# pulled down in 23 of 39 turns and capped capital at sentiment -- which makes
+# the high-capital outcome constitutional rule 7 protects structurally
+# unreachable, since sentiment almost never exceeds 48.
+#
+# So: the brake, and the engine with its downward half removed. The downward
+# half was double-counting -- rule 15, rule 12's attribution and the
+# sentiment-driven events already charge the Union for a hostile public.
+#
+# NOTE: no `description` field, for the reason given in verification-bounded.yaml.
+base: "verification-bounded.yaml"
+name: "Europe 2032 — V, capital combined"
+
+patches:
+  - resource: metric_rules
+    path: capital-combined.rules.patch.md
