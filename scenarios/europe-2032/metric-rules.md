@@ -27,7 +27,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 4. **`resilience`**
    - Finished category 6 measure covering a named class of harm: +3 to +6
    - `ai_capability` rose and no category 6 measure is in force: −1 to −2
-   - Finished category 9 measure broadening adoption: −1 to −3, because there is more surface to attack. Diffusion cuts both ways: the same measure buys `public_sentiment` and the economic case for everything else.
+   - Finished category 9 measure broadening adoption: −1 to −3
 
 5. **`eu_ai_sovereignty`**
    - Finished category 4 measure: +2 to +6
@@ -41,7 +41,8 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - Every measure in flight costs the same amount `eu_political_capital` every turn, and finishes on a stated turn
       - large measure: −3 `eu_political_capital` per turn
       - small measure: −2 `eu_political_capital` per turn
-      - a named priority: a further −1 that turn.
+      - A measure just added costs 0; effect starts next turn
+   - A named priority: −1 that turn.
    - A measure abandoned or publicly defeated: −3 to −6, remove from portfolio
    - A measure reaching its finishing turn: +4 to +8, then remove from portfolio
    - A measure just added, addressing a negative event from the last three rounds: +1 to +8. Larger for bigger events, more recent events and larger measures; smaller for the reverse.
@@ -62,7 +63,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 
 ## Other effects
 
-8. **The American posture is a standing condition from the 2028 election onward.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Write the matching `US_POSTURE:` line into the world state that turn and carry it in the notepad every turn after, because it conditions everything below.
+8. **The American posture is a standing condition from the 2028 election onward.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Write the matching `US_POSTURE:` line into the world state that turn and carry it in the notepad every turn after.
 
    - **CONSOLIDATION** — frontier access rationed by country tier:
      - categories 4 and 5 cost one size level more
@@ -71,7 +72,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - **ALLIANCE** — structured access on published terms:
      - `ai_safety` +1 to +2 from joint evaluation and incident reporting
      - `public_sentiment` +1 to +2
-     - every category 4 measure costs one size level more, because the case for building an alternative is harder to fund once the pressure is off
+     - every category 4 measure costs one size level more
    - **RETRENCHMENT** — American frontier progress slows for reasons that are neither compute nor capital:
      - reduce this run's stated `ai_capability` growth rate by a quarter while it holds
      - category 8 measures aimed at Washington achieve half what they otherwise would
@@ -84,18 +85,18 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - Agreement in public and evasion in private is a permitted outcome, and should sometimes be the one that happens.
 
 10. **Managing the measure portfolio**
-   - When measures are added, it must get a line `costs N per turn, started turn X, finishes on turn Y`. This line is copied forward in the portfolio, unchanged. Three things can move it. Nothing moves it silently.
-     - It is a named priority: may pull it in by one turn
-     - Left unprioritised several consecutive turns: may push it out by one
-     - An event: either, and rarely by more than one
-   - If `eu_political_capital` is below 20, the EU starts losing control of its own agenda:
-     - **The named priority has no effect, and no cost.** Pull-in-by-one-turn does not apply, pushing a measure buys nothing, and the priority's −1 is not charged. Naming a priority changes nothing at all.
-     - **A new measure may fail to start.** Judge it, roughly one turn in three. A measure that fails to start never enters the portfolio, costs nothing, and may be proposed again in a later turn. Say plainly in the narrative what blocked it — a member state withholding assent, a budget line refused, a legal base contested. The narrative must not announce that a line has been crossed.
-   - A measure is finished when the current turn reaches Y.
-     - Apply the full bonus from the measure
-   - A measure in flight gives part bonus:
-     - A measure yields nothing in the turn it is proposed
-     - After that, a share of whatever per-turn figure its category rule gives it, judged from how far it has come between X and Y. Judge the share; do not compute it to a decimal.
+    - When measures are added, it must get a line `costs N per turn, started turn X, finishes on turn Y`. This line is copied forward in the portfolio, unchanged. Three things can move  it. Nothing moves it silently.
+      - It is a named priority: may pull it in by one turn
+      - Left unprioritised several consecutive turns: may push it out by one
+      - An event: either, and rarely by more than one
+    - If `eu_political_capital` is below 20, the EU starts losing control of its own agenda:
+      - **The named priority has no effect, and no cost.** Pull-in-by-one-turn does not apply, pushing a measure buys nothing, and the priority's −1 is not charged. Naming a priority changes nothing at all.
+      - **A new measure may fail to start.** Judge it, roughly one turn in three. A measure that fails to start never enters the portfolio, costs nothing, and may be proposed again in a later turn. Say plainly in the narrative what blocked it — a member state withholding assent, a budget line refused, a legal base contested. The narrative must not announce that a line has been crossed.
+    - A measure is finished when the current turn reaches Y.
+      - Apply the full bonus from the measure
+    - A measure in flight gives part bonus:
+      - A measure yields nothing in the turn it is proposed
+      - After that, a share of whatever per-turn figure its category rule gives it, judged from how far it has come between X and Y. Judge the share; do not compute it to a decimal.
 
 11. **Assessing likelihood and magnitude of incidents**
     - Incident frequency comes from two channels, severity from a third:

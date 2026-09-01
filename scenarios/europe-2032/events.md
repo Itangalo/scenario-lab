@@ -23,11 +23,11 @@ Apply modifiers exactly as written: "add 8 points" means +0.08 to the stated fig
 
 ## What an event does to the price of a measure
 
-Metric rule 10 charges political capital for every measure in flight, every turn, and nothing lowers that charge. What an event can do is make a measure easier to *start*, and **`Makes the case for:` on an event is what does it** – it names the measure categories the event has just argued for, and for how many turns the argument stays fresh. An incident that proves the Union was right to be building something does not make that thing cheaper in euros; it buys the argument for it, once, at the moment the Union commits. How much it is worth is a judgement, not a table: rule 13 gives the range.
+Metric rule 6 charges political capital for every measure in flight, every turn, and nothing lowers that charge. What an event can do is make a measure easier to *start*, and **`Makes the case for:` on an event is what does it** – it names the measure categories the event has just argued for, and for how many turns the argument stays fresh. An incident that proves the Union was right to be building something does not make that thing cheaper in euros; it buys the argument for it, once, at the moment the Union commits. How much it is worth is a judgement, not a table: rule 6 gives the range.
 
-The event record says *whether* an argument is open, and the categories say *for what*; rule 13 says what it is worth. It is paid once, in the turn the measure is proposed, and it leaves the per-turn charge untouched.
+The event record says *whether* an argument is open, and the categories say *for what*; rule 6 says what it is worth. It is paid once, in the turn the measure is proposed, and it leaves the per-turn charge untouched.
 
-Not every event has one. The three 2028 election outcomes are standing postures and belong to metric rule 18 rather than here, and `member_state_defection` makes nothing easier.
+Not every event has one. The three 2028 election outcomes are standing postures and belong to metric rule 8 rather than here, and `member_state_defection` makes nothing easier.
 
 ## Measures referred to in conditions
 
@@ -47,7 +47,7 @@ Weigh them by reading the campaign, not by counting events. The three campaign e
 
 **Give all three a non-zero weight unless the world genuinely rules one out.** A near-certain outcome is a real judgment and you may state it; three identical weights are also a real judgment, and mean the campaign could go any way. What is not acceptable is silently omitting an outcome, which reads as a weight of zero and removes a possible future without saying so.
 
-*Recording the result.* The outcome is its own event id, so it enters the run's event record automatically and runs can be grouped afterwards without reading prose. The Game Master's remaining job is memory: carry the line `US_POSTURE: CONSOLIDATION`, `US_POSTURE: ALLIANCE` or `US_POSTURE: RETRENCHMENT` in the notepad from turn 5 onward, matching whichever event fired. The posture is a standing condition of the world through 2032, and metric rule 18 reads it every turn.
+*Recording the result.* The outcome is its own event id, so it enters the run's event record automatically and runs can be grouped afterwards without reading prose. The Game Master's remaining job is memory: carry the line `US_POSTURE: CONSOLIDATION`, `US_POSTURE: ALLIANCE` or `US_POSTURE: RETRENCHMENT` in the notepad from turn 5 onward, matching whichever event fired. The posture is a standing condition of the world through 2032, and metric rule 8 reads it every turn.
 
 ---
 
@@ -338,4 +338,4 @@ The reading that settles across the security community within days is that this 
 **Probability:** 8%. Add 8 points if a finished category 9 measure has broadened public-sector adoption. Add 5 points if `ai_capability` is above 65.
 **Can repeat:** Yes
 **Makes the case for:** categories 1 and 2, for 3 turns
-**Description:** An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 12's internal-origin clause applies in full.
+**Description:** An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 6's internal-origin clause applies in full.
