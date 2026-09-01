@@ -22,15 +22,15 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - `ai_capability` rose and no measure landed on shipped systems: −1 to −3
    - The events `opaque_reasoning`, `capability_jump` or `rsi_onset`: −5 to −12
    - The event `safety_breakthrough`: +5 to +10
-   - Finished measure in category 1, 2 or 5 that affects the jurisdiction where frontier models are built: +2 to +4. If only affecting inside the EU: 0 to +1
+   - Finished measure in category 1, 2 or 5 that affects the jurisdiction where frontier models are built, in the turn it finishes: +2 to +4, once. If only affecting inside the EU: 0 to +1
 
 4. **`resilience`**
-   - Finished category 6 measure covering a named class of harm: +3 to +6
+   - Category 6 measure covering a named class of harm, in the turn it finishes: +3 to +6, once
    - `ai_capability` rose and no category 6 measure is in force: −1 to −2
-   - Finished category 9 measure broadening adoption: −1 to −3
+   - Category 9 measure broadening adoption, in the turn it finishes: −1 to −3, once
 
 5. **`eu_ai_sovereignty`**
-   - Finished category 4 measure: +2 to +6
+   - Category 4 measure, in the turn it finishes: +2 to +6, once
    - `ai_capability` rose and no sovereignty measure is in force: −1 to −2
    - Cap: no single turn moves it more than 5 in either direction, absent an event that says otherwise
 
@@ -52,7 +52,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
      - internal origin: −5 to −15
 
 7. **`public_sentiment`**
-    - Category 7 or 9 measure finished: +2 to +5
+    - Category 7 or 9 measure finished, in the turn it finishes: +2 to +5, once
     - A scandal naming AI as the cause: −4 to −10
     - Major AI incident: −5 to −15
     - Labour displacement wave, or a visible episode of dependency humiliation: −5 to −10
@@ -95,7 +95,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
       - Apply the full bonus from the measure
     - A measure in flight gives part bonus:
       - A measure yields nothing in the turn it is proposed
-      - After that, a share of the per-turn figure its category rule gives it, judged from how far it has come between X and Y — at most half that figure until it finishes. Judge the share; do not compute it to a decimal.
+      - After that, occasionally +0 to +2 in the metric it contributes to on finishing. Most often 0, +1 and sometimes +2 allowed as the end turn approaches, in particular for large measures.
 
 11. **The magnitude of an incident, once it has occurred**
     - `resilience` governs how much damage an incident does, never whether it happened: the higher it is, the more of the harm is absorbed and the less reaches the metrics
