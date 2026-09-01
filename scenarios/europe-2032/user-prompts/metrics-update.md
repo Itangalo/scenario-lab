@@ -54,13 +54,13 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    Two things this rule is not. It is not a lookup: no table gives you the number, and a figure with no reason beside it is wrong. And it is not automatic: a small measure gesturing at an old event earns +1 or nothing at all, and `none` is the right answer more often than not.
 
-4c. **Last, if the metric rules give `eu_political_capital` a drift toward `public_sentiment`, apply it and write it down.** Only when this run's rules carry such a clause, and only when capital is below sentiment: move capital toward sentiment by the amount the rule states, never past it, after every other term above.
+4c. **Last, if this run's metric rules give `eu_political_capital` a term for sentiment sitting above it, apply it.** Only when the rules carry such a line, and only when `public_sentiment` is the higher of the two: add what the rule states, never taking capital past sentiment, after every other term above.
 
-   Write it as its own Notepad line, so it cannot be quietly skipped:
+   Write it as its own Notepad line:
 
-   `LEGITIMACY LENDS: capital 18 below sentiment 31 -> +2`
+   `LEGITIMACY LENDS: capital 18, sentiment 31 -> +2`
 
-   A turn where capital sits well below sentiment and this line is absent is this rule being skipped. It has been skipped for eight consecutive turns in a run, while the gap widened from 5 points to 15 and capital fell every turn.
+   Compare the two numbers before writing anything. `none` is correct only when capital is the higher of the two, and a `none` whose own reasoning shows sentiment above capital is wrong.
 
 5. **A finishing turn moves only when something moved it.** The portfolio carries a stated finishing turn per measure, set when the measure was proposed. Copy them forward as they stand. If a measure's finishing turn should change — pushed by being the priority, slipping through neglect, delayed or accelerated by an event — say so in the Narrative in the same breath as the reason, and write the new turn. A finishing turn that drifts with no reason given is an error.
 6. Once `us_election_2028` has fired, write the resulting `US_POSTURE: CONSOLIDATION`, `US_POSTURE: ALLIANCE` or `US_POSTURE: RETRENCHMENT` line into the world state for that turn, and carry the same line in the Notepad every turn thereafter. It is a standing condition of the world that metric rule 18 reads each turn, not a one-off narrative beat.

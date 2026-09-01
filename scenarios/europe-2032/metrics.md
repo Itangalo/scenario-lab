@@ -113,7 +113,7 @@ between them can be read directly.
 - 85: Independent frontier capability. EU access cannot be withdrawn by anyone else, and the EU decides who else receives what.
 
 ## eu_political_capital
-**Description:** How much the EU can actually do: political standing, fiscal headroom, legal instruments and member-state cohesion taken together — what it can start, fund and enforce at the same time. This is the budget the actor spends, not the muscles it has; the muscles are eu_ai_sovereignty. Falls with fiscal strain, fragmentation, overreach and failed measures; rises with visible successes and with capacity that has finished landing.
+**Description:** How much the EU can actually do: political standing, fiscal headroom, legal instruments and member-state cohesion taken together — what it can start, fund and enforce at the same time. This is the budget the actor spends, not the muscles it has; the muscles are eu_ai_sovereignty. Falls with fiscal strain, fragmentation, overreach and failed measures; rises with visible successes, with capacity that has finished landing, and — where the run's rules provide for it — while it sits below `public_sentiment`, because a public that is with the Union lends it room the Union has not earned yet.
 **ID:** eu_political_capital
 **Min:** 0
 **Max:** 100

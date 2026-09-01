@@ -26,7 +26,6 @@ A measure is **in flight** from the turn it is proposed until it reaches its fin
 4. **Capability accumulates and the opening turn is shared.**
    - `ai_capability` and `openweight_capability` never fall, except on catastrophic physical destruction of the compute base, which must be narrated as such
    - `openweight_capability` never exceeds `ai_capability`
-   - turn 1 covers the second half of 2026, which has already happened in every run: it ends with `openweight_capability` at 45, give or take a point, whatever this run's rates say about later turns; divergence begins in turn 2 and rule 3 applies from there
 
 ## The incident engine
 
@@ -69,8 +68,6 @@ A measure is **in flight** from the turn it is proposed until it reaches its fin
     - abandoned measure: nothing further
     - finished measure: nothing further, and it leaves the portfolio the turn after it finishes — it is no longer in flight, so it is no longer charged and no longer listed
 
-    *Nothing discounts it.* The per-turn charge is 3 for a large measure and 2 for a small one, every turn it is in flight, whatever the world has made easier. Timing is rewarded once, when a measure is proposed, under rule 13 — never as a standing reduction. A charge line that prices a measure below its size is wrong.
-
     *When it finishes.* Every measure carries `costs N per turn, started turn X, finishes on turn Y` from the moment it is proposed. Y is judged once, from how large the thing actually is — a directive needing drafting and a vote in two or three turns, a capability that has to be built and staffed in six or more — and **copied forward unchanged after that. Do not recompute it.** Three things may move it, each written into the portfolio line with its reason:
     - named priority: may pull it in by one turn
     - left unprioritised several consecutive turns: may push it out by one
@@ -83,14 +80,13 @@ A measure is **in flight** from the turn it is proposed until it reaches its fin
 11. **`eu_political_capital` recovers from results and erodes from their absence.** There is no drift back toward 48.
     - a measure reaching its finishing turn: +4 to +8
     - a measure in flight or finished that visibly blunts an incident when it lands: +1 to +7, judged the same way as rule 13 — the bigger the event and the larger the measure, the bigger the gain. This is the mirror of rule 13: that one pays for acting after the harm, this one for having already acted.
-    - a measure abandoned, a deadline missed, a proposal publicly defeated: −5 to −12
+    - a measure abandoned, a deadline missed, a proposal publicly defeated: −3 to −6
     - nothing in flight: −3
-    - a live class of harm sitting unaddressed: a further −2
 
 12. **Attribution decides whether a shock strengthens the Union or breaks it.** Negative events move `eu_political_capital` in either direction; the sign follows from where the harm originated and whether the EU had acted beforehand.
     - external origin, prior action taken: +5 to +12
     - external origin, no prior action: −5 to −12
-    - internal origin — an EU-deployed system, a regulatory failure, an automated-decision scandal: −10 to −20, regardless of anything else
+    - internal origin — an EU-deployed system, a regulatory failure, an automated-decision scandal: −5 to −15, regardless of anything else
     - **Damper**, where the same class of harm recurs and the response demonstrably did not work: full on the first occurrence, half on the second, none on the third, a penalty thereafter
 
 13. **Timing is paid once, at proposal, and it is judged.** A measure proposed into a world that has just been shown why it is needed is easier to carry. That is worth a one-off gain in `eu_political_capital` in the turn it is proposed, and it is never a reduction in the measure's per-turn charge.
@@ -110,7 +106,7 @@ A measure is **in flight** from the turn it is proposed until it reaches its fin
 ## The public and the world's mood
 
 14. **`public_sentiment` moves in both directions and must be allowed to.** It recovers slowly and does not return to its pre-crisis level within four turns.
-    - major incident: −8 to −20
+    - major incident: −5 to −15
     - labour displacement wave, or a visible episode of dependency humiliation: −5 to −10
     - a scandal naming AI as the cause: −4 to −10
     - AI delivering visible public benefit and no harm landed: +2 to +5
