@@ -1,6 +1,6 @@
 # Prompt sign-off
 
-Generated from `run-20260901-194547`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
+Generated from `run-20260901-211110`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
 
 Read them once when the scenario is built, and again after any change to the templates, the scenario's prompt overrides, or the background files. Sign off by saying so in the scenario's design notes, with the date.
 
@@ -70,9 +70,9 @@ Every heading in the scenario's background and definition files, and whether the
 | `events.md` | An Election Is Voided | yes |
 | `events.md` | Frontier Access Denied | yes |
 | `events.md` | Coercion Over ASML | yes |
-| `events.md` | Access Secured on Its Own Terms | **NO** |
+| `events.md` | Access Secured on Its Own Terms | yes |
 | `events.md` | Member State Defection | yes |
-| `events.md` | Backlash Turns Physical | yes |
+| `events.md` | Backlash Turns Physical | **NO** |
 | `events.md` | Adoption Delivers | yes |
 | `events.md` | Automated Decision Scandal | yes |
 | `metric-rules.md` | Metric Rules | yes |
