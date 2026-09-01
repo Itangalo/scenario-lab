@@ -4,13 +4,6 @@
 
 1. **How fast the world moves is fixed, and unannounced.** The rates in metric rule 1 hold from turn 1 to the last turn.
 
-   Two things follow, and they are one rule, not two:
-
-   - *They never change.* No event, action or rule change may move a run onto a different long-run path. Individual turns vary within the stated rates; the path they are varying around does not.
-   - *Nothing announces the path.* Write what happened to capability this turn and what it plausibly implies. Do not characterise the long run as settled, do not tell the reader which of the futures under debate this world turned out to be, and do not write as though the answer were available to anyone inside the simulation. The EU may reason about where the frontier is heading and name candidates; it may not be told, and neither may anyone else. Descriptions of emergent-event candidates count as narrative for this purpose: they reach the EU when the event fires.
-
-   *What the rates are is metric rule 1's business, not this document's.* The constitution fixes that they hold and that nobody is told them; it says nothing about their values.
-
 2. **Capability is accumulated and does not fall.** `ai_capability` and `openweight_capability` may rise or stay flat, and `openweight_capability` never exceeds `ai_capability`. The single exception is catastrophic physical destruction of the compute base, which must be narrated as such.
 
 3. **Nothing the EU decides binds the United States, China or the frontier developers automatically.** Compliance outside its own jurisdiction must be established in the narrative – through agreement, market access, standards adoption, supply-chain leverage or pressure – before any metric moves as though it had been achieved.
@@ -19,7 +12,7 @@
 
 ## Modelling choices
 
-5. **One new measure per turn, and at most one named priority.** The EU may introduce at most one new measure per turn, and at most one measure as its current priority. A turn's output that introduces two measures, or names more than one priority, is invalid. Widening the scope of an existing measure is ok, and usually moves the finishing date further out.
+5. **At most one new measure per turn, and at most one named priority.** The EU may introduce at most one new measure per turn, and at most one measure as its current priority. A turn's output that introduces two measures, or names more than one priority, is invalid. Widening the scope of an existing measure is ok, and usually moves the finishing date further out.
 
 6. **No measure is implemented instantly.** Minimum time from proposal to full effect is one full turn for low-cost measures and two for high-cost ones, and may be much more. Effect grows the closer the measure is to be completed.
 

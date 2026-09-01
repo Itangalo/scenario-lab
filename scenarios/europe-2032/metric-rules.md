@@ -97,8 +97,6 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
       - A measure yields nothing in the turn it is proposed
       - After that, a share of the per-turn figure its category rule gives it, judged from how far it has come between X and Y — at most half that figure until it finishes. Judge the share; do not compute it to a decimal.
 
-11. **Assessing likelihood and magnitude of incidents**
-    - Incident frequency comes from two channels, severity from a third:
-      - misuse incidents (cyber, biological, caused by someone who wanted it): driven by `openweight_capability`
-      - accident and loss-of-control incidents: driven by the gap between `ai_capability` and `ai_safety`
-      - both: damped by `resilience`, which governs damage done rather than whether the incident happens
+11. **The magnitude of an incident, once it has occurred**
+    - `resilience` governs how much damage an incident does, never whether it happened: the higher it is, the more of the harm is absorbed and the less reaches the metrics
+    - What decides whether an incident occurs at all is not here. It is priced by the events step, from `openweight_capability` for misuse and from the gap between `ai_capability` and `ai_safety` for the lab-origin class.
