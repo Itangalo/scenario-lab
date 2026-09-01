@@ -95,7 +95,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
       - Apply the full bonus from the measure
     - A measure in flight gives part bonus:
       - A measure yields nothing in the turn it is proposed
-      - After that, a share of whatever per-turn figure its category rule gives it, judged from how far it has come between X and Y. Judge the share; do not compute it to a decimal.
+      - After that, a share of the per-turn figure its category rule gives it, judged from how far it has come between X and Y — at most half that figure until it finishes. Judge the share; do not compute it to a decimal.
 
 11. **Assessing likelihood and magnitude of incidents**
     - Incident frequency comes from two channels, severity from a third:
