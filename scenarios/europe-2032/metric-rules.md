@@ -41,7 +41,6 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - Every measure in flight costs the same amount `eu_political_capital` every turn, and finishes on a stated turn
       - large measure: −3 `eu_political_capital` per turn
       - small measure: −2 `eu_political_capital` per turn
-      - A measure just added costs 0; effect starts next turn
    - A named priority: −1 that turn.
    - A measure abandoned or publicly defeated: −3 to −6, remove from portfolio
    - A measure reaching its finishing turn: +4 to +8, then remove from portfolio
