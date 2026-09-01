@@ -1033,6 +1033,14 @@ def create_metric(metric_id: str, data: dict) -> Metric:
     )
 
 
+# The event fields `create_event` reads. Anything else in an event block is
+# parsed and then dropped, which is invisible unless something looks for it --
+# see `collect_unknown_event_fields`.
+EVENT_FIELDS = frozenset(
+    {"id", "condition", "probability", "can_repeat", "description", "eligible"}
+)
+
+
 def load_events(path: Path) -> list[Event]:
     """Parse events from markdown file.
 
@@ -1090,6 +1098,46 @@ def create_event(data: dict) -> Event:
         can_repeat=can_repeat,
         eligible=eligible,
     )
+
+
+def collect_unknown_event_fields(path: Path) -> dict[str, list[str]]:
+    """Field labels in an events file that the parser discards.
+
+    `create_event` builds an `Event` from six fields and ignores the rest, so an
+    authored line like `**Makes the case for:** category 4` reads as
+    configuration, reaches no prompt, and never errors. Two such fields shipped
+    in europe-2032 before anyone noticed. This walks the file the same way
+    `load_events` does and reports what would be dropped, keyed by event id.
+
+    Bold lines outside an event block -- prose in the framing sections -- are
+    not reported: the parser discards those too, but they were never claiming to
+    configure anything.
+    """
+    labels: dict[str, list[str]] = {}
+    current: dict[str, str] = {}
+    seen: list[str] = []
+
+    def flush() -> None:
+        if current.get("id") and seen:
+            labels.setdefault(current["id"], []).extend(seen)
+
+    for line in path.read_text(encoding="utf-8").split("\n"):
+        line = line.strip()
+
+        if line.startswith("## "):
+            flush()
+            current = {"name": line[3:].strip()}
+            seen = []
+
+        elif line.startswith("**") and ":" in line:
+            key, value = parse_key_value(line)
+            normalized = normalize_markdown_key(key)
+            current[normalized] = value
+            if normalized not in EVENT_FIELDS:
+                seen.append(key)
+
+    flush()
+    return labels
 
 
 def load_actor(path: Path, actor_id: str) -> Actor:

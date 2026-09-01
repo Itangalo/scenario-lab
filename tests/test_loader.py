@@ -2,7 +2,7 @@
 
 import pytest
 from pathlib import Path
-from scenario_lab.loader import load_metrics, load_events, load_actor, create_metric, create_event, get_time_period
+from scenario_lab.loader import load_metrics, load_events, load_actor, create_metric, create_event, get_time_period, collect_unknown_event_fields
 
 def test_load_metrics(tmp_path):
     """Test parsing of metrics markdown file."""
@@ -214,3 +214,54 @@ def test_get_time_period_supports_weeks_with_day_precision():
 
     assert period_1 == "2026-03-09 to 2026-03-22"
     assert period_2 == "2026-03-23 to 2026-04-05"
+
+
+def test_collect_unknown_event_fields_reports_discarded_labels(tmp_path):
+    """Fields the parser drops are reported, keyed by event."""
+    content = """# Events
+
+## Framing
+
+**Note:** prose outside an event block is not an event field.
+
+---
+
+## Real Event
+**ID:** real_event
+**Condition:** Always
+**Probability:** 0.1
+**Can repeat:** No
+**Makes the case for:** categories 1 and 6, for 3 turns
+**Effects:** something the model never sees
+**Description:** A thing happens.
+
+## Clean Event
+**ID:** clean_event
+**Condition:** Always
+**Probability:** 0.2
+**Can repeat:** Yes
+**Eligible:** metric_a > 10
+**Description:** Another thing happens.
+"""
+    path = tmp_path / "events.md"
+    path.write_text(content)
+
+    unknown = collect_unknown_event_fields(path)
+
+    assert unknown == {"real_event": ["Makes the case for", "Effects"]}
+    assert "clean_event" not in unknown
+
+
+def test_collect_unknown_event_fields_clean_file_is_silent(tmp_path):
+    """A file using only the six parsed fields reports nothing."""
+    content = """## Only Known Fields
+**ID:** e1
+**Condition:** Always
+**Probability:** 0.5
+**Can repeat:** No
+**Description:** Text.
+"""
+    path = tmp_path / "events.md"
+    path.write_text(content)
+
+    assert collect_unknown_event_fields(path) == {}

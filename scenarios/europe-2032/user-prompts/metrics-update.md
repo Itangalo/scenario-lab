@@ -46,7 +46,7 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
 4b. **Then judge the proposal bonus, if this turn's new measure earned one.** A separate, one-off addition to `eu_political_capital` under metric rule 6, paid in the turn a measure is proposed and never again. It does not touch the charge above.
 
-   Ask: **in the last three turns, did anything happen that this measure would have helped with?** Events carry a `Makes the case for:` line naming the categories they argued for and for how long — that tells you whether an argument is open. What it is worth is your judgement, on how big the event was, how large the measure is, and how long ago it happened. **Typically +1 to +4**, the top of it for a large measure answering a severe, recent shock directly. Several open arguments pointing at one measure are judged together as a single figure, not summed.
+   Ask: **in the last three turns, did anything happen that this measure would have helped with?** Read that off the events themselves: what they were, how severe, and which of them this measure answers. What it is worth is your judgement, on how big the event was, how large the measure is, and how long ago it happened. **Typically +1 to +4**, the top of it for a large measure answering a severe, recent shock directly. Several open arguments pointing at one measure are judged together as a single figure, not summed.
 
    Write it as its own Notepad line, with the reasoning visible, or `PROPOSAL BONUS: none` when nothing argued for it:
 

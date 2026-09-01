@@ -780,3 +780,32 @@ def test_metric_rules_still_reject_unknown_identifiers():
     assert len(errors) == 1
     assert "no_such_thing" in errors[0]
 
+
+
+def test_validate_event_fields_warns_on_discarded_fields(tmp_path):
+    """A field the parser drops is a warning, not a silent no-op."""
+    from scenario_lab.validator import validate_event_fields
+
+    (tmp_path / "metrics.md").write_text("## m\n**ID:** m\n**Min:** 0\n**Max:** 10\n**Starting value:** 5\n")
+    (tmp_path / "events.md").write_text(
+        "## E\n**ID:** e1\n**Condition:** Always\n**Probability:** 0.1\n"
+        "**Can repeat:** No\n**Makes the case for:** category 4\n**Description:** x\n"
+    )
+
+    warnings = validate_event_fields(tmp_path)
+
+    assert len(warnings) == 1
+    assert "Makes the case for" in warnings[0]
+    assert "reach no prompt" in warnings[0]
+
+
+def test_validate_event_fields_silent_when_all_fields_parsed(tmp_path):
+    from scenario_lab.validator import validate_event_fields
+
+    (tmp_path / "metrics.md").write_text("## m\n**ID:** m\n**Min:** 0\n**Max:** 10\n**Starting value:** 5\n")
+    (tmp_path / "events.md").write_text(
+        "## E\n**ID:** e1\n**Condition:** Always\n**Probability:** 0.1\n"
+        "**Can repeat:** No\n**Description:** x\n"
+    )
+
+    assert validate_event_fields(tmp_path) == []

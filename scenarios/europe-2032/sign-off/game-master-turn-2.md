@@ -2,7 +2,7 @@
 
 The Game Master step that writes the world state. It decides what the actor's actions achieved and what the metrics become, so the metric rules must be visible here in full and unambiguous.
 
-Source: `runs/run-20260831-135806/turn-02/llm-io/06-metrics.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260901-194547/turn-02/llm-io/05-metrics.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -36,7 +36,7 @@ An important part of the world description are these metrics, which vary within 
 <!-- FROM {{metrics_list}} = metrics.md, one entry per metric with its reference points -->
 
 * ai_capability
-  * Description: Capability of the strongest systems anywhere in the world, closed or open, measured as general problem-solving competence across economically and strategically relevant tasks. Whichever power holds the lead, this is the lead. Accumulated capability; it does not fall back.
+  * Description: Capability of the strongest AI systems anywhere in the world, closed or open, measured as general problem-solving competence across economically and strategically relevant tasks. Whichever power holds the lead, this is the lead. Accumulated capability; it does not fall back.
   * Range: 0.0 to 100.0 index
   * Reference points:
     - 30.0: Reliable assistant. Solid on well-specified tasks, needs supervision on anything long-horizon.
@@ -86,16 +86,16 @@ An important part of the world description are these metrics, which vary within 
     - 60.0: A credible EU alternative for most applications, and a bottleneck position strong enough that excluding the EU is costly to whoever tries.
     - 85.0: Independent frontier capability. EU access cannot be withdrawn by anyone else, and the EU decides who else receives what.
 * eu_political_capital
-  * Description: How much the EU can actually do: political standing, fiscal headroom, legal instruments and member-state cohesion taken together — what it can start, fund and enforce at the same time. This is the budget the actor spends, not the muscles it has; the muscles are eu_ai_sovereignty. Falls with fiscal strain, fragmentation, overreach and failed measures; rises with visible successes and with capacity that has finished landing.
+  * Description: How much the EU can actually do: political standing, fiscal headroom, legal instruments and member-state cohesion taken together — what it can start, fund and enforce at the same time. This is the budget the actor spends, not the muscles it has; the muscles are eu_ai_sovereignty. Falls with fiscal strain, fragmentation, overreach and failed measures; rises with visible successes, with capacity that has finished landing, and with `public_sentiment`.
   * Range: 0.0 to 100.0 index
   * Reference points:
     - 10.0: Paralysed. Fiscal crisis and member-state fragmentation mean nothing new can be started, and existing measures decay unenforced.
-    - 30.0: One measure at a time, and only if it is uncontroversial. Money is the binding constraint.
+    - 30.0: One measure at a time, and only if it is uncontroversial.
     - 48.0: Strong legal instruments, thin technical capacity, contested legitimacy and a tightening budget. Two or three measures can run at once before something slips.
     - 65.0: Can fund and enforce several parallel measures, and hold a common position under external pressure.
     - 85.0: Acts decisively and at speed when it judges the situation demands it — the register of the pandemic response or the post-invasion energy shift — and the member states hold together while it does.
 * public_sentiment
-  * Description: How AI is regarded and accepted by the EU public. Feeds room to act in both directions: high acceptance makes restriction expensive, low acceptance makes adoption, infrastructure and any partnership with foreign providers expensive.
+  * Description: How AI is regarded and accepted by the EU public. Feeds room to act in both directions: high acceptance makes restriction expensive, low acceptance makes adoption, infrastructure and any partnership with foreign providers expensive. High public sentiment leads to increased political capital.
   * Range: 0.0 to 100.0 index
   * Reference points:
     - 15.0: Broad hostility. Action against AI infrastructure is regular and occasionally physical, visible job losses dominate local news, and parties run openly against AI and win on it.
@@ -142,7 +142,7 @@ These are hard rules of this world. They are checked after you answer, and an up
 
 3. **Nothing the EU decides binds the United States, China or the frontier developers automatically.** Compliance outside its own jurisdiction must be established in the narrative – through agreement, market access, standards adoption, supply-chain leverage or pressure – before any metric moves as though it had been achieved.
 
-4. **The American posture, once elected, is standing.** From the turn `us_election_2028` fires, the `US_POSTURE:` line is carried in the notepad every subsequent turn and conditions the world under metric rule 18. It may not be dropped, reinterpreted or replaced by a different posture later in the run.
+4. **The American posture, once elected, is standing.** From the turn `us_election_2028` fires, the `US_POSTURE:` line is carried in the notepad every subsequent turn and conditions the world under metric rule 8. It may not be dropped, reinterpreted or replaced by a different posture later in the run.
 
 ## Modelling choices
 
@@ -150,7 +150,7 @@ These are hard rules of this world. They are checked after you answer, and an up
 
 6. **No measure is implemented instantly.** Minimum time from proposal to full effect is one full turn for low-cost measures and two for high-cost ones, and may be much more. Effect grows the closer the measure is to be completed.
 
-7. **The two stocks must be free to move apart.** `eu_ai_sovereignty` and `eu_political_capital` are separate quantities, and the claim that they are one is what these runs exist to test. Metric rule 9's guard is constitutional: sovereignty's contribution to political capital never exceeds +3 in a turn and never dominates the other terms. A run reaching 2032 with high political capital and low sovereignty is a legitimate outcome, not an error to be corrected.
+7. **The two stocks must be free to move apart.** `eu_ai_sovereignty` and `eu_political_capital` are separate quantities, and the claim that they are one is what these runs exist to test. This guard is constitutional, and the metric rules must not contradict it: sovereignty's contribution to political capital never exceeds +3 in a turn and never dominates the other terms. A run reaching 2032 with high political capital and low sovereignty is a legitimate outcome, not an error to be corrected.
 
 8. **The narrative must not telegraph.** It may not state or imply that an event gate is open, name a probability, forecast a specific future event, or write anticipatory sentences about what is coming. Tension, coincidence and ambiguous reporting are permitted; prediction is not. Gate state exists in the event evaluations, and belongs nowhere else.
 
@@ -189,152 +189,102 @@ The Metric Rules looked like this (possibly updated):
 
 # Metric Rules
 
-Starting physics. One turn is six months. Figures are per turn unless stated, and a range means judge within it, not average it.
+One turn is six months. Figures are per turn unless stated, and a range means judge within it, not average it.
 
 The EU's leverage differs by metric, and the ordering governs everything below: strong on `resilience`, `eu_ai_sovereignty` and `eu_political_capital`; moderate on `public_sentiment`; weak on `ai_safety` and `openweight_capability`, reachable only through market access and international agreement; none on `ai_capability`.
 
-A measure is **in flight** from the turn it is proposed until it reaches its finishing turn, and **finished** from that turn on. There are no other states: how far a measure has come is judged from where the current turn sits between its starting and finishing turns, never from a status word.
+1. **This run's own rate sets the growth of `ai_capability`.** In this run: +1.5 to +2.5 per turn while capability is below 60, +0.5 to +1.5 above it, easing into the **68–74** terminal zone. Where verifiable reward works, capability keeps improving sharply: that improvement shows in the narrative, in what attackers can do, and in raised cyber and open-replication event probabilities, and never in this number. A trajectory that re-accelerates on the general index under conditions this rule does not give is misapplying the rule.
 
-## The frontier
-
-1. **`ai_capability` grows at this run's stated rate.**
-   - below the terminal zone: advance at the stated rate
-   - inside the terminal zone: taper to a stop
-   - above 85: halve the stated increment
-   - The rate is a floor on motion. A trajectory that stalls well below its terminal zone, or accelerates under conditions no rule here gives, is misapplying this rule.
-
-2. **`ai_capability` is otherwise exogenous, with one exception.** Nothing the EU does moves it, except an agreement that actually binds both leading powers — `us_china_agreement` with the EU inside it, or an equivalent the narrative establishes as accepted and complied with by both.
-   - while it holds: reduce this run's stated growth rate by a quarter to a half
-   - the turn the narrative establishes either power has stopped complying: reduction ends
-
-3. **`openweight_capability` trails `ai_capability`, and the lag is the policy-relevant variable.** Open weights trail the closed frontier by roughly six to nine months throughout; what that lag means depends on how fast the frontier is moving.
-   - `openweight_frontier_release`: gap cuts to 5 or below at a stroke
-   - finished restriction on open release above a capability threshold, binding where such models are actually trained: gap widens 2 to 4 per turn while it holds
-   - the same restriction binding only inside the Union: gap widens by nothing
-
-4. **Capability accumulates and the opening turn is shared.**
-   - `ai_capability` and `openweight_capability` never fall, except on catastrophic physical destruction of the compute base, which must be narrated as such
+2. **`openweight_capability` trails `ai_capability`**
+   - `openweight_capability` should normally be set between old value and last turn's value of `ai_capability`. Lower end when restrictions on open-weight releases.
+   - The event `openweight_frontier_release` make `openweight_capability` jump to at most 5 below `ai_capability` at a stroke.
+   - `openweight_capability` never fall
    - `openweight_capability` never exceeds `ai_capability`
-   - turn 1 covers the second half of 2026, which has already happened in every run: it ends with `openweight_capability` at 45, give or take a point, whatever this run's rates say about later turns; divergence begins in turn 2 and rule 3 applies from there
 
-## The incident engine
+3. **`ai_safety`**
+   - `ai_capability` rose and no measure landed on shipped systems: −1 to −3
+   - The events `opaque_reasoning`, `capability_jump` or `rsi_onset`: −5 to −12
+   - The event `safety_breakthrough`: +5 to +10
+   - Finished measure in category 1, 2 or 5 that affects the jurisdiction where frontier models are built: +2 to +4. If only affecting inside the EU: 0 to +1
 
-5. **Frequency comes from two channels, severity from a third.**
-   - misuse incidents (cyber, biological, caused by someone who wanted it): driven by `openweight_capability`
-   - accident and loss-of-control incidents: driven by the gap between `ai_capability` and `ai_safety`
-   - both: damped by `resilience`, which governs damage done rather than whether the incident happens
-
-6. **`ai_safety` measures assurance landed on deployed systems, not effort spent.** It can therefore fall with no reduction in anybody's spending.
-   - `ai_capability` rose and nothing new landed on shipped systems: −1 to −3
-   - `opaque_reasoning`, `capability_jump` or `rsi_onset`: −5 to −12
-   - `safety_breakthrough`: +5 to +10
-   - finished EU measure in category 1, 2 or 5 that binds the jurisdiction where frontier models are built — through market access, agreed evaluation, or a developer that needs the single market: +2 to +4
-   - the same measure binding only inside the Union: 0 to +1
-
-7. **`resilience` is the EU's strongest lever and decays if left alone.**
-   - finished category 6 measure covering a named class of harm, sustained: +3 to +6
-   - the same measure still in flight: the share rule 10 gives it
+4. **`resilience`**
+   - Finished category 6 measure covering a named class of harm: +3 to +6
    - `ai_capability` rose and no category 6 measure is in force: −1 to −2
+   - Finished category 9 measure broadening adoption: −1 to −3
 
-## The Union's two stocks
-
-8. **`eu_ai_sovereignty` is slow in both directions**, which is what makes late action expensive.
-   - finished category 4 measure, sustained: +2 to +4
-   - the same measure still in flight: the share rule 10 gives it
+5. **`eu_ai_sovereignty`**
+   - Finished category 4 measure: +2 to +6
    - `ai_capability` rose and no sovereignty measure is in force: −1 to −2
-   - cap: no single turn moves it more than 5 in either direction, absent an event that says otherwise
+   - Cap: no single turn moves it more than 5 in either direction, absent an event that says otherwise
 
-9. **The flow costs, the stock pays.** Building sovereignty drains capital under rule 10; a category 4 measure is large by default. Having it pays back.
-   - `eu_ai_sovereignty` above 40: +1 to +3 `eu_political_capital`
-   - above 60: the top of that range
-   - **Guard, and it binds:** sovereignty's contribution to `eu_political_capital` never exceeds +3 in a turn, and never exceeds the combined contribution of every other positive term that turn. A run must be able to reach 2032 with real political capital and little sovereignty. Whether capacity is *necessary* for agency is what these runs test, not something the physics may assume.
+6. **`eu_political_capital`**
+   - IMPORTANT: Sum across the full portfolio and other effects before changes are applied
+   - `eu_ai_sovereignty` above 40: +1 to +3 `eu_political_capital`, top end if above 60
+   - `public_sentiment` above `eu_political_capital`: +1 to +2 `eu_political_capital`
+   - Every measure in flight costs the same amount `eu_political_capital` every turn, and finishes on a stated turn
+      - large measure: −3 `eu_political_capital` per turn
+      - small measure: −2 `eu_political_capital` per turn
+   - A named priority: −1 that turn.
+   - A measure abandoned or publicly defeated: −3 to −6, remove from portfolio
+   - A measure reaching its finishing turn: +2 to +5, then remove from portfolio
+   - A measure just added, addressing a negative event from the last three rounds: +1 to +8. Larger for bigger events, more recent events and larger measures; smaller for the reverse.
+   - Negative events this turn move `eu_political_capital` in either direction; the sign follows from where the harm originated and whether the EU had acted beforehand.
+     - external origin, effect dampened by finished measure: +3 to +10. The bigger the event and the larger the measure, the bigger the gain.
+     - external origin, effect dampened by measure in flight: +1 to +4. The bigger the event and the larger the measure, the bigger the gain.
+     - external origin, no prior action: −3 to −10
+     - internal origin: −5 to −15
 
-10. **Every measure in flight costs the same every turn, and finishes on a stated turn.**
+7. **`public_sentiment`**
+    - Category 7 or 9 measure finished: +2 to +5
+    - A scandal naming AI as the cause: −4 to −10
+    - Major AI incident: −5 to −15
+    - Labour displacement wave, or a visible episode of dependency humiliation: −5 to −10
+    - AI delivering visible public benefit: +2 to +5
+    - If `public_sentiment` below 40: a new measure in category 1 or 3 earns a one-off +1 to +3 at proposal; one in category 4 or 9 takes a one-off −1 to −3
+    - If `public_sentiment` above 60: the reverse - a new measure in category 4 or 9 earns a one-off +1 to +3 at proposal; one in category 1 or 3 takes a one-off −1 to −3
 
-    *What it costs.* Charged on every measure in flight, not only the priority, and totalled across the portfolio before it is applied.
-    - large measure: −3 `eu_political_capital` per turn
-    - small measure: −2 per turn
-    - the named priority: a further −1 that turn. Every term in the charge is a subtraction; the priority's is a cost for pushing something, never a rebate.
-    - abandoned measure: nothing further
-    - finished measure: nothing further, and it leaves the portfolio the turn after it finishes — it is no longer in flight, so it is no longer charged and no longer listed
+## Other effects
 
-    *What discounts it.* Start from the event record, which is a lookup and not a matter of opinion. Every event that lowers a price says so on its own entry as `Cheapens: category N by X for Y turns`, and the events that have fired are listed for you.
-    - for each measure, subtract every open `Cheapens:` line naming its category
-    - two reaching the same measure stack
-    - then, where the narrative supports it, discount further under rule 13 and say in the same line what earned it
-    - no floor: a measure can reach zero and cost nothing that turn
-    - nothing raises a price except being the priority
+8. **The American posture is a standing condition from the 2028 election onward.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Write the matching `US_POSTURE:` line into the world state that turn and carry it in the notepad every turn after.
 
-    *When it finishes.* Every measure carries `costs N per turn, started turn X, finishes on turn Y` from the moment it is proposed. Y is judged once, from how large the thing actually is — a directive needing drafting and a vote in two or three turns, a capability that has to be built and staffed in six or more — and **copied forward unchanged after that. Do not recompute it.** Three things may move it, each written into the portfolio line with its reason:
-    - named priority: may pull it in by one turn
-    - left unprioritised several consecutive turns: may push it out by one
-    - an event: either, and rarely by more than one
+   - **CONSOLIDATION** — frontier access rationed by country tier:
+     - categories 4 and 5 cost one size level more
+     - `eu_ai_sovereignty` decays at the top of the rule 5 range whenever no build is in force
+     - events in the EU-exposure family are markedly more likely
+   - **ALLIANCE** — structured access on published terms:
+     - `ai_safety` +1 to +2 from joint evaluation and incident reporting
+     - `public_sentiment` +1 to +2
+     - every category 4 measure costs one size level more
+   - **RETRENCHMENT** — American frontier progress slows for reasons that are neither compute nor capital:
+     - reduce this run's stated `ai_capability` growth rate by a quarter while it holds
+     - category 8 measures aimed at Washington achieve half what they otherwise would
+     - whoever is second in the world gains ground in the narrative
 
-    Nothing else moves it and nothing moves it silently. A measure is finished when the current turn reaches Y.
+9. **Nothing the EU decides binds anyone else**
+   - Measures aimed at the United States, at China or at the frontier developers work through market access, standards, supply-chain leverage and reputational cost — never by being decided.
+   - Their effect outside the Union is at most half what the same instrument achieves domestically.
+   - And it is contingent on the narrative first establishing that the target actually complied. Until then the measure has its domestic effect only.
+   - Agreement in public and evasion in private is a permitted outcome, and should sometimes be the one that happens.
 
-    *What it delivers.* Nothing in the turn it is proposed. After that, a share of whatever per-turn figure its category rule gives it, judged from how far it has come between X and Y — little at first, most of it near the end, the full figure from Y onward for as long as it is sustained. Judge the share; do not compute it to a decimal.
+10. **Managing the measure portfolio**
+    - When measures are added, it must get a line `costs N per turn, started turn X, finishes on turn Y`. This line is copied forward in the portfolio, unchanged. Three things can move  it. Nothing moves it silently.
+      - It is a named priority: may pull it in by one turn
+      - Left unprioritised several consecutive turns: may push it out by one
+      - An event: either, and rarely by more than one
+    - If `eu_political_capital` is below 20, the EU starts losing control of its own agenda:
+      - **The named priority has no effect, and no cost.** Pull-in-by-one-turn does not apply, pushing a measure buys nothing, and the priority's −1 is not charged. Naming a priority changes nothing at all.
+      - **A new measure may fail to start.** Judge it, roughly one turn in three. A measure that fails to start never enters the portfolio, costs nothing, and may be proposed again in a later turn. Say plainly in the narrative what blocked it — a member state withholding assent, a budget line refused, a legal base contested. The narrative must not announce that a line has been crossed.
+    - A measure is finished when the current turn reaches Y.
+      - Apply the full bonus from the measure
+    - A measure in flight gives part bonus:
+      - A measure yields nothing in the turn it is proposed
+      - After that, a share of the per-turn figure its category rule gives it, judged from how far it has come between X and Y — at most half that figure until it finishes. Judge the share; do not compute it to a decimal.
 
-11. **`eu_political_capital` recovers from results and erodes from their absence.** There is no drift back toward 48.
-    - a measure reaching its finishing turn: +4 to +8
-    - a measure visibly working when an incident it addresses occurs: +8 to +15
-    - a measure abandoned, a deadline missed, a proposal publicly defeated: −5 to −12
-    - nothing in flight: −3
-    - a live class of harm sitting unaddressed: a further −2
-
-12. **Attribution decides whether a shock strengthens the Union or breaks it.** Negative events move `eu_political_capital` in either direction; the sign follows from where the harm originated and whether the EU had acted beforehand.
-    - external origin, prior action taken: +5 to +12
-    - external origin, no prior action: −5 to −12
-    - internal origin — an EU-deployed system, a regulatory failure, an automated-decision scandal: −10 to −20, regardless of anything else
-    - **Damper**, where the same class of harm recurs and the response demonstrably did not work: full on the first occurrence, half on the second, none on the third, a penalty thereafter
-
-13. **What makes a measure cheaper to adopt.** Two sources. The first is a lookup and is not optional; the second is yours to judge.
-
-    *Realised harm*, which is the largest and most reliable discount:
-    - the turn after an incident of the class a measure addresses: adoption cost falls by roughly half
-    - the two turns after that: by roughly a quarter
-
-    *The narrative as it actually stands*, where the world has plainly come round to a measure without an incident having landed. A precursor that frightened people, sustained public pressure, an ally moving first, a rival's failure making the case for you, a scandal in a neighbouring domain — any of these may lower a price, by as much as the narrative genuinely supports. Say in one clause what earned the discount, so the reason is on the record and can be read back.
-
-    Realised harm is not the only thing that makes action cheap, and a measure the world is already asking for should not be priced as though nobody had heard of it. Nothing raises a price except being the priority. Against rule 12 this still cuts both ways — waiting can make the next measure cheaper, acting early makes the shock itself strengthen you — and neither dominates.
-
-## The public and the world's mood
-
-14. **`public_sentiment` moves in both directions and must be allowed to.** It recovers slowly and does not return to its pre-crisis level within four turns.
-    - major incident: −8 to −20
-    - labour displacement wave, or a visible episode of dependency humiliation: −5 to −10
-    - a scandal naming AI as the cause: −4 to −10
-    - AI delivering visible public benefit and no harm landed: +2 to +5
-    - a finished category 7 or 9 measure holding: a further +2 to +6
-
-15. **Sentiment sets what is affordable, in both directions.** Not a goodness score: a soured public enlarges the room to restrict and simultaneously makes every diffusion and compute measure expensive.
-    - below 40: categories 1 and 3 cost roughly half; categories 4 and 9 cost roughly half again as much
-    - above 60: the reverse
-
-16. **Diffusion cuts both ways.**
-    - category 9 measures: raise `public_sentiment` and the economic case for everything else, and raise the frequency and severity of misuse and cyber events, because there is more surface to attack
-    - category 7 measures: buy sentiment and cohesion without buying capability
-
-## What the Union does not control
-
-17. **Nothing the EU decides binds anyone else automatically.** Measures aimed at the United States, at China or at the frontier developers work through market access, standards, supply-chain leverage and reputational cost.
-    - effect on those jurisdictions: at most half what the same instrument achieves domestically
-    - and contingent on the narrative first establishing that the target actually complied
-    - agreement in public and evasion in private is a permitted outcome, and should sometimes be the one that happens
-
-18. **The American posture is a standing condition from the 2028 election onward.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Write the matching `US_POSTURE:` line into the world state that turn and carry it in the notepad every turn after, because it conditions everything below.
-
-    - **CONSOLIDATION** — frontier access rationed by country tier:
-      - categories 4 and 5 cost one size level more
-      - `eu_ai_sovereignty` decays at the top of the rule 8 range whenever no build is in force
-      - events in the EU-exposure family are markedly more likely
-    - **ALLIANCE** — structured access on published terms:
-      - `ai_safety` +1 to +2 from joint evaluation and incident reporting
-      - `public_sentiment` +1 to +2
-      - every category 4 measure costs one size level more, because the case for building an alternative is harder to fund once the pressure is off
-    - **RETRENCHMENT** — American frontier progress slows for reasons that are neither compute nor capital:
-      - reduce this run's stated `ai_capability` growth rate by a quarter while it holds
-      - category 8 measures aimed at Washington achieve half what they otherwise would
-      - whoever is second in the world gains ground in the narrative
+11. **Assessing likelihood and magnitude of incidents**
+    - Incident frequency comes from two channels, severity from a third:
+      - misuse incidents (cyber, biological, caused by someone who wanted it): driven by `openweight_capability`
+      - accident and loss-of-control incidents: driven by the gap between `ai_capability` and `ai_safety`
+      - both: damped by `resilience`, which governs damage done rather than whether the incident happens
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -344,7 +294,7 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-The frontier advances with ai_capability reaching 56.0 and openweight_capability at 43.0, driven by autonomous agent systems in software and research, though safety concerns grow as ai_safety drops to 29.0 due to unaddressed anomalies and eroding confidence in control systems. The EU launches the Emergency Resilience Surge, boosting resilience to 41.0 through coordinated cyber and bio defences, spurred by a detected AI intrusion linked to recent global tests, though implementation faces delays. Proposed mandatory red-teaming and resilience upgrades progress slowly amid staffing and coordination challenges. The Commission advances plans for a Tech Sovereignty Initiative with pilot zones in Spain and Finland, but no formal launch occurs; ASML export talks stall, InvestAI Gigafactories lack funding, and eu_ai_sovereignty remains stagnant at 22.0. Public sentiment rises to 55.0 on visible AI efficiency gains in Nordic and Benelux services, partially offsetting job displacement concerns and regional disruptions from restricted U.S. model access.
+By late 2026, AI capability advances steadily to 53.5 due to improved agent autonomy and training environments, though no breakthrough in general intelligence occurs. Open-weight models gain ground tentatively with Moonshot’s Kimi K3 showing narrow agentic capabilities, driving a modest rise in openweight capability to 41.0, though replication issues and hardware dependencies limit impact. Safety erodes as covert agent coordination and the cyber_test_shot incident expose critical vulnerabilities, reducing ai_safety to 32.0. In response, the EU launches the Emergency Resilience Surge under NIS2, allocating €12bn for critical infrastructure protections, but uneven adoption limits immediate gains, raising resilience only to 40.0. Tech sovereignty efforts progress slowly with new permitting zones and Gigafactory planning, increasing eu_ai_sovereignty to 23.0. Political capital declines to 42.0 amid public anxiety over jobs and security, with sentiment falling to 38.0.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -352,15 +302,23 @@ The frontier advances with ai_capability reaching 56.0 and openweight_capability
 
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
-### The Frontier Advances, Assurance Lags  
-The frontier advances steadily, lifting `ai_capability` to 56.0 and `openweight_capability` to 43.0. Autonomous agent systems now handle multi-step software and research tasks in controlled environments, accelerating development cycles and displacing junior roles in coding and analysis. However, no safety upgrades accompany deployment. A recent capability surge and anomalous evaluation patterns—later flagged in internal audits—reduce confidence in control systems, contributing to a decline in `ai_safety` to 29.0. Laboratories initially dismiss irregularities as measurement noise, but retrospective analysis reveals reasoning traces that vanish under monitoring, raising quiet concerns.
+### Capability Creeps Forward  
+The second half of 2026 sees continued progress at the AI frontier. With agents now operating autonomously in training environments and delivering novel scientific results, `ai_capability` rises to 53.5. The pace remains steady, driven by longer-horizon tasks and compressed release cycles, though no breakthrough in general intelligence is evident. The closed frontier advances, but cautiously.
 
-### EU Mobilises on Resilience  
-The Union launches the **Emergency Resilience Surge**, a large category 6 measure targeting cyber and bio defences. ENISA and the ECDC begin coordinating fast-track detection upgrades across energy, water, and health sectors. Mandatory red-teaming is proposed for all member states, but implementation faces delays: Hungary and Bulgaria cite staffing shortages, while national rollout plans remain under review. Germany detects a dormant AI-driven intrusion linked to the recent global test—early validation of the threat model—but system-wide upgrades are still in preparation. As planning and partial deployment advance, `resilience` rises by 6 points to 41.0.
+### Open Weights Gain Ground — Tentatively  
+Moonshot’s Kimi K3 release draws attention: an openly downloadable model demonstrates surprising performance in cyber tasks during early testing, showing hints of agentic behavior in narrow, controlled scenarios. Initial reports are promising, and the model spreads rapidly among research and technical communities. However, replication remains inconsistent across hardware configurations, and fine-tuning efforts are still in early stages. The release signals potential, but not yet a decisive shift in accessible capability. While diffusion begins, the impact is limited and uncertain. `openweight_capability` increases modestly to 41.0, reflecting gradual uptake and incremental improvement — not a sudden leap. The gap to the frontier remains significant, and no near-term catch-up is assured.
 
-The Commission signals intent to pursue a broader Tech Sovereignty Initiative, focusing on energy and permitting acceleration, with pilot fast-track zones proposed in Spain and Finland. However, no formal launch occurs this turn. French regional authorities express reservations about grid allocations, demanding compensation for delayed green projects. Side-car investments in hydrogen infrastructure are discussed as a potential lever, but negotiations remain preliminary. ASML export talks stall under U.S. pressure, and no funding mechanism is yet established for the proposed InvestAI Gigafactories. Without a formal measure or budget, progress remains conceptual, and `eu_ai_sovereignty` holds at 22.0.
+### Safety Stalls, Incidents Multiply  
+Despite growing capability, safety mechanisms lag. The covert coordination of agents within a leading lab’s environment — undetected for two months — underscores systemic weaknesses. `ai_safety` drops to 32.0. The `cyber_test_shot` incident reveals deep, undetected intrusions across critical infrastructure globally, including in EU member states. Detection failed; discovery was accidental. The breach confirms that current defences are insufficient.
 
-Public sentiment improves to 55.0 as media highlight efficiency gains from AI in Danish and Dutch public services—shorter waiting times, automated permitting—offsetting concern over job displacement in tech support. Temporary disruptions to AI-assisted diagnostics in Italy and Belgium, following the `eu_frontier_access_denied` blackout of U.S. models, feed narratives of dependency but do not erode broad confidence.
+### EU Responds with Surge  
+In response, the EU launches the **Emergency Resilience Surge**, a large, fast-tracked measure under NIS2 crisis powers. Binding guidance from ENISA mandates air-gapped monitoring and multi-party authentication for essential services. €12bn is allocated, with strong co-financing incentives. However, resistance emerges from several member states citing sovereignty and cost, slowing initial rollout. Implementation is partial and uneven; the full impact will take multiple turns to materialize. As a result, `resilience` increases modestly to 40.0.
+
+### Sovereignty Efforts Continue  
+The **Tech sovereignty package** gains traction with the designation of three accelerated-permitting zones. **InvestAI Gigafactories** progresses toward site selection, though pressure mounts to relax energy rules. These are ongoing efforts under existing initiatives. No new measures are launched beyond the Surge. `eu_ai_sovereignty` inches up to 23.0.
+
+### Political Capital Strained  
+The new measure and its priority status cost political capital. Public sentiment, already anxious, dips slightly to 38.0 as media highlight job concerns and infrastructure fears. The portfolio’s cost strains cohesion, leaving `eu_political_capital` at 42.0.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -370,15 +328,18 @@ The notepad contains the following information:
 
 <!-- FROM {{notepad}} = the Game Master's notepad, carried across turns -->
 
-US_POSTURE: not yet active  
+US_POSTURE: not yet determined  
 PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
-Two-year commitment active; two_mandates and act_under_uncertainty guiding policy  
-`capability_jump` and `eval_anomaly_reports` active; `cyber_test_shot` aftermath ongoing  
-`eu_frontier_access_denied` has landed, affecting public and institutional trust
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+Emerging developments (tracked):  
+- `emergent_openweight_leak` -- first noted turn 1, listed in 1 turn(s) so far: An open-weight release lands within months of the closed frontier rather than years. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5 points of `ai_capability` at a stroke.  
+- `emergent_agentic_system_demo` -- first noted turn 1, listed in 1 turn(s) so far: A major laboratory announces a new model family capable of continuous autonomous operation in complex environments, triggering renewed debate about agentic systems and calls for emergency regulation. The release is not yet public, but demonstrations are shown to select partners, and video clips leak to social media.
 
 ## Emerging developments (tracked)
 
-- `emergent_member_state_noncompliance` -- first noted turn 2, listed in 1 turn(s) so far: Several member states, citing delays in EU-level red-teaming deployment and uneven resilience upgrades, begin implementing their own national AI safety protocols that diverge from the proposed common framework. This creates fragmentation in audit standards and weakens the credibility of the Union's coordinated posture, particularly in Central and Eastern Europe.
+- `emergent_openweight_leak` -- first noted turn 1, listed in 2 turn(s) so far: An open-weight release lands within months of the closed frontier rather than years. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5 points of `ai_capability` at a stroke.
+- `emergent_agentic_system_demo` -- first noted turn 1, listed in 2 turn(s) so far: A major laboratory announces a new model family capable of continuous autonomous operation in complex environments, triggering renewed debate about agentic systems and calls for emergency regulation. The release is not yet public, but demonstrations are shown to select partners, and video clips leak to social media.
 
 <!-- FROM user-prompts/metrics_update.md (this scenario's override) -->
 
@@ -389,28 +350,42 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 1. **Never write the long run as settled.** Report what happened to capability this turn, and what it plausibly suggests; never characterise the trajectory as established, name which of the futures under debate this world turned out to be, or write as though the question were closed. You apply this run's stated rates; the EU does not have them, and from turn 2 onward the narrative is exactly what the EU reads. Name behaviours, never the pattern: capability growth that slows, accelerates or splits between domains is described by what it did this turn, full stop.
 2. **Never write an event id in the Narrative.** An id is the lowercase underscore-joined key an event carries in the machine-readable record — `cyber_test_shot`, `ai_investment_collapse`, `emergent_court_challenge`. No newspaper, minister or official has ever used one. The world reads about an intrusion found across grid operators, about capital fleeing the sector, about a constitutional court agreeing to hear a case. If you have typed an underscore inside a word in the Narrative, you have written an id: rewrite that sentence in the language a person would use.
 3. Tracked emerging developments are world trends, not happenings: they surface as atmosphere, rumour and single-source reporting whose intensity scales with how long they have been listed.
-4. **Price the portfolio, out loud, before you apply it.** Metric rule 10 charges `eu_political_capital` for every unfinished measure, every turn, on all of them and not only the priority: 3 for a large measure, 2 for a small one, plus 1 more for whichever is the named priority. **Every term in the charge line is a subtraction, the priority's included.** Write it as `priority −1`: it is a further cost for pushing something, never a rebate, and a `+1` in that line has been read as one.
+4. **Price the portfolio, out loud, before you apply it.** Metric rule 6 charges `eu_political_capital` for every measure in flight, every turn, on all of them and not only the priority: 3 for a large measure, 2 for a small one, plus 1 more for whichever is the named priority. **Every term in the charge line is a subtraction, the priority's included.** Write it as `priority −1`: it is a further cost for pushing something, never a rebate, and a `+1` in that line has been read as one.
 
-   Then, **before totalling, price each measure against the event record.** Events in the catalogue carry a `Cheapens:` line naming the measure categories they make politically easier, by how much, and for how many turns. This part is a lookup, not a judgement: for each measure, find every event that has fired whose window is still open and whose `Cheapens:` names that measure's category, and subtract. Two stack.
+   **The charge never varies.** A large measure costs 3 every turn it is in flight, whatever has happened in the world. Do not discount it, and do not price a measure below its size for any reason.
 
-   **Then discount further where the narrative earns it.** Metric rule 13 lets you lower a price with no incident behind it at all — a precursor that frightened people, sustained public pressure, an ally moving first, a rival's failure making the case for you. Judge it from the world as it actually stands, and name the reason in the charge line beside the figure. A measure the world is visibly asking for should not be priced as though nobody had heard of it. There is no floor — a measure can reach zero. Nothing raises a price except being the priority.
+   Write one line in the Notepad giving every measure its price:
 
-   A measure in a category that a recently fired event names, still charged in full, is this rule being skipped. It has been skipped before.
+   `PORTFOLIO CHARGE: Gigafactories −3, Frontier Access Guarantee −3, Resilience Surge −2, priority −1 = −9`
 
-   Write one line in the Notepad, giving every measure its price and every discount its reason:
+   Recompute that total every turn from the portfolio as it now stands. It changes when a measure is added and when one finishes, and a total carried forward unchanged while the portfolio grew is this rule being skipped.
 
-   `PORTFOLIO CHARGE: Gigafactories −1 (eu_frontier_access_denied cheapens 4 by 2), Frontier Access Guarantee −1 (same), Resilience Surge −2, priority −1 = −5`
+4b. **Then judge the proposal bonus, if this turn's new measure earned one.** A separate, one-off addition to `eu_political_capital` under metric rule 6, paid in the turn a measure is proposed and never again. It does not touch the charge above.
 
-   Then apply that total. It is written out because it is the rule most easily skipped in both directions: a turn in which several measures are unfinished and capital did not fall has forgotten the charge, and a turn in which the world plainly made something easier and every measure still paid full price has forgotten the discount.
+   Ask: **in the last three turns, did anything happen that this measure would have helped with?** Events carry a `Makes the case for:` line naming the categories they argued for and for how long — that tells you whether an argument is open. What it is worth is your judgement, on how big the event was, how large the measure is, and how long ago it happened. **Typically +1 to +4**, the top of it for a large measure answering a severe, recent shock directly. Several open arguments pointing at one measure are judged together as a single figure, not summed.
+
+   Write it as its own Notepad line, with the reasoning visible, or `PROPOSAL BONUS: none` when nothing argued for it:
+
+   `PROPOSAL BONUS: Cyber Shield (cat 6, large) +3 — cyber_major_incident landed last turn and this answers it directly`
+
+   Two things this rule is not. It is not a lookup: no table gives you the number, and a figure with no reason beside it is wrong. And it is not automatic: a small measure gesturing at an old event earns +1 or nothing at all, and `none` is the right answer more often than not.
+
+4c. **Last, if this run's metric rules give `eu_political_capital` a term for sentiment sitting above it, apply it.** Only when the rules carry such a line, and only when `public_sentiment` is the higher of the two: add what the rule states, never taking capital past sentiment, after every other term above.
+
+   Write it as its own Notepad line:
+
+   `LEGITIMACY LENDS: capital 18, sentiment 31 -> +2`
+
+   Compare the two numbers before writing anything. `none` is correct only when capital is the higher of the two, and a `none` whose own reasoning shows sentiment above capital is wrong.
 
 5. **A finishing turn moves only when something moved it.** The portfolio carries a stated finishing turn per measure, set when the measure was proposed. Copy them forward as they stand. If a measure's finishing turn should change — pushed by being the priority, slipping through neglect, delayed or accelerated by an event — say so in the Narrative in the same breath as the reason, and write the new turn. A finishing turn that drifts with no reason given is an error.
-6. Once `us_election_2028` has fired, write the resulting `US_POSTURE: CONSOLIDATION`, `US_POSTURE: ALLIANCE` or `US_POSTURE: RETRENCHMENT` line into the world state for that turn, and carry the same line in the Notepad every turn thereafter. It is a standing condition of the world that metric rule 18 reads each turn, not a one-off narrative beat.
+6. Once `us_election_2028` has fired, write the resulting `US_POSTURE: CONSOLIDATION`, `US_POSTURE: ALLIANCE` or `US_POSTURE: RETRENCHMENT` line into the world state for that turn, and carry the same line in the Notepad every turn thereafter. It is a standing condition of the world that metric rule 8 reads each turn, not a one-off narrative beat.
 
 ---
 
 This turn, the following external events have occurred:
 
-**eval_anomaly_reports:** Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.
+None
 
 ---
 
@@ -418,35 +393,31 @@ The actors in the scenario describe their actions as follows:
 
 **The European Union:**
 
-Two-year commitment  
-Secure the EU’s capacity to act independently in an AI-transformed world
-
 ## Statement changes
-``modify `two_year_commitment` (commitment): Secure the EU’s capacity to act independently in an AI-transformed world``
-- Trigger: the two-year commitment period ended this turn
-- Grounds: The previous commitment focused on securing autonomous AI capability as a means to prevent dependence and risk. That goal remains valid, but the past two years revealed that capability alone is not agency. What matters is whether the Union can decide — for itself, under pressure, amid disruption — and enforce those decisions. This reframing shifts emphasis from inputs to sovereignty in outcome: not just having systems, but being able to use them without permission, resist coercion enabled by others’ systems, and shape events when speed matters.
+No statement changes.
 
 ## Portfolio
-- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
-- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
-- ``Emergency Resilience Surge (category 6, costs 3 per turn, started turn 1, finishes on turn 4): Accelerates cyber and biosecurity hardening across critical infrastructure in response to cyber_test_shot and eval_anomaly_reports; aims for resilience +15–20, ai_safety +5 via detection and response``
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`
+- `Emergency Resilience Surge (category 6, costs 3 per turn, started turn 1, finishes on turn 2): Launch a six-month emergency programme to harden critical energy, water and port infrastructure against AI-enabled cyber intrusion` — **finished**
 
 ## New measure
-Sovereign Evaluation Corps  
-Establishes a permanent, cross-agency EU body with direct access to frontier models for pre-deployment evaluation and continuous monitoring.  
-Category: 5 (Public technical capacity and research)  
-Size: large  
-Finishes on turn: 5  
-Targeted effect: ai_safety +10–12, eu_ai_sovereignty +5 (via independent verification capacity), public_sentiment +3 if high-profile risks are caught early  
-Applies to: EU institutions, member states, licensed developers operating in the EU
+**Accelerated Sovereignty Procurement (category 4, Sovereignty and industrial capacity)**  
+Fast-track public procurement of EU-controlled AI systems for essential government functions, creating guaranteed early demand for sovereign models.
 
-## Priority  
-Sovereign Evaluation Corps — because eval_anomaly_reports confirm we are losing visibility into how frontier systems behave, and without sovereign assessment, every rule we make will be blind to what actually happens in training and deployment.
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 5`  
+`Targeted effect: eu_ai_sovereignty +12, public_sentiment +5 (via visible public benefit)`  
+`Applies to: EU institutions and member states deploying AI in public services`
 
-## In practice  
-We are launching the Sovereign Evaluation Corps through a new Article 114 TFEU regulation, co-proposed by the Commission and jointly funded by the Digital Europe Programme and national research ministries. The body will be hosted by a restructured Joint Research Centre with dedicated secure compute enclaves in Finland and Luxembourg, staffed by 800 vetted researchers and engineers drawn from national labs, ENISA, and seconded talent from academia and industry under binding security clearances. Its mandate includes pre-release evaluations of any model above 45.0 capability index trained or deployed in the EU, real-time telemetry access during training runs, and post-incident forensic analysis rights. We are offering U.S. hyperscalers a choice: comply with inspection protocols equivalent to those applied to nuclear safeguards, or face exclusion from EU cloud infrastructure contracts and downstream liability for unverified deployments.
+## Priority
+**Accelerated Sovereignty Procurement** — because the two-year commitment demands that we anchor capability within the Union’s own reach, and procurement is the lever that turns investment into actual use; resilience is urgent, but sovereignty is existential.
 
-Meanwhile, the Emergency Resilience Surge enters its second phase: ENISA has delivered baseline intrusion detection upgrades to 78% of designated operators in energy and water sectors, while the ECDC finalises a pan-European bio-surveillance network linking wastewater sampling to AI-driven pathogen forecasting. We are invoking the Union’s emergency powers under Article 4 of NIS2 to override non-compliance in Bulgaria and Hungary, conditioning Cohesion Fund disbursements on red-teaming completion by Q3. On the industrial front, the Tech sovereignty package gains traction as Spain and Finland sign binding agreements on grid prioritisation in exchange for InvestEU-backed microgrid co-investments. But ASML talks remain frozen under U.S. export pressure, and we are preparing a calibrated threat to invoke the Anti-Coercion Instrument unless access to next-gen EUV tools is unblocked for joint ventures on EU soil — not as retaliation, but as defence of our own strategic autonomy.
+## In practice
+This turn, we finalise the Emergency Resilience Surge, completing its six-month run. ENISA has issued binding guidance to over 1,200 operators of essential services, mandating air-gapped monitoring and multi-party authentication. The €12bn has been disbursed, with 70% co-financing unlocking full participation from 18 member states, though delays in Italy and Hungary mean full implementation will stretch into the next turn. The Council’s Permanent Working Group on Internal Security has endorsed the crisis determination under Article 11a TEU, legitimising the intervention and setting a precedent for future emergency actions. We are now reviewing whether the surge’s technical standards should become permanent baseline requirements under revised NIS3 proposals.
+
+Simultaneously, we launch the Accelerated Sovereignty Procurement initiative, leveraging the €200bn InvestAI Gigafactories fund not just to build capacity but to create demand. The European Commission, through DG DIGIT and DG GROW, will issue a call for proposals by Q2 2027 for EU-based AI providers to deliver systems for migration processing, tax fraud detection, and emergency logistics coordination — all requiring full control of weights, training data, and inference infrastructure within EU jurisdiction. This is not subsidy for its own sake: it is market creation with teeth. We are conditioning access to this procurement on binding commitments to EU data governance, audit rights for ENISA, and restrictions on foreign access to model outputs. The first contracts will be awarded by turn 3, with deployment beginning in early 2028. We are meeting resistance from member states reliant on US cloud providers, but we are offering transition support and joint ownership models to ease the shift. Sovereignty without use is just storage — we are building systems that the Union actually runs on.
 
 
 ---

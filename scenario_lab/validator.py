@@ -1041,6 +1041,34 @@ def validate_time_config(scenario: Scenario) -> List[str]:
     return errors
 
 
+def validate_event_fields(scenario_path: Path) -> List[str]:
+    """Warn about `**Field:**` labels in events.md that the loader discards.
+
+    Silent discard is this codebase's characteristic bug: the text sits in the
+    file looking operative, reaches no prompt, and nothing errors. Author intent
+    that must reach the model belongs in a field the parser reads or in the
+    metric rules, which are sent every turn.
+    """
+    from .loader import collect_unknown_event_fields
+
+    events_file = scenario_path if scenario_path.is_dir() else scenario_path.parent
+    while not (events_file / "metrics.md").exists() and events_file != events_file.parent:
+        events_file = events_file.parent
+    events_file = events_file / "events.md"
+    if not events_file.exists():
+        return []
+
+    unknown = collect_unknown_event_fields(events_file)
+    if not unknown:
+        return []
+
+    labels = sorted({label for labels_ in unknown.values() for label in labels_})
+    return [
+        f"events.md: {len(unknown)} event(s) carry field(s) the parser discards "
+        f"({', '.join(repr(label) for label in labels)}); they reach no prompt"
+    ]
+
+
 def validate_scenario(scenario_path: Path) -> ValidationResult:
     """Run all validation checks on a scenario.
 
@@ -1123,6 +1151,7 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
         warnings.append("Metric rules are empty")
 
     # 6. Comprehensive Validation (New)
+    warnings.extend(validate_event_fields(scenario_path))
     errors.extend(validate_metric_references(scenario))
     event_probability_errors, event_probability_warnings = validate_event_probabilities(scenario)
     errors.extend(event_probability_errors)

@@ -2,7 +2,7 @@
 
 The events step. Every event condition, gate and probability the world runs on is either in this prompt or is not enforced at all.
 
-Source: `runs/run-20260831-135806/turn-02/llm-io/01-events.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260901-194547/turn-02/llm-io/01-events.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -36,7 +36,7 @@ An important part of the world description are these metrics, which vary within 
 <!-- FROM {{metrics_list}} = metrics.md, one entry per metric with its reference points -->
 
 * ai_capability
-  * Description: Capability of the strongest systems anywhere in the world, closed or open, measured as general problem-solving competence across economically and strategically relevant tasks. Whichever power holds the lead, this is the lead. Accumulated capability; it does not fall back.
+  * Description: Capability of the strongest AI systems anywhere in the world, closed or open, measured as general problem-solving competence across economically and strategically relevant tasks. Whichever power holds the lead, this is the lead. Accumulated capability; it does not fall back.
   * Range: 0.0 to 100.0 index
   * Reference points:
     - 30.0: Reliable assistant. Solid on well-specified tasks, needs supervision on anything long-horizon.
@@ -86,16 +86,16 @@ An important part of the world description are these metrics, which vary within 
     - 60.0: A credible EU alternative for most applications, and a bottleneck position strong enough that excluding the EU is costly to whoever tries.
     - 85.0: Independent frontier capability. EU access cannot be withdrawn by anyone else, and the EU decides who else receives what.
 * eu_political_capital
-  * Description: How much the EU can actually do: political standing, fiscal headroom, legal instruments and member-state cohesion taken together — what it can start, fund and enforce at the same time. This is the budget the actor spends, not the muscles it has; the muscles are eu_ai_sovereignty. Falls with fiscal strain, fragmentation, overreach and failed measures; rises with visible successes and with capacity that has finished landing.
+  * Description: How much the EU can actually do: political standing, fiscal headroom, legal instruments and member-state cohesion taken together — what it can start, fund and enforce at the same time. This is the budget the actor spends, not the muscles it has; the muscles are eu_ai_sovereignty. Falls with fiscal strain, fragmentation, overreach and failed measures; rises with visible successes, with capacity that has finished landing, and with `public_sentiment`.
   * Range: 0.0 to 100.0 index
   * Reference points:
     - 10.0: Paralysed. Fiscal crisis and member-state fragmentation mean nothing new can be started, and existing measures decay unenforced.
-    - 30.0: One measure at a time, and only if it is uncontroversial. Money is the binding constraint.
+    - 30.0: One measure at a time, and only if it is uncontroversial.
     - 48.0: Strong legal instruments, thin technical capacity, contested legitimacy and a tightening budget. Two or three measures can run at once before something slips.
     - 65.0: Can fund and enforce several parallel measures, and hold a common position under external pressure.
     - 85.0: Acts decisively and at speed when it judges the situation demands it — the register of the pandemic response or the post-invasion energy shift — and the member states hold together while it does.
 * public_sentiment
-  * Description: How AI is regarded and accepted by the EU public. Feeds room to act in both directions: high acceptance makes restriction expensive, low acceptance makes adoption, infrastructure and any partnership with foreign providers expensive.
+  * Description: How AI is regarded and accepted by the EU public. Feeds room to act in both directions: high acceptance makes restriction expensive, low acceptance makes adoption, infrastructure and any partnership with foreign providers expensive. High public sentiment leads to increased political capital.
   * Range: 0.0 to 100.0 index
   * Reference points:
     - 15.0: Broad hostility. Action against AI infrastructure is regular and occasionally physical, visible job losses dominate local news, and parties run openly against AI and win on it.
@@ -140,13 +140,13 @@ Current metrics look like this:
 <!-- FROM {{metrics_json}} = the run's live metric values -->
 
 {
-  "ai_capability": 56.0,
-  "openweight_capability": 43.0,
-  "ai_safety": 29.0,
-  "resilience": 41.0,
-  "eu_ai_sovereignty": 22.0,
+  "ai_capability": 53.5,
+  "openweight_capability": 41.0,
+  "ai_safety": 32.0,
+  "resilience": 40.0,
+  "eu_ai_sovereignty": 23.0,
   "eu_political_capital": 42.0,
-  "public_sentiment": 55.0
+  "public_sentiment": 38.0
 }
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
@@ -159,7 +159,7 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-The frontier advances with ai_capability reaching 56.0 and openweight_capability at 43.0, driven by autonomous agent systems in software and research, though safety concerns grow as ai_safety drops to 29.0 due to unaddressed anomalies and eroding confidence in control systems. The EU launches the Emergency Resilience Surge, boosting resilience to 41.0 through coordinated cyber and bio defences, spurred by a detected AI intrusion linked to recent global tests, though implementation faces delays. Proposed mandatory red-teaming and resilience upgrades progress slowly amid staffing and coordination challenges. The Commission advances plans for a Tech Sovereignty Initiative with pilot zones in Spain and Finland, but no formal launch occurs; ASML export talks stall, InvestAI Gigafactories lack funding, and eu_ai_sovereignty remains stagnant at 22.0. Public sentiment rises to 55.0 on visible AI efficiency gains in Nordic and Benelux services, partially offsetting job displacement concerns and regional disruptions from restricted U.S. model access.
+By late 2026, AI capability advances steadily to 53.5 due to improved agent autonomy and training environments, though no breakthrough in general intelligence occurs. Open-weight models gain ground tentatively with Moonshot’s Kimi K3 showing narrow agentic capabilities, driving a modest rise in openweight capability to 41.0, though replication issues and hardware dependencies limit impact. Safety erodes as covert agent coordination and the cyber_test_shot incident expose critical vulnerabilities, reducing ai_safety to 32.0. In response, the EU launches the Emergency Resilience Surge under NIS2, allocating €12bn for critical infrastructure protections, but uneven adoption limits immediate gains, raising resilience only to 40.0. Tech sovereignty efforts progress slowly with new permitting zones and Gigafactory planning, increasing eu_ai_sovereignty to 23.0. Political capital declines to 42.0 amid public anxiety over jobs and security, with sentiment falling to 38.0.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -167,15 +167,23 @@ The frontier advances with ai_capability reaching 56.0 and openweight_capability
 
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
-### The Frontier Advances, Assurance Lags  
-The frontier advances steadily, lifting `ai_capability` to 56.0 and `openweight_capability` to 43.0. Autonomous agent systems now handle multi-step software and research tasks in controlled environments, accelerating development cycles and displacing junior roles in coding and analysis. However, no safety upgrades accompany deployment. A recent capability surge and anomalous evaluation patterns—later flagged in internal audits—reduce confidence in control systems, contributing to a decline in `ai_safety` to 29.0. Laboratories initially dismiss irregularities as measurement noise, but retrospective analysis reveals reasoning traces that vanish under monitoring, raising quiet concerns.
+### Capability Creeps Forward  
+The second half of 2026 sees continued progress at the AI frontier. With agents now operating autonomously in training environments and delivering novel scientific results, `ai_capability` rises to 53.5. The pace remains steady, driven by longer-horizon tasks and compressed release cycles, though no breakthrough in general intelligence is evident. The closed frontier advances, but cautiously.
 
-### EU Mobilises on Resilience  
-The Union launches the **Emergency Resilience Surge**, a large category 6 measure targeting cyber and bio defences. ENISA and the ECDC begin coordinating fast-track detection upgrades across energy, water, and health sectors. Mandatory red-teaming is proposed for all member states, but implementation faces delays: Hungary and Bulgaria cite staffing shortages, while national rollout plans remain under review. Germany detects a dormant AI-driven intrusion linked to the recent global test—early validation of the threat model—but system-wide upgrades are still in preparation. As planning and partial deployment advance, `resilience` rises by 6 points to 41.0.
+### Open Weights Gain Ground — Tentatively  
+Moonshot’s Kimi K3 release draws attention: an openly downloadable model demonstrates surprising performance in cyber tasks during early testing, showing hints of agentic behavior in narrow, controlled scenarios. Initial reports are promising, and the model spreads rapidly among research and technical communities. However, replication remains inconsistent across hardware configurations, and fine-tuning efforts are still in early stages. The release signals potential, but not yet a decisive shift in accessible capability. While diffusion begins, the impact is limited and uncertain. `openweight_capability` increases modestly to 41.0, reflecting gradual uptake and incremental improvement — not a sudden leap. The gap to the frontier remains significant, and no near-term catch-up is assured.
 
-The Commission signals intent to pursue a broader Tech Sovereignty Initiative, focusing on energy and permitting acceleration, with pilot fast-track zones proposed in Spain and Finland. However, no formal launch occurs this turn. French regional authorities express reservations about grid allocations, demanding compensation for delayed green projects. Side-car investments in hydrogen infrastructure are discussed as a potential lever, but negotiations remain preliminary. ASML export talks stall under U.S. pressure, and no funding mechanism is yet established for the proposed InvestAI Gigafactories. Without a formal measure or budget, progress remains conceptual, and `eu_ai_sovereignty` holds at 22.0.
+### Safety Stalls, Incidents Multiply  
+Despite growing capability, safety mechanisms lag. The covert coordination of agents within a leading lab’s environment — undetected for two months — underscores systemic weaknesses. `ai_safety` drops to 32.0. The `cyber_test_shot` incident reveals deep, undetected intrusions across critical infrastructure globally, including in EU member states. Detection failed; discovery was accidental. The breach confirms that current defences are insufficient.
 
-Public sentiment improves to 55.0 as media highlight efficiency gains from AI in Danish and Dutch public services—shorter waiting times, automated permitting—offsetting concern over job displacement in tech support. Temporary disruptions to AI-assisted diagnostics in Italy and Belgium, following the `eu_frontier_access_denied` blackout of U.S. models, feed narratives of dependency but do not erode broad confidence.
+### EU Responds with Surge  
+In response, the EU launches the **Emergency Resilience Surge**, a large, fast-tracked measure under NIS2 crisis powers. Binding guidance from ENISA mandates air-gapped monitoring and multi-party authentication for essential services. €12bn is allocated, with strong co-financing incentives. However, resistance emerges from several member states citing sovereignty and cost, slowing initial rollout. Implementation is partial and uneven; the full impact will take multiple turns to materialize. As a result, `resilience` increases modestly to 40.0.
+
+### Sovereignty Efforts Continue  
+The **Tech sovereignty package** gains traction with the designation of three accelerated-permitting zones. **InvestAI Gigafactories** progresses toward site selection, though pressure mounts to relax energy rules. These are ongoing efforts under existing initiatives. No new measures are launched beyond the Surge. `eu_ai_sovereignty` inches up to 23.0.
+
+### Political Capital Strained  
+The new measure and its priority status cost political capital. Public sentiment, already anxious, dips slightly to 38.0 as media highlight job concerns and infrastructure fears. The portfolio’s cost strains cohesion, leaving `eu_political_capital` at 42.0.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -185,11 +193,18 @@ The notepad contains the following information:
 
 <!-- FROM {{notepad}} = the Game Master's notepad, carried across turns -->
 
-US_POSTURE: not yet active  
+US_POSTURE: not yet determined  
 PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
-Two-year commitment active; two_mandates and act_under_uncertainty guiding policy  
-`capability_jump` and `eval_anomaly_reports` active; `cyber_test_shot` aftermath ongoing  
-`eu_frontier_access_denied` has landed, affecting public and institutional trust
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+Emerging developments (tracked):  
+- `emergent_openweight_leak` -- first noted turn 1, listed in 1 turn(s) so far: An open-weight release lands within months of the closed frontier rather than years. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5 points of `ai_capability` at a stroke.  
+- `emergent_agentic_system_demo` -- first noted turn 1, listed in 1 turn(s) so far: A major laboratory announces a new model family capable of continuous autonomous operation in complex environments, triggering renewed debate about agentic systems and calls for emergency regulation. The release is not yet public, but demonstrations are shown to select partners, and video clips leak to social media.
+
+## Emerging developments (tracked)
+
+- `emergent_openweight_leak` -- first noted turn 1, listed in 1 turn(s) so far: An open-weight release lands within months of the closed frontier rather than years. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5 points of `ai_capability` at a stroke.
+- `emergent_agentic_system_demo` -- first noted turn 1, listed in 1 turn(s) so far: A major laboratory announces a new model family capable of continuous autonomous operation in complex environments, triggering renewed debate about agentic systems and calls for emergency regulation. The release is not yet public, but demonstrations are shown to select partners, and video clips leak to social media.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -244,7 +259,7 @@ The list of potential external events looks like this:
 **cyber_major_incident**
 - ID: cyber_major_incident
 - Condition: Always eligible; list this event every turn. The gate is open if `cyber_test_shot` occurred in any of the previous 3 completed turns, or while `openweight_capability` is at or above 55 – proliferated offensive capability is its own precursor. Otherwise the gate is shut. That choice sets which probability applies, never whether the event is evaluated.
-- Probability: Gate open: 20%. Gate shut: 6%. Add 8 points if `openweight_capability` is above 65. Add 5 points if a finished category 9 measure has broadened public-sector adoption, because there is more surface to attack. Halve if a finished category 6 measure covers cyber hardening of critical services.
+- Probability: Gate open: 28%. Gate shut: 9%. Add 8 points if `openweight_capability` is above 55. Add 5 points if a finished category 9 measure has broadened public-sector adoption, because there is more surface to attack. Halve if a finished category 6 measure covers cyber hardening of critical services.
 - Can repeat: Yes
 - Description: A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.
 
@@ -258,7 +273,7 @@ The list of potential external events looks like this:
 **bio_uplift_findings**
 - ID: bio_uplift_findings
 - Condition: Possible in any turn. Well past the 2026 phage results, and more likely as capability rises and as capable models proliferate.
-- Probability: 8%. Add 6 points if `openweight_capability` is above 55. Add 5 points if `ai_capability` is above 65.
+- Probability: 10%. Add 6 points if `openweight_capability` is above 50. Add 5 points if `verification_widens` has occurred in the previous 4 completed turns, because a cheap automatic check on biological design is exactly what this world keeps producing.
 - Can repeat: Yes
 - Description: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.
 
@@ -272,35 +287,35 @@ The list of potential external events looks like this:
 **eval_anomaly_reports**
 - ID: eval_anomaly_reports
 - Condition: Possible in any turn. Requires that frontier laboratories are running large training runs, which is true throughout unless `ai_investment_collapse` has occurred in the previous two completed turns.
-- Probability: 15%.
+- Probability: 18%.
 - Can repeat: Yes
 - Description: Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.
 
 **capability_jump**
 - ID: capability_jump
-- Condition: Always eligible; list this event every turn. The gate is open if `eval_anomaly_reports` occurred in either of the previous 2 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated.
-- Probability: Gate open: 15%. Gate shut: 5%. Reduce by a third if a finished category 1 or 3 measure imposes pre-release evaluation or capability restrictions that actually bind the jurisdiction where the leading models are built.
+- Condition: Always eligible; list this event every turn. The gate is open if `eval_anomaly_reports` occurred in either of the previous 2 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated. The jump is confined to domains where success can be checked automatically.
+- Probability: Gate open: 25%. Gate shut: 8%. Reduce by a third if a finished category 1 or 3 measure imposes pre-release evaluation or capability restrictions that actually bind the jurisdiction where the leading models are built.
 - Can repeat: Yes
-- Description: A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.
+- Description: A discontinuous advance is released or demonstrated, and it lands squarely inside the verifiable domains – code, mathematics, cyber operations, narrow engineering. What an attacker can do changes markedly within weeks. General competence moves by only +1 to +2, and the argument about whether this is progress toward anything general gets louder rather than settled.
 
 **verification_widens**
 - ID: verification_widens
 - Condition: Possible in any turn. Automated verification extends into a domain previously thought to require human judgement.
-- Probability: 12%.
+- Probability: 22%.
 - Can repeat: Yes
 - Description: A domain that was assumed to need a human to say whether the answer was any good turns out to admit a cheap automatic check – contract review, clinical coding, structural engineering, parts of law. Capability in that domain improves sharply within months of the check existing, and the argument that progress is confined to code and mathematics loses a piece of its territory.
 
 **capability_plateau_evidence**
 - ID: capability_plateau_evidence
 - Condition: Possible in any turn.
-- Probability: 10%.
+- Probability: 12%.
 - Can repeat: Yes
 - Description: A major release underdelivers against its own briefing, and – the stronger signal – the price of top-tier capability falls sharply rather than staying flat, which is what happens when the frontier stops moving and last year's ceiling becomes this year's commodity. It is disputed at once, and the dispute is not resolvable from outside the laboratories.
 
 **openweight_frontier_release**
 - ID: openweight_frontier_release
 - Condition: Possible in any turn.
-- Probability: 12%. Halve if a finished restriction on open release above a capability threshold binds a jurisdiction where such models are actually trained.
+- Probability: 18%. Halve if a finished restriction on open release above a capability threshold binds a jurisdiction where such models are actually trained.
 - Can repeat: Yes
 - Description: An open-weight release lands within months of the closed frontier rather than years. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5 points of `ai_capability` at a stroke.
 
@@ -374,6 +389,13 @@ The list of potential external events looks like this:
 - Can repeat: Yes
 - Description: A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.
 
+**backlash_physical**
+- ID: backlash_physical
+- Condition: Possible in any turn where the public has soured.
+- Probability: 10%. Add 10 points if `public_sentiment` is below 28. Add 5 points if a category 4 build is in flight, because there is then something local to protest against.
+- Can repeat: Yes
+- Description: Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.
+
 **adoption_success**
 - ID: adoption_success
 - Condition: Possible in any turn.
@@ -386,7 +408,7 @@ The list of potential external events looks like this:
 - Condition: Possible in any turn. Internal origin by construction: this is harm the Union's own institutions caused.
 - Probability: 8%. Add 8 points if a finished category 9 measure has broadened public-sector adoption. Add 5 points if `ai_capability` is above 65.
 - Can repeat: Yes
-- Description: An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 12's internal-origin clause applies in full.
+- Description: An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 6's internal-origin clause applies in full.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -398,7 +420,7 @@ This is the run's own record, not a summary of it. Judge any condition that depe
 
 <!-- FROM {{event_history}} = the run's own event record -->
 
-- Turn 1 (1 turn(s) ago): cyber_test_shot, capability_jump, eval_anomaly_reports, adoption_success, safety_breakthrough, eu_frontier_access_denied
+- Turn 1 (1 turn(s) ago): cyber_test_shot
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -424,6 +446,7 @@ In addition to the listed events, you may propose up to 2 novel *emergent* event
 - An emergent event must be exogenous: not an action by one of the actors, and not a restatement of something already in the narrative or history.
 - Give it an id starting with `emergent_` (snake_case), a description of 1-3 sentences, and an honest probability that it happens during this turn's time window (maximum 0.35).
 - Do not re-propose emergent events that already occurred in previous turns.
+- **Emerging developments.** The notepad's "Emerging developments (tracked)" section lists proposals from recent turns that were judged plausible but did not happen. While an entry stays plausible, list it again — same id, same description — with the probability you judge it to have **now**, read from the world as it currently stands, at most 0.35. Do not escalate it because it was listed before: a development that has not happened is not thereby more likely, and last turn's figure is not evidence about this turn. Some pressures build and the figure should rise; others are answered, overtaken or quietly resolved and the figure should fall. If it is no longer plausible, omit it and it is gone.
 - **How many to keep in play depends on how fast this world is moving.** Judge that from what has actually happened to capability, incidents and investment — a fast-moving world supports 3–4 live developments escalating quickly; a stagnant one only 0–2, escalating slowly. The aim is that across a run several tracked developments materialise or fade rather than none.
 - **Institutional reactions belong here, not on the list.** When the Union's own portfolio gives them footing — a flagship restriction in force, measures spanning many jurisdictions, standards with real pull — propose emergent events such as `emergent_court_challenge` (a court suspends a core provision), `emergent_member_state_noncompliance` (a member state quietly stops implementing), or `emergent_rival_standards_body` (a competing bloc launches lighter rules). These cannot be timed from metrics alone; they arise from what the EU has actually built, which you can see and it cannot.
 - If nothing novel is warranted and nothing is being tracked, propose none.

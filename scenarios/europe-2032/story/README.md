@@ -50,3 +50,7 @@ All the simulated paths are stored. The plan is to use them for describing how o
 ## Seeds
 
 Seeds are unique per run, and are not to be reused across branches or arms. Re-using seeds would narrow down the explored space considerably, which is sub-optimal in several ways.
+
+## Branches built so far
+
+- [`branch-A1.md`](branch-A1.md) – A1, turns 2 to 5, built 2026-09-01 as the pilot. Seeds 810101–810110, path on 810108. (ECHO 2026-09-01)

@@ -1,4 +1,4 @@
-# Handoff – session of 2026-08-28/30
+# Handoff – sessions of 2026-08-28/30 and 2026-08-31/09-01
 
 Twenty-four commits, `855bb9a` through `88f15bb`. Two threads ran through them: a batch of simulations for the Europe 2032 branching story, and a much longer thread that started when that batch turned out to have been running on a prompt nobody had read. By the end the fork itself had moved, and the two batches the session opened with are archived rather than current.
 
@@ -33,7 +33,7 @@ A measure now states when it finishes, judged once and copied forward:
 ```
 
 - **Cost:** 3 a turn for a large measure, 2 for a small one, plus 1 for the priority. No floor.
-- **Discount:** events carry `Cheapens: categories 4 and 5 by 2 for 4 turns`. 31 of 35 events have one. The Game Master reads it off the event record; it is a lookup, not a judgement.
+- **Timing:** events carry `Makes the case for: categories 4 and 5, for 3 turns`, naming what an event argues for and for how long. It is no longer a per-turn discount on the charge, which never varies: a measure proposed while an argument is open earns a **one-off** gain in `eu_political_capital`, judged on how big the event was, how large the measure is and how long ago it happened. Typically +1 to +4.
 - **Finishing turn:** moves only when the priority pulls it in, neglect pushes it out, or an event does either – and the reason is written into the line.
 - **Effect:** nothing in the turn a measure is proposed; a share of the category range judged from how far along it is; full from the turn it finishes.
 - **Portfolio:** starts with two inherited programmes, InvestAI Gigafactories and the June 2026 sovereignty package. The Frontier AI Initiative was dropped as dead.
@@ -45,15 +45,15 @@ Three designs failed before this one, all the same way: they asked the Game Mast
 
 **Required, formatted output that the model has to write down is reliable. State it has to remember and update is not.** The `PORTFOLIO CHARGE` line is the proof, twice over: introduced because the capital drain was being skipped entirely, and then in an A/B on one seed – with the line, capital fell 48-39-30-24; without it, 45-43-40-43, the charge simply not applied, the Union ending richer than it started while carrying five unfinished measures. Rule 10 states the cost identically in both.
 
-The same pattern fixed the discount, which failed twice as a judgement call and worked immediately as a lookup against data on the events.
+The discount is the counter-example, and it took three more attempts to admit it. As a per-turn lookup it was applied in 6 of 166 opportunities; as a numeric table paid at proposal it was written every turn and got the number wrong; only as a judgement at a single decidable moment did it work. A rule applied once, where the Game Master is already reasoning about that thing, beats one it must re-derive every turn — and a rule with no judgement in it at all is the hardest of the lot to get applied.
 
 ## Open, in the order I would take them
 
 1. **The measure mechanics are rebuilt but never batched.** Finishing turns, flat 3/2 costs and the event-driven discount have been through four-turn smoke tests only. Whether sovereignty now moves is unknown, and it is the question two batches failed to answer.
-2. **`Cheapens:` reaches no prompt, so the discount is not the lookup it is described as.** The event loader parses `Condition`, `Probability`, `Can repeat`, `Description` and `Eligible`, and silently discards anything else – so all 31 `Cheapens:` lines are dead text, in the same way `background/actors/eu.md` was dead text. The discount does fire, but the Game Master infers a plausible value from metric rule 10's description of a field it cannot see, which is also why the citation names whichever event fired most recently rather than the one whose window is open. Fix: put `cheapens` on the `Event` model, parse it, and render it wherever events are listed, including the triggered-events block the Game Master receives. Add a validator warning for an unrecognised `**Field:**` in `events.md` while you are there – it would have caught this the moment it was written, and will catch the next one.
+2. **Political capital is calibrated, but its positive terms are invisible.** See `scenarios/europe-2032/design-notes.md`, "Calibrating political capital": only the portfolio charge and the proposal bonus are written to the notepad, so every other positive term must be inferred. Three consecutive changes were judged that way, one of them predicted to cost 10 capital and observed to add 8. A `CAPITAL LEDGER` line itemising charge, completions, dividend, attribution and lend would make the next pass arithmetic rather than guesswork.
 3. **The tree is larger than it looks.** The naming scheme implies 56 turn pieces per arm and 168 across the three, plus 42 options, each built from ten or more simulations. Worth sizing deliberately before building, at roughly seven minutes per turn per run.
 4. **`load_actor` still truncates.** Blast radius is five actor files in three scenarios (34 of 39 lose only markup). Repairing it pushes several thousand words into those actors' prompts at once – a deliberate, calibrated change, not a tidy-up.
-5. **The sign-off documents are current** as of `run-20260830-185157`, which is after every change in this session. Regenerate after any prompt change: run 2 turns with `--log-llm-io`, then `python scripts/render_signoff.py <run-dir>`. A regeneration is what found the `Cheapens:` defect, four hours after the field was added, and the set before it went stale within the hour – these are snapshots taken at a decision point, not something the repo keeps true.
+5. **The sign-off documents** were regenerated on 2026-09-01 from the verification-bounded arm, after the by-metric rewrite of `metric-rules.md`. Regenerate after any prompt change: run 2 turns with `--log-llm-io`, then `python scripts/render_signoff.py <run-dir>`. A regeneration is what found the defect in the then-`Cheapens:` field (since replaced by `Makes the case for:`), four hours after the field was added, and the set before it went stale within the hour – these are snapshots taken at a decision point, not something the repo keeps true.
 
 ## Things that will bite you if nobody says them
 
@@ -62,7 +62,7 @@ The same pattern fixed the discount, which failed twice as a judgement call and 
 - **`--max-concurrency` defaults to 4.** A 30-run batch is three waves at that setting. Each turn is 7 sequential LLM calls; a turn takes 4–10 minutes and cannot be parallelised within a run.
 - **stdout is block-buffered.** Watch a run through its artifact files, not its log.
 - **A rule the model is asked to remember is a rule that will be skipped.** The `PORTFOLIO CHARGE` line proves it twice: introduced because the capital drain was being ignored entirely, then A/B tested on one seed – with the line, capital fell 48-39-30-24; without it, 45-43-40-43 and the charge simply not applied. Metric rule 10 states the cost identically in both.
-- **Silent failure is this codebase's characteristic bug.** Truncated actor background, unrendered event prose, dead `Cheapens:` fields, statement proposals lost to a code-span wrapper. None of them errored; all of them looked like working scenarios. Assume anything not visible in a sign-off document is not reaching the model.
+- **Silent failure is this codebase's characteristic bug.** Truncated actor background, unrendered event prose, event fields that reached no prompt, statement proposals lost to a code-span wrapper. None of them errored; all of them looked like working scenarios. Assume anything not visible in a sign-off document is not reaching the model.
 - **Johan commits directly on `main`** in this project and does not branch.
 
 ## Where turn 1 went

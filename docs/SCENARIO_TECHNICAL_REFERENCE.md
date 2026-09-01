@@ -353,10 +353,13 @@ Canonical event block format:
 **Description:** ...
 ```
 
+`Eligible` is the sixth and last field the parser reads: a deterministic gate evaluated in Python against current metric values.
+
 Parsing behavior:
 
 - an event is only materialized if `ID` exists
 - `Can repeat` is true for `yes` or `true` (case-insensitive)
+- **exactly six fields are read** — `ID`, `Condition`, `Probability`, `Can repeat`, `Description`, `Eligible`. Any other `**Field:**` inside an event block is parsed and then discarded, so it reaches no prompt and never errors. `validate` warns about these; the warning names the labels and the number of events carrying them. Anything an author needs the model to act on belongs in one of the six fields, in the metric rules, or in a prompt — not in a field of its own invention.
 
 Probability values support:
 

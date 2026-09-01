@@ -1,6 +1,6 @@
 # Prompt sign-off
 
-Generated from `run-20260831-135806`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
+Generated from `run-20260901-194547`. These documents exist because a scenario file that never reaches a prompt changes nothing, and nothing else in the pipeline will tell you which ones those are.
 
 Read them once when the scenario is built, and again after any change to the templates, the scenario's prompt overrides, or the background files. Sign off by saying so in the scenario's design notes, with the date.
 
@@ -37,7 +37,6 @@ Every heading in the scenario's background and definition files, and whether the
 | `events.md` | The gate mechanism | **NO** |
 | `events.md` | Where the figures come from | **NO** |
 | `events.md` | Arithmetic of probabilities | **NO** |
-| `events.md` | What an event does to the price of a measure | **NO** |
 | `events.md` | Measures referred to in conditions | **NO** |
 | `events.md` | The opening turn | **NO** |
 | `events.md` | The 2028 US presidential election | **NO** |
@@ -56,10 +55,10 @@ Every heading in the scenario's background and definition files, and whether the
 | `events.md` | Capability Jump | yes |
 | `events.md` | Recursive Self-Improvement Begins | **NO** |
 | `events.md` | Verification Frontier Widens | yes |
-| `events.md` | Evidence of a Bending Curve | **NO** |
+| `events.md` | Evidence of a Bending Curve | yes |
 | `events.md` | Reasoning Stops Being Legible | **NO** |
 | `events.md` | Medicine Delivers | **NO** |
-| `events.md` | Open Weights Reach the Frontier | yes |
+| `events.md` | Open Weights Reach the Frontier | **NO** |
 | `events.md` | Loss-of-Control Incident | yes |
 | `events.md` | Assurance Breakthrough | yes |
 | `events.md` | Labour Displacement Wave | **NO** |
@@ -73,15 +72,11 @@ Every heading in the scenario's background and definition files, and whether the
 | `events.md` | Coercion Over ASML | yes |
 | `events.md` | Access Secured on Its Own Terms | **NO** |
 | `events.md` | Member State Defection | yes |
-| `events.md` | Backlash Turns Physical | **NO** |
+| `events.md` | Backlash Turns Physical | yes |
 | `events.md` | Adoption Delivers | yes |
 | `events.md` | Automated Decision Scandal | yes |
 | `metric-rules.md` | Metric Rules | yes |
-| `metric-rules.md` | The frontier | yes |
-| `metric-rules.md` | The incident engine | yes |
-| `metric-rules.md` | The Union's two stocks | yes |
-| `metric-rules.md` | The public and the world's mood | yes |
-| `metric-rules.md` | What the Union does not control | yes |
+| `metric-rules.md` | Other effects | yes |
 | `metrics.md` | Metrics | **NO** |
 | `metrics.md` | ai_capability | yes |
 | `metrics.md` | openweight_capability | yes |
