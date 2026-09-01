@@ -43,7 +43,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
       - small measure: −2 `eu_political_capital` per turn
    - A named priority: −1 that turn.
    - A measure abandoned or publicly defeated: −3 to −6, remove from portfolio
-   - A measure reaching its finishing turn: +4 to +8, then remove from portfolio
+   - A measure reaching its finishing turn: +2 to +5, then remove from portfolio
    - A measure just added, addressing a negative event from the last three rounds: +1 to +8. Larger for bigger events, more recent events and larger measures; smaller for the reverse.
    - Negative events this turn move `eu_political_capital` in either direction; the sign follows from where the harm originated and whether the EU had acted beforehand.
      - external origin, effect dampened by finished measure: +3 to +10. The bigger the event and the larger the measure, the bigger the gain.
