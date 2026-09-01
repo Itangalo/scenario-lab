@@ -36,3 +36,21 @@ The three roads that used to fork at turn 1 – sovereign compute, resilience su
 **Re-drawing did not work, and the reason is the useful part.** Twenty fresh draws under the current prompt returned 16 category 6 measures and 4 category 5, and **no category 4 at all**. The spread the three roads were selected from no longer exists. Whether that is the guard against duplicating the Gigafactories working as intended, or overshooting so far that sovereignty has left the actor's turn-1 repertoire, is not established – and it bears directly on the open question above.
 
 Turn 1 is now a single fixed opening at `story/turn-01/opening.md`, shared by every arm and every reader, and the fork moved to turn 2.
+
+## Calibrating political capital, and what actually controlled it
+
+Three batches of four 13-turn runs on the verification-bounded arm, each changing one thing, because the runs themselves are not kept and the numbers would otherwise be lost.
+
+| batch | change | finals | mean | sovereignty crosses 40 |
+|---|---|---|---|---|
+| A | baseline after the by-metric rewrite | 38, 38, 28, 43 | 36.8 | t10, t7, t10, t7 |
+| B | completion bonus `+4..+8` → `+2..+5` | 45, 48, 45, 43 | 45.2 | t8, t7, t8, t10 |
+| C | in-flight effect capped at half the finished figure | 30, 36, 31, 20 | 29.2 | t9, t13, never, never |
+
+**The completion bonus was not the lever, and halving it did the opposite of what was predicted.** The reasoning that picked it was arithmetic on the one term the notepad records — six to eight completions at `+4 to +8` — and it never counted the others, because only the portfolio charge and the proposal bonus are written down. Everything else is applied inside the Game Master's reasoning and leaves no trace. The prediction was −10; the result was +8.4.
+
+**`eu_ai_sovereignty` crossing 40 is what controls the balance.** Rule 6 pays `+1 to +3` a turn above that gate, and in A and B every run collected it for four to seven turns. Batch C's cap slows in-flight accumulation, so two runs never crossed at all and a third crossed at turn 13 — and the mean fell by 16. Nothing else moved comparably in any batch.
+
+**The cap buys lower capital by making the Union less effective, not by making action cost more.** Resilience fell from 55, 51, 55, 53 to 42, 38, 44, 53, so only one run of four still clears the `absorption` floor of 50. That is a real trade and it was accepted deliberately. If a later pass wants the capital distribution without the effectiveness cost, the levers are on the cost side — the per-turn charge, the priority cost, or lowering rule 9's gate below 40 so that runs which do build sovereignty are still paid for it.
+
+**The measurement gap is the thing to fix first if this is revisited.** Three consecutive changes had their effects inferred rather than read, because the positive terms are invisible. A `CAPITAL LEDGER` line in the notepad — charge, completions, dividend, attribution, lend, each itemised — would make the next comparison arithmetic instead of guesswork, and it is the same shape as the two lines that already work reliably.
