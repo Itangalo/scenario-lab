@@ -1,39 +1,23 @@
 # Metrics
 
-Seven quantities describe the world the reader's regulator acts on. None of
-them describe the regulator's own portfolio: which measures are running, and
-how far each has been implemented, lives in the narrative and in the notepad,
-not in a metric.
+Seven quantities describe the world the reader's regulator acts on. None of them describe the regulator's own portfolio: which measures are running, and how far each has been implemented, lives in the narrative and in the notepad, not in a metric.
 
 They come in three pairs and one driver:
 
-- **World technical state:** `ai_capability` and `openweight_capability`. The
-  distance between them is how much of the frontier's power is unrecallable.
+- **World technical state:** `ai_capability` and `openweight_capability`. The distance between them is how much of the frontier's power is unrecallable.
 
-- **Harm management:** `ai_safety` and `resilience`. The first reduces the
-  probability of incidents, the second their consequences. The EU has far more
-  control over the second than the first.
+- **Harm management:** `ai_safety` and `resilience`. The first reduces the probability of incidents, the second their consequences. The EU has far more control over the second than the first.
 
-- **EU agency:** `eu_ai_sovereignty` and `eu_political_capital`. Deliberately
-  separate. The claim that they are the same quantity — lose the compute, lose
-  the ability to act — is a substantive position, not a modelling convenience,
-  and the scenario exists partly to test it. They must be free to move apart.
+- **EU agency:** `eu_ai_sovereignty` and `eu_political_capital`. Deliberately separate. The claim that they are the same quantity — lose the compute, lose the ability to act — is a substantive position, not a modelling convenience, and the scenario exists partly to test it. They must be free to move apart.
 
-- **Driver:** `public_sentiment`, which is what makes `eu_political_capital` move for
-  reasons the reader can see rather than by authorial fiat.
+- **Driver:** `public_sentiment`, which is what makes `eu_political_capital` move for reasons the reader can see rather than by authorial fiat.
 
-Two deliberate omissions. There is no US–China capability gap metric:
-`ai_capability` is the world maximum, and the race between the two powers is
-carried in the narrative and in events rather than on a dial. And there is no
-cumulative-harm metric; whether something bad has actually happened yet is
-carried by the event record, which reports it better than a running index
-would.
+Two deliberate omissions. There is no US–China capability gap metric: `ai_capability` is the world maximum, and the race between the two powers is carried in the narrative and in events rather than on a dial. And there is no cumulative-harm metric; whether something bad has actually happened yet is carried by the event record, which reports it better than a running index would.
 
-`ai_capability` and `openweight_capability` share one scale, so that the gap
-between them can be read directly.
+`ai_capability` and `openweight_capability` share one scale, so that the gap between them can be read directly.
 
 ## ai_capability
-**Description:** Capability of the strongest systems anywhere in the world, closed or open, measured as general problem-solving competence across economically and strategically relevant tasks. Whichever power holds the lead, this is the lead. Accumulated capability; it does not fall back.
+**Description:** Capability of the strongest AI systems anywhere in the world, closed or open, measured as general problem-solving competence across economically and strategically relevant tasks. Whichever power holds the lead, this is the lead. Accumulated capability; it does not fall back.
 **ID:** ai_capability
 **Min:** 0
 **Max:** 100
@@ -113,7 +97,7 @@ between them can be read directly.
 - 85: Independent frontier capability. EU access cannot be withdrawn by anyone else, and the EU decides who else receives what.
 
 ## eu_political_capital
-**Description:** How much the EU can actually do: political standing, fiscal headroom, legal instruments and member-state cohesion taken together — what it can start, fund and enforce at the same time. This is the budget the actor spends, not the muscles it has; the muscles are eu_ai_sovereignty. Falls with fiscal strain, fragmentation, overreach and failed measures; rises with visible successes, with capacity that has finished landing, and — where the run's rules provide for it — while it sits below `public_sentiment`, because a public that is with the Union lends it room the Union has not earned yet.
+**Description:** How much the EU can actually do: political standing, fiscal headroom, legal instruments and member-state cohesion taken together — what it can start, fund and enforce at the same time. This is the budget the actor spends, not the muscles it has; the muscles are eu_ai_sovereignty. Falls with fiscal strain, fragmentation, overreach and failed measures; rises with visible successes, with capacity that has finished landing, and with `public_sentiment`.
 **ID:** eu_political_capital
 **Min:** 0
 **Max:** 100
@@ -122,13 +106,13 @@ between them can be read directly.
 **Reference points:**
 
 - 10: Paralysed. Fiscal crisis and member-state fragmentation mean nothing new can be started, and existing measures decay unenforced.
-- 30: One measure at a time, and only if it is uncontroversial. Money is the binding constraint.
+- 30: One measure at a time, and only if it is uncontroversial.
 - 48: Strong legal instruments, thin technical capacity, contested legitimacy and a tightening budget. Two or three measures can run at once before something slips.
 - 65: Can fund and enforce several parallel measures, and hold a common position under external pressure.
 - 85: Acts decisively and at speed when it judges the situation demands it — the register of the pandemic response or the post-invasion energy shift — and the member states hold together while it does.
 
 ## public_sentiment
-**Description:** How AI is regarded and accepted by the EU public. Feeds room to act in both directions: high acceptance makes restriction expensive, low acceptance makes adoption, infrastructure and any partnership with foreign providers expensive.
+**Description:** How AI is regarded and accepted by the EU public. Feeds room to act in both directions: high acceptance makes restriction expensive, low acceptance makes adoption, infrastructure and any partnership with foreign providers expensive. High public sentiment leads to increased political capital.
 **ID:** public_sentiment
 **Min:** 0
 **Max:** 100

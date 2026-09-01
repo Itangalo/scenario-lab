@@ -99,7 +99,9 @@ Draft in this order (each file informs the next):
    behavioral tendencies; conflicting interests between actors are essential
 4. `events.md` – exogenous uncertainties; conditions + probabilities; prefer
    `can_repeat: false` for structural shifts
-5. `metric-rules.md` – starting "physics"; few, clear, quantitative
+5. `metric-rules.md` – starting "physics"; few, clear, quantitative. See
+   **Writing metric-rules.md** below for the form; it is the file that most
+   often reads well and works badly.
 6. `scenario.yaml` – config; start with cheap models (e.g.
    `openrouter:qwen/qwen3-235b-a22b-2507`), consider `rule_evolution.freeze_until_turn: 2`,
    and consider `emergent_events.enabled: true` (the purpose is exploring
@@ -113,6 +115,52 @@ Draft in this order (each file informs the next):
 7. `constitution.md` – only if the domain has hard plausibility constraints
 8. `design-notes.md` – central question, key design decisions, assumptions,
    weak spots, ideas deliberately left out
+
+## Writing metric-rules.md
+
+The Game Master reads this file every turn and asks one question of it: *what
+does each metric become now?* Organise it to answer that question.
+
+**One rule per metric, in metric order.** Gather everything that moves a metric
+under that metric's own heading, rather than grouping rules by theme. A theme
+grouping reads better and works worse: it scatters the terms that decide one
+number across several rules, and the Game Master then applies some of them and
+forgets the rest. Cross-cutting mechanics that belong to no single metric go in
+a separate section at the end – standing world conditions, portfolio
+bookkeeping, how incidents are judged.
+
+**Every line is trigger → magnitude.** `` - `ai_capability` rose and no category
+6 measure is in force: −1 to −2 ``. A reader should be able to decide whether a
+line applies without interpreting it, and know what to add or subtract when it
+does. Ranges are fine, and mean *judge within it, not average it* – say so once
+at the top rather than in every rule.
+
+**Cut rationale unless it changes what the reader does.** "That weakness is the
+point" and "standing still has to cost something" tell the Game Master nothing
+it can act on. A clause that resolves an ambiguity ("never past sentiment",
+"absent an event that says otherwise") earns its place; a clause defending the
+design does not. Rationale belongs in `design-notes.md`.
+
+**Prefer one-off effects at a decidable moment over recurring conditional
+ones.** A rule applied once, when a measure is proposed or an event fires, lands
+far more reliably than one requiring the Game Master to re-derive each turn whether
+some window is still open. In one scenario a per-turn discount keyed to recent
+events was applied in 6 of 166 opportunities; the same effect paid once at
+proposal was applied nearly every time. If a rule must recur, give it a required
+line in the turn output so its absence is visible.
+
+**Rules with no judgement in them are the ones to distrust.** Pure arithmetic –
+"if A is below B, move A toward B" – is exactly what a language model is worst
+at applying consistently, because there is nothing to reason about and nothing
+to notice when it is skipped. Either give it a visible output line, or reconsider
+whether the mechanic needs to exist.
+
+**Variant patches bind by rule number.** `variants/*.rules.patch.md` replaces the
+rule with that number wholesale, and numbers beyond the current maximum append.
+Reordering or renumbering rules therefore breaks every variant silently – the
+scenario still loads, and the arm overwrites the wrong rule. Renumber patches and
+cross-references in the same commit, and check: rule numbers are also cited from
+`events.md`, `constitution.md`, `scenario.yaml` and the prompt overrides.
 
 ## Constraint Language (applies to actor goals and scenario rules alike)
 
