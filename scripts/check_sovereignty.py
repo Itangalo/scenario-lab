@@ -72,6 +72,11 @@ class TurnCheck:
     completions: list[str]
     anchor: float | None = None
     before: float | None = None
+    # The change the line claims when read against its own anchor rather than
+    # against the metric. Binding asks whether the line matches the world;
+    # arithmetic asks whether the line matches itself, and conflating the two
+    # makes a wrong anchor look like a wrong sum.
+    stated_self: float | None = None
 
     @property
     def anchored(self) -> bool:
@@ -86,9 +91,10 @@ class TurnCheck:
 
     @property
     def arithmetic_ok(self) -> bool | None:
-        if self.stated is None or not self.terms:
+        claimed = self.stated_self if self.stated_self is not None else self.stated
+        if claimed is None or not self.terms:
             return None
-        return abs(sum(self.terms) - self.stated) < 0.01
+        return abs(sum(self.terms) - claimed) < 0.01
 
     @property
     def binds(self) -> bool | None:
@@ -105,18 +111,19 @@ class TurnCheck:
         return self.applied <= LEGAL_WITHOUT_COMPLETION
 
 
-def parse_line(line: str) -> tuple[list[float], float | None, float | None]:
-    """Split a SOVEREIGNTY line into its terms and the total it states.
+def parse_line(line: str) -> tuple[list[float], list[float], float | None]:
+    """Split a SOVEREIGNTY line into its terms, its claims, and its anchor.
 
-    The total is what the line claims after its last `=`; anything the model
-    appends after that — `-> net +1`, `rounded to +1` — is a second claim, and
-    the last such claim is the one that counts, because that is the number the
-    model was looking at when it wrote the metric.
+    A claim is left unresolved here because the line does not say whether it is
+    a level or a change. The anchored form ends at a level (`= 36`) but may
+    append a change (`(net +1)`); the earlier form ends at a change (`= +9`)
+    but may append a level (`(net 37.0)`). `resolve_claim` decides, using the
+    value the metric actually held going in.
     """
     body = line.split(LINE_PREFIX, 1)[1].strip()
     if "=" not in body:
         # `SOVEREIGNTY: no change` and other prose-only forms.
-        return [], 0.0 if "no change" in body.lower() else None, None
+        return [], [0.0] if "no change" in body.lower() else [], None
 
     head, _, tail = body.rpartition("=")
 
@@ -130,12 +137,29 @@ def parse_line(line: str) -> tuple[list[float], float | None, float | None]:
 
     terms = [_to_float(s, d) for s, d in NUMBER.findall(_strip_prose(head))]
 
-    # The stated total, then any later restatement of it.
-    restated = re.findall(rf"(?:net|to)\s*([+\-{MINUSES}]?\s?\d+(?:\.\d+)?)", tail)
-    source = restated[-1] if restated else tail
-    match = NUMBER.search(source)
-    stated = _to_float(*match.groups()) if match else None
-    return terms, stated, anchor
+    # Everything the line claims after its last `=`: the total itself, then any
+    # restatement of it (`-> net +1`, `rounded to +1`, `(net 37.0)`). The last
+    # claim is the number the model was looking at when it wrote the metric.
+    claims = [_to_float(s, d) for s, d in NUMBER.findall(tail)]
+    return terms, claims, anchor
+
+
+def resolve_claim(claim: float, reference: float | None) -> float:
+    """Turn a claim into the change it asserts.
+
+    The Game Master mixes levels and changes freely, within one line and
+    between turns, and the shape of the line does not reliably say which is
+    which. What does say is the value the metric held going in: a claim nearer
+    to that value than to zero is a level, and anything else is a change. A
+    line reading `= 33` after 32 is claiming a level; `= −1` after 22 is
+    claiming a change; and `= 0` after 22 is claiming a change of nothing,
+    which the same test gets right because 0 is nearer zero than 22.
+
+    Without a reference — turn 1 — a claim can only be read as a change.
+    """
+    if reference is None:
+        return claim
+    return claim - reference if abs(claim - reference) < abs(claim) else claim
 
 
 def completions(line: str) -> list[str]:
@@ -220,18 +244,20 @@ def read_turn(run: Path, turn_dir: Path) -> TurnCheck | None:
 
     terms: list[float] = []
     stated: float | None = None
+    stated_self: float | None = None
     anchor: float | None = None
     names_completion = False
     if line:
-        terms, stated, anchor = parse_line(line)
+        terms, claims, anchor = parse_line(line)
         names_completion = bool(FINISHED.search(line))
-    if anchor is not None and stated is not None:
-        # The anchored line ends at a level. Everything below compares deltas.
-        stated = stated - anchor
+        if claims:
+            stated = resolve_claim(claims[-1], before if before is not None else anchor)
+            stated_self = resolve_claim(claims[-1], anchor if anchor is not None else before)
 
     credited = completions(line) if line else []
     return TurnCheck(
-        run.name, turn, line, terms, stated, applied, names_completion, credited, anchor, before
+        run.name, turn, line, terms, stated, applied, names_completion, credited,
+        anchor, before, stated_self,
     )
 
 

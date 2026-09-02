@@ -26,25 +26,26 @@ _spec.loader.exec_module(check_sovereignty)
 parse_line = check_sovereignty.parse_line
 completions = check_sovereignty.completions
 same_measure = check_sovereignty.same_measure
+resolve_claim = check_sovereignty.resolve_claim
 
 
 def test_anchored_line_yields_terms_total_and_anchor():
-    terms, total, anchor = parse_line(
+    terms, claims, anchor = parse_line(
         "SOVEREIGNTY: 31 last turn, Sovereign Compute Corridor finishes t6 +5, "
         "Gigafactories in flight +1, capability rose 2.5 −1 = 36"
     )
     assert anchor == 31.0
     assert terms == [5.0, 1.0, -1.0]
-    assert total == 36.0
+    assert claims[-1] == 36.0
 
 
 def test_size_of_a_capability_rise_is_not_a_term():
     """`capability rose 2.5 −1` states the rise, then the cost it triggers."""
-    terms, total, _ = parse_line(
+    terms, claims, _ = parse_line(
         "SOVEREIGNTY: no measure finished, capability rose 2.5 −1 = −1"
     )
     assert terms == [-1.0]
-    assert total == -1.0
+    assert claims[-1] == -1.0
 
 
 @pytest.mark.parametrize("rise", ["rose 2.5", "rose ≥2", "rose by 3.0"])
@@ -60,11 +61,11 @@ def test_a_declined_decay_is_not_a_term():
     Game Master writes the term it is not charging, and reading it as charged
     makes a correct line look like an arithmetic error.
     """
-    terms, total, anchor = parse_line(
+    terms, claims, anchor = parse_line(
         "SOVEREIGNTY: 21 last turn, EASL finishes t5 +3, Red-Teaming Network in flight +2, "
         "capability rose 1.5 → no −1 = 26"
     )
-    assert (terms, total, anchor) == ([3.0, 2.0], 26.0, 21.0)
+    assert (terms, claims[-1], anchor) == ([3.0, 2.0], 26.0, 21.0)
 
 
 @pytest.mark.parametrize(
@@ -83,12 +84,12 @@ def test_the_threshold_being_checked_is_not_a_term(threshold):
 
 
 def test_a_category_tag_is_not_a_term():
-    terms, total, _ = parse_line(
+    terms, claims, _ = parse_line(
         "SOVEREIGNTY: Autonomous Resilience Corps finished +0 (cat 6), "
         "capability rose 4.0 −1 = −1"
     )
     assert terms == [0.0, -1.0]
-    assert total == -1.0
+    assert claims[-1] == -1.0
 
 
 def test_a_restatement_after_the_total_is_what_counts():
@@ -97,16 +98,16 @@ def test_a_restatement_after_the_total_is_what_counts():
     The override is the number it was looking at when it wrote the metric, so
     that is the claim to hold it to.
     """
-    _, total, _ = parse_line(
+    _, claims, _ = parse_line(
         "SOVEREIGNTY: Compute Guarantee in flight +1, capability rose 2.5 −1 = +0 "
         "→ net +1 from prior institutional momentum"
     )
-    assert total == 1.0
+    assert claims[-1] == 1.0
 
 
 def test_no_change_is_a_stated_zero():
-    terms, total, anchor = parse_line("SOVEREIGNTY: no change")
-    assert (terms, total, anchor) == ([], 0.0, None)
+    terms, claims, anchor = parse_line("SOVEREIGNTY: no change")
+    assert (terms, claims, anchor) == ([], [0.0], None)
 
 
 def test_completions_names_only_measures_that_finished():
@@ -128,3 +129,24 @@ def test_a_shortened_title_is_the_same_measure():
         "secure and scale eu-controlled inference infrastructure", "secure and scale"
     )
     assert not same_measure("investai gigafactories", "tech sovereignty package")
+
+
+@pytest.mark.parametrize(
+    "claim, reference, expected",
+    [
+        (33.0, 32.0, 1.0),    # anchored form ends at a level
+        (-1.0, 22.0, -1.0),   # earlier form ends at a change
+        (0.0, 22.0, 0.0),     # a change of nothing, not a level of nothing
+        (37.0, 32.5, 4.5),    # earlier form appending a level: `= +9 (net 37.0)`
+        (30.0, 30.0, 0.0),    # a level restated unchanged
+        (-1.0, None, -1.0),   # turn 1, nothing to compare against
+    ],
+)
+def test_resolve_claim_tells_a_level_from_a_change(claim, reference, expected):
+    """The line mixes the two freely, and its shape does not say which is which.
+
+    What says is the value the metric held going in: a claim nearer that value
+    than nearer zero is a level. Getting this wrong invents drift that is not
+    there — it put a spurious 32-point gap in both cohorts before it was fixed.
+    """
+    assert resolve_claim(claim, reference) == expected

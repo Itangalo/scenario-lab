@@ -59,12 +59,20 @@ Three batches of four 13-turn runs on the verification-bounded arm, each changin
 
 The `SOVEREIGNTY:` line was added on 2026-09-01 because the three earlier required lines had each turned an unreliable mechanic reliable. It was written in 156 of 156 turns and changed nothing. `scripts/check_sovereignty.py` reads a run's notepad lines against the metric values it actually applied, and over the batch of twelve that prompted the question it reproduces the hand-count and adds two things the hand-count could not see.
 
-| | batch of twelve, 2026-09-02 |
-|---|---|
-| line written | 156/156 (100%) |
-| the line's own terms sum to the total it states | 103/143 (72%) |
-| that total equals the change actually applied | 29/136 (21%) |
-| a measure credited with finishing in more than one turn | 13 measures, in 9 of 12 runs |
+| | before | after |
+|---|---|---|
+| line written | 156/156 (100%) | 156/156 (100%) |
+| the line's own terms sum to the total it states | 99/142 (70%) | 71/140 (51%) |
+| **that total equals the change actually applied** | **45/136 (33%)** | **94/139 (68%)** |
+| the line starts from the value the metric actually held | – | 137/138 (99%) |
+| a measure credited with finishing in more than one turn | 13, in 9 of 12 runs | 9, in 6 of 12 runs |
+| the longest such repeat | 6 consecutive turns | 3 turns |
+| a move above +2 with no completion named | 7 turns, largest +6 | 1 turn, largest +3 |
+| largest gap between the line and the metric | −18.0 | −5.0 |
+
+Twelve runs each side, four per arm, thirteen turns, seeds 7701–7904 before and 8101–8304 after.
+
+**Two figures in this table were reported wrong earlier on 2026-09-02, in the design notes and in commit `70066bb`'s message: a baseline of 21% binding and 59% after.** Both came from the checker, which was resolving every stated total as a change. The Game Master mixes levels and changes freely — `= 33` after 32 is a level, `= −1` after 22 is a change, and the same line may end at one and append the other — so a level read as a change invented drift that was never there, including a spurious 32-point gap in each cohort. `resolve_claim` now decides from the value the metric held going in, and the test table in `tests/test_check_sovereignty.py` pins the six shapes. The corrected figures are above; the direction and the size of the improvement survive the correction, and the baseline was never as bad as first reported.
 
 **The line is copied forward.** The clearest case runs `SOVEREIGNTY: InvestAI Gigafactories finished +5, Mandatory Compute Residency finished +5, capability rose 1 −1 = +9` word for word through turns 8 to 12, while the applied change over those turns was +4, +12, +5, 0, 0 and the narrative beside it said in plain prose that the money had already been paid. This is the same failure as the annuity bug fixed on 2026-09-02 in `d86af31`, reappearing one level up: the figure no longer persists in the rules, but the *sentence* persists in the notepad, and copying it re-pays the completion.
 
@@ -72,7 +80,9 @@ The `SOVEREIGNTY:` line was added on 2026-09-01 because the three earlier requir
 
 **A floor at 22 was being invented.** Runs wrote `net unchanged due to floor at 22.0` and held sovereignty at its start value. There is no floor: the metric's range is 0–100 and 22 is the opening reference point on the scale. Rule 5's decay, added deliberately in `61fcb5c` so that a fast frontier erodes the estate, was being cancelled by a bound that does not exist. Rule 5 now says so.
 
-**What the pattern's limit actually is.** The handoff's reading was that writing something down only works when the writing is the mechanism. That holds, and it is sharper than it looked: the portfolio charge binds because the total cannot be known without summing it, and the sovereignty line did not because it ended at a *delta* while the JSON carried a *level*, so nothing connected the two ends. The line now starts at last turn's figure and ends at this turn's, and the number it ends at is the one written into the metrics JSON — there is no second number for the two to disagree about.
+**What did not improve is the line's internal arithmetic**, which fell from 70% to 51%. The cause is visible and separate from binding: the Game Master now lists rule 5's decay term even in turns where its condition does not hold — `20 last turn, no completion, Gigafactories in flight +0, capability rose 1.0 −1 = 20` — and then correctly declines to charge it, because the rise was under 2. The level is right and the sum is not. More terms named per line means more chances to name one that is not being charged. The fix is a clause saying not to write a term you are not applying, and it was deliberately not made during the batch so that the batch measured one change.
+
+**What the pattern's limit actually is.** The handoff's reading was that writing something down only works when the writing is the mechanism. That holds, and it is sharper than it looked: the portfolio charge binds because the total cannot be known without summing it, and the sovereignty line did not because it ended at a *delta* while the JSON carried a *level*, so nothing connected the two ends. The line now starts at last turn's figure and ends at this turn's, and the number it ends at is the one written into the metrics JSON — there is no second number for the two to disagree about. Binding doubled, from a third of turns to two thirds. It did not reach one: what survives is an `→ adjusted to N` clause appended after a total has been reached, which is the same escape the `→ net +1` clause used to be, and which the rewritten step 3d names but does not prevent.
 
 ## The constitutional referee is not the backstop it looks like (ECHO 2026-09-02)
 
