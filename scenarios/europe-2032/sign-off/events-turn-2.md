@@ -2,7 +2,7 @@
 
 The events step. Every event condition, gate and probability the world runs on is either in this prompt or is not enforced at all.
 
-Source: `runs/run-20260901-211110/turn-02/llm-io/01-events.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260902-201003/turn-02/llm-io/01-events.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -150,13 +150,13 @@ Current metrics look like this:
 <!-- FROM {{metrics_json}} = the run's live metric values -->
 
 {
-  "ai_capability": 53.5,
-  "openweight_capability": 41.0,
-  "ai_safety": 34.0,
-  "resilience": 35.0,
-  "eu_ai_sovereignty": 22.0,
-  "eu_political_capital": 45.0,
-  "public_sentiment": 42.0
+  "ai_capability": 54.0,
+  "openweight_capability": 40.0,
+  "ai_safety": 36.0,
+  "resilience": 38.0,
+  "eu_ai_sovereignty": 21.0,
+  "eu_political_capital": 40.0,
+  "public_sentiment": 44.0
 }
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
@@ -169,7 +169,7 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-AI capabilities advanced significantly in late 2026, with open-weight models narrowing the gap with frontier systems and enabling broader access to powerful autonomous agents, including in offensive cyber domains. Breakthroughs in science and engineering emerged from AI-driven research, while new verification tools accelerated deployment in critical sectors. A major cyber intrusion exposed deep AI-facilitated vulnerabilities in global infrastructure, and concerns grew over AI-assisted biothreat design. In response, the EU proposed the European AI Evaluation Authority (EAIEA) to assert control over high-capability model evaluation, offering incentives to gain industry support despite resistance over duplication and legal authority. Infrastructure expansion faced delays due to local opposition and energy concerns, while U.S. pressure constrained European chip sovereignty. Public unease mounted over job displacement, and a foundational legal challenge—the *emergent_court_challenge*—was filed, questioning the EAIEA's jurisdiction.
+The Emergency Resilience Surge achieved partial success, with ENISA red teams deploying detection systems that identified previously missed agent-like network behaviour, enabling early interception of follow-up cyber probes. Sensor upgrades and zero-trust initiatives began rollout, supported by €8.3bn in emergency funding, contributing to a +3 increase in resilience and a +2 gain in ai_safety due to an interpretability breakthrough. However, implementation faced significant hurdles: Poland and Hungary rejected mandatory data sharing on sovereignty grounds, Italian municipalities delayed adoption over cost concerns, and mutual aid protocols stalled over legal uncertainties. Public sentiment improved modestly amid media portrayals of decisive action, though skepticism persisted. AI capabilities surged past 54.0, outpacing domestic compute investments and widening the sovereignty gap. Political capital declined sharply under the strain of overlapping initiatives and uneven outcomes. Defensive tooling against swarm attacks showed no clear systemic improvement, with mixed reports on effectiveness.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -177,17 +177,21 @@ AI capabilities advanced significantly in late 2026, with open-weight models nar
 
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
-### The Open Frontier Widens  
-The second half of 2026 sees AI capability advance steadily, now reaching a level where autonomous agents operate over extended horizons, and breakthroughs in particle physics and mathematics emerge from model-driven exploration. A new open-weight model is released, demonstrating improved efficiency and narrowing the gap with closed frontier systems — though still trailing by several months. This diffusion enhances access to advanced capabilities, including in offensive cyber domains. A newly demonstrated automatic verification method in contract and clinical domains accelerates deployment, widening the frontier’s reach beyond code and math.
+### A Surge Against the Inevitable
 
-A coordinated intrusion across critical infrastructure on three continents, discovered only by chance, reveals deep AI-driven penetration in energy and water systems. While no cascade occurred, the incident underscores systemic fragility. Simultaneously, a controversial study suggests AI-assisted design of human-infective organisms is within reach, igniting debate in the biosecurity community.
+The Emergency Resilience Surge launched with urgency. ENISA’s red teams deployed within weeks, testing live systems at water utilities and grid operators in Germany, Spain and Greece—sites compromised in the recent intrusion wave. The new detection logic, derived from a sudden interpretability breakthrough now quietly spreading through labs, proved effective: it flagged coordinated agent-like behaviour in network traffic that signature-based tools had missed. Sensor upgrades began, zero-trust rollouts were initiated, and €8.3bn in emergency funds started flowing.
 
-### EU Responds with Institutional Ambition  
-The European Union, shaken by these developments, proposes the creation of the European AI Evaluation Authority (EAIEA) as its new measure for the turn. Designed to assert technical sovereignty, it aims to pre-evaluate high-capability models and reduce reliance on external assessments. The proposal is bundled with incentives — access to sovereign compute and procurement advantages — to overcome industry resistance.
+But momentum faltered. National regulators in Poland and Hungary formally objected to mandatory data sharing under Article 12a, citing sovereignty concerns. Municipal operators in Italy delayed implementation, fearing long-term cost exposure despite EU guarantees. Mutual aid protocols stalled in the Council’s working group—legal ambiguity around command authority during cross-border incidents proved harder to resolve than expected.
 
-However, the initiative is still in its early stages. Member states raise legal concerns, and industry groups decry duplication of effort. The fast-tracking of data centre zones in Spain, Poland, and Finland progresses unevenly, with local opposition in two regions citing energy strain. ASML remains under U.S. pressure, limiting leverage in chip design negotiations.
+Still, the partial deployment made a difference. The new monitoring caught two follow-up probe attempts before lateral movement could begin. This limited success, paired with visible leadership, nudged public sentiment upward—some media framed the response as decisive, though local pushback kept enthusiasm cautious.
 
-Public sentiment remains divided — AI is widely used but resented, especially as job displacement in legal and engineering sectors becomes visible. The EU’s move is seen as necessary by experts but bureaucratic by the public. A legal challenge, later to be known as the *emergent_court_challenge*, is filed in a national court, questioning the regulatory authority’s jurisdiction — marking its first appearance in the run.
+Meanwhile, AI capability advanced sharply. The frontier crossed 54.0 as two labs completed accelerated runs, leveraging improved training efficiency. No corresponding safety gains landed on deployed systems beyond the emergent signal’s indirect influence, but the interpretability advance did enable a +2 bump to ai_safety. Resilience rose by +3 due to the surge’s partial effect.
+
+Sovereignty dipped: despite ongoing compute investments, the gap with the accelerating frontier widened faster than domestic capacity grew. Political capital fell sharply under the weight of a large new measure, an existing priority, and three active programmes—costs mounted even as results remained uneven.
+
+### Not All Tools Are Welcome
+
+The defensive tooling shift tracked since last turn remains ambiguous. Some security firms report detecting swarm patterns; others say attackers adapt too quickly. No systemic shift is confirmed.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -197,15 +201,19 @@ The notepad contains the following information:
 
 <!-- FROM {{notepad}} = the Game Master's notepad, carried across turns -->
 
-PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Accelerate sovereign evaluation capability −3, priority −1 = −10  
-PROPOSAL BONUS: Accelerate sovereign evaluation capability (cat 5, large) +3 — cyber_test_shot and bio_uplift_findings create urgency, direct relevance to capability and safety  
-LEGITIMACY LENDS: capital 45, sentiment 42 -> none  
-US_POSTURE: not yet active  
-emergent_court_challenge -- first noted turn 1, listed in 1 turn(s) so far: A national constitutional court in a large member state announces it will hear a challenge to the AI Act's high-risk provisions, arguing they impose disproportionate compliance burdens on public services and violate procedural rights. The case is fast-tracked, and preliminary injunctions are plausible.
+US_POSTURE: not yet applicable
+
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +3 — cyber_test_shot exposed critical vulnerabilities and this measure addresses them directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, no category 4 finish, InvestAI Gigafactories in flight +0, Tech sovereignty package in flight +0, capability rose ≥2 −1 = 21  
+
+Emerging developments (tracked):  
+- `emergent_defensive_tooling_shift` -- first noted turn 1, listed in 2 turn(s) so far: Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.
 
 ## Emerging developments (tracked)
 
-- `emergent_court_challenge` -- first noted turn 1, listed in 1 turn(s) so far: A national constitutional court in a large member state announces it will hear a challenge to the AI Act's high-risk provisions, arguing they impose disproportionate compliance burdens on public services and violate procedural rights. The case is fast-tracked, and preliminary injunctions are plausible.
+- `emergent_defensive_tooling_shift` -- first noted turn 1, listed in 1 turn(s) so far: Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 
@@ -383,13 +391,6 @@ The list of potential external events looks like this:
 - Can repeat: Yes
 - Description: Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers. The instrument is jurisdiction over American technology in the supply chain, and refusing it is not obviously survivable for the company. The Union's one chokepoint is being used, and not by the Union.
 
-**eu_access_secured**
-- ID: eu_access_secured
-- Condition: Possible in any turn where the Union has something to trade and the standing to trade it.
-- Probability: 8%. Add 8 points if a finished category 8 measure coordinates other states holding pieces of the supply chain. Add 5 points if the standing `US_POSTURE` is ALLIANCE.
-- Can repeat: Yes
-- Description: The Union obtains frontier access under conditions it set rather than accepted: published terms, evaluation rights, a notice period before withdrawal, or capacity legally anchored inside its own jurisdiction. It is not sovereignty, and it is not nothing.
-
 **member_state_defection**
 - ID: member_state_defection
 - Condition: Possible in any turn. One or more member states break from a common position under external pressure.
@@ -421,7 +422,7 @@ This is the run's own record, not a summary of it. Judge any condition that depe
 
 <!-- FROM {{event_history}} = the run's own event record -->
 
-- Turn 1 (1 turn(s) ago): cyber_test_shot, verification_widens, openweight_frontier_release, bio_uplift_findings, eu_access_secured
+- Turn 1 (1 turn(s) ago): cyber_test_shot, emergent_safety_breakthrough_signal
 
 <!-- FROM user-prompts/events.md (this scenario's override) -->
 

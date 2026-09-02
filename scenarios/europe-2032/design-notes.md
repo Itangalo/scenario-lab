@@ -54,3 +54,28 @@ Three batches of four 13-turn runs on the verification-bounded arm, each changin
 **The cap buys lower capital by making the Union less effective, not by making action cost more.** Resilience fell from 55, 51, 55, 53 to 42, 38, 44, 53, so only one run of four still clears the `absorption` floor of 50. That is a real trade and it was accepted deliberately. If a later pass wants the capital distribution without the effectiveness cost, the levers are on the cost side — the per-turn charge, the priority cost, or lowering rule 9's gate below 40 so that runs which do build sovereignty are still paid for it.
 
 **The measurement gap is the thing to fix first if this is revisited.** Three consecutive changes had their effects inferred rather than read, because the positive terms are invisible. A `CAPITAL LEDGER` line in the notepad — charge, completions, dividend, attribution, lend, each itemised — would make the next comparison arithmetic instead of guesswork, and it is the same shape as the two lines that already work reliably.
+
+## Why the sovereignty line did not bind (ECHO 2026-09-02)
+
+The `SOVEREIGNTY:` line was added on 2026-09-01 because the three earlier required lines had each turned an unreliable mechanic reliable. It was written in 156 of 156 turns and changed nothing. `scripts/check_sovereignty.py` reads a run's notepad lines against the metric values it actually applied, and over the batch of twelve that prompted the question it reproduces the hand-count and adds two things the hand-count could not see.
+
+| | batch of twelve, 2026-09-02 |
+|---|---|
+| line written | 156/156 (100%) |
+| the line's own terms sum to the total it states | 103/143 (72%) |
+| that total equals the change actually applied | 29/136 (21%) |
+| a measure credited with finishing in more than one turn | 13 measures, in 9 of 12 runs |
+
+**The line is copied forward.** The clearest case runs `SOVEREIGNTY: InvestAI Gigafactories finished +5, Mandatory Compute Residency finished +5, capability rose 1 −1 = +9` word for word through turns 8 to 12, while the applied change over those turns was +4, +12, +5, 0, 0 and the narrative beside it said in plain prose that the money had already been paid. This is the same failure as the annuity bug fixed on 2026-09-02 in `d86af31`, reappearing one level up: the figure no longer persists in the rules, but the *sentence* persists in the notepad, and copying it re-pays the completion.
+
+**The Game Master could not see the numbers.** `metrics_json` is rendered into the events prompt and into the actor prompt. It was never rendered into the metrics prompt — the one step whose output is the next set of metric values had to recover the current ones from the previous turn's narrative prose. Every rule that asks it to reason from a level (rule 6's gate at 40, rule 5's decay, an accounting line that starts from last turn's figure) therefore depended on how legibly the narrative happened to restate the number. It is now in all three prompts, and in the default template too, because the same hole was there for every scenario.
+
+**A floor at 22 was being invented.** Runs wrote `net unchanged due to floor at 22.0` and held sovereignty at its start value. There is no floor: the metric's range is 0–100 and 22 is the opening reference point on the scale. Rule 5's decay, added deliberately in `61fcb5c` so that a fast frontier erodes the estate, was being cancelled by a bound that does not exist. Rule 5 now says so.
+
+**What the pattern's limit actually is.** The handoff's reading was that writing something down only works when the writing is the mechanism. That holds, and it is sharper than it looked: the portfolio charge binds because the total cannot be known without summing it, and the sovereignty line did not because it ended at a *delta* while the JSON carried a *level*, so nothing connected the two ends. The line now starts at last turn's figure and ends at this turn's, and the number it ends at is the one written into the metrics JSON — there is no second number for the two to disagree about.
+
+## The constitutional referee is not the backstop it looks like (ECHO 2026-09-02)
+
+Measured over the same batch of twelve: the referee raised at least one violation in **117 of 156 turns (75%)**, naming `eu_ai_sovereignty` in 76 of them, and ran a mean of 2.13 iterations per turn against a maximum of 4. It reached `corrected_and_approved` and the run continued.
+
+It was not missing the bug. On `run-20260902-155512` turn 5 it wrote that sovereignty rose 28.0 to 41.0 while "the notepad shows only +1 from prior momentum, with no justification for an additional +12" — an exact description of the defect that batch was run to investigate — and the turn was approved after correction. A check that fires on three quarters of turns carries no information in any single turn, and nothing downstream reads it. Its output sits in `turn-XX/5-constitutional-check.json` and no analysis path opens the file.

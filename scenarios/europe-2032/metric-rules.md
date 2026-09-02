@@ -32,6 +32,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 5. **`eu_ai_sovereignty`**
    - Category 4 measure, in the turn it finishes: +3 to +6, once
    - `ai_capability` rose at least 2 this turn: −1
+   - `eu_ai_sovereignty` falls when the sum of its terms is negative, and keeps falling. It has no floor above 0: the 22 it starts at is a reference point on the scale, not a level it returns to or rests on. A turn whose terms come to −1 ends one point lower.
 
 6. **`eu_political_capital`**
    - IMPORTANT: Sum across the full portfolio and other effects before changes are applied

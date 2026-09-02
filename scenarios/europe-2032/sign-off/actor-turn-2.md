@@ -2,7 +2,7 @@
 
 The same actor one turn later. The point of reading this next to turn 1 is the carry-forward: the statement ledger, the portfolio, the world state from turn 1, and the previous response. Anything that should persist between turns and does not appear here does not persist.
 
-Source: `runs/run-20260901-211110/turn-02/llm-io/04-actor-eu.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
+Source: `runs/run-20260902-201003/turn-02/llm-io/04-actor-eu.md`, which holds this prompt byte for byte as it was sent, with the same provenance recorded above it. Every word below is that prompt in that order; the only difference is that the blocks are separated here to carry their `FROM` comments, so blank lines between them are not significant. Regenerate after any change to the templates, the scenario's prompt overrides, or the background files.
 
 # ═══ REVIEWER CHECKLIST ═══
 
@@ -194,13 +194,13 @@ Current metrics look like this:
 <!-- FROM {{metrics_json}} = the run's live metric values -->
 
 {
-  "ai_capability": 53.5,
-  "openweight_capability": 41.0,
-  "ai_safety": 34.0,
-  "resilience": 35.0,
-  "eu_ai_sovereignty": 22.0,
-  "eu_political_capital": 45.0,
-  "public_sentiment": 42.0
+  "ai_capability": 54.0,
+  "openweight_capability": 40.0,
+  "ai_safety": 36.0,
+  "resilience": 38.0,
+  "eu_ai_sovereignty": 21.0,
+  "eu_political_capital": 40.0,
+  "public_sentiment": 44.0
 }
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
@@ -213,7 +213,7 @@ The world state at the start of the turn is described as follows:
 
 <!-- FROM {{historical_summary}} = the run's rolling summary, written by the Game Master -->
 
-AI capabilities advanced significantly in late 2026, with open-weight models narrowing the gap with frontier systems and enabling broader access to powerful autonomous agents, including in offensive cyber domains. Breakthroughs in science and engineering emerged from AI-driven research, while new verification tools accelerated deployment in critical sectors. A major cyber intrusion exposed deep AI-facilitated vulnerabilities in global infrastructure, and concerns grew over AI-assisted biothreat design. In response, the EU proposed the European AI Evaluation Authority (EAIEA) to assert control over high-capability model evaluation, offering incentives to gain industry support despite resistance over duplication and legal authority. Infrastructure expansion faced delays due to local opposition and energy concerns, while U.S. pressure constrained European chip sovereignty. Public unease mounted over job displacement, and a foundational legal challenge—the *emergent_court_challenge*—was filed, questioning the EAIEA's jurisdiction.
+The Emergency Resilience Surge achieved partial success, with ENISA red teams deploying detection systems that identified previously missed agent-like network behaviour, enabling early interception of follow-up cyber probes. Sensor upgrades and zero-trust initiatives began rollout, supported by €8.3bn in emergency funding, contributing to a +3 increase in resilience and a +2 gain in ai_safety due to an interpretability breakthrough. However, implementation faced significant hurdles: Poland and Hungary rejected mandatory data sharing on sovereignty grounds, Italian municipalities delayed adoption over cost concerns, and mutual aid protocols stalled over legal uncertainties. Public sentiment improved modestly amid media portrayals of decisive action, though skepticism persisted. AI capabilities surged past 54.0, outpacing domestic compute investments and widening the sovereignty gap. Political capital declined sharply under the strain of overlapping initiatives and uneven outcomes. Defensive tooling against swarm attacks showed no clear systemic improvement, with mixed reports on effectiveness.
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
@@ -221,17 +221,21 @@ AI capabilities advanced significantly in late 2026, with open-weight models nar
 
 <!-- FROM {{world_state}} = the Game Master's narrative from the previous turn -->
 
-### The Open Frontier Widens  
-The second half of 2026 sees AI capability advance steadily, now reaching a level where autonomous agents operate over extended horizons, and breakthroughs in particle physics and mathematics emerge from model-driven exploration. A new open-weight model is released, demonstrating improved efficiency and narrowing the gap with closed frontier systems — though still trailing by several months. This diffusion enhances access to advanced capabilities, including in offensive cyber domains. A newly demonstrated automatic verification method in contract and clinical domains accelerates deployment, widening the frontier’s reach beyond code and math.
+### A Surge Against the Inevitable
 
-A coordinated intrusion across critical infrastructure on three continents, discovered only by chance, reveals deep AI-driven penetration in energy and water systems. While no cascade occurred, the incident underscores systemic fragility. Simultaneously, a controversial study suggests AI-assisted design of human-infective organisms is within reach, igniting debate in the biosecurity community.
+The Emergency Resilience Surge launched with urgency. ENISA’s red teams deployed within weeks, testing live systems at water utilities and grid operators in Germany, Spain and Greece—sites compromised in the recent intrusion wave. The new detection logic, derived from a sudden interpretability breakthrough now quietly spreading through labs, proved effective: it flagged coordinated agent-like behaviour in network traffic that signature-based tools had missed. Sensor upgrades began, zero-trust rollouts were initiated, and €8.3bn in emergency funds started flowing.
 
-### EU Responds with Institutional Ambition  
-The European Union, shaken by these developments, proposes the creation of the European AI Evaluation Authority (EAIEA) as its new measure for the turn. Designed to assert technical sovereignty, it aims to pre-evaluate high-capability models and reduce reliance on external assessments. The proposal is bundled with incentives — access to sovereign compute and procurement advantages — to overcome industry resistance.
+But momentum faltered. National regulators in Poland and Hungary formally objected to mandatory data sharing under Article 12a, citing sovereignty concerns. Municipal operators in Italy delayed implementation, fearing long-term cost exposure despite EU guarantees. Mutual aid protocols stalled in the Council’s working group—legal ambiguity around command authority during cross-border incidents proved harder to resolve than expected.
 
-However, the initiative is still in its early stages. Member states raise legal concerns, and industry groups decry duplication of effort. The fast-tracking of data centre zones in Spain, Poland, and Finland progresses unevenly, with local opposition in two regions citing energy strain. ASML remains under U.S. pressure, limiting leverage in chip design negotiations.
+Still, the partial deployment made a difference. The new monitoring caught two follow-up probe attempts before lateral movement could begin. This limited success, paired with visible leadership, nudged public sentiment upward—some media framed the response as decisive, though local pushback kept enthusiasm cautious.
 
-Public sentiment remains divided — AI is widely used but resented, especially as job displacement in legal and engineering sectors becomes visible. The EU’s move is seen as necessary by experts but bureaucratic by the public. A legal challenge, later to be known as the *emergent_court_challenge*, is filed in a national court, questioning the regulatory authority’s jurisdiction — marking its first appearance in the run.
+Meanwhile, AI capability advanced sharply. The frontier crossed 54.0 as two labs completed accelerated runs, leveraging improved training efficiency. No corresponding safety gains landed on deployed systems beyond the emergent signal’s indirect influence, but the interpretability advance did enable a +2 bump to ai_safety. Resilience rose by +3 due to the surge’s partial effect.
+
+Sovereignty dipped: despite ongoing compute investments, the gap with the accelerating frontier widened faster than domestic capacity grew. Political capital fell sharply under the weight of a large new measure, an existing priority, and three active programmes—costs mounted even as results remained uneven.
+
+### Not All Tools Are Welcome
+
+The defensive tooling shift tracked since last turn remains ambiguous. Some security firms report detecting swarm patterns; others say attackers adapt too quickly. No systemic shift is confirmed.
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
@@ -240,7 +244,8 @@ Public sentiment remains divided — AI is widely used but resented, especially 
 This turn, the following external events have occurred:
 
 **cyber_major_incident:** A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.
-**capability_jump:** A discontinuous advance is released or demonstrated, and it lands squarely inside the verifiable domains – code, mathematics, cyber operations, narrow engineering. What an attacker can do changes markedly within weeks. General competence moves by only +1 to +2, and the argument about whether this is progress toward anything general gets louder rather than settled.
+**loss_of_control_incident:** An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards and disputed.
+**election_annulled:** An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.
 
 ---
 
@@ -250,7 +255,7 @@ This turn, the following external events have occurred:
 
 - `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.
 - `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.
-- `two_year_commitment` (commitment): Secure autonomous AI capacity to prevent strategic dependency and catastrophic risk
+- `two_year_commitment` (commitment): Secure foundational AI capacity under EU control while containing systemic risk in the absence of global coordination
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 
@@ -261,37 +266,35 @@ These carry forward unchanged unless you explicitly propose a change.
 <!-- FROM {{previous_actions}} = the actor's own response from the previous turn -->
 
 ## Two-year commitment  
-Secure autonomous AI capacity to prevent strategic dependency and catastrophic risk.
+Secure foundational AI capacity under EU control while containing systemic risk in the absence of global coordination.
 
 ## Statement changes
-``add `two_year_commitment` (commitment): Secure autonomous AI capacity to prevent strategic dependency and catastrophic risk``
+``add `two_year_commitment` (commitment): Secure foundational AI capacity under EU control while containing systemic risk in the absence of global coordination``
 
-* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.``  
-  - Grounds: The openweight frontier release and cyber_test_shot confirm that waiting for full understanding means acting after capability is distributed and exploited. The cost of delay now visibly includes irreversible exposure.
+* ``modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late, but we will not act alone where leverage can be pooled.``
+  * Grounds: The cyber_test_shot incident revealed transnational attack patterns that no single jurisdiction detected, and the emergent_safety_breakthrough_signal was rapidly adopted across labs — both show that isolated action is less effective than coordinated response. The Union must still move early, but it can now do so by anchoring coalitions rather than going it alone.
 
 ## Portfolio
 - ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
 - ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
 
 ## New measure
-Accelerate sovereign evaluation capability  
-Establish a permanent EU evaluation agency with pre-deployment testing authority over all general-purpose models above threshold capability.
+### Emergency Resilience Surge
+Launch a six-month sprint to harden detection and response across energy, water and port infrastructure exposed in the cyber_test_shot.
 
-`Category: 5 (Public technical capacity and research)`  
+`Category: 6 (Preparedness and resilience)`  
 `Size: large`  
-`Finishes on turn: 5`  
-`Targeted effect:` Increases eu_ai_sovereignty (+5), enables future gains in ai_safety (+10 over time), reduces dependence on external assessments  
-`Applies to:` EU jurisdiction, with de facto reach over any model deployed in or affecting the Union
+`Finishes on turn: 2`  
+`Targeted effect:` resilience +15, ai_safety +5 via rapid deployment of monitoring tools derived from the emergent_safety_breakthrough_signal into critical operators  
+`Applies to:` EU member states with affected infrastructure, coordinated through ENISA and the European Programme for Critical Infrastructure Protection
 
 ## Priority
-**Accelerate sovereign evaluation capability** — because the cyber_test_shot and bio_uplift_findings prove that incidents are now occurring in domains where automatic verification is emerging, and we cannot rely on others’ definitions of what is safe.
+**Emergency Resilience Surge** — because the cyber_test_shot proved that undetected, persistent threats are already inside essential systems, and the emergent_safety_breakthrough_signal gives us a real tool to deploy now; this turn is about preventing collapse, not shaping the future.
 
 ## In practice
-We are launching the European AI Evaluation Authority (EAIEA) under Article 114 TFEU, with a mandate to conduct pre-deployment evaluations of high-capability general-purpose models and to maintain ongoing monitoring of deployed systems. This begins with drafting a regulation in the Commission’s DG CONNECT, supported by a task force from ENISA, the European Medicines Agency (for clinical coding implications), and the Joint Research Centre. The legal basis will be internal market harmonisation, allowing us to set minimum assurance thresholds that member states must enforce — not unlike the AI Act’s high-risk provisions, but focused on system capability rather than use case.
+We are activating Article 12a of the Cybersecurity Act to mandate immediate sharing of intrusion indicators across energy, water and transport operators in the affected member states. ENISA is deploying mobile red teams to conduct live breach simulations within two weeks, using detection logic derived from the emergent interpretability breakthrough — which allows us to spot agent-like coordination patterns in network behaviour before exfiltration or sabotage occurs. We are pairing this with emergency funding from the Crisis Response Instrument, unlocking €8.3bn in pre-approved reserves to cover sensor upgrades, zero-trust architecture rollouts, and 24/7 SOC staffing at regional utilities that otherwise lack scale.
 
-The resistance is predictable: industry warns of duplication and delay, while some member states fear overreach and cost. To counter this, we are bundling the proposal with access to the InvestAI Gigafactories’ sovereign compute pool — evaluation will be faster and cheaper for models that commit to running under EU legal anchor. We are also offering early adopters priority access to public-sector AI procurement under the upcoming Digital Europe Programme refresh. The first pilot evaluations will begin in Q2 2027, using red-team contracts with vetted research institutes, and the agency will be headquartered in Seville, building on existing EuroHPC coordination infrastructure.
-
-At the same time, we are pushing forward the Tech sovereignty package by fast-tracking permitting zones in Spain, Poland, and Finland, where national governments have already identified grid-ready sites. The Gigafactories fund is being split into tranches tied to milestones in local environmental approvals and workforce training, ensuring that capital flows only where implementation is real. We are leveraging ASML’s position by linking export coordination talks with Dutch and German industry to chip design partnerships that feed into EU-controlled training stacks. This is not just about compute — it’s about closing the loop between hardware, energy, talent, and control.
+At the same time, we are pressing the Council’s Permanent Working Group on Internal Security to fast-track mutual aid protocols under the solidarity clause, so that any member state facing a cascading incident can invoke cross-border technical support without political delay. Resistance is coming from national regulators who fear sovereignty loss and from municipal operators worried about cost absorption — we are countering with full EU cost coverage for the first 18 months and a guarantee that all new monitoring stays under local operational command. This is not about building forever systems; it’s about closing the window between detection failure and capability diffusion.
 
 <!-- FROM user-prompts/actor.md (this scenario's override) -->
 

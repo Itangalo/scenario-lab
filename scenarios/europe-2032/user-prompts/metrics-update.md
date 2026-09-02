@@ -1,7 +1,9 @@
-{# Scenario override. Identical to templates/user-prompts/metrics-update.md except for three additions, all after the notepad block:
+{# Scenario override. Identical to templates/user-prompts/metrics-update.md except for four additions:
    1. Guidance for treating tracked emerging developments as faint narrative signals rather than events.
    2. The political-capital procedure: the portfolio charge, the proposal bonus and the sentiment term, each as its own required Notepad line.
    3. The US_POSTURE line, which must be carried in the Notepad from the turn the 2028 election fires onward.
+   4. The sovereignty accounting line of step 3d, which unlike the three above is not a record of a judgement but the judgement itself: it starts from last turn's figure and the number it ends at is the one written into the Metrics JSON.
+   The first three sit after the notepad block; the metrics_json block above it is now in the default template too and is not an override.
    A ban on writing the long run as settled used to sit here, and was removed on 2026-09-01 deliberately: the Game Master is never told the arm's name and never sees the other arms' rules, so it has no vocabulary for announcing which trajectory this world turned out to be. background/context.md does name the three readings in the opening world state, so the channel is not fully closed -- that was weighed and accepted.
    Keep in sync with the default template when that changes. #}
 It is now turn {{turn}} which covers {{time_period}}.
@@ -68,18 +70,22 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    Compare the two numbers before writing anything. `none` is correct only when capital is the higher of the two, and a `none` whose own reasoning shows sentiment above capital is wrong.
 
-3d. **Account for every point of `eu_ai_sovereignty` you move, before you move it.** Metric rule 5 gives it exactly two sources, and they are not the same size:
+3d. **Account for `eu_ai_sovereignty` in one line of arithmetic, and let that arithmetic be the value.** Metric rule 5 gives it exactly two sources, and they are not the same size:
 
-   - a category 4 measure **in the turn it finishes**: +3 to +6, once. Two finishing in the same turn each pay in full.
+   - a category 4 measure **in the turn its stated finishing turn is reached**: +3 to +6, that turn and no other. Two finishing in the same turn each pay in full.
    - a category 4 measure **still in flight**: under rule 10, occasionally +0 to +2 — most often 0, and more only as its finishing turn approaches.
 
    Against them, `ai_capability` rising at least 2 this turn costs −1.
 
-   Write one line in the Notepad naming each measure that moved it and by how much, or `SOVEREIGNTY: no change`:
+   Write one line in the Notepad that starts from last turn's figure, names every term, and ends at this turn's:
 
-   `SOVEREIGNTY: Sovereign Compute Corridor finished +5, Gigafactories in flight +1, capability rose 2.5 −1 = +5`
+   `SOVEREIGNTY: 31 last turn, Sovereign Compute Corridor finishes t6 +5, Gigafactories in flight +1, capability rose 2.5 −1 = 36`
 
-   **A measure that has not reached its finishing turn cannot pay finishing money.** Building momentum, permits granted, planning underway, a programme going well — none of these is a completion, and the most any of them is worth is +2. If your line totals more than +2 and no measure finished this turn, it is wrong. Three runs in one batch of twelve moved sovereignty by +6, +8 and +9 in turns where nothing had finished, once while the narrative itself called the measure stalled.
+   **The number after the `=` is what you write for `eu_ai_sovereignty` in the Metrics JSON** — the same number, not one near it and not one you reached another way. There is nothing left to judge once the line is written. Nothing outside rule 5 is a term: momentum, institutional follow-through, prior delivery, floors and rounding are not terms, and a line that reaches a total and then appends `→ net +1` has thrown away its own arithmetic.
+
+   **A completion names the turn it finishes, and that turn is this one.** Write `finishes t7 +5`, and only when the turn is 7. Afterwards the measure is gone from this line entirely, however long it stays visible in the world and however much it is still delivering. **This line is never copied forward.** Recompute it from the portfolio every turn: in a batch of twelve, nine runs paid one measure's completion in two or more turns, one of them for six turns running on a line reproduced word for word while the narrative beside it said the money had already been paid.
+
+   **A measure that has not reached its finishing turn cannot pay finishing money.** Building momentum, permits granted, planning underway, a programme going well — none of these is a completion, and the most any of them is worth is +2.
 
 4. **A finishing turn moves only when something moved it.** The portfolio carries a stated finishing turn per measure, set when the measure was proposed. Copy them forward as they stand. If a measure's finishing turn should change — pushed by being the priority, slipping through neglect, delayed or accelerated by an event — say so in the Narrative in the same breath as the reason, and write the new turn. A finishing turn that drifts with no reason given is an error.
 
