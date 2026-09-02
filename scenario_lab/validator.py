@@ -971,6 +971,67 @@ def validate_research_questions(scenario: Scenario) -> Tuple[List[str], List[str
     return errors, warnings
 
 
+def validate_actor_sections(scenario_path: Path) -> List[str]:
+    """Warn about actor-file text that `load_actor` reads and then discards.
+
+    `load_actor` tracks one current section. `## Short description`,
+    `## Long description`, `### Statements` and `### Behavioral traits` open
+    one; every other heading closes the open one, and the prose beneath an
+    unrecognised heading is read, matched by nothing, and dropped. Nothing
+    errors, the file still looks complete, and the actor simply never learns
+    what it says -- which is why five actor files across three scenarios lost
+    content without anyone noticing.
+
+    This reports the loss rather than repairing it. Folding the orphaned text
+    back into the long description would change what every affected scenario
+    sends its actors, and some of them have since restated that content in
+    their prompt overrides, where repairing it here would say it twice.
+    """
+    warnings: List[str] = []
+    actors_dir = scenario_path / "background" / "actors"
+    if not actors_dir.is_dir():
+        return warnings
+
+    opens_a_section = (
+        "## short description",
+        "## long description",
+        "### statements",
+        "### behavioral traits",
+        "### behavioural traits",
+        "### traits",
+    )
+
+    for actor_file in sorted(actors_dir.glob("*.md")):
+        dropped: list[tuple[str, int]] = []
+        heading: str | None = None
+        lines_under = 0
+
+        for line in actor_file.read_text(encoding="utf-8").split("\n"):
+            stripped = line.strip()
+            lower = stripped.lower()
+            if stripped.startswith("#"):
+                if heading and lines_under:
+                    dropped.append((heading, lines_under))
+                heading = None if lower.startswith(opens_a_section) or stripped.startswith("# ") else stripped
+                lines_under = 0
+            elif heading and stripped:
+                lines_under += 1
+        if heading and lines_under:
+            dropped.append((heading, lines_under))
+
+        if dropped:
+            detail = ", ".join(f"'{h}' ({n} line{'s' if n != 1 else ''})" for h, n in dropped)
+            warnings.append(
+                f"Actor file '{actor_file.name}': load_actor drops {len(dropped)} heading(s) "
+                f"and the text under them: {detail}. It keeps only '## Short description', "
+                f"'## Long description', '### Statements' and '### Behavioral traits'. "
+                f"Dropped text reaches the model only if a prompt override restates it, so "
+                f"check the sign-off documents before assuming any of it is in play."
+            )
+
+    return warnings
+
+
 def validate_actor_references(scenario: Scenario) -> List[str]:
     """Validate that scenario.yaml actors match actor files.
 
@@ -1161,6 +1222,7 @@ def validate_scenario(scenario_path: Path) -> ValidationResult:
     warnings.extend(llm_warnings)
     warnings.extend(collect_model_hygiene_warnings(scenario.config.llm, scope=scenario_path.name))
     errors.extend(validate_actor_references(scenario))
+    warnings.extend(validate_actor_sections(scenario_path))
     errors.extend(validate_time_config(scenario))
     rq_errors, rq_warnings = validate_research_questions(scenario)
     errors.extend(rq_errors)

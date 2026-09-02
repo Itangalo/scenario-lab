@@ -9,6 +9,7 @@ from scenario_lab.validator import (
     validate_event_probabilities,
     validate_llm_config,
     validate_actor_references,
+    validate_actor_sections,
     validate_time_config,
     is_static_probability,
     parse_static_probability,
@@ -809,3 +810,68 @@ def test_validate_event_fields_silent_when_all_fields_parsed(tmp_path):
     )
 
     assert validate_event_fields(tmp_path) == []
+
+
+def test_validate_actor_sections_reports_dropped_headings(tmp_path):
+    """Text under an unrecognised heading is dropped by load_actor, silently."""
+    actors = tmp_path / "background" / "actors"
+    actors.mkdir(parents=True)
+    (actors / "eu.md").write_text(
+        "# The European Union\n"
+        "## Short description\n"
+        "A union.\n"
+        "## Long description\n"
+        "It has instruments.\n"
+        "### What you are\n"
+        "A regulator with a budget.\n"
+        "And two mandates.\n"
+        "### Statements\n"
+        "- `x` (position): We will act.\n"
+        "### Behavioral traits\n"
+        "- Cautious.\n",
+        encoding="utf-8",
+    )
+
+    warnings = validate_actor_sections(tmp_path)
+
+    assert len(warnings) == 1
+    assert "eu.md" in warnings[0]
+    assert "'### What you are' (2 lines)" in warnings[0]
+    # The headings load_actor does read are not among the ones it drops. They
+    # are named further along in the message, so count rather than substring.
+    assert "drops 1 heading(s)" in warnings[0]
+
+
+def test_validate_actor_sections_silent_when_every_heading_is_read(tmp_path):
+    actors = tmp_path / "background" / "actors"
+    actors.mkdir(parents=True)
+    (actors / "eu.md").write_text(
+        "# The European Union\n"
+        "## Short description\n"
+        "A union.\n"
+        "## Long description\n"
+        "It has instruments.\n"
+        "### Statements\n"
+        "- `x` (position): We will act.\n",
+        encoding="utf-8",
+    )
+
+    assert validate_actor_sections(tmp_path) == []
+
+
+def test_validate_actor_sections_ignores_an_empty_heading(tmp_path):
+    """A heading with no prose under it loses nothing, so it is not a finding."""
+    actors = tmp_path / "background" / "actors"
+    actors.mkdir(parents=True)
+    (actors / "eu.md").write_text(
+        "# The European Union\n"
+        "## Short description\n"
+        "A union.\n"
+        "### Notes\n"
+        "\n"
+        "## Long description\n"
+        "It has instruments.\n",
+        encoding="utf-8",
+    )
+
+    assert validate_actor_sections(tmp_path) == []
