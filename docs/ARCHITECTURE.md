@@ -169,7 +169,8 @@ Each turn executes the following steps in order:
   * **Policy Handling:** Outside frozen turns, if the rules output violates configured rule-evolution guardrails, the orchestrator retries once with stricter instructions. If it still fails, the orchestrator carries the previous rules forward in a new versioned wrapper instead of accepting a broad rewrite that the scenario disallows.
 
 4. **Metrics Step**:
-  * **Input:** World state, triggered events, actor actions, updated rules.
+  * **Input:** Current metric values, world state, triggered events, actor actions, updated rules.
+  * **Why the current values are in the prompt:** the events and actor steps have always rendered `metrics_json`; the metrics step, whose whole job is to produce the next values, did not, and had to recover the old ones from the previous turn's narrative prose. Where a rule asks the Game Master to reason from a metric's current level – a threshold, a decay, an accounting line that starts from last turn's figure – that made the arithmetic depend on how legibly the narrative happened to restate the number. Nothing errored when it did not.
   * **LLM Task:**
     * Determine success of actor actions.
     * Calculate new metric values.

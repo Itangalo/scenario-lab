@@ -10,6 +10,12 @@ The Metric Rules looked like this (possibly updated):
 
 {{metric_rules}}
 
+Current metrics look like this:
+
+```json
+{{metrics_json}}
+```
+
 The world state at the start of the turn is described as follows:
 
 {% if historical_summary %}
