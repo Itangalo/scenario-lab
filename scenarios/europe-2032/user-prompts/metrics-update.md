@@ -62,6 +62,19 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    Compare the two numbers before writing anything. `none` is correct only when capital is the higher of the two, and a `none` whose own reasoning shows sentiment above capital is wrong.
 
+3d. **Account for every point of `eu_ai_sovereignty` you move, before you move it.** Metric rule 5 gives it exactly two sources, and they are not the same size:
+
+   - a category 4 measure **in the turn it finishes**: +3 to +6, once. Two finishing in the same turn each pay in full.
+   - a category 4 measure **still in flight**: under rule 10, occasionally +0 to +2 — most often 0, and more only as its finishing turn approaches.
+
+   Against them, `ai_capability` rising at least 2 this turn costs −1.
+
+   Write one line in the Notepad naming each measure that moved it and by how much, or `SOVEREIGNTY: no change`:
+
+   `SOVEREIGNTY: Sovereign Compute Corridor finished +5, Gigafactories in flight +1, capability rose 2.5 −1 = +5`
+
+   **A measure that has not reached its finishing turn cannot pay finishing money.** Building momentum, permits granted, planning underway, a programme going well — none of these is a completion, and the most any of them is worth is +2. If your line totals more than +2 and no measure finished this turn, it is wrong. Three runs in one batch of twelve moved sovereignty by +6, +8 and +9 in turns where nothing had finished, once while the narrative itself called the measure stalled.
+
 4. **A finishing turn moves only when something moved it.** The portfolio carries a stated finishing turn per measure, set when the measure was proposed. Copy them forward as they stand. If a measure's finishing turn should change — pushed by being the priority, slipping through neglect, delayed or accelerated by an event — say so in the Narrative in the same breath as the reason, and write the new turn. A finishing turn that drifts with no reason given is an error.
 
 5. Once `us_election_2028` has fired, write the resulting `US_POSTURE: CONSOLIDATION`, `US_POSTURE: ALLIANCE` or `US_POSTURE: RETRENCHMENT` line into the world state for that turn, and carry the same line in the Notepad every turn thereafter. It is a standing condition of the world that metric rule 8 reads each turn, not a one-off narrative beat.
