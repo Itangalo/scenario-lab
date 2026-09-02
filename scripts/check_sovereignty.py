@@ -46,12 +46,30 @@ IN_FLIGHT = re.compile(r"\bin flight\b", re.IGNORECASE)
 
 LEGAL_WITHOUT_COMPLETION = 2.0
 
+# The notepad is free text and the Game Master formats it as it likes: the
+# accounting lines come bare in some runs and as list items in others, and a
+# whole run can switch. A detector anchored to the start of the line reads a
+# bulleted run as one that never wrote the line at all.
+BULLET = re.compile(r"^\s*(?:[-*+•]|\d+[.)])\s+")
+# And it wraps them in a code span or bold as readily as it leaves them bare.
+# This repo has lost content to a code-span wrapper before, in the statement
+# ledger; the same wrapper hides an accounting line just as completely.
+WRAPPER = re.compile(r"^[`*_\"'\s]+|[`*_\"'\s]+$")
+
 # Names that carry no measure: `no measure finished`, `no category 4 finish`.
 NOT_A_MEASURE = re.compile(r"^(?:and\s+)?(?:no|nothing|none)\b", re.IGNORECASE)
 
 # `SOVEREIGNTY: 31 last turn, ... = 36` anchors the line to a level and ends at
 # one. The earlier form named terms and ended at a delta; both are read, so a
 # batch run before the change stays comparable with one run after it.
+# Two habits the prompt asks the Game Master to drop, each the direct cause of
+# one of the two rates above. A revision after the total is why a line stops
+# binding; a decay written where its condition does not hold is why a line
+# stops adding up. Counting them says whether a clause landed, without waiting
+# for the rates to move.
+REVISES = re.compile(r"=[^=]*?(?:→|->|adjusted|net |rounded|but )", re.IGNORECASE)
+DECAY_UNDER_THRESHOLD = re.compile(rf"rose\s+(?:0|1)(?:\.\d+)?\s*[{MINUSES}-]\s?1\b", re.IGNORECASE)
+
 ANCHOR = re.compile(rf"^\s*([+\-{MINUSES}]?\s?\d+(?:\.\d+)?)\s*(?:last turn|start|starting|at start)", re.IGNORECASE)
 
 
@@ -238,8 +256,9 @@ def read_turn(run: Path, turn_dir: Path) -> TurnCheck | None:
     line = None
     if notepad_path.exists():
         for candidate in notepad_path.read_text().splitlines():
-            if candidate.strip().startswith(LINE_PREFIX):
-                line = candidate.strip()
+            stripped = WRAPPER.sub("", BULLET.sub("", candidate.strip()))
+            if stripped.startswith(LINE_PREFIX):
+                line = stripped
                 break
 
     terms: list[float] = []
@@ -261,7 +280,7 @@ def read_turn(run: Path, turn_dir: Path) -> TurnCheck | None:
     )
 
 
-def collect(paths: list[Path], since: str | None) -> list[TurnCheck]:
+def collect(paths: list[Path], since: str | None, max_turn: int | None = None) -> list[TurnCheck]:
     runs: list[Path] = []
     for path in paths:
         if (path / "config.json").exists():
@@ -275,7 +294,7 @@ def collect(paths: list[Path], since: str | None) -> list[TurnCheck]:
     for run in sorted(set(runs)):
         for turn_dir in sorted(run.glob("turn-*")):
             check = read_turn(run, turn_dir)
-            if check is not None:
+            if check is not None and (max_turn is None or check.turn <= max_turn):
                 checks.append(check)
     return checks
 
@@ -299,6 +318,11 @@ def summarise(label: str, checks: list[TurnCheck], detail: bool) -> None:
     print(f"  terms sum to total  {rate(sum(1 for c in arithmetic if c.arithmetic_ok), len(arithmetic))}")
     print(f"  total is applied    {rate(sum(1 for c in comparable if c.binds), len(comparable))}")
     print(f"  rule 5 respected    {rate(sum(1 for c in legality if c.legal), len(legality))}")
+    if written:
+        revises = sum(1 for c in written if REVISES.search(c.line or ""))
+        decay = sum(1 for c in written if DECAY_UNDER_THRESHOLD.search(c.line or ""))
+        print(f"  revises the total   {rate(revises, len(written))}")
+        print(f"  decay under a 2     {rate(decay, len(written))}")
     if anchored:
         checkable = [c for c in anchored if c.anchor_ok is not None]
         print(f"  line anchored       {rate(len(anchored), len(written))}")
@@ -359,6 +383,12 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("paths", nargs="+", type=Path)
     parser.add_argument("--since", help="keep runs whose name sorts at or after run-<since>")
+    parser.add_argument(
+        "--max-turn",
+        type=int,
+        help="ignore turns after this one, so a short batch can be compared "
+        "against the opening turns of a longer one",
+    )
     parser.add_argument("--per-turn", action="store_true", help="list every turn, not just the summary")
     parser.add_argument("--failures", action="store_true", help="list the turns that failed a check")
     parser.add_argument(
@@ -375,7 +405,7 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    checks = collect(args.paths, args.since)
+    checks = collect(args.paths, args.since, args.max_turn)
     if not checks:
         print("no turns found", file=sys.stderr)
         return 1

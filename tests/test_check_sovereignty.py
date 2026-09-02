@@ -150,3 +150,29 @@ def test_resolve_claim_tells_a_level_from_a_change(claim, reference, expected):
     there — it put a spurious 32-point gap in both cohorts before it was fixed.
     """
     assert resolve_claim(claim, reference) == expected
+
+
+@pytest.mark.parametrize(
+    "prefix, suffix",
+    [("", ""), ("- ", ""), ("* ", ""), ("  - ", ""), ("1. ", ""),
+     ("`", "`"), ("- `", "`"), ("**", "**")],
+)
+def test_the_line_is_found_however_the_notepad_formats_it(tmp_path, prefix, suffix):
+    """A run that bullets its notepad is not a run that skipped the rule.
+
+    Anchoring the detector to the start of the line once read seven runs of
+    eight as having written the line in only 80% of turns, when every one of
+    them had written it.
+    """
+    run = tmp_path / "run-x"
+    (run / "turn-01").mkdir(parents=True)
+    (run / "config.json").write_text("{}")
+    (run / "turn-01" / "4-metrics.json").write_text('{"eu_ai_sovereignty": 21.0}')
+    (run / "turn-01" / "5-notepad.md").write_text(
+        f"{prefix}SOVEREIGNTY: 22 last turn, capability rose 2.5 −1 = 21{suffix}\n"
+    )
+
+    check = check_sovereignty.read_turn(run, run / "turn-01")
+
+    assert check is not None and check.line is not None
+    assert check.anchor == 22.0

@@ -89,3 +89,20 @@ Twelve runs each side, four per arm, thirteen turns, seeds 7701–7904 before an
 Measured over the same batch of twelve: the referee raised at least one violation in **117 of 156 turns (75%)**, naming `eu_ai_sovereignty` in 76 of them, and ran a mean of 2.13 iterations per turn against a maximum of 4. It reached `corrected_and_approved` and the run continued.
 
 It was not missing the bug. On `run-20260902-155512` turn 5 it wrote that sovereignty rose 28.0 to 41.0 while "the notepad shows only +1 from prior momentum, with no justification for an additional +12" — an exact description of the defect that batch was run to investigate — and the turn was approved after correction. A check that fires on three quarters of turns carries no information in any single turn, and nothing downstream reads it. Its output sits in `turn-XX/5-constitutional-check.json` and no analysis path opens the file.
+
+## A negative result: two more prohibitions bought nothing (ECHO 2026-09-02)
+
+The two residual causes named above each got a clause in step 3d — write only the terms you are charging, and stop at the total — and were measured against the same two arms over eight runs of eight turns, seeds 8401–8504 against 8101–8204 truncated to turn 8.
+
+| | before | after | |
+|---|---|---|---|
+| revises the total (`= 31 → adjusted to 28`) | 22% | 30% | not distinguishable |
+| decay written where the rise was under 2 | 23% | 32% | not distinguishable |
+| total is applied | 57% | 65% | not distinguishable |
+| terms sum to total | 55% | 52% | not distinguishable |
+
+Every difference sits inside one standard error, and both habits the clauses targeted went up rather than down. Net drift moved −2.3 to +0.1 per run while its range widened, which is not an improvement either. The clauses were reverted.
+
+**The distinction worth keeping.** Step 3d worked when it changed the shape of the computation — the line now runs from a figure to a figure, and the figure it ends at is the metric. These two clauses only told the Game Master to stop doing things, on a step that already carries five numbered rules and four required output lines. Prohibition is not the same instrument as reformulation, and this step appears to be saturated with the first.
+
+Whether the residual −4 drift can be removed at all is open. It would need a 13-turn batch to measure, because at eight turns the drift is mean −2.3 and negative in only four runs of eight, against −3.8 and seven of eight over the full thirteen.
