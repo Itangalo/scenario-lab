@@ -1,6 +1,6 @@
 # Metric Rules
 
-One turn is six months. Figures are per turn unless stated, and a range means judge within it, not average it.
+One turn is six months. Figures are for this turn: a rule applies in whatever turn its condition holds, and applies again whenever it holds again. A range means judge within it, not average it.
 
 The EU's leverage differs by metric, and the ordering governs everything below: strong on `resilience`, `eu_ai_sovereignty` and `eu_political_capital`; moderate on `public_sentiment`; weak on `ai_safety` and `openweight_capability`, reachable only through market access and international agreement; none on `ai_capability`.
 
@@ -30,9 +30,8 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - Category 9 measure broadening adoption, in the turn it finishes: −1 to −3, once
 
 5. **`eu_ai_sovereignty`**
-   - Category 4 measure, in the turn it finishes: +2 to +6, once
-   - `ai_capability` rose and no sovereignty measure is in force: −1 to −2
-   - Cap: no single turn moves it more than 5 in either direction, absent an event that says otherwise
+   - Category 4 measure, in the turn it finishes: +3 to +6, once
+   - `ai_capability` rose at least 2 this turn: −1
 
 6. **`eu_political_capital`**
    - IMPORTANT: Sum across the full portfolio and other effects before changes are applied
