@@ -72,7 +72,7 @@ Two deliberate omissions. There is no US–China capability gap metric: `ai_capa
 **Min:** 0
 **Max:** 100
 **Unit:** index
-**Start value:** 35
+**Start value:** 42
 **Reference points:**
 
 - 15: Brittle. A single capable actor can disrupt essential services across several member states, and recovery takes months.

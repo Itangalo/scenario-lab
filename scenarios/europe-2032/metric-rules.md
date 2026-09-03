@@ -27,6 +27,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - Category 6 measure covering a named class of harm, in the turn it finishes: +3 to +6, once
    - `ai_capability` rose and no category 6 measure is in force: −1 to −2
    - Category 9 measure broadening adoption, in the turn it finishes: −1 to −3, once
+   - The event `joint_threat_response`, in the turn it fires: +2 to +4, once
 
 5. **`eu_ai_sovereignty`**
    - Category 4 measure, in the turn it finishes: +3 to +6, once
@@ -44,7 +45,8 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - A named priority: −1 that turn.
    - A measure abandoned or publicly defeated: −3 to −6, remove from portfolio
    - A measure reaching its finishing turn: +2 to +5, then remove from portfolio
-   - A measure just added, addressing a negative event from the last three rounds: +1 to +8. Larger for bigger events, more recent events and larger measures; smaller for the reverse.
+    - A measure just added, addressing a negative event from the last three rounds: +1 to +8. Larger for bigger events, more recent events and larger measures; smaller for the reverse.
+    - The event `middle_power_coalition`, in the turn it fires: +2 to +4, once. Its sovereignty effect is already covered: coordination that secures supply-chain access counts under rule 5's event term.
    - Negative events this turn move `eu_political_capital` in either direction; the sign follows from where the harm originated and whether the EU had acted beforehand.
      - external origin, effect dampened by finished measure: +3 to +10. The bigger the event and the larger the measure, the bigger the gain.
      - external origin, effect dampened by measure in flight: +1 to +4. The bigger the event and the larger the measure, the bigger the gain.

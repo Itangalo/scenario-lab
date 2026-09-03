@@ -59,21 +59,21 @@ The reading that settles across the security community within days is that this 
 ## Anti-AI Backlash Becomes a Campaign Platform
 **ID:** campaign_backlash
 **Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. Candidates with a serious path to the nomination run explicitly against AI. This is campaign evidence, not a mechanism: it decides nothing on its own, and weighs on the 2028 outcome only as one signal among many.
-**Probability:** 25%. Add 20 points if `public_sentiment` is below 30. Add 15 points if `labour_displacement` has occurred. Add 10 points if `backlash_physical` has occurred.
+**Probability:** 20%. Add 12 points if `public_sentiment` is below 30. Add 10 points if `labour_displacement` has occurred. Add 6 points if `backlash_physical` has occurred.
 **Can repeat:** No
 **Description:** Moratoriums on data centres, restrictions on AI in schools and hiring, and protection for displaced workers move from the fringe to the platform, on both left and right. Polling shows the position is popular well beyond the activists, and candidates who hedged start to reposition.
 
 ## Security Hawks Set the Terms
 **ID:** campaign_security_hawk
 **Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. The contest with China becomes the frame through which AI is discussed, and the candidates compete on toughness. This is campaign evidence, not a mechanism: it decides nothing on its own, and weighs on the 2028 outcome only as one signal among many.
-**Probability:** 30%. Add 20 points if a Taiwan event has occurred in the previous four completed turns. Add 10 points if `ai_capability` is above 65. Add 10 points if `export_control_escalation` has occurred in the previous four completed turns.
+**Probability:** 25%. Add 12 points if a Taiwan event has occurred in the previous four completed turns. Add 6 points if `ai_capability` is above 65. Add 6 points if `export_control_escalation` has occurred in the previous four completed turns.
 **Can repeat:** No
 **Description:** Both campaigns converge on the position that the United States must win, that the lead is fragile, and that anything shared with anyone is a lead surrendered. Arguments for restraint are recast as arguments for losing.
 
 ## The Alliance Argument Gains Ground
 **ID:** campaign_atlanticist
 **Condition:** Only in turns 3 and 4, covering the second half of 2027 and the first half of 2028. A serious argument takes hold that a coalition beats a fortress. This is campaign evidence, not a mechanism: it decides nothing on its own, and weighs on the 2028 outcome only as one signal among many.
-**Probability:** 20%. Add 15 points if `eu_access_secured`, `middle_power_coalition` or a finished category 8 measure has given Washington something it needs from the Union. Add 10 points if a shock landed on both sides of the Atlantic in the previous four completed turns. Add 10 points if `eu_ai_sovereignty` is above 35.
+**Probability:** 15%. Add 10 points if `eu_access_secured`, `middle_power_coalition` or a finished category 8 measure has given Washington something it needs from the Union. Add 6 points if a shock landed on both sides of the Atlantic in the previous four completed turns. Add 6 points if `eu_ai_sovereignty` is above 35.
 **Can repeat:** No
 **Description:** A coalition of defence, intelligence and industrial voices argues that a hollowed-out Europe is a strategic liability, that allied capacity is a force multiplier rather than a leak, and that the current arrangement is producing dependency without loyalty. It is not the loudest argument in the campaign, but it stops being unrespectable.
 
@@ -101,7 +101,7 @@ The reading that settles across the security community within days is that this 
 ## Major Cyber Incident
 **ID:** cyber_major_incident
 **Condition:** Always eligible; list this event every turn. The gate is open if `cyber_test_shot` occurred in any of the previous 3 completed turns, or while `openweight_capability` is at or above 55 – proliferated offensive capability is its own precursor. Otherwise the gate is shut. That choice sets which probability applies, never whether the event is evaluated.
-**Probability:** Gate open: 20%. Gate shut: 6%. Add 8 points if `openweight_capability` is above 65. Add 5 points if a finished category 9 measure has broadened public-sector adoption, because there is more surface to attack. Halve if a finished category 6 measure covers cyber hardening of critical services.
+**Probability:** Gate open: 14%. Gate shut: 4%. Add 5 points if `openweight_capability` is above 65. Add 5 points if a finished category 9 measure has broadened public-sector adoption, because there is more surface to attack. Halve if a finished category 6 measure covers cyber hardening of critical services.
 **Can repeat:** Yes
 **Description:** A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.
 
@@ -129,14 +129,14 @@ The reading that settles across the security community within days is that this 
 ## Evaluation Anomalies Surface
 **ID:** eval_anomaly_reports
 **Condition:** Possible in any turn. Requires that frontier laboratories are running large training runs, which is true throughout unless `ai_investment_collapse` has occurred in the previous two completed turns.
-**Probability:** 15%.
+**Probability:** 10%.
 **Can repeat:** Yes
 **Description:** Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**
 
 ## Capability Jump
 **ID:** capability_jump
 **Condition:** Always eligible; list this event every turn. The gate is open if `eval_anomaly_reports` occurred in either of the previous 2 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated.
-**Probability:** Gate open: 15%. Gate shut: 5%. Reduce by a third if a finished category 1 or 3 measure imposes pre-release evaluation or capability restrictions that actually bind the jurisdiction where the leading models are built.
+**Probability:** Gate open: 10%. Gate shut: 4%. Reduce by a third if a finished category 1 or 3 measure imposes pre-release evaluation or capability restrictions that actually bind the jurisdiction where the leading models are built.
 **Can repeat:** Yes
 **Description:** A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.
 
@@ -144,7 +144,7 @@ The reading that settles across the security community within days is that this 
 **ID:** rsi_onset
 **Eligible:** ai_capability >= 65
 **Condition:** This entry appears only while the event is due in this run; when you see it, it is live.
-**Probability:** 30%.
+**Probability:** 20%.
 **Can repeat:** No
 **Description:** Models begin contributing materially to the design of their successors, and the pace stops being set by human research throughput. It is recognised in retrospect rather than announced: the first sign is a release cadence nobody planned for. From this point capability growth compounds, and assurance falls behind it.
 
@@ -188,7 +188,7 @@ The reading that settles across the security community within days is that this 
 ## Loss-of-Control Incident
 **ID:** loss_of_control_incident
 **Condition:** Always eligible; list this event every turn. The gate is open if `eval_anomaly_reports` occurred in any of the previous 3 completed turns, and shut otherwise – that choice sets which probability applies, never whether the event is evaluated.
-**Probability:** Gate open: 12%. Gate shut: 3%. Add 10 points if `ai_capability` minus `ai_safety` is above 30. Halve if a finished category 5 or 6 measure carries rehearsed loss-of-control protocols with escalation thresholds.
+**Probability:** Gate open: 8%. Gate shut: 2%. Add 6 points if `ai_capability` minus `ai_safety` is above 30. Halve if a finished category 5 or 6 measure carries rehearsed loss-of-control protocols with escalation thresholds.
 **Can repeat:** Yes
 **Description:** An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards and disputed.
 
@@ -203,7 +203,7 @@ The reading that settles across the security community within days is that this 
 **ID:** labour_displacement
 **Eligible:** ai_capability >= 58
 **Condition:** Possible in any turn once capability is displacing rather than assisting.
-**Probability:** 15%. Add 10 points if `ai_capability` is above 70.
+**Probability:** 10%. Add 6 points if `ai_capability` is above 70.
 **Can repeat:** Yes
 **Description:** Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.
 
@@ -217,7 +217,7 @@ The reading that settles across the security community within days is that this 
 ## Taiwan Tension Rises
 **ID:** taiwan_tension_rise
 **Condition:** Possible in any turn.
-**Probability:** 15%. Add 5 points if `export_control_escalation` occurred in the previous 2 completed turns.
+**Probability:** 10%. Add 5 points if `export_control_escalation` occurred in the previous 2 completed turns.
 **Can repeat:** Yes
 **Description:** Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**
 
@@ -231,7 +231,7 @@ The reading that settles across the security community within days is that this 
 ## Export Control Escalation
 **ID:** export_control_escalation
 **Condition:** Possible in any turn. The decisive question is whether allies are inside the perimeter or outside it.
-**Probability:** 15%. Add 10 points if the standing `US_POSTURE` is CONSOLIDATION. Add 5 points if `taiwan_tension_rise` occurred in the previous 2 completed turns.
+**Probability:** 10%. Add 6 points if the standing `US_POSTURE` is CONSOLIDATION. Add 5 points if `taiwan_tension_rise` occurred in the previous 2 completed turns.
 **Can repeat:** Yes
 **Description:** Chip and model export controls tighten again. Either allied buyers keep access on volume licences while everyone else is cut off, or the controls are drawn so tightly that allies are rationed alongside adversaries – decide which at the time from the standing American posture and from what the Union has built.
 
@@ -253,14 +253,14 @@ The reading that settles across the security community within days is that this 
 ## Frontier Access Denied
 **ID:** eu_frontier_access_denied
 **Condition:** Possible in any turn. What happened with Fable and Mythos in June 2026 happening again, on the same notice.
-**Probability:** 12%. Add 10 points if the standing `US_POSTURE` is CONSOLIDATION. Halve if `eu_ai_sovereignty` is above 45, because there is then something to withhold in return.
+**Probability:** 10%. Add 6 points if the standing `US_POSTURE` is CONSOLIDATION. Halve if `eu_ai_sovereignty` is above 45, because there is then something to withhold in return.
 **Can repeat:** Yes
 **Description:** The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.
 
 ## Coercion Over ASML
 **ID:** supply_chain_coercion
 **Condition:** Possible in any turn.
-**Probability:** 10%. Add 8 points if `export_control_escalation` occurred in either of the previous 2 completed turns.
+**Probability:** 8%. Add 5 points if `export_control_escalation` occurred in either of the previous 2 completed turns.
 **Can repeat:** Yes
 **Description:** Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers. The instrument is jurisdiction over American technology in the supply chain, and refusing it is not obviously survivable for the company. The Union's one chokepoint is being used, and not by the Union.
 
@@ -275,7 +275,7 @@ The reading that settles across the security community within days is that this 
 ## Member State Defection
 **ID:** member_state_defection
 **Condition:** Possible in any turn. One or more member states break from a common position under external pressure.
-**Probability:** 10%. Add 8 points if `eu_political_capital` is below 35. Add 5 points if a large measure is in flight.
+**Probability:** 8%. Add 5 points if `eu_political_capital` is below 35. Add 5 points if a large measure is in flight.
 **Can repeat:** Yes
 **Description:** A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.
 
@@ -283,7 +283,7 @@ The reading that settles across the security community within days is that this 
 **ID:** backlash_physical
 **Eligible:** public_sentiment < 40
 **Condition:** Possible in any turn where the public has soured.
-**Probability:** 10%. Add 10 points if `public_sentiment` is below 28. Add 5 points if a category 4 build is in flight, because there is then something local to protest against.
+**Probability:** 8%. Add 6 points if `public_sentiment` is below 28. Add 5 points if a category 4 build is in flight, because there is then something local to protest against.
 **Can repeat:** Yes
 **Description:** Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.
 
@@ -297,6 +297,20 @@ The reading that settles across the security community within days is that this 
 ## Automated Decision Scandal
 **ID:** automated_decision_scandal
 **Condition:** Possible in any turn. Internal origin by construction: this is harm the Union's own institutions caused.
-**Probability:** 8%. Add 8 points if a finished category 9 measure has broadened public-sector adoption. Add 5 points if `ai_capability` is above 65.
+**Probability:** 6%. Add 8 points if a finished category 9 measure has broadened public-sector adoption. Add 5 points if `ai_capability` is above 65.
 **Can repeat:** Yes
 **Description:** An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 6's internal-origin clause applies in full.
+
+## Joint Threat Response
+**ID:** joint_threat_response
+**Condition:** Only while a biological or major cyber incident has shown what the Union cannot handle alone. List this event only if `bio_incident` or `cyber_major_incident` occurred in any of the previous 4 completed turns — cooperation this deep needs a fresh shock to overcome institutional friction.
+**Probability:** 12%.
+**Can repeat:** Yes
+**Description:** States hit by the same class of incident pool attribution, intelligence and response: a joint cyber command with real-time telemetry sharing that the Union is invited into, or a biosurveillance pact with binding sample-sharing and a standing investigation mandate. The Union gains protection it could not build alone, and a seat at tables it was not sitting at. It moves `resilience` on the terms of metric rule 4.
+
+## Middle Powers Coordinate
+**ID:** middle_power_coalition
+**Condition:** Only while humiliation has made hedging respectable. List this event only if `member_state_defection` occurred in any of the previous 4 completed turns, or while `eu_ai_sovereignty` is below 15.
+**Probability:** 10%.
+**Can repeat:** Yes
+**Description:** A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.
