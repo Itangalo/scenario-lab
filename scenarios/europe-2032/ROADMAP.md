@@ -9,24 +9,23 @@ This document keeps track of the work. Update it when the work moves along; it s
 The gate for this phase is that the physics works well enough to have credible runs, on all four arms.
 
 - [ ] All metrics should evolve in a credible way. This means, for example:
-  - [ ] For acceleration, AI capacity will 
-- [ ] **The declared floors are calibrated against a real batch.** `scenario.yaml` calls them first guesses. On the 36 runs they score 5/36 agency, 19/36 absorption, 24/36 legitimacy, 4/36 all three, and 0/12 acceleration runs clear anything. Either the Union is this weak once the accounting is honest — a legitimate finding — or the floors were set against the inflated sovereignty they no longer get. Decide which, and write it down.
-- [ ] **Sovereignty accounting stays where it is or better.** Binding is 68% over 36 runs, up from 33%. Two named residual causes are in the design notes; both are optional.
+  - For ai_capability and ai_safety: In the Acceleracion arm (A), the former will often hit the ceiling and the latter will often crash. In the other arms, it is more balanced.
+  - For openweight_capability: This should trail ai_capability in basically all runs, all arms. For the Plateau arm (P), it should almost match ai_capability in the final rounds.
+  - For eu_ai_sovereignty, eu_political_capital and public_sentiment: These metric should struggle. Some successes and some alarmingly low. Lower end on the A arm.
+- [ ] Events are triggered roughly correctly, and their effects are managed roughly correctly.
+- [ ] The event list is fairly balanced.
 - [ ] **A turn that drops a metric is caught.** One run of 2026-09-03 omitted `openweight_capability` from turn 1's JSON; the old value was carried forward and the run completed clean. Nothing checks metric completeness.
 
-Deliberately *not* gates: the constitutional referee's 75% firing rate, and `openweight_frontier_release` moving the metric 1.2× an ordinary turn. Both are real and both are in the handoff. Neither changes the numbers the story is written from.
-
-**Every rule change in this phase gets a batch that measures it.** The session of 2026-09-02/03 produced one clear positive (rule 2's midpoint: 0–8% → 16–27% of headroom used) and one clear negative (two prohibition clauses on step 3d: every difference inside one standard error, both targeted habits *up*). The negative cost an hour and was worth it. Assume nothing landed until a batch says so.
+Deliberately *not* gates: Exact arithmetic correctness, rare occasions of mechanics malfunctioning (less than one in ten).
 
 ## Phase 2 – clear the ground
 
 Once phase 1 closes, everything simulated before it is built on superseded physics.
 
-- **Archive, don't delete.** `runs/` is gitignored and has been cleared twice already; findings survive only because they are written into `design-notes.md`. Before wiping, check that anything worth keeping is in that file.
-- **`story/turn-01/` survives.** This was checked rather than assumed: the actor prompt never renders `metric_rules`, so none of the rule changes since turn-01 was drawn on 2026-08-31 could have altered the draw. What *did* change is two metric descriptions in `metrics.md` — `eu_political_capital` and `public_sentiment` each gained a sentence about sentiment feeding capital — which do reach the actor. That is a downstream mechanic, not a turn-1 consideration, and the pool split on measure category (28 of 30 in category 6) is very unlikely to move on it.
+- **Archive, don't delete.** `runs/` is gitignored and has been cleared twice already; findings survive only because they are written into `design-notes.md`. Before wiping, check that anything worth keeping is in that file. Note that an acceptable option is to prune the design notes -- not every old decision needs to be saved.
+- **`story/turn-01/` survives** unless new checks reveal that it is obsolete.
   - **Cheap check before trusting that:** draw 10 actor-only turn-1 responses under the current prompt and compare the category split against the recorded 28/2. Minutes, and about $0.01. If it holds, keep `opening.md` and both option files unchanged.
-- ~~**`story/branch-A1/` and the `turn-0[2-5]-A1/` directories must be rebuilt.**~~ Removed 2026-09-03: built as a pilot on 2026-09-01, before the sovereignty accounting fix, rule 5's no-floor clause and both rule 2 changes, so its turns resolved under physics that no longer exists. In git history at `a7b5a3e` if the prose is wanted; the numbers are not.
-- **The pinned turn-1 base runs must be regenerated per arm** (`story/pin-turn-1.py`), for the same reason: turn 1's *resolution* uses the metric rules even though its *actor response* does not.
+  - **The pinned turn-1 base runs must be regenerated per arm** (`story/pin-turn-1.py`): turn 1's *resolution* uses the metric rules even though its *actor response* does not.
 
 ## Phase 3 – the runs
 
@@ -68,7 +67,7 @@ Measured on the 36-run batch of 2026-09-02/03, not estimated:
 
 ## Resuming this in a new session
 
-1. Read this file, then `/HANDOFF.md` for where the last session stopped. `AGENTS.md` points here, which is the only mechanism needed — this does not belong in anyone's memory, because the repo is where it can be read by everyone and versioned alongside what it describes.
+1. Read this file. `AGENTS.md` points here, which is the only mechanism needed.
 2. `git log --oneline -15` — commit messages here carry the reasoning and the numbers, deliberately.
 3. Check which phase is open. If phase 1: the criteria above are the checklist. If phase 3: `story/README.md` and the branch logs say what is built.
 4. Before believing any measurement, check the instrument. `/scripts/check_sovereignty.py` reported three different wrong answers on 2026-09-02/03 before its parser was right, and each wrong answer looked exactly as authoritative as the correct one.
