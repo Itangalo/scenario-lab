@@ -1,38 +1,44 @@
-"""Check whether the event catalogue is being played the way it is written.
+"""Measure what a scenario's event catalogue actually did across a set of runs.
 
 The events step is the one step where the model composes the *candidate list*
 itself: it is asked for every eligible event with a probability, and Python
-then rolls the dice. An event the model does not list is not a low roll, it is
-a possibility that was silently removed, and the artefacts record it exactly
-the same way as an event that was listed and did not fire. This has already
-cost this scenario once -- the 2028 election group fired in only 22 of 30 runs
-under a condition saying it always happens.
+then rolls the dice. That makes the artefacts worth reading directly, because
+an event the model never listed and an event that was listed and did not fire
+look identical in the results.
 
-Three things are measured, one per phase 1 event gate:
+Three things are measured, and only the first is scored:
 
-* **listing** -- at a given turn, an event is either eligible or it is not, and
-  eligibility is a property of the world, not of the draw. So an event listed
-  in some runs of an arm at turn t and absent from others, where nothing in the
-  run's own record disqualifies it, is a candidate list with a hole in it. No
-  condition prose is parsed: the corpus supplies its own expectation, since one
-  run listing the event at that turn establishes that it was listable.
+* **listing** -- the members of a declared exclusive family (`event_groups` in
+  scenario.yaml) must all appear on the family's due turns, because the
+  orchestrator resolves exactly one of them and an omitted member is a weight
+  of zero: an outcome removed with nothing recording that it was removed. This
+  has cost a scenario once already, when a three-way election group fired in 22
+  of 30 runs under a condition saying it always happens. Ordinary events are
+  conditional and are not scored -- the events prompt asks the model to omit
+  any whose condition fails, so runs disagreeing about one is the design
+  working. Their listing rates are reported as description, for the two ends:
+  an event listed every turn is unconditional in practice, one listed almost
+  never is not in play.
 
 * **balance** -- how often each event is listed, how often it fires, and in how
-  many runs it fires at all. An event that never fires across the corpus is a
+  many runs it fires at all. An event that never fires across a corpus is a
   catalogue entry that costs tokens and does nothing; one that fires in nearly
   every run is scenery rather than an event.
 
 * **effect** -- what the metrics did on the turns an event fired, against what
-  they do on an ordinary turn of the same arm. An event whose firing turns look
-  like every other turn is inert, whatever its description says. This is a
+  they do on an ordinary turn of the same cohort. An event whose firing turns
+  look like every other turn is inert, whatever its description says. This is a
   difference of means over few samples and is reported with its n; it says
   where to look, not what is true.
 
+Runs are grouped by cohort, taken from the run config's name: the part after an
+em dash where a scenario names variants that way, and otherwise the whole name.
+
 Usage:
 
-    python scripts/check_events.py scenarios/europe-2032/runs/run-*/
-    python scripts/check_events.py scenarios/europe-2032/runs --since 20260903
-    python scripts/check_events.py <runs...> --arm acceleration --effects
+    python scripts/check_events.py scenarios/<scenario>/runs/run-*/
+    python scripts/check_events.py scenarios/<scenario>/runs --since 20260903
+    python scripts/check_events.py <runs...> --cohort acceleration --effects
 """
 
 from __future__ import annotations
@@ -76,14 +82,19 @@ class TurnRecord:
     # model for candidates, so it can be charged with neither an omission nor a
     # listing. Its metric movements are real and still count towards effects.
     pinned: bool = False
+    # Runs made before 1-event-evaluations.json existed record only what fired.
+    # Their firings are real and feed the effect table; their listings are not
+    # merely empty, they are unknown, and counting them as empty would report
+    # every event in such a run as firing on every listing it ever had.
+    listings_recorded: bool = True
 
 
 @dataclass
 class RunRecord:
-    """One run: its arm, its seed, and its turns in order."""
+    """One run: its cohort, its seed, and its turns in order."""
 
     path: Path
-    arm: str
+    cohort: str
     seed: int | None
     scenario_source: str | None
     turns: list[TurnRecord] = field(default_factory=list)
@@ -100,15 +111,17 @@ def read_run(run_dir: Path) -> RunRecord | None:
     config = json.loads(config_path.read_text(encoding="utf-8"))
 
     name = config.get("name") or run_dir.name
-    # "Europe 2032 — Acceleration" -> "Acceleration", on the em dash only:
-    # "Verification-bounded" is one arm name and must not be split on its
-    # hyphen. A scenario that names no arm keeps its whole name, which groups
-    # its runs together.
-    arm = name.split("—")[-1].strip() if "—" in name else name.strip()
+    # Runs are grouped by cohort, which is whatever the run's config calls it.
+    # A scenario that runs variants under one name conventionally writes them
+    # as "Base name — Variant", so the part after an em dash is the cohort and
+    # everything else is one cohort named for the scenario. The split is on the
+    # em dash only: a variant called "Verification-bounded" is one name and
+    # must not be broken at its hyphen.
+    cohort = name.split("—")[-1].strip() if "—" in name else name.strip()
 
     run = RunRecord(
         path=run_dir,
-        arm=arm,
+        cohort=cohort,
         seed=config.get("random_seed"),
         scenario_source=config.get("scenario_source"),
     )
@@ -121,9 +134,20 @@ def read_run(run_dir: Path) -> RunRecord | None:
         record = TurnRecord(turn=turn)
 
         evaluations_path = turn_dir / "1-event-evaluations.json"
-        if not evaluations_path.exists():
+        fired_path = turn_dir / "1-events.json"
+        if evaluations_path.exists():
+            evaluations = json.loads(evaluations_path.read_text(encoding="utf-8"))
+        elif fired_path.exists():
+            # Everything in this file fired; nothing here says what else was on
+            # offer, so the turn carries firings and no listings.
+            evaluations = [
+                {**entry, "triggered": True}
+                for entry in json.loads(fired_path.read_text(encoding="utf-8"))
+                if isinstance(entry, dict)
+            ]
+            record.listings_recorded = False
+        else:
             continue
-        evaluations = json.loads(evaluations_path.read_text(encoding="utf-8"))
 
         for entry in evaluations:
             if not isinstance(entry, dict):
@@ -142,7 +166,7 @@ def read_run(run_dir: Path) -> RunRecord | None:
                 record.skipped[event_id] = str(entry["skipped"])
             elif entry.get("emergent"):
                 record.emergent[event_id] = probability
-            else:
+            elif record.listings_recorded:
                 record.listed[event_id] = probability
             if entry.get("triggered"):
                 record.fired.add(event_id)
@@ -180,18 +204,38 @@ def collect(paths: list[Path], since: str | None) -> list[RunRecord]:
     return runs
 
 
+def scenario_sources(runs: list[RunRecord]) -> list[str]:
+    """Where each run's scenario definition can be found.
+
+    `scenario_source` is an absolute path recorded at run time and is missing
+    from runs made before it was added; either way the definition may since
+    have moved. The layout `scenarios/<name>/runs/run-*` puts it two levels up
+    from the run, which is checked as a fallback so the report works on a
+    scenario's own runs whatever produced them.
+    """
+    sources: list[str] = []
+    for run in runs:
+        candidates = []
+        if run.scenario_source:
+            candidates.append(Path(run.scenario_source))
+        if run.path.parent.name == "runs":
+            candidates.append(run.path.parent.parent)
+        for candidate in candidates:
+            if candidate.exists():
+                sources.append(str(candidate))
+                break
+    return sorted(set(sources))
+
+
 def load_catalogue(runs: list[RunRecord]) -> dict[str, Event]:
     """The union of the event catalogues the runs were played from.
 
     Arms patch the catalogue, so an id may carry different probability prose in
-    different arms. The union is what the listing and balance tables need; the
-    per-arm difference matters only for the probability column, which is
-    reported per arm.
+    cohorts. The union is what the listing and balance tables need; a
+    per-cohort difference matters only for probabilities, which are not scored.
     """
     catalogue: dict[str, Event] = {}
-    for source in sorted({run.scenario_source for run in runs if run.scenario_source}):
-        if not Path(source).exists():
-            continue
+    for source in scenario_sources(runs):
         try:
             scenario = load_scenario(source)
         except Exception as exc:  # a moved or renamed scenario should not stop the report
@@ -205,9 +249,7 @@ def load_catalogue(runs: list[RunRecord]) -> dict[str, Event]:
 def load_groups(runs: list[RunRecord]) -> list[dict]:
     """Mutually exclusive event families, as the scenarios declare them."""
     groups: dict[str, dict] = {}
-    for source in sorted({run.scenario_source for run in runs if run.scenario_source}):
-        if not Path(source).exists():
-            continue
+    for source in scenario_sources(runs):
         try:
             scenario = load_scenario(source)
         except Exception:
@@ -224,59 +266,18 @@ def load_groups(runs: list[RunRecord]) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
-# Listing: what the catalogue requires, and what the runs did
+# Listing: the one contract the framework itself declares
 # ---------------------------------------------------------------------------
 
-# The events prompt divides the catalogue in two, and the two halves need
-# different measurements. Most entries are conditional: the model judges each
-# turn whether the condition holds, and two runs of the same arm may honestly
-# disagree because their worlds differ. A handful are not: their Condition says
-# "Always eligible", the prompt names them, and omitting one is an error
-# regardless of the world. Only the second kind can be scored.
-ALWAYS_ELIGIBLE = "always eligible"
-
-
-def mandatory_ids(catalogue: dict[str, Event]) -> list[str]:
-    """Events the catalogue declares must be listed in every turn."""
-    return sorted(
-        event_id
-        for event_id, event in catalogue.items()
-        if ALWAYS_ELIGIBLE in (event.condition or "").lower()
-    )
-
-
-@dataclass
-class Omission:
-    """A turn where a mandatory event was neither listed nor skipped."""
-
-    run: str
-    arm: str
-    turn: int
-    event_id: str
-
-
-def mandatory_omissions(
-    runs: list[RunRecord], catalogue: dict[str, Event]
-) -> list[Omission]:
-    """Turns where an always-eligible event simply was not there.
-
-    A Python-side skip is not an omission: `ai_investment_collapse` has fired
-    and cannot repeat, or an eligibility expression was false, and the artefact
-    says so. What is counted is silence -- the event absent from the array with
-    no record of why, which is indistinguishable in the results from an event
-    that was offered and did not fire.
-    """
-    required = mandatory_ids(catalogue)
-    omissions: list[Omission] = []
-    for run in runs:
-        for record in run.turns:
-            if record.parse_failure or record.pinned:
-                continue
-            for event_id in required:
-                if event_id in record.listed or event_id in record.skipped:
-                    continue
-                omissions.append(Omission(run.path.name, run.arm, record.turn, event_id))
-    return omissions
+# A scenario's ordinary events are conditional: the events prompt asks the
+# model to omit any whose condition does not hold this turn, so two runs
+# disagreeing about one is the design working rather than a fault, and there is
+# nothing here to score. The exception is a declared exclusive family. Its
+# members are due on stated turns, the orchestrator resolves exactly one of
+# them, and a member left out of the array is a weight of zero -- an outcome
+# removed from the world with nothing recording that it was removed. That
+# contract lives in scenario.yaml as `event_groups`, so it can be checked for
+# any scenario without reading a word of anyone's prose.
 
 
 @dataclass
@@ -284,19 +285,14 @@ class GroupGap:
     """A due turn where a mutually exclusive family was listed incomplete."""
 
     run: str
-    arm: str
+    cohort: str
     turn: int
     group_id: str
     missing: list[str]
 
 
 def group_gaps(runs: list[RunRecord], groups: list[dict]) -> list[GroupGap]:
-    """Due turns where not every member of an exclusive family was offered.
-
-    An omitted member is a weight of zero: the outcome is removed from the
-    world without anything recording that it was removed. This is the failure
-    the 2028 election machinery was found to have.
-    """
+    """Due turns where not every member of an exclusive family was offered."""
     gaps: list[GroupGap] = []
     for group in groups:
         members = list(group.get("members", []))
@@ -307,6 +303,8 @@ def group_gaps(runs: list[RunRecord], groups: list[dict]) -> list[GroupGap]:
             for record in run.turns:
                 if record.turn not in due or record.parse_failure or record.pinned:
                     continue
+                if not record.listings_recorded:
+                    continue
                 missing = [
                     member
                     for member in members
@@ -314,17 +312,17 @@ def group_gaps(runs: list[RunRecord], groups: list[dict]) -> list[GroupGap]:
                 ]
                 if missing:
                     gaps.append(
-                        GroupGap(run.path.name, run.arm, record.turn, group.get("id", "?"), missing)
+                        GroupGap(run.path.name, run.cohort, record.turn, group.get("id", "?"), missing)
                     )
     return gaps
 
 
 @dataclass
 class ListingSpread:
-    """How consistently a conditional event was judged eligible."""
+    """How consistently an event was judged eligible."""
 
     event_id: str
-    arm: str
+    cohort: str
     listed: int
     turns: int
 
@@ -338,31 +336,31 @@ def listing_spread(
     catalogue: dict[str, Event],
     exclude: set[str] | None = None,
 ) -> list[ListingSpread]:
-    """Listing rate per conditional event per arm, over eligible run-turns.
+    """Listing rate per event per cohort, over the turns it could have been listed.
 
-    This is description, not a verdict. A conditional event is meant to come
-    and go with the world, so a rate strictly between 0 and 1 is the design
-    working. What the number is for is the two ends: an event listed in
-    essentially every turn is unconditional in practice, and one listed almost
+    This is description, not a verdict. An event is meant to come and go with
+    the world, so a rate strictly between 0 and 1 is ordinary. What the number
+    is for is the two ends: an event listed in essentially every turn is
+    unconditional in practice whatever its condition says, and one listed almost
     never is a catalogue entry that is not in play.
     """
     spreads: list[ListingSpread] = []
     # Family members are due on stated turns and absent by design on the rest,
     # so their rate measures the calendar rather than a judgement.
-    required = set(mandatory_ids(catalogue)) | set(exclude or ())
-    by_arm: dict[str, list[RunRecord]] = defaultdict(list)
+    skip = set(exclude or ())
+    by_cohort: dict[str, list[RunRecord]] = defaultdict(list)
     for run in runs:
-        by_arm[run.arm].append(run)
+        by_cohort[run.cohort].append(run)
 
-    for arm, arm_runs in sorted(by_arm.items()):
+    for cohort, cohort_runs in sorted(by_cohort.items()):
         for event_id, event in sorted(catalogue.items()):
-            if event_id in required:
+            if event_id in skip:
                 continue
             listed = 0
             eligible = 0
-            for run in arm_runs:
+            for run in cohort_runs:
                 for record in run.turns:
-                    if record.parse_failure or record.pinned:
+                    if record.parse_failure or record.pinned or not record.listings_recorded:
                         continue
                     if event_id in record.skipped:
                         continue
@@ -372,7 +370,7 @@ def listing_spread(
                     if event_id in record.listed:
                         listed += 1
             if eligible:
-                spreads.append(ListingSpread(event_id, arm, listed, eligible))
+                spreads.append(ListingSpread(event_id, cohort, listed, eligible))
     return spreads
 
 
@@ -417,8 +415,10 @@ def balance(runs: list[RunRecord], catalogue: dict[str, Event]) -> dict[str, Eve
     for run in runs:
         fired_here: set[str] = set()
         for record in run.turns:
-            if record.pinned:
-                # A pinned list is not a judgement about what could happen.
+            if record.pinned or not record.listings_recorded:
+                # A pinned list is not a judgement about what could happen, and
+                # a turn with no candidate list recorded cannot say what its
+                # firings were drawn from.
                 continue
             for event_id, probability in record.listed.items():
                 if event_id not in stats:
@@ -461,10 +461,11 @@ def effect_profiles(
 ) -> dict[str, tuple[int, dict[str, float]]]:
     """For each event, how its firing turns differ from ordinary turns.
 
-    The baseline is per arm, because the arms move the metrics at different
-    speeds and pooling them would credit an event with its arm's trend.
+    The baseline is per cohort, because cohorts may move the metrics at
+    different speeds and pooling them would credit an event with its cohort's
+    trend.
     """
-    by_arm_metric: dict[tuple[str, str], list[float]] = defaultdict(list)
+    by_cohort_metric: dict[tuple[str, str], list[float]] = defaultdict(list)
     firing_turns: list[tuple[str, str, dict[str, float]]] = []
 
     for run in runs:
@@ -474,21 +475,21 @@ def effect_profiles(
             if not turn_deltas:
                 continue
             for metric, delta in turn_deltas.items():
-                by_arm_metric[(run.arm, metric)].append(delta)
+                by_cohort_metric[(run.cohort, metric)].append(delta)
             for event_id in record.fired:
                 if event_id in catalogue:
-                    firing_turns.append((event_id, run.arm, turn_deltas))
+                    firing_turns.append((event_id, run.cohort, turn_deltas))
 
     baseline = {
-        key: statistics.fmean(values) for key, values in by_arm_metric.items() if values
+        key: statistics.fmean(values) for key, values in by_cohort_metric.items() if values
     }
 
     excess: dict[str, dict[str, list[float]]] = defaultdict(lambda: defaultdict(list))
     firings: dict[str, int] = defaultdict(int)
-    for event_id, arm, turn_deltas in firing_turns:
+    for event_id, cohort, turn_deltas in firing_turns:
         firings[event_id] += 1
         for metric, delta in turn_deltas.items():
-            excess[event_id][metric].append(delta - baseline.get((arm, metric), 0.0))
+            excess[event_id][metric].append(delta - baseline.get((cohort, metric), 0.0))
 
     profiles: dict[str, tuple[int, dict[str, float]]] = {}
     for event_id, metrics in excess.items():
@@ -514,14 +515,22 @@ def report(
     show_effects: bool,
     show_all: bool,
 ) -> None:
-    arms = sorted({run.arm for run in runs})
+    cohorts = sorted({run.cohort for run in runs})
     turns = sum(len(run.turns) for run in runs)
     print(f"{len(runs)} runs, {turns} turns, {len(catalogue)} catalogue events")
-    for arm in arms:
-        arm_runs = [r for r in runs if r.arm == arm]
-        seeds = sorted(r.seed for r in arm_runs if r.seed is not None)
-        span = f"{seeds[0]}-{seeds[-1]}" if seeds else "no seeds"
-        print(f"  {arm}: {len(arm_runs)} runs ({span})")
+    for cohort in cohorts:
+        cohort_runs = [r for r in runs if r.cohort == cohort]
+        print(f"  {cohort}: {len(cohort_runs)} runs")
+
+    legacy = [
+        (run.path.name, r.turn) for run in runs for r in run.turns if not r.listings_recorded
+    ]
+    if legacy:
+        print(
+            f"\n{len(legacy)} turns predate `1-event-evaluations.json` and record only what "
+            "fired. Their firings feed the effect table; their listings are unknown, so they "
+            "are left out of listing and balance rather than counted as empty."
+        )
 
     parse_failures = [
         (run.path.name, t.turn) for run in runs for t in run.turns if t.parse_failure
@@ -532,80 +541,62 @@ def report(
             print(f"  {name} turn {turn}")
 
     # -- listing ------------------------------------------------------------
-    required = mandatory_ids(catalogue)
-    omissions = mandatory_omissions(runs, catalogue)
-    print("\n## Listing\n")
-    print(
-        f"{len(required)} events are declared always eligible and must appear in "
-        f"every turn's array: " + ", ".join(f"`{e}`" for e in required)
-    )
-    if not omissions:
-        print("\nNone was ever missing.")
-    else:
-        judged_turns = sum(
-            1 for run in runs for t in run.turns if not (t.parse_failure or t.pinned)
-        )
-        turns_at_risk = judged_turns * len(required)
-        print(
-            f"\n**{len(omissions)} of {turns_at_risk} required listings are missing** "
-            f"({percent(len(omissions) / turns_at_risk)}), with no skip recorded:\n"
-        )
-        by_event: dict[str, list[Omission]] = defaultdict(list)
-        for omission in omissions:
-            by_event[omission.event_id].append(omission)
-        print("| event | missing | turns | arms |")
-        print("|---|---|---|---|")
-        for event_id, items in sorted(by_event.items(), key=lambda kv: -len(kv[1])):
-            turns = sorted({item.turn for item in items})
-            turn_text = ", ".join(str(t) for t in turns[:6]) + (" ..." if len(turns) > 6 else "")
-            arms = ", ".join(sorted({item.arm for item in items}))
-            print(f"| `{event_id}` | {len(items)} | {turn_text} | {arms} |")
-
-        by_turn: dict[int, int] = defaultdict(int)
-        for omission in omissions:
-            by_turn[omission.turn] += 1
-        worst = sorted(by_turn.items(), key=lambda kv: -kv[1])[:5]
-        print(
-            "\nWorst turns: "
-            + ", ".join(f"turn {turn} ({count})" for turn, count in worst)
-        )
-
     groups = load_groups(runs)
-    gaps = group_gaps(runs, groups)
-    if groups:
+    print("\n## Listing\n")
+    if not groups:
+        print("This scenario declares no exclusive event families, so nothing here is scored.")
+    else:
         due = {g["id"]: g.get("due_turns") for g in groups}
-        print(f"\nExclusive families and their due turns: {due}")
+        print(f"Exclusive families and their due turns: {due}")
+        gaps = group_gaps(runs, groups)
         if gaps:
             print(f"\n**{len(gaps)} due turns listed the family incomplete:**\n")
             for gap in gaps[:20]:
-                print(f"  {gap.run} ({gap.arm}) turn {gap.turn}: missing {', '.join(gap.missing)}")
+                print(f"  {gap.run} ({gap.cohort}) turn {gap.turn}: missing {', '.join(gap.missing)}")
         else:
-            print("Every due turn listed every member.")
+            print("\nEvery due turn listed every member.")
 
     family_members = {m for group in groups for m in group.get("members", [])}
     spreads = listing_spread(runs, catalogue, exclude=family_members)
     unconditional = [s for s in spreads if s.turns >= 20 and s.rate >= 0.98]
     rare = [s for s in spreads if s.turns >= 20 and s.rate <= 0.10]
     if unconditional or rare:
-        print("\n### Conditional events at the ends of their range\n")
+        print("\n### Events at the ends of their listing range\n")
         print(
-            "Conditional events are meant to come and go, so a middling rate is "
-            "the design working. These are the two ends.\n"
+            "An event is meant to come and go with the world, so a middling rate "
+            "is ordinary. These are the two ends.\n"
         )
-        print("| event | arm | listed / eligible turns | rate |")
+        print("| event | cohort | listed / eligible turns | rate |")
         print("|---|---|---|---|")
         for spread in sorted(unconditional + rare, key=lambda s: (-s.rate, s.event_id)):
             print(
-                f"| `{spread.event_id}` | {spread.arm} | {spread.listed}/{spread.turns} | "
+                f"| `{spread.event_id}` | {spread.cohort} | {spread.listed}/{spread.turns} | "
                 f"{percent(spread.rate)} |"
             )
 
     # -- balance ------------------------------------------------------------
     stats = balance(runs, catalogue)
+    listing_turns = sum(
+        1
+        for run in runs
+        for r in run.turns
+        if r.listings_recorded and not (r.pinned or r.parse_failure)
+    )
     print("\n## Balance\n")
-    print("| event | listings | fires | per listing | runs touched | mean p | distinct p |")
-    print("|---|---|---|---|---|---|---|")
+    if not listing_turns:
+        print(
+            "No turn in this corpus recorded a candidate list, so there is nothing to "
+            "count. What each event did on the turns it fired is still in the effect table."
+        )
+        if not show_effects:
+            return
+
+    if listing_turns:
+        print("| event | listings | fires | per listing | runs touched | mean p | distinct p |")
+        print("|---|---|---|---|---|---|---|")
     for stat in sorted(stats.values(), key=lambda s: (-s.firings, s.event_id)):
+        if not listing_turns:
+            break
         if not show_all and stat.listings == 0 and stat.firings == 0:
             continue
         print(
@@ -615,7 +606,7 @@ def report(
         )
 
     never_listed = sorted(s.event_id for s in stats.values() if s.listings == 0)
-    if never_listed:
+    if never_listed and listing_turns:
         print(f"\n**Never listed at all** ({len(never_listed)}): " + ", ".join(f"`{e}`" for e in never_listed))
 
     never_fired = sorted(
@@ -675,14 +666,14 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("paths", nargs="+", type=Path)
     parser.add_argument("--since", help="keep runs whose name sorts at or after run-<since>")
-    parser.add_argument("--arm", help="keep only runs whose arm name contains this, case-insensitive")
+    parser.add_argument("--cohort", help="keep only runs whose cohort name contains this, case-insensitive")
     parser.add_argument("--effects", action="store_true", help="also report per-event metric effects")
     parser.add_argument("--all", action="store_true", help="include events with no listings in the balance table")
     args = parser.parse_args()
 
     runs = collect(args.paths, args.since)
-    if args.arm:
-        runs = [run for run in runs if args.arm.lower() in run.arm.lower()]
+    if args.cohort:
+        runs = [run for run in runs if args.cohort.lower() in run.cohort.lower()]
     if not runs:
         print("No runs with turn data found.", file=sys.stderr)
         return 1

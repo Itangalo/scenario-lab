@@ -98,7 +98,7 @@ def test_arm_name_survives_its_own_hyphen(tmp_path):
     """"Verification-bounded" is one arm, not an arm called "bounded"."""
     write_run(tmp_path, "run-a", "Verification-bounded", [{"listed": {"e": 0.1}}])
     (runs) = check_events.collect([tmp_path], since=None)
-    assert [run.arm for run in runs] == ["Verification-bounded"]
+    assert [run.cohort for run in runs] == ["Verification-bounded"]
 
 
 def test_skipped_and_emergent_are_not_counted_as_listings(tmp_path):
@@ -137,79 +137,6 @@ def test_parse_failure_turn_is_reported_not_read_as_an_empty_world(tmp_path):
 # ---------------------------------------------------------------------------
 
 
-def mandatory_catalogue(*ids: str, repeat: bool = True) -> dict[str, Event]:
-    """A catalogue whose events carry the always-eligible declaration."""
-    cat = catalogue(*ids, repeat=repeat)
-    for event in cat.values():
-        event.condition = "Always eligible; list this event every turn."
-    return cat
-
-
-def test_a_missing_mandatory_event_is_an_omission(tmp_path):
-    """An always-eligible event absent from a turn is counted, once per turn."""
-    write_run(
-        tmp_path,
-        "run-a",
-        "A",
-        [{"listed": {"must": 0.1}}, {"listed": {}}, {"listed": {"must": 0.1}}],
-    )
-    runs = check_events.collect([tmp_path], since=None)
-
-    omissions = check_events.mandatory_omissions(runs, mandatory_catalogue("must"))
-
-    assert [(o.turn, o.event_id) for o in omissions] == [(2, "must")]
-
-
-def test_a_recorded_skip_is_not_an_omission(tmp_path):
-    """Python skipping a spent one-shot is a reason, and the artefact holds it."""
-    write_run(
-        tmp_path,
-        "run-a",
-        "A",
-        [
-            {"listed": {"must": 0.9}, "fired": ["must"]},
-            {"skipped": {"must": "Event already occurred and cannot repeat"}},
-        ],
-    )
-    runs = check_events.collect([tmp_path], since=None)
-
-    assert check_events.mandatory_omissions(runs, mandatory_catalogue("must", repeat=False)) == []
-
-
-def test_conditional_events_are_never_counted_as_omissions(tmp_path):
-    """Absence is how a conditional event says its condition did not hold."""
-    write_run(tmp_path, "run-a", "A", [{"listed": {}}, {"listed": {}}])
-    runs = check_events.collect([tmp_path], since=None)
-
-    assert check_events.mandatory_omissions(runs, catalogue("conditional")) == []
-
-
-def test_a_parse_failure_turn_is_not_charged_as_an_omission(tmp_path):
-    """The events step produced nothing at all; that is its own finding."""
-    write_run(tmp_path, "run-a", "A", [{"parse_failure": True}])
-    runs = check_events.collect([tmp_path], since=None)
-
-    assert check_events.mandatory_omissions(runs, mandatory_catalogue("must")) == []
-
-
-def test_a_pinned_turn_is_charged_with_nothing(tmp_path):
-    """A pinned opening never asked for candidates, so it omitted nothing."""
-    write_run(
-        tmp_path,
-        "run-a",
-        "A",
-        [{"listed": {"fixed": 1.0}, "fired": ["fixed"], "pinned": True}],
-    )
-    runs = check_events.collect([tmp_path], since=None)
-    cat = mandatory_catalogue("must")
-    cat.update(catalogue("fixed"))
-
-    assert runs[0].turns[0].pinned
-    assert check_events.mandatory_omissions(runs, cat) == []
-    # Nor is the pinned event itself a listing anyone chose to make.
-    assert check_events.balance(runs, cat)["fixed"].listings == 0
-
-
 def test_an_incomplete_exclusive_family_is_a_gap(tmp_path):
     """One outcome left out of a due turn is a future removed without a record."""
     write_run(
@@ -234,21 +161,58 @@ def test_a_family_is_only_checked_on_its_due_turns(tmp_path):
     assert check_events.group_gaps(runs, groups) == []
 
 
-def test_listing_spread_measures_conditional_events_only(tmp_path):
-    """The spread describes the events whose absence is a judgement."""
-    cat = catalogue("conditional")
-    cat.update(mandatory_catalogue("must"))
+def test_a_recorded_skip_is_not_a_gap(tmp_path):
+    """Python skipping a member is a reason, and the artefact carries it."""
     write_run(
         tmp_path,
         "run-a",
         "A",
-        [{"listed": {"must": 0.1, "conditional": 0.1}}, {"listed": {"must": 0.1}}],
+        [{"listed": {"win": 0.5, "lose": 0.5}, "skipped": {"draw": "Eligibility gate false this turn"}}],
+    )
+    runs = check_events.collect([tmp_path], since=None)
+    groups = [{"id": "vote", "members": ["win", "lose", "draw"], "due_turns": [1]}]
+
+    assert check_events.group_gaps(runs, groups) == []
+
+
+def test_a_pinned_turn_is_charged_with_nothing(tmp_path):
+    """A pinned opening never asked for candidates, so it omitted nothing."""
+    write_run(
+        tmp_path,
+        "run-a",
+        "A",
+        [{"listed": {"fixed": 1.0}, "fired": ["fixed"], "pinned": True}],
+    )
+    runs = check_events.collect([tmp_path], since=None)
+    groups = [{"id": "vote", "members": ["win", "lose"], "due_turns": [1]}]
+
+    assert runs[0].turns[0].pinned
+    assert check_events.group_gaps(runs, groups) == []
+    # Nor is the pinned event itself a listing anyone chose to make.
+    assert check_events.balance(runs, catalogue("fixed"))["fixed"].listings == 0
+
+
+def test_a_scenario_with_no_families_is_scored_on_nothing(tmp_path):
+    """Most scenarios declare no exclusive family, and that is not a finding."""
+    write_run(tmp_path, "run-a", "A", [{"listed": {"anything": 0.2}}])
+    runs = check_events.collect([tmp_path], since=None)
+
+    assert check_events.group_gaps(runs, []) == []
+
+
+def test_listing_spread_describes_every_event_it_is_not_told_to_skip(tmp_path):
+    """The spread is description; family members are excluded by the caller."""
+    write_run(
+        tmp_path,
+        "run-a",
+        "A",
+        [{"listed": {"a": 0.1, "win": 0.5}}, {"listed": {"a": 0.1}}],
     )
     runs = check_events.collect([tmp_path], since=None)
 
-    spreads = check_events.listing_spread(runs, cat)
+    spreads = check_events.listing_spread(runs, catalogue("a", "win"), exclude={"win"})
 
-    assert [(s.event_id, s.listed, s.turns) for s in spreads] == [("conditional", 1, 2)]
+    assert [(s.event_id, s.listed, s.turns) for s in spreads] == [("a", 2, 2)]
 
 
 def test_listing_spread_stops_counting_a_spent_one_shot(tmp_path):
@@ -321,10 +285,10 @@ def test_distinct_probabilities_shows_a_figure_that_never_moved(tmp_path):
 # ---------------------------------------------------------------------------
 
 
-def test_effect_is_measured_against_the_arm_not_the_corpus(tmp_path):
-    """An arm that moves fast must not lend its trend to an event.
+def test_effect_is_measured_against_the_cohort_not_the_corpus(tmp_path):
+    """A cohort that moves fast must not lend its trend to an event.
 
-    Arm F gains 10 a turn and arm S gains nothing. The event fires once in F,
+    Cohort F gains 10 a turn and cohort S gains nothing. The event fires once in F,
     on a turn that gains exactly what every other F turn gains. Measured
     against F it did nothing, which is the truth; measured against the pooled
     mean of both arms it would look worth +5.
@@ -378,3 +342,44 @@ def test_effect_reports_the_excess_over_an_ordinary_turn(tmp_path):
     # Deltas are +1, +1, +10; the mean turn is +4, so the firing turn is +6.
     assert n == 1
     assert differences["m"] == pytest.approx(6.0)
+
+
+# ---------------------------------------------------------------------------
+# Runs the instrument did not produce
+# ---------------------------------------------------------------------------
+
+
+def test_a_legacy_run_contributes_firings_but_not_listings(tmp_path):
+    """Runs older than 1-event-evaluations.json record only what fired.
+
+    Counting their absent candidate list as an empty one would report every
+    event in such a run as having fired on every listing it ever had.
+    """
+    run_dir = tmp_path / "run-old"
+    (run_dir / "turn-01").mkdir(parents=True)
+    (run_dir / "config.json").write_text(json.dumps({"name": "Old"}), encoding="utf-8")
+    (run_dir / "turn-01" / "1-events.json").write_text(
+        json.dumps([{"id": "quake", "probability": 0.2}]), encoding="utf-8"
+    )
+    (run_dir / "turn-01" / "4-metrics.json").write_text('{"m": 5.0}', encoding="utf-8")
+
+    runs = check_events.collect([tmp_path], since=None)
+
+    assert runs[0].turns[0].listings_recorded is False
+    assert runs[0].turns[0].fired == {"quake"}
+    stats = check_events.balance(runs, catalogue("quake"))["quake"]
+    assert (stats.listings, stats.firings) == (0, 0)
+
+
+def test_the_scenario_is_found_from_the_run_path_when_config_lacks_it(tmp_path):
+    """`scenario_source` is absent from older runs and may have moved since."""
+    scenario_dir = tmp_path / "scenarios" / "demo"
+    runs_dir = scenario_dir / "runs"
+    (runs_dir / "run-a").mkdir(parents=True)
+    (runs_dir / "run-a" / "config.json").write_text(json.dumps({"name": "Demo"}), encoding="utf-8")
+    (runs_dir / "run-a" / "turn-01").mkdir()
+    (runs_dir / "run-a" / "turn-01" / "1-event-evaluations.json").write_text("[]", encoding="utf-8")
+
+    runs = check_events.collect([runs_dir], since=None)
+
+    assert check_events.scenario_sources(runs) == [str(scenario_dir)]
