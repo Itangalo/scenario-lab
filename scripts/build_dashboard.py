@@ -156,13 +156,17 @@ def read_run(run_dir: Path, actor: str, catalogue: Catalogue,
         return None
 
     turns, series = [], {}
+    by_turn: dict[int, dict[str, Any]] = {}
     for turn_dir in turn_dirs:
         metrics_path = turn_dir / "4-metrics.json"
         if not metrics_path.exists():
             continue
         metrics = json.loads(metrics_path.read_text(encoding="utf-8"))
-        for key, value in metrics.items():
-            series.setdefault(key, []).append(value)
+        turn_no = int(turn_dir.name.split("-")[1])
+        # Series are aligned by turn number, with explicit None for metrics
+        # absent that turn. Appending per file would shift every later value
+        # left whenever one turn drops a metric.
+        by_turn[turn_no] = metrics
 
         # `1-event-evaluations.json` carries the dice and the `triggered` flag;
         # `1-events.json` carries the descriptions, and is the only place an
@@ -183,13 +187,25 @@ def read_run(run_dir: Path, actor: str, catalogue: Catalogue,
         world = turn_dir / "4-world-state.md"
         notepad = turn_dir / "5-notepad.md"
         turns.append({
-            "turn": int(turn_dir.name.split("-")[1]),
+            "turn": turn_no,
             "metrics": metrics,
             "events": fired,
             "narrative": world.read_text(encoding="utf-8").strip() if world.exists() else "",
             "notepad": notepad.read_text(encoding="utf-8").strip() if notepad.exists() else "",
             **parse_actor_turn(turn_dir / "2-actors" / f"{actor}.md"),
         })
+
+    turns.sort(key=lambda t: t["turn"])
+    all_keys: list[str] = []
+    for t in turns:
+        for key in t["metrics"]:
+            if key not in all_keys:
+                all_keys.append(key)
+    turn_nos = [t["turn"] for t in turns]
+    for key in all_keys:
+        by_no = {t["turn"]: t["metrics"].get(key) for t in turns}
+        series[key] = [by_no[n] if isinstance(by_no[n], (int, float)) else None
+                       for n in turn_nos]
 
     name = config.get("name", run_dir.name)
     try:

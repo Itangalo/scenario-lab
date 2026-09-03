@@ -114,8 +114,11 @@ const metricIds = DATA.metrics.length ? DATA.metrics.map(m => m.id)
 const metricDef = Object.fromEntries(DATA.metrics.map(m => [m.id, m]));
 
 function finalValue(run, metric) {
-  const s = run.series[metric];
-  return s && s.length ? s[s.length - 1] : NaN;
+  for (let i = run.turns.length - 1; i >= 0; i--) {
+    const v = run.turns[i].metrics ? run.turns[i].metrics[metric] : undefined;
+    if (typeof v === "number") return v;
+  }
+  return NaN;
 }
 
 function eventCount(run, eid) {
@@ -173,14 +176,20 @@ function pathFor(pts) {
   return pts.map((p, i) => `${i ? "L" : "M"}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(" ");
 }
 
+function ptsFor(run, metric) {
+  // [turnNo, value] pairs; value is null when the turn lacks the metric.
+  // Callers split on nulls so missing renders as a gap, never a zero.
+  return run.turns.map(t => [t.turn,
+    (t.metrics && typeof t.metrics[metric] === "number") ? t.metrics[metric] : null]);
+}
+
 function colFor(runs, metric, maxTurn) {
-  // per-turn sorted value columns for one metric
+  // per-turn-number sorted value columns for one metric
   const cols = [];
   for (let t = 1; t <= maxTurn; t++) {
     const vals = [];
     for (const r of runs) {
-      const s = r.series[metric];
-      if (s && s.length >= t && typeof s[t - 1] === "number") vals.push(s[t - 1]);
+      for (const [tn, v] of ptsFor(r, metric)) if (tn === t && v !== null) vals.push(v);
     }
     vals.sort((a, b) => a - b);
     cols.push(vals);
@@ -188,12 +197,24 @@ function colFor(runs, metric, maxTurn) {
   return cols;
 }
 
+function segments(pts) {
+  // Split point lists on nulls so gaps stay gaps.
+  const segs = [];
+  let cur = [];
+  for (const p of pts) {
+    if (p === null) { if (cur.length) segs.push(cur); cur = []; }
+    else cur.push(p);
+  }
+  if (cur.length) segs.push(cur);
+  return segs.filter(s => s.length > 1);
+}
+
 function render() {
   refreshArms();
   const runs = filteredRuns();
   const enabled = state.chartMetrics.filter(m => metricIds.includes(m));
   const bandM = enabled.includes(state.bandMetric) ? state.bandMetric : enabled[0];
-  const maxTurn = Math.max(1, ...runs.map(r => r.turns.length));
+  const maxTurn = Math.max(1, ...runs.flatMap(r => r.turns.map(t => t.turn)));
   const colsByMetric = Object.fromEntries(enabled.map(m => [m, colFor(runs, m, maxTurn)]));
   // one shared scale across enabled metrics
   let ymin = Infinity, ymax = -Infinity;
@@ -233,13 +254,27 @@ function render() {
   function band(cols, qlo, qhi, fill, opacity) {
     const top = [], bot = [];
     cols.forEach((vals, i) => {
-      if (!vals.length) return;
+      if (!vals.length) { top.push(null); bot.push(null); return; }
       top.push([X(i + 1), Y(quantile(vals, qhi))]);
       bot.push([X(i + 1), Y(quantile(vals, qlo))]);
     });
-    if (top.length < 2) return;
-    el("path", {d: pathFor(top) + " " + pathFor(bot.reverse()).replace(/^M/, "L") + " Z",
-                fill, opacity, stroke: "none"}, svg);
+    // Align top/bottom segments so a missing column breaks the band, not the shape.
+    const idx = top.map((_, i) => i).filter(i => top[i] !== null);
+    let run = [];
+    const flush = () => {
+      if (run.length > 1) {
+        const t = run.map(i => top[i]), b = run.map(i => bot[i]).reverse();
+        el("path", {d: pathFor(t) + " " + pathFor(b).replace(/^M/, "L") + " Z",
+                    fill, opacity, stroke: "none"}, svg);
+      }
+      run = [];
+    };
+    let prev = -2;
+    for (const i of idx) {
+      if (i !== prev + 1) flush();
+      run.push(i); prev = i;
+    }
+    flush();
   }
   if (runs.length && bandM) {
     const cols = colsByMetric[bandM];
@@ -248,9 +283,10 @@ function render() {
   }
   // one median line per enabled metric, in its color
   for (const m of enabled) {
-    const med = [];
-    colsByMetric[m].forEach((vals, i) => { if (vals.length) med.push([X(i + 1), Y(quantile(vals, 0.5))]); });
-    if (med.length > 1) el("path", {d: pathFor(med), fill: "none", stroke: metricColor(m), "stroke-width": 2}, svg);
+    const pts = colsByMetric[m].map((vals, i) =>
+      vals.length ? [X(i + 1), Y(quantile(vals, 0.5))] : null);
+    for (const seg of segments(pts))
+      el("path", {d: pathFor(seg), fill: "none", stroke: metricColor(m), "stroke-width": 2}, svg);
   }
 
   // per-arm medians + faint lines track the band metric only
@@ -260,12 +296,12 @@ function render() {
       const pts = [];
       for (let t = 1; t <= maxTurn; t++) {
         const vals = runs.filter(r => r.arm === arm)
-          .map(r => r.series[bandM]).filter(s => s && s.length >= t).map(s => s[t - 1])
-          .filter(v => typeof v === "number").sort((a, b) => a - b);
-        if (vals.length) pts.push([X(t), Y(quantile(vals, 0.5))]);
+          .flatMap(r => ptsFor(r, bandM)).filter(([tn, v]) => tn === t && v !== null).map(([, v]) => v)
+          .sort((a, b) => a - b);
+        pts.push(vals.length ? [X(t), Y(quantile(vals, 0.5))] : null);
       }
-      if (pts.length > 1) {
-        const p = el("path", {d: pathFor(pts), fill: "none", stroke: armColor(arm),
+      for (const seg of segments(pts)) {
+        const p = el("path", {d: pathFor(seg), fill: "none", stroke: armColor(arm),
                               "stroke-width": 1.5, "stroke-dasharray": "6,3"}, svg);
         p.appendChild(Object.assign(document.createElementNS(SVGNS, "title"), {})).textContent = arm + " median (" + bandM + ")";
       }
@@ -275,9 +311,9 @@ function render() {
   // faint all-run lines
   if (state.showAll && bandM) {
     for (const r of runs) {
-      const s = r.series[bandM] || [];
-      const pts = s.map((v, i) => (typeof v === "number" ? [X(i + 1), Y(v)] : null)).filter(Boolean);
-      if (pts.length > 1) el("path", {d: pathFor(pts), fill: "none", stroke: "#999", "stroke-width": 1, opacity: 0.35}, svg);
+      const pts = ptsFor(r, bandM).map(([tn, v]) => (v !== null ? [X(tn), Y(v)] : null));
+      for (const seg of segments(pts))
+        el("path", {d: pathFor(seg), fill: "none", stroke: "#999", "stroke-width": 1, opacity: 0.35}, svg);
     }
   }
 
@@ -285,17 +321,16 @@ function render() {
   const dialRun = runs[Math.min(state.dial, Math.max(0, runs.length - 1))];
   if (dialRun) {
     for (const m of enabled) {
-      const s = dialRun.series[m] || [];
-      const pts = s.map((v, i) => (typeof v === "number" ? [X(i + 1), Y(v)] : null)).filter(Boolean);
-      if (pts.length > 1) el("path", {d: pathFor(pts), fill: "none", stroke: metricColor(m), "stroke-width": 3.5, opacity: 0.85}, svg);
+      const pts = ptsFor(dialRun, m).map(([tn, v]) => (v !== null ? [X(tn), Y(v)] : null));
+      for (const seg of segments(pts))
+        el("path", {d: pathFor(seg), fill: "none", stroke: metricColor(m), "stroke-width": 3.5, opacity: 0.85}, svg);
     }
-    const hoverM = bandM || enabled[0];
-    const hs = (dialRun.series[hoverM] || []);
-    hs.forEach((v, i) => {
-      if (typeof v !== "number") return;
-      const c = el("circle", {cx: X(i + 1), cy: Y(v), r: 5, fill: "#d93d3d", opacity: 0.9}, svg);
+    const hoverPts = ptsFor(dialRun, bandM || enabled[0]);
+    hoverPts.forEach(([tn, v]) => {
+      if (v === null) return;
+      const c = el("circle", {cx: X(tn), cy: Y(v), r: 5, fill: "#d93d3d", opacity: 0.9}, svg);
       c.style.cursor = "pointer";
-      c.addEventListener("mousemove", ev => showTip(ev, dialRun, i + 1));
+      c.addEventListener("mousemove", ev => showTip(ev, dialRun, tn));
       c.addEventListener("mouseleave", hideTip);
     });
   }
