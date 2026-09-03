@@ -8,13 +8,13 @@ This document keeps track of the work. Update it when the work moves along; it s
 
 The gate for this phase is that the physics works well enough to have credible runs, on all four arms.
 
-- [ ] All metrics should evolve in a credible way. This means, for example:
+- [X] All metrics should evolve in a credible way. This means, for example:
   - For ai_capability and ai_safety: In the Acceleracion arm (A), the former will often hit the ceiling and the latter will often crash. In the other arms, it is more balanced.
   - For openweight_capability: This should trail ai_capability in basically all runs, all arms. For the Plateau arm (P), it should almost match ai_capability in the final rounds.
   - For eu_ai_sovereignty, eu_political_capital and public_sentiment: These metric should struggle. Some successes and some alarmingly low. Lower end on the A arm.
 - [ ] Events are triggered roughly correctly, and their effects are managed roughly correctly.
 - [ ] The event list is fairly balanced.
-- [ ] **A turn that drops a metric is caught.** One run of 2026-09-03 omitted `openweight_capability` from turn 1's JSON; the old value was carried forward and the run completed clean. Nothing checks metric completeness.
+- [X] **A turn that drops a metric is caught.** One run of 2026-09-03 omitted `openweight_capability` from turn 1's JSON; the old value was carried forward and the run completed clean. The metrics step now compares the parsed JSON against the scenario's metric ids, asks once for the omitted ones by name, and writes the outcome to `turn-XX/4-metrics-metadata.json` either way; anything still missing is filled from the value the run actually uses, so no artefact carries an absent key. The referee's correction step is guarded the same way, since a correction that drops a metric reverts it to last turn's value.
 
 Deliberately *not* gates: Exact arithmetic correctness, rare occasions of mechanics malfunctioning (less than one in ten).
 

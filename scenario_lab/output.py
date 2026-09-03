@@ -257,6 +257,20 @@ class OutputManager:
             json.dumps(metadata, indent=2, ensure_ascii=False), encoding="utf-8"
         )
 
+    def save_metrics_metadata(self, turn: int, metadata: dict):
+        """Save what the metrics step had to repair, if anything.
+
+        Args:
+            turn: Turn number
+            metadata: Dict with missing_metrics and, when a metric was dropped,
+                whether the repair attempt recovered it and what was carried
+                forward instead
+        """
+        turn_dir = self.get_turn_dir(turn)
+        (turn_dir / "4-metrics-metadata.json").write_text(
+            json.dumps(metadata, indent=2, ensure_ascii=False), encoding="utf-8"
+        )
+
     def save_metrics_and_narrative(self, turn: int, metrics: dict, narrative: str):
         """Save metrics and narrative immediately after generation.
 

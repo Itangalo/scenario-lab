@@ -780,14 +780,38 @@ class PromptBuilder:
         user = self._render(template, context, context.get("turn"))
         return system, user
 
-    def build_format_fix_metrics_prompt(self, turn: int, previous_response: str) -> tuple[str, str]:
-        """Build prompts to fix invalid metrics update output formatting."""
+    def build_format_fix_metrics_prompt(
+        self, turn: int, previous_response: str, missing_metrics: Optional[list[str]] = None
+    ) -> tuple[str, str]:
+        """Build prompts to fix invalid metrics update output formatting.
+
+        Args:
+            turn: Current turn number
+            previous_response: The response that could not be used
+            missing_metrics: Metric ids the response omitted, if the response
+                parsed but was incomplete. Rendered with the value each metric
+                holds going into the turn, because a metric the Game Master
+                never mentioned has no value to recover from the response
+                itself.
+        """
         system = self._get_system_prompt("format_fix")
         template = self._get_user_template("format_fix_metrics")
         context = self._get_common_context(turn)
         context["previous_response"] = previous_response
+        context["missing_metrics"] = self._format_missing_metrics(missing_metrics or [])
         user = self._render(template, context, context.get("turn"))
         return system, user
+
+    def _format_missing_metrics(self, missing_metrics: list[str]) -> str:
+        """Render omitted metric ids as a list carrying their incoming values."""
+        lines = []
+        for metric_id in missing_metrics:
+            metric = self.scenario.metrics.metrics.get(metric_id)
+            if metric is None:
+                lines.append(f"- `{metric_id}`")
+            else:
+                lines.append(f"- `{metric_id}` (currently {metric.value})")
+        return "\n".join(lines)
 
     def build_constitutional_referee_prompt(
         self,

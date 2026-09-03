@@ -1620,7 +1620,78 @@ class Orchestrator:
                 )
                 return current_metrics, error_narrative, self.scenario.notepad
 
+        metrics, narrative, notepad = self._complete_metrics(
+            turn, metrics, narrative, notepad, response.content
+        )
         return self._validate_and_clamp_metrics(metrics), narrative, notepad
+
+    def _missing_metrics(self, metrics: dict) -> list[str]:
+        """Metric ids the scenario defines that a metrics response left out."""
+        return [
+            metric_id
+            for metric_id in self.scenario.metrics.metrics
+            if metric_id not in metrics
+        ]
+
+    def _complete_metrics(
+        self, turn: int, metrics: dict, narrative: str, notepad: str, raw_response: str
+    ) -> tuple[dict, str, str]:
+        """Catch a turn that dropped a metric, and try once to get it back.
+
+        A metrics response that omits a metric parses cleanly and the run
+        continues: `update_from_dict` only touches the keys it is given, so the
+        old value is carried forward and nothing says it happened. That is a
+        turn in which a metric did not evolve, recorded as a turn in which it
+        did not move. One repair attempt is made; whatever the outcome, the
+        omission is written to `4-metrics-metadata.json` so it is visible after
+        the fact, and the carried-forward values are made explicit in the saved
+        metrics rather than left as absent keys.
+        """
+        missing = self._missing_metrics(metrics)
+        if not missing:
+            if self.output_manager:
+                self.output_manager.save_metrics_metadata(turn, {"missing_metrics": []})
+            return metrics, narrative, notepad
+
+        print(f"  Warning: metrics response omitted {', '.join(missing)}; requesting completion")
+        record: dict = {"missing_metrics": missing, "repair_attempted": True, "repaired": False}
+
+        try:
+            fix_system, fix_user = self.prompt_builder.build_format_fix_metrics_prompt(
+                turn, raw_response, missing_metrics=missing
+            )
+            fix_response = self.llm_clients["metrics"].complete(fix_system, fix_user)
+            self._record_llm_call(turn, "metrics:completion_fix", fix_response)
+            fixed_metrics, fixed_narrative, fixed_notepad = (
+                fix_response.extract_metrics_and_narrative()
+            )
+            still_missing = self._missing_metrics(fixed_metrics)
+            if still_missing:
+                record["still_missing"] = still_missing
+                print(f"  Warning: completion retry still omits {', '.join(still_missing)}")
+            else:
+                metrics = fixed_metrics
+                narrative = fixed_narrative or narrative
+                notepad = fixed_notepad or notepad
+                record["repaired"] = True
+                print("  ✓ Metrics completed on retry")
+        except Exception as fix_e:
+            record["error"] = str(fix_e)
+            print(f"  Warning: metrics completion retry failed: {fix_e}")
+
+        # Whatever is still absent is carried forward, which is what the run
+        # does anyway -- but written down, so no artefact is missing a key.
+        carried = {}
+        for metric_id in self._missing_metrics(metrics):
+            carried[metric_id] = self.scenario.metrics.metrics[metric_id].value
+        if carried:
+            record["carried_forward"] = carried
+            metrics = {**metrics, **carried}
+
+        if self.output_manager:
+            self.output_manager.save_metrics_metadata(turn, record)
+
+        return metrics, narrative, notepad
 
     def _run_constitutional_referee_step(
         self, turn: int, proposed_metrics: dict, narrative: str, notepad: Optional[str] = None
@@ -1812,6 +1883,17 @@ class Orchestrator:
             except Exception as fix_e:
                 print(f"  Warning: Constitutional correction format-fix retry failed: {fix_e}")
                 return None
+
+        # A correction that omits a metric replaces the whole set, so the metric
+        # would fall back to last turn's value -- an unasked-for correction on a
+        # metric the referee never raised. Keep what this turn proposed.
+        dropped = [m for m in self._missing_metrics(corrected_metrics) if m in proposed_metrics]
+        if dropped:
+            print(f"  Warning: correction omitted {', '.join(dropped)}; keeping the proposed values")
+            corrected_metrics = {
+                **corrected_metrics,
+                **{metric_id: proposed_metrics[metric_id] for metric_id in dropped},
+            }
 
         corrected_metrics = self._validate_and_clamp_metrics(corrected_metrics)
         if not corrected_narrative.strip():
