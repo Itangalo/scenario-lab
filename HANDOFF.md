@@ -1,4 +1,6 @@
-# Handoff – sessions through 2026-09-02
+# Handoff – sessions through 2026-09-03
+
+**Read [ROADMAP.md](ROADMAP.md) first.** It holds the goal, the phase order and the budget, and it changes rarely. This file is the state of play and changes every session.
 
 ## Read these first
 
