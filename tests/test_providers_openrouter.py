@@ -218,3 +218,75 @@ class TestCallDeadline:
     def test_default_timeout_applied(self):
         provider = OpenRouterProvider(api_key="key")
         assert provider.call_timeout_seconds == 300
+
+
+class TestPromptCaching:
+    def test_system_block_carries_cache_breakpoint(self):
+        """The stable system prompt must carry an explicit cache breakpoint."""
+        provider = OpenRouterProvider(api_key="key")
+        seen = {}
+        original = provider._post_with_deadline
+
+        def capture(payload, model, call_timeout_seconds=None):
+            seen.update(payload)
+            return {"choices": [{"message": {"content": "Hi"}}]}
+
+        with patch.object(provider, "_post_with_deadline", side_effect=capture):
+            provider.complete("sys", "usr", model="x/y", temperature=0.7, max_tokens=100)
+        system_msg = seen["messages"][0]
+        assert system_msg["role"] == "system"
+        (block,) = system_msg["content"]
+        assert block["type"] == "text" and block["text"] == "sys"
+        assert block["cache_control"] == {"type": "ephemeral"}
+
+    def test_no_session_id_by_default(self):
+        provider = OpenRouterProvider(api_key="key")
+        assert provider.session_id is None
+        assert "session_id" not in provider._base_payload("s", "u", model="m", temperature=0, max_tokens=1)
+
+    def test_session_id_in_payload(self):
+        provider = OpenRouterProvider(api_key="key", session_id="scenario-lab-123")
+        payload = provider._base_payload("s", "u", model="m", temperature=0, max_tokens=1)
+        assert payload["session_id"] == "scenario-lab-123"
+
+    def test_session_id_from_env(self):
+        import os
+
+        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "k", "OPENROUTER_SESSION_ID": "env-session"}):
+            provider = OpenRouterProvider()
+        assert provider.session_id == "env-session"
+
+    def test_cached_tokens_normalized_from_usage(self):
+        """prompt_tokens including cache reads must be split for cost math."""
+        data = {
+            "choices": [{"message": {"content": "Hi"}}],
+            "usage": {
+                "prompt_tokens": 10339,
+                "completion_tokens": 60,
+                "total_tokens": 10399,
+                "prompt_tokens_details": {"cached_tokens": 10318, "cache_write_tokens": 0},
+            },
+        }
+        OpenRouterProvider._normalize_usage(data, "m")
+        assert data["usage"]["prompt_tokens"] == 21
+        assert data["usage"]["cache_read_input_tokens"] == 10318
+
+    def test_no_cache_details_leaves_usage_alone(self):
+        data = {
+            "choices": [{"message": {"content": "Hi"}}],
+            "usage": {"prompt_tokens": 100, "completion_tokens": 10, "total_tokens": 110},
+        }
+        OpenRouterProvider._normalize_usage(data, "m")
+        assert data["usage"]["prompt_tokens"] == 100
+        assert "cache_read_input_tokens" not in data["usage"]
+
+    def test_registry_threads_session_id(self):
+        import os
+
+        from scenario_lab.providers.registry import ProviderRegistry
+
+        with patch.dict(os.environ, {"OPENROUTER_API_KEY": "k"}):
+            registry = ProviderRegistry(session_id="scenario-lab-999")
+            provider = registry.get("openrouter")
+            assert provider.session_id == "scenario-lab-999"
+            registry.close_all()

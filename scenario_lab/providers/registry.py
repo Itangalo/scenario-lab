@@ -10,14 +10,22 @@ from ..llm import LLMError
 class ProviderRegistry:
     """Holds one LLMProvider instance per provider name, created lazily."""
 
-    def __init__(self, call_timeout_seconds: int | None = None) -> None:
+    def __init__(
+        self,
+        call_timeout_seconds: int | None = None,
+        session_id: str | None = None,
+    ) -> None:
         """
         Args:
             call_timeout_seconds: Wall-clock deadline applied to each LLM call
                 by providers that support it. None keeps the provider default.
+            session_id: Sticky-routing key handed to providers that support
+                it (currently OpenRouter). Pins a run's requests to one
+                provider endpoint so prompt caches stay warm.
         """
         self._providers: dict[str, LLMProvider] = {}
         self._call_timeout_seconds = call_timeout_seconds
+        self._session_id = session_id
 
     def register(self, provider: LLMProvider) -> None:
         """Register a provider instance."""
@@ -39,9 +47,12 @@ class ProviderRegistry:
         if name == "openrouter":
             from .openrouter import OpenRouterProvider
 
+            kwargs: dict = {}
             if self._call_timeout_seconds is not None:
-                return OpenRouterProvider(call_timeout_seconds=self._call_timeout_seconds)
-            return OpenRouterProvider()
+                kwargs["call_timeout_seconds"] = self._call_timeout_seconds
+            if self._session_id is not None:
+                kwargs["session_id"] = self._session_id
+            return OpenRouterProvider(**kwargs)
         if name == "anthropic":
             from .anthropic import AnthropicProvider
 

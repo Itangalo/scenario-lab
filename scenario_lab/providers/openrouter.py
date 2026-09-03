@@ -31,6 +31,7 @@ class OpenRouterProvider(LLMProvider):
         self,
         api_key: Optional[str] = None,
         call_timeout_seconds: int = DEFAULT_CALL_TIMEOUT_SECONDS,
+        session_id: Optional[str] = None,
     ) -> None:
         self.api_key = api_key or os.environ.get("OPENROUTER_API_KEY")
         if not self.api_key:
@@ -38,6 +39,10 @@ class OpenRouterProvider(LLMProvider):
                 "OPENROUTER_API_KEY not set. Set it in environment or pass to constructor."
             )
         self.call_timeout_seconds = call_timeout_seconds
+        # Sticky-routing key (OpenRouter `session_id`): pins a run's requests
+        # to one provider endpoint so prompt caches stay warm. Falls back to
+        # OPENROUTER_SESSION_ID when not passed explicitly.
+        self.session_id = session_id or os.environ.get("OPENROUTER_SESSION_ID")
         # Per-operation timeouts still apply as a first line of defence; the
         # wall-clock deadline in _post_with_deadline is what actually bounds a
         # call, since httpx resets its read timeout on every received chunk.
@@ -190,6 +195,80 @@ class OpenRouterProvider(LLMProvider):
                 f"OpenRouter returned non-JSON for {model}: {body[:200]!r}"
             ) from e
 
+    def _base_payload(
+        self,
+        system: str,
+        user: str,
+        *,
+        model: str,
+        temperature: float,
+        max_tokens: int,
+    ) -> dict:
+        """Build the chat-completions payload with prompt-caching hints.
+
+        The system prompt is sent as content blocks with an Anthropic-style
+        ``cache_control`` breakpoint, since it is stable across turns while
+        the user prompt changes. OpenRouter honors these breakpoints on
+        supporting routes (Anthropic, Alibaba, Gemini) and translates them
+        for others (e.g. OpenAI explicit breakpoints); routes without caching
+        ignore the hint. ``session_id`` pins sticky routing so a run's
+        requests land on the same provider endpoint and the cache stays warm.
+        """
+        payload: dict = {
+            "model": model,
+            "messages": [
+                {
+                    "role": "system",
+                    "content": [
+                        {
+                            "type": "text",
+                            "text": system,
+                            "cache_control": {"type": "ephemeral"},
+                        }
+                    ],
+                },
+                {"role": "user", "content": user},
+            ],
+            "temperature": temperature,
+            "max_tokens": max_tokens,
+        }
+        if self.session_id:
+            payload["session_id"] = self.session_id
+        return payload
+
+    @staticmethod
+    def _normalize_usage(data: dict, model: str) -> None:
+        """Fold OpenRouter cache accounting into the usage object in place.
+
+        OpenRouter reports ``usage.prompt_tokens_details: {cached_tokens,
+        cache_write_tokens}`` where ``prompt_tokens`` *includes* the cached
+        tokens. The shared cost math (``cost.py``) instead expects Anthropic
+        semantics – ``prompt_tokens`` excluding cache reads, priced at 0.1x
+        via ``cache_read_input_tokens``. That multiplier is Anthropic's rate;
+        other routes discount differently, so costs on cached reads are
+        approximate outside Anthropic-served models. Normalizing keeps the
+        alternative (full price on every cached token) from silently
+        overstating every cached run.
+        """
+        usage = data.get("usage")
+        if not isinstance(usage, dict):
+            return
+        details = usage.get("prompt_tokens_details")
+        if not isinstance(details, dict):
+            return
+        try:
+            cached = int(details.get("cached_tokens", 0) or 0)
+        except (TypeError, ValueError):
+            return
+        if cached <= 0:
+            return
+        try:
+            prompt = int(usage.get("prompt_tokens", 0) or 0)
+        except (TypeError, ValueError):
+            return
+        usage["prompt_tokens"] = max(0, prompt - cached)
+        usage["cache_read_input_tokens"] = cached
+
     def complete(
         self,
         system: str,
@@ -209,19 +288,18 @@ class OpenRouterProvider(LLMProvider):
 
         try:
             data = self._post_with_deadline(
-                {
-                    "model": model,
-                    "messages": [
-                        {"role": "system", "content": system},
-                        {"role": "user", "content": user},
-                    ],
-                    "temperature": temperature,
-                    "max_tokens": max_tokens,
-                },
+                self._base_payload(
+                    system,
+                    user,
+                    model=model,
+                    temperature=temperature,
+                    max_tokens=max_tokens,
+                ),
                 model,
                 call_timeout_seconds=call_timeout_seconds,
             )
             content = self._extract_content(data, model)
+            self._normalize_usage(data, model)
             return LLMResponse(content=content, raw_response=data)
 
         except httpx.HTTPStatusError as e:
@@ -279,28 +357,28 @@ class OpenRouterProvider(LLMProvider):
         from ..llm import LLMRateLimitError
 
         try:
-            data = self._post_with_deadline(
-                {
-                    "model": model,
-                    "messages": [
-                        {"role": "system", "content": system},
-                        {"role": "user", "content": user},
-                    ],
-                    "temperature": temperature,
-                    "max_tokens": max_tokens,
-                    "response_format": {
-                        "type": "json_schema",
-                        "json_schema": {
-                            "name": schema_name,
-                            "strict": True,
-                            "schema": schema,
-                        },
-                    },
+            payload = self._base_payload(
+                system,
+                user,
+                model=model,
+                temperature=temperature,
+                max_tokens=max_tokens,
+            )
+            payload["response_format"] = {
+                "type": "json_schema",
+                "json_schema": {
+                    "name": schema_name,
+                    "strict": True,
+                    "schema": schema,
                 },
+            }
+            data = self._post_with_deadline(
+                payload,
                 model,
                 call_timeout_seconds=call_timeout_seconds,
             )
             content = self._extract_content(data, model)
+            self._normalize_usage(data, model)
 
         except httpx.HTTPStatusError as e:
             if e.response.status_code == 429:

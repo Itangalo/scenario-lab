@@ -223,7 +223,13 @@ class Orchestrator:
     def _create_routers_from_config(self) -> dict:
         """Create FallbackRouters based on scenario configuration."""
         config = self.scenario.config.llm
-        registry = ProviderRegistry(call_timeout_seconds=config.call_timeout_seconds)
+        # The dice seed is unique per run, so it doubles as OpenRouter's
+        # sticky-routing key: a run's requests pin to one provider endpoint
+        # and the cached system prompt stays warm across turns.
+        registry = ProviderRegistry(
+            call_timeout_seconds=config.call_timeout_seconds,
+            session_id=f"scenario-lab-{self.random_seed}",
+        )
         self._owned_registries.append(registry)
 
         router_cache: dict[str, FallbackRouter] = {}
