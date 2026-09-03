@@ -53,6 +53,9 @@ htmlcov/
 **/runs/
 *.log
 
+# Generated dashboards (regenerate with scripts/build_dashboard.py)
+**/dashboard.html
+
 # OS
 .DS_Store
 Thumbs.db
