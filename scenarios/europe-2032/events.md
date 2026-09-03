@@ -183,7 +183,7 @@ The reading that settles across the security community within days is that this 
 **Condition:** Possible in any turn.
 **Probability:** 12%. Halve if a finished restriction on open release above a capability threshold binds a jurisdiction where such models are actually trained.
 **Can repeat:** Yes
-**Description:** An open-weight release lands within months of the closed frontier rather than years. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5 points of `ai_capability` at a stroke.
+**Description:** An open-weight release lands within months of the closed frontier rather than a year. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.
 
 ## Loss-of-Control Incident
 **ID:** loss_of_control_incident

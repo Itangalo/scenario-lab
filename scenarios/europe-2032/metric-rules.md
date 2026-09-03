@@ -13,8 +13,8 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - `ai_capability` never fall, except on catastrophic physical destruction of the compute base, which must be narrated as such
 
 2. **`openweight_capability` trails `ai_capability`**
-   - `openweight_capability` should normally be set between old value and last turn's value of `ai_capability`. Lower end when restrictions on open-weight releases.
-   - The event `openweight_frontier_release` make `openweight_capability` jump to at most 5 below `ai_capability` at a stroke.
+   - `openweight_capability` should normally be set around the middle of its old value and last turn's value of `ai_capability`. Lower when restrictions on open-weight are present.
+   - The event `openweight_frontier_release` make `openweight_capability` jump to 5–10 below `ai_capability` at a stroke.
    - `openweight_capability` never fall
    - `openweight_capability` never exceeds `ai_capability`
 
