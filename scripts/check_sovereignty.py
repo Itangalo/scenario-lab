@@ -57,6 +57,11 @@ CAPACITY_EVENTS = re.compile(
 )
 LEGAL_WITH_CAPACITY_EVENT = 3.0
 
+# Step 3d asks for `no capacity event` in the turns where none fired, which is
+# most turns. Writing it is evidence the list was read; its absence in a turn
+# with no charge is not proof of anything, so this is reported, not scored.
+NO_CAPACITY_EVENT = re.compile(r"no capacity event", re.IGNORECASE)
+
 # The notepad is free text and the Game Master formats it as it likes: the
 # accounting lines come bare in some runs and as list items in others, and a
 # whole run can switch. A detector anchored to the start of the line reads a

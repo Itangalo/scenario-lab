@@ -276,3 +276,13 @@ def test_an_untagged_charge_is_still_a_charge():
         "member_state_defection (continued noncompliance) −2 = 15.0"
     )
     assert charges == [("member_state_defection", None, -2.0)]
+
+
+def test_the_no_capacity_event_phrase_is_recognised():
+    """Step 3d asks for it in the turns where nothing qualified."""
+    assert check_sovereignty.NO_CAPACITY_EVENT.search(
+        "SOVEREIGNTY: 34 last turn, no capacity event, Gigafactories in flight +1 = 34"
+    )
+    assert check_sovereignty.capacity_charges(
+        "SOVEREIGNTY: 34 last turn, no capacity event, Gigafactories in flight +1 = 34"
+    ) == []
