@@ -57,6 +57,6 @@ None. (ECHO 2026-09-03)
 
 A1 turns 2 to 5 were built on 2026-09-01 as the pilot and removed on 2026-09-03, along with `branch-A1.md`. They resolved under metric rules that three later changes superseded — the sovereignty accounting rewrite, rule 5's no-floor clause, and both rule 2 changes — so their turns describe a world this scenario no longer produces. They are in git history at `a7b5a3e` if the prose is ever wanted; the numbers in them are not to be trusted or quoted.
 
-`turn-01/` was deliberately kept. The actor prompt never renders `metric_rules`, so no rule change since the pool was drawn could have altered the draw — see `ROADMAP.md`, phase 2, for the check that would confirm it in ten draws.
+`turn-01/` was deliberately kept. The actor prompt never renders `metric_rules`, so no rule change since the pool was drawn could have altered the draw — see [`../ROADMAP.md`](../ROADMAP.md), phase 2, for the check that would confirm it in ten draws.
 
-Nothing further is built until phase 1 of `ROADMAP.md` closes: the tree costs about eight hours to generate and every turn of it is produced under whatever physics is current, which is exactly how the pilot was lost.
+Nothing further is built until phase 1 of [`../ROADMAP.md`](../ROADMAP.md) closes: the tree costs about eight hours to generate and every turn of it is produced under whatever physics is current, which is exactly how the pilot was lost.

@@ -11,11 +11,9 @@ When helping create a new scenario from scratch, use:
 
 Claude Code has two skills covering this pipeline: `frame-scenario` (rough topic to approved research question, then a provenance-tagged information bank) and `create-scenario` (information bank to validated, smoke-tested scenario files). Start with the former when the user has a question, the latter when they already have material.
 
-## Where the work is going
+## Working on the europe-2032 scenario
 
-`scenarios/europe-2032` is the active scenario and it is being built toward one thing: the interactive story defined in `scenarios/europe-2032/story/README.md`. Read [ROADMAP.md](ROADMAP.md) before proposing work on it. The phase order there is binding rather than tidy — the story tree takes about eight hours to generate and every turn is produced under whatever metric rules are current, so a rule change afterwards invalidates what came before it. That has already cost one branch.
-
-`HANDOFF.md` says where the last session stopped.
+When working on the europe-2032 scenario, read [scenarios/europe-2032/ROADMAP.md](scenarios/europe-2032/ROADMAP.md) and [scenarios/europe-2032/story/README.md](scenarios/europe-2032/story/README.md).
 
 ## Critical Ground Truth
 
@@ -87,11 +85,14 @@ If your change alters intended behavior, verify it against `docs/ARCHITECTURE.md
 1. **Use small, cheap runs while iterating.**
    When testing changes, prefer short runs and inexpensive models when possible. Scale up only after the behavior looks right.
 
-2. **Treat prompts as first-class implementation.**
+2. **Caffeinate and monitor long runs.**
+   When doing runs taking longer than 15 minutes, set a caffeinate to keep the computer awake and something that triggers a message when it is done. If errors occurs, resolve them when reasonably small and then resume, otherwise stop the run.
+
+3. **Treat prompts as first-class implementation.**
    If behavior is wrong, check the prompt and scenario content before adding Python logic.
 
-3. **Use the eval suites when changing event-condition behavior.**
+4. **Use the eval suites when changing event-condition behavior.**
    If you change event-condition prompting, parsing, or evaluation behavior, run the relevant evals in `tests/evals/`.
 
-4. **Do not rely on stale examples.**
+5. **Do not rely on stale examples.**
    Some historical docs or examples may lag behind the current CLI or current model recommendations. Prefer the current code and `docs/ARCHITECTURE.md` over older phrasing.
