@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scenario Lab dashboard</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; margin: 0 24px 60px; color: #1a1a1a; background: #fafafa; }
+  h1 { font-size: 1.4em; margin: 20px 0 4px; }
+  h2 { font-size: 1.1em; margin: 26px 0 8px; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+  .sub { color: #555; margin-bottom: 12px; }
+  .panel { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 12px 16px; margin: 12px 0; }
+  .row { display: flex; flex-wrap: wrap; gap: 14px; align-items: end; }
+  label { font-size: 0.85em; color: #444; display: block; margin-bottom: 2px; }
+  select, input[type=number], input[type=text] { font-size: 0.9em; padding: 3px 6px; }
+  .arms label { display: inline; margin-right: 10px; font-size: 0.9em; color: #1a1a1a; }
+  #chart { width: 100%; max-width: 960px; height: auto; background: #fff; }
+  #tooltip { position: absolute; display: none; background: #111; color: #eee; font-size: 0.8em;
+             padding: 8px 10px; border-radius: 6px; max-width: 340px; pointer-events: none; z-index: 10; }
+  #tooltip b { color: #ffd97a; }
+  .dialrow { display: flex; gap: 10px; align-items: center; margin: 8px 0; }
+  #dial { flex: 1; max-width: 600px; }
+  #dialLabel { font-size: 0.9em; min-width: 280px; }
+  table { border-collapse: collapse; font-size: 0.82em; margin-top: 8px; }
+  th, td { border: 1px solid #ddd; padding: 3px 8px; text-align: right; }
+  th:first-child, td:first-child { text-align: left; }
+  th { background: #f0f0f0; }
+  .legend { font-size: 0.82em; color: #555; }
+  .swatch { display: inline-block; width: 12px; height: 12px; margin-right: 4px; vertical-align: baseline; }
+</style>
+</head>
+<body>
+<h1 id="title">Scenario Lab dashboard</h1>
+<div class="sub" id="subtitle"></div>
+
+<div class="panel">
+  <h2>Batch &amp; filters</h2>
+  <div class="row">
+    <div><label for="batch">Batch (latest first)</label><select id="batch"></select></div>
+    <div class="arms"><label>Arms</label><span id="arms"></span></div>
+    <div><label for="since">Started after</label><input type="text" id="since" size="16" placeholder="YYYY-MM-DDTHH:MM"></div>
+    <div><label for="until">Started before</label><input type="text" id="until" size="16" placeholder="YYYY-MM-DDTHH:MM"></div>
+  </div>
+  <div class="row" style="margin-top:10px">
+    <div><label for="spanMetric">Final-value metric</label><select id="spanMetric"><option value="">(no span filter)</option></select></div>
+    <div><label for="spanMin">Min final value</label><input type="number" id="spanMin" step="any"></div>
+    <div><label for="spanMax">Max final value</label><input type="number" id="spanMax" step="any"></div>
+    <div><label for="eventFilter">Event fired in run</label><select id="eventFilter"><option value="">(no event filter)</option></select></div>
+    <div><label for="eventMin">Min times fired</label><input type="number" id="eventMin" value="1" min="1" step="1" style="width:60px"></div>
+  </div>
+  <div class="legend" id="counts" style="margin-top:8px"></div>
+</div>
+
+<div class="panel">
+  <h2>Metric evolution</h2>
+  <div class="row">
+    <div><label for="chartMetric">Metric</label><select id="chartMetric"></select></div>
+    <div><label><input type="checkbox" id="armMedians" checked> per-arm medians</label></div>
+    <div><label><input type="checkbox" id="showAll"> faint lines for all filtered runs</label></div>
+  </div>
+  <div class="legend">Band: p10–p90 · darker band: p25–p75 · solid line: median</div>
+  <svg id="chart" viewBox="0 0 960 420" role="img"></svg>
+  <div id="tooltip"></div>
+</div>
+
+<div class="panel">
+  <h2>Run dial</h2>
+  <div class="dialrow">
+    <button id="prevRun">◀</button>
+    <input type="range" id="dial" min="0" value="0">
+    <button id="nextRun">▶</button>
+    <span id="dialLabel"></span>
+  </div>
+  <div class="legend">Sweep the dial to overlay one run at a time on the chart above. Hover its points to see that turn's values and triggered events.</div>
+</div>
+
+<div class="panel">
+  <h2>Runs in view</h2>
+  <div id="runTable"></div>
+</div>
+
+<script>
+"use strict";
+const DATA = /*__DATA__*/null;
+
+const $ = id => document.getElementById(id);
+const SVGNS = "http://www.w3.org/2000/svg";
+
+function quantile(sorted, q) {
+  if (!sorted.length) return NaN;
+  const pos = (sorted.length - 1) * q;
+  const lo = Math.floor(pos), hi = Math.ceil(pos);
+  return sorted[lo] + (sorted[hi] - sorted[lo]) * (pos - lo);
+}
+
+function armColor(arm) {
+  let h = 0;
+  for (const c of arm) h = (h * 31 + c.codePointAt(0)) % 360;
+  return `hsl(${h},55%,42%)`;
+}
+
+const byId = Object.fromEntries(DATA.runs.map(r => [r.id, r]));
+const eventDesc = Object.fromEntries(DATA.events.map(e => [e.id, e.description || ""]));
+const metricIds = DATA.metrics.length ? DATA.metrics.map(m => m.id)
+  : [...new Set(DATA.runs.flatMap(r => Object.keys(r.series)))];
+const metricDef = Object.fromEntries(DATA.metrics.map(m => [m.id, m]));
+
+function finalValue(run, metric) {
+  const s = run.series[metric];
+  return s && s.length ? s[s.length - 1] : NaN;
+}
+
+function eventCount(run, eid) {
+  return run.turns.reduce((n, t) => n + t.events.filter(e => e === eid).length, 0);
+}
+
+// ---- state ----
+const state = {
+  batch: DATA.batch_index >= 0 ? DATA.batch_index : -1, // -1 = all batches
+  arms: null, // null = all; set of names otherwise
+  since: "", until: "",
+  spanMetric: "", spanMin: "", spanMax: "",
+  eventId: "", eventMin: 1,
+  chartMetric: metricIds[0],
+  armMedians: true, showAll: false,
+  dial: 0,
+};
+
+function batchRunIds() {
+  if (state.batch < 0) return DATA.runs.map(r => r.id);
+  const b = DATA.batches[state.batch];
+  return b ? b.run_ids : [];
+}
+
+function filteredRuns() {
+  const inBatch = new Set(batchRunIds());
+  return DATA.runs.filter(r => {
+    if (!inBatch.has(r.id)) return false;
+    if (state.arms && !state.arms.has(r.arm)) return false;
+    if (state.since && r.started < state.since) return false;
+    if (state.until && r.started > state.until) return false;
+    if (state.spanMetric) {
+      const v = finalValue(r, state.spanMetric);
+      if (Number.isNaN(v)) return false;
+      if (state.spanMin !== "" && v < +state.spanMin) return false;
+      if (state.spanMax !== "" && v > +state.spanMax) return false;
+    }
+    if (state.eventId && eventCount(r, state.eventId) < state.eventMin) return false;
+    return true;
+  });
+}
+
+// ---- chart ----
+const W = 960, H = 420, ML = 56, MR = 12, MT = 10, MB = 30;
+
+function el(tag, attrs, parent) {
+  const e = document.createElementNS(SVGNS, tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if (parent) parent.appendChild(e);
+  return e;
+}
+
+function pathFor(pts) {
+  return pts.map((p, i) => `${i ? "L" : "M"}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(" ");
+}
+
+function render() {
+  const runs = filteredRuns();
+  const metric = state.chartMetric;
+  const maxTurn = Math.max(1, ...runs.map(r => r.turns.length));
+  // per-turn value columns
+  const cols = [];
+  for (let t = 1; t <= maxTurn; t++) {
+    const vals = [];
+    for (const r of runs) {
+      const s = r.series[metric];
+      if (s && s.length >= t && typeof s[t - 1] === "number") vals.push(s[t - 1]);
+    }
+    vals.sort((a, b) => a - b);
+    cols.push(vals);
+  }
+  const def = metricDef[metric] || {};
+  let ymin = def.min, ymax = def.max;
+  if (ymin === undefined || ymax === undefined || ymin === null || ymax === null) {
+    const all = cols.flat();
+    ymin = Math.min(...all); ymax = Math.max(...all);
+  }
+  if (!(ymax > ymin)) { ymax = ymin + 1; }
+  const pad = (ymax - ymin) * 0.05;
+  ymin -= pad; ymax += pad;
+  const X = t => ML + (t - 1) / Math.max(1, maxTurn - 1) * (W - ML - MR);
+  const Y = v => MT + (1 - (v - ymin) / (ymax - ymin)) * (H - MT - MB);
+
+  const svg = $("chart");
+  svg.innerHTML = "";
+  // axes
+  el("line", {x1: ML, y1: MT, x2: ML, y2: H - MB, stroke: "#999"}, svg);
+  el("line", {x1: ML, y1: H - MB, x2: W - MR, y2: H - MB, stroke: "#999"}, svg);
+  for (let t = 1; t <= maxTurn; t++) {
+    const tx = el("text", {x: X(t), y: H - MB + 18, "text-anchor": "middle", "font-size": 11, fill: "#555"}, svg);
+    tx.textContent = "T" + t;
+  }
+  const ticks = 5;
+  for (let i = 0; i <= ticks; i++) {
+    const v = ymin + (ymax - ymin) * i / ticks;
+    const ty = el("text", {x: ML - 6, y: Y(v) + 4, "text-anchor": "end", "font-size": 11, fill: "#555"}, svg);
+    ty.textContent = (+v.toFixed(2)).toString();
+    el("line", {x1: ML, y1: Y(v), x2: W - MR, y2: Y(v), stroke: "#eee"}, svg);
+  }
+
+  function band(qlo, qhi, fill, opacity) {
+    const top = [], bot = [];
+    cols.forEach((vals, i) => {
+      if (!vals.length) return;
+      top.push([X(i + 1), Y(quantile(vals, qhi))]);
+      bot.push([X(i + 1), Y(quantile(vals, qlo))]);
+    });
+    if (top.length < 2) return;
+    el("path", {d: pathFor(top) + " " + pathFor(bot.reverse()).replace(/^M/, "L") + " Z",
+                fill, opacity, stroke: "none"}, svg);
+  }
+  if (runs.length) {
+    band(0.10, 0.90, "#7aa7d9", 0.25);
+    band(0.25, 0.75, "#3d7ab8", 0.35);
+    const med = [];
+    cols.forEach((vals, i) => { if (vals.length) med.push([X(i + 1), Y(quantile(vals, 0.5))]); });
+    if (med.length > 1) el("path", {d: pathFor(med), fill: "none", stroke: "#123a63", "stroke-width": 2.5}, svg);
+  }
+
+  // per-arm medians
+  if (state.armMedians) {
+    const arms = [...new Set(runs.map(r => r.arm))];
+    for (const arm of arms) {
+      const pts = [];
+      for (let t = 1; t <= maxTurn; t++) {
+        const vals = runs.filter(r => r.arm === arm)
+          .map(r => r.series[metric]).filter(s => s && s.length >= t).map(s => s[t - 1])
+          .filter(v => typeof v === "number").sort((a, b) => a - b);
+        if (vals.length) pts.push([X(t), Y(quantile(vals, 0.5))]);
+      }
+      if (pts.length > 1) {
+        const p = el("path", {d: pathFor(pts), fill: "none", stroke: armColor(arm),
+                              "stroke-width": 1.5, "stroke-dasharray": "6,3"}, svg);
+        p.appendChild(Object.assign(document.createElementNS(SVGNS, "title"), {})).textContent = arm + " median";
+      }
+    }
+  }
+
+  // faint all-run lines
+  if (state.showAll) {
+    for (const r of runs) {
+      const s = r.series[metric] || [];
+      const pts = s.map((v, i) => (typeof v === "number" ? [X(i + 1), Y(v)] : null)).filter(Boolean);
+      if (pts.length > 1) el("path", {d: pathFor(pts), fill: "none", stroke: "#999", "stroke-width": 1, opacity: 0.35}, svg);
+    }
+  }
+
+  // dial overlay
+  const dialRun = runs[Math.min(state.dial, Math.max(0, runs.length - 1))];
+  if (dialRun) {
+    const s = dialRun.series[metric] || [];
+    const pts = s.map((v, i) => (typeof v === "number" ? [X(i + 1), Y(v)] : null)).filter(Boolean);
+    if (pts.length > 1) el("path", {d: pathFor(pts), fill: "none", stroke: "#d93d3d", "stroke-width": 2.5}, svg);
+    s.forEach((v, i) => {
+      if (typeof v !== "number") return;
+      const c = el("circle", {cx: X(i + 1), cy: Y(v), r: 5, fill: "#d93d3d", opacity: 0.9}, svg);
+      c.style.cursor = "pointer";
+      c.addEventListener("mousemove", ev => showTip(ev, dialRun, i + 1, metric));
+      c.addEventListener("mouseleave", hideTip);
+    });
+  }
+
+  // counts + dial + table
+  $("counts").textContent = `${runs.length} of ${DATA.runs.length} runs in view`;
+  const dial = $("dial");
+  dial.max = Math.max(0, runs.length - 1);
+  if (state.dial > +dial.max) state.dial = +dial.max;
+  dial.value = state.dial;
+  dial.disabled = !runs.length;
+  $("prevRun").disabled = $("nextRun").disabled = !runs.length;
+  $("dialLabel").textContent = dialRun
+    ? `${dialRun.id} · ${dialRun.arm} · seed ${dialRun.seed} · started ${dialRun.started}`
+    : "(no runs match)";
+  renderTable(runs);
+}
+
+function showTip(ev, run, turn, metric) {
+  const t = run.turns.find(t => t.turn === turn);
+  const tip = $("tooltip");
+  let html = `<b>${run.id} · turn ${turn}</b><br>${metric}: ${t ? t.metrics[metric] : "–"}`;
+  if (t && t.events.length) {
+    html += "<br><br><b>Triggered:</b><br>" + t.events.map(e =>
+      `• ${e}${eventDesc[e] ? " — " + eventDesc[e] : ""}`).join("<br>");
+  } else {
+    html += "<br><br>No events triggered.";
+  }
+  tip.innerHTML = html;
+  tip.style.display = "block";
+  tip.style.left = (ev.pageX + 14) + "px";
+  tip.style.top = (ev.pageY + 10) + "px";
+}
+function hideTip() { $("tooltip").style.display = "none"; }
+
+function renderTable(runs) {
+  const div = $("runTable");
+  if (!runs.length) { div.textContent = "No runs match the filters."; return; }
+  const show = metricIds.slice(0, 7);
+  let html = "<table><tr><th>Run</th><th>Arm</th><th>Turns</th>" + show.map(m => `<th>${m}</th>`).join("") + "</tr>";
+  for (const r of runs) {
+    html += `<tr><td>${r.id}</td><td>${r.arm}</td><td>${r.turns.length}</td>` +
+      show.map(m => `<td>${finalValue(r, m)}</td>`).join("") + "</tr>";
+  }
+  div.innerHTML = html + "</table>";
+}
+
+// ---- controls ----
+function armSet() {
+  return [...new Set(DATA.runs.map(r => r.arm))].sort();
+}
+
+function init() {
+  document.title = DATA.title;
+  $("title").textContent = DATA.title;
+  $("subtitle").textContent = `${DATA.runs.length} runs · ${DATA.events.length} distinct events · switch batches, filter, then sweep the dial`;
+
+  const batch = $("batch");
+  DATA.batches.forEach((b, i) => {
+    const o = document.createElement("option");
+    o.value = i; o.textContent = (i === 0 ? "★ " : "") + b.label;
+    batch.appendChild(o);
+  });
+  const all = document.createElement("option");
+  all.value = -1; all.textContent = "All batches";
+  batch.appendChild(all);
+  batch.value = state.batch;
+  batch.addEventListener("change", () => { state.batch = +batch.value; state.dial = 0; render(); });
+
+  const armsBox = $("arms");
+  armSet().forEach(arm => {
+    const lab = document.createElement("label");
+    const cb = document.createElement("input");
+    cb.type = "checkbox"; cb.checked = true; cb.value = arm;
+    cb.addEventListener("change", () => {
+      const checked = [...armsBox.querySelectorAll("input:checked")].map(c => c.value);
+      state.arms = checked.length === armSet().length ? null : new Set(checked);
+      state.dial = 0; render();
+    });
+    lab.appendChild(cb);
+    lab.appendChild(document.createTextNode(" " + arm));
+    armsBox.appendChild(lab);
+  });
+
+  for (const [id, key] of [["since", "since"], ["until", "until"]]) {
+    $(id).addEventListener("change", () => { state[key] = $(id).value.trim(); state.dial = 0; render(); });
+  }
+  const sm = $("spanMetric");
+  metricIds.forEach(m => {
+    const o = document.createElement("option"); o.value = m; o.textContent = m; sm.appendChild(o);
+  });
+  sm.addEventListener("change", () => { state.spanMetric = sm.value; state.dial = 0; render(); });
+  for (const [id, key] of [["spanMin", "spanMin"], ["spanMax", "spanMax"]]) {
+    $(id).addEventListener("change", () => { state[key] = $(id).value.trim(); state.dial = 0; render(); });
+  }
+  const ef = $("eventFilter");
+  DATA.events.map(e => e.id).sort().forEach(eid => {
+    const o = document.createElement("option"); o.value = eid; o.textContent = eid; ef.appendChild(o);
+  });
+  ef.addEventListener("change", () => { state.eventId = ef.value; state.dial = 0; render(); });
+  $("eventMin").addEventListener("change", () => {
+    state.eventMin = Math.max(1, +$("eventMin").value || 1); state.dial = 0; render();
+  });
+
+  const cm = $("chartMetric");
+  metricIds.forEach(m => {
+    const o = document.createElement("option"); o.value = m; o.textContent = m; cm.appendChild(o);
+  });
+  cm.value = state.chartMetric;
+  cm.addEventListener("change", () => { state.chartMetric = cm.value; render(); });
+  $("armMedians").addEventListener("change", () => { state.armMedians = $("armMedians").checked; render(); });
+  $("showAll").addEventListener("change", () => { state.showAll = $("showAll").checked; render(); });
+
+  $("dial").addEventListener("input", () => { state.dial = +$("dial").value; render(); });
+  $("prevRun").addEventListener("click", () => { state.dial = Math.max(0, state.dial - 1); render(); });
+  $("nextRun").addEventListener("click", () => { state.dial = Math.min(+$("dial").max, state.dial + 1); render(); });
+
+  render();
+}
+
+init();
+</script>
+</body>
+</html>

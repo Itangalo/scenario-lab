@@ -15,14 +15,22 @@ Usage:
 
     python scripts/build_dashboard.py scenarios/europe-2032 --seeds 9101-9312
     python scripts/build_dashboard.py scenarios/europe-2032 --out /tmp/dash.html
+    python scripts/build_dashboard.py scenarios/europe-2032 --batch 0   # latest batch (default)
+    python scripts/build_dashboard.py scenarios/europe-2032 --all       # every run
+
+Runs are clustered into batches by start time: a gap of more than 45 minutes
+starts a new batch. Without --all, only the selected batch is embedded.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
+import time
 from dataclasses import dataclass, field
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -184,9 +192,15 @@ def read_run(run_dir: Path, actor: str, catalogue: Catalogue,
         })
 
     name = config.get("name", run_dir.name)
+    try:
+        started_ts = os.stat(run_dir).st_birthtime
+    except (AttributeError, OSError):
+        started_ts = os.stat(run_dir).st_mtime
     return {
         "id": run_dir.name,
         "seed": config.get("random_seed"),
+        "started": datetime.fromtimestamp(started_ts).isoformat(timespec="minutes"),
+        "started_ts": started_ts,
         "arm": name.split("—")[-1].strip() if "—" in name else name,
         "series": series,
         "turns": turns,
@@ -198,6 +212,29 @@ def parse_seed_range(spec: str | None) -> tuple[int, int] | None:
         return None
     lo, _, hi = spec.partition("-")
     return int(lo), int(hi or lo)
+
+
+BATCH_GAP_SECONDS = 45 * 60
+
+
+def cluster_batches(runs: list[dict[str, Any]]) -> list[list[dict[str, Any]]]:
+    """Group runs into batches by start time; a 45-minute gap starts a new batch."""
+    ordered = sorted(runs, key=lambda r: r["started_ts"])
+    batches: list[list[dict[str, Any]]] = []
+    for run in ordered:
+        if batches and run["started_ts"] - batches[-1][-1]["started_ts"] <= BATCH_GAP_SECONDS:
+            batches[-1].append(run)
+        else:
+            batches.append([run])
+    return batches
+
+
+def describe_batch(batch: list[dict[str, Any]]) -> str:
+    arms: dict[str, int] = {}
+    for run in batch:
+        arms[run["arm"]] = arms.get(run["arm"], 0) + 1
+    span = f'{batch[0]["started"]} → {batch[-1]["started"]}'
+    return f'{span} — {len(batch)} runs (' + ", ".join(f"{k} {v}" for k, v in sorted(arms.items())) + ")"
 
 
 def metric_definitions(scenario_dir: Path) -> list[dict[str, Any]]:
@@ -231,6 +268,9 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("scenario", type=Path, help="scenario directory, e.g. scenarios/europe-2032")
     parser.add_argument("--seeds", help="restrict to a seed range, e.g. 9101-9312")
+    parser.add_argument("--batch", type=int, default=0,
+                        help="batch index to embed, 0 = latest (default); ignored with --all")
+    parser.add_argument("--all", action="store_true", help="embed every run, not just one batch")
     parser.add_argument("--actor", default="eu", help="actor whose portfolio is read (default: eu)")
     parser.add_argument("--out", type=Path, help="output HTML (default: <scenario>/dashboard.html)")
     parser.add_argument("--title", default=None, help="title shown on the page")
@@ -256,11 +296,29 @@ def main() -> int:
         print("no runs matched", flush=True)
         return 1
 
+    batches = cluster_batches(runs)
+    # Everything is embedded; the page defaults to the latest batch and
+    # switches instantly. --batch/--all only choose the initial view.
+    initial = -1 if args.all else 0
+    if not args.all and not 0 <= args.batch < len(batches):
+        print(f"batch {args.batch} out of range (0–{len(batches) - 1})", flush=True)
+        return 1
+    if not args.all:
+        initial = args.batch
+        batch_label = describe_batch(batches[len(batches) - 1 - args.batch])
+    else:
+        batch_label = f"all {len(runs)} runs in {len(batches)} batches"
+
     payload = {
-        "title": args.title or f"{args.scenario.name} — {len(runs)} runs",
+        "title": args.title or f"{args.scenario.name} dashboard",
         "scenario": args.scenario.name,
         "metrics": metric_definitions(args.scenario),
         "events": list(catalogue.events.values()),
+        "batches": [
+            {"label": describe_batch(b), "run_ids": [r["id"] for r in b]}
+            for b in reversed(batches)
+        ],
+        "batch_index": initial,
         "runs": runs,
     }
     out = args.out or (args.scenario / "dashboard.html")
@@ -273,6 +331,7 @@ def main() -> int:
     for r in runs:
         arms[r["arm"]] = arms.get(r["arm"], 0) + 1
     print(f"{out}  ({size:.1f} MB)")
+    print(f"initial view: {batch_label}")
     print(f"{len(runs)} runs: " + ", ".join(f"{k} {v}" for k, v in sorted(arms.items())))
     print(f"{len(catalogue.events)} distinct events")
     return 0
