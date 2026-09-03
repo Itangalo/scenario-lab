@@ -2,7 +2,7 @@
 
 Decisions taken and results worth remembering. `ROADMAP.md` tracks the work; this file is why the scenario is shaped the way it is, and what the runs showed before they were deleted.
 
-**The runs behind almost everything here are gone.** `runs/`, `actor-samples/` and the old `calibration-runs/` are gitignored, and they have been cleared three times. Nothing below can be re-derived without paying for the batch again — about $3 and two hours for thirty-six 13-turn runs. That is the whole reason this file exists.
+**The runs behind almost everything here are gone.** `runs/`, `actor-samples/` and the old `calibration-runs/` are gitignored, and they have been cleared three times. Nothing below can be re-derived without paying for the batch again — about $3 and two hours for thirty-six 13-turn runs. This file is also where parked ideas live, so they don't rot: see *Parked* at the end.
 
 **Read the dates.** A number measured before a rule changed describes a world the scenario no longer produces. Superseded figures are marked where they stand rather than deleted, because knowing what a change moved is worth more than a tidy file.
 
@@ -237,3 +237,11 @@ The reasoning that makes this coherent: acceleration is the worst arm by constru
 | 05 | fail (0) | pass (50) | fail (5) |
 
 A floor that no run clears on one arm is not yet a broken floor: this is the arm where failure is the expected reading, and the question is whether the floors discriminate on plateau and verification-bounded. That is what the 15-run three-arm batch of 2026-09-03 14:05 is for. If they fail everywhere, they are measuring the scenario's difficulty rather than a run's performance and need resetting against what the physics now produces.
+
+## Parked (2026-09-03)
+
+Two ideas raised and deferred until Phase 1 closes and the story tree is built, so an experiment with unknown variance properties doesn't threaten the schedule. Neither is lost; each states what would reopen it.
+
+**Pooled event-category probabilities — scrapped, not parked.** Stating pool rates ("25% that one uncommon event occurs") instead of per-event percentages has a genuine defect, not a quirk: demoting an event to a rarer category makes that event *more* likely. It also relocates rather than removes LLM judgment (something still picks *which* event fires) and trades 35 tunable numbers for category assignments plus a selection rule. The `event_groups` `at_most_one` machinery already does pooled draws with LLM-judged weights. If fires-per-turn ever needs direct control, the smaller fixes are harder probabilities, more `Eligible` gates, or a per-turn trigger cap — measured against the corpus first.
+
+**Qualitative metric rules — parked.** Replacing the quantitative rules with qualitative GM guidance plus benchmark examples. The case for: rule evolution was frozen because the LLM rewrote ~1 rule/turn unprompted, and qualitative guidance can't be version-bumped the same way. The case against: rule 5's explicit closures are what made sovereignty move correctly, and prose guidance drifts with narrator bias — with qwen as standard, expect mushy middles and compressed variance. Decisive efficiency point: with `freeze_until_turn: 14` the rules step is currently skipped, costing zero calls; qualitative judgment would move *into* the per-turn GM call, the most expensive step. So the status quo is the efficient option until proven otherwise. Reopen as a bounded experiment (branch + small batch + distribution compare against the current instruments) after the story tree exists, when a bad result costs nothing. The benchmark-examples piece is the strongest part and could be adopted alone, inside the current system, keeping a minimal quantitative core.
