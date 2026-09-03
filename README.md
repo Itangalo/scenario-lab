@@ -56,6 +56,9 @@ Then add your API key(s) to `.env`. At least one of the following is required:
 
 - `OPENROUTER_API_KEY` – for OpenRouter (access to most models)
 - `ANTHROPIC_API_KEY` – for direct Anthropic API access (claude-opus-4-8, claude-sonnet-4-6, etc.)
+- `OPENAI_API_KEY` – for any OpenAI-compatible endpoint (`OPENAI_BASE_URL`, default `https://api.openai.com/v1`). Point it at `http://localhost:11434/v1` for local Ollama models (any non-empty key works there).
+
+Alternatively, no API key is needed if you route through OpenCode (`opencode:<providerID>/<modelID>`, as listed by `opencode models`), which uses whatever is authenticated via `opencode auth login`. The provider spawns its own `opencode serve` in an isolated working directory; set `OPENCODE_SERVER_URL` to attach to a running server instead. Note that per-call `temperature`/`max_tokens` are then owned by the OpenCode model configuration.
 
 Models are specified in `scenario.yaml` as `provider:model`, for example `openrouter:qwen/qwen3-235b-a22b-2507` or `anthropic:claude-sonnet-4-6`.
 

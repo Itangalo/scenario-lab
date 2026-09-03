@@ -138,6 +138,7 @@ class Orchestrator:
         self.output_manager = output_manager
         self.progress_tracker = progress_tracker
         self._owned_routers: list[FallbackRouter] = []
+        self._owned_registries: list[ProviderRegistry] = []
 
         # Resolve the random seed for the dice RNG. If unset, generate a
         # 64-bit seed so that every run records a concrete, reproducible seed.
@@ -223,6 +224,7 @@ class Orchestrator:
         """Create FallbackRouters based on scenario configuration."""
         config = self.scenario.config.llm
         registry = ProviderRegistry(call_timeout_seconds=config.call_timeout_seconds)
+        self._owned_registries.append(registry)
 
         router_cache: dict[str, FallbackRouter] = {}
 
@@ -279,9 +281,15 @@ class Orchestrator:
         }
 
     def close(self):
-        """Close all owned routers (and their underlying providers via registry)."""
+        """Close all owned routers and registries.
+
+        Registries own provider lifecycle (HTTP clients, spawned servers such
+        as ``opencode serve``); routers are no-ops on close by design.
+        """
         for router in self._owned_routers:
             router.close()
+        for registry in self._owned_registries:
+            registry.close_all()
 
     def _wrap_clients_for_io(self, clients: dict) -> dict:
         """Wrap every per-task client in a recording wrapper for transcripts."""

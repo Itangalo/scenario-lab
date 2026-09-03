@@ -160,6 +160,7 @@ def generate_run_analysis(
         response = router.complete(system_prompt, user_prompt)
     finally:
         router.close()
+        registry.close_all()
 
     report = _normalize_report(response.content, json_output)
     destination = None if no_save else _resolve_output_path(bundle.run_dir, output_path, json_output)

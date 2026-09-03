@@ -75,7 +75,8 @@ def parse_route(value: object) -> ModelRoute:
         if ":" not in value:
             raise ValueError(
                 f"Model string '{value}' is missing a provider prefix. "
-                f"Use 'openrouter:{value}' or 'anthropic:{value}'."
+                f"Use 'openrouter:{value}', 'anthropic:{value}', 'openai:{value}', "
+                f"or 'opencode:{value}'."
             )
         provider, model = value.split(":", 1)
         if not provider or not model:

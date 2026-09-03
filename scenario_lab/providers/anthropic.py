@@ -27,7 +27,18 @@ class AnthropicProvider(LLMProvider):
         api_key: Optional[str] = None,
         enable_prompt_caching: bool = True,
         call_timeout_seconds: Optional[int] = None,
+        base_url: Optional[str] = None,
+        auth_token: Optional[str] = None,
     ) -> None:
+        """Create the Anthropic provider.
+
+        Gateway support (same convention as Claude Code): set ``base_url``
+        (or ``ANTHROPIC_BASE_URL``) to route through an Anthropic-compatible
+        gateway with ``auth_token`` (or ``ANTHROPIC_AUTH_TOKEN``), which is
+        sent as ``Authorization: Bearer`` instead of ``x-api-key``. Unset
+        ``ANTHROPIC_API_KEY`` when using a gateway token – the API key takes
+        precedence in the SDK and would shadow the gateway route.
+        """
         try:
             import anthropic as _anthropic_sdk
         except ImportError as e:
@@ -36,13 +47,25 @@ class AnthropicProvider(LLMProvider):
                 "Install it with: pip install anthropic"
             ) from e
 
-        resolved_key = api_key or os.environ.get("ANTHROPIC_API_KEY")
-        if not resolved_key:
-            raise ValueError(
-                "ANTHROPIC_API_KEY not set. Set it in environment or pass to constructor."
-            )
+        resolved_base_url = base_url or os.environ.get("ANTHROPIC_BASE_URL")
+        resolved_token = auth_token or os.environ.get("ANTHROPIC_AUTH_TOKEN")
         self._sdk = _anthropic_sdk
-        self._client = _anthropic_sdk.Anthropic(api_key=resolved_key)
+        if resolved_base_url and resolved_token:
+            if os.environ.get("ANTHROPIC_API_KEY"):
+                raise ValueError(
+                    "Both ANTHROPIC_API_KEY and ANTHROPIC_AUTH_TOKEN are set. "
+                    "Unset ANTHROPIC_API_KEY to use the ANTHROPIC_BASE_URL gateway route."
+                )
+            self._client = _anthropic_sdk.Anthropic(
+                base_url=resolved_base_url, auth_token=resolved_token
+            )
+        else:
+            resolved_key = api_key or os.environ.get("ANTHROPIC_API_KEY")
+            if not resolved_key:
+                raise ValueError(
+                    "ANTHROPIC_API_KEY not set. Set it in environment or pass to constructor."
+                )
+            self._client = _anthropic_sdk.Anthropic(api_key=resolved_key)
         self._enable_prompt_caching = enable_prompt_caching
         self.call_timeout_seconds = call_timeout_seconds or DEFAULT_CALL_TIMEOUT_SECONDS
 

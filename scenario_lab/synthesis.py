@@ -351,11 +351,11 @@ def _synthesize_grouped(
 
     router = FallbackRouter(
         routes=routes,
-        registry=ProviderRegistry(call_timeout_seconds=llm_config.call_timeout_seconds),
+        registry=(registry := ProviderRegistry(call_timeout_seconds=llm_config.call_timeout_seconds)),
         temperature=0.3,
-        max_tokens=llm_config.get_task_max_tokens("comparison", default=llm_config.get_task_max_tokens("synthesis", default=llm_config.get_task_max_tokens("analysis"))),
+        max_tokens=llm_config.get_task_max_tokens("synthesis", default=llm_config.get_task_max_tokens("analysis")),
         limits_resolver=llm_config.limits_resolver(
-            "comparison",
+            "synthesis",
             max_tokens_default=llm_config.get_task_max_tokens(
                 "synthesis", default=llm_config.get_task_max_tokens("analysis")
             ),
@@ -365,6 +365,7 @@ def _synthesize_grouped(
         response = router.complete(system_prompt, user_prompt)
     finally:
         router.close()
+        registry.close_all()
 
     report = _normalize_report(response.content, json_output)
     destination = None
@@ -492,7 +493,7 @@ def _synthesize_run_set(
 
     router = FallbackRouter(
         routes=routes,
-        registry=ProviderRegistry(call_timeout_seconds=llm_config.call_timeout_seconds),
+        registry=(registry := ProviderRegistry(call_timeout_seconds=llm_config.call_timeout_seconds)),
         temperature=0.3,
         max_tokens=llm_config.get_task_max_tokens("synthesis", default=llm_config.get_task_max_tokens("analysis")),
         limits_resolver=llm_config.limits_resolver(
@@ -506,6 +507,7 @@ def _synthesize_run_set(
         response = router.complete(system_prompt, user_prompt)
     finally:
         router.close()
+        registry.close_all()
 
     report = _normalize_report(response.content, json_output)
     destination = None

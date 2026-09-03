@@ -191,7 +191,7 @@ The other three: nothing in the scenario drove the procedure to a conclusion (no
 **Priority:** Low-Medium  
 **Type:** Operational  
 
-The provider abstraction was built to accommodate this: a third provider type for Ollama or vLLM slots into `LLMProvider` and `ProviderRegistry` without touching the router. Mainly useful for cheap high-volume batches and for running scenarios with sensitive material.
+The provider abstraction was built to accommodate this: the generic `openai` provider (any OpenAI-compatible endpoint via `OPENAI_BASE_URL`) now covers Ollama and vLLM without touching the router, and the `opencode` provider routes through an OpenCode server instead. Mainly useful for cheap high-volume batches and for running scenarios with sensitive material.
 
 ### 7. Optional Public-Sphere or Social-Dynamics Modules
 
