@@ -218,3 +218,22 @@ Six acceleration runs of 13 turns under the fixed invariant 2 and rule 5's third
 The turn tag is written in 58% of charges and names the current turn in 23 of those 25, so the tag is being followed where it is used; it just does not answer the second failure, because a made-up event can carry a correct turn. The shape that would is a lookup rather than a judgement: the charge must name an id from *this turn's* event list, which the metrics prompt already renders in full, or say in the line that there was no capacity event.
 
 **One instrument correction, before any of these numbers are quoted.** The first reading said 39% of charges were stale. It counted every mention of an event id as a charge, including `eu_frontier_access_denied ongoing (no repeat charge)` — a turn where the Game Master was doing exactly what rule 5 asks. `capacity_charges` now requires a signed number in the same comma-separated term, so declining to pay is no longer recorded as paying.
+
+## The collapse of the lower half is accepted as the physics (2026-09-03)
+
+Johan's decision, taken on the six-run table above: the constitution stays as written, including the sentence saying every metric other than the two capability stocks is a stock that can be spent or eroded. Political capital ending at a median of 2.5 on the acceleration arm, with four of six runs at or below 3, is the arm working rather than a check that stopped doing its job.
+
+The reasoning that makes this coherent: acceleration is the worst arm by construction, and a Union whose access to capacity is being taken away while the frontier runs to 100 has no obvious route to ending with room to act. What used to hold capital up was a referee arresting falls it had no authority to arrest, so the earlier median of 17.5 was never a finding about Europe.
+
+**What it moves next is the declared floors** in `scenario.yaml` — agency ≥40, absorption ≥50, legitimacy ≥25 — which the 36-run note left open. Scored on this batch, acceleration puts 5 of 6 runs in "least favourable":
+
+| run | agency (capital ≥40) | absorption (resilience ≥50) | legitimacy (sentiment ≥25) |
+|---|---|---|---|
+| 31 | fail (0) | fail (36) | fail (12) |
+| 01 | fail (16) | fail (37) | pass (33) |
+| 02 | fail (3) | fail (45) | fail (15) |
+| 03 | fail (15) | pass (51) | pass (25) |
+| 04 | fail (2) | fail (44) | fail (13) |
+| 05 | fail (0) | pass (50) | fail (5) |
+
+A floor that no run clears on one arm is not yet a broken floor: this is the arm where failure is the expected reading, and the question is whether the floors discriminate on plateau and verification-bounded. That is what the 15-run three-arm batch of 2026-09-03 14:05 is for. If they fail everywhere, they are measuring the scenario's difficulty rather than a run's performance and need resetting against what the physics now produces.
