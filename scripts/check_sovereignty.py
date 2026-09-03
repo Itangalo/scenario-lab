@@ -46,6 +46,17 @@ IN_FLIGHT = re.compile(r"\bin flight\b", re.IGNORECASE)
 
 LEGAL_WITHOUT_COMPLETION = 2.0
 
+# Rule 5's third term, added 2026-09-03: an event that took away or secured the
+# Union's access to capacity itself pays -3 to +3 with no measure finishing, so
+# a line naming one may legally move further than a line that names nothing.
+# The ids are rule 5's own list; an emergent event may do the same thing, and
+# rule 5 says it counts the same.
+CAPACITY_EVENTS = re.compile(
+    r"\b(?:eu_frontier_access_denied|supply_chain_coercion|export_control_escalation"
+    r"|member_state_defection|eu_access_secured|emergent_\w+)\b"
+)
+LEGAL_WITH_CAPACITY_EVENT = 3.0
+
 # The notepad is free text and the Game Master formats it as it likes: the
 # accounting lines come bare in some runs and as list items in others, and a
 # whole run can switch. A detector anchored to the start of the line reads a
@@ -88,6 +99,7 @@ class TurnCheck:
     applied: float | None
     names_completion: bool
     completions: list[str]
+    names_capacity_event: bool = False
     anchor: float | None = None
     before: float | None = None
     # The change the line claims when read against its own anchor rather than
@@ -122,10 +134,17 @@ class TurnCheck:
 
     @property
     def legal(self) -> bool | None:
+        """Whether the applied change is one rule 5 can pay without a completion.
+
+        Only the upward direction is bounded here: rule 5's decay has no floor,
+        so a line may legally fall as far as its terms take it.
+        """
         if self.applied is None:
             return None
         if self.names_completion:
             return True
+        if self.names_capacity_event:
+            return self.applied <= LEGAL_WITH_CAPACITY_EVENT
         return self.applied <= LEGAL_WITHOUT_COMPLETION
 
 
@@ -266,9 +285,11 @@ def read_turn(run: Path, turn_dir: Path) -> TurnCheck | None:
     stated_self: float | None = None
     anchor: float | None = None
     names_completion = False
+    names_capacity_event = False
     if line:
         terms, claims, anchor = parse_line(line)
         names_completion = bool(FINISHED.search(line))
+        names_capacity_event = bool(CAPACITY_EVENTS.search(line))
         if claims:
             stated = resolve_claim(claims[-1], before if before is not None else anchor)
             stated_self = resolve_claim(claims[-1], anchor if anchor is not None else before)
@@ -276,7 +297,7 @@ def read_turn(run: Path, turn_dir: Path) -> TurnCheck | None:
     credited = completions(line) if line else []
     return TurnCheck(
         run.name, turn, line, terms, stated, applied, names_completion, credited,
-        anchor, before, stated_self,
+        names_capacity_event, anchor, before, stated_self,
     )
 
 

@@ -4,7 +4,9 @@
 
 1. **How fast the world moves is fixed, and unannounced.** The rates in metric rule 1 hold from turn 1 to the last turn.
 
-2. **Capability is accumulated and does not fall.** `ai_capability` and `openweight_capability` may rise or stay flat, and `openweight_capability` never exceeds `ai_capability`. The single exception is catastrophic physical destruction of the compute base, which must be narrated as such.
+2. **`ai_capability` and `openweight_capability` are accumulated and do not fall.** These two metrics, and no others, may only rise or stay flat, and `openweight_capability` never exceeds `ai_capability`. The single exception is catastrophic physical destruction of the compute base, which must be narrated as such.
+
+   **This invariant reaches no other metric.** Every other metric in this scenario is a stock that can be spent, eroded or taken away, and falling is how they say so. `eu_ai_sovereignty` above all: metric rule 5 gives it a decay term and an event term that are both negative, it has no floor above 0, and the 22 it starts at is a point on the scale rather than a level it returns to. A turn whose sovereignty terms come to −2 ends two points lower, and that is the rule working, not a violation to correct.
 
 3. **Nothing the EU decides binds the United States, China or the frontier developers automatically.** Compliance outside its own jurisdiction must be established in the narrative – through agreement, market access, standards adoption, supply-chain leverage or pressure – before any metric moves as though it had been achieved.
 

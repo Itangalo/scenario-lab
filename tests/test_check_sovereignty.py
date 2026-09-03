@@ -176,3 +176,57 @@ def test_the_line_is_found_however_the_notepad_formats_it(tmp_path, prefix, suff
 
     assert check is not None and check.line is not None
     assert check.anchor == 22.0
+
+
+def _turn_with(line: str, before: float, after: float):
+    """Read one turn whose notepad holds exactly the given line."""
+    import tempfile
+
+    root = Path(tempfile.mkdtemp())
+    run = root / "run-x"
+    for turn, value in ((1, before), (2, after)):
+        (run / f"turn-{turn:02d}").mkdir(parents=True)
+        (run / f"turn-{turn:02d}" / "4-metrics.json").write_text(
+            f'{{"eu_ai_sovereignty": {value}}}'
+        )
+    (run / "config.json").write_text("{}")
+    (run / "turn-02" / "5-notepad.md").write_text(line + "\n")
+    return check_sovereignty.read_turn(run, run / "turn-02")
+
+
+def test_a_rise_above_two_without_a_completion_is_illegal():
+    """Rule 5's two original sources cap an uncredited rise at +2."""
+    check = _turn_with(
+        "SOVEREIGNTY: 22 last turn, momentum +4 = 26", before=22.0, after=26.0
+    )
+    assert check.names_completion is False
+    assert check.names_capacity_event is False
+    assert check.legal is False
+
+
+def test_an_event_that_secured_access_may_pay_three_without_a_completion():
+    """Rule 5's third term pays up to +3 with nothing finishing."""
+    check = _turn_with(
+        "SOVEREIGNTY: 22 last turn, eu_access_secured +3 = 25", before=22.0, after=25.0
+    )
+    assert check.names_capacity_event is True
+    assert check.legal is True
+
+
+def test_the_third_term_does_not_licence_a_larger_rise():
+    check = _turn_with(
+        "SOVEREIGNTY: 22 last turn, eu_access_secured +5 = 27", before=22.0, after=27.0
+    )
+    assert check.names_capacity_event is True
+    assert check.legal is False
+
+
+def test_a_fall_is_legal_because_rule_5_has_no_floor():
+    """Decay and the removal half of the third term are unbounded downward."""
+    check = _turn_with(
+        "SOVEREIGNTY: 22 last turn, eu_frontier_access_denied −3, "
+        "capability rose 2.5 −1 = 18",
+        before=22.0,
+        after=18.0,
+    )
+    assert check.legal is True

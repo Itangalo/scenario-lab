@@ -70,16 +70,17 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    Compare the two numbers before writing anything. `none` is correct only when capital is the higher of the two, and a `none` whose own reasoning shows sentiment above capital is wrong.
 
-3d. **Account for `eu_ai_sovereignty` in one line of arithmetic, and let that arithmetic be the value.** Metric rule 5 gives it exactly two sources, and they are not the same size:
+3d. **Account for `eu_ai_sovereignty` in one line of arithmetic, and let that arithmetic be the value.** Metric rule 5 gives it exactly three sources, and they are not the same size:
 
    - a category 4 measure **in the turn its stated finishing turn is reached**: +3 to +6, that turn and no other. Two finishing in the same turn each pay in full.
    - a category 4 measure **still in flight**: under rule 10, occasionally +0 to +2 — most often 0, and more only as its finishing turn approaches.
+   - **an event this turn that took away or secured access to capacity itself**: −1 to −3, or +1 to +3 where it secured. One such term at most, the largest where several events qualify, and the line names the event it came from. Rule 5 says which events these are and how to size one; an event that pressured, threatened or embarrassed the Union without reaching its capacity is not this term and gets nothing here.
 
    Against them, `ai_capability` rising at least 2 this turn costs −1.
 
    Write one line in the Notepad that starts from last turn's figure, names every term, and ends at this turn's:
 
-   `SOVEREIGNTY: 31 last turn, Sovereign Compute Corridor finishes t6 +5, Gigafactories in flight +1, capability rose 2.5 −1 = 36`
+   `SOVEREIGNTY: 31 last turn, Sovereign Compute Corridor finishes t6 +5, Gigafactories in flight +1, eu_frontier_access_denied −2, capability rose 2.5 −1 = 34`
 
    **The number after the `=` is what you write for `eu_ai_sovereignty` in the Metrics JSON** — the same number, not one near it and not one you reached another way. There is nothing left to judge once the line is written. Nothing outside rule 5 is a term: momentum, institutional follow-through, prior delivery, floors and rounding are not terms, and a line that reaches a total and then appends `→ net +1` has thrown away its own arithmetic.
 
