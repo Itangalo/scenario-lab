@@ -189,6 +189,7 @@ function colFor(runs, metric, maxTurn) {
 }
 
 function render() {
+  refreshArms();
   const runs = filteredRuns();
   const enabled = state.chartMetrics.filter(m => metricIds.includes(m));
   const bandM = enabled.includes(state.bandMetric) ? state.bandMetric : enabled[0];
@@ -345,8 +346,32 @@ function renderTable(runs) {
 }
 
 // ---- controls ----
-function armSet() {
-  return [...new Set(DATA.runs.map(r => r.arm))].sort();
+function batchArms() {
+  const ids = new Set(batchRunIds());
+  return [...new Set(DATA.runs.filter(r => ids.has(r.id)).map(r => r.arm))].sort();
+}
+
+function refreshArms() {
+  // Checkbox list reflects the selected batch only, so ancient variant
+  // names from other batches never pollute the filter.
+  if (state.arms) state.arms = new Set([...state.arms].filter(a => batchArms().includes(a)));
+  const box = $("arms");
+  box.innerHTML = "";
+  batchArms().forEach(arm => {
+    const lab = document.createElement("label");
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.checked = !state.arms || state.arms.has(arm);
+    cb.value = arm;
+    cb.addEventListener("change", () => {
+      const checked = [...box.querySelectorAll("input:checked")].map(c => c.value);
+      state.arms = checked.length === batchArms().length ? null : new Set(checked);
+      state.dial = 0; render();
+    });
+    lab.appendChild(cb);
+    lab.appendChild(document.createTextNode(" " + arm));
+    box.appendChild(lab);
+  });
 }
 
 function init() {
@@ -364,22 +389,11 @@ function init() {
   all.value = -1; all.textContent = "All batches";
   batch.appendChild(all);
   batch.value = state.batch;
-  batch.addEventListener("change", () => { state.batch = +batch.value; state.dial = 0; render(); });
-
-  const armsBox = $("arms");
-  armSet().forEach(arm => {
-    const lab = document.createElement("label");
-    const cb = document.createElement("input");
-    cb.type = "checkbox"; cb.checked = true; cb.value = arm;
-    cb.addEventListener("change", () => {
-      const checked = [...armsBox.querySelectorAll("input:checked")].map(c => c.value);
-      state.arms = checked.length === armSet().length ? null : new Set(checked);
-      state.dial = 0; render();
-    });
-    lab.appendChild(cb);
-    lab.appendChild(document.createTextNode(" " + arm));
-    armsBox.appendChild(lab);
+  batch.addEventListener("change", () => {
+    state.batch = +batch.value; state.arms = null; state.dial = 0; render();
   });
+
+  // (arm checkboxes are built by refreshArms() during render, per batch)
 
   for (const [id, key] of [["since", "since"], ["until", "until"]]) {
     $(id).addEventListener("change", () => { state[key] = $(id).value.trim(); state.dial = 0; render(); });
