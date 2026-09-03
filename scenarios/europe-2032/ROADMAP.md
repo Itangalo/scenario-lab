@@ -1,14 +1,15 @@
 # Europe 2032 – roadmap to the story
 
-The goal is an interactive story: a reader takes the EU through 2026–2032, not knowing which of three AI trajectories they are on, choosing three times, and reaching one of twenty-four endings. `story/README.md` defines the tree and the naming. This file is the plan for getting there, and it is the document to read first in a new session. `/HANDOFF.md` at the repo root says where the last session stopped; this says where the work is going.
+The goal is an interactive story: a reader takes the EU through 2026–2032, not knowing which of three AI trajectories they are on, choosing three times, and reaching one of twenty-four endings. `story/README.md` defines the tree and the naming. This file is the plan for getting there, and it is the document to read first in a new session. It is complemented with `design-notes.md`, used to remember decisions and important results.
 
-The order matters, and the reason is money and time rather than tidiness. The story tree costs about 8 hours of wall clock and every turn of it is generated under whatever physics is current. A rule change afterwards invalidates the branches built before it, as it already has once. **Nothing in phase 3 starts before phase 1 closes.**
+This document keeps track of the work. Update it when the work moves along; it should always say where we are and what the next steps are.
 
 ## Phase 1 – the scenario stops moving
 
-The gate is not "no known bugs". It is: **a rule change is no longer expected, so a batch built today is still valid next week.** Proposed criteria, to be confirmed or trimmed:
+The gate for this phase is that the physics works well enough to have credible runs, on all four arms.
 
-- [ ] **No metric spends the back half of a run pinned to a bound.** `ai_safety` currently reaches ≤5 in 9 of 12 acceleration runs by a median of turn 8, and ends at 0.0 in several. A metric on its stop carries no information, and rule 11 prices lab-origin incidents off the capability−safety gap, so the gap saturates with it. This is the largest open threat to the story: the acceleration arm's last five turns would be written against a dead dial.
+- [ ] All metrics should evolve in a credible way. This means, for example:
+  - [ ] For acceleration, AI capacity will 
 - [ ] **The declared floors are calibrated against a real batch.** `scenario.yaml` calls them first guesses. On the 36 runs they score 5/36 agency, 19/36 absorption, 24/36 legitimacy, 4/36 all three, and 0/12 acceleration runs clear anything. Either the Union is this weak once the accounting is honest — a legitimate finding — or the floors were set against the inflated sovereignty they no longer get. Decide which, and write it down.
 - [ ] **Sovereignty accounting stays where it is or better.** Binding is 68% over 36 runs, up from 33%. Two named residual causes are in the design notes; both are optional.
 - [ ] **A turn that drops a metric is caught.** One run of 2026-09-03 omitted `openweight_capability` from turn 1's JSON; the old value was carried forward and the run completed clean. Nothing checks metric completeness.

@@ -1,33 +1,14 @@
 # Design notes – Europe 2032
 
-What the runs so far have shown, and why the scenario is built the way it is. The findings below outlived the runs that produced them: two batches of thirty were archived on 2026-08-29 and the measure mechanics were rebuilt after them, so nothing here should be re-derived from those runs, only remembered.
+Decisions taken and results worth remembering. `ROADMAP.md` tracks the work; this file is why the scenario is shaped the way it is, and what the runs showed before they were deleted.
 
-## The open question
+**The runs behind almost everything here are gone.** `runs/`, `actor-samples/` and the old `calibration-runs/` are gitignored, and they have been cleared three times. Nothing below can be re-derived without paying for the batch again — about $3 and two hours for thirty-six 13-turn runs. That is the whole reason this file exists.
 
-**Sovereignty did not move.** Across two arms and three roads, `eu_ai_sovereignty` ended within three points of its starting 22 in every case – including the road that opened with a high-cost category 4 compute programme and pursued it for four turns.
-
-| arm | road | sovereignty at turn 5 |
-|---|---|---|
-| plateau | A build | 24.0 |
-| plateau | B absorb | 24.5 |
-| plateau | C reach | 24.0 |
-| acceleration | A build | 25.0 |
-| acceleration | B absorb | 25.0 |
-| acceleration | C reach | 24.5 |
-
-Two candidate causes were identified and one was fixed. The fixed one: nothing read a measure's declared `Lead time:`, so every measure completed in two turns of priority whatever it claimed, and rule 10's clause advancing unprioritised measures only above `eu_political_capital` 55 never fired because the runs sat at 34–45. Measures now carry a stated finishing turn instead. **Whether that was the whole cause is unknown** – it has been through four-turn smoke tests only, and the question wants a batch.
-
-The second candidate is untested: that the actor was rationally routing around a wall. Road A's compute programme read `under implementation` in 9 of 10 acceleration runs at turn 5 whatever the Union did, always for the same reasons in prose – legal anchoring deadlocked, an ECJ referral, procurement frozen.
-
-## What else those batches settled
-
-- **The 2028 election machinery works.** It fired in 22 of 30 plateau runs despite a condition saying it always happens, because `probability_samples: 3` averages the events step's draws and the model omitted the event from some of them. Resolved as a mutually exclusive event group: exactly one outcome in all 30 acceleration runs, and all three reachable – 18 consolidation, 7 retrenchment, 5 alliance, against an alliance that had been unreachable rather than rare.
-- **Seeds must not be shared across branches or arms.** Both batches reused 700001–700010 by index. Event-profile overlap between two branches at the same seed is 0.625 against 0.210 at different seeds; across arms, 0.271 against 0.099. Three branches sharing a seed are substantially the same world.
-- **The arms separate on capability and safety, not on the Union's room to act.** Acceleration ends 5–12 points above plateau on capability and 4 below on safety, on every road. Public sentiment converges on 28 in all three acceleration roads where plateau spread 11 points between them: under acceleration the public reads the world rather than the Union's choice of instrument.
+**Read the dates.** A number measured before a rule changed describes a world the scenario no longer produces. Superseded figures are marked where they stand rather than deleted, because knowing what a change moved is worth more than a tidy file.
 
 ## Why turn 1 stopped being a fork
 
-The three roads that used to fork at turn 1 – sovereign compute, resilience surge, evaluator access – were retired on 2026-08-30 and are in `story/turn-01/superseded-roads/`. Three things had gone wrong with them:
+The three roads that used to fork at turn 1 – sovereign compute, resilience surge, evaluator access – were retired on 2026-08-30. The road files themselves are gone; what mattered about them is here. Three things had gone wrong with them:
 
 - They open their portfolio with `Nothing in flight.`, from a prompt that told the actor the inherited programmes belonged in its reasoning and never in the list. The prompt now seeds two of them directly.
 - They declare `Capital cost:` and `Lead time:`, which the rebuilt mechanics do not read.
@@ -37,23 +18,22 @@ The three roads that used to fork at turn 1 – sovereign compute, resilience su
 
 Turn 1 is now a single fixed opening at `story/turn-01/opening.md`, shared by every arm and every reader, and the fork moved to turn 2.
 
-## Calibrating political capital, and what actually controlled it
+## What the first batches settled
 
-Three batches of four 13-turn runs on the verification-bounded arm, each changing one thing, because the runs themselves are not kept and the numbers would otherwise be lost.
+Two batches of thirty, archived 2026-08-29, plus four smoke runs from 2026-08-27 whose directories were deleted 2026-09-03. What survived them:
 
-| batch | change | finals | mean | sovereignty crosses 40 |
-|---|---|---|---|---|
-| A | baseline after the by-metric rewrite | 38, 38, 28, 43 | 36.8 | t10, t7, t10, t7 |
-| B | completion bonus `+4..+8` → `+2..+5` | 45, 48, 45, 43 | 45.2 | t8, t7, t8, t10 |
-| C | in-flight effect capped at half the finished figure | 30, 36, 31, 20 | 29.2 | t9, t13, never, never |
+- **The 2028 election machinery works, as a mutually exclusive event group.** It had fired in only 22 of 30 plateau runs despite a condition saying it always happens, because `probability_samples: 3` averages the events step's draws and the model omitted the event from some of them. As a group: exactly one outcome in all 30 acceleration runs, and all three reachable — 18 consolidation, 7 retrenchment, 5 alliance, against an alliance that had been unreachable rather than merely rare.
+- **Seeds must not be shared across branches or arms.** Both batches reused 700001–700010 by index. Event-profile overlap between two branches at the same seed is 0.625 against 0.210 at different seeds; across arms, 0.271 against 0.099. Three branches sharing a seed are substantially the same world. This is why the roadmap tracks used seed blocks.
+- **Three prompt fixes came out of the smoke runs**, all long since applied: the turn-1 portfolio starts empty, an action may not smuggle in a second instrument, and event ids are banned from the narrative. A fourth followed from the actor restating its standing commitment in prose instead of entering it in the ledger — the commitment is now seeded in `background/actors/eu.md` so it exists from turn 1 in every run.
+- **Still worth watching, and never resolved:** the actor tagged a cyber-resilience measure as category 4 when it belongs in category 6. Category tags are what `rq_no_regret` groups on, so a mis-tag lands directly in an analysis result.
 
-**The completion bonus was not the lever, and halving it did the opposite of what was predicted.** The reasoning that picked it was arithmetic on the one term the notepad records — six to eight completions at `+4 to +8` — and it never counted the others, because only the portfolio charge and the proposal bonus are written down. Everything else is applied inside the Game Master's reasoning and leaves no trace. The prediction was −10; the result was +8.4.
+## Political capital: what controlled it, and why those numbers are not quotable
 
-**`eu_ai_sovereignty` crossing 40 is what controls the balance.** Rule 6 pays `+1 to +3` a turn above that gate, and in A and B every run collected it for four to seven turns. Batch C's cap slows in-flight accumulation, so two runs never crossed at all and a third crossed at turn 13 — and the mean fell by 16. Nothing else moved comparably in any batch.
+Three batches of four 13-turn runs on verification-bounded, mid-2026-09-01, each changing one thing. **Every figure they produced was measured while sovereignty was inflating** — the accounting defect described below was live throughout — so the magnitudes are unreliable and are not repeated here. Three things survive the contamination:
 
-**The cap buys lower capital by making the Union less effective, not by making action cost more.** Resilience fell from 55, 51, 55, 53 to 42, 38, 44, 53, so only one run of four still clears the `absorption` floor of 50. That is a real trade and it was accepted deliberately. If a later pass wants the capital distribution without the effectiveness cost, the levers are on the cost side — the per-turn charge, the priority cost, or lowering rule 9's gate below 40 so that runs which do build sovereignty are still paid for it.
-
-**The measurement gap is the thing to fix first if this is revisited.** Three consecutive changes had their effects inferred rather than read, because the positive terms are invisible. A `CAPITAL LEDGER` line in the notepad — charge, completions, dividend, attribution, lend, each itemised — would make the next comparison arithmetic instead of guesswork, and it is the same shape as the two lines that already work reliably.
+- **The completion bonus was not the lever, and halving it did the opposite of what was predicted** — the prediction was −10 and the result was +8.4. The reasoning that picked it did arithmetic on the one term the notepad records and never counted the others, because everything else was applied inside the Game Master's reasoning and left no trace.
+- **`eu_ai_sovereignty` crossing 40 is what controls the balance**, because rule 6 pays a dividend every turn above that gate. The direction was later confirmed the hard way: once the accounting was fixed and sovereignty stopped inflating, almost nothing crossed 40 and median final capital fell from 32 to 21.
+- **The measurement gap is the thing to fix first.** Three consecutive changes had their effects inferred rather than read. That lesson produced the required-output-line pattern, and then its limit — see below.
 
 ## Why the sovereignty line did not bind (ECHO 2026-09-02)
 
@@ -139,3 +119,36 @@ An event whose description calls it irreversible — "on private hardware perman
 **The untested version, if this is revisited:** a destination inside the clause that already moves, rather than a direction — "set around the midpoint; in the turn `openweight_frontier_release` occurs, set it instead to 5–10 below `ai_capability`." One bullet, one reading, but a number in it.
 
 **Where the right sentence was the whole time.** `events.md` states the intent unambiguously in that event's Description, and the sign-off coverage table has marked that heading **NO** for as long as it has existed: only `Condition:` and `Probability:` are rendered into the events prompt. The correct instruction was written, reviewed, and never sent to anything.
+
+## What thirty-six runs looked like, before the rule 2 fix (ECHO 2026-09-03)
+
+Twelve runs per arm, 13 turns, seeds 9101–9312. The directories are deleted; this table is what is left of them.
+
+**Superseded in one column and everything downstream of it.** This batch ran before rule 2 was given a target, so `openweight_capability` is the pinned ~45 described above. Since open-weight thresholds gate `cyber_major_incident` and add to three other events, the incident-driven metrics — safety, resilience, sentiment — were all measured with those branches shut. Treat this as the baseline the fix was measured against, not as a description of the current scenario.
+
+| turn 13, median | acceleration | verification-bounded | plateau |
+|---|---|---|---|
+| `ai_capability` | 92.9 | 72.1 | 66.0 |
+| `openweight_capability` | 46.5 | 44.6 | 45.4 |
+| `ai_safety` | **3.2** | 15.5 | 23.2 |
+| `resilience` | 47.7 | 49.7 | 47.5 |
+| `eu_ai_sovereignty` | 23.2 | 27.7 | 31.5 |
+| `eu_political_capital` | 17.1 | 26.3 | 23.3 |
+| `public_sentiment` | 29.5 | 27.2 | 30.6 |
+
+**The arms separate cleanly on capability** — 92.9 / 72.1 / 66.0, with verification-bounded extremely tight at 70.5–73.5. That was the design intent and it holds.
+
+**`ai_safety` pins to its floor under acceleration:** ≤5 in 9 of 12 runs by a median of turn 8, ending at 0.0 in several, against 2 of 12 under verification-bounded and 1 of 12 under plateau. A metric on its stop carries no information, and rule 11 prices lab-origin incidents off the capability−safety gap.
+
+**Sovereignty does not move on any arm** — 23.2 / 27.7 / 31.5 from a start of 22 — and crosses rule 6's dividend gate at 40 in 4 of 36 runs (0 acceleration, 1 verification-bounded, 3 plateau). The pre-fix batches averaged 42.1 at turn 13; that was the inflation, and this is what the metric does when the accounting is honest.
+
+**Scored against the declared floors** — agency ≥40, absorption ≥50, legitimacy ≥25:
+
+| | agency | absorption | legitimacy | all three |
+|---|---|---|---|---|
+| acceleration | 0/12 | 5/12 | 9/12 | **0/12** |
+| verification-bounded | 3/12 | 7/12 | 6/12 | 2/12 |
+| plateau | 2/12 | 7/12 | 9/12 | 2/12 |
+| **all** | **5/36** | 19/36 | 24/36 | **4/36** |
+
+Median final political capital across all 36 was 21, with 17 of 36 below the paralysis threshold of 20. Either the Union is this weak once the accounting is honest — a legitimate finding for a scenario built to ask whether agency depends on holding capacity — or the floors were set against sovereignty figures the scenario no longer produces. That decision is open, and it is a phase 1 item in `ROADMAP.md`.
