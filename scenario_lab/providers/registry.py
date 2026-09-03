@@ -26,7 +26,7 @@ class ProviderRegistry:
     def get(self, name: str) -> LLMProvider:
         """Return the provider for *name*, creating it lazily if not yet registered.
 
-        Built-in providers (openrouter, anthropic, openai, opencode) are created on first access.
+        Built-in providers (openrouter, anthropic, openai, opencode, codex) are created on first access.
         """
         if name in self._providers:
             return self._providers[name]
@@ -60,6 +60,12 @@ class ProviderRegistry:
             if self._call_timeout_seconds is not None:
                 return OpenCodeProvider(call_timeout_seconds=self._call_timeout_seconds)
             return OpenCodeProvider()
+        if name == "codex":
+            from .codex import CodexProvider
+
+            if self._call_timeout_seconds is not None:
+                return CodexProvider(call_timeout_seconds=self._call_timeout_seconds)
+            return CodexProvider()
         raise LLMError(f"Unknown provider '{name}'. Register it explicitly or use a built-in.")
 
     def close_all(self) -> None:

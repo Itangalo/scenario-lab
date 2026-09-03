@@ -6,6 +6,7 @@ from .anthropic import AnthropicProvider
 from .openrouter import OpenRouterProvider
 from .openai_compatible import OpenAICompatibleProvider
 from .opencode import OpenCodeProvider
+from .codex import CodexProvider
 
 __all__ = [
     "LLMProvider",
@@ -14,4 +15,5 @@ __all__ = [
     "OpenRouterProvider",
     "OpenAICompatibleProvider",
     "OpenCodeProvider",
+    "CodexProvider",
 ]

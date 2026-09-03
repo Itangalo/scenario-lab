@@ -60,6 +60,8 @@ Then add your API key(s) to `.env`. At least one of the following is required:
 
 Alternatively, no API key is needed if you route through OpenCode (`opencode:<providerID>/<modelID>`, as listed by `opencode models`), which uses whatever is authenticated via `opencode auth login`. The provider spawns its own `opencode serve` in an isolated working directory; set `OPENCODE_SERVER_URL` to attach to a running server instead. Note that per-call `temperature`/`max_tokens` are then owned by the OpenCode model configuration.
 
+A ChatGPT subscription can be used natively via the `codex` provider (`codex:gpt-5.6-sol`), which reads the Codex CLI credential store (`~/.codex/auth.json`, created by `codex login`) and refreshes OAuth tokens as needed. Sampling settings are owned by the Codex side.
+
 Models are specified in `scenario.yaml` as `provider:model`, for example `openrouter:qwen/qwen3-235b-a22b-2507` or `anthropic:claude-sonnet-4-6`.
 
 The events step can use provider-native structured outputs via `llm.structured_outputs` in `scenario.yaml` (`auto` | `true` | `false`, default `auto`). With `auto`, models that support structured output return schema-validated event JSON directly; unsupported models fall back automatically to the regular JSON parsing path. Use `true` to require structured output (hard error if unsupported) or `false` to disable it.
