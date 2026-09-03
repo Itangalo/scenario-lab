@@ -11,6 +11,12 @@ When helping create a new scenario from scratch, use:
 
 Claude Code has two skills covering this pipeline: `frame-scenario` (rough topic to approved research question, then a provenance-tagged information bank) and `create-scenario` (information bank to validated, smoke-tested scenario files). Start with the former when the user has a question, the latter when they already have material.
 
+## Where the work is going
+
+`scenarios/europe-2032` is the active scenario and it is being built toward one thing: the interactive story defined in `scenarios/europe-2032/story/README.md`. Read [ROADMAP.md](ROADMAP.md) before proposing work on it. The phase order there is binding rather than tidy — the story tree takes about eight hours to generate and every turn is produced under whatever metric rules are current, so a rule change afterwards invalidates what came before it. That has already cost one branch.
+
+`HANDOFF.md` says where the last session stopped.
+
 ## Critical Ground Truth
 
 Before proposing or implementing any change to system behavior, you must read:

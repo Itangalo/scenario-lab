@@ -24,7 +24,7 @@ Once phase 1 closes, everything simulated before it is built on superseded physi
 - **Archive, don't delete.** `runs/` is gitignored and has been cleared twice already; findings survive only because they are written into `scenarios/europe-2032/design-notes.md`. Before wiping, check that anything worth keeping is in that file.
 - **`story/turn-01/` survives.** This was checked rather than assumed: the actor prompt never renders `metric_rules`, so none of the rule changes since turn-01 was drawn on 2026-08-31 could have altered the draw. What *did* change is two metric descriptions in `metrics.md` — `eu_political_capital` and `public_sentiment` each gained a sentence about sentiment feeding capital — which do reach the actor. That is a downstream mechanic, not a turn-1 consideration, and the pool split on measure category (28 of 30 in category 6) is very unlikely to move on it.
   - **Cheap check before trusting that:** draw 10 actor-only turn-1 responses under the current prompt and compare the category split against the recorded 28/2. Minutes, and about $0.01. If it holds, keep `opening.md` and both option files unchanged.
-- **`story/branch-A1/` and the `turn-0[2-5]-A1/` directories must be rebuilt.** Built 2026-09-01 as a pilot, before the sovereignty accounting fix, the rule 5 no-floor clause and both rule 2 changes. Its turns resolve under physics that no longer exists.
+- ~~**`story/branch-A1/` and the `turn-0[2-5]-A1/` directories must be rebuilt.**~~ Removed 2026-09-03: built as a pilot on 2026-09-01, before the sovereignty accounting fix, rule 5's no-floor clause and both rule 2 changes, so its turns resolved under physics that no longer exists. In git history at `a7b5a3e` if the prose is wanted; the numbers are not.
 - **The pinned turn-1 base runs must be regenerated per arm** (`pin-turn-1.py`), for the same reason: turn 1's *resolution* uses the metric rules even though its *actor response* does not.
 
 ## Phase 3 – the runs
@@ -67,7 +67,7 @@ Measured on the 36-run batch of 2026-09-02/03, not estimated:
 
 ## Resuming this in a new session
 
-1. Read this file, then `HANDOFF.md` for where the last session stopped.
+1. Read this file, then `HANDOFF.md` for where the last session stopped. `AGENTS.md` points here, which is the only mechanism needed — this does not belong in anyone's memory, because the repo is where it can be read by everyone and versioned alongside what it describes.
 2. `git log --oneline -15` — commit messages here carry the reasoning and the numbers, deliberately.
 3. Check which phase is open. If phase 1: the criteria above are the checklist. If phase 3: `story/README.md` and the branch logs say what is built.
 4. Before believing any measurement, check the instrument. `scripts/check_sovereignty.py` reported three different wrong answers on 2026-09-02/03 before its parser was right, and each wrong answer looked exactly as authoritative as the correct one.
