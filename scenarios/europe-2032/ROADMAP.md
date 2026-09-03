@@ -18,6 +18,8 @@ The gate for this phase is that the physics works well enough to have credible r
 
 Deliberately *not* gates: Exact arithmetic correctness, rare occasions of mechanics malfunctioning (less than one in ten).
 
+**Open on 2026-09-03, waiting on one batch.** Two changes were made to the remaining gate and neither is measured yet: rule 5 gained a third term so an event that takes away or secures access to capacity can reach `eu_ai_sovereignty`, and constitutional invariant 2 was bound to the two metrics it names, having been applied to sovereignty and reverting 64% of the falls it objected to. Six acceleration runs of 13 turns, seeds 10002–10007, are the measurement: does sovereignty now move, and does it move so far that it sits on its floor instead. Both are failures; the metric has to end somewhere in between. `scripts/check_sovereignty.py` reads the first and `scripts/check_events.py --effects` the second.
+
 ## Phase 2 – clear the ground
 
 Once phase 1 closes, everything simulated before it is built on superseded physics.
@@ -61,7 +63,7 @@ Measured on the 36-run batch of 2026-09-02/03, not estimated:
 
 - **$0.0069 per turn-execution; $0.090 per 13-turn run.** By step: events $1.62 of $3.24, then metrics $0.54, actor $0.46, referee $0.53 combined.
 - **3.4 turn-executions per minute at 12 concurrent.** Throughput is roughly flat in concurrency above about 8, so it is an API-side limit; more parallelism buys little.
-- **Seeds are never reused, across branches or arms** — event-profile overlap at a shared seed is 0.625 against 0.210. Blocks used: 5101–5330, 5401–5834, 6101–6302, 7101–7312, 7401–7604, 7701–7904, 8001–8002, 8101–8504, 9101–9504. **Start at 10001.**
+- **Seeds are never reused, across branches or arms** — event-profile overlap at a shared seed is 0.625 against 0.210. Blocks used: 5101–5330, 5401–5834, 6101–6302, 7101–7312, 7401–7604, 7701–7904, 8001–8002, 8101–8504, 9101–9504, 10001–10007. **Start at 10101.**
 - **The harness kills background tasks at about 30 minutes.** Long batches go in a terminal tab or `nohup`, wrapped in `caffeinate -dimsu`, on mains power — `caffeinate -s` is ignored on battery and nothing stops clamshell sleep there.
 - **Watch artefact files, not stdout.** Python block-buffers when redirected; `turn-XX/4-metrics.json` appearing is the reliable progress signal.
 
