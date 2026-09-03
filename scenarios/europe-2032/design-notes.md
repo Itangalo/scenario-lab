@@ -168,3 +168,26 @@ Two phase 1 gates ask whether events trigger correctly and whether the list is b
 **Being named in the rules is not what decides it.** Median largest movement is 2.2 for the eight events the metric rules name and 1.5 for the 24 they do not, and the largest single mover in the corpus (`medical_breakthrough`, +4.6 on sentiment, n=5) is unnamed. The Game Master prices an unnamed event from its description perfectly well. It does not price one whose only plausible target is a metric the rules have closed.
 
 **What this leaves open.** Whether events should reach sovereignty at all is a design decision, not a defect to fix silently: the metric was deliberately made hard to move, and the 2026-09-02 work establishes that its accounting only started binding once it was tightened. The choice is between a third term in rule 5 for events that directly remove or secure the Union's access to capacity, and accepting that sovereignty is a stock that only the Union's own finished measures move — in which case `rq_sovereignty_and_agency` should stop listing five events that cannot affect its metrics.
+
+## The floor at 22 was the referee, not the Game Master (ECHO 2026-09-03)
+
+The 2026-09-02 notes record runs writing `net unchanged due to floor at 22.0` and conclude that the Game Master was inventing a bound that does not exist. Rule 5 was given a no-floor clause, and the sentence kept appearing. It was not an invention. It was a description of what the constitutional referee was about to do.
+
+Constitutional invariant 2 reads "Capability is accumulated and does not fall" and names `ai_capability` and `openweight_capability`. The referee has been applying it to `eu_ai_sovereignty`, in as many words: on `run-20260903-121626` turn 3 it wrote "Invariant 2 violated: `eu_ai_sovereignty` decreased from 22.0 to 20.0 despite no narrative or notepad indication of catastrophic physical destruction of the compute base ... Sovereignty may stagnate or grow slowly, but cannot fall absent this extreme condition." The turn was corrected and approved, and the metric ended at 22.0.
+
+Measured over 1421 turns of the 2026-09-02 and 09-03 corpus, on the 326 turns whose `SOVEREIGNTY:` line states a fall:
+
+| the referee | turns | metric did not move at all |
+|---|---|---|
+| objected to the fall | 185 | 118 (**64%**) |
+| said nothing of it | 141 | 28 (20%) |
+
+The asymmetry runs the other way for rises: a line stating a rise ends with the metric unmoved in 17% of turns, against 39% for a line stating a fall. A referee that objects to a fall is three times as likely to see it cancelled as one that does not.
+
+**This is the best available explanation for a metric that does not move on any arm.** The 36-run batch put sovereignty at 23.2 / 27.7 / 31.5 at turn 13 from a start of 22, and crossing rule 6's gate at 40 in 4 of 36 runs. Rule 5's decay was added deliberately so that a fast frontier erodes the estate; a bound at the starting value cancels the decay every time it bites, which turns a metric with two signed terms into a ratchet that can only rise.
+
+It also revises a conclusion in the notes above. The 2026-09-02 finding that the sovereignty line binds in 68% of turns was measured against a metric whose falls were being reverted downstream of the line, so part of the residual non-binding was never the line's fault at all.
+
+**Invariant 2 now names its two metrics in its heading and states in full that it reaches no other**, with sovereignty spelled out, since a heading reading "does not fall" is what a model matches against. The three prohibitions that failed on 2026-09-02 were prohibitions on a saturated step; this is a scope correction on a check that was reading its own remit too widely, which is a different instrument.
+
+**Not yet measured:** whether the correction lets sovereignty move, and whether rule 5's new event term together with an unblocked decay drives the metric to its floor instead. A metric on its stop carries no information either way.
