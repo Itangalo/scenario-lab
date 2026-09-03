@@ -361,6 +361,15 @@ function showTip(ev, run, turn) {
   } else {
     html += "<br><br>No events triggered.";
   }
+  if (t) {
+    const pf = (t.portfolio || []).filter(p => p.finished || p.finish === turn);
+    const ip = (t.portfolio || []).filter(p => !p.finished && p.finish !== turn);
+    const bit = (label, val) => val ? `<br><b>${label}:</b> ${val}` : "";
+    html += bit("New measure", t.new_measure) + bit("Priority", t.priority);
+    if (pf.length) html += "<br><b>Finished:</b><br>" + pf.map(p => `• ${p.name} (cat ${p.category})`).join("<br>");
+    if (ip.length) html += "<br><b>In flight:</b><br>" + ip.map(p => `• ${p.name} (cat ${p.category}, finishes T${p.finish})`).join("<br>");
+    if ((t.cancelled || []).length) html += "<br><b>Cancelled:</b><br>" + t.cancelled.map(c => `• ${c.name}`).join("<br>");
+  }
   tip.innerHTML = html;
   tip.style.display = "block";
   tip.style.left = (ev.pageX + 14) + "px";
