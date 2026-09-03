@@ -54,11 +54,12 @@
 <div class="panel">
   <h2>Metric evolution</h2>
   <div class="row">
-    <div><label for="chartMetric">Metric</label><select id="chartMetric"></select></div>
-    <div><label><input type="checkbox" id="armMedians" checked> per-arm medians</label></div>
-    <div><label><input type="checkbox" id="showAll"> faint lines for all filtered runs</label></div>
+    <div><label>Metrics (toggle)</label><span id="metricToggles"></span></div>
+    <div><label for="bandMetric">Bands for</label><select id="bandMetric"></select></div>
+    <div><label><input type="checkbox" id="armMedians" checked> per-arm medians (band metric)</label></div>
+    <div><label><input type="checkbox" id="showAll"> faint lines for all filtered runs (band metric)</label></div>
   </div>
-  <div class="legend">Band: p10–p90 · darker band: p25–p75 · solid line: median</div>
+  <div class="legend">Band: p10–p90 · darker band: p25–p75 · solid lines: medians (one color per metric)</div>
   <svg id="chart" viewBox="0 0 960 420" role="img"></svg>
   <div id="tooltip"></div>
 </div>
@@ -99,6 +100,13 @@ function armColor(arm) {
   return `hsl(${h},55%,42%)`;
 }
 
+const PALETTE = ["#1f77b4", "#d62728", "#2ca02c", "#9467bd", "#ff7f0e", "#8c564b", "#e377c2", "#17becf"];
+function metricColor(metric) {
+  let h = 0;
+  for (const c of metric) h = (h * 33 + c.codePointAt(0)) % 997;
+  return PALETTE[h % PALETTE.length];
+}
+
 const byId = Object.fromEntries(DATA.runs.map(r => [r.id, r]));
 const eventDesc = Object.fromEntries(DATA.events.map(e => [e.id, e.description || ""]));
 const metricIds = DATA.metrics.length ? DATA.metrics.map(m => m.id)
@@ -121,7 +129,8 @@ const state = {
   since: "", until: "",
   spanMetric: "", spanMin: "", spanMax: "",
   eventId: "", eventMin: 1,
-  chartMetric: metricIds[0],
+  chartMetrics: [...metricIds],
+  bandMetric: metricIds[0],
   armMedians: true, showAll: false,
   dial: 0,
 };
@@ -164,11 +173,8 @@ function pathFor(pts) {
   return pts.map((p, i) => `${i ? "L" : "M"}${p[0].toFixed(1)},${p[1].toFixed(1)}`).join(" ");
 }
 
-function render() {
-  const runs = filteredRuns();
-  const metric = state.chartMetric;
-  const maxTurn = Math.max(1, ...runs.map(r => r.turns.length));
-  // per-turn value columns
+function colFor(runs, metric, maxTurn) {
+  // per-turn sorted value columns for one metric
   const cols = [];
   for (let t = 1; t <= maxTurn; t++) {
     const vals = [];
@@ -179,11 +185,26 @@ function render() {
     vals.sort((a, b) => a - b);
     cols.push(vals);
   }
-  const def = metricDef[metric] || {};
-  let ymin = def.min, ymax = def.max;
-  if (ymin === undefined || ymax === undefined || ymin === null || ymax === null) {
-    const all = cols.flat();
-    ymin = Math.min(...all); ymax = Math.max(...all);
+  return cols;
+}
+
+function render() {
+  const runs = filteredRuns();
+  const enabled = state.chartMetrics.filter(m => metricIds.includes(m));
+  const bandM = enabled.includes(state.bandMetric) ? state.bandMetric : enabled[0];
+  const maxTurn = Math.max(1, ...runs.map(r => r.turns.length));
+  const colsByMetric = Object.fromEntries(enabled.map(m => [m, colFor(runs, m, maxTurn)]));
+  // one shared scale across enabled metrics
+  let ymin = Infinity, ymax = -Infinity;
+  for (const m of enabled) {
+    const def = metricDef[m] || {};
+    if (def.min !== undefined && def.min !== null) ymin = Math.min(ymin, def.min);
+    if (def.max !== undefined && def.max !== null) ymax = Math.max(ymax, def.max);
+  }
+  if (!(ymax > ymin)) {
+    const all = enabled.flatMap(m => colsByMetric[m].flat());
+    if (all.length) { ymin = Math.min(...all); ymax = Math.max(...all); }
+    else { ymin = 0; ymax = 1; }
   }
   if (!(ymax > ymin)) { ymax = ymin + 1; }
   const pad = (ymax - ymin) * 0.05;
@@ -208,7 +229,7 @@ function render() {
     el("line", {x1: ML, y1: Y(v), x2: W - MR, y2: Y(v), stroke: "#eee"}, svg);
   }
 
-  function band(qlo, qhi, fill, opacity) {
+  function band(cols, qlo, qhi, fill, opacity) {
     const top = [], bot = [];
     cols.forEach((vals, i) => {
       if (!vals.length) return;
@@ -219,53 +240,61 @@ function render() {
     el("path", {d: pathFor(top) + " " + pathFor(bot.reverse()).replace(/^M/, "L") + " Z",
                 fill, opacity, stroke: "none"}, svg);
   }
-  if (runs.length) {
-    band(0.10, 0.90, "#7aa7d9", 0.25);
-    band(0.25, 0.75, "#3d7ab8", 0.35);
+  if (runs.length && bandM) {
+    const cols = colsByMetric[bandM];
+    band(cols, 0.10, 0.90, "#7aa7d9", 0.22);
+    band(cols, 0.25, 0.75, "#3d7ab8", 0.32);
+  }
+  // one median line per enabled metric, in its color
+  for (const m of enabled) {
     const med = [];
-    cols.forEach((vals, i) => { if (vals.length) med.push([X(i + 1), Y(quantile(vals, 0.5))]); });
-    if (med.length > 1) el("path", {d: pathFor(med), fill: "none", stroke: "#123a63", "stroke-width": 2.5}, svg);
+    colsByMetric[m].forEach((vals, i) => { if (vals.length) med.push([X(i + 1), Y(quantile(vals, 0.5))]); });
+    if (med.length > 1) el("path", {d: pathFor(med), fill: "none", stroke: metricColor(m), "stroke-width": 2}, svg);
   }
 
-  // per-arm medians
-  if (state.armMedians) {
+  // per-arm medians + faint lines track the band metric only
+  if (state.armMedians && bandM) {
     const arms = [...new Set(runs.map(r => r.arm))];
     for (const arm of arms) {
       const pts = [];
       for (let t = 1; t <= maxTurn; t++) {
         const vals = runs.filter(r => r.arm === arm)
-          .map(r => r.series[metric]).filter(s => s && s.length >= t).map(s => s[t - 1])
+          .map(r => r.series[bandM]).filter(s => s && s.length >= t).map(s => s[t - 1])
           .filter(v => typeof v === "number").sort((a, b) => a - b);
         if (vals.length) pts.push([X(t), Y(quantile(vals, 0.5))]);
       }
       if (pts.length > 1) {
         const p = el("path", {d: pathFor(pts), fill: "none", stroke: armColor(arm),
                               "stroke-width": 1.5, "stroke-dasharray": "6,3"}, svg);
-        p.appendChild(Object.assign(document.createElementNS(SVGNS, "title"), {})).textContent = arm + " median";
+        p.appendChild(Object.assign(document.createElementNS(SVGNS, "title"), {})).textContent = arm + " median (" + bandM + ")";
       }
     }
   }
 
   // faint all-run lines
-  if (state.showAll) {
+  if (state.showAll && bandM) {
     for (const r of runs) {
-      const s = r.series[metric] || [];
+      const s = r.series[bandM] || [];
       const pts = s.map((v, i) => (typeof v === "number" ? [X(i + 1), Y(v)] : null)).filter(Boolean);
       if (pts.length > 1) el("path", {d: pathFor(pts), fill: "none", stroke: "#999", "stroke-width": 1, opacity: 0.35}, svg);
     }
   }
 
-  // dial overlay
+  // dial overlay: the selected run, all enabled metrics, thicker lines
   const dialRun = runs[Math.min(state.dial, Math.max(0, runs.length - 1))];
   if (dialRun) {
-    const s = dialRun.series[metric] || [];
-    const pts = s.map((v, i) => (typeof v === "number" ? [X(i + 1), Y(v)] : null)).filter(Boolean);
-    if (pts.length > 1) el("path", {d: pathFor(pts), fill: "none", stroke: "#d93d3d", "stroke-width": 2.5}, svg);
-    s.forEach((v, i) => {
+    for (const m of enabled) {
+      const s = dialRun.series[m] || [];
+      const pts = s.map((v, i) => (typeof v === "number" ? [X(i + 1), Y(v)] : null)).filter(Boolean);
+      if (pts.length > 1) el("path", {d: pathFor(pts), fill: "none", stroke: metricColor(m), "stroke-width": 3.5, opacity: 0.85}, svg);
+    }
+    const hoverM = bandM || enabled[0];
+    const hs = (dialRun.series[hoverM] || []);
+    hs.forEach((v, i) => {
       if (typeof v !== "number") return;
       const c = el("circle", {cx: X(i + 1), cy: Y(v), r: 5, fill: "#d93d3d", opacity: 0.9}, svg);
       c.style.cursor = "pointer";
-      c.addEventListener("mousemove", ev => showTip(ev, dialRun, i + 1, metric));
+      c.addEventListener("mousemove", ev => showTip(ev, dialRun, i + 1));
       c.addEventListener("mouseleave", hideTip);
     });
   }
@@ -284,10 +313,12 @@ function render() {
   renderTable(runs);
 }
 
-function showTip(ev, run, turn, metric) {
+function showTip(ev, run, turn) {
   const t = run.turns.find(t => t.turn === turn);
   const tip = $("tooltip");
-  let html = `<b>${run.id} · turn ${turn}</b><br>${metric}: ${t ? t.metrics[metric] : "–"}`;
+  const enabled = state.chartMetrics.filter(m => metricIds.includes(m));
+  let html = `<b>${run.id} · turn ${turn}</b>`;
+  if (t) html += "<br>" + enabled.map(m => `${m}: ${t.metrics[m]}`).join("<br>");
   if (t && t.events.length) {
     html += "<br><br><b>Triggered:</b><br>" + t.events.map(e =>
       `• ${e}${eventDesc[e] ? " — " + eventDesc[e] : ""}`).join("<br>");
@@ -370,12 +401,33 @@ function init() {
     state.eventMin = Math.max(1, +$("eventMin").value || 1); state.dial = 0; render();
   });
 
-  const cm = $("chartMetric");
+  const toggles = $("metricToggles");
   metricIds.forEach(m => {
-    const o = document.createElement("option"); o.value = m; o.textContent = m; cm.appendChild(o);
+    const lab = document.createElement("label");
+    const cb = document.createElement("input");
+    cb.type = "checkbox"; cb.checked = true; cb.value = m;
+    cb.addEventListener("change", () => {
+      state.chartMetrics = [...toggles.querySelectorAll("input:checked")].map(c => c.value);
+      if (!state.chartMetrics.includes(state.bandMetric) && state.chartMetrics.length) {
+        state.bandMetric = state.chartMetrics[0];
+        $("bandMetric").value = state.bandMetric;
+      }
+      state.dial = 0; render();
+    });
+    lab.appendChild(cb);
+    const sw = document.createElement("span");
+    sw.className = "swatch"; sw.style.background = metricColor(m);
+    lab.appendChild(sw);
+    lab.appendChild(document.createTextNode(m));
+    lab.style.marginRight = "10px";
+    toggles.appendChild(lab);
   });
-  cm.value = state.chartMetric;
-  cm.addEventListener("change", () => { state.chartMetric = cm.value; render(); });
+  const bm = $("bandMetric");
+  metricIds.forEach(m => {
+    const o = document.createElement("option"); o.value = m; o.textContent = m; bm.appendChild(o);
+  });
+  bm.value = state.bandMetric;
+  bm.addEventListener("change", () => { state.bandMetric = bm.value; render(); });
   $("armMedians").addEventListener("change", () => { state.armMedians = $("armMedians").checked; render(); });
   $("showAll").addEventListener("change", () => { state.showAll = $("showAll").checked; render(); });
 
