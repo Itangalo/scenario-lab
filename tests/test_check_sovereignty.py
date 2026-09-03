@@ -230,3 +230,18 @@ def test_a_fall_is_legal_because_rule_5_has_no_floor():
         after=18.0,
     )
     assert check.legal is True
+
+
+def test_capacity_events_are_extracted_from_a_line():
+    """Rule 5's third term pays once, so the ids it names have to be readable."""
+    names = check_sovereignty.capacity_events(
+        "SOVEREIGNTY: 22 last turn, eu_frontier_access_denied t3 −2, "
+        "capability rose 2.5 −1 = 19"
+    )
+    assert names == ["eu_frontier_access_denied"]
+
+
+def test_a_line_naming_no_capacity_event_yields_none():
+    assert check_sovereignty.capacity_events(
+        "SOVEREIGNTY: 22 last turn, Gigafactories in flight +1 = 23"
+    ) == []

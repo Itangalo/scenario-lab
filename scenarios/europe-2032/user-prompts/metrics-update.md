@@ -74,15 +74,17 @@ The "Emerging developments (tracked)" section lists developments that recent tur
 
    - a category 4 measure **in the turn its stated finishing turn is reached**: +3 to +6, that turn and no other. Two finishing in the same turn each pay in full.
    - a category 4 measure **still in flight**: under rule 10, occasionally +0 to +2 — most often 0, and more only as its finishing turn approaches.
-   - **an event this turn that took away or secured access to capacity itself**: −1 to −3, or +1 to +3 where it secured. One such term at most, the largest where several events qualify, and the line names the event it came from. Rule 5 says which events these are and how to size one; an event that pressured, threatened or embarrassed the Union without reaching its capacity is not this term and gets nothing here.
+   - **an event this turn that took away or secured access to capacity itself**: −1 to −3, or +1 to +3 where it secured. One such term at most, the largest where several events qualify. Rule 5 says which events these are and how to size one; an event that pressured, threatened or embarrassed the Union without reaching its capacity is not this term and gets nothing here.
 
    Against them, `ai_capability` rising at least 2 this turn costs −1.
 
    Write one line in the Notepad that starts from last turn's figure, names every term, and ends at this turn's:
 
-   `SOVEREIGNTY: 31 last turn, Sovereign Compute Corridor finishes t6 +5, Gigafactories in flight +1, eu_frontier_access_denied −2, capability rose 2.5 −1 = 34`
+   `SOVEREIGNTY: 31 last turn, Sovereign Compute Corridor finishes t6 +5, Gigafactories in flight +1, eu_frontier_access_denied t6 −2, capability rose 2.5 −1 = 34`
 
    **The number after the `=` is what you write for `eu_ai_sovereignty` in the Metrics JSON** — the same number, not one near it and not one you reached another way. There is nothing left to judge once the line is written. Nothing outside rule 5 is a term: momentum, institutional follow-through, prior delivery, floors and rounding are not terms, and a line that reaches a total and then appends `→ net +1` has thrown away its own arithmetic.
+
+   **An event names the turn it fired, and that turn is this one.** Write `eu_frontier_access_denied t6 −2`, and only when the turn is 6. An event pays once, in the turn it happens, and is then gone from this line however long the world goes on dealing with it — a plant that is still shut, a supplier that has not come back, a member state that has not returned to the line. Those are consequences of a charge already made, not a charge to make again.
 
    **A completion names the turn it finishes, and that turn is this one.** Write `finishes t7 +5`, and only when the turn is 7. Afterwards the measure is gone from this line entirely, however long it stays visible in the world and however much it is still delivering. **This line is never copied forward.** Recompute it from the portfolio every turn: in a batch of twelve, nine runs paid one measure's completion in two or more turns, one of them for six turns running on a line reproduced word for word while the narrative beside it said the money had already been paid.
 

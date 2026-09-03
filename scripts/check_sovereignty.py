@@ -52,7 +52,7 @@ LEGAL_WITHOUT_COMPLETION = 2.0
 # The ids are rule 5's own list; an emergent event may do the same thing, and
 # rule 5 says it counts the same.
 CAPACITY_EVENTS = re.compile(
-    r"\b(?:eu_frontier_access_denied|supply_chain_coercion|export_control_escalation"
+    r"\b(eu_frontier_access_denied|supply_chain_coercion|export_control_escalation"
     r"|member_state_defection|eu_access_secured|emergent_\w+)\b"
 )
 LEGAL_WITH_CAPACITY_EVENT = 3.0
@@ -217,6 +217,17 @@ def completions(line: str) -> list[str]:
     return names
 
 
+def capacity_events(line: str) -> list[str]:
+    """The rule 5 capacity-event ids a line names.
+
+    Rule 5's third term is paid in the turn its event fires and in no other, so
+    an id appearing on two turns of a run is the same repeat-charge that
+    completions were found making: the figure no longer persists in the rules,
+    but the sentence persists in the notepad.
+    """
+    return sorted(set(CAPACITY_EVENTS.findall(line))) if line else []
+
+
 def same_measure(a: str, b: str) -> bool:
     """Whether two credited names are the same measure.
 
@@ -375,6 +386,25 @@ def summarise(label: str, checks: list[TurnCheck], detail: bool) -> None:
         if detail:
             for run, name, turns in repeats:
                 print(f"    {run}: {name} paid on turns {', '.join(str(t) for t in turns)}")
+
+    event_repeats: list[tuple[str, str, list[int]]] = []
+    event_charges = 0
+    for run in runs:
+        seen: dict[str, list[int]] = {}
+        for c in (c for c in checks if c.run == run):
+            for event_id in capacity_events(c.line or ""):
+                seen.setdefault(event_id, []).append(c.turn)
+                event_charges += 1
+        event_repeats.extend((run, name, turns) for name, turns in seen.items() if len(turns) > 1)
+    if event_charges:
+        affected = len({run for run, _, _ in event_repeats})
+        print(
+            f"\n  rule 5 capacity events named: {event_charges}; "
+            f"charged in more than one turn: {len(event_repeats)} in {affected} of {len(runs)} run(s)"
+        )
+        if detail:
+            for run, name, turns in event_repeats:
+                print(f"    {run}: {name} charged on turns {', '.join(str(t) for t in turns)}")
 
     illegal = [c for c in legality if c.legal is False]
     if illegal:
