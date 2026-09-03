@@ -106,3 +106,36 @@ Every difference sits inside one standard error, and both habits the clauses tar
 **The distinction worth keeping.** Step 3d worked when it changed the shape of the computation — the line now runs from a figure to a figure, and the figure it ends at is the metric. These two clauses only told the Game Master to stop doing things, on a step that already carries five numbered rules and four required output lines. Prohibition is not the same instrument as reformulation, and this step appears to be saturated with the first.
 
 Whether the residual −4 drift can be removed at all is open. It would need a 13-turn batch to measure, because at eight turns the drift is mean −2.3 and negative in only four runs of eight, against −3.8 and seven of eight over the full thirteen.
+
+## Open weights were pinned, and the event that should move them is inert (ECHO 2026-09-03)
+
+Found by looking at the 36-run batch rather than by suspecting it: `openweight_capability` ended at 46.5 under acceleration while `ai_capability` ended at 92.9, a 46-point gap no rule intended.
+
+Rule 2 said the metric "should normally be set between old value and last turn's value of `ai_capability`". The bottom of that range is the old value, so leaving the metric where it stood was legal every turn, and nothing selected within the range. Across all 36 runs the Game Master used **0–8% of the available headroom** per turn, in every arm. The rule was being obeyed exactly, and obeying it meant standing still.
+
+**What it was costing was the proliferation half of the event catalogue.** Several events key off open-weight thresholds — `cyber_major_incident`'s gate opens at 55 and gains 8 points above 65, `bio_uplift_findings` gains 6 above 55, `election_voided` 5 above 60. Across 36 runs the metric reached 55 in one run, and 60 and 65 in none. The dice were being rolled at odds that could not occur.
+
+Rule 2 now sets the metric around the midpoint of its old value and last turn's capability. Four acceleration runs against the twelve from the same night:
+
+| | before | after |
+|---|---|---|
+| headroom used per turn | 1–8% | 16–27% |
+| `openweight_capability` at turn 13 | 46.5 | 72.1 |
+| gap to `ai_capability` | 46.5 | 20.4 |
+| runs ever reaching 55 / 60 / 65 | 1 / 0 / 0 of 12 | 4 / 4 / 4 of 4 |
+
+The midpoint behaves as a proportional controller: it closes a fifth to a quarter of the gap a turn while capability keeps moving, so the two converge to a stable separation of about 20 rather than meeting. That separation is now a modelled quantity instead of an artefact of a rule's floor.
+
+**The event is a separate failure and is not fixed.** `openweight_frontier_release` was to make the metric "jump to at most 5 below `ai_capability` at a stroke" — read as a ceiling, not a destination. It fired 32 times across the 36-run batch and landed in its band **none** of them; after the midpoint change it fired 7 times in 4 runs and landed in the band **none** of them, the resulting gap improving only because the floor beneath it had risen. That bullet has been folded into the midpoint clause as "higher if `openweight_frontier_release` just occurred", which removes a line that did no work but states a direction where the old one stated a number:
+
+| | release turns | ordinary turns |
+|---|---|---|
+| original rule | rise 5.00 (n=3) | 0.39 |
+| midpoint + the old bullet | 3.21 (n=7) | 2.70 |
+| folded | 2.90 (n=5) | 2.45 |
+
+An event whose description calls it irreversible — "on private hardware permanently and beyond recall" — now moves the metric 1.2× what an uneventful turn does, against 13× under the original rule. The trend is fixed and the shock is not. Accepted deliberately for now.
+
+**The untested version, if this is revisited:** a destination inside the clause that already moves, rather than a direction — "set around the midpoint; in the turn `openweight_frontier_release` occurs, set it instead to 5–10 below `ai_capability`." One bullet, one reading, but a number in it.
+
+**Where the right sentence was the whole time.** `events.md` states the intent unambiguously in that event's Description, and the sign-off coverage table has marked that heading **NO** for as long as it has existed: only `Condition:` and `Probability:` are rendered into the events prompt. The correct instruction was written, reviewed, and never sent to anything.
