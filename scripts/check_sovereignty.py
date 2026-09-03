@@ -217,15 +217,45 @@ def completions(line: str) -> list[str]:
     return names
 
 
-def capacity_events(line: str) -> list[str]:
-    """The rule 5 capacity-event ids a line names.
+def capacity_charges(line: str) -> list[tuple[str, int | None, float]]:
+    """The rule 5 capacity-event charges a line actually makes.
 
-    Rule 5's third term is paid in the turn its event fires and in no other, so
-    an id appearing on two turns of a run is the same repeat-charge that
-    completions were found making: the figure no longer persists in the rules,
-    but the sentence persists in the notepad.
+    Naming an event is not charging for it. The Game Master writes
+    `eu_frontier_access_denied ongoing (no repeat charge)` in a turn where it
+    correctly declines to pay again, and counting that as a charge reports the
+    rule working as the rule failing. A charge is a mention that carries a
+    signed number in the same term, where terms are separated by commas.
+
+    Returns (event_id, turn tag or None, amount) per charge. The tag is what
+    rule 5 asks for -- `eu_frontier_access_denied t6 -2` -- and is absent when
+    the line names the event without one.
     """
-    return sorted(set(CAPACITY_EVENTS.findall(line))) if line else []
+    charges: list[tuple[str, int | None, float]] = []
+    if not line:
+        return charges
+    for segment in line.split(","):
+        match = CAPACITY_EVENTS.search(segment)
+        if not match:
+            continue
+        event_id = match.group(1)
+        tag_match = re.search(rf"{re.escape(event_id)}\s*t(\d+)", segment)
+        tag = int(tag_match.group(1)) if tag_match else None
+        # The amount is the last signed number in the segment, ignoring the
+        # turn tag itself.
+        body = segment[match.end():]
+        if tag_match:
+            body = segment[tag_match.end():]
+        numbers = NUMBER.findall(body)
+        signed = [(sign, digits) for sign, digits in numbers if sign]
+        if not signed:
+            continue
+        charges.append((event_id, tag, _to_float(*signed[-1])))
+    return charges
+
+
+def capacity_events(line: str) -> list[str]:
+    """The distinct capacity events a line charges for."""
+    return sorted({event_id for event_id, _, _ in capacity_charges(line)})
 
 
 def same_measure(a: str, b: str) -> bool:

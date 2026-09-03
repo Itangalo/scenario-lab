@@ -245,3 +245,34 @@ def test_a_line_naming_no_capacity_event_yields_none():
     assert check_sovereignty.capacity_events(
         "SOVEREIGNTY: 22 last turn, Gigafactories in flight +1 = 23"
     ) == []
+
+
+def test_naming_an_event_without_a_number_is_not_a_charge():
+    """The Game Master declining to re-charge must not read as re-charging.
+
+    Rule 5's term is paid in the turn the event fires. A line that names the
+    event to say it is *not* paying again is the rule working.
+    """
+    charges = check_sovereignty.capacity_charges(
+        "SOVEREIGNTY: 23.0 last turn, Gigafactories finishes t7 +5, "
+        "eu_frontier_access_denied ongoing (no repeat charge), "
+        "capability rose 3.0 −1 = 20.0"
+    )
+    assert charges == []
+
+
+def test_a_tagged_charge_yields_its_event_turn_and_amount():
+    charges = check_sovereignty.capacity_charges(
+        "SOVEREIGNTY: 24.0 last turn, Gigafactories in flight +1, "
+        "eu_frontier_access_denied t6 −2, capability rose 2.5 −1 = 23.0"
+    )
+    assert charges == [("eu_frontier_access_denied", 6, -2.0)]
+
+
+def test_an_untagged_charge_is_still_a_charge():
+    """Rule 5 asks for the turn; a charge without one still moved the metric."""
+    charges = check_sovereignty.capacity_charges(
+        "SOVEREIGNTY: 18.0 last turn, capability rose 4.0 −1, "
+        "member_state_defection (continued noncompliance) −2 = 15.0"
+    )
+    assert charges == [("member_state_defection", None, -2.0)]

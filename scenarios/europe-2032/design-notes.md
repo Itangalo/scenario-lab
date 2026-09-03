@@ -191,3 +191,30 @@ It also revises a conclusion in the notes above. The 2026-09-02 finding that the
 **Invariant 2 now names its two metrics in its heading and states in full that it reaches no other**, with sovereignty spelled out, since a heading reading "does not fall" is what a model matches against. The three prohibitions that failed on 2026-09-02 were prohibitions on a saturated step; this is a scope correction on a check that was reading its own remit too widely, which is a different instrument.
 
 **Not yet measured:** whether the correction lets sovereignty move, and whether rule 5's new event term together with an unblocked decay drives the metric to its floor instead. A metric on its stop carries no information either way.
+
+## What the referee was holding up, and what rule 5's new term actually charges (ECHO 2026-09-03)
+
+Six acceleration runs of 13 turns under the fixed invariant 2 and rule 5's third term, against the sixteen acceleration runs of the same day before either change.
+
+| turn 13, median | before (n=16) | after (n=6) | range after |
+|---|---|---|---|
+| `ai_capability` | 93.0 | 95.2 | 88–100 |
+| `openweight_capability` | 56.8 | 80.0 | 70–84 |
+| `ai_safety` | 1.0 | 5.0 | 0–12 |
+| `resilience` | 53.5 | 44.5 | 36–51 |
+| `eu_ai_sovereignty` | 25.0 | **18.5** | 0–31 |
+| `eu_political_capital` | 17.5 | **2.5** | 0–16 |
+| `public_sentiment` | 31.0 | **14.0** | 5–33 |
+
+**Sovereignty moves, which is what the change was for.** Of 13 stated falls in the first 18 turns, none was held flat, against a baseline of 39% overall and 64% when the referee objected. Final values run 0 to 31 from a start of 22, where the pre-fix batches sat between 23 and 25 with almost no spread. The line binds in 82% of turns against 68%.
+
+**The rest of the lower half went with it, and that was not the intended part.** Political capital falls from a median of 17.5 to 2.5, with four of six runs at or below 3, and sentiment from 31 to 14. The constitution edit did two things where the finding justified one: it scoped invariant 2 to the two metrics it names, which was the correction, and it added that every other metric is a stock that can be eroded and that falling is how they say so, which is a licence covering capital and sentiment as well. Whatever restraint the referee was applying to those two went with the sentence. Which part of the fall is the honest physics finally showing and which is a check stopping work it should have been doing is not established, and the minimal experiment is to keep the scope correction and drop the editorial.
+
+**Rule 5's third term is charged for events that did not happen.** Of 43 charges across the batch, 28 name an event that fired that turn and 15 do not — 35%. The 15 split two ways, and only one of them is copy-forward:
+
+- `member_state_defection` charged in turns 9 and 10 of one run for a firing in turns 5 and 6, untagged both times. That is the familiar sentence-persists failure.
+- `eu_access_secured t4 +3` charged in a turn whose events were `ai_investment_collapse`, `campaign_atlanticist` and `taiwan_tension_rise`. Correctly tagged with the current turn, for an event that never fired. The id is being borrowed to label something in the narrative that felt like it.
+
+The turn tag is written in 58% of charges and names the current turn in 23 of those 25, so the tag is being followed where it is used; it just does not answer the second failure, because a made-up event can carry a correct turn. The shape that would is a lookup rather than a judgement: the charge must name an id from *this turn's* event list, which the metrics prompt already renders in full, or say in the line that there was no capacity event.
+
+**One instrument correction, before any of these numbers are quoted.** The first reading said 39% of charges were stale. It counted every mention of an event id as a charge, including `eu_frontier_access_denied ongoing (no repeat charge)` — a turn where the Game Master was doing exactly what rule 5 asks. `capacity_charges` now requires a signed number in the same comma-separated term, so declining to pay is no longer recorded as paying.
