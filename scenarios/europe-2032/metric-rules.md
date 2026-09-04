@@ -27,7 +27,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
    - Category 6 measure covering a named class of harm, in the turn it finishes: +3 to +6, once
    - `ai_capability` rose and no category 6 measure is in force: −1 to −2
    - Category 9 measure broadening adoption, in the turn it finishes: −1 to −3, once
-   - The event `joint_threat_response`, in the turn it fires: +2 to +4, once
+   - The event `joint_threat_response`, in the turn it fires: +1 to +3, once
 
 5. **`eu_ai_sovereignty`**
    - Category 4 measure, in the turn it finishes: +3 to +6, once
@@ -92,6 +92,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
       - An event: either, and rarely by more than one
     - If `eu_political_capital` is below 20, the EU starts losing control of its own agenda:
       - **The named priority has no effect, and no cost.** Pull-in-by-one-turn does not apply, pushing a measure buys nothing, and the priority's −1 is not charged. Naming a priority changes nothing at all.
+    - If `eu_political_capital` is below 12, control slips further:
       - **A new measure may fail to start.** Judge it, roughly one turn in three. A measure that fails to start never enters the portfolio, costs nothing, and may be proposed again in a later turn. Say plainly in the narrative what blocked it — a member state withholding assent, a budget line refused, a legal base contested. The narrative must not announce that a line has been crossed.
     - A measure is finished when the current turn reaches Y.
       - Apply the full bonus from the measure

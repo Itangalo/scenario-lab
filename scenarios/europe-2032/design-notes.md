@@ -284,3 +284,17 @@ Three corpora, same instruments. Baseline: 15-run batch of 09-03 14:05. Trims: 6
 **Floors, decided by the numbers:** agency (capital ≥40) fails 18/18 with a max of 25 — dead, reset it. Absorption and legitimacy now discriminate across arms (P 5/6 and 5/6, V 3/6 and 4/6, A 3/6 and 2/6) and can stand. Proposed: agency ≥12 (fails all of A, passes the functioning P/V runs) — Johan's call.
 
 **Keep/discard:** keep. Nothing went slack — arms separate, A stays brutal where it should be (safety, capital), the election machinery is untouched at 18/18. Open before merge: whether resilience on A wants half a step back, and the agency floor value.
+
+## Resilience on acceleration: earned, overpaid, and mechanical (2026-09-04)
+
+Johan asked whether heavy category-6 investment explains the A-arm resilience finals (41, 46, 47, 64, 68, 73). Three layers, all present:
+
+- **Earned:** the 64-run carried four finished category-6 measures; the mid-40s runs carry zero to four with late finish dates. Investment and outcome visibly track.
+- **Overpaid:** the top two runs (68, 73) climb +2 to +3 per turn for ~10 straight turns on one finished cat-6 plus one or two joint responses — roughly twice what their attributable terms (finish bonuses once each, occasional +0..+2 in-flight) can explain. The notepad carries no per-term resilience accounting, so unlike sovereignty this cannot be audited turn by turn, only judged against the rule text. The joint term is the newest and least-earned contributor.
+- **Mechanical:** the 35→42 start bump pays +7 to every run regardless of play.
+
+Half step back, targeting the latter two and leaving earned investment intact: start 42→39, joint term +2..+4→+1..+3. If a resilience accounting line (sovereignty-line discipline for rule 4) is ever wanted, this is the evidence for it — but not now.
+
+## Rule 10 goes two-step (2026-09-04)
+
+Johan's proposal, supported: below 20 the named priority loses effect (can't steer, as before), but the fail-to-start risk now waits until below 12 (can't act). The old single threshold made 20 an absorbing edge — priority gone *and* starts failing is a death spiral, which is exactly the capital-0-to-19-everywhere pattern. The 12–20 band is impaired-but-functional, where comebacks stay possible, and 12 aligns with the proposed agency floor: below it the Union can't reliably start things, which is what "room to act" means. Kept in reserve: whether a softer trap lets capital recover often enough that the recalibrated floors need a second look.
