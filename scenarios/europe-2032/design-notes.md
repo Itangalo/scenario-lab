@@ -262,3 +262,25 @@ Johan's additions: the running batch jobs loaded their files at startup, so thes
 - **Two dark-gated positive events.** `joint_threat_response` (12%, only within 4 turns of a bio or major cyber incident: pooled attribution and response, +2 to +4 resilience once via a new rule-4 term) and `middle_power_coalition` (10%, only within 4 turns of a defection or while sovereignty is below 15: supply-chain coordination, +2 to +4 capital once via a new rule-6 line; its sovereignty effect needs no new rule, it counts as securing access under rule 5's existing event term). The coalition name fills a dangling reference: `campaign_atlanticist` already names it in its adder, though no such event existed.
 - **Emergent positivity line** in `user-prompts/events.md`: constructive wildcards proposed with the same honesty as threats, with three examples. The override replaces the default template, so the line had to go in the scenario file itself.
 - Deliberately not taken: repeat caps on cyber/loss-of-control (would fix the 5× run directly, but adds list-management prose the events step may or may not honor — kept in reserve), and touching the rule-10 capital trap (next if capital still collapses after the event softening).
+
+## What the softening measured (branch `soften-world`, 2026-09-04)
+
+Three corpora, same instruments. Baseline: 15-run batch of 09-03 14:05. Trims: 6 runs (2/arm) on the rate cuts alone. Second wave: 18 runs (6/arm) on trims + resilience 42 + the two dark-gated positives.
+
+| | baseline (15) | trims (6) | second wave (18) |
+|---|---|---|---|
+| fires/turn/run | 2.43 | 2.33 | 2.33 |
+| cyber≥3 runs | 7/15 (47%) | 4/6 (67%) | 5/18 (28%) |
+| resilience med | 44 | 43 | 54 |
+| sovereignty med | 8 | 12 | 16 |
+| capital med | 5 | 10 | 8 |
+| sentiment med | 20 | 20 | 28 |
+| safety med | 4 | 6 | 8 |
+
+**The rate trims underwhelmed on frequency** (2.43→2.33) — the events step appears to compensate lower prices by listing more, or the dice just shrugged. Their visible win is narrower: cyber-tripping fell by nearly half in the 18-run set. The softening that actually moved finals came from the second wave: start bump plus positives, with the new events engaging (`joint_threat_response` 6×, `middle_power_coalition` 10× across 18 runs).
+
+**Per-arm second wave:** capability separates cleanly (A 88–100, V 68–73, P 63–73 — V no longer pinned at a point); safety crashes on A (0–2) as designed; election contract 18/18. Resilience may have overshot on acceleration (med 64, absorption passes 3/6 on the harshest arm — category 6 was already the strongest lever). Capital is unmoved everywhere (med 8, max 25): drain rate confirmed as the disease, start level was never it.
+
+**Floors, decided by the numbers:** agency (capital ≥40) fails 18/18 with a max of 25 — dead, reset it. Absorption and legitimacy now discriminate across arms (P 5/6 and 5/6, V 3/6 and 4/6, A 3/6 and 2/6) and can stand. Proposed: agency ≥12 (fails all of A, passes the functioning P/V runs) — Johan's call.
+
+**Keep/discard:** keep. Nothing went slack — arms separate, A stays brutal where it should be (safety, capital), the election machinery is untouched at 18/18. Open before merge: whether resilience on A wants half a step back, and the agency floor value.
