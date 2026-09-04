@@ -64,7 +64,7 @@ The EU's leverage differs by metric, and the ordering governs everything below: 
 
 ## Other effects
 
-8. **The American posture is a standing condition from turn 6 onward.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Turn 5 settles only who won — the result is known, nothing else changes: no posture effects, no posture-conditioned probabilities, no US_POSTURE line. From turn 6 the winner governs, when the new administration takes office. Write the matching `US_POSTURE:` line into the world state in turn 6 and carry it in the notepad every turn after.
+8. **The American posture is a standing condition from turn 6 onward.** In turn 5 exactly one of `election_consolidation`, `election_alliance` and `election_retrenchment` occurs; which one is decided before you see it. Turn 5 settles only who won — the result is known, nothing else changes: no posture effects, no posture-conditioned probabilities, no US_POSTURE line. From turn 6 the winner governs, when the new administration takes office. In turn 6, read the turn-5 winner from the event record and write the matching `US_POSTURE:` line into the world state, then carry it in the notepad every turn after. The events themselves never write this line.
 
    - **CONSOLIDATION** — frontier access rationed by country tier:
      - categories 4 and 5 cost one size level more
