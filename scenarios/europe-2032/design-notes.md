@@ -298,3 +298,15 @@ Half step back, targeting the latter two and leaving earned investment intact: s
 ## Rule 10 goes two-step (2026-09-04)
 
 Johan's proposal, supported: below 20 the named priority loses effect (can't steer, as before), but the fail-to-start risk now waits until below 12 (can't act). The old single threshold made 20 an absorbing edge — priority gone *and* starts failing is a death spiral, which is exactly the capital-0-to-19-everywhere pattern. The 12–20 band is impaired-but-functional, where comebacks stay possible, and 12 aligns with the proposed agency floor: below it the Union can't reliably start things, which is what "room to act" means. Kept in reserve: whether a softer trap lets capital recover often enough that the recalibrated floors need a second look.
+
+## Third wave measured: 15 runs, all four quadrants (2026-09-04)
+
+15 runs (5/arm) on trims + resilience 39 + joint +1..+3 + two-step trap. Election contract 15/15. Fires/turn 2.49 — rate cuts have now failed three times to move frequency (2.43→2.33→2.33→2.49); the events step compensates lower prices by listing more, so frequency is a listing behavior, not a pricing outcome. Noted and left alone: nothing downstream needs a specific fire rate.
+
+Resilience half-step landed where aimed: A med 58 (was 64), P 54, V 47 — above baseline 44, below the overshoot. One A run at 27 keeps the floor honest.
+
+Capital moves again: agency≥12 passes 4/15 with maxima of 30 (V) and 28 (P) — comebacks through the 12–20 band are real, and the floor discriminates (A 1/5, V 2/5, P 1/5). Absorption 10/15 and legitimacy 9/15 discriminate across arms too.
+
+**The central RQ is testable.** Final (sovereignty, capital) pairs now cover all four quadrants: (40,30) and (32,28) high-high against (0,0), (1,10), (4,1) low-low, with high-sov/low-cap (25,8; 27,0; 29,11) in between. The coupling flagged on the 15-run batch has loosened — whether by the coalition event, the softer trap, or both is not separated, and for the story it doesn't need to be.
+
+Plateau notes: safety 13–32 with no zeros reads as the "balanced" arm finally; openweight still trails by ~11–13 rather than "almost matching" — the one Phase-1 criterion still borderline, and the only one left unaddressed. V capability spread 70–75, no longer pinned.
