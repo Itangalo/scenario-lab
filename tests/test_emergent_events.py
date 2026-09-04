@@ -624,3 +624,91 @@ def test_events_template_mentions_carried_entries(test_scenario):
     _, user = builder.build_events_prompt(turn=3)
     assert "Emerging developments (tracked)" in user
     assert "higher" in user
+
+
+# ---------------------------------------------------------------------------
+# Parallel sample elicitation
+#
+# With probability_samples > 1 the elicitations run concurrently via
+# executor.map (order-preserving). These tests pin the concurrency, the
+# deterministic artifact order, and the main-thread I/O recording.
+# ---------------------------------------------------------------------------
+
+
+class BarrierClient:
+    """Blocks every call at a barrier: returns only when all N are in flight.
+
+    With sequential elicitation the barrier never fills and wait() times out,
+    failing the test instead of deadlocking the suite.
+    """
+
+    def __init__(self, n: int, payload: str):
+        import threading
+
+        self._barrier = threading.Barrier(n, timeout=30)
+        self.payload = payload
+        self.models = ["mock/model"]
+        self.provider = "mock"
+
+    def _response(self) -> LLMResponse:
+        return LLMResponse(
+            content=self.payload,
+            raw_response={
+                "usage": {"prompt_tokens": 10, "completion_tokens": 5, "total_tokens": 15},
+                "model": "mock/model",
+            },
+        )
+
+    def complete(self, system_prompt: str, user_prompt: str) -> LLMResponse:
+        self._barrier.wait()
+        return self._response()
+
+    def close(self):
+        pass
+
+
+def test_parallel_samples_overlap_in_time(test_scenario, tmp_path):
+    test_scenario.config.llm.probability_samples = 3
+    payload = json.dumps([{"id": "ai_breakthrough", "probability": 0.5}])
+    om = _recording_output_manager(test_scenario, tmp_path)
+    orchestrator = Orchestrator(test_scenario, BarrierClient(3, payload), output_manager=om)
+
+    orchestrator._run_events_step(turn=1)
+    by_id = {e["id"]: e for e in _read_evaluations(om)}
+    assert by_id["ai_breakthrough"]["probability"] == pytest.approx(0.5)
+    assert by_id["ai_breakthrough"]["n_samples"] == 3
+
+
+def test_parallel_samples_record_all_calls(test_scenario, tmp_path):
+    """Cost tracking sees every sample even though elicitation is concurrent."""
+    test_scenario.config.llm.probability_samples = 3
+    payload = json.dumps([{"id": "ai_breakthrough", "probability": 0.5}])
+    om = _recording_output_manager(test_scenario, tmp_path)
+    orchestrator = Orchestrator(test_scenario, BarrierClient(3, payload), output_manager=om)
+
+    orchestrator._run_events_step(turn=1)
+    turn_costs = orchestrator.cost_tracker.get_turn_costs(1)
+    assert turn_costs.by_task["events"].calls == 3
+
+
+def test_parallel_sample_artifacts_are_deterministic(test_scenario, tmp_path):
+    """Two identical multi-sample turns produce identical evaluation files."""
+    import pathlib
+
+    test_scenario.config.llm.probability_samples = 3
+    samples = [
+        json.dumps([{"id": "ai_breakthrough", "probability": 0.3}]),
+        json.dumps([{"id": "ai_breakthrough", "probability": 0.6}]),
+        json.dumps([{"id": "ai_breakthrough", "probability": 0.9}]),
+    ]
+
+    def run_once(subdir: str) -> list[dict]:
+        om = _recording_output_manager(test_scenario, tmp_path / subdir)
+        orchestrator = Orchestrator(test_scenario, SequenceClient(list(samples)), output_manager=om)
+        orchestrator._run_events_step(turn=1)
+        return _read_evaluations(om)
+
+    first = run_once("run-a")
+    second = run_once("run-b")
+    assert first == second
+    assert first[0]["probability_samples"] == [0.3, 0.6, 0.9]

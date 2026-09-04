@@ -789,10 +789,35 @@ class Orchestrator:
             unrecoverable parse failure (caller records the parse-failure
             marker and proceeds with zero events).
         """
+        candidates, io_records = self._fetch_sample(turn, system, user)
+        for task_name, sys, usr, response in io_records:
+            # Replay on this thread: the recording wrapper buffered the call
+            # on the worker's thread-local, which _record_llm_call cannot see.
+            self._llm_io_context.pending = (sys, usr, response)
+            self._record_llm_call(turn, task_name, response)
+        return candidates
+
+    def _fetch_sample(
+        self, turn: int, system: str, user: str
+    ) -> tuple[Optional[list], list[tuple[str, str, str, LLMResponse]]]:
+        """Elicit one candidate-event list without recording anything.
+
+        Thread-safe by construction: the LLM call, parsing, and format-fix
+        retry touch only the arguments, the shared (thread-safe) client, and
+        the prompt builder's read-only lookups. Callers replay the returned
+        I/O records through ``_record_llm_call`` on the main thread, which
+        owns cost tracking and transcript persistence.
+
+        Returns:
+            Tuple of (candidate list or None on unrecoverable parse failure,
+            I/O records as (task_name, system, user, response) tuples in the
+            order the calls were made).
+        """
         mode = self._structured_events_mode
         try_structured = mode == "true" or (
             mode == "auto" and not self._structured_events_unsupported
         )
+        io_records: list[tuple[str, str, str, LLMResponse]] = []
 
         if try_structured:
             from .schemas import EVENTS_SCHEMA_NAME, events_array_schema
@@ -818,11 +843,11 @@ class Orchestrator:
                     "using legacy JSON parsing for the rest of this run."
                 )
             else:
-                self._record_llm_call(turn, "events", response)
+                io_records.append(("events", system, user, response))
                 data = response.structured_data
                 if isinstance(data, list):
                     # Per-event validation downstream handles bad items.
-                    return data
+                    return data, io_records
                 # Defensive: a strict schema should guarantee a list. Treat
                 # anything else like a parse failure of the structured path.
                 if mode == "true":
@@ -837,10 +862,10 @@ class Orchestrator:
 
         # Legacy text path: parse, then one format-fix retry.
         response = self.llm_clients["events"].complete(system, user)
-        self._record_llm_call(turn, "events", response)
+        io_records.append(("events", system, user, response))
 
         try:
-            return response.extract_json_array()
+            return response.extract_json_array(), io_records
         except (json.JSONDecodeError, ValueError, LLMParseError) as e:
             print(f"  Warning: Could not parse events response: {e}")
             print(f"  Response was: {response.content[:200]}...")
@@ -851,13 +876,13 @@ class Orchestrator:
                     turn, response.content
                 )
                 fix_response = self.llm_clients["events"].complete(fix_system, fix_user)
-                self._record_llm_call(turn, "events:format_fix", fix_response)
+                io_records.append(("events:format_fix", fix_system, fix_user, fix_response))
                 candidate_events = fix_response.extract_json_array()
                 print("  ✓ Events format fixed on retry")
-                return candidate_events
+                return candidate_events, io_records
             except Exception as fix_e:
                 print(f"  Warning: Events format-fix retry failed: {fix_e}")
-                return None
+                return None, io_records
 
     def _evaluate_events(self, turn: int) -> tuple[list[dict], list[dict]]:
         """Evaluate candidate events and roll the seeded dice.
@@ -876,10 +901,33 @@ class Orchestrator:
 
         n_samples = self.scenario.config.llm.probability_samples
         samples: list[list] = []
-        for _ in range(n_samples):
+        if n_samples == 1:
             candidates = self._fetch_candidate_events(turn, system, user)
             if candidates is not None:
                 samples.append(candidates)
+        else:
+            # Independent elicitations run concurrently; executor.map preserves
+            # input order, so the recorded per-sample arrays stay deterministic.
+            # I/O recording is replayed on this thread (see _fetch_sample):
+            # the recording wrapper buffers on the worker's thread-local,
+            # which _record_llm_call cannot see.
+            with ThreadPoolExecutor(max_workers=min(n_samples, 8)) as executor:
+                results = list(
+                    executor.map(lambda _: self._fetch_sample(turn, system, user), range(n_samples))
+                )
+            for candidates, io_records in results:
+                for task_name, sys, usr, response in io_records:
+                    self._llm_io_context.pending = (sys, usr, response)
+                    self._record_llm_call(turn, task_name, response)
+                if candidates is not None:
+                    samples.append(candidates)
+
+        if samples and n_samples > 1:
+            # Threads complete in scheduling order, so without this the
+            # recorded per-sample arrays would permute run to run. Sorting by
+            # canonical form keeps artifacts deterministic given the elicited
+            # multiset; aggregation (mean, absent-as-zero) is order-invariant.
+            samples = sorted(samples, key=lambda s: json.dumps(s, sort_keys=True))
 
         if not samples:
             # Every elicitation ended in an unrecoverable parse failure. Make
