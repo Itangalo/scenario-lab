@@ -86,7 +86,7 @@ If your change alters intended behavior, verify it against `docs/ARCHITECTURE.md
    When testing changes, prefer short runs and inexpensive models when possible. Scale up only after the behavior looks right.
 
 2. **Caffeinate and monitor long runs.**
-   When doing runs taking longer than 15 minutes, set a caffeinate to keep the computer awake and something that triggers a message when it is done. If errors occurs, resolve them when reasonably small and then resume, otherwise stop the run.
+   When doing runs taking longer than 15 minutes, set a caffeinate to keep the computer awake and launch through `scripts/run-notify.sh LOGFILE -- <command>`: it waits on the child PID, appends a stable `RUN_DONE exit=N` marker to the log, and fires a desktop notification with sound. Poll completion with `grep -q RUN_DONE LOGFILE`, never with sleep+pgrep (which has missed endings repeatedly). If errors occurs, resolve them when reasonably small and then resume, otherwise stop the run.
 
 3. **Treat prompts as first-class implementation.**
    If behavior is wrong, check the prompt and scenario content before adding Python logic.
