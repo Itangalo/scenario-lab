@@ -76,9 +76,12 @@ actors:
 # The 2028 election is a mutually exclusive family, not three independent dice.
 # Exactly one outcome fires in turn 5; Python guarantees that, and the events
 # step decides which by weighing the three against each other from the world as
-# it stands. The weights are normalised, so only their ratio matters, and one
-# seeded roll settles it – a campaign the model reads as leaning heavily one way
-# still leaves the other outcomes live.
+# it stands. Turn 5 settles only who won (November 2028): policies take effect
+# in turn 6, when the administration takes office, so no posture effects or
+# posture-conditioned probabilities apply before then. The weights are
+# normalised, so only their ratio matters, and one seeded roll settles it –
+# a campaign the model reads as leaning heavily one way still leaves the
+# other outcomes live.
 #
 # Two earlier designs are recorded here because both failed in ways worth not
 # repeating. One event carrying all three postures plus a prose rule fired in
