@@ -6,30 +6,25 @@ This document keeps track of the work. Update it when the work moves along; it s
 
 ## Phase 1 – the scenario stops moving
 
-The gate for this phase is that the physics works well enough to have credible runs, on all four arms.
+The gate for this phase is that the physics works well enough to have credible runs, on all three arms.
 
 - [X] All metrics should evolve in a credible way. This means, for example:
   - For ai_capability and ai_safety: In the Acceleracion arm (A), the former will often hit the ceiling and the latter will often crash. In the other arms, it is more balanced.
   - For openweight_capability: This should trail ai_capability in basically all runs, all arms. For the Plateau arm (P), it should almost match ai_capability in the final rounds.
   - For eu_ai_sovereignty, eu_political_capital and public_sentiment: These metric should struggle. Some successes and some alarmingly low. Lower end on the A arm.
-- [ ] **Events are triggered roughly correctly, and their effects are managed roughly correctly.** Triggering holds: over 416 turns, the 2028 election family was listed complete in every one of its due turns, which is the contract whose failure actually cost this scenario a batch. A one-off check of the six always-eligible events found 26 of 2496 required listings missing, about 1%; it is not kept, because it worked by matching the words "Always eligible" in this scenario's condition prose and no other scenario writes them. Effects do not, for one coherent half of the catalogue: ten events with four or more firings move the metrics no differently from an ordinary turn, five of them the geopolitical ones whose only plausible target is `eu_ai_sovereignty` — which rule 5 closes to everything but a category 4 completion. **This needs a decision, not a fix:** either rule 5 gets a third term for events that directly remove or secure access to capacity, or sovereignty is accepted as a stock only the Union's own measures move and `rq_sovereignty_and_agency` stops listing five events that cannot reach its metrics. See `design-notes.md`.
+- [X] **Events are triggered roughly correctly, and their effects are managed roughly correctly.** The rule-5 decision was taken: the third term (events that take away or secure access to capacity) was added, and sovereignty moves with real spread (0–32 across arms) instead of sitting stuck. The 2028 election family holds exactly-one at turn 5 across every batch measured (15/15, 18/18, 15/15). See `design-notes.md`.
 - [X] **The event list is fairly balanced.** All 35 events fire at least once across the 32-run corpus; per-listing fire rates run 1–16% and every event touches at least 5% of runs. Nothing in the catalogue is dead and nothing is scenery. Measured mostly before the open-weight fix, so the incident events gated at `openweight_capability` 55 and 65 were rolled with those branches shut — their true rates are higher than the table says, which does not change the conclusion.
 - [X] **A turn that drops a metric is caught.** One run of 2026-09-03 omitted `openweight_capability` from turn 1's JSON; the old value was carried forward and the run completed clean. The metrics step now compares the parsed JSON against the scenario's metric ids, asks once for the omitted ones by name, and writes the outcome to `turn-XX/4-metrics-metadata.json` either way; anything still missing is filled from the value the run actually uses, so no artefact carries an absent key. The referee's correction step is guarded the same way, since a correction that drops a metric reverts it to last turn's value.
 
 Deliberately *not* gates: Exact arithmetic correctness, rare occasions of mechanics malfunctioning (less than one in ten).
 
-**Open on 2026-09-03, waiting on a three-arm batch.** The acceleration measurement is in and is recorded in `design-notes.md`: sovereignty moves for the first time (0–31 at turn 13, no stated fall held flat, line binding 82%), the lower half of the system falls with it, and that fall is accepted as the physics rather than reverted. Two things remain before the gate closes — whether the declared floors discriminate across arms or merely record how hard the scenario is, and whether the capacity charge now names only events that fired, after being turned from a judgement into a lookup.
+**Open 2026-09-03, closing 2026-09-04.** The soften branches (rate trims, resilience start, two dark-gated positives, two-step rule-10 trap) measured clean: arms separate, all four sovereignty-vs-capital quadrants populated, floors discriminate except agency — reset to ≥12, applied or not at Johan's call. Two known imperfections travel forward rather than block: plateau openweight trails by ~11–13 instead of "almost matching", and fire frequency ignores rate cuts (2.43→2.49 across three rounds — the events step compensates, recorded as listing behavior, not a defect to chase). US posture timing was corrected along the way (result turn 5, policies turn 6; rule 8 owns the line, prompt-gated per turn after two failed rounds taught that prohibitions don't hold). Full account in `design-notes.md`.
 
-**Superseded, kept for the reasoning.** Two changes were made to the remaining gate and neither is measured yet: rule 5 gained a third term so an event that takes away or secures access to capacity can reach `eu_ai_sovereignty`, and constitutional invariant 2 was bound to the two metrics it names, having been applied to sovereignty and reverting 64% of the falls it objected to. Six acceleration runs of 13 turns, seeds 10002–10007, are the measurement: does sovereignty now move, and does it move so far that it sits on its floor instead. Both are failures; the metric has to end somewhere in between. `scripts/check_sovereignty.py` reads the first and `scripts/check_events.py --effects` the second.
+## Phase 2 – clear the ground (done 2026-09-04)
 
-## Phase 2 – clear the ground
-
-Once phase 1 closes, everything simulated before it is built on superseded physics.
-
-- **Archive, don't delete.** `runs/` is gitignored and has been cleared twice already; findings survive only because they are written into `design-notes.md`. Before wiping, check that anything worth keeping is in that file. Note that an acceptable option is to prune the design notes -- not every old decision needs to be saved.
-- **`story/turn-01/` survives** unless new checks reveal that it is obsolete.
-  - **Cheap check before trusting that:** draw 10 actor-only turn-1 responses under the current prompt and compare the category split against the recorded 28/2. Minutes, and about $0.01. If it holds, keep `opening.md` and both option files unchanged.
-  - **The pinned turn-1 base runs must be regenerated per arm** (`story/pin-turn-1.py`): turn 1's *resolution* uses the metric rules even though its *actor response* does not.
+- **Archive, don't delete.** Before the wipe, every batch's findings were written into `design-notes.md` — including the 15-run emergent-examples batch, which was wiped before its keep-value was recognized and partially recovered from the dashboard page (probabilities, transcripts and costs irrecoverable; the lesson is archive-before-wipe, not apology-after). `runs/` was otherwise wiped (247 MB freed).
+- **`story/turn-01/` did not survive the check.** The ten-draw check failed decisively (2/10 category-6 vs recorded 28/30) after repeated actor-prompt changes. Replaced from a fresh 30-draw pool (`turn-01/pool-20260904/`, split cat4 12 / cat5 10 / cat1 5 / cat3 2 / cat6 1): `option-02-1.md` is build, `option-02-2.md` is know-and-constrain, both straight picks. Reader choice is now build vs know-and-constrain.
+- **Pinned turn-1 base runs regenerated**, six of them (both options × three arms, fresh seeds, `run-pin-{A,V,P}-o{1,2}`) — the roadmap said per arm, but each branch needs its own foundation since resolution differs per arm and response per option. Verified verbatim actor output and arm-ordered capability.
 
 ## Phase 3 – the runs
 
@@ -46,6 +41,8 @@ Two independent bodies of work. Either order; 3a is one command and a wait, 3b n
 
 42 blocks of four turns, each block ten simulations with one path selected at random; 18 option pools of ten actor-only draws. Three stages, because each stage's branches start from the previous stage's chosen path.
 
+**Stage 1 (turns 2–5) in progress 2026-09-04.** Pilot-first procedure after a tainted 60-run batch: an early-election prompt bug (Jinja if/else with no neither-case) had 48 runs declaring winners in turns 2–4. Fixed three-way, render-verified per turn. Three pilot branches (A1, V2, P1) run first and verify clean (no early election, pending-not-named posture in turn 5, sane metrics) before the remaining 57 launch. Procedure, not just caution: this is the second batch lost to verify-after-scale. `story/stage-1-blocks.json` tracks dirs, paths, reps and seeds; `story/stage-1/*.md` holds first-run reading prose with two-year commitments up top.
+
 | stage | branches | turn-executions | cost | wall clock |
 |---|---|---|---|---|
 | turns 2–5 | 6 | 240 | $1.66 | 1.2 h |
@@ -61,10 +58,10 @@ Plus 180 actor-only draws for the 18 option pools, about $0.22.
 
 ## Standing facts
 
-Measured on the 36-run batch of 2026-09-02/03, not estimated:
+Measured on the 36-run batch of 2026-09-02/03, not estimated (predates OpenRouter prompt caching and parallel sample elicitation — wall-clock per turn is lower now, costs slightly lower on cached reads):
 
 - **$0.0069 per turn-execution; $0.090 per 13-turn run.** By step: events $1.62 of $3.24, then metrics $0.54, actor $0.46, referee $0.53 combined.
-- **3.4 turn-executions per minute at 12 concurrent.** Throughput is roughly flat in concurrency above about 8, so it is an API-side limit; more parallelism buys little.
+- **3.4 turn-executions per minute at 12 concurrent.** Throughput is roughly flat in concurrency above about 8, so it is an API-side limit; more parallelism buys little. (Parallel elicitation triples the events step internally since 2026-09-04; batch-level concurrency guidance unchanged.)
 - **Seeds are never reused, across branches or arms** — event-profile overlap at a shared seed is 0.625 against 0.210, and three branches sharing a seed are substantially the same world. Nothing has to be tracked to hold this: `--seed` left off draws a random 64-bit seed and `config.json` records it, so collision is not a thing that happens. Pass `--seed` only where a run must repeat another one — `pin-turn-1.py` needs turn 1 identical across arms. The ledger of used blocks that used to sit here was bookkeeping against a risk the default already removes.
 - **The harness kills background tasks at about 30 minutes.** Long batches go in a terminal tab or `nohup`, wrapped in `caffeinate -dimsu`, on mains power — `caffeinate -s` is ignored on battery and nothing stops clamshell sleep there.
 - **Watch artefact files, not stdout.** Python block-buffers when redirected; `turn-XX/4-metrics.json` appearing is the reliable progress signal.

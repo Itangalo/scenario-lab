@@ -250,7 +250,7 @@ New providers can be registered without changing orchestrator code.
 - The `LLMProvider` base class default raises `LLMUnsupportedStructuredError`, so new providers get graceful fallback for free.
 - `FallbackRouter.complete_structured` threads the call through routes like `complete`, except that `LLMUnsupportedStructuredError` propagates immediately (no route fallback) – the caller decides whether to fall back to text parsing (`auto`) or fail hard (`true`). Token usage and cost accounting work identically for structured calls.
 
-**ProviderRegistry:** One instance per run. Lazily creates built-in providers on first access so that a run using only OpenRouter never touches `ANTHROPIC_API_KEY`. Custom providers can be registered explicitly before the run starts.
+**ProviderRegistry:** One instance per run. Lazily creates built-in providers on first access so that a run using only OpenRouter never touches `ANTHROPIC_API_KEY`. Custom providers can be registered explicitly before the run starts. The orchestrator (and the analysis/synthesis entry points) own their registries and close them on shutdown — providers holding subprocesses or servers (notably `opencode serve`) would otherwise leak past the run.
 
 **FallbackRouter (`router.py`):** Wraps an ordered list of `ModelRoute`s and one `ProviderRegistry`. On each call it tries routes left-to-right, resolving limits for the route it is about to try (via the config's bound `limits_resolver`, so model floors apply per attempt; without a resolver, providers keep their own defaults):
 

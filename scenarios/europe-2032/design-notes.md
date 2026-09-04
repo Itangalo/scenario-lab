@@ -318,3 +318,13 @@ The mimicry finding: pre-positivity-line, three negative prompt examples became 
 ## Mimicry confirmed and killed (2026-09-04)
 
 15 runs, 519 emergent proposals, 263 distinct ids — against 204 distinct in the 891-proposal post-line corpus (2.2× the turns). Top id share fell from 22% (court_challenge) to 4.8% (labour_displacement_wave, 25×). Volume held (2.7 proposals/turn vs 2.1). All six removed example ids went to exactly zero — the mimicry was 100% example-driven, not a model prior. Positives still arise unprompted (lab cooperation, open research alliance, joint cyber pacts, middle-power initiatives throughout the top 15), so no restoration needed. The guidance stands as written; no further batch required for this question.
+
+## Posture timing saga: two failed rounds, one Jinja gate (2026-09-04)
+
+The US election resolves turn 5 (September 2028) but policies should bite turn 6 (inauguration). Fixing the onset took three attempts, each teaching something:
+
+1. Rules-only change (rule 8, invariant 4, event texts): all 60 re-runs wrote the standing line in turn 5 anyway — the event descriptions' write-instruction beat the rules text.
+2. Single ownership (events forbid writing; rule 8 owns turn 6): still failed — the *procedural* metrics prompt ("carry the line from the turn the election fires onward") beat both. Lesson: procedural prompt text outranks rules text; timing constraints must live where the GM is told what to write.
+3. Pending placeholder (`US_POSTURE: pending (administration takes office next turn)`): exact string verified, zero named postures. Accepted: it names nothing, prices nothing, and turn 6 reads the winner from the event record.
+
+Then the real catch, found only because six full reads were commissioned for the story prose: the Jinja `if/else` had no neither-case, so turns 2–4 rendered "the 2028 election fires this turn" and 48 runs declared winners 18 months early — a turn-5 machinery working flawlessly while turns it never touched burned. Fixed three-way (item renders only on 5+ and 6+), render-verified per turn. The 60 tainted branches were wiped and rebuilt from pins; the six prose summaries commissioned from them were discarded before publication. Procedure adopted: pilot a few and verify before scaling — the second batch lost to verify-after-scale.
