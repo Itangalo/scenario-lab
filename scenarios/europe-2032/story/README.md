@@ -57,6 +57,28 @@ None. (ECHO 2026-09-03)
 
 A1 turns 2 to 5 were built on 2026-09-01 as the pilot and removed on 2026-09-03, along with `branch-A1.md`. They resolved under metric rules that three later changes superseded — the sovereignty accounting rewrite, rule 5's no-floor clause, and both rule 2 changes — so their turns describe a world this scenario no longer produces. They are in git history at `a7b5a3e` if the prose is ever wanted; the numbers in them are not to be trusted or quoted.
 
-`turn-01/` was deliberately kept. The actor prompt never renders `metric_rules`, so no rule change since the pool was drawn could have altered the draw — see [`../ROADMAP.md`](../ROADMAP.md), phase 2, for the check that would confirm it in ten draws.
+`turn-01/` was deliberately kept. The actor prompt never renders `metric_rules`, so no rule change since the pool was drawn could have altered the draw — see [`../ROADMAP.md`](../ROADMAP.md), phase 2, for the check that would confirm it in ten draws. (Superseded 2026-09-04: the check failed after actor-prompt changes, and `turn-01/` was rebuilt — see below.)
 
 Nothing further is built until phase 1 of [`../ROADMAP.md`](../ROADMAP.md) closes: the tree costs about eight hours to generate and every turn of it is produced under whatever physics is current, which is exactly how the pilot was lost.
+
+## Turn 1 rebuilt (2026-09-04)
+
+The phase-2 check failed: 10 fresh draws split 4,3,1,4,6,5,4,5,6,5 against the recorded 28/2, after repeated actor-prompt changes. The old option files were retired and replaced from a fresh 30-draw pool (`turn-01/pool-20260904/`, split cat4 12 / cat5 10 / cat1 5 / cat3 2 / cat6 1):
+
+- `option-02-1.md` ← pool sample-17, Emergency Sovereign Compute Directive (cat4, build)
+- `option-02-2.md` ← pool sample-10, European AI Assurance Directorate (cat1, know-and-constrain)
+
+The reader's choice is build vs know-and-constrain. Selections are straight picks, not syntheses.
+
+Pinned turn-1 base runs, one per option per arm (resolution differs per arm even though the response does not — `pin-turn-1.py`), all with `cyber_test_shot` alone and the option response verbatim:
+
+| run dir | arm | option | seed |
+|---|---|---|---|
+| `runs/run-pin-A-o1` | Acceleration | option-02-1 | 11196476503952369790 |
+| `runs/run-pin-A-o2` | Acceleration | option-02-2 | 4917641212772111157 |
+| `runs/run-pin-V-o1` | Verification-bounded | option-02-1 | 15157244113843755396 |
+| `runs/run-pin-V-o2` | Verification-bounded | option-02-2 | 16716269765136547817 |
+| `runs/run-pin-P-o1` | Plateau | option-02-1 | 408371623146465225 |
+| `runs/run-pin-P-o2` | Plateau | option-02-2 | 9765792066681128786 |
+
+`runs/` was otherwise wiped on 2026-09-04 (247 MB freed); every finding from the deleted batches lives in `design-notes.md`.
