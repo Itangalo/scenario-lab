@@ -1,7 +1,7 @@
 {# Scenario override. Identical to templates/user-prompts/metrics-update.md except for four additions:
    1. Guidance for treating tracked emerging developments as faint narrative signals rather than events.
    2. The political-capital procedure: the portfolio charge, the proposal bonus and the sentiment term, each as its own required Notepad line.
-   3. The US_POSTURE line, which must be carried in the Notepad from the turn the 2028 election fires onward.
+   3. The US_POSTURE line, which is carried in the Notepad from turn 6 onward. In turn 5, the turn the 2028 election fires, do NOT write it: the result is known but the administration has not taken office, so there is no standing posture yet. From turn 6, read the turn-5 winner from the event record and carry the matching line every turn after.
    4. The sovereignty accounting line of step 3d, which unlike the three above is not a record of a judgement but the judgement itself: it starts from last turn's figure and the number it ends at is the one written into the Metrics JSON.
    The first three sit after the notepad block; the metrics_json block above it is now in the default template too and is not an override.
    A ban on writing the long run as settled used to sit here, and was removed on 2026-09-01 deliberately: the Game Master is never told the arm's name and never sees the other arms' rules, so it has no vocabulary for announcing which trajectory this world turned out to be. background/context.md does name the three readings in the opening world state, so the channel is not fully closed -- that was weighed and accepted.
