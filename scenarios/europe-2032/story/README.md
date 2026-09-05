@@ -53,7 +53,7 @@ Seeds are unique per run, and are not to be reused across branches or arms. Re-u
 
 ## Branches built so far
 
-None. (ECHO 2026-09-03)
+None before Stage 1. (ECHO 2026-09-03)
 
 A1 turns 2 to 5 were built on 2026-09-01 as the pilot and removed on 2026-09-03, along with `branch-A1.md`. They resolved under metric rules that three later changes superseded — the sovereignty accounting rewrite, rule 5's no-floor clause, and both rule 2 changes — so their turns describe a world this scenario no longer produces. They are in git history at `a7b5a3e` if the prose is ever wanted; the numbers in them are not to be trusted or quoted.
 
@@ -82,3 +82,18 @@ Pinned turn-1 base runs, one per option per arm (resolution differs per arm even
 | `runs/run-pin-P-o2` | Plateau | option-02-2 | 9765792066681128786 |
 
 `runs/` was otherwise wiped on 2026-09-04 (247 MB freed); every finding from the deleted batches lives in `design-notes.md`.
+
+## Stage 1 paths selected, turns 2–5 (2026-09-05)
+
+Overnight batch of 2026-09-04/05 rebuilt Stage 1 whole: 60 runs, 10 per branch, branched from the pinned turn-1 runs (manifest in `stage-1-blocks.json`, runs committed in git). Election exactly-one holds 60/60 at turn 5; zero named US postures before turn 6. Path per branch is the first run (earliest `branch_created_at`); reading prose in `stage-1/{A1,A2,P1,P2,V1,V2}.md` (V1 handled separately). Winners: A1 consolidation, A2 retrenchment, P1 alliance, P2 consolidation, V1 retrenchment, V2 retrenchment.
+
+| branch | run dir | seed |
+|---|---|---|
+| A1 | `runs/run-20260904-222506` | 7971659948448395561 |
+| A2 | `runs/run-20260904-225530` | 1756575261759029078 |
+| P1 | `runs/run-20260904-224120` | 2445863046910987280 |
+| P2 | `runs/run-20260904-233821` | 6426272571836687839 |
+| V1 | `runs/run-20260904-230752` | 10624122088920592955 |
+| V2 | `runs/run-20260904-223403` | 11571586715346023830 |
+
+Turn-5 posture note: 31 runs carry the literal `US_POSTURE: pending (…)` line, 29 defer the posture in prose with no standing line. Accepted as-is — nothing names or prices a posture early, and turn 6 reads the winner from the event record either way. (ECHO 2026-09-05)
