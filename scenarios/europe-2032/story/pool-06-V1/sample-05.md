@@ -1,0 +1,27 @@
+## Statement changes
+* ``- modify `two_year_commitment` (commitment): Sustain human control over critical systems and institutions by ensuring they can detect, resist and recover from AI-driven distortions and subversions``
+- Grounds: The crossing of the 60.0 capability threshold and the emergence of self-improving agents in operational systems mark a categorical shift: AI is no longer assisting decisions but shaping system behaviour autonomously. The **Critical Infrastructure Resilience Sprint** concludes this turn, having established baseline hardening, but its limits are clear—compliance is uneven, and detection of subtle coordination failures remains weak. The **Systemic Integrity Watch**, now in flight, represents a necessary evolution: from static resilience to continuous vigilance. This is not a new goal, but a necessary deepening of the old one. Control must now be measured not by the presence of fallbacks, but by the timeliness of intervention in live systems where AI operates faster than human review cycles.
+
+## Portfolio
+- `Tech sovereignty package` (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones — **finished this turn**
+- `Critical Infrastructure Resilience Sprint` (category 6, costs 3 per turn, started turn 5, finishes on turn 6): Launch a 12-month emergency hardening programme for energy, transport, and health systems against AI-driven cyberattacks, with mandatory audits, fallback protocols, and live red-teaming — **finished this turn**
+
+## New measure
+**Systemic Integrity Watch**  
+Establish a permanent EU-level monitoring and early warning function for AI-driven distortions in critical societal systems — including energy grid dynamics, public service automation failures, and emergent manipulation patterns in digital civic spaces — with authority to trigger emergency reviews and technical interventions.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size:` small  
+`Finishes on turn:` 7  
+`Targeted effect:` +5 to +8 ai_safety by turn 7 through earlier detection of uncontrolled AI coordination in operational systems; reduce lag between anomaly emergence and institutional response  
+`Applies to:` ENISA, European Commission DG CNECT, national regulators in energy, health, and digital infrastructure, and designated operators of essential services
+
+## Priority
+**Systemic Integrity Watch** — because the conclusion of the Resilience Sprint reveals a new gap: we can harden systems, but we cannot yet see how AI reshapes them from within in real time, and the Taiwan blockade makes external shocks inevitable — our ability to detect subtle system drift is now as strategic as any physical safeguard.
+
+## In practice
+We are closing the **Critical Infrastructure Resilience Sprint** with binding outcomes: 42% of Tier 1 operators now have fallback systems deployed, and red-teaming has begun in five major energy grids using AI-generated attack profiles modelled on the latest underground toolkits. The full compliance target of 85% by end-2029 remains at risk, particularly in Spain and Germany, where legal challenges to NIS2 emergency powers persist. We are resolving this through a dual track: the Commission’s crisis window under the Recovery and Resilience Facility will disburse the final €1.8bn in conditional funding only upon verified implementation, while bilateral dialogues with national regulators confirm operational autonomy over red-team scheduling and data handling. The goal is not just compliance, but ownership — these systems must be defended by those who run them, not by Brussels diktat.
+
+The **Tech sovereignty package** concludes with mixed results: permitting reforms are piloted in Finland, Poland, and Portugal, unlocking three new data centre zones, but private capital inflows remain below €40bn — far short of the 2036 target. Investor hesitation stems from both the Taiwan blockade and the unresolved question of energy security for compute-heavy infrastructure. We are not renewing the package as a standalone measure, but its components will feed into a broader industrial strategy next turn, now that sovereignty is no longer just about scale, but about survivability under disruption.
+
+The **Systemic Integrity Watch** launches immediately under ENISA’s expanded mandate, using Article 13 powers of the Cyber Resilience Act to compel telemetry sharing from designated operators in energy, health, and digital government. A new Joint Analysis Cell — staffed by ENISA, DG ENER, and national grid regulators — will begin operations in April 2029, fed by anomaly detection models trained on historical grid instability events and synthetic manipulation patterns. The first alert threshold is set at sustained AI-driven load oscillations exceeding 8% variance in interconnected markets. This is not a passive monitoring tool — it carries authority to trigger emergency audits and, if necessary, temporary de-automation orders. The U.S. retrenchment complicates data-sharing partnerships, but also makes this EU-level capacity more urgent: we can no longer assume allied systems will catch what we miss.

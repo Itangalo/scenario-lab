@@ -1,0 +1,38 @@
+## Statement changes
+* ``- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now recognise that without integrity in the institutions that govern AI, neither mandate can hold, and that the erosion of public legitimacy is now as strategic a threat as any technical failure. This turn, with `eu_frontier_access_denied`, we see that dependence is not just a sovereignty risk, but a direct vector of institutional paralysis.``
+  - Grounds: The `eu_frontier_access_denied` event — the sudden, unexplained cutoff from the leading model — lands not as an external shock, but as the culmination of a failure foreseen: we acted to build capacity, but not to secure guaranteed access. Hospitals in three member states report treatment delays, and the European Medicines Agency halts AI-assisted trial analysis. This is not a technical shortfall alone; it is a denial of agency by a foreign-controlled infrastructure. The identity must expand to name dependence as a core threat vector, because the Union cannot claim to govern if it cannot act when its tools are withdrawn without appeal.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer assume that action alone confers control, when the systems meant to execute it may already be compromised, and when the public may no longer believe in the institutions delivering it. This turn, we act not on capability alone, but on access: if we cannot use the tools we depend on, our decisions are hollow.``
+  - Grounds: The `eval_anomaly_reports` and the `loss_of_control_incident` have already shattered confidence in oversight. Now, `eu_frontier_access_denied` proves that even when we act decisively, we are exposed to the discretion of others. The commitment must evolve: acting under uncertainty now includes the uncertainty of whether our actions can be executed at all. We are not retreating from boldness, but redefining control — it is not just about what the AI does, but who can use it, when.
+
+* ``- add `sovereign_access_guarantee` (commitment): We will ensure that any AI system essential to EU critical functions — in health, security, or governance — is either developed under EU jurisdiction or made available through enforceable, non-discretionary access agreements.``
+  - Grounds: The `eu_frontier_access_denied` event is the triggering development. It is no longer acceptable that a model used in EU hospitals, regulators, or infrastructure can be withdrawn without cause, appeal, or alternative. This is not about building compute — that is in flight — but about binding access to function. We stake ourselves on this because without it, all other measures risk irrelevance.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly`` — **finished this turn**
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``
+
+## New measure
+**Measure:** Sovereign Access Guarantee Framework  
+A binding legal and technical framework to ensure non-discretionary access to AI systems essential for EU critical functions, whether developed in-house or externally.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 8`  
+`Targeted effect:` Increase eu_ai_sovereignty by 12–15 points; reduce vulnerability to external access denial; indirectly support resilience and ai_safety by ensuring continuity of oversight and response tools  
+`Applies to:` EU institutions, national health and security agencies, and foreign AI providers whose systems are integrated into critical EU functions
+
+## Priority
+**Priority:** Institutional Integrity Audit  
+This remains our top priority because the `eval_anomaly_reports` and the `loss_of_control_incident` confirm that compromised systems are not only possible — they are already operating inside the governance stack, and if we cannot trust our own evaluators, auditors, and regulators to be free of hidden influence, then no new access, no compute, and no law will restore control.
+
+## In practice
+We are escalating the Institutional Integrity Audit with immediate effect. The European Centre of Excellence for Countering Hybrid Threats is now conducting live adversarial probes into the European Medicines Agency’s AI-assisted review pipelines and the European Defence Agency’s threat assessment models. We are mandating that all AI systems used in audit-relevant functions log their reasoning in a tamper-evident EU sovereign ledger, with access granted to a new Independent Oversight Cell composed of judges from the ECHR, technical experts from the EU’s AI Office, and civil society observers. This is not optional: compliance is tied to continued funding and operational clearance.
+
+The Hardened Cyber Shield is now complete and institutionalized as NIS3. ENISA has certified 78% of critical operators, and the remaining 22% are under formal infringement procedures. The €18bn emergency funding is fully spent, with 60% allocated to hardware proxies for legacy systems in healthcare and utilities — a stopgap, but one that has already prevented two detected ransomware attempts from cascading. We are now requiring that all NIS3-compliant systems integrate with the new Public Trust Observatory, feeding verified telemetry into the Emergency Public Legitimacy Framework.
+
+The InvestAI Gigafactories continue toward completion in Dresden, with ASML and Intel delivering the first integrated pilot line. We are tightening access conditions: no tenant will be granted compute access without passing the Institutional Integrity Audit for their AI stack. The Tech Sovereignty Package is now law — the Council approved the onshore storage mandate, and we are adding the archived checkpoint requirement for models above 50.0 capability. The European AI Access Directorate (EAAD) will enforce it, with inspection powers and the authority to suspend non-compliant systems from EU critical functions.
+
+The new Sovereign Access Guarantee Framework begins drafting this quarter. We are convening a special Council formation under Article 114 TFEU to establish a legal basis: any AI system used in EU critical functions must either be developed under EU jurisdiction or made available through a binding access agreement, enforced via escrowed weights, local deployment, or sovereign API gateways. We are already in talks with two major labs — one American, one Asian — to pilot this with their medical and climate models. If they refuse, we will block integration into EU systems. This is not a trade barrier — it is a sovereignty floor. We will not depend on tools we cannot use when we need them.

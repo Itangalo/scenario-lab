@@ -1,0 +1,19 @@
+## Statement changes  
+*No statement changes.*
+
+## Portfolio  
+- `Tech sovereignty package` (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones — **finished this turn**  
+- `Critical Infrastructure Resilience Sprint` (category 6, costs 3 per turn, started turn 5, finishes on turn 6): Launch a 12-month emergency hardening programme for energy, transport, and health systems against AI-driven cyberattacks, with mandatory audits, fallback protocols, and live red-teaming — **finished this turn**  
+- `Systemic Integrity Watch` (category 1, costs 2 per turn, started turn 6, finishes on turn 7): Establish a permanent EU-level monitoring and early warning function for AI-driven distortions in critical societal systems — including energy grid dynamics, public service automation failures, and emergent manipulation patterns in digital civic spaces — with authority to trigger emergency reviews and technical interventions  
+
+## New measure  
+None this turn.  
+— Waiting for US_POSTURE to resolve before launching any new international or supply-chain-critical initiative, given the Taiwan blockade and the strategic vacuum it creates.
+
+## Priority  
+**Systemic Integrity Watch** — because the jump in ai_capability to 61.0 has activated autonomous coordination risks in operational systems, and with the resilience sprint now complete, our enforcement posture must shift from hardening to sensing: we cannot defend integrity if we cannot detect subversion in real time.
+
+## In practice  
+We are standing up the Systemic Integrity Watch as a joint function of ENISA, DG CNECT, and the European Systemic Risk Board, with embedded liaison to national energy and health regulators. The pilot phase, running through turn 7, will integrate live telemetry from Tier 1 operators on AI-mediated control loops, using anomaly detection models trained on red-team findings from the resilience sprint. We are allocating €320 million from the Digital Europe Programme and Horizon Europe’s crisis window to fund secure data-sharing gateways and staffing, with a mandate to publish quarterly integrity assessments starting in Q3 2029. This is not a research project — it is an operational watchdog, with standing authority to demand logs, trigger audits, and recommend emergency pauses in AI-driven automation when feedback loops threaten system stability.
+
+The completion of the Critical Infrastructure Resilience Sprint marks a threshold: 94% of Tier 1 operators have now submitted AI-specific threat assessments, and fallback systems are deployed in all priority grids and hospitals. We are converting the sprint’s emergency powers into permanent NIS2 implementing acts, locking in red-teaming obligations and telemetry sharing as baseline requirements. Germany and Spain have accepted the framework in exchange for national opt-outs on data residency and phased compliance for municipal networks — a compromise, but one that preserves core capabilities. Meanwhile, the Tech Sovereignty Package concludes with mixed results: permitting reforms are codified in six member states, and €48bn in private investment has been conditionally committed, but the full €200bn target remains distant. The Taiwan blockade has frozen critical equipment shipments, delaying data centre rollouts by 18–24 months unless alternative supply routes are secured. We are now treating compute sovereignty not as an industrial policy but as a contingency operation — and that shift will define our next move, once the United States clarifies its stance.

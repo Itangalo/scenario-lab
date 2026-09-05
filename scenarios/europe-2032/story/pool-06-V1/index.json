@@ -1,0 +1,74 @@
+{
+  "actor": "eu",
+  "turn": 6,
+  "model": "openrouter:qwen/qwen3-235b-a22b-2507",
+  "temperature": 0.7,
+  "prompt_hash": "61a627e259b94db6",
+  "triggered_events": [
+    "taiwan_blockade"
+  ],
+  "samples": [
+    {
+      "index": 1,
+      "file": "sample-01.md",
+      "tokens": 8386,
+      "cost_usd": 0.000917
+    },
+    {
+      "index": 2,
+      "file": "sample-02.md",
+      "tokens": 8487,
+      "cost_usd": 0.000952
+    },
+    {
+      "index": 3,
+      "file": "sample-03.md",
+      "tokens": 8416,
+      "cost_usd": 0.000928
+    },
+    {
+      "index": 4,
+      "file": "sample-04.md",
+      "tokens": 8408,
+      "cost_usd": 0.000925
+    },
+    {
+      "index": 5,
+      "file": "sample-05.md",
+      "tokens": 8730,
+      "cost_usd": 0.001037
+    },
+    {
+      "index": 6,
+      "file": "sample-06.md",
+      "tokens": 8393,
+      "cost_usd": 0.000315
+    },
+    {
+      "index": 7,
+      "file": "sample-07.md",
+      "tokens": 8734,
+      "cost_usd": 0.000434
+    },
+    {
+      "index": 8,
+      "file": "sample-08.md",
+      "tokens": 8716,
+      "cost_usd": 0.000428
+    },
+    {
+      "index": 9,
+      "file": "sample-09.md",
+      "tokens": 8403,
+      "cost_usd": 0.000318
+    },
+    {
+      "index": 10,
+      "file": "sample-10.md",
+      "tokens": 8501,
+      "cost_usd": 0.000352
+    }
+  ],
+  "total_tokens": 85174,
+  "total_cost_usd": 0.006606
+}

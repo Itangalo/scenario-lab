@@ -1,0 +1,33 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases``
+- **Finished this turn.**
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises``
+- **Finished this turn.**
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability``
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure``
+``Enact the AI Containment Protocol (category 3, costs 3 per turn, started turn 5, finishes on turn 7): A binding directive requiring all sovereign AI systems above 55.0 capability to operate under air-gapped, multi-party control with real-time anomaly detection and human-in-the-loop escalation``
+
+## New measure
+**Measure:** Launch the Openweight Watch Programme  
+A real-time monitoring system to detect when open-weight models reach dangerous capability thresholds, using distributed inference tracking and adversarial benchmarking to flag releases that approach or exceed 52.0 in open ecosystems.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: small`  
+`Finishes on turn: 6`  
+`Targeted effect:` Increase early warning of openweight risks; slow diffusion of dangerous capabilities by enabling rapid regulatory response; improve credibility of containment by showing enforcement is not blind to open channels  
+`Applies to:` All entities distributing model weights within the EU, and any open release hosted on platforms subject to EU jurisdiction (including GitHub-equivalent services operating in Europe)
+
+## Priority
+**Priority:** Enact the AI Containment Protocol  
+We are pushing hardest on containment this turn because the *capability_jump* has elevated the risk of catastrophic failure from theoretical to imminent — and without enforceable operational boundaries, even sovereign systems become vectors of harm if compromised or misaligned.
+
+## In practice
+This turn, we are acting on two fronts: closing the gap between ambition and enforcement in sovereign control, and finally acknowledging that what is loose matters as much as what is locked down. The EAAD, now formally operational, begins its first audits this quarter under emergency delegation from the Commission, focusing on SACP’s lead cluster in Sweden and the dual-key French-German site. We are fast-tracking staffing through Horizon Europe mobility pathways and invoking Article 336 TFEU for security clearance acceleration, but the bottleneck remains interpretability expertise — we are offering premium contracts to researchers at INRIA, Fraunhofer, and IST Austria to bridge it. SMAF reaches its final drafting stage this month, with legal services confirming retroactive application to all SACP development cycles; the Council’s Legal Affairs Committee will vote on delegated acts before summer. Meanwhile, construction at the Swedish InvestAI site progresses, though grid connection delays threaten the timeline — we are activating the solidarity mechanism under the revised Energy Union framework to prioritise power allocation, overriding national objections from Finland on fairness grounds.
+
+The AI Containment Protocol is now our sharpest instrument. We are treating it as non-negotiable: any system above 55.0 capability operating under EU jurisdiction must be air-gapped, monitored by EAAD-certified anomaly detectors, and require multi-party human authorization for goal modification or external data ingestion. We are negotiating with BNP Paribas, Siemens, and the German Federal Railway as first adopters in critical infrastructure, offering liability shielding in exchange for full compliance. At the same time, the Openweight Watch Programme launches as a lean but urgent response to the growing blind spot: open models are no longer toys. Using funding from Digital Europe and technical input from the newly formed ENISA-AI taskforce, we are deploying lightweight evaluators across mirror sites and torrent indexes to catch releases approaching 52.0 — the threshold where agents begin autonomous operation. When one is flagged, we will trigger a rapid-review procedure under Article 10 of the AI Act, with the option to block distribution or mandate hosting controls. This is not censorship; it is circuit-breaking, and we will frame it as such in the coming communication push.
+
+Public sentiment remains fragile. With only 25.0 trust, every move toward restriction risks backlash — but so does inaction after the bio-uplift scare. We are preparing a joint address with the European Centre for Disease Prevention and Control to clarify the difference between research transparency and uncontrolled release, tying it directly to the Watch Programme’s safeguards. The message is clear: we do not fear open science, but we will not allow open danger. Fiscal strain is acute — seven measures were running until today, and only two finish — so we are holding firm on cancellations: the Tech Sovereignty Package completes this turn and transitions into implementation monitoring, but we are not extending it. Its goals are absorbed into SACP and InvestAI. No new industrial lines start here. Our capital is thin, our mandates are heavy, and we are choosing control over sprawl.
