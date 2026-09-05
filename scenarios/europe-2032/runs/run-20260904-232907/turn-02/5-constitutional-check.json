@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative and notepad indicate four active measures (InvestAI Gigafactories, Tech sovereignty package, Emergency Sovereign Compute Directive, Resilience Surge) plus a named priority, totaling five distinct measures. This violates Constitutional Constraint 5, which limits the EU to at most one new measure per turn and at most one named priority. The constraint is not about cumulative measures over time but about the total number active and introduced per turn. Introducing three large measures and a priority in one turn (as stated in the narrative) clearly exceeds the limit of one new measure per turn.\n- Economic Constraint violated: The narrative states that €12bn is reprogrammed for the Resilience Surge, but no source for this reprogramming is identified, nor is it justified within the broader fiscal context. While reprogramming is possible, a significant reallocation of this scale requires an identifiable funding source or trade-off (e.g., cancellation of another program). Without such justification, this violates the requirement that capital expenditures have identified sources."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Modelling choice violated (Constraint 5): The narrative explicitly states that two new measures were introduced — the Emergency Sovereign Compute Directive and the Resilience Surge — which exceeds the limit of \"at most one new measure per turn.\" Although the Resilience Surge is later deferred, the act of introducing it alongside another new measure in the same turn still constitutes a violation. The constraint is on introduction, not retention."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

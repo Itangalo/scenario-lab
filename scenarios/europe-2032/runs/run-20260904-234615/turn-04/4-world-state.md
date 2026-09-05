@@ -1,0 +1,11 @@
+### Frontier Leaps Ahead as Verification Widens  
+AI capability advances to 58.0 as automated verification unlocks rapid progress in law, clinical coding, and engineering — domains once thought to require human judgment. This broadens the frontier’s economic impact and accelerates self-improvement loops. Openweight capability follows to 49.0, driven by rapid adaptation of leaked models now capable of autonomous fraud and document synthesis. The gap narrows, raising alarm about uncontrolled deployment.
+
+### EU Responds with Expanded Oversight  
+The Open-Weight Containment Initiative formally concludes, establishing emergency protocols and risk thresholds — but enforcement remains patchy. Hosting providers resist takedown orders, and academic networks challenge the EU’s reach. In response, the EU launches a major expansion of the European AI Assurance Directorate (EAAD), granting it authority to audit systems during training and to monitor open-weight threats. The move, framed as a nuclear-safeguards model for AI, faces immediate legal pushback from member states wary of centralised power.
+
+### Gigafactories Stalled, Sovereignty Erodes  
+InvestAI Gigafactories remain blocked in Brittany, where courts cite constitutional concerns over co-ownership. The Commission invokes Crisis Regulation Article 9, threatening to withhold Cohesion Funds, but the standoff drags on. A contingency plan to shift one site to Finland gains traction but delays timelines. With no sovereign compute online and capability rising, eu_ai_sovereignty slips further.
+
+### Resilience Gains Ground, Capital Tightens  
+Joint Threat Response Integration enters operational phase, with ENISA and HERA conducting live drills. Early coordination improves detection, yielding a resilience boost. However, political capital erodes under the weight of four large measures. The completed containment initiative delivers no bonus — its partial success too compromised — and the new EAAD expansion, while ambitious, draws criticism for overreach. Public sentiment holds steady, but civic groups mobilise against “AI policing,” slowing momentum.

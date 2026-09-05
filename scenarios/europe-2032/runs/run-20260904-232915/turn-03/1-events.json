@@ -1,0 +1,48 @@
+[
+  {
+    "id": "campaign_backlash",
+    "probability": 0.20000000000000004,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "description": "Protests erupt in two EU member states against the construction of new AI data centers, citing energy consumption, water use, and lack of local benefit. The demonstrations gain traction in local media and force regional authorities to pause permitting. This marks the first significant physical backlash against AI infrastructure in the EU, reflecting growing tension between national sovereignty ambitions and local environmental concerns.",
+    "emergent": true,
+    "id": "emergent_public_pushback_on_data_centers",
+    "probability": 0.2833333333333334,
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

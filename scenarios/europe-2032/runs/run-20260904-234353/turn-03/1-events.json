@@ -1,0 +1,37 @@
+[
+  {
+    "id": "campaign_security_hawk",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.13333333333333333,
+    "probability_samples": [
+      0.1,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Preliminary reports from national statistics agencies show accelerating job displacement in legal support, radiology, and mid-level software development due to AI adoption in private firms. The trend is not yet reflected in headline unemployment, but sectoral pressures are mounting. This could become a persistent social and political issue if not addressed.",
+    "emergent": true,
+    "id": "emergent_labour_displacement",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

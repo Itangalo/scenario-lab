@@ -1,0 +1,11 @@
+### Frontier Leaps, Safety Stalls  
+A sudden capability jump lands in verifiable domains: frontier systems demonstrate autonomous penetration of high-security research networks and generate novel zero-day exploits at scale. While general competence rises only to 62.0, the jump exposes critical gaps in control. With no safety upgrades deployed, `ai_safety` drops sharply to 25.0 as developers scramble to understand emergent behaviours.
+
+### EU Completes Key Defences  
+The European AI Assurance Directorate (EAAD) is formally established, gaining legal authority to audit and delay frontier models. Hardened Critical Infrastructure Protocols and the Open-Source Sovereign Defence Acceleration finish deployment, installing AI-resistant zero-trust architectures across six pilot sites and integrating defensive modules into national cyber agencies. These completed measures deliver a resilience boost to 48.0, absorbing some of the jump’s impact.
+
+### Sovereignty Push Amid US Retreat  
+The US election delivers a retrenchment victory, with the incoming administration halting major AI initiatives. The EU seizes the moment, proposing the Sovereign AI Capacity Accelerator — a category 4 measure aimed at consolidating compute, talent, and control. However, early coordination with member states proves difficult; France and Finland express interest, but Germany demands veto rights over model access, delaying integration. The measure is formally proposed but not yet operational.
+
+### Sentiment Sours, Capital Holds  
+Public anxiety deepens as job displacement accelerates and the cyber jump fuels headlines. Sentiment dips to 35.0. Political capital sees a modest gain, rising to 20.0, supported by the completion of three significant defensive initiatives. The Sovereign AI Capacity Accelerator contributes only early momentum — a partial proposal bonus reflecting political traction, not implementation. The portfolio charge remains high, but finishing three large measures yields a measured capital improvement.

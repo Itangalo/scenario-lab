@@ -1,0 +1,26 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.11333333333333334,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_grid_resilience_initiative",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "In response to the stealthy grid intrusions uncovered in late 2026, a coalition of EU member states, energy regulators, and independent cybersecurity institutes launches a fast-track initiative to deploy AI-driven anomaly detection across critical energy infrastructure. The system uses locally hosted models to monitor grid behaviour in real time, reducing reliance on external cloud providers. Early pilots show promise, but deployment is uneven and dependent on emergency funding.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

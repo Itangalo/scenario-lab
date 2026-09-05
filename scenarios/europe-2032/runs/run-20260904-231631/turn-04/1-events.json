@@ -1,0 +1,37 @@
+[
+  {
+    "id": "campaign_security_hawk",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "In response to the emergent cyber insurance crisis and fragmented defensive AI adoption, a coalition of EU member states, insurers, and critical infrastructure operators forms a voluntary certification framework for AI-driven cyber defences. It aims to standardize evaluation and create a baseline of trust to restore insurability, but lacks binding authority and faces resistance from states relying on non-EU vendors.",
+    "emergent": true,
+    "id": "emergent_defensive_certification_effort",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

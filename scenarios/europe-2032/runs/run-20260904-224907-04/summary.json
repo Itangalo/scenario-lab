@@ -1,0 +1,145 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 66.0,
+    "openweight_capability": 56.0,
+    "ai_safety": 29.0,
+    "resilience": 41.0,
+    "eu_ai_sovereignty": 15.0,
+    "eu_political_capital": 17.0,
+    "public_sentiment": 42.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 31.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 37.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 57.0,
+        "openweight_capability": 44.0,
+        "ai_safety": 29.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 31.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 47.0,
+        "ai_safety": 32.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 27.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 62.5,
+        "openweight_capability": 50.0,
+        "ai_safety": 31.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 66.0,
+        "openweight_capability": 56.0,
+        "ai_safety": 29.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 17.0,
+        "public_sentiment": 42.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "campaign_atlanticist",
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_open_source_cyber_toolkit_release",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "openweight_frontier_release",
+    "safety_breakthrough",
+    "supply_chain_coercion"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_atlanticist"
+    },
+    {
+      "turn": 3,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_open_source_cyber_toolkit_release"
+    },
+    {
+      "turn": 4,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 5,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 5,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-04T22:55:25.536827",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_regional_data_sovereignty_push",
+      "description": "Subnational resistance to AI infrastructure intensifies as several regional governments within EU member states extend their moratoria on new data centres and demand binding agreements on energy use and local benefit sharing. This creates growing friction with Brussels' central compute strategy and forces ad hoc negotiations that undermine the Emergency Sovereign Compute Directive's coherence.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_open_source_cyber_toolkit_release",
+      "description": "The open-source AI-powered cyber toolkit, originally based on Kimi K3 derivatives, undergoes a major update that integrates autonomous attack chaining and evasive payload delivery. Its adoption by both red teams and malicious actors accelerates, leading to a measurable rise in low-skill, high-impact cyber intrusions across mid-tier European enterprises and municipal systems.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T22:55:29.794565"
+}

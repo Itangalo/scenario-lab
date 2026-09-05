@@ -1,0 +1,369 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8004321625084933,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8650659781286587,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0879153571633502,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1358895659329693,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4361319597604182,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08108667297695327,
+    "triggered": true
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.43333333333333335,
+    "probability_samples": [
+      0.4,
+      0.5,
+      0.4
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.11783305435668445,
+    "group_basis": "weighted",
+    "triggered": true
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.11783305435668445,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.3,
+      0.2,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.11783305435668445,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.912635076495944,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.31778106585468513,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6908374033162258,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6714630011792506,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2390641671452639,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9133309295762198,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19332308513572927,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4730321161676061,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6577519287015283,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8664355144513756,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.29912858332256675,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.06349341677497566,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.10552760810923933,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5282162216867242,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regulatory_fragility",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A series of national audits reveal that multiple EU member states have failed to implement core monitoring requirements of the AI Act for high-risk systems, particularly in law enforcement and public hiring. The findings, leaked by an internal whistleblower, show patchy enforcement, outdated compliance checklists, and reliance on self-certification by vendors using models whose capabilities have long since outpaced the evaluation frameworks. This undermines the credibility of the Union's regulatory model just as public anxiety peaks.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9619502223004274,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_red_team_fracture",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "France and Italy, frustrated by lack of shared command over red-teaming operations, withdraw from ENISA's Dublin unit and launch a parallel initiative with independent threat models and access protocols. The split weakens overall assessment coherence and signals deepening divergence in EU sovereign control strategy.",
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6344021788955975,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereignty_backlash",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "Several regional governments in EU member states refuse to implement the Sovereign Control Framework, citing overreach and lack of democratic mandate, and begin negotiations with non-U.S. cloud providers outside the EU's revocation framework. This creates a patchwork of compliance that undermines the credibility of the Union's enforcement mechanism.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_lab_fracture",
+    "probability": 0.03,
+    "emergent": true,
+    "description": "Following the leaked audit and the consulting agent leak, a faction within a leading AI laboratory publicly breaks with its parent company, releasing a white paper arguing that current safety practices are indefensible and announcing a new open initiative to develop auditable, constrained agents. The move fractures developer consensus and draws support from academic safety researchers across Europe.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.09
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

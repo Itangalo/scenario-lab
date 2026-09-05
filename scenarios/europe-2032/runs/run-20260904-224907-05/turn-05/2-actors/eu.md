@@ -1,0 +1,33 @@
+Sovereign AI as a trusted public good, not just a capability
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Sovereign AI as a trusted public good, not just a capability``
+- Trigger: the two-year commitment period closes this turn
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but this turn, we have been wrong in form, not in direction: the Compute Directive has cost us capital without securing capacity, and we now adjust instrument, not intent. However, the **ai_investment_collapse** and **campaign_backlash** have changed the terrain: we no longer face a frontier outpacing us, but one contracting — and a public that no longer fears what AI will do, but what it already has done. Our commitment now includes *anchoring sovereignty in restraint as much as in build-out*, accepting that legitimacy is not restored by speed alone. The **backlash_physical** and **election_retrenchment** have hardened this shift: we are no longer racing to catch up, but fighting to hold ground. Our early bet on speed failed, but our deeper principle — that the EU must not be subject to decisions it cannot contest — remains. Now, we act not to match the frontier, but to *define a different frontier*: one where safety, auditability, and public contestability are not add-ons, but the core architecture. This is still acting under uncertainty — we do not know if restraint can become strength — but we know that without trust, no capacity will be usable.
+- Grounds: The **backlash_physical** has moved opposition from the ballot box to the grid connection, making any new infrastructure politically toxic without legitimacy. At the same time, **election_retrenchment** in the US has paused the global race, creating a rare window: the frontier is no longer accelerating beyond reach, and the second-place power is gaining ground. This means the EU is no longer merely behind — it is *between* two models: one collapsing under its own weight, the other retreating into defensiveness. Our path is neither to chase nor to hide, but to build a system so clearly accountable that it becomes the default choice for public institutions, even when more powerful alternatives exist. That requires not just acting under uncertainty, but redefining what strength looks like.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Frontier Foundation Model Initiative (category 4, costs 3 per turn, started turn 2, finishes on turn 8): Launch a publicly funded, EU-controlled effort to train and deploy a sovereign foundation model at or beyond the current frontier, hosted on EU-resident infrastructure with full weight security and open only to verified public-interest actors``
+``Sovereign Model Safety Envelope (category 5, costs 3 per turn, started turn 3, finishes on turn 7): Embed mandatory, auditable safety protocols into the architecture of the Frontier Foundation Model, including real-time agent monitoring, interpretability layers, and a public accountability interface for high-stakes decisions``
+``Cross-Border AI Audit Corridor (category 1, costs 3 per turn, started turn 4, finishes on turn 6): Establish a permanent, independent mechanism for auditing high-risk AI systems across member states, with binding authority over public-sector deployments and sovereign models, to restore trust and preempt fragmentation``
+
+## New measure
+**Public Accountability Interface Mandate**  
+Require all high-risk public AI systems to include a real-time, citizen-accessible interface explaining decisions, sources, and appeal paths, turning opacity into a political liability.
+
+Category: 9 (Diffusion, adoption and public trust)  
+Size: large  
+Finishes on turn: 6  
+Targeted effect: +10 to +15 to public_sentiment by turn 6; increases pressure on private providers to match transparency; strengthens legitimacy of sovereign model by contrast; feeds into Cross-Border AI Audit Corridor’s enforcement pipeline  
+Applies to: All high-risk AI systems deployed in public services across EU member states, including welfare, policing, education, and migration
+
+## Priority
+**Cross-Border AI Audit Corridor** — because the **backlash_physical** and **election_retrenchment** have created a crisis of legitimacy that now outranks both build-out and adoption: if we cannot unify oversight, we lose coherence; if we cannot demonstrate enforceable accountability, we lose permission to act. This measure is the keystone — it binds the sovereign model to public scrutiny, absorbs regional resistance, and begins to rebuild trust where it matters most.
+
+## In practice
+We are anchoring sovereignty not in compute alone, but in accountability. The **Cross-Border AI Audit Corridor** moves from design to staffing: we are appointing a founding board under Article 114 TFEU, drawing auditors from ELLIS, national supreme audit institutions, and civil society watchdogs with a mandate to inspect, red-team, and publicly report on any high-risk public AI system. Binding authority to halt deployments will be tested early — we are preparing a review of the French welfare algorithm and the German border risk assessment model by turn 6. Resistance from two member states remains, but we are offering opt-in fast-tracking of Gigafactory grid upgrades in exchange for participation, tying infrastructure to oversight in a way that makes defiance costly.
+
+The **Public Accountability Interface Mandate** launches in parallel: we are drafting delegated acts under the AI Act to require real-time explanation interfaces for all high-risk public AI decisions, with clear appeal paths and source transparency. This is not a dashboard — it is a political weapon against opacity. We are piloting it with the Dutch healthcare triage system and the Spanish unemployment algorithm, where recent scandals have made reform unavoidable. The **Sovereign Model Safety Envelope** integrates both efforts: interpretability layers from the Foundation Model will feed directly into the Audit Corridor’s monitoring pipeline, and the public interface will be a default feature of any sovereign model deployment. We are no longer building in isolation — we are building under glass.

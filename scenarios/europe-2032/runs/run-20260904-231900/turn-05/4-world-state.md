@@ -1,0 +1,10 @@
+### US Election Sets New Reality  
+The United States elects a new administration that treats advanced AI as a strategic national asset, tightening export controls and rationing foreign access based on security alignment. While allies retain privileged status, they are no longer treated as equals in AI access—Washington now decides who gets what, and when. The EU, already dependent on foreign compute, faces a stark new reality: frontier capability will be conditional, not guaranteed.
+
+### Breakthrough Amid Backlash  
+A major interpretability advance allows developers to predict and verify agent behaviour in high-stakes environments, significantly improving confidence in deployed systems. The result spreads rapidly across leading labs, lifting `ai_safety` by +5. Yet this progress is overshadowed by structural fragility: the gap between capability and control remains wide, and public trust erodes further as legal challenges mount over AI use in public services.
+
+### Sovereignty Stalls, Capital Erodes  
+The EU completes the Open-Weight Monitoring Initiative, enhancing early detection of dangerous open models and contributing +1 to `resilience`. A limited number of leaked model components are reassembled into narrow operational tools, allowing a modest increase in distributed capability—raising `openweight_capability` by +1. However, no broad, coordinated system emerges; fragmentation persists, and the uncontrolled diffusion does not translate into systemic resilience or strategic autonomy. The proposed Sovereign AI Core initiative remains in early planning, with no implementation begun—its launch delayed due to portfolio saturation. Member states continue parallel procurement efforts, deepening fragmentation. With `ai_capability` rising by 2.0, the −1 decay applies, but no new access event occurs.
+
+Political capital declines under sustained portfolio pressure. The priority on InvestAI Gigafactories yields no acceleration, as local opposition and grid constraints delay site finalisation. The burden of ongoing commitments grows, but no new measure is activated this turn.

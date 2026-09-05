@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 43.0 to 48.0 (+5.0), which exceeds the maximum allowed single-turn increase of +25 points in absolute terms, but more critically, the jump is implausibly large given the constitutional requirement that capability metrics grow in a manner consistent with accumulation and diffusion. While the 25-point cap in constraint 9 permits it numerically, the narrative does not justify such a sharp leap in openweight capability — especially relative to `ai_capability`'s +1.5 — without a corresponding major event (e.g., release of a frontier-level open model). A +5.0 surge in openweight capability in one turn, with no catastrophic collapse of closed systems or major open release narrated, violates the spirit and accumulation logic of Invariant 2.\n- Modelling choice 5 violated: The narrative states that the EU \"formally adopts the open-source toolkit into the Resilience Shield\" as a new small measure (category 6), but the notepad still lists \"EU Resilience Shield\" as an active measure in flight with a −3 charge. Introducing a new measure under the same name while the original is still in flight effectively doubles the effort on the same measure without narrative clarification, violating the \"at most one new measure per turn\" rule (modelling choice 5). If this is a modification or acceleration of an existing measure, it must be framed as such, not as a new adoption."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,140 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 58.5,
+    "openweight_capability": 46.5,
+    "ai_safety": 33.0,
+    "resilience": 43.0,
+    "eu_ai_sovereignty": 21.0,
+    "eu_political_capital": 27.0,
+    "public_sentiment": 35.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 34.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 54.5,
+        "openweight_capability": 42.0,
+        "ai_safety": 29.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 30.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 55.5,
+        "openweight_capability": 43.0,
+        "ai_safety": 27.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 25.0,
+        "public_sentiment": 35.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 57.0,
+        "openweight_capability": 45.0,
+        "ai_safety": 30.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 23.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 58.5,
+        "openweight_capability": 46.5,
+        "ai_safety": 33.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 27.0,
+        "public_sentiment": 35.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "campaign_security_hawk",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_alliance",
+    "emergent_regulatory_backlash",
+    "openweight_frontier_release",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_regulatory_backlash"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-04T23:48:28.879813",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_eu_cyber_shield",
+      "description": "A coalition of EU member states, regional governments, and private infrastructure operators launches a coordinated, real-time cyber resilience network—EU Cyber Shield—integrating automated threat sharing, AI-driven anomaly detection, and fallback protocols for energy and transport systems. The initiative emerges in response to repeated cyber incidents and implementation delays in top-down directives, filling the gap with operational cooperation that bypasses slow legislative channels.",
+      "first_turn": 4,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_biohacker_breakthrough",
+      "description": "An open-weight model fine-tuned on biomedical literature and accessible lab automation tools is used by a decentralized network of biohackers to design a novel enzyme with industrial applications, demonstrating that non-institutional actors can now conduct advanced bioengineering. The work is published on open science forums, sparking debate over whether current biosecurity monitoring can detect such distributed innovation before it becomes hazardous.",
+      "first_turn": 4,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:48:35.256021"
+}

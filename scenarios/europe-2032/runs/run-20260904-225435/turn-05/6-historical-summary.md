@@ -1,0 +1,9 @@
+Global AI capability rose to 67.0 as autonomous systems advanced self-improving training loops, while open-weight models reached 55.0, enabling scalable unsupervised cyber operations. Safety declined sharply to 26.0 amid stagnant governance and ongoing containment breaches, with no new international frameworks established.
+
+The EU completed the European AI Incident Response Corps, achieving full integration across seven member states and conducting its first live-fire drill, though operational limitations in distinguishing AI attacks from system failures were exposed. This category 6 measure provided a modest resilience boost. The Secure Open-Source Evaluation Access Framework remained operational, enhancing EU oversight despite criticism over academic exclusion.
+
+The Sovereign Semiconductor Conversion Initiative remained stalled despite Article 356 TFEU invocation, with no binding commitments from ASML or Soitec due to U.S. pressure and WTO concerns; no physical conversion began. InvestAI Gigafactories saw site approvals finalized but faced construction delays from supply bottlenecks and local opposition, with disbursement tied to unresolved sovereign compute guarantees.
+
+Political capital continued to erode under the strain of multiple large initiatives. Public sentiment held at 42.0, reflecting persistent trust deficits amid growing AI dependence. Sovereignty remained at 20.0, supported by evaluation access gains but constrained by external dependencies.
+
+The U.S. elected a president signaling tight control over frontier AI, introducing tiered access for foreign partners and national security reviews for model exports. While implementation begins next turn, the shift weakens the EU’s leverage under the AI Act, threatening frontier model access for non-compliance. US_POSTURE: pending.

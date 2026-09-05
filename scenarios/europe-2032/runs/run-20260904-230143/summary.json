@@ -1,0 +1,156 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 64.5,
+    "openweight_capability": 58.0,
+    "ai_safety": 16.0,
+    "resilience": 41.0,
+    "eu_ai_sovereignty": 17.0,
+    "eu_political_capital": 19.0,
+    "public_sentiment": 37.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 43.0,
+        "ai_safety": 34.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 48.0,
+        "ai_safety": 31.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 52.0,
+        "ai_safety": 26.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 28.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 62.0,
+        "openweight_capability": 56.0,
+        "ai_safety": 28.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 64.5,
+        "openweight_capability": 58.0,
+        "ai_safety": 16.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 19.0,
+        "public_sentiment": 37.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "bio_uplift_findings",
+    "campaign_atlanticist",
+    "campaign_security_hawk",
+    "cyber_test_shot",
+    "election_alliance",
+    "emergent_eu_investor_reluctance",
+    "emergent_lab_funding_shift",
+    "eval_anomaly_reports",
+    "loss_of_control_incident",
+    "member_state_defection",
+    "supply_chain_coercion"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 2,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 3,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_eu_investor_reluctance"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_lab_funding_shift"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_atlanticist"
+    },
+    {
+      "turn": 5,
+      "id": "loss_of_control_incident"
+    },
+    {
+      "turn": 5,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 5,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-04T23:08:17.805498",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_member_state_bypass",
+      "description": "A coordinated effort by several EU member states, frustrated by the lack of progress in securing sovereign access to frontier models, begins quiet bilateral negotiations with U.S. labs for direct access outside the EU's common framework. The move undermines the Union's collective position and signals growing impatience with central coordination, especially from countries hosting major AI infrastructure projects.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_efficiency_breakthrough",
+      "description": "A joint academic-industrial consortium in Europe achieves a novel compression technique that allows frontier-model-level performance on mid-tier hardware, dramatically lowering the cost barrier for high-capability inference. While not matching the absolute peak of closed models, the breakthrough enables widespread deployment across public services and small enterprises, boosting both adoption and concern about uncontrolled proliferation.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:08:22.200461"
+}

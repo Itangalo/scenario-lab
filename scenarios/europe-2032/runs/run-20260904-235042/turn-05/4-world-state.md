@@ -1,0 +1,11 @@
+### A Fragile Reprieve  
+The United States elects a new president who signals a cooperative stance toward allied AI development, offering structured access to frontier models for vetted European institutions. The move brings immediate operational relief: locked systems reopen, joint evaluation protocols are drafted, and data flows resume. Yet the offer comes with expectations—alignment on export controls, standards, and third-country engagements—raising concerns that dependency is being repackaged, not resolved.
+
+### Sovereign Systems Hold, But Strain  
+The EU’s sovereign AI nodes in Norrland and Brittany remain operational, supporting cancer screening and grid management under EAAD oversight. No critical failures occur, and the integration of air-gapped fallbacks proves its worth during a minor cyber anomaly traced to a third-party vendor. The €4.5bn interconnect project advances, with quantum-resistant links under construction. However, legal challenges to the use of emergency treaty powers persist, and two member states condition full cooperation on preferential access to compute resources—revealing the limits of leverage-by-benefit.
+
+### Corps Progresses, Capital Tight  
+The Sovereign AI Resilience Corps, already in flight, continues its phased recruitment through technical universities and national cyber agencies. Initial training modules are deployed, and staffing targets are revised downward due to competition with private-sector hiring. With six measures still active—including the priority Foundational Compute Access Initiative—political capital remains stretched. The portfolio charge overwhelms modest gains from operational stability and public benefit. A planned expansion of the resilience fund fails to gain traction in the Council, blocked by fiscal hawks.
+
+### Sentiment Edges Up  
+Public anxiety softens slightly as live AI services demonstrate reliability in healthcare and energy. No major incidents occur, and visible utility offsets some job displacement concerns. Sentiment rises, but remains below 50—cautious approval, not endorsement.

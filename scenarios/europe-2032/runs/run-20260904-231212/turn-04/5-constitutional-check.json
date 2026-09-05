@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 47.0 to 53.0 (+6.0), but `ai_capability` increased only from 58.0 to 60.0 (+2.0). Since `openweight_capability` must never exceed `ai_capability` and both are accumulation metrics that cannot fall (except under catastrophic physical destruction, which is not narrated), this violates the rule that `openweight_capability` ≤ `ai_capability`. The update results in `openweight_capability` (53.0) being greater than `ai_capability` (60.0) — which is allowed — but the *rate of growth* of `openweight_capability` (+6.0) far exceeds that of `ai_capability` (+2.0), which is structurally implausible under the invariant that openweight is a trailing, dependent capability. More critically, the narrative does not justify how open models gained such a leap without a corresponding rise in frontier capability or a specific diffusion event from frontier systems — especially since the frontier access was denied. The jump implies a reversal of the usual dynamic, effectively suggesting open models surpassed the frontier, which contradicts the invariant that `openweight_capability` never exceeds `ai_capability` at any point.\n- Narrative violates Constitutional Constraint 8 (No telegraphing): The narrative states \"emergent_grid_security_mandate [...] creates de facto harmonisation. This institutional momentum turns a policy signal into an active regulatory shift.\" This implies a future effect (\"will lead to regulation\") and telegraphs that the gate is opening, which is not permitted. The notepad may track emerging events, but the narrative must not imply inevitability or current realization of future outcomes. Similarly, \"emergent_regional_ai_pact [...] could evolve into a de facto standard bloc\" is acceptable, but \"gains momentum as member states bypass stalled EU-level negotiations\" implies a directional shift that borders on forecasting; however, this is ambiguous enough to be permissible. The stronger violation is in the grid mandate text, which asserts an active regulatory shift has occurred, effectively pre-empting an event gate."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

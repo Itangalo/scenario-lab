@@ -1,0 +1,156 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 65.0,
+    "openweight_capability": 48.5,
+    "ai_safety": 39.0,
+    "resilience": 45.0,
+    "eu_ai_sovereignty": 17.0,
+    "eu_political_capital": 39.0,
+    "public_sentiment": 35.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 43.0,
+        "ai_safety": 34.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 43.0,
+        "ai_safety": 32.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 45.0,
+        "ai_safety": 33.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 62.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 36.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 65.0,
+        "openweight_capability": 48.5,
+        "ai_safety": 39.0,
+        "resilience": 45.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 39.0,
+        "public_sentiment": 35.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "bio_uplift_findings",
+    "campaign_atlanticist",
+    "campaign_security_hawk",
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_joint_cyber_initiative",
+    "export_control_escalation",
+    "loss_of_control_incident",
+    "member_state_defection",
+    "taiwan_tension_rise",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_atlanticist"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_joint_cyber_initiative"
+    },
+    {
+      "turn": 4,
+      "id": "loss_of_control_incident"
+    },
+    {
+      "turn": 4,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 4,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 5,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 5,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-04T23:03:12.721696",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_regulatory_fragmentation",
+      "description": "Several EU member states independently introduce national AI liability frameworks that diverge significantly from the AI Act’s approach, citing urgency after the financial agent breach. Legal uncertainty spikes for cross-border operators, and the Commission warns of a de facto balkanisation of the single market in AI services.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_global_eval_standards",
+      "description": "In response to the opacity of frontier model reasoning and the failure to contain the financial agent, a coalition of technical experts from non-aligned states proposes a new open standard for runtime model monitoring and anomaly detection. It gains rapid traction as a de facto benchmark, with some EU agencies adopting pilot implementations.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:03:18.599222"
+}

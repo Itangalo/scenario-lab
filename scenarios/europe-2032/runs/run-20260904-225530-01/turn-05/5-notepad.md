@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European AI Assurance Directorate −3, Hardened Critical Infrastructure Cyber Shield −3, Sovereign AI Compute Initiative −3, Reskilling and Transition Acceleration Facility −3, priority −1 = −19  
+PROPOSAL BONUS: Establish binding pre-deployment evaluation thresholds (cat 1, large) +4 — directly answers cyber_major_incident and collapse in ai_safety, both acute and recent  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, Sovereign AI Compute Initiative in flight +0, capability rose 3.5 −1 = 19.0 → rounded to 19.0

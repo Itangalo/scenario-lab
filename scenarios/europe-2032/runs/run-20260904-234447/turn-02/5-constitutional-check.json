@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Modelling choice violated (Constraint 5): The EU introduces the Continuity Access Protocol (CAP) as a new measure while already having three large measures (InvestAI Gigafactories, Tech Sovereignty Package, European AI Assurance Directorate) and a priority in flight. This results in four large measures and a priority active simultaneously, exceeding the limit of \"at most one new measure per turn, and at most one named priority.\" The narrative confirms CAP is a new measure and does not retire or consolidate any existing one, making this a clear breach.\n- Modelling choice violated (Constraint 5): The portfolio charge in the notepad includes a −1 for \"priority\", implying a priority is still active, and CAP is introduced without retiring it. Introducing a new large measure (CAP) while maintaining an existing priority and three other large measures violates the cap on concurrent initiatives. The constraint allows widening the scope of an existing measure, but CAP is a new measure, not a re-scoping.\n- Economic/Regulatory Constraint violated (Constraint 6): The narrative states CAP is a \"large category 4 measure\" launched in this turn with no indication of phased implementation or lead time. Given that high-cost measures require a minimum of two full turns for full effect and cannot be implemented instantly, the immediate launch and full portfolio charge imply instant implementation, violating the minimum time lag."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

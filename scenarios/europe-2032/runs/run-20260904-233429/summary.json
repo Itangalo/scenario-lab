@@ -1,0 +1,158 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 58.5,
+    "openweight_capability": 46.0,
+    "ai_safety": 28.0,
+    "resilience": 44.0,
+    "eu_ai_sovereignty": 17.0,
+    "eu_political_capital": 20.0,
+    "public_sentiment": 35.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 31.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 54.8,
+        "openweight_capability": 41.9,
+        "ai_safety": 28.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 43.5,
+        "ai_safety": 27.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 33.0,
+        "public_sentiment": 36.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 45.0,
+        "ai_safety": 24.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 58.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 28.0,
+        "resilience": 44.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 35.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "automated_decision_scandal",
+    "backlash_physical",
+    "campaign_security_hawk",
+    "capability_plateau_evidence",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_control_standard_emerges",
+    "eval_anomaly_reports",
+    "member_state_defection",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 2,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 2,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 2,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 3,
+      "id": "backlash_physical"
+    },
+    {
+      "turn": 3,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 4,
+      "id": "backlash_physical"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 5,
+      "id": "emergent_control_standard_emerges"
+    },
+    {
+      "turn": 5,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 5,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 5,
+      "id": "backlash_physical"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-04T23:43:46.128976",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_industrial_compute_cooperative",
+      "description": "A coalition of mid-sized EU industrial firms, facing both AI-driven disruption and restricted access to frontier models, launches a shared sovereign compute cooperative hosted on decommissioned military sites in Finland and Romania. Backed by private capital and tacit national support, it begins offering secure inference for sensitive sectors. This is an organic, bottom-up response to the failure of top-down sovereign compute initiatives.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:43:52.586061"
+}

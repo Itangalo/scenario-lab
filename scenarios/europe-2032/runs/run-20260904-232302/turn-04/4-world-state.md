@@ -1,0 +1,11 @@
+### The Cost of Control
+
+The EU moves decisively in the wake of a major cyber intrusion and sudden denial of frontier AI access. Hospitals and energy operators report disruptions as a leading model is abruptly withdrawn, sparking outrage and urgent parliamentary hearings. In response, the European AI Assurance Directorate (EAAD) issues its first binding delay order on a model rated at 58.1, citing autonomous cyber exploitation risks. Legal challenges from the developer and two member states immediately follow, questioning the EAAD’s authority under contested legislation.
+
+Meanwhile, the Cyber Resilience Activation Directive is launched as a large category 6 measure, mandating AI-driven detection systems across essential operators. ENISA freezes cohesion funds for three states lagging on cyber defences, triggering backlash from national governments who accuse Brussels of overreach. The Resilience Shield Initiative accelerates joint red-teaming, integrating nascent cooperation from a regional cyber pact into EU coordination structures.
+
+Sovereignty efforts face headwinds. Despite redefining Gigafactories as assurance hubs, legal disputes over audit rights and data routing delay full operational status. The EU’s access to frontier models is severed without appeal, a direct blow to its technical and institutional capacity. This event, combined with a 1.5-point rise in global AI capability, erodes both sovereignty and safety.
+
+AI capability advances to 59.0 as labs refine autonomous research despite investment headwinds. With no safety upgrades deployed at scale, and the EAAD’s authority still unproven in court, the control gap widens. Open-weight models reach 46.0, reflecting wider availability of powerful but unregulated tools. Resilience improves slightly due to early enforcement actions and threat-sharing gains, but public sentiment holds steady at 37.0 amid anxiety over disruptions and centralised mandates.
+
+Political capital declines under the weight of five large measures and a high-stakes priority. The emergency activation of the EAAD yields no immediate political gain, as legal uncertainty persists. The portfolio charge remains severe, and no finishing measures offset the cost.

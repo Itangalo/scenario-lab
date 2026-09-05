@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Compute Access Guarantee −3, Critical Incident Resilience Activation −3, priority −1 = −13  
+PROPOSAL BONUS: Sovereign Compute Access Guarantee (cat 4, large) +5 — directly answers export_control_escalation and election_consolidation, major and immediate threats to access  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no category 4 finish this turn, Gigafactories and Tech Sovereignty in flight +1, export_control_escalation t5 −2 (access partially taken away), capability rose 1.0 (less than 2, no −1) = 19.0

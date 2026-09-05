@@ -1,0 +1,50 @@
+[
+  {
+    "id": "campaign_backlash",
+    "probability": 0.20000000000000004,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "description": "An open-weight model leak from a Chinese lab, distributed via academic collaboration networks, delivers a sudden jump in autonomous agent capability to underground developer communities. The model was not officially released, but its weights appear on torrent and mirror sites across Europe within weeks. This accelerates openweight capability in practice, though not yet reflected in the metric, and triggers emergency discussions in EU cybersecurity agencies about uncontrolled diffusion paths.",
+    "emergent": true,
+    "id": "emergent_clandestine_model_leak",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coordinated lobbying push by European semiconductor and cloud infrastructure firms results in the formation of a new industry consortium—'AI Sovereignty Alliance'—that begins aligning investment, standards, and export practices to strengthen collective leverage. The group gains observer status in upcoming Digital Markets Act reviews and starts shaping de facto technical norms. This is not a state-led initiative, but it creates a durable coordination channel that persists beyond political cycles.",
+    "emergent": true,
+    "id": "emergent_industry_consortium_formed",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.3,
+      0.2,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

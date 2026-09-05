@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Frontier Foundation Model Initiative −3, Sovereign Model Safety Envelope −3, Cross-Border AI Audit Corridor −3, Public Accountability Interface Mandate −3, priority −1 = −19  
+PROPOSAL BONUS: Public Accountability Interface Mandate (cat 9, large) +3 — directly answers backlash_physical and emergent_labour_unrest, both escalating and recent  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 2.5 −1, export_control_escalation t5 −1 = 17.0 → but Sovereign Model Safety Envelope in flight yields +1 as finish nears → 18.0  
+emergent_audit_backlash -- listed in 1 turn(s) so far: Legal challenges to the Cross-Border AI Audit Corridor gain momentum, with three member states filing preliminary references to the ECJ, arguing overreach on national regulatory authority.  
+emergent_labour_unrest -- listed in 2 turn(s) so far: Cross-border worker networks expand, linking tech and public sector unions in coordinated actions against AI procurement. Protests disrupt municipal AI rollouts in Berlin and Marseille.

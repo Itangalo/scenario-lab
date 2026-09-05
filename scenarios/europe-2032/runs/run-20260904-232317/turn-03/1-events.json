@@ -1,0 +1,61 @@
+[
+  {
+    "id": "campaign_atlanticist",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coalition of European open-source security communities, academic labs, and mid-sized cyber firms forms an informal alliance to develop and deploy defensive tooling. Backed by emergency funding from national innovation agencies, they begin publishing automated detection modules trained on the latest intrusion patterns, aiming to close the gap before institutional responses can form.",
+    "emergent": true,
+    "id": "emergent_open_source_security_alliance",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Following the discovery of the cross-continental cyber intrusion, several EU member states publicly demand an emergency summit on digital sovereignty, citing the failure of external providers to protect critical infrastructure. The backlash focuses on reliance on non-EU hyperscalers, with proposals for mandatory on-premise AI deployment for essential services gaining traction in Germany and Poland.",
+    "emergent": true,
+    "id": "emergent_cyber_sovereignty_backlash",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

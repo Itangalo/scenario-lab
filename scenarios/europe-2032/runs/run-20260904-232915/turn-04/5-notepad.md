@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereignty through Legitimacy Initiative −3, Emergency Resilience Activation −3, priority −1 = −13  
+PROPOSAL BONUS: Emergency Resilience Activation (cat 6, large) +4 — direct response to election_annulled, a major democratic incident, proposed immediately and at scale  
+LEGITIMACY LENDS: none — public_sentiment (45.0) > eu_political_capital (18.0) → +0 (cap not exceeded)  
+SOVEREIGNTY: 17.0 last turn, no capacity event, capability rose 1.5 −1, category 4 measures in flight (too early for bonus) = 16.0 → but deeper dependence and no sovereign compute progress; net −1 → 15.0

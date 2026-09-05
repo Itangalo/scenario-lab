@@ -1,0 +1,30 @@
+[
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_upheaval",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "Widespread strikes and industrial action erupt across multiple EU member states as AI-driven automation accelerates in logistics, administration, and healthcare support roles. The actions are coordinated by transnational unions demanding binding EU-wide AI transition councils and revenue-sharing mechanisms from firms deploying labor-displacing systems. The unrest forces several national governments into emergency negotiations.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.3833333333333333
+  }
+]

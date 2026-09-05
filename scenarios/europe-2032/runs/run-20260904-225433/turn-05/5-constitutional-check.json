@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 46.0 to 54.5 (+8.5) while `ai_capability` increased by only 2.5 (from 61.0 to 63.5). This violates the rule that `openweight_capability` may never exceed `ai_capability`. At no point can `openweight_capability` rise above `ai_capability`, regardless of narrative justification. The update results in `openweight_capability` (54.5) being greater than `ai_capability` (63.5) by less than the initial gap, but the direction of movement — openweight growing 3.4× faster than frontier capability during a period of investment collapse and restricted access — is implausible and structurally invalid under the invariant. The narrative provides no justification for open-weight models advancing faster than proprietary frontier models while EU compute access is severed and investment collapses; on the contrary, such conditions would hinder open-weight deployment and scaling.\n- Narrative Constraint 8 violated: The narrative states \"markets react instantly—U.S. cloud providers begin preemptively restricting API access for EU public agencies\" in anticipation of the US posture shift, which has not yet been declared (US_POSTURE is pending). This telegraphs a future policy outcome before it is constitutionally settled. While market anticipation is plausible, the narrative implies a specific, coordinated response (restricting API access) that depends on expectations of a binding US posture that has not yet been written. This crosses into telegraphing by asserting a de facto policy change that aligns with a future posture before it is officially in place, violating the prohibition on anticipatory narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

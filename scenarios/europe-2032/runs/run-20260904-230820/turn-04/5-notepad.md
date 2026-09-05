@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Tech sovereignty package −3, Critical Infrastructure AI Hardening Initiative −3, European Cyber Resilience Corps −2, Sovereign AI Testbed and Assurance Facility −3, priority −1 = −12  
+PROPOSAL BONUS: Sovereign AI Testbed and Assurance Facility (cat 5, large) +3 — addresses cyber_major_incident and persistent ai_safety decline  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, no capacity event, capability rose 2.0 −1 = 20.0  
+emergent_grid_hardening_initiative -- first noted turn 2, listed in 4 turn(s) so far: Early AI monitoring pilots show promise in detecting synthetic malware patterns, but integration remains fragmented across national systems.  
+emergent_cyber_labour_shortage -- first noted turn 4, listed in 2 turn(s) so far: Recruitment for the European AI Defence Lab stalls as private firms outbid public salaries; reliance on automated tools grows. The European Cyber Resilience Corps begins training but cannot meet near-term demand, leaving critical gaps in national cyber defences.

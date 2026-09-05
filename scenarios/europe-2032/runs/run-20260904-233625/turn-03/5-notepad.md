@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Sovereign Compute Directive finished, Resilience Surge Initiative −3, Sovereign Audit Access Framework −3, priority −1 = −13  
+PROPOSAL BONUS: Sovereign Audit Access Framework (cat 1, large) +3 — answers welfare scandal (internal, turn 2) and openweight_frontier_release (turn 3), both recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, capability rose 1.5 −1 = 19.0  
+emergent_lab_cooperation -- first noted turn 2, listed in 2 turn(s) so far: In response to the growing safety concerns and the recent cyber intrusion, leading AI laboratories outside the EU begin informal coordination on safety benchmarks and red-team sharing, driven by shared interest in avoiding catastrophic failures. This is not an official coalition, but a network of researchers exchanging best practices under the radar.  
+emergent_public_debate -- first noted turn 2, listed in 2 turn(s) so far: A surge in public debate across European media and civil society forums questions the pace of AI deployment, especially after the cyber incident. Unlike previous scepticism, this discourse focuses on institutional accountability rather than technology per se, prompting several national parliaments to schedule emergency hearings on AI governance.

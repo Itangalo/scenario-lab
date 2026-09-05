@@ -1,0 +1,149 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 58.5,
+    "openweight_capability": 49.0,
+    "ai_safety": 30.0,
+    "resilience": 43.0,
+    "eu_ai_sovereignty": 21.0,
+    "eu_political_capital": 30.0,
+    "public_sentiment": 44.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 34.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 43.0,
+        "ai_safety": 32.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 44.5,
+        "ai_safety": 30.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 31.0,
+        "public_sentiment": 44.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 47.0,
+        "ai_safety": 28.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 32.0,
+        "public_sentiment": 44.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 58.5,
+        "openweight_capability": 49.0,
+        "ai_safety": 30.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 30.0,
+        "public_sentiment": 44.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "bio_uplift_findings",
+    "campaign_security_hawk",
+    "capability_plateau_evidence",
+    "cyber_test_shot",
+    "election_alliance",
+    "emergent_labour_displacement",
+    "middle_power_coalition",
+    "openweight_frontier_release",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 2,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 2,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 3,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_labour_displacement"
+    },
+    {
+      "turn": 4,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 4,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 4,
+      "id": "middle_power_coalition"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-04T23:50:35.572316",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_synthetic_impersonation_wave",
+      "description": "A coordinated disinformation campaign using AI-generated video and audio impersonating EU officials circulates widely on social media, targeting multiple member states during national debates on AI infrastructure. The content is sophisticated enough to fool initial verification checks, prompting emergency coordination between Europol and national agencies. While no election is annulled, trust in digital communications erodes further, especially in countries with low public sentiment.",
+      "first_turn": 4,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_pan_eu_labor_action",
+      "description": "Labor unions in three major EU countries jointly announce a pan-European strike action focused on AI-driven workplace automation, demanding binding limits on autonomous decision-making in hiring, promotion, and layoffs. The movement gains traction through viral worker testimonial videos generated with AI assistance, framing the issue as one of dignity rather than mere job loss. This shifts public discourse and increases pressure on the EU to deliver concrete labor protections.",
+      "first_turn": 4,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:50:42.079735"
+}

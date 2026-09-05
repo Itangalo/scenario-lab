@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European AI Assurance Directorate −3, European Resilience Shield −3, Open-Weight Risk Monitoring Network −2, priority −1 = −15  
+PROPOSAL BONUS: Open-Weight Risk Monitoring Network (cat 1, small) +1 — partially addresses rising openweight_capability and misuse visibility, though response is early and narrow  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, Gigafactories in flight +1, capability rose 3.0 −1 = 19.0  
+Emerging developments (tracked):  
+- `emergent_labour_displacement_wave` -- first noted turn 2, listed in 2 turn(s) so far: Preliminary labour data from Germany, France, and Poland show a synchronized 7% decline in mid-tier technical and administrative roles in the public and private sectors over the past six months, directly attributed to AI automation. Unions file coordinated grievances, and national debates intensify over retraining adequacy, feeding into the EU’s political capital strain.

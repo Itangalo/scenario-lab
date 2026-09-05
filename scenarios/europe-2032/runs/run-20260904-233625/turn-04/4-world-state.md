@@ -1,0 +1,14 @@
+### Frontier Widens, Access Secured  
+AI capability advances to 58.0 as automated reasoning pipelines refine agent persistence and cross-domain planning. The closed frontier pulls ahead, but the gap narrows in practice: a near-frontier model was released openly in turn 3, enabling distributed fine-tuning and deployment on consumer-grade hardware. While early adoption by technically skilled actors continues, integration bottlenecks and tooling gaps limit immediate diffusion. Without new infrastructure or coordinated deployment programs, openweight capability remains flat at 44.0—retaining the gains from the prior release but showing no further accumulation this turn.
+
+### Foundations Laid, Momentum Holds  
+The Emergency Sovereign Compute Directive is fully implemented, with the European Digital Infrastructure Consortium launching its first time auctions. This secures baseline access for critical public functions, a rare institutional win. Simultaneously, the Resilience Surge Initiative completes, delivering detection upgrades to energy and transport operators. While municipal adoption lags, the framework is now operational, boosting resilience to 43.0.
+
+### Pushing Through the Fog  
+The EU announces exploratory talks toward a Sovereign Model Access Pact, proposing future inspection rights over model weights and logs for high-risk AI systems as a condition of market access. Framed as a response to the opacity crisis, the idea gains traction in Germany and France, but faces strong resistance from U.S. developers, who label it intrusive. No formal proposal is tabled, and no legislative process begins this turn. The initiative remains in early consultation, with no budget, staffing, or enforcement mechanism yet allocated. As a result, political capital sees only a modest gain from completing prior measures, rising to 29.0.
+
+Sovereignty rises to 20.0: the completion of sovereign compute access provides a +1 gain, as recorded in the notepad, and is not offset by capability growth or institutional lag, which were already factored into the assessment. This reflects the hard-won access infrastructure now in place, even as broader control mechanisms remain under development.
+
+Public sentiment holds at 37.0, unmoved by technical gains but not further eroded. The welfare scandal’s shadow persists, and no visible public benefit offsets it.  
+
+*Notepad update: Emergency Sovereign Compute Directive finished. Resilience Surge Initiative finished. Sovereign Model Access Pact enters pre-proposal phase; no charge applied until formal launch. InvestAI Gigafactories and Tech sovereignty package remain active but paused pending prioritization. No new measure charge recorded this turn.*

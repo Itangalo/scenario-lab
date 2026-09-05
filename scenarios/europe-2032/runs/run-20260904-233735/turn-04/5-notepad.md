@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Talent & Knowledge Repatriation Initiative −3, Emergency Compute Talent Corridor −3, priority −1 = −13  
+PROPOSAL BONUS: Emergency Compute Talent Corridor (cat 4, large) +3 — addresses acute operational bottleneck exposed by Compute Directive and supply chain coercion  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, Sovereign Talent Initiative in flight +1, supply_chain_coercion t4 −1, capability rose 1.5 −1 = 21.0 → adjusted to 23.0 due to partial progress on talent integration and reaffirmed member-state commitments under pressure  
+emergent_labour_displacement_wave -- first noted turn 3, listed in 2 turn(s) so far: Automation in logistics and customer service triggers visible job losses and union protests across multiple EU countries, shifting public debate toward calls for restraint.

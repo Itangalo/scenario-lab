@@ -1,0 +1,151 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 60.0,
+    "openweight_capability": 51.0,
+    "ai_safety": 35.0,
+    "resilience": 48.0,
+    "eu_ai_sovereignty": 14.0,
+    "eu_political_capital": 33.0,
+    "public_sentiment": 38.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 34.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 43.0,
+        "ai_safety": 33.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 39.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 47.0,
+        "ai_safety": 32.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 35.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 49.0,
+        "ai_safety": 33.0,
+        "resilience": 44.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 32.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 51.0,
+        "ai_safety": 35.0,
+        "resilience": 48.0,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 33.0,
+        "public_sentiment": 38.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "campaign_backlash",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "emergent_clandestine_model_leak",
+    "emergent_industry_consortium_formed",
+    "eu_frontier_access_denied",
+    "export_control_escalation",
+    "joint_threat_response",
+    "member_state_defection",
+    "openweight_frontier_release",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 2,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_backlash"
+    },
+    {
+      "turn": 3,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_clandestine_model_leak"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_industry_consortium_formed"
+    },
+    {
+      "turn": 4,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 5,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-04T23:53:05.857239",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_civil_oversight_movement",
+      "description": "A coordinated civil society campaign emerges across three major EU countries, demanding democratic oversight of AI deployment in public services. It gains traction in national parliaments and forces the European Commission to convene an emergency forum with civic groups, slowing down adoption measures. The movement is decentralized but unified around transparency and accountability, exploiting low public sentiment and recent enforcement controversies.",
+      "first_turn": 4,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_efficiency_breakthrough",
+      "description": "A joint research initiative between European national labs and academic institutions unexpectedly achieves a breakthrough in energy-efficient training methods, reducing the computational cost of reaching mid-tier AI capability by 40%. This boosts confidence in EU-led innovation and creates a new focal point for public investment, though it does not yet close the frontier gap.",
+      "first_turn": 4,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:53:13.659636"
+}

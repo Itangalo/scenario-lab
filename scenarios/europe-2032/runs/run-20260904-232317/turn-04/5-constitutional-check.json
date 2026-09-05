@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 46.0 to 53.0 (+7.0), which is permissible only if `ai_capability` also increased by at least 7.0. However, `ai_capability` increased by only +2.0 (from 58.0 to 60.0), violating the rule that `openweight_capability` may not exceed `ai_capability` and must not grow faster than it absent extraordinary justification (e.g., catch-up after a lag). The narrative does not mention any catch-up mechanism, open-source breakthrough, or prior suppression of open models—required to justify such a divergence. This violates the invariant that `openweight_capability` never exceeds `ai_capability` and must accumulate no faster than it without explicit grounding.\n- Metric Rule 9 violated: `eu_political_capital` decreased by 5.0 (from 35.0 to 30.0), which is within bounds, but the notepad lists a portfolio charge of −16, implying a change of −16 to political capital. A change of −16 would violate the 25-point hard cap on metric movement, but more critically, the actual metric change (−5.0) is inconsistent with the notepad’s stated charge. Either the notepad is wrong (invalid, as it is the authoritative record), or the metric update does not reflect it. Since the notepad is authoritative and the metric move does not match, this creates a contradiction: if the charge is −16, the metric must fall by at least 16 (subject to floor), which would require a drop to 19.0 or below—unless mitigated by bonuses. No bonuses are listed. Therefore, the reported `eu_political_capital` of 30.0 violates the requirement that the metrics reflect the notepad’s accounting."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

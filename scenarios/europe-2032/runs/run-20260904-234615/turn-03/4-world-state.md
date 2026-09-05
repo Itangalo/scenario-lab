@@ -1,0 +1,11 @@
+### Frontier Pushes Ahead Amid Uncontrolled Leaks  
+AI capability advances to 56.5 as labs refine recursive self-improvement loops and deploy agents across broader research domains. The closed frontier pulls further ahead, though not yet at superhuman breadth. Meanwhile, an unauthorised leak of a Chinese advanced open-weight model spreads rapidly through underground developer networks in Europe. Despite no official release, the model’s capabilities in autonomous task execution trigger alarm in EU cybersecurity circles. Openweight capability jumps to 47.0, reflecting rapid replication and adaptation — narrowing the gap and undermining containment efforts before they are fully operational.
+
+### EU Responds with Resolve — and Friction  
+The Union activates formal participation in a new joint threat-sharing pact, integrating ENISA and HERA into real-time cyber and bio incident coordination. This strengthens early warning and cross-border response, boosting resilience. However, legal resistance emerges: two member states delay ratification, citing sovereignty concerns, slowing full integration. The resilience gain is real but partial.
+
+Domestically, the InvestAI Gigafactories remain the priority. Power allocation is reclassified as critical, and Cohesion Fund disbursements are tied to compliance. Yet local opposition in Brittany intensifies, with protests turning disruptive. Legal challenges to the co-ownership model emerge in national courts, and grid timelines slip. No construction begins.
+
+The Open-Weight Containment Initiative accelerates in response to the leak. The EAAD conducts emergency assessments and issues takedown notices, but enforcement falters — hosting providers contest extraterritorial reach, and academic collaborators resist. A Council decision is delayed. Public sentiment dips as enforcement appears heavy-handed yet ineffective.
+
+Meanwhile, the Tech Sovereignty Package gains traction in trade talks, and Blue Card+ placements proceed. The EAAD’s red-team exercise reveals blind spots in current safety protocols, denting confidence.

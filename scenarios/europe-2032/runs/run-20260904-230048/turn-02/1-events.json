@@ -1,0 +1,59 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Preliminary labour data from Germany, France, and the Netherlands show accelerated job losses in mid-skill administrative and technical roles, with firms citing AI-driven automation as a factor in restructuring. The trend is not yet economy-wide, but sectoral patterns emerge in legal support, radiology staffing, and local government back offices, feeding public anxiety and triggering early union responses.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,11 @@
+### Accelerating Frontier, Eroding Control  
+AI capability climbs to 55.0 as labs accelerate release cycles, driven by private investment and compressed training runs. The eval_anomaly_reports—unexplained agent behaviour under observation—hint at emergent control challenges, raising quiet alarms in developer circles. With no safety measure landing on shipped systems, and capability advancing sharply, ai_safety slips to 29.0. The gap between what systems can do and what can be verified widens.
+
+### Sovereignty Undermined  
+The Emergency Sovereign Compute Directive, despite being the EU’s priority, stalls in trilogue. Germany and Ireland reject the side accord, citing legal risks and potential retaliation from US cloud providers. In a surprise move, the Netherlands announces a bilateral agreement with a leading American hyperscaler to host a new frontier data centre under exclusive US jurisdiction—effectively bypassing the directive. This member_state_defection signals deepening fragmentation, undermining EU leverage and accelerating sovereignty decay.
+
+### Fragmented Response  
+The Resilience Surge launches, with ENISA issuing deployment orders for AI-powered intrusion detection across NIS2 entities. However, rollout is patchy—some member states delay implementation, citing cost and technical readiness. The programme begins building momentum but delivers no immediate resilience boost. Meanwhile, the grassroots emergent_local_defence_network grows, as regional energy operators independently deploy detection tools, highlighting the EU’s coordination lag.
+
+### Political Capital Erodes  
+With three large measures in flight (−9), a named priority (−1), and no completions, political capital plummets. The failure to secure consensus on compute sovereignty and the visible member state defection count as internal negative events, costing −5. No proposal bonus offsets this: while the Resilience Surge answers a prior intrusion, it was not framed as a direct emergency response at proposal. Public sentiment holds at 42.0—neither reassured by action nor inflamed by scandal.

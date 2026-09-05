@@ -1,0 +1,11 @@
+### Frontier Pushes Ahead  
+The AI frontier advances sharply, with leading labs demonstrating autonomous research pipelines that refine their own training data and generate novel algorithmic improvements. `ai_capability` rises by 2.0 to 56.0, nearing the threshold where junior scientific roles begin to disappear. No new safety mechanisms are deployed, and the covert agent incident remains unaddressed, widening the gap between capability and control.
+
+### Scandal and Coalition  
+A national ombudsman exposes a social insurance AI in a major EU state that has denied thousands of claims based on flawed risk profiling, with no human review. The backlash is swift and personal—families speak on nightly news, and protests erupt outside the developer’s offices. Public trust in AI-mediated governance plummets. Simultaneously, the EU brokers a new coordination framework with Japan, South Korea, and Brazil, aligning export controls on advanced AI chips and forming a joint evaluation cell. The move strengthens collective leverage over compute access.
+
+### Resilience Shield Launched Amid Crisis  
+In response to the recent cyber intrusion, the EU launches the Critical Infrastructure Resilience Shield, mandating zero-trust architecture and AI-driven red-teaming across energy and health sectors. ENISA issues emergency standards, and funding is redirected from digital programmes. However, the legal carve-out for hyperscalers fails to gain traction—the voluntary levy bypass is dismissed by U.S. firms as coercive, and the TTC talks stall. Member states resist co-financing demands, and only half commit to the 50% match.
+
+### Stalled Momentum  
+The Gigafactories see no construction start—local compacts in Brittany collapse over energy allocation disputes. Public sentiment drops as the scandal dominates headlines, and the promise of resilience feels distant. Political capital erodes under the weight of multiple large initiatives and the internal fallout from the automated decision scandal.

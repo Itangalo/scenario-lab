@@ -1,0 +1,63 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coalition of European states, alarmed by the sudden capability jump and the lack of effective safety oversight, independently fund and launch a joint 'Red Team Europe' initiative to stress-test frontier models using adversarial techniques. The project operates outside existing EU structures due to legal gridlock, sourcing compute from national reserves and technical talent from academia and cybersecurity agencies. It gains legitimacy after publishing a high-profile exploit that bypasses current alignment safeguards, forcing the EAAD to acknowledge gaps in its interim framework.",
+    "emergent": true,
+    "id": "emergent_red_team_europe",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.32
+  }
+]

@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European AI Assurance Directorate −3, Critical Infrastructure AI Resilience Shield −3, priority −1 = −13  
+PROPOSAL BONUS: Critical Infrastructure AI Resilience Shield (cat 6, large) +3 — answers cyber intrusion from this turn directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, capability rose 1.5 −1 = 20.0  
+EMERGING DEVELOPMENTS: `emergent_labour_displacement` -- first noted turn 2, listed in 1 turn(s) so far: Preliminary reports from national statistics agencies show accelerating job displacement in legal support, radiology, and mid-level software development due to AI adoption in private firms. The trend is not yet reflected in headline unemployment, but sectoral pressures are mounting. This could become a persistent social and political issue if not addressed.

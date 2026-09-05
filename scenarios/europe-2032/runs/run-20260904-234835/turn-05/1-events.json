@@ -1,0 +1,41 @@
+[
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coordinated initiative emerges among EU-aligned research institutions and mid-sized tech firms to develop a shared, open-weight agent framework for public-sector automation, focused on resilient, auditable decision pipelines. It gains traction as a response to repeated access disruptions and uneven adoption, leveraging the open cyber toolkit's momentum. The project is informal but begins pooling evaluation benchmarks and safety templates.",
+    "emergent": true,
+    "id": "emergent_open_agent_consortium",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.35333333333333333
+  }
+]

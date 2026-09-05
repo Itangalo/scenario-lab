@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European AI Assurance Directorate −3, Critical Infrastructure Resilience Shield −3, sovereign red-team clusters −3, priority −1 = −16  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17 last turn, no capacity event, capability rose 2.0 −1 = 16  
+US_POSTURE: pending (administration takes office next turn)  
+EMERGING: `emergent_technological_hedging` -- first noted turn 5, listed in 1 turn(s) so far: A coalition of EU member states, stung by the healthcare breach and ongoing dependency, quietly begins coordinating with Japan, South Korea, and Canada to establish shared red-teaming protocols and joint access frameworks for post-frontier models. The initiative is framed as 'responsible innovation interoperability' but functions as a hedge against both U.S. restriction and Chinese opacity. It gains traction due to Sweden and Ireland’s earlier warnings about innovation flight, and leverages existing semiconductor supply-chain dialogues.

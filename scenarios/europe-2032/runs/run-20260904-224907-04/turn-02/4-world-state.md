@@ -1,0 +1,11 @@
+### The Weight of Acceleration
+
+AI capability advanced to 57.0 as autonomous reasoning systems demonstrated sustained performance across multi-day research and engineering tasks. Open-weight models, buoyed by the Kimi K3 derivatives and the emerging cyber toolkit, reached 44.0—now capable of executing complex offensive cyber operations with minimal oversight. The gap between closed and open capabilities narrowed, and with it, the window for governable restraint.
+
+The EU launched the **Resilience Acceleration Pact**, a large category 6 measure aimed at hardening critical infrastructure. Though only in early implementation, its partial effect began to register: resilience inched up to 38.0 as planning for detection systems and crisis simulations advanced. However, the broader safety deficit deepened. With no meaningful safeguards yet deployed on frontier models and the gap between capability and control widening, ai_safety fell to 29.0.
+
+Sovereignty continued its decline, dropping to 19.0. The **supply_chain_coercion** event directly undermined the EU’s strategic position: Washington’s move against ASML severed access to critical lithography tools, exposing Europe’s dependence at the hardware layer. This triggered a −2 sovereignty hit under metric rule 5. The rising AI frontier (up 2.5) cost another −1. No category 4 measure finished, and while InvestAI Gigafactories progressed, it delivered no immediate capacity gain.
+
+Political capital eroded further, falling to 31.0. The portfolio charge remained heavy: three large measures (−9) plus the priority (−1) totalled −10. The new Resilience Acceleration Pact qualified for a modest proposal bonus (+3) due to its direct response to the recent cyber intrusion, but this was insufficient to offset the strain. Public sentiment held at 42.0—ambivalent, with growing unease in energy-stressed regions.
+
+The Commission pressed forward with the Emergency Sovereign Compute Directive, framing compute access as a market condition. Yet resistance hardened, with two member states threatening legal challenges over proportionality. The AI Acceleration Zones narrowed to three countries, but grid integration timelines remained uncertain.

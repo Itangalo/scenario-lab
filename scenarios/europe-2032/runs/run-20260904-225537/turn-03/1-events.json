@@ -1,0 +1,37 @@
+[
+  {
+    "id": "campaign_security_hawk",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "campaign_atlanticist",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_joint_cyber_initiative",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "A joint cyber command emerges among NATO members and key partners following the recent AI-assisted intrusion into critical infrastructure. Real-time telemetry sharing and coordinated threat hunting are established, with the EU granted observer status and conditional access to intelligence feeds. Trust remains limited, but the framework enables faster containment of future incidents.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

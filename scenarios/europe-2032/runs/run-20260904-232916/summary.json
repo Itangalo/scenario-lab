@@ -1,0 +1,131 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 59.5,
+    "openweight_capability": 45.8,
+    "ai_safety": 23.0,
+    "resilience": 37.0,
+    "eu_ai_sovereignty": 21.0,
+    "eu_political_capital": 12.0,
+    "public_sentiment": 36.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 31.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 43.0,
+        "ai_safety": 29.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 28.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 43.0,
+        "ai_safety": 26.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 18.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 45.0,
+        "ai_safety": 23.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 15.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 45.8,
+        "ai_safety": 23.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 12.0,
+        "public_sentiment": 36.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "cyber_test_shot",
+    "election_annulled",
+    "election_consolidation",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "member_state_defection",
+    "openweight_frontier_release"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 2,
+      "id": "election_annulled"
+    },
+    {
+      "turn": 2,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 4,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 4,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-04T23:37:27.945914",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_resilience_pact",
+      "description": "A coalition of mid-sized EU member states, frustrated by the paralysis of central coordination and alarmed by recent cyber incidents, quietly forms a joint AI resilience pact. They commit to shared cyber defences, mutual aid in case of AI-driven attacks, and coordinated procurement of sovereign compute. The pact is framed as complementary to EU efforts but operates outside formal EU structures, signaling growing impatience with Brussels' slow pace. It gains traction as more states consider joining, especially after a recent cyber test shot.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_efficiency_breakthrough",
+      "description": "A prominent European AI research institute announces a breakthrough in energy-efficient training methods, cutting the power required for mid-tier models by 40%. The development spreads rapidly through open channels, enabling smaller labs and public institutions across the EU to run capable models locally without relying on hyperscalers. This boosts confidence in the Sovereign AI Stack and creates unexpected momentum for domestic AI adoption, even as political capital remains low.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:37:34.770472"
+}

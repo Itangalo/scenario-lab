@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 48.5 to 56.5 (+8.0) in one turn, which is an implausible jump given that `openweight_capability` must accumulate gradually and cannot exceed `ai_capability`. While the narrative mentions access agreements in negotiation, it provides no mechanism for such a large, unexplained leap in openweight capability, especially without any completed agreement or infrastructure deployment. This violates the accumulation principle and the ceiling relative to `ai_capability`.\n- Regulatory Constraint violated: The **EU Agent Access Compact** is described as a \"large category 4 initiative\" and \"formally adopted\" in this turn, but no implementation lag is reflected. According to Modelling Choice 6, no measure is implemented instantly — minimum time from proposal to full effect is one full turn for low-cost measures and two for high-cost ones. The narrative treats adoption as immediate and even applies a proposal bonus, but the measure should not be active or generating effects (such as bonuses) until at least the next turn.\n- Modelling Choice 5 violated: The EU introduces the **EU Agent Access Compact** as a new measure and also designates it as the priority in the same turn (\"prioritised for completion next turn\", with −1 priority charge in notepad). This is acceptable. However, the notepad shows *five existing measures* still in flight (InvestAI Gigafactories, Tech sovereignty package, Critical Infrastructure AI Hardening Initiative, European AI Safety Observatory, EU Agent Access Compact) and adds a new one — but the **Critical Infrastructure AI Hardening Initiative** is stated to have \"finished successfully\" in the narrative. If it has finished, it should not remain in the portfolio charge. The notepad still lists it at −3, creating an inconsistency: either the measure is complete (and should be removed from active charges and possibly trigger a completion bonus) or it is not. As written, the portfolio charge incorrectly maintains a finished measure, overstating the burden and violating the accounting logic required for political capital calculation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,140 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 62.0,
+    "openweight_capability": 55.0,
+    "ai_safety": 22.0,
+    "resilience": 33.0,
+    "eu_ai_sovereignty": 25.0,
+    "eu_political_capital": 33.0,
+    "public_sentiment": 38.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 42.0,
+        "ai_safety": 32.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 45.0,
+        "ai_safety": 29.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 24.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 27.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 29.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 25.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 27.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 62.0,
+        "openweight_capability": 55.0,
+        "ai_safety": 22.0,
+        "resilience": 33.0,
+        "eu_ai_sovereignty": 25.0,
+        "eu_political_capital": 33.0,
+        "public_sentiment": 38.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "campaign_atlanticist",
+    "campaign_backlash",
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_middle_power_hedging",
+    "eval_anomaly_reports",
+    "openweight_frontier_release",
+    "supply_chain_coercion"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_backlash"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_atlanticist"
+    },
+    {
+      "turn": 3,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 4,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_middle_power_hedging"
+    },
+    {
+      "turn": 5,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-04T23:21:11.860911",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_compute_federation",
+      "description": "A coordinated effort among EU member states, Switzerland, and Nordic partners establishes a shared sovereign compute federation, pooling underutilized national HPC resources and creating a unified access layer for public-sector AI development. This emerges in response to repeated access denials and supply chain coercion, and is framed as resilience infrastructure rather than a challenge to US leadership. It strengthens the EU’s bargaining position and supports domestic model training.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_private_safety_standard",
+      "description": "A coalition of European insurers and industrial firms standardizes a private AI safety certification framework for operational AI systems in energy, transport, and manufacturing, based on real-time anomaly detection and fail-safe rollback protocols. Driven by liability concerns and the slow pace of regulation, it becomes a de facto compliance benchmark, reducing incident risk in critical sectors not yet covered by public mandates.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:21:18.918603"
+}

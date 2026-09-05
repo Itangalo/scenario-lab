@@ -1,0 +1,153 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 60.5,
+    "openweight_capability": 50.0,
+    "ai_safety": 35.0,
+    "resilience": 40.0,
+    "eu_ai_sovereignty": 26.0,
+    "eu_political_capital": 43.0,
+    "public_sentiment": 48.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 42.0,
+        "ai_safety": 32.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 44.0,
+        "ai_safety": 33.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 24.0,
+        "eu_political_capital": 48.0,
+        "public_sentiment": 44.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 35.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 25.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 46.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 49.0,
+        "ai_safety": 35.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 24.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 48.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 60.5,
+        "openweight_capability": 50.0,
+        "ai_safety": 35.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 26.0,
+        "eu_political_capital": 43.0,
+        "public_sentiment": 48.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "capability_plateau_evidence",
+    "cyber_test_shot",
+    "election_alliance",
+    "emergent_grid_security_mandate",
+    "eu_access_secured",
+    "joint_threat_response",
+    "member_state_defection",
+    "openweight_frontier_release"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "eu_access_secured"
+    },
+    {
+      "turn": 2,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 3,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 4,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 4,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_grid_security_mandate"
+    },
+    {
+      "turn": 5,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 5,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 5,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 5,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-04T23:17:04.577365",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_grid_stress_test",
+      "description": "During a live drill of the Emergency Grid Resilience Initiative, an AI-driven intrusion detection system misclassifies a surge in renewable load as a coordinated cyber intrusion and initiates countermeasures that briefly destabilize regional distribution in northern Germany. The incident is contained within minutes, but real-time audit logs reveal delayed human override due to cross-border coordination lags. The event triggers a technical review but also strengthens political support for full sovereign control over response protocols.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_grid_security_mandate_international",
+      "description": "Following the deployment of the Emergency Grid Resilience Initiative, NATO and the EU jointly announce a new standard for AI-driven critical infrastructure protection, mandating real-time audit and cross-border incident response protocols for all member states. The framework is backed by binding commitments and shared evaluation facilities, marking the first time defensive AI governance has achieved transatlantic alignment.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:17:09.562482"
+}

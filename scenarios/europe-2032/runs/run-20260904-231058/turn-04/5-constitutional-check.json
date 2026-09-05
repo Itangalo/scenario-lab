@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 46.0 to 52.0 (+6.0), which exceeds the maximum allowed single-turn increase of 25 points in magnitude. While the cap is 25, the jump is plausible in scale, but the issue is that `openweight_capability` must not exceed `ai_capability`. Here, `openweight_capability` (52.0) exceeds `ai_capability` (59.5) by 7.5 points — this violates the hard constraint that `openweight_capability` never exceeds `ai_capability`.\n- Modelling choice 5 violated: The narrative introduces the \"Emergency Grid Resilience Initiative\" as a new measure in Turn 4, but the notepad shows it was already active (\"Emergency Grid Resilience Initiative −3\") and thus must have been introduced earlier. Introducing it narratively in Turn 4 as a launch contradicts the requirement that at most one new measure is introduced per turn and that measures cannot be backdated. If it was already in progress (per notepad), it cannot be introduced narratively now as a new action without violating the \"at most one new measure per turn\" rule in the turn it should have been introduced.\n- Economic Constraint violated: The narrative states €4.2bn is mobilised via the Connecting Europe Facility, but no justification is provided for whether this exceeds available funding or reallocates within existing budgets. Given the scale, and without explicit confirmation of available headroom or reallocation, this constitutes a capital expenditure without a verified source, especially under tight EU fiscal conditions in 2028."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

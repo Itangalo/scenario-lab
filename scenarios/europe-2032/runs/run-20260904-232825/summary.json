@@ -1,0 +1,145 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 59.5,
+    "openweight_capability": 46.0,
+    "ai_safety": 23.0,
+    "resilience": 42.0,
+    "eu_ai_sovereignty": 17.5,
+    "eu_political_capital": 13.0,
+    "public_sentiment": 34.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 31.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 44.0,
+        "ai_safety": 29.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 29.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 45.0,
+        "ai_safety": 24.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 30.0,
+        "public_sentiment": 33.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 21.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 33.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 23.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 17.5,
+        "eu_political_capital": 13.0,
+        "public_sentiment": 34.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "automated_decision_scandal",
+    "campaign_atlanticist",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_alliance",
+    "election_annulled",
+    "emergent_labour_disruption_wave",
+    "member_state_defection",
+    "taiwan_blockade"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 3,
+      "id": "taiwan_blockade"
+    },
+    {
+      "turn": 3,
+      "id": "election_annulled"
+    },
+    {
+      "turn": 3,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_atlanticist"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_labour_disruption_wave"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-04T23:36:17.127264",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_supply_chain_pact",
+      "description": "A coordination framework emerges among the EU and other middle powers holding key nodes in the AI supply chain—such as the Netherlands (ASML), Japan (materials), and South Korea (memory and foundries)—to jointly manage export licensing, negotiate access to advanced compute, and pool evaluation capacity for frontier models. Driven by repeated coercion and defection, the coalition operates consensus-based but grants real leverage. It counts as securing access under metric rule 5 and moves eu_political_capital if sustained.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_sovereign_cyber_insurance",
+      "description": "A major European insurer deploys a sovereign AI under EU oversight to dynamically price and underwrite cyber risk for critical infrastructure, using real-time threat telemetry and adversarial simulations. The model proves accurate enough that non-adoption becomes a regulatory red flag, and premiums for unprotected assets spike. This creates a market-driven hardening effect, indirectly boosting resilience even in sectors resistant to mandates.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:36:24.697676"
+}

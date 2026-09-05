@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 43.0 to 55.0, a rise of 12.0 points, which is plausible, but the value now exceeds `ai_capability` (56.5 → 55.0), violating the rule that `openweight_capability` must never exceed `ai_capability`. This is a direct breach of Invariant 2.\n- Invariant 2 violated: `openweight_capability` jumped from 43.0 to 55.0 in a single turn—an increase of 12.0 points. While the invariant allows rising values, such a sudden leap in open-weight capability due to a single release, without a corresponding narrative explanation of gradual accumulation or prior foundation, strains the principle that capability metrics evolve consistently with real-world deployment and diffusion. However, this is secondary to the hard cap violation above.\n- Modelling choice 5 violated: The EU introduces two new measures in one turn: \"Emergency Sovereign Compute Directive\" (marked as finished) and \"Sovereign Audit Access Framework\" (new, −3 in portfolio). The constitutional constraint limits the EU to at most one new measure per turn. Even if one is finishing, introducing another new one in the same turn violates the \"at most one new measure per turn\" rule (Modelling choice 5)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

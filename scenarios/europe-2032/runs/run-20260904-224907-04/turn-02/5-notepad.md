@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Sovereign Compute Directive −3, priority −1 = −10  
+PROPOSAL BONUS: Resilience Acceleration Pact (cat 6, large) +3 — answers recent cyber intrusion directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, supply_chain_coercion t2 −2, capability rose 2.5 −1 = 19.0  
+emergent_regional_data_sovereignty_push -- first noted turn 2, listed in 1 turn(s) so far: Several regional governments within EU member states, responding to public backlash and energy concerns, independently introduce strict local moratoria on new AI data centres and demand greater transparency from hyperscalers. These actions create a patchwork of regulatory friction that undermines the EU's centralised compute strategy and forces Brussels to negotiate with subnational actors.  
+emergent_open_source_cyber_toolkit_release -- first noted turn 2, listed in 1 turn(s) so far: A coalition of open-source developers and cybersecurity researchers releases a widely accessible AI-powered toolkit for automated vulnerability discovery and penetration testing, built on top of Kimi K3 derivatives. The toolkit spreads rapidly across hacking forums and red teams alike, significantly lowering the barrier to sophisticated cyber operations and amplifying the real-world impact of existing open-weight capabilities.

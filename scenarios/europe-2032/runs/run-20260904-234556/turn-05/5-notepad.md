@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European AI Assurance Directorate −3, Critical Infrastructure Resilience Shield −3, Sovereign Control Stack Initiative −3, Public AI Deployment Mandate −3, Resilience Surge Initiative −3, priority −1 = −19  
+PROPOSAL BONUS: Resilience Surge Initiative (cat 6, large) +2 — responds to ongoing CIRS implementation delays and rising cyber preparedness concerns, though not to a specific recent incident  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17.0 last turn, no category 4 completion, no capacity event, capability rose 1.5 (under 2) −1 = 16.0 → adjusted to 15.0 due to continued access dependence and implementation failure  
+Note: `emergent_regional_cyber_cooperation` now listed in 2 turns; `emergent_labour_displacement` now listed in 2 turns.

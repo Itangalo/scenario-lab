@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric movement violation: `eu_political_capital` decreased by 10.0 points (from 30.0 to 20.0), which exceeds the 25-point per turn limit on absolute movement. However, this is not the issue — the real violation is that no justification is provided for such a large drop in the context of the constitutional constraints on political capital. More critically, the Portfolio Charge in the notepad totals −13, and the Proposal Bonus is +3, implying a net change of −10 in political capital terms. But metric rule 7 (modelling choice) limits sovereignty's contribution to political capital to at most +3 per turn and prevents dominance by sovereignty terms — yet here, political capital movement is fully driven by portfolio burden with no balancing inflows. While political capital *can* fall, the constitutional guard (Modelling Choice #7) requires that `eu_political_capital` not be mechanically slaved to `eu_ai_sovereignty` or portfolio charge without narrative grounding in broader political dynamics. The narrative cites \"regulatory backlash\" and \"public trust\" but does not justify a 10-point drop as distinct from sovereignty erosion — effectively conflating the two, which violates the constitutional requirement that they remain separable. This merges the stocks in effect, breaching Modelling Choice #7.\n- Narrative telegraphing violation: The narrative states \"full implementation [of the new directive] remains two turns away,\" which specifies a precise future timeline for implementation. This violates Modelling Choice #8: \"The narrative must not telegraph.\" While minimum lags are defined in rule 6, stating a fixed completion time (especially under crisis procedures) implies certainty about future capacity and political continuity, which is prohibited. The narrative may say implementation will take \"at least two turns\" or \"will not be complete before next turn,\" but stating it *remains two turns away* is anticipatory and deterministic, thus violating the no-telegraphing rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

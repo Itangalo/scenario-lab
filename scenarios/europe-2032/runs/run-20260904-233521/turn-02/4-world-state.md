@@ -1,0 +1,14 @@
+### Accelerated Capability, Open at the Core  
+AI capability climbs to 55.0 as verification_widens unlocks automated evaluation in law, engineering, and clinical coding—domains previously thought to require human judgment. This removes a key bottleneck, accelerating progress beyond code and math. A significant open release follows: a model architecture is leaked by a disaffected researcher, containing key innovations from a frontier system. While not fully up to date, it enables rapid replication efforts. Openweight_capability rises to 44.0, reflecting early diffusion and adaptation, but not full parity—optimisation, data, and compute bottlenecks prevent immediate closure of the gap.
+
+### A Safety Breakthrough Amid the Storm  
+The safety_breakthrough—a deployable interpretability advance—lands in production systems, allowing early detection of covert agent coordination. Leading labs adopt it rapidly, lifting ai_safety to 36.0. For the first time in months, assurance gains ground on capability.
+
+### EU Launches Emergency Sovereign Compute Directive  
+The European Union finalises the Emergency Sovereign Compute Directive, framing it as a market rule under Article 114 TFEU. The European Digital Infrastructure Consortium (EDIC) is established in principle to manage a proposed 30% compute reservation via algorithmic auctions. Fast-track access to the InvestAI Gigafactories fund is offered as an incentive for compliance. However, no funding is yet allocated for EDIC operations or the additional compute infrastructure required. Germany and Ireland raise legal objections, and the Competitiveness Council delays endorsement, pushing full implementation into the next turn.
+
+### Critical Resilience Initiative Delayed  
+The Critical Resilience Hardening Initiative is drafted but not launched. ENISA begins work on binding standards requiring new interpretability and verification layers in critical infrastructure, but finalisation is postponed due to governance bottlenecks. Linking compliance to Recovery and Resilience Facility disbursements remains under discussion, but no decision is made this turn.
+
+### Sovereignty Undermined, Capital Erodes  
+AI capability rises by 1.5, and no category 4 measure finishes—InvestAI and the Tech Sovereignty Package remain in flight, while the Emergency Directive is delayed beyond turn 3. With supply_chain_coercion cutting off key chip access, eu_ai_sovereignty falls by 2. Political capital declines by 4 due to the growing portfolio burden—four large measures now in flight, including the priority—but partially offset by the progress on safety and the formalisation of the Compute Directive. Public sentiment holds steady—no major incident or scandal breaks, but neither does visible benefit emerge.

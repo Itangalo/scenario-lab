@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "campaign_security_hawk",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Investor hesitation around the InvestAI Gigafactories intensifies due to regulatory uncertainty and slow permitting, leading to a coordinated pause in private financing. This creates a funding gap that threatens the project's timeline and forces the EU to consider direct fiscal bridging, risking further strain on political capital.",
+    "emergent": true,
+    "id": "emergent_eu_investor_reluctance",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Leading AI laboratories outside the EU begin shifting investment away from long-horizon agent autonomy research toward shorter-cycle, product-integrated AI development, citing regulatory uncertainty and rising public scrutiny. This slows the pace of unanticipated capability gains but increases integration of AI into consumer and enterprise services globally.",
+    "emergent": true,
+    "id": "emergent_lab_funding_shift",
+    "probability": 0.20000000000000004,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

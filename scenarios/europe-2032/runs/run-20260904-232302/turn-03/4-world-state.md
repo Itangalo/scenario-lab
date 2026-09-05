@@ -1,0 +1,13 @@
+### A Window of Constraint  
+The global AI investment collapse reverberates through the ecosystem: major labs scale back training runs, and several planned data centres are mothballed. The frontier slows but does not stall—`ai_capability` rises by 1.5 to 57.5, as existing systems refine autonomous research loops in biotech and materials. With no safety upgrades deployed, the gap between power and control widens further.
+
+### Pivot Without Parity  
+The EU seizes the moment, pivoting from brute compute build-out to strategic control. The Gigafactories initiative is restructured to embed sovereign evaluation clusters in each site, with 20% of capacity legally ring-fenced for public assurance. Legal challenges persist, and construction continues under contested terms. The Tech Sovereignty Package shifts from incentive to leverage: EIB guarantees are offered conditionally on audit access, and early supply-chain discussions with TSMC and Samsung begin, though no formal cooperation is yet secured.
+
+### Shadow Authority  
+The European AI Assurance Directorate operates in shadow mode, issuing its first capability alert on autonomous phishing agents. A formal delay request is drafted for a frontier model above 55.0, setting up a legal showdown. The draft of the EU Red-Team Access Framework is published for consultation, outlining plans to enable vetted researchers to probe high-capability models—closed and open—under EAAD oversight. **This is a proposal only; no implementation occurs this turn.** The framework is under review and will not enter the portfolio until a future turn, when adoption conditions are met. No new measure is activated this turn.
+
+### Fragile Foundations  
+Resilience efforts lag: integration of detection stacks remains uneven, and no cross-border exercise is held. With `ai_capability` rising and no finished resilience measure, `resilience` drops by 1. Public sentiment falls to 37.0 amid job losses in AI-dependent sectors and scepticism about EU overreach. Political capital erodes to 31.0 under the weight of four large measures and a priority, reflecting sustained strain without collapse or expansion. The portfolio charge remains at −13, consistent with prior commitments.  
+
+**Sovereignty calculation corrected:** Gigafactories in flight contribute +1, but the 1.5 rise in `ai_capability` imposes a −1 decay, resulting in `eu_ai_sovereignty` = 18.0. This reflects ongoing investment amid capability drift, with no floor or reversion applied. The metric moves independently of political capital, preserving the constitutional separation.

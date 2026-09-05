@@ -1,0 +1,217 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.13778075207980955,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8398485269778726,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.30880352766522845,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8338333531539659,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2082667955108668,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07943502330215613,
+    "triggered": true
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.4666666666666666,
+    "probability_samples": [
+      0.4,
+      0.5,
+      0.5
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.8416975067990393,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.8416975067990393,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.2,
+      0.4
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.8416975067990393,
+    "group_basis": "weighted",
+    "triggered": true
+  },
+  {
+    "description": "A coalition of EU member states, stung by the healthcare breach and ongoing dependency, quietly begins coordinating with Japan, South Korea, and Canada to establish shared red-teaming protocols and joint access frameworks for post-frontier models. The initiative is framed as 'responsible innovation interoperability' but functions as a hedge against both U.S. restriction and Chinese opacity. It gains traction due to Sweden and Ireland’s earlier warnings about innovation flight, and leverages existing semiconductor supply-chain dialogues.",
+    "emergent": true,
+    "id": "emergent_technological_hedging",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.34790977189961314,
+    "triggered": false
+  },
+  {
+    "description": "Following the diagnostic AI poisoning incident, a grassroots movement of clinicians and software auditors forms 'MedVerify', an open-source coalition that reverse-engineers and stress-tests medical AI systems. It begins publishing high-impact vulnerability reports, forcing vendors into emergency patches and drawing public attention to the gap between regulatory approval and real-world robustness. The movement gains legitimacy after uncovering a flaw in a widely used radiology assistant, triggering national reviews in three countries.",
+    "emergent": true,
+    "id": "emergent_medverify_movement",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.05182511820626157,
+    "triggered": true
+  },
+  {
+    "description": "A coordinated protest movement physically targets AI infrastructure in multiple member states, including blockades of data centre supply routes and attempted sabotage of power feeds. The actions are decentralized but share tactical similarities, suggesting model-assisted planning. Police forces are overwhelmed in several locations, and the EU is forced to deploy civil protection resources.",
+    "emergent": true,
+    "id": "emergent_infrastructure_sabotage_wave",
+    "probability": 0.03,
+    "probability_samples": [
+      0.0,
+      0.09,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A consortium of European universities and public research labs releases a high-performance open-weight model trained entirely on EU-held data and compute, achieving capability just below the current frontier. The release is framed as a sovereignty milestone and gains rapid adoption in public services, though concerns emerge about its security auditing and alignment robustness.",
+    "emergent": true,
+    "id": "emergent_eu_public_model_release",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coalition of mid-sized EU states, citing repeated breaches and lack of central coordination, forms a parallel cyber defence pact with direct access to national CERTs and shared AI-driven threat modelling. The pact operates outside formal EU structures but aligns with ENISA standards, creating a two-tier resilience system. This reflects growing frustration with the Union's slow harmonisation and builds on the precedent of the middle_power_coalition event.",
+    "emergent": true,
+    "id": "emergent_eu_cyber_pact",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.15
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "An open research collective based in Switzerland releases a toolkit that automatically fine-tunes models from open weights to bypass safety filters on content moderation and agent autonomy. The toolkit spreads rapidly through developer forums, significantly lowering the barrier to misuse of models near the 47.0 openweight capability threshold. It is not a full release but a method that amplifies existing access.",
+    "emergent": true,
+    "id": "emergent_safety_bypass_toolkit",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,140 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 62.0,
+    "openweight_capability": 48.0,
+    "ai_safety": 25.0,
+    "resilience": 48.0,
+    "eu_ai_sovereignty": 18.0,
+    "eu_political_capital": 20.0,
+    "public_sentiment": 35.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 42.0,
+        "ai_safety": 33.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 43.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 44.0,
+        "ai_safety": 31.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 30.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 35.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 48.0,
+        "ai_safety": 30.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 19.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 62.0,
+        "openweight_capability": 48.0,
+        "ai_safety": 25.0,
+        "resilience": 48.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 35.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "campaign_atlanticist",
+    "capability_jump",
+    "cyber_defence_breakthrough",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "emergent_cyber_sovereignty_backlash",
+    "emergent_open_source_security_alliance",
+    "emergent_transparent_agents_initiative",
+    "labour_displacement",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_atlanticist"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 3,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_open_source_security_alliance"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_cyber_sovereignty_backlash"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_transparent_agents_initiative"
+    },
+    {
+      "turn": 4,
+      "id": "labour_displacement"
+    },
+    {
+      "turn": 5,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-04T23:28:20.914358",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_defensive_cyber_inflection",
+      "description": "Defensive AI tooling, developed in response to rising open-weight cyber capabilities, achieves a systemic shift by enabling real-time automated patching and behavioural swarm detection across critical infrastructure. The breakthrough is rapidly adopted by leading EU and NATO cyber agencies, marking the first sustained defensive advantage in years.",
+      "first_turn": 4,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:28:25.103755"
+}

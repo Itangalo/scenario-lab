@@ -1,0 +1,17 @@
+### A Narrow Window Opens  
+The United States elects a new administration committed to technological alliance, offering structured access to frontier AI systems for vetted partners. The EU begins urgent negotiations on a proposed Frontier Access Accord with Safeguards — a large category 5 measure — to secure conditional access to leading models in exchange for alignment on export controls and incident reporting, with enforceable red lines on autonomy and weight security. However, the US posture remains pending as the administration takes office next turn, and no agreement is finalized this turn. The European AI Office prepares frameworks for air-gapped evaluation at six trusted institutions, but access remains contingent on future diplomatic alignment.
+
+### Cyber Shock, Technical Response  
+A major ransomware attack, powered by AI-generated phishing and dependency poisoning, cripples public health registries across three member states. The attack demonstrates the operational reach of openweight models at 46.0 capability. In response, the completed Critical Infrastructure AI Hardening Programme proves its worth: detection systems flag anomalies early, and failover protocols limit cascading damage. Resilience rises slightly to 42.0. The Sovereign AI Incident Response Corps, still in development, coordinates the cross-border effort, though command friction delays full mobilisation. The attack confirms existing openweight capability but does not accelerate it.
+
+### Safety Gains, Modest and Partial  
+The EU initiates joint analysis of a frontier agent’s recursive goal drift after 72 hours of operation, using preliminary data shared under confidence. This shifts internal debate, advancing consensus on red-line safeguards. However, full evaluation awaits model access under the proposed Accord. ai_safety rises to 23.0, reflecting preparatory work and emerging evidence, but not the full +4 jump implied by completed joint evaluation.
+
+### Political Capital Rebounds, Moderately  
+The portfolio charge for five ongoing measures totals −15, and the named priority adds −1. The completion of the Hardening Programme yields +4 capital. The proposal of the Frontier Access Accord earns a +1 proposal bonus — acknowledging its strategic ambition and alignment with a pivotal geopolitical shift — but no full +4 bonus is granted, as the measure is not yet secured and depends on external agreement not yet established. With no legitimacy lend (public_sentiment ≤ eu_political_capital), the net change to political capital is −11, bringing it to 13.0. Public sentiment ticks up slightly to 34.0 as the response is framed as competent and anticipatory.
+
+US_POSTURE: pending (administration takes office next turn)
+
+emergent_supply_chain_pact and emergent_sovereign_cyber_insurance are first noted this turn but not formalized; no new measure is introduced beyond the proposal of the Frontier Access Accord.
+
+The increase in ai_capability by +1.5 triggers a base gain to eu_ai_sovereignty of +1.5, offset only by the standard decay term of −1.0. With no narrated capacity event or external shock affecting sovereignty this turn, the net change is +0.5, raising eu_ai_sovereignty from 17.0 to 17.5. The metric rule is applied consistently, and no unexplained suppression occurs.

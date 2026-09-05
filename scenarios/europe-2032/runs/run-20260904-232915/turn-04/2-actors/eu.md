@@ -1,0 +1,27 @@
+## Statement changes  
+* - modify `two_year_commitment` (commitment): Secure independent AI capacity to act with sovereignty in an accelerating world, while anchoring that capacity in durable public legitimacy and operational resilience — or risk building systems we cannot defend, deploy, or govern  
+  - Grounds: The annulment of an election due to AI-manipulated information, combined with the collapse of public sentiment to 40.0 and the failure of top-down sovereignty measures, reveals that capability without societal grounding is not sovereignty—it is exposure. The commitment to independent AI capacity remains, but it can no longer be pursued as an engineering or legal project alone. It must now include the political and social infrastructure of trust, absorption, and continuity, or it will fail again. This turn, we act on the understanding that sovereignty is not just compute on paper, but systems that hold under stress—technical, institutional, and social.
+
+## Portfolio  
+- ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+- ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+- ``Resilience Shield Programme (category 6, costs 3 per turn, started turn 2, finishes on turn 5): A coordinated EU-wide hardening of critical infrastructure against AI-enabled cyber intrusions, with binding minimum standards and joint threat simulation exercises`` — **finishing this turn**  
+- ``Sovereignty through Legitimacy Initiative (category 4, costs 3 per turn, started turn 3, finishes on turn 6): A package of local benefit-sharing agreements, environmental safeguards, and democratic oversight mechanisms tied to the permitting of AI infrastructure, designed to defuse public opposition and accelerate stalled projects``
+
+## New measure  
+**Emergency Resilience Activation for Democratic Infrastructure**  
+A rapid deployment of detection, attribution, and response capacity to protect electoral systems, public information channels, and judicial integrity from AI-enabled manipulation.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 5`  
+`Targeted effect:` Increases resilience by +10 to +15 by turn 5 by hardening democratic infrastructure against AI-enabled disinformation, deepfakes, and coordination attacks; stabilises public sentiment by demonstrating credible defence of institutions; supports ai_safety indirectly by creating feedback loops between deployment and detection  
+`Applies to:` EU member states, with mandatory integration into national election management bodies, public broadcasters, and high courts, co-funded through the Digital Europe Programme and enforced via cohesion policy conditionality
+
+## Priority  
+**Emergency Resilience Activation for Democratic Infrastructure** — because the annulment of an election marks a categorical breach in institutional continuity, and because public sentiment is now collapsing not just on infrastructure but on the integrity of democracy itself, we must treat democratic systems as critical infrastructure under active threat; delaying this would risk irreversible erosion of legitimacy, regardless of our industrial progress.
+
+## In practice  
+This turn, we are treating the annulment of an election not as an outlier, but as a signal that AI is now operating inside the political nervous system of the Union. The Resilience Shield Programme is finishing, but its original scope—cyber defences for energy and healthcare—did not include the institutions of democratic legitimacy. That gap is now a vulnerability we can no longer afford. We are therefore launching the Emergency Resilience Activation for Democratic Infrastructure: a binding directive requiring all member states to integrate AI-powered detection tools into their election commissions, public media, and judicial communications by the end of this turn. ENISA will issue standardised toolkits for deepfake detection, botnet tracking, and source authentication, co-developed with the European Centre of Excellence for Countering Hybrid Threats. Funding will come from the Digital Europe Programme, with €8.2bn redirected from unspent cohesion envelopes. Non-compliance will trigger a review of cohesion fund eligibility—this is not optional.
+
+At the same time, we are doubling down on the Sovereignty through Legitimacy Initiative. The pilots in Germany, Poland, and Ireland are now entering their second phase: we are requiring all InvestAI funding recipients to publish real-time environmental dashboards and sign local job pacts with regional training bodies. The European Digital Infrastructure Consortium (EDIC) is being empowered to suspend disbursements if thresholds are not met. We are also introducing a new clause: any data centre receiving EU-backed financing must reserve 5% of its runtime for public-interest AI tasks—climate modelling, public health analysis, or regulatory compliance automation—available to national authorities and vetted researchers. This is not charity; it is the price of operating in our jurisdiction. Sovereignty is not just about who owns the compute, but who it serves—and under what conditions it can be trusted to hold.

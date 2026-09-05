@@ -1,0 +1,140 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 60.0,
+    "openweight_capability": 44.0,
+    "ai_safety": 19.0,
+    "resilience": 46.0,
+    "eu_ai_sovereignty": 25.0,
+    "eu_political_capital": 26.0,
+    "public_sentiment": 33.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 31.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 43.0,
+        "ai_safety": 28.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 33.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 44.0,
+        "ai_safety": 25.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 29.0,
+        "public_sentiment": 35.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 44.0,
+        "ai_safety": 22.0,
+        "resilience": 46.0,
+        "eu_ai_sovereignty": 23.0,
+        "eu_political_capital": 26.0,
+        "public_sentiment": 35.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 44.0,
+        "ai_safety": 19.0,
+        "resilience": 46.0,
+        "eu_ai_sovereignty": 25.0,
+        "eu_political_capital": 26.0,
+        "public_sentiment": 33.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_alliance",
+    "emergent_labour_displacement_wave",
+    "joint_threat_response",
+    "member_state_defection",
+    "supply_chain_coercion",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 2,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 2,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 2,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 2,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_labour_displacement_wave"
+    },
+    {
+      "turn": 4,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-04T23:46:10.221191",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_deepfake_election_interference",
+      "description": "A coordinated campaign of AI-generated deepfake videos targeting multiple European political figures emerges ahead of national elections in several member states. The videos are sophisticated enough to bypass initial detection systems, triggering emergency responses from electoral commissions and social media platforms. Public trust in digital information erodes further, especially in countries with weak media literacy infrastructure.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_national_safety_observatory",
+      "description": "A coalition of Nordic and Benelux nations unilaterally establishes a joint AI safety observatory, pooling audit rights into foreign-owned data centres operating on their soil. The initiative bypasses stalled EU-wide negotiations and sets de facto standards for model evaluation and incident reporting. It gains momentum after a near-miss control incident is disclosed by a whistleblower, and begins attracting interest from non-EU European states.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:46:15.188046"
+}

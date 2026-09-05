@@ -1,0 +1,52 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coalition of civil society groups and technical experts in multiple member states forms the 'AI Transparency Watch', independently auditing public-sector AI deployments for compliance with the AI Act. Early findings reveal significant gaps in documentation and oversight, triggering parliamentary inquiries and media scrutiny.",
+    "emergent": true,
+    "id": "emergent_civil_society_audit_network",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.33
+  }
+]

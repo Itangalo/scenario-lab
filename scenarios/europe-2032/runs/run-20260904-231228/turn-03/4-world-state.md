@@ -1,0 +1,14 @@
+### Capability Creeps Forward  
+Despite signs of stagnation—underperforming models and falling access prices—AI capability advances to 57.0 as leading labs refine training loops and scale compute. The progress is incremental but real, driven by operational improvements rather than breakthroughs. The gap between hype and delivery widens, feeding debate over whether the frontier is plateauing or merely becoming harder to measure.
+
+### Open Frontier Widens Modestly  
+A new open-weight model, derived from publicly available research and optimized for edge deployment, increases `openweight_capability` to 46.5. The model supports autonomous agent behaviors in constrained environments, including basic cyber reconnaissance and localized disinformation generation. While its performance lags behind the closed frontier, its accessibility raises concerns about distributed misuse. Security researchers detect low-level probing across municipal networks, but no coordinated campaigns are confirmed. The advance is notable but remains within the expected trajectory relative to frontier progress.
+
+### Sovereignty Stalls, Evaluation Framework Proposed  
+The Emergency Sovereign Compute Directive clears trilogue but delivers no new capacity—existing contracts are restructured, but no hardware is added. `eu_ai_sovereignty` remains at 21.0, eroded by capability growth and unmet promises. The EU announces the Sovereign Evaluation Regime and proposes the establishment of the European AI Safety Institute (EASAI), with a draft budget of €8.2bn. However, staffing, legal frameworks, and procurement remain in early stages; no red-teaming occurs this turn. The initiative will require sustained funding and multi-year buildout before becoming operational.
+
+### Resilience Planning Begins  
+The Critical Infrastructure Resilience Surge is scoped and approved in principle, with pilot deployments planned for Bavaria and Wallonia. ENISA begins coordination of threat modelling, but rollout is delayed by governance disputes. Italy resists mandates, citing cost. No major incident occurs, and implementation remains preparatory. The measure is included in planning but not yet active; it will enter the portfolio in a future turn when execution begins.
+
+### Political Capital Holds  
+The EU advances the Emergency Sovereign Compute Directive as its priority measure this turn. While the Tech Sovereignty Package continues in the background, no new large measures are launched alongside it. The Critical Infrastructure Resilience Surge remains in scoping and does not count as a new active measure this turn. As a result, political capital remains stable at 42.0. Public sentiment holds at 37.0, unmoved by technical efforts amid ongoing fraud reports and no visible protection.

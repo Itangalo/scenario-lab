@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Sovereign Model Development Programme −3, Tech sovereignty package −3, Joint Middle-Power Evaluation Compact −2, priority −1 = −9  
+PROPOSAL BONUS: Joint Middle-Power Evaluation Compact (cat 8, small) +2 — responds to supply_chain_coercion and emergent_middle_power_hedging, strengthens coalition response to US pressure  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 29 last turn, Sovereign Model Development Programme in flight +1, supply_chain_coercion t4 −2, capability rose 2.0 −1 = 27  
+emergent_middle_power_hedging -- first noted turn 2, listed in 4 turn(s) so far: Quiet coordination among mid-sized EU states, Japan, and South Korea gains tentative momentum, with informal talks on shared evaluation standards and joint compute access negotiations. Still fragile, but no longer dismissed as noise.  
+emergent_private_cyber_uplift -- first noted turn 2, listed in 4 turn(s) so far: The insurer-led anomaly detection layer spreads to 40% of major European industrial operators, operating in parallel to state efforts. Its effectiveness is unverified, but adoption signals growing private-sector initiative.

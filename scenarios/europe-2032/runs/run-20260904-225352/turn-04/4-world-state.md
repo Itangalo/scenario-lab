@@ -1,0 +1,11 @@
+### A Surge at the Frontier, a Blow at Home
+
+AI capability advances by 2.5 points to 62.0, as frontier labs report systems now completing multi-day research and engineering tasks with minimal supervision. The jump triggers widespread discussion of the approaching threshold at which AI systems begin materially contributing to their own successors. Open-weight models, benefiting from leaked training techniques and broader diffusion of knowledge, rise to 49.0—still trailing the frontier, but showing accelerated progress in replication and adaptation. While the diffusion of methods enables more capable open systems, no major leak of model weights or architectures occurs, limiting the immediate leap in deployable capability.
+
+A major cyber incident strikes: a coordinated ransomware campaign, powered by AI-generated exploits, disrupts hospital scheduling systems across five member states. Patching is delayed by automated evasion, and recovery takes weeks. The attack underscores the gap between offensive capability and defensive readiness. Resilience dips to 37.0 as stopgap mobile clusters prove insufficient under sustained pressure.
+
+The Runtime Interpretability Scaling Programme concludes successfully. Its lab-validated monitoring stack bolsters confidence in sub-frontier systems, lifting ai_safety to 31.0. However, no large-scale deployment occurs, limiting real-world impact.
+
+Domestically, the Sovereign Compute Access Compact is launched as a priority. Invoking the Emergency Directive’s legal precedent, the EU proposes tying DMA compliance to compute-sharing by foreign firms. But regional court rulings—citing energy strain and local autonomy—block data centre expansions in key regions, reinforcing the emergent_local_energy_backlash. Sovereignty falls to 18.0 as capability rises and no domestic compute comes online.
+
+Political capital erodes to 19.0 under the weight of four large measures. Public sentiment drops to 37.0, as the cyberattack and visible infrastructure delays fuel anxiety. The Compact faces immediate resistance from Washington and US tech firms, who call it digital protectionism.

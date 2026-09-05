@@ -1,0 +1,11 @@
+### Acceleration Amid Collapse  
+Despite the global ai_investment_collapse, frontier AI capability advances to 54.5. Labs compress training runs and repurpose idle infrastructure, sustaining progress even as valuations crater and several planned data centres are scrapped. The open release of offensive tools continues apace, pushing openweight_capability to 42.0 — narrowing the gap and amplifying fears of distributed misuse.
+
+### Sovereignty Under Pressure  
+The EU pushes forward on compute autonomy. The Emergency Sovereign Compute Directive advances in trilogue, amended with a sunset clause and transparency promises. Bilateral side letters ease German and Irish resistance, but France demands equivalent access guarantees, threatening delay. Meanwhile, the Gigafactories fund pivots to brownfield sites, accelerating timelines. Yet sovereignty slips to 19.0: capability growth outpaces build-out, and supply_chain_coercion — Washington’s forced curtailment of ASML’s servicing — directly undermines the Union’s semiconductor leverage, costing −2 under rule 5.
+
+### Resilience Deferred  
+Preliminary discussions begin on a potential Resilience Surge measure, aiming to mandate AI-augmented detection and fail-safes across critical infrastructure. ENISA starts scoping audit protocols, but no formal proposal is tabled, funding remains unallocated, and no legislative action occurs. Member states voice concern over costs and legal overreach. With no new measure formally introduced, the portfolio charge remains limited to ongoing efforts. As capability rises unchecked, ai_safety falls to 28.0 due to growing exposure. Resilience holds at 37.0, as no implementation has begun.
+
+### Political Capital Erodes  
+Only one new measure — the Emergency Sovereign Compute Directive — is formally introduced this turn. The Resilience Surge remains in early consultation and is not counted as a new measure, preserving compliance with the one-measure limit. The Tech sovereignty package and InvestAI Gigafactories continue as ongoing efforts. No priority is named. Political capital declines by −3, reflecting the charge of advancing one new measure and sustaining existing initiatives. Public sentiment dips to 40.0 as labour disruption grows in media coverage, souring views on AI’s rollout.

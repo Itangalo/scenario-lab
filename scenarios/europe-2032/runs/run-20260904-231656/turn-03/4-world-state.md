@@ -1,0 +1,14 @@
+### A Breach That Changes Nothing and Everything  
+A wave of ransomware, adaptive and fast, sweeps through municipal IT systems in Belgium, Italy, and Estonia. Emergency dispatch, school meals, water billing—all are disrupted for days. The attack, traced to Kimi K3-derived models, exploits outdated software dependencies and fragmented local defences. It is not catastrophic, but it is public, and it lands where society is most visible: in daily life. The incident confirms what the Critical Infrastructure AI Shield was meant to prevent—yet too late for those affected.
+
+### The Shield Hardens, But Not Fast Enough  
+The Shield, now legally binding, begins rolling out AI-driven detection and mandatory red-teaming. Germany and France accelerate deployment, but Hungary and Slovakia resist, citing cost and sovereignty concerns. Technical assistance is offered, but trust is thin. Still, the measure lands partial resilience gains: early detection systems flag two follow-up probes, limiting spread. The European AI Incident Response Corps is discussed in emergency council sessions—ambitious, large-scale, and clearly needed—but no formal proposal is adopted this turn. The idea gains traction, but without a funding mechanism, cross-border mandate, or staffing plan, it remains in consultation. No political capital is yet spent on it, and it does not count as an active measure.
+
+### Sovereignty Gains Ground—Fully Realized  
+The Emergency Sovereign Compute Directive finishes, converting legal ambition into operational structure. The European Digital Infrastructure Consortium begins mapping eligible compute across member states and confirms access to an additional 8,000 PF-days of underutilized national supercomputing capacity. This delivers a +5 boost under rule 5, as recorded in the notepad. With `ai_capability` rising by 1.5, a −1 penalty applies. Net effect: sovereignty rises from 21.0 to 25.0, consistent with the notepad’s authoritative calculation. The ASML coercion lingers—no new tools, only plans to maintain old ones—but the foundational work is complete.
+
+### Political Capital Holds—At a Cost  
+Only one active measure is charged this turn: the Critical Infrastructure AI Shield, which continues implementation at a cost of −3. A proposal bonus of +3 applies for its direct response to the offensive AI agent rise and grid intrusion. No legitimacy boost from public sentiment. Political capital falls slightly to 38.0. The Tech Sovereignty Package remains an active measure from prior turns and continues to incur its ongoing cost; it is not a new initiative this turn. No additional measures are launched.
+
+### Sentiment Slips as Backlash Grows  
+The visible attack, combined with rising campaign rhetoric against unchecked AI, pushes public anxiety upward. Sentiment dips to 40.0.

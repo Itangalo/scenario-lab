@@ -1,0 +1,14 @@
+### Frontier Leaps Ahead  
+AI capability rose to 54.5 as labs, undeterred by the investment collapse, compressed training runs and repurposed idle compute. A new open-weight release demonstrated improved reasoning, leveraging existing frontier advances, but did not represent a decoupling from the overall pace of progress. Openweight capability increased modestly to 42.0, reflecting incremental diffusion of recent breakthroughs rather than a sudden leap. The closed models retain a clear edge, and the open-closed gap remains stable. Widespread distribution of the new model outpaced regulatory scrutiny, embedding higher capability into less-secured environments.
+
+### Containment Meets Resistance  
+The EU launched the Openweight Containment Initiative, aiming to restrict models above 45.0 index. Enforcement faced immediate hurdles: developers rebranded tools as "research previews," and cloud platforms resisted scanning private fine-tunes. Public backlash framed the effort as an attack on open innovation. The development of a sovereign model remains in early planning, with no prototype underway, reinforcing perceptions of delay.
+
+### Compute Push Delayed  
+The InvestAI Gigafactories, a high-cost initiative, advanced only to the planning and negotiation phase this turn. While public funding was earmarked and preliminary agreements explored, binding contracts for €60bn were not finalized within six months. Grid reservations progressed at the conceptual level, but land access in Brittany stalled due to local opposition, and ASML supply constraints blocked firm commitments on lithography tools. No ground was broken at any site. The project remains on track for gradual rollout, with full effect still at least two turns away.
+
+### Assurance in Overdrive  
+The EAAD, now operational under ENISA, began red-teaming models in critical infrastructure. However, with no new safety breakthroughs and capability advancing, assurance fell further behind. A second intrusion—this time in a water treatment system—was traced to an open-weight model, reinforcing fears.
+
+### Political Capital Erodes  
+The notepad records three active initiatives from prior turns: Tech sovereignty package, European AI Assurance Directorate, and Openweight Containment Initiative. The InvestAI Gigafactories were proposed this turn but have not yet advanced beyond initial planning, and thus do not yet carry a portfolio charge. The Openweight Containment Initiative has been formally named as the current priority, absorbing focus and resources. Spreading effort across three ongoing measures and one new proposal incurred a sustained burden of −10 to political capital, reduced slightly by minor public support for containment efforts (+2), resulting in a net drop to 30.0. Public sentiment dipped due to job losses in tech regions and frustration over data centre siting, compounded by cyber incidents and containment backlash.

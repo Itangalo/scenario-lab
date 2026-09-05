@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European Resilience Shield −3, Open-Weight Risk Monitoring Network finished, European AI Assurance Directorate finished, Sovereign Agent Development Programme −3, priority −1 = −16  
+PROPOSAL BONUS: Sovereign Agent Development Programme (cat 4, large) +3 — directly addresses eu_frontier_access_denied t4 and election_consolidation t5, both severe and recent  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 17 last turn, no capacity event, Gigafactories in flight +0, capability rose 6.0 −1 = 16 → eu_frontier_access_denied t4 and election_consolidation t5 deepen dependence, modelled as −2 unannounced pressure: 14 → rounding to 15

@@ -1,0 +1,11 @@
+### Steady Advance, Stalled Defences  
+AI capability climbs to 58.0 as automated evaluation spreads into financial auditing and materials science, further compressing development cycles. The frontier continues its incremental broadening, with agents now capable of managing multi-week research sprints in applied physics. Openweight_capability rises to 46.5, reflecting wider deployment of the replicated architecture in open research clusters—particularly in offensive cyber tooling and synthetic media generation—though still lagging behind closed models.
+
+### Safety Authority Proposed, But Authority Lags  
+The EU proposes the European AI Safety Certification Authority (EASCA), a new supranational body with power to delay or block high-capability AI deployments. Framed as an urgent response to stagnating ai_safety and recent near-misses, it draws comparisons to aviation safety oversight. However, the proposal faces immediate resistance: Germany questions its legal basis under Article 114 TFEU, Poland demands greater national representation, and France pushes for integration with existing defence AI structures. No progress is made on staffing or funding, and the agency remains on paper only.
+
+### Chips, But No Breakthrough  
+The Sovereign Chip Access Initiative advances technically—procurement pools are formalised, stockpile regulations codified, and pilot packaging lines begin setup. Yet no physical chips arrive, and geopolitical tensions delay final contracts. Germany remains hesitant on defence-linked procurement, accepting only a partial compromise. The Competitiveness Council notes progress but stresses implementation gaps.
+
+### Political Capital Erodes Further  
+With four large measures now in flight—including the new EASCA—the portfolio burden remains severe. The priority designation offers no acceleration. Eu_political_capital drops again, now at 17.0, while eu_ai_sovereignty falls to 15.0 due to persistent supply_chain_coercion and rising capability without offsetting gains. Public sentiment holds steady, neither scandal nor benefit shifting the ambivalent baseline.

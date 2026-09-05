@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European AI Assurance Directorate −3, Critical Infrastructure AI Resilience Shield −3, AI Labour Transition Fund −3, priority −1 = −16  
+PROPOSAL BONUS: AI Labour Transition Fund (cat 7, large) +3 — responds directly to emergent_labour_displacement noted this and prior turn  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, capability rose 1.5 −1 = 19.0  
+EMERGING DEVELOPMENTS: `emergent_labour_displacement` -- first noted turn 2, listed in 2 turn(s) so far: Preliminary reports from national statistics agencies show accelerating job displacement in legal support, radiology, and mid-level software development due to AI adoption in private firms. The trend is not yet reflected in headline unemployment, but sectoral pressures are mounting. This could become a persistent social and political issue if not addressed.

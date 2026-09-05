@@ -1,0 +1,11 @@
+### A Window of Clarity  
+A major interpretability breakthrough—enabling prediction of emergent agent behaviours before deployment—sweeps through leading AI labs. The method, developed collaboratively and rapidly adopted, marks a turning point in assurance. The EU seizes the moment, launching the Joint European AI Safety Observatory: a new technical agency with binding audit rights over high-risk models. Hosted by the European Digital Infrastructure Consortium, it begins staffing with seconded experts and targets its first audits at the AI systems powering the Critical Infrastructure AI Shield. Early work focuses on verifying that detection agents do not themselves become vectors of failure.
+
+### Shield Under Strain, But Holding  
+The Critical Infrastructure AI Shield, now prioritized, sees intensified rollout. ENISA deploys rapid-response teams to Hungary and Slovakia, offering co-funding and technical support. Resistance softens slightly, but political friction lingers—some regional leaders decry “Brussels overreach” even as follow-up cyber probes are flagged by new detection systems. Germany and France serve as models, their early deployments credited with containing secondary attacks. The emergent cooperation between national CERTs and Europol is integrated into the Shield’s architecture, feeding real-time threat simulations into anomaly detection engines.
+
+### Sovereignty’s Slow Erosion  
+Despite the completed Emergency Sovereign Compute Directive, rising AI capability (up +2.0) triggers a −1 decay in eu_ai_sovereignty. No new capacity event occurs, but dependence on foreign frontier models persists. The Tech Sovereignty Package advances slowly, with permitting delays and lukewarm private response. ASML maintenance bottlenecks remain unresolved.
+
+### Political Capital Tightens  
+The EU launches one new large measure (Safety Observatory, −3), continues three existing measures (total −9), and names a priority (−1). Portfolio charge totals −13. A +5 proposal bonus applies for the Safety Observatory, a large category 5 measure directly responding to the recent safety breakthrough. No sentiment boost. Political capital declines slightly to 37.0.

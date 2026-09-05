@@ -1,0 +1,156 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 59.5,
+    "openweight_capability": 46.0,
+    "ai_safety": 22.0,
+    "resilience": 46.0,
+    "eu_ai_sovereignty": 15.0,
+    "eu_political_capital": 12.0,
+    "public_sentiment": 38.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 34.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 42.5,
+        "ai_safety": 29.0,
+        "resilience": 45.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 27.0,
+        "public_sentiment": 47.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 44.0,
+        "ai_safety": 27.0,
+        "resilience": 47.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 25.0,
+        "resilience": 47.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 16.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 22.0,
+        "resilience": 46.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 12.0,
+        "public_sentiment": 38.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "campaign_backlash",
+    "capability_plateau_evidence",
+    "cyber_test_shot",
+    "election_alliance",
+    "emergent_labour_displacement",
+    "eu_frontier_access_denied",
+    "eval_anomaly_reports",
+    "loss_of_control_incident",
+    "member_state_defection",
+    "safety_breakthrough",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "loss_of_control_incident"
+    },
+    {
+      "turn": 2,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 3,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 3,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 3,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 3,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 3,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 3,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_labour_displacement"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_backlash"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-04T23:54:55.384961",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_sovereign_contingency_initiative",
+      "description": "A coalition of mid-sized EU member states, alarmed by repeated frontier access denials and the fragility of transatlantic arrangements, quietly launches a joint initiative to co-develop a minimal sovereign AI stack using existing research infrastructure and shared procurement. The effort is framed as contingency planning, not defiance, and focuses on securing narrow but critical capabilities for emergency governance and infrastructure resilience. It gains traction due to low trust in external providers and rising fears of strategic paralysis.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_campaign_backlash_continuation",
+      "description": "Public protests against AI-driven job losses in legal, administrative, and education support sectors escalate into coordinated strikes across several member states, prompting municipal governments to pause AI adoption in public services pending review. The movement gains momentum through decentralized organizing and resonates with broader discontent over economic precarity, forcing national leaders to acknowledge the political cost of unchecked automation despite lacking alternatives.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:55:01.786361"
+}

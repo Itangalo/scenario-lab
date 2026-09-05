@@ -1,0 +1,61 @@
+[
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.12,
+    "probability_samples": [
+      0.16,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_displacement_wave",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "Widespread reports emerge of AI-driven automation displacing mid-level technical and administrative workers across EU member states, particularly in legal support, accounting, and public-sector back offices. The displacement is not yet catastrophic, but the pace exceeds previous trends, and trade unions begin coordinating cross-border responses.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_open_source_bio_toolkit",
+    "probability": 0.27666666666666667,
+    "emergent": true,
+    "description": "A decentralized developer collective releases a modular, open-source toolkit that integrates existing AI models with bio-design APIs, enabling non-experts to generate plausible pathogen vectors or enzyme modifications. Though hosted on ephemeral infrastructure and lacking polish, its modular design allows rapid iteration and adaptation, effectively democratizing access to capabilities previously confined to well-resourced labs.",
+    "probability_samples": [
+      0.28,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

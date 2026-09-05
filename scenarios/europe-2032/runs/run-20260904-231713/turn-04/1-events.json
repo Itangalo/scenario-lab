@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "description": "A coalition of European universities and public research labs releases a new open-weight model trained entirely on EU-licensed data and compute, achieving capability level 48.0 by leveraging federated training across national supercomputing networks. While not matching the frontier, it proves sovereign training is feasible and sparks interest in a public alternative to U.S.-controlled models.",
+    "emergent": true,
+    "id": "emergent_public_eu_model_release",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

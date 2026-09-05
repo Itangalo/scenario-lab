@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 49.0 to 54.0 (+5.0) while `ai_capability` increased by only +2.0 (from 58.0 to 60.0). This violates the rule that `openweight_capability` may never exceed `ai_capability` and must accumulate at a rate consistent with it. Given that openweight capability rose faster and now represents a significantly larger fraction of ai_capability (from 84.5% to 90%), and no catastrophic physical destruction event is narrated to justify a divergence in trends, this violates the accumulation logic. The increase in openweight capability must be ≤ the increase in ai_capability unless justified by a specific, narrated shift in open compute deployment (e.g., mass open release due to US retreat), which is not present here.\n- SOVEREIGNTY calculation contradicts Invariant 2: The notepad states that sovereignty is calculated as 13.0 before adjustment, then \"adjusted to 14.0 to reflect partial progress on Finland site and Cohesion Fund leverage.\" This introduces an ad hoc upward adjustment not grounded in metric rules. Invariant 2 emphasizes that `eu_ai_sovereignty` has no floor and decays unless positively acted upon; it cannot be manually inflated via narrative convenience or unmodelled \"leverage.\" The adjustment contradicts the principle that metric changes must follow defined rules, not discretionary boosts.\n- Modelling choice 5 violated: The narrative introduces two new measures: \"Sovereign Model Development Programme\" and implies the fast-tracking of a \"parallel site in Finland\" as a distinct initiative. While the Gigafactories are an existing measure, the Finland site is presented as a new, fast-tracked infrastructure project under a different energy and partnership model. Combined with the new model programme, this constitutes two new measures in one turn, exceeding the \"at most one new measure per turn\" limit."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

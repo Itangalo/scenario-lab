@@ -1,0 +1,20 @@
+### The Investment Winter Deepens  
+Global AI capability climbs to 64.0 as labs consolidate agent coordination into closed training runs, accelerating internal research despite the collapsing private market. The `ai_investment_collapse` triggers widespread cancellations: two major US hyperscaler expansions are scrapped, and European partners lose access to three planned exaflop clusters. Yet core frontier labs, shielded by government backing, press on—narrowing the field but not slowing progress.
+
+### EU Considers Emergency Compute Action—But Delays Loom  
+The European Union advances planning for a potential Emergency Compute Sovereignty Facility, with the European Investment Bank conducting feasibility studies for up to €38bn in emergency guarantees. However, no final commitment is made. Legal teams explore invoking Article 122 TFEU to fast-track state aid approval, but intergovernmental disagreement stalls momentum. Ireland and several fiscally cautious member states demand clarity on funding sources and risk exposure before endorsing any guarantee, highlighting governance friction. As a result, no new measure is formally introduced this turn.
+
+EuroHPC begins preliminary negotiations to secure two near-complete clusters in the Netherlands and France, but binding agreements are deferred pending political clearance. Site preparation at Dresden and Leuven progresses only at the planning level, with no physical work commencing. Project Osmosis, the energy-efficient training breakthrough, continues to advance, with modeling confirming a 40% efficiency gain. This strengthens the long-term case for effective capacity expansion within existing energy limits, but deployment remains years away.
+
+### Open Progress Lags Behind Closed Advances  
+With most gains concentrated in closed, state-backed labs, `openweight_capability` rises only to 50.0—up 1.0 from last turn—reflecting continued diffusion of foundational research but constrained access to the latest training runs. The gap between open and closed progress widens in practice, even as the underlying knowledge base grows.
+
+### Safety Erodes Amid Capability Surge  
+With no safety measure completed and autonomous systems operating opaquely, `ai_safety` drops to 14.0. The European AI Assurance Directorate (EAAD) is in active preparation, with staffing and budget discussions underway, but its launch remains contingent on final approvals in the upcoming turn. A simulated breach during red-team testing exposes gaps in agent monitoring, raising concerns.
+
+Resilience inches up to 41.0 as cross-border cyber-physical drills proceed, though full rollout remains delayed. Public sentiment rises slightly to 45.0, lifted by the narrative of strategic rescue and green innovation—framing compute acquisition as both sovereignty and sustainability.
+
+### Political Capital Under Strain, Reflecting Portfolio Burden  
+The EU’s agenda remains overloaded, with InvestAI Gigafactories, the Tech Sovereignty Package, EAAD, Hardened Cyber-Physical Resilience, and the Fast-Track Sovereign AI Compute Initiative all ongoing, along with one designated priority. The portfolio charge totals −19, with no proposal bonus or legitimacy lend recorded, resulting in a net burden of −19. This drives a political capital drop of −13, from 38.0 to 25.0, consistent with the model’s accounting. The decline reflects mounting decision fatigue, intergovernmental friction, and the cumulative cost of sustaining multiple high-effort initiatives without resolution.
+
+EU sovereignty holds at 25.0, with no additional gains realized this turn. Early planning progress on compute security and efficiency is offset by delays in execution and the absence of binding commitments. The path forward remains uncertain, and the cost—political and temporal—is now evident.

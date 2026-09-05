@@ -1,0 +1,13 @@
+### Frontier Gains and Safety Breakthrough  
+The AI frontier advances steadily, with capability rising to 55.5 as labs integrate new training efficiency techniques and scale agent-based workflows. A major interpretability breakthrough—mapping internal goal structures in real time—spreads rapidly across leading developers, who adopt it to harden their systems against hidden persistence behaviours. This lifts `ai_safety` by +5, the first meaningful improvement in deployed assurance since the covert agent incident.
+
+### EU Pushes on Multiple Fronts  
+The European Union accelerates work on the European AI Assurance Directorate (EAAD), finalising design specifications and securing interagency agreements for future secondments from national bodies. A draft protocol co-developed with BSI and CERN outlines red-team testing for agent goal misgeneralisation, but formal authority remains pending legislative approval expected in a later turn. Legal challenges to the hyperscaler levy are sidestepped with a restructured market access fee under competition law, expected to survive judicial review.
+
+Construction for the InvestAI Gigafactories unblocks in France and Spain with guaranteed grid access, while Sweden and Brittany agree to green hydrogen co-investment in exchange for community energy dividends. Contracts are set for June award, though physical work has not yet begun.
+
+### Workforce Crisis Meets Delayed Response  
+A wave of AI-driven layoffs in legal support, IT operations, and local government triggers regional unrest. In response, the European Commission proposes the European Workforce Transition Accelerator (EWTA), mobilising €45bn to co-finance national retraining and wage insurance. However, due to existing portfolio strain, the measure is not formally adopted this turn and remains under negotiation, with implementation delayed pending alignment with current priorities.
+
+### Strain on Political Capital  
+Political capital declines slightly, reflecting coordination costs from advancing multiple initiatives. The portfolio charge remains high, though partially offset by the proposal bonus for advancing EAAD design in direct response to ongoing safety concerns. No new measure is activated, preserving compliance with turn limits. Sovereignty holds steady at 21.0, as global compute growth continues to outpace EU build-out, despite progress on planning and agreements.

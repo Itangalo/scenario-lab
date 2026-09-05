@@ -1,0 +1,131 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 62.0,
+    "openweight_capability": 51.0,
+    "ai_safety": 31.0,
+    "resilience": 38.0,
+    "eu_ai_sovereignty": 15.0,
+    "eu_political_capital": 18.0,
+    "public_sentiment": 42.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 42.0,
+        "ai_safety": 33.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 43.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 44.0,
+        "ai_safety": 30.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 37.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 48.0,
+        "ai_safety": 28.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 27.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 26.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 21.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 62.0,
+        "openweight_capability": 51.0,
+        "ai_safety": 31.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 18.0,
+        "public_sentiment": 42.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "campaign_security_hawk",
+    "cyber_test_shot",
+    "election_consolidation",
+    "member_state_defection",
+    "openweight_frontier_release",
+    "safety_breakthrough"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 2,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 4,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 5,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-04T23:24:37.092945",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_sovereign_compute_pact",
+      "description": "A coalition of EU member states, frustrated by the Union's inability to secure guaranteed access to frontier AI systems, initiates a joint procurement and sovereign compute-sharing pact with several non-U.S. cloud providers and research consortia. This arrangement bypasses existing EU coordination mechanisms but is framed as a stopgap to ensure continuity of critical services. It deepens fragmentation but creates a de facto alternative infrastructure layer.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_ai_governance_legal_challenge",
+      "description": "Following the EAAD audit breach and rising public concern over opaque AI governance, a cross-border civil society coalition launches a coordinated legal campaign challenging the legality of several high-impact AI deployments in public services. Supported by ombudsmen and data protection authorities in three large member states, the campaign files multiple injunctions, demanding transparency and human oversight. The cases gain fast-track status due to the political sensitivity.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:24:41.307927"
+}

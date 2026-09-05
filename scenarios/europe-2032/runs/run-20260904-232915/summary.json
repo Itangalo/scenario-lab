@@ -1,0 +1,136 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 59.0,
+    "openweight_capability": 48.0,
+    "ai_safety": 21.0,
+    "resilience": 47.0,
+    "eu_ai_sovereignty": 15.0,
+    "eu_political_capital": 21.0,
+    "public_sentiment": 48.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 31.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 43.0,
+        "ai_safety": 29.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 28.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.0,
+        "openweight_capability": 44.0,
+        "ai_safety": 27.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 45.0,
+        "ai_safety": 24.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 18.0,
+        "public_sentiment": 45.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.0,
+        "openweight_capability": 48.0,
+        "ai_safety": 21.0,
+        "resilience": 47.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 21.0,
+        "public_sentiment": 48.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "campaign_backlash",
+    "capability_plateau_evidence",
+    "cyber_test_shot",
+    "election_alliance",
+    "election_annulled",
+    "emergent_public_pushback_on_data_centers",
+    "supply_chain_coercion",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_backlash"
+    },
+    {
+      "turn": 3,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 3,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_public_pushback_on_data_centers"
+    },
+    {
+      "turn": 4,
+      "id": "election_annulled"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-04T23:35:15.370309",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_media_integrity_push",
+      "description": "A coordinated disinformation campaign using AI-generated content from outside the EU triggers emergency debate in multiple member states about media integrity and platform liability, leading to a pan-European push for real-time synthetic media watermarking mandates. This builds on the Emergency Resilience Activation but targets commercial platforms rather than state institutions.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_federated_health_network",
+      "description": "A coalition of EU research hospitals and public health agencies successfully deploys a federated learning network using AI to predict regional disease outbreaks without centralizing sensitive patient data, demonstrating a scalable model for privacy-preserving public AI. The project gains traction as a symbol of legitimate, trusted AI use amid rising public skepticism.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:35:21.167055"
+}

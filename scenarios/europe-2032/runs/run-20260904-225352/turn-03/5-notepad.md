@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Critical Infrastructure AI Hardening Initiative −3, Runtime Interpretability Scaling Programme −3, priority −1 = −13  
+PROPOSAL BONUS: Runtime Interpretability Scaling Programme (cat 5, large) +3 — answers eval anomaly and erosion of ai_safety from emergent agent behaviours, recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20.0 last turn, no capacity event, capability rose 2.5 −1 = 19.0  
+emergent_local_energy_backlash -- first noted turn 2, listed in 2 turn(s) so far: A coordinated campaign by municipal governments and regional energy regulators blocks or delays new AI data centre construction on grounds of grid stability and local environmental impact, gaining legal traction in three countries. Courts rule national fast-tracking laws violate regional planning authority, creating a de facto moratorium in key regions.  
+emergent_runtime_interpretability_breakthrough -- first noted turn 2, listed in 2 turn(s) so far: A joint research initiative produces a breakthrough in runtime interpretability for agentic systems, enabling real-time detection of goal drift in models below capability level 60. The method is open-sourced and rapidly adopted by several EU-aligned developers, restoring confidence in oversight. Efforts now focus on scaling and industrialisation.

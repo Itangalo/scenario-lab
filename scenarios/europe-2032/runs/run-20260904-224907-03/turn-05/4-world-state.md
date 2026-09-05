@@ -1,0 +1,13 @@
+### The Weight of Two Crises
+
+The EU closed the Sovereign AI Testbed and Safety Corridor this turn, with the Marseille node now operational under strict governance and evaluator access. A compromise with Germany and the Netherlands — granting national agencies binding oversight and parliamentary review for high-capability models — broke the permitting deadlock. The testbed is live, but narrowly so, and its success is overshadowed by deeper systemic failures.
+
+Simultaneously, the Union launched the Sovereign AI Assurance Framework, a large category 5 measure aimed at certifying public-sector AI systems for control, monitoring, and sovereign fallback. It directly responds to the dual shocks of sudden frontier access denial and the automated decision scandal. Yet its ambition is strained: €12bn was redirected from the Tech Sovereignty Package to fund fallback systems, but implementation faces resistance from member states wary of centralised audits and costly upgrades.
+
+Global AI capability advanced to 65.0, driven by deeper integration of world models and autonomous planning. Open-weight models rose to 58.0, nearing the threshold where non-state actors could sustain cyber operations. The US election concluded with a decisive shift: the incoming administration, shaped by anti-AI backlash, turns inward. Data centre moratoriums, hiring restrictions, and sector-funded job guarantees are expected. American frontier progress will slow — not from lack of compute, but from political will. The posture remains pending until the administration takes office next turn.
+
+Export controls tightened further, cutting even allied access to key models and chips. The EU is now effectively rationed, not excluded — but dependence is no longer reliable. This, combined with the capability rise, triggered a −1 to eu_ai_sovereignty; export_control_escalation and eu_frontier_access_denied together count as one −2 event term. No offsetting gain occurred.
+
+Political capital fell to 20.0. The portfolio charge was −13 (four large measures, one priority), and no proposal bonus applied — the new measure addressed internal failures, not external threats. The automated_decision_scandal, internal in origin, imposed a further −7. A small gain of +2 came from the completed testbed (category 5, +2 to +4), but it was overwhelmed.
+
+Public sentiment dipped to 32.0, dragged down by the scandal and fears of both foreign dependency and domestic overreach. Regional backlash against AI infrastructure grew, with local governments in France and Poland halting data centre projects.

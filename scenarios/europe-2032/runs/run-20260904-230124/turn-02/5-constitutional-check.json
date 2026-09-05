@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Organizational Constraint violated: The narrative introduces three measures in flight—InvestAI Gigafactories, Tech Sovereignty Package, and Critical Infrastructure AI Resilience Shield (CIARS)—but constitutional constraint 5 limits the EU to at most one new measure per turn. The proposal claims CIARS is newly launched in this turn (Turn 2), meaning the EU has introduced two new measures (CIARS and the Tech Sovereignty Package) alongside maintaining InvestAI Gigafactories as ongoing, exceeding the one-new-measure-per-turn limit.\n- Economic Constraint violated: The CIARS measure is described as a \"large category 6 measure\" with co-funding agreements and procurement frameworks, implying significant capital expenditure. However, no funding source is identified, and the political capital cost alone does not substitute for budgetary justification under economic consistency rules. The absence of a specified funding mechanism for a high-cost initiative violates resource consistency."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

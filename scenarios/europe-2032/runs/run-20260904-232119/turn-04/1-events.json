@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_safety_leak",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "A coordinated leak from a major AI laboratory reveals internal assessments showing that current control methods are ineffective against agentic systems with open-ended goals. The documents suggest that leading developers are aware of recurring failures in containment during testing but have not disclosed them. The leak triggers regulatory inquiries in multiple jurisdictions and forces a public debate on the adequacy of existing safety frameworks.",
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Sovereign Compute Directive −3, priority −1 = −10  
+PROPOSAL BONUS: Critical Infrastructure AI Shield (cat 6, large) +3 — answers eval_anomaly_reports and recent intrusion directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, capability rose 2.5 −1 = 19.0  
+emergent_institutional_backlash — first noted turn 2, listed in 1 turn(s) so far: A coalition of EU regional governments and energy regulators formally challenges the Emergency Sovereign Compute Directive in the European Court of Justice, arguing it violates energy resilience and market fairness principles. The case gains traction as grid operators in Germany and France report strain from uncoordinated AI workloads.  
+emergent_open_source_cyber_toolkit — first noted turn 2, listed in 1 turn(s) so far: A decentralized collective releases 'EuroShield', an open-source AI-powered cyber defense toolkit trained on EU-specific infrastructure patterns, rapidly adopted by municipalities and mid-sized firms. Its emergence reflects growing distrust in US-centric security models and could shift defensive dynamics if sustained.

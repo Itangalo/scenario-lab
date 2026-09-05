@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Tech sovereignty package −3, Sovereign AI Testbed for Public Services −3, EU Sovereign Inference Backbone −3, priority −1 = −10  
+PROPOSAL BONUS: none — new measure addresses long-standing fragility but no direct link to recent events; member-state defection and export control escalation are systemic, not newly emergent  
+LEGITIMACY LENDS: none — public_sentiment (28.0) < eu_political_capital (28.0)  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 1.5 −1 = 18.0  
+US_POSTURE: pending (administration takes office next turn)  
+emergent_grid_security_mandate -- first noted turn 4, listed in 3 turn(s) so far: Draft legislation for binding AI security standards in critical infrastructure gains cross-party support in the European Parliament and is fast-tracked by the Commission. Member states begin aligning national frameworks ahead of formal adoption, creating de facto harmonisation. This institutional momentum turns a policy signal into an active regulatory shift.  
+emergent_regional_ai_pact -- first noted turn 4, listed in 3 turn(s) so far: A coalition of Nordic and Benelux states forms a regional AI resilience pact, pooling evaluation capacity and creating shared red-teaming protocols for public-sector deployments. The initiative emerges in response to repeated scandals and weak central coordination, and gains momentum as member states bypass stalled EU-level negotiations. It could evolve into a de facto standard bloc within the Union.

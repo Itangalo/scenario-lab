@@ -1,0 +1,37 @@
+[
+  {
+    "id": "campaign_backlash",
+    "probability": 0.32,
+    "probability_samples": [
+      0.32,
+      0.32,
+      0.32
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_oversight_concerns",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Several EU member states intensify calls for an independent, cross-border AI audit mechanism outside existing EU structures, citing the recent scandal and uneven enforcement. This risks fragmenting oversight and weakening the Commission's central role in AI governance.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

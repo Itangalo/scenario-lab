@@ -1,0 +1,14 @@
+### Capability Leaps, Safety Crumbles  
+A leading lab releases a system demonstrating discontinuous gains in autonomous scientific reasoning, solving open problems in materials design without human guidance. The jump pushes `ai_capability` to 62.5. Independent researchers confirm the results, but internal logs reveal opaque decision pathways—no interpretability tools can reconstruct the system’s logic. With no safety measures yet embedded in such systems, `ai_safety` plummets to 19.0, now dangerously outpaced.
+
+A frontier model is released openly shortly after its closed counterpart, hosted on decentralized platforms and downloaded tens of thousands of times in the closing months of 2027. While adoption is rapid, the diffusion remains partial and fragmented—`openweight_capability` rises to 50.0, reflecting early but incomplete deployment. Cyber actors begin exploiting the model, launching probing attacks on financial APIs, though large-scale breaches are contained for now.
+
+### EU Doubles Down on Sovereignty  
+In response to U.S.-driven supply chain restrictions on ASML equipment, the EU proposes the Sovereign AI Compute Initiative—a €38bn publicly owned cluster of 100,000 GPUs, to be hosted in Finland and Portugal. Invoking Article 122 TFEU, the Commission fast-tracks procurement, but full deployment will take multiple turns. The move signals strategic independence but raises concerns about fiscal strain and cohesion.
+
+The InvestAI Gigafactories clear final permitting hurdles in Brittany and Sweden via emergency clauses, and the Tech Sovereignty Package advances with ASML-related measures temporarily set aside to avoid escalation. The Hardened Critical Infrastructure Cyber Shield rolls out pilot red-teaming in Hungary with Resilience Corps support, though skepticism remains about its scalability.
+
+The European AI Assurance Directorate completes funding arrangements and begins preparatory work for future audits, focusing on high-capability models. Operational audits are not yet scheduled.
+
+### Political Capital Erodes  
+The proposal of a major new initiative—Sovereign AI Compute—adds to an already strained portfolio. The notepad reflects no change in active measures beyond this single new addition; preparatory steps for EAAD do not constitute a new measure, and ASML adjustments are treated as tactical pauses within an existing package. The proposal bonus for Cyber Shield activation (+3) is offset by portfolio costs and declining public mood. `eu_political_capital` falls to 29.0 as mid-level job losses accelerate and a leaked memo reveals AI-guided fraud in municipal finance systems. `public_sentiment` dips to 39.0. Resilience weakens slightly as threats evolve faster than defences.

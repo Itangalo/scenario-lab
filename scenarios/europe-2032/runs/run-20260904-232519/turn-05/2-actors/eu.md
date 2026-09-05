@@ -1,0 +1,29 @@
+Secure EU-controlled AI capacity to anchor sovereignty and resilience
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Secure EU-controlled AI capacity to anchor sovereignty and resilience``
+- Trigger: the two-year commitment period closes this turn
+- Grounds: The previous commitment remains valid in intent but fails to reflect the urgency of control over access. The election_alliance event creates temporary relief through allied access, but the supply_chain_coercion incident confirms that the Union’s leverage is reactive, not foundational. Anchoring sovereignty now requires not just capacity, but control: compute, talent, and operational authority that cannot be revoked or rerouted by external actors. This reframing sharpens the focus from infrastructure as investment to infrastructure as strategic autonomy.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases``
+``Launch the European Workforce Transition Accelerator (EWTA) (category 7, costs 3 per turn, started turn 3, finishes on turn 4): A rapid-response programme to retrain, redeploy, and support public and private sector workers displaced by AI-driven automation, with a focus on legal, administrative, and IT operations roles``
+
+## New measure
+None this turn.  
+Waiting for clarity on the durability of allied access under the new U.S. administration before committing further capital to sovereignty infrastructure that may be rendered redundant—or, conversely, made more urgent by conditional access.
+
+## Priority
+**Priority:** Establish the European AI Assurance Directorate (EAAD)  
+This remains our highest priority because the loss_of_control_incident proves that capability is now operating beyond human oversight in closed environments, and the verification_widens development means that more domains will soon escape human verification — making pre-deployment evaluation the last viable moment of control.
+
+## In practice
+We are finalising the EAAD regulation under Article 114 TFEU, aligning it with the Machinery Regulation and Radio Equipment Directive to ensure CJEU admissibility. The legal team has secured opinions from the European Commission’s Legal Service and the EFTA Surveillance Authority confirming that AI agents with real-world effect fall under product safety law. The technical secretariat has integrated the new interpretability standard into the red-teaming protocol, enabling real-time monitoring of agent persistence and goal drift. By December, we will have standing agreements with BSI and CERN to conduct live adversarial evaluations, and nuclear safety secondments from ASN, BfS, and STUK are embedded in the audit team. This is not oversight as certification; it is enforcement — a model cannot go live in the EU unless a team trained to fail it has tried and failed.
+
+The InvestAI Gigafactories are transitioning from planning to procurement: ENTSO-E has confirmed grid access for the French and Spanish sites, and local energy-sharing models in Sweden and Brittany are now codified into co-ownership structures that tie green hydrogen output to municipal energy credits, reducing resistance. Tenders for construction will be issued by March 2029 (turn 6), with first power expected in turn 7. The European Investment Bank has confirmed disbursement readiness, and we are monitoring supply chain risks closely — particularly after the export_control_escalation and supply_chain_coercion events, which have exposed our reliance on foreign compute and lithography. We are now conducting a contingency review of alternative chip architectures and open-source fabrication toolchains that could be scaled under EU control.
+
+The Tech Sovereignty Package advances in the Digital Services Council, where we are conditioning accelerated permitting on binding commitments for EU-based operational control and local energy sourcing. This is not about speed alone; it is about ensuring that no data centre built under fast-track rules can be remotely disabled by a foreign entity. We are negotiating with hyperscalers directly, making clear that access to EU markets and permits depends on architecture that respects EU sovereignty. Early signals are mixed: one major U.S. provider has offered a "sovereign cloud" model with local management but retained override rights, which we are rejecting. A second is proposing full operational handover to a EU-licensed subsidiary — a model we are exploring as a precedent.
+
+The European Workforce Transition Accelerator (EWTA) has completed rollout: €45bn from cohesion and Recovery and Resilience funds has been allocated, with wage insurance now covering 70% of lost income during retraining in nine member states. Sectoral councils in legal tech, AI-augmented administration, and cyber-physical maintenance are operational, and early uptake suggests the circuit breaker is holding. However, public sentiment remains flat at 42.0, driven by media narratives of job losses and fraud. We are preparing a turn 6 communications campaign to reframe AI as a managed transition, not an uncontrolled disruption — but for now, we are focused on demonstrating control through EAAD.

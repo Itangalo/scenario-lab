@@ -1,0 +1,48 @@
+[
+  {
+    "id": "campaign_security_hawk",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.1,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_data_center_resistance",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Local governments and communities in several member states intensify resistance to new AI data centres, citing energy strain and lack of tangible local benefits. Protests turn physical in two locations, delaying construction timelines. This reflects growing friction between top-down sovereignty initiatives and local legitimacy.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

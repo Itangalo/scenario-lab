@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European AI Assurance Directorate −3 (finished), European Sovereign AI Stack Initiative −3, EU Agent Containment and Observability Framework −3, priority −1 = −16  
+PROPOSAL BONUS: EU Agent Containment and Observability Framework (cat 1, large) +5 — direct response to eval_anomaly_reports, cyber_major_incident, and emergent_civil_society_audit_network, addressing uncontrolled agent behaviour in public systems  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15.0 last turn, no capacity event, capability rose 2.0 −1 = 14.0  
+EMERGING DEVELOPMENTS: 
+- `emergent_middle_power_initiative` -- first noted turn 2, listed in 5 turn(s) so far: Quiet coordination continues among EU, Japan, South Korea, and Taiwan on chip access and model evaluation. No formal agreement, but joint technical workshops are scheduled.
+- `emergent_shieldnet_launch` -- first noted turn 2, listed in 5 turn(s) so far: ShieldNet’s pilot shows early promise in detecting AI-optimised phishing in transport networks, though false positives remain high.
+- `emergent_distributed_training_breakthrough` -- first noted turn 5, listed in 2 turn(s) so far: A joint research initiative between EU member states, Japan, and South Korea successfully demonstrates a new open-weight model training method that leverages distributed compute across allied nations, reducing reliance on single-point infrastructure. This strengthens the Emerging Middle Power Initiative and could accelerate sovereign capability development if scaled.

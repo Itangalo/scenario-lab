@@ -1,0 +1,9 @@
+AI capability rises to 54.8 in early 2027, driven by automated training pipelines and AI-refined clinical coding, widening the gap between rapid advancement and lagging oversight. A major AI-powered ransomware attack disrupts health systems across three EU member states, exploiting zero-day vulnerabilities and exposing critical weaknesses in cross-border crisis response and infrastructure resilience. The incident triggers a cyber_major_incident event, underscoring systemic fragilities.
+
+Public trust collapses following an automated_decision_scandal in a major member state, where a flawed AI welfare system denies thousands of claims without recourse, sparking protests and political backlash. Sentiment drops to 34.0. ai_safety declines to 28.0 due to uncontrolled AI deployment in critical sectors and absent regulatory updates, though no systemic safety_failure event occurs.
+
+Capital flight intensifies as two US hyperscalers cancel EU data centre projects, citing regulatory uncertainty and geopolitical risk, weakening the Tech Sovereignty Package. Investment confidence wavers, and sovereignty dips to 20.0 as compute access contracts dissolve.
+
+In response, the EU prioritizes the Emergency Sovereign Compute Directive, entering trilogue but facing resistance from Germany, Ireland, and legal doubts over EU competence. No agreement is reached. However, the Critical Infrastructure AI Resilience Programme is launched with a +3 proposal bonus for addressing the cyber incident, offsetting a −10 portfolio charge and preserving eu_political_capital at 38.0. Planning begins, but no operational capacity is deployed.
+
+openweight_capability grows to 41.9, maintaining its historical lag behind frontier AI. Institutional inertia and fragmented coordination prevent rapid adaptation, leaving the EU reactive in the face of accelerating threats.

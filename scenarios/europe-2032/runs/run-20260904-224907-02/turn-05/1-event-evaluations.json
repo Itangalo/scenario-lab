@@ -1,0 +1,217 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.41308596226707783,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.38084523642229573,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23205012431305239,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.3,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8237916886796258,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.520164502984732,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.016272427388733912,
+    "triggered": true
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.33,
+    "probability_samples": [
+      0.33,
+      0.33,
+      0.33
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.7866201650835102,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.33,
+    "probability_samples": [
+      0.33,
+      0.33,
+      0.33
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.7866201650835102,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.34,
+    "probability_samples": [
+      0.34,
+      0.34,
+      0.34
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.7866201650835102,
+    "group_basis": "weighted",
+    "triggered": true
+  },
+  {
+    "description": "A coalition of mid-sized EU member states, frustrated by the paralysis in Brussels and the repeated denial of sovereign access, begins quiet coordination with Japan, South Korea, and Canada to establish a mutual fallback network for compute access and model evaluation. The initiative is framed as 'resilience cooperation' but includes binding commitments to share capacity if any member is cut off by a great power. It gains momentum due to the ongoing suspension of the Emergency Sovereign Compute Directive and Poland’s earlier defection.",
+    "emergent": true,
+    "id": "emergent_compute_pact",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2827023534045423,
+    "triggered": false
+  },
+  {
+    "description": "Following the US-China agreement and the EU's visible struggle to operationalize sovereignty, a group of European AI safety startups and university labs announce a joint open initiative—'EuroShield Next'—to develop automated monitoring tools for model misuse, funded by a mix of national grants and philanthropy. The project explicitly distances itself from government control but offers to feed findings into the stalled Sovereign Evaluation and Control Framework, creating a de facto parallel assurance system.",
+    "emergent": true,
+    "id": "emergent_safety_consortium",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.39602088175736694,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of mid-sized EU member states, frustrated by the paralysis in Brussels and the continued erosion of eu_ai_sovereignty, begins quiet coordination with South Korea, Japan, and Taiwan on joint evaluation benchmarks and compute access pooling. The initiative frames itself as a 'technical working group' to avoid triggering formal EU processes, but it establishes shared red lines for model deployment and a mutual notification protocol for capability jumps. This reflects growing recognition that middle powers collectively hold critical leverage across the supply chain.",
+    "emergent": true,
+    "id": "emergent_middle_power_initiative",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Following the US-China agreement and the EU's defensive posture, a consortium of European research universities and public labs releases a coordinated suite of open-weight models fine-tuned specifically for public-sector resilience tasks—infrastructure monitoring, emergency response coordination, and disinformation detection. While not frontier-capable, the package is interoperable, auditable, and designed for deployment under strict human oversight. It gains rapid adoption across municipal networks, reinforcing the EuroShield ecosystem and creating a politically palatable alternative to foreign AI.",
+    "emergent": true,
+    "id": "emergent_public_resilience_stack",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coalition of mid-sized EU member states, frustrated by the paralysis in Brussels and the repeated denial of sovereign access, begins quiet coordination with Japan, South Korea, and Canada to jointly negotiate access to frontier AI models and secure compute supply. They establish a working group to align export licensing and mutualize evaluation capacity, acting outside formal EU channels. This marks the first institutionalized hedging by core members, signaling deep erosion of trust in central coordination.",
+    "emergent": true,
+    "id": "emergent_hedging_consultative",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Following the US-China agreement and rising safety concerns, a consortium of European research universities and public labs releases a new open-weight framework—'Cerberus'—designed specifically for secure, auditable agent execution. It includes built-in tripwires, resource capping, and human-overridable goal stacks. While not frontier-capable, it rapidly gains adoption in municipal and healthcare AI deployments across the EU, becoming a de facto standard for safe operational AI. This represents a grassroots institutional response to the vacuum in sovereign control.",
+    "emergent": true,
+    "id": "emergent_secure_agent_framework",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

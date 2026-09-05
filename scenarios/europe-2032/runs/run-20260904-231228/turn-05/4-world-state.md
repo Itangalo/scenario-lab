@@ -1,0 +1,14 @@
+### The Threshold Crossed  
+AI capability reaches 60.0, as labs confirm multi-day autonomous operation in research and engineering workflows. The jump marks entry into a new regime: AI systems now complete complex professional projects end to end, displacing junior roles across law, software, and biotech. Openweight models rise to 48.5, reflecting continued gains in distributed training efficiency and broader access to replication tooling. While the gap to frontier capability narrows slightly, the openweight community still lags in accessing the most advanced architectures and training runs, preventing parity. The growth is steady but not accelerated—no breakthrough in model sharing or compute access enables leapfrogging this turn.
+
+### A Cyber Shock, Then a Surge  
+A coordinated ransomware assault cripples municipal services in Belgium and Slovakia, exploiting AI-generated zero-days. Though not the most advanced attack technically, its speed and adaptability overwhelm defences. The *Critical Infrastructure Resilience Surge* finishes this turn, delivering emergency patching protocols and cross-border SOC coordination—just in time to limit cascading failure. Resilience rises as systems degrade rather than collapse.
+
+### Sovereignty in Response  
+The EU proposes the *Sovereign Compute Corridor Initiative*, a large category 4 measure aiming to create a legally insulated, cross-border compute backbone. Permitting advances in Finland, Germany, and Luxembourg, though ASML maintenance access remains constrained by U.S. jurisdiction. The initiative is announced and enters early implementation but will not take full effect for at least two turns due to permitting, procurement, and legal alignment requirements. The *Emergency Sovereign Compute Directive* was proposed in a prior turn and completes this turn, reserving frontier compute for state use. Sovereignty gains +1 from the completed directive but loses 1 due to capability growth, resulting in no net change: 20.0.
+
+### Political Costs Mount  
+Despite finishing one major measure and launching another, political capital falls. The portfolio’s ongoing cost—four large measures and a priority—drains 13 points. A modest +2 bonus arrives for the new sovereignty initiative, responding directly to the cyber incident. Public sentiment drops, as job losses and the attack fuel anxiety.
+
+### America Votes, But the World Waits  
+The U.S. election concludes with a victory for the alliance faction. No formal policy statements have been issued by the transition team. The world awaits the administration’s inauguration in the next turn, when its posture on AI cooperation, export controls, and allied access will be formally recorded. For now, no implications about future alignment or transatlantic coordination may be drawn.

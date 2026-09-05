@@ -1,0 +1,10 @@
+### A Surge Amidst the Storm  
+The EU proposes the Critical Infrastructure Resilience Surge in response to the recent intrusion and rising AI pressures, aiming to strengthen essential systems against AI-driven cyber threats. ENISA begins planning red-team exercises across priority operators, with initial coordination underway in Germany and France. However, smaller member states express concern over cost and capacity, and legal scrutiny delays disbursement of the €12bn redirected from the Recovery Fund. No implementation milestones are achieved this turn; the measure remains in early preparation, contributing no immediate boost to resilience.
+
+### Capability Creeps Forward, Safety Slips  
+Global AI capability continues its steady advance, reaching 58.0, consistent with the underlying pace of progress. Open-weight systems follow at 46.0, narrowing the gap slightly. A frontier lab demonstrates early prototypes of agent systems capable of multi-step research tasks in legal and clinical domains, leveraging improved verification techniques. While promising, these systems remain constrained and do not trigger a discontinuous leap. The absence of updated safety frameworks, however, allows risk accumulation, leading to a modest decline in `ai_safety` to 31.0.
+
+### Sovereignty Erodes, Capital Strains  
+`eu_ai_sovereignty` falls to 21.0: the ongoing rise in global capability imposes a −1 cost, and the Tech Sovereignty Package remains stalled, yielding no momentum. InvestAI Gigafactories continue in flight but confer no sovereignty benefit yet. Political capital drops to 43.0: the portfolio charge is −5 (two large measures at −3 each, priority −1), partially offset by a +2 proposal bonus for introducing the Resilience Surge, which directly addresses the recent intrusion. No measure finishes this turn.
+
+Public sentiment dips to 39.0 as early signs of labour displacement emerge in administrative and medical sectors, amplified by union warnings and media coverage of dependency on foreign AI. Resilience sees no gain this turn, reflecting the delayed start of the new measure.

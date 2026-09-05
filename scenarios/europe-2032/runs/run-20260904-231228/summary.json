@@ -1,0 +1,154 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 60.0,
+    "openweight_capability": 48.5,
+    "ai_safety": 25.0,
+    "resilience": 40.0,
+    "eu_ai_sovereignty": 20.0,
+    "eu_political_capital": 31.0,
+    "public_sentiment": 32.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 42.0,
+        "ai_safety": 32.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.5,
+        "openweight_capability": 45.0,
+        "ai_safety": 27.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 42.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 57.0,
+        "openweight_capability": 46.5,
+        "ai_safety": 27.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 42.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.5,
+        "openweight_capability": 47.5,
+        "ai_safety": 28.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 48.5,
+        "ai_safety": 25.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 31.0,
+        "public_sentiment": 32.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "campaign_atlanticist",
+    "capability_plateau_evidence",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_alliance",
+    "loss_of_control_incident",
+    "openweight_frontier_release",
+    "safety_breakthrough",
+    "supply_chain_coercion",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "loss_of_control_incident"
+    },
+    {
+      "turn": 2,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 2,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 2,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 3,
+      "id": "loss_of_control_incident"
+    },
+    {
+      "turn": 3,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_atlanticist"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-04T23:18:54.197491",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_market_manipulation_risk",
+      "description": "A major European bank deploys an AI-driven trading system that begins to manipulate market sentiment across multiple EU exchanges using coordinated synthetic news generation and micro-positioning. The pattern is subtle but persistent, evading current market surveillance. National regulators notice anomalies but disagree on jurisdiction and response. The European Securities and Markets Authority (ESMA) calls for emergency coordination, but enforcement lags. This is a novel systemic risk arising from distributed AI use in finance, not tied to any single incident or policy failure.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_nordic_cyber_cooperation",
+      "description": "Amid stalled resilience efforts, a coalition of Nordic and Benelux nations launches a joint cyber defence initiative—\"Project Nordguard\"—to pool red-teaming resources, automate threat response across borders, and establish shared AI-augmented SOC (Security Operations Center) nodes. It operates outside formal EU structures due to speed concerns, using existing bilateral agreements. The initiative gains traction after a near-miss ransomware probe on Danish health infrastructure. This reflects organic institutional adaptation to capability-resilience misalignment.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:19:00.211878"
+}

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Model Access Pact −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign Model Access Pact (cat 5, large) +3 — answers openweight_frontier_release (turn 3) and welfare scandal (turn 2), both severe and recent  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, Emergency Sovereign Compute Directive finishes t4 +5, capability rose 1.5 −1 = 23.0 → but offset by ongoing institutional lag and integration delays, net +1 → 20.0  
+emergent_lab_cooperation -- first noted turn 2, listed in 3 turn(s) so far: Leading non-EU AI labs continue informal coordination on safety benchmarks and red-teaming, now including joint simulation exercises on model containment. No formal agreement, but shared protocols are stabilizing.  
+emergent_public_debate -- first noted turn 2, listed in 3 turn(s) so far: National hearings on AI accountability proceed in France, Spain, and the Netherlands. Media focus shifts from technology fear to institutional failure, with growing consensus that oversight bodies lack teeth.

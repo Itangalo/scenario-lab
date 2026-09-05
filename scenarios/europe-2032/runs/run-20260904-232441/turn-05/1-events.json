@@ -1,0 +1,41 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Following the diagnostic AI poisoning incident, a grassroots movement of clinicians and software auditors forms 'MedVerify', an open-source coalition that reverse-engineers and stress-tests medical AI systems. It begins publishing high-impact vulnerability reports, forcing vendors into emergency patches and drawing public attention to the gap between regulatory approval and real-world robustness. The movement gains legitimacy after uncovering a flaw in a widely used radiology assistant, triggering national reviews in three countries.",
+    "emergent": true,
+    "id": "emergent_medverify_movement",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.3
+  }
+]

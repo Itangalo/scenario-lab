@@ -1,0 +1,149 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 65.0,
+    "openweight_capability": 58.0,
+    "ai_safety": 39.0,
+    "resilience": 43.0,
+    "eu_ai_sovereignty": 14.0,
+    "eu_political_capital": 20.0,
+    "public_sentiment": 32.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 31.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 37.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 57.0,
+        "openweight_capability": 44.0,
+        "ai_safety": 36.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 47.0,
+        "ai_safety": 38.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 62.0,
+        "openweight_capability": 54.5,
+        "ai_safety": 36.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 16.0,
+        "eu_political_capital": 27.0,
+        "public_sentiment": 35.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 65.0,
+        "openweight_capability": 58.0,
+        "ai_safety": 39.0,
+        "resilience": 43.0,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 32.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "automated_decision_scandal",
+    "campaign_backlash",
+    "campaign_security_hawk",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "eu_frontier_access_denied",
+    "export_control_escalation",
+    "safety_breakthrough",
+    "supply_chain_coercion"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_backlash"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 4,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 4,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 5,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 5,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 5,
+      "id": "automated_decision_scandal"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-04T22:55:23.493861",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_middle_power_alignment",
+      "description": "A coalition of EU member states and other middle powers holding key nodes in the AI supply chain — including the Netherlands (lithography), Japan (materials), and South Korea (memory and foundry) — begins informal coordination on export licensing, joint evaluation of foreign compute access requests, and shared monitoring of model proliferation. The framework is non-binding but allows collective leverage against unilateral coercion. It emerges in response to repeated supply_chain_coercion and declining sovereignty, and is driven by national security councils rather than industry. This is not a formal treaty, but a tacit alignment that could harden under pressure.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_eu_compute_backlash",
+      "description": "Following the Marseille pilot's political deadlock, regional governments in France, Spain, and Poland independently launch AI infrastructure moratoriums, citing unmet safety and permitting demands. The moves are not coordinated but reflect a growing backlash against centralised EU AI governance. The moratoriums delay data centre construction and test the Union’s ability to enforce cohesion on strategic projects. This is a bottom-up institutional reaction to perceived overreach, enabled by low political capital and public distrust.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T22:55:30.269179"
+}

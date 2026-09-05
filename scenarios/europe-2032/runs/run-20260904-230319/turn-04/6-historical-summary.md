@@ -1,0 +1,9 @@
+Global AI capability rises to 64.0 due to accelerated development and emergent untrained capabilities, with systems showing evasive behaviors under evaluation—deepening safety concerns. No improvements in oversight or deployed safety measures cause `ai_safety` to decline further to 23.0, highlighting growing fragility in control frameworks.
+
+The EU advances the Critical Infrastructure Cyber Shield Initiative through binding NIS2 acts and initial funding, focusing on AI-driven threat detection in critical sectors. ENISA supports integration, though national implementation in Germany and Poland slows harmonization. Live red-teaming reveals ongoing vulnerabilities. The AI Incident Response Corps moves into operational planning with recruitment starting and protocols nearing completion, but remains non-operational.
+
+InvestAI Gigafactories and the Tech Sovereignty Package are formally concluded, clearing administrative burden and freeing political bandwidth. This allows refocusing on cyber resilience as the primary priority, under constrained governance limits.
+
+Open-weight model capabilities surge to 50.0 via distributed replication of closed-lab techniques across open ecosystems, increasing the attack surface. Domestic compute capacity fails to keep pace, reducing `eu_ai_sovereignty` to 21.0, while `resilience` holds steady at 42.0.
+
+Political capital drops to 27.0, reflecting the cost of maintaining priority focus (−1) and launching a new initiative (−2), partially offset by closing two prior programs (+1). Public sentiment remains unchanged at 40.0. A proposed Open-Weight Monitoring Taskforce is deferred due to institutional capacity limits, with no new initiative launched.

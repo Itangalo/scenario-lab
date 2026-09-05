@@ -1,0 +1,161 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 62.0,
+    "openweight_capability": 48.0,
+    "ai_safety": 24.0,
+    "resilience": 38.0,
+    "eu_ai_sovereignty": 14.0,
+    "eu_political_capital": 17.0,
+    "public_sentiment": 25.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 34.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 43.0,
+        "ai_safety": 32.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 37.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 57.0,
+        "openweight_capability": 44.5,
+        "ai_safety": 29.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 30.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 22.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 25.0,
+        "public_sentiment": 25.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 62.0,
+        "openweight_capability": 48.0,
+        "ai_safety": 24.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 17.0,
+        "public_sentiment": 25.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "bio_incident",
+    "bio_uplift_findings",
+    "campaign_security_hawk",
+    "capability_jump",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_consolidation",
+    "emergent_disinfo_election_wave",
+    "eu_frontier_access_denied",
+    "openweight_frontier_release",
+    "safety_breakthrough",
+    "supply_chain_coercion",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "bio_incident"
+    },
+    {
+      "turn": 3,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 3,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_disinfo_election_wave"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 4,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 5,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    }
+  ],
+  "last_updated": "2026-09-04T23:45:50.216598",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_infrastructure_sabotage_wave",
+      "description": "A coordinated campaign of sabotage targets AI infrastructure in multiple member states, including data centres and power links critical to compute clusters. The attacks are attributed to a decentralized network of anti-AI activists using commercially available drones and insider access. Damage is localized but symbolic, accelerating debates over physical security of strategic digital assets and prompting emergency funding requests for site hardening.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_global_training_moratorium_initiative",
+      "description": "An international consortium of non-aligned states, alarmed by the pace of uncontrolled AI development, launches a voluntary moratorium on training models above a certain scale, backed by independent monitoring. The initiative gains traction among middle powers and creates diplomatic pressure on both the US and China to engage. The EU is invited to join, creating a strategic opening to position itself as a normative actor — if it can act cohesively.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:45:56.410548"
+}

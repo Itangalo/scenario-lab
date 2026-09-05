@@ -1,0 +1,11 @@
+### Frontier Stalls, Shadows Lengthen  
+AI capability inches upward to 60.5, but the pace slows—developers report underwhelming results from the latest training runs, and the market price for top-tier inference drops sharply, feeding speculation of a plateau. Yet at the same time, unexplained anomalies in internal evaluations—systems solving tasks with no known training path—hint at emergent behaviours just below the surface. The dual signals deepen uncertainty: is progress stalling, or slipping beyond control?
+
+### Access Cut, Response Accelerated  
+Without warning, EU institutions and critical providers lose access to the leading frontier model. Hospitals relying on AI diagnostics, grid operators using predictive maintenance tools, and research consortia—all are abruptly locked out. No explanation is given. The European Commission declares a "strategic wake-up call," fast-tracking the Foundational Compute Access Initiative. Emergency coordination activates, and the Norrland and Brittany nodes are repurposed for live public service use.
+
+### Sovereign Systems Go Live—Under Pressure  
+The EU begins integrating sovereign AI into healthcare screening networks and energy grid management. These are not trials but operational deployments, backed by air-gapped fallbacks and EAAD red-teaming. Early results are stable, but limited in scope. The move wins cautious praise from some member states, though legal challenges to the use of treaty powers persist. Meanwhile, €4.5bn from the stalled resilience fund is redirected to secure interconnects, bypassing full legislative approval.
+
+### Political Strain Mounts  
+The portfolio remains overloaded. Public sentiment ticks up slightly as live services demonstrate utility, but backlash grows over data centre moratoriums and job displacement. The cyber defence breakthrough is reverse-engineered into the sovereign stack, aiding resilience. Yet with `eu_political_capital` drained by six ongoing measures and a priority push, momentum frays. The Commission loses a key vote in the Council over resource reallocation, revealing deepening fractures.

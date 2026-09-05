@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 48.0 to 54.5 (+6.5) while `ai_capability` increased by only +3.0 (from 61.0 to 64.0). This violates the requirement that `openweight_capability` never exceeds `ai_capability`. At the proposed values, `openweight_capability` (54.5) remains below `ai_capability` (64.0), so the ceiling is not breached, but the jump of +6.5 in openweight capability is implausibly large relative to the +3.0 in frontier capability, especially without narrative justification for such a sudden leap (e.g., massive leak, open release of frontier model). The constitutional constraint on accumulation (non-decline) is respected, but the implied rate of catch-up violates the spirit and realism enforced by Invariant 2: openweight progress must be bounded by the frontier and cannot leapfrog it in capability growth rate without extraordinary justification. No such justification (e.g., catastrophic leak, open release) is provided, making this an unjustified inversion of the expected dynamic.\n- Narrative violates Modelling Choice 8: The phrase \"eval anomaly reports remain unexplained\" telegraphs the existence of a known, named event gate (`eval_anomaly_reports`) that is part of the event evaluation system. Mentioning it by name in the narrative implies knowledge of a hidden trigger condition, which violates the rule against telegraphing. The narrative may describe unexplained system behaviors or safety concerns, but must not name specific event gate conditions."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

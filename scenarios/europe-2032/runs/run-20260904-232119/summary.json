@@ -1,0 +1,146 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 60.0,
+    "openweight_capability": 47.5,
+    "ai_safety": 29.0,
+    "resilience": 45.0,
+    "eu_ai_sovereignty": 15.0,
+    "eu_political_capital": 35.0,
+    "public_sentiment": 38.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 42.0,
+        "ai_safety": 33.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 43.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.5,
+        "openweight_capability": 43.5,
+        "ai_safety": 31.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 44.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 57.0,
+        "openweight_capability": 45.0,
+        "ai_safety": 28.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 44.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.5,
+        "openweight_capability": 46.0,
+        "ai_safety": 31.0,
+        "resilience": 44.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 47.5,
+        "ai_safety": 29.0,
+        "resilience": 45.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 35.0,
+        "public_sentiment": 38.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "bio_incident",
+    "bio_uplift_findings",
+    "cyber_defence_breakthrough",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_alliance",
+    "emergent_safety_leak",
+    "export_control_escalation",
+    "member_state_defection",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 2,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 2,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 3,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 3,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 4,
+      "id": "bio_incident"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_safety_leak"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-04T23:28:57.147686",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_regional_ai_pact",
+      "description": "Amid growing fragmentation and distrust in transatlantic AI governance, a group of EU member states, Nordic partners, and select Eastern European nations begin informal talks on a regional AI assurance and incident-sharing pact. The initiative emerges from shared concern over both external dependency and internal disunity, aiming to establish mutual audit rights and fallback compute access. While not yet formalised, early alignment on red-line capabilities and joint stress-testing frameworks suggests momentum.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_regional_aid_pact",
+      "description": "In response to Poland and Hungary's resistance to the Resilience Shield, a group of Central and Eastern European member states form a regional AI security aid pact, pooling resources to jointly fund and deploy defensive AI systems for critical infrastructure. The pact emerges as a workaround to enforce cohesion without direct confrontation, and gains traction as Germany and France offer matching funds.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:29:06.903511"
+}

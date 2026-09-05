@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European AI Incident Response Corps −3, Sovereign Semiconductor Conversion Initiative −3, priority −1 = −13  
+PROPOSAL BONUS: Sovereign Semiconductor Conversion Initiative (cat 4, large) +5 — taiwan_blockade is a catastrophic supply shock justifying urgent industrial conversion  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18 last turn, Sovereign Semiconductor Conversion Initiative launched under crisis conditions +3 (event securing access), capability rose 4 −1 = 20 → but measure completion and event both contribute: final term includes +3 for securing access, −1 for capability rise → 20 +3 −1 = 22

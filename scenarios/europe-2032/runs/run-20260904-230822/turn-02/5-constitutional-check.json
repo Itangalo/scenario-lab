@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Regulatory Constraint violated: The EU introduces two new measures in one turn — the \"Critical Infrastructure Resilience Acceleration Fund\" (a category 6 measure) and continued advancement of the \"Emergency Sovereign Compute Directive\" through COREPER II. Constitutional Constraint 5 limits the EU to at most one new measure per turn. While widening the scope of an existing measure is allowed, launching a distinct new fund constitutes a second measure, which is invalid.\n- Modelling Choice violated: The narrative treats the \"Critical Infrastructure Resilience Acceleration Fund\" as a large category 6 measure that is both proposed and already in early implementation across five member states within the same turn. Constitutional Constraint 6 (\"No measure is implemented instantly\") requires a minimum of one full turn for low-cost measures and two for high-cost ones before full effect, with effect growing over time. Starting early implementation of a large, €15bn-backed measure in the same turn as proposal violates the minimum time lag for high-cost measures."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

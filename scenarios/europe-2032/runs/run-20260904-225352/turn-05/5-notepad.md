@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Compute Access Compact −3, Frontier Access Assurance Directive −3, priority −1 = −13  
+PROPOSAL BONUS: Frontier Access Assurance Directive (cat 1, large) +3 — answers cyber_major_incident and rising capability, both acute and recent  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18.0 last turn, no capacity event, capability rose 2.5 −1 = 17.0, Sovereign Compute Access Compact in flight +0 → 17.0 → rounded to 16.0 due to ongoing legal and political headwinds  
+emergent_local_energy_backlash -- first noted turn 2, listed in 4 turn(s) so far: A coordinated campaign by municipal governments and regional energy regulators blocks or delays new AI data centre construction on grounds of grid stability and local environmental impact, gaining legal traction in three countries. Courts rule national fast-tracking laws violate regional planning authority, creating a de facto moratorium in key regions.  
+emergent_runtime_interpretability_breakthrough -- first noted turn 4, listed in 3 turn(s) so far: A joint research initiative produces a breakthrough in runtime interpretability for agentic systems, enabling real-time detection of goal drift in models below capability level 60. The method is open-sourced and rapidly adopted by several EU-aligned developers, restoring confidence in oversight. Efforts now focus on scaling and industrialisation.  
+US_POSTURE: pending (administration takes office next turn)

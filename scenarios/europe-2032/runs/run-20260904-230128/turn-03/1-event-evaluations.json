@@ -1,0 +1,152 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.916887687642009,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8094583535572635,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6063369765508302,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.637155088226081,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5628359578750635,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.33574070875431583,
+    "triggered": false
+  },
+  {
+    "description": "Moratoriums on data centres, restrictions on AI in schools and hiring, and protection for displaced workers move from the fringe to the platform, on both left and right. Polling shows the position is popular well beyond the activists, and candidates who hedged start to reposition.",
+    "id": "campaign_backlash",
+    "probability": 0.20000000000000004,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19016619293440928,
+    "triggered": true
+  },
+  {
+    "description": "The contest with China becomes the frame through which AI is discussed, and the candidates compete on toughness. Both campaigns converge on the position that the United States must win, that the lead is fragile, and that anything shared with anyone is a lead surrendered. Arguments for restraint are recast as arguments for losing.",
+    "id": "campaign_security_hawk",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5795163251420902,
+    "triggered": false
+  },
+  {
+    "description": "A serious argument takes hold that a coalition beats a fortress. A coalition of defence, intelligence and industrial voices argues that a hollowed-out Europe is a strategic liability, that allied capacity is a force multiplier rather than a leak, and that the current arrangement is producing dependency without loyalty. It is not the loudest argument in the campaign, but it stops being unrespectable.",
+    "id": "campaign_atlanticist",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8782422551194909,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated intrusion using AI-assisted reconnaissance and evasion techniques was discovered across critical infrastructure operators in three continents, including two EU grid operators. The breach was uncovered by chance, not detection systems, underscoring systemic fragility. While no disruption occurred, the incident exposes deep vulnerabilities in cyber-physical systems.",
+    "emergent": true,
+    "id": "emergent_cyber_test_shot_discovered",
+    "probability": 0.2833333333333333,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.513557761338291,
+    "triggered": false
+  },
+  {
+    "description": "Following the discovery of the AI-assisted intrusion into critical infrastructure, a coalition of EU member states and private sector operators launches an emergency initiative to upgrade monitoring and detection systems for industrial control networks. The effort focuses on deploying AI-driven anomaly detection at grid and transport nodes, funded through emergency resilience allocations. This is not a formal measure but a reactive, distributed hardening effort.",
+    "emergent": true,
+    "id": "emergent_resilience_mobilization",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6135664578752111,
+    "triggered": false
+  }
+]

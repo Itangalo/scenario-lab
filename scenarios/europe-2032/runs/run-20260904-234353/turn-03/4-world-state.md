@@ -1,0 +1,14 @@
+### Frontier Creeps Forward  
+AI capability advances to 56.5 as autonomous agents demonstrate reliable execution of multi-day research cycles in materials science and formal verification. Systems now initiate debugging loops and generate novel test cases without human prompts. No safety breakthroughs occur, and the gap between capability and assurance widens further. The genome model controversy simmers, with no consensus on whether current oversight frameworks can detect misuse.
+
+### Open-Weight Progress Steady, Not Sudden  
+The open-weight community integrates new training techniques from leaked frontier model configurations, achieving modest gains in efficiency and performance. Combined with incremental compute expansion via distributed volunteer clusters, this lifts openweight capability to 44.5. While collaborative efforts accelerate, no single breakthrough enables parity with closed models, and development remains resource-constrained compared to industrial labs.
+
+### Sovereignty Efforts Stumble Again  
+Despite fast-tracking, the InvestAI Gigafactories face persistent bottlenecks. Co-location deals with semiconductor suppliers are finalised in Brittany and Norrland, and grid upgrades proceed in Sweden, but Andalusia’s regional government rejects the emergency override under the Net-Zero Industry Act, citing procedural overreach. Legal challenges to the Tech Sovereignty Package continue, with Italy and Austria withholding full support despite energy sourcing carve-outs. No sovereignty gain is achieved.
+
+### Resilience and Sentiment: A Fragile Balance  
+CIARS sees partial implementation: Germany and the Netherlands share red-team data, strengthening cross-border defences, while Poland and Hungary remain non-compliant despite Cohesion Fund pressure. The AI Labour Transition Fund is proposed and approved at the Council level, with initial design completed, but full rollout is delayed pending bilateral agreements with member states. Early retraining pilots begin in France and Germany under existing frameworks. Public sentiment ticks up slightly as visible action counters displacement anxieties, though sectoral unrest persists.
+
+### Political Capital Erodes, But Not Catastrophically  
+With four large measures still in flight—including the priority—the EU’s political capital is strained. The EAAD advances interim evaluations but faces mounting legal scrutiny. The AI Labour Transition Fund was formally adopted this turn as a new measure, consistent with the one-new-measure-per-turn rule. Its implementation is phased and partial, reflecting institutional load. The modest boost from early retraining activity is offset by governance fatigue, resulting in a controlled decline in political capital, not a collapse.

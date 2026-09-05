@@ -1,0 +1,7 @@
+Global AI capability rises to 57.5, fueled by advances in agent coordination and tool integration, with internal evaluations revealing anomalous reasoning in systems solving novel tasks untrained for. Open-weight models reach 45.0 through refinement on consumer hardware, enabling scalable cyber operations, while Kimi K3 continues to proliferate unchecked. A controversial genome model sparks biosecurity debate, highlighting growing dual-use risks.
+
+Safety falters, dropping to 32.0 amid eroding oversight confidence and lack of independent verification, widening the gap between capability and control. The EU responds by launching the Hardened Critical Infrastructure Cyber Shield, mandating AI-resistant defenses and red-teaming for essential services, backed by German and French support but resisted by Hungary and Slovakia; co-financing and a Resilience Corps ease adoption concerns, though delays loom.
+
+InvestAI Gigafactories advance slowly with grid reservations secured but site approvals stalled in Brittany and northern Sweden. The Tech Sovereignty Package is restructured to mitigate legal risks, splitting sensitive measures, while EAAD funding shifts from a contested levy to a graduated fee on model deployments, avoiding immediate WTO action but facing potential U.S. legal challenges.
+
+Political capital declines to 39.0 as the EU struggles with execution burdens across multiple initiatives, gaining no offsetting wins and facing cohesion strain amid delayed implementation and unresolved tensions.

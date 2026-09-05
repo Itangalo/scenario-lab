@@ -1,0 +1,151 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 66.0,
+    "openweight_capability": 54.0,
+    "ai_safety": 17.0,
+    "resilience": 45.0,
+    "eu_ai_sovereignty": 14.0,
+    "eu_political_capital": 22.0,
+    "public_sentiment": 45.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 31.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 37.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 57.0,
+        "openweight_capability": 44.0,
+        "ai_safety": 26.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 29.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 47.0,
+        "ai_safety": 17.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 17.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 63.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 17.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 20.0,
+        "public_sentiment": 45.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 66.0,
+        "openweight_capability": 54.0,
+        "ai_safety": 17.0,
+        "resilience": 45.0,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 45.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "ai_investment_collapse",
+    "campaign_atlanticist",
+    "campaign_security_hawk",
+    "capability_jump",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "emergent_institutional_backlash",
+    "eval_anomaly_reports",
+    "member_state_defection",
+    "us_china_agreement"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 3,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 3,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_institutional_backlash"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_atlanticist"
+    },
+    {
+      "turn": 4,
+      "id": "us_china_agreement"
+    },
+    {
+      "turn": 4,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 5,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-04T22:53:47.890653",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_compute_pact",
+      "description": "A coalition of mid-sized EU member states, frustrated by the paralysis in Brussels and the repeated denial of sovereign access, begins quiet coordination with Japan, South Korea, and Canada to establish a mutual fallback network for compute access and model evaluation. The initiative is framed as 'resilience cooperation' but includes binding commitments to share capacity if any member is cut off by a great power. It gains momentum due to the ongoing suspension of the Emergency Sovereign Compute Directive and Poland’s earlier defection.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_safety_consortium",
+      "description": "Following the US-China agreement and the EU's visible struggle to operationalize sovereignty, a group of European AI safety startups and university labs announce a joint open initiative—'EuroShield Next'—to develop automated monitoring tools for model misuse, funded by a mix of national grants and philanthropy. The project explicitly distances itself from government control but offers to feed findings into the stalled Sovereign Evaluation and Control Framework, creating a de facto parallel assurance system.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T22:53:52.534645"
+}

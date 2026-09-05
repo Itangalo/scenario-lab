@@ -1,0 +1,4 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereignty through Legitimacy Initiative −3, Resilience Shield Programme −3, priority −1 = −13  
+PROPOSAL BONUS: none — Sovereignty through Legitimacy Initiative answers emergent public pushback, but the event was small and indirect, and the measure is largely procedural; +1 not justified  
+LEGITIMACY LENDS: none — public_sentiment (40.0) < eu_political_capital (20.0)  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 1.0 −1, Sovereignty through Legitimacy Initiative in flight (category 4) +0 (too early) = 18.0 → but deeper legitimacy crisis and stalled directive signal systemic dependence, net −1 → 17.0

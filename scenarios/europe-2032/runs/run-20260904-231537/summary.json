@@ -1,0 +1,159 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 60.0,
+    "openweight_capability": 47.5,
+    "ai_safety": 18.0,
+    "resilience": 33.0,
+    "eu_ai_sovereignty": 18.0,
+    "eu_political_capital": 23.0,
+    "public_sentiment": 28.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 42.0,
+        "ai_safety": 32.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.5,
+        "openweight_capability": 43.5,
+        "ai_safety": 29.0,
+        "resilience": 36.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 42.0,
+        "public_sentiment": 35.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 57.0,
+        "openweight_capability": 45.0,
+        "ai_safety": 28.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 33.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.5,
+        "openweight_capability": 46.5,
+        "ai_safety": 23.0,
+        "resilience": 34.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 31.0,
+        "public_sentiment": 28.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 47.5,
+        "ai_safety": 18.0,
+        "resilience": 33.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 23.0,
+        "public_sentiment": 28.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "adoption_success",
+    "campaign_backlash",
+    "capability_plateau_evidence",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "joint_threat_response",
+    "loss_of_control_incident",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 3,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 3,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 3,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 3,
+      "id": "adoption_success"
+    },
+    {
+      "turn": 3,
+      "id": "joint_threat_response"
+    },
+    {
+      "turn": 4,
+      "id": "loss_of_control_incident"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_backlash"
+    },
+    {
+      "turn": 4,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 4,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-04T23:20:34.330145",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_sovereign_training_initiative",
+      "description": "A coalition of EU member states, alarmed by the erosion of digital sovereignty and repeated access denials from U.S. labs, quietly begins coordinating emergency funding for a joint sovereign AI training run using pooled compute resources and open-weight models. The project is framed as a contingency, not a challenge, but it marks the first concrete step toward an autonomous EU frontier capability. If sustained, it could shift eu_ai_sovereignty meaningfully within 12–18 months.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_resilient_services_pact",
+      "description": "Amid rising public anxiety and repeated cyber incidents, a cross-border network of municipal governments and public hospitals forms the 'Resilient Services Pact', committing to shared AI threat monitoring, joint red-teaming exercises, and mutual aid in the event of AI-driven disruptions. The initiative bypasses slow EU-wide coordination and begins deploying lightweight defensive AI agents trained on local data. It is not a formal treaty, but it creates de facto interoperability where central policy has failed.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:20:40.564787"
+}

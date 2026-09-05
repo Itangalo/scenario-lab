@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Sovereign Control Framework −3, Sovereign Command Restoration Protocol −3, priority −1 = −13  
+PROPOSAL BONUS: Sovereign Command Restoration Protocol (cat 1, large) +3 — loss_of_control_incident and ai_investment_collapse both landed this turn, justifying a major emergency response  
+LEGITIMACY LENDS: none — public_sentiment (27.0) < eu_political_capital (18.0)  
+SOVEREIGNTY: 23.0 last turn, no capacity event, Gigafactories in flight +0 (still in progress, not finishing), capability rose 2.5 −1 = 22.0 → further reduced by election_consolidation effect: US posture shift increases dependence, net −1 → 21.0  
+US_POSTURE: pending (administration takes office next turn)  
+EMERGING DEVELOPMENTS: emergent_regulatory_fragility -- first noted turn 5, listed in 2 turn(s) so far: A series of national audits reveal patchy enforcement of the AI Act, outdated compliance frameworks, and reliance on self-certification for systems that have outpaced evaluation tools.

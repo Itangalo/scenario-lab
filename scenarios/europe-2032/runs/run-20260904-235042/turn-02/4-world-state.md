@@ -1,0 +1,12 @@
+### Frontier Leaps Forward  
+A sudden breakthrough at a leading lab propelled AI capability to 58.0, as a new agent architecture demonstrated autonomous planning across week-long research cycles, self-correcting after failures without human intervention. The jump outpaced all internal forecasts, rendering existing safety benchmarks obsolete overnight. No verification mechanisms were ready, and developers admitted they could not fully explain the system’s reasoning paths.
+
+### Supply Chain Pressure Mounts  
+In a move that bypassed diplomatic channels, Washington compelled the Netherlands to restrict ASML’s servicing of mature lithography tools, affecting not only Chinese fabs but also Eastern European and Southeast Asian manufacturers reliant on older nodes. The EU, despite its upstream leverage in materials and software, found itself unable to counter the extraterritorial reach of U.S. export controls. The coercion exposed the fragility of Europe’s compute sovereignty, as access to maintenance and spare parts for existing infrastructure now hinged on decisions made beyond its borders.
+
+### EU Responds to Cascading Threats  
+The European Commission proposed the Hardened Critical Infrastructure Access Protocols, a new measure to strengthen cyber resilience across energy, water, and transport networks. The proposal includes AI-augmented monitoring, mandatory human override systems, and air-gapped fallbacks, to be implemented under an amended NIS2 Directive. A €15bn Rapid Resilience Facility was announced, drawing from unused recovery funds, but disbursement awaits Council and Parliament approval. ENISA has begun drafting technical standards, though no binding requirements are in force yet.
+
+This is the EU’s first new measure introduced this turn. Work continues on previously initiated initiatives: the InvestAI Gigafactories in Norrland face delays due to unresolved environmental litigation, the Blue Card+ initiative encounters resistance from national labour ministries, and the European AI Assurance Directorate is still staffing up, with its authority to inspect non-EU models remaining untested and legally contested.
+
+Public sentiment dipped as media highlighted both the capability leap and the supply chain squeeze, framing Europe as reactive and exposed. A wave of mid-level IT job losses in outsourcing firms, attributed to AI automation, added to the unease.

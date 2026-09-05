@@ -1,0 +1,159 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 61.0,
+    "openweight_capability": 45.5,
+    "ai_safety": 27.0,
+    "resilience": 45.0,
+    "eu_ai_sovereignty": 28.0,
+    "eu_political_capital": 35.0,
+    "public_sentiment": 32.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 42.0,
+        "ai_safety": 32.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.5,
+        "openweight_capability": 43.5,
+        "ai_safety": 31.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 43.0,
+        "public_sentiment": 44.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 45.5,
+        "ai_safety": 29.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 25.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 43.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 45.5,
+        "ai_safety": 28.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 27.0,
+        "eu_political_capital": 39.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 45.5,
+        "ai_safety": 27.0,
+        "resilience": 45.0,
+        "eu_ai_sovereignty": 28.0,
+        "eu_political_capital": 35.0,
+        "public_sentiment": 32.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "campaign_backlash",
+    "cyber_defence_breakthrough",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "emergent_grid_resilience_initiative",
+    "emergent_labour_upheaval",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "member_state_defection",
+    "openweight_frontier_release",
+    "taiwan_tension_rise",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 2,
+      "id": "emergent_grid_resilience_initiative"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_backlash"
+    },
+    {
+      "turn": 3,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_grid_resilience_initiative"
+    },
+    {
+      "turn": 3,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 4,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 4,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 5,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "emergent_labour_upheaval"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-04T23:16:26.457743",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_labour_mobilization",
+      "description": "A coordinated wave of industrial action emerges across European public sectors where AI adoption is accelerating, citing unsafe deployment and lack of consultation. Unions in education, healthcare and local government begin work-to-rule campaigns, demanding binding oversight mechanisms. The movement gains momentum as public sentiment turns against unaccountable AI expansion, forcing several national governments into emergency talks.",
+      "first_turn": 4,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:16:30.905045"
+}

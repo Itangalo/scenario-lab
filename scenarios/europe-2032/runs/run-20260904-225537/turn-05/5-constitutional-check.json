@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 46.0 to 55.5 (+9.5) while `ai_capability` increased from 62.5 to 65.0 (+2.5). This violates the rule that `openweight_capability` must not exceed `ai_capability` and must not grow faster than `ai_capability`. Since `openweight_capability` is capped by `ai_capability`, it cannot rise by more than `ai_capability` did, and certainly cannot approach or exceed it without violating the invariant. At no point can `openweight_capability` be greater than `ai_capability`, yet this update brings it within 9.5 points while growing 3.8× faster, which is structurally impermissible under the invariant.\n- Modelling choice 5 violated: The EU introduces two new measures in one turn — \"Launch the Critical Infrastructure Resilience Surge\" and \"Establish EU-Controlled Agent Monitoring and Containment Network\" — both appearing in the Portfolio Charge with full cost (−3 each). This exceeds the limit of \"at most one new measure per turn\". Even if one is a design phase, initiating two distinct measures violates the constraint.\n- Narrative violates Invariant 4: The `US_POSTURE` is still marked \"pending\" in the notepad, but the narrative describes a fully formed US policy shift (\"signals tighter federal oversight, export controls, and tiered access\") that directly affects EU metrics. This anticipates the posture that should only be locked in Turn 6. While expectations can be described, the narrative presents the policy as de facto operational, which improperly binds the US posture before it is constitutionally settled."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

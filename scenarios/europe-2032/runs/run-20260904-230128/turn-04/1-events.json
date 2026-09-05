@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coordinated intrusion using AI-assisted reconnaissance and evasion techniques was discovered across critical infrastructure operators in three continents, including two EU grid operators. The breach was uncovered by chance, not detection systems, underscoring systemic fragility. While no disruption occurred, the incident exposes deep vulnerabilities in cyber-physical systems.",
+    "emergent": true,
+    "id": "emergent_cyber_test_shot_discovered",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,204 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9426258966753274,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9569117589228502,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2705648903695119,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5511046397528998,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2011439036771303,
+    "triggered": false
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.5666666666666668,
+    "probability_samples": [
+      0.5,
+      0.6,
+      0.6
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.3388285003919662,
+    "group_basis": "weighted",
+    "triggered": true
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.2833333333333334,
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.3388285003919662,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.15,
+    "probability_samples": [
+      0.2,
+      0.15,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.3388285003919662,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "description": "A coalition of EU member states, stung by the failure of the Sovereign Semiconductor Conversion Initiative and ongoing exclusion from U.S. frontier access, begins quiet coordination with Japan, South Korea, and Taiwan on mutual compute security and model evaluation standards. The forum is non-binding but includes shared red-teaming exercises and early warning on export control shifts. It gains momentum as semiconductor nationalism spreads, and is framed as resilience-building rather than defiance.",
+    "emergent": true,
+    "id": "emergent_semiconductor_coordination",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9474698172501583,
+    "triggered": false
+  },
+  {
+    "description": "Amid stalled industrial conversion and persistent access insecurity, a consortium of European national labs and energy firms demonstrates a prototype AI-driven grid-balancing system that reduces data centre power volatility by 40% in trial regions. The success triggers renewed political interest in sovereign AI infrastructure as a dual-use energy asset, reframing data centres not just as consumers but as stabilisers — potentially easing local opposition and unlocking new funding streams.",
+    "emergent": true,
+    "id": "emergent_energy_grid_breakthrough",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7913150664058632,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated international effort emerges among non-superpower nations to jointly secure access to advanced AI training runs and evaluation data, formalizing shared compute reserves and model audits. The initiative gains momentum as the Taiwan blockade underscores semiconductor fragility, and is framed as a hedge against overreliance on either US or Chinese AI ecosystems. It operates outside US control and strengthens the position of middle powers.",
+    "emergent": true,
+    "id": "emergent_compute_pact",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A major European university consortium, reacting to the stalled Sovereign Semiconductor Conversion Initiative and low political capital, launches a grassroots 'AI Commons' project using repurposed consumer GPU clusters to fine-tune and distribute safety-augmented open models. The network grows rapidly across campuses, creating a shadow infrastructure for sovereign AI development that bypasses both corporate gatekeepers and EU bureaucracy. It is celebrated by academics and criticized by regulators.",
+    "emergent": true,
+    "id": "emergent_ai_commons",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coalition of mid-sized EU member states, frustrated by the paralysis of central initiatives and the risk of unilateral coercion from external powers, quietly begins coordinating a joint procurement and deployment framework for sovereign AI infrastructure with Norway, Switzerland, South Korea, and Taiwan. The effort focuses on securing non-US-controlled compute supply chains and mutual access to evaluation and red-teaming resources. While not formalized, early agreements on export licensing alignment and shared audit standards begin to take shape, driven by shared vulnerability to semiconductor supply shocks.",
+    "emergent": true,
+    "id": "emergent_sovereignty_pact",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Following the completion of the Secure Open-Source Evaluation Access Framework, a consortium of EU national labs and academic institutions not bound by its restrictive access rules independently replicates key red-teaming protocols on a newly released open model at 47.0 capability. They publish a detailed report identifying novel jailbreak vectors and autonomous tool-use patterns in offensive cyber contexts, triggering a global debate on the adequacy of current evaluation regimes and increasing pressure for broader, more transparent testing frameworks.",
+    "emergent": true,
+    "id": "emergent_open_eval_breakthrough",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

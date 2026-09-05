@@ -1,0 +1,136 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 57.5,
+    "openweight_capability": 45.5,
+    "ai_safety": 26.0,
+    "resilience": 41.0,
+    "eu_ai_sovereignty": 20.0,
+    "eu_political_capital": 24.0,
+    "public_sentiment": 39.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 31.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 54.5,
+        "openweight_capability": 42.0,
+        "ai_safety": 28.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 35.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 55.5,
+        "openweight_capability": 43.0,
+        "ai_safety": 26.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 25.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 44.0,
+        "ai_safety": 24.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 22.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 45.5,
+        "ai_safety": 26.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 24.0,
+        "public_sentiment": 39.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "campaign_atlanticist",
+    "campaign_backlash",
+    "capability_plateau_evidence",
+    "cyber_test_shot",
+    "election_alliance",
+    "emergent_labour_disruption",
+    "supply_chain_coercion"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 2,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_backlash"
+    },
+    {
+      "turn": 3,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_atlanticist"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_labour_disruption"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    }
+  ],
+  "last_updated": "2026-09-04T23:38:15.720022",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_multilateral_eval_framework",
+      "description": "A coordinated effort among EU member states, Japan, South Korea, and Canada forms to jointly audit and benchmark frontier AI models using shared methodologies and limited data exchange. The coalition emerges in response to growing uncertainty about capability trajectories and safety claims from closed labs. While non-binding, it creates a de facto standard for assurance that begins to influence procurement and export decisions.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_green_compute_breakthrough",
+      "description": "A major European industrial consortium announces a breakthrough in liquid cooling and energy recovery for AI data centres, cutting power consumption by 40% and enabling heat reuse in district heating networks. The design becomes a new benchmark for sustainable compute infrastructure, improving public sentiment in host regions and attracting regulatory support for new builds.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:38:21.025831"
+}

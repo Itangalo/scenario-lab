@@ -1,0 +1,26 @@
+[
+  {
+    "id": "campaign_backlash",
+    "probability": 0.32,
+    "probability_samples": [
+      0.32,
+      0.32,
+      0.32
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coordinated breach in European healthcare systems exposes diagnostic AI models to data poisoning, leading to misdiagnoses in multiple countries. The incident triggers emergency coordination talks but does not rise to the level of a major cyber incident. It is plausible given the low resilience and stalled EAAD, and it could catalyse joint action later.",
+    "emergent": true,
+    "id": "emergent_healthcare_breach",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

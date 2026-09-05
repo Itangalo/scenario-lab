@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Sovereign Compute Directive −3, Critical Verification Access Framework −2, priority −1 = −12  
+PROPOSAL BONUS: Critical Verification Access Framework (cat 1, small) +3 — directly addresses verification_widens shift, timely and focused  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, capability rose 2.5 −1 = 20.0  
+emergent_supply_chain_pushback -- first noted turn 2, listed in 1 turn(s) so far: ASML and other EU-based semiconductor equipment manufacturers begin quietly lobbying EU institutions for legal protections against unilateral U.S. extraterritorial export control enforcement, citing existential risk to their business model. The push gains traction in Brussels as legal teams explore blocking statutes and mutual legal assistance treaty overrides.  
+emergent_labour_displacement -- first noted turn 2, listed in 1 turn(s) so far: Preliminary data from Eurostat and national labour surveys indicate accelerating displacement in legal support, radiology, and mid-level software roles, with AI-driven automation now affecting white-collar professions at scale. Union training programmes are overwhelmed, and early indicators suggest rising regional unemployment in tech-dependent hubs, increasing pressure on EU-wide transition policies.

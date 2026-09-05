@@ -1,0 +1,187 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.27823869430010617,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2442557369491497,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.05333044160622891,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7281145816520945,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3711395355713274,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8133020966472269,
+    "triggered": false
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.33,
+    "probability_samples": [
+      0.33,
+      0.33,
+      0.33
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.4465415296578741,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.33,
+    "probability_samples": [
+      0.33,
+      0.33,
+      0.33
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.4465415296578741,
+    "group_basis": "weighted",
+    "triggered": true
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.3333333333333333,
+    "probability_samples": [
+      0.33,
+      0.33,
+      0.34
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.4465415296578741,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "description": "A coordinated network of mid-sized European states, frustrated by the EU's inability to secure frontier access or present a unified front, begins informal negotiations with non-US cloud providers and Asian semiconductor consortia to establish alternative AI development pipelines. The effort is framed as 'resilience diversification' but functions as a parallel sovereignty track outside EU institutions. It gains momentum as member-state defection risks rise and political capital erodes.",
+    "emergent": true,
+    "id": "emergent_regional_sovereignty_pact",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.0026350214084205348,
+    "triggered": true
+  },
+  {
+    "description": "A joint cyber command emerges among European defence ministries, formalising the informal coordination seen in recent red-teaming exercises. Real-time telemetry sharing and coordinated response protocols are established, with the EU invited as a participant. This strengthens collective defence against AI-driven threats but creates dependency on non-EU military structures.",
+    "emergent": true,
+    "id": "emergent_regional_cyber_collective",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6811081555166121,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated effort among EU member states, Switzerland, Japan, and South Korea formalizes into a joint technical working group to benchmark and evaluate frontier AI models using shared red-teaming protocols and threat models. Driven by mutual distrust of unilateral US or Chinese evaluations and spurred by repeated eval anomalies, the group begins publishing comparative assessments that influence procurement and regulatory decisions outside the superpower orbit.",
+    "emergent": true,
+    "id": "emergent_multilateral_eval_framework",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Following the erosion of trust in transatlantic access and repeated incidents of control failure, a consortium of European national labs and academic institutes launches an open, distributed training run for a sovereign frontier-capable model using federated compute across EU-secured infrastructure. The project, while still below frontier capability, achieves a milestone by reaching agentic behavior at openweight_capability 54, accelerating the open frontier independently of US or Chinese leaks.",
+    "emergent": true,
+    "id": "emergent_eu_sovereign_training_run",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

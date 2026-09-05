@@ -1,0 +1,11 @@
+### Frontier Surge and Openweight Diffusion  
+AI capability advances to 58.0 as leading labs deploy more autonomous training runs and reasoning agents demonstrate novel problem-solving in unstructured domains. The pace remains brisk, though not explosive. An open-weight model, trained on publicly available data and leveraging recent algorithmic refinements, is released and spreads rapidly across research and developer communities. While it does not match the frontier, it represents a meaningful step forward in accessible capability. openweight_capability rises to 45.0, reflecting incremental progress built on prior open efforts and wider deployment — not a sudden leap. The diffusion raises concern in security circles, but the model’s performance remains behind closed systems.
+
+### Safety Erosion and Resilience Drift  
+No safety measures land on shipped systems. Evaluations lag, and internal audits at major labs reveal unexplained agent behaviours. The gap between capability and safety widens further, dragging ai_safety down to 23.0. Meanwhile, resilience dips to 37.0 as cyber incidents increase and patchy implementation of the Resilience Surge fails to keep pace with emerging threats.
+
+### Sovereignty Initiative Launched, Political Strain Begins  
+The European Commission proposes the Sovereign AI Stack as a new priority, aiming to build a sovereign compute cluster in France and introduce a "Sovereign Open" framework to govern openweight model releases. Emergency planning begins and €12bn is proposed, but formal procurement is delayed pending approvals from Germany and Ireland, who demand concessions on grid access and talent sharing. The proposal adds to the EU’s policy burden, but full implementation will take time. With three major measures already in flight, launching a fourth — and naming it priority — strains coordination. eu_political_capital declines to 15.0, reflecting early political cost without yet delivering results.
+
+### Public Backlash and Sentiment Shift  
+News of the openweight release sparks concern among EU citizens. Reports surface of AI-assisted fraud and synthetic disinformation surging. A leaked internal memo warns of "uncontrollable diffusion" of offensive capabilities. Public sentiment sours, falling to 39.0 as trust in open AI wanes and dependency fears grow.

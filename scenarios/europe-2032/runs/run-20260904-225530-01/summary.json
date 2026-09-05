@@ -1,0 +1,191 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 68.5,
+    "openweight_capability": 56.0,
+    "ai_safety": 17.0,
+    "resilience": 41.0,
+    "eu_ai_sovereignty": 19.0,
+    "eu_political_capital": 23.0,
+    "public_sentiment": 34.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 43.0,
+        "ai_safety": 34.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 57.5,
+        "openweight_capability": 45.0,
+        "ai_safety": 32.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 39.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 62.5,
+        "openweight_capability": 50.0,
+        "ai_safety": 19.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 29.0,
+        "public_sentiment": 39.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 65.0,
+        "openweight_capability": 52.0,
+        "ai_safety": 14.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 28.0,
+        "public_sentiment": 36.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 68.5,
+        "openweight_capability": 56.0,
+        "ai_safety": 17.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 23.0,
+        "public_sentiment": 34.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "bio_uplift_findings",
+    "campaign_security_hawk",
+    "capability_jump",
+    "cyber_defence_breakthrough",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "emergent_labour_displacement_wave",
+    "emergent_open_source_bio_toolkit",
+    "eval_anomaly_reports",
+    "export_control_escalation",
+    "labour_displacement",
+    "openweight_frontier_release",
+    "supply_chain_coercion",
+    "taiwan_tension_rise"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 2,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 2,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 2,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 2,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 3,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 3,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 3,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 3,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_defence_breakthrough"
+    },
+    {
+      "turn": 4,
+      "id": "labour_displacement"
+    },
+    {
+      "turn": 4,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_labour_displacement_wave"
+    },
+    {
+      "turn": 4,
+      "id": "emergent_open_source_bio_toolkit"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "labour_displacement"
+    },
+    {
+      "turn": 5,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-04T23:01:21.947292",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_regional_ai_pact",
+      "description": "Several Nordic and Benelux states, frustrated by the pace of EU-wide coordination, form a pilot pact for shared AI assurance and emergency response, pooling red teams and audit capacity. The initiative gains momentum as a practical workaround to broader institutional inertia, and pressures the Commission to either absorb or counter it.",
+      "first_turn": 5,
+      "last_turn": 5
+    },
+    {
+      "id": "emergent_bio_tool_misuse",
+      "description": "An open-source bio-design toolkit, previously flagged in emergent_open_source_bio_toolkit, is used to engineer a non-lethal but highly contagious respiratory virus in a university lab in Eastern Europe. The release is contained, but the incident reveals critical gaps in synthetic biology oversight and triggers emergency reviews across multiple member states.",
+      "first_turn": 5,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:01:28.149366"
+}

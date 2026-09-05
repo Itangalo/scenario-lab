@@ -1,0 +1,30 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "description": "Preliminary data from Eurostat and national labour surveys indicate accelerating displacement in legal support, radiology, and mid-level software roles, with AI-driven automation now affecting white-collar professions at scale. Union training programmes are overwhelmed, and early indicators suggest rising regional unemployment in tech-dependent hubs.",
+    "emergent": true,
+    "id": "emergent_labour_displacement",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.31
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 43.0 to 44.5, which is acceptable as a rise, but the narrative provides no justification for its growth. The narrative mentions no event, development, or mechanism that would cause openweight models to advance—especially while `ai_safety` is falling due to uncontrolled frontier model deployment. The constitutional rule requires that changes in these metrics reflect plausible accumulation; silent or unjustified growth violates the requirement for narrative-metric consistency under Invariant 2.\n- Economic Constraint violated: The Sovereign AI Stack is announced as a €50bn publicly funded programme, but no funding source is identified. The EU’s budgetary capacity for such a high-cost measure must be justified—either through reallocation, new borrowing, or revenue mechanisms. The narrative does not address this, and the immediate political capital cost (−3 in portfolio charge) does not substitute for financial sourcing. This violates the requirement that capital expenditures have identified sources.\n- Modelling Choice 5 violated: The EU now has four active measures in flight (InvestAI Gigafactories, Tech sovereignty package, Resilience Surge, Sovereign AI Stack) and names the Sovereign AI Stack as the new priority. However, the rule limits the EU to at most one new measure per turn and at most one named priority. Introducing a new measure while already carrying three existing ones is allowed only if it replaces or subsumes one, which is not stated. The portfolio charge confirms four active measures with an additional priority penalty, indicating structural overextension—but the act of launching a fourth measure *and* naming it priority in the same turn violates the \"at most one new measure, at most one priority\" rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

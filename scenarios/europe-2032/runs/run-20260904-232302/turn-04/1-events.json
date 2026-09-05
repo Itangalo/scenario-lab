@@ -1,0 +1,39 @@
+[
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coordinated AI-optimised cyber intrusion exploited weaknesses in critical infrastructure, confirming systemic vulnerabilities and eroding confidence in existing defences. The incident was detected weeks after initial access and affected multiple sectors across continents, including EU grid operators. This is a major incident: the scale and sophistication mark a clear escalation from routine attacks.",
+    "emergent": true,
+    "id": "emergent_cyber_intrusion_aftermath",
+    "probability": 0.25,
+    "probability_samples": [
+      0.3,
+      0.15,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Following the recent cross-continental cyber intrusion, several EU member states and neighbouring countries initiate informal talks on a regional cyber defence pact focused on AI-driven threat sharing and joint red-teaming exercises. The proposal gains quiet traction among national CISOs but lacks formal EU endorsement or funding.",
+    "emergent": true,
+    "id": "emergent_regional_cyber_pact",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

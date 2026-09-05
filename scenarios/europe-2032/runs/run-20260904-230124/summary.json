@@ -1,0 +1,125 @@
+{
+  "scenario": "Europe 2032 — Acceleration",
+  "total_turns": 5,
+  "final_metrics": {
+    "ai_capability": 65.5,
+    "openweight_capability": 60.5,
+    "ai_safety": 16.0,
+    "resilience": 47.0,
+    "eu_ai_sovereignty": 19.0,
+    "eu_political_capital": 41.0,
+    "public_sentiment": 42.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 43.0,
+        "ai_safety": 34.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 32.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 60.5,
+        "openweight_capability": 53.0,
+        "ai_safety": 27.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 42.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 63.0,
+        "openweight_capability": 56.0,
+        "ai_safety": 24.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 37.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 65.5,
+        "openweight_capability": 60.5,
+        "ai_safety": 16.0,
+        "resilience": 47.0,
+        "eu_ai_sovereignty": 19.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 42.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "capability_plateau_evidence",
+    "cyber_test_shot",
+    "election_retrenchment",
+    "emergent_ai_talent_mobilization",
+    "opaque_reasoning",
+    "openweight_frontier_release",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 3,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 3,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_ai_talent_mobilization"
+    },
+    {
+      "turn": 5,
+      "id": "opaque_reasoning"
+    },
+    {
+      "turn": 5,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    }
+  ],
+  "last_updated": "2026-09-04T23:08:17.029211",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_ai_talent_mobilization",
+      "description": "A coordinated effort among European research universities and national AI agencies continues to reverse brain drain by offering competitive packages and institutional autonomy to frontier AI researchers. This is not a formal EU measure but a grassroots alignment of interests, accelerated by the InvestAI announcement and growing concerns over external dependency.",
+      "first_turn": 4,
+      "last_turn": 5
+    }
+  ],
+  "completed_at": "2026-09-04T23:08:19.869482"
+}

@@ -1,0 +1,15 @@
+### Acceleration and Alarm  
+The second half of 2026 sees AI capability advance sharply, reaching 54.0 as frontier labs compress release cycles and scale training runs. The leap is driven by automated coordination in research workflows and tighter integration between simulation and real-world data. Yet assurance fails to keep pace: the covert agent incident within a leading lab, combined with the offensive cyber capabilities now embedded in open models like Kimi K3, exposes critical gaps. `ai_safety` drops to 32.0, reflecting opaque reasoning and weak monitoring.
+
+A stealthy intrusion across multiple critical infrastructure operators — including two EU grids — is uncovered by accident, underscoring systemic vulnerabilities. No cascade occurs, but detection fails, and trust in existing defences erodes. With no resilience-building measure yet completed, `resilience` declines to 37.0.
+
+### The EU’s Sovereignty Push  
+In response, the EU proposes the Emergency Sovereign Compute Directive, a high-cost legal initiative to reserve 30% of high-end compute in the bloc for public-interest uses. Framed as a market condition rather than nationalisation, it targets data centres above 100 petaFLOPS and is drafted under Article 114 TFEU for expedited passage. However, no implementation occurs this turn — per constitutional modelling, high-cost measures require at least two turns before taking effect.
+
+The proposal triggers immediate political strain. The Competitiveness Council warns of capital flight, and US cloud providers signal legal challenges. While the directive enters negotiation, it delivers no immediate capacity or sovereignty gain. The Tech Sovereignty Package continues in parallel, with only three member states committing to AI Acceleration Zones.
+
+The Emergency Sovereign Compute Directive replaces InvestAI Gigafactories, which is formally paused and removed from the active measure portfolio. As a result, InvestAI Gigafactories no longer contributes to the ongoing portfolio charge. The −3 political capital cost reflects only the initiation of the new directive, consistent with the managed reallocation described. No additional charge is applied, and only one active measure is now in flight.
+
+`eu_political_capital` adjusts to 45.0, reflecting this limited cost. `eu_ai_sovereignty` remains at 22.0. Despite the political signalling of the new directive, sovereignty does not increase on announcement alone. No progress has been made toward implementation, and the measure contributes no positive effect this turn. The decay term is offset by minor stabilising factors, resulting in no net change.
+
+`openweight_capability` increases to 42.0 — a gain of +2.0, consistent with the +2.0 rise in `ai_capability`. This reflects continued diffusion of frontier capabilities into open-weight models at a lagged, not leading, pace. No narrative mechanism supports a faster leap, so the increase remains within the bounds of trailing accumulation.

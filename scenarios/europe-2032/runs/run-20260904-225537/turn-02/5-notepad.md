@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, European AI Assurance Directorate −3, priority −1 = −10  
+PROPOSAL BONUS: Critical Infrastructure Resilience Surge (cat 6, large) +2 — answers recent intrusion and bio_uplift_findings, but partial implementation limits gain  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, InvestAI in flight +1, capability rose 2.5 −1 = 23.0
+
+emergent_joint_cyber_initiative -- first noted turn 2, listed in 1 turn(s) so far: A joint cyber command emerges among NATO members and key partners following the recent AI-assisted intrusion into critical infrastructure. Real-time telemetry sharing and coordinated threat hunting are established, with the EU granted observer status and conditional access to intelligence feeds. Trust remains limited, but the framework enables faster containment of future incidents.
+emergent_compute_resilience_network -- first noted turn 2, listed in 1 turn(s) so far: A coalition of EU member states, Japan, South Korea, and Taiwan announces a non-binding coordination framework for AI compute supply resilience, focusing on diversification of hardware imports and emergency redistribution protocols. While not a formal alliance, it marks the first concrete step toward collective bargaining outside U.S. or Chinese dominance.

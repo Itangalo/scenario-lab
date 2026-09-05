@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Critical Infrastructure Resilience Surge −3, Sovereign AI Testbeds −3, priority −1 = −13  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, eu_access_secured t3 +1, capability rose 1.5 (no decay) = 20.0  
+emergent_middle_power_initiative -- first noted turn 2, listed in 3 turn(s) so far: A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.  
+emergent_sovereign_infrastructure_pact -- first noted turn 3, listed in 1 turn(s) so far: Following the recent cyber intrusion and the EU's push for compute sovereignty, a coalition of Nordic and Benelux states quietly begins drafting joint procurement standards for sovereign AI infrastructure, aiming to create interoperable national redoubts that can sustain essential services during external disruptions. This is not a formal treaty, but a technical alignment that could evolve into binding mutual support.

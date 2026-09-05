@@ -1,0 +1,12 @@
+### Acceleration Amid Scandal  
+AI capability climbs to 55.0 as automated verification expands into legal and engineering domains, enabling rapid refinement of AI agents without human oversight. This breakthrough accelerates development cycles, particularly in high-stakes decision systems. However, a major scandal erupts when a national ombudsman confirms that an AI-assisted welfare allocation system in a large member state systematically denied benefits to vulnerable groups, with no effective appeal mechanism. The ruling triggers public outrage and forces a reckoning over AI’s role in core state functions.
+
+### EU’s Dual Push  
+The European Union doubles down on sovereignty and resilience. The Emergency Sovereign Compute Directive advances in trilogue, with the Commission framing compute access as a market condition under Article 114 TFEU. A compromise emerges: the 30% reservation will be managed by a new European Digital Infrastructure Consortium via time auctions, with fast-track Gigafactory access and liability shields offered to compliant operators. Yet resistance from Germany and Ireland persists, citing risks of US retaliation and market distortion. The directive remains on track for turn 3, but its legitimacy is under legal scrutiny.
+
+Simultaneously, the Resilience Surge Initiative launches, mandating AI-powered intrusion detection across energy, water, and transport systems. ENISA begins audits, and €50bn in emergency funding is unlocked. Early upgrades improve detection speed, but full deployment will take time.
+
+### Eroding Trust and Capital  
+The welfare scandal, rooted in domestic AI deployment, delivers a severe blow to public sentiment, which drops to 37.0. Labour unions and civil society demand a moratorium on AI in public services. Political capital falls sharply: three large measures cost −9, the priority −1, and the internal-origin scandal triggers a −5 penalty. No measure finishes, so no completion bonus offsets the losses.
+
+Sovereignty declines to 20.0 as capability growth outpaces capacity, with no access event to offset the −1 decay. Openweight capability rises to 43.0, reflecting the lag behind the closed frontier and the spread of more powerful tools.

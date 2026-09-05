@@ -1,0 +1,11 @@
+### Frontier Stalls, Openweights Advance  
+The closed AI frontier shows signs of strain: a major release underperforms, and market pricing suggests top-tier capability is no longer scarce. Yet capability still advances, inching to 57.5 as labs patch gaps with scale and refinement. Meanwhile, a new open-weight model emerges—capable, widely adopted, and rapidly iterated—pushing openweight capability to 47.0. While this marks a notable leap from 44.5, it remains meaningfully behind the frontier, consistent with incremental diffusion rather than a sudden collapse or transfer of frontier knowledge.
+
+### Coalition Progress, Sovereignty Rises  
+The EU advances the Middle-Power AI Coalition, deepening evaluation reciprocity with Canada, Japan, and South Korea. Plans for a shared compute reserve move forward, with co-governance frameworks under negotiation and access conditional on joint safety standards. This progress strengthens the EU’s strategic position and contributes to a rise in eu_ai_sovereignty to 21.0. InvestAI Gigafactories continue in Brittany and Norrland, though Andalusia remains delayed. Legal efforts persist, but construction timelines slip.
+
+### Safety and Resilience Erode  
+No safety breakthrough occurs, and the gap between capability and assurance widens. Autonomous agents operate longer with less oversight, contributing to a drop in ai_safety to 28.0. CIARS implementation remains patchy—Poland and Hungary resist telemetry sharing—while the lack of a major incident prevents resilience gains. With ai_capability rising and no new category 6 measure completed, resilience slips slightly.
+
+### Political Capital Under Strain  
+Six large measures remain in flight, imposing significant institutional load. The AI Labour Transition Fund earns a proposal bonus of +3, and the ongoing priority on Strengthen MPAC delivers incremental momentum. However, with no major measure completed and no legitimacy lends, political capital rises only modestly to 32.0. The narrative of coalition progress sustains some momentum, but strain is evident across the portfolio.

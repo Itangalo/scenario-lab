@@ -1,0 +1,11 @@
+### Accelerating Capability, Eroding Trust  
+AI capability advances to 55.0 as frontier labs release next-generation agents capable of sustained reasoning over multi-day tasks. These systems demonstrate novel optimisation pathways in materials science and logistics, confirming their growing autonomy. The open release of Kimi K3’s cyber tools continues to propagate, with `openweight_capability` rising to 44.0—now approaching the closed frontier in offensive domains. Despite this, no major safety assurance upgrades land on deployed systems, and concerns grow over opaque agent behaviour, pushing `ai_safety` down to 29.0.
+
+### Scandal and Retreat  
+A high-profile ruling exposes an AI-driven social benefits system in a major EU member state that wrongfully denied thousands of claims due to biased training data and unreviewable logic. The ombudsman’s report triggers public outrage, with protests in multiple cities. In response, the EU pauses all new AI adoption in public services, citing the need for accountability. This internal-origin incident damages trust and slows momentum, contributing to falling `public_sentiment`, now at 38.0.
+
+### Sovereignty Under Pressure  
+The Emergency Sovereign Compute Directive advances in trilogue, but faces stiff resistance. Germany and Ireland, backed by the Competitiveness Council, demand exemptions for existing hyperscaler contracts. A sunset clause tied to sovereignty thresholds and expanded liability shields are offered as concessions. However, no final agreement is reached, and the directive remains in negotiation. The InvestAI Gigafactories and Tech Sovereignty Package remain on track but yield no immediate capacity gains.
+
+### Hardening Begins  
+The new Critical Infrastructure AI Hardening Programme launches, directing sovereign AI tools to monitor energy and transport networks. ENISA begins drafting protocols, though implementation is slow. The programme starts delivering partial resilience benefits, with early detection upgrades in two member states.

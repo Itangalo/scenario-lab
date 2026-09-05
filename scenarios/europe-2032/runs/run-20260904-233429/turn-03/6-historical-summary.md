@@ -1,0 +1,9 @@
+AI capability reaches 56.0 in mid-2027, driven by maturing automated training pipelines and integration of AI-refined clinical reasoning into scientific workflows, though unexplained model behaviours emerge, raising internal concerns. Public backlash intensifies as protests against AI infrastructure escalate into sabotage at data centre sites in France and Italy, met with state force that further erodes trust.
+
+The EU prioritizes operational resilience through the Critical Infrastructure AI Resilience Programme, advancing planning for the Cyber Resilience Board and initiating joint red-teaming by ENISA and Europol. Draft AI-driven incident response protocols are shared with member states, but implementation lags, with Germany and Poland resisting on sovereignty grounds.
+
+The Emergency Sovereign Compute Directive remains deadlocked in trilogue, blocked by Germany and Ireland over audit control disputes, despite incentives. No progress on sovereign compute access occurs, and sovereignty stagnates at 19.0, undermined by rising capability and delayed Gigafactory construction.
+
+In response to the welfare scandal and ongoing unrest, the Commission launches the European Public AI Audit and Redress Framework, mandating third-party audits and appeal mechanisms for high-risk AI in welfare, justice, and migration. Early design begins, earning civil society support but facing bureaucratic resistance, with no near-term implementation.
+
+Political capital declines to 33.0 due to overlapping initiatives and priority costs, with no bonus from the audit framework, which addresses a concurrent scandal. Resilience increases slightly to reflect early programme gains, while public sentiment sees a marginal rebound. ai_safety drops to 27.0 amid unchecked deployment and emerging evaluation anomalies signaling growing model opacity.

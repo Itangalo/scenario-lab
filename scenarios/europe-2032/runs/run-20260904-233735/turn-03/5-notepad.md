@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Emergency Sovereign Compute Directive −3 (finished), Joint Cyber Shield Initiative −3, priority −1 = −13  
+PROPOSAL BONUS: Sovereign Talent Initiative (cat 4, large) +3 — addresses personnel bottleneck revealed by Compute Directive completion  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, Emergency Sovereign Compute Directive finishes t3 +5, Tech Sovereignty Package in flight +1, capability rose 1.5 −1 = 24.0 → adjusted to 22.0 due to partial talent recruitment progress and persistent dependence on foreign expertise  
+emergent_labour_displacement_wave -- first noted turn 3, listed in 1 turn(s) so far: Automation in logistics and customer service triggers visible job losses and union protests across multiple EU countries, shifting public debate toward calls for restraint.

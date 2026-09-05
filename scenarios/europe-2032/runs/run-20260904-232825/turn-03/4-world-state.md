@@ -1,0 +1,14 @@
+### Capability Surge, Safety Gap Widens  
+AI capability advances to 56.5 as frontier labs deploy agents capable of sustained, multi-day reasoning in logistics and materials design. These systems demonstrate novel optimisation pathways, confirming their growing autonomy. With no safety upgrades landing on shipped models, and opaque agent behaviour now suspected in multiple corporate planning systems, `ai_safety` drops sharply to 24.0.
+
+### Open Front Ruptures  
+The Kimi K3 cyber toolkit, widely shared and adapted, enables low-skill actors to generate exploit chains at machine speed. A major ransomware sweep — AI-generated, fast-propagating, and evasive — hits regional health and transport networks across three member states. Legacy systems are weaponised within hours. Defenders are overwhelmed by scale and speed. Attribution remains unclear months later. The attack confirms that offensive capability at 44.0 openweight is now operational — and `openweight_capability` rises to 45.0 as variants begin to proliferate, reflecting early diffusion of the toolkit’s core techniques.
+
+### Resilience Tested, Response Launched  
+The EU activates emergency protocols, but coordination gaps delay containment. In response, the Sovereign AI Incident Response Corps is launched as a large category 6 measure, aimed at closing the orchestration deficit. It will integrate ENISA, national agencies, and sovereign AI tools under mandatory activation thresholds. Training begins next quarter, but full operational capacity is years away. Given the ongoing failure and delayed response, `resilience` increases only slightly to 40.0, reflecting early organisational steps rather than restored robustness.
+
+### Sovereignty Gains, Then Loses Ground  
+The Emergency Sovereign Compute Directive becomes law, reserving 30% of frontier compute for public use. This strengthens autonomy — but compute without coordination proves limited during the cyber incident. Meanwhile, `ai_capability` rises over 2, costing `eu_ai_sovereignty` −1. No capacity event occurs, but the Taiwan blockade looms, tightening global semiconductor supply.
+
+### Trust Erodes Further, Political Capital Holds  
+Public trust declines as the cyberattack disrupts essential services and the social benefits scandal lingers. `public_sentiment` falls to 33.0. The EU maintains its pause on public-sector AI adoption, citing accountability. Despite the crisis, `eu_political_capital` rises modestly to 30.0, reflecting limited recognition of the emergency response framework’s initiation — but not full endorsement, given the delayed and fragmented containment. The notepad’s proposal bonus is banked as potential future legitimacy, not immediate capital.
