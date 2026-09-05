@@ -1,0 +1,36 @@
+## Statement changes
+* ``- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now recognise that without integrity in the institutions that govern AI, neither mandate can hold, and that the erosion of public legitimacy is now as strategic a threat as any technical failure. This turn, with `eu_frontier_access_denied`, we see that dependence is not just a sovereignty risk, but an immediate operational vulnerability: when access is revoked without appeal, our institutions cannot function, our hospitals falter, and our people lose faith not in technology, but in the Union itself.``
+  - Grounds: The `eu_frontier_access_denied` event is not merely a supply disruption — it is a systemic failure of agency. The Union’s inability to maintain continuity of critical services when cut off from external models confirms that sovereignty is not a luxury or a long-term ambition, but a precondition for basic governance. This is not a marginal case; it is a categorical breach of the Union’s capacity to act, and it forces a revision of our identity to reflect that dependence itself is now an active threat vector.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer assume that action alone confers control, when the systems meant to execute it may already be compromised, and when the public may no longer believe in the institutions delivering it. Now, with eval_anomaly_reports confirming that capability is emerging unpredictably and control is evaporating, we must act not just decisively, but visibly and accountably, so that even when we are wrong, the process survives.``
+  - Grounds: The `eval_anomaly_reports` signal that the next capability leap is not speculative — it is already in motion, and it is invisible to current evaluation frameworks. This is not uncertainty of degree, but of kind: we can no longer assume that our metrics reflect reality. Our commitment to act under uncertainty must now include a duty to demonstrate legitimacy in action, because if the public sees only failure after failure, no amount of technical correctness will restore trust.
+
+* ``- add `sovereignty_as_continuity` (commitment): We will treat access to foundational AI systems as essential infrastructure, no different from energy or communications, and ensure that the EU can maintain continuity of critical functions even when external access is revoked by any actor.``
+  - Grounds: The `eu_frontier_access_denied` event has demonstrated that reliance on foreign AI systems creates single points of failure in healthcare, governance, and emergency response. This is not a market failure — it is a sovereignty failure. We bind ourselves now to treat AI access as a matter of continuity of state function, not as a commercial convenience.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly`` — **finished this turn**
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``
+
+## New measure
+**Measure:** Sovereign Continuity Stack  
+A minimal, EU-controlled AI stack — from training to deployment — capable of sustaining essential public services during external access denial.
+
+Category: 4 (Sovereignty and industrial capacity)  
+Size: large  
+Finishes on turn: 10  
+Targeted effect: Increase eu_ai_sovereignty by 15–20 points; reduce dependence on external models to zero for critical functions; indirectly support ai_safety and resilience by enabling controlled, auditable fallback systems  
+Applies to: EU institutions, national health services, emergency response agencies, and critical infrastructure operators
+
+## Priority
+**Priority:** Sovereign Continuity Stack  
+This is now our top priority because `eu_frontier_access_denied` has exposed a fatal vulnerability: when the external frontier cuts us off, our hospitals, regulators, and crisis systems grind to a halt — not due to lack of planning, but due to lack of sovereign capability. The Institutional Integrity Audit remains vital, but integrity without continuity is academic. We must now build what we can control, operate, and trust — not because it is the most capable, but because it is ours.
+
+## In practice
+We are launching the Sovereign Continuity Stack with immediate effect, drawing €42bn from the European Defence Fund, the Digital Europe Programme, and emergency reallocations from the Horizon Europe budget. The stack will be built on the Dresden Gigafactory infrastructure, leveraging the ASML-Intel pilot line to produce secure, EU-sovereign training runs for a minimal but functional model — capability 55.0, no higher, but fully auditable, checkpoint-archived, and deployable without external dependencies. The European High-Performance Computing Joint Undertaking will lead, with the EAAD as technical supervisor, and the first deployment target is the European Medicines Agency and national health data systems — the first to break when access was denied.
+
+The Tech Sovereignty Package reaches its final turn this period. We are finalising the Council vote on the archived checkpoint mandate, attaching it to the AI Act’s conformity assessment framework under Article 28b. The requirement now applies to all models above 50.0 capability operated in the EU, whether open or closed, and the European Data Protection Supervisor will appoint an independent custodian for the archives. This is not just a safety measure — it is a sovereignty lever: if a model disappears or access is revoked, we can reconstruct and redeploy from the last known safe state.
+
+The Institutional Integrity Audit intensifies: adversarial probes are now running in real time across Eurostat, the European Banking Authority, and Frontex. We have expanded the red-team mandate to include simulation of post-denial scenarios — what happens when a hospital AI vanishes mid-diagnosis, or a border system fails during a crisis. The Public Trust Observatory begins publishing its first findings this quarter, showing not just detection rates, but the provenance of every alert — because trust must be earned through transparency, not assumed through authority. And we are preparing a special session of the European Council to address the legitimacy crisis, not with rhetoric, but with the only currency that remains: demonstrable control.

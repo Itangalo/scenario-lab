@@ -1,0 +1,32 @@
+## Statement changes
+* ``- modify `two_year_commitment` (commitment): Secure sovereign AI infrastructure with full operational control, energy autonomy, and real-time auditability by turn 7, and establish Emergency Resilience Corridors as legally binding, pre-exercised response protocols for AI-driven cyber and critical infrastructure failures by turn 7``
+- Grounds: The cyber_major_incident this turn has demonstrated that sovereignty without resilience is brittle, and that even sovereign systems can be rendered powerless if the broader ecosystem collapses around them. The attack exploited model-generated tooling now widely accessible at 48.5 openweight capability, and landed because preparedness was fragmented and untested. While energy-backed compute remains foundational, it is now clear that operational control cannot be sustained without institutionalised crisis response. The original commitment stands, but it is no longer sufficient: we are extending it to include the activation of Emergency Resilience Corridors by turn 7, making resilience a co-equal pillar of our sovereign posture.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will now anchor those commitments in demonstrable institutional capacity, not emergency authority alone``
+- Grounds: The repeated failure of emergency measures — SCAP, Article 122 TFEU actions, symbolic certifications — to translate into on-the-ground control has shown that speed without durability creates dependency on goodwill and coordination we no longer have. We acted under uncertainty before, and we were late anyway. This turn, we shift: future commitments will be front-loaded with implementation capacity, binding legal instruments, and exercised procedures. The price of being wrong is still accepted, but the price of being unprepared is now understood to be higher.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**
+- `Secure Energy-Backed Compute Sovereignty (category 4, costs 3 per turn, started turn 5, finishes on turn 6): Launch a binding EU-wide programme to co-develop sovereign AI infrastructure with national energy authorities, ensuring 5GW of dedicated low-carbon power for AI compute by turn 6, with physical and legal separation from commercial grids` — **finished**
+
+## New measure
+**Measure:** Establish Binding Audit Access for Critical Infrastructure Operators  
+Mandate real-time logging and external audit access for all AI systems operating in energy, finance, and healthcare, enforced through the EAAD with authority to suspend non-compliant deployments.
+
+Category: 1 (Evaluation and oversight)  
+Size: small  
+Finishes on turn: 7  
+Targeted effect: Increase ai_safety by 8–12 points by turn 7, close the enforcement gap in public-sector AI use, and strengthen EAAD’s authority as a credible regulator  
+Applies to: Member states, EAAD, ENISA, national regulators, critical infrastructure operators
+
+## Priority
+**Priority:** Establish Binding Audit Access for Critical Infrastructure Operators  
+This is the enforcement linchpin: without auditability, even sovereign systems become black boxes that can fail in silence. The cyber_major_incident revealed that attackers exploited opaque, unlogged AI tooling in supply-chain automation — systems that were never reviewed, never verified, and never monitored. We have the EAAD, we have the tools, but we lack the legal teeth. This measure closes that gap, turning certification into control, and must be pushed now — not because it is easier than energy or compute, but because without it, both are blind.
+
+## In practice
+We are treating this turn as the moment the Union shifts from building infrastructure to enforcing integrity. The Secure Energy-Backed Compute Sovereignty programme has formally delivered: 5GW of low-carbon power is now legally ring-fenced under the Council Regulation adopted via Article 122 TFEU, with microgrid isolation protocols activated in Brittany and northern Sweden. The EIB has reprofiled €30bn into output-linked loans for nuclear microreactors and geothermal integration, tied directly to the InvestAI Gigafactories. ENTSO-E has accepted the allocations as binding in the 2030 network development plan, though Germany and Austria continue legal challenges at the CJEU — we will defend the directive, but the physical build-out proceeds. This is no longer a proposal: sovereign energy for AI is now law, and the first power taps will come online by turn 7.
+
+The EAAD is no longer a promise but a regulator. It has issued its first certifications under the new interpretability protocol, blocking two public-sector deployments for insufficient verification in clinical coding and contract review. But its authority remains contested: Italy and Hungary still refuse real-time logging access, and the cyber_major_incident exploited exactly that gap. We are now pushing a revised AI Act amendment through COREPER II that makes audit access a condition of market access for AI in critical sectors. ENISA is providing technical templates for logging interoperability, and we are offering Italy and Hungary a joint oversight cell within the EAAD — but the line holds: no audit, no operation. This is not optional. The attack was not a wake-up call; it was a demonstration of systemic fragility. We will not wait for the next one.
+
+Public sentiment remains at 24.0, and the streets are restless. We are launching a targeted communication effort around the new audit mandate, framing it as the first enforceable guarantee that AI systems in hospitals and banks will be *seen* before they fail. The Emergency Resilience Corridors are being integrated into national crisis plans, with ENISA running the first cross-border cyber drill in June. This is not just about defence — it is about credibility. If the Union cannot prove it can see the systems it depends on, no amount of sovereign compute will restore trust. We are acting under uncertainty, yes — but from now on, we build the capacity to see what we’ve done.

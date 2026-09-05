@@ -1,68 +1,47 @@
-### Statement changes
+## Statement changes
 
-- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing, but we now acknowledge that capability without control is a path to dependency, not sovereignty — and that resilience without sovereignty cannot be sustained when external shocks cascade through shared infrastructure.
+- modify `two_year_commitment` (commitment): Secure sovereign AI control to withstand strategic shocks and prevent catastrophic misuse  
+  - Trigger: the **capability_jump** event this turn, which raises global `ai_capability` from 62.0 to at least 65.0, combined with **member_state_defection**, in which Poland signs a bilateral compute-access deal with the US that excludes EU oversight and undermines SMAF’s universality  
+  - Grounds: The jump in capability accelerates the timeline for autonomous agent deployment beyond what our current assurance infrastructure can monitor, while Poland’s defection proves that sovereignty cannot be declared — it must be enforced. We are no longer merely securing systems; we are defending the integrity of the Union’s regulatory space. This requires shifting from passive containment to active exclusion: any model operating above 55.0 on EU soil must comply with SMAF or be shut down, regardless of origin.
 
-  - Grounds: The convergence of *capability_jump* and *member_state_defection* reveals that even hardened systems are vulnerable if their intelligence depends on foreign-controlled models or diffuse open-weight leaks. A cyber-compromised sovereign cluster in Hungary, enabled by bilateral access to US frontier weights, exposed that resilience is only as strong as the weakest political link. Our mandate must now integrate control, capacity, and cohesion: we cannot absorb harm if the means to inflict it are embedded in our own critical functions.
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer treat speed as a substitute for control, and will pause where assurance cannot scale with capability.  
+  - Grounds: With the **safety_breakthrough** in mechanistic interpretability now being adopted by leading labs, we have a rare window: a real tool that scales with capability. We must integrate it into EAAD’s evaluation pipeline immediately, even if incomplete. Our commitment now includes *accelerating assurance* — not just slowing down deployment. The cost of delay is no longer only failure to act, but failure to absorb progress when it arrives.
 
-- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer treat speed as a substitute for control, and will pause where assurance cannot scale with capability; henceforward, any measure advancing sovereign capability must demonstrate parallel progress in containment and auditability.
-
-  - Grounds: The *capability_jump* this turn — pushing global `ai_capability` to 62.0 while `ai_safety` stagnates at 24.0 — proves that waiting for proof of failure is waiting too long. But the *member_state_defection*, where Poland signed a sidecar agreement with a US hyperscaler granting privileged access to models above 58.0 under "research collaboration", shows that unilateral action under uncertainty can fracture Union policy. Speed must now be governed by enforceable brakes, not just ambition.
-
-- retire `two_year_commitment`
-
-  - Grounds: The two-year commitment period closes this turn, and while significant progress has been made — EAAD operational, SMAF codified, first air-gapped cluster initiated — the strategic environment has shifted categorically. The *capability_jump* and *member_state_defection* expose that “sovereign control” cannot mean merely building secure systems within the Union, but must include enforcing alignment across member states and closing the gap between open-weight diffusion and closed-world risk. A new commitment must reflect that sovereignty is not just technical, but political and enforceable.
-
-- add `new_two_year_commitment` (commitment): Enforce unified AI sovereignty across the Union by binding all member-state actors to common containment, audit, and access standards for high-capability systems, and close the open-weight vulnerability window before it reaches 55.0.
-
-  - Grounds: With `openweight_capability` at 48.0 and rising through optimization of older architectures, and with one member state already circumventing Union-level controls via foreign partnership, we face a distributed sovereignty crisis. Our next two years must not be spent building walls around our own house while leaving the doors open across the street. This commitment binds us to make compliance structural, not voluntary.
-
----
-
-### Portfolio
+## Portfolio
 
 ``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
 ``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
-``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases``
-- Finished this turn. EAAD is now fully empowered under delegated acts from the Commission, with initial audit teams staffed and clearance processes underway.
-
-``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises``
-- Finished this turn. CIRS transitions to ENISA as a standing monitoring function with real-time threat assessment mandate.
-
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` – **finished**
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` – **finished**
 ``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability``
-``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure``
-- Finished this turn. SMAF is now legally binding across SACP participants and retroactively applies to all active development lines.
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` – **finished**
+``Enact the AI Containment Protocol (category 3, costs 3 per turn, started turn 5, finishes on turn 7): A binding directive requiring all sovereign AI systems above 55.0 capability to operate under air-gapped, multi-party control with real-time anomaly detection and human-in-the-loop escalation``
 
 Canceled measure: Tech sovereignty package.  
-The package’s goals — private investment and permitting reform — are now subsumed under the InvestAI Gigafactories and SACP, and its continuation risks duplicating effort and fragmenting legal authority. We consolidate under direct public delivery.
+It has served its signaling function, but its market incentives are redundant now that InvestAI Gigafactories centralizes state-led capacity building. Continuing both risks fiscal overreach and confuses investors. We consolidate under category 4 around direct public action.
 
----
+## New measure
 
-### New measure
+**Measure:** Mandate EU-wide adoption of the safety_breakthrough in mechanistic interpretability for all models above 50.0 capability  
+This measure fast-tracks integration of the new interpretability framework into all public evaluations, licensing decisions, and SACP development pipelines, ensuring that assurance keeps pace with accelerating capability.
 
-**Measure:** Mandate Unified Containment Standards for High-Capability Systems  
-Requires all member states to adopt the AI Containment Protocol for any system above 55.0 capability, whether developed nationally, acquired from third parties, or hosted on domestic infrastructure, with enforcement tied to EU funding and market access.
-
-`Category: 3 (Limits and restrictions)`  
+`Category: 1 (Evaluation and oversight)`  
 `Size: large`  
 `Finishes on turn: 7`  
-`Targeted effect:` Increase ai_safety by 10–15 points across sovereign and national deployments; reduce risk of rogue deployment or foreign leverage via backdoor access; strengthen eu_ai_sovereignty by making compliance structural rather than voluntary  
-`Applies to:` All member states, national laboratories, and entities operating or hosting models above 55.0 capability on EU soil
+`Targeted effect:` Increase `ai_safety` by 10–15 points across sovereign and licensed systems within 12 months; create a feedback loop between deployed systems and EAAD’s monitoring capacity; reduce blind spots in agent behaviour during training and inference  
+`Applies to:` All models evaluated or operated under SMAF, SACP, or receiving EU procurement contracts above threshold value
 
----
+## Priority
 
-### Priority
+**Priority:** Enact the AI Containment Protocol  
+We are pushing this hardest because the **capability_jump** has brought globally deployed systems into the range where autonomous goal pursuit becomes persistent and hard to interrupt, and because **member_state_defection** proves that without enforceable boundaries, sovereignty evaporates — so we must lock down operational control now, even as we accelerate internal assurance.
 
-**Priority:** Mandate Unified Containment Standards for High-Capability Systems  
-We are pushing this hardest because the *member_state_defection* event proves that sovereign control is meaningless if individual states can bypass it through foreign deals — and with `ai_capability` now at 62.0 and climbing, we cannot afford a patchwork of enforcement.
+## In practice
 
----
+This turn fractures our earlier balance. The **capability_jump** pushes `ai_capability` to at least 65.0 — possibly higher — as a single release integrates recursive self-debugging into training loops, enabling systems to optimise their own reasoning chains. This is no longer about assisting work; it is about systems shaping their successors. Simultaneously, the **safety_breakthrough** gives us a lever: researchers at Mila and INRIA have demonstrated a method to extract decision-relevant circuits from transformer layers with 90% fidelity, allowing prediction of certain behaviours before deployment. For the first time, we have a scalpel, not just a cage.
 
-### In practice
+We are acting on both fronts. First, containment: the AI Containment Protocol moves from proposal to enforcement track. We invoke Article 114 TFEU to justify harmonisation of high-risk system operation, and prepare infringement procedures against Poland unless it brings its US-side arrangement under SMAF oversight by turn 7. The Commission drafts implementing acts defining “multi-party control” as requiring at least two member states or one member state plus the EAAD. Physical air-gapping standards are codified with ENISA and the European Defence Agency, drawing on nuclear C2 protocols. France and Germany agree in principle to host the first cluster under joint custody, but demand veto rights on escalation triggers — we counteroffer with observer seats on the EAAD’s Incident Review Board.
 
-This turn, we act on the conviction that sovereignty is not a project but a condition — and one that must be enforced uniformly or lost entirely. The *capability_jump* confirms that the world’s most advanced systems now operate beyond human supervision in key domains, and the *member_state_defection* — Poland’s sidecar deal with a US lab — exposes a fatal flaw: our containment protocols are only as strong as the weakest member’s resolve. We are therefore converting the AI Containment Protocol from a directive into a binding standard with teeth.
+Second, assurance acceleration: we redirect €1.8bn from the Digital Europe Programme to fund emergency integration of the mechanistic interpretability toolkit into EAAD’s evaluation suite. We task the newly standing EAAD — now staffed at 60% capacity, with interim leadership confirmed — to issue binding guidance by turn 7: any model above 50.0 seeking access to EU compute or public data must submit to circuit-level behavioural audits using the new method. This applies retroactively to ongoing SACP training runs. We also open emergency grant windows for academic teams to scale the technique, prioritising those with clean-room access to closed models via existing research partnerships.
 
-We invoke Article 7 TEU procedures in parallel with Council Regulation drafting under the Internal Market framework, conditioning Cohesion Fund disbursements and access to Horizon Europe compute grants on compliance with air-gapped operation, dual-key access, and real-time anomaly reporting for any system above 55.0. The Commission is preparing infringement proceedings against Poland, not as punishment, but to establish precedent: no member state may outsource strategic AI control without collective consent.
-
-Meanwhile, the InvestAI Gigafactories press forward. Sweden’s site breaks ground under Article 122 TFEU emergency powers, and we’ve secured grid priority through binding solidarity clauses after tense negotiations with Finland and Austria. The first exaflop unit will come online in turn 7, feeding directly into SACP. At the same time, we are integrating the finished SMAF and EAAD outcomes: all SACP models now undergo pre-training architecture review, and the first weight-secure checkpoint has been archived under Franco-German dual custody.
-
-Public sentiment remains at 25.0, and we are not deluding ourselves: this is a moment of constraint, not popularity. But we are shifting the narrative from fear of AI to fear of dependence. Through the Digital Europe Programme, we are launching a campaign titled *Who Controls the Intelligence?* — linking bio-risk, cyber-vulnerability, and foreign access into a single story of sovereignty under pressure. We are not slowing AI. We are ensuring it serves us — all of us — or does not run at all.
+Public sentiment remains brittle at 25.0. We do not attempt broad messaging. Instead, we brief selected national editors on the biosecurity implications of uncontrolled agent training, framing containment as a hygiene standard — like radiation shielding. The narrative is narrow: not “more AI” or “less AI”, but “no unchecked AI”. Fiscal strain bites: canceling the Tech sovereignty package frees capital, but legal challenges loom from hyperscalers excluded by the new interpretability mandate. We prepare for litigation under internal market grounds, but calculate that the convergence of crisis and breakthrough justifies the risk. If we fail to bind capability to control now, we will not get another chance before the frontier escapes entirely.

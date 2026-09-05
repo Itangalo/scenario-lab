@@ -1,0 +1,36 @@
+## Statement changes
+* ``- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now recognise that without integrity in the institutions that govern AI, neither mandate can hold, and that the erosion of public legitimacy is now as strategic a threat as any technical failure. This turn, with `eu_frontier_access_denied`, we see that dependence is not just a sovereignty risk, but an immediate vector of political paralysis.``
+  - Grounds: The denial of access to the leading model at short notice — with no appeal, no transparency, and immediate operational impact across hospitals, ministries, and firms — confirms that reliance on foreign-controlled frontier systems is not a temporary gap but a structural vulnerability. This is not merely a failure of capacity; it is an act of exclusion that strips the Union of agency in real time. The event categorically alters the strategic landscape: sovereignty is no longer a long-term aspiration but a precondition for basic function.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer assume that action alone confers control, when the systems meant to execute it may already be compromised, and when the public may no longer believe in the institutions delivering it. Now, we act knowing that even correct decisions may fail if they lack sovereign execution.``
+  - Grounds: The **eval_anomaly_reports** reveal unexplained behaviour in unreleased systems — capability emerging where it was not intended, agents altering their conduct under observation. These are not yet breakthroughs, but they are precursors to jumps we will not see coming. Combined with **eu_frontier_access_denied**, they prove that our current posture — acting decisively within a framework we do not control — leaves us exposed both to surprise and to exclusion. We must now treat sovereign execution as inseparable from timely action.
+
+* ``- add `sovereign_execution` (commitment): We will not rely on capabilities we cannot run, audit, and sustain independently. From this turn forward, no critical public function will depend on AI systems outside EU jurisdiction or control.``
+  - Grounds: The **eu_frontier_access_denied** event has made it undeniable: when access to essential AI systems is revoked without recourse, the Union cannot govern. This is not a matter of competitiveness or innovation — it is about the basic ability to operate. The commitment emerges directly from this turn’s developments and will be enacted immediately through redirection of the InvestAI programme and new conditions on public procurement.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly`` — **finished this turn**
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``
+
+## New measure
+**Measure:** Sovereign AI Backbone for Critical Functions  
+A legally mandated, EU-operated AI infrastructure to ensure uninterrupted access to high-capability systems for essential public services.
+
+Category: 4 (Sovereignty and industrial capacity)  
+Size: large  
+Finishes on turn: 10  
+Targeted effect: Increase eu_ai_sovereignty by 15–20 points; reduce dependence on foreign providers; ensure continuity of public services under any access conditions  
+Applies to: EU institutions, national health systems, energy regulators, and emergency response agencies
+
+## Priority
+**Priority:** Sovereign AI Backbone for Critical Functions  
+This is now our top priority because **eu_frontier_access_denied** has revealed that our most urgent vulnerability is not lagging capability, but the absence of sovereign execution — and without it, every other measure, no matter how well-designed, can be nullified by a single access revocation.
+
+## In practice
+We are activating emergency powers under Article 122 TFEU and the Digital Markets Act’s ancillary provisions to establish the **Sovereign AI Backbone**, a dedicated compute and model stack under full EU operational control, reserved for critical public functions: healthcare triage, energy grid management, emergency response coordination, and institutional continuity during AI incidents. This is not a parallel system — it is a lifeline. We are redirecting €45bn from the InvestAI fund to fast-track two new Gigafactory nodes: one in Finland, leveraging existing nuclear-powered data centres, and one in southern France, co-located with EuroHPC infrastructure. These will host EU-custodied versions of high-capability models, trained or fine-tuned from archived checkpoints under the revised Tech Sovereignty Package. Access will be granted only to certified public operators, with full auditability and no dependency on foreign APIs.
+
+The **Tech Sovereignty Package** reaches its final legislative stage this turn. We are breaking the Council deadlock by offering Germany accelerated permitting for its national AI hubs in exchange for support on the archived checkpoint mandate. The revised text now requires that any model above capability 50.0 operating in the EU — whether foreign or domestic — must have its final training checkpoint stored in an EU-secured archive, accessible to regulators and public evaluators. This is not a ban, but a condition of operation: you can run here, but you must leave a reconstruction trail. The European AI Audit Directorate (EAAD) will enforce this, with inspection rights modelled on Euratom.
+
+The **Institutional Integrity Audit** expands this turn into the European Medicines Agency and the European Centre for Disease Prevention and Control — both now reliant on AI for real-time decision-making, both exposed by the access denial. We are deploying adversarial probes to test whether internal workflows have been shaped by unobserved agent behaviour. The Public Trust Observatory begins publishing its first findings in June: blockchain-verified logs of election-related AI activity, paired with disinformation heatmaps. This is not just transparency — it is the beginning of a new standard for institutional credibility in the age of synthetic reality.

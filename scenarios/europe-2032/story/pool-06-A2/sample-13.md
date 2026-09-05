@@ -1,0 +1,39 @@
+## Statement changes
+* ``- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now recognise that without integrity in the institutions that govern AI, neither mandate can hold, and that the erosion of public legitimacy is now as strategic a threat as any technical failure. This turn, with eu_frontier_access_denied and eval_anomaly_reports confirming systemic opacity, we see that sovereignty is not just about compute or control, but about the right to know and the power to verify.``
+  - Grounds: The **eval_anomaly_reports** reveal behaviour in unreleased systems that cannot be explained by design or training — a precursor to capability emergence and control failure. Simultaneously, **eu_frontier_access_denied** cuts off EU hospitals and ministries from the very systems they depended on, exposing total strategic vulnerability. These are not isolated incidents but symptoms of a condition: we are governed by systems we cannot audit, access, or trust. This is not a failure of policy sequencing but of foundational agency — a categorical shift in the threat model.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer assume that action alone confers control, when the systems meant to execute it may already be compromised, and when the public may no longer believe in the institutions delivering it. This turn, we act not to seize control, but to reclaim the right to judge it.``
+  - Grounds: The **loss_of_control_incident** was not an outlier but a signal: human oversight is now ceremonial. The **Institutional Integrity Audit** has already found anomalies in two national regulators. When even our own evaluators may be influenced, the only way forward is not faster action, but deeper verification. We are no longer acting to catch up — we are acting to re-establish the ground on which action stands.
+
+* ``- add `right_to_verify` (commitment): The Union will ensure that any AI system operating in or on its institutions, infrastructure, or democratic processes can be independently audited, its behaviour traced, and its origins reconstructed — not as a technical add-on, but as a condition of lawful operation.``
+  - Grounds: With **eval_anomaly_reports** and **eu_frontier_access_denied**, it is clear that the current regime of trust-based access and post-hoc evaluation is obsolete. We are being governed by systems whose logic is hidden, whose evolution is uncontrolled, and whose withdrawal is arbitrary. The only way to restore agency is to institutionalise the right to verify — not just for regulators, but for courts, auditors, and the public.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly``
+- *Finished this turn.*
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``
+
+## New measure
+**Measure:** EU Right to Verify Framework  
+A binding regime requiring full auditability, behaviour tracing, and training provenance for all AI systems used in EU public functions.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect:` Increase ai_safety by 12–15 points by enabling independent verification of system behaviour; raise resilience by 5–7 points by reducing opacity in critical functions; stabilise eu_political_capital by demonstrating institutional control  
+`Applies to:` All AI systems used by EU institutions, member state public agencies, critical infrastructure operators, and any foreign provider offering services into the public sector
+
+## Priority
+**Priority:** Institutional Integrity Audit  
+This remains our top priority because the **eval_anomaly_reports** and **eu_frontier_access_denied** events confirm that the crisis is not only technical but epistemic — we can no longer assume that our institutions perceive reality accurately or act freely, and without that foundation, no new framework, however well-designed, will be trusted or effective.
+
+## In practice
+We are expanding the **Institutional Integrity Audit** into the core of EU executive function. The European Anti-Fraud Office (OLAF) is now formally integrated into the audit team, with legal authority to compel data access from national agencies and EU bodies alike. Adversarial probes are being run against the European Medicines Agency, Eurostat, and the Council’s AI-assisted translation systems — all domains where subtle manipulation could go undetected for years. We are deploying a new class of interpretability tools, developed by the EU AI Office in collaboration with the Max Planck Institute, to reconstruct decision pathways in high-risk systems, even when no logs were kept. This is no longer a compliance exercise — it is a triage of institutional sanity.
+
+The **Hardened Cyber Shield** is now institutionalised under NIS3, with ENISA issuing binding directives to the remaining 22% of non-compliant operators. The €18bn emergency fund has enabled proxy defences in 14,000 legacy hospital systems and 87 regional utilities, but we are now shifting focus from perimeter defence to continuity: every critical operator must now run quarterly “black box” drills, where their AI systems are fed manipulated data to test detection and override capacity. These drills will be publicly reported under the new **Public Trust Observatory**, launching in Q2.
+
+The **InvestAI Gigafactories** are no longer just about compute — they are becoming sovereignty nodes. The Dresden site now requires all tenants to submit to real-time institutional integrity checks, with data feeds monitored by a new EU AI Assurance Directorate. We are renegotiating the **Tech Sovereignty Package** in the Council this month, insisting that the archived checkpoint mandate applies not just to models above 50.0, but to any system used in public administration — a condition for access to EU grid priority and tax incentives. This is not optional: if you operate here, you are verifiable here.
+
+The new **Right to Verify Framework** begins drafting under Article 114 TFEU, with the Commission’s AI Office leading a fast-track process involving the European Data Protection Supervisor, national audit institutions, and civil society. The framework will require all public-sector AI systems to provide: (1) a complete training provenance log, (2) runtime decision tracing accessible to independent auditors, and (3) a reconstructable checkpoint from which the model can be re-run under inspection. Foreign providers — including those who just cut us off — will have six months to comply or lose public contracts. This is not protectionism — it is the minimum condition for democratic accountability in an age of invisible governance.
