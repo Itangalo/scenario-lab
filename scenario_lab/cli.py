@@ -2611,6 +2611,11 @@ def main():
             parent_seed = new_config.get("random_seed")
             if isinstance(parent_seed, int):
                 scenario.config.random_seed = parent_seed
+                print(
+                    "  Note: child shares the parent run's seed, so any turn it "
+                    "re-draws rolls identical dice — pass --seed for independent "
+                    "exploration."
+                )
             else:
                 scenario.config.random_seed = random.getrandbits(64)
         new_config["random_seed"] = scenario.config.random_seed

@@ -328,3 +328,11 @@ The US election resolves turn 5 (September 2028) but policies should bite turn 6
 3. Pending placeholder (`US_POSTURE: pending (administration takes office next turn)`): exact string verified, zero named postures. Accepted: it names nothing, prices nothing, and turn 6 reads the winner from the event record.
 
 Then the real catch, found only because six full reads were commissioned for the story prose: the Jinja `if/else` had no neither-case, so turns 2–4 rendered "the 2028 election fires this turn" and 48 runs declared winners 18 months early — a turn-5 machinery working flawlessly while turns it never touched burned. Fixed three-way (item renders only on 5+ and 6+), render-verified per turn. The 60 tainted branches were wiped and rebuilt from pins; the six prose summaries commissioned from them were discarded before publication. Procedure adopted: pilot a few and verify before scaling — the second batch lost to verify-after-scale.
+
+## Seed audit: 186 runs, six benign collisions (2026-09-06)
+
+Johan asked whether all runs have their own seeds. Scanned every `run-20*` config on disk: 186 runs, 180 distinct seeds, zero missing. All six collisions are turn-6 event fixtures sharing their Stage-1 path run's seed — the `branch` default (keep parent) was used without `--seed` when the fixtures were made.
+
+Benign, for an architectural reason rather than by luck: dice are `random.Random(f"{seed}:{turn}:{event_id}")`, so a seed only collides meaningfully when two runs draw the *same turn*. Path runs consumed turns 1–5, fixtures only turn 6, and the fixtures' own turn-6 actor outputs are discarded — no turn's dice was ever drawn twice. All 60 Stage-1 runs and all 120 Stage-2 blocks hold fresh unique seeds.
+
+Two guards so the next batch cannot repeat the accident: `branch` without `--seed` now prints that the child shares the parent's seed (comparable counterfactuals want that; independent exploration does not), and AGENTS.md says to pass a fresh `--seed` when a branch explores new turns. `story/pin-turn.py` already draws fresh per block.

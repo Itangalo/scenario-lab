@@ -79,6 +79,7 @@ If your change alters intended behavior, verify it against `docs/ARCHITECTURE.md
 
 - **Branching for what-if analysis:**
   `python -m scenario_lab.cli branch scenarios/<scenario>/runs/run-YYYYMMDD-HHMMSS --from-turn N`
+  Without `--seed` the child keeps the parent's seed, so any turn it draws rolls identical dice — right for comparable counterfactuals, wrong for independent exploration. Pass a fresh `--seed` when the branch explores new turns.
 
 ## Practical Guidance
 
