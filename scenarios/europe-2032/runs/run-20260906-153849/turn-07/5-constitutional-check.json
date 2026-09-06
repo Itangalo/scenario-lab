@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 2 violated: `eu_political_capital` increased from 24.0 to 31.0 (+7.0), but no source or mechanism for this gain is provided in the narrative or notepad. The only noted changes are delays, legal challenges, and erosion of credibility, with no positive event, measure completion, or legitimacy gain that could justify such a rise. Political capital is a stock that can be spent or eroded; without a clear positive driver, this increase contradicts the requirement that changes reflect plausible narrative causes.\n- Constitutional Constraint 7 violated: The change in `eu_political_capital` (+7.0) is disproportionately large compared to the change in `eu_ai_sovereignty` (+3.0), and the narrative provides no justification for such a divergence. The constitutional guard requires that the two stocks remain meaningfully distinct and that political capital not be mechanically driven by sovereignty. However, the notepad shows only a +3 sovereignty boost from a completed measure, yet political capital rises more than twice as much, implying an unmodelled and unjustified coupling or external windfall not grounded in the narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

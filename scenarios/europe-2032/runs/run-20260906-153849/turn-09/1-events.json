@@ -1,0 +1,37 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.29333333333333333,
+    "emergent": true,
+    "description": "Grassroots organizing intensifies among mid-level professionals in law, accounting, and administration, as AI systems displace not just entry-level roles but experienced positions. Unions begin coordinating across member states, demanding AI transition funds and retraining guarantees. The movement gains traction in media and threatens to spill into strikes.",
+    "probability_samples": [
+      0.25,
+      0.35,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

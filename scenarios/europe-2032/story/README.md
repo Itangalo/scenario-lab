@@ -112,7 +112,7 @@ Turn-5 posture note: 31 runs carry the literal `US_POSTURE: pending (…)` line,
 | V12 | V1 (`run-20260904-230752`) | pool-06-V1/sample-01 | `runs/run-20260906-140300` |
 | V21 | V2 (`run-20260904-223403`) | pool-06-V2/sample-14 | `runs/run-20260906-141232` |
 | V22 | V2 (`run-20260904-223403`) | pool-06-V2/sample-07 | `runs/run-20260906-142403` |
-| P11 | P1 (`run-20260904-224120`) | pool-06-P1/sample-05 | `runs/run-20260906-144007` |
+| P11 | P1 (`run-20260904-224120`) | pool-06-P1/sample-05 | `runs/run-20260906-144653-01` |
 | P12 | P1 (`run-20260904-224120`) | pool-06-P1/sample-09 | `runs/run-20260906-145406` |
 | P21 | P2 (`run-20260904-233821`) | pool-06-P2/sample-14 | `runs/run-20260906-150640` |
 | P22 | P2 (`run-20260904-233821`) | pool-06-P2/sample-28 | `runs/run-20260906-151607` |
