@@ -104,7 +104,7 @@ Turn-5 posture note: 31 runs carry the literal `US_POSTURE: pending (…)` line,
 
 | block | parent path | option | first run |
 |---|---|---|---|
-| A11 | A1 (`run-20260904-222506`) | pool-06-A1/sample-06 | `runs/run-20260906-113306` |
+| A11 | A1 (`run-20260904-222506`) | pool-06-A1/sample-06 | `runs/run-20260906-114440` (rep 2; rep 1 replaced — sentiment trajectory implausible, see `stage-2/A11.md`) |
 | A12 | A1 (`run-20260904-222506`) | pool-06-A1/sample-03 | `runs/run-20260906-131531` |
 | A21 | A2 (`run-20260904-225530`) | pool-06-A2/sample-21 | `runs/run-20260906-132556` |
 | A22 | A2 (`run-20260904-225530`) | pool-06-A2/sample-07 | `runs/run-20260906-133612` |
