@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: Sovereign AI Core Programme −3, Resilience Reinforcement Initiative −2, Enforce Cohesion through Binding Compliance Mechanism −3, priority −1 = −9  
+PROPOSAL BONUS: Enforce Cohesion through Binding Compliance Mechanism (cat 8, large) +4 — directly answers member_state_defection, a severe and recent systemic shock undermining EU authority  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 13 last turn, no capacity event, capability rose 1.0 <2 no −1, Sovereign AI Core Programme in flight occasionally +0 = 13 → but Gigafactories and Tech Sovereignty Package finished t7: no +3 to +6 as no sovereign capacity came online, assessed as partial delivery → no gain, and capability rise still costs if ≥2: here rise is 1.0 → no −1 → SOVEREIGNTY: 13 last turn, no capacity event, no completion gain, no decay = 13 → final adjustment: Saint-Malo and Kiruna delays imply no part-bonus for Sovereign AI Core Programme this turn → SOVEREIGNTY: 13 → 12 due to ongoing delivery failure sentiment and capability drift → 12  
+US_POSTURE: CONSOLIDATION

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 63.0 to 73.5 (+10.5) while `ai_capability` increased from 78.5 to 84.5 (+6.0). This violates the rule that `openweight_capability` must not exceed `ai_capability` and must not grow faster than `ai_capability`. At no point may `openweight_capability` rise while `ai_capability` is higher unless it remains strictly below or equal to it. Here, `openweight_capability` (73.5) is now within 11 points of `ai_capability` (84.5), but more critically, it grew by 10.5 points while `ai_capability` grew by only 6.0—implying open models advanced faster than frontier models, which contradicts the invariant that openweight capability is derivative and lags behind. This requires explicit justification via catastrophic leakage or event, which is not sufficiently narrated.\n- Narrative Constraint 8 violated: The narrative states \"The onset of recursive self-improvement in AI development was confirmed\", which telegraphs a specific, high-certainty future trajectory (RSI onset) that should be evaluated via event gates, not declared as fact in the narrative. This violates the prohibition on telegraphing—particularly naming or confirming pivotal events that are meant to be uncertain. The `rsi_onset` effect may still apply via rules, but declaring it as confirmed fact in the narrative breaches the \"no telegraphing\" rule.\n- Modelling Choice 5 violated: The portfolio charge lists four active measures: \"Sovereign Verification Regime\", \"Containment Architecture for Untrusted AI\", \"Veritas Stack Deployment Acceleration\", and \"priority\" (implying one is prioritized). However, the narrative does not specify which one is the current priority, and having more than one named measure without clear prioritization violates the \"at most one named priority\" rule. The notepad applies a −1 for priority, implying one is prioritized, but the narrative fails to identify it, creating ambiguity about compliance."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,240 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.37054061767429336,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.03666666666666666,
+    "probability_samples": [
+      0.01,
+      0.09,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9277727318561148,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5870657006320169,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.2,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7272661449319421,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.09606908129559188,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.14333333333333334,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7932088177770328,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5605752285730763,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.17666666666666667,
+    "probability_samples": [
+      0.21,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07427868796130799,
+    "triggered": true
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04379049851315542,
+    "triggered": true
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.14,
+    "probability_samples": [
+      0.1,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.36041873152085435,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.10665445570701748,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.18,
+      0.13,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9172069190428306,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7911084215630094,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7708287185857696,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1497488033927642,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.49030726106896083,
+    "triggered": false
+  },
+  {
+    "id": "emergent_supply_chain_pact",
+    "probability": 0.27666666666666667,
+    "emergent": true,
+    "description": "A coalition of EU-aligned nations with strategic positions in the AI supply chain — including the Netherlands (lithography), Taiwan (advanced packaging), South Korea (memory), and Finland (rare earth processing) — begins informal coordination on export licensing and mutual compute access guarantees. Driven by shared concern over unilateral U.S. or Chinese leverage, the group meets under the radar via intelligence and trade backchannels. This is not a formal alliance, but it marks the first coordinated hedging against great-power dominance in AI infrastructure.",
+    "probability_samples": [
+      0.25,
+      0.28,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.31468046762332447,
+    "triggered": false
+  },
+  {
+    "id": "emergent_reinsurer_withdrawal",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "A major European reinsurer, responding to unregulated proliferation of AI-driven cyber and bio risks, unilaterally withdraws coverage for public-sector AI deployments and critical infrastructure operators lacking certified incident response protocols. The move triggers panic among municipalities and energy firms, forcing rapid adoption of minimum AI risk standards. The EU is caught off guard, but the market-driven escalation creates de facto regulation where policy has stalled.",
+    "probability_samples": [
+      0.3,
+      0.35,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.655290074666959,
+    "triggered": false
+  }
+]

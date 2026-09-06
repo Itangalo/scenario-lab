@@ -1,0 +1,15 @@
+### A Reprieve, Not a Victory
+
+The global AI investment slump slows the frontier’s advance for the first time in years. Training runs are scaled back, and several US hyperscalers delay model releases, giving governments rare breathing room. The most advanced offensive cyber tools — once assumed inevitable — stall without funding. In parallel, a breakthrough in defensive AI enables real-time patching of zero-day vulnerabilities and detection of coordinated swarm attacks, shifting the offence-defence balance meaningfully, if not decisively.
+
+The EU seizes the moment. It retires its outdated two-year commitment to sovereign control of frontier models, acknowledging that access denial and cascading failures have exposed the limits of containment. Instead, it launches the **Resilient Fallback AI Network**, a large-scale effort to embed interpretable, low-capability AI across emergency systems, designed to function during outages or attacks. Invoking Article 122 TFEU, the Commission frames systemic fragility as an ongoing crisis, justifying rapid action.
+
+Yet momentum falters. Finance ministers balk at the €12bn price tag, calling it redundancy in a tightening fiscal climate. Two member states signal reluctance to adopt mandatory integration, citing sovereignty concerns. The measure officially enters the portfolio, but implementation lags from the start. ENISA begins red-teaming planning, but deployment remains theoretical. No operational progress is made this turn, and the initiative contributes no resilience benefit yet — effects will emerge only after deployment begins in future turns.
+
+Meanwhile, export controls tighten under the US consolidation posture: while not cutting off the EU entirely, key components for high-end inference clusters are now rationed, further delaying the Sovereign AI Core Programme. This escalation removes a critical enabler for sovereign capability expansion, registering as a negative event that reduces `eu_ai_sovereignty` by 1. With no compute expansion completed, and political capital eroding, the Union struggles to translate strategic clarity into material progress. Public sentiment holds steady at 23.0 — too low for support, too numb for revolt.
+
+Open-weight capabilities remain flat at 54.0. Despite growing interest in deployable open models, the absence of major new releases or infrastructure scaling — compounded by the broader stagnation in frontier development — prevents any meaningful accumulation. The InvestAI Gigafactories remain under construction, with no operational output yet — their completion delayed beyond this turn.
+
+### Signals Beneath the Surface
+
+Rumours grow of a European-led neuromorphic chip design that could run capable models on minimal power. And evidence mounts that synthetic media influenced recent elections — but no decisive action follows.

@@ -1,0 +1,19 @@
+### A Pivotal Turn for EU AI Strategy
+
+The EU closes two major initiatives on schedule: the **Tech Sovereignty Package** and the **Critical Infrastructure Resilience Sprint**, both finishing this turn. The former unlocks €28bn in private investment and streamlines permitting across six member states, laying groundwork for future compute independence. The latter achieves 78% coverage of Tier 1 critical operators under binding cyber audits, with fallback systems deployed in 42% and red-teaming now live — a significant boost to operational resilience.
+
+Amid the Taiwan blockade, the EU seeks to leverage its semiconductor supply-chain position. Emergency coordination is initiated with ASML, STMicroelectronics, and Infineon under the Chips Act to secure priority access to next-gen tools. However, under the current U.S. RETRENCHMENT posture — marked by unilateral export controls and diminished coordination — these efforts face immediate friction. While European firms express willingness to cooperate, access to dual-use technologies remains constrained by U.S. jurisdiction and licensing barriers. No breakthrough in alignment is achieved this turn, and the strategic value of the EU’s semiconductor leverage remains aspirational rather than realized. Consequently, this effort does not yet translate into measurable gains in sovereignty.
+
+In response to mounting concerns about AI-driven instabilities in critical systems, the European Commission announces exploratory talks on a potential **Systemic Integrity Watch**, a new monitoring function to be hosted at ENISA. The proposal is scoped as a category 1, small measure with cross-sectoral coordination goals, focusing initially on information-sharing and early-warning protocols. However, no operational authority is granted in this turn. Full design, legal basis, and staffing will require at least one additional turn before any implementation can begin, in line with minimum rollout timelines for new measures.
+
+### Capability Accelerates Amid Geopolitical Shock
+
+Global AI capability rises sharply to 63.0, driven by self-improving agents in training pipelines and materials discovery. The Taiwan blockade disrupts global compute supply, making semiconductor access a strategic chokepoint — a crisis that simultaneously threatens and empowers the EU.
+
+Openweight capability increases to 49.0, reflecting continued replication of frontier methods at a steady pace, now enabling coordinated non-state actors to assemble modular AI systems. However, the supply shock and tightening export controls disproportionately affect open actors lacking direct access to fabrication capacity, limiting gains and preserving the gap with frontier capability.
+
+Resilience jumps to 51.0, reflecting the full +5 bonus from the completed resilience sprint (category 6, large). Ai_safety gains +2, as broader monitoring discussions gain urgency and preliminary technical assessments are launched, though no new enforcement mechanism is active yet.
+
+Sovereignty holds at 24.0: +3 from the completed Tech Sovereignty Package (category 4), −1 from capability rise of 2.0, and no gain from semiconductor coordination, which did not yield tangible access this turn. Political capital rises to 41.0: portfolio charge of −6 clears with two completions (−3 each), yielding +5 from each finished measure, and a +1 discussion bonus for initiating formal scoping of a new response to systemic risks — consistent with early-stage engagement, not formal adoption. Public sentiment ticks up to 36.0 on visible progress and heightened public debate around AI risks.
+
+US_POSTURE: RETRENCHMENT

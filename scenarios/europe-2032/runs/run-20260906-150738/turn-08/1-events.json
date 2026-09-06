@@ -1,0 +1,26 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_laboratory_leak",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A major breach in a European AI lab's secure environment exposes early-stage agentic models and partial training data to open networks. The leak is not immediately weaponized but enables rapid replication of frontier-like reasoning in distributed clusters. Independent actors begin publishing novel exploits derived from the architecture within weeks.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

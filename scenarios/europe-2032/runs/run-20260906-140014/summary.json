@@ -1,0 +1,236 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 9,
+  "final_metrics": {
+    "ai_capability": 67.0,
+    "openweight_capability": 54.0,
+    "ai_safety": 17.0,
+    "resilience": 56.0,
+    "eu_ai_sovereignty": 21.0,
+    "eu_political_capital": 39.0,
+    "public_sentiment": 38.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 42.0,
+        "ai_safety": 32.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.5,
+        "openweight_capability": 44.0,
+        "ai_safety": 27.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 42.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 57.0,
+        "openweight_capability": 45.0,
+        "ai_safety": 25.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 59.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 22.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 25.0,
+        "eu_political_capital": 39.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 48.0,
+        "ai_safety": 23.0,
+        "resilience": 45.0,
+        "eu_ai_sovereignty": 24.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 6,
+      "metrics": {
+        "ai_capability": 62.5,
+        "openweight_capability": 50.0,
+        "ai_safety": 24.0,
+        "resilience": 48.0,
+        "eu_ai_sovereignty": 23.0,
+        "eu_political_capital": 47.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 7,
+      "metrics": {
+        "ai_capability": 64.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 22.0,
+        "resilience": 50.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 44.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 8,
+      "metrics": {
+        "ai_capability": 65.5,
+        "openweight_capability": 52.5,
+        "ai_safety": 22.0,
+        "resilience": 53.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 9,
+      "metrics": {
+        "ai_capability": 67.0,
+        "openweight_capability": 54.0,
+        "ai_safety": 17.0,
+        "resilience": 56.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 39.0,
+        "public_sentiment": 38.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "bio_uplift_findings",
+    "campaign_backlash",
+    "capability_jump",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_annulled",
+    "election_retrenchment",
+    "emergent_ai_driven_materials_breakthrough",
+    "emergent_cross_border_grid_failure",
+    "labour_displacement",
+    "openweight_frontier_release",
+    "taiwan_blockade",
+    "taiwan_tension_rise",
+    "us_china_agreement",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 2,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_backlash"
+    },
+    {
+      "turn": 4,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 4,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    },
+    {
+      "turn": 6,
+      "id": "taiwan_blockade"
+    },
+    {
+      "turn": 7,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 7,
+      "id": "us_china_agreement"
+    },
+    {
+      "turn": 7,
+      "id": "election_annulled"
+    },
+    {
+      "turn": 8,
+      "id": "emergent_cross_border_grid_failure"
+    },
+    {
+      "turn": 8,
+      "id": "emergent_ai_driven_materials_breakthrough"
+    },
+    {
+      "turn": 9,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 9,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 9,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 9,
+      "id": "labour_displacement"
+    }
+  ],
+  "last_updated": "2026-09-06T14:10:31.882687",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_ai_regulatory_framework_adoption",
+      "description": "Several non-EU European countries and Nordic partners begin adopting the EU's AI regulatory framework as a de facto standard for their own markets, citing interoperability and risk management coherence. This marks a shift in soft power, as the EU's approach gains traction beyond its borders despite limited sovereignty leverage.",
+      "first_turn": 9,
+      "last_turn": 9
+    },
+    {
+      "id": "emergent_global_ai_talent_shift",
+      "description": "A measurable redirection of global AI research talent begins toward EU-based institutions, driven by political instability in the US tech sector, export restrictions limiting collaboration, and increased funding for open research in Europe following the materials breakthrough. This trend, while nascent, signals a potential long-term correction in the EU's capability deficit.",
+      "first_turn": 9,
+      "last_turn": 9
+    }
+  ],
+  "completed_at": "2026-09-06T14:10:39.645115"
+}

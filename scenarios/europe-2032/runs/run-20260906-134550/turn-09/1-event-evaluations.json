@@ -1,0 +1,268 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.24,
+    "probability_samples": [
+      0.24,
+      0.24,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.01230140908568611,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6669462829553986,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.24666666666666667,
+    "probability_samples": [
+      0.14,
+      0.27,
+      0.33
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.14883036686269735,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.1,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.26154773827466316,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3519978869293393,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.013333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3707365616493118,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.12333333333333334,
+    "probability_samples": [
+      0.21,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5939996198700415,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.15333333333333335,
+    "probability_samples": [
+      0.12,
+      0.17,
+      0.17
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6891402111354955,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8178554159367971,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5851976452187827,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.18,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.09581591856802729,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.19,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9812851446330401,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.21078554033115116,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4554114943307034,
+    "triggered": false
+  },
+  {
+    "id": "emergent_synthetic_disinformation_wave",
+    "probability": 0.32666666666666666,
+    "emergent": true,
+    "description": "A coordinated campaign of AI-generated synthetic media continues to flood regional political discourse in three EU member states, featuring realistic but fabricated statements by national leaders endorsing extremist positions. The content spreads rapidly through decentralized messaging platforms, overwhelming fact-checking capacity. National electoral commissions issue emergency alerts, but public trust in digital information further erodes, especially in areas with low media literacy.",
+    "probability_samples": [
+      0.35,
+      0.28,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3593129660780203,
+    "triggered": false
+  },
+  {
+    "id": "emergent_municipal_oversight_network",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A grassroots network of municipal IT departments and open-source developers across mid-sized European cities continues to expand its collaborative AI resilience initiative, sharing threat models, defensive tools, and incident response playbooks. The network begins publishing open benchmarks for local government AI systems, gaining traction as a bottom-up standard. It operates outside formal EU structures but aligns with NIS3 principles, demonstrating scalable peer-to-peer coordination in the absence of top-down capacity.",
+    "probability_samples": [
+      0.25,
+      0.22,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5730069038638363,
+    "triggered": false
+  },
+  {
+    "id": "rsi_onset",
+    "probability": 0.11666666666666665,
+    "probability_samples": [
+      0.0,
+      0.35,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6455385223813112,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9884409032344151,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9098048825042424,
+    "triggered": false
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "description": "ASML management, under increasing pressure from EU governments and shareholders, begins to quietly resist U.S.-led export control escalations by delaying servicing and leveraging legal ambiguities in jurisdictional reach. This creates a de facto buffer in the semiconductor supply chain, giving the EU temporary breathing room to consolidate its own compute sovereignty efforts while avoiding direct confrontation with Washington.",
+    "emergent": true,
+    "id": "emergent_asml_resistance",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

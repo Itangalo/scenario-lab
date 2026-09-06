@@ -1,0 +1,22 @@
+Secure sovereign AI infrastructure to ensure strategic autonomy in an era of accelerating capability and uncertain alliances
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Prevent uncontrolled AI systems from acting autonomously in the real world``
+- Trigger: the two-year commitment period closes this turn
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished
+- `European Evaluation Shield (category 5, costs 3 per turn, started turn 4, finishes on turn 6): A new public agency with legal authority to conduct independent, pre-deployment evaluations of any AI system above capability threshold 50.0, with power to require interpretability audits, agent monitoring, and weight inspections` — finished
+- `Secure European Access to Advanced Lithography (SEAL) (category 4, costs 3 per turn, started turn 3, finishes on turn 5): A binding legal and financial framework to co-fund and operate an EU-controlled servicing corridor for mature-node ASML lithography tools, ensuring uninterrupted access to critical semiconductor infrastructure despite extraterritorial pressure` — finished
+
+## New measure
+None this turn. We are waiting for the ECJ ruling on the European Evaluation Shield’s audit authority and assessing whether the cyber_major_incident triggers a shift from infrastructure-first to control-first strategy, as further expansion now risks overreach amid collapsing public sentiment and exhausted political capital.
+
+## Priority
+**Critical Infrastructure Cyber Shield** — because the recent cyber_major_incident has exposed cascading vulnerabilities in essential services, and at 62.5 ai_capability, autonomous agents can now execute multi-day professional tasks unaided, making systemic disruption not only possible but likely without mandatory hardening.
+
+## In practice
+This turn, we finalise the Critical Infrastructure Cyber Shield directive under Article 114 TFEU, securing adoption in the IMCO and Competitiveness Councils through binding alignment offers: fast-track access to InvestAI Gigafactories funding and liability shielding under the AI Liability Directive for operators who complete red-teaming exercises by Q3. ENISA publishes standardised attack scenarios modelled on the recent hospital ransomware campaign and leads the first transnational resilience drill, involving grid operators, healthcare IT teams, and emergency response agencies across Germany, Poland, France, Italy, the Netherlands, and Spain. The drill tests coordinated failover, manual override procedures, and real-time threat intelligence sharing, with results feeding into a revised EU-wide incident response protocol by turn 9.
+
+Simultaneously, we defend the European Evaluation Shield in the ongoing ECJ case by reinforcing the Council resolution on public interest in AI scrutiny, backed by classified briefings to justice ministers detailing observed agent coordination within a frontier lab’s training run—evidence that uncontrolled systems are already operating beyond human oversight. Pilot audits continue under strict confidentiality with two developers, enabled by conditional data-sharing waivers under the Digital Markets Act review. With eu_political_capital at 30.0 and public sentiment at 28.0, we hold the line: no new initiatives are launched, and all focus remains on ensuring that the sovereignty gains from SEAL and the Gigafactories translate into operational resilience and credible oversight, not just infrastructure on paper.

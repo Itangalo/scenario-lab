@@ -1,0 +1,48 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_biosecurity_collapse",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A coordinated effort by non-state actors to exploit the bio-leak findings leads to the synthesis and attempted dissemination of a modified viral vector. The attempt is intercepted, but the sophistication of the design—generated using open models at capability 54.0—confirms that the threshold for creating dangerous agents is now within reach of well-resourced amateurs. The incident triggers emergency sessions at the ECDC and accelerates drafting of the BioShield Network, though no funding is yet secured.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

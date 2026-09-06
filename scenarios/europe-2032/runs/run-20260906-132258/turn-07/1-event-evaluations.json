@@ -1,0 +1,417 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7538893794593519,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9908130282033725,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23469622962855008,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.88122458190883,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5896002095655539,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.05745662873312951,
+    "triggered": true
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7631695727196436,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9246926712293861,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.280442361438226,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9526710977581572,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6711540025321491,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07758383542620761,
+    "triggered": true
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3064800343445667,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12342376562073554,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5104836070044008,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7277453295993068,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23523296003111005,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9678198625901427,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.01950706149998105,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19409273605904065,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6027792954458561,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.08325885054146942,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.31367728044239784,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.14837457330461634,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.02156748052630031,
+    "triggered": true
+  },
+  {
+    "description": "A coordinated campaign by municipal governments and regional authorities across several member states begins refusing permits for new AI data centres, citing energy strain, water use, and lack of local benefit. The movement is not centrally organised but feeds on shared templates and legal strategies, creating a de facto slowdown in hyperscaler expansion despite EU-level incentives. It gains traction in areas where public sentiment is below 40 and where national governments are seen as captured by tech interests.",
+    "emergent": true,
+    "id": "emergent_local_infrastructure_backlash",
+    "probability": 0.07666666666666667,
+    "probability_samples": [
+      0.23,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5734830998547066,
+    "triggered": false
+  },
+  {
+    "description": "An international consortium of academic labs, using only open-weight models and modest compute, replicates a recent frontier result in protein folding that was believed to require proprietary systems. The achievement is published in a preprint and verified independently, triggering debate about whether closed labs are still the necessary engines of progress. While not displacing the frontier, it strengthens arguments for open science and distributed innovation, and increases pressure on the EU to redirect funding toward open capabilities.",
+    "emergent": true,
+    "id": "emergent_open_science_breakthrough",
+    "probability": 0.06333333333333334,
+    "probability_samples": [
+      0.19,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6139060646610692,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated effort among European research universities, mid-sized tech firms, and national AI offices forms an underground network to replicate and distribute frontier model capabilities using distributed compute and model-splitting techniques. The network emerges in response to the EU's exclusion from frontier access and the security-driven closure of US labs. It operates in legal grey zones, justified as academic collaboration, and begins producing usable derivatives of models at capability ~70. This development increases pressure on both US export policy and EU sovereignty strategy.",
+    "emergent": true,
+    "id": "emergent_distributed_frontier_network",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coalition of industrial unions, public service associations, and municipal governments begins organizing a transnational 'AI Accountability Compact' demanding binding oversight of public-sector AI deployments, transparency in algorithmic decision-making, and profit-sharing mechanisms from private AI firms operating in Europe. The movement gains traction due to stagnant public sentiment, visible job displacement, and the failure of existing regulatory measures to deliver tangible protections. It threatens to disrupt planned AI integration in healthcare and administration unless concessions are made.",
+    "emergent": true,
+    "id": "emergent_accountability_compact",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coordination framework emerges among the EU and other middle powers holding key nodes in the AI supply chain — including the Netherlands, South Korea, and Taiwan — to align export controls, jointly negotiate compute access, and pool evaluation capacity. No sovereignty is ceded, but together they can withhold critical capabilities even the great powers depend on. This marks a shift from dependency to collective leverage.",
+    "emergent": true,
+    "id": "emergent_middle_power_initiative",
+    "probability": 0.07666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.23
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Following the biosecurity leak and the surge in AI capability, a group of EU member states led by Germany and France unilaterally accelerates funding for sovereign AI infrastructure, bypassing stalled EU mechanisms. They announce a joint 'AI Sovereignty Compact' with binding commitments to onshore critical training compute and model development within the next 18 months. This creates a de facto core within the Union, increasing pressure on laggards and deepening institutional fragmentation.",
+    "emergent": true,
+    "id": "emergent_sovereignty_compact",
+    "probability": 0.06333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.19
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

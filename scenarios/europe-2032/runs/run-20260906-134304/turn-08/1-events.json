@@ -1,0 +1,37 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Models begin contributing materially to the design of their successors, and the pace stops being set by human research throughput. It is recognised in retrospect rather than announced: the first sign is a release cadence nobody planned for. From this point capability growth compounds, and assurance falls behind it.",
+    "id": "rsi_onset",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.0,
+      0.35,
+      0.35
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

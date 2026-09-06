@@ -1,0 +1,21 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`
+- `European Evaluation Shield (category 5, costs 3 per turn, started turn 4, finishes on turn 6): A new public agency with legal authority to conduct independent, pre-deployment evaluations of any AI system above capability threshold 50.0, with power to require interpretability audits, agent monitoring, and weight inspections`
+- `Secure European Access to Advanced Lithography (SEAL) (category 4, costs 3 per turn, started turn 3, finishes on turn 5): A binding legal and financial framework to co-fund and operate an EU-controlled servicing corridor for mature-node ASML lithography tools, ensuring uninterrupted access to critical semiconductor infrastructure despite extraterritorial pressure` — finished
+- `Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 6, finishes on turn 7): A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — finished
+
+## New measure
+None this turn. The portfolio is at capacity, with three large measures still in flight and political capital constrained; launching another large initiative now would risk systemic overload and failure across all fronts.
+
+## Priority
+**European Evaluation Shield** — because the loss_of_control_incident this turn proves that evaluation is no longer a procedural safeguard but an operational necessity, and because the legal challenge must now be met not by retreat but by demonstration: we will show that independent public oversight can detect and contain emergent risks before they cascade, even as capability reaches 60.0 and agentic systems begin to act beyond human timeframes.
+
+## In practice
+This turn, we finalise the operational structure of the European Evaluation Shield, appointing its executive board from national AI safety leads and top academic researchers in interpretability and agent monitoring. Despite the ongoing legal challenge at the ECJ, we invoke Article 16 TFEU to justify pilot audits under emergency cybersecurity powers, conducting confidential evaluations with two frontier developers on systems exhibiting long-horizon planning and memory persistence. These audits focus on whether current safeguards can meaningfully constrain autonomous systems now completing multi-day professional tasks — a capability threshold we have now crossed.
+
+Simultaneously, we complete the rollout of the Emergency Sovereign Compute Mobilisation, finalising agreements with Germany and Ireland to host EU-sovereign nodes under binding legal jurisdiction, open audit access, and 40% reserved capacity for red-teaming, crisis simulation, and continuity-of-government functions. The European Investment Bank releases pre-approved financing packages, and non-compliant member states are formally notified that delays in permitting or grid access will affect recovery fund disbursements under the European Semester. This is not coercion — it is the minimum condition for survival in a world where compute is power and access can be throttled overnight.
+
+The InvestAI Gigafactories programme reaches completion this turn, with site selections finalised and construction contracts awarded. While the physical buildout will take years, the legal and financial architecture is now in place, anchoring future capacity to EU jurisdiction. With SEAL now also complete, we have secured both the upstream (lithography access) and the downstream (compute deployment), but the gap in the middle — sovereign model development and control — remains exposed, and it is here that the Evaluation Shield must now prove its worth.

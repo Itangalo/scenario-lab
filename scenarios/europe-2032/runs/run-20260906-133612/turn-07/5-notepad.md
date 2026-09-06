@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories (finished), Institutional Integrity Audit −3, Emergency Observability Mandate −2, Sovereign Verification Regime −3, priority −1 = −9  
+PROPOSAL BONUS: Emergency Observability Mandate (cat 5, small) +5 — responds directly to cyber_major_incident and loss_of_control_incident within three turns, both severe and unmitigated  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 16 last turn, InvestAI Gigafactories finishes t7 +5, capability rose 3.0 −1 = 20  
+US_POSTURE: RETRENCHMENT  
+EMERGENT: `emergent_european_ai_commons` -- first noted turn 7, listed in 1 turn(s) so far: A coordinated effort among EU-aligned research institutions and public labs begins pooling open-weight models, evaluation frameworks, and defensive AI tooling into a shared, sovereign European AI commons. The initiative emerges in response to repeated access denials and audit failures, and gains momentum as member states quietly redirect decommissioned hardware. It is not state-run but receives tacit support from national science agencies.

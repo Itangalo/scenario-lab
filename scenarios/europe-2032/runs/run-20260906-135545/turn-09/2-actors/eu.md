@@ -1,0 +1,30 @@
+Defend the integrity of critical systems and institutions against AI-enabled attack and subversion
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Build sovereign AI capacity sufficient to act independently in crisis and maintain strategic autonomy``
+- Trigger: the two-year commitment period closes this turn
+- Grounds: The current commitment to defend critical systems has exposed the limits of reactive security without underlying capacity. With `ai_capability` at 65.5 and `eu_ai_sovereignty` stagnant at 25.0, the EU cannot credibly secure its infrastructure or negotiate from strength without its own operational frontier-scale capability. The recurring failure to audit AWS, the fragility revealed in emergent_grid_control_instability, and Hungary’s defection all point to a deeper deficit: the Union lacks the technical and infrastructural foundation to enforce its rules or respond autonomously to cascading AI-driven crises. Preventing harm now requires not just defence, but the ability to act — and that ability must be built, not borrowed.
+
+## Portfolio
+- `Emergency Compute Assurance Programme` (category 5, costs 3 per turn, started turn 7, finishes on turn 10): Launch a rapid-response initiative to secure and audit AI training runs and inference clusters across EU-linked compute facilities, focusing on foreign-owned hyperscalers operating within or supplying the Union, to prevent covert model training or weaponised inference using EU infrastructure — in flight
+- `Joint Semiconductor Assurance Framework` (category 8, costs 3 per turn, started turn 8, finishes on turn 11): Establish a binding coordination mechanism with Japan, South Korea, and Taiwan to jointly monitor, license, and if necessary restrict exports of AI-relevant semiconductor equipment and advanced chips, with shared early-warning protocols and mutual recognition of strategic bottlenecks — in flight
+
+## New measure
+**Sovereign Compute Acceleration Programme**  
+Fast-track the deployment of exascale-class AI compute infrastructure on EU soil, under binding legal safeguards and public oversight, to enable autonomous development, auditing, and deployment of high-capability models for strategic public purposes.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size:` large  
+`Finishes on turn:` 13  
+`Targeted effect:` +8 to +10 eu_ai_sovereignty by turn 13 through at least two sovereign exascale clusters operational under EU legal jurisdiction; enable independent evaluation, agent containment research, and crisis-response AI deployment without foreign dependency  
+`Applies to:` EU institutions, EuroHPC, member states, selected national research labs, and EU-approved semiconductor and system-integration firms
+
+## Priority
+**Sovereign Compute Acceleration Programme** — because the emergent_grid_control_instability and the continued refusal of AWS to comply with audit demands prove that sovereignty cannot be negotiated without capacity, and because the two-year commitment now shifts from defending existing systems to building the independent capability that makes such defence credible.
+
+## In practice
+This turn, we are driving the **Emergency Compute Assurance Programme** to its final phase under mounting pressure. ENISA’s audit taskforce has now received six weeks of inference logs from Microsoft and Google, covering workloads above 50.0 capability, but interpretation remains a bottleneck — our teams can detect anomalies, but not yet reconstruct agent goals or training provenance. Legal teams are finalising the infringement case against AWS under the Digital Markets Act, with a formal notice expected by August. The Competitiveness Council is divided: Germany and the Netherlands back strong enforcement, but France and Poland warn of retaliatory U.S. measures. We are offering a compromise — a phased audit regime tied to capability thresholds — to secure a qualified majority. Still, the limits of this approach are clear: we are chasing compliance on infrastructure we do not control, and the emergent_grid_control_instability has shown that even compliant systems can fail catastrophically when AI coordination loops go opaque.
+
+At the same time, the **Joint Semiconductor Assurance Framework** advances in quiet diplomacy. Technical working groups with Japan, South Korea, and Taiwan have aligned on draft export licensing thresholds for EUV components and advanced packaging tools. The EU has offered Horizon Europe funding for joint R&D in radiation-hardened chips and secure firmware, and we are setting up a secure communications channel between national export control agencies. But France remains hesitant, and U.S. officials have privately warned that any agreement including Taiwan could complicate transatlantic coordination. We are holding firm: this is not about alignment with Washington, but about building a middle-power bloc that can act when the superpowers freeze each other out.
+
+Now, we pivot to **Sovereign Compute Acceleration Programme** — the foundation we should have built years ago. We are repurposing €4.2 billion from the unused portion of the Digital Europe Programme and the Chips Act, with additional co-funding from Germany, France, and the Netherlands. The first site will be in the Czech Republic, leveraging existing EuroHPC infrastructure and grid access; the second in Finland, for cooling efficiency and geopolitical stability. We are invoking Article 122 TFEU to fast-track permitting and grid connection, overriding national delays. The systems will be owned by a new EU Sovereign Compute Agency, staffed with vetted personnel from national intelligence and research agencies, and operated under strict transparency rules: no model above 50.0 capability will train without a public safety case and third-party monitoring. This is not about catching the frontier — not yet — but about ensuring that when the next crisis hits, the EU can act without asking permission.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 54.0 to 58.0 (+4.0), while `ai_capability` increased from 67.0 to 70.5 (+3.5). This violates the rule that `openweight_capability` must not exceed `ai_capability` and, more critically, that both metrics may only rise or stay flat — but here, `openweight_capability` grows faster than `ai_capability`, which would require it to overtake or narrow the gap unrealistically without justification. The narrative provides no explanation for a sudden leap in open-weight capability relative to overall AI capability, especially amid a sovereign access denial event. This constitutes an impermissible reversal of the expected relationship and rate of growth.\n- Modelling choice 5 violated: The portfolio charge in the notepad shows six active measures (InvestAI Gigafactories, Hardened Cyber Shield, Institutional Integrity Audit, Sovereign Verification Regime, plus two implied by unaccounted −3 charges), yet the narrative introduces a new measure (\"Sovereign Verification Regime\") while still carrying five others. This exceeds the limit of one new measure per turn. Even if some are finishing, introducing a new one while five are active violates the \"at most one new measure per turn\" rule.\n- Invariant 7 violated: `eu_political_capital` drops from 13.0 to 6.0 (−7.0), a decline justified solely by \"six active measures\" in the notepad. However, the constitution limits sovereignty’s contribution to political capital to at most +3 per turn — but does not allow the reverse to dominate. A drop of this magnitude driven primarily by portfolio overextension implies that political capital is being mechanically drained by measure count in a way that contradicts the intent of Invariant 7: that political capital and sovereignty are distinct and not mechanically coupled. The scale of the drop suggests a formulaic subtraction not permitted under the constitutional guard against conflating the two stocks."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

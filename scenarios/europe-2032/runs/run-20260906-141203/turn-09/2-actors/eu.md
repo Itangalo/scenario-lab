@@ -1,0 +1,21 @@
+Defend the integrity of critical systems and institutions against AI-enabled attack and subversion
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Defend the integrity of critical systems and institutions against AI-enabled attack and subversion``
+- Trigger: the two-year commitment period closes this turn
+- Grounds: The threat landscape continues to evolve along the trajectory we identified: open-weight models at 53.0 now enable distributed, adaptive cyber threats that can target critical infrastructure without state sponsorship, while closed-system capability advances compound the risk of coordinated, high-scale incidents. Our work on cross-border response, compute assurance, and open-source monitoring has strengthened resilience, but the core challenge — preserving the functional integrity of essential systems — remains unresolved and urgent. Renewing this commitment reflects continuity, not inertia: we are doubling down because the needle is moving, but not far enough.
+
+## Portfolio
+- `Open-Source Cyber Threat Monitoring and Containment Framework` (category 6, costs 2 per turn, started turn 8, finishes on turn 9): Establish a coordinated, EU-wide detection and response system for AI-powered cyber tools emerging from open-source ecosystems, focusing on early identification, containment, and attribution of emergent threats like those seen in municipal network breaches — **finished this turn**
+- `AI Incident Escalation Protocol and Cross-Border Response Network` (category 6, costs 2 per turn, started turn 9, finishes on turn 10): Establish binding procedures for real-time information sharing, joint attribution, and coordinated countermeasures between member states in the event of a Category 3 or higher AI-enabled incident, integrating with the newly formed joint cyber command
+
+## New measure
+None this turn. — waiting for the results of *CyberShield 2030* and the integration audit of the Open-Source Cyber Threat Monitoring Framework before deciding whether to scale or redirect.
+
+## Priority
+**AI Incident Escalation Protocol and Cross-Border Response Network** — because the real test of our resilience is not detection, but coordination under pressure, and this turn’s exercise will reveal whether we can act faster than the attack cycle, especially with Hungary and Poland still partially outside the liability shield.
+
+## In practice
+This turn, we are operationalising the AI Incident Escalation Protocol through the Permanent Council, using Article 88 TFEU as the legal basis for civil protection coordination and Article 114 to harmonise minimum response obligations across the internal market. ENISA, Europol’s EC3, and the joint cyber command are conducting the first live-fire exercise, *CyberShield 2030*, simulating a cascading AI-driven grid disruption across Belgium, the Netherlands, and Luxembourg. The scenario assumes adversarial use of open-weight agents to manipulate load-balancing algorithms and spoof maintenance alerts — a direct reflection of the anomalies reported in France and Italy. We are offering full access to EU classified threat feeds and mutual legal assistance in attribution in exchange for real-time data sharing, and we are fast-tracking the cyber reserve corps to staff the exercise and build trust with reluctant member states.
+
+At the same time, we are closing out the Open-Source Cyber Threat Monitoring Framework. The ENISA Hub now receives real-time telemetry from ten national CERTs, and our AI models have flagged two novel exploit chains — one targeting industrial control systems via falsified package repositories, the other using fine-tuned language models to generate convincing phishing payloads in local languages. Integration with critical infrastructure remains at 40%, so we are tying NIS2 compliance to Digital Europe Programme disbursements, creating a financial incentive for faster adoption. Horizon Europe pilots on automated code-signing are underway in Germany and Finland, but we are holding off on broader mandates until we see how the *CyberShield* exercise exposes gaps in detection versus response. The framework has delivered value, but its limitations are now as instructive as its successes.

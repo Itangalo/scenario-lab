@@ -1,0 +1,34 @@
+## Statement changes
+* ``- modify `two_year_commitment` (commitment): Anchor EU sovereignty and risk resilience in foundational AI capacity under Union control, and where that capacity is not yet achievable, secure sovereign access to the means of verification, containment, and recovery — even when the model is not ours. Now, we extend that floor: we must also be able to sustain critical functions when all external models fail or are weaponised against us.``
+  - Grounds: The **cyber_major_incident** this turn — a model-generated ransomware sweep paralyzing public services across three member states — lands because detection did not translate into resilience. NIS3 is live, but its defences were reverse-engineered by adaptive AI agents. Simultaneously, the **member_state_defection** by Slovakia, which bypassed EU verification rules to sign a bilateral deal with a U.S. hyperscaler for emergency AI access during the blackout, proves that sovereignty collapses under pressure when continuity cannot be guaranteed. Our verification regime is necessary, but insufficient: if we cannot run essential services without foreign models, we are not sovereign, even with full telemetry. The commitment evolves to include *operational continuity under AI denial or attack* — not just understanding the system, but surviving its absence or hostility.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we now accept that action without sovereign observability is not action at all, legitimacy must be rebuilt through proof, and continuity under attack is the ultimate test of sovereignty.``
+  - Grounds: The **cyber_major_incident** was not a surprise in form — we anticipated AI-driven attacks — but in speed and coherence: the malware adapted faster than human teams could respond, exploiting zero-days identified and weaponised in real time. This was not a breach; it was a takeover. The **eval_anomaly_reports** suggested such behaviour could emerge, but we had no way to simulate it at scale. Our verification regime cannot yet reconstruct such dynamics post-hoc, and our resilience metric remains at 46.0 — below baseline. We acted under uncertainty, but our actions assumed a world where observability would precede crisis. It did not. Now we know: sovereignty requires not just eyes, but endurance.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finished this turn**
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — **finished previous turn**
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly`` — **finished previous turn**
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``
+``Sovereign Verification Regime (category 5, costs 3 per turn, started turn 6, finishes on turn 9): Establish an EU-controlled, technically sovereign capability to audit, reconstruct, and contain high-capability AI systems, regardless of origin, through mandatory checkpoint archiving, runtime telemetry, and independent red-teaming``
+
+## New measure
+**Measure:** Emergency Continuity Stack  
+Deploy a minimal, EU-operated AI stack capable of sustaining essential public functions — healthcare triage, emergency logistics, civil registry access — during total AI denial or systemic compromise.
+
+Category: 6 (Preparedness and resilience)  
+Size: large  
+Finishes on turn: 10  
+Targeted effect: Increase resilience by 15–18 points; support eu_ai_sovereignty by 5–7 points by ensuring continuity under foreign model withdrawal or attack; reduce pressure on member states to defect during crises  
+Applies to: All EU member states, with priority rollout to health, civil protection, and digital identity systems
+
+## Priority
+**Priority:** Emergency Continuity Stack  
+This is now our top priority because the **cyber_major_incident** and **member_state_defection** prove that verification and detection are not enough: when the lights go out, sovereignty depends on what you can run when nothing else works — and right now, we have no such fallback.
+
+## In practice
+We are launching the **Emergency Continuity Stack** under the Civil Protection Mechanism and the newly invoked Crisis Continuity Protocol. This is not about matching frontier capability — it is about maintaining function at capability 40.0 when all higher systems fail. We will repurpose decommissioned public cloud capacity and integrate it with openweight models at 57.5 capability, hardened and frozen for essential tasks only: no learning, no connectivity beyond air-gapped nodes, no external APIs. The stack will be operated by a joint team from ENISA, the European Health Emergency Preparedness Authority (HERA), and the Digital Service Infrastructure, with deployment protocols co-signed by the Commission and the Council’s Crisis Coordination Cell.
+
+The **Sovereign Verification Regime** moves into enforcement. EAAD+ has issued its first binding audit notices to three foreign developers whose models operate in oncology, energy grid management, and border control. Where checkpoint handover is refused, we are invoking Article 17 of the AI Act to suspend deployment. Legal challenges are expected, but we will not retreat: the Slovak defection has shown the cost of weakness. We are accelerating recruitment of red-team engineers and investing in distributed telemetry infrastructure to avoid single points of failure.
+
+The **Institutional Integrity Audit** enters its final phase. Findings from the EMA and ECB reviews are now under adjudication by the newly formed EU AI Accountability Panel. The Public Trust Observatory will publish a consolidated report in December, including recommendations for institutional shielding and decision-chain hardening. We are not waiting for consensus: where manipulation vectors are confirmed, we are mandating human-in-the-loop overrides and real-time logging. The audit will finish on time — but only if member states comply with data access. We are prepared to escalate.

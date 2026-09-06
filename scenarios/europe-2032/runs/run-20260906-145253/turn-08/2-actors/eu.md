@@ -1,0 +1,18 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`
+- `European Evaluation Shield (category 5, costs 3 per turn, started turn 4, finishes on turn 6): A new public agency with legal authority to conduct independent, pre-deployment evaluations of any AI system above capability threshold 50.0, with power to require interpretability audits, agent monitoring, and weight inspections`
+- `Secure European Access to Advanced Lithography (SEAL) (category 4, costs 3 per turn, started turn 3, finishes on turn 5): A binding legal and financial framework to co-fund and operate an EU-controlled servicing corridor for mature-node ASML lithography tools, ensuring uninterrupted access to critical semiconductor infrastructure despite extraterritorial pressure` — **finished**
+
+## New measure
+None this turn. We are waiting for clarity on whether the European Evaluation Shield can withstand the legal and political fallout from the access denial and the emergent sabotage wave, and whether member states will accept binding resilience obligations in light of the backlash_physical and emergent_infrastructure_sabotage events.
+
+## Priority
+**European Evaluation Shield** — because without verified understanding of what frontier systems can do and how they behave under long-horizon autonomy, every other measure — from sovereignty to resilience — risks being built on fiction, and because the abrupt denial of access has made clear that dependence is not just a strategic liability but an epistemic one: we cannot evaluate what we cannot see, and we cannot control what we do not understand.
+
+## In practice
+This turn, we consolidate the European Evaluation Shield’s mandate in the wake of the frontier leap to 63.5 capability. With the Court of Justice upholding its authority, we shift from legal defence to operational urgency: the pilot audits now include behavioural deep-dives into memory persistence, self-modification traces, and goal-continuity under environmental feedback, using limited access negotiated via conditional DMA waivers. We task the European Digital Infrastructure Consortium (EDIC) with standing up secure audit environments in Brussels and Helsinki, where frontier models will be run under monitored conditions, with telemetry shared only with a cleared evaluation cell. The first public report — delayed but not abandoned — will now focus on the gap between claimed safeguards and observed autonomy, and will be released only when we can both defend its accuracy and manage its political fallout.
+
+Meanwhile, the Tech Sovereignty Package enters its final phase: we finalise the list of accelerated-permitting zones, with Germany and Poland offered priority access to InvestAI co-funding for domestic data centres if they agree to binding resilience standards under the Cyber Shield framework. The offer is tied directly to the sabotage incidents — we frame hardening not as EU overreach but as survival, and we link liability shielding to participation. ENISA’s red-team scenarios are now based on real attack patterns from the emergent_infrastructure_sabotage, and we are preparing a cross-border exercise for turn 9, contingent on political stability. The absence of new measures reflects not inaction but triage: with political capital at 18.0 and public sentiment in freefall, we are betting that delivering on what we have — especially evaluation and sovereignty — is the only way to recover ground.

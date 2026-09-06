@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: European AI Emergency Response Corps −3, Secure Open-Source AI Research Access Framework −3, priority −1 = −7  
+PROPOSAL BONUS: Secure Open-Source AI Research Access Framework (cat 5, large) +3 — responds directly to emergent_biosecurity_collapse, severe and recent  
+LEGITIMACY LENDS: none (capital 10.0 < sentiment 35.0)  
+SOVEREIGNTY: 15.0 last turn, InvestAI Gigafactories finishes t7 +5, capability rose 4.0 ≥2 −1, no capacity event = 17.0  
+US_POSTURE: CONSOLIDATION  
+EMERGING DEVELOPMENTS: `emergent_sovereignty_crisis` -- first noted turn 7, listed in 1 turn(s) so far: With the U.S. tightening access and EU sovereignty at 15.0, a group of member states formally requests emergency sovereign compute allocation from the European AI Emergency Response Corps. The request cannot be fulfilled due to incomplete ratification and lack of operational capacity, exposing a critical gap in EU readiness. The episode fuels internal criticism of the Union's strategic paralysis and prompts emergency talks on fast-tracking the Tech Sovereignty Package, though political capital remains too low for decisive action.

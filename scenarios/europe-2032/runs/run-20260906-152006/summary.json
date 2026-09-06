@@ -1,0 +1,235 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 9,
+  "final_metrics": {
+    "ai_capability": 72.0,
+    "openweight_capability": 59.0,
+    "ai_safety": 16.0,
+    "resilience": 38.0,
+    "eu_ai_sovereignty": 12.0,
+    "eu_political_capital": 2.0,
+    "public_sentiment": 15.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 34.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 43.0,
+        "ai_safety": 32.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 20.0,
+        "eu_political_capital": 37.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 57.0,
+        "openweight_capability": 44.5,
+        "ai_safety": 29.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 18.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 30.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 60.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 22.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 15.0,
+        "eu_political_capital": 25.0,
+        "public_sentiment": 25.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 62.0,
+        "openweight_capability": 48.0,
+        "ai_safety": 24.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 14.0,
+        "eu_political_capital": 17.0,
+        "public_sentiment": 25.0
+      }
+    },
+    {
+      "turn": 6,
+      "metrics": {
+        "ai_capability": 69.0,
+        "openweight_capability": 52.0,
+        "ai_safety": 27.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 13.0,
+        "eu_political_capital": 14.0,
+        "public_sentiment": 25.0
+      }
+    },
+    {
+      "turn": 7,
+      "metrics": {
+        "ai_capability": 70.0,
+        "openweight_capability": 56.0,
+        "ai_safety": 24.0,
+        "resilience": 39.0,
+        "eu_ai_sovereignty": 11.0,
+        "eu_political_capital": 9.0,
+        "public_sentiment": 20.0
+      }
+    },
+    {
+      "turn": 8,
+      "metrics": {
+        "ai_capability": 71.0,
+        "openweight_capability": 58.0,
+        "ai_safety": 21.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 12.0,
+        "eu_political_capital": 5.0,
+        "public_sentiment": 20.0
+      }
+    },
+    {
+      "turn": 9,
+      "metrics": {
+        "ai_capability": 72.0,
+        "openweight_capability": 59.0,
+        "ai_safety": 16.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 12.0,
+        "eu_political_capital": 2.0,
+        "public_sentiment": 15.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "bio_incident",
+    "bio_uplift_findings",
+    "campaign_security_hawk",
+    "capability_jump",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_annulled",
+    "election_consolidation",
+    "emergent_disinfo_election_wave",
+    "eu_frontier_access_denied",
+    "labour_displacement",
+    "member_state_defection",
+    "openweight_frontier_release",
+    "safety_breakthrough",
+    "supply_chain_coercion",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 3,
+      "id": "bio_incident"
+    },
+    {
+      "turn": 3,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 3,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 3,
+      "id": "emergent_disinfo_election_wave"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 4,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 5,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 5,
+      "id": "election_consolidation"
+    },
+    {
+      "turn": 6,
+      "id": "capability_jump"
+    },
+    {
+      "turn": 6,
+      "id": "safety_breakthrough"
+    },
+    {
+      "turn": 6,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 7,
+      "id": "labour_displacement"
+    },
+    {
+      "turn": 7,
+      "id": "eu_frontier_access_denied"
+    },
+    {
+      "turn": 9,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 9,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 9,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 9,
+      "id": "election_annulled"
+    }
+  ],
+  "last_updated": "2026-09-06T15:27:49.290151",
+  "status": "completed",
+  "emerging_events": [],
+  "completed_at": "2026-09-06T15:27:54.817961"
+}

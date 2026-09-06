@@ -1,0 +1,5 @@
+The EU formally abandons the Sovereign AI Core Programme and cancels the Resilient Fallback AI Network due to fiscal resistance and lack of deployment. In response, the Commission launches the Fallback Demonstration Pilot—a limited deployment of interpretable AI using open-weight models (capped at 45.0) on commodity hardware across three regions, funded by repurposed capital (€1.2bn) and bypassing Council approval. The pilot aims for proof of operational continuity by mid-2031 but yields no immediate resilience gain.
+
+US export controls escalate further, now delaying servicing of existing EU AI clusters and restricting ASML maintenance of older lithography tools, constituting supply chain coercion that undermines EU semiconductor reliability. These actions deepen Europe’s strategic dependency and degrade operational capacity.
+
+Public sentiment remains stagnant at 23.0, reflecting widespread disillusionment. Open-weight capabilities hold at 45.0 due to constrained scaling. Unconfirmed reports of a European neuromorphic chip and election interference via synthetic media circulate, but no coordinated action is taken.

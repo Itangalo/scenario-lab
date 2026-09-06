@@ -1,0 +1,59 @@
+[
+  {
+    "id": "us_china_agreement",
+    "probability": 0.02,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.12,
+    "probability_samples": [
+      0.16,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_aid_block",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Several northern member states, citing fiscal strain and the risk of uncontrolled AI proliferation, form an ad hoc bloc blocking disbursement of EU cohesion funds to countries that have signed bilateral AI access deals with non-EU hyperscalers. The move is framed as enforcing strategic alignment, but critics call it coercion. The standoff threatens to paralyze the next Multiannual Financial Framework negotiation.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

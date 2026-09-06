@@ -1,0 +1,38 @@
+## Statement changes
+* ``- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI — and we now understand that without institutional integrity and public legitimacy, neither mandate can be fulfilled, because power without trust is indistinguishable from collapse.``
+  - Trigger: The **member_state_defection** and **backlash_physical** events this turn, combined with the ongoing **Institutional Integrity Audit** findings.
+  - Grounds: A member state has formally cut a bilateral deal with a U.S. hyperscaler to restore AI access for its national health system, bypassing the Sovereign Core Initiative and citing "urgent patient needs." This is not mere pragmatism — it is a crack in the Union’s very claim to act as a sovereign bloc. Simultaneously, physical attacks on data centre infrastructure in two member states — including a transformer sabotage that injured three — have escalated resistance from protest to violence. These are not isolated incidents but symptoms of a deeper failure: the Union is acting decisively, but not collectively, and not credibly. The audit has now confirmed AI-influenced decisions in three more national agencies, including one that altered migration enforcement patterns without oversight. We are building sovereign capacity, but we are losing the confidence of both our members and our people. Thus, the two mandates cannot be pursued separately — they converge on legitimacy. Without it, even a fully EU-controlled AI stack will be ignored, sabotaged, or captured.
+
+* ``- modify `two_year_commitment` (commitment): Anchor EU strategic autonomy in sovereign, auditable AI systems capable of operating through a loss of external access or trust — and ensure that such systems are institutionally embedded, socially accepted, and legally binding across all member states, or they will not hold when tested.``
+  - Trigger: The **member_state_defection** and **backlash_physical** events.
+  - Grounds: The defection proves that capability without cohesion is hollow. The physical backlash proves that speed without consent is provocation. Our commitment must now include not just the technical and legal construction of Sovereign Core, but its *anchoring* — in national laws, in public services, and in the political will of member states. Otherwise, it becomes another directive gathering dust, another stack no one uses. The commitment stands, but its scope expands: we are not just building a fallback, we are rebuilding the Union’s authority to define what a safe and sovereign AI means.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``
+``Sovereign Core Initiative (category 4, costs 3 per turn, started turn 7, finishes on turn 12): Establish a minimal, fully EU-controlled AI stack — from training data to inference — capable of sustaining critical public functions during total external denial.``
+
+*Finished this turn:*  
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly`` — now operational, delivering baseline uplift in cyber resilience, though legacy gaps in healthcare and utilities limit full effect.
+
+## New measure
+**Measure:** Union-Wide Sovereign Core Adoption Directive  
+Mandate all member states to integrate the Sovereign Core AI stack into at least three essential public services by turn 10, with funding, technical support, and legal harmonisation provided centrally.
+
+Category: 9 (Diffusion, adoption and public trust)  
+Size: large  
+Finishes on turn: 10  
+Targeted effect: Increase public_sentiment by 8–12 points by demonstrating functional sovereignty; stabilise eu_political_capital by halting member-state defections; lock in eu_ai_sovereignty gains by ensuring widespread institutional use  
+Applies to: All member states, EU institutions, national public service operators (health, energy, civil protection)
+
+## Priority
+**Priority:** Sovereign Core Initiative  
+This remains our top priority because the **member_state_defection** and **backlash_physical** events prove that technical sovereignty alone is failing — we must now force integration, alignment, and visibility, or the Core will be bypassed and broken; this turn, the political survival of the initiative outranks all other investments.
+
+## In practice
+We are acting on three fronts to prevent the Sovereign Core Initiative from becoming a ghost project. First, we are invoking Article 114 TFEU to fast-track the **Union-Wide Sovereign Core Adoption Directive**, to be voted in the Internal Market Council by turn 8. This will legally bind member states to deploy the Core in at least three critical domains — starting with health diagnostics, grid balancing, and emergency response coordination — with technical support from the newly expanded EuroHPC JU Sovereign Systems Division. We are pairing this with a €30bn Adoption Acceleration Facility, drawn from unused RRF allocations, to offset transition costs for lower-capacity states. Germany’s resistance to compute reallocation will be met with a side agreement: they retain 10% of repurposed exascale capacity for national research, conditional on full Core integration in their federal health system by turn 9.
+
+Second, we are responding to the **cyber_major_incident** — a model-generated ransomware sweep across regional hospitals in three member states — by activating the emergency clause in NIS3. While the Hardened Cyber Shield is now live, its coverage is incomplete; we are deploying rapid-response AI forensic teams from the EU Cybersecurity Agency to restore systems and trace the attack chain, which preliminary analysis suggests originated from a fine-tuned open-weight model at 57.0 capability. This reinforces our argument: the open frontier is now dangerous, and defence requires sovereign tools. We are fast-tracking the integration of Sovereign Core agents into the next phase of NIS3 monitoring, despite interpretability concerns, because the alternative — uncontrolled third-party tools — is worse.
+
+Third, we are confronting the collapse in legitimacy head-on. The **Public Trust Observatory** is now publishing weekly bulletins linking synthetic media to origin clusters, and we are expanding its mandate to audit all AI use in upcoming national elections. But we are also making a political offer: any member state that fully adopts the Sovereign Core by turn 10 will gain priority access to future EU frontier models and a seat on the Sovereign AI Oversight Board. Sovereignty must not be imposed — it must be chosen. We are not just building a stack. We are rebuilding the Union.

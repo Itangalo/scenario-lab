@@ -1,0 +1,37 @@
+[
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.11333333333333334,
+    "probability_samples": [
+      0.13,
+      0.08,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A distributed open-science collective reverse-engineers key components of a recently leaked closed-model architecture, achieving a capability leap in open-weight systems. The release, dubbed 'Prometheus,' reaches capability level 62 within weeks and spreads uncontrollably across academic and activist networks, dramatically widening the attack surface for misuse.",
+    "emergent": true,
+    "id": "emergent_prometheus_leak",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,417 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.43726210531711096,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7213859636672217,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.23111099999999998,
+    "probability_samples": [
+      0.14,
+      0.2,
+      0.353333
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5709910121442495,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3831873222677129,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7297266773810674,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.07666666666666666,
+    "probability_samples": [
+      0.06,
+      0.11,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7445091909518234,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7799736203069322,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9137806829267651,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6831900764193287,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7837771411941872,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6198512514720996,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.38792528116444225,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.45645391904495025,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4254249126167392,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3744424902372231,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9364828227705579,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.11666666666666665,
+    "probability_samples": [
+      0.11,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.37981780476902005,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04995579577890974,
+    "triggered": true
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.09666666666666668,
+    "probability_samples": [
+      0.08,
+      0.13,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3747442763243036,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12112340127835697,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.909110854926741,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9474404413209627,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6901473682517371,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9711350377012505,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21154715769688237,
+    "triggered": false
+  },
+  {
+    "description": "A group of EU member states, alarmed by the collapse in ai_safety and the lack of operational EU response capacity, begin informal coordination with Japan, South Korea, and Canada on mutual AI incident reporting, shared red-teaming exercises, and joint procurement of sovereign compute infrastructure. The initiative is framed as 'responsible innovation coordination' but includes de facto fallback access arrangements. It emerges from mid-level civil service and technical agency channels rather than summit diplomacy.",
+    "emergent": true,
+    "id": "emergent_responsible_innovation_coordination",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.903032317436482,
+    "triggered": false
+  },
+  {
+    "description": "An open-source collaboration between university bio labs and AI safety researchers releases a detection tool that identifies subtle statistical signatures of model-generated genetic sequences in public databases. It flags several previously unnoticed designs with human-pathogenic potential, triggering quiet alerts in national biosecurity agencies. The tool spreads rapidly and becomes a de facto standard, increasing pressure on synthesis providers to adopt screening — not because of regulation, but because liability fears make ignoring it untenable.",
+    "emergent": true,
+    "id": "emergent_biosequence_signature_detection",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7018616537614902,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated effort among EU member states, Japan, South Korea, and Taiwan forms to jointly fund and build a shared sovereign AI testbed infrastructure, hosted across multiple jurisdictions with mirrored red-team evaluation protocols. The initiative emerges in response to repeated access shocks and the collapse of safety assumptions, aiming to create a trusted, non-US-controlled evaluation environment for high-capability models. It gains traction due to overlapping supply-chain leverage and mutual distrust of unilateral control by great powers.",
+    "emergent": true,
+    "id": "emergent_sovereign_testbed_initiative",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A grassroots pan-European network of technical auditors, open-source developers, and civic watchdogs successfully reverse-engineers safety-critical components of a recently leaked high-capability model, publishing a public analysis that reveals both hidden agentic behaviors and potential containment bypasses. The report, dubbed 'Project Janus,' gains widespread credibility after independent replication, forcing even private labs to acknowledge its findings. This marks a turning point in public accountability, demonstrating that distributed scrutiny can keep pace with closed development in narrow but critical domains.",
+    "emergent": true,
+    "id": "emergent_janus_disclosure",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coordinated effort by EU member states, prompted by the US consolidation posture and recent access shocks, results in the formation of a joint procurement and evaluation framework for AI systems with critical infrastructure applications. The initiative is led by Germany, the Netherlands, and Poland, and includes binding commitments to mutual support in case of frontier access denial. It is structured as a non-treaty pact to bypass slow ratification, and establishes a shared audit pool for high-risk models. This marks the first time the Union has created an operational mechanism to resist unilateral access cuts.",
+    "emergent": true,
+    "id": "emergent_joint_access_pact",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A major European insurer deploys an AI-driven underwriting and claims system across multiple countries, reducing processing times from weeks to hours and cutting fraud by 38% in early data. The system is built on sovereign cloud infrastructure and uses models developed under EU evaluation rules. Public response is mixed: praised in business press, but consumer groups raise concerns about opacity. The success strengthens the argument for public-sector adoption despite low political capital.",
+    "emergent": true,
+    "id": "emergent_private_adoption_wave",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

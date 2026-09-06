@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Emergency Resilience Corridors −3, Sovereign AI Core Programme −3, priority −1 = −7  
+PROPOSAL BONUS: Harden Runtime Assurance (cat 5, small) +3 — answers safety_breakthrough and cyber_major_incident, both recent and directly addressed  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 14 last turn, no capacity event, capability rose 1.5 −1 = 13.0  
+US_POSTURE: pending (administration takes office next turn)  
+emergent_labour_unrest_spread -- first noted turn 7, listed in 1 turn(s) so far: Widespread strikes and work stoppages erupt across multiple EU countries as AI-driven displacement in legal, accounting, and administrative sectors triggers coordinated action by white-collar unions, demanding AI moratoria and sectoral transition plans. The scale and cross-border coordination mark a shift from isolated protests to structural political pressure.  
+emergent_us_ai_policy_leak -- first noted turn 7, listed in 1 turn(s) so far: A classified memo from the incoming US administration leaks, revealing plans for a 'trusted partner' AI access framework that would grant conditional, audited access to frontier models for allied governments meeting strict alignment criteria—potentially opening a narrow window for the EU if it can demonstrate control and cohesion within months.

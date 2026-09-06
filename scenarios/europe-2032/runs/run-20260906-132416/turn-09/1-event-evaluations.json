@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.20666666666666667,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5316721249785055,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9089122890937111,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.26819747454793963,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23541515285482373,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9767340957487917,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3481790080953977,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of EU-aligned nations with strategic positions in the AI supply chain — including the Netherlands (lithography), Taiwan (advanced packaging), South Korea (memory), and Finland (rare earth processing) — begins informal coordination on export licensing and mutual compute access guarantees. Driven by shared concern over unilateral U.S. or Chinese leverage, the group meets under the radar via intelligence and trade backchannels. This is not a formal alliance, but it marks the first coordinated hedging against great-power dominance in AI infrastructure.",
+    "emergent": true,
+    "id": "emergent_supply_chain_pact",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7801945184899891,
+    "triggered": false
+  },
+  {
+    "description": "A major European reinsurer, responding to unregulated proliferation of AI-driven cyber and bio risks, unilaterally withdraws coverage for public-sector AI deployments and critical infrastructure operators lacking certified incident response protocols. The move triggers panic among municipalities and energy firms, forcing rapid adoption of minimum AI risk standards. The EU is caught off guard, but the market-driven escalation creates de facto regulation where policy has stalled.",
+    "emergent": true,
+    "id": "emergent_reinsurer_withdrawal",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5018619021717753,
+    "triggered": false
+  }
+]

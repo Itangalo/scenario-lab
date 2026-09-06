@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: European Sovereign Compute Partnership −3, priority −1 = −4  
+PROPOSAL BONUS: none — measure responds to external shocks but is new, large, and unproven; no capital gain  
+LEGITIMACY LENDS: none — public_sentiment (25.0) not above eu_political_capital (5.0 → 2.0 after costs)  
+SOVEREIGNTY: 10.0 last turn, no capacity event, capability rose 0.5 −1 = 9.0, but export_control_escalation removes access to critical supply → −1 → 8.0  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_sovereignty_pact -- first noted turn 7, listed in 3 turn(s) so far: A coalition of EU member states, frustrated by the Union's inability to secure frontier access, forms a binding regional pact to jointly fund and govern a shared sovereign AI infrastructure. The pact includes direct procurement of compute, cross-border research mandates, and a unified negotiation front with non-EU suppliers. It operates outside formal EU channels but stops short of violating treaties, creating a parallel structure that could either evolve into a new EU capability or deepen institutional fragmentation.

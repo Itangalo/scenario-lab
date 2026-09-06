@@ -1,0 +1,59 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_open_source_resilience_effort",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "In response to the failure of centralized sovereignty initiatives, a decentralized coalition of European cybersecurity researchers, open-source maintainers, and municipal IT departments launches an ad-hoc 'Resilience Mesh' to harden critical software dependencies. Using open-weight models at capability 50.0, they automate vulnerability detection and patching across public health and energy systems. While technically promising, the effort operates outside EU command structures, raising concerns about accountability and long-term sustainability.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

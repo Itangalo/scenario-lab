@@ -1,0 +1,37 @@
+[
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.15
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "description": "A series of coordinated physical attacks target AI-critical infrastructure in multiple EU member states, including substations powering data centres and fibre-optic backbones. The attacks are attributed to a decentralized network of anti-tech extremists exploiting open-source targeting tools. The incidents strain emergency response systems and deepen public unease, reinforcing backlash narratives.",
+    "emergent": true,
+    "id": "emergent_infrastructure_sabotage",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

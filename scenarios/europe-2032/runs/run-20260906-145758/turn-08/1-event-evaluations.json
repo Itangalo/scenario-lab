@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.02902092513809429,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6616393469406583,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16439958102282604,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5027801046040276,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8002289747799727,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.21999999999999997,
+    "probability_samples": [
+      0.21,
+      0.25,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7091681772576511,
+    "triggered": false
+  },
+  {
+    "description": "Persistent, low-level resistance to AI infrastructure intensifies in rural regions hosting data centres, now involving coordinated sabotage of power connections and access roads. The actions are decentralized but share tactics, suggesting informal networks are forming. This is not a single uprising but a spreading pattern of localized disruption.",
+    "emergent": true,
+    "id": "emergent_infrastructure_sabotage",
+    "probability": 0.2833333333333333,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1560519666996134,
+    "triggered": true
+  },
+  {
+    "description": "A coalition of European technical institutes, alarmed by the erosion of public trust and the EU's lagging sovereignty, begins quietly coordinating an open-source verification framework for critical AI systems. It operates outside formal EU channels but seeks to establish standards that could later be adopted. This is a constructive, bottom-up response to institutional stagnation.",
+    "emergent": true,
+    "id": "emergent_open_verif_initiative",
+    "probability": 0.21666666666666667,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8506872963222618,
+    "triggered": false
+  }
+]

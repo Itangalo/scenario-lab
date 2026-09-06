@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Secure Foundational Compute −3, priority −1 = −4  
+PROPOSAL BONUS: Secure Foundational Compute (cat 4, large) +5 — directly answers supply_chain_coercion and backlash_physical, both severe and recent, while reclaiming failed SACP delivery  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 12 last turn, no capacity event, Sovereign AI Core Programme finished t8 but no operational capacity delivered → no +3 to +6, capability rose 0.5 <2 → no −1, ongoing delivery failure and physical backlash imply credibility cost → −2 → 10  
+US_POSTURE: CONSOLIDATION
+- `emergent_eu_labour_pact` -- first noted turn 7, listed in 2 turn(s) so far: In response to rising job displacement fears and stagnant public sentiment, several EU member states unilaterally announce a coordinated 'AI Transition Pact'—a cross-border initiative to fund retraining, expand social insurance for gig and displaced workers, and mandate AI impact assessments for public-sector hiring. The initiative emerges from city-level experiments and gains traction as a bottom-up response to perceived institutional paralysis at the Commission level.

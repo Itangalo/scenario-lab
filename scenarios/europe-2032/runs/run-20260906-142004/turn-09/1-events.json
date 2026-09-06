@@ -1,0 +1,39 @@
+[
+  {
+    "description": "Widespread strikes and work stoppages erupt across multiple EU countries as AI-driven displacement in legal, accounting, and administrative sectors triggers coordinated action by white-collar unions, demanding AI moratoria and sectoral transition plans. The scale and cross-border coordination mark a shift from isolated protests to structural political pressure.",
+    "emergent": true,
+    "id": "emergent_labour_unrest_spread",
+    "probability": 0.31666666666666665,
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A classified memo from the incoming US administration leaks, revealing plans for a 'trusted partner' AI access framework that would grant conditional, audited access to frontier models for allied governments meeting strict alignment criteria—potentially opening a narrow window for the EU if it can demonstrate control and cohesion within months.",
+    "emergent": true,
+    "id": "emergent_us_ai_policy_leak",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

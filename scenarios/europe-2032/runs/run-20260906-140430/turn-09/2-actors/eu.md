@@ -1,0 +1,30 @@
+Defend the integrity of critical systems and institutions against AI-enabled attack and subversion
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Build sovereign AI capacity at scale to anchor European strategic autonomy``
+- Trigger: the two-year commitment period closes this turn
+- Grounds: The current commitment to defend critical systems has been necessary and rightly focused, but its limits are now clear: resilience cannot be bolted on indefinitely while capability races ahead. The gap between frontier AI at 65.5 and EU sovereignty at 24.0 is no longer a delay—it is a strategic deficit. The failure of safety to keep pace, now at 14.0, means we are not governing the frontier; we are reacting to its fallout. To prevent lasting harm, we must not only harden our defences but also shape the technology itself. That requires independent capacity—compute, talent, and systems—under enforceable EU jurisdiction. The next two years must be defined by building that foundation, not just patching vulnerabilities as they emerge.
+
+## Portfolio
+- `Secure Foundry Access Agreement` (category 4, costs 3 per turn, started turn 8, finishes on turn 9): Negotiate binding access guarantees from EU-aligned lithography leaders (ASML, Zeiss) to reserve a minimum share of next-generation tool output for EU-based chipmakers, conditional on co-investment in domestic fabrication capacity — **finished this turn**
+- `Critical Infrastructure Cyber Shield` (category 6, costs 3 per turn, started turn 8, finishes on turn 10): Launch an emergency programme to deploy AI-hardened intrusion detection and automated response systems across municipal, energy, and health networks, with mandatory integration within 12 months
+
+## New measure
+**Sovereign Compute Acceleration Programme**  
+Launch a fully EU-controlled, high-priority compute build-out to deliver at least 5 exaflops of frontier-class AI training capacity on sovereign soil by turn 13, with enforceable jurisdiction, audit rights, and priority access for public research and critical infrastructure.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size:` large  
+`Finishes on turn:` 13  
+`Targeted effect:` +15 to +20 eu_ai_sovereignty by turn 13, with measurable progress by turn 10; begins closing the gap between openweight (52.5) and closed frontier (65.5) by enabling EU-led training runs  
+`Applies to:` EU member states, European High-Performance Computing Joint Undertaking (EuroHPC JU), national research infrastructures, ASML, Zeiss, Siemens Energy, EDF, and selected EU cloud providers
+
+## Priority
+**Sovereign Compute Acceleration Programme** — because defending critical systems is no longer enough: without our own capacity to train and control advanced AI, every resilience measure we build will be chasing threats we cannot see and cannot shape, and our sovereignty will remain hostage to external providers who do not answer to European law.
+
+## In practice
+This turn, we close the **Secure Foundry Access Agreement**. After months of legal negotiation, the Council has adopted the implementing decision under Article 12 of the Chips Act, anchoring the 18% reservation of next-gen EUV tools from ASML and Zeiss. The €900 million co-investment fund is now unlocked through the InvestEU programme, with disbursement tied to binding commitments from Infineon, STMicroelectronics, and GlobalFoundries to expand 2nm-capable fabs in Dresden, Grenoble, and Catania. Japan and South Korea have accepted observer status in a new Plurilateral Foundry Coordination Forum under the Indo-Pacific Economic Framework, in exchange for limited data-sharing on supply chain bottlenecks. This is not full reciprocity—but it is a foothold. The U.S. has not joined, but Intel’s planned Magdeburg fab has agreed to align its tool procurement with EU reservations, creating de facto compliance without treaty obligation.
+
+Meanwhile, the **Critical Infrastructure Cyber Shield** enters its second phase. ENISA has launched the tender for the core detection stack, with strict requirements: no black-box models, full interpretability logging, and red-teaming under the CRA framework. We are fast-tracking access to test environments at the German BSI and French ANSSI, and have secured commitments from MIAI, DFKI, and ELLIS to deliver prototype stacks by turn 10. But resistance is growing: legacy system integration in Italy and Greece is proving far costlier than projected, and national operators warn that retrofitting will require full shutdowns during peak winter demand. We are responding with a €200 million emergency retrofit fund drawn from REACT-EU, conditioned on phased deployment and public reporting of vulnerabilities found. The shield must hold—but it cannot break the grid while trying to protect it.
+
+Now, with the **Sovereign Compute Acceleration Programme**, we are shifting from defence to foundation. We are directing EuroHPC JU to stand up a new class of facility—“Sovereign AI Foundries”—on EU soil, starting with two sites: one in Finland (leveraging Nokia and VTT), one in France (hosted by GENCI and Inria). These will be powered by EU-sourced energy, connected to domestic grids under emergency hardening protocols, and governed by a new legal instrument: the Sovereign Compute Charter, which grants ENISA and national regulators full audit rights, including real-time monitoring of training runs above 50 petaflops. We are fast-tracking permitting under the new Critical Infrastructure Directive, overriding local objections on grounds of strategic necessity. Funding of €3.8 billion will come from the Digital Europe Programme, the Recovery and Resilience Facility, and a new sovereign bond issuance backed by the European Stability Mechanism. This is not a request for proposals—it is a directive. The frontier is not waiting, and neither can we.

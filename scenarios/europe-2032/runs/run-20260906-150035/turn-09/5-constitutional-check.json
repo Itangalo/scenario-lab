@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Regulatory Constraint violated: The EU introduces two large measures in one turn — \"Mandatory Runtime Integrity Framework\" and continuation/advancement of \"Emergency Sovereign Compute Mobilisation\" — while also designating one as a priority. This exceeds the limit of at most one new measure per turn (Modelling Choice 5: \"At most one new measure per turn, and at most one named priority.\"). The narrative states the EU \"pushes forward two large measures — a rare strain\", which confirms the breach.\n- Narrative violates Modelling Choice 8 (No telegraphing): The phrase \"a rare strain\" implies awareness of the modelling constraint on multiple measures, which telegraphs the system’s internal limits and comments on rule compliance. The narrative must not reference or justify its own structural choices in terms of strain or rarity tied to system rules."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

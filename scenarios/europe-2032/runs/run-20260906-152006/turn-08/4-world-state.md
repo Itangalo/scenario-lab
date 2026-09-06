@@ -1,0 +1,11 @@
+### The Fortress Without a Garrison
+
+The EU pressed forward with resolve, but momentum faltered under the weight of its own ambitions. The Sovereign Compute Backbone advanced in Kiruna and Saint-Malo, with liquid-cooled racks arriving and dark fibre laid under emergency provisions. Yet physical progress could not mask deeper fractures. Regional resistance, stoked by the *emergent_resilience_backlash* and *emergent_eu_regulatory_backlash*, hardened into legal defiance as the defector state’s CJEU challenge gained procedural traction. Cohesion frayed further.
+
+The launch of the Horizon Europe Fast-Track Talent Corridor was met with scepticism. While national interior ministries were instructed to fast-track applications, several delayed implementation, citing sovereignty concerns and domestic pressure. The offer of fast-track citizenship rang hollow without broader political unity, and early uptake was minimal. Talent recruitment became a bottleneck, not a breakthrough.
+
+Meanwhile, the Sovereign AI Core Programme (SACP) completed integration testing, setting the stage for a training run above 60.0. However, no such run occurred this turn — staffing gaps and audit-layer delays held it back. The promise of sovereign capability remained just out of reach.
+
+AI capability advanced to 71.0 globally, as closed labs extended autonomous exploit chains into multi-week operations. With no corresponding safety improvements in EU-deployed systems, and no new safeguards landing, `ai_safety` dropped further. Resilience eroded as the stalled Resilience Reinforcement Initiative left critical services exposed, and regional pushback worsened under the strain of unfunded mandates.
+
+Public sentiment held at 20.0, anchored by ongoing job displacement and a growing sense that the EU’s response was more about control than care. The political cost of overreach mounted, and with seven measures still in flight — including the newly added small measure — fiscal strain deepened. The named priority did little to accelerate progress, and political capital dwindled further.

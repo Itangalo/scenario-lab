@@ -1,0 +1,7 @@
+### The Threshold Deepens
+
+AI capability advances to 61.0 as frontier labs refine autonomous agent coordination, extending multi-day research cycles into new domains. The closed frontier continues to pull ahead, with no open release approaching parity. Open-weight systems see modest gains from distributed fine-tuning collectives and model distillation efforts, lifting capability to 46.0, but remain structurally behind.
+
+### Sovereignty Through Compromise
+
+The European Commission formally proposes the Emergency Sovereign Compute Mobilisation under Article 114 TFEU, triggering emergency powers to override national objections on grid access and permitting for critical AI infrastructure. Negotiations intensify with Germany and Ireland over hosting rights: Berlin signals conditional support in exchange for hosting the primary crisis-simulation node, while Dublin seeks safeguards before committing to a proposed biosecurity-focused facility. The European Investment Bank stands ready to activate financing, but deployment remains contingent on legal clarity—transmission operators have filed preliminary challenges to grid requisition authority, and the European Court of Justice has fast-tracked review. As a large category 4 measure, it enters the portfolio this turn but remains far from implementation. Full effect will require at least two turns due to infrastructure lead times and unresolved governance disputes.

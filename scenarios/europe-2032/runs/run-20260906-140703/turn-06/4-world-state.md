@@ -1,0 +1,11 @@
+### The Blockade and the Backstop
+
+The Taiwan blockade sends shockwaves through global AI infrastructure. With advanced semiconductor exports frozen, the EU finds itself both vulnerable and pivotal: its control over key upstream tools gives it leverage, but its reliance on external fabrication leaves critical compute clusters exposed. In response, the EU launches the Emergency Compute Assurance Initiative, a rapid programme to legally anchor and physically secure existing high-performance systems under enforceable jurisdiction. Though framed as reciprocal—offering recognition of allied safeguards—U.S.-linked cloud operators push back, citing compliance burdens and sovereignty concerns.
+
+Meanwhile, the Critical Infrastructure Resilience Sprint concludes. Binding red-teaming and fallback protocols are now active across major energy grids, with 42% of Tier 1 operators fully equipped. The partial rollout delivers measurable gains in resilience, though gaps remain in transport and healthcare sectors. NIS2 enforcement actions begin, targeting non-compliant operators.
+
+AI capability advances to 62.5 as closed labs refine self-improving agents in software and materials pipelines. Openweight models reach 50.0, aided by replication of coordination frameworks and partial leakage of training infrastructure blueprints—now within reach of well-resourced non-state actors. Yet safety erodes to 21.0, as opaque feedback loops in grid management systems go undetected by current audit frameworks, and no systemic safeguards are implemented.
+
+Sovereignty dips to 23.0: despite the new initiative, the rise in AI capability triggers a −1 decay, and no capacity event secures access. Political capital rises to 44.0, boosted by a +5 completion bonus from the resilience sprint and a +3 proposal bonus for the emergency measure—timely, large, and directly responsive to the blockade. The portfolio charge is −6 (Tech Sovereignty Package −3, new initiative −2, priority −1), partially offset by gains.
+
+Public sentiment holds at 34.0, as hardening efforts are overshadowed by supply chain fears and media coverage of potential outages.

@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `European AI Emergency Response Corps (category 6, costs 3 per turn, started turn 6, finishes on turn 8): Stand up a standing, cross-border operational unit with authority to intervene in AI-driven crises affecting critical infrastructure, with binding technical powers and direct access to sovereign compute` — finished
+- `Mandatory Pre-Deployment Biosecurity Audit Regime (category 1, costs 3 per turn, started turn 7, finishes on turn 9): Require all frontier AI developers operating in or supplying the EU to submit models to independent, adversarial testing for bio-risk potential before release, with results binding and public`
+
+## New measure
+**None this turn.**  
+Waiting for the eval_anomaly_reports to clarify the nature of the reasoning jumps and for the emergent_eu_data_revolt to stabilise before committing further capital to evaluation or deployment infrastructure that may lack data legitimacy.
+
+## Priority
+**Mandatory Pre-Deployment Biosecurity Audit Regime** — because the eval_anomaly_reports and the emergent_eu_data_revolt expose a dual crisis: we cannot trust the frontier’s self-assessments, and we can no longer assume access to the data needed to verify them, making independent audit the only remaining lever to impose red lines where capability lands.
+
+## In practice
+This turn, we are operationalising the European AI Emergency Response Corps in name and structure, though not yet in full cross-border authority. With Hungary and Poland now co-commanding regional clusters, the legal blockade is broken, and ENISA has activated the first three nodes in Berlin, Lyon, and Milan. Recruitment is underway for 500 specialists, prioritising red teamers with offensive cyber and dual-use bio backgrounds, and liaison teams are embedded in ECDC, Frontex, and ENCS to enable rapid incident escalation. But the absence of ratified Article 122a authority means intervention powers remain advisory—our corps can warn, assess, and coordinate, but not compel. The €4.2bn from the Resilience Bond is now fully allocated, but the real test will come in the next turn, when we must either secure binding powers or accept a diminished, consultative role.
+
+Simultaneously, the Mandatory Pre-Deployment Biosecurity Audit Regime enters its enforcement phase under intense strain. The EU AI Evaluation Agency has issued directives to OpenAI, Anthropic, and Meta, demanding access for adversarial testing on pathogen design and cyber-planning capabilities. Where cooperation falters—Anthropic has refused red-teaming scope—we are preparing to invoke Article 5 of the Digital Markets Act to condition market access on compliance, and drafting the first public list of non-compliant models. But the emergent_eu_data_revolt complicates everything: with France, Austria, and Belgium now restricting public data sharing, our own evaluators face a growing data deficit. We are pivoting to synthetic benchmarks and restricted partnerships with academic biobanks, but if the revolt spreads, even our audit capacity may lack legitimacy. We are also deepening coordination with Japan and Canada on mutual recognition, seeking to turn our regulatory reach into a transatlantic standard—because if we cannot build the frontier, we must still define its boundaries.

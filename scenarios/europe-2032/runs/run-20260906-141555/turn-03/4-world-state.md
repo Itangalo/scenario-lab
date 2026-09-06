@@ -1,0 +1,11 @@
+### Sovereignty Push, Political Cost  
+The European Commission presses ahead with the Sovereign Compute Acceleration Programme, invoking emergency powers to designate national champions and override national grid objections. Legal challenges mount: Germany’s constitutional court agrees to hear a case on the override of energy planning, and ENTSO-E resists binding 8GW without national ratification. The €50bn EIB envelope is politically guaranteed but not yet disbursed, as the Court of Auditors escalates its review. SCAP remains in motion but not yet grounded in law or infrastructure.
+
+### Accountability in Crisis  
+In response to the automated decision scandal and rising public fury, the EU launches an Emergency AI Accountability and Redress Mechanism. The ombudsman office is stood up under the European Data Protection Supervisor, and audits begin in France and Spain. However, Italy and Hungary refuse access, citing national jurisdiction. The compensation fund draws symbolic claims, but the mechanism is seen as reactive — a bandage, not a fix.
+
+### Safety Gains, Systemic Drift  
+A major interpretability breakthrough is rapidly adopted: for the first time, certain model behaviours can be predicted and certified pre-deployment. The EAAD fast-tracks it into emergency regulations, and labs comply willingly. Yet `ai_capability` rises by 2.0, driven by autonomous code generation, widening the lead beyond assured control. With no finished resilience measure, a recent cyber intrusion exploiting open-weight models causes cascading failures in municipal services, further eroding trust.
+
+### Fractured Legitimacy  
+Public sentiment declines as job losses accelerate and data centre moratoriums gain political traction. The new accountability measure is overshadowed by perceptions of elite overreach. Political capital falls sharply — the cost of five large measures, the priority, and the internal scandal outweigh gains from the safety breakthrough and proposal bonus. Sovereignty erodes as capability advances and no capacity event offsets the drift.

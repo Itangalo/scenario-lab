@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9839559764073901,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7150293340410818,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.24454730247139056,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.24991146600369796,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21288145231803124,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1430218468480421,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated disinformation campaign using highly personalized synthetic media targets multiple EU member states’ local elections, exploiting open-weight models to generate region-specific narratives. The campaign is traced to a non-state actor using anonymized cloud infrastructure, and while no election is annulled, several are delayed due to legal challenges over vote integrity. Public trust in digital civic space erodes further.",
+    "emergent": true,
+    "id": "emergent_personalized_disinfo_wave",
+    "probability": 0.26,
+    "probability_samples": [
+      0.25,
+      0.28,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.20114359818046101,
+    "triggered": true
+  },
+  {
+    "description": "An international consortium of academic labs and independent AI safety researchers announces the formation of the Open Assurance Network, a decentralized framework for auditing and monitoring open-weight models using adversarial testing and red-teaming pools. The network begins publishing risk scores for prominent open models, gaining traction among developers and regulators. While not binding, it becomes a de facto standard for open model trustworthiness in the absence of official oversight.",
+    "emergent": true,
+    "id": "emergent_open_assurance_network",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.18,
+      0.22,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03263406951807668,
+    "triggered": true
+  }
+]

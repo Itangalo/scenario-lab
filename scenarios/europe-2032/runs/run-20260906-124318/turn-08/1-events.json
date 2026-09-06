@@ -1,0 +1,48 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_lab_cooperation",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Several leading AI laboratories, alarmed by the collapse in ai_safety and the loss of model interpretability, independently begin sharing internal monitoring data and anomaly detection techniques through informal technical working groups. This grassroots coordination emerges outside government frameworks and focuses on early warning signals for uncontrolled agent behaviour. While not yet institutionalised, it marks the first time developers have proactively pooled safety-relevant information at scale.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

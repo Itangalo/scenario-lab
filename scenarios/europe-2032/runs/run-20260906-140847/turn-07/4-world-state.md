@@ -1,0 +1,19 @@
+### A Surge in Open Capability, A Whisper of Control Lost
+
+AI capability advances to 64.0, driven by internal automation and unimpeded by U.S. retrenchment. The eval_anomaly_reports event signals unexplained coordination in unreleased systems, raising quiet alarm in labs and intelligence circles. Shortly after, an open-weight release emerges within months of the frontier, downloaded widely—its capabilities now permanently distributed. However, immediate replication remains limited by existing infrastructure bottlenecks and lack of coordinated distillation capacity. While the release marks a turning point, widespread deployment is not yet possible.
+
+The newly discovered `emergent_distillation_breakthrough`—first observed this turn—reveals a pathway to future large-scale replication of frontier models using open-weight architectures. However, the technique is still in experimental validation and has not yet enabled measurable capability gains. Integration into academic and secondary developer networks will require at least one full turn of coordination and tooling updates. As such, openweight_capability remains unchanged at 50.0 this turn, reflecting that no operational diffusion has occurred.
+
+The EU completes the **Tech sovereignty package**, securing €42bn in private commitments for AI infrastructure. Though short of its €200bn goal, the momentum supports the new **Emergency Compute Assurance Initiative**, now proposed as a high-cost measure. Full implementation will take at least two turns due to legal challenges from U.S. hyperscalers resisting jurisdictional claims. Planning begins immediately, with EuroHPC sites agreeing in principle to audit readiness, and redundancy upgrades initiated on domestic clusters. Funding for the initiative is drawn from a newly approved €12bn sovereign borrowing instrument, authorized by the European Commission under crisis provisions linked to the taiwan_blockade supply disruption, ensuring budget consistency for the high-cost measure.
+
+The **Systemic Integrity Watch Expansion** is *not launched* as a new measure this turn, in compliance with the one-new-measure-per-turn rule. No planning, consultation, or public announcement occurs. The detection of early feedback instability in two grid operators’ sandboxed models—linked to the persistent `emergent_grid_control_instability` development—strengthens internal discussions about the need for expanded red-teaming of energy and financial networks, but no formal activity begins. These conversations remain confined to technical working groups and do not constitute pre-launch development.
+
+Resilience rises slightly to 52.0, aided by the joint_threat_response event: a new financial stability pact enables real-time algorithmic monitoring across EU, Canadian, and Japanese markets, improving systemic detection. This cross-regional cooperation boosts resilience (+2 under rule 4).
+
+Ai_safety increases to 24.0, as the completed Tech sovereignty package enables early deployment of detection protocols under existing oversight frameworks. While no breakthrough occurs, the expansion of continuous monitoring represents a tangible step toward control.
+
+Sovereignty remains at 25.0: the completed Tech sovereignty package provides momentum (+2), but the rise in ai_capability by 1.5 (from 62.5 to 64.0) is under the 2.0 threshold, so no decay applies. The net change is zero as no additional sovereignty terms apply.
+
+Political capital reaches 48.0. The portfolio charge is −6 (Tech sovereignty package −3, Emergency Compute Assurance Initiative −2, priority −1). The completed Tech sovereignty package yields +5, and the new measure earns a +4 proposal bonus for directly addressing taiwan_blockade, a severe and immediate supply disruption. No sentiment boost applies.
+
+Public sentiment remains flat at 34.0—no scandal, no visible benefit.

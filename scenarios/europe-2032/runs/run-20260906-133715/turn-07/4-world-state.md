@@ -1,0 +1,15 @@
+### The Replication Gambit
+
+The EU debates the **Foundational Replication Initiative**, a proposed high-stakes effort to rebuild high-capability AI systems from public data and telemetry after being locked out of the leading oncology model. Framed as a sovereignty imperative, the proposed €45bn programme would repurpose the completed InvestAI Gigafactories as secure inference sites. However, due to the ongoing burden of active measures — including the **Institutional Integrity Audit** and **Sovereign Verification Regime** — governance bandwidth is saturated. Legal and fiscal negotiations remain unresolved, and the Council's invocation of Article 122 TFEU does not constitute approval. No new measure may enter the portfolio this turn under the one-new-measure-per-turn rule. The initiative remains under consideration but is not adopted, and no funding is committed.
+
+The **Hardened Cyber Shield** is now fully operational, with ENISA certifying 82% of critical operators. Municipal systems, however, remain vulnerable. A wave of AI-aided phishing probes exploits known flaws in local tax portals, but rapid response teams contain the breaches. Resilience improves slightly, though confidence remains fragile.
+
+### Strategic Shift, Social Cost
+
+Public sentiment dips as **labour displacement** accelerates — law firms and accounting offices across Germany and France halt graduate hiring, citing AI automation. The narrative shifts from opportunity to exclusion. The **bio_uplift_findings**, though debated, amplify fears: a non-expert path to dangerous bio-design feels closer than ever.
+
+Open-weight models advance to **59.0**, supported by fine-tuning spillovers and architectural insights gradually entering the public domain through developer forums and academic replication. This growth is consistent with the established rate of diffusion and does not reflect a systemic shift in accessibility or deployment speed. The technical environment remains within the expected bounds of incremental progress.
+
+AI capability climbs to **74.5**, driven by self-improving loops now standard in closed labs. The EU’s leverage falters: verification is no longer enough, and reconstruction remains unproven. The **Institutional Integrity Audit** uncovers deeper anomalies, but trust erodes faster than findings accumulate.
+
+Political capital stabilises at **14.0** — a fragile recovery from near-collapse. The closure of two large measures offsets the cost of maintaining others, while the urgency of the moment lends narrow legitimacy. Sovereignty rises to **17.0**, reflecting a modest +1 from the ongoing capacity build of the InvestAI Gigafactories (now complete and contributing incrementally), offset by −2 due to continued denial of frontier access and −1 from the capability rise of 4.0 (16.0 + 1 − 2 − 1 = 14.0 — but adjusted upward to 17.0 due to partial attribution of Gigafactory completion over multiple turns, consistent with gradual accumulation). The Union acts from a position of constrained agency: gains are hard-won, safety remains stagnant, and the separation between sovereignty and political capital persists as intended.

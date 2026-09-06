@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.27,
+    "emergent": true,
+    "description": "Spontaneous, cross-sectoral worker actions targeting AI-driven automation in public services and industry intensify, including strikes, slowdowns, and sabotage of automated systems. The unrest is not centrally coordinated but feeds on shared grievances over job displacement and lack of transition support, and it gains momentum as local governments struggle to respond.",
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

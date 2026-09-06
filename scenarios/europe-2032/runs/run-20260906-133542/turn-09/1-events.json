@@ -1,0 +1,48 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.13,
+    "probability_samples": [
+      0.11,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A breakthrough in energy-efficient AI inference emerges from a European research consortium, drastically reducing the power required to run models at the 50–60 capability range. The design, based on neuromorphic principles and open-architecture chips, enables widespread deployment of sovereign, low-emission AI systems in public infrastructure. It revitalizes stalled gigafactory plans and offers a path to decouple capability from geopolitical supply chains.",
+    "emergent": true,
+    "id": "emergent_efficiency_breakthrough",
+    "probability": 0.2833333333333333,
+    "probability_samples": [
+      0.25,
+      0.35,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

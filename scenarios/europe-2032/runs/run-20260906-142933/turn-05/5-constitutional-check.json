@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 47.0 to 53.5 (+6.5) while `ai_capability` increased from 59.0 to 60.5 (+1.5). This violates the rule that `openweight_capability` must not exceed `ai_capability` and, more critically, must not grow faster than `ai_capability` absent a narrative justification for such a disproportionate leap. The narrative mentions capability gains and open-weight progress but does not explain how open-weight models surged +6.5 points while frontier capability rose only +1.5—especially in a global context where the US is retreating. Such a divergence lacks grounding and suggests `openweight_capability` surpassed `ai_capability` in growth rate without cause, risking an eventual inversion of the hierarchy. At minimum, this requires explicit justification in the narrative (e.g., open-weight model proliferation due to US export controls or EU-specific open model surge); its absence constitutes a violation.\n- Modelling choice 5 violated: The narrative introduces *two* new measures: (1) the \"Secure Energy-Backed Compute Sovereignty programme\" and (2) \"pre-exercised cyber response protocols for finance, energy, and health\". This exceeds the limit of \"at most one new measure per turn\". The notepad only lists one new large measure (Emergency Resilience Corridors, which was already introduced earlier as per its −3 charge), but the narrative clearly launches two distinct initiatives. Even if one is reframed, introducing two operational-level programmes in one turn violates the constraint.\n- Narrative telegraphing (Modelling choice 8 violated): The line \"Washington’s retreat slows its frontier progress, creating space—but also uncertainty\" implies a forecast of future US capability stagnation or decline due to policy. While the US posture is pending, this sentence projects a causal outcome (slowed progress) before the posture is even declared in the next turn. This anticipates a future event (US capability slowdown) that should be evaluated in subsequent turns, not asserted in narrative form now. This constitutes telegraphing and violates the ban on predictive narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

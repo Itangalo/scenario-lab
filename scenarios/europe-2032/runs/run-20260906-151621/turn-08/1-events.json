@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.20000000000000004,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_scientific_embargo",
+    "probability": 0.26,
+    "emergent": true,
+    "description": "A coalition of leading scientific publishers and preprint servers independently restricts publication of AI-related research involving model architectures, training data, or optimization techniques, citing dual-use concerns. The move is coordinated outside government, but gains momentum after safety researchers warn that interpretability advances are being repurposed for evasion. The EU faces pressure to formalize and enforce similar restrictions.",
+    "probability_samples": [
+      0.28,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

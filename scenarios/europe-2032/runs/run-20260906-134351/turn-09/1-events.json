@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.02,
+    "probability_samples": [
+      0.03,
+      0.0,
+      0.03
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_compute_black_market",
+    "probability": 0.22,
+    "emergent": true,
+    "description": "Informal networks of mid-sized member states, leveraging access deals with Japan, South Korea, and Canada, begin routing sovereign AI workloads through unlisted foreign data centres to bypass EU-wide restrictions and audit requirements. These arrangements operate without formal oversight, creating a growing shadow compute ecosystem that undermines central coordination and accountability.",
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

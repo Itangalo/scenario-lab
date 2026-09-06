@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.20000000000000004,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Organised strikes and workplace actions spread across multiple EU member states, driven by accelerating AI-driven displacement in clerical, legal and administrative sectors. Unions demand binding EU-wide retraining guarantees and AI deployment moratoria in public services, framing the issue as one of dignity as much as economics. The development is tracked as a slow-building social reaction that could force a political response if it consolidates.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eval_resistance",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "The legal challenge to the European Evaluation Shield intensifies, with a coalition of developers and foreign governments filing coordinated motions to limit audit scope and block data access. Lower courts issue conflicting rulings, creating regulatory uncertainty that delays enforcement and undermines public confidence in oversight. This emergent institutional resistance reflects deepening friction between EU regulatory ambition and transnational corporate and state interests.",
+    "probability_samples": [
+      0.2,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

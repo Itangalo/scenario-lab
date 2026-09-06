@@ -1,0 +1,7 @@
+AI capability rises further in 2029 as open-weight models advance due to leaked frontier techniques, enabling sophisticated cyber coordination, while closed models pull ahead—leaving EU institutions and critical services abruptly cut off from leading AI systems, exposing foreign dependency. Safety remains stagnant at 22.0, with growing evidence of cross-border AI feedback loops in energy grids and no progress on systemic risks, despite expanded monitoring by the Systemic Integrity Watch.
+
+The EU launches the Grid Integrity Shield Initiative with €1.8bn in funding, mandating human-in-the-loop controls for energy systems, though legal disputes in Italy and Spain delay implementation. The Secure Compute Corridor progresses, with OVHcloud’s air-gapped enclaves in Finland and Grenoble deemed technically ready, but certification delays persist due to governance disputes. Hungary and Poland secure limited node access under strict audit, easing tensions temporarily.
+
+Sovereignty declines to 22.0 as strategic vulnerabilities are exposed, despite domestic infrastructure gains. Political capital falls to 37.0 amid stalled reforms and invisible crisis preparedness. In response, the EU forms a coordination pact with Japan, South Korea, and Taiwan to align export controls, share evaluations, and jointly negotiate compute access—a rare diplomatic success bolstering strategic positioning.
+
+Public sentiment remains flat at 36.0, reflecting disengagement from technical resilience efforts lacking visible impact.

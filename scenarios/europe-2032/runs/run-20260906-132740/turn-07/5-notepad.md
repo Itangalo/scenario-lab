@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: InvestAI Gigafactories −3, Tech sovereignty package −3, Institutional Integrity Audit −3, European Semiconductor Assurance and Expansion Pact −3, priority −1 = −13  
+PROPOSAL BONUS: European Semiconductor Assurance and Expansion Pact (cat 4, large) +6 — responds directly to taiwan_blockade and capability_jump, both severe and current  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, no capacity event, InvestAI Gigafactories finishes t7 +5, capability rose 6.0 −1 = 19 → eu_ai_sovereignty rule 5 decay term applies: capability rose ≥2 → −1, no build in force after finish → −1; final: 17 → but narrative confirms no secured access, only attempted action → no +1 from finish until delivery; actual delivery not achieved → no +3 to +6 → only decay applies: capability rise −1, no secured access → net −1 → 14  
+US_POSTURE: pending (administration takes office next turn)  
+EMERGENT: `emergent_efficiency_breakthrough` (listed 2 turn(s)), `emergent_municipal_oversight_network` (listed 2 turn(s))

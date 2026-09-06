@@ -1,0 +1,13 @@
+### A Crisis of Access
+
+The Taiwan blockade abruptly transforms semiconductor supply into a frontline geopolitical crisis. Advanced compute shipments freeze, and the EU’s leverage in lithography equipment becomes both a strategic asset and a liability. In response, the European Union launches the **Emergency Compute Assurance Initiative**, mobilising €1.8bn to audit, harden, and legally anchor existing high-performance computing clusters under enforceable EU jurisdiction. The initiative targets all facilities exceeding 1 exaFLOP/s, invoking the Chips Act’s safeguard clause. While framed as reciprocal — offering recognition of U.S. or Japanese equivalents — resistance emerges from American hyperscalers operating in Europe, who question the scope of extraterritorial enforcement.
+
+Simultaneously, the **Critical Infrastructure Resilience Sprint** concludes. Fallback systems are now deployed in 42% of Tier 1 operators, red-teaming is institutionalised in five major grids, and ENISA issues binding compliance orders. The full resilience benefit lands, though gaps remain in municipal networks and cross-border coordination.
+
+AI capability advances to 62.5 as closed labs refine self-improving agents in software automation and materials discovery. Openweight models reach 50.0, driven by incremental replication and partial leakage of coordination frameworks, but remain constrained by hardware scarcity. No safety breakthrough occurs; instead, opaque reasoning in grid-control systems triggers undetected feedback loops, contributing to a drop in ai_safety to 21.0.
+
+Public sentiment holds at 34.0, as fears over job displacement and dependency tensions balance against visible infrastructure gains. Political capital rises modestly: the resilience sprint delivers a +5 finish bonus, offsetting ongoing portfolio costs. The new initiative earns no proposal bonus — while the blockade is severe, it was not preceded by an EU measure designed to prevent it. Sovereignty increases due to proactive anchoring of compute, partially countering the −1 decay from rising capability.
+
+### Fragmented Reactions
+
+Germany and France back the emergency initiative, but Poland hesitates, citing investor concerns. The Commission activates REPowerEU’s emergency provisions to fast-track funding, but legal challenges loom over jurisdictional reach. The U.S. posture remains pending as the new administration takes office next turn.

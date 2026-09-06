@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Mandatory Resilience Certification −3, priority −1 = −4  
+PROPOSAL BONUS: none — while eu_frontier_access_denied was severe and recent, the measure does not directly answer an incident that bypassed internal defences; instead, it restructures access, earning partial alignment but not full bonus  
+LEGITIMACY LENDS: none — public_sentiment (22.0) > eu_political_capital (3.0), but rule 6 does not apply this term when capital is below 12  
+SOVEREIGNTY: 11 last turn, eu_frontier_access_denied t9 −2, ai_capability rose <2 −0, no category 4 completion = 9 → net −1 due to investment collapse pressure and failed substitution = 8  
+US_POSTURE: CONSOLIDATION  
+- `emergent_ai_refugee_crisis` -- first noted turn 7, listed in 4 turn(s) so far: A growing number of AI researchers and engineers from countries experiencing rapid de-democratization or conflict are seeking asylum in EU member states, citing fears of forced military AI development or surveillance abuse. Universities and tech hubs report a surge in applications, creating both opportunity and strain on integration systems.  
+- `emergent_open_source_bio_hack` -- first noted turn 7, listed in 4 turn(s) so far: An open-weight model with bio-design capabilities is adapted by a distributed network of citizen scientists to engineer a low-cost diagnostic tool for a rare tropical disease. While hailed as a breakthrough in accessible medicine, it raises alarms about unregulated bioengineering and the inability of current frameworks to distinguish between benevolent and hazardous use.

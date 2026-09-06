@@ -1,0 +1,13 @@
+### The Open Frontier Goes Live
+
+Global AI capability advances to 65.5 as self-improving agents refine materials and software pipelines, pushing the closed frontier further ahead. A frontier-grade open model is released, initiating rapid but gradual replication. Early adoption is constrained by compute availability and integration challenges, limiting immediate impact. `openweight_capability` rises to 53.0, reflecting initial diffusion across research and smaller developer communities, particularly in cyber and disinformation applications, but remains meaningfully behind the closed frontier.
+
+### EU Shifts from Emergency to Stewardship
+
+The **Emergency Compute Assurance Initiative** concludes successfully. Audit protocols are now standardised across EU high-performance clusters, and legal control secured for the majority of systems. The framework transitions to standing oversight under ENISA, delivering a +5 finish bonus to `eu_political_capital`. The **Critical System Red-Teaming Expansion** gains early traction, with Germany, France and the Netherlands leading sectoral rollouts. A €1.2bn Digital Europe allocation eases resistance from smaller states, though delays in staffing and protocol finalisation slow full deployment.
+
+The EU launches the **Open-Weight Monitoring and Containment Framework**, a small category 1 measure targeting misuse of open models above 50.0. Europol’s new AI Misuse Cell begins initial scanning of dark web forums and code repositories, while safe-harbour agreements are drafted for developer outreach. Implementation is partial this turn due to staffing shortages and inter-agency coordination delays. The move is welcomed by security agencies but criticised by open-source communities as overreach. No immediate misuse incidents are detected.
+
+Public sentiment remains stagnant at 34.0, caught between growing anxiety and cautious approval of defensive steps. Resilience rises slightly to 50.0 as red-teaming scales. Ai_safety ticks up to 19.0, reflecting early detection capacity, though no systemic control improvements land. Sovereignty drops to 26.0 as `ai_capability` rose more than 2, and no category 4 completion offset the −1 decay. `eu_political_capital` increases to 43.0, incorporating the +5 finish bonus from the concluded initiative, partially offset by ongoing portfolio charges and a +3 proposal bonus from the new measure — respecting the +3 cap on sovereignty-linked contributions to political capital.
+
+The **Open-Weight Monitoring and Containment Framework** is designated the EU’s current priority, with the **Critical System Red-Teaming Expansion** continuing as an active but non-priority measure. Governance focus shifts toward containment infrastructure, though execution lags behind ambition.

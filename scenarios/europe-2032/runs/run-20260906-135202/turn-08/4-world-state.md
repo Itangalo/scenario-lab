@@ -1,0 +1,9 @@
+### Grids Under Pressure, Union Under Strain
+
+The EU responds to rising AI-driven instabilities with the **Emergency Resilience Reinforcement**, mandating rapid hardening of Tier 1 energy grids. Binding standards from ENISA roll out, requiring human-in-the-loop overrides, air-gapped backups, and quarterly red-team drills. While implementation begins in France and the Netherlands, delays emerge in Hungary and Poland, where regulators argue the costs outweigh the risks of unproven threats. Still, the measure accelerates resilience planning across the bloc.
+
+Meanwhile, the **Algorithmic Sovereignty Initiative** gains technical momentum but political friction. Co-design talks with ASML and Infineon advance, and the first sparse model prototypes show promise in simulation. However, the **export_control_escalation** bites: the U.S., under its retrenchment posture, tightens licensing, effectively rationing frontier model access even for allies. The EU’s offer of co-stewardship is met with silence in Washington.
+
+Worse, **member_state_defection** materializes when Hungary signs a bilateral AI infrastructure deal with a U.S. hyperscaler, bypassing EU coordination and promising national grid access in exchange for data sovereignty concessions. Budapest frames it as pragmatic sovereignty; Brussels sees a fracture. The move undermines the Union’s unified stance and triggers a quiet review of funding conditionality.
+
+AI capability advances to 67.0, driven by self-improving agents in closed labs. Openweight models reach 51.0, as efficient architectures diffuse. But with no safety mechanisms landing on deployed systems, and the gap between capability and control widening, **ai_safety** drops to 19.0. The resilience boost from the new measure is partial but tangible, lifting **resilience** to 55.0. Public sentiment dips further, to 30.0, as grid anxieties and the Hungarian defection feed narratives of disunity and vulnerability.

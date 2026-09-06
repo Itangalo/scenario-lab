@@ -1,0 +1,32 @@
+## Statement changes  
+* ``- modify `two_year_commitment` (commitment): Secure foundational AI capacity under EU control to anchor sovereignty and risk resilience, with a binding target to host and operate a model at or above 60.0 capability by turn 8, and to ensure that model is fully auditable, weight-secure, and isolated from external interference.``  
+  - **Trigger:** *capability_jump* and *cyber_major_incident* — the sudden leap in `ai_capability` to 57.0 and the deployment of model-generated attack tooling in a live cyber incident confirm that the frontier is now operationally hostile, and that sovereign capability without sovereign control is a liability, not an asset.  
+  - **Grounds:** The jump proves that frontier systems are no longer just tools — they are strategic actors in real time. The cyber incident, enabled by AI-generated exploit chains, shows that even if the EU had access to such models, unsecured or opaque systems would become attack vectors. Our commitment must now include not just capability, but assurance: we are not racing to parity, we are racing to a sovereign stack that is both powerful and defensible. Without auditability and isolation, we cannot trust our own systems in crisis.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases``  
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises``  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability``
+
+## New measure  
+**Measure:** Establish the Sovereign Model Assurance Framework (SMAF)  
+A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: large`  
+`Finishes on turn: 6`  
+`Targeted effect:` Increase ai_safety by 10–15 points for sovereign systems; ensure eu_ai_sovereignty gains are not undermined by opaque or insecure design; set a precedent for future oversight of foreign models operating in the EU  
+`Applies to:` EU institutions, selected member-state research labs, and EU-anchored compute providers participating in the SACP
+
+## Priority  
+**Priority:** InvestAI Gigafactories  
+We are accelerating this measure because the *capability_jump* and *cyber_major_incident* prove that the threat is no longer hypothetical — the world is now deploying AI-generated attack systems, and our only viable defence is sovereign infrastructure that we can both trust and scale; delaying the first exaflop cluster risks leaving the EU blind and powerless in the next crisis.
+
+## In practice  
+We are treating the *capability_jump* and *cyber_major_incident* as a single strategic inflection: the AI frontier is no longer a race of innovation, but a battlefield of deployment. The jump to 57.0 in `ai_capability`, combined with the use of model-generated tooling in a live cyber attack, confirms that the most powerful systems are now capable of autonomous offensive action — and that any system we build without ironclad oversight will be a danger to us, not a defence. That is why we are launching the Sovereign Model Assurance Framework (SMAF): a binding regime that embeds auditability, weight security, and operational isolation into the DNA of the Sovereign AI Core Programme. SMAF will be enforced by the European AI Assurance Directorate, which will now have legal authority to inspect training logs, verify model provenance, and mandate architectural constraints — including air-gapped deployment for high-risk agents.
+
+The InvestAI Gigafactories remain our top priority. We are now invoking Article 122 TFEU to override grid connection delays in Sweden, directing the Commission to assume direct management of the interconnection timeline. To maintain social peace, we are releasing €400 million from the Solidarity Fund to Brittany and Norrland this quarter, part of the €1.2bn package securing local buy-in. The first cluster will now be brought online in turn 7, with 40% of its capacity reserved for SACP — and SMAF will apply to every model trained or deployed on it. Meanwhile, the Tech Sovereignty Package is being leveraged to lock in supply chain resilience: we are finalizing a joint procurement agreement with Zeiss and IMEC for next-gen lithography tools, backed by a binding EU-wide commitment to purchase. The "dormant adoption" clause is now tied to access to the EU AI Compute Pool — if a member state blocks a site, it loses priority access to sovereign capacity.
+
+The EAAD is expanding its mandate in real time. In response to the *cyber_major_incident*, we are deploying a rapid audit team to assess the security posture of all critical infrastructure AI systems under CIRS, with a focus on software dependencies and agent autonomy levels. ENISA is leading a new red-teaming exercise across energy and water systems, simulating AI-generated zero-day exploits. CIRS upgrades are being fast-tracked through an emergency procurement lane, with funding tied to recovery fund disbursements. Public sentiment remains fragile, but we are beginning to shift the narrative: this is not just about building AI, but about building it *right* — under our control, for our security, and to our standards.

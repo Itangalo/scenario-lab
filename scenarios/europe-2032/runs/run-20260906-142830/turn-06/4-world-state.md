@@ -1,0 +1,11 @@
+### The Breach and the Response
+
+A coordinated cyber intrusion, powered by autonomous model-generated malware, swept across regional energy operators and hospital data systems in three member states. The attack exploited a poisoned software dependency, propagating silently before triggering cascading failures. Response was fragmented and slow—human-led CERTs were overwhelmed, and attribution remains unresolved. The incident confirmed that offensive AI capabilities now outpace human-led defences.
+
+In reaction, the EU launched the Sovereign Cyber Shield Initiative, a large-scale resilience measure targeting Tier 1 critical infrastructure. ENISA began deploying standardised, AI-audited defence stacks with swarm detection and zero-trust verification. However, rollout faced immediate legal resistance from member states wary of centralised mandates, and integration delays plagued early implementation. The reprofiled €45bn from the EIB and the completed Tech Sovereignty Package provided funding, but disbursement hinged on untested coordination mechanisms.
+
+Meanwhile, the Secure Energy-Backed Compute Sovereignty programme officially concluded, yet physical deployment lagged. Germany and Austria continued legal challenges against power ring-fencing, and ENTSO-E’s refusal to bind allocations undermined the Union’s energy autonomy claims. The Commission pushed forward under Article 194 TFEU, but legal uncertainty persisted.
+
+The European AI Assurance Directorate (EAAD) certified its first models, but real-time logging for critical systems remained blocked by Italy and Hungary. Public trust eroded further as protests by displaced professionals grew, and media framed the EAAD as symbolic. A new outreach effort repurposed SCAP infrastructure to train displaced workers in cyber roles, but uptake was low.
+
+AI capability advanced to 61.5, driven by autonomous code generation. Open-weight models reached 49.0, aided by EU access to non-US frontier models. However, safety lagged—no new safeguards landed on shipped systems, and the gap between capability and safety widened.

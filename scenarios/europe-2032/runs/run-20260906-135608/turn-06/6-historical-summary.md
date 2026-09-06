@@ -1,0 +1,9 @@
+AI capability reaches 61.0 in 2029 as closed labs advance self-improving agents in materials science and software automation, while open-weight models rise to 49.0, constrained by limited frontier compute access. Safety improves modestly to 23.0 with detection of AI-driven feedback loops in critical systems, though systemic safeguards remain limited.
+
+The Taiwan blockade triggers a global semiconductor crisis, enabling the EU to leverage control over key fabrication technologies via the Chips Act, bolstering compute sovereignty. The Tech Sovereignty Package concludes successfully, unlocking €28bn in private investment and streamlining infrastructure across six member states. The Critical Infrastructure Resilience Sprint completes with 78% audit coverage and fallback systems in 42% of Tier 1 operators, transitioning to proactive monitoring.
+
+Amid rising systemic risks, the EU launches the Systemic Integrity Watch—a category 1 initiative hosted at ENISA—integrating real-time telemetry across energy, health, and digital sectors to detect runaway AI coordination, funded at €620m under revised NIS2 emergency powers. Implementation begins with partial initial operations.
+
+Public sentiment rises slightly to 35.0 due to visible institutional adaptation, though synthetic disinformation ahead of regional elections fuels ongoing anxiety. Political capital increases to 45.0, driven by completion of major initiatives and a proposal bonus from the new measure, within portfolio limits. U.S. policy remains in retrenchment, maintaining strategic uncertainty in transatlantic cooperation.
+
+Energy and municipal systems face escalating AI-enabled threats, including evolved cyber toolkits and feedback loops, underscoring persistent infrastructure vulnerabilities despite improved resilience.

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.20333333333333334,
+    "probability_samples": [
+      0.15,
+      0.21,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_open_source_intelligence",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A distributed collaboration of independent researchers and hobbyists releases a functional, open-weight cyber-operations agent built entirely from publicly available models and frameworks. The tool, while crude, demonstrates autonomous reconnaissance and vulnerability probing at scale, marking the first known case of open capability directly enabling offensive cyber capacity outside state or corporate control.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

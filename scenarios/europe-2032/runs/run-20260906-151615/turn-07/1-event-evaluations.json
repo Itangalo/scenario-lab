@@ -1,0 +1,261 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.17255281666498568,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.05333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9472493642696732,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7880009346509858,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3240324908897947,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.18333333333333335,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.049250028802310886,
+    "triggered": true
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.013104978718205484,
+    "triggered": true
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.23649623739210812,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.04690299216727378,
+    "triggered": true
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.15175396853262946,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9896758160024972,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.18172188860417415,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8020502707991783,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8576138095660863,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_data_pact",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Several Nordic and Benelux states, frustrated by the EU's paralysis and exposed by the member state defection, quietly form a regional data-sharing and compute pooling agreement outside formal EU structures. It includes joint security audits and red-teaming of deployed AI systems, leveraging their combined technical capacity. The pact is framed as a pilot for distributed sovereignty but risks deepening institutional fragmentation.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.624425910984342,
+    "triggered": false
+  },
+  {
+    "description": "A member state, citing national competitiveness and frustrated by EU delays, signs a bilateral agreement with a US hyperscaler for access to a 67.0 model outside the Containment Protocol. This undermines collective control and triggers formal warnings from Brussels, including invocation of the Anti-Coercion Instrument. Legal challenges delay enforcement, but the precedent is set.",
+    "emergent": true,
+    "id": "emergent_member_state_defection_escalation",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.15319060910428706,
+    "triggered": false
+  },
+  {
+    "description": "Amid stagnant public sentiment and visible job displacement in entry-level professions, grassroots movements in several member states intensify direct action against AI infrastructure. Data centre construction sites in Sweden and France face blockades and sabotage attempts, with local support in some regions. Policing costs rise, and the EU struggles to respond cohesively.",
+    "emergent": true,
+    "id": "emergent_backlash_physical_wave",
+    "probability": 0.03,
+    "probability_samples": [
+      0.0,
+      0.09,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coordinated disinformation campaign using AI-generated content in multiple European languages overwhelms local fact-checking capacity ahead of regional elections in three member states. The content exploits existing cultural fissures and is indistinguishable from human-produced media to non-expert observers. Attribution remains unclear after two weeks.",
+    "emergent": true,
+    "id": "emergent_disinfo_wave",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A grassroots coalition of municipal governments, frustrated by central inaction on AI governance, forms a voluntary network to share defensive tools, incident data, and procurement standards for AI systems. The network begins with 14 cities across 8 member states and gains public visibility through a joint declaration on 'AI for Public Trust'.",
+    "emergent": true,
+    "id": "emergent_municipal_network",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

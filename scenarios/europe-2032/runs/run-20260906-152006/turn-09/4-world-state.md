@@ -1,0 +1,13 @@
+### The Surge Begins — Too Late?
+
+The EU enters 2030’s final months in crisis response mode. The Sovereign Compute Backbone is complete — racks hum in Kiruna and Saint-Malo — but remain idle. The Horizon Europe Fast-Track Talent Corridor, launched this turn, fails to attract meaningful frontier talent. Legal resistance from a defector state, citing national sovereignty, blocks staffing mandates, leaving the Union with infrastructure but no operators.
+
+A major ransomware wave, self-propagating and AI-optimized, cripples hospital IT systems across three member states. Response is fragmented; patching lags, segmentation fails, and AI-managed legacy code accelerates cascades. The attack underscores systemic fragility. Simultaneously, a peer-reviewed study demonstrates that fine-tuned public models can generate plausible human-infective biological vectors from open data. The biosecurity community is divided, but the signal is clear: the threshold is near.
+
+In response, the EU launches the National Resilience Surge, a large category 6 measure, prioritizing binding cyber and bio-hardening for critical infrastructure. ENISA issues emergency directives, HERA expands into synthetic biology, and funding is diverted from industrial reserves. Compliance will be tied to Cohesion Fund access — but only in principle for now. With political capital at 5.0 and public trust eroding, enforcement is uncertain. Member states resist new impositions, and the defector state threatens legal action. Implementation will take time; no mandates are yet in force, and the first compliance deadlines are set for the next turn.
+
+AI capability advances to 72.0 as labs refine autonomous exploit chains. Openweight models improve incrementally, reaching 59.0, constrained by the frontier and lack of safety breakthroughs. No safety improvements land in deployed systems. Public sentiment drops to 15.0 as job losses and high-profile disruptions fuel backlash. The EU’s credibility frays — it builds fortresses no one can staff, while the world burns at the gates.
+
+### Sovereignty Without Capacity
+
+The physical backbone is EU-owned, but without personnel or operational systems, sovereignty gains are symbolic. Political capital erodes under the weight of eight active or failed initiatives. The new resilience surge has begun, but its rollout is partial and contested. The first effects — delayed patching, initial biosurveillance protocols — will appear next turn at the earliest. For now, the surge is a promise under strain, not a shield.

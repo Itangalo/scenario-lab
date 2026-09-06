@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 50.0 to 56.5 (+6.5) while `ai_capability` increased only by 1.5 (from 61.5 to 63.0). This violates the rule that `openweight_capability` may never exceed `ai_capability`. Even if both are rising, a jump of 6.5 points in `openweight_capability` when `ai_capability` grows by only 1.5 risks implying or causing an inversion, especially given the prior gap was only 11.5 → now 6.5. The narrative offers no justification for such a disproportionate leap (e.g., global open release of frontier models), and no catastrophic physical event has occurred to reset the baseline. Such a shift must be bounded by the lead of `ai_capability`.\n- Modelling choice 5 violated: Two measures are advanced as priorities — \"Sovereign AI Core Programme\" and \"Forge the Middle-Power AI Coalition\" — each taking −3 portfolio charge and with the priority flag applied (−1). The notepad shows both being actively driven with full cost treatment. Constitutional constraint 5 limits the EU to at most one new measure per turn and at most one named priority. Advancing two major initiatives simultaneously with full priority cost accounting constitutes introducing multiple priorities, which is invalid.\n- Economic/Physical Constraint violated: The narrative states that \"no new sites [for InvestAI Gigafactories] were completed\" due to delays, yet the proposal bonus awards +5 for \"answers eu_frontier_access_denied and emergent_crisis_coordination_failure\". This implies a successful crisis response tied to a concluded programme that failed on delivery. A bonus of this magnitude should require tangible effect, not just symbolic value. Given no physical delivery occurred and the programme ended without category 4 completion, awarding a large proposal bonus misaligns outcome with reward under rule 9 — effectively telegraphing future access gains without current justification."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

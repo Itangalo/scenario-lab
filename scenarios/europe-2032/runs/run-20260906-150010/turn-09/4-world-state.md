@@ -1,0 +1,11 @@
+### The Weight of Response
+
+The EU operationalises the **Measures for Joint Threat Response Integration**, marking the first live deployment of a coordinated cyber-bio early-warning network. Daily threat briefings now link 14 member states through a joint node hosted by ENISA and ECDC, with data flows enabled under emergency legal provisions. Despite hard-won agreements, concessions to Poland, Hungary, and Austria—including national veto rights and a four-year sunset clause—undermine long-term cohesion, leaving the framework fragile beyond immediate crisis utility.
+
+Meanwhile, global AI capability inches forward to 63.0, entering the upper half of the 62–68 terminal zone. Persistent agent systems demonstrate extended autonomous operation, deepening concerns about control. With no new safety evaluations in place and monitoring still reactive, `ai_safety` collapses further to 7.0 after the prior incident exposes systemic blind spots. Open-weight models climb to 50.5, buoyed by leaked training data and improved replication techniques, narrowing the gap with the frontier.
+
+The EU launches the **European Sovereign Compute Corridor**, a large category 4 initiative aimed at anchoring strategic compute within EU jurisdiction. Legal, energy, and intergovernmental alignment is prioritised from the outset, with early engagement of energy regulators and transmission operators. However, the measure is only in early planning—site selection ongoing, permitting not yet fast-tracked—and yields no immediate sovereignty gain.
+
+Resilience improves slightly to 36.0, reflecting the partial absorption of cyber-bio risks through the new coordination framework. Yet this gain is offset by stagnation elsewhere: healthcare and municipal infrastructure remain exposed, and biological detection lags.
+
+Sovereignty dips to 30.0. Despite no active capacity denial event, the failure of the prior compute mobilisation continues to weigh, compounded by rising capability (−1) and no delivery from the new corridor yet. Political capital weakens to 23.0, burdened by the ongoing portfolio: the finished measure no longer costs, but the new large measure incurs −3, and the priority −1. No bonus offsets the burden, and public sentiment remains flat at 31.0, reflecting ambivalence toward AI and distrust in delivery.

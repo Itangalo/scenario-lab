@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 59.0 (+7.0) while `ai_capability` only increased by 1.5 (from 65.0 to 66.5). This violates the rule that `openweight_capability` must not exceed `ai_capability`. At no point can `openweight_capability` be greater than `ai_capability`, and here it reaches 59.0 while `ai_capability` is only 66.5 — a permissible gap, but the jump of +7.0 in openweight capability is implausibly large relative to the +1.5 in overall capability, especially when no sovereign compute was deployed and dependency is deepening. More critically, the narrative provides no justification for such a large leap in openweight capability, particularly when the EU’s own infrastructure efforts failed. The increase suggests a surge in accessible open-weight models, but without a corresponding rise in `ai_capability` or a narrative event (e.g., mass leak, coordinated open release), this divergence is unexplained and structurally invalid.\n- Invariant 2 further violated: The jump in `openweight_capability` by 7.0 points in a single turn exceeds the bounds of plausible accumulation given that `ai_capability` grew only modestly and no enabling event (e.g., catastrophic leak, open release by frontier lab) is narrated. The constitutional rule that `openweight_capability` may only rise or stay flat is satisfied, but the implicit constraint that it tracks closely with `ai_capability` — and never exceeds it — is at risk of being functionally violated due to unrealistic divergence. While not yet exceeding, the rate of growth is inconsistent with the regime of accumulation defined in metric rules and the narrative context of deepening dependency and failed sovereign deployment."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

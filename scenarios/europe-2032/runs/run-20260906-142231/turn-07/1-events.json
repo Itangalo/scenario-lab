@@ -1,0 +1,37 @@
+[
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_crisis_coordination_failure",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Multiple EU member states independently deploy incompatible AI monitoring systems in response to the recent cyber incident, leading to fragmented incident reporting and mutual distrust. The European Commission attempts to mediate, but legal disputes over data sovereignty and audit rights prevent harmonization. This institutional paralysis reinforces the perception that the EU cannot coordinate under pressure, deepening fragmentation.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

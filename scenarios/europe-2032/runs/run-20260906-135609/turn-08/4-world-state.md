@@ -1,0 +1,13 @@
+### The Fractured Response
+
+A major AI-generated cyberattack cripples public health IT systems across three member states, exposing the limits of national silos. In response, a new Joint Cyber Command forms among affected allies, offering real-time threat telemetry and coordinated countermeasures. The EU moves swiftly to secure a permanent seat, launching the Joint Threat Response Integration Initiative. Germany and Poland endorse immediate integration, but France demands strict data sovereignty, insisting on a Luxembourg-based filtering node. A compromise is reached—with a sunset clause—allowing conditional participation. Full operational integration remains incomplete, but early data-sharing protocols are established, contributing to a resilience boost.
+
+Meanwhile, offensive AI capabilities surge as automated vulnerability discovery spreads into clinical coding, where outcomes can now be verified cheaply and at scale—accelerating model refinement in high-stakes domains. The frontier advances to 66.0, driven by self-improving loops now entrenched in leading labs. With no matching safety gains, and interpretability still collapsed, ai_safety drops sharply to 11.0. The open frontier widens too: a new open-weight agent framework, loosely derived from last year’s closed models, reaches broad multi-task competence, pushing openweight_capability to 52.5.
+
+The Emergency Compute Mobilisation Directive continues, but delays mount. France’s insistence on local software control stalls the Paris Basin node, slowing modular deployment. While ASML and STMicroelectronics deliver on hardware commitments, grid integration lags, and the bottleneck shifts to orchestration. Sovereignty gains no momentum, and with capability rising by 1.5, it erodes by 1. Export controls under U.S. retrenchment remain tight, denying access to critical tooling—no new event fires, but the cost of dependence persists.
+
+Public sentiment worsens as the cyberattack disrupts hospital appointments and data leaks surface. Media frames the crisis as one of dependency and opacity. Protests flare near data centres in Bavaria, reinforcing a narrative of失控. The new initiative earns no sentiment lift—resilience efforts are seen as reactive. Political capital declines under portfolio strain: the new measure incurs costs, the priority adds burden, and no completion bonus arrives yet. A narrow gain from partial joint response (+2) is outweighed by ongoing expenses and falling public confidence.
+
+### A Temporary Seat at the Table
+
+The EU is in the room—but not at the table. For now, it listens, adapts, and builds—just slowly enough to fall behind.

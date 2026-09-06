@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: European AI Emergency Response Corps −3 (finished), Sovereign Compute Activation Protocol −3, Emergency Sovereign Access Directive −3, priority −1 = −7  
+PROPOSAL BONUS: Emergency Sovereign Access Directive (cat 4, large) +3 — responds directly to emergent_sovereignty_crisis and bio_uplift_findings, both severe and current  
+LEGITIMACY LENDS: none (capital 4.0 < sentiment 37.0)  
+SOVEREIGNTY: 16.0 last turn, no capacity event, Emergency Sovereign Access Directive in flight +2, capability rose 4.0 −1 = 18.0  
+US_POSTURE: CONSOLIDATION  
+EMERGING DEVELOPMENTS: `emergent_biosecurity_leak` -- first noted turn 8, listed in 3 turn(s) so far: A non-state group or researcher demonstrates the ability to use open models at capability ~56 to design a functional, transmissible viral vector with moderate pathogenicity, using only publicly available tools and datasets. The design is intercepted by a distributed bio-watch network before synthesis, but its technical coherence forces a reassessment of open-model risk. The incident is not an attack, but it proves the barrier to entry has collapsed. This strengthens the case for sovereign research access and hardens support for the Secure Open-Source AI Research Access Framework.

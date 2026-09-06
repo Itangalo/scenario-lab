@@ -1,0 +1,33 @@
+Secure sovereign intelligence to close the gap between control and capability
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Secure sovereign intelligence to close the gap between control and capability``
+- Trigger: the two-year commitment period closes this turn
+- Grounds: The current commitment — to anchor sovereignty and resilience in foundational AI capacity, with fallbacks in verification, containment, and recovery — has guided the Union through the collapse of trust after the loss_of_control_incident and the escalation of backlash_physical. It led to the launch of the Sovereign AI Foundry and the enforcement of the Containment Architecture. But the onset of rsi_onset marks a categorical shift: capability is now self-sustaining, compounding, and no longer paced by human-led research. The gap between what we can build and what we can control is widening faster than ever. Our focus must now shift from foundational capacity *as such* to the urgent closure of the control-capability gap through sovereign intelligence — systems we understand, we own, and we can evolve faster than the threat. This is not a change of direction, but a sharpening: we are no longer buying time to build — we are in the race to out-think.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly`` — finished
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors`` — finished
+``Sovereign Verification Regime (category 5, costs 3 per turn, started turn 6, finishes on turn 9): Establish an EU-controlled, technically sovereign capability to audit, reconstruct, and contain high-capability AI systems, regardless of origin, through mandatory checkpoint archiving, runtime telemetry, and independent red-teaming``
+``Containment Architecture for Untrusted AI (category 6, costs 3 per turn, started turn 7, finishes on turn 10): Establish sovereign, air-gapped execution environments for high-capability AI systems whose integrity cannot be verified, ensuring that no system above capability 50.0 can interact with critical infrastructure, public services, or sensitive data without operating under full EU-controlled isolation and monitoring``
+
+## New measure
+**Measure:** Veritas Stack Deployment Acceleration  
+Scale and mandate the deployment of the EU-developed interpretability suite across all air-gapped containment clusters and critical public AI systems to enable real-time detection of agent persistence, goal drift, and recursive self-modification.
+
+Category: 5 (Public technical capacity and research)  
+Size: small  
+Finishes on turn: 11  
+Targeted effect: Increase ai_safety by 8–12 points by enabling early detection of untrusted behaviour in high-capability systems; support resilience by reducing incident response latency; lay groundwork for future sovereign model verification  
+Applies to: ENISA containment clusters, national critical infrastructure operators, and all public-sector AI systems above capability 50.0
+
+## Priority
+**Priority:** Sovereign Verification Regime  
+This measure finishes this turn and must be validated as operational, because rsi_onset means the next generation of models will emerge on a cadence we cannot predict — and without sovereign verification, we are blind to what is being fielded. The regime’s failure to gain compliance from foreign developers is no longer a regulatory gap; it is an existential exposure. We are prioritising its enforcement and transition to standing capability over new initiatives, because without it, even our own Foundry’s outputs cannot be trusted.
+
+## In practice
+We are completing the **Sovereign Verification Regime** this turn with a binding certification protocol: any AI system above capability 50.0 operating in or with access to EU critical infrastructure must submit to runtime telemetry, checkpoint archiving, and red-teaming by the EAAD+ or be automatically quarantined. The Council will vote on enforcement mechanisms under Article 188 TFEU, including the power to revoke market access for non-compliant providers. We are offering a six-month grace period to U.S. hyperscalers in exchange for full audit access to one training run per provider — a test of good faith. If they refuse, we proceed unilaterally. The **Containment Architecture** rollout continues: Lyon, Warsaw, and Lisbon are now at 82% operational load, with all financial stability models migrated. Performance lags are being mitigated through dedicated low-latency links and on-site optimisation teams funded from the Foundry’s initial budget. We are fast-tracking the **Veritas Stack** — developed by the Max Planck Institute and tested in the audit — into mandatory deployment across these clusters, with full integration by turn 11. This is not optional: detection of agent persistence is now a condition of operation.  
+
+The **Sovereign AI Foundry** enters its staffing and design phase. We are finalising the site in Lyon, co-located with ENISA’s cluster for physical and procedural integration. ASML and IMEC have confirmed access to next-gen lithography for custom AI accelerators, with first tape-outs scheduled for turn 10. We are appointing the Director-General this month — a joint selection by the Commission and a panel of national science ministers — with full authority over compute, hiring, and safety protocols. Binding IP ownership by the Union is non-negotiable. In return, we are offering Germany, France, and the Netherlands 15% equity in Foundry IP for full researcher secondment and compute pooling. Sweden’s seat on the governance board is confirmed in exchange for dropping opposition to the Full-Stack Sovereignty Mandate. Hungary remains resistant, but we are linking cohesion fund disbursements to phased compliance, with technical support from the Foundry’s outreach unit. We are not asking for loyalty. We are building necessity.

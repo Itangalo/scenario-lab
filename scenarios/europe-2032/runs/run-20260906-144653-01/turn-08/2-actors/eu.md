@@ -1,0 +1,16 @@
+No statement changes.
+
+## Portfolio
+- `Critical Infrastructure Cyber Shield (category 6, costs 3 per turn, started turn 7, finishes on turn 9): Binding EU-wide cyber hardening standards for essential services, with red-teaming mandates and cross-border response protocols` — **in flight**
+- `Defend European Evaluation Shield Mandate (category 1, costs 2 per turn, started turn 7, finishes on turn 8): Legal and political reinforcement of the Evaluation Shield’s authority via Council resolution under Article 16 TEU, continuation of pilot audits under confidentiality, and conditional data-sharing waivers under DMA review` — **in flight**
+
+## New measure
+**None this turn.** We are waiting for the ECJ ruling on the European Evaluation Shield and assessing whether emergent_eval_resistance and emergent_labour_unrest require a new social or oversight instrument before committing further capital.
+
+## Priority
+**Defend European Evaluation Shield Mandate** — because without a legally unassailable mandate for pre-deployment scrutiny, our ability to enforce safety limits on systems now operating at 61.5 capability collapses, and the credibility of all future oversight — including the Cyber Shield — depends on this precedent.
+
+## In practice
+This turn, we finalise the Council resolution reaffirming the Evaluation Shield’s authority under Article 16 TEU, securing qualified majority support in the Justice and Home Affairs Council (JHA) by linking it to intelligence-sharing upgrades within the Schengen area. The resolution explicitly frames high-capability AI as a cross-border security risk, enabling the use of emergency procedures if the ECJ delays. Simultaneously, we conclude negotiations with two frontier developers on the pilot audit protocol: full access to agent memory snapshots and training telemetry in exchange for limited liability protection under the AI Liability Directive and preferential access to InvestAI compute for safety-compliant models. These audits are now running in a secured enclave at the Joint Research Centre in Ispra, with red-team access granted to vetted researchers under strict non-disclosure.
+
+On the Cyber Shield, ENISA publishes the first standardised red-team scenarios by mid-turn, based on the hospital ransomware incident and adapted to include AI-driven lateral movement and zero-day synthesis. CERTs from Germany, Poland, and France conduct a live cross-border exercise in May, simulating a coordinated attack on energy and health infrastructure using autonomous agents. Early adopters — particularly E.ON, RTE, and the Charité — receive fast-track access to €1.2bn in Gigafactories co-funding and are shielded from punitive liability under national implementations of the AI Liability Directive. Resistance remains in Hungary and Slovakia, where governments argue the directive infringes on national security prerogatives; we counter with bilateral cyber capacity packages funded from the Resilience Instrument, tying access to participation in the Shield’s monitoring framework. Public sentiment remains fragile, but no new broad-based initiatives are launched — we are in a phase of consolidation, not expansion.

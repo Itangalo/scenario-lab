@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: Public AI Redress Network −3, priority −1 = −4  
+PROPOSAL BONUS: Public AI Redress Network (cat 9, large) +6 — directly answers automated_decision_scandal, a severe internal event with major political fallout, demanding systemic oversight and restoration of trust  
+SOVEREIGNTY: 16 last turn, no capacity event, capability rose 1.0 −1 = 15  
+US_POSTURE: CONSOLIDATION  
+emergent_ai_literacy_drive -- first noted turn 7, listed in 4 turn(s) so far: A coalition of European public broadcasters, academic institutions, and digital rights NGOs launches a pan-European AI literacy and verification campaign, deploying open tools to detect synthetic media and explain AI decision-making in public services. The initiative gains rapid uptake in schools and local governments, partially countering disinformation and improving public understanding. It does not move public sentiment immediately but establishes a foundation for long-term legitimacy of AI governance.

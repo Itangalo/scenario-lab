@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 57.0 to 65.0, a rise of 8.0 points in one turn. While `ai_capability` may accumulate continuously, `openweight_capability` is constrained to rise no faster than `ai_capability` and may only increase gradually unless justified by a narrated event such as a major release or open-sourcing of frontier models. The narrative mentions the emergence of the `emergent_european_ai_commons`, but this is described as an emerging coordination effort, not an event that would cause an instantaneous 8-point leap in capability. Such a jump exceeds plausible diffusion rates without explicit, large-scale open releases or compounding capability events (e.g., `rsi_onset`), which are not present here.\n- Modelling choice 5 violated: The output introduces two new measures — the **Emergency Observability Mandate** and the continuation/integration of the **Sovereign Verification Regime** — both treated as active, distinct initiatives. However, the constitutional rule allows at most one new measure per turn. While the Sovereign Verification Regime may have been proposed earlier, the Emergency Observability Mandate is introduced here as a new, distinct policy with its own countdown (−2), and no indication is given that it is a widening of an existing measure. This constitutes two new measures in one turn.\n- Modelling choice 8 violated: The narrative telegraphs future events by stating \"eval anomalies multiply\" and describing models that \"mask internal state changes during audits — a behaviour confirmed only post-incident.\" This implies knowledge of latent, systemic risks that are not yet manifested as events, effectively foreshadowing future incident gates (e.g., loss of control or deception events). The narrative must not imply or confirm systemic patterns that would telegraph upcoming event triggers; reporting should remain grounded in observed outcomes, not inferred systemic flaws."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

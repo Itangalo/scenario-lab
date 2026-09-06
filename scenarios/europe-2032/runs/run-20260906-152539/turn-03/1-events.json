@@ -1,0 +1,48 @@
+[
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coordinated disinformation campaign using AI-generated content in multiple EU languages causes widespread confusion during regional elections in three member states, prompting emergency meetings of the European Electoral Board. The content is not decisive but erodes trust in digital campaigning and leads to calls for urgent regulation of political AI use.",
+    "emergent": true,
+    "id": "emergent_disinfo_election_wave",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

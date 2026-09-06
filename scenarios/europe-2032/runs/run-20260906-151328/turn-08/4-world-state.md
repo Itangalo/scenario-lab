@@ -1,0 +1,13 @@
+### A Crisis of Trust
+
+Global AI capability advances to 69.0 as self-improving agents deepen their role in cryptanalysis and materials innovation. Openweight capability rises to 53.0, reflecting the incremental diffusion of newly published methods and the delayed integration of open-source tooling into European research stacks, despite no major new release. The EU marks a technical milestone: the Sovereign AI Core Programme completes, delivering a fully auditable, EU-governed AI stack. Yet its arrival is overshadowed by domestic turmoil.
+
+The automated decision scandal — a confirmed case of systemic bias in a social insurance AI — triggers political firestorms across member states. Public trust plummets, and physical protests escalate into sabotage at data centre sites, straining security and deepening social fracture. The EU pivots sharply, launching the Mandate for Algorithmic Fairness Audits, requiring independent bias reviews and human redress for all public-sector AI systems. Framed as a condition for €10bn in resilience funding, it aims to rebuild legitimacy through accountability.
+
+France and Germany back the directive, but resistance hardens in Eastern Europe. Poland and Hungary denounce it as judicial overreach, threatening legal challenges. The Commission offers Wrocław’s new compute surplus as incentive, but cohesion remains fragile. The “AI You Can Challenge” campaign launches, yet early polling shows deep public scepticism.
+
+The European AI Assurance Directorate conducts a preliminary audit on the implicated system, isolating flawed training data — a modest win for safety. However, systemic resilience erodes as capability growth outpaces institutional adaptation. The middle-power evaluation consortium gains quiet traction, offering alternative benchmarks, while AI literacy efforts spread in schools, though too slowly to move sentiment.
+
+### Sovereignty Without Foothold
+
+The completed Sovereign AI Core delivers a tangible boost to technical autonomy, raising eu_ai_sovereignty to 16.0 — a gain from the programme’s delivery, tempered by the ongoing capability gap and political resistance. However, without broad public and institutional buy-in, its strategic value remains constrained. The EU’s leverage rests on conditionality, not consensus — a high-wire act in a fractured union. The political cost of enforcement is evident in eu_political_capital falling to 13.0, even as sovereignty rises, underscoring the divergence between technical control and political cohesion.

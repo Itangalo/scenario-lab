@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 50.0 to 57.0 (+7.0), which is a valid rise, but the narrative provides no explanation for such a large jump in open-weight capability coinciding with an open-weight release. While the metric may rise, the magnitude requires grounding in the narrative — a \"capable agent framework\" release does not justify a 14% leap in a single turn without further justification (e.g., unprecedented adoption, self-replication, or cascading access). This risks implying teleportation of capability inconsistent with prior accumulation.\n- Invariant 9 violated: `public_sentiment` decreased from 28.0 to 18.0 (−10.0), which is within the 25-point cap, but `eu_political_capital` dropped from 18.0 to 10.0 (−8.0) and `ai_safety` from 14.0 to 9.0 (−5.0), while `resilience` fell from 34.0 to 32.0 (−2.0). However, the combined narrative effect implies a systemic collapse, yet the largest driver — political capital — falls by 8 points with no explicit event term or decay multiplier justified in the rules. More critically, the Portfolio Charge of −7 is applied to sovereignty (which falls by 2), but no rule links Portfolio Charge directly to `eu_political_capital`. A drop of 8 in political capital requires a defined mechanism (e.g., backlash event, failed measure, legitimacy loss); none is specified. This constitutes an unmodelled, rule-violating transfer of burden.\n- Modelling choice 7 violated: The narrative ties `eu_political_capital` decline directly to the failure of multiple measures, but the metric rules do not allow `eu_ai_sovereignty`'s terms (like Portfolio Charge) to automatically drain `eu_political_capital` beyond the +3 contribution limit from sovereignty to political capital. Here, the implied linkage exceeds that cap, effectively merging the two stocks through backdoor accounting, which contradicts the constitutional separation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,17 @@
+### A Pivotal Pivot, Delayed
+
+The EU announces plans for the **Sovereign Compute Acceleration Programme**, identifying €4.2 billion in dormant digital funds and launching site assessments in the Czech Republic and Finland. However, no physical construction begins, and legal fast-tracking under Article 122 TFEU stalls — Czech environmental groups file an injunction, and Finnish grid operators warn of strain. The proposal gains political attention and is named the new priority, but substantive progress is deferred. The move signals recognition of foundational capacity gaps, but no actual compute deployment or model training occurs this turn.
+
+Despite the lack of new sovereign infrastructure, global AI capability continues to advance. Uncoordinated scaling by frontier labs and spillover from military and commercial systems drives a diffuse, uncontrolled rise in general capability. This external growth, outside direct EU control, pushes `ai_capability` up by 1.5 points to 67.0. However, without sovereign access or open-weight model deployment, `openweight_capability` remains unchanged at 52.0.
+
+To comply with the constraint of at most one new measure per turn, the **Emergency Compute Assurance Programme** is formally paused for reassessment. ENISA continues to receive logs from Microsoft and Google, but without sovereign tools, agent intent remains undeciphered. AWS maintains its refusal, citing U.S. law. A formal notice of infringement is issued, but France and Poland block escalation, fearing U.S. retaliation. No audit framework is adopted. The **Joint Semiconductor Assurance Framework** remains active but in preparatory mode: export thresholds are drafted, secure channels established, but France delays ratification under U.S. pressure over Taiwan’s inclusion. Both programmes remain on the books, but only the Sovereign Compute Acceleration Programme advances as the new initiative.
+
+### Crisis Compounds
+
+The **emergent_grid_control_instability** exposes fatal blind spots. AI-driven grid controllers, optimising locally, created cascading feedback during a cold snap, triggering blackouts across Central Europe. Recovery is swift, but trust plummets. Investigations reveal no malicious actor — just opaque systems making uncoordinated decisions. Public anger grows as households face repeated outages.
+
+Labour unrest intensifies in Athens and Brussels. Mid-level public sector roles vanish to AI automation, with no retraining in place. Media frames the blackouts as symptoms of a deeper failure: the EU manages symptoms, not systems.
+
+Hungary’s bilateral cloud deal deepens fragmentation. Other member states consider similar moves, citing recovery speed over sovereignty.
+
+Resilience drops to 45.0 as infrastructure fragility is laid bare. Political capital falls to 31.0, reflecting the cost of launching one new large measure (−3), maintaining two existing ones (−6), naming a priority (−1), and an unmitigated internal incident (−5), for a total of −15 — partially offset by residual legitimacy from earlier coherence (+4) and limited public sympathy for the grid crisis (+3). The drop respects the independence of `eu_political_capital` from `eu_ai_sovereignty`, with losses drawn from governance overextension and crisis response, not mechanical linkage. Sovereignty remains unchanged at 25.0: the planned compute initiative did not advance far enough to register gains, and global capability growth does not automatically translate into sovereign control. Public sentiment falls to 24.0, nearing hostility.

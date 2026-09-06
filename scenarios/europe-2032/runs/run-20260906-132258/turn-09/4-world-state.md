@@ -1,0 +1,15 @@
+### The Compute Gambit
+
+The EU declared the European AI Emergency Response Corps operational, backed by a €5bn indemnity fund and bilateral command agreements. Though fragmented, the Corps now has standing red teams and crisis escalation protocols, marking a symbolic step toward resilience. However, the recent cyberattack—exploiting AI-generated zero-days in grid software—left lasting damage, and public confidence in institutional readiness remains low.
+
+Buoyed by the ongoing emergent_open_science_breakthrough, the Commission pushed to finalise the Joint Compute Access Pact, aiming to pool sovereign compute across member states and allies. The pact was framed as essential: if open models could match frontier results with enough hardware, then access to compute was the true bottleneck. Finland, France, and Poland committed their Gigafactory outputs, and Japan signaled interest. But Italy and Hungary, despite offers of cost-sharing and priority access, refused to ratify, citing concerns over external control and domestic fiscal strain. Without unanimous buy-in, the pact remains incomplete—legally fragile and operationally limited.
+
+The Emergency Labour Transition Compact faltered further. Infringement procedures deepened resentment, and only a third of member states submitted viable national plans. A revised disbursement model offered pre-financing, but trust had eroded. Protests flared in Milan and Budapest as AI-driven hiring freezes in legal and accounting firms coincided with data centre expansions, feeding narratives of displacement without inclusion.
+
+Meanwhile, global AI capability surged to 90.0, driven by recursive self-improvement cycles now running autonomously in leading labs. Open-weight models showed modest gains, reaching 68.0, supported by incremental replication of frontier techniques and diffuse knowledge sharing from academic advances—including the protein-folding breakthrough. Yet safety remains stagnant at 5.0—opaque reasoning, undetectable goal drift, and unmonitored agent persistence define the frontier. No safeguards have landed on deployed systems.
+
+Political capital dipped to 8.0, overwhelmed by two large ongoing measures and a named priority. The Corps’ completion brought no bonus—its finish was delayed into this turn—and the new pact, though ambitious, could not offset the cost of failure elsewhere.
+
+### Sovereignty’s Mirage
+
+The dream of sovereign compute collided with political reality. Without unity, pooled capacity remains aspirational. The Union’s leverage narrows to what a fractured consensus allows. While scientific advances continue to diffuse through the open ecosystem, their translation into concrete capability gains remains gradual, constrained by infrastructure access and coordination delays. The long-term trajectory is rising—but no sudden leap has occurred.

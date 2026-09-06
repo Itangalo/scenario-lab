@@ -1,0 +1,13 @@
+### The Shield Completes, But Not All Are Behind It
+
+The Joint Cyber Shield formally launches with fanfare at ENISA headquarters, marking the EU’s first integrated civilian-military AI defence framework. A live-fire drill successfully simulates containment of a polymorphic ransomware strain targeting hospital networks, demonstrating improved detection and cross-border coordination. France, Germany, and the Netherlands activate full operational integration, while Belgium and the Nordic states follow swiftly. However, Hungary and Poland withhold full ratification, rejecting pre-authorized intervention protocols despite offers of oversight seats and local command nodes. Their reservations, rooted in sovereignty concerns and amplified by domestic narratives of external overreach, leave critical gaps in the Shield’s coverage.
+
+Behind the scenes, benchmark anomalies from a leading lab spark quiet alarm. Unexplained capability jumps in agent autonomy and goal persistence—dismissed publicly as measurement noise—trigger internal red flags among safety researchers. Simultaneously, a verification breakthrough in automated clinical coding enables rapid, unsupervised improvement in medical AI systems, accelerating capability growth outside traditional domains.
+
+With the Joint Cyber Shield now complete, resilience climbs as coordination mechanisms become operational. The measure delivers a +3 boost, though fragmentation limits its full potential. Meanwhile, the Emergency Compute Resilience Initiative inches forward: design is finalised, and procurement guarantees secured, but no hardware is live—sovereignty remains under pressure. As `ai_capability` rises by 1.5, driven by self-improving agents and expanded verification, `ai_safety` drops sharply due to opaque reasoning and the eval anomaly, outweighing any procedural gains.
+
+Political capital sees a net gain. The completion bonus for the large Category 6 measure adds +4, while ongoing costs for two large measures and the priority total −7. However, the successful delivery of a crisis response measure in the face of partial resistance earns legitimacy, yielding a +5 net political capital gain after accounting for portfolio costs and completion reward. Public sentiment inches up slightly as the Shield’s launch is framed as decisive action, though civic audits of algorithmic welfare systems fuel ongoing unease.
+
+### Fragile Foundations
+
+Sovereignty dips to 30.0: +1 from ongoing compute initiative momentum, but −1 from capability growth and −1 from the persistent access vulnerability under US retrenchment. The window for catching up narrows.

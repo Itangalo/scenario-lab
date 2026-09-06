@@ -1,0 +1,9 @@
+### A Fragile Front in the Compute War
+
+AI capability climbs to 64.0 as closed labs deploy self-improving agents in continuous training runs, further widening the gap with safety, now at 19.0. Rapid iteration outpaces red-teaming, and opaque reasoning patterns evade detection. Open-weight models reach 51.0, aided by distributed replication of mid-tier architectures now circulating in underground developer networks.
+
+The EU retires the **Tech Sovereignty Package**, which delivered limited private investment amid global uncertainty. Its completion yields a +5 boost to political capital. The **Emergency Compute Assurance Initiative** presses forward as the new priority, with audit mandates issued to major cloud operators. However, U.S.-linked hyperscalers resist compliance, citing conflicting legal obligations, and no breakthrough in mutual recognition is achieved. Technical verification begins, but full assurance remains uncertain by turn 8.
+
+The **Secure Foundry Access Agreement** launches negotiations with ASML and Zeiss to reserve 15–20% of next-gen EUV tools for EU fabrication. Early talks are constructive, but Japan and South Korea demand equivalent access, complicating the framework. Co-investment funds are pledged, but legal anchoring faces delays in the Council Working Party.
+
+Public sentiment dips to 30.0 after a national court annulled regional election results over AI-generated disinformation, triggering protests and eroding trust. Resilience holds at 48.0—no new hardening lands, but no incident overwhelms defences. Sovereignty remains flat: capability rise (−1) offsets momentum from ongoing category 4 efforts (+1). Political capital rises slightly to 38.0, lifted by the completed package (+5), offset by portfolio costs (−5) and no proposal bonus.

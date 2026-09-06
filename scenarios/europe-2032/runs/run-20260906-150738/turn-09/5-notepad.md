@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Expand Containment (priority) −3, Emergency AI Resilience Corps −3, priority −1 = −7  
+PROPOSAL BONUS: Emergency AI Resilience Corps (cat 6, large) +3 — answers emergent_preparedness_pact and fills urgent continuity gap after laboratory leak, addressing both distributed threat and fragmentation  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 10 last turn, Sovereign AI Core Programme finishes t9 +0 (failed delivery), member_state_defection t9 −3, capability rose 0.5 <2 → no decay = 7 → rounded to 8 (floor effect negligible)  
+US_POSTURE: CONSOLIDATION  
+emergent_preparedness_pact -- first noted turn 7, listed in 3 turn(s) so far: A coalition of mid-sized EU member states, frustrated by the Commission's inability to deliver sovereign capability and alarmed by Poland's defection, launches an informal 'AI Preparedness Pact' outside EU structures. They commit to shared red-teaming exercises, joint procurement of defensive AI tools, and mutual assistance in incident response. While non-binding, it marks the first structured cooperation among members bypassing central EU coordination, signaling deepening fragmentation in AI security policy.

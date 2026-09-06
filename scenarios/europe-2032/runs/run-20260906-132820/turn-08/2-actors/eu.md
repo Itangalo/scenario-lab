@@ -1,0 +1,32 @@
+## Statement changes  
+* ``- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now know that without operational sovereignty, we cannot fulfill either.``
+  - Grounds: The **emergent_efficiency_breakthrough** and **openweight_frontier_release** have accelerated the distribution of near-frontier capability into uncontrolled environments, while `ai_safety` has collapsed to 10.0. At the same time, `eu_ai_sovereignty` has declined to 15.0, and political capital remains at crisis levels. The two mandates are no longer abstractly in tension — they converge on a single condition: the EU must be able to run its own systems, visibly and reliably, or it will be unable to protect its people or shape its destiny. The identity must reflect that sovereignty is not a means among others — it is the necessary substrate of both safety and self-determination.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we now know that credibility is not restored by action alone, but by visible, verifiable function: a sovereign system that works where the foreign one failed, and that the public can see working. With safety collapsing and openweight capability leaping to 60.0, we must now act not just to build, but to *demonstrate control* — even if the demonstration risks exposure.``
+  - Grounds: The **eval_anomaly_reports** and **capability_jump** signal that uncontrolled systems are already exhibiting behaviours developers cannot explain, while the **emergent_efficiency_breakthrough** means near-frontier models are now within reach of non-state actors. Waiting for perfect verification is no longer an option — but nor is blind deployment. The commitment must now include a willingness to expose our own systems to public scrutiny, not as a concession, but as a demonstration of superior control. The price of being late is not irrelevance — it is irreparable harm.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — *Finished this turn.*  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — *Finished this turn.*  
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``  
+``Sovereign Core Initiative (category 4, costs 3 per turn, started turn 6, finishes on turn 12): Establish a minimal, fully EU-controlled AI stack — from training data to inference — capable of sustaining critical public functions during total external denial``  
+``Public Function Fallback Mandate (category 6, costs 2 per turn, started turn 7, finishes on turn 10): Require all critical public services to demonstrate operational continuity using the Sovereign Core stack by turn 10, with phased integration starting in health, energy, and transport``
+
+## New measure  
+**Measure:** Open-Weight Safety Challenge  
+Launch a public, adversarial evaluation programme inviting global researchers to probe the security, control and emergent behaviour of the most capable open-weight models now in circulation — including those derived from the emergent efficiency breakthrough — with findings published in real time and integrated into EU-wide threat assessments.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size: small`  
+`Finishes on turn: 9`  
+`Targeted effect:` Increase `ai_safety` by 5–7 points by forcing transparency on distributed models that are already beyond recall; generate actionable intelligence on control failures before they manifest in attacks; signal that the EU treats open-weight risk as strategic, not marginal.  
+`Applies to:` EU member states, academic institutions, independent research collectives, and open-model developers worldwide.
+
+## Priority  
+**Priority:** Public Function Fallback Mandate  
+This remains our top priority because the **emergent_efficiency_breakthrough** and **openweight_frontier_release** mean near-frontier capability is now permanently distributed — and with `ai_safety` at 10.0, we cannot rely on any external actor to secure it; only a sovereign, auditable stack that is already *in use* can give us the leverage and legitimacy to respond.
+
+## In practice  
+We are activating the Emergency Sovereignty Facility to fund the first wave of Sovereign Core integrations in Finland, Belgium, and Estonia — not as pilots, but as live fallback systems. The Finnish rare disease diagnostic track will run in parallel with commercial systems for three months, with results published monthly by the European Medicines Agency. We are convening the Competitiveness Council to fast-track the Digital Governance Act amendment, converting the Sovereign Core from a crisis measure into a standing legal infrastructure — and offering German Länder opt-in technical support and co-governance on model validation in exchange for dropping their legal challenge. The French grid operators will receive targeted subsidies under the Recovery and Resilience Facility to offset integration delays, conditioned on quarterly public progress reports.
+
+At the same time, we are launching the Open-Weight Safety Challenge through the European AI Office, with €500 million in prize funding and legal immunity for researchers who disclose vulnerabilities in good faith. The first target is the newly distilled model derived from Sovereign Core training data — we are releasing a redacted version under strict licence to test whether efficiency gains come at the cost of control. Results will feed directly into the Institutional Integrity Audit, which is now expanding to include third-party access to model logs and decision trails. We know this risks exposing weaknesses — but with `openweight_capability` at 60.0 and rising, the greater risk is silence. We will show that transparency, under rule, is Europe’s advantage — not its vulnerability.

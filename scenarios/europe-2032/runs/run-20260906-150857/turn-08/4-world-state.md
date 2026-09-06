@@ -1,0 +1,15 @@
+### A Wave Without a Wall
+
+The global AI frontier advances to 71.5 as US labs refine recursive self-improvement in real-world control systems, outpacing even the most optimistic projections. The leap is incremental in speed but transformative in kind: models now design training loops faster than human auditors can parse them. While this raises long-term concerns for oversight, no immediate collapse in governance systems is observed, and `ai_safety` remains at 24.0, supported by existing red-teaming and audit protocols. The EU scrambles to assess implications, but no binding response is enacted this turn.
+
+### Bio-Watch Launched, But Foundations Crack
+
+The European Bio-AI Watch formally launches under public health law, backed by €1.2bn and cross-agency coordination. Legal disputes over data sovereignty slow its operational rollout. While "Project Chimera" delivers early transparency wins, protests in Warsaw, Prague, and The Hague intensify, framing the initiative as Brussels overreach. Poland delays full participation, citing jurisdictional concerns. This is the only new measure introduced this turn, and it becomes the EU's named priority.
+
+### Cyber-Physical Pre-emption Delayed
+
+In response to red-teaming findings, the EU begins drafting a proposal for mandatory live-fire containment testing for models above 65.0 capability accessing critical infrastructure. The idea gains traction in technical circles as a resilience measure, not a restriction. However, legal and governance gaps prevent it from being formally launched. Germany and France signal conditional interest, contingent on access to SACP red-teaming tools, but ENISA cannot begin development without a finalized mandate. Due to the limit of one new measure per turn, this initiative remains in early consultation and shows no meaningful progress toward adoption.
+
+### Sovereignty Erodes, Capital Holds
+
+Despite finishing three major initiatives — the Gigafactories, Tech Sovereignty Package, and SMAF — momentum fails to translate. The Sovereign AI Core Programme misses its 60.0 target, now visibly behind the frontier. `eu_ai_sovereignty` remains at 11.0, held steady by prior investments but showing no growth as capability outpaces domestic development. Political capital holds at 17.0, as only one new measure is taken and no additional priority is named beyond Bio-Watch. Public sentiment remains unchanged at 28.0, reflecting cautious public assessment of ongoing efforts. `openweight_capability` remains at 55.0, as no new event enables the release or diffusion of frontier models into public tooling. The prior level reflects existing open-weight progress, with no unexplained jumps. The notepad records ongoing backlash, but per constitutional constraints, no unmodelled adjustments apply: sovereignty changes only via defined decay, capacity events, capability gaps, or completion bonuses, all of which are already accounted for in the flat value this turn.

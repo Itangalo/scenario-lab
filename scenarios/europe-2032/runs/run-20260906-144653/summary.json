@@ -1,0 +1,221 @@
+{
+  "scenario": "Europe 2032 — Plateau",
+  "total_turns": 9,
+  "final_metrics": {
+    "ai_capability": 62.0,
+    "openweight_capability": 49.0,
+    "ai_safety": 22.0,
+    "resilience": 38.0,
+    "eu_ai_sovereignty": 36.0,
+    "eu_political_capital": 31.0,
+    "public_sentiment": 38.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 53.5,
+        "openweight_capability": 41.0,
+        "ai_safety": 31.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.0,
+        "openweight_capability": 42.5,
+        "ai_safety": 28.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 21.0,
+        "eu_political_capital": 34.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 56.5,
+        "openweight_capability": 43.5,
+        "ai_safety": 26.0,
+        "resilience": 34.0,
+        "eu_ai_sovereignty": 25.0,
+        "eu_political_capital": 37.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 58.0,
+        "openweight_capability": 44.5,
+        "ai_safety": 25.0,
+        "resilience": 33.0,
+        "eu_ai_sovereignty": 27.0,
+        "eu_political_capital": 32.0,
+        "public_sentiment": 40.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 59.5,
+        "openweight_capability": 45.0,
+        "ai_safety": 22.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 29.0,
+        "eu_political_capital": 29.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 6,
+      "metrics": {
+        "ai_capability": 60.5,
+        "openweight_capability": 47.5,
+        "ai_safety": 22.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 31.0,
+        "eu_political_capital": 29.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 7,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 48.0,
+        "ai_safety": 22.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 32.0,
+        "eu_political_capital": 29.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 8,
+      "metrics": {
+        "ai_capability": 61.5,
+        "openweight_capability": 48.5,
+        "ai_safety": 22.0,
+        "resilience": 35.0,
+        "eu_ai_sovereignty": 32.0,
+        "eu_political_capital": 29.0,
+        "public_sentiment": 38.0
+      }
+    },
+    {
+      "turn": 9,
+      "metrics": {
+        "ai_capability": 62.0,
+        "openweight_capability": 49.0,
+        "ai_safety": 22.0,
+        "resilience": 38.0,
+        "eu_ai_sovereignty": 36.0,
+        "eu_political_capital": 31.0,
+        "public_sentiment": 38.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "campaign_backlash",
+    "campaign_security_hawk",
+    "capability_plateau_evidence",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_alliance",
+    "election_annulled",
+    "emergent_eval_resistance",
+    "emergent_labour_unrest",
+    "eval_anomaly_reports",
+    "openweight_frontier_release",
+    "supply_chain_coercion"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "supply_chain_coercion"
+    },
+    {
+      "turn": 3,
+      "id": "eval_anomaly_reports"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_backlash"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_security_hawk"
+    },
+    {
+      "turn": 5,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 5,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 5,
+      "id": "election_alliance"
+    },
+    {
+      "turn": 6,
+      "id": "election_annulled"
+    },
+    {
+      "turn": 6,
+      "id": "emergent_eval_resistance"
+    },
+    {
+      "turn": 7,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 7,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 8,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 8,
+      "id": "capability_plateau_evidence"
+    },
+    {
+      "turn": 8,
+      "id": "emergent_labour_unrest"
+    },
+    {
+      "turn": 8,
+      "id": "emergent_eval_resistance"
+    }
+  ],
+  "last_updated": "2026-09-06T14:59:00.694500",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_institutional_backlash",
+      "description": "Labour ministries and social partners in several member states formally reject AI-driven workforce planning tools, citing lack of transparency and due process, and demand binding oversight frameworks before adoption. This institutional resistance emerges from growing labour unrest and stagnant public sentiment, slowing public-sector AI integration despite political momentum.",
+      "first_turn": 9,
+      "last_turn": 9
+    },
+    {
+      "id": "emergent_investment_shift",
+      "description": "Faced with the ai_investment_collapse and capability plateau, major European tech investors pivot from frontier AI development to AI safety tooling and open-weight optimization startups. This shift reflects a broader realignment toward defensive, incremental innovation as the race for superintelligence stalls.",
+      "first_turn": 9,
+      "last_turn": 9
+    }
+  ],
+  "completed_at": "2026-09-06T14:59:04.811120"
+}

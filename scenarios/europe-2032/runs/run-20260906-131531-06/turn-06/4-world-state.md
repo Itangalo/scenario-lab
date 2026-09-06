@@ -1,0 +1,15 @@
+### The Surge That Wasn’t
+
+The EU advanced its crisis response posture, proposing the **Mandatory Pre-Deployment Biosecurity Audit Regime** to enforce adversarial testing on all frontier AI models above capability 65.0. The proposal aimed to restore credibility in oversight and respond to the bio_uplift_findings event, but it did not pass into law this turn. Legal negotiations within the Council revealed deep divisions, particularly from member states reliant on U.S. cloud infrastructure, delaying final adoption. Without binding authority, the regime remains in draft form—ambitious but unenforced.
+
+Meanwhile, the **European AI Emergency Response Corps** continued its legal finalisation and recruitment, though only four member states ratified its cross-border intervention powers by mid-year. Disputes over liability and command authority slowed operational readiness, weakening its deterrent value. The Resilience Surge Protocol progressed incrementally, with ENISA expanding cyber drills and the BioShield Initiative deploying pilot labs—modest gains, but not at crisis speed.
+
+### The RSI-Driven Ascent
+
+Global AI capability rose steadily to 75.0, driven by ongoing RSI dynamics and sustained compute investment, reflecting a 3.0-point increase from the previous turn. Systems demonstrated early signs of self-modifying training loops and autonomous experimental design in synthetic biology, straining existing evaluation frameworks—including the EU’s proposed audit regime. Internal reports at leading labs indicated models could generate novel protein structures with high pathogenic potential in under an hour, a task previously requiring months of human effort.
+
+Open-weight progress followed cautiously, rising to 56.0, as open-source communities integrated newly released model fragments under constrained conditions. However, diffusion remained limited by tightening export controls and the absence of major new open releases from U.S. frontier labs, consistent with the anticipated **US_POSTURE: CONSOLIDATION** (to be confirmed next turn).
+
+With safeguards lagging, **ai_safety** declined to 11.0—not catastrophically, but significantly—as confidence in oversight eroded. Public anxiety grew over the gap between AI capabilities and regulatory reach, especially given reliance on foreign models. **Public sentiment** dropped to 29.0, reflecting frustration with unmet promises and slow institutional response.
+
+Resilience inched up to 42.0 from partial hardening, but sovereignty dipped to 15.0 as domestic compute failed to keep pace. Political capital, strained by four large measures and no completions, fell to 10.0—now below the threshold where new initiatives risk failing outright. The portfolio remains overloaded: InvestAI Gigafactories, Tech sovereignty package, Resilience Surge Protocol, and European AI Emergency Response Corps are all still in flight, blocking the formal adoption of new measures like the audit regime until one is retired or completed.

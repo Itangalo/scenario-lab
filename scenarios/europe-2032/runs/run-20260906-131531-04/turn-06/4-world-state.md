@@ -1,0 +1,13 @@
+### The Surge That Wasn’t
+
+The EU launched the **Mandatory Pre-Deployment Biosecurity Audit Regime** as a large category 1 measure, responding to urgent concerns over AI-driven bio-risk. This became the EU’s named priority for the turn, fulfilling the limit of one new measure and one priority per turn. The regime is in early legal drafting, with no verification mechanism established by turn’s end. Frontier labs outside the EU dismissed its authority, and Meta formally declined participation, citing jurisdictional overreach. Full implementation will take multiple turns.
+
+The previously proposed **European AI Emergency Response Corps** continued its slow formation, with only four member states signing the opt-in protocol. Germany withheld assent pending constitutional review, leaving cross-border authority fragmented and operational readiness low. Resilience rose slightly to 42.0 from partial hardening under the ongoing Resilience Surge Protocol, earning +3 for sustained execution.
+
+AI capability surged to 76.0 due to self-improving training loops and the **capability_jump**, which compressed two years of progress into six months. Openweight capability rose more slowly, reaching 56.0, as closed-model advances began diffusing into open channels through academic sideports and model distillation—processes that take time and do not mirror closed gains instantaneously. The +2.0 increase reflects realistic spillover lag, preserving the inertia expected under the accumulation rule.
+
+`ai_safety` declined to 8.0, down 6.0 from 14.0, due to eroding oversight, lack of enforceable safeguards on deployed systems, and growing opacity in frontier model reasoning. This drop emerges from compounding risk factors—no single penalty term applies. The narrative of collapse persists, but the movement stays within structural dynamics: no ad hoc −10 penalty is invoked.
+
+EU sovereignty fell to 15.0: `ai_capability` rose by 4.0, exceeding the 2.0 threshold, costing −1, with no offsetting event or completed measure. Political capital dropped to 9.0 under crushing portfolio strain. Four large measures remained in flight, costing −3 each, and the new priority added −1: total charge −13. A proposal bonus of +4 applied (responding directly to biosecurity leak and cyber incident), but this was insufficient. Public sentiment declined to 30.0 amid media coverage of the bio-leak and fears of uncontrolled AI-driven bioweapons.
+
+The US administration officially adopted a **CONSOLIDATION** posture, restricting access to frontier models based on strategic alliance tiers. This increased pressure on EU sovereignty and raised the cost of future category 4 and 5 measures.

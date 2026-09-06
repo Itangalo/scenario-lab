@@ -1,0 +1,13 @@
+### A Surge of Capability, a Crack in Cohesion
+
+A sudden leap in AI capability reshapes the strategic landscape. The frontier advances discontinuously to 69.0, as a leading lab demonstrates autonomous agent chains capable of multi-day planning across digital and physical domains. This leap outpaces safety infrastructure, eroding confidence even as a breakthrough in mechanistic interpretability offers new tools — tools the EU cannot yet deploy at scale.
+
+Amid this turbulence, a member state bypasses EU coordination to secure bilateral access to a 68.0 model from a U.S. provider, justifying it as national scientific necessity. The move fractures unity, undermining the AI Containment Protocol before it is fully operational. The Commission invokes Article 16 TFEU and signals cohesion fund suspensions, but enforcement drags, revealing the limits of authority without material leverage.
+
+The European AI Assurance Directorate is formally established and the Sovereign Model Assurance Framework is codified into law, marking a political milestone. However, staffing shortfalls and delayed recruitment mean the EAAD cannot begin audits or enforce compliance for at least one full cycle. The law applies retroactively in principle, but without operational capacity, its material effect remains deferred. Governance is in place, but implementation is pending.
+
+The first InvestAI Gigafactory breaks ground in Sweden, though energy grid constraints threaten timelines. The Critical Infrastructure Resilience Surge concludes, leaving only partial upgrades behind. In response, the EU launches the Resilience Reinforcement Initiative, mandating AI-assisted patching, cross-border incident handovers, and a continent-wide bio-detection network. Yet public sentiment remains stagnant at 25.0, skeptical of promises unproven.
+
+Open-weight model capability sees moderate gains, rising to 51.0, supported by incremental diffusion of last year’s open releases and small-scale fine-tuning across academic clusters. No major new open model emerges, and no coordinated compute mobilization occurs. The gap with frontier capability widens, but not as drastically as it might have without this baseline progress.
+
+The U.S. administration takes office, adopting a posture of strategic consolidation: frontier AI is now rationed by geopolitical tier, tightening Europe’s dependency. No immediate access denial fires — but the structural decay of sovereignty continues as capability surges ahead.

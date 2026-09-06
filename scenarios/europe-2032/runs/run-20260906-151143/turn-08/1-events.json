@@ -1,0 +1,37 @@
+[
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_civil_auditing_collectives",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A coordinated civil society initiative emerges across multiple EU member states to establish independent, open-source AI auditing collectives, leveraging the new interpretability tools to scrutinize both public and private AI deployments. These groups gain traction due to low public sentiment and the perceived failure of official oversight, publishing high-profile reports on model bias and safety gaps. Their influence grows as they form alliances with data protection authorities and parliamentary committees.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

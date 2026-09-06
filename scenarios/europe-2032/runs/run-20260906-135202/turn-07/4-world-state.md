@@ -1,0 +1,17 @@
+### Closing the Watch, Launching the Initiative
+
+The **Systemic Integrity Watch** concludes successfully, becoming operational under ENISA with real-time telemetry now active across a majority of Tier 1 energy grid operators. Its early detection of novel coordination anomalies validates the concept, reinforcing institutional confidence in proactive monitoring. This marks a rare win for EU coordination in systemic risk governance.
+
+Simultaneously, the EU launches the **Algorithmic Sovereignty Initiative**, a large category 4 measure, aiming to pivot from compute dependency to algorithmic leadership. The European Institute for Sparse Intelligence is formally established, with initial funding secured and host sites designated. Partnerships with ASML and Infineon are announced, though concrete co-design agreements remain in negotiation. Germany and France commit to early adoption; Poland and Hungary withhold full endorsement, citing fiscal constraints and skepticism about strategic returns. The initiative is named the EU’s AI priority for the coming cycle, reflecting its strategic weight.
+
+However, implementation is in its earliest phase. No technical milestones are yet achieved, and the full effects of the initiative will unfold over multiple turns. The **eu_ai_sovereignty** metric increases to 27.0: +3 for completing the prior Tech Sovereignty Package, +3 for securing EU access to key training runs (both recorded in previous turns), and −1 due to global capability growth of +2.0. The notepad’s calculation stands: 24.0 → 27.0. There is no additional +3 proposal bonus for this turn, as no new emergent development justifying such a bonus is recorded in prior turns. The gain in sovereignty reflects momentum from earlier actions, not new breakthroughs.
+
+### Capability Advances, Safety Lags
+
+Global AI capability advances to 65.0, consistent with the fixed rate of progress established since Turn 1. Openweight capability rises to 50.0—+1.0 from diffusion of existing efficient architectures within the frontier’s normal growth trajectory, not from any new "emergent_efficiency_breakthrough." The term does not appear in the notepad and is removed from the narrative and accounting. The increase follows the standard diffusion rule: openweight capability grows by up to half the frontier’s advance, capped by the invariant that it cannot exceed ai_capability. Here, +1.0 is within bounds and consistent with unannounced, fixed-world-speed dynamics.
+
+**Ai_safety** drops to 22.0. The capability jump outpaces safeguards, and no new enforcement mechanisms land on shipped systems. The **backlash_physical** event—data centre occupations and grid sabotage—reflects rising public anger, further straining legitimacy.
+
+**Resilience** holds at 51.0; the completed resilience sprint’s benefits are fully absorbed, but no new category 6 measure begins. **Political capital** falls to 39.0: −3 for launching a large measure, −1 for naming it priority, +2 from completing the Systemic Integrity Watch. **Public sentiment** drops to 32.0 due to **backlash_physical** and ongoing job displacement fears.
+
+The Algorithmic Sovereignty Initiative is recognized as a foundational step, but its impact remains prospective. No claim is made about its current effectiveness against grid instability or efficiency risks; such assessments are reserved for future event evaluations. The narrative avoids telegraphing outcomes, maintaining ambiguity about the initiative’s ultimate success.

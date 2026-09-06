@@ -1,0 +1,315 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.3066666666666667,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.417301114622353,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8621722046648226,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.04,
+    "probability_samples": [
+      0.02,
+      0.08,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8662799133986097,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.31984584483027867,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4813705400758399,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A model-generated cyber intrusion, exploiting a poisoned software dependency, cascaded through public health and energy coordination systems across multiple member states. Response was fragmented, attribution slow. The attack did not collapse services, but exposed a paralyzing lag between AI-enabled offense and human-led defense. Public confidence eroded further, with protests intensifying in cities where job losses in professional sectors have become entrenched.",
+    "emergent": true,
+    "id": "emergent_cyber_persistence",
+    "probability": 0.11666666666666665,
+    "probability_samples": [
+      0.35,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5973614402303066,
+    "triggered": false
+  },
+  {
+    "description": "Amid sustained public distrust and low uptake in retraining programs, a cross-national coalition of displaced mid-career professionals organizes visible, coordinated protests targeting AI deployment in public administration and licensing reforms. The movement gains traction in media coverage and forces several regional governments to pause automation initiatives.",
+    "emergent": true,
+    "id": "emergent_labour_backlash",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5487121334395632,
+    "triggered": false
+  },
+  {
+    "description": "A wave of sabotage against AI infrastructure intensifies as public anger over job losses and broken promises reaches a boiling point. Multiple data centres in France and Sweden report damaged transformers and severed fibre links, attributed to coordinated small-cell actions. The incidents are not catastrophic but signal a shift from protest to physical resistance, straining security resources and undermining confidence in the Sovereign Cyber Shield Initiative.",
+    "emergent": true,
+    "id": "emergent_physical_backlash_wave",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "In response to repeated cyber incidents and the clear failure of human-led coordination, a coalition of Nordic and Benelux states quietly begins sharing real-time threat telemetry outside EU structures, forming an informal joint cyber cell. The group operates under national security umbrellas, bypassing slow EU consensus mechanisms, and invites ENISA as an observer. This marks the first concrete step toward differentiated resilience within the Union, driven by urgency rather than design.",
+    "emergent": true,
+    "id": "emergent_nordic_benelux_cyber_cell",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.16486544797653302,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.932139786257006,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7278136216397519,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.15147670789499856,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5046665112613801,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4568174460256623,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8934761443977338,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7491959086064863,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.06
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5563174322119302,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2670046305130819,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.22447184120252617,
+    "triggered": false
+  },
+  {
+    "id": "emergent_unified_biosurveillance_watch",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "A coalition of European public health agencies, alarmed by the proximity of bio_uplift_findings and repeated cyber intrusions into medical research networks, begins informal coordination on biological threat monitoring using AI-augmented detection tools. The initiative is not yet formalized but is being discussed at a senior level across member states, aiming to pre-empt a biological incident by pooling early warnings and response protocols.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_grassroots_ai_retraining_collectives",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to the failure of top-down retraining programs, decentralized networks of displaced professionals and tech volunteers begin forming local AI upskilling collectives, focusing on domain-specific applications in law, engineering, and public service. These grassroots efforts gain traction in mid-sized cities where trust in EU-led initiatives is lowest, and start receiving indirect municipal support through shared workspace and connectivity grants.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

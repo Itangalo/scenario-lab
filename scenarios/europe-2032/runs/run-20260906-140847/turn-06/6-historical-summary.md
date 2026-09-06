@@ -1,0 +1,7 @@
+AI capability reaches 62.5 in 2029, sustained by internal automation gains despite U.S. retrenchment slowing investment. Open-weight models rise to 50.0 through limited replication and partial access to verification tools, remaining below frontier progress. Safety remains stagnant at 23.0, with detected grid feedback loops unaddressed systemically.
+
+A geopolitical crisis erupts as a Taiwan blockade disrupts global semiconductor supply, exposing compute as a strategic vulnerability. In response, the EU completes the Critical Infrastructure Resilience Sprint, enforcing binding cyber mandates across critical sectors and expanding fallback systems to over 40% of Tier 1 operators. Resilience rises to 51.0. The Emergency Compute Assurance Initiative is launched to legally anchor critical compute under EU jurisdiction by turn 8, targeting hyperscalers and EuroHPC nodes, but faces early delays due to unresolved cross-border authority issues with U.S.-linked providers.
+
+Sovereignty improves slightly to 25.0, offsetting prior decay through early initiative momentum. Political capital increases to 45.0, boosted by completion bonuses and a proposal bonus for the new compute measure, despite ongoing portfolio strain. Public sentiment holds at 34.0, unchanged amid crisis and muted policy visibility.
+
+The U.S. maintains a retrenchment posture, halting major AI investments and reshaping global dynamics through restrictive policy. No safety breakthroughs occur, and systemic coordination risks in AI agents persist unmitigated.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 50.0 to 56.0 (+6.0), which is allowed only if `ai_capability` also increased by at least as much or more. However, `ai_capability` increased only from 62.0 to 63.5 (+1.5), meaning `openweight_capability` now exceeds the allowable gap relative to `ai_capability`. The invariant requires that `openweight_capability` never exceeds `ai_capability` and must accumulate no faster—this is a clear breach unless justified by catastrophic physical destruction of compute (which is not claimed here).\n- Invariant 9 violated: `eu_political_capital` decreased from 14.0 to 10.0 (−4.0), which is within bounds, but `public_sentiment` decreased from 22.0 to 18.0 (−4.0), and `resilience` from 38.0 to 36.0 (−2.0), `ai_safety` from 37.0 to 34.0 (−3.0), `eu_ai_sovereignty` from 14.0 to 13.0 (−1.0). While individual drops are within the 25-point cap, the *combined narrative effect* implies a systemic collapse without corresponding event-level justification in the notepad (e.g., no new major event like `backlash_social` or `systemic_failure` is recorded). More critically, the notepad shows only a −7 sovereignty impact from portfolio charge and no capacity event, yet sovereignty only drops by 1.0—this mismatch suggests the metric change does not align with the stated accounting. The notepad says −7, but the result is −1, violating the integrity of the scoring system.\n- Modelling choice 5 violated: The narrative introduces two distinct new measures—Emergency Physical Protection and references to a Recommendation for binding standards under Sovereign Cyber Shield—while also maintaining the latter as ongoing. Though one may be a continuation, the framing of Emergency Physical Protection as a new regime with operational deployment and a separate proposal bonus suggests it is a new measure. Combined with the Recommendation being elevated to a COREPER-level push, this implies more than one new policy initiative active in the turn, violating the \"at most one new measure per turn\" rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,9 @@
+### A Frontier Leaps, Safety Stalls
+
+Global AI capability surges to 87.0 as a leading lab releases a system that redefines what is possible in autonomous scientific discovery. The jump is not incremental — it is discontinuous, rendering prior planning obsolete. With models now generating novel biochemical pathways and self-modifying code at superhuman speed, the gap between what they can do and what humans can verify becomes unbridgeable. `ai_safety` remains at 0.0: no new safeguards land, and the opacity of reasoning deepens. The biosecurity community raises alarms after a credible study demonstrates that non-expert actors, aided by open models, could design human-infective organisms — a signal too strong to ignore, too contested to act on universally.
+
+### EU Responds with Binding Access
+
+The European Union acts decisively. The European AI Emergency Response Corps, long delayed, is finally ratified and becomes operational, delivering a +3 boost to `resilience`. Building on this, the Commission fast-tracks the Emergency Sovereign Access Directive — a large category 4 measure — to close the legal-operational gap in sovereign compute. Despite fierce resistance from several member states, concessions to Germany and France secure enough support for trilogue negotiations to begin. Operational integration remains incomplete, but the legal framework advances, granting +2 momentum toward `eu_ai_sovereignty`.
+
+However, political capital tightens. With four large measures still in flight — including the new directive — the portfolio charge remains crushing. The directive is named priority, adding −1, and no measure finishes to offset the cost. The proposal bonus is +3 — justified by the emergent sovereignty crisis and the `bio_uplift_findings` — but capital ends at 4.0 after net costs. Public sentiment holds at 37.0, unchanged by recent actions. The world moves faster, and the EU scrambles to keep pace.

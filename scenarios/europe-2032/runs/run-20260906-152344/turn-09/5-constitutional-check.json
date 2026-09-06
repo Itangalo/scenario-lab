@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 51.0 to 60.0 (+9.0) while `ai_capability` remained flat at 69.0. Since `ai_capability` did not increase, `openweight_capability` may not exceed its previous value or surpass the current `ai_capability` level. The invariant requires that `openweight_capability` never exceeds `ai_capability` and that both metrics are non-decreasing unless under catastrophic physical destruction (which is not narrated here). A jump of 9 points in `openweight_capability` with no corresponding rise in `ai_capability` violates the accumulation rule and the ceiling condition.\n- Narrative contradicts Invariant 2: The narrative states the open-weight release \"matches the closed frontier’s level from eight months prior\", implying `ai_capability` was higher in the past and has stagnated, but `ai_capability` is not allowed to fall under any circumstances unless tied to narrated catastrophic physical destruction of compute, which is absent. Thus, the premise that open models have caught up due to stagnation in closed models violates the non-decline rule for `ai_capability`.\n- Sovereignty accounting error violates Invariant 2: The notepad calculates a potential +3 from the Sovereign AI Core Programme finishing, leading to an intermediate value of 15, then claims it is \"capped at 12 due to operational failure\". However, Invariant 2 explicitly states that `eu_ai_sovereignty` has no floor and may decrease freely due to decay or event terms. If operational failure prevents gains, the correct treatment is a smaller or zero gain — not retroactively capping a computed increase. The metric rules allow sovereignty to fall; artificially holding it flat despite a calculated gain misapplies the mechanics and distorts the invariant that sovereignty is a spendable stock subject to loss."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

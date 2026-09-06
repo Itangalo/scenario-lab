@@ -1,0 +1,21 @@
+### The Frontier Leaps Ahead
+
+Global AI capability surges to 88.0, crossing the threshold into broad superhuman performance. Systems now autonomously design clinical trials, optimise fusion reactor configurations, and generate novel cryptographic protocols. The jump of +4.0 reflects both algorithmic advances and recursive self-improvement cycles now embedded in leading labs. Open-weight models rise to 66.0, a moderate gain consistent with gradual diffusion of prior open-source releases and expanded volunteer compute pooling. While more capable than before, these models still lack the training infrastructure or data access to match frontier systems. The growth is bounded: a +2.0 increase aligns with sustained but lagging diffusion, avoiding implausible convergence with the frontier. No exogenous release or breakthrough enables faster uptake; progress remains incremental and within structural constraints.
+
+### Sovereignty Through Crisis — And a Delayed Industrial Gain
+
+The European AI Emergency Response Corps begins partial operations, though full deployment is delayed. The Commission proposes an Implementing Decision under NIS2 to mandate real-time integration at twelve critical nodes, including national CERTs, as part of what is framed as the Emergency Integration Directive. Legal challenges arise immediately: several member states contest the EU’s authority to compel integration into sovereign cybersecurity structures. Three CERTs voluntarily comply; others withhold participation pending a Council ruling on jurisdictional limits. A wastewater sequencing hub in the Netherlands disconnects rather than submit to unilaterally imposed mesh protocols, highlighting the fragility of top-down enforcement.
+
+Meanwhile, planning for the Sovereign Compute Acceleration Programme advances, with site assessments completed in Barcelona, Prague, and Bologna. Retrofitting has not yet begun; grid access negotiations remain ongoing. The Sovereign Compute Board is formed, but its mandate is limited to feasibility studies — no binding access protocols are established. This marks preparatory progress toward sovereign inference capacity, but no physical infrastructure is yet operational.
+
+The InvestAI Gigafactories measure was expected to complete this turn, delivering domestic production of AI-specific hardware. However, final commissioning at two of the six regional facilities is delayed due to supply-chain bottlenecks and staffing shortages. While initial output begins, full-scale coordinated operation across all sites is postponed. The project is now expected to reach full operational capacity in the next turn. No sovereignty gain is realised this turn from InvestAI Gigafactories. The notepad confirms no new sovereignty contribution: +3 from the ongoing European AI Emergency Response Corps (partial activation), −1 from AI capability growth ≥2.0, and no capacity event, resulting in a net change of +2 — raising eu_ai_sovereignty from 15.0 to 17.0.
+
+### Political Capital Erodes Under Pressure
+
+Resilience rises to 54.0, reflecting partial activation of the Resilience Surge Protocol and limited gains from early Corps deployment. The Emergency Integration Directive remains contested and incomplete, delivering only partial defensive hardening.
+
+Political capital declines to 3.0: −6 from three large measures in flight (Emergency Response Corps, Emergency Integration Directive, Sovereign Compute Acceleration), −1 for maintaining a priority, +2 from partial delivery on the Corps and Resilience Surge, −1 from the unresolved enforcement crisis, and +0 from InvestAI Gigafactories (completion delayed). The credibility boost from the Gigafactories is deferred. The attempted directive overreach and member state defections continue to erode trust in central coordination.
+
+Public sentiment rises to 45.0: a medical breakthrough lifts mood, but dependence on non-EU models tempers enthusiasm.
+
+A member state signs a bilateral AI access deal with a U.S. hyperscaler, undermining EU unity — a quiet defection that draws sharp criticism but no immediate consequence.

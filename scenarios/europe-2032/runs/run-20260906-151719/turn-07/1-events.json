@@ -1,0 +1,37 @@
+[
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_strike_ai",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Widespread strikes erupt across multiple EU countries as public-sector unions in education and administration protest the deployment of AI systems they claim are replacing jobs without consultation or safeguards. The strikes disrupt schools, tax offices, and local government services, forcing emergency negotiations and drawing intense media coverage that polarizes public sentiment further.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

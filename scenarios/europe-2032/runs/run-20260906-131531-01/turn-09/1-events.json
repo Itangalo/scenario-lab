@@ -1,0 +1,59 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_biosecurity_embargo",
+    "probability": 0.31666666666666665,
+    "emergent": true,
+    "description": "Following the repeated bio-risk signals and the leaked pathogen blueprint, a coalition of G7 nations and key middle powers unilaterally imposes export controls on biological design software and DNA synthesis platforms capable of handling AI-generated sequences. The move bypasses stalled multilateral talks and triggers legal challenges from biotech firms, but gains public support after a near-miss incident in a high-containment lab is quietly disclosed.",
+    "probability_samples": [
+      0.3,
+      0.35,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

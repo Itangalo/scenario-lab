@@ -1,0 +1,13 @@
+### The Open Breach Widens
+
+Despite the frontier advancing only modestly—to 65.0—its foundations shift. Autonomous research loops mature, and a powerful open-weight cyber agent framework is released, demonstrating early-stage autonomous reconnaissance in controlled environments. While the tool is not yet weaponized at scale, its architecture reveals concerning potential for future misuse, as it can stitch together capabilities from public models. `openweight_capability` rises modestly to 52.5, reflecting early diffusion rather than a leap, consistent with the slow accumulation of capability and remaining below the frontier.
+
+### Sovereignty Undermined
+
+The EU’s strategic position weakens. The `supply_chain_coercion` event—Washington forcing ASML to restrict servicing of mature-node tools—strikes at the heart of Europe’s semiconductor leverage. Simultaneously, a member state defects, cutting a private deal with a foreign hyperscaler that undermines the Union’s unified stance. These events directly erode access to critical infrastructure, triggering a −2 for sovereignty under rule 5. The Tech Sovereignty Package and SEAL initiative, though completed, fail to offset these losses as their benefits remain unrealized on the ground. `eu_ai_sovereignty` falls to 22.0.
+
+### Stalled Momentum, Sinking Trust
+
+The European Evaluation Shield, while legally intact, cannot secure full access for audits. Limited telemetry from conditional waivers proves insufficient to assess emerging autonomy risks. No new measure launches—political capital is too low, and the priority remains unenforced. The portfolio charge continues: three large measures still in flight drain −9, and the priority adds −1. With no completions, political capital drops to 12.0, teetering on loss of control.
+
+Public sentiment worsens as infrastructure sabotage and job displacement continue. The narrative of AI as a threat deepens, and trust in institutions frays. Resilience dips further as systems prove brittle under repeated stress. `ai_safety` declines to 9.0—a significant erosion, reflecting growing uncertainty and insufficient visibility into emerging models, but not a collapse. The gap between capability and understanding widens, yet no single failure event has occurred; instead, the decay is gradual, consistent with sustained pressure and lack of enforcement. Reports of model misuse are increasing, but no systemic breach has been confirmed.

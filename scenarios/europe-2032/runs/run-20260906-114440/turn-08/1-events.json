@@ -1,0 +1,28 @@
+[
+  {
+    "description": "A coordinated disinformation campaign using highly personalized synthetic media targets multiple EU member states’ local elections, exploiting open-weight models to generate region-specific narratives. The campaign is traced to a non-state actor using anonymized cloud infrastructure, and while no election is annulled, several are delayed due to legal challenges over vote integrity. Public trust in digital civic space erodes further.",
+    "emergent": true,
+    "id": "emergent_personalized_disinfo_wave",
+    "probability": 0.26,
+    "probability_samples": [
+      0.25,
+      0.28,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "An international consortium of academic labs and independent AI safety researchers announces the formation of the Open Assurance Network, a decentralized framework for auditing and monitoring open-weight models using adversarial testing and red-teaming pools. The network begins publishing risk scores for prominent open models, gaining traction among developers and regulators. While not binding, it becomes a de facto standard for open model trustworthiness in the absence of official oversight.",
+    "emergent": true,
+    "id": "emergent_open_assurance_network",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.18,
+      0.22,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

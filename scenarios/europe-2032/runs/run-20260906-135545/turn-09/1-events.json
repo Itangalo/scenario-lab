@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A systemic vulnerability in AI-driven grid balancing systems—where feedback loops between regional automation can cascade into near-gridlock under peak load—leads to a partial failure in interconnected European grids during a cold snap, triggering rolling blackouts across several countries. Mitigation protocols are activated, but the event exposes the fragility of distributed AI control in critical infrastructure.",
+    "emergent": true,
+    "id": "emergent_grid_control_instability",
+    "probability": 0.27,
+    "probability_samples": [
+      0.28,
+      0.25,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

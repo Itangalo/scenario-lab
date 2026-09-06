@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 40.0 to 46.0 (+6.0), but `ai_capability` increased by only 3.0 (from 52.0 to 55.0). Since `openweight_capability` may never exceed `ai_capability` and must grow at or below its rate unless justified by narrative (e.g., catch-up dynamics), a 6-point jump in openweight while frontier capability rises only 3 points implies openweight surpasses or outpaces the frontier, which violates the dependency and accumulation rules. No narrative justification is provided for such a large relative leap.\n- Modelling choice 5 violated: The narrative states that \"three large measures are now in flight\", including the priority, and the notepad confirms three measures: InvestAI Gigafactories, Tech Sovereignty Package, and European AI Assurance Directorate, plus a priority. This exceeds the limit of \"at most one new measure per turn\". The turn introduces three measures simultaneously, which is invalid regardless of their status as \"in flight\" — the constraint limits new measures introduced per turn, not just those completed."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

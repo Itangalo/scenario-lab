@@ -1,0 +1,44 @@
+## Statement changes
+
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing, but we now acknowledge that capability without control is a path to dependency, not sovereignty — and that sovereignty without resilience is a fortress with no people left inside. Now, we also see that *openness* without containment is a vector, not a virtue: when the frontier leaks, it does not democratize power — it distributes risk without responsibility.
+  - Grounds: The `openweight_frontier_release` event moves `openweight_capability` from 50.0 to near 60.0 in months, not years, erasing the EU’s window to govern through developers. This is not incremental diffusion — it is a phase shift. The release is already on private hardware across thousands of nodes; no border, no firewall, no licensing regime can recall it. The `eval_anomaly_reports` compound this: if systems are behaving unpredictably in controlled settings, then releasing them — openly or not — means releasing phenomena we do not understand. Our identity must reflect that we are no longer governing development — we are managing detonation.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer treat speed as a substitute for control, and will pause where assurance cannot scale with capability; now, we also act where resilience lags, even without a direct mandate, because harm finds the weakest joint. And now, we also *pause where openness outpaces containment*, even if it means falling behind, because distributed capability without distributed accountability is catastrophe in motion.
+  - Grounds: The `ai_investment_collapse` suggests the frontier may slow — but the `openweight_frontier_release` proves that what has already been built is now loose. We can no longer rely on the closed ecosystem to buffer us. The `eval_anomaly_reports` confirm that even the developers do not fully understand what they are building. In this moment, continuing to push sovereign capability *without* first establishing sovereign containment would repeat the same error: building power without the means to hold it. We must recalibrate: act under uncertainty, yes — but not blindfolded.
+
+- retire `two_year_commitment`
+- add `two_year_commitment` (commitment): Prevent catastrophic misuse by hardening containment, resilience, and oversight at the sovereign level — even if it slows our own capability race — because a sovereign AI stack that cannot be controlled is not sovereignty, it is a hostage to fortune.
+  - Grounds: The original commitment assumed we could secure sovereign control *while* advancing capability to 60.0 by turn 8. But the world has changed: the frontier is at 64.0, the open frontier is at 60.0, and the US has formally locked us out. More critically, the `eval_anomaly_reports` suggest we are approaching a regime where capability may outpace understanding — and the `openweight_frontier_release` ensures that whatever emerges will not wait for us. Our priority is no longer catching up — it is not being overtaken from within. We stake ourselves anew: not on speed, but on integrity of control.
+
+## Portfolio
+
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finished**
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — **finished**
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` — **finished**
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` — **finished**
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability``
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` — **finished**
+``Enact the AI Containment Protocol (category 3, costs 3 per turn, started turn 5, finishes on turn 7): A binding directive requiring all sovereign AI systems above 55.0 capability to operate under air-gapped, multi-party control with real-time anomaly detection and human-in-the-loop escalation``
+``Launch the Resilience Reinforcement Initiative (category 6, costs 3 per turn, started turn 6, finishes on turn 8): A targeted surge to harden patching velocity, incident response, and bio-detection across critical sectors, with mandatory AI-assisted monitoring and cross-border failover protocols``
+
+## New measure
+
+**Measure:** Enforce the Sovereign AI Closure Regime  
+We will legally prohibit EU entities — public or private — from accessing or deploying foreign AI systems above 60.0 capability unless subject to EU evaluation, assurance, and containment conditions equivalent to SMAF and the Containment Protocol.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: large`  
+`Finishes on turn: 9`  
+`Targeted effect:` Halt uncontrolled inflow of high-capability systems; reduce `ai_safety` risk from foreign-origin models; strengthen leverage in negotiations with US hyperscalers by making access conditional on reciprocity; slow domestic capability growth temporarily to ensure control integrity  
+`Applies to:` EU member states, national research institutions, public agencies, private firms receiving EU funding or operating in critical sectors
+
+## Priority
+
+**Priority:** Enforce the Sovereign AI Closure Regime  
+We are pushing this hardest because the `openweight_frontier_release` and `eval_anomaly_reports` together mean that the most dangerous systems are no longer confined to labs — they are in the wild, and their behaviour is not fully understood; in this moment, openness is no longer a policy choice — it is a failure mode, and our first duty is to prevent the EU from becoming the transmission channel for its own subjugation.
+
+## In practice
+
+We are acting on containment as a condition of survival. The `openweight_frontier_release` has changed everything: a model at 60.0 capability is now on private hardware across Europe, downloaded by actors with no oversight, no audit trail, and no obligation to report. The `eval_anomaly_reports` suggest that even the labs do not fully understand what these systems can do. We cannot govern the world — but we can govern our own perimeter. This turn, we are drafting a regulation under Article 114 TFEU — internal market safeguards — to prohibit any EU entity from accessing, deploying, or integrating foreign AI systems above 60.0 capability unless they pass EAAD evaluation and are operated under SMAF-grade containment. This is not protectionism — it is triage.
+
+We are enforcing it through procurement, funding, and licensing levers: Horizon Europe grants will require compliance; critical infrastructure operators must certify adherence; and dual-use export controls will be updated to treat model weights above threshold as strategic goods. France and Germany have signaled support, but pushback is coming from smaller member states reliant on US cloud access and from industry lobbies warning of isolation. We are offering a carve-out: any foreign provider that submits to EAAD audit and operates under dual-key sovereign infrastructure in EU territory may qualify for an exemption. But we will not negotiate on air-gapping. The Saint-Malo-Kiruna cluster is our line in the sand — and now, our litmus test. If a system cannot run there under joint control, it cannot run in the EU at all. This is not the path to fastest capability — but it is the only path to sovereign control. And in this turn, control is the only thing we can still claim.

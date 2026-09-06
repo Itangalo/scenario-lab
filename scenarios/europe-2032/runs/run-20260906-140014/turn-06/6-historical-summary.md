@@ -1,0 +1,7 @@
+AI capability rises to 62.5 in 2029, driven by self-improving agents in software and materials, while open-weight models reach 50.0 through replication and modular expansion. The Taiwan blockade triggers a global compute scarcity, prompting the EU to secure priority access to semiconductor tooling via emergency coordination under the Chips Act, bolstering long-term sovereignty prospects.
+
+The Tech Sovereignty Package and Critical Infrastructure Resilience Sprint conclude, unlocking €28bn in private investment and achieving 78% audit coverage and 42% fallback deployment across Tier 1 operators. Despite these gains, persistent municipal cyber incidents reveal gaps in systemic detection. In response, the EU launches the Systemic Integrity Watch under ENISA to monitor cross-sector AI risks, though data-sharing disputes delay implementation.
+
+Safety improves marginally as audit frameworks expand, but no systemic safeguards are enacted. Resilience reaches 45.0, supported by hardening measures, while sovereignty declines to 24.0 amid ongoing frontier dependence. Political capital holds at 40.0 with a +3 bonus from completed initiatives, though portfolio strain remains.
+
+Public sentiment stabilizes at 34.0, reflecting tempered anxiety without significant improvement. The U.S. confirms a retrenchment posture, halting major AI investments and weakening transatlantic coordination, altering global strategic dynamics.

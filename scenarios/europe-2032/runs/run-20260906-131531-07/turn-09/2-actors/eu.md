@@ -1,0 +1,22 @@
+Secure sovereign AI capacity as the foundation of strategic autonomy
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Secure sovereign AI capacity as the foundation of strategic autonomy``
+- Trigger: the two-year commitment period closes this turn
+- Grounds: The failure to secure binding authority for the Emergency Response Corps, the deepening data revolt, and the accelerating capability-safety divergence have made clear that resilience without sovereign control is performative. We can harden and audit all we like, but if the systems we depend on are built, governed, and potentially withheld by others, our agency is conditional. The taiwan_blockade event crystallises this: compute is now a strategic chokepoint, and our upstream position in the supply chain is meaningless unless we can convert it into on-shore, sovereignly controlled capability. The next two years must be defined by building that capacity—not as a hedge, but as the core condition of both safety and independence.
+
+## Portfolio
+- `European AI Emergency Response Corps (category 6, costs 3 per turn, started turn 6, finishes on turn 8): Stand up a standing, cross-border operational unit with authority to intervene in AI-driven crises affecting critical infrastructure, with binding technical powers and direct access to sovereign compute` — finished
+- `Mandatory Pre-Deployment Biosecurity Audit Regime (category 1, costs 3 per turn, started turn 7, finishes on turn 9): Require all frontier AI developers operating in or supplying the EU to submit models to independent, adversarial testing for bio-risk potential before release, with results binding and public`
+
+## New measure
+None this turn.  
+Waiting for the taiwan_blockade to clarify semiconductor availability and for the emergent_lab_fracture to open a window for binding oversight before committing further capital to measures that depend on external cooperation or long lead-time infrastructure.
+
+## Priority
+Mandatory Pre-Deployment Biosecurity Audit Regime — because the emergent_lab_fracture has created a rare moment of regulatory leverage: a leading lab is isolated, its self-assurance discredited, and global scrutiny rising—this is the moment to enforce red lines, even as our own data legitimacy frays.
+
+## In practice
+This turn, we are executing the final phase of the Mandatory Pre-Deployment Biosecurity Audit Regime under unprecedented pressure. The EU AI Evaluation Agency has issued final compliance notices to Anthropic, OpenAI, and Meta, demanding full red-teaming access within 30 days or face market restrictions under Article 5 of the DMA. Legal teams are preparing draft decisions to designate non-compliant models as high-risk, which would trigger deployment bans and force rerouting of inference through EU-controlled infrastructure. To counter the data revolt, we are fast-tracking a partnership with the European Bioinformatics Institute and select national biobanks to establish a sovereign, auditable data pool for pathogen sequence testing—this is not ideal, but it is the only way to preserve audit legitimacy when member states refuse to share. We are also coordinating with Canada and Japan to align red-teaming protocols, aiming to present a united front that no lab can play off against another.
+
+At the same time, we are managing the fallout from the cyber_major_incident: a model-generated ransomware sweep has hit municipal services in three member states, exploiting zero-day vulnerabilities in legacy ERP systems. The Emergency Response Corps, though still lacking binding powers, has activated its Berlin and Lyon nodes to coordinate containment, leveraging liaison teams at ENCS and ECDC to share threat signatures and mitigation playbooks. The incident has exposed the limits of advisory authority—our teams can recommend patching and isolation, but cannot compel action—and we are now drafting an emergency Council regulation under Article 122a to grant temporary intervention powers, to be triggered if a second wave hits. The political cost is high, but the alternative—watching cascading failures unfold with no authority to act—is unacceptable. We are offering Hungary and Poland co-leadership of the incident response cell to secure their ratification support, turning resistance into ownership.

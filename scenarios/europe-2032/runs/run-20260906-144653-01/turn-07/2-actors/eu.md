@@ -1,0 +1,20 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**
+- `European Evaluation Shield (category 5, costs 3 per turn, started turn 4, finishes on turn 6): A new public agency with legal authority to conduct independent, pre-deployment evaluations of any AI system above capability threshold 50.0, with power to require interpretability audits, agent monitoring, and weight inspections` — **finished**
+- `Secure European Access to Advanced Lithography (SEAL) (category 4, costs 3 per turn, started turn 3, finishes on turn 5): A binding legal and financial framework to co-fund and operate an EU-controlled servicing corridor for mature-node ASML lithography tools, ensuring uninterrupted access to critical semiconductor infrastructure despite extraterritorial pressure` — **finished**
+
+## New measure
+**None this turn.** We are waiting for the outcome of the ECJ legal challenge to the European Evaluation Shield before proposing any new evaluation or oversight measures, and our capital is too constrained to launch another large initiative while the Cyber Shield is being negotiated.
+
+## Priority
+**Critical Infrastructure Cyber Shield** — because with AI capability now at 60.5 and open-weight models already capable of executing multi-hour software tasks, the risk of automated, adaptive cyberattacks on essential services is no longer theoretical, and without binding, EU-wide hardening, our sovereignty and safety gains will rest on brittle foundations.
+
+## In practice
+This turn, we finalise the draft of the Critical Infrastructure Cyber Shield directive under Article 114 TFEU and table it in the Internal Market and Consumer Protection Council (IMCO) and the Cybersecurity Working Party. ENISA is tasked with publishing the first set of standardised red-team scenarios by the end of turn 7, based on attack patterns from the recent hospital ransomware campaign, and will coordinate a cross-border resilience exercise involving national CERTs and essential service operators in Germany, Poland, and France. To secure buy-in, we offer fast-track access to InvestAI Gigafactories funding and liability shielding under the AI Liability Directive for early adopters, particularly targeting energy and health sectors flagged as high-risk.
+
+We also defend the European Evaluation Shield in the ongoing ECJ legal challenge by reinforcing its mandate through a Council resolution under Article 16 TEU, affirming the public interest in pre-deployment scrutiny of high-capability systems. The pilot audits continue under strict confidentiality with two frontier developers, focusing on agent coordination and memory persistence. We offer limited data-sharing waivers under the Digital Markets Act review process in exchange for full access, leveraging our regulatory grip on dominant platforms to preserve evaluation integrity. The first public safety report, assessing whether current safeguards can meaningfully constrain systems at 60.0 capability, is now delayed to turn 8 due to legal uncertainty.
+
+With all major industrial and sovereignty-building measures now completed, and political capital at 22.0, we consolidate rather than expand. No new industrial schemes are launched. The €12bn SEAL co-funding envelope is fully allocated, and operational control of the ASML servicing corridor is now fully transferred to the Joint Undertaking in Dresden, Crolles, and Catania — a tangible, if narrow, foothold in strategic autonomy. We focus on ensuring that these gains are not eroded by institutional fragmentation or public backlash, as sentiment remains low at 33.0. Our actions this turn are about delivery, not announcement.

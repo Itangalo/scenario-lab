@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: European Redress and Transparency Initiative −3, priority −1 = −4  
+PROPOSAL BONUS: European Redress and Transparency Initiative (cat 2, large) +6 — directly answers automated_decision_scandal (internal, severe), recent and unmitigated harm in public services, high visibility, large measure addressing root cause  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 11 last turn, no category 4 completion, no capacity event, capability rose 1.0 <2 → no −1, emergent_eu_sovereignty_backlash intensifies → −1 = 10  
+US_POSTURE: CONSOLIDATION  
+emergent_eu_sovereignty_backlash -- Growing public and institutional resistance within EU member states to centralized AI sovereignty initiatives, framed as democratic overreach. Protests emerge in three capitals against the 'Brussels tech agenda', demanding national control over AI deployment and data infrastructure. The movement gains traction in parliaments, complicating further coordination.  
+emergent_compute_alliance -- A coalition of EU member states, led by France and Germany, initiates an emergency coordination forum with Japan, South Korea, and Taiwan to secure alternative compute supply chains and jointly fund a distributed sovereign AI training cluster outside US or Chinese jurisdiction. The move is framed as resilience, not defiance, but includes shared export licensing and intelligence on chip fabrication tools. It emerges in response to repeated access denials and supply coercion, and gains momentum due to the EU's upstream leverage in lithography and materials.

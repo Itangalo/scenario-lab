@@ -1,0 +1,15 @@
+### Capability Growth Slows, Open Weights Advance Steadily
+
+Global AI capability advances modestly to 61.0, as frontier labs struggle to sustain momentum beyond the 60 threshold. A major release underperforms expectations, and market pricing signals suggest a plateau in high-end performance. Open-weight development continues its steady climb, reaching 48.0—supported by distributed reuse of recently published architectures and incremental optimization. While progress is meaningful, it remains within the expected lag behind closed systems, preserving the structural advantage held by frontier labs in training infrastructure and data access.
+
+### EU Focuses on Delivery Amid Legal Uncertainty
+
+With political capital constrained and public sentiment fragile, the EU holds off on new initiatives, instead prioritising completion of its existing portfolio. The **InvestAI Gigafactories** programme progresses significantly, with core infrastructure now constructed and initial hardware installation underway. However, full integration and operational validation remain incomplete, and the project is not yet delivering usable compute capacity at scale. As a high-cost measure, its effects are still phasing in, with meaningful sovereignty gains deferred until substantial delivery is verified in a future turn. Final optimisation and grid integration will extend into the next cycle, preventing a sudden step-change.
+
+The **Critical Infrastructure Cyber Shield** remains in flight, with final negotiations underway. Germany and Poland show tentative openness after offers of fast-tracked funding and liability protections, but no binding commitments are secured this turn. ENISA publishes red-team scenarios based on past attacks, laying groundwork for joint exercises next turn.
+
+The **European Evaluation Shield** continues pilot audits under confidentiality, despite escalating legal challenges. A Council resolution reaffirms the public interest in pre-deployment scrutiny, offering political support—but not legal resolution. The first safety assessment is completed but withheld pending the ECJ’s stance.
+
+### Sovereignty Rises Modestly, Political Capital Stable
+
+The ongoing advancement of InvestAI Gigafactories contributes to a gradual increase in sovereignty, reflecting progress toward completion. With the project still in its final integration phase, the full impact is not yet realised. A partial progress effect of +1 is applied this turn, consistent with phased delivery under Modelling Choice 6. The portfolio charge remains −13, and no access event occurred, resulting in a net sovereignty increase from 31.0 to 32.0. Political capital remains unchanged at 29.0, as delivery credibility is offset by ongoing institutional strain and the absence of a completed high-profile initiative. The contribution of sovereignty to political capital remains within the constitutional cap of +3.

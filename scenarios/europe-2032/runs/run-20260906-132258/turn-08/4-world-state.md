@@ -1,0 +1,13 @@
+### The Fracture Widens
+
+Global AI capability surged to 86.0 as frontier labs achieved recursive self-improvement in model architecture search, accelerating progress despite flat investment. The leap pushed safety further behind: with no breakthrough in monitoring or control, and opaque reasoning now standard in deployed systems, `ai_safety` dropped sharply to 5.0. The gap between power and understanding yawned into a chasm.
+
+A major cyber intrusion, likely AI-generated, crippled regional health networks and energy dispatch systems across three member states. Automated ransomware bypassed human-in-the-loop safeguards, exploiting zero-day flaws in a widely used grid management stack. The attack cascaded under degraded comms, overwhelming local response. The European AI Emergency Response Corps conducted its first live-fire exercise days later—too late to help, but soon enough to expose gaps. Legal fragmentation delayed deployment; only six states had ratified full operational authority. The exercise revealed coordination flaws, and public trust dipped.
+
+In response, the EU launched the Emergency Labour Transition Compact, targeting job losses in law, accountancy, and software. Wage insurance and fast-track retraining were proposed, but pushback flared immediately. Italy and Hungary refused to adopt national plans, citing fiscal strain and sovereignty concerns. The Commission withheld cohesion funds, hardening positions. Public sentiment, already strained, fell to 33.0 as protests emerged in cities where AI hiring freezes coincided with data centre expansions.
+
+Meanwhile, open-weight models showed modest gains, reaching 63.0, supported by early academic efforts to replicate frontier techniques and isolated instances of leaked training data. While diffusion of knowledge is accelerating, the capability remains constrained by limited infrastructure and coordination. The gap between closed and open systems narrowed only slightly, but discussion around transparency and control intensified in research communities.
+
+Domestically, the EU’s sovereignty ticked down to 16.0: despite completed compute investments, rising global capability eroded relative standing. Political capital dropped to 10.0, overwhelmed by two large measures in flight, a named priority, and no completion bonuses this turn. The portfolio charge was unsustainable, and no new measure could be safely launched.
+
+The middle-power coalition held on export controls, but the Joint Compute Access Pact remained in negotiation—deferred, not dead.

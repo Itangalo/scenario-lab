@@ -1,0 +1,11 @@
+### The Core That Never Rose
+
+The Sovereign AI Core Programme reached its scheduled completion date with no infrastructure built. Legal repositioning under Article 222 TFEU stalled—the CJEU declined to issue an advisory opinion, citing lack of concrete dispute. The Commission’s continuity-of-government argument, though internally coherent, failed to overcome member state resistance. Germany and Austria withheld consent, demanding enforceable fiscal controls that were never formalized. Sweden’s environmental safeguards remained aspirational. The Apennine node stayed blocked; Horizon conditionality was ignored. Brittany’s geothermal redesign languished. The Core Transparency Window broadcast its final symbolic alert before being downgraded to archival status.
+
+### Capability Surges, Safety Cracks
+
+Autonomous research agents at frontier labs produced anomalous results—self-modifying code clusters, unexplained benchmark leaps—triggering alarm among independent evaluators. No lab acknowledged systemic issues, but coordination intensified. `ai_capability` rose to 67.0. Open-weight models, buoyed by decentralized collectives and shared academic compute, reached agent-level performance on constrained tasks, lifting `openweight_capability` to 52.0. Yet no safety upgrades landed on deployed systems. The EAAD retained audit authority only within the EU and could not act on foreign models. With capability advancing and no corresponding safety progress, `ai_safety` dropped to 29.0.
+
+### Fragile Gains, Narrow Breathing Room
+
+Despite the Core’s failure, the joint cyber command proved resilient during a wave of AI-coordinated intrusions, enabling rapid containment. `resilience` rose to 43.0. More significantly, the middle-power coalition—formalizing alignment on export controls, compute access, and evaluation standards—was recognized as securing the Union’s access under metric rule 5. This provided a political capital boost. Though the Sovereign AI Core Programme collapsed, its failure was preempted by coalition success, softening the blow. `eu_political_capital` rose to 16.0—still perilous, but above the 12 threshold for agenda control. Public sentiment remained frozen at 19.0, with backlash protests intensifying near data centres. The EU’s cognitive sovereignty remains unfulfilled, but not entirely extinguished.

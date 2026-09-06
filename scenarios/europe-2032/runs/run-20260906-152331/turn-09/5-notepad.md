@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Restrict Open-Weight Deployment −3, EU Open-Weight Monitoring and Interdiction Network −3, priority −1 = −7  
+PROPOSAL BONUS: EU Open-Weight Monitoring and Interdiction Network (cat 6, large) +3 — directly answers emergent_resilience_pact_forming and addresses unauthorised adoption in research/municipal systems, mitigating cohesion risk  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, no capacity event, capability rose 0.5 −1 = 14  
+US_POSTURE: ALLIANCE  
+emergent_resilience_pact_forming -- first noted turn 7, listed in 3 turn(s) so far: A group of European mid-sized industrial nations, alarmed by the fragility of transatlantic access and the vulnerability of domestic infrastructure, begin informal coordination on AI resilience standards and joint procurement of defensive tooling. The initiative starts as a working group under existing bilateral science agreements but gains momentum as more states express concern over uncoordinated exposure. It is not yet formalised, but sets the stage for broader coalition-building.  
+emergent_supply_chain_pressure -- first noted turn 7, listed in 2 turn(s) so far: ASML faces intensified regulatory scrutiny from the U.S. and internal pressure from its American shareholders to further restrict servicing of older lithography machines to China, threatening not only the company's revenue but also the EU's leverage in semiconductor diplomacy. The Union scrambles to assert control over the technology's extraterritorial reach, exposing the fragility of its supply-chain chokehold.

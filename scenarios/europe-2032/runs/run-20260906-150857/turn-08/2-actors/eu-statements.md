@@ -1,0 +1,25 @@
+# Statements: The European Union (turn 8)
+
+## Ledger
+
+- `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.
+- `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.
+- `two_year_commitment` (commitment): Secure sovereign AI control to withstand strategic shocks and prevent catastrophic misuse
+
+## Changes this turn
+
+- **modify** `two_mandates` — rejected-structural
+  - Tier: identity
+  - Text: We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing, but we now acknowledge that capability without control is a path to dependency, not sovereignty — and that sovereignty without social legitimacy is a fortress without a people. The moment has passed for control alone to suffice: we are now in a phase where the frontier moves faster than institutions can absorb it, and our legitimacy must grow not from containment, but from demonstrated stewardship — protecting not only systems, but the public we serve. And we now see that the gap between capability and safety is no longer a lag — it is a divergence. At 70.0, the frontier is no longer interpretable to human oversight; at 24.0 safety, it is already outpacing our ability to secure it. We are no longer catching up — we are falling behind on a curve that is accelerating.
+  - Grounds: The *capability_jump* to 70.0 confirms that recursive self-improvement is now in deployment, not just simulation. This is not a linear advance but a shift in kind: systems are now designing their own training data and optimising their own architectures faster than audits can be conducted. Meanwhile, *ai_safety* has dropped to 24.0, below the level of even voluntary pre-release testing. The EC’s own evaluators now operate blind on models in production. Our identity must reflect that we are no longer regulating a technology — we are trying to govern a force that is already beyond the reach of traditional oversight.
+  - Reason: a identity-tier change must name a Trigger
+- **modify** `act_under_uncertainty` — rejected-structural
+  - Tier: commitment
+  - Text: We will commit before the picture is clear, and accept being wrong as the price of not being late — but we will no longer treat speed as a substitute for control, and we will pause where assurance cannot scale with capability; nor will we assume that control justifies silence, and we will now couple every containment measure with a public explanation of its purpose and limits. We now add: we will also act where harm is probable, not only where it is proven, and we will treat uplifted biological risk as a trigger for sovereign pre-emption, even without consensus — and we will now extend that principle to cyber-physical systems: any model above 65.0 capability with access to critical infrastructure will be subject to mandatory containment testing, regardless of developer intent.
+  - Grounds: Trigger: The *capability_jump* to 70.0, combined with *resilience* at only 42.0, means that a single compromised agent could now cascade across multiple sectors. Recent red-teaming exercises show that models at this level can exploit zero-day vulnerabilities in SCADA systems faster than patches can be deployed. Our commitment to act under uncertainty must now include infrastructure pre-emption — not because an attack has occurred, but because the capability-exposure gap is now wide enough to drive a truck through.
+  - Reason: a commitment-tier change must name a Trigger
+- **modify** `two_year_commitment` — rejected-structural
+  - Tier: commitment
+  - Text: Prevent catastrophic misuse through sovereign control of high-capability AI systems, with enforceable containment, real-time monitoring, public accountability for all systems above 55.0 capability, and now, a dedicated biological threat shield: sovereign red-teaming of genome models, mandatory uplift testing for all systems above 60.0, and a European Bio-AI Watch to detect and respond to precursor signals — and now, a parallel cyber-physical pre-emption regime: any model above 65.0 capability with access to energy, transport, or water systems must undergo live-fire containment testing before deployment, with results binding under the AI Act.
+  - Grounds: Trigger: The *capability_jump* to 70.0 and the *cyber_exposure_findings* from the SACP red team confirm that the next threshold is not biotechnology alone — it is the convergence of AI with real-world control systems. A model that can simulate a pathogen can now also simulate a grid failure. Our commitment must expand to include not just life, but the systems that sustain it. This is not a new direction — it is the logical extension of pre-emption from biology to infrastructure.
+  - Reason: a commitment-tier change must name a Trigger

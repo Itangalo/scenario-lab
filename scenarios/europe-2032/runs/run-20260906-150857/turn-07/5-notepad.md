@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Launch the Sovereign AI Core Programme −3, Launch the European Bio-AI Watch −3, priority −1 = −7  
+PROPOSAL BONUS: Launch the European Bio-AI Watch (cat 6, large) +5 — directly answers bio_uplift_findings and capability_jump, severe recent external shocks  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 13 last turn, no capacity event, capability rose 3.0 ≥2 −1 = 11  
+US_POSTURE: CONSOLIDATION  
+emergent_eu_sovereignty_backlash -- first noted turn 7, listed in 2 turn(s) so far: Growing public and institutional resistance within EU member states to centralized AI sovereignty initiatives, framed as democratic overreach. Protests emerge in three capitals against the 'Brussels tech agenda', demanding national control over AI deployment and data infrastructure. The movement gains traction in parliaments, complicating further coordination.  
+emergent_compute_alliance -- first noted turn 7, listed in 2 turn(s) so far: A coalition of EU member states, led by France and Germany, initiates an emergency coordination forum with Japan, South Korea, and Taiwan to secure alternative compute supply chains and jointly fund a distributed sovereign AI training cluster outside US or Chinese jurisdiction. The move is framed as resilience, not defiance, but includes shared export licensing and intelligence on chip fabrication tools. It emerges in response to repeated access denials and supply coercion, and gains momentum due to the EU's upstream leverage in lithography and materials.

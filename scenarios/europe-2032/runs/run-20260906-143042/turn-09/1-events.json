@@ -1,0 +1,39 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.3066666666666667,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coordinated disinformation campaign using synthetic media overwhelms local fact-checking capacity in three member states ahead of regional elections, causing widespread confusion and delayed vote certification. The attack exploits open-weight models at capability 50 and is traced to a novel adversarial training method that evades existing detection. Public trust in digital institutions erodes further.",
+    "emergent": true,
+    "id": "emergent_synthetic_election_interference",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A major European AI research lab announces a breakthrough in distillation techniques, enabling models at 58–60 capability to be run efficiently on commodity hardware. This dramatically widens access to near-frontier capability outside controlled environments, increasing misuse risk. The development is independent of current policy measures but accelerates openweight proliferation trends.",
+    "emergent": true,
+    "id": "emergent_distillation_breakthrough",
+    "probability": 0.3333333333333333,
+    "probability_samples": [
+      0.3,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

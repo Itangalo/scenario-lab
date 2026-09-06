@@ -1,0 +1,231 @@
+{
+  "scenario": "Europe 2032 — Verification-bounded",
+  "total_turns": 9,
+  "final_metrics": {
+    "ai_capability": 68.5,
+    "openweight_capability": 54.0,
+    "ai_safety": 19.0,
+    "resilience": 58.0,
+    "eu_ai_sovereignty": 23.0,
+    "eu_political_capital": 32.0,
+    "public_sentiment": 30.0
+  },
+  "history": [
+    {
+      "turn": 1,
+      "metrics": {
+        "ai_capability": 54.0,
+        "openweight_capability": 42.0,
+        "ai_safety": 32.0,
+        "resilience": 37.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 45.0,
+        "public_sentiment": 42.0
+      }
+    },
+    {
+      "turn": 2,
+      "metrics": {
+        "ai_capability": 55.5,
+        "openweight_capability": 44.0,
+        "ai_safety": 27.0,
+        "resilience": 40.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 42.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 3,
+      "metrics": {
+        "ai_capability": 57.0,
+        "openweight_capability": 45.0,
+        "ai_safety": 25.0,
+        "resilience": 41.0,
+        "eu_ai_sovereignty": 22.0,
+        "eu_political_capital": 38.0,
+        "public_sentiment": 37.0
+      }
+    },
+    {
+      "turn": 4,
+      "metrics": {
+        "ai_capability": 59.0,
+        "openweight_capability": 46.0,
+        "ai_safety": 22.0,
+        "resilience": 42.0,
+        "eu_ai_sovereignty": 25.0,
+        "eu_political_capital": 39.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 5,
+      "metrics": {
+        "ai_capability": 61.0,
+        "openweight_capability": 48.0,
+        "ai_safety": 23.0,
+        "resilience": 45.0,
+        "eu_ai_sovereignty": 24.0,
+        "eu_political_capital": 40.0,
+        "public_sentiment": 34.0
+      }
+    },
+    {
+      "turn": 6,
+      "metrics": {
+        "ai_capability": 63.0,
+        "openweight_capability": 49.0,
+        "ai_safety": 25.0,
+        "resilience": 51.0,
+        "eu_ai_sovereignty": 24.0,
+        "eu_political_capital": 41.0,
+        "public_sentiment": 36.0
+      }
+    },
+    {
+      "turn": 7,
+      "metrics": {
+        "ai_capability": 65.0,
+        "openweight_capability": 50.0,
+        "ai_safety": 22.0,
+        "resilience": 51.0,
+        "eu_ai_sovereignty": 27.0,
+        "eu_political_capital": 39.0,
+        "public_sentiment": 32.0
+      }
+    },
+    {
+      "turn": 8,
+      "metrics": {
+        "ai_capability": 67.0,
+        "openweight_capability": 51.0,
+        "ai_safety": 19.0,
+        "resilience": 55.0,
+        "eu_ai_sovereignty": 25.0,
+        "eu_political_capital": 35.0,
+        "public_sentiment": 30.0
+      }
+    },
+    {
+      "turn": 9,
+      "metrics": {
+        "ai_capability": 68.5,
+        "openweight_capability": 54.0,
+        "ai_safety": 19.0,
+        "resilience": 58.0,
+        "eu_ai_sovereignty": 23.0,
+        "eu_political_capital": 32.0,
+        "public_sentiment": 30.0
+      }
+    }
+  ],
+  "occurred_events": [
+    "ai_investment_collapse",
+    "backlash_physical",
+    "bio_uplift_findings",
+    "campaign_backlash",
+    "cyber_major_incident",
+    "cyber_test_shot",
+    "election_annulled",
+    "election_retrenchment",
+    "emergent_efficiency_breakthrough",
+    "emergent_grid_instability_surge",
+    "emergent_grid_integrity_network",
+    "export_control_escalation",
+    "member_state_defection",
+    "openweight_frontier_release",
+    "taiwan_blockade",
+    "taiwan_tension_rise",
+    "verification_widens"
+  ],
+  "event_log": [
+    {
+      "turn": 1,
+      "id": "cyber_test_shot"
+    },
+    {
+      "turn": 2,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 2,
+      "id": "ai_investment_collapse"
+    },
+    {
+      "turn": 2,
+      "id": "openweight_frontier_release"
+    },
+    {
+      "turn": 4,
+      "id": "cyber_major_incident"
+    },
+    {
+      "turn": 4,
+      "id": "campaign_backlash"
+    },
+    {
+      "turn": 4,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 4,
+      "id": "taiwan_tension_rise"
+    },
+    {
+      "turn": 5,
+      "id": "election_retrenchment"
+    },
+    {
+      "turn": 6,
+      "id": "taiwan_blockade"
+    },
+    {
+      "turn": 7,
+      "id": "verification_widens"
+    },
+    {
+      "turn": 7,
+      "id": "backlash_physical"
+    },
+    {
+      "turn": 7,
+      "id": "emergent_grid_integrity_network"
+    },
+    {
+      "turn": 7,
+      "id": "emergent_efficiency_breakthrough"
+    },
+    {
+      "turn": 8,
+      "id": "export_control_escalation"
+    },
+    {
+      "turn": 8,
+      "id": "member_state_defection"
+    },
+    {
+      "turn": 9,
+      "id": "bio_uplift_findings"
+    },
+    {
+      "turn": 9,
+      "id": "election_annulled"
+    },
+    {
+      "turn": 9,
+      "id": "emergent_grid_instability_surge"
+    }
+  ],
+  "last_updated": "2026-09-06T14:00:05.865365",
+  "status": "completed",
+  "emerging_events": [
+    {
+      "id": "emergent_sovereign_tech_alliance",
+      "description": "A grassroots European coalition of municipal governments, public research institutes, and ethical AI startups forms an open technical alliance to co-develop lightweight, sovereign AI tools based on sparse architectures. The initiative gains traction as a response to dependence and public distrust, offering a narrative of democratic innovation. It does not yet move metrics but establishes a counterweight to hyperscaler dominance.",
+      "first_turn": 8,
+      "last_turn": 9
+    }
+  ],
+  "completed_at": "2026-09-06T14:00:14.321882"
+}

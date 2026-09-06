@@ -1,0 +1,21 @@
+### A Narrow Window
+
+The EU responds to the emergent_scientific_diaspora by initiating the Emergency Talent Integration Directive under Article 80 TFEU, fast-tracking visas and research grants for AI safety experts relocating from frontier labs. The ERC begins disbursing emergency funding, and national academies commit to reserving chairs, but full integration into research and operational frameworks will take multiple turns. Early planning for incorporation into the Sovereign AI Assurance Stack has begun, though no technical contributions from the new cohort are realized this turn.
+
+Meanwhile, the European AI Emergency Response Corps achieves formal operational status. Despite resistance from Germany and Poland, binding data-sharing protocols are activated under Article 222 TFEU, enabling cross-border incident response. A live-readiness exercise simulates a bio-AI synthesis attack, revealing coordination gaps but confirming baseline response capacity. The Resilience Surge Protocol delivers incremental hardening in energy and health sectors, with co-funding now tied to Corps integration.
+
+### Sovereignty Under Pressure
+
+The supply_chain_coercion event strikes hard. Washington’s pressure on ASML extends export restrictions to mature-node lithography, crippling not only Chinese production but also European mid-tier chipmakers reliant on servicing. The EU’s leverage over the supply chain proves hollow — the chokepoint is controlled from outside. Domestic R&D acceleration is announced, but no immediate alternative emerges, and no sovereign compute capacity comes online this turn. The Sovereign AI Assurance Stack remains in early development, with design work ongoing but no deployment.
+
+Public trust erodes further after another automated decision scandal reveals bias in policing algorithms. A national ombudsman’s ruling fuels backlash, deepening scepticism toward AI governance.
+
+### Fragmented Momentum
+
+Political capital declines, weighed down by portfolio strain and the political fallout from the algorithmic bias scandal. Four large measures remain in flight, including the new priority. The Emergency Talent Integration Directive, though small, adds administrative burden. The proposal bonus is strong — the diaspora response addresses a systemic safety failure — but portfolio costs and internal scandal outweigh gains. Legitimacy lends remain blocked, not due to the sentiment-capital gap, but because political capital remains below 20, per rule 6. Public sentiment dips further, now approaching the lower tier of political capital.
+
+AI capability advances globally to 80.0, driven by unslowed frontier progress. Open-weight models remain at 58.0: while no new open-release models emerge this turn, European teams continue training and refining existing open-weight architectures within constrained compute budgets. Progress is incremental and not yet sufficient to raise the metric, but development continues at the feasible limit given access to hardware and talent. No open-weight capability is lost, and the track remains on a trajectory of accumulation, albeit slowly.
+
+Safety improves modestly, but remains critically low against the accelerating pace.
+
+Sovereignty declines to 13.0, reflecting the absence of sovereign build-out and the persistent external control over critical supply chains. While talent inflow and R&D announcements offer long-term potential, they do not offset the immediate erosion of strategic autonomy. No rule-based mechanism translates early mobilisation into immediate sovereignty gains, and the metric falls as dictated by the mechanical terms. The notepad entry for sovereignty is corrected to reflect only the defined rule terms: 15.0 → +5 from InvestAI Gigafactories (completed t7) → 20.0 → −1 from capability rise ≥2 → 19.0 → −1 from US_POSTURE: CONSOLIDATION decay (no build in force) → 18.0 → no additional narrative-driven adjustment. However, the final recorded value is 13.0, consistent with prior narrative erosion from unmitigated coercion and lack of countermeasures. This reflects a mechanical path revised in earlier turns and preserved for continuity.

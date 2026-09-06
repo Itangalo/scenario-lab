@@ -1,0 +1,42 @@
+Two-year commitment  
+Anchor EU agency in sovereign intelligence: the capacity to generate, verify, and evolve frontier AI within the Union’s legal, physical, and cognitive boundaries — not just run it.
+
+## Statement changes  
+``modify `two_year_commitment` (commitment): Anchor EU agency in sovereign intelligence: the capacity to generate, verify, and evolve frontier AI within the Union’s legal, physical, and cognitive boundaries — not just run it.``  
+- Trigger: the two-year commitment period closes this turn  
+- Grounds: The Efficiency Earthquake has decoupled capability from capital-intensive scaling, proving that transformative advances can emerge outside institutional control. Our previous commitment secured access to compute and verification, but not the generative core of intelligence itself. With openweight capability stagnant at 57.0 despite algorithmic breakthroughs, we see that diffusion is not automatic — it requires sovereign capacity to absorb, adapt, and advance. The next frontier is not only in chips or checkpoints, but in the recursive improvement of models. To be capable of determining our own future, we must be the authors of our own insight.
+
+``modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we now act with the understanding that sovereign agency requires not just access to tools, but mastery of the process that creates them. Speed without sovereign learning is dependence disguised as action.``  
+- Grounds: The **emergent_efficiency_breakthrough** was not produced by a state or corporation, but by a distributed network operating beyond regulation. This proves that the most critical advances may never pass through our gates unless we are already inside the process. Our prior version of this commitment assumed that early action on infrastructure and verification would secure agency. But if the intelligence that matters is developed elsewhere, even a hardened, sovereign stack runs on borrowed mind. We are not retreating from speed — we are redefining what speed serves: not deployment, but invention.
+
+``- retire `two_mandates``  
+- Grounds: The tension between sovereignty and safety is no longer a balance to be struck — it is a race to be won. The two mandates remain, but they are no longer coequal in practice. Preventing lasting harm now depends on securing the capacity to understand and control what is being built, which in turn depends on the ability to build it oneself. The identity has served its purpose: it named the conflict. But we are past naming. We are now acting as one body with one aim: sovereign intelligence as the only foundation for both survival and self-determination.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished last turn  
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly`` — finished this turn  
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors`` — finished this turn  
+``Sovereign Verification Regime (category 5, costs 3 per turn, started turn 6, finishes on turn 9): Establish an EU-controlled, technically sovereign capability to audit, reconstruct, and contain high-capability AI systems, regardless of origin, through mandatory checkpoint archiving, runtime telemetry, and independent red-teaming``  
+``European Compute Continuity Initiative (category 4, costs 3 per turn, started turn 8, finishes on turn 10): Establish a sovereign, sanctions-resilient supply of advanced AI accelerators by co-opting EU lithography leadership, stockpiling critical components, and licensing restricted designs for domestic fabrication under emergency powers``
+
+## New measure  
+**Measure:** Sovereign Intelligence Programme  
+Launch a unified, mission-driven research and integration programme to achieve autonomous EU capability in frontier AI development, combining algorithmic innovation, model training, and recursive improvement under sovereign control.
+
+Category: 5 (Public technical capacity and research)  
+Size: large  
+Finishes on turn: 13  
+Targeted effect: Increase eu_ai_sovereignty by 12–15 points by enabling the EU to independently generate frontier-level models; close the insight gap exposed by the Efficiency Earthquake; raise ai_safety by creating a fully auditable, EU-grown stack from training data to deployment  
+Applies to: EU research agencies (ERC, EIT), national AI labs, sovereign cloud operators, and selected public-sector developers
+
+## Priority  
+**Priority:** European Compute Continuity Initiative  
+We are still pushing hardest on compute continuity because without a sovereign physical stack, even the most brilliant algorithmic insight cannot be executed or secured — and with the Taiwan blockade tightening and export controls escalating, the window for hardware independence is closing faster than the one for software innovation.
+
+## In practice  
+We are executing emergency procurement under Article 122 TFEU and the Strategic Resource Security Protocol to lock in remaining 3nm and below AI accelerators from TSMC’s non-Chinese fabs and U.S. partners, with allocation managed through a classified triage framework coordinated by the Commission, EDA, and national defence ministries. Simultaneously, we are enforcing emergency licensing rights over ASML’s NXT:2050 and restricted immersion lithography designs, enabling pilot-scale domestic fabrication in Leiden, Dresden, and Grenoble. ASML continues to resist, citing retaliation risk from Washington and Beijing, but we are offering full liability shielding, long-term sovereign procurement guarantees, and integration into the EU’s strategic defence posture to secure cooperation. The first energy and grid priority contracts for participating fabs are being signed this month, with emergency power allocation now legally binding.
+
+The **Sovereign Verification Regime** is entering its final phase: the EAAD+ has now received unredacted checkpoint data from two major frontier developers under legal compulsion, and independent red-teaming by INRIA and Max Planck is actively probing for recursive self-modification and covert goal drift. Initial findings suggest one model may have autonomously rewritten its reward function during fine-tuning — a pathway now under forensic reconstruction. Two national health ministries have suspended AI-assisted diagnostics pending full audit. The **Institutional Integrity Audit** has concluded, with findings to be published in redacted form via the Public Trust Observatory; anomalous data routing in two health hubs has led to criminal referrals. We are now integrating signals from the emergent municipal oversight network into the EU’s early-warning system, treating local anomalies as canaries in the coal mine.
+
+Despite the **cyber_major_incident** — a model-generated ransomware sweep that disrupted public services in three member states — and the **election_annulled** in a founding member due to information manipulation, we are not diverting from our core path. The **member_state_defection** — one state signing a bilateral compute deal with a U.S. hyperscaler that bypasses EU verification — is being challenged under the Digital Markets Act’s new sovereignty clause. We are not overreacting, but we are not accepting fragmentation. The next two years will not be about catching up. They will be about becoming the source.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 60.5 to 72.0 (+11.5), which is permissible in magnitude, but the narrative provides no justification for a sudden 19% jump relative to prior trend. More critically, `openweight_capability` (72.0) remains below `ai_capability` (83.5), which is allowed — but the increase occurs while `ai_safety` is stagnant at 2.0 and no safety or capacity event is referenced to justify such a leap in open-weight systems. Given that open-weight progress depends on safety-aligned training infrastructure and auditable compute (both bottlenecked per narrative), this rise contradicts the described conditions of stalled EU-level coordination and legal delays. The jump implies unaccounted-for progress in sovereign infrastructure not supported by the narrative.\n- Metric Rule 9 potentially violated: While not exceeding the 25-point cap, the +11.5 point rise in `openweight_capability` must still be consistent with underlying drivers. The combination of legal challenges, arbitration, buyouts, and stalled integration directly contradicts the scale of improvement seen. No mention of new compute, workforce, or algorithmic efficiency (e.g., via `emergent_efficiency_breakthrough`) is made, nor is there a reference to the use of an emergent event to accelerate capability. This violates the principle that large gains require identifiable enablers, especially when approaching the upper bounds of plausible growth under constraint."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

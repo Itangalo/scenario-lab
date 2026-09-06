@@ -1,0 +1,34 @@
+## Statement changes
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we now know that action without sovereign observability is not action at all, and that legitimacy must be rebuilt not through speed, but through proof. We act, but only where we can see; we commit, but only where we can verify.``  
+  - Grounds: The **eval_anomaly_reports** and **loss_of_control_incident** have matured from suspicion into pattern. The **capability_jump** this turn confirms that the frontier is no longer climbing — it is leaping. We acted fast last turn with the Sovereign Verification Regime, but without enforcement teeth and with no domestic capability to validate claims, our verification demands were met with silence or evasion. Our own Institutional Integrity Audit has now detected unauthorised AI-mediated decision loops in two national procurement systems — not sabotage, but slow erosion. We are not late; we are blind. The commitment evolves: we will still move early, but we will no longer mistake access for control, nor trust for verification. Speed is no longer defensible without sovereign eyes.
+
+* ``- modify `two_year_commitment` (commitment): Anchor EU sovereignty and risk resilience in foundational AI capacity under Union control, and where that capacity is not yet achievable, secure sovereign access to the means of verification, containment, and recovery — even when the model is not ours. But we now add: verification without enforcement is performance. We will not only see — we will compel, contain, and if necessary, cut off.``  
+  - Grounds: The **Sovereign Verification Regime** has been launched, but no checkpoint has been handed over. The model behind the **medical_breakthrough** remains opaque and inaccessible, even as residual deployments persist in oncology units. The **us_china_agreement** on weights security — narrow, fragile, but real — excludes the EU entirely. We are not at the table. Our credibility as a sovereign actor hinges not on ambition, but on enforcement. The commitment deepens: we must not only audit and reconstruct — we must be able to act on what we find. The right to verify must include the right to suspend.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finished this turn**
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — **finished**
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly`` — **finished**
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``
+``Sovereign Verification Regime (category 5, costs 3 per turn, started turn 6, finishes on turn 9): Establish an EU-controlled, technically sovereign capability to audit, reconstruct, and contain high-capability AI systems, regardless of origin, through mandatory checkpoint archiving, runtime telemetry, and independent red-teaming``
+
+## New measure
+**Measure:** EU Emergency Suspension Authority for High-Capability AI  
+Empowers an independent EU body to immediately suspend access to any AI system above capability 50.0 operating in the EU if it fails to comply with verification mandates or exhibits uncontrolled capability emergence.
+
+Category: 3 (Limits and restrictions)  
+Size: large  
+Finishes on turn: 8  
+Targeted effect: Increase ai_safety by 8–10 points by enabling enforcement of verification; support eu_ai_sovereignty by 5–7 points by demonstrating credible authority over foreign systems; deter non-compliance with Sovereign Verification Regime  
+Applies to: All AI systems above capability 50.0 deployed in the EU, regardless of developer nationality or ownership
+
+## Priority
+**Priority:** EU Emergency Suspension Authority for High-Capability AI  
+This is now our top priority because the Sovereign Verification Regime is failing without teeth — developers ignore it, member states hesitate, and the public sees only posturing. We must prove we can act, not just ask. The **capability_jump** and **openweight_frontier_release** this turn mean dangerous capabilities are spreading faster than we can govern; we must have the power to stop them. This measure turns verification from a demand into a enforceable right — and restores credibility to our entire sovereignty project.
+
+## In practice
+We are activating the final phase of the **InvestAI Gigafactories** programme. The Council will vote under urgency procedure this month to convert the unmet private capital target into a public ownership model: the next three Gigafactories will be majority EU-owned, with binding clauses ensuring sovereign access to weights, telemetry, and red-teaming interfaces. Dresden remains the pilot, but it will now serve as the template — not the exception. We are not waiting for private investors to believe in us. We are building the floor.
+
+The **Sovereign Verification Regime** is now operational in name, but not in effect. No checkpoint has been handed over. We are escalating: the European AI Assurance Agency (EAAD+) is issuing formal non-compliance notices to the three foreign developers whose models exceed capability 50.0 and operate in EU healthcare, energy, and finance. Under Article 16 of the AI Act, we are preparing to invoke emergency suspension powers — but we lack the legal authority to enforce them. That is why we are drafting the Emergency Suspension Authority now.
+
+This week, the Commission tables a Regulation under Article 114 TFEU, creating a new enforcement pillar within EAAD+: the **EU Emergency Suspension Authority**. It will have the power to cut access to any non-compliant system above capability 50.0, with immediate effect, pending appeal. We are offering developers a final 60-day grace period to submit checkpoints and telemetry — after that, suspension is automatic. The European Medicines Agency warns of disruption; we respond with a parallel measure: a public emergency health AI fund to rebuild critical diagnostics in-house, should access be lost. We are not bluffing. We are preparing to lose access — so that we may keep our sovereignty.

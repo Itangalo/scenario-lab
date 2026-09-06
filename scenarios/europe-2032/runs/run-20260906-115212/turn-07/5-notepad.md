@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: European AI Emergency Response Corps −3, Sovereign Evaluation Frontline −3, priority −1 = −7  
+PROPOSAL BONUS: Sovereign Evaluation Frontline (cat 5, large) +4 — responds directly to capability_jump and collapse in ai_safety, both severe and current  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15 last turn, InvestAI Gigafactories finishes t7 +5, capability rose 4.0 ≥2 −1 = 20  
+US_POSTURE: CONSOLIDATION
+
+## Emerging developments (tracked)
+- `emergent_synthetic_content_wave` -- first noted turn 7, listed in 2 turn(s) so far: A coordinated wave of AI-generated deepfake videos targeting multiple European political leaders emerges, falsely depicting them in compromising situations with foreign agents. The videos spread rapidly across social platforms before detection systems flag them, triggering emergency response protocols in several capitals. Attribution is slow, and public trust in digital information plummets further, especially as some fringe outlets continue to treat the videos as credible. This is a precursor: it opens the synthetic_content gate for the next 3 turns.
+- `emergent_sovereign_safety_initiative` -- first noted turn 7, listed in 2 turn(s) so far: A group of mid-sized EU member states, alarmed by the collapse in AI safety and the Union's dependency, quietly begin coordinating a joint sovereign AI research initiative hosted outside existing EU structures. They pool funding for a shared testbed of auditable, agent-capable models trained under strict human oversight, aiming to create a 'safe stack' alternative to the frontier. The project is not yet public, but early technical milestones are achieved. This marks the beginning of a distributed safety counterfront.

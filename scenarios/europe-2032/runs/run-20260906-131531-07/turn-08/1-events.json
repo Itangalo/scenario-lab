@@ -1,0 +1,37 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eu_data_revolt",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "A coalition of EU member states and civil society groups begins openly refusing to share public data for AI training, citing sovereignty and misuse concerns after the biosecurity leak. The move gains momentum as national data policies shift toward retention, creating a de facto fragmentation of the Union's data commons and forcing public AI initiatives to pivot to synthetic or restricted datasets.",
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

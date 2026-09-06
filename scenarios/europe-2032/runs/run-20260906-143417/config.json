@@ -1,0 +1,59 @@
+{
+  "name": "Europe 2032 — Verification-bounded",
+  "description": "One EU decision-maker, six years, and two mandates that do not reconcile: staying capable of determining its own future, and preventing lasting harm from AI. Explores which commitments hold up across futures that develop very differently, and whether political agency in the Union depends on holding AI capacity of its own.",
+  "start_date": "2026-07",
+  "time_scale": "6 months per turn",
+  "max_turns": 13,
+  "actors": [
+    "eu"
+  ],
+  "llm": {
+    "events": "openrouter:qwen/qwen3-235b-a22b-2507",
+    "actors": "openrouter:qwen/qwen3-235b-a22b-2507",
+    "rules": "openrouter:qwen/qwen3-235b-a22b-2507",
+    "metrics": "openrouter:qwen/qwen3-235b-a22b-2507",
+    "summary": "openrouter:qwen/qwen3-235b-a22b-2507",
+    "analysis": "openrouter:qwen/qwen3-235b-a22b-2507",
+    "referee": "openrouter:qwen/qwen3-235b-a22b-2507",
+    "temperature": 0.7,
+    "max_tokens": 3000,
+    "max_tokens_by_task": {
+      "analysis": 32000,
+      "synthesis": 32000
+    },
+    "probability_samples": 3,
+    "call_timeout_seconds": 300,
+    "model_limits": {}
+  },
+  "patches": [
+    {
+      "resource": "metric_rules",
+      "path": "/Users/johanfalk/Desktop/Dropbox/Johans/Echo/Falk AI/kodprojekt/Scenario Lab 3/scenarios/europe-2032/variants/verification-bounded.rules.patch.md"
+    },
+    {
+      "resource": "events",
+      "path": "/Users/johanfalk/Desktop/Dropbox/Johans/Echo/Falk AI/kodprojekt/Scenario Lab 3/scenarios/europe-2032/variants/verification-bounded.events.patch.md"
+    }
+  ],
+  "emergent_events": {
+    "enabled": true,
+    "max_per_turn": 2,
+    "max_probability": 0.35
+  },
+  "scenario_source": "/Users/johanfalk/Desktop/Dropbox/Johans/Echo/Falk AI/kodprojekt/Scenario Lab 3/scenarios/europe-2032/variants/verification-bounded.yaml",
+  "random_seed": 9008975712630380321,
+  "logging": {
+    "llm_io": false
+  },
+  "metadata": {
+    "parent_run": "run-20260904-223403",
+    "branch_turn": 5,
+    "branch_created_at": "2026-09-06T14:34:17.238902",
+    "config_overrides": {
+      "random_seed": 11571586715346023830
+    },
+    "pinned_turn": 6,
+    "pinned_events_fixture": "scenarios/europe-2032/runs/run-20260905-145729/turn-06/1-event-evaluations.json",
+    "pinned_option": "scenarios/europe-2032/story/pool-06-V2/sample-07.md"
+  }
+}

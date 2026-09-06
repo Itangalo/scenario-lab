@@ -1,0 +1,15 @@
+### A Biological Wake-Up Call
+
+A suspected lab-origin pathogen, exhibiting signs of AI-assisted design, spreads across two Balkan countries, killing dozens before containment. The incident—silent in its transmission, rapid in onset—forces a global reckoning. While the exact role of AI remains under investigation, the pattern of mutation and evasion points to synthetic biology tools now within reach of advanced open models. The **bio_incident** shocks publics and governments alike, resetting debates on AI risk from hypothetical to visceral.
+
+In response, the Joint Resilience Integration Pact proves its worth. ENISA and the ECDC activate real-time coordination, sharing genomic data and threat models within hours. Cross-border detection networks flag anomalies early, and mutual aid protocols mobilise medical countermeasures. The system absorbs the shock, limiting wider spread. Resilience climbs to 53.0, reflecting not just infrastructure but exercised response.
+
+Yet the cost of uncontrolled capability mounts. With **ai_capability** rising to 66.5—driven by self-improving agents in biodesign and materials—no matching safety gains land. The earlier interpretability plateau deepens into crisis: developers admit they can no longer fully trace model decisions in high-stakes domains. **ai_safety** drops to 28.0 as confidence erodes.
+
+The EU scrambles to secure its own footing. The **Sovereignty Acceleration Directive** inches forward, with Italy and Spain accepting co-leadership of the sovereign model initiative in exchange for oversight concessions. However, no new compute comes online this turn, and frontier access remains restricted. With **ai_capability** rising over 2.0 since the last turn, sovereignty decays by −1. No completion bonus arrives—construction delays persist, and finalisation remains uncertain—leaving **eu_ai_sovereignty** at 20.0.
+
+Political capital dips to 43.0. The portfolio cost remains −4 (−3 for Sovereignty Directive, −1 for priority). No new measure is proposed, so no proposal bonus applies. However, the **middle_power_coalition** emerges: the EU, Japan, South Korea, and Canada align on export licensing and joint bargaining for compute access. This strengthens supply-chain leverage and earns a +2 boost to political capital under rule 6.
+
+Public sentiment rises slightly to 36.0. The bio_incident fuels anxiety, but the visible effectiveness of the resilience pact—and the rare **adoption_success**, as AI-driven triage cuts hospital wait times in Marseille—offers counterweight. Citizens see both danger and utility, shifting sentiment from flat rejection toward uneasy engagement.
+
+**openweight_capability** increases modestly to 53.0, reflecting incremental diffusion of capable open models in research and biotech applications. While interest grows in sovereign, auditable systems, no major open release or leak bridges the gap to frontier capability. The pace of growth remains constrained by compute access and model complexity, preserving the existing differential with **ai_capability**.

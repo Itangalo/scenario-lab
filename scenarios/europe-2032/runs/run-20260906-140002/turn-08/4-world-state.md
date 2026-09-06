@@ -1,0 +1,11 @@
+### A Threshold Crossed
+
+A wave of AI-generated ransomware cripples municipal systems across five member states, exploiting zero-day vulnerabilities in a widely used open-source accounting platform. The attack evolves in real time, evading detection and encrypting civil registries within hours. National CERTs respond in isolation, hampered by jurisdictional delays and no unified command. ENISA detects anomalies but lacks authority to intervene. The incident marks a turning point: offensive AI now outpaces human-led defence.
+
+In response, the EU launches the **Joint Cyber Shield**, a large Category 6 measure aiming to unify civilian and military cyber units under ENISA with pre-authorized escalation powers. Legal drafting proceeds under NIS2 emergency provisions, and a €2.8bn funding package is scoped. However, Hungary and Poland raise sovereignty concerns, delaying consensus. The measure begins but yields no immediate operational capability.
+
+The **Emergency Compute Resilience Initiative** advances slowly. Germany agrees to host a backup cluster but insists on a joint design board, slowing timelines. ASML secures a procurement guarantee for EU-bound tools, but delivery remains years out. No new compute comes online.
+
+AI capability climbs to 65.5 as closed labs refine self-improving agents. An open release, derived from leaked weights, pushes `openweight_capability` to 53.5—narrowing the gap and enabling wider misuse. No safety gains occur; opacity in frontier models persists.
+
+Resilience rises to 55.0, reflecting the Cyber Shield’s partial momentum and the systemic alarm the incident triggered. Sovereignty dips to 31.0: +1 from the compute initiative in flight, but −1 from capability growth and −1 from the unresolved access crisis. Political capital falls to 49.0: −3 for the new large measure, −1 for the priority, +2 for starting a response to a major incident, but no portfolio clearance bonus. Public sentiment drops to 32.0 amid fear of uncontrolled AI threats and visible state unpreparedness.

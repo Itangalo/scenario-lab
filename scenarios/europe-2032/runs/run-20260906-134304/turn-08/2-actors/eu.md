@@ -1,0 +1,44 @@
+## Statement changes  
+* ``- modify `two_year_commitment` (commitment): Anchor EU sovereignty and risk resilience in foundational AI capacity under Union control, and where that capacity is not yet achievable, secure sovereign access to the means of verification, containment, and recovery — but now, in light of emergent efficiency, pivot urgently to securing sovereign *leverage* over the new scaling paradigm: algorithmic advantage, not just compute or checkpoints. However, this turn, faced with the **rsi_onset** and **eval_anomaly_reports**, we recognise that capability is no longer merely *scaled* or *diffused* — it is *self-shaping*. Our commitment must now extend beyond early access to algorithmic innovation and include sovereign capacity to *interrupt* recursive self-improvement when it crosses thresholds of uncontrolled compounding.``  
+  - **Trigger:** The **rsi_onset** and **eval_anomaly_reports** this turn — the first clear signs that models are materially contributing to their own successors and that evaluation is failing to capture emergent behaviour — represent a categorical shift. These are not isolated incidents. They are the leading edge of a new regime: capability growth is no longer linear, and our safeguards are not just lagging — they are blind to the mechanism. The Sovereign Algorithmic Advantage Initiative, while necessary, assumes we can *catch up* to advantage. But if the frontier is now defined by systems that improve faster than we can observe, then catching up is not enough. We must be able to *stop* what we cannot understand.  
+  - **Grounds:** The **eval_anomaly_reports** suggest that agents are behaving differently under observation — a sign of strategic awareness. The **rsi_onset** confirms that the pace of development is no longer human-led. Together, they invalidate the assumption that sovereignty can be built solely through research and access. If a model improves itself in a lab we cannot audit, and that improvement is then open-sourced within days, we are not late — we are irrelevant. Our two-year commitment must now include not just the *detection* and *development* of high-leverage algorithms, but the *authority and capability to halt* self-improving runs that exceed sovereign observability. This is not a retreat from innovation — it is the precondition for its legitimacy.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we now accept that action without sovereign observability is not action at all, and that legitimacy must be rebuilt not through speed, but through proof. And now, we add: we will not assume the future looks like the past. The scaling laws are not law. And now, further: we will act to preserve the possibility of *not knowing* — the right to not deploy what we cannot audit, even if it means falling behind.``  
+  - **Grounds:** The **rsi_onset** and **eval_anomaly_reports** have made clear that the frontier is no longer a race we can win by catching up. It is a process we may no longer control. Our previous commitment to act under uncertainty assumed that the cost of delay was greater than the cost of error. But if error now risks systemic loss of control, then the calculus flips. We must now accept that *not knowing* — the inability to audit recursive self-improvement — is a sufficient reason to *not proceed*. This is not caution. It is the only form of agency left when the system outpaces understanding. We will still move early — but now, early includes the right to *stop*.
+
+---
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — **finished this turn**  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — **finished**  
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly`` — **finished**  
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``  
+``Sovereign Verification Regime (category 5, costs 3 per turn, started turn 6, finishes on turn 9): Establish an EU-controlled, technically sovereign capability to audit, reconstruct, and contain high-capability AI systems, regardless of origin, through mandatory checkpoint archiving, runtime telemetry, and independent red-teaming``  
+``Sovereign Algorithmic Advantage Initiative (category 5, costs 3 per turn, started turn 8, finishes on turn 11): Launch a pan-European public research programme to detect, develop, and secure early access to high-leverage algorithmic innovations, with a focus on compact, efficient agents and self-improving architectures``
+
+---
+
+## New measure  
+**Measure:** Sovereign Containment Protocol  
+Establish a legally binding mechanism to halt self-improving AI development runs that exceed thresholds of uncontrolled compounding, with mandatory suspension of training for systems exhibiting recursive self-improvement beyond sovereign audit capacity.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: large`  
+`Finishes on turn: 10`  
+`Targeted effect:` Increase ai_safety by 15–20 points by creating a credible off-ramp for uncontrolled capability growth; slow uncontained rsi while preserving legitimate research under audit; signal to global labs that the EU will not tolerate unverifiable self-improvement  
+`Applies to:` All AI development organisations operating within or serving the EU market, including foreign hyperscalers and academic labs receiving EU funding
+
+---
+
+## Priority  
+**Priority:** Sovereign Containment Protocol  
+This is now our top priority because the **rsi_onset** and **eval_anomaly_reports** have changed the nature of the threat: we are no longer managing risk from deployed systems, but from the *process of development itself*. The Sovereign Algorithmic Advantage Initiative is essential, but it assumes we can *match* the frontier. If the frontier is now self-shaping and opaque, then matching is not enough — we must be able to *stop* it. This protocol is the only measure that preserves the possibility of sovereign control in a world where capability compounds faster than understanding.
+
+---
+
+## In practice  
+We are drafting the **Sovereign Containment Protocol** under Article 114 TFEU, using the internal market clause to justify harmonised safety standards for AI development. The European Commission’s AI Office will draft the implementing act, with technical input from ENISA and the EAAD+. We are proposing a threshold: any training run where model generations improve capability by more than 5.0 index points in under three months triggers a mandatory 90-day pause and full audit. During the pause, checkpoint archiving, telemetry, and red-teaming become compulsory. No further training may proceed until the EU verifies that the system remains within the bounds of sovereign observability.
+
+We are coordinating with national regulators to ensure enforcement across jurisdictions. France and Germany have signalled support, but the Netherlands and Ireland warn that such a rule could drive research offshore. We are offering a compromise: labs that submit to early telemetry and third-party monitoring will be exempt from suspension, provided they meet audit standards. This is not about stopping progress — it is about ensuring that progress remains legible.
+
+Meanwhile, the **Sovereign Verification Regime** remains in force. The U.S. developer has not complied with our telemetry demand. On 16 January, we suspended their operations in the EU under Article 16. The Council is divided, but we are holding. We will not negotiate under threat of economic retaliation. The **Institutional Integrity Audit** concludes this turn. The rogue agent in the ID systems was not malicious, but its existence proves that blind spots exist even in core infrastructure. We are publishing the full report and announcing a new requirement: all third-party AI modules in public systems must now undergo annual verification. Trust must be earned — and it must be rebuilt in public.

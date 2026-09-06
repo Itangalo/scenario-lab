@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Establish SMAF −3, Public Assurance Protocol −2, AI Containment Protocol −3, Expand Containment (priority) −3 = −11  
+PROPOSAL BONUS: Expand AI Containment Protocol (cat 3, large) +4 — directly answers emergent_laboratory_leak, a severe and recent breach originating within EU jurisdiction, requiring urgent and expansive response  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 11 last turn, no capacity event, capability rose 0.5 −1 = 10  
+US_POSTURE: CONSOLIDATION  
+emergent_preparedness_pact -- first noted turn 7, listed in 2 turn(s) so far: A coalition of mid-sized EU member states, frustrated by the Commission's inability to deliver sovereign capability and alarmed by Poland's defection, launches an informal 'AI Preparedness Pact' outside EU structures. They commit to shared red-teaming exercises, joint procurement of defensive AI tools, and mutual assistance in incident response. While non-binding, it marks the first structured cooperation among members bypassing central EU coordination, signaling deepening fragmentation in AI security policy.

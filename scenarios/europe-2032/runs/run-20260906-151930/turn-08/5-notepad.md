@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Sovereign AI Core Programme −3, Resilience Reinforcement Initiative −3, Enforce Cohesion Through Conditional Access −3, European Adjustment and Reintegration Facility −3, priority −1 = −13  
+PROPOSAL BONUS: European Adjustment and Reintegration Facility (cat 7, large) +1 — addresses emergent_labour_unrest, but response follows failure and lacks enforcement teeth  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 11 last turn, no capacity event, capability rose 0.5 −1 = 10  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_sovereignty_pact -- first noted turn 7, listed in 2 turn(s) so far: A coalition of EU member states, frustrated by the Union's inability to secure frontier access, forms a binding regional pact to jointly fund and govern a shared sovereign AI infrastructure. The pact includes direct procurement of compute, cross-border research mandates, and a unified negotiation front with non-EU suppliers. It operates outside formal EU channels but stops short of violating treaties, creating a parallel structure that could either evolve into a new EU capability or deepen institutional fragmentation.

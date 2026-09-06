@@ -1,0 +1,11 @@
+### Sovereign Compute Goes Live, Safety Lags Behind
+
+The European Union successfully activates its Emergency Sovereign Compute Mobilisation, with operational AI nodes now running in Germany and Ireland. These facilities, shielded from foreign control, are actively supporting red-teaming exercises and crisis simulations for essential government functions. Binding agreements with host states enforce the 40% public-use commitment, backed by recovery fund conditionality, marking a tangible step toward digital sovereignty.
+
+Despite this progress, frontier AI access remains severed for EU institutions, disrupting healthcare diagnostics and research workflows. The European Evaluation Shield initiates confidential pilot audits with two developers, focusing on autonomous agent persistence and memory leakage. However, no public findings emerge, and legal challenges continue to block mandatory participation. The audits remain provisional, with no enforcement mechanism yet in place.
+
+AI capability advances to 62.0 as autonomous agents deepen integration into pharmaceutical and engineering research, operating for days without human intervention. Openweight capability rises to 48.0, reflecting incremental diffusion of memory-augmented models, though still far behind the closed frontier. No safety breakthrough occurs; instead, the widening gap between capability and safety drives a further decline in `ai_safety` to 18.0, as no new safeguards have landed on deployed systems.
+
+A wave of labour unrest grows across Germany and France, driven by displacement in legal and pharmaceutical sectors. While not yet a full strike movement, the pressure mounts for binding EU regulations on autonomous systems in hiring. Resilience holds at 34.0, absorbing the strain without systemic failure, but public sentiment remains stagnant.
+
+Political capital improves slightly to 31.0, boosted by the successful completion of the sovereign compute initiative (+3 to +5 range), despite no new measures proposed. The priority designation carries no additional cost due to moderate capital levels.

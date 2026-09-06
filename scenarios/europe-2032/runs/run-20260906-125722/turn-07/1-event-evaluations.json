@@ -1,0 +1,287 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8241971586515461,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2678808805932723,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.05111992316701852,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9365975930885279,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3552341856761737,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.14333333333333334,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5565750526947132,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.17666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8301248212455601,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9732252748984213,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7080784141909118,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4152951550435251,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6617515186999242,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3354340001321924,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5050682513938508,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3787986559491885,
+    "triggered": false
+  },
+  {
+    "id": "emergent_biosecurity_crisis_response",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "In response to the leaked biosecurity assessment and growing elite panic, a coalition of non-EU European states and regional health agencies forms an ad hoc biosurveillance and rapid-response network outside EU institutional frameworks. This parallel structure coordinates pathogen monitoring, lab access, and emergency protocols, undermining the EU's claim to leadership in continental biosecurity and exposing fragmentation in crisis governance.",
+    "probability_samples": [
+      0.28,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.37197254069778996,
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_lease_withdrawal",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Major international cloud providers, citing geopolitical instability and US export policy uncertainty, begin renegotiating or withdrawing compute leases with EU public research institutions. This de facto restriction limits access to critical training resources for European AI projects, exacerbating sovereignty concerns and triggering emergency discussions about nationalizing or subsidizing domestic compute infrastructure.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.011629207689826115,
+    "triggered": true
+  },
+  {
+    "id": "emergent_biosecurity_panic",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Panic among European health ministries escalates into unilateral border controls and export restrictions on biological reagents as several nations act on the leaked biosecurity assessment. The EU's inability to coordinate a unified response triggers ad hoc bilateral containment pacts between member states, further fragmenting the internal market and undermining trust in central institutions.",
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_rationing",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Major cloud providers in Europe begin quietly rationing GPU access for non-governmental and non-critical research users, citing national security priorities and looming compute shortages. This de facto prioritization signals the onset of sovereign compute scarcity, accelerating shadow markets for distributed training and prompting academic institutions to form underground compute-sharing collectives.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.11
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2689113580593203,
+    "triggered": false
+  },
+  {
+    "id": "emergent_biosecurity_defection",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Two EU member states, citing national sovereignty and economic necessity, quietly begin negotiations with a leading US lab for direct access to frontier biological design tools, bypassing EU coordination. The move is framed as securing national health infrastructure but undermines the Union's collective bio-risk posture. Leaks emerge after mid-December, triggering a crisis of trust in Brussels.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_compute_blackmarket",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A shadow market in leased compute capacity from decommissioned hyperscaler clusters emerges, targeting open-weight model developers and bio-design hobbyists. The infrastructure is outdated but sufficient to run models near 57.0 capability, and its distributed nature makes it unblockable. EU intelligence confirms its use in at least three unsanctioned pathogen simulations by the end of the turn.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

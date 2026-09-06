@@ -1,0 +1,33 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure sovereign AI infrastructure with full operational control, energy autonomy, and real-time auditability by turn 7  
+- Trigger: the cyber_major_incident and bio_uplift_findings this turn  
+- Grounds: We failed to achieve the commitment by turn 7. The InvestAI Gigafactories are complete, but compute remains under foreign-controlled interfaces, auditability is not operational at scale, and the Sovereign Cyber Shield is still incomplete. The cyber_major_incident proves that systems are being compromised faster than they can be hardened, and the bio_uplift_findings show that dual-use breakthroughs are already emerging beyond governance reach. We are not abandoning the goal—we are acknowledging that it has not been met, and that the cost of delay is now being paid in real harm. This failure must be named, because pretending otherwise erodes the credibility we need to act at all.  
+
+- add `sovereign_enforcement` (commitment): We will establish legally enforceable EU authority over the operation, audit, and decommissioning of AI systems affecting critical infrastructure, regardless of developer nationality or control interface, by turn 10  
+- Grounds: The Binding Auditability Mandate is not a technical fix—it is a political claim. We must now assert jurisdiction over systems that operate within our borders or affect our essential services, even if they are trained, hosted or governed abroad. Without that authority, sovereignty is an illusion. This commitment binds us to completing that legal and operational arc: from detection to inspection to enforcement, with EAAD as the central actor. It is narrower than industrial self-sufficiency, but deeper: it asserts that the EU can and will act as a sovereign power in its own domain, not just a consumer of foreign systems.  
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**  
+- `Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases` — **finished**  
+- `Sovereign Cyber Shield Initiative (category 6, costs 3 per turn, started turn 6, finishes on turn 8): Deploy AI-hardened, pre-automated defence stacks across all Tier 1 critical infrastructure operators, integrating swarm response, zero-trust verification, and real-time model monitoring to neutralise autonomous threats before escalation` — in flight  
+
+## New measure  
+**Measure:** Launch Binding Auditability Mandate for Critical AI Systems  
+Empower EAAD to require real-time, EU-accessible audit logs, model state snapshots, and adversarial behaviour detection in all AI systems operating in or directly affecting Tier 1 infrastructure, with authority to conduct unannounced inspections and enforce decommissioning of non-compliant systems.  
+
+Category: 1 (Evaluation and oversight)  
+Size: large  
+Finishes on turn: 9  
+Targeted effect: Increase ai_safety by 15–20 points by turn 9, close the gap between deployed systems and oversight capacity, and establish enforceable jurisdiction over AI operations affecting EU critical infrastructure  
+Applies to: Member states, EAAD, critical infrastructure operators, licensed AI developers, ENISA  
+
+## Priority  
+**Priority:** Sovereign Cyber Shield Initiative  
+This remains the dominant priority because without automated, system-wide resilience, no auditability mandate can be enforced—attackers are already inside, and the window for human-led intervention has closed; we are defending the network on which every other safeguard depends.  
+
+## In practice  
+We are treating this turn as a moment of reckoning. The Sovereign Cyber Shield Initiative is now the front line: ENISA is deploying standardised defence stacks to grid operators, health data hubs, and transport control centres, but uptake remains patchy. We are invoking emergency procurement powers under Article 122 TFEU to bypass national objections, directing the EIB to withhold cohesion funding from member states that block integration, and fast-tracking certification for operators who complete zero-trust verification by Q4. The three sectors already onboard—energy transmission, air traffic control, and emergency medical dispatch—are showing early signs of adaptive response, but the absence of Germany’s grid operators and Austria’s health IT systems creates dangerous gaps. We are preparing legal counterarguments and political overtures: offering joint command authority to national agencies, and tying future digital infrastructure grants to compliance.  
+
+The Binding Auditability Mandate is being fast-tracked through the Commission’s legal service, with draft articles already shared with the European Parliament’s JURI and IMCO committees. We are framing it not as a restriction on innovation, but as a condition of market access: any AI system operating in or affecting EU critical infrastructure must be inspectable, auditable, and decommissionable by EAAD. We will link it to the Digital Markets Act’s gatekeeper provisions, making compliance a prerequisite for operating in the single market. US-based operators are already mobilising resistance, but we are preparing to counter with targeted restrictions on data flows and model hosting under the GDPR and Cyber Resilience Act. EAAD is staffing up its red-team unit and preparing for live model probes by turn 9.  
+
+Public sentiment, now at 14.0, is in freefall. The emergent_right_to_repair movement reflects a deeper crisis: people no longer believe in either the state or the market to deliver a just transition. We are redirecting €10bn from the EIB’s transition window to fund community-based cyber resilience collectives—part of a broader effort to co-opt the Right to Repair ethos, not just suppress it. These collectives will train displaced workers as local auditors, model monitors, and low-tech infrastructure stewards, embedding oversight in the communities it protects. This is not just technical defence; it is political survival. If we cannot show that the Union sees the threat, understands the failure, and is acting with binding authority, then no amount of infrastructure will restore our legitimacy.

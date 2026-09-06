@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Foundational Compute Reserve −3, Critical Systems Shield Initiative −3, priority −1 = −7  
+PROPOSAL BONUS: Critical Systems Shield Initiative (cat 6, large) +2 — direct response to openweight_frontier_release this turn  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 31.0 last turn, no capacity event, Foundational Compute Reserve in flight +0, capability rose 1.5 −1 = 30.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_grid_regulatory_framework` -- first noted turn 7, listed in 3 turn(s) so far: A coalition of EU energy regulators and AI safety researchers formally proposes a binding framework for auditing AI-driven grid control systems, mandating transparency into decision logic and real-time anomaly detection. The proposal gains traction as several near-misses in automated load balancing raise alarm, and is backed by operators who want liability clarity. It represents the first coordinated institutional push to regulate embedded AI in critical infrastructure operations.  
+- `emergent_bio_detection_toolkit` -- first noted turn 7, listed in 3 turn(s) so far: An open collaboration between European bio-labs and AI developers releases a lightweight, open-source tool that detects AI-generated synthetic DNA sequences with high accuracy, even when obfuscated. It spreads rapidly through academic and commercial screening pipelines, becoming a de facto standard. The tool does not prevent misuse but raises the cost of flying under the radar, and is quietly adopted by several major synthesis providers inside and outside the EU.

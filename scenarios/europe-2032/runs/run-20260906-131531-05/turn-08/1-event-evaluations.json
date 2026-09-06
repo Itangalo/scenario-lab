@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1455930542431334,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8252695311903256,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0173778226116037,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.1,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7812492033522519,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7647988835308049,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.27364900334173836,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated wave of AI-generated deepfake videos targets multiple European political figures, falsely depicting them making extremist statements. The videos spread rapidly across social platforms before detection systems flag them, triggering emergency response protocols in three member states. Trust in digital media plummets further, and the incident is widely cited as evidence of systemic vulnerability to synthetic content.",
+    "emergent": true,
+    "id": "emergent_deepfake_wave",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.47818561048984176,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of Nordic and Benelux states unilaterally activates a dormant mutual aid clause in an obscure EU treaty, creating an emergency data-sharing and compute-pooling arrangement to bolster cyber and bio-defence capabilities. The move bypasses stalled central coordination and is framed as a temporary measure, but it establishes a precedent for ad hoc subgroup action during AI crises.",
+    "emergent": true,
+    "id": "emergent_nordic_benelux_pact",
+    "probability": 0.20000000000000004,
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.635218431360979,
+    "triggered": false
+  }
+]

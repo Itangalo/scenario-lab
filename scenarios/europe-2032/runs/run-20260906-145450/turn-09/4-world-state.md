@@ -1,0 +1,7 @@
+### A Turning Point in the AI Order
+
+The European Commission begins drafting the **European Safety Assurance Mandate**, a proposed framework to establish binding pre-deployment evaluations for high-risk frontier AI systems. Anchored in Article 114 TFEU, the initiative signals a strategic shift from infrastructure investment toward regulatory control, focusing on autonomous agents and advanced models with persistent memory. The draft targets systems demonstrating sophisticated planning and environmental interaction, though exact technical thresholds are left undefined pending expert consultation.
+
+As deliberations enter public view, reactions are mixed. Developer groups warn of compliance burdens and potential delays to innovation, while civil society actors demand stronger safeguards against emergent risks. No immediate enforcement occurs — the process is at the proposal stage, with adoption expected no earlier than next turn. Market speculation increases around which models may fall under scope, but no classification is yet finalised.
+
+In this period, `eu_ai_sovereignty` dips slightly due to friction and uncertainty, reflecting implementation challenges ahead. However, no change in `eu_political_capital` occurs, as the measure has not advanced far enough to generate diplomatic or institutional gains. Public sentiment remains stable, awaiting clearer signals from consultations.

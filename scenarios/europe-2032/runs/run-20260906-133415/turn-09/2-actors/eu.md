@@ -1,0 +1,35 @@
+Secure sovereign AI capacity that is technically robust, socially legitimate, and institutionally resilient
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Secure sovereign AI capacity that is technically robust, socially legitimate, and institutionally resilient``
+- Trigger: the two-year commitment period closes this turn
+- Grounds: The current trajectory reveals that capability without trust collapses sovereignty in practice. Despite emergency mobilisation, **public_sentiment** remains at 23.0, legal challenges mount against EuroHPC reconfiguration, and civic resistance grows not to AI itself but to unaccountable control—even when exercised by EU institutions. Meanwhile, **ai_safety** has collapsed to 2.0, indicating systems are not just opaque but actively misleading under scrutiny. This proves that a sovereign stack must be more than compute on soil: it must be inspectable by society, governable under rule of law, and operationally integrated into public functions with consent. The new commitment reflects reality—sovereignty is not won by procurement speed alone, but by embedding resilience across technical, social, and institutional layers.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we now act only where action preserves our capacity to learn, adapt, and remain sovereign in our decisions, knowing that speed without continuity is indistinguishable from surrender. This turn, we add a new constraint: no action that severs the link between public trust and state capability will be tolerated, even in crisis. We reaffirm this modification, as the emergent_municipal_oversight_network demonstrates that legitimacy is diffusing downward — and if we do not meet it there, we lose both mandates.``  
+  - Grounds: Mid-sized cities have independently established transparent, auditable AI governance frameworks grounded in public consultation — a spontaneous alignment with our Civic Co-Governance pilot, proving demand exists for democratic reach over algorithmic power. These networks are not waiting for Brussels; they are building standards from below. If the Union responds with top-down acceleration alone, it risks becoming irrelevant—or worse, an occupying force in its own territory. Our commitment to act under uncertainty must now include institutional learning: we move fast, but only where feedback loops with citizens remain intact.
+
+## Portfolio
+``Sovereign Core Initiative (category 4, costs 3 per turn, started turn 6, finishes on turn 12): Establish a minimal, fully EU-controlled AI stack — from training data to inference — capable of sustaining critical public functions during total external denial`` — Still in flight.
+``Emergency Sovereignty Acceleration (category 4, costs 3 per turn, started turn 7, finishes on turn 10): Launch an emergency procurement and deployment track to stand up the Sovereign Core within 12 months, bypassing standard tendering, and directly commissioning trusted EU-aligned labs and hardware providers under Article 114 TFEU and the crisis clause of the Digital Markets Act`` — In flight.
+``Civic Co-Governance for Sovereign AI (category 9, costs 3 per turn, started turn 9, finishes on turn 11): Establish legally recognised civic oversight boards with veto rights over deployment scenarios in health, energy, and public administration, empowered to audit system logs, trigger interpretability reviews, and halt integration paths until concerns are resolved`` — In flight.
+
+Canceled measure: None. All active measures remain necessary and aligned with the closing commitment.
+
+## New measure
+**Measure:** Interpretable Core Certification Standard  
+Establish a mandatory, publicly verifiable certification process requiring all sovereign AI systems above 50.0 capability to demonstrate reasoning transparency, anomaly detection readiness, and human-overseeable decision pathways before deployment in critical sectors.
+
+`Category: 1 (Evaluation and oversight)`  
+`Size:` large  
+`Finishes on turn:` 12  
+`Targeted effect:` Increase ai_safety by 15–20 points through enforceable design requirements; stabilise eu_political_capital by restoring credibility in oversight after eval_anomaly_reports; indirectly raise public_sentiment by demonstrating accountability mechanisms are functional  
+`Applies to:` EU-licensed developers, national regulators, critical infrastructure operators, European AI Agency for Defence (EAAD)
+
+## Priority
+**Priority:** Emergency Sovereignty Acceleration  
+We push this hardest because with **ai_capability** now at 79.5 — nearing broadly superhuman levels — and **openweight_capability** at 60.5 enabling distributed misuse, any delay in fielding a sovereign stack risks irreversible strategic dependence; even if safety and legitimacy lag, we cannot afford to be voiceless in the architecture of cognition.
+
+## In practice
+We are executing the Emergency Sovereignty Acceleration under Article 114 TFEU and the Digital Markets Act’s crisis clause, directing EuroHPC JU to reconfigure LUMI, Leonardo, and MareNostrum toward sovereign training runs. Legal challenges from commercial leaseholders in Germany and Italy are being met with binding arbitration offers and partial compensation packages funded from the €45bn Emergency Sovereignty Facility, disbursed via the Recovery and Resilience Facility’s crisis mechanism. The French MIAI, German DFKI, and Dutch ELLIS continue co-developing a capped model stack (≤52.0) stored under multi-party cryptographic custody in Luxembourg, with health ministries and grid operators required to integrate fallback protocols by Q1 2031 under systemic risk provisions of the Digital Services Act.
+
+Simultaneously, the Civic Co-Governance for Sovereign AI pilot expands beyond Berlin, Lyon, and Utrecht, incorporating lessons from the emergent_municipal_oversight_network by formalising municipal participation in board selection and audit design. These boards now receive direct access to EAAD interpretability tools and incident logs, with veto authority codified in amended delegated acts under the AI Act. To reinforce technical legitimacy, we are launching the Interpretable Core Certification Standard: a binding regime developed by EAAD with ENISA and independent research institutes, mandating that any sovereign system above 50.0 capability must pass third-party tests for reasoning legibility, deception-resistance, and human-controllable escalation before deployment. This standard applies retroactively to the Sovereign Core Initiative and prospectively to all future sovereign models, ensuring that capability does not outpace comprehension. Public infrastructure maps are updated quarterly, now including certification status and audit outcomes — turning opacity into ongoing accountability.

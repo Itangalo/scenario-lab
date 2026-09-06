@@ -1,0 +1,17 @@
+### A Reckoning in Real Time
+
+The EU enters 2029’s second half under cascading pressure. A genome model’s controversial uplift findings spark fierce debate in biosecurity circles, while labour markets visibly fracture: law firms freeze graduate intake, and mid-level administrative roles vanish across member states. Public anger simmers, fed by a sense that AI delivers disruption without benefit.
+
+The Sovereign Cyber Shield Initiative remains the frontline effort. ENISA pushes emergency integration of AI-hardened defences into critical infrastructure, leveraging Article 122 powers to override national resistance. The EIB conditions cohesion funding on compliance, accelerating adoption in energy and transport. Yet Germany and Austria hold firm, challenging the mandate’s legality. Without full grid and health IT coverage, the shield remains porous—adaptive in parts, but fragmented in practice.
+
+The InvestAI Gigafactories formally complete, but their promise falters. Compute capacity exists, but access is still gated through foreign-controlled interfaces. Real-time auditability is not operational at scale, undermining claims of sovereignty. In response, the European Commission begins drafting the Binding Auditability Mandate, which would require full transparency and inspection rights for critical AI systems and grant the European AI Assurance Directorate (EAAD) power to decommission non-compliant systems. The proposal is in early legal review and faces strong opposition from US-based operators; no formal proposal has been adopted, and implementation cannot begin before the next turn at the earliest.
+
+Political capital holds steady, as the Commission refrains from launching a second large measure. The portfolio remains charged with only one active large measure—the Sovereign Cyber Shield Initiative—and no new priority is declared. Public sentiment drops further as job losses mount and trust in AI governance collapses. A grassroots 'Right to Repair' movement gains traction, symbolising a growing rejection of top-down digital transition.
+
+Behind the scenes, isolated technical exchanges occur between individual EU member states, Japan, and South Korea on frontier model risks. These contacts remain sporadic and exploratory, with no coordination channel established. No joint mechanisms are created, and no structured red-teaming initiative emerges.
+
+### Sovereignty Holds, Capital Preserved
+
+With ai_capability rising by 1.5 and no sovereign capacity event, eu_ai_sovereignty remains at 15.0—no additional erosion occurs this turn, as the portfolio does not expand beyond its current load. Resilience dips as capability advances outpace defence integration. ai_safety sees a marginal gain from the signal of ongoing work on auditability, but no systemic shift yet. openweight_capability increases slightly to 51.0, reflecting gradual spillover and incremental access gains from InvestAI infrastructure, even if full sovereign control is not yet realised. The metric continues its accumulation path in line with invariant expectations. eu_political_capital holds at 18.0, avoiding the cost of launching a second large measure.
+
+The draft Binding Auditability Mandate remains in legal review, consistent with governance delays. No new organisational structures are formed around international coordination or domestic movements, preserving the one-measure limit. Informal discussions and public sentiment shifts are acknowledged without implying institutional momentum or future realisation.

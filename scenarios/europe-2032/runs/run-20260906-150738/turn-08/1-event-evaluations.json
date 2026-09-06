@@ -1,0 +1,244 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7033706046030331,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.03666666666666667,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.03,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.036666666666666674,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.07
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.13868929708911293,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2304358997180559,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12822256807882004,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.043333333333333335,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.1,
+      0.03,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.044333333333333336,
+    "probability_samples": [
+      0.033,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6307059625877753,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9275803645377892,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.075,
+      0.0,
+      0.075
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.14036876987279479,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4483443494433239,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.07894950121468913,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.11,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.19
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6802811713411153,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4618694836811008,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.21456979573527168,
+    "triggered": false
+  },
+  {
+    "id": "emergent_laboratory_leak",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A major breach in a European AI lab's secure environment exposes early-stage agentic models and partial training data to open networks. The leak is not immediately weaponized but enables rapid replication of frontier-like reasoning in distributed clusters. Independent actors begin publishing novel exploits derived from the architecture within weeks.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03463315150007629,
+    "triggered": true
+  },
+  {
+    "id": "emergent_preparedness_pact",
+    "probability": 0.18666666666666668,
+    "emergent": true,
+    "description": "A coalition of mid-sized EU member states, frustrated by the Commission's inability to deliver sovereign capability and alarmed by Poland's defection, launches an informal 'AI Preparedness Pact' outside EU structures. They commit to shared red-teaming exercises, joint procurement of defensive AI tools, and mutual assistance in incident response. While non-binding, it marks the first structured cooperation among members bypassing central EU coordination, signaling deepening fragmentation in AI security policy.",
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3507957004001464,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.06333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.19
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.20467472303572187,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.28079243395708897,
+    "triggered": false
+  }
+]

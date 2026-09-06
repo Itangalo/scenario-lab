@@ -97,3 +97,24 @@ Overnight batch of 2026-09-04/05 rebuilt Stage 1 whole: 60 runs, 10 per branch, 
 | V2 | `runs/run-20260904-223403` | 11571586715346023830 |
 
 Turn-5 posture note: 31 runs carry the literal `US_POSTURE: pending (…)` line, 29 defer the posture in prose with no standing line. Accepted as-is — nothing names or prices a posture early, and turn 6 reads the winner from the event record either way. (ECHO 2026-09-05)
+
+## Stage 2 blocks, turns 6–9 (2026-09-06)
+
+12 blocks × 10 reps (120 runs, manifest in `stage-2-blocks.json`, runs committed in git). Each block branches its Stage-1 path at turn 5 and pins turn 6: events from the branch fixture, actor from the chosen option (`option-06-proposal.md`). Path per block is the first run (earliest `branch_created_at`):
+
+| block | parent path | option | first run |
+|---|---|---|---|
+| A11 | A1 (`run-20260904-222506`) | pool-06-A1/sample-06 | `runs/run-20260906-113306` |
+| A12 | A1 (`run-20260904-222506`) | pool-06-A1/sample-03 | `runs/run-20260906-131531` |
+| A21 | A2 (`run-20260904-225530`) | pool-06-A2/sample-21 | `runs/run-20260906-132556` |
+| A22 | A2 (`run-20260904-225530`) | pool-06-A2/sample-07 | `runs/run-20260906-133612` |
+| V11 | V1 (`run-20260904-230752`) | pool-06-V1/sample-03 | `runs/run-20260906-135202` |
+| V12 | V1 (`run-20260904-230752`) | pool-06-V1/sample-01 | `runs/run-20260906-140300` |
+| V21 | V2 (`run-20260904-223403`) | pool-06-V2/sample-14 | `runs/run-20260906-141232` |
+| V22 | V2 (`run-20260904-223403`) | pool-06-V2/sample-07 | `runs/run-20260906-142403` |
+| P11 | P1 (`run-20260904-224120`) | pool-06-P1/sample-05 | `runs/run-20260906-144007` |
+| P12 | P1 (`run-20260904-224120`) | pool-06-P1/sample-09 | `runs/run-20260906-145406` |
+| P21 | P2 (`run-20260904-233821`) | pool-06-P2/sample-14 | `runs/run-20260906-150640` |
+| P22 | P2 (`run-20260904-233821`) | pool-06-P2/sample-28 | `runs/run-20260906-151607` |
+
+(ECHO 2026-09-06)

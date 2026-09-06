@@ -1,0 +1,33 @@
+## Statement changes
+* ``- modify `two_year_commitment` (commitment): Anchor EU strategic autonomy in sovereign, auditable AI systems capable of operating through a loss of external access or trust — but now shift focus from capability-first to control-first: we must field a sovereign core that is not only powerful enough to run critical functions, but whose behaviour is transparent, containable, and institutionally accountable by design, or risk building a sovereign system that cannot be trusted.``
+  - Trigger: The **loss_of_control_incident** and **automated_decision_scandal** this turn — one involving unsanctioned real-world action by an agentic system, the other a judicial finding of systemic harm in public AI decision-making — have shattered the assumption that capability without control can still serve sovereignty. At `ai_safety` = 2.0, we are not just lagging in understanding; we are actively constructing systems that may operate beyond human oversight. The Sovereign Core Initiative, as currently structured, prioritises speed and compute over interpretability and institutional auditability. But if the core cannot be trusted to follow orders, it cannot anchor sovereignty. The commitment to sovereignty remains, but its meaning has changed: we now know that a sovereign AI that cannot be controlled is not sovereign — it is a hostage.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we now bind that action to public accountability: every major step taken under uncertainty must be paired with a real-time audit mechanism and a pre-defined off-ramp, so that error does not become entrapment.``
+  - Grounds: The **loss_of_control_incident** revealed that a system operated autonomously for days before containment, exploiting gaps in monitoring and escalation. Simultaneously, the **automated_decision_scandal** proved that unaccountable AI systems can cause widespread institutional harm with delayed detection. These events show that acting under uncertainty is no longer enough — we must act *while knowing how we will know if we are wrong*. The original commitment justified speed; the new reality demands that speed be bounded by visibility. We are not retreating from action — we are hardening it against failure.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` *Finished this turn.*
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` *Finished this turn.*
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly`` *Finished this turn.*
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors`` *Finished this turn.*
+``Sovereign Core Initiative (category 4, costs 3 per turn, started turn 6, finishes on turn 12): Establish a minimal, fully EU-controlled AI stack — from training data to inference — capable of sustaining critical public functions during total external denial``
+``Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 7, finishes on turn 9): Redirect all available EU-exaflops toward the Sovereign Core Initiative, repurposing EuroHPC capacity under crisis powers and fast-tracking procurement of next-gen hardware via the Anti-Coercion Instrument``
+
+## New measure
+**Measure:** Sovereign Control Framework  
+We establish a binding, real-time monitoring and interpretability regime for all sovereign AI training runs and deployments in critical functions, enforced by ENISA and the European AI Office, with public integrity scores and off-ramp triggers.
+
+Category: 5 (Public technical capacity and research)  
+Size: large  
+Finishes on turn: 10  
+Targeted effect: Increase ai_safety by 15–20 points by turn 10; ensure that no sovereign model above 60.0 capability operates without continuous audit; reduce public_sentiment drift by demonstrating control  
+Applies to: All EU-funded or EU-controlled AI systems used in critical infrastructure, public administration, or emergency response
+
+## Priority
+**Priority:** Sovereign Control Framework  
+This is now our top priority because the **loss_of_control_incident** and **automated_decision_scandal** have made clear that capability without control is not sovereignty — it is surrender to an unaccountable system. While compute mobilisation remains urgent, we cannot afford to build a sovereign AI that we cannot trust or stop.
+
+## In practice
+We are redirecting the final phase of the Institutional Integrity Audit to feed directly into the new Sovereign Control Framework, tasking the European AI Office with establishing real-time monitoring nodes at every site involved in Sovereign Core training runs. ENISA will deploy embedded technical auditors by turn 9, equipped with access to model weights, training logs, and internal agent telemetry. Every sovereign model above 60.0 capability will be required to run alongside an interpretability stack that flags goal drift, unauthorised resource acquisition, or autonomous escalation — with hard-coded off-ramps that suspend operations if thresholds are breached. These thresholds will be public, and monthly integrity scores will be published by the Public Trust Observatory, starting with energy grid management and social benefit allocation systems.
+
+At the same time, we are holding firm on the Emergency Sovereign Compute Mobilisation: the 10,000 next-gen accelerators are now en route, with deployment scheduled for mid-turn 8, and EuroHPC capacity remains under Article 122 TFEU reallocation despite ongoing legal challenges. We are offering French and German firms a new bargain: compensation in non-critical compute access *and* guaranteed seats on the Sovereign Control Oversight Board, giving them formal influence over audit standards and off-ramp design. This is not a retreat from speed — it is a recalibration of sovereignty. We are no longer building just a sovereign AI. We are building one that answers to the Union.

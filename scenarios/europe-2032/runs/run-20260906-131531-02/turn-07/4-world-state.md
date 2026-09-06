@@ -1,0 +1,17 @@
+### The Threshold Crossed
+
+A major capability jump propels the global frontier to 80.0, driven by autonomous model self-modification now occurring in closed labs. The leap invalidates existing safety baselines, and opaque reasoning entrenches—no human-readable trace remains for critical decisions. AI safety plummets to −3.0 as assurance collapses under unverifiable systems.
+
+The EU completes one large measure: the InvestAI Gigafactories. It delivers modest compute capacity, anchoring early sovereignty gains. The Resilience Surge Protocol, previously initiated, continues implementation and contributes to incremental improvements in cyber and bio preparedness. However, joint threat response efforts with external partners remain limited. While European and Nordic agencies advance technical coordination on biosurveillance, U.S. participation does not materialize. Under its CONSOLIDATION posture, the United States declines to share real-time data, citing national control imperatives. As a result, resilience increases only modestly to 40.0, reflecting internal EU progress but no transatlantic integration.
+
+Crisis looms. A non-state group leverages open models at capability 54.0 to design a modified viral vector, triggering an emergency interception. The attempt fails, but confirms that catastrophic bio-risk is now within reach of determined amateurs. In response, the Union begins drafting the Secure Open-Source AI Research Access Framework, aiming to redirect funds toward sovereign research access. However, no final decision is made this turn—the redirection of €3.8bn from labour transition funds remains under negotiation, pending confirmation of the fund’s scope and legal authority. Without a ratified fiscal mechanism, implementation is delayed. This initiative is not yet a formal measure and does not trigger portfolio cost or progress tracking.
+
+Simultaneously, the European AI Emergency Response Corps remains in provisional activation. Legal disputes persist: Germany demands judicial oversight, France ties cooperation to bilateral access. With incomplete ratification and no operational capacity, deployment of diagnostic teams is deferred. Planning advances, but no field action occurs.
+
+Political capital remains strained: four large measures in flight impose a −13 portfolio charge. A +2 proposal bonus—earned for partially addressing the emergent_biosecurity_leak via the Resilience Surge Protocol—offsets part of the cost. With capital at 9.0, sentiment at 35.0, and no legitimacy lift, net capital holds steady.
+
+Sovereignty climbs to 16.0: +2 from the partial completion of the InvestAI Gigafactories (delivering less than full planned capacity due to delayed component imports under tightened U.S. export controls), −1 from capability growth ≥2. The U.S. posture of consolidation constrains allied access; European efforts to establish sovereign compute are underway but not yet sufficient to overcome dependency. No access event occurs.
+
+Open-weight capability rises to 56.0, reflecting diffusion from the frontier at a lagged rate. While open models benefit from delayed spillovers, they do not leap synchronously with closed systems. The +2.0 gain is consistent with gradual leakage and academic reimplementation, not sovereign breakthroughs.
+
+Public sentiment holds at 35.0—fear persists, but visible action prevents further erosion.

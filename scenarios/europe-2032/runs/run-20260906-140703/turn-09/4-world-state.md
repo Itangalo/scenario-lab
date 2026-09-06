@@ -1,0 +1,11 @@
+### A Surge in Capabilities, A Crack in Confidence
+
+A sudden leap in AI performance—driven by breakthroughs in verifiable domains like code synthesis and cyber operations—pushes global `ai_capability` to 67.5. The advance, while narrow, enables more autonomous and adaptive attack patterns, raising alarm among security agencies. Concurrently, verification techniques expand into clinical coding and contract analysis, accelerating capability gains in regulated professions.
+
+An open-source AI bio-design toolkit, developed from leaked research models, is found in use by amateur networks across three member states. The tools engineer bacteriophages that evade current EU screening, exposing critical gaps in biosecurity oversight. Though not weaponized, the incident—occurring just as the **Biosecurity Rapid Response Framework** completes—reveals how quickly dangerous capabilities can diffuse beyond institutional control.
+
+The EU finalises the **Frontier Model Evaluation Mandate**, making pre-deployment red-teaming mandatory for high-capability models. However, lab accreditation remains incomplete, and U.S. developers resist weight-sharing, demanding reciprocity. Only one hyperscaler tentatively agrees, under strict conditions. The mandate is now law, but enforcement is fragile.
+
+Resilience rises to 56.0, boosted by the completed **Biosecurity Rapid Response Framework** (category 6), which enhances detection and cross-agency coordination. Yet, political capital dips to 43.0: the portfolio carries two small measures (−4), including the priority (−1), and no completion bonus lands. The **Frontier Model Evaluation Mandate** yields no immediate safety gain—systems remain opaque—and `ai_safety` plummets to 14.0 amid the `capability_jump` and unsecured model diffusion.
+
+Sovereignty declines to 27.0: no category 4 completion, `ai_capability` rose by 2.0 (triggering −1), and no capacity event. Public sentiment worsens to 30.0 as media spotlight bio-hacking fears and perceived dependency on foreign AI providers.

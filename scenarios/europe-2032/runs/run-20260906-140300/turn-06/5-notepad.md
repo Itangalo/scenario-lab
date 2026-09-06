@@ -1,0 +1,10 @@
+PORTFOLIO CHARGE: Tech sovereignty package −3, Emergency Compute Assurance Initiative −2, priority −1 = −6  
+PROPOSAL BONUS: Emergency Compute Assurance Initiative (cat 4, small) +3 — direct response to taiwan_blockade  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 24.0 last turn, Emergency Compute Assurance Initiative in flight +1, taiwan_blockade secures access +1, capability rose 1.5 −1 = 25.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_grid_stability_concerns` -- first noted turn 2, listed in 6 turn(s) so far: Energy regulators deepen audits, uncovering AI-driven feedback loops in grid load balancing systems. One utility suspends an automation upgrade pending review.  
+- `emergent_open_source_cyber_tools` -- first noted turn 2, listed in 6 turn(s) so far: The underground toolkit evolves, now bundling exploit chaining with evasion techniques that bypass signature-based detection in two mid-sized municipal networks.  
+- `emergent_synthetic_election_interference` -- first noted turn 5, listed in 3 turn(s) so far: A coordinated AI-driven disinformation campaign using synthetic media overwhelms local fact-checking infrastructure in two member states ahead of regional elections, triggering emergency debate on platform liability and real-time detection mandates.  
+- `emergent_grid_control_instability` -- first noted turn 5, listed in 3 turn(s) so far: A joint research initiative between EU academic labs and energy operators uncovers a systemic feedback vulnerability in AI-managed grid balancing algorithms, prompting a voluntary pause in automation upgrades across several countries while mitigation protocols are developed.

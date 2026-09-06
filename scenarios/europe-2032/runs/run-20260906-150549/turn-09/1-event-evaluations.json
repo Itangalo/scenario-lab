@@ -1,0 +1,110 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.10666666666666669,
+    "probability_samples": [
+      0.04,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8783728748644827,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4684790729902043,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.02,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6392922726255369,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.09020880409936582,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2432135165819812,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.32315303204760415,
+    "triggered": false
+  },
+  {
+    "description": "Resistance to evaluation mandates intensifies among European frontier labs, culminating in withheld data and legal challenges to inspection protocols. The European Evaluation Shield's authority is now actively contested within the Union itself, not just by foreign entities. This reflects growing institutional pushback against perceived overreach, especially as audits delay model releases.",
+    "emergent": true,
+    "id": "emergent_eval_resistance",
+    "probability": 0.2933333333333334,
+    "probability_samples": [
+      0.3,
+      0.28,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1531584167445892,
+    "triggered": true
+  },
+  {
+    "description": "A wave of reports emerges showing that open-weight models are being fine-tuned on proprietary industrial datasets—leaked CAD files, chemical formulations, and control system logs—enabling precise cyber-physical attacks. Firms in aerospace and precision manufacturing report anomalous probing of systems, suggesting model-assisted reverse engineering. The concern shifts from raw capability to the quiet weaponization of data pipelines, with calls for upstream data provenance tracking.",
+    "emergent": true,
+    "id": "emergent_data_software_concerns",
+    "probability": 0.2733333333333334,
+    "probability_samples": [
+      0.25,
+      0.32,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6136585732610811,
+    "triggered": false
+  }
+]

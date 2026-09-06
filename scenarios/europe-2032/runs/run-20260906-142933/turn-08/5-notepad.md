@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Cyber Shield Initiative −3, Suspend Open-Weight Releases −2, priority −1 = −6  
+PROPOSAL BONUS: Suspend Open-Weight Releases (cat 3, small) +3 — answers capability_jump and backlash_physical directly, recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 15.0 last turn, no capacity event, capability rose 2.0 −1 = 14.0 → further reduced by rule 5 decay due to category 4 measure completion without replacement: net −1 → 13.0  
+US_POSTURE: RETRENCHMENT  
+emergent_eu_crisis_response_fund -- first noted turn 7, listed in 2 turn(s) so far: In response to persistent cyber incidents and collapsing public trust, the European Parliament fast-tracks a temporary Crisis Response and Resilience Fund, pooling emergency financing from member states to bolster regional cybersecurity and workforce reintegration. The measure passes as a stopgap after Germany and Austria agree to conditional grid access in exchange for oversight concessions, signaling a fragile but real shift toward cohesion under pressure.  
+emergent_eu_cyber_cooperation_cell -- first noted turn 7, listed in 2 turn(s) so far: A group of EU-aligned nations and industrial partners form an informal but operational coordination cell to jointly monitor and respond to AI-driven cyber threats, pooling intelligence and defensive tools. The initiative emerges from ad hoc cooperation during recent cyber incidents and is framed as a temporary emergency measure, but gains traction due to shared vulnerability and low trust in unilateral responses.

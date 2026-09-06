@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Verification Regime −3, Replication Foundry Initiative −3, priority −1 = −7  
+PROPOSAL BONUS: Replication Foundry Initiative (cat 4, large) +6 — responds directly to eu_frontier_access_denied and taiwan_blockade, both severe, recent, and unmitigated  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18 last turn, no capacity event, capability rose 4.0 −1, eu_frontier_access_denied t8 −2 = 15  
+US_POSTURE: RETRENCHMENT  
+EMERGENT: `emergent_european_ai_commons` -- first noted turn 7, listed in 2 turn(s) so far: A coordinated effort among EU-aligned research institutions and public labs begins pooling open-weight models, evaluation frameworks, and defensive AI tooling into a shared, sovereign European AI commons. The initiative emerges in response to repeated access denials and audit failures, and gains momentum as member states quietly redirect decommissioned hardware. It is not state-run but receives tacit support from national science agencies.  
+EMERGING: `bio_uplift_findings` -- first noted turn 8, listed in 1 turn(s) so far: A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.

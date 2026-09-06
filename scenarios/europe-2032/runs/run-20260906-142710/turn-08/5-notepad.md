@@ -1,0 +1,5 @@
+PORTFOLIO CHARGE: Sovereign Cyber Shield Initiative −3 (finished), Mandate Real-Time Logging −3, Cyber Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Cyber Resilience Surge (cat 6, large) +4 — answers cyber_major_incident directly, severe and ongoing  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 13.0 last turn, no category 4 finish, Gigafactories in flight yields nothing (already finished), export_control_escalation t8 −2, eu_frontier_access_denied t8 −2, capability rose 1.5 < 2 → no decay term = 9.0 → wait, correction: rule 5 allows only one event term, largest. Both export_control_escalation and eu_frontier_access_denied qualify; latter is broader. Take −2 for eu_frontier_access_denied t8. SOVEREIGNTY: 13.0 last turn, no category 4 completion, eu_frontier_access_denied t8 −2, capability rose 1.5 < 2 → no decay = 11.0  
+US_POSTURE: RETRENCHMENT

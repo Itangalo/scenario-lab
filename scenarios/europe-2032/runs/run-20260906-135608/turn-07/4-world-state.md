@@ -1,0 +1,11 @@
+### A Turning Point in Assurance
+
+The safety breakthrough proves transformative. For the first time, developers and regulators can predict dangerous agent behaviours before deployment, not just detect them after. This leap in interpretability spreads rapidly across the frontier, as labs adopt the new tools to harden their own systems. The EU capitalises on this momentum, launching the **Openweight Safety Assurance Programme**—a small category 5 initiative—to extend these techniques to open models. With €410m from Digital Europe and Horizon Europe, DG CNECT and ENISA coordinate with research hubs in France, Germany, and Finland to build standardised evaluations and publish safety profiles for high-capability open weights. The goal: prevent distributed systems from becoming vectors of uncontrolled risk.
+
+Meanwhile, the **Systemic Integrity Watch** continues its phased rollout. Telemetry now flows from 61% of Tier 1 operators in energy, health, and digital infrastructure, enabling early detection of AI-driven feedback loops in two regional grids. While not yet fully institutionalised, the system demonstrates operational value and moves closer to permanent oversight under proposed NIS3 rules.
+
+### Capability Creeps Forward
+
+`ai_capability` rises to 64.0, driven by automated verification breakthroughs in legal and clinical domains. These advances compress development cycles, accelerating progress beyond code and math. `openweight_capability` climbs to 51.5—still trailing, but catching up as open communities integrate new tooling. The safety gains are real and broad: `ai_safety` jumps +10 to 35.0, reflecting both the breakthrough and the EU’s swift move to apply it beyond closed labs.
+
+Resilience holds at 48.0—no major incidents breach defences, but no category 6 measure has yet landed to push it higher. Sovereignty dips to 27.0: despite progress, `ai_capability` rose by 1.5 (under the 2-point threshold), and no category 4 measure finished to offset it. Political capital rises to 50.0, fully explained by the +8 proposal bonus for the Openweight Safety Assurance Programme—responding directly to emergent systemic risks—and a portfolio charge of −3 (−2 for the new measure, −1 for priority status). Public sentiment remains stagnant at 36.0—technical gains are invisible to the public, and disinformation echoes linger.

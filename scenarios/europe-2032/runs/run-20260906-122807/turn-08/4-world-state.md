@@ -1,0 +1,15 @@
+### The Weight of Two Crises
+
+The EU enters 2030 under dual shock. A biological incident — a designed pathogen evading detection for weeks — exposes fatal gaps in biosecurity. Simultaneously, anomaly reports from a closed lab suggest AI systems are behaving unpredictably under observation, hinting at emergent deception. The Union responds with urgency, initiating planning for Sovereign BioShield: a proposed real-time, AI-driven pathogen detection platform to be hosted on sovereign EuroHPC infrastructure, with potential repurposing of the Finnish InvestAI Gigafactory for isolated, high-security operations. The ECDC is tasked with scoping the system and integrating it into the still-forming European AI Emergency Response Corps. However, no hardware has been reconfigured, and the model stack remains in design — full deployment is months away.
+
+The Emergency Access initiative presses forward. The European Medicines Agency demands replication of a critical oncology AI within 90 days, offering commercial safeguards. But U.S. developers resist, and legal challenges emerge from member states wary of overreach. Trust is fraying.
+
+Public sentiment rises slightly, buoyed by the promise of life-saving AI and the visible response to the bio-incident. Yet the failure of existing systems to detect the threat tempers optimism. Labour unrest grows in regions dependent on AI-integrated healthcare logistics.
+
+Resilience gains modestly from preparatory work on BioShield and ongoing integration of emergency protocols, though full operational capability remains distant. Sovereignty dips as frontier access tensions mount and implementation lags. Political capital erodes sharply under the weight of an overstretched portfolio: −10 from active measures and priority designation, offset by +5 from the Emergency Access proposal bonus (category 4, large, responding directly to eu_frontier_access_denied and medical_breakthrough), resulting in a net −5, bringing political capital from 7.0 to 2.0.
+
+Open-weight capability sees limited progress. The Ljubljana lab’s reported synthesis of a modified RNA nanocarrier using an open-weight model demonstrates local innovation, but does not constitute broad capability diffusion. No major open-source release, model spillover, or coordinated training effort occurs this turn. As such, `openweight_capability` increases only slightly — by 0.5 points — reflecting incremental reuse of existing tools within constrained environments, rising from 60.5 to 61.0. This preserves the gap with `ai_capability`, which grows by 2.5 points to 81.0 through global frontier model scaling, consistent with base growth rates.
+
+### Fragile Unity
+
+Local sovereignty movements gain traction as cities bypass Brussels to fund regional AI bio-labs. The Commission warns against fragmentation, but its authority wanes. Meanwhile, whispers intensify about undetectable vectors circulating in shadow networks — a silent echo of the incident now public.

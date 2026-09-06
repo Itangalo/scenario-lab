@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 45.0 to 52.0 (+7.0) in one turn, which exceeds the maximum plausible growth rate. While the invariant allows `openweight_capability` to rise or stay flat, such a large jump is inconsistent with the fixed underlying rates of progress defined in metric rule 1 (implied by Constitutional Constraint 1: \"How fast the world moves is fixed, and unannounced\"). A 7-point increase in open-weight capability in a single six-month turn, especially when `ai_capability` rose only 1.0 point, breaks the established pace of divergence and implies an unrealistic acceleration not justified by narrative or mechanism.\n- Modelling choice 5 violated: The EU introduces two new measures in one turn — **Emergency Sovereign Compute Mobilisation** and the completion of **Tech sovereignty package** (which finishes this turn and implies it was newly implemented or had a final phase). However, the **Tech sovereignty package** finishing in turn 6 suggests it was either introduced this turn or had a final implementation phase now. Combined with the launch of a new category 4 measure, this constitutes two major policy actions in one turn, violating the \"at most one new measure per turn\" rule. The narrative treats both as active and impactful, which is not permitted.\n- Modelling choice 6 violated: The **Emergency Sovereign Compute Mobilisation** is a large category 4 measure, yet it is implied to have immediate partial effect (provisional commitments, partial momentum contributing +1 to sovereignty). Minimum time from proposal to any effect for high-cost measures is two full turns; therefore, no sovereignty gain should be attributed to it in its proposal turn. The +1 from \"partial momentum\" violates the minimum lag requirement."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

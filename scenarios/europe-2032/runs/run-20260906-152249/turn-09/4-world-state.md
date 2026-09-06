@@ -1,0 +1,11 @@
+### The Hollow Core
+
+The Sovereign AI Core Programme formally concluded this turn, but its promise of an independent EU AI stack remains unfulfilled. While the legal and audit frameworks are in place, the compute foundation — promised under RePowerEU commitments — failed to materialize on schedule. The first racks in Kiruna will not be operational until mid-2031, leaving the Union reliant on borrowed cloud capacity. This stopgap, negotiated under Digital Markets Act leverage with a US hyperscaler, undermines the very sovereignty the programme was meant to secure. The EU now operates a sovereign protocol on foreign compute — a contradiction that does not go unnoticed.
+
+Meanwhile, the Resilience Reinforcement Initiative achieved partial success. AI-assisted monitoring is now live across ENTSO-E and national CSIRTs, and emergency fraud detection has been deployed in key subsidy systems. Patching velocity improved, though unevenly — healthcare and local government systems remain lagging. The joint cyber threat response with the US and UK brought real-time telemetry sharing into EU coordination, enhancing detection without new infrastructure. Yet dependence on external intelligence deepens just as domestic capacity stalls.
+
+### Talent and Triage
+
+With no new compute and political capital at a near-record low of 7.0, the EU’s last credible lever is the Fast-track Sovereign Talent Corridor. Despite fast-tracked visas and offers of legal protection, recruitment remains below target. The allure of California and Zurich outweighs EU incentives, compounded by perceptions of institutional drift and broken promises. Toulouse and Helsinki labs sit underutilized.
+
+The Emergency Reskilling and Transition Acceleration shows early promise, with 42,000 workers enrolled, but public sentiment remains stagnant at 22.0. Job losses in law, accountancy, and software continue to dominate discourse. No new measures were launched — the Union is in triage, closing out commitments rather than opening new ones.

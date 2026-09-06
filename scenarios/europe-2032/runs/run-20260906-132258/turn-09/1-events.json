@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "An international consortium of academic labs, using only open-weight models and modest compute, replicates a recent frontier result in protein folding that was believed to require proprietary systems. The achievement is published in a preprint and verified independently, triggering debate about whether closed labs are still the necessary engines of progress.",
+    "emergent": true,
+    "id": "emergent_open_science_breakthrough",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

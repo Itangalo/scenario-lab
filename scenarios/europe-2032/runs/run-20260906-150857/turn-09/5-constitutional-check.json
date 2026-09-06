@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 55.0 to 62.0 (+7.0) while `ai_capability` increased from 71.5 to 72.5 (+1.0). This violates the rule that `openweight_capability` may never exceed `ai_capability` and must accumulate more slowly. At no point can `openweight_capability` rise faster than `ai_capability`, especially not by a larger absolute amount, as that implies it is closing the gap or surpassing it, which is prohibited unless narrated as catastrophic physical destruction of the compute base (which is not the case here).\n- Narrative contradicts Invariant 2: The narrative states that \"an open-weight release lands within months of the frontier\", which is plausible, but then allows `openweight_capability` to reach 62.0 while `ai_capability` is only at 72.5 — a 10.5-point gap. Given that `openweight_capability` starts significantly behind and grows faster without justification (e.g., no event like mass leakage or collapse of frontier containment), this rapid catch-up violates the invariant that `openweight_capability` never exceeds `ai_capability` and must accumulate more slowly in practice."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

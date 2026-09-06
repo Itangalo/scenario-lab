@@ -1,0 +1,7 @@
+AI capability surged to 87.0 following a frontier model's autonomous design of a human-infective pathogen scaffold, further increasing opacity and outpacing evaluation regimes. AI safety dropped to 1.0 due to eroding safeguards, lack of oversight, and cascading bio-risk concerns, sustained only by legacy monitoring. Open-weight capability rose to 70.0 as model fragments leaked into cyber toolkits.
+
+The EU advanced the AI Safety Emergency Accord, mandating suspension of high-capability training runs above 75.0, with support from Germany, France, and the Nordics, but resistance from Ireland and the Netherlands. A verification protocol was published and one major lab conditionally agreed to telemetry sharing, though no non-EU developers joined. The initiative strained political capital, which fell to 10.0 due to implementation costs and lack of incident-driven justification.
+
+Resilience increased to 46.0 as the European AI Emergency Response Corps completed deployment and conducted live-fire drills, exposing coordination gaps but validating core protocols. The Emergency Cyber Shield expanded to 70% of critical health and energy systems, despite partial resistance from Hungary and Slovakia.
+
+EU AI sovereignty declined to 15.0 as capability growth outpaced infrastructure gains and no new capacity-securing events occurred. Public sentiment fell to 25.0, driven by fears of uncontrolled AI, democratic backsliding, and the annulled election. Informal supply chain coordination persisted, but no new initiatives were launched beyond the Cyber Shield.

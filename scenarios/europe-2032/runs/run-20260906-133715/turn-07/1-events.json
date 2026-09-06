@@ -1,0 +1,59 @@
+[
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.13999999999999999,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_efficiency_breakthrough",
+    "probability": 0.16666666666666666,
+    "emergent": true,
+    "description": "A breakthrough in model efficiency allows systems at 70 capability to run on commodity hardware with minimal latency, dramatically expanding deployment options and reducing reliance on hyperscalers. This accelerates both public and private adoption but also increases the attack surface for misuse.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

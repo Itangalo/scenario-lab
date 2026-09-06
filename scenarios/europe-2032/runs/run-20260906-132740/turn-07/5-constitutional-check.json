@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 55.0 to 68.0 (+13.0) while `ai_capability` increased from 70.0 to 76.0 (+6.0). The update causes `openweight_capability` to rise by more than `ai_capability`, which violates the rule that `openweight_capability` may never exceed `ai_capability` and must only rise to the extent permitted by the growth of `ai_capability`. Even if both are increasing, `openweight_capability` cannot close the gap by more than the leading metric allows in a single turn; a +13 jump in openweight when frontier capability only rose +6 is implausible under the invariant.\n- Invariant 9 violated: `ai_safety` dropped from 11.0 to 0.0, a change of −11.0 points in one turn. While decreases are allowed for this metric, no metric may move more than 25 points in a single turn in absolute value. Although the magnitude is under the 25-point cap, the narrative describes a \"collapse to near-zero\" with no intermediate mechanisms or justification for such an extreme drop. Given that `ai_safety` is a stock influenced by ongoing efforts and institutional capacity, a total collapse to 0.0 — especially without any mention of cascading failures, revoked certifications, or global coordination breakdown in the safety infrastructure — constitutes an implausible discontinuity that violates the spirit and bounds of Invariant 9 when combined with the lack of narrative grounding."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

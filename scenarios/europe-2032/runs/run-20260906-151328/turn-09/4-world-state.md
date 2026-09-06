@@ -1,0 +1,13 @@
+### A Fractured Response
+
+Global AI capability inches upward to 70.0, driven by self-improving agents refining cryptanalysis and materials discovery. Openweight capability rises modestly to 55.0, as newly released open-source frameworks begin diffusing into European research pipelines, enabling incremental gains in model accessibility and adaptation. While these tools are being integrated, the process remains gradual, with no single release or event triggering a step-change in open capabilities.
+
+The EU, reeling from the social insurance scandal, proposes the Public AI Redress Network — a bold attempt to transform algorithmic fairness into tangible citizen recourse. Backed by €1.8bn in emergency funding and anchored in fundamental rights, the initiative aims to rebuild trust through binding cross-border redress units. The European AI Assurance Directorate collaborates with national ombudsmen to draft protocols, and planning begins for pilot units in France, Germany, and Italy. However, formal implementation will take time: Poland and Hungary immediately signal resistance, calling the network an infringement on judicial sovereignty. Legal challenges loom, and the Commission’s leverage remains thin, threatening delays.
+
+In line with constitutional constraints, the EU focuses its efforts on this new priority. As a result, momentum on the emergent_ai_literacy_drive, while still present in background activities, is not advanced as a named initiative this turn. Local deployments of detection tools and educational modules continue at the municipal level, supported by pre-existing funding, but no system-wide expansion occurs.
+
+Public sentiment holds at 20.0. While the emergent AI literacy drive maintains grassroots traction, its impact is diluted by rising anxiety over job losses. Graduate hiring in law, accountancy, and administration remains frozen, feeding narratives of systemic exclusion. The proposed “AI You Can Challenge” campaign has not yet launched, and thus fails to shift public perception.
+
+Resilience remains stagnant at 35.0, as institutional capacity fails to keep pace with harm. The redress network remains in formation and delivers no operational impact this turn. ai_safety holds at 19.0 — flawed training data was identified in the scandal, but no systemic improvements have landed on deployed systems.
+
+eu_ai_sovereignty dips to 15.0, as the Sovereign AI Core’s earlier gains are eroded by political fragmentation and the ongoing advance of global capability. eu_political_capital falls to 11.0, burdened by the cost of the new measure and the lack of immediate public buy-in. The EU walks a knife edge: a technical foundation exists, but legitimacy remains elusive.

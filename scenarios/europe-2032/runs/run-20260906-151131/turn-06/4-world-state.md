@@ -1,0 +1,11 @@
+### A Leap and a Fracture
+
+The frontier surges forward with alarming speed as a US laboratory demonstrates a self-improving agent architecture, autonomously advancing research in quantum materials and cryptanalysis. Independent assessments place the new capability at 67.0 — a jump of five points in half a year. Simultaneously, a breakthrough in interpretability emerges: a real-time circuit-tracing tool can now flag deceptive reasoning before output is generated. Leading labs, including one in France, adopt it rapidly, offering a rare moment of progress in assurance.
+
+Yet unity falters. Poland signs a bilateral agreement with a US hyperscaler for priority access to frontier models, embedding joint AI cells within its defence ministry. Framed as “pragmatic deterrence,” the move bypasses EU-wide containment protocols and exposes deepening fragmentation. The Commission responds not with confrontation but with outreach, offering Poland expedited observer status in the Sovereign Model Assurance Framework (SMAF) and proposing a second air-gapped cluster in Wrocław under dual key control — backed by a €10bn resilience grant.
+
+Domestically, two major programmes conclude. The European AI Assurance Directorate (EAAD) begins its first audit of the Sovereign AI Core Programme’s prototype stack, integrating the new interpretability tool. The Critical Infrastructure Resilience Surge (CIRS) ends, transitioning to ENISA as a standing monitoring function, though only 40% of critical systems are fully upgraded. Patching delays persist, leaving vulnerabilities exposed.
+
+The EU launches the Public Assurance Protocol, mandating accessible public reporting on safety and incidents for all sovereign AI systems above 55.0 capability. It is a small step toward legitimacy, but one taken amid mounting strain. Six initiatives remain in flight, draining political capital.
+
+Public sentiment holds at 25.0. No visible benefits counterbalance fears of失控 technology and national defections. Trust erodes further as headlines contrast Warsaw’s deal with Brussels’ appeals for solidarity.

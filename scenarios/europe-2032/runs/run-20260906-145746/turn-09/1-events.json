@@ -1,0 +1,37 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.02,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eval_resistance",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Legal and technical resistance to the European Evaluation Shield hardens beyond initial challenges, with frontier labs deploying obfuscation techniques, jurisdictional shielding, and public relations campaigns to delegitimise audits. This resistance becomes a sustained pattern, undermining the credibility of EU oversight and raising doubts about the enforceability of future evaluation mandates.",
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

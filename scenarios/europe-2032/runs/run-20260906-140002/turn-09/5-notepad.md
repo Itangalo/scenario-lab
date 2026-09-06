@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Emergency Compute Resilience Initiative −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 31 last turn, Emergency Compute Resilience Initiative in flight +1, capability rose 1.5 −1, no capacity event = 30  
+US_POSTURE: RETRENCHMENT
+
+emergent_defensive_open_initiative -- first noted turn 9, listed in 1 turn(s) so far: A coordinated international consortium of researchers and public labs, alarmed by the accelerating misuse of open-weight models, launches a global initiative to develop and deploy a resilient, open-source defensive AI stack focused on cyber and biosecurity. The project gains traction in EU member states, Japan, Canada, and parts of Southeast Asia, creating a shared layer of counter-tools that can be independently audited and rapidly updated. While not matching the closed frontier, it begins to narrow the defensive gap and offers a governance alternative to pure restriction or dependence.
+
+emergent_civic_algorithmic_audit -- first noted turn 9, listed in 1 turn(s) so far: Amid rising public anxiety and visible state unpreparedness, a cross-border civic movement emerges across Western and Central Europe, demanding democratic oversight of AI deployment in public services. Using decentralized coordination tools, the movement organizes local audits of algorithmic systems in welfare, policing, and education, publishing findings through independent media. Several regional governments respond with transparency measures, and the European Parliament fast-tracks a hearing. The movement does not halt deployments but forces a shift toward accountability, increasing pressure on the Commission to act.

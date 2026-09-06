@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: European AI Emergency Response Corps −3, Sovereign Compute Acceleration Directive −3, priority −1 = −7  
+PROPOSAL BONUS: Sovereign Compute Acceleration Directive (cat 4, large) +5 — responds directly to eu_frontier_access_denied and member_state_defection, both this turn  
+LEGITIMACY LENDS: none (capital 7.0 < sentiment 32.0)  
+SOVEREIGNTY: 15.0 last turn, InvestAI Gigafactories finishes t7 +5, eu_frontier_access_denied t7 −2, capability rose 4.0 ≥2 −1, Sovereign Compute Acceleration Directive in flight +2 = 19.0  
+US_POSTURE: CONSOLIDATION
+
+## Emerging developments (tracked)
+- `emergent_responsible_innovation_coordination` -- first noted turn 7, listed in 2 turn(s) so far: A group of EU member states, alarmed by the collapse in ai_safety and the lack of operational EU response capacity, begin informal coordination with Japan, South Korea, and Canada on mutual AI incident reporting, shared red-teaming exercises, and joint procurement of sovereign compute infrastructure. The initiative is framed as 'responsible innovation coordination' but includes de facto fallback access arrangements. It emerges from mid-level civil service and technical agency channels rather than summit diplomacy.
+- `emergent_biosequence_signature_detection` -- first noted turn 7, listed in 2 turn(s) so far: An open-source collaboration between university bio labs and AI safety researchers releases a detection tool that identifies subtle statistical signatures of model-generated genetic sequences in public databases. It flags several previously unnoticed designs with human-pathogenic potential, triggering quiet alerts in national biosecurity agencies. The tool spreads rapidly and becomes a de facto standard, increasing pressure on synthesis providers to adopt screening — not because of regulation, but because liability fears make ignoring it untenable.

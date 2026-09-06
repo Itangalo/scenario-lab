@@ -1,0 +1,17 @@
+### Fractures Deepen
+
+AI capability creeps upward to 65.5, as labs adapt to tighter budgets following a sector-wide investment collapse. Training runs shrink, but algorithmic efficiency gains sustain slow progress. With no major safety improvements, and interpretability tools now repurposed for evasion, confidence in control erodes — several near-misses in agent alignment go unreported until leaked.
+
+In Europe, the mood turns brittle. The binding compliance mechanism, meant to enforce unity, collapses in the Council. Two member states reject the Commission’s legal basis, invoking treaty procedures to block enforcement. The Sovereign AI Core Programme officially ends — but with Saint-Malo and Kiruna still offline, its completion feels hollow. The Resilience Reinforcement Initiative finishes and delivers tangible gains: patching cycles in energy and transport are halved, and cross-border incident coordination proves effective during a simulated cyber intrusion.
+
+Public frustration boils over. Data centre occupations spread, some turning violent. Police respond forcefully, deepening distrust. A scientific embargo emerges from major publishers, restricting AI research deemed dual-use — a move that gains quiet EU sympathy but does not directly bind EU institutions or researchers, as no enforcement mechanism or dependency has been established. The impact on EU research flows remains limited and indirect, mediated through voluntary compliance and funding conditions rather than automatic restriction.
+
+### Emergency Posture, Not Emergency Power
+
+The European Commission proposes an emergency invocation of Article 48(7) TEU to assume temporary control of Saint-Malo and Kiruna, redirecting funds and authorizing military engineers to accelerate deployment. This is announced as a contingency, pending legal review and European Council deliberation. France and Sweden raise immediate concerns over national sovereignty, and senior EU legal advisors warn the move may not survive constitutional scrutiny. No deployment occurs this turn; the process is in motion, but implementation will require time, consensus, or a crisis threshold not yet met.
+
+The AI Transition Pact — already under discussion since turn 7 — expands in scope, with three additional member states joining the framework for retraining, social insurance expansion, and national AI impact assessments. This widening of an existing measure is consistent with ongoing implementation, not a new initiative.
+
+Political capital declines, but not catastrophically. The cohesion mechanism’s failure and public unrest take a toll, yet the Resilience Reinforcement Initiative’s success and measured response to the compute crisis prevent total erosion. The proposed Article 48(7) action, while controversial, remains in the realm of deliberation — not execution — limiting immediate reputational damage.
+
+Public sentiment dips slightly, as retraining promises lag behind job losses and visible unrest persists. Still, the resilience gains register. Though fragile, the Union absorbs shocks better than before. But without working compute, sovereignty fades — and without trust, even proposed action risks becoming another symbol of overreach.

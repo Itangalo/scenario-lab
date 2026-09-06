@@ -1,0 +1,13 @@
+### A Surge in Crisis, a Strain on Unity
+
+The EU braces under dual shocks: a major ransomware wave paralyses health and transport systems across three member states, and a sudden leap in offensive AI tooling exposes deep defensive gaps. The attack, rapidly attributed to model-generated exploit chains, overwhelms local CERTs, underscoring the urgency of coordinated response. In response, the European AI Incident Response Corps is launched as a cross-agency mandate, integrating ENISA, Europol, and national teams under shared protocols and pre-authorised intervention rights. A pilot activation is scheduled for next turn, but legal friction delays full powers.
+
+Simultaneously, the Critical AI Interoperability Directive advances under emergency fast-tracking. The Internal Market Council accepts a compromise: binding telemetry standards for energy grids will roll out in phases, with early adopters gaining access to an EU stress-testing platform. However, enforcement remains fragmented, and federalist resistance stalls central override authority.
+
+The Sovereign Compute Acceleration Initiative inches forward—France and Germany confirm funding for 4 exaflops, and the EIB finalises financing structures. Yet no site is selected, no hardware ordered. Sovereignty erodes as global AI capability climbs to 67.0, driven by a discrete advance in autonomous cyber operations. Open-weight models rise to 54.0 following a partial leak of a frontier-equivalent system, enabling rapid replication of certain offensive capabilities in open ecosystems. While the diffusion accelerates, the full architecture remains out of reach, limiting the jump. No safety improvements land on deployed systems; the gap widens.
+
+Public sentiment dips as job losses in legal and administrative sectors mount, and the cyberattack disrupts daily life. Political capital holds, barely, as the portfolio cost bites: one large and one small measure in flight, plus priority, drain resources. The new Response Corps earns a modest proposal bonus for answering the cyber incident, but no surge in legitimacy follows.
+
+### Soft Power, Hard Limits
+
+Despite internal strain, the EU’s regulatory model gains quiet traction. Several European non-members signal intent to adopt its AI framework, and a slow shift in global AI talent toward EU institutions begins—fueled by instability abroad and the recent materials breakthrough. Yet this influence does not translate into immediate leverage.

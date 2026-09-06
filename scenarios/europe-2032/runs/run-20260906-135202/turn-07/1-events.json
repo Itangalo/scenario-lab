@@ -1,0 +1,50 @@
+[
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A coalition of EU member states, regional energy regulators, and independent cybersecurity auditors jointly declare the formation of the Systemic Grid Integrity Network (SGIN), a new cross-border coordination body to monitor, stress-test, and enforce resilience standards on AI-managed power grid systems. The initiative emerges in direct response to persistent instability concerns and the voluntary pause in automation upgrades, formalizing information sharing and mandating real-time anomaly reporting. While not a formal EU measure, it gains legitimacy through participation by Germany, France, the Nordics, and ENTSO-E, creating de facto standards that outpace supranational action.",
+    "emergent": true,
+    "id": "emergent_grid_integrity_network",
+    "probability": 0.06999999999999999,
+    "probability_samples": [
+      0.21,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "description": "A joint research consortium led by Swiss and German institutes announces a breakthrough in energy-efficient AI training, demonstrating a novel sparse activation architecture that reduces compute requirements for models at the current frontier by 40% without sacrificing performance. The method is open-sourced, and early replications confirm the results. This lowers the barrier to entry for non-frontier actors and redistributes strategic advantage toward algorithmic innovation rather than raw compute monopolies, potentially accelerating openweight capability growth in the next turn.",
+    "emergent": true,
+    "id": "emergent_efficiency_breakthrough",
+    "probability": 0.05666666666666667,
+    "probability_samples": [
+      0.17,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_compute_lease_withdrawal",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Major international cloud providers, citing geopolitical instability and US export policy uncertainty, begin renegotiating or withdrawing compute leases with EU public research institutions. This de facto restriction limits access to critical training resources for European AI projects, exacerbating sovereignty concerns and triggering emergency discussions about nationalizing or subsidizing domestic compute infrastructure.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

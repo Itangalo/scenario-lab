@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Mandate Algorithmic Fairness Audits −3, priority −1 = −4  
+PROPOSAL BONUS: Mandate Algorithmic Fairness Audits (cat 1, large) +6 — directly answers automated_decision_scandal, a severe internal event with major political fallout, demanding systemic oversight and restoration of trust  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 12 last turn, Sovereign AI Core Programme finishes t8 +5, capability rose 1.0 −1, no capacity event = 16  
+US_POSTURE: CONSOLIDATION
+
+emergent_eval_consortium -- first noted turn 7, listed in 3 turn(s) so far: A coordinated effort among EU-aligned research institutions and mid-tier AI developers in Japan, South Korea, and Canada forms a shared evaluation consortium to benchmark frontier models against safety and robustness criteria. The group publishes red-teaming results independently and begins coordinating compute access for public-interest applications, creating a partial alternative to US-dominated ecosystems. This consortium strengthens the EU's indirect influence and provides leverage in negotiations with larger powers.
+
+emergent_ai_literacy_drive -- first noted turn 7, listed in 3 turn(s) so far: A coalition of European public broadcasters, academic institutions, and digital rights NGOs launches a pan-European AI literacy and verification campaign, deploying open tools to detect synthetic media and explain AI decision-making in public services. The initiative gains rapid uptake in schools and local governments, partially countering disinformation and improving public understanding. It does not move public sentiment immediately but establishes a foundation for long-term legitimacy of AI governance.

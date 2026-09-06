@@ -1,0 +1,15 @@
+No statement changes.
+
+## Portfolio
+- `European Evaluation Shield (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A new public agency with legal authority to conduct independent, pre-deployment evaluations of any AI system above capability threshold 50.0, with power to require interpretability audits, agent monitoring, and weight inspections` — **finished**
+
+## New measure
+None this turn. We are waiting for the outcome of the European Court of Justice ruling on the European Evaluation Shield’s authority before proposing any new evaluation or restriction measures that would face similar legal exposure.
+
+## Priority  
+**European Evaluation Shield** — because without a clear legal foundation for pre-deployment scrutiny, our ability to understand, constrain, or even observe the systems approaching 61.5 capability erodes entirely, making all other investments — in resilience, sovereignty, or adoption — contingent on blind trust in private actors during a period of accelerating risk.
+
+## In practice  
+This turn, we consolidate political and legal support for the European Evaluation Shield as its fate rests in the hands of the ECJ. Despite the measure now being technically finished, its operational legitimacy remains contested, and we treat it as functionally in flight due to the unresolved legal challenge. We coordinate with the Council Legal Service and the Commission’s IP Directorate to prepare a joint ECOFIN-JHA resolution reaffirming the public interest in safety-critical evaluation of high-capability systems. This resolution will be tabled in October and is designed to frame the Shield not as an infringement on intellectual property but as a proportionate safeguard in domains where failure could cascade across critical infrastructure — a framing intended to influence both public sentiment and judicial interpretation.
+
+Simultaneously, we maintain the confidentiality of pilot audits conducted with two frontier developers, using narrow inspection protocols focused on agent persistence and planning depth. In exchange for continued cooperation, we offer limited data-sharing waivers under revised Digital Markets Act enforcement terms, leveraging competition policy as a bargaining chip. These inducements are calibrated to preserve goodwill without setting precedents that undermine future authority. The automated_decision_scandal in a northern member state has hardened resistance to AI deployment in public services, forcing us to slow diffusion plans under category 9 until accountability frameworks catch up. We redirect residual administrative capacity toward integrating existing gains — mapping sovereign compute clusters into civil emergency continuity plans and drafting ENISA failover protocols — but with eu_political_capital at 25.0 and public_sentiment at 28.0, we resist launching any new industrial or regulatory initiatives. The ai_investment_collapse and openweight_frontier_release have shifted the global landscape, but without legal clarity at home, we cannot act decisively abroad.

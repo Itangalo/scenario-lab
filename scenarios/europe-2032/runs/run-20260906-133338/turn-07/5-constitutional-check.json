@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_political_capital` cannot fall below 0.0 as it is a metric bounded between 0.0 and 100.0, but the calculation yields −2.0 before clamping. While clamping to 0.0 is appropriate, the narrative must reflect the correct value. The narrative states \"collapses to 0.0\", which is acceptable, but the earlier draft incorrectly listed 4.0 in the initial proposed metrics, indicating a failure to enforce the floor during drafting. This reflects a procedural breach of the metric rules, though corrected in final output.\n- Modelling choice 7 violated: The drop in `eu_ai_sovereignty` to 12.0 is justified solely by the −1 from `ai_capability` rise, with no positive contribution from active measures (Gigafactories in flight granted +0). However, the narrative initially claimed a drop to 11.0, which would imply an unauthorised additional −1 outside the metric rules. Though corrected to 12.0 in final output, the internal deliberation reveals an attempt to override the formulaic calculation with narrative-driven erosion, which contradicts the constitutional requirement that sovereignty changes follow rule-based arithmetic, not de facto interpretations. This constitutes a violation of the principle that metric rules must not be contradicted by narrative assertion.\n- Narrative violates Modelling choice 8: The narrative states \"the Union is now effectively paralysed, unable to start new initiatives or enforce existing ones\" as a consequence of `eu_political_capital` reaching 0.0. This telegraphs a mechanical outcome (zero capital = paralysis) that is not defined in the rules. While low political capital limits new measures, the rules do not state that 0.0 results in paralysis. This over-interprets the metric’s meaning and implies a deterministic threshold, which constitutes telegraphing and violates the prohibition on anticipatory or rule-external interpretation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

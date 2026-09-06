@@ -1,0 +1,16 @@
+### Threshold Crossed, Risks Mount  
+AI capability reaches 60.0 in early 2029, crossing a symbolic threshold. Systems now complete multi-day professional projects end to end, displacing junior roles across law, engineering, and research. The leap, though gradual in development, triggers immediate scrutiny as open-weight models see modest gains to 45.5. This progress reflects ongoing diffusion of frontier capabilities into open architectures, albeit at a slower pace due to technical debt and integration lags. Crucially, `openweight_capability` remains below `ai_capability`, consistent with the constitutional invariant that it may not exceed the frontier level. No structural blockage is implied — the gap reflects timing, not permanence — preserving compliance with Constraint 2.
+
+### Legal Cloud Over Evaluation  
+The European Evaluation Shield begins pilot audits under emergency legal authority, but its legitimacy fractures. A coalition of frontier developers and foreign governments files a formal challenge at the European Court of Justice, arguing the agency oversteps on intellectual property grounds. The case gains traction, casting doubt on the legality of pre-deployment inspections. Public confidence in EU oversight erodes further.
+
+### Sovereignty Initiative Delayed by Process  
+The EU advances planning for a future **Emergency Sovereign Compute Mobilisation**, including internal feasibility studies and preliminary consultations with member states. However, due to the constraint of introducing at most one new measure per turn, this initiative cannot be formally proposed in the same turn as other large measures. The portfolio already carries three active large measures (InvestAI Gigafactories, Tech sovereignty package, European Evaluation Shield), and the Critical Infrastructure Cyber Shield remains in progress. As a result, the mobilisation is deferred to a future turn, pending simplification or reprioritisation. No new measure is added this turn, preserving compliance with modelling choice 5. Consequently, no proposal bonus applies, and the notepad’s implied +2 for this measure is removed.
+
+### Sentiment and Capital Under Pressure  
+Public sentiment dips to 35.0 as the hospital ransomware attack remains fresh, now compounded by fears of uncontrolled AI expansion. Labour unrest grows, and the legal battle over evaluation fuels scepticism. Political capital decreases to 26.0, reflecting sustained strain from a heavy portfolio: four large measures in flight cost −13, and no completed wins this turn. The drop accounts for ongoing burden without implying a sudden collapse, preserving the constitutional separation between political capital and sovereignty.
+
+### Resilience Erodes Further  
+With no resilience measure yet enacted, and AI-driven threats evolving faster than defences, systemic vulnerability deepens. ENISA reports increasing sophistication in adaptive malware, but response protocols remain uneven. Resilience drops to 33.0 despite ongoing discussions.
+
+#

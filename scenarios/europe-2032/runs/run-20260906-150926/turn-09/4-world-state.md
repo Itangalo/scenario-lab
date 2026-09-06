@@ -1,0 +1,11 @@
+### A Pivot in the Shadow of Denial
+
+The EU formally closes the Sovereign AI Core Programme, its flagship bid for sovereign frontier access, without achieving its goal. Delays in compute infrastructure and tightening US export controls prevented deployment, marking a quiet but significant strategic retreat. The Resilient Fallback AI Network, launched amid crisis rhetoric, is now canceled outright — blocked by two member states and starved of fiscal support. With no large-scale system deployed, resilience remains theoretical.
+
+In response, the Commission launches the **Fallback Demonstration Pilot**, a small-scale initiative to deploy interpretable AI in emergency dispatch, water grids, and health triage across three pilot regions. Using open-weight models capped at 45.0 on commodity hardware, the systems will run in parallel with existing infrastructure and undergo quarterly red-teaming. Funded by repurposed industrial capital (€1.2bn), it avoids Council-level approval and aims for visible proof of continuity by mid-2031.
+
+Yet momentum falters. The American posture of **Consolidation** tightens further: not only are high-end inference components rationed, but servicing of existing EU-held clusters is now delayed under new licensing requirements. This constitutes a material degradation of operational capacity, registered as a second-order impact of **export_control_escalation**. Simultaneously, Washington pressures the Netherlands to restrict ASML’s maintenance of older lithography tools used by EU partners, undermining semiconductor reliability across multiple sectors — an act of **supply_chain_coercion** that exposes Europe’s single chokepoint.
+
+Political capital erodes. Public sentiment holds at 23.0, numb to reform. The pivot to a smaller pilot is seen as damage control, not vision. No immediate resilience gain occurs — the pilot has not yet deployed.
+
+Rumours intensify around a European neuromorphic design capable of efficient low-power inference, while synthetic media from recent elections fuels quiet alarm in intelligence circles. No coordinated response emerges.

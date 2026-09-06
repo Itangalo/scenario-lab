@@ -1,0 +1,13 @@
+### A Surge in Capability, a Crack in Unity
+
+The global AI frontier surges forward with an abrupt leap: systems now autonomously chain exploits across digital and physical infrastructure over multi-day horizons. This jump pushes `ai_capability` to 69.0, well into the terminal zone, where progress is no longer incremental but transformative.
+
+Amid this shift, a genuine safety breakthrough emerges — mechanistic interpretability tools now allow developers to predict certain emergent behaviours before deployment. Leading labs adopt them rapidly, improving internal assurance. However, these tools remain confined to closed ecosystems; the EU lacks sovereign access at scale, limiting their impact within its borders.
+
+At the same time, cohesion fractures. One member state bypasses EU protocols to secure bilateral access to a foreign 68.0 model, justifying it as economic necessity. This act undermines the AI Containment Protocol and exposes deep divisions over risk tolerance. The Commission responds forcefully, drafting enforcement measures under Article 16 TFEU and threatening cohesion fund suspensions via the Anti-Coercion Instrument. Franco-German dual-key hosting for the first sovereign cluster advances in Saint-Malo and Kiruna, but trust remains strained.
+
+The European AI Assurance Directorate (EAAD) becomes operational, and SMAF is fully enacted, binding all Sovereign AI Core Programme developments to auditable, isolated operation. The Swedish InvestAI Gigafactory breaks ground, though grid constraints in Norrland threaten timelines despite RePowerEU overrides.
+
+In response to systemic fragility, the EU initiates planning for a Resilience Reinforcement Initiative, targeting patching velocity, bio-detection, and cross-border incident handover. However, full launch is delayed by inter-institutional debate over resource allocation and jurisdictional scope. The initiative will require a formal proposal and trilogue negotiation before implementation can begin, pushing meaningful deployment into future turns.
+
+Fiscal and political strain intensifies. With seven major initiatives now in flight, including the delayed resilience measure, political capital erodes further despite urgent justification. Public sentiment holds flat at 25.0 — neither containment nor resilience has yet translated into visible benefit. Open-weight models advance moderately, buoyed by incremental diffusion of frontier techniques and improved training efficiency, but remain behind closed ecosystems, reaching 52.0.

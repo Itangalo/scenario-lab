@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Mandate Jurisdictional Accountability −2, priority −1 = −3  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 13.0 last turn, eu_frontier_access_denied t9 −2, capability rose 1.0 −1 = 10.0  
+US_POSTURE: RETRENCHMENT  
+emergent_eu_crisis_response_fund -- first noted turn 7, listed in 3 turn(s) so far: In response to persistent cyber incidents and collapsing public trust, the European Parliament fast-tracks a temporary Crisis Response and Resilience Fund, pooling emergency financing from member states to bolster regional cybersecurity and workforce reintegration. The measure passes as a stopgap after Germany and Austria agree to conditional grid access in exchange for oversight concessions, signaling a fragile but real shift toward cohesion under pressure.  
+emergent_eu_cyber_cooperation_cell -- first noted turn 7, listed in 3 turn(s) so far: A group of EU-aligned nations and industrial partners form an informal but operational coordination cell to jointly monitor and respond to AI-driven cyber threats, pooling intelligence and defensive tools. The initiative emerges from ad hoc cooperation during recent cyber incidents and is framed as a temporary emergency measure, but gains traction due to shared vulnerability and low trust in unilateral responses.

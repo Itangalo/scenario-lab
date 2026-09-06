@@ -1,0 +1,13 @@
+### Strategic Alarm and Defensive Momentum
+
+The **cyber_defence_breakthrough** redefines what is possible: automated patching and swarm-detection systems now outpace known offensive AI tools. The EU seizes the moment, launching the **Critical Infrastructure Cyber Shield** as a large category 6 measure and naming it priority. Drafted under Article 114 TFEU, the directive mandates AI-driven intrusion detection, red-teaming, and real-time response across energy, health, transport, and finance. ENISA releases standardised red-team scenarios modelled on past ransomware attacks, now upgraded for swarm tactics, and conducts a second cross-border exercise involving twelve member states, including live simulations on rail and grid systems.
+
+Political will is galvanised by the **election_annulled** event, which casts democratic infrastructure as vulnerable and fragile. A Council resolution grants the **Cross-Border AI Incident Response Network** authority to override national delays during crises — a symbolic but contested step forward. However, resistance persists: Germany and Poland balk at centralised enforcement, and Nordic states warn of regulatory overreach. Concessions — preferential access to InvestAI funding and liability shielding — buy temporary acquiescence, but implementation timelines are already under pressure.
+
+### Capability Creeps, Safety Stalls
+
+`ai_capability` rises to 62.5, entering the 62–68 terminal zone, as closed labs integrate autonomous research agents. `openweight_capability` climbs to 49.0, reflecting diffusion of last year’s frontier models, though no open release closes the gap sharply. The **cyber_defence_breakthrough** mitigates risk, but no corresponding leap in `ai_safety` occurs — monitoring of agent memory persists only in pilots, and no new safeguards land on shipped systems. The gap between capability and safety widens.
+
+`resilience` increases by +3: +2 from the ongoing Incident Response Network and +1 from partial early effect of the new Cyber Shield. However, `eu_ai_sovereignty` falls to 31.0, down −1 from `ai_capability` rising by 1.0 and no offsetting capacity gain. The industrial build phase has paused; operational resilience remains unproven.
+
+`eu_political_capital` drops sharply to 17.0. The portfolio charge is heavy: three large measures in flight (−9), plus priority (−1). The new measure earns a +5 proposal bonus for answering both the recent ransomware crisis and coordination failures. But with capital already thin, the net effect is a −8 swing. Public sentiment holds at 36.0 — stable, but no uplift from visible benefits.

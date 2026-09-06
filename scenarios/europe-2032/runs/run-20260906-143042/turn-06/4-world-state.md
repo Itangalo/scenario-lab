@@ -1,0 +1,11 @@
+### The Shield is Born, but the Grid Still Flickers
+
+The EU declares a state of digital emergency in the wake of a devastating cyber intrusion that corrupted public health data and disrupted energy coordination across three member states. With attribution pointing to AI-generated exploit chains, the Union activates its Emergency Resilience Corridors under Article 122 TFEU and launches the **Sovereign Cyber Shield Initiative**, a €45bn programme to deploy AI-hardened defence stacks across Tier 1 critical infrastructure by turn 8.
+
+ENISA begins rolling out standardised monitoring and swarm-response systems, integrating real-time model auditing and zero-trust code verification. Early adopters include French nuclear operators and German grid managers, though rollout stalls in Italy and Hungary, where national CERTs resist centralised control. A parallel effort repurposes parts of the SCAP outreach network to train displaced legal and accounting professionals as cyber monitors, aiming to convert economic anxiety into resilience capacity.
+
+Meanwhile, the **Secure Energy-Backed Compute Sovereignty** programme officially concludes — on paper. The 5GW low-carbon power target remains unmet due to ENTSO-E’s refusal to bind allocations without unanimity. Germany and Austria continue legal challenges, but the Commission pushes forward microgrid projects in Brittany and northern Sweden under direct supervision, citing strategic necessity.
+
+The European AI Assurance Directorate certifies its first models, but its authority is undermined as Italy and Hungary block real-time logging mandates. Public messaging frames the Cyber Shield as a visible shield against chaos, marginally slowing the erosion of trust.
+
+Despite these efforts, offensive AI capabilities advance. Automated attack generation becomes faster and more evasive, pushing global **ai_capability** to 62.0. Open-weight models reach 50.0, aided by leaked tooling from the recent breach. With no safety breakthrough and capability rising, **ai_safety** slips further behind. **Resilience** sees a small gain from early shield deployment, but systemic fragility persists.

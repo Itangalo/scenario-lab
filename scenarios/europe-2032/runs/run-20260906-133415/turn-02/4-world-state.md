@@ -1,0 +1,12 @@
+### Capability Creeps Forward, Defenses Lag
+Global AI capability advances to 57.5, driven by tighter agent-tool integration and compressed training cycles, despite the `ai_investment_collapse` shrinking frontier labs’ budgets. The slowdown in capital has not yet translated into deceleration—efficiency gains and reuse of existing infrastructure sustain momentum. Open-weight models reach 45.0, as Kimi K3-derived systems proliferate in research and offensive use, now capable of supervised multi-hour tasks. The gap between closed and open narrows, increasing systemic risk.
+
+### A Shield Raised, But Foundations Crack
+The EU launches the **Hardened Cyber Shield**, making it the priority measure. Binding regulation is drafted under Article 114 TFEU, and ENISA begins scoping technical baselines. However, early resistance emerges: Germany and Poland question the cost burden on municipal utilities, while Italy delays appointing a national coordinator. Funding is secured, but retrofitting legacy systems proves more complex than expected—many lack basic telemetry, slowing deployment.
+
+Meanwhile, the **InvestAI Gigafactories** face new headwinds. The global investment collapse forces the EIB to absorb €48bn in stranded commitments, straining the MFF revision process. Permitting fast-tracks under the Net-Zero Industry Act are contested in the Council, with France demanding reciprocal access to Dutch chip sites. Energy-sharing pacts ease local opposition in Brittany, but in northern Sweden, protests escalate over grid strain.
+
+The **Tech Sovereignty Package** is scaled back: the hyperscaler levy is dropped to avoid WTO conflict, and private capital targets are reduced to €140bn. The focus shifts to enforceable data sovereignty and inspection rights, but momentum stalls without a financial lever.
+
+### Sentiment Dips, Capital Erodes
+Public sentiment falls slightly as disinformation around energy costs and job losses in legacy IT sectors gains traction. No major incident occurs, but the near-miss in critical infrastructure fuels anxiety. Political capital declines due to the portfolio burden: three large measures in flight and a new priority. The proposal bonus is modest—this measure answers a real threat, but it was not yet an incident. Resilience sees a small bump from early planning, but systemic fragility remains.

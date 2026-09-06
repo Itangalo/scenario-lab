@@ -1,0 +1,37 @@
+[
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.19333333333333333,
+    "probability_samples": [
+      0.21,
+      0.16,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_municipal_oversight_network",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "In response to stalled EU-level governance, a coalition of major European cities forms a voluntary oversight network to audit and benchmark AI use in public services. Using open-weight models and shared evaluation frameworks, they establish de facto standards for transparency and accountability. The movement gains momentum as a pragmatic workaround to federal paralysis, especially in healthcare and emergency response systems.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

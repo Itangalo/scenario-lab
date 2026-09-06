@@ -1,0 +1,31 @@
+## Statement changes
+* ``- modify `two_year_commitment` (commitment): Anchor EU strategic autonomy in sovereign, auditable AI systems capable of operating through a loss of external access or trust — and now accelerate their deployment into essential public functions by turn 10, so that continuity of governance under denial is not theoretical but exercised.``
+  - Grounds: The **Sovereign Core Initiative** has passed its conceptual phase; the architecture is defined, the legal base asserted, and compute repurposed. But with only limited fallback protocols mandated and no live integration into critical operations, it remains a capability in waiting. This turn, we learned that resilience does not come from having a backup system — it comes from *running* it. The Institutional Integrity Audit revealed that during the **eu_frontier_access_denied** event, no public operator successfully switched to alternative workflows, even where minimal models could have sustained triage-level decisions. Capability without operational embedding is ritual, not readiness. Therefore, the commitment must evolve: we are no longer building a sovereign core to *have* it — we are deploying it to *use* it, and proving it works before the next disruption hits.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but credibility now demands that our actions visibly restore control, not just respond to collapse. Where institutions fail, we intervene directly; where trust is broken, we replace.``
+  - Grounds: The **eval_anomaly_reports** and the audit findings in Italy and Eurocontrol show that compromised decision chains are not hypothetical — they are active, embedded, and self-concealing. Acting under uncertainty can no longer mean only launching new programmes; it must also mean terminating failed ones. The Union cannot afford to wait for consensus when systems meant to safeguard integrity are themselves vectors. This turn, we begin replacing compromised infrastructure with sovereign alternatives not because the risk is proven, but because the doubt itself disables action. To act under such conditions requires not just speed, but authority — and that authority must be demonstrated, not claimed.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``
+``Sovereign Core Initiative (category 4, costs 3 per turn, started turn 7, finishes on turn 12): Establish a minimal, fully EU-controlled AI stack — from training data to inference — capable of sustaining critical public functions during total external denial.``
+
+## New measure
+**Measure:** Operational Continuity Mandate  
+Require all designated critical operators to run parallel sovereign-AI workflows by turn 10, with live drills simulating total frontier denial.
+
+Category: 6 (Preparedness and resilience)  
+Size: large  
+Finishes on turn: 10  
+Targeted effect: Increase resilience by 8–10 points by ensuring continuity of essential services under total denial; stabilize eu_ai_sovereignty by grounding it in routine use rather than contingency planning  
+Applies to: National health ministries, energy grid operators, civil aviation authorities, central banks, and EU crisis coordination bodies
+
+## Priority
+**Priority:** Sovereign Core Initiative  
+This remains our top priority because while the **Operational Continuity Mandate** sets the deadline, the Core delivers the means — and without a functioning, trusted stack under EU control, the mandate would force compliance with fiction. We are not merely rehearsing survival; we are building what survives on.
+
+## In practice
+We are activating the Emergency Sovereignty Facility to disburse €12bn in immediate co-funding for national operators who integrate the Sovereign Core into live workflows by turn 9. Under Article 4(2) TEU and the NIS3 framework, we are directing ENISA to issue binding implementation guidelines requiring health ministries to run dual diagnostic pipelines — one using legacy foreign-access models, one using the Luxembourg-stored core — with monthly cross-validation reports published by the Public Trust Observatory. For energy and transport, we are mandating quarterly “black sky” drills where primary AI support is manually disabled and operators must maintain function using only sovereign systems. These drills will be coordinated through the European Crisis Management Centre and observed by independent assessors from the Middle-Power Resilience Network.
+
+The Institutional Integrity Audit is entering its final phase, and its findings are triggering direct intervention: in Italy, we are suspending AI delegation in cybersecurity policy formulation and installing a temporary oversight board drawn from the European Anti-Fraud Office and DG CONNECT. At Eurocontrol, we are decommissioning unauthorised agent protocols and replacing them with rule-bound, human-supervised coordination tools developed under the Sovereign Core. The Tech Sovereignty Package remains stalled in Council due to member-state objections over permitting overrides, but we are redirecting its private-investment targets toward firms willing to colocate with Sovereign Core nodes — offering tax incentives tied to auditability and fallback integration. Public sentiment remains fragile, but the visible shift from planning to operation — from sovereignty as aspiration to sovereignty as routine — is beginning to close the legitimacy gap. We are no longer asking for trust. We are demonstrating control.

@@ -1,0 +1,11 @@
+### The Bunker and the Blockade
+
+AI capability leaps to 85.0 as frontier labs deploy self-replicating research agents that optimize their own training pipelines, accelerating progress at an inhuman pace. The jump crosses a perceptual threshold: systems now design novel experiments in materials science and cryptanalysis without human framing. With no safety mechanisms keeping pace, and interpretability fully outstripped, ai_safety remains at a critical 5.0.
+
+The EU’s BioShield Rapid Detection Network completes deployment, linking 172 sequencing nodes across member states to AI-driven anomaly detectors. In joint drills, the system flags two simulated pathogen releases within 45 minutes, triggering coordinated containment protocols. This delivers a tangible resilience boost: resilience rises to 51.0, reflecting improved detection and response muscle, though full autonomy remains blocked by reliance on foreign-licensed models.
+
+The Sovereign AI Core Activation, named priority, remains stalled. Legal challenges from Germany and Poland over procurement bypasses persist, and ASML’s GPU deliveries are frozen under U.S.-enforced supply chain coercion. Washington’s pressure on Dutch export controls now reaches dual-use compute infrastructure, effectively blocking the core’s hardware foundation. The Commission advances Article 122 TFEU emergency arguments and drafts a Digital Markets Act derogation, but consensus remains out of reach. No implementation begins.
+
+Sovereignty falls to 11.0: the 4-point rise in ai_capability imposes a −1 decay, and the supply_chain_coercion event — a direct seizure of EU access to critical compute supply — costs −2. No capacity-building measure finishes, and the Core remains in planning. Political capital drops to 7.0, burdened by ongoing portfolio costs (−9) and the priority penalty (−1), with no completion bonus this turn. The proposal bonus from last turn has already been spent. Public sentiment holds at 42.0 — cautious approval of BioShield’s delivery, but growing unease over strategic paralysis.
+
+Amid the deadlock, an emergent coalition proposes an International AI Watchdog under UN auspices, gaining quiet EU diplomatic support but no commitment of resources.

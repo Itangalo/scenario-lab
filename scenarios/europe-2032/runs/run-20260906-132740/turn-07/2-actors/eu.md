@@ -1,0 +1,32 @@
+## Statement changes
+* ``- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now recognise that without institutional integrity and public legitimacy, neither mandate can be fulfilled, because action without trust is indistinguishable from performance.``
+  - Grounds: The **institutional_integrity_audit** findings in Italy and Eurocontrol, combined with the **eu_frontier_access_denied** and the collapse of **ai_safety** to 11.0, confirm that the Union’s ability to act is not just technologically constrained but politically hollowed out. The medical breakthrough delivered by inaccessible models did not restore faith — it deepened the sense of strategic humiliation. The **emergency_public_legitimacy_framework** pilot shows that legitimacy cannot be retrofitted through technical fixes alone. The two mandates — sovereignty and safety — are now inseparable from the credibility of the institutions that must carry them out. This is no longer a question of capability or control alone, but of whether the EU can be believed when it says it is acting in its citizens’ interest.
+
+* ``- modify `two_year_commitment` (commitment): Anchor EU strategic autonomy in sovereign, auditable AI systems capable of operating through a loss of external access or trust, and treat the integrity of institutions and public legitimacy as core components of that autonomy — but accept that without compute sovereignty and supply-chain control, no stack — however auditable — can be sustained.``
+  - Grounds: The **taiwan_blockade** event this turn has transformed the AI sovereignty question into an immediate physical constraint: without access to advanced semiconductors, even the Sovereign Core Initiative cannot be trained, let alone scaled. The Union holds critical upstream leverage — ASML, IMEC, STM — but lacks the coordinated industrial policy to convert that into secured domestic supply. The **capability_jump** to 70.0 and the **openweight_frontier_release** mean that the world is accelerating into a regime where both the most dangerous capabilities and the tools to wield them are proliferating beyond control — but the EU cannot respond because its compute base is leased, its supply is external, and its talent is dispersed. The commitment stands — but its foundation must now include the physical means of production, not just the design of systems.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly``  
+*Finished this turn.*  
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``
+
+## New measure
+**Measure:** European Semiconductor Assurance and Expansion Pact (EUR-SAP)  
+A binding agreement among member states to secure and expand domestic production of advanced AI chips, leveraging the Union’s upstream dominance in lithography and materials to guarantee supply for sovereign AI systems.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 10`  
+`Targeted effect:` Increase eu_ai_sovereignty by 10–15 points by securing domestic chip supply; stabilise resilience by 5 points by reducing exposure to external blockade; lay the foundation for future compute independence  
+`Applies to:` EU member states, key semiconductor manufacturers (ASML, STM, Infineon), European High-Performance Computing Joint Undertaking (EuroHPC JU)
+
+## Priority
+**Priority:** European Semiconductor Assurance and Expansion Pact  
+This is now our top priority because the **taiwan_blockade** has made clear that without control over the physical means of AI production, even the most auditable sovereign stack is a fiction — and because the **capability_jump** and **openweight_frontier_release** mean that the world is entering a phase of irreversible diffusion, where the EU’s only remaining leverage is its control over the tools that make the tools.
+
+## In practice
+We are activating the European Semiconductor Assurance and Expansion Pact (EUR-SAP) under Article 122 TFEU, treating advanced AI chips as critical infrastructure. We are convening an emergency Council meeting in the Competitiveness formation, with binding commitments required by turn 8: member states hosting key facilities (Netherlands, France, Germany, Italy) will fast-track permitting for expansion, and we are redirecting €75bn from the Recovery and Resilience Facility’s unused margins to subsidize domestic R&D and production of sub-2nm chips. ASML will be required to reserve 30% of its high-NA EUV output for EU-licensed AI training runs, with STM and Infineon receiving state aid to scale packaging and testing capacity in France and Belgium. In return, we offer mutualised liability shielding and a pan-EU procurement guarantee: any chip produced under EUR-SAP will be pre-purchased for Sovereign Core and Hardened Cyber Shield upgrades. Resistance is expected from the Netherlands, which fears export retaliation, and from Germany, which insists on stronger IP protections — but the **taiwan_blockade** has made the cost of inaction clear. We are not building a rival to TSMC; we are building an immune system.  
+
+The Institutional Integrity Audit continues, now expanded to include all AI-adjacent procurement and supply-chain decision-making, with preliminary findings due in March 2030. The Sovereign Core Initiative remains on track for launch next turn, but its success now depends on EUR-SAP delivering the chips to train it. We are no longer choosing between openness and control, or between safety and capability — we are fighting for the physical space to make choices at all.

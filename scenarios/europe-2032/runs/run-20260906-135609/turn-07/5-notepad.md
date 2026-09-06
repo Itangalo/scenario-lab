@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Emergency Compute Mobilisation Directive −3, priority −1 = −4  
+PROPOSAL BONUS: Emergency Compute Mobilisation Directive (cat 4, large) +3 — directly addresses opaque_reasoning, a severe and immediate event that undermines all external oversight  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 25.0 last turn, export_control_escalation t7 −1, Emergency Compute Mobilisation Directive in flight +2, capability rose 1.5 −1 = 28.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_grid_instability_mitigation` -- first noted turn 7, listed in 1 turn(s) so far: A coordinated protocol developed by EU energy regulators and AI safety researchers successfully mitigates the feedback loops in AI-managed grid balancing systems, leading to a phased resumption of automation upgrades across member states. The protocol becomes a de facto standard for critical infrastructure AI deployment in the bloc.  
+- `emergent_open_source_cyber_defence_alliance` -- first noted turn 7, listed in 1 turn(s) so far: In response to the persistent threat of AI-powered cyber tools, a decentralized coalition of European cybersecurity firms, open-source developers, and municipal IT departments forms an informal alliance to share defensive AI models and detection heuristics. The initiative emerges organically from red-teaming exercises and begins to slow the success rate of automated exploit chaining in local networks.

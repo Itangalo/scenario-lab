@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Emergency Override Activation Framework −3, priority −1 = −4  
+PROPOSAL BONUS: Emergency Override Activation Framework (cat 1, large) +4 — responds directly to eval_anomaly_reports and medical_breakthrough, both this turn, addressing critical control and sovereignty gaps  
+LEGITIMACY LENDS: none (capital 14.0 < sentiment 42.0, but rule 6 requires sentiment > capital to trigger +1–2; here capital is lower, so no addition)  
+SOVEREIGNTY: 15 last turn, InvestAI Gigafactories finishes t8 +5, Resilience Surge finishes t8 +0 (not cat 4), capability rose 4.0 ≥2 −1, supply_chain_coercion t8 −2 = 23  
+US_POSTURE: CONSOLIDATION
+
+- `emergent_scientific_embargo` -- first noted turn 7, listed in 3 turn(s) so far: Major publishers and preprint servers begin restricting submissions in computational biology and AI alignment research that involve generative methods for protein design or agent coordination, citing dual-use concerns. The move follows quiet coordination between US, EU, and UK scientific funding bodies and is framed as voluntary, but compliance is near-universal among top journals. The embargo creates friction in open science norms but gains support amid rising biosecurity fears.

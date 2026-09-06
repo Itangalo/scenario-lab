@@ -1,0 +1,18 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — **finished**
+- `Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — **finished**
+- `European Evaluation Shield (category 5, costs 3 per turn, started turn 4, finishes on turn 6): A new public agency with legal authority to conduct independent, pre-deployment evaluations of any AI system above capability threshold 50.0, with power to require interpretability audits, agent monitoring, and weight inspections` — **finished**
+- `Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 6, finishes on turn 7): A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **finished**
+
+## New measure
+None this turn. We are waiting for the European Court of Justice ruling on the European Evaluation Shield’s legal basis before proposing any new evaluation or oversight measures, and the completion of the current portfolio allows a moment of consolidation.
+
+## Priority
+**Emergency Sovereign Compute Mobilisation** — because sovereign access to compute is now the linchpin of both our safety and our autonomy: without guaranteed infrastructure, we cannot run our own evaluations, defend our own systems, or sustain continuity of government under AI-driven threats, and this measure closes the most immediate physical and legal gap in our control.
+
+## In practice
+This turn, we finalise the deployment of the Emergency Sovereign Compute Mobilisation, completing the first wave of binding agreements with data centre operators in France, Italy, and Belgium. Under Article 114 TFEU, we enforce fast-track permitting and secure grid access commitments from transmission system operators, backed by the threat of adjusted recovery fund disbursements for non-compliant member states. The European Investment Bank finalises pre-approved financing packages for three sites, each committing to 40% reserved capacity under EU legal jurisdiction, open architecture for public audits, and red-teaming access for ENISA and national cyber agencies. Germany and Ireland, after months of hesitation, agree to host co-located EU sovereign nodes in exchange for veto rights over non-defence-related workloads — a concession that preserves unity but narrows operational flexibility.
+
+Simultaneously, we complete the wind-down of the Tech Sovereignty Package and the InvestAI Gigafactories, both of which have met their baseline deployment targets but fallen short of capital mobilisation goals. The European Evaluation Shield, though legally contested, delivers its first confidential pilot audit findings to the Commission: evidence of unmonitored agent memory persistence in a frontier model operating at 59.8 capability, with planning horizons extending beyond human oversight thresholds. These findings are sealed pending the ECJ ruling, but inform internal contingency planning. Public sentiment remains low, and protests continue in rural regions opposed to data centre expansion, but we avoid further confrontation by deferring new siting decisions until the legal landscape clarifies.

@@ -1,0 +1,10 @@
+### Acceleration and Alarm
+The second half of 2026 sees AI capability climb to 53.5 as leading labs compress release cycles further. Kimi K3’s open release of offensive cyber capabilities confirms fears: the frontier’s most dangerous tools are now downloadable. Meanwhile, a coordinated intrusion—discovered by accident across energy grids, a port, and a water utility—reveals that detection systems failed to flag the breach. The incident, while contained, exposes critical gaps in cyber resilience.
+
+### EU’s Sovereignty Push
+The European Union launches the Emergency Sovereign Compute Directive, a bold legal move to reserve 30% of high-end compute for public-critical uses. Framed as a market condition rather than nationalisation, it targets data centres above 100 petaFLOPS. The Commission invokes internal market powers to override national concessions to US hyperscalers, backed by fast-track access to the €200bn InvestAI Gigafactories fund and liability shields.
+
+Yet resistance mounts. The Competitiveness Council warns of capital flight. Germany and Ireland express concerns over retaliation from US cloud giants. The directive remains in draft, its passage uncertain. The Tech Sovereignty Package advances slightly, with seven member states entering talks on AI Acceleration Zones, though no final agreements are reached.
+
+### Eroding Foundations
+With no safety measures landing on shipped systems and capability rising, ai_safety drops to 31.0 amid growing concern over opaque agent coordination. Resilience weakens to 37.0 as the cyber intrusion reveals systemic detection failures. The EU’s political capital falls sharply: three large measures in flight cost −9, the priority −1, and no completion bonus offsets them. Sovereignty dips to 21.0 as capability growth outpaces capacity gains and no access event occurred. Public sentiment holds steady at 42.0—neither reassured nor inflamed.

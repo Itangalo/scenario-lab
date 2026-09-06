@@ -1,0 +1,48 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.11333333333333334,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_biosequence_signature_detection",
+    "probability": 0.31666666666666665,
+    "emergent": true,
+    "description": "An open-source collaboration between university bio labs and AI safety researchers releases a detection tool that identifies subtle statistical signatures of model-generated genetic sequences in public databases. It flags several previously unnoticed designs with human-pathogenic potential, triggering quiet alerts in national biosecurity agencies. The tool spreads rapidly and becomes a de facto standard, increasing pressure on synthesis providers to adopt screening — not because of regulation, but because liability fears make ignoring it untenable.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

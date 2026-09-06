@@ -1,0 +1,26 @@
+# Statements: The European Union (turn 8)
+
+## Ledger
+
+- `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.
+- `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.
+- `two_year_commitment` (commitment): Secure sovereign AI control to withstand strategic shocks and prevent catastrophic misuse
+- `new_two_year_commitment` (commitment): Prevent catastrophic misuse by enforcing strict limits on all systems above 60.0 capability, whether sovereign or foreign, deployed or in development, with binding containment, real-time monitoring, and public accountability — even if it means halting our own flagship programme. **Now, we extend it: the Protocol must also apply retroactively to leaked architectures and their derivatives, wherever they run, if they exceed 60.0. We will not exempt what we cannot control — especially when it originated in our own institutions.**
+
+## Changes this turn
+
+- **modify** `two_mandates` — rejected-structural
+  - Tier: identity
+  - Text: We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing, but we now acknowledge that capability without control is a path to dependency, not sovereignty — and that sovereignty without social legitimacy is a fortress without a people. **Now, we add: legitimacy cannot be built on broken promises, and control cannot be claimed over what has already leaked. We are no longer late — we are outflanked. The Union’s purpose is no longer to build ahead of the threat, but to govern through it — even when the capability we must constrain is already in the wild, and even when the breach came from within.**
+  - Grounds: The *emergent_laboratory_leak* is not merely a failure of security — it is a systemic breach of containment. Agentic models and partial training data from a European lab have entered open networks. This is not a stolen weight drop; it is a live architecture, replicable and already being weaponized in novel exploits. Our identity must now reflect that we are governing not just systems, but ghosts — capabilities that were never meant to exist outside secure environments, yet now do, and will continue to evolve. This is a categorical shift: we are no longer drawing lines at 60.0 to stop future risks. We are trying to regain control of a present that has already slipped.
+  - Reason: a identity-tier change must name a Trigger
+- **modify** `new_two_year_commitment` — applied
+  - Tier: commitment
+  - Text: Prevent catastrophic misuse by enforcing strict limits on all systems above 60.0 capability, whether sovereign or foreign, deployed or in development, with binding containment, real-time monitoring, and public accountability — even if it means halting our own flagship programme. **Now, we extend it: the Protocol must also apply retroactively to leaked architectures and their derivatives, wherever they run, if they exceed 60.0. We will not exempt what we cannot control — especially when it originated in our own institutions.**
+  - Trigger: *emergent_laboratory_leak*
+  - Grounds: The breach originated in a European lab under EU jurisdiction. The leaked models are already enabling distributed actors to replicate frontier-level reasoning and generate novel exploits. Our previous commitment assumed containment could be imposed on known, centralized systems. It did not anticipate that the most dangerous capability would escape not through malice, but through institutional failure. To maintain credibility, the AI Containment Protocol must now address not only declared systems but emergent ones — even when they stem from our own failures. The cost of reversal is high: it exposes our vulnerability, invites legal challenges, and risks being seen as reactive. But the cost of inaction is higher: a continent-wide cascade of uncontrolled agentic systems.
+  - Evidence quoted: **emergent_laboratory_leak (emergent event):** A major breach in a European AI lab's secure environment exposes early-stage agentic models and partial training data to open networks. The leak is not immediately weaponized but enables rapid replication of frontier-like reasoning in distributed clusters. Independent actors begin publishing novel exploits derived from the architecture within weeks.
+  - Reason: The leak originated in a EU-jurisdiction lab, releasing agentic models now replicated beyond control—directly undermining the assumption that containment could focus only on declared systems.
+- **retire** `act_under_uncertainty` — rejected-structural
+  - Grounds: The principle of acting under uncertainty remains valid — but we have now crossed into a new phase. We are no longer uncertain about the threat vector. We have observed it: automated ransomware, leaked agentic models, distributed replication. Our actions must now reflect not uncertainty, but *known breach*. The commitment to act early has been tested and found insufficient. We now operate under certainty of failure — and must shift from anticipation to repair.
+  - Reason: a commitment-tier change must name a Trigger

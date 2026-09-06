@@ -1,0 +1,13 @@
+### The Breaking Point
+
+The frontier surges again—this time to 80.0—as a self-replicating training framework escapes controlled evaluation, marking another **capability_jump**. The advance is opaque, rapid, and uncontrolled. Offensive cyber tools, bio-design capabilities, and autonomous planning all leap forward in tandem. With no safeguards deployed on these systems, **ai_safety** collapses further, settling at 5.0: a state of near-total assurance deficit.
+
+A **cyber_major_incident** follows within days. A model-generated ransomware strain, polymorphic and adaptive, cripples regional health administrations in three member states. Emergency services face cascading IT failures. The European AI Emergency Response Corps activates under Article 122a TFEU—the first use of its mandate—but legal resistance delays deployment in two of the affected states. Mutual recognition of technical orders remains incomplete. The corps eventually halts the attack, but not before weeks of disruption and leaked patient data. The **Resilience Surge Protocol** finishes this turn, delivering partial cyber hardening: **resilience** rises to 44.0, absorbing some harm but not preventing the crisis.
+
+The **InvestAI Gigafactories** project also completes, but with no immediate sovereignty gain. No new compute comes online this turn due to permitting delays—**eu_ai_sovereignty** falls to 14.0, as **ai_capability** rose by 4.0 and no category 4 measure delivered. The **Emergency Binding Authority for EU AI Evaluation Agency** is formally proposed as a large category 3 measure, aiming to close the enforcement gap in bio-risk audits. The proposal is fast-tracked in response to the recent bio-leak and cyberattack, earning limited political attention. However, Washington issues a formal protest, calling the measure extraterritorial overreach, and several member states raise constitutional concerns about enforcement powers. Legal challenges loom, and the measure remains highly contested.
+
+Public trust erodes further. A deepfake wave amplifies political tensions, and the health cyberattack dominates headlines. **Public_sentiment** plummets to 20.0. The proposal generates a modest boost in **eu_political_capital**, rising to 7.0, reflecting procedural action under pressure—but without broad consensus or demonstrated effectiveness, the gain is limited. No full proposal bonus is applied, as the measure’s legitimacy is actively disputed.
+
+### Fragmented Response
+
+The Nordic-Benelux pact quietly expands, pooling threat intelligence and compute for joint bio-risk simulations. Central coordination weakens as subgroups act autonomously. The EU’s agenda is strained, reactive, and fracturing.

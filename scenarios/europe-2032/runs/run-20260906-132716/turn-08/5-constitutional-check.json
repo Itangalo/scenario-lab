@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 60.0 to 68.0 (+8.0) while `ai_capability` increased by only 3.0 (from 73.0 to 76.0). This violates the rule that `openweight_capability` may never exceed `ai_capability` and must accumulate at a rate consistent with or below it. An 8-point jump in openweight capability — especially when it closes nearly a third of the gap to `ai_capability` in one turn — implies a discontinuous leap not justified by the narrative and inconsistent with the constitutional requirement that both metrics only rise gradually and with `openweight_capability` ≤ `ai_capability`. No catastrophic physical destruction event is narrated or in the notepad to justify a rebalancing.\n- Invariant 9 violated: `openweight_capability` increased by 8.0 points in one turn, which exceeds the hard cap of 25 points per turn. While 8 is below 25 and thus within the absolute bound, the combination of a large jump in `openweight_capability` while `ai_capability` grows slowly triggers scrutiny under Invariant 2. However, the real issue is plausibility under accumulation: the constitution allows up to 25-point moves, but only if justified by the mechanism of accumulation. Here, the narrative provides no explanation for such a surge (e.g., sudden open release of a frontier model, massive distributed training run), and the notepad shows no corresponding event gate resolution (e.g., `open_model_release` or similar). The jump is unexplained and thus structurally inconsistent with the constitutional modeling of capability accumulation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 60.0 to 71.0 (a rise of 11.0 points), which is allowed only if justified by accumulation without regression. However, the narrative attributes the jump to \"leaked training data\" and \"academic replication of frontier techniques\". Leaked data constitutes a discrete, non-accumulative event that could enable sudden capability gains, but such a large jump (11 points) from a non-accumulated, unannounced source violates the principle that `openweight_capability` grows through sustained effort and diffusion, not discrete leaks. The invariant allows only accumulation or stasis, not step-changes from external shocks unless narratively established as part of an ongoing trend. The notepad does not list any prior buildup to this leap (e.g., no event gate like \"open_science_breakthrough\" being resolved), and the notepad only notes \"emergent_open_science_breakthrough\" as an open signal for two turns — insufficient to justify a realized 11-point jump. This constitutes a violation of the accumulation rule for `openweight_capability`.\n- Narrative Constraint 8 violated: The narrative states \"the gap between closed and open narrowed, raising fears of uncontrolled proliferation\" — this telegraphs a future security concern or event gate (e.g., proliferation risk) that should be evaluated through event mechanics, not implied as an established consequence. While tension is allowed, the sentence crosses into forecasting a specific downstream effect (fears of proliferation) that should emerge from event resolution, not narrative implication. This violates the prohibition on telegraphing."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}
