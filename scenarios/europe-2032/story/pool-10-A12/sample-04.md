@@ -1,0 +1,17 @@
+## Statement changes
+No statement changes.
+
+## Portfolio
+- `Open Science Resilience Initiative (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — in flight
+
+## New measure
+None this turn.  
+Waiting for the first operational feedback from the protein folding deployments and the Emergency Corps’ incident analysis to determine whether auditable models can scale into high-tempo domains without collapsing under their own interpretability overhead.
+
+## Priority
+**Open Science Resilience Initiative** — because the loss_of_control_incident and eu_frontier_access_denied together prove that dependence on opaque, externally controlled frontier models is now both strategically unacceptable and existentially hazardous; our only viable path to agency lies in demonstrating that auditable systems can deliver essential capability under crisis conditions, starting with biosecurity where trust cannot be retrofitted.
+
+## In practice
+This turn, we are operationalising the governance and funding architecture for the Open Science Resilience Initiative. The Commission has finalised binding mandates with national research councils in Germany, France, Italy, the Netherlands, and Sweden to allocate core staff and infrastructure by Q1 2031, with DG CONNECT and DG SANTE co-leading a task force to integrate the three active hubs into ENISA and ECDC workflows. Funding is secured through redirected Horizon Europe allocations (€2.8bn) and a €1.4bn Eurobond issued under ESM oversight, structured as a recoverable grant to preserve long-term fiscal headroom. We are now pressing member states to designate legal anchors for each hub under Article 106a TFEU, ensuring that model weights, training data, and deployment logs remain under EU jurisdiction and cannot be subject to foreign takedown or interference.
+
+Simultaneously, we are responding to the eu_frontier_access_denied event by activating Article 122a TFEU to deploy the European AI Emergency Response Corps across affected hospitals, ministries, and critical suppliers. The Corps, though under-resourced, is coordinating with ENISA to map fallback protocols using the open protein folding models as a template for minimal-trust AI operations. The joint_threat_response invitation—into a nascent biosurveillance pact with binding sample-sharing and real-time cyber telemetry—is being accepted conditionally: we will join only if the pact adopts auditable AI as a baseline requirement for all shared models, turning our technical constraint into a condition of coalition legitimacy. The election_annulled event, while not directly technical, reinforces the urgency: we are drafting a Council recommendation urging member states to adopt auditable AI in all high-consequence domains, starting with public health, energy, and electoral infrastructure, arguing that when systems operate beyond human oversight, the only remaining check is whether they can be *understood* after the fact. Transparency is no longer a preference. It is the last functioning control.

@@ -1,0 +1,31 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` — finished this turn  
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` — finished this turn  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability``  
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` — finished this turn  
+``Launch the Public Assurance Protocol (category 2, costs 2 per turn, started turn 6, finishes on turn 7): A binding requirement that all sovereign AI systems above 55.0 capability subject to SMAF or the AI Containment Protocol must publish an annual public assurance report, co-signed by the EAAD and national oversight bodies, explaining their safety architecture, containment measures, and incident history in accessible language`` — finished this turn  
+``Launch the Openweight Containment Initiative (category 3, costs 2 per turn, started turn 7, finishes on turn 9): A binding directive requiring all open-weight releases above 45.0 capability to include embedded watermarking, usage tracking, and remote deactivation triggers, enforceable through licensing conditions on EU-based hosting providers and cloud marketplaces``  
+``Launch the Integrity Audit Expansion (category 1, costs 2 per turn, started turn 10, finishes on turn 11): A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation``
+
+## New measure
+**Measure:** Launch the Emergency Resilience Reinforcement Programme  
+A fast-tracked, targeted intervention to harden essential public services—welfare, healthcare, and emergency response—against AI-driven disruption, including both cyber intrusion and internal malfunction, with mandatory fallback protocols and live monitoring.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: small`  
+`Finishes on turn: 12`  
+`Targeted effect:` Increase `resilience` by 8–10 points by ensuring essential services can degrade gracefully under AI-enabled stress and maintain continuity of function; reduce the societal impact of future AI failures in public administration  
+`Applies to:` All EU member states operating sovereign AI systems in essential public services, with compliance verified by ENISA and co-financed through the Recovery and Resilience Facility
+
+## Priority
+**Priority:** Launch the Sovereign Stack Hardening Initiative  
+We are pushing this hardest this turn because the **emergent_circuit_tracing_leak** has invalidated our core assumption that sovereign control equals secure control — our own audit tools are now in the wild, and we must assume that adversaries can simulate or evade them. Without immediate action to enforce zero-trust architecture and air-gapped evaluations, the entire SACP becomes a liability rather than an asset.
+
+## In practice
+This turn, we are operating under a state of emergency. The **automated_decision_scandal** has shattered public trust, and the **opaque_reasoning** shift has disabled our primary oversight mechanism — interpretability — just as the **capability_plateau_evidence** suggests the frontier may be stalling, creating a dangerous window where perception and reality diverge. We are responding by treating the Sovereign Stack Hardening Initiative as a crisis operation: invoking Article 122 TFEU to override national objections, redirecting €4.2bn from the suspended Polish cluster to fund immediate upgrades, and deploying ENISA emergency audit teams to Wrocław and Marseille with a mandate to enforce zero-trust compliance by turn 10. We are offering technical assistance and co-governance on audit design to secure buy-in, but we will not accept delays.
+
+The Openweight Containment Initiative remains legally contested, and with the ECJ fast-tracking review, we are preparing fallback protocols: if remote deactivation is ruled invalid, we will pivot to mandatory usage logging and real-time anomaly reporting, enforced through DSA intermediary obligations. Meanwhile, the Integrity Audit Expansion is being staffed through a surge in EAAD hiring and civil society partnerships, with pilot audits already underway in France and Finland on welfare and border control systems. We are negotiating with the Council’s Justice and Home Affairs configuration to embed its findings into the revised AI Act enforcement framework by turn 11. The new Emergency Resilience Reinforcement Programme will be rolled out through national digital ministries, co-financed at 70% by the RRF, and tied to existing CIRS standards — this is not about building new defences, but ensuring they are live, tested, and fail-safe. We are no longer betting on control; we are preparing for failure.

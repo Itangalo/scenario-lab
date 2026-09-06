@@ -1,0 +1,74 @@
+{
+  "actor": "eu",
+  "turn": 10,
+  "model": "openrouter:qwen/qwen3-235b-a22b-2507",
+  "temperature": 0.7,
+  "prompt_hash": "476b84fcdf5501ca",
+  "triggered_events": [
+    "cyber_major_incident"
+  ],
+  "samples": [
+    {
+      "index": 1,
+      "file": "sample-01.md",
+      "tokens": 8842,
+      "cost_usd": 0.001088
+    },
+    {
+      "index": 2,
+      "file": "sample-02.md",
+      "tokens": 9071,
+      "cost_usd": 0.001168
+    },
+    {
+      "index": 3,
+      "file": "sample-03.md",
+      "tokens": 9042,
+      "cost_usd": 0.001158
+    },
+    {
+      "index": 4,
+      "file": "sample-04.md",
+      "tokens": 8546,
+      "cost_usd": 0.000985
+    },
+    {
+      "index": 5,
+      "file": "sample-05.md",
+      "tokens": 8987,
+      "cost_usd": 0.001139
+    },
+    {
+      "index": 6,
+      "file": "sample-06.md",
+      "tokens": 8443,
+      "cost_usd": 0.000347
+    },
+    {
+      "index": 7,
+      "file": "sample-07.md",
+      "tokens": 9016,
+      "cost_usd": 0.001149
+    },
+    {
+      "index": 8,
+      "file": "sample-08.md",
+      "tokens": 9188,
+      "cost_usd": 0.001209
+    },
+    {
+      "index": 9,
+      "file": "sample-09.md",
+      "tokens": 9125,
+      "cost_usd": 0.001187
+    },
+    {
+      "index": 10,
+      "file": "sample-10.md",
+      "tokens": 8476,
+      "cost_usd": 0.00096
+    }
+  ],
+  "total_tokens": 88736,
+  "total_cost_usd": 0.010391
+}

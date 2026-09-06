@@ -1,0 +1,23 @@
+## Statement changes
+* ``- modify `two_year_commitment` (commitment): Secure sovereign AI infrastructure to ensure strategic autonomy in an era of accelerating capability and uncertain alliances``
+- Trigger: the two-year commitment period closes this turn  
+- Grounds: The commitment’s term has concluded, and while the objective remains valid, its execution has demonstrably failed to secure new compute capacity due to member-state resistance and institutional fracture. Continuing it unchanged would bind the Union to a failing strategy without course correction. A new formulation must emerge, but only after assessing what remains possible in the current political abyss.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.``
+- Grounds: The collapse of political capital to 6.0 and the fracturing of enforcement authority mean that acting now on uncertain grounds risks not just error, but irreversible institutional discredit. The price of being wrong is no longer measured in misallocated resources, but in the potential loss of the Union’s capacity to act at all. This turn, we must pause forward motion not from caution, but from the recognition that further commitments without restored credibility will accelerate collapse rather than prevent it.
+
+## Portfolio
+- `Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 8, finishes on turn 10): A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **finished**
+- `Municipal Resilience Backchannel Integration (category 6, costs 3 per turn, started turn 9, finishes on turn 11): Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for political capital to stabilise and a credible path to reconstitute enforcement legitimacy before proposing any new high-category initiative.
+
+## Priority
+**Municipal Resilience Backchannel Integration** — because the Emergency Sovereign Compute Mobilisation has failed to deliver, the Evaluation Shield is now legally contested, and with political capital at 6.0, our only remaining lever is the quiet, functional legitimacy of local resilience networks that already work; this measure is the only one still advancing, and it must now carry the burden of proving the Union can still enable collective action, even if not command it.
+
+## In practice
+This turn, we accept that the sovereign compute gamble has failed—not in ambition, but in execution. The Emergency Sovereign Compute Mobilisation ends without new capacity secured. In its wake, we do not declare victory, nor do we abandon the goal of autonomy, but we shift focus to what still moves: the Municipal Resilience Backchannel. DG HOME, ENISA, and the Digital Europe Programme office are directed to accelerate the pilot audit framework with Lyon, Barcelona, and Helsinki, using Article 188a TFEU to mobilise emergency funding for interoperability standards and threat-model validation. The goal is not to build a new system, but to certify what already functions—offering participating cities binding access to next-year Digital Europe funds in exchange for adherence to baseline security and data-sharing protocols. This is not top-down control, but a bargain: legitimacy for compliance.
+
+Simultaneously, we pause all high-stakes initiatives. No new proposals will be drafted. The European Evaluation Shield’s authority is under open challenge, and with public sentiment stagnant and political capital at 6.0, we cannot risk another high-category measure failing to launch. Instead, we initiate a quiet triage: the Commission’s Crisis Response Unit will assess, by turn 11, whether any fragment of the compute mobilisation can be salvaged through bilateral deals with member states, or whether a complete strategic reset is required. Until then, we hold the line—funding only what is already in flight, acting only where local momentum exists, and speaking only where we can deliver. The Union does not retreat, but it no longer pretends to lead.

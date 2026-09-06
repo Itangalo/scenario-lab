@@ -1,0 +1,18 @@
+## Statement changes
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **in flight**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): We establish a legal and technical boundary at the point of deployment: no AI system above capability threshold 60.0 may operate within EU jurisdiction unless it has passed sovereign evaluation, demonstrated runtime controllability, and submitted to continuous monitoring by EAAN` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for diplomatic feedback on the enforceability of the *AI Deployment Boundary Act* before expanding the regulatory perimeter.
+
+## Priority
+**EU Border for AI Systems** — because the eval_anomaly_reports confirm that capability is emerging unpredictably and outside design intent, and because one major developer has already withdrawn from EU deployment rather than submit to sovereign oversight, we must now prove that the boundary is both technically enforceable and politically sustainable — not just declared.
+
+## In practice
+This turn, we advance the drafting of the *AI Deployment Boundary Act* under Article 114 TFEU, with the European Commission’s AI Office leading inter-service consultation and preparing the legislative proposal for submission to the Council and Parliament by the end of June. Legal services are finalising the justification for extraterritorial application, anchoring it in the EU’s right to regulate market access and public safety, with analogies drawn from REACH and the GDPR. The three pilot EAAN nodes in Brussels, Sophia Antipolis, and Munich are now equipped to conduct initial weight inspections and runtime monitoring tests, using red teams from ENISA and national agencies to simulate adversarial probing. We are integrating traffic fingerprinting tools developed in the German and French cybersecurity agencies to detect unauthorised AI inference patterns across critical infrastructure networks, with a focus on financial, energy, and public health systems.
+
+Behind the scenes, we are managing intense transatlantic friction. The US Department of State has raised formal objections, and one hyperscaler has suspended not only deployment but also joint research initiatives with EU academic partners. In response, we are activating backchannels through the Trade and Technology Council, offering a fast-track compliance path: labs that engage proactively with EAAN audits will receive liability shielding under the revised AI Liability Directive and preferential access to EU-funded compute through the upcoming Horizon Europe AI call. We are also preparing to invoke the Digital Markets Act to classify certain foundation models as core platform services, should voluntary cooperation continue to erode. Public messaging remains tightly controlled — this is not a ban, but a condition of market access, framed as regulatory hygiene. No car enters without brakes, no drug without trials, no AI without controls. The border is not about stopping progress; it is about ensuring that what enters can be governed.

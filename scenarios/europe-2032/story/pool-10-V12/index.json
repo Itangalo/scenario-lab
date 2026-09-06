@@ -1,0 +1,74 @@
+{
+  "actor": "eu",
+  "turn": 10,
+  "model": "openrouter:qwen/qwen3-235b-a22b-2507",
+  "temperature": 0.7,
+  "prompt_hash": "deba7be25f8ddb55",
+  "triggered_events": [
+    "election_annulled"
+  ],
+  "samples": [
+    {
+      "index": 1,
+      "file": "sample-01.md",
+      "tokens": 8354,
+      "cost_usd": 0.000952
+    },
+    {
+      "index": 2,
+      "file": "sample-02.md",
+      "tokens": 8349,
+      "cost_usd": 0.000951
+    },
+    {
+      "index": 3,
+      "file": "sample-03.md",
+      "tokens": 8376,
+      "cost_usd": 0.00096
+    },
+    {
+      "index": 4,
+      "file": "sample-04.md",
+      "tokens": 8417,
+      "cost_usd": 0.000974
+    },
+    {
+      "index": 5,
+      "file": "sample-05.md",
+      "tokens": 8418,
+      "cost_usd": 0.000975
+    },
+    {
+      "index": 6,
+      "file": "sample-06.md",
+      "tokens": 8579,
+      "cost_usd": 0.001031
+    },
+    {
+      "index": 7,
+      "file": "sample-07.md",
+      "tokens": 8376,
+      "cost_usd": 0.00096
+    },
+    {
+      "index": 8,
+      "file": "sample-08.md",
+      "tokens": 8406,
+      "cost_usd": 0.00097
+    },
+    {
+      "index": 9,
+      "file": "sample-09.md",
+      "tokens": 8322,
+      "cost_usd": 0.000941
+    },
+    {
+      "index": 10,
+      "file": "sample-10.md",
+      "tokens": 8463,
+      "cost_usd": 0.00099
+    }
+  ],
+  "total_tokens": 84060,
+  "total_cost_usd": 0.009705
+}

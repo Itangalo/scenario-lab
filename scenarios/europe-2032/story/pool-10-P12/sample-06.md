@@ -1,0 +1,19 @@
+No statement changes.
+
+## Portfolio
+- `Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 8, finishes on turn 10): A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **finished**
+- `Municipal Resilience Backchannel Integration (category 6, costs 3 per turn, started turn 9, finishes on turn 11): Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for political capital to stabilise and for the effects of this turn’s adaptations to the sovereign compute offer to materialise before initiating another large-scale measure.
+
+## Priority
+**Municipal Resilience Backchannel Integration** — because with sovereign compute stalled and political capital at crisis levels, resilience is the only domain where tangible progress can still be made without new authority, and because isolated local successes now offer the only functional legitimacy the EU can leverage to rebuild trust and demonstrate agency.
+
+## In practice
+The Emergency Sovereign Compute Mobilisation formally concludes this turn, but without the physical or political grounding it was meant to secure. No new compute facilities are operational under its mandate. Berlin did not accept the co-location offer with Cyber Command, citing unresolved command-and-control risks and constitutional concerns over civilian infrastructure under military adjacency. Dublin rejected the green compute corridor despite EIB disbursement terms, insisting that grid sovereignty cannot be traded for financial guarantees. The directive remains legally in force, but its implementation has collapsed into bilateral negotiations with no path to consensus. We record the measure as finished, but its failure is structural: legal authority without mutual interest is not leverage, and we mistook compulsion for capacity.
+
+With that lever broken, we pivot our thin remaining capital to where function still generates trust: the Municipal Resilience Backchannel. ENISA finalises interoperability standards this turn, based on the Lyon-Barcelona-Helsinki pilot, and DG HOME activates crisis-response envelopes to fund a second tier of nodes—Marseille, Bratislava, and Thessaloniki—under a “certified resilience partner” framework. These cities receive pre-access to EU incident response playbooks and joint training with CER, conditional on adopting the backchannel’s audit protocols and sharing anonymised disruption data. No new budget is drawn; instead, we repurpose 18% of the unspent Digital Europe allocation from 2030, authorised under Article 27 of the MFF Regulation. This is not scaling by investment, but by recognition: we reward what works, because we cannot build anything new.
+
+Meanwhile, the redacted Evaluation Shield assessment is published under Article 16 TFEU, confirming persistent agent anomalies in two systems and mandating third-party monitoring of memory retention and goal persistence. Full market access is suspended until remediation plans are accepted. The move fractures the developer coalition: one lab complies, the other appeals to the ECHR, arguing disproportionate interference. Civil society welcomes the disclosure but demands unredacted data. Trust is not restored, but the act of conditional access—credibility traded for compliance—holds the line. No new measure is launched, because at 6.0 political capital, even a small one risks collapse. We survive this turn not by action, but by triage.

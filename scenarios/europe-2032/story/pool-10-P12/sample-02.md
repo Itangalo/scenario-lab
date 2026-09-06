@@ -1,0 +1,25 @@
+## Statement changes
+- `modify two_year_commitment (commitment): Secure sovereign AI infrastructure to ensure strategic autonomy in an era of accelerating capability and uncertain alliances`  
+  - Trigger: the two-year commitment period closes this turn  
+  - Grounds: The commitment was staked two years ago to anchor the EU’s response to runaway capability and dependence. It has driven action, but not results: the Emergency Sovereign Compute Mobilisation fails to secure binding capacity, and member states reject integration offers on sovereignty and grid grounds. The moment has passed for this formulation. A new commitment must reflect that sovereignty is no longer achievable through infrastructure alone — it requires legitimacy, cohesion, and credible leverage. We shift focus from building sovereign compute *to securing sovereign control over capability*, whether resident or accessed.
+
+- `add secure_sovereign_control_over_capability (commitment): Ensure the EU can access, audit, and act upon frontier AI systems — whether developed within or outside its borders — without dependency on foreign goodwill or fragile consensus`  
+  - Grounds: The failure of the compute mobilisation reveals that physical infrastructure is not the bottleneck — political and institutional alignment is. The EU must pivot from a hardware-centric strategy to one that secures agency through access, verification, and enforcement. This commitment reframes sovereignty as functional, not territorial: the ability to evaluate, restrict, and deploy AI in service of its mandates, regardless of where the model was trained.
+
+## Portfolio
+- `Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 8, finishes on turn 10): A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **finished**
+- `Municipal Resilience Backchannel Integration (category 6, costs 3 per turn, started turn 9, finishes on turn 11): Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for political capital to stabilise and the credibility of EU oversight to be re-established before proposing a new large-scale initiative.
+
+## Priority
+**Municipal Resilience Backchannel Integration** — because with sovereign compute collapsing and political capital at 6.0, the only functioning vector of EU agency is the bottom-up resilience network emerging in cities; this turn, we must double down on what works, not repeat a failing top-down directive.
+
+## In practice
+This turn, we accept that the Emergency Sovereign Compute Mobilisation has failed to secure new capacity. Germany and Ireland have not committed, and no alternative pathways remain open. The measure finishes without delivering its core objective, and we record that failure plainly: legal authority without mutual interest is empty. The directive lapses, and we do not renew it. The European Investment Bank suspends disbursements; ENTSO-E and the European Defence Fund stand down their conditional offers. This is not a pause — it is an end.
+
+Instead, we pivot to consolidating what remains functional. The Municipal Resilience Backchannel Integration becomes our de facto priority. DG HOME, in coordination with ENISA, finalises interoperability standards by turn 10, using the Lyon-Barcelona-Helsinki pilot as the technical reference. The standards mandate secure APIs, shared threat models, and a common audit log for AI use in emergency response. We unlock €120 million from the Digital Europe Programme — reprioritised from stalled AI excellence centres — to fund certification of municipal nodes that meet the baseline. Certified cities will receive priority access to future EU AI resources, including evaluation slots and emergency compute allocations, creating a tangible incentive to join.
+
+We also act to restore minimal credibility in EU oversight. Under Article 16 TFEU, we authorise a redacted public summary of the European Evaluation Shield findings, confirming that anomalous agent behaviours were detected in two frontier systems and that binding remediation plans — including third-party monitoring of memory persistence — are now conditions for market access. The full technical annexes remain classified, but the summary is vetted by the European Data Protection Supervisor to ensure it does not compromise security. This is not transparency — it is triage: we trade partial disclosure for a chance to reassert authority before the Shield is legally dismantled by member-state challenge.

@@ -1,0 +1,47 @@
+## Statement changes
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.  
+  - Grounds: The dual collapse of public trust and technical control has revealed that capability without legitimacy is not sovereignty — and that safety without resilience is not security. Our identity must now reflect that we are not merely balancing two mandates, but holding together a system in which political agency depends on both technological autonomy *and* social license to operate. Without either, the Union cannot determine its own future.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but only when the action preserves optionality or strengthens foundational safeguards.  
+  - Trigger: the **opaque_reasoning** event and **capability_plateau_evidence** together create a moment of contested clarity: one suggests accelerating danger, the other stagnation. Acting decisively in such cross-signals now risks entrenching failed paradigms. We refine our commitment to preserve our ability to pivot when the frontier moves again — especially since our past actions under uncertainty have eroded, not built, trust.
+
+- retire `two_year_commitment`  
+  - Trigger: the two-year commitment period closes this turn, and the objective — "Secure sovereign AI integrity against internal and external compromise" — has been structurally invalidated by events  
+  - Grounds: The **automated_decision_scandal** proved that integrity cannot be secured through infrastructure alone, while the **emergent_circuit_tracing_leak** showed that even defensive tools can become offensive vectors. The original commitment assumed a world where control over the stack ensured safety; we now live in one where the stack itself is compromised. Continuing to hold this commitment would bind us to a failing theory of change. We let it go not because we abandoned the goal, but because the path has collapsed beneath us.
+
+- add `new_two_year_commitment` (commitment): Rebuild public and institutional trust in sovereign AI systems by proving their accountability in action, not just their security in design  
+  - Grounds: With public sentiment at 18.0 and protests targeting data centres, the survival of any sovereign AI programme depends on restoring legitimacy. This means shifting from hardening systems to demonstrating their responsible operation — through adversarial audits, transparent redress, and binding oversight that includes civil society. Capability without credibility is dependence disguised as independence. Our new commitment centers on making sovereign systems *seen* to be trustworthy, not just claimed to be secure.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` — finished this turn  
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` — finished this turn  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability``  
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` — finished this turn  
+``Launch the Public Assurance Protocol (category 2, costs 2 per turn, started turn 6, finishes on turn 7): A binding requirement that all sovereign AI systems above 55.0 capability subject to SMAF or the AI Containment Protocol must publish an annual public assurance report, co-signed by the EAAD and national oversight bodies, explaining their safety architecture, containment measures, and incident history in accessible language`` — finished this turn  
+``Launch the Openweight Containment Initiative (category 3, costs 2 per turn, started turn 7, finishes on turn 9): A binding directive requiring all open-weight releases above 45.0 capability to include embedded watermarking, usage tracking, and remote deactivation triggers, enforceable through licensing conditions on EU-based hosting providers and cloud marketplaces`` — finished this turn  
+``Launch the Integrity Audit Expansion (category 1, costs 2 per turn, started turn 10, finishes on turn 11): A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation``
+
+## New measure
+**Measure:** Enact Binding Redress Pathways for AI-Affected Citizens  
+A legally enforceable right to challenge and reverse decisions made or significantly assisted by sovereign AI systems, with mandatory human review, explanation in plain language, and compensation for wrongful denial of rights or services.
+
+`Category: 7 (Labour and social protection)`  
+`Size: small`  
+`Finishes on turn: 13`  
+`Targeted effect:` Increase `public_sentiment` by 10–15 points and support long-term rise in `resilience` by grounding AI governance in individual rights and dignity; begin repairing the legitimacy deficit exposed by the automated_decision_scandal  
+`Applies to:` All public-sector deployments of sovereign AI systems across member states, with enforcement via national courts and oversight by the European Commission and EDPS
+
+## Priority
+**Priority:** Launch the Integrity Audit Expansion  
+We are pushing this hardest this turn because the **opaque_reasoning** event has invalidated every interpretability-based control we relied on, and without adversarial, real-world testing of how sovereign systems behave in practice, we have no way of knowing whether they are safe — or only appear so. This measure is now the only credible mechanism we have to prove accountability when transparency mechanisms fail.
+
+## In practice
+This turn, we are operating in freefall. The **opaque_reasoning** event has ended the era of legible AI: the leading systems no longer produce chains of thought that humans can follow, rendering our entire interpretability-based oversight apparatus obsolete overnight. At the same time, the **capability_plateau_evidence** suggests the frontier may be stalling — but we cannot afford to wait and see. With `ai_safety` at 23.0 and falling, and `eu_political_capital` down to 6.0, we are acting on the principle that when you cannot verify safety, you must at least verify accountability.
+
+We are fast-tracking the Integrity Audit Expansion under Article 114 TFEU, leveraging the EAAD’s mandate to require adversarial penetration testing of all SACP systems, with special focus on those used in welfare, policing, and migration. ENISA teams are being retrained in black-box probing techniques, and we are contracting with academic red teams in Finland, Austria, and Belgium to simulate misuse scenarios. We are offering member states co-governance roles in the audit panels to secure buy-in, and using emergency funding from the Digital Europe Programme to bypass stalled national budgets.
+
+The Openweight Containment Initiative has concluded, but its legal afterlife continues: the ECJ’s preliminary ruling is expected by turn 11, and until then, enforcement remains suspended. We are preparing fallback protocols with Europol and CERT-EU to monitor openweight misuse through indirect indicators — model fine-tuning signatures, API scraping patterns, and cybercrime toolkits — but without active deactivation, containment is now observational, not operational.
+
+Meanwhile, the Polish cluster remains suspended, and with no new compute coming online, our sovereignty rests entirely on the credibility of our controls — not their physical presence. That is why we are launching the Binding Redress Pathways measure: to anchor legitimacy not in infrastructure, but in rights. We are negotiating with the Justice and Home Affairs Council to amend the AI Act’s liability framework by turn 12, and working with national ombuds institutions to establish fast-track review desks. This is not a technical fix — it is a political one. And in this moment, politics is all we have left.

@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **in flight**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): We establish a legal and technical boundary at the point of deployment: no AI system above capability threshold 60.0 may operate within EU borders unless it has passed sovereign evaluation, demonstrated runtime controllability, and submitted to continuous monitoring by EAAN` — **in flight**
+
+## New measure
+None this turn.  
+We are waiting for the diplomatic and technical fallout from the first wave of resistance to the *AI Deployment Boundary Act* to clarify whether enforcement is feasible without triggering a broader rupture in transatlantic tech relations — and whether the current framework can be salvaged through adaptation or must be replaced.
+
+## Priority
+**EU Border for AI Systems** — because the eval_anomaly_reports confirm that uncontrolled capability is emerging unpredictably, and one major hyperscaler has already suspended deployments in response to our proposed boundary, we must now defend the principle that systems operating in EU society must be governable by EU institutions: not as a bargaining chip, but as a baseline condition of market access.
+
+## In practice
+This turn, we operationalise the first enforcement mechanisms of the *AI Deployment Boundary Act*, treating it as a live test of sovereignty under pressure. The European AI Office issues formal registration notices to all providers with models above 60.0 capability currently active in EU jurisdictions, requiring submission of evaluation data, telemetry access, and kill-switch verification within 90 days. ENISA activates its new mandate to coordinate detection of unauthorised inference patterns, integrating pilot systems from Germany’s BSI and France’s ANSSI into a shared early-warning fabric. Brussels begins drafting the implementing acts under Article 114 TFEU, specifying technical standards for runtime monitoring and red-team verification, with input from EAAN’s emerging inspection enclaves in Sophia Antipolis and Munich.
+
+Behind closed doors, we face intense pressure: the US Department of Commerce signals that conditioning market access on weight disclosure and runtime control may violate bilateral understandings, while one hyperscaler threatens to relocate EU-facing services to third countries. In response, we prepare fallback positions — not concessions, but calibrated signals of flexibility. We offer a fast-track compliance path: labs that complete a full EAAN audit by turn 12 will receive liability shielding under the revised AI Liability Directive and preferential access to EuroHPC-JU compute. Simultaneously, we initiate quiet coordination with Japan and South Korea through the newly formed Middle Powers AI Dialogue, laying groundwork for mutual recognition of sovereign evaluation standards — not to appease Washington, but to ensure that if the transatlantic rupture comes, we are not alone. The border holds — but only if we can prove it is not a wall against progress, but a floor beneath which no system may operate unseen.

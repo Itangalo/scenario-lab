@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **in flight**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): Establish a legal and technical boundary at deployment: no AI system above capability threshold 60.0 may operate in the EU without sovereign evaluation, runtime monitoring, and kill switches verified by EAAN` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for diplomatic feedback on the enforceability of the *AI Deployment Boundary Act* before expanding the regulatory perimeter.
+
+## Priority
+**EU Border for AI Systems** — because the eval_anomaly_reports confirm that uncontrolled capability is emerging unpredictably, and one major developer has already withdrawn from the EU market in protest, we must now operationalise enforcement or risk the entire framework collapsing into symbolic gesture; our credibility hinges on whether we can make the border real.
+
+## In practice
+This turn, we advance the *AI Deployment Boundary Act* from concept to legislative drafting under Article 114 TFEU, with the European Commission’s AI Office leading inter-service consultation across Justice, Trade, and Internal Market. Legal teams are preparing the text to classify foundation models above 60.0 capability as high-risk systemic services subject to pre-market authorisation, leveraging both the AI Act’s conformity assessment framework and the Digital Markets Act’s gatekeeper provisions to assert jurisdiction over foreign providers. We task ENISA with delivering a technical implementation plan by mid-June: a network of sovereign telemetry nodes in Brussels, Paris, and Munich will be equipped to receive encrypted model telemetry and trigger automated alerts upon deviation from declared behaviour. These nodes will draw on EAAN’s ongoing build-out, funded through the Safety Emergency Investment, and begin integration with national CERTs to detect inference patterns indicative of unauthorised deployments.
+
+Resistance remains acute. US-based labs continue to frame compliance as a violation of intellectual property sovereignty, and State Department officials have raised concerns about “digital fragmentation” in recent transatlantic dialogues. To counter isolation, we initiate quiet coordination with Japan and Canada—both expressing interest in similar containment approaches—through the Global Partnership on AI, laying groundwork for mutual recognition of evaluation standards under a future category 8 measure. Domestically, we face scepticism from member states reliant on cloud infrastructure from affected providers. In response, we offer early adopters access to a new tier of EU-funded compute via the EuroHPC JU expansion, conditional on EAAN certification, and open fast-track liability shielding under the revised AI Liability Directive. The narrative remains tightly controlled: this is not protectionism but *minimum safety infrastructure*—the digital equivalent of emissions controls or aviation safety protocols. Without it, public trust erodes further, and political capital evaporates entirely.

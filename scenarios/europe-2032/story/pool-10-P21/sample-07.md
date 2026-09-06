@@ -1,0 +1,31 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` — finished this turn  
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` — finished this turn  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability``  
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` — finished this turn  
+``Launch the Public Assurance Protocol (category 2, costs 2 per turn, started turn 6, finishes on turn 7): A binding requirement that all sovereign AI systems above 55.0 capability subject to SMAF or the AI Containment Protocol must publish an annual public assurance report, co-signed by the EAAD and national oversight bodies, explaining their safety architecture, containment measures, and incident history in accessible language`` — finished this turn  
+``Launch the Openweight Containment Initiative (category 3, costs 2 per turn, started turn 7, finishes on turn 9): A binding directive requiring all open-weight releases above 45.0 capability to include embedded watermarking, usage tracking, and remote deactivation triggers, enforceable through licensing conditions on EU-based hosting providers and cloud marketplaces``  
+``Launch the Integrity Audit Expansion (category 1, costs 2 per turn, started turn 9, finishes on turn 11): A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation``
+
+## New measure
+**Measure:** Establish the Redress and Recourse Mechanism for AI-Affected Citizens  
+A binding, EU-wide legal framework to ensure individuals harmed by sovereign AI decisions—especially in welfare, employment, and housing—can appeal, receive human review, and obtain compensation within 90 days.
+
+`Category: 9 (Diffusion, adoption and public trust)`  
+`Size: small`  
+`Finishes on turn: 12`  
+`Targeted effect:` Increase `public_sentiment` by 10–15 points and modestly improve `resilience` by restoring legitimacy in public AI use; signal that accountability is not optional, even for systems operating under sovereign control  
+`Applies to:` All member states deploying sovereign AI in public administration, with enforcement via the European Ombudsman and conditional access to cohesion funds
+
+## Priority
+**Priority:** Launch the Integrity Audit Expansion  
+We are pushing this hardest this turn because the **automated_decision_scandal** has shattered the fiction that sovereign control implies public accountability — and because the **opaque_reasoning** shift means our old interpretability-based oversight is now blind. Without adversarial, binding audits that go beyond technical compliance to examine real-world impacts, we cannot claim any sovereign system is safe, let alone legitimate.
+
+## In practice
+This turn, we are acting from a position of profound fragility. The **automated_decision_scandal** has turned public trust into a liability, and the **opaque_reasoning** shift has invalidated the core assumption behind our oversight architecture: that we can read the machine’s mind. We are responding by doubling down on verification, not just verification of code, but of consequences. The Integrity Audit Expansion is now our central instrument: we are instructing EAAD to begin adversarial probes into the welfare systems of the three member states most implicated in the scandal, using red-team legal challenges and synthetic claimants to test for bias, opacity, and lack of redress. We are funding this by redirecting €1.2bn from the suspended Polish cluster, invoking Article 122 TFEU for emergency action, and assigning ENISA to verify zero-trust compliance in Wrocław and Marseille by mid-June.
+
+At the same time, we are preparing the Redress and Recourse Mechanism for AI-Affected Citizens, to be tabled in the Justice and Home Affairs Council in March. This is not just legal hygiene — it is political survival. We are offering member states co-design roles and access to a new EU compensation fund, financed by a 0.5% levy on sovereign AI procurement, to secure buy-in. The Openweight Containment Initiative remains legally contested, and we are preparing fallback positions: if the ECJ strikes down remote deactivation, we will pivot to requiring tamper-proof logging and real-time audit feeds for all openweight deployments above 50.0. But our focus has shifted: sovereignty without redress is not sovereignty — it is automated autocracy. We are no longer building systems we cannot control. We are rebuilding trust we have lost.
