@@ -117,4 +117,6 @@ Turn-5 posture note: 31 runs carry the literal `US_POSTURE: pending (…)` line,
 | P21 | P2 (`run-20260904-233821`) | pool-06-P2/sample-14 | `runs/run-20260906-150640` |
 | P22 | P2 (`run-20260904-233821`) | pool-06-P2/sample-28 | `runs/run-20260906-151607` |
 
+Reading prose for the twelve paths (turns 6–9, arm and two-year commitment up top) in `stage-2/{A11,A12,A21,A22,V11,V12,V21,V22,P11,P12,P21,P22}.md`, all metrics/events lines machine-verified against the runs.
+
 (ECHO 2026-09-06)
