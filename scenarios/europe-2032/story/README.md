@@ -152,4 +152,6 @@ Reading prose for the twelve paths (turns 6–9, arm and two-year commitment up 
 | P221 | P22 (`run-20260906-151607`) | pool-10-P22/sample-20 | `runs/run-20260907-145136` |
 | P222 | P22 (`run-20260906-151607`) | pool-10-P22/sample-15 | `runs/run-20260907-150741` |
 
+Reading prose for the 24 paths (turns 10–13, arm and two-year commitment up top) in `stage-3/{A111,A112,A121,A122,A211,A212,A221,A222,V111,V112,V121,V122,V211,V212,V221,V222,P111,P112,P121,P122,P211,P212,P221,P222}.md`, all metrics/events lines machine-verified against the runs. Turn 13 is deliberately not a finale — 2032 is where the scenario ends, not a year more important than others.
+
 (ECHO 2026-09-07)
