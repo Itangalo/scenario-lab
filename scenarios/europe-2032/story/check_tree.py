@@ -71,6 +71,22 @@ ELECTION_WORDS = {
     "election_retrenchment": r"retrench|inward|backlash|moratorium|transfers",
 }
 US_WORDS = re.compile(r"\b(United States|Washington|American|U\.?S\.?)\b")
+
+# The metrics are the simulation's instrument panel, not things anyone in 2029
+# can read off a screen. The reader gets the world, not the gauge: "beyond what
+# any evaluator can certify", never "ai_safety at 5.0". A metric id in reader
+# text is always wrong; a metric word standing next to that metric's own value
+# is the same mistake wearing prose.
+# `resilience` is the one metric id that is also an ordinary English word
+# ("critical infrastructure resilience"), so it is left to the proximity check
+# below rather than banned outright.
+METRIC_IDS = re.compile(
+    r"\b(ai_capability|openweight_capability|ai_safety|"
+    r"eu_ai_sovereignty|eu_political_capital|public_sentiment)\b")
+METRIC_WORDS = re.compile(
+    r"\b(capability|safety|resilience|sovereignty|political capital|capital|"
+    r"sentiment|open[- ]weight)\b", re.I)
+METRIC_WINDOW = 45
 BRANCH_ID = re.compile(r"\b[AVP][12]{1,3}\b")
 NUMBER = re.compile(r"\d+(?:[.,]\d+)*")
 COMMENT = re.compile(r"<!--.*?-->", re.S)
@@ -227,6 +243,26 @@ def check_node(node_dir: Path, data: dict[str, Any], event_ids: set[str],
             problems.append(f"{name}: does not name the 2028 US result "
                             f"({election['id']}), which every branch must carry")
 
+    # 4c — metrics belong to the simulation, not to the world the reader is in
+    if written:
+        for match in METRIC_IDS.finditer(body):
+            problems.append(f"{name}: uses the metric id {match.group(0)!r} in "
+                            f"reader text — say it in-world instead")
+        values = set()
+        for entry in (data.get("metrics") or {}).values():
+            for key in ("value", "previous"):
+                v = entry.get(key)
+                if isinstance(v, (int, float)):
+                    values |= numbers(str(v))
+        for match in METRIC_WORDS.finditer(body):
+            lo = max(0, match.start() - METRIC_WINDOW)
+            window = body[lo:match.end() + METRIC_WINDOW]
+            hits = sorted(numbers(window) & values)
+            if hits:
+                problems.append(
+                    f"{name}: reads out a metric value ({match.group(0)!r} near "
+                    f"{hits[0]}) — the reader sees the world, not the gauge")
+
     # 4 — arm leakage
     for match in ARM_NAMES.finditer(body):
         problems.append(f"{name}: names the arm ({match.group(0)!r}) in reader text")
@@ -345,50 +381,67 @@ def run_checks(tree_dir: Path, tree: dict[str, Any], only: str | None = None) ->
 
 
 def self_test() -> int:
-    """Plant three faults in a copy of one node; every one must be caught."""
-    tree = json.loads((STORY / "tree.json").read_text(encoding="utf-8"))
+    """Plant known faults in a written node; every one must be caught.
+
+    The fixture is synthetic rather than a scaffold: scaffolds are drafts, and
+    most rules only apply to prose marked written, so testing against one would
+    quietly test nothing.
+    """
     source = STORY / "tree" / "turn-07-A11"
     if not source.is_dir():
         print("self-test needs tree/turn-07-A11; run extract_tree.py first",
               file=sys.stderr)
         return 2
+    clean = (
+        "---\n"
+        "node: turn-07-A11\n"
+        "turn: 7\n"
+        "status: written\n"
+        "---\n\n"
+        "# The winter of the corps\n\n"
+        "You spend the half-year defending a monitoring mandate that providers "
+        "read as discovery and member states read as cost. The Council gives you "
+        "the letter of it and none of the reach. Nothing you build this winter "
+        "arrives before the next incident does.\n"
+    )
     failures = 0
     with tempfile.TemporaryDirectory() as tmp:
         node = Path(tmp) / "turn-07-A11"
         shutil.copytree(source, node)
         data = json.loads((node / "data.json").read_text(encoding="utf-8"))
         prose = node / "narrative.md"
-        clean = prose.read_text(encoding="utf-8")
+        event_ids = set(re.findall(r"^\**ID:\**\s*`?([a-z0-9_]+)`?",
+                                   (SCENARIO / "events.md").read_text(encoding="utf-8"),
+                                   re.M | re.I))
 
         cases = [
             ("wrong metric",
-             clean + "\n\nPolitical capital stands at 91.7 by the end of the half-year.\n",
-             "91.7"),
-            # bio_incident never fires in this run; rsi_onset does, several
-            # turns earlier, and naming that would be legitimate.
+             "\nPolitical capital stood at 91.7 by the end of it.\n", "91.7"),
             ("unfired event",
-             clean + "\n\nA bio_incident is reported during the same weeks.\n",
-             "bio_incident"),
+             "\nA bio_incident is reported during the same weeks.\n", "bio_incident"),
+            ("metric read-out",
+             "\nPublic sentiment stands at 32.0 by the summer.\n", "gauge"),
+            ("metric id",
+             "\nThe eu_political_capital position is untenable.\n", "metric id"),
+            ("turn vocabulary",
+             "\nThe corps is funded for two turns and no longer.\n", "calendar time"),
             ("arm leak",
-             clean + "\n\nThis is the Acceleration world, and it shows.\n",
-             "Acceleration"),
+             "\nThis is the Acceleration world, and it shows.\n", "Acceleration"),
+            ("branch id",
+             "\nThe posture inherited from A1 still binds you.\n", "branch id"),
         ]
-        for label, text, needle in cases:
-            prose.write_text(text, encoding="utf-8")
+        for label, planted, needle in cases:
+            prose.write_text(clean + planted, encoding="utf-8")
             problems: list[str] = []
-            event_ids = set(re.findall(r"^\**ID:\**\s*`?([a-z0-9_]+)`?",
-                                       (SCENARIO / "events.md").read_text(encoding="utf-8"),
-                                       re.M | re.I))
             check_node(node, data, event_ids, problems)
             caught = any(needle in p for p in problems)
             print(f"  {'PASS' if caught else 'FAIL'}  planted {label}: "
                   f"{'caught' if caught else 'NOT CAUGHT'}")
             failures += 0 if caught else 1
 
-        # and a clean node must produce nothing
         prose.write_text(clean, encoding="utf-8")
         problems = []
-        check_node(node, data, set(), problems)
+        check_node(node, data, event_ids, problems)
         ok = not problems
         print(f"  {'PASS' if ok else 'FAIL'}  clean node: "
               f"{'no complaints' if ok else problems}")
