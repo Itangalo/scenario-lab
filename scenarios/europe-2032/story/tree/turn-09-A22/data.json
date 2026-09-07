@@ -1,0 +1,103 @@
+{
+  "node": "turn-09-A22",
+  "turn": 9,
+  "period": "H2 2030",
+  "block": "A22",
+  "arm": "A",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-133612",
+    "seed": 11779175910392283388,
+    "turn_dir": "runs/run-20260906-133612/turn-09",
+    "pinned_turn": 6,
+    "option_file": "pool-06-A2/sample-07.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 81.0,
+      "previous": 77.0,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 64.0,
+      "previous": 61.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 1.0,
+      "previous": 1.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 42.0,
+      "previous": 44.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 14.0,
+      "previous": 15.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 6.0,
+      "previous": 8.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 15.0,
+      "previous": 20.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "labour_displacement",
+      "title": "Labour Displacement Wave",
+      "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "bio_uplift_findings",
+      "title": "Human-Infective Design Demonstrated",
+      "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. **This is a precursor: it opens the bio gate for the next 4 turns.**",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-08-A22",
+  "next_node": null,
+  "next_choice": [
+    "option-10-A221",
+    "option-10-A222"
+  ],
+  "alternatives": {}
+}

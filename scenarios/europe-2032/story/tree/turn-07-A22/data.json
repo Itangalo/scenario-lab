@@ -1,0 +1,114 @@
+{
+  "node": "turn-07-A22",
+  "turn": 7,
+  "period": "H2 2029",
+  "block": "A22",
+  "arm": "A",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-133612",
+    "seed": 11779175910392283388,
+    "turn_dir": "runs/run-20260906-133612/turn-07",
+    "pinned_turn": 6,
+    "option_file": "pool-06-A2/sample-07.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 73.0,
+      "previous": 70.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 59.0,
+      "previous": 57.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 14.0,
+      "previous": 12.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 43.0,
+      "previous": 45.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "previous": 16.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 12.0,
+      "previous": 11.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 25.0,
+      "previous": 28.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "loss_of_control_incident",
+      "title": "Loss-of-Control Incident",
+      "description": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards and disputed.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "eu_frontier_access_denied",
+      "title": "Frontier Access Denied",
+      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_municipal_oversight_network",
+      "title": "emergent_municipal_oversight_network",
+      "description": "A coalition of mid-sized EU cities and regional governments forms a mutual oversight network for AI deployment in public services, sharing audit logs, incident reports, and red-teaming results. It emerges from municipal frustration with top-down policies that ignore local implementation risks. The network begins publishing comparative performance and safety benchmarks, creating de facto standards independent of Brussels.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-06-A22",
+  "next_node": "turn-08-A22",
+  "next_choice": null,
+  "alternatives": {}
+}

@@ -1,0 +1,93 @@
+{
+  "node": "turn-13-P211",
+  "turn": 13,
+  "period": "H2 2032",
+  "block": "P211",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-142945",
+    "seed": 18332379151440853143,
+    "turn_dir": "runs/run-20260907-142945/turn-13",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P21/sample-02.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 70.0,
+      "previous": 69.5,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 55.0,
+      "previous": 53.5,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 1.0,
+      "previous": 3.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 48.0,
+      "previous": 45.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 13.0,
+      "previous": 14.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 5.0,
+      "previous": 7.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 13.0,
+      "previous": 13.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "eu_frontier_access_denied",
+      "title": "Frontier Access Denied",
+      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-12-P211",
+  "next_node": null,
+  "next_choice": null,
+  "alternatives": {}
+}

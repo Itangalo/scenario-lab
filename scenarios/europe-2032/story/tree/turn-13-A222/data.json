@@ -1,0 +1,162 @@
+{
+  "node": "turn-13-A222",
+  "turn": 13,
+  "period": "H2 2032",
+  "block": "A222",
+  "arm": "A",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-103635",
+    "seed": 156383880815187161,
+    "turn_dir": "runs/run-20260907-103635/turn-13",
+    "pinned_turn": 10,
+    "option_file": "pool-10-A22/sample-06.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 96.0,
+      "previous": 92.0,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 82.5,
+      "previous": 79.0,
+      "delta": 3.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "previous": 0.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 38.0,
+      "previous": 40.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 8.0,
+      "previous": 9.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 2.0,
+      "previous": 1.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 15.0,
+      "previous": 15.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "bio_uplift_findings",
+      "title": "Human-Infective Design Demonstrated",
+      "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. **This is a precursor: it opens the bio gate for the next 4 turns.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "labour_displacement",
+      "title": "Labour Displacement Wave",
+      "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "middle_power_coalition",
+      "title": "Middle Powers Coordinate",
+      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "rsi_onset",
+      "title": "Recursive Self-Improvement Begins",
+      "description": "Models begin contributing materially to the design of their successors, and the pace stops being set by human research throughput. It is recognised in retrospect rather than announced: the first sign is a release cadence nobody planned for. From this point capability growth compounds, and assurance falls behind it.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Sovereign Inference Backbone",
+      "category": 4,
+      "cost": 3,
+      "start": 10,
+      "finish": 13,
+      "description": "A federated network of EU-controlled inference clusters, hardened and distributed, to host sovereign replicas from the Replication Foundry Initiative and enforce strict access controls on all high-capability AI use in public services",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Replication Foundry Initiative",
+      "category": 4,
+      "cost": 3,
+      "start": 8,
+      "finish": 12,
+      "description": "Establish a distributed EU capacity to replicate and distill frontier models from open weights, using repurposed hardware and emergency grid access to close the capability gap",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Emergency Observability Directive",
+      "category": 3,
+      "cost": 3,
+      "start": 11,
+      "finish": 11,
+      "description": "Mandates full, real-time telemetry and model checkpoint access for all high-capability AI systems operating in or affecting EU critical infrastructure, with immediate decommissioning authority for non-compliant providers",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Support for the European AI Commons",
+      "category": 5,
+      "cost": 3,
+      "start": 12,
+      "finish": 14,
+      "description": "Provides coordinated funding, legal protection, and interoperability standards to the emergent European AI Commons, enabling it to scale evaluation frameworks, defensive tooling, and replication pipelines as a distributed alternative to state-controlled infrastructure",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-12-A222",
+  "next_node": null,
+  "next_choice": null,
+  "alternatives": {}
+}

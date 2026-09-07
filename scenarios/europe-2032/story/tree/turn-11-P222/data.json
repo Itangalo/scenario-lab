@@ -1,0 +1,114 @@
+{
+  "node": "turn-11-P222",
+  "turn": 11,
+  "period": "H2 2031",
+  "block": "P222",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-150741",
+    "seed": 7614284192587186088,
+    "turn_dir": "runs/run-20260907-150741/turn-11",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P22/sample-15.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 75.0,
+      "previous": 74.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 56.0,
+      "previous": 55.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 5.0,
+      "previous": 5.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 48.0,
+      "previous": 48.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 21.0,
+      "previous": 22.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 7.0,
+      "previous": 0.0,
+      "delta": 7.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 28.0,
+      "previous": 25.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "backlash_physical",
+      "title": "Backlash Turns Physical",
+      "description": "Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "middle_power_coalition",
+      "title": "Middle Powers Coordinate",
+      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_eu_aid_strike",
+      "title": "emergent_eu_aid_strike",
+      "description": "Public-sector AI deployment staff in several member states initiate coordinated work-to-rule actions and selective refusal to operate systems funded under the Emergency Trust Restoration Initiative, citing safety concerns and lack of consultation. The strike does not halt operations but degrades performance in triage and border processing, undermining the credibility of sovereign AI as a trust-building measure.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-10-P222",
+  "next_node": "turn-12-P222",
+  "next_choice": null,
+  "alternatives": {}
+}

@@ -1,0 +1,128 @@
+{
+  "node": "turn-12-P221",
+  "turn": 12,
+  "period": "H1 2032",
+  "block": "P221",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-145136",
+    "seed": 5110626522058933561,
+    "turn_dir": "runs/run-20260907-145136/turn-12",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P22/sample-20.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 75.5,
+      "previous": 75.0,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 58.0,
+      "previous": 58.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 2.0,
+      "previous": 12.0,
+      "delta": -10.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 57.0,
+      "previous": 57.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 21.0,
+      "previous": 22.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 1.0,
+      "previous": 1.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 24.0,
+      "previous": 24.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "opaque_reasoning",
+      "title": "Reasoning Stops Being Legible",
+      "description": "The leading systems stop producing intermediate reasoning a human can read, because the representations that work best are not words. Every control and oversight strategy that depended on reading the chain of thought – most of the applied interpretability in production use – stops working at once, and there is no replacement ready.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_eu_aid_strike",
+      "title": "emergent_eu_aid_strike",
+      "description": "A coordinated strike by EU civil servants responsible for disbursing AI-related aid freezes the release of funds under the Emergency Continuity Response Initiative, citing unsafe oversight conditions and unaccountable decision-making. The action is not illegal, but it halts deployment at critical nodes just as resilience efforts are being tested.",
+      "emergent": true,
+      "pinned": false
+    },
+    {
+      "id": "us_china_agreement",
+      "title": "Narrow Binding Agreement",
+      "description": "The two leading powers reach a limited but real agreement covering some class of AI risk – weights security, autonomous escalation, a class of biological design tools – with verification thin but not absent. Whether the Union is inside it, consulted about it, or informed of it afterwards depends on what it has built and whom it has coordinated with. This is the one thing in the world that slows `ai_capability`, on the terms of metric rule 2.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Establish the Continuity Assurance Framework",
+      "category": 6,
+      "cost": 3,
+      "start": 9,
+      "finish": 11,
+      "description": "A binding regime requiring all critical public AI systems to maintain validated, air-gapped fallback nodes capable of autonomous operation during service denial, with central certification and failover testing every quarter",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Frontier Access Guarantee",
+      "category": 4,
+      "cost": 3,
+      "start": 7,
+      "finish": 12,
+      "description": "Secure guaranteed access to frontier AI capability for EU public institutions by co-investing in closed-access compute clusters operated under EU legal jurisdiction, with weight control and auditability",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-11-P221",
+  "next_node": "turn-13-P221",
+  "next_choice": null,
+  "alternatives": {}
+}

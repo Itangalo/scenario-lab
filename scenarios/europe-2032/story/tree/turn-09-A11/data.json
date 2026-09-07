@@ -1,0 +1,121 @@
+{
+  "node": "turn-09-A11",
+  "turn": 9,
+  "period": "H2 2030",
+  "block": "A11",
+  "arm": "A",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-114440",
+    "seed": 11808683684539922732,
+    "turn_dir": "runs/run-20260906-114440/turn-09",
+    "pinned_turn": 6,
+    "option_file": "pool-06-A1/sample-06.md",
+    "path_rep": 2,
+    "promotion_reason": "rep 1 replaced: sentiment trajectory implausible, rule-7 incident penalties skipped"
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 85.5,
+      "previous": 81.5,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 63.5,
+      "previous": 59.5,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 8.0,
+      "previous": 8.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 47.0,
+      "previous": 49.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 17.0,
+      "previous": 18.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "previous": 5.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 20.0,
+      "previous": 29.0,
+      "delta": -9.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "ai_investment_collapse",
+      "title": "AI Investment Collapse",
+      "description": "Capital flees the sector. Valuations reset hard, announced build-out is cancelled rather than delayed, and several of the arrangements European compute was depending on evaporate with it. What the frontier laboratories can afford to train shrinks for the first time.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "verification_widens",
+      "title": "Verification Frontier Widens",
+      "description": "A domain that was assumed to need a human to say whether the answer was any good turns out to admit a cheap automatic check – contract review, clinical coding, structural engineering, parts of law. Capability in that domain improves sharply within months of the check existing, and the argument that progress is confined to code and mathematics loses a piece of its territory.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_synthetic_leaks_wave",
+      "title": "emergent_synthetic_leaks_wave",
+      "description": "A coordinated campaign of synthetic media leaks, falsely attributed to senior EU officials, triggers multiple national investigations and diplomatic incidents. The content is technically detectable as fake, but spreads faster than verification, overwhelming fact-checking infrastructure. Public trust in official communication degrades further, especially in member states with low digital literacy.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Sovereign AI Sentinel Nodes",
+      "category": 5,
+      "cost": 3,
+      "start": 8,
+      "finish": 10,
+      "description": "Deploy a network of autonomous, EU-controlled monitoring and containment agents trained to detect, isolate, and counter unauthorised AI self-modification, model leakage, and unauthorised compute use across critical infrastructure and research environments",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Sovereign AI Behavioural Observatory",
+  "priority": "Sovereign AI Sentinel Nodes",
+  "commitment": null,
+  "prev_node": "turn-08-A11",
+  "next_node": null,
+  "next_choice": [
+    "option-10-A111",
+    "option-10-A112"
+  ],
+  "alternatives": {}
+}

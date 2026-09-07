@@ -1,0 +1,29 @@
+{
+  "node": "option-02-1",
+  "choice_turn": 2,
+  "after_block": "turn-01",
+  "leads_to_block": [
+    "A1",
+    "V1",
+    "P1"
+  ],
+  "source": "turn-01/option-02-1.md",
+  "pool": "turn-01/pool-20260904",
+  "draws": 30,
+  "split": "emergent",
+  "split_note": "Straight picks from the rebuilt 30-draw pool (cat4 12 / cat5 10 / cat1 5 / cat3 2 / cat6 1). No synthesis. The turn-1 resolution differs per arm (ai_capability 54.5/54.0/53.5), so it is not shown before the choice; the opening shows the scenario's start values and the reader sees the resolution at turn 2.",
+  "stance": "build",
+  "standing": "plurality category",
+  "support": "cat4, 12/30",
+  "measure": "Emergency Sovereign Compute Directive",
+  "category": 4,
+  "finishes_turn": 3,
+  "commitment": "Secure independent AI capacity to act with sovereignty in an accelerating world",
+  "prev_node": "turn-01",
+  "next_node": [
+    "turn-02-A1",
+    "turn-02-V1",
+    "turn-02-P1"
+  ],
+  "alternatives": {}
+}

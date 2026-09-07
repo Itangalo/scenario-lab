@@ -1,0 +1,25 @@
+{
+  "node": "option-10-P211",
+  "choice_turn": 10,
+  "after_block": "P21",
+  "leads_to_block": [
+    "P211"
+  ],
+  "source": "pool-10-P21/sample-02.md",
+  "pool": "pool-10-P21",
+  "draws": 10,
+  "split": "emergent",
+  "split_note": "Majority cluster against an honest singleton.",
+  "stance": "repair trust",
+  "standing": "majority",
+  "support": "majority cluster",
+  "measure": "Launch the Public Redress and Auditability Directive",
+  "category": 9,
+  "finishes_turn": 12,
+  "commitment": null,
+  "prev_node": "turn-09-P21",
+  "next_node": [
+    "turn-10-P211"
+  ],
+  "alternatives": {}
+}

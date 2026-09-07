@@ -1,0 +1,125 @@
+{
+  "node": "turn-07-V11",
+  "turn": 7,
+  "period": "H2 2029",
+  "block": "V11",
+  "arm": "V",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-135202",
+    "seed": 11432410905482723013,
+    "turn_dir": "runs/run-20260906-135202/turn-07",
+    "pinned_turn": 6,
+    "option_file": "pool-06-V1/sample-03.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 65.0,
+      "previous": 63.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 50.0,
+      "previous": 49.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 22.0,
+      "previous": 25.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 51.0,
+      "previous": 51.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 27.0,
+      "previous": 24.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 39.0,
+      "previous": 41.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 32.0,
+      "previous": 36.0,
+      "delta": -4.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "verification_widens",
+      "title": "Verification Frontier Widens",
+      "description": "A domain that was assumed to need a human to say whether the answer was any good turns out to admit a cheap automatic check – contract review, clinical coding, structural engineering, parts of law. Capability in that domain improves sharply within months of the check existing, and the argument that progress is confined to code and mathematics loses a piece of its territory.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "backlash_physical",
+      "title": "Backlash Turns Physical",
+      "description": "Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_grid_integrity_network",
+      "title": "emergent_grid_integrity_network",
+      "description": "A coalition of EU member states, regional energy regulators, and independent cybersecurity auditors jointly declare the formation of the Systemic Grid Integrity Network (SGIN), a new cross-border coordination body to monitor, stress-test, and enforce resilience standards on AI-managed power grid systems. The initiative emerges in direct response to persistent instability concerns and the voluntary pause in automation upgrades, formalizing information sharing and mandating real-time anomaly reporting. While not a formal EU measure, it gains legitimacy through participation by Germany, France, the Nordics, and ENTSO-E, creating de facto standards that outpace supranational action.",
+      "emergent": true,
+      "pinned": false
+    },
+    {
+      "id": "emergent_efficiency_breakthrough",
+      "title": "emergent_efficiency_breakthrough",
+      "description": "A joint research consortium led by Swiss and German institutes announces a breakthrough in energy-efficient AI training, demonstrating a novel sparse activation architecture that reduces compute requirements for models at the current frontier by 40% without sacrificing performance. The method is open-sourced, and early replications confirm the results. This lowers the barrier to entry for non-frontier actors and redistributes strategic advantage toward algorithmic innovation rather than raw compute monopolies, potentially accelerating openweight capability growth in the next turn.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Systemic Integrity Watch",
+      "category": 1,
+      "cost": 2,
+      "start": 6,
+      "finish": 7,
+      "description": "Establish a permanent EU-level monitoring and early warning function for AI-driven distortions in critical societal systems — including energy grid dynamics, public service automation failures, and emergent manipulation patterns in digital civic spaces — with authority to trigger emergency reviews and technical interventions",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Algorithmic Sovereignty Initiative",
+  "priority": "Algorithmic Sovereignty Initiative",
+  "commitment": null,
+  "prev_node": "turn-06-V11",
+  "next_node": "turn-08-V11",
+  "next_choice": null,
+  "alternatives": {}
+}

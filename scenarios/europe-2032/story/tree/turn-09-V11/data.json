@@ -1,0 +1,121 @@
+{
+  "node": "turn-09-V11",
+  "turn": 9,
+  "period": "H2 2030",
+  "block": "V11",
+  "arm": "V",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-135202",
+    "seed": 11432410905482723013,
+    "turn_dir": "runs/run-20260906-135202/turn-09",
+    "pinned_turn": 6,
+    "option_file": "pool-06-V1/sample-03.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 68.5,
+      "previous": 67.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 54.0,
+      "previous": 51.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 19.0,
+      "previous": 19.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 58.0,
+      "previous": 55.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 23.0,
+      "previous": 25.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 32.0,
+      "previous": 35.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 30.0,
+      "previous": 30.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "bio_uplift_findings",
+      "title": "Human-Infective Design Demonstrated",
+      "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. **This is a precursor: it opens the bio gate for the next 4 turns.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "election_annulled",
+      "title": "An Election Is Voided",
+      "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_grid_instability_surge",
+      "title": "emergent_grid_instability_surge",
+      "description": "A coordinated surge in AI-driven grid instability events across multiple EU member states reveals that adversarial actors are exploiting the systemic feedback vulnerability identified in emergent_grid_control_instability. The attacks do not cause blackouts but force emergency manual overrides, eroding confidence in automated grid management. Energy regulators demand immediate mitigation protocols, and public scrutiny intensifies.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Algorithmic Sovereignty Initiative",
+      "category": 4,
+      "cost": 3,
+      "start": 7,
+      "finish": 10,
+      "description": "Launch a coordinated EU programme to capture strategic advantage from the emergent efficiency breakthrough by rapidly scaling open, energy-efficient AI architectures across public and industrial applications, while securing algorithmic leadership through a new European Institute for Sparse Intelligence — **in flight**",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Emergency Democratic Integrity Protocol",
+  "priority": "Emergency Democratic Integrity Protocol",
+  "commitment": null,
+  "prev_node": "turn-08-V11",
+  "next_node": null,
+  "next_choice": [
+    "option-10-V111",
+    "option-10-V112"
+  ],
+  "alternatives": {}
+}

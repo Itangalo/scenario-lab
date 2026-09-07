@@ -1,0 +1,93 @@
+{
+  "node": "turn-13-P212",
+  "turn": 13,
+  "period": "H2 2032",
+  "block": "P212",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-143821",
+    "seed": 13527330695453551559,
+    "turn_dir": "runs/run-20260907-143821/turn-13",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P21/sample-05.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 70.5,
+      "previous": 70.0,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 57.0,
+      "previous": 57.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 11.0,
+      "previous": 11.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 37.0,
+      "previous": 37.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 9.0,
+      "previous": 9.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "previous": 0.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 15.0,
+      "previous": 15.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "emergent_grassroots_cyber_pooling",
+      "title": "emergent_grassroots_cyber_pooling",
+      "description": "A loose coalition of EU-aligned states and non-state actors continues sharing early-warning telemetry and defensive AI models against cyber threats, operating informally outside NATO and EU structures. It gains tacit support from several national CERTs but remains uncoordinated at the Union level.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-12-P212",
+  "next_node": null,
+  "next_choice": null,
+  "alternatives": {}
+}

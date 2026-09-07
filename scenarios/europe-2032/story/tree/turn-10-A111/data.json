@@ -1,0 +1,114 @@
+{
+  "node": "turn-10-A111",
+  "turn": 10,
+  "period": "H1 2031",
+  "block": "A111",
+  "arm": "A",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-101012",
+    "seed": 10267166274962819215,
+    "turn_dir": "runs/run-20260907-101012/turn-10",
+    "pinned_turn": 10,
+    "option_file": "pool-10-A11/sample-04.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 89.5,
+      "previous": 85.5,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 65.5,
+      "previous": 63.5,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 3.0,
+      "previous": 8.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 46.0,
+      "previous": 47.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "previous": 17.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "previous": 0.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 20.0,
+      "previous": 20.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "eu_frontier_access_denied",
+      "title": "Frontier Access Denied",
+      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "emergent": false,
+      "pinned": true
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Sovereign AI Sentinel Nodes",
+      "category": 5,
+      "cost": 3,
+      "start": 8,
+      "finish": 10,
+      "description": "Deploy a network of autonomous, EU-controlled monitoring and containment agents trained to detect, isolate, and counter unauthorised AI self-modification, model leakage, and unauthorised compute use across critical infrastructure and research environments",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Sovereign AI Behavioural Observatory",
+      "category": 5,
+      "cost": 3,
+      "start": 9,
+      "finish": 12,
+      "description": "Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Emergency Compute Redundancy Initiative",
+  "priority": "Emergency Compute Redundancy Initiative",
+  "commitment": null,
+  "prev_node": "option-10-A111",
+  "next_node": "turn-11-A111",
+  "next_choice": null,
+  "alternatives": {}
+}

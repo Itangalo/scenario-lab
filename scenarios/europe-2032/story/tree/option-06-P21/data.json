@@ -1,0 +1,25 @@
+{
+  "node": "option-06-P21",
+  "choice_turn": 6,
+  "after_block": "P2",
+  "leads_to_block": [
+    "P21"
+  ],
+  "source": "pool-06-P2/sample-14.md",
+  "pool": "pool-06-P2",
+  "draws": 30,
+  "split": "balance-within-consensus",
+  "split_note": "21/30 share the same priority, so this is balance within a consensus rather than opposed camps.",
+  "stance": "legitimacy first",
+  "standing": "minority",
+  "support": "sentiment-led draws 07/14/19",
+  "measure": "Launch the Public Assurance Protocol",
+  "category": 2,
+  "finishes_turn": 7,
+  "commitment": null,
+  "prev_node": "turn-05-P2",
+  "next_node": [
+    "turn-06-P21"
+  ],
+  "alternatives": {}
+}

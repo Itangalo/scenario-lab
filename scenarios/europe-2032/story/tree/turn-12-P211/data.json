@@ -1,0 +1,107 @@
+{
+  "node": "turn-12-P211",
+  "turn": 12,
+  "period": "H1 2032",
+  "block": "P211",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-142945",
+    "seed": 18332379151440853143,
+    "turn_dir": "runs/run-20260907-142945/turn-12",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P21/sample-02.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 69.5,
+      "previous": 69.0,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 53.5,
+      "previous": 53.0,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 3.0,
+      "previous": 9.0,
+      "delta": -6.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 45.0,
+      "previous": 42.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 14.0,
+      "previous": 15.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 7.0,
+      "previous": 8.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 13.0,
+      "previous": 13.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "openweight_frontier_release",
+      "title": "Open Weights Reach the Frontier",
+      "description": "An open-weight release lands within months of the closed frontier rather than a year. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "middle_power_coalition",
+      "title": "Middle Powers Coordinate",
+      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-11-P211",
+  "next_node": "turn-13-P211",
+  "next_choice": null,
+  "alternatives": {}
+}

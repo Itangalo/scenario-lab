@@ -1,0 +1,107 @@
+{
+  "node": "turn-11-A212",
+  "turn": 11,
+  "period": "H2 2031",
+  "block": "A212",
+  "arm": "A",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-103345",
+    "seed": 401233447666978836,
+    "turn_dir": "runs/run-20260907-103345/turn-11",
+    "pinned_turn": 10,
+    "option_file": "pool-10-A21/sample-05.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 88.5,
+      "previous": 85.0,
+      "delta": 3.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 73.0,
+      "previous": 71.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 7.0,
+      "previous": 7.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 52.0,
+      "previous": 50.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 11.0,
+      "previous": 13.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "previous": 0.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 28.0,
+      "previous": 28.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "joint_threat_response",
+      "title": "Joint Threat Response",
+      "description": "States hit by the same class of incident pool attribution, intelligence and response: a joint cyber command with real-time telemetry sharing that the Union is invited into, or a biosurveillance pact with binding sample-sharing and a standing investigation mandate. The Union gains protection it could not build alone, and a seat at tables it was not sitting at. It moves `resilience` on the terms of metric rule 4.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "middle_power_coalition",
+      "title": "Middle Powers Coordinate",
+      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_sovereign_core_instability",
+      "title": "emergent_sovereign_core_instability",
+      "description": "The Emergency Sovereign Continuity Directive's edge-node infrastructure, rushed into deployment, exhibits systemic instability under load: nodes fail to synchronise, access controls degrade, and emergency systems show inconsistent behaviour. Independent audits suggest the design is sound but integration is fracturing under political and technical strain. This instability threatens the credibility of the entire sovereign core effort.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-10-A212",
+  "next_node": "turn-12-A212",
+  "next_choice": null,
+  "alternatives": {}
+}

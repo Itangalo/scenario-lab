@@ -1,0 +1,114 @@
+{
+  "node": "turn-06-V12",
+  "turn": 6,
+  "period": "H1 2029",
+  "block": "V12",
+  "arm": "V",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-140300",
+    "seed": 748695728457550772,
+    "turn_dir": "runs/run-20260906-140300/turn-06",
+    "pinned_turn": 6,
+    "option_file": "pool-06-V1/sample-01.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 62.5,
+      "previous": 61.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 50.0,
+      "previous": 48.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 21.0,
+      "previous": 23.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 48.0,
+      "previous": 45.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 25.0,
+      "previous": 24.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 42.0,
+      "previous": 40.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 34.0,
+      "previous": 34.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "taiwan_blockade",
+      "title": "Taiwan Blockade",
+      "description": "A quarantine or blockade halts advanced semiconductor exports. Compute supply for everyone outside China's domestic chain is disrupted for years, every AI policy question becomes a security question overnight, and the Union's upstream position in the supply chain becomes the most valuable thing it holds and the most dangerous thing to hold.",
+      "emergent": false,
+      "pinned": true
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 6,
+      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Critical Infrastructure Resilience Sprint",
+      "category": 6,
+      "cost": 3,
+      "start": 5,
+      "finish": 6,
+      "description": "Launch a 12-month emergency hardening programme for energy, transport, and health systems against AI-driven cyberattacks, with mandatory audits, fallback protocols, and live red-teaming",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Emergency Compute Assurance Initiative",
+  "priority": "Emergency Compute Assurance Initiative",
+  "commitment": null,
+  "prev_node": "option-06-V12",
+  "next_node": "turn-07-V12",
+  "next_choice": null,
+  "alternatives": {}
+}

@@ -1,0 +1,128 @@
+{
+  "node": "turn-08-P12",
+  "turn": 8,
+  "period": "H1 2030",
+  "block": "P12",
+  "arm": "P",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-145406",
+    "seed": 10248462065756046062,
+    "turn_dir": "runs/run-20260906-145406/turn-08",
+    "pinned_turn": 6,
+    "option_file": "pool-06-P1/sample-09.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 60.5,
+      "previous": 60.5,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 52.0,
+      "previous": 45.0,
+      "delta": 7.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 21.0,
+      "previous": 21.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 34.0,
+      "previous": 34.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 34.0,
+      "previous": 34.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 9.0,
+      "previous": 17.0,
+      "delta": -8.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 35.0,
+      "previous": 35.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Surface",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "openweight_frontier_release",
+      "title": "Open Weights Reach the Frontier",
+      "description": "An open-weight release lands within months of the closed frontier rather than a year. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_municipal_backchannel",
+      "title": "emergent_municipal_backchannel",
+      "description": "Spurred by the election annulment and data centre protests, a cross-border network of municipal governments and regional energy authorities begins developing open, auditable AI tools for local service optimisation—focused on grid load balancing, transit routing, and emergency response coordination—using only EU-hosted models below the 45.0 capability threshold. The project avoids central mandates and instead spreads through city-to-city collaboration, framed as regaining agency over essential services.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "European Evaluation Shield",
+      "category": 5,
+      "cost": 3,
+      "start": 4,
+      "finish": 6,
+      "description": "A new public agency with legal authority to conduct independent, pre-deployment evaluations of any AI system above capability threshold 50.0, with power to require interpretability audits, agent monitoring, and weight inspections",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Emergency Sovereign Compute Mobilisation",
+      "category": 4,
+      "cost": 3,
+      "start": 8,
+      "finish": 10,
+      "description": "A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **in flight**",
+      "finished": false,
+      "status": "new"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Municipal Resilience Backchannel Integration",
+  "priority": "Emergency Sovereign Compute Mobilisation",
+  "commitment": null,
+  "prev_node": "turn-07-P12",
+  "next_node": "turn-09-P12",
+  "next_choice": null,
+  "alternatives": {}
+}

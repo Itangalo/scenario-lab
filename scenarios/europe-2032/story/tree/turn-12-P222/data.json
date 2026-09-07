@@ -1,0 +1,85 @@
+{
+  "node": "turn-12-P222",
+  "turn": 12,
+  "period": "H1 2032",
+  "block": "P222",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-150741",
+    "seed": 7614284192587186088,
+    "turn_dir": "runs/run-20260907-150741/turn-12",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P22/sample-15.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 76.0,
+      "previous": 75.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 57.0,
+      "previous": 56.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 2.0,
+      "previous": 5.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 47.0,
+      "previous": 48.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 19.0,
+      "previous": 21.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 5.0,
+      "previous": 7.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 28.0,
+      "previous": 28.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-11-P222",
+  "next_node": "turn-13-P222",
+  "next_choice": null,
+  "alternatives": {}
+}

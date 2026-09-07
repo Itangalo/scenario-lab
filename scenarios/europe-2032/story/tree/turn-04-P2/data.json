@@ -1,0 +1,114 @@
+{
+  "node": "turn-04-P2",
+  "turn": 4,
+  "period": "H1 2028",
+  "block": "P2",
+  "arm": "P",
+  "stage": 1,
+  "provenance": {
+    "run": "run-20260904-233821",
+    "seed": 6426272571836687839,
+    "turn_dir": "runs/run-20260904-233821/turn-04",
+    "pinned_turn": null,
+    "option_file": "turn-01/option-02-2.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 60.0,
+      "previous": 57.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 46.0,
+      "previous": 44.5,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 22.0,
+      "previous": 29.0,
+      "delta": -7.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 37.0,
+      "previous": 38.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "previous": 18.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 25.0,
+      "previous": 34.0,
+      "delta": -9.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 25.0,
+      "previous": 30.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "campaign_security_hawk",
+      "title": "Security Hawks Set the Terms",
+      "description": "Both campaigns converge on the position that the United States must win, that the lead is fragile, and that anything shared with anyone is a lead surrendered. Arguments for restraint are recast as arguments for losing.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "safety_breakthrough",
+      "title": "Assurance Breakthrough",
+      "description": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for. It is adopted quickly, because the laboratories want it too.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-03-P2",
+  "next_node": "turn-05-P2",
+  "next_choice": null,
+  "alternatives": {}
+}

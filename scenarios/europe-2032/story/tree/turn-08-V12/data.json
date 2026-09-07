@@ -1,0 +1,128 @@
+{
+  "node": "turn-08-V12",
+  "turn": 8,
+  "period": "H1 2030",
+  "block": "V12",
+  "arm": "V",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-140300",
+    "seed": 748695728457550772,
+    "turn_dir": "runs/run-20260906-140300/turn-08",
+    "pinned_turn": 6,
+    "option_file": "pool-06-V1/sample-01.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 66.0,
+      "previous": 64.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 53.0,
+      "previous": 52.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 11.0,
+      "previous": 23.0,
+      "delta": -12.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 46.0,
+      "previous": 47.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 30.0,
+      "previous": 25.0,
+      "delta": 5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 44.0,
+      "previous": 45.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 32.0,
+      "previous": 32.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Surface",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_neuromorphic_breakthrough",
+      "title": "emergent_neuromorphic_breakthrough",
+      "description": "A joint academic-industrial consortium in the EU unexpectedly demonstrates a new class of energy-efficient neuromorphic chips capable of running models at 55.0 capability on-device, bypassing cloud dependency. The breakthrough emerges from repurposed sensor research and leverages EU-controlled materials, sparking interest in sovereign edge AI. While not matching frontier performance, it enables resilient, offline-capable systems for critical infrastructure, and shifts investment attention toward distributed compute architectures.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Emergency Compute Assurance Initiative",
+      "category": 4,
+      "cost": 2,
+      "start": 7,
+      "finish": 8,
+      "description": "Launch an emergency programme to secure and verify the integrity of existing and near-term EU-accessible compute clusters, ensuring they remain under enforceable jurisdiction and resistant to external coercion or sabotage in light of the Taiwan blockade",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Critical System Audit and Disclosure Directive",
+      "category": 2,
+      "cost": 2,
+      "start": 7,
+      "finish": 9,
+      "description": "Mandate public reporting of AI use in essential services and require independent audits where automated systems influence operational integrity, with findings made available to regulators and, selectively, to the public",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Edge Sovereignty Acceleration Programme",
+  "priority": "Edge Sovereignty Acceleration Programme",
+  "commitment": null,
+  "prev_node": "turn-07-V12",
+  "next_node": "turn-09-V12",
+  "next_choice": null,
+  "alternatives": {}
+}

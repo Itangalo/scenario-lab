@@ -1,0 +1,128 @@
+{
+  "node": "turn-02-V1",
+  "turn": 2,
+  "period": "H1 2027",
+  "block": "V1",
+  "arm": "V",
+  "stage": 1,
+  "provenance": {
+    "run": "run-20260904-230752",
+    "seed": 10624122088920592955,
+    "turn_dir": "runs/run-20260904-230752/turn-02",
+    "pinned_turn": null,
+    "option_file": "turn-01/option-02-1.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 55.5,
+      "previous": 54.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 44.0,
+      "previous": 42.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 27.0,
+      "previous": 32.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 40.0,
+      "previous": 37.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 22.0,
+      "previous": 22.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 42.0,
+      "previous": 45.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 37.0,
+      "previous": 42.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "ai_investment_collapse",
+      "title": "AI Investment Collapse",
+      "description": "Capital flees the sector. Valuations reset hard, announced build-out is cancelled rather than delayed, and several of the arrangements European compute was depending on evaporate with it. What the frontier laboratories can afford to train shrinks for the first time.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "openweight_frontier_release",
+      "title": "Open Weights Reach the Frontier",
+      "description": "An open-weight release lands within months of the closed frontier rather than a year. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Emergency Sovereign Compute Directive",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 3,
+      "description": "A binding legal instrument to reserve 30% of all frontier-class compute capacity in the EU for state-critical and public-interest use, effective on deployment",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 6,
+      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Critical Infrastructure Resilience Sprint",
+  "priority": "Critical Infrastructure Resilience Sprint",
+  "commitment": null,
+  "prev_node": "option-02-1",
+  "next_node": "turn-03-V1",
+  "next_choice": null,
+  "alternatives": {}
+}

@@ -1,0 +1,114 @@
+{
+  "node": "turn-08-A22",
+  "turn": 8,
+  "period": "H1 2030",
+  "block": "A22",
+  "arm": "A",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-133612",
+    "seed": 11779175910392283388,
+    "turn_dir": "runs/run-20260906-133612/turn-08",
+    "pinned_turn": 6,
+    "option_file": "pool-06-A2/sample-07.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 77.0,
+      "previous": 73.0,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 61.0,
+      "previous": 59.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 1.0,
+      "previous": 14.0,
+      "delta": -13.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 44.0,
+      "previous": 43.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "previous": 18.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 8.0,
+      "previous": 12.0,
+      "delta": -4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 20.0,
+      "previous": 25.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "bio_incident",
+      "title": "Biological Incident",
+      "description": "A real biological incident with model involvement: a deliberate release or a laboratory escape involving a designed or modified agent. Casualties are real, containment runs for weeks, and every argument about AI risk in every jurisdiction is reset by it.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "taiwan_blockade",
+      "title": "Taiwan Blockade",
+      "description": "A quarantine or blockade halts advanced semiconductor exports. Compute supply for everyone outside China's domestic chain is disrupted for years, every AI policy question becomes a security question overnight, and the Union's upstream position in the supply chain becomes the most valuable thing it holds and the most dangerous thing to hold.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_european_ai_commons",
+      "title": "emergent_european_ai_commons",
+      "description": "A coordinated effort among EU-aligned research institutions and public labs begins pooling open-weight models, evaluation frameworks, and defensive AI tooling into a shared, sovereign European AI commons. The initiative emerges in response to repeated access denials and audit failures, and gains momentum as member states quietly redirect decommissioned hardware. It is not state-run but receives tacit support from national science agencies.",
+      "emergent": true,
+      "pinned": false
+    },
+    {
+      "id": "eu_frontier_access_denied",
+      "title": "Frontier Access Denied",
+      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-07-A22",
+  "next_node": "turn-09-A22",
+  "next_choice": null,
+  "alternatives": {}
+}

@@ -1,0 +1,107 @@
+{
+  "node": "turn-11-V211",
+  "turn": 11,
+  "period": "H2 2031",
+  "block": "V211",
+  "arm": "V",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-125532",
+    "seed": 9945960353475148968,
+    "turn_dir": "runs/run-20260907-125532/turn-11",
+    "pinned_turn": 10,
+    "option_file": "pool-10-V21/sample-06.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 69.5,
+      "previous": 68.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 58.5,
+      "previous": 57.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 19.0,
+      "previous": 24.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 32.0,
+      "previous": 34.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 14.0,
+      "previous": 16.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 19.0,
+      "previous": 19.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 9.0,
+      "previous": 14.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "taiwan_blockade",
+      "title": "Taiwan Blockade",
+      "description": "A quarantine or blockade halts advanced semiconductor exports. Compute supply for everyone outside China's domestic chain is disrupted for years, every AI policy question becomes a security question overnight, and the Union's upstream position in the supply chain becomes the most valuable thing it holds and the most dangerous thing to hold.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "verification_widens",
+      "title": "Verification Frontier Widens",
+      "description": "A domain that was assumed to need a human to say whether the answer was any good turns out to admit a cheap automatic check – contract review, clinical coding, structural engineering, parts of law. Capability in that domain improves sharply within months of the check existing, and the argument that progress is confined to code and mathematics loses a piece of its territory.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": null,
+  "priority": null,
+  "commitment": null,
+  "prev_node": "turn-10-V211",
+  "next_node": "turn-12-V211",
+  "next_choice": null,
+  "alternatives": {}
+}

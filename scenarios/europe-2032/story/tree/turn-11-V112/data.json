@@ -1,0 +1,125 @@
+{
+  "node": "turn-11-V112",
+  "turn": 11,
+  "period": "H2 2031",
+  "block": "V112",
+  "arm": "V",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-104144",
+    "seed": 3444883120207501860,
+    "turn_dir": "runs/run-20260907-104144/turn-11",
+    "pinned_turn": 10,
+    "option_file": "pool-10-V11/sample-07.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 72.0,
+      "previous": 70.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 57.0,
+      "previous": 55.5,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 8.0,
+      "previous": 16.0,
+      "delta": -8.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 64.0,
+      "previous": 61.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 18.0,
+      "previous": 21.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 22.0,
+      "previous": 28.0,
+      "delta": -6.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 25.0,
+      "previous": 32.0,
+      "delta": -7.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "eu_frontier_access_denied",
+      "title": "Frontier Access Denied",
+      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "backlash_physical",
+      "title": "Backlash Turns Physical",
+      "description": "Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "middle_power_coalition",
+      "title": "Middle Powers Coordinate",
+      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Loss-of-Control Containment Framework",
+      "category": 6,
+      "cost": 2,
+      "start": 10,
+      "finish": 12,
+      "description": "Establish a binding, cross-agency protocol for immediate detection, isolation and public communication in the event of unsanctioned agentic action, triggered by the first confirmed loss_of_control_incident with real-world consequences",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Secure Access Compact with Middle Powers",
+  "priority": "Secure Access Compact with Middle Powers",
+  "commitment": null,
+  "prev_node": "turn-10-V112",
+  "next_node": "turn-12-V112",
+  "next_choice": null,
+  "alternatives": {}
+}

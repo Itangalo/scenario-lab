@@ -1,0 +1,100 @@
+{
+  "node": "turn-07-A21",
+  "turn": 7,
+  "period": "H2 2029",
+  "block": "A21",
+  "arm": "A",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-132556",
+    "seed": 10383888383441182402,
+    "turn_dir": "runs/run-20260906-132556/turn-07",
+    "pinned_turn": 6,
+    "option_file": "pool-06-A2/sample-21.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 74.5,
+      "previous": 70.5,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 61.0,
+      "previous": 57.5,
+      "delta": 3.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 17.0,
+      "previous": 17.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 49.0,
+      "previous": 47.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 16.0,
+      "previous": 14.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 3.0,
+      "previous": 3.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 32.0,
+      "previous": 30.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "emergent_municipal_oversight_network",
+      "title": "emergent_municipal_oversight_network",
+      "description": "A network of municipal oversight bodies independently coordinates to audit AI systems in public services, sharing findings and setting de facto standards. This grassroots institutional reaction emerges in response to the Institutional Integrity Audit and growing public distrust, creating a bottom-up check on AI use in governance.",
+      "emergent": true,
+      "pinned": false
+    },
+    {
+      "id": "emergent_efficiency_breakthrough",
+      "title": "emergent_efficiency_breakthrough",
+      "description": "A breakthrough in energy-efficient inference allows mid-tier data centres to run models near the open frontier using novel sparse architectures and dynamic pruning. This widens access across the EU's research and public sectors, accelerating adoption without requiring frontier-scale compute.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-06-A21",
+  "next_node": "turn-08-A21",
+  "next_choice": null,
+  "alternatives": {}
+}

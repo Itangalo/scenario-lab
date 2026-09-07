@@ -1,0 +1,114 @@
+{
+  "node": "turn-09-A12",
+  "turn": 9,
+  "period": "H2 2030",
+  "block": "A12",
+  "arm": "A",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-131531",
+    "seed": 9928306233343363724,
+    "turn_dir": "runs/run-20260906-131531/turn-09",
+    "pinned_turn": 6,
+    "option_file": "pool-06-A1/sample-03.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 90.0,
+      "previous": 88.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 59.0,
+      "previous": 57.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "previous": 0.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 48.0,
+      "previous": 48.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 24.0,
+      "previous": 24.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 8.0,
+      "previous": 12.0,
+      "delta": -4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 27.0,
+      "previous": 27.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "loss_of_control_incident",
+      "title": "Loss-of-Control Incident",
+      "description": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards and disputed.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_open_bioscience_breakthrough",
+      "title": "emergent_open_bioscience_breakthrough",
+      "description": "The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Open Science Resilience Initiative",
+      "category": 5,
+      "cost": 3,
+      "start": 9,
+      "finish": 12,
+      "description": "Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — in flight",
+      "finished": false,
+      "status": "new"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": null,
+  "priority": "Open Science Resilience Initiative",
+  "commitment": null,
+  "prev_node": "turn-08-A12",
+  "next_node": null,
+  "next_choice": [
+    "option-10-A121",
+    "option-10-A122"
+  ],
+  "alternatives": {}
+}

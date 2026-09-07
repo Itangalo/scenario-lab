@@ -1,0 +1,25 @@
+{
+  "node": "option-10-A122",
+  "choice_turn": 10,
+  "after_block": "A12",
+  "leads_to_block": [
+    "A122"
+  ],
+  "source": "pool-10-A12/sample-01.md",
+  "pool": "pool-10-A12",
+  "draws": 20,
+  "split": "directed",
+  "split_note": "No honest split at N=20 (18/20 share the priority). Directed pair on Johan's capital-mending template; the branch has safety 0.0 and capital 8.0 and no draw targets safety.",
+  "stance": "consolidate and add",
+  "standing": "cluster pick",
+  "support": "cluster 01/04/06/08",
+  "measure": "Secure foundational resilience through joint threat response integration",
+  "category": 6,
+  "finishes_turn": 11,
+  "commitment": null,
+  "prev_node": "turn-09-A12",
+  "next_node": [
+    "turn-10-A122"
+  ],
+  "alternatives": {}
+}

@@ -1,0 +1,141 @@
+{
+  "node": "turn-06-A11",
+  "turn": 6,
+  "period": "H1 2029",
+  "block": "A11",
+  "arm": "A",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-114440",
+    "seed": 11808683684539922732,
+    "turn_dir": "runs/run-20260906-114440/turn-06",
+    "pinned_turn": 6,
+    "option_file": "pool-06-A1/sample-06.md",
+    "path_rep": 2,
+    "promotion_reason": "rep 1 replaced: sentiment trajectory implausible, rule-7 incident penalties skipped"
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 77.0,
+      "previous": 72.0,
+      "delta": 5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 56.0,
+      "previous": 54.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 2.0,
+      "previous": 14.0,
+      "delta": -12.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 42.0,
+      "previous": 39.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 15.0,
+      "previous": 16.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 8.0,
+      "previous": 11.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 37.0,
+      "previous": 34.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "emergent_biosecurity_leak",
+      "title": "emergent_biosecurity_leak",
+      "description": "A draft internal assessment from a leading European biosecurity lab leaks, revealing that the pathogen design from the recent genome model incident could be reconstructed and tested with less than 100,000 EUR and moderate technical skill. The document, marked 'Not for Public Release,' triggers panic in closed policy channels and forces emergency meetings, though it has not yet reached public media.",
+      "emergent": true,
+      "pinned": true
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 7,
+      "description": "€200bn fund for four to five sites",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 6,
+      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Resilience Surge Protocol",
+      "category": 6,
+      "cost": 3,
+      "start": 5,
+      "finish": 7,
+      "description": "Launch an emergency programme to harden critical infrastructure and social systems against AI-enabled disruption, beginning with cyber defences, biosecurity, and labour transition",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "European AI Emergency Response Corps",
+      "category": 6,
+      "cost": 3,
+      "start": 6,
+      "finish": 8,
+      "description": "Stand up a standing, cross-border operational unit with authority to intervene in AI-driven crises affecting critical infrastructure, with binding technical powers and direct access to sovereign compute",
+      "finished": false,
+      "status": "new"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "BioShield Rapid Detection Network",
+  "priority": "European AI Emergency Response Corps",
+  "commitment": null,
+  "prev_node": "option-06-A11",
+  "next_node": "turn-07-A11",
+  "next_choice": null,
+  "alternatives": {}
+}

@@ -1,0 +1,111 @@
+{
+  "node": "turn-13-V221",
+  "turn": 13,
+  "period": "H2 2032",
+  "block": "V221",
+  "arm": "V",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-131344",
+    "seed": 1672083095232526666,
+    "turn_dir": "runs/run-20260907-131344/turn-13",
+    "pinned_turn": 10,
+    "option_file": "pool-10-V22/sample-08.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 72.5,
+      "previous": 71.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 61.0,
+      "previous": 59.5,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 8.0,
+      "previous": 8.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 34.0,
+      "previous": 35.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 3.0,
+      "previous": 4.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "previous": 0.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 2.0,
+      "previous": 2.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "emergent_middle_power_alignment",
+      "title": "emergent_middle_power_alignment",
+      "description": "A coalition of European member states, alarmed by repeated denials of frontier access and semiconductor coercion, begins informal coordination with Japan and South Korea to create a mutual access pact for AI development resources and secure supply-chain nodes. The move is framed as resilience-building but signals a shift toward strategic autonomy from U.S. tech policy. It gains traction due to the EU's upstream leverage in lithography and materials, even if sovereignty remains low.",
+      "emergent": true,
+      "pinned": false
+    },
+    {
+      "id": "backlash_physical",
+      "title": "Backlash Turns Physical",
+      "description": "Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Mandate AI-Resilient Critical Infrastructure Retrofit",
+      "category": 6,
+      "cost": 3,
+      "start": 13,
+      "finish": 18,
+      "description": "Require all operators of essential services to complete a certified upgrade of legacy systems to AI-resilient standards by turn 18, including automated patch deployment, runtime anomaly detection, and fallback protocols — **in flight**",
+      "finished": false,
+      "status": "new"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": null,
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-12-V221",
+  "next_node": null,
+  "next_choice": null,
+  "alternatives": {}
+}

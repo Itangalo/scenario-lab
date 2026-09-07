@@ -1,0 +1,111 @@
+{
+  "node": "turn-12-V221",
+  "turn": 12,
+  "period": "H1 2032",
+  "block": "V221",
+  "arm": "V",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-131344",
+    "seed": 1672083095232526666,
+    "turn_dir": "runs/run-20260907-131344/turn-12",
+    "pinned_turn": 10,
+    "option_file": "pool-10-V22/sample-08.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 71.0,
+      "previous": 69.5,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 59.5,
+      "previous": 58.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 8.0,
+      "previous": 20.0,
+      "delta": -12.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 35.0,
+      "previous": 36.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 4.0,
+      "previous": 6.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "previous": 0.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 2.0,
+      "previous": 7.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "automated_decision_scandal",
+      "title": "Automated Decision Scandal",
+      "description": "An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 6's internal-origin clause applies in full.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Establish EU Public Trust Corps for AI Incident Response and Transparency",
+      "category": 9,
+      "cost": 3,
+      "start": 9,
+      "finish": 12,
+      "description": "Create a civilian technical corps under the European Commission, staffed with red-team engineers, crisis communicators, and regional liaison officers, to lead public-facing incident response, conduct live transparency drills, and operate a 24/7 AI incident dashboard with verified threat status, system outages, and mitigation progress",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-11-V221",
+  "next_node": "turn-13-V221",
+  "next_choice": null,
+  "alternatives": {}
+}

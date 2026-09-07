@@ -1,0 +1,93 @@
+{
+  "node": "turn-10-A211",
+  "turn": 10,
+  "period": "H1 2031",
+  "block": "A211",
+  "arm": "A",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-103254",
+    "seed": 2320793946035680927,
+    "turn_dir": "runs/run-20260907-103254/turn-10",
+    "pinned_turn": 10,
+    "option_file": "pool-10-A21/sample-08.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 85.0,
+      "previous": 81.0,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 71.0,
+      "previous": 67.0,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 2.0,
+      "previous": 7.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 52.0,
+      "previous": 50.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 12.0,
+      "previous": 14.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "previous": 2.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 25.0,
+      "previous": 28.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": true
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": null,
+  "priority": null,
+  "commitment": null,
+  "prev_node": "option-10-A211",
+  "next_node": "turn-11-A211",
+  "next_choice": null,
+  "alternatives": {}
+}

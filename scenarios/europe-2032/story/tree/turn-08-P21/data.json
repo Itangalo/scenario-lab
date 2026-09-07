@@ -1,0 +1,107 @@
+{
+  "node": "turn-08-P21",
+  "turn": 8,
+  "period": "H1 2030",
+  "block": "P21",
+  "arm": "P",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-150640",
+    "seed": 4883995632139778391,
+    "turn_dir": "runs/run-20260906-150640/turn-08",
+    "pinned_turn": 6,
+    "option_file": "pool-06-P2/sample-14.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 68.0,
+      "previous": 67.5,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 53.0,
+      "previous": 53.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 26.0,
+      "previous": 28.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 42.0,
+      "previous": 41.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 10.0,
+      "previous": 12.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 10.0,
+      "previous": 14.0,
+      "delta": -4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 22.0,
+      "previous": 24.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "ai_investment_collapse",
+      "title": "AI Investment Collapse",
+      "description": "Capital flees the sector. Valuations reset hard, announced build-out is cancelled rather than delayed, and several of the arrangements European compute was depending on evaporate with it. What the frontier laboratories can afford to train shrinks for the first time.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_circuit_tracing_leak",
+      "title": "emergent_circuit_tracing_leak",
+      "description": "Details of the EAAD's promising circuit-tracing tool, intended for internal audit use, are leaked to a public research repository. The release triggers a global race to adapt and weaponize the technique, with both defensive applications and offensive countermeasures emerging within weeks. The EU faces a dilemma: reclaim control or double down on open assurance as a strategic standard.",
+      "emergent": true,
+      "pinned": false
+    },
+    {
+      "id": "openweight_frontier_release",
+      "title": "Open Weights Reach the Frontier",
+      "description": "An open-weight release lands within months of the closed frontier rather than a year. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-07-P21",
+  "next_node": "turn-09-P21",
+  "next_choice": null,
+  "alternatives": {}
+}

@@ -1,0 +1,114 @@
+{
+  "node": "turn-04-A2",
+  "turn": 4,
+  "period": "H1 2028",
+  "block": "A2",
+  "arm": "A",
+  "stage": 1,
+  "provenance": {
+    "run": "run-20260904-225530",
+    "seed": 1756575261759029078,
+    "turn_dir": "runs/run-20260904-225530/turn-04",
+    "pinned_turn": null,
+    "option_file": "turn-01/option-02-2.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 63.5,
+      "previous": 60.0,
+      "delta": 3.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 50.5,
+      "previous": 47.5,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 27.0,
+      "previous": 34.0,
+      "delta": -7.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 42.0,
+      "previous": 42.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 19.0,
+      "previous": 20.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 17.0,
+      "previous": 30.0,
+      "delta": -13.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 27.0,
+      "previous": 32.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "verification_widens",
+      "title": "Verification Frontier Widens",
+      "description": "A domain that was assumed to need a human to say whether the answer was any good turns out to admit a cheap automatic check – contract review, clinical coding, structural engineering, parts of law. Capability in that domain improves sharply within months of the check existing, and the argument that progress is confined to code and mathematics loses a piece of its territory.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "opaque_reasoning",
+      "title": "Reasoning Stops Being Legible",
+      "description": "The leading systems stop producing intermediate reasoning a human can read, because the representations that work best are not words. Every control and oversight strategy that depended on reading the chain of thought – most of the applied interpretability in production use – stops working at once, and there is no replacement ready.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "election_annulled",
+      "title": "An Election Is Voided",
+      "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-03-A2",
+  "next_node": "turn-05-A2",
+  "next_choice": null,
+  "alternatives": {}
+}

@@ -1,0 +1,107 @@
+{
+  "node": "turn-11-P221",
+  "turn": 11,
+  "period": "H2 2031",
+  "block": "P221",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-145136",
+    "seed": 5110626522058933561,
+    "turn_dir": "runs/run-20260907-145136/turn-11",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P22/sample-20.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 75.0,
+      "previous": 75.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 58.0,
+      "previous": 58.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 12.0,
+      "previous": 12.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 57.0,
+      "previous": 53.0,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 22.0,
+      "previous": 22.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 1.0,
+      "previous": 0.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 24.0,
+      "previous": 22.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "joint_threat_response",
+      "title": "Joint Threat Response",
+      "description": "States hit by the same class of incident pool attribution, intelligence and response: a joint cyber command with real-time telemetry sharing that the Union is invited into, or a biosurveillance pact with binding sample-sharing and a standing investigation mandate. The Union gains protection it could not build alone, and a seat at tables it was not sitting at. It moves `resilience` on the terms of metric rule 4.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "capability_plateau_evidence",
+      "title": "Evidence of a Bending Curve",
+      "description": "A major release underdelivers against its own briefing, and – the stronger signal – the price of top-tier capability falls sharply rather than staying flat, which is what happens when the frontier stops moving and last year's ceiling becomes this year's commodity. It is disputed at once, and the dispute is not resolvable from outside the laboratories.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-10-P221",
+  "next_node": "turn-12-P221",
+  "next_choice": null,
+  "alternatives": {}
+}

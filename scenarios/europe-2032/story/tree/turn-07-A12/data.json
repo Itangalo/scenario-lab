@@ -1,0 +1,159 @@
+{
+  "node": "turn-07-A12",
+  "turn": 7,
+  "period": "H2 2029",
+  "block": "A12",
+  "arm": "A",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-131531",
+    "seed": 9928306233343363724,
+    "turn_dir": "runs/run-20260906-131531/turn-07",
+    "pinned_turn": 6,
+    "option_file": "pool-06-A1/sample-03.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 84.0,
+      "previous": 78.0,
+      "delta": 6.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 57.0,
+      "previous": 57.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "previous": 1.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 45.0,
+      "previous": 39.0,
+      "delta": 6.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 20.0,
+      "previous": 15.0,
+      "delta": 5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 9.0,
+      "previous": 6.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 24.0,
+      "previous": 29.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "taiwan_blockade",
+      "title": "Taiwan Blockade",
+      "description": "A quarantine or blockade halts advanced semiconductor exports. Compute supply for everyone outside China's domestic chain is disrupted for years, every AI policy question becomes a security question overnight, and the Union's upstream position in the supply chain becomes the most valuable thing it holds and the most dangerous thing to hold.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "export_control_escalation",
+      "title": "Export Control Escalation",
+      "description": "Chip and model export controls tighten again. Either allied buyers keep access on volume licences while everyone else is cut off, or the controls are drawn so tightly that allies are rationed alongside adversaries – decide which at the time from the standing American posture and from what the Union has built.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "election_annulled",
+      "title": "An Election Is Voided",
+      "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "backlash_physical",
+      "title": "Backlash Turns Physical",
+      "description": "Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "middle_power_coalition",
+      "title": "Middle Powers Coordinate",
+      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 7,
+      "description": "€200bn fund for four to five sites` — finished",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Resilience Surge Protocol",
+      "category": 6,
+      "cost": 3,
+      "start": 5,
+      "finish": 7,
+      "description": "Launch an emergency programme to harden critical infrastructure and social systems against AI-enabled disruption, beginning with cyber defences, biosecurity, and labour transition` — finished",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "European AI Emergency Response Corps",
+      "category": 6,
+      "cost": 3,
+      "start": 6,
+      "finish": 8,
+      "description": "Stand up a standing, cross-border operational unit with authority to intervene in AI-driven crises affecting critical infrastructure, with binding technical powers and direct access to sovereign compute",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Joint Access Negotiation with US and Taiwan under Middle-Power Coalition Framework",
+  "priority": "European AI Emergency Response Corps",
+  "commitment": null,
+  "prev_node": "turn-06-A12",
+  "next_node": "turn-08-A12",
+  "next_choice": null,
+  "alternatives": {}
+}

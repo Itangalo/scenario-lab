@@ -1,0 +1,107 @@
+{
+  "node": "turn-13-A212",
+  "turn": 13,
+  "period": "H2 2032",
+  "block": "A212",
+  "arm": "A",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-103345",
+    "seed": 401233447666978836,
+    "turn_dir": "runs/run-20260907-103345/turn-13",
+    "pinned_turn": 10,
+    "option_file": "pool-10-A21/sample-05.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 95.0,
+      "previous": 92.5,
+      "delta": 2.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 78.0,
+      "previous": 75.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 15.0,
+      "previous": 15.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 55.0,
+      "previous": 55.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 7.0,
+      "previous": 10.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 5.0,
+      "previous": 5.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 25.0,
+      "previous": 30.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Surface",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "labour_displacement",
+      "title": "Labour Displacement Wave",
+      "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-12-A212",
+  "next_node": null,
+  "next_choice": null,
+  "alternatives": {}
+}

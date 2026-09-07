@@ -1,0 +1,124 @@
+{
+  "node": "turn-09-V12",
+  "turn": 9,
+  "period": "H2 2030",
+  "block": "V12",
+  "arm": "V",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-140300",
+    "seed": 748695728457550772,
+    "turn_dir": "runs/run-20260906-140300/turn-09",
+    "pinned_turn": 6,
+    "option_file": "pool-06-V1/sample-01.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 67.5,
+      "previous": 66.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 55.0,
+      "previous": 53.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 8.0,
+      "previous": 11.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 44.0,
+      "previous": 46.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 31.0,
+      "previous": 30.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 43.0,
+      "previous": 44.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 27.0,
+      "previous": 32.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Surface",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Critical System Audit and Disclosure Directive",
+      "category": 2,
+      "cost": 2,
+      "start": 7,
+      "finish": 9,
+      "description": "Mandate public reporting of AI use in essential services and require independent audits where automated systems influence operational integrity, with findings made available to regulators and, selectively, to the public",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Edge Sovereignty Acceleration Programme",
+      "category": 4,
+      "cost": 3,
+      "start": 8,
+      "finish": 11,
+      "description": "Launch a coordinated EU-wide effort to deploy neuromorphic edge AI systems in critical infrastructure, leveraging the emergent breakthrough to harden essential services against cloud dependency and remote compromise",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Autonomous System Boundary Trials",
+  "priority": "Autonomous System Boundary Trials",
+  "commitment": null,
+  "prev_node": "turn-08-V12",
+  "next_node": null,
+  "next_choice": [
+    "option-10-V121",
+    "option-10-V122"
+  ],
+  "alternatives": {}
+}

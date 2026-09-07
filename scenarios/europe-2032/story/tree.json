@@ -968,11 +968,15 @@
       "pool": "turn-01/pool-20260904",
       "draws": 30,
       "split": "emergent",
-      "note": "Straight picks from the rebuilt 30-draw pool (cat4 12 / cat5 10 / cat1 5 / cat3 2 / cat6 1). No synthesis.",
+      "note": "Straight picks from the rebuilt 30-draw pool (cat4 12 / cat5 10 / cat1 5 / cat3 2 / cat6 1). No synthesis. The turn-1 resolution differs per arm (ai_capability 54.5/54.0/53.5), so it is not shown before the choice; the opening shows the scenario's start values and the reader sees the resolution at turn 2.",
       "options": [
         {
           "node": "option-02-1",
-          "leads_to_block": "1",
+          "leads_to_block": [
+            "A1",
+            "V1",
+            "P1"
+          ],
           "sample": "sample-17",
           "stance": "build",
           "standing": "plurality category",
@@ -983,7 +987,11 @@
         },
         {
           "node": "option-02-2",
-          "leads_to_block": "2",
+          "leads_to_block": [
+            "A2",
+            "V2",
+            "P2"
+          ],
           "sample": "sample-10",
           "stance": "know and constrain",
           "standing": "minority category",

@@ -1,0 +1,121 @@
+{
+  "node": "turn-10-P112",
+  "turn": 10,
+  "period": "H1 2031",
+  "block": "P112",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-134903-02",
+    "seed": 7152795250648295732,
+    "turn_dir": "runs/run-20260907-134903-02/turn-10",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P11/sample-08.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 62.5,
+      "previous": 62.0,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 51.375,
+      "previous": 50.75,
+      "delta": 0.62,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 19.0,
+      "previous": 19.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 41.0,
+      "previous": 42.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 35.0,
+      "previous": 36.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 14.0,
+      "previous": 19.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 35.0,
+      "previous": 35.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Surface",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "taiwan_tension_rise",
+      "title": "Taiwan Tension Rises",
+      "description": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**",
+      "emergent": false,
+      "pinned": true
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "AI Safety Emergency Investment",
+      "category": 5,
+      "cost": 3,
+      "start": 8,
+      "finish": 12,
+      "description": "A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **in flight**",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "EU Border for AI Systems",
+      "category": 3,
+      "cost": 3,
+      "start": 10,
+      "finish": 14,
+      "description": "Establish a legal and technical boundary at deployment: no AI system above capability 60.0 may operate in the EU without sovereign evaluation, runtime controllability, and continuous monitoring by EAAN` — **in flight**",
+      "finished": false,
+      "status": "new"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Accelerate EAAN Certification Nodes",
+  "priority": "EU Border for AI Systems",
+  "commitment": null,
+  "prev_node": "option-10-P112",
+  "next_node": "turn-11-P112",
+  "next_choice": null,
+  "alternatives": {}
+}

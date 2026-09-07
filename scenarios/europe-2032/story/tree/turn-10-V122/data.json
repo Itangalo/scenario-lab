@@ -1,0 +1,114 @@
+{
+  "node": "turn-10-V122",
+  "turn": 10,
+  "period": "H1 2031",
+  "block": "V122",
+  "arm": "V",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-124313-06",
+    "seed": 2293454113060807923,
+    "turn_dir": "runs/run-20260907-124313-06/turn-10",
+    "pinned_turn": 10,
+    "option_file": "pool-10-V12/sample-03.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 69.0,
+      "previous": 67.5,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 57.0,
+      "previous": 55.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 12.0,
+      "previous": 8.0,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 43.0,
+      "previous": 44.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 30.0,
+      "previous": 31.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 45.0,
+      "previous": 43.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 25.0,
+      "previous": 27.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "election_annulled",
+      "title": "An Election Is Voided",
+      "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.",
+      "emergent": false,
+      "pinned": true
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Edge Sovereignty Acceleration Programme",
+      "category": 4,
+      "cost": 3,
+      "start": 8,
+      "finish": 11,
+      "description": "Launch a coordinated EU-wide effort to deploy neuromorphic edge AI systems in critical infrastructure, leveraging the emergent breakthrough to harden essential services against cloud dependency and remote compromise",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Autonomous System Boundary Trials",
+      "category": 1,
+      "cost": 3,
+      "start": 10,
+      "finish": 12,
+      "description": "Launch a pilot programme to test and certify technical and procedural safeguards that prevent AI systems from operating beyond their intended scope, especially in cases where untrained reasoning or evasive behaviour has been observed",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "European Agency for AI Assurance and Control",
+  "priority": "European Agency for AI Assurance and Control",
+  "commitment": null,
+  "prev_node": "option-10-V122",
+  "next_node": "turn-11-V122",
+  "next_choice": null,
+  "alternatives": {}
+}

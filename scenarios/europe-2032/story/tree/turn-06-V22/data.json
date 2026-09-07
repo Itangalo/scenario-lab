@@ -1,0 +1,134 @@
+{
+  "node": "turn-06-V22",
+  "turn": 6,
+  "period": "H1 2029",
+  "block": "V22",
+  "arm": "V",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-142403",
+    "seed": 15801352484355903432,
+    "turn_dir": "runs/run-20260906-142403/turn-06",
+    "pinned_turn": 6,
+    "option_file": "pool-06-V2/sample-07.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 62.0,
+      "previous": 60.5,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 50.0,
+      "previous": 48.5,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 37.0,
+      "previous": 39.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 38.0,
+      "previous": 36.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 14.0,
+      "previous": 16.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 14.0,
+      "previous": 18.0,
+      "delta": -4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 22.0,
+      "previous": 24.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": true
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 7,
+      "description": "€200bn fund for four to five sites",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 6,
+      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Establish the European AI Assurance Directorate (EAAD)",
+      "category": 1,
+      "cost": 3,
+      "start": 1,
+      "finish": 5,
+      "description": "A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Secure Energy-Backed Compute Sovereignty",
+      "category": 4,
+      "cost": 3,
+      "start": 5,
+      "finish": 6,
+      "description": "Launch a binding EU-wide programme to co-develop sovereign AI infrastructure with national energy authorities, ensuring 5GW of dedicated low-carbon power for AI compute by turn 6, with physical and legal separation from commercial grids",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "option-06-V22",
+  "next_node": "turn-07-V22",
+  "next_choice": null,
+  "alternatives": {}
+}

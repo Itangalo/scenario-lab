@@ -1,0 +1,145 @@
+{
+  "node": "turn-02-V2",
+  "turn": 2,
+  "period": "H1 2027",
+  "block": "V2",
+  "arm": "V",
+  "stage": 1,
+  "provenance": {
+    "run": "run-20260904-223403",
+    "seed": 11571586715346023830,
+    "turn_dir": "runs/run-20260904-223403/turn-02",
+    "pinned_turn": null,
+    "option_file": "turn-01/option-02-2.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 56.0,
+      "previous": 54.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 44.0,
+      "previous": 42.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 28.0,
+      "previous": 33.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 36.0,
+      "previous": 38.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 21.0,
+      "previous": 21.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 38.0,
+      "previous": 43.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 37.0,
+      "previous": 42.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "taiwan_tension_rise",
+      "title": "Taiwan Tension Rises",
+      "description": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "eu_frontier_access_denied",
+      "title": "Frontier Access Denied",
+      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 7,
+      "description": "€200bn fund for four to five sites",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 6,
+      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Establish the European AI Assurance Directorate (EAAD)",
+      "category": 1,
+      "cost": 3,
+      "start": 1,
+      "finish": 5,
+      "description": "A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "option-02-2",
+  "next_node": "turn-03-V2",
+  "next_choice": null,
+  "alternatives": {}
+}

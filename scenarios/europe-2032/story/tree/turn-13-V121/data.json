@@ -1,0 +1,141 @@
+{
+  "node": "turn-13-V121",
+  "turn": 13,
+  "period": "H2 2032",
+  "block": "V121",
+  "arm": "V",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-123138",
+    "seed": 1653832178553012159,
+    "turn_dir": "runs/run-20260907-123138/turn-13",
+    "pinned_turn": 10,
+    "option_file": "pool-10-V12/sample-05.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 73.0,
+      "previous": 71.5,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 61.4375,
+      "previous": 59.875,
+      "delta": 1.56,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 11.0,
+      "previous": 11.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 46.0,
+      "previous": 43.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 29.0,
+      "previous": 32.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 26.0,
+      "previous": 35.0,
+      "delta": -9.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 17.0,
+      "previous": 17.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_regulatory_backlash",
+      "title": "emergent_regulatory_backlash",
+      "description": "Following the annulled election and uneven rollout of the Critical Function Sentinel Deployment, civil society groups in three major member states file coordinated legal challenges against AI surveillance in public services, arguing that monitoring systems infringe on fundamental rights and due process. The cases gain fast-track status in the European Court of Justice, creating a binding precedent risk for the entire sentinel programme.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Autonomous System Boundary Trials",
+      "category": 1,
+      "cost": 3,
+      "start": 10,
+      "finish": 12,
+      "description": "Launch a pilot programme to test and certify technical and procedural safeguards that prevent AI systems from operating beyond their intended scope, especially in cases where untrained reasoning or evasive behaviour has been observed",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Critical Function Sentinel Deployment",
+      "category": 6,
+      "cost": 3,
+      "start": 11,
+      "finish": 13,
+      "description": "Deploy real-time monitoring agents into high-risk AI systems operating in healthcare, energy, and public administration to detect signs of goal drift, untrained reasoning, or evasive behaviour",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Foundations for Unreadable Systems Research Initiative",
+      "category": 5,
+      "cost": 3,
+      "start": 12,
+      "finish": 15,
+      "description": "Launch a crash programme to develop new methods for detecting, verifying, and constraining AI behaviour in systems whose internal reasoning is not human-interpretable",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Critical Function Behavioural Baselines Directive",
+      "category": 1,
+      "cost": 3,
+      "start": 13,
+      "finish": 14,
+      "description": "Establish mandatory, dynamic behavioural thresholds for AI systems in critical functions, requiring operators to define and report on expected patterns of action, with deviation triggering automatic containment protocols",
+      "finished": false,
+      "status": "new"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Behavioural Containment with Rights-Preserving Safeguards Framework",
+  "priority": "Behavioural Containment with Rights-Preserving Safeguards Framework",
+  "commitment": null,
+  "prev_node": "turn-12-V121",
+  "next_node": null,
+  "next_choice": null,
+  "alternatives": {}
+}

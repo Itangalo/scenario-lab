@@ -1,0 +1,114 @@
+{
+  "node": "turn-12-P212",
+  "turn": 12,
+  "period": "H1 2032",
+  "block": "P212",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-143821",
+    "seed": 13527330695453551559,
+    "turn_dir": "runs/run-20260907-143821/turn-12",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P21/sample-05.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 70.0,
+      "previous": 69.5,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 57.0,
+      "previous": 54.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 11.0,
+      "previous": 11.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 37.0,
+      "previous": 39.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 9.0,
+      "previous": 9.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "previous": 0.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 15.0,
+      "previous": 18.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "labour_displacement",
+      "title": "Labour Displacement Wave",
+      "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "export_control_escalation",
+      "title": "Export Control Escalation",
+      "description": "Chip and model export controls tighten again. Either allied buyers keep access on volume licences while everyone else is cut off, or the controls are drawn so tightly that allies are rationed alongside adversaries – decide which at the time from the standing American posture and from what the Union has built.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "supply_chain_coercion",
+      "title": "Coercion Over ASML",
+      "description": "Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers. The instrument is jurisdiction over American technology in the supply chain, and refusing it is not obviously survivable for the company. The Union's one chokepoint is being used, and not by the Union.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_industrial_sovereignty_consortium",
+      "title": "emergent_industrial_sovereignty_consortium",
+      "description": "A group of European mid-sized industrial firms, facing both automation disruption and exclusion from frontier AI, launches a shared sovereign AI consortium to co-develop and run tailored models on union-secured infrastructure. The initiative bypasses hyperscalers and is framed as economic self-defence. It gains momentum due to low political capital in Brussels and growing frustration with dependency.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-11-P212",
+  "next_node": "turn-13-P212",
+  "next_choice": null,
+  "alternatives": {}
+}

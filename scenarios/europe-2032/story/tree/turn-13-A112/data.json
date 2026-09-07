@@ -1,0 +1,121 @@
+{
+  "node": "turn-13-A112",
+  "turn": 13,
+  "period": "H2 2032",
+  "block": "A112",
+  "arm": "A",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-102707-04",
+    "seed": 13788335261043739097,
+    "turn_dir": "runs/run-20260907-102707-04/turn-13",
+    "pinned_turn": 10,
+    "option_file": "pool-10-A11/sample-07.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 95.0,
+      "previous": 95.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 71.5,
+      "previous": 71.5,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 6.0,
+      "previous": 6.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 53.0,
+      "previous": 53.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 11.0,
+      "previous": 13.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "previous": 0.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 14.0,
+      "previous": 14.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_municipal_sovereignty_network",
+      "title": "emergent_municipal_sovereignty_network",
+      "description": "A grassroots network of municipal AI observatories and defensive cooperatives emerges across mid-sized European cities, sharing threat intelligence, running local red teams, and refusing to route critical infrastructure through externally controlled models. While fragmented, it demonstrates functional autonomy and begins coordinating across borders outside formal EU channels.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "EU Bio-Risk Early Warning System",
+      "category": 6,
+      "cost": 3,
+      "start": 11,
+      "finish": 14,
+      "description": "A distributed network of AI-augmented biosurveillance nodes at major research institutions, ports, and clinical hubs, capable of detecting and flagging synthetic biology anomalies in real time",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Counter-Deception Rapid Response Corps",
+      "category": 5,
+      "cost": 3,
+      "start": 13,
+      "finish": 15,
+      "description": "Standing up a rapid-response unit within Europol and the Joint Research Centre to detect, attribute, and neutralise AI-driven disinformation and strategic deception in real time, now integrated with bio-risk anomaly tracking",
+      "finished": false,
+      "status": "new"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Sovereign Cognitive Continuity Protocol",
+  "priority": "EU Bio-Risk Early Warning System",
+  "commitment": null,
+  "prev_node": "turn-12-A112",
+  "next_node": null,
+  "next_choice": null,
+  "alternatives": {}
+}

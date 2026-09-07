@@ -1,0 +1,117 @@
+{
+  "node": "turn-05-V1",
+  "turn": 5,
+  "period": "H2 2028",
+  "block": "V1",
+  "arm": "V",
+  "stage": 1,
+  "provenance": {
+    "run": "run-20260904-230752",
+    "seed": 10624122088920592955,
+    "turn_dir": "runs/run-20260904-230752/turn-05",
+    "pinned_turn": null,
+    "option_file": "turn-01/option-02-1.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 61.0,
+      "previous": 59.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 48.0,
+      "previous": 46.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 23.0,
+      "previous": 22.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 45.0,
+      "previous": 42.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 24.0,
+      "previous": 25.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 40.0,
+      "previous": 39.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 34.0,
+      "previous": 32.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "election_retrenchment",
+      "title": "The 2028 US Presidential Election – Retrenchment",
+      "description": "The anti-AI backlash decides the election and the incoming administration turns inward. Data centre moratoriums, restrictions on AI in schools, courts and hiring, job guarantees and direct transfers funded by the sector, and an abrupt loss of appetite for anything that looks like helping the industry. American frontier progress slows for the first time for reasons that are neither compute nor capital. For the Union the pressure eases and the window for building its own position widens – but the partner it has been depending on is now less capable, less predictable and preoccupied, and whoever is second in the world gains ground while Washington argues with itself. Turn 5 settles only who won. Do not write any US_POSTURE line; metric rule 8 establishes the posture from turn 6 from the event record.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 6,
+      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Critical Infrastructure Resilience Sprint",
+      "category": 6,
+      "cost": 3,
+      "start": 5,
+      "finish": 6,
+      "description": "Launch a 12-month emergency hardening programme for energy, transport, and health systems against AI-driven cyberattacks, with mandatory audits, fallback protocols, and live red-teaming",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Systemic Integrity Watch",
+  "priority": "Critical Infrastructure Resilience Sprint",
+  "commitment": null,
+  "prev_node": "turn-04-V1",
+  "next_node": null,
+  "next_choice": [
+    "option-06-V11",
+    "option-06-V12"
+  ],
+  "alternatives": {}
+}

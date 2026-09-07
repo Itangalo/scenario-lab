@@ -1,0 +1,141 @@
+{
+  "node": "turn-07-P11",
+  "turn": 7,
+  "period": "H2 2029",
+  "block": "P11",
+  "arm": "P",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-144653-03",
+    "seed": 16477339009985396710,
+    "turn_dir": "runs/run-20260906-144653-03/turn-07",
+    "pinned_turn": 6,
+    "option_file": "pool-06-P1/sample-05.md",
+    "path_rep": 2,
+    "promotion_reason": "rep 1 replaced: openweight_capability frozen at 45.0 by GM inertia against rule 2 diffusion"
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 61.0,
+      "previous": 60.5,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 48.0,
+      "previous": 47.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 19.0,
+      "previous": 19.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 42.0,
+      "previous": 37.0,
+      "delta": 5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 37.0,
+      "previous": 32.0,
+      "delta": 5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 28.0,
+      "previous": 24.0,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 35.0,
+      "previous": 35.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "capability_plateau_evidence",
+      "title": "Evidence of a Bending Curve",
+      "description": "A major release underdelivers against its own briefing, and – the stronger signal – the price of top-tier capability falls sharply rather than staying flat, which is what happens when the frontier stops moving and last year's ceiling becomes this year's commodity. It is disputed at once, and the dispute is not resolvable from outside the laboratories.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "us_china_agreement",
+      "title": "Narrow Binding Agreement",
+      "description": "The two leading powers reach a limited but real agreement covering some class of AI risk – weights security, autonomous escalation, a class of biological design tools – with verification thin but not absent. Whether the Union is inside it, consulted about it, or informed of it afterwards depends on what it has built and whom it has coordinated with. This is the one thing in the world that slows `ai_capability`, on the terms of metric rule 2.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 7,
+      "description": "€200bn fund for four to five sites",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 6,
+      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "European Evaluation Shield",
+      "category": 5,
+      "cost": 3,
+      "start": 4,
+      "finish": 6,
+      "description": "A new public agency with legal authority to conduct independent, pre-deployment evaluations of any AI system above capability threshold 50.0, with power to require interpretability audits, agent monitoring, and weight inspections",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Secure European Access to Advanced Lithography (SEAL)",
+      "category": 4,
+      "cost": 3,
+      "start": 3,
+      "finish": 5,
+      "description": "A binding legal and financial framework to co-fund and operate an EU-controlled servicing corridor for mature-node ASML lithography tools, ensuring uninterrupted access to critical semiconductor infrastructure despite extraterritorial pressure",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Critical Infrastructure Cyber Shield",
+  "priority": "Critical Infrastructure Cyber Shield",
+  "commitment": null,
+  "prev_node": "turn-06-P11",
+  "next_node": "turn-08-P11",
+  "next_choice": null,
+  "alternatives": {}
+}

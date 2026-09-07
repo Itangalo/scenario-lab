@@ -1,0 +1,100 @@
+{
+  "node": "turn-10-P211",
+  "turn": 10,
+  "period": "H1 2031",
+  "block": "P211",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-142945",
+    "seed": 18332379151440853143,
+    "turn_dir": "runs/run-20260907-142945/turn-10",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P21/sample-02.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 68.5,
+      "previous": 68.5,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 53.0,
+      "previous": 53.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 11.0,
+      "previous": 23.0,
+      "delta": -12.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 40.0,
+      "previous": 40.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 10.0,
+      "previous": 10.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 5.0,
+      "previous": 6.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 15.0,
+      "previous": 18.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "capability_plateau_evidence",
+      "title": "Evidence of a Bending Curve",
+      "description": "A major release underdelivers against its own briefing, and – the stronger signal – the price of top-tier capability falls sharply rather than staying flat, which is what happens when the frontier stops moving and last year's ceiling becomes this year's commodity. It is disputed at once, and the dispute is not resolvable from outside the laboratories.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "opaque_reasoning",
+      "title": "Reasoning Stops Being Legible",
+      "description": "The leading systems stop producing intermediate reasoning a human can read, because the representations that work best are not words. Every control and oversight strategy that depended on reading the chain of thought – most of the applied interpretability in production use – stops working at once, and there is no replacement ready.",
+      "emergent": false,
+      "pinned": true
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "option-10-P211",
+  "next_node": "turn-11-P211",
+  "next_choice": null,
+  "alternatives": {}
+}

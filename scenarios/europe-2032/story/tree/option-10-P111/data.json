@@ -1,0 +1,25 @@
+{
+  "node": "option-10-P111",
+  "choice_turn": 10,
+  "after_block": "P11",
+  "leads_to_block": [
+    "P111"
+  ],
+  "source": "pool-10-P11/sample-04.md",
+  "pool": "pool-10-P11",
+  "draws": 20,
+  "split": "directed",
+  "split_note": "No honest split at N=20 (hold 15/20, priority unanimous 20/20). Directed pair on Johan's capital-mending template; the branch is strong except capital at 19.0.",
+  "stance": "hold",
+  "standing": "hold cluster",
+  "support": "15/20 hold",
+  "measure": null,
+  "category": null,
+  "finishes_turn": null,
+  "commitment": null,
+  "prev_node": "turn-09-P11",
+  "next_node": [
+    "turn-10-P111"
+  ],
+  "alternatives": {}
+}

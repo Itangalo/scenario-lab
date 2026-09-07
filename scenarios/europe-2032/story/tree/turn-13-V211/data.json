@@ -1,0 +1,93 @@
+{
+  "node": "turn-13-V211",
+  "turn": 13,
+  "period": "H2 2032",
+  "block": "V211",
+  "arm": "V",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-125532",
+    "seed": 9945960353475148968,
+    "turn_dir": "runs/run-20260907-125532/turn-13",
+    "pinned_turn": 10,
+    "option_file": "pool-10-V21/sample-06.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 72.5,
+      "previous": 71.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 59.0,
+      "previous": 58.5,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 18.0,
+      "previous": 18.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 31.0,
+      "previous": 31.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 10.0,
+      "previous": 11.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 15.0,
+      "previous": 16.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 9.0,
+      "previous": 9.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "openweight_frontier_release",
+      "title": "Open Weights Reach the Frontier",
+      "description": "An open-weight release lands within months of the closed frontier rather than a year. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Sovereign Core Hardening Protocol (Category: 6 (Preparedness and resilience), costs 3 per turn, started turn 13, finishes on turn 16):",
+  "priority": "Sovereign Core Hardening Protocol",
+  "commitment": null,
+  "prev_node": "turn-12-V211",
+  "next_node": null,
+  "next_choice": null,
+  "alternatives": {}
+}

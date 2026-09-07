@@ -1,0 +1,93 @@
+{
+  "node": "turn-02-A2",
+  "turn": 2,
+  "period": "H1 2027",
+  "block": "A2",
+  "arm": "A",
+  "stage": 1,
+  "provenance": {
+    "run": "run-20260904-225530",
+    "seed": 1756575261759029078,
+    "turn_dir": "runs/run-20260904-225530/turn-02",
+    "pinned_turn": null,
+    "option_file": "turn-01/option-02-2.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 57.5,
+      "previous": 55.0,
+      "delta": 2.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 45.0,
+      "previous": 43.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 31.0,
+      "previous": 34.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 40.0,
+      "previous": 38.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 21.0,
+      "previous": 22.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 39.0,
+      "previous": 45.0,
+      "delta": -6.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 40.0,
+      "previous": 42.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "ai_investment_collapse",
+      "title": "AI Investment Collapse",
+      "description": "Capital flees the sector. Valuations reset hard, announced build-out is cancelled rather than delayed, and several of the arrangements European compute was depending on evaporate with it. What the frontier laboratories can afford to train shrinks for the first time.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "option-02-2",
+  "next_node": "turn-03-A2",
+  "next_choice": null,
+  "alternatives": {}
+}

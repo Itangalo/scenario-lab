@@ -1,0 +1,96 @@
+{
+  "node": "turn-13-V212",
+  "turn": 13,
+  "period": "H2 2032",
+  "block": "V212",
+  "arm": "V",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-130534-01",
+    "seed": 1287095822265400421,
+    "turn_dir": "runs/run-20260907-130534-01/turn-13",
+    "pinned_turn": 10,
+    "option_file": "pool-10-V21/sample-10.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 72.5,
+      "previous": 71.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 60.0,
+      "previous": 60.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 10.0,
+      "previous": 10.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 29.0,
+      "previous": 29.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 9.0,
+      "previous": 10.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 12.0,
+      "previous": 3.0,
+      "delta": 9.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 14.0,
+      "previous": 14.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [],
+  "portfolio": [
+    {
+      "name": "Accelerate EU AI Safety Assurance Infrastructure",
+      "category": 5,
+      "cost": 3,
+      "start": 11,
+      "finish": 13,
+      "description": "Stand up an independent, real-time monitoring and intervention capability for high-risk AI systems operating within or affecting the EU, using sovereign compute and public technical capacity to enforce red lines",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": null,
+  "priority": "Accelerate EU AI Safety Assurance Infrastructure",
+  "commitment": null,
+  "prev_node": "turn-12-V212",
+  "next_node": null,
+  "next_choice": null,
+  "alternatives": {}
+}

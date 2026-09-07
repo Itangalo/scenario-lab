@@ -1,0 +1,25 @@
+{
+  "node": "option-10-P212",
+  "choice_turn": 10,
+  "after_block": "P21",
+  "leads_to_block": [
+    "P212"
+  ],
+  "source": "pool-10-P21/sample-05.md",
+  "pool": "pool-10-P21",
+  "draws": 10,
+  "split": "emergent",
+  "split_note": "Majority cluster against an honest singleton.",
+  "stance": "pause AI in public services",
+  "standing": "singleton minority",
+  "support": "1/10",
+  "measure": "Enact Emergency AI Governance Suspension in Public Services",
+  "category": 3,
+  "finishes_turn": 12,
+  "commitment": null,
+  "prev_node": "turn-09-P21",
+  "next_node": [
+    "turn-10-P212"
+  ],
+  "alternatives": {}
+}

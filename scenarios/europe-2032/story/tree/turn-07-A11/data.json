@@ -1,0 +1,152 @@
+{
+  "node": "turn-07-A11",
+  "turn": 7,
+  "period": "H2 2029",
+  "block": "A11",
+  "arm": "A",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-114440",
+    "seed": 11808683684539922732,
+    "turn_dir": "runs/run-20260906-114440/turn-07",
+    "pinned_turn": 6,
+    "option_file": "pool-06-A1/sample-06.md",
+    "path_rep": 2,
+    "promotion_reason": "rep 1 replaced: sentiment trajectory implausible, rule-7 incident penalties skipped"
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 79.0,
+      "previous": 77.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 57.0,
+      "previous": 56.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 5.0,
+      "previous": 2.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 44.0,
+      "previous": 42.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 19.0,
+      "previous": 15.0,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 9.0,
+      "previous": 8.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 32.0,
+      "previous": 37.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Surface",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "safety_breakthrough",
+      "title": "Assurance Breakthrough",
+      "description": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for. It is adopted quickly, because the laboratories want it too.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "automated_decision_scandal",
+      "title": "Automated Decision Scandal",
+      "description": "An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 6's internal-origin clause applies in full.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 7,
+      "description": "€200bn fund for four to five sites",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Resilience Surge Protocol",
+      "category": 6,
+      "cost": 3,
+      "start": 5,
+      "finish": 7,
+      "description": "Launch an emergency programme to harden critical infrastructure and social systems against AI-enabled disruption, beginning with cyber defences, biosecurity, and labour transition",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "European AI Emergency Response Corps",
+      "category": 6,
+      "cost": 3,
+      "start": 6,
+      "finish": 8,
+      "description": "Stand up a standing, cross-border operational unit with authority to intervene in AI-driven crises affecting critical infrastructure, with binding technical powers and direct access to sovereign compute",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Sovereign AI Sentinel Nodes",
+  "priority": "European AI Emergency Response Corps",
+  "commitment": null,
+  "prev_node": "turn-06-A11",
+  "next_node": "turn-08-A11",
+  "next_choice": null,
+  "alternatives": {}
+}

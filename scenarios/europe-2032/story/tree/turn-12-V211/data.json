@@ -1,0 +1,100 @@
+{
+  "node": "turn-12-V211",
+  "turn": 12,
+  "period": "H1 2032",
+  "block": "V211",
+  "arm": "V",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-125532",
+    "seed": 9945960353475148968,
+    "turn_dir": "runs/run-20260907-125532/turn-12",
+    "pinned_turn": 10,
+    "option_file": "pool-10-V21/sample-06.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 71.0,
+      "previous": 69.5,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 58.5,
+      "previous": 58.5,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 18.0,
+      "previous": 19.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 31.0,
+      "previous": 32.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 11.0,
+      "previous": 14.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 16.0,
+      "previous": 19.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 9.0,
+      "previous": 9.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_public_sector_employment_backlash",
+      "title": "emergent_public_sector_employment_backlash",
+      "description": "A coordinated campaign by public-sector unions and civil society groups across multiple member states begins to demand binding limits on AI use in public employment, citing uncontrolled job losses and lack of democratic oversight. The movement gains traction in national parliaments and the European Parliament, forcing a debate on AI-driven workforce transformation. It is distinct from physical backlash but feeds into it, and pressures the Commission to act.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Emergency Compute Lifeline (Category: 4 (Sovereignty and industrial capacity), costs 3 per turn, started turn 12, finishes on turn 15):",
+  "priority": "Emergency Compute Lifeline",
+  "commitment": null,
+  "prev_node": "turn-11-V211",
+  "next_node": "turn-13-V211",
+  "next_choice": null,
+  "alternatives": {}
+}

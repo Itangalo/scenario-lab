@@ -1,0 +1,131 @@
+{
+  "node": "turn-09-V21",
+  "turn": 9,
+  "period": "H2 2030",
+  "block": "V21",
+  "arm": "V",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-141232",
+    "seed": 10381783824970870000,
+    "turn_dir": "runs/run-20260906-141232/turn-09",
+    "pinned_turn": 6,
+    "option_file": "pool-06-V2/sample-14.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 66.5,
+      "previous": 65.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 56.0,
+      "previous": 55.5,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 27.0,
+      "previous": 32.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 33.0,
+      "previous": 34.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 14.0,
+      "previous": 12.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 15.0,
+      "previous": 18.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 14.0,
+      "previous": 14.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "middle_power_coalition",
+      "title": "Middle Powers Coordinate",
+      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Launch Sovereign AI Core Programme",
+      "category": 4,
+      "cost": 3,
+      "start": 7,
+      "finish": 9,
+      "description": "Establish a fully EU-operated, militarily hardened AI infrastructure stack—compute, energy, and control—hosting critical assurance, resilience, and governance functions under exclusive Union authority",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Form the Middle Power AI Coalition (MPAC)",
+      "category": 8,
+      "cost": 3,
+      "start": 9,
+      "finish": 10,
+      "description": "Establish a binding coordination framework among the EU and like-minded middle powers to align export controls, jointly negotiate compute access, and pool evaluation capacity—without ceding sovereignty—creating collective leverage over frontier development and deployment",
+      "finished": false,
+      "status": "new"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": null,
+  "priority": "Launch Sovereign AI Core Programme",
+  "commitment": null,
+  "prev_node": "turn-08-V21",
+  "next_node": null,
+  "next_choice": [
+    "option-10-V211",
+    "option-10-V212"
+  ],
+  "alternatives": {}
+}

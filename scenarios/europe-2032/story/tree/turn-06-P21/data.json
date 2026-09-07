@@ -1,0 +1,107 @@
+{
+  "node": "turn-06-P21",
+  "turn": 6,
+  "period": "H1 2029",
+  "block": "P21",
+  "arm": "P",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-150640",
+    "seed": 4883995632139778391,
+    "turn_dir": "runs/run-20260906-150640/turn-06",
+    "pinned_turn": 6,
+    "option_file": "pool-06-P2/sample-14.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 67.0,
+      "previous": 62.0,
+      "delta": 5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 49.0,
+      "previous": 48.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 26.0,
+      "previous": 24.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 39.0,
+      "previous": 38.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 13.0,
+      "previous": 14.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 15.0,
+      "previous": 17.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 28.0,
+      "previous": 25.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "safety_breakthrough",
+      "title": "Assurance Breakthrough",
+      "description": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for. It is adopted quickly, because the laboratories want it too.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
+      "emergent": false,
+      "pinned": true
+    }
+  ],
+  "portfolio": [],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "option-06-P21",
+  "next_node": "turn-07-P21",
+  "next_choice": null,
+  "alternatives": {}
+}

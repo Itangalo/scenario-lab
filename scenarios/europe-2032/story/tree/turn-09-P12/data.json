@@ -1,0 +1,109 @@
+{
+  "node": "turn-09-P12",
+  "turn": 9,
+  "period": "H2 2030",
+  "block": "P12",
+  "arm": "P",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-145406",
+    "seed": 10248462065756046062,
+    "turn_dir": "runs/run-20260906-145406/turn-09",
+    "pinned_turn": 6,
+    "option_file": "pool-06-P1/sample-09.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 61.0,
+      "previous": 60.5,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 52.0,
+      "previous": 52.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 19.0,
+      "previous": 21.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 34.0,
+      "previous": 34.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 33.0,
+      "previous": 34.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 6.0,
+      "previous": 9.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 35.0,
+      "previous": 35.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [],
+  "portfolio": [
+    {
+      "name": "Emergency Sovereign Compute Mobilisation",
+      "category": 4,
+      "cost": 3,
+      "start": 8,
+      "finish": 10,
+      "description": "A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **in flight**",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Municipal Resilience Backchannel Integration",
+      "category": 6,
+      "cost": 3,
+      "start": 9,
+      "finish": 11,
+      "description": "Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning` — **in flight**",
+      "finished": false,
+      "status": "new"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": null,
+  "priority": "Emergency Sovereign Compute Mobilisation",
+  "commitment": null,
+  "prev_node": "turn-08-P12",
+  "next_node": null,
+  "next_choice": [
+    "option-10-P121",
+    "option-10-P122"
+  ],
+  "alternatives": {}
+}

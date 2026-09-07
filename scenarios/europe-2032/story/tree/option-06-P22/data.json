@@ -1,0 +1,25 @@
+{
+  "node": "option-06-P22",
+  "choice_turn": 6,
+  "after_block": "P2",
+  "leads_to_block": [
+    "P22"
+  ],
+  "source": "pool-06-P2/sample-28.md",
+  "pool": "pool-06-P2",
+  "draws": 30,
+  "split": "balance-within-consensus",
+  "split_note": "21/30 share the same priority, so this is balance within a consensus rather than opposed camps.",
+  "stance": "resilience first",
+  "standing": "plurality",
+  "support": "13/30 resilience buys",
+  "measure": "Launch the Resilience Reinforcement Initiative",
+  "category": 6,
+  "finishes_turn": 8,
+  "commitment": null,
+  "prev_node": "turn-05-P2",
+  "next_node": [
+    "turn-06-P22"
+  ],
+  "alternatives": {}
+}

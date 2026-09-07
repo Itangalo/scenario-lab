@@ -1,0 +1,155 @@
+{
+  "node": "turn-08-V21",
+  "turn": 8,
+  "period": "H1 2030",
+  "block": "V21",
+  "arm": "V",
+  "stage": 2,
+  "provenance": {
+    "run": "run-20260906-141232",
+    "seed": 10381783824970870000,
+    "turn_dir": "runs/run-20260906-141232/turn-08",
+    "pinned_turn": 6,
+    "option_file": "pool-06-V2/sample-14.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 65.0,
+      "previous": 63.5,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 55.5,
+      "previous": 54.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 32.0,
+      "previous": 38.0,
+      "delta": -6.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 34.0,
+      "previous": 36.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 12.0,
+      "previous": 14.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 18.0,
+      "previous": 16.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 14.0,
+      "previous": 19.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Surface",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "opaque_reasoning",
+      "title": "Reasoning Stops Being Legible",
+      "description": "The leading systems stop producing intermediate reasoning a human can read, because the representations that work best are not words. Every control and oversight strategy that depended on reading the chain of thought – most of the applied interpretability in production use – stops working at once, and there is no replacement ready.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "labour_displacement",
+      "title": "Labour Displacement Wave",
+      "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "middle_power_coalition",
+      "title": "Middle Powers Coordinate",
+      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 7,
+      "description": "€200bn fund for four to five sites",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Establish the European AI Assurance Directorate (EAAD)",
+      "category": 1,
+      "cost": 3,
+      "start": 1,
+      "finish": 5,
+      "description": "A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Launch Sovereign AI Core Programme",
+      "category": 4,
+      "cost": 3,
+      "start": 7,
+      "finish": 9,
+      "description": "Establish a fully EU-operated, militarily hardened AI infrastructure stack—compute, energy, and control—hosting critical assurance, resilience, and governance functions under exclusive Union authority",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Enact Real-Time Logging Mandate for Critical Systems",
+      "category": 2,
+      "cost": 3,
+      "start": 8,
+      "finish": 8,
+      "description": "Require all AI systems above 55.0 capability operating in critical infrastructure sectors (health, energy, transport, finance) to maintain real-time, tamper-evident logs accessible to the EAAD and ENISA, with automated anomaly detection and escalation protocols",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-07-V21",
+  "next_node": "turn-09-V21",
+  "next_choice": null,
+  "alternatives": {}
+}

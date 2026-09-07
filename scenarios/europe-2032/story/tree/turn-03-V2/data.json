@@ -1,0 +1,155 @@
+{
+  "node": "turn-03-V2",
+  "turn": 3,
+  "period": "H2 2027",
+  "block": "V2",
+  "arm": "V",
+  "stage": 1,
+  "provenance": {
+    "run": "run-20260904-223403",
+    "seed": 11571586715346023830,
+    "turn_dir": "runs/run-20260904-223403/turn-03",
+    "pinned_turn": null,
+    "option_file": "turn-01/option-02-2.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 58.0,
+      "previous": 56.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 46.0,
+      "previous": 44.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 35.0,
+      "previous": 28.0,
+      "delta": 7.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 35.0,
+      "previous": 36.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 19.0,
+      "previous": 21.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 30.0,
+      "previous": 38.0,
+      "delta": -8.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 31.0,
+      "previous": 37.0,
+      "delta": -6.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "campaign_backlash",
+      "title": "Anti-AI Backlash Becomes a Campaign Platform",
+      "description": "Moratoriums on data centres, restrictions on AI in schools and hiring, and protection for displaced workers move from the fringe to the platform, on both left and right. Polling shows the position is popular well beyond the activists, and candidates who hedged start to reposition.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "safety_breakthrough",
+      "title": "Assurance Breakthrough",
+      "description": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for. It is adopted quickly, because the laboratories want it too.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "automated_decision_scandal",
+      "title": "Automated Decision Scandal",
+      "description": "An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 6's internal-origin clause applies in full.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_global_ai_safety_standards_push",
+      "title": "emergent_global_ai_safety_standards_push",
+      "description": "In response to the widening safety-capability gap and the unaddressed covert agent incident, a coalition of non-superpower states and technical NGOs launches a formal initiative at the UN to establish minimal global standards for AI development, focusing on transparency and breach reporting. The effort gains early diplomatic traction but faces resistance from both the US and China.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "InvestAI Gigafactories",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 7,
+      "description": "€200bn fund for four to five sites",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Tech sovereignty package",
+      "category": 4,
+      "cost": 3,
+      "start": 1,
+      "finish": 6,
+      "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Establish the European AI Assurance Directorate (EAAD)",
+      "category": 1,
+      "cost": 3,
+      "start": 1,
+      "finish": 5,
+      "description": "A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Launch Sovereign Compute Acceleration Programme (SCAP)",
+      "category": 4,
+      "cost": 3,
+      "start": 2,
+      "finish": 4,
+      "description": "A binding directive to deliver operational sovereign AI capacity by turn 4, with phased milestones, emergency funding access, and override authority on permitting, energy allocation, and procurement for designated national champions",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Measure:",
+  "priority": "Priority:",
+  "commitment": null,
+  "prev_node": "turn-02-V2",
+  "next_node": "turn-04-V2",
+  "next_choice": null,
+  "alternatives": {}
+}

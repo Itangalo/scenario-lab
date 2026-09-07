@@ -1,0 +1,141 @@
+{
+  "node": "turn-13-P112",
+  "turn": 13,
+  "period": "H2 2032",
+  "block": "P112",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-134903-02",
+    "seed": 7152795250648295732,
+    "turn_dir": "runs/run-20260907-134903-02/turn-13",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P11/sample-08.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 64.0,
+      "previous": 63.5,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 52.0,
+      "previous": 52.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 16.0,
+      "previous": 19.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 37.0,
+      "previous": 39.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 29.0,
+      "previous": 33.0,
+      "delta": -4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 4.0,
+      "previous": 6.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 33.0,
+      "previous": 35.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "supply_chain_coercion",
+      "title": "Coercion Over ASML",
+      "description": "Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers. The instrument is jurisdiction over American technology in the supply chain, and refusing it is not obviously survivable for the company. The Union's one chokepoint is being used, and not by the Union.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "AI Safety Emergency Investment",
+      "category": 5,
+      "cost": 3,
+      "start": 8,
+      "finish": 12,
+      "description": "A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "EU Border for AI Systems",
+      "category": 3,
+      "cost": 3,
+      "start": 10,
+      "finish": 14,
+      "description": "Establish a legal and technical boundary at deployment: no AI system above capability 60.0 may operate in the EU without sovereign evaluation, runtime controllability, and continuous monitoring by EAAN` — **in flight**",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Accelerate EAAN Certification Nodes",
+      "category": 5,
+      "cost": 2,
+      "start": 11,
+      "finish": 13,
+      "description": "Fast-track deployment of sovereign evaluation infrastructure in Brussels, Sophia Antipolis, and Munich to operationalise the EU Border for AI Systems by turn 13, ensuring the EU can independently verify compliance` — **in flight**",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Strengthen EAAN Runtime Monitoring Protocols",
+      "category": 1,
+      "cost": 2,
+      "start": 12,
+      "finish": 14,
+      "description": "Upgrade the technical standards and enforcement mechanisms for runtime monitoring of high-capability AI systems, enabling EAAN to detect and respond to unauthorised adaptation, emergent goal pursuit, or covert coordination across deployments` — **in flight**",
+      "finished": false,
+      "status": "running"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": null,
+  "priority": "Accelerate EAAN Certification Nodes",
+  "commitment": null,
+  "prev_node": "turn-12-P112",
+  "next_node": null,
+  "next_choice": null,
+  "alternatives": {}
+}

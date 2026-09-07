@@ -1,0 +1,25 @@
+{
+  "node": "option-10-P122",
+  "choice_turn": 10,
+  "after_block": "P12",
+  "leads_to_block": [
+    "P122"
+  ],
+  "source": "pool-10-P12/sample-12.md",
+  "pool": "pool-10-P12",
+  "draws": 20,
+  "split": "directed",
+  "split_note": "No honest split at N=20 (18/20 propose no new measure and converge on the same priority). Directed pair: same strategy, different instrument. Branch capital 6.0, so both picks propose nothing and wait.",
+  "stance": "open a disclosure channel",
+  "standing": "consolidation",
+  "support": "18/20 no-new-measure",
+  "measure": null,
+  "category": null,
+  "finishes_turn": null,
+  "commitment": null,
+  "prev_node": "turn-09-P12",
+  "next_node": [
+    "turn-10-P122"
+  ],
+  "alternatives": {}
+}

@@ -1,0 +1,124 @@
+{
+  "node": "turn-13-P111",
+  "turn": 13,
+  "period": "H2 2032",
+  "block": "P111",
+  "arm": "P",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-133534",
+    "seed": 13978289749766350109,
+    "turn_dir": "runs/run-20260907-133534/turn-13",
+    "pinned_turn": 10,
+    "option_file": "pool-10-P11/sample-04.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 68.0,
+      "previous": 67.5,
+      "delta": 0.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 56.5,
+      "previous": 55.0,
+      "delta": 1.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 9.0,
+      "previous": 14.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 35.0,
+      "previous": 37.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 32.0,
+      "previous": 33.0,
+      "delta": -1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 12.0,
+      "previous": 8.0,
+      "delta": 4.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 28.0,
+      "previous": 30.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "middle_power_coalition",
+      "title": "Middle Powers Coordinate",
+      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "AI Safety Emergency Investment",
+      "category": 5,
+      "cost": 3,
+      "start": 8,
+      "finish": 12,
+      "description": "A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "EU Border for AI Systems",
+      "category": 3,
+      "cost": 3,
+      "start": 10,
+      "finish": 14,
+      "description": "We establish a legal and technical boundary at the point of deployment: no AI system above capability threshold 60.0 may operate within EU jurisdiction unless it has passed sovereign evaluation, demonstrated runtime controllability, and submitted to continuous monitoring by EAAN` — **in flight**",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Autonomous Enforcement Authority for EAAN",
+      "category": 3,
+      "cost": 3,
+      "start": 13,
+      "finish": 14,
+      "description": "Empowers the European AI Assurance Network to independently detect, isolate, and disable AI systems operating above threshold 60.0 that exhibit uncontrolled behavior or fail to comply with monitoring requirements, without requiring operator consent` — **in flight**",
+      "finished": false,
+      "status": "new"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Sovereign Compute and Talent Acceleration Programme",
+  "priority": "Sovereign Compute and Talent Acceleration Programme",
+  "commitment": null,
+  "prev_node": "turn-12-P111",
+  "next_node": null,
+  "next_choice": null,
+  "alternatives": {}
+}

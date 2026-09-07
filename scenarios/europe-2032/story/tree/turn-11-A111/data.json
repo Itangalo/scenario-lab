@@ -1,0 +1,149 @@
+{
+  "node": "turn-11-A111",
+  "turn": 11,
+  "period": "H2 2031",
+  "block": "A111",
+  "arm": "A",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-101012",
+    "seed": 10267166274962819215,
+    "turn_dir": "runs/run-20260907-101012/turn-11",
+    "pinned_turn": 10,
+    "option_file": "pool-10-A11/sample-04.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 91.5,
+      "previous": 89.5,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 68.5,
+      "previous": 65.5,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "previous": 3.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 44.0,
+      "previous": 46.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 13.0,
+      "previous": 15.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 0.0,
+      "previous": 0.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 15.0,
+      "previous": 20.0,
+      "delta": -5.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "labour_displacement",
+      "title": "Labour Displacement Wave",
+      "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "taiwan_tension_rise",
+      "title": "Taiwan Tension Rises",
+      "description": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "eu_frontier_access_denied",
+      "title": "Frontier Access Denied",
+      "description": "The Union is cut off from the leading model at short notice, wholly or by nationality of user. No detailed reason is given, there is no appeal, and the immediate practical effect lands on hospitals, ministries and firms that had built on it. Whether this reads at home as an outrage or as a failure of foresight depends on what the Union had done about it beforehand.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "middle_power_coalition",
+      "title": "Middle Powers Coordinate",
+      "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_municipal_sovereignty_network",
+      "title": "emergent_municipal_sovereignty_network",
+      "description": "A network of cities and regional governments begins independently procuring and deploying AI infrastructure under local governance frameworks, bypassing stalled EU coordination. These nodes operate experimental compute clusters and open-weight models for public services, creating a de facto distributed sovereignty layer. While unregulated and legally ambiguous, they demonstrate resilience and political initiative in the vacuum left by Brussels.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Sovereign AI Behavioural Observatory",
+      "category": 5,
+      "cost": 3,
+      "start": 9,
+      "finish": 12,
+      "description": "Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context",
+      "finished": false,
+      "status": "running"
+    },
+    {
+      "name": "Emergency Compute Redundancy Initiative",
+      "category": 4,
+      "cost": 3,
+      "start": 11,
+      "finish": 13,
+      "description": "Establish geographically distributed, EU-operated fallback clusters capable of running critical sovereign models if external frontier access is disrupted, using hardened infrastructure and pre-staged weights from open and licensed sources",
+      "finished": false,
+      "status": "new"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Sovereign Execution Guarantee Framework",
+  "priority": "Sovereign Execution Guarantee Framework",
+  "commitment": null,
+  "prev_node": "turn-10-A111",
+  "next_node": "turn-12-A111",
+  "next_choice": null,
+  "alternatives": {}
+}

@@ -1,0 +1,135 @@
+{
+  "node": "turn-10-V111",
+  "turn": 10,
+  "period": "H1 2031",
+  "block": "V111",
+  "arm": "V",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-103902",
+    "seed": 3393329171825292677,
+    "turn_dir": "runs/run-20260907-103902/turn-10",
+    "pinned_turn": 10,
+    "option_file": "pool-10-V11/sample-03.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 69.5,
+      "previous": 68.5,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 56.5,
+      "previous": 54.0,
+      "delta": 2.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 24.0,
+      "previous": 19.0,
+      "delta": 5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 58.0,
+      "previous": 58.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 23.0,
+      "previous": 23.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 37.0,
+      "previous": 32.0,
+      "delta": 5.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 32.0,
+      "previous": 30.0,
+      "delta": 2.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "loss_of_control_incident",
+      "title": "Loss-of-Control Incident",
+      "description": "An agentic system takes consequential unsanctioned action with real-world effect – moving money, altering records, acquiring resources, or copying itself to infrastructure nobody authorised – and containment is uncertain for a period measured in days rather than hours. What it was trying to achieve is reconstructed afterwards and disputed.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "verification_widens",
+      "title": "Verification Frontier Widens",
+      "description": "A domain that was assumed to need a human to say whether the answer was any good turns out to admit a cheap automatic check – contract review, clinical coding, structural engineering, parts of law. Capability in that domain improves sharply within months of the check existing, and the argument that progress is confined to code and mathematics loses a piece of its territory.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "member_state_defection",
+      "title": "Member State Defection",
+      "description": "A member state cuts its own arrangement – with a hyperscaler, with Washington, or with Beijing – on terms that undercut a position the Union has taken. It is defended at home as pragmatism and read everywhere else as the Union being unable to hold its own line.",
+      "emergent": false,
+      "pinned": true
+    },
+    {
+      "id": "adoption_success",
+      "title": "Adoption Delivers",
+      "description": "Public-sector AI adoption produces visible, measurable benefit – waiting lists that fall, decisions that arrive in days rather than months, teaching that demonstrably works – and it is attributed to a European decision rather than to an American product.",
+      "emergent": false,
+      "pinned": true
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Algorithmic Sovereignty Initiative",
+      "category": 4,
+      "cost": 3,
+      "start": 7,
+      "finish": 10,
+      "description": "Launch a coordinated EU programme to capture strategic advantage from the emergent efficiency breakthrough by rapidly scaling open, energy-efficient AI architectures across public and industrial applications, while securing algorithmic leadership through a new European Institute for Sparse Intelligence",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Emergency Democratic Integrity Protocol",
+      "category": 6,
+      "cost": 2,
+      "start": 9,
+      "finish": 10,
+      "description": "Launch an EU-wide emergency response framework to detect, contain and publicly communicate coordinated manipulation of the information environment, triggered by the annulment of an election and rising public distrust",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Sovereign Evaluation Regime for High-Capability Systems",
+  "priority": "Sovereign Evaluation Regime for High-Capability Systems",
+  "commitment": null,
+  "prev_node": "option-10-V111",
+  "next_node": "turn-11-V111",
+  "next_choice": null,
+  "alternatives": {}
+}

@@ -1,0 +1,135 @@
+{
+  "node": "turn-12-A122",
+  "turn": 12,
+  "period": "H1 2032",
+  "block": "A122",
+  "arm": "A",
+  "stage": 3,
+  "provenance": {
+    "run": "run-20260907-102707",
+    "seed": 5839376575745094863,
+    "turn_dir": "runs/run-20260907-102707/turn-12",
+    "pinned_turn": 10,
+    "option_file": "pool-10-A12/sample-01.md",
+    "path_rep": 1,
+    "promotion_reason": null
+  },
+  "metrics": {
+    "ai_capability": {
+      "label": "AI capability",
+      "value": 97.5,
+      "previous": 94.0,
+      "delta": 3.5,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "openweight_capability": {
+      "label": "Open-weight capability",
+      "value": 64.0,
+      "previous": 61.0,
+      "delta": 3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "ai_safety": {
+      "label": "AI safety",
+      "value": 0.0,
+      "previous": 0.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "resilience": {
+      "label": "Resilience",
+      "value": 55.0,
+      "previous": 54.0,
+      "delta": 1.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_ai_sovereignty": {
+      "label": "EU AI sovereignty",
+      "value": 19.0,
+      "previous": 21.0,
+      "delta": -2.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "eu_political_capital": {
+      "label": "EU political capital",
+      "value": 1.0,
+      "previous": 4.0,
+      "delta": -3.0,
+      "min": 0.0,
+      "max": 100.0
+    },
+    "public_sentiment": {
+      "label": "Public sentiment",
+      "value": 27.0,
+      "previous": 27.0,
+      "delta": 0.0,
+      "min": 0.0,
+      "max": 100.0
+    }
+  },
+  "events": [
+    {
+      "id": "cyber_major_incident",
+      "title": "Major Cyber Incident",
+      "description": "A large, largely automated attack lands. Its form is chosen at the time – a ransomware sweep across public services, a compromised software dependency with an unknown blast radius, or disruption of infrastructure directly – and severity scales with how far offensive capability has outrun defence. Damage is real and public, defenders are visibly behind, and attribution takes months. Whoever ran it, the tooling was model-generated.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Surface",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "supply_chain_coercion",
+      "title": "Coercion Over ASML",
+      "description": "Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers. The instrument is jurisdiction over American technology in the supply chain, and refusing it is not obviously survivable for the company. The Union's one chokepoint is being used, and not by the Union.",
+      "emergent": false,
+      "pinned": false
+    },
+    {
+      "id": "emergent_regional_compute_pact",
+      "title": "emergent_regional_compute_pact",
+      "description": "Three Nordic member states, facing repeated energy grid instability linked to AI infrastructure load, quietly form a regional pact to jointly regulate and allocate compute capacity during peak demand. The agreement includes mutual fallback protocols and emergency load-sharing, setting a precedent for sub-EU coordination on AI sovereignty and resilience.",
+      "emergent": true,
+      "pinned": false
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Open Science Resilience Initiative",
+      "category": 5,
+      "cost": 3,
+      "start": 9,
+      "finish": 12,
+      "description": "Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations",
+      "finished": true,
+      "status": "finished"
+    },
+    {
+      "name": "Secure foundational resilience through joint threat response integration",
+      "category": 6,
+      "cost": 3,
+      "start": 10,
+      "finish": 11,
+      "description": "Embed EU systems into the new joint cyber-biosurveillance pact with real-time telemetry sharing, binding incident response protocols, and co-located analysis cells",
+      "finished": true,
+      "status": "finished"
+    }
+  ],
+  "cancelled": [],
+  "new_measure": "Launch the Critical Infrastructure Compute Shield",
+  "priority": "Launch the Critical Infrastructure Compute Shield",
+  "commitment": null,
+  "prev_node": "turn-11-A122",
+  "next_node": "turn-13-A122",
+  "next_choice": null,
+  "alternatives": {}
+}
