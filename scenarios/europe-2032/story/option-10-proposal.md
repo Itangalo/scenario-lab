@@ -45,6 +45,18 @@ Pools: `pool-10-{12 blocks}/`, 10 draws each, situations fixed by turn-10 fixtur
 - **V11**: 7 act (fragmented 3/2/1/1 across four categories) vs 3 pause (unified). No binary; forcing one misleads.
 - **P11**: 10–0 priority unanimity (Border). Only variation is secondary add-ons, all finishing past the run.
 - **P12**: 8 consolidation (backchannel) + 2 disagreeing singletons. Near-consensus.
-- **P22**: scatter — compute 4 vs continuity 2 vs governance 2 vs telemetry 1 vs trust 1. No two groups.
+- **P22**: scatter — compute-first 4 (02, 05, 07, 08) vs continuity 2 (01, 09) vs restore-governance 2 (03, 06) vs telemetry 1 (04) vs public-trust 1 (10). Preference-second note since this is the final choice: the compute-buildout plurality (05, 07, 08: large, finish 13, multi-billion programmes launched at capital 0.0) are the worst arc-closers in the set — 18-month build-outs that pay off only at the final turn and assume fiscal capacity the context explicitly denies. The finish-12 small measures (01 readiness surge, 09 access protocol, 04 telemetry) close arcs better, but none of them represents more than itself plus at most one ally, so none can honestly serve as "the second option."
 
 Next step for the five no-split blocks is Johan's call (steer a directed split as for turn 6, manufacture, or no final fork on that branch). Not decided here. (ECHO 2026-09-07)
+
+## Extension to 20 draws for the five no-splits (2026-09-07)
+
+Same situations (prompt hashes unchanged), all 20 fresh draws per pool. Four confirm no-split; one resolves.
+
+- **A12: no-split confirmed.** 18/20 priority OSRI; the only two self-priority draws (05 cat9, 17 cat4) differ in category and instrument — no pole. (Note: extension redrew all 20 fresh, so the N=10 description above is superseded.)
+- **V11: no-split confirmed.** Fragmentation increased (eval 4, resilience 4, compute 3, trust 3, containment 2, tech 2, pause 2); act 18 vs pause 2 is not a binary.
+- **P11: no-split confirmed.** Second half a pure 10/10 hold bloc; hold 15/20, priority unanimous 20/20.
+- **P12: no-split confirmed.** 18/20 no-new-measure converging on Backchannel Integration; the two deviants disagree with each other.
+- **P22: SPLIT — continuity-repair 7 vs trust-restoration 5 (12/20 in two poles, 8 scatter).** Theories of action at capital 0.0: fix the machine vs fix the mandate.
+  - `option-10-P221` ← `pool-10-P22/sample-20.md`, "Launch the Emergency Continuity Response Initiative" (cat6, small, fin 12), priority itself. Plurality pole: activates/repairs/validates air-gapped nodes.
+  - `option-10-P222` ← `pool-10-P22/sample-15.md`, "Launch the Emergency Trust Restoration Initiative" (cat9, small, fin 12), priority itself. Honest minority: hardened stack in visible public services, weekly reporting, no new sanctions. (ECHO 2026-09-07)
