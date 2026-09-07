@@ -31,9 +31,16 @@ After the first choice, the story progresses four turns (two years). The turns a
 
 The story continues based on the reader's choice, for the next two years (four turns), with turns named `turn-06-A11`, `turn-07-A11`, `turn-08-A11` and `turn-09-A11` for the first branch. This is followed by a final set of options (`option-10-A111` and `option-10-A112` for the first branch), and then the final four turns (`turn-10-A111`, `turn-11-A111`, `turn-12-A111` and `turn-13-A111` for the first branch).
 
-The files representing the turns and options are stored under `tree`. The shared opening is stored in `tree/turn-01/opening.md`, while the final turn for the last branch is stored in the directory `turn-13-P222`.
+The files representing the turns and options are stored under `tree/`, one directory per node: `turn-NN-branchid/` for a turn, `option-NN-branchid/` for a reader's choice, and `turn-01/` for the shared opening. The last of them is `turn-13-P222/`. There are 207 in all — 169 turns and 38 options.
 
-Each turn and option has a directory `turn-NN-branchid/` or `option-NN-branchid/`, holding necessary stored information.
+Each node holds two files, and the split between them is the point:
+
+- `data.json` — machine-extracted from the block's path run by `extract_tree.py`: metrics with deltas, the events that fired with their text from `events.md`, the measure portfolio with per-measure status, priority, the two-year commitment in force, and provenance back to the run and turn it came from. Derived, never edited by hand, safe to regenerate.
+- `narrative.md` (or `choice.md` for an option) — the reader-facing prose, written by hand. Front matter carries `status: drafted` until it is written, at which point it becomes `status: written` and `extract_tree.py` stops touching it.
+
+No figure is retyped from a run into prose. `check_tree.py` enforces that, along with the link structure, the event names, and the rule that no reader-visible text may name an arm or carry a branch id.
+
+`tree.json` is the editorial source of truth underneath all of it: which run each of the 42 blocks follows, which option leads into it, and how honest each choice's split is. The branch-log tables below are the human record it was generated from and verified against.
 
 ## How options and paths are created
 

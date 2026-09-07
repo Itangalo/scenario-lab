@@ -112,6 +112,15 @@ def run_numbers(data: dict[str, Any]) -> set[str]:
     prov = data.get("provenance") or {}
     turn_dir = prov.get("turn_dir")
     if not turn_dir:
+        # The opening resolves no turn, so its facts come from the scenario's
+        # own opening material rather than from a run.
+        if data.get("node") == "turn-01":
+            out: set[str] = set()
+            for name in ("background/context.md", "events.md"):
+                path = SCENARIO / name
+                if path.is_file():
+                    out |= numbers(path.read_text(encoding="utf-8"))
+            return out
         return set()
     tdir = SCENARIO / turn_dir
     out: set[str] = set()
