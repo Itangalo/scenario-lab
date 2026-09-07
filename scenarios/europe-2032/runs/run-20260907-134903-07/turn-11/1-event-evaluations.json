@@ -1,0 +1,227 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3140517855777034,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5089005665510531,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7238505320568105,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.37149370401290827,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7245517184205746,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8557776273663266,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03867164865808248,
+    "triggered": true
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9313035889632583,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7786048872836904,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.06,
+    "probability_samples": [
+      0.12,
+      0.06,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6440316721213275,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4488229729434917,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5184384085187577,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.22999999999999998,
+    "emergent": true,
+    "description": "Grassroots organising intensifies among mid-level professionals in law, finance, and public administration, as AI systems increasingly perform tasks once reserved for experienced staff. Local strikes and work-to-rule actions emerge in several member states, demanding recognition of AI-driven deskilling and renegotiation of career progression paths. The movement is not yet coordinated at EU level but gains traction in national media.",
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5150580317224239,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eval_resistance",
+    "probability": 0.19333333333333333,
+    "emergent": true,
+    "description": "A coalition of AI ethics researchers and open science advocates begins publicly challenging the validity and transparency of EAAN evaluation protocols, arguing that the EU's sovereign assessment framework is being designed to exclude non-compliant models rather than ensure safety. Leaked internal documents suggest benchmark manipulation, fueling academic and policy debate about the legitimacy of the Union's oversight claims.",
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.05758640039717644,
+    "triggered": true
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8769940234369126,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7299398091779025,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.32703113738847867,
+    "triggered": false
+  }
+]

@@ -1,0 +1,19 @@
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **finishes this turn**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): Establish a legal and technical boundary at deployment: no AI system above capability 60.0 may operate in the EU without sovereign evaluation, runtime controllability, and continuous monitoring by EAAN` — **in flight**
+- `Accelerate EAAN Certification Nodes (category 5, costs 2 per turn, started turn 11, finishes on turn 13): Fast-track deployment of sovereign evaluation infrastructure in Brussels, Sophia Antipolis, and Munich to operationalise the EU Border for AI Systems by turn 13, ensuring the EU can independently verify compliance` — **in flight**
+- `Strengthen EAAN Runtime Monitoring Protocols (category 1, costs 2 per turn, started turn 12, finishes on turn 14): Upgrade the technical standards and enforcement mechanisms for runtime monitoring of high-capability AI systems, enabling EAAN to detect and respond to unauthorised adaptation, emergent goal pursuit, or covert coordination across deployments` — **in flight**
+
+## New measure
+None this turn.  
+We do not propose a new measure because we are at the edge of operational collapse: with *eu_political_capital* at 6.0 and four active measures already straining coherence, adding another would guarantee failure across the board. We must first absorb the completion of the Safety Emergency Investment and let its capacity land before stretching further.
+
+## Priority
+**EU Border for AI Systems** — because it remains the cornerstone of our two-year commitment to prevent uncontrolled AI from operating in the EU, and because without it, the gains from the now-completing Safety Emergency Investment cannot be translated into sovereign control.
+
+## In practice
+This turn, we operationalise. The €40bn AI Safety Emergency Investment lands: the European AI Assurance Network (EAAN) now has secure inspection enclaves in three locations, red-teaming teams staffed, and access protocols in place for vetted researchers. But capacity alone is not control. We are now in the final stretch of making the EU Border for AI Systems real — not just a legal threshold, but a technical and institutional reality. That means the Brussels, Sophia Antipolis, and Munich nodes must go from construction sites to active certification authorities by turn 13. We are fast-tracking staffing through the Horizon Europe mobility corridor and using delegated acts under Article 16 of the AI Act to bypass Council gridlock on full ratification of the monitoring protocols.
+
+At the same time, we are under fire. The withdrawal of one US hyperscaler has chilled negotiations with the others. We respond by activating a dual track: enforcement and inducement. On one side, DG CONNECT and the European Data Protection Board are drafting binding implementing acts to enforce telemetry, model-diff reporting, and cryptographic weight hashing for all systems above 60.0 capability. On the other, we offer early adopters of the full monitoring stack liability shielding under the revised AI Liability Directive and guaranteed access to the first tranche of the Sovereign Compute Initiative — but only if they commit by the end of the quarter. This is not a retreat from sovereignty; it is the calibration of leverage. We cannot afford total exclusion, but we will not accept hollow compliance. The border must hold — and it must be seen to work.

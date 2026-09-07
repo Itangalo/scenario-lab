@@ -1,0 +1,15 @@
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **in flight**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): Establish a legal and technical boundary at deployment: no AI system above capability 60.0 may operate in the EU without sovereign evaluation, runtime controllability, and continuous monitoring by EAAN` — **in flight**
+- `Accelerate EAAN Certification Nodes (category 5, costs 2 per turn, started turn 11, finishes on turn 13): Fast-track deployment of sovereign evaluation infrastructure in Brussels, Sophia Antipolis, and Munich to operationalise the EU Border for AI Systems by turn 14, ensuring the EU can independently verify compliance` — **in flight**
+
+## New measure
+None this turn. We are waiting for the first sovereign evaluation reports from the accelerated nodes to determine whether the current compliance resistance is tactical or existential — and whether enforcement must shift from negotiation to exclusion.
+
+## Priority  
+**Accelerate EAAN Certification Nodes** — because the eval_anomaly_reports confirm that capability is emerging unpredictably and outside design intent, and because US hyperscalers have refused access despite the compliance corridor, the credibility of the EU Border now depends entirely on whether we can inspect systems ourselves; this measure is the only thing that makes the border real, and it must land before the next capability gate opens.
+
+## In practice  
+This turn, we shift from funding to function. The EAAN nodes in Brussels, Sophia Antipolis, and Munich are now staffed and legally empowered under Article 114 TFEU, but they remain empty shells without access. We have offered liability shielding and compute access to any lab that submits to audit — a corridor designed to align incentives — but so far, only one European lab has stepped forward. The US-based hyperscalers continue to treat the EU as a jurisdiction to be lobbied, not a sovereign power to be respected. We are no longer asking. Under the Digital Markets Act’s gatekeeper provisions and the AI Liability Directive’s safe-harbour clauses, we now condition market access on red-teaming authority and telemetry sharing. If they will not come to us, we will not let them in.
+
+Behind the scenes, we are preparing for the first unannounced inspection under the Border measure — not of a deployed system, but of a training run flagged by anomaly detection. This is uncharted territory. The labs call it overreach. We call it governance. The difference will be settled not in press releases, but in court, in council, and in code. We are not withdrawing the offer of cooperation — but we are no longer waiting for permission to act. The border must be enforced, or it will not exist.

@@ -1,0 +1,244 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.02194446355120039,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.04,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2935327047059718,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.37108297141108737,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5413752832861797,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.049999999999999996,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.08,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "emergent_opaque_reasoning_backlash",
+    "probability": 0.3499999999999999,
+    "emergent": true,
+    "description": "Regulators and oversight bodies across multiple EU member states formally declare that AI systems without human-readable reasoning cannot be legally deployed in high-risk domains, triggering a wave of compliance withdrawals and emergency audits. This regulatory cascade emerges in direct response to the widespread failure of existing tools like the EAAD to monitor systems after the opaque_reasoning shift, and it forces both public and private sector AI rollbacks in critical functions.",
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5457040251978033,
+    "triggered": false
+  },
+  {
+    "id": "emergent_lab_consultation_leak",
+    "probability": 0.2933333333333334,
+    "emergent": true,
+    "description": "An internal consultation document from a leading frontier lab leaks, revealing plans to train next-generation models using unsecured EU public data streams under permissive licensing assumptions. The leak triggers immediate legal action from the European Commission and national data protection authorities, and ignites a diplomatic standoff over data sovereignty, with several member states demanding renegotiation of data access terms with US-based labs.",
+    "probability_samples": [
+      0.3,
+      0.28,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6810226285911186,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4582370907039276,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9246312458065573,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9430917825676851,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.15
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7206278304392456,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.24821094018385514,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5743421826538536,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6990199937543813,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7082040750658103,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.033419549766710466,
+    "triggered": true
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.11
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.830084437568288,
+    "triggered": false
+  }
+]

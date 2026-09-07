@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **finished**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): We establish a legal and technical boundary at the point of deployment: no AI system above capability threshold 60.0 may operate within EU jurisdiction unless it has passed sovereign evaluation, demonstrated runtime controllability, and submitted to continuous monitoring by EAAN` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for ENISA’s detection pilots to deliver actionable intelligence and for the European Parliament to react to the Commission’s hardened red lines before proposing any further measure.
+
+## Priority
+**EU Border for AI Systems** — because the crossing of the 60.0 threshold globally makes enforcement of the deployment boundary an operational necessity, not a theoretical stance, and because the credibility of EU regulatory sovereignty now hinges on whether we can compel compliance from foreign developers who have suspended deployment but not engagement.
+
+## In practice
+This turn, we finalise the legal enactment of the *AI Deployment Boundary Act*, formally adopting it under Article 114 TFEU as a single market measure to maximise its legitimacy in the European Parliament and minimise exposure to ECJ annulment. The Legal Service has confirmed that access to model weights, runtime telemetry, and verified kill switches are non-negotiable conditions for market access, and fallback plans are now locked: should Parliament demand dilution of these requirements, we will invoke urgency powers under Article 155(2), citing EAAN’s findings of unexplained agent behaviours as evidence of systemic risk to public order and security. COREPER II has been briefed, and we are actively securing qualified majority support among member states to back this move, engaging capitals bilaterally to counter legal and political resistance.
+
+Simultaneously, ENISA expands its detection pilots in France and Germany, deploying traffic fingerprinting and inference-pattern recognition tools across financial, energy, and municipal networks to identify unauthorised high-capability models. Early signals point to shadow deployments in algorithmic trading and local government chatbots, though none yet breach 60.0. The first EAAN gateway in Brussels is now operational, with secure enclaves ready to conduct evaluations. To break the deadlock with US hyperscalers, we signal that certain foundation models may be classified as core digital services under the DMA, triggering mandatory interoperability and audit access. Parallel to this, we offer a fast-track audit path under the AI Liability Directive—early submitters gain liability shielding and preferential access to EU compute—framing cooperation as a strategic advantage, not a concession. The message is clear: the door remains open, but only for those who walk through it on our terms.

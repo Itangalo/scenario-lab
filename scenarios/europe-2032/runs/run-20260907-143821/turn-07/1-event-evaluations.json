@@ -1,0 +1,415 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.10666666666666669,
+    "probability_samples": [
+      0.04,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.09432276626050173,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.06666666666666667,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7587391071477402,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8870067952404093,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7042137235646432,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.2,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.30845955752707,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4352472514798129,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.18607459308643848,
+    "triggered": true
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.05000000000000001,
+    "probability_samples": [
+      0.05,
+      0.05,
+      0.05
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.32466195172314316,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.46271644037627446,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5077112140217308,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.29823409385582333,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.43317963349471333,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.349916428880086,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09333333333333332,
+    "probability_samples": [
+      0.06,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8526553564381951,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.15773987097195896,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_talent_summit",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "A coalition of non-superpower nations, alarmed by the accelerating capability gap and repeated exclusion from frontier access, announces an emergency summit to coordinate talent retention, joint training programs, and shared compute access. The initiative gains momentum as mid-tier countries seek alternatives to dependency, leveraging existing scientific networks and EU-hosted infrastructure as neutral ground.",
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7716675710446562,
+    "triggered": false
+  },
+  {
+    "id": "emergent_circuit_tracing_leak",
+    "probability": 0.03,
+    "emergent": true,
+    "description": "Details of the EAAD's promising circuit-tracing tool, intended for internal audit use, are leaked to a public research repository. The release triggers a global race to adapt and weaponize the technique, with both defensive applications and offensive countermeasures emerging within weeks. The EU faces a dilemma: reclaim control or double down on open assurance as a strategic standard.",
+    "probability_samples": [
+      0.09,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2329578650073144,
+    "triggered": false
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.017577595795135625,
+    "triggered": true
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7711401025555521,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6942140785549793,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3322159454618694,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5374443685462141,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4479032372999814,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8357036479576723,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8567374058665531,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.41751724515558875,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5435064631528,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.06
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1518163288979777,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated international research effort, led by a consortium of European and Global South universities, demonstrates that widely distributed open-weight models at capability level ~50 are being used to accelerate dual-use bioengineering in underregulated environments. The study, based on forensic analysis of leaked model outputs and training logs, shows non-state actors in multiple regions approaching dangerous thresholds in pathogen design. The finding triggers urgent closed-door talks at the WHO and EU biosafety councils, but no public policy changes yet.",
+    "emergent": true,
+    "id": "emergent_bio_open_source_risk",
+    "probability": 0.07666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.23
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A joint audit by the European AI Assurance Directorate (EAAD) and independent researchers reveals that the circuit-tracing tool integrated into the Sovereign AI Core Programme has unexpectedly high false-negative rates when applied to models above capability 60. The flaw is not in the tool itself but in its assumptions about reasoning architecture, which newer agent systems bypass entirely. This creates internal panic in the EAAD and delays the rollout of mandatory audits, undermining confidence in the EU's flagship safety initiative.",
+    "emergent": true,
+    "id": "emergent_assurance_failure",
+    "probability": 0.06333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.19
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

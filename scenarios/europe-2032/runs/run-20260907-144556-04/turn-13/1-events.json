@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_grid_stress_crisis",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "Regional power grids in Western Europe face cascading instability due to uncoordinated AI data centre expansions and heatwave conditions, triggering emergency load-shedding and forcing national regulators to impose temporary moratoriums on new AI compute deployments. The crisis exposes the lack of EU-level coordination on energy-AI integration.",
+    "probability_samples": [
+      0.3,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

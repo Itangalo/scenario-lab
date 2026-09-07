@@ -1,0 +1,270 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11211095203300325,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.023333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.03,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.14,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.44358224326234486,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7394515723241191,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.17575457917102233,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.03333333333333333,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.2962407934866035,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4364292740793131,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.016666666666666666,
+    "probability_samples": [
+      0.05,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8677852420282565,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4563569754694873,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.33278037038502495,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4474175210413619,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7404525714816025,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8309673302840729,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4710131232277268,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8961985928259836,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_aid_strike",
+    "probability": 0.18333333333333332,
+    "emergent": true,
+    "description": "Technical staff in multiple EU agencies coordinating AI incident response begin an informal work slowdown, citing unsustainable operational tempo, political paralysis, and repeated exposure to traumatic system failures. The strike remains unannounced but degrades cross-border coordination and delays patch deployment in critical infrastructure sectors.",
+    "probability_samples": [
+      0.22,
+      0.25,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5147486906518736,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_watchdog",
+    "probability": 0.13999999999999999,
+    "emergent": true,
+    "description": "A coalition of mid-sized democracies, citing the EU's degraded continuity and the US's inward turn, launches a new transnational AI monitoring initiative outside existing US or EU frameworks. It focuses on real-time incident tracking, open forensic analysis, and rapid model provenance tracing, gaining early adherence from Japan, Canada, and the Nordic states — positioning itself as a neutral alternative to American or Chinese-led governance.",
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1626937891338759,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9678798397369128,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1862282923269848,
+    "triggered": false
+  }
+]

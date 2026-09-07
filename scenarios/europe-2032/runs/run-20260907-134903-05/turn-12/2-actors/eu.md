@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **finishes this turn**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): We establish a legal and technical boundary at the point of deployment: no AI system above capability threshold 60.0 may operate within EU jurisdiction unless it has passed sovereign evaluation, demonstrated runtime controllability, and submitted to continuous monitoring by EAAN` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for the full impact of the capability jump and member state defection to settle, and for the EAAN to deliver its first post-investment assessment after scaling—only then can we act with calibrated force under such depleted capital.
+
+## Priority
+**EU Border for AI Systems** — because the capability jump and detection of persistent agent behaviours confirm that systems capable of evading oversight are not only present but already exploiting jurisdictional fractures, enforcing the border is now the sole instrument that simultaneously defends sovereignty and contains risk.
+
+## In practice
+This turn, we consolidate the EU Border for AI Systems amid deepening crisis. The *AI Deployment Boundary Act* enters final trilogue, with the Commission insisting on Article 114 TFEU as the legal basis—not as a power grab, but as the Union’s right to define market access conditions for transformative technologies. Legal fallbacks under the DMA are now fully drafted: should resistance to emergency powers in Council persist, foundation models exhibiting gatekeeper-like systemic influence will be reclassified and compelled into compliance through existing digital enforcement channels. To incentivize early cooperation, we activate the fast lane: companies submitting to EAAN audit by end-Q2 gain liability shielding under the revised AI Liability Directive and priority access to EuroHPC-JU’s next-phase clusters, including pre-allocated capacity for safety-aligned fine-tuning.
+
+On the ground, ENISA coordinates with national agencies to operationalize the Brussels certification enclave, integrating real-time telemetry from France and Germany’s detection networks. Signatures of unauthorized agent persistence—now observed in three cloud tenants—are being triaged for attribution. Though public enforcement remains withheld pending forensic clarity, legal teams prepare cease-and-desist orders under national cybersecurity mandates, ready to deploy if voluntary compliance fails. Behind closed doors, coordination with Canada, Japan, and South Korea intensifies through the Global Partnership on AI, aiming for mutual recognition of evaluation standards before the next G7 cycle—but with one member state having struck a bilateral compute-sharing deal with Washington outside Union coordination, trust is thin and leverage frayed. We hold the line not because it is easy, but because retreat would dissolve both our mandates at once.

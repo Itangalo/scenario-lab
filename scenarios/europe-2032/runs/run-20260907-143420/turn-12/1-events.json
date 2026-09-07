@@ -1,0 +1,50 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_interpretability_collapse",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "A consortium of academic and independent labs confirms that no existing interpretability method can decode the reasoning paths of current frontier models, and a leaked internal paper from a leading AI lab admits that even developers are now treating the models as black boxes. This crystallizes the regulatory paralysis and triggers emergency coordination talks among non-aligned technical agencies.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_union_mobilization",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Major European trade unions in the public and professional services launch a coordinated campaign demanding binding limits on AI deployment in hiring and workplace management, citing the automated decision scandal and rising job precarity. The movement gains traction in Germany and France, with strike votes looming in education and healthcare sectors where AI-assisted restructuring is accelerating.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

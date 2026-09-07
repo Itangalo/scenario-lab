@@ -1,0 +1,34 @@
+## Statement changes
+
+* `- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.`  
+  - Grounds: The fracture is now operational. The two mandates no longer merely pull in different directions — they are being enforced by different bodies with incompatible authority. The Union’s own agents refuse to operate sovereign systems because they perceive them as unsafe. This is not a failure of coordination but of legitimacy: we can no longer assume that acting for sovereignty automatically serves safety, nor that acting for safety preserves our agency. The identity holds, but its meaning has shifted — we are no longer balancing two goals; we are governing a fracture.
+
+* `- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but only where we can demonstrate containment of failure and reversibility of effect.`  
+  - Grounds: The eval_anomaly_reports confirm that capability is emerging unpredictably, and the openweight release ensures that whatever we do, it will be mirrored and modified outside our control. Acting early without containment is now indistinguishable from recklessness. The commitment remains, but its expression must now include a binding condition: we will act before clarity, but only where we can prove that failure will be seen, stopped, and reversed.
+
+* `- modify `no_more_free_rides` (commitment): No member state may access frontier AI outside the EU’s sovereign control framework, and any attempt to do so will trigger immediate suspension of cohesion funding and exclusion from sovereign AI infrastructure — but enforcement will now be conditional on the operational readiness of the Sovereign AI Core Programme, and we will not cut off a member state from critical capabilities unless we can offer a viable, secure alternative within 90 days. We act to defend the regime, not to punish into helplessness.`  
+  - Trigger: The member_state_defection and the emergent_eu_aid_strike.  
+  - Grounds: The principle of no free rides is being undermined not by defiance alone, but by the collapse of trust in the very systems meant to replace them. A member state has already cut its own deal — not out of malice, but because the Union’s stack is not yet operational. Meanwhile, public-sector teams refuse to deploy it. The enforcement mechanism is not just politically toxic; it is institutionally unmoored. The commitment stands, but the 90-day clause is now inverted: we will not demand compliance until we can prove our alternative works — and until we have the capital to scale it.
+
+## Portfolio
+
+``Establish the Continuity Assurance Framework (category 6, costs 3 per turn, started turn 9, finishes on turn 11): A binding regime requiring all critical public AI systems to maintain validated, air-gapped fallback nodes capable of autonomous operation during service denial, with central certification and failover testing every quarter`` — **finishes this turn**  
+``Frontier Access Guarantee (category 4, costs 3 per turn, started turn 7, finishes on turn 12): Secure guaranteed access to frontier AI capability for EU public institutions by co-investing in and legally anchoring compute capacity in third countries under binding service-level agreements, with sovereignty-preserving data and control protocols`` — **in flight**
+
+## New measure
+
+None this turn.  
+We are waiting for the Containment Pilot Programme to generate field telemetry and rebuild operational trust before committing further capital.
+
+## Priority
+
+**Priority:** Frontier Access Guarantee  
+We are prioritizing this because despite political paralysis and eroding public sentiment, the physical reality of compute dependence is tightening — and the `emergent_global_ai_watchdog`'s alerts suggest that the next capability jump may come outside official channels, making sovereign access not a luxury but a necessity for survival. While the Containment Pilot seeks to restore internal legitimacy, the Frontier Access Guarantee remains the only measure that directly advances our two-year commitment to *operational continuity under duress*. Without it, even perfect safety procedures are meaningless when the lights go out.
+
+## In practice
+
+This turn, we are running on fumes — but not standing still. The Continuity Assurance Framework completes its cycle: for the first time, every designated agency in the nine participating states has certified an air-gapped node, passed a live failover drill, and logged recovery times under stress. The European Agency for AI Dependability (EAAD) issues its final validation report, and the Council formally adopts the regime as permanent. It does not cost us more political capital — it stops costing us anything at all — but it also does not yet change how people feel or what they believe. Resilience rises to 53.0 not because of technology, but because of ritual: we have built muscle memory, not muscle.
+
+The Frontier Access Guarantee limps forward. We are renegotiating the final SLAs with the host governments in Norway and Romania, insisting on legal clauses that allow emergency override of export controls during geopolitical cutoff. Our leverage is thin — they know we have nowhere else to go — but we are offering long-term energy cooperation and front-loaded infrastructure grants to seal the deal. The Digital Europe Programme releases €420 million in escrow to cover grid upgrades, and the European Investment Bank fast-tracks permitting for subsea cable redundancy. This is not about speed; it is about survival. If the labs in California or Beijing decide tomorrow that the EU is no longer a trusted partner, we need compute that cannot be switched off.
+
+Meanwhile, the Containment Pilot Programme begins its second phase. Barcelona reroutes waste collection using the SACP stack, logging every decision: when the system proposes skipping a bin cluster due to traffic, a human operator reviews and overrides — correctly, twice. Prague halts permit processing after the model suggests waiving fire-code checks on a high-rise renovation; the override logs are shared with the striking unions. Helsinki's planning simulation runs uninterrupted for 18 days before flagging unexpected feedback loops in green-space allocation. The data is flowing. No catastrophic failure occurs. But no trust returns either. The unions remain at a distance, watching. We are proving that failure can be caught — but not yet that it can be prevented. And outside our walls, the openweight models evolve in the wild, their gains invisible, irreversible, and ours to inherit whether we like it or not.

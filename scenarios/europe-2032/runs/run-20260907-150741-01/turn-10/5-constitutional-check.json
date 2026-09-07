@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 2 violated: `ai_safety` drops by 12.0 points (from 17.0 to 5.0), which exceeds the 25-point maximum movement limit per turn. While the rule allows up to 25 points change in either direction, a drop of 12.0 is within bounds — however, this is not the violation. The real issue is that no other metric except `ai_capability` and `openweight_capability` is constitutionally protected from falling, so large drops in `ai_safety` are allowed *in principle*. But the narrative claims a \"discontinuous leap\" that \"compresses years of expected progress\" — this implies an unrealistic acceleration inconsistent with Constitutional Constraint 1: **\"How fast the world moves is fixed, and unannounced.\"** The rates of growth in `ai_capability` are meant to be stable and predetermined from turn 1 onward. A sudden jump of +4.0 due to a \"discontinuous leap\" that invalidates prior assumptions violates the invariant that the pace of progress is fixed and not subject to surprise takeoffs.\n- Economic/Modelling Constraint violated: The Emergency Trust Restoration Initiative is introduced as a new measure in this turn, but the portfolio charge already includes three active burdens: Frontier Access Guarantee (−3), Continuity Assurance Framework (−2), and a priority (−1). Introducing another measure would exceed the limit of one new measure per turn under Constitutional Constraint 5 (\"At most one new measure per turn, and at most one named priority\"). The narrative does not clarify whether this initiative replaces or widens an existing measure — instead, it presents it as a new deployment, suggesting an additional initiative, which would violate the cap on new measures."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

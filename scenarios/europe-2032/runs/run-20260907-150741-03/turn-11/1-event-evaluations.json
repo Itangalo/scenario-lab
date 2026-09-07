@@ -1,0 +1,222 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.02415937274100044,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.1,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8058877230291747,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16648941427493513,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.40184546976967794,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.03333333333333333,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.016666666666666666,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.02,
+      0.03,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_aid_strike",
+    "probability": 0.18333333333333335,
+    "emergent": true,
+    "description": "Public-sector AI deployment failures, including in triage and border processing, trigger coordinated strike action by EU civil servants in critical agencies. The action is not against AI per se but against its rushed, under-supported rollout without institutional buy-in, exposing a crisis of implementation legitimacy. The strikes disrupt cross-border services and force emergency negotiations.",
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9196567319377358,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_ai_watchdog",
+    "probability": 0.14333333333333334,
+    "emergent": true,
+    "description": "In response to the repeated safety failures and the jump in capability without corresponding control, a coalition of scientists, ethics boards, and smaller nations calls for an independent Global AI Watchdog under UN auspices. The proposal gains traction in multilateral forums as a neutral oversight mechanism, distinct from US- or EU-centric models, aiming to audit frontier labs and incident responses.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7609933596616246,
+    "triggered": false
+  },
+  {
+    "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.",
+    "emergent": true,
+    "id": "emergent_bio_uplift_findings",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.",
+    "emergent": true,
+    "id": "emergent_cyber_defence_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8693617118462527,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1261552326863411,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.36823138799265553,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.956925596032386,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6614050870965634,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6525651460800543,
+    "triggered": false
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_institutional_fracture",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "The ongoing resistance from member states to EU-level evaluation mandates and audit requirements crystallizes into a formal working group opposing centralized AI governance, citing national sovereignty and regulatory overreach. This fracture undermines enforcement of the AI Act and delays cross-border data sharing essential for resilience.",
+    "probability_samples": [
+      0.25,
+      0.2,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eval_resistance",
+    "probability": 0.2833333333333333,
+    "emergent": true,
+    "description": "Legal challenges to the European Evaluation Shield intensify as additional labs join the CJEU injunction, supported by three member states. The dispute centers on whether the EU has authority to mandate third-party audits of proprietary models, threatening to paralyze pre-deployment review processes across the bloc.",
+    "probability_samples": [
+      0.3,
+      0.2,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

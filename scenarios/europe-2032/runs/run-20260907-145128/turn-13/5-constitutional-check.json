@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` decreased from 13.0 to 12.0 without justification under metric rule 5. The notepad states \"capability rose 0.5 < 2 → no decay term\", yet still applies a reduction. According to the constitution, the decay term in rule 5 only triggers when `ai_capability` increases by 2 or more points in a turn. Since `ai_capability` increased by only 0.5 (from 69.5 to 70.0), the decay term should not apply. No other capacity event is cited to justify a sovereignty loss. Therefore, the drop in `eu_ai_sovereignty` violates the rule-bound behavior of this metric."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` is incorrectly maintained at 13.0 in the proposed metrics, but the Game Master's Notepad explicitly states it was \"adjusted to 12.0 due to ongoing fragmentation and lack of implementation momentum\". The final metrics must reflect this update. The proposal presents 13.0, contradicting the authoritative notepad, which violates the requirement that the notepad is the persistent and binding record.\n- Modelling choice 5 violated: The narrative introduces two measures — \"Emergency Resilience Surge\" and \"Middle-Power AI Coordination Forum (MPACF)\" — each with active implementation efforts and cost tracking (as seen in the notepad: MPACF −3, Emergency Resilience Surge −3). This exceeds the limit of \"at most one new measure per turn\". While MPACF may have been initiated earlier, the active bilateral talks, conditional engagements, and cost allocation in this turn suggest it is being treated as an active new initiative alongside the Emergency Resilience Surge, which is not permitted."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

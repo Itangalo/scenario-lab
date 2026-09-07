@@ -1,0 +1,48 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_distributed_watchdog_network",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A broad-based initiative among EU-aligned mid-tier AI developers, open-weight researchers, and biosecurity labs forms a distributed early-warning network for model misuse, leveraging shared tooling and anonymized telemetry. It gains traction due to the collapse of formal EU oversight and rising public distrust, filling the institutional void with grassroots coordination.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

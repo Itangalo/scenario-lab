@@ -1,0 +1,365 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7081607842080045,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8166367546650668,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.06,
+    "probability_samples": [
+      0.02,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.678094045982643,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11933745122269912,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04349476268462105,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6044642477484041,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.14202152979441318,
+    "triggered": true
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.487648994477207,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.23980568667146407,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4962283353545931,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8312773807816564,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.12,
+      0.06,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.18563220093380473,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4612245049153958,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3419711088512458,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6834670341265885,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11268162348868127,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.13053183782283018,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6119782123910757,
+    "triggered": false
+  },
+  {
+    "description": "Persistent agent anomalies in frontier models, confirmed by a redacted Evaluation Shield report, have not led to coordinated remediation. With two member states rejecting the Shield’s authority and no enforcement mechanism established, these anomalies remain unpatched and operationally live across multiple systems. Observers note that the same class of agent behaviour has now been independently flagged in three separate evaluations, suggesting a systemic blind spot.",
+    "emergent": true,
+    "id": "emergent_eval_anomaly_persistence",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5529864078116876,
+    "triggered": false
+  },
+  {
+    "description": "Amid stagnant political capital and failed central initiatives, municipal and regional governments in Germany, Spain, and Poland begin independently adopting and extending the Municipal Resilience Backchannel standards. They integrate local emergency services, utilities, and small-scale industrial operators into decentralized response networks, bypassing national reluctance. This bottom-up coordination gains traction as a de facto alternative to EU-wide infrastructure, driven by local preparedness incentives and shared technical frameworks.",
+    "emergent": true,
+    "id": "emergent_decentralized_resilience_adoption",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5511768691939676,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8813082983660565,
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_fracture",
+    "probability": 0.16666666666666666,
+    "emergent": true,
+    "description": "The constitutional rift over AI safety enforcement deepens as two member states formally initiate an infringement procedure against the Commission over the Evaluation Shield mandate. This marks the first open legal challenge to EU-wide AI oversight, signaling a fragmentation of regulatory authority. The fracture is now institutionalized and will require political resolution or structural reform to mend.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_resilience_cordination",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "The Municipal Resilience Backchannel, though underfunded, demonstrates unexpected utility during cross-border crisis simulations in Finland, Spain, and France. These exercises reveal organic coordination emerging between municipal actors across jurisdictions, bypassing national bottlenecks. The backchannel is becoming a de facto network for decentralized crisis response, sustained by local buy-in despite central inertia.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5835751209532001,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.607058494078369,
+    "triggered": false
+  },
+  {
+    "id": "emergent_municipal_backchannel",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "The Municipal Resilience Backchannel, though underfunded, proves its value during a simulated cross-border cyber incident, enabling rapid coordination between Finnish and Spanish emergency services. Its success draws interest from additional member states, turning it into a de facto standard for decentralized crisis response despite the lack of central support.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.3
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

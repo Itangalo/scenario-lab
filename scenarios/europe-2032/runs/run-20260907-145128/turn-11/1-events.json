@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_strike_wave",
+    "probability": 0.18666666666666668,
+    "emergent": true,
+    "description": "In response to widespread public-sector automation failures and visible job attrition in administrative and legal sectors, coordinated strikes erupt across multiple member states, targeting ministries and agencies that have adopted AI systems. The strikes disrupt public services and force emergency debates in several capitals, framing AI not just as a technical failure but as a socio-political rupture.",
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

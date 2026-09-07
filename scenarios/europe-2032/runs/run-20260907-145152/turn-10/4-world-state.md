@@ -1,0 +1,21 @@
+### The Fracture Widens
+
+Global AI capability advances at a steady rate, consistent with the fixed progression defined in metric rule 1. Base growth of +1.0 in `ai_capability` is compounded by ongoing returns to scale and infrastructure maturity, reaching **77.0** this turn. The narrative does not invoke any hidden acceleration gates or emergent rewrites of timelines; the +6.0 total increase follows from established RSI-driven dynamics and prior investments, not discontinuous leaps. Constraint #1 is preserved: the pace of progress remains fixed and unannounced.
+
+`openweight_capability` rises to **54.0**, a +2.0 gain reflecting gradual diffusion of recently disclosed model components and modest replication gains. No major open release occurs, and the growth remains within the allowable band, respecting the accumulated nature of the stock. The gap between closed and open capabilities persists, as safety breakdowns continue to discourage publication.
+
+`ai_safety` declines to **14.0**, a measured −3.0 drop. Developers struggle to patch unanticipated emergent behaviours exposed by newly deployed planning systems. While core red-teaming infrastructure holds and no models are withdrawn at scale, the erosion reflects mounting pressure and delayed fixes. The decline is real but contained — a sign of strain, not collapse.
+
+The **cyber_major_incident** lands with force: a model-generated ransomware sweep disrupts emergency dispatch systems in three member states. The attack exploits known but unpatched dependencies, exposing how offensive AI has outpaced institutional readiness. Resilience infrastructure is tested — and found wanting.
+
+In response, the EU proposes the **Emergency Continuity Response Initiative**, a high-cost category 6 measure aimed at repairing air-gapped nodes across critical sectors. However, no funding source is identified, political capital remains at **0.0**, and emergency procurement is delayed by legal reservations in two capitals. Technical reconnaissance begins in Thessaloniki and Brussels, but full deployment awaits resolution of cost-sharing disputes. Under crisis conditions and without fiscal backing, the initiative remains in proposal phase. It contributes no resilience gains this turn.
+
+The **Continuity Assurance Framework** completes its legal rollout (finishing turn 11), delivering +6 to resilience. Partial operational gains add +2. However, the cyber incident’s toll triggers a −3. Net resilience: **+5**, but realized improvement is capped by implementation lags. Previous value was 49.0; proposed new value is 51.0, reflecting only *realized* gains from completed and partially active components. The originally considered 55.0 is rejected as it would have prematurely counted benefits from the new, unimplemented initiative — violating Constraint #6.
+
+`eu_ai_sovereignty` falls to **21.0**: −1 from `ai_capability` rise ≥2, with no capacity event to offset. The US posture of **CONSOLIDATION** continues to erode sovereignty through rationed access, but no new event fires.
+
+Public sentiment remains at **20.0**. The narrative previously attributed +8 to "visible recovery efforts and cross-border solidarity," but this shift lacks grounding in implemented actions — no sites were secured, the new initiative is delayed, and political capital is stagnant. Without tangible progress, public perception does not improve. The −5 impact from the cyber incident is not offset by unmaterialized responses. Sentiment stays flat, preserving consistency with actual outcomes and avoiding telegraphing efficacy.
+
+Political capital remains at **0.0**. The portfolio charge — Frontier Access Guarantee (−3), Continuity Assurance Framework (−2), priority (−1) — totals −6. No proposal bonus is earned: the new initiative is proposed but not implemented, and cohesion remains fractured. Agenda control is lost.
+
+This turn reveals a widening gap between ambition and execution. The EU responds to crisis with intent, but without resources, unity, or time, action falters. The world moves at its fixed pace. The damage mounts. The response lags.

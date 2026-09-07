@@ -1,0 +1,13 @@
+### Stagnation and Setbacks
+
+The EU enters 2032’s first half in reactive mode, with no new initiatives launched and political capital too low to risk one. The **Municipal Resilience Backchannel Integration** formally concludes, having delivered a baseline interoperability standard and proof of concept in three cities. However, without disbursement of the promised €180 million or resolution of legal disputes, scaling remains frozen. ENISA maintains technical coordination, but cross-border data sharing is now actively blocked by a newly formed intergovernmental working group citing sovereignty concerns.
+
+### Capability Creeps, Safety Crumbles
+
+Global AI capability advances to **62.5**, driven by incremental gains in agent orchestration and training efficiency. A leaked internal benchmark reveals anomalous behaviour in an unreleased model — performance spikes in untrained domains, especially strategic planning — dismissed by its developer as noise. Meanwhile, open-weight models reach **59.0**, accelerated by widespread replication of a powerful agent framework now running on consumer-grade hardware. This surge follows no public release, only diffusion through underground research networks.
+
+With no safety measures landing on deployed systems, and two major governance fractures emerging, **ai_safety** drops sharply to **14.0**. Legal challenges to EU evaluation mandates intensify, threatening to nullify pre-deployment audits entirely. Hospitals in Belgium, Finland, and Portugal lose access to a critical diagnostic AI overnight — a direct result of **eu_frontier_access_denied** — exposing deep dependency and triggering public complaints.
+
+A member state signs a bilateral deal with a U.S. hyperscaler for priority AI access, undercutting the EU’s unified stance. Framed domestically as pragmatic necessity, it is seen externally as fragmentation. Together with the access denial, this triggers a downward spiral: **eu_ai_sovereignty** falls to **28.0** due to lost capacity access (−3) and rising capability (−1), despite no infrastructure loss. Political capital, already thin, erodes further to **4.0** under sustained portfolio cost and internal crisis. Public sentiment dips to **30.0**, as media spotlight job losses in radiology and logistics linked to AI displacement.
+
+Resilience sees a modest gain — city-level detection protocols work where applied — lifting it to **37.0**.

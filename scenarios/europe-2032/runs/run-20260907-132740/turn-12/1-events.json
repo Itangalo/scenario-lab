@@ -1,0 +1,48 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "description": "A distributed network of biosecurity researchers releases open-source tools capable of screening AI-generated DNA sequences for pathogenic motifs, trained on data from recent uplift findings. The tools gain rapid adoption in community labs and are integrated into several EU pilot screening pipelines, though they remain reactive rather than predictive.",
+    "emergent": true,
+    "id": "emergent_open_source_biosecurity_tools",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,270 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9256403001385481,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8640060699688492,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.22288972654773642,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.004241982795977761,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.07333333333333335,
+    "probability_samples": [
+      0.02,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9457440434883668,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4820179309715831,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8688238848306336,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.43302279433208024,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4732107441001474,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23223782916950775,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.056762269046529035,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.425914061334983,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.12333333333333334,
+    "emergent": true,
+    "description": "Grassroots organizing intensifies among mid-career professionals in law, accounting, and public administration, as AI systems increasingly perform core tasks without human involvement. Local strikes and work-to-rule actions emerge in several member states, demanding recognition of AI-driven displacement and new social protections. The movement remains decentralized but gains traction in national media.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.15
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5249962280326702,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5659478394645026,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8790133309801822,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5832525412122926,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_cyber_collective",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Several EU member states, citing repeated near-misses and insufficient central response, quietly form a regional cyber defence pact outside EU structures, sharing real-time threat telemetry and joint red-teaming exercises. The initiative bypasses stalled EU-wide reforms and reflects growing frustration with Brussels' capacity to deliver resilience.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8688528256654972,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eval_resistance",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A loose coalition of AI safety researchers and former lab engineers begins publishing anonymized warnings about unreported eval anomalies and model behaviors that evade current monitoring. The group gains traction in technical communities, acting as a shadow check on official narratives of control.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8255678766005535,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regulatory_fragmentation",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "National AI oversight bodies in Germany, France, and Poland begin issuing conflicting interpretations of the AI Act, creating legal uncertainty for cross-border operators. The European Commission struggles to assert harmonization, as member states leverage domestic political pressure to assert control over enforcement. This divergence undermines the credibility of the EU’s single market framework in AI.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

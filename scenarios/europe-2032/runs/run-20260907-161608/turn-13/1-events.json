@@ -1,0 +1,38 @@
+[
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_legal_challenge_ai",
+    "probability": 0.2933333333333334,
+    "emergent": true,
+    "description": "Following the prolonged aid disbursement halts and audit failures, a coalition of civil society groups, auditors, and affected municipalities launches a pan-European legal challenge against the use of uninterpretable AI in essential public services. The case is filed at the European Court of Human Rights, arguing that opaque automated decisions violate the right to a fair hearing and effective remedy. The filing gains rapid amicus support from data protection authorities in six member states, turning it into a constitutional test of AI governance.",
+    "probability_samples": [
+      0.3,
+      0.28,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.",
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

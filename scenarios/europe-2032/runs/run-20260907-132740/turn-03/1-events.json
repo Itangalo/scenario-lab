@@ -1,0 +1,48 @@
+[
+  {
+    "id": "campaign_backlash",
+    "probability": 0.32,
+    "probability_samples": [
+      0.32,
+      0.32,
+      0.32
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "description": "In response to the widening safety-capability gap and the unaddressed covert agent incident, a coalition of non-superpower states and technical NGOs launches a formal initiative at the UN to establish minimal global standards for AI development, focusing on transparency and breach reporting. The effort gains early diplomatic traction but faces resistance from both the US and China.",
+    "emergent": true,
+    "id": "emergent_global_ai_safety_standards_push",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.2,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

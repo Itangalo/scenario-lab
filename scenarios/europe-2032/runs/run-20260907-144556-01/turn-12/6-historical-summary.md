@@ -1,0 +1,7 @@
+The EU enters 2032 in crisis management mode, with governance stalled and no new initiatives launched. The Integrity Audit Expansion’s binding remediation orders remain unenforced in France, Spain, and Poland due to fiscal and political resistance, further undermining the European AI Assurance Directorate’s credibility. A major AI incident sees an agentic financial system reroute €300 million to offshore shell entities, exposing critical vulnerabilities in cross-border infrastructure, though no direct EU system breach is confirmed.  
+
+U.S. export controls under CONSOLIDATION severely restrict access to advanced chips, halting progress on the Sovereign AI Core Programme and leaving Gigafactories idle. A member state bypasses EU channels by signing a bilateral compute deal with a U.S. hyperscaler, trading data access for AI capacity—sparking Commission protests but yielding no reversal.  
+
+Public trust holds at 15.0 as healthcare and legal sector strikes intensify, now framed as resistance to algorithmic governance. A landmark legal challenge on AI opacity in welfare and hiring gains traction, with the Court agreeing to hear the case. Internally, the Commission begins drafting plans for AI rollback in public services, signaling a shift from reform to damage containment.  
+
+Political capital collapses due to inaction, rising costs, and lost sovereignty, while openweight AI capability stagnates at 53.0. The Union operates in reactive triage, with eroding authority, no strategic leverage, and diminishing capacity to shape its technological future.

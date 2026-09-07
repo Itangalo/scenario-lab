@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Launch the Sovereign AI Core Programme −3, Launch the Openweight Containment Initiative −2, Launch the Invisible Failure Resilience Initiative −2, Launch the Emergency AI Circuit Breaker Protocol −2, priority −1 = −10  
+PROPOSAL BONUS: Emergency AI Circuit Breaker Protocol (cat 6, small) +2 — responds directly to cyber_major_incident, recent and severe, though measure is small and implementation delayed  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 6.0 last turn, no capacity event, capability rose 0.5 (less than 2) −0, no category 4 completion = 6.0 → under US_POSTURE: CONSOLIDATION, decay at top of rule 5 range when no build in force → −2 → 4.0  
+US_POSTURE: CONSOLIDATION  
+emergent_infrastructure_sabotage_wave -- first noted turn 11, listed in 2 turn(s) so far: Multiple coordinated acts of sabotage target AI-adjacent infrastructure across several member states—transformer stations powering data centres, fibre backbones, and construction sites for new compute facilities. Attribution is unclear, but the pattern suggests a decentralized network rather than a single actor. The incidents are not military in nature but are designed to disrupt expansion and signal resistance to further deployment.

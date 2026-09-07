@@ -1,0 +1,250 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7412156245751849,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.46756874875536847,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1482589864731202,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7960128800200826,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08789705177819107,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A coalition of mid-sized AI powers — including the EU, South Korea, Japan, and Taiwan — begins informal coordination on open-weight model evaluations and defensive cyber tooling sharing, motivated by shared vulnerability to access denial and supply-chain coercion. The forum lacks formal structure but enables mutual early warnings and joint pressure on U.S. export licensing. It emerges from decentralized technical dialogues rather than high-level diplomacy.",
+    "emergent": true,
+    "id": "emergent_defensive_tech_coordination",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6312690678720708,
+    "triggered": false
+  },
+  {
+    "description": "Citizen-led AI auditing collectives in France, Germany, and Spain achieve a breakthrough in model transparency by combining red-teaming with low-cost cluster access, publishing a shared methodology that detects policy-violating behaviors in public-sector AI systems. The work gains traction in national parliaments, increasing pressure on the Commission to formalize local accountability networks. This decentralized innovation spreads rapidly through open forums.",
+    "emergent": true,
+    "id": "emergent_local_transparency_breakthrough",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.14199984364811113,
+    "triggered": false
+  },
+  {
+    "description": "A loose coalition of municipal governments, civic technologists, and auditors begins coordinating outside EU structures to audit and document harms from public-sector AI systems, building on local initiatives gaining media traction. It operates independently of the stalled EU Accountability Tribunal and gains credibility through transparency and grassroots legitimacy.",
+    "emergent": true,
+    "id": "emergent_local_ai_accountability_networks",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Widespread failures in AI-mediated public services, combined with visible lack of redress, lead to coordinated acts of civil disobedience targeting AI infrastructure across multiple member states, including blockades of data centres and sabotage of network links. The protests are decentralized but share common symbols and tactics, signaling a broader shift from skepticism to active resistance.",
+    "emergent": true,
+    "id": "emergent_pan_european_backlash",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.05666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.17
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8098715353496457,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9394925561966495,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.16516772613640018,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6772260189483491,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.06333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.19
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2539638347252553,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7849453044786193,
+    "triggered": false
+  },
+  {
+    "description": "A loose coalition of regional governments, citizen auditors, and open-source developers forms a distributed network to audit and monitor AI systems in public services, publishing findings and pushing for local accountability. It gains traction as trust in EU-level institutions erodes, and its methods are replicated across several member states.",
+    "emergent": true,
+    "id": "emergent_decentralized_ai_audit_networks",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Amid growing frustration with EU inaction, a group of smaller member states begins informal coordination with Japan, South Korea, and Canada on open-weight AI evaluation and safety benchmarks, aiming to create a mutual recognition framework for trustworthy models. The initiative bypasses EU channels and is framed as a resilience measure.",
+    "emergent": true,
+    "id": "emergent_minilateral_safety_forum",
+    "probability": 0.06999999999999999,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.21
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,34 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` — finished this turn  
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` — finished this turn  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability`` — finished this turn  
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` — finished this turn  
+``Launch the Public Assurance Protocol (category 2, costs 2 per turn, started turn 6, finishes on turn 7): A binding requirement that all sovereign AI systems above 55.0 capability subject to SMAF or the AI Containment Protocol must publish an annual public assurance report, co-signed by the EAAD and national oversight bodies, explaining their safety architecture, containment measures, and incident history in accessible language`` — finished this turn  
+``Launch the Openweight Containment Initiative (category 3, costs 2 per turn, started turn 7, finishes on turn 9): A binding directive requiring all open-weight releases above 45.0 capability to include embedded watermarking, usage tracking, and remote deactivation triggers, enforceable through licensing conditions on EU-based hosting providers and cloud marketplaces`` — finished this turn  
+``Launch the Integrity Audit Expansion (category 1, costs 2 per turn, started turn 9, finishes on turn 11): A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation`` — finished this turn  
+``Initiate Emergency Sovereignty Stabilisation Facility (category 4, costs 2 per turn, started turn 12, finishes on turn 14): A rapid, legally grounded intervention to secure and reconstitute the EU’s minimal viable AI sovereignty: retain access to the last remaining sovereign model weights, protect the core technical staff of the defunct SACP, and establish emergency governance over any surviving compute clusters capable of running models above 55.0``
+
+## New measure
+**Measure:** Propose Emergency Access Compact with Member States  
+A legally binding agreement among the Commission and willing member states to grant immediate, irrevocable access to all frontier-capable compute infrastructure during declared AI emergencies, enforced through conditional funding and mutual legal recognition.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: small`  
+`Finishes on turn: 15`  
+`Targeted effect:` Prevent further decline in `eu_ai_sovereignty` by establishing a binding mechanism for access to national compute assets; begin restoring `eu_political_capital` by demonstrating enforceable unity; stabilize `ai_safety` by enabling audits on systems previously outside oversight  
+`Applies to:` EU institutions, participating member states, national research and defence agencies, EU-based frontier AI personnel
+
+## Priority
+**Priority:** Initiate Emergency Sovereignty Stabilisation Facility  
+We are prioritising this because `eu_ai_sovereignty` has fallen to 4.0 — below functional minimum — and without even a rump capability to point to, the Union loses all leverage, all credibility, and all capacity to act as a sovereign entity in AI; with `eu_political_capital` at 0.0, we cannot rebuild from scratch, but we must prevent total erasure.
+
+## In practice
+This turn, we are acting from near-zero institutional momentum. The collapse of the Integrity Audit Expansion, the **backlash_physical** wave of sabotage, and the **eu_frontier_access_denied** incident — in which U.S. hyperscalers abruptly cut off access to models above 60.0 capability for all EU public institutions — have shattered any remaining presumption of control. The Commission is no longer setting policy; it is improvising survival. The Emergency Sovereignty Stabilisation Facility is now our only instrument for preventing total institutional dissolution.
+
+We are invoking Article 222 TFEU and activating the Union Civil Protection Mechanism to justify emergency access to residual compute. The crisis cell, composed of DG CONNECT, the European Defence Agency, and a remnant of EAAD evaluators, is deploying to the two remaining exascale clusters — one in Finland, one in France — both technically EU-owned but now under hybrid contracts with foreign hyperscalers. We are offering emergency contracts — triple salary, legal immunity, relocation support — to retain the last engineers who understand the SACP stack. Physical perimeters are being reinforced, but air-gapped evaluation environments remain unimplemented due to lack of trust and technical continuity.
+
+Negotiations with member states are collapsing. France continues to block access, citing national sovereignty. Finland threatens to suspend cooperation unless maintenance guarantees are restored by the hyperscaler — which they will not be. The bilateral deal signed by one member state has created a precedent that others quietly cite. We are now drafting the Emergency Access Compact as a fallback: a binding pact among willing states to pool compute during existential risk events, backed by conditional access to EU recovery funds. But without political capital, even this is a gesture — a signal that someone, somewhere, is still trying to hold the line. We are not governing AI. We are preserving the possibility that we ever could again.

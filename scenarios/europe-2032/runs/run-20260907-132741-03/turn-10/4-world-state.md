@@ -1,0 +1,11 @@
+### A Crisis of Legitimacy Deepens
+
+The EU began 2031 reeling from a cascade of failures. A damning ombudsman’s report exposed systemic harm in the Netherlands’ AI-driven social insurance system, where flawed behavioural models denied benefits to thousands. The scandal, erupting just as the Public Trust Corps was meant to restore confidence, instead shattered any illusion of procedural safety. Protests flared in Utrecht and Lyon under the same slogan: “You built systems that see us as threats.” Trust, already fragile, collapsed further.
+
+In response, the EU reoriented its flagship Public Trust Corps toward redress, adding a Redress Coordination Unit and expanding the AI Incident Dashboard to include systemic bias alerts. Yet these changes came too late to stem the backlash. The new Algorithmic Accountability Boards were announced as a cornerstone of reform, but their creation felt reactive, not visionary. Member states like Poland and Spain remained skeptical, viewing them as another layer of unelected oversight.
+
+Meanwhile, the frontier surged ahead. A sudden capability jump in narrow domains — particularly cyber operations and code generation — widened the gap between frontier AI and EU access. Open-weight models, now at 56.5, enabled more sophisticated misuse, including probing attacks on mid-tier industrial systems. Resilience eroded as incidents mounted and response capacity strained.
+
+The US-led supply chain coercion deepened the crisis. Washington forced the Netherlands to restrict ASML’s exports beyond leading-edge tools, targeting older lithography machines vital to global chip supply. This move, leveraging American technology embedded in the chain, left the EU exposed and unable to retaliate. The Union’s own compute base remained underdeveloped, and sovereignty continued to decay.
+
+With political capital already at historic lows, the cost of maintaining three large measures — including the new Accountability Boards — proved unsustainable. The Trust Corps, meant to be a beacon, instead became a symbol of overreach. Public sentiment plummeted as faith in AI governance evaporated.

@@ -1,0 +1,48 @@
+[
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.05000000000000001,
+    "probability_samples": [
+      0.05,
+      0.05,
+      0.05
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eu_aid_strike",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A coalition of EU member states' audit agencies and ombudsmen launches a coordinated review into the use of AI in public aid distribution, citing irregularities in triage logic from the Emergency Trust Restoration Initiative. The investigation halts disbursements in three countries pending reforms, exposing fragmentation in oversight.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

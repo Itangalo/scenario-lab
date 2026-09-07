@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 61.0 (+9.0) in a single turn, which is an impermissible jump given the accumulated nature of this metric and the requirement that it cannot exceed `ai_capability` at any point. While `ai_capability` rose from 62.0 to 63.0, the new `openweight_capability` of 61.0 is now too close to the frontier without a plausible accumulation path. A jump of this magnitude in one turn—especially nine points—is inconsistent with the gradual, bounded growth implied by the constitution and not justified by narrative mechanisms such as phased leaks or incremental releases. This violates the invariant that `openweight_capability` may only rise or stay flat and must trail `ai_capability` unless a catastrophic compute event is narrated (which it is not).\n- Narrative Constraint 8 violated: The narrative states \"an unexpected open-weight release, closely following the closed frontier, floods underground networks. Capabilities near 61.0 are now widely distributed,\" which effectively telegraphs the current level of `openweight_capability` as a direct consequence of a specific event. While event impacts can be described, the explicit alignment of the release with a precise capability level (61.0) and its immediate, full distribution across networks implies a deterministic outcome that bypasses uncertainty gates. This amounts to telegraphing a metric value via narrative, which is prohibited."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

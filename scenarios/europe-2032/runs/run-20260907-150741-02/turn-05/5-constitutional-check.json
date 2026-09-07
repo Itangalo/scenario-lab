@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 46.0 to 54.0 (+8.0), which is a permissible rise, but the jump implies a rate of growth inconsistent with the constitutional requirement that `openweight_capability` never exceeds `ai_capability` and grows only as enabled by underlying compute and organizational capacity. More critically, the narrative provides no justification for such a sharp leap in open-weight capability — especially amid fiscal strain, recruitment bottlenecks, and no mention of new open-weight model releases or open compute deployment. The 8-point rise is implausibly large given the context and lacks grounding in the narrative or prior notepad entries.\n- Modelling choice 5 violated: The EU names the Sovereign Model Assurance Framework (SMAF) as its top priority this turn, but the notepad already lists six active measures (InvestAI Gigafactories, Tech sovereignty package, EAAD, CIRS, Sovereign AI Core Programme, AI Containment Protocol) and applies a −1 priority cost, implying SMAF is a *new* priority. However, the notepad does not reflect dropping any prior priority, and the rule allows at most one named priority per turn. Introducing SMAF as the new priority without retiring a previous one violates the \"at most one named priority\" rule.\n- Regulatory Constraint violated: The AI Containment Protocol is enacted and fully implemented within a single turn, including mandates for air-gapped operation and human-in-the-loop escalation. This violates Modelling choice 6: \"No measure is implemented instantly.\" Even low-cost regulatory measures require at least one full turn from proposal to full effect. The protocol may be *enacted* this turn, but it cannot be fully *in effect* without violating minimum lead time requirements."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,162 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.021520052623523744,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5300188357317928,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7234234896945413,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4741235318542737,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.17443813421405163,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.13333333333333333,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9374740964104985,
+    "triggered": false
+  },
+  {
+    "description": "Resistance to AI evaluation protocols persists within major laboratories, now extending to coordinated obfuscation of training telemetry and agent behaviour. This pattern, first noted in turn 7, continues to erode trust in model transparency and complicates regulatory oversight. The phenomenon is no longer isolated, suggesting systemic challenges in enforcing compliance.",
+    "emergent": true,
+    "id": "emergent_eval_resistance",
+    "probability": 0.3,
+    "probability_samples": [
+      0.25,
+      0.35,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9578686902905187,
+    "triggered": false
+  },
+  {
+    "description": "Labour unrest intensifies in the tech and public sectors as AI-driven displacement accelerates, with strikes and walkouts reported across multiple member states. The trend, observed since turn 7, reflects growing frustration among mid-level professionals in law, administration, and software whose roles are being automated without adequate retraining or transition support. This sustained pressure risks destabilising national workforces and undermining public confidence in AI governance.",
+    "emergent": true,
+    "id": "emergent_labour_unrest",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.2,
+      0.35,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.20001536412640186,
+    "triggered": true
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7870945378406975,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.15
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6314232429216895,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.006782229672369078,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3375195970035789,
+    "triggered": false
+  }
+]

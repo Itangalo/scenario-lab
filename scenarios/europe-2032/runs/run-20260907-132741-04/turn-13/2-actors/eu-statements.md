@@ -1,0 +1,20 @@
+# Statements: The European Union (turn 13)
+
+## Ledger
+
+- `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.
+- `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late.
+- `two_year_commitment` (commitment): Restore political agency and public trust through demonstrable control over AI incidents, transparent accountability, and sovereign response capacity — but this turn, the denial of frontier access and the collapse of political capital make clear that control without capability is performative. We now pivot from accountability as the primary lever to survival of agency: re-establishing operational sovereignty in AI is the precondition for all else.
+
+## Changes this turn
+
+- **modify** `two_year_commitment` — rejected-structural
+  - Tier: commitment
+  - Text: Restore political agency and public trust through demonstrable control over AI incidents, transparent accountability, and sovereign response capacity — but this turn, the denial of frontier access and the collapse of political capital make clear that control without capability is performative. We now pivot from accountability as the primary lever to survival of agency: re-establishing operational sovereignty in AI is the precondition for all else. However, with `eu_political_capital` at −4.0 and the openweight frontier release now matching the closed frontier within months, we can no longer rely on delay or restriction to buy time. The capability is already loose. Our commitment must now narrow: by turn 15, we will have repurposed at least 30% of the open-weight frontier capability into a sovereign, hardened EU operational stack — not for competitiveness, but for continuity of governance. If we cannot act as a sovereign technical body by then, we will not act at all.
+  - Grounds: The `openweight_frontier_release` event changes the strategic picture: the most dangerous capabilities are now globally distributed and unrecallable. The old hope — that frontier access could be restored or that open models would lag far enough to allow defensive preparation — is gone. At the same time, `eu_frontier_access_denied` confirms that dependency is not just risky but actively revocable. With `eu_political_capital` now negative, we cannot launch new large instruments, but we can redirect what remains. The commitment shifts from dual goals (sovereign compute + public service) to a single, existential objective: operational continuity. Everything else — trust, legitimacy, resilience — depends on the Union being able to run *something* that works, that is ours, and that cannot be switched off.
+  - Reason: a commitment-tier change must name a Trigger
+- **modify** `act_under_uncertainty` — rejected-structural
+  - Tier: commitment
+  - Text: We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer act without leaving a traceable path of accountability, and we will not act at all if the action depends on foreign goodwill we cannot enforce. This turn, we add: when we act, we must also show effect within six months, or stand down and re-evaluate. However, in conditions of negative political capital, we must now act *only* where failure carries no further cost — that is, where the measure uses already-available resources, requires no new legal authority, and can be reversed without institutional damage.
+  - Grounds: The political system is not just strained but inverted: we are spending capital we do not have, and every new obligation deepens the deficit. The previous addition to this commitment assumed a floor of 1.0; at −4.0, that floor has broken. To avoid compounding collapse, we must now constrain ourselves to actions that cannot fail in a way that destroys further trust — only those that either succeed or vanish silently. This is not retreat; it is triage.
+  - Reason: a commitment-tier change must name a Trigger

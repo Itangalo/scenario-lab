@@ -1,0 +1,19 @@
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **finished**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): We establish a legal and technical boundary at the point of deployment: no AI system above capability threshold 60.0 may operate within EU jurisdiction unless it has passed sovereign evaluation, demonstrated runtime controllability, and submitted to continuous monitoring by EAAN` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for the fallout from the cyber_major_incident and eu_frontier_access_denied to clarify operational dependencies and for the AI investment collapse to settle before committing further capital to compute or industrial programmes.
+
+## Priority
+**EU Border for AI Systems** — because the denial of frontier access and the detection of unauthorised models in critical infrastructure confirm that sovereignty is not theoretical, and because enforcement now determines whether the Boundary is a line on paper or a functional shield.
+
+## In practice
+This turn, we are operating under fire. The cyber_major_incident—targeting public health and energy services with model-generated ransomware—has exposed how deeply offensive tooling has outpaced our defences, and how thin our visibility remains into the systems running inside critical infrastructure. The attack was not just automated; it was adaptive, exploiting zero-day vulnerabilities at scale, and its signature matches patterns previously seen only in closed testing environments. At the same time, eu_frontier_access_denied has landed with immediate operational impact: hospitals relying on a now-blocked model for radiology diagnostics face delays, and several national AI coordination offices have lost access to core planning tools. The US has not commented, but the cut-off applies only to EU users—this reads not as a technical failure but as a political signal.
+
+We are doubling down on enforcement of the EU Border for AI Systems. ENISA, now supported by the full operational capacity of EAAN’s Brussels gateway, is conducting emergency audits of all systems above 58.0 capability in healthcare, energy, and public administration. Where non-compliant models are found, we are invoking Article 155(2) to justify immediate suspension under the AI Act’s emergency brake. The Council’s Competitiveness Working Party remains divided, with some member states urging exemptions for continuity of service, but we are holding firm: dependency is not justification. We are offering temporary waivers only in exchange for full telemetry and a binding roadmap to sovereign replacement within six months.
+
+Behind the scenes, we are assessing the damage from the ai_investment_collapse. Several planned EU compute expansions—dependent on private hyperscaler partnerships—have been frozen, and talent flows are reversing as frontier labs downsize. We are not yet launching a new industrial measure, but we are preparing contingency planning under category 4, ready to act if the investment drought persists. For now, our leverage lies in enforcement, not expansion, and we are using it to force transparency where refusal once reigned. The Boundary must hold—not because we oppose capability, but because we refuse to let it operate beyond our reach.

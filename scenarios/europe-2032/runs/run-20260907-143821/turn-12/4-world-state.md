@@ -1,0 +1,11 @@
+### Salvage Operation
+
+With political capital exhausted and public trust collapsing, the EU abandons its symbolic redress framework, recognising that accountability without enforcement is performance, not governance. Instead, it pivots to salvage: formally anchoring the emergent industrial AI consortium of mid-sized European firms. Using emergency provisions under Horizon Europe and Article 185 TFEU, the Commission fast-tracks recognition through the European Innovation Council, offering access to testbed infrastructure in Finland and Sweden, vetted technical talent, and limited liability protection for joint development. The move is framed not as state-led sovereignty, but as risk-sharing among equals—binding a fragile, bottom-up effort to the Union before it fractures.
+
+### Silent Erosion
+
+AI capability advances to 70.0, driven by continuous training and algorithmic refinements abroad. No safety catch-up occurs: the Integrity Audit Expansion finishes but lands no enforcement teeth, and opaque reasoning persists in frontier systems. With no category 6 resilience measure in force, and capability rising, resilience slips to 37.0. The export control escalation and supply chain coercion—enforced via U.S. jurisdiction over ASML—deepen industrial dependency, reinforcing the urgency of the new consortium. Yet its recognition does not yet reverse the structural decay: sovereignty remains at 9.0, as the measure is small and in flight, yielding no immediate boost.
+
+### Public Backlash
+
+Labour displacement intensifies, with entry-level roles in law, accountancy and administration vanishing. Graduate hiring freezes become the norm, feeding a growing sense of generational exclusion. Public sentiment drops to 15.0, edging toward outright hostility. The EU’s pivot to industrial salvage is invisible to most citizens, read by others as abandonment of public accountability. No measure lands with visible public benefit, and the symbolic redress framework’s cancellation is seen as retreat, not realism.

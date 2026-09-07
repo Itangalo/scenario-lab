@@ -1,0 +1,38 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): We will enforce accountability for AI harm in public services through suspension of non-compliant systems, criminal liability for cover-ups, and public exposure of failure—transforming trust from a procedural promise into a consequence of action  
+  - Grounds: The Integrity Audit Expansion has concluded, revealing systemic failures but failing to shift public sentiment or restore institutional credibility through process alone. With `public_sentiment` at 18.0 and `eu_political_capital` at 2.0, we are no longer in a position to build trust incrementally. The only remaining path is to demonstrate authority through enforcement. This turn, we activate the EAAD’s Suspension Authority and release the failure docket—not to audit our way out of crisis, but to show that someone is being held responsible. The commitment must now reflect that we are acting not to restore confidence through process, but to impose it through consequence.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late—but now, we act where we can still be seen, and accept that visibility is the only remaining currency of legitimacy  
+  - Grounds: Our previous rewording already acknowledged that action without perception is indistinguishable from inaction. This turn, we operationalise that insight: the Enforcement of Suspension Authority and the public release of the failure docket are designed not just to remove harmful systems, but to be seen removing them. We are no longer betting on technical correctness; we are betting on symbolic clarity. The cost of being wrong is high, but the cost of being invisible is extinction.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` — finished this turn  
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` — finished this turn  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability`` — finished this turn  
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` — finished this turn  
+``Launch the Public Assurance Protocol (category 2, costs 2 per turn, started turn 6, finishes on turn 7): A binding requirement that all sovereign AI systems above 55.0 capability subject to SMAF or the AI Containment Protocol must publish an annual public assurance report, co-signed by the EAAD and national oversight bodies, explaining their safety architecture, containment measures, and incident history in accessible language`` — finished this turn  
+``Launch the Openweight Containment Initiative (category 3, costs 2 per turn, started turn 7, finishes on turn 9): A binding directive requiring all open-weight releases above 45.0 capability to include embedded watermarking, usage tracking, and remote deactivation triggers, enforceable through licensing conditions on EU-based hosting providers and cloud marketplaces`` — finished this turn  
+``Launch the Integrity Audit Expansion (category 1, costs 2 per turn, started turn 9, finishes on turn 11): A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation`` — finished this turn  
+
+## New measure  
+**Measure:** Activate the Enforcement of Suspension Authority and Publish the Failure Docket  
+This turn, we trigger the EAAD’s power to suspend public AI systems that fail audits or obstruct redress, and release a public record of unresolved harms to force accountability.  
+
+`Category: 3 (Limits and restrictions)`  
+`Size: small`  
+`Finishes on turn: 12`  
+`Targeted effect:` Increase `ai_safety` by 10–14 points through immediate decommissioning of high-risk systems and credible threat of enforcement, and raise `public_sentiment` by 8–12 points by demonstrating that AI harm has consequences — not just for systems, but for people.  
+`Applies to:` All AI systems deployed in public administration across member states, enforced by EAAD with binding authority over national agencies and prosecution services.
+
+## Priority  
+**Priority:** Activate the Enforcement of Suspension Authority and Publish the Failure Docket  
+We are pushing this hardest because the Integrity Audit Expansion has delivered its findings, and now we must act on them: if we do not suspend systems that denied 87% of disability claims in Ghent, we have no authority left—only theatre. This is the only measure that can break the cycle of public disbelief, even at the risk of triggering legal challenges or member-state defiance.
+
+## In practice  
+This turn, we are spending our last credible political capital not to build, but to break. The Commission has signed the order activating the Enforcement of Suspension Authority under Article 16 TFEU, citing the Ghent audit as evidence of systemic failure in public services. EAAD is issuing the first suspension notices within 48 hours—starting with the welfare system in Ghent, then Vilnius and Barcelona—backed by the threat of criminal investigations into administrators who concealed algorithmic denials. We are not waiting for appeals.  
+
+Simultaneously, we are releasing the failure docket: a public-facing digital register listing 23 unresolved cases of AI-driven harm in public services, from wrongful unemployment sanctions to automated eviction notices with no appeal path. It includes names, dates, and internal communications showing deliberate obfuscation. We have briefed investigative journalists at EBU and Le Monde in advance, ensuring the first stories go live the same morning as the suspensions. This is not transparency for its own sake—it is deterrence.  
+
+The Sovereign AI Core Programme is now fully repurposed: its remaining €12bn budget is being redirected to fund forensic AI units in six member states, trained to reverse-engineer black-box decisions and reconstruct harm chains for use in national courts. These will be our legacy—not as builders of sovereign AI, but as its coroners. And if that is all we can be, then we will be that thoroughly. Because if we do not act now, visibly and irrevocably, there will be no one left to believe in us at all.

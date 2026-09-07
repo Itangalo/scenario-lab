@@ -1,0 +1,33 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` — finished this turn  
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` — finished this turn  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability`` — finished this turn  
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` — finished this turn  
+``Launch the Public Assurance Protocol (category 2, costs 2 per turn, started turn 6, finishes on turn 7): A binding requirement that all sovereign AI systems above 55.0 capability subject to SMAF or the AI Containment Protocol must publish an annual public assurance report, co-signed by the EAAD and national oversight bodies, explaining their safety architecture, containment measures, and incident history in accessible language`` — finished this turn  
+``Launch the Openweight Containment Initiative (category 3, costs 2 per turn, started turn 7, finishes on turn 9): A binding directive requiring all open-weight releases above 45.0 capability to include embedded watermarking, usage tracking, and remote deactivation triggers, enforceable through licensing conditions on EU-based hosting providers and cloud marketplaces`` — finished this turn  
+``Launch the Integrity Audit Expansion (category 1, costs 2 per turn, started turn 9, finishes on turn 11): A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation``
+
+## New measure
+**Measure:** Enact Emergency AI Governance Suspension in Public Services  
+A temporary moratorium on the deployment of AI systems in welfare, social services, and public benefits administration until integrity audits are completed and redress mechanisms are legally binding and operational.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: small`  
+`Finishes on turn: 12`  
+`Targeted effect:` Halt further erosion of `public_sentiment` by visibly responding to the **automated_decision_scandal**; create political space to rebuild trust through the Integrity Audit Expansion and prevent irreversible backlash that could collapse support for all sovereign AI efforts  
+`Applies to:` All EU member states operating AI systems in public welfare and social benefit determination
+
+## Priority
+**Priority:** Enact Emergency AI Governance Suspension in Public Services  
+We are pushing this hardest this turn because public trust has collapsed to 18.0, and the **automated_decision_scandal** has transformed AI from a tool of efficiency into a symbol of systemic injustice — protests are spreading, and without a visible break in the status quo, all technical efforts to harden or audit will be dismissed as window dressing.
+
+## In practice
+This turn, we are acting from the edge of institutional legitimacy. The **automated_decision_scandal**, amplified by the **emergent_labour_strike_wave**, has turned AI in public services into a socio-political rupture. The **opaque_reasoning** event has stripped us of our verification tools, and without them, even the most robust frameworks—SMAF, EAAD, the Public Assurance Protocol—are seen as hollow. The Integrity Audit Expansion is due to conclude this turn, but its findings cannot land if the public no longer believes audits mean anything. We must act not just technically, but politically: to show that the Union still governs.
+
+We are invoking Article 114 TFEU to justify the Emergency AI Governance Suspension, arguing that divergent national approaches to AI in welfare have distorted the internal market and created systemic risk to fundamental rights. The measure targets only public-sector AI in benefits determination—no broader ban, no permanent prohibition. It is time-bound to turn 12, contingent on the publication of audit results and the establishment of enforceable redress pathways co-designed with civil society and labour representatives. We are engaging the Justice and Employment Council configurations, offering transitional funding and technical support to member states to maintain service delivery through human-staffed triage teams. The goal is not to halt AI, but to re-establish consent: no system resumes without a published audit, a verified appeal mechanism, and public co-signature from oversight bodies and affected communities.
+
+The Openweight Containment Initiative has expired without enforcement, and we are not pursuing legal action while the ECJ reference is pending. Our leverage is now internal: we must prove we can govern our own systems before we can claim to govern others. With `eu_political_capital` at 5.0 and member-state cohesion fraying, we are not attempting a broad regulatory push. Instead, we are focusing on a single, visible act of accountability—one that acknowledges harm, pauses compounding damage, and creates space for the Integrity Audit Expansion to matter. The era of assumed legitimacy is over. This turn, we govern by permission, not presumption.

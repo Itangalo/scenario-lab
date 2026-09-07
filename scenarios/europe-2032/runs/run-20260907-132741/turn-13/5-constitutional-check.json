@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Metric movement violation: `ai_safety` drops from 4.0 to 0.0 in the proposed metrics, but the narrative states it \"plummets to -8.0\". The final value in the metrics block must match the narrative and event logic; there is a discrepancy of 8 points, violating the requirement that metric changes be accurately represented and bounded (Constitutional Constraint 9: No metric moves more than 25 points in one turn is not the issue here, but the internal inconsistency invalidates the update).\n- Invariant violation: `ai_safety` is not one of the two metrics (`ai_capability`, `openweight_capability`) that are protected from falling due to accumulation rules. However, the narrative provides no justification for an 8-point drop (from 4.0 to -8.0), and the proposed metrics only reflect a drop to 0.0, not -8.0. This creates a contradiction between the narrative and the metrics, which undermines the integrity of the simulation. The constitutional requirement for coherence between narrative and metric outcomes (implied in Constraint 8 — no telegraphing, but also requiring truthful representation) is violated.\n- Economic/Regulatory Constraint violated: The cancellation of the **Sovereign AI Replacement Programme** and failure of the **Mandate for Public Algorithmic Accountability Boards** imply major policy reversals and institutional collapse, yet no corresponding event or gate in the notepad reflects a capacity or legitimacy collapse beyond the already accounted terms. The notepad shows only a routine charge of −6, but the narrative describes systemic failure. This mismatch suggests an unmodelled step-change in institutional capacity, which must be reflected in the rules or notepad if it is to affect future turns — otherwise, it violates Constraint 3 and 5 about realistic regulatory capacity and bounded measure changes."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

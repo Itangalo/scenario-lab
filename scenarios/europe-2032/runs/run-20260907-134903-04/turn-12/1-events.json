@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "Labour unrest intensifies in the tech and public sectors as AI-driven displacement accelerates, with strikes and walkouts reported across multiple member states. The trend, observed since turn 7, reflects growing frustration among mid-level professionals in law, administration, and software whose roles are being automated without adequate retraining or transition support. This sustained pressure risks destabilising national workforces and undermining public confidence in AI governance.",
+    "emergent": true,
+    "id": "emergent_labour_unrest",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.2,
+      0.35,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

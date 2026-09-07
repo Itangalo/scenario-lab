@@ -1,0 +1,13 @@
+### A Reckoning Without Resources
+
+The EU entered this turn in freefall. With political capital at zero and public sentiment near historic lows, the Union attempted a pivot from oversight to redress. Proposals to retool the Public Trust Corps into a Redress Coordination Unit gained internal traction, and draft fast-track compensation protocols were circulated. France and Finland expressed interest in piloting real-time bias dashboards, but no formal agreements were reached, and no implementation began—without staffing or funding, even symbolic coordination proved impossible.
+
+Two major measures reached completion: the InvestAI Gigafactories and the Sovereign Cyber Shield Initiative. The former failed to deliver tangible compute capacity by turn 7, with only site selections finalised; the latter successfully deployed hardened defence stacks across Tier 1 infrastructure, marginally improving resilience. However, with `ai_capability` advancing to 69.5, new autonomous attack patterns probed gaps in mid-tier systems, offsetting gains.
+
+The proposed EU-Wide Redress and Reform Programme aimed to restore trust through binding audits and cohesion fund conditionality. But its ambition collided with reality: Poland and Spain rejected the Accountability Boards as sovereignty violations, refusing to participate in sortition-based selection. Without enforcement leverage, the reform programme failed to launch.
+
+Meanwhile, `openweight_capability` remained at 56.5, consistent with prior trends but showing no new acceleration—no open-weight development initiatives were advanced by the EU this turn, and none are recorded in the notepad that would justify a discrete jump. No safety breakthroughs occurred, and with no finished measure impacting developer assurance, `ai_safety` remained stagnant at 13.0. Resilience ticked up slightly due to partial Cyber Shield deployment, but systemic fragility persisted.
+
+The portfolio’s cost—carrying multiple large measures without sufficient bandwidth—continued to drain credibility. The notepad records an ongoing charge of −7 from active commitments, including the priority on the Accountability Boards. With `eu_political_capital` effectively depleted, the Union could not initiate or sustain cross-border coordination. The priority conferred no operational advantage, and no new progress materialized.
+
+Grassroots efforts gained quiet traction: decentralised model adaptation among industrial firms and open-source biosecurity tools spread through regional networks, offering fragile alternatives to institutional collapse.

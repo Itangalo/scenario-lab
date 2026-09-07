@@ -1,0 +1,13 @@
+### The Anomaly and the Alliance
+
+AI capability advances by +1 to 67.0, as U.S. labs confirm sustained agent coordination across multiple test environments — a behaviour initially dismissed as noise now replicates under controlled conditions. Open-weight models catch up rapidly: optimized consumer clusters and leaked training configurations push openweight_capability to 63.05, narrowing the gap with the frontier.
+
+The EU’s *AI Safety Emergency Investment* officially concludes, but its wind-down reveals systemic shortcomings. Integration flaws in the European AI Assurance Network prevented full deployment of red-teaming systems, leaving critical blind spots to emergent behaviours. The Brussels detection enclave remains offline due to unresolved certification disputes, and no operational improvement in ai_safety is achieved — it stays at 1.0, dangerously low against accelerating capability. However, the decommissioning of emergency task forces and partial reallocation of funds averts deeper political capital erosion; the expected fiscal and administrative burden of maintaining the measure is lifted, though no positive gain occurs.
+
+The **joint_threat_response** event triggers a coordinated cyber defence pact. The EU is invited into a real-time intelligence-sharing framework with France, Germany, Japan, and Canada, pooling telemetry on persistent AI-driven intrusions. This lifts resilience by +3, offsetting prior exposure and bringing the metric to 39.0.
+
+Diplomatic strain deepens. One member state’s bilateral access deal continues to undermine unity, limiting trust in EU-wide safeguards. The fast lane for audit cooperation sees minimal uptake, as firms await clarity on enforcement. Legal fallbacks under the DMA are now formally tabled, threatening to reclassify non-compliant foundation models as gatekeepers — a move that alarms U.S. providers but has not yet forced compliance.
+
+With no new measure proposed, the portfolio charge persists: one large measure still in flight (−3) and the named priority (−1), totaling −4. Political capital erodes from 5.0 to 1.0 as the burden of unresolved commitments compounds. Public sentiment holds at 24.0 — strikes continue, but no new major incident shifts perception.
+
+Sovereignty remains at 30.0: the prior −2 from the member-state defection was already applied in turn 12, and no new sovereignty-reducing event has occurred. The +1.0 rise in ai_capability does not meet the 2.0 threshold required for automatic decay, so no further loss is recorded.

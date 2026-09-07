@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Political capital change violates accounting in narrative: Narrative states net change is +4 −11 = −7, implying a drop, but metric increases from 6.0 to 15.0 (+9). This contradicts the stated calculation and the portfolio charge recorded in the notepad (−8 total, not −11). Even if capital cannot fall below 0, a +4 boost cannot result in a +9 increase without additional unaccounted sources. The explanation fails to justify the magnitude of the increase.\n- Portfolio charge mismatch: Notepad lists total portfolio charge as −8, but narrative calculates it as −11. The discrepancy between the authoritative notepad and the narrative’s claimed charge breaks consistency, violating the requirement that the notepad is the persistent, correct record. This undermines the integrity of the metric calculation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

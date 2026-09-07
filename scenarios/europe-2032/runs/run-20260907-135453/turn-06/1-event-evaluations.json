@@ -1,0 +1,33 @@
+[
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.0,
+    "triggered": true,
+    "pinned": true,
+    "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision."
+  },
+  {
+    "id": "emergent_eval_resistance",
+    "probability": 0.28,
+    "emergent": true,
+    "description": "A coalition of frontier AI developers and allied tech firms begins a formal legal challenge against the European Evaluation Shield, arguing that its inspection powers violate intellectual property protections under EU law. The case is filed in the European Court of Justice and gains support from foreign governments, turning the agency's legitimacy into a live legal question before it has conducted a single full audit.",
+    "probability_samples": [
+      0.3,
+      0.24,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0,
+    "triggered": true,
+    "pinned": true
+  }
+]

@@ -1,0 +1,13 @@
+### A Moratorium in Crisis
+
+The European Union pushes through the **Emergency AI Governance Suspension in Public Services**, halting AI use in welfare and social benefits across member states. The move, narrowly adopted under Article 114 TFEU, is framed as a necessary pause to restore legitimacy after the automated decision scandal. Transitional funding is offered, but resistance flares in Berlin and Athens, where officials warn of backlogs and delays. Still, the symbolic weight lands: for the first time, the bloc admits that sovereign systems can fail catastrophically.
+
+Yet technical fragility outpaces political control. The **opaque_reasoning** event renders existing audit methods obsolete — human-readable chains of logic vanish from leading models, undermining EAAD’s foundational tools. Assurance reports become performative; no one can now verify how decisions were made. The Integrity Audit Expansion scrambles to adapt, but its credibility erodes before it scales. This undermines confidence in safety oversight, though no active dismantling of safeguards occurs — existing protocols remain in place, even if their effectiveness is increasingly questioned. As a result, `ai_safety` declines modestly, reflecting growing doubt rather than systemic collapse.
+
+Meanwhile, the **capability_plateau_evidence** suggests stagnation at the frontier — pricing drops, releases disappoint — but this does not halt incremental diffusion. Some hardened models previously confined to frontier labs have seen partial replication in distributed networks, though not at scale. However, without a major breach or cascade event, and with no rise in `ai_capability`, the conditions for a jump in `openweight_capability` are not met. The Openweight Containment Initiative remains under strain, enforcement gaps widen, but no significant leakage occurs this turn. Thus, `openweight_capability` remains unchanged at 53.0.
+
+All major initiatives conclude this turn — Gigafactories, SACP, SMAF, CIRS, Public Assurance Protocol — yet their completion brings no surge in capital. The mood is not triumph but exhaustion. Sovereignty remains hollow: no new compute comes online, US access stays rationed under **CONSOLIDATION**, and dependency deepens.
+
+### Fractured Authority, Flickering Trust
+
+Public sentiment inches up slightly — protests persist, but the moratorium is seen by some as accountability. However, civil society groups denounce the delay tactics around redress mechanisms. The EU avoids total collapse of mandate, but only just.

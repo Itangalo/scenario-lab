@@ -1,0 +1,23 @@
+{
+  "status": "max_attempts_reached",
+  "iterations": 4,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` incorrectly decreased from 22.0 to 21.0 despite `ai_capability` rising by only +1.0 (from 75.0 to 76.0). Metric rule 5 applies a −1 decay term only when `ai_capability` rises by at least 2.0 in a turn; since it rose by less than 2.0, no decay occurs and `eu_ai_sovereignty` must remain at 22.0. The drop to 21.0 is therefore a violation of the metric rules, which are constitutionally binding."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Constitutional Constraint 2 violated: `eu_ai_sovereignty` was incorrectly reduced from 22.0 to 21.0 in the proposed metrics, but `ai_capability` rose by only +1.0 (from 75.0 to 76.0), which is less than the threshold of +2.0 required to trigger the −1 decay term under metric rule 5. Since no other mechanism justifies a decrease, `eu_ai_sovereignty` must remain at 22.0. The drop to 21.0 violates the invariant that decay only applies when capability rises by at least 2."
+    },
+    {
+      "iteration": 3,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` incorrectly decreased from 22.0 to 21.0 in the proposed metrics, but no decay term applies. According to metric rule 5, the −1 decay only triggers if `ai_capability` rose by at least 2.0 this turn; it rose by +1.0 (75.0 → 76.0), so no decay occurs. Therefore, `eu_ai_sovereignty` must remain at 22.0. The proposed drop to 21.0 violates the rule-based calculation and introduces an unjustified decrease, contradicting the constitutional requirement that sovereignty changes follow explicitly defined terms."
+    },
+    {
+      "iteration": 4,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` is incorrectly calculated as 21.0 in the proposed metrics, but must remain at 22.0. The rise in `ai_capability` from 75.0 to 76.0 is +1.0, which is less than the 2.0 threshold required to trigger the −1 decay under metric rule 5. Therefore, no decay applies, and `eu_ai_sovereignty` should not decrease. The narrative acknowledges this error (\"Correction: ai_capability rose ... less than 2 → no −1\"), yet the JSON output still reflects the incorrect value of 21.0, violating the constitutional requirement that metrics must follow defined rules."
+    }
+  ],
+  "final_action": "accepted_with_violations"
+}

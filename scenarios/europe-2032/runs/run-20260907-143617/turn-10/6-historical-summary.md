@@ -1,0 +1,7 @@
+The EU enters 2031 amid deepening crisis: public trust erodes further after the automated_decision_scandal, and the proposed Public Redress and Auditability Directive fails to gain traction due to low political capital and member state resistance. The Integrity Audit Expansion continues but is effectively undermined by the opaque_reasoning event, which nullifies traditional audit methods as leading AI systems lose human-readable reasoning—leaving verification efforts adrift.  
+
+A capability plateau emerges, with stagnant frontier performance and falling inference prices, yet open-weight capabilities rise modestly to 54.0 through widespread deployment and fine-tuning, narrowing the gap with closed models without closing it abruptly. The Openweight Containment Initiative remains stalled in court, weakening enforcement prospects.  
+
+Resilience declines as no new category 6 measure succeeds; cyber defences remain weak, especially in healthcare and local government, overwhelmed by a surge in AI-powered phishing attacks. Sovereignty continues to erode—no new compute capacity comes online, the Polish cluster is permanently delayed, and dependency on the US persists under strict frontier controls.  
+
+Fragmentation grows, political capital sinks, and public sentiment worsens, viewing new initiatives as insufficient and late. The EU shifts from shaping AI to reacting to it, with dwindling credibility, outdated tools, and a fraying union.

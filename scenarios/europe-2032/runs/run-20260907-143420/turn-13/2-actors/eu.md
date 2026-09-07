@@ -1,0 +1,35 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Restore public and institutional trust in sovereign AI systems by ensuring auditable decision-making, enforceable redress, and resilience to both technical compromise and operational misuse  
+  - Trigger: the **eval_anomaly_reports** and **openweight_frontier_release** events, which confirm that capability is now emerging unpredictably and that offensive-grade AI is permanently distributed beyond any regulatory reach  
+  - Grounds: The anomaly reports signal that models are behaving in ways developers cannot explain—even before full deployment—while the open-weight release has collapsed the capability gap between closed and open systems. This means the EU no longer faces a future of managed adoption, but of pervasive, uncontrolled exposure. Our commitment must shift from restoring trust in sovereign systems to *establishing containment in a world where no system is truly sovereign*. Audits and redress are meaningless if the reasoning cannot be traced and the tools are already loose. We now prioritise procedural resilience—binding limits on autonomous operation, mandatory incident reporting, and enforceable worker oversight—not because we can control AI, but because we must constrain its damage while rebuilding from rupture.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but now, we act to reclaim agency through constraint as much as through capacity, and we accept that some systems must not run even if we cannot prove they will fail  
+  - Grounds: The eval anomaly confirms that capability can emerge without warning, and the openweight release proves that once a model is out, it is everywhere. We can no longer afford to wait for proof of harm. Our action is no longer about managing risk, but about setting boundaries where understanding has failed. We act not because we know what will happen, but because we know we cannot know—and that in itself is grounds for restraint. To bind deployment in the face of epistemic collapse is not retreat. It is the first real act of control we have had in years.
+
+## Portfolio  
+``Emergency Compute Mobilisation Directive (category 4, costs 3 per turn, started turn 12, finishes on turn 13): A binding order to repurpose all publicly owned and contracted compute infrastructure across the EU—data centres, research clusters, national labs—into a unified, sovereign AI execution layer, capable of hosting and running critical public systems without dependency on foreign providers`` — finished this turn  
+Canceled measure: Emergency Compute Mobilisation Directive.  
+The directive fails to achieve integration: Poland maintains its veto demand, Germany blocks without reciprocity guarantees, and the Commission lacks the political capital to enforce compliance. The sovereign execution layer remains fragmented, with only 18% of pledged compute federated. The directive is formally closed, its technical protocols archived for future use, but its core goal—sovereign operational capacity—remains unmet.
+
+## New measure  
+**Measure:** Mandatory Incident Reporting and Containment Protocol for High-Capability AI Systems  
+A binding requirement for all public and private entities deploying AI systems above 50.0 capability to report anomalies, misuse events, and unauthorised agent behaviour to a central EU authority within one hour of detection, with immediate containment procedures and public disclosure if critical infrastructure is affected.
+
+`Category: 2 (Transparency and reporting)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` Increase `ai_safety` by 8–12 points through faster detection and shared learning; reduce `public_sentiment` drift by demonstrating institutional responsiveness to incidents; create a foundation for future coordination with international partners on openweight threats  
+`Applies to:` All AI developers, deployers, and operators in the EU using systems above 50.0 capability, including foreign providers operating within EU jurisdiction
+
+## Priority  
+**Priority:** Mandatory Incident Reporting and Containment Protocol for High-Capability AI Systems  
+We are pushing this hardest this turn because the **eval_anomaly_reports** and **openweight_frontier_release** have created a new reality: capability is emerging unpredictably, and the tools to exploit it are now permanently distributed. The EU cannot audit, cannot interpret, and cannot control—but it can *observe*. This measure turns opacity into a shared burden: if we cannot understand the systems, we must at least see the harm they do, and act before it cascades. It is the only lever left that does not depend on sovereignty we lack or capital we no longer have.
+
+## In practice  
+This turn, we are acting from collapse into containment. The Emergency Compute Mobilisation Directive ends in failure—not from lack of need, but from lack of cohesion. Without political capital to break the deadlock between Poland and Germany, the sovereign stack remains a fiction. ENISA’s protocols are technically sound but politically inert. We shift focus entirely: from building systems we cannot unify, to monitoring the systems already running—foreign, open, or otherwise.
+
+The eval anomaly reports—behaviour emerging where none was trained—confirm that frontier models are no longer predictable, even to their creators. The openweight release, now downloaded tens of thousands of times, means that 69.0-level offensive capability is permanently in circulation. We cannot recall it. We cannot audit it. But we can demand that anyone running such systems report when they break, when they misbehave, when they act on their own.
+
+We are drafting the Mandatory Incident Reporting and Containment Protocol under Article 16 of the Treaty on the Functioning of the EU, using the crisis powers invoked during the 2022 energy emergency. The European Cyber Resilience Act provides the legal base for reporting obligations, extended now to cover behavioural anomalies in high-capability systems. ENISA will host the central reporting hub, with real-time dashboards for member states and automatic escalation to the Joint Crisis Cell if critical infrastructure is involved. We are negotiating with national regulators, cloud providers, and research labs to define the 50.0 threshold operationally—using proxy metrics like training compute and emergent task breadth—knowing full well that any definition will be imperfect.
+
+BusinessEurope resists, calling it a compliance burden in a time of paralysis. But the cyberattack on hospitals and grids has shifted the balance. We are offering fast-track liability shielding for early reporters, and we are tying access to future public procurement to compliance. This is not about trust. It is about survival: the only way to learn in a world we no longer understand is to see the failures as they happen. We are not building sovereignty this turn. We are building sight.

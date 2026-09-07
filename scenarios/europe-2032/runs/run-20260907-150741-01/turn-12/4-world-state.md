@@ -1,0 +1,17 @@
+### A Floor Beneath the Fall
+
+The EU debates a decisive shift toward technological self-reliance. In response to Washington’s recent export restrictions and growing unease among mid-sized member states seeking informal alliances abroad, the European Commission formally proposes the **Sovereign Compute Acceleration Programme** under emergency infrastructure provisions. The plan envisions modular data centres in Finland, Slovakia, and Portugal, each tied to renewable or nuclear energy through proposed ENTSO-E fast-tracking. Early discussions with non-US suppliers like HiSilicon and GlobalFoundries Dresden begin, though no contracts are signed — technical and yield concerns remain unresolved.
+
+This proposal emerges as confidence in the **Frontier Access Guarantee** wanes. Canadian and Japanese partners retreat behind legal caveats, and informal coordination among member states reveals growing doubts about external access. Yet the new initiative does not replace the existing measure; for now, it exists only in proposal form, awaiting funding approval and member-state consensus.
+
+The **Continuity Assurance Framework** completes certification for nine member states, but operational hesitation persists. During drills, operators refuse to switch to fallback systems, citing unproven stability. Resilience holds at 52.0 — the framework functions on paper, not in practice.
+
+Global AI capability edges up to 76.0, sustained by ongoing investment and compressed development cycles. No breakthrough occurs, but progress remains steady. Interpretability tools remain inadequate, and `ai_safety` holds at 10.0 — dangerously low, yet unchanged. Open weights stay at 52.0; no major release widens the gap.
+
+Public sentiment remains stagnant at 20.0. No visible benefit offsets anxiety over dependency and disruption. Grassroots momentum builds around community-owned compute clusters in Spain and Finland, drawing quiet policy interest as a model of local resilience.
+
+### Political Capital: Still at Zero
+
+Despite urgent debate, no significant political capital is gained. The proposal of a large category 4 measure — the Sovereign Compute Acceleration Programme — is noted, but no implementation begins. Emergency powers allow discussion to proceed without full consensus, but fiscal strain blocks immediate action. Without a clear funding path or phased exit from the **Frontier Access Guarantee**, the measure remains in preparation. The portfolio continues to carry unresolved charge, and no proposal bonus applies. The narrative does not assert or imply that the supply_chain_coercion event triggered this response; the timing is coincidental, the motivations complex.
+
+The `eu_ai_sovereignty` metric remains at 21.0. While global AI capability increased by 1.0, this is offset by the absence of any measurable forward motion on sovereignty-building actions. No funding has been allocated, no construction started, and no binding agreements secured for the proposed compute infrastructure. Under metric rule 5, gains require concrete progress — none has occurred. The baseline increase from capability growth is therefore negated by stagnation on implementation, leaving sovereignty unchanged. Any future rise will depend on demonstrable steps, not planning alone.

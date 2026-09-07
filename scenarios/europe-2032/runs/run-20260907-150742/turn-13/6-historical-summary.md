@@ -1,0 +1,7 @@
+AI capability reaches 78.0, with open-weight models at 59.0, yet ai_safety remains stagnant at 5.0, widening the safety gap. The Continuity Assurance Framework proves resilient through successful failover drills, granting a lasting +5 resilience boost. However, the Frontier Access Guarantee collapses as Japanese partners exit, leaving only Canadian nodes and exposing strategic fragility.
+
+The Sovereign AI Core Programme Pilot launches in Valencia but demonstrates limited reliability, failing to gain operator trust. Sovereignty declines to 17.0 due to capability growth and lack of offsetting gains, while legal delays hinder sovereign compute siting. 
+
+Public sector strikes spread across Europe, rejecting unregulated AI in high-stakes domains. In response, the EU proposes the Public AI Accountability Directive to enforce transparency and human oversight, leveraging cohesion funds for compliance—sparking backlash over cost and sovereignty. Political capital is fully depleted enacting the measure, leaving no room for further initiatives.
+
+Public sentiment remains frozen at 15.0, reflecting deepening institutional distrust. The crisis shifts from technical capacity to systemic legitimacy: capability grows, but trust in systems and governance erodes as the foundation of the AI sovereignty project weakens.

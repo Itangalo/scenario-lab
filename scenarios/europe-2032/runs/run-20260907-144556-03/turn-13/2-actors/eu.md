@@ -1,0 +1,32 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` — finished this turn  
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` — finished this turn  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability`` — finished this turn  
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` — finished this turn  
+``Launch the Public Assurance Protocol (category 2, costs 2 per turn, started turn 6, finishes on turn 7): A binding requirement that all sovereign AI systems above 55.0 capability subject to SMAF or the AI Containment Protocol must publish an annual public assurance report, co-signed by the EAAD and national oversight bodies, explaining their safety architecture, containment measures, and incident history in accessible language`` — finished this turn  
+``Launch the Openweight Containment Initiative (category 3, costs 2 per turn, started turn 7, finishes on turn 9): A binding directive requiring all open-weight releases above 45.0 capability to include embedded watermarking, usage tracking, and remote deactivation triggers, enforceable through licensing conditions on EU-based hosting providers and cloud marketplaces`` — finished this turn  
+``Launch the Integrity Audit Expansion (category 1, costs 2 per turn, started turn 9, finishes on turn 11): A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation`` — finished this turn  
+``Launch EU Civilian AI Redeployment Corps (category 7, costs 3 per turn, started turn 12, finishes on turn 14): A rapid-response employment transition programme that places displaced public-sector workers into AI-augmented civic roles — digital rights stewards, algorithmic redress officers, community resilience coordinators — with wages guaranteed at 90% of prior income and retraining integrated into duties``
+
+## New measure
+**Measure:** Launch Joint Compute Coordination Cell (JCCC) as Operational Authority  
+The JCCC, established under DG CONNECT, is formally empowered to manage routing, allocation, and failover protocols for the Emergency Compute Access Pact’s pooled capacity, including enforcing mutual defence obligations and operating fallback inference channels via satellite-linked edge clusters during terrestrial disconnection.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size:` small  
+`Finishes on turn:` 14  
+`Targeted effect:` Solidify eu_ai_sovereignty (from 10.0 toward 20.0) by institutionalizing control over access mechanisms; increase resilience (by +2–3 points) through tested continuity-of-service protocols during simulated blackouts  
+`Applies to:` EU member states, DG CONNECT, ESA (for satellite backhaul), national crisis response agencies
+
+## Priority
+**Priority:** Launch Joint Compute Coordination Cell (JCCC) as Operational Authority  
+We are pushing this hardest because the **Emergency Compute Access Pact exists only as a political agreement**, not an operational reality — and without a functioning coordination cell, it cannot activate during the very access shocks it was designed to prevent, especially now that the Taiwan blockade has turned compute availability into a frontline security issue.
+
+## In practice
+This turn, we are making the Emergency Compute Access Pact real — not just signed, but *switched on*. The Commission activates the Joint Compute Coordination Cell under Article 17(3) of the Digital Markets Act, granting it emergency routing authority over all EU-contracted inference capacity above 55.0 capability. We are deploying technical teams to Brussels, Dublin, and Marseille to establish the first three nodes of a distributed orchestration layer, connected via encrypted tunnels and backed by low-orbit satellite links coordinated with the European Space Agency. These will serve as fallback execution environments if commercial cloud routes are severed.
+
+Simultaneously, we are pressing member states to finalize their 15% contribution commitments by uploading configuration manifests to the JCCC portal by September. Resistance remains strongest in smaller states like Estonia and Luxembourg, which fear losing preferential access terms with US hyperscalers. To overcome this, we are offering fast-tracked access to the EU’s upcoming lithography pilot line in Dresden as a sidecar incentive — not tied to the pact legally, but politically inseparable. On the ground, the Civilian AI Redeployment Corps continues its rollout: ten pilot municipalities have now appointed redress officers, and we are integrating their early case logs into a live dashboard monitored by the EAAD to begin closing the loop between public harm and systemic adjustment. But without secure compute, every insight they generate risks being processed on infrastructure we do not control — and that is no longer acceptable.

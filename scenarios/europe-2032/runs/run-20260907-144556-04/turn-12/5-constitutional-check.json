@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 53.0 to 57.0 (+4.0) while `ai_capability` increased by only +1.0 (from 70.0 to 71.0). Since `openweight_capability` must never exceed `ai_capability` and can only rise or stay flat if `ai_capability` rises, a jump of +4.0 when global capability rises by +1.0 is implausible. The gap between the two metrics has narrowed by 3.0 points (from 17 to 14), which implies a sudden leap in open-weight progress relative to frontier capability without justification. This violates the accumulation rule and the ceiling constraint.\n- Invariant 9 violated: `ai_safety` decreased from 8.0 to 3.0 (−5.0), which is within bounds, but `public_sentiment` decreased from 18.0 to 15.0 (−3.0) and `eu_ai_sovereignty` decreased from 10.0 to 9.0 (−1.0), while `eu_political_capital` increased from 3.0 to 7.0 (+4.0). However, the narrative provides no mechanism for a +4.0 gain in `eu_political_capital` amid institutional collapse, discredited frameworks, legal challenges, and public protests. The metric rules allow for political capital to rise, but such a large increase in a turn defined by failure and retreat contradicts the modelling choice that sovereignty’s contribution to political capital never exceeds +3 and never dominates other terms. With no new measure, no success, and multiple failures, a +4.0 shift is unjustified and exceeds plausible movement under the constraints."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

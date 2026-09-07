@@ -1,0 +1,302 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6934117062631533,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.05333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.06,
+    "probability_samples": [
+      0.02,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3138714662382883,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6180566705887511,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.06595174318775976,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.04,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6074989875724375,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5880270914068644,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7681257380037816,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.48173143638817695,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6497776318904359,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.10628808348999574,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.49386948252247065,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5955128051865435,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5471226209281854,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.571101722234871,
+    "triggered": false
+  },
+  {
+    "id": "emergent_court_challenge_ai_safety",
+    "probability": 0.023333333333333334,
+    "emergent": true,
+    "description": "A coalition of civil society groups and affected individuals files a landmark legal challenge at the European Court of Justice, arguing that the EU’s failure to enforce meaningful AI safety standards constitutes a breach of fundamental rights under Article 47 of the Charter. The case gains traction as lower courts issue preliminary injunctions against high-risk public-sector AI deployments, forcing a continent-wide pause on several automated decision systems pending review.",
+    "probability_samples": [
+      0.07,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7553945802303138,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated wave of sabotage targets AI infrastructure across multiple member states, including data centres and grid substations serving compute facilities. The attacks are attributed to decentralized anti-AI groups using encrypted coordination, and several injuries are reported. The scale overwhelms local police, and emergency response is slow due to strained inter-agency cooperation. Public debate intensifies over the legitimacy of infrastructure expansion.",
+    "emergent": true,
+    "id": "emergent_sabotage_wave",
+    "probability": 0.03,
+    "probability_samples": [
+      0.0,
+      0.09,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9521379487075071,
+    "triggered": false
+  },
+  {
+    "description": "A consortium of European academic institutions and open-source developers releases a new framework for model interpretability, reverse-engineering key components of opaque frontier models. While not restoring full visibility, it allows partial reconstruction of decision pathways in systems previously considered black boxes. The tool spreads rapidly through public-sector AI units, offering a stopgap for auditability. Its emergence is driven by desperation amid collapsing trust and institutional paralysis.",
+    "emergent": true,
+    "id": "emergent_interpretability_breakthrough",
+    "probability": 0.023333333333333334,
+    "probability_samples": [
+      0.0,
+      0.07,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6831163918088775,
+    "triggered": false
+  },
+  {
+    "id": "emergent_interpretability_crisis",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Multiple EU research institutions report a complete breakdown in model introspection techniques across all frontier models, confirming that the opaque_reasoning event has rendered existing interpretability frameworks obsolete. This triggers an emergency meeting of the European AI Safety Board, which declares a crisis in assurance capabilities, further undermining regulatory confidence.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_public_sector_paralysis",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Fearing legal and reputational risk after the automated decision scandal and opaque reasoning crisis, several national governments halt deployments of AI in public services pending new auditability standards. The slowdown affects welfare, tax, and immigration systems across the bloc, leading to delays and backlogs — visible proof of AI dependence without control.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

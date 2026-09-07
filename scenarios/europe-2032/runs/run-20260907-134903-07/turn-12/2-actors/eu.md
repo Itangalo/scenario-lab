@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **finishes this turn**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): Establish a legal and technical boundary at deployment: no AI system above capability 60.0 may operate in the EU without sovereign evaluation, runtime controllability, and continuous monitoring by EAAN` — **in flight**
+- `Accelerate EAAN Certification Nodes (category 5, costs 2 per turn, started turn 11, finishes on turn 13): Fast-track deployment of sovereign evaluation infrastructure in Brussels, Sophia Antipolis, and Munich to operationalise the EU Border for AI Systems by turn 14, ensuring the EU can independently verify compliance` — **in flight**
+
+## New measure
+None this turn. The portfolio is at breaking point, and political capital has collapsed to 2.0 — we cannot afford to start anything new. We are waiting for the completion of the AI Safety Emergency Investment to free up capital and deliver foundational capacity.
+
+## Priority
+**Accelerate EAAN Certification Nodes** — because the EU Border for AI Systems depends on sovereign verification, and without functional certification nodes by turn 13, the border will be legally binding but technically unenforceable, rendering the entire regime a symbolic gesture in the face of accelerating capability.
+
+## In practice
+This turn, we consolidate. The €40bn AI Safety Emergency Investment reaches completion, delivering the core of the European AI Assurance Network: secure inspection enclaves in three locations, red-teaming teams staffed and trained, and initial telemetry pipelines from declared systems under audit. This is not a moment to expand, but to absorb. We shift focus decisively to the certification nodes in Brussels, Sophia Antipolis, and Munich — the physical and technical linchpins of enforcement. With emergency procurement powers still active, we push final integration of weight-access protocols, runtime monitoring agents, and adversarial evaluation suites. The nodes must be interoperable, sovereign, and operationally ready to inspect any system claiming EU deployment.
+
+Legitimacy remains under fire. We publish the full EAAN protocol stack under open license via the European Digital Infrastructure Consortium and confirm audit mandates with ETH Zurich, the University of Oslo, and TU Delft. The ombuds panel under the Data Protection Supervisor begins operations, reviewing early compliance denials to ensure they are grounded in technical findings, not political exclusion. We extend the compliance corridor: labs that submit to pre-evaluation telemetry sharing gain fast-track status and liability shielding under the AI Liability Directive. But the line holds. No evaluation, no deployment. We are not reopening that question. What we are doing — and what this turn is about — is proving we can do it at scale, under scrutiny, and without breaking the Union’s own rules. If we cannot show that, we have no border. We have only a wish.

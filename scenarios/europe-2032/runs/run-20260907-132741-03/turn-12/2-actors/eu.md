@@ -1,0 +1,35 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Restore political agency not through control alone, but by visibly repairing broken trust: through redress for harms already done, institutional accountability for failures, and citizen participation in oversight that binds both public and private power — but this repair must now be rooted in sovereignty as well as justice, or it will be seen as another imposition from an impotent centre  
+- Trigger: the **eu_frontier_access_denied** event this turn, combined with political capital at zero and public sentiment collapsing to 12.0  
+- Grounds: The denial of frontier access is not just a technical setback—it is a geopolitical rupture. Hospitals, ministries, and firms dependent on foreign AI systems were left blind overnight, confirming that without sovereign capacity, even the most morally grounded redress mechanisms are performative. The Union cannot bind public and private power if it lacks leverage over either. Our two-year commitment to repair trust fails if it does not also rebuild agency: not only compensating victims of flawed algorithms, but ensuring no future victim is powerless because the EU itself is. This recalibration does not abandon redress—it makes it credible by anchoring it in the reality that legitimacy flows from both justice *and* autonomy.
+
+- retire `act_under_uncertainty`  
+- Trigger: the collapse of execution capacity despite repeated action under uncertainty, culminating in paralysis at eu_political_capital = 0.0  
+- Grounds: Acting under uncertainty was meant to prevent delay, but it became a licence for overreach without feedback. We launched institutions faster than we could staff them, mandated boards before earning consent, and declared priorities while our instruments decayed mid-flight. The cost of being wrong is no longer acceptable when being active at all drains the last reserves of credibility. From now on, we do not act unless we can follow through. Uncertainty remains, but so does exhaustion. We must rebuild capacity before we reclaim speed.
+
+## Portfolio  
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished  
+- `Launch Sovereign Cyber Shield Initiative (category 6, costs 3 per turn, started turn 6, finishes on turn 8): Deploy AI-hardened, pre-automated defence stacks across all Tier 1 critical infrastructure operators, integrating swarm response, zero-trust verification, and real-time model monitoring to neutralise autonomous threats before escalation.` — finished  
+- `Establish EU Public Trust Corps for AI Incident Response and Transparency (category 9, costs 3 per turn, started turn 9, finishes on turn 12): Create a civilian technical corps under the European Commission, staffed with red-team engineers, crisis communicators, and regional liaison officers, to lead public-facing incident response, conduct live transparency drills, and operate a 24/7 AI incident dashboard with verified threat status, system outages, and mitigation progress`  
+- `Mandate Public Algorithmic Accountability Boards for High-Impact AI Systems (category 2, costs 3 per turn, started turn 10, finishes on turn 13): Establish independent, citizen-informed oversight panels with legal authority to review, investigate, and publicly report on AI systems used in social services, policing, and judicial support, including binding recommendations for suspension or reform.`  
+
+Canceled measure: Launch EU-Wide Redress and Reform Programme for AI-Driven Public Sector Harms. This turn’s external shock—denial of frontier access—has redefined the crisis: we cannot credibly lead redress when we lack the foundational tools to operate independently, and political capital is too depleted to force cohesion funding conditionality without provoking revolt.
+
+## New measure  
+**Measure:** Secure Emergency Access to Fallback AI Capacity for Critical Public Functions  
+Establish an immediate, legally guaranteed fallback mechanism enabling EU member states to access minimally capable, EU-controlled AI systems for healthcare, emergency response, and civil administration during disruptions to foreign AI services.
+
+Category: 4 (Sovereignty and industrial capacity)  
+Size: small  
+Finishes on turn: 13  
+Targeted effect: Prevent total dependency on foreign AI providers by ensuring continuity of essential public services; increase eu_ai_sovereignty by 5–8 points and resilience by 3–5 points by turn 13  
+Applies to: Member states’ critical public functions (healthcare, civil protection, border management), EU agencies reliant on external models
+
+## Priority  
+**Priority:** Establish EU Public Trust Corps for AI Incident Response and Transparency  
+This remains our dominant effort because it is the only instrument still in flight that can be repurposed to serve both emergency response and symbolic repair—now reframed around continuity of service and redress for exclusion, not just transparency.
+
+## In practice  
+We are treating this turn as one of triage. With political capital exhausted and frontier access cut off, we are pivoting the Public Trust Corps from a transparency project into an emergency continuity cell. DG HOME, in coordination with the European Health Emergency Authority and national CIOs, is activating emergency protocols under Article 122 TFEU to reroute critical health diagnostics and benefit processing through existing EU-hosted models—repurposed from research clusters in France, Germany, and Finland. These systems are below frontier capability (estimated ~52.0), but sufficient for triage, eligibility checks, and non-autonomous decision support. The AI Incident Dashboard is being reconfigured to flag not only outages but also dependency risks—mapping which public services rely on which foreign providers—and will be published monthly starting April.
+
+The Algorithmic Accountability Boards remain stalled due to resistance from Poland and Spain, who now cite the access denial as proof that EU-level mandates are both intrusive and ineffective. To regain footing, we are offering a moratorium on enforcement powers in exchange for voluntary participation in a “sovereignty audit”—a joint assessment of national AI dependencies and fallback readiness, to be conducted by Eurostat and ENISA by turn 13. This is not the truth commission we wanted, but it may be the only path back to cooperation. Meanwhile, the new fallback capacity measure will draw on decommissioned InvestAI hardware and open-weight models secured under EU jurisdiction, with deployment led by the newly empowered Digital Service Infrastructure unit. Funding will come from the Crisis Reserve Facility, avoiding new fiscal demands. We are not rebuilding trust yet—we are preventing total collapse.

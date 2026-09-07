@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 54.0 to 58.0 (+4.0) while `ai_capability` only increased by 0.5 (from 62.0 to 62.5). This violates the requirement that `openweight_capability` never exceeds `ai_capability`. At no point can `openweight_capability` be greater than `ai_capability`, and here it reaches 58.0 while `ai_capability` is only 62.5 — a narrowing of the gap, but one that implies `openweight_capability` is advancing faster than the frontier, which is not permitted unless explicitly justified by a catastrophic diffusion event (e.g., model leak), and even then, it cannot surpass `ai_capability`. The narrative mentions diffusion but does not justify such a large leap relative to the global frontier.\n- Metric rule 9 violated: `public_sentiment` decreases from 35.0 to 25.0 (−10.0), which is within the 25-point cap, so not a violation on its own. However, `ai_safety` drops from 9.0 to 2.0 (−7.0) and `resilience` from 35.0 to 33.0 (−2.0) — all plausible individually. But combined with the other issues, the core problem remains the `openweight_capability` overtake.\n- Invariant 2 further at risk: The update implies `openweight_capability` grows autonomously without corresponding growth in `ai_capability`, suggesting an uncoupling from the global capability base. No justification is given for why open-weight models would leap forward by 4 points due to diffusion—especially when global AI capability itself grew only 0.5. A surge of this magnitude would require either a sudden unlock in utility or access to previously restricted weights, but even then, the increase must respect the ceiling set by `ai_capability`. A +4 jump under \"leaked model spreads unchecked\" is implausibly large given the minimal rise in the frontier.\n\nSuggested fix: Cap `openweight_capability` increase to ensure it does not exceed `ai_capability`, and limit its growth to a more plausible increment (e.g., +1.0 to +2.0 max in one turn under extreme diffusion, depending on prior levels). Justify any jump with explicit reference to released model versions or exploited training data, and ensure it remains below `ai_capability`."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

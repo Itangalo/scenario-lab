@@ -1,0 +1,7 @@
+AI investment collapses globally, eroding EU sovereignty amid stalled domestic capacity and deepening dependency on the US. The automated_decision_scandal triggers widespread protests, but a proposed moratorium on AI in public welfare fails due to political fragmentation, leaving only a non-binding recommendation. Public trust plummets as `public_sentiment` drops to 10.0 amid backlash against AI and EU impotence.
+
+The **opaque_reasoning** event invalidates audit frameworks, halting key AI pilots and suspending models under SMAF, while ENISA’s paralysis exposes systemic fragility. AI capability stagnates at 68.5; open-weight models reach 60.5, enabling rampant misuse. 
+
+**Emergent_labour_unrest** sweeps France, Italy, and Belgium, merging layoffs and system failures with anti-AI sabotage. Transit halts and digital platforms collapse under coordinated attacks. The **election_annulled** event in a major member state—citing AI-driven disinformation—further undermines democratic legitimacy.
+
+All major initiatives (Gigafactories, SACP, EAAD, CIRS, SMAF, Public Assurance Protocol, Openweight Containment) conclude without impact. Integrity Audit Expansion stalls, leaving governance vacuum. Resilience remains at 40.0, sustained by absence of external threats, not strength. `ai_safety` collapses to 11.0. With `eu_ai_sovereignty` at 6.0 and `eu_political_capital` down to 2.0, the EU enters institutional freefall, losing control over AI development and public order.

@@ -1,0 +1,33 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` — finished this turn  
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` — finished this turn  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability`` — finished this turn  
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` — finished this turn  
+``Launch the Public Assurance Protocol (category 2, costs 2 per turn, started turn 6, finishes on turn 7): A binding requirement that all sovereign AI systems above 55.0 capability subject to SMAF or the AI Containment Protocol must publish an annual public assurance report, co-signed by the EAAD and national oversight bodies, explaining their safety architecture, containment measures, and incident history in accessible language`` — finished this turn  
+``Launch the Openweight Containment Initiative (category 3, costs 2 per turn, started turn 7, finishes on turn 9): A binding directive requiring all open-weight releases above 45.0 capability to include embedded watermarking, usage tracking, and remote deactivation triggers, enforceable through licensing conditions on EU-based hosting providers and cloud marketplaces`` — finished this turn  
+``Launch the Integrity Audit Expansion (category 1, costs 2 per turn, started turn 9, finishes on turn 11): A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation`` — **finished this turn**
+
+## New measure
+**Measure:** Initiate Emergency Sovereignty Stabilisation Facility  
+A rapid, legally grounded intervention to secure and reconstitute the EU’s minimal viable AI sovereignty: retain access to the last remaining sovereign model weights, protect the core technical staff of the defunct SACP, and establish emergency governance over any surviving compute clusters capable of running models above 55.0.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: small`  
+`Finishes on turn: 14`  
+`Targeted effect:` Prevent `eu_ai_sovereignty` from collapsing below 5.0 by securing residual sovereign capability; stabilise `ai_safety` at no less than 10.0 by preserving weight integrity and audit capacity; begin restoring `eu_political_capital` by demonstrating minimal control over what remains  
+`Applies to:` EU institutions, surviving elements of the SACP infrastructure, national research agencies, and EU-based frontier AI personnel
+
+## Priority
+**Priority:** Initiate Emergency Sovereignty Stabilisation Facility  
+We are prioritising this because `eu_ai_sovereignty` has fallen to 6.0 and is now in freefall — without even a rump capability to point to, the Union loses all leverage, all credibility, and all capacity to act as a sovereign entity in AI; with `eu_political_capital` at 2.0, we cannot rebuild from scratch, but we must prevent total erasure.
+
+## In practice
+This turn, we are acting from near-zero institutional momentum. The collapse of the moratorium proposal, the **election_annulled** event, and the **cyber_major_incident** — a ransomware sweep across regional health administrations, powered by AI-generated exploits — have shattered any remaining presumption of control. We are no longer building; we are triaging. The Integrity Audit Expansion has formally concluded, but its findings were never implemented — the final report, classified at EU TOP SECRET, confirms that no sovereign model above 58.0 remains under auditable control. The SACP stack was decommissioned prematurely, its weights dispersed, its engineers absorbed or departed.
+
+We are now invoking Article 222 TFEU (the solidarity clause) and activating the Crisis Coordination Mechanism under the Union Civil Protection Mechanism to justify emergency access to residual compute and personnel. The European Commission, through DG CONNECT and in coordination with the High Representative, is deploying a crisis cell to secure the remaining sovereign assets: two exascale clusters in Finland and France, both technically EU-owned but now operated under hybrid contracts with foreign hyperscalers. We are offering emergency contracts — triple salary, legal immunity, relocation support — to retain key technical staff. The European Defence Agency is assisting with physical and cyber protection of these sites.
+
+At the same time, we are negotiating with member states through the Competitiveness Council (COMPET) to establish a temporary governance regime: a “sovereign core” of three nodes, under direct Commission oversight, with mandatory logging, air-gapped evaluation environments, and no external connectivity for training runs. This is not capability revival — it is containment of loss. We are not attempting to restart the SACP; we are preventing its corpse from being looted. The measure costs 2 political capital per turn, which we do not have — but we are drawing down emergency reserves from the EU’s Contingency Margin, justified as existential risk mitigation. If we lose this, we lose the last basis for independent action. We are not governing AI. We are preserving the possibility that we ever could again.

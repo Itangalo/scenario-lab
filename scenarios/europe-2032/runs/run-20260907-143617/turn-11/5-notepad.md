@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Launch the Sovereign AI Core Programme −3, Launch the Openweight Containment Initiative −2, Launch the Integrity Audit Expansion −2, Launch the Public Redress and Auditability Directive −2, priority −1 = −10  
+PROPOSAL BONUS: Invisible Failure Resilience Initiative (cat 6, small) +2 — responds to eval_anomaly_reports and opaque_reasoning, recent and severe precursors to unaccountable behaviour  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 8.0 last turn, no capacity event, capability rose 0.5 (less than 2) −0, no category 4 completion = 8.0 → but under US_POSTURE: CONSOLIDATION, decay at top of rule 5 range when no build in force → −2 → 6.0  
+US_POSTURE: CONSOLIDATION  
+emergent_infrastructure_sabotage_wave -- first noted turn 11, listed in 1 turn(s) so far: Multiple coordinated acts of sabotage target AI-adjacent infrastructure across several member states—transformer stations powering data centres, fibre backbones, and construction sites for new compute facilities. Attribution is unclear, but the pattern suggests a decentralized network rather than a single actor. The incidents are not military in nature but are designed to disrupt expansion and signal resistance to further deployment.

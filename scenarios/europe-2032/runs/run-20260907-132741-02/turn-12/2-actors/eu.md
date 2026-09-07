@@ -1,0 +1,27 @@
+No statement changes.
+
+## Portfolio
+- `Establish EU Public Trust Corps for AI Incident Response and Transparency (category 9, costs 3 per turn, started turn 9, finishes on turn 12): Create a civilian technical corps under the European Commission, staffed with red-team engineers, crisis communicators, and regional liaison officers, to lead public-facing incident response, conduct live transparency drills, and operate a 24/7 AI incident dashboard with verified threat status, system outages, and mitigation progress` — **finishes this turn**
+- `Mandate Public Algorithmic Accountability Boards for High-Impact AI Systems (category 2, costs 3 per turn, started turn 10, finishes on turn 13): Establish independent, citizen-informed oversight panels with legal authority to review, investigate, and publicly report on AI systems used in social services, policing, and judicial support, including binding recommendations for suspension or reform`
+- `Suspend High-Risk Public-Sector AI Deployments Pending Independent Review (category 3, costs 3 per turn, started turn 11, finishes on turn 12): In response to the ombudsman-confirmed harm in the Dutch social insurance system and the ongoing loss_of_control_incident, temporarily halt all AI systems in public services that make or substantially influence benefit eligibility, criminal sentencing recommendations, or policing deployments, until reviewed and cleared by the newly mandated Public Algorithmic Accountability Boards` — **finishes this turn**
+
+## New measure
+**Measure:** Launch Emergency Compute Sovereignty Initiative  
+Establish an emergency task force under the European Commission, backed by €70 billion in cohesion and IPCEI funding, to fast-track the construction of sovereign AI compute infrastructure on EU soil, including secure data centres, energy supply guarantees, and legal frameworks to retain model weights and restrict foreign access.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` Raise eu_ai_sovereignty from 5.0 to at least 30.0 within 18 months by anchoring critical compute and model development within EU jurisdiction; reduce dependency on U.S. export-controlled technology; create leverage for future negotiations on supply_chain_coercion  
+`Applies to:` EU member states, selected semiconductor and energy firms, and foreign hyperscalers operating in the EU — binding through conditional access to grid, spectrum, and public procurement
+
+## Priority
+**Priority:** Launch Emergency Compute Sovereignty Initiative  
+Because the cyber_major_incident and supply_chain_coercion prove that our dependency is now an active threat vector — not a vulnerability, but a weapon being used — and because we cannot restore control or trust without the physical and legal means to run systems no one else can switch off.
+
+## In practice
+We are launching the Emergency Compute Sovereignty Initiative as a crisis infrastructure programme on par with the post-2022 energy response. The Commission will convene a special meeting of the Competitiveness Council next week to adopt the legal framework for accelerated permitting, grid access, and state aid waivers under Article 122 TFEU. We are designating this a Project of Common European Interest with binding delivery milestones: three sovereign data centres — in Finland, Spain, and Poland — must be operational by turn 14, each capable of hosting models up to 65.0 capability under EU-controlled supervision. Funding will be drawn from uncommitted cohesion funds and a reallocation of the Digital Europe Programme, with additional IPCEI status to allow coordinated state investment in chip packaging and cooling infrastructure.
+
+We are negotiating with TotalEnergies, Siemens, and selected national utilities to secure dedicated low-carbon power contracts, and with ASML and IMEC to develop a parallel maintenance and tooling chain insulated from U.S. jurisdiction. The initiative includes a new legal instrument: any model trained above 60.0 on EU-funded or EU-permitted infrastructure must have its weights secured under EU law, with no remote access granted to foreign parent companies. This applies retroactively to existing deployments. We are offering U.S. hyperscalers a choice: comply and gain preferential access to EU markets and talent, or face progressive exclusion from public-sector contracts and data-sharing frameworks.
+
+The Trust Corps completes its rollout this turn. We are converting its Redress Coordination Unit into a standing function under the European Data Protection Board, with expanded authority to issue emergency mitigation orders during AI incidents. The Accountability Boards are now legally constituted; their first mandate begins in Lyon next month, reviewing the French predictive policing system. We are pairing that with a public transparency sprint: all findings from the first three Board reviews will be published in real time through the Trust Corps dashboard, with plain-language summaries and direct claim channels. But none of this will matter if we remain dependent. Sovereignty is not a long-term ambition. It is the precondition of survival. We are acting on that truth.

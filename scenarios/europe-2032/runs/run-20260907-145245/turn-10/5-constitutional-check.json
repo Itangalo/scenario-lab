@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Regulatory Constraint violated: The Emergency Continuity Response Initiative is introduced as a new measure in this turn, but the narrative describes it delivering tangible fixes and contributing +2 to resilience immediately. This violates metric rule 6: \"No measure is implemented instantly. Minimum time from proposal to full effect is one full turn for low-cost measures and two for high-cost ones, and may be much more.\" Even if classified as low-cost, its effects must be delayed by at least one full turn; immediate impact is not permitted.\n- Organizational Constraint violated: The initiative involves cross-border technical teams, emergency powers, joint command cells, and live failover drills across multiple capitals — implying rapid formation or activation of complex operational capacity. No prior build-up is noted in the notepad, and such capabilities cannot be plausibly deployed at scale within a single turn without violating organizational growth limits (implied by constitutional modelling choice 6 and invariant realism about institutional inertia)."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

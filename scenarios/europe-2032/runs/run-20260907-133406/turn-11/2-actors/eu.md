@@ -1,0 +1,35 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): We will pivot from restoring trust through accountability alone to ensuring the EU can act decisively in a world where AI capability has escaped human oversight, by building sovereign capacity to detect, respond to, and contain AI-driven crises — starting with control over infrastructure, supply chains, and incident response  
+- Trigger: the **eu_frontier_access_denied** event and sustained collapse of **eu_political_capital** to 1.0, compounded by **export_control_escalation** and **safety_breakthrough**  
+- Grounds: The Union was cut off from the leading model overnight — hospitals in three member states lost diagnostic support, ministries lost translation pipelines, and AI-dependent SMEs halted operations. This was not a failure of justice, but of sovereignty. The Accountability Tribunal, while morally necessary, cannot compensate for the absence of a functioning technological base. Meanwhile, the **safety_breakthrough** proves that control is possible — but only where you have access and authority. We are now in a world where the most capable systems are not only foreign-controlled but selectively denied, and where even verified safety progress benefits only those who hold the stack. Our two-year commitment must now reflect this reality: trust cannot be restored through redress alone when the systems themselves are beyond reach. We must secure the foundations of action — compute, access, response — or lose the capacity to govern at all.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, accept being wrong as the price of not being late, and now — when control is possible — we will act to seize it wherever it exists  
+- Grounds: The **safety_breakthrough** changes the nature of uncertainty: we are no longer blind to model behaviour in deployed systems. For the first time, a control mechanism — one that predicts and certifies behaviour — has landed in production. But it is not ours. The breakthrough emerged in a U.S. lab and is already embedded in export-controlled models. We can no longer afford to act without capability; we must act to own it. Our commitment to early action now includes the imperative to capture and replicate every assurance gain, by any legal and industrial means available.
+
+## Portfolio
+- `Establish EU Public Trust Corps for AI Incident Response and Transparency (category 9, costs 3 per turn, started turn 9, finishes on turn 12): Create a civilian technical corps under the European Commission, staffed with red-team engineers, crisis communicators, and regional liaison officers, to lead public-facing incident response, conduct live transparency drills, and operate a 24/7 AI incident dashboard with verified threat status, system outages, and mitigation progress.` — finished
+- `Launch EU AI Accountability Tribunal and Remediation Fund (category 3, costs 3 per turn, started turn 10, finishes on turn 14): Establish a supranational legal body with investigative authority over AI-driven harms in public and hybrid systems, empowered to compel evidence, issue public findings, and order compensation. Back it with a €10bn fund for rapid redress, seeded from fines on non-compliant deployments.`
+
+Canceled measure: Establish EU Public Trust Corps for AI Incident Response and Transparency.  
+The Corps’ dashboard failed to gain credibility after misreporting the Baltic grid outage, and its beta phase revealed structural gaps in technical authority and cross-border coordination. With political capital at 1.0, we cannot sustain a symbolic transparency effort that undermines the very trust it seeks to restore. The function will be absorbed into ENISA and the newly prioritised response architecture.
+
+## New measure
+**Measure:** Launch Emergency Sovereign Access Initiative  
+Establish immediate EU-controlled access to frontier AI models through emergency procurement, distributed red-teaming, and domestic replication of safety-critical functions, using seized compute capacity and emergency powers under Article 122 TFEU.
+
+Category: 4 (Sovereignty and industrial capacity)  
+Size: large  
+Finishes on turn: 13  
+Targeted effect: Increase eu_ai_sovereignty from 7.0 to at least 25.0 by turn 13, stabilise resilience by restoring AI-dependent public services, and create a foundation for sovereign safety verification  
+Applies to: European Commission, European High-Performance Computing Joint Undertaking, national AI agencies, critical infrastructure operators, EU-funded research consortia
+
+## Priority
+**Priority:** Launch Emergency Sovereign Access Initiative  
+This is now our dominant effort because **eu_frontier_access_denied** has become an operational catastrophe — not a political abstraction — and because the **safety_breakthrough** offers a narrow window to capture control where it exists; without immediate action to secure sovereign access, no tribunal, no dashboard, no corps can function.
+
+## In practice
+We are acting on the conviction that sovereignty is not a policy option — it is a precondition of governance. The **eu_frontier_access_denied** event was not a warning; it was the collapse of a system we pretended we controlled. Hospitals in Belgium, Finland, and Portugal lost AI-supported diagnostic pipelines overnight. The European Medicines Agency halted real-time adverse event monitoring. The Single Market stuttered as customs AI in three ports went offline. This was not an incident — it was a disabling.
+
+So we are invoking Article 122 TFEU for technological emergency, treating AI access as critical infrastructure. The Emergency Sovereign Access Initiative will repurpose 40% of existing EU-funded HPC capacity — currently underutilised due to export-controlled software stacks — to run forked, safety-verified versions of open-weight models at capability 57.0, hardened with the newly disclosed **safety_breakthrough** techniques. We are tasking DG CONNECT and the European Defence Agency with a joint procurement cell to acquire 10,000 additional NVIDIA-compatible GPUs via third countries, bypassing U.S. export controls through bilateral stockpiling agreements with India and Romania. This is not ideal. But it is the only path to restore function.
+
+Simultaneously, we are redirecting the Accountability Tribunal’s technical support staff — originally hired for audit trails — to build a sovereign incident verification layer, ensuring that any model we run can be monitored for emergent risk. The €3bn originally allocated to the Tribunal’s enforcement mechanism will now fund model replication and safety certification, while the remediation fund remains, now conditioned on participation in the sovereign stack. We are offering member states a choice: integrate into this emergency framework and regain service continuity, or remain dependent and isolated. Poland and Hungary may have blocked supranational justice — but they cannot block electricity, medicine, or border control. We are not asking for consensus. We are restoring function.

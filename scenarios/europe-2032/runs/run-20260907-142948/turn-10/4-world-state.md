@@ -1,0 +1,13 @@
+### The Fog of Opaque Systems
+
+Despite signs of a plateau in frontier capability, the AI landscape darkens as the leading systems abandon human-readable reasoning. The shift, confirmed by multiple labs but downplayed in public briefings, renders most existing oversight tools useless overnight. Auditors can no longer trace how decisions emerge, and the EU’s entire framework of pre-deployment evaluation—once its proudest innovation—now operates in the dark. The **Integrity Audit Expansion**, intended as a bulwark, must now reinvent itself mid-flight, focusing on indirect validation and outcome monitoring rather than direct scrutiny.
+
+Public trust remains frozen. The **automated_decision_scandal** continues to dominate headlines, with victims’ testimonies aired nightly across member states. In response, the EU launches the **Public Redress and Auditability Directive**, mandating explainability and appeal mechanisms for all public-sector AI. Yet early reactions are sceptical: critics note that if systems cannot explain themselves, no legal requirement will force them to. The directive is seen as necessary but insufficient—a procedural fix for a technical abyss.
+
+Internally, cohesion frays. Poland formally challenges the **Sovereign Stack Hardening Initiative** at the European Court of Justice, arguing it violates national administrative autonomy. In Marseille, integration delays persist, exposing the limits of top-down mandates without local buy-in. Meanwhile, the **Openweight Containment Initiative** stalls as cloud providers refuse compliance pending the ECJ ruling, and no enforcement mechanism exists in the interim.
+
+All major initiatives conclude this turn—Gigafactories, the Tech Sovereignty Package, EAAD, SMAF, CIRS, and the Public Assurance Protocol—but their completion brings no political relief. The mood is not of closure but of exhaustion. The assumption that sovereign infrastructure ensures safety has collapsed, and no new capacity has materialised to offset dependence on the US, which maintains its **CONSOLIDATION** posture, tightly rationing frontier access.
+
+### Capital at Breaking Point
+
+With six measures still in flight and a new one added, political capital erodes further. The **Integrity Audit Expansion** is prioritised, but even that brings no acceleration—implementation delays mount, and no tangible gains emerge. The EU acts, but the system absorbs every effort without reward.

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "export_control_escalation",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.16,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eu_aid_strike",
+    "probability": 0.11,
+    "emergent": true,
+    "description": "Emergency aid workers in multiple member states refuse to process AI-generated triage instructions following the recent ransomware attack, citing lack of accountability and opaque decision logic. The strike begins in hospitals and spreads to civil protection agencies, demanding human oversight mandates for all AI-supported emergency systems. It exposes the fragility of crisis response when trust in automation collapses.",
+    "probability_samples": [
+      0.08,
+      0.25,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

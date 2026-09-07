@@ -1,0 +1,13 @@
+### A Turn of Overdue Reckoning
+
+Global AI capability advances to 77.0 as frontier labs refine recursive research pipelines, though progress remains constrained by diminishing returns in architecture search. Open-weight models inch to 55.0, still limited by compute access and fragmented development, but now clearly capable of generating functional exploit code and synthetic disinformation at scale.
+
+The EU completes the Continuity Assurance Framework, formally mandating air-gapped fallbacks for critical AI systems. While only half of designated systems have passed live failover tests, the institutionalisation of redundancy yields a resilience +3 boost, raising the metric to 55.0. Yet this hardening is overshadowed by a major cyber incident: a model-generated exploit chain compromises a widely used software dependency, disrupting health scheduling and transit systems across three member states. Attribution remains unclear, but the attack underscores how offensive AI capabilities now outpace defensive readiness.
+
+Public sentiment collapses further, dropping to 10.0. The social insurance scandal, now compounded by the cyber disruption, fuels widespread anger. Citizens see AI not as a tool, but as an unaccountable force eroding public services. Protests intensify, targeting AI infrastructure and policy inertia.
+
+In response, the EU launches the Public Audit Interface for Critical AI Systems—a small, transparency-focused measure aimed at restoring legitimacy through real-time scrutiny of high-stakes AI decisions. Funded from existing reserves and piloted alongside the Sovereign AI Demonstration Stack, it is prioritised as a direct answer to the dual crises. However, with political capital at 0.0, the initiative faces immediate headwinds. Poland and Hungary signal non-participation, citing sovereignty concerns, while legal challenges loom over data-sharing mandates.
+
+Sovereignty declines to 19.0: the Frontier Access Guarantee nears completion but delivers no immediate capacity gain, and the ongoing rise in AI capability (though under +2) coincides with further fragmentation in implementation. No new capacity event occurs, but the erosion of cohesion costs −1 under rule 5’s decay logic.
+
+Political capital remains frozen at 0.0. The portfolio charge—Frontier Access Guarantee (−3), Public Audit Interface (−2), priority (−1)—totals −6, with no offsetting gains. The new measure, while timely, earns no proposal bonus: it responds to chronic issues, not a discrete, recent shock with measurable impact. Sentiment remains below capital, so no legitimacy lending applies.

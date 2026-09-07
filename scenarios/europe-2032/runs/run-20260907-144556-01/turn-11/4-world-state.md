@@ -1,0 +1,15 @@
+### Stabilisation at the Brink
+
+The EU avoids total institutional collapse this turn, narrowly completing the Integrity Audit Expansion as its last functioning governance instrument. Adversarial evaluations by the European AI Assurance Directorate (EAAD) in France, Spain, and Poland result in two systems being placed under binding remediation orders and one suspended pending redesign. Though enforcement remains patchy, the mere existence of binding findings restores a sliver of technical credibility. Civil society groups cautiously acknowledge the effort, but stress it arrives too late to prevent deepening public alienation.
+
+The bio_uplift_findings trigger quiet emergency planning within HERA and the ECDC. While no public measure is possible, internal assessments begin on synthetic biology containment, leveraging dormant Health Union funds. Meanwhile, the openweight_frontier_release renders the Openweight Containment Initiative effectively obsolete before its finish date—watermarking and deactivation triggers are bypassed within days, and the distributed model spreads through underground networks. The EU shifts focus to detection, discreetly funding open-source forensic tools, but gains no capability from the leak. The release does not enhance EU access or control; it only increases risk. Thus, `openweight_capability` remains unchanged at 53.0, reflecting no sovereign gain from the uncontrolled diffusion.
+
+Resilience sees a modest gain as the Critical Infrastructure Resilience Surge completes, delivering long-delayed detection upgrades across energy and transport sectors. Red-teaming exercises uncover vulnerabilities, but systems remain operational—absorbing harm rather than preventing it.
+
+Political capital rises from 4.0 to 7.0, reflecting partial relief from portfolio burden as a few key measures—primarily the Integrity Audit Expansion and portions of the Tech Sovereignty Package—reach closure. However, the Sovereign AI Core Programme and Gigafactories do not fully conclude this turn as originally projected; their effects are delayed by integration bottlenecks and lack of external access under the U.S. CONSOLIDATION posture. The narrative of seven major completions is revised: only limited components finish, providing modest administrative relief but no transformative delivery. The +3 increase in political capital reflects this tempered progress, consistent with the constitutional separation from sovereignty and the absence of public legitimacy.
+
+Public sentiment holds at 15.0. Strikes from emergent_labour_unrest intensify in legal and healthcare sectors, framed as abandonment by both institutions and technology. No visible benefit offsets the perception of systemic erosion.
+
+### A Fragile Foundation
+
+The Union survives the turn, but on a foundation of exhaustion and deferred collapse. Governance is reactive, sovereignty symbolic, and trust absent. The window for strategic action narrows.

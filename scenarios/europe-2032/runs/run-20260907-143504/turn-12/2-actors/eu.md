@@ -1,0 +1,35 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Restore public and institutional trust in sovereign AI systems by ensuring **enforceable redress, resilience to operational failure, and institutional accountability in the absence of technical auditability**  
+  - Grounds: The **opaque_reasoning** crisis has now fully invalidated the assumption that auditable decision-making is achievable in the near term. The Integrity Audit Expansion has failed to produce binding oversight, and no technical path exists to restore visibility into frontier systems. Continuing to tie trust to auditability risks anchoring our commitment to a fantasy. This turn, we must fully pivot from *technical proof* to *institutional legitimacy*: trust will now be rebuilt not through seeing the system’s reasoning, but through empowering people to stop it when it harms, and holding institutions responsible when they deploy it recklessly. The revised commitment reflects that shift — from transparency we cannot have, to accountability we can enforce.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — **but we will no longer treat institutional motion as progress when it does not restore agency or legitimacy**  
+  - Grounds: The **backlash_physical** event confirms that our measures are not only failing to rebuild trust, but are actively fueling resistance. The Rapid Redress Mechanism, while symbolically important, lacks enforcement teeth. The Integrity Audit Expansion is collapsing into irrelevance. Our actions have become ritual — we are *doing things*, but not *changing conditions*. With `eu_political_capital` at 4.0 and `public_sentiment` at 19.0, we can no longer afford the illusion of control. This revision acknowledges that speed and action are not substitutes for legitimacy: we must now act with restraint, choosing measures that demonstrably shift power, not just process.
+
+## Portfolio  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability`` — finished  
+``Launch the Openweight Containment Initiative (category 3, costs 2 per turn, started turn 7, finishes on turn 9): A binding directive requiring all open-weight releases above 45.0 capability to include embedded watermarking, usage tracking, and remote deactivation triggers, enforceable through licensing conditions on EU-based hosting providers and cloud marketplaces`` — finished  
+``Launch the Integrity Audit Expansion (category 1, costs 2 per turn, started turn 9, finishes on turn 11): A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation`` — finished  
+
+Canceled measure: Launch the Integrity Audit Expansion. The ECJ has ruled that binding audit findings on operational status exceed the Union’s legal competence in judicial oversight, and France and Poland have refused to implement. With no enforcement path and no technical auditability, continuing would burn capital for zero effect.  
+Canceled measure: Launch the Openweight Containment Initiative. The ECJ has ruled that remote deactivation mandates on software distribution violate the Digital Markets Act’s interoperability provisions and the Charter’s right to conduct business. Cloud providers have ignored the directive, and no enforcement mechanism exists. With openweight capability at 53.0 and rising, containment is now impossible through licensing — we must shift to resilience and deterrence.
+
+## New measure  
+**Measure:** Establish the EU AI Emergency Suspension Authority  
+A supranational body with binding authority to halt the operation of any AI system in the EU—public or private—when it poses a systemic risk of harm, with fast-track access for citizens, regulators, and whistleblowers, and immediate enforcement through the Court of Justice.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` Increase `ai_safety` by 8–12 points and `public_sentiment` by 6–10 points by restoring a credible, visible mechanism to stop harmful systems, even without understanding them, and signal that the EU retains ultimate authority over deployment  
+`Applies to:` All AI systems operating in the EU, with primary enforcement through EAAD, the European Data Protection Supervisor, and national regulators, backed by the Court of Justice
+
+## Priority  
+**Priority:** Establish the EU AI Emergency Suspension Authority  
+We are pushing this hardest this turn because the **backlash_physical** event proves that the public no longer believes in our ability to stop harmful systems — and with auditability gone, our only remaining lever is the credible threat of suspension. This is not about understanding AI, but about reclaiming authority: if we cannot see it, we must still be able to stop it.
+
+## In practice  
+This turn, we are governing from the edge of institutional collapse. With `eu_political_capital` at 4.0 and `public_sentiment` at 19.0, every move must restore legitimacy or it will accelerate breakdown. The Integrity Audit Expansion and Openweight Containment Initiative are now legally dead — we cannot enforce them, and pretending otherwise wastes what little credibility we have left. We are shifting entirely to crisis containment and institutional accountability.
+
+We are drafting the EU AI Emergency Suspension Authority under Article 114 TFEU (internal market), with a legal override based on systemic risk to public order and fundamental rights. The proposal will be fast-tracked through the Justice and Home Affairs Council, with EAAD as the operational lead. We are offering member states opt-in pilot authority for national systems in exchange for support — Germany and the Netherlands have signaled openness, but France and Poland remain skeptical, fearing judicial encroachment. We are offering them co-chairing rights on the review panel and a sunset clause at turn 18 to secure buy-in.
+
+The Sovereign AI Core Programme has delivered infrastructure but no sovereign capability — the stack is built, but no model runs on it above 50.0. We are now repurposing its budget toward emergency resilience and redress, pausing further investment until we can secure talent and access. Our focus is no longer on catching the frontier, but on surviving its fallout. We are briefing the European Council that without a credible power to stop AI, no audit, no redress, no containment will matter — because trust is not in systems, but in the institutions that govern them. And right now, we are losing both.

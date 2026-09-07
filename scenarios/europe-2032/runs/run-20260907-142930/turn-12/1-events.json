@@ -1,0 +1,37 @@
+[
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.28,
+    "emergent": true,
+    "description": "Widespread strikes and walkouts in public-sector administrative roles across several member states, driven by AI-driven job displacement and lack of retraining pathways. The action spreads from local governments to national agencies, pressuring EU institutions to respond.",
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 56.0 (+4.0) while `ai_capability` only increased by 0.5 (from 61.0 to 61.5). A rise in `openweight_capability` of this magnitude relative to stagnant `ai_capability` is implausible under the accumulation model unless justified by a major open-weight-specific breakthrough or adoption surge. The narrative cites market shifts and retrofitting but does not describe an event substantial enough to drive a 4-point leap—especially when frontier progress is said to be plateauing. Such a jump violates the principle that `openweight_capability` grows *relative to* and *in the wake* of `ai_capability`, not independently and sharply.\n- Invariant 9 violated: While no single metric moves more than 25 points, the change in `openweight_capability` (+4.0) exceeds what is justifiable given the minimal growth in `ai_capability` (+0.5) and the absence of any narrated catalyst (e.g., mass open release, global developer mobilization, infrastructure windfall). The constraint on movement size is not merely arithmetic—it guards against implausible *rates of change relative to drivers*. Here, the uncoupling of `openweight_capability` from its foundational dependency constitutes a functional violation of bounded, realistic progression."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

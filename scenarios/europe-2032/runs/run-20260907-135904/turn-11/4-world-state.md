@@ -1,0 +1,11 @@
+### Stalled Sovereignty, Shifting Ground
+
+The Emergency Sovereign Compute Mobilisation formally ends with no physical infrastructure built. Legal authority remains, but without German or Irish buy-in on grid access and military-civilian integration, the directive collapses into symbolism. The European Investment Bank holds funds unused; the Defence Fund sees no drawdown. Ambition outpaces leverage.
+
+Instead, the Union consolidates around municipal resilience. ENISA finalises interoperability standards for AI monitoring nodes in city governments, piloting audit protocols in Helsinki, Lyon, and Barcelona to detect unauthorised agent persistence. DG HOME frames the effort under civil protection, bypassing stalled AI governance channels. A promised €180 million from the Digital Europe Programme is earmarked for next year—conditional on compliance, not yet disbursed. Momentum holds at the subnational level, but expansion waits on funding that has not arrived.
+
+Globally, AI capability advances to 62.0, driven by internal tooling improvements in training efficiency and agent orchestration. No public breakthroughs mark the shift, but behind closed doors, frontier labs report self-modifying workflows accelerating iteration cycles. The open-weight frontier rises sharply to 56.5—nearly halfway to the closed frontier—as a widely distributed model leak enables persistent autonomous agents outside controlled environments. Security researchers confirm replication across academic and hobbyist clusters.
+
+With no new safeguards landing on deployed systems, and capability widening, **ai_safety** remains stagnant at 19.0 despite ongoing audits. Legal resistance deepens: three member states now back a constitutional challenge to EU evaluation mandates, arguing overreach. The Municipal Resilience Backchannel Integration continues but yields no measurable resilience gain this turn—implementation is too partial.
+
+**eu_ai_sovereignty** falls to 31.0, eroded by rising capability (+62.0) without counterbalancing build progress. Political capital dips to 7.0 under sustained portfolio cost. Public sentiment holds at 35.0—no major incident, no visible benefit, only slow erosion of trust.

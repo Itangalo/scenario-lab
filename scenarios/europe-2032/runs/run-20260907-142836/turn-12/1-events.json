@@ -1,0 +1,48 @@
+[
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.26,
+    "emergent": true,
+    "description": "Grassroots organizing among displaced administrative and technical workers intensifies across multiple member states, now coordinated through municipal resilience nodes. The movement remains non-violent but is developing shared demands for AI-driven redundancy recognition and training fund access, increasing pressure for a unified EU response.",
+    "probability_samples": [
+      0.3,
+      0.18,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

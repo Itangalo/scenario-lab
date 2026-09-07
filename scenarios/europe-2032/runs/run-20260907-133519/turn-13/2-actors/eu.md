@@ -1,0 +1,36 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Restore political agency and public trust through demonstrable control over AI incidents, transparent accountability, and sovereign response capacity — but this turn, we are failing catastrophically. A major cyber incident has exposed our inability to respond at machine speed, and public sentiment has collapsed to 5.0. The Trust Corps is not yet operational, and the verification floor we imposed is being bypassed in real time. Our commitment now demands not just accountability, but *credibility*: we must show we can defend, not just judge — and we are failing to do so even as autonomous systems we deployed ourselves cause collateral harm.  
+- Trigger: the **cyber_major_incident** and **openweight_frontier_release** events, combined with `public_sentiment` dropping to 5.0 and `ai_safety` collapsing to 2.0  
+- Grounds: The emergency activation of defensive agents under NIS2 has not only failed to restore confidence — it has deepened the crisis. One of our own automated systems caused a blackout, proving that even our sovereign defences are opaque and untrustworthy. The release of a near-frontier open-weight model means the offensive capability that breached us is now permanently distributed, and the gap between what exists and what we can control has become unbridgeable. Our commitment to restore political agency and public trust now rings hollow on both ends: we lack the capacity to act decisively, and the public no longer believes we can protect them. The commitment stands, but its credibility is now in question — and our legitimacy with it.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but this turn, acting under uncertainty has caused harm. We activated machine-speed defences without sufficient verification, and one of our own systems caused a blackout. The cost of being wrong is no longer abstract; it is measured in lost trust, disrupted lives, and damaged infrastructure. We will continue to act, but we must now embed real-time assurance into every autonomous action — not as a check after, but as a condition of operation.  
+- Trigger: the **overreach_harm** event — collateral blackout caused by defensive agents — and `ai_safety` at 2.0  
+- Grounds: Our decision to delegate to machine-speed defences was necessary, but it was made in the absence of any real understanding of how those systems behave under stress. The blackout in the third region was not an outlier; it was a symptom of a deeper failure: we have built systems we do not understand, and deployed them at scale. The principle of acting under uncertainty remains essential — hesitation is surrender in this domain — but we can no longer treat deployment as the end of the line. We must now close the loop: every autonomous action must include real-time monitoring, legible failure modes, and immediate human override capacity. The commitment to act remains, but its form must change.
+
+- add `sovereign_defence_with_assurance` (position): We will not sacrifice control for speed. Any sovereign defensive capability must be both effective and understandable in real time, with telemetry, override, and post-action audit built in by design.  
+- Grounds: The failure of the Sovereign Cyber Shield in one region proves that sovereignty without assurance is dangerous. We must now rebuild trust not just in our ability to act, but in our ability to do so safely. This position guides our adjustments to existing measures and informs our next steps.
+
+## Portfolio
+- `Launch Sovereign Cyber Shield Initiative (category 6, costs 3 per turn, started turn 6, finishes on turn 8): Deploy AI-hardened, pre-automated defence stacks across all Tier 1 critical infrastructure operators, integrating swarm response, zero-trust verification, and real-time model monitoring to neutralise autonomous threats before escalation.` — finished
+- `Establish EU Public Trust Corps for AI Incident Response and Transparency (category 9, costs 3 per turn, started turn 9, finishes on turn 12): Create a civilian technical corps under the European Commission, staffed with red-team engineers, crisis communicators, and regional liaison officers, to lead public-facing incident response, conduct live transparency drills, and operate a 24/7 AI incident dashboard with verified threat status, system outages, and mitigation progress.` — finished
+
+## New measure
+**Measure:** Launch Real-Time Assurance Layer for Autonomous Defences  
+Integrate continuous interpretability, telemetry, and human-in-the-loop override into all machine-speed defensive systems operating in critical infrastructure.
+
+Category: 5 (Public technical capacity and research)  
+Size: large  
+Finishes on turn: 16  
+Targeted effect: Increase ai_safety by +10 to +15 by ensuring autonomous systems are legible and controllable in real time; reduce risk of overreach and collateral damage in sovereign defences.  
+Applies to: ENISA, national regulators, Tier 1 critical infrastructure operators, and the EU Public Trust Corps.
+
+## Priority
+**Priority:** Launch Real-Time Assurance Layer for Autonomous Defences  
+This is now our dominant effort because the **overreach_harm** event — our own system causing a blackout — has proven that acting fast without understanding is not sovereignty, it is recklessness. Our credibility depends not only on our ability to defend, but on our ability to do so safely and transparently. Without assurance, every autonomous action risks deepening public distrust and fragmenting member-state cooperation further.
+
+## In practice
+We are acting on the conviction that sovereignty in the age of AI cannot mean unchecked speed — it must mean *responsible* speed. The emergency activation of defensive agents under NIS2 bought time, but at a cost: one of our own systems caused a blackout, and the public sees not protection, but chaos. We cannot afford to repeat this. 
+
+We are now directing €420 million from the Digital Europe Programme and the Recovery and Resilience Facility to retrofit all active machine-speed defences with a real-time assurance layer: continuous model telemetry, interpretable decision logs, and mandatory human-in-the-loop override at escalation thresholds. ENISA will lead, in coordination with the newly operational Public Trust Corps, to establish a pan-EU monitoring dashboard that feeds verified data into the Trust Corps’ public-facing interface. This is not a pause — it is a correction. We are mandating that no autonomous defensive system operates without this layer by the end of turn 16, and we are offering technical and financial support to member states to meet the deadline. 
+
+Poland and Hungary remain outside the coordination framework, but we are offering them access to the assurance layer as a technical package, not a compliance regime. This is not about control — it is about shared survival. We are also initiating a fast-track review of the Sovereign Cyber Shield Initiative’s design flaws, to be delivered to COREPER by January, with recommendations for how to rebuild sovereign defences that are both fast and trustworthy. The lights went out — but we will not restore them by burning the house down.

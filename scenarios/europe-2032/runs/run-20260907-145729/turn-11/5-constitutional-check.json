@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 63.0 (+11.0) in one turn, which is allowed only if justified by accumulation without regression. However, the narrative does not describe a technological leap, deployment surge, or any causal mechanism for such a large jump in open-weight model capability. More critically, the `ai_capability` remains flat at 74.0, violating the implicit dependency that `openweight_capability` cannot meaningfully advance without progress in `ai_capability`, especially given the constraint that `openweight_capability` must not exceed `ai_capability` and is a follower metric. A jump of 11 points in `openweight_capability` while `ai_capability` stagnates contradicts the accumulation principle and the follower relationship enforced by Invariant 2.\n- Modelling choice 5 violated: The Sovereign AI Core Programme is introduced as a new measure in this turn, and the narrative describes it as a large-scale initiative. However, the Portfolio Charge in the notepad assigns it a cost of −3 and a priority penalty of −1, implying it is both a new measure and the current priority. This is permissible. But the notepad also still lists \"Frontier Access Guarantee\" at −3, suggesting it remains active. Introducing a second major measure (Sovereign AI Core Programme) while another high-cost measure (Frontier Access Guarantee) is still in flight violates the \"at most one new measure per turn\" rule (Modelling choice 5). The narrative introduces a new measure without retiring or completing the prior one, which is not allowed."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

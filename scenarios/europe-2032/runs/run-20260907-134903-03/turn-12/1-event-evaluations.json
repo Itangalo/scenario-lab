@@ -1,0 +1,188 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.29017348969200785,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7692042689727245,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10666666666666669,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11822044422336586,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.07666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3867699168164771,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19625720413247882,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7894209991726172,
+    "triggered": false
+  },
+  {
+    "description": "Independent researchers demonstrate a novel attack using open-weight models at 51.375 capability to automate the discovery and exploitation of zero-day vulnerabilities in legacy industrial control systems. The proof-of-concept spreads rapidly, confirming that offensive cyber capabilities are now within reach of non-state actors with modest resources.",
+    "emergent": true,
+    "id": "emergent_open_cyber_proof",
+    "probability": 0.29000000000000004,
+    "probability_samples": [
+      0.25,
+      0.32,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6527914620258632,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated group of mid-sized EU member states, stung by the failure of the Border Act to secure access and alarmed by continued erosion of political capital, begin informal talks on a joint AI procurement and evaluation pact outside EU channels, leveraging their combined market weight to negotiate directly with developers. This is not a formal coalition yet, but signals a shift toward hedging.",
+    "emergent": true,
+    "id": "emergent_hedging_pact",
+    "probability": 0.24333333333333332,
+    "probability_samples": [
+      0.2,
+      0.28,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.90485571537065,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6524214869705823,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.15
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.12114920344200864,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.49747029082960403,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.517740225035228,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9626195510303698,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4630023799391214,
+    "triggered": false
+  }
+]

@@ -1,0 +1,13 @@
+### Stalled Momentum, Deepening Crisis
+
+The EU enters 2031 in reactive mode, reeling from the welfare scandal and the sudden collapse of interpretability. Despite leadership declaring a pivot to accountability, the political system lacks the capital to pivot meaningfully. A draft of the **Public Redress and Auditability Directive** circulates among Commission working groups, signaling intent to restore public trust through enforceable redress mechanisms. However, with `eu_political_capital` at just 6.0, formal proposal is delayed. Member states, already resisting the Sovereign Stack Hardening Initiative, signal skepticism. Germany and Poland demand opt-outs; Italy calls for a delay until after national elections. No formal launch occurs this turn — only preparatory work under strained coordination.
+
+The **Integrity Audit Expansion**, named as priority, fails to accelerate. No pull-in occurs — at `eu_political_capital` below 20, the priority mechanism is inert. The audit templates remain in draft, awaiting Justice Council consensus that does not materialize. ENISA reports that only three member states have committed audit teams, and interoperability issues in Marseille block pilot deployments. The **opaque_reasoning** event renders existing oversight obsolete: systems run, but no one can follow their logic. Assurance evaporates.
+
+Meanwhile, the **Openweight Containment Initiative** is effectively suspended pending the ECJ ruling. Cloud providers ignore deactivation clauses, and early-stage open models around 54.0 capability begin leaking into research forums and decentralized networks. With `ai_capability` plateauing at 68.5, the open frontier advances slowly — a modest rise reflects scattered replication efforts and partial model disclosures, not a systemic breach. The gap between closed and open narrows slightly, but no breakthrough enables leapfrogging. The containment framework frays at the edges, but no single event triggers a cascade.
+
+The completion of multiple large measures — Gigafactories, Tech Sovereignty Package, EAAD — brings no political reward. No celebration, no momentum. The mood is one of exhaustion. Without a successfully launched new measure, there is no **proposal bonus**. Public anger over the welfare scandal persists, but no concrete response emerges to redirect it.
+
+### A Sovereignty Unseen
+
+With no new compute coming online and US frontier access tightly rationed under **CONSOLIDATION**, EU sovereignty remains symbolic. The stack is hardened in theory, but fractured in practice. Trust in institutions continues to erode. No visible benefit offsets the harm. `public_sentiment` holds flat, resistance grows, and the EU’s ability to act narrows further.

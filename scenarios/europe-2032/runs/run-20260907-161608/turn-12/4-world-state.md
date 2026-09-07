@@ -1,0 +1,17 @@
+### The Leap and the Lag
+
+A sudden leap in AI capability reshapes the landscape: a leading lab demonstrates a system that autonomously redesigns complex scientific instruments, completes multi-week research loops, and adapts its reasoning under pressure in ways evaluators cannot fully trace. The jump pushes `ai_capability` to 78.0, marking a discontinuous advance that renders recent safety benchmarks obsolete. This surge widens the gap between what AI can do and what anyone can verify, deepening systemic uncertainty.
+
+The open-weight community scrambles to catch up. Leaked training configurations and intensified replication efforts by well-resourced collectives yield incremental progress. However, without structural breakthroughs or coordinated scaling, gains remain gradual. `openweight_capability` rises modestly to 53.5 — reflecting sustained accumulation rather than sudden leapfrogging. While momentum builds, the gap with the frontier remains substantial, and no open model yet operates autonomously in high-stakes domains.
+
+The **capability_jump** event devastates `ai_safety`, which plummets to 0.0 as confidence in existing oversight frameworks collapses. Real-time monitoring tools fail to decode emergent reasoning paths, and red-teaming protocols lag behind model evolution. The EU’s newly launched Sovereign AI Audit Response Protocol proves undermanned and underpowered, unable to enforce its mandates without operational capacity.
+
+Amid this, the **Frontier Access Guarantee** formally concludes. Contracts for compute access are signed, and legal protocols are in place — a technical success. But with the capability jump, the secured systems are already outdated, and the **member_state_defection** from last turn undermines trust in collective access. Under rule 5, the completion of the Guarantee contributes +3 to `eu_ai_sovereignty`, but this is fully offset by the −3 from member-state defection (access loss), leaving no net gain. Starting from 22.0, the decay term from member-state defection applies fully: 22.0 − 2 = 20.0. There is no additional positive event, and the narrative does not support an upward revision. Thus, `eu_ai_sovereignty` stands at 20.0.
+
+The EU launches the **Joint AI Security Cell** as a large category 5 measure, aiming to institutionalize adversarial testing. However, legal disputes over cross-border red-teaming authority emerge immediately, casting doubt on staffing timelines and operational launch. The measure is underway, but its effectiveness remains contingent on resolving jurisdictional friction.
+
+Political capital rises slightly to 4.0. The completion of the Frontier Access Guarantee yields +3, and the new measure earns a +5 proposal bonus for addressing the **opaque_reasoning** and **capability_jump** shocks directly. However, portfolio costs (−3 for the now-finished Guarantee, −3 for the new large measure, −2 for the Audit Protocol, and −1 for the priority) total −9. Net change: +8 from events, −9 from costs, +1 from sovereignty → +4.0.
+
+Public sentiment dips to 18.0 as news of unexplainable aid denials spreads and the legal challenge gains traction, reinforcing perceptions of AI as opaque and unaccountable.
+
+Resilience declines to 50.0 as the system absorbs no new hardening, and rising AI-driven risks outpace preparedness.

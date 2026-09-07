@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 53.0 to 60.5 (+7.5) while `ai_capability` remained flat at 68.5. Since `openweight_capability` may not exceed `ai_capability`, this results in `openweight_capability` (60.5) being implausibly close to `ai_capability` (68.5) without any increase in the latter, especially given that open-weight progress is constrained by the frontier. A jump of 7.5 points with no corresponding advance in `ai_capability` and no narrative justification involving a sudden breakthrough or release of previously suppressed technology violates the accumulation rule and the ceiling constraint.\n- Invariant 9 violated: `ai_safety` decreased from 23.0 to 11.0 (−12.0), which exceeds the maximum allowable change of ±25 points only if justified by compounding mechanisms or event gates — but here, the drop is abrupt and unexplained by any named event or mechanism in the metric rules. While drops are allowed, a 12-point decline in one turn lacks grounding in the stated rules for `ai_safety` decay (which typically involve incremental erosion or specific events). Such a large drop without explicit linkage to an event gate or cascading failure mechanism violates the 25-point cap on movement unless internally justified by rule-based compounding — which is not present."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

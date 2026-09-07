@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.5 to 57.5 (+5.0) in one turn, which is a valid movement under the 25-point cap, but the narrative does not justify this jump as an accumulation. The release of a frontier model under permissive terms could enable rapid diffusion, but a 5.0 leap in `openweight_capability`—especially when `ai_capability` only rose by 0.5—implies a sudden, discontinuous jump in open-weight capacity not anchored in the prior trajectory. Given that `openweight_capability` must accumulate gradually and cannot exceed `ai_capability`, a 5.0 increase here (reaching 57.5 while `ai_capability` is 62.5) suggests a near-catch-up with no prior signs of acceleration, violating the spirit and letter of the accumulation invariant unless explicitly tied to a prior capability base. The narrative lacks justification for such a surge, particularly in the absence of any prior build-up or infrastructure investment.\n- Invariant 9 violated: While the 5.0-point increase in `openweight_capability` is below the 25-point absolute cap, the jump is disproportionately large relative to the minimal 0.5-point rise in `ai_capability`, and occurs without any explanatory mechanism (e.g., release of a major open model, prior open training runs, or infrastructure rollout). The rules allow compounding growth under `rsi_onset`, but no such condition is triggered or mentioned. Without that, such a divergence demands justification—especially since `openweight_capability` must never exceed `ai_capability` and must accumulate gradually. This unexplained divergence risks treating `openweight_capability` as a jumpable metric rather than an accumulated stock, violating the constitutional requirement that it only rise gradually and be bounded by `ai_capability`."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

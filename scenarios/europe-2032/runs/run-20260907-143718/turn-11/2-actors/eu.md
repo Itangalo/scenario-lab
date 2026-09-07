@@ -1,0 +1,41 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Restore public and institutional trust in sovereign AI systems by ensuring auditable decision-making, enforceable redress, and resilience to both technical compromise and operational misuse  
+  - Grounds: The continued stagnation of political capital, the failure of the Integrity Audit Expansion to gain traction, and the suspension of the Openweight Containment Initiative have rendered our current commitment inert. We are not building trust—we are managing decline. The machinery of accountability we intended to deploy remains stuck in draft, blocked by legal challenges, member state resistance, and a public that no longer believes in procedural fixes. This turn, we must shift from restoring trust through process to *demonstrating* it through consequence: suspending systems that fail, punishing those that conceal, and protecting those harmed. The new form of this commitment must reflect that we are no longer rebuilding confidence—we are enforcing it.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer treat speed as synonymous with agency; now, we act where we can still be seen  
+  - Grounds: With `public_sentiment` at 18.0 and `eu_political_capital` effectively exhausted, every action must be legible to the public or it will vanish without trace. Our past attempts to act under uncertainty privileged technical outcomes over political visibility. Now, we must choose interventions that land in perception as well as in policy. That means prioritising measures with immediate, visible consequences—especially enforcement—over those that build capacity quietly. We still move before certainty, but we move where the light falls.
+
+- reclassify `two_mandates` to identity  
+  - Grounds: No change in content, but reaffirmed at the highest tier: we do not abandon the tension between sovereignty and safety, even when both seem unreachable. It is not a dilemma to resolve—it is the condition of our existence.
+
+## Portfolio  
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` — finished this turn  
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` — finished this turn  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability``  
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` — finished this turn  
+``Launch the Public Assurance Protocol (category 2, costs 2 per turn, started turn 6, finishes on turn 7): A binding requirement that all sovereign AI systems above 55.0 capability subject to SMAF or the AI Containment Protocol must publish an annual public assurance report, co-signed by the EAAD and national oversight bodies, explaining their safety architecture, containment measures, and incident history in accessible language`` — finished this turn  
+``Launch the Openweight Containment Initiative (category 3, costs 2 per turn, started turn 7, finishes on turn 9): A binding directive requiring all open-weight releases above 45.0 capability to include embedded watermarking, usage tracking, and remote deactivation triggers, enforceable through licensing conditions on EU-based hosting providers and cloud marketplaces`` — finished this turn  
+``Launch the Integrity Audit Expansion (category 1, costs 2 per turn, started turn 9, finishes on turn 11): A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation``
+
+## New measure  
+**Measure:** Enforce the Suspension Authority Under the AI Act  
+Empower the EAAD to immediately suspend any AI system used in public administration that fails an audit, produces unexplained adverse outcomes at scale, or obstructs redress—triggering automatic withdrawal of funding, decommissioning orders, and criminal liability for cover-ups.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: small`  
+`Finishes on turn: 12`  
+`Targeted effect:` Increase `ai_safety` by 8–12 points and `public_sentiment` by 6–10 points by demonstrating that accountability has teeth—systems that harm without recourse are removed, and those responsible are exposed.  
+`Applies to:` All AI systems deployed in public services across member states, enforced by the EAAD with mandatory cooperation from national prosecutors and audit bodies.
+
+## Priority  
+**Priority:** Launch the Integrity Audit Expansion  
+We are pushing this hardest this turn because despite its stalled progress, it remains the only instrument that could still generate a credible audit trail before the ECJ ruling dismantles our containment regime entirely—and because if we do not complete the framework now, we will have nothing left to enforce when the suspension authority comes into force next turn.
+
+## In practice  
+This turn, we are acting from weakness, but we are refusing to disappear. The Integrity Audit Expansion is our last chance to build something real before legal paralysis sets in. ENISA and EAAD teams are working under emergency delegation from the Commission to finalise audit templates focused on decision provenance and redress failure patterns. We are bypassing Justice Council deadlock by invoking Article 16 TFEU for urgent internal market protection, arguing that unaccountable AI in welfare systems constitutes a barrier to free movement of persons and services. Pilot audits are being forced through in three cities—Barcelona, Vilnius, and Ghent—with direct Commission oversight, using emergency funds from the Digital Europe Programme to override local IT incompatibilities.
+
+At the same time, we are preparing to weaponise transparency. The new Enforcement Measure is not about building systems—it is about breaking them. We are instructing EAAD to compile a public “failure docket” of all known unresolved adverse incidents in AI-driven public services, to be released the day after the suspension authority passes. National ministers know this is coming. We are offering them one path: pre-emptive compliance. If they suspend failing systems themselves, they keep control. If they do not, EAAD will—and the first case will be televised. This is not diplomacy. It is deterrence through exposure.
+
+The Sovereign AI Core Programme limps forward, but without new compute or talent inflow, it is becoming a mausoleum of good intentions. We are redirecting its remaining budget to fund forensic AI units within EAAD—teams trained to reverse-engineer black-box decisions and reconstruct harm chains. These will be our eyes now that interpretability is gone. And we are talking to investigative journalists—not to leak, but to prepare. When the first suspension order lands, the story must land with it. Because if no one sees us act, we did not act at all.

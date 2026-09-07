@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eu_aid_strike",
+    "probability": 0.31666666666666665,
+    "emergent": true,
+    "description": "A coordinated strike by EU civil servants responsible for disbursing AI development grants and resilience funding persists, halting disbursement and slowing implementation of critical measures. Fragmented member-state support and lack of political capital prevent resolution, threatening both sovereign capability projects and public trust initiatives.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

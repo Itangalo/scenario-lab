@@ -1,0 +1,13 @@
+### A Fragile Step Forward
+
+AI capability inches upward to 76.0, driven by quiet but relentless progress in model coordination and scaling outside the EU. With no safety breakthrough or incident, the gap between capability and control widens — yet the EU takes its first outward step. Responding to the emergence of a technically credible, non-aligned AI monitoring body, Brussels formally engages, offering €200 million in conditional funding and observer status in key technical forums. The move acknowledges a stark reality: at ai_safety 5.0, the Union cannot secure its systems alone. By accepting external verification as actionable, it gains access to forensic pipelines on model leaks and supply chain risks, lifting ai_safety by +5 to 10.0.
+
+Resilience rises to 59.0. The Continuity Assurance Framework completes this turn, institutionalising quarterly failover testing and air-gapped fallbacks across critical public AI systems. Though implementation lags, the framework’s certification regime begins to shape procurement, improving preparedness. The watchdog’s early-warning function contributes an additional +3, absorbed fully due to the EU’s moderate hardening.
+
+Sovereignty slips to 19.0. The Sovereign AI Core Programme advances in procurement, but operational capacity remains years away. With ai_capability rising by 0.5 — below the 2.0 threshold — no systemic decay term applies. However, the export_control_escalation bites: despite diplomatic efforts, the US under CONSOLIDATION now applies volume-based rationing, limiting EU access to frontier chips. This constitutes a −1 under rule 5, as the Union’s compute access is materially constrained. No category 4 measure finishes; the Frontier Access Guarantee ends, but its effects were already priced in earlier turns.
+
+Political capital remains at 0.0. The portfolio charge — three large measures and a priority — demands −10 per turn. The new small category 8 measure adds −2, but the system cannot absorb it: capital is already at floor. The proposal bonus for joining the watchdog is judged +5 — a credible response to emergent_global_ai_watchdog and the ongoing safety crisis — but it cannot be paid. Sentiment rises slightly to 24.0, as the watchdog move signals responsiveness, and retraining pilots in Málaga and Thessaloniki begin enrolling workers.
+
+### The Cost of Waiting
+
+The EU acts — but not as a sovereign power. It builds, it funds, it negotiates. Yet it does so from a position of exhaustion, where every gain is partial, every advance shadowed by dependence.

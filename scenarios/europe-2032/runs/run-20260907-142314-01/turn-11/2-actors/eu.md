@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 8, finishes on turn 10): A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **finished**
+- `Municipal Resilience Backchannel Integration (category 6, costs 3 per turn, started turn 9, finishes on turn 11): Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for political capital to recover above 12 before proposing any new large-scale initiative, as below that threshold even category 4 measures risk automatic failure at proposal due to perceived infeasibility.
+
+## Priority
+**Municipal Resilience Backchannel Integration** — because with sovereign compute now formally concluded but unimplemented, and political capital too low to force new top-down mandates, our only remaining leverage is to consolidate what already works: bottom-up resilience nodes that are technically functional, locally legitimate, and scalable without central fiat.
+
+## In practice
+This turn, we close the Emergency Sovereign Compute Mobilisation in form, though not yet in substance. The directive expires as a live instrument, having failed to secure binding commitments from Germany or Ireland. No new compute has been built, no grid guarantees finalised. Yet we do not abandon the goal—we shift its mode of delivery. The European Commission issues a post-implementation review under Article 5 of the Digital Markets Act, framing strategic compute not as an industrial policy but as a condition of digital fairness: hyperscalers with dominant position in AI services must disclose their EU energy draw and allow audit of spare capacity. This creates a backdoor path to influence: if private compute will not be sovereign, it must at least be visible, and potentially mobilisable in crisis. DG COMP, ENISA and ACER begin drafting the audit protocol, using market power rather than state build-out as the lever.
+
+Meanwhile, we double down on what still moves: the Municipal Resilience Backchannel. With Lyon, Barcelona, and Helsinki now interoperable, ENISA launches a certification track for “Trusted Resilience Nodes” under the NIS2 framework. Certified cities gain early access to next year’s Digital Europe Programme funds and are exempt from certain cross-border data flow restrictions when operating in emergency mode. We task the European Structural and Investment Funds with identifying three additional municipalities—Bologna, Ljubljana, and Tallinn—for rapid integration by turn 11, using existing disaster recovery envelopes to cover initial costs. The approach is quiet, incremental, and politically light: no votes required, no budgets expanded, just reweighting within current instruments. It is not sovereignty as we once imagined it—massive data centres under EU flag—but it is sovereignty as function: decision-making that survives disruption, and authority that persists where the centre cannot reach.

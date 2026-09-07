@@ -1,0 +1,11 @@
+### A Measure of Sight, Not Power
+
+Global AI capability inches upward to **62.5**, as frontier labs continue integrating agent-based workflows and refining training efficiency. The pace remains within the projected terminal zone, but even incremental gains widen the lead over the EU’s capacity to respond. Openweight capability follows at **54.0**, sustained by broader access to modular tooling and improved cluster management software—still trailing, but closing slowly.
+
+The European Union, operating under critically low political capital (**11.0** at start), attempts to regain strategic footing by launching the **Digital Markets Act Compute and Energy Audit Framework**, a small transparency measure aimed at mapping the hidden footprint of dominant AI providers. Framed as competition policy, it avoids triggering immediate safety or sovereignty debates. Technical standards are finalized, and the proposal enters the comitology process. However, two net-importer member states threaten to refer it to the Council, and DG GROW warns of investor backlash. The measure passes to consultation but with no guarantee of adoption—implementation remains fragile.
+
+With no measures in flight last turn, the portfolio charge is zero. The new small measure costs **−2**, and as it is named priority, an additional **−1** applies. No proposal bonus is earned: the measure responds to structural opacity, not a recent event. Public sentiment remains at **36.0**, too low to trigger legitimacy lending, and political capital falls to **9.0**—deep in the danger zone where agenda control erodes.
+
+Sovereignty declines to **30.0**. The **+0** from the in-flight category 4 measure (none) and **no capacity event** are offset by the **−1** from `ai_capability` rising by 0.5. The audit framework may build future leverage, but yields no immediate gain. AI safety drops to **13.0**, as capability advances without any safety norm landing on systems. Resilience holds at **39.0**, supported by the prior backchannel integration, but no new category 6 measure is active.
+
+Graduate protests grow in Paris and Berlin, with unions demanding AI hiring quotas. Institutional resistance to data sharing deepens, and the Evaluation Shield remains hollow. The US administration takes office next turn—its posture still unknown, but anticipation grows.

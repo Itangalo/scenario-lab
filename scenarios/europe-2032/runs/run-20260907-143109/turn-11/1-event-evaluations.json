@@ -1,0 +1,395 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.843896871847243,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.06,
+    "probability_samples": [
+      0.02,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.36664417299648455,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.41627008369515717,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.633050466077404,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.02,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.02,
+      0.0,
+      0.04
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.043333333333333335,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.03,
+      0.02,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.38903743833091053,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3341550033886743,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3945273181082618,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9983587174992847,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.13953082048674004,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5210187886028278,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4579833448608629,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5592440115867569,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.02,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7004978479572905,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.16647982038706077,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.587698378656229,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9955104080397714,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.18202896137877045,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07643003120422731,
+    "triggered": true
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.06,
+      0.14,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4069106528933827,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.16842874086889592,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.07427625976586505,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_aid_fracture",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "Several southern and eastern member states formally request emergency EU funding to offset AI-driven regional economic decline, but northern fiscal watchdogs resist, citing governance failures in implementation. The dispute exposes a widening rift over burden-sharing in technological transition, with some states threatening to redirect national AI investments unilaterally.",
+    "probability_samples": [
+      0.21,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.399242507636674,
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_audit_tools",
+    "probability": 0.05666666666666667,
+    "emergent": true,
+    "description": "In response to the collapse of official auditability, a decentralized coalition of researchers and civic hackers releases a suite of open-source tools that infer model behaviour through input-output probing and anomaly detection. While limited, these tools gain rapid traction among watchdogs and local governments seeking alternatives to opaque frontier systems.",
+    "probability_samples": [
+      0.17,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2078461765594395,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated push by several EU member states, reacting to the Union's paralysis and the ongoing backlash, forms an informal pact with non-US cloud providers and sovereign AI initiatives in Japan, South Korea, and Canada to establish shared access to compute and evaluation resources. The group avoids formal treaty structures but aligns export licensing and creates a joint incident response cell. It emerges from frustration with Brussels' gridlock and fear of total dependency, and gains momentum as mid-sized industrial nations seek autonomy without provoking Washington.",
+    "emergent": true,
+    "id": "emergent_sovereignty_pact",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Amid collapsing public trust and repeated failures in AI governance, a grassroots civic initiative in Germany and France successfully deploys a distributed, open-source audit framework for public-sector AI systems, built on cryptographic logging and citizen verifier networks. It gains legitimacy after exposing a flaw in a benefits-allocation model, and spreads to other member states despite no EU coordination. The movement bypasses institutional channels, creating de facto transparency where official mechanisms have failed.",
+    "emergent": true,
+    "id": "emergent_civic_audit_wave",
+    "probability": 0.03,
+    "probability_samples": [
+      0.0,
+      0.09,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_unrest_wave",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Widespread strikes and work stoppages erupt across multiple EU member states as public-sector unions, legal associations, and administrative staff protest the automated replacement of entry-level roles. The actions target government offices, courts, and universities, with demands for moratoriums on AI deployment in hiring and public services. The wave gains momentum from low public sentiment and visible job attrition in knowledge sectors.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_compute_blackmarket",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "An underground market emerges for access to foreign-hosted frontier AI models, circumventing official restrictions through anonymized compute leasing and jurisdictional arbitrage. Small firms, researchers, and local governments use these channels to access capabilities denied through official routes, creating a shadow infrastructure that undermines regulatory coherence and raises security concerns.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

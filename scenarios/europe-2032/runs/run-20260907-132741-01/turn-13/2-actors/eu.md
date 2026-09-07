@@ -1,0 +1,29 @@
+No statement changes.
+
+## Portfolio
+- `InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished  
+- `Launch Sovereign Cyber Shield Initiative (category 6, costs 3 per turn, started turn 6, finishes on turn 8): Deploy AI-hardened, pre-automated defence stacks across all Tier 1 critical infrastructure operators, integrating swarm response, zero-trust verification, and real-time model monitoring to neutralise autonomous threats before escalation.` — finished  
+- `Establish EU Public Trust Corps for AI Incident Response and Transparency (category 9, costs 3 per turn, started turn 9, finishes on turn 12): Create a civilian technical corps under the European Commission, staffed with red-team engineers, crisis communicators, and regional liaison officers, to lead public-facing incident response, conduct live transparency drills, and operate a 24/7 AI incident dashboard with verified threat status, system outages, and mitigation progress.` — finished  
+- `Activate Emergency Cross-Border Incident Data Pool (category 2, costs 2 per turn, started turn 12, finishes on turn 12): Establish a minimal, encrypted data-sharing protocol among national CERTs and ENISA to ensure basic visibility into AI-driven cyber incidents, using existing GDPR-compliant channels and a temporary legal basis under Article 16 TFEU.` — finished  
+- `Launch Joint Middle-Power Evaluation Cell (category 1, costs 2 per turn, started turn 13, finishes on turn 15): Stand up a shared technical unit with fellow supply-chain powers to conduct coordinated pre-release evaluations of frontier models, using pooled expertise and access secured through collective bargaining.`
+
+## New measure
+**Measure:** Launch Distributed Open-Weight Resilience Programme  
+Support the emergent European open-weight AI collective by integrating it into public-sector infrastructure, providing compute subsidies, and establishing a certification framework for transparent, auditable models trained on EU data and distributed via sovereign cloud infrastructure.
+
+Category: 4 (Sovereignty and industrial capacity)  
+Size: large  
+Finishes on turn: 18  
+Targeted effect: Increase `eu_ai_sovereignty` by anchoring a functional, distributed AI stack under EU jurisdiction; raise `resilience` by enabling local governments and civil society to run essential services without dependence on foreign or closed systems; modestly improve `public_sentiment` by demonstrating tangible alternatives to opaque, externally controlled AI.  
+Applies to: EU member states, regional authorities, civil society organisations, and certified European open-weight developers
+
+## Priority
+**Priority:** Launch Joint Middle-Power Evaluation Cell  
+This remains our most urgent leverage point because it is the first mechanism in years that allows us to shape global AI safety from outside the US-China duopoly — not through force, but through coalition-based gatekeeping of export-critical technologies, and because its credibility depends on visible progress this turn, even as political capital remains exhausted.
+
+## In practice
+We are acting from the edge of institutional collapse, but two fragile signals — the plateau in capability growth and the alignment of middle powers — have given us just enough ground to stand on. This turn, we treat the completion of the Emergency Cross-Border Incident Data Pool as a verdict: did the Union still function at minimum viable level? The answer is *barely*. Five packets were received during Exercise Heraklion-2, including Portugal’s after manual override, and the unified dashboard lit up. But Poland and Hungary refused participation, and only Germany and France received analytics early. We count this as meeting the revised `survive_collapse` threshold — continuity was tested and held, if barely. The Public Trust Corps, now formally constituted, will issue its first report next turn confirming the partial success and naming the abstentions. There will be no spin.
+
+The Joint Middle-Power Evaluation Cell moves from concept to negotiation. We have repurposed €120 million from dormant Trust Corps training modules to fund secure facilities in Toulouse and Helsinki, and legal teams are finalising the MOU under the Digital Partnerships Council. Our ask is narrow: access to final model weights for red-teaming in exchange for export licences on advanced chips and tools. Japan, South Korea, and Canada have signalled conditional support; Taiwan’s participation remains discreet but technically essential. No lab has agreed yet, but the coalition’s collective leverage over supply chains makes refusal costly. We are not inspecting training runs — not yet — but we are asserting that deployment rights depend on evaluation access, and that principle must land now.
+
+Simultaneously, we respond to the **emergent_eu_distributed_ai_collective**, which has gained real traction among municipalities and civic hackers frustrated by foreign dependency and black-box systems. We cannot fund broadly, but we can legitimise and scale. The new measure proposes direct integration of this grassroots effort into public infrastructure: compute subsidies via the revived InvestEU-AI window, sovereign cloud hosting under GAIA-X compliance, and a fast-track certification for models that meet transparency, auditability, and data-provenance standards. It will not rival frontier systems, but it will run schools, clinics, and local planning offices when global AI fails or turns hostile. This is sovereignty not as grand project, but as distributed necessity — and it may be the only kind possible now.

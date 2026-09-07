@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Launch the Sovereign AI Core Programme −3, Launch the Emergency Fragmentation Containment Mechanism −3, priority −1 = −7  
+PROPOSAL BONUS: none — the Emergency Fragmentation Containment Mechanism responds to emergent_regional_aid_fracture and loss_of_control_incident, but with eu_political_capital at 3.0 and no prior credibility, the measure is stillborn; no capital is gained  
+LEGITIMACY LENDS: none — public_sentiment (6.0) < eu_political_capital (0.0 after charges)  
+SOVEREIGNTY: 10 last turn, no capacity event, capability rose 1.0 < 2 → no decay term, no category 4 completion, no in-flight benefit = 10  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_aid_fracture -- first noted turn 11, listed in 3 turn(s) so far: The divide between northern and southern/eastern member states over AI investment and burden-sharing has hardened. Several states are now pursuing bilateral compute deals outside EU frameworks, undermining collective infrastructure efforts.  
+emergent_open_source_audit_tools -- first noted turn 11, listed in 3 turn(s) so far: Decentralised audit tools continue to spread among local governments and civic groups, offering limited but growing capacity to probe model behaviour. Their adoption reflects deepening distrust in official oversight.

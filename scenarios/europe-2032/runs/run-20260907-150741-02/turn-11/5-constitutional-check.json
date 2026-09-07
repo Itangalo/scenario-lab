@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 54.0 to 55.0, but `ai_capability` only increased from 75.0 to 76.0 (+1.0). According to the constitutional constraint, `openweight_capability` must not exceed `ai_capability` and must accumulate at a rate consistent with its dependency on `ai_capability`. A +1.0 rise in `ai_capability` does not justify even a +1.0 rise in `openweight_capability` under the established accumulation logic, as open-weight progress lags significantly behind frontier capability and is constrained by access to frontier models. The narrative provides no mechanism (e.g., sudden open release, leap in community efficiency) to justify closing the gap while `ai_capability` itself grows slowly. This implies an unrealistic decoupling of `openweight_capability` from `ai_capability` accumulation dynamics.\n- Modelling Choice 5 violated: The narrative introduces *two* new measures in one turn — the \"Continuity Assurance Framework\" (which completes this turn, implying it was active) and the \"Sovereign AI Demonstration Stack\" (newly launched). Additionally, a priority (\"Frontier Access Guarantee\") is referenced as ongoing. However, the Constitution allows at most *one new measure per turn*. Launching a new measure (Sovereign AI Demonstration Stack) while another (Continuity Assurance Framework) is still in effect and being evaluated violates this rule. The completion of a prior measure does not permit the launch of more than one replacement in the same turn.\n- Narrative violates Constraint 8 (No telegraphing): The narrative states \"The demonstration may plant seeds of legitimacy, but in the short term...\" — this is anticipatory and telegraphs a future judgment about the effectiveness of the measure, implying a probabilistic outcome. Such forward-looking interpretation of pending effects is prohibited; the narrative must report outcomes, not suggest latent potential or future trajectories."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

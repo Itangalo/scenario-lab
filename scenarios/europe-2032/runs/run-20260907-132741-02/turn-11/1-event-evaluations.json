@@ -1,0 +1,172 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7198812183135098,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.27466905868207825,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08950845947953845,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.17713692927108282,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9337535955720052,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.05,
+      0.0,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A coordinated effort among European member states, Canada, Japan, and South Korea begins to pool resources for independent AI evaluation and small-scale compute clusters, aiming to reduce reliance on U.S. frontier models. The initiative emerges in response to the complete erosion of EU political capital and sovereignty, and is framed as a minimum viable coordination to preserve technological agency.",
+    "emergent": true,
+    "id": "emergent_middle_power_technical_pool",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8388556228065873,
+    "triggered": false
+  },
+  {
+    "description": "Amid collapsing public trust and repeated AI scandals, a grassroots movement in France and Germany successfully pressures local governments to decommission AI-driven decision systems in social services. The movement spreads to Belgium and the Netherlands, demanding legislative rollback rather than reform. It gains traction through civil disobedience and media coverage of individual injustices.",
+    "emergent": true,
+    "id": "emergent_grassroots_rollback_movement",
+    "probability": 0.03,
+    "probability_samples": [
+      0.09,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5803992876422417,
+    "triggered": false
+  },
+  {
+    "description": "A wave of coordinated sabotage targets AI infrastructure across several member states, including data centres and power substations linked to compute clusters. The attacks are claimed by a decentralized network of anti-AI activists using encrypted channels, and some incidents result in injuries. The scale and coordination suggest model-assisted planning, though no specific system is identified. This reflects the extreme erosion of public trust and the weaponization of technological resentment.",
+    "emergent": true,
+    "id": "emergent_infrastructure_sabotage_wave",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "In response to the Dutch AI scandal and the collapse of EU political capital, a coalition of mid-sized EU member states begins informal coordination on sovereign AI development, bypassing Brussels. They pool resources to fund a shared open-weight training initiative on repurposed industrial hardware, aiming to restore minimal autonomy. The effort is fragile and under-resourced, but marks the first move toward fragmentation of EU AI governance.",
+    "emergent": true,
+    "id": "emergent_eu_sovereignty_consortium",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coordinated campaign by public-sector engineers and civil society groups forms across multiple member states, demanding transparency and redress for AI-driven administrative harms. It leverages open-source tooling to audit local government AI systems, revealing systemic biases in welfare, housing, and policing algorithms. The movement gains traction rapidly as trust in EU institutions hits record lows.",
+    "emergent": true,
+    "id": "emergent_transparency_revolt",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Amid the collapse of EU political capital and public trust, a coalition of mid-sized European tech firms, research labs, and municipal governments begins coordinating an informal, decentralized AI sovereignty network. Using repurposed consumer-grade hardware and open-weight models, they build resilient local inference capacity outside U.S. or Chinese control. It is not a formal alliance, but it marks the first organic push for distributed European AI autonomy.",
+    "emergent": true,
+    "id": "emergent_decentralized_eu_ai_network",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

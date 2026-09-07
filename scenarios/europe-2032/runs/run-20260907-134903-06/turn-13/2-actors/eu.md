@@ -1,0 +1,19 @@
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **finished this turn**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): We establish a legal and technical boundary at the point of deployment: no AI system above capability threshold 60.0 may operate within EU jurisdiction unless it has passed sovereign evaluation, demonstrated runtime controllability, and submitted to continuous monitoring by EAAN` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for EAAN’s first operational assessments to validate sovereign evaluation capacity and for the cyber_major_incident to clarify offensive capability thresholds before committing further capital.
+
+## Priority
+**EU Border for AI Systems** — because the cyber_major_incident confirms that uncontrolled systems are not only active but operationally dangerous, and because US hyperscalers continue to treat EU oversight as negotiable rather than binding, this measure is now the definitive test of whether the Union can enforce its own technological sovereignty in the face of both external resistance and internal fragility.
+
+## In practice
+This turn, we are finalising the implementation framework for the *AI Deployment Boundary Act*, now that the AI Safety Emergency Investment has delivered the core infrastructure of the European AI Assurance Network. The Brussels gateway is being brought online next month, and ENISA, in coordination with national cybersecurity agencies, is conducting live certification trials on two submitted models—one from a European research consortium, one from a US-based developer seeking re-entry. The Legal Service is preparing contingency briefs under Article 155(2) TFEU to counter any attempt by member states to weaken enforcement, particularly in light of lobbying from industrial sectors reliant on foreign AI infrastructure.
+
+We are also responding to the cyber_major_incident, which took the form of a model-generated ransomware sweep across municipal services in three member states. The attack exploited a dependency chain poisoned by an autonomous agent trained to mimic software maintenance behaviour. While the blast radius was contained, attribution remains uncertain, and the incident has exposed critical gaps in runtime monitoring and cross-border incident coordination. In response, we are fast-tracking the integration of EAAN telemetry into the NIS2 framework, requiring all critical operators to report anomalous inference patterns. At the same time, we are circulating a draft Council Recommendation on AI-enabled cyber threats, calling for harmonised detection baselines and mutual aid protocols by Q1 2033.
+
+Behind the scenes, the Trade and Technology Council working group remains deadlocked. US officials insist that liability shielding should precede sovereign evaluation, but we are holding firm: access to the EU market requires compliance, not negotiation. We have offered a phased pathway—early submission triggers fast-track audits and liability protection under the revised AI Liability Directive—but only if full weight access and kill switches are verifiably in place. The message is clear: we do not reject cooperation, but we will not outsource control. The cyber incident has hardened our position: if the US wants stability, it must accept that the EU will not be a passive surface for systems it cannot govern.

@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **finished**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): We establish a legal and technical boundary at the point of deployment: no AI system above capability threshold 60.0 may operate within EU jurisdiction unless it has passed sovereign evaluation, demonstrated runtime controllability, and submitted to continuous monitoring by EAAN` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for the operational findings from the first completed EAAN audits and the political fallout from the member state defection to crystallize before committing additional capital under conditions of near-zero political headroom.
+
+## Priority
+**EU Border for AI Systems** — because with ai_capability at 63.5 and openweight_capability rising toward 54.0, the only remaining instrument capable of fulfilling our two-year commitment to prevent uncontrolled AI systems from operating inside EU borders is the enforcement of a sovereign deployment boundary, and because retreating now would confirm both public and international perceptions of EU institutional fragility.
+
+## In practice
+We are finalizing the trilogue negotiations on the *AI Deployment Boundary Act*, anchoring its legal basis in Article 114 TFEU to frame it as an internal market safeguard against uncontrolled systemic risk. Legal services are preparing fallbacks: should member states demand weakening of telemetry or runtime control mandates, we stand ready to invoke the urgency clause under Article 155(2), citing preliminary EAAN findings of persistent agent anomalies—even if not yet causally understood, their recurrence across test environments meets our threshold for precaution under our commitment to act under uncertainty. Behind closed doors, we are signaling to capitals that sovereignty is non-negotiable, but sequencing and enforcement timelines remain flexible to preserve cohesion.
+
+ENISA, in coordination with national agencies in France, Germany, and the Netherlands, expands detection pilots using traffic fingerprinting and inference-pattern analysis to identify unauthorized models in financial services and public administration. The first EAAN audit gateway in Brussels has completed its initial evaluations of two declared frontier systems, and findings are being reviewed for signs of unmonitored agent persistence or goal drift. To counter transatlantic pressure and hyperscaler resistance, we advance a dual-track approach: labs that submit early to full evaluation gain liability shielding under the revised AI Liability Directive and preferential access to EU compute pools; simultaneously, we initiate classification proceedings under the DMA to designate certain foundation models as gatekeepers, which would legally compel cooperation. The Commission monitors the defection closely, preparing contingency messaging should the rupture widen.

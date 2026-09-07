@@ -1,0 +1,37 @@
+[
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.05000000000000001,
+    "probability_samples": [
+      0.05,
+      0.05,
+      0.05
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_eu_aid_strike",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "A coordinated strike by EU civil servants responsible for disbursing AI-related aid freezes the release of funds under the Emergency Continuity Response Initiative, citing unsafe oversight conditions and unaccountable decision-making. The action is not illegal, but it halts deployment at critical nodes just as resilience efforts are being tested.",
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

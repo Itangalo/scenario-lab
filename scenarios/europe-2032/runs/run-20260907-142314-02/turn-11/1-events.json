@@ -1,0 +1,59 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.06,
+    "probability_samples": [
+      0.02,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_labour_unrest",
+    "probability": 0.22999999999999998,
+    "emergent": true,
+    "description": "Grassroots organizing among displaced administrative and technical workers intensifies, forming cross-border networks demanding AI transition funds and retraining guarantees. The movement gains traction in regional parliaments and begins to influence local election platforms, particularly in cities with high tech-sector concentration.",
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

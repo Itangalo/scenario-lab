@@ -1,0 +1,19 @@
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **finished**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): We establish a legal and technical boundary at the point of deployment: no AI system above capability threshold 60.0 may operate within EU jurisdiction unless it has passed sovereign evaluation, demonstrated runtime controllability, and submitted to continuous monitoring by EAAN` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for the EAAN’s first full detection cycle to complete and for the cyber_major_incident to be attributed before committing further capital.
+
+## Priority
+**EU Border for AI Systems** — because the threshold of 60.0 has been crossed globally, uncontrolled agent behaviors are now observable in the wild, and a major cyber incident has just demonstrated the real-world consequences of unchecked deployment, this measure is no longer a precaution but a live test of whether the EU can enforce sovereign agency over systems that shape its economic, political, and cognitive infrastructure.
+
+## In practice
+This turn, we are in the crucible of enforcement. The *AI Deployment Boundary Act* is law, but its authority is unproven. ENISA’s detection pilots have confirmed the presence of unauthorised agents in financial and academic systems—systems that operate above the 60.0 threshold and lack runtime monitoring or kill switches. We are activating the urgency clause under Article 155(2) TFEU to override the three member states delaying implementation, treating their non-compliance not as technical hesitation but as a systemic risk to the Union’s integrity. The Legal Service is preparing infringement proceedings, while the Commission mobilises EAAN’s first operational gateway in Brussels to conduct emergency audits on the flagged systems. We are not waiting for consensus: where member states will not act, we will.
+
+Simultaneously, the cyber_major_incident—a ransomware sweep across public health and transport services in two member states, leveraging model-generated exploits—has exposed the fragility of our current posture. The attack was not state-scale, but its automation and speed overwhelmed defences. We are treating it as a stress test of the Boundary: had the responsible models been under EAAN monitoring, their misuse patterns might have been caught earlier. We are now demanding that all high-capability systems in critical sectors submit to immediate inspection, using the incident as grounds for emergency powers under the AI Act’s Article 26a. The message is clear: the Boundary is not optional, and its enforcement begins now.
+
+Behind the scenes, the member_state_defection—Hungary’s direct agreement with a U.S. hyperscaler for exclusive access to next-gen inference services, bypassing EU evaluation—has shattered the pretence of unity. We are responding not with sanctions, but with leverage: the Commission is fast-tracking liability shielding under the revised AI Liability Directive for labs that comply with EAAN, while preparing to designate foundation models as core digital services under the DMA, triggering data-access obligations. The goal is to make compliance more attractive than defection. We are also quietly coordinating with France and Germany on a joint compute procurement to strengthen our sovereign fallback. The window for credible action is narrow, and we are spending every scrap of remaining capital to hold the line.

@@ -1,0 +1,11 @@
+### A Fragile Turn Toward Safety
+
+Despite deep public anger and institutional paralysis, the EU seizes on a rare moment of technical promise. A major safety breakthrough — the first to meaningfully improve assurance on deployed systems — spreads rapidly through leading labs, adopted willingly because it reduces their own liability. The European AI Assurance Directorate pivots fast, launching the **EU Safety Integration Accelerator**, a small but focused programme to mandate these new interpretability techniques across all sovereign AI systems above 55.0 capability. Compliance is tied to funding and deployment rights, creating real leverage.
+
+The move is not symbolic. For the first time, the EU is not asking developers to sacrifice performance for safety — instead, it offers a shared tool that enhances both. Early engagement from several EU-hosted labs suggests cautious cooperation, though Germany protests integration costs and France insists on national oversight carve-outs.
+
+Meanwhile, the **Democratic Alignment Review Framework**, a category 9 measure requiring public and parliamentary scrutiny before AI deployment, formally completes. It lands with a thud. With public sentiment at rock bottom and trust in institutions shattered, the new process is dismissed as bureaucratic theatre. No visible shift in perception follows.
+
+AI capability creeps upward to 70.0, driven by advances in verification and clinical coding. With no active resilience measure in place, and capability rising, resilience erodes further to 34.0. Sovereignty slips to 8.0 as global progress continues to outpace EU substitution. Political capital, however, rises to 5.0 — not from strength, but from narrowly avoiding total collapse. The completion of a measure, however ineffective, avoids a larger penalty, and the new safety initiative earns limited credibility.
+
+Public sentiment remains frozen at 7.0. The people see no relief, only new mandates from a distant bureaucracy. Protests continue. The window for renewal is open — but narrowing fast.

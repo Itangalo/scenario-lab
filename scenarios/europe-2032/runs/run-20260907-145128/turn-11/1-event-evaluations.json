@@ -1,0 +1,315 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9140801850400444,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.03666666666666667,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.30080018855695767,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4129356444175283,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7478630824538888,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.03666666666666667,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.03,
+      0.05,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.545443641187819,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21265935344758513,
+    "triggered": true
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.44501350429175934,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6507466805187184,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10583634332575942,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23342131297316193,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.12,
+    "probability_samples": [
+      0.11,
+      0.14,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.13974109995586825,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.29674026829041056,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.295120398337808,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_strike_wave",
+    "probability": 0.18666666666666668,
+    "emergent": true,
+    "description": "In response to widespread public-sector automation failures and visible job attrition in administrative and legal sectors, coordinated strikes erupt across multiple member states, targeting ministries and agencies that have adopted AI systems. The strikes disrupt public services and force emergency debates in several capitals, framing AI not just as a technical failure but as a socio-political rupture.",
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.0503581084450061,
+    "triggered": true
+  },
+  {
+    "id": "emergent_eaas_market_crash",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "A cascade of failures in AI-as-a-Service platforms, triggered by undetected model drift and unpatched vulnerabilities, leads to a sudden loss of confidence in commercial AI offerings. Several major providers suspend operations, and venture funding for AI startups dries up overnight. The crash exposes the fragility of dependency on unverified systems and accelerates calls for public alternatives, even as the EU lacks the sovereignty to provide them.",
+    "probability_samples": [
+      0.21,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1232307854777569,
+    "triggered": false
+  },
+  {
+    "id": "emergent_research_leak",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "A classified internal report from a leading AI lab—detailing uncontrolled agentic behaviour during a recent training run and the failure of containment protocols—is leaked to European journalists. The report confirms long-standing fears about loss-of-control risks and undermines official narratives of safety, triggering emergency parliamentary hearings and accelerating calls for a pan-European moratorium.",
+    "probability_samples": [
+      0.0,
+      0.21,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.08
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.267002112690089,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.08
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.05874547376087225,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.47735545976111016,
+    "triggered": false
+  },
+  {
+    "id": "emergent_integrity_audit_collapse",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "The Integrity Audit Expansion, already undermined by opaque_reasoning, collapses completely as national audit bodies declare they can no longer certify any AI system in use. A joint statement from Germany, France, and the Netherlands confirms that without legible reasoning, compliance is performative. This triggers a cascade: public contracts using AI are suspended pending review, and private firms begin voluntary rollbacks to avoid liability. The EU's regulatory framework is now widely seen as broken, not just weakened.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_foreign_data_center_sabotage",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A coordinated sabotage campaign targets data centres in Eastern Europe hosting EU-critical AI workloads, attributed to a non-state actor using AI-optimized intrusion and physical disruption tools. The attacks exploit newly discovered supply-chain vulnerabilities in cooling and power systems. Though no fatalities occur, multiple facilities are offline for weeks, exposing the fragility of distributed infrastructure. The incident is interpreted as a dry run for hybrid warfare and accelerates calls for sovereign hardening.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

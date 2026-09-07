@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 58.5 to 64.75 (+6.25) while `ai_capability` increased by only 1.5 (from 70.0 to 71.5). This violates the rule that `openweight_capability` may never exceed `ai_capability`. Even if both are rising, `openweight_capability` must remain ≤ `ai_capability`. At this turn, `openweight_capability` (64.75) > `ai_capability` (71.5) — which is allowed — but the *change* implies `openweight_capability` grew far faster than `ai_capability`, which is structurally implausible under the invariant that openweight is a trailing, constrained subset of overall capability. The jump of +6.25 in openweight vs +1.5 in ai_capability suggests a decoupling inconsistent with the accumulation model and the constitutional requirement that openweight cannot leapfrog or accelerate independently of the base capability. No catastrophic compute destruction is narrated to justify a discontinuity.\n- Narrative Constraint 8 violated: The narrative states \"the delay deepened dependence during the cyber_major_incident\" and \"the loss_of_control_incident remained unresolved\", referencing specific event gates (`cyber_major_incident`, `loss_of_control_incident`) as active or ongoing. This telegraphs gate state by confirming incidents are open or unresolved, which belongs only in event evaluations, not the narrative. The narrative must not confirm or imply the state of event gates; doing so violates the prohibition on telegraphing."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

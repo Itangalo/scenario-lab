@@ -1,0 +1,23 @@
+{
+  "status": "max_attempts_reached",
+  "iterations": 4,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` decreased from 34.0 to 32.0 without justification under metric rule 5. The rule specifies a −1 adjustment only if `ai_capability` rises by at least 2.0 this turn (it rose 0.5) or if an event occurs that takes away access to frontier models (no such event is recorded in the notepad or narrative). No valid mechanism is present for a −2.0 drop. The narrative does not name or imply a qualifying event (e.g., member state defection, access withdrawal), and speculative erosion due to political crisis or legal challenges is not permitted under the rule’s defined terms. This violates the constitutional requirement that metric changes must follow explicitly defined and triggered rules."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` decreased from 34.0 to 32.0 without a narrated event that takes away access or a capability rise of at least 2. The metric rule 5 decay term (−1) only applies if `ai_capability` rises by at least 2 this turn; it rose by only 0.5. No event such as `member_state_defection` or `access_withdrawal` is narrated or recorded in the notepad to justify a −1 to −3 adjustment. The fall is therefore unexplained and violates the requirement that changes in sovereignty must be grounded in rule 5’s defined terms.\n- Modelling Choice 5 violated: The narrative implies multiple negative effects on sovereignty and political capital from systemic failures, but the structure of metric rules—especially the separation of `eu_ai_sovereignty` and `eu_political_capital`—must be preserved. The unexplained 2.0 drop in sovereignty risks conflating it with political collapse, undermining the constitutional guard that these are distinct stocks. Without a clear, rule-based trigger, this blurs the intended separation."
+    },
+    {
+      "iteration": 3,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` decreased from 34.0 to 32.0 without a narrated event that removes access or a triggering condition under rule 5. Rule 5 specifies a −1 adjustment only if `ai_capability` rises by at least 2 in a turn (it rose by 0.5) or if an event explicitly takes away access. No such event is narrated or recorded in the notepad, yet a −2 change occurred. This violates the requirement that changes to `eu_ai_sovereignty` must follow defined, narratively grounded terms — especially given the metric has no automatic decay for small capability gains or political turmoil alone.\n- Modelling choice 8 violated: The narrative retroactively justifies a metric change (\"assume unlisted capacity event occurred\", \"revise narrative to include...\") based on an output discrepancy, then proceeds to imply hidden events (e.g., hyperscaler rerouting, member state suspension) not stated in the narrative. This constitutes telegraphing through retroactive justification and violates the prohibition on implying unannounced event gates or hidden triggers."
+    },
+    {
+      "iteration": 4,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` decreased from 34.0 to 32.0 without a valid trigger under metric rule 5. The rule specifies a −1 adjustment only if `ai_capability` rises by at least 2 this turn (it rose by 0.5, so no penalty applies) or if there is an event that takes away access to sovereign compute (e.g., member state defection, provider withdrawal). No such event is narrated or listed in the notepad. The narrative instead attributes the drop to political and legal resistance, which do not constitute realized access loss under the rule. A fall of 2.0 points without a qualifying event violates the defined mechanics.\n- Narrative-metric consistency violated: The notepad explicitly states \"no capacity event\" and confirms the Sovereign Compute Corridors yield +0 (as expected in early stage), yet the metric drops by 2.0. This contradicts the internal logic recorded in the notepad, which should reflect all adjustments. If an unlisted event caused the drop, it must be named in the notepad to satisfy transparency and rule application. Its absence creates a discrepancy between the official record and the outcome."
+    }
+  ],
+  "final_action": "accepted_with_violations"
+}

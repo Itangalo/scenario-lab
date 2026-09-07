@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 2 violated: `openweight_capability` increased from 52.0 to 56.5 (+4.5), but `openweight_capability` must not exceed `ai_capability` (61.5) and must only rise or stay flat. While the direction is allowed, the increase of 4.5 points implies a jump that cannot be justified by diffusion alone without narrative support for rapid capability transfer. More critically, the `openweight_capability` is now only 5.0 below `ai_capability`, which, given prior trends, represents an implausibly rapid catch-up absent a major open release or leak event — none of which is narrated. The narrative instead describes \"underperforming\" public releases and \"unresolved\" grid issues, which contradicts such a large leap. A rise is permissible, but this magnitude without a clear, narrated cause violates the invariant that these metrics accumulate gradually and realistically.\n- Metric Rule 5 in Modeling Choices violated (as interpreted via Constitutional Constraint 7): `eu_political_capital` increased from 6.0 to 11.0 (+5.0) with no new measure proposed and no legitimacy lend (since capital < sentiment). The narrative explicitly states \"the EU lacks the standing to launch new initiatives\" and \"no new measure is proposed\", yet a +5 boost occurs. Political capital must not grow significantly without a clear source. The notepad shows no event or mechanism (e.g., international success, crisis averted, public approval surge) that would generate such a gain. This violates the realism of political capital as a stock that must be earned through action or legitimacy, not reset arbitrarily.\n- Narrative contradicts notepad: The notepad shows `Municipal Resilience Backchannel Integration` as already in progress and now the priority (−1 in portfolio charge), but the narrative claims \"no new measure is proposed\" — this is acceptable. However, the narrative implies a shift to local resilience *as a new direction*, while the notepad confirms it was already active. This is not a direct constitutional violation but borders on telegraphing a pivot that should have been gradual. However, this is not severe enough to constitute a violation under Constraint 8."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

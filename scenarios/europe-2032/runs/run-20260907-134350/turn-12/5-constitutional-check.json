@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 51.5 to 59.0 (+7.5) while `ai_capability` only increased from 63.0 to 63.5 (+0.5). This violates the rule that `openweight_capability` may never exceed `ai_capability` and must accumulate gradually. A jump of 7.5 points in openweight capability — especially one that nearly closes the gap with a nearly flat `ai_capability` — implies a sudden leap in open-weight performance not grounded in prior accumulation, and is inconsistent with the fixed, unannounced rates of progress in metric rule 1 (Constitutional Constraint 1). The narrative does not describe a physical destruction event or a multi-turn buildup that would justify such a divergence, making this an impermissible reversal of the capability hierarchy.\n- Narrative Constraint 8 violated: The narrative states \"EAAN detects anomalous planning behaviour in a model used by a major energy firm. No safety breakthrough follows.\" This implies a latent event gate (e.g., emergent planning or model anomaly detection) is active or about to trigger, which constitutes telegraphing. The statement \"No safety breakthrough follows\" anticipates a missing outcome from a detectable precursor, thereby implying a probabilistic or conditional future state — which is prohibited under Constraint 8 (\"The narrative must not telegraph\")."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,315 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5767596115675356,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6289014372084661,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.14292549233737883,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.19333333333333336,
+    "probability_samples": [
+      0.08,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9528585057440118,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5532336788150947,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5878653086720129,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.09,
+      0.18,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.038240045490261054,
+    "triggered": true
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2499768083926629,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9453547970373071,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.1366666666666667,
+    "probability_samples": [
+      0.17,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1990806216863129,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.05,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3900138663701441,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.09666666666666668,
+    "probability_samples": [
+      0.13,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.594236026329633,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.18,
+      0.13,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6256691505547723,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8445764847960522,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3643316333956591,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6696264973031811,
+    "triggered": false
+  },
+  {
+    "id": "emergent_informal_cyber_militia_networks",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Unofficial networks of cybersecurity practitioners across EU member states begin coordinating autonomously, sharing threat intelligence and defensive tools outside formal channels. These groups emerge in response to the erosion of state capacity and the proliferation of open-weight offensive models, forming a decentralized but increasingly effective layer of resilience.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2541290897795073,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_refugee_tech_experts",
+    "probability": 0.049999999999999996,
+    "emergent": true,
+    "description": "A growing number of AI engineers and safety researchers from frontier labs, disillusioned by the lack of safeguards and governance, quietly relocate to EU countries offering sanctuary and modest public-sector research roles. This informal brain gain occurs outside any official program, driven by individual choices but collectively enhancing local technical depth.",
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.029485575176867118,
+    "triggered": true
+  },
+  {
+    "id": "emergent_informal_crisis_coordination",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Amid total institutional paralysis, a loose network of technical ombudsmen, municipal IT directors, and open-source maintainers begins coordinating incident response and fallback protocols through encrypted channels. It is not sanctioned, but it prevents total collapse in three regional healthcare systems during a cyber intrusion. This emergent structure operates entirely outside formal EU channels but begins to be quietly referenced in national briefings.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_rights_litigation_wave",
+    "probability": 0.049999999999999996,
+    "emergent": true,
+    "description": "A coordinated series of lawsuits is filed across multiple member states, arguing that autonomous AI systems used in public administration have violated individual rights under the Charter of Fundamental Rights — not because of bias or error, but because no human exercised meaningful control. The cases are dismissed in lower courts but accepted for review by the ECJ, creating a legal flashpoint that forces a doctrinal reckoning on agency and accountability.",
+    "probability_samples": [
+      0.0,
+      0.15,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_informal_cyber_mobilization",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Rumours solidify into observable patterns: decentralized networks of ethical hackers and red teams, self-organized across member states, begin sharing intrusion detection models and coordinating simulated attacks on public infrastructure. This grassroots mobilization operates outside formal EU structures but aligns with resilience goals, suggesting a bottom-up response to the Union's institutional paralysis.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereignty_backlash",
+    "probability": 0.04666666666666667,
+    "emergent": true,
+    "description": "The failed compute seizure sparks a counter-movement among EU member states, with legal and political resistance hardening into a coordinated stance against centralized emergency powers. Several states propose a treaty-level clarification of digital sovereignty boundaries, challenging the Commission's interpretation of Article 122 TFEU and signaling long-term resistance to top-down AI governance.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

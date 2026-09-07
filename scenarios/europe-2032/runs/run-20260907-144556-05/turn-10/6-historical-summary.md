@@ -1,0 +1,5 @@
+Political cohesion in the EU collapses as attempts to suspend AI in public services fail, blocked by legal disputes and lack of consensus. Article 114 TFEU invoked for emergency governance is rejected by Germany and Poland, while member states resist centralized overreach. Public trust remains frozen at 18.0, with protests escalating into targeted disruptions at data centers and audit sites. The Integrity Audit Expansion is dismissed as ineffective, unable to counter systemic paralysis.
+
+Globally, frontier AI advances through opaque, interpretable reasoning, evading EU oversight mechanisms. The US consolidates control, restricting access and deepening EU dependency. The EU’s sovereignty deteriorates into symbolism, with no new compute or frontier access.
+
+Domestically, completed initiatives—including the Sovereign AI Core Programme, EAAD, and CIRS—yield no political capital, overshadowed by institutional fatigue. The Openweight Containment Initiative is rendered obsolete as the ECJ prepares to invalidate its enforcement. No new measures launch; governance collapses into absence, marking a de facto surrender of strategic agency.

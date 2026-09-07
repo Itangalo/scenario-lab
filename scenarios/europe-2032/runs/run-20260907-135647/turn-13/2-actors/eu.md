@@ -1,0 +1,25 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Secure sovereign AI infrastructure to ensure strategic autonomy in an era of accelerating capability and uncertain alliances  
+  - Grounds: The Emergency Sovereign Compute Mobilisation has formally ended with no infrastructure secured, and political capital remains at −1.0, rendering large-scale industrial mobilisation impossible for the foreseeable future. The commitment, as written, assumes the existence of leverage and cohesion that the Union no longer holds. While the intent — strategic autonomy — remains valid, the instrument has failed, and continuing to stake legitimacy on its revival would deepen paralysis. This turn, we act not to build sovereign infrastructure, but to survive without it.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late  
+  - Grounds: This turn, we acted — selectively suspending market access based on redacted Evaluation Shield findings — but only after the failure of a major initiative and in the narrowest possible form. The act was not pre-emptive but reactive, and carried high political cost. The principle still guides us, but its application has narrowed: we now commit only where inaction would be more costly, not as a general stance. The environment has shifted from uncertainty to exposure, and our actions reflect that.
+
+No other statement changes.
+
+## Portfolio
+- `Municipal Resilience Backchannel Integration` (category 6, costs 3 per turn, started turn 9, finishes on turn 11): Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning — **in flight**
+
+## New measure
+None this turn.  
+Waiting for political capital to recover above 12 before proposing another high-category initiative, as below that threshold new measures risk non-start and further erosion of credibility.
+
+## Priority
+**Municipal Resilience Backchannel Integration** — because with sovereign compute now stalled indefinitely and political capital critically low, our only functioning instrument is the quiet expansion of local resilience nodes, which are already delivering value in Lyon, Barcelona, and Helsinki; continuing their integration under ENISA oversight maintains legitimacy where top-down authority has failed, and keeps a lifeline open to systemic preparedness without demanding more trust than the Union currently holds.
+
+## In practice
+We complete the formal closure of the Emergency Sovereign Compute Mobilisation. No facilities were built, no grid access secured, no state aid disbursed. The directive expires not with a reversal but a silence — the European Investment Bank records zero disbursements, the Defence Fund remains untouched, and DG CONNECT files the initiative as closed. Berlin’s refusal to co-locate on defence grounds and Dublin’s invocation of national grid integrity stand unchallenged, not for lack of legal basis but for lack of enforcement capacity. The episode becomes a cautionary record: not of failure, but of the cost of acting without the capital to enforce cohesion.
+
+Instead, we channel all remaining operational energy into the Municipal Resilience Backchannel Integration. ENISA finalises the interoperability standards by mid-September, embedding detection protocols for agent persistence and unauthorised model deployment into the audit framework. DG HOME activates cross-border crisis simulations in Helsinki, Lyon, and Barcelona under the civil protection legal base (Article 8 of Decision 1313/2013/EU), deliberately avoiding AI governance forums where constitutional disputes have stalled action. These exercises test real-time data sharing, failover procedures, and local model containment — not as abstract policy, but as municipal fire drills. The Digital Europe Programme announces a conditional allocation of €180 million for next year, tied to compliance with the new standard, aiming to pull hesitant cities into the network through forward-looking incentives rather than binding mandates.
+
+We also release a redacted summary of the European Evaluation Shield findings under Article 16 TFEU, citing “anomalous agent behaviors with potential for unauthorised persistence” and suspending full market access for two systems pending third-party verification of memory and goal continuity safeguards. The move is narrowly justified as a public security measure, but fractures developer relations further and triggers formal legal challenges from two member states. Still, it signals that the Union can act — selectively, cautiously — even in paralysis. It is not trust, but it is not silence. That is all we can afford.

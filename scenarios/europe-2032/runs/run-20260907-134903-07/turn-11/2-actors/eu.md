@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `AI Safety Emergency Investment (category 5, costs 3 per turn, started turn 8, finishes on turn 12): A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **in flight**
+- `EU Border for AI Systems (category 3, costs 3 per turn, started turn 10, finishes on turn 14): Establish a legal and technical boundary at deployment: no AI system above capability 60.0 may operate in the EU without sovereign evaluation, runtime controllability, and continuous monitoring by EAAN` — **in flight**
+- `Accelerate EAAN Certification Nodes (category 5, costs 2 per turn, started turn 11, finishes on turn 13): Fast-track deployment of sovereign evaluation infrastructure in Brussels, Sophia Antipolis, and Munich to operationalise the EU Border for AI Systems by turn 14, ensuring the EU can independently verify compliance` — **in flight**
+
+## New measure
+None this turn. We are at the edge of operational credibility and cannot afford to fragment focus: the eval_anomaly_reports and emergent_eval_resistance demand full concentration on making the Border enforceable and the EAAN nodes functional.
+
+## Priority
+**EU Border for AI Systems** — because without sovereign verification capacity, the rule is unenforceable, and with emergent_eval_resistance threatening its legitimacy, we must now prove it is not a protectionist façade but a necessary condition for safety in a world where capability is emerging unpredictably.
+
+## In practice
+This turn, we are all-in on implementation. The credibility of the EU Border for AI Systems hinges not on the law, but on whether we can actually inspect, monitor, and if necessary, stop a system. That falls to EAAN. We are fast-tracking certification nodes in Brussels, Sophia Antipolis, and Munich by reallocating €3.2bn from unused pandemic recovery funds and invoking the Crisis Regulation Procedure to bypass procurement delays. These nodes will require access to model weights, telemetry, and red-teaming authority — and we are prepared to enforce that through the Digital Markets Act and the AI Liability Directive’s safe-harbour provisions.
+
+But legitimacy is under attack. The emergent_eval_resistance coalition claims EAAN is designed to exclude, not to secure. Leaked documents suggest benchmark manipulation — we deny them, but the doubt sticks. We respond by publishing the full EAAN evaluation protocol stack under open review by the European Digital Infrastructure Consortium, inviting third-party audits from neutral academic partners in Norway and Switzerland, and establishing a temporary ombuds panel under the European Data Protection Supervisor to review compliance decisions. At the same time, we offer a compliance corridor: labs that engage proactively with EAAN audits will receive liability shielding and priority access to EU-funded compute. But the line holds — no evaluation, no deployment. The border is not a request. It is the minimum condition for operating in EU jurisdiction. Without it, we are not governing AI. We are merely watching it.

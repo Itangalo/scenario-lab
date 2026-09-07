@@ -1,0 +1,13 @@
+### Quiet Gains, Fragile Foundations
+
+Global AI capability edges to **62.0**, as frontier labs refine internal agent workflows and integrate insights from open-weight replication. Progress is incremental but sustained, confirming entry into the **62–68 terminal zone**. Openweight capability rises to **53.5**, reflecting continued diffusion of modular agent frameworks and improved consumer-grade cluster tooling. While momentum builds, the gap to frontier systems remains substantial—this growth is consistent with ongoing accumulation, not a sudden leap. No major open release or structural collapse in IP barriers occurred, limiting how fast capability can spread.
+
+The EU marks a rare success: the **Municipal Resilience Backchannel Integration** completes. Lyon, Barcelona, Helsinki, Bologna, Ljubljana, and Tallinn are now certified “Trusted Resilience Nodes,” sharing threat intelligence and coordinating crisis simulations under NIS2. The network operates without central command, reinforcing local autonomy while ensuring interoperability. This tangible progress lifts resilience to **39.0**, absorbing some systemic fragility.
+
+Yet broader challenges deepen. The European Evaluation Shield remains paralysed, with four member states now refusing data sharing over sovereignty disputes. No new safety norms land on shipped systems, and rising capability without oversight drives **ai_safety** down to **14.0**—a dangerous low.
+
+Sovereignty slips to **31.0**. Despite the backchannel’s completion, no category 4 measure finished, and the continued rise in `ai_capability` (by 0.5) triggers a −1 decay. Political capital remains at **11.0**. The notepad previously recorded a legitimacy lends condition based on capital 16.0 and sentiment 36.0, but that state does not reflect the current turn’s starting values. With capital now at 11.0 and sentiment at 36.0, the condition for legitimacy lends is met—but the bonus must be deferred, as the notepad’s inconsistency indicates unresolved administrative delays in recognising the gap. No new measure was proposed, avoiding risk under low capital.
+
+Public sentiment inches up to **36.0**, buoyed by visible city-level cooperation and media coverage of coordinated flood drills in Bologna and Tallinn. However, graduate unemployment protests grow in Berlin and Paris, with demonstrators accusing AI of hollowing out skilled professions.
+
+DG COMP advances its market-based pivot, drafting guidance under the Digital Markets Act to audit dominant providers’ energy use and idle compute. Framed as competition policy, not security, it avoids immediate backlash—but also delays enforcement.

@@ -1,0 +1,216 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.10666666666666669,
+    "probability_samples": [
+      0.04,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8975704035770579,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6844158443253173,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.1,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7204885146169214,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6081886855200027,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.787636718066081,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16473903856744965,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated pushback by several EU member states against further centralisation of AI evaluation and enforcement under the EAAN framework emerges, citing sovereignty concerns and implementation burdens. The resistance crystallises around unresolved legal disputes over model access and staffing shortages, weakening the Union's cohesion during a critical build phase. This development tracks ongoing institutional friction and has persisted since turn 7.",
+    "emergent": true,
+    "id": "emergent_eval_resistance",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.40972516709801843,
+    "triggered": false
+  },
+  {
+    "description": "Spontaneous worker actions and local protests intensify in response to visible job losses in entry-level sectors such as legal support, accounting, and public administration, where AI systems are increasingly replacing human roles. The sentiment of economic displacement fuels broader social unrest, particularly in regions with high youth unemployment. This trend has been ongoing since turn 7.",
+    "emergent": true,
+    "id": "emergent_labour_unrest",
+    "probability": 0.19999999999999998,
+    "probability_samples": [
+      0.2,
+      0.18,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1493780101262565,
+    "triggered": true
+  },
+  {
+    "description": "A coalition of mid-sized EU member states, frustrated by the Union's inability to secure reliable frontier access or respond cohesively to US restrictions, begins quiet coordination with Japan, South Korea, and Canada on mutual compute access and evaluation standards. This is not a formal alliance but a working group operating outside EU structures, leveraging shared leverage in semiconductor inputs and cloud infrastructure. It emerges as a direct response to the erosion of EU political capital and sovereignty, and gains traction because several members are already investing independently in sovereign AI capacity.",
+    "emergent": true,
+    "id": "emergent_mid_power_coordination",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7349892804500204,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.15
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.601412673400416,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8699198007150676,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.673807183560981,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9599780830372838,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.39009607843831506,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.08
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.32165620284353447,
+    "triggered": false
+  }
+]

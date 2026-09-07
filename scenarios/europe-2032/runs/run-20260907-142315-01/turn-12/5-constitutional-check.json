@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 58.0 (+6.0) while `ai_capability` only increased by 1.0 (from 62.0 to 63.0). The constraint requires that `openweight_capability` never exceeds `ai_capability` and, critically, cannot rise faster than the frontier capability metric in any turn. A six-point jump in open-weight capability when the frontier advanced only one point implies open-weight systems surpassed or significantly outpaced the closed frontier, which is not permissible under normal conditions. No narrative justification of catastrophic physical destruction or equivalent structural rupture is provided to allow such a divergence.\n- Metric Rule 9 potentially violated: `openweight_capability` increases by 6.0 points in one turn, which exceeds the 25-point cap on *any* single-turn change—though this rule applies to absolute changes, not relative growth, and 6.0 < 25, so this is *not* a violation of the hard bound. However, the rate of change must still be justified within the modeling constraints. While the 25-point rule is not breached numerically, the unexplained surge violates Invariant 2’s qualitative accumulation logic."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

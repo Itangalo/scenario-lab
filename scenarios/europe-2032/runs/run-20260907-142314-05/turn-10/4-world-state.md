@@ -1,0 +1,13 @@
+### Stalled Sovereignty, Shifting Leverage
+
+Global AI capability inches forward to 61.5, as frontier labs consolidate gains from open-weight insights. While no dramatic leap occurs, internal tooling advances sustain progress, and the market price of top-tier capability drops—suggesting a plateau in visible innovation, though developers dispute the interpretation. The open frontier widens moderately: openweight_capability rises to 53.0, as replication of agent frameworks from leaked weights begins to spread across consumer-grade clusters. While the pace of diffusion accelerates, it remains constrained by hardware access and integration bottlenecks, preventing a sudden leap toward frontier levels.
+
+The EU formally closes the Emergency Sovereign Compute Mobilisation, but with no new capacity built. Germany and Ireland withheld assent, citing military entanglement and grid risks. The directive expires, leaving no physical footprint. In response, the Commission shifts strategy: DG COMP, supported by ENISA and ACER, begins drafting a post-implementation review under the Digital Markets Act, aiming to establish a future mechanism for auditing dominant AI providers' EU energy use and spare compute capacity. This initiative is scoped as preparatory work only—no binding requirements are issued this turn, and no compliance is assumed from non-EU entities. The move signals a pivot from state-led infrastructure to market-based oversight, but implementation awaits legal grounding and international leverage.
+
+Meanwhile, the Municipal Resilience Backchannel gains quiet momentum. Lyon, Barcelona, and Helsinki achieve interoperability, and ENISA introduces a “Trusted Resilience Node” certification under NIS2. Bologna, Ljubljana, and Tallinn are tapped for rapid integration, funded through reweighted disaster recovery envelopes. No new budgets are needed, but scalability remains uncertain.
+
+Trust in EU oversight erodes further. Two member states reject the European Evaluation Shield’s authority to impose remediation mandates, citing legal overreach. The resulting institutional fracture paralyzes enforcement of safety norms, deepening developer distrust and public skepticism.
+
+With no new measure formally launched—only preparatory steps toward one—the EU avoids agenda overload. The closure of a large measure brings a modest recovery in political capital, though it remains below 12, leaving the Union vulnerable to future paralysis.
+
+Public sentiment holds steady at 35.0, sustained by local resilience gains but undermined by systemic drift.

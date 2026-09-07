@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 58.5 to 64.0 (+5.5), which is acceptable in magnitude, but the narrative states \"no safety gains occurred organically\" while `ai_safety` increased from 2.0 to 7.0 (+5.0). This change lacks any justification in the narrative and is not tied to an accumulated capability or event with plausible mechanism. The jump implies a discrete, unannounced event or policy effect that is not described, violating the requirement that changes in stocks must be explained by prior measures or events. A 5-point jump in `ai_safety`—especially from such a low base—requires a clear, named intervention with implementation logic, not just \"small step toward independent oversight.\"\n- Metric rule 7 violated: `eu_political_capital` increased from 0.0 to 12.0 (+12.0), but the notepad shows no contributing terms for political capital. The only entries are for portfolio charge (−6), proposal bonus (+3), and no legitimacy lends. This implies a net change of −3, not +12. The narrative mentions \"partial delivery\" and \"something still functions,\" but these do not map to any defined term in the political capital calculation. A +12 shift without accounting in the notepad violates the constitutional requirement that the two stocks (`eu_ai_sovereignty` and `eu_political_capital`) be independently and transparently driven, with political capital changes explicitly grounded in the notepad mechanics.\n- Modelling choice 5 violated: The narrative introduces two new measures in one turn: \"Emergency Cross-Border Incident Data Pool\" (implied completed) and \"Joint Middle-Power Evaluation Cell\" (launched), and also stands up the \"Public Trust Corps.\" While one may be the priority, the notepad lists two new initiatives charged: \"Establish EU Public Trust Corps\" and \"Launch Joint Middle-Power Evaluation Cell.\" This constitutes two new measures introduced in the same turn, which violates the \"at most one new measure per turn\" rule. The fact that one receives a proposal bonus does not excuse the second being initiated."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

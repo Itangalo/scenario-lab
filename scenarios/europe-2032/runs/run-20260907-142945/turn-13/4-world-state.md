@@ -1,0 +1,11 @@
+### The Denial That Changed Everything
+
+The abrupt cutoff from the world’s most advanced AI model sent shockwaves through EU institutions. Hospitals lost diagnostic support, energy grids faced unmanaged fluctuations, and emergency response planning stalled—exposing total dependency at the worst moment. The EU’s Emergency Resilience Surge concluded on paper, delivering partial hardening: air-gapped backups now protect 40% of critical operators, and autonomous defence agents are being tested. But the effort revealed a fatal flaw—resilience built on foreign tools collapses when access vanishes.
+
+### Sovereignty at Gunpoint
+
+In response, the EU has initiated the Sovereign Compute Reconstitution Programme, declaring compute a strategic asset. Plans are now underway to convert military-grade data centres in Finland, Romania, and Portugal into secure AI hubs, with emergency power and physical protection. The Chips Act is being reinterpreted to fast-track EU-controlled semiconductor production, and the Digital Markets Act enforcement is being expanded. However, no physical conversion has begun, and legal challenges loom. Germany demands ironclad data control before participation, France insists on model autonomy preceding hardware investment, and cloud providers have filed preliminary injunctions against any seizure framework. The measure is in early mobilization, with full implementation at least two turns away.
+
+### A Union on the Brink
+
+AI capability creeps upward to 70.0, widening the gap with safety, now at 1.0, as opaque systems fuel undetected attacks. Open-weight models, benefiting from incremental leakage and limited replication of frontier techniques, rise modestly to 55.0—still trailing behind global capability but showing signs of coordinated adaptation. Public sentiment remains frozen at 13.0, reflecting despair over systemic fragility. Political capital, strained by the expired Emergency Resilience Surge and the initiation of a large new measure, declines to 5.0. The EU acts with urgency, but execution remains in the planning phase. The Integrity Audit Expansion continues from prior commitment but no new measure beyond the Sovereign Compute Reconstitution Programme has been launched this turn.

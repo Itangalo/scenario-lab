@@ -1,0 +1,17 @@
+### The Storm Lands
+
+A coordinated ransomware assault, powered by AI-generated exploits, cripples public health systems across five member states. Patch cycles are outpaced, detection signatures obsolete before deployment. With the Sovereign Cyber Shield fragmented—Germany in legal revolt, Poland operating independently, Luxembourg’s node isolated—the EU-level response is nonexistent. The attack’s scale confirms a new reality: offensive capability is open, automated, and uncontrolled.
+
+In the wake of the breach, an open-weight model nearly matching the closed frontier is released into public repositories. Downloaded tens of thousands of times within days, it spreads through developer and hobbyist networks, embedding advanced cyber tools into distributed systems. While diffusion is rapid, it remains partial and uneven—limited by infrastructure access, technical literacy, and defensive filtering. The six-month window allows meaningful but incremental propagation, raising `openweight_capability` to 62.0, consistent with the fixed global progression rate. A leap to near-frontier parity in half a year is not plausible, and the model’s capabilities, though potent, are not universally operationalised.
+
+### Last Stand of the Tribunal
+
+With political capital exhausted and enforcement discredited, the Commission invokes emergency powers under Article 114 TFEU to begin operationalising the EU AI Accountability Tribunal as a crisis cell. The €10bn fund is frontloaded from dormant InvestEU allocations. This marks the formal launch of a single new measure: the Tribunal’s activation in emergency mode. All other actions are framed as components of this effort.
+
+The Public Trust Corps is not deployed as a separate initiative. Instead, its existing mandate is leveraged under the Tribunal’s authority, with volunteer analysts seconded to support log collection from affected hospitals. These teams operate in advisory capacity only, lacking binding power, and face resistance from national authorities who dispute the EU’s jurisdiction. Data flows remain patchy, delayed, and incomplete.
+
+Despite constraints, the Tribunal issues a verified timeline of the attack within 72 hours, identifying initial vectors and flagging compromised dependencies. This marks the first functioning output of an EU-level accountability mechanism during a live crisis. Though narrow and fragile, it establishes procedural precedent. For the first time, `ai_safety` rises from 0.0 to 15.0—reflecting minimal but real institutional response capacity.
+
+Yet fragmentation exacts its toll. Resilience dips as coordination failures amplify damage. Public sentiment erodes further, with citizens condemning both the outage and the spectacle of institutional collapse. The Tribunal’s emergence offers no comfort—only proof that control was lost long before.
+
+`eu_ai_sovereignty` remains at 4.0. The Tribunal’s activation is a category 1 measure, not a completed category 4 initiative, and occurs without a capacity event. Its authority is contested, its reach limited, and its long-term viability unproven. Emergency action does not equate to sovereign capability. The gap between crisis response and durable autonomy remains wide.

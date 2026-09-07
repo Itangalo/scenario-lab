@@ -1,0 +1,13 @@
+### A Turn of Fracture and Force
+
+The EU entered the second half of 2031 attempting to reclaim control through emergency action, but structural collapse outpaced response. The Dutch social insurance scandal hardened into a legitimacy crisis as judicial findings confirmed systemic bias, triggering protests that escalated into physical attacks on data infrastructure in Utrecht and Lyon — a shift from dissent to sabotage now labelled *backlash_physical*. Public sentiment, already fragile, dropped further as media framed AI not as flawed tool but as unaccountable regime.
+
+In response, the Commission reoriented the Public Trust Corps toward redress, embedding its Redress Coordination Unit with national ombudsmen and launching systemic bias alerts on the AI Incident Dashboard. The first Public Algorithmic Accountability Board was convened under Article 226 enforcement, granting it subpoena power — a legal breakthrough. Yet trust did not follow: credibility requires capacity, and sovereignty continues to erode.
+
+Externally, a modest open-weight model release and scattered compute pooling among academic collectives generated incremental gains in open capabilities, but no major leap occurred. The jump initially suggested in openweight capability was inconsistent with the lack of new hardware or coordinated infrastructure activation. With legal challenges still blocking the Emergency Sovereignty Activation measure, no data centre capacity was repurposed this turn, and growth in `openweight_capability` remained constrained by available resources. It rose only moderately, reflecting distributed but fragmented efforts.
+
+Critical infrastructure absorbed new cyber intrusions via open-weight models, yet resilience held steady at 38.0. While internal failures strained response systems, nascent coordination — including early cyber mobilization among member states and the spread of open-source biosecurity tools — provided countervailing pressure, preventing net decay. AI safety remained stagnant despite ongoing red-teaming, as no new safeguards landed on frontier systems. Political capital stayed at 2.0 — too low to absorb another large measure’s cost, yet the portfolio grew anyway, deepening strain.
+
+### Signals in the Static
+
+Rumours grow of informal cyber coordination among member states exploring offensive counter-AI operations, while open-source biosecurity tools gain traction in labs screening synthetic DNA — faint signs of distributed adaptation, far from institutionalised.

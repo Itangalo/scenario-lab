@@ -1,0 +1,48 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_integrity_audit_collapse",
+    "probability": 0.02666666666666667,
+    "emergent": true,
+    "description": "The Integrity Audit Expansion, already seen as bureaucratic and toothless, is formally abandoned by three major member states who cite its failure to prevent the automated decision scandal and its inability to audit opaque models. This marks a de facto collapse of the EU's primary oversight mechanism, leaving a vacuum in accountability just as open-weight models spread. The move signals that even symbolic governance is becoming too costly to maintain without public or technical legitimacy.",
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

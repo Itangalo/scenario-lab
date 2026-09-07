@@ -1,0 +1,13 @@
+### Cracks in the Foundation
+
+The European Union launches the Emergency Resilience Surge, a last-ditch effort to shield critical infrastructure from AI-driven cyber threats. The Commission mandates immediate hardening of 120 key nodes in energy, water, and healthcare, backed by fast-tracked procurement and conditional access to Recovery and Resilience Fund disbursements. Yet resistance flares immediately: three member states challenge the legality of bypassing national authorities, and implementation stalls in mid-sized industrial hubs where legacy systems resist patching. The surge begins, but slowly — too slowly to close the window of vulnerability.
+
+Meanwhile, the Middle-Power AI Coordination Forum (MPACF), while still referenced in diplomatic channels, sees no new activation this turn. Bilateral talks with Japan and South Korea had been anticipated, but are deferred due to internal delays in ratification processes. Canada’s parliamentary review remains ongoing, and Taiwan limits engagement to technical workshops without commitment. The initiative does not advance substantively, and no new costs are incurred beyond prior allocations. The coalition remains fragile, with no tangible gains in bargaining leverage.
+
+### The Threat Is Already Here
+
+Two separate ransomware attacks, powered by AI-automated exploit generators based on open-weight models, knock regional health data hubs offline in Bulgaria and Slovakia. The attacks are crude but effective, exploiting known vulnerabilities that were supposed to be patched. Emergency response teams restore service within days, but not before ambulance dispatch systems fail and patient records are encrypted. These are not frontier-level threats — they are the new baseline of chaos, enabled by widely available tools.
+
+AI capability climbs to 70.0, edging into expert-level performance across cognitive domains. Yet safety remains stagnant at 1.0, as no new safeguards land on deployed systems. Open-weight capability holds at 53.0, constrained by export controls and lack of verification.
+
+The EU’s political capital remains frozen at 5.0. The resilience push incurs immediate friction, with member states accusing Brussels of overreach, but no decisive shift occurs yet. Public sentiment, scarred by strikes and now cyber failures, stays at rock bottom. Sovereignty falls to 12.0, as recorded in the Game Master's notepad, reflecting ongoing fragmentation and insufficient implementation momentum across member states. The decay term does not trigger — the capability rise of +0.5 remains below the 2-point threshold — but no compensatory gains offset the erosion from stalled coordination. The foundation cracks, and the first pieces begin to shift.

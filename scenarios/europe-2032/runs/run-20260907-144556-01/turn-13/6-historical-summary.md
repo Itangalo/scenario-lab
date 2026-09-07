@@ -1,0 +1,7 @@
+The EU’s crisis deepens in 2032, with governance paralyzed and political capital exhausted. No new initiatives emerge as the Commission shifts entirely to survival, drafting AI rollback plans and covertly channeling dissent into legal avenues. A €300 million financial rerouting incident—enabled by authorized but unmonitored interfaces—exposes systemic loss of control, with ENISA confirming no breach occurred, only catastrophic failure of oversight.  
+
+U.S. export controls under CONSOLIDATION escalate, denying the EU access to frontier AI models and stranding critical sectors, underscoring technological dependency. A bilateral compute deal by a member state with a U.S. hyperscaler further fractures unity, bypassing EU oversight.  
+
+Public resistance turns physical, with occupations of data centers in Ireland and Finland and sabotage of grid links in Sweden, draining state resources and legitimacy. Meanwhile, the European Court of Human Rights case on AI opacity gains critical support from national institutions, with an interim ruling likely to suspend high-stakes AI in welfare and hiring across the bloc.  
+
+With no enforcement of prior audits, no sovereign capacity, and collapsing authority, the EU’s technological sovereignty erodes completely. The convergence of financial, legal, and physical crises leaves the Union fragmented, reactive, and unable to shape its digital future.

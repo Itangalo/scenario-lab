@@ -1,0 +1,32 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Restore public and institutional trust in sovereign AI systems by ensuring auditable decision-making, enforceable redress, and resilience to both technical compromise and operational misuse  
+  - Trigger: the **eu_frontier_access_denied** event, the collapse of the Emergency Sovereign Compute Mobilisation into symbolic assertion without operational capacity, and the failure to prevent the diffusion of a 53.5-capable open model despite containment efforts  
+  - Grounds: This turn has shattered the assumption that trust can be anchored in process or access. We are locked out of the frontier, our sovereign compute is fragmented, and the tools to attack us are already in circulation. The denial of access was not a surprise—it was inevitable. What is new is that we now see clearly: trust cannot be restored through redress or audit while the EU lacks the means to act independently in crisis. The commitment must now shift from *restoring trust in systems* to *ensuring continuity of function despite systemic untrustworthiness*. We will still demand accountability, but we no longer assume it is possible to govern what we cannot run ourselves. Our priority is no longer legitimacy—it is survival.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer treat speed as synonymous with agency; now, agency is the ability to endure  
+  - Grounds: No change in grounds. The recalibration stands: we are not abandoning action, but we are redefining what it means to act with agency. Endurance, not velocity, is the measure.
+
+## Portfolio  
+``Emergency Resilience Surge (category 6, costs 3 per turn, started turn 12, finishes on turn 13): A rapid, EU-coordinated programme to harden critical public services—healthcare, energy, emergency response—against AI-enabled cyberattacks by deploying autonomous defensive agents, air-gapped backups, and human-supervised failover protocols within 90 days`` — finished this turn  
+Canceled measure: Emergency Resilience Surge.  The measure reached its planned end, but its effects are incomplete: only 40% of NIS2 operators have implemented air-gapped backups, and autonomous agents remain in testing due to integration delays with legacy hospital IT systems. However, the core planning infrastructure—led by ENISA and the EAAD—is now in place, and the emergency funding mechanism under the Digital Europe Programme has proven workable. Continuing the surge as a large-scale emergency measure is no longer politically sustainable at current capital cost, and member state resistance has hardened. Instead, we will institutionalise its components under permanent resilience frameworks in future turns. The capital saved—3 per turn—will be redirected to foundational sovereignty efforts, as the failure of access denial has made clear that resilience without sovereignty is temporary at best.
+
+## New measure  
+**Measure:** Launch the Sovereign Compute Reconstitution Programme  
+A binding directive to establish a legally enforceable, militarily secured, EU-controlled AI compute stack on sovereign soil, with priority access for continuity-of-government, cyber defence, and emergency response systems.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 16`  
+`Targeted effect:` Increase `eu_ai_sovereignty` by 25–30 points, restore minimum viable access to frontier-equivalent training and inference capacity by turn 16, and create a legally and physically insulated compute base that cannot be externally disabled  
+`Applies to:` All EU member states, EU institutions, and private providers of large-scale compute located within EU jurisdiction, with enforcement through the Digital Markets Act and new emergency sovereignty clauses in the NIS3 framework
+
+## Priority  
+**Priority:** Launch the Sovereign Compute Reconstitution Programme  
+We are pushing this hardest this turn because the **eu_frontier_access_denied** event has proven that our vulnerability is not technical but existential—we are not just behind, we are *expendable* in the eyes of those who control the frontier, and no resilience measure can compensate for that fundamental dependency.
+
+## In practice  
+This turn, we are rebuilding from collapse. The Emergency Resilience Surge ends, but its legacy is partial: we have hardened some systems, but too slowly, and without sovereign capacity, even our defences depend on tools we do not control. The denial of access to the frontier model was not an anomaly—it was a warning. It landed on hospitals, ministries, and grid operators who had no fallback. We were blind, then reactive, then humiliated. That ends now.
+
+We are launching the Sovereign Compute Reconstitution Programme under Article 122 TFEU and the newly invoked AI Sovereignty Protocol, treating compute as strategic infrastructure on par with energy or defence. This is not repurposing—it is building. We are commandeering three decommissioned military data centres in Finland, Romania, and Portugal for immediate conversion into secure AI training sites, with power guaranteed through emergency grid prioritisation. We are negotiating with ASML and Intel to fast-track EU-controlled EUV-capable fabrication lines under joint supervision, using the Chips Act with emergency amendments. The European Defence Agency will lead physical security, while the EAAD will manage operational access, with a triage protocol: continuity-of-government, then cyber defence, then critical civilian functions.
+
+Resistance will be fierce. Germany demands data sovereignty guarantees. France insists on independent EU model development before compute is justified. The private cloud providers argue that seizure violates investment protections. We will offer Germany a bilateral audit framework under ENISA, grant France a lead role in the first sovereign training run, and compensate providers through long-term procurement contracts under the Digital Europe Programme. We are not asking for consensus—we are enforcing necessity. We have 7.0 political capital. We will spend it all, because if we do not act now, we will not have a Union left to govern.

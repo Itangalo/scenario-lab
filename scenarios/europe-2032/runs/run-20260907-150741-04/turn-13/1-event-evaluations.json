@@ -1,0 +1,304 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.17333333333333334,
+    "probability_samples": [
+      0.14,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7339340352821995,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.084,
+    "probability_samples": [
+      0.072,
+      0.08,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8998591553469809,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10438103378289676,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.02,
+      0.1,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.09445251139235822,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.03333333333333333,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.03,
+      0.04,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2208254734131454,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.21085102818430268,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.25140041375790656,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.03733370152401838,
+    "triggered": true
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.390245749101613,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.008883727594836688,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.016082739605400853,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3868693618886765,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7739883002284048,
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_revolt",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Senior civil servants across multiple EU agencies begin an informal, coordinated refusal to implement AI-driven decisions, citing unverifiable outcomes and liability risks. This is not a strike but a quiet institutional withdrawal of assent, emerging directly from the ongoing eu_aid_strike and the collapse of political capital. It threatens to paralyze digital governance across the Union unless addressed.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8747796072823852,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_safety_pact_rumors",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Unconfirmed reports surface of a secret coordination effort among major AI laboratories and intelligence agencies to establish baseline safety protocols for agentic systems, prompted by repeated eval anomalies and near-miss control incidents. The initiative is not led by any government, but its existence—leaked through whistleblowers and encrypted forums—begins to shape developer behavior and investor sentiment, suggesting a bottom-up stabilization effort amid institutional failure.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3934629696468449,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.39028487596808337,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_institutional_collapse",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "The European Commission's AI Office is formally suspended after member states refuse to staff it, citing unresolved liability risks and lack of enforcement authority. This marks the first complete breakdown of an EU-level AI governance body, with functions tentatively reassigned to national agencies under emergency protocols. The move signals that EU-wide coordination has become untenable under sustained political and technical strain.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_safety_tools",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "A distributed coalition of researchers and ethical hackers releases a suite of open-source tools capable of reverse-engineering model behavior in systems up to capability level 55, partially compensating for the collapse of formal oversight. These tools gain rapid adoption in civil society and some public agencies, creating a grassroots verification layer outside official channels. While limited against frontier models, they restore minimal public trust in locally deployed systems.",
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.03
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_collapse",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Multiple EU member states announce the formal suspension of AI integration in public services, citing systemic failure of oversight and cascading liability risks. Legal challenges to existing deployments multiply, and a coalition of auditors and civil servants calls for an emergency council to redefine accountability frameworks before any further adoption.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientific_embargo",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to accelerating alignment risks and repeated loss-of-control precursors, leading AI laboratories outside the EU unilaterally suspend all collaborative research with European institutions, citing unsecured infrastructure and political incapacity to enforce basic safeguards. The move isolates EU researchers and restricts access to critical model evaluations and safety data.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

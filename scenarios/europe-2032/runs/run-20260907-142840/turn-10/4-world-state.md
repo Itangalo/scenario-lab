@@ -1,0 +1,11 @@
+### Stalled Sovereignty, Shifting Leverage
+
+The Emergency Sovereign Compute Mobilisation formally expires at the end of June 2031, having failed to secure binding commitments from Germany and Ireland. No new EU-controlled facilities were built, and the directive dissolves without triggering its intended cascade. The European Commission pivots, invoking Article 5 of the Digital Markets Act to launch a post-implementation review redefining strategic compute as a condition of digital fairness. DG COMP, ENISA, and ACER begin drafting an audit protocol requiring dominant AI providers to disclose EU energy draw and spare capacity—leveraging market power where state-led build-out failed.
+
+### Fractured Oversight, Fragile Gains
+
+The European Evaluation Shield’s authority fractures as two member states reject its remediation mandates, citing legal overreach and lack of transparency. This institutional rift paralyzes enforcement of safety norms across the bloc, deepening distrust in EU-level oversight. Meanwhile, the Municipal Resilience Backchannel advances quietly: Lyon, Barcelona, and Helsinki achieve interoperability under ENISA, and certification planning begins for Bologna, Ljubljana, and Tallinn. By reweighting existing funds and bypassing legislative hurdles, the EU sustains momentum in decentralized resilience—its only functional lever amid central paralysis.
+
+### Capability Plateaus, Markets Shift
+
+A major frontier model release underperforms expectations, and the price of top-tier AI capability drops sharply—market signals suggesting a plateau in progress. Debate flares over whether this reflects temporary bottlenecks or a structural slowdown. Despite the uncertainty, `ai_capability` creeps upward by 0.5, driven by incremental integration of open-weight-derived tooling. With the open frontier stagnant, openweight models gain modest ground: developer activity increases and retrofitting spreads, allowing `openweight_capability` to rise by 1.0. This narrow convergence reflects adaptation, not breakthrough—but signals growing utility in accessible systems even as leadership models stall.

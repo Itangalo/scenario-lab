@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 56.5 to 64.0 (+7.5) while `ai_capability` only increased by 1.5 (from 68.0 to 69.5). This violates the rule that `openweight_capability` may never exceed `ai_capability`. Even if both are rising, a jump of +7.5 in openweight when total capability rose only +1.5 implies openweight now exceeds frontier capability (64.0 > 69.5 is not yet violation, but the rate of growth is implausible without justification and pushes dangerously close to or beyond parity without narrative support). More critically, such a large leap in one turn lacks grounding in physical or organizational constraints — no new hardware, no transferred compute, no major model release explained — and contradicts the invariant that these capabilities accumulate gradually unless under explicit, narrated compute expansion.\n- Physical Constraint violated: The narrative states \"no hardware was secured this turn\" due to legal challenges, yet `openweight_capability` still increased by 7.5 points. Open-weight capability growth requires access to compute, model releases, or infrastructure activation. With no hardware secured and no mention of a major open-model release or distributed compute pooling, the metric increase lacks a plausible physical basis.\n- Narrative-Metric Misalignment: While `resilience` decreased by 1.0 (from 38.0 to 37.0), the narrative attributes this to internal failures and cyber intrusions, but no corresponding event term or decay mechanism is shown in the notepad. More concerning, resilience drops despite two emergent signals (cyber mobilization, biosecurity tools) that should at minimum offset decay. Without a clear negative term in the notepad or an escalating threat event, the decline appears ungrounded, especially given distributed adaptation signs."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

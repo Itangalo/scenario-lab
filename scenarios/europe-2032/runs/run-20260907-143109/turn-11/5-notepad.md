@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign AI Core Programme −3, Openweight Containment Initiative −2, Public Redress and Auditability Directive −2, Critical Infrastructure Continuity Protocol −2, priority −1 = −10  
+PROPOSAL BONUS: Critical Infrastructure Continuity Protocol (cat 6, small) +3 — responds directly to backlash_physical (recent, severe, systemic), which exposed fragility in essential services  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 10 last turn, no capacity event, capability rose 0.5 < 2 → no decay term, no category 4 completion, no in-flight benefit = 10  
+US_POSTURE: CONSOLIDATION  
+emergent_regional_aid_fracture -- first noted turn 11, listed in 1 turn(s) so far: Several southern and eastern member states formally request emergency EU funding to offset AI-driven regional economic decline, but northern fiscal watchdogs resist, citing governance failures in implementation. The dispute exposes a widening rift over burden-sharing in technological transition, with some states threatening to redirect national AI investments unilaterally.  
+emergent_open_source_audit_tools -- first noted turn 11, listed in 1 turn(s) so far: In response to the collapse of official auditability, a decentralized coalition of researchers and civic hackers releases a suite of open-source tools that infer model behaviour through input-output probing and anomaly detection. While limited, these tools gain rapid traction among watchdogs and local governments seeking alternatives to opaque frontier systems.

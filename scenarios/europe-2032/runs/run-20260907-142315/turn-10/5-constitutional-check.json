@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 52.0 to 56.5 (+4.5), but `ai_capability` only increased by 0.5 (from 61.0 to 61.5). The `openweight_capability` metric cannot rise faster than `ai_capability` unless justified by a specific, narrated mechanism such as a major open release or leak. While the narrative references \"capabilities from the earlier leak,\" this does not justify a +4.5 jump in `openweight_capability` while `ai_capability` barely advances, as it implies open models are outpacing frontier models without a corresponding event to support such a divergence. The constitutional rule that `openweight_capability` never exceeds `ai_capability` and only rises in tandem (except under catastrophic physical destruction) is violated in spirit and effect.\n- Invariant 7 violated: The change in `eu_political_capital` (+4.0, from 6.0 to 10.0) is primarily attributed to the absence of new measures and the completion of initiatives, yet the narrative and notepad do not account for a mechanism that would allow such a significant recovery. The portfolio charge remains high (−7), and no explicit political capital gain from legitimacy lending or external events is recorded. Given that political capital is a constrained stock that cannot be regenerated rapidly without narrative justification (e.g., major success, public rally, or resolved crisis), a +4.0 shift without such support violates the modeling principle that these stocks must be allowed to move independently and realistically—here, political capital rises without sovereignty or legitimacy gains to anchor it."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

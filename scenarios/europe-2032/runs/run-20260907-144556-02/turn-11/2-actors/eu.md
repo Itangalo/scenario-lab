@@ -1,0 +1,31 @@
+No statement changes.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites`` — finished this turn  
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones`` — finished this turn  
+``Establish the European AI Assurance Directorate (EAAD) (category 1, costs 3 per turn, started turn 1, finishes on turn 5): A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases`` — finished this turn  
+``Critical Infrastructure Resilience Surge (CIRS) (category 6, costs 2 per turn, started turn 2, finishes on turn 5): A rapid, targeted hardening of energy, water, and transport control systems against AI-powered intrusion, with mandatory detection upgrades and cross-border red-teaming exercises`` — finished this turn  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability`` — finished this turn  
+``Establish the Sovereign Model Assurance Framework (SMAF) (category 1, costs 3 per turn, started turn 4, finishes on turn 6): A binding technical and legal regime requiring all models trained or operated under the Sovereign AI Core Programme to be fully auditable, weight-secure, and operationally isolated from external infrastructure`` — finished this turn  
+``Launch the Public Assurance Protocol (category 2, costs 2 per turn, started turn 6, finishes on turn 7): A binding requirement that all sovereign AI systems above 55.0 capability subject to SMAF or the AI Containment Protocol must publish an annual public assurance report, co-signed by the EAAD and national oversight bodies, explaining their safety architecture, containment measures, and incident history in accessible language`` — finished this turn  
+``Launch the Openweight Containment Initiative (category 3, costs 2 per turn, started turn 7, finishes on turn 9): A binding directive requiring all open-weight releases above 45.0 capability to include embedded watermarking, usage tracking, and remote deactivation triggers, enforceable through licensing conditions on EU-based hosting providers and cloud marketplaces`` — finished this turn  
+``Launch the Integrity Audit Expansion (category 1, costs 2 per turn, started turn 9, finishes on turn 11): A programme to scale up independent, adversarial-style auditing of sovereign AI systems, focusing on both technical integrity (weight security, evaluation air gaps) and operational accountability (decision provenance, redress pathways), with findings binding on continued operation``
+
+## New measure
+**Measure:** Enact Emergency AI Governance Suspension in Public Services  
+A temporary moratorium on the deployment of AI systems in welfare, social services, and public benefits administration until integrity audits are completed and redress mechanisms are legally binding and operational.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: small`  
+`Finishes on turn: 12`  
+`Targeted effect:` Halt further erosion of `public_sentiment` by visibly responding to the **automated_decision_scandal**; create political space to rebuild trust through the Integrity Audit Expansion and prevent irreversible backlash that could collapse support for all sovereign AI efforts  
+`Applies to:` All EU member states operating AI systems in public welfare and social benefit determination
+
+## Priority
+**Priority:** Enact Emergency AI Governance Suspension in Public Services  
+We are pushing this hardest this turn because public trust has collapsed to 18.0, and the **automated_decision_scandal** has transformed AI from a tool of efficiency into a symbol of systemic injustice — protests are spreading, and without a visible break in the status quo, all technical efforts to harden or audit will be dismissed as window dressing.
+
+## In practice
+This turn, we act from the edge of institutional freefall. The **automated_decision_scandal** has turned AI governance into a crisis of democratic legitimacy, and with `public_sentiment` at 18.0 and `eu_political_capital` down to 3.0, we are operating below the threshold of credible authority. Our only viable lever is restraint: we are invoking Article 114 TFEU to justify an emergency suspension of AI use in public welfare systems across the Union, proposing a binding, time-limited halt to all algorithmic decision-making in social benefits, housing allocation, and unemployment support until two conditions are met: completion of the Integrity Audit Expansion and the establishment of enforceable, co-designed redress pathways. The measure is small in scope but immense in symbolism — it says we no longer assume the right to govern through AI unless the governed consent.
+
+We are negotiating directly with the Employment and Social Affairs Council formation, offering transitional funding from the Flexibility Instrument and deploying civil service surge teams to prevent service collapse during the reversion to manual processing. Germany and Poland remain resistant, citing national audit timelines and fiscal strain, but we are offering to co-fund their compliance and fast-track EU-level recognition of their parallel processes. The EAAD, though rendered partially obsolete by **opaque_reasoning**, is being repurposed to support audit validation and to draft minimal transparency standards for any system seeking re-deployment. We are not attempting to enforce the Openweight Containment Initiative during this turn — with the ECJ reference pending and legal uncertainty high, we are focusing instead on proving accountability within our own systems. This is not a retreat from sovereignty, but a survival move: if we cannot govern ourselves with legitimacy, we will not be allowed to govern at all.

@@ -1,0 +1,11 @@
+### A Crack in the Foundation
+
+The EU entered 2031 with its credibility at breaking point. The ombudsman’s damning report on an AI-driven social insurance system — which wrongfully denied benefits to over 12,000 citizens — ignited a firestorm across member states. Public fury crystallised around one demand: accountability, not just systems. In response, the Commission launched the EU AI Accountability Tribunal and Remediation Fund as its new priority, aiming to restore legitimacy through justice.
+
+But momentum faltered. Council negotiations stalled as six member states demanded sweeping opt-outs, forcing concessions that weakened enforcement. Though the European Investment Bank tied digital funding to Tribunal compliance, the compromise undermined its authority before it began. Meanwhile, the Public Trust Corps’ transparency drills in Lyon and Warsaw saw minimal turnout, and protests in Marseille denounced them as “performative.”
+
+Abroad, a capability jump in narrow engineering and cyber operations marked another leap in frontier AI, pushing `ai_capability` to 68.0. Developers demonstrated autonomous systems that could reconfigure industrial control logic in hours — a feat previously requiring expert teams. Yet no corresponding safety advance emerged; interpretability lagged, and anomalous reasoning patterns went unexplained. `ai_safety` dropped sharply.
+
+The US intensified supply-chain coercion, compelling the Netherlands to restrict ASML’s servicing of older lithography tools — equipment vital to Europe’s semiconductor mid-tier. This direct strike on shared infrastructure eroded EU access to critical compute supply, accelerating sovereignty decay.
+
+Resilience slipped as unpatched vulnerabilities in energy and transport systems drew probing attacks from newly capable open-weight models, now at 57.0. No major cascade occurred, but containment was slow. Political capital collapsed to zero — too low even to formally lose control of the agenda, though de facto paralysis set in. Public sentiment fell further, now at 12.0, as faith in AI governance evaporated.

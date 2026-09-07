@@ -120,3 +120,36 @@ Turn-5 posture note: 31 runs carry the literal `US_POSTURE: pending (…)` line,
 Reading prose for the twelve paths (turns 6–9, arm and two-year commitment up top) in `stage-2/{A11,A12,A21,A22,V11,V12,V21,V22,P11,P12,P21,P22}.md`, all metrics/events lines machine-verified against the runs.
 
 (ECHO 2026-09-06)
+
+## Stage 3 blocks, turns 10–13 (2026-09-07)
+
+24 blocks × 10 reps (240 runs, manifest in `stage-3-blocks.json`, runs committed in git). Each block branches its Stage-2 path at turn 9 and pins turn 10: events from the block fixture (fresh `--seed` each, per seed rule), actor from the chosen option (`option-10-proposal.md`). Path per block is the first run (earliest `branch_created_at`):
+
+| block | parent path | option | first run |
+|---|---|---|---|
+| A111 | A11 (`run-20260906-114440`) | pool-10-A11/sample-04 | `runs/run-20260907-101012` |
+| A112 | A11 (`run-20260906-114440`) | pool-10-A11/sample-07 | `runs/run-20260907-102707-04` |
+| A121 | A12 (`run-20260906-131531`) | pool-10-A12/sample-16 | `runs/run-20260907-102707-03` |
+| A122 | A12 (`run-20260906-131531`) | pool-10-A12/sample-01 | `runs/run-20260907-102707` |
+| A211 | A21 (`run-20260906-132556`) | pool-10-A21/sample-08 | `runs/run-20260907-103254` |
+| A212 | A21 (`run-20260906-132556`) | pool-10-A21/sample-05 | `runs/run-20260907-103345` |
+| A221 | A22 (`run-20260906-133612`) | pool-10-A22/sample-03 | `runs/run-20260907-103422` |
+| A222 | A22 (`run-20260906-133612`) | pool-10-A22/sample-06 | `runs/run-20260907-103635` |
+| V111 | V11 (`run-20260906-135202`) | pool-10-V11/sample-03 | `runs/run-20260907-103902` |
+| V112 | V11 (`run-20260906-135202`) | pool-10-V11/sample-07 | `runs/run-20260907-104144` |
+| V121 | V12 (`run-20260906-140300`) | pool-10-V12/sample-05 | `runs/run-20260907-123138` |
+| V122 | V12 (`run-20260906-140300`) | pool-10-V12/sample-03 | `runs/run-20260907-124313-06` |
+| V211 | V21 (`run-20260906-141232`) | pool-10-V21/sample-06 | `runs/run-20260907-125532` |
+| V212 | V21 (`run-20260906-141232`) | pool-10-V21/sample-10 | `runs/run-20260907-130534-01` |
+| V221 | V22 (`run-20260906-142403`) | pool-10-V22/sample-08 | `runs/run-20260907-131344` |
+| V222 | V22 (`run-20260906-142403`) | pool-10-V22/sample-01 | `runs/run-20260907-132741-04` |
+| P111 | P11 (`run-20260906-144653-03`) | pool-10-P11/sample-04 | `runs/run-20260907-133534` |
+| P112 | P11 (`run-20260906-144653-03`) | pool-10-P11/sample-08 | `runs/run-20260907-134903-02` |
+| P121 | P12 (`run-20260906-145406`) | pool-10-P12/sample-06 | `runs/run-20260907-135647` |
+| P122 | P12 (`run-20260906-145406`) | pool-10-P12/sample-12 | `runs/run-20260907-142314` |
+| P211 | P21 (`run-20260906-150640`) | pool-10-P21/sample-02 | `runs/run-20260907-142945` |
+| P212 | P21 (`run-20260906-150640`) | pool-10-P21/sample-05 | `runs/run-20260907-143821` |
+| P221 | P22 (`run-20260906-151607`) | pool-10-P22/sample-20 | `runs/run-20260907-145136` |
+| P222 | P22 (`run-20260906-151607`) | pool-10-P22/sample-15 | `runs/run-20260907-150741` |
+
+(ECHO 2026-09-07)

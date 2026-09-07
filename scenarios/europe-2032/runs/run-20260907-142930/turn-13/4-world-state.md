@@ -1,0 +1,9 @@
+### Stalled and Cut Off
+
+The EU enters the second half of 2032 in reactive mode, its institutions conserving energy amid collapsing legitimacy and external pressure. With no new measures proposed and political capital at crisis levels, the Union focuses on preserving continuity rather than advancing policy. The completion of the Municipal Resilience Backchannel is quietly integrated into national civil protection frameworks through technical working groups, reinforcing coordination without new spending or legal mandates. This incremental embedding yields a modest resilience gain.
+
+Meanwhile, global AI capability advances to 63.0, driven by further refinement in agentic planning and deployment at scale. Open-weight models rise sharply to 56.5, as last turn’s frontier leaks into the open ecosystem—accelerated by developer communities repackaging restricted tools. The narrowing gap increases misuse risks, particularly in cyber and fraud operations.
+
+AI safety collapses further, down to 2.0, following the denial of access to the leading frontier model—classified as `eu_frontier_access_denied`. This disruption affects hospitals, research institutes, and public agencies relying on the system, exposing the fragility of foreign-dependent AI infrastructure. No internal safeguards prevent the outage, and no contingency activates in time. The incident compounds existing failures, including the biased social insurance algorithm, deepening institutional distrust.
+
+Sovereignty erodes to 27.0: the access denial triggers a −3 event penalty under rule 5, and rising capability costs another −1. Political capital falls to 5.0, as the portfolio charge is zero but no gains offset the internal crisis. Public sentiment drops to 18.0, driven by job insecurity, high-profile system failures, and a sense of strategic helplessness. The Union avoids collapse through minimal, low-visibility coordination—but at the cost of ceding initiative entirely.

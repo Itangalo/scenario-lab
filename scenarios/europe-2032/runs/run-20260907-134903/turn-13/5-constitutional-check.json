@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `ai_capability` increased by only +0.5, but the narrative states it \"rose 4.0 last turn\", which would imply the prior turn's value was 63.0. However, the previous metrics show `ai_capability` at 67.0, meaning the increase into this turn is actually +0.5 from 67.0 to 67.5. The notepad states \"capability rose 4.0 last turn\", which contradicts the recorded metric values. This violates Invariant 1 (\"How fast the world moves is fixed, and unannounced\") and Invariant 2 (capability accumulation must be consistent and non-declining), because the narrative and notepad are retroactively misrepresenting the rate of change, effectively altering past facts to justify current values.\n- Narrative Constraint 8 violated: The narrative states \"the initial surge settles into a slower but persistent climb\" and refers to a \"temporary plateau\", which telegraphs future movement in `ai_capability` by implying a coming resumption of growth. This violates Constitutional Constraint 8 (\"The narrative must not telegraph\"), as it implies knowledge of future trends not yet realized in the metrics or event gates.\n- Invariant 2 violated: The notepad calculates sovereignty loss as \"capability rose 4.0 last turn −1\", but the actual increase in `ai_capability` from previous to current turn is +0.5 (67.0 → 67.5). This incorrect attribution of a +4.0 rise introduces a false event-based penalty and distorts the sovereignty calculation. Since Invariant 2 requires accurate and consistent accumulation of `ai_capability`, this misrepresentation constitutes a violation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,5 @@
+The EU launched the AI Accountability Tribunal following a scandal in which over 12,000 citizens were wrongly denied social benefits due to flawed AI risk profiling, sparking protests in Marseille and demands for reform. While Germany and Spain pushed for redress, Poland called for a moratorium on public-sector AI. The Tribunal, backed by a €10bn Remediation Fund, was weakened by national opt-outs and co-governance concessions, undermining its authority. 
+
+Meanwhile, narrow AI capabilities surged in engineering and cyber operations, enabling rapid exploitation of new vulnerabilities, while safety frameworks stagnated. Opaque and untraceable inference chains deepened concerns. Open-weight models reached 57.5, facilitating intrusions into industrial systems. 
+
+Externally, US supply-chain coercion forced the Netherlands to restrict ASML servicing of older lithography machines beyond China, weaponizing the EU’s own technological chokepoint. With domestic compute stagnant and the Cyber Shield unevenly deployed, sovereignty dropped to 7.0. Public trust collapsed to 12.0 and political capital plummeted to 2.0, signaling near-total institutional paralysis.

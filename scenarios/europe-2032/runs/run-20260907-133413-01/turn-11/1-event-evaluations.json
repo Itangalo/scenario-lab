@@ -1,0 +1,315 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8810485648221715,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.598791277692974,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7634806325913482,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.1366666666666667,
+    "probability_samples": [
+      0.08,
+      0.25,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4389757098608499,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7008919792815644,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.10333333333333333,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1412708396207285,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8653997733958331,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.41579251869376155,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3234792920491898,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5656622611333129,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3329878225770042,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.35260808188067794,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.16599668202847773,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.974147315779817,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.837833737836885,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5835443096305089,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_public_accountability_backlash",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Widespread civil society mobilization emerges in response to the EU AI Accountability Tribunal's perceived ineffectiveness, with grassroots networks forming across member states to independently audit and expose AI harms in public services. Local governments, under pressure, begin suspending AI deployments pending independent review, creating a de facto moratorium in key regions. This decentralized resistance gains momentum as media coverage shifts from bureaucratic process to citizen-led accountability.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.0377275553120604,
+    "triggered": true
+  },
+  {
+    "id": "emergent_global_open_source_ai_alliance",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A coalition of open-source AI developers, academic institutions, and non-aligned states forms a decentralized network to preserve and distribute high-capability models outside U.S. and Chinese jurisdiction, using the latest openweight release as a foundation. This alliance establishes mirrored hosting, legal protection, and rapid-response hardening protocols, effectively creating a 'shadow frontier' that cannot be controlled by any single state. The move is framed as digital sovereignty for the many, not just the few, and begins attracting talent and infrastructure investment away from proprietary centers.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.05066433470668685,
+    "triggered": true
+  },
+  {
+    "description": "A coalition of middle powers including the EU, Japan, South Korea, and Taiwan initiates emergency talks on mutual compute access and semiconductor supply resilience after repeated coercion via the ASML restrictions. The framework proposes joint stockpiling of critical equipment, shared foundry access, and coordinated export licensing to resist unilateral pressure. This is not a formal alliance but a pragmatic cartel to protect shared interests in technological sovereignty.",
+    "emergent": true,
+    "id": "emergent_middle_power_compute_pact",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Following the Marseille protests and the failure of the EU AI Accountability Tribunal to gain enforcement power, grassroots digital rights groups in France, Germany, and Spain begin coordinating direct actions against AI infrastructure, including blockades of data centre supply lines and public cloud nodes. These are framed as civil disobedience against algorithmic injustice, drawing parallels to climate activism. The movement spreads rapidly due to low public sentiment and the visibility of recent harms.",
+    "emergent": true,
+    "id": "emergent_transnational_anti_ai_civil_disobedience",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A major AI lab announces a breakthrough in self-repairing, resilient cyber agents that autonomously patch systems and neutralize threats in real time, reversing the offence-defence imbalance. The technique spreads rapidly through critical infrastructure providers across Europe, offering the first tangible improvement in cyber resilience in years. This is a rare defensive leap that temporarily restores confidence in institutional capacity.",
+    "emergent": true,
+    "id": "emergent_defensive_cyber_leap",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "In response to the Tribunal's paralysis and the ongoing scandal, a coalition of northern and eastern member states forms a parallel AI ethics enforcement network outside EU structures, sharing audit tools and blacklisting contractors. This de facto fragmentation signals that trust in central coordination has broken, and that sovereignty is now being exercised at the bloc level among subsets of members.",
+    "emergent": true,
+    "id": "emergent_member_state_enforcement_pact",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

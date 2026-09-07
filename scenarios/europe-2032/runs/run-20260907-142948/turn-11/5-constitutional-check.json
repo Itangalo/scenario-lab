@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 53.0 to 63.0 (+10.0) in one turn, which is permitted, but the narrative attributes this jump to the release and global spread of a powerful open-weight model. However, `openweight_capability` may only rise due to internal EU efforts or gradual diffusion supported by prior conditions; a 10-point single-turn increase driven by an exogenous, uncontrolled global release contradicts the requirement that such metrics reflect accumulated capability, not sudden unannounced jumps from external events without prior build-up. The jump exceeds plausible diffusion rates unless justified by prior investments or events in the notepad, none of which are present.\n- Invariant 9 violated: `eu_political_capital` increases by 6.0 (from 4.0 to 10.0), which is within the 25-point cap, but the Proposal Bonus in the notepad is +6, and the Portfolio Charge is −10. The net change in political capital should reflect these terms: Proposal Bonus (+6), Portfolio Charge (−10), and no Legitimacy Lends, implying a net change of −4. Yet the metric increases by +6. This contradicts the constitutional requirement that the two stocks (`eu_ai_sovereignty` and `eu_political_capital`) are separate and independently calculated—political capital cannot rise by 6 when the sum of its defined terms is −4. This violates the modelling principle that political capital changes must reflect the notepad’s accounting.\n- Modelling Choice 7 violated: The narrative implies that completing the Integrity Audit Expansion and launching the Societal Resilience Acceleration Programme are sufficient to reverse political capital’s freefall, but the notepad shows a net −4 from known terms, yet the metric rises by +6. This suggests an undocumented +10 boost, effectively conflating sovereignty and political capital. The constitution explicitly forbids this, stating that sovereignty’s contribution to political capital never exceeds +3 in a turn and must not dominate other terms. Here, no such term exists, yet the movement implies a hidden linkage, violating the principle that the two stocks must be free to move apart."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

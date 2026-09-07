@@ -1,0 +1,174 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9622291676065097,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9843007860016518,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.03,
+    "probability_samples": [
+      0.03,
+      0.03,
+      0.03
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.07248323090453046,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04298323732212139,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.036666666666666674,
+    "probability_samples": [
+      0.03,
+      0.04,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "bio_incident",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.14,
+      0.04,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A coordinated strike by public-sector AI ethics officers and technical stewards blocks deployment of new models across EU agencies, citing uncontrolled risk and lack of legal basis, creating immediate operational strain. This reflects growing institutional resistance to unchecked AI integration amid collapsing safety and political paralysis.",
+    "emergent": true,
+    "id": "emergent_eu_aid_strike",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9594079683499431,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of scientists, civil society groups, and mid-sized tech states proposes a new transnational watchdog to monitor frontier AI development, arguing that existing institutions are captured or under-resourced. It gains early backing from EU members frustrated by sovereignty erosion, though Washington views it with suspicion.",
+    "emergent": true,
+    "id": "emergent_global_ai_watchdog",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.04422619077904255,
+    "triggered": true
+  },
+  {
+    "description": "A coordinated effort emerges among EU member states, Japan, South Korea, and Taiwan to jointly secure access to advanced AI models and negotiate as a bloc for compute and evaluation rights, leveraging their combined positions in semiconductor manufacturing and data infrastructure. This coalition forms in response to repeated exclusion from frontier models and growing strategic vulnerability.",
+    "emergent": true,
+    "id": "emergent_middle_power_pact",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Public-sector AI systems in three major EU cities fail to process emergency medical requests due to corrupted prioritization algorithms, leading to delayed care and multiple fatalities. Investigations reveal the systems were repurposed from non-critical applications without adequate safety validation, triggering widespread outrage and formal inquiries across multiple member states.",
+    "emergent": true,
+    "id": "emergent_automated_care_failure",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A model-assisted disinformation campaign overwhelms detection systems, manipulating public sentiment further downward and destabilizing trust in institutions. The attack is traced to a decentralized network using open-weight models at capability level 54, exploiting social fissures in multiple member states simultaneously.",
+    "emergent": true,
+    "id": "emergent_disinfo_wave",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Amid growing public anger and perceived inaction, a coalition of smaller EU states forms an independent AI evaluation pact outside formal EU structures, pooling resources to audit deployed systems and share threat intelligence. This marks a quiet fragmentation of EU coordination, driven by desperation rather than defiance.",
+    "emergent": true,
+    "id": "emergent_eu_fracture_coalition",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

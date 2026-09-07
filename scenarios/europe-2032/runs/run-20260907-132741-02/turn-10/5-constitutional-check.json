@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Modelling choice violated: The EU introduced two new measures in one turn (Establish EU Public Trust Corps and Mandate Public Algorithmic Accountability Boards). Constitutional Constraint 5 states: \"At most one new measure per turn, and at most one named priority.\" The narrative and notepad confirm both were launched in this turn, which is invalid.\n- Invariant violated: `eu_political_capital` decreased by 2.0 (from 5.0 to 3.0), but the portfolio charge was −7 and no proposal bonus or legitimacy lend applied. However, political capital cannot drop below 0 in a single turn by more than the total portfolio cost allows, and more critically, the rules imply that political capital is spent *as a stock* — but here, a charge of −7 results in only a −2 drop, suggesting either the cost was not fully applied or the metric change does not reflect the ledger. This inconsistency violates the integrity of the metric system: if the charge is −7, and no offsetting bonuses exist, the drop must be at least 7 unless bounded by exhaustion (e.g., hitting 0). Since it started at 5.0, it should drop to 0 (a change of −5), not −2. Thus, the reported change of −2.0 violates the implied accounting logic of the system.\n- Narrative violated: The phrase \"a sudden jump in AI capability — demonstrated in code generation and cyber operations — pushed the frontier to 68.5\" implies an unannounced acceleration in the rate of capability growth. Constitutional Constraint 1 states: \"How fast the world moves is fixed, and unannounced.\" The narrative must not imply variability in the rate of progress unless it follows from a declared mechanism (e.g., RSI onset). No such mechanism is referenced, so attributing the rise to a \"sudden jump\" telegraphs a change in the world's pace, violating the invariant."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.15
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_open_weight_initiative",
+    "probability": 0.26,
+    "emergent": true,
+    "description": "A new transatlantic initiative led by Nordic and Benelux states proposes joint funding for a shared European open-weight model development and evaluation consortium, aiming to reduce dependency on closed frontier systems. Framed as a resilience measure, it gains quiet support from states concerned about US access control but avoids direct confrontation, testing whether fragmented national interests can coalesce around a common technical alternative.",
+    "probability_samples": [
+      0.25,
+      0.28,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]
