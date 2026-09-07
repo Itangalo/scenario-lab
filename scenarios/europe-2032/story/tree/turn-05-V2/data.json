@@ -2,9 +2,15 @@
   "node": "turn-05-V2",
   "turn": 5,
   "period": "H2 2028",
+  "period_prose": "the second half of 2028",
   "block": "V2",
   "arm": "V",
   "stage": 1,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260904-223403",
     "seed": 11571586715346023830,
@@ -125,7 +131,9 @@
       "finish": 7,
       "description": "€200bn fund for four to five sites",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Tech sovereignty package",
@@ -135,7 +143,9 @@
       "finish": 6,
       "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Establish the European AI Assurance Directorate (EAAD)",
@@ -145,7 +155,9 @@
       "finish": 5,
       "description": "A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2028",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Secure Energy-Backed Compute Sovereignty",
@@ -155,7 +167,9 @@
       "finish": 6,
       "description": "Launch a binding EU-wide programme to co-develop sovereign AI infrastructure with national energy authorities, ensuring 5GW of dedicated low-carbon power for AI compute by turn 6, with physical and legal separation from commercial grids",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2028"
     }
   ],
   "cancelled": [],

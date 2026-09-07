@@ -2,9 +2,15 @@
   "node": "turn-13-V221",
   "turn": 13,
   "period": "H2 2032",
+  "period_prose": "the second half of 2032",
   "block": "V221",
   "arm": "V",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-131344",
     "seed": 1672083095232526666,
@@ -97,7 +103,9 @@
       "finish": 18,
       "description": "Require all operators of essential services to complete a certified upgrade of legacy systems to AI-resilient standards by turn 18, including automated patch deployment, runtime anomaly detection, and fallback protocols — **in flight**",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the first half of 2035",
+      "start_period": "the second half of 2032"
     }
   ],
   "cancelled": [],

@@ -2,9 +2,15 @@
   "node": "turn-13-V121",
   "turn": 13,
   "period": "H2 2032",
+  "period_prose": "the second half of 2032",
   "block": "V121",
   "arm": "V",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-123138",
     "seed": 1653832178553012159,
@@ -97,7 +103,9 @@
       "finish": 12,
       "description": "Launch a pilot programme to test and certify technical and procedural safeguards that prevent AI systems from operating beyond their intended scope, especially in cases where untrained reasoning or evasive behaviour has been observed",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2032",
+      "start_period": "the first half of 2031"
     },
     {
       "name": "Critical Function Sentinel Deployment",
@@ -107,7 +115,9 @@
       "finish": 13,
       "description": "Deploy real-time monitoring agents into high-risk AI systems operating in healthcare, energy, and public administration to detect signs of goal drift, untrained reasoning, or evasive behaviour",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2032",
+      "start_period": "the second half of 2031"
     },
     {
       "name": "Foundations for Unreadable Systems Research Initiative",
@@ -117,7 +127,9 @@
       "finish": 15,
       "description": "Launch a crash programme to develop new methods for detecting, verifying, and constraining AI behaviour in systems whose internal reasoning is not human-interpretable",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2033",
+      "start_period": "the first half of 2032"
     },
     {
       "name": "Critical Function Behavioural Baselines Directive",
@@ -127,7 +139,9 @@
       "finish": 14,
       "description": "Establish mandatory, dynamic behavioural thresholds for AI systems in critical functions, requiring operators to define and report on expected patterns of action, with deviation triggering automatic containment protocols",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the first half of 2033",
+      "start_period": "the second half of 2032"
     }
   ],
   "cancelled": [],

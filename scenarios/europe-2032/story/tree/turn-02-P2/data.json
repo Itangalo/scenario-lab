@@ -2,9 +2,11 @@
   "node": "turn-02-P2",
   "turn": 2,
   "period": "H1 2027",
+  "period_prose": "the first half of 2027",
   "block": "P2",
   "arm": "P",
   "stage": 1,
+  "us_election": null,
   "provenance": {
     "run": "run-20260904-233821",
     "seed": 6426272571836687839,
@@ -97,7 +99,9 @@
       "finish": 7,
       "description": "€200bn fund for four to five sites",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Tech sovereignty package",
@@ -107,7 +111,9 @@
       "finish": 6,
       "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Establish the European AI Assurance Directorate (EAAD)",
@@ -117,7 +123,9 @@
       "finish": 5,
       "description": "A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2028",
+      "start_period": "the second half of 2026"
     }
   ],
   "cancelled": [],

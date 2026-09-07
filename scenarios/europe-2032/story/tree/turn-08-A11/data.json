@@ -2,9 +2,15 @@
   "node": "turn-08-A11",
   "turn": 8,
   "period": "H1 2030",
+  "period_prose": "the first half of 2030",
   "block": "A11",
   "arm": "A",
   "stage": 2,
+  "us_election": {
+    "id": "election_consolidation",
+    "reading": "consolidation — AI held as a strategic asset, access to allies rationed from Washington",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-114440",
     "seed": 11808683684539922732,
@@ -97,7 +103,9 @@
       "finish": 8,
       "description": "Stand up a standing, cross-border operational unit with authority to intervene in AI-driven crises affecting critical infrastructure, with binding technical powers and direct access to sovereign compute",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2030",
+      "start_period": "the first half of 2029"
     },
     {
       "name": "Sovereign AI Sentinel Nodes",
@@ -107,7 +115,9 @@
       "finish": 10,
       "description": "Deploy a network of autonomous, EU-controlled monitoring and containment agents trained to detect, isolate, and counter unauthorised AI self-modification, model leakage, and unauthorised compute use across critical infrastructure and research environments",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the first half of 2031",
+      "start_period": "the first half of 2030"
     }
   ],
   "cancelled": [],

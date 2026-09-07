@@ -2,9 +2,15 @@
   "node": "turn-12-P111",
   "turn": 12,
   "period": "H1 2032",
+  "period_prose": "the first half of 2032",
   "block": "P111",
   "arm": "P",
   "stage": 3,
+  "us_election": {
+    "id": "election_alliance",
+    "reading": "alliance — structured access for allied governments on published terms, priced in alignment",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-133534",
     "seed": 13978289749766350109,
@@ -132,7 +138,9 @@
       "finish": 12,
       "description": "A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2032",
+      "start_period": "the first half of 2030"
     },
     {
       "name": "EU Border for AI Systems",
@@ -142,7 +150,9 @@
       "finish": 14,
       "description": "We establish a legal and technical boundary at the point of deployment: no AI system above capability threshold 60.0 may operate within EU jurisdiction unless it has passed sovereign evaluation, demonstrated runtime controllability, and submitted to continuous monitoring by EAAN` — **in flight**",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2033",
+      "start_period": "the first half of 2031"
     }
   ],
   "cancelled": [],

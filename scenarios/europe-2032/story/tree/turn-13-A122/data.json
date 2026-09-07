@@ -2,9 +2,15 @@
   "node": "turn-13-A122",
   "turn": 13,
   "period": "H2 2032",
+  "period_prose": "the second half of 2032",
   "block": "A122",
   "arm": "A",
   "stage": 3,
+  "us_election": {
+    "id": "election_consolidation",
+    "reading": "consolidation — AI held as a strategic asset, access to allies rationed from Washington",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-102707",
     "seed": 5839376575745094863,
@@ -97,7 +103,9 @@
       "finish": 15,
       "description": "Establish a legally mandated, EU-controlled compute tier for auditable AI in energy, health, and transport, with priority access during peak load and automatic fallback during incidents` — in flight",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2033",
+      "start_period": "the first half of 2032"
     },
     {
       "name": "Open Science Resilience Initiative",
@@ -107,7 +115,9 @@
       "finish": 12,
       "description": "Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2032",
+      "start_period": "the second half of 2030"
     },
     {
       "name": "Secure foundational resilience through joint threat response integration",
@@ -117,7 +127,9 @@
       "finish": 11,
       "description": "Embed EU systems into the new joint cyber-biosurveillance pact with real-time telemetry sharing, binding incident response protocols, and co-located analysis cells",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2031",
+      "start_period": "the first half of 2031"
     }
   ],
   "cancelled": [],

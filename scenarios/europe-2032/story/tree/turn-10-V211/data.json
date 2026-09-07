@@ -2,9 +2,15 @@
   "node": "turn-10-V211",
   "turn": 10,
   "period": "H1 2031",
+  "period_prose": "the first half of 2031",
   "block": "V211",
   "arm": "V",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-125532",
     "seed": 9945960353475148968,
@@ -90,7 +96,9 @@
       "finish": 10,
       "description": "Establish a binding coordination framework among the EU and like-minded middle powers to align export controls, jointly negotiate compute access, and pool evaluation capacity—without ceding sovereignty—creating collective leverage over frontier development and deployment",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2031",
+      "start_period": "the second half of 2030"
     }
   ],
   "cancelled": [],

@@ -42,6 +42,19 @@ No figure is retyped from a run into prose. `check_tree.py` enforces that, along
 
 `tree.json` is the editorial source of truth underneath all of it: which run each of the 42 blocks follows, which option leads into it, and how honest each choice's split is. The branch-log tables below are the human record it was generated from and verified against.
 
+## How the prose is written
+
+Settled with Johan on 2026-09-07, at the turn-1 checkpoint. These hold for all 207 nodes, and `check_tree.py` enforces the ones that can be enforced.
+
+- **Reader.** People who work near AI governance. They know what a directive is and what a Council formation does. Nothing is explained down to them, and the institutional detail has to be right.
+- **Second person.** The reader is the Union's decision-maker: Commission, Council and Parliament as one hand. Member states, providers, the United States and the public are third parties who push back. Internal division is something the reader is inside, not something they observe.
+- **Calendar time, never turns.** The reader never sees the word "turn" in a mechanical sense. A measure lands in "the second half of 2029", not "on turn 7". `data.json` carries `period_prose` for every node and `finish_period` / `start_period` for every measure so no conversion is done by hand.
+- **The narrator knows only what the Union knows** in that half-year. No foreshadowing, no retrospective irony, nothing that only makes sense once the arm is known.
+- **The 2028 US election is told on every branch.** The result is named in the second half of 2028, and what follows from it is named again in the first half of 2029 — every branch, without exception, since the posture stands from 2029 onward and prices everything after it. The outcome per block sits in each node's `data.json` under `us_election`.
+- **Draw counts are shown to the reader.** Each choice page closes with how the simulated responses to that situation actually fell — how many took this option's approach, and what the alternatives were. Options are drawn from the simulation, not authored, and the reader is told so.
+- **Length.** About 250 words per turn. The opening is the deliberate exception: it establishes a world and a role that no later node re-establishes.
+- **Numbers.** Never retyped. Anything the reader sees as a figure must exist in the node's `data.json` or in the run artifacts behind it.
+
 ## How options and paths are created
 
 **The options** are created by running (at least) ten instances of the turn leading up to it, collecting only the actor output. From these, two outputs are selected. These should be representative of two larger groups of outputs.

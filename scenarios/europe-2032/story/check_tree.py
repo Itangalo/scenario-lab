@@ -51,6 +51,26 @@ ARM_CONTEXT = re.compile(
     r"\b(arm|arms|world|worlds|branch|branches|trajector\w+|scenario|path|paths|"
     r"variant|regime|timeline|track)\b", re.I)
 ARM_WINDOW = 60
+
+# The reader lives in calendar time. "Turn 6" is a fact about the simulation,
+# not about the world, and must never reach the page. Only the mechanical
+# senses are flagged; "in turn", "turned inward" and the like are ordinary
+# English and are left alone.
+TURN_WORD = re.compile(
+    r"\b(?:turns?\s+\d+"
+    r"|(?:this|that|next|last|each|every|per|first|final|following|previous|same)\s+turns?"
+    r"|(?:one|two|three|four|five|six|seven|eight|nine|ten|\d+)\s+turns?"
+    r"|turns?\s+(?:later|earlier|from now|ago))\b", re.I)
+
+# Every branch is told the 2028 US result in the second half of 2028, and told
+# what follows from it in the first half of 2029. A reader who is not told
+# cannot price any of the decisions that come after.
+ELECTION_WORDS = {
+    "election_consolidation": r"consolidat|strategic asset|ration|client|tier",
+    "election_alliance": r"allian|coalition|structured access|published terms|partner",
+    "election_retrenchment": r"retrench|inward|backlash|moratorium|transfers",
+}
+US_WORDS = re.compile(r"\b(United States|Washington|American|U\.?S\.?)\b")
 BRANCH_ID = re.compile(r"\b[AVP][12]{1,3}\b")
 NUMBER = re.compile(r"\d+(?:[.,]\d+)*")
 COMMENT = re.compile(r"<!--.*?-->", re.S)
@@ -71,6 +91,14 @@ def numbers(text: str) -> set[str]:
         if value.is_integer():
             out.add(str(int(value)))
     return out
+
+
+def fm_status(text: str) -> str:
+    m = re.match(r"^---\n(.*?)\n---\n", text, re.S)
+    if not m:
+        return ""
+    s = re.search(r"^status:\s*(\S+)", m.group(1), re.M)
+    return s.group(1) if s else ""
 
 
 def body_of(text: str) -> str:
@@ -182,6 +210,22 @@ def check_node(node_dir: Path, data: dict[str, Any], event_ids: set[str],
     for eid in event_ids:
         if re.search(rf"\b{re.escape(eid)}\b", body) and eid not in fired:
             problems.append(f"{name}: names event {eid}, which did not fire this turn")
+
+    written = fm_status(text) == "written"
+
+    # 4a — no turn vocabulary in written prose
+    if written:
+        for match in TURN_WORD.finditer(body):
+            problems.append(f"{name}: says {match.group(0)!r} — the reader is in "
+                            f"calendar time, not turns")
+
+    # 4b — the 2028 US result has to be told, and told again as policy
+    election = data.get("us_election")
+    if written and election and data.get("turn") in (5, 6):
+        pattern = ELECTION_WORDS.get(election["id"], "")
+        if not (US_WORDS.search(body) and re.search(pattern, body, re.I)):
+            problems.append(f"{name}: does not name the 2028 US result "
+                            f"({election['id']}), which every branch must carry")
 
     # 4 — arm leakage
     for match in ARM_NAMES.finditer(body):

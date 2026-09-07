@@ -2,9 +2,15 @@
   "node": "turn-08-P12",
   "turn": 8,
   "period": "H1 2030",
+  "period_prose": "the first half of 2030",
   "block": "P12",
   "arm": "P",
   "stage": 2,
+  "us_election": {
+    "id": "election_alliance",
+    "reading": "alliance — structured access for allied governments on published terms, priced in alignment",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-145406",
     "seed": 10248462065756046062,
@@ -104,7 +110,9 @@
       "finish": 6,
       "description": "A new public agency with legal authority to conduct independent, pre-deployment evaluations of any AI system above capability threshold 50.0, with power to require interpretability audits, agent monitoring, and weight inspections",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the first half of 2028"
     },
     {
       "name": "Emergency Sovereign Compute Mobilisation",
@@ -114,7 +122,9 @@
       "finish": 10,
       "description": "A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **in flight**",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the first half of 2031",
+      "start_period": "the first half of 2030"
     }
   ],
   "cancelled": [],

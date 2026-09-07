@@ -2,9 +2,15 @@
   "node": "turn-08-V11",
   "turn": 8,
   "period": "H1 2030",
+  "period_prose": "the first half of 2030",
   "block": "V11",
   "arm": "V",
   "stage": 2,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-135202",
     "seed": 11432410905482723013,
@@ -97,7 +103,9 @@
       "finish": 10,
       "description": "Launch a coordinated EU programme to capture strategic advantage from the emergent efficiency breakthrough by rapidly scaling open, energy-efficient AI architectures across public and industrial applications, while securing algorithmic leadership through a new European Institute for Sparse Intelligence — **in flight**",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2031",
+      "start_period": "the second half of 2029"
     }
   ],
   "cancelled": [],

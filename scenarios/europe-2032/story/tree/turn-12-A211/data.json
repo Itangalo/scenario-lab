@@ -2,9 +2,15 @@
   "node": "turn-12-A211",
   "turn": 12,
   "period": "H1 2032",
+  "period_prose": "the first half of 2032",
   "block": "A211",
   "arm": "A",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-103254",
     "seed": 2320793946035680927,
@@ -111,7 +117,9 @@
       "finish": 12,
       "description": "Establish a permanent, independent EU body to publish real-time assessments of emerging AI risks, model capability trends, and the credibility of anomaly reports, drawing on classified and open-source intelligence, academic research, and whistleblower inputs` — **finished this turn**.",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2032",
+      "start_period": "the first half of 2031"
     },
     {
       "name": "Emergency Resilience Surge",
@@ -121,7 +129,9 @@
       "finish": 13,
       "description": "Launch an immediate, EU-coordinated hardening of all critical public services against AI-generated cyber threats, focusing on update integrity, zero-trust authentication, and real-time anomaly detection in sovereign systems",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2032",
+      "start_period": "the second half of 2031"
     }
   ],
   "cancelled": [],

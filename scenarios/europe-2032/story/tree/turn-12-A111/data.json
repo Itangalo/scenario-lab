@@ -2,9 +2,15 @@
   "node": "turn-12-A111",
   "turn": 12,
   "period": "H1 2032",
+  "period_prose": "the first half of 2032",
   "block": "A111",
   "arm": "A",
   "stage": 3,
+  "us_election": {
+    "id": "election_consolidation",
+    "reading": "consolidation — AI held as a strategic asset, access to allies rationed from Washington",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-101012",
     "seed": 10267166274962819215,
@@ -104,7 +110,9 @@
       "finish": 12,
       "description": "Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2032",
+      "start_period": "the second half of 2030"
     },
     {
       "name": "Emergency Compute Redundancy Initiative",
@@ -114,7 +122,9 @@
       "finish": 13,
       "description": "Establish geographically distributed, EU-operated fallback clusters capable of running critical sovereign models if external frontier access is disrupted, using hardened infrastructure and pre-staged weights from open and licensed sources",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2032",
+      "start_period": "the second half of 2031"
     }
   ],
   "cancelled": [],

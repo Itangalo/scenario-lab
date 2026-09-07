@@ -2,9 +2,15 @@
   "node": "turn-05-A1",
   "turn": 5,
   "period": "H2 2028",
+  "period_prose": "the second half of 2028",
   "block": "A1",
   "arm": "A",
   "stage": 1,
+  "us_election": {
+    "id": "election_consolidation",
+    "reading": "consolidation — AI held as a strategic asset, access to allies rationed from Washington",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260904-222506",
     "seed": 7971659948448395561,
@@ -118,7 +124,9 @@
       "finish": 7,
       "description": "€200bn fund for four to five sites",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Tech sovereignty package",
@@ -128,7 +136,9 @@
       "finish": 6,
       "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Sovereign Agent Monitoring Initiative",
@@ -138,7 +148,9 @@
       "finish": 5,
       "description": "Establishes EU-level access to agent logs and decision traces from all frontier systems deployed in public services or critical infrastructure` — finished",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2028",
+      "start_period": "the first half of 2027"
     },
     {
       "name": "Resilience Surge Protocol",
@@ -148,7 +160,9 @@
       "finish": 7,
       "description": "Launch an emergency programme to harden critical infrastructure and social systems against AI-enabled disruption, beginning with cyber defences, biosecurity, and labour transition",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2028"
     }
   ],
   "cancelled": [],

@@ -2,9 +2,15 @@
   "node": "turn-10-V222",
   "turn": 10,
   "period": "H1 2031",
+  "period_prose": "the first half of 2031",
   "block": "V222",
   "arm": "V",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-132741-04",
     "seed": 3793806113562981540,
@@ -104,7 +110,9 @@
       "finish": 7,
       "description": "€200bn fund for four to five sites` — finished",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Launch Sovereign Cyber Shield Initiative",
@@ -114,7 +122,9 @@
       "finish": 8,
       "description": "Deploy AI-hardened, pre-automated defence stacks across all Tier 1 critical infrastructure operators, integrating swarm response, zero-trust verification, and real-time model monitoring to neutralise autonomous threats before escalation.` — finished",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2030",
+      "start_period": "the first half of 2029"
     },
     {
       "name": "Establish EU Public Trust Corps for AI Incident Response and Transparency",
@@ -124,7 +134,9 @@
       "finish": 12,
       "description": "Create a civilian technical corps under the European Commission, staffed with red-team engineers, crisis communicators, and regional liaison officers, to lead public-facing incident response, conduct live transparency drills, and operate a 24/7 AI incident dashboard with verified threat status, system outages, and mitigation progress.",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2032",
+      "start_period": "the second half of 2030"
     }
   ],
   "cancelled": [],

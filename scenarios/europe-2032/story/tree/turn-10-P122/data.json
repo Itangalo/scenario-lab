@@ -2,9 +2,15 @@
   "node": "turn-10-P122",
   "turn": 10,
   "period": "H1 2031",
+  "period_prose": "the first half of 2031",
   "block": "P122",
   "arm": "P",
   "stage": 3,
+  "us_election": {
+    "id": "election_alliance",
+    "reading": "alliance — structured access for allied governments on published terms, priced in alignment",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-142314",
     "seed": 16914259975281175077,
@@ -97,7 +103,9 @@
       "finish": 10,
       "description": "A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2031",
+      "start_period": "the first half of 2030"
     },
     {
       "name": "Municipal Resilience Backchannel Integration",
@@ -107,7 +115,9 @@
       "finish": 11,
       "description": "Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning` — **in flight**",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2031",
+      "start_period": "the second half of 2030"
     }
   ],
   "cancelled": [],

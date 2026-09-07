@@ -2,9 +2,11 @@
   "node": "turn-02-P1",
   "turn": 2,
   "period": "H1 2027",
+  "period_prose": "the first half of 2027",
   "block": "P1",
   "arm": "P",
   "stage": 1,
+  "us_election": null,
   "provenance": {
     "run": "run-20260904-224120",
     "seed": 2445863046910987280,
@@ -90,7 +92,9 @@
       "finish": 7,
       "description": "€200bn fund for four to five sites",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Tech sovereignty package",
@@ -100,7 +104,9 @@
       "finish": 6,
       "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Emergency Sovereign Compute Directive",
@@ -110,7 +116,9 @@
       "finish": 3,
       "description": "A binding legal instrument to reserve 30% of all frontier-class compute capacity in the EU for state-critical and public-interest use, effective on deployment",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the second half of 2027",
+      "start_period": "the first half of 2027"
     }
   ],
   "cancelled": [],

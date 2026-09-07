@@ -2,9 +2,15 @@
   "node": "turn-13-A221",
   "turn": 13,
   "period": "H2 2032",
+  "period_prose": "the second half of 2032",
   "block": "A221",
   "arm": "A",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-103422",
     "seed": 13482323353808966327,
@@ -104,7 +110,9 @@
       "finish": 13,
       "description": "A federated network of EU-controlled inference clusters, hardened and distributed, to host sovereign replicas from the Replication Foundry Initiative and enforce strict access controls on all high-capability AI use in public services",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2032",
+      "start_period": "the first half of 2031"
     },
     {
       "name": "Emergency Replication Mandate",
@@ -114,7 +122,9 @@
       "finish": 12,
       "description": "A binding directive requiring all public-sector AI deployments above capability level 55 to be mirrored within 90 days by a functionally equivalent model trained from open weights or independently verified checkpoints, using EU-controlled compute and staffed by EU-cleared personnel",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2032",
+      "start_period": "the second half of 2031"
     },
     {
       "name": "Sovereign Assurance Surge",
@@ -124,7 +134,9 @@
       "finish": 13,
       "description": "A crash programme to deploy independent, real-time monitoring and control systems on all replicated and frontier-adjacent AI in EU public services, using a combination of EU-certified interpretability tools, runtime telemetry, and mandatory red-teaming protocols enforced by the European AI Assurance Directorate (EAAD+)",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2032",
+      "start_period": "the first half of 2032"
     },
     {
       "name": "Public AI Observatory with Binding Telemetry Access",
@@ -134,7 +146,9 @@
       "finish": 14,
       "description": "A real-time public dashboard fed by mandatory telemetry from all high-capability AI systems operating in or affecting EU jurisdictions, with independent validation nodes hosted by member-state research institutes and civil society auditors granted read-only access to behavioural logs",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the first half of 2033",
+      "start_period": "the second half of 2032"
     }
   ],
   "cancelled": [],

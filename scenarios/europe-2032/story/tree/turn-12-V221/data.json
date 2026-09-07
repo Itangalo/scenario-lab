@@ -2,9 +2,15 @@
   "node": "turn-12-V221",
   "turn": 12,
   "period": "H1 2032",
+  "period_prose": "the first half of 2032",
   "block": "V221",
   "arm": "V",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-131344",
     "seed": 1672083095232526666,
@@ -97,7 +103,9 @@
       "finish": 12,
       "description": "Create a civilian technical corps under the European Commission, staffed with red-team engineers, crisis communicators, and regional liaison officers, to lead public-facing incident response, conduct live transparency drills, and operate a 24/7 AI incident dashboard with verified threat status, system outages, and mitigation progress",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2032",
+      "start_period": "the second half of 2030"
     }
   ],
   "cancelled": [],

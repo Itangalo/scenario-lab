@@ -2,9 +2,15 @@
   "node": "turn-07-V11",
   "turn": 7,
   "period": "H2 2029",
+  "period_prose": "the second half of 2029",
   "block": "V11",
   "arm": "V",
   "stage": 2,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-135202",
     "seed": 11432410905482723013,
@@ -111,7 +117,9 @@
       "finish": 7,
       "description": "Establish a permanent EU-level monitoring and early warning function for AI-driven distortions in critical societal systems — including energy grid dynamics, public service automation failures, and emergent manipulation patterns in digital civic spaces — with authority to trigger emergency reviews and technical interventions",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": "the first half of 2029"
     }
   ],
   "cancelled": [],

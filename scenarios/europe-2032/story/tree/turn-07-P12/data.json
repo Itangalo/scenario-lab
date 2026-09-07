@@ -2,9 +2,15 @@
   "node": "turn-07-P12",
   "turn": 7,
   "period": "H2 2029",
+  "period_prose": "the second half of 2029",
   "block": "P12",
   "arm": "P",
   "stage": 2,
+  "us_election": {
+    "id": "election_alliance",
+    "reading": "alliance — structured access for allied governments on published terms, priced in alignment",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-145406",
     "seed": 10248462065756046062,
@@ -90,7 +96,9 @@
       "finish": 7,
       "description": "€200bn fund for four to five sites",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Tech sovereignty package",
@@ -100,7 +108,9 @@
       "finish": 6,
       "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "European Evaluation Shield",
@@ -110,7 +120,9 @@
       "finish": 6,
       "description": "A new public agency with legal authority to conduct independent, pre-deployment evaluations of any AI system above capability threshold 50.0, with power to require interpretability audits, agent monitoring, and weight inspections",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the first half of 2028"
     },
     {
       "name": "Secure European Access to Advanced Lithography (SEAL)",
@@ -120,7 +132,9 @@
       "finish": 5,
       "description": "A binding legal and financial framework to co-fund and operate an EU-controlled servicing corridor for mature-node ASML lithography tools, ensuring uninterrupted access to critical semiconductor infrastructure despite extraterritorial pressure",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2028",
+      "start_period": "the second half of 2027"
     }
   ],
   "cancelled": [],

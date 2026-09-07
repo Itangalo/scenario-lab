@@ -2,9 +2,15 @@
   "node": "turn-08-P11",
   "turn": 8,
   "period": "H1 2030",
+  "period_prose": "the first half of 2030",
   "block": "P11",
   "arm": "P",
   "stage": 2,
+  "us_election": {
+    "id": "election_alliance",
+    "reading": "alliance — structured access for allied governments on published terms, priced in alignment",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-144653-03",
     "seed": 16477339009985396710,
@@ -82,7 +88,9 @@
       "finish": 6,
       "description": "A new public agency with legal authority to conduct independent, pre-deployment evaluations of any AI system above capability threshold 50.0, with power to require interpretability audits, agent monitoring, and weight inspections",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the first half of 2028"
     },
     {
       "name": "Critical Infrastructure Cyber Shield",
@@ -92,7 +100,9 @@
       "finish": 7,
       "description": "A binding directive requiring all operators of essential services in energy, health, transport and digital infrastructure to implement AI-resistant intrusion detection, failover protocols, and red-teaming exercises modelled on known automated attack patterns",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2029"
     }
   ],
   "cancelled": [],

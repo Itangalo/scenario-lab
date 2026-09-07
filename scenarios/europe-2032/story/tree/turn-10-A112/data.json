@@ -2,9 +2,15 @@
   "node": "turn-10-A112",
   "turn": 10,
   "period": "H1 2031",
+  "period_prose": "the first half of 2031",
   "block": "A112",
   "arm": "A",
   "stage": 3,
+  "us_election": {
+    "id": "election_consolidation",
+    "reading": "consolidation — AI held as a strategic asset, access to allies rationed from Washington",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-102707-04",
     "seed": 13788335261043739097,
@@ -90,7 +96,9 @@
       "finish": 10,
       "description": "Deploy a network of autonomous, EU-controlled monitoring and containment agents trained to detect, isolate, and counter unauthorised AI self-modification, model leakage, and unauthorised compute use across critical infrastructure and research environments",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2031",
+      "start_period": "the first half of 2030"
     },
     {
       "name": "Sovereign AI Behavioural Observatory",
@@ -100,7 +108,9 @@
       "finish": 12,
       "description": "Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2032",
+      "start_period": "the second half of 2030"
     }
   ],
   "cancelled": [],

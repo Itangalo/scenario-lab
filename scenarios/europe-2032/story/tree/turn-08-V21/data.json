@@ -2,9 +2,15 @@
   "node": "turn-08-V21",
   "turn": 8,
   "period": "H1 2030",
+  "period_prose": "the first half of 2030",
   "block": "V21",
   "arm": "V",
   "stage": 2,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-141232",
     "seed": 10381783824970870000,
@@ -111,7 +117,9 @@
       "finish": 7,
       "description": "€200bn fund for four to five sites",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Establish the European AI Assurance Directorate (EAAD)",
@@ -121,7 +129,9 @@
       "finish": 5,
       "description": "A new public agency to conduct independent pre-deployment evaluations of frontier models and audit safety claims with legal authority to delay releases",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2028",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Launch Sovereign AI Core Programme",
@@ -131,7 +141,9 @@
       "finish": 9,
       "description": "Establish a fully EU-operated, militarily hardened AI infrastructure stack—compute, energy, and control—hosting critical assurance, resilience, and governance functions under exclusive Union authority",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2030",
+      "start_period": "the second half of 2029"
     },
     {
       "name": "Enact Real-Time Logging Mandate for Critical Systems",
@@ -141,7 +153,9 @@
       "finish": 8,
       "description": "Require all AI systems above 55.0 capability operating in critical infrastructure sectors (health, energy, transport, finance) to maintain real-time, tamper-evident logs accessible to the EAAD and ENISA, with automated anomaly detection and escalation protocols",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2030",
+      "start_period": "the first half of 2030"
     }
   ],
   "cancelled": [],

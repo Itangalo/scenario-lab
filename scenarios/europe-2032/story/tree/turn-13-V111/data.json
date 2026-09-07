@@ -2,9 +2,15 @@
   "node": "turn-13-V111",
   "turn": 13,
   "period": "H2 2032",
+  "period_prose": "the second half of 2032",
   "block": "V111",
   "arm": "V",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-103902",
     "seed": 3393329171825292677,
@@ -82,7 +88,9 @@
       "finish": 13,
       "description": "Establish independent, pre-deployment evaluation of any AI system above 65.0 capability threshold, with authority to delay or condition deployment based on demonstrated control, security, and misuse risks.",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2032",
+      "start_period": "the second half of 2031"
     },
     {
       "name": "Critical Infrastructure Agent Monitoring Framework",
@@ -92,7 +100,9 @@
       "finish": 15,
       "description": "Deploy real-time monitoring and anomaly detection systems across energy, finance, and healthcare networks to identify and contain autonomous AI agents operating without authorisation.",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2033",
+      "start_period": "the first half of 2032"
     },
     {
       "name": "Emergency Audit Integration Directive",
@@ -102,7 +112,9 @@
       "finish": 14,
       "description": "Mandate that findings from the emergent_public_ai_audit_movement be formally incorporated into national and EU-level AI oversight processes, creating a binding feedback loop between civil society audits and regulatory enforcement.",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the first half of 2033",
+      "start_period": "the second half of 2032"
     }
   ],
   "cancelled": [],

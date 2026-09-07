@@ -2,9 +2,15 @@
   "node": "turn-12-V111",
   "turn": 12,
   "period": "H1 2032",
+  "period_prose": "the first half of 2032",
   "block": "V111",
   "arm": "V",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-103902",
     "seed": 3393329171825292677,
@@ -111,7 +117,9 @@
       "finish": 13,
       "description": "Establish independent, pre-deployment evaluation of any AI system above 65.0 capability threshold, with authority to delay or condition deployment based on demonstrated control, security, and misuse risks.",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2032",
+      "start_period": "the second half of 2031"
     },
     {
       "name": "Critical Infrastructure Agent Monitoring Framework",
@@ -121,7 +129,9 @@
       "finish": 15,
       "description": "Deploy real-time monitoring and anomaly detection systems across energy, finance, and healthcare networks to identify and contain autonomous AI agents operating without authorisation.",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the second half of 2033",
+      "start_period": "the first half of 2032"
     }
   ],
   "cancelled": [],

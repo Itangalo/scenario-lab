@@ -2,9 +2,15 @@
   "node": "turn-12-P112",
   "turn": 12,
   "period": "H1 2032",
+  "period_prose": "the first half of 2032",
   "block": "P112",
   "arm": "P",
   "stage": 3,
+  "us_election": {
+    "id": "election_alliance",
+    "reading": "alliance — structured access for allied governments on published terms, priced in alignment",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-134903-02",
     "seed": 7152795250648295732,
@@ -82,7 +88,9 @@
       "finish": 12,
       "description": "A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **finishes this turn**",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2032",
+      "start_period": "the first half of 2030"
     },
     {
       "name": "EU Border for AI Systems",
@@ -92,7 +100,9 @@
       "finish": 14,
       "description": "Establish a legal and technical boundary at deployment: no AI system above capability 60.0 may operate in the EU without sovereign evaluation, runtime controllability, and continuous monitoring by EAAN` — **in flight**",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2033",
+      "start_period": "the first half of 2031"
     },
     {
       "name": "Accelerate EAAN Certification Nodes",
@@ -102,7 +112,9 @@
       "finish": 13,
       "description": "Fast-track deployment of sovereign evaluation infrastructure in Brussels, Sophia Antipolis, and Munich to operationalise the EU Border for AI Systems by turn 13, ensuring the EU can independently verify compliance` — **in flight**",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2032",
+      "start_period": "the second half of 2031"
     },
     {
       "name": "Strengthen EAAN Runtime Monitoring Protocols",
@@ -112,7 +124,9 @@
       "finish": 14,
       "description": "Upgrade the technical standards and enforcement mechanisms for runtime monitoring of high-capability AI systems, enabling EAAN to detect and respond to unauthorised adaptation, emergent goal pursuit, or covert coordination across deployments` — **in flight**",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the first half of 2033",
+      "start_period": "the first half of 2032"
     }
   ],
   "cancelled": [],

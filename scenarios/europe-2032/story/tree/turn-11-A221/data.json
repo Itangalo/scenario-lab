@@ -2,9 +2,15 @@
   "node": "turn-11-A221",
   "turn": 11,
   "period": "H2 2031",
+  "period_prose": "the second half of 2031",
   "block": "A221",
   "arm": "A",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-103422",
     "seed": 13482323353808966327,
@@ -90,7 +96,9 @@
       "finish": 13,
       "description": "A federated network of EU-controlled inference clusters, hardened and distributed, to host sovereign replicas from the Replication Foundry Initiative and enforce strict access controls on all high-capability AI use in public services",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2032",
+      "start_period": "the first half of 2031"
     },
     {
       "name": "Emergency Replication Mandate",
@@ -100,7 +108,9 @@
       "finish": 12,
       "description": "A binding directive requiring all public-sector AI deployments above capability level 55 to be mirrored within 90 days by a functionally equivalent model trained from open weights or independently verified checkpoints, using EU-controlled compute and staffed by EU-cleared personnel",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the first half of 2032",
+      "start_period": "the second half of 2031"
     }
   ],
   "cancelled": [],

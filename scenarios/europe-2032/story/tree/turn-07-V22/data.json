@@ -2,9 +2,15 @@
   "node": "turn-07-V22",
   "turn": 7,
   "period": "H2 2029",
+  "period_prose": "the second half of 2029",
   "block": "V22",
   "arm": "V",
   "stage": 2,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-142403",
     "seed": 15801352484355903432,
@@ -104,7 +110,9 @@
       "finish": 7,
       "description": "€200bn fund for four to five sites",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Launch Sovereign Cyber Shield Initiative",
@@ -114,7 +122,9 @@
       "finish": 8,
       "description": "Deploy AI-hardened, pre-automated defence stacks across all Tier 1 critical infrastructure operators, integrating swarm response, zero-trust verification, and real-time model monitoring to neutralise autonomous threats before escalation.",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2030",
+      "start_period": "the first half of 2029"
     }
   ],
   "cancelled": [],

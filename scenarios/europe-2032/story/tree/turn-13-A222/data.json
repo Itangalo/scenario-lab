@@ -2,9 +2,15 @@
   "node": "turn-13-A222",
   "turn": 13,
   "period": "H2 2032",
+  "period_prose": "the second half of 2032",
   "block": "A222",
   "arm": "A",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-103635",
     "seed": 156383880815187161,
@@ -118,7 +124,9 @@
       "finish": 13,
       "description": "A federated network of EU-controlled inference clusters, hardened and distributed, to host sovereign replicas from the Replication Foundry Initiative and enforce strict access controls on all high-capability AI use in public services",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2032",
+      "start_period": "the first half of 2031"
     },
     {
       "name": "Replication Foundry Initiative",
@@ -128,7 +136,9 @@
       "finish": 12,
       "description": "Establish a distributed EU capacity to replicate and distill frontier models from open weights, using repurposed hardware and emergency grid access to close the capability gap",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2032",
+      "start_period": "the first half of 2030"
     },
     {
       "name": "Emergency Observability Directive",
@@ -138,7 +148,9 @@
       "finish": 11,
       "description": "Mandates full, real-time telemetry and model checkpoint access for all high-capability AI systems operating in or affecting EU critical infrastructure, with immediate decommissioning authority for non-compliant providers",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2031",
+      "start_period": "the second half of 2031"
     },
     {
       "name": "Support for the European AI Commons",
@@ -148,7 +160,9 @@
       "finish": 14,
       "description": "Provides coordinated funding, legal protection, and interoperability standards to the emergent European AI Commons, enabling it to scale evaluation frameworks, defensive tooling, and replication pipelines as a distributed alternative to state-controlled infrastructure",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2033",
+      "start_period": "the first half of 2032"
     }
   ],
   "cancelled": [],

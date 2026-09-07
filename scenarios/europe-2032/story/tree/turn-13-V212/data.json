@@ -2,9 +2,15 @@
   "node": "turn-13-V212",
   "turn": 13,
   "period": "H2 2032",
+  "period_prose": "the second half of 2032",
   "block": "V212",
   "arm": "V",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-130534-01",
     "seed": 1287095822265400421,
@@ -82,7 +88,9 @@
       "finish": 13,
       "description": "Stand up an independent, real-time monitoring and intervention capability for high-risk AI systems operating within or affecting the EU, using sovereign compute and public technical capacity to enforce red lines",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2032",
+      "start_period": "the second half of 2031"
     }
   ],
   "cancelled": [],

@@ -2,9 +2,15 @@
   "node": "turn-09-P11",
   "turn": 9,
   "period": "H2 2030",
+  "period_prose": "the second half of 2030",
   "block": "P11",
   "arm": "P",
   "stage": 2,
+  "us_election": {
+    "id": "election_alliance",
+    "reading": "alliance — structured access for allied governments on published terms, priced in alignment",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-144653-03",
     "seed": 16477339009985396710,
@@ -90,7 +96,9 @@
       "finish": 12,
       "description": "A €40bn programme to rapidly scale up the EU’s independent technical capacity to monitor, audit, and secure high-capability AI systems, establishing the European AI Assurance Network (EAAN) with secure inspection enclaves and red-teaming capabilities` — **in flight**",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2032",
+      "start_period": "the first half of 2030"
     }
   ],
   "cancelled": [],

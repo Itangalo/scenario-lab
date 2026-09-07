@@ -2,9 +2,15 @@
   "node": "turn-09-A12",
   "turn": 9,
   "period": "H2 2030",
+  "period_prose": "the second half of 2030",
   "block": "A12",
   "arm": "A",
   "stage": 2,
+  "us_election": {
+    "id": "election_consolidation",
+    "reading": "consolidation — AI held as a strategic asset, access to allies rationed from Washington",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-131531",
     "seed": 9928306233343363724,
@@ -97,7 +103,9 @@
       "finish": 12,
       "description": "Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — in flight",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the first half of 2032",
+      "start_period": "the second half of 2030"
     }
   ],
   "cancelled": [],

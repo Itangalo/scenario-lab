@@ -52,6 +52,24 @@ from build_dashboard import (  # noqa: E402
 
 SCAFFOLD_NOTE = "<!-- scaffold: rewrite this, then set status: written -->"
 
+# The reader lives in calendar time, not in turns. Every node carries the prose
+# form of its own date, and every portfolio measure carries the date it lands,
+# so no writer has to convert a turn number by hand.
+US_ELECTIONS = {
+    "election_consolidation": "consolidation — AI held as a strategic asset, "
+                              "access to allies rationed from Washington",
+    "election_alliance": "alliance — structured access for allied governments "
+                         "on published terms, priced in alignment",
+    "election_retrenchment": "retrenchment — the backlash wins and Washington "
+                             "turns inward, slower and preoccupied",
+}
+
+
+def period_prose(turn: int) -> str:
+    half = "first" if turn % 2 == 0 else "second"
+    year = 2026 + turn // 2
+    return f"the {half} half of {year}"
+
 # metrics.md heads each metric with its bare id, so a reader-facing name has to
 # come from somewhere. This is that somewhere.
 METRIC_LABELS = {
@@ -182,7 +200,10 @@ def read_turn(run_dir: Path, turn: int, catalogue: Catalogue,
     actor_path = tdir / "2-actors" / "eu.md"
     actor = parse_actor_turn(actor_path)
     actor_text = actor_path.read_text(encoding="utf-8") if actor_path.is_file() else ""
-    portfolio = [{**m, "status": portfolio_status(m, turn)} for m in actor["portfolio"]]
+    portfolio = [{**m, "status": portfolio_status(m, turn),
+                  "finish_period": period_prose(m["finish"]) if m.get("finish") else None,
+                  "start_period": period_prose(m["start"]) if m.get("start") else None}
+                 for m in actor["portfolio"]]
 
     return {
         "metrics": out_metrics,
@@ -222,6 +243,23 @@ def main() -> int:
     metrics_meta = {m["id"]: m for m in metric_definitions(SCENARIO)}
     periods = tree["turn_periods"]
     blocks = {b["block"]: b for b in tree["blocks"]}
+
+    def us_election(block_id: str) -> dict[str, Any] | None:
+        """The 2028 result, read from the stage-1 ancestor's turn 5.
+
+        The posture stands from 2029 onward, so every block below that turn
+        inherits it; a reader who is told the result must keep being told what
+        follows from it.
+        """
+        root = block_id[:2]
+        run = RUNS / blocks[root]["run"] / "turn-05" / "1-event-evaluations.json"
+        if not run.is_file():
+            return None
+        for e in json.loads(run.read_text(encoding="utf-8")):
+            if e.get("triggered") and e["id"] in US_ELECTIONS:
+                return {"id": e["id"], "reading": US_ELECTIONS[e["id"]],
+                        "decided": period_prose(5)}
+        return None
     choice_after = {c["after_block"]: c for c in tree["choices"]}
 
     if not args.check:
@@ -247,8 +285,9 @@ def main() -> int:
         inherited = parse_actor_turn(STORY / opening["options"][0]["file"])["portfolio"]
         eid = opening["pinned_event"]
         data = {
-            "node": "turn-01", "turn": 1, "period": periods["1"], "block": None,
-            "arm": None, "stage": 0,
+            "node": "turn-01", "turn": 1, "period": periods["1"],
+            "period_prose": period_prose(1), "block": None,
+            "arm": None, "stage": 0, "us_election": None,
             "provenance": {"pinned_event": eid, "pin_runs": opening["pin_runs"],
                            "note": "The opening is arm-independent: it shows the "
                                    "scenario's start values, not a resolved turn. "
@@ -307,7 +346,9 @@ def main() -> int:
 
             data = {
                 "node": name, "turn": turn, "period": periods[str(turn)],
+                "period_prose": period_prose(turn),
                 "block": block["block"], "arm": block["arm"], "stage": block["stage"],
+                "us_election": us_election(block["block"]) if turn >= 5 else None,
                 "provenance": {"run": block["run"], "seed": block["seed"],
                                "turn_dir": f"runs/{block['run']}/turn-{turn:02d}",
                                "pinned_turn": block["pinned_turn"],
@@ -360,6 +401,9 @@ def main() -> int:
                 "split": choice["split"], "split_note": choice["note"],
                 "stance": opt["stance"], "standing": opt["standing"],
                 "support": opt["support"],
+                "period_prose": period_prose(choice["choice_turn"]),
+                "finishes_period": (period_prose(opt["finishes_turn"])
+                                    if opt["finishes_turn"] else None),
                 "measure": opt["measure"], "category": opt["category"],
                 "finishes_turn": opt["finishes_turn"],
                 "commitment": commitment_of(src_text),

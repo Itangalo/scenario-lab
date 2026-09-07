@@ -2,9 +2,15 @@
   "node": "turn-06-A11",
   "turn": 6,
   "period": "H1 2029",
+  "period_prose": "the first half of 2029",
   "block": "A11",
   "arm": "A",
   "stage": 2,
+  "us_election": {
+    "id": "election_consolidation",
+    "reading": "consolidation — AI held as a strategic asset, access to allies rationed from Washington",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-114440",
     "seed": 11808683684539922732,
@@ -97,7 +103,9 @@
       "finish": 7,
       "description": "€200bn fund for four to five sites",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Tech sovereignty package",
@@ -107,7 +115,9 @@
       "finish": 6,
       "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Resilience Surge Protocol",
@@ -117,7 +127,9 @@
       "finish": 7,
       "description": "Launch an emergency programme to harden critical infrastructure and social systems against AI-enabled disruption, beginning with cyber defences, biosecurity, and labour transition",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2029",
+      "start_period": "the second half of 2028"
     },
     {
       "name": "European AI Emergency Response Corps",
@@ -127,7 +139,9 @@
       "finish": 8,
       "description": "Stand up a standing, cross-border operational unit with authority to intervene in AI-driven crises affecting critical infrastructure, with binding technical powers and direct access to sovereign compute",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the first half of 2030",
+      "start_period": "the first half of 2029"
     }
   ],
   "cancelled": [],

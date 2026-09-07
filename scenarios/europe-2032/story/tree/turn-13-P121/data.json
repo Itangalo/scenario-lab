@@ -2,9 +2,15 @@
   "node": "turn-13-P121",
   "turn": 13,
   "period": "H2 2032",
+  "period_prose": "the second half of 2032",
   "block": "P121",
   "arm": "P",
   "stage": 3,
+  "us_election": {
+    "id": "election_alliance",
+    "reading": "alliance — structured access for allied governments on published terms, priced in alignment",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-135647",
     "seed": 14643951730528593368,
@@ -90,7 +96,9 @@
       "finish": 11,
       "description": "Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning — **in flight**",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2031",
+      "start_period": "the second half of 2030"
     }
   ],
   "cancelled": [],

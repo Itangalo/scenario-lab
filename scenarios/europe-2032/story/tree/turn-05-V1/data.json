@@ -2,9 +2,15 @@
   "node": "turn-05-V1",
   "turn": 5,
   "period": "H2 2028",
+  "period_prose": "the second half of 2028",
   "block": "V1",
   "arm": "V",
   "stage": 1,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260904-230752",
     "seed": 10624122088920592955,
@@ -90,7 +96,9 @@
       "finish": 6,
       "description": "Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2026"
     },
     {
       "name": "Critical Infrastructure Resilience Sprint",
@@ -100,7 +108,9 @@
       "finish": 6,
       "description": "Launch a 12-month emergency hardening programme for energy, transport, and health systems against AI-driven cyberattacks, with mandatory audits, fallback protocols, and live red-teaming",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the first half of 2029",
+      "start_period": "the second half of 2028"
     }
   ],
   "cancelled": [],

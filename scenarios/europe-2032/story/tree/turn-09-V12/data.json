@@ -2,9 +2,15 @@
   "node": "turn-09-V12",
   "turn": 9,
   "period": "H2 2030",
+  "period_prose": "the second half of 2030",
   "block": "V12",
   "arm": "V",
   "stage": 2,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260906-140300",
     "seed": 748695728457550772,
@@ -97,7 +103,9 @@
       "finish": 9,
       "description": "Mandate public reporting of AI use in essential services and require independent audits where automated systems influence operational integrity, with findings made available to regulators and, selectively, to the public",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2030",
+      "start_period": "the second half of 2029"
     },
     {
       "name": "Edge Sovereignty Acceleration Programme",
@@ -107,7 +115,9 @@
       "finish": 11,
       "description": "Launch a coordinated EU-wide effort to deploy neuromorphic edge AI systems in critical infrastructure, leveraging the emergent breakthrough to harden essential services against cloud dependency and remote compromise",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2031",
+      "start_period": "the first half of 2030"
     }
   ],
   "cancelled": [],

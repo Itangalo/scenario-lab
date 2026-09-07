@@ -2,9 +2,15 @@
   "node": "turn-13-V122",
   "turn": 13,
   "period": "H2 2032",
+  "period_prose": "the second half of 2032",
   "block": "V122",
   "arm": "V",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-124313-06",
     "seed": 2293454113060807923,
@@ -104,7 +110,9 @@
       "finish": 13,
       "description": "Establish a legally binding, real-time incident reporting regime for all frontier AI developers and critical infrastructure operators, with immediate data sharing among EU agencies and qualified partners",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2032",
+      "start_period": "the first half of 2032"
     },
     {
       "name": "Cyber Shield for Critical Services",
@@ -114,7 +122,9 @@
       "finish": 15,
       "description": "Launch an emergency hardening programme to protect core public services—energy, healthcare, water, and financial clearing—from automated AI-driven attacks by deploying layered detection, air-gapped fallbacks, and real-time threat response teams — **in flight**",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the second half of 2033",
+      "start_period": "the second half of 2032"
     }
   ],
   "cancelled": [],

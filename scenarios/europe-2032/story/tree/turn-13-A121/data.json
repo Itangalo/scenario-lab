@@ -2,9 +2,15 @@
   "node": "turn-13-A121",
   "turn": 13,
   "period": "H2 2032",
+  "period_prose": "the second half of 2032",
   "block": "A121",
   "arm": "A",
   "stage": 3,
+  "us_election": {
+    "id": "election_consolidation",
+    "reading": "consolidation — AI held as a strategic asset, access to allies rationed from Washington",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-102707-03",
     "seed": 2717347569193676605,
@@ -97,7 +103,9 @@
       "finish": 12,
       "description": "Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — finished",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the first half of 2032",
+      "start_period": "the second half of 2030"
     },
     {
       "name": "Sovereign Compute Backbone",
@@ -107,7 +115,9 @@
       "finish": 17,
       "description": "Establish a legally anchored, militarily protected, and publicly governed AI compute infrastructure on EU soil, capable of training and running auditable frontier-equivalent models independently of foreign providers` — in flight",
       "finished": false,
-      "status": "running"
+      "status": "running",
+      "finish_period": "the second half of 2034",
+      "start_period": "the first half of 2032"
     },
     {
       "name": "Public Accountability Migration Programme",
@@ -117,7 +127,9 @@
       "finish": 15,
       "description": "Migrate high-impact, high-exposure public services — starting with social insurance, healthcare eligibility, and border processing — from opaque or externally dependent AI systems to auditable models running on sovereign infrastructure` — in flight",
       "finished": false,
-      "status": "new"
+      "status": "new",
+      "finish_period": "the second half of 2033",
+      "start_period": "the second half of 2032"
     }
   ],
   "cancelled": [],

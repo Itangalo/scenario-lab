@@ -2,9 +2,15 @@
   "node": "turn-11-V122",
   "turn": 11,
   "period": "H2 2031",
+  "period_prose": "the second half of 2031",
   "block": "V122",
   "arm": "V",
   "stage": 3,
+  "us_election": {
+    "id": "election_retrenchment",
+    "reading": "retrenchment — the backlash wins and Washington turns inward, slower and preoccupied",
+    "decided": "the second half of 2028"
+  },
   "provenance": {
     "run": "run-20260907-124313-06",
     "seed": 2293454113060807923,
@@ -97,7 +103,9 @@
       "finish": 11,
       "description": "Launch a coordinated EU-wide effort to deploy neuromorphic edge AI systems in critical infrastructure, leveraging the emergent breakthrough to harden essential services against cloud dependency and remote compromise",
       "finished": true,
-      "status": "finished"
+      "status": "finished",
+      "finish_period": "the second half of 2031",
+      "start_period": "the first half of 2030"
     }
   ],
   "cancelled": [],
