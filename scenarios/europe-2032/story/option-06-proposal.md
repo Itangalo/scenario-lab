@@ -33,10 +33,10 @@ Re-reading the pools file-by-file (the earlier analyses mislabeled several sampl
 
 ### A2 — sovereign execution vs sovereign verification (19 vs 10, 1 scatter) — EMERGENT, steer confirmed
 
-Both poles are sovereign-build (nearly all cat4, all self-prioritised); they differ in what sovereignty is for. The split is emergent on measure names alone, not just targeted effects: the safety pole reads Verification Regime ×2, Verification Framework, Right to Verify, Epistemic Access Mandate, Agent Verification Regime, Independent Verification Regime, Audit Access Regime, Evaluation Corps, Truth Infrastructure, Accountability Framework — a coherent know-and-verify cluster against the execution/stack/core continuity cluster. Johan's steer coincides with the emergent structure exactly, so the picks stand as emergent rather than directed.
+Both poles are sovereign-build (nearly all cat4, all self-prioritised); they differ in what sovereignty is for. (Corrected 2026-09-07: the A22 pick was listed here as cat4; `pool-06-A2/sample-07.md` states Category 5. The pole description stands — the pick itself is the cat5 exception.) The split is emergent on measure names alone, not just targeted effects: the safety pole reads Verification Regime ×2, Verification Framework, Right to Verify, Epistemic Access Mandate, Agent Verification Regime, Independent Verification Regime, Audit Access Regime, Evaluation Corps, Truth Infrastructure, Accountability Framework — a coherent know-and-verify cluster against the execution/stack/core continuity cluster. Johan's steer coincides with the emergent structure exactly, so the picks stand as emergent rather than directed.
 
 - `option-06-A21` ← `pool-06-A2/sample-21.md`, "Sovereign Core Initiative" (cat4, large, fin. 12). Majority: sovereignty +15–20, resilience +5–7, "build what we can both control and comprehend".
-- `option-06-A22` ← `pool-06-A2/sample-07.md`, "Sovereign Verification Regime" (cat4, large, fin. 9). Minority: safety +12–15 *and* sovereignty +8–10 – the safety focus inside sovereign-build, "cannot control what we cannot see". Backup: sample-19 (safety +15–20, sentiment lift).
+- `option-06-A22` ← `pool-06-A2/sample-07.md`, "Sovereign Verification Regime" (cat5, large, fin. 9). Minority: safety +12–15 *and* sovereignty +8–10 – the safety focus inside sovereign-build, "cannot control what we cannot see". Backup: sample-19 (safety +15–20, sentiment lift).
 
 ### V2 — sovereign core vs cyber shield (14 vs 6, 10 assurance-middle)
 

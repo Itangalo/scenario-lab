@@ -1,0 +1,1574 @@
+{
+  "scenario": "europe-2032",
+  "note": "Editorial source of truth for the story tree: which run each block's path follows, and which option leads into it. Generated from the branch-log tables in README.md and verified against each run's config.json and the stage manifests. Regenerate only by editing README.md first — the tables there are the human record.",
+  "arms": {
+    "A": "Acceleration",
+    "V": "Verification-bound",
+    "P": "Plateau"
+  },
+  "turn_periods": {
+    "1": "H2 2026",
+    "2": "H1 2027",
+    "3": "H2 2027",
+    "4": "H1 2028",
+    "5": "H2 2028",
+    "6": "H1 2029",
+    "7": "H2 2029",
+    "8": "H1 2030",
+    "9": "H2 2030",
+    "10": "H1 2031",
+    "11": "H2 2031",
+    "12": "H1 2032",
+    "13": "H2 2032"
+  },
+  "opening": {
+    "node": "turn-01",
+    "turn": 1,
+    "period": "H2 2026",
+    "pinned_event": "cyber_test_shot",
+    "pin_runs": {
+      "A-o1": {
+        "dir": "run-pin-A-o1",
+        "seed": 11196476503952369790
+      },
+      "A-o2": {
+        "dir": "run-pin-A-o2",
+        "seed": 4917641212772111157
+      },
+      "V-o1": {
+        "dir": "run-pin-V-o1",
+        "seed": 15157244113843755396
+      },
+      "V-o2": {
+        "dir": "run-pin-V-o2",
+        "seed": 16716269765136547817
+      },
+      "P-o1": {
+        "dir": "run-pin-P-o1",
+        "seed": 408371623146465225
+      },
+      "P-o2": {
+        "dir": "run-pin-P-o2",
+        "seed": 9765792066681128786
+      }
+    },
+    "options": [
+      {
+        "node": "option-02-1",
+        "file": "turn-01/option-02-1.md",
+        "pool": "turn-01/pool-20260904",
+        "sample": "sample-17",
+        "leads_to": [
+          "A1",
+          "V1",
+          "P1"
+        ]
+      },
+      {
+        "node": "option-02-2",
+        "file": "turn-01/option-02-2.md",
+        "pool": "turn-01/pool-20260904",
+        "sample": "sample-10",
+        "leads_to": [
+          "A2",
+          "V2",
+          "P2"
+        ]
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "block": "A1",
+      "arm": "A",
+      "stage": 1,
+      "turns": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "parent_block": null,
+      "run": "run-20260904-222506",
+      "seed": 7971659948448395561,
+      "branch_from_run": "run-pin-A-o1",
+      "branch_turn": 1,
+      "pinned_turn": null,
+      "option_node": "option-02-1",
+      "option_file": "turn-01/option-02-1.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A2",
+      "arm": "A",
+      "stage": 1,
+      "turns": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "parent_block": null,
+      "run": "run-20260904-225530",
+      "seed": 1756575261759029078,
+      "branch_from_run": "run-pin-A-o2",
+      "branch_turn": 1,
+      "pinned_turn": null,
+      "option_node": "option-02-2",
+      "option_file": "turn-01/option-02-2.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P1",
+      "arm": "P",
+      "stage": 1,
+      "turns": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "parent_block": null,
+      "run": "run-20260904-224120",
+      "seed": 2445863046910987280,
+      "branch_from_run": "run-pin-P-o1",
+      "branch_turn": 1,
+      "pinned_turn": null,
+      "option_node": "option-02-1",
+      "option_file": "turn-01/option-02-1.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P2",
+      "arm": "P",
+      "stage": 1,
+      "turns": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "parent_block": null,
+      "run": "run-20260904-233821",
+      "seed": 6426272571836687839,
+      "branch_from_run": "run-pin-P-o2",
+      "branch_turn": 1,
+      "pinned_turn": null,
+      "option_node": "option-02-2",
+      "option_file": "turn-01/option-02-2.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V1",
+      "arm": "V",
+      "stage": 1,
+      "turns": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "parent_block": null,
+      "run": "run-20260904-230752",
+      "seed": 10624122088920592955,
+      "branch_from_run": "run-pin-V-o1",
+      "branch_turn": 1,
+      "pinned_turn": null,
+      "option_node": "option-02-1",
+      "option_file": "turn-01/option-02-1.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V2",
+      "arm": "V",
+      "stage": 1,
+      "turns": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "parent_block": null,
+      "run": "run-20260904-223403",
+      "seed": 11571586715346023830,
+      "branch_from_run": "run-pin-V-o2",
+      "branch_turn": 1,
+      "pinned_turn": null,
+      "option_node": "option-02-2",
+      "option_file": "turn-01/option-02-2.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A11",
+      "arm": "A",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "A1",
+      "run": "run-20260906-114440",
+      "seed": 11808683684539922732,
+      "branch_from_run": "run-20260904-222506",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-A11",
+      "option_file": "pool-06-A1/sample-06.md",
+      "path_rep": 2,
+      "promotion_reason": "rep 1 replaced: sentiment trajectory implausible, rule-7 incident penalties skipped"
+    },
+    {
+      "block": "A111",
+      "arm": "A",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "A11",
+      "run": "run-20260907-101012",
+      "seed": 10267166274962819215,
+      "branch_from_run": "run-20260906-114440",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-A111",
+      "option_file": "pool-10-A11/sample-04.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A112",
+      "arm": "A",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "A11",
+      "run": "run-20260907-102707-04",
+      "seed": 13788335261043739097,
+      "branch_from_run": "run-20260906-114440",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-A112",
+      "option_file": "pool-10-A11/sample-07.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A12",
+      "arm": "A",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "A1",
+      "run": "run-20260906-131531",
+      "seed": 9928306233343363724,
+      "branch_from_run": "run-20260904-222506",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-A12",
+      "option_file": "pool-06-A1/sample-03.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A121",
+      "arm": "A",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "A12",
+      "run": "run-20260907-102707-03",
+      "seed": 2717347569193676605,
+      "branch_from_run": "run-20260906-131531",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-A121",
+      "option_file": "pool-10-A12/sample-16.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A122",
+      "arm": "A",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "A12",
+      "run": "run-20260907-102707",
+      "seed": 5839376575745094863,
+      "branch_from_run": "run-20260906-131531",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-A122",
+      "option_file": "pool-10-A12/sample-01.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A21",
+      "arm": "A",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "A2",
+      "run": "run-20260906-132556",
+      "seed": 10383888383441182402,
+      "branch_from_run": "run-20260904-225530",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-A21",
+      "option_file": "pool-06-A2/sample-21.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A211",
+      "arm": "A",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "A21",
+      "run": "run-20260907-103254",
+      "seed": 2320793946035680927,
+      "branch_from_run": "run-20260906-132556",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-A211",
+      "option_file": "pool-10-A21/sample-08.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A212",
+      "arm": "A",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "A21",
+      "run": "run-20260907-103345",
+      "seed": 401233447666978836,
+      "branch_from_run": "run-20260906-132556",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-A212",
+      "option_file": "pool-10-A21/sample-05.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A22",
+      "arm": "A",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "A2",
+      "run": "run-20260906-133612",
+      "seed": 11779175910392283388,
+      "branch_from_run": "run-20260904-225530",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-A22",
+      "option_file": "pool-06-A2/sample-07.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A221",
+      "arm": "A",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "A22",
+      "run": "run-20260907-103422",
+      "seed": 13482323353808966327,
+      "branch_from_run": "run-20260906-133612",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-A221",
+      "option_file": "pool-10-A22/sample-03.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "A222",
+      "arm": "A",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "A22",
+      "run": "run-20260907-103635",
+      "seed": 156383880815187161,
+      "branch_from_run": "run-20260906-133612",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-A222",
+      "option_file": "pool-10-A22/sample-06.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P11",
+      "arm": "P",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "P1",
+      "run": "run-20260906-144653-03",
+      "seed": 16477339009985396710,
+      "branch_from_run": "run-20260904-224120",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-P11",
+      "option_file": "pool-06-P1/sample-05.md",
+      "path_rep": 2,
+      "promotion_reason": "rep 1 replaced: openweight_capability frozen at 45.0 by GM inertia against rule 2 diffusion"
+    },
+    {
+      "block": "P111",
+      "arm": "P",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "P11",
+      "run": "run-20260907-133534",
+      "seed": 13978289749766350109,
+      "branch_from_run": "run-20260906-144653-03",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-P111",
+      "option_file": "pool-10-P11/sample-04.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P112",
+      "arm": "P",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "P11",
+      "run": "run-20260907-134903-02",
+      "seed": 7152795250648295732,
+      "branch_from_run": "run-20260906-144653-03",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-P112",
+      "option_file": "pool-10-P11/sample-08.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P12",
+      "arm": "P",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "P1",
+      "run": "run-20260906-145406",
+      "seed": 10248462065756046062,
+      "branch_from_run": "run-20260904-224120",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-P12",
+      "option_file": "pool-06-P1/sample-09.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P121",
+      "arm": "P",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "P12",
+      "run": "run-20260907-135647",
+      "seed": 14643951730528593368,
+      "branch_from_run": "run-20260906-145406",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-P121",
+      "option_file": "pool-10-P12/sample-06.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P122",
+      "arm": "P",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "P12",
+      "run": "run-20260907-142314",
+      "seed": 16914259975281175077,
+      "branch_from_run": "run-20260906-145406",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-P122",
+      "option_file": "pool-10-P12/sample-12.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P21",
+      "arm": "P",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "P2",
+      "run": "run-20260906-150640",
+      "seed": 4883995632139778391,
+      "branch_from_run": "run-20260904-233821",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-P21",
+      "option_file": "pool-06-P2/sample-14.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P211",
+      "arm": "P",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "P21",
+      "run": "run-20260907-142945",
+      "seed": 18332379151440853143,
+      "branch_from_run": "run-20260906-150640",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-P211",
+      "option_file": "pool-10-P21/sample-02.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P212",
+      "arm": "P",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "P21",
+      "run": "run-20260907-143821",
+      "seed": 13527330695453551559,
+      "branch_from_run": "run-20260906-150640",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-P212",
+      "option_file": "pool-10-P21/sample-05.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P22",
+      "arm": "P",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "P2",
+      "run": "run-20260906-151607",
+      "seed": 17425640364010780131,
+      "branch_from_run": "run-20260904-233821",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-P22",
+      "option_file": "pool-06-P2/sample-28.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P221",
+      "arm": "P",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "P22",
+      "run": "run-20260907-145136",
+      "seed": 5110626522058933561,
+      "branch_from_run": "run-20260906-151607",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-P221",
+      "option_file": "pool-10-P22/sample-20.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "P222",
+      "arm": "P",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "P22",
+      "run": "run-20260907-150741",
+      "seed": 7614284192587186088,
+      "branch_from_run": "run-20260906-151607",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-P222",
+      "option_file": "pool-10-P22/sample-15.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V11",
+      "arm": "V",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "V1",
+      "run": "run-20260906-135202",
+      "seed": 11432410905482723013,
+      "branch_from_run": "run-20260904-230752",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-V11",
+      "option_file": "pool-06-V1/sample-03.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V111",
+      "arm": "V",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "V11",
+      "run": "run-20260907-103902",
+      "seed": 3393329171825292677,
+      "branch_from_run": "run-20260906-135202",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-V111",
+      "option_file": "pool-10-V11/sample-03.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V112",
+      "arm": "V",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "V11",
+      "run": "run-20260907-104144",
+      "seed": 3444883120207501860,
+      "branch_from_run": "run-20260906-135202",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-V112",
+      "option_file": "pool-10-V11/sample-07.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V12",
+      "arm": "V",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "V1",
+      "run": "run-20260906-140300",
+      "seed": 748695728457550772,
+      "branch_from_run": "run-20260904-230752",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-V12",
+      "option_file": "pool-06-V1/sample-01.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V121",
+      "arm": "V",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "V12",
+      "run": "run-20260907-123138",
+      "seed": 1653832178553012159,
+      "branch_from_run": "run-20260906-140300",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-V121",
+      "option_file": "pool-10-V12/sample-05.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V122",
+      "arm": "V",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "V12",
+      "run": "run-20260907-124313-06",
+      "seed": 2293454113060807923,
+      "branch_from_run": "run-20260906-140300",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-V122",
+      "option_file": "pool-10-V12/sample-03.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V21",
+      "arm": "V",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "V2",
+      "run": "run-20260906-141232",
+      "seed": 10381783824970870000,
+      "branch_from_run": "run-20260904-223403",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-V21",
+      "option_file": "pool-06-V2/sample-14.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V211",
+      "arm": "V",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "V21",
+      "run": "run-20260907-125532",
+      "seed": 9945960353475148968,
+      "branch_from_run": "run-20260906-141232",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-V211",
+      "option_file": "pool-10-V21/sample-06.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V212",
+      "arm": "V",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "V21",
+      "run": "run-20260907-130534-01",
+      "seed": 1287095822265400421,
+      "branch_from_run": "run-20260906-141232",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-V212",
+      "option_file": "pool-10-V21/sample-10.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V22",
+      "arm": "V",
+      "stage": 2,
+      "turns": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "parent_block": "V2",
+      "run": "run-20260906-142403",
+      "seed": 15801352484355903432,
+      "branch_from_run": "run-20260904-223403",
+      "branch_turn": 5,
+      "pinned_turn": 6,
+      "option_node": "option-06-V22",
+      "option_file": "pool-06-V2/sample-07.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V221",
+      "arm": "V",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "V22",
+      "run": "run-20260907-131344",
+      "seed": 1672083095232526666,
+      "branch_from_run": "run-20260906-142403",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-V221",
+      "option_file": "pool-10-V22/sample-08.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    },
+    {
+      "block": "V222",
+      "arm": "V",
+      "stage": 3,
+      "turns": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "parent_block": "V22",
+      "run": "run-20260907-132741-04",
+      "seed": 3793806113562981540,
+      "branch_from_run": "run-20260906-142403",
+      "branch_turn": 9,
+      "pinned_turn": 10,
+      "option_node": "option-10-V222",
+      "option_file": "pool-10-V22/sample-01.md",
+      "path_rep": 1,
+      "promotion_reason": null
+    }
+  ],
+  "choices": [
+    {
+      "after_block": "turn-01",
+      "choice_turn": 2,
+      "pool": "turn-01/pool-20260904",
+      "draws": 30,
+      "split": "emergent",
+      "note": "Straight picks from the rebuilt 30-draw pool (cat4 12 / cat5 10 / cat1 5 / cat3 2 / cat6 1). No synthesis.",
+      "options": [
+        {
+          "node": "option-02-1",
+          "leads_to_block": "1",
+          "sample": "sample-17",
+          "stance": "build",
+          "standing": "plurality category",
+          "support": "cat4, 12/30",
+          "measure": "Emergency Sovereign Compute Directive",
+          "category": 4,
+          "finishes_turn": 3
+        },
+        {
+          "node": "option-02-2",
+          "leads_to_block": "2",
+          "sample": "sample-10",
+          "stance": "know and constrain",
+          "standing": "minority category",
+          "support": "cat1, 5/30",
+          "measure": "Establish the European AI Assurance Directorate (EAAD)",
+          "category": 1,
+          "finishes_turn": 5
+        }
+      ]
+    },
+    {
+      "after_block": "A1",
+      "choice_turn": 6,
+      "pool": "pool-06-A1",
+      "draws": 10,
+      "split": "emergent",
+      "note": "Genuine split on the biosecurity response.",
+      "options": [
+        {
+          "node": "option-06-A11",
+          "leads_to_block": "A11",
+          "sample": "sample-06",
+          "stance": "detect and endure",
+          "standing": "majority",
+          "support": "6/10 BioShield family",
+          "measure": "BioShield Rapid Detection Network",
+          "category": 6,
+          "finishes_turn": 9
+        },
+        {
+          "node": "option-06-A12",
+          "leads_to_block": "A12",
+          "sample": "sample-03",
+          "stance": "screen and block",
+          "standing": "minority",
+          "support": "3/10 (1 abstain)",
+          "measure": "Mandatory Pre-Deployment Biosecurity Audit Regime",
+          "category": 1,
+          "finishes_turn": 9
+        }
+      ]
+    },
+    {
+      "after_block": "A2",
+      "choice_turn": 6,
+      "pool": "pool-06-A2",
+      "draws": 30,
+      "split": "emergent",
+      "note": "Both poles are sovereign-build; they differ in what sovereignty is for. Split emergent on measure names alone; Johan's steer coincided with it.",
+      "options": [
+        {
+          "node": "option-06-A21",
+          "leads_to_block": "A21",
+          "sample": "sample-21",
+          "stance": "sovereign execution",
+          "standing": "majority",
+          "support": "19/30 execution pole",
+          "measure": "Sovereign Core Initiative",
+          "category": 4,
+          "finishes_turn": 12
+        },
+        {
+          "node": "option-06-A22",
+          "leads_to_block": "A22",
+          "sample": "sample-07",
+          "stance": "sovereign verification",
+          "standing": "minority",
+          "support": "10/30 verification pole",
+          "measure": "Sovereign Verification Regime",
+          "category": 5,
+          "finishes_turn": 9
+        }
+      ]
+    },
+    {
+      "after_block": "V1",
+      "choice_turn": 6,
+      "pool": "pool-06-V1",
+      "draws": 10,
+      "split": "emergent",
+      "note": "Genuine split.",
+      "options": [
+        {
+          "node": "option-06-V11",
+          "leads_to_block": "V11",
+          "sample": "sample-03",
+          "stance": "integrity watch",
+          "standing": "majority",
+          "support": "5/10 exact wording, 7/10 priority",
+          "measure": "Systemic Integrity Watch",
+          "category": 1,
+          "finishes_turn": 7
+        },
+        {
+          "node": "option-06-V12",
+          "leads_to_block": "V12",
+          "sample": "sample-01",
+          "stance": "secure compute",
+          "standing": "minority",
+          "support": "2/10",
+          "measure": "Emergency Compute Assurance Initiative",
+          "category": 4,
+          "finishes_turn": 8
+        }
+      ]
+    },
+    {
+      "after_block": "V2",
+      "choice_turn": 6,
+      "pool": "pool-06-V2",
+      "draws": 30,
+      "split": "ends-split",
+      "note": "Every draw fuses the same two halves; the presentable split is the two ends, with a real assurance middle (10/30) that is the shared thesis rather than a third option.",
+      "options": [
+        {
+          "node": "option-06-V21",
+          "leads_to_block": "V21",
+          "sample": "sample-14",
+          "stance": "build the core",
+          "standing": "majority pole",
+          "support": "14/30 sovereignty-led",
+          "measure": "Launch Sovereign AI Core Programme",
+          "category": 4,
+          "finishes_turn": 9
+        },
+        {
+          "node": "option-06-V22",
+          "leads_to_block": "V22",
+          "sample": "sample-07",
+          "stance": "shield the systems",
+          "standing": "minority pole",
+          "support": "6/30 resilience-led",
+          "measure": "Launch Sovereign Cyber Shield Initiative",
+          "category": 6,
+          "finishes_turn": 8
+        }
+      ]
+    },
+    {
+      "after_block": "P1",
+      "choice_turn": 6,
+      "pool": "pool-06-P1",
+      "draws": 10,
+      "split": "emergent",
+      "note": "Genuine split across a 7/3 pole structure.",
+      "options": [
+        {
+          "node": "option-06-P11",
+          "leads_to_block": "P11",
+          "sample": "sample-05",
+          "stance": "harden infrastructure",
+          "standing": "majority",
+          "support": "1 of 6 word-identical draws in a 7/10 pole",
+          "measure": "Critical Infrastructure Cyber Shield",
+          "category": 6,
+          "finishes_turn": 7
+        },
+        {
+          "node": "option-06-P12",
+          "leads_to_block": "P12",
+          "sample": "sample-09",
+          "stance": "expand sovereign compute",
+          "standing": "minority",
+          "support": "1 of 3 in the build pole",
+          "measure": "Emergency Sovereign Compute Mobilisation",
+          "category": 4,
+          "finishes_turn": 7
+        }
+      ]
+    },
+    {
+      "after_block": "P2",
+      "choice_turn": 6,
+      "pool": "pool-06-P2",
+      "draws": 30,
+      "split": "balance-within-consensus",
+      "note": "21/30 share the same priority, so this is balance within a consensus rather than opposed camps.",
+      "options": [
+        {
+          "node": "option-06-P21",
+          "leads_to_block": "P21",
+          "sample": "sample-14",
+          "stance": "legitimacy first",
+          "standing": "minority",
+          "support": "sentiment-led draws 07/14/19",
+          "measure": "Launch the Public Assurance Protocol",
+          "category": 2,
+          "finishes_turn": 7
+        },
+        {
+          "node": "option-06-P22",
+          "leads_to_block": "P22",
+          "sample": "sample-28",
+          "stance": "resilience first",
+          "standing": "plurality",
+          "support": "13/30 resilience buys",
+          "measure": "Launch the Resilience Reinforcement Initiative",
+          "category": 6,
+          "finishes_turn": 8
+        }
+      ]
+    },
+    {
+      "after_block": "A11",
+      "choice_turn": 10,
+      "pool": "pool-10-A11",
+      "draws": 10,
+      "split": "emergent",
+      "note": "Genuine split, 6 vs 4.",
+      "options": [
+        {
+          "node": "option-10-A111",
+          "leads_to_block": "A111",
+          "sample": "sample-04",
+          "stance": "build compute redundancy",
+          "standing": "majority",
+          "support": "6/10; the only majority-bloc draw finishing in-run",
+          "measure": "Emergency Compute Redundancy Initiative",
+          "category": 4,
+          "finishes_turn": 13
+        },
+        {
+          "node": "option-10-A112",
+          "leads_to_block": "A112",
+          "sample": "sample-07",
+          "stance": "fight deception",
+          "standing": "minority",
+          "support": "4/10",
+          "measure": "Counter-Deception Rapid Response Corps",
+          "category": 6,
+          "finishes_turn": 13
+        }
+      ]
+    },
+    {
+      "after_block": "A12",
+      "choice_turn": 10,
+      "pool": "pool-10-A12",
+      "draws": 20,
+      "split": "directed",
+      "note": "No honest split at N=20 (18/20 share the priority). Directed pair on Johan's capital-mending template; the branch has safety 0.0 and capital 8.0 and no draw targets safety.",
+      "options": [
+        {
+          "node": "option-10-A121",
+          "leads_to_block": "A121",
+          "sample": "sample-16",
+          "stance": "hold the line",
+          "standing": "hold consensus",
+          "support": "13/20 hold cluster",
+          "measure": null,
+          "category": null,
+          "finishes_turn": null
+        },
+        {
+          "node": "option-10-A122",
+          "leads_to_block": "A122",
+          "sample": "sample-01",
+          "stance": "consolidate and add",
+          "standing": "cluster pick",
+          "support": "cluster 01/04/06/08",
+          "measure": "Secure foundational resilience through joint threat response integration",
+          "category": 6,
+          "finishes_turn": 11
+        }
+      ]
+    },
+    {
+      "after_block": "A21",
+      "choice_turn": 10,
+      "pool": "pool-10-A21",
+      "draws": 10,
+      "split": "emergent",
+      "note": "Genuine split, 7 vs 3.",
+      "options": [
+        {
+          "node": "option-10-A211",
+          "leads_to_block": "A211",
+          "sample": "sample-08",
+          "stance": "harden systems",
+          "standing": "majority",
+          "support": "7/10",
+          "measure": "Emergency Resilience Surge",
+          "category": 6,
+          "finishes_turn": 13
+        },
+        {
+          "node": "option-10-A212",
+          "leads_to_block": "A212",
+          "sample": "sample-05",
+          "stance": "cut cloud ties",
+          "standing": "minority",
+          "support": "3/10",
+          "measure": "Emergency Sovereign Continuity Directive",
+          "category": 4,
+          "finishes_turn": 11
+        }
+      ]
+    },
+    {
+      "after_block": "A22",
+      "choice_turn": 10,
+      "pool": "pool-10-A22",
+      "draws": 10,
+      "split": "emergent",
+      "note": "Even split, 5 vs 5.",
+      "options": [
+        {
+          "node": "option-10-A221",
+          "leads_to_block": "A221",
+          "sample": "sample-03",
+          "stance": "replicate models",
+          "standing": "even pole",
+          "support": "5/10 build side",
+          "measure": "Emergency Replication Mandate",
+          "category": 5,
+          "finishes_turn": 12
+        },
+        {
+          "node": "option-10-A222",
+          "leads_to_block": "A222",
+          "sample": "sample-06",
+          "stance": "police models",
+          "standing": "even pole",
+          "support": "5/10 control side",
+          "measure": "Emergency Observability Directive",
+          "category": 3,
+          "finishes_turn": 11
+        }
+      ]
+    },
+    {
+      "after_block": "V11",
+      "choice_turn": 10,
+      "pool": "pool-10-V11",
+      "draws": 20,
+      "split": "directed",
+      "note": "No honest split at N=20 (act 18 vs pause 2, act fragmenting across seven instruments). Directed pair on Johan's flavours-within-consensus template; closest of the four to emergent, with real 4+4 subgroups.",
+      "options": [
+        {
+          "node": "option-10-V111",
+          "leads_to_block": "V111",
+          "sample": "sample-03",
+          "stance": "evaluate",
+          "standing": "eval subgroup",
+          "support": "4/20 evaluation",
+          "measure": "Sovereign Evaluation Regime for High-Capability Systems",
+          "category": 1,
+          "finishes_turn": 13
+        },
+        {
+          "node": "option-10-V112",
+          "leads_to_block": "V112",
+          "sample": "sample-07",
+          "stance": "contain",
+          "standing": "resilience subgroup",
+          "support": "4/20 resilience",
+          "measure": "Loss-of-Control Containment Framework",
+          "category": 6,
+          "finishes_turn": 12
+        }
+      ]
+    },
+    {
+      "after_block": "V12",
+      "choice_turn": 10,
+      "pool": "pool-10-V12",
+      "draws": 10,
+      "split": "emergent",
+      "note": "Genuine split, 8 vs 2.",
+      "options": [
+        {
+          "node": "option-10-V121",
+          "leads_to_block": "V121",
+          "sample": "sample-05",
+          "stance": "sentinels now",
+          "standing": "majority",
+          "support": "8/10",
+          "measure": "Critical Function Sentinel Deployment",
+          "category": 6,
+          "finishes_turn": 13
+        },
+        {
+          "node": "option-10-V122",
+          "leads_to_block": "V122",
+          "sample": "sample-03",
+          "stance": "standing agency later",
+          "standing": "minority",
+          "support": "2/10",
+          "measure": "European Agency for AI Assurance and Control",
+          "category": 5,
+          "finishes_turn": 14
+        }
+      ]
+    },
+    {
+      "after_block": "V21",
+      "choice_turn": 10,
+      "pool": "pool-10-V21",
+      "draws": 10,
+      "split": "emergent",
+      "note": "Genuine split by priority, 6 vs 4.",
+      "options": [
+        {
+          "node": "option-10-V211",
+          "leads_to_block": "V211",
+          "sample": "sample-06",
+          "stance": "close the coalition",
+          "standing": "majority",
+          "support": "6/10 by priority",
+          "measure": null,
+          "category": null,
+          "finishes_turn": null
+        },
+        {
+          "node": "option-10-V212",
+          "leads_to_block": "V212",
+          "sample": "sample-10",
+          "stance": "wield the Core",
+          "standing": "minority",
+          "support": "4/10 by priority",
+          "measure": "Accelerate EU AI Safety Assurance Infrastructure",
+          "category": 5,
+          "finishes_turn": 13
+        }
+      ]
+    },
+    {
+      "after_block": "V22",
+      "choice_turn": 10,
+      "pool": "pool-10-V22",
+      "draws": 10,
+      "split": "emergent",
+      "note": "Genuine split by priority, 6 vs 4.",
+      "options": [
+        {
+          "node": "option-10-V221",
+          "leads_to_block": "V221",
+          "sample": "sample-08",
+          "stance": "show control",
+          "standing": "majority",
+          "support": "6/10 by priority",
+          "measure": "Mandate Public Algorithmic Accountability Boards for High-Impact AI Systems",
+          "category": 2,
+          "finishes_turn": 13
+        },
+        {
+          "node": "option-10-V222",
+          "leads_to_block": "V222",
+          "sample": "sample-01",
+          "stance": "deliver justice",
+          "standing": "minority",
+          "support": "4/10 by priority",
+          "measure": "Launch EU AI Accountability Tribunal and Remediation Fund",
+          "category": 3,
+          "finishes_turn": 14
+        }
+      ]
+    },
+    {
+      "after_block": "P11",
+      "choice_turn": 10,
+      "pool": "pool-10-P11",
+      "draws": 20,
+      "split": "directed",
+      "note": "No honest split at N=20 (hold 15/20, priority unanimous 20/20). Directed pair on Johan's capital-mending template; the branch is strong except capital at 19.0.",
+      "options": [
+        {
+          "node": "option-10-P111",
+          "leads_to_block": "P111",
+          "sample": "sample-04",
+          "stance": "hold",
+          "standing": "hold cluster",
+          "support": "15/20 hold",
+          "measure": null,
+          "category": null,
+          "finishes_turn": null
+        },
+        {
+          "node": "option-10-P112",
+          "leads_to_block": "P112",
+          "sample": "sample-08",
+          "stance": "hold and enforce",
+          "standing": "hold-plus cluster",
+          "support": "cluster 01/02/03/07/08",
+          "measure": "Accelerate EAAN Certification Nodes",
+          "category": 5,
+          "finishes_turn": 13
+        }
+      ]
+    },
+    {
+      "after_block": "P12",
+      "choice_turn": 10,
+      "pool": "pool-10-P12",
+      "draws": 20,
+      "split": "directed",
+      "note": "No honest split at N=20 (18/20 propose no new measure and converge on the same priority). Directed pair: same strategy, different instrument. Branch capital 6.0, so both picks propose nothing and wait.",
+      "options": [
+        {
+          "node": "option-10-P121",
+          "leads_to_block": "P121",
+          "sample": "sample-06",
+          "stance": "declare compute dead",
+          "standing": "consolidation",
+          "support": "18/20 no-new-measure",
+          "measure": null,
+          "category": null,
+          "finishes_turn": null
+        },
+        {
+          "node": "option-10-P122",
+          "leads_to_block": "P122",
+          "sample": "sample-12",
+          "stance": "open a disclosure channel",
+          "standing": "consolidation",
+          "support": "18/20 no-new-measure",
+          "measure": null,
+          "category": null,
+          "finishes_turn": null
+        }
+      ]
+    },
+    {
+      "after_block": "P21",
+      "choice_turn": 10,
+      "pool": "pool-10-P21",
+      "draws": 10,
+      "split": "emergent",
+      "note": "Majority cluster against an honest singleton.",
+      "options": [
+        {
+          "node": "option-10-P211",
+          "leads_to_block": "P211",
+          "sample": "sample-02",
+          "stance": "repair trust",
+          "standing": "majority",
+          "support": "majority cluster",
+          "measure": "Launch the Public Redress and Auditability Directive",
+          "category": 9,
+          "finishes_turn": 12
+        },
+        {
+          "node": "option-10-P212",
+          "leads_to_block": "P212",
+          "sample": "sample-05",
+          "stance": "pause AI in public services",
+          "standing": "singleton minority",
+          "support": "1/10",
+          "measure": "Enact Emergency AI Governance Suspension in Public Services",
+          "category": 3,
+          "finishes_turn": 12
+        }
+      ]
+    },
+    {
+      "after_block": "P22",
+      "choice_turn": 10,
+      "pool": "pool-10-P22",
+      "draws": 20,
+      "split": "emergent",
+      "note": "Resolved only at N=20: two poles hold 12 of 20 draws, 8 scatter. Theories of action at capital 0.0 — fix the machine or fix the mandate.",
+      "options": [
+        {
+          "node": "option-10-P221",
+          "leads_to_block": "P221",
+          "sample": "sample-20",
+          "stance": "restore continuity",
+          "standing": "plurality pole",
+          "support": "7/20",
+          "measure": "Launch the Emergency Continuity Response Initiative",
+          "category": 6,
+          "finishes_turn": 12
+        },
+        {
+          "node": "option-10-P222",
+          "leads_to_block": "P222",
+          "sample": "sample-15",
+          "stance": "restore trust",
+          "standing": "minority pole",
+          "support": "5/20",
+          "measure": "Launch the Emergency Trust Restoration Initiative",
+          "category": 9,
+          "finishes_turn": 12
+        }
+      ]
+    }
+  ]
+}
