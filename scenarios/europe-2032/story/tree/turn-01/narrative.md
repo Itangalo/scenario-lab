@@ -27,14 +27,6 @@ Two programmes are already running when you take the file. Both were decided bef
 
 You are the Union's decision on artificial intelligence — Commission, Council and Parliament acting as one hand, for as long as they can be made to. You hold the file until the end of 2032.
 
-Every six months you do three things. You name what you are committing to for the next two years. You may start one new measure, and only one, because the machinery will not carry more. And you name a priority: the single thing you will spend your standing on when the Council resists, which it will.
-
 Nothing you start arrives quickly. Drafting, negotiating and standing up an institution take between six months and eighteen; urgency does not shorten them; compute takes years. You will be judged on outcomes that land long after you chose.
-
-## What you cannot know
-
-Competent people read the same evidence three ways. As compounding acceleration, with a machine that improves itself in sight. As capability that goes superhuman only where a machine can check its own answers, and stays ordinary elsewhere. As a plateau whose cost per increment is already steep enough to flatten it.
-
-Nothing available to you in 2026 decides between them, and the evidence that would decide arrives well after the decisions that depend on it. You will not be told which world this is. You will find out the way the Union would — from what happens next.
 
 Name your two-year commitment now.
