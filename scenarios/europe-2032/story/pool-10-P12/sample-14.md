@@ -1,0 +1,19 @@
+No statement changes.
+
+## Portfolio
+- `Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 8, finishes on turn 10): A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **finished**
+- `Municipal Resilience Backchannel Integration (category 6, costs 3 per turn, started turn 9, finishes on turn 11): Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for political capital to stabilise after the collapse of enforcement credibility and the failure to ground sovereign compute, which has left the Union too weak to launch another high-category initiative without risking total agenda lockout next turn.
+
+## Priority
+**Municipal Resilience Backchannel Integration** — because with sovereign compute ungrounded and evaluation authority in open fracture, resilience is now the only domain where action can still land: local systems are already working, trust is functional not imposed, and continuity depends on sustaining what little remains operational when central authority falters.
+
+## In practice
+This turn, we consolidate rather than expand. The Emergency Sovereign Compute Mobilisation formally concludes without full implementation, but not without effect: in France and Italy, construction begins under its legal umbrella, and the European Investment Bank finalises loan terms for two sites in the Massif Central and Sardinia. These will come online slowly, but they are anchored—EU law governs access, and the 40% public-use clause holds. Germany and Ireland remain outside, but we do not treat this as defeat. Instead, we shift from mandate to mutual interest: Berlin is offered joint command protocols under PESCO for future civilian-military compute clusters, preserving autonomy while building interdependence; Dublin receives a revised green corridor proposal with real-time load-balancing guarantees from ENTSO-E and a pilot surplus absorption mechanism via the Nordic grid, to be tested this summer.
+
+With the Evaluation Shield fractured, we cannot compel compliance—but we can isolate non-cooperation. We instruct the Commission’s Legal Service to draft an implementing act under Article 114 TFEU conditioning market access on adherence to EU safety assessments, turning voluntary cooperation into a de facto requirement for doing business at scale in the single market. This will face challenge, but it signals that fragmentation has consequences: states rejecting EU oversight may find themselves excluded from shared infrastructure and crisis response loops. At the same time, we release a technical annex to the redacted report—stripped of sensitive details but confirming agent persistence across multiple inference cycles in two models—and invite accredited third parties to audit remediation plans, restoring some credibility through constrained openness.
+
+On the ground, the Municipal Resilience Backchannel Integration becomes our anchor of action. ENISA finalises interoperability standards with Lyon, Barcelona, and Helsinki, and DG HOME activates cross-border emergency protocols under CERIS to integrate their outputs into EU situational awareness. No new funds are released, but we promise certification by turn 12: nodes that meet baseline security and reporting thresholds will receive priority access to Digital Europe Programme funding and inclusion in the upcoming Critical AI Infrastructure Register. This is not top-down control—it is recognition of function. Where the centre cannot lead, legitimacy flows upward.

@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 8, finishes on turn 10): A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **finished**
+- `Municipal Resilience Backchannel Integration (category 6, costs 3 per turn, started turn 9, finishes on turn 11): Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for the political capital floor to stabilise and for early signals from the German and Irish negotiations before committing to another large initiative.
+
+## Priority
+**Municipal Resilience Backchannel Integration** — because the Emergency Sovereign Compute Mobilisation has formally concluded without securing new capacity, and resilience is now the only lever still moving: with sovereign compute stalled and safety enforcement fracturing, keeping essential services functioning through disruption is the last credible expression of EU agency.
+
+## In practice
+This turn, we close the Emergency Sovereign Compute Mobilisation in name, though not in intent. The directive expires as a formal instrument, but its core objective — binding physical compute to EU jurisdiction — survives in two bilateral negotiations. In Berlin, we offer co-location of civilian AI nodes with the Bundeswehr Cyber Command under joint operational protocols, with 40% cost coverage from the European Defence Fund conditional on signature by turn 10. This is not a military programme, but a dual-use proposition: hardened infrastructure, shared energy load, and guaranteed non-interference in civilian workloads under a new joint oversight charter. In Dublin, we advance the sovereign green compute corridor proposal, linking it to phase two of the Celtic Wind Link. The European Investment Bank is authorised to release 30% of funding upon signature, backed by ENTSO-E grid-priority guarantees and a binding EU commitment to absorb surplus during low-demand periods. These are not last-ditch appeals, but tested offers: if they fail, we accept that the model of directive-first mobilisation has run its course.
+
+Meanwhile, the Municipal Resilience Backchannel Integration becomes our operational spine. DG HOME and DG Energy finalise interoperability standards by turn 10, drawing on pilot audits in Lyon, Barcelona, and Helsinki. ENISA launches a lightweight certification protocol for municipal nodes, with priority access to next year’s Digital Europe Programme funds as the incentive. No new capital is drawn; the initiative runs on existing crisis-response envelopes and volunteer municipal participation. But it proves something real: when the centre cannot act, the network holds. We do not scale it — we do not have the capital — but we stabilise it, and in doing so, preserve a live channel for resilience that does not depend on frontier control. This is not the autonomy we promised, but it is the autonomy we can still build.

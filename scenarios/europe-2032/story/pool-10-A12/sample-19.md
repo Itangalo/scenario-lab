@@ -1,0 +1,26 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Lead the world in high-assurance, sovereign AI by proving that auditable systems can deliver essential strategic capability where opaque models cannot be trusted — starting with biosecurity, energy, and public health
+- Grounds: The terminal surge to ai_capability 90.0 and the loss_of_control_incident confirm that brute capability without control is not just dangerous—it is strategically useless. The Open Science Resilience Initiative has demonstrated early success with open protein folding models, showing that verifiable, slower-but-safer AI can gain trust in high-consequence domains. This is no longer about matching the frontier; it is about redefining it. Sovereignty now means being the power that can act with certainty because it understands its tools. The new commitment reflects that shift: we are not chasing raw power, but proving that assurance is the foundation of both safety and agency.
+
+## Portfolio
+- `Open Science Resilience Initiative (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — in flight
+
+## New measure
+**Secure Trusted AI in Critical Infrastructure Procurement**  
+Mandate that all AI systems used in EU-critical infrastructure—energy, water, health, transport—must be subject to public audit of reasoning traces, weight provenance, and real-time behaviour logging, with fallback protocols activated if interpretability thresholds are breached.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: small`  
+`Finishes on turn: 11`  
+`Targeted effect:` Increase ai_safety by 5–8 points; reinforce eu_ai_sovereignty by anchoring control in EU jurisdiction; signal to markets that trustworthiness, not just speed, defines value  
+`Applies to:` EU member states, EU agencies, and private operators of critical infrastructure
+
+## Priority
+**Open Science Resilience Initiative** — because the loss_of_control_incident and the stalled capital demand proof that the EU can deliver capability that is not only safe but *strategically credible*; this initiative is our only path to demonstrating that auditable AI can run essential systems when the frontier cannot.
+
+## In practice
+This turn, we are accelerating the operationalisation of the Open Science Resilience Initiative by finalising binding mandates for the three ready hubs in Germany, France, and the Netherlands, while offering technical assistance to Italy and Sweden to unlock their stalled allocations. The Commission, through DG CONNECT and DG SANTE, is co-locating each hub with a national biosecurity agency and integrating them into the Digital Innovation Hub network to ensure rapid feedback into public operations. Funding flows from redirected Horizon Europe budgets (€2.8bn) and the €1.4bn Eurobond under ESM oversight, structured as recoverable grants to preserve fiscal discipline. We are also embedding the first cohort of vetted researchers into the protein folding pilot, with results expected by Q3 2031—timing that could allow us to scale to pandemic response models before year-end.
+
+Simultaneously, we are responding to the loss_of_control_incident and eu_frontier_access_denied by launching a fast-track legislative process under Article 114 TFEU to establish mandatory auditability standards for AI in critical infrastructure. The proposal, to be tabled by the Commission in April, will require all AI systems in energy, health, and transport to maintain human-readable reasoning logs, disclose model provenance, and activate fallback protocols if interpretability drops below defined thresholds. This is not a ban on frontier models—it is a condition of operation in EU jurisdiction. ENISA and ECDC are drafting technical annexes, while the Council’s Competitiveness Working Party is being briefed to prevent fragmentation. The measure is designed to be narrow but binding, leveraging the credibility of the Open Science breakthroughs to shift the default from “trust the output” to “verify the process.”
+
+We are also engaging the joint_threat_response invitation: the EU is accepting the offer of real-time telemetry sharing in the new joint cyber command, committing Europol and ENISA to full integration by June. This will raise resilience by enabling faster attribution and coordinated containment, but we are making participation conditional on reciprocal access to EU-developed interpretability tools—turning our technical niche into diplomatic leverage. The election_annulled event is being addressed through a parallel, low-visibility effort with the European Centre for Electoral Support to audit AI-mediated information flows in upcoming national elections, though this remains below the threshold for a new measure. Public sentiment remains fragile, and we are avoiding broad restrictions that could be read as panic; instead, we are framing auditability as a pro-innovation safeguard—ensuring that AI remains governable, and therefore investable.

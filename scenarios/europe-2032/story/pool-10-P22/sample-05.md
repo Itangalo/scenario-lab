@@ -1,25 +1,25 @@
 No statement changes.
 
 ## Portfolio
-``Establish the Continuity Assurance Framework (category 6, costs 3 per turn, started turn 10, finishes on turn 11): A binding regime requiring all critical public AI systems to maintain validated, air-gapped fallback nodes capable of autonomous operation during service denial, with central certification and failover testing every quarter``
+``Establish the Continuity Assurance Framework (category 6, costs 3 per turn, started turn 9, finishes on turn 11): A binding regime requiring all critical public AI systems to maintain validated, air-gapped fallback nodes capable of autonomous operation during service denial, with central certification and failover testing every quarter`` — **finished**  
+``Launch the Sovereign AI Core Programme (SACP) (category 4, costs 3 per turn, started turn 3, finishes on turn 8): Establish a publicly governed, EU-operated AI development and deployment stack — from training infrastructure to agent deployment — capable of reaching 60.0 by turn 8, with full weight control and auditability`` — **finished**  
+``Launch the Resilience Reinforcement Initiative (category 6, costs 3 per turn, started turn 6, finishes on turn 8): A targeted surge to harden patching velocity, incident response, and bio-detection across critical sectors, with mandatory AI-assisted monitoring and cross-border failover protocols`` — **finished**
 
 ## New measure
-**Measure:** Launch the Emergency Sovereign Compute Surge  
-We are mobilizing emergency procurement and fast-tracked permitting to deploy 20,000 additional state-of-the-art AI training chips in EU-secured facilities within 12 months, prioritizing energy resilience and legal enforceability of access.
+**Measure:** Enact Emergency Sovereign Access Guarantee  
+A binding commitment to ensure all member states retain uninterrupted access to at least one sovereign AI stack at or above 60.0 capability during any disruption, enforced through mandatory load-sharing on EU-secured infrastructure and emergency compute reservations.
 
 `Category: 4 (Sovereignty and industrial capacity)`  
-`Size: large`  
-`Finishes on turn: 13`  
-`Targeted effect:` Increase eu_ai_sovereignty by 15–20 points by materially expanding EU-controlled compute; create a credible fallback path for sovereign model development if foreign supply chains fracture completely; signal irreversible commitment to strategic autonomy  
-`Applies to:` European High-Performance Computing Joint Undertaking, national energy regulators, European Investment Bank, selected member states hosting infrastructure
+`Size: small`  
+`Finishes on turn: 12`  
+`Targeted effect:` Increase eu_ai_sovereignty by 10–15 points by guaranteeing access even during cutoffs or internal failures; reduce reliance on non-sovereign systems and close enforcement gap in the no_more_free_rides commitment  
+`Applies to:` Member states, European High-Performance Computing Joint Undertaking (EuroHPC JU), EAAD, national digital agencies
 
 ## Priority
-**Priority:** Launch the Emergency Sovereign Compute Surge  
-We are prioritizing this because the Continuity Assurance Framework is failing where it matters most — not due to lack of will, but because we cannot guarantee the sovereign stack it depends on will remain functional under sustained pressure, and with political capital at zero, only a dramatic signal of capability can restore credibility.
+**Priority:** Enact Emergency Sovereign Access Guarantee  
+We are prioritizing this because the Continuity Assurance Framework revealed a fatal asymmetry: we can mandate fallbacks, but we cannot deliver them if the sovereign stack itself fails or is overloaded — and with political capital at zero, we cannot afford another crisis that exposes EU impotence.
 
 ## In practice
-This turn, we are acting on a truth no one wanted to name: continuity without sovereign capability is ritual, not reality. The Continuity Assurance Framework was meant to hardwire resilience into public AI — but the drills in Thessaloniki exposed what we already knew in silence. Our air-gapped nodes run on stacks we do not control, hosted on infrastructure someone else can throttle. When the cyber_major_incident hit, the fallbacks activated — but degraded rapidly, unable to sustain coordination under load. The EAAD’s baseline of 55.0 is now barely sufficient, and we have no sovereign path to maintain it.
+The cyber_major_incident this turn was not merely an attack — it was a stress test we failed. A coordinated ransomware sweep, model-generated and self-propagating, crippled regional health registries in three member states. The EAAD activated air-gapped nodes under the Continuity Assurance Framework, but in two capitals, the fallback systems failed to initialize — not from sabotage, but from configuration drift and unpatched dependencies. The lights came back on, but not through our design. The sovereign stack, already strained, buckled under emergency demand. We have continuity on paper, but not in metal.
 
-So we are acting outside the normal rhythm of industrial policy. Using Article 122 TFEU again, we are invoking exceptional circumstances to launch the Emergency Sovereign Compute Surge — a 12-month sprint to deploy 20,000 next-generation AI training chips on EU soil, with binding access guarantees enforceable under EU law. The EIB is releasing €7.8bn in emergency financing, matched by national co-investment from Germany, France, and Poland. We are fast-tracking permitting through the European Commission’s newly empowered Infrastructure Task Force, bypassing national bottlenecks where necessary. Energy allocation is being secured through binding agreements with national grids, prioritizing geothermal and nuclear-powered sites to ensure long-term operability under crisis conditions.
-
-Resistance is fierce. Two member states still refuse central certification under the Continuity Framework, and now they call this surge a "brinkmanship provocation." But we are not asking for permission — we are executing a survival imperative. The chips will be secured under joint EU-state ownership, with operational control vested in a newly reinforced EAAD command unit. This is not about catching up. It is about proving that the Union can still act — and that when the next shock comes, our systems will not just fail over, but endure.
+We are now acting to guarantee access, not just design for it. Under Article 122 TFEU and the revised EuroHPC Regulation, we are enacting an Emergency Sovereign Access Guarantee: a binding obligation that no member state shall be left without access to a sovereign AI stack at or above 60.0 during any disruption. EuroHPC JU will designate 30% of its next-generation compute capacity as emergency reserve, allocated dynamically by the EAAD based on threat level and operational readiness. Member states must either operate compliant sovereign nodes or subscribe to the EU’s central fallback pool — no third option. We are releasing €1.8bn from cohesion funds to support migration, but this time with teeth: non-compliant states lose 50% of digital infrastructure funding until certified. Resistance in two capitals remains, but we are offering a 12-month grace period conditioned on verifiable progress — not sovereignty waiver, but shared burden. This is not austerity — it is the price of remaining a Union when the next wave hits.

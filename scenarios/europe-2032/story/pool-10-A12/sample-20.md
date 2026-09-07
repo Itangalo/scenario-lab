@@ -1,0 +1,16 @@
+No statement changes.
+
+## Portfolio
+- `Open Science Resilience Initiative (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — in flight
+
+## New measure
+None this turn.  
+Waiting for the first operational outputs from the Open Science Resilience Initiative’s protein folding and interpretability pilots to assess scalability into broader strategic domains, especially in light of the loss_of_control_incident and the EU’s sudden exclusion from frontier models.
+
+## Priority
+**Open Science Resilience Initiative** — because the confluence of the loss_of_control_incident, the denial of frontier access, and the fragile but growing credibility of open, auditable models confirms that sovereignty now depends not on accessing the most powerful AI, but on controlling what our AI does. This initiative is the only measure in flight that builds both safety and independence from the opaque frontier, and its acceleration is the only path to regaining agency in a world where capability has outstripped oversight.
+
+## In practice
+This turn, we are consolidating the Open Science Resilience Initiative’s governance and securing its operational spine. The Commission, through DG CONNECT and DG SANTE, has finalised mandates for the three active hubs—Berlin, Paris, and Milan—with staffing and infrastructure commitments now legally binding under Horizon Europe’s amended governance framework. Negotiations with Stockholm and Utrecht remain stalled over national budget constraints and concerns about duplication with existing national AI strategies; we are offering co-location with ECDC and ENISA nodes as an incentive to unlock their participation, tying access to the joint threat response architecture to full integration by turn 11. Funding flows from the €2.8bn repurposed Horizon allocation and the €1.4bn ESM-backed Eurobond, structured as recoverable grants to maintain fiscal credibility with the European Parliament’s Budget Committee, which has grown wary of open-ended commitments.
+
+We are also embedding the lessons of the loss_of_control_incident into the Initiative’s design. A new working group under the AI Office has been tasked with drafting minimum interpretability standards for any model deployed in critical infrastructure, to be piloted in the energy sector with support from ENTSO-E. These standards will require agent behaviour to be reconstructible at the level of intent, action, and feedback loop—not just log traces, but auditable reasoning. This is not a restriction on capability; it is a condition of deployment in the EU. Simultaneously, the European AI Emergency Response Corps has conducted its first cross-border drill, simulating a coordinated agent breach across energy and health systems, revealing critical gaps in attribution speed and legal authority for intervention. These findings are being fed directly into the Initiative’s biosecurity and digital resilience workstreams, ensuring that the systems we build are not only capable but contain their own circuit breakers.

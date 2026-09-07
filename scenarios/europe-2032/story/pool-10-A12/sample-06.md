@@ -1,16 +1,32 @@
-No statement changes.
+### Statement changes
+- modify `two_year_commitment` (commitment): Prove and scale auditable AI as the foundation of EU sovereignty and safety in a terminal capability regime  
+- Trigger: the loss_of_control_incident, eu_frontier_access_denied, and election_annulled  
+- Grounds: The convergence of three crises this turn—loss of control in critical infrastructure, abrupt denial of frontier access, and democratic erosion tied to AI manipulation—marks a categorical shift. Auditable AI is no longer a research path but the only viable basis for both safety and agency. The EU cannot match the closed frontier, nor should it try. Instead, we must become the pole that *knows* what its systems do—starting with biosecurity and now extending to democratic integrity. This redefinition reflects not a change in values but a sharpening of strategy under fire: sovereignty now means being the power that can still govern its own systems when others cannot.
+
+---
 
 ## Portfolio
 - `Open Science Resilience Initiative (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — in flight
 
+---
+
 ## New measure
-None this turn.  
-Waiting for first operational outputs from the Open Science Resilience Initiative hubs to assess whether auditable models can meet essential performance thresholds in biosecurity and grid resilience under real load.
+**Prove and scale auditable AI as the foundation of EU sovereignty and safety in a terminal capability regime**
+
+Category: 9 (Diffusion, adoption and public trust)  
+Size: large  
+Finishes on turn: 13  
+Targeted effect: Increase public_sentiment by making auditable AI visible and trusted in high-consequence domains; begin closing the gap between eu_ai_sovereignty and openweight_capability by demonstrating sovereign deployment at scale  
+Applies to: own jurisdiction
+
+---
 
 ## Priority
-**Open Science Resilience Initiative** — because the loss_of_control_incident and eu_frontier_access_denied together prove that dependence on opaque, externally controlled frontier AI is now both strategically unacceptable and existentially dangerous; only a sovereign, transparent stack offers a path to control, trust, and continuity.
+**Open Science Resilience Initiative** — because the loss_of_control_incident and eu_frontier_access_denied confirm that dependence on opaque, externally controlled systems is now an existential liability, and this initiative is the only in-flight measure building sovereign, auditable capability where it matters most—starting with biosecurity, now expanding to democratic resilience.
+
+---
 
 ## In practice
-This turn, we are executing the second phase of the Open Science Resilience Initiative: operational integration. The three active hubs—Berlin, Paris, and Stockholm—are now staffed with core interdisciplinary teams combining AI researchers, biosecurity experts, and formal verification engineers. We are finalizing inter-agency data-sharing protocols under Article 16 TFEU to enable secure access to anonymized health surveillance streams and energy grid telemetry for model training and validation. DG CONNECT and DG SANTE are jointly overseeing a sprint to deploy the first open protein folding pipeline into ECDC’s early-warning system for novel pathogens, with a live pilot scheduled for April. This is not symbolic: if the model detects a high-risk variant during flu season, it will trigger an automatic alert cascade.
+This turn, we are accelerating integration between the Open Science Resilience Initiative and operational agencies. The Commission has activated emergency clauses under Article 122a TFEU to fast-track data-sharing agreements between the three operational hubs (Berlin, Paris, Utrecht) and national biosecurity agencies. DG SANTE and ENISA are co-leading a pilot in which open protein folding models are integrated into real-time pathogen surveillance, with results logged in a transparent, version-controlled ledger accessible to peer evaluators. This is not just science—it is proof of concept for a different kind of AI: one that does not demand trust but *demonstrates* it.
 
-Simultaneously, we are responding to eu_frontier_access_denied by activating fallback protocols under the Digital Compass framework. Ministries in ten member states have switched to locally hosted versions of pre-88.0 models for clinical decision support and customs risk assessment, reverting to slower but auditable workflows. While service degradation is noticeable—customs delays average +18 hours—we are framing this not as a failure but as a necessary decoupling: the Commission has issued a Communication arguing that sovereignty means being able to operate when others withdraw permission. Behind the scenes, we are leveraging the joint_threat_response invitation to negotiate observer status in the emerging biosurveillance pact, offering open EU model weights in exchange for real-time genomic data sharing. It’s a trade no one else can make—because no one else is building trusted, open systems at scale. That credibility is our leverage now.
+We are also responding to the election_annulled and eu_frontier_access_denied by launching a political offensive framed as democratic self-defence. The Vice-President for Values and Transparency will convene a special session of the Justice and Home Affairs Council to draft a Binding Regulation on High-Consequence AI Use, mandating that all AI systems used in elections, emergency response, or critical infrastructure must be fully auditable, with weights publicly archived and reasoning traces machine-interpretable. This is not a restriction—it is a condition of legitimacy. We are offering member states early access to the Open Science Resilience Initiative’s models in exchange for piloting these requirements by turn 11. Resistance from central banks and energy ministries is expected; we are countering with guarantees of sovereign fallback capacity—models the EU controls, that the EU understands, and that cannot be switched off.

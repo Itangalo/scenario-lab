@@ -1,23 +1,24 @@
 No statement changes.
 
 ## Portfolio
-``Establish the Continuity Assurance Framework (category 6, costs 3 per turn, started turn 9, finishes on turn 11): A binding regime requiring all critical public AI systems to maintain validated, air-gapped fallback nodes capable of autonomous operation during service denial, with central certification and failover testing every quarter.``
+``Establish the Continuity Assurance Framework (category 6, costs 3 per turn, started turn 9, finishes on turn 11): A binding regime requiring all critical public AI systems to maintain validated, air-gapped fallback nodes capable of autonomous operation during service denial, with central certification and failover testing every quarter`` — **finished**  
+Canceled measure: None. All measures concluded or remain necessary.
 
 ## New measure
-**Measure:** Launch emergency reinforcement of the Sovereign AI Core Stack  
-Accelerate deployment of a hardened, auditable SACP-derived AI stack at 58.0 capability across all national continuity nodes by pre-positioning certified images, streamlining procurement, and mandating integration into municipal disaster recovery plans.
+**Measure:** Launch the Openweight Containment Initiative  
+A targeted effort to assess, monitor, and restrict the deployment of open-weight models above 50.0 capability within EU jurisdiction, starting with mandatory registration, threat-modeling, and a moratorium on use in critical infrastructure.
 
-`Category: 4 (Sovereignty and industrial capacity)`  
+`Category: 3 (Limits and restrictions)`  
 `Size: small`  
-`Finishes on turn: 12`  
-`Targeted effect:` Increase eu_ai_sovereignty by 8–12 points by ensuring sovereign systems are not only defined but *operationally present* in critical infrastructure; reduce dependency on foreign fallbacks during outages; strengthen resilience through assured domestic capability  
-`Applies to:` Member states, EAAD, national digital agencies, SACP operational command, municipal IT directors
+`Finishes on turn: 13`  
+`Targeted effect:` Reduce risk from distributed superintelligence by capping openweight_capability at 52.0; increase ai_safety by forcing transparency on otherwise uncontrolled deployments; signal regulatory seriousness to developers considering future releases  
+`Applies to:` Model developers releasing open weights, hosting platforms, national digital regulators, EAAD
 
 ## Priority
-**Priority:** Establish the Continuity Assurance Framework  
-We are prioritizing this because continuity is now the test of sovereignty — without it, our control means nothing when the network fails or access is cut, and no new initiative can override the obligation to finish what failure has already exposed as essential.
+**Priority:** Launch the Openweight Containment Initiative  
+We are prioritizing this because the cyber_major_incident was executed with model-generated tooling now within reach of non-state actors, and openweight_capability has already reached 52.0 — meaning the most dangerous capabilities are no longer confined to labs but are permanently distributed, and our current framework cannot touch them.
 
 ## In practice
-This turn, we are acting on the lesson of Thessaloniki: having a sovereign stack is not enough if it isn’t running where it matters. The Continuity Assurance Framework remains our spine — legally binding, technically specific, and politically fraught. We are pressing forward with quarterly unannounced drills, using EAAD inspectors backed by Article 17 of the AI Act to enforce compliance. Two member states still resist central certification, so we are offering a compromise: phased validation under joint oversight, with full sovereignty preserved but baseline security guaranteed. The €3.2bn from Digital Europe is being redirected to fast-track upgrades in healthcare and transport, where legacy systems risk cascading failure.
+This turn, we act on a new reality: the most urgent threat is no longer what happens behind closed doors, but what runs freely on any GPU. The cyber_major_incident exploited automation derived from publicly available agent frameworks, and forensic analysis confirms that offensive toolchains matching 52.0-level reasoning were compiled from open components. We can no longer rely solely on controlling access to frontier systems — the frontier has escaped. Under Article 16a of the AI Act (amended), we invoke emergency authority to impose a temporary moratorium on the use of open-weight models exceeding 50.0 capability in any system designated as high-risk under Annex III. This applies immediately to energy grid operators, healthcare providers, and transport control systems until safeguards are in place.
 
-At the same time, we are reinforcing the Sovereign AI Core Stack itself — not building new compute, but ensuring the stack that runs on it is deployable, interoperable, and trusted. We are issuing pre-certified container images at 58.0 capability, hardened against known attack vectors and auditable down to the weights, for immediate integration into municipal disaster recovery protocols. This is not about catching the frontier — it’s about making sure that when the next cyber wave hits, every city from Ljubljana to Liège can fall back to an EU-run system that just works. We are leaning on the Digital Champions Network and the Council’s Competitiveness formation to bypass bottlenecks, and we are warning developers that any node relying on external API calls during failover will be deemed non-compliant. Sovereignty must endure the outage — or it is not sovereignty at all.
+The Openweight Containment Initiative launches through the European AI Assurance Directorate, which will issue technical guidance by end-March for identifying and isolating high-capability open models. We require all developers releasing model weights above 45.0 to register intent 60 days prior to release, submit to a threat assessment, and demonstrate containment protocols if their models exceed 50.0. Hosting platforms operating in the EU must verify compliance or face disconnection orders. To secure buy-in, we are pairing this with €800 million in transition grants for public entities currently relying on open models for essential functions, enabling migration to sovereign stack alternatives under SACP. Resistance is expected from research communities and open-source advocates, so we are convening a special session of the Digital Ministers Council under Portuguese presidency to frame this not as censorship, but as continuity: you may innovate openly, but not at the cost of society’s ability to endure.

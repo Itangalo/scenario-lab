@@ -1,0 +1,34 @@
+## Statement changes
+* ``- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing. But we now understand that without operational continuity — the ability to maintain critical functions when systems fail or are attacked — neither mandate can be fulfilled. Sovereignty is not compute, not control, but service that endures.``
+  - Grounds: The Continuity Assurance Framework has revealed that technical sovereignty means nothing if the systems meant to uphold it do not run when needed. The cyber_major_incident and the failover drills exposed that the EU’s capacity to act in crisis depends not on who owns the stack, but on whether it is live, tested, and trusted. This is no longer a matter of policy refinement — it is a categorical shift in what sovereignty means under AI-driven systemic stress.
+
+* ``- retire `two_year_commitment```  
+  - Grounds: The two-year commitment period ends this turn, and its core objective — sovereign AI continuity — has been institutionalized through the Continuity Assurance Framework. The measure is now law, with binding technical baselines, funding, and enforcement mechanisms. While implementation continues, the strategic shift from capability aspiration to operational mandate is complete. Continuing to treat it as a live commitment would misrepresent the Union’s posture.
+
+* ``- modify `no_more_free_rides` (commitment): No member state may access frontier AI outside the EU’s sovereign control framework, and any attempt to do so will trigger immediate suspension of cohesion funding and exclusion from sovereign AI infrastructure — but enforcement will now be conditional on the operational readiness of the Sovereign AI Core Programme, and we will not cut off a member state from critical capabilities unless we can offer a viable, secure alternative within 90 days. We act to defend the regime, not to punish into helplessness. We now add: where a member state faces a verified capability gap in critical public service delivery, the EAAD may authorize temporary bridging access to non-EU systems under strict monitoring and sunset clauses, but only if the state has demonstrated active migration to the SACP stack.``
+  - Grounds: Two member states have formally requested emergency access to US-hosted 70.0-capable systems for health diagnostics and emergency response coordination, citing unresolved legacy incompatibilities. Refusing would risk public harm; granting it unconditionally would break the regime. The modification preserves the principle while allowing a safety valve that ties temporary access to compliance momentum.
+
+## Portfolio
+``Establish the Continuity Assurance Framework (category 6, costs 3 per turn, started turn 9, finishes on turn 11): A binding regime requiring all critical public AI systems to maintain validated, air-gapped fallback nodes capable of autonomous operation during service denial, with central certification and failover testing every quarter`` — **finishes this turn**  
+``Frontier Access Guarantee (category 4, costs 3 per turn, started turn 7, finishes on turn 12): Secure guaranteed access to at least one frontier-capable AI development and deployment stack outside US and Chinese control, through a mix of EU-owned compute, sovereign licensing, and legally binding access agreements with neutral-state hyperscalers``
+
+## New measure
+**Measure:** Launch the Openweight Containment Directive  
+A binding prohibition on the release, distribution, or public deployment of model weights at or above 52.0 capability within the EU, with mandatory audit and takedown protocols for hosting providers and open repositories.
+
+`Category: 3 (Limits and restrictions)`  
+`Size: large`  
+`Finishes on turn: 13`  
+`Targeted effect:` Halt the rise of openweight_capability at 52.0 by blocking the next generation of open releases; reduce the risk of uncontrolled proliferation of agent-grade systems; signal EU resolve to global developers and markets  
+`Applies to:` Open-source AI communities, cloud providers, academic institutions, EU member states
+
+## Priority
+**Priority:** Launch the Openweight Containment Directive  
+We are prioritizing this because the cyber_major_incident was executed with model-generated tooling, and openweight_capability now sits at 52.0 — the threshold where agents can run continuously and autonomously. We cannot harden resilience fast enough to outrun the spread of this capability; we must now stop it at the source, even if it fractures the developer community and draws accusations of censorship.
+
+## In practice
+This turn, we are shifting from continuity to containment. The Continuity Assurance Framework reaches its legislative culmination: by June, all member states must submit compliance plans, and the EAAD will publish the first quarterly failover assessment. We are deploying the €3.2bn Digital Europe allocation through a new emergency window for legacy-compatible SACP nodes, prioritizing healthcare and emergency response in mid-tier municipalities. But we are also confronting a new reality — the same systems we are hardening are being mirrored, modified, and released beyond our reach. The openweight frontier now matches what the closed labs held just three years ago, and the attack that crippled public services in three capitals was built from freely available components.
+
+Thus, we are launching the Openweight Containment Directive under Article 16 TFEU and the AI Act’s high-risk provisions. The European Cybersecurity Agency (ENISA) and EAAD will jointly define the 52.0 threshold using dynamic benchmarks, and hosting providers will be required to audit uploads and remove non-compliant weights within 24 hours. GitHub-equivalents operating in the EU will need licensed filtering tools; academic exceptions will require pre-approval and air-gapped execution. We know this will provoke backlash — the open research community calls it a betrayal, and some member states warn of innovation flight. But we cannot secure continuity if the threat is legal, distributed, and unrecallable.
+
+We are offering a compromise: researchers and public institutions may apply for exemptions to study or harden against these models, but only within sovereign sandboxes. We are also accelerating the Frontier Access Guarantee to show that our containment is not isolation — we are building our own path to capability, one that does not depend on what leaks or gets released. The world is moving faster than we can patch. Our only leverage now is to draw a line — and make it hold.

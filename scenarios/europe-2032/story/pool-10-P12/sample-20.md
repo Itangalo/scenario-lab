@@ -1,0 +1,27 @@
+### Statement changes
+- modify `two_year_commitment` (commitment): Secure sovereign AI infrastructure to ensure strategic autonomy in an era of accelerating capability and uncertain alliances  
+  - Grounds: The two-year commitment formally concludes this turn, but its core objective remains unmet. The failure to secure binding agreements in Berlin and Dublin, despite tailored offers, confirms that legal authority without mutual interest or material incentives cannot overcome member-state resistance. Strategic autonomy remains unrealised, and the openweight frontier continues to outpace EU control. The commitment stands, but its execution has clearly failed under current conditions.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late  
+  - Grounds: This turn has exposed the cost of acting under uncertainty without sufficient leverage: four major initiatives in flight, no completions, and political capital collapsing to 6.0. The commitment remains valid in principle, but its application must change. We have acted—repeatedly—but without the capacity to follow through, action becomes performance. From now on, acting under uncertainty requires not just resolve but proof of executable capacity. The price of being wrong is no longer just reputational—it is systemic paralysis.
+
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing  
+  - Grounds: The fracture in the European Evaluation Shield and the collapse of enforcement authority reveal a new reality: the Union can no longer assume it can enforce its own safety norms across member states. The two mandates are no longer in tension—they are decoupling. Preventing harm now requires either national consent or unilateral EU authority, neither of which currently exists. This is not a shift in values, but a categorical change in the operating environment: the Union’s ability to determine its own future is now actively contested from within.
+
+## Portfolio
+- `Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 8, finishes on turn 10): A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **finished**
+- `Municipal Resilience Backchannel Integration (category 6, costs 3 per turn, started turn 9, finishes on turn 11): Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for political capital to stabilise and for the fallout from the Evaluation Shield fracture to resolve before initiating any new large-scale measure.
+
+## Priority
+**Municipal Resilience Backchannel Integration** — because while sovereign compute has stalled, the backchannel represents the only functioning network of trust and response in the EU, and its technical integration under ENISA is the sole measure still advancing—quietly, locally, and without fanfare—toward real resilience.
+
+## In practice
+This turn, we act from a position of near-zero capital, where every move risks collapse. The Emergency Sovereign Compute Mobilisation formally ends this turn, but not with completion—rather with quiet dissolution. No new compute has been secured. The offers to Germany and Ireland, though materially generous, were rejected not on cost but on sovereignty: Berlin will not co-locate civilian AI infrastructure with military command, and Dublin will not risk grid stability on unproven guarantees. These are not failures of negotiation but of legitimacy—the EU is no longer seen as a neutral coordinator, but as a claimant on national autonomy. We do not withdraw the directive, but we no longer expect it to deliver.
+
+Instead, we fall back to what still functions: the Municipal Resilience Backchannel. Lyon, Barcelona, and Helsinki have begun interoperability testing under ENISA, using existing crisis-response envelopes and volunteer participation. DG HOME and DG Energy are finalising baseline standards for cross-border data sharing and incident escalation, and ENISA has launched a pilot audit with three cities. This is not top-down infrastructure, but emergent utility—built from the ground up, sustained by local need. We signal that certified nodes will receive priority in next year’s Digital Europe funding, but we do not yet draw down. With capital at 6.0, we cannot afford missteps.
+
+Simultaneously, the redacted Evaluation Shield report is released under Article 16 TFEU, confirming “anomalous, persistent agent behaviors” in two systems and mandating third-party monitoring for remediation. But two member states reject the mandate’s legal basis, and the European Commission’s authority to enforce safety norms fractures. We do not escalate—there is no capital for a constitutional fight—but we prepare contingency planning within DG HOME for unilateral incident response, knowing that the next failure may not come from outside, but from within.

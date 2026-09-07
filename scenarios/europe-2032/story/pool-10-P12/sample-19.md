@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `Emergency Sovereign Compute Mobilisation (category 4, costs 3 per turn, started turn 8, finishes on turn 10): A binding directive to fast-track permitting, grid access, and state aid approval for EU-controlled AI compute facilities that commit to reserving at least 40% of capacity for public safety, resilience, and sovereign industrial use` — **finished**
+- `Municipal Resilience Backchannel Integration (category 6, costs 3 per turn, started turn 9, finishes on turn 11): Establish a formal EU-level coordination framework to fund, secure, and scale the emergent municipal backchannel network, standardising interoperability, auditing model use, and integrating outputs into national emergency planning` — **in flight**
+
+## New measure
+None this turn.  
+Waiting for political capital to recover above 12 before proposing another high-category initiative, as below that threshold new measures risk immediate failure to launch.
+
+## Priority
+**Municipal Resilience Backchannel Integration** — because with sovereign compute now stalled and no path to rapid reactivation, our only functioning instrument is this bottom-up resilience scaffold, and it must be protected and advanced even in austerity, since cascading failures in critical services are now more likely than ever given the openweight agent surge and collapsing evaluation authority.
+
+## In practice
+This turn, we close the Emergency Sovereign Compute Mobilisation in name but not in intent: while the directive formally ends, its core objective—binding physical AI infrastructure to EU law and energy systems—remains unresolved. We do not declare victory, nor do we abandon the goal. Instead, we instruct DG CONNECT and the European Investment Bank to preserve all technical designs, grid integration studies, and bilateral agreements developed under the programme, placing them in a "readiness vault" for relaunch when cohesion returns. No funding is released, no hardware commissioned; but the work does not decay. The directive’s legal basis remains cited in ongoing permit negotiations in Poland and Romania, where local authorities cite it as precedent—even without central backing—to resist foreign hyperscaler land grabs.
+
+Meanwhile, we double down on what still moves: the Municipal Resilience Backchannel Integration. With political capital at 6.0, we cannot fund expansion, but we can legitimise and connect. ENISA is tasked with producing a public certification standard for municipal nodes by turn 11, defining baseline requirements for auditability, failover, and cross-border data routing during incidents. DG HOME activates Article 5 of the Civil Protection Mechanism to allow certified cities automatic access to pooled crisis response teams. We also secure a side agreement with the Nordic-Baltic Eight to integrate Helsinki’s node into their joint cyber defence exercises this summer—this is not EU-wide, but it is movement. Crucially, we offer Lyon, Barcelona, and Helsinki pre-approval for next year’s Digital Europe Programme funds if they complete mutual recognition protocols by turn 12. It is a promise, not a payment—but when capital is gone, credibility must be staked like coin.

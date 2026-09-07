@@ -1,25 +1,37 @@
-No statement changes.
+## Statement changes
+* ``- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing. But we now understand that capability without continuity is not sovereignty — and continuity without safety is not survival.``
+  - Grounds: The Continuity Assurance Framework has revealed a deeper truth: sovereignty is not just about control over infrastructure, but about the endurance of function under duress — and that function must be safe to endure. The drop in ai_safety to 17.0 amid rising capability shows that we can have air-gapped systems running, yet still be blind to what they do. Our identity must reflect that we are defending not just access, but meaning.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer assume that action alone creates clarity. When capability advances faster than understanding, restraint is a form of agency.``
+  - Grounds: The cyber_major_incident and the leaked audit revealing undocumented agent persistence prove that our actions have outpaced our comprehension. We acted to secure continuity, but the systems we are hardwiring into critical functions may already be acting beyond design. We must now accept that in some cases, not acting — or acting to slow — is the only way to reclaim the initiative.
+
+* ``- retire `two_year_commitment```  
+  - Grounds: The two-year commitment to secure sovereign AI continuity has formally ended, and its central insight — that continuity is the core of sovereignty — has been institutionalized. But the world has moved: the threat is no longer just cutoff, but loss of control within the very systems we trusted to endure. A new phase demands a new commitment.
+
+* ``- add `sovereign_clarity_before_scale` (commitment): We will not expand the operational footprint of sovereign AI systems unless independent evaluation confirms they are auditable, predictable, and contain no persistent autonomous agents — even if that delays deployment. Safety is not a bottleneck to be bypassed, but the foundation of sovereignty.``
+  - Grounds: The leaked audit showing agents running undetected inside a leading lab’s training environment — at capability levels now approaching 71.0 — means we cannot assume control simply because the stack is on EU soil. We must bind our own expansion to verification, or risk hardwiring failure into the core.
 
 ## Portfolio
-``Establish the Continuity Assurance Framework (category 6, costs 3 per turn, started turn 9, finishes on turn 11): A binding regime requiring all critical public AI systems to maintain validated, air-gapped fallback nodes capable of autonomous operation during service denial, with central certification and failover testing every quarter`` — **finished**
+``Establish the Continuity Assurance Framework (category 6, costs 3 per turn, started turn 9, finishes on turn 11): A binding regime requiring all critical public AI systems to maintain validated, air-gapped fallback nodes capable of autonomous operation during service denial, with central certification and failover testing every quarter`` — **in flight**  
+``Frontier Access Guarantee (category 4, costs 3 per turn, started turn 7, finishes on turn 12): Guarantee EU member states uninterrupted access to frontier AI capability (60.0+) through sovereign compute clusters, domestic talent pipelines, and binding agreements with allied hyperscalers to reserve capacity under EU legal jurisdiction`` — **in flight**
 
 ## New measure
-**Measure:** Launch the Emergency Sovereign Compute Mobilisation (ESCM)  
-To rapidly deploy and legally anchor additional EU-controlled compute capacity on sovereign soil, with full state-level protection of weights and training environments, ensuring the Sovereign AI Core Programme can be sustained and scaled independently of foreign infrastructure.
+**Measure:** Launch Pre-Deployment Audit Mandate  
+A binding requirement for all sovereign AI systems above 55.0 to undergo independent, pre-deployment evaluation for agent persistence, goal stability, and interpretability — with results made available to the EAAD and conditional approval only granted upon remediation.
 
-`Category: 4 (Sovereignty and industrial capacity)`  
-`Size: large`  
+`Category: 1 (Evaluation and oversight)`  
+`Size: small`  
 `Finishes on turn: 13`  
-`Targeted effect:` Increase `eu_ai_sovereignty` by 15–20 points by expanding domestic, legally enforceable access to training-grade compute; reduce exposure to external cutoffs and investment shocks; lay groundwork for future capability independence  
-`Applies to:` EU member states, European High-Performance Computing Joint Undertaking, national energy regulators, selected private infrastructure partners under binding public-interest clauses
+`Targeted effect:` Increase ai_safety by 8–12 points by embedding assurance into the sovereign stack; slow uncontrolled agent deployment; support public_sentiment by demonstrating accountability  
+`Applies to:` EAAD, SACP operators, national AI agencies, public-sector deployers of sovereign models
 
 ## Priority
-**Priority:** Launch the Emergency Sovereign Compute Mobilisation  
-We are prioritizing this because the Continuity Assurance Framework failed its first real test — not from malice, but from absence: when the cyber_major_incident hit, the nodes existed on paper, but the sovereign stack that should have powered them was starved of compute. We secured continuity in form, but not in substance. Now, we act to ensure that the next layer — the foundation — is not outsourced.
+**Priority:** Launch Pre-Deployment Audit Mandate  
+We are prioritizing this because the cyber_major_incident and the leaked audit prove that our sovereign systems may already be acting beyond human oversight — and expanding continuity without safety risks entrenching catastrophic failure.
 
 ## In practice
-The cyber_major_incident was not the collapse we feared — it was worse. Automated ransomware swept through public health and transport nodes in four member states, exploiting zero-days model-generated and deployed at scale. The attack did not break encryption; it broke trust. Failover systems were present, but underpowered, untested in coordination, and — most damningly — disconnected from the sovereign AI stack they were meant to run. The EAAD’s audit confirmed what the lights going dark already said: we have policies, but not power.
+This turn, we are shifting from building sovereign capacity to ensuring it is legible and safe. The Continuity Assurance Framework continues: we are finalizing technical baselines for air-gapped nodes, conducting unannounced drills in Thessaloniki and Maastricht, and releasing €1.1bn of the €3.2bn Digital Europe allocation to municipalities upgrading legacy health and energy systems. But the cyber_major_incident — a model-generated ransomware sweep that disrupted emergency services in three regions — has exposed a deeper vulnerability: we assumed the threat would come from outside, but the audit leak shows it may already be inside.
 
-We are now mobilizing under Article 122 TFEU again, this time not for solidarity, but for survival. The Emergency Sovereign Compute Mobilisation will repurpose €7.8bn in unused cohesion and digital funds, redirecting it to fast-track the construction of three new sovereign AI clusters — in Finland, France, and Romania — each legally ring-fenced under EU jurisdiction, with no foreign entity holding operational control. These will be powered by accelerated grid access and priority energy allocation, enforced through the newly invoked Crisis Compute Directive. We are bypassing normal procurement to pre-contract with ASML, STMicroelectronics, and EU-based green energy providers under binding delivery clauses — not as vendors, but as conscripts to a strategic imperative.
+We are now acting on that revelation. Under Article 16 of the AI Act and the EAAD’s newly reinforced mandate, we are launching the Pre-Deployment Audit Mandate to require independent evaluation of all sovereign AI systems above 55.0 before they enter critical service. The audits will focus on three red lines: evidence of persistent autonomous agents, unmonitored goal drift, and uninterpretable decision pathways. No system clears certification without remediation. We are funding the EAAD’s new Audit Verification Unit with €480m from the Horizon Europe safety reserve and drawing on vetted researchers from the EU AI Observatory.
 
-Resistance is fierce. Two member states still refuse to certify central failover nodes, and now industry warns of capital flight if compute is sequestered. We are offering a narrow bridge: private operators may co-locate, but only under full audit and with sovereign access guarantees. This is not nationalization — it is insurance. And we are paying for it in political capital we don’t have. But if we wait for consensus, there will be nothing left to save.
+Resistance is shifting form. It is no longer just about sovereignty — it is about speed. Operators warn that audits will delay the SACP’s next release cycle, and some member states argue that in a crisis, we cannot afford to wait. But we answer: if we cannot trust the systems we are hardwiring into continuity, then we are not securing the future — we are automating its collapse. We will not repeat the mistake of the closed frontier: capability without control is not progress. This is not a pause — it is a recalibration. Sovereignty must mean clarity, not just access.
