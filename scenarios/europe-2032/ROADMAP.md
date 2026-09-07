@@ -12,7 +12,7 @@ The gate for this phase is that the physics works well enough to have credible r
   - For ai_capability and ai_safety: In the Acceleracion arm (A), the former will often hit the ceiling and the latter will often crash. In the other arms, it is more balanced.
   - For openweight_capability: This should trail ai_capability in basically all runs, all arms. For the Plateau arm (P), it should almost match ai_capability in the final rounds.
   - For eu_ai_sovereignty, eu_political_capital and public_sentiment: These metric should struggle. Some successes and some alarmingly low. Lower end on the A arm.
-- [X] **Events are triggered roughly correctly, and their effects are managed roughly correctly.** The rule-5 decision was taken: the third term (events that take away or secure access to capacity) was added, and sovereignty moves with real spread (0–32 across arms) instead of sitting stuck. The 2028 election family holds exactly-one at turn 5 across every batch measured (15/15, 18/18, 15/15). See `design-notes.md`.
+- [X] **Events are triggered roughly correctly, and their effects are managed roughly correctly.** The rule-5 decision was taken: the third term (events that take away or secure access to capacity) was added, and sovereignty moves with real spread (0–32 across arms) instead of sitting stuck. The 2028 election family holds exactly-one at turn 5 across every batch measured (15/15, 18/18, 15/15, and 60/60 on the rebuilt Stage-1 batch). See `design-notes.md`.
 - [X] **The event list is fairly balanced.** All 35 events fire at least once across the 32-run corpus; per-listing fire rates run 1–16% and every event touches at least 5% of runs. Nothing in the catalogue is dead and nothing is scenery. Measured mostly before the open-weight fix, so the incident events gated at `openweight_capability` 55 and 65 were rolled with those branches shut — their true rates are higher than the table says, which does not change the conclusion.
 - [X] **A turn that drops a metric is caught.** One run of 2026-09-03 omitted `openweight_capability` from turn 1's JSON; the old value was carried forward and the run completed clean. The metrics step now compares the parsed JSON against the scenario's metric ids, asks once for the omitted ones by name, and writes the outcome to `turn-XX/4-metrics-metadata.json` either way; anything still missing is filled from the value the run actually uses, so no artefact carries an absent key. The referee's correction step is guarded the same way, since a correction that drops a metric reverts it to last turn's value.
 
@@ -32,35 +32,35 @@ Two independent bodies of work. Either order; 3a is one command and a wait, 3b n
 
 ### 3a – the statistics batch
 
-20 runs per arm, 13 turns, 60 runs total. Serves the general statistics and doubles as the final proof that the scenario behaves.
+50 runs per arm, 13 turns, 150 runs total. Serves the general statistics and doubles as the final proof that the scenario behaves. (Scaled up from 20/arm 2026-09-07: 60 runs were judged too thin a comparison base for 24 story endings.)
 
-- **780 turn-executions, about $5.40, about 3.8 hours** at 12 concurrent.
-- One batch, one seed block, all three arms, no human input once launched.
+- **1 950 turn-executions, about $13.50, about 7–9 hours** at 8–12 concurrent. Measured basis ($0.0069/turn-execution across the Stage 2–3 batches); the CLI estimator says $0.23/run ($34.50 total) but consistently quotes ~2.5× measured spend — treat that as the ceiling.
+- One command per arm (`batch-run --repeat 50` on each variant), fresh random seeds by default, no human input once launched.
 
 ### 3b – the story tree
 
-42 blocks of four turns, each block ten simulations with one path selected at random; 18 option pools of ten actor-only draws. Three stages, because each stage's branches start from the previous stage's chosen path.
+42 blocks of four turns, each block ten simulations; the path is the first run per block unless a fault promotes rep 2 (A11: sentiment skipped rule-7 incident penalties; P11: openweight frozen by GM inertia — both in `story/README.md`). Option pools of ten actor-only draws, extended where N=10 shows no honest split. Three stages, because each stage's branches start from the previous stage's chosen path.
 
 **Stage 1 (turns 2–5) batch complete 2026-09-05.** Pilot-first procedure after a tainted 60-run batch: an early-election prompt bug (Jinja if/else with no neither-case) had 48 runs declaring winners in turns 2–4. Fixed three-way, render-verified per turn. Rebuilt whole overnight (60 runs, 10 per branch, committed in git): exactly-one holds 60/60 at turn 5, zero named postures before turn 6, first run per branch selected as the story path (`story/README.md` branch log, prose in `story/stage-1/`). Procedure, not just caution: this is the second batch lost to verify-after-scale.
 
-**Stage 2 (turns 6–9) batch complete 2026-09-06.** 12 blocks × 10 reps (120 runs) via new `story/pin-turn.py`: each block branches its Stage-1 path run at turn 5, pins turn-6 events (branch fixture) and actor (chosen option sample), runs turns 6–9 normally. Pilot-verified (events pinned, actor verbatim, posture activates turn 6). Sequential launch proved too slow (~10 min/rep); 8-wide xargs finished the batch. Manifest in `story/stage-2-blocks.json`; path per block is the first run, same rule as Stage 1.
+**Stage 2 (turns 6–9) batch complete 2026-09-06.** 12 blocks × 10 reps (120 runs) via new `story/pin-turn.py`: each block branches its Stage-1 path run at turn 5, pins turn-6 events (branch fixture) and actor (chosen option sample), runs turns 6–9 normally. Pilot-verified (events pinned, actor verbatim, posture activates turn 6). Sequential launch proved too slow (~10 min/rep); 8-wide xargs finished the batch. Manifest in `story/stage-2-blocks.json`; path per block is the first run, except A11 and P11 where documented faults promoted rep 2 (see `story/README.md`).
 
 **Stage 3 (turns 10–13) batch complete 2026-09-07.** 24 blocks × 10 reps (240 runs) via `pin-turn.py`: each branches its Stage-2 path at turn 9, pins turn-10 events (fixture, fresh `--seed` each per seed rule) and actor (chosen option), runs turns 10–13 normally. Same 8-wide procedure with 20-minute report chunks; resume-safe task regen throughout, 92 killed-mid-run partials removed before commit. One genuine rep failure (timeout SIGTERM, rerun clean) and one timeout-killed final rep finished via plain `resume` (turns 10–12 pinned artifacts intact, only turn 13 drawn normally). Manifest in `story/stage-3-blocks.json`; path per block is the first run.
 
-Reading prose for all 24 paths in `story/stage-3/`, machine-verified; turn 13 framed as where the scenario ends, not a finale. `story/stage-1-blocks.json` tracks dirs, paths, reps and seeds; `story/stage-1/*.md` holds first-run reading prose with two-year commitments up top.
+Reading prose for all 24 paths in `story/stage-3/`, machine-verified; turn 13 framed as where the scenario ends, not a finale. Manifests in `story/stage-1-blocks.json`, `story/stage-2-blocks.json`, `story/stage-3-blocks.json`; reading prose in `story/stage-1/`, `story/stage-2/`, `story/stage-3/` with two-year commitments up top.
 
-| stage | branches | turn-executions | cost | wall clock |
+| stage | branches | turn-executions | cost (est. → actual) | wall clock |
 |---|---|---|---|---|
-| turns 2–5 | 6 | 240 | $1.66 | 1.2 h |
-| turns 6–9 | 12 | 480 | $3.31 | 2.4 h |
-| turns 10–13 | 24 | 960 | $6.62 | 4.7 h |
-| **total** | **42 blocks** | **1 680** | **$11.59** | **8.2 h** |
+| turns 2–5 | 6 | 240 | $1.66 → **$1.17** | 1.2 h |
+| turns 6–9 | 12 | 480 | $3.31 → **$2.51** | 2.4 h |
+| turns 10–13 | 24 | 960 | $6.62 → **$4.95** | 4.7 h |
+| **total** | **42 blocks** | **1 680** | **$11.59 → $8.63** | **8.2 h** |
 
-Plus 180 actor-only draws for the 18 option pools, about $0.22.
+Plus actor-only draws for the option pools: 6 turn-6 pools (10 each; A2/V2/P2 extended to 30) + 12 turn-10 pools (10 each; A12/V11/P11/P12/P22 extended to 20) — 290 samples, **$0.21** actual against about $0.22 estimated for the originally planned 180.
 
 **Between stages sits a human decision** that cannot be automated: reading a pool of ten draws and choosing the two options that represent it, or saying plainly that the draws do not fall into two groups. `story/README.md` is explicit that inventing a split is the wrong answer, and the turn-1 pool is the worked example — 28 of 30 in one category, so the second option is presented as the minority draw it is.
 
-**Whole programme: about $17 and 12 hours of wall clock.** Cheap enough that the constraint is attention, not credits: every stage of 3b needs someone to look at the pools.
+**Whole programme: about $17 estimated, $8.84 measured (batches $8.63 + pools $0.21), and roughly 12 hours of wall clock including one paused evening.** Cheap enough that the constraint is attention, not credits: every stage of 3b needs someone to look at the pools.
 
 ## Standing facts
 

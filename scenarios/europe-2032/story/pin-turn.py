@@ -103,6 +103,10 @@ seed = random.getrandbits(64)
 scenario.config.random_seed = seed
 new_config = json.loads((new_run_dir / "config.json").read_text(encoding="utf-8"))
 new_config["random_seed"] = seed
+# A pin parent may itself be a pinned block: inherited pin keys describe the
+# parent's pinned turn, not this one, so drop them before recording ours.
+for stale in ("pinned_turn", "pinned_events_fixture", "pinned_option"):
+    new_config.setdefault("metadata", {}).pop(stale, None)
 new_config.setdefault("metadata", {})["pinned_turn"] = PIN_TURN
 new_config["metadata"]["pinned_events_fixture"] = str(fixture_file)
 new_config["metadata"]["pinned_option"] = sys.argv[5]
