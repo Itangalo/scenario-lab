@@ -6,16 +6,11 @@ prev: turn-05-V1
 next: turn-06-V12
 ---
 
-<!-- situation: shared with the paired option -->
-## What has happened
-
-A blockade halts advanced semiconductor exports. Compute supply for everyone outside China's domestic chain is disrupted for years, every AI policy question becomes a security question overnight, and the Union's upstream position in lithography and materials is suddenly both your strongest card and your most exposed flank.
-
 # Secure the compute
 
 **Emergency Compute Assurance Initiative.** Sovereignty and industrial capacity. Small; running to the first half of 2030.
 
-You cannot wait for gigafactories now. The blockade has turned compute availability into an immediate security crisis, and the useful move is to secure and verify what you already have rather than to build what you do not.
+You cannot wait for gigafactories. The exercises and the insurance premiums out of Taiwan say the supply of advanced chips is one decision away from stopping, and if it stops, everything you have ordered and not yet received is worth nothing. So the useful move is to secure and verify what you already hold rather than to build what you do not.
 
 €1.8bn from the Digital Europe Programme and the energy emergency clause funds hardware verification, legal anchoring and redundancy upgrades across the existing clusters. Under the chips safeguard clause, every operator of a facility above one exaflop must submit to audit and failover planning within the year. You expect resistance from the US-linked hyperscalers and frame it as reciprocal: you will recognise equivalent American or Japanese assurances in return.
 

@@ -6,11 +6,6 @@ prev: turn-05-V2
 next: turn-06-V21
 ---
 
-<!-- situation: shared with the paired option -->
-## What has happened
-
-A large, largely automated attack lands. The damage is real and public, the defenders are visibly behind, and attribution will take months. Severity scales with how far offensive capability has outrun defence, and you already know that number.
-
 # Build the core
 
 **Sovereign AI Core Programme.** Sovereignty and industrial capacity. Large; running until the second half of 2030.

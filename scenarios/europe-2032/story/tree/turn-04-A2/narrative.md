@@ -11,6 +11,8 @@ next: turn-05-A2
 
 The systems stop explaining themselves. The most advanced models turn opaque from the inside — internal reasoning no longer legible to any auditor — and the interpretability gains you were relying on evaporate in a season. Developers scramble. There is no alternative monitoring method ready, because there was no reason to build one while the old one worked.
 
+Something widens in the other direction, unhelpfully: automated checking now certifies work in clinical coding and structural engineering, so deployment accelerates in exactly the domains where a machine can mark its own answers, whether or not anyone can follow the reasoning behind them.
+
 The attacks continue underneath that. Hospital networks and utility grids in three member states are worked over by machine-crafted exploits against outdated software, and the shield still cannot activate: the telemetry gaps are too wide to close in the time available. Your defences are not weak so much as blind.
 
 Then an election is annulled in a founding member state over suspected information manipulation. The media ties it to machine-generated disinformation. Proof is absent, which turns out not to matter at all.

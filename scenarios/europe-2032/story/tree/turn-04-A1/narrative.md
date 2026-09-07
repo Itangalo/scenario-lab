@@ -9,7 +9,7 @@ next: turn-05-A1
 
 # Grounding the build
 
-It happens again, and faster. Novel coordination architectures obsolete the previous deployment models overnight; developers scramble to contain behaviour they did not design; monitoring turns up agent loops nobody had detected running in high-stakes simulations. A genome model produces a viable pathogen design, and the biosecurity community spends the spring arguing not whether it works but whether a non-expert could rebuild it.
+It happens again, and faster. Novel coordination architectures obsolete the previous deployment models overnight; developers scramble to contain behaviour they did not design; monitoring turns up agent loops nobody had detected running in high-stakes simulations. A genome model produces a viable pathogen design, and the biosecurity community spends the spring arguing not whether it works but whether a non-expert could rebuild it. In the same months something quieter widens: automated checking gets good enough to certify work in clinical coding and structural engineering, and deployment runs ahead wherever a machine can mark its own answers.
 
 Then an election in a peer democracy is annulled over AI-driven manipulation. That is not a warning about the integrity of self-rule. It is the thing itself.
 

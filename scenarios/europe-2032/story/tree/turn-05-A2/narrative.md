@@ -19,6 +19,6 @@ The Hardened Cyber Shield completes and becomes permanent, folded into the next 
 
 You propose the Emergency Public Legitimacy Framework in the autumn: independent verification of elections, secured vote trails, disinformation monitoring, a public trust observatory, everything reported outward rather than to the Council. It will not be fully in place before the middle of 2029.
 
-In Dresden the first pilot line goes live. Compute grows. Control does not.
+In Dresden the first pilot line goes live. Compute grows. Control does not. Washington tightens its export controls another notch on the way out of office, which costs you nothing you were still counting on.
 
 In November the American election is won on the anti-AI platform: data centre moratoriums, restrictions on AI in public services, transfers funded by the sector. The pressure from Washington will ease, and so will the partner you have been depending on.

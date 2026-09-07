@@ -6,11 +6,6 @@ prev: turn-05-P1
 next: turn-06-P12
 ---
 
-<!-- situation: shared with the paired option -->
-## What has happened
-
-An election in an established democracy is annulled, with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it mattered enough to void a result. In the same weeks, a coalition of frontier developers and allied technology firms files a formal challenge against your Evaluation Shield, arguing its inspection powers violate intellectual property protections. The case goes to the European courts.
-
 # Expand the sovereign compute
 
 **Emergency Sovereign Compute Mobilisation.** Sovereignty and industrial capacity. Large; running until the second half of 2029.

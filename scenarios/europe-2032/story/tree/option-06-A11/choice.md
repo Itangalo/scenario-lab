@@ -6,11 +6,6 @@ prev: turn-05-A1
 next: turn-06-A11
 ---
 
-<!-- situation: shared with the paired option -->
-## What has happened
-
-A discontinuous release moves the frontier further in one step than in the preceding two years, and everything written about deployment timelines the week before is obsolete. Then a draft internal assessment leaks from a leading European biosecurity laboratory: the pathogen design from the genome model incident could be reconstructed and tested for under €100,000 by someone with moderate technical skill.
-
 # Detect and endure
 
 **BioShield Rapid Detection Network.** Preparedness and resilience. Large; running until the second half of 2030.

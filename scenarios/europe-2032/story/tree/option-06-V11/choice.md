@@ -6,11 +6,6 @@ prev: turn-05-V1
 next: turn-06-V11
 ---
 
-<!-- situation: shared with the paired option -->
-## What has happened
-
-A blockade halts advanced semiconductor exports. Compute supply for everyone outside China's domestic chain is disrupted for years, every AI policy question becomes a security question overnight, and the Union's upstream position in lithography and materials is suddenly both your strongest card and your most exposed flank.
-
 # Integrity watch
 
 **Systemic Integrity Watch.** Evaluation and oversight. Small; running until the second half of 2029.

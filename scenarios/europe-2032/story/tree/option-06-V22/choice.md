@@ -6,11 +6,6 @@ prev: turn-05-V2
 next: turn-06-V22
 ---
 
-<!-- situation: shared with the paired option -->
-## What has happened
-
-A large, largely automated attack lands. The damage is real and public, the defenders are visibly behind, and attribution will take months. Severity scales with how far offensive capability has outrun defence, and you already know that number.
-
 # Shield the systems
 
 **Sovereign Cyber Shield Initiative.** Preparedness and resilience. Large; running to the first half of 2030.

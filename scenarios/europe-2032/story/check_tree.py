@@ -379,17 +379,161 @@ def run_checks(tree_dir: Path, tree: dict[str, Any], only: str | None = None) ->
             continue
         fired = None
         if data.get("source"):
-            # An option was drawn against the pinned situation of the turn it
-            # leads into, so it may name that turn's events as well as anything
-            # already in the parent run's history.
+            # A choice page shows only what the reader has already seen. The
+            # pinned events of the turn it leads into have not happened yet at
+            # the moment of choosing, so naming them is the error to catch.
             prev = nodes.get(data.get("prev_node") or "")
             fired = fired_through((prev.get("provenance") or {}).get("turn_dir")
                                   if prev else None)
-            for target in (data.get("next_node") or []):
-                fired |= {e["id"] for e in nodes.get(target, {}).get("events", [])}
         check_node(tree_dir / name, data, event_ids, problems, fired)
         check_provenance(name, data, problems)
     return problems
+
+
+# Written prose never contains an event id — in-world writing forbids it — so
+# the id-matching check above enforces nothing once a node is written. These
+# phrases are how a thread actually appears on the page. A phrase maps to every
+# event it could plausibly mean, and only counts as a dangling reference when
+# none of them has happened yet on that path.
+THREAD_PHRASES: list[tuple[str, set[str]]] = [
+    (r"pathogen|blueprint|genome model|bio-?agent",
+     {"bio_uplift_findings", "bio_incident", "emergent_biosecurity_leak",
+      "emergent_open_bioscience_breakthrough", "emergent_open_source_biosecurity_tools"}),
+    # A precursor must not stand in for its escalation: rising tension is not
+    # a blockade, and treating them as one phrase hid exactly that error once.
+    (r"blockade", {"taiwan_blockade"}),
+    (r"Taiwan|semiconductor export|shipping insurance",
+     {"taiwan_blockade", "taiwan_tension_rise"}),
+    (r"ransomware|automated attack|zero-day|machine-crafted|machine-generated|cyber incident",
+     {"cyber_major_incident", "cyber_test_shot"}),
+    (r"locked out|cut off from the leading model|denial of access|access denied",
+     {"eu_frontier_access_denied"}),
+    (r"annulled|voided",
+     {"election_annulled"}),
+    (r"self-referential|improvements to (?:its|their) own|recursive",
+     {"rsi_onset"}),
+    (r"stop explaining themselves|no longer legible|opaque reasoning|"
+     r"reason in ways .{0,40}(?:cannot|no longer) follow",
+     {"opaque_reasoning"}),
+    (r"(?:breakthrough|advance|result|gains) in interpretability|"
+     r"interpretability (?:breakthrough|advance|result|gains)|circuit-tracing",
+     {"safety_breakthrough", "emergent_circuit_tracing_leak"}),
+    (r"investment collapse|investment in [^.]{0,40}(?:collapses|retrench\w+)|budgets shrink",
+     {"ai_investment_collapse"}),
+    (r"open weights|publish\w+ (?:the |an )?open|open-weight version|published in the open",
+     {"openweight_frontier_release", "emergent_openweight_breakthrough"}),
+    (r"pressure on ASML|ASML.s servicing|restrict\w* .{0,40}lithography|export control|export scrutiny|"
+     r"lithography export|servicing of .{0,30}lithography",
+     {"supply_chain_coercion", "export_control_escalation"}),
+    (r"bilateral[^.]{0,30}deal|cuts its own arrangement|defection|signs its own",
+     {"member_state_defection"}),
+    (r"automated decision|redress",
+     {"automated_decision_scandal"}),
+    (r"replicate[sd]? itself|evad\w+ containment|loss-of-control|"
+     r"outside containment",
+     {"loss_of_control_incident"}),
+    (r"moratorium",
+     {"campaign_backlash", "emergent_regulatory_backlash"}),
+    (r"clinical coding|automated (?:checks|verification)|verification widen",
+     {"verification_widens"}),
+    (r"treatments arrive|medicine delivers",
+     {"medical_breakthrough"}),
+    (r"behaviour it cannot explain|goal persistence|evaluation anomal\w+|anomal\w+ (?:report|behaviour|finding)s?",
+     {"eval_anomaly_reports"}),
+    (r"energy backlash|data centre protest|protests? (?:target|against) .{0,20}data centre",
+     {"emergent_energy_backlash", "backlash_physical", "campaign_backlash"}),
+    (r"strike",
+     {"emergent_eu_aid_strike"}),
+    (r"watchdog",
+     {"emergent_global_ai_watchdog"}),
+]
+# Anchored at a word boundary: "blocked outright" contains "locked out", and
+# that substring match was the first thing this report got wrong.
+COMPILED_PHRASES = [(re.compile(r"\b(?:" + p + r")", re.I), ids, p)
+                    for p, ids in THREAD_PHRASES]
+
+
+COVERED: set[str] = set()
+for _p, _ids in THREAD_PHRASES:
+    COVERED |= _ids
+
+
+def reader_paths(tree: dict[str, Any]) -> list[list[str]]:
+    """The 24 node sequences a reader can actually walk, in order."""
+    blocks = {b["block"]: b for b in tree["blocks"]}
+    paths = []
+    for leaf in sorted(b["block"] for b in tree["blocks"] if b["stage"] == 3):
+        stage2, stage1 = leaf[:-1], leaf[:-2]
+        nodes = ["turn-01", f"option-02-{stage1[1]}"]
+        nodes += [f"turn-{t:02d}-{stage1}" for t in blocks[stage1]["turns"]]
+        nodes += [f"option-06-{stage2}"]
+        nodes += [f"turn-{t:02d}-{stage2}" for t in blocks[stage2]["turns"]]
+        nodes += [f"option-10-{leaf}"]
+        nodes += [f"turn-{t:02d}-{leaf}" for t in blocks[leaf]["turns"]]
+        paths.append(nodes)
+    return paths
+
+
+def continuity(tree_dir: Path, tree: dict[str, Any]) -> int:
+    dangling: dict[str, set[str]] = {}
+    unmentioned: dict[str, set[str]] = {}
+    written_total = 0
+    for path in reader_paths(tree):
+        seen: set[str] = set()
+        mentioned: set[str] = set()
+        fired_on_path: set[str] = set()
+        for name in path:
+            node = tree_dir / name
+            data_path = node / "data.json"
+            if not data_path.is_file():
+                continue
+            data = json.loads(data_path.read_text(encoding="utf-8"))
+            own = {e["id"] for e in data.get("events", [])}
+            # A turn announces its own events, so they are available to it.
+            # A choice page sits before the next turn and gets nothing new.
+            seen |= own
+            prose_path = node / ("choice.md" if (node / "choice.md").is_file()
+                                 else "narrative.md")
+            if not prose_path.is_file():
+                continue
+            text = prose_path.read_text(encoding="utf-8")
+            if fm_status(text) != "written":
+                continue
+            written_total += 1
+            # Only count an event as unreferenced once the turn that carries it
+            # is actually written; otherwise the list is just a list of what is
+            # left to do.
+            fired_on_path |= own
+            body = body_of(text)
+            for pattern, ids, source in COMPILED_PHRASES:
+                if not pattern.search(body):
+                    continue
+                if ids & seen:
+                    mentioned |= ids & seen
+                else:
+                    dangling.setdefault(name, set()).add(
+                        source.split("|")[0][:38])
+        # An event with no phrase in the map cannot be detected, so reporting
+        # it as unreferenced would be the instrument mistaking its own blind
+        # spot for a finding.
+        for eid in (fired_on_path & COVERED) - mentioned:
+            unmentioned.setdefault(eid, set()).add(path[-1])
+
+    print(f"continuity over {len(reader_paths(tree))} reader paths "
+          f"({written_total} written node readings; {len(COVERED)} of the "
+          f"catalogue's threads have phrases, the rest are invisible here)")
+    if dangling:
+        print("\n  references to a thread the reader has not met:")
+        for name in sorted(dangling):
+            print(f"    - {name}: {', '.join(sorted(dangling[name]))}")
+    else:
+        print("\n  no dangling references")
+    if unmentioned:
+        print("\n  fired but never referenced on a path (prompts, not faults):")
+        for eid in sorted(unmentioned):
+            n = len(unmentioned[eid])
+            print(f"    - {eid} ({n} path{'s' if n > 1 else ''})")
+    return 0
 
 
 def self_test() -> int:
@@ -467,6 +611,8 @@ def main() -> int:
     ap.add_argument("--block", help="only nodes whose name contains this")
     ap.add_argument("--self-test", action="store_true",
                     help="verify the checker catches planted faults")
+    ap.add_argument("--continuity", action="store_true",
+                    help="report narrative threads per reader path (advisory)")
     args = ap.parse_args()
 
     if args.self_test:
@@ -475,6 +621,8 @@ def main() -> int:
 
     tree = json.loads((STORY / "tree.json").read_text(encoding="utf-8"))
     tree_dir = STORY / "tree"
+    if args.continuity:
+        return continuity(tree_dir, tree)
     if not tree_dir.is_dir():
         print("no tree/ — run extract_tree.py first", file=sys.stderr)
         return 2

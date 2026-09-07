@@ -19,4 +19,6 @@ Your Assurance Directorate begins staffing its evaluation cell, and the interest
 
 Underneath, a machine-optimised attack disrupts public services in three member states using zero-day tooling derived from leaked frontier models. Defences are overwhelmed and recovery is slow.
 
+And further off, on a file nobody has time for this half-year: extended military exercises around Taiwan, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss.
+
 The access denial is read at home as a humiliation and a self-inflicted wound at once. The press asks whether the Union can act coherently under pressure, which is a fair question this half-year.

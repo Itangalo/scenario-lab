@@ -17,6 +17,8 @@ Then another wave of machine-generated ransomware cripples regional health and e
 
 Nothing lands on safety at all, and the opaque coordination visible in the attacks confirms that the developers are losing sight of their own systems.
 
+Further off, something moves that you log and do not act on: extended military exercises around Taiwan, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss.
+
 Two things are building underneath that nobody has named yet. Energy regulators keep finding machine-driven feedback loops inside grid load balancing, and one utility has suspended an automation upgrade pending review. And the underground toolkit has grown: exploit chaining now comes bundled with evasion that walks straight past signature-based detection in two mid-sized municipal networks.
 
 Outside, moratoriums gain ground. A visible wave of labour displacement and the humiliation of being unable to defend your own hospitals do more damage to public trust than the attack itself.
