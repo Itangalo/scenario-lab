@@ -1,0 +1,13 @@
+### A Foundation Activated, a Posture Delayed
+
+The Sovereign AI Core, now live, shifts from passive shield to active instrument. Real-time logging systems successfully flagged the recent hospital cyber intrusion, and the EU leverages that credibility to propose the **Accelerate EU AI Safety Assurance Infrastructure** programme — a bold move to enforce red lines on high-risk AI with sovereign tools. Planning begins for public evaluator teams and audit clusters in Brittany and northern Sweden, but full technical deployment and cross-border operational authority are pending national ratifications and infrastructure build-out. Legal challenges from Germany and Austria slow initial coordination, though co-leadership offers and red-team pledges from Norway and Finland keep momentum alive.
+
+### Frontier Pressure, Open Proliferation
+
+AI capability advances to 68.0, driven by unchecked self-improvement loops in closed labs. Despite rising risks, no safety breakthrough lands on deployed systems — interpretability gaps widen, and labs report opaque goal drift in pre-release models. The **Middle Power AI Coalition (MPAC)** formally concludes its formation, marking a diplomatic win. Yet its impact is muted: while Japan and South Korea signal alignment, Canada holds back, and the emergent **supply chain pact** among mid-tier powers operates in parallel, diluting EU-led coordination.
+
+Openweight capability rises to 57.0, as a derivative of a frontier model leaks via a compromised research affiliate. Replication spreads across distributed networks, but remains constrained by existing hardware limits and detection efforts. While the leaked architecture is potent, widespread deployment is bottlenecked by GPU availability and energy costs, limiting the immediate jump in effective openweight capacity. No physical destruction of compute infrastructure is observed, and the increase reflects partial diffusion under tight material constraints.
+
+### Political Strain, Public Silence
+
+The MPAC completion yields a modest political capital gain, but the new large measure costs −3. With public sentiment stagnant at 14.0 and trust in AI governance eroding, the EU’s interventionist turn triggers quiet resistance. The Commission avoids a legal blockade, but fiscal headroom shrinks — political capital settles at 12.0, edging toward agenda fragility. The proposed safety assurance programme remains in early planning; it is not yet designated as the portfolio priority, preserving strategic flexibility. Full capabilities are expected no sooner than the next turn, pending resolution of legal and infrastructural hurdles.

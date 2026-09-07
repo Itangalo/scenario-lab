@@ -1,0 +1,430 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1077941841562241,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6372778160443942,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3026484223289494,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9906490437537927,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4621724992458308,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.11288656585413603,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6270997044250148,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7105239248614936,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.816860427489505,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9810221384537647,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2159669099594338,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8103673880262087,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.14923843938212533,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.12,
+    "probability_samples": [
+      0.1,
+      0.16,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4229890178432628,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.12562656005521622,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5020822509036255,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5236538924981271,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9020050513007549,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7520444540061392,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.025890737936500763,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21714184497705757,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4871325923488543,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8329192247005066,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.39173257457308563,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.02035545799156846,
+    "triggered": true
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1870850278800118,
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_crisis_response",
+    "probability": 0.14333333333333334,
+    "emergent": true,
+    "description": "A coalition of EU member states, alarmed by the persistent erosion of public trust and repeated infrastructure shocks, launches an emergency cross-border task force to coordinate AI incident response, public communication, and labour transition measures. This marks the first time national crisis frameworks are being harmonized in real time, outside formal EU structures, in response to systemic AI risks.",
+    "probability_samples": [
+      0.21,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7217480576273843,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientific_embargo",
+    "probability": 0.05666666666666667,
+    "emergent": true,
+    "description": "Following the latest unexplained reasoning shifts in pre-release models, a growing number of frontier AI researchers unilaterally halt public sharing of training methodologies and evaluation frameworks, citing safety concerns. This informal embargo spreads across multiple leading labs outside the EU, significantly slowing open progress and increasing information asymmetry between closed and open frontiers.",
+    "probability_samples": [
+      0.17,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.09197797985431433,
+    "triggered": false
+  },
+  {
+    "id": "emergent_public_sector_strikes",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Widespread AI-driven displacement in public administration and legal sectors triggers coordinated strikes across multiple member states, demanding binding safeguards on AI adoption in government roles. The strikes disrupt core services and force emergency debates in several capitals, creating political pressure that could either accelerate protective legislation or trigger a backlash against 'anti-progress' sentiment.",
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_crisis_review",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A coalition of EU member states and civil society bodies calls for an independent crisis review of the Union's AI governance framework, citing repeated frontier access denials, safety erosion, and public backlash. The proposal gains traction in the European Parliament as a response to the perceived failure of current institutions to protect strategic autonomy.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_human_futures_movement",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "The Human Futures Movement, a transnational civil society network focused on post-labour societal design, gains momentum across EU urban centres. It organizes mass assemblies on universal basic services and AI-driven automation, framing technological transformation as a societal transition rather than an economic inevitability. The movement begins influencing local policy agendas in several major cities.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

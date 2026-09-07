@@ -1,0 +1,11 @@
+### A Scandal Reshapes the Agenda
+
+The European Union confronts a crisis of legitimacy after a damning ombudsman report reveals systemic errors in AI-supported social insurance decisions across Belgium and Germany, disproportionately affecting vulnerable populations. Public trust, already strained, erodes further as media spotlight failures in algorithmic fairness and redress. In response, the Commission pivots sharply from forward-looking surveillance to institutional repair.
+
+The **Autonomous System Boundary Trials** conclude this turn, delivering technical detection protocols for untrained reasoning to the AI Office. However, their impact is muted: the political window for expanding monitoring authority has closed. Operators in Poland and Bavaria cite public backlash—not just legal uncertainty—as grounds to delay integration of the **Critical Function Sentinel Deployment**.
+
+Amid the fallout, the EU launches the **Public AI Accountability and Redress Initiative**, a large category 3 measure prioritised to restore credibility. It funds nationwide audits of AI use in social benefits and pre-trial assessments, establishes an EU appeals panel for compensation, and mandates minimal explainability logs by mid-2033. The initiative draws on repurposed funds and emergency clauses, signalling urgency.
+
+Diplomatically, the EU co-founds a **middle power coalition** with Japan, South Korea, and Canada, aligning export controls and jointly negotiating compute access terms. This strengthens leverage in supply chains and secures partial autonomy gains.
+
+AI capability advances to 72.0, driven by unchecked frontier development. Openweight capability rises to 60.5, reflecting wider diffusion of adaptive tools—now implicated in synthetic election interference campaigns using lightly customised models. Resilience holds at 47.0; no progress from new measures yet. AI safety dips slightly due to capability growth outpacing assurance. Sovereignty declines as dependence costs persist despite coalition gains. Political capital falls under portfolio strain, though the coalition provides a partial offset. Public sentiment sees modest improvement from the redress push.

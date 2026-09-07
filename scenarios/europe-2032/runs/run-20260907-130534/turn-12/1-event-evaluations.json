@@ -1,0 +1,359 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5184080503418683,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5941983074280759,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.06,
+    "probability_samples": [
+      0.02,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3080951747273689,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6736827869137815,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.286422450769109,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8112578848222975,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.17934293976132953,
+    "triggered": true
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.238649688101794,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9451954518966108,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.26931040231428427,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8549168488721857,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9490609624114871,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7326684120148572,
+    "triggered": false
+  },
+  {
+    "id": "emergent_human_futures_movement",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A transnational civil society movement gains momentum, demanding a legally enforceable right to a human-run public sphere in education, justice and care. It frames AI dependence as a democratic erosion, not just an economic shift, and begins influencing municipal procurement policies across Western Europe.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8784422827164491,
+    "triggered": false
+  },
+  {
+    "id": "emergent_supply_chain_pact",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Japan, the Netherlands and Belgium formalize quiet coordination on dual-use AI supply-chain controls, creating a de facto cartel for advanced chipmaking equipment and verification tools. The pact operates outside multilateral frameworks, responding to both US pressure and EU fragmentation with pragmatic exclusion.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9149639836701274,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9970935230703232,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7775917372848199,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9880750884611569,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3395767787824149,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4005557148676745,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7497987858885481,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.37315226072452934,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8973532151203166,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.17174390697022834,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2916067506302681,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.625557690787875,
+    "triggered": false
+  }
+]

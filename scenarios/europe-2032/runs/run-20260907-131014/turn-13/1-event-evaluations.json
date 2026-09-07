@@ -1,0 +1,370 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4739015764505389,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9999799648393528,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.04,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.45028157610054553,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11450479242098388,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9890186764239605,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.08,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6970569606212651,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9873498201934946,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.986393495131405,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8503118957644099,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3195243400766825,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3962918534323693,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.16028981550966215,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.494810857949324,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5311991836755527,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8010582215562531,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.39378067468669287,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6581978416772251,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6824520019593423,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.318952712331144,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6228035325261752,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3011010734914905,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.012127432376843106,
+    "triggered": true
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7242922602789305,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09333333333333332,
+    "probability_samples": [
+      0.06,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7931117462981727,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6438307108040413,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2220009667229722,
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_pushback",
+    "probability": 0.2833333333333334,
+    "emergent": true,
+    "description": "A coalition of European civil society groups, regional governments, and data protection officers formally challenges the EAAD's expanded intervention powers in the European Court of Justice, arguing that real-time model forking and freeze authority bypasses due process. The case gains traction in Germany, Austria, and Belgium, slowing enforcement tempo and forcing a review of oversight mechanisms.",
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.39171895622282915,
+    "triggered": false
+  }
+]

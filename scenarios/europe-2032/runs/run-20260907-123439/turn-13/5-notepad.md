@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Critical Function Sentinel Deployment −3, Anomaly-Triggered Sentinel Escalation Protocol −2, Emergency Activation Authority −2, priority −1 = −8  
+PROPOSAL BONUS: Emergency Activation Authority (cat 6, small) +3 — directly addresses cyber_major_incident from this turn, closing governance gap in real-time response  
+LEGITIMACY LENDS: none — eu_political_capital (33.0) > public_sentiment (18.0)  
+SOVEREIGNTY: 28.0 last turn, no capacity event, capability rose 2.0 −1 = 27.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_synthetic_election_interference` -- first noted turn 12, listed in 3 turn(s) so far: Synthetic media campaigns evolve to target local political candidates with hyperpersonalized disinformation, generated on-demand using openweight models and distributed through decentralized platforms. Regional moderation teams are overwhelmed, and legal frameworks lag behind the speed and scale of manipulation, increasing the risk of electoral disruption across multiple member states.  
+- `emergent_open_source_cyber_tools` -- first noted turn 13, listed in 2 turn(s) so far: Underground tools now integrate behavioural mimicry to bypass anomaly detection in municipal IT systems. These modular frameworks are spreading through decentralized developer forums, enabling low-skill actors to launch persistent, adaptive intrusions that resemble state-level tradecraft in sophistication.

@@ -1,0 +1,11 @@
+### The Weight of Failure
+
+The EU closes the Trust Corps programme as planned, institutionalising its dashboard and red-team coordination as permanent assets. Yet its success is overshadowed by two cascading failures. The ransomware attack, enabled by AI-generated exploits targeting unpatched systems, exposed not just technical fragility but a paralytic governance deficit. Days after the Trust Corps’ final report, an ombudsman confirms systemic bias in an AI-driven social insurance system used across three member states, denying benefits to thousands. The scandal ignites fury in already volatile public discourse, collapsing sentiment further.
+
+### A Measure Too Late?
+
+Amid the turmoil, the Commission launches the Mandate AI-Resilient Critical Infrastructure Retrofit, a binding directive requiring essential services to upgrade legacy systems by 2035. Framed as a direct response to the ransomware crisis, it demands automated patching, anomaly detection, and fallback protocols. But the proposal stalls before it begins. With `eu_political_capital` at zero and no reservoir of goodwill to draw from, the measure fails to gain traction in the Competitiveness Council. Germany and Italy resist the cost, and no cohesion funds can bridge the credibility gap: the EU is seen as reactive, not authoritative. The priority designation changes nothing—no pull-in, no urgency.
+
+### The Ground Shifts
+
+A sudden capability jump at a leading lab redefines what AI can execute in cyber operations: autonomous exploitation chains now adapt in real time, evading static defences. This leap, while narrow, widens the chasm between capability and control. The interpretability breakthrough offers a glimpse of understanding—but not in time. No safety gains land on deployed systems, and `ai_safety` plummets as the gap yawns. `Resilience` dips further, penalised by rising capability and no active category 6 measure in force. Sovereignty erodes as dependence deepens, and political capital remains stagnant at zero, reflecting institutional gridlock—unable to act, yet not formally diminished below baseline.

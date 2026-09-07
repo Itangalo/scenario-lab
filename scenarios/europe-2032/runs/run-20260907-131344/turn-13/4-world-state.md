@@ -1,0 +1,13 @@
+### The Storm Intensifies
+
+Despite desperate efforts, the EU’s political paralysis deepens. The attempt to reframe the AI-resilient infrastructure mandate as a security issue under Article 42 TFEU fails to shift the balance: Germany remains unconvinced that sovereignty in AI defence justifies fiscal exposure, while Italy demands cohesion transfers the Union cannot fund. The Foreign Affairs Council, though more receptive than the Competitiveness Council, stalls on legal competence—cyber-resilience, it argues, does not yet meet the threshold of armed aggression. The revised proposal collapses into intergovernmental negotiation, achieving nothing in this turn.
+
+### A World Moving On
+
+Meanwhile, the frontier advances. A leading lab achieves a narrow but decisive leap in real-time adversarial adaptation, pushing `ai_capability` to 72.5. This enables AI systems to dynamically reconfigure exploit chains mid-attack, evading static defences. The capability is not yet general, but its implications ripple through intelligence and infrastructure circles. `openweight_capability` rises to 61.0—modestly—reflecting limited diffusion of fragments into open repositories, despite ongoing disruptions. Leaks from disgruntled researchers and compromised contractors do occur, but their impact is constrained: the spreading physical backlash against AI infrastructure—including data centre occupations in France and sabotage in Poland—degrades network stability and halts several open-weight training runs. These attacks disrupt compute availability and erode trust in shared infrastructure, slowing the integration of new techniques.
+
+### Safety, Resilience, Sovereignty — All Eroding
+
+No safety gains land on deployed systems. Interpretability tools remain experimental, and the gap between capability and control widens. `ai_safety` holds at 8.0, a floor only because the metric cannot fall below the damage already done. With no active category 6 measure delivering protection, and capability rising, `resilience` drops to 34.0. The physical backlash spreads, straining internal security forces and confirming the Union’s loss of control.
+
+Sovereignty slips to 3.0 as dependence on foreign AI capacity grows unchecked. The emergent alignment with Japan and South Korea offers hope, but no tangible access shift occurs this turn. Political capital remains at 0.0—the system is frozen. No new measure starts, and the priority designation changes nothing. Public sentiment, scarred by scandal and disruption, stays at 2.0. The EU is not governing. It is enduring.

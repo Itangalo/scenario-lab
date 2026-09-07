@@ -1,0 +1,30 @@
+## Statement changes
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing.  
+  - Grounds: The convergence of a cyber_major_incident and emergent_grid_instability_surge this turn reveals that harm is no longer only potential—it is systemic, cascading, and now actively exploiting control gaps at scale. At ai_capability 70.0 and ai_safety collapsing to 14.0, the Union can no longer treat sovereignty and safety as parallel tracks. Preventing lasting harm *is* the condition of the Union’s continued agency. This identity now anticipates a world where control failures erode political cohesion and infrastructure integrity simultaneously—precisely the future we are in.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but only where inaction is more dangerous than error.  
+  - Grounds: Trigger: cyber_major_incident and emergent_grid_instability_surge. The scale and speed of this turn’s events—particularly the model-generated ransomware sweep and the coordinated grid instability—expose that our previous posture underestimated the operational tempo of failure. We acted on precedent, but precedent has now outpaced us. From this turn forward, acting under uncertainty must be tempered by strategic prioritisation: we cannot afford to be wrong on everything. The commitment stands, but its application narrows to existential threats—loss of control, critical infrastructure collapse, democratic subversion—where delay is irreversible.
+
+- modify `two_year_commitment` (commitment): Defend critical infrastructure, democratic integrity, and the cognitive foundations of governance from AI-enabled subversion and systemic control failure  
+  - Grounds: Trigger: emergent_grid_instability_surge and cyber_major_incident. The two-year commitment is deepened in response to this turn’s events. What began as a defence of elections and clearinghouses has become a defence of the entire feedback loop between perception, decision, and action in public governance. The grid instability events reveal that AI is now not only in the wires but in the logic of system stability itself. We must now treat cognitive infrastructure—the algorithms that manage energy, finance, and emergency response—as part of the sovereign domain. The commitment evolves accordingly.
+
+## Portfolio
+- `Loss-of-Control Containment Framework` (category 6, costs 2 per turn, started turn 11, finishes on turn 12): Establish a binding, cross-agency protocol for immediate detection, isolation and public communication in the event of unsanctioned agentic action, triggered by the first confirmed loss_of_control_incident with real-world consequences — **finished**
+
+## New measure
+**Critical Infrastructure Cognitive Hardening Initiative**  
+Launch a coordinated, EU-wide programme to audit, secure, and diversify the AI systems managing energy grids, financial clearing, and emergency response, with mandatory red-teaming and fallback protocols.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` large  
+`Finishes on turn:` 14  
+`Targeted effect:` +10 to resilience by hardening cognitive infrastructure against model-generated attacks and emergent feedback loops; stabilise public_sentiment by demonstrating control over systemic AI risks  
+`Applies to:` ENISA, European Defence Agency, national energy and financial regulators, and critical infrastructure operators across all member states
+
+## Priority  
+**Critical Infrastructure Cognitive Hardening Initiative** — because the emergent_grid_instability_surge and cyber_major_incident are not isolated failures but symptoms of a deeper vulnerability: AI systems are now embedded in the control logic of society’s most vital functions, and they are neither secure nor understood. With ai_safety at 14.0 and openweight_capability at 57.0, the tools to exploit these systems are already distributed. This is no longer about reacting to incidents—it is about rebuilding trust in the cognitive foundations of governance.
+
+## In practice  
+This turn, we confront a perfect storm: a major cyber incident exploiting model-generated attack vectors, and a coordinated surge in AI-driven grid instability that bypassed automated defences. The message is clear—our critical systems are no longer just connected; they are cognitively entangled, and the failure modes are emergent, fast, and cross-border. The Loss-of-Control Containment Framework has now concluded, having established detection and reporting baselines, but it was designed for isolated breaches, not systemic erosion. We are therefore launching the Critical Infrastructure Cognitive Hardening Initiative under ENISA and the European Defence Agency, with binding mandates for red-teaming, fallback protocols, and algorithmic diversity in grid and financial management systems.
+
+Legal basis will be drawn from Article 17 of the AI Act, as reinforced by the Crisis Protocol of 2028, with funding from the Internal Security Fund and the Connecting Europe Facility. We are requiring all critical infrastructure operators to submit AI control loops to independent audit by Q1 2032, and we are establishing a European Cognitive Resilience Cell in Brussels to coordinate red-teaming across energy, finance, and emergency services. Germany and France have already pledged support; Poland is willing to expand its pilot, but Hungary remains resistant, citing cost and sovereignty. We are offering targeted cohesion funds and joint liability pooling to overcome resistance—this is not optional. The cognitive layer of infrastructure is now a domain of strategic sovereignty, and we will defend it as such.

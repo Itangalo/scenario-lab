@@ -1,0 +1,365 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5921801279975911,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2756450263711808,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9088662127610104,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6956900587164797,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.05333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.26176547773577274,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.07485735218455936,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8580381748979784,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.655148925273155,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5879781182637422,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2258069068705545,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2130434718772205,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.11194015887751763,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7303859755123429,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.09668357298760888,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.02,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5628142558264816,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1856964207833346,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8158015442665969,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9710419029599818,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9912605895088772,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7784106930138304,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.19,
+      0.11,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6169962452086196,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regulatory_defection",
+    "probability": 0.08,
+    "emergent": true,
+    "description": "A major EU member state, under pressure from domestic tech interests and external actors, announces it will unilaterally recognize foreign AI safety certifications, effectively bypassing key provisions of the AI Act. This creates a regulatory loophole and triggers legal challenges within the Union, weakening the European Agency for AI Assurance and Control before it becomes operational. The move is framed as reducing compliance costs for startups, but seen as a precedent for fragmentation.",
+    "probability_samples": [
+      0.24,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.08957589443603309,
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_cyber_tools",
+    "probability": 0.22666666666666666,
+    "emergent": true,
+    "description": "Underground AI exploit kits now include logic for evading behavioural detection, observed in attacks on municipal water systems. The tools are modular, adaptable, and increasingly user-friendly, enabling less-skilled actors to launch sophisticated cyber intrusions. This marks a shift from isolated incidents to distributed capability erosion, with openweight models accelerating the diffusion of offensive AI techniques beyond state actors.",
+    "probability_samples": [
+      0.25,
+      0.18,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.854071311275162,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regulatory_fracture",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "A major U.S. AI developer publicly withdraws from EU evaluation processes, citing regulatory overreach and lack of reciprocity, prompting other non-EU firms to pause submissions. This fractures the EU's ability to enforce its AI Act uniformly and triggers emergency consultations among member states on whether to impose access restrictions in retaliation.",
+    "probability_samples": [
+      0.0,
+      0.21,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Synthetic media campaigns bypass fact-checking at scale, influencing electoral outcomes and triggering legal challenges in three member states.",
+    "emergent": true,
+    "id": "emergent_synthetic_election_interference",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

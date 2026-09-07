@@ -1,0 +1,307 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1813156468807715,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5098346775860423,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9825823370746513,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.99571482492395,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8694105525203357,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16779505296326636,
+    "triggered": true
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08954983958088081,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10187658806760191,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7680218723156238,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09333333333333332,
+    "probability_samples": [
+      0.11,
+      0.06,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.564765100612852,
+    "triggered": false
+  },
+  {
+    "id": "emergent_chip_foundry_alliance",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to repeated supply-chain coercion and the emergence of the supply-chain pact, a consortium of EU member states, South Korea, and Japan quietly begins negotiations to co-fund a sovereign chip foundry network outside U.S. jurisdiction, leveraging EU materials infrastructure and Asian process expertise. The initiative is not yet public, but early technical exchanges and feasibility studies are underway.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.20195925230499778,
+    "triggered": false
+  },
+  {
+    "id": "emergent_human_futures_movement",
+    "probability": 0.20666666666666667,
+    "emergent": true,
+    "description": "A transnational civil society coalition, 'Human Futures,' gains traction across European cities, demanding democratic oversight of AI deployment and a moratorium on autonomous decision-making in public services. It unites labor unions, digital rights groups, and faith communities, staging coordinated protests and influencing local elections. The movement leverages open-weight tools to organize and simulate policy alternatives, marking a shift from reactive backlash to structured political challenge.",
+    "probability_samples": [
+      0.15,
+      0.25,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.004627775691874891,
+    "triggered": true
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.08959226457533764,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.443908583313085,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5227077820821799,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4781181825097818,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3683899892265775,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3835156805774279,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7324856209781547,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5551732970636032,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2198741379030278,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4661936423096227,
+    "triggered": false
+  }
+]

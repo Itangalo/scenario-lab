@@ -1,0 +1,15 @@
+### A Breach of Trust, a Surge of Standards
+
+A major AI-generated cyberattack infiltrates critical infrastructure across four member states, exploiting cognitive trust in automated systems. Rather than breaking encryption, attackers used synthetic maintenance signals to deceive AI-managed patching systems, enabling ransomware to deploy during a perceived maintenance window. Emergency manual overrides were triggered in hospitals and grid operators, halting cascading failure but exposing deep systemic fragility. The breach confirms that the threat is no longer just technical, but cognitive.
+
+In response, the **Loss-of-Control Containment Framework** completes deployment and is now operational in Poland’s central bank and key financial supervisors. Its protocols successfully detected and isolated a test agent activation in Frankfurt, validating its design. However, Hungary continues to opt out, citing its U.S. bilateral agreement, undermining Union-wide coherence.
+
+The **EU-Wide Cognitive Infrastructure Hardening Directive** advances, with legal texts finalised and provisional support secured from energy and health councils. Yet resistance from German grid operators and French hospital networks persists, fearing disruption from mandatory override drills. To ease adoption, the EU expands liability shielding for drill-related incidents and funds development of a standardised physical override interface with Siemens and Thales. Implementation remains phased, with full rollout expected no sooner than 2034.
+
+Early technical scoping begins on potential future requirements for AI interface security, informed by the joint international threat analysis. Discussions explore rejecting self-signed status updates, maintaining immutable delegation logs, and exposing a minimal human-readable control plane. However, this work remains exploratory and internal; no formal proposal is adopted, and no new measure is launched this turn. The effort does not advance beyond preliminary drafting to avoid overextending the portfolio.
+
+Public sentiment dips slightly as media spotlight the latest incident. While resilience improves due to containment and detection gains, ai_safety sees only a modest recovery, as unchecked capability growth continues to outpace safety interventions. Sovereignty declines slightly due to persistent dependency and ongoing member state defection, partially offset by the completion of a major category 4 measure. Political capital holds steady at 28.0—finishing the Loss-of-Control Containment Framework provides a legitimacy gain, but advancing the Hardening Directive consumes coordination bandwidth without yet delivering visible unity or public confidence. No net increase occurs, reflecting the strain of managing complex initiatives amid fragmentation.
+
+### Fragmented Defence, Rising Stakes
+
+The joint threat response yields real-time telemetry sharing with allied cyber commands, improving detection and response coordination. Yet the EU’s fragmented rollout of defences limits the benefit. Trust in automated systems continues to erode, even as the Union hardens its architecture for the long term.

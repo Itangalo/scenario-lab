@@ -1,0 +1,430 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11791579454439083,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2493476807261471,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6316007129793946,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.030174249540598663,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3350538956896103,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8968186902528966,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5814307439456602,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.994661103183247,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2835717096584436,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2688224220882829,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9498912375694354,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5766461891887201,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10175614062830995,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04276091810340232,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.869639424948176,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1337376013535877,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7053007919803769,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5873962335364231,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.02062777401234539,
+    "triggered": true
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8842299263914692,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6524688301240318,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3465959462204946,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7977269884797813,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6241693114390051,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7785313878311712,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9983154117875944,
+    "triggered": false
+  },
+  {
+    "id": "emergent_human_futures_movement",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "A transnational civil society coalition emerges, uniting labour unions, education advocates, and mental health professionals around a 'Human Futures' agenda that demands binding AI deployment thresholds, cognitive rights, and public ownership of foundational education models. It gains traction in European and Japanese media, leveraging MPAC's legitimacy to push for institutionalised human oversight mechanisms.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8968264994540034,
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_crisis_forum",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "Amid deteriorating public sentiment and repeated incidents, a coalition of European civil society groups, labour unions, and regional governments forms the Institutional Crisis Forum, demanding binding oversight of AI deployment in public services and a moratorium on autonomous systems in critical infrastructure. The movement gains traction in national parliaments and begins to coordinate transnationally, pressuring the Commission to respond.",
+    "probability_samples": [
+      0.0,
+      0.21,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.49399759369236107,
+    "triggered": false
+  },
+  {
+    "id": "emergent_scientific_collapse_in_trust",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "A series of retractions in high-impact journals reveals that AI-generated research in materials science and pharmacology contained undetected errors, leading to a crisis of confidence in model-assisted discovery. Major institutions begin requiring human-led validation of all AI-proposed experiments, slowing innovation but restoring some credibility.",
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_crisis_review",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "In response to sustained public unrest and repeated governance failures, a cross-institutional EU task force is convened to review AI oversight structures, with mandate to propose structural reform by mid-2032. The review includes national audit agencies, civil society, and independent technical experts, marking the first coordinated institutional challenge to the current governance model from within the Union’s own framework.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.21
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientific_embargo",
+    "probability": 0.05666666666666667,
+    "emergent": true,
+    "description": "Following the latest wave of unexplained reasoning shifts in frontier models, a coalition of independent research institutions announces a voluntary embargo on publishing AI-driven scientific results in high-impact journals until baseline verification standards are established. The move gains traction in Europe and parts of Asia, slowing the dissemination of AI-accelerated discoveries but increasing pressure for globally coordinated evaluation norms.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.17
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

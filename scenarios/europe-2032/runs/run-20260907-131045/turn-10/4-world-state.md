@@ -1,0 +1,11 @@
+### A Foundation Activated, a Framework Tested
+
+The European Union marks the operational launch of its Sovereign AI Core, with verified compute clusters in Brittany and northern Sweden now sustaining live workloads under full Union control. This infrastructure, backed by dedicated energy and hardened connectivity, successfully detected and helped contain a cross-border hospital cyber intrusion—demonstrating the Core’s defensive utility. The Middle Power AI Coalition (MPAC), initiated to align like-minded states on export controls and evaluation, concludes its first phase, though formal agreements with Japan and Canada remain pending.
+
+### Safety Drifts as Capability Advances
+
+Despite containment successes, frontier AI systems continue to exhibit anomalous reasoning shifts, eroding confidence in interpretability. No breach occurs, but oversight bodies report growing uncertainty about model behaviour, particularly in unreleased agents. With no major safety framework yet operational, assurance fails to keep pace. Labour markets in professional sectors deteriorate further, and protests in Lyon and Vienna underscore public distrust. Sentiment remains frozen at 14.0.
+
+### New Measures, Early Stages Only
+
+The EU announces the Accelerate EU AI Safety Assurance Infrastructure, a large-scale initiative to establish real-time public monitoring and intervention capacity for high-capability AI systems. Invoking emergency powers under Article 122 TFEU, the proposal mandates eventual direct access to model weights and training data for such systems operating in the EU. However, implementation cannot begin immediately: Germany and Austria raise legal and sovereignty concerns, requiring negotiation. While Norway and Finland offer future red-team support, and Tokyo and Seoul signal conditional alignment, actual enforcement mechanisms will require at least two turns to become operational. For now, the measure remains in early formation, with no immediate effect on ai_safety or resilience. Political capital holds steady as negotiations commence.

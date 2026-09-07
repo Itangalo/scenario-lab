@@ -1,0 +1,361 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7923276385568023,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04980526889835002,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4608588316169573,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3971325581549229,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2979523723372226,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.02666666666666667,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6112053889533383,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8800863879078143,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.20168372433694393,
+    "triggered": true
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9349942496157508,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8016030708135811,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.958686509968273,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4049795265749858,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6647939015130212,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.19,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.010072418270299255,
+    "triggered": true
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9296632509963453,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.24827692032226234,
+    "triggered": false
+  },
+  {
+    "id": "emergent_public_order_breakdown",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Spontaneous, decentralized disruptions to public services intensify across multiple member states, driven by AI-enabled disinformation and real economic strain. Emergency services face sabotage and false alarms at unprecedented frequency, overwhelming response capacity. The EU struggles to distinguish coordinated attacks from cascading civil unrest, exposing critical gaps in resilience and command cohesion.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3651046374076101,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.28815707550336944,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5201268770140511,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.06
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7568097165285314,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_unrest_spread",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Spontaneous coordination emerges among displaced workers across multiple member states, leading to synchronized strikes targeting AI-integrated public services and corporate headquarters. The movement leverages open-weight models to generate localized messaging and organize logistics, bypassing traditional union structures. This marks a shift from protest to sustained disruption.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.12144085177463992,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_defector_compromise",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Counterintelligence confirms that one of the 18 AI safety defectors has exfiltrated sensitive vulnerability assessments to a foreign actor. The breach includes details on weaknesses in the EU’s red-teaming infrastructure, potentially enabling targeted evasion of detection systems. This triggers a crisis of trust in the defector programme and forces a partial rollback of access to internal evaluation tools.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.08
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.13676274290717783,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.03,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.09
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7207774372204373,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7697510679837798,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9938147552108859,
+    "triggered": false
+  }
+]

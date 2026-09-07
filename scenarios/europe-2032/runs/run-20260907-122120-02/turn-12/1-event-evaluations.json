@@ -1,0 +1,374 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1346876836224561,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6696282969328022,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.41741607666725766,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.310620325994849,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.39409067498485406,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8176222949317918,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19164625153222326,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.015582855619341585,
+    "triggered": true
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9326858079436867,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19105551471762183,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10517868138140152,
+    "triggered": true
+  },
+  {
+    "id": "emergent_sovereign_cloud_movement",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A coalition of EU member states, public banks, and energy providers advances a pan-European sovereign cloud initiative to host critical AI infrastructure on domestically controlled hardware. Initial funding is secured from seven member states, and the project gains momentum as a strategic response to hyperscaler dependency and recent loss-of-control incidents.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6853749546129241,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_refugee_wave",
+    "probability": 0.20000000000000004,
+    "emergent": true,
+    "description": "A growing number of AI researchers and engineers from non-EU countries seek relocation to the EU, citing political pressure to weaponize AI or suppress safety research. Leading EU labs quietly expand hiring, and the European Commission drafts emergency talent retention protocols, framing the influx as both a strategic opportunity and a humanitarian challenge.",
+    "probability_samples": [
+      0.2,
+      0.2,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3338258741415251,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8981452554480635,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.05413011033869042,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.43126459487062796,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7846843246462567,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.10127618391122073,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8666211380227787,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1891602517705191,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3729339353865534,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.36414497919361466,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.18246605848968167,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7592019926658329,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.317475262184862,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.07842967324990424,
+    "triggered": false
+  }
+]

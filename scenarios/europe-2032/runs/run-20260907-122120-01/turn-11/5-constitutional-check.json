@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 55.0 to 65.0 (+10.0) in one turn, which is an allowable magnitude under the 25-point cap (Constraint 9), but this increase occurs without any narrative explanation of a corresponding surge in compute availability, model training events, or release chain from prior capability levels. More critically, the jump from 55.0 to 65.0 represents a sudden leap over multiple thresholds in open-model sophistication that contradicts the steady accumulation principle in Invariant 2. While openweight may rise, it must do so as a derivative of `ai_capability` and within plausible diffusion timelines—especially since no new foundational model release event was flagged in prior turns (e.g., via `emergent_open_source_cyber_tools` or similar). The narrative mentions \"a new release\" but provides no grounding in prior development or infrastructure buildup, making this surge unearned and inconsistent with the accumulated nature of the metric.\n- Modelling choice 5 violated: The EU introduces two distinct measures in one turn — the **Sovereign Evaluation Regime** (continued) and the **EU-Wide AI Displacement Transition Fund** (launched). While continuation of an existing measure is allowed, launching a second new fund constitutes introducing a second new measure in the same turn. The notepad confirms both are active and newly charged (each with −3), indicating simultaneous initiation. This violates the rule that \"at most one new measure per turn\" may be introduced."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

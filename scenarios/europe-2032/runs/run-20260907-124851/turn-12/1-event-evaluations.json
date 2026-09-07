@@ -1,0 +1,387 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8046209649455054,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6087828669376274,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04436612911430671,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8195625214785356,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "taiwan_blockade",
+    "probability": 0.0,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.12889793981834086,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.33264176161998127,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.45103497399801196,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.44212504775467876,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9736170315054953,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6576747139271669,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8994036964143435,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8155991636521018,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9014579742569855,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.28662074803125903,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.908426603779912,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.018754161837935768,
+    "triggered": true
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.1366666666666667,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.17
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8167004671910115,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.34576832577620753,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.010028084416672689,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.09666666666666668,
+    "probability_samples": [
+      0.08,
+      0.13,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3589022553873331,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10960054546154963,
+    "triggered": true
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5112907762065017,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.18589177071999818,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.37274000436147403,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6856573124127212,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of European, Canadian, and Japanese research institutes expands its voluntary data-sharing initiative on AI anomaly detection, adding three new labs. The effort focuses on pooling interpretability findings and adversarial testing frameworks to stabilize assurance amid rising capability. This marks a sustained interest in transnational scientific cooperation on AI safety, leveraging the EU's recent institutional momentum in oversight.",
+    "emergent": true,
+    "id": "emergent_regional_scientific_consortium",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9555081849462301,
+    "triggered": false
+  },
+  {
+    "description": "Private insurers in Germany and the Netherlands begin offering tailored liability coverage for AI deployment in mid-sized enterprises, using the EU's new bounded agency standard as a benchmark for underwriting. This marks the first market-driven validation of regulatory compliance as a risk-reduction proxy, potentially accelerating adoption if scaled. The trend signals growing private-sector confidence in regulatory clarity despite ongoing technical instability.",
+    "emergent": true,
+    "id": "emergent_ai_insurance_market",
+    "probability": 0.2933333333333334,
+    "probability_samples": [
+      0.3,
+      0.28,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.42207927264797185,
+    "triggered": false
+  }
+]

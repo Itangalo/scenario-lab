@@ -1,0 +1,276 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.13127013918678232,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5291294082522155,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6366135401647799,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7274692526726415,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.06677958606928658,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.08,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.1698875435506375,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.049780179852924045,
+    "triggered": true
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.16,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7544948613197376,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.19487994490299265,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9213858517056599,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5365935416663661,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4117730847635025,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_stability_pact",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Amid growing instability and repeated cyber incidents, a group of Nordic and Benelux states quietly forms a regional stability pact focused on joint AI resilience drills, shared emergency response protocols, and coordinated public communication strategies during AI-related crises. The pact operates outside formal EU structures but aligns with MPAC goals, signaling a shift toward practical, sub-coalition burden-sharing in the absence of full Union cohesion.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9243733478659312,
+    "triggered": false
+  },
+  {
+    "id": "emergent_human_futures_movement",
+    "probability": 0.05666666666666667,
+    "emergent": true,
+    "description": "A transnational civil society network, the Human Futures Movement, gains traction across university cities and tech hubs, advocating for a 'cognitive sovereignty' framework that treats human reasoning and decision-making as critical infrastructure. It begins organizing strikes in education and creative sectors, demanding legal safeguards against full automation of judgment-intensive roles, and pressures national governments to fund human-led alternatives.",
+    "probability_samples": [
+      0.17,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6517864847597581,
+    "triggered": false
+  },
+  {
+    "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.",
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.34139299648750365,
+    "triggered": false
+  },
+  {
+    "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.",
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5703988731454263,
+    "triggered": false
+  },
+  {
+    "description": "A genome-editing tool developed under MPAC auspices is leaked and widely distributed, enabling non-state actors to design pathogens with moderate human transmissibility. The design lacks delivery mechanisms and is not immediately weaponized, but detection systems in Japan and Germany flag synthetic sequences matching the model's output. The incident originates outside the EU but exploits infrastructure the Union helped fund and coordinate. This raises immediate pressure for a binding biosurveillance treaty and exposes gaps in the current MPAC framework.",
+    "emergent": true,
+    "id": "emergent_bio_leak",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coalition of European universities and public research labs announces a distributed training run on open-weight models to simulate climate intervention strategies, using surplus capacity from the Brittany and northern Sweden clusters. The project is framed as a public good initiative and gains traction among younger technical staff across MPAC nations. While not matching frontier capability, it signals a shift toward autonomous, values-aligned AI development and begins to reshape public narrative around sovereign AI as something inclusive rather than purely defensive.",
+    "emergent": true,
+    "id": "emergent_climate_agents",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.",
+    "emergent": true,
+    "id": "emergent_bio_precursor_study",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

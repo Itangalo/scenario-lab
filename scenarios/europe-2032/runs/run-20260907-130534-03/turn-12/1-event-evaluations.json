@@ -1,0 +1,307 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.48840468906378387,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2948646973237312,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8812559764045008,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9796742457959681,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.522763598331361,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4473217117390462,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4630147729308639,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5437284859292009,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.08237061918493516,
+    "triggered": true
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7001635941356228,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5647640236518622,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.16624762299296314,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7516252456701431,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6020066282990851,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6145047758258464,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.18,
+      0.13,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7107330926882998,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.19,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.884079037629741,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.84466812196071,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9385969477663578,
+    "triggered": false
+  },
+  {
+    "id": "emergent_human_futures_movement",
+    "probability": 0.2833333333333333,
+    "emergent": true,
+    "description": "The transnational human futures movement gains momentum, demanding a binding global treaty on human-level AI systems and the creation of a UN-level agency to oversee existential risk. It draws support from disillusioned AI researchers, climate activists, and faith groups, framing advanced AI as a test of human maturity. The movement begins to influence parliamentary debates in several EU states, despite minimal institutional backing.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2552771432562333,
+    "triggered": true
+  },
+  {
+    "id": "emergent_regional_ai_civil_defense_pacts",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Regional governments and municipal networks continue forming local AI civil defense compacts, pooling incident response, sharing detection models, and running joint cyber drills. These bottom-up efforts operate semi-independently of EU coordination, signaling growing institutional fragmentation but also fostering grassroots resilience innovation in the face of central inaction.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.022592186807332548,
+    "triggered": true
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8364538976831164,
+    "triggered": false
+  }
+]

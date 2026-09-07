@@ -1,0 +1,430 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6505552341208617,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2656357371432736,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.46180845749947896,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.40596935361855224,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "taiwan_blockade",
+    "probability": 0.0,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3081809593243561,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5512431906452777,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.27394157679757825,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4825160518949907,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5583875841863033,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.25865088387875634,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6054635191036372,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7290323171207628,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3182432699530019,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8182011075131066,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.565748483002583,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.02366425870384059,
+    "triggered": true
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6983468727955066,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6504022063907887,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7701118374424287,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.09666666666666668,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.44304124160919744,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.018066456466493297,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.11333333333333334,
+    "probability_samples": [
+      0.08,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.47751924312658256,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.41652253092819125,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7152922981834765,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5950546422774794,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5641866879125389,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated surge in AI-driven grid instability events across multiple EU member states reveals that adversarial actors are exploiting the systemic feedback vulnerability identified in emergent_grid_control_instability. The attacks do not cause blackouts but force emergency manual overrides, eroding confidence in automated grid management. Energy regulators demand immediate mitigation protocols, and public scrutiny intensifies.",
+    "emergent": true,
+    "id": "emergent_grid_instability_surge",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.0995110948755269,
+    "triggered": false
+  },
+  {
+    "description": "A grassroots European coalition of municipal governments, public research institutes, and ethical AI startups forms an open technical alliance to co-develop lightweight, sovereign AI tools based on sparse architectures. The initiative gains traction as a response to dependence and public distrust, offering a narrative of democratic innovation. It does not yet move metrics but establishes a counterweight to hyperscaler dominance.",
+    "emergent": true,
+    "id": "emergent_sovereign_tech_alliance",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.24013598636212707,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated network of municipal energy operators and research institutes in the EU forms the Emergent Grid Integrity Consortium, launching a shared simulation platform to model and mitigate AI-driven feedback loops in grid balancing systems. The platform integrates real-time telemetry from the Systemic Integrity Watch and begins identifying novel failure modes, marking a shift from reactive audits to proactive systemic defence. This is an institutional response to the persistent emergent_grid_control_instability and emergent_grid_stability_concerns.",
+    "emergent": true,
+    "id": "emergent_grid_integrity_consortium",
+    "probability": 0.06999999999999999,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.21
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "An open collaboration between European AI ethics labs and adversarial testing collectives produces the first verifiable framework for detecting goal misgeneralization in autonomous agents trained on sparse reward signals. The method, based on anomaly detection in latent policy representations, gains traction in safety-critical sectors and is adopted by early partners in the Algorithmic Sovereignty Initiative. It represents a constructive, bottom-up response to the lagging ai_safety metric and the rising capability gap.",
+    "emergent": true,
+    "id": "emergent_sparse_safety_framework",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

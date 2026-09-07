@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 56.0 to 59.0 (+3.0), but `ai_capability` increased from 66.5 to 68.0 (+1.5). This violates the rule that `openweight_capability` must not exceed `ai_capability` and, more critically, that `openweight_capability` may only rise or stay flat *in line with or below* `ai_capability`. A jump of +3.0 in openweight while AI capability rises only +1.5 implies openweight is closing the gap too rapidly without justification. The narrative attributes this to \"derivatives of frontier systems proliferating\", but no mechanism is provided for such a sudden leap that exceeds the rate of frontier advancement. This constitutes an unjustified reversal of the capability gap trend without catastrophic compute destruction or other permitted exception.\n- Modelling choice 5 violated: The narrative introduces *two* major completed measures — \"MPAC Declared Operational\" and \"Sovereign Compute Comes Online\" — both of which are treated as finishing in turn 10. This violates the constraint that \"at most one new measure per turn\" may be introduced or completed. While widening an existing measure is allowed, completing two distinct high-cost initiatives in one turn is not. The notepad only lists one finishing measure (\"Form the Middle Power AI Coalition\"), but the narrative and metrics imply a second (Sovereign AI Core Programme) is also fully operational, with €30bn spent and clusters \"verified\" and \"live\". This constitutes a second measure completed without notepad approval or turn spacing.\n- Economic Constraint violated: The Sovereign AI Core Programme's final €30bn tranche is allocated, but no source of funding is identified beyond the EIB. There is no indication of budgetary approval, revenue linkage, or borrowing mechanism. Given the scale, this qualifies as a capital expenditure requiring explicit funding justification under economic constraints. The absence of such justification violates the requirement that capital expenditures have identified sources."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

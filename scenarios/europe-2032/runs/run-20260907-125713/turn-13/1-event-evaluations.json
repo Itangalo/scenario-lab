@@ -1,0 +1,227 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.011048217801556626,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5939977951300058,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7346859850797224,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3232396820296628,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7854853469934112,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5135761623322108,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.0024971583093978955,
+    "triggered": true
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21476219992193468,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08637558807287049,
+    "triggered": true
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10961010938873073,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.13,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8233069963857936,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.19,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6666156299051142,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8476315378739766,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9553541171824219,
+    "triggered": false
+  },
+  {
+    "id": "emergent_human_futures_movement",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A transnational civil society coalition gains momentum, demanding legal limits on AI influence over human decision-making in education, healthcare, and governance. With public sentiment at historic lows and trust in AI institutions eroding, the movement begins coordinating with sympathetic MEPs and national parties, pushing for a 'Cognitive Sovereignty Act'.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.38418810990672314,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.08
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5705729376681637,
+    "triggered": false
+  }
+]

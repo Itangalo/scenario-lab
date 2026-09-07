@@ -1,0 +1,9 @@
+AI capability reaches 61.0 in 2029, crossing the 60.0 threshold as closed labs deploy self-improving agents in materials science and automated verification, accelerating training and software automation. Open-weight models rise to 48.0 through gradual replication and limited leakage, but progress remains constrained by frontier dependence. Safety improves slightly to 23.0 as audit frameworks detect AI-driven feedback loops, particularly in grid systems, though no systemic safeguards are implemented.
+
+The EU advances the Critical Infrastructure Resilience Sprint, adopting binding cyber mandates and red-teaming for energy and health sectors. Fallback systems are deployed in 42% of Tier 1 operators, boosting resilience to 45.0. The Tech Sovereignty Package remains active, blocking new initiatives like the deferred Systemic Integrity Watch. Sovereignty declines to 24.0 due to capability-driven decay, despite no new capacity events.
+
+Political capital rises to 40.0, supported by a +3 partial implementation bonus from the resilience sprint, though portfolio strain persists at −7. Public sentiment improves to 34.0 as hardening measures temper backlash, though moratoriums and automation pauses sustain unease.
+
+The 2028 U.S. election ushers in a new administration committed to technological retrenchment, halting major AI investments and imposing sectoral restrictions—shifting global dynamics through policy, not hardware limits. The EU faces reduced dependency pressure but loses a key strategic ally. U.S. posture remains pending as the administration takes office next turn.
+
+Systemic risks deepen: energy regulators expand audits into AI-driven grid feedback loops, and municipal networks face evolved underground cyber toolkits with evasion and exploit-chaining capabilities, underscoring growing vulnerabilities in critical infrastructure.

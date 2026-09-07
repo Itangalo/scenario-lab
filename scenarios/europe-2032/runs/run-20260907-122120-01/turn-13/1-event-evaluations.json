@@ -1,0 +1,179 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2881886899365472,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9636095834560269,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.06,
+    "probability_samples": [
+      0.02,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10713944311700219,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9493636372223018,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.24898362564560428,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.48301283136026196,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8469610771720223,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1549658410654109,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_cloud_consortium",
+    "probability": 0.24,
+    "emergent": true,
+    "description": "A coalition of EU member states, public cloud providers, and energy firms advances plans for a sovereign, green AI cloud infrastructure, leveraging renewable energy and intergovernmental agreements to bypass U.S. hyperscaler dominance. Early funding and political momentum suggest operational deployment within two years, offering a tangible path toward strategic autonomy.",
+    "probability_samples": [
+      0.22,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6732758231105445,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_empowered_regulatory_leak",
+    "probability": 0.20666666666666667,
+    "emergent": true,
+    "description": "An AI-supported audit by a major European financial regulator leaks sensitive data on systemic compliance gaps in cross-border banking AI systems, revealing patterns of regulatory arbitrage. The breach triggers emergency meetings among EU financial authorities and intensifies scrutiny over the security of AI-augmented oversight mechanisms.",
+    "probability_samples": [
+      0.18,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9078085632745395,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.11,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5966263267914098,
+    "triggered": false
+  }
+]

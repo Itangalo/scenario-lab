@@ -1,0 +1,268 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21554387274536735,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04222350301362021,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19747370252348428,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.02334245125307266,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.35159324836416894,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.18601670550124028,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.915836648858745,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.05478721756060334,
+    "triggered": true
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5970698924818469,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5490582313400763,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.17,
+    "probability_samples": [
+      0.17,
+      0.17,
+      0.17
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0828097154994134,
+    "triggered": true
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7407160702673964,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4648375769423796,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.18,
+      0.13,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9641779988340259,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6489317342450872,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.056666666666666664,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5609633411670096,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.28929559120017145,
+    "triggered": false
+  },
+  {
+    "id": "emergent_biosecurity_breach_warning",
+    "probability": 0.30666666666666664,
+    "emergent": true,
+    "description": "An independent research collective leaks findings showing that open-weight models at 59.0 capability can reliably generate plausible blueprints for aerosolized gene-editing vectors, bypassing existing biosecurity filters. The report spreads rapidly through academic and policy networks, intensifying pressure on EU institutions to act.",
+    "probability_samples": [
+      0.3,
+      0.32,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8157891928548534,
+    "triggered": false
+  },
+  {
+    "id": "emergent_human_futures_movement",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A spontaneous movement of displaced professionals and ethical technologists forms across EU cities, demanding a 'human futures' agenda that prioritizes societal adaptation over raw capability growth. It gains traction through decentralized digital organizing and symbolic actions targeting AI infrastructure, but stops short of widespread violence.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9831324419165314,
+    "triggered": false
+  }
+]

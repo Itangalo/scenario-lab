@@ -1,0 +1,402 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23584253817383416,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.20000000000000004,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.08,
+      0.18,
+      0.34
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.336446066839617,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03158186722475931,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.04,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.03,
+      0.05,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.04,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.03,
+      0.05,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.394557158311574,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8098816824090314,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4588606100139011,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.47424519355038164,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6013618235462562,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.12062519234814972,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.004445736058816596,
+    "triggered": true
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4190010907388704,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8987377247229743,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.13333333333333333,
+    "probability_samples": [
+      0.15,
+      0.15,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6653192907935952,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03995058934719997,
+    "triggered": true
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3366949919829373,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3783047933681871,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.12,
+    "probability_samples": [
+      0.1,
+      0.16,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9103019588628808,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.09666666666666668,
+    "probability_samples": [
+      0.08,
+      0.13,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3791555438182276,
+    "triggered": false
+  },
+  {
+    "id": "eu_access_secured",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5366725106494793,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2661799623281079,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12641789159430095,
+    "triggered": true
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.15398583899629759,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.13666666666666666,
+    "probability_samples": [
+      0.11,
+      0.19,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.578282475160974,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7872131657457788,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5165577991988846,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regulatory_friction",
+    "probability": 0.22999999999999998,
+    "emergent": true,
+    "description": "National regulators in Hungary and Czechia continue to challenge the European Agency for AI Assurance and Control's authority, with constitutional court cases advancing and compliance delays spreading to additional member states. The standoff threatens the coherence of EU-wide AI oversight just as high-severity incidents demand unified response.",
+    "probability_samples": [
+      0.22,
+      0.25,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2954160911465852,
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_cyber_tools",
+    "probability": 0.27666666666666667,
+    "emergent": true,
+    "description": "AI-driven exploit tools, now self-optimizing in real time, have expanded beyond municipal networks to target regional infrastructure and supply-chain nodes. Their proliferation demonstrates that defensive gains are being outpaced, and their open availability underscores the growing gap between offensive capability in the wild and formal resilience efforts.",
+    "probability_samples": [
+      0.28,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.17325076273462714,
+    "triggered": true
+  }
+]

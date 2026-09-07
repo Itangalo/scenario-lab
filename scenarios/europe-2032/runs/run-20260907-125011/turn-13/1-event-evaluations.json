@@ -1,0 +1,402 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.716986278427273,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11437113632292928,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.23994195185893963,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21498248557545663,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.03,
+    "probability_samples": [
+      0.09,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "taiwan_blockade",
+    "probability": 0.03,
+    "probability_samples": [
+      0.09,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "Underground AI-powered exploit kits now integrate real-time evasion and privilege escalation, tested in attacks on two municipal networks.",
+    "emergent": true,
+    "id": "emergent_open_source_cyber_tools",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6012218190618321,
+    "triggered": false
+  },
+  {
+    "description": "A national election is annulled amid credible findings of AI-generated disinformation overwhelming verification systems; legal and political fallout continues.",
+    "emergent": true,
+    "id": "emergent_synthetic_election_interference",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.06560872622229741,
+    "triggered": true
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.13771676000309463,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6072288623311026,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.07956157873378744,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9202054292316723,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7475679087965444,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1580121268614283,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.37352325388692664,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5271615502382151,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5791808410443244,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.22011177510387814,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9507307102743053,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.06,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6623261444512122,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.09731462713558725,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8611832046706106,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5315214705489387,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2811004211885739,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.523905545794623,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6780033589980404,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.0,
+      0.11,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.08535632130706361,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5034563867862658,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.23692990861495844,
+    "triggered": false
+  },
+  {
+    "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.",
+    "emergent": true,
+    "id": "emergent_election_annulled_repeat",
+    "probability": 0.05666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.17
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

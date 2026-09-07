@@ -1,0 +1,203 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6442680621826763,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4388427374163022,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.336737489195275,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.44892602866299114,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.39647147343505906,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.10919070904933548,
+    "triggered": true
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6357699087281373,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8098443319965566,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8829869045102047,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.16873513457133105,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4128722820907291,
+    "triggered": false
+  },
+  {
+    "id": "emergent_human_futures_movement",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A transnational civil society coalition demands a legally binding framework to protect 'cognitive sovereignty' and limit AI influence on human decision-making in education, healthcare, and governance. It gains traction in EU member states with strong privacy traditions and begins coordinating with sympathetic MEPs.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9366113372394548,
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_defection",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "A senior EU agency quietly begins routing critical AI workloads through a US cloud provider under national security exemptions, bypassing the Sovereign AI Core. The move is justified as a continuity measure but signals deep institutional mistrust in EU-controlled infrastructure, especially in light of repeated access denials and low political capital for enforcement.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.02902470465127882,
+    "triggered": true
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.09666666666666668,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.17
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6601752357884606,
+    "triggered": false
+  }
+]

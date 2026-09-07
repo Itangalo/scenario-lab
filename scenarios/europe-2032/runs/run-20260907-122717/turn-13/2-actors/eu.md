@@ -1,0 +1,29 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Defend critical infrastructure and democratic integrity from AI-enabled subversion, and expand the perimeter of protection to include systemic labour market stability in high-exposure sectors  
+
+- Grounds: The **labour_displacement** event this turn confirms that AI-driven job losses in law, accountancy, software, and administration are not prospective but actual, with entry-level hiring collapsing across the board. This is no longer a secondary social consequence but a direct threat to democratic legitimacy and institutional trust—especially as younger citizens see pathways blocked before they begin. To uphold our commitment to democratic integrity, we must now treat the erosion of opportunity as part of the attack surface. The expansion does not dilute the original focus; it extends it to where subversion now operates: through economic exclusion masked as efficiency.
+
+## Portfolio  
+- `Loss-of-Control Containment Framework` (category 6, costs 2 per turn, started turn 11, finishes on turn 12): Establish a binding, cross-agency protocol for immediate detection, isolation and public communication in the event of unsanctioned agentic action, triggered by the first confirmed loss_of_control_incident with real-world consequences — **finished**  
+- `EU-Wide Cognitive Infrastructure Hardening Directive` (category 6, costs 3 per turn, started turn 11, finishes on turn 14): Mandate AI-adjacent system audits and fail-safe integration for all critical infrastructure operators, requiring AI-facing interfaces to be segmented, monitored, and capable of manual override within 90 seconds  
+- `Secure by Design: AI Interface Certification Standard` (category 6, costs 3 per turn, started turn 12, finishes on turn 15): Establish a mandatory certification regime for all AI-facing control systems in critical infrastructure, ensuring they are architected to resist model-generated deception and maintain human-readable decision logs under stress
+
+## New measure  
+**Labour Market Shock Absorption Initiative**  
+Launch a targeted flexicurity programme for AI-displaced early-career professionals, combining wage insurance, accelerated retraining in sovereign-critical domains (cybersecurity, AI auditing, resilient infrastructure), and incentives for employers to rotate displaced workers into oversight roles.
+
+`Category: 7 (Labour and social protection)`  
+`Size:` large  
+`Finishes on turn:` 16  
+`Targeted effect:` +8 to resilience by reducing social shock from AI-driven displacement; stabilises public sentiment in high-exposure demographics; indirectly supports eu_ai_sovereignty by building a domestic talent pipeline aligned with strategic needs  
+`Applies to:` Member states, European Social Fund+, national employment agencies, universities, and firms receiving EU digital transition subsidies
+
+## Priority  
+**EU-Wide Cognitive Infrastructure Hardening Directive** — because emergent_grid_instability_surge confirms that adversarial actors are actively exploiting cognitive trust in automated grid management, and only this directive forces live systems to install physical override capacity at scale and on schedule, turning theoretical resilience into operational reality before the next incident.
+
+## In practice  
+This turn, we complete the rollout of the Loss-of-Control Containment Framework in core financial institutions, with real-time telemetry now feeding into the European Public Prosecutor’s Office and automatic escalation thresholds active in Poland, Germany, and France. Despite Hungary’s continued opt-out, we have activated bilateral funding through the Internal Security Fund, offering 40% cost coverage for integration by turn 13 — a narrow window, but one calibrated to exploit any second thoughts after the latest grid incidents. The Frankfurt test stand proved the protocol works; now we must make it continental.
+
+We press ahead with the EU-Wide Cognitive Infrastructure Hardening Directive, finalising enforcement mechanisms under NIS2 and Article 17 of the AI Act. ENISA begins spot audits this quarter, targeting German transmission system operators and French hospital networks where resistance remains strongest. To reduce friction, we have expanded liability shielding via the Digital Europe Programme to cover all drill-induced disruptions, and Siemens and Thales are delivering prototype physical override interfaces by turn 14. These will be mandatory in all new procurements post-2034 and retrofitted into current systems under penalty of non-compliance. This is not optional modernisation — it is the restoration of human final authority in systems that have silently outsourced judgment.
+
+Simultaneously, we launch the Labour Market Shock Absorption Initiative in response to the collapse in graduate hiring. Working through the European Social Fund+, we will fund wage insurance for displaced entrants in law, accountancy, and software, paired with six-month retraining sprints in AI safety auditing, cyber-physical system monitoring, and resilient infrastructure design — fields where talent shortages constrain our sovereignty. Employers who hire into these roles will receive matching grants from the Just Transition Fund. The initiative applies immediately in member states reporting >15% decline in junior hiring, starting with Belgium, Ireland, and Finland. We do this not just to ease individual hardship, but to prevent a lost generation from becoming a vector of political destabilisation — because when AI closes doors before they open, democracy loses credibility.

@@ -1,0 +1,179 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7131131866818625,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12391064081700853,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1723213980400875,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10731989329545888,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.17,
+    "probability_samples": [
+      0.17,
+      0.17,
+      0.17
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8438545472729231,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7373329860714141,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.25876907012430694,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.39599886030006726,
+    "triggered": false
+  },
+  {
+    "id": "emergent_synthetic_election_interference",
+    "probability": 0.31666666666666665,
+    "emergent": true,
+    "description": "Synthetic media manipulation in elections escalates to coordinated, cross-border disinformation campaigns using adaptive deepfakes that mimic local political figures with high fidelity. Electoral commissions in three member states report systemic authentication failures, prompting emergency coordination under the Critical Function Sentinel framework. The phenomenon is now persistent, not episodic.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0681899495565852,
+    "triggered": true
+  },
+  {
+    "id": "emergent_open_source_cyber_tools",
+    "probability": 0.30666666666666664,
+    "emergent": true,
+    "description": "AI-powered exploit kits derived from leaked offensive frameworks evolve into modular, self-updating toolchains available on dark web markets. These tools now include autonomous reconnaissance, adaptive evasion, and encrypted lateral movement, and are being adopted by mid-tier criminal groups. Municipal and regional infrastructure remains vulnerable despite resilience improvements.",
+    "probability_samples": [
+      0.32,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.35362440790603766,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.11
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.25232441978101816,
+    "triggered": false
+  }
+]

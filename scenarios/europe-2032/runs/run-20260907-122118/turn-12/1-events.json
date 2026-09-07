@@ -1,0 +1,48 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_grid_instability_surge",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "Energy regulators in Germany, France, and the Netherlands jointly uncover that adversarial actors are exploiting known feedback vulnerabilities in AI-managed grid balancing systems, using widely available open-weight models to simulate and trigger instability patterns. The coordinated attacks do not cause blackouts but force repeated emergency manual overrides, eroding public confidence in automated infrastructure. A formal EU-wide review is announced, and the incident is classified as a near-miss for critical system failure.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.026581475108493846,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7222128347332598,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5072544263306037,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8120415538545765,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.34056445779103117,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7067018601975344,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3737612408393237,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.05400165613622321,
+    "triggered": true
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9783916596114568,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3143573301041741,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_stability_pact",
+    "probability": 0.26,
+    "emergent": true,
+    "description": "In response to repeated election interference and cyber instability, a group of EU member states and neighbouring democracies form a new regional pact focused on AI-enabled electoral integrity and joint cyber defence. The initiative emerges from mid-sized states seeking alternatives to US-led frameworks and EU-wide paralysis, pooling forensic resources and establishing shared red lines for intervention. It does not replace NATO or EU structures but creates a parallel coordination channel that could evolve into a broader governance bloc.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6217055311022576,
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_control_framework",
+    "probability": 0.22666666666666666,
+    "emergent": true,
+    "description": "A coalition of open-source AI developers, academic labs, and civil society groups independently releases a lightweight, modular control framework for autonomous agents, inspired by the EU's stalled sentinel design. It gains rapid adoption in decentralized networks and is retrofitted to several widely used open models, demonstrating basic goal-integrity checks and anomaly reporting. While not sovereign or enforceable, it marks the first bottom-up attempt to implement containment at scale outside state or corporate control, and its emergence pressures official actors to respond.",
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9929299304349829,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.02180234190166963,
+    "triggered": true
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.05871094956173539,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5630986524772574,
+    "triggered": false
+  }
+]

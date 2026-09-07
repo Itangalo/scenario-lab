@@ -1,0 +1,445 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5763860499845611,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2630057164939521,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7694763644476229,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8859126094366516,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.01,
+      0.05,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.02,
+    "probability_samples": [
+      0.01,
+      0.05,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1731328299677053,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1962582616715216,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5188365883862887,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08421903504263539,
+    "triggered": true
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8549346324014118,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.27635448827206377,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7727359747796491,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7534224316874578,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04257767616108221,
+    "triggered": true
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.11333333333333334,
+    "probability_samples": [
+      0.08,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6502181193898509,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.874287624996766,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9199871410071009,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.27729058737887347,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8893333219296677,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.10576169258359414,
+    "triggered": false
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.03229272019330176,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.652809274382721,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7423561473125522,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5883954202201148,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6218358084028307,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7267142983093177,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5113511069128364,
+    "triggered": false
+  },
+  {
+    "description": "A grassroots European coalition of municipal governments, public research institutes, and ethical AI startups intensifies its efforts to co-develop lightweight, sovereign AI tools based on sparse architectures. The initiative gains momentum as public distrust in hyperscaler dominance grows, and early prototypes show promise in energy grid optimisation and local governance automation. Though still informal, the network begins to attract funding and talent across borders, signaling a bottom-up counterweight to centralized AI power.",
+    "emergent": true,
+    "id": "emergent_sovereign_tech_alliance",
+    "probability": 0.15,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.2
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6425996296961125,
+    "triggered": false
+  },
+  {
+    "description": "Energy regulators in Germany, France, and the Netherlands jointly uncover that adversarial actors are exploiting known feedback vulnerabilities in AI-managed grid balancing systems, using widely available open-weight models to simulate and trigger instability patterns. The coordinated attacks do not cause blackouts but force repeated emergency manual overrides, eroding public confidence in automated infrastructure. A formal EU-wide review is announced, and the incident is classified as a near-miss for critical system failure.",
+    "emergent": true,
+    "id": "emergent_grid_instability_surge",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.12205869269199088,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_grid_council",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "In response to repeated AI-driven grid instability events, energy ministers from seven EU member states form a regional Grid Stability Council to coordinate oversight, mandate transparency in AI control algorithms, and establish joint red-teaming exercises. The initiative emerges from technical necessity rather than central EU design, creating a new model for bottom-up infrastructure governance.",
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_model_audit",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "A coalition of European digital rights NGOs, academic AI labs, and municipal governments launches a public audit of open-weight models above capability 50, using distributed compute to probe for safety flaws, misuse potential, and embedded biases. The effort gains traction as a democratic counterpoint to corporate secrecy, though it raises concerns about inadvertently accelerating offensive use.",
+    "probability_samples": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_cyber_tools",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "The underground toolkit leveraging open-weight models for exploit chaining and evasion is now being adapted by regional cybercrime groups and has successfully bypassed updated signature-based detection in three additional municipal networks. Its modular design allows rapid repurposing, and early signs suggest it is being offered as a service on dark web forums, increasing its reach and frequency of use.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

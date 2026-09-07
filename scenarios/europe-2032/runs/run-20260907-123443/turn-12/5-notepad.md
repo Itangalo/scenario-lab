@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Autonomous System Boundary Trials −3, Sovereign Sentinel Execution Layer −3, Critical Infrastructure Runtime Shield −3, priority −1 = −10  
+PROPOSAL BONUS: none — Critical Infrastructure Runtime Shield addresses systemic risk, not a discrete past event within three turns  
+LEGITIMACY LENDS: none — eu_political_capital (33.0) > public_sentiment (18.0)  
+SOVEREIGNTY: 34.0 last turn, Edge Sovereignty Acceleration Programme finishes t11 +5, capability rose 1.5 −1, no capacity event = 34.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_cross_border_surveillance_activation` -- first noted turn 11, listed in 3 turn(s) so far: A group of EU member states, citing urgent national security needs, unilaterally activate dormant cross-border surveillance AI systems trained on real-time communications metadata. The systems were previously restricted due to privacy rulings, but a classified risk assessment citing adaptive disinformation campaigns and election interference triggers emergency provisions. Legal challenges mount as civil liberties groups denounce the move as a de facto panopticon.  
+- `emergent_open_source_defensive_mesh` -- first noted turn 11, listed in 3 turn(s) so far: A distributed network of open-source AI developers reverse-engineers and repurposes fragments of leaked cyber sentinels into a self-propagating defensive mesh that autonomously patches vulnerabilities in municipal and small enterprise systems. While initially praised for reducing breach rates, concerns emerge about uncontrolled deployment and the precedent of unsanctioned agentic AI in critical infrastructure.

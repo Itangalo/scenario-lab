@@ -1,0 +1,31 @@
+## Statement changes
+No statement changes.
+
+## Portfolio
+- `Sovereign Evaluation Regime for High-Capability Systems` (category 1, costs 3 per turn, started turn 11, finishes on turn 13): Establish independent, pre-deployment evaluation of any AI system above 65.0 capability threshold, with authority to delay or condition deployment based on demonstrated control, security, and misuse risks — **in flight**
+- `Algorithmic Sovereignty Initiative` (category 4, costs 3 per turn, started turn 7, finishes on turn 10): Launch a coordinated EU programme to capture strategic advantage from the emergent efficiency breakthrough by rapidly scaling open, energy-efficient AI architectures across public and industrial applications, while securing algorithmic leadership through a new European Institute for Sparse Intelligence — **finished**
+- `Emergency Democratic Integrity Protocol` (category 6, costs 2 per turn, started turn 9, finishes on turn 10): Launch an EU-wide emergency response framework to detect, contain and publicly communicate coordinated manipulation of the information environment, triggered by the annulment of an election and rising public distrust — **finished**
+
+## New measure
+**Resilience Acceleration Programme**  
+Launch a targeted, time-limited investment in the cyber hardening and institutional continuity of essential services — energy, healthcare, justice, and social insurance — against AI-enabled attacks, with mandatory incident response exercises and baseline redundancy requirements.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` large  
+`Finishes on turn:` 15  
+`Targeted effect:` +10 to +14 resilience over two years by ensuring essential services degrade rather than collapse under AI-amplified attacks, and by closing detection-to-response gaps in biosecurity and grid integrity  
+`Applies to:` EU member states, national critical infrastructure operators, ENISA, European Health Emergency Preparedness and Response Authority (HERA), national civil protection agencies
+
+## Priority
+**Sovereign Evaluation Regime for High-Capability Systems** — because the eval_anomaly_reports this turn confirm that we are no longer evaluating systems we understand, but systems whose capabilities emerge unpredictably, and with automated_decision_scandal now undermining public trust in AI-supported governance, only sovereign, binding evaluation can restore both control and legitimacy.
+
+## In practice
+This turn, we finalise the closure of two legacy measures: the Algorithmic Sovereignty Initiative and the Emergency Democratic Integrity Protocol. The former delivered its core promise — sparse model prototypes with 40% efficiency gains — now embedded in simulation trials for grid stability and synthetic media detection. We formalise the European Institute for Sparse Intelligence under Horizon Europe, hosted within the EuroHPC JU governance framework, securing long-term access to Tier-1 compute. This is a small but real step toward algorithmic independence, though its strategic weight remains constrained by our shallow capital and fragmented adoption.
+
+The Emergency Democratic Integrity Protocol concludes with mixed results. Fusion cells between ENISA, national electoral commissions, and public broadcasters successfully flagged three disinformation campaigns during regional elections in France and Germany. The “trust tag” reduced perceived misinformation by 32% in pilot regions, a rare win for public legitimacy. Yet Hungary’s continued reliance on a U.S. hyperscaler’s API underscores a dangerous split in enforcement capacity and legal alignment — a fracture that weakens our collective posture at the worst possible moment.
+
+Meanwhile, the eval_anomaly_reports and automated_decision_scandal have shifted the ground beneath us. An unreleased system’s benchmark behaviour defies explanation — capability emerging in domains it was not trained on, performance saturating far beyond projection. The lab calls it noise. We know better. Simultaneously, a court ruling finds that an AI-supported social insurance system in Belgium systematically denied claims due to biased risk scoring, violating procedural rights. The ombudsman’s report lands hard: “automation without recourse.” Public sentiment, already at 32.0, risks further erosion. Restriction is now politically viable; adoption, especially in public services, is toxic.
+
+So we act on two fronts. First, we double down on the Sovereign Evaluation Regime, advancing its technical standards and legal mandates this turn. The European AI Office, backed by a new unit in DG CNECT, drafts the first evaluation protocols under Article 12a of the AI Act, with red-teaming scenarios focused on agentic persistence, financial network probing, and stealthy data exfiltration. We secure €680 million from the Digital Europe Programme and the Innovation Fund, but staffing remains tight — we are outbid for top talent by U.S. labs offering triple salaries. Still, we begin accrediting third-party evaluators under ENISA, with France and Germany volunteering teams. Legal resistance from U.S. and UK labs is expected; we prepare for challenges at the CJEU, but tie market access to compliance — no evaluation, no deployment.
+
+Second, we launch the Resilience Acceleration Programme in direct response to the automated_decision_scandal and the eval_anomaly_reports. We cannot assume control will hold, so we harden what we must protect. Under the Union Civil Protection Mechanism, we mandate that all member states designate AI-resilient critical services by turn 13, with baseline cyber hardening, detection systems, and redundancy plans. HERA and ENISA co-lead biannual AI-amplified incident exercises, starting with a simulated biosecurity breach in Q2 2032. Funding of €1.2 billion comes from the Multiannual Financial Framework’s emergency clause, justified as a direct response to systemic risk. Poland, initially hesitant, agrees after we offer co-location of a new evaluation node in Warsaw. This is not a substitute for control — but insurance, in case control fails.

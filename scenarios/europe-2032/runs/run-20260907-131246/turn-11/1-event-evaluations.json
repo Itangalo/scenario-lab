@@ -1,0 +1,404 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2730123487271088,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3732808823703515,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9591843952596238,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.207658928956294,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.06245012377940928,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.",
+    "emergent": true,
+    "id": "emergent_bio_risk_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.49592800254225167,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated declaration by mid-sized EU member states, frustrated by paralysis in Brussels and the dominance of Atlanticist agendas, to jointly fund and deploy sovereign AI systems outside the EAAD framework, using national security carve-outs. This creates a splintering dynamic in EU AI policy, with implications for cohesion and leverage. It reflects growing desperation and fragmentation as public sentiment deteriorates and political capital evaporates.",
+    "emergent": true,
+    "id": "emergent_eu_sovereignty_fracture",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.780082251989295,
+    "triggered": false
+  },
+  {
+    "description": "A loose network of scientists, bioethicists, and affected communities begins to coalesce around the concept of 'Human Futures', calling for a moratorium on heritable genome editing and AI-driven reproductive design. The movement gains traction in European media following recent bio-uplift concerns and Lyon protests, framing AI not just as a tool of governance or labor, but as a force reshaping human identity itself. It remains decentralized but is beginning to coordinate public demonstrations and academic forums.",
+    "emergent": true,
+    "id": "emergent_human_futures_movement",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.008687744612059789,
+    "triggered": true
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.27701606754600283,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7047306007923432,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.38776834934582993,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.03,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.09
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.711930830220844,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.867849533580313,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.45417254910403737,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.06327427056130785,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.08748841336971136,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.06
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.08712711974111331,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8498284209142466,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.15807227008206737,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.08
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5181944425753442,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8190003876080973,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1652840738520912,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7970383543628581,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.19
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2647116999360042,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.34735024793699065,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6985265617069875,
+    "triggered": false
+  },
+  {
+    "id": "emergent_national_ai_emergency_declarations",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Following repeated cyber incidents and the failure of central safety infrastructure, several EU member states independently declare national AI emergencies, activating civil defence protocols and seizing control of critical AI systems from EU operators. This creates a patchwork of regulatory regimes and undermines the EU's unified posture, even as it highlights the urgency of systemic risk.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_climate_ai_breakthrough",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "An open international collaboration using distributed AI models identifies a novel, scalable carbon capture method based on bioengineered fungi, validated in rapid simulations. The result emerges outside corporate or state labs, generating cautious optimism in scientific circles and increasing pressure on the EU to support open, public-interest AI research despite current political headwinds.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: European Agency for AI Assurance and Control −3, Accelerate Threat-Ready Detection Stack Deployment Across Member States −3, priority −1 = −7  
+PROPOSAL BONUS: Accelerate Threat-Ready Detection Stack Deployment Across Member States (cat 6, large) +4 — directly responds to cyber_major_incident within the last three turns  
+LEGITIMACY LENDS: none — eu_political_capital (45.0) > public_sentiment (25.0)  
+SOVEREIGNTY: 33.0 last turn, Secure Critical Infrastructure measure finishes t12 — not category 4, no capacity event, capability rose 1.5 −1 = 31.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_regional_ai_safety_pact` -- first noted turn 11, listed in 3 turn(s) so far: In response to the repeated cyber and democratic incidents, a group of EU member states with higher resilience capacity initiates informal talks on a regional AI safety and incident response pact, aiming to harmonize containment protocols and real-time threat sharing. The move is driven by frustration with slow EU-wide enforcement and growing public pressure for immediate action.  
+- `emergent_underground_ai_cyber_cartel` -- first noted turn 11, listed in 3 turn(s) so far: Dark web monitoring reveals the formation of a decentralized cartel of AI-powered cybercriminal groups sharing modular exploit toolkits derived from leaked evasion logic. These groups are coordinating through anonymized channels to launch synchronized attacks on critical infrastructure, marking a shift from opportunistic to organized, capability-amplified crime.

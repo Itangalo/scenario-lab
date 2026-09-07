@@ -1,0 +1,25 @@
+No statement changes.
+
+## Portfolio
+- `European Agency for AI Assurance and Control` (category 5, costs 3 per turn, started turn 11, finishes on turn 14): Establish a permanent, technically empowered body with authority to conduct pre-deployment evaluations, monitor in-use systems for anomalous behaviour, and enforce containment protocols
+- `Critical Infrastructure Cyber Shield Initiative` (category 6, costs 3 per turn, started turn 12, finishes on turn 13): Launch an emergency hardening programme for energy, health, and electoral infrastructure against AI-powered intrusion and manipulation, combining real-time detection, redundant control systems, and mandatory incident simulation — **finished this turn**
+
+## New measure
+**Mandatory Open-Weight Risk Certification**  
+Require all open-weight models above capability 55.0 released within or into the EU to undergo a risk certification process, including audit of training data, known exploit potential, and agent persistence logic, with results published and enforceable sanctions for non-compliance.
+
+`Category: 3 (Limits and restrictions)`  
+`Size:` large  
+`Finishes on turn:` 16  
+`Targeted effect:` -5 to -7 openweight_capability growth by turn 16 through delayed or deterred releases; +5 ai_safety by improving baseline assurance on distributed models; indirect +3 resilience by reducing attack surface from modular cyber tools  
+`Applies to:` Open-weight model developers, EU member state enforcement authorities, and hosting platforms operating in the Union
+
+## Priority
+**Mandatory Open-Weight Risk Certification** — because the emergent_open_source_cyber_tools event this turn reveals that offensive AI logic is now modular, evasive, and spreading beyond skilled actors, turning openweight models into de facto weaponization vectors — and our existing evaluation framework is voluntary, too slow, and non-binding; this measure closes the gap between observation and power.
+
+## In practice
+This turn, we act on the breach before it becomes a cascade. The **Critical Infrastructure Cyber Shield Initiative** officially reaches operational status: national coordinators are in place across all 27 member states, and the European AI Threat Observatory in The Hague now fuses live telemetry from ENISA, national CSIRTs, and critical operators in energy and water. Germany and Finland complete their first joint live-fire exercise, exposing a persistent vulnerability in legacy Siemens SCADA systems — a finding that triggers an emergency retrofit protocol, co-financed at 80% through the Digital Europe Programme, with Slovakia and Croatia formally requesting technical assistance under the Cyber Resilience Act’s solidarity clause. While full hardening is delayed, the partial deployment already improves detection latency from hours to minutes, marking a real step forward.
+
+At the same time, the **European Agency for AI Assurance and Control** moves from stalled authority to operational leverage. We are activating Article 16 of the AI Act to condition access to the new behavioural consistency certification — now in high demand by frontier labs — on full pre-deployment evaluation for any model above 65.0 capability operating in the EU market. This is not a ban, but a gate: if you want the gold-standard interpretability tool adopted by DeepMind, OpenAI, and Huawei, you submit to our evaluation. Legal challenges are expected, particularly from the US and UK labs, but we are backing this with €200 million from Horizon Europe to expand the Agency’s technical team by Q3, and we have secured Austria’s conditional agreement — in exchange for hosting the EU’s central interpretability lab — to treat our evaluations as exclusive for high-risk systems, closing the recognition loophole. This is the moment to make the Agency real: not through decree, but through leverage.
+
+And now, we go further. The **Secure Open-Source Evaluation Framework** remains in development, but its voluntary nature is no longer enough. With underground exploit kits now embedding evasion logic and targeting municipal water systems, we cannot wait for consensus. This turn, we launch the **Mandatory Open-Weight Risk Certification**, a legally binding requirement for any open-weight model above 55.0 capability to undergo risk assessment before release. We will use the newly strengthened Agency as the evaluator, with authority to block or delay distribution based on training data provenance, known offensive capabilities, and agent autonomy. The legal base is Article 12a of the AI Act, as amended in 2031, and enforcement will fall to national digital authorities, supported by a new EU-level audit pool funded at €120 million over three years. Resistance is expected from open-source communities and US-based foundations, but we are coordinating with France and the Netherlands to pre-empt legal fragmentation, and we are offering compliance fast-tracks for models that already participate in the voluntary framework. This is not a retreat from openness — it is a defence of it.

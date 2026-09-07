@@ -1,0 +1,447 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.955614842524587,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.021666666666666667,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.045
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.42336636180943443,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1795340948858507,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.37524912477377836,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.006666666666666667,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.006666666666666667,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7317984242691328,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6823577706313588,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9413279600985034,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8710538503920658,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4435808252977801,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.15,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2703264408785896,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.12158610622068766,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.2909602359299365,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.32316754416814353,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.11076006777435532,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.2813525334772138,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.18701271795575902,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9068763853598824,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7330871972840081,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7041014915065721,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9987106339147038,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.12,
+    "probability_samples": [
+      0.11,
+      0.14,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.028168764539842517,
+    "triggered": true
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5247547123995209,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.08818074296432277,
+    "triggered": false
+  },
+  {
+    "id": "emergent_grid_instability_crisis",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "A coordinated wave of AI-driven grid instability events across three major EU countries overwhelms manual override protocols, causing localized blackouts and forcing emergency declarations. Regulators confirm that adversarial actors are exploiting the systemic feedback vulnerability identified earlier, and public confidence in automated energy management collapses. This escalates the emergent_grid_instability_surge into a full-blown crisis.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8165479118742807,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_cloud_alliance",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to Hungary's reliance on a U.S. hyperscaler and growing concerns over data sovereignty, seven EU member states formally launch a 'Sovereign Cloud Alliance' to co-develop and deploy a unified, EU-controlled cloud infrastructure for public services. The initiative is backed by EuroHPC JU and leverages the sparse model breakthroughs from the Algorithmic Sovereignty Initiative, marking a concrete step toward technical independence from foreign providers.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.08774679191831536,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4031909960739708,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.06812808381045787,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_evaluation_pushback",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Several EU member states, citing burdens on innovation and legal concerns over extraterritorial reach, begin to formally resist implementation of the Sovereign Evaluation Regime. The pushback crystallizes around a joint letter from three central European states demanding a phased rollout and exemptions for public-sector AI projects, signaling growing friction between regulatory ambition and national sovereignty.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_grid_autonomy_suspend",
+    "probability": 0.09666666666666666,
+    "emergent": true,
+    "description": "In response to the repeated AI-driven grid instability events, multiple EU energy regulators jointly announce a six-month suspension of all autonomous grid-balancing systems above a certain capability threshold. The move is framed as precautionary, but internal documents reveal deep concern over systemic vulnerabilities, and the pause triggers urgent cross-border talks on minimum safety standards for critical infrastructure AI.",
+    "probability_samples": [
+      0.0,
+      0.29,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_grid_instability_surge",
+    "probability": 0.0,
+    "emergent": true,
+    "description": "The coordinated surge in AI-driven grid instability events continues to erode confidence in automated grid management across multiple EU member states. Emergency manual overrides are now required more frequently, and energy regulators are under growing pressure to mandate human-in-the-loop protocols for all critical balancing systems. Public scrutiny intensifies as media highlight the systemic vulnerability exposed by adversarial exploitation of feedback loops.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_tech_alliance",
+    "probability": 0.0,
+    "emergent": true,
+    "description": "The grassroots European coalition of municipal governments, public research institutes, and ethical AI startups continues to gain traction, now formalizing its first joint development sprint on lightweight, sovereign AI tools based on sparse architectures. While still pre-metric, the alliance establishes a shared repository and testing framework, positioning itself as a counterweight to hyperscaler dominance and a vehicle for democratic innovation in public-sector AI. Its narrative of local control and transparency resonates with skeptical communities.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

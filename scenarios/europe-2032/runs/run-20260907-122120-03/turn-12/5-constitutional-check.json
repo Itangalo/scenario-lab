@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Modelling choice violated (Constraint 5): The EU introduced two new measures in one turn — \"Loss-of-Control Containment Framework\" (described as completed) and \"Critical System Hardening Initiative\" (launched this turn). The constitutional rule limits the EU to at most one new measure per turn. Even if one is completed and one is launched, both were introduced into the active portfolio in this turn, which constitutes two introductions.\n- Modelling choice violated (Constraint 5): The narrative names \"Critical System Hardening Initiative\" as a large-scale effort with priority-level resource strain (\"cost the EU in sovereignty\", \"new large priority\"), and the notepad applies a priority penalty (−1). However, the rule permits at most one named priority at a time. The notepad still lists two other active measures (Loss-of-Control Containment Framework and Frontier Model Real-Time Monitoring Directive), and introducing a new priority without retiring an old one violates the one-priority limit."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

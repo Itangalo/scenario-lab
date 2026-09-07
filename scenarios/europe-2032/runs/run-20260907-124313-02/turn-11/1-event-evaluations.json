@@ -1,0 +1,460 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.335600743244003,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5915261086624416,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8752366193700958,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.28356952723292495,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6148489465372997,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.49593554210856816,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2781245325655335,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1840957133271066,
+    "triggered": true
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8220667766109659,
+    "triggered": false
+  },
+  {
+    "id": "opaque_reasoning",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5328761932672111,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3378480452250492,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.934282886748324,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7109493991088028,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.0014554458987909857,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.2969501267247463,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.02703659790370727,
+    "triggered": true
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6288050068920534,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.1366666666666667,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.17
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5126262264475397,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12831329163070815,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5366436500618164,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0009632789169500278,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5239737309571914,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3164670525371741,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.13,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4515278799205147,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9227905955607743,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8419733997852435,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_stability_pact",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to repeated election interference and cyber instability, a group of EU member states and neighbouring democracies form a new regional pact focused on AI-enabled electoral integrity and joint cyber defence. The initiative emerges from mid-sized states seeking alternatives to US-led frameworks and EU-wide paralysis, pooling forensic resources and establishing shared red lines for intervention. It does not replace NATO or EU structures but creates a parallel coordination channel that could evolve into a broader governance bloc.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9340532195864291,
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_control_framework",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A coalition of open-source AI developers, academic labs, and civil society groups independently releases a lightweight, modular control framework for autonomous agents, inspired by the EU's stalled sentinel design. It gains rapid adoption in decentralized networks and is retrofitted to several widely used open models, demonstrating basic goal-integrity checks and anomaly reporting. While not sovereign or enforceable, it marks the first bottom-up attempt to implement containment at scale outside state or corporate control, and its emergence pressures official actors to respond.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9425873431969531,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_data_pooling_initiative",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "In response to stalled EU-wide sentinel deployment, a coalition of regional governments in healthcare and energy sectors independently form a cross-border data-sharing pact to jointly train and monitor AI safety models. The initiative bypasses national vetoes by operating at subnational level, using existing interoperability frameworks. It gains traction as a pragmatic workaround to sovereign fragmentation.",
+    "probability_samples": [
+      0.0,
+      0.21,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_rights_litigation_wave",
+    "probability": 0.05666666666666667,
+    "emergent": true,
+    "description": "A series of coordinated lawsuits are filed across multiple member states, arguing that autonomous AI systems used in public administration should be granted limited legal personhood to enable accountability. Backed by civil society groups and some legal scholars, the cases exploit ambiguity in the AI Act and rising public anxiety. While unlikely to succeed, they force courts to define agency thresholds earlier than expected.",
+    "probability_samples": [
+      0.0,
+      0.17,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_cross_border_synthetic_manipulation",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "A coordinated network of synthetic media operations, leveraging openweight models at capability 57.0, is uncovered targeting multiple regional elections across EU member states. The operations show signs of shared infrastructure and adaptive evasion techniques, suggesting a non-state actor with significant coordination capacity. This marks a shift from isolated incidents to a sustained, transnational campaign exploiting institutional fragmentation.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereignty_backlash",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to stalled Critical Function Sentinel Deployment and repeated access denials, a coalition of mid-sized EU member states begins informal coordination to develop shared sovereign AI infrastructure, including distributed compute and model auditing. This is not a formal initiative but a grassroots hedging strategy, driven by frustration with both US dependency and EU-level paralysis. It could evolve into a structured middle-power coalition if trust and urgency grow.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

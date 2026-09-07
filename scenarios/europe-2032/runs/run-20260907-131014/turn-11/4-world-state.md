@@ -1,0 +1,17 @@
+### A Step in Open Access, Not a Leap
+
+The open-weight ecosystem made notable progress this quarter as a new high-performance model, developed collaboratively by research collectives in France and Finland, was released under permissive licensing. It has seen significant uptake, particularly in academic and public-sector deployments. This advancement reflects sustained investment over prior turns and contributes to a measured rise in `openweight_capability`, now at 58.0 — still well behind `ai_capability` at 69.0. The release is meaningful but does not signal parity or imminent convergence; the gap remains substantial, and the model's capabilities are not equivalent to the current closed frontier.
+
+The diffusion of this model occurred without accompanying safety validation frameworks. As unvetted deployments grow, especially in infrastructure-linked systems, observed incidents of erratic behaviour under edge conditions have increased. With no counterbalancing safety upgrades in place, `ai_safety` declined by 3 points. Resilience also dipped slightly, as rising capability outpaces defensive hardening.
+
+Meanwhile, Washington leveraged its jurisdiction over key components to force the Netherlands to restrict ASML’s exports further—not only on advanced lithography but on older systems vital to broader semiconductor production. This `supply_chain_coercion` event underscored the EU’s strategic vulnerability, confirming that its one major chokepoint in the global AI stack is not under its control.
+
+### The EU Responds — With One Focus
+
+In response, the European Union launched the **Sovereign Compute Corridor**, a Category 4 initiative aimed at building resilient, legally protected compute infrastructure across member states. Invoking Article 122 on grounds of strategic vulnerability, the Commission fast-tracked permitting and prioritised energy access for designated AI sites, anchoring them in Brittany and northern Sweden. Germany and Austria were offered co-stewardship to ease concerns over centralisation.
+
+This is the only new measure initiated this turn. The **Sovereign Compute Corridor** is now the EU’s named priority. The Portfolio Charge reflects only this action: −3 for launching a large new measure, and −1 for naming it priority, for a total of −4. The earlier measure, *Accelerate EU AI Safety Assurance Infrastructure*, remains on track but was not advanced or recharged this turn; its prior charges stand, but no new cost was incurred.
+
+Construction has not yet begun, and no sovereignty gains are registered. The political signal, however, resonated. Public sentiment rose by 5 points, driven by visible action on dependency and early announcements of job creation in host regions. Protests in Lyon and Vienna over centralisation and energy use continue, but in Helsinki and Marseille, local leaders welcomed the investment. `eu_political_capital` remains at 19.0 — the burden of the new measure is offset by the proposal bonus for addressing strategic exposure and safety concerns through the corridor’s design, which includes embedded evaluation nodes.
+
+No metric exceeds a 25-point shift, and no capability leaps without accumulation. The open-weight advance is real, but gradual. The future remains uncertain, not foretold.

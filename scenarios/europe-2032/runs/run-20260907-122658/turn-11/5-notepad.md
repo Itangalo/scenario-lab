@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Loss-of-Control Containment Framework −2, Sovereign Evaluation Corridor −3, priority −1 = −6  
+PROPOSAL BONUS: Sovereign Evaluation Corridor (cat 1, large) +3 — responds directly to loss_of_control_incident, a severe and unprecedented breach occurring last turn  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, middle_power_coalition t11 +2, capability rose 1.0 −1 = 24.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_open_source_cyber_tools` -- first noted turn 11, listed in 1 turn(s) so far: The underground toolkit for AI-driven cyberattacks evolves further, now incorporating adaptive evasion techniques that allow persistent access in municipal and regional networks. Its modular design enables non-expert users to launch sophisticated campaigns, and it begins to spread beyond isolated hacker forums into broader threat actor ecosystems.  
+- `emergent_sovereign_tech_alliance` -- first noted turn 11, listed in 1 turn(s) so far: The grassroots European sovereign tech alliance expands its pilot projects, deploying lightweight, open sparse-model tools for local governance and public service automation in three additional member states. The initiative gains traction as a credible alternative to hyperscaler dependence, attracting public research funding and political attention as a model of democratic AI development.

@@ -1,0 +1,248 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7109407068810233,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5785021662552844,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11055296466134734,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.1366666666666667,
+    "probability_samples": [
+      0.08,
+      0.25,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2756715693073174,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "taiwan_blockade",
+    "probability": 0.0,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6199681705040307,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3114228254838185,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7116425687853205,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.28669964941898596,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.04371768534986942,
+    "triggered": true
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9362461259792833,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated AI-driven disinformation campaign using synthetic media overwhelms local fact-checking infrastructure in two member states ahead of regional elections, triggering emergency debate on platform liability and real-time detection mandates.",
+    "emergent": true,
+    "id": "emergent_synthetic_election_interference",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3766951860268851,
+    "triggered": false
+  },
+  {
+    "description": "The underground toolkit evolves, now bundling exploit chaining with evasion techniques that bypass signature-based detection in two mid-sized municipal networks.",
+    "emergent": true,
+    "id": "emergent_open_source_cyber_tools",
+    "probability": 0.19333333333333336,
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.28
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8740590453283438,
+    "triggered": false
+  },
+  {
+    "id": "emergent_evasion_in_wild",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Open-source AI tools incorporating evasion logic derived from frontier models begin to spread in underground developer forums, enabling undetectable cyber operations. This marks the first confirmed diffusion of bounded-agency circumvention techniques beyond laboratory control, increasing the risk of autonomous systems operating under radar in critical infrastructure.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.15834341924707296,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9980867277220932,
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_agency_strain",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "The European Agency for AI Assurance and Control, operating at only 40% capacity, becomes a focal point of internal dysfunction. Delays in evaluations and patchy oversight are exposed after a minor breach in a regional health AI system is traced back to unreviewed model updates. The incident fuels criticism that the EU's oversight is performative rather than operational, and calls grow for either a major restructuring or emergency funding.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

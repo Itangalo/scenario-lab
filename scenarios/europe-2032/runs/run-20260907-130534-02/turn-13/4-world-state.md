@@ -1,0 +1,15 @@
+### A Union in Emergency Mode
+
+Global AI capability rises to 72.0, continuing the steady upward trend observed since Turn 1. Open-weight capability remains at 65.0, with no measurable progress this turn; while replication tools advance in the global ecosystem, these gains are not yet reflected in open-weight model performance or deployment scale. The offensive potential of accessible AI grows, and the recent cyberattack—spanning hospital networks and regional power grids—reveals how thin defences remain.
+
+The EU debates the creation of a Crisis Execution Authority (CEA), a proposed body designed to cut through bureaucratic inertia and enforce emergency resilience measures under Article 122 TFEU. Draft legislation circulates among member states, proposing direct access to sovereign compute and authority over critical infrastructure during AI emergencies. A tripartite leadership structure is floated, drawing from ENISA, HERA, and the European Public Prosecutor’s Office. However, no formal adoption occurs this turn: Germany, Poland, and Hungary signal strong legal objections, arguing it undermines national competences. The European Parliament defers discussion, demanding stronger oversight mechanisms before ratification. Emergency procurement remains unactivated.
+
+The Sovereign Compute Acceleration Programme remains in planning, with no physical deployment begun—funding is still tied up, and trust in delivery is low. The Emergency Resilience Hardening Directive continues its uneven rollout. ENISA conducts red-teaming exercises in France and Finland, but Greece and Portugal report they cannot afford upgrades. Ireland and the Netherlands maintain cloud dependencies, citing interoperability risks.
+
+Public sentiment holds at 12.0, as blackouts and the genome model controversy fuel fear. AI is seen not as a tool, but as a source of instability. Early drafts of the CEA proposal are labelled a "digital dictatorship" by opposition parties in several capitals.
+
+US_POSTURE: proactive containment (carried from Turn 6). Despite the new administration’s public focus on domestic AI integration, its diplomatic signals reinforce export controls on frontier models and deepen coordination with Indo-Pacific allies on AI security. No direct outreach to the EU occurs this turn.
+
+### Sovereignty Unchanged, Capital Erodes
+
+No new measure is launched. The CEA is proposed but not adopted, avoiding breach of the one-measure limit. Organisational momentum from the *proposed* authority does not contribute to sovereignty, preserving the independence of the metric. AI safety drops further as opaque systems proliferate. Resilience inches up from planning activity. Political capital falls to 4.0, reflecting the strain of advancing a high-cost initiative alongside two existing large measures and a named priority, without delivery gains. The cost is borne in political capital, not offset by premature sovereignty credits.

@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: European Agency for AI Assurance and Control −3, Secure Open-Source Evaluation Framework −2, priority −1 = −6  
+PROPOSAL BONUS: Secure Open-Source Evaluation Framework (cat 5, small) +2 — leverages safety_breakthrough this turn and addresses emergent_open_source_cyber_tools  
+LEGITIMACY LENDS: none — eu_political_capital (45.0) > public_sentiment (26.0)  
+SOVEREIGNTY: 33.0 last turn, no capacity event, capability rose 1.5 −1 = 32.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_regulatory_defection` -- first noted turn 11, listed in 3 turn(s) so far: A major EU member state, under pressure from domestic tech interests and external actors, announces it will unilaterally recognize foreign AI safety certifications, effectively bypassing key provisions of the AI Act. This creates a regulatory loophole and triggers legal challenges within the Union, weakening the European Agency for AI Assurance and Control before it becomes operational. The move is framed as reducing compliance costs for startups, but seen as a precedent for fragmentation.  
+- `emergent_open_source_cyber_tools` -- first noted turn 11, listed in 3 turn(s) so far: Underground AI exploit kits now include logic for evading behavioural detection, observed in attacks on municipal water systems. The tools are modular, adaptable, and increasingly user-friendly, enabling less-skilled actors to launch sophisticated cyber intrusions. This marks a shift from isolated incidents to distributed capability erosion, with openweight models accelerating the diffusion of offensive AI techniques beyond state actors.

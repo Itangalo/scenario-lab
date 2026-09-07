@@ -1,0 +1,13 @@
+### A Turn of Compounding Crises
+
+AI capability advances to 72.0, driven by self-improving agents refining reasoning pipelines and broadening task autonomy. The open frontier continues its steady creep, with capable actors adapting leaked architectures and fine-tuning them on accessible compute, pushing openweight capability to 59.0. This widening diffusion fuels a major cyber incident: a model-generated exploit chain compromises a critical software dependency, disrupting public health systems in three member states. Defenders are overwhelmed, attribution remains unclear, and the breach exposes how deeply fragile just-in-time digital infrastructure has become.
+
+Public trust erodes further. The abrupt cutoff from a foreign AI model—still unexplained—has left hospitals, ministries, and industrial labs scrambling. Combined with visible job losses in legal, accounting, and software sectors, sentiment dips to 32.0 as protests grow and media frame AI as both disruptive and unreliable.
+
+In response, the EU proposes the **Sovereign Compute Acceleration Programme**, committing €3.2 billion to deploy exascale AI clusters on EU soil by 2035. Hosted in Finland, France, and Spain, these will anchor critical public services and red-teaming efforts. Germany and the Netherlands back the move, but Hungary resists, citing fears of U.S. retaliation, exposing fractures in unity. The programme is in early implementation and will take multiple turns to yield measurable effects.
+
+Work continues on the **Sovereign Evaluation Regime**, with funding discussions advancing for red-teaming labs in Germany, Finland, and Belgium. Negotiations on runtime interpretability and telemetry requirements remain ongoing, with France pushing for strong mandates and Poland advocating for SME exemptions. No final decisions are adopted this turn—regulatory complexity and cross-border coordination delays prevent immediate implementation, consistent with minimum lead times for high-cost measures.
+
+### Political Capital Under Fire
+
+The cyber incident and access denial trigger no immediate resilience gains. Instead, resilience drops to 56.0 as systems falter and no new protective measures have yet landed. Ai_safety declines to 21.0, as capability growth outpaces control. Political capital rises slightly to 35.0, reflecting the notepad’s accounting: a portfolio charge of −7 is offset by a +4 proposal bonus for launching a high-leverage social measure amid crisis, and +2 legitimacy lends from baseline capital and sentiment. The narrative of political overstretch is revised—while strain is evident, the EU retains enough cohesion to avoid a collapse in political capital this turn.

@@ -1,0 +1,292 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.14371957045389883,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.037523521793066505,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7373012615310293,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8082323264419544,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0282963816136913,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A grassroots coalition of municipal IT teams, bio labs, and open-source AI developers across Germany, Belgium, and northern Italy spontaneously forms a distributed incident response network, using shared lightweight models to detect and patch local AI-driven threats in real time. It emerges from the fragmentation of EU cyber resilience and the lack of central trust, becoming a de facto standard in regions skeptical of Brussels. The network is informal but effective, and its existence pressures ENISA to integrate it.",
+    "emergent": true,
+    "id": "emergent_decentralized_defence_network",
+    "probability": 0.3,
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2901208962450469,
+    "triggered": true
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.37944934875669223,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7730603143992898,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4585762043717323,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6355628480218749,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5291111457226434,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.03914269373170054,
+    "triggered": true
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.23653949965851284,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7787807867185823,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9389603793364334,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.18396418710975704,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.43218910633751406,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.19
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.19982471675096747,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8971357457280498,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9419120529935113,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.051590466646825206,
+    "triggered": false
+  }
+]

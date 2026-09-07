@@ -1,0 +1,432 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2658603421488773,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5228619769565376,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.11333333333333334,
+    "probability_samples": [
+      0.08,
+      0.12,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7924959567073511,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.19333333333333336,
+    "probability_samples": [
+      0.25,
+      0.08,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9792930515589482,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.30288697426121636,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A coalition of European member states, alarmed by repeated denials of frontier access and semiconductor coercion, begins informal coordination with Japan and South Korea to create a mutual access pact for AI development resources and secure supply-chain nodes. The move is framed as resilience-building but signals a shift toward strategic autonomy from U.S. tech policy. It gains traction due to the EU's upstream leverage in lithography and materials, even if sovereignty remains low.",
+    "emergent": true,
+    "id": "emergent_middle_power_alignment",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.21776554976114038,
+    "triggered": false
+  },
+  {
+    "description": "Amid collapsing public sentiment and high-profile failures in algorithmic governance, a cross-European civil society network successfully blocks the deployment of a national AI-driven policing pilot in Germany through coordinated legal action and public pressure. The precedent spreads quickly, with similar initiatives emerging in France and Italy, signaling a grassroots check on public-sector AI adoption that institutions are no longer able to ignore.",
+    "emergent": true,
+    "id": "emergent_civil_society_pushback",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5893157895917577,
+    "triggered": false
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8927635444277858,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.42004687459924417,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3430637150105661,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8028332456493706,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5225360489888706,
+    "triggered": false
+  },
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.37424629632984396,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.774044912480876,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.027948810214613706,
+    "triggered": true
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7337725195149212,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4319933836820635,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.39784874515852475,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.2097505444987383,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7141358039061584,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5062360743786845,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5708445779888919,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.11,
+    "probability_samples": [
+      0.0,
+      0.19,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3182033322344019,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.14842329437306023,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.2687515125475757,
+    "triggered": false
+  },
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4318229432271129,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.16690592179168806,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of EU member states, alarmed by repeated frontier access denials and semiconductor supply coercion, initiates a quiet diplomatic channel with Japan, South Korea, and Taiwan to coordinate export licensing and mutual compute access guarantees. The group agrees to share early warnings on export control changes and explore joint procurement of AI training infrastructure. This marks the first concrete step beyond rhetoric in building a counterweight to unilateral great-power tech dominance.",
+    "emergent": true,
+    "id": "emergent_technology_diplomacy_initiative",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "An open-source AI-driven platform for real-time detection of synthetic media emerges from a European hacker collective, gaining rapid adoption by independent journalists and fact-checking organisations. It uses distributed verification and blockchain-backed provenance tagging to flag manipulated content, becoming a grassroots tool against election interference and disinformation. Its success pressures public institutions to adopt similar standards.",
+    "emergent": true,
+    "id": "emergent_synthetic_media_detection_network",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_eu_cyber_mobilization",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "In response to repeated cyber incidents and the Sovereign Cyber Shield's incomplete adoption, a coalition of mid-sized EU states begins pooling defensive cyber resources and AI-driven threat detection under a shared operational framework, creating a de facto union-level cyber force outside formal structures. This mobilization emerges from necessity rather than design, and gains momentum as trust in centralized coordination erodes.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_biosecurity_tools",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A distributed network of European biosecurity researchers and open-source developers releases a suite of AI-powered tools for rapid screening of synthetic DNA sequences and anomaly detection in lab workflows, gaining rapid adoption across academic and industrial labs. The tools are lightweight, interoperable, and designed to harden the ecosystem against misuse even in the absence of top-down regulation.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

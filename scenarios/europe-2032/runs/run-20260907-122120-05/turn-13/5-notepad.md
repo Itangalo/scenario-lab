@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Sovereign Evaluation Regime −3, Emergency Critical Infrastructure Shield −3, Sovereign Compute Acceleration Programme −3, priority −1 = −10  
+PROPOSAL BONUS: Sovereign Compute Acceleration Programme (cat 4, large) +6 — eu_frontier_access_denied landed this turn and this answers it directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 19.0 last turn, eu_frontier_access_denied t13 −3, capability rose 0.5 −1, Sovereign Compute Acceleration Programme in flight +0 (early) = 15.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_regional_grid_cooperation` -- first noted turn 11, listed in 4 turn(s) so far: In response to repeated AI-driven grid instability, several EU member states form a regional technical alliance to co-develop sovereign, interoperable grid control systems with built-in adversarial robustness and real-time anomaly detection. The initiative pools public engineering talent and bypasses hyperscaler dependencies, gaining support from energy regulators and municipal utilities wary of centralized automation.  
+- `emergent_open_sovereign_framework` -- first noted turn 11, listed in 4 turn(s) so far: A coalition of European public research institutes, municipal governments, and open-source AI developers launches a shared framework for sovereign, auditable AI agents designed for public-sector use. The framework emphasizes transparency, local control, and resistance to external takedown, building on the momentum of the emergent_sovereign_tech_alliance and attracting funding from national innovation agencies seeking alternatives to U.S. and Chinese stacks.

@@ -1,0 +1,364 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9203288770647183,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.28681728624767,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9065351635830456,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.392465222361166,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2708883955691873,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.07,
+    "probability_samples": [
+      0.05,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.",
+    "emergent": true,
+    "id": "emergent_bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4873593102339343,
+    "triggered": false
+  },
+  {
+    "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6879511664538915,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.508454327900726,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8831790286432982,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.12,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.3830155078503098,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.4998049352357441,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5237299553741654,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9492143642473315,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6035246295107607,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.48908538669030555,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.193006911654113,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.628048781025638,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.12055222539012278,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.11,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.19
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.896191747123002,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.503807442930918,
+    "triggered": false
+  },
+  {
+    "id": "emergent_human_futures_movement",
+    "probability": 0.02666666666666667,
+    "emergent": true,
+    "description": "A transnational civil society movement gains traction, demanding that AI development be oriented toward human flourishing rather than efficiency or control. It draws support from displaced workers, educators, and faith groups, and begins staging coordinated actions across EU cities. Its influence grows as public sentiment remains low and institutional trust erodes.",
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6399133952113103,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8233399591430867,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.28390780397109716,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.06
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.29982617747784435,
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_crisis_response",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "As public sentiment remains critically low and political capital erodes, a cross-institutional crisis cell forms among mid-level civil servants in Germany, France, and the Netherlands, independently developing contingency protocols for AI governance failure. This informal network begins coordinating shadow exercises for systemic breakdowns, bypassing formal EU channels due to perceived paralysis at the top.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientific_embargo_movement",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "In response to repeated safety gaps and uncontrolled capability advances, a growing number of frontier researchers in non-aligned countries begin refusing to publish or collaborate on high-capability AI work without independent ethical review. This self-imposed embargo, while not yet universal, signals a shift in scientific norms and creates a new de facto barrier to uncontrolled diffusion—driven not by policy but by researcher conscience.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_synthetic_election_interference",
+    "probability": 0.31666666666666665,
+    "emergent": true,
+    "description": "A coordinated AI-driven disinformation campaign using synthetic media overwhelms local fact-checking infrastructure in two member states ahead of regional elections, triggering emergency debate on platform liability and real-time detection mandates.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

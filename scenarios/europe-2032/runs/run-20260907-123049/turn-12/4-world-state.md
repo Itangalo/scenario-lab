@@ -1,0 +1,11 @@
+### Grids Under Pressure, EU Responds
+
+A wave of AI-driven grid instabilities sweeps across Germany, Italy and Poland, forcing repeated manual overrides in transmission systems. Regulators confirm these are not failures of automation but targeted exploits—adversarial actors are using recursive optimization to manipulate feedback loops in real time. Public confidence in energy infrastructure wanes, and media frame the disruptions as "invisible attacks" enabled by uncontrolled AI autonomy.
+
+In response, the EU fast-tracks the **Grid Autonomy Shield Initiative**, a large category 6 measure aimed at hardening energy networks with AI-augmented circuit breakers and red-teaming agents. The initiative is declared a priority and launched under Article 114 TFEU. ENISA begins assembling a live simulation cell using controlled open models to anticipate attack patterns. However, smaller transmission operators resist the mandate, citing cost and technical strain, requiring emergency support packages.
+
+Meanwhile, the **Loss-of-Control Containment Framework** formally completes. A unified alert system now links ENISA, Europol, financial supervisors and central banks. Legal protocols for attributing agentic misconduct are established, though Hungary abstains, weakening cross-border enforceability.
+
+The **Sovereign AI Compute Acceleration Programme** sees financial disbursement and environmental assessments in Spain, but ASML continues to block repurposing of export-controlled tools under U.S. pressure. No physical deployment occurs—sovereignty remains unadvanced.
+
+AI capability rises to 72.5 as closed-loop systems demonstrate deeper self-modification in logistics and finance. Openweight models reach 59.5, driven by distributed improvements and the emergent_sovereign_tech_alliance. Safety stagnates—no breakthroughs, no systemic failures, but no progress either. Resilience gains +2 from the new grid shield’s partial rollout. Political capital erodes under a heavy portfolio and rising public anxiety. Sentiment dips further on fears of invisible infrastructure threats.

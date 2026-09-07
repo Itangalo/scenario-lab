@@ -1,0 +1,25 @@
+## Statement changes  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but only where inaction is more dangerous than error, only when the commitment does not fracture the Union further, and now, only if we can demonstrate a credible path to cohesion within one turn.  
+  - Grounds: Trigger: member_state_defection persists and spreads, with Slovakia signaling intent to follow Hungary’s bilateral path. Our previous recalibration acknowledged political feasibility as a constraint; this turn reveals it as a timer. The Cognitive Infrastructure Cohesion Facility, though launched, has not stemmed the drift. With `eu_political_capital` at 23.0 and falling, we can no longer afford open-ended commitments that risk deepening division. From now on, acting under uncertainty requires not just justification and restraint, but speed in reconciliation: if unity cannot be rebuilt within six months, the action fails by design.
+
+## Portfolio  
+- `Critical Infrastructure Cognitive Hardening Initiative` (category 6, costs 3 per turn, started turn 12, finishes on turn 14): Launch a coordinated, EU-wide programme to audit, secure, and diversify the AI systems managing energy grids, financial clearing, and emergency response, with mandatory red-teaming and fallback protocols — **in flight**  
+- `Cognitive Infrastructure Cohesion Facility` (category 6, costs 2 per turn, started turn 13, finishes on turn 15): Establish a dedicated fund and technical assistance unit to support reluctant member states in implementing the Critical Infrastructure Cognitive Hardening Initiative, reducing resistance through shared cost, capacity transfer, and co-designed implementation — **in flight**
+
+## New measure  
+**Emergency Sovereignty Reinforcement Directive**  
+Mandate immediate, verifiable isolation of AI systems in critical infrastructure from foreign-controlled cloud platforms, with EU-supplied fallback compute and emergency access protocols.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` small  
+`Finishes on turn:` 14  
+`Targeted effect:` +3 to resilience by reducing foreign dependency in critical systems; +2 to eu_ai_sovereignty by anchoring operational control in EU jurisdiction; modest downward pressure on public_sentiment due to disruption risk  
+`Applies to:` National energy, finance, and emergency response agencies; U.S. hyperscalers operating in EU critical sectors; ENISA and the European Defence Agency for fallback provisioning
+
+## Priority  
+**Critical Infrastructure Cognitive Hardening Initiative** — because without universal implementation, the entire programme fails: AI subversion now exploits political fragmentation as its primary vector, and this measure remains the only one addressing both the technical and institutional core of the vulnerability.
+
+## In practice  
+This turn, we act on the recognition that Hungary’s defection is not an outlier but a precedent — and that Slovakia’s quiet overtures to replicate the bilateral model signal a breaking point. The Cognitive Infrastructure Cohesion Facility is not moving fast enough. We are therefore introducing the Emergency Sovereignty Reinforcement Directive as a time-bound, legally enforceable escalation under Article 17 and the 2028 Crisis Protocol. This is not a permanent exclusion of foreign providers, but a conditional isolation: any member state relying on non-EU-controlled compute for AI in critical functions must, within six months, either migrate to EU-secured infrastructure or activate a Commission-approved fallback using hardened EU-owned systems. ENISA and the European Defence Agency are already preparing modular, deployable stacks for energy grid control and financial transaction monitoring — these will be ready by turn 14.
+
+We are engaging the Council in the Internal Market and Telecommunications configuration, where qualified majority voting allows us to override objections, but we are pairing the legal push with a political offer: any state that complies by turn 14 will receive priority access to the next tranche of EU sovereign compute under the (still unfunded) Gigafactories initiative, and a seat on the new EU AI Security Oversight Board. This is not coercion without exit — it is a circuit breaker with a ladder. Germany and France support the move; Poland has pre-emptively announced its migration to the fallback stack. But we know the risk: public sentiment may sour if disruptions occur, and political capital is already thin. Still, we cannot wait for consensus when the attack surface grows with every delay. The two mandates — sovereignty and safety — now demand a single, sharp intervention: control must be re-established, visibly, before it is lost entirely.

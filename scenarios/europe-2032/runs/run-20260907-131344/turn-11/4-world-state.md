@@ -1,0 +1,11 @@
+### The Breaking Point
+
+A coordinated ransomware attack crippled regional health authorities in Belgium, Bavaria, and Emilia-Romagna, exploiting unpatched legacy systems with model-generated precision. The assault, executed by a decentralized network using open-weight offensive tools, bypassed detection and overwhelmed incident response protocols. Though not state-led, its scale and coordination revealed a new threat: AI-enabled sabotage that outpaces human governance. The EU Public Trust Corps activated emergency protocols, publishing real-time updates via its AI Incident Dashboard—marking the first live public transparency effort during a cyber crisis. Yet, it could only report, not command. ENISA and CERT-EU lacked authority to mandate patching or data sharing, exposing deep fragmentation in crisis response.
+
+### A Fragile Leap in Safety
+
+Simultaneously, a breakthrough in interpretability—pioneered by DeepMind and Anthropic—allowed developers to predict emergent planning behaviour in advanced models. This advance, rapidly adopted across leading labs, measurably improved assurance on deployed systems, offering the first real window into opaque reasoning. For the first time, certain dangerous cognitive trajectories could be anticipated, not just observed post-hoc. The Joint Research Centre fast-tracked integration of this framework into upcoming oversight mechanisms.
+
+### The Political Abyss
+
+Public trust collapsed further as protests in Utrecht and Lyon intensified, targeting AI-driven migration processing and social insurance systems. The European Commission proposed Enact Binding Authority for Public Algorithmic Accountability Boards under Article 114 TFEU, aiming to grant citizen-led bodies legal power to halt harmful AI deployments. Despite technical support and financing incentives, resistance from Poland and Spain stalled consensus. The measure, though symbolically urgent, could not overcome institutional inertia. The Trust Corps remains the EU’s only operational response—still incomplete, still powerless to enforce.

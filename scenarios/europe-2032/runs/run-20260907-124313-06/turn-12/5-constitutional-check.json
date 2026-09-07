@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 58.0 to 65.0 (+7.0), which is a permissible rise, but the narrative attributes this jump to \"refined cyber-attack modules\" in openweight tools without any indication of a corresponding increase in `ai_capability` (which only rose by 1.5, from 70.5 to 72.0). Given that `openweight_capability` must not exceed `ai_capability` and is derived from it, a 7-point jump in openweight capability on a 1.5-point base gain is implausible unless explicitly tied to a compounding mechanism like `rsi_onset`. No such mechanism is referenced, making this divergence inconsistent with the dependency relationship required by Invariant 2.\n- Modelling Choice 5 violated: The EU introduces **Cyber Shield for Critical Services** as a new measure and also declares it a priority in the same turn. This constitutes introducing a new measure *and* naming a priority, which is allowed only if they are the same action. However, the notepad shows that **Mandatory Incident Reporting and Threat Sharing Network** was already active (with a −3 charge), meaning the portfolio was not empty. Therefore, introducing a new measure *and* setting a priority (via \"priority −1\") in the same turn violates the \"at most one new measure per turn, and at most one named priority\" rule. The simultaneous activation of a category 6 measure and reassignment of priority constitutes two distinct policy actions.\n- Modelling Choice 6 violated: **Cyber Shield for Critical Services** is described as a \"large category 6 measure\" and immediately begins contributing to a modest gain in resilience, despite minimum implementation time being two full turns for high-cost measures. The narrative acknowledges \"immediate delays\" and \"procurement bottlenecks\", yet still assigns a positive effect (+2 to resilience). This contradicts the rule that no measure is implemented instantly and that effect must grow toward completion — partial effects are only justified as the measure nears completion, not at inception."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

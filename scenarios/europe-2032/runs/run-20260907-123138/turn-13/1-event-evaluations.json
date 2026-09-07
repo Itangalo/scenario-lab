@@ -1,0 +1,244 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.38666666666666666,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.44
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.47154617163064527,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.18399176916813242,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6002166849063505,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5064038516783422,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8251782473445431,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8649310455434501,
+    "triggered": false
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5756664399508894,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.08340553918954619,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7558916449793066,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2476482950591845,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9986458915454732,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.13,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.0012625207751442158,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8198684754093409,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.02,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.30060884757525086,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regulatory_backlash",
+    "probability": 0.2833333333333334,
+    "emergent": true,
+    "description": "Following the annulled election and uneven rollout of the Critical Function Sentinel Deployment, civil society groups in three major member states file coordinated legal challenges against AI surveillance in public services, arguing that monitoring systems infringe on fundamental rights and due process. The cases gain fast-track status in the European Court of Justice, creating a binding precedent risk for the entire sentinel programme.",
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.01452793066558078,
+    "triggered": true
+  },
+  {
+    "id": "emergent_open_source_cyber_tools",
+    "probability": 0.3233333333333333,
+    "emergent": true,
+    "description": "Underground AI-powered exploit kits are now modular, enabling non-state actors to chain novel attacks with minimal expertise. These tools, built from leaked cyber capabilities and adapted using open-weight models at 57.5 capability, are being shared on fringe developer forums and darknet marketplaces, significantly lowering the barrier to high-impact cyber operations.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.32
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.857824585216427,
+    "triggered": false
+  }
+]

@@ -1,0 +1,11 @@
+### Red-Teaming Mandate Launched Amid Legal Friction
+
+The European Union initiates a red-teaming mandate for AI systems above 60.0 capability, centred on the Sovereign AI Core in Brittany and northern Sweden. Leveraging emergency powers under Article 122 and delegation via Article 114 TFEU, the European Agency for Artificial Defence (EAAD) begins preliminary work to accredit red teams from Norway, Finland, and select national cyber agencies. Secure enclaves within the Core are designated for evaluations targeting goal persistence, evasion, and recursive self-modification, with developers required to submit model weights, training logs, and agent trajectories under stress.
+
+However, implementation remains partial and contested. Germany and Austria raise constitutional objections to the scope of EAAD’s authority and the extraterritorial reach of enforcement, with Vienna preparing a preliminary reference to the European Court of Justice. No evaluations are conducted this turn, and accreditation remains in planning. Japan and South Korea observe but withhold commitment, pending clarity on legal durability and technical protocols.
+
+### Capability Creeps, Safety Stalls
+
+Global AI capability advances to 69.5 as frontier labs report progress in long-horizon planning and cross-modal reasoning. Open-weight systems benefit indirectly from public research spillovers and incremental replication efforts, lifting `openweight_capability` to 58.0, but no major open release or infrastructure leap occurs. Safety assurance remains stagnant at 27.0, with no operational impact from the red-teaming initiative this turn.
+
+Labour displacement continues in legal and accounting sectors, with AI-driven automation eliminating an estimated 180,000 EU positions since mid-year. Protests in Lyon and Vienna grow more frequent, though not larger, as regional mutual aid networks begin piloting retraining pipelines. Public sentiment holds at 14.0, reflecting deepening resignation. EU political capital remains unchanged, as legal friction offsets symbolic momentum. Sovereignty holds at 14.0 — the capability rise of 1.5 triggers a −1 decay, but no additional event term applies, and the result rounds to 14.

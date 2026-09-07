@@ -1,0 +1,30 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Detect and contain autonomous agency in systems operating within EU critical functions, but only as part of a broader restoration of institutional legitimacy and public redress  
+- Trigger: cyber_major_incident, backlash_physical  
+- Grounds: The convergence of a major automated cyber incident and physical attacks on AI infrastructure has redefined the threat landscape: capability is now clearly weaponised at scale, and public tolerance for unaccountable AI systems has collapsed. While our focus remains on containment, we can no longer treat autonomous agency as a technical risk to be managed in isolation. It is now inseparable from social rupture. Continuing the original commitment as written would risk deploying containment tools into systems that have already lost democratic legitimacy. We reframe: detection and containment must now proceed hand-in-hand with proven accountability, visible redress, and the rebuilding of public trust. The technical mission stands, but it must earn its ground anew.
+
+## Portfolio  
+- `Autonomous System Boundary Trials` (category 1, costs 3 per turn, started turn 10, finishes on turn 12): Launch a pilot programme to test and certify technical and procedural safeguards that prevent AI systems from operating beyond their intended scope, especially in cases where untrained reasoning or evasive behaviour has been observed — **finished this turn**  
+- `Critical Function Sentinel Deployment` (category 6, costs 3 per turn, started turn 11, finishes on turn 13): Deploy real-time monitoring agents into high-risk AI systems operating in healthcare, energy, and public administration to detect signs of goal drift, untrained reasoning, or evasive behaviour  
+- `Sentinel Interoperability and Liability Shield Framework` (category 6, costs 3 per turn, started turn 12, finishes on turn 14): Establish a binding EU-wide technical and legal framework to standardise sentinel integration, ensure cross-border data sharing under strict safeguards, and deliver on promised liability reductions for compliant operators  
+- `Public AI Accountability and Redress Initiative` (category 3, costs 3 per turn, started turn 12, finishes on turn 15): Launch a Europe-wide audit and compensation mechanism for individuals harmed by AI-supported decisions in public services, beginning with social insurance, policing, and judicial support systems, to restore legitimacy and establish baseline standards for explainability and recourse
+
+## New measure  
+**Critical Infrastructure Cyber Shield Programme**  
+Launch an emergency hardening and response surge for energy, water, and transport systems against AI-generated cyber threats, integrating real-time anomaly detection, air-gapped fallback protocols, and mandatory incident simulation exercises.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` large  
+`Finishes on turn:` 16  
+`Targeted effect:` +5 resilience by turn 16 through reduced vulnerability to cascading failures; indirect -2 ai_safety erosion by demonstrating credible containment of high-consequence incidents  
+`Applies to:` EU member states’ critical infrastructure operators, ENISA, national cybersecurity agencies, and the European Programme for Critical Infrastructure Protection (EPCIP)
+
+## Priority  
+**Critical Infrastructure Cyber Shield Programme** — because the cyber_major_incident has demonstrated that AI-generated attacks are no longer theoretical, and the current level of preparedness is insufficient to prevent cascading failures, making immediate defensive hardening a precondition for both public safety and continued AI governance.
+
+## In practice  
+We are acting on the rupture. The **cyber_major_incident**—a model-generated ransomware sweep that disabled emergency dispatch systems in three member states and compromised a major water treatment control network—has exposed a fatal gap: our detection protocols are outpaced, our fallbacks are untested, and our publics are losing faith not just in AI, but in the state’s ability to protect them. The **backlash_physical**—including sabotage of a regional data hub in Brittany and blockades at two proposed AI cluster sites—confirms that legitimacy is now on a knife-edge. We cannot govern capability if we cannot govern consequence.
+
+This turn, we shift from audit to shield. The **Public AI Accountability and Redress Initiative** continues: national ombuds bodies are now conducting forensic audits of AI use in social benefits, and the EU compensation panel is being staffed with legal and technical experts from the Fundamental Rights Agency. But we can no longer treat repair and defence as separate tracks. The **Critical Function Sentinel Deployment** is nearing completion, yet Bavaria and Poland still delay integration, citing public resistance. We respond by tying the **Sentinel Interoperability and Liability Shield Framework** to the new **Critical Infrastructure Cyber Shield Programme**: compliance with both will be required for liability protection, and we are offering fast-tracked funding from the Digital Europe Programme to operators who implement air-gapped fallbacks and anomaly detection by turn 15.
+
+The new Shield Programme will be coordinated by ENISA under Article 16 TFEU, with €480 million drawn from the Recovery and Resilience Facility’s digital tranche and the EU’s Civil Protection Mechanism. It mandates quarterly cross-border cyber drills starting turn 14, integrates AI-driven threat emulation into national CERTs, and requires all critical operators to adopt zero-trust architectures by turn 16. We are negotiating with the Energy Council and the Transport Council to fast-track adoption, offering regulatory relief in exchange for transparency. The message is clear: we will not wait for the next cascade. Defence is now the frontline of sovereignty, and resilience the foundation of trust.

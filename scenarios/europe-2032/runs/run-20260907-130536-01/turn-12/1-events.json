@@ -1,0 +1,50 @@
+[
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_bio_uplift_findings",
+    "probability": 0.17333333333333334,
+    "emergent": true,
+    "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.",
+    "probability_samples": [
+      0.35,
+      0.02,
+      0.15
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_human_futures_movement",
+    "probability": 0.16666666666666666,
+    "emergent": true,
+    "description": "A coordinated civil society initiative emerges across several EU countries, demanding transparency and democratic oversight of AI systems in public services. Sparked by ongoing protests and the failure of audit triggers, it gains traction in national parliaments and forces a debate on digital rights. This movement pressures the EU to reconsider its top-down safety infrastructure.",
+    "probability_samples": [
+      0.22,
+      0.08,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

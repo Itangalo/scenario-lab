@@ -1,0 +1,39 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_scientific_embargo",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A coalition of leading scientific publishers and preprint servers maintains and expands its embargo on AI-generated research submissions, citing irreproducibility and opaque methodology. The restriction begins to influence hiring and tenure decisions in academic institutions, slowing the integration of AI in fundamental research across Europe and beyond.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_refugee_movement",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "The flow of AI safety researchers seeking asylum in EU member states intensifies, with several high-profile defectors from adversarial states. Interior ministries fast-track applications, creating an informal but growing pipeline of talent. While counterintelligence concerns rise, the influx provides a rare opportunity to strengthen independent EU evaluation capacity.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

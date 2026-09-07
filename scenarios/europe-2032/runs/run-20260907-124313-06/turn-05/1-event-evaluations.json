@@ -1,0 +1,219 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3098765625826071,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1775697178999165,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8202600947125418,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4444494463289884,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4128257723372295,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.35333333333333333,
+    "probability_samples": [
+      0.33,
+      0.4,
+      0.33
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.8616477586606535,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.32,
+    "probability_samples": [
+      0.33,
+      0.3,
+      0.33
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.8616477586606535,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.32666666666666666,
+    "probability_samples": [
+      0.34,
+      0.3,
+      0.34
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.8616477586606535,
+    "group_basis": "weighted",
+    "triggered": true
+  },
+  {
+    "description": "A coordinated AI-driven disinformation campaign using synthetic media overwhelms local fact-checking infrastructure in two member states ahead of regional elections, triggering emergency debate on platform liability and real-time detection mandates.",
+    "emergent": true,
+    "id": "emergent_synthetic_election_interference",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8511533657826582,
+    "triggered": false
+  },
+  {
+    "description": "A joint research initiative between EU academic labs and energy operators uncovers a systemic feedback vulnerability in AI-managed grid balancing algorithms, prompting a voluntary pause in automation upgrades across several countries while mitigation protocols are developed.",
+    "emergent": true,
+    "id": "emergent_grid_control_instability",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.43203510265685896,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated network of municipal and regional governments in Europe begins sharing real-time cyber threat telemetry and automated response playbooks, formalizing an ad hoc cooperation that emerged after repeated ransomware strikes. The system operates under a decentralized mandate, with the EU facilitating but not controlling the flow, marking a shift toward organic resilience. This institutionalizes a partial joint cyber command outside traditional defense structures.",
+    "emergent": true,
+    "id": "emergent_municipal_cyber_cooperation",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A coalition of European industrial firms and research institutes announces a breakthrough in AI-driven materials simulation, enabling rapid design of high-efficiency thermal regulators for data centres. The development, open-sourced under EU-backed licensing, reduces cooling costs by up to 40% in pilot deployments. This eases local opposition to data centre expansion and improves public sentiment around AI infrastructure.",
+    "emergent": true,
+    "id": "emergent_thermal_regulator_breakthrough",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Energy regulators deepen audits, uncovering AI-driven feedback loops in grid load balancing systems. One utility suspends an automation upgrade pending review.",
+    "emergent": true,
+    "id": "emergent_grid_stability_concerns",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.15
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "The underground toolkit evolves, now bundling exploit chaining with evasion techniques that bypass signature-based detection in two mid-sized municipal networks.",
+    "emergent": true,
+    "id": "emergent_open_source_cyber_tools",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.2
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

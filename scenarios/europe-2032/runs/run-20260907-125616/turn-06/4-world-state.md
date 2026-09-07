@@ -1,0 +1,13 @@
+### The Core Under Fire
+
+The EU launched the Sovereign AI Core Programme in response to a devastating cyber incident that crippled public health IT systems via a poisoned open-source dependency. The attack, executed with AI-generated tooling, overwhelmed patching systems delayed by commercial cloud providers’ force majeure clauses. In the aftermath, the Commission declared the market-led model obsolete and invoked Article 122 TFEU to push forward hardened microgrids in Brittany, northern Sweden, and the Alps, powered by nuclear and geothermal sources. These sites are meant to host sovereign data centres running critical assurance and resilience functions under exclusive Union control.
+
+Despite the urgency, progress stalled. Germany and Austria deepened legal resistance, citing environmental risks and market distortion. ENTSO-E again refused to bind grid allocations without unanimity. Italy and Hungary rejected audit mandates, refusing to join the Joint Operational Board. A proposed node in the Apennines collapsed when Rome demanded veto rights over runtime monitoring. The EIB’s output-linked bonds faced legal uncertainty, delaying disbursement. Only limited redirection of funds from expired or pre-deployment envelopes was achieved, and no new physical infrastructure came online.
+
+The European AI Assurance Directorate expanded its mandate to runtime monitoring, but enforcement remained patchy. Real-time logging, critical for detection, was blocked in key sectors. Public trust eroded further as protests grew in legal and administrative sectors facing AI-driven displacement. A communication campaign streaming sanitised threat feeds failed to quell anger, seen as spectacle over substance.
+
+Meanwhile, offensive AI capabilities advanced. Global frontier development pushed `ai_capability` to 62.0, driven by autonomous code generation. Open-weight models reached 50.0, as non-US frontier access provided modest gains. With no major resilience measure completed, and `ai_safety` undermined by a capability jump, confidence in control systems waned. The cyber incident directly degraded `resilience`, and no measure landed in time to offset it.
+
+### A Fractured Response
+
+The EU’s political capital weakened further, burdened by four large measures in flight and a failed priority push. The new Sovereign AI Core Programme, though symbolically decisive, delivered no tangible capacity this turn. Sentiment dropped as visible dependency and internal division deepened.

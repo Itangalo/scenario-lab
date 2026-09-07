@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 55.0 to 62.0 (+7.0), which exceeds the maximum allowed single-turn increase of 25 points. While the value is well below the 25-point hard cap, the issue is consistency with prior trends and narrative justification: the narrative attributes this jump to \"adaptive cyber tools derived from leaked offensive frameworks\" circulating in underground forums. However, such a large leap—from 55.0 to 62.0, nearly closing the gap with `ai_capability`—implies a sudden, unexplained surge in distributed capability that is not supported by a named event gate, compounding mechanism (e.g., `rsi_onset`), or prior build-up in the `emergent_open_source_cyber_tools` tracker. The tracker notes activity but does not justify a +7.0 jump in capability, especially given that `ai_capability` itself only rose +1.5. This violates the spirit and consistency expectations of Invariant 2, which requires plausible accumulation without sudden unanchored jumps.\n- Modelling Choice 5 violated: The EU introduces the **Critical Function Sentinel Deployment** as a new measure while the **Edge Sovereignty Acceleration Programme** is still in flight. The notepad shows both measures with active charge (-3 each), confirming two concurrent measures. This violates the rule that \"at most one new measure per turn\" may be introduced. The launch of a large category 6 measure while another is ongoing is invalid."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

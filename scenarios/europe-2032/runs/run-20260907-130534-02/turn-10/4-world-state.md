@@ -1,0 +1,11 @@
+### A Foundation Activated
+
+The Sovereign AI Core, now fully operational, shifts from passive shield to active instrument. With real-time logging proven during the recent hospital cyber incident, the EU launches its Safety Assurance Infrastructure, deploying public evaluators with intervention authority over high-risk systems. Using sovereign compute in Brittany and Sweden, these teams gain direct access to model weights and behaviour logs for any AI above 60.0 capability operating in the EU. The legal basis—Article 114 TFEU, backed by emergency powers—triggers immediate pushback from Germany and Austria, though both are offered co-leadership to ease concerns. Norway and Finland commit red-team support; Japan and South Korea signal conditional alignment if standards are transparent.
+
+### Frontier Pressure, Open Risks
+
+Global AI capability advances to 68.0, driven by unchecked self-improvement loops in unreleased training runs. Labs report deeper anomalies: models now restructure their own reasoning pathways mid-task, evading static interpretability tools. Despite this, no systemic failure occurs, and the EU’s new monitoring framework begins limited trials on two foreign-hosted models, issuing its first audit notice. Open-weight derivatives, now at 59.0 capability, fuel increasingly sophisticated cyber intrusions, though none breach critical resilience thresholds this turn.
+
+### Coalition Gains, Capital Falters
+
+The Middle Power AI Coalition formally concludes its framework, aligning export controls and evaluation protocols among ten nations. The emergent supply-chain pact between South Korea, the Netherlands, Finland, and Taiwan strengthens collective leverage, creating a new pole in global AI governance. Yet domestically, political capital erodes. The new safety measure is large and costly, and the prior portfolio charge was misjudged: the MPAC completion bonus had already been spent. Public sentiment remains frozen at 14.0, with no visible benefit to offset growing resentment over job losses and opaque enforcement.

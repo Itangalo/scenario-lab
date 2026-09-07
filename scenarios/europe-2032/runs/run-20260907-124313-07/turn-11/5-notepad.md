@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: European Agency for AI Assurance and Control −3, Secure Critical Infrastructure Against AI-Driven Cyber Threats −3, priority −1 = −7  
+PROPOSAL BONUS: Secure Critical Infrastructure Against AI-Driven Cyber Threats (cat 6, large) +4 — responds directly to cyber_major_incident and emergent_synthetic_election_interference within the last three turns  
+LEGITIMACY LENDS: none — eu_political_capital (44.0) > public_sentiment (23.0)  
+SOVEREIGNTY: 30.0 last turn, Edge Sovereignty Acceleration Programme finishes t11 +3, capability rose 1.5 −1 = 33.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_regional_ai_safety_pact` -- first noted turn 11, listed in 2 turn(s) so far: In response to the repeated cyber and democratic incidents, a group of EU member states with higher resilience capacity initiates informal talks on a regional AI safety and incident response pact, aiming to harmonize containment protocols and real-time threat sharing. The move is driven by frustration with slow EU-wide enforcement and growing public pressure for immediate action.  
+- `emergent_underground_ai_cyber_cartel` -- first noted turn 11, listed in 2 turn(s) so far: Dark web monitoring reveals the formation of a decentralized cartel of AI-powered cybercriminal groups sharing modular exploit toolkits derived from leaked evasion logic. These groups are coordinating through anonymized channels to launch synchronized attacks on critical infrastructure, marking a shift from opportunistic to organized, capability-amplified crime.

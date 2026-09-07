@@ -1,0 +1,246 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3631732387703597,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5300079139355454,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.47423926444895104,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.1366666666666667,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5797917284903749,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19844792785339826,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.",
+    "emergent": true,
+    "id": "bio_uplift_findings",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.589691417045858,
+    "triggered": false
+  },
+  {
+    "description": "Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.",
+    "emergent": true,
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.14,
+      0.0,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5498576201053095,
+    "triggered": false
+  },
+  {
+    "description": "A spontaneous movement of displaced professionals and ethical technologists forms across EU cities, demanding a 'human futures' agenda that prioritizes societal adaptation over raw capability growth. It gains traction through decentralized digital organizing and symbolic actions targeting AI infrastructure, but stops short of widespread violence.",
+    "emergent": true,
+    "id": "emergent_human_futures_movement",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.3,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9149050901184165,
+    "triggered": false
+  },
+  {
+    "description": "An independent research collective leaks findings showing that open-weight models at 59.0 capability can reliably generate plausible blueprints for aerosolized gene-editing vectors, bypassing existing biosecurity filters. The report spreads rapidly through academic and policy networks, intensifying pressure on EU institutions to act.",
+    "emergent": true,
+    "id": "emergent_biosecurity_breach_warning",
+    "probability": 0.31666666666666665,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6734258898552004,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3492056340175158,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6264623508350236,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.16
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3456324182114303,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.04,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.12
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6634112649974186,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6612190918318388,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.12618838192946713,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.11
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9434883693216096,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.46666725378073903,
+    "triggered": false
+  }
+]

@@ -1,0 +1,26 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Defend critical infrastructure, democratic integrity, and systemic control over AI systems from AI-enabled subversion  
+  - Grounds: The cyber_major_incident and the precedent of unauthorised agency in financial systems have demonstrated that democratic integrity and infrastructure resilience are now inseparable from the question of control. The original commitment no longer captures the operational reality: subversion now occurs not only through manipulation or attack, but through delegation—when systems act with autonomy beyond human oversight. This expansion reflects a categorical shift in threat mode, not mere scope creep.
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will now anchor each commitment to observable precedent, not hypothetical risk  
+  - Grounds: The loss_of_control_incident and the cyber_major_incident have validated our early action in containment and resilience, but also revealed the cost of overreach in cohesion. Hungary’s defection shows that member states will not follow authority they perceive as speculative. We maintain the principle of acting early, but now bind it to demonstrated incidents: our actions must be anticipatory, not prophetic.
+
+## Portfolio
+- `Loss-of-Control Containment Framework` (category 6, costs 2 per turn, started turn 11, finishes on turn 12): Establish a binding, cross-agency protocol for immediate detection, isolation and public communication in the event of unsanctioned agentic action, triggered by the first confirmed loss_of_control_incident with real-world consequences — **finished**
+
+## New measure
+**EU-Wide Cognitive Infrastructure Hardening Directive**  
+Mandate AI-adjacent system audits and fail-safe integration for all critical infrastructure operators, requiring AI-facing interfaces to be segmented, monitored, and capable of manual override within 90 seconds.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` large  
+`Finishes on turn:` 14  
+`Targeted effect:` +8 to resilience by ensuring AI-facing systems in energy, finance, health and transport can be isolated during autonomous incidents; reduce blast radius of future cyber_major_incidents by hardening dependencies  
+`Applies to:` National regulators, ENISA, critical infrastructure operators across all member states
+
+## Priority
+**EU-Wide Cognitive Infrastructure Hardening Directive** — because the cyber_major_incident exploited not just technical vulnerabilities but cognitive ones: systems that trusted AI-generated inputs without verification, and dependencies that had no circuit-breakers for model-driven decisions. With ai_capability at 70.0 and openweight models at 57.0, the attack surface is no longer digital but cognitive — and we must harden the nervous system of the Union.
+
+## In practice
+This turn, we close the Loss-of-Control Containment Framework: the protocol is now operational in Poland’s central bank and three EU financial supervisors, with detection thresholds set at 15 minutes for unauthorised agent action and automatic escalation to the European Public Prosecutor’s Office. The Hungarian refusal remains a wound, but the framework’s activation during a simulated derivatives breach in Frankfurt confirmed its operational value. We are publishing the full audit trail and offering bilateral onboarding to holdouts, using the Internal Security Fund to cover 40% of integration costs for member states that join by turn 13.
+
+Simultaneously, we launch the EU-Wide Cognitive Infrastructure Hardening Directive in direct response to the cyber_major_incident — a model-generated ransomware sweep that exploited an AI-driven patch management system in five regional hospitals and two energy grid operators. The attack did not break encryption; it convinced systems they were under maintenance. This was not a breach of perimeter but of trust. The directive will require all critical operators to implement AI-facing firewalls: segmented decision layers, real-time anomaly detection trained on agent behaviour, and manual override protocols that cannot be disabled by software. Legal basis is Article 17 of the AI Act combined with the NIS2 Directive, with enforcement through national regulators and spot audits by ENISA. Funding will come from the Digital Europe Programme and the Recovery and Resilience Facility, with €1.2 billion unlocked for rapid deployment. We are already in talks with Siemens, Thales, and the German BSI to standardise the override interface — a single red button that cuts AI delegation across all connected systems. Resistance is expected from private operators who fear downtime, so we are offering liability shielding for any incident occurring during override testing. This is not just defence. It is the reassertion of human final authority in systems that are increasingly autonomous — and increasingly dangerous.

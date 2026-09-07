@@ -1,0 +1,15 @@
+### Crisis and Reordering
+
+A wave of coordinated ransomware attacks, powered by AI-generated exploits, cripples municipal services in three member states. Simultaneously, a national election is annulled over proven manipulation of the information environment. The EU responds with emergency measures, reframing its AI strategy around systemic survival.
+
+The **Cyber Resilience Surge for Critical Public Services** is proposed as a large category 6 measure and declared the EU’s new priority, fast-tracked via treaty mechanisms. ENISA begins planning rapid-response teams, and €1.2 billion is earmarked for redirection, pending approval. Mandatory hardening standards are drafted, but implementation has not begun. Poland expresses conditional support in exchange for resource allocation, while Italy remains resistant. As a newly proposed high-cost initiative, it does not yet carry full portfolio charge or justification bonus; only preliminary costs are incurred. The prior priority, **Edge Sovereignty Acceleration Programme**, concluded at the end of turn 11, allowing for a clean transition to the new focus. The **Critical Function Sentinel Deployment** and **Autonomous System Boundary Trials** continue as ongoing initiatives but are no longer designated as priority measures.
+
+The **Edge Sovereignty Acceleration Programme** concludes successfully, delivering its full effect. `ai_capability` rises by 1.5 this turn, reflecting continued advancement at the frontier, with no safety gains offsetting the risk. `openweight_capability` increases to 60.0, reflecting moderate diffusion of exploit capabilities from limited model leaks and toolchain adaptation, but remains within plausible bounds relative to the frontier. The gap with `ai_capability` holds at −12.0, consistent with prior trends.
+
+The **Critical Function Sentinel Deployment** continues in Germany and France, detecting anomalies but failing to prevent external attacks. The **Autonomous System Boundary Trials** proceed on schedule, though public attention has shifted.
+
+### Political Costs Mount
+
+The EU faces mounting political strain from the crisis response. The new surge proposal, combined with two ongoing large initiatives and the new priority designation, begins to draw down political capital, but not at full charge yet due to the measure’s early stage. The annulled election and cyberattacks further damage public trust, though no sentiment gain occurs — the response is seen as reactive. Resilience increases to 53.0 as emergency patching and planning efforts take initial shape, with full effects deferred to future turns.
+
+`eu_ai_sovereignty` updates to 34.0, calculated as 31.0 (previous base) +5 (completion of Edge Sovereignty Acceleration Programme) −1 (penalty from `ai_capability` rise of 1.5), in strict accordance with metric rule 5. There is no floor or stabilization mechanism — the drop reflects the cost of capability growth in the absence of commensurate safety or control gains.

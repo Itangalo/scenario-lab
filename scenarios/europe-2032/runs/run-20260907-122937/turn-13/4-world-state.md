@@ -1,0 +1,13 @@
+### Emergency Declared, Resistance Hardens
+
+The European Commission invokes the Crisis Protocol under Article 28 of the AI Act, declaring an emergency in democratic integrity following the annulment of a national election due to AI-driven manipulation. A new Implementing Regulation mandates real-time logging, third-party verification, and watermarking for all AI systems involved in elections and political communication. The EU deploys €90 million in emergency funding to establish rapid monitoring cells across member states, integrating ENISA, national electoral bodies, and disinformation watchdogs.
+
+Despite the urgency, enforcement falters. U.S. hyperscalers challenge the extraterritorial reach of the rules, citing jurisdictional overreach. Germany, backed by the Netherlands and Sweden, blocks full activation of the Anti-Coercion Instrument, demanding a legal opinion on proportionality. The six-week compliance window collapses into ambiguity, with major platforms implementing partial transparency measures while continuing to serve unverified political content through edge networks.
+
+The Cognitive Infrastructure Assurance Directive remains stalled in the Council. No progress is made on agent verification in energy or finance systems. Meanwhile, open-weight models with offensive cyber capabilities continue to spread, enabling new waves of automated disinformation and credential harvesting. Grid operators report repeated AI-driven probing, forcing manual overrides.
+
+Public sentiment remains frozen. While some applaud the emergency action, others dismiss it as performative—too late, too narrow. Protests in Brussels and Paris demand broader accountability, linking the democratic crisis to ongoing job displacement and algorithmic injustice. Trust in institutions continues to erode, contributing to a modest drawdown in political capital as coalition unity frays and legislative momentum stalls.
+
+### Capability Marches On
+
+AI capability advances steadily, now nearing the threshold where autonomous systems can independently plan and execute multi-domain influence operations. Defensive logging protocols exist in theory, but not at scale. The gap between frontier capability and operational control widens. Open-weight models see limited gains, primarily through repurposing recently leaked frontier architectures, but remain constrained by inferior training infrastructure and fragmented development efforts—progress is notable but does not outpace the frontier.

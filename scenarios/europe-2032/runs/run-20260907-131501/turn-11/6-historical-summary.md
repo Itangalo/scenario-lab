@@ -1,0 +1,7 @@
+The EU faced escalating crises in 2031 as a major ransomware attack—enabled by an AI-generated vulnerability—disrupted critical infrastructure in Belgium, southern Italy, and Germany, exposing severe weaknesses in cybersecurity and incident response. ENISA’s delayed and inconclusive analysis deepened public distrust. Simultaneously, structural collapse in entry-level labour markets accelerated, with automation eliminating graduate roles across law, accountancy, and software development.
+
+In response, the EU launched the EU-Wide Redress and Reform Programme, offering wage insurance and retraining, but funding disputes with fiscally conservative member states prevented implementation. The Public Trust Corps expanded its mandate to include redress and bias alerts, with pilot schemes in France and Finland, yet remained fragmented and reactive. The upgraded AI Incident Dashboard failed to prevent the attack, underscoring systemic lags in prevention.
+
+Domestically, the InvestAI Gigafactories and Sovereign Cyber Shield initiatives were completed, bolstering compute capacity and protecting core infrastructure, though uneven adoption left local governments vulnerable. Political capital eroded further, now critically low, as public sentiment turned toward managed decline.
+
+AI capabilities advanced to 69.5 globally, with open-weight models reaching 57.5—close to autonomous cyber exploit generation—while safety frameworks stagnated, widening the gap between technological power and governance.

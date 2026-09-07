@@ -1,0 +1,59 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.056666666666666664,
+    "probability_samples": [
+      0.11,
+      0.06,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_distributed_grid_instability",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "An open-source toolkit based on the emergent_open_source_breakthrough enables small firms and municipalities to run sophisticated AI-driven grid optimisation, but with minimal oversight. Several regional energy providers adopt it, leading to uncoordinated feedback loops that destabilise local load balancing. Regulators issue urgent warnings, and a voluntary pause is called in three countries. The episode exposes the fragility of distributed, sovereign AI adoption when assurance lags.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

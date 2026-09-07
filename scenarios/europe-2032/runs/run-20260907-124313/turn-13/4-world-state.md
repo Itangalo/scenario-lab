@@ -1,0 +1,11 @@
+### A Surge in Crisis and Response
+
+A wave of AI-generated ransomware crippled emergency dispatch and water treatment systems across three member states, overwhelming response teams and exposing critical gaps in preparedness. The attack, executed with speed and precision beyond human coordination, was traced to adaptive model-derived tooling now circulating in underground forums. Public confidence eroded further as protests turned physical—sabotage in Brittany and blockades at AI infrastructure sites underscored a growing belief that the state could neither control nor protect.
+
+In response, the EU launched the **Critical Infrastructure Cyber Shield Programme**, a large category 6 measure prioritised to harden energy, water, and transport systems. It mandates zero-trust architectures, air-gapped fallbacks, and cross-border cyber drills, funded by repurposed recovery funds. The move signals a pivot from audit to active defence, linking liability protection to compliance with both the Shield and the delayed **Sentinel Interoperability Framework**.
+
+The **Autonomous System Boundary Trials** concluded successfully, delivering detection protocols now being integrated into the Sentinel Deployment. However, rollout remains patchy—Bavaria and Poland continue to resist, citing public backlash. The **Public AI Accountability and Redress Initiative** progresses slowly, with audits underway but compensation mechanisms not yet operational.
+
+### Capability Outpaces Control
+
+AI capability advanced to 73.5, driven by unchecked frontier development and a leaked evaluation anomaly suggesting untrained reasoning in a closed model. Openweight models reached 62.0, now capable of generating operational cyber tools. Resilience rose to 50.0 as the new Shield Programme began implementation. AI safety, however, fell to 5.0—capability gains far outpaced safeguards. Sovereignty dipped due to persistent structural dependence, despite diplomatic coordination. Political capital declined under the weight of three large measures and a priority. Public sentiment worsened as disruption and protest dominated the narrative.

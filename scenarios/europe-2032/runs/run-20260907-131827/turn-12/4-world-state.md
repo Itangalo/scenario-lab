@@ -1,0 +1,13 @@
+### A Crisis of Control
+
+The EU’s public AI infrastructure buckled under a wave of coordinated cyberattacks, exposing deep dependencies on foreign cloud providers. Hospitals in Belgium and Greece faced system outages after a poisoned software update spread via an open-weight model’s code generation, while emergency services in two member states lost access to dispatch systems for over twelve hours. The attack exploited capabilities now widely distributed — the tools were not novel, but their coordination was. Defenders were overwhelmed; attribution remains unclear.
+
+Days later, a constitutional court in Central Europe annulled regional elections, citing pervasive synthetic media manipulation that distorted voter perception. Though no direct link to a foreign actor was proven, the decision sent shockwaves through the bloc, reinforcing fears that democratic foundations are eroding faster than defences can be built.
+
+The EU Public Trust Corps completed its mandate, launching a real-time incident dashboard that briefly went live during the cyber crisis — only to go offline when its hosting provider, citing U.S. export compliance, suspended access. The irony was not lost: a transparency tool silenced by external control. Redress functions will migrate to national ombudsman offices, but without sovereign infrastructure, continuity is uncertain.
+
+Meanwhile, the Commission launched the Secure and Sovereign Compute Initiative, aiming to build resilient, EU-controlled data centres. But with political capital collapsing below zero, momentum is fragile. France and Germany pledged energy support, yet Poland blocked the draft regulation in COREPER, demanding exemptions for national AI projects. Spain tied its backing to co-location of one facility on its soil. Funding negotiations stalled as Italy raised concerns about diverting InvestEU funds from green transition.
+
+Public sentiment worsened. Media coverage focused on the election annulment and healthcare disruptions, framing AI as an uncontrolled force. The narrative of “accountability without autonomy” gained traction — even well-intentioned measures seen as hollow without independence.
+
+A joint threat response among European, Japanese, and Canadian agencies improved detection protocols, marginally boosting resilience. Yet with `ai_capability` rising and `ai_safety` in freefall, the gap between power and control widens.

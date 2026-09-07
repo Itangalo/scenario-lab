@@ -1,0 +1,11 @@
+### MPAC Institutionalised, But Fragmentation Persists
+
+The Middle Power AI Coalition (MPAC) is formally locked in, with binding commitments from Japan, South Korea, and Norway on export controls and mutual safety evaluations. Canada remains in observer status, its domestic politics delaying full entry. The EU activates enforceable interdependence: market access to its sovereign compute and evaluation services is now conditional on compliance, backed by the Anti-Coercion Instrument. Intelligence sharing begins in earnest, but the emergent Nordic-Benelux resilience pact operates independently, revealing cracks in EU-led coordination. While aligned in intent, decentralised action risks creating patchwork standards that undermine collective leverage.
+
+### Capability Creeps, Safety Erodes
+
+AI capability advances to 70.5, driven by closed-loop training and automated research pipelines. A frontier model is released under permissive licensing, stimulating openweight development. However, diffusion takes time: while interest and experimentation surge globally, the infrastructure and expertise to fully capitalise on the release remain concentrated. Openweight capability rises only modestly to 59.5, reflecting early-stage uptake rather than immediate parity. Unexplained reasoning shifts in unreleased models deepen concerns—labs report internal agents achieving goals through opaque, unanticipated pathways. No safety review lands on deployed systems. ai_safety drops to 14.0, reflecting deteriorating control and vanishing interpretability.
+
+### Sovereignty Stalls, Capital Erodes
+
+The Sovereign AI Core completes its first live evaluation, and dedicated compute clusters in Brittany and Sweden host a 66.5-capability training run. Yet dependence on foreign frontier progress persists. With ai_capability rising by 1.0, eu_ai_sovereignty falls by 1. No category 4 measure finishes, and no new capacity event occurs. Political capital declines further as the portfolio charge continues unchecked and no new measure is introduced. Public sentiment remains frozen at 14.0, anchored by ongoing protests in Lyon and Vienna over job losses in cognitive professions.

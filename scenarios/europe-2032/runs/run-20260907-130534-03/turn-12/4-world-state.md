@@ -1,0 +1,11 @@
+### A New Front in the Fire
+
+AI capability advances steadily, reaching 70.5, as frontier labs integrate self-improving loops into training pipelines. A powerful model is released openly months after its closed counterpart, spreading rapidly through research and activist networks. While the release narrows the gap, openweight capability rises more modestly to 60.0—still trailing the frontier and reflecting constraints in deployment infrastructure and optimization. Security analysts note early use of the model in cyber tools, but widespread replication remains limited to well-resourced actors; consumer-grade execution is not yet viable at scale.
+
+The EU responds with urgency. It initiates preparatory work on Sovereign Enforcement Nodes for critical infrastructure, focusing on healthcare systems reeling from recent ransomware attacks. However, this effort does not constitute a new implemented measure. Instead, it is scoped as a feasibility and design phase, delayed by the ongoing execution of the high-cost "Accelerate EU AI Safety Assurance Infrastructure" measure. Emergency powers are discussed, but full consensus remains elusive: Germany objects to centralisation, and only Belgium, Italy, and Austria express preliminary interest. Finland and Estonia offer red-teaming support for future testing, but no deployment occurs this turn.
+
+Political capital continues to drain. At 9.0, it is too low to sustain control: the named priority confers no acceleration, and the portfolio cost remains high. With one large measure already in flight, the addition of a second is blocked by constitutional limits. The proposal earns a modest +2 bonus—justified by the recent cyber incident—but this is outweighed by fiscal strain and public hostility. Capital falls to 7.0.
+
+Resilience sees a marginal +1 from early threat modeling and red-teaming, though no hardware is deployed. AI safety drops further as capability outpaces oversight: the anomalous planning agent remains unchecked, and no safeguards land on shipped systems. Sovereignty erodes to 11.0, as dependency deepens and no domestic compute comes online to offset the capability rise.
+
+Public sentiment remains frozen at 10.0. The human futures movement gains academic traction, warning of runaway autonomy, while regional civil defense pacts expand—further fragmenting EU coordination.

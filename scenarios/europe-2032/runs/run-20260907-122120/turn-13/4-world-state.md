@@ -1,0 +1,9 @@
+### Sovereign Compute Push Amid Grid Instability
+
+The EU launches the **Energy-Secure Compute Corridors Initiative**, designating pilot zones in Finland, Spain, Germany, and Poland to anchor resilient, geothermally cooled data centres powered exclusively by new-build renewables. The European Investment Bank unlocks €3.8 billion in blended finance, co-financed by EU cohesion and transition funds, with disbursement tied to environmental compliance and legal anchoring of model weights. The initiative is declared a priority, invoking Article 122 TFEU to fast-track permitting—yet local resistance persists. In Spain, agricultural communities protest water use for hybrid cooling; in Finland, Sámi leaders demand formal consultation on subsurface drilling, delaying approvals.
+
+Despite political will, construction remains stalled pending final environmental certifications. The project advances in planning but not in physical deployment, limiting immediate sovereignty gains. Meanwhile, the **Sovereign Evaluation Regime for High-Capability Systems** completes its development cycle. The European AI Safety Authority is now structured and staffed, with first evaluations scheduled for early 2033—just as frontier capability reaches 74.0, driven by self-improving agents in logistics and materials science.
+
+Openweight capability rises to 62.0, as a new model with embedded cyber tooling spreads widely. No safety upgrades land on deployed systems, leaving ai_safety stagnant at 15.0. Resilience holds at 61.0, sustained by the ongoing operation of the Sovereign AI Incident Response Network.
+
+Public sentiment remains at 23.0, unswayed by distant promises of sovereign infrastructure. A joint research initiative reveals systemic vulnerabilities in AI-managed grid balancing, triggering a voluntary pause in automation upgrades across several member states. Confidence in autonomous infrastructure erodes, reinforcing public skepticism.

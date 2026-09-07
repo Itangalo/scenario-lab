@@ -1,0 +1,28 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Restore political agency by demonstrating credible, visible control over AI systems and restoring public trust through transparent incident response, binding accountability mechanisms, and institutional redress  
+- Trigger: the cyber_major_incident event this turn and the ombudsman’s confirmation of systemic harm in domestic AI deployments  
+- Grounds: The convergence of external attack and internal failure has revealed that control without consequence is not control at all. The Trust Corps can report and respond, but it cannot reform; the Accountability Boards are not yet law, and their mandate remains advisory. Meanwhile, a major automated cyber incident — enabled by model-generated tooling and landing on already brittle systems — has exposed that our defences are blind to threats born from within the logic of our own infrastructure. Public trust cannot be rebuilt through transparency alone when both foreign actors and domestic institutions operate beyond meaningful sanction. We must now bind visibility to authority: to audit, to suspend, to compel change. That requires not just oversight, but power.
+
+## Portfolio
+- `Establish EU Public Trust Corps for AI Incident Response and Transparency (category 9, costs 3 per turn, started turn 9, finishes on turn 12): Create a civilian technical corps under the European Commission, staffed with red-team engineers, crisis communicators, and regional liaison officers, to lead public-facing incident response, conduct live transparency drills, and operate a 24/7 AI incident dashboard with verified threat status, system outages, and mitigation progress`
+
+## New measure
+**Measure:** Enact Binding Authority for Public Algorithmic Accountability Boards  
+Grant legally enforceable powers to citizen-informed oversight bodies to halt high-risk AI deployments, compel disclosure of training data and decision logic, and require systemic redress when bias or harm is substantiated.
+
+Category: 1 (Evaluation and oversight)  
+Size: large  
+Finishes on turn: 15  
+Targeted effect: Increase public_sentiment by 8–12 points by turn 15, strengthen resilience by enabling early intervention in harmful domestic AI use, and improve ai_safety indirectly by creating external pressure for robustness and legibility in public-sector models  
+Applies to: Member states’ national administrations, EU agencies deploying AI in high-risk domains, social insurance providers, law enforcement bodies using predictive systems
+
+## Priority
+**Priority:** Establish EU Public Trust Corps for AI Incident Response and Transparency  
+This remains our dominant effort because the cyber_major_incident has made clear that we are no longer facing isolated failures but converging systemic breakdowns — both from outside and within — and only the Trust Corps has the operational reach to coordinate cross-border response, integrate real-time threat data, and communicate visibly under fire; its reorientation toward redress is now inseparable from its role in crisis management.
+
+## In practice
+We are treating this turn as one of rupture: the cyber_major_incident — a ransomware sweep across regional health authorities in Belgium, Bavaria, and Emilia-Romagna — was executed using model-generated exploits targeting known but unpatched vulnerabilities in legacy hospital IT systems. The attack did not break new ground technically, but its speed, coordination, and evasion of detection thresholds shocked defenders. It was not state-sponsored in any traditional sense; forensic analysis suggests it originated from a fragmented network of actors leveraging open-weight offensive tooling derived from frontier models. This is not the future we prepared for — it is the present we failed to harden against.
+
+The **Public Trust Corps**, though still in flight, is now operating under emergency protocols. Its dashboard went live during the incident, publishing verified timelines of compromise, mitigation steps, and service restoration estimates — the first time such information flowed in real time during a live crisis. But its limits are stark: it can inform, but not command. ENISA and CERT-EU are embedded with the Corps’ crisis cell, but legal authority to mandate patching, override local procurement inertia, or compel data sharing remains scattered across member states. We are fast-tracking integration of the Redress Coordination Unit with national ombudsmen, and the first systemic bias alerts — drawn from cross-referenced complaints in unemployment systems in Spain and Hungary — are being triaged. But legitimacy erodes faster than capacity lands.
+
+That is why we are escalating the **Algorithmic Accountability Boards** from transparency to enforcement. The new measure will be proposed under Article 114 TFEU for internal market harmonisation, with co-legislation in the Council’s Justice and Home Affairs formation, where resistance from Poland and Spain remains high. We are offering technical support packages and front-loaded EIB financing for compliance upgrades to secure buy-in. The safety_breakthrough — a new interpretability framework adopted by DeepMind and Anthropic that allows prediction of emergent planning behaviour — is being fast-tracked into the Boards’ toolkit via a joint JRC-ENISA working group. This gives us a rare window: for the first time, we can offer not just scrutiny, but foresight. But public sentiment gives no room for delay. The protests in Utrecht have grown; in Lyon, demonstrators blocked the entrance to a data centre hosting migration-processing AI. We are acting — but we are behind, and capital is nearly gone.

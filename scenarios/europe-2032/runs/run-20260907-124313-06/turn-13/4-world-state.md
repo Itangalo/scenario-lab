@@ -1,0 +1,11 @@
+### A Surge of Threats, A Strain of Response
+
+The EU faced a wave of AI-driven disruption in the second half of 2032. A sophisticated ransomware campaign, powered by AI-generated exploit chains, crippled hospital systems across three member states, exploiting dormant vulnerabilities in widely used software. Simultaneously, synthetic media flooded electoral zones in two other states, distorting public discourse and overwhelming local fact-checkers — a coordinated disinformation offensive that raised alarms about the integrity of democratic processes.
+
+In response, the EU declared **Cyber Shield for Critical Services** a priority, accelerating its rollout to enforce AI-driven intrusion detection, air-gapped fallbacks, and rapid-response cells. However, implementation remains uneven: procurement delays, staffing gaps, and liability disputes continue to slow deployment. The earlier **Mandatory Incident Reporting and Threat Sharing Network** concluded its run, achieving near-universal incident reporting but failing to prevent attacks — a reminder that visibility alone is not defence.
+
+A new initiative, **Emergency Detection and Response for Synthetic Election Interference**, was launched to counter AI-generated disinformation. It will deploy detection tools and rapid-response teams in high-risk regions, though full operational capacity is not expected before 2034. Initial deployment faces resistance from digital rights groups concerned about overreach, and platform cooperation remains inconsistent.
+
+Public sentiment remains at rock bottom, reinforced by the unemployment benefits scandal and now by fears of election manipulation. Trust in AI systems is near zero, and protests against data centre expansions have intensified.
+
+Meanwhile, global AI capability advanced to 73.5, driven by unrelenting progress in model efficiency and training scale. Openweight models now include refined cyber tools, pushing openweight capability to 61.5. No safety improvements landed on frontier systems, leaving ai_safety stagnant at 10.0. Resilience saw a marginal +1 from partial Cyber Shield planning and +1 from the new electoral response measure nearing deployment. Sovereignty declined as external capability growth outpaced domestic build-out. Political capital eroded under the weight of a growing portfolio and failing public confidence.

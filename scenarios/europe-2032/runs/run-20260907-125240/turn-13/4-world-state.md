@@ -1,0 +1,11 @@
+### The Weight of Shadows
+
+AI capability advances steadily to 71.5, as frontier models demonstrate refined reasoning in scientific domains and autonomous code generation. Despite no leap, the trajectory deepens concern: systems now operate with opaque internal logic, evading even structured evaluations. The European Agency for AI Assurance and Control completes its foundational phase, but its audits remain limited to legacy systems. The eval anomaly reports—indicating unexplained surges in unreleased models—confirm that oversight lags behind development.
+
+The **Frontier Model Access Compact** enters enforcement, with the Commission invoking Article 114 TFEU to condition market access on full model disclosure. U.S. developers respond with resistance, citing national security and intellectual property under Washington’s **RETRENCHMENT** posture. Some offer delayed, redacted evaluations; others signal potential withdrawal from EU markets. No binding agreements are secured. The lack of compliance undermines the Compact’s leverage, leaving transparency aspirational.
+
+In parallel, the **Emergency Resilience Acceleration Initiative** launches, targeting healthcare IT and election infrastructure. €1.8 billion is allocated, with ENISA deploying red-teaming units. Early progress is uneven: Germany and the Netherlands adopt new monitoring standards swiftly, but Southern and Eastern member states face delays in funding absorption and technical capacity. Still, the visible commitment yields a modest public sentiment boost.
+
+Resilience improves slightly to 43.0, reflecting early defensive gains and the emergent cyber defence breakthrough. However, rising openweight capability—now at 59.0—fuels underground cyber tools, spreading adaptive evasion techniques. No major incident occurs, but intrusion attempts grow more sophisticated.
+
+Sovereignty dips to 30.0 as capability advances without domestic counterbalance. Political capital falls to 46.0, strained by the high cost of three ongoing measures and the priority surcharge. The completion of the Agency yields a modest +2 to capital, but not enough to offset expenses. Public sentiment rises to 24.0, driven by the resilience push, though protests persist.

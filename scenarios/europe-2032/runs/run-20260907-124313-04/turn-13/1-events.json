@@ -1,0 +1,48 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_synthetic_disinformation_wave",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "A coordinated campaign of synthetic media and AI-generated disinformation continues to overwhelm verification systems across multiple member states, undermining trust in electoral integrity and triggering emergency debates on democratic resilience. The wave exploits openweight models capable of high-fidelity generation and adaptive narrative shifting, evading detection despite sentinel deployments.",
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

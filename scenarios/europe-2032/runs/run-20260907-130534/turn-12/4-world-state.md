@@ -1,0 +1,11 @@
+### A Surge in Open Capability, a Sprint for Sovereignty
+
+The AI frontier advances to 70.5, driven by sustained training and architectural refinement. An unprecedented open-weight release follows within months of the closed frontier, flooding private systems with near-frontier capability. Downloads exceed half a million in the first fortnight, embedding powerful models beyond institutional reach. Openweight capability rises to 60.0, reflecting early but incomplete diffusion into European infrastructure, as integration bottlenecks and verification delays limit immediate uptake.
+
+In response, the European Union activates emergency powers under Article 122 TFEU, declaring a systemic AI infrastructure emergency. The Emergency Sovereign Compute Mobilisation orders full deployment of the Brittany clusters and forces grid reallocation in Sweden to overcome energy bottlenecks. Binding directives are issued to operators, with audit logs routed to the European Authority for AI Development. A new legal requirement mandates physical isolation of high-capability model weights trained on EU soil, closing remote access loopholes.
+
+Yet immediate impact is limited. Legal challenges emerge from Finland and the Czech Republic, questioning the proportionality of the crisis declaration. Bavarian and Tyrolean expansion plans stall over local environmental objections, despite Berlin and Vienna’s support. Spain and Poland express interest in overflow capacity but delay permitting processes, citing energy security concerns. The redirected EIB funds remain largely unspent as disbursement mechanisms lag behind the new mandate.
+
+Public sentiment holds at 16.0—medical AI advances continue, but are seen as foreign-delivered. Labour unrest simmers, and no broader political momentum is gained. Political capital remains stagnant at 14.0, constrained by legal friction and member-state resistance. Sovereignty sees no immediate boost, as the measure is only beginning and no capacity event secures access this turn. Resilience and ai_safety remain unchanged—no new safeguards land, and infrastructure hardening has not yet materialised.
+
+The US administration will take office next turn. The global posture remains unknown.

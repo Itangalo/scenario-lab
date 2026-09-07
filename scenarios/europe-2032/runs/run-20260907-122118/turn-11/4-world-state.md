@@ -1,0 +1,13 @@
+### A Surge in Capability, a Collapse in Trust
+
+AI capability advances to 71.0 as self-improving agents accelerate progress in clinical coding and structural engineering, now generating novel verification protocols autonomously. The open-weight frontier follows, rising to 58.0, reflecting broader diffusion of recent breakthroughs and increased collaboration within the open research community. This growth narrows the gap with closed models but does not overtake them, maintaining alignment with the slower, foundational pace of the closed frontier.
+
+The fallout from a systemic scandal compounds the crisis. An ombudsman report reveals that an AI-supported social insurance system in a major member state systematically denied benefits to thousands based on flawed risk profiling. The ruling triggers public outrage and forces a nationwide audit, marking a clear turning point in public sentiment. Trust in automated governance plummets further, joining growing anxiety over infrastructure instability.
+
+Simultaneously, the EU suffers a sudden and unexplained cutoff from a leading AI model. Hospitals, customs agencies, and transport logistics operators lose access overnight. No justification is provided, and appeals are ignored. Emergency workarounds using open-weight models prove inadequate, exposing deep operational dependencies. The incident crystallizes fears of strategic vulnerability.
+
+In response, the EU announces the EU Frontier Access Guarantee, a large Category 4 initiative aimed at securing sovereign access to frontier models through new inference nodes in Finland, Portugal, and Romania, backed by fallback agreements with non-U.S. developers. The measure is declared a priority, reflecting the urgency of the access denial. However, given its scale and cost, implementation will require at least two full turns, with site selection and funding negotiations only now beginning. No immediate infrastructure is deployed.
+
+Meanwhile, the grassroots European coalition of municipal governments, public research institutes, and ethical AI startups continues developing lightweight, sovereign AI tools. While it gains public attention and informal support, it remains a decentralized effort without formal EU backing or integration into policy. It is not treated as a second measure or priority.
+
+Germany and France resist data-sharing harmonization, citing cost and duplication. Public sentiment, now below 30, turns hostile to large-scale AI integration. The combination of scandal, exclusion, and infrastructure anxiety drains political capital. Resilience erodes as confidence in automated systems wavers, despite ongoing efforts.

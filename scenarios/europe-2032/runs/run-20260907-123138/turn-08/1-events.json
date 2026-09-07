@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_neuromorphic_breakthrough",
+    "probability": 0.27666666666666667,
+    "emergent": true,
+    "description": "A joint academic-industrial consortium in the EU unexpectedly demonstrates a new class of energy-efficient neuromorphic chips capable of running models at 55.0 capability on-device, bypassing cloud dependency. The breakthrough emerges from repurposed sensor research and leverages EU-controlled materials, sparking interest in sovereign edge AI. While not matching frontier performance, it enables resilient, offline-capable systems for critical infrastructure, and shifts investment attention toward distributed compute architectures.",
+    "probability_samples": [
+      0.25,
+      0.28,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

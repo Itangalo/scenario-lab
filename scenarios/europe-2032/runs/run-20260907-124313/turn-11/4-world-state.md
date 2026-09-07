@@ -1,0 +1,13 @@
+### Edge Sovereignty Delivered, New Framework Faces Hurdles
+
+The **Edge Sovereignty Acceleration Programme** concludes successfully, deploying neuromorphic edge AI nodes across pilot sites in energy and transport infrastructure. These systems demonstrate reduced latency and cloud dependency, marking a tangible gain in technical autonomy. However, their integration with the **Critical Function Sentinel Deployment** remains partial—early data flows are inconsistent, and operators report configuration conflicts.
+
+The EU proposes the **Sentinel Interoperability and Liability Shield Framework**, a large category 6 measure intended to standardise monitoring integration and offer liability relief to compliant operators. The framework mandates a common API and ENISA-certified stability audits, enabling secure cross-border anomaly sharing. Funding of €180 million is secured, but rollout is delayed in Poland and parts of Germany, where legal challenges question the Commission’s authority under Article 16 of the AI Act. As a high-cost measure, no resilience or sovereignty benefits accrue this turn; design and negotiation dominate the cycle.
+
+Public sentiment holds at 25.0, as media focus on bureaucratic complexity and fears of centralised surveillance overshadow promised benefits. Meanwhile, the **Autonomous System Boundary Trials** continue, feeding incremental improvements into evaluation protocols, though not enough to close the safety gap.
+
+AI capability advances by 1.5 to 70.5, driven by ongoing investment and unregulated frontier development. Openweight capability rises to 59.0, reflecting gradual diffusion of adaptive cyber tools derived from open models, particularly in municipal infrastructure sectors. This growth is consistent with the emergent trend noted in prior turns, but does not represent a sudden leap; no major model release or systemic breach occurred.
+
+Resilience increases to 47.0, supported solely by the completion of the Edge Sovereignty measure (+3) and minor carryover gains (+1) from prior momentum. The new framework is too early in implementation to contribute. AI safety improves slightly to 11.0, as sentinel feedback begins stabilising evaluation cycles.
+
+Sovereignty climbs to 34.0: the Edge Sovereignty completion delivers +5, partially offset by −1 from capability growth. Political capital dips to 41.0, burdened by ongoing costs (−6 total), no proposal bonus, and no legitimacy boost—sentiment remains below capital. The introduction of a single new measure this turn complies with modelling constraints, preserving the portfolio charge within allowable limits.

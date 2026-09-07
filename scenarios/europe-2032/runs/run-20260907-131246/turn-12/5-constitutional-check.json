@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_ai_sovereignty` incorrectly decreased from 13.0 to 11.0 in the proposed metrics, but `ai_capability` rose by only 1.0 (from 69.5 to 70.5), which is below the 2.0 threshold required for a −1 decay under metric rule 5. No capacity event (e.g., `eu_frontier_access_denied`, `supply_chain_coercion`, etc.) is narrated or recorded in the notepad to justify a drop. Therefore, sovereignty must remain at 13.0. The original proposal's value of 11.0 and the narrative stating \"falls to 11.0\" are inconsistent with the rules."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

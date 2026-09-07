@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 60.0 to 66.0 (+6.0), but `ai_capability` increased only from 70.5 to 72.0 (+1.5). The rise in `openweight_capability` exceeds the rise in `ai_capability`, which violates the rule that `openweight_capability` may not exceed `ai_capability` at any point. Even if final values are within bounds (66.0 ≤ 72.0), the *increment* implies a moment where openweight capability could have transiently surpassed ai_capability during the turn, which is not allowed unless justified by narrative of catastrophic physical destruction (not present here). The rule requires `openweight_capability` to never exceed `ai_capability`, not just at end-states.\n- Modelling choice 5 violated: The narrative introduces a new measure (\"Emergency Sovereign Compute Mobilisation\") as both active and under portfolio charge, but the notepad does not record it as having been introduced in a prior turn, and no prior turn exists in this context. Since this is Turn 13, the measure must have been introduced earlier. Its appearance now with a full −3 charge and priority penalty implies it was introduced this turn, which would mean two measures could be active or it is new—either way, introducing a new measure and naming it as priority in the same turn violates \"at most one new measure per turn, and at most one named priority.\" If it was introduced earlier, the notepad should reflect that history; if not, this turn introduced it, violating the constraint."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

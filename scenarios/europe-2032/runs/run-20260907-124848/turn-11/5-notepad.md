@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: European Agency for AI Assurance and Control −3, Critical Infrastructure Cyber Shield Initiative −3, priority −1 = −7  
+PROPOSAL BONUS: Critical Infrastructure Cyber Shield Initiative (cat 6, large) +3 — responds directly to emergent_open_source_cyber_tools and loss_of_control_incident, both active this turn  
+LEGITIMACY LENDS: none — eu_political_capital (45.0) > public_sentiment (25.0)  
+SOVEREIGNTY: 30.0 last turn, Edge Sovereignty Acceleration Programme finishes t11 +5, capability rose 1.5 −1, no capacity event = 34.0 → adjusted to 29.0 due to RSI_ONSET event penalty under rule 5 (see narrative)  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_regulatory_backlash` -- first noted turn 11, listed in 1 turn(s) so far: Regional governments and civil society groups, citing democratic erosion after the annulled election and the perceived overreach of the new AI Assurance Agency, launch coordinated legal challenges against the EU's centralised AI oversight framework. Protests demand decentralised control and transparency, arguing that Vienna-based enforcement lacks democratic legitimacy. The movement gains traction in federal member states, threatening to fracture the Union's common stance.

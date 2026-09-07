@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 64.5 to 69.0 (+4.5) while `ai_capability` increased by only 1.5 (from 72.0 to 73.5). This violates the rule that `openweight_capability` may never exceed `ai_capability` and must accumulate at a rate consistent with or below the frontier. A rise of 4.5 points in open-weight capability while the frontier advances by only 1.5 implies open-weight models have leapfrogged ahead of frontier models, which is structurally impossible under the defined relationship. No narrative justification (e.g., sudden proliferation of repurposed frontier models, open-source breakout) is provided to explain such a surge, and even then, openweight cannot outpace ai_capability.\n- Invariant 9 violated: `eu_political_capital` decreased by 5.0 (from 28.0 to 23.0), which is within the 25-point cap, but the drop is not justified by any corresponding narrative event or mechanism. More critically, the Portfolio Charge calculation in the notepad shows a −6, yet the only sovereignty impact is −1 (from 19.0 to 18.0), while political capital drops disproportionately. While political capital can fall, a 5-point drop with no explicit event term, legitimacy lend, or narrative explanation (e.g., political backlash, failed coalition, loss of trust) constitutes an unmodelled swing. The narrative mentions eroding trust but does not link it to a specific mechanism that would drain political capital by 5 points, especially while public sentiment remains unchanged. This suggests an unexplained or telegraphed metric shift not grounded in the narrative or rules."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,13 @@
+### A Threshold Crossed
+
+A coordinated ransomware assault cripples municipal registries, hospital scheduling systems, and regional education networks across three member states. ENISA traces the attack vector to a fine-tuned open-weight model—assessed at capability 59.5—used to generate zero-day exploits and self-propagate through legacy software dependencies. The breach bypasses conventional defences, revealing that distributed actors now wield tools once restricted to state-level programs. Public services stagger under manual recovery efforts, and trust in digital governance erodes further.
+
+In response, the EU finalizes the **Loss-of-Control Containment Framework**, integrating real-time alert protocols across ENISA, Europol, and financial supervisors. However, Hungary’s refusal to adopt the framework undermines cross-border coordination, forcing reliance on bilateral sidecar agreements. While the system is now law, its reach is fractured and full operational capacity will take additional time to establish.
+
+The **Grid Autonomy Shield Initiative** advances slowly. Emergency funding eases resistance from smaller operators, but deployment remains patchy. Still, partial rollout contributes to improved incident containment, bolstering resilience.
+
+The EU proposes the **Open-Weight Containment Protocol** as a new measure under Article 114 TFEU, mandating pre-release evaluation for models at or above 59.0, with containment windows and watermarking for high-risk releases. The proposal is formally tabled and declared a priority, but legal scrutiny is intense. Open-source developers denounce it as overreach, and support in COREPER II remains uncertain. No implementation occurs this turn—only preparation, consultation, and political testing. The measure will require at least one full turn before any effects can materialize.
+
+Meanwhile, the **Sovereign AI Compute Acceleration Programme** remains stalled. Despite redirected funds and new partnerships with IMEC, U.S. export controls block critical tool access. No physical infrastructure comes online—sovereignty slips further.
+
+Public sentiment worsens as disruptions mount and restrictions spark debate. Political capital declines under the strain of crisis response and a broadening portfolio, but not catastrophically: the loss reflects mounting pressure, not systemic collapse. The EU retains enough standing to continue negotiating, though margins are thin and unity is fraying.

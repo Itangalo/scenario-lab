@@ -1,0 +1,26 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_assisted_biosecurity_leak",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "A synthetic biology lab in a non-EU country accidentally releases a modified bacteriophage designed with AI assistance for agricultural use. Early detection systems in EU ports flag anomalous genetic markers, triggering a biosecurity alert. The agent shows limited human transmission in preliminary models, raising concerns about uncontrolled spread and the adequacy of current screening protocols.",
+    "probability_samples": [
+      0.28,
+      0.24,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

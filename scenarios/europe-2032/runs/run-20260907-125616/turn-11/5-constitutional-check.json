@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 57.0 to 63.0 (+6.0), but `ai_capability` only increased by 1.5 (from 68.0 to 69.5). This violates the rule that `openweight_capability` may not exceed `ai_capability`. At no point can `openweight_capability` be higher than `ai_capability`, and here it reaches 63.0 while `ai_capability` is only 69.5 — a narrowing of the gap by 4.5 points in one turn, which is not permitted unless justified by catastrophic physical destruction of compute (not narrated). The increase must be capped such that `openweight_capability` ≤ `ai_capability` at all times."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased by 5.5 points (from 57.0 to 62.5), which exceeds the maximum allowed single-turn change of 25 points. While this rule permits movements up to 25 points, the larger issue is that such a jump is implausible under the narrative justification of \"collaborative fine-tuning\" and \"newly released architectures\" without evidence of a catastrophic physical disruption or a prior accumulation of unrealized gains. The narrative acknowledges the gain was \"incremental\" yet reports a jump larger than any other metric change, including `ai_capability`. This violates the spirit and letter of Invariant 2, which allows only accumulation and no falls, but implicitly requires plausible pacing consistent with prior trends and narrative support. A 5.5-point rise in openweight capability without corresponding safety or sovereignty gains, and without prior backlog release justification, is inconsistent with the constitutional modeling of this metric as one that accumulates gradually.\n- Narrative Constraint 8 violated: The narrative states \"the Sovereign AI Core remains operational\", implying a known baseline status of a critical infrastructure component without establishing its prior existence or current threat in the record. This telegraphs resilience that has not been previously established in the notepad or prior metrics, potentially shielding the system from consequences of earlier erosion. The status of the \"Sovereign AI Core\" must be derived from observable metric movements or explicitly introduced in prior turns; its invocation here as a stabilizing fact introduces unearned continuity and violates the prohibition on telegraphing system resilience."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

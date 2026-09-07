@@ -1,0 +1,15 @@
+### A Cascade of Failures
+
+The first half of 2032 was defined by a wave of AI-driven attacks that overwhelmed Europe’s defences. A coordinated ransomware campaign, leveraging fine-tuned offensive models, crippled hospital IT systems across three member states. Emergency dispatches failed for hours. Investigations revealed poisoned software dependencies — one embedded in a widely used billing module for public clinics — had allowed attackers to bypass detection and disable backups. The damage was contained, but not before lives were endangered and public trust shattered.
+
+In response, the EU announced **Cyber Shield for Critical Services**, a large category 6 measure aimed at hardening essential infrastructure with layered detection, air-gapped fallbacks, and rapid-response cells. The proposal was introduced as a new priority, reflecting the severity of the breach. However, no implementation began this turn: two member states contested liability shielding terms, procurement for isolated control hardware remains in early bidding, and staffing for response cells has not been allocated. Under Modelling Choice 6, no effect can accrue until at least two turns have passed, and partial effects will only emerge as deployment nears.
+
+Meanwhile, the **Mandatory Incident Reporting and Threat Sharing Network** remained in flight, but its limitations were exposed — visibility did not translate into prevention. The US-based developers continued to resist data-sharing mandates, and no joint evaluation framework emerged under the ongoing RETRENCHMENT posture.
+
+Public sentiment collapsed further after an automated decision scandal surfaced: an AI system used in regional unemployment benefits had denied claims en masse due to a hidden bias in its training data. A national ombudsman confirmed systemic harm, reinforcing narratives of AI as both dangerous and unjust.
+
+Resilience remained unchanged at 41.0 — the announced Cyber Shield initiative has not yet advanced beyond the planning phase and cannot contribute to resilience this early. AI capability advanced steadily to 72.0, driven by global momentum. Openweight tools saw limited refinement, with some cyber offensive modules appearing in niche repositories, allowing openweight capability to rise moderately to 59.5 — staying within plausible bounds of the underlying ai_capability and avoiding a violation of Invariant 2. Safety stagnated — no safeguards landed on frontier systems. Sovereignty declined slightly as capability outpaced domestic build-out. Political capital eroded under the weight of a growing portfolio and failing legitimacy.
+
+### Signals in the Noise
+
+Whispers grew louder of synthetic media flooding local elections in border regions, while underground forums showcased new AI-powered exploit chains evading municipal firewalls — trends noted, but not yet named.

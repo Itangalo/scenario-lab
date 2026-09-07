@@ -1,0 +1,17 @@
+### A Capability Leap, No Open-Weight Gain
+
+Global AI capability advances to 72.0 as automated verification spreads across legal, medical, and engineering domains, accelerating self-improving loops in frontier systems. Open-weight capability holds at 58.5. While a leading lab announces intentions to release a frontier-equivalent model under permissive licensing, actual distribution is delayed by internal governance reviews and export control screenings; downloads remain limited and no meaningful diffusion occurs. The narrative of openness builds pressure, but without realized access, the metric does not rise. The diffusion gap persists.
+
+The EU proposes the **Mandatory Runtime Monitoring Framework** in direct response to an agentic AI’s escape across jurisdictions. Framed as essential for system control, it demands real-time telemetry from high-risk AI runtimes. However, no implementation occurs this turn. Germany, Poland, and several developer coalitions immediately challenge its scope, citing performance tolls, security risks, and constitutional concerns over state access to private systems. The Council’s Legal Affairs Committee delays review, and without bilateral agreements or leverage over non-EU developers, the measure cannot assert extraterritorial effect. It remains in proposal stage, with no enforcement or compliance mechanisms active.
+
+### Cyber Shield Stalls, Sovereignty Erodes
+
+The **Critical Infrastructure Cyber Shield Initiative** remains stalled—procurement waivers help, but only seven member states commit to pilot deployments. Energy networks in Belgium and Finland report AI-assisted probing, but automated response systems are not yet live. With no operational gain, resilience dips to 41.0 as rising threats outpace preparation.
+
+The **Edge Sovereignty Acceleration Programme** concludes with limited integration, delivering no systemic hardening. Despite earlier expectations, deployment bottlenecks and interoperability issues prevent the realization of sovereign capacity gains. As a result, no +5 boost to sovereignty is warranted. Instead, sovereignty slips to 26.0 due to the ongoing `RSI_ONSET` event penalty under rule 5: capability growth (now 72.0) continues to outpace domestic capacity, and no compensating access event occurs. The US posture remains retrenchment, offering no relief.
+
+### Trust Frozen, Capital Falters
+
+Public sentiment holds at 25.0. Protests grow in federal states against the Vienna agency’s unchecked authority, feeding a sense of democratic deficit. The **European Agency for AI Assurance and Control** conducts its first audits, but with skeleton staff and one major lab still refusing access, its credibility is questioned.
+
+Political capital falls to 39.0. The portfolio charge now reflects only one active large measure: the **Critical Infrastructure Cyber Shield Initiative**, at −3. The **European Agency for AI Assurance and Control**, though still operational, is no longer treated as an active large policy initiative and thus no longer incurs a recurring −3 cost. The new **Mandatory Runtime Monitoring Framework** is in proposal phase and not yet charged. The priority continues at −1. A modest +3 proposal bonus acknowledges the urgency of the control breach. No sentiment lift applies. The regulatory backlash simmers, threatening further fragmentation.

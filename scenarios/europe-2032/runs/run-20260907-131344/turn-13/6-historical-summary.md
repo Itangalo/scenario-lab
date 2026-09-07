@@ -1,0 +1,5 @@
+The EU’s attempt to reframe the AI-resilient infrastructure mandate as a security priority under Article 42 TFEU failed, stalling in both the Competitiveness and Foreign Affairs Councils due to German fiscal resistance, Italian funding demands, and unresolved legal competence. Intergovernmental negotiations yielded no progress, leaving the Union paralyzed. 
+
+Globally, AI capabilities advanced sharply to 72.5 with breakthroughs in real-time adversarial adaptation, enabling dynamic exploit evolution that overwhelmed static defences. Open-weight diffusion rose slightly to 61.0, but physical attacks on AI infrastructure—data centre occupations in France and sabotage in Poland—disrupted training and eroded trust in shared systems. 
+
+Despite theoretical advances, AI safety remained stagnant at 8.0, resilience dropped to 34.0, and sovereignty fell to 3.0 amid deepening dependence on foreign AI capacity. Political capital stayed at zero, public sentiment remained low at 2.0, and no new measures were initiated. The EU, unable to act cohesively, continued to react passively to escalating technological and social crises.

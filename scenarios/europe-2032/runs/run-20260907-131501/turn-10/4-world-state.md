@@ -1,0 +1,15 @@
+### A Crisis of Own Making
+
+The EU entered 2031 already weakened, but the revelation of systemic harm from an AI in the Dutch social insurance system shattered what remained of public trust. An ombudsman’s ruling confirmed that thousands had been denied benefits based on flawed behavioural models — decisions made not by foreign systems, but by ones the Union helped enable. The scandal spread fast, drawing parallels to Lyon’s protests and igniting fresh demonstrations in Utrecht. “You built systems that see us as threats,” read one banner — a verdict on a decade of automation without accountability.
+
+The EU responded by reorienting its Public Trust Corps toward redress, adding a Redress Coordination Unit and expanding the AI Incident Dashboard to include bias alerts. Pilot programs launched in France and Finland, but rollout was patchy, and credibility remained low. The Corps, already strained, now faced demands it was never designed to meet.
+
+Simultaneously, Washington tightened the screws: Dutch authorities, under U.S. pressure, restricted ASML’s exports of older lithography tools, hitting not just China but EU industrial users reliant on legacy chips. The Union’s sole leverage in the semiconductor chain was being wielded by another power — a stark reminder of its eroded sovereignty.
+
+At the frontier, signs emerged of narrowing capability gaps between closed and open-weight models, particularly in code generation and cyber exploitation. While general AI capability rose modestly to 68.0, open-weight systems advanced incrementally to 56.0, reflecting steady accumulation rather than a sudden leap. These models are now approaching thresholds where they can assist in crafting novel exploits — a growing concern, but one that has been visible on the horizon for several turns. No safeguards have kept pace, and developers are increasingly aware of the risks, though not yet blindsided.
+
+The EU considered launching a new large measure — Algorithmic Accountability Boards — to restore legitimacy through citizen oversight. However, with political capital at 5.0 and three major initiatives already in flight, the portfolio strain was too great to begin full implementation this turn. The idea gained traction in debate, but formal adoption was delayed, with only preparatory scoping and stakeholder consultations beginning under existing resources.
+
+### Sovereignty Erodes, Capital Strained
+
+Resilience dipped as internal failures compounded external threats. The Cyber Shield was complete, but its uneven adoption limited impact. With no improvement in systemic safety, and rising misuse potential from within, sentiment fell further. Political capital declined to 2.0, consistent with the ongoing burden of existing measures and the absence of a new proposal bonus — the delay in launching the Accountability Boards meant no legitimacy lend, but also avoided an overextension penalty beyond the expected cost model.

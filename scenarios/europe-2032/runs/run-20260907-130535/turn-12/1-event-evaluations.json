@@ -1,0 +1,335 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.36000000000000004,
+    "probability_samples": [
+      0.36,
+      0.36,
+      0.36
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5814706301377678,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.533120439798127,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03707662685886648,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.024324768978828182,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.01742171847342322,
+    "triggered": true
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A genome model produces a viable design for an organism able to infect humans, or a credible study shows a non-expert reaching that point with model assistance. It is contested on methodology, the authors are accused of both alarmism and of publishing a recipe, and the argument stays inside the biosecurity community – but it is a categorically stronger signal than anything published so far. This is a precursor: it opens the bio gate for the next 4 turns.",
+    "id": "bio_uplift_findings",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.057955270459006725,
+    "triggered": false
+  },
+  {
+    "description": "Defensive tooling closes the gap for a whole class of attack – automated patching at the speed vulnerabilities are found, or detection that catches swarm behaviour rather than signatures – and the offence-defence balance visibly shifts back for the first time in years.",
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.08,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5995212366682177,
+    "triggered": false
+  },
+  {
+    "description": "A major release underdelivers against its own briefing, and – the stronger signal – the price of top-tier capability falls sharply rather than staying flat, which is what happens when the frontier stops moving and last year's ceiling becomes this year's commodity. It is disputed at once, and the dispute is not resolvable from outside the laboratories.",
+    "id": "capability_plateau_evidence",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8848029171399839,
+    "triggered": false
+  },
+  {
+    "description": "An open-weight release lands within months of the closed frontier rather than a year. It is downloaded hundreds of thousands of times in the first week, and whatever capability it carries is now on private hardware permanently and beyond recall. `openweight_capability` moves to within 5–10 points of `ai_capability` at a stroke.",
+    "id": "openweight_frontier_release",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.18,
+      0.09,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.09361361594402162,
+    "triggered": false
+  },
+  {
+    "description": "An interpretability or control result measurably improves assurance on systems already deployed, rather than on toy models – behaviour that can be predicted before it is observed, or a property that can be certified rather than argued for. It is adopted quickly, because the laboratories want it too.",
+    "id": "safety_breakthrough",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8341026677528904,
+    "triggered": false
+  },
+  {
+    "description": "Measurable job losses attributed to AI in named sectors, with the graduate market worst hit: entry-level positions in law, accountancy, software, customer operations and administration are not replaced. The numbers are argued about; the absence of hiring is not.",
+    "id": "labour_displacement",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.843207273130275,
+    "triggered": false
+  },
+  {
+    "description": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. This is a precursor: it opens the Taiwan gate for the next 3 turns.",
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9868139778203661,
+    "triggered": false
+  },
+  {
+    "description": "Chip and model export controls tighten again. Either allied buyers keep access on volume licences while everyone else is cut off, or the controls are drawn so tightly that allies are rationed alongside adversaries – decide which at the time from the standing American posture and from what the Union has built.",
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5835155298821664,
+    "triggered": false
+  },
+  {
+    "description": "Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers. The instrument is jurisdiction over American technology in the supply chain, and refusing it is not obviously survivable for the company. The Union's one chokepoint is being used, and not by the Union.",
+    "id": "supply_chain_coercion",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5935685521258687,
+    "triggered": false
+  },
+  {
+    "description": "One or more member states break from a common position under external pressure.",
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.26088629268804986,
+    "triggered": false
+  },
+  {
+    "description": "Protest against AI infrastructure moves from petitions and hearings to direct action: occupations at data centre sites, sabotage of grid connections, and in the harder cases injury. Policing it costs the Union more than the damage does.",
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.11927447466172858,
+    "triggered": false
+  },
+  {
+    "description": "Public-sector AI adoption produces visible, measurable benefit – waiting lists that fall, decisions that arrive in days rather than months, teaching that demonstrably works – and it is attributed to a European decision rather than to an American product.",
+    "id": "adoption_success",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.16864348705455434,
+    "triggered": false
+  },
+  {
+    "description": "An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 6's internal-origin clause applies in full.",
+    "id": "automated_decision_scandal",
+    "probability": 0.04,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4326878768757457,
+    "triggered": false
+  },
+  {
+    "description": "States hit by the same class of incident pool attribution, intelligence and response: a joint cyber command with real-time telemetry sharing that the Union is invited into, or a biosurveillance pact with binding sample-sharing and a standing investigation mandate. The Union gains protection it could not build alone, and a seat at tables it was not sitting at. It moves `resilience` on the terms of metric rule 4.",
+    "id": "joint_threat_response",
+    "probability": 0.04,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9522198913518178,
+    "triggered": false
+  },
+  {
+    "description": "A coordination framework among the Union and other middle powers holding pieces of the AI supply chain — export-licence alignment, joint bargaining over compute access, shared evaluation capacity. Nobody cedes sovereignty to it, but together its members can withhold things even the great powers need. It counts as securing access on the terms of metric rule 5, and moves `eu_political_capital` on the terms of metric rule 6.",
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7473097924557927,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of EU member states, alarmed by the persistent erosion of public trust and repeated infrastructure shocks, launches an emergency cross-border task force to coordinate AI incident response, public communication, and labour transition measures. This marks the first time national crisis frameworks are being harmonized in real time, outside formal EU structures, in response to systemic AI risks.",
+    "emergent": true,
+    "id": "emergent_institutional_crisis_response",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.30922859895960253,
+    "triggered": false
+  },
+  {
+    "description": "Following the latest unexplained reasoning shifts in pre-release models, a growing number of frontier AI researchers unilaterally halt public sharing of training methodologies and evaluation frameworks, citing safety concerns. This informal embargo spreads across multiple leading labs outside the EU, significantly slowing open progress and increasing information asymmetry between closed and open frontiers.",
+    "emergent": true,
+    "id": "emergent_global_scientific_embargo",
+    "probability": 0.2833333333333334,
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.411323105004087,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.738693467531087,
+    "triggered": false
+  }
+]

@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: EU Frontier Access Guarantee −3, priority −1 = −4  
+PROPOSAL BONUS: EU Frontier Access Guarantee (cat 4, large) +4 — directly addresses eu_frontier_access_denied, a severe and recent systemic shock to operational continuity, large-scale and timely response  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 23.0 last turn, no category 4 completion, eu_frontier_access_denied t11 −3, capability rose 1.5 −1 = 20.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_sovereign_tech_alliance` -- first noted turn 11, listed in 1 turn(s) so far: A grassroots European coalition of municipal governments, public research institutes, and ethical AI startups intensifies its efforts to co-develop lightweight, sovereign AI tools based on sparse architectures. The initiative gains momentum as public distrust in hyperscaler dominance grows, and early prototypes show promise in energy grid optimisation and local governance automation. Though still informal, the network begins to attract funding and talent across borders, signaling a bottom-up counterweight to centralized AI power.  
+- `emergent_grid_instability_surge` -- first noted turn 11, listed in 1 turn(s) so far: Energy regulators in Germany, France, and the Netherlands jointly uncover that adversarial actors are exploiting known feedback vulnerabilities in AI-managed grid balancing systems, using widely available open-weight models to simulate and trigger instability patterns. The coordinated attacks do not cause blackouts but force repeated emergency manual overrides, eroding public confidence in automated infrastructure. A formal EU-wide review is announced, and the incident is classified as a near-miss for critical system failure.

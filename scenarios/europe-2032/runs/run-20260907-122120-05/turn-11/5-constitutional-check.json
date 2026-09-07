@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 57.0 to 64.0 (+7.0) in one turn, which is permitted only if driven by sustained growth under the RSI onset mechanism or similar compounding process. The narrative attributes the jump to regulatory activity and fragmentation, not to a demonstrated accumulation of open-weight capability through prior investment or technical progress. No justification is provided for such a large single-turn increase in an accumulated metric that must not fall and may only rise gradually. This violates the principle that `openweight_capability` accumulates over time and cannot surge without precedent.\n- Narrative telegraphs future events in violation of Constraint 8: The narrative states that \"ENISA begins accrediting third-party evaluators\" and that \"Fraunhofer and TÜV Rheinland are among the first to receive pilot contracts,\" implying a level of implementation progress that suggests the Sovereign Evaluation Regime is well into effect. However, per Constraint 6 (\"No measure is implemented instantly\"), a high-cost measure like this requires at least two full turns from proposal to full effect. If this is Turn 11 and the measure was introduced in this turn or the previous one, its visible operational impact (contracting, audits, findings) constitutes premature realization, violating the minimum time lag."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

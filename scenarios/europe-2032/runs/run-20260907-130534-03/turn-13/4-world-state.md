@@ -1,0 +1,13 @@
+### The Open Floodgates
+
+AI capability advances to 72.0 as self-improving training loops mature, accelerating development cycles across leading labs. A notable open-weight release—months behind the frontier rather than years—spreads rapidly through developer communities, lifting `openweight_capability` to 62.0. While not a full breach of containment, the model’s enhanced planning functions are repurposed in coordinated cyber intrusions against regional hospitals and grid operators, exposing new systemic risks.
+
+The EU completes its AI Safety Assurance Infrastructure, now embedded as the evaluation core of Sovereign Enforcement Nodes. These nodes enter active monitoring in three member states, with intervention protocols on standby. A breakthrough in German resistance emerges not through coercion but co-design: a dual-key red-teaming framework with BSI ensures national oversight while enabling cross-border threat response. Finland and Estonia intensify joint simulations, improving detection robustness.
+
+Buoyed by operational momentum, the Commission proposes a large-scale compute buildout under emergency permitting, targeting data centres in France, Sweden, Finland, and Belgium. Grid access would be prioritised for sovereign AI infrastructure, aiming to anchor critical systems domestically. However, the plan remains in early stages—funding mechanisms are still under negotiation, environmental impact assessments are incomplete, and several eastern members question the centralisation of power allocation. Formal approval is unlikely before the next turn, and construction will not begin within this half-year period.
+
+Political capital, at 7.0, remains critically low. The completion of the safety measure yields +3, and the proposal to establish Sovereign Enforcement Nodes (category 6, large) earns a +2 bonus for directly addressing the recent cyber_major_incident. However, the portfolio cost of maintaining two high-cost measures—Accelerate EU AI Safety Assurance Infrastructure and Establish Sovereign Enforcement Nodes—remains −6, and the priority charge is −1. Capital rises to 9.0, just above paralysis, but no further.
+
+Resilience climbs to 34.0, aided by early node deployment and red-teaming gains. Yet public sentiment worsens to 8.0, as media spotlight job losses in IT security and ethical concerns over autonomous intervention. The human futures movement decries “militarised AI” in civilian networks.
+
+Sovereignty falls to 10.0: despite the proposed buildout, rising capability (up 1.5) imposes −1, and no near-term compute comes online to offset dependency.

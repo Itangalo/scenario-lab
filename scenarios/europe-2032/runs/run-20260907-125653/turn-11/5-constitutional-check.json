@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Political capital drop violates Organizational Constraint (Modelling choice 7): The change from 16.0 to 7.0 (−9.0) implies a dominant contribution from sovereignty or other terms, but sovereignty only contributed −1.0 this turn. Modelling choice 7 strictly limits sovereignty's contribution to political capital to at most +3 (or −3) per turn, and no other term in the political capital equation is permitted to dominate. A drop of this magnitude without justification from multiple large negative terms (none of which are documented in the notepad) violates the constitutional separation between `eu_ai_sovereignty` and `eu_political_capital`.\n- Narrative telegraphs event gates (Constitutional Constraint 8): The notepad records `emergent_supply_chain_pact` (3), `emergent_human_futures_movement` (2), and `emergent_institutional_crisis_forum` (2), which implies these are approaching activation thresholds. Mentioning them in the notepad with point values constitutes telegraphing future events, as gate states belong only in event evaluations and must not appear in narrative or notepad in a way that reveals probabilities or proximity to activation."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

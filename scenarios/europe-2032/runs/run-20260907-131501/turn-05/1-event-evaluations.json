@@ -1,0 +1,453 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2912022900930705,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4079583165788785,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5699355261206608,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0925561399569298,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.17845146808898116,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "election_consolidation",
+    "probability": 0.43333333333333335,
+    "probability_samples": [
+      0.4,
+      0.4,
+      0.5
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.9019098260021955,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_alliance",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.9019098260021955,
+    "group_basis": "weighted",
+    "triggered": false,
+    "suppressed_by_group": "us_election_2028"
+  },
+  {
+    "id": "election_retrenchment",
+    "probability": 0.26666666666666666,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "event_group": "us_election_2028",
+    "group_roll": 0.9019098260021955,
+    "group_basis": "weighted",
+    "triggered": true
+  },
+  {
+    "id": "cyber_defence_breakthrough",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.024509721919442118,
+    "triggered": true
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.18388236566842975,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2855515845171449,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19217821454111939,
+    "triggered": true
+  },
+  {
+    "id": "capability_plateau_evidence",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4756725590026487,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.20291108274487057,
+    "triggered": false
+  },
+  {
+    "id": "safety_breakthrough",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6511453083983637,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.12,
+    "probability_samples": [
+      0.1,
+      0.16,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.09334948495845463,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.010195952343389547,
+    "triggered": true
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9387938891883874,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.14,
+    "probability_samples": [
+      0.1,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6903763312486397,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7151533590235634,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.06393822460864562,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9233386796675263,
+    "triggered": false
+  },
+  {
+    "id": "adoption_success",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.19181914801369804,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.06,
+    "probability_samples": [
+      0.06,
+      0.06,
+      0.06
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9249243203923051,
+    "triggered": false
+  },
+  {
+    "description": "A coordination framework emerges among the EU and other middle powers holding key nodes in the AI supply chain—such as the Netherlands (ASML), Japan (materials), and South Korea (memory)—to jointly manage export licensing, negotiate compute access, and pool evaluation capacity. No sovereignty is ceded, but collective leverage grows. This reflects growing urgency after repeated access denials and sovereignty shortfalls.",
+    "emergent": true,
+    "id": "emergent_supply_chain_pact",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9288024454401478,
+    "triggered": false
+  },
+  {
+    "description": "Amid widespread job losses in cognitive professions and growing unrest, a transnational movement of displaced knowledge workers organizes under the banner 'Human Futures', demanding AI taxation to fund universal basic income and retraining. The movement gains traction in EU cities, staging coordinated protests and digital strikes. It pressures governments to act, framing AI not just as a technological shift but a social contract rupture.",
+    "emergent": true,
+    "id": "emergent_human_futures_movement",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8860429124921798,
+    "triggered": false
+  },
+  {
+    "description": "A coordination framework emerges among the EU and other middle powers holding key nodes in the AI supply chain—such as the Netherlands (ASML), Japan (materials), and South Korea (chip fabrication)—to jointly manage export licensing, negotiate compute access, and pool evaluation capacity. The initiative gains momentum as shared vulnerability to unilateral U.S. or Chinese actions becomes apparent. It does not cede sovereignty but enables collective leverage.",
+    "emergent": true,
+    "id": "emergent_middle_power_technology_pact",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "Amid repeated frontier access denials and stalled sovereign compute, a group of EU research institutions and national labs launches a distributed, open-science effort to train a high-capability model on federated European infrastructure. Using shared data, open algorithms, and idle academic compute, the project gains grassroots support and demonstrates early success in narrow domains. It bypasses corporate gatekeepers but raises concerns about oversight and security.",
+    "emergent": true,
+    "id": "emergent_open_science_model_initiative",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9088482060929705,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.3803493224507163,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated lobbying effort emerges among EU member states' regional governments and industrial clusters to secure a share of the Secure Energy-Backed Compute Sovereignty programme’s infrastructure investments, leading to internal competition that delays site finalization and strains cohesion. This is an institutional reaction to perceived centralization and strategic scarcity.",
+    "emergent": true,
+    "id": "emergent_regional_competition_for_compute",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "description": "A transnational network of technical researchers and civil society groups begins publishing open, reproducible audits of public AI deployments across EU cities, focusing on fairness and service quality. The initiative gains traction in media and policy circles, creating unexpected pressure for transparency despite low political capital.",
+    "emergent": true,
+    "id": "emergent_civil_auditing_network",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

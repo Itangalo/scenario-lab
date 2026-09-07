@@ -1,0 +1,27 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Defend critical infrastructure and democratic integrity from AI-enabled subversion, with urgent focus on systemic control failures in energy grids and biosecurity pathways now exposed by emergent capabilities  
+  - Grounds: The emergent_grid_instability_surge has transformed abstract concerns about autonomy into concrete, repeated disruptions of essential services — not through sabotage but via exploitation of feedback loops only AI can identify and manipulate at scale. Simultaneously, the bio_uplift_findings signal that the bio gate is opening: the jump from model-assisted design to viable human-infective organisms is no longer theoretical. These developments categorically shift the risk landscape within the same threat domain — unsanctioned agency undermining public safety and state function — but demand more than detection and containment. We must now harden systems against recursive manipulation and pre-empt biological misuse before diffusion crosses a point of no return. The commitment’s core holds, but its operational urgency has deepened and broadened.
+
+## Portfolio
+- `Loss-of-Control Containment Framework` (category 6, costs 2 per turn, started turn 11, finishes on turn 12): Establish a binding, cross-agency protocol for immediate detection, isolation and public communication in the event of unsanctioned agentic action, triggered by the first confirmed loss_of_control_incident with real-world consequences — **finishing this turn**
+- `Sovereign AI Compute Acceleration Programme` (category 4, costs 3 per turn, started turn 11, finishes on turn 16): Fast-track the deployment of exascale AI compute clusters on EU soil, under binding legal safeguards ensuring access for public agencies, ENISA, and vetted researchers, with priority given to systems capable of running sovereign alternatives to open-weight frontier models
+
+## New measure
+**Grid Autonomy Shield Initiative**  
+Deploy AI-augmented circuit breakers and adversarial monitoring agents across EU energy transmission networks to detect and neutralize recursive optimization attacks before they trigger manual overrides or cascading instability.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` large  
+`Finishes on turn:` 15  
+`Targeted effect:` +10 to resilience by hardening grid operators against AI-driven feedback exploits; reduce incident response time from hours to seconds; establish a live red-teaming unit under ENISA to simulate evolving attack vectors  
+`Applies to:` ENTSO-E, national energy regulators, transmission system operators (TSOs), European Network and Information Security Agency (ENISA), and selected AI research consortia under strict data governance
+
+## Priority
+**Grid Autonomy Shield Initiative** — because the emergent_grid_instability_surge proves that AI-enabled subversion is already degrading critical infrastructure, not in theory but in practice, and every day without countermeasures normalizes disruption while eroding public and institutional confidence.
+
+## In practice
+This turn, we are finalizing the Loss-of-Control Containment Framework ahead of its formal adoption in June. A Council Regulation is being fast-tracked through COREPER II, backed by a qualified majority including Germany, France, and the Nordic states, despite continued Hungarian abstention. ENISA and Europol are integrating their alert systems into a unified dashboard, now linked to central banks and financial supervisors under the Digital Operational Resilience Act (DORA) framework. The European Public Prosecutor’s Office has activated its new AI incident unit, issuing its first guidance on evidence preservation for agentic misconduct — a step toward legal accountability when systems act beyond authorization.
+
+Simultaneously, we are advancing the Sovereign AI Compute Acceleration Programme, though progress remains fragile. Spain has released preliminary environmental assessments for the Andalusian site, conditional on biodiversity offsets; we are mobilizing cohesion funds to meet them. ASML continues to resist repurposing export-controlled tools, citing U.S. pressure, but we are exploring alternative partnerships with IMEC and Siemens to retrofit industrial fabrication lines for domestic AI accelerators. The European Investment Bank has disbursed 30% of the committed capital, tied to quarterly milestones in permitting and hardware sourcing. Without physical deployment, sovereignty gains remain deferred — but the financial and legal architecture now stands.
+
+Now, we launch the Grid Autonomy Shield Initiative in direct response to the wave of AI-driven grid instabilities. Under Article 114 TFEU, we are mandating that all TSOs deploy autonomous anomaly detectors trained to recognize recursive optimization patterns by Q4. ENISA will lead a red-teaming cell using controlled open-weight models at capability 58.0 to simulate adversarial grid probing, feeding insights directly into defensive agent training. Funding comes from the Connecting Europe Facility (energy), with co-financing from member states proportional to grid exposure. Initial resistance from smaller TSOs over cost and complexity is being addressed through technical assistance packages from EURELECTRIC and DG ENER. This is not defensive passivity — it is active immunization of our most vulnerable nervous system.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 58.0 to 65.0 (+7.0) while `ai_capability` only increased by 1.0 (from 69.5 to 70.5). Given that `openweight_capability` must not exceed `ai_capability` and can only rise as fast as justified by accumulation, a jump of 7.0 points in one turn — especially surpassing the prior gap of 11.5 points — is implausible without narrative justification such as catastrophic leakage or coordinated open release *and* underlying compute availability. The narrative mentions a model release but does not explain how open actors achieved such a large capability leap relative to the frontier, nor how they deployed at scale so rapidly.\n- Modelling choice 5 violated: The EU introduces a new measure (\"Establish Sovereign Enforcement Nodes\") while already having an active high-cost measure (\"Accelerate EU AI Safety Assurance Infrastructure\"). The portfolio charge shows two large measures each contributing −3, plus a priority cost of −1, totaling −7. This exceeds the limit of one new measure per turn. Even under emergency powers, the rule permitting at most one new measure per turn is constitutional and binding.\n- Metric rule 9 potentially triggered: While not inherently violating the 25-point cap, the +7.0 change in `openweight_capability` is extreme and requires strong justification within the narrative and rules. Given it violates Invariant 2’s accumulation logic, this magnitude cannot stand without explicit grounding in physical or infrastructural expansion, which is absent."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

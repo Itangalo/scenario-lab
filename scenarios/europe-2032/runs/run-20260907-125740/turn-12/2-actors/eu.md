@@ -1,0 +1,17 @@
+No statement changes.
+
+## Portfolio
+- `Form the Middle Power AI Coalition (MPAC) (category 8, costs 3 per turn, started turn 9, finishes on turn 10): Establish a binding coordination framework among the EU and like-minded middle powers to align export controls, jointly negotiate compute access, and pool evaluation capacity—without ceding sovereignty—creating collective leverage over frontier development and deployment` — **finished**
+
+## New measure
+None this turn.  
+Waiting for ENISA’s full post-incident report on the cyber_major_incident, the final audit of the Sovereign AI Core’s 66.5 capability run, and the strategic implications of the emergent_supply_chain_pact before committing further capital to new initiatives.
+
+## Priority  
+Form the Middle Power AI Coalition  
+Despite its formal completion, MPAC remains the operational backbone of EU strategic positioning—its protocols are now live, tested in cross-border response, and constitute the only real mechanism the Union has to shape frontier development collectively; reinforcing its authority and closing internal compliance gaps is the highest priority this turn, especially after the member state’s unilateral hyperscaler deal undermined its credibility.
+
+## In practice  
+We are treating MPAC as the central nervous system of EU AI sovereignty. The General Secretariat of the Council has convened an emergency session of the Foreign Affairs configuration to address the breach of collective discipline by the member state that secured unilateral access to a U.S. hyperscaler. Legal analysis under Article 218 TFEU confirms that the Anti-Coercion Instrument can be triggered not only against external actors but also to enforce internal compliance when a member state’s actions compromise a binding coordination framework. We are preparing a formal review under the Instrument, conditional on full transparency and a binding commitment to route all future access through MPAC’s joint negotiation channel. At the same time, we are activating the mutual recognition protocol for safety evaluations with Japan and South Korea—ENISA and its counterparts are conducting parallel assessments of the latest 70.0-capability systems, and results will feed into a unified risk registry managed by the European Commission’s AI Office.
+
+The Sovereign AI Core remains our physical anchor, but its credibility is under strain. Germany and Austria have honoured their commitment to drop legal challenges, but expansion into Bavaria and Tyrol is stalled due to grid interconnection delays and regional permitting disputes. ENTSO-E is now directly managing load-balancing protocols, and we have fast-tracked a €1.2 billion allocation from the Digital Europe Programme to accelerate infrastructure deployment. However, without full buy-in from member states and without public trust, the Core risks becoming a symbol of division rather than unity. The civic commission’s growing influence—operating outside formal EU channels—adds pressure. We are opening a structured dialogue with its leadership under the Conference on the Future of Europe framework, not to cede authority, but to absorb legitimacy and prevent a schism between technocratic governance and civic accountability. This is not retreat—it is reconsolidation.

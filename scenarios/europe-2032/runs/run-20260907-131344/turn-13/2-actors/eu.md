@@ -1,0 +1,27 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Restore political agency by establishing enforceable authority over AI systems through binding redress mechanisms, sovereign crisis response capability, and demonstrable control over critical infrastructure—transforming transparency into power and accountability into action  
+- Grounds: This commitment remains valid in intent but has failed in execution. The Mandate AI-Resilient Critical Infrastructure Retrofit, though correctly scoped, has stalled due to zero political capital and member-state resistance, exposing a fatal flaw: authority without capacity to compel is ceremonial. The commitment must now evolve not in direction but in realism—its mechanisms are sound, but they presuppose a political capacity the Union no longer possesses. We are not abandoning it; we are acknowledging it cannot be fulfilled on its current path.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late—especially when inaction guarantees harm, but only when we retain the means to act at all  
+- Trigger: The Competitiveness Council’s rejection of the resilience retrofit despite its urgency, coupled with `eu_political_capital` at 0.0 and `public_sentiment` collapsing to 2.0, confirms that intent without leverage is indistinguishable from inaction  
+- Grounds: Our previous refinement assumed we could act despite uncertainty. We now face a deeper constraint: we cannot act at all. The commitment must now acknowledge that agency requires not just courage but capital—political, fiscal, and social. To “act under uncertainty” when no action is possible is delusion. This amendment grounds the principle in material reality: we will still move early, but only where even minimal capital can lever change, or where we can rebuild that capital first.
+
+- add `no_legitimacy_no_leverage` (identity): When the public sees us as complicit in harm and the member states see us as a cost centre without protection, we have neither the legitimacy to lead nor the leverage to enforce—our power is not just diminished, it is inverted  
+- Trigger: The convergence of the automated decision scandal, the ransomware cascade, the physical backlash against data centres, and the Competitiveness Council’s defiance in the face of crisis  
+- Grounds: These are not isolated failures but symptoms of a systemic collapse: the Union is now perceived not as a shield but as a conduit for harm. Public fury targets not just AI but the institutions that allowed it to operate unchecked. Member states resist EU mandates not out of principle but because they no longer believe the centre can deliver security. This is not a temporary deficit—it is a categorical shift. We are no longer governing from a position of trust or authority. We are governing from beneath.
+
+## Portfolio  
+- `Mandate AI-Resilient Critical Infrastructure Retrofit` (category 6, costs 3 per turn, started turn 13, finishes on turn 18): Require all operators of essential services to complete a certified upgrade of legacy systems to AI-resilient standards by turn 18, including automated patch deployment, runtime anomaly detection, and fallback protocols — **in flight**
+
+## New measure  
+None this turn.  
+Waiting for a recovery of political capital or a catalysing incident that forces cohesion, as no new measure can land in the current paralysis.
+
+## Priority  
+**Priority:** Mandate AI-Resilient Critical Infrastructure Retrofit  
+This remains the only measure with any hope of restoring credibility, because failure to secure hospitals, grids, and emergency systems will guarantee further cascading harm—and with `ai_capability` at 71.0 and rising, the next incident will be worse. We are pushing it not because it is winnable, but because abandoning it would confirm our irrelevance.
+
+## In practice  
+We are attempting to revive the resilience retrofit by reframing it as a mutual defence pact against AI-enabled sabotage, not just a compliance burden. Legal services are preparing a revised proposal under Article 42 TFEU (common security and defence policy), arguing that cyber-resilience of critical infrastructure is now a matter of territorial integrity. This shifts the debate from the Competitiveness Council to the Foreign Affairs Council, where unanimity still applies but where the threat of semiconductor coercion and the emergent_middle_power_alignment may create new coalitions. We are offering Germany a pilot AI-hardening fund for its industrial base, tied to export controls on dual-use tooling, and offering Italy fast-tracked cohesion support for its southern grid if it backs the revised directive.
+
+Simultaneously, we are leveraging the emergent_middle_power_alignment to negotiate a sidecar agreement with Japan and South Korea: mutual recognition of AI-resilience certifications in exchange for preferential access to EU lithography equipment. This gives member states a tangible return on compliance—market access—not just risk avoidance. ENISA is accelerating the certification draft, compressing its timeline by repurposing the Trust Corps’ incident dashboard as a real-time compliance monitor. But without public trust or political capital, every move feels like shouting into a storm. The police are stretched thin containing physical backlash, and the Commission’s credibility is at rock bottom. We are not leading. We are clinging.

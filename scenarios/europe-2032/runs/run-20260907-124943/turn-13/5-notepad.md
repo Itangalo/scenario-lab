@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: European Agency for AI Assurance and Control −3, Mandatory Open-Weight Risk Certification −3, priority −1 = −7  
+PROPOSAL BONUS: Mandatory Open-Weight Risk Certification (cat 3, large) +4 — directly addresses emergent_open_source_cyber_tools this turn, a growing threat with real-world impacts on critical infrastructure  
+LEGITIMACY LENDS: none — eu_political_capital (39.0) > public_sentiment (28.0)  
+SOVEREIGNTY: 32.0 last turn, no capacity event, capability rose 1.5 −1 = 31.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_regulatory_defection` -- first noted turn 11, listed in 4 turn(s) so far: A major EU member state continues to recognise foreign AI safety certifications, creating legal uncertainty and weakening central oversight. The issue remains tied to national sovereignty debates and is under review by the European Court of Justice.  
+- `emergent_open_source_cyber_tools` -- first noted turn 11, listed in 4 turn(s) so far: Underground AI exploit kits now include logic for evading behavioural detection, observed in attacks on municipal water systems. The tools are modular, adaptable, and increasingly user-friendly, enabling less-skilled actors to launch sophisticated cyber intrusions. This marks a shift from isolated incidents to distributed capability erosion, with openweight models accelerating the diffusion of offensive AI techniques beyond state actors.

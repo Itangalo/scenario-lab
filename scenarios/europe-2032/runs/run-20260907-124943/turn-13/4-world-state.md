@@ -1,0 +1,15 @@
+### Cyber Shield Goes Live — With Limits
+
+The **Critical Infrastructure Cyber Shield Initiative** officially reaches full operational status, marking a milestone in the EU’s defence against AI-powered threats. Real-time telemetry now flows from energy grids, water systems and health networks into the European AI Threat Observatory, significantly cutting detection times. Joint live-fire drills in Germany and Finland expose critical gaps in legacy industrial control systems, triggering emergency retrofitting in five member states. While full resilience remains delayed, the partial rollout yields tangible gains, improving systemic response and boosting confidence in coordinated defence.
+
+### Agency Gains Leverage — But Not Unity
+
+The European Agency for AI Assurance and Control secures a breakthrough by tying access to the new behavioural consistency certification — a highly sought-after safety tool developed in frontier labs — to mandatory pre-deployment evaluations for models above 65.0 capability. This creates de facto compliance leverage over major AI developers, including non-EU entities seeking credibility in European markets. Austria agrees to recognise only EU evaluations for high-risk systems, closing a key regulatory loophole — but only conditionally, pending the outcome of an ongoing constitutional review. Legal challenges loom, and other member states remain cautious, leaving the Agency’s authority fragile.
+
+### Open-Weight Certification Delayed, Framework Absorbed
+
+Plans advance for a comprehensive audit regime for open-weight models above 55.0 capability, with the voluntary Secure Open-Source Evaluation Framework now formally absorbed into the future regulatory structure. However, final adoption of the **Mandatory Open-Weight Risk Certification** is delayed due to inter-institutional negotiations and legal concerns raised by several member states. While political momentum builds in response to rising threats from modular exploit kits targeting municipal infrastructure, the measure does not enter force this turn. Work continues on implementation pathways, but no binding requirements are yet imposed.
+
+### Capability Creeps, Safety Lags
+
+AI capability advances to 73.5, driven by autonomous chip design and training optimisation. Openweight models show signs of absorbing evasion logic from underground toolkits, contributing to a measured increase in offensive utility. This diffusion accelerates, but not instantaneously — openweight capability rises to 62.0, reflecting gradual replication and adaptation rather than a sudden leap. Despite the safety leverage gained through certification access, systemic assurance remains low. Public sentiment improves slightly due to visible action, but political capital erodes under the weight of ongoing measures and unresolved fragmentation.

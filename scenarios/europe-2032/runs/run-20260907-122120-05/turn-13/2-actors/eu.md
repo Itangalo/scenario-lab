@@ -1,0 +1,26 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Defend critical infrastructure and democratic integrity from AI-enabled subversion, extend sovereign control over the deployment of high-capability systems in the single market, and begin building autonomous AI capacity to restore strategic optionality  
+  - Grounds: The **eu_frontier_access_denied** event this turn is not merely a disruption but a strategic shock — it proves that reliance on external providers, even under regulatory scrutiny, leaves the Union exposed to unilateral withdrawal without recourse. With sovereign evaluation still in flight and now revealed as insufficient against access denial, we must act to ensure that the EU can operate advanced systems independently. This does not abandon our defensive focus but deepens it: resilience now requires not just resistance to harm but the capacity to act without permission.
+
+## Portfolio
+- `Sovereign Evaluation Regime for High-Capability Systems` (category 1, costs 3 per turn, started turn 11, finishes on turn 13): Establish independent, pre-deployment evaluation of any AI system above 65.0 capability threshold, with authority to delay or condition deployment based on demonstrated control, security, and misuse risks — **in flight**
+- `Emergency Critical Infrastructure Shield` (category 6, costs 3 per turn, started turn 12, finishes on turn 14): Launch immediate cyber hardening and failover protocols for energy, water, and health infrastructure against AI-scaled attacks, including mandatory red-teaming and live simulation exercises by Q3 2032 — **in flight**
+
+## New measure
+`Sovereign Compute Acceleration Programme`  
+Establish a legally anchored, EU-controlled compute infrastructure at scale, with priority access for public agencies, research institutions, and certified developers, to ensure uninterrupted operation of essential AI services independent of foreign providers.  
+`Category:` 4 (Sovereignty and industrial capacity)  
+`Size:` large  
+`Finishes on turn:` 16  
+`Targeted effect:` eu_ai_sovereignty +15–20, resilience +5 via assured continuity of critical AI functions, public_sentiment +5 if framed as infrastructure restoration  
+`Applies to:` EU institutions, member states, European semiconductor and cloud providers, with binding obligations on siting, grid access, and jurisdictional immunity
+
+## Priority
+**Sovereign Compute Acceleration Programme** — because eu_frontier_access_denied has exposed a fatal dependency: we can regulate, evaluate, and harden against threats, but if we cannot run capable systems when and how we need them, all other defences collapse at the point of execution.
+
+## In practice
+This turn, we initiate the Sovereign Compute Acceleration Programme under Article 114 TFEU (internal market), invoking the urgency clause of the Digital Markets Act framework to fast-track permitting and grid access for three new sovereign data centre clusters — in Finland, Spain, and Poland — each co-located with renewable generation and physically isolated from commercial cloud networks. The European Commission, in coordination with EIB and national energy ministries, allocates €3.8 billion from the Digital Europe Programme and REPowerEU surplus funds, with 60% directed to ASML, Infineon, and STMicroelectronics to secure domestic tooling and mature-node fabrication for control systems. We task ENISA and the European High-Performance Computing Joint Undertaking (EuroHPC JU) with operational oversight, mandating that all systems above 60.0 capability deployed in the public sector must run on sovereign compute by turn 15.
+
+Simultaneously, we push the final phase of the Sovereign Evaluation Regime: despite legal challenges from U.S. firms, the European AI Office finalises the first two evaluations under the regime, issuing conditional deployment authorisations for two systems at 71.0 capability, contingent on real-time monitoring hooks and third-party red-teaming access. We announce that any provider excluded due to non-compliance will be barred from public procurement — a line that risks retaliation but signals resolve. The Emergency Critical Infrastructure Shield advances with the CERT-EU live-fire exercise in July, revealing critical gaps in municipal water systems; we respond by redirecting €200 million of the shield’s fund to emergency retrofitting in affected regions, while pressing national regulators to delegate enforcement authority to ENISA under Article 8a of the NIS2 Directive.
+
+Behind the scenes, we engage the emergent_open_sovereign_framework coalition — research institutes, cities, and open-source developers — offering pilot funding and regulatory sandboxes to integrate their agent framework into the sovereign compute layer. This is not a replacement for industrial scale, but a hedge: if we cannot buy or build fast enough, we must grow it from below. Public messaging focuses on infrastructure, continuity, and preparedness — not restriction — to avoid triggering backlash amid already fragile sentiment. We act not because we are ready, but because we are not, and delay is no longer an option.

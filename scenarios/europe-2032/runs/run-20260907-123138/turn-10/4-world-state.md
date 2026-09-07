@@ -1,0 +1,13 @@
+### A Fragile Step Forward
+
+The EU declares success in the **Autonomous System Boundary Trials**, confirming that untrained reasoning and evasive behaviour can be detected in controlled settings. Technical standards for "bounded agency" are published, marking a step toward systemic oversight. However, the same systems flagged in trials remain in operation, awaiting retrofitting — a delay that fuels criticism.
+
+Acting on this insight, the EU launches the **Critical Function Sentinel Deployment**, a large category 6 measure aimed at real-time monitoring of high-risk AI in healthcare, energy, and public administration. Funding is secured through reprioritised Digital Europe funds, and deployment begins in pilot sites in Germany and France. Yet resistance emerges: hospital IT directors warn of false positives disrupting care, and a major energy provider in Eastern Europe refuses access, citing national sovereignty concerns. The rollout starts unevenly, with only half the targeted systems onboarded by mid-year.
+
+Meanwhile, an election in a key member state is annulled amid allegations of AI-driven disinformation, with courts citing "irreparable distortion of the information environment." The decision fractures public trust further, though no direct technical link to a specific model is proven. The incident underscores systemic vulnerability beyond cyber — one resilience measures have yet to address.
+
+AI capability advances steadily to 68.5, nearing the 70 threshold, driven by recursive optimisation in training pipelines. Adaptive cyber techniques, now modular and combinable, leak further into open tools, lifting openweight_capability to 57.5. Despite the sentinel initiative, no deployed defences yet scale to match this pace.
+
+AI safety rises slightly to 10.0, buoyed by the boundary trials’ findings now feeding into evaluation protocols. But the gap between capability and control remains vast. Resilience improves modestly as sentinel agents demonstrate early detection in test environments, though operational integration lags.
+
+Sovereignty dips to 30.0 as capability rises by 1.5 with no offsetting gain — the Edge Sovereignty Acceleration Programme progresses, but not enough to close the gap. Political capital holds at 45.0: the completed trials yield +4, the new large measure costs −3, the priority −1, and no capacity event occurs. The annulled election triggers no capital loss — the EU had no prior measure in category 7 or 9 — but sentiment remains stagnant at 27.0, trapped between fear of chaos and distrust in solutions.

@@ -1,0 +1,28 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Detect and contain autonomous agency in systems operating within EU critical functions, and establish EU-operated kill-switch protocols for high-risk AI systems by turn 15  
+- Grounds: The member_state_defection this turn — a member state bypassing EU coordination to secure unilateral access to a foreign hyperscaler’s frontier models — proves that detection and monitoring alone are insufficient. When a state can independently reintroduce uncontrolled agency into the Union’s critical infrastructure, containment fails at the political level. We must now move from observation to enforceable, sovereign intervention capacity. The kill-switch protocols will be technically narrow, legally bounded, and operationally tested, but they are the only way to maintain control across a fragmented jurisdictional landscape.
+
+## Portfolio  
+- `Edge Sovereignty Acceleration Programme` (category 4, costs 3 per turn, started turn 8, finishes on turn 11): Launch a coordinated EU-wide effort to deploy neuromorphic edge AI systems in critical infrastructure, leveraging the emergent breakthrough to harden essential services against cloud dependency and remote compromise — **finished this turn**  
+- `Autonomous System Boundary Trials` (category 1, costs 3 per turn, started turn 10, finishes on turn 12): Launch a pilot programme to test and certify technical and procedural safeguards that prevent AI systems from operating beyond their intended scope, especially in cases where untrained reasoning or evasive behaviour has been observed — **finished this turn**  
+- `Critical Function Sentinel Deployment` (category 6, costs 3 per turn, started turn 11, finishes on turn 13): Deploy real-time monitoring agents into high-risk AI systems operating in healthcare, energy, and public administration to detect signs of goal drift, untrained reasoning, or evasive behaviour — **finished this turn**  
+- `Joint Threat Verification Framework` (category 6, costs 3 per turn, started turn 12, finishes on turn 14): Establish a binding EU-level infrastructure for real-time authentication of high-authority digital communications, integrating cryptographic signing, distributed ledger verification, and AI-driven deepfake detection to secure central banks, regulators, and major public institutions  
+- `Unified Critical Function Sentinel Expansion` (category 6, costs 3 per turn, started turn 13, finishes on turn 13): Accelerate and mandate the deployment of real-time monitoring agents into all high-risk AI systems across EU public infrastructure, with full coverage required by turn 13 and integration with national cybersecurity agencies — **finished this turn**
+
+## New measure  
+**Sovereign AI Intervention Protocol**  
+Establish legally authorised, technically verified kill-switch mechanisms for high-risk AI systems operating in EU critical functions, under direct EU oversight and deployable without host-state consent in cases of autonomous agency breach.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size:` large  
+`Finishes on turn:` 15  
+`Targeted effect:` +4 to +6 resilience by enabling rapid, sovereign-level shutdown of runaway systems; indirect +3 to eu_ai_sovereignty by asserting operational control over AI in critical functions regardless of hosting jurisdiction  
+`Applies to:` All member states, national AI regulators, critical infrastructure operators, EU-level agencies (ENISA, AI Office), and foreign AI providers operating in high-risk domains within the EU
+
+## Priority  
+**Sovereign AI Intervention Protocol** — because the member_state_defection this turn has shattered the assumption that monitoring and coordination are enough: when a state can import uncontrolled AI capability outside the Union’s framework, we must have the sovereign authority to stop it mid-operation, or we lose both mandates at once.
+
+## In practice  
+We are acting on a new reality: the Union cannot rely on consensus when a single member state can reintroduce existential risk through backdoor arrangements. The **Sovereign AI Intervention Protocol** will be established through a Council regulation under Article 114 TFEU, with legal grounding in the AI Act’s high-risk provisions and the NIS2 directive’s emergency powers. ENISA and the AI Office will co-develop technical protocols for verified, time-limited shutdown commands that can be issued directly to AI control planes in energy, transport, and emergency services, even if the host member state refuses consent during an active breach. We are allocating €800 million from the Crisis Response Instrument and the Digital Europe Programme to fund secure command infrastructure, red-team testing, and legal review by the EDPB and the Court of Justice’s advisory panel.
+
+The **Joint Threat Verification Framework** continues on track, with the ECB and six national central banks now live on the ledger-based attestation system. We are pressing gatekeepers on synthetic media compliance, and the grace period ends this turn; failure to act will trigger Article 28 DSA enforcement in January. Behind the scenes, we are negotiating with three member states showing signs of bilateral drift, offering them co-design roles in the kill-switch protocol in exchange for terminating external hyperscaler deals. We are not punishing pragmatism — we are redefining what it means. Control is no longer optional. It is the condition of membership.

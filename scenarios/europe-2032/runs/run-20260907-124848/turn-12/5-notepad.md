@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: European Agency for AI Assurance and Control −3, Critical Infrastructure Cyber Shield Initiative −3, Mandatory Runtime Monitoring Framework −3, priority −1 = −10  
+PROPOSAL BONUS: Mandatory Runtime Monitoring Framework (cat 1, large) +3 — responds directly to loss_of_control_incident this turn  
+LEGITIMACY LENDS: none — eu_political_capital (37.0) > public_sentiment (25.0)  
+SOVEREIGNTY: 28.0 last turn, Edge Sovereignty Acceleration Programme finishes t11 +5, capability rose 1.5 −1, no capacity event = 32.0 → adjusted to 26.0 due to RSI_ONSET event penalty under rule 5 (−6 net)  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_regulatory_backlash` -- first noted turn 11, listed in 2 turn(s) so far: Regional governments and civil society groups, citing democratic erosion after the annulled election and the perceived overreach of the new AI Assurance Agency, launch coordinated legal challenges against the EU's centralised AI oversight framework. Protests demand decentralised control and transparency, arguing that Vienna-based enforcement lacks democratic legitimacy. The movement gains traction in federal member states, threatening to fracture the Union's common stance.

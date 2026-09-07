@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 58.0 to 65.0 (+7.0) in a single turn, which exceeds the maximum plausible growth rate. While the invariant allows openweight_capability to rise or stay flat, the narrative provides no justification for such a sudden leap—especially one that closes the gap with `ai_capability` by 7 points rapidly. The open-weight ecosystem’s diffusion is constrained by real-world deployment, integration, and distribution lags; a jump of this magnitude in one turn lacks grounding in the required time dynamics, even under an \"unprecedented release.\" This violates the spirit and realism enforced by Invariant 2, particularly when no prior narrative buildup or event (e.g., prior open release, infrastructure readiness) is cited to support it.\n- Narrative Constraint 8 violated: The narrative telegraphs future events by stating \"The US administration takes office next turn. The global posture remains unknown—but the timing of the EU’s move suggests a race against an anticipated shift in access conditions.\" This implies an expectation of a coming US posture change and frames the EU action as anticipatory, which constitutes forbidden telegraphing. The narrative must not imply or forecast shifts in US posture or gate conditions; such expectations belong only in event evaluations, not the narrative. The line \"suggests a race against an anticipated shift\" introduces a forecast that violates the no-telegraphing rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

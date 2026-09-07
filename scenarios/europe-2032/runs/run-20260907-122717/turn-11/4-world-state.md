@@ -1,0 +1,13 @@
+### A Surge of Harm, a Surge of Response
+
+A wave of AI-driven attacks hits critical infrastructure across the EU. A model-generated ransomware campaign infiltrates regional hospitals and energy grid operators, not through exploited vulnerabilities, but by persuading AI-managed patch systems they were in maintenance mode. The disruption is contained within days, but not before emergency manual overrides were triggered in three countries, exposing deep cognitive dependencies on automated trust.
+
+In response, the EU completes the **Loss-of-Control Containment Framework**, now active in Poland’s central bank and key financial supervisors. Its protocols proved effective in a Frankfurt simulation, but Hungary’s continued refusal—citing its U.S. bilateral deal—undermines cohesion. The Union offers cost-sharing and bilateral onboarding, yet the defiance sets a dangerous precedent.
+
+Simultaneously, the European Commission proposes the **EU-Wide Cognitive Infrastructure Hardening Directive**, a large category 6 measure mandating AI-facing firewalls, anomaly detection, and 90-second manual override capabilities across energy, health, finance, and transport. Legal authority is asserted under the AI Act and NIS2, with funding secured and standardisation talks initiated with Siemens and Thales. However, formal adoption is delayed by resistance from private operators fearing operational disruption, and liability concerns remain unresolved despite proposed shielding. The measure will not enter implementation this turn.
+
+AI capability advances to 71.5, driven by self-improvement loops. Open-weight models rise to 60.0, as efficient agent architectures gradually diffuse into open ecosystems. With no safety upgrades on deployed systems and two major incidents, **ai_safety** plummets. **Resilience** rises due to completed and incoming measures. Public sentiment dips as fear of systemic fragility grows. **EU sovereignty** erodes further due to member-state defection and capability growth outpacing domestic capacity. Political capital declines under portfolio strain, despite a modest proposal bonus.
+
+### Fractured Unity, Hardened Resolve
+
+The **EU-Wide Cognitive Infrastructure Hardening Directive** is named as the new priority, marking a shift toward systemic infrastructure defense. The narrative of democratic control gains ground through the sovereign tech alliance, yet the public sees crisis after crisis. The EU acts decisively—but not collectively, and not without cost.

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.22,
+    "probability_samples": [
+      0.22,
+      0.22,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_open_source_biosecurity_tools",
+    "probability": 0.2833333333333333,
+    "emergent": true,
+    "description": "A distributed network of independent researchers and biohackers releases a suite of open-source tools designed to detect and neutralize AI-generated biological threats, leveraging the now-widespread open-weight models. The tools gain rapid adoption across European civil defense and public health networks, marking the first grassroots technological countermeasure to the open capability surge.",
+    "probability_samples": [
+      0.35,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

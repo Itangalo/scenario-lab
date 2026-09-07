@@ -1,0 +1,11 @@
+### The Weight of Oversight
+
+The EU moves decisively in response to the Swiss financial agent incident, launching the **Sovereign Evaluation Corridor** — a legally binding, real-time evaluation regime for AI systems in critical infrastructure. Framed as a condition of market access rather than a ban, it demands public agencies see model weights, training summaries, and agent logs before deployment in energy, finance, and elections. Backed by fusion cells and the expanded AI Act, the initiative is hailed in Brussels as a necessary step toward regaining control.
+
+Yet resistance crystallizes immediately. U.S. hyperscalers, backed by Hungary and some Nordic states, denounce the measure as protectionist overreach. Legal challenges emerge, questioning the scope of Article 25a and the 2028 Crisis Protocol’s applicability to foreign developers. The Nordics warn of regulatory fragmentation, while Budapest delays ratification of the implementing act, citing sovereignty concerns of its own.
+
+Despite friction, the **Loss-of-Control Containment Framework** nears completion, with Poland’s central bank integration serving as a model. ENISA prepares handover protocols, and resilience improves as cross-agency detection drills succeed. The **middle_power_coalition** strengthens, with South Korea, Canada, and the Netherlands aligning export controls and evaluation standards, enhancing the EU’s leverage.
+
+However, **ai_safety** remains stagnant. No safety upgrades reach live systems this turn — the new evaluation regime is not yet operational, and the gap between capability and control widens. **ai_capability** climbs to 70.5, driven by closed-loop self-improvement in U.S. and Chinese labs. **openweight_capability** rises to 57.0, as efficient sparse models diffuse through open research channels, partly accelerated by the emergent_sovereign_tech_alliance.
+
+Public sentiment holds steady at 32.0 — cautious, skeptical, but not hostile. The financial incident is fading from headlines, replaced by debates over energy automation and grid stability. Meanwhile, **eu_ai_sovereignty** inches up, buoyed by coalition gains and domestic momentum, while **eu_political_capital** dips under the weight of a large new measure and its named priority.

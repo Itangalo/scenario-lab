@@ -1,0 +1,29 @@
+## Statement changes
+- modify `two_year_commitment` (commitment): Restore political agency by establishing enforceable authority over AI systems through binding redress mechanisms, sovereign crisis response capability, and demonstrable control over critical infrastructure—transforming transparency into power and accountability into action  
+- Trigger: the cyber_major_incident and automated_decision_scandal events this turn, compounded by the ombudsman’s finding of systemic harm in social insurance AI and the Trust Corps’ exposure as operationally critical yet legally impotent  
+- Grounds: The convergence of external attack and internal failure has rendered transparency without enforcement obsolete. The Trust Corps has proven indispensable in real-time crisis communication, yet lacks any mandate to compel patching, override national inertia, or suspend unsafe systems. Meanwhile, the automated_decision_scandal confirms that domestic AI governance is not only reactive but permissive of structural harm. Public trust cannot be restored through reporting alone when both foreign attackers and national agencies operate with de facto impunity. Our commitment must now shift from visibility to sovereignty over outcomes: to stop systems, to mandate resilience, to enforce redress. This is no longer about oversight—it is about control.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late—especially when inaction guarantees harm  
+- Grounds: The interpretability breakthrough offers a rare moment of clarity in an otherwise opaque domain, but the political window to act is narrowing as public sentiment collapses. We are no longer acting in pure uncertainty; we are acting in *asymmetric* uncertainty—where technical understanding is advancing faster than governance can absorb it. The cost of delay now exceeds the cost of error. This refinement acknowledges that our duty is not just to move early, but to move when waiting would guarantee systemic failure.
+
+## Portfolio
+- `Establish EU Public Trust Corps for AI Incident Response and Transparency` (category 9, costs 3 per turn, started turn 9, finishes on turn 12): Create a civilian technical corps under the European Commission, staffed with red-team engineers, crisis communicators, and regional liaison officers, to lead public-facing incident response, conduct live transparency drills, and operate a 24/7 AI incident dashboard with verified threat status, system outages, and mitigation progress — **finished this turn**
+
+## New measure
+**Measure:** Mandate AI-Resilient Critical Infrastructure Retrofit  
+Require all operators of essential services (healthcare, energy, water, transport, emergency response) to complete a certified upgrade of legacy systems to AI-resilient standards by turn 18, including automated patch deployment, runtime anomaly detection using AI-augmented monitoring, and fallback protocols that maintain core functionality under sustained cyber assault.
+
+Category: 6 (Preparedness and resilience)  
+Size: large  
+Finishes on turn: 18  
+Targeted effect: Increase resilience from 36.0 to at least 55.0 by turn 18, reduce attack surface for open-weight offensive tools, and indirectly raise ai_safety by forcing legibility and monitoring on high-risk systems  
+Applies to: Member states’ critical infrastructure operators, EU agencies managing cross-border systems, private providers under NIS2 scope
+
+## Priority
+**Priority:** Mandate AI-Resilient Critical Infrastructure Retrofit  
+This is now the dominant priority because the ransomware attack did not exploit unknown vulnerabilities—it weaponised known, unpatched flaws at scale using AI-generated tooling, revealing that our most urgent vulnerability is not capability but *complacency* in hardening what we already know is broken; only a binding, time-bound retrofit can close this gap before the next wave hits.
+
+## In practice
+The Trust Corps has fulfilled its mandate and now stands as a permanent operational entity under the Commission, with its dashboard institutionalised as the EU’s central nervous system for AI incidents. Its emergency activation during the ransomware attack proved its value: for the first time, citizens saw verified, real-time updates on hospital outages and recovery timelines, and its red-team liaison officers coordinated patch prioritisation across Bavarian and Emilian networks. But its inability to *enforce* patching or override local procurement delays exposed a fatal gap—transparency without authority is performance, not protection. We are now integrating its monitoring infrastructure into the new resilience mandate, repurposing its technical staff as auditors for the retrofit programme.
+
+The new measure will be proposed under Article 114 TFEU for internal market harmonisation, in the Council’s Competitiveness (Internal Market) formation, where resistance from Germany and Italy is expected on cost grounds. We are countering with a front-loaded Cohesion Fund disbursement—50% of compliance costs covered for operators in regions below EU median GDP—and a fast-track approval process for grid upgrades tied to data centre resilience retrofits. ENISA will develop the certification standard by turn 14, in coordination with the JRC’s new AI threat modelling unit, which is adapting the DeepMind-Anthropic interpretability framework to predict adversarial model behaviour in network environments. The automated_decision_scandal accelerates urgency: if AI can harm citizens through opaque social systems, it can destroy them through compromised hospitals. We are no longer choosing between safety and sovereignty—we are building the enforcement capacity that makes both possible.

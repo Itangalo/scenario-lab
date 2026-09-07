@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 57.0 to 63.5 (+6.5) while `ai_capability` increased by only +1.5 (from 69.0 to 70.5). This violates the rule that `openweight_capability` may never exceed `ai_capability` and must accumulate at a rate consistent with or below the closed frontier. A rise of 6.5 in openweight capability with only 1.5 in overall capability implies openweight now exceeds the frontier, which is structurally impossible without a narrative explanation of a catastrophic breach or open release of frontier models — neither of which is present.\n- Invariant 9 violated: `ai_safety` decreased by 6.0 points (from 10.0 to 4.0), which exceeds the 25-point-per-turn hard cap on metric movement. While large drops are possible, no metric may move more than 25 points in a single turn. This rule applies to decreases as well as increases.\n- Modelling Choice 5 violated: The EU names the **Critical Infrastructure Cyber Shield Initiative** as its priority *and* counts the completion of the **Edge Sovereignty Acceleration Programme** as an active measure in the same turn. This constitutes two distinct measures (one new, one finishing) with strategic weight, violating the \"at most one named priority\" and implying more than one major initiative in play. While finishing an existing measure is allowed, treating both a new priority *and* a finishing high-impact programme as co-equal drivers in the same turn overloads the EU’s capacity per the constitutional limit of one priority per turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

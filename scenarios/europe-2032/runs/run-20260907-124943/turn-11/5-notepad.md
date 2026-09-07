@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: European Agency for AI Assurance and Control −3, Critical Infrastructure Cyber Shield Initiative −3, priority −1 = −7  
+PROPOSAL BONUS: Critical Infrastructure Cyber Shield Initiative (cat 6, large) +3 — responds directly to election annulment and emergent cyber threats within last three turns  
+LEGITIMACY LENDS: none — eu_political_capital (41.0) > public_sentiment (24.0)  
+SOVEREIGNTY: 30.0 last turn, Edge Sovereignty Acceleration Programme finishes t11 +5, capability rose 1.5 −1 = 33.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_regulatory_defection` -- first noted turn 11, listed in 2 turn(s) so far: A major EU member state, under pressure from domestic tech interests and external actors, announces it will unilaterally recognize foreign AI safety certifications, effectively bypassing key provisions of the AI Act. This creates a regulatory loophole and triggers legal challenges within the Union, weakening the European Agency for AI Assurance and Control before it becomes operational. The move is framed as reducing compliance costs for startups, but seen as a precedent for fragmentation.  
+- `emergent_open_source_cyber_tools` -- first noted turn 11, listed in 2 turn(s) so far: Underground AI exploit kits now include logic for evading behavioural detection, observed in attacks on municipal water systems. The tools are modular, adaptable, and increasingly user-friendly, enabling less-skilled actors to launch sophisticated cyber intrusions. This marks a shift from isolated incidents to distributed capability erosion, with openweight models accelerating the diffusion of offensive AI techniques beyond state actors.
