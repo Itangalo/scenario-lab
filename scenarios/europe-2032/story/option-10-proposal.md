@@ -49,6 +49,35 @@ Pools: `pool-10-{12 blocks}/`, 10 draws each, situations fixed by turn-10 fixtur
 
 Next step for the five no-split blocks is Johan's call (steer a directed split as for turn 6, manufacture, or no final fork on that branch). Not decided here. (ECHO 2026-09-07)
 
+## Directed pairs for A12/V11/P11/P12 at Johan's steer (2026-09-07)
+
+No second extension: +10 confirmed the shapes, and more draws look like a poor path forward. Instead, directed pairs per Johan's three templates — marked directed, picks file-verified (names, categories, finishes, priorities all read from the pool files):
+
+### V11 — evaluate vs contain (template 1: flavours within the act consensus)
+
+- `option-10-V111` ← `pool-10-V11/sample-03.md`, "Sovereign Evaluation Regime for High-Capability Systems" (cat1, large, fin 13), priority itself. Eval flavour (same-name pair 02/03 within eval 4).
+- `option-10-V112` ← `pool-10-V11/sample-07.md`, "Loss-of-Control Containment Framework" (cat6, small, fin 12), priority itself. Resilience flavour (within resilience 4); fastest finisher, answers the loss-of-control incident directly.
+
+### A12 — hold the line vs consolidate-plus (template 2; capital-mending)
+
+Branch needs: safety 0.0, capital 8.0. No draw targets safety except sample-19 (cat3, small, fin 11, safety +5–8 — noted alternate, singleton). Capital is mended procedurally: holds avoid new-measure costs, and sample-01 adds +2.
+- `option-10-A121` ← `pool-10-A12/sample-16.md`, no new measure, priority OSRI (hold-consensus cluster 13/20; escalated commitment language).
+- `option-10-A122` ← `pool-10-A12/sample-01.md`, "Secure foundational resilience through joint threat response integration" (cat6, large, fin 11), priority OSRI. Consolidate-plus cluster pick (01/04/06/08): resilience +12, capital +2, sentiment +3, closes fast.
+
+### P11 — hold vs hold-plus (template 2; capital-mending)
+
+Branch is strong except capital (19.0): holds avoid new costs while Border + EAAN finish; the hold-plus cluster (01/02/03/07/08, all Border priority) offers one short safety buy.
+- `option-10-P111` ← `pool-10-P11/sample-04.md`, no new measure, priority Border (hold cluster 15/20; explicit scarcity reasoning).
+- `option-10-P112` ← `pool-10-P11/sample-08.md`, "Accelerate EAAN Certification Nodes" (cat5, small, fin 13), priority Border. Short safety buy (+8–12) that enforces the Border instead of widening the portfolio.
+
+### P12 — two flavours of consolidation (template 1 variant; capital-mending)
+
+Branch needs: safety + capital (6.0). No draw targets either numerically (sole exception: sample-13 full-stack, sov +15/safety +5, large cat4 — implausible at capital 6.0, noted alternate). Capital is mended procedurally — both picks propose nothing and wait for recovery above 12.
+- `option-10-P121` ← `pool-10-P12/sample-06.md`, no new measure, priority Backchannel Integration. Purest consolidation: declares compute dead, civil-protection framing, calibrated disclosure.
+- `option-10-P122` ← `pool-10-P12/sample-12.md`, no new measure, priority Backchannel Integration. Same strategy, different instrument: hyperscaler disclosure backdoor + Trusted Nodes certification.
+
+All twelve blocks now have pairs; A12/V11/P11/P12 pairs are directed (Johan-steered templates), V11 closest to emergent (real 4+4 subgroups). (ECHO 2026-09-07)
+
 ## Extension to 20 draws for the five no-splits (2026-09-07)
 
 Same situations (prompt hashes unchanged), all 20 fresh draws per pool. Four confirm no-split; one resolves.
