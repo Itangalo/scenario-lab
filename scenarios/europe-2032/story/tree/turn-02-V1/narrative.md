@@ -2,14 +2,21 @@
 node: turn-02-V1
 turn: 2
 period: H1 2027
-block: V1
-status: drafted
+status: written
 prev: option-02-1
 next: turn-03-V1
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
+# Continuity before capacity
 
-**Turn 2 (H1 2027).** The EU launches the Critical Infrastructure Resilience Sprint as a six-month emergency programme for energy, water and health, prioritising it over industrial build-out with NIS2 emergency powers, binary transparency, air-gapped fallbacks, ENISA rapid teams and sovereign non-transformer detection procurement. The Emergency Sovereign Compute Directive stays in negotiation with a failed US-cloud compromise and only conditional member-state support, while the Tech Sovereignty Package reaches four binding Acceleration Zones. A model-generated ransomware sweep through a poisoned dependency hits hospitals and grid operators, a global investment collapse cancels European data centres, and a Kimi K4 derivative with autonomous exploit chaining lifts openweight capability. Safety and sentiment fall on opaque coordination, displacement fears and labour unrest.
+The attack arrives through a poisoned software dependency, and the tooling that built it was machine-generated. Hospital scheduling goes down in three member states. Two national grid operators run their emergency protocols for real. This is the thing the autumn intrusion was rehearsing, and it has stopped rehearsing.
 
-Metrics: ai_capability 55.5, openweight 44.0, safety 27.0, resilience 40.0, sovereignty 22.0, capital 42.0, sentiment 37.0. Events: cyber_major_incident, ai_investment_collapse, openweight_frontier_release.
+You put the industrial build-out second. The Critical Infrastructure Resilience Sprint is a six-month emergency programme across energy, water and health, enforced through revised network security obligations and made a condition of access to recovery funds. ENISA sends rapid-response teams. You mandate binary transparency and air-gapped fallbacks, so that an operator can at least know what it is running and survive losing it. Sovereignty over compute is not worth much if the grids go dark underneath.
+
+Implementation is uneven in the way these things are. Seven member states meet the first compliance deadline. Procurement for intrusion detection that does not itself depend on transformer models runs into export bottlenecks in third countries. But detection does improve, and the follow-up probes find a smaller blast radius than they would have found in the winter.
+
+The Compute Directive, meanwhile, does not move. Your legal teams reject the compromise the US cloud providers offer — data residency and audit rights — as unenforceable in practice, and five member states quietly condition their support on getting InvestAI loan guarantees first. The negotiation becomes about money rather than control.
+
+Then the money leaves. Investment in AI infrastructure retrenches globally; planned European data centres are cancelled outright; the private commitments underpinning your sovereignty package thin out. Frontier laboratories cut the size of their training runs and their capability keeps climbing anyway, more slowly, on efficiency alone.
+
+And a derivative of the newest frontier model is published in the open within weeks of its closed release, this one able to chain exploits without supervision. It spreads immediately through communities that iterate faster than any of your deadlines.

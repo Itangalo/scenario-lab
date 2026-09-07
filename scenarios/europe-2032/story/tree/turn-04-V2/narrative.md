@@ -2,14 +2,21 @@
 node: turn-04-V2
 turn: 4
 period: H1 2028
-block: V2
-status: drafted
+status: written
 prev: turn-03-V2
 next: turn-05-V2
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
+# Sovereignty in physical reality
 
-**Turn 4 (H1 2028).** The EU admits SCAP missed its turn-4 operational milestone, marks it finished without delivery, and pivots its commitment to energy-grounded 55.0 capacity by turn 6, launching Secure Energy-Backed Compute Sovereignty with 5GW ring-fenced power and €30bn reprofiled into microreactors and geothermal at Brittany and northern Sweden. The EAAD nears launch with mandatory pre-deployment certification and contested real-time logging, still blocked by Italy and Hungary. Another access denial hits hospitals and banks alongside investment collapse, a further capability jump, another safety breakthrough, visible labour displacement, renewed Taiwan tensions and a security-hawk turn. Credibility suffers from the missed deadline, sentiment sinks on job losses and protests, and resilience slips without a completed measure.
+They do it again, and this time it reaches the central banks as well as the hospitals. The denial of access is no longer a shock; it is a standing condition of your operating environment.
 
-Metrics: ai_capability 59.0, openweight 47.0, safety 37.0, resilience 34.0, sovereignty 17.0, capital 22.0, sentiment 26.0. Events: capability_jump, ai_investment_collapse, safety_breakthrough, labour_displacement, taiwan_tension_rise, eu_frontier_access_denied, campaign_security_hawk.
+And the money that was going to solve it disappears. Private AI investment collapses, the co-location plans unravel, and commercial compute expansion freezes. The acceleration programme was supposed to deliver sovereign capacity by now. It has not achieved operational status, and its legal and infrastructural foundations are both still unsecured. That deadline was yours, publicly, and you missed it.
+
+So you pivot to the thing underneath compute. Secure Energy-Backed Compute Sovereignty binds 5GW of low-carbon power to sovereign AI systems, physically and legally separated from the commercial grid, with Brittany and northern Sweden prioritised for nuclear microreactors and geothermal integration. Without guaranteed sovereign energy there is no sovereign compute, and after this year you can no longer outsource capacity to a market promise. Germany and Austria object that it distorts the energy market. ENTSO-E again refuses binding allocations without full intergovernmental agreement.
+
+The Assurance Directorate nears operational status and folds the interpretability breakthrough into mandatory pre-deployment certification for high-capability models — the first requirement you have written that the laboratories can actually satisfy and you can actually check. Real-time logging for critical infrastructure is proposed. Italy and Hungary go on blocking audit access, and enforcement stays weaker than the text.
+
+Autonomous code generation advances discontinuously; general capability rises more modestly. Better oversight does not close the distance. With nothing finished on resilience, an intrusion built on open models causes local service outages.
+
+Job losses mount in law, accounting and administration. The redress mechanism is reported as ineffective, protests over data centres intensify in rural regions, and the missed deadline costs you more credibility than the recalibration wins back.

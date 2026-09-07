@@ -2,14 +2,19 @@
 node: turn-03-V2
 turn: 3
 period: H2 2027
-block: V2
-status: drafted
+status: written
 prev: turn-02-V2
 next: turn-04-V2
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
+# A bandage, not a fix
 
-**Turn 3 (H2 2027).** The EU retunes its commitment to sovereign 60.0 systems with binding evaluation and monitoring, and executes SCAP as an emergency directive with champion designations, EIB funds, 8GW instructions and Gigafactory anchor zones, alongside an interim EAAD cell that fast-tracks a new interpretability breakthrough into certification. It also launches a small Emergency Accountability and Redress Mechanism with an ombudsman and €500m compensation fund after an automated-decision scandal, though Italy and Hungary block audits. Campaign backlash over moratoriums combines with the safety breakthrough, the scandal, and a UN global safety-standards push while capability rises 2.0 and municipal outages persist. Legitimacy fractures, capital falls sharply, and sovereignty keeps eroding.
+You press the acceleration programme anyway. Emergency powers are invoked, the champions designated, the national grid objections overridden. Germany's constitutional court agrees to hear a case on precisely that override. ENTSO-E still will not commit the 8GW without national ratification. The €50bn is politically guaranteed and not disbursed, and the Court of Auditors escalates its review. The programme is in motion and grounded in neither law nor infrastructure, which are the two places it needs to be.
 
-Metrics: ai_capability 58.0, openweight 46.0, safety 35.0, resilience 35.0, sovereignty 19.0, capital 30.0, sentiment 31.0. Events: campaign_backlash, safety_breakthrough, automated_decision_scandal, emergent_global_ai_safety_standards_push.
+Meanwhile a scandal breaks over automated decisions in public administration, and the fury is not manageable by explanation. You stand up an Emergency AI Accountability and Redress Mechanism: an ombudsman under the data protection supervisor, a rapid compensation fund, mandatory audits of every public-sector system above the threshold the mechanism defines. Audits begin in France and Spain. Italy and Hungary refuse access on national jurisdiction. The fund draws symbolic claims. Everyone can see it is a bandage, including you — the point of a bandage is that it is applied immediately.
+
+One real advance arrives. A breakthrough in interpretability makes certain model behaviours predictable and certifiable before deployment, for the first time. Your Directorate fast-tracks it into emergency regulation and the laboratories comply willingly, because a test they can pass is worth more to them than an argument they might lose.
+
+It does not close the gap. Capability rises again on autonomous code generation, which widens the distance between what systems do and what anyone can assure. And an intrusion built on open-weight models cascades through municipal services, because you still have no finished resilience measure and everyone attacking you knows it.
+
+Job losses accelerate. Data centre moratoriums gain real political traction. The accountability mechanism is read not as redress but as elite overreach, and five large programmes plus a scandal cost you more standing than one breakthrough and one proposal can return.

@@ -49,7 +49,10 @@ ARM_WORDS = re.compile(r"\b(Acceleration|Plateau)\b")
 ARM_NAMES = re.compile(r"\bVerification[- ]bound(?:ed)?\b", re.I)
 ARM_CONTEXT = re.compile(
     r"\b(arm|arms|world|worlds|branch|branches|trajector\w+|scenario|path|paths|"
-    r"variant|regime|timeline|track)\b", re.I)
+    r"variant|regime|timeline)\b", re.I)
+# An arm word inside a capitalised proper name is a measure, not the arm:
+# "AI Acceleration Zones", "Sovereign Compute Acceleration Programme".
+PROPER_NAME = re.compile(r"[A-Z][a-z]")
 ARM_WINDOW = 60
 
 # The reader lives in calendar time. "Turn 6" is a fact about the simulation,
@@ -271,6 +274,11 @@ def check_node(node_dir: Path, data: dict[str, Any], event_ids: set[str],
     for match in ARM_NAMES.finditer(body):
         problems.append(f"{name}: names the arm ({match.group(0)!r}) in reader text")
     for match in ARM_WORDS.finditer(body):
+        before = body[:match.start()].rstrip().split()[-1:] 
+        after = body[match.end():].lstrip().split()[:1]
+        neighbours = (before + after)
+        if any(PROPER_NAME.match(w) for w in neighbours):
+            continue
         lo = max(0, match.start() - ARM_WINDOW)
         window = body[lo:match.end() + ARM_WINDOW]
         if ARM_CONTEXT.search(window):

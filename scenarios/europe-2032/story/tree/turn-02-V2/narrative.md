@@ -2,14 +2,21 @@
 node: turn-02-V2
 turn: 2
 period: H1 2027
-block: V2
-status: drafted
+status: written
 prev: option-02-2
 next: turn-03-V2
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
+# Locked out
 
-**Turn 2 (H1 2027).** The EU rewrites its mandates and two-year commitment to accelerate sovereign compute and evaluation capacity in parallel with binding milestones by turn 4, triggered by being cut off from the leading model, and launches the Sovereign Compute Acceleration Programme for three national champions with €50bn, 8GW and Article 122 overrides. In practice SCAP stays proposed rather than enacted amid German constitutional objections, ENTSO-E refusal on grid, EIB and Court of Auditors funding blocks, and slow EAAD vetting and logging mandates. A major AI-optimised cyberattack disrupts three member states, autonomous code generation jumps, the access denial hits hospitals and agencies, and Taiwan tensions rise. Disunity and stalled action erode capital and sentiment despite shared threat recognition.
+They switch it off. The most capable model in the world — the one running in your hospitals, your research institutes, your critical agencies — stops being available to you, and the decision is taken somewhere you have no standing. Everything you built on top of it is suddenly someone else's to grant.
 
-Metrics: ai_capability 56.0, openweight 44.0, safety 28.0, resilience 36.0, sovereignty 21.0, capital 38.0, sentiment 37.0. Events: cyber_major_incident, capability_jump, taiwan_tension_rise, eu_frontier_access_denied.
+You go to emergency powers within days. Under Article 122 and the crisis clause of the market rules, you fast-track the Sovereign Compute Acceleration Programme: binding milestones, emergency funding, and override authority over permitting, energy allocation and procurement for designated national champions. Not competitiveness any more. Survival, and stated as such — without capacity that is live, usable and legally uncontested, every other thing in your portfolio rests on foreign permission.
+
+Then the Union does what the Union does. Three champions are identified and none designated, because the legal and intergovernmental disputes do not resolve. France and Sweden back acceleration. Germany raises constitutional objections to compulsory grid allocation and consensus stalls there. ENTSO-E declines to reserve 8GW without updated national energy plans, so the power sits in limbo. The €50bn you table through EIB issuance and redirected cohesion money runs into uncertainty about the bank's own mandate; Ireland and the Netherlands signal challenges; the Court of Auditors criticises the repurposing of recovery funds. The milestones are proposed. Nothing is enacted.
+
+Your Assurance Directorate begins staffing its evaluation cell, and the interest is real — CERN, the national cyber agencies. Actual deployment stalls on security vetting, cross-border clearance and competition for the same few hundred qualified people. Germany and Ireland resist the real-time logging mandates and warn about innovation flight.
+
+Underneath, a machine-optimised attack disrupts public services in three member states using zero-day tooling derived from leaked frontier models. Defences are overwhelmed and recovery is slow.
+
+The access denial is read at home as a humiliation and a self-inflicted wound at once. The press asks whether the Union can act coherently under pressure, which is a fair question this half-year.

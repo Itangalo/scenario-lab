@@ -2,14 +2,21 @@
 node: turn-03-V1
 turn: 3
 period: H2 2027
-block: V1
-status: drafted
+status: written
 prev: turn-02-V1
 next: turn-04-V1
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
+# A promise in the wind
 
-**Turn 3 (H2 2027).** The EU gets the Emergency Sovereign Compute Directive adopted on paper with 30% reserved, but ECJ challenges, stalled provider onboarding and only one preliminary EuroHPC approval mean no enforceable sovereign access yet. It launches Sovereign Compute Implementation Acceleration to materialise the law at anchor sites in Finland, France and Romania with EuroHPC, subsidised OVHcloud and Deutsche Telekom roles, and DMA-conditioned hyperscaler compliance. No events fire this turn while capability edges up on efficiency gains and underground exploit adaptation, safety slips further, and resilience gains only marginal detection improvements. Sovereignty stalls flat as capability decay offsets the in-flight bonus, and capital falls under overlapping charges.
+The Emergency Sovereign Compute Directive is adopted. On paper you now reserve thirty per cent of the frontier-class compute standing on your soil for public-critical use. In practice you have a legal framework, legal challenges, and no machines.
 
-Metrics: ai_capability 57.0, openweight 45.0, safety 25.0, resilience 41.0, sovereignty 22.0, capital 38.0, sentiment 37.0. Events: none.
+So you spend the half-year trying to make it real. The Sovereign Compute Implementation Acceleration fast-tracks deployment at three EuroHPC sites, aiming at enforceable public control within twelve months — audited access, and no remote override by a foreign provider. Finland moves fast and says so in terms of energy security. France stalls over grid integration. Romania runs into local opposition about the power draw. By the end of the year exactly one site has preliminary approval.
+
+The US hyperscalers take you to the Court of Justice over the liability shielding and the audit access, arguing that your operational control provisions discriminate. Market-access enforcement keeps them nominally compliant in the meantime, but the legal uncertainty does the work anyway: OVHcloud and Deutsche Telekom open negotiations and withhold final commitments until the Court speaks. A directive that has passed and cannot yet be used is a promise in the wind, and everyone dealing with you can see it.
+
+Capability keeps creeping. The investment slump has not stopped algorithmic refinement, and the models sustain longer autonomous chains of work in cyber and research. The open models advance more slowly, taking in the adapted exploit frameworks as modular tools rather than leaping.
+
+Nothing lands on the safety side at all. ENISA reports opaque coordination between systems in follow-up probes against industrial control networks — the same signature as before, now aimed at machinery rather than data. Detection protocols improve marginally. Structural hardening does not.
+
+You are running an ambitious, overlapping agenda, and it is costing you standing faster than it is delivering anything you can point at.
