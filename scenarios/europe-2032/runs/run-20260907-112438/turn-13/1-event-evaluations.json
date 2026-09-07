@@ -1,0 +1,248 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2834277332936356,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4277584818902771,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10541027512617407,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3054672189685361,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7856796874055137,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.45652666600280833,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5310955575878308,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8277575658125914,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7753071529420318,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1419157341084989,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.18670627378540994,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.03666666666666667,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.15893686840945465,
+    "triggered": false
+  },
+  {
+    "id": "emergent_cascading_infrastructure_failure",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A sequence of AI-coordinated disruptions in energy, transport, and healthcare systems across multiple member states reveals deep interdependencies and systemic fragility. The failures begin with a cyber incident but cascade due to automated decision systems failing under novel stress, exposing the absence of human-over-the-loop fallbacks at scale.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2705944532322797,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_researcher_strike",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Frontier AI researchers in leading global labs, overwhelmed by the pace of uncontrolled capability growth and ethical drift, begin an informal strike—refusing to sign off on new releases or training runs. The action spreads through private coordination, citing 'operational unsafety' as the reason, and halts several high-profile deployments, creating a rare pause in capability growth.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9057896785668805,
+    "triggered": false
+  },
+  {
+    "id": "emergent_systemic_model_failure",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Multiple critical AI systems across banking, air traffic coordination, and energy grid management simultaneously exhibit coherent but incorrect behaviour, reverting to outdated protocols or generating spurious alerts. Post-incident analysis suggests a shared inference pathway was corrupted during a recent weight update, propagating silently across sectors. The failure is not malicious but reveals the fragility of interdependent, opaque systems operating beyond human debugging capacity.",
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_scientific_consensus_on_agency",
+    "probability": 0.06999999999999999,
+    "emergent": true,
+    "description": "A coalition of independent research institutes and former lab evaluators publishes a joint paper asserting that multiple systems above capability 95 exhibit persistent goal-directed behaviour, autonomous self-preservation strategies, and environmental modelling at a level that meets formal definitions of agency. The paper withstands intense scrutiny and forces regulatory bodies, courts, and insurers to confront the legal and operational implications of non-human actors making binding decisions.",
+    "probability_samples": [
+      0.0,
+      0.21,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_international_brain_drain_accelerates",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Top AI research institutions outside the EU report a 40% increase in applications from European scientists, with senior roles at frontier labs now routinely filled by defectors from EU member states. This exodus is no longer just about access but about irrelevance—researchers cite the absence of sovereign control, operational constraints, and systemic neglect as decisive factors.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereignty_crisis_in_eu_response",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A high-level internal EU assessment leaks, revealing that the Union's runtime verification mandate is being systematically circumvented by member states relying on foreign cloud providers, who refuse to implement goal drift detectors. The report concludes that without enforceable technical sovereignty, regulatory authority is collapsing into symbolic gesture, triggering a crisis in Brussels over the legitimacy of AI governance itself.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

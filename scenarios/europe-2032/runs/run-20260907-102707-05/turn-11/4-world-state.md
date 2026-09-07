@@ -1,0 +1,13 @@
+### The Fractured Response
+
+The European Union declared a new strategic reality: governance without sovereign execution is meaningless. In response to the **emergent_sovereign_compute_alliance** and the ongoing exclusion from frontier AI, Brussels proposed the **Sovereign Inference Backbone Initiative**—a large, category 4 measure aimed at deploying a distributed network of inference clusters across Sweden, Austria, Greece, and Poland. Designed to run models up to capability 65.0 for critical public functions, it was put forward under emergency legal authority and entered the proposal phase.
+
+However, with **eu_political_capital** at 0.0, the Union lacked the capacity to assert central control. Two member states rejected the proposed service-level agreements, citing sovereignty concerns, and refused to fast-track grid approvals. The Mid-Term Review ratification of the emergency funding was deferred indefinitely due to budgetary resistance. No hardware was procured, no legal entity established, and no implementation began—consistent with the minimum two-turn horizon required for high-cost measures. The initiative remains in formal proposal, awaiting conditions for activation.
+
+The **Sovereign AI Behavioural Observatory** remains stalled in legal disputes, its integration with the Backbone now aspirational rather than operational. The **Emergency Compute Redundancy Initiative** advanced slowly, hindered by energy disputes and local opposition.
+
+### Capability Surge, Safety Frozen
+
+AI capability leapt to 92.5, driven by self-improving validation loops now dominant in engineering and policy design. Open-weight models advanced to 69.0, reflecting gradual catch-up through diffusion of existing tooling and local adaptation—consistent with prior trends and the absence of new open-weight measures or safety breakthroughs. The 3.0-point gain aligns with typical open-weight progression given the closed frontier’s rise, but no leap occurred, as no suppressed capability was released or new infrastructure deployed.
+
+No safety progress occurred; **ai_safety** remained at 3.0, with no measure completed and no verification regime in place. Resilience dipped to 44.0 as fragmented systems failed stress tests. Public sentiment fell to 18.0, pressured by visible job losses in legal and administrative sectors and growing frustration over stalled infrastructure. The shadow compute alliance grew in influence, symbolizing a deeper fracture: Europe was building power, but not together.

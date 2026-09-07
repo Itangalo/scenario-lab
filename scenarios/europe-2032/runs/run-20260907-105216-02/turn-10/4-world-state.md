@@ -1,0 +1,17 @@
+### The Denial That Changed Everything
+
+In early 2031, the European Union was abruptly locked out of the world’s most advanced AI model. Hospitals lost diagnostic support, ministries faced operational paralysis, and firms scrambled to reconfigure pipelines. No explanation came—only silence. The incident, widely reported as a sudden access cutoff affecting public and private sectors alike, crystallized a decade of strategic drift into a single, undeniable failure.
+
+The **Sovereign AI Sentinel Nodes**, deployed across Jülich, CINECA, Prague, and Bologna, were declared operational—delivering real-time telemetry on AI behaviour, though patchy national integration limited cross-border coordination. This completion marked a rare institutional win. With the measure now in flight, its portfolio charge of −3 remains active, reflecting ongoing operational and coordination costs.
+
+In response to the crisis, the European Commission proposed the **Emergency Compute Redundancy Initiative**, a high-cost €900 million plan to build hardened, distributed fallback clusters across Finland, Luxembourg, and Bulgaria. Drawing on stalled commercial sites, the proposal includes emergency grid and spectrum provisions to repurpose existing infrastructure. These clusters are intended to run certified models up to capability 65.0, ensuring continuity in health, energy, and border management during future disruptions.
+
+Funding negotiations are ongoing, but intergovernmental consensus has solidified enough for the measure to enter formal preparation. As such, it is now recorded in the portfolio with an initial charge of −3, reflecting staffing, planning, and political bandwidth costs even before construction begins. Full deployment will take at least two full turns; no physical work has started, and no capacity is yet online.
+
+Political capital declined to −7.0 due to the ongoing burden of the **Sovereign AI Sentinel Nodes** (−3), the persistent cost of the **Mandatory Open-Weight Risk Labelling** (−2), the new **Emergency Compute Redundancy Initiative** (−3), and the priority penalty (−1) from maintaining focus on the Sentinel Nodes. The total portfolio charge is now −9, but a proposal bonus of +2 is applied: while the initiative is not yet implemented, the systemic shock of the access denial created exceptional political conditions that granted partial recognition for rapid response. This bonus partially offsets the charges, resulting in a net change of −7.0.
+
+Public sentiment remained stagnant at 20.0—no visible benefit had yet landed, and resentment over AI dependency deepened.
+
+Resilience inched up by 1.0 due to partial gains from the now-operational Sentinel Nodes, though full effects await broader integration. Sovereignty rose to 20.0: secured access via the Sentinel Nodes provided a +2 event benefit, and the formal launch of the Emergency Compute Redundancy Initiative contributed +1 under metric rule 5 (measure contribution upon entry to portfolio), while rising AI capability (now 89.5, entering the terminal zone) imposed a decay of −1. Openweight capability increased modestly to 64.5, reflecting continued—but bounded—diffusion of techniques from frontier models into open ecosystems. The gap to frontier capability remains at 25.0, consistent with constitutional constraints preventing overtaking or abnormal narrowing. AI capability itself surged to 89.5, as self-improvement cycles now outpace measurement.
+
+Europe is no longer blind. But it is still catching up—and its institutions remain behind the curve.

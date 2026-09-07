@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 64.0 to 76.0 (a rise of 12.0 points), but `ai_capability` only increased by 7.0 (from 81.0 to 88.0). The openweight metric must never exceed `ai_capability`, and its growth must be bounded by the pace of `ai_capability` accumulation. A jump of 12.0 in openweight capability without a corresponding or greater increase in `ai_capability` violates the rule that `openweight_capability` cannot outpace `ai_capability` and suggests retroactive capability gain not justified by the narrative (which describes no breakthrough in open models, only in frontier systems). The narrative attributes the capability jump to a *closed* lab, yet openweight rises disproportionately—this breaks the accumulation invariant.\n- Modelling choice 5 violated: The narrative references four large measures in flight (\"Four large measures are in flight, including the new priority\") and explicitly introduces the **Emergency Replication Mandate** as a new measure while also indicating the **Replication Foundry Initiative**, **Sovereign Inference Backbone**, and **Institutional Integrity Audit** as active. However, constitutional rule 5 limits the EU to at most one new measure per turn and at most one named priority. Introducing multiple major initiatives without phasing or justification violates the scope limit on measure proliferation.\n- Narrative telegraphs future events: The mention of `emergent_european_ai_commons` and `bio_uplift_findings` in the notepad is acceptable, but the narrative implies the bio gate is \"open for the next 3 turns\" — this forecasts a probability and telegraphs a future event window, violating Modelling choice 8 (**The narrative must not telegraph**). While the gate state belongs in event evaluations, stating or implying a time-limited window for a future event (e.g., \"opens the bio gate for the next 3 turns\") is predictive and forbidden."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

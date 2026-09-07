@@ -1,0 +1,15 @@
+No statement changes.
+
+## Portfolio
+- `Sovereign Evaluation Regime for High-Capability Systems` (category 1, costs 3 per turn, started turn 11, finishes on turn 13): Establish independent, pre-deployment evaluation of any AI system above 65.0 capability threshold, with authority to delay or condition deployment based on demonstrated control, security, and misuse risks — **in flight**.
+
+## New measure
+None this turn. We are awaiting early operational feedback from the evaluation centres in Paris, Eindhoven, and Warsaw, and assessing whether the regime is preventing incidents or merely adding friction, before expanding oversight architecture or introducing new binding requirements.
+
+## Priority
+**Sovereign Evaluation Regime for High-Capability Systems** — because with AI capability now at 70.5 and open-weight models at 58.0, autonomous systems are operating in legally and medically sensitive domains without proven control, and the regime is our only instrument capable of grounding sovereign authority in the actual behaviour of frontier models before a catastrophic failure occurs.
+
+## In practice
+This turn, we operationalise the Sovereign Evaluation Regime through binding delegated acts under Article 12a of the AI Act, with the European AI Office launching its High-Capability Systems Unit to coordinate pre-deployment evaluations. €220 million from the Digital Europe Programme is disbursed to activate secure enclaves and red-teaming units in the three new evaluation centres, with staffing prioritised for experts in agentic behaviour, formal verification, and adversarial probing. Test suites for goal drift and weight integrity are under development, and we are integrating telemetry hooks that will allow limited runtime validation without violating developer IP — a compromise designed to satisfy both security concerns and innovation incentives.
+
+Legal resistance from U.S.-based developers persists, particularly around access to training logs and model weights. To counter this, we are offering fast-track evaluation lanes and early risk feedback to labs that voluntarily submit to deeper scrutiny, reframing the regime as a service that enhances market access rather than merely restricting it. Poland continues to push for stronger enforcement, especially real-time monitoring; we have responded with the sunset clause on runtime observability, tying future escalation to incident outcomes. Hungary remains outside the regime, relying on U.S. hyperscalers, but we are containing the risk by restricting unevaluated agents from accessing EU financial infrastructure. Joint hearings between the Internal Market and Civil Liberties committees are scheduled for October to align oversight mandates and close jurisdictional gaps. This is not about slowing AI — it is about ensuring that when AI acts in our name, it does so under rules we can enforce.

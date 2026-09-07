@@ -1,0 +1,192 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.06283486955549522,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3896544763551435,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.19999999999999998,
+    "probability_samples": [
+      0.08,
+      0.44,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7715396029452011,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.46213975674122054,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.17666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11843669808067225,
+    "triggered": true
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.1366666666666667,
+    "probability_samples": [
+      0.17,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.46788348755175835,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.01822855696159298,
+    "triggered": true
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.13,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6214744582798584,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5480550884692943,
+    "triggered": false
+  },
+  {
+    "id": "emergent_limited_cyber_cooperation",
+    "probability": 0.14666666666666667,
+    "emergent": true,
+    "description": "A joint cyber command with real-time telemetry sharing is activated following recent attacks, but the Union's access remains conditional and limited. Trust remains fragile, and full integration is delayed pending further demonstrations of reliability.",
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9326218751690796,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.059542938092297604,
+    "triggered": false
+  },
+  {
+    "description": "Local moratoriums on data centres spread to eight member states, coordinated through shared legal templates. Grid stability concerns are cited, but energy ministers privately admit political pressure is mounting.",
+    "emergent": true,
+    "id": "emergent_local_energy_backlash",
+    "probability": 0.13333333333333333,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.15
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6839257008821146,
+    "triggered": false
+  },
+  {
+    "description": "The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.",
+    "emergent": true,
+    "id": "emergent_open_bioscience_breakthrough",
+    "probability": 0.06,
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_bioscience_breakrupt",
+    "probability": 0.03333333333333333,
+    "emergent": true,
+    "description": "The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

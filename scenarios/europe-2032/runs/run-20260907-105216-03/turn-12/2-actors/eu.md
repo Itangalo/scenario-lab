@@ -1,0 +1,33 @@
+## Statement changes
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but now, we must also accept that acting without sovereign capacity risks not only error, but irrelevance. Our decisions must be executable, not just declared.  
+- Grounds: The **cyber_major_incident** and **capability_jump** this turn have demonstrated that even correct assessments, made in time, cannot be acted upon when execution depends on external infrastructure or permission. The Emergency Compute Redundancy Initiative remains unfinished, and the Sovereign Inference Corridor unlaunched. We are still sensing in the dark, still pleading for access, still unable to respond at machine speed. This revision acknowledges that the cost of being wrong is now less than the cost of being powerless. To act under uncertainty now means acting *sovereignly*, even if imperfectly.
+
+- modify `two_year_commitment` (commitment): Anchor EU decision-making in real-time, sovereign sensing of AI behaviour and capability shifts, to enable timely governance and prevent strategic surprise — and now, extend that awareness into sovereign execution capacity, so that observation is paired with action under our own authority  
+- Grounds: No triggering development this turn — this commitment remains valid and urgent. However, it is clear that its current formulation no longer reflects the full scope of what we are doing. We are no longer merely extending awareness into action — we are rebuilding the very substrate of agency. The commitment stands, but its weight has grown: it now encompasses not just situational awareness, but the physical and legal infrastructure to *do* something about it. No change in calculus, only in clarity.
+
+- modify `no_single_point_of_failure` (position): No critical AI dependency—technical, infrastructural, or informational—will be allowed to rest on a single foreign provider or unaccountable private entity; we now treat any such dependency as an active vulnerability requiring immediate mitigation, not merely a risk to be managed over time — and we now define *any system that mediates access to essential public services* as critical, regardless of current performance or redundancy claims  
+- Grounds: The AI benefits scandal in Sweden and the **cyber_major_incident** have proven that even systems deemed “non-critical” or “assisted” become single points of failure when they gatekeep healthcare, welfare, or emergency response. The position tightens: we no longer wait for collapse to define risk. If a system can deny a citizen their rights or a city its services, it is critical — and must be backed by sovereign fallback *now*, not in the next budget cycle.
+
+## Portfolio
+- `Sovereign AI Behavioural Observatory (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context` — **finished this turn**
+- `Emergency Compute Redundancy Initiative (category 4, costs 3 per turn, started turn 11, finishes on turn 13): Establish geographically distributed, EU-operated fallback clusters capable of running critical sovereign models if external frontier access is disrupted, using hardened infrastructure and pre-staged weights from open and licensed sources`
+
+## New measure
+**Sovereign Execution Nodes**  
+Deploy and harden a network of autonomous inference sites across three EuroHPC locations, each capable of running emergency public services, cyber countermeasures, and model rollbacks without external connectivity or approval.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` +10 to eu_ai_sovereignty by creating physically and legally insulated execution points; +5 to resilience by enabling continuity of essential AI-mediated services during denial or attack; begins to close the gap between detection, decision, and action  
+`Applies to:` EuroHPC sites in Kajaani, Sofia, and Bologna; national crisis-response agencies; Joint Research Centre
+
+## Priority
+**Emergency Compute Redundancy Initiative** — because without operational clusters, even the most advanced observatory and the most urgent execution mandate are useless, and because this measure is the only one that still has a chance to deliver physical fallback before the next disruption cuts off access entirely.
+
+## In practice
+We are out of time for consultation. The Emergency Compute Redundancy Initiative is now being enforced under Article 172 TFEU and the Crisis Competence Protocol, with the Commission instructing national regulators to override local objections on energy allocation and microwave backhaul deployment. Finland has agreed to prioritise Kajaani’s grid connection in exchange for guaranteed compute quotas during energy shortages. In Bulgaria, we are bypassing stalled negotiations by repurposing a decommissioned military site near Sofia under EuroHPC’s emergency mandate — legal cover is being provided by a fast-tracked opinion from the Court of Justice’s emergency chamber. Luxembourg’s node will run on secured hydrogen backup, funded through the Innovation Fund, to ensure independence from regional grid instability.
+
+The Sovereign AI Behavioural Observatory, now finished, has delivered its core telemetry stack — but full data sharing remains incomplete. Paris and Warsaw still withhold real-time logs, citing national security. We are responding with conditionality: access to the Emergency Compute Redundancy clusters will be suspended for any member state that does not contribute full telemetry within 30 days. This is not coercion — it is reciprocity. You cannot opt out of risk-sharing and still demand protection.
+
+The new Sovereign Execution Nodes will take the Observatory’s alerts and the Corridor’s triggers and *act* — autonomously, legally, and without delay. Legal design is underway in the AI Office, with binding protocols to ensure that only verified, high-confidence threats activate rollbacks or emergency triage. These nodes will not host frontier models — they will run hardened, static versions of public systems up to capability 65.0, pre-audited and legally insulated. This is not about competing with the frontier. It is about ensuring that when the next attack lands — and it will — Europe does not spend the first 72 hours negotiating with itself while its systems burn.

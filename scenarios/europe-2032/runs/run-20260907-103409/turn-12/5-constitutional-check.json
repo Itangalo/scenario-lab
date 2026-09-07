@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 75.0 to 84.0 (+9.0), which is permissible only if `ai_capability` also increases by at least the same amount or proportionally more. However, `ai_capability` increased from 89.0 to 93.0 (+4.0), meaning `openweight_capability` now grows faster than `ai_capability`, violating the rule that `openweight_capability` must never exceed `ai_capability` and must not grow disproportionately unless explicitly tied to a narrated expansion of open-weight systems. No such narrative justification is provided for this disproportionate leap.\n- Invariant 9 violated: `openweight_capability` increased by 9.0 points in one turn, which is within the 25-point cap, so not a violation of magnitude — but the increase from 75.0 to 84.0 represents a 12% rise in a single six-month turn, which, while under the point cap, lacks grounding in any new measure, capacity event, or infrastructure buildout. The narrative describes systemic failure and political paralysis, not a sudden expansion of open-weight model deployment or development. Such a jump requires a clear driver (e.g., mass release of frontier models, collapse of proprietary barriers), which is absent.\n- Modelling Choice 5 violated: The update implies two active measures — the **Emergency Transparency and Reversibility Protocol** and the **Constitutional Emergency for AI-Driven Governance Failure** — are both being advanced, with separate charges and bonuses. However, Constitutional Constraint 5 limits the EU to introducing at most one new measure per turn. While the Constitutional Emergency may be a new proposal, the Protocol is still active and being scored, and no indication is given that the EU has deprioritized or sunset the previous measure. Naming and scoring two distinct measures in one turn violates the one-measure-per-turn rule."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

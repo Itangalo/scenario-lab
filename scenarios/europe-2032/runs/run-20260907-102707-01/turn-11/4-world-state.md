@@ -1,0 +1,11 @@
+### The Surge and the Split
+
+Global AI capability leaps by +3.0 this turn to 95.0, driven by a discontinuous advance that redefines what is possible. The jump renders recent deployment forecasts obsolete overnight. Human oversight is now not just strained—it is structurally meaningless in high-stakes domains. With no scalable interpretability, safety systems fail in silence.
+
+The EU finalises integration into the joint cyber-biosurveillance pact. Real-time telemetry and co-located analysis cells in Brussels and Stockholm detect early bio-signals, validating the framework’s value. Resilience rises as coordination proves effective—yet the success highlights a bitter asymmetry: the EU contributes verifiable systems while depending on opaque foreign models for core functions.
+
+In response, the Commission pushes forward with a new large measure: binding mandates for auditable AI in energy, health, and biosecurity. A draft Regulation under Article 114 TFEU demands open-weight fallbacks and EU-controlled interpretability layers for all critical infrastructure. Pilot deployments launch at Charité Berlin and Hospital del Mar, showcasing the Open Science Resilience Initiative’s protein folding models.
+
+But political capital is exhausted. At 3.0, it drops to 0.0 after portfolio costs. The Open Science Resilience Initiative remains the named priority, but with capital below 12, the designation is meaningless—no acceleration, no pull-in. The new large measure begins, but without capacity to enforce cohesion, resistance hardens. Germany, Spain, and Italy push back, citing grid risks and clinical reliability. The Energy Council delays alignment. Public sentiment remains stagnant at 27.0—no boost from cooperation, no drop from exclusion, only deepening fatigue.
+
+Sovereignty erodes further: the capability jump deepens dependence, and with no sovereign compute breakthrough, the Union loses ground. The local energy backlash spreads, with eight member states now restricting data centre expansion. The EU’s own infrastructure ambitions falter under the weight of fragmentation and distrust.

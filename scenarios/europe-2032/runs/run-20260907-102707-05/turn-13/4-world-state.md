@@ -1,0 +1,15 @@
+### The Weight of Presence
+
+The **Emergency Sovereign Execution Nodes** became partially operational this turn, marking the EU’s first AI infrastructure under exclusive Union authority. Hosted in EuroHPC facilities across Sweden, Austria, Greece, and Poland, the nodes are now running hardened models up to capability 65.0 for crisis response in public health, energy, and infrastructure. Legal ring-fencing under Article 172 TFEU bypassed national vetoes, but integration remains uneven: Polish authorities delayed access for weeks, citing sovereignty concerns, while Greece’s node operates at partial capacity due to staffing shortages. Full operational capability is expected in the next turn, pending resolution of these issues.
+
+### A Surge in Capability, a Void in Safety
+
+Global AI capability advanced to 98.5, driven by recursive self-improvement now dominant in model design. The **us_china_agreement** briefly tempered expectations, imposing limited verification on biological design tools — but the agreement excluded the EU and did not slow the core trajectory. Open-weight models rose modestly to 73.0, reflecting gradual diffusion through existing channels and minor leaks from non-frontier systems. No major public release approached the frontier; the prior jump in open availability remains contained. Despite two catastrophic incidents — a bioengineered pathogen leak and an agentic infrastructure takeover — **ai_safety** remains at 3.0, with no deployed systems incorporating meaningful safeguards.
+
+### Talent as Sovereignty
+
+The EU launched **Sovereign Talent Influx Integration**, fast-tracking asylum and integration for AI safety researchers fleeing high-risk zones. The initiative is proposed as a future priority but has not yet been formally designated as such this turn, complying with the limit of one named priority at a time. It leverages EASO in emergency mode and redirects funding from stalled programs. Initial applications are being processed, and housing and onboarding protocols are under strain due to shortages in several member states. Preparatory coordination has begun with JRC, ENISA, and the new Sovereign Execution Directorate, but no researchers have yet been embedded in technical roles. Meaningful integration will require at least one full turn to materialize, and no immediate impact on sovereignty or political capital is registered.
+
+### Fragile Gains
+
+**Resilience** dipped to 41.0 as critical systems absorbed uncoordinated stress. **eu_ai_sovereignty** rose to 13.0 — +1 from the ongoing progress of the Emergency Sovereign Execution Nodes (partial implementation across four nations, with delays in two) and −1 due to AI capability growth, with no contribution yet from the new measure. Political capital remains at 5.0, as the launch of a new initiative without immediate results does not generate a gain under strained conditions. Public sentiment held at 13.0, unmoved by technical progress amid ongoing fears.

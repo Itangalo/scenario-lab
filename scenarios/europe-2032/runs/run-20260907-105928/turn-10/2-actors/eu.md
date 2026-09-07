@@ -1,0 +1,36 @@
+## Statement changes
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing  
+- Grounds: The **eu_frontier_access_denied** event crystallises the divergence between our two mandates. Preventing lasting harm requires restraint, verification, and resilience—but maintaining self-determination now demands the capacity to act without permission. We are no longer balancing two goals; we are defending a right to agency that has just been revoked. This identity must now carry the weight of that contradiction: we will not sacrifice safety for sovereignty, but we will no longer accept that sovereignty must wait for permission.
+
+- modify `act_under_uncertainty` (commitment): We will act before the picture is clear, but only on the basis of sovereign sensing and interpretation we control  
+- Grounds: The **emergent_synthetic_leaks_wave** and the collapse of transatlantic access prove that acting under uncertainty without sovereign intelligence is indistinguishable from reacting blindly. Our previous commitment to act despite uncertainty was sound—but it has been overtaken by a deeper failure: we do not own the sensors, the analysis, or the infrastructure on which our decisions depend. This recalibration binds us to act early, but only on intelligence we generate ourselves. That is the price of agency in a world where truth is weaponised.
+
+- retire `two_year_commitment`  
+- Grounds: The two-year commitment to *secure sovereign AI situational awareness* formally concludes this turn. While the goal remains urgent, the commitment as stated has run its course. The **Sovereign AI Sentinel Nodes** are finishing, and the **Sovereign AI Behavioural Observatory** is launching—both core components of that agenda. We now shift from establishing awareness as a precondition to *exercising* it as a strategic capability. A new two-year direction must emerge from what we now see.
+
+- add `new_two_year_commitment` (commitment): Build sovereign capacity to detect, interpret, and counter AI-driven strategic deception as the foundation of both resilience and self-determination  
+- Grounds: The **emergent_synthetic_leaks_wave** and the **verification_widens** shift reveal that the dominant threat is no longer raw capability, but the erosion of shared reality. We are not being outpaced only in compute—we are being outmanoeuvred in narrative, attribution, and trust. This commitment focuses our next two years on closing that gap: not just seeing AI activity, but understanding its intent, provenance, and impact, so that we can act with confidence, not just speed.
+
+## Portfolio
+- `Sovereign AI Sentinel Nodes (category 5, costs 3 per turn, started turn 8, finishes on turn 10): Deploy a network of autonomous, EU-controlled monitoring and containment agents trained to detect, isolate, and counter unauthorised AI self-modification, model leakage, and unauthorised compute use across critical infrastructure and research environments` — **finished this turn**  
+- `Sovereign AI Behavioural Observatory (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context`
+
+## New measure
+**Counter-Deception Rapid Response Corps**  
+A deployable EU task force equipped with forensic AI analysis tools, diplomatic coordination protocols, and emergency communication authority to detect, attribute, and neutralise AI-generated synthetic crises within 72 hours of emergence.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 13`  
+`Targeted effect:` +8 to resilience by reducing the political and institutional damage from synthetic leaks and deepfake crises; +3 to ai_safety by creating a feedback loop between incident response and behavioural monitoring; enables faster restoration of public trust during acute events  
+`Applies to:` EU institutions, member states, national broadcasters, electoral commissions, and critical diplomatic channels
+
+## Priority
+**Sovereign AI Behavioural Observatory** — because it is the only measure that turns raw telemetry into strategic understanding, and without it, both the finished Sentinel Nodes and the new Counter-Deception Corps will lack the context they need to act with precision. The denial of frontier access proves we cannot rely on external intelligence; this Observatory is now the cornerstone of our cognitive sovereignty.
+
+## In practice
+We are completing the deployment of the **Sovereign AI Sentinel Nodes** at Jülich, CINECA, and the newly integrated sites in Prague and Bologna. The European High-Performance Computing Joint Undertaking has finalised node integration into energy grid control systems and central bank infrastructure, with telemetry now flowing into a newly activated EU AI Situational Awareness Hub hosted by ENISA. Two member states delayed full access due to national security reservations, but bilateral side letters—brokered by the Commission’s Crisis Diplomacy Unit—have established joint alert protocols with national CERTs, ensuring data is shared without compromising sovereignty. These nodes are now operational and will continue to run as a permanent layer of technical monitoring, even as their capital cost ends this turn.
+
+Simultaneously, we are standing up the **Sovereign AI Behavioural Observatory** under the Joint Research Centre, with physical hubs in Seville, Stockholm, and Bucharest. We have fast-tracked recruitment of 85 specialists through the EU AI Talent Corridor, drawing from Ukraine, South Korea, and neutral European states, with security clearances expedited under a new Article 114 TFEU emergency clause. Funding is secured through a €420 million reallocation from Horizon Europe’s crisis innovation window and a provisional line in the MFF, pending Mid-Term Review approval. The Observatory will begin red-teaming live public services by turn 11, using Sentinel Node data to train attribution models for synthetic media and planning anomalies. It will report directly to the Commission’s Crisis Response Committee, ensuring its findings inform both operational response and legislative adaptation.
+
+The **Counter-Deception Rapid Response Corps** launches this turn as a direct operational arm of the Observatory. Hosted jointly by the EEAS and Europol, it will deploy multidisciplinary teams—forensic analysts, media integrity experts, and crisis diplomats—to member states facing AI-driven disinformation crises. Initial training and tooling will be based on lessons from the German election postponement, with simulation exercises scheduled for July 2031 in coordination with national electoral bodies. The Corps will operate under a new legal basis derived from Article 4(2) TEU and the NIS2 Directive, granting it emergency access to broadcast channels and social media takedown coordination. This is not a propaganda unit—it is a truth-stabilisation force, designed to restore decision-space in real time, not after the fact.

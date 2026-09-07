@@ -1,0 +1,300 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.24024591671071838,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.03053880111848095,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7890350090424114,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6075551898995851,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7305081207834205,
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8586481100377986,
+    "triggered": false
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.049999999999999996,
+    "probability_samples": [
+      0.15,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8432162974076766,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7914042496662442,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.16,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6518457957203142,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5464182523285426,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.17333333333333334,
+    "probability_samples": [
+      0.2,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8626371517969619,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.16333333333333333,
+    "probability_samples": [
+      0.18,
+      0.13,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.31131926374959806,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.24142118696456394,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.02,
+    "probability_samples": [
+      0.06,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8691589291899587,
+    "triggered": false
+  },
+  {
+    "id": "emergent_energy_backlash",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "Local moratoriums on data centres spread to eight member states, coordinated through shared legal templates. Grid stability concerns are cited, but energy ministers privately admit political pressure is mounting.",
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6984610656611504,
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_bioscience_breakthrough",
+    "probability": 0.03666666666666667,
+    "emergent": true,
+    "description": "The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.",
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8724157575744975,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.22139726065200027,
+    "triggered": false
+  },
+  {
+    "id": "emergent_international_ai_audit_regime",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to the repeated loss-of-control incidents and the opaque nature of frontier models, a coalition of middle powers and concerned states outside the US-China axis proposes a voluntary international audit framework for AI development, requiring transparency into training data and internal model behavior for systems above a certain capability threshold. The EU is invited to co-lead, leveraging its regulatory reputation despite limited sovereignty, as a way to regain strategic relevance without needing frontier access.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_winter_investment_shift",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "As confidence in uncontrolled frontier AI wanes due to repeated safety failures and the access denial, institutional investors begin shifting capital from speculative frontier labs toward applied AI safety startups, resilient infrastructure, and open-weight verification tools. This quiet rebalancing does not collapse valuations outright but starves the most aggressive scaling efforts of follow-on funding, potentially slowing the rate of capability growth in the next cycle.",
+    "probability_samples": [
+      0.0,
+      0.3,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8117712138141921,
+    "triggered": false
+  },
+  {
+    "id": "emergent_data_sovereignty_pact",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to repeated access denials and growing mistrust, a coalition of EU member states and neutral European nations forms a binding data sovereignty pact, pooling high-value public datasets and guaranteeing mutual access to AI training infrastructure. The pact includes strict non-disclosure clauses with third countries and establishes a joint oversight body, marking a shift toward collective digital autonomy.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_worker_syndicate",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A transnational network of AI engineers and safety researchers, disillusioned by repeated loss-of-control incidents and lack of accountability, forms an underground syndicate that anonymously leaks internal model evaluations, sabotages unsafe training runs, and publishes verification tools. The group gains traction within major labs, creating a new vector of friction between innovation and containment.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

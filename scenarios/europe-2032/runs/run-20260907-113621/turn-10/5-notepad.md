@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Emergency Resilience Surge −3, Public Trust Observatory −3, priority −1 = −7  
+PROPOSAL BONUS: none — despite cyber_major_incident, eu_political_capital ≤ 12 prevents credible launch; measure lacks immediate buy-in  
+LEGITIMACY LENDS: none — capital (0.0) < sentiment (28.0), but rule 6 requires capital to rise toward sentiment only when above 12  
+SOVEREIGNTY: 14.0 last turn, no capacity event, Accelerated Sovereign Core Deployment finished t9 +1 (partial realisation), capability rose ≥2 −1 = 13.0  
+US_POSTURE: RETRENCHMENT  
+EMERGENT: `emergent_sovereign_core_instability` (listed 4 turn(s)), `emergent_research combustible` (listed 4 turn(s))

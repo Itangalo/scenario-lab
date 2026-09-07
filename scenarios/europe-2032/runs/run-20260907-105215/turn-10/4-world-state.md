@@ -1,0 +1,13 @@
+### The Denial That Changed Nothing
+
+The Union was cut off from the leading AI model with no warning. Hospitals lost diagnostic support, ministries their forecasting tools, and firms their development pipelines—overnight. The incident confirmed what many had feared: Europe’s critical functions rest on foreign systems that can vanish at will. In response, the EU declared a strategic shift, launching the **Emergency Compute Redundancy Initiative** to build fallback clusters in Finland, Luxembourg, and Bulgaria. These sites, repurposed from stalled commercial projects, aim to run certified models up to capability 65.0 during disruptions.
+
+Yet the political system remains broken. With `eu_political_capital` at 0.0, governance is paralysed. The new initiative enters the portfolio as a large measure, but its effects are distant. No part-bonus applies this turn—it is too early. The named priority changes nothing: at capital 0, priorities carry no force. Funding relies on emergency reallocations and unratified MFF lines, leaving execution fragile.
+
+The **Sovereign AI Sentinel Nodes**, now complete, feed telemetry into the still-delayed Behavioural Observatory. But without secure compute to act upon warnings, their value is theoretical. Public sentiment holds at 20.0—no benefit has yet landed. Disinformation storms continue, overwhelming national units.
+
+Meanwhile, global AI capability leaps forward by +4.0 to 89.5. Automated validation now spans engineering, law, and logistics, accelerating self-improvement beyond measurable horizons. Open-weight models rise to 67.5, benefiting from compressed derivatives of frontier techniques through inference leaks and tooling exposure. This reflects a moderate diffusion rate consistent with historical trends—now accelerating slightly due to increased transparency pressure, but still lagging the frontier by over 22 points. The gap narrows, but not abruptly: open-weight progress remains bounded by implementation lags and integration costs.
+
+With `ai_capability` rising over 2 and no safety progress, `ai_safety` remains stagnant at 8.0. Resilience dips to 46.0—capability grew, and no category 6 measure finished. Sovereignty falls to 15.0: despite starting redundancy, the immediate denial event costs −2 under rule 5, and capability growth takes another −1. There is no offsetting gain—construction has not finished.
+
+Europe sees the cliff. But it cannot move.

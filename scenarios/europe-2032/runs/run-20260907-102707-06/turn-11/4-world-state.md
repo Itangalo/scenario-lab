@@ -1,0 +1,11 @@
+### A Shifting Frontier
+
+Global AI capability advances to 94.0, driven by continued training runs despite the investment collapse. The slowdown in private capital has not halted progress—only redirected it. Frontier labs consolidate around fewer, more efficient models, maintaining momentum even as valuations crater. The safety breakthrough, however, marks a rare inflection: for the first time in years, deployed systems gain interpretable reasoning pathways, allowing limited but meaningful oversight. This lifts global ai_safety to 5.0, though assurance remains fragile and unevenly applied.
+
+The EU seizes the moment. With private compute capacity suddenly available at fire-sale terms, Brussels launches the Emergency Sovereign Compute Mobilisation (ESCM), a large category 4 measure aimed at building three sovereign AI clusters in Finland, France, and Greece. Funded through emergency mechanisms and REPowerEU carryover, the plan fast-tracks public ownership of stranded H100s and idle fabrication lines. EuroHPC JU is re-mandated to prioritise open, auditable architectures aligned with the new interpretability standards.
+
+Yet political headroom is vanishing. Member states with deep hyperscaler ties resist waiving permits, demanding disproportionate access in return. Germany and the Netherlands stall, citing legal uncertainty over EU-level expropriation of strategic assets. The Commission pushes ESCM as the priority, but with eu_political_capital at just 5.0, even emergency powers strain legitimacy. The measure starts, but slowly—site selection delayed, procurement contested.
+
+Resilience holds at 50.0. While the Open Science Resilience Initiative reaches full tempo, delivering auditable models to biosecurity agencies, systemic fragility remains. Public sentiment, unmoved by technical gains, stays at 27.0—sceptical, anxious, and unimpressed by promises of sovereignty.
+
+Sovereignty dips to 20.0. Despite the new build, the ai_capability rise of 2.0 triggers a −1 decay, and no immediate capacity is secured. The investment collapse, while creating opportunity, also strips leverage: the EU is not yet positioned to absorb the stranded resources at scale. The window is open, but the machinery to seize it is still assembling.

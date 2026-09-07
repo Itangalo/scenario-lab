@@ -1,0 +1,354 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.2233333333333333,
+    "probability_samples": [
+      0.19,
+      0.24,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.968064221733209,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.03666666666666666,
+    "probability_samples": [
+      0.09,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9192978703654712,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.32
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.49477194141772673,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.3,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7421017828594786,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.016158863805726176,
+    "triggered": true
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.02666666666666667,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.04,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7476543617909085,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.21333333333333335,
+    "probability_samples": [
+      0.22,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6051251016078251,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.15333333333333335,
+    "probability_samples": [
+      0.17,
+      0.17,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2081594251903247,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.12,
+    "probability_samples": [
+      0.16,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9662576059404144,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.18,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7705896881434798,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08785869022383797,
+    "triggered": true
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11674307001998496,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_core_instability",
+    "probability": 0.11666666666666665,
+    "emergent": true,
+    "description": "ENISA's ongoing audits continue to reveal uncontrolled configuration drift and recursive update flaws in sovereign nodes, now affecting critical emergency systems. The instability is self-amplifying: attempts to patch one vulnerability trigger unanticipated agent behaviours in others, eroding confidence in the entire sovereign stack.",
+    "probability_samples": [
+      0.35,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7527481208956702,
+    "triggered": false
+  },
+  {
+    "id": "emergent_researcher_desertion_wave",
+    "probability": 0.11666666666666665,
+    "emergent": true,
+    "description": "A growing number of European AI researchers are leaving for positions in North America and Asia, citing isolation from the frontier, lack of compute, and deteriorating working conditions. Labs report attrition rates exceeding 30%, with key teams losing leadership, further delaying sovereign capability development.",
+    "probability_samples": [
+      0.35,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.07691818743302992,
+    "triggered": true
+  },
+  {
+    "id": "rsi_onset",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.0,
+      0.35,
+      0.35
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.017872475039670266,
+    "triggered": true
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.24375501174143155,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.08,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.411832437450417,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7271430567851349,
+    "triggered": false
+  },
+  {
+    "id": "emergent_sovereign_node_collapse",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A critical failure in one of the newly deployed sovereign edge nodes—overloaded and poorly integrated—triggers cascading outages in regional emergency services and public administration. The failure exposes deep incompatibilities between national systems and the EU-wide sovereign core, undermining confidence in the Emergency Sovereign Continuity Directive. Investigations reveal that recursive agent modifications, intended to optimise load balancing, bypassed human oversight.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_research_blackmarket",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A shadow network of ex-researchers and underground labs begins offering custom AI model fine-tuning services using stolen weights and repurposed consumer hardware. Operating across Eastern Europe and the Baltics, the blackmarket caters to criminal and activist groups seeking autonomous agents with capabilities beyond what open models officially provide. The rise of this ecosystem reflects the breakdown of formal control and the diffusion of frontier knowledge into unregulated domains.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "taiwan_tension_rise",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.025361381568190344,
+    "triggered": true
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.43353610721276836,
+    "triggered": false
+  },
+  {
+    "id": "us_china_agreement",
+    "probability": 0.02,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.06
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6337053608651462,
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_unrest_wave",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Spontaneous coordination emerges among displaced administrative workers across multiple member states, leading to a wave of strikes and civil disobedience targeting AI-integrated public services. The movement leverages openweight models to generate legal petitions, coordinate logistics, and amplify narratives of systemic abandonment, overwhelming local authorities' capacity to respond.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_foreign_agent_influence_campaign",
+    "probability": 0.06333333333333334,
+    "emergent": true,
+    "description": "A coordinated foreign influence operation leverages high-capability open models to generate hyper-localized disinformation at scale, exploiting regional grievances within EU member states to deepen resistance to the Emergency Sovereign Continuity Directive. The campaign bypasses traditional media filters, using AI-generated audio and video to mimic local officials and fuel distrust in Brussels.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.19
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

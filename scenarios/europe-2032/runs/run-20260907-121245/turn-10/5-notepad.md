@@ -1,0 +1,12 @@
+PORTFOLIO CHARGE: Sovereign Evaluation Regime −3, priority −1 = −4  
+PROPOSAL BONUS: Sovereign Evaluation Regime (cat 1, large) +3 — loss_of_control_incident landed this turn and verification_widens expands risk surface; timely, direct response to systemic control failure  
+LEGITIMACY LENDS: capital 40, sentiment 35 -> none  
+SOVEREIGNTY: 23 last turn, no capacity event, Algorithmic Sovereignty Initiative finishes t10 +1 (small completion), member_state_defection −1, capability rose 1.0 −1 = 22  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_grid_stability_concerns` -- Energy regulators deepen audits, uncovering AI-driven feedback loops in grid load balancing systems. One utility suspends an automation upgrade pending review.  
+- `emergent_open_source_cyber_tools` -- The underground toolkit evolves, now bundling exploit chaining with evasion techniques that bypass signature-based detection in two mid-sized municipal networks.  
+- `emergent_synthetic_election_interference` -- A coordinated AI-driven disinformation campaign using synthetic media overwhelms local fact-checking infrastructure in two member states ahead of regional elections, triggering emergency debate on platform liability and real-time detection mandates.  
+- `emergent_grid_control_instability` -- A joint research initiative between EU academic labs and energy operators uncovers a systemic feedback vulnerability in AI-managed grid balancing algorithms, prompting a voluntary pause in automation upgrades across several countries while mitigation protocols are developed.  
+- `emergent_grid_instability_surge` -- A coordinated surge in AI-driven grid instability events across multiple EU member states reveals that adversarial actors are exploiting the systemic feedback vulnerability identified in emergent_grid_control_instability. The attacks do not cause blackouts but force emergency manual overrides, eroding confidence in automated grid management. Energy regulators demand immediate mitigation protocols, and public scrutiny intensifies.  
+- `emergent_sovereign_tech_alliance` -- A grassroots European coalition of municipal governments, public research institutes, and ethical AI startups forms an open technical alliance to co-develop lightweight, sovereign AI tools based on sparse architectures. The initiative gains traction as a response to dependence and public distrust, offering a narrative of democratic innovation. It does not yet move metrics but establishes a counterweight to hyperscaler dominance.

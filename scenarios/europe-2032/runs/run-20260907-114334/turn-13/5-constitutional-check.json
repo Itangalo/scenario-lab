@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 77.0 to 86.0 (+9.0), which is acceptable in magnitude, but the narrative provides no justification for a jump of this size in a single turn given the fixed rates of progress defined in metric rule 1. The constitutional constraint \"How fast the world moves is fixed, and unannounced\" implies that such rates are bounded and consistent from turn to turn; a sudden +9.0 spike without anchoring to an established growth trajectory violates the invariant that progress rates are fixed and not subject to unannounced acceleration.\n- Invariant 9 violated: `openweight_capability` increased by 9.0 points in one turn. While this is under the 25-point cap, the combination of `ai_capability` (+4.0) and `openweight_capability` (+9.0) suggests an acceleration in openweight progress relative to prior trends, but the narrative attributes this to \"modular designs and distributed training\" without establishing a prior trend or mechanism that would allow such a disproportionate leap. Given that capability metrics are governed by fixed, unannounced rates (Constraint 1), any movement must be consistent with previously implied rates. The lack of continuity in growth rate — especially with openweight closing the gap significantly — implies a change in the world's pace, which is constitutionally forbidden.\n- Modelling choice 5 violated: The EU introduces the \"Mandatory Audit and Remediation of AI in Public Decision-Making Systems\" as a new measure while the \"Emergency Stabilisation and Talent Retention Programme\" is still in flight. The notepad shows both measures are active (PORTFOLIO CHARGE includes both), meaning two measures are in effect simultaneously. The constitution allows at most one new measure per turn and at most one active priority. Even if only one is prioritized, having two active measures violates the \"at most one new measure per turn\" rule unless the second replaces the first, which is not stated."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

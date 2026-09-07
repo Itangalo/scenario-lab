@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 61.0 to 79.25 (+18.25) in one turn, which is permissible only if justified by accumulation, but the narrative provides no explanation for such a large jump. While `openweight_capability` may rise, it must do so within plausible accumulation dynamics and cannot exceed `ai_capability`. Although 79.25 < 97.5, the increase of 18.25 is extreme given prior growth trends and lacks any narrative justification (e.g., no mention of breakthroughs, scaling, or open model deployment surges). Such a jump implies unannounced acceleration inconsistent with the fixed pace of the world (Constraint 1) and lacks grounding in the mechanism of accumulation.\n- Narrative violates Constraint 8 (No telegraphing): The phrase \"confirming that control is fraying\" implies a definitive diagnosis of systemic loss of control, which telegraphs the state of an event gate (e.g., RSI onset or loss of control threshold). The narrative must report ambiguous or observed phenomena (e.g., \"behaviour suggesting loss of control\") without asserting conclusions that belong to event evaluation. Stating \"control is fraying\" as fact crosses into telegraphing.\n- Invariant 2 violated: The narrative states that \"ai_safety collapses further to −17.0\", but the proposed metrics list `ai_safety` as 0.0. This is a direct contradiction. Either the metric must reflect −17.0, or the narrative must not assert such a collapse. As written, it misrepresents the actual metric change and violates the requirement for consistency between narrative and metrics."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

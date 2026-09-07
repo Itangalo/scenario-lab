@@ -1,0 +1,26 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.28,
+    "probability_samples": [
+      0.08,
+      0.32,
+      0.44
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_constitutional_crisis",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "The European Court of Justice fast-tracks its review of the Emergency Sovereign Continuity Directive, exposing a fundamental rift over executive authority in systemic crises. The ruling could invalidate the directive or force a renegotiation of Union powers, depending on whether the crisis is deemed internal or external in origin.",
+    "probability_samples": [
+      0.3,
+      0.35,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

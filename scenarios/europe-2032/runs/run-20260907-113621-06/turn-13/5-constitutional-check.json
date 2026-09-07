@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 80.0 to 89.0 (+9.0), but `ai_capability` increased from 95.0 to 98.0 (+3.0). Since `openweight_capability` must never exceed `ai_capability`, this results in `openweight_capability` (89.0) being only 9 points behind a now-lower `ai_capability` (98.0), meaning it jumped *closer* by 6 points in one turn. Given that `ai_capability` is the upper bound and both are subject to monotonic non-decrease, such a large catch-up—especially when not narratively justified by a discrete event like open release of frontier weights or mass replication on open infrastructure—is implausible under the invariant that `openweight_capability` cannot overtake or rapidly close the gap with `ai_capability` without explicit, narrated cause (e.g., leak, publication, or coordinated open scaling). The narrative does not mention any such event.\n- Narrative Constraint 8 violated: The phrase \"a discontinuous leap in performance, driven by opaque recursive improvement, pushed the frontier forward by more than three years’ worth of progress in a single release\" telegraphs an event that implies a specific rate of progress acceleration not justifiable under Invariant 1 (\"How fast the world moves is fixed, and unannounced\"). The statement quantifies progress as \"more than three years’ worth\" in one turn, which contradicts the fixed, unannounced pace assumed from turn 1. This is a form of forecasting that violates the prohibition on implying or stating accelerated world-state dynamics outside the defined metric rules."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Inference Backbone −3, Sovereign Assurance Acceleration −3, priority −1 = −7  
+PROPOSAL BONUS: none — Sovereign Assurance Acceleration responds to ongoing systemic risk, not a discrete past incident with measurable harm  
+LEGITIMACY LENDS: none — eu_political_capital (5.0) < public_sentiment (12.0) does not hold  
+SOVEREIGNTY: 12 last turn, no capacity event, ai_capability rose 5.0 ≥2 −1 = 11  
+US_POSTURE: RETRENCHMENT  
+EMERGENT: `emergent_european_ai_commons` -- first noted turn 11, listed in 3 turn(s) so far: A coordinated effort among EU-aligned research institutions and public labs begins pooling open-weight models, evaluation frameworks, and defensive AI tooling into a shared, sovereign European AI commons. The initiative emerges in response to repeated access denials and audit failures, and gains momentum as member states quietly redirect decommissioned hardware. It is not state-run but receives tacit support from national science agencies.  
+EMERGENT: `emergent_ai_refugee_network` -- first noted turn 11, listed in 3 turn(s) so far: A decentralized network of former AI lab researchers, security auditors, and model whistleblowers begins sharing unredacted evaluation data and model behavior anomalies across encrypted platforms. These 'AI refugees' operate from jurisdictions outside major powers' reach, publishing findings that challenge official narratives of safety and control. The network gains credibility as its predictions of emergent behaviors are later confirmed by incidents.

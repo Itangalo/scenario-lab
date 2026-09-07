@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 69.0 to 77.0 (+8.0), which exceeds the maximum possible growth given that `ai_capability` only increased by 4.0 (from 85.0 to 89.0). Since `openweight_capability` cannot exceed `ai_capability` and must accumulate gradually, a jump of 8.0 points is implausible without a corresponding rise in the base capability or a named event enabling rapid open-weight leapfrogging (e.g., mass model leakage or open release of frontier systems). No such event is narrated, and the notepad contains no enabling condition. The increase suggests openweight capability grew faster than frontier capability, violating the dependency and accumulation rules.\n- Modelling choice 5 violated: The narrative declares the Replication Foundry Initiative as the \"named priority\" while the Emergency Observability Directive is still active (its expiry is noted only as a quiet failure, not formal withdrawal). The notepad still lists four measures in flight, including the defunct directive, but no formal de-prioritization or closure is stated. At most one priority may be named per turn; maintaining multiple active priorities (implied by continuing to carry the directive in the portfolio charge and naming a new one) violates the one-priority limit unless the prior is explicitly retired.\n- Narrative Constraint 8 violated: The narrative states \"the emergent European AI Commons gains quiet momentum\" and introduces `emergent_unified_european_defensive_ai_pool` as a new emergent phenomenon, but this new entry is recorded in the notepad *within the same turn it is first narrated*. This constitutes telegraphing: the notepad is meant to reflect persistent, confirmed developments, not real-time tagging of nascent events. Including it in the notepad immediately upon first mention implies certainty and continuity, which violates the prohibition on forecasting or implying event gates are open. The entry should appear in the narrative only, and be listed in the notepad only after sustained presence."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

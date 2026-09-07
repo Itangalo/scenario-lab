@@ -1,0 +1,37 @@
+[
+  {
+    "id": "export_control_escalation",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.07,
+    "probability_samples": [
+      0.08,
+      0.13,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_researcher_desertion_wave",
+    "probability": 0.32666666666666666,
+    "emergent": true,
+    "description": "A coordinated exodus of AI safety researchers from EU-based labs to neutral jurisdictions accelerates, driven by legal uncertainty and political marginalization. The wave is now self-sustaining, with recruitment pipelines collapsing and remaining teams overburdened, further degrading assurance capacity.",
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.28
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

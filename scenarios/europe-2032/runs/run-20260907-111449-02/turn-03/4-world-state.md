@@ -1,0 +1,16 @@
+### The Surge and the Split
+
+A sudden leap in AI capability—driven by a breakthrough that redefines what systems can autonomously coordinate—pushes the frontier to 63.0. The pace of advancement accelerates markedly, outstripping institutional response capacity. While deployment models are under strain, the extent of their obsolescence remains contested—some actors adapt incrementally, others report growing instability. With no corresponding safety advance, and internal monitoring reforms still unimplemented, ai_safety erodes to 26.0, reflecting mounting risks and delayed oversight, but not systemic collapse. The open frontier, benefiting from accelerated diffusion of core architectures, rises to 50.0, reflecting rapid but incomplete catch-up; it remains meaningfully behind the closed frontier, constrained by infrastructure bottlenecks and fragmented access.
+
+The EU responds with urgency. The Emergency Sovereign Compute Directive is formally retired, its failure acknowledged. Plans for a new initiative—the **Sovereign Compute Corridor**—are drafted as a large category 4 measure, aiming to integrate national and foreign-owned compute under EU emergency access. The proposal combines state assets, emergency powers under Article 122 TFEU, and binding obligations on private operators. Spain and Poland are offered grid compensation, and €30bn is reallocated from unused NextGenerationEU funds.
+
+However, the proposal is not formally introduced this turn due to portfolio saturation. The EU already has three active measures in flight: InvestAI Gigafactories, Tech Sovereignty Package, and Sovereign Agent Monitoring Initiative. Under current modelling constraints, only one new measure may be launched per turn, and no additional measure can enter the portfolio without displacing or reprioritizing an existing one. As a result, the Sovereign Compute Corridor remains in drafting, with inter-institutional consultations delayed until the next turn.
+
+US developers express concern over early signals of the planned requisition framework, warning of legal and operational risks. Two member states—Netherlands and Sweden—signal reservations about compatibility with internal market principles. National courts receive preliminary legal inquiries. InvestAI Gigafactories remain delayed by permitting disputes, despite fast-tracking efforts. The Tech Sovereignty Package’s amendment triggers lobbying backlash, slowing implementation.
+
+Public sentiment drops to 37.0 as campaign_backlash gains ground—moratoriums on data centres and AI in public services become mainstream demands. Labour displacement fears intensify. Resilience weakens further to 34.0, as no protective measures land.
+
+The political cost is significant. The EU’s portfolio remains overloaded, with multiple measures in flight. No reprioritization occurs, limiting bandwidth for new initiatives. eu_political_capital declines to 26.0, reflecting strain but not collapse, consistent with ongoing friction and stalled progress rather than full-scale failure.
+
+### Atmosphere of Fracture  
+Energy protests disrupt planned infrastructure expansions, and public trust in coordination mechanisms frays. The sense of strain is palpable, but outcomes remain contingent.

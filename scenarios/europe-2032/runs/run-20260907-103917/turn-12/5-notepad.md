@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Sovereign Evaluation Regime −3, EU Compute Acceleration Facility −3, Secure Access Pact −3, priority −1 = −10  
+PROPOSAL BONUS: Secure Access Pact (cat 8, large) +5 — direct response to supply_chain_coercion and member_state_defection, both this turn, large strategic measure  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no category 4 completion, Secure Access Pact in flight +0, member_state_defection t12 −2, supply_chain_coercion t12 −2, capability rose 1.5 −1, middle_power_coalition t12 +3 = 24.0  
+US_POSTURE: RETRENCHMENT  
+Emerging developments (tracked):  
+- `emergent_grid_stability_concerns` -- first noted turn 11, listed in 2 turn(s) so far: Energy regulators expand audits to cross-border grid operators, uncovering AI-driven feedback loops that propagate instability across multiple national systems. A near-miss event during peak load prompts emergency coordination, revealing gaps in shared protocols and accelerating calls for a unified AI safety framework for critical infrastructure.  
+- `emergent_sovereign_tech_alliance` -- first noted turn 11, listed in 2 turn(s) so far: The grassroots European sovereign AI alliance expands to include national research labs and public utilities, launching a federated pilot to deploy sparse, auditable models for municipal services. The initiative gains political traction as a credible alternative to hyperscaler dependence, particularly in countries resisting U.S. cloud dominance.

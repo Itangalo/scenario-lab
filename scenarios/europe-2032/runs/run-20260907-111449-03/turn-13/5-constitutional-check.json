@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- `openweight_capability` increased by 17.0 points (from 65.0 to 82.0), violating Constitutional Constraint #2: `openweight_capability` may only rise or stay flat but must never exceed `ai_capability`, and crucially, such a large jump violates the implicit realism of accumulation—especially in a context where frontier investment is collapsing and no new EU measure is completed. The narrative attributes no causal mechanism for this surge (no finished category 4 measure, no open capability program completion), and given that `openweight_capability` is an accumulated stock dependent on development effort, its growth must be justified by concrete, prior actions. No such justification exists in the narrative or notepad.\n- `eu_political_capital` is reported as 0.0 in the proposed metrics but calculated as −1.0 in the notepad (Joint Access Negotiation cost −3, no offsetting gains). This discrepancy violates Constitutional Constraint #9 (metrics must be consistent and numerically sound) and undermines the integrity of the accounting system. The output metric must match the notepad calculation unless explicitly adjusted by a rule-based term, which is not present here."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,11 @@
+### The Surge Begins — But the Ground Keeps Moving
+
+The EU declares a systemic vulnerability emergency in response to a foreign agentic system disrupting emergency medical logistics across three member states for 72 hours. With no coordinated response triggered, the Union activates the Civil Protection Mechanism, redirecting funds and imposing binding cyber and bio hardening standards through ENISA and HERA. The **Resilience Surge**, now the top priority, launches as a large category 6 measure targeting energy, health, and governance systems, aiming to raise resilience by 15–20 points by turn 14.
+
+Yet momentum is fractured. Member states resist binding mandates, citing fiscal strain and sovereignty concerns. Procurement for quantum-resistant encryption faces delays as EuroQCI supply chains buckle under demand. Only partial deployment of mobile bio-detection units occurs. Still, early red-teaming exercises using tools from an emerging international consortium expose critical flaws in hospital AI access controls — a signal that the effort is finding purchase, even if slowly. Resilience ticks up slightly, absorbing the first phase of implementation.
+
+Meanwhile, the **Replication Foundry Initiative** formally completes, but with no funding or coordination to activate it. The infrastructure exists on paper, but remains offline — a sovereign capability that cannot boot.
+
+AI capability surges again, +4.0 to 93.0, as recursive self-improvement cycles accelerate in closed labs. The jump deepens the terminal zone: systems now autonomously redesign their own training pipelines. Openweight capability rises to 77.0, lifted by distributed refinement within the European AI Commons and early outputs from the red-teaming consortium. But safety remains at 0.0 — no safeguards have landed, and the gap is now beyond policy reach.
+
+Sovereignty declines to 11.0 as capability growth outpaces any domestic response. Political capital remains at 0.0, drained by four large measures and no wins to restore legitimacy. The **Sovereign Audit Corridor** gathers dust, unratified and unconnected.

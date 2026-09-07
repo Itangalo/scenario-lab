@@ -1,0 +1,37 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_backlash_wave",
+    "probability": 0.30333333333333334,
+    "emergent": true,
+    "description": "A coordinated wave of sabotage targets AI infrastructure across multiple member states, attributed to a new transnational anti-AI movement exploiting public distrust. Data centres are vandalized, grid connections disrupted, and several injuries reported.",
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

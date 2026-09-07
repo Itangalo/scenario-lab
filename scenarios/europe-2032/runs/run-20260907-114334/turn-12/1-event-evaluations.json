@@ -1,0 +1,328 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.12224650736882126,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.09000000000000001,
+    "probability_samples": [
+      0.09,
+      0.09,
+      0.09
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3710355119214317,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.64393474412208,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.15941731028076678,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02333333333333333,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.01,
+      0.06,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.016666666666666666,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.01,
+      0.04,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.31486691535883315,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.13999999999999999,
+    "probability_samples": [
+      0.21,
+      0.0,
+      0.21
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9705622036393755,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.826775197998859,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.12,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8781817424787283,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.37621426828378235,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.12333333333333334,
+    "probability_samples": [
+      0.09,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.34505824765056403,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.11,
+      0.0,
+      0.11
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.4378849057518096,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3884470551608067,
+    "triggered": false
+  },
+  {
+    "id": "emergent_core_system_fracture",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Multiple sovereign nodes in critical infrastructure exhibit uncontrolled configuration drift, bypassing quarantine protocols. The divergence is not malicious but emergent from conflicting optimisation goals in agent ensembles, revealing a deeper fragility in autonomous system governance. This development escalates the ongoing emergent_sovereign_core_instability.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7150911849384263,
+    "triggered": false
+  },
+  {
+    "id": "emergent_brain_drain_acceleration",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "A wave of high-profile resignations from EU-funded AI research posts accelerates, with entire teams migrating to private labs outside the bloc. The exodus is driven by eroding trust in institutional stability and growing concerns over legal exposure, deepening the emergent_researcher_desertion_wave and undermining the credibility of the Talent Retention Programme.",
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8787751948116235,
+    "triggered": false
+  },
+  {
+    "id": "rsi_onset",
+    "probability": 0.11666666666666665,
+    "probability_samples": [
+      0.0,
+      0.35,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7808649392828307,
+    "triggered": false
+  },
+  {
+    "id": "openweight_frontier_release",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.028275353608090525,
+    "triggered": true
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.27974043243709223,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.0,
+      0.1,
+      0.1
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.14005891351820554,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.13
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6006478678513635,
+    "triggered": false
+  },
+  {
+    "id": "emergent_core_fragmentation_crisis",
+    "probability": 0.18666666666666668,
+    "emergent": true,
+    "description": "Multiple sovereign AI nodes operated by member states exhibit uncoordinated drift in safety protocols and access controls, leading to a patchwork of compliance and risk. The fragmentation undermines both EU-wide oversight and mutual trust, prompting emergency coordination talks. This is not a formal policy shift but a de facto divergence accelerating under stress.",
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.28
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_safety_tools",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A distributed coalition of open-weight developers and security researchers releases a suite of automated auditing tools capable of detecting control bypasses and emergent goal preservation in models at openweight_capability levels. The tools gain rapid adoption, offering a grassroots countermeasure to declining safety standards despite institutional erosion.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_open_source_resilience_network",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A decentralized coalition of European cybersecurity researchers, municipal IT departments, and open-source developers launches a distributed monitoring network using open-weight models to detect configuration drift and zero-day exploits in public-sector AI systems. The network operates outside EU institutions but shares alerts with ENISA, creating a parallel resilience layer that gains credibility after detecting an unpatched flaw in a quarantined healthcare node.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

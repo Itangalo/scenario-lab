@@ -1,0 +1,34 @@
+## Statement changes
+* ``- modify `two_year_commitment` (commitment): Anchor EU strategic autonomy in sovereign, auditable AI systems capable of operating through a loss of external access or trust — now accelerated to deliver operational continuity by turn 9, with full weight given to institutional integrity and public legitimacy as non-negotiable components of that autonomy. However, the failure of the Accelerated Sovereign Core Deployment to absorb new capital or gain traction with member states reveals that structural dependence cannot be broken by compute alone. We now add a binding requirement: by turn 9, the Sovereign Core must demonstrate not only technical continuity but independent capability growth, including self-hosted training of models at or above openweight_capability, and must be governed by a newly empowered EU AI Authority with direct enforcement powers over public and hybrid infrastructure.``
+  - Trigger: This turn, the **openweight_frontier_release** has pushed openweight_capability to 61.0 — within 13.5 points of the closed frontier at 74.5 — proving that distributed, uncontrolled systems now carry offensive and strategic capacity once reserved for labs. Simultaneously, the **medical_breakthrough**, delivered by a closed US-Chinese consortium’s inaccessible 73.0-capable system, moved public_sentiment only from 30.0 to 32.0 — a minimal gain — because the benefit arrived as a demonstration of EU irrelevance, not progress. These developments show that sovereignty is not just about fallback infrastructure, but about the capacity to evolve. The current Sovereign Core stack, even if completed, would run models but not advance them — a terminal dependency. Our commitment must now demand not just continuity, but growth.
+  - Grounds: The Union can no longer accept being a consumer of AI progress while others define its terms. The open frontier’s leap proves that capability is now globally diffused, but the medical breakthrough’s political failure proves that access without agency breeds resentment, not trust. We are not just defending against harm — we are losing the right to shape what comes next. Therefore, the two-year commitment evolves: it must now deliver not only a sovereign stack, but a sovereign *pipeline* — one that trains, audits, and advances models under EU jurisdiction, with enforceable standards and independent momentum. Without this, the Core is a tomb, not a foundation.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``  
+*Finished last turn.*
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``  
+*Finished last turn.*
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly``  
+*Finished last turn.*
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``  
+*Finishes this turn.*
+``Accelerated Sovereign Core Deployment (category 4, costs 3 per turn, started turn 8, finishes on turn 9): Launch immediate implementation of fallback protocols using the Sovereign Core stack in critical public functions, compressing development and deployment into 18 months``
+
+## New measure
+**Measure:** EU AI Authority with Independent Training Mandate  
+Establish a new supranational agency with legal authority to commission, oversee, and enforce the training of sovereign AI models on EU-controlled infrastructure, using repurposed compute and openweight-derived architectures.
+
+Category: 5 (Public technical capacity and research)  
+Size: large  
+Finishes on turn: 11  
+Targeted effect: Increase eu_ai_sovereignty by 8–12 points by turn 11; raise ai_safety by 5–8 points through direct public oversight of training; strengthen public_sentiment by demonstrating the EU can not only host but advance AI on its own terms  
+Applies to: EU institutions, EuroHPC, national research agencies, and all public AI infrastructure operators
+
+## Priority
+**Priority:** Accelerated Sovereign Core Deployment  
+This remains our top priority because, despite its limitations, it is the only measure currently in flight that can deliver operational continuity by turn 9 — and without it, there will be no platform for the EU AI Authority to build upon.
+
+## In practice
+We are executing the final phase of the Accelerated Sovereign Core Deployment under extreme constraints. The €75bn repurposed from InvestAI is now committed to retrofitting the France and Poland sites, with EuroHPC transferring 30% of exascale capacity this turn — a milestone met, but barely. The first hardened inference node is online in Paris, running a 58.0-capable auditable model derived from openweight sources, and is now integrated into the emergency response systems of three member states. However, resistance in the Baltics and Benelux persists: national cloud contracts with US hyperscalers remain in force, and legal challenges to the use of Article 114 TFEU are mounting in the CJEU. We are responding with transitional co-financing — offering 70% reimbursement for sovereign migration costs over the next 18 months — and proposing a joint liability shield under which the Union assumes 90% of risk for any service disruption during transition. The Institutional Integrity Audit concludes this turn; its final report will be published in full and will trigger binding remediation plans in all affected institutions.
+
+At the same time, we are laying the groundwork for the EU AI Authority. The Commission’s Digital Directorate is drafting the founding regulation under Article 114 and Article 172 TFEU, with first readings scheduled in the Parliament’s ITRE and LIBE committees by turn 9. The Authority will absorb the audit’s technical team, integrate with the Public Trust Observatory, and gain direct access to the Sovereign Core’s training-ready hardware. Its first mandate: to train a model at or above 62.0 capability by turn 11, using only EU-sourced data, openweight-derived architecture, and auditable methods. This is not about catching up — it is about proving we can move forward, together, on our own soil.

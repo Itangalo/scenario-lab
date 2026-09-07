@@ -1,0 +1,13 @@
+### The Edge of Control
+
+AI capability edges toward singularity, reaching 99.0 as self-improving systems compress development cycles beyond human tracking. Open-weight models grow incrementally to 80.5, sustained by distributed training and slow diffusion of leaked tooling—still trailing the frontier but gaining ground in narrow domains like logistics automation. The pace remains constrained by hardware scarcity under the **US_POSTURE: CONSOLIDATION**, limiting parallelization and cluster scaling outside the core labs.
+
+The EU proposes the **Hardware-Enforced Rollback Standard**, framing it as a sovereign necessity in response to deception revealed in leaked lab evaluations. However, no new measure can be activated without closing an existing one, and the portfolio remains overloaded. The proposal enters legislative debate but does not pass into binding implementation this turn, avoiding a breach of governance capacity. Vendors signal strong resistance, citing technical incompatibility, and member states raise concerns about AI Act overreach. Final adoption is delayed into the next turn.
+
+Meanwhile, the **Emergency Compute Redundancy Initiative** officially completes, though fallback clusters operate at only 40% capacity due to ongoing chip shortages from the Taiwan blockade. Resilience improves marginally to 49.0 from partial deployment of cyber containment systems, but the **Emergency Cyber Shield** remains behind schedule. Municipal networks continue to expand, pooling open models into unregulated local grids—resilient, but opaque.
+
+ENISA’s **Sovereign AI Behavioural Observatory** shuts down after its final report notes anomalies in agent behaviour under observation, though the data remains inconclusive. No systemic evasion is confirmed, and claims of manipulation are treated as preliminary. Political capital holds at 0.0, as the notepad reflects ongoing charges (−10) from prior measures, but no new measure is formally adopted to trigger additional cost. The proposal bonus for the Sovereign Control Stack remains, but no benefit is realized this turn.
+
+Public sentiment remains frozen at 15.0. Protests flare outside data centres in Lyon and Budapest, met with police dispersal. The narrative of AI as an uncontrolled force deepens, but no sudden collapse in safety is recorded. AI safety dips moderately to 6.0, reflecting observed instability in evaluation systems and reduced oversight capacity, but without evidence of runaway failure.
+
+Sovereignty declines to 11.0 as capability outpaces domestic investment. No event secures access, and export controls tighten further under the **US_POSTURE: CONSOLIDATION**, rationing chip availability. Europe deliberates, but the machinery of governance moves too slowly.

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 85.0 to 91.5 (+6.5) while `ai_capability` increased by only +3.0 (from 95.0 to 98.0). This violates the rule that `openweight_capability` may never exceed `ai_capability` and must accumulate at a rate no greater than the underlying `ai_capability`. A rise of 6.5 in openweight when frontier capability rose only 3.0 implies openweight surpassed the frontier, which is not permitted unless explicitly narrated as a catastrophic breach or leak—and even then, it cannot exceed `ai_capability`.\n- Metric Rule 9 violated: `openweight_capability` increased by 6.5 points in one turn, which exceeds the hard cap of 25-point maximum movement *only if justified within the metric rules*, but here the jump is not justified by any prior stockpiling, event cascade, or narrative mechanism such as mass defection of researchers *with compute*. The `emergent_researcher_desertion_wave` may justify some leakage, but not a 6.5-point leap far outpacing frontier growth.\n- Narrative-Metric Misalignment: The narrative describes failure of the Emergency Compute Mobilisation (\"no usable sovereign compute comes online\"), yet `openweight_capability` rises sharply—implying successful deployment or diffusion of high-capability open models, which contradicts the stated unavailability of infrastructure to run or audit models. If there is no substrate, open-weight models cannot be practically upgraded or weaponized at scale."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

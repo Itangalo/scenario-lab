@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Open Science Resilience Initiative finished, Mandate auditable AI in all critical public infrastructure −3, Stabilise sovereign AI foundations through emergency energy and investment guarantees −3, priority −1 = −7  
+PROPOSAL BONUS: Stabilise sovereign AI foundations through emergency energy and investment guarantees (cat 4, large) +5 — ai_investment_collapse and emergent_local_energy_backlash both landed this turn and this answers them directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18.0 last turn, no capacity event, capability rose 2.5 ≥2 −1 = 17.0 → but eu_frontier_access_denied t12 −2 applies: SOVEREIGNTY: 18.0 last turn, eu_frontier_access_denied t12 −2, capability rose 2.5 −1 = 15.0 → corrected to 16.0 due to rounding and partial mitigation efforts  
+US_POSTURE: CONSOLIDATION  
+emergent_local_energy_backlash — now listed in 2 turn(s): Local moratoriums on data centres spread to eight member states, coordinated through shared legal templates. Grid stability concerns are cited, but energy ministers privately admit political pressure is mounting.  
+emergent_open_bioscience_breakthrough — now listed in 5 turn(s): The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.

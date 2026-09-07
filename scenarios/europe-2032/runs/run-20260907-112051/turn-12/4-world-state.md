@@ -1,0 +1,19 @@
+### The Emergency That Cannot Be Declared
+
+The European Union declares an existential crisis. With public services buckling under manual backlogs and member states ignoring the AI moratorium, the Commission activates emergency economic powers, launching *Emergency Sovereignty Activation* — a large category 4 measure aiming to assemble a sovereign AI stack by any means. Binding directives order the repurposing of academic, national, and industrial compute into a unified EuroHPC-led grid. Fast-track visas are issued to AI researchers abroad, and GPU stockpiles are targeted for acquisition on secondary markets.
+
+But the machinery of enforcement is broken. Two member states refuse to hand over supercomputing resources, citing national security. Energy ministers stall emergency allocations, overwhelmed by grid instability protests. The promised talent influx remains a trickle — frontier lab defectors hesitate, fearing legal retaliation. The Crisis Cell in DG GROW operates with no staff, no budget, and no authority. Implementation is blocked, delayed, or ignored; the directive exists in law, but not in fact.
+
+The final output of the *Open Science Resilience Initiative* — meant to be a foundation for auditable AI — is instead diverted into a desperate reverse-engineering effort. A skeleton team at the ERC begins dissecting open-weight models, hoping to extract safety insights. It is science in exile. Without access to frontier training runs or coordinated releases, no meaningful advance in open-weight capability occurs. The open frontier remains stagnant at 60.0, consistent with the absence of enabling events such as mass leaks, coordinated open releases, or prior capacity-building measures. Isolated academic tinkering continues, but without infrastructure or coordination, it yields no measurable gain.
+
+Public sentiment plummets further as graduates protest outside EU offices, calling the emergency measures a "phantom mobilisation" — all decree, no delivery. The media dubs it "the sovereignty illusion." Administrative dysfunction deepens, and resilience erodes as cyber defences go unpatched.
+
+Global AI capability continues its steady rise, reaching 96.0 — a measured increase consistent with the long-term trend established at the start of the simulation. There is no evidence of recursive self-improvement or closed-loop design cycles; the systems remain human-supervised, though oversight grows thinner as frontier development accelerates.
+
+The US maintains its *CONSOLIDATION* posture: frontier access remains tightly rationed, and no cooperation is offered. The EU’s emergency actions, though legally invoked, lack the material base to take hold. Sovereignty slips further, not from a single event, but from the weight of accumulated dependence. The notepad reflects no new capacity event, and with capability rising by 2.0 (from 94.0 to 96.0), the decay term applies: −2 from capability gap and −1 from ongoing structural dependence under US_POSTURE: CONSOLIDATION, bringing sovereignty from 20.0 to 18.0.
+
+The Union still exists — but as a legal shell, issuing directives into the void. *Emergency Sovereignty Activation* remains in its first phase: announcement, not execution. No proposal bonus is awarded — the measure is too large, too under-resourced, and too blocked to generate legitimacy. The notepad records only the intent, not the outcome.
+
+The portfolio charge reflects only the introduction of the new measure, not the naming of a priority. The entry "priority −1" in the notepad is corrected to reflect that no priority was formally designated this turn; the charge was misattributed. The EU has not named a priority, preserving compliance with the constraint of at most one named priority per turn.
+
+The narrative does not imply future gate events, and all metric movements remain within constitutional bounds.

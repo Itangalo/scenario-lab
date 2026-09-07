@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Regulatory Constraint violated: The EU launches two major initiatives — the Sovereign Evaluation Regime and the European Resilience Acceleration Programme — in a single turn (Turn 11). This violates Constitutional Constraint #5: \"At most one new measure per turn, and at most one named priority.\" The narrative explicitly introduces two new measures, which is invalid regardless of their scope or cost."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Sovereignty calculation error: The narrative claims sovereignty \"holds at 22.0\", but previous value was 23.0 and proposed new value is 22.0, which contradicts the explanation. According to the narrative, erosion is −2 (−1 from capability rise, −1 from member_state_defection), offset by a +4 proposal bonus, implying a net change of +2 → 25.0, not 22.0. Alternatively, if the outcome is 22.0, then the math does not add up: starting from 23.0, a net change of −1 would require only +2 bonus against −4 erosion, which is inconsistent with stated terms. This violates Constraint 2 (invariant accumulation logic for metrics) by misrepresenting how the metric evolves under defined rules.\n- Proposal bonus mismatch: The narrative assigns a +4 proposal bonus for the Sovereign Evaluation Regime (a category 1, large measure), but the notepad records a +3 proposal bonus — and explicitly attributes it to the *European Resilience Acceleration Programme* (cat 6, large), not the Sovereign Evaluation Regime. Assigning an unrecorded +4 bonus to a different measure violates Constraint 8 (narrative must not contradict the persistent notepad) and undermines the integrity of the event gate system.\n- Two large measures introduced in one turn: The narrative introduces both the **Sovereign Evaluation Regime** and the **European Resilience Acceleration Programme** as newly drafted or launched initiatives. While the latter is not formally adopted, it is presented as a full policy proposal with defined content and political friction, constituting a new measure. This violates Constraint 5: \"At most one new measure per turn.\" Even if only one is implemented, proposing two distinct large measures in the same turn exceeds the limit."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

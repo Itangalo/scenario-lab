@@ -1,0 +1,37 @@
+[
+  {
+    "description": "Local energy ministers in five member states coordinate emergency curtailment plans for non-essential data centres during peak demand periods, citing grid stability concerns amplified by public protests. The measures are temporary but mark the first synchronized operational intervention by national governments to limit AI infrastructure load.",
+    "emergent": true,
+    "id": "emergent_local_grid_pressure",
+    "probability": 0.22999999999999998,
+    "probability_samples": [
+      0.22,
+      0.25,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

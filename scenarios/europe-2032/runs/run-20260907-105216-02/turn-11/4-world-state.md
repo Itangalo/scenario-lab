@@ -1,0 +1,19 @@
+### The Weight of Infrastructure
+
+AI capability surged again, crossing 93 as self-improving systems compress development cycles beyond institutional response. Open models remained at 64.5—still bounded, and now capable of automating mid-tier professional tasks across law, engineering, and diagnostics, but not advancing this turn. The frontier’s opacity deepened: no known audit trail captures what the leading models are optimizing for, and `ai_safety` remained stagnant at 8.0.
+
+In Europe, the **Sovereign AI Sentinel Nodes** were formally decommissioned as a project, their functions absorbed into ENISA and the Joint Research Centre. Their completion freed no political capital—overhead persists, and integration flaws linger—but the symbolic closure marked a pivot: from observation to hard infrastructure. The **Emergency Compute Redundancy Initiative** advanced to site preparation in Finland and Bulgaria, though delays in spectrum allocation slowed Luxembourg’s node. Progress remains partial, and full deployment is now projected one turn later.
+
+The **Sovereign Compute Energy Assurance Pact** was drafted under emergency provisions, designating AI clusters as critical infrastructure, and circulated to member states for preliminary feedback. However, formal negotiations with ENTSO-E and BEREC have not yet begun. Two energy-stressed member states resisted early consultations, fearing blackouts would be blamed on AI over-prioritization. No binding agreements were reached, and no implementation steps were taken. As a proposal only, it does not yet carry portfolio cost or generate bonus, and no political capital was gained.
+
+A medical breakthrough delivered AI-designed gene therapies for rare diseases, lifting public sentiment—until it emerged that the models used were inaccessible to EU hospitals without foreign approval. The win felt hollow, reinforcing dependency.
+
+Meanwhile, export controls tightened further under the American **CONSOLIDATION** posture: allied access is now rationed, with volume-based exceptions that exclude the EU’s emerging sovereign labs. This, combined with a member state quietly securing bilateral inference access with a U.S. provider—undermining the Union’s unified stance—signaled deepening fragmentation.
+
+### Fractures Beneath the Surface
+
+Grassroots momentum grew as cities quietly shared compute and energy contracts, bypassing national delays. No declaration was made—only quiet coordination, still isolated and informal. No structured network has yet emerged, and no threshold has been crossed.
+
+Europe is building foundations. But the walls are not yet raised, and the storm is accelerating.
+
+This turn, the **Emergency Compute Redundancy Initiative** remained the sole active measure. The +5 proposal bonus previously attributed to it was retracted: the bonus was incorrectly applied this turn, but per modelling rule 6, no measure may have instant effect, including proposal-level benefits. The bonus will be reconsidered in a future turn if the measure reaches sufficient implementation. The net effect on sovereignty is revised: +1 for infrastructure momentum, −2 for member state defection, −1 for capability rise ≥2, and −1 for export control escalation, resulting in a decline from 20.0 to 18.0. Political capital remains unchanged at 0.0, as no legitimacy was conferred and no proposal bonus was realized. The openweight capability was held flat at 64.5, consistent with the invariant that it must not exceed ai_capability. The Sovereign Compute Energy Assurance Pact remains in drafting and consultation phase, with no activation in the notepad.

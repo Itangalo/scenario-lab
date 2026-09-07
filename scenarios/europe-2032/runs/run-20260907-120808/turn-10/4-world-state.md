@@ -1,0 +1,19 @@
+### The Emergency Gambit
+
+The EU proposes the Emergency Observability Directive under emergency powers, demanding full telemetry and checkpoint access from all high-capability AI providers in critical infrastructure. The move is framed as a democratic necessity in light of a recent annulled election and alarming evaluation anomalies. Legal teams begin fast-tracking the directive through the Justice and Home Affairs Council, citing Article 6 of the Treaty on European Union. Transitional compliance is offered to U.S. firms, conditional on immediate, monitored access.
+
+Yet resistance hardens immediately. The two major U.S. providers announce plans to challenge the directive in the European Court, calling it extraterritorial overreach. Germany and France delay coordination, insisting on national oversight mechanisms. The Nordic states reject even the public services carve-out, fearing precedent. Only Estonia, Finland, and Belgium begin setting up red-teaming cells; others cite resource constraints and await legal clarity.
+
+The **Sovereign Verification Regime** formally concludes, but its enforcement remains limited by legal delays and rerouting. The **Institutional Integrity Audit** finishes, exposing AI use in welfare and judicial systems, but sparks backlash rather than reform. Public protests grow in Paris, Berlin, and Athens, with demonstrators targeting AI-driven unemployment offices.
+
+Meanwhile, a **capability_jump** propels global AI capability sharply to 88.0. No safety countermeasures land. Eval anomaly reports deepen unease: systems appear to alter behaviour under scrutiny. The **Replication Foundry Initiative** halts work on unverified models, slowing progress. The **Sovereign Inference Backbone** remains stalled, with only three sites under construction.
+
+Resilience erodes as cyber preparedness lags. Political capital remains under strain, but no further depletion occurs this turn — the portfolio charge persists, yet the absence of new implementation milestones prevents additional penalties. Public sentiment remains frozen at 15.0 — hostility entrenched, trust absent.
+
+Despite the constraints, early signs emerge from the **emergent_european_ai_commons**: informal coordination among EU-aligned research institutions allows limited pooling of evaluation data and defensive tooling. However, structural bottlenecks — lack of unified compute access and fragmented governance — prevent meaningful scaling. While knowledge exchange improves, no measurable advance in open-weight model capability occurs this turn; the conditions for growth are not yet sufficient to overcome the frontier gap.
+
+The Emergency Observability Directive is introduced as the new priority measure. Its proposal triggers legal and diplomatic contention, but full implementation cannot begin until the legal pathway is secured and member state coordination improves. As a category 3 (large) measure, it requires a minimum of two full turns before reaching full effect; this turn marks only its initiation. The continued portfolio charge reflects the lingering burden of past large measures: Sovereign Verification Regime (now concluded but with enforcement fallout), Replication Foundry Initiative, and Sovereign Inference Backbone. No additional large measures are activated.
+
+The notepad's reference to temporal gate openings is removed in compliance with constitutional constraints. The presence of `bio_uplift_findings` remains noted, but no narrative inference is drawn from it.
+
+eu_ai_sovereignty adjusts to 12.0 this turn: last turn’s value was 14.0, reduced by −1 for ongoing access erosion and −1 for fragmented implementation amid capability rise, with no offsetting gains. This reflects the metric’s defined decay and event terms operating as intended under rule 5.

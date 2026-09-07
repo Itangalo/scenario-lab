@@ -1,0 +1,33 @@
+## Statement changes
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now know that without sovereign capacity, neither mandate can be fulfilled. The denial of access was not a policy disagreement; it was the revocation of agency. We are not balancing two goals. We are defending the right to have goals at all.  
+- Grounds: The **eu_frontier_access_denied** event has matured from shock to structural condition. Six months on, it is clear this was not an anomaly but a precedent: the frontier is closed not by accident but by design, and Europe’s dependence is now a weaponised fact. Our identity must reflect that we are no longer a regulator at the table — we are a power fighting to re-enter the room. This reframing does not abandon safety for capability, but insists that safety without sovereignty is surrender.
+
+- modify `act_under_uncertainty` (commitment): We will act before the picture is clear, but only where sovereign sensing, interpretation, and response capacity exist or are being built in parallel — and we will treat any action without such capacity as provisional, reversible, and politically costly.  
+- Grounds: The **member_state_defection** this turn proves that unilateral action without embedded sovereign infrastructure is not leadership — it is exposure. One member state has bypassed EU coordination to secure its own access, fracturing our position and inviting external powers to pick us apart. This recalibration binds us: we will still move early, but only where we are building the sovereign stack beneath it. Where we cannot, we will not pretend we can govern.
+
+- modify `new_two_year_commitment` (commitment): Build sovereign capacity to detect, interpret, and counter AI-driven strategic deception as the foundation of both resilience and self-determination — and extend it into operational response, diplomatic leverage, and public truth restoration, so that detection leads to action within hours, not months.  
+- Grounds: The **Counter-Deception Rapid Response Corps** has stalled in legal disputes, revealing a fatal gap: we can build observatories, but we cannot act on their findings without political unity. This revision elevates the commitment from research to enforcement — not just seeing deception, but stopping it in real time, with binding authority across member states. The defection proves delay is disintegration.
+
+## Portfolio
+- `Sovereign AI Behavioural Observatory (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context`
+- `Counter-Deception Rapid Response Corps (category 6, costs 3 per turn, started turn 11, finishes on turn 13): A deployable EU task force equipped with forensic AI analysis tools, diplomatic coordination protocols, and emergency communication authority to detect, attribute, and neutralise AI-generated synthetic crises within 72 hours of emergence` — **in flight this turn**
+
+## New measure
+**Emergency Sovereign Compute Mobilisation Directive**  
+A binding directive to fast-track the deployment of exascale-class AI training infrastructure on EU soil, overriding national permitting delays, securing priority grid access, and mandating public-private partnerships with retained sovereignty over weights and access.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` +15 to eu_ai_sovereignty by establishing independent training and fine-tuning capacity at the frontier; +5 to ai_safety by enabling EU-controlled evaluation of high-risk models; reduces dependency on foreign compute by creating a sovereign fallback for critical applications  
+`Applies to:` EU member states, European High-Performance Computing Joint Undertaking, national energy regulators, and qualifying private hyperscalers operating in the EU
+
+## Priority
+**Emergency Sovereign Compute Mobilisation Directive** — because the **member_state_defection** proves that without physical, legal, and operational control over compute, every other measure — including the Behavioural Observatory and the Response Corps — rests on borrowed ground. This is not about catching up to the frontier; it is about ensuring the EU has a floor no external actor can revoke.
+
+## In practice
+We are activating emergency powers under Article 122 TFEU and the Crisis Regulation Framework to launch the **Emergency Sovereign Compute Mobilisation Directive**, treating compute as critical infrastructure equivalent to energy or defence. The European Commission, in coordination with the European Investment Bank, is designating three new Sovereign AI Foundries — in Finland, Spain, and Romania — with binding deadlines for exascale deployment by turn 15. National permitting is suspended under the directive; grid access is prioritised through ENTSO-E emergency protocols. We are mandating that any private hyperscaler receiving EU subsidies or market access must contribute 10% of their EU-based training cycles to the Sovereign AI Reserve, with weights stored in EU-controlled vaults and accessible only under joint Council-Commission authorisation.
+
+Simultaneously, we are retooling the **Sovereign AI Behavioural Observatory** to feed directly into crisis response, not just analysis. The JRC hubs in Seville and Stockholm are now running daily red-team simulations against electoral systems, energy markets, and diplomatic channels, using Sentinel Node telemetry to refine attribution models. We are fast-tracking integration with national CERTs, offering member states priority access to Observatory insights in exchange for full data sharing — a bargain we must make attractive, because we cannot compel it. The delay in the **Counter-Deception Rapid Response Corps** is being addressed through a political trilogue under the Internal Market Council, where we are offering opt-in participation with sunset clauses to ease sovereignty concerns, while holding firm on minimum interoperability standards.
+
+Public sentiment remains at 20.0, and we are not blind to the risk: this turn’s measures are top-down, urgent, and legally aggressive. But the alternative — fragmentation, dependency, and irreversible strategic drift — is not governance. It is surrender. We are acting not because the path is clear, but because the cliff is visible.

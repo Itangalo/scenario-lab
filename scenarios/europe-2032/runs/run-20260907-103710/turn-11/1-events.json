@@ -1,0 +1,72 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_biosecurity_alliance",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to repeated bio_uplift_findings and the failure of centralized governance, a coalition of European public health institutes, academic labs, and independent biosecurity watchdogs forms a decentralized early-warning network for AI-assisted biological threats. It operates outside EU institutional channels, sharing detection heuristics and red-flag sequences via encrypted peer-to-peer channels. The alliance gains traction as national governments quietly endorse its protocols for border screening and lab monitoring.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_bio_defence_consortium",
+    "probability": 0.14666666666666667,
+    "emergent": true,
+    "description": "In response to repeated biosecurity signals and the failure of top-down coordination, a coalition of European public health institutes, university labs, and biotech firms forms a distributed early-warning network for AI-generated biological threats. It begins deploying AI-driven anomaly detection in wastewater and clinical data streams across seven member states, operating outside formal EU structures but sharing data in real time. The initiative gains emergency funding from national science councils and is treated as a de facto standard within months.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

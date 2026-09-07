@@ -1,0 +1,13 @@
+### The Edge of Control
+
+AI capability advances by +2.5 this turn to 94.5, accelerating into the terminal zone. At this level, frontier models operate beyond human verification in real time, and their internal reasoning is functionally inscrutable. No safety mechanisms have been deployed to match this pace, leaving ai_safety at 0.0 — a technical null point where even incident forensics are reactive guesswork.
+
+The EU responds with urgency. The Open Science Resilience Initiative, now integrated with national biosecurity agencies in key member states, demonstrates that auditable models can sustain critical functions — albeit at reduced speed. Hospitals in Germany and France successfully run diagnostics using open protein folding systems, proving operational viability under stress. Yet this success is overshadowed by structural fragility.
+
+The European Commission launches the **EU Execution Stack Initiative**, a large category 4 measure aimed at building sovereign execution capacity. Framed as essential for continuity of operations, it begins with a Council Regulation under Article 114 TFEU and redirects €1.8 billion in Digital Europe and NextGenerationEU funds toward two new EuroHPC-class data centres. These will host only auditable models and operate under EU security certification. The initiative is named the priority, signaling strategic reorientation.
+
+However, political capital is exhausted. With the Open Science Resilience Initiative still in flight (−3), the Joint Access Negotiation ongoing (−3), and the new priority (−1), the portfolio charge totals −7. The EU attempts to start the new measure but fails — at eu_political_capital 5.0, the threshold for loss of control has been crossed. A coalition of Benelux and Baltic states resists binding infrastructure mandates, citing economic exposure and legal challenges under internal market rules. The measure stalls in preliminary negotiations, delaying its formal start.
+
+Without delivery, no proposal bonus is earned. Sovereignty erodes further: ai_capability rose by 2.5 (−1), and the denial of frontier access persists as an unresolved structural condition. Despite no new event id, the ongoing exclusion functions as a sustained access denial, but metric rule 5 requires a discrete event to charge — so only the capability rise applies. Sovereignty falls to 17.0.
+
+Resilience holds at 50.0, supported by active coordination and partial substitution. Public sentiment remains stagnant at 27.0 — no visible benefit has broken through, and fears of dependency linger.

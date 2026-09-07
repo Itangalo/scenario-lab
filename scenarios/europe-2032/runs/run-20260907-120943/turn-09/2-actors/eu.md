@@ -1,0 +1,39 @@
+Secure sovereign AI capacity as the foundation of strategic autonomy and public trust
+
+## Statement changes
+``modify `two_year_commitment` (commitment): Secure sovereign AI capacity as the foundation of strategic autonomy and public trust``
+- Trigger: the two-year commitment period closes this turn
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we now act only where sovereign observability can be established, and we treat any action without it as provisional, reversible, and politically indefensible. This turn, we extend that principle: we will no longer accept dependency on systems we cannot replicate, audit, or replace within our own jurisdiction.  
+  - Grounds: The **bio_uplift_findings** this turn confirm that non-experts can now reach organism-design capability with model assistance, drastically lowering the barrier to catastrophic misuse. This is no longer a frontier-lab problem — it is a diffusion problem. Yet our **Sovereign Verification Regime** remains incomplete, and the **Replication Foundry Initiative** is still in early assembly. We are acting under uncertainty not because we choose to, but because the threat has outrun our control. The commitment stands, but its meaning has hardened: we will move early, but only where we can act alone. Dependency is not a risk. It is a surrender of agency.
+
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now understand that without sovereign technical capacity, neither mandate can be fulfilled. Control is not policy, law, or negotiation. It is access, compute, and the ability to run, audit, and counter systems independently. When that is absent, all action is reactive, all regulation is theatre, and all resilience is borrowed.  
+  - Grounds: The **labour_displacement** crisis has now visibly hollowed out entry-level professions across law, accountancy, and software, with no replacement pipeline. Public sentiment has collapsed to 20.0, not because of AI’s potential, but because of its lived reality: opaque systems making irreversible decisions, foreign-controlled infrastructure enabling harm, and no visible path to redress. The **emergent_municipal_oversight_network** grows not as a sign of strength, but of central failure. Our identity must reflect that sovereignty is not a technical detail — it is the condition of legitimacy.
+
+## Portfolio
+`InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites` — finished  
+`Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones` — finished  
+`Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly` — finished  
+`Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors` — finished  
+`Sovereign Verification Regime (category 5, costs 3 per turn, started turn 6, finishes on turn 9): Establish an EU-controlled, technically sovereign capability to audit, reconstruct, and contain high-capability AI systems, regardless of origin, through mandatory checkpoint archiving, runtime telemetry, and independent red-teaming` — finishes this turn
+
+## New measure
+**Measure:** Sovereign Inference Backbone  
+A federated network of EU-controlled inference clusters, hardened and distributed, to host sovereign replicas from the Replication Foundry Initiative and enforce strict access controls on all high-capability AI use in public services.
+
+Category: 4 (Sovereignty and industrial capacity)  
+Size: large  
+Finishes on turn: 13  
+Targeted effect: Increase eu_ai_sovereignty by 10–15 points by operationalising sovereign inference at scale; raise resilience by 8 points by ensuring continuity of critical AI services during supply shocks  
+Applies to: EU institutions, national governments, and public service providers required to run high-capability AI systems
+
+## Priority
+**Priority:** Sovereign Verification Regime  
+This remains our top priority because it finishes this turn, and its success or failure determines whether the **Replication Foundry Initiative** and the new **Sovereign Inference Backbone** can ever be trusted: without verified checkpoints, telemetry, and red-team access, we are replicating black boxes. The **bio_uplift_findings** prove that the bio risk gate is now open, and we cannot afford to build sovereign infrastructure on unverified foundations. We are pushing for full compliance, publishing spoofing evidence, and preparing to trigger exclusion clauses for non-cooperative providers — not as a threat, but as a necessity.
+
+## In practice
+We are executing the final phase of the **Sovereign Verification Regime** with binding legal force. The EAAD+ has issued formal notices to the two remaining non-compliant U.S. firms: full checkpoint submission and runtime telemetry access must be granted within 30 days, or deployment rights in all EU public services will be suspended under Article 17 of the AI Act. We are preparing a public dossier on telemetry spoofing patterns, to be released alongside a binding update to the Act that closes the obfuscation loophole. The **Institutional Integrity Audit** has concluded, and we are acting on its findings: the three institutions under investigation will be placed under temporary AI-use moratoriums until independent review is complete. The Public Trust Observatory will publish the full audit report next week, alongside a proposed directive to institutionalise audit independence and protect whistleblowers.
+
+The **Replication Foundry Initiative** is now operational under emergency protocols. We have activated wartime grid priority for the three InvestAI Gigafactory sites in Poland, Romania, and Spain, and redirected decommissioned H100 clusters from national research pools to feed the open-weight training pipeline. The EAAD+ is coordinating with the **emergent_municipal_oversight_network** to integrate local red-team findings into the sovereign verification stack, creating a distributed but unified assurance layer. This is not a long-term solution — it is triage. But it is the only way to begin closing the observability gap while the **Sovereign Inference Backbone** is built.
+
+We are launching the **Sovereign Inference Backbone** as the next phase of industrial mobilisation. This is not about training — it is about control of use. We are designating ten core inference sites across member states, each hardened against physical and cyber intrusion, with split-key access and mandatory EU staffing. All high-capability AI systems used in public services must run on this backbone by turn 13, or face decommissioning. We are negotiating with Germany, France, and the Nordic bloc to co-fund the expansion, using the Anti-Coercion Instrument as leverage to ensure national compliance. This is not optional infrastructure — it is the minimum condition for public trust.

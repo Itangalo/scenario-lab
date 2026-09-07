@@ -1,0 +1,13 @@
+### The Denial and the Response
+
+In January 2031, the European Union was abruptly locked out of the world’s most capable AI model. Hospitals lost diagnostic support, ministries found policy simulations inaccessible, and firms relying on advanced forecasting faced sudden operational voids. No explanation was given, no appeal accepted. The cutoff was total and immediate—a stark demonstration of dependence.
+
+Brussels reacted with urgency. The **Sovereign AI Sentinel Nodes**, deployed across Jülich, CINECA, Prague, and Bologna, went live this spring, feeding telemetry into a new EU AI Situational Awareness Hub. While integration delays and national reservations limited full data sharing, bilateral agreements ensured partial interoperability. The system now monitors for unauthorised model modifications and compute leaks in critical infrastructure, marking a technical milestone.
+
+Simultaneously, planning advanced for the **Sovereign AI Behavioural Observatory**, now designated the EU’s named priority. Hosted under the Joint Research Centre, it aims to transform raw signals into strategic understanding—especially of AI-driven deception. Initial staffing has begun, drawing talent from Ukraine, South Korea, and neutral states, but full operational capacity remains years away. The initiative represents a shift from passive monitoring to active cognitive defense, though its scope and funding are still constrained.
+
+The proposal for a **Counter-Deception Rapid Response Corps** under EEAS and Europol was formally tabled but not launched. Legal discussions around its basis in Article 4(2) TEU and NIS2 exposed deep reservations among member states about emergency powers, and consensus was not achieved. The idea remains under negotiation, but without binding commitments, it will not proceed this turn. The initial exercises planned for July are now delayed pending political alignment.
+
+Yet the momentum is fragile. Political capital remains at zero. The denial of frontier access triggered a sovereignty penalty, and capability growth continues unchecked. Public sentiment holds at 20.0, with no visible improvement in trust. Only one new measure—the Sentinel Nodes—was completed this turn; the Behavioural Observatory is in early development and counts as the single new measure introduced. Resilience ticks up slightly due to the Sentinel Nodes’ completion, but systemic fragility persists.
+
+The frontier races ahead, now nearing the terminal zone of measurable intelligence. Europe builds institutions to catch up—but whether they will arrive in time is uncertain.

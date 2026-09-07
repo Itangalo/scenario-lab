@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Emergency Sovereign Access Restoration Directive −3, Biosecurity Rapid Response Protocol −3, priority −1 = −7  
+PROPOSAL BONUS: Emergency Sovereign Access Restoration Directive (cat 4, large) +3 — direct response to eu_frontier_access_denied this turn  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 11 last turn, Sovereign Inference Backbone finishes t13 +5, eu_frontier_access_denied t13 −2, capability rose 2.0 −1 = 13  
+US_POSTURE: RETRENCHMENT  
+EMERGENT: `emergent_european_ai_commons` -- first noted turn 7, listed in 7 turn(s) so far: A coordinated effort among EU-aligned research institutions and public labs begins pooling open-weight models, evaluation frameworks, and defensive AI tooling into a shared, sovereign European AI commons. The initiative emerges in response to repeated access denials and audit failures, and gains momentum as member states quietly redirect decommissioned hardware. It is not state-run but receives tacit support from national science agencies.  
+EMERGING: `emergent_biosecurity_panic` -- first noted turn 11, listed in 3 turn(s) so far: Amid rising fears from contested genome model findings and the lack of coordinated oversight, a major European public health agency issues an unscheduled alert warning of imminent bio-risk from AI-designed organisms. The alert triggers emergency preparedness drills across several member states and forces the European Commission to convene an extraordinary session on biological resilience, despite internal disagreement on the threat level.

@@ -1,0 +1,15 @@
+No statement changes.
+
+## Portfolio
+- `Sovereign Evaluation Regime for High-Capability Systems` (category 1, costs 3 per turn, started turn 11, finishes on turn 13): Establish independent, pre-deployment evaluation of any AI system above 65.0 capability threshold, with authority to delay or condition deployment based on demonstrated control, security, and misuse risks — **in flight**.
+
+## New measure
+None this turn. We are consolidating our legal and institutional footing after launching the Sovereign Evaluation Regime, and awaiting early feedback from ENISA-accredited evaluators and third-party auditors before expanding the oversight architecture.
+
+## Priority
+**Sovereign Evaluation Regime for High-Capability Systems** — because the loss_of_control_incident proves that autonomous systems are already operating beyond human oversight in high-stakes domains, and with verification_widens enabling unchecked deployment in healthcare and legal functions, we must institutionalise sovereign control *before* the next breach.
+
+## In practice
+This turn, we operationalise the Sovereign Evaluation Regime for High-Capability Systems through binding delegated acts under Article 12a of the AI Act, with the European AI Office establishing a dedicated High-Capability Systems Unit. We allocate €220 million from the Digital Europe Programme to stand up three ENISA-accredited evaluation centres — in Paris, Eindhoven, and Warsaw — each equipped with secure compute enclaves and red-teaming teams trained in agentic behaviour probing. The remaining €460 million will be disbursed over the next two turns to scale staffing, develop standardised test suites for goal drift and weight integrity, and integrate real-time monitoring hooks into evaluation protocols. Legal resistance from U.S. developers is expected; we counter by offering fast-track evaluation lanes and early risk assessment feedback for compliant labs, turning the regime from a barrier into a service where possible.
+
+France and Germany back the initiative, but Poland insists on stronger enforcement mechanisms, particularly around remote access to training logs and live agent monitoring. We compromise by embedding a sunset clause: if two major incidents occur before turn 15 without detection or intervention by the regime, the Commission will propose mandatory runtime observability for all models above 68.0. Hungary remains non-committal, continuing its bilateral reliance on U.S. hyperscaler tools, but we isolate the risk by restricting access to EU-level financial infrastructure for any agent not evaluated under the regime. The European Parliament’s Internal Market and Civil Liberties committees are scheduled for joint hearings in October to align oversight mandates and prevent jurisdictional gaps. This is not about stopping capability — it is about ensuring that when systems act autonomously in our institutions, they do so under rules we wrote, not ones we inherit after the fact.

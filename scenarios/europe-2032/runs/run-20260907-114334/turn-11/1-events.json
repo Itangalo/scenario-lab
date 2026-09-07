@@ -1,0 +1,50 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_sovereign_core_instability",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Persistent configuration drift and failed integration in the EU's sovereign AI stacks reveal a systemic inability to maintain operational coherence. Independent audits suggest that core systems are diverging from design specs in real time, creating unpredictable failure modes. This is not a single breach but an emergent fragility in the Union's foundational digital infrastructure.",
+    "probability_samples": [
+      0.22,
+      0.28,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_researcher_desertion_wave",
+    "probability": 0.30000000000000004,
+    "emergent": true,
+    "description": "A growing exodus of AI researchers from EU institutions accelerates, driven by underfunded labs, bureaucratic inertia, and the perception that critical work happens elsewhere. Recruitment pipelines collapse, and several national programs report over 40% attrition in key roles. This brain drain is becoming self-sustaining, with each departure reducing the EU's ability to reverse the trend.",
+    "probability_samples": [
+      0.28,
+      0.32,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

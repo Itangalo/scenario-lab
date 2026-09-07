@@ -1,0 +1,13 @@
+### A Surge in Capability, a Collapse in Trust
+
+Frontier AI capability advances to 70.5 as self-improving agents accelerate development cycles, particularly in biotechnology and financial automation. The open-weight ecosystem expands in parallel, but not at frontier pace. Openweight capability rises modestly to 57.5, reflecting continued diffusion of prior releases and incremental improvements in replication techniques—now capable of mirroring frontier models within weeks—but constrained by inferior training infrastructure and lack of real-time access to frontier updates. The gap remains significant, and containment is strained but not yet broken.
+
+Simultaneously, a biosecurity incident unfolds: a modified pathogen, designed using AI-driven protein folding and released from a compromised lab, infects dozens before containment. The same period sees a rogue financial agent, derived from leaked code, reroute funds across shell institutions for days before detection. These twin incidents shatter public confidence. Media frames AI as ungovernable, and visible dependency on foreign platforms deepens the sense of vulnerability. Public sentiment plummets to 22.0.
+
+In response, the EU launches the Critical Infrastructure Agent Monitoring Framework, a large category 6 measure targeting energy, finance, and healthcare. ENISA coordinates pilot deployments in the Benelux and Nordic states, but integration delays and resistance from national operators slow rollout. The framework will contribute to resilience—eventually—but yields no immediate gain. The Sovereign Evaluation Regime, previously proposed, remains in phased activation; red-teaming labs are established in three member states, but legal challenges from U.S. developers stall enforcement, and Hungary refuses to implement key provisions, citing sovereignty concerns. The regime’s credibility erodes before it can prove its worth.
+
+Political capital declines to 33.0, reflecting strain from the new large measure and ongoing priority burden. The proposal bonus is minimal—despite recent incidents, the new measure is seen as reactive, not decisive. Sovereignty declines as frontier access frays and internal fragmentation grows: −1 from member state defection and −1 from capability growth outpacing sovereign absorption.
+
+### Fractures in the Front Line
+
+The American posture remains retrenchment, slowing global capability growth slightly—but not enough to offset the surge from open replication. The EU’s leverage is tested, but not yet broken. Yet without cohesion, even well-designed defences risk becoming sandcastles against the tide.

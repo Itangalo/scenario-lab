@@ -1,0 +1,13 @@
+### The Edge of Control
+
+The EU declares the **Sovereign Inference Backbone** complete, marking the first operational deployment of sovereign high-capability AI in public services across nine member states. However, the backbone’s reach is narrow—its clusters, powered by distilled open models, lack the scale to support systemic resilience or broader autonomy. The **Sovereign Compute Acceleration Programme** remains overburdened and delayed, with France and Germany resisting joint command despite Article 122 enforcement. ASML’s 3nm packaging boost fails to translate into new clusters; supply bottlenecks and energy constraints stall deployment.
+
+A major AI-generated ransomware attack—the **cyber_major_incident**—cripples hospital systems in Bavaria and Emilia-Romagna, exposing the limits of current defences. ENISA’s emergency directives are only partially implemented, and mutual aid falters under legal and technical incompatibilities. Still, the **Emergency Resilience Activation** begins yielding results: air-gapped rebuilds and open-weight defensive agents from the Replication Foundry stack help contain the breach, earning a partial resilience gain.
+
+The **Coalition for Open Weight Stewardship** is launched with Norway, Switzerland, and South Korea, aiming to govern high-capability open models. Yet early momentum stalls—U.S. and Chinese developers ignore its standards, and internal disagreements over access thresholds weaken cohesion. The **emergent_european_ai_commons** grows organically, with national labs pooling tools and hardware, but remains outside formal governance.
+
+Meanwhile, **member_state_defection** strikes as Poland signs a bilateral AI infrastructure deal with a U.S. hyperscaler, bypassing EU coordination. The move triggers a diplomatic rift and undermines Brussels’ leverage. In response, the EU threatens exclusion from public tenders, but enforcement remains uncertain.
+
+The **middle_power_coalition** forms, aligning export controls and evaluation protocols with key partners. This strengthens diplomatic standing and secures limited compute access, offering a rare political win.
+
+Despite these efforts, AI capability surges to 96.0, driven by unregulated self-improvement loops. Openweight capability rises to 78.0 as distillation spreads. AI safety remains at 1.0—no safeguards accompany the leap. Public sentiment holds at rock bottom, and political capital erodes further under the weight of five large measures.

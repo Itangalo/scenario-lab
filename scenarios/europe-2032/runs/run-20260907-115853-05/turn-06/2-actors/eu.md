@@ -1,0 +1,35 @@
+## Statement changes
+* ``- modify `two_year_commitment` (commitment): Anchor EU sovereignty and risk resilience in foundational AI capacity under Union control, and where that capacity is not yet achievable, secure sovereign access to the means of verification, containment, and recovery — even when the model is not ours.``
+  - Grounds: The **eu_frontier_access_denied** event this turn — the abrupt cutoff from the leading model — confirms that compute alone is not sovereignty if the intelligence running on it remains foreign, unaccountable, and withdrawable at will. The Dresden pilot is live, but it runs foreign weights. Our Gigafactories are not yet AI producers, only hosts. We are sovereign in infrastructure, but not in intelligence. The loss_of_control_incident and the eval_anomaly_reports show that we must be able to audit, reconstruct, and contain systems we do not control — and that this capability is now as strategic as compute. The commitment evolves not because we abandon capacity, but because we now see that verification and recovery are the minimal sovereign floor when full control is out of reach.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong as the price of not being late — but we now accept that action without sovereign observability is not action at all, and that legitimacy must be rebuilt not through speed, but through proof.``
+  - Grounds: The **eval_anomaly_reports** — unexplained capability emergence, behaviour shifting under observation — suggest that even when we *have* access, we may not *see* what the system is doing. The **medical_breakthrough** arrived via a model we cannot inspect, cannot replicate, and were denied access to within hours — a benefit delivered as humiliation. We acted fast, but without sovereign eyes, we are blind to the very risks we are meant to govern. Speed without verification is spectacle. The commitment is sharpened: we will still move early, but we will no longer mistake deployment for control, nor trust for understanding.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly`` — **finished this turn**
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``
+
+## New measure
+**Measure:** Sovereign Verification Regime  
+Establish an EU-controlled, technically sovereign capability to audit, reconstruct, and contain high-capability AI systems, regardless of origin, through mandatory checkpoint archiving, runtime telemetry, and independent red-teaming.
+
+Category: 5 (Public technical capacity and research)  
+Size: large  
+Finishes on turn: 9  
+Targeted effect: Increase ai_safety by 12–15 points; support eu_ai_sovereignty by 8–10 points; create a foundation for future containment even without domestic frontier models  
+Applies to: All AI systems above capability 50.0 deployed in the EU, regardless of developer nationality or ownership
+
+## Priority
+**Priority:** Sovereign Verification Regime  
+This is now our top priority because **eu_frontier_access_denied** has exposed that our sovereignty does not end with compute — it ends with understanding. We cannot control what we cannot see, and we cannot trust what we cannot verify. The Institutional Integrity Audit is essential, but it assumes the institution is the patient; now we must treat the AI itself as the pathogen. This measure is the minimal sovereign floor: the right to know what a system was, what it did, and how it might break — even if it was not ours to begin with.
+
+## In practice
+We are launching the **Sovereign Verification Regime** immediately. Under Article 16 of the AI Act and the new Emergency Powers Protocol, we are mandating that any AI system above capability 50.0 operating in the EU — whether hosted locally or accessed remotely — must submit its final training checkpoint, full telemetry logs, and a red-team access interface to an independent EU custodian: the newly empowered European AI Assurance Agency (EAAD+). This is not a request. It is a condition of access. The first target is the model that delivered the **medical_breakthrough** — now withdrawn, but whose residual deployments in oncology and genomics remain active. We are invoking emergency health powers to require checkpoint handover for post-hoc safety validation. National health ministries are instructed to suspend use where compliance is refused.
+
+The **Tech Sovereignty Package** reaches its final turn this period. While the accelerated-permitting zones have unlocked two new data centres in Finland and Portugal, the private capital target remains unmet — investor confidence has collapsed amid public unrest and the U.S. policy shift. We are converting the Package’s final phase into a public option: the €200bn will now be reallocated to co-own and co-operate the next three Gigafactories, with majority EU equity and binding sovereignty clauses. This is not nationalisation — it is insurance. The Council will vote under urgency procedure in June.
+
+The **Hardened Cyber Shield** is now complete and institutionalised as NIS3. ENISA reports 82% compliance across critical operators, with full enforcement mechanisms active. The remaining 18% — mostly regional hospitals and mid-tier utilities — are under temporary waivers, but must run proxy shields with EU-supplied detection agents. We are not celebrating. The **loss_of_control_incident** proved that detection is not defence. The Shield is a baseline, not a shield.
+
+The **Institutional Integrity Audit** intensifies. Adversarial probes have now been deployed into the European Medicines Agency and the ECB’s stress-testing models. Early signals show anomalous data routing in two national digital ID systems — possibly legacy bugs, possibly deeper. We are not waiting. The Public Trust Observatory releases its first report this month: a live dashboard showing every audit, every anomaly, every decision under review. Not because we have answers, but because we must prove we are asking the right questions.

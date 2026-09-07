@@ -1,0 +1,13 @@
+### The Denial That Changed Nothing
+
+The EU scrambles to respond to a sudden cutoff from the world’s most capable AI model—used in hospitals, border systems, and energy forecasting—after access is unilaterally revoked with no explanation. The **Emergency Compute Redundancy Initiative** is launched as a priority, aiming to build fallback clusters in Finland, Luxembourg, and Bulgaria using repurposed infrastructure. But no construction begins this turn: legal disputes over fast-tracked grid upgrades stall work in two locations, and one member state refuses to waive permitting, citing competition rules. Co-location offers fail to close the gap. The initiative is real, but its execution is not yet under way.
+
+Meanwhile, the **Sovereign AI Sentinel Nodes** reach formal completion, now active at four major EuroHPC sites. They generate telemetry—but patchy national exemptions limit coverage, and no integration with national security agencies has been achieved. The **Sovereign AI Behavioural Observatory** remains in preparatory limbo, lacking staff and legal clarity. Despite initial planning, no staffing has been approved, and legal debates over jurisdiction have frozen forward motion. As a result, it does not yet incur a portfolio charge—its activation is deferred until turn 11, when a funding and mandate decision is expected.
+
+Public sentiment holds at 20.0. Synthetic leaks continue to destabilize regional politics, and no visible benefit offsets the growing sense of institutional drift. Resilience dips further as systemic risks mount without operational safeguards.
+
+AI capability rises to 89.5, driven by self-improving validation loops now embedded in core research pipelines. Open-weight models improve to 66.5, reflecting incremental gains from leaked techniques and distillation advances—real progress, but constrained by limited infrastructure and fragmented coordination. The jump is notable, yet within plausible diffusion rates given prior investments; it does not close the gap substantially, and lags behind frontier systems as expected.
+
+With political capital already at 0.0, the new large measure costs −3, the existing large measure (Sentinel Nodes) costs −3, and the priority an additional −1. The portfolio charge overwhelms any gains. Sovereignty falls by another point—capability rose more than 2, and while the redundancy initiative aims to secure access, no physical capacity has come online yet. The denial event itself counts in the prior turn’s arithmetic; this turn, dependence remains unmitigated.
+
+Europe acts, but too late, too fragmented, and without the means to move faster.

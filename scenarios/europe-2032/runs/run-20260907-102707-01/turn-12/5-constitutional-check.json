@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 61.0 to 79.5 (+18.5) in one turn, which exceeds the maximum plausible growth allowed under the constitutional constraint that `openweight_capability` may only rise or stay flat and must not exceed `ai_capability`, but crucially, such a jump lacks justification under the narrative provided. The narrative describes a successful open science initiative in protein folding, but does not justify a near-doubling of global open-weight capability, especially when `ai_capability` itself rose only 3.0 points. A rise of this magnitude would require either a multi-turn buildup or a catastrophic collapse and rebuild event, neither of which is narrated. The jump also nearly closes the gap with `ai_capability` (now 98.0 → 79.5), which has been steadily growing — such convergence must be gradual and justified by sustained effort, not a single-turn leap.\n- Modelling choice 9 violated: While the rule limits any metric from moving more than 25 points in one turn (which is technically respected here), the combination of a +18.5 point jump in `openweight_capability` without corresponding narrative or structural justification violates the spirit and application of the hard bound, especially when no other metric (including `ai_capability`) moves proportionally. The rule is not just about magnitude but about preventing implausible surges unmoored from causal drivers."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 62.0 to 79.5 (+17.5) in one turn, which exceeds the maximum allowable change of 25 points *only if justified by accumulation*, but more critically violates the principle that `openweight_capability` must not exceed `ai_capability` at any time. Here, `ai_capability` is 97.5 and `openweight_capability` is 79.5 — this does not violate the ceiling, but the *size and speed* of the jump (17.5 points) is implausible under the accumulation model. The narrative attributes it to \"reverse-engineered from leaked systems\" and rapid distribution, but no prior notepad entry or narrative establishes a mechanism for such a sudden leap. The growth rate is inconsistent with steady accumulation and implies a discontinuous capability jump without sufficient grounding in prior developments.\n- Invariant 7 violated: The narrative and metrics imply a significant divergence between `eu_ai_sovereignty` (16.0) and `eu_political_capital` (0.0), which is permitted *in principle*, but the drop in political capital to 0.0 is attributed to \"overreach\" while simultaneously launching a major new measure (Emergency Resilience Surge). This contradicts Modelling Choice 5: at most one new measure per turn. The Emergency Resilience Surge is a new measure, and the retooling of the Legitimacy Recovery Initiative constitutes a second initiative change, violating the \"one new measure per turn\" rule. The portfolio charge applies multiple negative terms, suggesting multiple active changes, which exceeds the allowable scope.\n- Narrative Constraint 8 violated: The narrative states \"irreversible in the short term\" and \"fragmentation accelerates\", which telegraphs future outcomes. Specifically, describing the frontier access cut as \"irreversible\" implies a forecast of future gate states, which violates the prohibition on telegraphing. Tension and ambiguity are allowed, but asserting irreversibility crosses into predictive certainty, which belongs only in event evaluations, not narrative."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

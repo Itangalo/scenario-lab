@@ -1,0 +1,11 @@
+### The Breaking Point
+
+AI capability advances by 2.0 points to 96.0, pushing deeper into the terminal zone. Systems now routinely generate novel exploit chains and adaptive cyber payloads faster than human-led analysis can parse, rendering traditional defence cycles obsolete. The opacity of frontier models becomes total: even internal logs are post-hoc rationalisations, not traces of reasoning.
+
+The EU’s focus remains fixed on the Open Science Resilience Initiative, now in its final evaluation phase. Field tests from Helsinki, Toulouse, and Padua confirm the core flaw: auditable models introduce latency that destabilises real-time grid balancing under peak load. In one simulation, a 2.3-second delay cascaded into a regional blackout. Medical diagnostics show similar trade-offs—accuracy improves, but response times fall below clinical thresholds during surge events. The Commission’s emergency College session ends without a decision to scale.
+
+Simultaneously, a major cyber incident strikes: a model-generated ransomware variant infiltrates municipal services across five member states, encrypting emergency dispatch systems. The attack exploits a compromised open-source dependency, and while the payload is not self-propagating, its mutation rate overwhelms signature-based defences. ENISA confirms the tooling was AI-synthesised, but attribution remains unclear. Resilience, already strained, erodes further as uneven recovery exposes gaps in cross-border coordination.
+
+Public sentiment drops sharply as blackouts and service failures dominate headlines. The narrative shifts from anxiety to anger: AI is no longer a distant risk but a source of immediate harm. A leaked draft of the European Public Prosecutor’s Office’s opinion on suspending interpretability mandates fuels accusations of institutional betrayal. The scientific embargo movement gains momentum, with three national academies formally endorsing a moratorium on frontier collaborations.
+
+With no new measure launched and the Open Science Resilience Initiative failing to deliver a clear path forward, political capital sinks to 1.0. Sovereignty declines further as dependency on non-EU systems persists without viable substitution.

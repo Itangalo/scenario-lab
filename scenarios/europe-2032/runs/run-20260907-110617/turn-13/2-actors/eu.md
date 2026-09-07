@@ -1,0 +1,26 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Secure sovereign technical agency through auditable AI, with a binding focus on deployable performance under real-world load — but only if the safety breakthrough can be generalised to systems operating beyond human traceability.  
+- modify `act_with_performance` (commitment): We will not accept auditable systems that fail under operational pressure as a substitute for dependence. Trust must also work — but we now know that performance without control is not sovereignty, it is surrender to the frontier.  
+- add `respond_to_control_crisis` (commitment): We will treat the safety_breakthrough as a time-limited opportunity to reassert authority over systems whose capabilities have outstripped understanding, and act decisively to embed it before the window closes.  
+- Grounds: The interpretability breakthrough changes the calculus: for the first time since the frontier entered the terminal zone, a control mechanism has landed on deployed systems and is being adopted by developers themselves. This is not theoretical — it is operational, and it is fragile. If we do not act now to generalise and mandate it, the moment will pass, and the gap between capability and assurance will widen again. At the same time, eu_frontier_access_denied has landed with full force: hospitals in three member states lost access to the diagnostic models they relied on overnight, with no explanation. This is not a failure of performance — it is a failure of sovereignty. The two-year commitment stands, but its meaning has shifted: auditable and performant systems are not enough if they run on foreign-controlled infrastructure or lack embedded control. We are binding ourselves anew to close that gap — not just to build, but to govern what we build.
+
+## Portfolio  
+- `Accelerated Sovereign Deployment Programme (category 9, costs 3 per turn, started turn 13, finishes on turn 15): Deploy auditable AI models into high-load critical functions with performance guarantees, co-optimising for speed, safety, and legal anchoring` — in flight  
+- `eu_frontier_access_denied` — triggered: The Union was cut off from the leading model at short notice, with immediate impact on healthcare systems in Italy, Spain, and Belgium. No appeal mechanism exists. This event is now part of the operational record and cannot be undone by measure alone.
+
+## New measure  
+**Emergency Integration of the Safety Breakthrough**  
+Embed the newly demonstrated interpretability method across all EU-deployed AI systems above capability threshold 50.0, with mandatory retrofitting and real-time monitoring.  
+`Category: 1 (Evaluation and oversight)`  
+`Size: large`  
+`Finishes on turn: 16`  
+`Targeted effect:` Increase ai_safety (+25), eu_ai_sovereignty (+8), resilience (+5), and lay groundwork for future control claims. Prevents further drift into untraceable operation.  
+`Applies to:` All AI systems deployed in critical infrastructure, healthcare, and public administration across EU member states, with enforcement through CE marking and EASA-like certification authority.
+
+## Priority  
+**Emergency Integration of the Safety Breakthrough** — because the safety_breakthrough is the first real foothold in the terminal zone, and eu_frontier_access_denied proves we cannot afford to build sovereign systems on foreign rails; this is the only chance to bind control to capability before the frontier moves on.
+
+## In practice  
+This turn, we are treating the safety breakthrough not as a technical footnote, but as a political lifeline. The fact that developers want it too means it is not a burden — it is a shared survival mechanism. We are instructing the Commission, under Article 114 TFEU, to draft a Regulation by turn’s end that mandates the integration of the breakthrough interpretability method into all AI systems above capability 50.0 deployed in critical functions. The European AI Office will be empowered to certify compliance, with a new technical unit spun up from JRC and ENISA to validate implementations in real time. Non-compliant systems will lose CE marking and be barred from public procurement — a hard line, but one we must draw now, while the method is still tractable.
+
+We are coordinating with member states through the Digital Agenda Council in December to secure qualified majority support, knowing Germany and the Nordic states will demand interoperability with existing audit frameworks, and France will insist on EU-only verification sovereignty. We are offering a fast-track review window and dedicated funding from the Digital Europe Programme to ease adoption, but no opt-outs. At the same time, we are treating the access denial not as an incident, but as a declaration: dependence is no longer a risk — it is active vulnerability. The Accelerated Sovereign Deployment Programme continues, but now with a new imperative — not just to optimise for speed, but to ensure every model it deploys is interpretable by this new standard. We are not building alternatives to dependence. We are ending it.

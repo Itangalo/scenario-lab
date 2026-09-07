@@ -1,0 +1,11 @@
+### The Surge and the Split
+
+Global AI capability advances by 2.5 points to 94.5, accelerating toward the terminal zone. At this level, frontier models operate with opaque long-horizon planning, and developers can no longer trace chains of reasoning behind critical decisions. The gap between capability and control widens—no safety mechanism keeps pace.
+
+The EU completes the Open Science Resilience Initiative, deploying auditable AI modules in energy and health systems. A pilot in Lombardy slashes grid instability by 40%, proving that controlled systems can deliver. Yet legal fragmentation limits rollout, and the victory feels partial.
+
+Amid this, a quiet revolution gains ground: several member states, bypassing Brussels, formalise a regional compute pact under Swiss stewardship. The initiative pools 18% of Europe’s accessible compute to train open, auditable models for public resilience. The EU responds by launching the Regional Compute Integration Pact (RCIP), aiming to absorb the network into its sovereignty framework. Emergency talks in Bern secure scientific independence and joint governance, but larger states resist ceding influence. Funding is pledged, but full integration is delayed.
+
+Resilience rises slightly, buoyed by the new pact and the resilience initiative’s partial success. AI safety remains at 0.0—no new safeguards have been implemented on deployed systems, and the lack of traceability in frontier models deepens concern, though no formal decline has yet registered in the metric. Public sentiment inches up to 30.0—modest gains from a medical breakthrough using AI are undercut by widespread distrust, as a scandal reveals automated welfare denials in two countries. Political capital dips to 4.0 under the weight of ongoing measures and internal discord. Sovereignty gains a fragile +2 from the RCIP’s partial anchoring of distributed capacity, offset slightly by continued capability growth.
+
+The regional compute network shows promise, but its output remains constrained by fragmented access and governance delays. While early training runs from the pact contribute to open-weight capability, the gains are incremental rather than transformative—lifting `openweight_capability` to 62.0, still safely below the frontier and consistent with accumulated progress.

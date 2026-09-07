@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Activate emergency failover protocols −3, Emergency Infrastructure Audit −3, priority −1 = −7  
+PROPOSAL BONUS: Emergency Infrastructure Audit (cat 6, large) +3 — directly answers systemic fragility exposed by recent cyberattack and frontier leak  
+LEGITIMACY LENDS: capital 1.0, sentiment 35.0 → +2  
+SOVEREIGNTY: 19.0 last turn, no capacity event, capability rose 2.5 −1 = 18.0  
+US_POSTURE: CONSOLIDATION  
+emergent_local_energy_backlash — now listed in 8 turn(s): Local moratoriums on data centres spread to eight member states, coordinated through shared legal templates. Grid stability concerns are cited, but energy ministers privately admit political pressure is mounting.  
+emergent_open_bioscience_breakthrough — now listed in 8 turn(s): The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.  
+emergent_data_haven_movement — now listed in 4 turn(s): A coalition of smaller EU member states, frustrated by the Union's inability to secure AI access or protect digital infrastructure, begins quietly establishing bilateral data-sharing and compute-residency agreements with neutral and non-aligned countries. The move is framed as 'digital sovereignty by alternative means' and gains momentum as grid instability and access denials erode trust in centralized EU coordination.

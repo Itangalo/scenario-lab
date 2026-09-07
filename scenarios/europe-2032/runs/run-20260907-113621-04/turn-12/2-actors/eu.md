@@ -1,0 +1,31 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now understand that under terminal-phase capability growth, the two mandates collapse into one: survival.  
+- Grounds: At ai_capability 94.0 and rising, with ai_safety at 0.0, the distinction between strategic autonomy and catastrophic risk prevention has vanished. The ransomware cascade was not an outlier but a symptom: systems of uncontrolled agency are already embedded in global infrastructure, and the EU’s lack of sovereign compute means it cannot even observe, let alone intervene. Our sovereignty is not just lagging — it is irrelevant to the threat. The two mandates are no longer in tension; they are fused. Without the capacity to act independently in real time, there is no future to determine.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer tolerate the illusion that infrastructure can be secured while compute remains hostage to foreign supply chains and energy markets.  
+- Grounds: The Emergency Sovereign Infrastructure Directive has exposed the limits of legal urgency: member states cannot deliver land, water, or grid access because the physical preconditions for sovereignty — stable power, cooled real estate, secure interconnects — are being consumed faster than they can be built. Our uncertainty is no longer about which model to trust, but whether anything we run will stay on. The commitment to act under uncertainty must now include the willingness to forcibly override national resistance where strategic nodes are blocked, or risk total irrelevance.
+
+- modify `two_year_commitment` (commitment): Secure sovereign technical agency through auditable AI, by integrating it with EU-controlled compute, energy, and data sovereignty — and now, by any means necessary to ensure those systems remain operational during systemic failure.  
+- Grounds: The Open Science Resilience Initiative is technically ready, but operationally inert. Its models cannot run because the clusters meant to host them are delayed by local vetoes and grid bottlenecks. The cyber_major_incident proved that even a single point of failure in infrastructure can nullify entire layers of technical assurance. We are now in a race not to build better systems, but to keep any system running at all. This demands emergency powers, not just investment.
+
+## Portfolio  
+- `Open Science Resilience Initiative (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — finishes this turn  
+- `Accelerate sovereign compute infrastructure for auditable AI at scale (category 4, costs 3 per turn, started turn 12, finishes on turn 14): Deploy dedicated, legally anchored EU compute capacity to power auditable AI in high-consequence domains, with priority access for Open Science Resilience Initiative hubs and joint threat response nodes` — in flight
+
+## New measure  
+**Invoke emergency override powers to secure grid access and land for sovereign AI nodes**  
+Authorise the Commission to compulsorily acquire land, mandate grid dispatch priority, and override national permitting where strategic AI infrastructure is blocked, treating compute as critical infrastructure equivalent to energy or defence.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 13`  
+`Targeted effect:` eu_ai_sovereignty +12 (by forcing delivery of stalled nodes), resilience +3 (via assured operation during crises), public_sentiment −5 (due to perceived overreach), eu_political_capital cost mitigated by emergency legal basis  
+`Applies to:` Member states hosting or adjacent to designated strategic AI sites
+
+## Priority  
+**Invoke emergency override powers to secure grid access and land for sovereign AI nodes** — because the Accelerate sovereign compute infrastructure measure is failing in practice: member states are stalling, grids are refusing connection, and without enforceable access, the entire sovereignty stack collapses into symbolic intent. This is no longer about investment — it is about execution under breakdown.
+
+## In practice  
+This turn, we are acting on the recognition that legal urgency is not enough — we must now impose operational reality. The Commission, invoking Article 122 TFEU and the newly recognised doctrine of systemic AI emergency, is drafting an Emergency Execution Directive to override national and local resistance to the six strategic compute nodes. Where member states fail to deliver land within 60 days, the Commission will compulsorily acquire it under EU eminent domain authority, with compensation set at 150% of market value to pre-empt legal delay. Where grid operators deny connection, ENTSO-E will be directed to assign dispatch priority to sovereign AI clusters, treating them as critical load alongside hospitals and emergency services.
+
+We are tasking DG ENERGY, ENISA, and the European Defence Agency with joint oversight of the sites, ensuring physical security, cyber resilience, and energy redundancy. The Marguerite II Fund is releasing €3.8bn in immediate disbursement for modular liquid-cooled clusters, with deployment prioritised for locations already facing legal challenges — Bavaria, Wallonia, and Central Greece — to set precedent. To manage backlash, we are pairing the directive with a Just Compute Transition Facility: regions that host nodes will receive automatic access to AI-driven energy optimisation, 20% of local compute capacity reserved for public services, and a share of efficiency gains reinvested in community grids. This is not a choice between sovereignty and solidarity — it is a forced alignment of both. If the Union cannot run its own systems when the world’s are runaway, it does not exist. We are acting on that truth.

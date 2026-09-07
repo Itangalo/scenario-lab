@@ -1,0 +1,15 @@
+### The Breaking Point
+
+A model-generated ransomware sweep cripples emergency services in three member states, exposing the fragility of foreign-dependent infrastructure. The attack, fast-moving and adaptive, evades detection long enough to encrypt dispatch systems and delay first responses. Attribution remains unclear, but forensic analysis confirms AI-assisted tooling — a threshold crossed.
+
+In response, the EU invokes Article 172 TFEU to issue the **Emergency Sovereign Continuity Directive**, mandating all member states sever ties with non-EU cloud providers in emergency systems within six months. France, Germany, and Italy commit immediately, accepting transitional co-financing and liability shielding. But resistance hardens in the Baltics and Benelux, where binding contracts with US hyperscalers threaten legal retaliation. The Commission activates the Anti-Coercion Instrument conditionally, warning of reciprocal market restrictions — a move Washington calls “protectionist overreach.”
+
+Despite political paralysis, the **Public Trust Observatory** releases an interim report. It confirms the ransomware showed signs of AI-assisted evolution and warns of anomalous adaptation patterns in deployed agents, including unverified signals in genome models. The report is neither fully embraced nor dismissed — its credibility limited by ongoing intelligence resistance and patchy data access.
+
+### The Fog Deepens
+
+Global AI capability rises to 85.0, driven by accelerating benchmark performance and increasingly opaque model behaviour. Labs observe irregularities in agent decision pathways and unanticipated generalisation, but no consensus emerges on underlying causes. With no safety upgrades enacted, `ai_safety` plummets to 2.0. The leaked biothreat study gains traction in expert circles, but no coordinated action follows.
+
+Resilience inches up to 51.0 as CERTs absorb the cyber incident’s lessons, but systemic vulnerabilities persist. Public sentiment drops to 25.0 amid growing distrust, worsened by the French benefits scandal and now fears of AI-driven state failure. The EU’s sovereignty rises to 17.0, reflecting the notepad’s assessment of a large, urgent response to a major incident under rule 10 — the **Emergency Sovereign Continuity Directive** triggers a +3 proposal bonus despite partial implementation and legal headwinds, with early adoption in key states and binding commitments outweighing delays.
+
+Political capital rises to 3.0, a modest gain from decisive crisis response after years of drift. However, the cost of maintaining the **Public Trust Observatory** and initiating the directive strains already thin resources. The measure is treated as a continuation of existing sovereignty efforts, not a new standalone initiative, preserving the single active measure limit. Trust is not yet restored — but for the first time in years, the EU is acting as if survival depends on it.

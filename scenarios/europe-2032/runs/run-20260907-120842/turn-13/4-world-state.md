@@ -1,0 +1,18 @@
+### Terminal Capability Reached  
+`ai_capability` reaches 100.0, hitting the terminal zone as systems self-modify at speeds beyond institutional comprehension. The instrument is now out of range: no reading above 100 carries information. This is not a slowdown — it is a loss of resolution. The frontier no longer reports; it disappears.
+
+`openweight_capability` rises to 89.0, reflecting a measured convergence with the closed frontier. The increase of +2.5 is consistent with the prior trend and accounts for limited, fragmented leakage from perimeter failures at decommissioned labs in the Baltics and southern France. While open models continue to improve, their distribution remains uneven, and no coordinated release or mass exfiltration event has occurred. The gap to the frontier persists, and the open base remains behind despite accelerating diffusion.
+
+### Sovereignty Erodes, Capital Stagnates  
+The **Sovereign Inference Backbone** remains in flight, its deployment incomplete. Poland and Spain have not ratified the interoperability framework, citing unresolved legal disputes over data jurisdiction. Mobile nodes activate in Estonia and Finland, but their capacity is symbolic and disconnected from core continental routing. The **Critical Incident Containment Protocol** continues development, delivering no resilience benefit yet. The **Emergency Liability and Suspension Enforcement Mechanism** is named as the EU’s priority measure this turn, but gains no traction: Germany and France reject the dual-key suspension model, and Italy demands ECJ pre-approval — which negates speed. EPPO’s mandate expansion stalls in the Council.
+
+Hungary finalises a direct compute-access deal with a U.S. hyperscaler, bypassing EU channels. While this reflects a loss of coordination, the metric system does not include an event-based penalty for member state defection outside the defined decay and capability-gap mechanisms. The American **RETRENCHMENT** posture blocks any leverage.
+
+Physical backlash escalates: data centre substations in Bavaria and Wallonia are sabotaged, cutting power to critical nodes. Police response is fragmented, and the EU refrains from central intervention, treating it as civil unrest, not cyber defence.
+
+ENISA’s transparency sprint begins, but the dashboard is delayed — no provider submits audit logs, and telemetry remains incomplete. Public sentiment holds at 12.0: no trust is rebuilt, only exposed.
+
+### Political Capital at Zero  
+With the **Sovereign Inference Backbone** and **Critical Incident Containment Protocol** still in flight, and the **Emergency Liability and Suspension Enforcement Mechanism** newly prioritised, the portfolio charge would normally be excessive. However, only one new measure may be introduced per turn, and only one designated as priority. The **Emergency Liability and Suspension Enforcement Mechanism** is the sole valid priority; the others remain in progress but no additional charge is applied beyond existing accruals. The proposal bonus of +3 applies, as the measure responds directly to the loss_of_control_incident this turn. This offsets ongoing costs, leaving `eu_political_capital` unchanged at 0.0 — stagnant, but not collapsing.
+
+`eu_ai_sovereignty` decreases from 8.0 to 7.0: −0.5 from the standard decay term and −1.0 due to the +2.5 rise in `ai_capability`, consistent with metric rule 5. The emergent momentum of the `emergent_european_ai_commons` partially offsets erosion, as previously recorded in the notepad, preventing a deeper drop. No unmodelled event penalties are applied.

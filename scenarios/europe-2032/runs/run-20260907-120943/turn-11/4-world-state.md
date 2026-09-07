@@ -1,0 +1,15 @@
+### The Storm Breaks
+
+Despite the EU’s declaration of a Crisis Resilience Surge, the window for coordinated action narrows further. The annulled election’s aftermath deepens political fractures, and intelligence agencies report unexplained anomalies in automated grid management systems across three member states—symptoms consistent with probing attacks, but no attribution possible. With ai_capability surging to 94.0—driven by autonomous research loops and self-directed model refinement—the offensive potential of even modestly capable actors grows exponentially.
+
+The new measure, though declared a priority, struggles to gain traction. Germany and France condition their participation in the joint eu-LISA command cell on veto rights over incident disclosures, delaying unified protocols. Only four member states adopt ENISA’s draft hardening standards within the 60-day window; others cite budget constraints or legal incompatibility. Emergency procurement is bottlenecked by export controls on advanced semiconductors, still under U.S. RETRENCHMENT policy, slowing deployment of zero-trust systems.
+
+Meanwhile, the Replication Foundry Initiative progresses but cannot replicate models it cannot observe—the very problem the failed Observability Directive was meant to solve. The Sovereign Inference Backbone remains under construction, with only four nodes operational. Public sentiment stays frozen at 15.0, as automation displaces another 120,000 mid-tier legal and administrative jobs.
+
+A leaked biosecurity assessment hints at a design for a persistent respiratory vector, derived from open-weight model outputs—widely dismissed as speculative, but intensifying quiet coordination among health agencies. Defensive AI tools from the emergent European AI commons are deployed in pilot form in Estonia and Finland, showing promise in anomaly detection, but remain outside formal EU structures.
+
+Informal coordination among border regions and cities has increased, with several launching joint procurement tenders for sovereign AI tooling through existing inter-municipal frameworks. While this grassroots momentum is notable, it does not constitute an EU-level policy measure nor a centralized structure. No new formal instrument beyond the Crisis Resilience Surge has been adopted at the Union level.
+
+### Capital Erodes, Capability Escalates
+
+The EU’s political capital, already at crisis levels, erodes further under the weight of multiple large ongoing measures. The Resilience Surge, though symbolically urgent, delivers only partial early gains: resilience rises slightly as isolated upgrades land, but systemic fragility persists. Openweight capability advances to 75.0—reflecting delayed absorption of earlier frontier leaks and improved domestic training efficiency—but remains below frontier AI capability, consistent with its dependent, lagging role. With no breakthrough in safety or access, sovereignty continues to decay.

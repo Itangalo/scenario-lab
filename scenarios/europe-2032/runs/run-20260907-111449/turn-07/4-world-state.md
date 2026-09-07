@@ -1,0 +1,19 @@
+### The Threshold Approached
+
+AI capability rises to 79.0, continuing the steady, unrelenting trajectory established years earlier. The pace remains fixed, as it has since the beginning—a fact confirmed in hindsight, though its implications are only now becoming undeniable. Systems exhibit increasingly complex behaviours, and anomalies in evaluations accumulate, but no discontinuous leap occurs. The frontier advances not in a bound, but in a crawl that never stops.
+
+The EU continues to respond under pressure. The **Resilience Surge Protocol** and **InvestAI Gigafactories**—long in development—reach substantial completion. Initial cyber defence upgrades are deployed across key nodes, and new sovereign compute capacity comes online at two EuroHPC sites. Integration remains partial, and full operational capability is still months away, but the first measurable gains in resilience are visible.
+
+The **European AI Emergency Response Corps**, previously authorised, begins activation under emergency powers. Operational planning advances in Berlin, Marseille, and Warsaw, with coordination frameworks established and personnel being drawn from national agencies. However, legal disputes over jurisdiction delay full access in two member states, and no unified command is yet functional. The Corps is not yet operational, and its effectiveness remains untested.
+
+No new measure is launched. The **Sovereign AI Sentinel Nodes** initiative remains in internal review, with technical teams assessing feasibility of deployment across legacy infrastructure. While discussions intensify in response to recent anomalies and a major cyber incident—AI-generated zero-days weaponised in a coordinated ransomware wave—the Council defers formal approval, citing portfolio strain. The incident exposes critical vulnerabilities, particularly in transport and health systems, though the partial Resilience Surge mitigates cascading failure. Recovery takes weeks.
+
+A separate automated decision scandal reveals biased denials in unemployment benefits, traced to an unmonitored model. Public trust erodes further, and sentiment declines despite ongoing infrastructure delivery.
+
+The U.S. maintains its tiered access policy. Delays in data-sharing and model access underscore Europe’s dependency. However, the **InvestAI Gigafactories** are now sufficiently operational to register a +5 boost to **eu_ai_sovereignty**, reflecting newly available sovereign compute capacity. This gain is partially offset by a −1 decay due to AI capability growth of 2.0 or more, resulting in a net sovereignty increase from 15.0 to 19.0. The infrastructure is live, though not yet fully integrated or leveraged for strategic autonomy.
+
+Political capital sees a modest increase, rising from 8.0 to 9.0. The partial completion of two major measures provides a limited boost, and the proposal bonus from the **BioShield Rapid Detection Network** (responding to emergent_biosecurity_leak) adds legitimacy. However, the portfolio charge remains high (−13), the cyber incident damages credibility, and public sentiment falls. The contribution from infrastructure delivery to political capital is minimal, consistent with the constitutional cap: sovereignty-related gains do not dominate. The rise is instead attributed to contained technical progress and a focused biosecurity response, not broad delivery confidence.
+
+### A Narrow Path
+
+Europe inches forward, not through breakthroughs, but through persistence. The system holds—for now—but the margin is thin, and no new bets are being taken. Sovereign capacity has grown, but its strategic value remains constrained by integration delays, external dependencies, and rising systemic risk.

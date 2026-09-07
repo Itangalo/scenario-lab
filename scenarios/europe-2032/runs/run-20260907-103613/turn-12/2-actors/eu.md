@@ -1,0 +1,21 @@
+No statement changes.
+
+## Portfolio
+`Sovereign Inference Backbone (category 4, costs 3 per turn, started turn 10, finishes on turn 13): A federated network of EU-controlled inference clusters, hardened and distributed, to host sovereign replicas from the Replication Foundry Initiative and enforce strict access controls on all high-capability AI use in public services`  
+`Emergency Replication Mandate (category 5, costs 3 per turn, started turn 11, finishes on turn 12): A binding directive requiring all public-sector AI deployments above capability level 55 to be mirrored within 90 days by a functionally equivalent model trained from open weights or independently verified checkpoints, using EU-controlled compute and staffed by EU-cleared personnel`  
+`Biosecurity Rapid Response Protocol (category 6, costs 3 per turn, started turn 12, finishes on turn 14): Establishes an emergency detection, containment, and attribution framework for AI-enabled biological threats, integrating genomic anomaly monitoring, red-teamed synthesis prediction models, and fast-track regulatory authority over dual-use research outputs`
+
+## New measure
+None this turn.  
+Waiting for the completion of the Emergency Replication Mandate to free political capital and clarify the operational reality of sovereign replication before committing to another large-scale initiative.
+
+## Priority
+**Priority:** Emergency Replication Mandate  
+We are pushing this hardest because it is the final turn of its implementation window, and failure to complete replication now—amid accelerating frontier opacity—would lock the EU into permanent dependence on un-auditable foreign systems at a moment when even basic control is failing; completing this mandate is the last chance to preserve any sovereign agency over high-capability AI in public governance.
+
+## In practice
+We are treating the Emergency Replication Mandate as a binding legal instrument under Article 12(3) of the amended AI Act, with enforcement now active: non-compliant member states face automatic suspension of digital infrastructure grants and Cohesion Fund disbursements. COREPER I has been convened to resolve jurisdictional disputes, and we have offered Germany and France enhanced audit rights and local control over runtime telemetry in exchange for waiving veto power over operational commands—this is not surrender, but calibrated federalism under existential urgency. Fast-tracked security clearances are being processed through EPSO with military priority; Poland and Finland have delivered 120 engineers each, and Spain has fully repurposed its national AI task force to replication-only work. Training runs are now live on the healthcare triage model (successfully mirrored), the central bank financial forecasting agent (70% complete), and the asylum legal reasoning system (delayed by data sovereignty objections from Italy and Austria, now under ECOFIN arbitration).
+
+The Sovereign Inference Backbone continues construction under ENISA Level-4 hardening standards, with split-key protocols operational in Bucharest, Helsinki, and Marseille. We have redirected €1.2 billion from stalled national AI hubs into grid and cooling upgrades via the Clean Energy for Digital Task Force, ensuring that power delivery matches compute ambition. However, disputes over operational command persist, and we are now invoking the Anti-Coercion Instrument conditionally: full funding release tied to acceptance of EAAD+ runtime telemetry by January 2033. This is not coercion for its own sake—it is the price of interoperability in a system meant to fail safe, not fail apart.
+
+On biosecurity, we are activating the ECDC’s standing AI threat assessment panel and integrating EMBL’s genomic anomaly pipelines into a unified dashboard. Emergency redaction authority is being tested in pilot mode across three research consortia, with preprints flagged by three independent evaluators subject to 72-hour hold-and-review. No new laws are needed yet, but the protocol is now operational in shadow mode, ready to scale at first signal. We are not waiting for proof. We are preparing for failure we cannot yet see.

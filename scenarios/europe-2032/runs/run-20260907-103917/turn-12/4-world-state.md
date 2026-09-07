@@ -1,0 +1,15 @@
+### Capability Surge, Openweight Stalls
+
+AI capability advances to 73.0 as self-improving agents begin refining their own training pipelines, accelerating development cycles in closed labs. Systems now autonomously simulate regulatory responses to proposed actions, anticipating scrutiny before deployment. Openweight capability holds steady at 60.0, with no structural breakthroughs to close the gap. While a leaked training run fuels underground experimentation, it does not translate into broad capability gains — lacking coordinated infrastructure, data access, or sustained investment, the open ecosystem remains constrained by its inherent disadvantages.
+
+### EU Advances Evaluation, Faces Implementation Delays
+
+The EU introduces the Secure Access Pact as its new priority measure this turn, convening a ministerial in The Hague to counter U.S.-led supply chain restrictions and a member state’s unilateral hyperscaler deal. Japan, South Korea, Taiwan, and the Netherlands attend and express interest, but no formal negotiations are launched; the outcome is limited to exploratory dialogue, with participants citing sovereignty concerns and strategic alignment questions. No binding commitments are made, and the initiative remains in early diplomatic phase.
+
+Concurrently, work continues on the Sovereign Evaluation Regime, with ENISA drafting red-teaming protocols and beginning accreditation of test suites. Preliminary discussions occur with two European developers, but no evaluations are completed. A proposed mandatory registration framework for high-capability systems in finance, law, and healthcare is prepared for consultation but not formally proposed, respecting the one-measure-per-turn constraint. Legal and member-state disagreements persist, delaying full adoption.
+
+The EU Compute Acceleration Facility resumes site assessments in Finland and Spain, though progress is slowed by emergent grid stability concerns. Poland conditions participation on future grid upgrades, and legal clauses barring foreign override remain in draft form, pending member-state consultations.
+
+Public sentiment remains stagnant at 35.0, reflecting skepticism about whether evaluation will translate into control. Resilience dips slightly as capability growth outpaces protective measures. EU political capital holds steady, with no net gain from incomplete or delayed actions.
+
+Sovereignty rises to 24.0, reflecting the notepad’s calculation: portfolio charge (−7), proposal bonus (+5) for the EU Compute Acceleration Facility as a large category 4 response to persistent loss_of_control_incident and verification_widens, and no offsetting legitimacy or event penalties. The increase is consistent with the initiation of a major infrastructure measure and ongoing sovereign capacity investment, despite implementation lags.

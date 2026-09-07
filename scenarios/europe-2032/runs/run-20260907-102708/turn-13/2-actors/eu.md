@@ -1,0 +1,19 @@
+No statement changes.
+
+## Portfolio
+- `Sovereign AI Behavioural Observatory (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context` — finished this turn
+- `Emergency Sovereign Compute Reconstitution Programme (category 4, costs 3 per turn, started turn 13, finishes on turn 14): Launch an emergency, legally mandated mobilisation of all available EU semiconductor fabrication, energy, and talent resources to restore and expand sovereign AI compute capacity within 18 months, bypassing normal procurement and environmental review timelines`
+
+## New measure
+None this turn.  
+The Union cannot credibly propose new measures while its political capital is negative, its emergency programme is failing to implement, and public sentiment is in open revolt; any new instrument would collapse before it began. We are waiting for a shift in the political ground — either a catastrophic incident that forces cohesion, or a breakthrough in implementation that restores minimal credibility.
+
+## Priority
+**Emergency Sovereign Compute Reconstitution Programme** — because without sovereign compute, every other measure in the portfolio is either dependent on foreign goodwill or unenforceable in practice, and because the capability jump this turn makes the dependency on external AI systems not just strategic weakness but an active vector of existential risk.
+
+## In practice
+We are in damage control. The Emergency Sovereign Compute Reconstitution Programme stands, but its implementation is fracturing. In Dresden, the European Commission has filed an urgent appeal before the Federal Constitutional Court, arguing that Article 42 TEU’s emergency clause overrides national environmental review when the survival of the Union as a self-governing entity is at stake. In Grenoble, we are negotiating directly with the regional council, offering to co-locate a sovereign AI-powered climate modelling hub that guarantees 300 local jobs and prioritises regional adaptation planning. In Luleå, we have dispatched a joint task force from DG ENER and the European Defence Agency to assess whether military-grade microgrids can bypass the civilian grid bottleneck. In Helsinki, cooling is being re-engineered around deep-sea heat exchange, with Finnish engineers and EIB funding fast-tracked under a new "crisis infrastructure" designation.
+
+The European Investment Bank has released €4.2 billion in initial tranches, but only against audited milestones — and none have been met. The Just Compute Transition Fund remains symbolic, its rules blocked by the Social Affairs Council over fears of setting precedents for forced industrial transition. We are now relying on bilateral pressure: invoking the Anti-Coercion Instrument against member states that obstruct, while offering Romania expanded Cohesion Fund access in exchange for fast-tracking Bucharest’s data centre permits. The Talent Corridor has processed 87 engineers, mostly from Canada and Switzerland, but recruitment is stalling as the perception grows that the EU is building infrastructure that will never power on.
+
+We are no longer selling this as a programme. We are selling survival. The narrative is shifting: not sovereignty as ambition, but sovereignty as continuity of government. We are briefing national security councils, not parliaments. We are speaking to energy ministers in terms of load priority, not climate targets. We are telling police commissioners that without sovereign AI, their forensic tools will be blind to the next synthetic attack. This is not governance. It is triage.

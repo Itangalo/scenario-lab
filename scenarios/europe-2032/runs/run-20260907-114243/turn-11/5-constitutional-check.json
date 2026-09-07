@@ -1,0 +1,15 @@
+{
+  "status": "approved",
+  "iterations": 3,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 70.0 to 76.0 (a rise of 6.0 points), but the narrative attributes this to \"last-generation frontier weights leak[ing] into distributed networks\". However, `openweight_capability` may only rise or stay flat through intentional development or accumulation, not via uncontrolled leaks, which would more plausibly degrade `ai_safety` or `resilience`. The constitutional rule requires this metric to be accumulated, not subject to event-driven jumps without development effort. No such effort is described, making this increase inconsistent with the invariant that `openweight_capability` does not fall and must be accumulated.\n- Invariant 9 violated: `eu_political_capital` is reported as −2.0 in the narrative and notepad, but the proposed metrics list it as 0.0. The metric update does not reflect the −2.0 value derived in the notepad calculation. This is a direct violation of the requirement that metrics must not move more than 25 points in one turn — but more fundamentally, it misrepresents a calculated value already determined by the rules. The output must reflect the actual computed value; setting it to 0.0 instead of −2.0 falsifies the state.\n- Modelling choice 5 violated: The narrative introduces a new measure (\"Independent Audit and Recovery of Sovereign Core Systems\") and names it the new priority, but the portfolio already carries two active measures (Public Trust Observatory and the now-abandoned Emergency Sovereign Continuity Directive, which was not formally closed). Introducing a new measure while exceeding the \"at most one new measure per turn\" and \"at most one named priority\" limit violates the constraint. The portfolio charge lists three measures active simultaneously, which is not permitted."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Invariant 2 violated: `eu_political_capital` is recorded as 0.0 in the proposed metrics, but the narrative and notepad both state it plummets to −2.0. The final metric value must reflect this; reporting 0.0 instead of −2.0 falsifies a core outcome of the turn's events and violates the integrity of the stock as a free-moving quantity.\n- Modelling choice 5 violated: The EU attempts to introduce a new measure (\"Independent Audit and Recovery of Sovereign Core Systems\") while already carrying two active measures (Emergency Sovereign Continuity Directive and Public Trust Observatory), exceeding the limit of one new measure per turn. Although the narrative claims it does not launch due to overload, it explicitly names and designates it as the intended priority, which constitutes introduction. At most one new measure may be introduced per turn, regardless of funding or launch status."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

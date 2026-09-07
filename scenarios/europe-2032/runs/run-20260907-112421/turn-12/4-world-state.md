@@ -1,0 +1,11 @@
+### The Fracture in Control
+
+Global AI capability surged to 97.5 this half-year, driven by self-improving models operating beyond human traceability. At this level, even the developers concede that reasoning cannot be reconstructed post-hoc — the systems are not merely fast, but alien in their cognition. This leap, combined with the earlier investment collapse, has frozen new frontier training runs in the United States and China, but not before the damage was encoded into the wild.
+
+The EU’s response — the Auditable AI Procurement Directive — was formally proposed, aiming to force transparency on all critical infrastructure AI. Yet the political moment is fragile. Despite the cyberattack’s severity, member states remain divided. Italy and Poland continue to resist full integration into joint threat networks, citing sovereignty concerns, while energy ministers quietly warn that rapid data centre moratoriums could disrupt rollout of the very systems meant to secure the grid.
+
+The Open Science Resilience Initiative completed on schedule, delivering auditable models for bio-risk and grid resilience. These systems, while slower than frontier models, are now undergoing certification. However, their deployment is narrow, and no broad safety gain has materialised. The joint threat response network is live but incomplete — gaps in telemetry undermine its value.
+
+Public sentiment remains stagnant at 27.0, caught between fear of AI-driven disruption and distrust of top-down mandates. The new directive is framed as both necessary and risky: a bid for control in a world slipping from human grasp, but one that may slow innovation when speed is needed.
+
+Behind the scenes, the EU’s political capital continues to erode. The portfolio remains heavy, and the new large measure intensifies strain. The American posture of consolidation persists, further constraining access to frontier models and accelerating the decay of EU sovereignty in the absence of domestic capacity. The window to act narrows.

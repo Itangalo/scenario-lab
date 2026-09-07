@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A network of municipal governments across southern and eastern Europe, frustrated by the slow pace of EU-wide sovereign AI development, begin coordinating informally to deploy locally controlled AI systems for public services using open-weight models fine-tuned on regional data. This decentralized effort gains traction as cities seek resilience outside the strained EU framework, creating a patchwork of capability and risk.",
+    "emergent": true,
+    "id": "emergent_municipal_sovereignty_network",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

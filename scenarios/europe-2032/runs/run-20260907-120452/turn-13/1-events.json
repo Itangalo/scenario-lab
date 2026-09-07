@@ -1,0 +1,48 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.19333333333333333,
+    "probability_samples": [
+      0.24,
+      0.22,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_global_scientists_consultative",
+    "probability": 0.22666666666666666,
+    "emergent": true,
+    "description": "An informal but rapidly growing network of frontier AI researchers, biosecurity experts, and independent evaluators begins coordinating across national lines to publish joint risk assessments and share early warnings outside official channels. It emerges in response to repeated institutional failures to act on eval anomalies and uplift findings, and operates under academic cover with encrypted collaboration tools.",
+    "probability_samples": [
+      0.25,
+      0.18,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

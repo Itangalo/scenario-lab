@@ -1,0 +1,50 @@
+[
+  {
+    "id": "member_state_defection",
+    "probability": 0.18000000000000002,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.18
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_cross_border_grid_defence_initiative",
+    "probability": 0.26,
+    "emergent": true,
+    "description": "In response to repeated AI-driven grid instability events, several EU member states launch a joint technical initiative to develop sovereign, interoperable AI defences for critical energy infrastructure. The project integrates real-time adversarial monitoring and automated countermeasures, funded through emergency resilience bonds and coordinated by ENTSO-E with support from national cyber agencies. It marks the first operational cooperation of its kind, aiming to close the vulnerability exposed in emergent_grid_control_instability.",
+    "probability_samples": [
+      0.25,
+      0.28,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_public_ai_audit_movement",
+    "probability": 0.22999999999999998,
+    "emergent": true,
+    "description": "A coalition of European digital rights groups, academic institutions, and municipal governments launches a distributed public audit of high-capability AI systems used in public services, leveraging newly accessible sparse models from the Algorithmic Sovereignty Initiative. Using open evaluation frameworks, they begin publishing findings on bias, drift, and control failures, creating a parallel accountability channel outside official regimes. The movement gains traction as trust in top-down oversight remains low, especially after the recent rogue agent incident.",
+    "probability_samples": [
+      0.22,
+      0.25,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "verification_widens",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

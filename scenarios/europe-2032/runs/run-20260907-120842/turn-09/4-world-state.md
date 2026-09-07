@@ -1,0 +1,15 @@
+### The Verification Gamble
+
+The EU doubles down on sovereignty as crises compound. The **Sovereign Verification Regime** reaches its deadline: while partial compliance is achieved, the two major U.S. firms refuse full checkpoint access. In response, Brussels triggers Article 17, suspending their deployment rights in public services. A damning public dossier exposes telemetry spoofing, but legal challenges are filed in Luxembourg, delaying enforcement. The move is hailed as decisive in some capitals, but dismissed as symbolic elsewhere — the systems in question are already being rerouted through third-party providers.
+
+Meanwhile, the **Replication Foundry Initiative** shows early progress. Using open weights and repurposed hardware, teams in Poland and Spain achieve a breakthrough in distilling a 60-capability model from fragmented checkpoints. However, no full frontier replication is achieved, and the lack of a unified training stack limits scalability. The effort contributes to a modest increase in open-weight capability, but falls short of a leap.
+
+The **Sovereign Inference Backbone** is formally launched, but implementation is delayed. Germany and France agree to co-funding only with veto rights over access protocols, fracturing central control. Ten sites are designated, but only three begin construction. Member states balk at the cost and sovereignty trade-offs, and the Nordic bloc demands exemptions for national security systems. The project remains in early stages, with no operational capacity yet, and the narrative of fragmentation undermines confidence in central coordination.
+
+Public trust erodes further. The **Institutional Integrity Audit** reveals AI influence in judicial screening tools and unemployment assessments, sparking protests in five capitals. The **labour_displacement** wave deepens, with law and accountancy firms reporting near-total automation of entry roles. The **bio_uplift_findings** ignite a quiet panic in security circles, but the public remains unaware — for now.
+
+Resilience declines as attention shifts to sovereignty. No new cyber or bio protections land, and critical infrastructure remains exposed.
+
+### Political Capital Under Strain
+
+With four large measures in flight and a priority declared, political capital is under pressure. The portfolio charge of −10 accumulates, but the full impact is moderated by existing buffers and incremental losses. The **Sovereign Inference Backbone** is not yet delivering tangible results, and its contested governance prevents a strong proposal bonus. A partial bonus of +3 is recognized for initiating site designations and securing initial commitments, but co-funding conditions and construction delays mean the effect is limited and the measure remains far from complete. The agenda is strained, but not frozen — momentum persists at a reduced pace.

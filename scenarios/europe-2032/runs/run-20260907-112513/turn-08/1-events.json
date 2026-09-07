@@ -1,0 +1,37 @@
+[
+  {
+    "id": "medical_breakthrough",
+    "probability": 0.12,
+    "probability_samples": [
+      0.18,
+      0.18,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.12,
+    "probability_samples": [
+      0.11,
+      0.14,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "description": "A joint research consortium of European academic and public health institutions, operating outside the major AI labs, achieves a breakthrough in interpretable protein folding models using open-weight systems. The result is not as fast as frontier black-box models but is fully auditable and immediately adopted by several national biosecurity agencies. It marks the first time open, EU-led science has reclaimed technical initiative in a high-stakes domain.",
+    "emergent": true,
+    "id": "emergent_open_bioscience_breakthrough",
+    "probability": 0.18333333333333335,
+    "probability_samples": [
+      0.3,
+      0.0,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

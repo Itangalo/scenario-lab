@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Emergency Sovereign Access Programme −3, priority −1 = −4  
+PROPOSAL BONUS: Emergency Sovereign Access Programme (cat 4, large) +5 — medical_breakthrough and member_state_defection both landed this turn and this answers them directly  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 16 last turn, no capacity event, capability rose 2.5 ≥2 −1 = 15 → adjusted to 14 due to partial mitigation failure and diplomatic isolation  
+US_POSTURE: CONSOLIDATION  
+emergent_local_energy_backlash — now listed in 2 turn(s): Local moratoriums on data centres spread to eight member states, coordinated through shared legal templates. Grid stability concerns are cited, but energy ministers privately admit political pressure is mounting.  
+emergent_open_bioscience_breakthrough — now listed in 5 turn(s): The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.  
+emergent_grid_failure_cascade — now listed in 2 turn(s): A cascading power outage originating in Central Europe exposes the fragility of energy infrastructure under AI-driven load fluctuations. Multiple data centres lose backup power, and critical services experience rolling blackouts. The incident is attributed to uncoordinated AI-driven energy trading and demand prediction systems operating across borders without central oversight.  
+emergent_open_source_oversight_network — now listed in 2 turn(s): A decentralized network of open-source AI auditors, composed of academic collectives and civic hackers across EU member states, gains credibility by publishing reproducible safety evaluations of openweight models. It emerges in response to institutional failure and fills a void left by collapsed political capital, becoming a de facto standard for public-sector AI procurement in several countries.

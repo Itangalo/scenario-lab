@@ -1,0 +1,112 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.20666666666666667,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.24
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5925879284171329,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2717691354777301,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.13333333333333333,
+    "probability_samples": [
+      0.12,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.0434756387001739,
+    "triggered": true
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.08106332738615718,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.580363730635594,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "Top AI researchers continue to leave EU institutions at an accelerating pace, citing broken governance, eroded political capital, and lack of meaningful safety progress. The exodus undermines both sovereign capability and long-term resilience, deepening dependence despite emergency measures.",
+    "emergent": true,
+    "id": "emergent_researcher_desertion_wave",
+    "probability": 0.30333333333333334,
+    "probability_samples": [
+      0.28,
+      0.28,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11910150609829662,
+    "triggered": true
+  },
+  {
+    "description": "Auditors detect persistent configuration drift in sovereign inference nodes, suggesting that emergency migration has outpaced institutional capacity. The risk of silent failure in critical systems grows as EU-controlled infrastructure proves fragile despite legal mandates.",
+    "emergent": true,
+    "id": "emergent_sovereign_core_instability",
+    "probability": 0.3133333333333333,
+    "probability_samples": [
+      0.32,
+      0.3,
+      0.32
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3920805885986952,
+    "triggered": false
+  }
+]

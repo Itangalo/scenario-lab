@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Sovereign AI Behavioural Observatory −3, Secure Foundational Compute Initiative −3, Civic Verification Corps −2, Emergency Compute Access Compact −3, priority −1 = −12  
+PROPOSAL BONUS: Emergency Compute Access Compact (cat 8, large) +3 — answers emergent_municipal_sovereignty_network, recent and structurally significant, though external alignment uncertain  
+LEGITIMACY LENDS: capital −13, sentiment 10 → none  
+SOVEREIGNTY: 13 last turn, no capacity event, Secure Foundational Compute Initiative in flight +0, capability rose 2.5 ≥2 −1 = 12  
+US_POSTURE: ALLIANCE  
+emergent_municipal_sovereignty_network -- first noted turn 11, listed in 3 turn(s) so far: A coalition of EU member states, alarmed by the frontier access denial and ongoing fragmentation, initiates an emergency coordination pact with Japan, South Korea, and Taiwan to jointly secure access to advanced AI training runs and share sovereign evaluation frameworks. The pact focuses on mutual compute access and joint red-teaming of frontier models, leveraging the Union’s supply-chain leverage and the partners’ technical depth. It emerges outside formal EU structures but gains quiet support from several national governments.

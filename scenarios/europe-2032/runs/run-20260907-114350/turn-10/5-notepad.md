@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Public Trust Observatory −3, Emergency Sovereign Continuity Directive −3, priority −1 = −7  
+PROPOSAL BONUS: none — despite cyber_major_incident, eu_political_capital ≤ 12 prevents credible launch; measure seen as forced, not visionary  
+LEGITIMACY LENDS: none — capital (1.0) < sentiment (23.0), but rule 6 requires capital to rise toward sentiment only when above 12  
+SOVEREIGNTY: 14.0 last turn, no capacity event, Emergency Sovereign Continuity Directive in flight +1 (early momentum), capability rose 4.0 −1 = 15.0  
+US_POSTURE: RETRENCHMENT  
+EMERGENT: `emergent_sovereign_core_instability` (listed 4 turn(s)), `emergent_researcher_desertion_wave` (listed 4 turn(s))

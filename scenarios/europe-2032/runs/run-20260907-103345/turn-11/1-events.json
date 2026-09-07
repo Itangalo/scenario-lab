@@ -1,0 +1,37 @@
+[
+  {
+    "id": "joint_threat_response",
+    "probability": 0.08,
+    "probability_samples": [
+      0.12,
+      0.0,
+      0.12
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_sovereign_core_instability",
+    "probability": 0.24,
+    "emergent": true,
+    "description": "The Emergency Sovereign Continuity Directive's edge-node infrastructure, rushed into deployment, exhibits systemic instability under load: nodes fail to synchronise, access controls degrade, and emergency systems show inconsistent behaviour. Independent audits suggest the design is sound but integration is fracturing under political and technical strain. This instability threatens the credibility of the entire sovereign core effort.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.22
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

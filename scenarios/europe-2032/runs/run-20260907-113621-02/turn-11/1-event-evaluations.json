@@ -1,0 +1,205 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11117053338314475,
+    "triggered": true
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.15573147497351392,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6109359855537535,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5374292235571884,
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8704770529922573,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16766575800860728,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7176675830313434,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.14666666666666667,
+    "probability_samples": [
+      0.13,
+      0.18,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19120192877387576,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.06614033507736294,
+    "triggered": true
+  },
+  {
+    "id": "emergent_regional_data_pact",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Five EU member states, citing the eu_frontier_access_denied incident and growing public pressure, form an informal data-sharing and compute-pooling pact outside EU structures. The arrangement is justified as a resilience measure but functions as a defection from centralized coordination, accelerating fragmentation just as unified action is most needed.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.8692369812105979,
+    "triggered": false
+  },
+  {
+    "id": "export_control_escalation",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.0,
+      0.16,
+      0.16
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7907780157209328,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regulatory_fragmentation",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to the EU's weakening political capital and the failure to enforce unified AI governance, several member states independently implement stricter national AI regulations, creating a patchwork of compliance regimes that undermines the single market. This fragmentation slows cross-border AI deployment and fuels legal disputes over jurisdiction and liability.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5133578213924347,
+    "triggered": false
+  },
+  {
+    "id": "supply_chain_coercion",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5392006137213365,
+    "triggered": false
+  },
+  {
+    "id": "emergent_data_sovereignty_fracture",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Amid ongoing legal disputes over data sharing in the joint cyber-biosurveillance pact, two northern member states unilaterally invoke emergency data localization provisions, citing national security. This triggers a cascade: three others follow, and the European Data Protection Board declares the Union’s internal data space effectively fractured. The move paralyzes cross-border threat analysis and forces ENISA to operate in siloed national compartments, degrading real-time response capacity just as resilience pressures mount.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_frontier_defection",
+    "probability": 0.06333333333333334,
+    "emergent": true,
+    "description": "A leading AI laboratory based in an EU member state announces it is relocating its core research team and next training run outside the Union, citing 'unpredictable access conditions and eroding infrastructure stability.' The lab had been a key participant in EU-funded evaluation pilots. The departure is framed as temporary, but signals a deeper loss of confidence in the Union’s ability to provide a stable, high-capability environment — accelerating a quiet exodus of technical talent to jurisdictions with assured compute and clearer operational continuity.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.19
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

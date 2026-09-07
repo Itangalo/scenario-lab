@@ -1,0 +1,306 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5606220733622823,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "bio_incident",
+    "probability": 0.16,
+    "probability_samples": [
+      0.15,
+      0.19,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.1,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4305116188765248,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.008514292753770358,
+    "triggered": true
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "taiwan_blockade",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.02,
+      0.1,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.07333333333333335,
+    "probability_samples": [
+      0.04,
+      0.1,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7308891122224566,
+    "triggered": false
+  },
+  {
+    "id": "rsi_onset",
+    "probability": 0.11666666666666665,
+    "probability_samples": [
+      0.35,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9144173791729552,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8676328781472206,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.15333333333333332,
+    "probability_samples": [
+      0.12,
+      0.22,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7812141226985178,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6179823524163726,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3117244960151654,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.19,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.27753708708835967,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.15,
+    "probability_samples": [
+      0.11,
+      0.23,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.38961524364673605,
+    "triggered": false
+  },
+  {
+    "description": "A coalition of mid-sized EU member states, alarmed by the accelerating erosion of AI sovereignty and repeated access denials, quietly initiates a mutual defense pact for AI infrastructure. The pact includes intelligence sharing on model access disruptions, coordinated sanctions against entities that unilaterally cut off AI services to member states, and a joint emergency replication protocol to be activated within hours of a denial event. It operates outside formal EU channels, leveraging national security frameworks to bypass stalled decision-making. This marks a shift from dependence to collective hedging, and could evolve into a formal coordination body if trust holds.",
+    "emergent": true,
+    "id": "emergent_ai_defense_pact",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.15785746714214144,
+    "triggered": false
+  },
+  {
+    "description": "A major open-weight release from a decentralized collective of European researchers, built using shared compute from the emergent_european_ai_commons, unexpectedly reaches capability level 78.0. The model, trained on a mix of public data and defensive fine-tunes, demonstrates autonomous coordination in cyber defense simulations and begins contributing to its own successor design. While not yet at the closed frontier (88.0), it proves that distributed, non-corporate efforts can close the gap faster than anticipated. The release triggers a wave of grassroots adoption and forces national labs to reconsider their reliance on foreign models.",
+    "emergent": true,
+    "id": "emergent_openweight_breakthrough",
+    "probability": 0.06,
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.1323236013646134,
+    "triggered": false
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.13999999999999999,
+    "probability_samples": [
+      0.0,
+      0.21,
+      0.21
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6461921718030015,
+    "triggered": false
+  },
+  {
+    "id": "emergent_european_cyber_defence_pool",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "In response to repeated cyber incidents and the failure of central coordination, seven EU member states independently form a shared cyber defence initiative, pooling red teams, automated patching systems, and incident telemetry. The group operates outside formal EU structures but receives tacit funding through national science grants, and begins integrating with the emergent European AI commons. This marks the first autonomous defensive capability aggregation not led by Brussels.",
+    "probability_samples": [
+      0.0,
+      0.28,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_stability_pact",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "Amid rising public unrest and repeated AI-driven institutional failures, regional governments in France, Spain, and Poland form an informal pact to coordinate AI deployment moratoria on local public services until 'baseline safety and accountability' are restored. The pact is not legally binding but signals a shift in authority from supranational institutions to regional actors, and includes shared oversight mechanisms and mutual support against central enforcement. It reflects growing fragmentation in the EU's AI governance model.",
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9284481856407957,
+    "triggered": false
+  },
+  {
+    "id": "emergent_regional_aid_blockade",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Several eastern member states, citing unmet demands for fiscal support under the Emergency Replication Mandate and ongoing disputes over cost-sharing in the Sovereign Inference Backbone, temporarily block disbursement of EU resilience funds intended for cyber defence upgrades. The move crystallizes growing east-west friction over burden-sharing in AI sovereignty efforts, turning infrastructure delays into a political crisis. This development escalates quickly, with mediation efforts already underway.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.22
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_winter_protests",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "Grassroots movements in France, Germany, and Poland begin organizing under the banner of 'AI Winter,' demanding a moratorium on public-sector AI adoption and redirecting funds to social safety nets. Fueled by the Institutional Integrity Audit and rising automation in legal and medical fields, these decentralized networks coordinate through encrypted platforms and claim support from displaced professionals. The protests gain momentum as public sentiment drops further, threatening to paralyze rollout of key initiatives.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.3
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

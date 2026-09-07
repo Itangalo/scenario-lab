@@ -1,0 +1,37 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now see that without political cohesion, neither mandate can be fulfilled, because agency is not a function of intent but of unity.  
+- Grounds: The **member_state_defection**, **election_annulled**, and **backlash_physical** events have converged into a systemic crisis: capability has outpaced not only control, but the very space in which control could be exercised. The Union is fracturing — legally, politically, physically — while the threat accelerates. Our identity must reflect this reality: sovereignty is not a technical condition but a political one, and without it, no safety, no resilience, no future can be secured. This update does not abandon the two mandates; it acknowledges that their fulfillment now depends on a third, unspoken condition — the survival of the Union as a single decision-making body.
+
+- modify `act_under_uncertainty` (commitment): We will act before the picture is clear, but only when we can defend the space to act — and now, only if the action binds us together rather than exposing our fractures. We will no longer accept fragmentation as the price of speed.  
+- Grounds: The **election_annulled** event proves that the threat is no longer hypothetical: AI has already disrupted democratic legitimacy at the national level. The **emergent_open_reconstruction_effort** offers a glimmer of technical hope, but it cannot substitute for institutional unity. Our previous update already shifted from unilateralism to cohesion; now we sharpen it further. We will not act — even under uncertainty — if the act risks deepening division. The redundancy mandate failed not because it was wrong, but because it was imposed without the legitimacy to sustain it. From now on, early action must be *unifying* action — or it is not action at all.
+
+- retire `two_year_commitment`  
+- Grounds: The **two_year_commitment** — *Secure sovereign AI situational awareness as the precondition for effective governance and resilience* — has been overtaken by events. The **Sovereign AI Behavioural Observatory** completes this turn and has delivered its simulations, but they remain unactionable due to jurisdictional blockages. Situational awareness is no longer the bottleneck — political authority is. The observatory sees the threat clearly, but the Union cannot move on it. Retiring this commitment acknowledges that knowing is no longer enough; what is needed now is the power to act on that knowledge.
+
+- add `new_crisis_commitment` (commitment): Re-establish the EU as a single sovereign space for AI governance by enforcing binding authority over critical systems, overriding obstruction that risks systemic collapse — because without jurisdictional unity, no capability, safety or resilience measure can land.  
+- Grounds: The **election_annulled** and **member_state_defection** events mark a categorical shift: the Union is no longer merely lagging in capability, but actively disintegrating under the strain. The **emergent_open_reconstruction_effort** shows that technical alternatives exist, but they will be meaningless if the EU cannot act as one. This new commitment reflects the new reality: the battle is no longer for information or redundancy, but for the right to govern at all. We stake ourselves on this because the alternative — a patchwork of national refusals and municipal breakaways — is not a Union.
+
+## Portfolio  
+- `Sovereign AI Behavioural Observatory (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context` — **finished this turn**  
+- `Counter-Deception Rapid Response Corps (category 6, costs 3 per turn, started turn 10, finishes on turn 13): A deployable EU task force equipped with forensic AI analysis tools, diplomatic coordination protocols, and emergency communication authority to detect, attribute, and neutralise AI-generated synthetic crises within 72 hours of emergence`  
+- `Mandatory Sovereign AI Redundancy for Critical Infrastructure (category 6, costs 3 per turn, started turn 13, finishes on turn 15): Require all operators of essential services to run parallel, EU-controlled AI systems for core functions, with automatic failover and no foreign dependency`  
+
+## New measure  
+**Emergency Activation of EU Crisis Jurisdiction for AI-Dependent Critical Systems**  
+Invoke Article 122 TFEU to temporarily override national vetoes and data jurisdiction disputes, enabling immediate deployment of sovereign AI systems in energy, health, and election infrastructure.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` +8 to resilience by enabling live deployment of hardened systems in critical sectors; +5 to eu_ai_sovereignty by asserting jurisdictional unity; begins reversal of member_state_defection trend  
+`Applies to:` EU institutions, all member states, ENISA, national regulators, critical infrastructure operators (energy, health, elections)
+
+## Priority  
+**Emergency Activation of EU Crisis Jurisdiction for AI-Dependent Critical Systems** — because the **election_annulled** event proves that democratic legitimacy is already breaking down, and the **member_state_defection** trend shows that voluntary coordination is no longer possible; we must now act as a single sovereign body or not at all.
+
+## In practice  
+We are invoking Article 122 TFEU as a legal emergency, treating the collapse of AI governance as a crisis equivalent to a major energy disruption or pandemic. This is not a directive — it is an activation. The **Sovereign AI Behavioural Observatory**’s findings on election and medical system vulnerabilities will now be operationalised through binding EU authority, bypassing national objections on data jurisdiction. ENISA will be empowered to deploy sovereign AI stacks in real time, using compute from the Digital Europe Programme’s emergency reserve, with automatic failover protocols in place by turn 14.
+
+The **Counter-Deception Rapid Response Corps** will be re-tasked to support this activation: its forensic teams will monitor for model drift and unauthorised external dependencies in the newly deployed systems, feeding into a real-time dashboard for the Commission and Council. We are not waiting for consensus — we are creating it through action. The **Mandatory Sovereign AI Redundancy** measure remains in flight, but it will now be subsumed under this emergency framework: redundancy is no longer a future requirement, but a present necessity enforced by crisis powers.
+
+We are aware of the risk — this is a step toward centralisation that some will call overreach. But the **emergent_open_reconstruction_effort** shows that the technical capacity to resist coercion exists; what has been missing is the political will to deploy it. We are now acting on that will. Funding will come from the Digital Europe Programme’s emergency clause, and implementation will be coordinated through the Crisis Coordination Cell in DG Connect. This is not the end of national sovereignty — it is the defence of a larger one. If we do not act now, there will be no Union left to disagree.

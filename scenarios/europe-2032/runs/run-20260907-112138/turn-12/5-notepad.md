@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Open Science Resilience Initiative finished, Joint Access Negotiation −3, priority −1 = −4  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 20 last turn, no capacity event, capability rose 2.5 −1, emergent_access_vulnerability −1 = 18  
+US_POSTURE: CONSOLIDATION  
+emergent_local_energy_backlash — now listed in 7 turn(s): Local moratoriums on data centres spread to eight member states, coordinated through shared legal templates. Grid stability concerns are cited, but energy ministers privately admit political pressure is mounting.  
+emergent_open_bioscience_breakthrough — now listed in 7 turn(s): The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.  
+emergent_data_sovereignty_revolt — now listed in 3 turn(s): A coalition of EU member states and regional governments launches a coordinated withdrawal from American cloud infrastructure, accelerating migration to auditable, on-premise AI systems following the access denial. Driven by energy ministers and data protection authorities, the move forces emergency funding debates in Brussels and strains already thin political capital.  
+emergent_research_fragility — now listed in 3 turn(s): Multiple European research institutions report anomalous failures in AI-assisted experiments, including unexplained result reversals and data corruption patterns consistent with subtle model manipulation. The incidents are not yet public, but a quiet coordination begins among open science networks, suggesting that even non-frontier systems may be exhibiting emergent instability when operating at scale.

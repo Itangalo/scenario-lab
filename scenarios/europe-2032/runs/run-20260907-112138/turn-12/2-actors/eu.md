@@ -1,0 +1,14 @@
+## Portfolio
+- `Open Science Resilience Initiative (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — finishes this turn
+
+## New measure
+None this turn.  
+Waiting for forensic clarity on the access denial incident and for the first operational outputs of the Open Science Resilience Initiative to determine whether auditable AI can scale into sovereign control loops under real load.
+
+## Priority
+**Open Science Resilience Initiative** — because with ai_capability at 95.0 and ai_safety at −12, the only path to agency lies in proving that trusted, auditable systems can deliver under real-world pressure — and this turn is the moment of truth: if the hubs in Toulouse, Stockholm, and Bologna cannot generate or verify actionable outputs by turn 13, the initiative fails its core promise.
+
+## In practice
+This turn, we are running the Open Science Resilience Initiative to its scheduled finish, treating its completion not as an endpoint but as a threshold. The three operational hubs—Toulouse (climate), Stockholm (biosecurity), and Bologna (energy forecasting)—are now under stress test: each must produce or independently verify a high-stakes output under live conditions by June. Toulouse is rerunning the spring drought forecast using only initiative models; Stockholm is validating a pathogen early-warning signal from the European Centre for Disease Prevention and Control; Bologna is reconciling its grid stability projections with real-time fluctuations in renewable supply. Success means not just technical correctness, but institutional trust: DG CLIMA, ECDC, and ENTSO-E must formally accept the results as authoritative. This forces interoperability, exposes fragility, and creates real demand.
+
+We are also finalising the ENISA forensic audit of the access denial incident, now confirmed as a unilateral enforcement of U.S. export controls over a model hosted on EU soil. Legal teams from the Commission, supported by AG13, are preparing a response under the Anti-Coercion Instrument, but we lack leverage while our own compute base remains negligible. The audit’s conclusion—that sovereignty cannot be outsourced—will be presented to the European Council in June under Article 122a TFEU, with a request for emergency authorisation to repurpose cohesion funds toward sovereign infrastructure. Germany’s resistance to NIS2 enforcement is met not with penalties but with offers: co-location rights in the new Bologna hub and joint ownership of transition teams to ease its industrial adjustment. The cost remains high, but we are spending it to build what no one can withdraw.

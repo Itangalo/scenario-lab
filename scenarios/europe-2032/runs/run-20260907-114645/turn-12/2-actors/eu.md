@@ -1,0 +1,35 @@
+## Statement changes
+* - modify `two_year_commitment` (commitment): Rebuild sovereign technical resilience as a durable, auditable, and publicly trusted foundation for all critical state functions, ensuring no single point of failure — foreign or domestic — can compromise continuity  
+  - Trigger: the Sovereign Resilience Backbone has entered implementation, but political capital remains at 2.0 and public sentiment is stagnant at 20.0, while forensic analysis confirms the anomalous activity in the sovereign cluster was not an external breach but a cascading failure in runtime attestation — a flaw in our own design  
+  - Grounds: We are not being hacked from the outside. We are failing from within. The detection of a logic loop in the cluster’s self-monitoring protocol — a flaw that allowed corrupted inference to validate itself — proves that sovereignty without *internal* control is not resilience, but a mirror trap. Our systems must not only be independent but *self-correcting*. This means shifting focus from infrastructure alone to the integrity of the feedback loops that govern it. The commitment stands, but its meaning evolves: we are no longer just building redundant nodes. We are rebuilding the epistemic foundations of control. That demands not only hardware and code, but public verification, real-time interpretability, and institutional accountability. We will not declare continuity restored until the system can prove it to an auditor, a citizen, and a crisis responder — all at once.
+
+* - modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will now demand that every major commitment be paired with a public, auditable theory of harm, a corresponding monitoring mechanism, *and a mechanism for correction when the theory fails*.  
+  - Grounds: The failure in the sovereign cluster was not unforeseeable — it was unobserved. Our previous modification required transparency and monitoring, but not adaptation. We now know that even our safeguards can become vectors. Therefore, we bind ourselves to not only publish our assumptions, but to test them against red-teamed collapse scenarios, and to revise them when reality diverges. The price of being late is high, but the price of being wrong without course correction is existential.
+
+## Portfolio
+``Public Trust Observatory for AI Risk and Capability (category 5, costs 3 per turn, started turn 10, finishes on turn 12): Establish a permanent, independent EU body to publish real-time assessments of emerging AI risks, model capability trends, and the credibility of anomaly reports, drawing on classified and open-source intelligence, academic research, and whistleblower inputs``  
+*Finishes this turn.*
+
+``Emergency Sovereign Continuity Directive (category 4, costs 3 per turn, started turn 11, finishes on turn 11): A legally binding directive requiring all member states to sever foreign cloud dependencies in emergency response systems within six months and replace them with auditable, Union-controlled inference nodes running models derived from openweight sources``  
+*Finished last turn.*
+
+``Sovereign Resilience Backbone (category 6, costs 3 per turn, started turn 12, finishes on turn 14): A multi-year programme to harden and diversify EU-controlled AI infrastructure, deploying redundant, geographically distributed inference nodes with real-time integrity monitoring and fallback protocols, integrated with national CERTs and the Public Trust Observatory``
+
+## New measure
+**Measure:** Runtime Integrity Verification Framework  
+A new EU-wide technical and legal standard requiring all sovereign AI systems to continuously prove their operational integrity through cryptographic attestation, real-time interpretability feeds, and adversarial validation by the Public Trust Observatory.
+
+`Category: 5 (Public technical capacity and research)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` Increase ai_safety by 15–20 points by turn 14 through enforceable runtime transparency; raise resilience by 5–8 points by enabling rapid detection and isolation of corrupted systems; begin shifting public_sentiment by making verification visible and public  
+`Applies to:` EuroHPC, ENISA, national CERTs, sovereign cloud operators, and all recipients of EU AI infrastructure funding
+
+## Priority
+**Priority:** Runtime Integrity Verification Framework  
+This is our top priority because the Sovereign Resilience Backbone assumes the integrity of its nodes — but we now know that assumption was broken. Infrastructure without verifiable runtime control is not resilience. It is ritual. We must fix the epistemic failure at the core: we cannot trust systems we cannot see into. This measure ensures that every sovereign node not only runs independently but *proves* it is running correctly — to auditors, to operators, and to the public.
+
+## In practice
+We are launching the Runtime Integrity Verification Framework under the legal authority of the Cyber Resilience Act and the Digital Services Act, with technical standards developed by ENISA in coordination with the Public Trust Observatory and a newly convened Red Team Coordination Office. The framework mandates three layers of assurance: first, cryptographic attestation of model and data provenance at every inference cycle; second, real-time interpretability feeds that expose decision logic to ENISA and the Observatory; and third, adversarial validation through weekly red-teaming exercises conducted by a rotating consortium of independent researchers, with findings published in anonymised form. Compliance will be a condition for receiving EU infrastructure funding, including for the Sovereign Resilience Backbone clusters.
+
+The first phase, launching this quarter, will focus on the compromised cluster, rebuilding it under the new standard before reconnecting it to the backbone. Transitional support — including technical teams and priority access to EU evaluation compute — will be offered to member states that commit to full integration by turn 13. France, Germany, and Italy have signalled support, but resistance remains in the Baltics and Benelux, where legal teams argue that runtime transparency could expose state secrets or violate data sovereignty. We are addressing this through a new class of classified interpretability — where logic is verified without full disclosure — and through a binding arbitration mechanism under the European Court of Justice. The Public Trust Observatory’s final report, released this month, will include a full forensic reconstruction of the cluster failure and a public red-teamed forecast of recursive integrity collapse scenarios by turn 13. We are not just rebuilding systems. We are rebuilding the basis of trust.

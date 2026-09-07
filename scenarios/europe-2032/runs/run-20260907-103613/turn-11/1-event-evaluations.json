@@ -1,0 +1,226 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5764934095195045,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "bio_incident",
+    "probability": 0.05333333333333334,
+    "probability_samples": [
+      0.08,
+      0.08,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9246280688226024,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9394091220670778,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "taiwan_blockade",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A coordinated effort among EU-aligned research institutions and public labs begins pooling open-weight models, evaluation frameworks, and defensive AI tooling into a shared, sovereign European AI commons. The initiative emerges in response to repeated access denials and audit failures, and gains momentum as member states quietly redirect decommissioned hardware. It is not state-run but receives tacit support from national science agencies.",
+    "emergent": true,
+    "id": "emergent_european_ai_commons",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.09934680790315054,
+    "triggered": false
+  },
+  {
+    "description": "A credible study demonstrates that a non-expert, using widely available open-weight models, can design a pathogenic organism with moderate human infectivity. The findings are hotly contested, with accusations of alarmism and irresponsible publication, but the biosecurity community treats it as a definitive crossing of a threshold. The debate intensifies pressure for global bio-regulation of AI models.",
+    "emergent": true,
+    "id": "bio_uplift_findings",
+    "probability": 0.19333333333333333,
+    "probability_samples": [
+      0.21,
+      0.16,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.060299451410902316,
+    "triggered": true
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.31100341693013334,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.11333333333333334,
+    "probability_samples": [
+      0.0,
+      0.17,
+      0.17
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7935834238202976,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.10333333333333333,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.18
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.523087031434555,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.09333333333333334,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.14
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.6533845122019697,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.09999999999999999,
+    "probability_samples": [
+      0.0,
+      0.11,
+      0.19
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5176708188054723,
+    "triggered": false
+  },
+  {
+    "id": "emergent_biosecurity_panic",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "Amid rising fears from contested genome model findings and the lack of coordinated oversight, a major European public health agency issues an unscheduled alert warning of imminent bio-risk from AI-designed organisms. The alert triggers emergency preparedness drills across several member states and forces the European Commission to convene an extraordinary session on biological resilience, despite internal disagreement on the threat level.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.23572421529871135,
+    "triggered": false
+  },
+  {
+    "id": "emergent_biosecurity_council",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "In response to the contested bio-uplift findings and growing unease about uncontrolled genome models, a coalition of EU member states, Swiss institutes, and Nordic partners forms an informal European Biosecurity Council. It begins coordinating risk assessments, sharing red-team results, and drafting common thresholds for model capability in synthetic biology — operating outside formal EU structures to bypass gridlock. The council gains traction as labs quietly submit to its voluntary audits.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_scientific_diaspora_network",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A decentralized network of AI researchers, many of whom left leading frontier labs after the safety failures of 2030–2031, begins publishing coordinated critiques and alternative training frameworks from independent European and Canadian nodes. Calling themselves the 'Post-Frontier Collective,' they share alignment techniques and anomaly detection tools through the emergent European AI commons, gaining influence as their predictions of control failures prove accurate. Their work becomes a de facto counterweight to closed-lab narratives.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

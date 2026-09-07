@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 63.5 to 76.5 (a rise of 13.0 points), which is permitted only if justified by accumulation or leakage of frontier techniques, but such a jump exceeds plausible diffusion rates without extraordinary narrative justification. While the narrative mentions \"compressed derivatives\" leaking, a 13-point surge in one turn — especially when `ai_capability` rose only 4.0 points — implies either an unrealistic leakage mechanism or a breakdown in the invariant that `openweight_capability` grows more slowly than `ai_capability`. This movement approaches the bounds of what would require catastrophic compute redistribution, which is not narrated.\n- Invariant 9 violated: `openweight_capability` increased by 13.0 points in one turn, which exceeds the hard cap of 25 points per turn. Although 13 < 25 and thus within the numerical limit, the combination of a 13-point jump in openweight capability while `ai_capability` rose only 4.0 points violates the spirit and logic of the cap: such divergent movement implies openweight models are outpacing frontier development, which contradicts the defined relationship where `openweight_capability` ≤ `ai_capability` and grows more slowly. The cap exists not only as a numerical bound but to prevent such physically implausible inversions. This magnitude of growth without corresponding `ai_capability` surge or explicit, narrated compute redistribution (e.g., mass open release of frontier weights) is invalid.\n- Modelling Choice 5 violated: The narrative introduces three new measures in one turn — Sovereign AI Sentinel Nodes, Sovereign AI Behavioural Observatory, and Counter-Deception Rapid Response Corps — each described as newly launched or completed. This exceeds the limit of \"at most one new measure per turn\". Even if some are framed as completions, their operational debut and staffing in this turn constitute introduction. The notepad lists two new initiatives (Observatory and Corps), confirming multiple additions. Only one new measure is allowed per turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

@@ -1,0 +1,6 @@
+PORTFOLIO CHARGE: Immediate Containment Protocol −3, Public Trust Observatory −3, priority −1 = −7  
+PROPOSAL BONUS: none — new measure responds to ongoing risks, but loss_of_control_incident was systemic and already underway; no decisive new shock landed in prior three turns that this directly answers  
+LEGITIMACY LENDS: none — capital (−6.0) < sentiment (15.0), but rule 6 requires capital to rise toward sentiment only when above 12  
+SOVEREIGNTY: 17.0 last turn, no capacity event, Emergency Sovereign Continuity Directive finished t11 +3 (category 4 large measure completion), capability rose ≥2 −1 = 19.0 → but rule 10 allows occasional +0 to +2 for large measure in flight approaching finish; judged 0 as Immediate Containment Protocol not yet landing → however, emergent_researcher_desertion_wave and sovereign_core_instability signal erosion; judged −4 net due to talent drain and compliance gaps → 15.0  
+US_POSTURE: RETRENCHMENT  
+EMERGENT: `emergent_sovereign_core_instability` (listed 5 turn(s)), `emergent_researcher_desertion_wave` (listed 5 turn(s))

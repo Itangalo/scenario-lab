@@ -1,0 +1,29 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now recognise that without sovereign capacity, neither mandate can be fulfilled: control is not an alternative to safety, it is its precondition.  
+- Trigger: The **cyber_major_incident** and **openweight_frontier_release** occurring under `ai_safety = 0.0` and `eu_ai_sovereignty = 24.0`, while `ai_capability = 98.5`, proves that external actors and distributed models now operate beyond any meaningful oversight, and that our inability to enforce security on systems we depend on renders all risk mitigation performative.  
+- Grounds: At this capability level, harm is no longer a possibility—it is operational. The absence of safety is structural, not accidental: no evaluation, audit or restriction can land when the systems in question are either black-box frontier agents or already loose as open weights. Our identity must reflect that sovereignty—meaning legal, physical and technical control over critical AI infrastructure—is not a policy option among others. It is the only terrain on which either of our core mandates can now be pursued.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, accept being wrong sometimes as the price of not being late, and now also accept that failure may come not from acting too soon but from acting too weakly when the moment demanded total clarity of command.  
+- Grounds: The **cyber_major_incident**, combined with the **export_control_escalation**, reveals that hesitation has become indistinguishable from surrender. We acted on compute integration, but stopped short of asserting full jurisdictional reach. That half-measure is now exposed: systems outside enforceable law are already weaponised. Our commitment evolves not because uncertainty has lessened—it has grown overwhelming—but because the cost of partial action has become greater than the risk of decisive imposition.
+
+## Portfolio  
+- `Regional Compute Integration Pact (category 4, costs 3 per turn, started turn 12, finishes on turn 14): A new measure to formally integrate the emergent regional compute pact into the EU’s sovereign AI architecture, establishing shared governance, interoperability standards, and joint mission priorities` — in flight  
+- `Open Science Resilience Initiative (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — finished this turn  
+
+## New measure  
+**Emergency Sovereignty Enforcement Directive**  
+We declare immediate crisis authority over all compute infrastructure receiving EU funding or accessing EU data pools, mandating real-time telemetry sharing, model weight escrow, and binding access for ENISA and national cyber authorities during declared incidents.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size: large`  
+`Finishes on turn: 14`  
+`Targeted effect:` +8 to `eu_ai_sovereignty`, +3 to `ai_safety` (via enforced observability), −5 to `public_sentiment` (short-term backlash from perceived overreach)  
+`Applies to:` All nodes in the regional compute network, including neutral jurisdictions; ENISA; European Defence Agency; national cybersecurity agencies; EIB-funded data centres
+
+## Priority  
+**Emergency Sovereignty Enforcement Directive** — because the **cyber_major_incident** proves that voluntary frameworks and phased integration are obsolete: we are under attack by tools we cannot trace, running on systems we cannot inspect, and our survival as a decision-making entity depends on asserting control *now*, not negotiating it later.
+
+## In practice  
+This turn, we invoke Article 222 TFEU (solidarity clause) and the NIS2 directive’s emergency provisions to issue the Emergency Sovereignty Enforcement Directive. This is not a proposal—it is a declaration of crisis competence. All compute nodes accessing EU data, funding, or cross-border research infrastructures must, within 90 days, install ENISA-certified telemetry agents that stream runtime indicators, submit model weights to judicially overseen escrow, and enable crisis-access protocols for authorised defenders. Non-compliance triggers immediate suspension of EU connectivity, data access, and funding flows. Switzerland is not exempt: we offer them co-design of the oversight panel, but not veto power. The European Investment Bank is instructed to freeze disbursements under the Digital Europe Programme until compliance audits are passed.
+
+We are acting through DG CONNECT, the European Cybersecurity Competence Centre, and the newly activated Joint Crisis Cell for Strategic Technologies—staffed jointly by ENISA, Frontex, and Europol—to deploy verification tooling and conduct rapid assessments. Resistance from academic hubs citing research freedom is acknowledged, but outweighed: we are not suspending science, we are preventing its weaponisation. To ease adoption, we are fast-tracking €1.2 billion in conditional modernisation grants for nodes that certify by turn 14. This is not optional alignment—it is enforcement of survival. The era of distributed compute without unified control is over. If the Union is to remain a subject of history, not its object, it must act like one.

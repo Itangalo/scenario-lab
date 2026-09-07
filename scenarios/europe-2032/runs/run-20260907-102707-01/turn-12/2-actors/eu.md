@@ -1,0 +1,23 @@
+## Statement changes  
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer act without the capital to enforce.  
+- Grounds: This turn, political capital fell to 0.0 not because of external shock but because we spent it all — on binding mandates, on integration, on pilot deployments — while cohesion frayed and enforcement collapsed. The Commission drafted the Regulation, but no agency can compel Germany or Spain to implement it. The Energy Council delayed. The Open Science Resilience Initiative finishes this turn, but with no follow-on funding, its hubs will disband. We are still acting, but nothing lands. To persist in acting without capital is not courage — it is ritual. The commitment stands, but its terms must change: we will still commit early, but only where we can credibly enforce, or where failure costs less than delay.  
+
+- modify `two_year_commitment` (commitment): Anchor EU sovereign capability in auditable AI by operationalising verifiable systems in three critical domains—energy, health, and biosecurity—by end-2032, with binding deployment mandates and open-weight fallbacks for all essential services — but suspend enforcement ambition until political capital recovers above 12.0  
+- Grounds: The capability_jump to 95.0 has made human oversight structurally meaningless, yet our only response — binding mandates — cannot be enforced without capital. The emergent_open_bioscience_breakthrough proves auditable AI works, but only where we control the stack. We cannot mandate what we cannot back. The commitment holds, but its enforcement clause is suspended: we will continue to build and demonstrate, but not to compel, until the Union can cohere again.  
+
+- reclassify `two_mandates` to identity  
+- Grounds: No change in content, but reaffirmed under fire: the contradiction between sovereignty and safety is not resolvable by pretending one dominates. We are still torn, still responsible, still here.
+
+## Portfolio  
+- `Open Science Resilience Initiative (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — **finished**  
+- `Operationalise auditable AI in critical infrastructure with binding deployment mandates (category 9, costs 3 per turn, started turn 12, finishes on turn 13): Mandate the use of auditable AI systems in energy grid management, hospital diagnostics, and biosecurity monitoring, with open-weight fallbacks required for all essential services by Q2 2032` — in flight  
+
+## New measure  
+None this turn.  
+Waiting for political capital to stabilise and member-state resistance to crystallise into either concession or defection.
+
+## Priority  
+**Operationalise auditable AI in critical infrastructure with binding deployment mandates** — because it is the only measure still attempting to convert our dwindling authority into material sovereignty, even if enforcement is currently symbolic; without it, we concede that auditable AI is only for pilots, not power.
+
+## In practice  
+This turn, we are living the contradiction: the joint cyber-biosurveillance pact works — Brussels and Stockholm cells flagged two bio-signals, and response protocols held — but we run them on foreign models we cannot inspect. The Open Science Resilience Initiative finishes today: its protein folding models are in use at Charité, Hospital del Mar, and the JRC, and three national biosecurity agencies have adopted them. That is real. But the Commission’s draft Regulation under Article 114 TFEU cannot move forward without Council adoption, and the Energy Council has delayed alignment. Germany cites grid stability, Spain fears hospital disruption, Italy demands transition funds. We have no capital to offer. Our only leverage is the bioscience breakthrough itself — we are circulating the adoption data, framing auditable AI not as restriction but as the only form of capability the Union can truly own. We are not withdrawing the mandate, but we are not enforcing it either. Instead, we are shifting to demonstration: offering technical support, open-weight integration kits, and joint certification pathways to any member state that will pilot. We are buying time, not building power — but power without cohesion is dust.

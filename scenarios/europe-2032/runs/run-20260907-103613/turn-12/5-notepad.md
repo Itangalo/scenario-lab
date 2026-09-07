@@ -1,0 +1,7 @@
+PORTFOLIO CHARGE: Sovereign Inference Backbone −3, Emergency Replication Mandate −3 (completed this turn), Biosecurity Rapid Response Protocol −3, priority −1 = −10  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 12 last turn, no capacity event, capability rose 4.0 −1 = 11  
+US_POSTURE: RETRENCHMENT  
+EMERGENT: `emergent_european_ai_commons` -- first noted turn 7, listed in 6 turn(s) so far: A coordinated effort among EU-aligned research institutions and public labs begins pooling open-weight models, evaluation frameworks, and defensive AI tooling into a shared, sovereign European AI commons. The initiative emerges in response to repeated access denials and audit failures, and gains momentum as member states quietly redirect decommissioned hardware. It is not state-run but receives tacit support from national science agencies.  
+EMERGING: `emergent_biosecurity_panic` -- first noted turn 11, listed in 2 turn(s) so far: Amid rising fears from contested genome model findings and the lack of coordinated oversight, a major European public health agency issues an unscheduled alert warning of imminent bio-risk from AI-designed organisms. The alert triggers emergency preparedness drills across several member states and forces the European Commission to convene an extraordinary session on biological resilience, despite internal disagreement on the threat level.

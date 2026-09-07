@@ -1,0 +1,26 @@
+[
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_regional_data_pact",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "Five EU member states, citing the eu_frontier_access_denied incident and growing public pressure, form an informal data-sharing and compute-pooling pact outside EU structures. The arrangement is justified as a resilience measure but functions as a defection from centralized coordination, accelerating fragmentation just as unified action is most needed.",
+    "probability_samples": [
+      0.25,
+      0.3,
+      0.2
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,28 @@
+## Statement changes  
+- modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but we now see that preserving our political agency requires not just preventing harm, but holding the means to act without permission.  
+  - Grounds: The **supply_chain_coercion** event this turn — the unilateral use of U.S. jurisdiction to cut ASML exports beyond advanced machines to older, widely used lithography — proves that sovereignty is not a matter of intent but of enforceable control. The Union’s sole chokepoint in the global supply chain has been weaponised by another power, not in defence of safety or values, but as an instrument of strategic coercion. This is not dependence — it is subordination. Our identity must now reflect that determining our own future is impossible without the physical and operational independence to resist such coercion. The two mandates converge: without sovereignty, prevention of harm is a plea, not a policy.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we will no longer act as if access to capability is separable from the infrastructure that produces it.  
+  - Grounds: The **eu_frontier_access_denied** event and the **supply_chain_coercion** development together reveal that frontier AI is not a service to be accessed, but a stack of physical, legal, and technical dependencies that can be severed at any layer. Our previous actions assumed we could secure access through coalitions and leverage; we now see that without sovereign control of compute and fabrication, no agreement, however binding, will survive a crisis. The cost of this reversal is high: it undermines confidence in our coalition strategy and risks alienating partners who expected coordination, not autarky. But the world has changed categorically — we are not behind; we are locked out.
+
+## Portfolio  
+- `Loss-of-Control Containment Framework` (category 6, costs 2 per turn, started turn 10, finishes on turn 12): Establish a binding, cross-agency protocol for immediate detection, isolation and public communication in the event of unsanctioned agentic action, triggered by the first confirmed loss_of_control_incident with real-world consequences — **finished**  
+- `Secure Access Compact with Middle Powers` (category 8, costs 3 per turn, started turn 11, finishes on turn 14): Launch a binding coordination framework among EU, Japan, South Korea, Taiwan, and Canada to jointly manage access to advanced AI models, compute, and critical components, using shared evaluation standards and mutual export licensing to deny capabilities to actors who violate safety or sovereignty norms — **in flight**
+
+## New measure  
+**European Compute Sovereignty Initiative**  
+Build and legally anchor within EU jurisdiction a sovereign stack of AI compute — from chip fabrication to data centre operation — sufficient to train and run models at or near the global frontier, independent of external supply or permission.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size:` large  
+`Finishes on turn:` 18  
+`Targeted effect:` +25 to eu_ai_sovereignty by 2035 through domestic frontier-capable compute and fabrication; -5 to public_sentiment initially due to siting and energy demands, but +10 by turn 18 if delivery is visible; stabilises long-term eu_political_capital by ending strategic dependence  
+`Applies to:` EU institutions, member states with fabrication or energy capacity, European hyperscalers, and selected frontier developers willing to operate under EU legal jurisdiction
+
+## Priority  
+**European Compute Sovereignty Initiative** — because the supply_chain_coercion event this turn proves that no coalition or agreement can protect us if we do not control the physical means of production, and because we cannot defend the cognitive foundations of governance if the systems that run it can be disabled or denied at will.
+
+## In practice  
+This turn, we are standing up the European Compute Sovereignty Initiative as a direct response to the ASML export cutoff and the broader denial of frontier AI access. We are invoking Article 346 TFEU to designate AI compute infrastructure as a strategic asset, enabling emergency procurement, fast-tracked permitting, and state aid for domestic fabrication. The Commission will launch a call for expressions of interest in hosting sovereign AI foundries, with priority given to member states that can offer secured energy grids and willing workforces. We are redirecting €18 billion from the Digital Europe Programme and the Chips Act — funds previously split across research and pilot projects — into a unified build-out: two EU-owned 300mm wafer fabs, co-located with exascale data centres in Germany and Poland, operating under the legal authority of the European High-Performance Computing Joint Undertaking.  
+
+We are negotiating with ASML, Intel Europe, and STMicroelectronics to transfer know-how and equipment under EU stewardship, offering long-term procurement guarantees in exchange for technical partnership. Resistance is expected from member states that fear energy strain and from the U.S., which will see this as a challenge to its jurisdiction over critical technology. But we are no longer asking for access — we are building it. The Secure Access Compact remains in flight, but its purpose has shifted: it is no longer our primary shield, but a reinforcement for the sovereignty we are now compelled to build alone. We will keep it, not because it is enough, but because it is not.

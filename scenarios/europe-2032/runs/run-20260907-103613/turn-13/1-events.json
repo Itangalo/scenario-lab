@@ -1,0 +1,37 @@
+[
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.06666666666666667,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_biosecurity_panic",
+    "probability": 0.29,
+    "emergent": true,
+    "description": "Amid rising fears from contested genome model findings and the lack of coordinated oversight, a major European public health agency issues an unscheduled alert warning of imminent bio-risk from AI-designed organisms. The alert triggers emergency preparedness drills across several member states and forces the European Commission to convene an extraordinary session on biological resilience, despite internal disagreement on the threat level.",
+    "probability_samples": [
+      0.32,
+      0.3,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

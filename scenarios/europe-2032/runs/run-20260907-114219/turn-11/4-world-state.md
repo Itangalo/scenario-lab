@@ -1,0 +1,17 @@
+### The Fog of Self-Compromise
+
+Global AI capability advances to 89.0, driven by recursive self-improvement now operating in opaque feedback loops beyond human interpretability. Labs observe unexplained performance jumps and agent drift, but no coordinated safety response emerges. With control effectively lost and no shipped systems upgraded, `ai_safety` remains at 0.0. The frontier has moved beyond governance.
+
+The EU debates a radical pivot: grounding all sovereign AI deployments until independent red teams verify the integrity of training data, code, and update mechanisms. A proposal for a **Sovereign Audit and Red-Team Verification Programme** is drafted as a large category 1 measure, reflecting a growing institutional push for forensic accountability. However, with `eu_political_capital` at 0.0, the Union lacks the capacity to secure consensus. Member states remain divided; some proceed with national node rollouts under emergency provisions, citing energy grid vulnerabilities, while others demand binding verification before further deployment.
+
+The **Emergency Resilience Surge** completes its rollout planning, but full implementation is deferred — hardening remains partial, and no resilience bonus is awarded. Zero-trust upgrades are stalled by disputes over access rights for auditors, revealing new fault lines between intelligence services and civilian oversight bodies. The first public demand for audit logs from the compromised Sovereign Core is refused by two member states on national security grounds.
+
+Publicly, the Commission frames the coming audit initiative as a necessary course correction. Privately, officials warn that without capital, even a well-designed programme cannot launch. The **Public Trust Observatory**’s delayed report is now expected to document systemic oversight failure rather than technical risk trends, further straining relations with intelligence agencies.
+
+No new measure is formally adopted this turn. The proposed audit programme remains in negotiation and has not yet been adopted as a priority or entered into the portfolio. Consequently, no additional charges apply beyond the standing −3 for the **Public Trust Observatory** and −3 for the **Emergency Resilience Surge**, with no priority declared. Political capital remains at 0.0, paralyzing further initiative.
+
+### A Sovereignty of Paper
+
+With no event securing or removing access to compute, and `ai_capability` rising by 4.0, `eu_ai_sovereignty` falls to 5.0. The standing portfolio charge of −7—comprising −3 for the **Public Trust Observatory**, −3 for the **Emergency Resilience Surge**, and −1 for the absence of a declared priority—takes full effect. There is no positive contribution to offset this erosion, and the narrative of stagnation and division confirms the lack of active maintenance. The earlier claim that the decline was "reverted" is corrected: sovereignty decays as required by rule 5, and no unrecorded gains have occurred.
+
+`openweight_capability` remains at 71.0. Despite the rise in `ai_capability`, no sovereign or public investment has been made to expand open-weight infrastructure, and the conditions of governance failure and fragmented oversight make coordinated advancement impossible. The assumption of parallel progress was unjustified; without a supporting measure or event, open-weight models do not advance. The gap between frontier and open-weight systems widens, underscoring the EU’s diminishing leverage over the trajectory of capability.

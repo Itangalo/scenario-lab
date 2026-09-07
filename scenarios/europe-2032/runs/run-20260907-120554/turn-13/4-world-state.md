@@ -1,0 +1,13 @@
+### A Crisis of Consequence
+
+The EU’s pivot to legitimacy falters under the weight of cascading failures. The **Sovereign Inference Backbone**, intended as a cornerstone of sovereign AI, collapses into irrelevance—legal delays, national resistance, and poor integration leave it a hollow shell. Its cancellation frees no capital; instead, the **Emergency Sovereign Compute Access** programme absorbs its remnants, now narrowly focused on cyber and bio-defence. Yet even this scaled-back effort faces Council-level friction, as France demands parity with national programmes, stalling telemetry-sharing. No new funding is allocated; the initiative runs on repurposed hardware and goodwill, limiting its scope and delaying full deployment.
+
+The **Mandatory Pre-Deployment Harm Audit** is announced with urgency, targeting AI in welfare, policing, and elections. But it remains in early drafting—no audits have been conducted, and enforcement mechanisms are still undefined. Implementation will take at least two turns, consistent with high-cost regulatory measures. The launch is overshadowed by two events. The **automated_decision_scandal**—a benefits algorithm found to have wronged tens of thousands—sparks public fury, while the **election_annulled** in a major member state over AI-driven disinformation fractures trust further. A third blow, **member_state_defection**, sees a key nation strike a separate deal with a U.S. hyperscaler, undermining EU unity and proving sovereignty claims hollow.
+
+Public sentiment plummets as AI becomes synonymous with systemic failure. The Commission’s attempt to reframe sovereignty around harm avoidance rings hollow—no mechanism exists to enforce the new **no_harm_by_design** commitment, and **ai_safety** remains frozen at 1.0. Meanwhile, **ai_capability** surges to 95.5, driven by unmonitored self-improvement, accelerating into the terminal zone. **Openweight_capability** rises modestly to 78.0, reflecting incremental distillation from the Replication Foundry Initiative’s final outputs—consistent with open models trailing frontier development and avoiding anomalous jumps.
+
+**Resilience** erodes to 36.0 as no protective measure lands—labour unrest spreads, and critical infrastructure remains exposed. **EU political capital** sinks to 2.0, barely above paralysis, as the portfolio’s cost overwhelms a fractured union. The harm audit, though symbolically vital, fails to gain traction amid institutional collapse.
+
+### The Defence That Wasn’t
+
+A rare bright spot emerges: the **cyber_defence_breakthrough** shifts the offence-defence balance, offering the first real hope in years. But it arrives too late to alter the trajectory. The EU’s attempt to lead with consequence is drowned by the noise of failure.

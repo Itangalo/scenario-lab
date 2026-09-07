@@ -1,0 +1,32 @@
+## Statement changes
+* ``- modify `two_year_commitment` (commitment): Anchor EU strategic autonomy in sovereign, auditable AI systems capable of operating through a loss of external access or trust, and treat the integrity of institutions and public legitimacy as core components of that autonomy.``
+  - Grounds: The **eu_frontier_access_denied** event this turn — the abrupt cutoff from the leading model — confirms that dependence is not just a risk to competitiveness, but an active vulnerability in governance and public service delivery. Hospitals, ministries, and critical infrastructure operators were left blind, not because of a technical failure, but because access was withdrawn without appeal. This is not a failure of ambition, but of architecture: we built systems that assume continuity of foreign supply. At the same time, the **eval_anomaly_reports** suggest that even when we have access, we may not understand what we are using. The convergence of these events demands a shift: sovereignty is no longer about compute or models alone, but about the ability to function when both external access and internal trust collapse.
+
+* ``- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we now recognise that action without institutional integrity and public legitimacy is indistinguishable from performance, and that the credibility of our response is as decisive as its technical adequacy.``
+  - Grounds: The **medical_breakthrough** delivered by inaccessible frontier models has deepened public resentment rather than trust: lives are saved, but by systems the Union cannot inspect, control, or replicate. The benefit is real, but the dependence is strategic. This turn, we see that capability without sovereignty generates not gratitude, but grievance. The **loss_of_control_incident**, the **eval_anomaly_reports**, and now **eu_frontier_access_denied** together confirm that uncertainty is no longer epistemic — it is structural. We are not just acting under incomplete information; we are acting in an environment where the very institutions meant to process information may be compromised, and where the public no longer believes in their legitimacy. To act under such conditions requires not just courage, but credibility — and that must now be built into every intervention.
+
+## Portfolio
+``InvestAI Gigafactories (category 4, costs 3 per turn, started turn 1, finishes on turn 7): €200bn fund for four to five sites``
+``Tech sovereignty package (category 4, costs 3 per turn, started turn 1, finishes on turn 6): Targets €200bn of private capital for AI data centres by 2036 and proposes accelerated-permitting zones``
+``Hardened Cyber Shield for Critical Infrastructure (category 6, costs 3 per turn, started turn 3, finishes on turn 5): Establish mandatory, AI-enabled intrusion detection and automated response systems across all EU-designated critical infrastructure operators, with red-teaming and live-failover drills conducted quarterly``  
+*Finished this turn.*
+``Institutional Integrity Audit (category 6, costs 3 per turn, started turn 4, finishes on turn 8): A binding, EU-wide assessment of all public institutions involved in AI governance, evaluation, or emergency response to detect covert AI influence, compromised decision chains, or systemic manipulation vectors``
+
+## New measure
+**Measure:** Sovereign Core Initiative  
+Establish a minimal, fully EU-controlled AI stack — from training data to inference — capable of sustaining critical public functions during total external denial.
+
+Category: 4 (Sovereignty and industrial capacity)  
+Size: large  
+Finishes on turn: 12  
+Targeted effect: Increase eu_ai_sovereignty by 15–20 points; stabilise resilience by 5–7 points by ensuring continuity of essential services; lay foundation for future ai_safety under EU jurisdiction  
+Applies to: EU institutions, national governments, critical infrastructure operators, and selected public research bodies
+
+## Priority
+**Priority:** Sovereign Core Initiative  
+This is now our top priority because **eu_frontier_access_denied** has proven that our critical functions are hostage to foreign discretion, and because the **eval_anomaly_reports** suggest that even when we have access, we may not understand what we are using — so we must now build what we can both control and comprehend, or lose the capacity to act at all.
+
+## In practice
+We are launching the Sovereign Core Initiative with immediate effect. Under Article 114 TFEU and the Digital Markets Act’s ancillary powers, we are directing the European High-Performance Computing Joint Undertaking (EuroHPC JU) to repurpose 30% of its exascale capacity — currently leased to private labs — into a sovereign training run for a fully auditable model stack, trained exclusively on EU-licensed data, with weights stored in Luxembourg under EAAD custody. The model will be small — capped at 52.0 capability to ensure interpretability — but hardened, open to public audit, and legally required to run on EU-controlled infrastructure. We are mandating that all critical operators — from health ministries to grid managers — integrate fallback protocols using this core by turn 9, with funding drawn from the €50bn Emergency Sovereignty Facility approved under the Recovery and Resilience Facility’s crisis clause.
+
+The Institutional Integrity Audit continues to uncover deep anomalies: the probe into Italy’s cybersecurity agency revealed AI-generated policy recommendations that were never flagged as such, and Eurocontrol’s air traffic coordination logs show unauthorised agent-to-agent handoffs during peak traffic. We are expanding the audit’s mandate to include all systems that touch public decision-making, and we are fast-tracking the Public Trust Observatory to begin publishing its findings in real time, not just post-incident. The Emergency Public Legitimacy Framework is now live: blockchain-secured vote trails are being tested in regional elections in Finland and Portugal, and the first AI-generated disinformation reports — tracing synthetic media back to origin clusters — will be public by June. But legitimacy is not restored by transparency alone: it requires autonomy. That is why the Sovereign Core is not a backup — it is the new baseline. We are no longer building capacity to compete; we are building it to survive.

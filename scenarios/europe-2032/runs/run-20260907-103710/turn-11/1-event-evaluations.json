@@ -1,0 +1,248 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.28629903649388433,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5539563735463042,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.22377892435985325,
+    "triggered": true
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1395713976218348,
+    "triggered": true
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.25,
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5974797231004242,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.16,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.16
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.11272559578706254,
+    "triggered": true
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.17,
+    "probability_samples": [
+      0.17,
+      0.17,
+      0.17
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7111551490853857,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.12,
+    "probability_samples": [
+      0.1,
+      0.16,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1519980150264416,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.10546392524530512,
+    "triggered": true
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.34317618810799955,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.11,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.11
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5248874227990948,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.17999083869492782,
+    "triggered": false
+  },
+  {
+    "id": "emergent_biosecurity_alliance",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "In response to repeated bio_uplift_findings and the failure of centralized governance, a coalition of European public health institutes, academic labs, and independent biosecurity watchdogs forms a decentralized early-warning network for AI-assisted biological threats. It operates outside EU institutional channels, sharing detection heuristics and red-flag sequences via encrypted peer-to-peer channels. The alliance gains traction as national governments quietly endorse its protocols for border screening and lab monitoring.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.00996239139468047,
+    "triggered": true
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.03333333333333333,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.05,
+      0.05
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.03333333333333333,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.05,
+      0.05
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "emergent_bio_defence_consortium",
+    "probability": 0.14666666666666667,
+    "emergent": true,
+    "description": "In response to repeated biosecurity signals and the failure of top-down coordination, a coalition of European public health institutes, university labs, and biotech firms forms a distributed early-warning network for AI-generated biological threats. It begins deploying AI-driven anomaly detection in wastewater and clinical data streams across seven member states, operating outside formal EU structures but sharing data in real time. The initiative gains emergency funding from national science councils and is treated as a de facto standard within months.",
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.22
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.06483217290638887,
+    "triggered": true
+  },
+  {
+    "id": "emergent_sovereign_ai_incubator",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Amid continued access denials and political paralysis, a network of national AI research hubs — including France's ANITI, Germany's DFKI, and the Netherlands' CWI — quietly launches a coordinated incubator program to develop and deploy sovereign, EU-controlled agent systems for critical infrastructure management. Leveraging decommissioned hardware from the stalled Sovereign Inference Backbone and talent from the Replication Foundry Initiative, the effort operates under minimal oversight and focuses on self-hosted, auditable models. It is not announced publicly but begins piloting in energy grid control and border logistics.",
+    "probability_samples": [
+      0.0,
+      0.18,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_labour_unrest_coordination",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Displaced administrative and legal workers in five member states begin using decentralized, AI-mediated coordination tools to organize cross-border actions, including synchronized strikes against public-sector AI adoption pilots. The movement leverages open-agent frameworks to manage logistics and messaging, evading traditional union and party structures. Initial actions target local implementations of automated decision systems, framing them as both unjust and unsafe, and gain traction in regions with high public_sentiment resistance.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.18
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

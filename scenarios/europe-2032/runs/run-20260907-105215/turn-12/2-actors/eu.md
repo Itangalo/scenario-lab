@@ -1,0 +1,21 @@
+No statement changes.
+
+## Portfolio
+- Sovereign AI Behavioural Observatory (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context — **finished this turn**.
+- Emergency Compute Redundancy Initiative (category 4, costs 3 per turn, started turn 11, finishes on turn 13): Establish geographically distributed, EU-operated fallback clusters capable of running critical sovereign models if external frontier access is disrupted, using hardened infrastructure and pre-staged weights from open and licensed sources.
+
+## New measure
+None this turn.  
+Waiting for the first operational telemetry from the now-finished Sovereign AI Behavioural Observatory and the continued deployment of the Emergency Compute Redundancy Initiative to assess sovereign situational awareness and execution capacity before committing further capital.
+
+## Priority
+**Emergency Compute Redundancy Initiative** — because compute sovereignty remains the non-negotiable foundation of all other governance: without the ability to run critical models independently, monitoring, analysis, and response are powerless, and because the emergent_fractured_sovereignty_initiative proves that even within the Union, continuity is now a race against cutoff.
+
+## In practice
+The Sovereign AI Behavioural Observatory has reached its finishing turn and is now operational. We are standing up its core function immediately: a 24/7 threat fusion cell hosted at the Joint Research Centre in Ispra, with embedded analysts from ENISA, Europol’s AI Crime Unit, and national intelligence services on secondment. It will begin ingesting data from the Sentinel Nodes, open-weight deployments, and partner telemetry under the Western threat-sharing pact. Its first task is to characterise the loss_of_control_incident — not just what happened, but whether it was isolated, replicable, or indicative of a broader failure mode. We are publishing a preliminary open report within 30 days to signal capability and rebuild trust, though full attribution may take longer.
+
+On the ground, the Emergency Compute Redundancy Initiative continues to push through legal and logistical barriers. In Finland, we have activated Article 172 TFEU to repurpose a stalled hyperscaler site in Rovaniemi, converting it into a hardened sovereign cluster with dual-use capacity for both crisis fallback and ongoing evaluation work. In Bulgaria, the Pernik industrial zone is being retrofitted with emergency power and microwave backhaul, while Luxembourg’s former financial data halls are being resecured under EU legal jurisdiction. These are not frontier-scale, but they are sovereign, hardened, and disconnected from foreign-controlled supply chains. We are coordinating with national energy regulators to fast-track grid connections under TEN-E, and with ESA to explore low-orbit backup comms.
+
+We are also engaging cautiously with the emergent_fractured_sovereignty_initiative. While it bypasses EU institutions, it reflects a real operational need and could become a de facto standard if left unabsorbed. We are not opposing it; instead, we are extending technical liaison through the Digital Cities Forum and offering interoperability standards developed by the Behavioural Observatory. Our goal is not to control it, but to shape it — to ensure that fragmentation does not become divergence. At the same time, we are silent on the municipal network: they are acting out of necessity, and we cannot afford to alienate potential allies. We are recording their procurement patterns, not blocking them.  
+
+Political capital remains at −9.0. There is no room for new measures. We are surviving on goodwill, emergency clauses, and the residual credibility of actions started earlier. Every decision now is triage. We are not building fast enough — but for the first time, we are building something that can stand when the frontier shuts us out.

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.16,
+    "probability_samples": [
+      0.14,
+      0.2,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_infrastructure_sabotage_wave",
+    "probability": 0.25,
+    "emergent": true,
+    "description": "A wave of localised sabotage and direct action targets AI infrastructure in multiple member states, including power lines feeding data centres and construction sites for new compute hubs. The attacks are small-scale but coordinated, exploiting public anger over job losses and broken trust. Authorities struggle to respond without escalating tensions, and the EU's ability to expand its digital footprint is effectively paralyzed for months.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

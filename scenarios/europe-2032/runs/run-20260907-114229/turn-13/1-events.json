@@ -1,0 +1,37 @@
+[
+  {
+    "id": "election_annulled",
+    "probability": 0.12,
+    "probability_samples": [
+      0.12,
+      0.12,
+      0.12
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_sovereign_core_instability",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "Persistent adversarial access to update chains in the Sovereign Core infrastructure is confirmed across multiple member states, suggesting a systemic flaw rather than isolated breaches. The compromise enables persistent model-level manipulation, making verification and audit meaningless unless the underlying trust model is rebuilt.",
+    "probability_samples": [
+      0.25,
+      0.25,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

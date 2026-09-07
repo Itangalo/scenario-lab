@@ -1,0 +1,170 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.7006474265375456,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.19000000000000003,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12666666666666668,
+    "probability_samples": [
+      0.14,
+      0.1,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4424882985917217,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.21140250536187188,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.04,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.04,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.04
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "emergent_european_ai_commons",
+    "probability": 0.16666666666666666,
+    "emergent": true,
+    "description": "A coordinated effort among EU-aligned research institutions and public labs continues to pool open-weight models, evaluation frameworks, and defensive AI tooling into a shared, sovereign European AI commons. The initiative gains traction as member states quietly redirect decommissioned hardware and tacitly support the network, despite the absence of formal coordination. Its resilience against fragmentation grows as trust in centralized AI governance erodes.",
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.7917273402675907,
+    "triggered": false
+  },
+  {
+    "id": "emergent_biosecurity_panic",
+    "probability": 0.3,
+    "emergent": true,
+    "description": "Amid rising fears from contested genome model findings and the lack of coordinated oversight, a major European public health agency issues an unscheduled alert warning of imminent bio-risk from AI-designed organisms. The alert triggers emergency preparedness drills across several member states and forces the European Commission to convene an extraordinary session on biological resilience, despite internal disagreement on the threat level.",
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.5816756766337651,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.05666666666666667,
+    "probability_samples": [
+      0.0,
+      0.17,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.963661392920153,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.13,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7871665480938493,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.14,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.5797637762996283,
+    "triggered": false
+  },
+  {
+    "description": "Amid deepening public distrust and repeated failures to secure access or control, a loose coalition of European municipal governments begins independently procuring and deploying defensive AI systems outside EU coordination, citing emergency powers and local jurisdiction. The move undermines central oversight and fragments response capacity further.",
+    "emergent": true,
+    "id": "emergent_municipal_oversight_fracture",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,59 @@
+[
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.08
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "rsi_onset",
+    "probability": 0.2333333333333333,
+    "probability_samples": [
+      0.35,
+      0.35,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_sovereign_core_instability",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "Persistent integration flaws in the Sovereign Core infrastructure, exposed during the emergency audit, are found to enable cascading failures between nodes. Despite patching efforts, the underlying architecture resists full stabilization, raising fears that the EU's flagship AI initiative may be inherently brittle under stress.",
+    "probability_samples": [
+      0.2,
+      0.0,
+      0.08
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.0,
+      0.25,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  }
+]

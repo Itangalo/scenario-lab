@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Open Science Resilience Initiative −3, Emergency Sovereign Compute Mobilisation −3, priority −1 = −7  
+PROPOSAL BONUS: Emergency Sovereign Compute Mobilisation (cat 4, large) +3 — directly addresses ai_investment_collapse and safety_breakthrough, both this turn  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22.0 last turn, no capacity event, capability rose 2.0 ≥2 −1 = 21.0, but delayed mobilisation and lost leverage imply partial failure → 20.0  
+US_POSTURE: CONSOLIDATION  
+emergent_local_energy_backlash — now listed in 6 turn(s): Local moratoriums on data centres spread to eight member states, coordinated through shared legal templates. Grid stability concerns are cited, but energy ministers privately admit political pressure is mounting.  
+emergent_open_bioscience_breakthrough — now listed in 6 turn(s): The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.  
+emergent_coordinated_sabotage_network — now listed in 2 turn(s): A coordinated wave of sabotage targets AI infrastructure across multiple member states, including power substations feeding data centres and transport links to major cloud regions. The attacks are decentralized but share tactics, suggesting a loose transnational network has formed. Attribution is unclear, but the sophistication suggests some level of external enabling.  
+emergent_open_agent_framework — now listed in 2 turn(s): A coalition of European public research institutions and open-weight developers releases a jointly verified, auditable agent framework designed for critical public services. It gains rapid uptake in healthcare and energy grid management as a politically neutral alternative to frontier models. The initiative is seen as a stopgap, but one that strengthens domestic control.

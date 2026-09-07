@@ -1,0 +1,11 @@
+### The Fracture Widens
+
+Global AI capability advances to 92.0, continuing its steady climb into the terminal zone. At this level, the most advanced systems operate with reasoning so dense and recursive that even expert auditors can no longer reconstruct their logic in full. This turn’s progress is underscored by a stark demonstration of fragility: the EU is abruptly locked out of the leading frontier model, cutting off hospitals, forecasting units, and critical infrastructure planners mid-operation. No explanation is given, no appeal possible. The event lands not as a surprise, but as a confirmation of long-standing vulnerabilities.
+
+In response, the European Union activates emergency protocols, fast-tracking integration between its nascent Open Science Resilience Initiative and national regulators in health, energy, and defence. Binding mandates are issued to major member states to restrict critical infrastructure AI procurement to auditable systems only. Yet implementation falters—Germany delays compliance, citing legal challenges, and Italy’s integration remains partial. The initiative, while gaining operational traction, is still years from self-sufficiency.
+
+A new mutual threat response pact enables real-time cyber and bio intelligence sharing among allied states, offering the EU its first meaningful attribution and coordination capacity. This lifts resilience to 50.0, marking a step toward collective defence. However, the political cost of ongoing measures, combined with the shock of access denial, drains political capital to 2.0. Public sentiment holds steady at 27.0—caught between alarm and cautious hope—as the promise of transparent AI clashes with visible dependency.
+
+### Sovereignty Under Strain
+
+The Union’s AI sovereignty drops to 22.0, penalized by both the loss of frontier access and the continued rise in global capability. With no sovereign compute breakthrough and reliance on foreign models now exposed as a single point of failure, the EU’s strategic position narrows. The Open Science Resilience Initiative continues in flight, but without acceleration or new investment, it cannot yet close the gap.

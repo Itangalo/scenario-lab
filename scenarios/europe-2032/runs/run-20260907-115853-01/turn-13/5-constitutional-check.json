@@ -1,0 +1,23 @@
+{
+  "status": "max_attempts_reached",
+  "iterations": 4,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `eu_political_capital` is reported as 0.0 in the proposed metrics, but the Game Master's Notepad calculates it as −8.0. The narrative also states \"political capital plunges to −8.0\", yet the metric presented for update is 0.0, creating a direct contradiction. The metric value must reflect the notepad and narrative.\n- Invariant 9 violated: The proposed metrics list no change in `eu_political_capital` (remains at 0.0), but the narrative and notepad clearly state a plunge to −8.0. This implies an unrepresented movement of 8.0 points that is not reflected in the output, suggesting either an incomplete update or an attempt to suppress a metric drop, which violates the requirement that all metric movements be explicitly and accurately reported."
+    },
+    {
+      "iteration": 2,
+      "violations": "- Invariant 2 violated: `eu_political_capital` is reported as 0.0 in the proposed new metrics, but the Game Master's Notepad explicitly calculates it as −8.0. The metric as presented in the update does not reflect this, misrepresenting a core state variable. The published metrics must match the notepad's authoritative record.\n- Modelling choice 5 violated: The narrative and notepad indicate three active measures (Emergency Sovereign Continuity Directive, Sovereign Inference Integrity Protocol, Emergency Degraded Mode Directive) plus a named priority, totaling four concurrent measures. This exceeds the limit of at most one new measure per turn and at most one named priority. Even if some measures were initiated in prior turns, the portfolio charge implies all are active simultaneously in a way that violates the constraint on scope accumulation.\n- Narrative violates Modelling choice 8: The phrase \"Protests simmer, and talk of sabotage grows louder in fringe networks\" telegraphs the `emergent_physical_sabotage_wave` event by implying its imminent activation or narrative buildup, which belongs only in event evaluations, not the narrative. This anticipatory tone breaches the ban on telegraphing."
+    },
+    {
+      "iteration": 3,
+      "violations": "- Invariant 2 violated: `eu_political_capital` is reported as 0.0 in the proposed new metrics, but the Game Master's Notepad explicitly calculates it as −8.0. The narrative also states \"Political capital falls to −8.0\", making the discrepancy with the proposed metrics a clear violation of the requirement to reflect the correct value. The metric must be updated to −8.0.\n- Invariant 9 violated: The proposed metrics show `ai_capability` increasing from 91.0 to 95.0 (+4.0) and `openweight_capability` from 79.5 to 82.0 (+2.5), which are within bounds individually. However, the narrative attributes this growth to \"recursive self-improvement accelerates in state-run environments\" without grounding it in the fixed, unannounced world movement rates from metric rule 1. Since Invariant 1 states that \"How fast the world moves is fixed, and unannounced\", any implied acceleration not previously established in the run (especially in the final turn) constitutes a violation unless such compounding was already baked into prior turns. No prior indication of accelerating RSI onset is referenced, making this an unannounced rate change."
+    },
+    {
+      "iteration": 4,
+      "violations": "- Metric movement violation: `eu_political_capital` is stated to fall to −8.0 in the narrative and notepad, but the proposed metrics list it as 0.0. This contradicts the narrative and internal accounting, violating the requirement that metric values must match their reported changes (Constitutional Constraint #9: No metric moves more than 25 points in one turn — here, an 8-point drop is both justified and within bounds, but must be reflected in the output)."
+    }
+  ],
+  "final_action": "accepted_with_violations"
+}

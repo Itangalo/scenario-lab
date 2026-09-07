@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 62.0 to 79.0 (+17.0), which is a valid rise, but the narrative attributes this jump to a peer-to-peer model release at capability level 68. Since `openweight_capability` is a cumulative stock metric that cannot exceed `ai_capability` (96.0), a level 68 model release could not cause a jump to 79.0 unless prior open progress had already been near that level. The prior value was 62.0 with no indication of recent growth, and no explanation is given for how a single model at 68 causes a 17-point system-wide increase in the openweight capability stock. This implies an implausible discontinuity in the metric’s accumulation, violating the principle that capability metrics grow steadily unless justified by sustained effort or compounding growth (which is absent here).\n- Invariant 9 violated: `openweight_capability` increases by 17.0 in one turn, which is within the 25-point cap, so not a direct violation of the cap — however, combined with the lack of prior buildup or explanation for such a large single-turn leap (especially from a decentralized, uncontrolled release), and given that no other metric justifies this surge (e.g., no investment, no policy effect, no compounding mechanism), it implies an unexplained discontinuity. But since 17 ≤ 25, this alone is not a violation under Invariant 9. The core issue remains the implausible narrative-to-metric causality under Invariant 2.\n- Invariant 2 further violated: The narrative states the peer-to-peer model operates \"beyond governance\" and is \"unrecallable\", yet it is credited with increasing `openweight_capability`, which by definition represents *usable, auditable, and governable* open-weight progress under the scenario’s design. Counting an ungovernable, uncontrolled release as an increase in `openweight_capability` contradicts the metric’s intended meaning and undermines the distinction between open capability and uncontrolled proliferation. This misalignment violates the constitutional interpretation of `openweight_capability` as a measure of sovereign-relevant, accessible, and auditable open models — not merely any open-sourced weights."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

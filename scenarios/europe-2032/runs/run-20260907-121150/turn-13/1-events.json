@@ -1,0 +1,37 @@
+[
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_crisis_coordination_cell",
+    "probability": 0.22666666666666666,
+    "emergent": true,
+    "description": "A loose network of EU civil servants, national security advisors, and academic ethicists begins meeting informally to coordinate responses to cascading AI failures, despite lacking formal mandate or funding. The cell shares early warnings and drafts contingency frameworks, operating through encrypted channels and rotating host institutions. Its emergence reflects institutional desperation as formal mechanisms fail.",
+    "probability_samples": [
+      0.25,
+      0.18,
+      0.25
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.08333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

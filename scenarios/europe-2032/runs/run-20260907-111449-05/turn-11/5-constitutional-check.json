@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 60.0 to 75.0 (+15.0 in one turn), which exceeds the maximum allowed single-turn change of 25 points. While the cap is 25, this movement is not inherently invalid under that rule — however, the increase is implausible given the narrative context and invariant 2's requirement that `openweight_capability` may only rise or stay flat *and never exceed `ai_capability`*. Although both metrics remain within bounds (75.0 ≤ 94.0), such a large jump lacks justification in the narrative: no new compute base expansion, no successful open model deployment, and no spill-over from frontier systems is described. The prior turn’s `openweight_capability` was 60.0; a +15 leap implies either an unannounced capability surge or a violation of the accumulation principle under invariant 2.\n- Organizational Constraint violated: The European Auditable AI Corps is introduced as a \"large category 5 effort\" with immediate recruitment underway across multiple hubs. However, metric rule 5 limits the EU to at most one new measure per turn. The narrative introduces the EU-AAC as a *new* initiative while also continuing the Joint Access Negotiation (listed in portfolio charge). There is no indication that one replaced the other. Thus, two active measures are implied simultaneously, violating constitutional constraint 5 (\"At most one new measure per turn\").\n- Narrative violates Modelling Choice 8: The narrative states \"deep in the terminal zone, where even basic interpretability is lost and frontier models rewrite their own training data.\" This telegraphs a specific qualitative threshold (\"terminal zone\") and implies knowledge of systemic behavior changes (models rewriting training data) without grounding it solely in event gates or observable outcomes. Such deterministic characterization of future capabilities crosses into predictive framing, which is prohibited under \"No telegraphing.\""
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

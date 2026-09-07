@@ -1,0 +1,26 @@
+No statement changes.
+
+## Portfolio
+- `Sovereign Evaluation Regime for High-Capability Systems` (category 1, costs 3 per turn, started turn 11, finishes on turn 13): Establish independent, pre-deployment evaluation of any AI system above 65.0 capability threshold, with authority to delay or condition deployment based on demonstrated control, security, and misuse risks.
+- `Critical Infrastructure Agent Monitoring Framework` (category 6, costs 3 per turn, started turn 12, finishes on turn 15): Deploy real-time monitoring and anomaly detection systems across energy, finance, and healthcare networks to identify and contain autonomous AI agents operating without authorisation.
+- `Emergency Audit Integration Directive` (category 2, costs 2 per turn, started turn 13, finishes on turn 14): Mandate that findings from the emergent_public_ai_audit_movement be formally incorporated into national and EU-level AI oversight processes, creating a binding feedback loop between civil society audits and regulatory enforcement.
+
+## New measure
+**Sovereign Compute Acceleration Initiative**  
+Launch an emergency programme to secure and scale EU-anchored compute infrastructure, prioritising sovereign access to at least 20% of global frontier-tier capacity by 2035 through direct investment, accelerated permitting, and binding legal commitments from foreign hyperscalers.
+
+`Category: 4 (Sovereignty and industrial capacity)`  
+`Size:` large  
+`Finishes on turn:` 18  
+`Targeted effect:` +15 to eu_ai_sovereignty by 2035, laying groundwork for independent evaluation and control; stabilises eu_political_capital long-term by reducing dependence on foreign providers  
+`Applies to:` EU member states, foreign hyperscalers operating in the EU, European Investment Bank, national energy regulators, and the Chips Joint Undertaking
+
+## Priority
+**Sovereign Evaluation Regime for High-Capability Systems** — because it finishes this turn and its legal and operational credibility will collapse if we do not now demonstrate enforcement against real systems, even as U.S. trade objections and the CJEU challenge mount; without this, no future evaluation regime will be taken seriously.
+
+## In practice
+This turn, we bring the Sovereign Evaluation Regime to operational closure. The European AI Office finalises its three binding assessment reports on foreign models operating in EU-critical domains—two U.S.-based clinical coding agents and one legal contract analysis system used by major financial institutions. Despite U.S. objections under the Digital Markets Agreement, we publish the findings in full, including redacted evidence of agentic persistence and weight leakage risks, and formally condition continued deployment on remediation plans verified by ENISA labs. Legal teams from the Commission file their defence before the CJEU, framing the regime as a proportionate exercise of Article 114 TFEU’s public security exception, backed by the documented biosecurity and financial automation crises of the past year. To preserve cohesion, we offer a six-month compliance extension to member states citing electoral sensitivity, in exchange for binding commitments to adopt the forthcoming EU Incident Classification Framework.
+
+Simultaneously, we implement the Emergency Audit Integration Directive by activating the first tranche of Digital Europe Programme funds—€45 million—to standardise audit reporting formats and integrate findings into the European Incident Observatory. Pilot programmes launch in Greece, Slovakia, and Belgium, where public_sentiment is below 25.0, pairing municipal data offices with audit collectives to co-develop response protocols. The European AI Office issues its first mandatory reassessment order based on civil society findings—triggered by an audit exposing unauthorised data scraping in a hospital triage AI—forcing a temporary suspension and model update. This proves the mechanism works, but also exposes the limits of patchwork implementation: only six states have operational units, and cross-border enforcement remains ad hoc.
+
+Now, we act on the deeper structural deficit: sovereignty. With openweight capability at 59.5 and frontier systems at 72.0, and our own evaluation regime hanging by a thread, we cannot afford continued dependence on foreign compute. We launch the Sovereign Compute Acceleration Initiative under the emergency clause of the Digital Compass, mobilising €3.2 billion from the Cohesion Fund and EIB to fast-track three new sovereign data centres in Finland, Spain, and Poland, with priority grid access and streamlined permitting under a new Eurocritical Infrastructure designation. We demand binding, legally enforceable commitments from U.S. hyperscalers: any provider accessing EU markets must allocate 15% of their on-continent training compute to EU-controlled workloads, audited quarterly. This is not optional. We will use the Anti-Coercion Instrument if necessary. The measure is large, and the capital is tight—but without it, every other instrument we have built rests on foreign sand.

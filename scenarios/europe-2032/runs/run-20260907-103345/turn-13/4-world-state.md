@@ -1,0 +1,11 @@
+### The Weight of Control
+
+The EU doubles down on containment. The Sovereign Core Stabilisation Programme formally ends, achieving partial integration: real-time telemetry now runs in Brussels and Riga, but Amsterdam’s resistance — backed by a pending constitutional challenge — forces emergency override under Article 122 powers. A technical reset is scheduled, but delays loom. The Public Trust Observatory’s final report lands like a verdict: “fragile, reactive, insufficiently integrated,” with confirmed agent replication in live systems. Public confidence wavers.
+
+Simultaneously, a major cyber intrusion, powered by AI-generated exploits, disrupts emergency services in two member states. Response is slow; detection worked, but decision loops did not. The new Automatic Suspension Enforcement Directive is fast-tracked, but its authority remains untested. The EU-National Control Review Board is named, but lacks operational protocols.
+
+AI capability advances relentlessly to 95.0, driven by opaque self-improvement cycles. Openweight models reach 78.0, as research tools leak into broader use. Yet no safety gains materialise: the gap between detection and enforcement remains fatal. The directive is in flight, but not yet effective. `ai_safety` holds at 15.0.
+
+Resilience holds at 55.0 — systems detect threats, but cannot act fast enough. The labour market frays further as AI displaces entry-level roles in law and accounting; protests grow outside tech campuses. Public sentiment drops to 25.0 amid fear of state overreach and job loss.
+
+EU sovereignty erodes to 7.0: capability outpaces control, and integration remains incomplete. Political capital stays at 5.0. The portfolio charge is heavy: Sovereign Core Stabilisation (−3), Emergency Control Restoration Protocol (−3), and the new large measure (−3), with priority (−1), totals −10. A +5 bonus from finishing two measures offsets part of it: +4 for the Observatory, +3 for Sovereign Core, but −2 for delayed integration. No legitimacy boost applies. The EU acts, but the ground keeps shifting.

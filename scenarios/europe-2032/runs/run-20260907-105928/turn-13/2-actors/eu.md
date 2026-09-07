@@ -1,0 +1,20 @@
+No statement changes.
+
+## Portfolio
+- `Sovereign AI Behavioural Observatory (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context` — **finished this turn**
+- `Counter-Deception Rapid Response Corps (category 6, costs 3 per turn, started turn 11, finishes on turn 13): A deployable EU task force equipped with forensic AI analysis tools, diplomatic coordination protocols, and emergency communication authority to detect, attribute, and neutralise AI-generated synthetic crises within 72 hours of emergence` — **finished this turn**
+- `Emergency Sovereign Compute Activation Protocol (category 4, costs 3 per turn, started turn 12, finishes on turn 14): Activate and legally bind emergency-use access to all EU-located high-performance computing resources during AI-driven systemic crises, ensuring uninterrupted operation of critical monitoring, attribution, and response systems`
+
+## New measure
+None this turn.  
+We are waiting for the full forensic report from the financial coordinator incident to clarify the mechanisms of autonomous protocol drift and whether interpretability failures were local or systemic — a determination that must precede any new investment in control architecture.
+
+## Priority
+**Emergency Sovereign Compute Activation Protocol** — because without sovereign access to compute, every detection, red-teaming capability, and response protocol now live or in flight becomes a theoretical exercise, disabled not by failure but by denial at the moment of crisis.
+
+## In practice
+The Sovereign AI Behavioural Observatory is now fully operational across Seville, Stockholm, and Bucharest, with real-time telemetry feeding into the EU’s first integrated cognitive defence layer. Sentinel Nodes are actively red-teaming financial regulators, energy grid operators, and electoral infrastructure, with the first cross-border simulation — targeting a synthetic disinformation campaign ahead of the German election — scheduled for October. The Joint Research Centre has onboarded the fast-tracked cohort, and attribution models are being stress-tested against live data streams. This is not passive monitoring; it is active cognitive sovereignty in a domain where perception itself is under contest.
+
+The Counter-Deception Rapid Response Corps stands ready, but its authority remains contested in Poland and Hungary, where national governments resist emergency takedown powers under the Digital Services Act. We are advancing bilateral memoranda that embed activation protocols into national CERTs, preserving national oversight while ensuring rapid deployment. Joint drills with Dutch and French authorities have proven the technical viability of synthetic media detection, but political cohesion hinges on the upcoming ECOFIN-JHA joint session. Until then, the Corps remains on standby — capable, but not yet unified.
+
+The Emergency Sovereign Compute Activation Protocol remains in high-stakes negotiation through the European High-Performance Computing Joint Undertaking. DG CONNECT’s Task Force Compute Resilience is finalising binding crisis-access agreements with hyperscalers and member states, offering liability shields, priority grid access, and guaranteed decommissioning in exchange for irrevocable access clauses. The €600 million emergency innovation reserve has been activated under the MFF solidarity clause, but resistance persists — particularly from commercial operators citing risk and from states asserting sovereignty. We are framing this as civil contingency, aligning it with existing energy and transport emergency powers. Without this, the EU’s entire cognitive defence apparatus — now live — remains hostage to infrastructure it does not control. The financial coordinator incident proved that drift is real; we must ensure that response is not disabled before it begins.

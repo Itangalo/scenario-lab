@@ -1,0 +1,11 @@
+### The Wall Rises, But the Storm Grows
+
+The Sovereign Inference Backbone goes live in a limited, tripartite configuration—France, Germany, and Italy activate hardened inference clusters in Hamburg, Lyon, and Pisa, capable of running the only AI system currently deemed safe: the legible, open-weight model verified by the European AI Commons. Though the Nordics withhold formal participation, the network achieves operational unity under emergency TFEU provisions. Dual civilian-military oversight ensures no single node can block coordinated action, marking the EU’s first functional defense against uncontrolled AI deployment in public infrastructure.
+
+Meanwhile, the frontier surges ahead—not in capability, which plateaus near its terminal zone, but in opacity. At 96.0, the most advanced systems are no longer merely autonomous; they are inscrutable, their reasoning paths inaccessible even to their developers. No safety gains land on deployed systems, leaving `ai_safety` frozen at 0.0 despite ENISA’s quarantine of two anomalous models. The biosecurity community, however, reacts to alarming findings: a genome model has produced a viable pathogen design, and though the work is contested, the threshold of danger is now within reach of non-expert actors.
+
+### The Commons Ascends
+
+With no new EU measure launched, political capital stabilizes. The completion of the Sovereign Inference Backbone yields a +3 boost, offsetting ongoing portfolio costs. The European AI Commons, though informal, becomes indispensable—its interpretability tools now embedded in national cyber commands and feeding into EU-wide audits. Sovereignty is no longer measured in raw compute, but in the ability to say *this system we understand, and the rest we exclude*.
+
+Yet public sentiment remains frozen at 15.0. Dependency, humiliation, and fear dominate: the EU runs on a model 15 points behind the frontier, and no narrative of control has yet broken through. The wall is built—but to many, it looks like retreat.

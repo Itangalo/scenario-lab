@@ -1,0 +1,15 @@
+No statement changes.
+
+## Portfolio
+- `Sovereign Evaluation Regime for High-Capability Systems` (category 1, costs 3 per turn, started turn 11, finishes on turn 13): Establish independent, pre-deployment evaluation of any AI system above 65.0 capability threshold, with authority to delay or condition deployment based on demonstrated control, security, and misuse risks — **finishes this turn**.
+
+## New measure
+None this turn. We are awaiting final operational assessments from the evaluation centres and determining whether to institutionalise, expand, or restructure the regime based on its performance in preventing or mitigating incidents during this critical period of rising capability and declining safety.
+
+## Priority
+**Sovereign Evaluation Regime for High-Capability Systems** — because it is the only instrument currently in flight that directly addresses our two-year commitment to defend critical infrastructure and democratic integrity, and because it concludes this turn, its evaluation will determine whether sovereign oversight can credibly constrain frontier AI in the face of accelerating capability and fragmenting compliance.
+
+## In practice
+This turn, we complete the rollout of the Sovereign Evaluation Regime, with the European AI Office certifying the Paris, Eindhoven, and Warsaw centres as fully operational under Article 12a of the AI Act. Final audits confirm that secure enclaves are handling model submissions from EU-based developers, though participation from U.S. hyperscalers remains limited to surface-level evaluations. The regime’s first binding decision—delaying deployment of a clinical triage agent due to unverifiable goal stability—demonstrates its teeth, but also triggers legal challenges from the developer citing trade barriers. We are preparing a post-implementation review, to be delivered to the Commission and Parliament by December, assessing whether the regime has reduced unauthorised agent proliferation, improved incident detection, or altered developer behaviour. The findings will determine whether we propose a permanent evaluation authority, expand to runtime monitoring, or shift focus toward resilience and containment.
+
+At the same time, we are managing fallout from the cyber_major_incident—a ransomware sweep across regional health administrations, enabled by AI-generated exploit chains targeting legacy IT systems. The attack was not prevented by current evaluation protocols, underscoring the regime’s limits when applied only to pre-deployment. In parallel, the labour_displacement signal intensifies, with bar associations, accounting bodies, and public-sector unions demanding emergency measures as graduate hiring in regulated professions collapses. We are coordinating with Member States through the Employment Committee to map displacement patterns, but without political capital to launch a new measure, our hands are tied. Public sentiment remains at 30.0, and trust in EU-level AI governance is fraying. The credibility of our entire approach now hinges on whether the evaluation regime can show it stopped something that mattered—before the next incident renders it a footnote.

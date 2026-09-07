@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.17333333333333334,
+    "probability_samples": [
+      0.14,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_frontier_leak",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "Whispers emerge of a partial leak of a frontier model from a closed lab outside the EU, with fragments of weights and training data appearing in underground research forums. While not a full open release, the fragments are sufficient to accelerate open-weight development and raise alarm about uncontrolled diffusion of high-capability systems into unregulated environments.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3
+  }
+]

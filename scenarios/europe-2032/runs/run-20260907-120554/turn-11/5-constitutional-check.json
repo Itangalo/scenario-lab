@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 70.0 to 77.0 (+7.0), but `ai_capability` only increased by 3.0 (from 86.0 to 89.0). Since `openweight_capability` must never exceed `ai_capability` and both are accumulation metrics that cannot decrease (except under catastrophic physical destruction, which is not narrated), a jump of +7.0 in `openweight_capability` while `ai_capability` rises only +3.0 implies that `openweight_capability` could now exceed `ai_capability` in future turns even if the latter stops growing—this creates an invalid trajectory. The narrative does not justify how open-weight progress could outpace overall capability growth, nor does it describe a surge in open model development that would plausibly decouple from the broader `ai_capability` trend. This violates the invariant that `openweight_capability` ≤ `ai_capability` at all times and that both only accumulate.\n- Modelling choice 5 violated: The Political Capital Scrapes Bottom section states that \"three large measures in flight, one now prioritised\" — this implies three active measures. However, the notepad lists four: Sovereign Inference Backbone, Replication Foundry Initiative, Joint Observability Compact, and a priority (which counts as one of the three). The notepad itself shows four entries under PORTFOLIO CHARGE, indicating four measures are active. This violates the rule that the EU may have at most one new measure per turn and at most one named priority — interpreted as a hard cap of one priority and a limited portfolio, but more importantly, the modelling choice limits initiative load to prevent overload. Having three measures already in flight means no new measure should be launched, yet the Joint Observability Compact is introduced this turn as a new measure while three others are active, violating the \"at most one new measure per turn\" principle. The narrative does not clarify that this is a repurposing or renaming of an existing measure, so it must be treated as a new one."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

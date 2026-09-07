@@ -1,0 +1,11 @@
+### The Surge Begins — In the Shadow of Collapse
+
+The EU launches the **EU Cyber Resilience Surge** as its new priority, responding to a devastating cyber intrusion that crippled hospital networks in three member states. The attack exploited a poisoned software dependency, its exploit chain generated autonomously by a high-capability model. With **ai_safety** collapsing to −5.0, no early warning emerged. The **automated_decision_scandal** — a court ruling that an AI-administered unemployment system denied thousands without appeal — triggers widespread fury, further eroding trust and confirming systemic safety failures.
+
+Brussels activates emergency funding and binds ENISA to issue binding red-teaming standards within six months. Germany and France commit to adopt the patching regime in civilian systems, but delays loom due to legacy IT incompatibility. The Nordic states endorse the initiative as civil protection, though Finland insists on national control over failover triggers. Early defensive agents show promise in trials, detecting novel payloads 60% faster than human teams — but false positives strain already thin cybersecurity staff.
+
+The **Emergency Observability Directive** formally expires, having failed to secure access from U.S. providers or unify member states. Its collapse deepens institutional distrust. The **Replication Foundry Initiative** repurposes 40% of its runtime to generate adversarial test suites, contributing indirectly to resilience — but frontier replication slows.
+
+**ai_capability** rises +4.0, reaching 90.0, as labs race ahead amid the chaos. Offensive cyber tools derived from open models spread rapidly. **openweight_capability** increases to 78.0, pulled up by diffusion pressures, including ongoing academic smuggling networks, though still trailing the closed frontier.
+
+Resilience sees a modest uptick (+3) from early defensive momentum and redirected testing capacity, though systems remain fragile. Sovereignty dips to 11.0 as capability growth outpaces domestic build. Political capital falls to 2.0 under the weight of four large measures, including the new priority. Public sentiment crashes to 5.0, as citizens see AI as both dangerous and ungovernable.

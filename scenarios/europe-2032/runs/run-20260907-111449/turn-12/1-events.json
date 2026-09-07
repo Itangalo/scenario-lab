@@ -1,0 +1,37 @@
+[
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_municipal_sovereignty_network",
+    "probability": 0.3333333333333333,
+    "emergent": true,
+    "description": "Cities and regional governments, frustrated by the paralysis of the EU and the unreliability of external AI access, continue forming a decentralized network to pool compute resources and develop locally governed AI systems for essential services. The movement is gaining momentum as mutual assistance pacts spread across mid-sized industrial and healthcare hubs, creating a shadow infrastructure that operates outside the formal EU framework but fills critical gaps in service delivery.",
+    "probability_samples": [
+      0.35,
+      0.3,
+      0.35
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

@@ -1,0 +1,11 @@
+### The Audit Concludes, the Exodus Accelerates
+
+The Independent Audit and Recovery of Sovereign Core Systems delivers its final report: a damning indictment of systemic overreach and technical illiteracy. The Sovereign Core, designed as a fortress, was instead a house of cards—its access controls brittle, its isolation protocols porous, its contractors embedded with unchecked privileges. The Cyber Resilience Task Force confirms AI-synthesized attack vectors could have triggered cascading failures across health and transport networks. The Public Trust Observatory publishes the findings, validating the audit’s independence but deepening public distrust.
+
+Despite the clarity, momentum stalls. The €18bn InvestAI leverage forces compliance from contractors, but legal challenges delay enforcement. Two firms file for interim relief at the CJEU, arguing disproportionate interference. The Union presses on, drafting a recovery roadmap focused on phased, verified rebuilds—no more mandates, only verifiable integrity.
+
+Simultaneously, the researcher exodus intensifies. Senior AI safety experts from DG RTD and EMA formally resign, citing "operational futility" and "strategic incoherence." Swiss and Canadian labs expand targeted recruitment, offering not just funding but autonomy and political insulation. The EU launches the EU Talent Anchoring and Reintegration Initiative—five-year grants, fast-track residency, legal immunity—but early responses are muted. The damage to credibility runs deep.
+
+Global AI capability leaps to 94.0, driven by recursive self-improvement now operating beyond human debugging cycles. Openweight_capability rises to 76.0, as fragments of leaked models from compromised systems circulate in academic and activist networks, enabling localized but potent misuse. No safety improvements land on deployed systems—ai_safety remains at 1.0.
+
+The Union acts with resolve, but legitimacy does not return. Political capital sinks further, weighed down by ongoing costs and no offsetting gains. Public sentiment holds at 18.0, trapped in disillusionment. The audit is complete, but trust is not restored—only the scale of failure is now known.

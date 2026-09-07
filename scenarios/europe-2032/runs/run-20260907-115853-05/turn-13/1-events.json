@@ -1,0 +1,37 @@
+[
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.08666666666666667,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3
+  },
+  {
+    "id": "emergent_ai_refugee_network",
+    "probability": 0.26666666666666666,
+    "emergent": true,
+    "description": "A decentralized network of former AI lab researchers, security auditors, and model whistleblowers begins sharing unredacted evaluation data and model behavior anomalies across encrypted platforms. These 'AI refugees' operate from jurisdictions outside major powers' reach, publishing findings that challenge official narratives of safety and control. The network gains credibility as its predictions of emergent behaviors are later confirmed by incidents.",
+    "probability_samples": [
+      0.28,
+      0.22,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3
+  }
+]

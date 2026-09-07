@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Constitutional Constraint 2 violated: `openweight_capability` increased from 65.0 to 79.0, a rise of +14.0 in a single turn. While `openweight_capability` is allowed to rise, such a large jump must be evaluated against the rate of accumulation of `ai_capability`. A 14-point leap implies near-instantaneous replication of advanced capabilities, but the narrative attributes this to \"leaked fragments\" and coordination—insufficient justification for a gain exceeding typical diffusion lags and technical replication timelines. The jump approaches the frontier of two turns prior despite no prior progress on infrastructure (Sovereign Inference Backbone offline), violating the plausible accumulation principle under invariant 2.\n- Constitutional Constraint 5 violated: The narrative introduces *three* new measures in one turn: the \"Sovereign Red-Teaming Directive\", continuation/enforcement of the \"Emergency Replication Mandate\", and reference to the \"Sovereign Inference Backbone\" as an active portfolio item. While some may be carryovers, the launch of the Sovereign Red-Teaming Directive as a new initiative—combined with two other active measures—exceeds the limit of one new measure per turn. The portfolio charge lists three distinct measures being actively managed, which implies multiple concurrent initiatives beyond what is permitted under modelling choice 5.\n- Constitutional Constraint 6 violated: The Sovereign Red-Teaming Directive is announced and expected to have effect (e.g., adversarial testing) within the same turn, but the narrative explicitly states \"no test occurs this turn\" due to lack of personnel, environments, and authority. This confirms the measure is not implemented, yet it is scored in the portfolio charge. This violates the requirement that no measure is implemented instantly—even low-cost measures require at least one full turn. The directive cannot both be newly launched and meaningfully scored as active in the same turn."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

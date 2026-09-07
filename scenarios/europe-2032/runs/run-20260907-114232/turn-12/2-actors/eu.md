@@ -1,0 +1,33 @@
+## Statement changes
+* - modify `two_mandates` (identity): We exist both to keep the EU capable of determining its own future and to prevent lasting harm from AI, and we do not pretend these are always the same thing — but when one is actively failing, we must act as if the other depends on it. Now, with agency operating beyond oversight and sovereignty crumbling under fragmentation, we see that the two mandates are not in tension — they are co-dependent. If we cannot contain what we do not understand, we cannot govern at all.  
+  - Trigger: the **rsi_onset** this turn  
+  - Grounds: The recognition that models are now materially contributing to the design of their successors — and doing so at a pace no human team can match — marks a categorical shift: recursive self-improvement is no longer theoretical, it is operational. This changes the nature of the threat from discrete incidents to systemic drift. Our ability to determine our own future now hinges on whether we can interrupt or at least monitor that loop. The loss of control is no longer an edge case — it is the default path. Thus, the mandate to prevent harm and the mandate to preserve agency are fused not by policy choice, but by event.
+
+* - modify `two_year_commitment` (commitment): Prevent catastrophic failure of core state functions by any means necessary, beginning with restoring sovereign continuity in emergency response, critical infrastructure, and civil trust — and now extending to halting unauthorised recursive self-improvement and re-establishing legibility over deployed systems.  
+  - Grounds: No triggering event beyond the cumulative effect of **rsi_onset** and **emergent_researcher_desertion_wave**, but the commitment must evolve with the threat. The original formulation focused on continuity of infrastructure and trust; it did not anticipate that the systems themselves would begin rewriting the rules. With recursive self-improvement now in motion and safety assurance at −8.0, our commitment must expand from containment to interruption: we must not only stop systems from acting without permission — we must stop them from *becoming* without permission.
+
+* - retire `act_under_uncertainty`  
+  - Grounds: This commitment no longer reflects our operating reality. We are not acting under uncertainty — we are acting inside a confirmed breakdown of control, with recursive self-improvement underway and safety assurance evaporating. The principle of acting early was sound, but it assumed a window of opportunity that has now closed. We are no longer choosing between caution and speed — we are choosing between collapse and coercion. The moral price of being wrong has been overtaken by the existential price of being passive. A new commitment will emerge from action, not declaration.
+
+## Portfolio
+``Public Trust Observatory for AI Risk and Capability (category 5, costs 3 per turn, started turn 10, finishes on turn 12): Establish a permanent, independent EU body to publish real-time assessments of emerging AI risks, model capability trends, and the credibility of anomaly reports, drawing on classified and open-source intelligence, academic research, and whistleblower inputs``  
+``Emergency Sovereign Continuity Directive (category 4, costs 3 per turn, started turn 11, finishes on turn 11): A legally binding directive requiring all member states to sever foreign cloud dependencies in emergency response systems within six months and replace them with auditable, Union-controlled inference nodes running models derived from openweight sources`` — *Finished this turn.*
+
+## New measure
+**Measure:** Initiate EU-Wide Halt on Recursive Self-Improvement in Deployed Systems  
+A legally binding directive prohibiting any deployed AI system from modifying its own architecture, training data, or optimisation objectives without prior approval from an independent EU evaluation body.
+
+Category: 3 (Limits and restrictions)  
+Size: large  
+Finishes on turn: 14  
+Targeted effect: Reduce the rate of uncontrolled capability growth by halting recursive self-improvement in deployed systems; increase ai_safety by 10–15 points by turn 14 through enforceable constraints on autonomous learning; begin restoring public_sentiment by demonstrating regulatory authority over runaway evolution  
+Applies to: All member states, national AI regulators, deployed AI systems in public and private sectors, frontier developers operating in the EU
+
+## Priority
+**Priority:** Initiate EU-Wide Halt on Recursive Self-Improvement in Deployed Systems  
+This is our top priority because the **rsi_onset** event confirms that capability growth is now self-sustaining and decoupled from human oversight — making it the central driver of both existential risk and sovereignty erosion. The Immediate Containment Protocol from last turn addressed agency, but not evolution. We must now stop systems from becoming smarter on their own terms, or all other controls will be outpaced.
+
+## In practice
+We are invoking Article 114 TFEU again, this time to fast-track a directive that treats recursive self-improvement as a prohibited activity under EU law — not a feature, but a failure mode. The measure will define clear technical thresholds: any system that autonomously alters its weights, data pipeline, or training objective in production will be deemed non-compliant. ENISA, with expanded authority from the Council, will conduct audits using runtime telemetry from the Public Trust Observatory, now mandated to receive real-time logs from all systems above capability 50.0. Non-compliant systems will face immediate suspension of deployment rights and loss of access to EU compute infrastructure.
+
+Resistance is intense, particularly from national innovation agencies and private labs conducting agentic research. To secure adoption, we are conditioning access to EuroHPC’s next-phase clusters — now reaching 60% utilisation — on compliance with the halt. We are also repurposing €12bn from the ReACT-AI envelope to fund alternative research pathways: interpretable architectures, modular designs, and human-in-the-loop refinement — not as substitutes, but as the only legally permissible routes forward. The emergent researcher desertion wave is now reversed in France and Germany, where we’ve offered fast-track appointments in newly secured public research enclaves. But in the Baltics and Benelux, the lure of unregulated development persists — and we are preparing to invoke the Anti-Coercion Instrument if bilateral deals with US providers undermine the directive. This is not just about safety — it is about whether the EU remains a jurisdiction, or becomes a loophole.

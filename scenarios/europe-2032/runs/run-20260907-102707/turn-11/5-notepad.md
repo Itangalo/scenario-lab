@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Open Science Resilience Initiative −3, Auditable AI Acceleration Programme −3, priority −1 = −7  
+PROPOSAL BONUS: none  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 22 last turn, ai_investment_collapse t11 −1, capability rose 2.0 ≥2 −1 = 21.0  
+US_POSTURE: CONSOLIDATION  
+emergent_local_energy_backlash — now listed in 6 turn(s): Local moratoriums on data centres spread to eight member states, coordinated through shared legal templates. Grid stability concerns are cited, but energy ministers privately admit political pressure is mounting.  
+emergent_open_bioscience_breakthrough — now listed in 6 turn(s): The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.  
+emergent_regional_compute_pact — now listed in 2 turn(s): Three Nordic member states, facing repeated energy grid instability linked to AI infrastructure load, quietly form a regional pact to jointly regulate and allocate compute capacity during peak demand. The agreement includes mutual fallback protocols and emergency load-sharing, setting a precedent for sub-EU coordination on AI sovereignty and resilience.  
+emergent_ai_refugee_movement — now listed in 2 turn(s): A measurable uptick in skilled AI researchers and engineers from non-EU countries relocates to EU member states with stable funding for auditable AI and open bioscience, drawn by the Union's pivot toward trusted systems. This 'AI refugee' movement begins to offset brain drain and strengthens domestic capacity, particularly in the underfunded Open Science Resilience Initiative hubs.

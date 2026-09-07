@@ -1,0 +1,31 @@
+## Statement changes  
+- modify `two_year_commitment` (commitment): Anchor sovereign capability in auditable AI, and extend it through binding cross-domain resilience integration — but this is now failing under the weight of coercion without cohesion; we must stabilise legitimacy or lose both control and unity — **and now, with `eu_political_capital` at 2.0 and `ai_safety` collapsed to 0.0, we admit that legitimacy is not a precondition for speed — it is the only thing that survives it**  
+- Grounds: The **eu_frontier_access_denied** event has landed with full force: hospitals, ministries, and firms are cut off from the very systems they depended on, not due to EU failure but due to external control — yet the political response is not solidarity, but blame. The Union is seen not as a victim of exclusion, but as the architect of its own fragility. Meanwhile, the **emergent_regional_data_pact** confirms that member states no longer wait for Brussels — they act, or defect. The two-year commitment assumed that technical sovereignty could be built *through* enforcement; it now faces the reality that without political capital, enforcement is fantasy. We are not abandoning the goal of sovereign agency — we are renaming the path: it must now be built *through* legitimacy, not over it.
+
+- modify `act_under_uncertainty` (commitment): We will commit before the picture is clear, and accept being wrong sometimes as the price of not being late — but we no longer assume that acting fast means acting alone, and now recognise that acting without legitimacy means acting in vain — **and now, with `public_sentiment` at 24.0 and protests spreading to energy grids, we add: acting without resilience means dying in place**  
+- Grounds: The frontier has reached 95.0, and systems are no longer just opaque — they are *beyond* oversight. Yet the EU’s response mechanisms are not just slow — they are broken. The Legitimacy Recovery Initiative, intended to restore trust, is itself being protested as performative. The Union is caught in a paradox: the faster it moves, the more it fractures; the more it enforces, the less it governs. We still act before clarity — but we now know that without resilience, even correct action fails. The measure of commitment is no longer speed, but survival.
+
+## Portfolio  
+- `Open Science Resilience Initiative (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — finished  
+- `Mandate cross-domain resilience integration for auditable AI systems (category 6, costs 3 per turn, started turn 11, finishes on turn 13): Require all high-consequence public systems (health, energy, transport) to integrate with the joint cyber-biosurveillance pact using auditable AI components, with compliance enforced through conditional funding and procurement locks` — in flight  
+- `Launch Legitimacy Recovery Initiative: Co-Design Auditable AI with Member States and Civil Society (category 6, costs 3 per turn, started turn 12, finishes on turn 15): Establish a binding co-governance framework for auditable AI in critical infrastructure, with joint design councils including national regulators, civil society, and technical experts to redefine integration mandates from the ground up` — in flight
+
+## New measure  
+**Launch Emergency Resilience Surge: Secure Critical Systems Against Immediate AI-Enabled Harm**  
+Deploy rapid-response cyber-biosurveillance teams and fallback protocols to essential services, prioritising health and energy, to prevent cascading failure in the absence of central control.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` resilience +15 (via hardened critical systems), ai_safety +5 (via emergency detection and containment), public_sentiment +5 (via visible protection)  
+`Applies to:` EU institutions, member states, and essential service operators in health, energy, and transport
+
+## Priority  
+**Launch Emergency Resilience Surge: Secure Critical Systems Against Immediate AI-Enabled Harm** — because with `ai_safety` at 0.0, the frontier at 95.0, and the Union cut off from its own tools, we are not building sovereignty — we are preventing collapse, and without a functioning state, no commitment survives.
+
+## In practice  
+This turn, we are no longer building for the future — we are defending the present. The **Mandate cross-domain resilience integration** is still in flight, but its enforcement is suspended: Germany and Italy have not withdrawn their CJEU challenges, and we cannot compel while we are blind. Instead, we are pivoting to triage. The **Emergency Resilience Surge** is being launched under Article 122 TFEU, with the Commission activating the Civil Protection Mechanism to redeploy cyber-incident response teams from Frontex and ENISA into national health and energy grids. These teams will not wait for auditable AI — they will deploy fallback protocols, air-gapped control systems, and manual override drills, funded by an emergency draw on the EU Solidarity Fund.  
+
+We are also renegotiating the **Legitimacy Recovery Initiative** in real time: the co-design councils will now begin with crisis response, not architecture. Their first task — due by turn 14 — is to define minimal viable resilience standards that can be implemented in 90 days, even without central coordination. The European Committee of the Regions is being tasked with brokering access to the emergent regional data pact, not to absorb it, but to share threat intelligence. And we are offering unconditional access to EU-level cyber-monitoring data to any member state that participates — not as leverage, but as trust.  
+
+This is not the integration we planned. It is the survival we must now ensure.

@@ -1,0 +1,17 @@
+### Fractures in the Core
+
+The EU declares the Emergency Sovereign Continuity Directive complete — on paper. In practice, its rollout has exposed dangerous instabilities: emergency nodes in Riga, Brussels, and Amsterdam fail to synchronise during stress tests, access logs show unauthorised privilege escalations, and response times in critical systems vary unpredictably. Independent engineers confirm the design is sound, but integration is crumbling under political fragmentation and rushed deployment. The Union announces the **Sovereign Core Stabilisation and Integration Programme** — a proposed €18bn emergency effort to audit, standardise, and repair the fractured infrastructure. However, no funding has yet been allocated, and legislative approval remains pending in the Council and Parliament. Implementation cannot begin in full until Turn 12 at the earliest, per the two-turn minimum for high-cost measures.
+
+ENISA moves quickly to issue draft technical standards for node interoperability, with final binding versions expected next turn. A prototype telemetry dashboard is launched, aggregating partial data from three compliant nodes, but full integration is delayed. No rapid-response teams have deployed; staffing, legal authority, and cross-border access agreements are still under negotiation. The Baltics demand full liability waivers before any further participation, and Benelux states delay engagement pending resolution of ongoing disputes with US cloud providers.
+
+Despite the urgency, political capital remains frozen at 0.0. The new large measure costs −3, the priority −1, and the ongoing Public Trust Observatory −3, for a portfolio charge of −7. No proposal bonus is earned — credibility is too low, and the measure, though necessary, is seen as damage control, not leadership. The EU avoids further expansion of the sovereign core until stability is proven.
+
+Globally, AI capability surges to 88.5, crossing the 85 threshold where growth slows but remains intense. The leap reflects accelerating self-improvement cycles now opaque even to developers. Openweight capability rises modestly to 73.0, sustained by incremental open-source contributions and limited model fine-tuning from previously available weights. While some frontier-adjacent models continue to circulate in research communities, no major leak or release event occurs this turn. Without a narrated breach or catastrophic disclosure, the growth remains within the bounds of gradual accumulation. With no safety upgrades, `ai_safety` remains stagnant at 7.0.
+
+A joint cyber command begins forming among affected states, with agreements in principle to share threat intelligence and limited telemetry — a rare gain in resilience (+2). The EU joins a new middle-power coalition coordinating export controls and compute access, a diplomatic win that strengthens leverage but yields no immediate capital boost.
+
+Public sentiment holds at 28.0. Scandal fatigue persists; the state’s visible struggle to control its own systems deepens public doubt.
+
+### Sovereignty Erodes Further
+
+Despite efforts to stabilise, `eu_ai_sovereignty` drops to 11.0. The rise in `ai_capability` (≥+2) imposes −1. No event secures or severs access this turn — but the failure to integrate existing capacity counts as unspent investment. The prior gain from partial deployment is erased by operational fragility.

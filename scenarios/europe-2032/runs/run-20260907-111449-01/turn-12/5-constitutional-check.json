@@ -1,0 +1,11 @@
+{
+  "status": "approved",
+  "iterations": 2,
+  "violations_found": [
+    {
+      "iteration": 1,
+      "violations": "- Invariant 2 violated: `openweight_capability` increased from 62.0 to 79.5 (+17.5) in one turn, which is an impermissible drop in the gap between `ai_capability` and `openweight_capability` given the context. While `openweight_capability` may rise, such a large jump—especially in a single turn and without narrative justification tied to a sustained program or compounding growth—is inconsistent with the fixed rates of progress implied by Constitutional Constraint 1 (\"How fast the world moves is fixed, and unannounced\"). The narrative attributes the gain to the completion of the Open Science Resilience Initiative, but a two-year program delivering a 17.5-point jump in openweight capability with no prior ramp-up or intermediate effects violates the implicit pacing of capability accumulation. Such a surge would require either compounding growth already reflected in prior turns or a discrete breakthrough explicitly gated and foreshadowed—neither is present.\n- Organizational Constraint violated: The narrative claims the Open Science Resilience Initiative \"completes its two-year run\" and delivers certified auditable models in biosecurity and climate resilience, implying significant organizational execution and technical delivery. However, no prior narrative or notepad entry established the initiation of this initiative two turns ago (i.e., in Turn 10), nor was it listed in the portfolio charge before this turn. Introducing a major program with full delivery in this turn retroactively violates Constraint 6: \"No measure is implemented instantly.\" Minimum time from proposal to full effect is one full turn for low-cost and two for high-cost measures. There is no evidence of proposal or phased implementation in prior turns, making its completion now invalid."
+    }
+  ],
+  "final_action": "corrected_and_approved"
+}

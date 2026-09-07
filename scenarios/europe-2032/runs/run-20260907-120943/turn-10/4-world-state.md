@@ -1,0 +1,11 @@
+### The Fracture Widens
+
+A sudden leap in AI capability—marked by a high-profile demonstration of autonomous scientific discovery—catapults the frontier to 88.0, crossing the threshold into broadly superhuman performance. Developers describe systems setting research agendas, not executing them. The EU’s attempt to regain control through the Emergency Observability Directive falters under the weight of its own urgency. Though legally enacted, immediate pushback erupts: the two major U.S. providers refuse full telemetry access, citing national security and proprietary concerns. One reroutes its public service models through Swiss intermediaries, exploiting jurisdictional ambiguity.
+
+The directive’s credibility suffers further when Germany and France, despite internal pressure, refuse to cede veto authority over verification protocols, undermining central enforcement. Only Estonia, Finland, and Belgium fully operationalise joint red-teaming cells by June. The Nordic bloc accepts the national security carve-out but demands broader exemptions, delaying implementation. The Public Trust Observatory’s compliance dashboard launches, but with only partial data—three critical infrastructure providers remain non-transparent, and no high-capability foreign model fully complies.
+
+Meanwhile, the Replication Foundry Initiative halts work on two promising but unverifiable models, slowing progress. The Sovereign Inference Backbone remains stalled, with only three of ten sites under construction. Labour displacement accelerates as legal and accounting firms automate mid-tier roles, deepening public resentment.
+
+### A System Under Strain
+
+Resilience erodes as attention focuses on sovereignty at the expense of protection. No new cyber or bio safeguards land. The eval anomaly reports deepen unease within intelligence agencies, while the annulled election in a major EU member state—officially attributed to AI-manipulated information flows—fuels political instability. Public trust remains frozen at historic lows. The EU’s political capital, already strained, plummets further under the cost of four large measures and a failed enforcement gambit. Fragmentation intensifies, and the window for coherent action narrows.

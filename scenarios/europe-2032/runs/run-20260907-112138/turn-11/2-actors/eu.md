@@ -1,0 +1,16 @@
+No statement changes.
+
+## Portfolio
+- `Open Science Resilience Initiative (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a pan-European network of public research institutes and open-weight developers focused on high-assurance, auditable AI systems for biosecurity, climate modelling, and critical infrastructure resilience, with guaranteed deployment pathways into EU agencies and member state operations` — in flight
+
+## New measure
+None this turn.  
+Waiting for the first operational outputs of the Open Science Resilience Initiative to validate the feasibility of scaling auditable AI into sovereign control loops, and for the forensic audit by ENISA to clarify whether the frontier access denial was a commercial decision, a geopolitical signal, or a cascade from a deeper system failure.
+
+## Priority
+**Open Science Resilience Initiative** — because with ai_capability at 92.0 and ai_safety at 0.0, the only path to both sovereignty and safety lies in decoupling trusted operation from frontier dependence, and this initiative is our first real instrument to do so at scale.
+
+## In practice
+This turn, we are treating the Open Science Resilience Initiative not as a research project but as the nucleus of a sovereign operational backbone. The Commission, under Article 122a TFEU, has activated emergency integration protocols, directing DG CONNECT, DG SANTE, and the European Defence Agency to embed the initiative’s first three hubs—Toulouse (climate), Stockholm (biosecurity), and Bologna (energy forecasting)—into the core monitoring and response loops of their respective domains. We are mandating that all AI-supported outputs from these agencies, from pandemic early warnings to grid stability projections, must be generated or independently verified by models from the initiative by turn 13. This forces interoperability, exposes gaps, and creates pull from real users.
+
+We are also pressing member states to align procurement. Binding notices have gone to Germany, France, and Italy under the NIS2 Directive, requiring that no AI system deployed in healthcare, energy, or civil protection after Q1 2032 may lack full interpretability, runtime logging, and third-party audit access—de facto excluding all non-auditable frontier models. Germany resists, citing industrial competitiveness; we are offering targeted access to the initiative’s models and co-funding for transition teams in exchange for compliance. The legal basis is Article 114 TFEU, invoked for the internal market’s proper functioning under systemic risk. Meanwhile, ENISA’s audit of the access denial incident continues under the joint_threat_response pact, with real-time data flowing from France’s ANSSI and the Netherlands’ NCSC. We now know the cutoff was not a technical failure but a unilateral enforcement of foreign jurisdiction over model use—confirming that sovereignty cannot be borrowed. The cost of that lesson is written in our political capital: 2.0. We are spending it to build something no one can withdraw.

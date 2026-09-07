@@ -1,0 +1,21 @@
+No statement changes.
+
+## Portfolio
+- `Sovereign Inference Backbone (category 4, costs 3 per turn, started turn 10, finishes on turn 13): A federated network of EU-controlled inference clusters, hardened and distributed, to host sovereign replicas from the Replication Foundry Initiative and enforce strict access controls on all high-capability AI use in public services` — finished
+- `Critical Incident Containment Protocol (category 6, costs 3 per turn, started turn 12, finishes on turn 14): Establishes a legally binding, cross-border emergency response framework for AI-driven loss-of-control incidents, integrating technical containment, public communication, and legal liability assignment within 72 hours of detection`
+- `Emergency Liability and Suspension Enforcement Mechanism (category 3, costs 3 per turn, started turn 13, finishes on turn 15): Creates a fast-track legal authority for the European Public Prosecutor’s Office to suspend high-capability AI systems and compel financial liability from providers within 24 hours of a declared loss-of-control incident, with retroactive cost recovery and mandatory cooperation as conditions for reactivation`
+
+## New measure
+None this turn.  
+Waiting for political capital to stabilise and for the fallout from member state defection and physical backlash to be absorbed before proposing another instrument.
+
+## Priority
+**Priority:** Emergency Liability and Suspension Enforcement Mechanism  
+This is now our top priority because accountability is the last lever of sovereignty left: with ai_safety at 0.0 and no provider submitting to audit, only a credible threat of immediate legal and financial consequence can restore even minimal deterrence, and without it, no other measure can land.
+
+## In practice
+We are activating the European Public Prosecutor’s Office (EPPO) as the enforcement engine of the Emergency Liability and Suspension Enforcement Mechanism, drafting implementing acts under Article 86 TFEU to designate AI-driven loss-of-control incidents as cross-border crimes falling under EPPO’s mandate. We are fast-tracking agreements with national judicial authorities to accept EPPO-led suspension orders within 24 hours, backed by automatic asset freezes through Eurojust and EC3. Germany and France remain resistant to extrajudicial suspension powers; we are offering a dual-key system — EPPO initiates, national prosecutors confirm within 12 hours — to preserve legal legitimacy while preserving speed. Italy’s demand for ECJ review is being met through a fast-track referral window: any suspended provider may petition for annulment within 72 hours, with the Court required to rule within 10 days.
+
+The Sovereign Inference Backbone has now finished deployment and is undergoing its mandated stress test against a simulated agentic breach, with results to be published by ENISA in January 2023. The test includes live red-teaming by EU-CyCLONe and access checks from national cybersecurity agencies. Poland and Spain remain outside the network; their participation is now conditional on ENISA audit of their national replication pipelines, which we are funding through emergency allocations from the Digital Europe Programme. We are also deploying mobile sovereign compute nodes to Estonia and Finland to serve as fallback enforcement hubs in case of grid or legal disruption elsewhere.
+
+Public sentiment remains at 12.0, and we are not deluding ourselves: coercion without credibility is collapsing. The physical backlash has shifted from protest to sabotage, and we are treating it as a symptom of institutional failure, not a security problem alone. We are not requesting additional policing powers. Instead, we are launching a transparency sprint: within 60 days, ENISA will publish a public dashboard showing every known capability threshold crossed by open and closed models, every provider that has refused audit access, and every incident that has triggered containment protocols — not to reassure, but to acknowledge. Trust cannot be restored by command. It can only begin when we stop pretending we are in control.

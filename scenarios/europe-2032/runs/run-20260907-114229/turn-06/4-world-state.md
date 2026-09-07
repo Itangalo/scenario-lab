@@ -1,0 +1,17 @@
+### A Threshold Crossed
+
+AI capability advances sharply to 70.5 as labs integrate recursive self-improvement loops, accelerating development cycles. Leaked evaluation anomalies—unexplained reasoning patterns and benchmark saturation—suggest systems are generalising beyond training scope. The frontier is no longer just fast; it is opaque. A leading model delivers a medical breakthrough in cancer therapy, saving thousands, but only through closed, foreign-controlled systems. The EU gains no access, turning hope into resentment.
+
+Open-weight capability rises to 57.5—still trailing the frontier—as distributed efforts absorb the latest public model fragments and optimise inference efficiency. While a major lab’s partial release fuels progress, full replication remains out of reach. The open frontier narrows slightly, enabling modest gains in research and defensive cyber tools, but also empowers malicious actors: early signs of AI-driven disinformation campaigns targeting EU infrastructure emerge.
+
+The EU responds to the sudden denial of frontier model access—cutting off hospitals and ministries—with urgent internal discussions on strategic response. The idea of a **Sovereign Core Initiative**, a large category 4 measure to build a fully auditable, EU-controlled AI stack, begins to take shape in closed sessions. However, constitutional constraints prevent any formal initiation: the portfolio already carries four active measures. No feasibility studies are launched, no resourcing initiated, and no planning begun under EuroHPC coordination. The measure remains in conceptual phase only, awaiting capacity clearance. Its formal proposal—and any associated costs or bonuses—cannot enter the notepad until approved in a future turn.
+
+Resilience improves slightly to 47.0 as the **Hardened Cyber Shield** completes and integrates into NIS3, strengthening detection across critical sectors. Yet legacy vulnerabilities persist, and the **Institutional Integrity Audit** uncovers AI-influenced decisions in national agencies, deepening institutional crisis.
+
+Public sentiment climbs modestly to 30.0—relief at the medical breakthrough tempers anger, but only barely. The **Emergency Public Legitimacy Framework** goes live in pilot elections, and disinformation tracing begins. Still, the perception of dependency erodes trust.
+
+Sovereignty drops to 14.0: the denial of frontier access costs −3 under rule 5, and rising capability imposes −1. Political capital falls to 3.0, reflecting the full weight of ongoing commitments: portfolio charge −16, offset only by +3 from the proposal bonus for the Emergency Public Legitimacy Framework. With no other offsets, the net −13 drop brings political capital down from 16.0 (base) to 3.0. The Union strains under accumulated burden, governance fraying at the edges.
+
+The notepad maintains that `ai_safety` remains at 17.0. Despite growing disinformation threats and systemic opacity, no systemic failure or policy reversal has occurred to justify a drop in safety. The conditions that could erode safety are present, but the threshold for measurable decline has not yet been crossed. A future incident or deliberate rollback of safety protocols would be required to trigger such a change.
+
+No new measure is added this turn. The **Sovereign Core Initiative** remains in discussion only, not yet in development.

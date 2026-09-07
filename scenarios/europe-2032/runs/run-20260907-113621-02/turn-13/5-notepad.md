@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Mandate cross-domain resilience integration −3, Legitimacy Recovery Initiative −3, Emergency Resilience Surge −3, priority −1 = −10  
+PROPOSAL BONUS: Emergency Resilience Surge (cat 6, large) +4 — directly responds to eu_frontier_access_denied, a severe external shock with immediate operational impact, within one turn of occurrence  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 18.0 last turn, eu_frontier_access_denied t13 −2, capability rose 2.5 ≥2 −1 = 16.0  
+US_POSTURE: CONSOLIDATION  
+emergent_local_energy_backlash — now listed in 8 turn(s): Local moratoriums on data centres spread to eight member states, coordinated through shared legal templates. Grid stability concerns are cited, but energy ministers privately admit political pressure is mounting.  
+emergent_open_bioscience_breakthrough — now listed in 8 turn(s): The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.  
+emergent_regional_data_pact — now listed in 4 turn(s): Five EU member states, citing the eu_frontier_access_denied incident and growing public pressure, form an informal data-sharing and compute-pooling pact outside EU structures. The arrangement is justified as a resilience measure but functions as a defection from centralized coordination, accelerating fragmentation just as unified action is most needed.  
+emergent_regulatory_fragmentation — now listed in 4 turn(s): In response to the EU's weakening political capital and the failure to enforce unified AI governance, several member states independently implement stricter national AI regulations, creating a patchwork of compliance regimes that undermines the single market. This fragmentation slows cross-border AI deployment and fuels legal disputes over jurisdiction and liability.

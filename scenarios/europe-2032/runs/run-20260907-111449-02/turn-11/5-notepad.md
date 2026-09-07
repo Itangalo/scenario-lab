@@ -1,0 +1,8 @@
+PORTFOLIO CHARGE: Regional Compute Integration Pact −3, priority −1 = −4  
+PROPOSAL BONUS: Regional Compute Integration Pact (cat 4, large) +3 — answers emergent_regional_compute_pact directly, recent and significant  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21 last turn, emergent_regional_compute_pact t11 +2 (partial anchoring), capability rose 2.5 ≥2 −1 = 23  
+US_POSTURE: CONSOLIDATION  
+emergent_local_energy_backlash — now listed in 6 turn(s): Local moratoriums on data centres spread to eight member states, coordinated through shared legal templates. Grid stability concerns are cited, but energy ministers privately admit political pressure is mounting.  
+emergent_open_bioscience_breakthrough — now listed in 6 turn(s): The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.  
+emergent_ai_worker_syndicates — now listed in 2 turn(s): Informal networks of displaced knowledge workers—former analysts, coders, and legal associates—coalesce into 'AI worker syndicates' that offer human-in-the-loop verification, model auditing, and adversarial testing services. These collectives gain traction in public procurement as a stopgap for systems lacking interpretability, creating a new layer of hybrid oversight that neither fully replaces nor trusts AI.

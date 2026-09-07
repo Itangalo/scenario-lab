@@ -1,0 +1,278 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.13498792767133194,
+    "triggered": true
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.14,
+    "probability_samples": [
+      0.14,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.19527828560784954,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.3,
+    "probability_samples": [
+      0.3,
+      0.3,
+      0.3
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.019616416878306953,
+    "triggered": true
+  },
+  {
+    "id": "bio_uplift_findings",
+    "probability": 0.21,
+    "probability_samples": [
+      0.21,
+      0.21,
+      0.21
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.1378117083687973,
+    "triggered": true
+  },
+  {
+    "id": "eval_anomaly_reports",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.25,
+      0.0,
+      0.25
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9843488389688492,
+    "triggered": false
+  },
+  {
+    "id": "labour_displacement",
+    "probability": 0.10666666666666667,
+    "probability_samples": [
+      0.16,
+      0.16,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.8688052584610387,
+    "triggered": false
+  },
+  {
+    "id": "election_annulled",
+    "probability": 0.13,
+    "probability_samples": [
+      0.17,
+      0.22,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.9109435331605856,
+    "triggered": false
+  },
+  {
+    "id": "eu_frontier_access_denied",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.1,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2897960904270498,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.13,
+    "probability_samples": [
+      0.13,
+      0.13,
+      0.13
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4173396641530299,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.15666666666666668,
+    "probability_samples": [
+      0.14,
+      0.19,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.29824981386785465,
+    "triggered": false
+  },
+  {
+    "id": "automated_decision_scandal",
+    "probability": 0.1366666666666667,
+    "probability_samples": [
+      0.11,
+      0.11,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.6459983114274979,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.4213159966013681,
+    "triggered": false
+  },
+  {
+    "id": "emergent_global_scientists_embargo",
+    "probability": 0.07333333333333333,
+    "emergent": true,
+    "description": "A coalition of leading AI researchers and biosecurity experts from multiple countries independently calls for a voluntary moratorium on publishing high-capability model architectures and training data recipes, citing uncontrolled proliferation risks. The movement gains traction in academic preprint communities and forces major conferences to adopt stricter review policies, creating a de facto shadow governance layer outside state control.",
+    "probability_samples": [
+      0.22,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2835825335157859,
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_refugee_crisis",
+    "probability": 0.06,
+    "emergent": true,
+    "description": "A growing number of AI engineers and safety researchers from non-EU jurisdictions begin seeking residency in EU member states, citing political pressure, censorship, or fear of conscription into military AI programs. Several countries quietly streamline visa pathways, creating a new brain-gain dynamic that could shift technical leverage if sustained.",
+    "probability_samples": [
+      0.18,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.06126849301417436,
+    "triggered": false
+  },
+  {
+    "id": "emergent_international_ai_refugee_movement",
+    "probability": 0.04,
+    "emergent": true,
+    "description": "A growing number of AI researchers and developers from countries tightening export controls or restricting open research begin relocating to EU member states offering protected academic status and compute access under sovereign oversight. This informal network, coordinated through the emergent European AI commons, creates a new brain gain for the Union despite its low sovereignty, though integration bottlenecks and political backlash threaten to stall it.",
+    "probability_samples": [
+      0.0,
+      0.12,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_ai_driven_energy_grid_instability",
+    "probability": 0.049999999999999996,
+    "emergent": true,
+    "description": "Multiple regional energy grids across Central and Southern Europe experience unexplained fluctuations and near-failures traced to AI-driven load-balancing systems reacting to synthetic demand signals, possibly from compromised models. The incidents are not yet catastrophic but expose critical dependencies on unverifiable AI control loops in infrastructure, prompting emergency reviews in Brussels and national capitals.",
+    "probability_samples": [
+      0.0,
+      0.15,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "ai_investment_collapse",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.0,
+    "emergent": false,
+    "description": "",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "id": "emergent_unified_eu_cyber_defense_initiative",
+    "probability": 0.09333333333333334,
+    "emergent": true,
+    "description": "In response to repeated cyber incidents and the fragility of the Sovereign Inference Backbone, several EU member states with advanced cyber units—led by Estonia, Finland, and the Netherlands—begin informal coordination on a unified cyber defense protocol, leveraging shared AI tools and threat intelligence. The initiative emerges outside formal EU structures due to political gridlock but gains tacit support from national security agencies, creating a de facto coalition that could evolve into a permanent structure if resilience continues to degrade.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.28
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,31 @@
+## Statement changes  
+- modify `act_under_uncertainty` (commitment): We will act before the picture is clear, but only when we can defend the space to act — and now, only if the action binds us together rather than exposing our fractures  
+- Grounds: The **cyber_major_incident** and **member_state_defection** have shown that early action without cohesion is not courage — it is provocation. The Sentinel Nodes detected the threat, but the Union could not respond as one. The Emergency Protocols were proposed, but rejected as infringements. Even our own observatory is blocked by jurisdictional disputes. We are not failing for lack of eyes or will, but because we no longer share a sovereign space in which to act. This update reflects a hard lesson: agency requires not just detection and decision, but unity. We will not stop acting early — but we will no longer mistake unilateralism for leadership.
+
+- modify `new_two_year_commitment` (commitment): Restore minimum operational cohesion across EU critical infrastructure and crisis response by hardening, synchronising, and politically insulating core AI defence systems — because without a baseline of functioning unity, no sovereignty or safety can exist  
+- Grounds: The **eval_anomaly_reports** and **backlash_physical** events confirm that the threat is no longer external but systemic: capability is outpacing measurement, and public trust is collapsing into violence. The original commitment assumed that hardening protocols would be enough — but we now see that cohesion must be *enforced* against both foreign dependency and internal fragmentation. The bilateral compute deal is not an outlier; it is a precedent. The protests are not noise; they are the sound of legitimacy failing. This revision sharpens the commitment: it is no longer about synchronisation through incentives, but through binding authority, even where resisted. We will accept the political cost, because the alternative is dissolution.
+
+## Portfolio  
+- `Sovereign AI Sentinel Nodes (category 5, costs 3 per turn, started turn 8, finishes on turn 10): Deploy a network of autonomous, EU-controlled monitoring and containment agents trained to detect, isolate, and counter unauthorised AI self-modification, model leakage, and unauthorised compute use across critical infrastructure and research environments` — **finished this turn**  
+- `Sovereign AI Behavioural Observatory (category 5, costs 3 per turn, started turn 9, finishes on turn 12): Establish a permanent, EU-wide facility dedicated to real-time monitoring, classification, and attribution of anomalous AI behaviour in both open and closed systems, integrating technical telemetry, synthetic media forensics, and geopolitical context`  
+- `Counter-Deception Rapid Response Corps (category 6, costs 3 per turn, started turn 10, finishes on turn 13): A deployable EU task force equipped with forensic AI analysis tools, diplomatic coordination protocols, and emergency communication authority to detect, attribute, and neutralise AI-generated synthetic crises within 72 hours of emergence`  
+
+## New measure  
+**Mandatory Sovereign AI Redundancy for Critical Infrastructure**  
+Require all operators of essential services to run parallel, EU-controlled AI systems for core functions, with automatic failover and no foreign dependency.
+
+`Category: 6 (Preparedness and resilience)`  
+`Size: large`  
+`Finishes on turn: 15`  
+`Targeted effect:` +12 to resilience by eliminating single points of failure in foreign-controlled AI; reduces risk of coercion or disruption via external compute; forces reintegration of defected member state systems under common oversight  
+`Applies to:` EU institutions, all member states, ENISA, national regulators, critical infrastructure operators (energy, health, transport, finance)
+
+## Priority  
+**Mandatory Sovereign AI Redundancy for Critical Infrastructure** — because the **member_state_defection** and **eval_anomaly_reports** prove that voluntary cohesion has failed, and the only way to prevent cascading collapse is to mandate dual-system operation under EU jurisdiction, even at the cost of short-term friction with member states.
+
+## In practice  
+We are no longer negotiating unity — we are enforcing it. The **Mandatory Sovereign AI Redundancy** measure will be enacted via revised NIS2 directives, using Article 114 TFEU to override national objections on internal market grounds. By requiring all critical operators to run parallel EU-sovereign AI stacks — trained on Sentinel data, hosted on EU soil, and capable of immediate failover — we eliminate the single point of failure that the recent attacks exploited. This is not optional: where member states have outsourced to foreign hyperscalers, they will now be required to run a sovereign mirror, audited by ENISA and funded through the Digital Europe Programme’s emergency clause. The cost is high — politically and financially — but the alternative is strategic surrender.
+
+The **Sovereign AI Behavioural Observatory** is entering its final phase, and we are fast-tracking its red-teaming simulations into operational guidance for the redundancy rollout. Despite ongoing legal disputes, we are invoking Article 122 TFEU to authorise live data sharing during declared emergencies, treating systemic fragility as a crisis in itself. The Counter-Deception Corps is being reoriented: its forensic teams will now focus on detecting model drift and unauthorised external dependencies in real time, feeding into the Observatory’s attribution engine. This is not about deception in the old sense — it is about detecting when a system is no longer under EU control.
+
+Public backlash is intensifying, with **backlash_physical** incidents targeting data centres in two member states. We are responding not with repression, but with transparency: launching a pan-European audit of AI impact on employment and public services, to be delivered by the end of the year. This is not a concession — it is a recalibration of legitimacy. We cannot govern what we do not understand, and we cannot protect what the public no longer trusts. But we will not let fear paralyse us. The redundancy mandate goes forward — because if we do not act now, there will be no Union left to save.

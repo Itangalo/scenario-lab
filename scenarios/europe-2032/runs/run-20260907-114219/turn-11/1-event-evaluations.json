@@ -1,0 +1,209 @@
+[
+  {
+    "id": "cyber_major_incident",
+    "probability": 0.19000000000000003,
+    "probability_samples": [
+      0.19,
+      0.19,
+      0.19
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.2583218083546659,
+    "triggered": false
+  },
+  {
+    "id": "bio_incident",
+    "probability": 0.01,
+    "probability_samples": [
+      0.01,
+      0.01,
+      0.01
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.3046563648408631,
+    "triggered": false
+  },
+  {
+    "id": "loss_of_control_incident",
+    "probability": 0.12000000000000001,
+    "probability_samples": [
+      0.08,
+      0.14,
+      0.14
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.8255163849842899,
+    "triggered": false
+  },
+  {
+    "id": "capability_jump",
+    "probability": 0.10000000000000002,
+    "probability_samples": [
+      0.1,
+      0.1,
+      0.1
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.9475339831576095,
+    "triggered": false
+  },
+  {
+    "id": "taiwan_blockade",
+    "probability": 0.02,
+    "probability_samples": [
+      0.02,
+      0.02,
+      0.02
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "roll": 0.16480641921149342,
+    "triggered": false
+  },
+  {
+    "description": "",
+    "emergent": false,
+    "id": "ai_investment_collapse",
+    "probability": 0.02666666666666667,
+    "probability_samples": [
+      0.04,
+      0.04,
+      0.0
+    ],
+    "samples_present": 3,
+    "n_samples": 3,
+    "skipped": "Event already occurred and cannot repeat",
+    "triggered": false
+  },
+  {
+    "description": "A model-generated cyberattack exploiting sovereign update mechanisms has already occurred, and institutional, political, and technological fragility converge into a total crisis of oversight. Auditors confirm the Sovereign Core was compromised months before activation, and red-team reviews are now mandated. This instability in foundational EU AI infrastructure persists and escalates, undermining confidence in further deployment.",
+    "emergent": true,
+    "id": "emergent_sovereign_core_instability",
+    "probability": 0.11666666666666665,
+    "probability_samples": [
+      0.35,
+      0.0,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.6054981636917145,
+    "triggered": false
+  },
+  {
+    "description": "Faced with systemic dysfunction, zero political capital, and repeated failures of oversight, senior AI researchers and engineers across multiple EU member states begin publicly resigning from public-sector AI initiatives and critical evaluation bodies. They cite irreversible institutional decay, compromised security, and the impossibility of ethical stewardship under current conditions. This wave of desertion further degrades the EU's capacity to respond.",
+    "emergent": true,
+    "id": "emergent_researcher_desertion_wave",
+    "probability": 0.16666666666666666,
+    "probability_samples": [
+      0.35,
+      0.15,
+      0.0
+    ],
+    "samples_present": 2,
+    "n_samples": 3,
+    "roll": 0.5805634789242876,
+    "triggered": false
+  },
+  {
+    "description": "A coordinated response among EU member states and key international partners establishes a joint cyber-intelligence fusion cell to counter AI-driven threats, sharing real-time telemetry and threat models after the recent cascade failures. The initiative is driven by necessity, as the Sovereign Core breach exposed fatal gaps in collective response.",
+    "emergent": true,
+    "id": "emergent_joint_cyber_fusion",
+    "probability": 0.07333333333333333,
+    "probability_samples": [
+      0.0,
+      0.22,
+      0.0
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "rsi_onset",
+    "probability": 0.11666666666666665,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.35
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.9303766939678869,
+    "triggered": false
+  },
+  {
+    "id": "member_state_defection",
+    "probability": 0.043333333333333335,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.13
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.7163583834829513,
+    "triggered": false
+  },
+  {
+    "id": "backlash_physical",
+    "probability": 0.04666666666666667,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.14
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.24132312774751752,
+    "triggered": false
+  },
+  {
+    "id": "middle_power_coalition",
+    "probability": 0.03333333333333333,
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.1
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "roll": 0.2854903327358169,
+    "triggered": false
+  },
+  {
+    "id": "emergent_institutional_collapse",
+    "probability": 0.08333333333333333,
+    "emergent": true,
+    "description": "Multiple EU agencies report systemic failures in coordination and decision-making, with internal audits revealing that key resilience and oversight functions have been operating without updated protocols for months. The paralysis is no longer political but operational: emergency response chains are degrading, and member states begin forming ad hoc bilateral arrangements for critical infrastructure protection.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.25
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  },
+  {
+    "id": "emergent_model_leak",
+    "probability": 0.09999999999999999,
+    "emergent": true,
+    "description": "A frontier model with capability near 85.0 is leaked from a closed lab outside the EU and begins circulating in encrypted networks. Unlike prior open releases, this leak includes training data and alignment artifacts, enabling rapid fine-tuning for offensive use. The source is unconfirmed, but the leak widens the gap between closed and open capability overnight, and enforcement agencies are overwhelmed by the scale of distribution.",
+    "probability_samples": [
+      0.0,
+      0.0,
+      0.3
+    ],
+    "samples_present": 1,
+    "n_samples": 3,
+    "skipped": "Exceeds emergent_events.max_per_turn (2)",
+    "triggered": false
+  }
+]

@@ -1,0 +1,9 @@
+PORTFOLIO CHARGE: Open Science Resilience Initiative −3, Mandate cross-domain resilience integration −3, priority −1 = −7  
+PROPOSAL BONUS: Mandate cross-domain resilience integration (cat 6, large) +3 — directly answers cyber_major_incident and eu_frontier_access_denied, both recent and severe  
+LEGITIMACY LENDS: none  
+SOVEREIGNTY: 21.0 last turn, no capacity event, capability rose 2.0 ≥2 −1 = 19.0  
+US_POSTURE: CONSOLIDATION  
+emergent_local_energy_backlash — now listed in 6 turn(s): Local moratoriums on data centres spread to eight member states, coordinated through shared legal templates. Grid stability concerns are cited, but energy ministers privately admit political pressure is mounting.  
+emergent_open_bioscience_breakthrough — now listed in 6 turn(s): The EU-led protein folding model is adopted by three national biosecurity agencies. It is slower than frontier systems but fully auditable, creating a niche for trusted, open science in high-stakes domains.  
+emergent_regional_data_pact — now listed in 2 turn(s): Five EU member states, citing the eu_frontier_access_denied incident and growing public pressure, form an informal data-sharing and compute-pooling pact outside EU structures. The arrangement is justified as a resilience measure but functions as a defection from centralized coordination, accelerating fragmentation just as unified action is most needed.  
+emergent_regulatory_fragmentation — now listed in 2 turn(s): In response to the EU's weakening political capital and the failure to enforce unified AI governance, several member states independently implement stricter national AI regulations, creating a patchwork of compliance regimes that undermines the single market. This fragmentation slows cross-border AI deployment and fuels legal disputes over jurisdiction and liability.

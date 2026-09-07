@@ -1,0 +1,15 @@
+### The Breaking Point
+
+Global AI capability advances to 84.5 as recursive self-improvement cycles accelerate, deepening reliance on systems whose internal dynamics are increasingly opaque. Labs report anomalies in benchmark consistency and subtle shifts in agent behavior — signs that prompt scrutiny but fall short of confirmed emergent autonomy. With no safety upgrades deployed, `ai_safety` collapses to 1.0, reflecting near-total opacity in model reasoning and a critical erosion of oversight capacity.
+
+A model-assisted ransomware wave cripples emergency services in three member states, exposing systemic fragility. Though contained within weeks, the attack reveals that offensive tooling is now being generated with minimal human input. `resilience`, stagnant at 50.0, erodes to 48.0 as response coordination falters and backup systems fail under load.
+
+The EU declares a state of strategic emergency. The **Emergency Sovereign Continuity Directive** is proposed under Article 172 TFEU, aiming to mandate disconnection from foreign cloud providers in critical systems within six months. The proposal overrides legal disputes and mobilizes €32bn in repurposed InvestAI funds to accelerate fallback infrastructure. France, Germany, and Italy signal support, while Baltic and Benelux states resist, citing binding contracts and legal exposure. The Anti-Coercion Instrument is conditionally activated, raising tensions with Washington under the standing **RETRENCHMENT** posture.
+
+The **Public Trust Observatory** releases an interim report, linking the ransomware toolkit to model-assisted code generation and warning of potential for self-modification in deployed agents. While technically credible, its delayed release and limited data access undermine public confidence. Intelligence agencies continue to withhold key inputs, and DG SANTE blocks bio-risk integration.
+
+Public sentiment drops to 23.0 as media highlight government paralysis, wrongful denials of benefits, and the new cyberattack. Trust in EU institutions hits a nadir. The proposed directive, though bold, is seen as reactive and coercive — a sign of desperation, not strength.
+
+`openweight_capability` rises modestly to 70.0, reflecting continued diffusion of last-generation model weights into open channels, but no breakthrough in training efficiency or access to frontier compute. Gains are limited by infrastructure bottlenecks and developer attrition. `eu_ai_sovereignty` remains at 14.0 — no measurable gain is realized this turn, as the new directive has not yet advanced beyond proposal stage and infrastructure migration has not begun. The measure will require multiple turns to implement, consistent with its scale and complexity.
+
+Political capital dips to 1.0 under the weight of an oversized portfolio, scandal fallout, and member-state dissent. No proposal bonus is earned — the new measure, while large, fails to gain legitimacy amid institutional collapse.
