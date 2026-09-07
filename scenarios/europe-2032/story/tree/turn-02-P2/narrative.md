@@ -2,14 +2,21 @@
 node: turn-02-P2
 turn: 2
 period: H1 2027
-block: P2
-status: drafted
+status: written
 prev: option-02-2
 next: turn-03-P2
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
+# The window narrowing
 
-**Turn 2 (H1 2027).** The EU launches the Critical Infrastructure Resilience Surge as its sole new measure while keeping InvestAI Gigafactories as its priority and two-year commitment anchor, invoking Article 122 TFEU, quarterly EIB tranches, fast-tracked assessments in Brittany and Norrland with a €12bn solidarity offset, and 3GW reallocated to northern Sweden. The Tech Sovereignty Package is leveraged for priority ASML and Zeiss delivery slots plus a 14-month permitting cap with dormant adoption, and the interim EAAD under ENISA issues its first weights-and-logs demand to a non-EU hyperscaler. Automated verification widens across law, engineering and clinical coding while an openweight frontier release diffuses rapidly, lifting capability even as job losses and regional-election disinformation sour sentiment. CIRS stays paper-only this turn with three member states interested and red-teaming blocked, and capital falls under four overlapping initiatives.
+What moves is verification. Automated checking in law, engineering and clinical coding gets good enough to trust, which unlocks faster training loops and much broader deployment: systems now refine legal contracts and medical classifications with minimal review. The boundary between narrow competence and general competence stops being a line and becomes a smudge.
 
-Metrics: ai_capability 55.0, openweight 43.0, safety 32.0, resilience 39.0, sovereignty 20.0, capital 37.0, sentiment 40.0. Events: verification_widens, openweight_frontier_release.
+A leading laboratory publishes an open model within months of its closed counterpart. Tens of thousands of downloads. Deployment infrastructure and safety filtering still slow what people can actually do with it, so the gap holds — but the direction of travel is now visible to everyone, including the people you are negotiating with.
+
+You accelerate the gigafactories, because that is what you committed to. Permitting is fast-tracked, 3GW of reserved compute is redirected to a Swedish site, and a joint committee of the Commission and member states goes around the regional delays. Protests in Brittany and Norrland intensify over energy costs. On the sovereignty package you trade R&D cooperation to ASML and Zeiss for early delivery slots, while the directive harmonising permitting runs into legal scrutiny about national competence.
+
+Your Assurance Directorate — still temporary, still housed inside ENISA — issues its first evaluation demand to a non-EU hyperscaler. The firm contests the legal basis and calls your funding levy a trade barrier. The pilot levy proceeds under the services rules and full enforcement waits on a court.
+
+And you announce the Critical Infrastructure Resilience Surge: mandatory detection upgrades for energy, water and transport control systems, cross-border red-teaming, enforced through the network security obligations and conditional access to recovery funds. Three member states signal preliminary interest. The red-teaming is blocked outright by disputes over classification. Nothing is implemented.
+
+Job losses appear in legal and engineering support roles, and machine-generated disinformation turns up in regional elections. The public is beginning to have an opinion.

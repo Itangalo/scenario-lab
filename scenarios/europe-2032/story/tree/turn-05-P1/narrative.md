@@ -2,14 +2,21 @@
 node: turn-05-P1
 turn: 5
 period: H2 2028
-block: P1
-status: drafted
+status: written
 prev: turn-04-P1
 next: option-06-P11, option-06-P12
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
+# A rare win, and a hospital in three countries
 
-**Turn 5 (H2 2028).** SEAL formally concludes – Joint Undertaking established, €12bn ring-fenced, servicing protocols signed – lifting sovereignty to 29.0, while the Evaluation Shield seats its board and starts confidential pilot audits under a live IP-overreach legal challenge. A model-driven ransomware campaign through a compromised open-source dependency cripples hospitals in Belgium, Hungary and Portugal – the cyber_major_incident – and capability_plateau_evidence arrives as a flagship release underdelivers and top-tier prices fall. The EU closes its two-year commitment on sovereign infrastructure and scopes a Critical Infrastructure Cyber Shield, but adopts no proposal and allocates no funding yet. The US election goes to the alliance candidate for transatlantic alignment, effects deferred; sentiment dips to 38.0 and capital to 29.0.
+The lithography corridor concludes. A legally autonomous joint undertaking now operates a parallel maintenance network for the tools in Dresden, Crolles and Catania, €12bn ring-fenced, operational protocols signed. Access to the equipment that makes the chips is no longer somebody else's decision. It is the first unambiguous win of your term, and it took two years to table a measure you knew you needed in the first six months.
 
-Metrics: ai_capability 59.5, openweight 45.0, safety 22.0, resilience 35.0, sovereignty 29.0, capital 29.0, sentiment 38.0. Events: election_alliance, cyber_major_incident, capability_plateau_evidence.
+Then a machine-generated ransomware campaign takes down hospital IT in Belgium, Hungary and Portugal through a compromised open-source dependency, and cascades. ENISA confirms the malware adapted in real time to evade detection — the signature of model-driven offence — and calls for urgent review of the resilience standards you have been meaning to write.
+
+You begin scoping the Critical Infrastructure Cyber Shield: binding requirements on the operators of essential services for AI-resistant intrusion detection, failover protocols, red-teaming against known automated attack patterns. Germany and Poland express conditional interest, pending clarity on funding and risk assessment. Nothing is formally adopted, nothing is funded, and the consultation runs into next year. Three hospitals systems have already been down.
+
+The Evaluation Shield appoints its executive board and opens confidential pilot audits with two developers. Then a coalition of technology firms and foreign governments files a legal challenge on intellectual property grounds, and the agency's authority is in doubt before it has finished being built.
+
+Public sentiment dips again under the visible attack and the displacement fears. Labour unrest simmers. Carrying this many large initiatives at once continues to cost you more than any single one returns.
+
+In November the United States elects the candidate who argued for transatlantic technological alignment. The administration has not taken office and no policy exists yet, only early diplomatic signals suggesting a willingness to engage. What that is actually worth arrives in the new year.

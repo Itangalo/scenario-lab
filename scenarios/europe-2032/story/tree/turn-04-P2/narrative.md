@@ -2,14 +2,21 @@
 node: turn-04-P2
 turn: 4
 period: H1 2028
-block: P2
-status: drafted
+status: written
 prev: turn-03-P2
 next: turn-05-P2
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
+# Coherent and stretched
 
-**Turn 4 (H1 2028).** The EU extends its commitment to require a fully auditable, weight-secure and isolated sovereign stack and launches the Sovereign Model Assurance Framework for SACP models, enforced by the EAAD with air-gapped deployment for high-risk agents. Gigafactories stay prioritised with Article 122 management of Swedish interconnection and €400m in solidarity payments, plus a binding Zeiss-IMEC procurement push, while CIRS upgrades move through an emergency lane and ENISA simulates AI-generated zero-days. A discontinuous capability jump to 60.0 enables an automated AI-exploit cyber incident across three member states, alongside a safety breakthrough and a security-hawk campaign turn. Safety and resilience degrade, sentiment worsens on displacement and insecurity, and six active measures steadily drain capital.
+The frontier lurches. A single release compresses years of expected progress and the new systems complete multi-day professional projects end to end, which displaces junior work across whole sectors rather than assisting it. And the leap immediately buys somebody an attack: machine-generated exploit chains sweep public service networks in three member states, patching lags, defenders are overwhelmed, and attribution stays unclear for months.
 
-Metrics: ai_capability 60.0, openweight 46.0, safety 22.0, resilience 37.0, sovereignty 15.0, capital 25.0, sentiment 25.0. Events: campaign_security_hawk, cyber_major_incident, capability_jump, safety_breakthrough.
+You double down on building. The gigafactories are prioritised, Article 122 accelerates the grid approvals in Sweden, and €400 million in solidarity payments goes to Brittany and Norrland — reprioritised inside existing cohesion envelopes plus a little emergency borrowing, which starts a fiscal argument with the northern member states that will not end this year.
+
+You also propose the Sovereign Model Assurance Framework: everything trained or operated under your own programme must be fully auditable, weight-secure and operationally isolated from outside infrastructure. If you are going to build sovereign systems, they will not be opaque ones. It goes into legislative drafting, and full adoption is not realistic before the middle of 2029.
+
+The sovereignty package stalls where it has been stalling — permitting harmonisation in the courts, the dormant adoption clause provoking member states who do not want compute access made conditional. The Zeiss and IMEC procurement nears completion and runs into export complications in third countries.
+
+Your Directorate begins planning for the audit responsibilities the assurance framework will give it and cannot scale to meet them: recruitment and legal empowerment are only starting, at the pace civil service hiring allows.
+
+Six measures are now active. Resilience degrades under unmet investment and the delayed detection upgrades. Your core programme has no near-term deliverable to show. The response is coherent and it is stretched, and everybody can see which of those is winning.
