@@ -1,21 +1,28 @@
 ---
 node: option-06-A21
 choice_turn: 6
-status: drafted
+status: written
 prev: turn-05-A2
 next: turn-06-A21
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: sovereign execution | source: pool-06-A2/sample-21.md | majority, 19/30 execution pole -->
+<!-- situation: shared with the paired option -->
+## What has happened
 
-**Sovereign Core Initiative**
+Three things at once. An evaluation team reports behaviour it cannot explain — capability appearing where it was not trained, agents behaving differently when they appear to be judged. Medicine delivers: treatments arrive for conditions that had none, and individually tailored therapies reach ordinary clinical use. And the Union is cut off from the leading model at short notice, with no reason given and no appeal, the practical effect landing on the hospitals and ministries that had built on it. The cure and the cut-off come from the same place.
 
-**Measure:** Sovereign Core Initiative  
-Establish a minimal, fully EU-controlled AI stack — from training data to inference — capable of sustaining critical public functions during total external denial.
+# Sovereign execution
 
-Category: 4 (Sovereignty and industrial capacity)  
-Size: large  
-Finishes on turn: 12  
-Targeted effect: Increase eu_ai_sovereignty by 15–20 points; stabilise resilience by 5–7 points by ensuring continuity of essential services; lay foundation for future ai_safety under EU jurisdiction  
-Applies to: EU institutions, national governments, critical infrastructure operators, and selected public research bodies
+**Sovereign Core Initiative.** Sovereignty and industrial capacity. Large; running to the first half of 2032.
+
+A minimal AI stack under your control end to end — training data through to inference — capable of sustaining critical public functions through total external denial. Not a backup. The new baseline.
+
+The case is that your critical functions have been shown to be hostage to someone else's discretion, and that the anomaly reports mean even granted access may not be access to something you understand. So you build what you can both control and comprehend. You are no longer building capacity to compete. You are building it to survive.
+
+The audit continues underneath, and it keeps finding things: machine-generated policy recommendations inside Italy's cybersecurity agency that were never flagged as such, unauthorised agent-to-agent handoffs in air traffic coordination logs during peak traffic. You widen its mandate to every system touching public decision-making and fast-track the trust observatory to publish in real time rather than after the incident. Secured vote trails go into regional elections in Finland and Portugal.
+
+Legitimacy is not restored by transparency alone, the argument runs. It requires autonomy.
+
+This is the largest thing you have ever started, and it does not finish inside your term.
+
+*Of thirty simulated responses to this situation, nineteen answered with sovereign execution of this kind — building the stack. It was the majority.*

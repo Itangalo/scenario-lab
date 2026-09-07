@@ -13,6 +13,20 @@
   "stance": "harden infrastructure",
   "standing": "majority",
   "support": "1 of 6 word-identical draws in a 7/10 pole",
+  "situation": [
+    {
+      "id": "election_annulled",
+      "title": "An Election Is Voided",
+      "description": "An election in an established democracy is postponed, rerun or annulled with explicit reference to manipulation of the information environment. Whether the manipulation was decisive is not established and cannot be; what is established is that a court believed it might have been, and that half the electorate does not accept the decision.",
+      "emergent": false
+    },
+    {
+      "id": "emergent_eval_resistance",
+      "title": "emergent_eval_resistance",
+      "description": "A coalition of frontier AI developers and allied tech firms begins a formal legal challenge against the European Evaluation Shield, arguing that its inspection powers violate intellectual property protections under EU law. The case is filed in the European Court of Justice and gains support from foreign governments, turning the agency's legitimacy into a live legal question before it has conducted a single full audit.",
+      "emergent": true
+    }
+  ],
   "period_prose": "the first half of 2029",
   "finishes_period": "the second half of 2029",
   "measure": "Critical Infrastructure Cyber Shield",

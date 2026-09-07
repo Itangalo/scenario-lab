@@ -1,21 +1,26 @@
 ---
 node: option-06-A12
 choice_turn: 6
-status: drafted
+status: written
 prev: turn-05-A1
 next: turn-06-A12
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: screen and block | source: pool-06-A1/sample-03.md | minority, 3/10 (1 abstain) -->
+<!-- situation: shared with the paired option -->
+## What has happened
 
-**Mandatory Pre-Deployment Biosecurity Audit Regime**
+A discontinuous release moves the frontier further in one step than in the preceding two years, and everything written about deployment timelines the week before is obsolete. Then a draft internal assessment leaks from a leading European biosecurity laboratory: the pathogen design from the genome model incident could be reconstructed and tested for under €100,000 by someone with moderate technical skill.
 
-**Mandatory Pre-Deployment Biosecurity Audit Regime**  
-Require all frontier AI developers operating in or supplying the EU to submit models to independent, adversarial testing for bio-risk potential before release, with results binding and public.
+# Screen and block
 
-`Category: 1 (Evaluation and oversight)`  
-`Size: large`  
-`Finishes on turn: 9`  
-`Targeted effect:` +8 to ai_safety by forcing early detection of dual-use biological capabilities; begins to close the gap between capability growth and assurance, especially in high-consequence domains; signals EU as a standards-setter even under low sovereignty  
-`Applies to:` Frontier AI laboratories (open and closed), EU-accredited evaluation bodies, EMA and ECDC as risk co-assessors
+**Mandatory Pre-Deployment Biosecurity Audit Regime.** Evaluation and oversight. Large; running until the second half of 2030.
+
+You go at the source instead. Every frontier developer operating in or supplying the Union must submit models to independent adversarial testing for biological risk before release, and the results are binding and public. Not voluntary testing — a condition of market access. An empowered evaluation agency, working with the Paul Ehrlich Institute and SciLifeLab, runs probes against the models above the threshold: pathogen design, synthesis planning, laboratory protocol generation. Anything that produces a viable blueprint is blocked from deployment here until mitigations are verified.
+
+You will negotiate with the American laboratories to align their internal red teams with your standards, and the regime applies extraterritorially regardless. If you sell here, you test here.
+
+This is not sovereignty through compute, which you have spent two years failing to build. It is sovereignty through standards, exercised at the one chokepoint you still control — access to your own market — and it is a bet that the chokepoint still has grip.
+
+Your standing still goes on the Response Corps. Preparedness only becomes real when somebody can act.
+
+*Of ten simulated responses to this situation, three screened at the source in this way, against six that built detection. One abstained.*

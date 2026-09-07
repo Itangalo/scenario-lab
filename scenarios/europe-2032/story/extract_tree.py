@@ -244,6 +244,30 @@ def main() -> int:
     periods = tree["turn_periods"]
     blocks = {b["block"]: b for b in tree["blocks"]}
 
+    def situation_of(block_id: str, turn: int) -> list[dict[str, Any]]:
+        run = RUNS / blocks[block_id]["run"] / f"turn-{turn:02d}"
+        described = {}
+        ev = run / "1-events.json"
+        if ev.is_file():
+            for e in json.loads(ev.read_text(encoding="utf-8")):
+                described[e["id"]] = e
+        out = []
+        evals = run / "1-event-evaluations.json"
+        if evals.is_file():
+            for e in json.loads(evals.read_text(encoding="utf-8")):
+                if not e.get("triggered"):
+                    continue
+                merged = {**described.get(e["id"], {}), **e}
+                defined = events_meta.get(e["id"], {})
+                out.append({
+                    "id": e["id"],
+                    "title": defined.get("title") or e["id"],
+                    "description": (defined.get("description")
+                                    or (merged.get("description") or "").strip()),
+                    "emergent": bool(merged.get("emergent")),
+                })
+        return out
+
     def us_election(block_id: str) -> dict[str, Any] | None:
         """The 2028 result, read from the stage-1 ancestor's turn 5.
 
@@ -401,6 +425,11 @@ def main() -> int:
                 "split": choice["split"], "split_note": choice["note"],
                 "stance": opt["stance"], "standing": opt["standing"],
                 "support": opt["support"],
+                # The options were drawn against a fixed situation: the events
+                # pinned in the turn they lead into. The reader has to be told
+                # what has happened before choosing how to answer it, so the
+                # situation belongs to the choice, shared by both options.
+                "situation": situation_of(leads_list[0], choice["choice_turn"]),
                 "period_prose": period_prose(choice["choice_turn"]),
                 "finishes_period": (period_prose(opt["finishes_turn"])
                                     if opt["finishes_turn"] else None),

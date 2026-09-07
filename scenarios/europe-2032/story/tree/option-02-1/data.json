@@ -15,6 +15,14 @@
   "stance": "build",
   "standing": "plurality category",
   "support": "cat4, 12/30",
+  "situation": [
+    {
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Surface",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "emergent": false
+    }
+  ],
   "period_prose": "the first half of 2027",
   "finishes_period": "the second half of 2027",
   "measure": "Emergency Sovereign Compute Directive",

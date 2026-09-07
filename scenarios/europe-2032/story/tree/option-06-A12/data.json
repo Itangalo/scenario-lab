@@ -13,6 +13,20 @@
   "stance": "screen and block",
   "standing": "minority",
   "support": "3/10 (1 abstain)",
+  "situation": [
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "emergent": false
+    },
+    {
+      "id": "emergent_biosecurity_leak",
+      "title": "emergent_biosecurity_leak",
+      "description": "A draft internal assessment from a leading European biosecurity lab leaks, revealing that the pathogen design from the recent genome model incident could be reconstructed and tested with less than 100,000 EUR and moderate technical skill. The document, marked 'Not for Public Release,' triggers panic in closed policy channels and forces emergency meetings, though it has not yet reached public media.",
+      "emergent": true
+    }
+  ],
   "period_prose": "the first half of 2029",
   "finishes_period": "the second half of 2030",
   "measure": "Mandatory Pre-Deployment Biosecurity Audit Regime",

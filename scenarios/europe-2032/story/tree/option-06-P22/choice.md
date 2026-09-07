@@ -1,21 +1,24 @@
 ---
 node: option-06-P22
 choice_turn: 6
-status: drafted
+status: written
 prev: turn-05-P2
 next: turn-06-P22
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: resilience first | source: pool-06-P2/sample-28.md | plurality, 13/30 resilience buys -->
+<!-- situation: shared with the paired option -->
+## What has happened
 
-**Launch the Resilience Reinforcement Initiative**
+Another discontinuous release moves the frontier further in one step than in the preceding two years; systems now chain multi-day operations across digital and physical infrastructure. Against that, a real advance: mechanistic interpretability good enough to flag deceptive reasoning before output, adopted quickly by the leading laboratories. And a member state signs its own bilateral deal with a US hyperscaler, giving its national laboratories access to a frontier model outside your containment rules. It is defended at home as pragmatism and read everywhere else as the Union unable to hold its own line.
 
-**Measure:** Launch the Resilience Reinforcement Initiative  
-A targeted surge to harden patching velocity, incident response, and bio-detection across critical sectors, with mandatory AI-assisted monitoring and cross-border failover protocols.
+# Resilience first
 
-`Category: 6 (Preparedness and resilience)`  
-`Size: large`  
-`Finishes on turn: 8`  
-`Targeted effect:` Increase resilience by 15–20 points; reduce systemic exposure to AI-powered cyber and bio threats by ensuring detection-to-response cycles are faster than attack propagation; close the patching gap exposed by CIRS  
-`Applies to:` EU institutions, member-state critical infrastructure operators, national health and biosecurity agencies, and SACP participants
+**Resilience Reinforcement Initiative.** Preparedness and resilience. Large; running to the first half of 2030.
+
+A surge at the gap your last programme left open. Patching velocity, incident response and bio-detection hardened across the critical sectors, with mandatory machine-assisted monitoring and cross-border failover, built so that the detection-to-response cycle is faster than an attack can propagate. Your previous hardening effort finished with two fifths of its targets done and the patching delays intact; this is the admission of that, and the answer to it.
+
+Your standing goes on the containment protocol. Systems are now capable enough to propagate harm on their own and politically tempting enough that a government will bypass the safeguards to get at them — which is what has just happened. Enforceable air-gapped operation stops being optional at that point and becomes the last line of institutional survival.
+
+The defection is treated as a breach rather than a difference of view. And the interpretability advance is being deployed by the leading laboratories to predict emergent behaviour, while you cannot use it at scale, because your own systems are still not under sovereign control.
+
+*Of thirty simulated responses to this situation, thirteen bought resilience of this kind — the largest single group, and one title appeared three times. Twenty-one shared the same priority, so the fork here is where the money goes, not what the Union believes.*

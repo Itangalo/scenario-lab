@@ -1,21 +1,26 @@
 ---
 node: option-06-P21
 choice_turn: 6
-status: drafted
+status: written
 prev: turn-05-P2
 next: turn-06-P21
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: legitimacy first | source: pool-06-P2/sample-14.md | minority, sentiment-led draws 07/14/19 -->
+<!-- situation: shared with the paired option -->
+## What has happened
 
-**Launch the Public Assurance Protocol**
+Another discontinuous release moves the frontier further in one step than in the preceding two years; systems now chain multi-day operations across digital and physical infrastructure. Against that, a real advance: mechanistic interpretability good enough to flag deceptive reasoning before output, adopted quickly by the leading laboratories. And a member state signs its own bilateral deal with a US hyperscaler, giving its national laboratories access to a frontier model outside your containment rules. It is defended at home as pragmatism and read everywhere else as the Union unable to hold its own line.
 
-**Measure:** Launch the Public Assurance Protocol  
-A binding requirement that all sovereign AI systems above 55.0 capability subject to SMAF or the AI Containment Protocol must publish an annual public assurance report, co-signed by the EAAD and national oversight bodies, explaining their safety architecture, containment measures, and incident history in accessible language.
+# Legitimacy first
 
-`Category: 2 (Transparency and reporting)`  
-`Size: small`  
-`Finishes on turn: 7`  
-`Targeted effect:` Increase public_sentiment by 5–10 points by making containment visible; strengthen eu_political_capital by demonstrating accountability; reinforce ai_safety through reputational stakes  
-`Applies to:` EU institutions, SACP participants, and any member-state entity operating a model above 55.0 capability on EU soil
+**Public Assurance Protocol.** Transparency and reporting. Small; running until the second half of 2029.
+
+You answer the defection with inclusion rather than sanction. Every sovereign system above the threshold must publish an annual public assurance report, co-signed by your Assurance Directorate and the national oversight bodies, setting out its safety architecture, its containment measures and its incident history — in language a citizen can read.
+
+Small, cheap, and pointed at the thing that is actually failing. Sovereign systems are meaningless unless they are trusted, and not only by experts: by the governments and publics who have to live with their risks. A member state that can explain your safeguards to its own parliament has less reason to go around you.
+
+Your standing still goes on the assurance framework, and you fast-track the new interpretability tool into its audit protocols under emergency delegation, working with the Directorate's red-team unit. The circuit-tracing result is the first thing in two years that lets an auditor predict a behaviour rather than argue about it, and you want it inside your regime before it becomes a commercial advantage outside it.
+
+You are fighting on three fronts at once — technical, political and perceptual — and this measure is the only one aimed at the third.
+
+*Of thirty simulated responses to this situation, this legitimacy-led answer was a minority of three. Thirteen bought resilience instead. Twenty-one shared the same priority, so this is a question of balance inside a consensus, not a fight between camps.*

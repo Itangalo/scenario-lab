@@ -1,21 +1,26 @@
 ---
 node: option-06-V12
 choice_turn: 6
-status: drafted
+status: written
 prev: turn-05-V1
 next: turn-06-V12
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
-<!-- stance: secure compute | source: pool-06-V1/sample-01.md | minority, 2/10 -->
+<!-- situation: shared with the paired option -->
+## What has happened
 
-**Emergency Compute Assurance Initiative**
+A blockade halts advanced semiconductor exports. Compute supply for everyone outside China's domestic chain is disrupted for years, every AI policy question becomes a security question overnight, and the Union's upstream position in lithography and materials is suddenly both your strongest card and your most exposed flank.
 
-**Emergency Compute Assurance Initiative**  
-Launch an emergency programme to secure and verify the integrity of existing and near-term EU-accessible compute clusters, ensuring they remain under enforceable jurisdiction and resistant to external coercion or sabotage in light of the Taiwan blockade.
+# Secure the compute
 
-`Category: 4 (Sovereignty and industrial capacity)`  
-`Size:` small  
-`Finishes on turn:` 8  
-`Targeted effect:` +5 to +8 eu_ai_sovereignty by turn 8 by anchoring critical compute infrastructure legally and physically within the EU’s sphere of control; reduce risk of sudden capacity loss due to supply chain or geopolitical disruption  
-`Applies to:` Major EU cloud providers, national high-performance computing consortia (e.g., EuroHPC), and private AI labs operating on EU soil
+**Emergency Compute Assurance Initiative.** Sovereignty and industrial capacity. Small; running to the first half of 2030.
+
+You cannot wait for gigafactories now. The blockade has turned compute availability into an immediate security crisis, and the useful move is to secure and verify what you already have rather than to build what you do not.
+
+€1.8bn from the Digital Europe Programme and the energy emergency clause funds hardware verification, legal anchoring and redundancy upgrades across the existing clusters. Under the chips safeguard clause, every operator of a facility above one exaflop must submit to audit and failover planning within the year. You expect resistance from the US-linked hyperscalers and frame it as reciprocal: you will recognise equivalent American or Japanese assurances in return.
+
+The point is jurisdiction, not ownership. Clusters that remain legally and physically inside your sphere of control cannot be lost overnight to a supply chain decision or a geopolitical one. This is not nationalisation; it is pre-emption. If you do not secure what you already have, there will be nothing left to defend.
+
+It does nothing about what runs on those machines, or about the coordination failures your regulators keep finding.
+
+*Of ten simulated responses to this situation, two answered by securing compute this way, against five that built the monitoring function. This is the minority answer.*

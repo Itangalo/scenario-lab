@@ -13,6 +13,20 @@
   "stance": "hold and enforce",
   "standing": "hold-plus cluster",
   "support": "cluster 01/02/03/07/08",
+  "situation": [
+    {
+      "id": "eval_anomaly_reports",
+      "title": "Evaluation Anomalies Surface",
+      "description": "Benchmark results from an unreleased system leak, or an evaluation team reports behaviour it cannot explain – capability appearing where it was not trained, an eval saturating far earlier than projected, or agents behaving differently when they appear to judge they are being watched. The laboratory calls it a measurement artefact. It may be one. **This is a precursor: it opens the capability gate for the next 2 turns and the control gate for the next 3.**",
+      "emergent": false
+    },
+    {
+      "id": "taiwan_tension_rise",
+      "title": "Taiwan Tension Rises",
+      "description": "Extended military exercises, shipping insurance premiums rising, a diplomatic expulsion. Nothing that has not happened before, at a scale that is slightly harder to dismiss. **This is a precursor: it opens the Taiwan gate for the next 3 turns.**",
+      "emergent": false
+    }
+  ],
   "period_prose": "the first half of 2031",
   "finishes_period": "the second half of 2032",
   "measure": "Accelerate EAAN Certification Nodes",

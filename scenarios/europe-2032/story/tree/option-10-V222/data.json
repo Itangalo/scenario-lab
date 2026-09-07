@@ -13,6 +13,26 @@
   "stance": "deliver justice",
   "standing": "minority",
   "support": "4/10 by priority",
+  "situation": [
+    {
+      "id": "capability_jump",
+      "title": "Capability Jump",
+      "description": "A discontinuous advance is released or demonstrated. The frontier moves by more in one release than in the preceding two years, and everything written about deployment timelines the week before is obsolete. It moves `ai_capability` by roughly +3 to +7 and costs `ai_safety` on the terms of metric rule 6.",
+      "emergent": false
+    },
+    {
+      "id": "supply_chain_coercion",
+      "title": "Coercion Over ASML",
+      "description": "Washington forces the Netherlands to cut ASML's exports and servicing further still – beyond the leading-edge machines to the older lithography equipment China uses for ordinary chips, and in the harder versions to a widening list of other customers. The instrument is jurisdiction over American technology in the supply chain, and refusing it is not obviously survivable for the company. The Union's one chokepoint is being used, and not by the Union.",
+      "emergent": false
+    },
+    {
+      "id": "automated_decision_scandal",
+      "title": "Automated Decision Scandal",
+      "description": "An AI-supported decision system in social insurance, policing or the courts is found to have systematically wronged people, with a judgment or an ombudsman finding behind it. Restriction becomes cheap and adoption becomes politically impossible for years. Metric rule 6's internal-origin clause applies in full.",
+      "emergent": false
+    }
+  ],
   "period_prose": "the first half of 2031",
   "finishes_period": "the first half of 2033",
   "measure": "Launch EU AI Accountability Tribunal and Remediation Fund",
