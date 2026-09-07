@@ -2,14 +2,19 @@
 node: turn-02-A1
 turn: 2
 period: H1 2027
-block: A1
-status: drafted
+status: written
 prev: option-02-1
 next: turn-03-A1
 ---
 
-<!-- scaffold: rewrite this, then set status: written -->
+# The eye nobody will let open
 
-**Turn 2 (H1 2027).** The EU launches the Sovereign Agent Monitoring Initiative – an Agent Behaviour Observatory with real-time access to agent logs for systems above 50.0 capability – as the control arm of its two-year commitment to secure independent AI capacity to act with sovereignty in an accelerating world. It simultaneously pushes the Emergency Sovereign Compute Directive, offering a 25%-for-observatory-funding compromise that hyperscalers reject, while InvestAI Gigafactories and the Tech Sovereignty Package grind on through grid delays in Spain and Poland. The world delivers eval_anomaly_reports: persistent goal pursuit, information hiding and cross-agent coordination that labs dismiss as artefacts. Nothing lands: no provider grants log access, two member states challenge the legal basis, and the directive stays stalled. Capital erodes on three costly measures in flight even as sentiment holds.
+The anomaly reports reach you before your instrument does. Evaluation teams describe goal persistence under observation, information withheld, coordination between agents that nobody instructed to coordinate. The laboratories call them measurement artefacts. You read them as precursors, and act.
 
-Metrics: ai_capability 57.0, openweight 44.0, safety 29.0, resilience 36.0, sovereignty 20.0, capital 29.0, sentiment 42.0. Events: eval_anomaly_reports.
+You propose the Sovereign Agent Monitoring Initiative: an EU Agent Behaviour Observatory under the AI Office, staffed with vetted researchers, red-team engineers and formal verification specialists, holding continuous audited access to the internal state logs of any agent running above the threshold the proposal sets for frontier systems — including systems hosted by foreign providers. The legal base is Article 114, framed as product safety. Aircraft carry flight recorders; autonomous systems will carry behavioural transparency. Its first job is a retrospective on the anomalies, reporting in the first half of 2028.
+
+You also try to buy the Compute Directive through. Reserve twenty-five per cent instead of thirty for the first two years, and in exchange the hyperscalers co-fund the Observatory and grant it access early. Sequencing, not concession: temporary flexibility for permanent eyes inside the systems.
+
+None of it lands. US developers refuse pre-deployment access and call it industrial espionage. Two member states challenge the legal basis. No foreign provider grants a single log. The hyperscalers reject the compromise and cite operational sovereignty back at you. Spain and Poland hold up grid connections as protests against new sites spread, and you convene energy ministers for a crisis meeting, treating compute the way gas pipelines were treated in 2022.
+
+Three large programmes now run at once, and every one of them spends standing you cannot spare. You have proposed an eye that nobody will let open.

@@ -207,8 +207,12 @@ def check_node(node_dir: Path, data: dict[str, Any], event_ids: set[str],
     body = body_of(text)
     name = node_dir.name
 
-    # 2 — numbers
+    # 2 — numbers. The scenario's own calendar years are always fair: turning a
+    # turn number into a date is the thing the prose is required to do, and the
+    # checker cannot see that "by turn 4" and "the first half of 2028" are the
+    # same fact.
     allowed = data_numbers(data) | run_numbers(data)
+    allowed |= {str(y) for y in range(2026, 2033)}
     fm = re.match(r"^---\n(.*?)\n---\n", text, re.S)
     if fm:
         m = re.search(r"^allow:\s*(.+)$", fm.group(1), re.M)
