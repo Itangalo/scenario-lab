@@ -740,7 +740,7 @@ def dial_tips(path: Path) -> dict[str, str]:
 
 SITE_FOOTER = """<footer class="site">
     <a href="https://falkai.org/">Falk AI</a>
-    <span>Scenario Lab &middot; draft</span>
+    <span><a href="https://github.com/Itangalo/scenario-lab">Scenario Lab</a> &middot; draft</span>
   </footer>"""
 
 SITE_FOOTER_CSS = """
