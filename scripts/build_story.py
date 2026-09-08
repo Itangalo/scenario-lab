@@ -234,14 +234,40 @@ header.masthead {
   font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
 }
 .sub { font-size: 0.72rem; letter-spacing: 0.09em; text-transform: uppercase; color: var(--faint); }
-.nav { margin-left: auto; display: flex; gap: 0.5rem; }
-.nav button {
+.restart {
+  font-family: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   font-size: 0.68rem; letter-spacing: 0.07em; text-transform: uppercase;
   background: transparent; color: var(--muted); border: 1px solid var(--rule);
-  border-radius: 2px; padding: 0.4rem 0.75rem; cursor: pointer;
+  border-radius: 2px; padding: 0.5rem 0.8rem; cursor: pointer; width: 100%;
 }
-.nav button:hover:not(:disabled) { color: var(--accent); border-color: var(--accent); }
-.nav button:disabled { opacity: 0.35; cursor: default; }
+.restart:hover { color: var(--accent); border-color: var(--accent); }
+/* Wide screens read it in the sticky panel; narrow screens stack the panel
+   below the prose, where it would scroll away, so a fixed one takes over. */
+.restart.floating { display: none; }
+@media (max-width: 62rem) {
+  aside .restart { display: none; }
+  .restart.floating {
+    display: block; position: fixed; right: 1rem; bottom: 1rem; width: auto;
+    z-index: 5; background: var(--surface); box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  }
+}
+
+/* Starting over re-rolls which of the three worlds you are in, so the page
+   comes apart rather than simply swapping. Headings go letter by letter; the
+   body blocks lift and blur, which keeps this cheap on a long column. */
+.dissolving { pointer-events: none; }
+.dissolving > * { animation: dissolve 520ms ease-in forwards; }
+@keyframes dissolve {
+  to { opacity: 0; transform: translateY(-12px); filter: blur(5px); }
+}
+.ch { display: inline-block; white-space: pre; }
+@keyframes letter {
+  30% { opacity: 1; }
+  to { opacity: 0; transform: translateY(-26px) rotate(var(--tilt)); filter: blur(2px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dissolving > *, .ch { animation: none !important; }
+}
 .rail { display: flex; gap: 3px; align-items: center; justify-content: center; padding-top: 0.25rem; }
 .rail i { display: block; width: 14px; height: 3px; border-radius: 1px; background: var(--track); }
 .rail i.done { background: var(--accent); opacity: 0.45; }
@@ -362,13 +388,12 @@ BODY = """
   <header class="masthead">
     <h1>Europe 2032</h1>
     <span class="sub">A simulated decision &middot; 2026&ndash;2032</span>
-    <div class="nav">
-      <button id="restart" type="button">Start from the beginning</button>
-    </div>
   </header>
+  <button class="js-restart restart floating" type="button">Start over</button>
   <div class="layout">
     <main id="stream"></main>
     <aside>
+      <button class="js-restart restart" type="button">Start over</button>
       <section class="panel">
         <p class="cap"><span id="panel-period">Where things stand</span></p>
         <div class="dials" id="dials"></div>
@@ -496,12 +521,53 @@ function appendChapter(id) {
   return section;
 }
 
+function shatter(el) {
+  // Only headings are split: a few dozen characters each, against thousands in
+  // the prose. Splitting the body would stall the page on the click.
+  const walk = node => {
+    if (node.nodeType === 3) {
+      const frag = document.createDocumentFragment();
+      for (const ch of node.textContent) {
+        const s = document.createElement("span");
+        s.className = "ch";
+        s.textContent = ch;
+        frag.appendChild(s);
+      }
+      node.replaceWith(frag);
+    } else if (node.nodeType === 1) {
+      Array.from(node.childNodes).forEach(walk);
+    }
+  };
+  Array.from(el.childNodes).forEach(walk);
+  el.querySelectorAll(".ch").forEach((s, i) => {
+    s.style.setProperty("--tilt", (Math.random() * 16 - 8).toFixed(1) + "deg");
+    s.style.animation = "letter 640ms cubic-bezier(0.4, 0, 0.6, 1) forwards";
+    s.style.animationDelay = (i * 11 + Math.random() * 40).toFixed(0) + "ms";
+  });
+}
+
+function startOver() {
+  const stream = document.getElementById("stream");
+  if (REDUCED || !stream.children.length) { reset(); return; }
+  stream.querySelectorAll(".chapter-title").forEach(shatter);
+  Array.from(stream.children).forEach((el, i) => {
+    el.style.animationDelay = Math.min(i * 70, 560) + "ms";
+  });
+  stream.classList.add("dissolving");
+  const wait = 520 + Math.min(stream.children.length * 70, 560);
+  setTimeout(() => {
+    stream.classList.remove("dissolving");
+    reset();
+  }, wait);
+}
+
 function reset() {
   arm = Math.floor(Math.random() * 3);
   chain = [];
   picked = {};
   active = null;
   const stream = document.getElementById("stream");
+  stream.classList.remove("dissolving");
   stream.innerHTML = PREAMBLE ? '<div class="note preamble">' + PREAMBLE + '</div>' : "";
   appendChapter(START);
   setPanel(NODES[START]);
@@ -551,7 +617,7 @@ document.addEventListener("click", e => {
     section.scrollIntoView({ behavior: REDUCED ? "auto" : "smooth", block: "start" });
     return;
   }
-  if (e.target.id === "restart") reset();
+  if (e.target.closest(".js-restart")) startOver();
 });
 
 buildDials();
