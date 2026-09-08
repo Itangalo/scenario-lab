@@ -258,7 +258,12 @@ header.masthead {
    characters would stall the click. Transform and opacity only — a blur per
    character across a screenful of prose is what would actually jank. */
 .dissolving { pointer-events: none; }
-.ch { display: inline-block; white-space: pre; }
+/* Characters are inline-block so they can be transformed, which would let a
+   line break fall between any two of them and re-wrap the paragraph the moment
+   it shatters. Keeping each word in a nowrap box preserves the original line
+   breaks; spaces stay ordinary text nodes so wrapping behaves normally. */
+.wd { display: inline-block; white-space: nowrap; }
+.ch { display: inline-block; }
 @keyframes letter {
   20% { opacity: 1; }
   to { opacity: 0; transform: translateY(-38px) rotate(var(--tilt)); }
@@ -543,11 +548,18 @@ function shatter(el, from, total, reverse) {
   const walk = node => {
     if (node.nodeType === 3) {
       const frag = document.createDocumentFragment();
-      for (const ch of node.textContent) {
-        const s = document.createElement("span");
-        s.className = "ch";
-        s.textContent = ch;
-        frag.appendChild(s);
+      for (const token of node.textContent.split(/(\s+)/)) {
+        if (!token) continue;
+        if (/^\s+$/.test(token)) { frag.appendChild(document.createTextNode(token)); continue; }
+        const word = document.createElement("span");
+        word.className = "wd";
+        for (const ch of token) {
+          const s = document.createElement("span");
+          s.className = "ch";
+          s.textContent = ch;
+          word.appendChild(s);
+        }
+        frag.appendChild(word);
       }
       node.replaceWith(frag);
     } else if (node.nodeType === 1) {
@@ -585,9 +597,15 @@ function startOver() {
     .filter(el => onScreen(el) && !el.querySelector(TEXT_BLOCKS));
   if (!visible.length) { reset(); return; }
 
+  // Measure everything before touching anything: rects taken after the first
+  // split would be measuring the mutated layout.
+  const measured = visible.map(el => ({ el, rect: el.getBoundingClientRect() }));
   // Bottom of the screen first, so the page lifts away upward.
-  const rising = visible.slice().sort((a, b) =>
-    b.getBoundingClientRect().top - a.getBoundingClientRect().top);
+  measured.sort((a, b) => b.rect.top - a.rect.top);
+  // Pin the height each block already had. If it does still re-wrap, the extra
+  // line overflows harmlessly instead of pushing everything below it down.
+  measured.forEach(m => { m.el.style.height = m.rect.height + "px"; });
+  const rising = measured.map(m => m.el);
 
   const total = rising.reduce((n, el) => n + el.textContent.length, 0);
   stream.classList.add("dissolving");
