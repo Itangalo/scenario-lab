@@ -382,7 +382,7 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .note a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 .note a:hover { text-decoration-thickness: 2px; }
 @media (prefers-reduced-motion: no-preference) {
-  .chapter { animation: rise 0.35s ease-out; }
+  .chapter.enter { animation: rise 0.35s ease-out; }
   @keyframes rise { from { opacity: 0.45; transform: translateY(3px); } to { opacity: 1; transform: none; } }
 }
 @media (max-width: 62rem) {
@@ -522,11 +522,11 @@ function controlsFor(id) {
   return endingHTML(entry.turn !== LAST_TURN);
 }
 
-function appendChapter(id) {
+function appendChapter(id, entering) {
   chain.push(id);
   const entry = NODES[id];
   const section = document.createElement("section");
-  section.className = "chapter";
+  section.className = entering ? "chapter enter" : "chapter";
   section.dataset.node = id;
   const head = entry.title
     ? '<h2 class="chapter-title"><span class="when">' + entry.period + ':</span> ' + entry.title + '</h2>'
@@ -681,7 +681,7 @@ document.addEventListener("click", e => {
     } else if (holder) {
       holder.remove();
     }
-    const section = appendChapter(target);
+    const section = appendChapter(target, true);
     section.scrollIntoView({ behavior: REDUCED ? "auto" : "smooth", block: "start" });
     return;
   }
